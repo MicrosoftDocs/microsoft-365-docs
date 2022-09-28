@@ -1,5 +1,5 @@
 ---
-title: "Configure and view alerts for data loss prevention policies"
+title: "Configure and view alerts for DLP policies"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -13,7 +13,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - SPO_Content
 search.appverid: 
 - MET150
@@ -25,14 +26,14 @@ description: Learn how to define and manage alerts for data loss prevention poli
 
 # Configure and view alerts for data loss prevention polices
 
-Data loss prevention (DLP) policies can take protective actions to prevent unintentional sharing of sensitive items. When an action is taken on a sensitive item, you can be notified by configuring alerts for DLP. This article shows you how to define rich alert policies that are linked to your data loss prevention (DLP) policies. You'll see how to use the
-new DLP alert management dashboard in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> to view alerts, events, and associated metadata for DLP policy violations.
+Microsoft Purview Data Loss Prevention (DLP) policies can take protective actions to prevent unintentional sharing of sensitive items. When an action is taken on a sensitive item, you can be notified by configuring alerts for DLP. This article shows you how to define rich alert policies that are linked to your data loss prevention (DLP) policies. You'll see how to use the
+new DLP alert management dashboard in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> to view alerts, events, and associated metadata for DLP policy violations.
 
 ## Features
 
 The following features are part of this:
 
--   **DLP alert management dashboard**: In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, this dashboard shows
+-   **DLP alert management dashboard**: In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, this dashboard shows
     alerts for DLP policies that are enforced on the following workloads:
 
     -   Exchange
@@ -61,6 +62,7 @@ Customers who use [Endpoint DLP](endpoint-dlp-learn-about.md) who are eligible f
 
 - **Single-event alert configuration**: Organizations that have an E1, F1, or G1 subscription or an E3 or G3 subscription can create alert policies only where an alert is triggered every time an activity occurs.
 - **Aggregated alert configuration**: To configure aggregate alert policies based on a threshold, you must have either of the following configurations:
+  - An A5 subscription
   - An E5 or G5 subscription
   - An E1, F1, or G1 subscription or an E3 or G3 subscription that includes one of the following features:
     - Office 365 Advanced Threat Protection Plan 2
@@ -109,7 +111,7 @@ For organizations that have an E1, F1, or G1 subscription or an E3 or G3 subscri
 
 To work with the DLP alert management dashboard:
 
-1.  In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Data Loss Prevention**.
+1.  In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, go to **Data Loss Prevention**.
 
 2.  Select the **Alerts** tab to view the DLP alerts dashboard.
 

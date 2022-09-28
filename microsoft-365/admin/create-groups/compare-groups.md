@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -58,7 +58,9 @@ Microsoft 365 Groups can be accessed through mobile apps such as Outlook for iOS
 
 Group members can send as or send on behalf of the group email address if this has been [enabled by the administrator](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md).
 
-Microsoft 365 Groups don't support nesting with other Microsoft 365 Groups or with distribution or security groups.
+Microsoft 365 groups support nesting through [dynamic groups in Azure Active Directory](/azure/active-directory/enterprise-users/groups-dynamic-rule-member-of).
+
+Microsoft 365 Groups can be added to one of the three SharePoint groups (Owners, Members, or Visitors) to give people permissions to the site.
 
 ## Distribution groups
 

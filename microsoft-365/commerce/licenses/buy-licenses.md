@@ -2,8 +2,8 @@
 title: "Buy or remove licenses"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: argani, nicholak
 audience: Admin
@@ -14,18 +14,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_o365
 ms.custom:
+- commerce_licensing
 - okr_SMB
 - AdminSurgePortfolio
 - manage_licenses
-- commerce_licensing
 - AdminTemplateSet
 - adminvideo
 search.appverid: MET150
 description: "Use these steps to buy more licenses or reduce the number of licenses for your Microsoft 365 for business subscription."
-ms.date: 09/16/2021
+ms.date: 08/18/2022
 ---
 
-# Buy or remove licenses
+# Buy or remove Microsoft 365 licenses for a subscription
+
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 You can buy more licenses or reduce the number of licenses for your subscriptions by using the following steps.
 
@@ -40,26 +42,30 @@ You can buy more licenses or reduce the number of licenses for your subscription
 
 ## Watch: Buy new licenses
 
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198206).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
 
-If the people who you’re buying licenses for aren’t active users in your organization yet, the next thing to do is [add users and assign licenses at the same time](../../admin/add-users/add-users.md).
+If the people who you're buying licenses for aren't active users in your organization yet, the next thing to do is [add users and assign licenses at the same time](../../admin/add-users/add-users.md).
 
 ## Watch: Remove existing licenses
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4L53r]
 
-If you’ve removed licenses from a subscription, the next thing to do is [delete users from your organization](../../admin/add-users/delete-a-user.md).
+If you've removed licenses from a subscription, the next thing to do is [delete users from your organization](../../admin/add-users/delete-a-user.md).
 
 ## Buy or remove licenses for your business subscription
 
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+
 ::: moniker-end
 
 2. On the **Products** tab, find the subscription for which you want to buy or remove licenses. Select the three dots (more actions), then select **Buy licenses**. [What if I don't see the Buy licenses or Remove licenses buttons?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
@@ -72,6 +78,37 @@ If you’ve removed licenses from a subscription, the next thing to do is [delet
 
 > [!NOTE]
 > You can't reduce the number of licenses for your subscription if all licenses are currently assigned to users. To reduce the number of licenses, first [unassign one or more licenses from users](../../admin/manage/remove-licenses-from-users.md), then remove the licenses from the subscription.
+
+## Add licenses to a prepaid subscription by using a Microsoft 365 product key
+
+Prepaid product licenses are issued to you as a 25-character alphanumeric code, called a product key. After you buy the licenses you need, you can add them to your subscription by using the steps below. You can also use a product key to [extend the expiration date of your subscription](../subscriptions/renew-your-subscription.md#extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key).
+
+> [!NOTE]
+> If you don't want to buy a new product key, you can always choose to add a credit card or bank account to your subscription to pay for more licenses. For more information, see [Renew your subscription](../subscriptions/renew-your-subscription.md).
+  
+::: moniker range="o365-worldwide"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+
+::: moniker-end
+
+2. On the **Products** tab, select the subscription to which you want to add licenses.
+
+3. On the subscription details page, in the **Licenses** section, select **Add more licenses**.
+
+4. In the **Add more licenses pane**, select **Use a new and unused product key**, then select **Next**.
+
+5. Enter the product key, then select **Next**.
+    > [!NOTE]
+    > If you have more than one product key, you can select **Add another product key** to enter them.
+
+6. Review your order details, then select **Redeem**.
 
 ## What if I don't see the Buy licenses or Remove licenses buttons?
 
@@ -99,7 +136,7 @@ If you prepaid for your subscription with a product key, you can add more licens
 
 If you bought more licenses for your subscription, the next thing you should do is [assign those licenses to users in your organization](../../admin/manage/assign-licenses-to-users.md).
 
-If you reduced the number of licenses for your subscription because someone has left your organization, you might want to remove that user’s account. To learn more, see [Remove a former employee](../../admin/add-users/remove-former-employee.md).
+If you reduced the number of licenses for your subscription because someone has left your organization, you might want to remove that user's account. To learn more, see [Remove a former employee](../../admin/add-users/remove-former-employee.md).
 
 ## Related content
 

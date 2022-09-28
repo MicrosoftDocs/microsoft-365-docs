@@ -2,11 +2,11 @@
 title: "Internet Sites in Microsoft Azure using SharePoint Server 2013"
 ms.author: bcarter
 author: brendacarter
-manager: laurawi
+manager: scotv
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:

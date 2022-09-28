@@ -10,10 +10,12 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MSStore_Link
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,7 +24,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
-description: "Sign in to your Microsoft 365 admin account to set some individual user passwords to never expire by using Windows PowerShell."
+description: "Sign in to your Microsoft 365 admin account to set some individual user passwords to never expire by using Azure AD PowerShell."
 ---
 # Set an individual user's password to never expire
 
@@ -30,14 +32,13 @@ This article explains how to set a password for an individual user to not expire
 
 ## Before you begin
 
-This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. See [Overview of the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide).
+This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. See [Overview of the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview).
 
 You must be a [global admin or password administrator](about-admin-roles.md) to perform these steps.
 
 A global admin for a Microsoft cloud service can use the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2) to set passwords not to expire for specific users. You can also use [AzureAD](/powershell/module/Azuread) cmdlets to remove the never-expires configuration or to see which user passwords are set to never expire.
 
 This guide applies to other providers, such as Intune and Microsoft 365, which also rely on Azure AD for identity and directory services. Password expiration is the only part of the policy that can be changed.
-
 
 ## How to check the expiration policy for a password
 

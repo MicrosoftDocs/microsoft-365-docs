@@ -3,25 +3,28 @@ title: Run an attack simulation in a Microsoft 365 Defender pilot environment
 description: Run attack simulations for Microsoft 365 Defender to see how alerts and incidents are presented, insights are gained, and threats are quickly remediated.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365solution-scenario
   - m365solution-pilotmtpproject
+  - zerotrust-solution
+  - highpri
+  - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Run an attack simulation in a Microsoft 365 Defender pilot environment
@@ -113,7 +116,7 @@ First, you need to add an isolated AD DS domain controller and a Windows device 
 
    - Runs Windows 10 version 1903 or a later version.
    - Is joined to the AD DS domain controller domain.
-   - Has [Windows Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) enabled. If you are having trouble enabling Windows Defender Antivirus, see this [troubleshooting topic](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+   - Has [Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) enabled. If you are having trouble enabling Microsoft Defender Antivirus, see this [troubleshooting topic](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
    - Is [onboarded to Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 If you use tenant and device groups, create a dedicated device group for the test device and push it to top level.
@@ -122,13 +125,13 @@ One alternative is to host your AD DS domain controller and test device as virtu
 
 Here is the result.
 
-![Endpoints for your Defender evaluation environment using the simulated enterprise Test Lab Guide.](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-endpoints-tlg.png)
+:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-endpoints-tlg.png" alt-text="The evaluation environment using the simulated enterprise Test Lab Guide" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-endpoints-tlg.png":::
 
 You'll simulate a sophisticated attack that leverages advanced techniques to hide from detection. The attack enumerates opened Server Message Block (SMB) sessions on domain controllers and retrieves recent IP addresses of users' devices. This category of attacks usually doesn't include files dropped on the victim's device and they occur solely in memory. They "live off the land" by using existing system and administrative tools and inject their code into system processes to hide their execution. Such behavior allows them to evade detection and persist on the device.
 
 In this simulation, our sample scenario starts with a PowerShell script. In the real world, a user might be tricked into running a script or the script might run from a remote connection to another computer from a previously infected device, which indicates that the attacker is attempting to move laterally in the network. Detection of these scripts can be difficult because administrators also often run scripts remotely to carry out various administrative activities.
 
-![Fileless PowerShell attack with process injection and SMB reconnaisance attack diagram.](../../media/mtp/mtpdiydiagram.png)
+:::image type="content" source="../../media/mtp/mtpdiydiagram.png" alt-text="The Fileless PowerShell attack with process injection and SMB reconnaisance attack" lightbox="../../media/mtp/mtpdiydiagram.png":::
 
 During the simulation, the attack injects shellcode into a seemingly innocent process. The scenario requires the use of notepad.exe. We chose this process for the simulation, but attackers would more likely target a long-running system process, such as svchost.exe. The shellcode then goes on to contact the attacker's command-and-control (C2) server to receive instructions on how to proceed. The script attempts executing reconnaissance queries against the domain controller (DC). Reconnaissance allows an attacker to get information about recent user login information. Once attackers have this information, they can move laterally in the network to get to a specific sensitive account
 
@@ -190,7 +193,7 @@ Switching to the SOC analyst point of view, you can now start to investigate the
 
 3. The new incident for the simulated attack will appear in the incident queue.
 
-    ![Example of the incident queue.](../../media/mtp/fig2.png)
+   :::image type="content" source="../../media/mtp/fig2.png" alt-text="An example of the Incidents queue" lightbox="../../media/mtp/fig2.png":::
 
 #### Investigate the attack as a single incident
 
@@ -221,7 +224,7 @@ Let's look at some of the alerts generated during the simulated attack.
 > [!NOTE]
 > We'll walk through only a few of the alerts generated during the simulated attack. Depending on the version of Windows and the Microsoft 365 Defender products running on your test device, you might see more alerts that appear in a slightly different order.
 
-![Example of the generated alerts.](../../media/mtp/fig6.png)
+:::image type="content" source="../../media/mtp/fig6.png" alt-text="An example of a generated alert" lightbox="../../media/mtp/fig6.png":::
 
 ##### Alert: Suspicious process injection observed (Source: Microsoft Defender for Endpoint)
 
@@ -229,7 +232,7 @@ Advanced attackers use sophisticated and stealthy methods to persist in memory a
 
 To allow the SOC analysts to catch these advanced attacks, deep memory sensors in Microsoft Defender for Endpoint provide our cloud service with unprecedented visibility into a variety of cross-process code injection techniques. The following figure shows how Defender for Endpoint detected and alerted on the attempt to inject code to <i>notepad.exe</i>.
 
-![Example of the alert for injection of potentially malicious code.](../../media/mtp/fig7.png)
+:::image type="content" source="../../media/mtp/fig7.png" alt-text="An example of the alert for injection of a potentially malicious code" lightbox="../../media/mtp/fig7.png":::
 
 ##### Alert: Unexpected behavior observed by a process run with no command-line arguments (Source: Microsoft Defender for Endpoint)
 
@@ -246,11 +249,11 @@ Notice that the alert details include the external IP address—an indicator tha
 
 Select the IP address in the alert process tree to view the IP address details page.
 
-![Example of the alert for unexpected behavior by a process run with no command line arguments.](../../media/mtp/fig8.png)
+:::image type="content" source="../../media/mtp/fig8.png" alt-text="An example for unexpected behavior by a process run with no command line arguments" lightbox="../../media/mtp/fig8.png":::
 
 The following figure displays the selected IP Address details page (clicking on IP address in the Alert process tree).
 
-![Example of the IP address details page.](../../media/mtp/fig9.png)
+:::image type="content" source="../../media/mtp/fig9.png" alt-text="An example of the IP address details page" lightbox="../../media/mtp/fig9.png":::
 
 ##### Alert: User and IP address reconnaissance (SMB) (Source: Microsoft Defender for Identity)
 
@@ -258,7 +261,7 @@ Enumeration using Server Message Block (SMB) protocol enables attackers to get r
 
 In this detection, an alert is triggered when the SMB session enumeration runs against a domain controller.
 
-![Example of the Microsoft Defender for Identity alert for User and IP address reconnaissance.](../../media/mtp/fig10.png)
+:::image type="content" source="../../media/mtp/fig10.png" alt-text="An example of Microsoft Defender for Identity alert for User and IP address reconnaissance" lightbox="../../media/mtp/fig10.png":::
 
 #### Review the device timeline with Microsoft Defender for Endpoint
 
@@ -268,13 +271,13 @@ Select the name of the device where the attack was conducted, to open the entity
 
 Select the **Timeline** tab to open the device timeline and view all events and behaviors observed on the device in chronological order, interspersed with the alerts raised.
 
-![Example of the device timeline with behaviors.](../../media/mtp/fig11.png)
+:::image type="content" source="../../media/mtp/fig11.png" alt-text="An example of the device timeline with behaviors" lightbox="../../media/mtp/fig11.png":::
 
 Expanding some of the more interesting behaviors provides useful details, such as process trees.
 
 For example, scroll down until you find the alert event **Suspicious process injection observed**. Select the **powershell.exe injected to notepad.exe process** event below it, to display the full process tree for this behavior under the **Event entities** graph on the side pane. Use the search bar for filtering if necessary.
 
-![Example of the process tree for selected PowerShell file creation behavior.](../../media/mtp/fig12.png)
+:::image type="content" source="../../media/mtp/fig12.png" alt-text="An example of the process tree for selected PowerShell file creation behavior" lightbox="../../media/mtp/fig12.png":::
 
 #### Review the user information with Microsoft Defender for Cloud Apps
 
@@ -282,7 +285,7 @@ On the incident page, select the **Users** tab to display the list of users invo
 
 Select the user name to open the user's profile page where further investigation can be conducted. [Read more about investigating risky users](/cloud-app-security/tutorial-ueba#identify).
 
-![Example of Defender for Cloud Apps user page.](../../media/mtp/fig13.png)
+:::image type="content" source="../../media/mtp/fig13.png" alt-text="Defender for Cloud Apps user page" lightbox="../../media/mtp/fig13.png":::
 
 #### Automated investigation and remediation
 
@@ -293,7 +296,7 @@ Select the user name to open the user's profile page where further investigation
 
 Navigate back to the incident in the Microsoft 365 Defender portal. The **Investigations** tab in the **Incident** page shows the automated investigations that were triggered by Microsoft Defender for Identity and Microsoft Defender for Endpoint. The screenshot below displays only the automated investigation triggered by Defender for Endpoint. By default, Defender for Endpoint automatically remediates the artifacts found in the queue, which requires remediation.
 
-![Example of the automated investigations related to the incident.](../../media/mtp/fig14.png)
+:::image type="content" source="../../media/mtp/fig14.png" alt-text="An example of the automated investigations related to the incident" lightbox="../../media/mtp/fig14.png":::
 
 Select the alert that triggered an investigation to open the **Investigation details** page. You'll see the following details:
 
@@ -305,7 +308,7 @@ Select the alert that triggered an investigation to open the **Investigation det
 > [!NOTE]
 > Depending on timing, the automated investigation might still be running. Wait a few minutes for the process to complete before you collect and analyze the evidence and review the results. Refresh the **Investigation details** page to get the latest findings.
 
-![Example of the Investigation details page.](../../media/mtp/fig15.png)
+:::image type="content" source="../../media/mtp/fig15.png" alt-text="An example of the Investigation details page" lightbox="../../media/mtp/fig15.png":::
 
 During the automated investigation, Microsoft Defender for Endpoint identified the notepad.exe process, which was injected as one of the artifacts requiring remediation. Defender for Endpoint automatically stops the suspicious process injection as part of the automated remediation.
 
@@ -317,7 +320,7 @@ After the investigation is complete and confirmed to be remediated, you resolve 
 
 From the **Incident** page, select **Manage incident**. Set the status to **Resolve incident** and select **True alert** for the classification and **Security testing** for the determination.
 
-![Example of the incidents page with the open Manage incident panel where you can resolve the incident.](../../media/mtp/fig16.png)
+:::image type="content" source="../../media/mtp/fig16.png" alt-text="An example of the incidents page with the open Manage incident panel where you can click the switch to resolve incident" lightbox="../../media/mtp/fig16.png":::
 
 When the incident is resolved, it resolves all of the associated alerts in the Microsoft 365 Defender portal and the related portals.
 
@@ -325,7 +328,7 @@ This wraps up attack simulations for incident analysis, automated investigation,
 
 ## Next step
 
-[![Try Microsoft 365 Defender incident response capabilities.](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png)](eval-defender-investigate-respond-additional.md)
+[:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png" alt-text="The Microsoft 365 Defender incident response capabilities" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png":::](eval-defender-investigate-respond-additional.md)
 
 Step 2 of 2: [Try Microsoft 365 Defender incident response capabilities](eval-defender-investigate-respond-additional.md)
 

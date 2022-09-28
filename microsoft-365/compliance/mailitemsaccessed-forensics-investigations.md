@@ -1,24 +1,25 @@
 ---
-title: "Use Advanced Audit to investigate compromised accounts"
+title: "Use Audit (Premium) to investigate compromised accounts"
+description: "Use the MailItemsAccessed mailbox auditing action to perform forensic investigations of compromised user accounts."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
+- audit
 search.appverid:
 - MOE150
 - MET150
-ms.assetid:
-description: "Use the MailItemsAccessed mailbox auditing action to perform forensic investigations of compromised user accounts."
 ---
 
-# Use Advanced Audit to investigate compromised accounts
+# Use Microsoft Purview Audit (Premium) to investigate compromised accounts
 
 A compromised user account (also called an *account takeover*) is a type of attack when an attacker gains access to a user account and operates as the user. These types of attacks sometimes cause more damage than the attacker may have intended. When investigating compromised email accounts, you have to assume that more mail data was compromised than may be indicated by tracing the attacker's actual presence. Depending on the type of data in email messages, you have to assume that sensitive information was compromised or face regulatory fines unless you can prove that sensitive information wasn't exposed. For example, HIPAA-regulated organizations face significant fines if there is evidence that patient health information (PHI) was exposed. In these cases, attackers are unlikely to be interested in PHI, but organizations still must report data breaches unless they can prove otherwise.
 
@@ -26,7 +27,7 @@ To help you with investigating compromise email accounts, we're now auditing acc
 
 ## The MailItemsAccessed mailbox-auditing action
 
-The new MailItemsAccessed action is part of the new [Advanced Audit](advanced-audit.md) functionality. It's part of [Exchange mailbox auditing](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) and is enabled by default for users that are assigned an Office 365 or Microsoft 365 E5 license or for organizations with a Microsoft 365 E5 Compliance add-on subscription.
+The new MailItemsAccessed action is part of the new [Audit (Premium)](advanced-audit.md) functionality. It's part of [Exchange mailbox auditing](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) and is enabled by default for users that are assigned an Office 365 or Microsoft 365 E5 license or for organizations with a Microsoft 365 E5 Compliance add-on subscription.
 
 The MailItemsAccessed mailbox-auditing action covers all mail protocols: POP, IMAP, MAPI, EWS, Exchange ActiveSync, and REST. It also covers both types of accessing mail: *sync* and *bind*.
 

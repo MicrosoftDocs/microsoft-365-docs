@@ -6,11 +6,12 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
 
 ---
@@ -29,7 +30,7 @@ For this feature to work, the content types being pushed must already be publish
 
 To push content types to hubs
 
-1. In the SharePoint admin center, expand **Content services**, and then select **Content type gallery**.
+1. In the SharePoint admin center, expand **Content services**, and then select <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">**Content type gallery**</a>.
 2. Select the content type that you want to push to hubs.
 3. Select **Edit** in the command bar.
 4. Select **Choose hub sites**.

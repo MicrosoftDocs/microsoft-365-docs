@@ -2,10 +2,10 @@
 title: "Problems with your Microsoft 365 for business product key?"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -17,9 +17,9 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: "Learn how to resolve the issues that you face when you enter your product key for Microsoft 365 for business. "
 ms.custom: 
+- commerce_purchase
 - okr_smb
 - AdminSurgePortfolio
-- commerce_purchase
 ms.date: 05/01/2021
 ---
 

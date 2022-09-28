@@ -1,9 +1,9 @@
 ---
-title: "Format assessment template data in Excel for Microsoft Compliance Manager"
+title: "Format assessment template data in Excel for Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -11,16 +11,17 @@ ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- highpri
 search.appverid: 
 - MOE150
 - MET150
-description: "Understand how to work with Excel data for assessment templates in Microsoft Compliance Manager."
+description: "Understand how to work with Excel data for assessment templates in Microsoft Purview Compliance Manager."
 ---
 
-# Format assessment template data in Excel for Microsoft Compliance Manager
+# Format assessment template data in Excel for Microsoft Purview Compliance Manager
 
 When [creating](compliance-manager-templates-create.md), [modifying](compliance-manager-templates-modify.md), or [extending](compliance-manager-templates-extend.md) assessment templates in Compliance Manager, you will work with Excel spreadsheets that use a specific format and schema. These specifications must be followed for the files to import correctly.
 
@@ -76,10 +77,10 @@ The **Actions** tab is required.  It designates improvement actions managed by y
 
 - **actionTitle**: This is the title for your action and is a required field. The title you provide must be unique. **Important**: if you reference an action you own that already exists (such as in another template) and you modify any of its elements in the subsequent columns, those changes will propagate to the same action in other templates.
 
-- **implementationType**: In this required field, list one of the three implementation types below:
-- **Operational** - actions implemented by people and processes to protect the confidentiality, integrity, and availability of organizational systems, assets, data, and personnel (example: security awareness and training)
-- **Technical** - actions completed by using technology and mechanisms contained in the hardware, software, or firmware components of the information system to protect the confidentiality, integrity, and availability of organizational systems and data (example: multi-factor authentication)
-- **Documentation** - actions implemented through documented policies and procedures establishing and defining the controls required to protect the confidentiality, integrity, and availability of organizational systems, assets, data, and personnel (example: an information security policy)
+- **implementationType**: In this required field, list one of the following three implementation types: 
+  1) **Operational** - actions implemented by people and processes to protect the confidentiality, integrity, and availability of organizational systems, assets, data, and personnel (example: security awareness and training).      
+  2) **Technical** - actions completed by using technology and mechanisms contained in the hardware, software, or firmware components of the information system to protect the confidentiality, integrity, and availability of organizational systems and data (example: multi-factor authentication).
+  3) **Documentation** - actions implemented through documented policies and procedures establishing and defining the controls required to protect the confidentiality, integrity, and availability of organizational systems, assets, data, and personnel (example: an information security policy).
 
 - **actionScore**: In this required field, provide a numeric score value for your action. The value must be a whole number ranging from 1 to 99; it cannot be 0, null, or blank. The higher the number, the greater its value toward improving your compliance posture. The image below demonstrates how Compliance Manager scores controls:
 

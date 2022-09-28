@@ -9,22 +9,27 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 06/11/2020
+ms.date: 05/02/2022
 ms.collection: 
 - Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MET150
-description: "As an administrator and as a message sender, you can revoke certain emails that were encrypted with Office 365 Advanced Message Encryption."
+description: "As an administrator and as a message sender, you can revoke certain emails that were encrypted with Microsoft Purview Advanced Message Encryption."
 ---
 
 # Revoke email encrypted by Advanced Message Encryption
 
-Email revocation is offered as part of Office 365 Advanced Message Encryption. Office 365 Advanced Message Encryption is included in [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (Nonprofit Staff Pricing), Office 365 Enterprise E5 (Nonprofit Staff Pricing), and Office 365 Education A5. If your organization has a subscription that does not include Office 365 Advanced Message Encryption, you can purchase it with the Microsoft 365 E5 Compliance SKU add-on for Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing), or the Office 365 Advanced Compliance SKU add-on for Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing), or Office 365 SKUs.
+Email revocation is offered as part of Microsoft Purview Advanced Message Encryption. Microsoft Purview Advanced Message Encryption is included in [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (Nonprofit Staff Pricing), Office 365 Enterprise E5 (Nonprofit Staff Pricing), and Office 365 Education A5. To use the Advanced Message Encryption revocation and expiration functions, enable the **Premium Encryption in Office 365** option in your E5 license.
+
+If your organization has a subscription that does not include Microsoft Purview Advanced Message Encryption, you can purchase it with the Microsoft 365 E5 Compliance SKU add-on for Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing), or the Office 365 Advanced Compliance SKU add-on for Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing), or Office 365 SKUs.
 
 This article is part of a larger series of articles about [Office 365 Message Encryption](ome.md).
 
-If a message was encrypted using Office 365 Advanced Message Encryption, and you are a Microsoft 365 admin or you are the sender of the message, you can revoke the message under certain conditions. Admins revoke messages using PowerShell. As a sender, you revoke a message that you sent directly from Outlook on the web. This article describes the circumstances under which revocation is possible and how to do it.
+If a message was encrypted using Microsoft Purview Advanced Message Encryption, and you are a Microsoft 365 admin or you are the sender of the message, you can revoke the message under certain conditions. Admins revoke messages using PowerShell. As a sender, you revoke a message that you sent directly from Outlook on the web. This article describes the circumstances under which revocation is possible and how to do it.
+
+> [!NOTE]
+> To guarantee that the ability to track and revoke OME messages is available, you must add a custom branding template. See [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md)
   
 ## Encrypted emails that you can revoke
 
@@ -84,7 +89,7 @@ There are multiple ways to find the Message ID of the email that you want to rev
 
 2. Once you've located the email, select it to bring up the **Message trace details** pane. Expand **More Information** to locate the Message ID.
 
-#### To identify the Message ID of the email you want to revoke by using Office Message Encryption reports in the Security &amp; Compliance Center
+#### To identify the Message ID of the email you want to revoke by using Message Encryption reports in the Security &amp; Compliance Center
 
 1. In the Security &amp; Compliance Center, navigate to the **Message encryption report**. For information on this report, see [View email security reports in the Security &amp; Compliance Center](../security/office-365-security/view-email-security-reports.md).
 
@@ -111,7 +116,7 @@ To verify whether you can revoke a particular email message by using Windows Pow
      ```console
      Subject        IsRevocable
      -------        -----------
-     "Test message" True
+     "Test message" True
      ```
 
 ### Step 3. Revoke the mail
@@ -146,10 +151,10 @@ To revoke an email by using Windows PowerShell, use the Set-OMEMessageRevocation
      Revoked: True
      ```
 
-## More information about Office 365 Advanced Message Encryption
+## More information about Microsoft Purview Advanced Message Encryption
 
-- [Office 365 Advanced Message Encryption](ome-advanced-message-encryption.md)
+- [Microsoft Purview Advanced Message Encryption](ome-advanced-message-encryption.md)
 
-- [Office 365 Advanced Message Encryption - email expiration](ome-advanced-expiration.md)
+- [Microsoft Purview Advanced Message Encryption - email expiration](ome-advanced-expiration.md)
 
 - [Message policy and compliance service description](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)

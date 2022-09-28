@@ -2,12 +2,12 @@
 title: "Disable access to Microsoft 365 services while assigning user licenses"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 04/24/2020
 audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150

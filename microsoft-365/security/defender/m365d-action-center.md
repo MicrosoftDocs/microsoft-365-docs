@@ -3,20 +3,22 @@ title: Go to the Action center to view and approve your automated investigation 
 description: Use the Action center to view details about automated investigation and approve pending actions
 keywords: Action center, threat protection, investigation, alert, pending, automated, detection
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: how-to
 ms.custom: 
 - autoir
@@ -25,9 +27,6 @@ ms.reviewer: evaldm, isco
 ---
 
 # The Action center
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 - Microsoft 365 Defender
@@ -44,7 +43,7 @@ Because the Action center provides a comprehensive view of Microsoft 365 Defende
 
 The unified Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) lists pending and completed remediation actions for your devices, email & collaboration content, and identities in one location.
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="The unified Action center in Microsoft 365 Defender portal." lightbox="../../media/m3d-action-center-unified.png":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="The unified Action center in the Microsoft 365 Defender portal." lightbox="../../media/m3d-action-center-unified.png":::
 
 For example: 
 
@@ -63,28 +62,34 @@ You can use the unified Action center if you have appropriate permissions and on
 > [!TIP]
 > To learn more, see [Requirements](./prerequisites.md).
 
+You can navigate to the list of actions pending approval in two different ways:
+
+- Go to [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center); or
+- In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the Automated investigation & response card, select **Approve in Action Center**.
+
 ## Using the Action center
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
-2. In the navigation pane, choose **Action center**. 
 
-When you visit the Action center, you see two tabs: **Pending actions** and **History**. The following table summarizes what you'll see on each tab:
+2. In the navigation pane, choose **Action center**. Or, in the Automated investigation & response card, select **Approve in Action Center**.
 
-|Tab  |Description  |
-|---------|---------|
-|**Pending**     | Displays a list of actions that require attention. You can approve or reject actions one at a time, or select multiple actions if they have the same type of action (such as Quarantine file). <p>**TIP**: Make sure to review and approve (or reject) pending actions as soon as possible so that your automated investigations can complete in a timely manner.       |
-|**History**     | Serves as an audit log for actions that were taken, such as: <br/>- Remediation actions that were taken as a result of automated investigations <br/>- Remediation actions that were taken on suspicious or malicious email messages, files, or URLs<br/>- Remediation actions that were approved by your security operations team <br/>- Commands that were run and remediation actions that were applied during Live Response sessions<br/>- Remediation actions that were taken by your antivirus protection <p>Provides a way to undo certain actions (see [Undo completed actions](m365d-autoir-actions.md#undo-completed-actions)).        |
+3. Use the **Pending actions** and **History** tabs. The following table summarizes what you'll see on each tab:
 
-You can customize, sort, filter, and export data in the Action center.
+   |Tab  |Description  |
+   |---------|---------|
+   |**Pending**     | Displays a list of actions that require attention. You can approve or reject actions one at a time, or select multiple actions if they have the same type of action (such as Quarantine file). <br/><br/>Make sure to review and approve (or reject) pending actions as soon as possible so that your automated investigations can complete in a timely manner.       |
+   |**History**     | Serves as an audit log for actions that were taken, such as: <br/>- Remediation actions that were taken as a result of automated investigations <br/>- Remediation actions that were taken on suspicious or malicious email messages, files, or URLs<br/>- Remediation actions that were approved by your security operations team <br/>- Commands that were run and remediation actions that were applied during Live Response sessions<br/>- Remediation actions that were taken by your antivirus protection<br/><br/>Provides a way to undo certain actions (see [Undo completed actions](m365d-autoir-actions.md#undo-completed-actions)).        |
 
-:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="The sort, filter, and customize capabilities of the Action center." lightbox="../../media/m3d-action-center-columnsfilters.png":::
+4. You can customize, sort, filter, and export data in the Action center.
 
-- Select a column heading to sort items in ascending or descending order.
-- Use the time period filter to view data for the past day, week, 30 days, or 6 months.
-- Choose the columns that you want to view.
-- Specify how many items to include on each page of data.
-- Use filters to view just the items you want to see.
-- Select **Export** to export results to a .csv file.
+   :::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="Screenshot that shows the sort, filter, and customize capabilities of the Action center." lightbox="../../media/m3d-action-center-columnsfilters.png":::
+
+   - Select a column heading to sort items in ascending or descending order.
+   - Use the time period filter to view data for the past day, week, 30 days, or 6 months.
+   - Choose the columns that you want to view.
+   - Specify how many items to include on each page of data.
+   - Use filters to view just the items you want to see.
+   - Select **Export** to export results to a .csv file.
 
 ## Actions tracked in the Action center
 
@@ -99,6 +104,7 @@ All actions, whether they're pending approval or were already taken, are tracked
 - Restrict code execution (this action can be undone) 
 - Run antivirus scan 
 - Stop and quarantine 
+- Contain devices from the network
 
 In addition to remediation actions that are taken automatically as a result of [automated investigations](m365d-autoir.md), the Action center also tracks actions your security team has taken to address detected threats, and actions that were taken as a result of threat protection features in Microsoft 365 Defender. For more information about automatic and manual remediation actions, see [Remediation actions](m365d-remediation-actions.md).
 

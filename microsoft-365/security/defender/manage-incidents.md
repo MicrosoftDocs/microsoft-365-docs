@@ -2,25 +2,26 @@
 title: Manage incidents in Microsoft 365 Defender
 description: Learn how to assign, update the status,
 keywords: incident, incidents, analyze, response, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid: 
   - MOE150
-ms.technology: m365d
+  - MET150
 ---
 
 # Manage incidents in Microsoft 365 Defender
@@ -35,7 +36,7 @@ Incident management is critical to ensuring that incidents are named, assigned, 
 
 You can manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Example of the incident queue." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft 365 Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 Here are the ways you can manage your incidents:
 
@@ -43,12 +44,12 @@ Here are the ways you can manage your incidents:
 - [Add incident tags](#add-incident-tags)
 - [Assign the incident to a user account](#assign-an-incident)
 - [Resolve them](#resolve-an-incident)
-- [Set its classification and determination](#set-the-classification-and-determination)
+- [Specify its classification](#specify-the-classification)
 - [Add comments](#add-comments)
 
 You can manage incidents from the **Manage incident** pane for an incident. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Example of the Manage incident pane of an incident." lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="The Manage incident pane in the Microsoft 365 Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
 
 You can display this pane from the **Manage incident** link on the:
 
@@ -90,11 +91,19 @@ If the incident has been remediated, select **Resolve incident** to move the tog
 
 An incident that is not resolved displays as **Active**.
 
-## Set the classification and determination
+## Specify the classification
 
-The incident classification is whether it was a true alert or a false alert, which you configure from the **Classification** field. 
+From the **Classification** field, you specify whether the incident is:
 
-If it was a true alert, you should also specify what type of threat it was with the **Determination** field. Specifying the threat type helps your security team see threat patterns and act to defend your organization from them. 
+- **Not set** (the default).
+- **True positive** with a type of threat. Use this classification for incidents that accurately indicate a real threat. Specifying the threat type helps your security team see threat patterns and act to defend your organization from them.
+- **Informational, expected activity** with a type of activity. Use the options in this category to classify incidents for security tests, red team activity, and expected unusual behavior from trusted apps and users.
+- **False positive** for types of incidents that you determine can be ignored because they are technically inaccurate or misleading.
+
+Classifying incidents and specifying their status and type helps tune Microsoft 365 Defender to provide better detection determination over time.
+
+Watch this short video to learn how to use classification to increase triage efficiency.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LHJq]
 
 ## Add comments
 

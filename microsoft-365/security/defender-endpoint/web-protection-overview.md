@@ -3,18 +3,19 @@ title: Web protection
 description: Learn about the web protection in Microsoft Defender for Endpoint and how it can protect your organization
 keywords: web protection, web threat protection, web browsing, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser, malicious websites
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/25/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Web protection
@@ -27,15 +28,13 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
-
 
 ## About web protection
 
 Web protection in Microsoft Defender for Endpoint is a capability made up of [Web threat protection](web-threat-protection.md), [Web content filtering](web-content-filtering.md), and [Custom indicators](manage-indicators.md). Web protection lets you secure your devices against web threats and helps you regulate unwanted content. You can find Web protection reports in the Microsoft 365 Defender portal by going to **Reports > Web protection**.
 
-:::image type="content" alt-text="Image of all web protection cards." source="images/web-protection.png" lightbox="images/web-protection.png":::
+:::image type="content" source="images/web-protection.png" alt-text="The web protection cards" lightbox="images/web-protection.png":::
 
 ### Web threat protection
 
@@ -46,6 +45,17 @@ Web threat protection includes:
 - Comprehensive visibility into web threats affecting your organization.
 - Investigation capabilities over web-related threat activity through alerts and comprehensive profiles of URLs and the devices that access these URLs.
 - A full set of security features that track general access trends to malicious and unwanted websites.
+
+> [!NOTE]
+> For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage Network Protection for inspection and enforcement:
+>
+> - IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS)).
+> - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators.
+> - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge).
+> - Encrypted URLs (FQDN only) can be blocked in third party browsers (i.e. other than Internet Explorer, Edge).
+> - Full URL path blocks can be applied for unencrypted URLs.
+>
+> There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked.
 
 For more information, see [Web threat protection](web-threat-protection.md).
 
@@ -69,6 +79,8 @@ Web content filtering includes:
 
 - Users are prevented from accessing websites in blocked categories, whether they are browsing on-premises or away.
 - You can conveniently deploy varied policies to various sets of users using the device groups defined in the [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac).
+    > [!NOTE]
+    > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 - You can access web reports in the same central location, with visibility over actual blocks and web usage.
 
 For more information, see [Web content filtering](web-content-filtering.md).
@@ -114,7 +126,7 @@ Internal IP addresses are not supported by custom indicators. For a warn policy 
 
 In all web protection scenarios, SmartScreen and Network Protection can be used together to ensure protection across both first and third-party browsers and processes. SmartScreen is built directly into Microsoft Edge, while Network Protection monitors traffic in third-party browsers and processes. The diagram below illustrates this concept. This diagram of the two clients working together to provide multiple browser/app coverages is accurate for all features of Web Protection (Indicators, Web Threats, Content Filtering).
 
-:::image type="content" alt-text="Using SmartScreen and Network Protection together." source="../../media/web-protection-protect-browsers.png" lightbox="../../media/web-protection-protect-browsers.png":::
+:::image type="content" source="../../media/web-protection-protect-browsers.png" alt-text="The usage of smartScreen and Network Protection together" lightbox="../../media/web-protection-protect-browsers.png":::
 
 ## Troubleshoot endpoint blocks
 
@@ -146,7 +158,7 @@ DeviceEvents
 | where ActionType == "SmartScreenUrlWarning"
 | extend ParsedFields=parse_json(AdditionalFields)
 | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-| where Experience == "CustomBlockList"
+| where Experience == "CustomPolicy"
 ```
 
 Similarly, you can use the query below to list all WCF blocks originating from Network Protection (for example, a WCF block in a third-party browser). Note that the ActionType has been updated and 'Experience' has been changed to 'ResponseCategory'.
@@ -163,20 +175,20 @@ To list blocks that are due to other features (like Custom Indicators), refer to
 
 ## User experience
 
-If a user visits a web page that poses a risk of malware, phishing, or other web threats, Microsoft Edge will trigger a block page that reads ‘This site has been reported as unsafe’ along with information related to the threat.
+If a user visits a web page that poses a risk of malware, phishing, or other web threats, Microsoft Edge will trigger a block page that reads 'This site has been reported as unsafe' along with information related to the threat.
 
 > [!div class="mx-imgBorder"]
-> ![Page blocked by Microsoft Edge.](../../media/web-protection-malicious-block.png)
+> :::image type="content" source="../../media/web-protection-malicious-block.png" alt-text="The page blocked by Microsoft Edge" lightbox="../../media/web-protection-malicious-block.png":::
 
 If blocked by WCF or a custom indicator, a block page shows in Microsoft Edge that tells the user this site is blocked by their organization.
 
 > [!div class="mx-imgBorder"]
-> ![Page blocked by your organization.](../../media/web-protection-indicator-blockpage.png)
+> :::image type="content" source="../../media/web-protection-indicator-blockpage.png" alt-text="The page blocked by your organization" lightbox="../../media/web-protection-indicator-blockpage.png":::
 
-In any case, no block pages are shown in third-party browsers, and the user sees a ‘Secure Connection Failed’ page along with a toast notification. Depending on the policy responsible for the block, a user will see a different message in the toast notification. For example, web content filtering will display the message ‘This content is blocked’.
+In any case, no block pages are shown in third-party browsers, and the user sees a "Secure Connection Failed' page along with a toast notification. Depending on the policy responsible for the block, a user will see a different message in the toast notification. For example, web content filtering will display the message 'This content is blocked'.
 
 > [!div class="mx-imgBorder"]
-> ![Page blocked by WCF.](../../media/web-protection-np-block.png)
+> :::image type="content" source="../../media/web-protection-np-block.png" alt-text="The page blocked by WCF" lightbox="../../media/web-protection-np-block.png":::
 
 ## Report false positives
 

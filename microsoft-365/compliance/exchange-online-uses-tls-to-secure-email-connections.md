@@ -1,5 +1,5 @@
 ---
-title: "How Exchange Online uses Transport Layer Security (TLS) to secure email connections"
+title: "How Exchange Online uses TLS to secure email connections"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 ms.assetid: 4cde0cda-3430-4dc0-b489-f2c0736c929f
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - Strat_O365_IP
 description: "Learn how Exchange Online and Microsoft 365 use Transport Layer Security (TLS) and Forward Secrecy (FS) to secure email communications. Also get information about the certificate issued by Microsoft for Exchange Online."
 ---
@@ -26,9 +26,9 @@ Learn how Exchange Online and Microsoft 365 use Transport Layer Security (TLS) a
   
 ## TLS basics for Microsoft 365 and Exchange Online
 
-Transport Layer Security (TLS), and SSL that came before TLS, are cryptographic protocols that secure communication over a network by using security certificates to encrypt a connection between computers. TLS supersedes Secure Sockets Layer (SSL) and is often referred to as SSL 3.1. Exchange Online uses TLS to encrypt the connections between Exchange servers and the connections between Exchange servers and other servers such as your on-premises Exchange servers or your recipients' mail servers. Once the connection is encrypted, all data sent through that connection is sent through the encrypted channel. However, if you forward a message that was sent through a TLS-encrypted connection, that message isn't necessarily encrypted. TLS doesn't encrypt the message, just the connection.
+Transport Layer Security (TLS), and SSL that came before TLS, are cryptographic protocols that secure communication over a network by using security certificates to encrypt a connection between computers. TLS supersedes Secure Sockets Layer (SSL) and is often referred to as SSL 3.1. Exchange Online uses TLS to encrypt the connections between Exchange servers and the connections between Exchange servers and other servers such as your on-premises Exchange servers or your recipients' mail servers. Once the connection is encrypted, all data sent through that connection is sent through the encrypted channel. However, if you forward a message that was sent through a TLS-encrypted connection to a recipient organization that doesn't support TLS encryption, that message isn't necessarily encrypted. TLS doesn't encrypt the message, just the connection.
   
-If you want to encrypt the message, use an encryption technology that encrypts the message contents. For example, you can use Office Message Encryption or S/MIME. See [Email encryption in Office 365](email-encryption.md) and [Office 365 Message Encryption (OME)](ome.md) for information on message encryption in Office 365.
+If you want to encrypt the message, use an encryption technology that encrypts the message contents. For example, you can use Microsoft Purview Message Encryption or S/MIME. See [Email encryption in Office 365](email-encryption.md) and [Message encryption](ome.md) for information on message encryption in Office 365.
   
 Use TLS in situations where you want to set up a secure channel of correspondence between Microsoft and your on-premises organization or another organization, such as a partner. Exchange Online always attempts to use TLS first to secure your email but can't if the other party does not offer TLS security. Keep reading to find out how you can secure all mail to your on-premises servers or important partners by using *connectors*.
 
@@ -60,7 +60,7 @@ The certificate information used by Exchange Online is described in the followin
   
 | Attribute | Value |
 |:-----|:-----|
-|Certificate authority root issuer|DigiCert CA – 1|
+|Certificate authority root issuer|DigiCert CA - 1|
 |Certificate name|mail.protection.outlook.com|
 |Organization|Microsoft Corporation|
 |Organization unit|www.digicert.com|

@@ -77,7 +77,7 @@ Permissions required:
 
 After the Microsoft 365 Support Integration app has been installed, two Application Cross-Scope accesses are created. If they're not created successfully, create them manually.
 
-## What configuration is right for your organization?
+## Setup the integration
 
 After you've downloaded the app, navigate to the Microsoft 365 setup wizard in your SNOW environment to complete the setup process.
 :::image type="content" source="../../media/154124985-76e13e7d-b32e-4741-830b-bbb110d3ecbf.png" alt-text="Snow setup wizard":::
@@ -88,3 +88,9 @@ You can learn more about the steps by visiting the following pages:
   - This configuration will require an SSO tenant in order for the AAD Auth Token to work correctly.
 
 To understand each feature, see [Microsoft 365 support integration](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
+
+> [!NOTE]
+> This app is not supported in regulated or restricted environments.
+
+> [!IMPORTANT]
+> The Microsoft 365 support integration app will occasionally prompt users for feedback about the app. If you don’t want users to be prompted for feedback, turn off this functionality in the app settings. For more information about Microsoft feedback policies, see [Learn about Microsoft feedback for your organization](/microsoft-365/admin/misc/feedback-user-control). To change the feedback settings, follow the steps in the installation process.

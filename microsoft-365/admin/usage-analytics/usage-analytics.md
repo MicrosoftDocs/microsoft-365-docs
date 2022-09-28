@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 usage analytics"
+title: "About Microsoft 365 usage analytics"
 f1.keywords:
 - NOCSH
 ms.author: efrene

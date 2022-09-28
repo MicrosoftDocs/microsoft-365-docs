@@ -1,9 +1,9 @@
 ---
-title: "Modify assessment templates in Microsoft Compliance Manager"
+title: "Modify assessment templates in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -11,33 +11,34 @@ ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- highpri
 search.appverid: 
 - MOE150
 - MET150
-description: "Understand how to modify assessment templates in Microsoft Compliance Manager."
+description: "Understand how to modify assessment templates in Microsoft Purview Compliance Manager."
 ---
 
-# Modify assessment templates in Microsoft Compliance Manager
+# Modify assessment templates in Microsoft Purview Compliance Manager
 
-When working with assessments in Compliance Manager, you may want to modify an assessment template that you’ve created. The process is similar to the [template creation](compliance-manager-templates-create.md) process in that you’ll upload a formatted Excel file with your template data.
+When working with assessments in Compliance Manager, you may want to modify an assessment template that you've created. The process is similar to the [template creation](compliance-manager-templates-create.md) process in that you'll upload a formatted Excel file with your template data.
 
-However, there are details to be aware of as you format your file with changes to existing template data. **We recommend you review these instructions carefully to ensure you don’t overwrite any existing data that you want to retain.**
+However, there are details to be aware of as you format your file with changes to existing template data. **We recommend you review these instructions carefully to ensure you don't overwrite any existing data that you want to retain.**
 
 To learn more about the format of this spreadsheet, see [Format your template data with Excel](compliance-manager-templates-format-excel.md).
 
 ## Format your Excel file to modify an existing template
 
-From your **assessment templates** page, select the template you want to modify, which will bring up its details page. Then select **Export to Excel**. An Excel file with all your template data will download. Save the file to your local machine.
+From your **assessment templates** page, select the template you want to modify, which will bring up its details page. Then select **Export to Excel**. An Excel file with all your template data will download. Save the file to your local machine.
 
 To work with this file, jump to a section below to quickly find the instructions you need:
 
 - [Edit the main template attributes](#edit-the-main-template-attributes)
 - [Add an improvement action](#add-an-improvement-action)
-- [Edit an improvement action’s information](#edit-an-improvement-actions-information)
-- [Change an improvement action’s name](#change-an-improvement-actions-name)
+- [Edit an improvement action's information](#edit-an-improvement-actions-information)
+- [Change an improvement action's name](#change-an-improvement-actions-name)
 - [Remove an improvement action](#remove-an-improvement-action)
 - [Remove a control](#remove-a-control)
 
@@ -57,7 +58,7 @@ You can change any improvement action's information *except for its title*. You 
 
 You cannot edit the **actionTitle** (column A) because if you do, Compliance Manager considers this to be a new improvement action. If you want to change an improvement action's name, see the instructions immediately below.
 
-### Change an improvement action’s name
+### Change an improvement action's name
 
 If you want to change the name of an improvement action, you have to explicitly designate in the spreadsheet that you are replacing an existing name with a new name. Follow these steps:
 
@@ -97,15 +98,15 @@ When you import your spreadsheet back into the template, your control will be re
 
 After your Excel file is completed and saved, follow these steps.
 
-1. Open the assessment template page again and select your template. At your template’s details page, select **Modify template** to initiate the modification wizard.
+1. Open the assessment template page again and select your template. At your template's details page, select **Modify template** to initiate the modification wizard.
 2. At the **Upload file** screen, select **Browse** to find and upload your Excel file.
 3. If there are no problems with your file, the next screen shows the name of the file uploaded. Select **Next** to continue (if you need to change the file, select **Upload a different file**).
-    - If there’s a problem with your file, an error message at the top explains what’s wrong. You’ll need to fix your file and upload it again. Errors will result if your spreadsheet is formatted improperly, or if there’s invalid information in certain fields.
+    - If there's a problem with your file, an error message at the top explains what's wrong. You'll need to fix your file and upload it again. Errors will result if your spreadsheet is formatted improperly, or if there's invalid information in certain fields.
 
 4. The **Review and finish** screen shows the number of improvement actions and controls and the maximum score for the template. When ready to approve, select **Next**.
 5. The last screen confirms that the template has been modified. Select **Done** to exit the wizard.
 
-Your template will now include the changes you made. Any assessments that use this modified template will now show pending updates, and you’ll need to accept the updates to the assessments to reflect the changes made in the template. Learn more about [updates to assessments](compliance-manager-assessments.md#accept-updates-to-assessments).
+Your template will now include the changes you made. Any assessments that use this modified template will now show pending updates, and you'll need to accept the updates to the assessments to reflect the changes made in the template. Learn more about [updates to assessments](compliance-manager-assessments.md#accept-updates-to-assessments).
 
 > [!NOTE]
-> If you use Compliance Manager in a language other than English, you’ll notice that some text appears in English when you export a template to Excel. The titles of actions (both your improvement actions and, where applicable, Microsoft actions) must be in English to be recognized by controls. If you make changes to an action title, be sure to write it in English so that the file imports correctly.
+> If you use Compliance Manager in a language other than English, you'll notice that some text appears in English when you export a template to Excel. The titles of actions (both your improvement actions and, where applicable, Microsoft actions) must be in English to be recognized by controls. If you make changes to an action title, be sure to write it in English so that the file imports correctly.

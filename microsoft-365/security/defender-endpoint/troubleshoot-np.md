@@ -2,7 +2,7 @@
 title: Troubleshoot problems with Network protection
 description: Resources and sample code to troubleshoot issues with Network protection in Microsoft Defender for Endpoint.
 keywords: troubleshoot, error, fix, windows defender eg, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, Microsoft Defender for Endpoint
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,10 @@ author: dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Troubleshoot network protection
@@ -80,12 +81,12 @@ If you've tested the feature with the demo site and with audit mode, and network
 See [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
 
 ## Add exclusions
+
 The current exclusion options are:
 
-1.	Setting up a custom allow indicator.
-2.	Using IP exclusions: `Add-MpPreference -ExclusionIpAddress 192.168.1.1`
-3.	Excluding an entire process. For more information, see [Microsoft Defender Antivirus exclusions](configure-exclusions-microsoft-defender-antivirus.md). 
-
+1. Setting up a custom allow indicator.
+2. Using IP exclusions: `Add-MpPreference -ExclusionIpAddress 192.168.1.1`
+3. Excluding an entire process. For more information, see [Microsoft Defender Antivirus exclusions](configure-exclusions-microsoft-defender-antivirus.md). 
 
 ## Collect diagnostic data for file submissions
 

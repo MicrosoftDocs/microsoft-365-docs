@@ -1,27 +1,29 @@
 ---
-title: "Use network upload to import your organization's PST files"
+title: "Use network upload to import PST files"
+description: "For administrators: Learn how to use network upload to bulk-import multiple PST files to user mailboxes in Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- import
 search.appverid:
 - MOE150
 - MED150
 - MET150
-ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
-description: "For administrators: Learn how to use network upload to bulk-import multiple PST files to user mailboxes in Microsoft 365."
 ms.custom: seo-marvel-apr2020
 ---
 
 # Use network upload to import your organization's PST files to Microsoft 365
+
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)
@@ -44,7 +46,7 @@ You have to perform Step 1 only once to import PST files to Microsoft 365 mailbo
 
 ## Before you import PST files
   
-- You have to be assigned the Mailbox Import Export role in Exchange Online to create import jobs in the Microsoft 365 compliance center and import PST files to user mailboxes. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a role group, assign the Mailbox Import Export role, and then add yourself as a member. For more information, see the "Add a role to a role group" or the "Create a role group" sections in [Manage role groups](/Exchange/permissions-exo/role-groups).
+- You have to be assigned the Mailbox Import Export role in Exchange Online to create import jobs in the Microsoft Purview compliance portal and import PST files to user mailboxes. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a role group, assign the Mailbox Import Export role, and then add yourself as a member. For more information, see the "Add a role to a role group" or the "Create a role group" sections in [Manage role groups](/Exchange/permissions-exo/role-groups).
 
     In addition to the Mailbox Import Export role, you also have to be assigned the Mail Recipients role in Exchange Online. By default, this role is assigned to the Organization Management and Recipient Management roles groups in Exchange Online.
 
@@ -85,10 +87,10 @@ The first step is to download the AzCopy tool, which is the tool that you run in
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left pane of the Microsoft 365 compliance center, click **Information governance** \> **Import**.
+2. In the left pane of the compliance portal, select **Data lifecycle management** \> **Microsoft 365** \> **Microsoft 365** \> **Import**.
 
     > [!NOTE]
-    > You have to be assigned the appropriate permissions to access the **Import** page in the Microsoft 365 compliance center. See the **Before you begin** section for more information. 
+    > You have to be assigned the appropriate permissions to access the **Import** page in the compliance portal. See the **Before you begin** section for more information. 
 
 3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
 
@@ -136,14 +138,14 @@ Now you're ready to use the AzCopy tool to upload PST files to Microsoft 365. Th
     | Field | Description |
     |:-----|:-----|
     | Source |The first field specifies the source directory in your organization that contains the PST files that will be uploaded to Microsoft 365. Alternatively, you can specify an Azure Storage location as the source location of the PST files to upload. <br/> Be sure to surround the value of this field with double-quotation marks (" ").  <br/> <br/>**Examples**: <br/>`"\\FILESERVER01\PSTs"` <br/> Or  <br/>`"https://storageaccountid.blob.core.windows.net/PSTs?sp=racwdl&st=2021-09-21T07:25:53Z&se=2021-09-21T15:25:53Z&sv=2020-08-04&sr=c&sig=xxxxxx"`|  
-    | Destination |Specifies the SAS URL that you obtained in Step 1.  <br/> Be sure to surround the value of this parameter with double-quotation marks (" ").<br/><br/>**Note:** If you use the SAS URL in a script or batch file, watch out for certain characters that need to be escaped. For example, you have to change `%` to `%%` and change `&` to `^&`.<br/><br/>**Tip:** (Optional) You can specify a subfolder in the Azure Storage location to upload the PST files to. You do this by adding a subfolder location (after "ingestiondata") in the SAS URL. The first example doesn't specify a subfolder. That means the PSTs are uploaded to the root (named *ingestiondata*) of the Azure Storage location. The second example uploads the PST files to a subfolder (named  *PSTFiles*) in the root of the Azure Storage location.  <br/><br/>**Examples**: <br/> `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> Or  <br/>  `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
-    | `--recursive` |This optional flag specifies the recursive mode so that the AzCopy tool copies PSTs files that are located in subfolders in the source directory that is specified by the source field. The default value for this flag is `true`. <br/>**Note:** If you include this flag, PST files in subfolders will have a different file pathname in the Azure Storage location after they're uploaded. You'll have to specify the exact file pathname in the CSV file that you create in Step 4.|
+    | Destination |Specifies the SAS URL that you obtained in Step 1.  <br/> Be sure to surround the value of this parameter with double-quotation marks (" ").<br/><br/>**Note:** If you use the SAS URL in a script or batch file, watch out for certain characters that need to be escaped. For example, you have to change `%` to `%%` and change `&` to `^&`.<br/><br/>**Tip:** (Optional) You can specify a subfolder in the Azure Storage location to upload the PST files to. You do this by adding a subfolder location (after "ingestiondata") in the SAS URL. The first example doesn't specify a subfolder. That means the PST files are uploaded to the root (named *ingestiondata*) of the Azure Storage location. The second example uploads the PST files to a subfolder (named  *PSTFiles*) in the root of the Azure Storage location.  <br/><br/>**Examples**: <br/> `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> Or  <br/>  `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
+    | `--recursive` |This optional flag specifies the recursive mode so that the AzCopy tool copies PST files that are located in subfolders in the source directory that is specified by the source field. The default value for this flag is `true`. <br/>**Note:** If you include this flag, PST files in subfolders will have a different file pathname in the Azure Storage location after they're uploaded. You'll have to specify the exact file pathname in the CSV file that you create in Step 4.|
     | `--s2s-preserve-access-tier` | This optional flag is only required when the source location is a general-purpose v2 Azure Storage location that supports access tiers. For the PST Import scenario, there is no need to preserve the access tier when you copy PST files from your Azure Storage account to the Microsoft-provided Azure Storage location. In this case, you can include this flag and use a value of `false`. You don't need to use this flag when copy PST files from a classic Azure Storage account, which doesn't support access tiers.|
    |||
 
 For more information about the **azcopy.exe copy** command, see [azcopy copy](/azure/storage/common/storage-ref-azcopy-copy).
 
-Here's are examples of the syntax for the AzCopy tool using actual values for each parameter.
+Here are examples of the syntax for the AzCopy tool using actual values for each parameter.
 
 ### Example 1
 
@@ -234,14 +236,14 @@ After the PST files have been uploaded to the Azure Storage location for your or
 
 3. Use the information in the following table to populate the CSV file with the required information.
 
-    | Parameter | Description | Example |
-    |:-----|:-----|:-----|
-    | `Workload` <br/> |Specifies the service that data will be imported to. To import PST files to user mailboxes, use  `Exchange`.  <br/> | `Exchange` <br/> |
-    | `FilePath` <br/> |Specifies the folder location in the Azure Storage location that you uploaded the PST files to in Step 2.  <br/> If you didn't include an optional subfolder name in the SAS URL in the  `/Dest:` parameter in Step 2, leave this parameter blank in the CSV file. If you included a subfolder name, specify it in this parameter (see the second example). The value for this parameter is case-sensitive.  <br/> Either way,  *don't*  include "ingestiondata" in the value for the  `FilePath` parameter.  <br/><br/> **Important:** The case for the file path name must be the same as the case you used if you included an optional subfolder name in the SAS URL in the destination field in Step 2. For example, if you used  `PSTFiles` for the subfolder name in Step 2 and then use  `pstfiles` in the  `FilePath` parameter in CSV file, the import for the PST file will fail. Be sure to use the same case in both instances.  <br/> |(leave blank)  <br/> Or  <br/>  `PSTFiles` <br/> |
-    | `Name` <br/> |Specifies the name of the PST file that will be imported to the user mailbox. The value for this parameter is case-sensitive. The file name of each PST file in the mapping file for an import job must be unique. <br/> <br/>**Important:** The case for the PST file name in the CSV file must be the same as the PST file that was uploaded to the Azure Storage location in Step 2. For example, if you use  `annb.pst` in the  `Name` parameter in the CSV file, but the name of the actual PST file is `AnnB.pst`, the import for that PST file will fail. Be sure that the name of the PST in the CSV file uses the same case as the actual PST file.  <br/> | `annb.pst` <br/> |
-    | `Mailbox` <br/> |Specifies the email address of the mailbox that the PST file will be imported to. You can't specify a public folder because the PST Import Service doesn't support importing PST files to public folders.  <br/> To import a PST file to an inactive mailbox, you have to specify the mailbox GUID for this parameter. To obtain this GUID, run the following PowerShell command in Exchange Online:  `Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> <br/>**Note:** Sometimes you might have multiple mailboxes with the same email address, where one mailbox is an active mailbox and the other mailbox is in a soft-deleted (or inactive) state. In these situations, you have to specify the mailbox GUID to uniquely identify the mailbox to import the PST file to. To obtain this GUID for active mailboxes, run the following PowerShell command:  `Get-Mailbox <identity of active mailbox> | FL Guid`. To obtain the GUID for soft-deleted (or inactive) mailboxes, run this command  `Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`.  <br/> | `annb@contoso.onmicrosoft.com` <br/> Or  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
+    |**Parameter**|**Description**|**Example**|
+    |:------------|:--------------|:----------|
+    |`Workload`|Specifies the service that data will be imported to. To import PST files to user mailboxes, use  `Exchange`.| `Exchange`|
+    |`FilePath`|Specifies the folder location in the Azure Storage location that you uploaded the PST files to in Step 2.  <br/> If you didn't include an optional subfolder name in the SAS URL in the  `/Dest:` parameter in Step 2, leave this parameter blank in the CSV file. If you included a subfolder name, specify it in this parameter (see the second example). The value for this parameter is case-sensitive.  <br/> Either way,  *don't*  include "ingestiondata" in the value for the  `FilePath` parameter.  <br/><br/> **Important:** The case for the file path name must be the same as the case you used if you included an optional subfolder name in the SAS URL in the destination field in Step 2. For example, if you used  `PSTFiles` for the subfolder name in Step 2 and then use  `pstfiles` in the  `FilePath` parameter in CSV file, the import for the PST file will fail. Be sure to use the same case in both instances. |(leave blank)  <br/> Or  <br/>  `PSTFiles` |
+    |`Name`|Specifies the name of the PST file that will be imported to the user mailbox. The value for this parameter is case-sensitive. The file name of each PST file in the mapping file for an import job must be unique. <br/> <br/>**Important:** The case for the PST file name in the CSV file must be the same as the PST file that was uploaded to the Azure Storage location in Step 2. For example, if you use  `annb.pst` in the  `Name` parameter in the CSV file, but the name of the actual PST file is `AnnB.pst`, the import for that PST file will fail. Be sure that the name of the PST in the CSV file uses the same case as the actual PST file.| `annb.pst`|
+    |`Mailbox`|Specifies the email address of the mailbox that the PST file will be imported to. You can't specify a public folder or unified group because the PST Import Service doesn't support importing PST files or unified groups to public folders.  <br/> To import a PST file to an inactive mailbox, you have to specify the mailbox GUID for this parameter. To obtain this GUID, run the following PowerShell command in Exchange Online:  `Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly FL Guid`. | **Note:** Sometimes you might have multiple mailboxes with the same email address, where one mailbox is an active mailbox and the other mailbox is in a soft-deleted (or inactive) state. In these situations, you have to specify the mailbox GUID to uniquely identify the mailbox to import the PST file to. To obtain this GUID for active mailboxes, run the following PowerShell command:  `Get-Mailbox <identity of active mailbox>`.  <br/><br/>To obtain the GUID for soft-deleted (or inactive) mailboxes, run this command:  `Get-Mailbox \<identity of soft-deleted or inactive mailbox\> -SoftDeletedMailbox FL Guid annb@contoso.onmicrosoft.com` <br/> Or  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
     | `IsArchive` <br/> | Specifies whether to import the PST file to the user's archive mailbox. There are two options:  <br/><br/>**FALSE:** Imports the PST file to the user's primary mailbox.  <br/> **TRUE:** Imports the PST file to the user's archive mailbox. This assumes that the [user's archive mailbox is enabled](enable-archive-mailboxes.md). <br/><br/>If you set this parameter to  `TRUE` and the user's archive mailbox isn't enabled, the import for that user will fail. If an import fails for one user (because their archive isn't enabled and this property is set to  `TRUE`), the other users in the import job won't be affected.  <br/>  If you leave this parameter blank, the PST file is imported to the user's primary mailbox.  <br/> <br/>**Note:** To import a PST file to a cloud-based archive mailbox for a user whose primary mailbox is on-premises, just specify  `TRUE` for this parameter and specify the email address for the user's on-premises mailbox for the  `Mailbox` parameter.  <br/> | `FALSE` <br/> Or  <br/>  `TRUE` <br/> |
-    | `TargetRootFolder` <br/> | Specifies the mailbox folder that the PST file is imported to.  <br/> <br/> If you leave this parameter blank, the PST file will be imported to a new folder named **Imported** at the root level of the mailbox (the same level as the Inbox folder and the other default mailbox folders).  <br/> <br/> If you specify  `/`, the folders and items in the PST file are imported to the top of the folder structure in the target mailbox or archive. If a folder exists in the target mailbox (for example, default folders such as Inbox, Sent Items, and Deleted Items), the items in that folder in the PST are merged into the existing folder in the target mailbox. For example, if the PST file contains an Inbox folder, items in that folder are imported to the Inbox folder in the target mailbox. New folders are created if they don't exist in the folder structure for the target mailbox.  <br/><br/>  If you specify  `/<foldername>`, items and folders in the PST file are imported to a folder named  *\<foldername\>*  . For example, if you use  `/ImportedPst`, items would be imported to a folder named **ImportedPst**. This folder will be located in the user's mailbox at the same level as the Inbox folder.  <br/><br/> **Tip:** Consider running a few test batches to experiment with this parameter so you can determine the best folder location to import PSTs files to.  <br/> |(leave blank)  <br/> Or  <br/>  `/` <br/> Or  <br/>  `/ImportedPst` <br/> |
+    | `TargetRootFolder` <br/> | Specifies the mailbox folder that the PST file is imported to.  <br/> <br/> If you leave this parameter blank, the PST file will be imported to a new folder named **Imported** at the root level of the mailbox (the same level as the Inbox folder and the other default mailbox folders).  <br/> <br/> If you specify  `/`, the folders and items in the PST file are imported to the top of the folder structure in the target mailbox or archive. If a folder exists in the target mailbox (for example, default folders such as Inbox, Sent Items, and Deleted Items), the items in that folder in the PST are merged into the existing folder in the target mailbox. For example, if the PST file contains an Inbox folder, items in that folder are imported to the Inbox folder in the target mailbox. New folders are created if they don't exist in the folder structure for the target mailbox.  <br/><br/>  If you specify  `/<foldername>`, items and folders in the PST file are imported to a folder named  *\<foldername\>*  . For example, if you use  `/ImportedPst`, items would be imported to a folder named **ImportedPst**. This folder will be located in the user's mailbox at the same level as the Inbox folder.  <br/><br/> **Tip:** Consider running a few test batches to experiment with this parameter so you can determine the best folder location to import PST files.  <br/> |(leave blank)  <br/> Or  <br/>  `/` <br/> Or  <br/>  `/ImportedPst` <br/> |
     | `ContentCodePage` <br/> |This optional parameter specifies a numeric value for the code page to use for importing PST files in the ANSI file format. This parameter is used for importing PST files from Chinese, Japanese, and Korean (CJK) organizations because these languages typically use a double byte character set (DBCS) for character encoding. If this parameter isn't used to import PST files for languages that use DBCS for mailbox folder names, the folder names are often garbled after they're imported.  <br/><br/> For a list of supported values to use for this parameter, see [Code Page Identifiers](/windows/win32/intl/code-page-identifiers).  <br/> <br/>**Note:** As previously stated, this is an optional parameter and you don't have to include it in the CSV file. Or you can include it and leave the value blank for one or more rows.  <br/> |(leave blank)  <br/> Or  <br/>  `932` (which is the code page identifier for ANSI/OEM Japanese)  <br/> |
     | `SPFileContainer` <br/> |For PST Import, leave this parameter blank.  <br/> |Not applicable  <br/> |
     | `SPManifestContainer` <br/> |For PST Import, leave this parameter blank.  <br/> |Not applicable  <br/> |
@@ -253,12 +255,12 @@ The next step is to create the PST Import job in the Import service in Microsoft
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
-2. In the left pane of the Microsoft 365 compliance center, click **Information governance > Import**.
+2. In the left pane of the compliance portal, select **Data lifecycle management** > **Microsoft 365** > Import**.
 
 3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
 
    > [!NOTE]
-   > You have to be assigned the appropriate permissions to access the **Import** page in the Microsoft 365 compliance center to create an import job. See the **Before you begin** section for more information. 
+   > You have to be assigned the appropriate permissions to access the **Import** page in the compliance portal to create an import job. See the **Before you import PST files** section for more information. 
 
 4. Type a name for the PST import job, and then click **Next**. Use lowercase letters, numbers, hyphens, and underscores. You can't use uppercase letters or include spaces in the name.
 
@@ -295,7 +297,7 @@ The next step is to create the PST Import job in the Import service in Microsoft
 
 After you create the import job in Step 5, Microsoft 365 analyzes the data in the PST files (in a safe and secure manner) by identifying the age of the items and the different message types included in the PST files. When the analysis is completed and the data is ready to import, you have the option to import all the data contained in the PST files or you can trim the data that's imported by setting filters that control what data gets imported.
   
-1. On the **Import** tab in the Microsoft 365 compliance center, select the import jobs that you created in Step 5 and then click **Import to Microsoft 365**.
+1. On the **Import** tab in the compliance portal, select the import jobs that you created in Step 5 and then click **Import to Microsoft 365**.
   
    The **Filter your data** page is displayed. It contains the data insights resulting from the analysis performed on the PST files by Microsoft 365, including information about the age of the data. At this point, you have the option to filter the data that will be imported or import all the data as is. 
 
@@ -323,7 +325,7 @@ After you create the import job in Step 5, Microsoft 365 analyzes the data in th
 
   - The data is available to the user from all devices because it's stored in the cloud.
 
-  - It helps address compliance needs of your organization by letting you apply Microsoft 365 compliance features to the data from the PST files that you imported. This includes:
+  - It helps address compliance needs of your organization by letting you apply Microsoft Purview features to the data from the PST files that you imported. This includes:
 
   - Enabling [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](enable-autoexpanding-archiving.md) to give users additional mailbox storage space to store the data that you imported.
 
@@ -355,7 +357,7 @@ Here's an illustration and description of the network upload process to import P
   
 ![Workflow of the network upload process to import PST files to Microsoft 365.](../media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
   
-1. **Download the PST import tool and key to private Azure Storage location:** The first step is to download the AzCopy command-line tool and an access key used to upload the PST files to an Azure Storage location in the Microsoft cloud. You obtain these from the **Import** page in the Microsoft 365 compliance center. The key (called a secure access signature (SAS) key, provides you with the necessary permissions to upload PST files to a private and secure Azure Storage location. This access key is unique to your organization and helps prevent unauthorized access to your PST files after they're uploaded to the Microsoft cloud. Importing PST files doesn't require your organization to have a separate Azure subscription. 
+1. **Download the PST import tool and key to private Azure Storage location:** The first step is to download the AzCopy command-line tool and an access key used to upload the PST files to an Azure Storage location in the Microsoft cloud. You obtain these from the **Import** page in the compliance portal. The key (called a secure access signature (SAS) key, provides you with the necessary permissions to upload PST files to a private and secure Azure Storage location. This access key is unique to your organization and helps prevent unauthorized access to your PST files after they're uploaded to the Microsoft cloud. Importing PST files doesn't require your organization to have a separate Azure subscription.
 
 2. **Upload the PST files to the Azure Storage location:** The next step is to use the azcopy.exe tool (downloaded in step 1) to upload and store your PST files in an Azure Storage location that resides in the same regional Microsoft datacenter where your organization is located. To upload them, the PST files that you want to import have to be located in a file share or file server in your organization.
 
@@ -363,8 +365,8 @@ Here's an illustration and description of the network upload process to import P
 
 3. **Create a PST import mapping file:** After the PST files have been uploaded to the Azure Storage location, the next step is to create a comma-separated value (CSV) file that specifies which user mailboxes the PST files will be imported to, note that a PST file can be imported to a user's primary mailbox or their archive mailbox. The Microsoft 365 Import service uses the information in the CSV file to import the PST files.
 
-4. **Create a PST import job:** The next step is to create a PST import job on the **Import PST files** page in the Microsoft 365 compliance center and submit the PST import mapping file created in the previous step. After you create the import job, Microsoft 365 analyzes the data in the PST files and then gives you an opportunity to set filters that control what data actually gets imported to the mailboxes specified in the PST import mapping file. 
+4. **Create a PST import job:** The next step is to create a PST import job on the **Import PST files** page in the compliance portal and submit the PST import mapping file created in the previous step. After you create the import job, Microsoft 365 analyzes the data in the PST files and then gives you an opportunity to set filters that control what data actually gets imported to the mailboxes specified in the PST import mapping file.
 
 5. **Filter the PST data that will be imported to mailboxes:** After the import job is created and started, Microsoft 365 analyzes the data in the PST files (safely and securely) by identifying the age of the items and the different message types included in the PST files. When the analysis is completed and the data is ready to import, you have the option to import all the data contained in the PST files or you can trim the data that's imported by setting filters that control what data gets imported.
 
-6. **Start the PST import job:** After the import job is started, Microsoft 365 uses the information in the PST import mapping file to import the PSTs files from the Azure Storage location to user mailboxes. Status information about the import job (including information about each PST file being imported) is displayed on the **Import PST files** page in the Microsoft 365 compliance center. When the import job is finished, the status for the job is set to **Complete**.
+6. **Start the PST import job:** After the import job is started, Microsoft 365 uses the information in the PST import mapping file to import the PSTs files from the Azure Storage location to user mailboxes. Status information about the import job (including information about each PST file being imported) is displayed on the **Import PST files** page in the compliance portal. When the import job is finished, the status for the job is set to **Complete**.

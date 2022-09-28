@@ -1,13 +1,13 @@
 ---
-title: "Microsoft 365 Multi-Geo tenant configuration"
+title: Microsoft 365 Multi-Geo tenant configuration
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-ms.collection: 
+ms.service: microsoft-365-enterprise
+ms.collection:
 - SPO_Content
 - Strat_SP_gtc
 f1.keywords:
@@ -39,25 +39,23 @@ You must add a satellite location for each geo location where you want to store 
 
 To add a satellite location
 
-1. Open the SharePoint admin center.
+1. Open the SharePoint admin center. and go to <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">**Geo locations**</a>.
 
-2. Navigate to the **Geo locations** tab.
+1. Select **Add location**.
 
-3. Click **Add location**.
+1. Select the location that you want to add, and then select **Next**.
 
-4. Select the location that you want to add, and then click **Next**.
+1. Type the domain that you want to use with the geo location, and then select **Add**.
 
-5. Type the domain that you want to use with the geo location, and then click **Add**.
+1. Select **Close**.
 
-6. Click **Close**.
-
-Provisioning may take from a few hours up to 72 hours, depending on the size of your tenant. Once provisioning of a satellite location has completed, you will receive an email confirmation. When the new geo location appears in blue on the map on the **Geo locations** tab in the OneDrive admin center, you can proceed to set users' preferred data location to that geo location. 
+Provisioning may take from a few hours up to 72 hours, depending on the size of your tenant. Once provisioning of a satellite location has completed, you will receive an email confirmation. When the new geo location appears in blue on the map on the **Geo locations** tab in the OneDrive admin center, you can proceed to set users' preferred data location to that geo location.
 
 > [!IMPORTANT]
 > Your new satellite location will be set up with default settings. This will allow you to configure that satellite location as appropriate for your local compliance needs.
 
 ## Setting users' preferred data location
-<span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span> 
+<span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span>
 
 Once you enable the needed satellite locations, you can update your user accounts to use the appropriate preferred data location. We recommend that you set a preferred data location for every user, even if that user is staying in the central location.
 
@@ -69,7 +67,7 @@ Once you enable the needed satellite locations, you can update your user account
 
 In Azure Active Directory (Azure AD) there are two types of user objects: cloud only users and synchronized users. Please follow the appropriate instructions for your type of user.
 
-### Synchronize user's Preferred Data Location using Azure AD Connect 
+### Synchronize user's Preferred Data Location using Azure AD Connect
 
 If your company's users are synchronized from an on-premises Active Directory system to Azure AD, their PreferredDataLocation must be populated in AD and synchronized to Azure AD.
 
@@ -80,21 +78,25 @@ We recommend that you include setting the user's Preferred Data Location as a pa
 > [!IMPORTANT]
 > For new users with no OneDrive provisioned, license the account and wait at least 48 hours after a user's PDL is synchronized to Azure AD for the changes to propagate before the user logs in to OneDrive for Business. (Setting the preferred data location before the user logs in to provision their OneDrive for Business ensures that the user's new OneDrive will be provisioned in the correct location.)
 
-### Setting Preferred Data Location for cloud only users 
+### Setting Preferred Data Location for cloud only users
 
 If your company's users are not synchronized from an on-premises Active Directory system to Azure AD, meaning they are created in Microsoft 365 or Azure AD, then the PDL must be set using the Microsoft Azure Active Directory Module for Windows PowerShell.
 
 The procedures in this section require the [Microsoft Azure Active Directory Module for Windows PowerShell Module](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0). If you already have this module installed, please ensure you update to the latest version.
 
-1.  [Connect and sign in](/powershell/connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) with a set of global administrator credentials for your tenant.
+1. [Connect and sign in](/connect-to-microsoft-365-powershell?view=o365-worldwide#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell&preserve-view=true) with a set of global administrator credentials for your tenant.
 
-2.  Use the [Set-MsolUser](/powershell/msonline/v1/set-msoluser) cmdlet to set the preferred data location for each of your users. For example:
+2. Use the [Set-MsolUser](/powershell/module/msonline/set-msoluser?view=azureadps-1.0&preserve-view=true) cmdlet to set the preferred data location for each of your users. For example:
 
-    `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
+   ```powershell
+   Set-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR
+   ```
 
     You can check to confirm that the preferred data location was updated properly by using the Get-MsolUser cmdlet. For example:
 
-    `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
+   ```powershell
+   (Get-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation
+   ```
 
 ![Screenshot of PowerShell window showing set-msoluser.](../media/multi-geo-tenant-configuration-image3.png)
 
@@ -119,11 +121,8 @@ Your multi-geo tenant will have aggregate search capabilities allowing a search 
 By default, searches from these entry points will return aggregate results, even though each search index is located within its relevant geo location:
 
 - OneDrive for Business
-
 - Delve
-
 - SharePoint Home
-
 - Search Center
 
 Additionally, multi-geo search capabilities can be configured for your custom search applications that use the SharePoint search API.
@@ -134,22 +133,22 @@ Please review [Configure Search for OneDrive for Business Multi-Geo](configure-s
 
 Below are some basic use cases you may wish to include in your validation plan before broadly rolling out Microsoft 365 Multi-Geo to your company. Once you have completed these tests and any additional use cases that are relevant to your company, you may choose to move on to adding the users in your initial pilot group.
 
-**OneDrive for Business**
+**OneDrive for Business**:
 
 Select OneDrive from the Microsoft 365 app launcher and confirm that you are automatically directed to the appropriate geo location for the user, based on the user's PDL. OneDrive for Business should now begin provisioning at that location. Once provisioned, try uploading and downloading some documents.
 
-**OneDrive Mobile App**
+**OneDrive Mobile App**:
 
-Log into your OneDrive mobile App with your test account credentials. Confirm that you can see your OneDrive for Business files and can interact with them from your mobile device.
+Log in to your OneDrive mobile App with your test account credentials. Confirm that you can see your OneDrive for Business files and can interact with them from your mobile device.
 
-**OneDrive sync client**
+**OneDrive sync client**:
 
 Confirm that the OneDrive sync client automatically detects your OneDrive for Business geo location upon login. If you need to download the sync client, you can click **Sync** in the OneDrive library.
 
-**Office applications**
+**Office applications**:
 
-Confirm that you can access OneDrive for Business by logging in from an Office application, such as Word. Open the Office application and select "OneDrive – <TenantName>". Office will detect your OneDrive location and show you the files that you can open.
+Confirm that you can access OneDrive for Business by logging in from an Office application, such as Word. Open the Office application and select "OneDrive – \<TenantName\>". Office will detect your OneDrive location and show you the files that you can open.
 
-**Sharing**
+**Sharing**:
 
 Try sharing OneDrive files. Confirm that the people picker shows you all your SharePoint online users regardless of their geo location.

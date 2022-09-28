@@ -1,9 +1,10 @@
 ---
 title: "Create activity alerts"
+description: Add and manage activity alerts in the Microsoft Purview compliance portal so that Microsoft 365 will send you email notifications when users perform specific activities.
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 11/7/2017
 audience: Admin
@@ -16,9 +17,10 @@ search.appverid:
 - MED150
 - BCS160
 - MET150
-ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
+ms.collection:
+- tier1
+- purview-compliance
 ROBOTS: NOINDEX, NOFOLLOW
-description: Add and manage activity alerts in the Microsoft 365 compliance center so that Microsoft 365 will send you email notifications when users perform specific activities
 ---
 
 # Create activity alerts
@@ -32,17 +34,17 @@ You can create an activity alert that will send you an email notification when u
 
 ## Confirm roles and configure audit logging
 
-- You must be assigned the Organization Configuration role in the Microsoft 365 compliance center to manage activity alerts. By default, this role is assigned to the Compliance Administrator and Organization Management role groups. For more information about adding members to role groups, see [Give users access to the Microsoft 365 compliance center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+- You must be assigned the Organization Configuration role in the Microsoft Purview compliance portal to manage activity alerts. By default, this role is assigned to the Compliance Administrator and Organization Management role groups. For more information about adding members to role groups, see [Give users access to the Microsoft Purview compliance portal](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
-- You (or another admin) must first turn on audit logging for your organization before you can start using activity alerts. To do this, just click **Start recording user and admin activity** on the **Activity alerts** page. (If you don't see this link, auditing has already been turned on for your organization.) You can also turn on auditing on the **Audit log search** page in the Microsoft 365 compliance center (go to **Audit**). You only have to do this once for your organization.
+- You (or another admin) must first turn on audit logging for your organization before you can start using activity alerts. To do this, just click **Start recording user and admin activity** on the **Activity alerts** page. (If you don't see this link, auditing has already been turned on for your organization.) You can also turn on auditing on the **Audit log search** page in the compliance portal (go to **Audit**). You only have to do this once for your organization.
 
 - You can create alerts for the same activities that you can search for in the audit log. See the [More information](#more-information) section for a list of common scenarios (and the specific activity to monitor) that you can create alerts for.
 
-- You can use the **Activity alerts** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> to create alerts only for activity performed by users who are listed in your organization's address book. You can't use this page to create alerts for activities performed by external users who aren't listed in the address book.
+- You can use the **Activity alerts** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a> to create alerts only for activity performed by users who are listed in your organization's address book. You can't use this page to create alerts for activities performed by external users who aren't listed in the address book.
 
 ## Create an activity alert
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a>.
 
 2. Sign in using your work or school account.
 
@@ -81,7 +83,7 @@ You can create an activity alert that will send you an email notification when u
 
 You can turn off an activity alert so that an email notification isn't sent. After you turn off the activity alert, it's still displayed in the list of activity alerts for your organization, and you can still view its properties.
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a>.
 
 2. Sign in using your work or school account.
 
@@ -95,7 +97,7 @@ To turn an activity alert back on, just repeat these steps and click the **Off**
 
 ## More information
 
-- Here's an example of the email notification that is sent to the users that are specified in the Sent this alert to field (and listed under **Recipients** on the **Activity alerts** page) in the Microsoft 365 compliance center.
+- Here's an example of the email notification that is sent to the users that are specified in the Sent this alert to field (and listed under **Recipients** on the **Activity alerts** page) in the compliance portal.
 
     ![Example of an email notification sent for an activity alert.](../media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
 
@@ -121,7 +123,7 @@ To turn an activity alert back on, just repeat these steps and click the **Off**
     |Permanently deletes (purges) an email message from their mailbox.  |Purged messages from mailbox  | Exchange mailbox activities  |
     |Sends an email message from a shared mailbox.  |Sent message using Send As permissions  <br/> And  <br/> Sent message using Send On Behalf permissions  | Exchange mailbox activities  |
 
-- You can also use the **New-ActivityAlert** and **Set-ActivityAlert** cmdlets in Security & Compliance Center PowerShell to create and edit activity alerts. Keep the following things in mind if you use these cmdlets to create or edit activity alerts:
+- You can also use the **New-ActivityAlert** and **Set-ActivityAlert** cmdlets in Security & Compliance PowerShell to create and edit activity alerts. Keep the following things in mind if you use these cmdlets to create or edit activity alerts:
 
   - If you use a cmdlet to add an activity to the alert that isn't listed in the **Activities** drop-down list, a message is displayed in on the property page for the alert that says, "This alert has custom operations not listed in the picker."
 

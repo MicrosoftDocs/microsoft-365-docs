@@ -1,34 +1,34 @@
 ---
 title: "Preview the results of an eDiscovery search"
+description: "Preview a sample of the results returned by a Content search or a eDiscovery (Standard) search in the Microsoft Purview compliance portal."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: "Preview a sample of the results returned by a Content search or a Core eDiscovery search in the Microsoft 365 compliance center."
 ---
 
 # Preview eDiscovery search results
 
-After you run a Content search or a search associated with a Core eDiscovery case, you can preview a sample of the results returned by the search. Previewing items returned by the search query can help you determine if the search is returning the results you hope for or if you need to change the search query and rerun the search.
+After you run a Content search or a search associated with a Microsoft Purview eDiscovery (Standard) case, you can preview a sample of the results returned by the search. Previewing items returned by the search query can help you determine if the search is returning the results you hope for or if you need to change the search query and rerun the search.
 
 To preview a sample of results returned by a search:
 
-1. In the Microsoft 365 compliance center, go to the Content search page or a Core eDiscovery case.
+1. In the Microsoft Purview compliance portal, go to the Content search page or a eDiscovery (Standard) case.
 
 2. Select search to display the flyout page.
 

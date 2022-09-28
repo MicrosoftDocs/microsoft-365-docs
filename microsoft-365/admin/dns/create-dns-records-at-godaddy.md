@@ -8,8 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -57,7 +56,7 @@ Follow these steps to automatically verify and set up your GoDaddy domain with M
 
 1. On the GoDaddy login page, sign in to your account, and select **Authorize**.
 
-    This completes your domain setup for Microsoft 365.
+   This completes your domain setup for Microsoft 365.
 
 ## Create DNS records with manual setup
 
@@ -91,9 +90,9 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
 1. In the boxes for the new record, type or copy and paste the values from the table.
 
-   |**Type** |**Host**|**TXT Value**|**TTL** |
-   |:-----|:-----|:-----|:-----|
-   |TXT |@|MS=ms *XXXXXXXX*<br>**Note**: This is an example. Use your specific **Destination or Points to Address** value here, from the table. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|1 hour  <br>|
+   |Type|Host|TXT Value|TTL|
+   |---|---|---|---|
+   |TXT|@|MS=ms *XXXXXXXX*<br>**Note**: This is an example. Use your specific **Destination or Points to Address** value here, from the table. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|1 hour  <br>|
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXT-values.png" alt-text="Fill in the values from the table for the TXT record.":::
 
@@ -140,11 +139,11 @@ To verify the record in Microsoft 365:
 
 5. In the boxes for the new record, type or copy and paste the values from the following table.
 
-    (Choose the **Type** and **TTL** values from the drop-down list.)
+   (Choose the **Type** and **TTL** values from the drop-down list.)
 
-    |**Type**|**Host**|**Points to**|**Priority**|**TTL**|
-    |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) <br/> |1 hour  <br/> |
+   |Type|Host|Points to|Priority|TTL|
+   |---|---|---|---|---|
+   |MX|@| *\<domain-key\>*.mail.protection.outlook.com  <br/> **Note:** Get your *\<domain-key\>* from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|10  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml)|1 hour|
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="Fill in the values from the table for the MX record.":::
 
@@ -170,13 +169,13 @@ To verify the record in Microsoft 365:
 
 5. Create the CNAME record.
 
-    In the boxes for the new record, type or copy and paste the values from the first row of the following table.
+   In the boxes for the new record, type or copy and paste the values from the first row of the following table.
 
-    (Choose the **TTL** value from the drop-down list.)
+   (Choose the **TTL** value from the drop-down list.)
 
-    |**Type**|**Host**|**Points to**|**TTL**|
-    |:-----|:-----|:-----|:-----|
-    |CNAME  <br/> |autodiscover <br/> |autodiscover.outlook.com  <br/> |1 hour  <br/> |
+   |Type|Host|Points to|TTL|
+   |---|---|---|---|
+   |CNAME|autodiscover|autodiscover.outlook.com|1 hour|
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-values.png" alt-text="Fill in the values from the table for the CNAME record.":::
 
@@ -205,11 +204,11 @@ To verify the record in Microsoft 365:
 
 5. In the boxes for the new record, type or copy and paste the following values.
 
-    (Choose the **TTL** value from the drop-down lists.)
+   (Choose the **TTL** value from the drop-down lists.)
 
-    |**Type**|**Host**|**TXT Value**|**TTL**|
-    |:-----|:-----|:-----|:-----|
-    |TXT <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct. |1 hour  <br/> |
+   |Type|Host|TXT Value|TTL|
+   |---|---|---|---|
+   |TXT|@|v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.|1 hour|
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXT-values.png" alt-text="Fill in the values from the table for the TXT record.":::
 
@@ -217,7 +216,7 @@ To verify the record in Microsoft 365:
 
 ## Advanced option: Skype for Business
 
-Only select this option if your organization uses ‎Skype for Business‎ for online communication services like chat, conference calls, and video calls, in addition to ‎Microsoft Teams‎. ‎Skype‎ needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
+Only select this option if your organization uses Skype for Business for online communication services like chat, conference calls, and video calls, in addition to Microsoft Teams. Skype needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
 
 ### Add the two required SRV records
 
@@ -239,14 +238,14 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
 1. Create the first SRV record.
 
-    In the boxes for the new record, type or copy and paste the values from the first row of the following table.
+   In the boxes for the new record, type or copy and paste the values from the first row of the following table.
 
-    (Choose the **Type** and **TTL** values from the drop-down lists.)
+   (Choose the **Type** and **TTL** values from the drop-down lists.)
 
-    |**Type**|**Service**|**Protocol**| **Name** | **Target**|**Priority**|**Weight**|**Port**|**TTL**|
-    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV   <br/> |_sip  <br/> |_tls  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |100 <br/> | 1  <br/> |443  <br/> |1 Hour  <br/> |
-    |SRV  <br/> |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> | sipfed.online.lync.com  <br/> | 100  <br/> |1  <br/> |5061  <br/> |1 Hour  <br/> |
+   |Type|Service|Protocol|Name|Target|Priority|Weight|Port|TTL|
+   |---|---|---|---|---|---|---|---|---|
+   |SRV|_sip|_tls|@|sipdir.online.lync.com|100| 1|443|1 Hour|
+   |SRV|_sipfederationtls|_tcp|@| sipfed.online.lync.com| 100|1|5061|1 Hour|
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-SRV-values.png" alt-text="Fill in the values from the table for the SRV record.":::
 
@@ -257,13 +256,13 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
-### Add the two required CNAME records
+### Add the two required CNAME records for Skype for Business
   
 1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled).
 
    If you're prompted to log in, use your login credentials, select your login name in the upper right, and then select **My Products**.
 
-2. Under **Domains**, select the three dots next to the domain you want to verify, and then select **Manage DNS**.
+1. Under **Domains**, select the three dots next to the domain you want to verify, and then select **Manage DNS**.
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
 
@@ -277,10 +276,10 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
 1. In the empty boxes for the new records, type or copy and paste the values from the first row in the following table.
 
-    |**Type**|**Host**|**Points to**|**TTL**|
-    |:-----|:-----|:-----|:-----|
-    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |1 Hour  <br/> |
-    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |1 Hour  <br/> |
+   |Type|Host|Points to|TTL|
+   |---|---|---|---|
+   |CNAME|sip|sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)**|1 Hour|
+   |CNAME|lyncdiscover|webdir.online.lync.com.  <br/> **This value MUST end with a period (.)**|1 Hour|
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-values.png" alt-text="Fill in the values from the table for the CNAME record.":::
   
@@ -293,9 +292,9 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
   
 ## Advanced option: Intune and Mobile Device Management for Microsoft 365
 
-This service helps you secure and remotely manage mobile devices that connect to your domain. ‎Mobile Device Management‎ needs 2 CNAME records so that users can enroll devices to the service.
+This service helps you secure and remotely manage mobile devices that connect to your domain. Mobile Device Management needs 2 CNAME records so that users can enroll devices to the service.
 
-### Add the two required CNAME records
+### Add the two required CNAME records Mobile Device Management
 
 1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled).
 
@@ -315,10 +314,10 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. In the empty boxes for the new records, type or copy and paste the values from the first row in the following table.
 
-    |**Type**|**Host**|**Points to**|**TTL**|
-    |:-----|:-----|:-----|:-----|
-    |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |1 Hour  <br/> |
-    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |1 Hour  <br/> |
+   |Type|Host|Points to|TTL|
+   |---|---|---|---|
+   |CNAME|enterpriseregistration|enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)**|1 Hour|
+   |CNAME|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)**|1 Hour|
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-values.png" alt-text="Fill in the values from the table for the CNAME record.":::
   

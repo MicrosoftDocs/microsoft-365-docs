@@ -2,10 +2,10 @@
 title: "View directory synchronization status in Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -30,7 +30,7 @@ If you have integrated your on-premises Active Directory Domain Services (AD DS)
 ## View directory synchronization status
 
 - Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and choose **DirSync Status** on the home page.
-- Alternately, you can go to **Users** \> **Active users**, and on the **Active users** page, choose **More** \> **Directory synchronization**. On the **Directory Synchronization** pane, choose **Go to DirSync management**.
+- Alternately, you can go to **Users** \> **Active users**, and on the **Active users** page, select the **Elipse** \> **Directory synchronization**. On the **Directory Synchronization** pane, choose **Go to DirSync management**.
 
 ## Information on the Manage directory synchronization page
 

@@ -2,8 +2,8 @@
 title: Address false positives/negatives in Microsoft Defender for Endpoint
 description: Learn how to handle false positives or false negatives in Microsoft Defender for Endpoint.
 keywords: antivirus, exception, exclusion, Microsoft Defender for Endpoint, false positive, false negative, blocked file, blocked url
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,16 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
-- m365solution-scenario
-- m365scenario-fpfn
+- m365solution-overview
+- m365solution-fpfn
+- highpri
 ms.topic: how-to
-ms.date: 12/02/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: 
 - FPFN
 - admindeeplinkDEFENDER
+search.appverid: met150
 ---
 
 # Address false positives/negatives in Microsoft Defender for Endpoint
@@ -32,10 +33,14 @@ ms.custom:
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 In endpoint protection solutions, a false positive is an entity, such as a file or a process, that was detected and identified as malicious, even though the entity isn't actually a threat. A false negative is an entity that was not detected as a threat, even though it actually is malicious. False positives/negatives can occur with any threat protection solution, including [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
 
-![Definition of false positive and negatives in Defender for Endpoint.](images/false-positives-overview.png)
+:::image type="content" source="images/false-positives-overview.png" alt-text="The definition of false positive and negatives in the Microsoft Defender for Endpoint portal" lightbox="images/false-positives-overview.png":::
 
 Fortunately, steps can be taken to address and reduce these kinds of issues. If you're seeing false positives/negatives in [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender), your security operations can take steps to address them by using the following process:
 
@@ -47,7 +52,7 @@ Fortunately, steps can be taken to address and reduce these kinds of issues. If 
 
 You can get help if you still have issues with false positives/negatives after performing the tasks described in this article. See [Still need help?](#still-need-help)
 
-![Steps to address false positives and negatives.](images/false-positives-step-diagram.png)
+:::image type="content" source="images/false-positives-step-diagram.png" alt-text="The steps to address false positives and negatives" lightbox="images/false-positives-step-diagram.png":::
 
 > [!NOTE]
 > This article is intended as guidance for security operators and security administrators who are using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
@@ -56,7 +61,7 @@ You can get help if you still have issues with false positives/negatives after p
 
 If you see an [alert](alerts.md) that was triggered because something was detected as malicious or suspicious that should not have been, you can suppress the alert for that entity. You can also suppress alerts that are not necessarily false positives, but are unimportant. We recommend that you classify alerts as well.
 
-Managing your alerts and classifying true/false positives helps to train your threat protection solution and can reduce the number of false positives or false negatives over time. Taking these steps also helps reduce noise in your security operations dashboard so that your security team can focus on higher priority work items.
+Managing your alerts and classifying true/false positives helps to train your threat protection solution and can reduce the number of false positives or false negatives over time. Taking these steps also helps reduce noise in your queue so that your security team can focus on higher priority work items.
 
 ### Determine whether an alert is accurate
 
@@ -69,8 +74,6 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 3. Select an alert to more details about the alert. (See [Review alerts in Microsoft Defender for Endpoint](review-alerts.md).)
 
 4. Depending on the alert status, take the steps described in the following table:
-
-<br/><br/>
 
    |Alert status|What to do|
    |---|---|
@@ -95,7 +98,7 @@ Alerts can be classified as false positives or true positives in Microsoft 365 D
 
 ### Suppress an alert
 
-If you have alerts that are either false positives or that are true positives but for unimportant events, you can suppress those alerts in Microsoft 365 Defender. Suppressing alerts helps reduce noise in your security operations dashboard.
+If you have alerts that are either false positives or that are true positives but for unimportant events, you can suppress those alerts in Microsoft 365 Defender. Suppressing alerts helps reduce noise in your queue.
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -159,7 +162,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 ### Remove a file from quarantine across multiple devices
 
 > [!div class="mx-imgBorder"]
-> ![Quarantine file.](images/autoir-quarantine-file-1.png)
+> :::image type="content" source="images/autoir-quarantine-file-1.png" alt-text="The Quarantine file" lightbox="images/autoir-quarantine-file-1.png":::
 
 1. In the left navigation pane of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, click **Action center**.
 
@@ -179,7 +182,7 @@ You can roll back and remove a file from quarantine if you've determined that it
 2. Enter the following command, and press **Enter**:
 
     ```console
-    "ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
+    "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
     ```
 
     > [!IMPORTANT]
@@ -254,7 +257,7 @@ To specify entities as exclusions for Microsoft Defender for Endpoint, create "a
 - [IP addresses, URLs, and domains](#indicators-for-ip-addresses-urls-or-domains)
 - [Application certificates](#indicators-for-application-certificates)
 
-![Indicator types diagram.](images/false-positives-indicators.png)
+:::image type="content" source="images/false-positives-indicators.png" alt-text="The Indicator types" lightbox="images/false-positives-indicators.png":::
 
 #### Indicators for files
 
@@ -303,7 +306,7 @@ If you have a file that was either wrongly detected as malicious or was missed, 
 
 1. Review the guidelines here: [Submit files for analysis](/windows/security/threat-protection/intelligence/submission-guide).
 
-2. Visit the Microsoft Security Intelligence submission site (<https://www.microsoft.com/wdsi/filesubmission>), and submit your file(s).
+2. Visit the [Microsoft Security Intelligence submission site](https://www.microsoft.com/wdsi/filesubmission) (https://www.microsoft.com/wdsi/filesubmission), and submit your file(s).
 
 ### Submit a fileless detection for analysis
 
@@ -317,7 +320,7 @@ If something was detected as malware based on behavior, and you don't have a fil
 
 3. Review the guidelines here: [Submit files for analysis](/windows/security/threat-protection/intelligence/submission-guide).
 
-4. Visit the Microsoft Security Intelligence submission site (<https://www.microsoft.com/wdsi/filesubmission>), and submit your .cab files.
+4. Visit the [Microsoft Security Intelligence submission site](https://www.microsoft.com/wdsi/filesubmission) (https://www.microsoft.com/wdsi/filesubmission), and submit your .cab files.
 
 ### What happens after a file is submitted?
 
@@ -450,6 +453,16 @@ If you have worked through all the steps in this article and still need help, co
 2. In the upper right corner, select the question mark (**?**), and then select **Microsoft support**.
 
 3. In the **Support Assistant** window, describe your issue, and then send your message. From there, you can open a service request.
+
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md) 
 
 ## See also
 

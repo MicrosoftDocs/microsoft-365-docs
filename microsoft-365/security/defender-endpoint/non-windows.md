@@ -3,7 +3,7 @@ title: Microsoft Defender for Endpoint for non-Windows platforms
 description: Learn about Microsoft Defender for Endpoint capabilities  for non-Windows platforms
 keywords: non windows, mac, macos, linux, android
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,10 +13,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-evalutatemtp
+  - highpri
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint for non-Windows platforms
@@ -24,7 +26,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1 and Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -44,8 +46,6 @@ For more details on how to get started, visit the Defender for Endpoint on macOS
 > [!NOTE]
 > The following capabilities are not currently supported on macOS endpoints:
 >
-> - Data loss prevention
-> - Live response
 > - Security Management for Microsoft Defender for Endpoint
 
 ## Microsoft Defender for Endpoint on Linux
@@ -60,7 +60,6 @@ For more details on how to get started, visit the Microsoft Defender for Endpoin
 > The following capabilities are not currently supported on Linux endpoints:
 >
 > - Data loss prevention
-> - Live response
 > - Security Management for Microsoft Defender for Endpoint
 
 ## Microsoft Defender for Endpoint on Android

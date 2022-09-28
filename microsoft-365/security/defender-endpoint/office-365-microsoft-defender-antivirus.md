@@ -2,7 +2,7 @@
 title: Better together - Microsoft Defender Antivirus and Office 365 (including OneDrive) - better protection from ransomware and cyberthreats
 description: Office 365, which includes OneDrive, goes together wonderfully with Microsoft Defender Antivirus. Read this article to learn more.
 keywords: windows defender, antivirus, office 365, onedrive, restore, ransomware
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -16,8 +16,9 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
-ms.collection: M365-security-compliance
+ms.subservice: mde
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Better together: Microsoft Defender Antivirus and Office 365
@@ -30,6 +31,9 @@ ms.collection: M365-security-compliance
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 - Microsoft 365
+
+**Platforms**
+- Windows
 
 You might already know that:
 
@@ -81,6 +85,16 @@ Protection from ransomware is one great reason to put your files in OneDrive. An
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/70b4d256-46fb-481f-ad9b-921ef5fd7bed]
 
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
 ## Want to learn more? See these resources:
 
 - [OneDrive](/onedrive)
@@ -88,3 +102,5 @@ Protection from ransomware is one great reason to put your files in OneDrive. An
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)
 
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
+
+

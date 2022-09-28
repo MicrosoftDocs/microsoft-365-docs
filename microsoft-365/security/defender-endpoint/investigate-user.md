@@ -2,7 +2,7 @@
 title: Investigate a user account in Microsoft Defender for Endpoint
 description: Investigate a user account for potential compromised credentials or pivot on the associated user account during an investigation.
 keywords: investigate, account, user, user entity, alert, Microsoft Defender for Endpoint
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,13 +11,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
+ms.collection: m365-security
 ms.topic: article
 ms.date: 04/24/2018
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
+
 # Investigate a user account in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -49,7 +49,7 @@ When you investigate a user account entity, you'll see:
 - Alerts related to this user
 - Observed in organization (devices logged on to)
 
-![Image of the user account entity details page.](images/atp-user-details-view.png)
+:::image type="content" source="images/atp-user-details-view.png" alt-text="The user account entity details page" lightbox="images/atp-user-details-view.png":::
 
 ### User details
 

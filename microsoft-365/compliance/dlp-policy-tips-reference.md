@@ -14,7 +14,8 @@ search.appverid:
 - MET150
 ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - SPO_Content
 recommendations: false
 description: "Learn how to add a policy tip to a data loss prevention (DLP) policy notify a user that they are working with content that conflicts with a DLP policy."
@@ -58,7 +59,7 @@ DLP policy tips in Outlook Web Access is supported for all the conditions, excep
 
 ## Outlook 2013 and later supports showing policy tips for only some conditions and exceptions
 
-Currently, Outlook 2013 and later supports showing policy tips for policies which do not contain any condition or exception apart from the below mentioned conditions and corresponding exceptions :
+Currently, Outlook 2013 and later supports showing policy tips for policies which do not contain any condition or exception apart from the below mentioned conditions and corresponding exceptions:
 
 - Content contains (works only for Sensitive information types. Sensitivity labels are not supported)
 - Content is shared
@@ -67,7 +68,7 @@ Note that all the conditions work for emails authored in Outlook client app, whe
 
 ## Outlook 2013 and later and Office apps on Desktop support showing policy tips for only some sensitive information types
 
-The list of out-of-the-box sensitive information types that will be detected for showing DLP policy tips in Outlook on Desktop (2013 and later) and Office apps (Word, Excel, PowerPoint) on Desktop are the following :
+The list of out-of-the-box sensitive information types that will be detected for showing DLP policy tips in Outlook on Desktop (2013 and later) and Office apps (Word, Excel, PowerPoint) on Desktop are the following:
 
 - ABA Routing Number
 - Argentina National Identity (DNI) Number
@@ -169,11 +170,14 @@ The list of out-of-the-box sensitive information types that will be detected for
 - U.S. Individual Taxpayer Identification Number (ITIN)
 - U.S. Social Security Number (SSN)
 
-Please note that custom sensitive information types are also supported for DLP policy tips in addition to the above out-of-the-box sensitive information types.
+Note that some custom sensitive information types are also supported for DLP policy tips in addition to the above out-of-the-box sensitive information types.
+
+> [!NOTE]
+> Not all elements of custom sensitive information types are compatible with every version of Office. Entity elements for Custom SITs, such as Functions, may cause incompatibility.
 
 ## Data Loss Prevention on endpoint devices supports policy tips for only some sensitive information types
 
-The list of out-of-the-box sensitive information types that will be detected in documents residing on endpoint devices are the following :
+The list of out-of-the-box sensitive information types that will be detected in documents residing on endpoint devices are the following:
 
 - ABA Routing Number 
 - Argentina National Identity (DNI) Number 
@@ -394,8 +398,8 @@ Please note that custom sensitive information types will also be detected in add
 |**Word, Excel, PowerPoint Mobile Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP policy tips are not supported in mobile apps for Office.|
 |**Teams Web/ Teams Desktop/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|all Teams predicates in DLP policy|Policy tips will show when a message is flagged as “This message has been flagged. What can I do?” When clicking the link, the user can review the sensitive info types detected and override or report an issue if allowed by the admin. Note that no policy tips are shown for files. When the recipient tries to access the document, they might get access denied if not allowed.|
 |**Win32 Endpoint Devices**|:::image type="icon" source="../media/rightmrk.png" border="false":::|subset|all Endpoint DLP predicates and actions in DLP policy|See [Data Loss Prevention on Endpoint supports policy tips for only some sensitive information types](#data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types)|
-|**macOS devices (preview)**|default tips only|all|subset|Data loss prevention policies are enforceable on macOS devices. Custom policy tips are not supported.|
+|**macOS devices**|default tips only|all|subset|Data loss prevention policies are enforceable on macOS devices. Custom policy tips are not supported.|
 |**3rd party cloud apps**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Data Loss Prevention policy tips are not supported on 3rd party cloud apps|
 |**On-prem**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none||
 |**Word, Excel, PowerPoint Win32 Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|subset|subset|Please see [Outlook 2013 and later and Office apps on Desktop support showing policy tips for only some sensitive information types](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) for the list of sensitive information types supported</br></br>Policy tips for WXP client apps will work for documents stored on SharePoint Online or OneDrive for Business Sites for all DLP policies which have exactly the below or a subset of conditions or actions in the DLP policy:</br> <ul><li>Content contains sensitive information types</li><li>Access Scope (Content is shared internally/externally)</li><li>Notify User (policy tips/user notifications)</li><li>Block everyone</li><li>Incident reports</li></ul></br> If any other condition or action is present, the DLP policy tip for that policy will not appear in the desktop apps of Word, Excel or PowerPoint.</br>See [Policy tips in Excel, PowerPoint, and Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) for more details|
-||||||
+|**Power BI**|:::image type="icon" source="../media/crsmrk.png" border="false":::|subset|subset|Data loss prevention policies in Power BI are in Public Preview. </br></br> Policy tips and admin alerts are supported. |

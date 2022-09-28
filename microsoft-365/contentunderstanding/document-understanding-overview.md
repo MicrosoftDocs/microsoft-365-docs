@@ -7,7 +7,7 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.customer: intro-overview
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
@@ -21,7 +21,7 @@ description: Learn about document understanding in Microsoft SharePoint Syntex.
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSu7] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSu7]
 
 </br>
 
@@ -35,7 +35,7 @@ Document understanding models are created and managed in a type of SharePoint si
 > [!NOTE]
 > Read-only or sealed content types cannot be updated, so they can't be used in a model.
 
-Add *classifiers* and *extractors* to your document understanding models to do the following actions: 
+Add *classifiers* and *extractors* to your document understanding models to do the following actions:
 
 - Classifiers are used to identify and classify documents that are uploaded to the document library. For example, a classifier can be "trained" to identify all *contract renewal* documents that are uploaded to the library. The contract renewal content type is defined by you when you create your classifier.
 
@@ -65,18 +65,15 @@ OCR processing works best on documents that meet the following requirements:
 
 - The combined file size of the documents used for training per collection must not exceed 50 MB, and PDF documents shouldn't have more than 500 pages.
 
-- For images, dimensions must be between 50 × 50 and 10,000 × 10,000 pixels.
+- For images, dimensions must be between 50 x 50 and 10,000 x 10,000 pixels.
    > [!NOTE]
    > Images that are very wide or have odd dimensions (for example, floor plans) might get truncated in the OCR process and lose accuracy.
- 
+
 - For PDF files, dimensions must be at most 17 x 17 inches, corresponding to Legal or A3 paper sizes and smaller.
 
 - If scanned from paper documents, scans should be high-quality images.
 
 - Must use the Latin alphabet (English characters).
-
-> [!NOTE]
-> AI Builder doesn't currently support the following types of form processing input data:<br>- Check boxes or radio buttons<br>- Signatures<br>- Fillable PDFs
 
 ### Supported file types
 
@@ -107,14 +104,16 @@ Document understanding models support the following file types:
 
 ### Supported languages
 
-Document understanding models support the following languages:
+Document understanding models support *all* of the Latin-based languages, including:
+
+- English
 - French
 - German
 - Italian
 - Spanish
 
+## See also
 
-## See Also
 [Create a classifier](create-a-classifier.md)
 
 [Create an extractor](create-an-extractor.md)
@@ -123,7 +122,7 @@ Document understanding models support the following languages:
 
 [Create a form processing model](create-a-form-processing-model.md)
 
-[Apply a model](apply-a-model.md)   
+[Apply a model](apply-a-model.md)
 
 [Difference between a document understanding and a form processing model](difference-between-document-understanding-and-form-processing-model.md)
   

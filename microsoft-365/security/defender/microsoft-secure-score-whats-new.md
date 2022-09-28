@@ -2,17 +2,19 @@
 title: What's new in Microsoft Secure Score
 description: Describes what new changes have happened to Microsoft Secure Score in the Microsoft 365 Defender portal.
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal
-ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.service: microsoft-365-security
+ms.subservice: m365d
+ms.author: siosulli
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
+  - tier2
 ms.topic: article
 search.appverid: 
   - MOE150
@@ -20,128 +22,113 @@ search.appverid:
 ms.custom: 
   - seo-marvel-apr2020
   - seo-marvel-jun2020
-ms.technology: m365d
 ---
 
 # What's new in Microsoft Secure Score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
+To make Microsoft Secure Score a better representative of your security posture, we continue to add new features and improvement actions.
 
-Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](microsoft-365-defender.md#the-microsoft-365-defender-portal).
+The more improvement actions you take, the higher your Secure Score will be. For more information, see [Microsoft Secure Score](microsoft-secure-score.md).
 
-## July 2021
+Microsoft Secure Score can be found at <https://security.microsoft.com/securescore> in the [Microsoft 365 Defender portal](microsoft-365-defender-portal.md).
 
-### Added improvement action related to Microsoft Teams
+## September 2022
 
-- Restrict dial-in users from bypassing a meeting lobby
-- Limit external participants from having control in a Teams meeting
-- Restrict anonymous users from starting Teams meetings
-- Require lobbies to be set up for Teams meetings
-- Configure which users are allowed to be present in Teams meetings
+New Microsoft Defender for Office 365 recommendations for anti-phishing policies are now available as Secure Score improvement actions:
 
-### Added improvement action related to Microsoft Defender for Endpoint
+- Set the phishing email level threshold at 2 or higher
+- Enable impersonated user protection
+- Enable impersonated domain protection
+- Ensure that mailbox intelligence is enabled
+- Ensure that intelligence for impersonation protection is enabled
+- Quarantine messages that are detected from impersonated users
+- Quarantine messages that are detected from impersonated domains
+- Move messages that are detected as impersonated users by mailbox intelligence
+- Enable the ‘show first contact safety tip’ option
+- Enable the user impersonation safety tip
+- Enable the domain impersonation safety tip
+- Enable the user impersonation unusual characters safety tip
 
-- Fix Microsoft Defender for Endpoint sensor data collection for macOS
-- Fix Microsoft Defender for Endpoint impaired communications for macOS
-- Set minimum password length to 15 or more characters in macOS
-- Set 'Enforce password history' to '24 or more password(s)' in macOS
-- Set 'Maximum password age' to '90 or fewer days, but not 0' in macOS
-- Set account lockout threshold to 5 or lower in macOS
-- Turn on Firewall on macOS
-- Enable Gatekeeper
-- Enable System Integrity Protection (SIP)
-- Enable FileVault Disk Encryption
-- Set screen to lock when screensaver starts in macOS
-- Ensure screensaver is set to start in 20 minutes or less in macOS
-- Secure Home Folders
-- Turn on Microsoft Defender Antivirus real-time protection for macOS
-- Turn on Microsoft Defender Antivirus PUA protection in block mode for macOS
-- Enable Microsoft Defender Antivirus cloud-delivered protection for macOS
-- Update Microsoft Defender Antivirus definitions for macOS
-- Fix Microsoft Defender for Endpoint sensor data collection for Linux
-- Fix Microsoft Defender for Endpoint impaired communications for Linux
-- Unrestricted Access Accounts
-- Turn on Microsoft Defender Antivirus real-time protection for Linux
-- Turn on Microsoft Defender Antivirus PUA protection in block mode for Linux
-- Enable Microsoft Defender Antivirus cloud-delivered protection for Linux
-- Update Microsoft Defender Antivirus definitions for Linux
+A New SharePoint Online recommendation is now available as a Secure Score improvement action:
 
-## June 2021
+- Sign out inactive users in SharePoint Online
 
-### Removed improvement action related to Microsoft Cloud App Security
+## August 2022
 
-- Use Cloud App Security to detect anomalous behavior.
+New Microsoft Information Protection recommendations are now available as Secure Score improvement actions:
 
-## February 2021
+- **Labeling**
+  - Extend M365 sensitivity labeling to assets in Azure Purview data map
+  - Ensure Auto-labeling data classification policies are setup and used
+  - Publish M365 sensitivity label data classification policies
+  - Create Data Loss Prevention (DLP) policies
 
-### Compatibility with Graph API
+New Microsoft Defender for Office 365 recommendations are now available as Secure Score improvement actions:
 
-Microsoft Secure Score recommendations delivered via Graph API will look and be weighted the same as the recommendations you currently see in the Microsoft 365 Defender portal.
+- **Anti-spam - Inbound policy**
+  - Set the email bulk complaint level (BCL) threshold to be 6 or lower
+  - Set action to take on spam detection
+  - Set action to take on high confidence spam detection
+  - Set action to take on phishing detection
+  - Set action to take on high confidence phishing detection
+  - Set action to take on bulk spam detection
+  - Retain spam in quarantine for 30 days
+  - Ensure spam safety tips are enabled
+  - Ensure that no sender domains are allowed for anti-spam policies (will replace “Ensure that there are no sender domains allowed for Anti-spam policies” to extend functionality also for specific senders)
 
-## January 2021
+- **Anti-spam - Outbound policy**
+  - Set maximum number of external recipients that a user can email per hour
+  - Set maximum number of internal recipients that a user can send to within an hour
+  - Set a daily message limit
+  - Block users who reached the message limit
+  - Set Automatic email forwarding rules to be system controlled
 
-### Added our first security recommendation for Microsoft Teams
+- **Anti-spam - Connection filter**
+  - Don't add allowed IP addresses in the connection filter policy
 
-Microsoft Teams customers will see "Restrict anonymous users from joining meetings" as a new improvement action in Secure Score.
+## June 2022
 
-## December 2020
+- New Microsoft Defender for Endpoint and Microsoft Defender Vulnerability Management recommendations are now available as Secure Score improvement actions:
 
-### Added six accounts-related improvement actions for Microsoft Defender for Endpoint:
+  - Disallow offline access to shares
+  - Remove share write permission set to **Everyone**
+  - Remove shares from the root folder
+  - Set folder access-based enumeration for shares
+  - Update Microsoft Defender for Endpoint core components
 
-- Set 'Minimum password length' to '14 or more characters'
-- Set 'Enforce password history' to '24 or more password(s)'
-- Set 'Maximum password age' to '60 or fewer days, but not 0'
-- Set 'Minimum password age' to '1 or more day(s)'
-- Disable the built-in Administrator account
-- Disable the built-in Guest account
+- A new Microsoft Defender for Identity recommendation is available as a Secure Score improvement action:
 
-## November 2020
+  - Resolve unsecure domain configurations
 
-### Removed the ability to create ServiceNow tickets through Secure Score 
+- A new [app governance](/defender-cloud-apps/app-governance-manage-app-governance) recommendation is now available as a Secure Score improvement action:
 
-The ability to create ServiceNow tickets through Secure Score by going to **Share > ServiceNow** is no longer available. Thank you for your feedback and continued support while we determine next steps.
+  - Regulate apps with consent from priority accounts
 
-### Added three services-related improvement actions for Microsoft Defender for Endpoint:
+- New Salesforce and ServiceNow recommendations are now available as Secure Score improvement actions for Microsoft Defender for Cloud Apps customers. For more information, see [SaaS Security Posture Management overview](https://aka.ms/saas_security_posture_management).
 
-- Fix unquoted service path for Windows services
-- Change service executable path to a common protected location
-- Change service account to avoid cached password in windows registry
+> [!NOTE]
+> Salesforce and ServiceNow controls are now available in public preview.
 
-## October 2020
+## April 2022
 
-### Removed improvement action related to Microsoft Defender for Endpoint
+- Turn on user authentication for remote connections
 
-- Set Microsoft Defender SmartScreen Windows Store app web content checking to warn
+## December 2021
 
-## August 2020
-
-### Updated improvement action for Azure Active Directory
-
-- Enable policy to block legacy authentication
-
-## Incompatibility with Identity Secure Score
-
-In the recent release of Microsoft Secure Score, an improved scoring model has been released. These changes allow for a more flexible and accurate view of your security posture. However, these updates have made Microsoft Secure Score temporarily incompatible with Identity Secure Score.
-
-In time, Identity Secure Score will adopt the new scoring model. Until then, customers will see differences in the scores reported by Microsoft Secure Score and the Identity Secure Score. We apologize for any inconvenience this causes, and are working to ensure these experiences are more compatible in the future.
-
-## Updated improvement actions
-
-- Added Azure Active Directory improvement actions
-- Added Microsoft Defender for Identity improvement actions
-- Support for Microsoft Defender for Endpoint [Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) security recommendations
-    - All released security recommendations supplied by TVM are now available
-
-## Updated interface and functionality
-
-* All new metrics and trends views for CISO and lead level discussions
-* New ways to track and benchmark your score
-* Better tracking and understanding for score regressions
-* Filter, tag, search, and group your improvement actions
-* Manage towards your future goals using score projections and planned actions
-* And more!
+- Turn on Safe Attachments in block mode
+- Prevent sharing Exchange Online calendar details with external users
+- Turn on Safe Documents for Office clients
+- Turn on the common attachments filter setting for anti-malware policies
+- Ensure that there are no sender domains allowed for anti-spam policies
+- Create Safe Links policies for email messages
+- Create zero-hour auto purge policies for malware
+- Turn on Microsoft Defender for Office 365 in SharePoint, OneDrive, and Microsoft Teams
+- Create zero-hour auto purge policies for phishing messages
+- Create zero-hour auto purge policies for spam messages
+- Block abuse of exploited vulnerable signed drivers
+- Turn on scanning of removable drives during a full scan
 
 ## We want to hear from you
 

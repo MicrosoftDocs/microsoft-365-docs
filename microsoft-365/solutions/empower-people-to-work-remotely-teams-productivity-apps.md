@@ -2,14 +2,15 @@
 title: "Step 5. Deploy hybrid worker productivity apps and services"
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection: 
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework

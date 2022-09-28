@@ -1,9 +1,10 @@
 ---
-title: "Teams workflow in Advanced eDiscovery"
+title: "Teams workflow in eDiscovery (Premium)"
+description: "Learn how to preserve, collect, review, and export content from Microsoft Teams in eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -12,39 +13,53 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "Learn how to preserve, collect, review, and export content from Microsoft Teams in Advanced eDiscovery."
+ms.collection:
+- highpri 
+- tier1
+- purview-compliance
 ---
 
-# Advanced eDiscovery workflow for content in Microsoft Teams
+# eDiscovery (Premium) workflow for content in Microsoft Teams
 
-This article provides a comprehensive set of procedures, guidelines, and best practices for using Advanced eDiscovery to preserve, collect, review, and export content from Microsoft Teams. The goal of this article is to help you optimize your eDiscovery workflow for Teams content.
+This article provides a comprehensive set of procedures, guidelines, and best practices for using Microsoft Purview eDiscovery (Premium) to preserve, collect, review, and export content from Microsoft Teams. The goal of this article is to help you optimize your eDiscovery workflow for Teams content.
 
-There are four categories of Teams content that you can collect and process using Advanced eDiscovery:
+There are six categories of Teams content that you can collect and process using eDiscovery (Premium):
 
 - **Teams 1:1 chats**. Chat messages, posts, and attachments shared in a Teams conversation between two people.  Teams 1:1 chats are also called *conversations*.
 
 - **Teams group chats**. Chat messages, posts, and attachments shared in a Teams conversation between three or more people. Also called *1:N* chats or *group conversations*.
 
-- **Teams channels**. Chat messages, posts, replies, and attachments shared in a Teams channel.
+- **Teams reactions**. Reactions applied to chat messages, posts, and attachments in a Teams conversation.
 
-- **Private Teams channels**. Message posts, replies, and attachments shared in a private Teams channel.
+- **Teams channels**. Chat messages, posts, replies, and attachments shared in a standard Teams channel.
+
+- **Private channels**. Message posts, replies, and attachments shared in a private Teams channel.
+
+- **Shared channels**. Message posts, replies, and attachments shared in a shared Teams channel.
 
 ## Where Teams content is stored
 
-A prerequisite to managing Teams content in Advanced eDiscovery is to understand the type of Teams content that you can collect, process, and review in Advanced eDiscovery and where that content is stored in Microsoft 365. The following table lists Teams content type and where each is stored.
+A prerequisite to managing Teams content in eDiscovery (Premium) is to understand the type of Teams content that you can collect, process, and review in eDiscovery (Premium) and where that content is stored in Microsoft 365.
 
-||Location of chat messages and posts  |Location of files and attachments |
-|:---------|:---------|:---------|
-|Teams 1:1 chats     |Messages in 1:1 chats are stored in the Exchange Online mailbox of all chat participants. |Files shared in a 1:1 chat are stored in the OneDrive for Business account of the person who shared the file. |
-|Teams group chats     |Messages in group chats are stored in the Exchange Online mailbox of all chat participants. |Files shared in group chats are stored in the OneDrive for Business account of the person who shared the file. |
-|Teams channels     |All channel messages and posts are stored in the Exchange Online mailbox associated with the team.|Files shared in a channel are stored in the SharePoint Online site associated with the team.           |
-|Private Teams channels     |Messages sent in a private channel are stored in the Exchange Online mailboxes of all members of the private channel.|Files shared in a private channel are stored in a dedicated SharePoint Online site associated with the private channel.|
-||||
+Teams data is stored in Azure Cosmos DB. Teams compliance records captured by the substrate are in Exchange Online and are available for ediscovery. 
+
+The following table lists Teams content type and where each is stored for complaince purpose. The data stored in Exchange online is hidden from clients. eDiscovery never operates against the real Teams message data, which remains in Azure Cosmos DB.
+
+|&nbsp;|Location of chat messages and posts|Location of files and attachments|
+|---|---|---|
+|Teams 1:1 chats|Messages in 1:1 chats are stored in the Exchange Online mailbox of all chat participants.|Files shared in a 1:1 chat are stored in the OneDrive for Business account of the person who shared the file.|
+|Teams group chats|Messages in group chats are stored in the Exchange Online mailbox of all chat participants.|Files shared in group chats are stored in the OneDrive for Business account of the person who shared the file.|
+|Teams reactions|Messages in group chats are stored in the Exchange Online mailbox of all chat participants.|Files shared in group chats are stored in the OneDrive for Business account of the person who shared the file.|
+|Teams channels|All channel messages and posts are stored in the Exchange Online mailbox associated with the team.|Files shared in a channel are stored in the SharePoint Online site associated with the team.|
+|Private channels|Messages sent in a private channel are stored in the Exchange Online mailboxes of all members of the private channel.|Files shared in a private channel are stored in a dedicated SharePoint Online site associated with the private channel.|
+|Shared channels|Messages sent in a shared channel are stored in a system mailbox associated with the shared channel.<sup>1</sup>|Files shared in a shared channel are stored in a dedicated SharePoint Online site associated with the shared channel.|
+
+> [!NOTE]
+> <sup>1</sup> To search for (and preserve) messages sent in a shared channel, you have to search or specify the Exchange Online mailbox for the parent Team.
 
 ## Create a case for Teams content
 
-The first step to managing Teams content in Advanced eDiscovery is to create a case using the new case format that's optimized for managing Teams content. Here's the benefits of using the new case format for Teams content:
+The first step to managing Teams content in eDiscovery (Premium) is to create a case using the new case format that's optimized for managing Teams content. Here's the benefits of using the new case format for Teams content:
 
 - Support for conversation threading, in which additional messages in the same conversation that include responsive items are automatically collected and added to review sets.
 
@@ -52,15 +67,15 @@ The first step to managing Teams content in Advanced eDiscovery is to create a c
 
 - Collections up to 1 TB can be added to review sets, which let you collect and amounts large amounts of Teams content in a case.
 
-For more information about the increased case limits, see [Use the new case format in Advanced eDiscovery](advanced-ediscovery-new-case-format.md).
+For more information about the increased case limits, see [Use the new case format in eDiscovery (Premium)](advanced-ediscovery-new-case-format.md).
 
 To create a case:
 
 1. Go to <https://compliance.microsoft.com> and sign in.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, click **eDiscovery > Advanced**.
+2. In the left navigation pane of the Microsoft Purview compliance portal, click **eDiscovery > Advanced**.
 
-3. On the **Advanced eDiscovery** page, click the **Cases** tab, and then click **Create a case**.
+3. On the **eDiscovery (Premium)** page, click the **Cases** tab, and then click **Create a case**.
 
    The **New eDiscovery case** flyout page is displayed. The **Case format** section provides the option to create a case using the new case format.
 
@@ -74,7 +89,7 @@ The next step is to identify the users who are the data custodians in your inves
 
 To add custodians to a case and preserve custodial data sources:
 
-1. Go to the Advanced eDiscovery case that you created in the previous section, and then click **Data sources**.
+1. Go to the eDiscovery (Premium) case that you created in the previous section, and then click **Data sources**.
 
 2. On the **Data sources** page, click **Add data source** > **Add new custodians**.
 
@@ -90,12 +105,12 @@ To add custodians to a case and preserve custodial data sources:
 
    - **OneDrives**. The custodian's OneDrive account is selected by default. Keep this selected to add (and preserve) files shared in 1:1 chats and group chats as custodial data.
 
-   - **SharePoint**. Add the SharePoint site associated with any private channel the custodian is a member of to add (and preserve) as custodial data the files shared in the private channel. Click **Edit** and then add the URL for the SharePoint site associated with a private channel. To learn how to locate the private channels a user is a member of, see [eDiscovery of private channels](/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
+   - **SharePoint**. Add the SharePoint site associated with any private or shared channel the custodian is a member of to add (and preserve) as custodial data the files shared in a channel. Click **Edit** and then add the URL for the SharePoint site associated with a private or shared channel. To learn how to locate the private and shared channels a user is a member of, see [eDiscovery of private and shared channels](/microsoftteams/ediscovery-investigation#ediscovery-of-private-and-shared-channels).
 
-   - **Teams**. Add the teams that the custodian is a member of to add (and preserve) as custodial data all channel messages and all files shared to a Teams channel. When you click **Edit**, the mailbox and site associated with each team the custodian is a member of are displayed in a list. Select the teams that you want to associate to the custodian. You have to select both the corresponding mailbox and site for each team.
+   - **Teams**. Add the teams that the custodian is a member of to add (and preserve) as custodial data all channel messages and all files shared to a Teams channel. This includes adding the mailbox for the parent team of a shared channel the custodian is a member of. When you click **Edit**, the mailbox and site associated with each team the custodian is a member of are displayed in a list. Select the teams that you want to associate to the custodian. You have to select both the corresponding mailbox and site for each team.
 
    > [!NOTE]
-   > You can also add the mailbox and site of Teams that custodians aren't members of as a custodian data location. You do this by clicking **Edit** next to **Exchange** and **SharePoint** and then adding the mailbox and site associate with the team.
+   > You can also add the mailbox and site of Teams that custodians aren't members of as a custodian data location. You do this by clicking **Edit** next to **Exchange** and **SharePoint** and then adding the mailbox and site associated with the team.
 
 6. After you add custodians and configure the custodial data sources, click **Next** to display the **Hold settings** page.
 
@@ -103,11 +118,11 @@ To add custodians to a case and preserve custodial data sources:
 
 7. On the **Hold settings** page, click **Next** to review the custodians settings. Click **Submit** to add the custodians to the case.
 
-For more information about adding and preserving data sources in an Advanced eDiscovery case, see:
+For more information about adding and preserving data sources in an eDiscovery (Premium) case, see:
 
-- [Add custodians to an Advanced eDiscovery case](add-custodians-to-case.md)
+- [Add custodians to an eDiscovery (Premium) case](add-custodians-to-case.md)
 
-- [Add non-custodial data sources to an Advanced eDiscovery case](non-custodial-data-sources.md)
+- [Add non-custodial data sources to an eDiscovery (Premium) case](non-custodial-data-sources.md)
 
 ## Collect Teams content and add to review set
 
@@ -123,7 +138,7 @@ You also have the option of not running a draft collection and adding the collec
 
 To create a collection of Teams content:
 
-1. Go to the Advanced eDiscovery case that you added the custodians to in the previous section, and then click **Collections**.
+1. Go to the eDiscovery (Premium) case that you added the custodians to in the previous section, and then click **Collections**.
 
 2. On the **Collections** page, select **New collection** > **Standard collection**.
 
@@ -135,13 +150,13 @@ To create a collection of Teams content:
 
 5. Select one or more custodians and then click **Add**.
 
-   After you add specific custodians to the collection, a list of specific data sources for each custodian is displayed. These are the data sources that you configured when you added the custodian to the case. All custodian data sources are selected by default. This includes any Teams and private channels that you associated with a custodian.
+   After you add specific custodians to the collection, a list of specific data sources for each custodian is displayed. These are the data sources that you configured when you added the custodian to the case. All custodian data sources are selected by default. This includes any Teams or channels that you associated with a custodian.
 
    We recommend doing the following things when collecting Teams content:
 
    - Remove custodians' OneDrive accounts from the collection scope (by unselecting the checkbox in the **Custodian's OneDrive** column for each custodian). This prevents the collection of duplicate files that were attached to 1:1 chats and group chats. Cloud attachments are automatically collected from each conversation found in the collection when you commit the draft collection to the review set. By using this method (instead of searching OneDrive accounts as part of the collection), files attached to 1:1 and group chats are grouped in the conversation they were shared in.
 
-   - Unselect the checkbox in the **Additional site** column to remove the SharePoint sites containing files shared in private channels. Doing this eliminates collecting duplicate files that were attached to private channel conversations because cloud attachments attached to private channel conversations are automatically added to the review set when you commit the draft collection and grouped in the conversations that were shared in.
+   - Unselect the checkbox in the **Additional site** column to remove the SharePoint sites containing files shared in private or shared channels. Doing this eliminates collecting duplicate files that were attached to private or shared channel conversations because these cloud attachments are automatically added to the review set when you commit the draft collection and grouped in the conversations they were shared in.
 
 6. If you previously followed the steps to add Teams content as custodian data sources, you can skip this step and select **Next**. Otherwise, on the **Non-custodial data sources** wizard page, you can choose non-custodial data sources that contain Teams content that you may have added to the case to search in the collection.
 
@@ -149,7 +164,7 @@ To create a collection of Teams content:
 
 8. On the **Conditions** wizard page, configure the search query to collect Teams content from the data sources that you specified on the previous wizard pages. You can use various keywords and search conditions to narrow the scope of the collection. For more information, see [Build search queries for collections](building-search-queries.md).
 
-   To help ensure the most comprehensive collection of Teams chat conversations (including 1:1, group, channel, and private chats) use the **Type** condition and select the **Instant messages** option. We also recommend including a date range or several keywords to narrow the scope of the collection to items relevant to your investigation. Here's a screenshot of a sample query using the **Type** and **Date** options:
+   To help ensure the most comprehensive collection of Teams chat conversations (including 1:1, group, and channel chats) use the **Type** condition and select the **Instant messages** option. We also recommend including a date range or several keywords to narrow the scope of the collection to items relevant to your investigation. Here's a screenshot of a sample query using the **Type** and **Date** options:
 
    ![Query to collect Teams content.](..\media\TeamsConditionsQueryType.png)
 
@@ -167,15 +182,15 @@ To create a collection of Teams content:
 
 ## Review Teams content in a review set
 
-After you add collections of Teams content to a review set, the next step is to review the content for its relevance to your investigation and cull it if necessary. An important prerequisite to reviewing Teams content is understanding how Advanced eDiscovery processes Teams chat conversations and attachments when adding them to a review set. This processing of Teams content results in the following three things:
+After you add collections of Teams content to a review set, the next step is to review the content for its relevance to your investigation and cull it if necessary. An important prerequisite to reviewing Teams content is understanding how eDiscovery (Premium) processes Teams chat conversations and attachments when adding them to a review set. This processing of Teams content results in the following three things:
 
 - **[Grouping](#grouping)**. How messages, posts, and replies Teams conversations are grouped together and presented in the review set. This also includes attachments in chat conversations are extracted and group within the conversation.
 
-- **[Transcript conversation threading](#transcript-conversation-threading)**. How Advanced eDiscovery determines what additional content from a conversation to collect to provide context around items that matched the collection criteria.
+- **[Transcript conversation threading](#transcript-conversation-threading)**. How eDiscovery (Premium) determines what additional content from a conversation to collect to provide context around items that matched the collection criteria.
 
-- **[Deduplication](#deduplication-of-teams-content)**. How Advanced eDiscovery handles duplicate Teams content.
+- **[Deduplication](#deduplication-of-teams-content)**. How eDiscovery (Premium) handles duplicate Teams content.
 
-- **[Metadata](#metadata-for-teams-content)**. Metadata properties that Advanced eDiscovery adds to Teams content after it's collected and added to a review set.
+- **[Metadata](#metadata-for-teams-content)**. Metadata properties that eDiscovery (Premium) adds to Teams content after it's collected and added to a review set.
 
 Understand grouping, conversation threading, deduplication, and Teams metadata will help you optimize the review and analysis of Teams content. This section also has [tips for viewing Teams content in a review set](#tips-for-viewing-teams-content-in-a-review-set).
 
@@ -185,11 +200,10 @@ When content from Teams chat conversations is added to a review set, messages, p
 
 The following table describes how the different types of Teams chat content are grouped by family and conversation.
 
-| Teams content type|Group by family  |Group by conversation  |
-|:---------|:---------|:---------|
-|Teams 1:1 and group chats   | A transcript and all of its attachments and extracted items share the same **FamilyId**. Each transcript has a unique **FamilyId**. |All transcript files and their family items within the same conversation share the same **ConversationId**. This includes the following items:<br/><br/>  - All extracted items and attachments of all transcripts that share the same **ConversationId**. <br/> - All transcripts for the same chat conversation<br/> - All custodian copies of each transcript<br/> - Transcripts from subsequent collections from the same chat conversation <br/><br/>  For Teams 1:1 and group chat conversations, you might have multiple transcript files, each one corresponding to a different time frame within the conversation. Because these transcript files are from the same conversation with the same participants, they share the same **ConversationId**.|
-|Teams channel and private channel chats    | Each post and all replies and attachments are saved to its own transcript. This transcript and all of its attachments and extracted items share the same **FamilyId**.         |Each post and its attachments and extracted items have a unique **ConversationId**. If there are subsequent collections or new replies from the same post, the delta transcripts resulting from those collections will also have the same **ConversationId**.|
-||||
+|Teams content type|Group by family|Group by conversation|
+|---|---|---|
+|Teams 1:1 and group chats|A transcript and all of its attachments and extracted items share the same **FamilyId**. Each transcript has a unique **FamilyId**.|All transcript files and their family items within the same conversation share the same **ConversationId**. This includes the following items: <ul><li>All extracted items and attachments of all transcripts that share the same **ConversationId**.</li><li>All transcripts for the same chat conversation</li><li>All custodian copies of each transcript</li><li>Transcripts from subsequent collections from the same chat conversation</li></ul> <br/> For Teams 1:1 and group chat conversations, you might have multiple transcript files, each one corresponding to a different time frame within the conversation. Because these transcript files are from the same conversation with the same participants, they share the same **ConversationId**.|
+|Standard, private, and shared channel chats|Each post and all replies and attachments are saved to its own transcript. This transcript and all of its attachments and extracted items share the same **FamilyId**.|Each post and its attachments and extracted items have a unique **ConversationId**. If there are subsequent collections or new replies from the same post, the delta transcripts resulting from those collections will also have the same **ConversationId**.|
 
 Use the **Group** control in the command bar of a review set to view Teams content grouped by family or conversation.
 
@@ -218,25 +232,24 @@ The following screenshots show an example of conversation in the Teams client an
 
 ### Transcript conversation threading
 
-Conversation threading functionality in the new case format in Advanced eDiscovery helps you identify contextual content related to items that may be relevant to your investigation. This feature produces distinct conversation views that include chat messages that precede and follow the items match the search query during collection. This capability allows you to efficiently and rapidly review complete chat conversations (called *threaded conversations*) in Microsoft Teams. As previous explained, chat conversations are reconstructed in HTML transcript files when Advanced eDiscovery adds Teams content to a review set.
+Conversation threading functionality in the new case format in eDiscovery (Premium) helps you identify contextual content related to items that may be relevant to your investigation. This feature produces distinct conversation views that include chat messages that precede and follow the items match the search query during collection. This capability allows you to efficiently and rapidly review complete chat conversations (called *threaded conversations*) in Microsoft Teams. As previous explained, chat conversations are reconstructed in HTML transcript files when eDiscovery (Premium) adds Teams content to a review set.
 
-Here's the logic used by Advanced eDiscovery to include additional messages and replies transcript files that provide context around the items match the collection query (called *responsive items*) you used when collecting Teams content. Different threading behaviors are based on the types of chats and the search query used to collect the responsive items. There are two common collection scenarios:
+Here's the logic used by eDiscovery (Premium) to include additional messages and replies transcript files that provide context around the items match the collection query (called *responsive items*) you used when collecting Teams content. Different threading behaviors are based on the types of chats and the search query used to collect the responsive items. There are two common collection scenarios:
 
 - Queries that use search parameters, such as keywords and property:value pairs
 
 - Queries that only use date ranges
 
-| Teams content type|Queries with search parameters  |Queries with date ranges  |
-|:---------|:---------|:---------|
-|Teams 1:1 and group chats   |Messages that were posted 12 hours before and 12 hours after responsive items are grouped with the responsive item in a single transcript file.   |Messages in a 24-hour window are grouped in a single transcript file.|
-|Teams channel and private channel chats    |Each post that contains responsive items and all corresponding replies are grouped in a single transcript file. |Each post that contains responsive items and all corresponding replies are grouped in a single transcript file.|
-||||
+|Teams content type|Queries with search parameters|Queries with date ranges|
+|---|---|---|
+|Teams 1:1 and group chats|Messages that were posted 12 hours before and 12 hours after responsive items are grouped with the responsive item in a single transcript file.|Messages in a 24-hour window are grouped in a single transcript file.|
+|Standard, private, and shared Teams channel chats|Each post that contains responsive items and all corresponding replies are grouped in a single transcript file.|Each post that contains responsive items and all corresponding replies are grouped in a single transcript file.|
 
 ### Deduplication of Teams content
 
 The following list describes the deduplication (and duplication) behavior when collecting Teams content into a review set.
 
-- Each transcript file added to a review set should be a one-to-one mapping to content stored in data locations. That means Advanced eDiscovery doesn't collect any Teams content that has already been added to the review set. If a chat message is already collected in a review set, Advanced eDiscovery doesn't add the same message from the same data location to the review set in subsequent collections.
+- Each transcript file added to a review set should be a one-to-one mapping to content stored in data locations. That means eDiscovery (Premium) doesn't collect any Teams content that has already been added to the review set. If a chat message is already collected in a review set, eDiscovery (Premium) doesn't add the same message from the same data location to the review set in subsequent collections.
 
 - For 1:1 and group chats, copies of messages are stored in the mailbox of each conversation participant. Copies of the same conversation that exist in different participants' mailboxes are collected with different metadata. As a result, each instance of the conversation is treated as unique and brought into the review set in separate transcript files. So if all participants of a 1:1 or group chat are added as custodians in a case and included in the scope of a collection, then copies of each transcript (for the same conservation) are added to the review set and will be grouped together with the same **ConversationId**. Each of these copies is associated with a corresponding custodian. **Tip**: The **Custodian** column in the review set list identifies the custodian for the corresponding transcript file.
 
@@ -252,25 +265,24 @@ The following list describes the deduplication (and duplication) behavior when c
 
 ### Metadata for Teams content
 
-In large review sets with thousands or millions of items, it can be difficult to narrow the scope of your review to Teams content. To help you focus your review on Teams content, there are metadata properties that are specific to Teams content. You can use these properties to organize the columns in the review list and [configure filters and queries](review-set-search.md) to optimize the review of Teams content. These metadata properties are also included when you export Teams content from Advanced eDiscovery, to help you organize and view content post-export or in third-party eDiscovery tools.
+In large review sets with thousands or millions of items, it can be difficult to narrow the scope of your review to Teams content. To help you focus your review on Teams content, there are metadata properties that are specific to Teams content. You can use these properties to organize the columns in the review list and [configure filters and queries](review-set-search.md) to optimize the review of Teams content. These metadata properties are also included when you export Teams content from eDiscovery (Premium), to help you organize and view content post-export or in third-party eDiscovery tools.
 
 The following table describes metadata properties for Teams content.
 
-|Metadata property  |Description  |
-|:---------|:---------|
-|ContainsEditedMessage      | Indicates whether a transcript file contains an edited message. Edited messages are identified when viewing the transcript file.|
+|Metadata property|Description|
+|---|---|
+|ContainsEditedMessage|Indicates whether a transcript file contains an edited message. Edited messages are identified when viewing the transcript file.|
 |ConversationId|A GUID that identifies the conversation that the item is associated with. Transcript files and attachments from the same conversation have the same value for this property.|
-|Conversation name     | The name of the conversation the transcript file or attachment is associated with. For Teams 1:1 and group chats, the value of this property is the UPN of all participants of the conversation are concatenated. For example, `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams channel and private channel chats use the following format for conversation name: `<Team name>,<Channel name>`.  For example, `eDiscovery vNext, General`.          |
-|ConversationType     | Indicates the type of Team chat. For Teams 1:1 and group chats, the value for this property is `Group`. For Teams channel and private channel chats, the value is `Channel`.|
-|Date | The time stamp of the first message in the transcript file.|
+|Conversation name|The name of the conversation the transcript file or attachment is associated with. For Teams 1:1 and group chats, the value of this property is the UPN of all participants of the conversation are concatenated. For example, `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams channel (standard, private, and shared) chats use the following format for conversation name: `<Team name>,<Channel name>`. For example, `eDiscovery vNext, General`.|
+|ConversationType|Indicates the type of Team chat. For Teams 1:1 and group chats, the value for this property is `Group`. For standard, private, and shared channel chats, the value is `Channel`.|
+|Date|The time stamp of the first message in the transcript file.|
 |FamilyId|A GUID that identifies the transcript file for a chat conversation. Attachments will have the same value for this property as the transcript file that contains the message the file was attached to.|
-|FileClass     |Indicates that type of content. Items from Teams chats have the value `Conversation`. In contrast, Exchange email messages have the value `Email`.|          |
-|MessageKind     | The message kind property. Teams content has the value `microsoftteams , im`. |
-|Recipients     | A list of all users who received a message within the transcript conversation.|
-|TeamsChannelName     | The Teams channel name or private channel name of the transcript.|
-|||
+|FileClass|Indicates that type of content. Items from Teams chats have the value `Conversation`. In contrast, Exchange email messages have the value `Email`.|
+|MessageKind|The message kind property. Teams content has the value `microsoftteams , im`.|
+|Recipients|A list of all users who received a message within the transcript conversation.|
+|TeamsChannelName|The Teams channel name of the transcript.|
 
-For descriptions of other Advanced eDiscovery metadata properties, see [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
+For descriptions of other eDiscovery (Premium) metadata properties, see [Document metadata fields in eDiscovery (Premium)](document-metadata-fields-in-Advanced-eDiscovery.md).
 
 ## Export Teams content
 
@@ -292,10 +304,14 @@ Here are some tips and best practices for viewing Teams content in a review set.
 
 - Use [filters](review-set-search.md) for Teams-related properties to quickly display Teams content. There are filters for most of the metadata properties described in the previous section.
 
+## Deleting Teams chat messages
+
+You can use eDiscovery (Premium) and the Microsoft Graph Explorer to respond to data spillage incidents, when content containing confidential or malicious information is released through Teams chat messages. Admins in your organization can search for and delete chat messages in Microsoft Teams. This can help you remove sensitive information or inappropriate content in Teams chat messages. For more information, see [Search and purge chat messages in Teams](search-and-delete-Teams-chat-messages.md).
+
 ## Reference guide
 
-Here's a quick reference guide for using Advanced eDiscovery for Microsoft Teams. This guide summarizes the keys points for using Advanced eDiscovery to preserve, collect, review, and export content from Microsoft Teams.
+Here's a quick reference guide for using eDiscovery (Premium) for Microsoft Teams. This guide summarizes the keys points for using eDiscovery (Premium) to preserve, collect, review, and export content from Microsoft Teams.
 
-![Thumbnail for reference guide for using Advanced eDiscovery for Microsoft Teams.](../media/AeDTeamsReferenceGuide-thumbnail.png)
+![Thumbnail for reference guide for using eDiscovery (Premium) for Microsoft Teams.](../media/AeDTeamsReferenceGuide-thumbnail.png)
 
 [Download as a PDF file](https://download.microsoft.com/download/9/e/4/9e4eec6f-c476-452f-b414-4bd4b5c39dca/AeDTeamsReferenceGuide.pdf)

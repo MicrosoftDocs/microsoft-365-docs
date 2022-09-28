@@ -2,11 +2,11 @@
 title: "Manage SharePoint with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/17/2020
 audience: Admin
-ms.topic: hub-page
-ms.service: o365-administration
+ms.topic: landing-page
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150

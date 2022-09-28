@@ -1,5 +1,5 @@
 ---
-title: "Create a DLP policy to protect documents with FCI or other properties"
+title: "Create a DLP policy to protect documents"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,16 +15,18 @@ ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
+- admindeeplinkSPO
 description: Learn how to use a data loss prevention (DLP) policy to protect documents that have properties from a third-party system.
 ---
 
 # Create a DLP policy to protect documents with FCI or other properties
 
-Microsoft 365 data loss prevention (DLP) policies can use classification properties or item properties to identify sensitive items. For example you can use:
+Microsoft Purview Data Loss Prevention (DLP) policies can use classification properties or item properties to identify sensitive items. For example you can use:
 
 - Windows Server File Classification infrastructure (FCI) properties
 - SharePoint document properties
@@ -42,7 +44,7 @@ If you want to apply your DLP policy to content with specific Microsoft 365 labe
 
 ## Before you create the DLP policy
 
-Before you can use a Windows Server FCI property or other property in a DLP policy, you need to create a managed property in the SharePoint admin center. Here's why.
+Before you can use a Windows Server FCI property or other property in a DLP policy, you need to create a managed property in the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>. Here's why.
 
 In SharePoint Online and OneDrive for Business, the search index is built up by crawling the content on your sites. The crawler picks up content and metadata from the documents in the form of crawled properties. The search schema helps the crawler decide what content and metadata to pick up. Examples of metadata are the author and the title of a document. However, to get the content and metadata from the documents into the search index, the crawled properties must be mapped to managed properties. Only managed properties are kept in the index. For example, a crawled property related to author is mapped to a managed property related to author.
 
@@ -61,7 +63,7 @@ You first need to upload a document with the property that you want to reference
 
 1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-2. In the left navigation, choose **Admin centers** \> **SharePoint**. You're now in the SharePoint admin center.
+2. In the left navigation, choose **Admin centers** \> **SharePoint**. You're now in the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>.
 
 3. In the left navigation, choose **search** \> on the **search administration** page \> **Manage Search Schema**.
 
@@ -97,25 +99,23 @@ Next, they create a DLP policy with two rules that both use the condition **Docu
 
 - **FCI PII content - Low** The second rule sends a notification to the document owner if the FCI classification property **Personally Identifiable Information** equals **Low** and the document is shared with people outside the organization.
 
-### Create the DLP policy by using PowerShell
+### Create the DLP policy by using Security & Compliance PowerShell
 
-The condition **Document properties contain any of these values** is temporarily not available in the UI of the Security &amp; Compliance Center, but you can still use this condition by using PowerShell. You can use the  `New\Set\Get-DlpCompliancePolicy` cmdlets to work with a DLP policy, and use the  `New\Set\Get-DlpComplianceRule` cmdlets with the  `ContentPropertyContainsWords` parameter to add the condition **Document properties contain any of these values**.
+The condition **Document properties contain any of these values** is temporarily not available in the Microsoft Purview compliance portal, but you can still use this condition in Security & Compliance PowerShell. You can use the `New\Set\Get-DlpCompliancePolicy` cmdlets to work with a DLP policy, and use the `New\Set\Get-DlpComplianceRule` cmdlets with the `ContentPropertyContainsWords` parameter to add the condition **Document properties contain any of these values**.
 
-For more information on these cmdlets, see [Security &amp; Compliance Center cmdlets](/powershell/exchange/exchange-online-powershell).
+1. [Connect to the Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
-1. [Connect to the Security &amp; Compliance Center using remote PowerShell](/powershell/exchange/connect-to-scc-powershell)
+2. Create the policy by using `New-DlpCompliancePolicy`.
 
-2. Create the policy by using  `New-DlpCompliancePolicy`.
-
-This PowerShell creates a DLP policy that applies to all locations.
+   This PowerShell creates a DLP policy that applies to all locations.
 
    ```powershell
    New-DlpCompliancePolicy -Name FCI_PII_policy -ExchangeLocation All -SharePointLocation All -OneDriveLocation All -Mode Enable
    ```
 
-3. Create the two rules described above by using  `New-DlpComplianceRule`, where one rule is for the **Low** value, and another rule is for the **High** and **Moderate** values.
+3. Create the two rules described above by using `New-DlpComplianceRule`, where one rule is for the **Low** value, and another rule is for the **High** and **Moderate** values.
 
-   Here is a PowerShell example that creates these two rules. The property name/value pairs are enclosed in quotation marks, and a property name may specify multiple values separated by commas with no spaces, like  `"<Property1>:<Value1>,<Value2>","<Property2>:<Value3>,<Value4>"....`
+   Here is a PowerShell example that creates these two rules. The property name/value pairs are enclosed in quotation marks, and a property name may specify multiple values separated by commas with no spaces, like `"<Property1>:<Value1>,<Value2>","<Property2>:<Value3>,<Value4>"....`
 
    ```powershell
    New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner

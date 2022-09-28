@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.custom: admindeeplinkMAC
 search.appverid: 
 ms.collection: 
@@ -31,10 +31,9 @@ If you turn tagging off, images will no longer be automatically tagged. Existing
 > [!NOTE]
 > System generated tags may change with updates to the image or our tag technology.
 
-
 ## Configure image tagging
 
-After you [set up SharePoint Syntex](set-up-content-understanding.md), you can configure image tagging in the Microsoft 365 admin center.  
+After you [set up SharePoint Syntex](set-up-content-understanding.md), you can configure image tagging in the Microsoft 365 admin center.
 
 To turn image tagging on or off
 

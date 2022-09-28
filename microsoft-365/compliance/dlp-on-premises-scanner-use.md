@@ -1,5 +1,5 @@
 ---
-title: "Use Microsoft 365 data loss prevention on-premises scanner"
+title: "Use data loss prevention on-premises scanner"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -13,17 +13,19 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
-description: "Learn how to use the Microsoft 365  data loss prevention on premises scanner to scan data at rest and implement protective actions for on premises file shares and on-premises SharePoint folders and document libraries."
+description: "Learn how to use the data loss prevention on premises scanner to scan data at rest and implement protective actions for on premises file shares and on-premises SharePoint folders and document libraries."
 ---
 
-# Use the Microsoft 365 data loss prevention on-premises scanner
+# Use the data loss prevention on-premises scanner
 
-To help familiarize you with DLP on-premises features and how they surface in DLP policies, we've put together some scenarios for you to follow.
+To help familiarize you with Microsoft Purview Data Loss Prevention on-premises features and how they surface in DLP policies, we've put together some scenarios for you to follow.
 
 > [!IMPORTANT]
 > These DLP on-premises scenarios are not the official procedures for creating and tuning DLP policies. Refer to the below topics when you need to work with DLP policies in general situations:
@@ -43,7 +45,7 @@ Data from DLP on-premises scanner surfaces in several areas
 
 #### Microsoft 365 Audit log
 
-The DLP rule matches are available in Audit log UI, see [Search the audit log in the compliance center](search-the-audit-log-in-security-and-compliance.md)  or accessible by [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell.
+The DLP rule matches are available in Audit log UI, see [Search the audit log in the Microsoft Purview compliance portal](search-the-audit-log-in-security-and-compliance.md)  or accessible by [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell.
 
 #### AIP
 

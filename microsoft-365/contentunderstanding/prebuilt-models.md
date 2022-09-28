@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
@@ -126,6 +126,7 @@ To rename an extractor from the **Extractors** panel:
 
 - If you're ready to apply the model to a library, in the document area, select **Next**. On the **Add to library** panel, choose the library to which you want to add the model, and then select **Add**.
 
-## See also
+## Change the view in a document library
 
-[Apply a document understanding model](apply-a-model.md)
+[!INCLUDE [Change the view in a document library](../includes/change-library-view.md)]
+

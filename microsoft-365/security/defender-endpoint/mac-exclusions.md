@@ -2,7 +2,7 @@
 title: Configure and validate exclusions for Microsoft Defender for Endpoint on Mac
 description: Provide and validate exclusions for Microsoft Defender for Endpoint on Mac. Exclusions can be set for files, folders, and processes.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, exclusions, scans, antivirus
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
+  - m365-security
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Configure and validate exclusions for Microsoft Defender for Endpoint on macOS
@@ -72,7 +73,7 @@ For more information on how to configure exclusions from JAMF, Intune, or anothe
 
 Open the Defender for Endpoint application and navigate to **Manage settings** \> **Add or Remove Exclusion...**, as shown in the following screenshot:
 
-![Manage exclusions screenshot.](images/mdatp-37-exclusions.png)
+:::image type="content" source="images/mdatp-37-exclusions.png" alt-text="The Manage exclusions page" lightbox="images/mdatp-37-exclusions.png":::
 
 Select the type of exclusion that you wish to add and follow the prompts.
 

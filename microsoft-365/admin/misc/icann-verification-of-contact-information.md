@@ -1,5 +1,5 @@
 ---
-title: "ICANN Verification of Contact Information"
+title: "ICANN verification of contact information"
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -22,7 +22,7 @@ ROBOTS: NOINDEX
 description: "Learn how to validate your contact information to comply with ICANN regulations."
 ---
 
-# ICANN Verification of Contact Information
+# ICANN verification of contact information
 
 When you purchase a domain or make changes to the contact information for a domain, the registrar is required to validate your contact information to comply with ICANN regulations.
 

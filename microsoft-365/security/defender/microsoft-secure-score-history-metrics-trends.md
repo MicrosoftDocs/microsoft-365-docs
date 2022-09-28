@@ -2,32 +2,30 @@
 title: Track your Microsoft Secure Score history and meet goals
 description: Gain insights into activity that has affected your Microsoft Secure Score. Discover trends and set goals.
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal, improvement actions
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
+  - tier2
 ms.topic: article
 search.appverid: 
   - MOE150
   - MET150
-ms.custom: 
-  - seo-marvel-apr2020
-  - seo-marvel-jun2020
-ms.technology: m365d
 ---
 
 # Track your Microsoft Secure Score history and meet goals
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[Microsoft Secure Score](microsoft-secure-score.md) is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](microsoft-365-defender.md#the-microsoft-365-defender-portal).
+[Microsoft Secure Score](microsoft-secure-score.md) is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](microsoft-365-defender-portal.md).
 
 ## Gain insights into activity that has affected your score
 
@@ -35,13 +33,13 @@ View a graph of your organization's score over time in the **History** tab.
 
 Below the graph is a list of all the actions taken in the selected time range and their attributes, such as resulting points and category. You can customize a date range and filter by category.
 
-![Activity history.](../../media/secure-score/secure-score-history-activity.png)
+:::image type="content" source="../../media/secure-score/secure-score-history-activity.png" alt-text="An example of the page that describes the activity history in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-history-activity.png":::
 
 If you select the improvement action associated with an activity, the full improvement action flyout will appear.
 
 To view all history for that specific improvement action, select the history link in the flyout.
 
-![Improvement action history.](../../media/secure-score/secure-score-history-flyout.png)
+:::image type="content" source="../../media/secure-score/secure-score-history-flyout.png" alt-text="The History pane regarding improvement action in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-history-flyout.png":::
 
 ## Discover trends and set goals
 
@@ -61,9 +59,9 @@ There are two places to see how your score compares to organizations that are si
 
 The comparison bar chart is available on the **Overview** tab. Hover over the chart to view the score and score opportunity. 
 
-**Organizations like yours** is an average score of other tenants in same region (provided we have at least five or more tenants to compare) with a similar organization size to yours.
+:::image type="content" source="../../media/secure-score/secure-score-comparison-bar.png" alt-text="An example of the bar graph of similar organization's scores in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-comparison-bar.png":::
 
-The comparison data is anonymized so we don’t know exactly which others tenants are in the mix.
+The comparison data is anonymized so we don't know exactly which others tenants are in the mix.
 
 ![Bar graph of similar organization's scores.](../../media/secure-score/secure-score-comparison-screenshot.png)
 
@@ -71,7 +69,7 @@ The comparison data is anonymized so we don’t know exactly which others tenant
 
 In the **Metrics & trends** tab, view how your organization's Secure Score compares to others' over time.
 
-![Line graph of similar organization's scores over time.](../../media/secure-score/secure-score-comparison-trend.png)
+:::image type="content" source="../../media/secure-score/secure-score-comparison-trend.png" alt-text="An example of a line graph of similar organization's scores over time in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-comparison-trend.png":::
 
 ## We want to hear from you
 

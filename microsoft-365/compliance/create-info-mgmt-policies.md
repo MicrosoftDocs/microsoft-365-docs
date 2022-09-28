@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - SPO_Content
 ms.custom:
 - seo-marvel-apr2020
@@ -97,7 +97,7 @@ Adding an information management policy to a content type makes it easy to assoc
 
    3. The **Start a workflow** option is available only if you are defining a policy for a list, library, or content type that already has a workflow associated with it. You will then be given a choice of workflows to choose from.
 
-   4. In the **Recurrence** section, select **Repeat this stage's action…**, and then enter how often you want the action to reoccur.
+   4. In the **Recurrence** section, select **Repeat this stage's action...**, and then enter how often you want the action to reoccur.
 
       > [!NOTE]
       >  This option is only available if the action you selected can be repeated. For example, you cannot set recurrence for the action **Permanently Delete**.
@@ -194,7 +194,7 @@ You need at least the Manage Lists permission to change the information manageme
 
 5. On the Edit Policy page, under **Library Based Retention Schedule**, enter a brief description for the policy you are creating.
 
-6. Choose **Add a retention stage…**
+6. Choose **Add a retention stage...**
 
    Note that under Records, you can choose to define different retention policies for records by selecting the Define different retention stages for records option.
 
@@ -211,7 +211,7 @@ You need at least the Manage Lists permission to change the information manageme
 
 8. The **Start a workflow** option is available only if you are defining a policy for a list, library, or content type that already has a workflow associated with it. You will then be given a choice of workflows to choose from.
 
-9. Under **Recurrence**, choose **Repeat this stage's action…** and enter how often you want the action to reoccur.
+9. Under **Recurrence**, choose **Repeat this stage's action...** and enter how often you want the action to reoccur.
 
    > [!NOTE]
    >  This option is only available if the action you selected can be repeated. For example, you cannot set recurrence for the action **Permanently Delete**.

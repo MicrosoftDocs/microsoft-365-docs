@@ -1,9 +1,10 @@
 ---
-title: "Apply the prediction score filter to items in a review set"
+title: "Apply the prediction score filter to a review set"
+description: "Use a prediction score filter to displays items that a predictive coding model as predicted as relevant or not relevant."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -12,13 +13,15 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "Use a prediction score filter to displays items that a predictive coding model as predicted as relevant or not relevant."
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Apply a prediction score filter to a review set (preview)
 
-After you create a predictive coding model in Advanced eDiscovery and train it to the point where it's stable, you can apply the prediction score filter to display review set items that the model has determined are relevant (or not relevant). When you create a model, a corresponding prediction score filter is also created. You can use this filter to display items assigned a prediction score within a specified range. In general, prediction scores between **0** and **.5** are assigned to items that model has predicted are not relevant. Items assigned prediction scores between **.5** and **1.0** are items the model has predicted are relevant.
+After you create a predictive coding model in Microsoft Purview eDiscovery (Premium) and train it to the point where it's stable, you can apply the prediction score filter to display review set items that the model has determined are relevant (or not relevant). When you create a model, a corresponding prediction score filter is also created. You can use this filter to display items assigned a prediction score within a specified range. In general, prediction scores between **0** and **.5** are assigned to items that model has predicted are not relevant. Items assigned prediction scores between **.5** and **1.0** are items the model has predicted are relevant.
 
 Here are two ways you can use the prediction score filter:
 
@@ -34,7 +37,7 @@ Here are two ways you can use the prediction score filter:
 
 ## Apply a prediction score filter
 
-1. In the Microsoft 365 compliance center, open the Advanced eDiscovery case, select the **Review sets** tab, and then open the review set.
+1. In the Microsoft Purview compliance portal, open the eDiscovery (Premium) case, select the **Review sets** tab, and then open the review set.
 
    ![Click Filters to display the Filters flyout page.](..\media\PredictionScoreFilter0.png)   
 

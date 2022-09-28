@@ -2,7 +2,7 @@
 title: View and organize the Microsoft Defender for Endpoint Alerts queue
 description: Learn about how the Microsoft Defender for Endpoint alerts queues work, and how to sort and filter lists of alerts.
 keywords: alerts, queues, alerts queue, sort, order, filter, manage alerts, new, in progress, resolved, newest, time in queue, severity, time period, microsoft threat experts alerts
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
 ms.date: 03/27/2020
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # View and organize the Microsoft Defender for Endpoint Alerts queue
@@ -26,39 +27,39 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-alertsq-abovefoldlink)
 
-The **Alerts queue** shows a list of alerts that were flagged from devices in your network. By default, the queue displays alerts seen in the last 30 days in a grouped view. The most recent alerts are showed at the top of the list helping you see the most recent alerts first.
+The **Alerts queue** shows a list of alerts that were flagged from devices in your network. By default, the queue displays alerts seen in the last 30 days in a grouped view. The most recent alerts are shown at the top of the list helping you see the most recent alerts first.
 
 > [!NOTE]
-> The alerts queue is significantly reduced with automated investigation and remediation, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. When an alert contains a supported entity for automated investigation (for example, a file) in a device that has a supported operating system for it, an automated investigation and remediation can start. For more information on automated investigations, see [Overview of Automated investigations](automated-investigations.md).
+> The alerts are significantly reduced with automated investigation and remediation, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. When an alert contains a supported entity for automated investigation (for example, a file) in a device that has a supported operating system for it, an automated investigation and remediation can start. For more information on automated investigations, see [Overview of Automated investigations](automated-investigations.md).
 
-There are several options you can choose from to customize the alerts queue view.
+There are several options you can choose from to customize the alerts view.
 
 On the top navigation you can:
 
-- Select grouped view or list view
 - Customize columns to add or remove columns
-- Select the items to show per page
-- Navigate between pages
 - Apply filters
+- Display the alerts for a particular duration like 1 Day, 3 Days, 1 Week, 30 Days, and 6 Months
+- Export the alerts list to excel
+- Manage Alerts
 
-![Image of alerts queue.](images/alerts-queue-list.png)
+:::image type="content" source="images/alerts-queue-list.png" alt-text="The Alerts queue page" lightbox="images/alerts-queue-list.png":::
 
-## Sort, filter, and group the alerts queue
+## Sort and filter alerts 
 
-You can apply the following filters to limit the list of alerts and get a more focused view the alerts.
+You can apply the following filters to limit the list of alerts and get a more focused view of the alerts.
 
 ### Severity
 
 Alert severity|Description
 ---|---
 High <br> (Red)|Alerts commonly seen associated with advanced persistent threats (APT). These alerts indicate a high risk because of the severity of damage they can inflict on devices. Some examples are: credential theft tools activities, ransomware activities not associated with any group, tampering with security sensors, or any malicious activities indicative of a human adversary.
-Medium <br> (Orange)|Alerts from endpoint detection and response post-breach behaviors that might be a part of an advanced persistent threat (APT). This includes observed behaviors typical of attack stages, anomalous registry change, execution of suspicious files, and so forth. Although some might be part of internal security testing, it requires investigation as it might also be a part of an advanced attack.
+Medium <br> (Orange)|Alerts from endpoint detection and response post-breach behaviors that might be a part of an advanced persistent threat (APT). These behaviors include observed behaviors typical of attack stages, anomalous registry change, execution of suspicious files, and so forth. Although some might be part of internal security testing, it requires investigation as it might also be a part of an advanced attack.
 Low <br> (Yellow)|Alerts on threats associated with prevalent malware. For example, hack-tools, non-malware hack tools, such as running exploration commands, clearing logs, etc., that often do not indicate an advanced threat targeting the organization. It could also come from an isolated security tool testing by a user in your organization.
 Informational <br> (Grey)|Alerts that might not be considered harmful to the network but can drive organizational security awareness on potential security issues.
 
 #### Understanding alert severity
 
-Microsoft Defender Antivirus (Microsoft Defender AV) and Defender for Endpoint alert severities are different because they represent different scopes.
+Microsoft Defender Antivirus and Defender for Endpoint alert severities are different because they represent different scopes.
 
 The Microsoft Defender Antivirus threat severity represents the absolute severity of the detected threat (malware), and is assigned based on the potential risk to the individual device, if infected.
 
@@ -66,62 +67,50 @@ The Defender for Endpoint alert severity represents the severity of the detected
 
 So, for example:
 
-- The severity of a Defender for Endpoint alert about a Microsoft Defender Antivirus detected threat that was completely prevented and did not infect the device is categorized as "Informational" because there was no actual damage.
-- An alert about a commercial malware was detected while executing, but blocked and remediated by Microsoft Defender AV, is categorized as "Low" because it may have caused some damage to the individual device but poses no organizational threat.
+- The severity of a Defender for Endpoint alert about a Microsoft Defender Antivirus detected threat that was prevented and did not infect the device is categorized as "Informational" because there was no actual damage.
+- An alert about a commercial malware was detected while executing, but blocked and remediated by Microsoft Defender Antivirus, is categorized as "Low" because it may have caused some damage to the individual device but poses no organizational threat.
 - An alert about malware detected while executing which can pose a threat not only to the individual device but to the organization, regardless if it was eventually blocked, may be ranked as "Medium" or "High".
 - Suspicious behavioral alerts, which weren't blocked or remediated will be ranked "Low", "Medium" or "High" following the same organizational threat considerations.
 
-#### Understanding alert categories
+### Status
+
+You can choose to filter the list of alerts based on their Status.
+
+> [!NOTE]
+> If you see an *Unsupported alert type* alert status, it means that automated investigation capabilities cannot pick up that alert to run an automated investigation. However, you can [investigate these alerts manually](../defender/investigate-incidents.md#alerts).
+
+### Categories
 
 We've redefined the alert categories to align to the [enterprise attack tactics](https://attack.mitre.org/tactics/enterprise/) in the [MITRE ATT&CK matrix](https://attack.mitre.org/). New category names apply to all new alerts. Existing alerts will keep the previous category names.
 
-The table below lists the current categories and how they generally map to previous categories.
+### Service sources
 
-|New category|API category name|Detected threat activity or component|
-|---|---|---|
-|Collection|Collection|Locating and collecting data for exfiltration.|
-|Command and control|CommandAndControl|Connecting to attacker-controlled network infrastructure to relay data or receive commands.|
-|Credential access|CredentialAccess|Obtaining valid credentials to extend control over devices and other resources in the network.|
-|Defense evasion|DefenseEvasion|Avoiding security controls by, for example, turning off security apps, deleting implants, and running rootkits.|
-|Discovery|Discovery|Gathering information about important devices and resources, such as administrator computers, domain controllers, and file servers.|
-|Execution|Execution|Launching attacker tools and malicious code, including RATs and backdoors.|
-|Exfiltration|Exfiltration|Extracting data from the network to an external, attacker-controlled location.|
-|Exploit|Exploit|Exploit code and possible exploitation activity.|
-|Initial access|InitialAccess|Gaining initial entry to the target network, usually involving password-guessing, exploits, or phishing emails.|
-|Lateral movement|LateralMovement|Moving between devices in the target network to reach critical resources or gain network persistence.|
-|Malware|Malware|Backdoors, trojans, and other types of malicious code.|
-|Persistence|Persistence|Creating autostart extensibility points (ASEPs) to remain active and survive system restarts.|
-|Privilege escalation|PrivilegeEscalation|Obtaining higher permission levels for code by running it in the context of a privileged process or account.|
-|Ransomware|Ransomware|Malware that encrypts files and extorts payment to restore access.|
-|Suspicious activity|SuspiciousActivity|Atypical activity that could be malware activity or part of an attack.|
-|Unwanted software|UnwantedSoftware|Low-reputation apps and apps that impact productivity and the user experience; detected as potentially unwanted applications (PUAs).|
+Microsoft Threat Experts preview participants can now filter and see detections from the new threat experts-managed hunting service.
 
-### Status
+Filter the alerts based on the following Service sources:
 
-You can choose to limit the list of alerts based on their status.
-
-### Investigation state
-
-Corresponds to the automated investigation state.
-
-### Category
-
-You can choose to filter the queue to display specific types of malicious activity.
-
-### Assigned to
-
-You can choose between showing alerts that are assigned to you or automation.
-
-### Detection source
-
-Select the source that triggered the alert detection. Microsoft Threat Experts preview participants can now filter and see detections from the new threat experts-managed hunting service.
+- Microsoft Defender for Identity
+- Microsoft Defender for Cloud Apps
+- Microsoft Defender for Endpoint
+- Microsoft 365 Defender
+- Microsoft Defender for Office 365
+- App Governance
+- AAD Identity Protection
 
 > [!NOTE]
 > The Antivirus filter will only appear if devices are using Microsoft Defender Antivirus as the default real-time protection antimalware product.
 
+### Tags
+
+You can filter the alerts based on Tags assigned to alerts.
+
+### Policy 
+
+You can filter the alerts based on the following policies:
+
 |Detection source|API value|
 |---|---|
-|3rd party sensors|ThirdPartySensors|
+|Third-party sensors|ThirdPartySensors|
 |Antivirus|WindowsDefenderAv|
 |Automated investigation|AutomatedInvestigation|
 |Custom detection|CustomDetection|
@@ -132,17 +121,15 @@ Select the source that triggered the alert detection. Microsoft Threat Experts p
 |Microsoft Threat Experts|ThreatExperts|
 |SmartScreen|WindowsDefenderSmartScreen|
 
-### OS platform
+### Entities
 
-Limit the alerts queue view by selecting the OS platform that you're interested in investigating.
+You can filter the alerts based on Entity name or ID. 
 
-### Device group
+### Automated investigation state
 
-If you have specific device groups that you're interested in checking, you can select the groups to limit the alerts queue view.
+You can choose to filter the alerts based on their Automated investigation state.
 
-### Associated threat
 
-Use this filter to focus on alerts that are related to high profile threats. You can see the full list of high-profile threats in [Threat analytics](threat-analytics.md).
 
 ## Related topics
 

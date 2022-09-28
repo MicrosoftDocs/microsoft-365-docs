@@ -14,10 +14,12 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority:  null
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 - SPO_Content
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 ms.custom:
@@ -31,7 +33,7 @@ description: data loss prevention reference material
 # Data loss prevention reference
 
 > [!IMPORTANT]
-> This is reference topic is no longer the main resource for Microsoft 365 data loss prevention (DLP) information. The DLP content set is being updated and restructured. The topics covered in this article will be moving to new, updated articles. For more information about DLP, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
+> This is reference topic is no longer the main resource for Microsoft Purview Data Loss Prevention (DLP) information. The DLP content set is being updated and restructured. The topics covered in this article will be moving to new, updated articles. For more information about DLP, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
@@ -40,7 +42,7 @@ description: data loss prevention reference material
 
 
 
-<!-- MOVED TO LEARN ABOUT To comply with business standards and industry regulations, organizations must protect sensitive information and prevent its inadvertent disclosure. Sensitive information can include financial data or personally identifiable information (PII) such as credit card numbers, social security numbers, or health records. With a data loss prevention (DLP) policy in the Office 365 Security &amp; Compliance Center, you can identify, monitor, and automatically protect sensitive information across Office 365.
+<!-- MOVED TO LEARN ABOUT To comply with business standards and industry regulations, organizations must protect sensitive information and prevent its inadvertent disclosure. Sensitive information can include financial data or personally identifiable information (PII) such as credit card numbers, social security numbers, or health records. With a data loss prevention (DLP) policy in the Microsoft Purview compliance portal, you can identify, monitor, and automatically protect sensitive information across Office 365.
 
 With a DLP policy, you can:
 
@@ -67,9 +69,9 @@ With a DLP policy, you can:
 -->
 ## Create and manage DLP policies
 
-You create and manage DLP policies on the Data loss prevention page in the Microsoft 365 Compliance center.
+You create and manage DLP policies on the data loss prevention page in the Microsoft Purview compliance portal.
 
-![Data loss prevention page in the Office 365 Security &amp; Compliance Center.](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![Data loss prevention page in the Microsoft Purview compliance portal](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 
 <!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
@@ -487,7 +489,7 @@ DLP detects sensitive information by using deep content analysis (not just a sim
 
 ### Policies are synced
 
-After you create a DLP policy in the Security &amp; Compliance Center, it's stored in a central policy store, and then synced to the various content sources, including:
+After you create a DLP policy in the Microsoft Purview compliance portal, it's stored in a central policy store, and then synced to the various content sources, including:
 
 - Exchange Online, and from there to Outlook on the web and Outlook.
 
@@ -525,7 +527,7 @@ DLP evaluates any content that can be indexed. For more information on what file
 
 ### Policy evaluation in Exchange Online, Outlook, and Outlook on the web
 
-When you create a DLP policy that includes Exchange Online as a location, the policy's synced from the Office 365 Security &amp; Compliance Center to Exchange Online, and then from Exchange Online to Outlook on the web and Outlook.
+When you create a DLP policy that includes Exchange Online as a location, the policy's synced from the Microsoft Purview compliance portal to Exchange Online, and then from Exchange Online to Outlook on the web and Outlook.
 
 When a message is being composed in Outlook, the user can see policy tips as the content being created is evaluated against DLP policies. And after a message is sent, it's evaluated against DLP policies as a normal part of mail flow, along with Exchange mail flow rules (also known as transport rules) and DLP policies created in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. DLP policies scan both the message and any attachments.
 
@@ -539,15 +541,15 @@ DLP policy evaluation in Office is designed not to affect the performance of the
 ### Policy evaluation in Microsoft Teams
  <!--what do you mean that it's synched to user accounts?  I thought DLP policies were applied to locations not users like sensitivity labels are  -->
 
-When you create a DLP policy that includes Microsoft Teams as a location, the policy's synced from the Office 365 Security &amp; Compliance Center to user accounts and Microsoft Teams channels and chat messages. Depending on how DLP policies are configured, when someone attempts to share sensitive information in a Microsoft Teams chat or channel message, the message can be blocked or revoked. And, documents that contain sensitive information and that are shared with guests (external users) won't open for those users. To learn more, see [Data loss prevention and Microsoft Teams](dlp-microsoft-teams.md).
+When you create a DLP policy that includes Microsoft Teams as a location, the policy's synced from the Microsoft Purview compliance portal to user accounts and Microsoft Teams channels and chat messages. Depending on how DLP policies are configured, when someone attempts to share sensitive information in a Microsoft Teams chat or channel message, the message can be blocked or revoked. And, documents that contain sensitive information and that are shared with guests (external users) won't open for those users. To learn more, see [Data loss prevention and Microsoft Teams](dlp-microsoft-teams.md).
 
 ## Permissions
 
-By default, Global admins, Security admins, and Compliance admins will have access to create and apply a DLP policy. Other Members of your compliance team who will create DLP policies need permissions to the Security &amp; Compliance Center. By default, your Tenant admin will have access to this location and can give compliance officers and other people access to the Security &amp; Compliance Center, without giving them all of the permissions of a Tenant admin. To do this, we recommend that you:
+By default, Global admins, Security admins, and Compliance admins will have access to create and apply a DLP policy. Other Members of your compliance team who will create DLP policies need permissions to the Microsoft Purview compliance portal. By default, your Tenant admin will have access to this location and can give compliance officers and other people access to the Microsoft Purview compliance portal, without giving them all of the permissions of a Tenant admin. To do this, we recommend that you:
 
 1. Create a group in Microsoft 365 and add compliance officers to it.
 
-2. Create a role group on the **Permissions** page of the Security &amp; Compliance Center.
+2. Create a role group on the **Permissions** page of the Microsoft Purview compliance portal.
 
 3. While creating the role group, use the **Choose Roles** section to add the following role to the Role Group: **DLP Compliance Management**.
 
@@ -561,15 +563,15 @@ These permissions are required only to create and apply a DLP policy. Policy enf
 
 ## Find the DLP cmdlets
 
-To use most of the cmdlets for the Security &amp; Compliance Center, you need to:
+To use most of the cmdlets for the Microsoft Purview compliance portal, you need to:
 
-1. [Connect to the Office 365 Security &amp; Compliance Center using remote PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Use any of these [policy-and-compliance-dlp cmdlets](/powershell/module/exchange/export-dlppolicycollection).
 
-However, DLP reports need pull data from across Microsoft 365, including Exchange Online. For this reason, **the cmdlets for the DLP reports are available in Exchange Online Powershell -- not in Security &amp; Compliance Center Powershell**. Therefore, to use the cmdlets for the DLP reports, you need to:
+However, DLP reports need pull data from across Microsoft 365, including Exchange Online. For this reason, ***the cmdlets for the DLP reports are available in Exchange Online Powershell -- not in Microsoft Purview compliance portal Powershell***. Therefore, to use the cmdlets for the DLP reports, you need to:
 
-1. [Connect to Exchange Online using remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Use any of these cmdlets for the DLP reports:
 

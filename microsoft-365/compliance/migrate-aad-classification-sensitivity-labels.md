@@ -1,5 +1,5 @@
 ---
-title: Azure Active Directory classification and sensitivity labels for Microsoft 365 groups
+title: AAD classification and sensitivity labels for Microsoft 365 groups
 ms.reviewer: vijagan
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -27,7 +27,7 @@ See the following scenarios for best practices when migrating from classic AAD c
 ## Scenario 1: Tenant never used classic AAD classifications or sensitivity labels for documents and emails
 
 - Tenant Admin enables sensitivity labels for groups by setting the tenant flag “EnableMIPLabels” to true via AAD powershell cmdlet.
-- Tenant Admin creates the sensitivity labels in the [Microsoft 365 compliance center](https://compliance.microsoft.com).
+- Tenant Admin creates the sensitivity labels in the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
     - Tenant admin can choose file and email-related actions like encryption and watermarking.
     - Tenant admin can choose Microsoft 365 Groups and SharePoint Online site-related actions to the sensitivity labels.
 - Tenant Admin publishes the policy.
@@ -53,7 +53,7 @@ Table 1. Behavior of compatible and non-compatible workloads – create, edit, o
 
 ### Case A: Tenant never used sensitivity labels for documents and emails
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), we recommend creating sensitivity labels with same name as the existing classic Azure AD labels.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), we recommend creating sensitivity labels with same name as the existing classic Azure AD labels.
 2. Use the PowerShell cmdlet to apply these sensitivity labels to existing Microsoft 365 groups and SharePoint sites using name mapping.
 3. Admin can choose to delete the classic Azure AD labels:
     - Compatible workloads show these sensitivity labels and groups get created with them.
@@ -83,7 +83,7 @@ Table 2. Behavior of compatible and non-compatible workloads – create, edit, o
 
 1. As soon as admin enables sensitivity label feature on the tenant by setting the tenant flag ‘EnableMIPLabels’ to true, the document and email sensitivity labels in group/site/team create and edit dialog boxes appear.
 2. An admin can use the same document and email sensitivity labels to enforce privacy and external user access on the group/site/team by specifying related group settings:
-    1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), select the **Sites and Groups** tab.
+    1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), select the **Sites and Groups** tab.
     2. Edit a document or email sensitivity label.
 
 ## Sample script

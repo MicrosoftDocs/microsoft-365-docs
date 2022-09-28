@@ -5,9 +5,10 @@ metadata:
   ms.author: sharik
   author: SKjerland
   manager: scotv
+  ms-reviewer: crimora
   audience: Admin
-  ms.topic: article
-  ms.prod: microsoft-365-lighthouse
+  ms.topic: faq
+  ms.service: microsoft-365-lighthouse
   ms.localizationpriority: medium
   ms.collection:
   - M365-subscription-management
@@ -17,12 +18,8 @@ metadata:
   - M365-Lighthouse                         
   search.appverid: MET150
   description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse."
-    
 title: Microsoft 365 Lighthouse frequently asked questions (FAQs)
 summary: |
-  > [!NOTE]
-  > The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-  
   This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
   
   If you can't find an answer to your question, let us know by leaving a comment and we'll add it to this article.
@@ -33,15 +30,15 @@ sections:
     questions:
       - question: What is Microsoft 365 Lighthouse?
         answer: |
-          Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium or Microsoft 365 E3.  Lighthouse simplifies onboarding of tenants by recommending security configuration baselines tailored to SMBs and providing multi-tenant views across all customer environments. For more information, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
+          Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers. Lighthouse simplifies onboarding of tenants by recommending security configuration baselines tailored to SMBs and providing multi-tenant views across all customer environments. For more information, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
           
       - question: What's the difference between Microsoft 365 Lighthouse and Azure Lighthouse?
         answer: |
-          Microsoft 365 Lighthouse is focused on Microsoft 365 services rather than Azure services. While Azure Lighthouse is built into the Azure portal and allows IT partners to manage multiple tenants for Azure, Microsoft 365 Lighthouse is a standalone portal that helps MSPs manage multiple Microsoft 365 Business Premium or Microsoft 365 E3 customer tenants. For more information about Microsoft 365 Lighthouse, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md). For more information about Azure Lighthouse, see [What is Azure Lighthouse?](/azure/lighthouse/overview)
+          Microsoft 365 Lighthouse is focused on Microsoft 365 services rather than Azure services. While Azure Lighthouse is built into the Azure portal and allows IT partners to manage multiple tenants for Azure, Microsoft 365 Lighthouse is a standalone portal that helps MSPs manage multiple Microsoft 365 customer tenants. For more information about Microsoft 365 Lighthouse, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md). For more information about Azure Lighthouse, see [What is Azure Lighthouse?](/azure/lighthouse/overview)
           
       - question: How much does Microsoft 365 Lighthouse cost?
         answer: |
-          No additional costs are associated with using the Preview version of Lighthouse to manage Microsoft 365 Business Premium and Microsoft 365 E3 services and connected devices. Lighthouse is currently in Preview and available to MSPs servicing small- to medium-sized businesses and who have a Cloud Solution Provider (CSP) relationship with their customers. Note that indirect providers are not currently supported by Lighthouse. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+          No additional costs are associated with using Lighthouse to manage multiple Microsoft 365 customer tenants. Lighthouse is available to MSPs servicing small- to medium-sized businesses and who have a Cloud Solution Provider (CSP) relationship with their customers. Note that indirect providers aren't currently supported by Lighthouse. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
       - question: What are the requirements to use Microsoft 365 Lighthouse?
         answer: |
@@ -59,27 +56,29 @@ sections:
           
       - question: I finished signing up, so why don't I see any customer tenant data?
         answer: |
-          It can take up to 48 hours for customer tenant data to load within Lighthouse. If it's been more than 48 hours since you completed onboarding, please reach out to our Support team for help. You'll need to let them know when you completed onboarding and provide any relevant screenshots and logs. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+          It can take up to 48 hours for customer tenant data to load within Lighthouse. If it's been more than 48 hours since you completed onboarding, reach out to our Support team for help. You'll need to let them know when you completed onboarding and provide any relevant screenshots and logs. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
           
       - question: Why do I see data for some customer tenants but not others?
         answer: |
-          For customer tenant data to show up in Lighthouse, partners must establish Delegated Admin Privileges (DAP) with customers through Partner Center. For more information, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Microsoft 365 Business Premium or Microsoft 365 E3 subscription and fewer than 500 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Microsoft 365 Lighthouse Tenants page overview](m365-lighthouse-tenants-page-overview.md).
-          
+          For customer tenant data to show up in Lighthouse, MSPs must establish delegated access to manage the customer tenant. Either Granular Delegated Admin Privileges (GDAP) plus an indirect reseller relationship or a Delegated Admin Privileges (DAP) relationship is required to onboard customers to Lighthouse. We recommend establishing GDAP with your customers to enable more secure delegated access. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Coming soon, customers with GDAP-only relationships (without indirect reseller relationships) will be able to onboard to Lighthouse. For more information on delegated access, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business license and no more than 2500 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Overview of the Tenants page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).
+
+          If GDAP is established with the customer, an MSP technician must be in a GDAP-enabled security group that is assigned the appropriate roles to be able to manage that customer's data in Lighthouse. GDAP roles assigned to that security group impact which customer data can be managed within Lighthouse. See [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) for details on which delegated and partner tenant roles are recommended to use Lighthouse. For instructions on how to view which GDAP roles have been assigned to you for different customer tenants in Lighthouse, see [View your Azure Active Directory roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md).   
+         
       - question: What if I don't want to see certain tenants in Microsoft 365 Lighthouse?
         answer: |
           If you don't want to see certain tenants and their data in Lighthouse, you can inactivate those tenants. To inactivate a tenant, follow these steps:
           
-          1. Select **Tenants** from the left navigation pane to open the **Tenants** page.
-          1. Find the tenant that you want to inactivate, select the three dots next to the tenant name, and then select **Inactivate tenant**.
-          1. In the confirmation message that appears, select **Confirm** to inactivate the tenant.
+          1. Select **Tenants** in the left navigation pane to open the **Tenants** page.
+          1. Find the tenant that you want to inactivate, select the three dots (more actions) next to the tenant name, and then select **Inactivate tenant**.
+          1. In the confirmation dialog, select **Confirm** to inactivate the tenant.
               > [!NOTE]
               > Once you inactivate a tenant, you can't take action on the tenant until inactivation is complete. It may take up to 48 hours for inactivation to complete.
           
           To learn more about tenants, see [Microsoft 365 Lighthouse tenants page overview](m365-lighthouse-tenants-page-overview.md).
 
-      - question: Will Microsoft 365 Lighthouse work if my customer tenants have other subscriptions besides Microsoft 365 Business Premium or Microsoft 365 E3?
+      - question: Will Microsoft 365 Lighthouse work if my customer tenants have other subscriptions besides Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business?
         answer: |
-          Lighthouse helps you manage customer tenants that have Microsoft 365 Business Premium or Microsoft 365 E3 licenses in place for their users. For users in customer tenants who don't have Business Premium or E3 licenses, Lighthouse functionality will be limited. For example, if a user is missing a license that includes Intune, that user's devices, device compliance status, and threats status will be unavailable; and if a user is missing a license that includes Azure AD P1, that user's password and sign-in management will be unavailable. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+          Lighthouse helps you manage customer tenants that have at least one Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business license. Lighthouse capabilities will vary based on the licenses assigned to the user. For example, if a user is missing a license that includes Intune, that user's devices, device compliance status, and threats status will be unavailable; and if a user is missing a license that includes Azure AD P1, that user's password and sign-in management will be unavailable. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
       - question: How do I qualify to manage customer Cloud PCs in Microsoft 365 Lighthouse?
         answer: |
@@ -91,7 +90,7 @@ sections:
           
       - question: How do I get help and support?
         answer: |
-          In Lighthouse, select the **?** icon at the top of the portal to open the **Help** pane. From here you can access self-help articles or contact support. For more information about help and support options, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+          In Lighthouse, select the **?** icon at the top of the portal to open the **Help** pane. From here, select **Help + support** to access self-help articles or contact support. For more information about help and support options, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
           
       - question: Where can I submit feedback and ideas?
         answer: |

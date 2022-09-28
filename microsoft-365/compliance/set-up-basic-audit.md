@@ -1,9 +1,9 @@
 ---
-title: "Set up Basic Audit in Microsoft 365"
+title: "Set up Audit (Standard) in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -11,36 +11,39 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-audit
 - m365initiative-compliance
 - m365solution-scenario
+- highpri
+- audit
 ms.custom: admindeeplinkEXCHANGE
 search.appverid: 
 - MOE150
 - MET150
-description: "This article describes how to set up Basic Audit so you can start searching for auditing activities performed by users and admins in your organization."
+description: "This article describes how to set up Audit (Standard) so you can start searching for auditing activities performed by users and admins in your organization."
 ---
 
-# Set up Basic Audit in Microsoft 365
+# Set up Microsoft Purview Audit (Standard)
 
-Basic Audit in Microsoft 365 lets you search for audit records for activities performed in the different Microsoft 365 services by users and admins. Because Basic Audit is enabled by default for most Microsoft 365 and Office 365 organizations, there's only a few things you need to do before you and others in your organization can search the audit log.
+Microsoft Purview Audit (Standard) in Microsoft 365 lets you search for audit records for activities performed in the different Microsoft 365 services by users and admins. Because Audit (Standard) is enabled by default for most Microsoft 365 and Office 365 organizations, there's only a few things you need to do before you and others in your organization can search the audit log.
 
-This article discusses the following steps necessary to set up Basic Audit.
+This article discusses the following steps necessary to set up Audit (Standard).
 
-![Steps to set up Basic Audit.](../media/BasicAuditingWorkflow.png)
+![Steps to set up Audit (Standard).](../media/BasicAuditingWorkflow.png)
 
 These steps include ensuring the proper organizational subscriptions and user licensing required to generate and preserve audit records and assigning permissions to team members of your security operations, IT, compliance, and legal teams so that can search the audit log.
 
-For more information, see [Basic Audit in Microsoft 365](auditing-solutions-overview.md#basic-audit).
+For more information, see [Audit (Standard) in Microsoft 365](auditing-solutions-overview.md#audit-standard).
 
 ## Step 1: Verify organization subscription and user licensing
 
-Licensing for Basic Audit requires the appropriate organization subscription that provides access to audit log search tool and per-user licensing that's required to log and retain audit records.
+Licensing for Audit (Standard) requires the appropriate organization subscription that provides access to audit log search tool and per-user licensing that's required to log and retain audit records.
 
-When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for your organization. In Basic Audit, audit records are retained and searchable in the audit log for 90 days.
+When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for your organization. In Audit (Standard), audit records are retained and searchable in the audit log for 90 days.
 
-For a list of subscription and licensing requirements for Basic Audit, see [Auditing solutions in Microsoft 365](auditing-solutions-overview.md#licensing-requirements).
+For a list of subscription and licensing requirements for Audit (Standard), see [Auditing solutions in Microsoft 365](auditing-solutions-overview.md#licensing-requirements).
 
 ## Step 2: Assign permissions to search the audit log
 
@@ -52,11 +55,11 @@ The following screenshot shows the two audit-related roles assigned to the Organ
 
 ## Step 3: Search the audit log
 
-Now you're ready to search the audit log in the Microsoft 365 compliance center.
+Now you're ready to search the audit log in the Microsoft Purview compliance portal.
 
 1. Go to <https://compliance.microsoft.com> and sign in using an account that has been assigned the appropriate audit permissions.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all** and then click **Audit**.
+2. In the left navigation pane of the compliance portal, click **Show all** and then click **Audit**.
 
 3. On the **Audit** page, configure the search using the following conditions on the **Search** tab. 
 

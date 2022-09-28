@@ -1,29 +1,31 @@
 ---
-title: "Troubleshoot AzCopy in Advanced eDiscovery"
+title: "Troubleshoot AzCopy in eDiscovery (Premium)"
+description: Troubleshoot errors for Azure AzCopy when loading non-Office 365 data for error remediation in eDiscovery (Premium).
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: troubleshooting
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: Troubleshoot errors for Azure AzCopy when loading non-Office 365 data for error remediation in Advanced eDiscovery.
 ms.custom: 
  - seo-marvel-mar2020
  - seo-marvel-apr2020
 ---
 
-# Troubleshoot AzCopy in Advanced eDiscovery
+# Troubleshoot AzCopy in eDiscovery (Premium)
 
-When loading non-Microsoft 365 data or documents for error remediation in Advanced eDiscovery, the user interface supplies an Azure AzCopy command that contains parameters with the location of where the files that you want to upload are stored and the Azure storage location that the files will be uploaded to. To upload your documents, you copy this command and then run it in a Command Prompt on your local computer.  The follow screenshot shows an example of an AzCopy command:
+When loading non-Microsoft 365 data or documents for error remediation in Microsoft Purview eDiscovery (Premium), the user interface supplies an Azure AzCopy command that contains parameters with the location of where the files that you want to upload are stored and the Azure storage location that the files will be uploaded to. To upload your documents, you copy this command and then run it in a Command Prompt on your local computer.  The follow screenshot shows an example of an AzCopy command:
 
 ![Upload non-Microsoft 365 files.](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 
@@ -31,7 +33,7 @@ Usually the command that's provided works when you run it. However, there may be
 
 ## The supported version of AzCopy isn't installed on the local computer
 
-At this time, you must use AzCopy v8.1 to load non-Microsoft 365 data in Advanced eDiscovery. The AzCopy command that's displayed on the **Upload files** page shown in the previous screenshot returns an error if you're not using AzCopy v8.1. To install this version, see [Transfer data with the AzCopy v8.1 on Windows](/previous-versions/azure/storage/storage-use-azcopy).
+At this time, you must use AzCopy v8.1 to load non-Microsoft 365 data in eDiscovery (Premium). The AzCopy command that's displayed on the **Upload files** page shown in the previous screenshot returns an error if you're not using AzCopy v8.1. To install this version, see [Transfer data with the AzCopy v8.1 on Windows](/previous-versions/azure/storage/storage-use-azcopy).
 
 ## AzCopy isn't installed on the local computer or it's not installed in the default location
 

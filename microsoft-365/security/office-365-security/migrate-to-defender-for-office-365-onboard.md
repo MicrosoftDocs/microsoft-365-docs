@@ -13,12 +13,13 @@ search.appverid:
   - MET150
   - MOE150
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-defender-office365
+  - m365-security
+  - m365solution-mdo-migration
+  - highpri
 ms.custom: migrationguides
 description: "Complete the steps for migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Migrate to Microsoft Defender for Office 365 - Phase 3: Onboard
@@ -28,7 +29,7 @@ ms.prod: m365-security
 
 <br>
 
-|[![Phase 1: Prepare.](../../media/phase-diagrams/prepare.png)](migrate-to-defender-for-office-365-prepare.md) <br> [Phase 1: Prepare](migrate-to-defender-for-office-365-prepare.md)|[![Phase 2: Set up.](../../media/phase-diagrams/setup.png)](migrate-to-defender-for-office-365-setup.md) <br> [Phase 2: Set up](migrate-to-defender-for-office-365-setup.md)|![Phase 3: Onboard.](../../media/phase-diagrams/onboard.png) <br> Phase 3: Onboard|
+|[![Phase 1: Prepare.](../../media/phase-diagrams/prepare.png#lightbox)](migrate-to-defender-for-office-365-prepare.md) <br> [Phase 1: Prepare](migrate-to-defender-for-office-365-prepare.md)|[![Phase 2: Set up.](../../media/phase-diagrams/setup.png#lightbox)](migrate-to-defender-for-office-365-setup.md) <br> [Phase 2: Set up](migrate-to-defender-for-office-365-setup.md)|![Phase 3: Onboard.](../../media/phase-diagrams/onboard.png) <br> Phase 3: Onboard|
 |---|---|---|
 |||*You are here!*|
 
@@ -74,7 +75,7 @@ If your organization does not have a security response team or existing process 
 Permissions in Defender for Office 365 is based on role-based access control (RBAC) and is explained in Permissions in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md). These are the important points to keep in mind:
 
 - Azure AD roles give permissions to **all** workloads in Microsoft 365. For example, if you add a user to the Security Administrator in the Azure portal, they have Security Administrator permissions everywhere.
-- Email & collaboration roles in the Microsoft 365 Defender portal give permissions to the Microsoft 365 Defender Portal, the Microsoft 365 compliance center, and the older Security & Compliance Center. For example, if you add a user to Security Administrator in the Microsoft 365 Defender portal, they have Security Administrator access **only** in the Microsoft 365 Defender Portal, the Microsoft 365 compliance center, and the Security & Compliance Center.
+- Email & collaboration roles in the Microsoft 365 Defender portal give permissions to the Microsoft 365 Defender Portal, the Microsoft Purview compliance portal, and the older Security & Compliance Center. For example, if you add a user to Security Administrator in the Microsoft 365 Defender portal, they have Security Administrator access **only** in the Microsoft 365 Defender Portal, the Microsoft Purview compliance portal, and the Security & Compliance Center.
 - Many features in the Microsoft 365 Defender portal are based on Exchange Online PowerShell cmdlets and therefore require role group membership in the corresponding roles (technically, role groups) in Exchange Online (in particular, for access to the corresponding Exchange Online PowerShell cmdlets).
 - There are Email & collaboration roles in the Microsoft 365 Defender portal that have no equivalent to Azure AD roles, and are important for security operations (for example the Preview role and the Search and Purge role).
 
@@ -170,7 +171,7 @@ As you find and fix issues, you can add more users to the pilot groups (and corr
   - Filter in Threat Explorer to identify the messages.
   - Filter in Advanced Hunting to identify the messages.
 
-  Report any false positives to Microsoft as early as possible through admin submissions, use the [Tenant Allow/Block List](tenant-allow-block-list.md) feature to configure safe overrides for those false positives.
+  Report any false positives to Microsoft as early as possible through admin submissions, use the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) feature to configure safe overrides for those false positives.
 
 - It's also a good idea to examine unnecessary overrides. In other words, look at the verdicts that Microsoft 365 would have provided on the messages. If Microsoft365  rendered the correct verdict, then the need for override is greatly diminished or eliminated.
 
@@ -196,20 +197,13 @@ You can pause at this stage for more large-scale data recording and tuning.
 > [!NOTE]
 >
 > - When you switch the MX record for your domain, it can take up to 48 hours for the changes to propagate throughout the internet.
->
 > - We recommend lowering the TTL value of your DNS records to enable faster response and possible rollback (if required). You can revert to the original TTL value after the switchover is complete and verified.
->
 > - You should consider starting with changing domains that are used less frequently. You can pause and monitor before moving to larger domains. However, even if you do this, you still should make sure that all users and domains are covered by policies, because secondary SMTP domains are resolved to primary domains prior to the policy application.
->   
 > - Multiple MX records for a single domain will technically work, allowing you to have split routing, provided that you have followed all the guidance in this article. Specifically, you should make sure that policies are applied to all users, that the SCL=-1 mail flow rule is applied only to mail that passes through your existing protection service as described in [Setup Step 3: Maintain or create the SCL=-1 mail flow rule](migrate-to-defender-for-office-365-setup.md#step-3-maintain-or-create-the-scl-1-mail-flow-rule). However, this configuration introduces behavior that makes troubleshooting much more difficult, and therefore we do not typically recommend it, especially for extended periods of time.
->
 > - Before you switch your MX records, verify that the following settings are not enabled on the inbound connector from the protection service to Microsoft 365. Typically, the connector will have one or more of the following settings configured:
->
 >   - **and require that the subject name on the certificate that the partner uses to authenticate with Office 365 matches this domain name** (*RestrictDomainsToCertificate*)
 >   - **Reject email messages if they aren't sent from within this IP address range** (*RestrictDomainsToIPAddresses*)
->
 >   If the connector type is **Partner** and either of these settings are turned on, all mail delivery to your domains will fail after you switch your MX records. You need to disable these settings before you continue. If the connector is an on-premises connector that's used for hybrid, you don't need to modify the on-premises connector. But, you can still check for the presence of a **Partner** connector.
->   
 > - If your current mail gateway is also providing recipient validation, you may want to check that the domain is configured as [Authoritative](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in Microsoft 365. This can prevent unnecessary bounce messages.
 
 When you're ready, switch the MX record for your domains. You can migrate all of your domains at once. Or, you can migrate less frequently used domains first, and then migrate the rest later.
@@ -222,6 +216,6 @@ Congratulations! You have completed your [migration to Microsoft Defender for Of
 
 Now you begin the normal operation and maintenance of Defender for Office 365. Monitor and watch for issues that are similar to what you experienced during the pilot, but on a larger scale. The [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [impersonation insight](impersonation-insight.md) will be most helpful, but consider making the following activities a regular occurrence:
 
-- Review user submissions, especially [user-reported phishing messages](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)
+- Review user submissions, especially [user-reported phishing messages](automated-investigation-response-office.md)
 - Review overrides in the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
 - Use [Advanced Hunting](/microsoft-365/security/defender/advanced-hunting-example) queries to look for tuning opportunities and risky messages.

@@ -10,10 +10,12 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-ms.custom: 
+ms.custom:
+- VSBFY23 
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -24,7 +26,7 @@ ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: "Learn how to add a Microsoft 365 user or contact such as an employee, partner, or vendor to an email distribution group."
 ---
 
-# Add a user or contact to a distribution group
+# Add a user or contact to a Microsoft 365 distribution group
 
 As the admin of an organization, you may need to add one of your users or contacts to a distribution group (see [Create distribution groups in Microsoft 365](../setup/create-distribution-lists.md). For example, you can add employees or external partners or vendors to an email distribution group.
   

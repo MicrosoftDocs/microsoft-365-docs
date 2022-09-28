@@ -15,28 +15,31 @@ search.appverid:
   - MET150
 ms.assetid: 
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
 description: Learn about Campaign Views in Microsoft Defender for Office 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Campaign Views in Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-Campaign Views is a feature in Microsoft Defender for Office 365 Plan 2 (for example, Microsoft 365 E5 or organizations with an Defender for Office 365 Plan 2 add-on). Campaign Views in the Microsoft 365 Defender portal identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
+Campaign Views is a feature in Microsoft Defender for Office 365 Plan 2 (for example, Microsoft 365 E5 or organizations with a Defender for Office 365 Plan 2 add-on). Campaign Views in the Microsoft 365 Defender portal identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
 
 - Efficiently investigate and respond to phishing attacks.
 - Better understand the scope of the attack.
 - Show value to decision makers.
 
 Campaign Views lets you see the big picture of an attack faster and more complete than any human.
+
+Watch this short video on how campaign views in Microsoft Defender for Office 365 help you understand attack campaigns targeting your organization.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGBL8]
 
 ## What is a campaign?
 
@@ -55,7 +58,7 @@ A campaign might be short-lived, or could span several days, weeks, or months wi
 
 Campaign Views is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Campaigns**, or directly at <https://security.microsoft.com/campaigns>.
 
-![Campaigns overview in the Microsoft 365 Defender portal.](../../media/campaigns-overview.png)
+:::image type="content" source="../../media/campaigns-overview.png" alt-text="The Campaigns overview in the Microsoft 365 Defender portal" lightbox="../../media/campaigns-overview.png":::
 
 You can also get to Campaign Views from:
 
@@ -109,7 +112,7 @@ The **Campaign origin** tab shows the message sources on a map of the world.
 
 At the top of the **Campaign** page, there are several filter and query settings to help you find and isolate specific campaigns.
 
-![Campaign filters.](../../media/campaign-filters-and-settings.png)
+:::image type="content" source="../../media/campaign-filters-and-settings.png" alt-text="The Campaign filters" lightbox="../../media/campaign-filters-and-settings.png":::
 
 The most basic filtering that you can do is the start date/time and the end date/time.
 
@@ -188,7 +191,7 @@ At the top of the campaign details view, the following campaign information is a
 - Start date/time and end data/time filters for the campaign flow as described in the next section.
 - An interactive timeline of campaign activity: The timeline shows activity over the entire lifetime of the campaign. You can hover over the data points in the graph to see the amount of detected messages.
 
-![Campaign information.](../../media/campaign-details-campaign-info.png)
+:::image type="content" source="../../media/campaign-details-campaign-info.png" alt-text="The Campaign information" lightbox="../../media/campaign-details-campaign-info.png":::
 
 ### Campaign flow
 
@@ -197,7 +200,7 @@ In the middle of the campaign details view, important details about the campaign
 > [!TIP]
 > The information that's displayed in the flow diagram is controlled by the date range filter in the timeline as described in the previous section.
 
-![Campaign details that don't contain user URL clicks.](../../media/campaign-details-no-recipient-actions.png)
+:::image type="content" source="../../media/campaign-details-no-recipient-actions.png" alt-text="The Campaign details that don't contain user URL clicks" lightbox="../../media/campaign-details-no-recipient-actions.png":::
 
 If you hover over a horizontal band in the diagram, you'll see the number of related messages (for example, messages from a particular source IP, messages from the source IP using the specified sender domain, etc.).
 
@@ -206,10 +209,6 @@ The diagram contains the following information:
 - **Sender IPs**
 - **Sender domains**
 - **Filter verdicts**: Verdict values are related to the available phishing and spam filtering verdicts as described in [Anti-spam message headers](anti-spam-message-headers.md). The available values are described in the following table:
-
-  <br>
-
-  ****
 
   |Value|Spam filter verdict|Description|
   |---|---|---|
@@ -223,7 +222,6 @@ The diagram contains the following information:
   |**User Allow**<sup>\*</sup>|`SFV:SFE`|The message skipped spam filtering because the sender was in a user's Safe Senders list.|
   |**User Block**<sup>\*\*</sup>|`SFV:BLK`|The message was blocked by spam filtering because the sender was in a user's Blocked Senders list.|
   |**ZAP**|n/a|[Zero-hour auto purge (ZAP)](zero-hour-auto-purge.md) moved the delivered message to the Junk Email folder or quarantine. You configure the action in [anti-spam policies](configure-your-spam-filter-policies.md).|
-  |
 
   <sup>\*</sup> Review your anti-spam policies, because the allowed message would have likely been blocked by the service.
 

@@ -1,9 +1,9 @@
 ---
-title: "About registration numbers and under review notifications"
+title: "About registration numbers and under-review notifications"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
@@ -15,9 +15,9 @@ ms.collection:
 - Adm_O365
 search.appverid: MET150
 ms.custom: 
+- commerce_purchase
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_purchase
 description: "Learn about registration numbers and under-review notifications when you buy Microsoft products or services."
 ms.date: 02/02/2022
 ---

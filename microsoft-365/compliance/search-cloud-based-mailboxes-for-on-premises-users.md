@@ -1,22 +1,24 @@
 ---
 title: "Search for Teams chat data for on-premises users"
+description: "Admins can use eDiscovery tools in Microsoft 365 to search for and export Teams chat data for on-premises users in an Exchange hybrid deployment."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MST160
 - MET150
-ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
-description: "Admins can use eDiscovery tools in Microsoft 365 to search for and export Teams chat data for on-premises users in an Exchange hybrid deployment."
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -39,7 +41,7 @@ Here are the requirements and limitations for enabling cloud-based storage for o
   
 ## How it works
 
-If a Microsoft Teams-enabled user has an on-premises mailbox and their user account/identity has been synched to the cloud, Microsoft creates cloud-based storage to associate the on-premises user's 1xN Teams chat data with. Teams chat data for on-premises users is indexed for search. This lets you Use Content search (and searches associated with Core eDiscovery and Advanced eDiscovery cases) to search, preview, and export Teams chat data for on-premises users. You can also use **\*ComplianceSearch** cmdlets in Security & Compliance Center PowerShell to search for Teams chat data for on-premises users.
+If a Microsoft Teams-enabled user has an on-premises mailbox and their user account/identity has been synched to the cloud, Microsoft creates cloud-based storage to associate the on-premises user's 1xN Teams chat data with. Teams chat data for on-premises users is indexed for search. This lets you Use Content search (and searches associated with Microsoft Purview eDiscovery (Standard) and Microsoft Purview eDiscovery (Premium) cases) to search, preview, and export Teams chat data for on-premises users. You can also use **\*ComplianceSearch** cmdlets in Security & Compliance PowerShell to search for Teams chat data for on-premises users.
   
 The following graphic shows the workflow of how Teams chat data for on-premises users is available to search, preview, and export.
   
@@ -49,9 +51,9 @@ In addition to this capability, you can also use eDiscovery tools to search, pre
 
 ## Searching for Teams chat content for on-premises users
 
-Here's how to use Content search in the Microsoft 365 compliance center to search for Teams chat data for on-premises users. You can also use the search tool in Core eDiscovery to search for chat data for on-premises users.
+Here's how to use Content search in the Microsoft Purview compliance portal to search for Teams chat data for on-premises users. You can also use the search tool in eDiscovery (Standard) to search for chat data for on-premises users.
   
-1. In the Microsoft 365 compliance center, go to **Content search**.
+1. In the compliance portal, go to **Content search**.
 
 2. On the **Searches** tab, click **New search**, and name the new search.
 
@@ -79,9 +81,9 @@ Here's how to use Content search in the Microsoft 365 compliance center to searc
 
 ## Using PowerShell to search for Teams chat data for on-premises users
 
-You can use the **New-ComplianceSearch** cmdlets in Security & Compliance Center PowerShell to search for Teams chat data for on-premises users. As previously explained, you don't have to submit a support request to use PowerShell to search for Teams chat data for on-premises users.
+You can use the **New-ComplianceSearch** cmdlets in Security & Compliance PowerShell to search for Teams chat data for on-premises users. As previously explained, you don't have to submit a support request to use PowerShell to search for Teams chat data for on-premises users.
   
-1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Run the following PowerShell command to create a content search that searches for Teams chat data for on-premises users.
 
@@ -107,7 +109,7 @@ For more information using these cmdlets, see:
 
 ## Known issues
 
-- Currently, you can search, preview, and export Teams chat data for on-premises users. You can also place the Teams chat data for an on-premises user on a hold associated with a Core or Advanced eDiscovery case, and apply a retention policy for Teams chats or channel messages for on-premises users. However at this time, you can't apply a retention policy for other content locations (such as Exchange mailboxes and SharePoint sites) for on-premises users.
+- Currently, you can search, preview, and export Teams chat data for on-premises users. You can also place the Teams chat data for an on-premises user on a hold associated with a Core or eDiscovery (Premium) case, and apply a retention policy for Teams chats or channel messages for on-premises users. However at this time, you can't apply a retention policy for other content locations (such as Exchange mailboxes and SharePoint sites) for on-premises users.
 
 ## Frequently asked questions
 

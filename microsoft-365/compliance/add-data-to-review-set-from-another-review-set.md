@@ -1,21 +1,23 @@
 ---
-title: "Add data from one review set to another review set"
+title: "Add data from one review set to another"
+description: "Learn how to select documents from one review set and work with them individually in another set in an Microsoft Purview eDiscovery (Premium) case."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 04/05/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: "Learn how to select documents from one review set and work with them individually in another set in an Advanced eDiscovery case."
 ms.custom: 
 - seo-marvel-mar2020
 - seo-marvel-apr2020

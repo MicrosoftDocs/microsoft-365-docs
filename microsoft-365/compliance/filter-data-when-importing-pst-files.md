@@ -1,29 +1,31 @@
 ---
 title: "Filter data when importing PST files"
+description: "Learn how to filter data using the intelligent import feature in the Microsoft 365 import service when you import PST files to Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- import
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-description: "Learn how to filter data using the intelligent import feature in the Microsoft 365 import service when you import PST files to Microsoft 365."
 ---
 
 # Filter data when importing PST files
+
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Use the new Intelligent Import feature in the Microsoft 365 Import service to filter the items in PST files that actually get imported to the target mailboxes. Here's how it works:
   
@@ -61,9 +63,9 @@ The following graphic shows the Intelligent Import process, and highlights the t
 
 After you've created a PST import job, follow these steps to filter the data before you import it to Office 365.
   
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in using the credentials for an administrator account in your organization.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in using the credentials for an administrator account in your organization.
     
-2. In the left pane of the Microsoft 365 compliance center, click **Information governance** \> **Import**.
+2. In the left pane of the compliance portal, click **Data lifecycle management** \> **Microsoft 365** \> **Import**.
     
     The import jobs for your organization are listed on the **Import** tab. The **Analysis completed** value in the **Status** column indicates the import jobs that have been analyzed by Microsoft 365 and are ready for you to import.
     

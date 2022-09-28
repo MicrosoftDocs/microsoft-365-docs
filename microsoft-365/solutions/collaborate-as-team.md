@@ -5,8 +5,9 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection: 
+- highpri
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection
@@ -16,6 +17,7 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
@@ -28,6 +30,9 @@ If you need to collaborate with guests across documents, tasks, and conversation
 
 In this article, we'll walk through the Microsoft 365 configuration steps necessary to set up a team for collaboration with guests. Once you have configured guest access, you can invite guests to teams by following the steps in [Add guests to a team in Teams](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f).
 
+> [!NOTE]
+> [Shared channels](collaborate-teams-direct-connect.md) offers a more seamless experience than guest accounts when collaborating with other Microsoft 365 organizations. Shared channels allow you to collaborate with people outside your organization using Teams channels without the need for external participants to sign in to your organization. We recommend you review [Plan external collaboration](plan-external-collaboration.md) to see if shared channels is a better options than collaborating with guests for any given scenario.
+
 ## Video demonstration
 
 This video shows the configuration steps described in this document.</br>
@@ -38,7 +43,7 @@ This video shows the configuration steps described in this document.</br>
 
 Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
 
-Check the B2B external collaboration settings settings to ensure that sharing with guests is not blocked.
+Check the B2B external collaboration settings to ensure that sharing with guests is not blocked.
 
 ![Screenshot of Azure Active Directory Organizational Relationships Settings page.](../media/azure-ad-organizational-relationships-settings.png)
 
@@ -105,10 +110,10 @@ If you want to allow file and folder sharing with unauthenticated people, choose
 
 To set SharePoint organization-level sharing settings
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, in the left navigation pane, under **Admin centers**, click **SharePoint**.
-2. In the SharePoint admin center, in the left navigation pane, expand **Policies** and then click **Sharing**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, in the left navigation pane, under **Admin centers**, select **SharePoint**.
+2. In the SharePoint admin center, in the left navigation pane, expand **Policies** and then select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
 3. Ensure that external sharing for SharePoint is set to **Anyone** or **New and existing guests**.
-4. If you made changes, click **Save**.
+4. If you made changes, select **Save**.
 
 
 ## SharePoint organization-level default link settings
@@ -128,9 +133,9 @@ Choose any one of the following link-types which will be selected by default whe
 
 To set the SharePoint organization-level default link settings
 
-1. Navigate to the Sharing page in the SharePoint admin center.
+1. Go to <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a> in the SharePoint admin center.
 2. Under **File and folder links**, select the default sharing link that you want to use.
-3. If you made changes, click **Save**.
+3. If you made changes, select **Save**.
 
 ## Create a team
 
@@ -153,11 +158,11 @@ Check the site-level sharing settings to make sure that they allow the type of a
 ![Screenshot of SharePoint site external sharing settings.](../media/sharepoint-site-external-sharing-settings.png)
 
 To set site-level sharing settings
-1. In the SharePoint admin center, in the left navigation pane, expand **Sites** and click **Active sites**.
+1. In the SharePoint admin center, in the left navigation pane, expand **Sites** and select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
 2. Select the site for the team that you just created.
-3. Click ... and choose **Sharing**.
+3. Select ... and choose **Sharing**.
 4. Ensure that sharing is set to **Anyone** or **New and existing guests**.
-5. If you made changes, click **Save**.
+5. If you made changes, select **Save**.
 
 ## Invite users
 
@@ -189,5 +194,3 @@ To invite guests to a team
 [Create a B2B extranet with managed guests](b2b-extranet.md)
 
 [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)
-
-[Sharing options are greyed out when sharing from SharePoint or OneDrive](/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

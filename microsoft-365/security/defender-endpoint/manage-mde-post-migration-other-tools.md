@@ -2,8 +2,8 @@
 title: Manage Microsoft Defender for Endpoint using PowerShell, WMI, and MPCmdRun.exe
 description: Learn how to manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe
 keywords: post-migration, manage, operations, maintenance, utilization, PowerShell, WMI, MPCmdRun.exe, Microsoft Defender for Endpoint, edr
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365solution-scenario
+  - m365-security
+
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 11/29/2021
 ms.reviewer: chventou
+search.appverid: met150
 ---
 
 # Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe
@@ -32,7 +32,6 @@ ms.reviewer: chventou
 
 > [!NOTE]
 > We recommend using [Microsoft Endpoint Manager](/mem) to manage your organization's threat protection features for devices (also referred to as endpoints). Endpoint Manager includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction).
->
 > - [Learn more about Endpoint Manager](/mem/endpoint-manager-overview)
 > - [Co-manage Microsoft Defender for Endpoint on Windows 10 and Windows 11 devices with Configuration Manager and Intune](manage-mde-post-migration-intune.md)
 > - [Manage Microsoft Defender for Endpoint with Intune](manage-mde-post-migration-intune.md)
@@ -44,13 +43,13 @@ You can manage some Microsoft Defender Antivirus settings on devices with [Power
 
 ## Configure Microsoft Defender for Endpoint with PowerShell
 
-You can use PowerShell to manage Microsoft Defender Antivirus, exploit protection, and your attack surface reduction rules.<br/><br/>
+You can use PowerShell to manage Microsoft Defender Antivirus, exploit protection, and your attack surface reduction rules.
 
 |Task|Resources to learn more|
 |---|---|
 |**Manage Microsoft Defender Antivirus** <br/><br/> View status of antimalware protection, configure preferences for antivirus scans & updates, and make other changes to your antivirus protection.*|[Use PowerShell cmdlets to configure and manage Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus) <br/><br/> [Use PowerShell cmdlets to enable cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-powershell-cmdlets-to-enable-cloud-delivered-protection)|
 |**Configure exploit protection** to mitigate threats on your organization's devices <br/><br/> *We recommend using exploit protection in [audit mode](/microsoft-365/security/defender-endpoint/evaluate-exploit-protection#powershell) at first. That way, you can see how exploit protection affects apps your organization is using.*|[Customize exploit protection](/microsoft-365/security/defender-endpoint/customize-exploit-protection) <br/><br/> [PowerShell cmdlets for exploit protection](/microsoft-365/security/defender-endpoint/customize-exploit-protection#powershell-reference)|
-|**Configure attack surface reduction rules** with PowerShell <br/><br/> *You can use PowerShell to exclude files and folders from attack surface reduction rules.*|[Customize attack surface reduction rules: Use PowerShell to exclude files & folders](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders) <br/><br/> Also, see [António Vasconcelo's graphical user interface tool for setting attack surface reduction rules with PowerShell](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI).|
+|**Configure attack surface reduction rules** with PowerShell <br/><br/> *You can use PowerShell to exclude files and folders from attack surface reduction rules.*|[Customize attack surface reduction rules: Use PowerShell to exclude files & folders](/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction) <br/><br/> Also, see [António Vasconcelo's graphical user interface tool for setting attack surface reduction rules with PowerShell](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI).|
 |**Enable Network Protection** with PowerShell <br/><br/> *You can use PowerShell to enable Network Protection.*|[Turn on Network Protection with PowerShell](/microsoft-365/security/defender-endpoint/enable-network-protection#powershell)|
 |**Configure controlled folder access** to protect against ransomware <br/><br/> *[Controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders) is also referred to as antiransomware protection.*|[Enable controlled folder access with PowerShell](/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell)|
 |**Configure Microsoft Defender Firewall** to block unauthorized network traffic flowing into or out of your organization's devices|[Microsoft Defender Firewall with Advanced Security Administration using Windows PowerShell](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell)|
@@ -78,13 +77,9 @@ If you haven't already done so, configure your <a href="https://go.microsoft.com
 You can also configure whether and what features end users can see in the Microsoft Defender Security Center.
 
 - [Overview of the Microsoft Defender Security Center](/microsoft-365/security/defender-endpoint/use)
-
 - [Endpoint protection: Microsoft Defender Security Center](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 ## Next steps
 
-- [Get an overview of threat and vulnerability management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-
-- [Visit the Microsoft Defender Security Center security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
-
+- [Get an overview of Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Manage Microsoft Defender for Endpoint with Intune](manage-mde-post-migration-intune.md)

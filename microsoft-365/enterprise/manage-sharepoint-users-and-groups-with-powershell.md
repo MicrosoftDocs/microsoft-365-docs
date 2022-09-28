@@ -2,11 +2,11 @@
 title: "Manage SharePoint Online users and groups with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/17/2020
 audience: Admin
-ms.topic: hub-page
-ms.service: o365-administration
+ms.topic: landing-page
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -26,9 +26,9 @@ description: In this article, learn how to use PowerShell for Microsoft 365 to m
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-If you are a SharePoint Online administrator who works with large lists of user accounts or groups and wants an easier way to manage them, you can use PowerShell for Microsoft 365.
+If you're a SharePoint Online administrator who works with large lists of user accounts or groups and wants an easier way to manage them, you can use PowerShell for Microsoft 365.
 
-Before you begin, the procedures in this topic require you to connect to SharePoint Online. For instructions, see [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+Before you begin, the procedures in this article require you to connect to SharePoint Online. For instructions, see [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 ## Get a list of sites, groups, and users
 
@@ -125,11 +125,11 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 ## Remove users from a group
 
-Sometimes you have to remove a user from a site or even all sites. Perhaps the employee moves from one division to another or leaves the company. You can do this for one employee easily in the UI, but this is not easily done when you have to move a complete division from one site to another.
+Sometimes you have to remove a user from a site or even all sites. Perhaps the employee moves from one division to another or leaves the company. You can do this for one employee easily in the UI, but this isn't easily done when you have to move a complete division from one site to another.
 
 However by using the SharePoint Online Management Shell and CSV files, this is fast and easy. In this task, you'll use Windows PowerShell to remove a user from a site collection security group. Then you'll use a CSV file and remove lots of users from different sites.
 
-We'll be using the 'Remove-SPOUser' cmdlet to remove a single Microsoft 365 user from a site collection group just so we can see the command syntax. Here is how the syntax looks:
+We'll be using the 'Remove-SPOUser' cmdlet to remove a single Microsoft 365 user from a site collection group so we can see the command syntax. Here's how the syntax looks:
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -149,7 +149,7 @@ $group = "Auditors"
 Remove-SPOUser -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
 ```
 
-Suppose we wanted to remove Bobby from all the groups he is currently in. Here is how we would do that:
+Suppose we wanted to remove Bobby from all the groups he's currently in. Here's how we would do that:
 
 ```powershell
 $tenant = "contoso"
@@ -162,11 +162,11 @@ Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUse
 
 ## Automate management of large lists of users and groups
 
-To add a large number of accounts to SharePoint sites and give them permissions, you can use the Microsoft 365 admin center, individual PowerShell commands, or PowerShell an a CSV file. Of these choices, the CSV file is the fastest way to automate this task.
+To add a large number of accounts to SharePoint sites and give them permissions, you can use the Microsoft 365 admin center, individual PowerShell commands, or PowerShell and a CSV file. Of these choices, the CSV file is the fastest way to automate this task.
 
 The basic process is to create a CSV file that has headers (columns) that correspond to the parameters that the Windows PowerShell script needs. You can easily create such a list in Excel and then export it as a CSV file. Then, you use a Windows PowerShell script to iterate through records (rows) in the CSV file, adding the users to groups and the groups to sites.
 
-For example, let's create a CSV file to define a group of site collections, groups, and permissions. Next, we will create a CSV file to populate the groups with users. Finally, we will create and run a simple Windows PowerShell script that creates and populates the groups.
+For example, let's create a CSV file to define a group of site collections, groups, and permissions. Next, we'll create a CSV file to populate the groups with users. Finally, we'll create and run a Windows PowerShell script that creates and populates the groups.
 
 The first CSV file will add one or more groups to one or more site collections and will have this structure:
 
@@ -182,7 +182,7 @@ Item:
 https://tenant.sharepoint.com/sites/site,group,level
 ```
 
-Here is an example file:
+Here's an example file:
 
 ```powershell
 Site,Group,PermissionLevels
@@ -210,7 +210,7 @@ Item:
 group,login,https://tenant.sharepoint.com/sites/site
 ```
 
-Here is an example file:
+Here's an example file:
 
 ```powershell
 Group,LoginName,Site
@@ -231,9 +231,9 @@ Import-Csv C:\O365Admin\GroupsAndPermissions.csv | ForEach {New-SPOSiteGroup -Gr
 Import-Csv C:\O365Admin\Users.csv | ForEach {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
 ```
 
-The script imports the CSV file contents and uses the values in the columns to populate the parameters of the **New-SPOSiteGroup** and **Add-SPOUser** commands. In our example, we are saving this to theO365Admin folder on drive C, but you can save it wherever you want.
+The script imports the CSV file contents and uses the values in the columns to populate the parameters of the **New-SPOSiteGroup** and **Add-SPOUser** commands. In our example, we're saving this file to the O365Admin folder on drive C, but you can save it wherever you want.
 
-Now, let's remove a bunch of people for several groups in different sites using the same CSV file. Here is an example command:
+Now, let's remove a bunch of people for several groups in different sites using the same CSV file. Here's an example command:
 
 ```powershell
 Import-Csv C:\O365Admin\Users.csv | ForEach {Remove-SPOUser -LoginName $_.LoginName -Site $_.Site -Group $_.Group}
@@ -241,7 +241,7 @@ Import-Csv C:\O365Admin\Users.csv | ForEach {Remove-SPOUser -LoginName $_.LoginN
 
 ## Generate user reports
 
-You might want to get a simple report for a few sites and display the users for those sites, their permission level, and other properties. This is how the syntax looks:
+You might want to get a report for a few sites and display the users for those sites, their permission level, and other properties. This is how the syntax looks:
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -249,7 +249,7 @@ $site = "<site name>"
 Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | select * | Format-table -Wrap -AutoSize | Out-File c\UsersReport.txt -Force -Width 360 -Append
 ```
 
-This will grab the data for these three sites and write them to a text file on your local drive. Note that the parameter –Append will add new content to an existing file.
+This will grab the data for these three sites and write them to a text file on your local drive. The parameter –Append will add new content to an existing file.
 
 For example, let's run a report on the ContosoTest, TeamSite01, and Project01 sites for the Contoso1 tenant:
 
@@ -263,7 +263,7 @@ $site = "Project01"
 Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
-Note that we had to change only the **$site** variable. The **$tenant** variable keeps its value through all three runs of the command.
+We had to change only the **$site** variable. The **$tenant** variable keeps its value through all three runs of the command.
 
 However, what if you wanted to do this for every site? You can do this without having to type all those websites by using this command:
 

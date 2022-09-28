@@ -1,12 +1,13 @@
 ---
-title: ASR rules deployment prerequisites
-description: Provides overview and prerequisite guidance about deploying attack surface reduction (ASR) rules.
-keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
+title: Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules deployment overview
+description: Provides overview and prerequisite guidance about deploying Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules. Links to topics that show how to plan and ASR deployment, test ASR rules, configure ASR rules, and enable ASR rules.
+keywords: Microsoft Defender for Endpoint (MDE) attack surface reduction rules, ASR rules intune, defender ASR rules, Windows 10 ASR rules, defender asr rules, ASR rules report, microsoft Attack surface reduction rules deployment, ASR rules event viewer, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
@@ -14,17 +15,18 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
-ms.date: 1/18/2022
+ms.collection:  
+ - m365-security
+ - m365solution-asr-rules
+ - highpri
+ms.date: 09/18/2022
+search.appverid: met150
 ---
 
-# ASR rules deployment prerequisites
+# Attack surface reduction (ASR) rules deployment overview
 
-## Before you begin
-
-Attack surfaces are all the places where your organization is vulnerable to cyberthreats and attacks. Your organization's attack surfaces includes all the places where an attacker could compromise your organization's devices or networks. Reducing your attack surface means protecting your organization's devices and network, which leaves attackers with fewer ways to attack. Configuring attack surface reduction (ASR) rules — one of many security features found in Microsoft Defender for Endpoint — can help.
+Attack surfaces are all the places where your organization is vulnerable to cyberthreats and attacks. Reducing your attack surface means protecting your organization's devices and network, which leaves attackers with fewer ways to attack. Configuring Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules can help.
 
 ASR rules target certain software behaviors, such as:
 
@@ -34,16 +36,38 @@ ASR rules target certain software behaviors, such as:
 
 By reducing the different attack surfaces, you can help prevent attacks from happening in the first place.
 
+This deployment collection provides information about the following aspects of MDE ASR rules:
+
+- ASR rules requirements
+- plan for ASR rules deployment
+- test ASR rules
+- configure and enable asr rules
+- attack surface reduction rules best practices
+- ASR rules advanced hunting
+- ASR rules event viewer
+
+## ASR rules deployment steps
+
+As with any new, wide-scale implementation which could potentially impact your line-of-business operations, it is important to be methodical in your planning and implementation. Because of the powerful capabilities of ASR rules in preventing malware, careful planning and deployment of these rules is necessary to ensure they work best for your unique customer workflows. To work in your environment, you need to plan, test, implement, and operationalize ASR rules carefully.  
+
+> :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="Plan Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules, test MDE ASR rules, Enable MDE ASR rules, maintain ASR rules." lightbox="images/asr-rules-deployment-phases.png":::
+
+>[!Note]
+>For Customers who are using a non-Microsoft HIPS and are transitioning to Microsoft Defender for Endpoint attack surface reduction rules:
+>Microsoft advises customers to run their HIPS solution side-by-side with their ASR rules deployment until the moment you shift from Audit to Block mode. Keep in mind that you must reach out to your 3rd-party antivirus vendor for exclusion recommendations.  
+
+## Before you begin testing or enabling ASR rules
+
 During your initial preparation, it's vital that you understand the capabilities of the systems that you'll put in place. Understanding the capabilities will help you determine which ASR rules are most important for protecting your organization. Additionally, there are several prerequisites which you must attend to in preparation of your ASR deployment.
 
 >[!IMPORTANT]
 >This guide provides images and examples to help you decide how to configure ASR rules; these images and examples might not reflect the best configuration options for your environment.
 
-Before you start, review [Overview of attack surface reduction](overview-attack-surface-reduction.md), and [Demystifying attack surface reduction rules - Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) for foundational information. To understand the areas of coverage and potential impact, familiarize yourself with the current set of ASR rules; see [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md).
+Before you start, review [Overview of attack surface reduction](overview-attack-surface-reduction.md), and [Demystifying attack surface reduction rules - Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) for foundational information. To understand the areas of coverage and potential impact, familiarize yourself with the current set of ASR rules; see [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md).  While you are familiarizing yourself with the ASR rules set, take note of the per-rule GUID mappings; see: [ASR rule to GUID matrix](attack-surface-reduction-rules-reference.md#asr-rule-to-guid-matrix).
 
 ASR rules are only one capability of the attack surface reduction capabilities within Microsoft Defender for Endpoint. This document will go into more detail on deploying ASR rules effectively to stop advanced threats like human-operated ransomware and other threats.  
 
-### Rules by category
+### ASR rules list by category
 
 As outlined in [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md), there are multiple attack surface reduction rules within MDE that you can enable to protect your organization. Following are the rules broken out by category:
 
@@ -60,7 +84,7 @@ As outlined in [Use attack surface reduction rules to prevent malware infection]
 
 (<a id="fn1">2</a>) Some ASR rules generate considerable noise, but won't block functionality. For example, if you're updating Chrome; Chrome will access lsass.exe; passwords are stored in lsass on the device. However, Chrome should not be accessing local device lsass.exe. If you enable the rule to block access to lsass, it will generate a lot of events. Those events are good events because the software update process should not access lsass.exe. Enabling this rule will block Chrome updates from accessing lsass, but will not block Chrome from updating; this is also true of other applications that make unnecessary calls to lsass.exe. The _block access to lsass_ rule will block unnecessary calls to lsass, but won't block the application from running.
 
-### Infrastructure requirements
+### ASR infrastructure requirements
 
 Although multiple methods of implementing ASR rules are possible, this guide is based on an infrastructure consisting of:
 
@@ -91,12 +115,12 @@ Microsoft Defender Antivirus must not be in any of the following modes:
 
 See: [Cloud-delivered protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md).
 
-### Cloud Protection (MAPS) must be enabled
+### Cloud Protection (MAPS) must be enabled to enable ASR rules
 
 Microsoft Defender Antivirus works seamlessly with Microsoft cloud services. These cloud protection services, also referred to as Microsoft Advanced Protection Service (MAPS), enhances standard real-time protection, arguably providing the best antivirus defense. Cloud protection is critical to preventing breaches from malware and a critical component of ASR rules.
 [Turn on cloud-delivered protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
 
-### Microsoft Defender Antivirus components must be current versions
+### Microsoft Defender Antivirus components must be current versions for ASR rules
 
 The following Microsoft Defender Antivirus component versions must be no more than two versions older than the most-currently-available version:
 
@@ -108,28 +132,17 @@ Keeping Microsoft Defender Antivirus versions current helps reduce ASR rules fal
 
 ### Caveat
 
-Some rules don’t work well if un-signed, internally developed application and scripts are in high usage. It is more difficult to deploy ASR rules if code signing is not enforced.
-
-## ASR rules deployment steps
-
-As with any new, wide-scale implementation which could potentially impact your line-of-business operations, it is important to be methodical in your planning and implementation. Because of the powerful capabilities of ASR rules in preventing malware, careful planning and deployment of these rules is necessary to ensure they work best for your unique customer workflows. To work in your environment, you need to plan, test, implement, and operationalize ASR rules carefully.  
-
-> [!div class="mx-imgBorder"]
-> ![ASR rules deployment phases](images/asr-rules-deployment-phases.png)
-
->[!Note]
->For Customers who are using a non-Microsoft HIPS and are transitioning to Microsoft Defender for Endpoint attack surface reduction rules:
->Microsoft advises customers to run their HIPS solution side-by-side with their ASR rules deployment until the moment you shift from Audit to Block mode. Keep in mind that you must reach out to your 3rd-party antivirus vendor for exclusion recommendations.  
+Some rules don't work well if un-signed, internally developed application and scripts are in high usage. It is more difficult to deploy ASR rules if code signing is not enforced.
 
 ## Additional topics in this deployment collection
 
-[Phase 1: Plan](attack-surface-reduction-rules-deployment-plan.md)
+[Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
 
-[Phase 2: Test](attack-surface-reduction-rules-deployment-test.md)
+[Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
 
-[Phase 3: Implement](attack-surface-reduction-rules-deployment-implement.md)
+[Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[Phase 4: Operationalize](attack-surface-reduction-rules-deployment-operationalize.md)
+[Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)
 
 ## Reference
 
@@ -143,13 +156,13 @@ As with any new, wide-scale implementation which could potentially impact your l
 
 [Demystifying attack surface reduction rules - Part 4](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-4/ba-p/1384425)
 
-### ASR collection
+### ASR rules collection
 
 [Overview of attack surface reduction](overview-attack-surface-reduction.md)
 
 [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md)
 
-[Enable attack surface reduction rules](enable-attack-surface-reduction.md)
+[Enable attack surface reduction rules - alternate configurations](enable-attack-surface-reduction.md)
 
 [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 

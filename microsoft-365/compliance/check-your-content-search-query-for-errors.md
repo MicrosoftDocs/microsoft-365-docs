@@ -1,11 +1,11 @@
 ---
 title: "Check your search query for errors"
+description: "Learn how to detect errors and typos in your keyword query for eDiscovery searches before running the search."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,15 @@ search.appverid:
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
-description: "Learn how to detect errors and typos in your keyword query for eDiscovery searches before running the search."
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Check your search query for errors
   
-Here's a list of the unsupported characters that we check for in search queries for Content search and Core eDiscovery. Unsupported characters are often hidden, and they typically cause a search error or return unintended results.
+Here's a list of the unsupported characters that we check for in search queries for Content search and Microsoft Purview eDiscovery (Standard). Unsupported characters are often hidden, and they typically cause a search error or return unintended results.
   
 - **Smart quotation marks** - Smart single and double quotation marks (also called curly quotes) aren't supported. Only straight quotation marks can be used in a search query. 
 

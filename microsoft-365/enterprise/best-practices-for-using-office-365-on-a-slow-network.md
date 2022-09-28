@@ -2,11 +2,11 @@
 title: "Best practices for using Office 365 on a slow network"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/29/2016
 audience: End User
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 search.appverid:

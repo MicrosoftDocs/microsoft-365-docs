@@ -1,27 +1,29 @@
 ---
 title: "Use Content Search to search third-party imported data"
+description: Use the Content Search eDiscovery tool to search for items imported to mailboxes in Microsoft 365 from a third-party data source by creating queries.
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- content-search
 ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: Use the Content Search eDiscovery tool to search for items imported to mailboxes in Microsoft 365 from a third-party data source by creating queries.
 ms.custom: seo-marvel-apr2020
 ---
 
 # Use Content Search to search third-party data imported by a custom partner connector
 
-You can use the [Content search eDiscovery tool](content-search.md) in the Microsoft 365 compliance center to search for items imported to mailboxes in Microsoft 365 from a third-party data source. You can create a query to search all imported third-party data items or you can create a query to search specific third-party data items. Also, you can also create a query-based retention policy or a query-based eDiscovery hold to preserve third-party data.
+You can use the [Content search eDiscovery tool](content-search.md) in the Microsoft Purview compliance portal to search for items imported to mailboxes in Microsoft 365 from a third-party data source. You can create a query to search all imported third-party data items or you can create a query to search specific third-party data items. Also, you can also create a query-based retention policy or a query-based eDiscovery hold to preserve third-party data.
   
 For more information about working with a partner to import third-party data and a list of the third-party data types that you can import to Microsoft 365, see [Work with a partner to archive third-party data in Office 365](work-with-partner-to-archive-third-party-data.md).
 

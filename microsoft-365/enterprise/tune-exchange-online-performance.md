@@ -2,11 +2,11 @@
 title: "Tune Exchange Online performance"
 ms.author: krowley
 author: tracyp
-manager: laurawi
+manager: scotv
 ms.date: 12/14/2017
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150

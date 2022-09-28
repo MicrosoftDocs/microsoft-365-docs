@@ -1,28 +1,30 @@
 ---
 title: "Add or remove members from a case"
+description: "Learn how to add or remove the members who can access a case when managing an eDiscovery (Premium) case."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: "Learn how to add or remove the members who can access a case when managing an Advanced eDiscovery case."
 ms.custom: seo-marvel-mar2020
 ---
 # Add or remove members from a case
 
-You can add or remove members to manage who can access the case. However, before a member can access an Advanced eDiscovery case (and perform tasks in the case), you must add the user to the eDiscovery Manager role group on the **Permissions** page in the Microsoft 365 compliance center. For more information, see [Assign eDiscovery permissions](./assign-ediscovery-permissions.md).
+You can add or remove members to manage who can access the case. However, before a member can access an eDiscovery (Premium) case (and perform tasks in the case), you must add the user to the eDiscovery Manager role group on the **Permissions** page in the Microsoft Purview compliance portal. For more information, see [Assign eDiscovery permissions](./assign-ediscovery-permissions.md).
 
-1. On the **Advanced eDiscovery** page, go to the case that you want to add a member to.
+1. On the **eDiscovery (Premium)** page, go to the case that you want to add a member to.
 
 2. Click the **Settings** tab and then click **Select** in the **Access & permissions** tile.
 

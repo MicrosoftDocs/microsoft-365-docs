@@ -11,9 +11,11 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: null
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkDEFENDER
 search.appverid: 
 - MOE150
@@ -73,7 +75,7 @@ This timeline reflects a sample deployment of trainable classifiers.
 
 ### Overall workflow
 
-To understand more about the overall workflow of creating custom trainable classifiers, see [Process flow for creating customer trainable classifiers](classifier-learn-about.md#process-flow-for-creating-custom-classifiers).
+To understand more about the overall workflow of creating custom trainable classifiers, see [Process flow for creating custom trainable classifiers](classifier-learn-about.md#process-flow-for-creating-custom-classifiers).
 
 ### Seed content
 
@@ -101,7 +103,7 @@ Once the trainable classifier has processed enough positive samples to build a p
    > [!TIP]
    > If you create a new site and folder for your seed data, allow at least an hour for that location to be indexed before creating the trainable classifier that will use that seed data.
 
-3. Sign in to Microsoft 365 compliance center with compliance admin or security admin role access and open <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> or <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> > **Data classification**.
+3. Sign in to Microsoft Purview compliance portal with compliance admin or security admin role access and open <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> or <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> > **Data classification**.
 
 4. Choose the **Trainable classifiers** tab.
 

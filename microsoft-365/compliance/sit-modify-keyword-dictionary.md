@@ -11,13 +11,14 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn how to modify a keyword dictionary in the Microsoft 365 Compliance Center."
+description: "Learn how to modify a keyword dictionary in the Microsoft Purview compliance portal."
 ---
 
 # Modify a keyword dictionary

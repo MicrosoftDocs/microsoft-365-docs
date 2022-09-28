@@ -19,7 +19,7 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
-description: "You can create and use a template to save time and standardize settings when you add multiple users."
+description: "You can create and use a template to save time and standardize settings when you add multiple users in the Microsoft 365 admin center."
 ---
 
 # Create and use a template to add users

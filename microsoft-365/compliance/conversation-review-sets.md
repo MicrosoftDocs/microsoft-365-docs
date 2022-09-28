@@ -1,31 +1,32 @@
 ---
-title: "Review conversations in Advanced eDiscovery"
+title: "Review conversations in eDiscovery (Premium)"
+description: "Learn about the conversation reconstruction feature in Microsoft Purview eDiscovery (Premium) (called conversation threading) to reconstruct, review, and export chat conversations in Microsoft Teams and Yammer groups."
+ms.custom: seo-marvel-mar2020
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid:
-description: "Learn about the conversation reconstruction feature in Advanced eDiscovery (called conversation threading) to reconstruct, review, and export chat conversations in Microsoft Teams and Yammer groups."
-ms.custom: seo-marvel-mar2020
 ---
 
-# Conversation threading in Advanced eDiscovery
+# Conversation threading in eDiscovery (Premium)
 
 Instant messaging is a convenient way to ask questions, share ideas, or quickly communicate across large audiences. As instant messaging platforms, like Microsoft Teams and Yammer groups, become core to enterprise collaboration, organizations must evaluate how their eDiscovery workflow addresses these new forms of communication and collaboration.
 
-The conversation reconstruction feature in Advanced eDiscovery is designed to help you identify contextual content and produce distinct conversation views. This capability allows you to efficiently and rapidly review complete instant message conversations (also called *threaded conversations*) that are generated in platforms like Microsoft Teams.
+The conversation reconstruction feature in Microsoft Purview eDiscovery (Premium) is designed to help you identify contextual content and produce distinct conversation views. This capability allows you to efficiently and rapidly review complete instant message conversations (also called *threaded conversations*) that are generated in platforms like Microsoft Teams.
 
-With conversation reconstruction, you can use built-in capabilities to reconstruct, review, and export threaded conversations. Use Advanced eDiscovery conversation reconstruction to:
+With conversation reconstruction, you can use built-in capabilities to reconstruct, review, and export threaded conversations. Use eDiscovery (Premium) conversation reconstruction to:
 
 - Preserve unique message-level metadata across all messages within a conversation.
 
@@ -49,7 +50,7 @@ Here are few definitions to help you get start using conversation reconstruction
 
 ## Step 1: Create a draft collection
 
-After you have identified relevant custodians and content locations, you can create a search to find potentially relevant content. On the **Collections** tab in the Advanced eDiscovery case, you can create a collection by clicking **New collection** and following the wizard. For information about how you can create a collection, build a search query, and preview the search results, see [Create a draft collection](create-draft-collection.md).
+After you have identified relevant custodians and content locations, you can create a search to find potentially relevant content. On the **Collections** tab in the eDiscovery (Premium) case, you can create a collection by clicking **New collection** and following the wizard. For information about how you can create a collection, build a search query, and preview the search results, see [Create a draft collection](create-draft-collection.md).
 
 ## Step 2: Commit a draft collection to a review set
 
@@ -61,7 +62,7 @@ When you add items from conversations to a review set, you can use the threaded 
 
 1. Using a keyword and date range query, the search returned a hit on *Message 3*. This message was part of a larger conversation, illustrated by *CRC1*.
 
-2. When you add the data into a review set and enable the conversation retrieval options, Advanced eDiscovery will go back and collect other items in *CRC1*.
+2. When you add the data into a review set and enable the conversation retrieval options, eDiscovery (Premium) will go back and collect other items in *CRC1*.
 
 3. After the items have been added to the review set, you can review all the individual messages from *CRC1*.
 
@@ -103,7 +104,7 @@ Specifically, you can export entire chat conversations in a single PDF file or y
 
 ## More information
 
-To learn more about how to review case data in Advanced eDiscovery, see the following articles:
+To learn more about how to review case data in eDiscovery (Premium), see the following articles:
 
 - [Query and filter content in a review set](review-set-search.md)
 - [Tag documents in a review set](tagging-documents.md)
