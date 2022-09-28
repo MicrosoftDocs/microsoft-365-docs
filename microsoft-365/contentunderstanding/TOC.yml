@@ -89,7 +89,7 @@
                 - name: Overview 
                   href: freeform-document-processing-overview.md
                 - name: Train your model
-                  href: create-freeform-document-processing-model.md
+                  href: train-freeform-document-processing-model.md
 
             - name: Structured document processing
               items:
