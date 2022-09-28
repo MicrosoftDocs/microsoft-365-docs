@@ -50,17 +50,17 @@ For example, an unstructured document could be a contract renewal letter that ca
 
 Unstructured document processing models are created and managed in a type of SharePoint site called a [content center](create-a-content-center.md). When applied to a SharePoint document library, the model is associated with a content type has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
 
-For more information, see [Overview of unstructured document processing models](document-understanding-overview.md).
+For more information, see [Overview of unstructured document processing](document-understanding-overview.md).
 
 ### Freeform document processing
 
 Use the freeform document processing model to automatically extract information from unstructured and freeform documents such as letters and contracts.
 
-Freeform document processing models also use Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) document processing (formerly called form processing) to create models within SharePoint document libraries. You can use AI Builder document processing to create AI models that use machine learning technology to identify and extract key-value pairs and table data from documents. You can then use Power Automate flows to automatically process the files.
+Freeform document processing models use Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) document processing (formerly called form processing) to create models within SharePoint document libraries. You can use AI Builder document processing to create AI models that use machine learning technology to identify and extract key-value pairs and table data from documents. You can then use Power Automate flows to automatically process the files.
 
 Because your organization receives letters and documents in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text and and other information from these documents, this model automates this process.
 
-For more information, see [Overview of freeform document processing models](freeform-document-processing-overview.md).
+For more information, see [Overview of freeform document processing](freeform-document-processing-overview.md).
 
 ### Structured document processing
 
@@ -70,7 +70,7 @@ Structured document processing models use Microsoft Power Apps [AI Builder](/ai-
 
 These models are trained to understand the layout of your form from example documents, and learn to look for the data you need to extract from similar locations. Forms usually have a more structured layout where entities are in the same location (for example, a social security number in a tax form).
 
-For more information, see [Overview of structured document processing models](form-processing-overview.md).
+For more information, see [Overview of structured document processing](form-processing-overview.md).
 
 ## Prebuilt models
 
