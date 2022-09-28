@@ -17,12 +17,12 @@ description: Learn how to apply a sensitivity label to a model in SharePoint Syn
 
 # Apply a sensitivity label to a model in Microsoft SharePoint Syntex
 
-<sup>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern </sup>
+<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
-You can easily apply a [sensitivity label](../compliance/sensitivity-labels.md) to **Classify and extract by text pattern** models in Microsoft SharePoint Syntex. 
+You can easily apply a [sensitivity label](../compliance/sensitivity-labels.md) to unstructured document processing models in Microsoft SharePoint Syntex. 
 
 > [!Note]
-> Sensitivity labels are not yet available for prebuilt models or **Extract by layout** and  **Extract by text pattern and layout** models.
+> Sensitivity labels are not yet available for prebuilt models or for freeform or structured document processing models.
 
 Sensitivity labels let you apply encryption to the documents that your models identify. For example, you want your model to not only identify any financial documents that contain bank account numbers or credit card numbers that are uploaded to your document library, but also to apply a sensitivity label that's configured with encryption settings to restrict who can access that content and how it can be used. SharePoint Syntex models honor the [label order](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) rules and also don't overwrite an existing label that was manually applied by a user to the file. 
 
@@ -31,7 +31,7 @@ You can apply a pre-existing sensitivity label to your model through your model 
 > [!Important]
 > For sensitivity labels to be available to apply to your models, they need to be [created and published in the Microsoft Purview compliance portal](../admin/security-and-compliance/set-up-compliance.md).
 
-## Add a sensitivity label to a Classify and extract by text pattern model
+## Add a sensitivity label to a model
 
 1. From the model home page, select **Model settings**.
 
@@ -50,7 +50,7 @@ After you apply the sensitivity label to your model, you can apply it to a:
  
 ### Apply the sensitivity label to a document library to which the model is already applied
 
-If your **Classify and extract by text pattern** model has already been applied to a document library, you can do the following to sync your sensitivity label update to apply it to the document library:
+If your model has already been applied to a document library, you can do the following to sync your sensitivity label update to apply it to the document library:
 
 1. On the model home page, in the **Libraries with this model** section, select the document library to which you want to apply the sensitivity label update.
 
