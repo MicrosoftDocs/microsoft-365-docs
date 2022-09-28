@@ -90,13 +90,13 @@ For more information about custom and prebuilt models, see [Overview of model ty
       ![Image of generic document icon.](../media/content-understanding/document-assembly-image.png) 
    :::column-end:::
    :::column span="3":::
-      With SharePoint Syntex, you can create *modern templates* based on the business documents you use most, and then use those templates to automatically generate new documents using SharePoint lists or user entries as a data source.
+      With SharePoint Syntex, you can create *modern templates* based on the business documents you use most.
 
-      This process lets you automatically generate standard repetitive
+      You can then use those templates to automatically generate new documents using SharePoint lists or user entries as a data source.
    :::column-end:::
 :::row-end:::
 
- business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all this quicker, more consistentently, and with fewer errors in SharePoint Syntex.
+ This process lets you automatically generate standard repetitivebusiness documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all this quicker, more consistentently, and with fewer errors in SharePoint Syntex.
 
 For more information, see [Create documents using content assembly in SharePoint Syntex](content-assembly.md).
 
@@ -104,7 +104,9 @@ For more information, see [Create documents using content assembly in SharePoint
 
 :::row:::
    :::column span="3":::
-      The advanced metadata search feature in SharePoint Syntex lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.    
+      The advanced metadata search feature in SharePoint Syntex lets you perform specific metadata-based queries on SharePoint document libraries.
+
+      You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.    
    :::column-end:::
    :::column span="":::
       ![Image of generic search icon.](../media/content-understanding/search-generic-image.png)
@@ -149,7 +151,9 @@ For more information, see [Apply a retention label to a model in SharePoint Synt
 
 :::row:::
    :::column span="3":::
-      SharePoint Syntex can help your organization automate business processes, improve search accuracy, and manage compliance risk. With content AI services and capabilities, you can build content understanding and classification directly into the content management flow.   
+      SharePoint Syntex can help your organization automate business processes, improve search accuracy, and manage compliance risk.
+
+      With content AI services and capabilities, you can build content understanding and classification directly into the content management flow.   
    :::column-end:::
    :::column span="":::
       ![Image of generic scenario icon.](../media/content-understanding/scenarios-image.png)
