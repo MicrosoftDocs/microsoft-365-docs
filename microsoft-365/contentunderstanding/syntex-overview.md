@@ -61,13 +61,13 @@ In SharePoint Syntex, you can build [custom models](model-types-overview.md) or 
 You build custom models to understand the layout of your files from example documents. The models learn to look for the data you need to extract from similar documents. Custom models include:
 
 - [Unstructured document processing](document-understanding-overview.md)
-- [Structured document processing](form-processing-overview.md)
 - [Freeform document processing](freeform-document-processing-overview.md)
+- [Structured document processing](form-processing-overview.md)
 
-| Unstructured document processing  | Structured document processing  | Freeform document processing  |
+| Unstructured document processing  | Freeform document processing  | Structured document processing  |
 | ------------- | ------------- | ------------- |
-|  ![Icon for unstructured document processing model.](../media/content-understanding/custom-classify-and-extract-by-text-pattern.png) | ![Icon for structured document processing model.](../media/content-understanding/custom-extract-by-layout.png) | ![Icon for freeform document processing model.](../media/content-understanding/custom-extract-by-text-pattern-and-layout.png) |
-| Use this custom model to automatically classify documents and extract information from them. Use the patterns of the text in example documents to train the model. Best for Office files and automatic classification of files. <br>[Learn more](document-understanding-overview.md) | Use this custom model to automatically identify field and table values from structured or semi-structured documents like forms. Best for most languages and files that include form layouts or tables. <br>[Learn more](form-processing-overview.md) | Use this custom model to automatically extract information from unstructured documents. Use the patterns of the text or the layout in example documents to train the model. Best for a mix of both text and layout needs. <br>[Learn more](extract-by-text-pattern-and-layout-overview.md) |
+|  ![Icon for unstructured document processing model.](../media/content-understanding/custom-classify-and-extract-by-text-pattern.png) | ![Icon for freeform document processing model.](../media/content-understanding/custom-extract-by-text-pattern-and-layout.png) |  ![Icon for structured document processing model.](../media/content-understanding/custom-extract-by-layout.png) |
+| Use this custom model to automatically classify documents and extract information from them. Use the patterns of the text in example documents to train the model. Best for Office files and automatic classification of files. <br>[Learn more](document-understanding-overview.md) | Use this custom model to automatically extract information from unstructured documents. Use the patterns of the text or the layout in example documents to train the model. Best for a mix of both text and layout needs. <br>[Learn more](extract-by-text-pattern-and-layout-overview.md) |  Use this custom model to automatically identify field and table values from structured or semi-structured documents like forms. Best for most languages and files that include form layouts or tables. <br>[Learn more](form-processing-overview.md) |
 
 ### Prebuilt models
 
