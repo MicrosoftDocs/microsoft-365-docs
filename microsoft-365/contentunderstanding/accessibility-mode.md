@@ -17,7 +17,7 @@ description: Learn how to use accessibility features mode when training and work
 
 # Accessibility mode in Microsoft SharePoint Syntex
 
-<sup>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern </sup>
+<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
 In SharePoint Syntex, users can turn on accessibility mode in all stages of model training (label, train, test) when working with example documents. Using accessibility mode can help low-sight users to have easier keyboard accessibility as they navigate and label items in the document viewer.
 
