@@ -1,5 +1,5 @@
 ---
-title: Configure global settings for Safe Links settings in Defender for Office 365
+title: Configure global settings for Safe Links settings in Defender for Office 365 TO BE DEPRECATED ETA January 2023
 f1.keywords:
   - NOCSH
 ms.author: chrisda
