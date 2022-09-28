@@ -27,9 +27,9 @@ description: Learn how to apply a published a model to a SharePoint document lib
 </br>
 --->
 
-After you train a **Classify and extract by text pattern** model, train and publish an  **Extract by layout** or **Extract by text pattern and layout** model, or create a prebuilt model, you can apply it to one or more SharePoint document libraries in your Microsoft 365 tenant.
+After you train an unstructured document processing model, train and publish a freeform or structured document processing model, or create a prebuilt model, you can apply it to one or more SharePoint document libraries in your Microsoft 365 tenant.
 
-This article applies to both *enterprise models* and *local models*. An enterprise model is created and trained in the [content center](create-a-content-center.md), and can be discovered for others to use. A [local model](create-local-model.md) is created and trained locally on your own SharePoint site.  
+This article applies to both *enterprise models* and *local models*. An enterprise model is created and trained in the [content center](create-a-content-center.md), and can be discovered by others to use. A [local model](create-local-model.md) is created and trained locally on your own SharePoint site.  
 
 > [!NOTE]
 > You can apply the model only to document libraries to which you have access.
@@ -76,7 +76,7 @@ After applying the model to the document library, you can begin uploading docume
 The model identifies any files and folders with the model’s associated content type and lists them in your view. If your model has any extractors, the view displays columns for the data you're extracting from each file or folder.
 
 > [!NOTE]
-> If two or more **Classify and extract by text pattern** models are applied to the same library, the uploaded file is classified using the model that has the highest average confidence score. The extracted entities will be from the applied model only. <br><br>If an **Extract by layout** model or an **Extract by text pattern and layout** model and a **Classify and extract by text pattern** model are applied to the same library, the file is classified using the **Classify and extract by text pattern** model and any trained extractors for that model. If there are any empty columns that match the **Extract by layout** model or the **Extract by text pattern and layout** model, the columns will be populated using those extracted values.
+> If two or more unstructured document processing models are applied to the same library, the uploaded file is classified using the model that has the highest average confidence score. The extracted entities will be from the applied model only. <br><br>If a freeform or structured document processing model model and an unstructured document processing model are applied to the same library, the file is classified using the unstructured document processing model and any trained extractors for that model. If there are any empty columns that match the freeform or structured document processing model, the columns will be populated using those extracted values.
 
 ## Sync changes to one or more document libraries
 
