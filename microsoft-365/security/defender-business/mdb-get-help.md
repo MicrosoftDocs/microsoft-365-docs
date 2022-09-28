@@ -5,7 +5,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
@@ -13,11 +13,10 @@ ms.date: 08/11/2022
 ms.collection: 
 - SMB
 - m365-security                 
+- tier1
 search.appverid: MET150
 ms.reviewer: shlomiakirav
 description: Get help or contact support if you have any issues with Defender for Business.
-ms.collection: 
-- tier1
 ---
 
 # Get help and support for Microsoft Defender for Business

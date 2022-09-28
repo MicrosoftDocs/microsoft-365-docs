@@ -14,7 +14,7 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 ms.custom: 
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE

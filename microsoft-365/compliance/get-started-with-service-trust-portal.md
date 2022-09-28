@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 search.appverid: MET150
 mscollection:
 - tier3
-- M365-security-compliance
+- purview-compliance
 ms.custom:
 - Adm_O365
 - seo-marvel-apr2020

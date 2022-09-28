@@ -10,7 +10,7 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
