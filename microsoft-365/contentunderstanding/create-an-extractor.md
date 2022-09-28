@@ -17,7 +17,7 @@ description: Learn how to create an extractor in Microsoft SharePoint Syntex.
 
 # Create an extractor in Microsoft SharePoint Syntex
 
-<sup>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern </sup>
+<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
 <br/>
 
@@ -93,7 +93,7 @@ To help identify the *Service Start Date*, you can create a pattern explanation.
 > [!NOTE]
 > For more learn more about explanation types, see [Explanation types](./explanation-types-overview.md).
 
-### Use the Explanation library
+### Use the explanation library
 
 For creating explanations for items such as dates, it's easier to [use the explanation library](./explanation-types-overview.md) than to manually enter all variations. The explanation library is a set of pre-built phrase and pattern explanations. The library tries to provide all formats for common phrase or pattern lists, such as dates, phone numbers, zip codes, and many others.
 
