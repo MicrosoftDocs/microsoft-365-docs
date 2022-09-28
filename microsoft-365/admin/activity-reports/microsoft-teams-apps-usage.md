@@ -43,13 +43,12 @@ The Teams app usage report is available in the Microsoft 365 admin center and th
 - How many users are using an app across platforms (Windows, Mac, Web, etc)? 
 - How many apps has each user used?
 
-
 ## How to get to the Microsoft Teams apps usage report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
 2. From the dashboard homepage, click on the **View more** button on the Microsoft Teams apps activity card.
 
-    ![Microsoft 365 reports - Microsoft Teams app.](../../media/teams-apps-tile.png) 
+    :::image type="content" source="../../media/teams-apps-tile.png" alt-text="Microsoft Teams app.":::
 
 ## Considerations
 
@@ -66,9 +65,9 @@ The Teams app usage report is available in the Microsoft 365 admin center and th
 
 You can view the **App usage** in the Teams app usage report by choosing the **Apps usage** tab. <br/>
 
-![Microsoft 365 reports - Microsoft Teams user activity.](../../media/teams-apps-usage-tab.png)
+:::image type="content" source="../../media/teams-apps-usage-tab.png" alt-text="Teams user activity." lightbox="../../media/teams-apps-usage-tab.png":::
 
-On the top of the report, you will see three charts describing cross-app trends across your organization. 
+On the top of the report, you will see three charts describing cross-app trends across your organization.
 
 - Apps installed
 - Apps used
@@ -76,31 +75,28 @@ On the top of the report, you will see three charts describing cross-app trends 
 
 You can filter all charts by the time range picker in the top right. 
 
-![Microsoft 365 reports - Microsoft Teams apps usage time filter.](../../media/teams-apps-usage-filter.png)
+:::image type="content" source="../../media/teams-apps-usage-filter.png" alt-text="Microsoft Teams apps usage time filter.":::
 
 ### Apps installed
 This chart shows you the total number of app installs across your organization up to each date within the selected period. For example – if you select January 28th 2022, the chart will show you the total number of installs from October 2021 up to January 28th 2022. 
 
-![Microsoft 365 reports - Microsoft Teams apps installed.](../../media/apps-installed.png)
+:::image type="content" source="../../media/apps-installed.png" alt-text="Microsoft Teams apps installed.":::
 
- 
 ### Apps used
 This chart shows you the number of apps used across your organization on each date within the selected period. For example – if you select January 28th, the chart will show you the total number of apps used on January 28th.
 
-![Microsoft 365 reports - Microsoft Teams Apps used.](../../media/apps-used.png)
+:::image type="content" source="../../media/apps-used.png" alt-text="Microsoft Teams Apps used.":::
   
-
 ### Platform 
 This chart shows you the number of apps used across your organization by platform for the selected period. Available platforms are Windows, Mac, Mobile (across iOS and Android), and Web.
 
-![Microsoft 365 reports - Microsoft Teams platform.](../../media/platform.png)
+:::image type="content" source="../../media/platform.png" alt-text="Microsoft Teams platform.":::
 
-  
 ### Apps usage details table
 
-This table shows you per-app view with the following metrics for each app. A subset of the metric columns are included by default, and you can select/edit the column list by clicking on **Choose columns**”** in the top right. 
+This table shows you per-app view with the following metrics for each app. A subset of the metric columns are included by default, and you can select/edit the column list by clicking on **Choose columns**”** in the top right.
 
-![Microsoft 365 reports - Apps usage details.](../../media/apps-usage-details.png)
+:::image type="content" source="../../media/apps-usage-details.png" alt-text="Apps usage details." lightbox="../../media/apps-usage-details.png":::
 
 |**Metric**|**Definition**|**Included by default?**|
 |:-----|:-----|:-----|
@@ -121,9 +117,9 @@ This table shows you per-app view with the following metrics for each app. A sub
 
 You can view the **user activity** in the Teams app usage report by choosing the **User activity** tab. <br/>
 
-![Microsoft 365 reports - Microsoft Teams user activity.](../../media/teams-apps-user-activity.png)
+:::image type="content" source="../../media/teams-apps-user-activity.png" alt-text="Microsoft Teams user activity." lightbox="../../media/teams-apps-user-activity.png":::
 
-On the top of the report, you will see three charts describing cross-app trends across your organization. 
+On the top of the report, you will see three charts describing cross-app trends across your organization.
 
 - Users who have installed apps
 - User who have used apps
@@ -131,35 +127,28 @@ On the top of the report, you will see three charts describing cross-app trends 
 
 You can filter all charts by the time range picker in the top right. 
 
-![Microsoft 365 reports - Microsoft Teams user activity time filter.](../../media/teams-apps-usage-filter.png)
-
+:::image type="content" source="../../media/teams-apps-usage-filter.png" alt-text="Microsoft Teams user activity time filter.":::
 
 ### Users who have installed apps
 This chart shows you the total number of unique users that have installed an app up to each date within the selected period. For example – if you select January 28th 2022 the chart will show you the total number of users from October 2021 up to January 28th 2022.  
 
-![Microsoft 365 reports - Microsoft Teams apps Users who have installed apps chart.](../../media/users-who-installed-apps.png)
-
- 
+:::image type="content" source="../../media/users-who-installed-apps.png" alt-text="Microsoft Teams apps Users who have installed apps chart.":::
 
 ### User who have used apps
 This chart shows you the number of unique users that have used any app on each date within the selected period. For example – if you select January 28th, the chart will show you the total number of users on January 28th.  
 
-![Microsoft 365 reports - Microsoft Teams apps Users who have used apps chart.](../../media/users-who-used-apps.png)
-
-  
+:::image type="content" source="../../media/users-who-used-apps.png" alt-text="Microsoft Teams apps Users who have used apps chart.":::
 
 ### Platform 
 This chart shows you the number of apps used across your organization by platform for the selected period. Available platforms are Windows, Mac, Mobile (across iOS and Android), and Web.  
 
-![Microsoft 365 reports - Microsoft Teams usage user activity platform.](../../media/user-activity-platform.png)
-
-
+:::image type="content" source="../../media/user-activity-platform.png" alt-text="Microsoft Teams usage user activity platform.":::
   
 ### User activity details table
 
 This table shows you per-user view with the following metrics for each app. A subset of the metric columns are included by default, and you can select/edit the column list by clicking on **Choose columns** in the top right. 
 
-![Microsoft 365 reports - User activity details.](../../media/user-activity-details.png)
+:::image type="content" source="../../media/user-activity-details.png" alt-text="User activity details." lightbox="../../media/user-activity-details.png":::
 
 |**Metric**|**Definition**|**Included by default?**|
 |:-----|:-----|:-----|
@@ -173,7 +162,6 @@ This table shows you per-user view with the following metrics for each app. A su
 |Used on Web   <br/> | This indicates whether that user has used any app on Web.   <br/> |Yes |
 |Used on Mac <br/> |This indicates whether that user has used any app on Mac.  <br/>|No |
 |||
-
 
 ## Managing apps in the Teams Admin Center
 
