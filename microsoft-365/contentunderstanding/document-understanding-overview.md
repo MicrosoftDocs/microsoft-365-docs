@@ -26,7 +26,7 @@ description: Learn about the unstructured document processing model in Microsoft
 </br>
 --->
 
-The unstructured document processing model is a custom model that uses artificial intelligence (AI) to automate classification of files and extraction of information. It works best with unstructured documents, such as letters or contracts. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
+The unstructured document processing model (formerly known as document understanding model) is a custom model that uses artificial intelligence (AI) to automate classification of files and extraction of information. It works best with unstructured documents, such as letters or contracts. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
 
 > [!NOTE]
 > For more information about how to use SharePoint Syntex and scenario examples, see [Get started driving adoption of SharePoint Syntex](./adoption-getstarted.md) and [Scenarios and use cases for SharePoint Syntex](./adoption-scenarios.md).
