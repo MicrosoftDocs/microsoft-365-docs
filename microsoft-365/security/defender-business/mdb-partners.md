@@ -31,7 +31,7 @@ If you're a Microsoft partner and you're working with customers who have or need
 
 ## Integrate Microsoft endpoint security capabilities with your RMM tools and PSA software
 
-If you're a Microsoft Managed Service Provider (MSP), you can integrate Microsoft endpoint security capabilities with your remote monitoring and management (RMM) tools and your professional service automation (PSA) software so that you can: 
+If you're a Microsoft Managed Service Provider (MSP), you can integrate Microsoft endpoint security with your remote monitoring and management (RMM) tools and your professional service automation (PSA) software so that you can: 
 
 - Get access to your customers' Microsoft 365 Defender portal to [address detected threats and incidents](mdb-respond-mitigate-threats.md).
 - Get [email notifications](mdb-email-notifications.md) about new alerts or vulnerabilities across your customers' tenants.
@@ -64,6 +64,6 @@ If you're a Microsoft Cloud Solution Provider (CSP) or MSP, you can use Microsof
 |:---|:---|
 | [Microsoft Partner Network](https://partner.microsoft.com) | Visit the Microsoft Partner Network to learn how to become a Microsoft partner and join the Microsoft Partner Network. |
 | [Microsoft 365 Business Premium and Defender for Business partner webinar series](https://aka.ms/M365MDBseries) | This webinar series provides: <ul><li>Practical guidance about how to have conversations with your customers about security and drive upsell to Microsoft 365 Business Premium. </li><li>Demos and deep dive walkthroughs for Microsoft 365 Lighthouse and Defender for Business. </li><li>A panel of experts to help answer your questions.</li></ul>   |
-| [Microsoft 365 Business Premium partner playbook and readiness series](https://aka.ms/M365BPPartnerPlaybook) |  Practical guidance on building a profitable managed services practice, with: <ul><li>Examples of successful managed service offers from industry experts and peers. </li><li>Technical enablement and checklists from Microsoft experts. </li><li>Sales enablement and customer conversation aids to help you market your solution. </li></ul> |
+| [Microsoft 365 Business Premium partner playbook and readiness series](https://aka.ms/M365BPPartnerPlaybook) |  Practical guidance on building a profitable managed services practice, with: <ul><li>Examples of successful managed service offerings from industry experts and peers. </li><li>Technical enablement and checklists from Microsoft experts. </li><li>Sales enablement and customer conversation aids to help you market your solution. </li></ul> |
 | [Defender for Business partner kit](https://aka.ms/MDBPartnerKit) | The Defender for Business partner kit provides you with practical guidance, technical information, and customer-ready resources to market and sell Defender for Business to small and medium-sized businesses.  |
 
