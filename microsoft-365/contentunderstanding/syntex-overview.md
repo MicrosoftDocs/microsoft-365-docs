@@ -149,14 +149,14 @@ For more information, see [Apply a retention label to a model in SharePoint Synt
 
 :::row:::
    :::column span="3":::
-      SharePoint Syntex can help your organization automate business processes, improve search accuracy, and manage compliance risk.    
+      SharePoint Syntex can help your organization automate business processes, improve search accuracy, and manage compliance risk. With content AI services and capabilities, you can build content understanding and classification directly into the content management flow.   
    :::column-end:::
    :::column span="":::
       ![Image of generic scenario icon.](../media/content-understanding/scenarios-image.png)
    :::column-end:::
 :::row-end:::
 
-To spark ideas about how you can use SharePoint Syntex in your organization, see [Scenarios and use cases for SharePoint Syntex](adoption-scenarios.md).
+To prompt ideas about how you can use SharePoint Syntex in your organization, see [Scenarios and use cases for SharePoint Syntex](adoption-scenarios.md).
 <br><br>
 > [!div class="nextstepaction"]
 > [Learn more about models in SharePoint Syntex](model-types-overview.md)
