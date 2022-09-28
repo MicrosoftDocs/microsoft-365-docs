@@ -13,6 +13,7 @@ ms.collection:
   - M365-collaboration
   - microsoftcloud-financial-services
   - m365-frontline
+  - highpri
   - m365solution-financialservices
   - m365solution-overview
   - highpri

@@ -14,7 +14,7 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.subservice: mde
 search.appverid: met150
 ---

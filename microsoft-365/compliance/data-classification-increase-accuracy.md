@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MET150
 description: "Learn how to increase the accuracy of your classifiers"
@@ -69,7 +69,7 @@ This example shows you how to use the **Contextual Summary** tab to give feedbac
 1. Open the **Microsoft Purview compliance portal** > **Data classification** > **Content explorer** page.
 1. Type the name of the SIT or trainable classifier that you want to check matches for in **Filter on labels, info types, or categories**.
 1. Select the SIT.
-1. Select the location. Make sure that there's a non-zero value in the **File** column.
+1. Select the location. Only Sharepoint, OneDrive are supported locations here. Make sure that there's a non-zero value in the **File** column.
 1. Open the folder and select a document.
 1. Select the link in the **Sensitive info type** column for an item to see which SITs the item matched and the [confidence level](/microsoft-365/compliance/sensitive-information-type-learn-about.md#more-on-confidence-levels).
 1. Select **Close**
@@ -159,4 +159,4 @@ If you're seeing high amounts of false positives, use these recommendations to f
 
 - Include more dictionary-based SITs as conditions to narrow down the matches to those that talk about the relevant articles. For example, a rule for matching patient diagnostics may be enhanced by requiring the presence of words like diagnostic, diagnosis, condition, symptom, and patient.
 
-- For a named entity SITs, like **All Full Names**, it’s best to set a higher instance count threshold, like 10 or 50. If both the person names and the SSNs are detected together, it’s more likely that the SSNs are truly SSNs, and we reduce the risk that the policy doesn’t trigger because not enough SSNs are detected.
+- For named entity SITs, like **All Full Names**, it’s best to set a higher instance count threshold, like 10 or 50. If both the person names and the SSNs are detected together, it’s more likely that the SSNs are truly SSNs, and we reduce the risk that the policy doesn’t trigger because not enough SSNs are detected.

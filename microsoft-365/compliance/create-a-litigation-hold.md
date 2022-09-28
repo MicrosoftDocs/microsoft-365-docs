@@ -19,7 +19,7 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 ---
 

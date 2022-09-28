@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.collection: m365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
 ms.service: microsoft-365-security

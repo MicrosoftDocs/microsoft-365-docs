@@ -11,7 +11,7 @@ ms.date:
 ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: Learn how to recognize and respond to a compromised connector in Microsoft 365.
 ms.subservice: mdo

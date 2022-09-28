@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 ROBOTS: NOINDEX, NOFOLLOW
 ---

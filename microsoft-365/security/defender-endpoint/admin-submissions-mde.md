@@ -17,7 +17,7 @@ localization_priority: Normal
 audience: ITPro
 ms.topic: how-to
 ms.collection:
-- m365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
 ms.custom: FPFN
 ---

@@ -14,7 +14,7 @@ ms.custom: nextgen
 ms.date: 07/11/2022
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 search.appverid: met150
 ---
 

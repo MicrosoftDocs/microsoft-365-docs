@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - tier2
 ms.topic: how-to
 ms.custom: 

@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.reviewer: mkaminska
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection: m365-security
 search.appverid: met150
 ---
 

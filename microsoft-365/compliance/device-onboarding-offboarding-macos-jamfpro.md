@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MET150 
 description: Learn how to onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro

@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.service: microsoft-365-security

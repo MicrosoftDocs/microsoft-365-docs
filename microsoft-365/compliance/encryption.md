@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - Strat_O365_IP
 - m365solution-mip
 - m365initiative-compliance

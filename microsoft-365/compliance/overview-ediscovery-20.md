@@ -13,7 +13,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- m365-security-compliance
+- purview-compliance
 - m365solution-aed
 - m365solution-overview
 - highpri

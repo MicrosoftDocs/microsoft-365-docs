@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
 description: Learn about Microsoft Purview Message Encryption that enables protected email communication with people inside and outside your organization.
 ms.custom: 
 - seo-marvel-apr2020

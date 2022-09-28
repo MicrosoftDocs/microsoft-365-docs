@@ -13,7 +13,7 @@ author: siosulli
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - Adm_TOC
 - tier2
 ms.topic: article

@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection: m365-security
 ---
 
 # Manage the schedule for when protection updates should be downloaded and applied

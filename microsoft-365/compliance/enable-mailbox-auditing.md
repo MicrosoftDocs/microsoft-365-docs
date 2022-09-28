@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150

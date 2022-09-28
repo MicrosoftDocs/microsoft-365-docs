@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.collection: 
 - tier1
-- M365-security-compliance
+- purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
