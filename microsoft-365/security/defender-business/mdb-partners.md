@@ -1,5 +1,5 @@
 ---
-title: Resources for Microsoft partners working with Microsoft Defender for Business and Microsoft 365 Business Premium
+title: Resources for Microsoft partners using Microsoft Defender for Business and Microsoft 365 Business Premium
 description: Learn how to integrate your remote monitoring and management (RMM) tools and professional service automation (PSA) software with Defender for Business, Microsoft 365 Business Premium, Defender for Endpoint, and Microsoft 365 Lighthouse.
 search.appverid: MET150
 author: denisebmsft
@@ -19,15 +19,15 @@ ms.collection:
 - tier1
 ---
 
-# Resources for Microsoft partners working with Microsoft Defender for Business and Microsoft 365 Business Premium
+# Resources for Microsoft partners using Microsoft Defender for Business and Microsoft 365 Business Premium
 
-Small and medium-sized businesses recognize security as a key component to their success, but often don't have the capacity or expertise to have a dedicated security operations team. These customers often need help with managing the security of their endpoints and network, and addressing alerts or detected threats. Microsoft partners can help!
+Small and medium-sized businesses recognize security as a key component to their success, but often don't have the capacity or expertise to have a dedicated security operations team. Customers often need help with managing the security of their endpoints and network, and addressing alerts or detected threats. Microsoft partners can help!
 
-If you're a Microsoft partner and you're working with customers who have or need [Defender for Business](mdb-overview.md), [Microsoft 365 Business Premium](../../business-premium/index.md), or [Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md), this article is for you.
+If you're a Microsoft partner, and you're working with customers who have or need [Defender for Business](mdb-overview.md), [Microsoft 365 Business Premium](../../business-premium/index.md), or [Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md), this article is for you.
 
-- [Learn how you can integrate Microsoft endpoint security capabilities with your RMM tools and PSA software](#integrate-microsoft-endpoint-security-capabilities-with-your-rmm-tools-and-psa-software)
-- [See how you can use Microsoft 365 Lighthouse to secure and manage your customers' devices and data](#use-microsoft-365-lighthouse-to-secure-and-manage-your-customers-devices-and-data)
-- [Learn more about Defender for Business and Microsoft 365 Business Premium](#learn-more-about-defender-for-business-and-microsoft-365-business-premium)
+- [Learn how you can integrate Microsoft endpoint security capabilities with your RMM tools and PSA software](#integrate-microsoft-endpoint-security-capabilities-with-your-rmm-tools-and-psa-software).
+- [See how you can use Microsoft 365 Lighthouse to secure and manage your customers' devices and data](#use-microsoft-365-lighthouse-to-secure-and-manage-your-customers-devices-and-data).
+- [Learn more about Defender for Business and Microsoft 365 Business Premium](#learn-more-about-defender-for-business-and-microsoft-365-business-premium).
 
 ## Integrate Microsoft endpoint security capabilities with your RMM tools and PSA software
 
