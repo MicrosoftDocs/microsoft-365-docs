@@ -17,7 +17,7 @@ description: Learn how to apply a retention label to a model in Microsoft ShareP
 
 # Apply a retention label to a model in Microsoft SharePoint Syntex
 
-<sup>**Applies to:**  &ensp; &#10003; Classify and extract by text pattern &ensp; | &ensp; &#10003; Extract by layout &ensp;| &ensp; &#10003; All prebuilt models</sup>
+<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing &ensp; | &ensp; &#10003; Structured document processing &ensp;| &ensp; &#10003; All prebuilt models</sup>
 
 <!---
 </br>
@@ -30,16 +30,16 @@ description: Learn how to apply a retention label to a model in Microsoft ShareP
 You can easily apply a [retention label](../compliance/retention.md) to a model in Microsoft SharePoint Syntex.
 
 > [!Note]
-> Retention labels are not yet available for **Extract by text pattern and layout** models.
+> Retention labels are not yet available for Freeform document processing models.
 
 Retention labels let you apply retention settings to the documents that your models identify.  For example, you want your model to not only identify any *Insurance notice* documents that are uploaded to your document library, but to also apply a *Business* retention tag to them so that these documents can't be deleted from the document library for the specified time period (the next five months, for example).
 
 You can apply a pre-existing retention label to your model through your model settings on your model's home page. 
 
-## Add a retention label to a Classify and extract by text pattern model or prebuilt model
+## Add a retention label to an unstructured document processing model or a prebuilt model
 
 > [!Important]
-> For retention labels to be available to apply to your **Classify and extract by text pattern** or prebuilt models, they need to be [created](../compliance/file-plan-manager.md#create-retention-labels) and [published](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) in the Microsoft Purview compliance portal.
+> For retention labels to be available to apply to your unstructured document processing or prebuilt models, they need to be [created](../compliance/file-plan-manager.md#create-retention-labels) and [published](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) in the Microsoft Purview compliance portal.
 
 1. From the model home page, select **Model settings**.
 
@@ -56,7 +56,7 @@ After applying the retention label to your model, you're able to apply it to a:
  
 ### Apply the retention label to a document library to which the model is already applied
 
-If your **Classify and extract by text pattern** model or prebuilt model has already been applied to a document library, you can do the following to sync your retention label update to apply it to the document library:
+If your unstructured document processing model or prebuilt model has already been applied to a document library, you can do the following to sync your retention label update to apply it to the document library:
 
 1. On your model home page, in the **Libraries with this model** section, select the document library to which you want to apply the retention label update.
 
@@ -78,33 +78,33 @@ On your model's view page in your document library, a new **Retention label** co
 
 For example, all *Insurance notice* documents that your model identifies will also have the *Business* retention label applied to them, preventing them from being deleted from the document library for five months. If an attempt is made to delete the file from the document library, an error will display saying it isn't allowed because of the applied retention label.
 
-## Add a retention label to an **Extract by layout** model
+## Add a retention label to a structured document processing model
 
 > [!Important]
-> For retention labels to be available to apply to your **Extract by layout** models, they need to be [created](../compliance/file-plan-manager.md#create-retention-labels) and [published](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) in the Microsoft Purview compliance portal.
+> For retention labels to be available to apply to your structured document processing models, they need to be [created](../compliance/file-plan-manager.md#create-retention-labels) and [published](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) in the Microsoft Purview compliance portal.
 
-You can either apply a retention label to an **Extract by layout** model when you're creating a model, or apply it to an existing model.
+You can either apply a retention label to a structured document processing model when you're creating a model, or apply it to an existing model.
 
-### To add a retention label when you create an **Extract by layout** model
+### To add a retention label when you create a structured document processing model
 
-1. When you're [creating a new **Extract by layout** model](./create-a-form-processing-model.md), select **Advanced settings**.
+1. When you're [creating a new structured document processing model](./create-a-form-processing-model.md), select **Advanced settings**.
 
-2. In **Advanced settings**, in the **Retention label** section, select the menu and then select the retention label you want to apply to the model.</b>
+2. In **Advanced settings**, in the **Retention label** section, select the menu and then select the retention label you want to apply to the model.
  
-     ![Add to a new Extract by layout model.](../media/content-understanding/retention-label-forms.png)</br>
+     ![Add to a new structured document processing model.](../media/content-understanding/retention-label-forms.png)
 
 3.  After you've completed your remaining model settings, select **Create** to build your model.
 
-### To add a retention label to an existing Extract by layout model
+### To add a retention label to an existing structured document processing model
 
-You can add a retention label to an existing **Extract by layout** model in different ways:
+You can add a retention label to an existing structured document processing model in different ways:
 
 - Through the **Automate** menu in the document library
 - Through the **Active model** settings in the document library 
 
-#### To add a retention label to an existing Extract by layout model through the Automate menu
+#### To add a retention label to an existing structured document processing model through the Automate menu
 
-You can add a retention label to an existing **Extract by layout** model that you own through the **Automate** menu in the document library in which the model is applied.
+You can add a retention label to an existing structured document processing model that you own through the **Automate** menu in the document library in which the model is applied.
 
 1. In your document library to which the model is applied, select the **Automate** > **AI Builder** > **View model details**.
 
@@ -112,11 +112,11 @@ You can add a retention label to an existing **Extract by layout** model that yo
 
 2. In the model details, in the **Retention label** section, select the retention label you want to apply, and then select **Save**.
 
-    ![Add to an existing **Extract by layout** model.](../media/content-understanding/retention-label-model-details.png)</br> 
+    ![Add to an existing structured document processing model.](../media/content-understanding/retention-label-model-details.png)</br> 
 
-#### To add a retention label to an existing Extract by layout model in the active model settings
+#### To add a retention label to an existing structured document processing model in the active model settings
 
-You can add a retention label to an existing **Extract by layout** model that you own through the Active model settings in the document library in which the model is applied.
+You can add a retention label to an existing structured document processing model that you own through the Active model settings in the document library in which the model is applied.
 
 1. In the SharePoint document library in which the model is applied, select the **View active models** icon, and then select **View active models**.
 
