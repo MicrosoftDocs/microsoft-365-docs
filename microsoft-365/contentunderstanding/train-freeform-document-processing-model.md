@@ -1,5 +1,5 @@
 ---
-title: Train an Extract by text pattern and layout model in Microsoft SharePoint Syntex
+title: Train a freeform document processing model in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,14 +13,14 @@ ms.collection:
     - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
-description: Learn how to train an Extract by text pattern and layout model in SharePoint Syntex.
+description: Learn how to train a freeform document processing model in SharePoint Syntex.
 ---
 
-# Train an Extract by text pattern and layout model in Microsoft SharePoint Syntex
+# Train a freeform document processing model in Microsoft SharePoint Syntex
 
-Follow the instructions in [Create a model in SharePoint Syntex](create-syntex-model.md) to create an **Extract by text pattern and layout** model. Then use this article to train your model.
+Follow the instructions in [Create a model in SharePoint Syntex](create-syntex-model.md) to create a freeform document processing model. Then use this article to train your model.
 
-To train an **Extract by text pattern and layout** model, follow these steps:
+To train a freeform document processing model, follow these steps:
 
 <!---
 SharePoint Syntex uses [AI Builder](/ai-builder/overview)—a feature in Microsoft Power Apps—to create an **Extract by text pattern and layout** model directly from a SharePoint document library. In AI Builder, both the **Extract by text pattern and layout** model and the **Extract by text pattern and layout** model are referred to as *document processing* models.
@@ -131,11 +131,11 @@ You need to tag the documents to teach the model to understand the fields and ta
     ![Done.](../media/content-understanding/doc-lib-done.png) 
 
 > [!NOTE]
-> If an **Extract by text pattern and layout** or **Extract by layout** model and a **Classify and extract by text pattern** model are applied to the same library, the file is classified using the **Classify and extract by text pattern** model and any trained extractors for that model. If there are any empty columns that match the **Extract by text pattern and layout** or **Extract by layout** model, the columns will be populated using those extracted values.
+> If a freeform or structured document processing model and an unstructured document processing model are applied to the same library, the file is classified using the unstructured document processing model and any trained extractors for that model. If there are any empty columns that match the freeform or structured document processing model, the columns will be populated using those extracted values.
 
 ### Use flows to extract information
 
-Two flows are available to process a selected file or batch of files in a library where an **Extract by text pattern and layout** model has been applied.
+Two flows are available to process a selected file or batch of files in a library where a freeform document processing model has been applied.
 
 - **Extract info from an image or PDF file with a document processing model** — Use to extract text from a selected image or PDF file by running a document processing model. Supports a single selected file at a time, and supports only PDF files and image files (PNG, JPG, and JPEG). To run the flow, select a file, and then select **Automate** > **Extract info**.
 
@@ -169,6 +169,8 @@ To run the flow:
 
 ## See also
   
+[Create a model in SharePoint Syntex](create-syntex-model.md)
+
 [Power Automate documentation](/power-automate/)
 
 [Training: Improve business performance with AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
