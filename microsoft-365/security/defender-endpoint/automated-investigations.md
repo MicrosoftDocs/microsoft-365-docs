@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 ms.date: 08/31/2022
 manager: dansimp
 audience: ITPro
-ms.collection:
+ms.collection: 
 - m365-security
-- m365initiative-defender-endpoint
+- tier2
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
