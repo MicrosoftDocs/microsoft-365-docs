@@ -33,7 +33,7 @@ description: "The Microsoft 365 admin center - learn about the features that wer
 
 ::: moniker-end
 
-We're continuously adding new features to [the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](admin-overview/admin-center-overview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
+We're continuously adding new features to [the Microsoft 365 admin center](admin-overview/admin-center-overview.md), fixing issues we learn about, and making changes based on your feedback. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
 And if you'd like to know what's new with other Microsoft cloud services:
 
@@ -45,6 +45,65 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [What's new in the SharePoint admin center](/sharepoint/what-s-new-in-admin-center)
 - [Office updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
+
+## August 2022
+
+### Date filter in the Net Promoter Score (NPS) survey insights dashboard
+
+Based on your feedback, we are introducing a new function in the NPS survey insights dashboard that allows Admins like you to filter the Net Promoter Score (NPS) data and insights per date, so that you can access details based on your date range preference.
+
+With this change, you will be able to look at the NPS survey insights based on the following date ranges:
+
+- Past 30 days
+- Past 90 days
+- Past 180 days
+
+To access, go to **Health** > **Product feedback** > **NPS survey insights tab**.
+
+:::image type="content" source="../media/nps-date-filter.png" alt-text="Screenshot: Date filter in the NPS survey insights dashboard" lightbox="../media/nps-date-filter.png":::
+
+Learn more about [NPS survey insights](/microsoft-365/admin/manage/manage-feedback-product-insights).
+
+For questions or feedback related to NPS survey insights, contact us at Prosight@microsoft.com.
+
+
+## July 2022
+
+### Multi-tenant billing relationships
+
+You can now create multi-tenant billing relationships with other tenants. A multi-tenant billing relationship lets you securely share your organization's billing account with other tenants, while maintaining control over your billing data.
+
+This feature is available to organizational account customers with a Microsoft Customer Agreement.
+
+For more information, see [Manage billing across multiple tenants in the Microsoft 365 admin center](../commerce/billing-and-payments/manage-multi-tenant-billing.md).
+
+## May 2022
+
+### Role based access controls (RBAC)
+
+There are four new roles in the Microsoft 365 admin center for management of custom security attributes. These roles are available for everyone to use in the Microsoft 365 admin center under **Roles**.
+
+- **Attribute Assignment Administrator**   Assign custom security attribute keys and values to supported Azure AD objects.
+
+- **Attribute Assignment Reader**   Reads custom security attribute keys and values for supported Azure AD objects.
+
+- **Attribute Definition Administrator**   Define and manage the definition of custom security attributes.
+
+- **Attribute Definition Reader**   Reads the definition of custom security attributes.
+
+There's also a new role that allows you to give admins only the access they need to manage Virtual Visits.
+
+- **Virtual Visits Administrator**   Manage and share Virtual Visits information and metrics from admin centers or the Virtual Visits app.
+
+For more information about these roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+
+### Quick Assist
+
+We've moved Quick Assist to the Windows Store to enhance the performance and security of the app. The Windows Quick Assist app allows you and your end-users to receive or provide PC assistance over a remote connection.
+
+With the new Quick Assist Store app, you should see a significant improvement in passcode generation times and a reduction in application errors.
+
+For more information, see [Solve PC problems over a remote connection](https://support.microsoft.com/windows/solve-pc-problems-over-a-remote-connection-b077e31a-16f4-2529-1a47-21f6a9040bf3) and [Install Quick Assist](https://support.microsoft.com/windows/install-quick-assist-c17479b7-a49d-4d12-938c-dbfb97c88bca)
 
 ## April 2022
 
@@ -148,7 +207,7 @@ Learn more at [Microsoft product NPS feedback and insights for your organization
 
 ### Microsoft 365 admin center video training
 
-We've updated our Microsoft 365 admin center video training. Go to the [Admin training video library](admin-video-library.yml) page to learn how to set up and manage Microsoft 365 for your business.
+We've updated our Microsoft 365 admin center video training. Go to the [Admin training video library](https://go.microsoft.com/fwlink/?linkid=2197659) page to learn how to set up and manage Microsoft 365 for your business.
 
 :::image type="content" source="../media/admin-library-vid-training.png" alt-text="Screenshot: Showing the admin center video training library":::
 
@@ -189,62 +248,3 @@ We've added a couple of new categories to Search functionality.
 - You can now find simplified setup experiences through global search. This can help you and your team quickly get started with how to use new features. For example, search for **set password to never expire**.
 
 To learn more about search in the admin center, see [Search in the Microsoft 365 admin center](manage/search-in-the-mac.md).
-
-## May 2021
-
-### Admin mobile app
-
-### Keep track of support ticket updates using the Admin mobile app
-
-For all the service requests created in your tenant you can now keep track of the ticket status, view ticket details and provide / request additional information by adding notes & attachments.
-
-:::image type="content" source="../media/Keep-track-support-ticket-updates2.PNG" alt-text="Screenshot: Track support ticket updates":::
-
-### Stay on top of all the major updates to the app and your Microsoft 365 subscription
-
-- Stay on top of all the major updates to your Microsoft 365 subscription through Message Center push notifications (now enabled by default).
-
-- Keep track of the latest features available in the app using the **What's New** section. Go to **Settings** > **What’s new?**
-
-:::image type="content" source="../media/Stay-on-top-of-updates.PNG" alt-text="Screenshot: Track major updates and features":::
-
-## April 2021
-
-### Admin mobile app
-
-### Manage licenses and bills from the Admin mobile app
-
-- You can now view all available and assigned licenses for your subscriptions. You can also assign or un-assign licenses to users, and add or remove licenses.
-- You can now view detailed invoices in the app.
-- These updates are available on both [Android](https://go.microsoft.com/fwlink/p/?linkid=2159786) and [iOS](https://go.microsoft.com/fwlink/p/?linkid=2159787) devices.
-
-:::image type="content" source="../media/assign-license-mobile-app2.png" alt-text="Screenshot: Admin mobile app assign license page":::
-:::image type="content" source="../media/license-screen-mobile-app2.png" alt-text="Screenshot: Admin mobile app screen with users and their licenses":::
-:::image type="content" source="../media/invoice-summary-mobile-app.png" alt-text="Screenshot: Admin mobile app invoice summary page":::
-
-### Updated Message center feed in the Admin mobile app
-
-- You now have a more flexible reading experience of the Message center feed. You now have the ability to filter messages based on service or tags and mark messages as favorite. Bulk actions for marking messages as read, unread or archived has also been added.
-- These updates are available on both [Android](https://go.microsoft.com/fwlink/p/?linkid=2159786) and [iOS](https://go.microsoft.com/fwlink/p/?linkid=2159787) devices.
-
-:::image type="content" source="../media/mc-feed-mobile-app.png" alt-text="Screenshot: Admin mobile app Message center feed page":::
-
-## Ignite 2021 (March)
-
-Welcome to Microsoft Ignite. We hope you were able to attend some of one of our sessions: [Microsoft Ignite 2021](https://myignite.microsoft.com/sessions). Here's a few of the things we talked about at Ignite.
-> [!NOTE]
-> Not all features are going to be available to everyone right away. If you aren't seeing the new features, [join Targeted Release](manage/release-options-in-office-365.md).
-
-### Message center
-
-We’ve revamped the Message center to help you discover relevant messages and added a more flexible reading experience. We've added a new **Service** column to help you scan which Service a message applies to and filter messages by Service and other metadata. You can favorite a message to mark it for follow-up, choose which columns appear in the message list, and navigate between messages with the back and next buttons. We've also improved the process to make it easier to give feedback on Message center posts.
-
-:::image type="content" source="../media/message-center.png" alt-text="Screenshot: Message center home page showing inbox and messages":::
-
-To learn more about the new features, check out [Message center](manage/message-center.md).
-
-### What's new features
-
-We've made improvements to how you view the "What's new" features for users in the Office apps. You can now see the rich content in the What's new pane that your users can see. You can also learn more about the feature before you decide to let your users know about the feature. For more info, check out [Manage which Office features appear in What's New](manage/show-hide-new-features.md).
-
-:::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot: Office apps what's new page showing improvements to Power BI":::

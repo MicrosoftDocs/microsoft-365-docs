@@ -11,7 +11,8 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -20,9 +21,11 @@ ms.custom: seo-marvel-apr2020
 ---
 # Modify Exact Data Match schema to use configurable match
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+## Applies to
 
-Exact Data Match (EDM) based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. When you need to allow for variants of a exact string, you can use *configurable match* to tell Microsoft Purview to ignore case and some delimiters.
+- Exact data match (EDM) sensitive information type (SIT) creation using PowerShell.
+
+Exact Data Match (EDM) based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. When you need to allow for variants of an exact string, you can use *configurable match* to tell Microsoft Purview to ignore case and some delimiters.
 
 > [!IMPORTANT]
 > Use this procedure to modify an existing EDM schema and data file.
@@ -101,7 +104,7 @@ Exact Data Match (EDM) based classification enables you to create custom sensiti
     - \"
     - \,
 
-6. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+6. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
     > [!NOTE]
     > If your organization has set up [Customer Key for Microsoft 365 at the tenant level (public preview)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), Exact data match will make use of its encryption functionality automatically. This is available only to E5 licensed tenants in the Commercial cloud.
@@ -117,7 +120,10 @@ Exact Data Match (EDM) based classification enables you to create custom sensiti
     > [!TIP]
     > Optionally, you can run a validation against your csv file before uploading by running:
     >
-    > `EdmUploadAgent.exe /ValidateData /DataFile [data file] [schema file]`
+    > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
+    >
+    > For example:
+    >`EdmUploadAgent.exe /ValidateData /DataFile  C:\data\testdelimiters.csv /Schema C:\EDM\patientrecords.xml`
     >
     > For more information on all the EdmUploadAgent.exe supported parameters, run
     >

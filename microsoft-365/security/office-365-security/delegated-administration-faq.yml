@@ -15,12 +15,12 @@ metadata:
   ms.custom:
     - seo-marvel-apr2020
   description: Admins can view frequently asked questions and answers about delegated administration tasks in Microsoft 365 for Microsoft partners and resellers.
-  ms.technology: mdo
-  ms.prod: m365-security
+  ms.subservice: mdo
+  ms.service: microsoft-365-security
 
 title: Delegated administration FAQ
 summary: |
-  [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+  [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
   This article provides frequently asked questions and answers about delegated administration tasks in Microsoft 365 for Microsoft partners and resellers. Delegated administration includes the ability to manage Exchange Online Protection (EOP) settings for other tenants (companies).
 
@@ -33,7 +33,7 @@ sections:
           If you're a Microsoft partner or reseller, and you've signed up to be a Microsoft Cloud Solution Provider (CSP), you can request _delegated administration_ capabilities in your customer's Microsoft 365 organization. For more information, see the following articles:
 
           - [Cloud Solution Provider program](/partner-center/csp-overview)
-          - [Obtain permissions to manage a customer's service or subscription](/customers-revoke-admin-privileges).
+          - [Obtain permissions to manage a customer's service or subscription](/partner-center/customers-revoke-admin-privileges).
 
       - question: |
           I'm a customer, not a reseller. How can set up delegated administrator for my subtenants?

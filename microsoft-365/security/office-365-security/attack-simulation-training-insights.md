@@ -5,17 +5,20 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
 description: Admins can learn how Attack simulation training in the Microsoft 365 Defender portal affects users and can gain insights from simulation and training outcomes.
-ms.technology: mdo
+ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Insights and reports for Attack simulation training in Defender for Office 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
@@ -55,8 +58,8 @@ The **Behavior impact on compromise rate** card on the **Overview** tab shows ho
 
 The chart data itself shows the following information:
 
-- **Predicted compromise rate**<sup>\*</sup>: The average compromise rate for Attack simulation training simulations that use the same type of payload across all other Microsoft 365 organizations.
-- **Actual compromise rate**<sup>\*</sup>: The actual percentage of users that fell for the simulation.
+- **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this simulation (users compromised / total number of users who receive the simulation).
+- **Actual compromise rate**: The actual percentage of people who were compromised by the simulation (actual users compromised / total number of users in your organization who received the simulation).
 
 If you hover over a data point in the chart, the actual percentage values are shown.
 
@@ -195,7 +198,7 @@ Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filt
 - **In progress**
 - **All**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 Use ![Search icon](../../media/m365-cc-sc-search-icon.png) **Search** box to filter the results by **Username** or **Email address**. Wildcards aren't supported.
 
@@ -235,9 +238,8 @@ Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filt
 - **Malware attachment**
 - **Link in attachment**
 - **Link to malware**
-- **Drive-by URL**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 Use ![Search icon](../../media/m365-cc-sc-search-icon.png) **Search** box to filter the results by any of the column values. Wildcards aren't supported.
 
@@ -300,4 +302,4 @@ The **Recommended actions** section on the simulation details page shows recomme
 
 [Create a phishing attack simulation](attack-simulation-training.md)
 
-[create a payload for training your people](attack-simulation-training-payloads.md)
+[create a payload for training your people](attack-simulation-training-payloads.md#create-payloads)

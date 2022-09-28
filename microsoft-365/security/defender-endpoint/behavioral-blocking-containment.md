@@ -9,14 +9,15 @@ manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 ms.custom:
   - next-gen
   - edr
   - admindeeplinkDEFENDER
-ms.collection: m365-security-compliance
-ms.technology: mde
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Behavioral blocking and containment

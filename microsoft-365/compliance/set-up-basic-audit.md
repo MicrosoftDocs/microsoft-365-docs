@@ -2,8 +2,8 @@
 title: "Set up Audit (Standard) in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -11,10 +11,13 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-audit
 - m365initiative-compliance
 - m365solution-scenario
+- highpri
+- audit
 ms.custom: admindeeplinkEXCHANGE
 search.appverid: 
 - MOE150
@@ -23,8 +26,6 @@ description: "This article describes how to set up Audit (Standard) so you can s
 ---
 
 # Set up Microsoft Purview Audit (Standard)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview Audit (Standard) in Microsoft 365 lets you search for audit records for activities performed in the different Microsoft 365 services by users and admins. Because Audit (Standard) is enabled by default for most Microsoft 365 and Office 365 organizations, there's only a few things you need to do before you and others in your organization can search the audit log.
 

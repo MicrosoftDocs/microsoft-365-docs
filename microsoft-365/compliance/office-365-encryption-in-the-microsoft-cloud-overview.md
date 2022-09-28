@@ -13,15 +13,13 @@ search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_Enterprise
-- M365-security-compliance
+- purview-compliance
 - Strat_O365_Enterprise
 description: In this article, read an overview of the various forms of encryption used to keep customer data safe in the Microsoft cloud.
 ms.custom: seo-marvel-apr2020
 ---
 
 # Encryption in the Microsoft Cloud
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Customer data within Microsoft's enterprise cloud services is protected by several technologies and processes, including various forms of encryption. (Customer data in this document includes Exchange Online mailbox content, e-mail body, calendar entries, and the content of e-mail attachments, and if applicable, Skype for Business content), SharePoint Online site content and the files stored within sites, and files uploaded to OneDrive for Business or Skype for Business.) Microsoft uses multiple encryption methods, protocols, and ciphers across its products and services to help provide a secure path for customer data to travel through our cloud services, and to help protect the confidentiality of customer data that is stored within our cloud services. Microsoft uses some of the strongest, most secure encryption protocols available to provide barriers against unauthorized access to customer data. Proper key management is also an essential element of encryption best practices, and Microsoft works to ensure that all Microsoft-managed encryption keys are properly secured.
 

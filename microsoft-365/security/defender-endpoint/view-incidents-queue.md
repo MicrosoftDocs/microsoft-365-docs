@@ -3,7 +3,7 @@ title: View and organize the Incidents queue
 ms.reviewer: 
 description: See the list of incidents and learn how to apply filters to limit the list and get a more focused view.
 keywords: view, organize, incidents, aggregate, investigations, queue, ttp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,10 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # View and organize the Microsoft Defender for Endpoint Incidents queue
@@ -41,6 +42,7 @@ On the top navigation you can:
 - Batch-select the incidents to assign 
 - Navigate between pages
 - Apply filters
+- Customize and apply date ranges
 
 :::image type="content" source="images/atp-incident-queue.png" alt-text="The Incidents queue" lightbox="images/atp-incident-queue.png":::
 

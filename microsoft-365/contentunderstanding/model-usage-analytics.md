@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
@@ -34,12 +34,12 @@ Your SharePoint Syntex content center provides you model usage analytics to prov
 
 ### Roll up of model usage data in the default content center
 
-In SharePoint Syntex, the default content center is created during setup. Additional content centers can also be created as needed. For example, departments might create their own content centers to create and manage their models. 
+In SharePoint Syntex, the default content center is created during setup. More content centers can also be created as needed. For example, departments might create their own content centers to create and manage their models. 
 
-In regards to model usage analytics, note that:
+Regarding model usage analytics, note that:
 
-- Your default content center will show model usage analytics for all content centers and models in your org, including ones created in additional content centers. This gives content managers and other stakeholders a centralized portal to manage and oversee the content centers and models across the company.  
-- Other content centers will only show model usage analytics for the models that were created in them. This gives content managers insights into usage data for only the models they are concerned with.
+- Your default content center will show model usage analytics for all content centers and models in your org, including ones created in other content centers. This gives content managers and other stakeholders a centralized portal to manage and oversee the content centers and models across the company.  
+- Other content centers will only show model usage analytics for the models that were created in them. This gives content managers insights into usage data for only the models they're concerned with.
 
 
 ## Classification by model

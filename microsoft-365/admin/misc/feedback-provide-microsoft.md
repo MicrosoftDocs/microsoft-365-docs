@@ -20,11 +20,11 @@ Microsoft values your feedback, and every day we look at feedback from users acr
 
 Whether you’re providing feedback directly in an application or website, through the Feedback portal, or in the [Windows Feedback Hub](https://aka.ms/WIPFeedbackHub), there are some simple steps you can take to make your feedback as strong as possible.
 
-- If you are using a community feedback experience, Microsoft will prioritize feedback that high volumes of our users are experiencing or requesting.  You can see if feedback you want to provide already exists by searching to browse existing feedback to see if your feedback has already been mentioned by someone in the community.  It’s possible that you have the same feedback as someone else, and you can add your voice to the existing feedback rather than creating a copy of it.  If you can’t find feedback like yours, it’s time to add new feedback
+- If you're using a community feedback experience, Microsoft will prioritize feedback that high volumes of our users are experiencing or requesting.  You can see if feedback you want to provide already exists by searching to browse existing feedback to see if your feedback has already been mentioned by someone in the community.  It’s possible that you have the same feedback as someone else, and you can add your voice to the existing feedback rather than creating a copy of it.  If you can’t find feedback like yours, it’s time to add new feedback
 - When providing feedback to Microsoft, it’s important that you keep your comments specific to a single topic at a time.  Product teams are continuously reading feedback, and when we see similar feedback from different users, we try to combine it to see the full impact to our userbase.  Providing feedback about a single topic at a time helps us to link similar feedback together.
-- If you’re experiencing an issue, try to describe the steps you took that caused that issue to occur.  It’s great to know if the problem is intermittent or happens every time, so our product teams can take a look at it and try to reproduce the problem.  If you are using Windows Feedback Hub and your diagnostic settings allow it, you can use the “Recreate my problem” feature to attach screenshots and diagnostic logs as you reproduce the issue you’re facing.  Typically, more details are better.  If you are using an app and it tends to crash every time an action is performed, include that in your description in addition to telling us that the application is crashing.
-- Whenever you provide feedback, remember not to provide any identifiable information such as phone numbers or email addresses, and make sure to avoid leaving personal information in any screenshots you attach.  Feedback submitted on community platforms can be seen by other users, and you would not want to expose personal data.
-- When you are finished submitting your feedback, you can log into the Feedback portal to view feedback you previously sent to Microsoft and see the status of that feedback.  If you provided feedback on Windows Feedback Hub, you can open the app and view your My Feedback section to see the status of your feedback.
+- If you’re experiencing an issue, try to describe the steps you took that caused that issue to occur.  It’s great to know if the problem is intermittent or happens every time, so our product teams can take a look at it and try to reproduce the problem.  If you're using Windows Feedback Hub and your diagnostic settings allow it, you can use the “Recreate my problem” feature to attach screenshots and diagnostic logs as you reproduce the issue you’re facing.  Typically, more details are better.  If you're using an app and it tends to crash every time an action is performed, include that in your description in addition to telling us that the application is crashing.
+- Whenever you provide feedback, remember not to provide any identifiable information such as phone numbers or email addresses, and make sure to avoid leaving personal information in any screenshots you attach.  Feedback submitted on community platforms can be seen by other users, and you wouldn't want to expose personal data.
+- When you're finished submitting your feedback, you can log into the Feedback portal to view feedback you previously sent to Microsoft and see the status of that feedback.  If you provided feedback on Windows Feedback Hub, you can open the app and view your My Feedback section to see the status of your feedback.
 
 ## Where to provide feedback
 
@@ -34,36 +34,36 @@ There are many places you can provide feedback to Microsoft.  Within an applicat
 
 :::image type="content" source="../../media/i-have-a-suggestion.png" alt-text="Screenshot: Text field to enter feedback suggestion to Microsoft":::
 
-Depending on the platform and application, you may be able to submit additional logs and screenshots.  These are very helpful for the product teams at Microsoft to understand your feedback, so please include screenshots and logs when possible.
+Depending on the platform and application, you may be able to submit additional logs and screenshots.  These are helpful for the product teams at Microsoft to understand your feedback, so please include screenshots and logs when possible.
 
 ### Sending feedback from Feedback, our community feedback web portal
 
-If you are using [Feedback](https://feedbackportal.microsoft.com/), you can provide feedback directly within the web portal.  Community feedback allows you to browse or vote on feedback from the community. Community feedback is publicly displayed within different forums. Your user name will be displayed by feedback you submit publicly or comments you provide.
+If you're using [Feedback](https://feedbackportal.microsoft.com/), you can provide feedback directly within the web portal.  Community feedback allows you to browse or vote on feedback from the community. Community feedback is publicly displayed within different forums. Your user name will be displayed by feedback you submit publicly or comments you provide.
 
 :::image type="content" source="../../media/sending-feedback-community-portal.png" alt-text="Screenshot: Selection of Microsoft products you can send feedback on":::
 
-Selecting a forum allows you to see all feedback related to that product, and you can upvote or comment on feedback that matches yours.  If you do not see feedback that is similar to your own, you can submit new feedback through the portal itself.
+Selecting a forum allows you to see all feedback related to that product, and you can upvote or comment on feedback that matches yours.  If you don't see feedback that is similar to your own, you can submit new feedback through the portal itself.
 
 ### Sending feedback from Windows Feedback Hub
 
-If you are using Windows Feedback Hub, you can provide feedback from within the Feedback Hub application.  For more details on using Feedback Hub, you can [read this article](/windows-insider/feedback).  Feedback Hub allows you to also view feedback from other users in the community directly from your Windows device.  You may also browse, upvote, or comment on existing feedback, or submit your own using the new feedback form to provide bug reports or feature suggestions.
+If you're using Windows Feedback Hub, you can provide feedback from within the Feedback Hub application.  For more details on using Feedback Hub, you can [read this article](/windows-insider/feedback).  Feedback Hub allows you to also view feedback from other users in the community directly from your Windows device.  You may also browse, upvote, or comment on existing feedback, or submit your own using the new feedback form to provide bug reports or feature suggestions.
 
 :::image type="content" source="../../media/summarize-your-feedback.png" alt-text="Screenshot: Page to enter and summarize your feedback":::
 
 ## Deleting public feedback
 
-If you submitted feedback publicly on the Feedback web portal that you wish to delete, you can remove it by navigating to your My Feedback section.  Then, select the feedback item you wish to delete, and select “Delete.”  You will be presented with a warning that deleting feedback is irreversible, and that by removing your feedback it will remove all comments, votes, flags, and follows associated with it.
+If you submitted feedback publicly on the Feedback web portal that you wish to delete, you can remove it by navigating to your My Feedback section.  Then, select the feedback item you wish to delete, and select “Delete.”  You'll be presented with a warning that deleting feedback is irreversible, and that by removing your feedback it will remove all comments, votes, flags, and follows associated with it.
 
 :::image type="content" source="../../media/delete-feedback.png" alt-text="Screenshot: Option to delete feedback":::
 
 ## How Microsoft uses feedback
 
-Once your feedback is sent to Microsoft, it is routed to the relevant product teams who can review it. We look at new feedback that comes in to evaluate if other users have reported similar feedback, and we try to group these similar feedback reports together to surface the most impactful issues and help prioritize future work.
-Through Windows Feedback Hub and the Feedback web portal, Microsoft has the ability to update the status of your feedback and respond to it.  We cannot promise to respond to every single feedback report, but we do try to evaluate all feedback that comes in to help prioritize product changes.
+Once your feedback is sent to Microsoft, it's routed to the relevant product teams who can review it. We look at new feedback that comes in to evaluate if other users have reported similar feedback, and we try to group these similar feedback reports together to surface the most impactful issues and help prioritize future work.
+Through Windows Feedback Hub and the Feedback web portal, Microsoft has the ability to update the status of your feedback and respond to it.  We can’t promise to respond to every single feedback report, but we do try to evaluate all feedback that comes in to help prioritize product changes.
 
 ### What responses can I expect?
 
-You will see each feedback card on the feedback portal tagged with one of the statuses below. You can find this status tag as shown in the screenshot below.
+You'll see each feedback card on the feedback portal tagged with one of the statuses below. You can find this status tag as shown in the screenshot below.
 
 :::image type="content" source="../../media/ink-to-text-conversion.png" alt-text="Screenshot: Example of feedback card on Ink to text conversion on an iPad":::
 
@@ -77,19 +77,19 @@ Once your feedback has moved to each product teams’ review process this is the
 Once your feedback was deemed to be a suggestion for product improvement and has moved to each product teams’ review process this is the status the feedback would move to.
 
 **We’re looking into this**  The product team is investigating the reported issue.  
-If you submitted feedback related to an issue you were facing and the product team has started investigation the feedback status would move to this.
+If you submitted feedback related to an issue, you were facing and the product team has started investigation the feedback status would move to this.
 
 **We need more details**  We need your help to better understand this feedback.
 We were unable to determine next steps from the information that was provided. This could be due to lack of sufficient description, missing context, screenshots, etc. Typically, this will be accompanied by a Microsoft response clarifying what additional information is needed.
 
-**We’re working on this**  We are working on a change in the product to address your feedback.
+**We’re working on this**  We're working on a change in the product to address your feedback.
 Your feedback will move to this status when it’s in the process of being addressed and the product team is actively working on it.
 
 **We’ve closed this**  We were unable to act on this feedback. Please see the Microsoft response for more information.
-Your feedback will move to this status when we cannot take any next steps with it because it was irrelevant to our products or violates our code of conduct. Typically the Microsoft response will clarify why it was closed.
+Your feedback will move to this status when we can’t take any next steps with it because it was irrelevant to our products or violates our code of conduct. Typically the Microsoft response will clarify why it was closed.
 
 **Already supported**  We believe this already exists in the product.
-Your feedback would move to this status when the product team has reviewed your feedback and determined that there is either a workaround to the issue you are facing or your ask is already implemented in the product. Typically the Microsoft response will contain more information on what you can do to self-help.
+Your feedback would move to this status when the product team has reviewed your feedback and determined that there's either a workaround to the issue you're facing or your ask is already implemented in the product. Typically the Microsoft response will contain more information on what you can do to self-help.
 
 **Great News! We’ve added this**  This suggestion has been added.
 When the product team has implemented and has released or is releasing a new build with the improvement, your feedback would move to this status. Typically the Microsoft response would contain relevant instructions on how to access new features or fixes.
@@ -105,7 +105,7 @@ Thank you: We appreciate your feedback.
 
 ## Public feedback moderation
 
-Moderation of community feedback may be performed by Microsoft employees or approved vendors.  Feedback that violates the Feedback Code of Conduct may be hidden from the public view, but Microsoft will not delete this data outside of our data retention policies.
+Moderation of community feedback may be performed by Microsoft employees or approved vendors.  Feedback that violates the Feedback Code of Conduct may be hidden from the public view, but Microsoft won't delete this data outside of our data retention policies.
 
 ## Data Handling and Privacy
 

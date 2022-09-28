@@ -1,17 +1,17 @@
 ---
 title: An overview of Microsoft LTI apps
-ms.author: heidip
-author: MicrosoftHeidi
+ms.author: danismith
+author: DaniEASmith
 manager: serdars
 ms.reviewer: amitman, sovaish
 ms.date: 06/15/2021
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - M365-modern-desktop
-ms.localizationpriority: null
+ms.localizationpriority: medium
 description: Learn about Learning Tools Interoperability (LTI) Microsoft apps, and how they will help educators when integrating Microsoft apps into their Learning Management System (LMS).
 ---
 
@@ -65,24 +65,29 @@ For configuration steps, see:
 
 - [Microsoft OneDrive LTI with Canvas](onedrive-lti.md).
 - [Microsoft OneDrive LTI with Blackboard](onedrive-lti-blackboard.md).
+- [Microsoft OneDrive LTI with D2l Brightspace](onedrive-lti-brightspace.md)
 
 ## Teams LTI apps
 
-### Teams meetings LTI
+### Teams Meetings LTI
 
-Microsoft Teams meetings LTI app incorporates Teams meetings into LMS courses. Educators and students can view past and upcoming meetings, schedule individual or recurring meetings, and join team meetings related to the course, all from within their LMS.
+Microsoft Teams Meetings LTI app incorporates Teams meetings into LMS courses. Educators and students can view past and upcoming meetings, schedule individual or recurring meetings, and join team meetings related to the course, all from within their LMS.
 
 For configuration steps, see:
 
 - [Microsoft Teams Meetings with Canvas](teams-meetings-with-canvas.md).
 - [Microsoft Teams Meetings with Moodle](teams-classes-meetings-with-moodle.md).
+- [Microsoft Teams Meetings with Open LMS](open-lms-teams-classes-and-meetings.md).
+- [Microsoft Teams Meetings with Desire2Learn Brightspace](teams-classes-meetings-with-brightspace.md).
 
-### Teams classes LTI
+### Teams Classes LTI
 
-The Microsoft Teams classes LTI app helps educators and students navigate between their LMS and Teams. Users can access their class teams associated with their course within their LMS.
+The Microsoft Teams Classes LTI app helps educators and students navigate between their LMS and Teams. Users can access their class teams associated with their course within their LMS.
 
 For configuration steps, see:
 
-- [Teams Classes LTI with Canvas](teams-classes-with-canvas.md).
-- [Teams Classes LTI with Blackboard](teams-classes-with-blackboard.md).
-- [Teams Classes LTI with Moodle](teams-classes-meetings-with-moodle.md).
+- [Microsoft Teams Classes with Canvas](teams-classes-with-canvas.md).
+- [Microsoft Teams Classes with Blackboard](teams-classes-with-blackboard.md).
+- [Microsoft Teams Classes with Moodle](teams-classes-meetings-with-moodle.md).
+- [Microsoft Teams Classes with Open LMS](open-lms-teams-classes-and-meetings.md).
+- [Microsoft Teams Classes with Desire2Learn Brightspace](teams-classes-meetings-with-brightspace.md).

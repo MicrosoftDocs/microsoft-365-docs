@@ -9,6 +9,9 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
+ms.collection:
+- purview-compliance
+- tier1
 ms.localizationpriority: high
 description: Learn about the default labels and policies for Microsoft Purview Information Protection to classify and protect sensitive content.
 ---
@@ -16,8 +19,6 @@ description: Learn about the default labels and policies for Microsoft Purview I
 # Default labels and policies to protect your data
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Eligible customers can activate default labels and policies for Microsoft Purview Information Protection: 
 
@@ -71,18 +72,18 @@ When you don't have sensitivity labels that are published, we'll create the foll
 
 |Label name|Label description for users|Settings|
 |-------------------------------|---------------------------|-----------------|
-|Personal|Non-business data, for personal use only.|**Scope**: File, Email <br /><br />**Content marking**: No<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
-|Public|Business data that is specifically prepared and approved for public consumption.|**Scope**: File, Email <br /><br />**Content marking**: No<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
-|General|Business data that is not intended for public consumption. However, this can be shared with external partners, as required. Examples include a company internal telephone directory, organizational charts, internal standards, and most internal communication.|**Scope**: File, Email <br /><br />**Content marking**: No<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
-|General <br /> \ Anyone (unrestricted)|Organization data that isn’t intended for public consumption but can be shared with external partners if appropriate. Examples include customer conversations that don’t include sensitive info or released marketing materials.|**Scope**: File, Email <br /><br />**Content marking**: No<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
-|General <br /> \ All Employees (unrestricted)|Organization data that isn’t intended for public consumption. If you need to share this content with external partners, confirm with other data owners that it's OK to share and then change the label to General \ Anyone (unrestricted) . Examples include a company internal telephone directory, organizational charts, internal standards, and most internal communication.|**Scope**: File, Email <br /><br />**Content marking**: No<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
-|Confidential|Sensitive business data that could cause damage to the business if shared with unauthorized people. Examples include contracts, security reports, forecast summaries, and sales account data.|**Scope**: File, Email <br /><br />**Content marking**: No<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
-|Confidential <br /> \ Anyone (unrestricted)|Confidential data that doesn’t need to be encrypted. Use this option with care and appropriate business justification.|This label is selected for [client-side auto-labeling](#client-side-auto-labeling) and [service-side auto-labeling](#service-side-auto-labeling).<br /><br /> **Scope**: File, Email <br /><br />**Content marking**: Footer: Classified as Confidential<br /><br />**Auto-labeling**: Recommend that users apply the label <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
-|Confidential <br /> \ All Employees|Confidential data that requires protection, which allows all employees full permissions. Data owners can track and revoke content.|This label is selected for [client-side auto-labeling](#client-side-auto-labeling) and [service-side auto-labeling](#service-side-auto-labeling).<br /><br /> **Scope**: File, Email <br /><br />**Encryption**: All users and groups in the org: Co-Author<br /><br />**Content marking**: Footer: Classified as Confidential<br /><br />**Auto-labeling**: Recommend that users apply the label <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None |
-|Confidential <br /> \ Trusted People|Confidential data that can be shared with trusted people inside and outside your organization. These people can also reshare the data as needed.|**Scope**: File, Email <br /><br />**Encryption**: Let users assign permissions: <br /> - Encrypt-Only for Outlook <br />- Prompt users in Word, PowerPoint, and Excel<br /><br />**Content marking**: Footer: Classified as Confidential<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
-|Highly Confidential|Very sensitive business data that would cause damage to the business if it was shared with unauthorized people. Examples include employee and customer information, passwords, source code, and pre-announced financial reports.|**Scope**: File, Email <br /><br />**Content marking**: Watermark: HIGHLY CONFIDENTIAL<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
-|Highly Confidential <br /> \ All Employees|Highly confidential data that allows all employees view, edit, and reply permissions to this content. Data owners can track and revoke content.|**Scope**: File, Email <br /><br />**Encryption**: All users and groups in the org: Co-Author<br /><br />**Content marking**: Footer: Classified as Highly Confidential<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
-|Highly Confidential <br /> \ Specific People |Highly confidential data that requires protection and can be viewed only by people you specify and with the permission level you choose.|**Scope**: File, Email <br /><br />**Encryption**: Let users assign permissions: <br />- Do Not Forward for Outlook <br />- Prompt users in Word, PowerPoint, and Excel<br /><br />**Content marking**: Footer: Classified as Highly Confidential<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|Personal|Non-business data, for personal use only.|**Scope**: Items (File, Email) <br /><br />**Content marking**: No<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|Public|Business data that is specifically prepared and approved for public consumption.|**Scope**: Items (File, Email) <br /><br />**Content marking**: No<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|General|Business data that is not intended for public consumption. However, this can be shared with external partners, as required. Examples include a company internal telephone directory, organizational charts, internal standards, and most internal communication.|**Scope**: Items (File, Email) <br /><br />**Content marking**: No<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|General <br /> \ Anyone (unrestricted)|Organization data that isn’t intended for public consumption but can be shared with external partners if appropriate. Examples include customer conversations that don’t include sensitive info or released marketing materials.|**Scope**: Items (File, Email) <br /><br />**Content marking**: No<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|General <br /> \ All Employees (unrestricted)|Organization data that isn’t intended for public consumption. If you need to share this content with external partners, confirm with other data owners that it's OK to share and then change the label to General \ Anyone (unrestricted) . Examples include a company internal telephone directory, organizational charts, internal standards, and most internal communication.|**Scope**: Items (File, Email) <br /><br />**Content marking**: No<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|Confidential|Sensitive business data that could cause damage to the business if shared with unauthorized people. Examples include contracts, security reports, forecast summaries, and sales account data.|**Scope**: Items (File, Email) <br /><br />**Content marking**: No<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|Confidential <br /> \ Anyone (unrestricted)|Confidential data that doesn’t need to be encrypted. Use this option with care and appropriate business justification.|This label is selected for [client-side auto-labeling](#client-side-auto-labeling) and [service-side auto-labeling](#service-side-auto-labeling).<br /><br /> **Scope**: Items (File, Email) <br /><br />**Content marking**: Footer: Classified as Confidential<br /><br />**Auto-labeling**: Recommend that users apply the label <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|Confidential <br /> \ All Employees|Confidential data that requires protection, which allows all employees full permissions. Data owners can track and revoke content.|This label is selected for [client-side auto-labeling](#client-side-auto-labeling) and [service-side auto-labeling](#service-side-auto-labeling).<br /><br /> **Scope**: Items (File, Email) <br /><br />**Encryption**: All users and groups in the org: Co-Author<br /><br />**Content marking**: Footer: Classified as Confidential<br /><br />**Auto-labeling**: Recommend that users apply the label <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None |
+|Confidential <br /> \ Trusted People|Confidential data that can be shared with trusted people inside and outside your organization. These people can also reshare the data as needed.|**Scope**: Items (File, Email) <br /><br />**Encryption**: Let users assign permissions: <br /> - Encrypt-Only for Outlook <br />- Prompt users in Word, PowerPoint, and Excel<br /><br />**Content marking**: Footer: Classified as Confidential<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|Highly Confidential|Very sensitive business data that would cause damage to the business if it was shared with unauthorized people. Examples include employee and customer information, passwords, source code, and pre-announced financial reports.|**Scope**: Items (File, Email) <br /><br />**Content marking**: Watermark: HIGHLY CONFIDENTIAL<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|Highly Confidential <br /> \ All Employees|Highly confidential data that allows all employees view, edit, and reply permissions to this content. Data owners can track and revoke content.|**Scope**: Items (File, Email) <br /><br />**Encryption**: All users and groups in the org: Co-Author<br /><br />**Content marking**: Footer: Classified as Highly Confidential<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|Highly Confidential <br /> \ Specific People |Highly confidential data that requires protection and can be viewed only by people you specify and with the permission level you choose.|**Scope**: Items (File, Email) <br /><br />**Encryption**: Let users assign permissions: <br />- Do Not Forward for Outlook <br />- Prompt users in Word, PowerPoint, and Excel<br /><br />**Content marking**: Footer: Classified as Highly Confidential<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
 
 > [!NOTE]
 > The label names and descriptions are automatically available for the following locales: US English, Chinese Simplified and Traditional, French, German, Italian, Japanese, Korean, Portuguese Brazilian, Russian, and Spanish.
@@ -126,18 +127,39 @@ If you want to edit the client-side auto-labeling configuration, see [How to con
 
 ## Service-side auto-labeling 
 
-Service-side auto-labeling helps label sensitive documents at rest, and emails in transit. The default service-side auto-labeling policy creates a policy in simulation mode for documents stored in all SharePoint or OneDrive sites, and all emails that are sent via Exchange Online. In simulation mode, items aren't actually labeled until you turn on the policy. Simulation mode allows you to preview what items would get labeled when the policy is turned on, so you have confidence in the labeling feature before you deploy the policy to your tenant for actual labeling. 
+Service-side auto-labeling helps label sensitive documents at rest, and emails in transit. The default service-side auto-labeling policy creates policies that run in simulation mode for documents stored in all SharePoint or OneDrive sites, and all emails that are sent via Exchange Online. 
 
-The default service-side auto-labeling has the following configuration: 
+In simulation mode, items aren't actually labeled until the policy is turned on. You can manually turn on the policy, or unless you change the default setting, the policy will be automatically turned on for you if there aren't any changes to the policy within a set number of days from when the simulation completes.
+
+> [!NOTE]
+> Automatically turning on auto-labeling policies is new and gradually rolling out for new auto-labeling policies. You might not see this configuration immediately, or for all policies.
+
+In most cases, the number of days before an unedited policy is automatically turned on is 7. However, specific to new customers from June 23, 2022, the initial number of days is 25, and then 7 after the policy is edited.
+
+Simulation mode allows you to preview what items would get labeled when the policy is turned on, so you have confidence in the labeling feature before you deploy the policy to your tenant for actual labeling. 
+
+The default service-side auto-labeling policies have the following configuration: 
+
+For all customers:
 
 - If there are 1-9 instances of credit card numbers found in a document or email, apply the sensitivity label **Confidential** \ **Anyone (unrestricted)**
-
+    
 - If there are 10 or more instances of credit card numbers found in a document or email, apply the sensitivity label **Confidential** \ **All Employees** 
 
 > [!NOTE]
 > If we detected you have your own sensitivity labels published, we'll prompt you to select one of your own labels for your auto-labeling policy.
 
-When the simulation is complete, review the results and if you are happy with them, turn on the policy.
+For new customers from June 23, 2022, and the Microsoft 365 tenant is in the US region:
+
+- If there are 1-9 instances of US personal data and full names found in a document or email, apply the sensitivity label **Confidential** \ **Anyone (unrestricted)**
+
+- If there are 10 or more instances of US personal data and full names found in a document or email, apply the sensitivity label **Confidential** \ **All Employees** 
+
+New customers from June 23, 2022 have two auto-labeling policies for each setting. One policy is for the Exchange location, and the other for the SharePoint and OneDrive locations. Although the policies are created at the same time, simulation isn't immediately turned on for SharePoint and OneDrive:
+- Exchange location: The auto-labeling policy is created and immediately starts simulation.
+- SharePoint and OneDrive locations: The auto-labeling policy is created but waits 25 days before it automatically starts simulation. This delay gives you time for files to be created and saved to these locations. 
+
+When the simulation is complete, review the results and if you are happy with them, turn on the policies. Slowly rolling out starting June 23, 2022, by default, the policies will be automatically turned on if they're not edited within the set time period (25 days initially for new customers, otherwise 7 days).
 
 For more information about simulation mode, see [Learn about simulation mode](apply-sensitivity-label-automatically.md#learn-about-simulation-mode).
 

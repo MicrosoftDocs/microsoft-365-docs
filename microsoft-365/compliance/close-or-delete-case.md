@@ -1,27 +1,27 @@
 ---
 title: "Close or delete a case"
+description: Learn what happens when an investigation or legal case supported by a Microsoft Purview eDiscovery (Premium) case is closed or deleted.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: Learn what happens when an investigation or legal case supported by a Microsoft Purview eDiscovery (Premium) case is closed or deleted.
 ms.custom: seo-marvel-mar2020
 ---
 
 # Close or delete an eDiscovery (Premium) case
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 When the legal case or investigation supported by a Microsoft Purview eDiscovery (Premium) case is completed, you can close or delete a case. You can also reopen a closed case.
 

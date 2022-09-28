@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_Enterprise
-- M365-security-compliance
+- purview-compliance
 - Strat_O365_Enterprise
 ms.custom:
 - seo-marvel-mar2020
@@ -21,8 +21,6 @@ description: In this article, you'll learn about risks to Office 365 and the enc
 ---
 
 # Encryption Risks and Protections
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft follows a control and compliance framework that focuses on risks to the Microsoft 365 service and to customer data. Microsoft implements a large set of technology and process-based methods (referred to as controls) to mitigate these risks. Identification, evaluation, and mitigation of risks via controls is a continuous process. 
 

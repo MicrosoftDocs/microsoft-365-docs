@@ -2,7 +2,7 @@
 title: Customize controlled folder access
 description: Add other folders that should be protected by controlled folder access, or allow apps that are incorrectly blocking changes to important files.
 keywords: Controlled folder access, windows 10, windows 11, windows defender, ransomware, protect, files, folders, customize, add folder, add app, allow, add executable
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,10 +11,10 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.date:
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Customize controlled folder access
@@ -172,4 +172,4 @@ For more information about customizing the notification when a rule is triggered
 
 - [Protect important folders with controlled folder access](controlled-folders.md)
 - [Enable controlled folder access](enable-controlled-folders.md)
-- [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
+- [Enable attack surface reduction rules](enable-attack-surface-reduction.md)

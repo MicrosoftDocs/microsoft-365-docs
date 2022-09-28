@@ -1,9 +1,10 @@
 ---
 title: "Track Relevance analysis in eDiscovery (Premium)"
+description: "Learn how to view and interpret the Relevance training status and results for case issues in eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 
@@ -14,14 +15,14 @@ ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to view and interpret the Relevance training status and results for case issues in eDiscovery (Premium)."
 ---
 
 # Track Relevance analysis in eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 In Microsoft Purview eDiscovery (Premium), the Relevance Track tab displays the calculated validity of the Relevance training performed in the Tag tab and indicates the next step to take in the iterative training process in Relevance. 
   

@@ -25,7 +25,11 @@ ms.date: 10/20/2021
 
 # Microsoft 365 Business Premium
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 ## Watch: What is Microsoft 365 Business Premium?
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198029).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
 

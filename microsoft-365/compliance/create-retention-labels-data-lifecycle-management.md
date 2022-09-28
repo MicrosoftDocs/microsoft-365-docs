@@ -11,7 +11,8 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority : high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid: 
 - MOE150
@@ -22,8 +23,6 @@ description: Instructions to create retention labels for exceptions to retention
 # Create retention labels for exceptions to your retention policies
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 As part of your data governance strategy to retain what you need and delete what you don't, you might need to create a few retention labels for items that need exceptions to your retention policies.
 
@@ -48,7 +47,7 @@ The global admin for your organization has full permissions to create and edit r
 
 ## How to create retention labels for data lifecycle management
 
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), navigate to: **Solutions** > **Data lifecycle management** > **Labels** tab > + **Create a label**
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), navigate to: **Solutions** > **Data lifecycle management** > **Microsoft 365** > **Labels** tab > + **Create a label**
     
     Don't immediately see the **Data lifecycle management** solution? First select **Show all**. 
 

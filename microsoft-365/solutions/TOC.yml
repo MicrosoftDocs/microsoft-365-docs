@@ -307,8 +307,6 @@
             href: end-life-cycle-groups-teams-sites-yammer.md
       - name: File collaboration in SharePoint with Microsoft 365
         href: /sharepoint/deploy-file-collaboration
-      - name: OneDrive Guide for enterprises
-        href: /onedrive/plan-onedrive-enterprise
 
     - name: Compliance
       items:
@@ -320,12 +318,8 @@
         href: ../compliance/ediscovery.md
       - name: Microsoft Purview eDiscovery (Premium)
         href: ../compliance/overview-ediscovery-20.md
-      - name: Regulatory compliance action plans
+      - name: Regulatory compliance FAQs and action plans
         items: 
-        - name: ISO - Recommended action plan
-          href: /compliance/regulatory/iso-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-        - name: NIST - Recommended action plan
-          href: /compliance/regulatory/nist-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: CCPA - Frequently asked questions
           href: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: GDPR - Recommended action plan
@@ -376,8 +370,18 @@
     
 - name: Industry-specific guidance
   items: 
+    - name: Microsoft 365 for frontline workers
+      items: 
+      - name: Overview
+        href: /microsoft-365/frontline/flw-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+      - name: Step 1. Choose your scenarios
+        href: /microsoft-365/frontline/flw-choose-scenarios?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+      - name: Step 2. Set up Microsoft 365 for frontline workers
+        href: /microsoft-365/frontline/flw-deploy-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Financial services
       items:
+      - name: Overview
+        href: financial-services-overview.md
       - name: Security and compliance for financial services
         href: financial-services-secure-collaboration.md
     - name: Energy and utility services
@@ -389,7 +393,7 @@
       - name: Overview
         href: healthcare-overview.md
       - name: Teams for Healthcare
-        href: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
+        href: /microsoft-365/frontline/teams-in-hc
     - name: Education
       items: 
       - name: Teams for Education
@@ -405,7 +409,7 @@
       - name: Overview
         href: retail-overview.md
       - name: Teams for Retail
-        href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-retail-landing-page
+        href: /microsoft-365/frontline/teams-for-retail-landing-page
 - name: Enterprise architecture design principles
   items: 
     - name: Overview

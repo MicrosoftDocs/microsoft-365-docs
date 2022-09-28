@@ -1,11 +1,11 @@
 ---
-title: "Configure Microsoft 365 Enterprise services and applications"
+title: Configure Microsoft 365 Enterprise services and applications
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365

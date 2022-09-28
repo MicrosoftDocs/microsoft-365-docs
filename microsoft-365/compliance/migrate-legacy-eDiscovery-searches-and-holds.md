@@ -1,25 +1,26 @@
 ---
 title: "Migrate legacy eDiscovery searches and holds to the Microsoft Purview compliance portal"
+description: learn about migrating legacy eDiscovery searches and holds to the compliance portal.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ms.custom: admindeeplinkEXCHANGE
-ROBOTS: NOINDEX, NOFOLLOW 
-description: 
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Migrate legacy eDiscovery searches and holds to the compliance portal
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The Microsoft Purview compliance portal provides an improved experience for eDiscovery usage, including: higher reliability, better performance, and many features tailored to eDiscovery workflows including cases to organize your content by matter, review sets to review content and analytics to help cull data for review such as near-duplicate grouping, email threading, themes analysis, and predictive coding.
 
@@ -30,31 +31,32 @@ To help customers take advantage of the new and improved functionality, this art
 
 ## Before you begin
 
+- You need to install the Exchange Online PowerShell module. For instructions, see [Install and maintain the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
+
 - You have to be a member of the eDiscovery Manager role group in the compliance portal to run the PowerShell commands described in this article. You also have to be a member of the Discovery Management role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
 - This article provides guidance on how to create an eDiscovery hold. The hold policy will be applied to mailboxes through an asynchronous process. When creating an eDiscovery hold, you must create both a CaseHoldPolicy and CaseHoldRule, otherwise the hold will not be created and content locations will not be placed on hold.
 
-## Step 1: Connect to Exchange Online PowerShell and Security & Compliance Center PowerShell
+## Step 1: Connect to Exchange Online PowerShell and Security & Compliance PowerShell
 
-The first step is to connect to Exchange Online PowerShell and Security & Compliance Center PowerShell. You can copy the following script, paste it into a PowerShell window and then run it. You'll be prompted for credentials for the organization that you want to connect to. 
+The first step is to connect to Exchange Online PowerShell and Security & Compliance PowerShell in the same PowerShell window. You can copy the following commands, paste them into a PowerShell window and then run them. You'll be prompted for credentials.
 
 ```powershell
-$UserCredential = Get-Credential
-$sccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $sccSession -DisableNameChecking
-$exoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $exoSession -AllowClobber -DisableNameChecking
+Connect-IPPSSession
+Connect-ExchangeOnline -UseRPSSession
 ```
 
-You need to run the commands in the following steps in this PowerShell session.
+For detailed instructions, see [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) and [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## Step 2: Get a list of In-Place eDiscovery searches by using Get-MailboxSearch
 
-After you've authenticated, you can get a list of In-Place eDiscovery searches by running the **Get-MailboxSearch** cmdlet. Copy and paste the following command into PowerShell and then run it. A list of searches will be listed with their names and the status of any In-Place Holds.
+After you've conected, you can get a list of In-Place eDiscovery searches by running the **Get-MailboxSearch** cmdlet. Copy and paste the following command into the PowerShell window and then run it.
 
 ```powershell
 Get-MailboxSearch
 ```
+
+A list of searches will be listed with their names and the status of any In-Place Holds.
 
 The cmdlet output will be similar to the following:
 
@@ -69,7 +71,7 @@ $search = Get-MailboxSearch -Identity "Search 1"
 ```
 
 ```powershell
-$search | FL
+$search | Format-List
 ```
 
 The output of these two commands will be similar to the following:
@@ -77,7 +79,7 @@ The output of these two commands will be similar to the following:
 ![Example of PowerShell output from using Get-MailboxSearch for an individual search.](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> The duration of the In-Place Hold in this example is indefinite (*ItemHoldPeriod: Unlimited*). This is typical for eDiscovery and legal investigation scenarios. If the hold duration has is different value than indefinite, the reason is likely because the hold is being used to retain content in a retention scenario. Instead of using the eDiscovery cmdlets in Security & Compliance Center PowerShell for retention scenarios, we recommend that you use [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) and [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) to retain content. The result of using these cmdlets will be similar to using **New-CaseHoldPolicy** and **New-CaseHoldRule**, but you'll able to specify a retention period and a retention action, such as deleting content after the retention period expires. Also, using the retention cmdlets don't require you to associate the retention holds with an eDiscovery case.
+> The duration of the In-Place Hold in this example is indefinite (*ItemHoldPeriod: Unlimited*). This is typical for eDiscovery and legal investigation scenarios. If the hold duration has is different value than indefinite, the reason is likely because the hold is being used to retain content in a retention scenario. Instead of using the eDiscovery cmdlets in Security & Compliance PowerShell for retention scenarios, we recommend that you use [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) and [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) to retain content. The result of using these cmdlets will be similar to using **New-CaseHoldPolicy** and **New-CaseHoldRule**, but you'll able to specify a retention period and a retention action, such as deleting content after the retention period expires. Also, using the retention cmdlets don't require you to associate the retention holds with an eDiscovery case.
 
 ## Step 4: Create a case in the Microsoft Purview compliance portal
 
@@ -86,6 +88,7 @@ To create an eDiscovery hold, you have to create an eDiscovery case to associate
 ```powershell
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
+
 ![Example of running the New-ComplianceCase command.](../media/MigrateLegacyeDiscovery3.png)
 
 ## Step 5: Create the eDiscovery hold
@@ -147,7 +150,7 @@ If you migrate an In-Place eDiscovery search but don't associate it with an eDis
 ## More information
 
 - For more information about In-Place eDiscovery & Holds in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, see:
-  
+
   - [In-Place eDiscovery](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
   - [In-Place Hold and Litigation Hold](/exchange/security-and-compliance/in-place-and-litigation-holds)
@@ -155,15 +158,15 @@ If you migrate an In-Place eDiscovery search but don't associate it with an eDis
 - For more information about the PowerShell cmdlets used in the article, see:
 
   - [Get-MailboxSearch](/powershell/module/exchange/get-mailboxsearch)
-  
+
   - [New-ComplianceCase](/powershell/module/exchange/new-compliancecase)
 
   - [New-CaseHoldPolicy](/powershell/module/exchange/new-caseholdpolicy)
-  
+
   - [New-CaseHoldRule](/powershell/module/exchange/new-caseholdrule)
 
   - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
-  
+
   - [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch)
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)

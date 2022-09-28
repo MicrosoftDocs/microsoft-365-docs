@@ -11,7 +11,8 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -21,7 +22,10 @@ ms.custom: seo-marvel-apr2020
 
 # Test an exact data match sensitive information type
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+## Applies to
+
+- [New experience](sit-create-edm-sit-unified-ux-workflow.md)
+- [Classic experience](sit-create-edm-sit-classic-ux-workflow.md)
 
 After your exact data match (EDM) sensitive information type (SIT) has been created and an hour after verifying that your sensitive information table has finished uploading and indexing, you can test that it detects the information you want to detect by using the test function in the sensitive information types section in the Compliance center.
  
@@ -73,14 +77,13 @@ Once you're satisfied with the results of your testing and tuning, your EDM base
 
 If you don't find any matches, here are some troubleshooting tips.
 
-
 |Issue  |Troubleshooting tip  |
 |---------|---------|
 |No matches found     |  Confirm that your sensitive data was uploaded correctly using the commands explained in [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|
 |No matches found   | Test the SIT you used when you configured the primary element in each of your patterns. This will confirm that the SIT is able to match the examples in the item. Using an incorrectly defined SIT as the classification element of an EDM Sensitive information type is the most common cause for detection failures in EDM.         |
 |The SIT you selected for a primary element in the EDM type doesn't find a match in the item or finds fewer matches than you expected    |  Check that it supports the separators and delimiters that are in the content. Be sure to include the ignored delimiters defined in your schema.       |
-|The primary element SIT finds matches in an item, but the EDM SIT doesn't.     | - Check your REGEX statements for starting or ending a capturing whitespace delimiter, like /s. The whitespace won't match the hashed value in the data table. Use a word delimiter like /b instead. </br> - Check your REGEX statements to ensure that they capture the whole string you want to capture, not just a substring. For example, this pattern for email addresses [a-zA-Z]{30}@[a-zA-Z]{20}.[a-zA-Z]{2,3} will match *user@contoso.com* and *user@contoso.co.jp*.  |
-|An EDM SIT with primary elements and no secondary elements defined detects items, but doesn't detect, or detects fewer than expected, when primary and secondary elements are required.  | Make sure values for secondary evidence are composed of a single word or string that doesn't contain spaces or use REGEX statements that detect multi-word strings. For example, \b[A-Z][a-z]{1,25}([ -][A-Z][a-z]{1,25}){0,4}\b, which will match any sequence of one to five consecutive words that start with an uppercase character. Use this SIT as the classification element for the additional evidence conditions in your EDM sensitive info type XML. See [Create a rule package manually](sit-get-started-exact-data-match-create-rule-package.md#create-a-rule-package-manually)|
+|The primary element SIT finds matches in an item, but the EDM SIT doesn't.     | - Check your REGEX statements for starting or ending capturing whitespace delimiters, like \s. The whitespace won't match the hashed value in the data table. Use a word delimiter like \b instead. </br> - Check your REGEX statements to ensure that they capture the whole string you want to capture, not just a substring. For example, this pattern for email addresses \b[a-zA-Z]{2,30}@[a-zA-Z]{2,20}.[a-zA-Z]{2,3}\b will correctly match *user@contoso.com* but will only capture *user@contoso.co.jp* in incomplete form.
+|An EDM SIT with primary elements and no secondary elements defined detects items, but doesn't detect, or detects fewer matches than expected when primary and secondary elements are required.  | If values in a column used for secondary evidence are not composed of a single word or strings that don't contain spaces, commas, or other word separators, you will need to associate them with a sensitive info type that uses either a REGEX designed to detect multi-word strings that follow the desired pattern (e.g. a fixed number of consecutive words that start with an uppercase character), or a keyword dictionary that lists all the unique values in that column. For example, if there's an additional evidence column for a person's city or residence, you can create a list with all the unique city names from the table and use it to create a dictionary-based sensitive information type. Use this SIT as the classification element for the corresponding column in your EDM sensitive info type by exporting and editing the EDM SIT definition in XML. See [Create a rule package manually](sit-get-started-exact-data-match-create-rule-package.md#create-a-rule-package-manually).|
 |SIT test function doesn't detect any matches at all.   | Check if the SIT you selected includes requirements for additional keywords or other validations. For the built-in SITs, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) to verify what the minimum requirements are for matching each type.        |
 |The Test functionality works but your SharePoint or OneDrive items aren't being detected in DLP or auto-labeling rules     | Check if the documents you would expect to match show up in Content Explorer. If they aren't there, remember that only content created after the changes to the sensitive information type will show as matches. You have to recrawl the sites and libraries for pre-existing items to show up. See [Manually request crawling and reindexing of a site, a library or a list](/sharepoint/crawl-site-content) for details on recrawling SharePoint and OneDrive.        |
 |DLP or auto-labeling rules that require multiple matches don't trigger     |Check that the proximity requirements for both your EDM type and the base sensitive information types are met. For example, if the maximum distance of between the primary element and supporting keywords is 300 characters, but the keywords are only present in the first row of a long table, only the first few rows of matching values are likely to meet the proximity requirements. Modify your SIT definitions to support more relaxed proximity rules or use the anywhere in the document option for the additional evidence conditions.         |

@@ -2,7 +2,7 @@
 title: Review alerts in Microsoft Defender for Endpoint
 description: Review alert information, including a visualized alert story and details for each step of the chain.
 keywords: incident, incidents, machines, devices, users, alerts, alert, investigation, graph, evidence
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
@@ -12,11 +12,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
+  - m365-security
   - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.date: 5/1/2020
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Review alerts in Microsoft Defender for Endpoint
@@ -63,6 +64,9 @@ You can then also review the *automated investigation details* in your alert's d
 :::image type="content" source="images/alert-air-and-alert-description.png" alt-text="The details pane with the alert description and automatic investigation sections highlighted" lightbox="images/alert-air-and-alert-description.png":::
 
 Other information available in the details pane when the alert opens includes MITRE techniques, source, and additional contextual details.
+
+> [!NOTE]
+> If you see an *Unsupported alert type* alert status, it means that automated investigation capabilities cannot pick up that alert to run an automated investigation. However, you can [investigate these alerts manually](../defender/investigate-incidents.md#alerts).
 
 ## Review affected assets
 

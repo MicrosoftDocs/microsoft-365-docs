@@ -14,14 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - Strat_O365_IP
 description: "View a complete list of root certificates and certificate authorities (CAs) in Microsoft 365."
 ---
 
 # Microsoft 365 encryption chains
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft 365 leverages a number of different certificate providers. The following describes the complete list of known Microsoft 365 root certificates that customers may encounter when accessing Microsoft 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md). The following certificate information applies to all worldwide and national cloud instances of Microsoft 365.
 

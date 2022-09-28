@@ -7,14 +7,13 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 01/19/2022
-ms.prod: m365-security
-ms.technology: mdep1
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
 ms.custom: intro-overview
 ---
@@ -188,7 +187,10 @@ Most organizations use various devices and operating systems. Currently, Defende
 - Windows 7 (ESU required)
 - Windows 8.1
 - Windows 10, version 1709, or later
-- macOS: 11.5 (Big Sur), 10.15.7 (Catalina), or 10.14.6 (Mojave)
+- Windows 10 Enterprise
+- Windows 10 Enterprise LTSC 2016 (or later)](/windows/whats-new/ltsc/)
+- Windows 10 Enterprise IoT
+- macOS (the three most recent releases are supported)
 - iOS
 - Android OS
 

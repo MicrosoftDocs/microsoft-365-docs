@@ -13,9 +13,11 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MET150
@@ -23,8 +25,6 @@ description: "Set up data loss prevention on-premises scanner"
 ---
 
 # Get started with the data loss prevention on-premises scanner
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 This article walks you through the prerequisites and configuration for the Microsoft Purview data loss prevention on-premises scanner.
 
@@ -123,7 +123,7 @@ Here's a list of applicable role groups that are in preview. To learn more about
 
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies) in the Microsoft Purview compliance portal and select **Alerts**.
 
-2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
+2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your on-premises DLP policies.
 
 ### Viewing DLP on-premises scanner in activity explorer and audit log
 

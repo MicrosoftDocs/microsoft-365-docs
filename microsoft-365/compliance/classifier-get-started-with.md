@@ -11,9 +11,11 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: null
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkDEFENDER
 search.appverid: 
 - MOE150
@@ -22,8 +24,6 @@ description: "A Microsoft 365 classifier is a tool you can train to recognize va
 ---
 
 # Get started with trainable classifiers
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it samples to look at. Once trained, you can use it to identify item for application of Office sensitivity labels, Communications compliance policies, and retention label policies.
 

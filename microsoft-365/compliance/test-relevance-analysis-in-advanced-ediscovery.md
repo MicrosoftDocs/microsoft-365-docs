@@ -1,12 +1,12 @@
 ---
 title: Test Relevance analysis in eDiscovery (Premium)
+description: "Learn how to use the Test tab after Batch calculation in eDiscovery (Premium) to test, compare, and validate the overall quality of processing."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 titleSuffix: Office 365
-ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,14 +14,14 @@ ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to use the Test tab after Batch calculation in eDiscovery (Premium) to test, compare, and validate the overall quality of processing."
 ---
 
 # Test Relevance analysis in eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 The Test tab in Microsoft Purview eDiscovery (Premium) enables you to test, compare, and validate the overall quality of processing. These tests are performed after Batch calculation. By tagging the files in the collection, an expert makes the final judgment about whether each tagged file is relevant to the case.
   

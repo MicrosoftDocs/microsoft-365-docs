@@ -15,28 +15,31 @@ search.appverid:
   - MET150
 ms.assetid: 
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
 description: Learn about Campaign Views in Microsoft Defender for Office 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Campaign Views in Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-Campaign Views is a feature in Microsoft Defender for Office 365 Plan 2 (for example, Microsoft 365 E5 or organizations with an Defender for Office 365 Plan 2 add-on). Campaign Views in the Microsoft 365 Defender portal identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
+Campaign Views is a feature in Microsoft Defender for Office 365 Plan 2 (for example, Microsoft 365 E5 or organizations with a Defender for Office 365 Plan 2 add-on). Campaign Views in the Microsoft 365 Defender portal identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
 
 - Efficiently investigate and respond to phishing attacks.
 - Better understand the scope of the attack.
 - Show value to decision makers.
 
 Campaign Views lets you see the big picture of an attack faster and more complete than any human.
+
+Watch this short video on how campaign views in Microsoft Defender for Office 365 help you understand attack campaigns targeting your organization.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGBL8]
 
 ## What is a campaign?
 

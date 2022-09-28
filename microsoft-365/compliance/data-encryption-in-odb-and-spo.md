@@ -15,15 +15,13 @@ search.appverid:
 - MET150
 ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - SPO_Content
 description: "Understand the basic elements of encryption for data security in OneDrive for Business and SharePoint Online."
 ms.custom: seo-marvel-apr2020
 ---
 
 # Data Encryption in OneDrive for Business and SharePoint Online
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Understand the basic elements of encryption for data security in OneDrive for Business and SharePoint Online.
   

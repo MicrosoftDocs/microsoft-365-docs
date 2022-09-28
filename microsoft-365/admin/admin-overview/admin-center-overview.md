@@ -10,10 +10,12 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
@@ -27,12 +29,16 @@ description: "Use either simplified view in the Microsoft 365 admin center to ma
 
 # Overview of the Microsoft 365 admin center
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 - [The admin center in simplified view](#watch-the-admin-center-in-simplified-view)
 - [The admin center in dashboard view](#watch-the-admin-center-in-dashboard-view)
 
 The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> has two views: simplified view helps smaller organizations manage their most common tasks. Dashboard view includes more complex settings and tasks. You can switch between them from a button at the top of the admin center.
 
 ## Watch: The admin center in simplified view
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197911).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 
@@ -103,11 +109,7 @@ If you have no idea who to contact at your work or school for help, try asking t
 
 ## Admin center features and settings
 
-Here are the features and settings you'll find in the left-hand navigation of the admin center. Learn more about admin tasks in [admin help](Overview of the Microsoft 365 admin center](admin-center-overview.md).
-
-<br>
-
-****
+Here are the features and settings you'll find in the left-hand navigation of the admin center. Learn more about admin tasks in [admin help](/microsoft-365/admin/).
 
 |Menu|What it's for|
 |-----|-----|
@@ -166,7 +168,7 @@ For more information, see [Try or buy a Microsoft 365 for business subscription]
 
 We love to hear from you! Reporting bugs and sharing feedback helps us make the Microsoft 365 admin center better. To give feedback, select the **Feedback** button on the bottom of the page and use the form to send us your thoughts. Select the checkbox and confirm your email address if you want someone from the Microsoft 365 admin center team to follow up on your comments. We can't promise to follow up on every piece of feedback, but we're going to try!
 
-You can also give feedback from outside of the admin center on our UserVoice forum. You can use this page to make feature suggestions that can be voted on by other forum users: [UserVoice forum for the new admin center](https://go.microsoft.com/fwlink/?linkid=2024994).
+<!---You can also give feedback from outside of the admin center on our UserVoice forum. You can use this page to make feature suggestions that can be voted on by other forum users: [UserVoice forum for the new admin center](https://go.microsoft.com/fwlink/?linkid=2024994).--->
 
 ### What about the specific types of IT roles and other workspaces like Security, Device Management, or Exchange?
 

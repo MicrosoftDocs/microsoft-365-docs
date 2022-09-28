@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
@@ -280,5 +279,4 @@ For an overview of Message center, see [Message center in Microsoft 365](message
 ## Related content
 
 [Set up the Standard or Targeted release options](../manage/release-options-in-office-365.md) (article)\
-[Manage which Office features appear in What's New](../manage/show-hide-new-features.md) (article)\
 [Business subscriptions and billing documentation](../../commerce/index.yml) (link page)

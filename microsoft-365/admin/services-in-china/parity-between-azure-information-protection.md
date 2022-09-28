@@ -57,7 +57,7 @@ The following list includes the existing gaps between AIP for Office 365 operate
 To configure AIP for customers in China:
 1. [Enable Rights Management for the tenant](#step-1-enable-rights-management-for-the-tenant).
 
-1. [Add the Microsoft Purview Information Protection Sync Service service principal](#step-2-add-the-microsoft-purview-information-protection-sync-service-service-principal).
+1. [Add the Microsoft Information Protection Sync Service service principal](#step-2-add-the-microsoft-information-protection-sync-service-service-principal).
 
 1. [Configure DNS encryption](#step-3-configure-dns-encryption).
 
@@ -81,9 +81,9 @@ For the encryption to work correctly, RMS must be enabled for the tenant.
 
 2. If the functional state is `Disabled`, run `Enable-AipService`.
 
-### Step 2: Add the Microsoft Purview Information Protection Sync Service service principal
+### Step 2: Add the Microsoft Information Protection Sync Service service principal
 
-The **Microsoft Purview Information Protection Sync Service** service principal is not available in Azure China tenants by default, and is required for Azure Information Protection. Create this service principal manually via the Azure Az PowerShell module.
+The **Microsoft Information Protection Sync Service**  service principal is not available in Azure China tenants by default, and is required for Azure Information Protection. Create this service principal manually via the Azure Az PowerShell module.
 
 1. If you don't have the Azure Az module installed, install it or use a resource where the Azure Az module comes preinstalled, such as [Azure Cloud Shell](/azure/cloud-shell/overview). For more information, see [Install the Azure Az PowerShell module](/powershell/azure/install-az-ps).
 
@@ -93,7 +93,7 @@ The **Microsoft Purview Information Protection Sync Service** service principal 
     Connect-azaccount -environmentname azurechinacloud
     ```
 
-1. Create the **Microsoft Purview Information Protection Sync Service** service principal manually using the [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) cmdlet and the `870c4f2e-85b6-4d43-bdda-6ed9a579b725` application ID for the Microsoft Purview Information Protection Sync Service:
+1. Create the **Microsoft Information Protection Sync Service**  service principal manually using the [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) cmdlet and the `870c4f2e-85b6-4d43-bdda-6ed9a579b725` application ID for the Microsoft Purview Information Protection Sync Service:
 
     ```powershell 
     New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725

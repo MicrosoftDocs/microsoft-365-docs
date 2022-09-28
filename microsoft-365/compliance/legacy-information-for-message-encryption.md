@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
@@ -23,8 +23,6 @@ description: Understand how to transition legacy files to Office 365 Message Enc
 ---
 
 # Legacy information for Office 365 Message Encryption
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 If you haven't yet moved your organization to Microsoft Purview Message Encryption, but you have already deployed OME, then the information in this article applies to your organization. Microsoft recommends that you make a plan to move to Microsoft Purview Message Encryption as soon as it is reasonable for your organization. For instructions, see [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). If you want to find out more about how the new message encryption first, see [Message encryption](ome.md). The rest of this article refers to OME behavior before the release of Microsoft Purview Message Encryption.
 
@@ -112,7 +110,7 @@ For more information about how to create Exchange mail flow rules, see [Define R
 
 ### Remove encryption from email replies encrypted without Microsoft Purview Message Encryption
 
-When your email users send encrypted messages, recipients of those messages can respond with encrypted replies. You can create mail flow rules to automatically remove encryption from replies so email users in your organization don't have to sign in to the encryption portal to view them. You can use the EAC or Windows PowerShell cmdlets to define these rules. You can decrypt messages that are sent from within your organization or messages that are replies to messages sent from within your organization. You cannot decrypt encrypted messages originating from outside of your organization.
+When your email users send encrypted messages, recipients of those messages can respond with encrypted replies. You can create mail flow rules to automatically remove encryption from replies so email users in your organization don't have to sign in to the encryption portal to view them. You can use the EAC or Exchange Online PowerShell cmdlets to define these rules. You can decrypt messages that are sent from within your organization or messages that are replies to messages sent from within your organization. You cannot decrypt encrypted messages originating from outside of your organization.
 
 #### Use the EAC to create a rule for removing encryption from email replies encrypted without Microsoft Purview Message Encryption
 
@@ -120,7 +118,7 @@ When your email users send encrypted messages, recipients of those messages can 
 
 2. Choose the **Admin** tile.
 
-3. In the >Microsoft 365 admin center, choose **Admin centers** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
+3. In the Microsoft 365 admin center, choose **Admin centers** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
 
 4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
 
@@ -161,7 +159,7 @@ Recipients follow instructions in the message to open the attachment and authent
 
 ## Customize encrypted messages with Office 365 Message Encryption
 
-As an Exchange Online and Exchange Online Protection administrator, you can customize your encrypted messages. For example, you can add your company's brand and logo, specify an introduction, and add disclaimer text in encrypted messages and in the portal where recipients view your encrypted messages. Using Windows PowerShell cmdlets, you can customize the following aspects of the viewing experience for recipients of encrypted email messages:
+As an Exchange Online and Exchange Online Protection administrator, you can customize your encrypted messages. For example, you can add your company's brand and logo, specify an introduction, and add disclaimer text in encrypted messages and in the portal where recipients view your encrypted messages. Using Exchange Online PowerShell cmdlets, you can customize the following aspects of the viewing experience for recipients of encrypted email messages:
 
 - Introductory text of the email that contains the encrypted message
 - Disclaimer text of the email that contains the encrypted message
@@ -177,13 +175,13 @@ The following example shows a custom logo for ContosoPharma in the email attachm
 
 ### To customize encryption email messages and the encryption portal with your organization's brand
 
-1. Connect to Exchange Online using Remote PowerShell, as described in [Connect to Exchange Online Using Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Use the Set-OMEConfiguration cmdlet as described here: [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration) or use the following table for guidance.
 
    **Encryption customization options**
 
-   |To customize this feature of the encryption experience|Use these Windows PowerShell commands|
+   |To customize this feature of the encryption experience|Use these Exchange Online PowerShell commands|
    |---|---|
    |Default text that accompanies encrypted email messages <p> The default text appears above the instructions for viewing encrypted messages|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <p> **Example:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"`|
    |Disclaimer statement in the email that contains the encrypted message|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <p> **Example:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"`|
@@ -192,13 +190,13 @@ The following example shows a custom logo for ContosoPharma in the email attachm
 
 ### To remove brand customizations from encryption email messages and the encryption portal
 
-1. Connect to Exchange Online using Remote PowerShell, as described in [Connect to Exchange Online Using Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Use the Set-OMEConfiguration cmdlet as described here: [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration). To remove your organization's branded customizations from the DisclaimerText, EmailText, and PortalText values, set the value to an empty string, `""`. For all image values, such as Logo, set the value to `"$null"`.
 
    **Encryption customization options**
 
-   |To revert this feature of the encryption experience back to the default text and image|Use these Windows PowerShell commands|
+   |To revert this feature of the encryption experience back to the default text and image|Use these Exchange Online PowerShell commands|
    |---|---|
    |Default text that accompanies encrypted email messages <p> The default text appears above the instructions for viewing encrypted messages|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <p> **Example:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
    |Disclaimer statement in the email that contains the encrypted message <p> |`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <p> **Example:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
@@ -239,7 +237,7 @@ No, the encrypted messages are kept on the recipient's email system, and when th
 
  **Q. Can I customize encrypted email messages with my brand?**
 
-Yes. You can use Windows PowerShell cmdlets to customize the default text that appears at the top of encrypted email messages, the disclaimer text, and the logo that you want to use for the email message and the encryption portal. This feature is now available in OMEv2. For details, see [Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
+Yes. You can use Exchange Online PowerShell cmdlets to customize the default text that appears at the top of encrypted email messages, the disclaimer text, and the logo that you want to use for the email message and the encryption portal. This feature is now available in OMEv2. For details, see [Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
 
  **Q. Does the service require a license for every user in my organization?**
 

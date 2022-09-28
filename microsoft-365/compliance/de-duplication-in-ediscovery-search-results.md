@@ -1,30 +1,28 @@
 ---
 title: "De-duplication in eDiscovery search results"
+description: Learn how to eliminate duplicate eDiscovery search results so that only one copy of an email message is exported.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 12/21/2016
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 ms.custom:
 - seo-marvel-apr2020
-description: Learn how to eliminate duplicate eDiscovery search results so that only one copy of an email message is exported.
 ---
 
 # De-duplication in eDiscovery search results
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 This article describes how de-duplication of eDiscovery search results works and explains the limitations of the de-duplication algorithm.
   

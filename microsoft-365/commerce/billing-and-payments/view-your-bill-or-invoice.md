@@ -11,11 +11,13 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 search.appverid: GEA150
-ms.collection: 
+ms.collection:
+- highpri  
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - commerce_billing
+- VSBFY23
 - TopSMBIssues
 - okr_smb
 - TRN_M365B
@@ -27,7 +29,9 @@ description: "Find your invoice or billing statement in the Microsoft 365 admin 
 ms.date: 01/25/2022
 ---
 
-# View your bill or invoice
+# View your Microsoft 365 for business subscription bill or invoice
+
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 This article is for people who have a Microsoft 365 for business subscription.
   
@@ -40,6 +44,8 @@ If you need help with interpreting the charges you see on your bill, see [Unders
 You must be a Global or Billing admin to do the steps described in this article.
   
 ## Watch: View, download, or print your bill
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2209539).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
 

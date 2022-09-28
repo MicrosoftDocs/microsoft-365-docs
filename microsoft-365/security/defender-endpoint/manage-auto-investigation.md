@@ -2,21 +2,23 @@
 title: Review remediation actions following automated investigations
 description: Review and approve (or reject) remediation actions following an automated investigation.
 keywords: autoir, automated, investigation, detection, remediation, action, pending, approved
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/20/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Review remediation actions following an automated investigation
@@ -36,6 +38,9 @@ Depending on
 - how your organization's [device groups](/microsoft-365/security/defender-endpoint/machine-groups) are configured,
 
 remediation actions can occur automatically or only upon approval by your organization's security operations team.
+
+> [!NOTE]
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 Here are a few examples:
 
@@ -121,8 +126,7 @@ Automation levels affect whether certain remediation actions are taken automatic
 
 |Device group setting|Automated investigation results|What to do|
 |---|---|---|
-|**Full - remediate threats automatically**<br/>(recommended)|A verdict of *Malicious* is reached for a piece of evidence. <p> Appropriate remediation actions are taken automatically.|[Review completed actions](#review-completed-actions)|
-|**Full - remediate threats automatically**|A verdict of *Suspicious* is reached for a piece of evidence. <p> Remediation actions are pending approval to proceed.|[Approve (or reject) pending actions](#review-pending-actions)|
+|**Full - remediate threats automatically**<br/>(recommended)|A verdict of *Malicious* is reached for a piece of evidence. <p> Appropriate remediation actions are taken automatically.|[Review completed actions](#review-completed-actions) |
 |**Semi - require approval for any remediation**|A verdict of either *Malicious* or *Suspicious* is reached for a piece of evidence. <p> Remediation actions are pending approval to proceed.|[Approve (or reject) pending actions](#review-pending-actions)|
 |**Semi - require approval for core folders remediation**|A verdict of *Malicious* is reached for a piece of evidence. <p> If the artifact is a file or executable and is in an operating system directory, such as the Windows folder or the Program files folder, then remediation actions are pending approval. <p> If the artifact is *not* in an operating system directory, remediation actions are taken automatically.|<ol><li>[Approve (or reject) pending actions](#review-pending-actions)</li><li>[Review completed actions](#review-completed-actions)</li></ol>|
 |**Semi - require approval for core folders remediation**|A verdict of *Suspicious* is reached for a piece of evidence. <p> Remediation actions are pending approval.|[Approve (or reject) pending actions](#review-pending-actions).|

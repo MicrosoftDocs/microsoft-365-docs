@@ -1,9 +1,10 @@
 ---
 title: "Apply the prediction score filter to a review set"
+description: "Use a prediction score filter to displays items that a predictive coding model as predicted as relevant or not relevant."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -12,13 +13,13 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "Use a prediction score filter to displays items that a predictive coding model as predicted as relevant or not relevant."
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Apply a prediction score filter to a review set (preview)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 After you create a predictive coding model in Microsoft Purview eDiscovery (Premium) and train it to the point where it's stable, you can apply the prediction score filter to display review set items that the model has determined are relevant (or not relevant). When you create a model, a corresponding prediction score filter is also created. You can use this filter to display items assigned a prediction score within a specified range. In general, prediction scores between **0** and **.5** are assigned to items that model has predicted are not relevant. Items assigned prediction scores between **.5** and **1.0** are items the model has predicted are relevant.
 

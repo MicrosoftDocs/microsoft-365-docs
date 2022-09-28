@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 6/22/2018
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365

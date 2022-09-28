@@ -11,14 +11,13 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance 
+- tier1
+- purview-compliance 
 search.appverid:
 - MET150 
 description: Learn how to onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro for Microsoft Defender for Endpoint customers
 ---
 # Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions.
 

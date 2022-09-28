@@ -11,8 +11,9 @@ audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- M365-security-compliance 
+ms.collection:
+- tier1 
+- purview-compliance 
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150 
@@ -20,8 +21,6 @@ description: Use Group Policy to deploy the configuration package on Windows 10 
 ---
 
 # Onboard Windows 10 devices and Windows 11 using Group Policy 
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Applies to:**
 

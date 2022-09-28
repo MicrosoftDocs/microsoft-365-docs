@@ -15,15 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 description: "Compare Microsoft 365 encryption options including Microsoft Purview Message Encryption, S/MIME, Information Rights Management (IRM), and learn about Transport Layer Security (TLS)."
 ---
 
 # Email encryption
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 This article compares encryption options in Microsoft 365 including Microsoft Purview Message Encryption, S/MIME, Information Rights Management (IRM), and introduces Transport Layer Security (TLS).
   

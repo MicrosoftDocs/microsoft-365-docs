@@ -1,29 +1,27 @@
 ---
 title: "How to identify the hold on an Exchange Online mailbox"
+description: "Learn how to identify the different types of hold that can be placed on an Exchange Online mailbox in Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: "Learn how to identify the different types of hold that can be placed on an Exchange Online mailbox in Microsoft 365."
-
 ---
 
 # How to identify the type of hold placed on an Exchange Online mailbox
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 This article explains how to identify holds placed on Exchange Online mailboxes in Microsoft 365.
 
@@ -126,9 +124,9 @@ After you obtain the GUID for a hold that is applied to a mailbox, the next step
 
 ### eDiscovery holds
 
-Run the following commands in Security & Compliance Center PowerShell to identify an eDiscovery hold that's applied to the mailbox. Use the GUID (not including the UniH prefix) for the eDiscovery hold that you identified in Step 1. 
+Run the following commands in Security & Compliance PowerShell to identify an eDiscovery hold that's applied to the mailbox. Use the GUID (not including the UniH prefix) for the eDiscovery hold that you identified in Step 1. 
 
-To connect to Security & Compliance Center PowerShell, see [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+To connect to Security & Compliance PowerShell, see [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 The first command creates a variable that contains information about the hold. This variable is used in the other commands. The second command displays the name of the eDiscovery case the hold is associated with. The third command displays the name of the hold and a list of the mailboxes the hold applies to.
 
@@ -159,7 +157,7 @@ If the GUID for the In-Place Hold starts with the `cld` prefix, be sure to inclu
 
 ### Microsoft 365 retention policies
 
-[Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the following command to identity the Microsoft 365 retention policy (organization-wide or specific location) that's applied to the mailbox. Use the GUID (not including the mbx, skp, or grp prefix or the action suffix) that you identified in Step 1.
+[Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the following command to identity the Microsoft 365 retention policy (organization-wide or specific location) that's applied to the mailbox. Use the GUID (not including the mbx, skp, or grp prefix or the action suffix) that you identified in Step 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
@@ -288,7 +286,7 @@ When a retention policy is no longer applied to a mailbox, we will place a tempo
 
 After you identify the holds that are applied to a mailbox, you can perform tasks such as changing the duration of the hold, temporarily or permanently removing the hold, or excluding an inactive mailbox from a Microsoft 365 retention policy. For more information about performing tasks related to holds, see one of the following topics:
 
-- Run the [Set-RetentionCompliancePolicy -Identity \<Policy Name> -AddExchangeLocationException \<user mailbox>](/powershell/module/exchange/set-retentioncompliancepolicy) command in [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) to exclude a mailbox from an organization-wide Microsoft 365 retention policy. This command can only be used for retention policies where the value for the *ExchangeLocation* property equals `All`.
+- Run the [Set-RetentionCompliancePolicy -Identity \<Policy Name> -AddExchangeLocationException \<user mailbox>](/powershell/module/exchange/set-retentioncompliancepolicy) command in [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) to exclude a mailbox from an organization-wide Microsoft 365 retention policy. This command can only be used for retention policies where the value for the *ExchangeLocation* property equals `All`.
 
 - [Change the hold duration for an inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md)
 

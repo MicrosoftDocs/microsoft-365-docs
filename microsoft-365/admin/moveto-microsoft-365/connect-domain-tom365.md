@@ -10,9 +10,11 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
@@ -26,13 +28,17 @@ description: "Learn how to connect your domain to Microsoft 365."
 
 # Connect your domain to Microsoft 365 for business
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
+## Watch: Connect your domain to Microsoft 365
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198216).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LFpy?autoplay=false]
 
 Once you’ve set up Microsoft 365 and moved your email data from Google Workspace, you can connect your domain to Microsoft 365. 
 
-First you will need to delete existing DNS records from Google, then we can add new DNS records from Microsoft 365.
-
-## Try it!
+First you will need to delete existing DNS records from Google, and then we can add new DNS records from Microsoft 365.
 
 1. Sign into your Google Workspace admin console at [admin.google.com](https://admin.google.com).
 1. Select **Domains**, **Manage domains**, **View details**, **Manage domain**, then **DNS** in the left nav.

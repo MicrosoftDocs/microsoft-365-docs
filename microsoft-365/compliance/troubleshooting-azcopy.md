@@ -1,29 +1,29 @@
 ---
 title: "Troubleshoot AzCopy in eDiscovery (Premium)"
+description: Troubleshoot errors for Azure AzCopy when loading non-Office 365 data for error remediation in eDiscovery (Premium).
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: troubleshooting
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: Troubleshoot errors for Azure AzCopy when loading non-Office 365 data for error remediation in eDiscovery (Premium).
 ms.custom: 
  - seo-marvel-mar2020
  - seo-marvel-apr2020
 ---
 
 # Troubleshoot AzCopy in eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 When loading non-Microsoft 365 data or documents for error remediation in Microsoft Purview eDiscovery (Premium), the user interface supplies an Azure AzCopy command that contains parameters with the location of where the files that you want to upload are stored and the Azure storage location that the files will be uploaded to. To upload your documents, you copy this command and then run it in a Command Prompt on your local computer.  The follow screenshot shows an example of an AzCopy command:
 

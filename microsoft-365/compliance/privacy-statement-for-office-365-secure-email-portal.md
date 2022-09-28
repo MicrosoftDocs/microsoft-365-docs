@@ -14,13 +14,11 @@ search.appverid:
 - MET150
 ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 description: "Last Updated: May 2017"
 ---
 
 # Privacy statement for Secure Email Portal
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Last Updated: May 2017
   

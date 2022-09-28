@@ -1,9 +1,10 @@
 ---
 title: "Set up a connector to archive LinkedIn data"
+description: "Learn how administrators can setup & use a native connector to import data from a LinkedIn Company Page to Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 04/06/2022
 audience: Admin
@@ -12,14 +13,14 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- data-connectors
 ms.custom: seo-marvel-apr2020
-description: "Learn how administrators can setup & use a native connector to import data from a LinkedIn Company Page to Microsoft 365."
 ---
 
 # Set up a connector to archive LinkedIn data
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use a connector in the Microsoft Purview compliance portal to import and archive data from LinkedIn Company pages. After you set up and configure a connector, it connects to the account for the specific LinkedIn Company page once every 24 hours. The connector converts the messages posted to the Company page to an email message, and then imports those items to a mailbox in Microsoft 365.
 
@@ -55,7 +56,7 @@ After the LinkedIn Company page data is stored in a mailbox, you can apply Micro
 
 6. Select the company page that you want to archive items from, and then click **Next**.
 
-7. On the **Choose storage location** page, click in the box, select the email address of a Microsoft 365 mailbox that the LinkedIn items will be imported to, and then click **Next**. Items are imported to the inbox folder in this mailbox.
+7. On the **Choose storage location** page, click in the box, select the email address of a Microsoft 365 mailbox that the LinkedIn items will be imported to, and then click **Next**. Items are imported to the inbox folder in this mailbox. The mailbox used must have an Exchange Online Plan 1 or Plan 2 license.
 
 8. Click **Next** to review the connector settings and then click **Finish** to complete the connector setup.
 

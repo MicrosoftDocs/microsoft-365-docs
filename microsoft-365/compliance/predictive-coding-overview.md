@@ -1,9 +1,10 @@
 ---
 title: "Predictive coding module for eDiscovery (Premium) (preview)"
+description: "The new predictive coding module in eDiscovery (Premium) uses machine learning to analyze items in a review set to predictive which the items that are relevant to your case or investigation."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -12,13 +13,13 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "The new predictive coding module in eDiscovery (Premium) uses machine learning to analyze items in a review set to predictive which the items that are relevant to your case or investigation."
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Learn about predictive coding in eDiscovery (Premium) (preview)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The predictive coding module in eDiscovery (Premium) uses the intelligent, machine learning capabilities to help you reduce the amount of content to review. Predictive coding helps you reduce and cull large volumes of case content to a relevant set of items that you can prioritize for review. This is accomplished by creating and training your own predictive coding models that help you prioritize the review of the most relevant items in a review set.
 

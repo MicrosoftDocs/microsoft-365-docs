@@ -11,9 +11,11 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
@@ -23,11 +25,7 @@ description: "Content explorer allows you to natively view labeled items."
 
 # Get started with content explorer
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-The data classification content explorer allows you to natively view the items that were summarized on the overview page.
-
-![content explorer collapsed screenshot.](../media/data-classification-content-explorer-1.png)
+Content explorer allows you to natively view the items that were summarized on the overview page.
 
 ## Prerequisites
 
@@ -48,7 +46,7 @@ In order to get access to the content explorer tab, an account must be assigned 
 > Membership in these role groups does not allow you to view the list of items in content explorer or to view the contents of the items in content explorer.
 
 > [!IMPORTANT]
-> Only Global admins can manage or assign permissions to other users in the Compliance Center. For more details, see [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+> Only Global admins can manage or assign permissions to other users in the compliance portal. For more information, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 > 
 ### Required permissions to access items in content explorer
 
@@ -63,7 +61,7 @@ There are two roles that grant access to content explorer and it is granted usin
 
 - **Content Explorer Content viewer**: Membership in this role group allows you to view the contents of each item in the list. The `data classification content viewer` role has been pre-assigned to this role group.
 
-The account you use to access content explorer must be in one or both of the role groups. These are independent role groups and are not cumulative. For example, if you want to grant an account the ability to view the items and their locations only, grant Content Explorer List viewer rights. If you want that same account to also be able to view the contents of the items in the list, grant Content Explorer Content viewer rights as well.
+The account you use to access content explorer must be in one or both of the role groups. These are independent role groups and aren't cumulative. For example, if you want to grant an account the ability to view the items and their locations only, grant Content Explorer List viewer rights. If you want that same account to also be able to view the contents of the items in the list, grant Content Explorer Content viewer rights as well.
 
 You can also assign either or both of the roles to a custom role group to tailor access to content explorer.
 
@@ -94,7 +92,7 @@ Content explorer shows a current snapshot of the items that have a sensitivity l
 
 ### Sensitive information types
 
-A [DLP policy](dlp-learn-about-dlp.md) can help protect sensitive information, which is defined as a **sensitive information type**. Microsoft 365 includes [definitions for many common sensitive information types](sensitive-information-type-entity-definitions.md) from across many different regions that are ready for you to use. For example, a credit card number, bank account numbers, national ID numbers, and Windows Live ID service numbers.
+A [DLP policy](dlp-learn-about-dlp.md) can help protect sensitive information, which is defined as a **sensitive information type**. Microsoft 365 includes [definitions for many common sensitive information types](sensitive-information-type-entity-definitions.md) from across many different regions that are ready for you to use. For example, a credit card number, bank account numbers, and national ID numbers.
 
 ### Sensitivity labels
 
@@ -104,7 +102,7 @@ Sensitivity labels must be enabled for files that are in SharePoint and OneDrive
 
 ### Retention labels
 
-A [retention label](retention.md) allows you to define how long a labeled item is kept and the steps to be taken prior to deleting it. They are applied manually or automatically via policies. They can play a role in helping your organization stay in compliance with legal and regulatory requirements.
+A [retention label](retention.md) allows you to define how long a labeled item is kept and the steps to be taken prior to deleting it. They're applied manually or automatically via policies. They can play a role in helping your organization stay in compliance with legal and regulatory requirements.
 
 ### How to use content explorer
 
@@ -115,7 +113,7 @@ A [retention label](retention.md) allows you to define how long a labeled item i
 5. Double-click to open the item natively in content explorer.
 
 ### Export
-The **export** control will create a .csv file that contains a listing of whatever is showing in the **All locations** pane.
+The **export** control will create a .csv file that contains a listing of whatever the focus of the pane is.
 
 ![data classification export control.](../media/data_classification_export_control.png)
 
@@ -123,9 +121,9 @@ The **export** control will create a .csv file that contains a listing of whatev
 > [!NOTE]
 > It can take up to *seven days* for counts to be updated in content explorer.
 
-### Search
+### Filter
 
-When you drill down into a location, such as an Exchange or Teams folder, or a SharePoint or OneDrive site, the **search** tool appears.
+When you drill down into a location, such as an Exchange or Teams folder, or a SharePoint or OneDrive site, the **Filter** tool appears.
 
 ![content explorer search tool.](../media/data_classification_search_tool.png)
 
@@ -144,6 +142,10 @@ You can search on:
 |text at the beginning of file name| `RES`|
 |text after an underscore character ( _ ) in file name|`Resume` or `1234`| 
 |file extension|`txt`|
+
+## Provide match/not a match accuracy feedback in content explorer
+
+You can view the number of matches a SIT or trainable classifier has in **Content explorer**. You can also provide feedback on whether an item is actually a match or not using the **Match**, **Not a Match** feedback mechanism and use that feedback to tune your classifiers. See, [Increase classifier accuracy (preview)](data-classification-increase-accuracy.md) for more information. 
 
 
 ## See also

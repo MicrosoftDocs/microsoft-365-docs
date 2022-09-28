@@ -10,9 +10,10 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
@@ -21,8 +22,6 @@ description: "Learn how to create alerts for activities in Microsoft Purview Com
 ---
 
 # Microsoft Purview Compliance Manager alerts and alert policies
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **In this article:** Learn how to **set alerts** for certain activities in Compliance Manager, how to manage alerts, and how to **create alert policies** for defining alert conditions.
 
@@ -62,8 +61,8 @@ To start working with alerts, see [Viewing and managing alerts](#viewing-and-man
 
 The table below outlines which users can create and edit alerts and alert policies based on their role type. In addition to holding a Compliance Manager role, users also need an Azure AD role as follows:
 
-- The **Security reader** role in Azure AD for viewing alerts and alert policies
-- The **Security administrator** role in Azure AD for creating or updating alert policies
+- To view alerts and alert policies: the **Security reader** role in Azure AD
+- To create or update alert policies: the **Compliance administrator**, **Compliance data administrator**, **Security administrator**, or **Security operator** role in Azure AD
  
 Learn more about [Azure roles in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-compliance-portal).
 
@@ -72,9 +71,9 @@ Learn more about [Azure roles in the Microsoft Purview compliance portal](micros
 | :------------- | :-------------: | :------------: |
 | **Compliance Manager Administration**| Yes  | Yes | 
 | **Compliance Manager Assessor**| Yes | Yes | 
-| **Compliance Manager Contribution**| Yes | Yes | 
-| **Global Administrator**| Yes | Yes  | 
+| **Compliance Manager Contributor**| Yes | Yes | 
 | **Compliance Manager Reader**| No | No | 
+| **Global administrator**| Yes | Yes | 
 
 Learn how to [set user permissions and assign roles for Compliance Manager](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 

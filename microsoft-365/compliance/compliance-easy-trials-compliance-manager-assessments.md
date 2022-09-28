@@ -18,8 +18,6 @@ description: "About the Microsoft Purview Compliance Manager premium assessment 
 
 # About the free trial for Microsoft Purview Compliance Manager premium assessments
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Compliance Manager helps you manage your organization’s compliance requirements and assess and improve your compliance score. The assessments you build are based on templates that correspond to governmental regulations and industry standards around the world.  
 
 Your licensing agreement to use Compliance Manager may include one or more built-in templates for building assessments. An extensive library of premium assessment templates is also available for building assessments specific to your organization’s needs. To try out these templates before purchasing licenses, sign up for the free Compliance Manager premium assessments trial.
@@ -47,9 +45,15 @@ After you start your trial, go to your **Assessments** tab in Compliance Manager
 
 For more information about how to use and manage Compliance Manager templates, see [Working with assessment templates](compliance-manager-templates.md).
 
-## Permissions
+## Required roles for starting the trial
 
-Any user in your organization with permissions to access Compliance Manager can sign up for the premium assessments trial. Learn more about the [permissions and roles required for Compliance Manager](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
+Users must hold one of the following admin roles in order to sign up for or end a trial:
+- Billing Administrator
+- Compliance Administrator
+- Global Administrator
+- Compliance Data Administrator
+
+Get more details about [roles for starting Microsoft 365 trials](compliance-easy-trials-roles.md).
 
 ## During your trial
 

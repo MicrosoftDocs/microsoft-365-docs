@@ -11,13 +11,13 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Insider risk management notice templates
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Insider risk management notice templates allow you to automatically send email messages to users when a case is created for activities that have generated a policy match and confirmed alert. For most alerts that generate cases, user actions are the result of mistakes or inadvertent activities without ill intent. Notices serve as simple reminders to users to be more careful, to provide links to information for refresher training, or to corporate policy resources. Notices can be an important part of your internal compliance training program and can help create a documented audit trail for users with recurring risk activities.
 

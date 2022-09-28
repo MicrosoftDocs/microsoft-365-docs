@@ -2,19 +2,20 @@
 title: Score methods and properties
 description: Retrieves your organization's exposure score, device secure score, and exposure score by device group
 keywords: apis, graph api, supported apis, score, exposure score, device secure score, exposure score by device group
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Score resource type
@@ -42,6 +43,9 @@ Method|Return Type|Description
 [Get exposure score](get-exposure-score.md)|[Score](score.md)|Get the organizational exposure score.
 [Get device secure score](get-device-secure-score.md)|[Score](score.md)|Get the organizational device secure score.
 [List exposure score by device group](get-machine-group-exposure-score.md)|[Score](score.md)|List scores by device group.
+
+> [!NOTE]
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 ## Properties
 

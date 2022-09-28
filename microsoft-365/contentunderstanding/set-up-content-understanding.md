@@ -6,7 +6,7 @@ ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection: 
 - enabler-strategic
 - m365initiative-syntex
@@ -52,13 +52,13 @@ Users creating models in a [content center site](/microsoft-365/contentunderstan
 
 ### Licensing
 
-To use SharePoint Syntex, your organization must have a subscription to SharePoint Syntex, and each user must have the following licenses assigned:
+To use SharePoint Syntex, your organization must have a subscription to SharePoint Syntex, and each user must have a licenses assigned. SharePoint Syntex licenses include the following apps, which must all be assigned:
 
 - SharePoint Syntex
 - SharePoint Syntex - SPO type
 - Common Data Service for SharePoint Syntex
 
-To use form processing, you also need AI Builder credits. If you have 300 or more licensed users, an allocation of AI Builder credits is provided each month.
+To use form processing, you also need AI Builder credits. For each licensed user of SharePoint Syntex, an allocation of AI Builder credits is provided each month.
 
 For details about SharePoint Syntex licensing, see [SharePoint Syntex licensing](syntex-licensing.md)
 

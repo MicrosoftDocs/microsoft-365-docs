@@ -11,13 +11,13 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Investigate insider risk management activities
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Investigating risky user activities is an important first step in minimizing insider risks for your organization. These risks may be activities that generate alerts from insider risk management policies, or risks from activities that are detected by policies but don't immediately create an insider risk management alert for users. You can investigate these types of activities by using the **User activity reports (preview)** or with the **Alert dashboard**.
 
@@ -138,6 +138,7 @@ This tab opens the summary of risk factors for the user's alert activity. Risk f
 - **Priority content**: Displays activities associated with priority content.
 - **Unallowed domains**: Displays activities for events associated with unallowed domains.
 - **Health record access**: Displays activities for events associated with accessing health records.
+- **Risky browser usage**: Displays activities for events associated with browsing to potentially inappropriate websites.
 
 With these filters, you'll only see alerts with these risk factors, but the activity that generated an alert might not fall into any of these categories. For example, an alert containing sequence activities might have been generated simply because the user copied a file to a USB device.
 
@@ -165,7 +166,7 @@ The **User activity** chart is one of the most powerful tools for internal risk 
     - **Risk category**: Filter activities by the following risk categories: *Activities with risk scores > 15 (unless in a sequence)* and *Sequence activities*.
     - **Activity Type**: Filter activities by the following types: *Access*, *Deletion*, *Collection*, *Exfiltration*, *Infiltration*, *Obfuscation*, and *Security*.
     - **Sort by**: List the timeline activities by *Date occurred* or *Risk score*.
-4. **Risk sequence (preview)**: The chronological order of risky activities is an important aspect of risk investigation and identifying these related activities is an important part of evaluating overall risk for your organization. Alert activities that are related are displayed with connecting lines to highlight that these activities are associated with a larger risk area. This view of activities can help investigators literally 'connect the dots' for risk activities that could have been viewed as isolated or one-off events. Select any bubble in the sequence to display details for all the associated risk activities. Details include:
+4. **Risk sequence**: The chronological order of risky activities is an important aspect of risk investigation and identifying these related activities is an important part of evaluating overall risk for your organization. Alert activities that are related are displayed with connecting lines to highlight that these activities are associated with a larger risk area. This view of activities can help investigators literally 'connect the dots' for risk activities that could have been viewed as isolated or one-off events. Select any bubble in the sequence to display details for all the associated risk activities. Details include:
 
     - **Name** of the sequence.
     - **Date** or **Date range** of the sequence.
@@ -199,6 +200,7 @@ Use the Activity scope and Risk insight filters to display and sort activities a
   - Sequence activities
   - Cumulative exfiltration activities
   - Health record access activities
+  - Risky browser usage
 
 ![Insider risk management activity explorer overview.](../media/insider-risk-activity-explorer.png)
 

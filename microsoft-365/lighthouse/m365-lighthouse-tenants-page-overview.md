@@ -4,9 +4,10 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: kywirpel
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -74,7 +75,7 @@ To help organize your tenants and easily filter the existing views, you can crea
 
 ## Tenant details page
 
-To view detailed tenant information, select a tenant from the tenant list. The tenant details page contains contact information and deployment plan status.
+To view detailed tenant information, select a tenant from the list of tenants. The tenant details page contains contact information and deployment plan status.
 
 :::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-details-page.png" alt-text="Screenshot of the Tenant details page.":::
 
@@ -82,11 +83,11 @@ To view detailed tenant information, select a tenant from the tenant list. The t
 
 On the Overview tab, you can view tenant overview, contact information, and Microsoft 365 service usage.
 
-#### Tenant overview card
+#### Tenant overview section
 
-The Tenant overview card provides information about the tenant from its Microsoft 365 account.<br><br>
+The Tenant overview section provides information about the tenant from its Microsoft 365 account.<br><br>
 
-| Tenant Information    | Description|
+| Tenant information    | Description|
 |-----------------------|------------------|
 | Headquarters    | Where the tenant is located.|
 | Industry    |The organization's industry.|
@@ -95,9 +96,9 @@ The Tenant overview card provides information about the tenant from its Microsof
 | Total users    |The number of users assigned in the tenant. You may select this number to open the Users page for that tenant.|
 | Total devices|The number of devices enrolled in the tenant. You may select this number to open the Devices page for that tenant.|
 
-#### Contacts card
+#### Contacts section
 
-The Contacts card lets you enter information for key contacts within the tenants you manage, such as:
+The Contacts section provides information for key contacts within the tenants you manage, such as:
 
 - Name
 - Title
@@ -105,24 +106,24 @@ The Contacts card lets you enter information for key contacts within the tenants
 - Email
 - Notes
 
-The Notes section is a text field that you can use to record key information for the tenant, such as engagement preferences, location, time zone, and details about their role within the organization.
+The **Notes** column shows information for the tenant, such as engagement preferences, location, time zone, and details about their role within the organization.
 
-To edit details or delete an existing contact, select the contact name from the list. In the **Edit contact** pane, edit or delete the contact. To add another contact, select **+Add contact**.
+To edit details, add notes, or delete an existing contact, select the contact name from the list. In the **Edit contact** pane, edit or delete the contact. To add another contact, select **+Add contact**.
 
-#### Microsoft 365 usage card
+#### Microsoft 365 services usage section
 
-Lighthouse provides insights into Microsoft 365 services usage, including how many users within a tenant are licensed and actively using each service. Active indicates the number of users or devices that have signed in to the service at least once in the past 28 days. Change indicates change in active users and devices since last month.
+Lighthouse provides insights into Microsoft 365 services usage, including how many users within a tenant are licensed and actively using each service. The **Active users & devices** column indicates the number of users or devices that have signed in to the service at least once in the past 28 days. The **Change in activity** column indicates change in active users and devices since last month.
 
-The Microsoft 365 Usage card contains two sections:
+The **Microsoft 365 services usage** section contains two sub-sections:
 
 - **Microsoft 365 Lighthouse-enabled services:** Services that can be managed within the Lighthouse portal.
 - **Additional Microsoft 365 services:** Services that are included in the Microsoft 365 suite but can't be managed within the Microsoft 365 Lighthouse portal at this time.
 
-### Deployment Plans tab
+### Deployment Plan tab
 
 The Deployment Plans tab provides status on a tenant's deployment plan. The deployment steps in the list are based on the baseline applied to the tenant. To see deployment step details, select a deployment step from the list.
 
-The Deployment Plans tab also includes the following options:
+The Deployment Plan tab also includes the following options:
 
 - **Export:** Select to export deployment step data to an Excel comma-separated values (.csv) file.
 - **Refresh:** Select to retrieve the most current deployment step data.

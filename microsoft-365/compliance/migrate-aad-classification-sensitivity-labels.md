@@ -14,8 +14,6 @@ description: "This article discusses classic Azure Active Directory classificati
 
 # Azure Active Directory classification and sensitivity labels for Microsoft 365 groups
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 This article discusses classic Azure Active Directory classification and sensitivity labels.
 
 Sensitivity labels are supported by [these services](./sensitivity-labels-teams-groups-sites.md).

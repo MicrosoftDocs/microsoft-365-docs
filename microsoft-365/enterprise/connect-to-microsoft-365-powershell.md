@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
@@ -38,6 +38,8 @@ Currently, the Azure Active Directory PowerShell for Graph module doesn't comple
 
 ## What do you need to know before you begin?
 
+>[!NOTE]
+> The Azure Active Directory Module is being replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
 
 **Operating system**
 
@@ -201,11 +203,6 @@ You will need an active Azure subscription for your organization that is tied to
 For more information, see [Azure Cloud Shell](/azure/cloud-shell/overview).
 
 
-## Get started with the Microsoft Graph PowerShell SDK
-
-You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs.
-
-For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started?view=graph-powershell-beta)
 
 ## See also
 

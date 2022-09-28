@@ -14,7 +14,7 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 ms.custom: 
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
@@ -22,8 +22,6 @@ description: "Admins can learn to create mail flow rules (transport rules) to en
 ---
 
 # Define mail flow rules to encrypt email messages
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 As an administrator that manages Exchange Online, you can create mail flow rules (also known as transport rules) to help protect email messages you send and receive. You can set up rules to encrypt any outgoing email messages and remove encryption from encrypted messages coming from inside your organization or from replies to encrypted messages sent from your organization. You can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> or Exchange Online PowerShell to create these rules. In addition to overall encryption rules, you can also choose to enable or disable individual message encryption options for end users.
 

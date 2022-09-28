@@ -3,7 +3,7 @@ title: Integrate your SIEM tools with Microsoft Defender for Endpoint
 description: Learn how to ingest incidents and alerts, and integrate SIEM tools.
 keywords: configure siem, security information and events management tools, splunk, arcsight, custom indicators, rest api, alert definitions, indicators of compromise
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Integrate your SIEM tools with Microsoft Defender for Endpoint
@@ -68,6 +68,15 @@ Using the Microsoft 365 Defender Add-on for Splunk that supports:
 - Updating alerts in Microsoft Defender for Endpoint from within Splunk
 
 For more information on the Microsoft 365 Defender Add-on for Splunk, see [splunkbase](https://splunkbase.splunk.com/app/4959/).
+
+### Datadog
+
+Microsoft 365 Defender for Endpoint integration with Datadog supports:
+
+- Ingesting Microsoft Defender for Endpoint alerts and incidents
+- Dashboards that enable monitoring metrics across endpoints, threats and vulnerabilities, and software
+
+For more information on the integration, see [Datadog Marketplace](https://app.datadoghq.com/marketplace/app/crest-data-systems-microsoft-defender/support).
 
 ### Micro Focus ArcSight
 

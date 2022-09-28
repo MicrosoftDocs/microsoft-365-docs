@@ -9,9 +9,12 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- highpri 
+- tier2
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.localizationpriority: null
 f1.keywords:
 - NOCSH
@@ -19,8 +22,6 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Get started with information barriers
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 This article describes how to configure information barriers (IB) policies in your organization. Several steps are involved, so make sure you review the entire process before you begin configuring IB policies.
 
@@ -400,7 +401,8 @@ The following IB modes are supported on Microsoft 365 resources:
 | **Open** | There aren't any IB policies or segments associated with the Microsoft 365 resource. Anyone can be invited to be a member of the resource. | A team site created for picnic event for your organization. |
 | **Owner Moderated (preview)** | The IB policy of the Microsoft 365 resource is determined from the resource owner's IB policy. The resource owners can invite any user to the resource based on their IB policies. This mode is useful when your company wants to allow collaboration among incompatible segment users that are moderated by the owner. Only the resource owner can add new members per their IB policy. | The VP of HR wants to collaborate with the VPs of Sales and Research. A new SharePoint site that is set with IB mode *Owner Moderated* to add both Sales and Research segment users to the same site. It's the responsibility of the owner to ensure appropriate members are added to the resource. |
 | **Implicit** | The IB policy or segments of the Microsoft 365 resource is inherited from the resource members IB policy. The owner can add members as long as they're compatible with the existing members of the resource. This mode is the default IB mode for Microsoft Teams. | The Sales segment user creates a Microsoft Teams team to collaborate with other compatible segments in the organization. |
-| **Explicit** | The IB policy of the Microsoft 365 resource is per the segments associated with the resource. The resource owner or SharePoint administrator has the ability to manage the segments on the resource.  | A site created only for Sales segment members to collaborate by associating the Sales segment with the site.   |
+| **Explicit** | The IB policy of the Microsoft 365 resource is per the segments associated with the resource. The resource owner or SharePoint administrator has the ability to manage the segments on the resource. | A site created only for Sales segment members to collaborate by associating the Sales segment with the site. |
+| **Mixed (preview)** | Only applicable to OneDrive. The IB policy of the OneDrive is per the segments associated with the OneDrive. The resource owner or OneDrive administrator has the ability to manage the segments on the resource. | A OneDrive created for Sales segment members to collaborate is allowed to be shared with unsegmented users. |
 
 For more information about IB modes and how they're configured across services, see the following articles:
 
@@ -416,8 +418,8 @@ To see how an organization might approach defining segments and policies, consid
 
 Contoso has five departments: *HR*, *Sales*, *Marketing*, *Research*, and *Manufacturing*. In order to remain compliant with industry regulations, users in some departments aren't supposed to communicate with other departments, as listed in the following table:
 
-| Segment | Can communicate with | Can't communicate with |
-|:----------|:--------------|:-----------------|
+| **Segment** | **Can communicate with** | **Can't communicate with** |
+|:------------|:-------------------------|:---------------------------|
 | HR | Everyone | (no restrictions) |
 | Sales | HR, Marketing, Manufacturing | Research |
 | Marketing | Everyone | (no restrictions) |

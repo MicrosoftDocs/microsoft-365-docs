@@ -10,7 +10,7 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
 - Strat_O365_IP
@@ -23,8 +23,6 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Technical reference details about encryption
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Refer to this article to learn about certificates, technologies, and TLS cipher suites used for [encryption in Office 365](encryption.md). This article also provides details about planned deprecations.
   

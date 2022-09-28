@@ -5,8 +5,8 @@ keywords: antivirus, spam, phish, file, alert, Microsoft Defender for Endpoint, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.date: 06/15/2021
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,10 +17,8 @@ localization_priority: Normal
 audience: ITPro
 ms.topic: how-to
 ms.collection:
-- m365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
-- m365solution-scenario
-- m365scenario-fpfn
 ms.custom: FPFN
 ---
 
@@ -43,7 +41,7 @@ In Microsoft Defender for Endpoint, admins can use the unified submissions featu
 
 - To submit files to Microsoft, you need to be a member of one of the following role groups:
 
-  - **Organization Management** or **Security Administrator** in the [Microsoft 365 Defender portal](../office-365-security/permissions-microsoft-365-security-center.md).
+  - **Organization Management**, **Security Administrator**, or **Security Reader** in the [Microsoft 365 Defender portal](../office-365-security/permissions-microsoft-365-security-center.md).
 
 - For more information about how you can submit spam, phish, URLs, and email attachments to Microsoft, see [Report messages and files to Microsoft](../office-365-security/report-junk-email-messages-to-microsoft.md).
 

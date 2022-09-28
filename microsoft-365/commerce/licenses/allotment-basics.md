@@ -16,12 +16,13 @@ ms.collection:
 - Adm_O365
 ms.custom: 
 - commerce_licensing
+- empty
 search.appverid: MET150
 description: "Learn about the new allotments feature."
 ms.date: 05/12/2022
 ---
 
-# Allotment basics
+# Microsoft 365 license allotment basics
 
 License allotments let you set license limits and delegate management of license assignment to only the products and license limits that you select.
 
@@ -42,11 +43,11 @@ You can use allotments with any product available to users:
 The following products can't be used with allotments:
 
 - Microsoft Store apps
-- Perpetual software, or software that is directly assigned to a user if there is no license involved.
+- Perpetual software, or software that is directly assigned to a user if there's no license involved.
 - Azure resources
 
 You must be a global or license admin to get started with an allotment.
 
 ## Getting started
 
-The allotments feature is available in a private preview to only a small number of customers. If you're interested in joining, fill out this form: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).
+The allotments feature is available in a private preview to only a few customers. If you're interested in joining, fill out this form: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).

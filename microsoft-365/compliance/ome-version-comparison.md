@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MET150
 description: This article helps explain the differences between different versions of message encryption.
@@ -19,8 +19,6 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Compare versions of message encryption
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!IMPORTANT]
 > On February 28, 2021, Microsoft deprecated support for AD RMS in Exchange Online. If you've deployed a hybrid environment where your Exchange mailboxes are online and you're using IRM with Active Directory RMS on-premises, you'll need to migrate to Azure. Organizations that have deployed into the GCC Moderate environment are also affected. See "Overview of AD RMS deprecation in Exchange Online" in this article for information.
@@ -102,7 +100,7 @@ Users can manually send mail that is encrypted with Microsoft Purview Message En
 
 ## Migrate from legacy OME to Microsoft Purview Message Encryption
 
-Even though both versions can coexist, we highly recommend that you edit your old mail flow rules that use the rule action **Apply the previous version of OME** to use Microsoft Purview Message Encryption. Update these rules to use the mail flow rule action **Apply Office 365 Message Encryption and rights protection**. For instructions, see [Define mail flow rules to encrypt email messages](define-mail-flow-rules-to-encrypt-email.md).
+Even though both versions can coexist, we highly recommend that you edit your old mail flow rules that use the rule action **Apply the previous version of OME** to use Microsoft Purview Message Encryption. Update these rules to use the mail flow rule action **Apply Office 365 Message Encryption and rights protection**, select "Encrypt" in the RMS template list. For instructions, see [Define mail flow rules to encrypt email messages](define-mail-flow-rules-to-encrypt-email.md).
 
 ## Get started with OME
 

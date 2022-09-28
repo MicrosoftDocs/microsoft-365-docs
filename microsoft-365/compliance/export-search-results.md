@@ -1,9 +1,10 @@
 ---
 title: "Export Content search results"
+description: "Export the search results from a Content search in the Microsoft Purview compliance portal to a local computer. Email results are exported as PST files. Content from SharePoint and OneDrive for Business sites are exported as native Office documents."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -11,22 +12,18 @@ f1_keywords:
 - 'ms.o365.cc.CustomizeExport'
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+ms.collection:
+- tier1
+- purview-compliance
+- content-search
 search.appverid:
 - MOE150
 - MED150
 - MET150
-ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: "Export the search results from a Content search in the Microsoft Purview compliance portal to a local computer. Email results are exported as PST files. Content from SharePoint and OneDrive for Business sites are exported as native Office documents."
 ms.custom: seo-marvel-apr2020
 ---
 
 # Export Content search results
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 After a Content search is successfully run, you can export the search results to a local computer. When you export email results, they're downloaded to your computer as PST files. When you export content from SharePoint and OneDrive for Business sites, copies of native Office documents are exported. There are other documents and reports included with the exported search results.
   

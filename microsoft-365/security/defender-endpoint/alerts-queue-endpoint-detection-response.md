@@ -3,7 +3,7 @@ title: Alerts queue in Microsoft 365 Defender
 ms.reviewer:
 description: View and manage the alerts surfaced in Microsoft 365 Defender
 keywords:
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: conceptual
 ms.date: 09/03/2018
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Alerts queue in Microsoft 365 Defender

@@ -10,13 +10,11 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 description: "Learn how to set up Customer Key."
 ---
 
 # Set up Customer Key
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 With Customer Key, you control your organization's encryption keys and then configure Microsoft 365 to use them to encrypt your data at rest in Microsoft's data centers. In other words, Customer Key allows customers to add a layer of encryption that belongs to them, with their keys.
 
@@ -102,7 +100,7 @@ To submit an offer to activate Customer Key, complete these steps:
 
 2. Once you're logged in, select the appropriate domain.
 
-3. For the selected domain, choose **Request services** from the top navigation bar, and review the list of available offers.
+3. For the selected domain, choose **Deploy** from the top navigation bar, and review the list of available offers.
 
 4. Choose the information card for the offer that applies to you:
 
@@ -118,14 +116,14 @@ To submit an offer to activate Customer Key, complete these steps:
 
 ### Register Azure subscriptions to use a mandatory retention period
 
-The temporary or permanent loss of root encryption keys can be disruptive or even catastrophic to service operation and can result in data loss. For this reason, the resources used with Customer Key require strong protection. All the Azure resources that are used with Customer Key offer protection mechanisms beyond the default configuration. You can tag or register Azure subscriptions for a *mandatory retention period*. A mandatory retention period prevents immediate and irrevocable cancellation of your Azure subscription. The steps required to register Azure subscriptions for a mandatory retention period require collaboration with the Microsoft 365 team. This process will take five business days to complete. Previously, mandatory retention period was sometimes referred to as "Do Not Cancel".
+The temporary or permanent loss of root encryption keys can be disruptive or even catastrophic to service operation and can result in data loss. For this reason, the resources used with Customer Key require strong protection. All the Azure resources that are used with Customer Key offer protection mechanisms beyond the default configuration. You can tag or register Azure subscriptions for a *mandatory retention period*. A mandatory retention period prevents immediate and irrevocable cancellation of your Azure subscription. The steps required to register Azure subscriptions for a mandatory retention period require collaboration with the Microsoft 365 team. Previously, mandatory retention period was sometimes referred to as "Do Not Cancel". This process will take five business days to complete.
   
 > [!IMPORTANT]
 > Before contacting the Microsoft 365 team, you must do the following steps for **each** Azure subscription that you use with Customer Key. Ensure that you have the [Azure PowerShell Az](/powershell/azure/new-azureps-module-az) module installed before you start.
 
 1. Sign in with Azure PowerShell. For instructions, see [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
 
-2. Run the Register-AzProviderFeature cmdlet to register your subscriptions to use a mandatory retention period. Complete this action for each subscription.
+2. Run the Register-AzProviderFeature cmdlet to register your subscriptions to use a mandatory retention period. Complete this action for **each** subscription.
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
@@ -157,18 +155,7 @@ The Service Level Agreement (SLA) for completion of this process is five busines
 Once you receive notification from Microsoft that registration is complete, verify the status of your registration by running the Get-AzProviderFeature command as follows. If verified, the Get-AzProviderFeature command returns a value of **Registered** for the **Registration State** property. Complete this step for **each** subscription.
 
    ```powershell
-   Set-AzContext -SubscriptionId <SubscriptionId>
    Get-AzProviderFeature -ProviderNamespace Microsoft.Resources -FeatureName mandatoryRetentionPeriodEnabled
-   ```
-
-To complete the process, run the Register-AzResourceProvider command. Complete this step for **each** subscription.
-
-   ```powershell
-   Set-AzContext -SubscriptionId <SubscriptionId>
-   ```
-
-   ```powershell
-   Register-AzResourceProvider -ProviderNamespace Microsoft.KeyVault
    ```
 
 > [!TIP]

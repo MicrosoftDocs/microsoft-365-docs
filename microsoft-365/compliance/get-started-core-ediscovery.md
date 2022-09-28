@@ -1,28 +1,26 @@
 ---
 title: "Get started with eDiscovery (Standard) cases in Microsoft Purview"
+description: "Describes how to get started using eDiscovery (Standard) in Microsoft Purview. After you assign eDiscovery permissions and create a case, you can add members, create eDiscovery holds, and then search for and export content that's relevant to your investigation."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
-description: "Describes how to get started using eDiscovery (Standard) in Microsoft Purview. After you assign eDiscovery permissions and create a case, you can add members, create eDiscovery holds, and then search for and export content that's relevant to your investigation."
 ---
 
 # Get started with eDiscovery (Standard) in Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview eDiscovery (Standard) in Microsoft Purview provides a basic eDiscovery tool that organizations can use to search and export content in Microsoft 365 and Office 365. You can also use eDiscovery (Standard) to place an eDiscovery hold on content locations, such as Exchange mailboxes, SharePoint sites, OneDrive accounts, and Microsoft Teams. Nothing is needed to deploy eDiscovery (Standard), but there are some prerequisite tasks that an IT admin and eDiscovery manager have to complete before your organization can start using eDiscovery (Standard) to search, export, and preserve content.
 
@@ -32,11 +30,20 @@ This article discusses the steps necessary to set up eDiscovery (Standard). This
 
 Licensing for eDiscovery (Standard) requires the appropriate organization subscription and per-user licensing.
 
-- **Organization subscription:** To access eDiscovery (Standard) in the Microsoft Purview compliance portal and use the hold and export features, your organization must have a Microsoft 365 E3 or Office 365 E3 subscription or higher. Microsoft 365 Frontline organizations must have an F5 subscription.
+- **Organization subscription:** To access eDiscovery (Standard) in the Microsoft Purview compliance portal and use the hold and export features, your organization must have an Exchange online Plan 2 or Microsoft 365 E3 or Office 365 E3 subscription or higher. Microsoft 365 Frontline organizations must have an F5 subscription.
 
 - **Per-user licensing:** To place an eDiscovery hold on mailboxes and sites, users must be assigned one of the following licenses, depending on your organization subscription:
 
+  -  Exchange online Plan 2 license
+
+   OR
+   
   - A Microsoft 365 E3 or Office 365 E3 license or higher
+
+   OR
+   
+  - Microsoft 365 Business Premium (Exchange only) license
+  
 
    OR
 

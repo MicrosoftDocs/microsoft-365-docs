@@ -2,8 +2,8 @@
 title: Configure exclusions for files opened by specific processes
 description: You can exclude files from scans if they have been opened by a specific process.
 keywords: Microsoft Defender Antivirus, process, exclusion, files, scans
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,8 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Configure exclusions for files opened by processes
@@ -34,8 +35,6 @@ You can exclude files that have been opened by specific processes from Microsoft
 This article describes how to configure exclusion lists.
 
 ## Examples of exclusions
-
-<br/><br/>
 
 |Exclusion|Example|
 |---|---|
@@ -94,8 +93,6 @@ The format for the cmdlets is:
 
 The following are allowed as the \<cmdlet\>:
 
-<br/><br/>
-
 |Configuration action|PowerShell cmdlet|
 |---|---|
 |Create or overwrite the list|`Set-MpPreference`|
@@ -105,7 +102,7 @@ The following are allowed as the \<cmdlet\>:
 > [!IMPORTANT]
 > If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again will overwrite the existing list.
 
-For example, the following code snippet would cause Microsoft Defender AV scans to exclude any file that is opened by the specified process:
+For example, the following code snippet would cause Microsoft Defender Antivirus scans to exclude any file that is opened by the specified process:
 
 ```PowerShell
 Add-MpPreference -ExclusionProcess "c:\internal\test.exe"
@@ -136,8 +133,6 @@ The use of wildcards in the process exclusion list is different from their use i
 In particular, you cannot use the question mark (`?`) wildcard, and the asterisk (`*`) wildcard can only be used at the end of a complete path. You can still use environment variables (such as `%ALLUSERSPROFILE%`) as wildcards when defining items in the process exclusion list.
 
 The following table describes how the wildcards can be used in the process exclusion list:
-
-<br/><br/>
 
 |Wildcard|Example use|Example matches|
 |---|---|---|

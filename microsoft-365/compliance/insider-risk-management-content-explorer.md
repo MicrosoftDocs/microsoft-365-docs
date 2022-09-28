@@ -11,12 +11,12 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ---
 
 # Insider risk management Content explorer
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The insider risk management **Content explorer** allows users assigned the *Insider Risk Management Investigators* role to examine the context and details of content associated with activity in alerts. The case data in Content explorer is refreshed daily to include new activity. For all alerts that are confirmed to a case, copies of data and message files are archived as a snapshot in time of the items, while maintaining the original files and messages in the storage sources. If needed, case data files may be exported as a portable document file (PDF) or in the original file format.
 

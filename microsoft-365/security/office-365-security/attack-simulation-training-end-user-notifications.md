@@ -5,37 +5,45 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: Admins can learn how to create end-user notification email messages for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
-ms.technology: mdo
+ms.subservice: mdo
+search.appverid: met150
 ---
 
 # End-user notifications for Attack simulation training
 
-In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, end-user notifications are email messages that are sent to users There are two basic types of notifications:
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-- **Simulation notifications**: These messages are sent when users are enrolled in trainings, and as reminders for required trainings.
-- **Positive reinforcement notifications**: These messages are sent when users report a simulated phishing message.
+**Applies to**
+- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-To see the available end-user notification, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, and then go to **Email & collaboration** \> **Attack simulation training** \> **End-user notifications** tab. To go directly to the **End-user notifications** tab, use <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>.
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, end-user notifications are email messages that are sent to users as a result of [simulations](attack-simulation-training.md) or [simulation automations](attack-simulation-training-simulation-automations.md). The following types of end-user notifications are available:
 
-The **End-user notifications** tab has two tabs:
+- **Positive reinforcement notification**: Sent when users report a simulated phishing message.
+- **Simulation notification**: Sent when users are included in a simulation or simulation automation, but no trainings are selected.
+- **Training assignment notification**: Sent when users are assigned required trainings as a result of a simulation or simulation automations.
+- **Training reminder notification**: Sent as reminders for required trainings.
 
-- **Global notifications**: Contains the built-in and non-modifiable notifications.
+To see the available end-user notifications, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulation content library** tab \> and then select **End user notifications**. To go directly to the **Simulation content library** tab where you can select **End user notifications**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+
+**End user notifications** has two tabs:
+
+- **Global notifications**: Contains the built-in, non-modifiable notifications.
 - **Tenant notifications**: Contains the custom notifications that you've created.
 
 The following information is shown for each notification:
 
 - **Notifications**: The name of the notification.
 - **Language**: If the notification contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
-- **Type**: The value is **Simulation notification** or **Positive reinforcement notification**.
+- **Type**: The value is **Positive reinforcement notification**, **Simulation notification**, **Training assignment notification**, or **Training reminder notification**.
 - **Source**: For built-in notifications, the value is **Global**. For custom notifications, the value is **Tenant**.
-- **Status**
-- **Linked simulations**
+- **Status**: The value is **Ready** or **Draft**. On the **Global notifications** tab, the value is always **Ready**.
+- **Linked simulations**: The total number of [simulations](attack-simulation-training.md) or [simulation automations](attack-simulation-training-simulation-automations.md) that use the notification.
 - **Created by**: For built-in notifications, the value is **Microsoft**. For custom notifications, the value is the UPN of the user who created the notification.
 - **Created time**
 - **Modified by**
@@ -51,7 +59,7 @@ To remove one or more columns that are displayed, click ![Customize columns icon
 
 When you select a notification from the list, a details flyout appears with the following information:
 
-- **Preview** tab: View the notification message. To view the message in different languages, use the **Select language** box.
+- **Preview** tab: View the notification message as users will see it. To view the message in different languages, use the **Select language** box.
 - **Details** tab: View details about the notification:
   - **Notification description**
   - **Source**: For built-in notifications, the value is **Global**. For custom notifications, the value is **Tenant**.
@@ -67,9 +75,14 @@ On the details flyout from the **Tenant notifications** tab only, click **Edit n
 
 ## Create end-user notifications
 
-On the **Tenant notifications** tab, you can click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the new end-user notification wizard.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulation content library** tab \> and then select **End user notifications**. To go directly to the **Simulation content library** tab where you can select **End user notifications**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
-1. On the **Define details** page**, configure the following settings:
+2. On the **Tenant notifications** tab, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the end user notification wizard.
+
+   > [!NOTE]
+   > At any point during the creation wizard, you can click **Save and close** to save your progress and continue configuring the notification later. You can pick up where you left off by selecting the notification on the **Tenant notifications** tab in **End user notifications**, and then clicking ![Edit automation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit automation**. The partially-completed notification will have the **Status** value **Draft**.
+
+3. On the **Define details** page**, configure the following settings:
    - **Select notification type**: Select one of the following values:
      - **Positive reinforcement notification**
      - **Simulation notification**
@@ -80,7 +93,7 @@ On the **Tenant notifications** tab, you can click ![Create new icon.](../../med
 
    When you're finished, click **Next**.
 
-2. On the **Define content** page, the only setting that's available is the **Add content in business language** button. When you click it, an **Add content in default language** flyout appears that contains the following settings:
+4. On the **Define content** page, the only setting that's available is the **Add content in business language** button. When you click it, an **Add content in default language** flyout appears that contains the following settings:
    - **From display name**
    - **From email address**
    - **Select the language of the email**: Select a language from the list.
@@ -119,7 +132,7 @@ On the **Tenant notifications** tab, you can click ![Create new icon.](../../med
 
    When you're finished, click **Next**
 
-3. On the **Review notification** page, you can review the details of your notification.
+5. On the **Review notification** page, you can review the details of your notification.
 
    You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
@@ -129,17 +142,44 @@ On the **Tenant notifications** tab, you can click ![Create new icon.](../../med
 
    When you're finished, click **Done**.
 
-Back on the **Tenant notifications** tab, the notification that you created is now list.
+Back on the **Tenant notifications** tab in **End user notifications**, the notification that you created is now list.
 
-When you select a notification, the following additional options are available:
+## Modify end-user notifications
 
-You're taken back to the **Positive reinforcement notification** page where the notification that you just created now appears in the **Select a positive reinforcement notification** list.
+You can't modify built-in notifications on the **Global notifications** tab. You can only modify custom notifications on the **Tenant notifications** tab.
 
-- To modify the notification or add additional translations, select the notification and then click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit notification** to start the notification wizard as previously described (with most values already filled in). If the notification already has translations for the 12 supported languages, you can't add more translations.
+To modify an existing custom notification on the **Tenant notifications** tab, do one of the following steps:
 
-- To create a copy of a notification, select it, and then click ![Create a copy icon.](../../media/m365-cc-sc-copy-icon.png).
+- Select the notification from the list by clicking the check box. Click the ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** icon that appears.
+- Click **⋮** (**Actions**) between the **Notifications** and **Language** values of the notification in the list, and then select ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
+- Select the notification from the list by clicking anywhere in the row except the check box. In the details flyout that opens, click **Edit notification**.
 
-- To delete a notification, select it, and then click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png).
+The end-user notification wizard opens with the settings and values of the selected notification. The steps are the same as described in the [Create end-user notifications](#create-end-user-notifications) section.
+
+## Copy end-user notifications
+
+To copy an existing notification on the **Tenant notifications** or **Global notifications** tabs, do one of the following steps:
+
+- Select the notification from the list by clicking the check box, and then click the ![Create a copy icon.](../../media/m365-cc-sc-edit-icon.png) **Create a copy** icon that appears.
+- Click **⋮** (**Actions**) between the **Notifications** and **Language** values of the notification in the list, and then select ![Create a copy icon.](../../media/m365-cc-sc-edit-icon.png) **Create a copy**.
+
+When you copy a custom notification on the **Tenant notifications** tab, a copy of the notification named "\<OriginalName\> - Copy" is available in the list.
+
+When you copy a built-in notification on the **Global notifications** tab, a **Create copy** dialog appears. The dialog confirms that a copy of the notification has been created, and is available on the **Tenant notifications** tab. If you click **Go to Tenant notification** you're taken to the **Tenant notifications** tab, where the copied built-in notification is named "\<OriginalName\> - Copy" is available in the list. If you click **Stay here** in the dialog, you return to the **Global notifications** tab.
+
+After the copy is created, you can modify it as [previously described](#modify-end-user-notifications).
+
+> [!NOTE]
+> The **Use from default** control on the **Add content in default language** flyout in the notification wizard allows you to copy the contents of a built-in notification.
+
+## Remove notifications
+
+You can't remove built-in notifications from the **Global notifications** tab. You can only remove custom notifications on the **Tenant notifications** tab.
+
+To remove an existing custom notification from the **Tenant notifications** tab, do one of the following steps:
+
+- Select the notification from the list by clicking the check box, and then click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon that appears.
+- Click **⋮** (**Actions**) between the **Notifications** and **Language** values of the notification in the list, and then select ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
 
 ## Related links
 

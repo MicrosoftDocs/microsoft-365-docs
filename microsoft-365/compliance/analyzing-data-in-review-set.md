@@ -1,28 +1,26 @@
 ---
 title: "Analyze data in a review set in eDiscovery (Premium)"
+description: Learn about the tools available to organize document sets when analyzing an Microsoft Purview eDiscovery (Premium) case.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: Learn about the tools available to organize document sets when analyzing an Microsoft Purview eDiscovery (Premium) case.
 ms.custom: seo-marvel-mar2020
 ---
 
 # Analyze data in a review set in eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 When the number of collected documents is large, it can be difficult to review them all. Microsoft Purview eDiscovery (Premium) provides a number of tools to analyze the documents to reduce the volume of documents to be reviewed without any loss in information, and to help you organize the documents in a coherent manner. To learn more about these capabilities, see:
 

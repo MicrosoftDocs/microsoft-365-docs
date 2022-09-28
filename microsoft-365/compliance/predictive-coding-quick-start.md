@@ -1,9 +1,10 @@
 ---
 title: "Predictive coding in eDiscovery (Premium) - Quick start"
+description: "Learn how to get started using the predictive coding module in eDiscovery (Premium). This article walks you through the end-to-end process of using predictive coding to identify content in a review set that's most relevant to your investigation."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -12,13 +13,13 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "Learn how to get started using the predictive coding module in eDiscovery (Premium). This article walks you through the end-to-end process of using predictive coding to identify content in a review set that's most relevant to your investigation."
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Quick start: Predictive coding in eDiscovery (Premium) (preview)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 This article presents a quick start for using predictive coding in Microsoft Purview eDiscovery (Premium). The predictive coding module uses intelligent, machine learning capabilities to help you cull large volumes of case content that's not relevant to your investigation. This is accomplished by creating and training your own predictive coding models that help you prioritize the most relevant items for review.
 

@@ -1,27 +1,27 @@
 ---
 title: "Manage legal investigations in Microsoft 365"
+description: "Use eDiscovery cases in the Microsoft Purview compliance portal to manage your organization's legal investigation."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: "Use eDiscovery cases in the Microsoft Purview compliance portal to manage your organization's legal investigation."
 ---
 
 # Manage legal investigations in Microsoft 365
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Organizations have many reasons to respond to a legal case involving certain executives or other employees in your organization. This might involve quickly finding and retaining for further investigation-specific information in email, documents, instant messaging conversations, and other content locations used by people in their day-to-day work tasks. You can perform these and many other similar activities by using the eDiscovery case tools in the security and compliance center.
   
@@ -41,7 +41,7 @@ eDiscovery cases let you control who can create, access, and manage eDiscovery c
 
 ### Use scripts for advanced scenarios
 
-Like the previous section that listed scripts for content search scenarios, we've also created some Security & Compliance Center PowerShell scripts to help you manage eDiscovery cases.
+Like the previous section that listed scripts for content search scenarios, we've also created some Security & Compliance PowerShell scripts to help you manage eDiscovery cases.
   
 - [Create a eDiscovery hold report](create-a-report-on-holds-in-ediscovery-cases.md) that contains information about all holds associated with eDiscovery cases in your organization.
 

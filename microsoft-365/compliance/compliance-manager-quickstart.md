@@ -10,9 +10,10 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
@@ -21,8 +22,6 @@ description: "Use the Compliance Manager quickstart guide to help you along your
 ---
 
 # Compliance Manager quickstart
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **In this article:** Use this quickstart guide to help you along your journey of using Microsoft Purview Compliance Manager to manage your organization’s compliance with regulations, policies, and standards.
 
@@ -44,7 +43,7 @@ Our [Compliance Manager overview page](compliance-manager.md) is the best first 
 - [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
 - [Understand assessments](compliance-manager.md#assessments)
-- [Do a quick scan of your environment using the Microsoft Compliance Configuration Manager](compliance-manager-mcca.md)
+- [Do a quick scan of your environment using the Configuration Analyzer for Microsoft Purview](compliance-manager-mcca.md)
 
 ## Ramping up: configure Compliance Manager to manage your compliance activities
 

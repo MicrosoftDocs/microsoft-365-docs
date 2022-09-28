@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 04/13/2020
 audience: ITPro
 ms.topic: conceptual
-ms.prod: office-online-server
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -107,7 +107,7 @@ If you upgrade to SharePoint Server 2013 or SharePoint Server 2016 and decide to
 |SharePoint Online advantage|SharePoint Online disadvantage|
 |---|---|
 |Microsoft supplies SPO hardware and all hardware administration.|Available features may differ between SharePoint Server on-premises and SPO.|
-|You're the Sharepoint admin or global admin of your subscription and can assign administrators to SPO sites.|Some actions available to a farm administrator in SharePoint Server on-premises don't exist (or aren't necessary) in the SharePoint Administrator role in Microsoft 365. But SharePoint Administration, Site Collection Administration, and Site Ownership are local to your org.|
+|You're the SharePoint admin or global admin of your subscription and can assign administrators to SPO sites.|Some actions available to a farm administrator in SharePoint Server on-premises don't exist (or aren't necessary) in the SharePoint Administrator role in Microsoft 365. But SharePoint Administration, Site Collection Administration, and Site Ownership are local to your org.|
 |Microsoft applies patches, fixes, and updates to underlying hardware and software, including SQL servers on which SharePoint Online runs.|Because there's no access to the underlying file system in the service, customization is limited.|
 |Microsoft publishes [service level agreements](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) and moves quickly to resolve service-level incidents.|Backup and restore and other recovery options are automated by the service in SharePoint Online. Backups are overwritten if not used.|
 |Security testing and server performance tuning are carried out continuously in the service by Microsoft.|Changes to the user interface and other SharePoint features are installed by the service and may need to be toggled on or off.|
@@ -158,11 +158,11 @@ You may decide to move some of your sites to the "evergreen" hardware of SharePo
 
 - *Hardware/software requirements for:*
 
-    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14)) | [SharePoint Server 2013](/SharePoint/install/hardware-and-software-requirements-0) | [SharePoint Server 2016](/SharePoint/install/hardware-and-software-requirements)
+    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14)) | [SharePoint Server 2013](/sharepoint/install/hardware-software-requirements-2013) | [SharePoint Server 2016](/SharePoint/install/hardware-and-software-requirements)
 
 - *Software boundaries and limits for:*
 
-    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262787(v=office.14)) | [SharePoint Server 2013](/SharePoint/install/software-boundaries-and-limits) | [SharePoint Server 2016](/SharePoint/install/software-boundaries-and-limits-0)
+    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262787(v=office.14)) | [SharePoint Server 2013](/SharePoint/install/software-boundaries-and-limits) | [SharePoint Server 2016](/sharepoint/install/software-boundaries-limits-2019)
 
 - *The upgrade process overview for:*
 
@@ -229,11 +229,11 @@ Begin by knowing that you meet hardware and software requirements, then follow s
 
 - *Hardware/software requirements for*:
 
-    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14)) | [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14)) | [SharePoint Server 2013](/SharePoint/install/hardware-and-software-requirements-0) | [SharePoint Server 2016](/SharePoint/install/hardware-and-software-requirements)
+    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14)) | [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14)) | [SharePoint Server 2013](/sharepoint/install/hardware-software-requirements-2013) | [SharePoint Server 2016](/SharePoint/install/hardware-and-software-requirements)
 
 - *Software boundaries and limits for*:
 
-    [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262787(v=office.12)) | [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262787(v=office.14)) | [SharePoint Server 2013](/SharePoint/install/software-boundaries-and-limits) | [SharePoint Server 2016](/SharePoint/install/software-boundaries-and-limits-0)
+    [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262787(v=office.12)) | [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262787(v=office.14)) | [SharePoint Server 2013](/SharePoint/install/software-boundaries-and-limits) | [SharePoint Server 2016](/sharepoint/install/software-boundaries-limits-2019)
 
 - *The upgrade process overview for*:
 

@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 12/3/2019
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
@@ -27,7 +27,7 @@ description: Learn how to decrease the load time for SharePoint Online pages by 
 
 This article describes how you can decrease the load time for SharePoint Online pages by using JavaScript to delay loading images and also by waiting to load non-essential JavaScript until after the page loads.
   
-Images can negatively affect page load speeds on SharePoint Online. By default, most modern Internet browsers pre-fetch images when loading an HTML page. This can cause the page to be unnecessarily slow to load if the images are not visible on the screen until the user scrolls down. The images can block the browser from loading the visible part of the page. To work around this problem, you can use JavaScript to skip loading the images first. Also, loading non-essential JavaScript can slow download times on your SharePoint pages too. This topic describes some methods you can use to improve page load times with JavaScript in SharePoint Online.
+Images can negatively affect page load speeds on SharePoint Online. By default, most modern Internet browsers pre-fetch images when loading an HTML page. This can cause the page to be unnecessarily slow to load if the images aren't visible on the screen until the user scrolls down. The images can block the browser from loading the visible part of the page. To work around this problem, you can use JavaScript to skip loading the images first. Also, loading non-essential JavaScript can slow download times on your SharePoint pages too. This topic describes some methods you can use to improve page load times with JavaScript in SharePoint Online.
   
 ## Improve page load times by delaying image loading in SharePoint Online pages by using JavaScript
 
@@ -102,7 +102,7 @@ Once you've finished writing delayLoadImages.js, you can add the contents of the
 
 ### Example: Referencing the JavaScript delayLoadImages.js file from a master page in SharePoint Online
   
-In order for this to work, you also need to reference jQuery in the master page. In the following example, you can see in the initial page load that there is only one image loaded but there are several more on the page.
+In order for this to work, you also need to reference jQuery in the master page. In the following example, you can see in the initial page load that there's only one image loaded but there are several more on the page.
   
 ![Screenshot showing one image loaded on page.](../media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
   
@@ -110,7 +110,7 @@ The following screenshot shows the rest of the images that are downloaded after 
   
 ![Screenshot showing several images loaded on page.](../media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
   
-Delaying image loading by using JavaScript can be an effective technique in increasing performance; however, if the technique is applied on a public website then search engines are not able to crawl the images in the same way they would crawl a regularly formed image. This can affect rankings on search engines because metadata on the image itself is not really there until the page loads. Search engine crawlers only read the HTML and therefore will not see the images as content on the page. Images are one of the factors used to rank pages in search results. One way to work around this is to use introductory text for your images.
+Delaying image loading by using JavaScript can be an effective technique in increasing performance; however, if the technique is applied on a public website then search engines are not able to crawl the images in the same way they would crawl a regularly formed image. This can affect rankings on search engines because metadata on the image itself isn't really there until the page loads. Search engine crawlers only read the HTML and therefore won't see the images as content on the page. Images are one of the factors used to rank pages in search results. One way to work around this is to use introductory text for your images.
   
 ## GitHub code sample: Injecting JavaScript to improve performance
 

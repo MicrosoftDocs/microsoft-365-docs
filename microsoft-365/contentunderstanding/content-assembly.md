@@ -6,7 +6,7 @@ manager: pamgreen
 audience: admin
 ms.reviewer: anrasto, shrganguly
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid:
 ms.collection:
     - enabler-strategic
@@ -17,9 +17,9 @@ description: Learn how to automatically create documents and other content using
 
 # Create documents using content assembly in Microsoft SharePoint Syntex
 
-You can use SharePoint Syntex to help you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, sales pitches, and correspondence. You can do all this quicker, more consistentently, and less prone to errors by using content assembly in SharePoint Syntex.
+You can use SharePoint Syntex to help you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, sales pitches, and correspondence. You can do all this quicker, more consistentently, and with fewer errors by using content assembly in SharePoint Syntex.
 
-With content assembly, you can use an existing document to create a *modern template*, and then use that template to automatically generate new content using SharePoint lists or user inputs as a data source.
+With content assembly, you can use an existing document to create a *modern template*, and then use that template to automatically generate new content using SharePoint lists or manual entries as a data source.
 
 > [!NOTE]
 > You must be a licensed SharePoint Syntex user to access and use content assembly capabilities. You also must have permissions to manage SharePoint lists.
@@ -28,7 +28,7 @@ With content assembly, you can use an existing document to create a *modern temp
 
 Follow these steps to create a modern template.
 
-1. From a Sharepoint document library, select **New** > **Create modern template**.
+1. From a SharePoint document library, select **New** > **Create modern template**.
 
    ![Screenshot of document library with the Create modern template option highlighted.](../media/content-understanding/content-assembly-create-template-1.png)
 
@@ -60,7 +60,9 @@ Follow these steps to create a modern template.
    - [Select from managed metadata term set or term](#associate-a-placeholder-by-selecting-from-managed-metadata-term-set-or-term)
 
    > [!NOTE]
-   > You can create placeholders for text only. Images, smart art, tables, and bullet lists are currently not supported.   
+   > You can create placeholders for text, and also placeholders for text within cells in a table. However, images, smart art, complete tables, and bulleted lists are currently not supported.   
+
+
 
 ### Associate a placeholder by entering text or selecting a date
 
@@ -75,6 +77,9 @@ On the **All placeholders** panel:
 3. In the **Type of info** field, select the data type you want to associate with the placeholder. Currently, there are six options available: **Single line of text**, **Multiple lines of text**, **Number**, **Date and time**, **Email**, and **Hyperlink**.
 
 4. Select **Add**.
+
+   > [!NOTE]
+   > You can configure multiple date formatters such as MM/DD/YYYY, DD/MM/YYYY, YYYY/MM/DD, and Month DD, including setting time in both 12-hour and 24-hour format. 
 
 ### Associate a placeholder by selecting from choices in a column of a list or library
 
@@ -135,7 +140,7 @@ You can create as many placeholders as you think are necessary. When you're done
 
 If you need to edit an existing template or to delete or unpublish a template, follow these steps.
 
-1. From a Sharepoint document library, select **New** > **Edit New menu**.
+1. From a SharePoint document library, select **New** > **Edit New menu**.
 
    ![Screenshot of document library with the Edit New menu option highlighted.](../media/content-understanding/content-assembly-edit-template-1.png)
 
@@ -157,7 +162,7 @@ If you need to edit an existing template or to delete or unpublish a template, f
 
 You can use a *published* modern template to quickly create similar documents without having to start from scratch. To create a document using a published template, follow these steps:
 
-1. From a Sharepoint document library, select **New**, and then select the modern template you want to use.
+1. From a SharePoint document library, select **New**, and then select the modern template you want to use.
 
    ![Screenshot of document library showing the modern template choices on the New menu.](../media/content-understanding/content-assembly-create-document-1.png)
 
@@ -177,7 +182,7 @@ You can use a *published* modern template to quickly create similar documents wi
 >- Only Microsoft Word documents (.docx extension) are currently supported for creating a template. Before uploading a Word document, ensure that it doesn't include comments or have **Track changes** enabled. If the document contains text placeholders for images, ensure that they are not text-wrapped. Content controls in Word are currently not supported. If you want to create a template from a Word document with content controls, remove them before you create a modern template.
 >- The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library.
 >- The uploaded document that is used to create the modern template will be saved as a separate copy and placed in the /forms directory of the document library. The original file on the disk will be unaffected.
->- You can create placeholders for text only. Images, smart art, tables, and bullet lists are currently not supported.
+>- You can create placeholders for text, and also placeholders for text within cells in a table. However, images, smart art, complete tables, and bulleted lists are currently not supported.
 >- Once a document is created from a template, it's not associated with the template.
 
 

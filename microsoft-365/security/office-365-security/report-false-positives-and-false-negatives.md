@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 description: Learn how to report false positives and false negatives in Outlook using the Report Message feature.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Report false positives and false negatives in Outlook
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -46,17 +47,8 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 Watch this short video to learn how you can use Microsoft Defender for Office 365 to easily investigate user submissions to determine the contents of a message, and respond to the submission by applying the appropriate remediation action. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBHof]
 
-### Turn off the built-in reporting experience
-
-We don't recommend the built-in reporting experience in Outlook because it can't use the [user submission policy](./user-submission.md). We recommend using the Report Message add-in or the Report Phishing add-in instead.
-
-You need to be assigned permissions before you can run this cmdlet. To find the permissions required to run any cmdlet or parameter in your organization, see [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions).
-
-Run the following PowerShell command to disable the built-in reporting experience in Outlook on the web:
-
-```powershell
-Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled $false
-```
+> [!IMPORTANT]
+> To view messages reported to Microsoft on the **User reported messages** tab at <https://security.microsoft.com/reportsubmission>, don't turn off the built-in reporting experience.
 
 ## Use the Report Message feature
 

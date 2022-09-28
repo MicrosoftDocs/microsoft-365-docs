@@ -1,12 +1,12 @@
 ---
-title: Create an extractor Microsoft SharePoint Syntex
+title: Create an extractor in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid:
 ms.collection:
     - enabler-strategic
@@ -42,7 +42,9 @@ You need to create an extractor for each entity in the document that you want to
     ![Screenshot of the Advanced settings portion of the New entity extractor panel showing the Column type option.](../media/content-understanding/advanced-settings-column-type.png)
 
     > [!NOTE]
-    > For extractors with the column type **Single line of text**, the maximum character limit is 255. Any characters that you type exceeding the limit get truncated.
+    > For extractors with the column type **Single line of text**, the maximum character limit is 255. Any characters that you select exceeding the limit get truncated. To select greater than 255 characters, choose the **Multiple lines of text** column type when creating the extractor.
+    >
+    >By default, **Multiple lines of text** columns are created with a limit to the amount of text that can be added. In this case, extracted text might appear truncated. If this occurs, the column setting **Allow unlimited length in document libraries** can be used to remove the limit.
 
 3. When you're done, select **Create**.
 

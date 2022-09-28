@@ -4,7 +4,7 @@ description: This topic describes how to report and troubleshoot Microsoft Defen
 keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -17,8 +17,9 @@ ms.custom:
 - asr
 - admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
-ms.collection: M365-security-compliance
+ms.subservice: mde
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Report and troubleshoot Microsoft Defender for Endpoint ASR Rules

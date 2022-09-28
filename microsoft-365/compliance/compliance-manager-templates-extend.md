@@ -11,9 +11,10 @@ ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- highpri
 search.appverid: 
 - MOE150
 - MET150
@@ -21,8 +22,6 @@ description: "Understand how to extend assessment templates in Microsoft Purview
 ---
 
 # Extend assessment templates in Microsoft Purview Compliance Manager
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Compliance Manager offers the option to add your own controls and improvement actions to an existing template. This process is called extending a template.
 

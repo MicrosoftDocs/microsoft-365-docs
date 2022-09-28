@@ -11,7 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance 
+- tier1
+- purview-compliance 
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150 
@@ -20,8 +21,6 @@ description: Use a local script to deploy the configuration package on devices s
 ---
 
 # Onboard Windows 10 and Windows 11 devices using a local script
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Applies to:**
 

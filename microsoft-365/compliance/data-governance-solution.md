@@ -12,6 +12,8 @@ ms.collection:
 - m365solution-overview
 - m365solution-mig
 - m365initiative-compliance
+- highpri
+- tier1
 ms.localizationpriority: high
 search.appverid: 
 - MOE150
@@ -23,8 +25,6 @@ description: "Prescriptive guidance to deploy Microsoft Purview for your organiz
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Use **Microsoft Purview Data Lifecycle Management** (formerly Microsoft Information Governance) and **Microsoft Purview Records Management** to govern your Microsoft 365 data for compliance or regulatory requirements.
 
 ![Overview of steps to deploy a data governance solution with Microsoft Purview](../media/data-governance-solution-overview.png)
@@ -35,11 +35,7 @@ For a data protection solution, see [Deploy an information protection solution w
 
 ## Licensing
 
-To understand your licensing requirements and options, see the following sections from the [Microsoft 365 licensing documentation](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance): 
-- [Microsoft Purview Data Lifecycle Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management)
-- [Microsoft Purview Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-records-management)
-
-Any additional licensing requirements will be included in the documentation instructions. For example, licensing specific to managing mailboxes might require licenses from Exchange Online.
+To understand your licensing requirements and options, see the information from the Microsoft 365 guidance for security & compliance, [Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) section for feature-level licensing requirements.
 
 ## Keep what you need and delete what you don't
 
@@ -78,8 +74,8 @@ To learn more about the capabilities from this solution, see [Learn about record
 
 Learning modules for consultants and admins:
 
-- [Introduction to information protection and governance in Microsoft 365](/learn/modules/m365-compliance-information-governance)
-- [Govern information in Microsoft 365](/learn/modules/m365-compliance-information-govern-information/)
-- [Manage records in Microsoft 365](/learn/modules/m365-compliance-information-manage-records/)
+- [Introduction to information protection and data lifecycle management in Microsoft Purview](/training/modules/m365-compliance-information-governance)
+- [Manage the data lifecycle in Microsoft Purview](/training/modules/m365-compliance-information-govern-information/)
+- [Manage records in Microsoft Purview](/training/modules/m365-compliance-information-manage-records/)
 
 For documentation to support users when these solutions are deployed, see the end user documentation sections for [data lifecycle management](get-started-with-information-governance.md#end-user-documentation) and [records management](get-started-with-records-management.md#end-user-documentation).

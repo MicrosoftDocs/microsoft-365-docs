@@ -2,8 +2,8 @@
 title: "About the Microsoft Purview solutions trial"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: landing-page
@@ -17,8 +17,6 @@ description: "Learn details about the Microsoft Purview solutions trial and how 
 ---
 
 # About the Microsoft Purview solutions trial
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview solutions help protect your organization from internal threats arising from inappropriate permissions on files and emails, and helps your organization to comply with regulatory and internal business requirements.
 
@@ -42,8 +40,9 @@ Users must hold one of the following admin roles in order to sign up for or end 
 - Billing Administrator
 - Compliance Administrator
 - Global Administrator
+- Compliance Data Administrator
 
-Get details on roles at [About admin roles](../admin/add-users/about-admin-roles.md).
+Get more details about [roles for starting Microsoft 365 trials](compliance-easy-trials-roles.md).
 
 ## How to sign up for the trial
 
@@ -104,7 +103,7 @@ Wondering what you can experience in your free trial? The Purview solutions tria
    When the trial ends:
 
   - Your existing policies will stay turned on unless you turn them off.
-  - If you edit DLP policies that include either the Teams or Devices locations after the trial ends, those locations will be removed from the policy.
+  - You'll no longer be able to edit or add Teams or Devices locations in existing or new policies.
 
 - **eDiscovery**
 

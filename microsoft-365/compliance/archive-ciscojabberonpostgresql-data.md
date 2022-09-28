@@ -1,9 +1,10 @@
 ---
 title: "Set up a connector to archive Cisco Jabber on PostgreSQL data in Microsoft 365"
+description: "Learn how to set up and use a connector in the Microsoft Purview compliance portal to import and archive data from Cisco Jabber on PostgreSQL to Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -12,14 +13,14 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- data-connectors
 ms.custom: seo-marvel-apr2020
-description: "Learn how to set up and use a connector in the Microsoft Purview compliance portal to import and archive data from Cisco Jabber on PostgreSQL to Microsoft 365."
 ---
 
 # Set up a connector to archive Cisco Jabber on PostgreSQL data
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from the Cisco Jabber platform to user mailboxes in your Microsoft 365 organization. Veritas provides a [Cisco Jabber on PostgreSQL](https://www.veritas.com/insights/merge1/jabber) connector that is configured to capture items from the third-party data source (on a regular basis) and import those items to Microsoft 365. The connector converts the content such as messages, chats, and shared content from Cisco Jabber on PostgreSQL to an email message format and then imports those items to the user's mailbox in Microsoft 365.
 

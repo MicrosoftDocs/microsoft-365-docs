@@ -1,22 +1,22 @@
 ---
 title: "Set up a connector to archive Cisco Jabber data in Microsoft 365"
+description: "Learn how to set up and use a 17a-4 Cisco Jabber DataParser connector to import and archive Cisco Jabber data in Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: "Learn how to set up and use a 17a-4 Cisco Jabber DataParser connector to import and archive Cisco Jabber data in Microsoft 365."
+ms.collection:
+- tier1
+- purview-compliance
+- data-connectors
 ---
 
 # Set up a connector to archive Cisco Jabber data
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use the [Cisco Jabber DataParser](https://www.17a-4.com/jabber-dataparser/) from 17a-4 LLC to import and archive data from Cisco Jabber to user mailboxes in your Microsoft 365 organization. The DataParser includes a Cisco Jabber connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The Cisco Jabber DataParser connector converts Cisco Jabber data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
@@ -30,7 +30,7 @@ The following overview explains the process of using a data connector to archive
 
 1. Your organization works with 17a-4 to set up and configure the Cisco Jabber DataParser.
 
-2. On a regular basis, Cisco Jabber items are collected by the DataParser. The DataParser also converts the content of a message to an email message format.
+2. Regularly, Cisco Jabber items are collected by the DataParser. The DataParser also converts the content of a message to an email message format.
 
 3. The Cisco Jabber DataParser connector that you create in the Microsoft Purview compliance portal connects to DataParser and transfers the messages to a secure Azure Storage location in the Microsoft cloud.
 

@@ -68,7 +68,12 @@ sections:
           If a customer wants to disable access to Bookings for certain eligible licenses in their tenant, they can either use a group policy to restrict licenses or implement an OWA Mailbox policy that will restrict who is able to create new Bookings calendars.
           
           If you use an OWA Mailbox policy to disable access to Bookings, all users will have a Bookings license, however when they attempt to access the app, they'll only be successful if they're part of the policy or if they've been added to an existing Bookings calendar as staff. Details [here](turn-bookings-on-or-off.md) in the "Allow only selected users to create Bookings calendars" section.
-          
+      
+      - question: |
+           Can I link a payment option to my Bookings?
+        answer: |
+           No. The Microsoft-owned payment system is retired.
+           
       - question: |
           Is Bookings customizable?
         answer: |

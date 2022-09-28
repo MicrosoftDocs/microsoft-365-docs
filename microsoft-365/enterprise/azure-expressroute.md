@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 6/5/2019
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -28,7 +28,7 @@ description: Learn how to use Azure ExpressRoute with Office 365 and plan the ne
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Learn how Azure ExpressRoute is used with Office 365 and how to plan the network implementation project that will be required if you are deploying Azure ExpressRoute for use with Office 365. Infrastructure and platform services running in Azure will often benefit by addressing network architecture and performance considerations. We recommend ExpressRoute for Azure in these cases. Software as a Service offerings like Office 365 and Dynamics 365 have been built to be accessed securely and reliably via the Internet. You can read about Internet performance and security and when you might consider Azure ExpressRoute for Office 365 in the article [Assessing Office 365 network connectivity](assessing-network-connectivity.md).
+Learn how Azure ExpressRoute is used with Office 365 and how to plan the network implementation project that will be required if you're deploying Azure ExpressRoute for use with Office 365. Infrastructure and platform services running in Azure will often benefit by addressing network architecture and performance considerations. We recommend ExpressRoute for Azure in these cases. Software as a Service offerings like Office 365 and Dynamics 365 have been built to be accessed securely and reliably via the Internet. You can read about Internet performance and security and when you might consider Azure ExpressRoute for Office 365 in the article [Assessing Office 365 network connectivity](assessing-network-connectivity.md).
 
 > [!NOTE]
 > Microsoft Defender for Endpoint does not provide integration with Azure ExpressRoute. While this does not stop customers from defining ExpressRoute rules that enable connectivity from a private network to Microsoft Defender for Endpoint cloud services, it is up to the customer to maintain rules as the service or cloud infrastructure evolves.
@@ -42,11 +42,11 @@ In addition to internet connectivity, you may choose to route a subset of their 
 
 Regardless of whether you have an existing MPLS WAN, ExpressRoute can be added to your network architecture in one of three ways; through a supported cloud exchange co-location provider, an Ethernet point-to-point connection provider, or through an MPLS connection provider. See what [providers are available in your region](/azure/expressroute/expressroute-locations). The direct ExpressRoute connection will enable connectivity to the applications outlined in [What Office 365 services are included?](azure-expressroute.md#BKMK_WhatDoIGet) below. Network traffic for all other applications and services will continue to traverse the internet.
 
-Consider the following high level network diagram which shows a typical Office 365 customer connecting to Microsoft's datacenters over the internet for access to all Microsoft applications such as Office 365, Windows Update, and TechNet. Customers use a similar network path regardless of whether they're connecting from an on-premises network or from an independent internet connection.
+Consider the following high level network diagram, which shows a typical Office 365 customer connecting to Microsoft's datacenters over the internet for access to all Microsoft applications such as Office 365, Windows Update, and TechNet. Customers use a similar network path regardless of whether they're connecting from an on-premises network or from an independent internet connection.
 
 ![Office 365 network connectivity.](../media/9d8bc622-4a38-4a3b-a0f3-68657712d460.png)
 
-Now look at the updated diagram which depicts an Office 365 customer who uses both the internet and ExpressRoute to connect to Office 365. Notice that some connections such as Public DNS and Content Delivery Network nodes still require the public internet connection. Also notice the customer's users who are not located in their ExpressRoute connected building are connecting over the Internet.
+Now look at the updated diagram, which depicts an Office 365 customer who uses both the internet and ExpressRoute to connect to Office 365. Notice that some connections such as Public DNS and Content Delivery Network nodes still require the public internet connection. Also notice the customer's users who aren't located in their ExpressRoute connected building are connecting over the Internet.
 
 ![Office 365 connectivity with ExpressRoute.](../media/251788c4-0937-4584-9b2c-df08e11611fc.png)
 
@@ -55,7 +55,7 @@ Still want more information? Learn how to [manage your network traffic with Azur
 ## What Office 365 services are included?
 <a name="BKMK_WhatDoIGet"> </a>
 
-The following table lists the Office 365 services that are supported over ExpressRoute. Please review the [Office 365 endpoints article](./urls-and-ip-address-ranges.md) to understand which network requests for these applications require internet connectivity.
+The following table lists the Office 365 services that are supported over ExpressRoute. Review the [Office 365 endpoints article](./urls-and-ip-address-ranges.md) to understand which network requests for these applications require internet connectivity.
 
 | Applications included |
 |:-----|
@@ -64,7 +64,7 @@ The following table lists the Office 365 services that are supported over Expres
 |SharePoint Online<sup>1</sup> <br/> OneDrive for Business<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
 |Portal and shared<sup>1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
-<sup>1</sup> Each of these applications have internet connectivity requirements not supported over ExpressRoute, see the [Office 365 endpoints article](./urls-and-ip-address-ranges.md) for more information.
+<sup>1</sup> Each of these applications has internet connectivity requirements not supported over ExpressRoute, see the [Office 365 endpoints article](./urls-and-ip-address-ranges.md) for more information.
 
 The services that aren't included with ExpressRoute for Office 365 are Microsoft 365 Apps for enterprise client downloads, On-premises Identity Provider Sign-In, and Office 365 (operated by 21 Vianet) service in China.
 
@@ -88,7 +88,7 @@ Implementing ExpressRoute requires the involvement of network and application ow
 
 8. Optionally [implement QoS](https://support.office.com/article/ExpressRoute-and-QoS-in-Skype-for-Business-Online-20c654da-30ee-4e4f-a764-8b7d8844431d) and evaluate regional expansion.
 
-<sup>1</sup> Important performance considerations. Decisions here can dramatically impact latency which is a critical for applications such as Skype for Business.
+<sup>1</sup> Important performance considerations. Decisions here can dramatically impact latency, which is a critical for applications such as Skype for Business.
 
 For additional references, use our [routing guide](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) in addition to the [ExpressRoute documentation](/azure/expressroute/expressroute-introduction).
 
@@ -96,7 +96,7 @@ To purchase ExpressRoute for Office 365, you'll need to work with one or more [a
 
 Here's a short link you can use to come back: [https://aka.ms/expressrouteoffice365]()
 
-Ready to sign-up for [ExpressRoute for Office 365](https://aka.ms/ert)?
+Ready to sign up for [ExpressRoute for Office 365](https://aka.ms/ert)?
 
 ## Related Topics
 

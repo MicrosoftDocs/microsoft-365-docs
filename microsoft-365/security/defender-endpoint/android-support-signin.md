@@ -2,7 +2,7 @@
 title: Troubleshoot issues on Microsoft Defender for Endpoint on Android
 description: Troubleshoot issues for Microsoft Defender for Endpoint on Android
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, cloud, connectivity, communication
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
+  - m365-security
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Troubleshooting issues on Microsoft Defender for Endpoint on Android
@@ -101,9 +102,10 @@ Enable the required permission on Xiaomi devices.
 
 ## Unable to allow permission for 'Permanent protection' during onboarding on some OEM devices
 
+
 **Applies to:** Specific OEM devices only.
 
-- **Xiaomi with Android 11**
+- **Xiaomi**
 
 Defender App asks for Battery Optimization/Permanent Protection permission on devices as part of app onboarding, and selecting **Allow** returns an error that the permission couldn't be set. It only affects the last permission called "Permanent Protection." 
 
@@ -113,30 +115,9 @@ Xiaomi changed the battery optimization permissions in Android 11. Defender for 
 
 **Solution:**
 
-We are working with OEM to find a solution to enable this permission from the app onboarding screen. We will update the documentation when this is resolved.
-Users can follow these steps to enable the same permissions from the device settings: 
+>[!IMPORTANT]
+>This issue has been resolved. Please update to the latest app version to complete the onboarding process. If the issue persists, please send an **[in-app feedback](/microsoft-365/security/defender-endpoint/android-support-signin#send-in-app-feedback)**.
 
-1. Go to **Settings** on your device.
-
-2. Search for and select **Battery Optimization**.
-
-   :::image type="content" source="images/search-battery-optimisation.png" alt-text="The page on which you can search and select Battery Optimisation" lightbox="images/search-battery-optimisation.png":::
-
-3. In **Special app access**, select **Battery Optimization**.
-
-   :::image type="content" source="images/special-app-access.png" alt-text="The Special app access pane from which you can select Battery Optimisation" lightbox="images/special-app-access.png":::
-
-4. Change the Dropdown to show **All Apps**.
-
-   :::image type="content" source="images/show-all-apps-2.png" alt-text="The drop-down from which you can change the value to All Apps under the Battery Optimisation pane" lightbox="images/show-all-apps-2.png":::
-
-   :::image type="content" source="images/show-all-apps-1.png" alt-text="The drop-down that displays the All Apps option under the Battery Optimisation pane" lightbox="images/show-all-apps-1.png":::
-
-5. Locate "Microsoft Defender for Endpoint" and select **Don't Optimize**.
-
-   :::image type="content" source="images/select-dont-optimise.png" alt-text="The page that enables location of the option Microsoft Defender for Endpoint and selection of Don't Optimize" lightbox="images/select-dont-optimise.png":::
-
-Return to the Microsoft Defender for Endpoint onboarding screen, select **Allow**, and you will be redirected to the dashboard screen.
 
 ## Send in-app feedback
 

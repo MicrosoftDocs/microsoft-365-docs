@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -109,7 +109,7 @@ By using a *$upn* variable, you can make changes to individual accounts based on
 ```powershell
 $userName="Belinda Newman"
 $upn=(Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
-Set-AzureADUser -ObjectID $upn -UsageLocation "FR"
+Set-AzureADUser -ObjectID $upn -UsageLocation FR
 ```
 
 ### Change properties for all user accounts
@@ -117,21 +117,21 @@ Set-AzureADUser -ObjectID $upn -UsageLocation "FR"
 To change properties for all users, you can use a combination of the **Get-AzureADUser** and **Set-AzureADUser** cmdlets. The following example changes the usage location for all users to *France*:
   
 ```powershell
-Get-AzureADUser | Set-AzureADUser -UsageLocation "FR"
+Get-AzureADUser -All $true | Set-AzureADUser -UsageLocation FR
 ```
 
 This command instructs PowerShell to:
   
 1. Get all of the information on the user accounts (**Get-AzureADUser**) and send it to the next command (**|**).
 
-1. Set the user location to France (**Set-AzureADUser -UsageLocation "FR"**).
+1. Set the user location to France (**Set-AzureADUser -UsageLocation FR**).
 
 ### Change properties for a specific set of user accounts
 
 To change properties for a specific set of user accounts, you can use a combination of the **Get-AzureADUser**, **Where**, and **Set-AzureADUser** cmdlets. The following example changes the usage location for all the users in the Accounting department to *France*:
   
 ```powershell
-Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation "FR"
+Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation FR
 ```
 
 This command instructs PowerShell to:
@@ -140,7 +140,7 @@ This command instructs PowerShell to:
 
 1.  Find all the user accounts that have their *Department* property set to "Accounting" (**Where {$_.Department -eq "Accounting"}**), and send the resulting information to the next command (**|**).
 
-1. Set the user location to France (**Set-AzureADUser -UsageLocation "FR"**).
+1. Set the user location to France (**Set-AzureADUser -UsageLocation FR**).
 
 ## Use the Microsoft Azure Active Directory Module for Windows PowerShell
 
@@ -228,7 +228,7 @@ By using a *$upn* variable, you can make changes to individual accounts based on
 ```powershell
 $userName="<display name>"
 $upn=(Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
-Set-MsolUser -UserPrincipalName $upn -UsageLocation "FR"
+Set-MsolUser -UserPrincipalName $upn -UsageLocation FR
 ```
 
 ### Change properties for all user accounts
@@ -236,21 +236,21 @@ Set-MsolUser -UserPrincipalName $upn -UsageLocation "FR"
 To change properties for all users,  use a combination of the **Get-MsolUser** and **Set-MsolUser** cmdlets. The following example changes the usage location for all users to *France*:
   
 ```powershell
-Get-MsolUser | Set-MsolUser -UsageLocation "FR"
+Get-MsolUser | Set-MsolUser -UsageLocation FR
 ```
 
 This command instructs PowerShell to:
   
 1. Get all the information for the user accounts (**Get-MsolUser**) and send it to the next command (**|**).
 
-1. Set the user location to France (**Set-MsolUser -UsageLocation "FR"**).
+1. Set the user location to France (**Set-MsolUser -UsageLocation FR**).
 
 ### Change properties for a specific set of user accounts
 
 To change properties for a specific set of user accounts, you can use a combination of the **Get-MsolUser**, **Where**, and **Set-MsolUser** cmdlets. The following example changes the usage location for all the users in the Accounting department to *France*:
   
 ```powershell
-Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation "FR"
+Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation FR
 ```
 
 This command instructs PowerShell to:
@@ -259,7 +259,7 @@ This command instructs PowerShell to:
 
 1. Find all user accounts that have their *Department* property set to "Accounting" (**Where {$_.Department -eq "Accounting"}**) and send the resulting information to the next command (**|**).
 
-1. Set the user location to France (**Set-MsolUser -UsageLocation "FR"**).
+1. Set the user location to France (**Set-MsolUser -UsageLocation FR**).
 
 ## See also
 

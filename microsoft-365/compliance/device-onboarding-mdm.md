@@ -11,7 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance 
+- tier1
+- purview-compliance 
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150 
@@ -19,8 +20,6 @@ description: Use Mobile Device Management tools to deploy the configuration pack
 ---
 
 # Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Applies to:**
 

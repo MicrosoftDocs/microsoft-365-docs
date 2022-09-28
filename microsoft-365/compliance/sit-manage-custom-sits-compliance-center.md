@@ -1,5 +1,5 @@
 ---
-title: "Manage custom sensitive information types in compliance center"
+title: "Manage custom sensitive information types in compliance portal"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -11,7 +11,8 @@ ms.service: O365-seccomp
 ms.date: 
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -19,8 +20,6 @@ description: "Learn how to modify, and remove custom sensitive information types
 ms.custom: seo-marvel-apr2020
 ---
 # Manage custom sensitive information types in the Compliance center
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 This article walks you through the steps to modify and remove an existing custom sensitive information type in the Compliance center.
 

@@ -1,5 +1,6 @@
 ---
 title: "Permissions in the Microsoft Purview compliance portal"
+description: Learn about managing permissions in the Microsoft Purview compliance portal.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,16 +10,15 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: Learn about managing permissions in the Microsoft Purview compliance portal.
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: 
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
 ---
 
 # Permissions in the Microsoft Purview compliance portal
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The Microsoft Purview compliance portal supports directly  managing permissions for users who perform compliance tasks in Microsoft 365. This update means you'll no longer have to use the Office 365 Security & Compliance Center to manage permissions for compliance solutions. Using the new **Permissions** page in the compliance portal, you can manage permissions to users for compliance tasks in features like device management, Microsoft Purview Data Loss Prevention, eDiscovery, insider risk management, retention, and many others. Users can perform only the compliance tasks that you explicitly grant them access to.
 

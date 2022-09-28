@@ -3,7 +3,7 @@ title: Find device information by internal IP API
 description: Use this API to create calls related to finding a device entry around a specific timestamp by internal IP.
 keywords: ip, apis, graph api, supported apis, find device, device information
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
 ms.custom: api
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Find device information by internal IP API
@@ -71,7 +73,7 @@ If no machine found - 404 Not Found.
 
 ### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://graph.microsoft.com/testwdatppreview/machines/find(timestamp=2018-06-19T10:00:00Z,key='10.166.93.61')
@@ -80,9 +82,9 @@ Content-type: application/json
 
 ### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
-The response will return a list of all devices that reported this IP address within sixteen minutes prior and after the timestamp.
+The response will return a list of all devices that reported this IP address within 16 minutes prior and after the timestamp.
 
 ```json
 HTTP/1.1 200 OK

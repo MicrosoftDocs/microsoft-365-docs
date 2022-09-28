@@ -4,7 +4,7 @@ description: Learn how to use the live response library methods and properties.
 keywords: apis, graph api, supported apis, get, devices
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
+- m365-security 
 ms.topic: reference
-ms.technology: m365d
+ms.subservice: mde
 ---
 
 #  Live response library methods and properties

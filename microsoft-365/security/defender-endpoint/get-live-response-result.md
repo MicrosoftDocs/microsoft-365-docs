@@ -3,7 +3,7 @@ title: Get live response results
 description: Learn how to retrieve a specific live response command result by its index.
 keywords: apis, graph api, supported apis, upload to library
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance 
+ms.collection: m365-security 
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
 ---
 

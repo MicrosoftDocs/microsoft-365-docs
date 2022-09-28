@@ -7,7 +7,7 @@ ms.reviewer: jaeccles
 ms.date:
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
@@ -20,9 +20,6 @@ description: Learn how to use the adoption assessment tool to see how your organ
 ---
 
 # Discover opportunities in SharePoint Syntex by using the Microsoft 365 Assessment tool
-
-> [!IMPORTANT]
-> The Microsoft 365 Assessment tool and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels. 
 
 > [!NOTE]
 > The Microsoft 365 Assessment tool can be run only against SharePoint Online. 
@@ -39,7 +36,7 @@ The assessment report includes the following information:
 
 - **Libraries with custom content types** – Identify libraries using custom content types, where SharePoint Syntex models can be used to automatically categorize files. 
 
-- **Content type usage** – Identify patterns of content type usage, to target Sharepoint Syntex models where they'll have the maximum benefit. 
+- **Content type usage** – Identify patterns of content type usage, to target SharePoint Syntex models where they'll have the maximum benefit. 
 
 - **Libraries with retention labels** – Identify libraries where retention labels are used, where SharePoint Syntex can be used to automate and improve consistency. 
 

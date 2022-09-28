@@ -10,10 +10,13 @@ ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 
+- highpri
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- VSBFY23
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -27,7 +30,7 @@ description: "Learn how Microsoft 365 for business can help you with the General
   
 The General Data Protection Regulation (GDPR) is a European Union (EU) regulation that mandates how an organization should handle personal data. If your business sells to, provides services to, or employs citizens of the European Union, then the [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) will affect you. 
 
-As a small business admin, you are probably asking yourself "how do I get started"? This may be especially true if your business does not handle personal data as a core business activity, or if GDPR is totally new to you.
+As a small business admin, you're probably asking yourself "how do I get started"? This may be especially true if your business doesn't handle personal data as a core business activity, or if GDPR is totally new to you.
 
 You can get started by reviewing this article, which is aimed at helping you understand what the GDPR is, why it came about, and how Microsoft 365 for business can help your organization comply with the GDPR.
 
@@ -54,7 +57,7 @@ You'll see some terms referred to frequently in the GDPR. It's important to unde
   
  **Consent**
   
-The GDPR states: "The processing of personal data should be designed to serve mankind." The GDPR hopes to achieve this goal by using consent when processing personal data. That could be the simple act of asking your customers if they want to receive email messages from your company. It also means no more opt-out check boxes on your website when you want to use data for marketing. You must take explicit consent using a "clear affirmative act". And, you will need to also keep records of when a consent is taken or revoked.
+The GDPR states: "The processing of personal data should be designed to serve mankind." The GDPR hopes to achieve this goal by using consent when processing personal data. That could be the simple act of asking your customers if they want to receive email messages from your company. It also means no more opt-out check boxes on your website when you want to use data for marketing. You must take explicit consent using a "clear affirmative act". And, you'll need to also keep records of when a consent is taken or revoked.
   
  **Data subject rights**
   
@@ -68,7 +71,7 @@ The GDPR establishes data subject rights, which means that, with respect to thei
     
 - **Ask for data to be deleted:** Also known as the 'right to erasure', this right allows an individual to request that any of their personal data a company has collected is deleted across all systems that use it or share it. 
     
-- **Request restricted processing:** An individual can ask that you suppress or restrict their data. However, it is only applicable under certain circumstances. 
+- **Request restricted processing:** An individual can ask that you suppress or restrict their data. However, it's only applicable under certain circumstances. 
     
 - **Have data portability:** An individual can ask for their data to be transferred to another company. 
     
@@ -89,16 +92,16 @@ A good way for a small business to get started with GDPR is to make sure to appl
 
 ### Step 1: Know the personal data that you collect and use within your business, and the reasons you need it
 
-As a small business, one of the first steps you should take is to make an inventory of the personal data you collect and use within your business, and why it is needed. This includes data on both your employees and your customers.
+As a small business, one of the first steps you should take is to make an inventory of the personal data you collect and use within your business, and why it's needed. This includes data on both your employees and your customers.
 
 For example, you may need your employee's personal data based
 on the employment contract and for legal reasons (for example, 
 reporting taxes to the Internal Revenue Service).
 
-As another example, you may manage lists of individual customers to
-send them notices about special offers, if they have consented to this.
+As another example, you may manage lists of individual customers to send them notices about special offers, if they have consented to this.
 
 #### Microsoft 365 features that can help
+
 [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) can help you discover, classify, and protect sensitive information in your company. You can use trainable classifiers to help you identify and label document types that contain personal data. 
 
 ### Step 2: Inform your customers, employees, and other individuals when you need to collect their personal data
@@ -174,7 +177,7 @@ measures).
  
 To better protect personal data, organizations might have to
 appoint a <b>Data Protection Officer (DPO)</b>. However, you may not need to designate a Data Protection Officer if processing
-of personal data isn’t a core part of your business, or if your are a small business. For example, if your business only collects data on your customers for home delivery, you should not need to appoint a DPO. Even if you need to make use of a DPO, these duties might be assigned to an existing employee in addition to his/her other tasks. Or you could chose to hire an external consultant for this duty as needed.
+of personal data isn’t a core part of your business, or if you are a small business. For example, if your business only collects data on your customers for home delivery, you should not need to appoint a DPO. Even if you need to make use of a DPO, these duties might be assigned to an existing employee in addition to his/her other tasks. Or you could choose to hire an external consultant for this duty as needed.
 
 You normally don’t need to carry out a [Data Protection Impact Assessment](https://gdpr.eu/article-35-impact-assessment/). This is reserved for businesses that pose more risk to personal data (for example, if they do a large-scale monitoring of a publicly accessible area, such as video-surveillance).
 
@@ -243,7 +246,7 @@ Microsoft 365 for business can help you with the GDPR process in the following w
   
 - **Discover:** An important step to GDPR compliance is knowing what data you have. 
     
-- **Manage:** Controlling access to data and managing its use is an integral part of GDPR. Microsoft 365 for business protects business data based on policies you want to apply to devices. Device management is vital in an age where employees work remotely. Microsoft 365 for business includes device management features that makes sure data is protected across all devices. For example, you can specify that all Windows 10 devices in your business are protected via Windows Defender. 
+- **Manage:** Controlling access to data and managing its use is an integral part of GDPR. Microsoft 365 for business protects business data based on policies you want to apply to devices. Device management is vital in an age where employees work remotely. Microsoft 365 for business includes device management features that make sure data is protected across all devices. For example, you can specify that all Windows 10 devices in your business are protected via Windows Defender. 
     
 - **Protect:** Microsoft 365 for business is designed for security. Its device management and data protection controls work across your business network, including remote devices, to help keep data secure. Microsoft 365 for business offers controls such as privacy settings in Office applications and encryption of documents. With Microsoft 365 for business, you can perform GDPR compliance monitoring to make sure you have the right level of protection set. 
     

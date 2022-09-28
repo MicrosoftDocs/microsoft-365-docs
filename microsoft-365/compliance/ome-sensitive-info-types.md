@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.collection: 
 - Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
 - Strat_O365_Enterprise
 description: Learn how to create a sensitive information type policy for your organization using Office 365 Message Encryption.
 ms.custom: 
@@ -24,8 +24,6 @@ ms.custom:
 
 # Create a sensitive information type policy for your organization using Message Encryption
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 You can use either Exchange mail flow rules or Microsoft Purview data loss prevention (DLP) to create a sensitive information type policy with Office 365 Message Encryption. To create an Exchange mail flow rule, you can use either the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> or PowerShell.
 
 ## To create the policy by using mail flow rules in the EAC
@@ -34,7 +32,7 @@ Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" targe
 
 ### To create the policy by using mail flow rules in PowerShell
 
-Use a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Use the Set-IRMConfiguration and New-TransportRule cmdlets to create the policy.
+Use a work or school account that has global administrator permissions in your organization, connect to Exchange Online PowerShell. For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Use the Set-IRMConfiguration and New-TransportRule cmdlets to create the policy.
 
 ## Example mail flow rule created with PowerShell
 
@@ -63,7 +61,7 @@ After Microsoft encrypts a message, recipients have unrestricted access to attac
 
 You may want to update any applicable end-user documentation and training materials to prepare people in your organization for this change. Share these Office 365 Message Encryption resources with your users as appropriate:
 
-- [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
+- [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
 - [Microsoft 365 Essentials Video: Message Encryption](https://youtu.be/CQR0cG_iEUc)
 
 ## View these changes in the audit log

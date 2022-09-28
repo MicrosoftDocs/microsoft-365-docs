@@ -14,14 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 description: Learn how to configure Information Rights Management (IRM) in Exchange Online to use an Active Directory Rights Management Service (AD RMS) server.
 ms.custom: seo-marvel-apr2020
 ---
 
 # Configure IRM to use an on-premises AD RMS server
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 For use with on-premises deployments, Information Rights Management (IRM) in Exchange Online uses Active Directory Rights Management Services (AD RMS), an information protection technology in Windows Server 2008 and later. IRM protection is applied to email by applying an AD RMS rights policy template to an email message. Rights are attached to the message itself so that protection occurs online and offline and inside and outside of your organization's firewall.
 
@@ -37,7 +35,7 @@ To learn more about IRM in Exchange Online, see [Information Rights Management i
 
 - The AD RMS server must be running Windows Server 2008 or later. For details about how to deploy AD RMS, see [Installing an AD RMS Cluster](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726041(v=ws.11)).
 
-- For details about how to install and configure Windows PowerShell and connect to the service, see [Connect to Exchange Online Using Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- For details about how to install and configure Windows PowerShell and connect to the service, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
@@ -75,7 +73,7 @@ When you import the TPD, it's stored and protected in Exchange Online.
 
 After the TPD is exported to an XML file, you have to import it to Exchange Online. When a TPD is imported, your organization's AD RMS templates are also imported. When the first TPD is imported, it becomes the default TPD for your cloud-based organization. If you import another TPD, you can use the **Default** switch to make it the default TPD that is available to users.
 
-To import the TPD, run the following command in Windows PowerShell:
+To import the TPD, run the following command in Exchange Online PowerShell:
 
 ```powershell
 Import-RMSTrustedPublishingDomain -FileData ([System.IO.File]::ReadAllBytes('<path to exported TPD file>')) -Name "<name of TPD>" -ExtranetLicensingUrl <URL> -IntranetLicensingUrl <URL>

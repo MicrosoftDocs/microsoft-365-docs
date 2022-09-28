@@ -16,7 +16,7 @@ description: Learn how to conduct key Microsoft LMS Gateway management tasks inc
 
 # Manage Microsoft LMS Gateway for any LMS
 
-Microsoft LMS Gateway integrates with several LMSs including Canvas, Blackboard, and Moodle.
+Microsoft LMS Gateway integrates with several LMSs including Canvas, Blackboard, Moodle, and Brightspace.
 
 In this article, IT admins will find instructions on key Microsoft LMS Gateway management tasks.
 

@@ -10,9 +10,11 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-subscription-management 
 - Adm_O365
-ms.custom: 
+ms.custom:
+- VSBFY23 
 - AdminSurgePortfolio
 - adminvideo
 monikerRange: 'o365-worldwide'

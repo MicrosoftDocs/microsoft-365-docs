@@ -11,12 +11,14 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 description: Enroll your endpoint devices in Microsoft Intune as part of your Zero Trust security architecture, protecting against ransomware while building in protection for remote workers.
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-overview
+- zerotrust-solution
 ms.custom:
 keywords:
 ---
@@ -105,7 +107,7 @@ In the illustration:
 Note that only Intune is managing devices. Onboarding refers to the ability for a device to share information with a specific service. The following table summarizes the differences between enrolling devices into management and onboarding devices for a specific service.
 
 
-|         |Enroll     |Onboard  |
+| &nbsp; |Enroll     |Onboard  |
 |---------|---------|---------|
 |Description     |  Enrollment applies to managing devices. Devices are enrolled for management with Intune or Configuration Manager.        | Onboarding configures a device to work with a specific set of capabilities in Microsoft 365. Currently, onboarding applies to Microsoft Defender for Endpoint and Microsoft compliance capabilities. <br><br>On Windows devices, onboarding involves toggling a setting in Windows Defender that allows Defender to connect to the online service and accept policies that apply to the device.        |
 |Scope     | These device management tools manage the entire device, including configuring the device to meet specific objectives, like security.        |Onboarding only affects the services that apply.     |
@@ -118,8 +120,8 @@ Note that only Intune is managing devices. Onboarding refers to the ability for 
 
 The following resources help administrators learn concepts about using MEM and Intune.
 
-[Simplify device management with Microsoft Endpoint Manager](/learn/modules/simplify-device-management-with-microsoft-endpoint-manager/)
+[Simplify device management with Microsoft Endpoint Manager](/training/modules/simplify-device-management-with-microsoft-endpoint-manager/)
 Description: Learn about modern management and the Microsoft Endpoint Manager and how the business management tools in Microsoft 365 can simplify management of all your devices.
 
-[Set up Microsoft Intune](/learn/modules/set-up-microsoft-intune/)
+[Set up Microsoft Intune](/training/modules/set-up-microsoft-intune/)
 Description: Microsoft Intune, which is a part of Microsoft Endpoint Manager, helps you protect the devices, apps, and data that the people at your organization use to be productive. After completing this module, you will have set up Microsoft Intune. Set up includes reviewing the supported configurations, signing up for Intune, adding users and groups, assigning licenses to users, granting admin permissions, and setting the MDM authority.

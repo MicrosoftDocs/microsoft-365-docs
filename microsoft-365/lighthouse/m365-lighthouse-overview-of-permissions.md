@@ -4,9 +4,10 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: magarlan, chrigreen
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -25,9 +26,6 @@ Delegated access to customer tenants is required for Managed Service Providers (
 We recommend assigning roles to groups of MSP technicians based on the tasks each group needs to perform on behalf of the customer. For example, Service Desk Technicians may just need to read customer tenant data or reset user passwords. In contrast, Escalation Engineers may need to take more corrective actions to update customer tenant security settings. It's a best practice to assign the least permissive role required to complete a task so that customer and partner data is kept secure. We recommend using Privileged Identity Management (PIM) to enable time-scoped access to the Global Administrator role, if needed. Giving too many users global access is a security risk, and we recommend limiting it as much as possible. For more information on how to enable PIM, see [Set up Azure AD PIM.](m365-lighthouse-configure-portal-security.md#set-up-azure-ad-privileged-identity-management-pim)
 
 The tables in the next section describe which GDAP roles grant permission to read customer data and take action on customer tenants in Lighthouse. See [Permissions in the partner tenant](#permissions-in-the-partner-tenant) in this article for additional roles required to manage Lighthouse entities (for example, tags and Lighthouse service requests).
-
-> [!NOTE]
->GDAP is currently in [technical preview](/partner-center/announcements/2022-february#6) (public preview) to allow partners to assign granular permissions before GDAP is generally available. Check [Known Issues](m365-lighthouse-known-issues.md) if you're having a problem accessing or performing an action in Lighthouse.
 
 ## Example MSP service tiers, recommended GDAP roles, and permissions
 

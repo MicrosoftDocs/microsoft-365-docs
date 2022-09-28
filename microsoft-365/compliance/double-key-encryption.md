@@ -12,15 +12,13 @@ audience: Admin
 ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Double Key Encryption
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-> *Applies to: Microsoft Purview Double Key Encryption, [Microsoft Purview](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+> *Applies to: Microsoft Purview Double Key Encryption, [Microsoft Purview](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/)*
 >
 > *Instructions for: [Azure Information Protection unified labeling client for Windows](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
@@ -88,7 +86,6 @@ There are several ways you can complete some of the steps to deploy Double Key E
 
 This article and the deployment video use Azure as the deployment destination for the DKE service. If you're deploying to another location, you'll need to provide your own values.
 
-Watch the [Double Key Encryption deployment video](https://youtu.be/vDWfHN_kygg) to see a step-by-step overview of the concepts in this article. The video takes about 18 minutes to complete.
 
 You'll follow these general steps to set up Double Key Encryption for your organization.
 
@@ -245,10 +242,10 @@ DKE tenant and key settings are located in the **appsettings.json** file.
 > [!NOTE]
 > If you want to enable external B2B access to your key store, you will also need to include these external tenants as part of the valid issuers' list.
 
-Locate the `JwtAudience`. Replace `<yourhostname>` with the hostname of the machine where the DKE service will run. For example:
+Locate the `JwtAudience`. Replace `<yourhostname>` with the hostname of the machine where the DKE service will run. For example: "https://dkeservice.contoso.com"
 
   > [!IMPORTANT]
-  > The value for `JwtAudience` must match the name of your host *exactly*. You may use **localhost:5001** while debugging. However, When you're done debugging, make sure to update this value to the server's hostname.
+  > The value for `JwtAudience` must match the name of your host *exactly*.  
 
 - `TestKeys:Name`. Enter a name for your key. For example: `TestKey1`
 - `TestKeys:Id`. Create a GUID and enter it as the `TestKeys:ID` value. For example, `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. You can use a site like [Online GUID Generator](https://guidgenerator.com/) to randomly generate a GUID.
@@ -357,17 +354,8 @@ Use the following instructions to build the DKE project locally:
 
    If there are red errors, check the console output. Ensure that you completed all the previous steps correctly and the correct build versions are present.
 
-4. Select **Run** \> **Start Debugging** to debug the process. If you're prompted to select an environment, select **.NET core**.
 
-   The .NET core debugger typically launches to `https://localhost:5001`. To view your test key, go to `https://localhost:5001` and append a forward slash (/) and the name of your key. For example:
-
-   ```https
-   https://localhost:5001/TestKey1
-   ```
-
-   The key should display in JSON format.
-
-Your setup is now complete. Before you publish the keystore, in appsettings.json, for the JwtAudience setting, ensure the value for hostname exactly matches your App Service host name. You may have changed it to localhost to troubleshoot the build.
+Your setup is now complete. Before you publish the keystore, in appsettings.json, for the JwtAudience setting, ensure the value for hostname exactly matches your App Service host name. 
 
 ### Deploy the DKE service and publish the key store
 
@@ -406,7 +394,7 @@ To publish the key store, you'll create an Azure App Service instance to host yo
 
 1. Go to `https://<WebAppInstanceName>.scm.azurewebsites.net/ZipDeployUI`.
 
-   For example: `https://dkeservice.scm.azurewebsites.net/ZipDeployUI`
+   For example: `https://dkeservice.contoso.scm.azurewebsites.net/ZipDeployUI`
 
 2. In the codebase for the key store, go to the **customer-key-store\src\customer-key-store** folder, and verify that this folder contains the **customerkeystore.csproj** file.
 
@@ -463,7 +451,7 @@ src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/mykey
 For example:
 
 ```powershell
-key_store_tester.ps1 https://mydkeservice.com/mykey
+key_store_tester.ps1 https://dkeservice.contoso.com/TestKey1
 ```
 
 Ensure that no errors appear in the output. When you're ready, [register your key store](#register-your-key-store).
@@ -482,9 +470,7 @@ To register the DKE service:
 
 3. Select an account type from the options displayed.
 
-   If you're using Microsoft Azure with a non-custom domain, such as **onmicrosoft.com**, select **Accounts in this organizational directory only (Microsoft only - Single tenant).**
-
-   For example:
+    For example:
 
    > [!div class="mx-imgBorder"]
    > ![New App Registration.](../media/dke-app-registration.png)
@@ -503,10 +489,9 @@ To register the DKE service:
 
    - The URL you enter must match the hostname where your DKE service is deployed.
    - The domain must be a [verified domain](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains).
-   - If you're testing locally with Visual Studio, use `https://localhost:5001`.
-   - In all cases, the scheme must be **https**.
+    - In all cases, the scheme must be **https**.
 
-   Ensure the hostname exactly matches your App Service hostname. You may have changed it to `localhost` to troubleshoot the build. In **appsettings.json**, this value is the hostname you set for `JwtAudience`.
+   Ensure the hostname exactly matches your App Service hostname.
 
 9. Under **Implicit grant**, select the **ID tokens** checkbox.
 

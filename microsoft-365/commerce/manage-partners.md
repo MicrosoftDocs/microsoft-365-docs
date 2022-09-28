@@ -22,7 +22,7 @@ description: "Learn how to work with Microsoft-certified solution providers (par
 ms.date: 02/04/2022
 ---
 
-# Manage partner relationships
+# Manage Microsoft-certified solution provider partner relationships
 
 You can work with Microsoft-certified solution providers (partners) to purchase and manage products and services for your organization or school. There are a few steps involved in getting things set up.
 
@@ -40,7 +40,7 @@ There are several ways that a partner can work with you. Based on your stated bu
 
 | Partner type | Description |
 | ------ | ------------------- |
-| Granular delegated administrator | Partners who manage products and services for your organization or school, but who have limited access to what they can do in the Microsoft 365 admin center. Granular delegated administrator privileges (GDAP) lets partners complete tasks in the admin center without having global admin permission. By giving GDAP to partners, you ensure they have the least-permissive roles and limit the risk to your organization. |
+| Granular delegated administrator | Partners who manage products and services for your organization or school, but who have limited access to what they can do in the Microsoft 365 admin center. Granular delegated administrator privileges (GDAP) let partners complete tasks in the admin center without having global admin permission. By giving GDAP to partners, you ensure they have the least-permissive roles and limit the risk to your organization. |
 | Reseller | Partners who sell Microsoft products to your organization or school. |
 | Delegated administrator | Partners who manage products and services for your organization or school. In Azure Active Directory (AD), the partner is a Global Administrator for your tenant. This role lets them manage services like creating user accounts, assigning and managing licenses, and password resets. |
 | Reseller & delegated administrator | Partners who sell and manage Microsoft products and services to your organization or school. |

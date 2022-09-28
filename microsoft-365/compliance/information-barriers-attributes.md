@@ -9,7 +9,8 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- tier2
+- purview-compliance
 ms.localizationpriority: null
 f1.keywords:
 - NOCSH
@@ -17,8 +18,6 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Information barriers attributes
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Certain attributes in Azure Active Directory can be used to segment users in information barriers (IB). Once segments are defined, those segments can be used as filters for IB policies. For example, you might use **Department** to define segments of users by department within your organization (assuming no single employee works for two departments at the same time).
 

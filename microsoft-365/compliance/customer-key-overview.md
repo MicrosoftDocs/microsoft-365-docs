@@ -10,16 +10,15 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: seo-marvel-apr2020
 description: "In this article, you will learn about how service encryption works with Microsoft Purview Customer Key."
 ---
 
 # Service encryption with Microsoft Purview Customer Key
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft 365 provides baseline, volume-level encryption enabled through BitLocker and Distributed Key Manager (DKM). Microsoft 365 offers an added layer of encryption for your content. This content includes data from Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Microsoft Teams.
 
@@ -49,7 +48,6 @@ A data encryption policy (DEP) defines the encryption hierarchy. This hierarchy 
 - Teams status messages
 - User and signal information for Exchange Online
 - Exchange Online mailboxes that aren't already encrypted by mailbox DEPs
-- Unified audit log storage
 - Microsoft Purview Information Protection:
 
   - Exact data match (EDM) data, including data file schemas, rule packages, and the salts used to hash the sensitive data. For EDM and Microsoft Teams, the multi-workload DEP encrypts new data from the time you assign the DEP to the tenant. For Exchange Online, Customer Key encrypts all existing and new data.

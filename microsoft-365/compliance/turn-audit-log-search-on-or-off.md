@@ -1,30 +1,28 @@
 ---
 title: "Turn auditing on or off"
+description: How to turn on or off the Audit log search feature in the Microsoft Purview compliance portal to enable or disable the ability of admins to search the audit log.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- audit
 search.appverid:
 - MOE150
 - MED150
 - MET150
-ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
-description: How to turn on or off the Audit log search feature in the Microsoft Purview compliance portal to enable or disable the ability of admins to search the audit log.
 ---
 
 # Turn auditing on or off
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Audit logging will be turned on by default for Microsoft 365 and Office 365 enterprise organizations. However, when setting up a new Microsoft 365 or Office 365 organization, you should verify the auditing status for your organization. For instructions, see the [Verify the auditing status for your organization](#verify-the-auditing-status-for-your-organization) section in this article. 
 

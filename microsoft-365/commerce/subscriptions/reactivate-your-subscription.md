@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,7 +24,7 @@ description: "Admins can reactivate a subscription when it expires, is disabled,
 ms.date: 04/07/2021
 ---
 
-# Reactivate your subscription
+# Reactivate your Microsoft subscription
 
 You can reactivate your subscription in the admin center if: the subscription expired, was disabled by Microsoft, or if you canceled it in the middle of a subscription term.
   

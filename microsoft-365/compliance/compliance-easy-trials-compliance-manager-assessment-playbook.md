@@ -15,11 +15,10 @@ search.appverid:
 - MOE150
 - MET150
 description: "Microsoft Purview Compliance Manager premium assessments trial playbook."
+ms.custom: trial-playbook
 ---
 
 # Trial playbook: Microsoft Purview Compliance Manager premium assessments
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Welcome to the Microsoft Purview Compliance Manager premium assessment trial playbook.
 
@@ -84,7 +83,7 @@ After starting the premium assessment trial, you will see a summary on the dashb
 
 ## Additional resources
 
-**Microsoft Docs**: Get detailed information on how Compliance Manager premium assessments work and how to best implement them for your organization. Visit [Docs](compliance-manager-templates.md).
+**Microsoft Learn**: Get detailed information on how Compliance Manager premium assessments work and how to best implement them for your organization. Visit [Docs](compliance-manager-templates.md).
 
 **How to videos**: Check out the following videos to learn more:
 

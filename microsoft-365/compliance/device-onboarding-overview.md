@@ -13,17 +13,17 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 description: "Onboard Windows 10 and Windows 11 devices into Microsoft 365"
 ---
 
 # Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Applies to:**
 
@@ -78,7 +78,7 @@ Make sure that the Windows devices that you need to onboard meet these requireme
 2. Antimalware Client Version is 4.18.2110 or newer. Check your current version by opening Windows Security app, select the Settings icon, and then select About. The version number is listed under Antimalware Client Version. Update to the latest Antimalware Client Version by installing Windows Update KB4052623.
 
    > [!NOTE]
-   > None of Windows Security components need to be active, but the [Real-time protection and Behavior monitor](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) must be enabled.
+   > None of Windows Security components need to be active, but the [Real-time protection and Behavior monitor](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) must be enabled.
 
 3. The following Windows Updates for Windows 10 are installed for devices that will be monitored.
 
@@ -130,13 +130,13 @@ In this deployment scenario, you'll onboard Windows 10 or Windows 11 devices tha
 
 6. Choose the appropriate procedure to follow from the table below:
 
-Topic | Description
-:---|:---
-[Onboard Windows 10 or 11 devices using Group Policy](device-onboarding-gp.md) | Use Group Policy to deploy the configuration package on devices.
-[Onboard Windows 10 or 11 devices using Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md) | You can use either use Microsoft Endpoint Configuration Manager (current branch) version 1606 or Microsoft Endpoint Configuration Manager (current branch) version 1602 or earlier to deploy the configuration package on devices.
-[Onboard Windows 10 or 11 devices using Mobile Device Management tools](device-onboarding-mdm.md) | Use Mobile Device Management tools or Microsoft Intune to deploy the configuration package on device.
-[Onboard Windows 10 or 11 devices using a local script](device-onboarding-script.md) | Learn how to use the local script to deploy the configuration package on endpoints.
-[Onboard non-persistent virtual desktop infrastructure (VDI) devices](device-onboarding-vdi.md) | Learn how to use the configuration package to configure VDI devices.
+|Topic | Description|
+|:---|:---|
+[Intune](device-onboarding-mdm.md) | Use Mobile Device Management tools or Microsoft Intune to deploy the configuration package on device.|
+|[Configuration Manager](device-onboarding-sccm.md) | You can use either use Microsoft Endpoint Configuration Manager (current branch) version 1606 or Microsoft Endpoint Configuration Manager (current branch) version 1602 or earlier to deploy the configuration package on devices.|
+|[Group Policy](device-onboarding-gp.md) | Use Group Policy to deploy the configuration package on devices.
+[Local script](device-onboarding-script.md) | Learn how to use the local script to deploy the configuration package on endpoints.
+[Virtual desktop infrastructure (VDI) devices](device-onboarding-vdi.md) | Learn how to use the configuration package to configure VDI devices.
 
 ## See also
 

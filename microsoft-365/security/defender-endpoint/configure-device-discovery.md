@@ -2,7 +2,7 @@
 title: Configure device discovery
 description: Learn how to configure device discovery in Microsoft 365 Defender using basic or standard discovery
 keywords: basic, standard, configure endpoint discovery, device discovery
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,11 +14,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: m365d
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Configure device discovery
