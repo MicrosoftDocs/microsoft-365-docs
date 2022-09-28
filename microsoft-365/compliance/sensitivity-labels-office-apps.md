@@ -386,7 +386,7 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 ## Configure a label to apply S/MIME protection in Outlook
 
 > [!NOTE]
-> This capability is currently rolling out for built-in labeling, and in various stages of deployment across the platforms. Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Apply S/MIME protection**.
+> This capability is currently rolling out for built-in labeling, and in various stages of release across the platforms. Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Apply S/MIME protection**.
 > 
 > If you configure a label to apply S/MIME protection but the Outlook app doesn't yet support it, the label is still displayed in Outlook and can be applied, but the S/MIME settings are ignored. You won't be able to select this label for Exchange auto-labeling policies.
 
