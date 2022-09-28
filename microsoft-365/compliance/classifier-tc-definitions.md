@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- purview-compliance
+- M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
 ms.custom: admindeeplinkMAC
@@ -38,6 +38,8 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 
 - **Construction specifications (preview)**: Detects construction specifications for commercial and industrial projects like factories, plants, commercial offices, airports, roads. Captures guidelines on the quality, quantity, types of building material, processes etc. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files.
 
+- **Corporate Sabotage (preview)**: Detects messages that may mention acts to damage or destroy  corporate assets or property. This classifier can help customers manage regulatory compliance obligations such as NERC Critical Infrastructure Protection standards or state by state regulations like Chapter 9.05 RCW in Washington state. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files. 
+
 - **Customer complaints**: The customer complaints classifier detects feedback and complaints made about your organization's products or services. This classifier can help you meet regulatory requirements on the detection and triage of complaints, like the Consumer Financial Protection Bureau and Food and Drug Administration requirements. For Communications Compliance, it detects content in .msg, and .eml files. For the rest of Microsoft Purview Information Protection services, it detects content in .docx, .pdf, .txt, .rtf, .jpg, .jpeg, .png, .gif, .bmp, .svg files.
 
 - **Discrimination**: Detects explicit discriminatory language and is sensitive to discriminatory language against the African American/Black communities when compared to other communities. This applies to Communications Compliance, it's a text based classifier.
@@ -53,6 +55,8 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 - **Financial Audit Reports (preview)**: Detects files, documents and reports pertaining to financial audit, both external or internal audit undertaken in an organization. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files.
 
 - **Financial Statement (preview)**: Detects financial statements like income statement, balance sheet, cash flow statement, statement of changes in equity. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
+
+- **Gifts & entertainment (preview)**: Detects messages that may suggest exchanging gifts or entertainment in return for service, which violates regulations related to bribery. This classifier can help customers manage regulatory compliance obligations such as  Foreign Corrupt Practices Act (FCPA), UK Bribery Act and FINRA Rule 2320. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
 
 - **Harassment**: Detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
 
@@ -80,6 +84,7 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 
 - **Meeting Notes** (preview): This classifier detects meeting notes. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files.
 
+- **Money laundering (preview)**: Detects signs that may suggest money laundering or engagement in acts to conceal or disguise the origin or destination of proceeds. This classifier can help customers manage regulatory compliance obligations such as the Bank Secrecy Act, the USA Patriot Act, FINRA Rule 3310 and Anti-Money Laundering Act of 2020. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
 
 - **Network Design files (preview)**: This classifier detects technical documentation about networks of computers including various components of network, how they're connected, their architecture, how they perform and where they troubleshoot Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files.
 
@@ -93,10 +98,11 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 
 - **Profanity**: Detects a specific category of offensive language text items that contain expressions that embarrass most people. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
 
+- **Regulatory collusion (preview)**: Detects    messages that may violate regulatory anti-collusion requirements such as an attempted concealment of sensitive information. This classifier can help customers manage  regulatory compliance obligations such as the Sherman Antitrust Act, Securities Exchange Act 1933  , Securities Exchange Act of 1934, Investment Advisers Act of 1940, Federal Commission Act, and Robinson-Patman Act. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.  
+
 - **Resume**: This classifier detects resume. A resume is a document that a job applicant provides an employer, which has a detailed statement of the candidate's prior work experience, education, and accomplishments. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .txt files.
 
 - **Sales and revenue (preview)**: This classifier detects sales reports, revenue/income statement and sales/demand forecasting reports for organizations. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files.
-
 
 - **Software Product Development Files (preview)**: This classifier detects files used in software development including product requirements document, product testing and planning, files including test cases, and test reports. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files.
 
@@ -107,9 +113,18 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 
 - **Statement of Work (preview)**: This classifier detects statement of work containing details like requirements, responsibilities, terms and conditions for both parties. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files.
 
+- **Stock manipulation (preview)**: Detects signs of possible stock manipulation, such as recommendations to buy, sell or hold stocks that may suggest an attempt to manipulate the stock price. This classifier can help customers manage regulatory compliance obligations such as the Securities Exchange Act of 1934, FINRA Rule 2372, and FINRA Rule 5270. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.  
+
 - **Tax**: Detects tax related content such as tax planning, tax forms, tax filing, tax regulations. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
 
 - **Threat**: Detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
+
+- **Unauthorized disclosure (preview)**: Detects sharing of information containing content that is explicitly designated as confidential or internal to unauthorized individuals. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 2010 and SEC Rule 10b-5. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
+
+> [!NOTE]
+> The **Corporate sabotage, Gifts & entertainment, Money laundering, Regulatory collusion, Stock Manipulation, and Unauthorized disclosure classifiers** may capture a large volume of bulk sender/newsletter content due to a known issue in development. This behavior will be resolved in January 2023. 
+
+> For a temporary solution to address large volumes of bulk sender/newsletter content, add the **Message is not sent to any of these domains condition** with a list of domains to exclude. 
 
 These classifiers appear in the **Microsoft Purview compliance portal** \> **Data classification** \> **Trainable classifiers** view with the status of `Ready to use`.
 
@@ -118,7 +133,7 @@ These classifiers appear in the **Microsoft Purview compliance portal** \> **Dat
 > [!IMPORTANT]
 > Please note that the built-in trainable and global classifiers don't provide an exhaustive or complete list of terms or language across these areas. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update these classifiers in its discretion. While classifiers may assist your organization in detecting these areas, classifiers are not intended to provide your organization's sole means of detecting or addressing the use of such language. Your organization, not Microsoft or its subsidiaries, remains responsible for all decisions related to monitoring, scanning, blocking, removal, and retention of any content identified by a pre-trained classifier, including compliance with local privacy and other applicable laws. Microsoft encourages consulting with legal counsel before deployment and use.
 
-Our Threat, Profanity, Harassment, and Discrimination classifiers can scan content in these languages:
+Our Threat, Profanity, and Harassment classifiers can scan content in these languages:
 
 - Arabic
 - Chinese (Simplified)
