@@ -1,4 +1,3 @@
-
 ---
 title: "Slovakia physical addresses entity definition"
 f1.keywords:
