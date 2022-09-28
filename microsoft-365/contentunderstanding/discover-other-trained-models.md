@@ -25,7 +25,7 @@ You can find and evaluate trained models in other content centers that were crea
 
 To find trained models that might be suitable for your content:
 
-1. In the document library for your model, select **Automate** > **View Classify and extract by text pattern models**.
+1. In the document library for your model, select **Automate** > **View models**.
 
 2. On the **Review models and apply new ones** page, you can review the applied models and the models that are available to be applied to your document library.
 
