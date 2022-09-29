@@ -105,7 +105,7 @@ For more information about custom and prebuilt models, see [Overview of model ty
    :::column-end:::
 :::row-end:::
 
- This process lets you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all this quicker, more consistentently, and with fewer errors in SharePoint Syntex.
+ This process lets you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all this quicker, more consistently, and with fewer errors in SharePoint Syntex.
 
 For more information, see [Create documents using content assembly in SharePoint Syntex](content-assembly.md).
 
