@@ -16,7 +16,7 @@ ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn details about the Microsoft Purview solutions trial and how to sign up."
+description: "Learn how to join the Microsoft Purview solutions free trial. Try all premium capabilities of Purview solutions at the E5 level, such as Audit and Information Protection, to help your organization manage data security and compliance needs. Get details about eligibility and how to sign up today."
 ---
 
 # About the Microsoft Purview solutions trial
