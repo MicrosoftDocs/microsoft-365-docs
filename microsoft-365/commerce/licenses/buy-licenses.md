@@ -80,7 +80,7 @@ If you've removed licenses from a subscription, the next thing to do is [delete 
 > [!NOTE]
 > 
 > - You can't reduce the number of licenses for your subscription if all licenses are currently assigned to users. To reduce the number of licenses, first [unassign one or more licenses from users](../../admin/manage/remove-licenses-from-users.md), then remove the licenses from the subscription.
-> - Note: If you bought your subscription through a Microsoft Representative, contact them directly for help with reducing your license count.
+> - If you bought your subscription through a Microsoft Representative, contact them directly for help with reducing your license count.
 
 ## Add licenses to a prepaid subscription by using a Microsoft 365 product key
 
