@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier2
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -73,6 +74,7 @@ This bundled named entity SIT contains these individual SITs:
 - Iceland physical addresses
 - Ireland physical addresses
 - Italy physical addresses
+- Japan physical addresses
 - Latvia physical addresses
 - Liechtenstein physical addresses
 - Lithuania physical addresses

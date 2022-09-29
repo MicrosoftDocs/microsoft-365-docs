@@ -11,7 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 ms.custom: admindeeplinkMAC
 search.appverid: 
 - MOE150
@@ -27,7 +28,7 @@ Use the **Disposition** page from **Records Management** in the Microsoft Purvie
 
 ## Prerequisites for viewing content dispositions
 
-To manage disposition reviews and confirm that records have been deleted, you must have sufficient permissions and auditing must be enabled. Also be aware of any [limitations](retention-limits.md#maximum-number-of-items-for-disposition) for disposition.
+To manage disposition reviews and confirm that records have been deleted, you must have sufficient permissions and auditing must be enabled. Also be aware of any [limitations](retention-limits.md#maximum-numbers-for-disposition) for disposition.
 
 ### Permissions for disposition
 

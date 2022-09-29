@@ -14,8 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150

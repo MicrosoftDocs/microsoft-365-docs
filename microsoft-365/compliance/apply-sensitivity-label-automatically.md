@@ -10,7 +10,8 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 ms.topic: article
 ms.custom: admindeeplinkMAC
 search.appverid:

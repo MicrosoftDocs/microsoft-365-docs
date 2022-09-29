@@ -1,12 +1,12 @@
 ---
 title: "Understand Assessment in Relevance in eDiscovery (Premium)"
+description: "Get an overview of the Assessment stage and its role in determining the richness of issues during Relevance training in Microsoft Purview eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 titleSuffix: Office 365
-ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -14,10 +14,12 @@ ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
-description: "Get an overview of the Assessment stage and its role in determining the richness of issues during Relevance training in Microsoft Purview eDiscovery (Premium)."
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Assessment in the Relevance module in eDiscovery (Premium)

@@ -1,17 +1,20 @@
 ---
 title: "Set up a connector to archive WeChat data in Microsoft 365"
+description: "Set up and use a connector in the Microsoft Purview compliance portal to import and archive WeChat data in Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: "Set up and use a connector in the Microsoft Purview compliance portal to import and archive WeChat data in Microsoft 365."
+ms.collection:
+- tier1
+- purview-compliance
+- data-connectors
 ---
 
 # Set up a connector to archive WeChat data

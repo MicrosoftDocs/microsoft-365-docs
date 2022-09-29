@@ -1,22 +1,22 @@
 ---
 title: "Search for and delete email messages in your organization"
+description: "Use the search and purge feature in the Microsoft Purview compliance portal to search for and delete an email message from all mailboxes in your organization."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- content-search
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: "Use the search and purge feature in the Microsoft Purview compliance portal to search for and delete an email message from all mailboxes in your organization."
 ---
 
 # Search for and delete email messages

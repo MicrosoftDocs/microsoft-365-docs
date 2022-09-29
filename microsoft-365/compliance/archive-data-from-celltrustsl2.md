@@ -1,17 +1,20 @@
 ---
 title: "Archive data from the CellTrust SL2 platform to Microsoft 365"
+description: "Learn how to set up and use a CellTrust SL2 data connector to import and archive mobile communications data."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: "Learn how to set up and use a CellTrust SL2 data connector to import and archive mobile communications data."
+ms.collection:
+- tier1
+- purview-compliance
+- data-connectors
 ---
 
 # Archive data from CellTrust SL2 to Microsoft 365
@@ -52,7 +55,7 @@ The first step is to create a data connector in the compliance portal.
 
 2. On the **Overview** tab, click **Filter** and select **By CellTrust**, and then apply the filter.
 
-   ![Configure filter to display CellTrust connectors.](../media/DataConnectorsFilter.png)
+   ![Configure filter to display CellTrust connectors.](../media/dataconnectorsFilter.png)
 
 3. Click **CellTrust SL2 (preview)**.
 

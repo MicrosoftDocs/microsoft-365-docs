@@ -3,7 +3,7 @@ title: "Common usage scenarios for sensitive information types"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
-author: v-tophillips
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -11,7 +11,8 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150

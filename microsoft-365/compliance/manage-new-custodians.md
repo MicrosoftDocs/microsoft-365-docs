@@ -1,21 +1,23 @@
 ---
 title: "Manage custodians in an eDiscovery (Premium) case"
+description: Learn how to view details, edit, and bulk edit the list of custodians in an eDiscovery (Premium) case.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: Learn how to view details, edit, and bulk edit the list of custodians in an eDiscovery (Premium) case.
 ms.custom: seo-marvel-apr2020
 ---
 

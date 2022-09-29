@@ -11,7 +11,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 description: Enroll your endpoint devices in Microsoft Intune as part of your Zero Trust security architecture, protecting against ransomware while building in protection for remote workers.
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -120,8 +120,8 @@ Note that only Intune is managing devices. Onboarding refers to the ability for 
 
 The following resources help administrators learn concepts about using MEM and Intune.
 
-[Simplify device management with Microsoft Endpoint Manager](/learn/modules/simplify-device-management-with-microsoft-endpoint-manager/)
+[Simplify device management with Microsoft Endpoint Manager](/training/modules/simplify-device-management-with-microsoft-endpoint-manager/)
 Description: Learn about modern management and the Microsoft Endpoint Manager and how the business management tools in Microsoft 365 can simplify management of all your devices.
 
-[Set up Microsoft Intune](/learn/modules/set-up-microsoft-intune/)
+[Set up Microsoft Intune](/training/modules/set-up-microsoft-intune/)
 Description: Microsoft Intune, which is a part of Microsoft Endpoint Manager, helps you protect the devices, apps, and data that the people at your organization use to be productive. After completing this module, you will have set up Microsoft Intune. Set up includes reviewing the supported configurations, signing up for Intune, adding users and groups, assigning licenses to users, granting admin permissions, and setting the MDM authority.

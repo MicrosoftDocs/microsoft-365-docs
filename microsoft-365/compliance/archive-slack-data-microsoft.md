@@ -1,17 +1,20 @@
 ---
 title: "Archive Slack eDiscovery data to Microsoft 365 using a data connector provided by Microsoft"
+description: "Learn how to set up and use a Slack eDiscovery data connector provided by Microsoft to import and archive instant messaging data."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: "Learn how to set up and use a Slack eDiscovery data connector provided by Microsoft to import and archive instant messaging data."
+ms.collection:
+- tier1
+- purview-compliance
+- data-connectors
 ---
 
 # Set up a connector to archive Slack eDiscovery data (preview)

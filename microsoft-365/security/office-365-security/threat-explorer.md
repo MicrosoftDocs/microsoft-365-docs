@@ -14,7 +14,7 @@ search.appverid:
   - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: Use Explorer and Real-time detections in the Microsoft 365 Defender portal to investigate and respond to threats efficiently.
 ms.custom:

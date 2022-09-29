@@ -1,9 +1,10 @@
 ---
 title: "Train a predictive coding model in eDiscovery (Premium)"
+description: "Learn about performing the first training round for predictive coding."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -12,8 +13,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
-description: "Learn about performing the first training round for predictive coding."
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Train a predictive coding model (preview)

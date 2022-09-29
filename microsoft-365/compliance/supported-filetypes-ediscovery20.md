@@ -1,20 +1,23 @@
 ---
 title: "Supported file types in eDiscovery (Premium)"
+description: "A list of supported file types in Microsoft 365 eDiscovery (Premium), including image file types supported by the OCR functionality in eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "A list of supported file types in Microsoft 365 eDiscovery (Premium), including image file types supported by the OCR functionality in eDiscovery (Premium)."
 ms.custom: seo-marvel-apr2020
 ---
 

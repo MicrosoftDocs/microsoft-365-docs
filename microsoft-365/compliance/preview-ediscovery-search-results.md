@@ -1,25 +1,25 @@
 ---
 title: "Preview the results of an eDiscovery search"
+description: "Preview a sample of the results returned by a Content search or a eDiscovery (Standard) search in the Microsoft Purview compliance portal."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: "Preview a sample of the results returned by a Content search or a eDiscovery (Standard) search in the Microsoft Purview compliance portal."
 ---
 
 # Preview eDiscovery search results
