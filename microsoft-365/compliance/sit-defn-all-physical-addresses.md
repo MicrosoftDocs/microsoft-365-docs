@@ -74,6 +74,7 @@ This bundled named entity SIT contains these individual SITs:
 - Iceland physical addresses
 - Ireland physical addresses
 - Italy physical addresses
+- Japan physical addresses
 - Latvia physical addresses
 - Liechtenstein physical addresses
 - Lithuania physical addresses
