@@ -39,7 +39,7 @@ This catalog contains some basic security features you can use to ensure your us
 
 An Azure Active Directory P2 license is required to utilize the security features in this catalog.
 
-[Open the Identity security for Teams catalog](https://aka.ms/teamsidentity)
+[Open the Identity security for Teams catalog](https://portal.office.com/AdminPortal/home?Q=azuredocs#/teamsidentity)
 
 ## Identity Governance
 
@@ -47,7 +47,7 @@ This wizard catalog is designed to help customers with Azure Active Directory P2
 
 Next, we offer a test template, where the admin is the reviewer of guests for a specific group they choose. If the tenant already has a review in place that covers all Microsoft 365 groups guest users, the admin will be pointed to the Azure Active Directory admin center to manage the existing review and there will be no automated experience.
 
-[Open the Identity Governance setup guide](https://go.microsoft.com/fwlink/p/?linkid=386330)
+[Open the Identity Governance setup guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/identitygovernance)
 
 > [!NOTE]
 > Azure Active Directory P2 license is required to utilize the security features in this catalog.
@@ -58,7 +58,7 @@ The Azure Active Directory setup guide will help you set up the most common Azur
 
 The setup guides contain a checklist of the tasks you need to complete and you can track your progress as you go through the guides. The guides will also link to the other setup guides when necessary.
 
-[Open the Azure Active Directory setup guide](https://go.microsoft.com/fwlink/p/?linkid=2183427).
+[Open the Azure Active Directory setup guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/azureadsetup).
 
 ## Add or sync users to your Microsoft account  
 
@@ -68,7 +68,7 @@ This guide helps you set up user accounts setup in Azure and Microsoft 365. Base
 
 Using Azure Active Directory sync tools is free and included with all Microsoft 365 subscriptions.
 
-[Open the Add or Sync users setup guide](https://go.microsoft.com/fwlink/?linkid=2183349).
+[Open the Add or Sync users setup guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/identitywizard).
 
 ## Secure your cloud apps with Single Sign On (SSO)
 
@@ -78,7 +78,7 @@ This guide is designed to help you add cloud apps to Microsoft 365. In our guide
 
 Every paid subscription to Microsoft 365 comes with a free subscription to Azure AD. You can use Azure AD to manage your apps and create and manage user and group accounts.
 
-[Open the Add a cloud app to Microsoft 365 setup guide](https://aka.ms/AzureAppSetup)
+[Open the Add a cloud app to Microsoft 365 setup guide](https://portal.office.com/AdminPortal/home?Q=azuredocs#/azureadappintegration)
 
 ## Azure Self-Service password reset (SSPR) guide
 
@@ -96,7 +96,7 @@ SSPR requires one of the following licenses:
 
 - Enterprise Mobility and Security E3 or E5
 
-[Open the self-service password reset setup guide](https://go.microsoft.com/fwlink/p/?linkid=2183284).
+[Open the self-service password reset setup guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/ssprsetup).
 
 ## Multi-factor authentication (MFA)
 
@@ -106,7 +106,7 @@ This guide provides the current MFA status and helps IT admins select the best M
 
 Conditional Access requires an Azure Active Directory P1 or P2 license, security defaults and per-user MFA are free and included with all Microsoft 365 subscriptions.
 
-[Open the multi-factor authentication (MFA) guide](https://go.microsoft.com/fwlink/?linkid=2183506)
+[Open the multi-factor authentication (MFA) guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/mfasetupguide)
 
 ## The passwordless setup guide
 
@@ -116,4 +116,4 @@ The passwordless setup guide is designed to help you determine the best password
 
 Every paid subscription to Microsoft 365 comes with a free subscription to Azure AD. You can use Azure AD to manage your apps and create and manage user and group accounts.
 
-[Open the passwordless setup guide](https://go.microsoft.com/fwlink/?linkid=2183427).
+[Open the passwordless setup guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/passwordlesssetup).
