@@ -7,15 +7,16 @@ manager: scotv
 ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.date: 06/20/2022
 ms.reviewer: georgiah
 ms.custom:
-  - it-pro
-  - admindeeplinkMAC
-  - admindeeplinkEXCHANGE
+- it-pro
+- admindeeplinkMAC
+- admindeeplinkEXCHANGE
 ms.collection:
-  - M365-subscription-management
+- scotvorg
+- M365-subscription-management
 ---
 
 # Cross-tenant mailbox migration (preview)

@@ -14,7 +14,9 @@ ms.custom: nextgen
 ms.subservice: mde
 ms.topic: article
 ms.date: 10/18/2021
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier2
 search.appverid: met150
 ---
 
