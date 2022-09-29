@@ -19,15 +19,21 @@ description: Learn how to create a custom or prebuilt model with SharePoint Synt
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-Whether you want to create a custom model or use a prebuilt model, you start in the **Models** library. For information about the different model types, see [Overview of model types in SharePoint Syntex](model-types-overview.md).
+Whether you want to create a custom model or use a prebuilt model, you can do so from any of these places in SharePoint Syntex:
+
+- From the **Models** library
+- From the [content center](create-a-content-center.md) home page
+- From any document library in a site where SharePoint Syntex has been activated
+
+For this article, we start in the **Models** library. For information about the different model types, see [Overview of model types in SharePoint Syntex](model-types-overview.md).
 
 ## Create a model
 
 Follow these steps to create a model in SharePoint Syntex.
 
-1. From the **Models** page, select **Create a model**.
+1. From the **Models** library, select **Create a model**.
 
-    ![Screenshot of the Models page showing the Create a model button.](../media/content-understanding/create-a-model-from-the-models-page.png) 
+    ![Screenshot of the Models library showing the Create a model button.](../media/content-understanding/create-a-model-from-the-models-page.png) 
 
 2. On the **View options for classification and extraction** page, there are two sections:
 
