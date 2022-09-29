@@ -36,7 +36,7 @@ This article applies to both *enterprise models* and *local models*. An enterpri
 
 ## Apply your model to a document library
 
-You can apply a model for different places, including the model home page or from the list of available models. To apply your model to a SharePoint document library:
+You can apply a model to different places, including the model home page or from the list of available models. To apply your model to a SharePoint document library:
 
 1. On model home page, on the **Apply model to libraries** tile, select **Apply model**. Or, in the **Where the model is applied** section, select **Add library**.
 
