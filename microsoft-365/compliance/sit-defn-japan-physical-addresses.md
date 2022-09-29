@@ -24,7 +24,7 @@ description: "Japan physical addresses sensitive information type entity definit
 
 # Japan physical addresses
 
-This unbundled named entity detects patterns related to physical address from Austria. It's also included in the [All Physical Addresses](sit-defn-all-physical-addresses.md) bundled named entity SIT.
+This unbundled named entity detects patterns related to physical address from Japan. It's also included in the [All Physical Addresses](sit-defn-all-physical-addresses.md) bundled named entity SIT.
 
 ## Confidence level
 
