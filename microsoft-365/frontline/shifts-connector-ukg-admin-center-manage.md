@@ -64,7 +64,9 @@ Here's the list of error messages that you may encounter and information to help
 |Some users have failed to map correctly|Mapping failed for some users: \<X\> succeeded, \<X\> failed AAD user(s) and \<X\> failed workforce management system user(s).|Use the [Get-CsTeamsShiftsConnectionSyncResult](/powershell/module/teams/get-csteamsshiftsconnectionsyncresult) cmdlet or [this PowerShell script](shifts-connector-ukg-powershell-manage.md#user-mapping-errors) to identify the users for whom the mapping failed. Make sure that the users in the mapped team match the users in the WFM instance.|
 |Unable to map a team or teams in this batch. |This designated actor profile doesn't have team ownership privileges. |Make sure your Microsoft 365 system account (also known as designated actor) is added as a team owner.<br>If you’ve changed your Microsoft 365 system account, add that account as a team owner, and update the connection settings to use that account.|
 |    |This team is already mapped to an existing connector instance. |Unmap the team from the existing connection by using the [Remove-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/remove-csteamsshiftsconnectionteammap) cmdlet. Or, create a new connection to remap the team.|
-
+|    |This timezone is invalid. The timezone passed in is not using tz database format.|Make sure that the time zone is correct, and then remap the team.|
+|    |We can't find this connector instance.|Map the team to an existing connection.|
+|    |This AAD team couldn't be found.|Make sure that the team exists or create a new team.|
 
 ## Related articles
 
