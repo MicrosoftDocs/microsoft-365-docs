@@ -19,7 +19,7 @@ description: Learn how to find trained models that have been applied to other co
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-Before creating a new model, you may want to reuse an existing one. You can find and evaluate trained models that were created by others in your organization. This may include shared enterprise models trained in a content center or other local models created in the same site. Select the model that is most useful for classifying your files or extracting specific information from them. 
+Before you create a new model, you might consider whether to reuse an existing one. You can find and evaluate trained models that were created by others in your organization. This might include shared enterprise models trained in a content center or other local models created in the same site. Select the model that is most useful for classifying your files or extracting specific information from them. 
 
 ## Discover other trained models
 
