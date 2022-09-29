@@ -17,6 +17,7 @@ ms.collection:
 - m365solution-overview
 - m365initiative-defender-endpoint
 - highpri
+- tier1
 ms.topic: overview
 ms.custom: migrationguides
 ms.date: 11/29/2021
