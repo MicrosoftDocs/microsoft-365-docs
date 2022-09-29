@@ -182,6 +182,9 @@ You can restrict user access to only certain assessments by managing user roles 
 
 External users who need access for auditing or other purposes can also be assigned a role for viewing assessments and editing test data. You'll provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles](compliance-manager-setup.md#more-about-azure-ad).
 
+#### Assessment roles can coexist with other Compliance Manager roles
+It is possible for a user to have one role with respect to an assessment, and another role with respect to overall Compliance Manager access. For example, if you've assigned a user a **Compliance Manager Reader** role in Microsoft Purview compliance portal **Permissions,** you can also assign that user a **Compliance Manager Assessor** role for a specific assessment. In effect, the user will hold the two roles at the same time, but their ability to edit data will be limited to the assessment to which they've been assigned the **Assessor** role. 
+
 #### Steps for granting access
 
 Follow the steps to grant user access to an assessment. Note that you can also assign user roles for individual assessment templates using the same process.

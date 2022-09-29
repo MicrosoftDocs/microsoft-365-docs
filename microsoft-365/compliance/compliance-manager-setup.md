@@ -85,8 +85,8 @@ A user can only hold one role at a time. Any change in a user's role will overri
 | User can: | Compliance Manager role | Azure AD role | 
 | :------------- | :-------------: | :------------: |
 | **Read but not edit data**| Compliance Manager Reader  | Azure AD Global reader, Security reader |
-| **Edit data**| Compliance Manager Contribution | Compliance Administrator |
-| **Edit test results**| Compliance Manager Assessor | Compliance Administrator |
+| **Edit data - for example, can create an assessment and edit improvement action data**| Compliance Manager Contribution | Compliance Administrator |
+| **Edit improvement action testing notes**| Compliance Manager Assessor | Compliance Administrator |
 | **Manage assessments, templates, and tenant data; assign improvement actions**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  |
 
 ### Role-based access to assessments
@@ -101,10 +101,9 @@ You can grant users access to individual assessments from two places:
 
 1. **From an assessment template page**: Open a template and select the **Manage user access** command to add users by role.
 
-See [Grant user access to assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for more detailed instructions.
+If a user has one role for overall access to Compliance Manager, they can hold an additional role that grants them greater access to an individual assessment.
 
-> [!NOTE]
-> If you assign a role to someone to grant access to an assessment who already has an existing role, the new role assignment overrides their existing role.
+See [Grant user access to assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for more detailed information and instructions.
 
 ## Start a premium assessments trial
 
