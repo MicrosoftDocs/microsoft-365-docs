@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 description: "Office 365 measurements for network performance recommendations"

@@ -1311,6 +1311,8 @@
           href: file-plan-manager.md
         - name: Start retention when an event occurs
           href: event-driven-retention.md
+        - name: Customization for the end of the retention period
+          href: retention-label-flow.md
         - name: Publish & apply retention labels in apps
           href: create-apply-retention-labels.md
         - name: Automatically apply retention labels to content

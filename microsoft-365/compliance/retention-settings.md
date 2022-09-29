@@ -394,7 +394,7 @@ At the end of the retention period, you choose whether you want the content to b
 
 ![Retention settings page.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
-As explained in the next section, retention labels have another option; to apply another retention label with its own retention period.
+Retention labels have two more options. As described in the next section, they can apply another retention label with its own retention period. Or, they can [trigger a Power Automate flow](retention-label-flow.md) for custom actions.
 
 Before you configure retention, first familiarize yourself with capacity and storage limits for the respective workloads:
 
