@@ -1,5 +1,5 @@
 ---
-title: "A security operations guide for Microsoft 365 Business Premium"
+title: "Security operations guide for Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -21,50 +21,22 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "A set of suggestions for what to focus your efforts upon in the Defender portal when it comes to daily, weekly or monthly operations. "
+description: "Learn about daily, weekly, monthly, and as needed tasks for your security team to perform."
 ---
 
 # Microsoft 365 Business Premium security operations guide
 
-If you're new to Microsoft 365 Business Premium, or if you don't already have a security operations guide in place, this article can serve as a starting point. If you already have a security operations guide, review it against the recommendations in this article.
+If you're new to Microsoft 365 Business Premium, or if your business doesn't have a security operations guide in place yet, use this article as a starting point. If you do already have a security operations guide, review it against the recommendations in this article.
 
 You can use this guidance to make decisions about security incident priorities and tasks your security team will perform in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
-| Suggested frequency | Tasks  |
+## Security operations tasks to perform
+
+| Task | Description  |
 |---------|---------|
-| Daily  | [Check your threat vulnerability](#check-your-threat-vulnerability).<br/>[Review pending actions in the Action center](#review-pending-actions-in-the-action-center).<br/>[Review devices with threat detections](#review-devices-with-threat-detections).<br/>[Learn about new incidents or alerts](#learn-about-new-incidents-or-alerts). |
-| Weekly | [Monitor and improve your Microsoft Secure score](#monitor-and-improve-your-microsoft-secure-score).<br/>[Review the secure score for devices](#review-the-secure-score-for-devices).<br/>[Improve your secure score for devices](#improve-your-secure-score-for-devices). |
-| Monthly | [Run reports](#run-reports).<br/>[Run a simulation tutorial](#run-a-simulation-tutorial).<br/>[Explore the Learning hub](#explore-the-learning-hub). |
-| As needed | [Use the Threat analytics dashboard](#use-the-threat-analytics-dashboard).<br/>[Run a scan or automated investigation](#run-a-scan-or-automated-investigation).<br/>[Remediate an item](#remediate-an-item). | 
-
-The following sections provide more details about each task.
-  
-## Suggested daily tasks
-
-Here are some suggestions for security tasks to pursue on a daily basis.
-
-- [Check your threat vulnerability](#check-your-threat-vulnerability).
-- [Review pending actions in the Action center](#review-pending-actions-in-the-action-center).
-- [Review devices with threat detections](#review-devices-with-threat-detections).
-- [Learn about new incidents or alerts](#learn-about-new-incidents-or-alerts).
-
-### Check your threat vulnerability
-
-In brief, you can get a snapshot of threat vulnerability by looking at the Vulnerability management dashboard. It reflects how vulnerable your organization is to cybersecurity threats. A high exposure score means your devices are more vulnerable to exploitation.
-
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Vulnerability management > Dashboard**.
-
-2. Take a look at your Organization exposure score. If it's in the acceptable or "High" range, you can move on. If it isn't, select **Improve score** to see more details and security recommendations to improve this score.
-
-Being aware of your exposure score helps you:
-
-- Quickly understand and identify high-level takeaways about the state of security in your organization
-- Detect and respond to areas that require investigation or action to improve the current state
-- Communicate with peers and management about the impact of security efforts
-
-### Review pending actions in the Action center
-
-As threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, remediation actions might be taken automatically or only upon approval, which is why these should be monitored regularly. Examples of remediation actions include sending a file to quarantine, stopping a process from running, and removing a scheduled task. All remediation actions are tracked in the Action center.
+| Daily    |
+| Check your threat vulnerability management dashboard | You can get a snapshot of threat vulnerability by looking at your vulnerability management dashboard, which reflects how vulnerable your organization is to cybersecurity threats. A high exposure score means your devices are more vulnerable to exploitation. <ol><li>In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Vulnerability management > Dashboard**.</li><li>Take a look at your Organization exposure score. If it's in the acceptable or "High" range, you can move on. If it isn't, select **Improve score** to see more details and security recommendations to improve this score.</li></ol>Being aware of your exposure score helps you:<ul></li>Quickly understand and identify high-level takeaways about the state of security in your organization</li><li>Detect and respond to areas that require investigation or action to improve the current state</li><li>Communicate with peers and management about the impact of security efforts</li></ul> |
+| Review pending actions in the Action center | As threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, remediation actions might be taken automatically or only upon approval, which is why these should be monitored regularly. Examples of remediation actions include sending a file to quarantine, stopping a process from running, and removing a scheduled task. All remediation actions are tracked in the Action center.
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Action center**.
 
@@ -97,6 +69,22 @@ To find out if you have any devices that have had threats at them, do the follow
 3. Select the ellipsis (...) to open the actions menu.
 
 4. Select an action, such as **Run antivirus scan** or **Initiate Automated Investigation**.
+
+| Weekly | [Monitor and improve your Microsoft Secure score](#monitor-and-improve-your-microsoft-secure-score).<br/>[Review the secure score for devices](#review-the-secure-score-for-devices).<br/>[Improve your secure score for devices](#improve-your-secure-score-for-devices). |
+| Monthly | [Run reports](#run-reports).<br/>[Run a simulation tutorial](#run-a-simulation-tutorial).<br/>[Explore the Learning hub](#explore-the-learning-hub). |
+| As needed | [Use the Threat analytics dashboard](#use-the-threat-analytics-dashboard).<br/>[Run a scan or automated investigation](#run-a-scan-or-automated-investigation).<br/>[Remediate an item](#remediate-an-item). | 
+
+The following sections provide more details about each task.
+  
+## Suggested daily tasks
+
+Here are some suggestions for security tasks to pursue on a daily basis.
+
+- [Check your threat vulnerability](#check-your-threat-vulnerability).
+- [Review pending actions in the Action center](#review-pending-actions-in-the-action-center).
+- [Review devices with threat detections](#review-devices-with-threat-detections).
+- [Learn about new incidents or alerts](#learn-about-new-incidents-or-alerts).
+
 
 ## Suggested weekly tasks
 
