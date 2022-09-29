@@ -14,7 +14,9 @@ ms.topic: article
 ms.custom: nextgen
 ms.date: 06/28/2022
 ms.reviewer: mkaminska; pahuijbr
-manager: dansimp
+ms.collection: 
+- m365-security
+- tier2
 ms.collection: m365-security
 search.appverid: met150
 ---
