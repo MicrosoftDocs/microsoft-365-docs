@@ -14,7 +14,9 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier2
 search.appverid: met150
 ---
 

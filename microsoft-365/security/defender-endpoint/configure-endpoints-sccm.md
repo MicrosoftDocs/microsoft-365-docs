@@ -6,12 +6,14 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
@@ -63,7 +65,7 @@ For each device, you can set a configuration value to state whether samples can 
 
 You can set a compliance rule for configuration item in Configuration Manager to change the sample share setting on a device.
 
-This rule should be a *remediating* compliance rule configuration item that sets the value of a registry key on targeted devices to make sure they're complaint.
+This rule should be a *remediating* compliance rule configuration item that sets the value of a registry key on targeted devices to make sure they're compliant.
 
 The configuration is set through the following registry key entry:
 
