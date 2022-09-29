@@ -134,7 +134,7 @@ ForEach ($mapping in $mappings){
 [Set up your environment](#set-up-your-environment) (if you haven't already), and then run the following script.
 
 ```powershell
-#Update Connector instance and mapping script
+#Update connector instance and mapping script
 Write-Host "Update Connector instance and mapping"
 Start-Sleep 1
 
