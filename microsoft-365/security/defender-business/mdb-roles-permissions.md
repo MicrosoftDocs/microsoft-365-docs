@@ -14,10 +14,11 @@ ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
- - SMB
- - m365-security
- - m365solution-mdb-setup
- - highpri
+- SMB
+- m365-security
+- m365solution-mdb-setup
+- highpri
+- tier1
 ---
 
 # Assign roles and permissions in Microsoft Defender for Business

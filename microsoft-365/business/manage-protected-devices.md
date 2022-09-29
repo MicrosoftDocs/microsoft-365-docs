@@ -10,9 +10,10 @@ ms.topic: conceptual
 f1_keywords:
 - 'O365E_DevicesManageLM'
 - 'O365E_DevicesManageKM'
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management 
 - M365-identity-device-management
 ms.custom:

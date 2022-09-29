@@ -12,7 +12,7 @@ ms.date: 08/11/2022
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 description: Learn how to manage allows and blocks in the Tenant Allow/Block List in the Security portal.
 ms.subservice: mdo

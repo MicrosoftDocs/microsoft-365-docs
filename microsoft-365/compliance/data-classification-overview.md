@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.collection: 
 - tier1
 - highpri
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
 - highpri

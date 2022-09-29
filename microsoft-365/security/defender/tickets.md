@@ -13,7 +13,8 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security
+  - M365-security-compliance
+  - tier3
 ms.topic: article
 search.appverid: 
   - MOE150

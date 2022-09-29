@@ -17,7 +17,7 @@ ms.subservice: mde
 ms.topic: overview
 ms.collection: 
 - m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
 ms.date:
 search.appverid: met150
 ---
@@ -354,11 +354,10 @@ No End-user notification on third party browsers? Check your toast message setti
 ## See also
 
 - [Microsoft 365 Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-- [Microsoft 365 Defender for Endpoint integration with Microsoft Microsoft 365 Defender for Cloud Applications](/defender-cloud-apps/mde-integration.md)
+- [Microsoft 365 Defender for Endpoint integration with Microsoft Microsoft 365 Defender for Cloud Applications](/defender-cloud-apps/mde-integration)
 - [Get to know the innovative features in Microsoft Edge](https://www.microsoft.com/edge/features)
 - [Protect your network](network-protection.md)
 - [Turn on network protection](enable-network-protection.md)
 - [Web protection](web-protection-overview.md)
 - [Create indicators](manage-indicators.md)
 - [Web content filtering](web-content-filtering.md)
-- [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)

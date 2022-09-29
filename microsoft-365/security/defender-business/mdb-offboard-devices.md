@@ -17,6 +17,7 @@ ms.collection:
 - SMB
 - m365-security
 - m365-initiative-defender-business
+- tier1
 ---
 
 # Offboard a device from Microsoft Defender for Business

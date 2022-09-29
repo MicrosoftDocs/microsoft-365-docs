@@ -14,7 +14,7 @@ localization_priority: Normal
 ms.date: 09/06/2022 
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
 ms.subservice: mde
 ms.reviewer: mkaminska
