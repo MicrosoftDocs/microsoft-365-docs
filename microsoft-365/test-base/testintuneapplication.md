@@ -97,7 +97,7 @@ The Test matrix tab is for you to indicate the specific Windows update program o
    - Your selection will register your application for automatic test runs against the B release of Windows monthly quality updates of selected product(s).
      - For customers who have Default Access customers on Test Base, their applications are validated against the final release version of the B release security              updates, starting from Patch Tuesday.
      - For customers who have Full Access customers on Test Base, their applications are validated against the pre-release versions of the B release security                  updates, starting up to 3-weeks before prior to Patch Tuesday. This allows time for the Full Access customers time to take proactive steps in resolving any            issues found during testing before in advance of the final release on Patch Tuesday.  
-       (How to become a Full Access customer? Please refer to [[Request to change access level | Microsoft Docs](https://docs.microsoft.com/en-us/microsoft-365/test-base/accesslevel?view=o365-worldwide)])
+       (How to become a Full Access customer? Please refer to [[Request to change access level | Microsoft Docs](https://docs.microsoft.com/microsoft-365/test-base/accesslevel?view=o365-worldwide)])
 
 3. Configure **Feature Update**
    - To set up for feature updates, you must specify the target product and it’s preview channel from "Insider Channel" dropdown list.
