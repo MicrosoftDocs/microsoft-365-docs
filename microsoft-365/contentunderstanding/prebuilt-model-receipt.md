@@ -18,7 +18,7 @@ description: Learn how to use a prebuilt receipts model in SharePoint Syntex.
 
 # Use a prebuilt model to extract information from receipts in Microsoft SharePoint Syntex
 
-The prebuilt *receipts model* in SharePoint Syntex analyzes and extracts key information from sales receipts. The API recognizes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction), such as merchant name, merchant phone number, transaction date, tax, and transaction total.
+The prebuilt *receipts model* in SharePoint Syntex analyzes and extracts key information from sales receipts. The API recognizes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction), such as merchant name, merchant phone number, transaction date, tax, and transaction total. Receipts can be of various formats and quality including printed and handwritten receipts.
 
 To use a receipts model, follow these steps:
 
