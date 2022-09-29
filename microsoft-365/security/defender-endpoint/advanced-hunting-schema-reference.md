@@ -11,7 +11,9 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
 ms.date: 01/14/2020
 ms.subservice: mde

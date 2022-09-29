@@ -13,8 +13,9 @@ author: shthota
 manager: dansimp
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection:
-  - m365-security
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 ---
