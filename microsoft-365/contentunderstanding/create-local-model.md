@@ -72,3 +72,5 @@ This feature is available for all [model types](model-types-overview.md).
 
     ![Screenshot of the model home page showing the Where the model is applied on the site section.](../media/content-understanding/local-model-home-page.png) 
 
+> [!NOTE]
+> When a local model is applied to a single library, it becomes available for discovery for application to other libraries in same site.
