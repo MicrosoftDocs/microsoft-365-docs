@@ -152,7 +152,13 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 
 6. Complete the configuration and save your settings.
 
-For more information about how retention policies work for Yammer, see [Learn about retention for Yammer](retention-policies-yammer.md).
+For technical details about how retention works for Yammer, including what elements of messages are supported for retention and timing information with example walkthroughs, see [Learn about retention for Yammer](retention-policies-yammer.md).
+
+#### Known configuration issues
+
+- Although you can select the option to start the retention period when items were last modified, the value of **When items were created** is always used. For messages that are edited, a copy of the original message is saved with its original timestamp to identify when this pre-edited message was created, and the post-edited message has a newer timestamp.
+
+- When you select **Edit** for the Yammer user messages location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
 
 #### Additional retention policies needed to support Yammer
 
