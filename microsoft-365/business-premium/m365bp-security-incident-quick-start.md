@@ -38,26 +38,10 @@ You can use this guidance to make decisions about security incident priorities a
 | Check your threat vulnerability management dashboard | You can get a snapshot of threat vulnerability by looking at your vulnerability management dashboard, which reflects how vulnerable your organization is to cybersecurity threats. A high exposure score means your devices are more vulnerable to exploitation. <ol><li>In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Vulnerability management > Dashboard**.</li><li>Take a look at your Organization exposure score. If it's in the acceptable or "High" range, you can move on. If it isn't, select **Improve score** to see more details and security recommendations to improve this score.</li></ol>Being aware of your exposure score helps you to:<ul><li>Quickly understand and identify high-level takeaways about the state of security in your organization</li><li>Detect and respond to areas that require investigation or action to improve the current state</li><li>Communicate with peers and management about the impact of security efforts</li></ul> |
 | Review pending actions in the Action center | As threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, remediation actions might be taken automatically or only upon approval, which is why these should be monitored regularly. Examples of remediation actions include sending a file to quarantine, stopping a process from running, and removing a scheduled task. All remediation actions are tracked in the Action center.<ol><li>In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Action center**.</li><li>Select the **Pending** tab to view and approve (or reject) any pending actions. Such actions can arise from antivirus or antimalware protection, automated investigations, manual response activities, or live response sessions.</li><li>Select the **History** tab to view a list of completed actions.</li></ol> |
 | Review devices with threat detections | To find out if you have any devices that have had threats at them, follow these steps:<ol><li>In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Reports > General > Security report**.</li><li>Scroll down to the Vulnerable devices row. If threats were detected on devices, you'll see that information in this row.</li></ol>|
+| Learn about new incidents or alerts | <ol><li>In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation menu, select **Incidents**. Incidents are displayed on the page with associated alerts.</li><li>Select an alert to open its flyout pane, where you can learn more about the alert.</li><li>In the flyout, you can see the alert title, view a list of assets (such as endpoints or user accounts) that were affected, take available actions, and use links to view more information and even open the details page for the selected alert.</li></ol> |
+| Run a scan or automated investigation | <ol><li>In the Microsoft 365 Defender portal (https://security.microsoft.com), in the navigation pane, choose Device inventory.</li><li>Select a device to open its flyout panel, and review the information that is displayed.</li><li>Select the ellipsis (...) to open the actions menu.</li><li>Select an action, such as **Run antivirus scan** or **Initiate Automated Investigation**.</li></ol> |
+| Weekly  | 
 
-### Learn about new incidents or alerts
-
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation menu, select **Incidents**. Incidents are displayed on the page with associated alerts.
-
-2. Select an alert to open its flyout pane, where you can learn more about the alert.
-
-3. In the flyout, you can see the alert title, view a list of assets (such as endpoints or user accounts) that were affected, take available actions, and use links to view more information and even open the details page for the selected alert.
-
-### Run a scan or automated investigation
-
-1. In the Microsoft 365 Defender portal (https://security.microsoft.com), in the navigation pane, choose Device inventory.
-
-2. Select a device to open its flyout panel, and review the information that is displayed.
-
-3. Select the ellipsis (...) to open the actions menu.
-
-4. Select an action, such as **Run antivirus scan** or **Initiate Automated Investigation**.
-
-| Weekly | [Monitor and improve your Microsoft Secure score](#monitor-and-improve-your-microsoft-secure-score).<br/>[Review the secure score for devices](#review-the-secure-score-for-devices).<br/>[Improve your secure score for devices](#improve-your-secure-score-for-devices). |
 | Monthly | [Run reports](#run-reports).<br/>[Run a simulation tutorial](#run-a-simulation-tutorial).<br/>[Explore the Learning hub](#explore-the-learning-hub). |
 | As needed | [Use the Threat analytics dashboard](#use-the-threat-analytics-dashboard).<br/>[Run a scan or automated investigation](#run-a-scan-or-automated-investigation).<br/>[Remediate an item](#remediate-an-item). | 
 
