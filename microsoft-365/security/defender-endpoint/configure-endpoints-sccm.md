@@ -65,7 +65,7 @@ For each device, you can set a configuration value to state whether samples can 
 
 You can set a compliance rule for configuration item in Configuration Manager to change the sample share setting on a device.
 
-This rule should be a *remediating* compliance rule configuration item that sets the value of a registry key on targeted devices to make sure they're complaint.
+This rule should be a *remediating* compliance rule configuration item that sets the value of a registry key on targeted devices to make sure they're compliant.
 
 The configuration is set through the following registry key entry:
 
