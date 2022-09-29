@@ -8,7 +8,9 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: 07/07/2022
-ms.service: microsoft-365-security
+ms.collection: 
+- m365-security
+- tier2
 ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: 
