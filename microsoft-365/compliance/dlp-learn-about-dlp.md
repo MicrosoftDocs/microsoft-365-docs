@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.collection:
 - tier1
 - highpri
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MET150
 description: "Learn how to protect your sensitive information using Microsoft Purview data loss prevention policies and tools and take a tour through the DLP lifecycle."

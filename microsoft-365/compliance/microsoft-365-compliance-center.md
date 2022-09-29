@@ -12,7 +12,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 ms.custom: 
 - admindeeplinkCOMPLIANCE
 - intro-overview

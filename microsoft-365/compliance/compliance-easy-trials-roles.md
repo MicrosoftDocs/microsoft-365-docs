@@ -8,7 +8,9 @@ manager: laurawi
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
-ms.collection: m365-security-compliance
+ms.collection: 
+- purview-compliance
+- tier2
 ms.localizationpriority: high
 search.appverid: 
 - MOE150

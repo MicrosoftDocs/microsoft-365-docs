@@ -16,7 +16,7 @@ ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
 - tier1
 - highpri
-- M365-security-compliance
+- purview-compliance
 - SPO_Content
 recommendations: false
 description: "DLP policy component and configuration reference"

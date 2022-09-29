@@ -12,6 +12,7 @@ description: Learn about the capabilities in Microsoft Teams for scheduling and 
 ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
+  - highpri
   - m365solution-frontline
   - m365solution-scenario
   - highpri
