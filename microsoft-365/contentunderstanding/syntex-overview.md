@@ -52,7 +52,14 @@ Rather than clicking and sorting through hundreds, or even thousands of files, S
 
 ## Models
 
-Understanding your content with SharePoint Syntex begins with models. Models let you identify and classify documents that are uploaded to your SharePoint document libraries, and then to extract the information you need from each file.
+:::row:::
+   :::column span="":::
+      ![Image of generic model icon.](../media/content-understanding/model-generic-image.png) 
+   :::column-end:::
+   :::column span="3":::
+      Understanding your content with SharePoint Syntex begins with models. Models let you identify and classify documents that are uploaded to your SharePoint document libraries, and then to extract the information you need from each file.
+   :::column-end:::
+:::row-end:::
 
 In SharePoint Syntex, you can build [custom models](model-types-overview.md) or you can use [prebuilt models](prebuilt-overview.md). The type of model you choose will depend on the types of files you use, the format and structure of the files, the information you want to extract, and where you want to apply the model.
 
@@ -96,7 +103,7 @@ For more information about custom and prebuilt models, see [Overview of model ty
    :::column-end:::
 :::row-end:::
 
- This process lets you automatically generate standard repetitivebusiness documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all this quicker, more consistentently, and with fewer errors in SharePoint Syntex.
+ This process lets you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all this quicker, more consistentently, and with fewer errors in SharePoint Syntex.
 
 For more information, see [Create documents using content assembly in SharePoint Syntex](content-assembly.md).
 
