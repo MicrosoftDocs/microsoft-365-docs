@@ -1,25 +1,28 @@
 ---
 title: "Microsoft Purview eDiscovery solutions"
+description: "Microsoft Purview offers three eDiscovery tools that you can use to search for and export content found in different locations such as Exchange mailboxes, SharePoint and OneDrive for Business sites, Microsoft 365 Groups, Microsoft Teams, and Skype for Business conversations. eDiscovery (Standard) and eDiscovery (Premium) provide many additional features to help you manage your investigations."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 08/25/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: 
-- m365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-ediscovery
-- m365initiative-compliance
 - m365solution-overview
+- highpri
+- ediscovery
 ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
 - MET150
-description: "Microsoft Purview offers three eDiscovery tools that you can use to search for and export content found in different locations such as Exchange mailboxes, SharePoint and OneDrive for Business sites, Microsoft 365 Groups, Microsoft Teams, and Skype for Business conversations. eDiscovery (Standard) and eDiscovery (Premium) provide many additional features to help you manage your investigations."
+
 ---
 
 # Microsoft Purview eDiscovery solutions
@@ -33,7 +36,13 @@ Electronic discovery, or eDiscovery, is the process of identifying and deliverin
 
 Microsoft Purview provides three eDiscovery solutions: Content search, eDiscovery (Standard), and eDiscovery (Premium).
 
+<!--
 ![Key capabilities of Microsoft Purview eDiscovery tools.](..\media\m365-ediscovery-solution-graphic.png)
+-->
+
+|Content Search|eDiscovery (Standard)|eDiscovery (Premium)|
+|---------|---------|---------|
+|Search for content </br> Keyword queries and search conditions </br> Export search results </br> Role-based permissions|Search and export </br> Case management </br>Legal hold|Custodian management </br> Legal hold notifications </br> Advanced indexing </br> Review set filtering </br> Tagging </br> Analytics </br> Predictive coding models </br> And more...|
 
 - **Content search**. Use the Content search tool to search for content across Microsoft 365 data sources and then export the search results to a local computer.
 
@@ -186,4 +195,4 @@ To see what eDiscovery features have been launched, are rolling out, or in devel
 
 ## Training
 
-Training your IT administrators, eDiscovery managers, and compliance investigation teams in the basics for Content search, eDiscovery (Standard), and eDiscovery (Premium) can help your organization get started more quickly using Microsoft 365 eDiscovery tools. Microsoft 365 provides the following resource to help these users in your organization getting started with eDiscovery: [Describe the eDiscovery and audit capabilities of Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+Training your IT administrators, eDiscovery managers, and compliance investigation teams in the basics for Content search, eDiscovery (Standard), and eDiscovery (Premium) can help your organization get started more quickly using Microsoft 365 eDiscovery tools. Microsoft 365 provides the following resource to help these users in your organization getting started with eDiscovery: [Describe the eDiscovery and audit capabilities of Microsoft 365](/training/modules/describe-ediscovery-capabilities-of-microsoft-365).

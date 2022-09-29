@@ -2,7 +2,7 @@
 title: Evaluate network protection
 description: See how network protection works by testing common scenarios that it protects against.
 keywords: Network protection, exploits, malicious website, ip, domain, domains, evaluate, test, demo
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,10 +12,11 @@ author: dansimp
 ms.author: dansimp
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: 
-- M365-security-compliance
+- m365-security
 ms.date:
+search.appverid: met150
 ---
 
 # Evaluate network protection

@@ -2,7 +2,7 @@
 title: Make the switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint
 description: Make the switch to Microsoft Defender for Endpoint, which includes Microsoft Defender Antivirus for your endpoint protection solution.
 keywords: migration, windows defender, advanced endpoint protection, antivirus, antimalware, passive mode, active mode
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,17 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-migratetomdatp
 - m365solution-overview
-- m365solution-mcafeemigrate
-- m365solution-symantecmigrate
 - m365initiative-defender-endpoint
+- highpri
 ms.topic: overview
 ms.custom: migrationguides
 ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Make the switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint

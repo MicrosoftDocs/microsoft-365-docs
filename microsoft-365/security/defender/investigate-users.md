@@ -2,7 +2,8 @@
 title: Investigate users in Microsoft 365 Defender
 description: Investigate users for an incident in the Microsoft 365 Defender portal.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps, incident, analyze, response
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -13,12 +14,11 @@ manager: dansimp
 ms.date: 
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - tier2 
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
-ms.technology: m365d
 ---
 # Investigate users in Microsoft 365 Defender
 

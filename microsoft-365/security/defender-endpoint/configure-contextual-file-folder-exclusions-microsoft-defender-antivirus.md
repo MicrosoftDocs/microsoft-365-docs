@@ -2,19 +2,20 @@
 title: Contextual file and folder exclusions
 description: Describes the contextual file and folder exclusions capability for Microsoft Defender Antivirus on Windows. This capability allows you to be more specific when you define under which context Microsoft Defender Antivirus shouldn't scan a file or folder, by applying restrictions
 keywords: Microsoft Defender Antivirus, process, exclusion, files, scans
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jweston-1
 ms.author: v-jweston
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 08/25/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Contextual file and folder exclusions
@@ -60,6 +61,10 @@ As a starting point, you may already have exclusions in place that you wish to m
 `<PATH>\:{TypeName:value,TypeName:value}`
 
 Keep in mind that _all_ **types** and **values** are case sensitive.
+
+> [!NOTE]  
+> Conditions inside `{}` MUST be true for the restriction to match. For example, if you specify two scan triggers this cannot be true, and the exclusion will not apply. To specify two restrictions of the same type, create two separate exclusions.
+
 
 ### Examples
 

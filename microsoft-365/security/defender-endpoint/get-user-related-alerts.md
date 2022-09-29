@@ -2,7 +2,7 @@
 title: Get user-related alerts API
 description: Retrieve a collection of alerts related to a given user ID using Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, user, related, alerts
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Get user-related alerts API
@@ -56,6 +57,8 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 >
 > - The user needs to have at least the following role permission: 'View Data'. For more information, see [Create and manage roles](user-roles.md).
 > - Response will include only alerts, associated with devices, that the user have access to, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2. 
 
 ## HTTP request
 

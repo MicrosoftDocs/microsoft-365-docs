@@ -1,23 +1,22 @@
 ---
 title: "Search the audit log in the Microsoft Purview compliance portal"
+description: "Use the Microsoft Purview compliance portal to search the unified audit log to view user and administrator activity in your organization."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- audit
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: "Use the Microsoft Purview compliance portal to search the unified audit log to view user and administrator activity in your organization."
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkMAC
@@ -191,7 +190,7 @@ Here's the process for searching the audit log in Microsoft 365.
 
 - Click **Clear** to clear the current search criteria. The date range returns to the default of the last seven days. You can also click **Clear all to show results for all activities** to cancel all selected activities.
 
-- If 50,000 results are found, you can probably assume that there are more than 50,000 events that met the search criteria. You can either refine the search criteria and rerun the search to return fewer results, or you can export all of the search results by selecting **Export results** \> **Download all results**.
+- If 50,000 results are found, you can probably assume that there are more than 50,000 events that met the search criteria. You can either refine the search criteria and rerun the search to return fewer results, or you can export the 50,000 search results by selecting **Export results** \> **Download all results**.
 
 ### Step 2: View the search results
 

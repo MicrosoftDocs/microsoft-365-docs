@@ -6,7 +6,9 @@
     - name: YouTube - Microsoft 365 help for small businesses
       href: https://go.microsoft.com/fwlink/?linkid=2197659
     - name: Get started
-      items: 
+      items:
+        - name: What is Microsoft 365 for business
+          href: ../admin/admin-overview/what-is-microsoft-365-for-business.md
         - name: Sign up
           href: admin-overview/sign-up-for-office-365.md
         - name: Try or buy Microsoft 365
@@ -21,13 +23,11 @@
              href: ../admin/simplified-signup/signup-business-standard.md
            - name: Set up Microsoft 365 Business Standard
              href: ../admin/setup/setup-business-standard.md
-           - name: Invite users to Microsoft 365 Business Standard
+           - name: Invite users to Microsoft 365 for business subscription
              href: ../admin/simplified-signup/admin-invite-business-standard.md
-           - name: What is Microsoft 365 for business
-             href: ../admin/admin-overview/what-is-microsoft-365-for-business.md
-           - name: Accept email invitation to Microsoft 365 Business Standard
+           - name: Accept email invitation to Microsoft 365 for business subscription
              href: ../admin/simplified-signup/user-invite-business-standard.md
-           - name: Accept an email invitation to a Microsoft 365 Business Standard subscription organization using an Outlook, Yahoo, Gmail or other account
+           - name: Accept an email invitation to a Microsoft 365 for business subscription using an Outlook, Yahoo, Gmail or other account
              href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
            - name: Migrate data to my Microsoft 365 Business Standard subscription
              href: ../admin/simplified-signup/migrate-data-business-standard.md
@@ -37,9 +37,11 @@
              href: setup/signup--apps-business.md
            - name: Set up for Microsoft 365 Apps for business
              href: setup/setup-apps-for-business.md
-        - name: Set up Microsoft 365 Business Basic
+        - name: Sign up for Microsoft 365 Business Basic
           items:
-           - name: Microsoft 365 Business Basic
+           - name: Sign up for Microsoft 365 Business Basic
+             href: setup/signup-business-basic.md
+           - name: Set up Microsoft 365 Business Basic
              href: setup/setup-business-basic.md
         - name: Explore the Setup page and wizard
           href: setup/o365-setup-wizard-and-setup-page.md
@@ -179,6 +181,8 @@
              href: add-users/let-users-reset-passwords.md
            - name: Set passwords to never expire
              href: add-users/set-password-to-never-expire.md
+           - name: Password policy recommendations
+             href: misc/password-policy-recommendations.md
            - name: Resend user passwords
              href: add-users/resend-user-password.md
            - name: Turn off strong passwords
@@ -271,21 +275,21 @@
       items:
          - name: Monitor Microsoft 365 activity by using reports
            href: activity-reports/activity-reports.md
-         - name: Microsoft Productivity Score - overview
-           href: productivity/productivity-score.md
+         - name: Microsoft Adoption Score - overview
+           href: adoption/adoption-score.md
            items:
             - name: Content collaboration
-              href: productivity/content-collaboration.md
+              href: adoption/content-collaboration.md
             - name: Communication 
-              href: productivity/communication.md
+              href: adoption/communication.md
             - name: Mobility
-              href: productivity/mobility.md
+              href: adoption/mobility.md
             - name: Teamwork
-              href: productivity/teamwork.md
+              href: adoption/teamwork.md
             - name: Meetings
-              href: productivity/meetings.md
+              href: adoption/meetings.md
             - name: Microsoft 365 Apps health
-              href: productivity/apps-health.md
+              href: adoption/apps-health.md
             - name: Endpoint Analytics
               href: /mem/analytics/productivity-score
          - name: Change your organization contact info
@@ -352,11 +356,13 @@
              href: manage/servicenow-testing-the-configuration.md
            - name: Troubleshooting
              href: manage/servicenow-troubleshooting.md
+           - name: Enable Virtual Agent
+             href: manage/servicenow-support-integration.md
     - name: Manage subscriptions and billing
       href: ../commerce/index.yml
     - name: Secure your organization
       items: 
-        - name: Best practices for securing your data
+        - name: Top 10 ways to secure your data
           href: security-and-compliance/secure-your-business-data.md
         - name: Multi-factor authentication for Microsoft 365
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md
@@ -392,8 +398,6 @@
               href: basic-mobility-security/create-an-apns-certificate-for-ios-devices.md
             - name: Manage device access settings
               href: basic-mobility-security/manage-device-access-settings.md
-            - name: Get details about managed devices
-              href: basic-mobility-security/get-details-about-managed-devices.md
             - name: Manage enrolled devices
               href: basic-mobility-security/manage-enrolled-devices.md
             - name: Enroll your mobile device
@@ -406,8 +410,6 @@
               href: basic-mobility-security/wipe-mobile-device.md
             - name: Turn off Basic Mobility and Security
               href: basic-mobility-security/turn-off.md
-            - name: Troubleshoot
-              href: basic-mobility-security/troubleshoot.md
     - name: Switch from Google Workspace to M365
       items:
         - name: Overview

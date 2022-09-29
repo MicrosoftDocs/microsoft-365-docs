@@ -1,10 +1,80 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/misc/sign-up-for-online-services.md",
+      "redirect_url": "/microsoft-365/admin/misc/remove-a-domain-from-another-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/move-a-domain.md",
+      "redirect_url": "/microsoft-365/admin/misc/remove-a-domain-from-another-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/get-help-with-domains/domain-connect.md",
+      "redirect_url": "/microsoft-365/admin/setup/add-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/setup/o365-setup-wizard-and-setup-page.md",
+      "redirect_url": "/microsoft-365/admin/setup/setup-business-standard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/sign-up-with-a-personal-email-address.md",
+      "redirect_url": "/microsoft-365/admin/simplified-signup/signup-business-standard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/email/email-collaboration.md",
+      "redirect_url": "/microsoft-365/admin/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/add-users/resend-user-password.md",
+      "redirect_url": "/microsoft-365/admin/add-users/reset-passwords",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/empower-your-small-business-with-remote-work.md",
+      "redirect_url": "/microsoft-365/admin/toc.yml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/add-users/strong-password.md",
+      "redirect_url": "/microsoft-365/admin/add-users/reset-passwords",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/basic-mobility-security/troubleshoot.md",
+      "redirect_url": "/microsoft-365/admin/basic-mobility-security/frequently-asked-questions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/add-users/create-edit-or-delete-a-custom-user-view.md",
+      "redirect_url": "/microsoft-365/admin/add-users/add-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/basic-mobility-security/get-details-about-managed-devices.md",
+      "redirect_url": "/microsoft-365/admin/basic-mobility-security/manage-device-access-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/admin-overview/what-is-help.md",
+      "redirect_url": "/microsoft-365/admin/get-help-support",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/commerce/billing-and-payments/psd2.md",
       "redirect_url": "https://support.microsoft.com/account-billing/payment-services-directive-2-and-strong-customer-authentication-3527fa95-9c6a-5f6f-d8e6-f27f33aba50e",
       "redirect_document_id": false
     },
+    {
+      "source_path": "microsoft-365/security/defender/defenderexpertsforhuntingprev.md",
+      "redirect_url": "/microsoft-365/security/defender/defender-experts-for-hunting",
+      "redirect_document_id": true  
+    },	  
     {
       "source_path": "microsoft-365/admin/misc/power-bi-in-your-organization.md",
       "redirect_url": "https://docs.microsoft.com/power-bi/enterprise/service-admin-org-subscription",
@@ -497,8 +567,8 @@
     },
     {
       "source_path": "microsoft-365/business/add-autopilot-devices-and-profile.md",
-      "redirect_url": "/microsoft-365/business-premium/m365bp-add-autopilot-devices-and-profile",
-      "redirect_document_id": true
+      "redirect_url": "/mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/set-up-windows-devices.md",
@@ -1018,6 +1088,11 @@
     {
       "source_path": "microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment.md",
       "redirect_url": "/microsoft-365/solutions/team-security-isolation-dev-test",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/about-defender-for-office-365-trial.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/try-microsoft-defender-for-office-365",
       "redirect_document_id": false
     },
     {
@@ -2372,47 +2447,47 @@
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-infrastructure.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-define-sec-infoprotect-levels.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-configure-classification.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-configure-increased-security-office-365.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-deploy-windows-information-protection.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-data-loss-prevention.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-email-encryption.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-configure-privileged-access-management.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-exit-criteria.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/security-roadmap",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": false
     },
     {
@@ -3427,7 +3502,7 @@
     },
     {
       "source_path": "microsoft-365/enterprise/microsoft-365-technology-control.md",
-      "redirect_url": "/compliance/assurance/assurance-technology-controls",
+      "redirect_url": "/compliance/assurance/assurance-microsoft-365-account-management",
       "redirect_document_id": false
     },
     {
@@ -4361,6 +4436,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/security-operations-dashboard.md",
+      "redirect_url": "/microsoft-365/security/defender/microsoft-365-defender-portal",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/onboard.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/onboard-configure",
       "redirect_document_id": false
@@ -4383,6 +4463,16 @@
     {
       "source_path": "microsoft-365/security/defender/onboard.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/onboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/machine-reports.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/device-health-reports",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/device-health-api.md ",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/device-health-api-methods-properties",
       "redirect_document_id": false
     },
     {
@@ -4688,6 +4778,26 @@
     {
       "source_path": "microsoft-365/security/defender-endpoint/api-portal-mapping.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/configure-siem",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/get-machinesecuritystates-collection.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/exposed-apis-list",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/get-cvekbmap-collection.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/exposed-apis-list",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/get-kbinfo-collection.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/exposed-apis-list",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/get-machinegroups-collection.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/exposed-apis-list",
       "redirect_document_id": false
     },
     {
@@ -6852,7 +6962,7 @@
     },
     {
     "source_path": "microsoft-365/admin/devices/add-autopilot-devices-and-profile.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-add-autopilot-devices-and-profile",
+    "redirect_url": "/mem/autopilot/windows-autopilot",
     "redirect_document_id": false
     },
     {
@@ -7611,7 +7721,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365//admin/setup/secure-win-10-pcs.md",
+      "source_path": "microsoft-365/admin/setup/secure-win-10-pcs.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
       "redirect_document_id": false
     },
@@ -7636,14 +7746,149 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management-trial.md",
-      "redirect_url": "microsoft-365/security/defender-vulnerability-management/get-defender-vulnerability-management",
+      "source_path": "microsoft-365/admin/productivity/apps-health.md",
+      "redirect_url": "/microsoft-365/admin/adoption/apps-health",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/productivity/communication.md",
+      "redirect_url": "/microsoft-365/admin/adoption/communication",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/productivity/content-collaboration.md",
+      "redirect_url": "/microsoft-365/admin/adoption/content-collaboration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/productivity/meetings.md",
+      "redirect_url": "/microsoft-365/admin/adoption/meetings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/productivity/mobility.md",
+      "redirect_url": "/microsoft-365/admin/adoption/mobility",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/productivity/privacy.md",
+      "redirect_url": "/microsoft-365/admin/adoption/privacy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/productivity/productivity-score.md",
+      "redirect_url": "/microsoft-365/admin/adoption/adoption-score",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/productivity/teamwork.md",
+      "redirect_url": "/microsoft-365/admin/adoption/teamwork",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/archive-jive-data.md",
+      "redirect_url": "compliance/index",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/defender-vulnerability-management/trial-playbook-defender-vulnerability-management.md",
-      "redirect_url": "microsoft-365/security/defender-vulnerability-management/get-defender-vulnerability-management",
+      "source_path": "microsoft-365/security/office-365-security/office365-security-incident-response-overview.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
       "redirect_document_id": false
+    },
+    {
+        "source_path": "microsoft-365/security/office-365-security/security-roadmap.md",
+        "redirect_url": "/microsoft-365/security/office-365-security/overview",
+        "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/old-index.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
+      "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/office-365-security/reporting-and-message-trace-in-exchange-online-protection.md",
+    "redirect_url": "/microsoft-365/security/office-365-security/message-trace-scc.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/office-365-security/security-dashboard.md",
+    "redirect_url": "/microsoft-365/security/defender/microsoft-365-defender-portal",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance.md",
+    "redirect_url": "/microsoft-365/security/defender/microsoft-365-defender-portal",
+    "redirect_document_id": false
+  },
+  {
+      "source_path": "microsoft-365/business-premium/m365bp-ms-partner.md",
+      "redirect_url": "/microsoft-365/business-premium/get-microsoft-365-business-premium#work-with-a-microsoft-partner-to-get-microsoft-365-business-premium",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "microsoft-365/bookings/get-bookings-app.md",
+      "redirect_url": "microsoft-365/bookings/bookings-overview.md",
+      "redirect_document_id": false
+  },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-managed-devices-setup.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-secure-windows-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-manage-windows-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-validate-settings-on-windows-10-pcs.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-app-protection-settings-for-android-and-ios.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-validate-settings-on-android-or-ios.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-add-autopilot-devices-and-profile.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-autopilot-profile-settings.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365bp-create-and-edit-autopilot-devices.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/create-and-edit-autopilot-profiles.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/overview.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365",
+      "redirect_document_id": true
     }
-  ]
-}
+    ]
+  }

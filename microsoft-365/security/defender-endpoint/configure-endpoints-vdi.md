@@ -4,7 +4,7 @@ description: Deploy the configuration package on virtual desktop infrastructure 
 keywords: configure virtual desktop infrastructure (VDI) device, vdi, device management, configure Microsoft Defender for Endpoint, endpoints
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,11 +13,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 04/15/2022
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft 365 Defender
@@ -54,7 +54,6 @@ In a VDI environment, VDI instances can have short lifespans. VDI devices can ap
 
 
 - Single portal entry for each VDI instance. If the VDI instance was already onboarded to Microsoft Defender for Endpoint and at some point deleted then  recreated with the same host name, a new object representing this VDI instance will NOT be created in the portal. 
-
 
   > [!NOTE]
   > In this case, the *same* device name must be configured when the session is created, for example using an unattended answer file.
@@ -138,14 +137,14 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 2. Follow the [server onboarding process](configure-server-endpoints.md). 
 
-## Updating non-persistent virtual desktop infrastructure (VDI) images
+## Updating virtual desktop infrastructure (VDI) images (persistent or non-persistent)
 
 With the ability to easily deploy updates to VMs running in VDIs, we've shortened this guide to focus on how you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
 For more information, follow the guidance in [Deployment guide for Microsoft Defender Antivirus in a Virtual Desktop Infrastructure (VDI) environment](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus).
 
    > [!NOTE]
-   > If you have onboarded the master image of your Non-Persistent VDI environment (SENSE service is running), then you must offboard and clear some data before putting the image back into production.
+   > If you have onboarded the master image of your VDI environment (SENSE service is running), then you must offboard and clear some data before putting the image back into production.
    > 1. Ensure the sensor is stopped by running the command below in a CMD window:
    >  ```console
    >  sc query sense
@@ -160,11 +159,9 @@ For more information, follow the guidance in [Deployment guide for Microsoft Def
    >  exit
    >  ```
 
-
 ## Other recommended configuration settings
 
 After onboarding devices to the service, it's important to take advantage of the included threat protection capabilities by enabling them with the following recommended configuration settings.
-
 
 ### Next generation protection configuration
 
@@ -176,14 +173,12 @@ The following configuration settings are recommended:
 - Cloud-delivered protection level: Not configured
 - Defender Cloud Extended Timeout In Seconds: 20
 
-
 #### Exclusions
 - Disable local admin merge: Not configured
 - Defender processes to exclude:
   - `%Programfiles%\FSLogix\Apps\frxccd.exe`
   - `%Programfiles%\FSLogix\Apps\frxccds.exe`
   - `%Programfiles%\FSLogix\Apps\frxsvc.exe`
-
 
 - File extensions to exclude from scans and real-time protection:
   -  `%Programfiles%\FSLogix\Apps\frxccd.sys`
@@ -193,9 +188,8 @@ The following configuration settings are recommended:
   - `%TEMP%*.VHDX`
   - `%Windir%\TEMP*.VHD`
   - `%Windir%\TEMP*.VHDX`
-  - `\\stroageaccount.file.core.windows.net\share**.VHD`
-  -  `\\stroageaccount.file.core.windows.net\share**.VHDX`
-
+  - `\\storageaccount.file.core.windows.net\share**.VHD`
+  -  `\\storageaccount.file.core.windows.net\share**.VHDX`
 
 #### Real-time Protection
 
@@ -208,8 +202,6 @@ The following configuration settings are recommended:
 - Actions for detected threats:
   - Low threat: Clean
   - Moderate threat, High threat, Severe threat: Quarantine
-
-
 
 #### Scan
 
@@ -232,7 +224,6 @@ The following configuration settings are recommended:
 #### User experience
 - Allow user access to Microsoft Defender app: Not configured
 
-
 #### Enable Tamper protection
 - Enable tamper protection to prevent Microsoft Defender being disabled: Enable
 
@@ -240,20 +231,14 @@ The following configuration settings are recommended:
 
 - Enable network protection: Audit mode
 - Require SmartScreen for Microsoft Edge: Yes
-- Block maclious site access: Yes
+- Block malicious site access: Yes
 - Block unverified file download: Yes
 
 #### Attack surface reduction rules
 - Configure all available rules to Audit.
 
-
 > [!NOTE]
 > Blocking these activities may interrupt legitimate business processes. The best approach is setting everything to audit, identifying which ones are safe to turn on, and then enabling those settings on endpoints which do not have false positive detections.
-
-
-
-
-
 
 ## Related topics
 - [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)

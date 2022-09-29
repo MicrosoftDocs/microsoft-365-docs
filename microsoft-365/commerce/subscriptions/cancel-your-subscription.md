@@ -1,5 +1,5 @@
 ---
-title: "Cancel your business subscription"
+title: "Cancel your Microsoft business subscription"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri 
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
@@ -24,7 +25,7 @@ description: "Learn how to cancel your Dynamics 365, Intune, Power Platform, and
 ms.date: 07/07/2022
 ---
 
-# Cancel your Microsoft subscription
+# Cancel your Microsoft business subscription
 
 If you want to cancel your subscription, the easiest way to do that is to [turn off recurring billing](renew-your-subscription.md). When you turn off recurring billing, you can continue to use your subscription until it expires at the end of the subscription term. If you want to cancel immediately, use the information and steps in this article to do that.
 

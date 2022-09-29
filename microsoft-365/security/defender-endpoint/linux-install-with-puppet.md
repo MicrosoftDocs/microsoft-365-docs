@@ -3,7 +3,7 @@ title: Deploy Microsoft Defender for Endpoint on Linux with Puppet
 ms.reviewer: 
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux using Puppet.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
+  - m365-security
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux with Puppet
@@ -125,63 +126,64 @@ In the below commands, replace *[distro]* and *[version]* with the information y
 # @param version The Linux distribution release number, e.g. 7.4.
 
 class install_mdatp (
-$channel = 'insiders-fast',
-$distro = undef,
-$version = undef
-){
-    case $::osfamily {
-        'Debian' : {
-        $release = $channel ? {
-        'prod' => $facts['os']['distro']['codename']
+  $channel = 'insiders-fast',
+  $distro = undef,
+  $version = undef
+) {
+  case $facts['os']['family'] {
+    'Debian' : {
+      $release = $channel ? {
+        'prod'  => $facts['os']['distro']['codename'],
         default => $channel
-        }
-            apt::source { 'microsoftpackages' :
-                location => "https://packages.microsoft.com/${distro}/${version}/prod",
-                release  =>  $release,
-                repos    => 'main',
-                key      => {
-                    'id'     => 'BC528686B50D79E339D3721CEB3E94ADBE1229CF',
-                    'server' => 'keyserver.ubuntu.com',
-                },
-            }
-        }
-        'RedHat' : {
-            yumrepo { 'microsoftpackages' :
-                baseurl  => "https://packages.microsoft.com/${distro}/${version}/${channel}",
-                descr    => "packages-microsoft-com-prod-${channel}",
-                enabled  => 1,
-                gpgcheck => 1,
-                gpgkey   => 'https://packages.microsoft.com/keys/microsoft.asc'
-            }
-        }
-        default : { fail("${::osfamily} is currently not supported.") }
+      }
+      apt::source { 'microsoftpackages' :
+        location => "https://packages.microsoft.com/${distro}/${version}/prod",
+        release  => $release,
+        repos    => 'main',
+        key      => {
+          'id'     => 'BC528686B50D79E339D3721CEB3E94ADBE1229CF',
+          'server' => 'keyserver.ubuntu.com',
+        },
+      }
     }
-
-    case $::osfamily {
-        /(Debian|RedHat)/: {
-            file { ['/etc/opt', '/etc/opt/microsoft', '/etc/opt/microsoft/mdatp']:
-                ensure => directory,
-                owner  => root,
-                group  => root,
-                mode   => '0755'
-            }
-
-            file { '/etc/opt/microsoft/mdatp/mdatp_onboard.json':
-                source  => 'puppet:///modules/install_mdatp/mdatp_onboard.json',
-                owner   => root,
-                group   => root,
-                mode    => '0600',
-                require => File['/etc/opt/microsoft/mdatp']
-            }
-
-            package { 'mdatp':
-                ensure  => 'installed',
-                require => File['/etc/opt/microsoft/mdatp/mdatp_onboard.json']
-            }
-        }
-        default : { fail("${::osfamily} is currently not supported.") }
+    'RedHat' : {
+      yumrepo { 'microsoftpackages' :
+        baseurl  => "https://packages.microsoft.com/${distro}/${version}/${channel}",
+        descr    => "packages-microsoft-com-prod-${channel}",
+        enabled  => 1,
+        gpgcheck => 1,
+        gpgkey   => 'https://packages.microsoft.com/keys/microsoft.asc',
+      }
     }
+    default : { fail("${facts['os']['family']} is currently not supported.") }
+  }
+
+  case $facts['os']['family'] {
+    /(Debian|RedHat)/: {
+      file { ['/etc/opt', '/etc/opt/microsoft', '/etc/opt/microsoft/mdatp']:
+        ensure => directory,
+        owner  => root,
+        group  => root,
+        mode   => '0755',
+      }
+
+      file { '/etc/opt/microsoft/mdatp/mdatp_onboard.json':
+        source  => 'puppet:///modules/install_mdatp/mdatp_onboard.json',
+        owner   => root,
+        group   => root,
+        mode    => '0600',
+        require => File['/etc/opt/microsoft/mdatp'],
+      }
+
+      package { 'mdatp':
+        ensure  => 'installed',
+        require => File['/etc/opt/microsoft/mdatp/mdatp_onboard.json'],
+      }
+    }
+    default : { fail("${facts['os']['family']} is currently not supported.") }
+  }
 }
+
 ```
 
 ## Deployment

@@ -7,13 +7,17 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 08/09/2022
 ms.collection: 
 - M365-Campaigns
 - m365solution-overview
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 - intro-overview
@@ -25,9 +29,9 @@ description: "Learn how to implement cybersecurity for small or medium sized bus
 
 # Microsoft 365 Business Premium – productivity and cybersecurity for small business
 
-Let us begin by saying that you made a wise choice in adopting Microsoft 365 Business Premium and its world class productivity tools. Designed with cybersecurity in mind, Microsoft 365 Business Premium safeguards your data, devices and information. You are your organization's first and best defense against hackers and cyberattackers, including random individuals, organized crime, or highly sophisticated nation states.
+Microsoft 365 Business Premium with its world class productivity tools is a wise choice for small and medium-sized businesses. Designed with cybersecurity in mind, Microsoft 365 Business Premium safeguards your data, devices and information. You are your organization's first and best defense against hackers and cyberattackers, including random individuals, organized crime, or highly sophisticated nation states.
 
-The task before you is this: let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on the following missions: 
+The task before you is this: let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on the following six missions: 
 
 :::image type="content" source="media/sixmissions.png" alt-text="Diagram listing six missions.":::
 
@@ -44,7 +48,7 @@ Completing all six missions is the most effective way to thwart hackers, protect
 
 ## Cybersecurity playbook
 
-The guidance in these missions is based upon the zero trust methodology and helps your business achieve the goals described in the Harvard Kennedy School  [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598). A summary is available for you to download ([Get the PDF here](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)).
+The guidance in these missions is based upon the [Zero Trust security model](../security/office-365-security/microsoft-365-policies-configurations.md), and is summarized in a downloadable [Cybersecurity playbook](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)).
 
 [:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="Cybersecurity playbook. Download this guide.":::](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)
 

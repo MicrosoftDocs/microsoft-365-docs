@@ -11,10 +11,13 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: 
-- m365-security-compliance
+ms.collection:
+- highpri 
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
@@ -242,7 +245,7 @@ Before configuring a policy, define the following insider risk settings:
     - [File type exclusions](insider-risk-management-settings.md#file-type-exclusions)
     - [Minimum number of daily events to boost score for unusual activity](insider-risk-management-settings.md#minimum-number-of-daily-events-to-boost-score-for-unusual-activity)
     - [Alert volume level](insider-risk-management-settings.md#alert-volume)
-    - [Microsoft Defender for Endpoint alert status](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
+    - [Microsoft Defender for Endpoint alert status](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses-preview)
     - [Domain settings](insider-risk-management-settings.md#domains)
 6. On the **Export alerts** page, enable export of insider risk alert information using the Office 365 Management APIs if needed.
 7. On the **Priority user groups** page, create a priority user group and add users if not created in **Step 3**.
@@ -307,6 +310,7 @@ Insider risk management policies include assigned users and define which types o
 
     If you've selected at least one *Office* or *Device* indicator, select the **Risk score boosters** as appropriate. Risk score boosters are only applicable for selected indicators.
     If you've selected a *Data theft* or *Data leaks* policy template, select one or more **Sequence detection** methods and a **Cumulative exfiltration detection** method to apply to the policy.
+    If you've selected the *Risky browser usage* policy template, select one or more of the **Browsing indicators**.
 
 20. Select **Next** to continue.
 21. On the **Decide whether to use default or custom indicator thresholds** page, choose custom or default thresholds for the policy indicators that you've selected. Choose either the **Use default thresholds for all indicators** or **Specify custom thresholds** for the selected policy indicators. If you've selected Specify custom thresholds, choose the appropriate level to generate the desired level of activity alerts for each policy indicator.

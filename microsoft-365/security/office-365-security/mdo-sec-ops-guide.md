@@ -14,11 +14,11 @@ search.appverid:
   - MET150
   - MOE150
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: A prescriptive playbook for SecOps personnel to manage Microsoft Defender for Office 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Microsoft Defender for Office 365 Security Operations Guide
@@ -36,6 +36,8 @@ The rest of this guide describes the required activities for SecOps personnel. T
 A companion article to this guide provides an overview to [manage incidents and alerts from Defender for Office 365 on the Incidents page in the Microsoft 365 Defender portal](mdo-sec-ops-manage-incidents-and-alerts.md).
 
 The [Microsoft 365 Defender Security Operations Guide](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops) contains additional information that you can use for planning and development.
+
+For a video about this information, see <https://youtu.be/eQanpq9N1Ps>.
 
 ## Daily activities
 
@@ -84,7 +86,7 @@ False positive and false negative management and the responsible personas are de
 |Submit false positives and false negatives to Microsoft at <https://security.microsoft.com/reportsubmission>.|Daily|Provide signals to Microsoft by reporting incorrect email, URL, and file detections.|Security Operations Team|
 |Analyze admin submission details.|Daily|Understand the following factors for the submissions you make to Microsoft: <ul><li>What caused the false positive or false negative.</li><li>The state of your Defender for Office 365 configuration at the time of the submission.</li><li>Whether you need to make changes to your Defender for Office 365 configuration.</li></ul>|Security Operations Team <br/><br/> Security Administration|
 |Add block entries in the Tenant Allow/Block List at <https://security.microsoft.com/tenantAllowBlockList>.|Daily|Use the Tenant Allow/Block List to add block entries for false negative URL, file, or sender detections as needed.|Security Operations Team|
-|Release false negatives from quarantine.|Daily|After the recipient confirms that the message was incorrectly quarantined, you can release or approve release requests for users. <br/><br/> To control what users can do to their own quarantined messages (including release or request release), see [Quarantine policies](quarantine-policies.md).|Security Operations Team <br/><br/> Messaging Team|
+|Release false positive from quarantine.|Daily|After the recipient confirms that the message was incorrectly quarantined, you can release or approve release requests for users. <br/><br/> To control what users can do to their own quarantined messages (including release or request release), see [Quarantine policies](quarantine-policies.md).|Security Operations Team <br/><br/> Messaging Team|
 
 ### Review phishing and malware campaigns that resulted in delivered mail
 
@@ -143,13 +145,13 @@ Campaign Views reveals malware and phishing attacks against your organization. F
 |---|---|---|---|
 |Regular, proactive hunting for threats at: <ul><li><https://security.microsoft.com/threatexplorer></li><li><https://security.microsoft.com/v2/advanced-hunting></li></ul>.|Ad-hoc|Search for threats using [Threat Explorer](threat-explorer.md) and [Advanced hunting](../defender-endpoint/advanced-hunting-overview.md).|Security Operations Team <br/><br/> Threat hunting team|
 |Share hunting queries.|Ad-hoc|Actively share frequently used, useful queries within the security team for faster manual threat hunting and remediation. <br/><br/> Use [Threat trackers](threat-trackers.md) and [shared queries in Advanced hunting](/microsoft-365/security/defender/advanced-hunting-shared-queries).|Security Operations Team <br/><br/> Threat hunting team|
-|Create custom detection rules at <https://security.microsoft.com/custom_detection>.|Ad-hoc|[Create custom detection rules](../defender/advanced-hunting-overview.md#get-started-with-advanced-hunting) to proactively monitor events, patterns, and threats based on Defender for Office 365 data in Advance Hunting. Detection rules contain advanced hunting queries that generate alerts based on the matching criteria.|Security Operations Team <br/><br/> Threat hunting team|
+|Create custom detection rules at <https://security.microsoft.com/custom_detection>.|Ad-hoc|[Create custom detection rules](../defender/custom-detections-overview.md) to proactively monitor events, patterns, and threats based on Defender for Office 365 data in Advance Hunting. Detection rules contain advanced hunting queries that generate alerts based on the matching criteria.|Security Operations Team <br/><br/> Threat hunting team|
 
 ### Review Defender for Office 365 policy configurations
 
 |Activity|Cadence|Description|Persona|
 |---|---|---|---|
-|Review the configuration of Defender for Office 365 policies at <https://security.microsoft.com/configurationAnalyzer>.|Ad-hoc <br/><br/> Monthly|Use the [Configuration analyzer](configuration-analyzer-for-security-policies.md) to compare your existing policy settings to the [recommended Standard or Strict values for Defender for Office 365](recommended-settings-for-eop-and-office365.md). The Configuration analyzer identifies accidental or malicious changes that can lower your organization's security posture. <br/><br/> Or yu can use the PowerShell-based [ORCA tool](https://aka.ms/getorca).|Security Administration <br/><br/> Messaging Team|
+|Review the configuration of Defender for Office 365 policies at <https://security.microsoft.com/configurationAnalyzer>.|Ad-hoc <br/><br/> Monthly|Use the [Configuration analyzer](configuration-analyzer-for-security-policies.md) to compare your existing policy settings to the [recommended Standard or Strict values for Defender for Office 365](recommended-settings-for-eop-and-office365.md). The Configuration analyzer identifies accidental or malicious changes that can lower your organization's security posture. <br/><br/> Or you can use the PowerShell-based [ORCA tool](https://aka.ms/getorca).|Security Administration <br/><br/> Messaging Team|
 |Review detection overrides in Defender for Office 365 at <https://security.microsoft.com/reports/TPSMessageOverrideReportATP>|Ad-hoc <br/><br/> Monthly|Use the [View data by System override \> Chart breakdown by Reason view](view-email-security-reports.md#view-data-by-system-override-and-chart-breakdown-by-reason) in the **Threat Protection status report** to review email that was detected as phishing but delivered due to policy or user override settings. <br/><br/> Actively investigate, remove, or fine tune overrides to avoid delivery of email that was determined to be malicious.|Security Administration <br/><br/> Messaging Team|
 
 ### Review spoof and impersonation detections

@@ -17,7 +17,7 @@ This topic describes how to get access to Bookings for the first time. It also t
 
 ## Access Bookings for the first time
 
-If your IT administrator has granted you access to Bookings, you can access the app via Office online.
+If your IT administrator has granted you [access to Bookings](/microsoft-365/bookings/turn-bookings-on-or-off), you can access the app via Office online.
 
 The first time you use [Bookings](https://outlook.office.com/bookings/onboarding) you'll create a calendar and set up your business.
 

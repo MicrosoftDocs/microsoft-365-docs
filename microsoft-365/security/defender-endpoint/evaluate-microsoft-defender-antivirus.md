@@ -2,7 +2,7 @@
 title: Evaluate Microsoft Defender Antivirus
 description: Businesses of all sizes can use this guide to evaluate and test the protection offered by Microsoft Defender Antivirus in Windows.
 keywords: Microsoft Defender Antivirus, cloud protection, cloud, antimalware, security, defender, evaluate, test, protection, compare, real-time protection
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,8 +13,9 @@ ms.custom: nextgen
 ms.date: 10/18/2018
 ms.reviewer:
 manager: dansimp
-ms.technology: mde
-ms.collection: m365-security-compliance
+ms.subservice: mde
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Evaluate Microsoft Defender Antivirus

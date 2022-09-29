@@ -4,7 +4,7 @@ description: Manage incidents by assigning it, updating its status, or setting i
 keywords: incidents, manage, assign, status, classification, true alert, false alert
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,10 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
+  - m365-security
   - m365-initiative-defender-endpoint
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Manage Microsoft Defender for Endpoint incidents

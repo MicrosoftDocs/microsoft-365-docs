@@ -10,9 +10,11 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- highpri
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
@@ -150,7 +152,7 @@ The global administrator for your organization can change the settings for autom
 
 ### Manage user history
 
-The **Manage user history** settings help you quickly identify which users have worked with improvement actions in Compliance Manager. The identifiable user data associated with improvement actions includes any implementation and testing work done, documents they uploaded, and any notes they entered. Understanding and retrieving this type of data may be necessary for your organization’s own compliance needs.
+The **Manage user history** settings help you quickly identify which users have worked with improvement actions in Compliance Manager. The identifiable user data associated with improvement actions includes the status of the improvement actions and  documents they uploaded. Understanding and retrieving this type of data may be necessary for your organization’s own compliance needs.
 
 The user history settings also allow you to reassign all improvement actions from one user to another.
 

@@ -2,7 +2,7 @@
 title: Get all vulnerabilities by machine and software
 description: Retrieves a list of all the vulnerabilities affecting the organization by Machine and Software
 keywords: apis, graph api, supported apis, get, vulnerability information, Microsoft Defender for Endpoint tvm api
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,11 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # List vulnerabilities by machine and software

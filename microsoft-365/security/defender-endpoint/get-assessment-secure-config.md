@@ -2,7 +2,7 @@
 title: Export secure configuration assessment per device
 description: Returns  an entry for every unique combination of DeviceId, ConfigurationId.
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,11 @@ author: jweston-1
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Export secure configuration assessment per device
@@ -217,7 +218,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 This API response contains the Secure Configuration Assessment on your exposed devices, and returns an entry for every unique combination of DeviceId, ConfigurationId.
 
-#### 2.1.2 Limitations
+#### 2.1.1 Limitations
 
 Rate limitations for this API are 5 calls per minute and 20 calls per hour.
 
@@ -227,8 +228,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 ---|---|---
-Application|Vulnerability.Read.All|\'Read "threat and vulnerability management" vulnerability information\'
-Delegated (work or school account)|Vulnerability.Read|\'Read "threat and vulnerability management" vulnerability information\'
+Application|Vulnerability.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
+Delegated (work or school account)|Vulnerability.Read|\'Read Threat and Vulnerability Management vulnerability information\'
 
 ### 2.3 URL
 

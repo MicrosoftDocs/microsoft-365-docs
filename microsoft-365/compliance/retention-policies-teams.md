@@ -11,7 +11,8 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid: 
 - MOE150
@@ -41,7 +42,7 @@ For other workloads, see:
 > [!NOTE]
 > Retention policies support [shared channels](/MicrosoftTeams/shared-channels). Any shared channels inherit retention settings from the parent channel.
 
-Teams chats messages, channel messages, and private channel messages can be deleted by using retention policies for Teams, and in addition to the text in the messages, the following items can be retained for compliance reasons: Embedded images, tables, hypertext links, links to other Teams messages and files, and [card content](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chat messages and private channel messages include all the names of the people in the conversation, and channel messages include the team name and the message title (if supplied). 
+Teams chats messages, channel messages, and private channel messages can be deleted by using retention policies for Teams, and in addition to the text in the messages, the following items can be retained for compliance reasons: Video clips, embedded images, tables, hypertext links, links to other Teams messages and files, and [card content](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chat messages and private channel messages include all the names of the people in the conversation, and channel messages include the team name and the message title (if supplied). 
 
 Code snippets, recorded voice memos from the Teams mobile client, thumbnails, announcement images, and reactions from others in the form of emoticons aren't retained when you use retention policies for Teams.
 
@@ -185,17 +186,13 @@ When a Skype for Business chat comes into Teams, it becomes a message in a Teams
 
 However, if conversation history is turned on for Skype for Business and from the Skype for Business client side that history is being saved into a mailbox, that chat data isn't handled by a Teams retention policy. For this content, use a retention policy that's configured for Skype for Business.
 
-## Meetings and external users
+## Messages and external users
 
-Channel meeting messages are stored the same way as channel messages, so for this data, select the **Teams channel messages** location when you configure your retention policy.
+When external users are included in a meeting or chat that your organization hosts:
 
-Impromptu and scheduled meeting messages are stored in the same way as group chat messages, so for this data, select the **Teams chats** location when you configure your retention policy.
+- If an external user joins by using a guest account in your tenant, any Teams messages are stored in both your users' mailbox and a shadow mailbox that's granted to the guest account. However, retention policies aren't supported for shadow mailboxes, even though they can be reported as included in a retention policy for the entire location (sometimes known as an "organization-wide policy").
 
-When external users are included in a meeting that your organization hosts:
-
-- If an external user joins by using a guest account in your tenant, any messages from the meeting are stored in both your users' mailbox and a shadow mailbox that's granted to the guest account. However, retention policies aren't supported for shadow mailboxes, even though they can be reported as included in a retention policy for the entire location (sometimes known as an "organization-wide policy").
-
-- If an external user joins by using an account from another Microsoft 365 organization, your retention policies can't delete messages for this user because they're stored in that user's mailbox in another tenant. For the same meeting however, your retention policies can delete messages for your users.
+- If an external user joins by using an account from another Microsoft 365 organization, your retention policies can't delete messages for this user because they're stored in that user's mailbox in another tenant. For the same meeting or chat however, your retention policies can delete messages for your users.
 
 ## When a user leaves the organization 
 

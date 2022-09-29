@@ -2,7 +2,7 @@
 title: How to schedule scans with Microsoft Defender for Endpoint (Linux)
 description: Learn how to schedule an automatic scanning time for Microsoft Defender for Endpoint (Linux) to better protect your organization's assets.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, scans, antivirus, microsoft defender for endpoint (linux)
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,10 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Schedule scans with Microsoft Defender for Endpoint (Linux)
@@ -157,7 +158,7 @@ crontab -l
 crontab -u username -l
 ```
 
-### To backup crontab entries
+### To back up crontab entries
 
 ```bash
 crontab -l > /var/tmp/cron_backup.dat
@@ -207,6 +208,6 @@ crontab -u username -r
 +—————- minute (values: 0 - 59) (special characters: , \- \* /)  <br>
 | +————- hour (values: 0 - 23) (special characters: , \- \* /) <br>
 | | +———- day of month (values: 1 - 31) (special characters: , \- \* / L W C)  <br>
-| | | +——- month (values: 1 - 12) (special characters: , \- \* / )  <br>
+| | | +——- month (values: 1 - 12) (special characters: , \- \* /)  <br>
 | | | | +—- day of week (values: 0 - 6) (Sunday=0 or 7) (special characters: , \- \* / L W C) <br>
 | | | | |*****command to be executed

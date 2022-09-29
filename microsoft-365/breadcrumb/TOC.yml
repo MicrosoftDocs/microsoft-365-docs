@@ -1,5 +1,5 @@
 - name: Microsoft 365
-  tocHref: /
+  tocHref: /microsoft-365/
   topicHref: /microsoft-365/index
   items:
   - name: Lighthouse
@@ -8,13 +8,22 @@
   - name: SharePoint Syntex
     tocHref: /microsoft-365/contentunderstanding/
     topicHref: /microsoft-365/contentunderstanding/index
-- name: Microsoft Viva
-  tocHref: /microsoft-365/viva/
-  topicHref: /microsoft-365/viva/index
-  items:
-    - name: Microsoft Viva Topics
-      tocHref: /microsoft-365/knowledge/
-      topicHref: /microsoft-365/knowledge/index
-    - name: Microsoft Viva Learning
-      tocHref: /microsoft-365/learning/
-      topicHref: /microsoft-365/learning/index
+  - name: Microsoft Bookings
+    tocHref: /microsoft-365/bookings/
+    topicHref: /microsoft-365/bookings/
+  - name: Microsoft 365 Business Premium
+    tocHref: /microsoft-365/business-premium/index
+    topicHref: /business-premium/index
+  - name: Office 365 Enterprise
+    tocHref: /microsoft-365/Enterprise/index
+    topicHref: /microsoft-365/Enterprise/index
+  - name: Microsoft 365 for frontline workers
+    tocHref: /microsoft-365/frontline/
+    topicHref: /microsoft-365/frontline/
+  - name: Microsoft 365 solutions
+    tocHref: /microsoft-365/solutions/
+    topicHref: /microsoft-365/solutions/
+  - name: Compliance
+    tocHref: /microsoft-365/compliance/
+    topicHref: /microsoft-365/compliance/
+

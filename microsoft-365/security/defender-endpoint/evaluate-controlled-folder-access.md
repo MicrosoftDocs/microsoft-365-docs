@@ -2,7 +2,7 @@
 title: Evaluate controlled folder access
 description: See how controlled folder access can help protect files from being changed by malicious apps.
 keywords: Exploit protection, windows 10, windows 11, windows defender, ransomware, protect, evaluate, test, demo, try
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,9 +12,9 @@ author: dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
-ms.technology: mde
-ms.collection: m365-security-compliance
-ms.date:
+ms.subservice: mde
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Evaluate controlled folder access

@@ -1,21 +1,24 @@
 ---
 title: Add custodians to an eDiscovery (Premium) case
+description: "Learn how to use the built-in custodian management tool in Microsoft Purview eDiscovery (Premium) to coordinate your workflows and identify relevant data sources in a case."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
 ms.assetid: 
-description: "Learn how to use the built-in custodian management tool in Microsoft Purview eDiscovery (Premium) to coordinate your workflows and identify relevant data sources in a case."
 ms.custom: seo-marvel-apr2020
 ---
 

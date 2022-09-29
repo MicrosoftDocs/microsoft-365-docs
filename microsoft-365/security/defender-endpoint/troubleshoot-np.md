@@ -2,7 +2,7 @@
 title: Troubleshoot problems with Network protection
 description: Resources and sample code to troubleshoot issues with Network protection in Microsoft Defender for Endpoint.
 keywords: troubleshoot, error, fix, windows defender eg, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, Microsoft Defender for Endpoint
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,10 @@ author: dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Troubleshoot network protection

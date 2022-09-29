@@ -5,7 +5,7 @@ manager: dansimp
 description: Turn tamper protection on or off for an individual device.
 keywords: malware, defender, antivirus, tamper protection
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -16,10 +16,11 @@ ms.author: deniseb
 ms.custom: 
 - nextgen
 - admindeeplinkDEFENDER
-ms.technology: mde
+ms.subservice: mde
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
+search.appverid: met150
 ---
 
 # Manage tamper protection on an individual device
@@ -38,7 +39,7 @@ ms.collection:
 > To help ensure that tamper protection doesn't interfere with non-Microsoft security products or enterprise installation scripts that modify these settings, go to **Windows Security** and update **Security intelligence** to version 1.287.60.0 or later. (See [Security intelligence updates](https://www.microsoft.com/wdsi/definitions).)
 > After you've made this update, tamper protection continues to protect your registry settings, and logs attempts to modify them without returning errors.
 
-If you're a home user, or you aren't subject to settings managed by a security team, you can use the Windows Security app to manage 'tamper protection'. You must have appropriate admin permissions on your device to do change security settings, such as tamper protection.
+If you're a home user, or you aren't subject to settings managed by a security team, you can use the Windows Security app to manage tamper protection. You must have appropriate admin permissions on your device to do change security settings, such as tamper protection.
 
 Here's what you see in the Windows Security app:
 

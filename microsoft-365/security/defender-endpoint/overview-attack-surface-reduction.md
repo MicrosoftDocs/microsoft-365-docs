@@ -3,7 +3,7 @@ title: Understand and use attack surface reduction (ASR)
 ms.reviewer: 
 description: Learn about the attack surface reduction capabilities of Microsoft Defender for Endpoint.
 keywords: asr, attack surface reduction, attack surface reduction rules, Microsoft Defender for Endpoint, microsoft defender, antivirus, av, windows defender
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,11 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.custom: asr
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
 ms.collection: 
 - m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
 ms.date: 05/16/2022
+search.appverid: met150
 ---
 
 # Understand and use attack surface reduction capabilities
@@ -104,7 +105,7 @@ You can enable audit mode using Group Policy, PowerShell, and configuration serv
 | Audit options | How to enable audit mode | How to view events |
 |---|---|---|
 | Audit applies to all events | [Enable controlled folder access](enable-controlled-folders.md) | [Controlled folder access events](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer) |
-| Audit applies to individual rules | [Step 1: Test ASR rules using Audit mode](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [Step 2: Understand the Attack surface reduction rules reporting page](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal) |
+| Audit applies to individual rules | [Step 1: Test ASR rules using Audit mode](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [Step 2: Understand the Attack surface reduction rules reporting page](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-asr-rules-reporting-page-in-the-microsoft-365-defender-portal) |
 | Audit applies to all events | [Enable network protection](enable-network-protection.md) | [Network protection events](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer) |
 | Audit applies to individual mitigations | [Enable exploit protection](enable-exploit-protection.md) | [Exploit protection events](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer) |
 

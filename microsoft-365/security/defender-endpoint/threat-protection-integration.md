@@ -3,7 +3,7 @@ title: Integrate Microsoft Defender for Endpoint with other Microsoft solutions
 description: Learn how Microsoft Defender for Endpoint integrates with other Microsoft solutions, including Microsoft Defender for Identity and Microsoft Defender for Cloud.
 author: mjcaparas
 ms.author: macapara
-ms.prod: m365-security
+ms.service: microsoft-365-security
 keywords: microsoft 365 defender, conditional access, office, Microsoft Defender for Endpoint, microsoft defender for identity, microsoft defender for office, Microsoft Defender for Cloud, microsoft cloud app security, azure sentinel
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -11,9 +11,10 @@ ms.pagetype: security
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint and other Microsoft solutions
@@ -33,7 +34,7 @@ Microsoft Defender for Endpoint directly integrates with various Microsoft solut
 
 ### Microsoft Defender for Cloud
 
-Microsoft Defender for Endpoint provides a comprehensive server protection solution, including endpoint detection and response (EDR) capabilities on Windows Servers.
+Microsoft Defender for Cloud provides a comprehensive server protection solution, including endpoint detection and response (EDR) capabilities on Windows Servers.
 
 ### Microsoft Sentinel
 

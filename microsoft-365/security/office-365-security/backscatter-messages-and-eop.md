@@ -14,12 +14,12 @@ search.appverid:
   - MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 ms.custom: 
   - seo-marvel-apr2020
 description: In this article, you'll learn about Backscatter and Microsoft Exchange Online Protection (EOP)
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Backscatter in EOP

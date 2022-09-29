@@ -5,7 +5,7 @@ manager: dansimp
 description: Turn tamper protection on or off for your tenant using the Microsoft 365 Defender portal.
 keywords: malware, defender, antivirus, tamper protection, Microsoft 365 Defender
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -16,10 +16,11 @@ ms.author: deniseb
 ms.custom: 
 - nextgen
 - admindeeplinkDEFENDER
-ms.technology: mde
+ms.subservice: mde
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
+search.appverid: met150
 ---
 
 # Manage tamper protection for your organization using Microsoft 365 Defender portal

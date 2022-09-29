@@ -14,8 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
@@ -36,7 +36,7 @@ For private chat and private channels, communication compliance policies support
 | **Share a channel with an internal team** | Communication compliance policies apply to in-scope users and all messages in the shared channel |
 | **Share a channel with an external team** | Communication compliance policies apply to internal in-scope users and messages in the shared channel for the internal organization |
 
-Modern attachments are files sourced from [OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) or [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) sites that are included in Teams messages. Text is automatically extracted from these attachments for automated processing and potential matches with active communication compliance policy conditions and classifiers. There isn't any additional configuration necessary for Modern attachment detection and processing. Text is only extracted for attachments matching policy conditions. Text isn't extracted for attachments for messages with policy matches, even if the attachment also has a policy match.
+Modern attachments are files sourced from [OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) or [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) sites that are included in Teams messages. Text is automatically extracted from these attachments for automated processing and potential matches with active communication compliance policy conditions and classifiers. There isn't any additional configuration necessary for Modern attachment detection and processing. Text is only extracted for attachments matching policy conditions at the time the message was sent. Text isn't extracted for attachments for messages with policy matches, even if the attachment also has a policy match.
 
 Modern attachment scanning is supported for the following file types:
 

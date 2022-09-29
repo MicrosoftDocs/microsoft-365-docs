@@ -8,7 +8,10 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: m365-security-compliance
+ms.collection: 
+- purview-compliance
+- highpri
+- tier1
 ms.localizationpriority: high
 search.appverid: 
 - MOE150
@@ -45,9 +48,15 @@ After you start your trial, go to your **Assessments** tab in Compliance Manager
 
 For more information about how to use and manage Compliance Manager templates, see [Working with assessment templates](compliance-manager-templates.md).
 
-## Permissions
+## Required roles for starting the trial
 
-Any user in your organization with permissions to access Compliance Manager can sign up for the premium assessments trial. Learn more about the [permissions and roles required for Compliance Manager](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
+Users must hold one of the following admin roles in order to sign up for or end a trial:
+- Billing Administrator
+- Compliance Administrator
+- Global Administrator
+- Compliance Data Administrator
+
+Get more details about [roles for starting Microsoft 365 trials](compliance-easy-trials-roles.md).
 
 ## During your trial
 

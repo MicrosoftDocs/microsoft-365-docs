@@ -1,21 +1,23 @@
 ---
 title: "Set up attorney-client privilege detection in eDiscovery (Premium)"
+description: "Use the attorney-client privilege detection model to use the machine learning-based detection of privileged content when reviewing content in a Microsoft Purview eDiscovery (Premium) case."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: "Use the attorney-client privilege detection model to use the machine learning-based detection of privileged content when reviewing content in a Microsoft Purview eDiscovery (Premium) case."
 ---
 
 # Set up attorney-client privilege detection in eDiscovery (Premium)

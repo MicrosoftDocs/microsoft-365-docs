@@ -28,8 +28,7 @@ Follow the [instructions for installing and configuring the Moodle plugin](moodl
 
 ## Register Microsoft Teams LTI for use in Moodle
 
-> [!IMPORTANT]
-> The person who performs this integration should be a Moodle administrator and a Microsoft 365 tenant administrator.
+The person who performs this integration should be a Moodle administrator and a Microsoft 365 tenant administrator.
 
 1. Visit [Microsoft LMS Gateway](https://lti.microsoft.com/) and select the **Go to registration portal** button.
 
@@ -64,18 +63,21 @@ Follow the [instructions for installing and configuring the Moodle plugin](moodl
 
 15. Copy and paste the values from Moodle's **Tool configuration details** to Microsoft's **LMS provided registration keys** step.
 
-  Paste the values as follows:
+    Paste the values as follows:
 
-  | On Moodle | On Microsoft LTI registration portal |
-  | --------- | ------------------------------------ |
-  | Platform ID | Issuer ID URL |
-  | Client ID | Client ID |
-  | Deployment ID | Deployment ID |
-  | Public keyset URL | Keyset URL |
-  | Access token URL | Access token URL |
-  | Authentication request URL | Platform authentication URL |
+    | On Moodle | On Microsoft LTI registration portal |
+    | --------- | ------------------------------------ |
+    | Platform ID | Issuer ID URL |
+    | Client ID | Client ID |
+    | Deployment ID | Deployment ID |
+    | Public keyset URL | Keyset URL |
+    | Access token URL | Access token URL |
+    | Authentication request URL | Platform authentication URL |
 
-  Select **Next**.
+    >[!NOTE]
+    > Make sure that the public keyset URL isn't restricted by your network settings for requests originating from the Microsoft LMS Gateway.
+
+    Select **Next**.
 
 16. Review the **Review and add** page. If there are no errors, select **Save and exit**. You should see a message indicating successful registration.
 

@@ -2,7 +2,7 @@
 title: Supported managed security service providers
 description: See the list of MSSPs that Microsoft Defender for Endpoint integrates with
 keywords: managed security service provider, mssp, configure, integration
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Supported managed security service providers
@@ -41,7 +42,7 @@ Logo |Partner name   | Description
 ![Image of CyberProof logo.](images/cyberproof-logo.png) |[CyberProof Managed Detection & Response (MDR)](https://go.microsoft.com/fwlink/?linkid=2163964) | 24x7 managed threat detection and response services fully integrated with Microsoft Sentinel and Defender for Endpoint.
 ![Image of Dell Technologies Advanced Threat Protection logo.](images/dell-logo.png)| [Dell Technologies Advanced Threat Protection](https://go.microsoft.com/fwlink/?linkid=2091004) | Professional monitoring service for malicious behavior and anomalies with 24/7 capability
 :::image type="content" source="images/dxc-logo.png" alt-text="Image of DXC-Managed Endpoint Threat Detection and Response logo.":::.| [DXC-Managed Endpoint Threat Detection and Response](https://go.microsoft.com/fwlink/?linkid=2090395) | Identify endpoint threats that evade traditional security defenses and contain them in hours or minutes, not days.
-![Image of eSentire log.](images/esentire-logo.png) | [eSentire Managed Detection and Response](https://go.microsoft.com/fwlink/?linkid=2154970) | 24x7 threat investigations and response via Microsoft Defender for Endpoint.
+![Image of eSentire log.](images/esentire-logo.png) | [eSentire Managed Detection and Response](https://go.microsoft.com/fwlink/?linkid=2154970) | 24/7 threat hunting, investigation, and complete response with certified MDR expertise across the Microsoft Ecosystem, including Microsoft 365 Defender & Sentinel-plus 15-minute mean time to contain.
 ![Image of expel logo.](images/expel-logo.png)| [Expel Managed detection and response for Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2162430) | Expel helps your security keep up by detecting security risks in Microsoft Defender for Endpoint.
 ![Image of Mandiant logo.](images/mandiant-logo.png) | [Mandiant Managed Defense (MDR) for Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2164352) | Fortify your Defender for Endpoint with 24/7 frontline MDR intelligence and expertise from Mandiant.
 ![Image of NTT Security logo.](images/ntt-logo.png)| [NTT Security](https://go.microsoft.com/fwlink/?linkid=2095320) | NTT's EDR Service provides 24/7 security monitoring & response across your endpoint and network

@@ -2,7 +2,7 @@
 title: Troubleshoot kernel extension issues in Microsoft Defender for Endpoint on macOS
 description: Troubleshoot kernel extension-related issues in Microsoft Defender for Endpoint on macOS.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, extension
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
+  - m365-security
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Troubleshoot kernel extension issues in Microsoft Defender for Endpoint on macOS
@@ -46,8 +47,8 @@ mdatp health
 ```
 ```Output
 ...
-real_time_protection_enabled                : false
-real_time_protection_available              : true
+real_time_protection_enabled                : true
+real_time_protection_available              : false
 ...
 ```
 

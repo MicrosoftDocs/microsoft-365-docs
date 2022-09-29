@@ -2,21 +2,24 @@
 title: Microsoft Defender Antivirus export device antivirus health details API methods and properties
 description: "Learn how to export a list of Microsoft Defender Antivirus device health details." 
 keywords: apis, graph api, supported apis, get, device health api, Microsoft Defender for Endpoint report api microsoft defender reports api, microsoft defender for endpoint reporting api, windows defender reporting api, defender for endpoint reporting api, windows defender report api 
-ms.prod: m365-security 
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy 
 ms.sitesec: library 
 ms.pagetype: security 
 ms.author: v-jweston 
 author: jweston-1
 ms.localizationpriority: medium 
-ms.date: 08/08/2022
+ms.date: 09/01/2022
 manager: dansimp 
 audience: ITPro 
-ms.collection: M365-security-compliance 
+ms.collection:
+ - m365-security
+ - EngageScoreSep2022
 ms.topic: article 
-MS.technology: mde 
+ms.subservice: mde 
 ms.custom: api 
---- 
+search.appverid: met150
+---
 
 # Export device antivirus health details API methods and properties
 
@@ -47,11 +50,17 @@ Data that is collected using either '_JSON response_ or _via files_' is the curr
 
 > [!IMPORTANT]
 >
+> Currently, only the **Antivirus Health JSON Response** is generally available. **Antivirus Health API via files** is currently only available in public preview.
+>
+> **Advanced Hunting custom query** is currently only available in public preview, even if the queries are still visible.
+
+> [!IMPORTANT]
+>
 > For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in device health reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
 > [!NOTE]
 >
-> For information about using the **Device health and antivirus compliance** reporting tool in the Microsoft 365 Security dashboard, see: [Device health and antivirus compliance report in Microsoft Defender for Endpoint](machine-reports.md).
+> For information about using the **Device health and antivirus compliance** reporting tool in the Microsoft 365 Security dashboard, see: [Device health and antivirus report in Microsoft Defender for Endpoint](device-health-reports.md).
 >
 
 ### 1.1 Export device antivirus health details API methods
@@ -66,14 +75,14 @@ Method|Data type|Description
 > [!NOTE]
 >
 > - The properties defined in the following table are listed alphabetically, by property ID. When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
-> - Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
+> - Some additional columns might be returned in the response. These columns are temporary and might be removed; please use only the documented columns.
 
 | Property (ID) | Data type | Description | Example of a returned value |
 |:----|:----|:----|:----|
 | avEngineUpdateTime | DateTimeOffset | Datetime when AV engine was last updated on device | “2022-08-04T12:44:02Z“ |
 | avEngineVersion | String | Antivirus engine version | “1.1.19400.3” |
 | avIsEngineUpToDate | String | Up-to-date status of AV engine | “True”, “False”, “Unknown” |
-| avIsPlatformUpToDate | String | Up-to-date stauts of AV platform | “True”, “False”, “Unknown” |
+| avIsPlatformUpToDate | String | Up-to-date status of AV platform | “True”, “False”, “Unknown” |
 | avIsSignatureUpToDate | String | Up-to-date status of AV signature | “True”, “False”, “Unknown” |
 | avMode | String | Antivirus mode. | Each mode will be a string typed integer value ranging from 0 to 5. Refer to the mapping below to see its value’s meaning: <ul><li>'' = Other</li><li> '0' = Active</li><li> '1' = Passive</li><li> '2' = Disabled</li><li> '3' = Other</li><li> '4' = EDRBlocked</li><li>'5' = PassiveAudit</li></ul> |
 | avPlatformUpdateTime | DateTimeOffset | Datetime when AV platform was last updated on device | “2022-08-04T12:44:02Z” |
@@ -84,7 +93,7 @@ Method|Data type|Description
 | computerDnsName | String | DNS name | “SampleDns” |
 | dataRefreshTimestamp | DateTimeOffset | Datetime when data is refreshed for this report | “2022-08-04T12:44:02Z“ |
 | fullScanError | String | Error codes from full scan | “0x80508023“ |
-| fullScanResult | String | Full scan result of this device | “Completed“ <br> “Cancelled “ <br>“Failed“ |
+| fullScanResult | String | Full scan result of this device | “Completed“ <br> “Canceled“ <br>“Failed“ |
 | fullScanTime | DateTimeOffset | Datetime when full scan has completed | “2022-08-04T12:44:02Z“ |
 | id | String | Machine GUID | “30a8fa2826abf24d24379b23f8a44d471f00feab” |
 | lastSeenTime | DateTimeOffset | Last seen datetime of this machine | “2022-08-04T12:44:02Z” |
@@ -93,12 +102,15 @@ Method|Data type|Description
 | osPlatform | String | Operating system major version name | Windows 10, macOs |
 | osVersion | String | Operating system version | 10.0.18363.1440, 12.4.0.0 |
 | quickScanError | String | Error codes from quick scan | “0x80508023“ |
-| quickScanResult | String | Quick scan result of this device | “Completed“ <br>“Cancelled “ <br>“Failed“ |
+| quickScanResult | String | Quick scan result of this device | “Completed“ <br>“Canceled“ <br>“Failed“ |
 | quickScanTime | DateTimeOffset | Datetime when quick scan has completed 	| “2022-08-04T12:44:02Z“ |
 | rbacGroupId | Long | Device group ID that this machine belongs to | 712 |
 | rbacGroupName | String | Name of device group that this machine belongs to | “SampleGroup” |
 
 ### 1.3 Export device antivirus health details API properties (via files)
+
+> [!IMPORTANT]
+> Information in this section relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 > [!NOTE]
 >
@@ -120,4 +132,4 @@ Method|Data type|Description
 
 [Export device antivirus health report](device-health-export-antivirus-health-report-api.md)
 
-[Device health and compliance reporting](machine-reports.md)
+[Device health and compliance reporting](device-health-reports.md)

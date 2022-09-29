@@ -12,8 +12,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
+- tier2
 description: "Learn about archive mailboxes to provide extra mailbox storage."
 ---
 
@@ -44,4 +44,4 @@ After a user's archive mailbox is enabled, up to 100 GB of additional storage is
 
 ## Next steps
 
-See [Enable archive mailboxes in the Microsoft Purview compliance portal](enable-archive-mailboxes.md).
+See [Enable archive mailboxes in Microsoft 365](enable-archive-mailboxes.md).

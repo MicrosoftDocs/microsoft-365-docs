@@ -4,7 +4,7 @@ ms.reviewer:
 description: Use these code samples, querying several Microsoft Defender for Endpoint APIs.
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,11 +13,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
 ms.date: 04/27/2022
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint APIs using PowerShell

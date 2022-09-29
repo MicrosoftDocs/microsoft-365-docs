@@ -8,8 +8,8 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: 07/07/2022
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: 
 f1.keywords: NOCSH
@@ -79,6 +79,9 @@ Defender for Endpoint supports two ways to manage permissions:
 
 - Basic permissions management: Set permissions to either full access or read-only. Users with Global Administrator or Security Administrator roles in Azure Active Directory have full access. The Security reader role has read-only access and doesn't grant access to view machines/device inventory.
 - Role-based access control (RBAC): Set granular permissions by defining roles, assigning Azure AD user groups to the roles, and granting the user groups access to device groups. For more information, see [Manage portal access using role-based access control](rbac.md).
+
+    > [!NOTE]
+    > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## Step 3: Visit the Microsoft 365 Defender portal
 

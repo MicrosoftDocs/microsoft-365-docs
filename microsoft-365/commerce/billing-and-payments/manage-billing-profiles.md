@@ -28,8 +28,7 @@ A billing profile contains a payment method, Bill-to information, and other invo
 
 > [!NOTE]
 >
-> Not all accounts have a billing profile. If you're not sure if you have a one, you can [view a list of your billing profiles]
-(manage-billing-profiles.md#view-my-billing-profiles).
+> Not all accounts have a billing profile. If you're not sure if you have a one, you can [view a list of your billing profiles](manage-billing-profiles.md#view-my-billing-profiles).
 
 ## What are billing profile roles?
 

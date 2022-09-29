@@ -2,7 +2,7 @@
 title: Review remediation actions following automated investigations
 description: Review and approve (or reject) remediation actions following an automated investigation.
 keywords: autoir, automated, investigation, detection, remediation, action, pending, approved
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,11 +13,12 @@ ms.date: 07/20/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Review remediation actions following an automated investigation
@@ -37,6 +38,9 @@ Depending on
 - how your organization's [device groups](/microsoft-365/security/defender-endpoint/machine-groups) are configured,
 
 remediation actions can occur automatically or only upon approval by your organization's security operations team.
+
+> [!NOTE]
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 Here are a few examples:
 

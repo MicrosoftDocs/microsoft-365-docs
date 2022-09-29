@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 description: "After you set up Customer Key, learn how to manage it by restoring AKV keys, and managing permissions and creating and assigning data encryption policies."
 ---
 
@@ -36,9 +36,9 @@ To create a multi-workload DEP, follow these steps:
 
    - *PolicyName* is the name you want to use for the policy. Names can't contain spaces. For example, Contoso_Global.
 
-   - *KeyVaultURI1* is the URI for the first key in the policy. For example, <https://contosoWestUSvault1.vault.azure.net/keys/Key_01>.
+   - *KeyVaultURI1* is the URI for the first key in the policy. For example, `https://contosoWestUSvault1.vault.azure.net/keys/Key_01`.
 
-   - *KeyVaultURI2* is the URI for the second key in the policy. For example, <https://contosoCentralUSvault1.vault.azure.net/keys/Key_02>. Separate the two URIs by a comma and a space.
+   - *KeyVaultURI2* is the URI for the second key in the policy. For example, `https://contosoCentralUSvault1.vault.azure.net/keys/Key_02`. Separate the two URIs by a comma and a space.
 
    - *Policy Description* is a user-friendly description of the policy that will help you remember what the policy is for. You can include spaces in the description. For example, "Root policy for multiple workloads for all users in the tenant.".
 
@@ -88,9 +88,9 @@ To create a DEP to use with a mailbox, follow these steps:
 
    - *Policy Description* is a user-friendly description of the policy that will help you remember what the policy is for. You can include spaces in the description. For example, "Root key for mailboxes in USA and its territories".
 
-   - *KeyVaultURI1* is the URI for the first key in the policy. For example, <https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01>.
+   - *KeyVaultURI1* is the URI for the first key in the policy. For example, `https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01`.
 
-   - *KeyVaultURI2* is the URI for the second key in the policy. For example, <https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02>. Separate the two URIs by a comma and a space.
+   - *KeyVaultURI2* is the URI for the second key in the policy. For example, `https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02`. Separate the two URIs by a comma and a space.
 
    Example:
 

@@ -2,7 +2,7 @@
 title: Export software vulnerabilities assessment per device
 description: The API response is per device and contains vulnerable software installed on your exposed devices and any known vulnerabilities in these software products. This table also includes operating system information, CVE IDs, and vulnerability severity information.
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,11 @@ author: jweston-1
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Export software vulnerabilities assessment per device
@@ -113,7 +114,7 @@ SecurityUpdateAvailable|Boolean|Indicates whether a security update is available
 SoftwareName|String|Name of the software product.|Chrome
 SoftwareVendor|String|Name of the software vendor.|Google
 SoftwareVersion|String|Version number of the software product.|81.0.4044.138
-VulnerabilitySeverityLevel|String|Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.|Medium
+VulnerabilitySeverityLevel|String|Severity level assigned to the security vulnerability based on the CVSS score.|Medium
 |
 
 ### 1.6 Examples
@@ -404,7 +405,7 @@ SoftwareName|String|Name of the software product.|Chrome
 SoftwareVendor|String|Name of the software vendor.|Google  
 SoftwareVersion|String|Version number of the software product.|81.0.4044.138  
 Status|String|**New** (for a new vulnerability introduced on a device)  (1) **Fixed** (if this vulnerability doesn't exist anymore on the device, which means it was remediated). (2) **Updated** (if a vulnerability on a device has changed. The possible changes are: CVSS score, exploitability level, severity level, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). |Fixed
-VulnerabilitySeverityLevel|String|Severity level that is assigned to the security vulnerability. It's based on the CVSS score and dynamic factors influenced by the threat landscape.|Medium
+VulnerabilitySeverityLevel|String|Severity level that is assigned to the security vulnerability. It's based on the CVSS score.|Medium
 |
 
 #### Clarifications

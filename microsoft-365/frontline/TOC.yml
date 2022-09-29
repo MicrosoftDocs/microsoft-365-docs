@@ -5,6 +5,8 @@
     href: flw-overview.md
   - name: Choose your scenarios
     href: flw-choose-scenarios.md
+  - name: Scenario posters
+    href: flw-scenario-posters.md
   - name: Try Microsoft 365 for frontline workers
     href: flw-trial.md
   - name: Set up and configure
@@ -21,7 +23,7 @@
       items: 
       - name: Set up Microsoft 365 and related services
         href: flw-setup-microsoft-365.md
-      - name: Deploy teams at scale
+      - name: Deploy Teams at scale
         href: deploy-teams-at-scale.md
       - name: Onboard your users with the onboarding wizard
         href: flw-onboarding-wizard.md
@@ -55,6 +57,8 @@
       href: flw-team-collaboration.md
     - name: Corporate communications with frontline workers
       href: flw-corp-comms.md
+    - name: Help your employees use collaboration apps and features
+      href: collab-features-apps-toolkit.md
   - name: Wellbeing & engagement
     items: 
     - name: Engage your employees and focus on wellbeing
@@ -71,6 +75,8 @@
       href: schedule-owner-for-shift-management.md
     - name: Manage shift-based access in Teams
       href: manage-shift-based-access-flw.md
+    - name: Help your employees track time and attendance
+      href: shifts-toolkit.md
     - name: Shifts connectors
       items: 
       - name: Overview

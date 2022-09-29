@@ -12,8 +12,10 @@ f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: 
-- M365-security-compliance
+ms.collection:
+- tier1
+- highpri 
+- purview-compliance
 - SPO_Content
 search.appverid: 
 - MET150
@@ -251,7 +253,7 @@ You can continue to add new services, apps, and policies to extend and augment y
 
 This configuration will help ensure your data remains safe while also avoiding unnecessary restrictions that prevent or restrict users from accessing and sharing non-sensitive items.
 
-## Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)
+## Scenario 6 Monitor or restrict user activities on sensitive service domains
 
 Use this scenario when you want to audit, block with override, or block these user activities on a website.
 
@@ -290,7 +292,7 @@ Here are some examples:
 1. Select **Add a new group of sensitive service domains**.
 1. Name the group.
 1. Select the **Match type** you want. You can select from **URL**, **IP address**, **IP address range**.
-1. Type in the appropriate value in the **Add new service domains to this group**. You can add multiple websites to a group and use wildcards to cover subdomains.  For example, www.contoso.com for just the top level website or *.contoso.com for corp.contoso.com, hr.contoso.com, fin.contoso.com
+1. Type in the appropriate value in the **Add new service domains to this group**. You can add multiple websites to a group and use wildcards to cover subdomains.  For example, `www.contoso.com` for just the top level website or \*.contoso.com for corp.contoso.com, hr.contoso.com, fin.contoso.com
 1. Select **Save**.
 1. Select **Policies**.
 1. Create and scope a policy that is applied only to **Devices**. See, [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) for more information on how to create a policy.

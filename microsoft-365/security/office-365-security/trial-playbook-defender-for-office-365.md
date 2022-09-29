@@ -7,15 +7,15 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.collection: m365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
-ms.prod: m365-security
+ms.service: microsoft-365-security
 search.appverid:
 - MOE150
 - MET150
 description: "Microsoft Defender for Office 365 solutions trial playbook."
-ms.technology: mdo
+ms.subservice: mdo
 ms.custom: trial-playbook
 ---
 
@@ -51,7 +51,7 @@ Let's get started!
 
 #### Start your Microsoft Defender for Office 365 trial
 
-After you've initiated the trial and completed the [setup process](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-in-blocking-mode), it may take up to 2 hours for changes to take effect.
+After you've initiated the trial and completed the [setup process](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-or-trial-in-blocking-mode), it may take up to 2 hours for changes to take effect.
 
 We've automatically configured [Preset security policies](preset-security-policies.md) in your environment. These policies represent a baseline protection profile that's suitable for most users. Standard protection includes:
 
@@ -142,7 +142,7 @@ Respond efficiently using Automated investigation and response (AIR) to review, 
 
 Use Advanced hunting to write custom detection rules, proactively inspect events in your environment, and locate threat indicators. Explore raw data in your environment.
 
-- [Build custom detection rules](../defender/advanced-hunting-overview.md#get-started-with-advanced-hunting).
+- [Build custom detection rules](../defender/custom-detections-overview.md).
 - [Access shared queries](../defender/advanced-hunting-shared-queries.md) created by others.
 
 Watch this video to learn more: [Threat hunting with Microsoft 365 Defender - YouTube](https://www.youtube.com/watch?v=l3OmH4U6XAs&list=PL3ZTgFEc7Lyt1O81TZol31YXve4e6lyQu&index=4).
@@ -163,7 +163,7 @@ Equip your users with the right knowledge to identify threats and report suspici
 
 #### Start your Defender for Office 365 evaluation
 
-After you've completed the [setup process](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-in-audit-mode), it may take up to 2 hours for changes to take effect. We've automatically configured Preset Evaluation policies in your environment.
+After you've completed the [setup process](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-or-trial-in-audit-mode), it may take up to 2 hours for changes to take effect. We've automatically configured Preset Evaluation policies in your environment.
 
 Evaluation policies ensure no action is taken on email that's detected by Defender for Office 365.
 
@@ -181,7 +181,7 @@ Watch this video to learn more: [Learn how to use the Submissions portal to subm
 
 Use the reporting capabilities in Defender for Office 365 to get more details about your environment.
 
-- The [Evaluation dashboard](try-microsoft-defender-for-office-365.md#reporting-in-audit-mode) provides an easy view of the threats detected by Defender for Office 365 during evaluation.
+- The [Evaluation dashboard](try-microsoft-defender-for-office-365.md#reports-for-audit-mode) provides an easy view of the threats detected by Defender for Office 365 during evaluation.
 - Understand threats received in email and collaboration tools with the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
 
 ### Step 2: Intermediate steps in auditing mode
@@ -230,6 +230,6 @@ Equip your users with the right knowledge to identify threats and report suspici
 
 - **Interactive guide**: Unfamiliar with Defender for Office 365? Review the [interactive guide](https://mslearn.cloudguides.com/guides/Safeguard%20your%20organization%20with%20Microsoft%20Defender%20for%20Office%20365) to understand how to get started.
 - **Fast Track Get Started Guide***: [Microsoft Defender for Office 365](https://go.microsoft.com/fwlink/p/?linkid=2197415)
-- **Microsoft docs**: Get detailed information on how Defender for Office 365 works and how to best implement it for your organization. Visit [Docs](overview.md).
+- **Microsoft Defender for Office 365 documentation**: Get detailed information on how Defender for Office 365 works and how to best implement it for your organization. Visit the [Microsoft Defender for Office 365 documentation](defender-for-office-365.md).
 - **What's included**: For a full list of Office 365 email security features listed by product tier, view the [Feature Matrix](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability).
 - **Why Defender for Office 365**: The [Defender for Office 365 Datasheet](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FCiy) shows the top 10 reasons customers choose Microsoft.

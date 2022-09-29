@@ -12,9 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- highpri 
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
 ---
 
 # Learn about insider risk management
@@ -164,7 +167,7 @@ In most cases, users try their best to properly handle sensitive or confidential
 - [Data leaks by priority users (preview)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [Data leaks by disgruntled users (preview)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 
-## Intentional or unintentional security policy violations (preview)
+### Intentional or unintentional security policy violations (preview)
 
 Users typically have a large degree of control when managing their devices in the modern workplace. This control may include permissions to install or uninstall applications needed in the performance of their duties or the ability to temporarily disable device security features. Whether this activity is inadvertent, accidental, or malicious, this conduct can pose risk to your organization and is important to identify and act to minimize. To help identify these risky security activities, the following insider risk management security policy violation templates scores security risk indicators and uses Microsoft Defender for Endpoint alerts to provide insights for security-related activities:
 
@@ -173,25 +176,31 @@ Users typically have a large degree of control when managing their devices in th
 - [Security policy violations by priority users (preview)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Security policy violations by disgruntled users (preview)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
-## Policies for users based on position, access level, or risk history (preview)
+### Policies for users based on position, access level, or risk history (preview)
 
 Users in your organization may have different levels of risk depending on their position, level of access to sensitive information, or risk history. This structure may include members of your organization's executive leadership team, IT administrators that have extensive data and network access privileges, or users with a past history of risky activities. In these circumstances, closer inspection and more aggressive risk scoring are important to help surface alerts for investigation and quick action. To help identify risky activities for these types of users, you can create priority user groups and create policies from the following policy templates:
 
 - [Security policy violations by priority users (preview)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Data leaks by priority users (preview)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 
-## Healthcare (preview)
+### Healthcare (preview)
 
 For organizations in the healthcare industry, recent studies have found a very high rate of insider-related data breaches. Detecting misuse of patient data and health record information is a critical component of safeguarding patient privacy and complying with compliance regulation such as the Health Insurance Portability and Accountability Act (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act. Patient data misuse can range from accessing privileged patient records to accessing records of patients from family or neighbors with malicious intent. To help identity these types of risky activities, the following insider risk management policy templates use the Microsoft 365 HR connector and a healthcare-specific data connector to start scoring risk indicators relating to behaviors that may occur within your electronic heath record (EHR) systems:
 
 - [General patient data misuse (preview)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
 
-## Actions and behaviors by disgruntled users (preview)
+### Actions and behaviors by disgruntled users (preview)
 
 Employment stresses events can impact user behavior in several ways that relate to insider risks. These stressors may be a poor performance review, a position demotion, or the user being placement on a performance review plan. Though most users don't respond maliciously to these events, the stress of these actions may result in some users to behave in ways they may not normally consider during normal circumstances. To help identify these types of risky activities, the following insider risk management policy templates use the Microsoft 365 HR connector and starts scoring risk indicators relating to behaviors that may occur near employment stressor events:
 
 - [Data leaks by disgruntled users (preview)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Security policy violations by disgruntled users (preview)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+
+### Risky browser usage that could result in a security incident (preview)
+
+Most organizations provide users with rules and guidelines that clarify how an organization's devices and internet access should be used. These policies help protect both the organization and users from security and regulatory risks. To help identity these types of risky actions, the following insider risk management policy template can help detect and enable risk scoring for web browsing behaviors that might result in a data security incident, such as visiting sites that provide malware or hacking tools.
+
+- [General risky browser usage (preview)](insider-risk-management-policies.md#general-risky-browser-usage-preview)
 
 ## Ready to get started?
 

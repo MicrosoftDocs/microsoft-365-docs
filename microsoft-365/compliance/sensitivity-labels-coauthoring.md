@@ -10,7 +10,8 @@ ms.service: O365-seccomp
 ms.date: 
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 ms.topic: article
 description: "Turn on a setting that enables co-authoring and AutoSave in desktop apps for labeled and encrypted documents in SharePoint and OneDrive."
 ---
@@ -71,8 +72,8 @@ Make sure you understand the following prerequisites before you turn on this fea
 - Microsoft 365 Apps for enterprise:
     - **Windows**: Minimum version 2107 from Current Channel or Monthly Enterprise Channel, or minimum version 2202 from Semi-Annual Enterprise Channel
     - **macOS**: Minimum version 16.51
-    - **iOS**: In preview when you [opt in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 2.58
-    - **Android**: In preview when you [opt in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 16.0.14931
+    - **iOS**: Minimum version 2.58
+    - **Android**: Minimum version 16.0.14931
 
 - All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels). If you use any of the following, check the minimum versions required:
     
@@ -98,12 +99,6 @@ Microsoft 365 services automatically support the new labeling metadata when you 
 - [DLP policies that use sensitivity labels as conditions](dlp-sensitivity-label-as-condition.md)
 - [Microsoft Defender for Cloud Apps configured to apply sensitivity labels](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 
-### Opt in to the preview of co-authoring for iOS and Android
-
-To try the preview of co-authoring for iOS and Android, you must have the minimum versions stated in the previous section, and also request your tenant is added to the preview: [Consent to Enable co-authoring for files encrypted with sensitivity labels on mobile](https://ncv.microsoft.com/5Oob3oDj1O)
-
-For more information, see the following blog post announcement: [Co-authoring on Microsoft Information Protection encrypted documents is now in public preview on mobile devices](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/co-authoring-on-microsoft-information-protection-encrypted/ba-p/3081369)
-
 ## Limitations
 
 Before you enable the tenant setting for co-authoring for files encrypted with sensitivity labels, make sure you understand the following limitations of this feature.
@@ -111,8 +106,6 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 - Because of the [labeling metadata changes](#metadata-changes-for-sensitivity-labels), all apps, services, and operational tools in your tenant must support the new labeling metadata for a consistent and reliable labeling experience.
     
     Specific to Excel: Metadata for a sensitivity label that doesn't apply encryption can be deleted from a file if somebody edits and saves that file by using a version of Excel that doesn't support the metadata changes for sensitivity labels.
-
-- Supporting Office apps for iOS and Android are currently in [preview](https://office.com/insider).
 
 - Co-authoring and AutoSave aren't supported and don't work for labeled and encrypted Office documents that use any of the following [configurations for encryption](encryption-sensitivity-labels.md#configure-encryption-settings):
     - **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This configuration is sometimes referred to as "user-defined permissions".
@@ -129,8 +122,6 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 
 > [!CAUTION]
 > Turning on this setting is a one-way action. Enable it only after you have read and understood the metadata changes, prerequisites, limitations, and any known issues documented on this page.
-
-If you've already turned on this setting during the preview period, no further action is needed and you can skip this procedure.
 
 1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com) as a global admin for your tenant.
 

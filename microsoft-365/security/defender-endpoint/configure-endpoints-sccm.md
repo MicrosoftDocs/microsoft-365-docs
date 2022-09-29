@@ -2,7 +2,7 @@
 title: Onboard Windows devices using Configuration Manager
 description: Use Configuration Manager to deploy the configuration package on devices so that they are onboarded to the Defender for Endpoint service.
 keywords: onboard devices using sccm, device management, configure Microsoft Defender for Endpoint devices
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,11 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Onboard Windows devices using Configuration Manager
@@ -113,7 +114,7 @@ Configure all available rules to Audit.
 > [!NOTE]
 > Blocking these activities may interrupt legitimate business processes. The best approach is setting everything to audit, identifying which ones are safe to turn on, and then enabling those settings on endpoints which do not have false positive detections.
 
-For deploying AV and ASR policies through Microsoft System Center Configuration Manager (SCCM) follow the steps:
+For deploying Antivirus (AV) and Attack Surface Reduction (ASR) policies through Microsoft Endpoint Configuration Manager (SCCM) follow the steps:
 
 - Enable Endpoint Protection and configure custom client settings.
 - Install the Endpoint Protection client from a command prompt.

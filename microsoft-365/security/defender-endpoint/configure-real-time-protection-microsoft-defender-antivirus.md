@@ -2,8 +2,8 @@
 title: Enable and configure Microsoft Defender Antivirus protection capabilities
 description: Enable and configure Microsoft Defender Antivirus real-time protection features such as behavior monitoring, heuristics, and machine learning
 keywords: antivirus, real-time protection, rtp, machine learning, behavior monitoring, heuristics
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,8 @@ ms.topic: article
 ms.date: 10/22/2021
 manager: dansimp
 ms.custom: nextgen
-ms.collection: M365-security-compliance
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy

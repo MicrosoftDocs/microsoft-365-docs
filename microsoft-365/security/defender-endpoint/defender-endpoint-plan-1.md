@@ -7,13 +7,13 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdep1
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
 ms.custom: intro-overview
 ---

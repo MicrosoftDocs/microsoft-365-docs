@@ -3,7 +3,7 @@ title: Microsoft Defender for Endpoint for non-Windows platforms
 description: Learn about Microsoft Defender for Endpoint capabilities  for non-Windows platforms
 keywords: non windows, mac, macos, linux, android
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,10 +13,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-evalutatemtp
+  - highpri
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint for non-Windows platforms

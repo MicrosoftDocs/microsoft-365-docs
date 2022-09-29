@@ -9,7 +9,8 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- tier2
+- purview-compliance
 ms.localizationpriority: null
 f1.keywords:
 - NOCSH

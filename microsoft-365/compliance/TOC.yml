@@ -98,8 +98,6 @@
          href: archive-eml-data.md
        - name: FX Connect
          href: archive-fxconnect-data.md
-       - name: Jive
-         href: archive-jive-data.md
        - name: MS SQL Database
          href: archive-mssqldatabaseimporter-data.md
        - name: Pivot
@@ -1008,6 +1006,8 @@
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
             href: sit-custom-sit-filters.md
+          - name: Sensitive information type limits
+            href: sit-limits.md
     - name: Trainable classifiers
       items: 
         - name: Learn about trainable classifiers
@@ -1016,6 +1016,8 @@
           href: classifier-get-started-with.md
         - name: How to retrain a classifier in content explorer
           href: classifier-how-to-retrain-content-explorer.md
+        - name: Trainable classifier definitions
+          href: classifier-tc-definitions.md
     - name: Data classification
       items: 
         - name: Learn about data classification
@@ -1026,6 +1028,8 @@
           href: data-classification-activity-explorer.md
         - name: Labeling actions reported in Activity explorer
           href: data-classification-activity-explorer-available-events.md
+        - name: Increase classifier accuracy
+          href: data-classification-increase-accuracy.md
     - name: Sensitivity labels
       items:
         - name: Learn about sensitivity labels
@@ -1229,7 +1233,7 @@
           items: 
             - name: SharePoint and OneDrive
               href: retention-policies-sharepoint.md
-            - name: Microsoft Teams
+            - name: Teams
               href: retention-policies-teams.md
             - name: Yammer
               href: retention-policies-yammer.md
@@ -1307,6 +1311,8 @@
           href: file-plan-manager.md
         - name: Start retention when an event occurs
           href: event-driven-retention.md
+        - name: Customization for the end of the retention period
+          href: retention-label-flow.md
         - name: Publish & apply retention labels in apps
           href: create-apply-retention-labels.md
         - name: Automatically apply retention labels to content

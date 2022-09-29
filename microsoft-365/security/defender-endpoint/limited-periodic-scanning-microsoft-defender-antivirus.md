@@ -2,7 +2,7 @@
 title: Enable the limited periodic Microsoft Defender Antivirus scanning feature
 description: Limited periodic scanning lets you use Microsoft Defender Antivirus in addition to your other installed AV providers
 keywords: lps, limited, periodic, scan, scanning, compatibility, 3rd party, other av, disable
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,8 +13,9 @@ ms.custom: nextgen
 ms.date: 10/18/2018
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
-ms.collection: m365-security-compliance
+ms.subservice: mde
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 

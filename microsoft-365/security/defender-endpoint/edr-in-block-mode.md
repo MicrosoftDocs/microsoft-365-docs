@@ -9,15 +9,16 @@ manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.custom:
   - next-gen
   - edr
   - admindeeplinkDEFENDER
 ms.date: 08/19/2022
-ms.collection: m365-security-compliance
-ms.technology: mde
+ms.collection: m365-security
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Endpoint detection and response (EDR) in block mode
@@ -69,6 +70,9 @@ When EDR in block mode is turned on, and a malicious artifact is detected, Defen
 
 > [!TIP]
 > Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning on EDR in block mode.
+
+> [!NOTE]
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ### Security Portal
 
