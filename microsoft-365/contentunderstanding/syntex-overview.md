@@ -58,10 +58,12 @@ Rather than clicking and sorting through hundreds, or even thousands of files, S
    :::column-end:::
    :::column span="3":::
       Understanding your content with SharePoint Syntex begins with models. Models let you identify and classify documents that are uploaded to your SharePoint document libraries, and then to extract the information you need from each file.
+
+      In SharePoint Syntex, you can build [custom models](model-types-overview.md) or you can use [prebuilt models](prebuilt-overview.md). 
    :::column-end:::
 :::row-end:::
 
-In SharePoint Syntex, you can build [custom models](model-types-overview.md) or you can use [prebuilt models](prebuilt-overview.md). The type of model you choose will depend on the types of files you use, the format and structure of the files, the information you want to extract, and where you want to apply the model.
+The type of model you choose will depend on the types of files you use, the format and structure of the files, the information you want to extract, and where you want to apply the model.
 
 ### Custom models
 
