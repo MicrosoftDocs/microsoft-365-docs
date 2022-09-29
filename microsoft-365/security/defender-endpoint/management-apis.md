@@ -12,10 +12,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Overview of management and APIs

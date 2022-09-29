@@ -13,8 +13,8 @@ ms.author: deniseb
 ms.reviewer: mkaminska
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
-ms.date:
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Turn on network protection

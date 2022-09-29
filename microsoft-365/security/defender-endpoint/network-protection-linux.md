@@ -17,8 +17,9 @@ ms.subservice: mde
 ms.topic: overview
 ms.collection: 
 - m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
 ms.date:
+search.appverid: met150
 ---
 
 # Network protection for Linux
@@ -44,7 +45,7 @@ Network protection helps reduce the attack surface of your devices from Internet
 - exploits
 - other malicious content on the Internet
 
-Network protection expands the scope of Microsoft Defender [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources. The blocks on outbound HTTP(s) traffic is based on the domain or hostname.
+Network protection expands the scope of Microsoft Defender [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources. The blocks on outbound HTTP(s) traffic are based on the domain or hostname.
 
 ## Web content filtering for Linux
 
@@ -92,7 +93,7 @@ sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
 
 ### Manually enable network protection
 
-1. Turn on the “networkProtection” feature, edit the “/etc/opt/microsoft/mdatp/wdacfg” and set **networkProtection** to **enabled**.  
+1. Turn on the “networkProtection” feature, edit the “/etc/opt/microsoft/mdatp/wdavcfg” and set **networkProtection** to **enabled**.  
 2. Restart the mdatp service by running the following command:
 
 ```bash
@@ -184,6 +185,9 @@ Also, make sure that in **Microsoft Defender** > **Settings** > **Endpoints** > 
    > [!NOTE]
    > If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
    > Pro tip: You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.
+   >
+   > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
+ 
 4. [Integrate Microsoft Defender for Endpoint with Defender for Cloud Apps](/defender-cloud-apps/mde-integration) and your network protection-enabled macOS devices will have endpoint policy enforcement capabilities.
    > [!NOTE]
    > Discovery and other features are currently not supported on these platforms.

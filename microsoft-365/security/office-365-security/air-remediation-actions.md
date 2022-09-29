@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: "Learn about remediation actions following automated investigation in Microsoft Defender for Office 365."
 ms.date: 04/30/2021

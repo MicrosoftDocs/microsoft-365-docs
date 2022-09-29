@@ -1,9 +1,10 @@
 ---
 title: "Use a script to create an eDiscovery holds report"
+description: Learn how to generate a report that contains information about all the holds that are associated with eDiscovery cases.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 05/10/2022
 audience: Admin
@@ -11,15 +12,14 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
-description: Learn how to generate a report that contains information about all the holds that are associated with eDiscovery cases.
 ---
 
 # Use a script to create a report on holds in eDiscovery cases

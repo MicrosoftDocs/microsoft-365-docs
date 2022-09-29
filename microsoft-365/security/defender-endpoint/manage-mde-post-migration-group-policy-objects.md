@@ -13,9 +13,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.topic: article
 ms.reviewer: chventou
+search.appverid: met150
 ---
 
 # Manage Microsoft Defender for Endpoint with Group Policy Objects
@@ -61,5 +62,4 @@ If you haven't already done so, configure your Microsoft 365 Defender portal to 
 ## Next steps
 
 - [Get an overview of Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Visit the Microsoft 365 Defender portal security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 - [Manage Microsoft Defender for Endpoint with Intune](manage-mde-post-migration-intune.md)

@@ -18,8 +18,9 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.subservice: mde
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
+search.appverid: met150
 ---
 
 # Manage tamper protection for your organization using Microsoft 365 Defender portal

@@ -15,7 +15,9 @@ metadata:
   ms.custom: 
   - VSBFY23
   - AdminSurgePortfolio
-  ms.collection: Adm_TOC
+  ms.collection: 
+  - highpri
+  - Adm_TOC
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 

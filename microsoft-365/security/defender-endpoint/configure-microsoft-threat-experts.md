@@ -14,10 +14,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
+  - m365-security
   - m365-initiative-defender-endpoint
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Configure and manage Microsoft Threat Experts capabilities

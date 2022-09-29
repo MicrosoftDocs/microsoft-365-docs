@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: 7a29260d-2959-42aa-8916-feceff6ee51d
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020

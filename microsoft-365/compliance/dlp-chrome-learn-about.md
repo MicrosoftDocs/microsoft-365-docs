@@ -13,9 +13,11 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid: 
 - MET150
 description: "The Microsoft Purview Extension extends monitoring and control of file activities and protective actions to the Google Chrome browser"

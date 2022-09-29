@@ -11,7 +11,8 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
@@ -107,7 +108,7 @@ SharePoint example:
 
     Because you don't need to retain all SharePoint sites, you must create retention policies that specify the specific sites. Because a retention policy doesn't support more than 100 specified sites, you must create multiple policies for the two retention periods. These retention policies  have the maximum number of included sites, so the next new site that needs retaining would require a new retention policy, irrespective of the retention period.
 
-## Maximum number of items for disposition
+## Maximum numbers for disposition
 
 For the [disposition of content](disposition.md), there are some limits to be aware of:
 
@@ -120,3 +121,8 @@ For the [disposition of content](disposition.md), there are some limits to be aw
   - Proof of disposition for up to seven years after the item was disposed, with a limit of 1,000,000 items per retention label for that period.
 
     If you need proof of disposition higher than this limit of 1,000,000 for items that are marked as records, contact [Microsoft Support](../admin/get-help-support.md).
+
+- Maximum number of disposition reviewers:
+    - 10 reviewers per disposition stage in any combination of individual users and mail-enabled security groups
+    - 200 reviewers per tenant in any combination of individual users and mail-enabled security groups. Because of this limit, we recommend using mail-enabled security groups whenever possible for larger organizations.
+

@@ -91,7 +91,7 @@ Adoption Score supports the journey to digital transformation with insights abou
 
 ### Take training for adoption specialists
 
-In this introductory course, you'll learn the six critical elements to drive adoption of your Microsoft cloud services to deliver value to your company. This course is applicable to any size company and uses Office 365 and Microsoft Teams as the example service to create real-world scenarios. For more information about training for adoption specialists, read [Use the Microsoft service adoption framework to drive adoption in your enterprise](/learn/paths/m365-service-adoption).
+In this introductory course, you'll learn the six critical elements to drive adoption of your Microsoft cloud services to deliver value to your company. This course is applicable to any size company and uses Office 365 and Microsoft Teams as the example service to create real-world scenarios. For more information about training for adoption specialists, read [Use the Microsoft service adoption framework to drive adoption in your enterprise](/training/paths/m365-service-adoption).
 
 ### Join the adoption community
 

@@ -1,23 +1,25 @@
 ---
 title: "Microsoft Purview auditing solutions"
+description: "Learn how to audit the activities of users and administrators in your Microsoft 365 organization." 
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- m365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-audit
-- m365initiative-compliance
 - m365solution-overview
+- highpri
+- audit
 search.appverid:
 - MOE150
 - MET150
-description: "Learn how to audit the activities of users and administrators in your Microsoft 365 organization." 
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -178,4 +180,4 @@ To implement Customer Key for auditing, you have to create a multi-workload Data
 
 ## Training
 
-Training your security operations team, IT administrators, and compliance investigators team in the fundamentals for Audit (Standard) and Audit (Premium) can help your organization get started more quickly using auditing to help with your investigations. Microsoft Purview provides the following resource to help these users in your organization getting started with auditing: [Describe the eDiscovery and audit capabilities of Microsoft Purview](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+Training your security operations team, IT administrators, and compliance investigators team in the fundamentals for Audit (Standard) and Audit (Premium) can help your organization get started more quickly using auditing to help with your investigations. Microsoft Purview provides the following resource to help these users in your organization getting started with auditing: [Describe the eDiscovery and audit capabilities of Microsoft Purview](/training/modules/describe-ediscovery-capabilities-of-microsoft-365).

@@ -14,12 +14,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-m365-defender
 - m365-initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.subservice: m365d
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Device discovery overview

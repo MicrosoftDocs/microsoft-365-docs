@@ -14,7 +14,8 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Manage the sources for Microsoft Defender Antivirus protection updates

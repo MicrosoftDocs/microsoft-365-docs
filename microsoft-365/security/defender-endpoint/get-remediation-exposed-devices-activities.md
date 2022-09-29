@@ -11,10 +11,11 @@ author: jweston-1
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # List exposed devices of one remediation activity
@@ -67,14 +68,14 @@ rbacGroupName|String|Name of the device group this device is associated with|Ser
 ### Request example
 
 ```http
-GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
+GET https://api.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
 ```
 
 ### Response example
 
 ```json
 {
-    "@odata.context": "https://wpatdadi-luna-stg.cloudapp.net/api/$metadata#MachineReferences",
+    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineReferences",
     "value": [
         {
             "id": "3cb5df6bb3640a2d37ad09fcd357b182d684fafc",

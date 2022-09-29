@@ -15,7 +15,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+ - m365-security
+ - tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -65,5 +67,5 @@ Watch this short video to learn how you can use Microsoft 365 Defender to automa
 | [Create an app with multi-tenant partner access to Microsoft 365 Defender APIs](api-partner-access.md) |
 | **Troubleshoot and maintain your apps** |
 | [Understand API error codes](api-error-codes.md) |
-| [Manage secrets in your apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/) |
+| [Manage secrets in your apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/) |
 | [Implement OAuth 2.0 authorization for user sign in](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |

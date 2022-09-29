@@ -11,7 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 description: Deploy the configuration package on virtual desktop infrastructure (VDI) device so that they are onboarded to the Endpoint data loss prevention service.

@@ -11,9 +11,10 @@ ms.pagetype: security
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint and other Microsoft solutions
@@ -33,7 +34,7 @@ Microsoft Defender for Endpoint directly integrates with various Microsoft solut
 
 ### Microsoft Defender for Cloud
 
-Microsoft Defender for Endpoint provides a comprehensive server protection solution, including endpoint detection and response (EDR) capabilities on Windows Servers.
+Microsoft Defender for Cloud provides a comprehensive server protection solution, including endpoint detection and response (EDR) capabilities on Windows Servers.
 
 ### Microsoft Sentinel
 

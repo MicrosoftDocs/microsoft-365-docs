@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Once you've finished setting up Office 365 Message Encryption (OME), learn how to customize your deployment in several ways.

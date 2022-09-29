@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
 ms.custom: intro-get-started
 ---
@@ -70,7 +70,7 @@ The navigation bar on the left side of the screen enables you to move easily bet
 |  **Endpoints** > **Configuration & baselines** | Expands to show **Security baselines** and **Configuration management**. |
 |  **Endpoints** > **Configuration & baselines** > **Security baselines** | Security baselines are pre-configured policies and groups of settings that can help you apply recommended security settings efficiently and effectively. Baselines include settings that are based on industry best practices. You can keep the default settings, or customize your baselines to suit your organization's needs. <br/><br/> To learn more, see [Use security baselines to configure Windows 10 devices in Intune](/mem/intune/protect/security-baselines). |
 |  **Endpoints** > **Configuration & baselines** > **Configuration management** | Navigates to the **Device configuration management** page, where you can view information about onboarded devices, and take steps to onboard more devices. |
-| **Reports** | Navigates to your reports, such as your [Threat protection report](threat-protection-reports.md), [Device health and compliance report](machine-reports.md), and your [Web protection report](web-protection-overview.md). |
+| **Reports** | Navigates to your reports, such as your [Threat protection report](threat-protection-reports.md), [Device health and compliance report](device-health-reports.md) and your [Web protection report](web-protection-overview.md). |
 | **Health** | Includes links to the **Service health** and **Message center**.  |
 | **Health** > **Service health** | Navigates to the Service health page in the Microsoft 365 admin center. This page enables you to view health status across all the services available with your organization's subscriptions.   |
 | **Health** > **Message center** | Navigates to the Message center in the Microsoft 365 admin center. The Message center provides information about planned changes. Each message describes what's coming, how it might affect users, and how to manage changes. |  
@@ -153,7 +153,7 @@ To access your Device health report, in the Microsoft 365 Defender portal, choos
 Scroll down to see all the views in each list. By default, the views in the **Device trends** column display data for the past 30 days, but you can change a view to display data for the last three months, last six months, or a custom time range (up to 180 days). The **Device summary** views are snapshots for the previous business day.
 
 > [!TIP]
-> To learn more, see [Device health](machine-reports.md).
+> To learn more, see [Device health](device-health-reports.md).
 
 ### Web protection report
 

@@ -14,8 +14,9 @@ ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection: m365-security
 ms.date:
+search.appverid: met150
 ---
 
 # Enable controlled folder access

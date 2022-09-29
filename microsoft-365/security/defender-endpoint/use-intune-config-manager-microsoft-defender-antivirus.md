@@ -16,7 +16,8 @@ manager: dansimp
 ms.subservice: mde
 audience: ITPro
 ms.topic: how-to
-ms.collection: m365-security-compliance
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Use Microsoft Endpoint Manager to configure and manage Microsoft Defender Antivirus

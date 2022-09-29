@@ -11,10 +11,11 @@ author: jweston-1
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Get one remediation activity by ID
@@ -94,14 +95,14 @@ vendorId|String|Related vendor name|Microsoft
 ### Request example
 
 ```http
-GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c
+GET https://api.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c
 ```
 
 ### Response example
 
 ```json
 {
-    "@odata.context": "https://wpatdadi-luna-stg.cloudapp.net/api/$metadata#RemediationTasks/$entity",
+    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#RemediationTasks/$entity",
     "id": "03942ef5-aecb-4c6e-b555-d6a97013844c",
     "title": "Update Microsoft Silverlight",
     "createdOn": "2021-02-10T13:20:36.4718166Z",

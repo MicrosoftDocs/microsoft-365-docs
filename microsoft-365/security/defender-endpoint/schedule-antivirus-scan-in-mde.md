@@ -11,9 +11,10 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Schedule an antivirus scan using Anacron in Microsoft Defender for Endpoint on Linux

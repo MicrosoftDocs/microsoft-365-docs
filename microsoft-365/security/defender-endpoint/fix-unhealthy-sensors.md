@@ -11,10 +11,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
 ms.date: 11/23/2020
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Fix unhealthy sensors in Microsoft Defender for Endpoint

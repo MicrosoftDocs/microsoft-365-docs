@@ -14,6 +14,7 @@ ms.collection:
   - M365-collaboration
   - Teams_ITAdmin_FLW
   - m365-frontline
+  - highpri
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

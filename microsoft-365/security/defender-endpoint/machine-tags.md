@@ -11,9 +11,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Create and manage device tags
@@ -27,6 +28,9 @@ ms.subservice: mde
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Add tags on devices to create a logical group affiliation. Device tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident. Tags can be used as a filter in the **Device inventory** view, or to group devices. For more information on device grouping, see [Create and manage device groups](machine-groups.md).
+
+> [!NOTE]
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 You can add tags on devices using the following ways:
 
@@ -42,7 +46,6 @@ To add device tags using API, see [Add or remove device tags API](add-or-remove-
 
 1. Select the device that you want to manage tags on. You can select or search for a device from any of the following views:
 
-   - **Security operations dashboard** - Select the device name from the Top devices with active alerts section.
    - **Alerts queue** - Select the device name beside the device icon from the alerts queue.
    - **Devices inventory** - Select the device name from the list of devices.
    - **Search box** - Select Device from the drop-down menu and enter the device name.

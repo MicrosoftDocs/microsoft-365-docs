@@ -13,9 +13,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance 
+ms.collection: m365-security 
 ms.topic: conceptual
-ms.subservice: m365d
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Device discovery frequently asked questions

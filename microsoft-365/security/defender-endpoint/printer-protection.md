@@ -13,8 +13,9 @@ manager: dansimp
 audience: ITPro
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.custom: admindeeplinkDEFENDER
+search.appverid: met150
 ---
 
 # Device Control Printer Protection

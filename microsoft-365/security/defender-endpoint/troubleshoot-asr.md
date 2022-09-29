@@ -16,7 +16,8 @@ manager: dansimp
 ms.custom: asr
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Troubleshoot attack surface reduction rules
@@ -89,7 +90,7 @@ To add an exclusion, see [Customize Attack surface reduction](attack-surface-red
 
 ## Report a false positive or false negative
 
-Use the [Windows Defender Security Intelligence web-based submission form](https://www.microsoft.com/wdsi/filesubmission) to report a false negative or false positive for network protection. With a Windows E5 subscription, you can also [provide a link to any associated alert](alerts-queue.md).
+Use the [Windows Defender Security Intelligence web-based submission form](https://www.microsoft.com/wdsi/support/report-exploit-guard) to report a false negative or false positive for network protection. With a Windows E5 subscription, you can also [provide a link to any associated alert](alerts-queue.md).
 
 ## Collect diagnostic data for file submissions
 

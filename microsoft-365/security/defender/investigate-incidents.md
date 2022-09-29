@@ -15,10 +15,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
+  - tier1
 ms.topic: conceptual
 search.appverid: 
   - MOE150
+  - MET150
 ---
 
 # Investigate incidents in Microsoft 365 Defender

@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.collection:
 ms.localizationpriority: medium
 description: Learn how to manage sharing for Microsoft Whiteboard.
+
 ---
 
 # Manage sharing for Microsoft Whiteboard
@@ -90,5 +91,7 @@ When you share whiteboards from the web, desktop, or mobile clients, you can cho
 [Manage access to Whiteboard](manage-whiteboard-access-organizations.md)
 
 [Manage data for Whiteboard](manage-data-organizations.md)
+
+[Network requirements for Microsoft Defender of Cloud Apps](https://learn.microsoft.com/defender-cloud-apps/network-requirements)
 
 [Deploy Whiteboard on Windows](deploy-on-windows-organizations.md)

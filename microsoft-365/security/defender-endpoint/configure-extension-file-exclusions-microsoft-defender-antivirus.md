@@ -7,14 +7,15 @@ ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 07/25/2022
+ms.date: 09/19/2022
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.reviewer: thdoucet
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Configure and validate exclusions based on file extension and folder location
@@ -220,7 +221,7 @@ The following table lists and describes the system account environment variables
 |`%APPDATA%\Microsoft\Internet Explorer\Quick Launch`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch`|
 |`%APPDATA%\Microsoft\Windows\Start Menu`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu`|
 |`%APPDATA%\Microsoft\Windows\Start Menu\Programs`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs`|
-|`%LOCALAPPDATA%`|`C:\Windows\System32\config\systemprofile\AppData\Local`|
+|`%LOCALAPPDATA%`|`C:\Users\USERNAME\AppData\Local`|
 |`%ProgramData%`|`C:\ProgramData`|
 |`%ProgramFiles%`|`C:\Program Files`|
 |`%ProgramFiles%\Common Files`|`C:\Program Files\Common Files`|

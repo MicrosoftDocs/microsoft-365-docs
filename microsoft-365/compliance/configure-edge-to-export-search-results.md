@@ -1,18 +1,21 @@
 ---
 title: "Use the eDiscovery Export Tool in Microsoft Edge"
+description: "You have to enable ClickOnce support to use the newest version of Microsoft Edge to download search results from Content Search and eDiscovery in the security and compliance center."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "You have to enable ClickOnce support to use the newest version of Microsoft Edge to download search results from Content Search and eDiscovery in the security and compliance center."
 ---
 
 # Use the eDiscovery Export Tool in Microsoft Edge

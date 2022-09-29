@@ -13,8 +13,8 @@ ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
-ms.date:
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Evaluate controlled folder access

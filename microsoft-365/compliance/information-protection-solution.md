@@ -16,8 +16,9 @@ search.appverid:
 ms.collection: 
 - m365solution-overview
 - m365solution-mip
-- m365initiative-compliance
+- tier1
 - zerotrust-solution
+- highpri
 description: "Prescriptive guidance to deploy Microsoft Purview Information Protection for your organization."
 ---
 
@@ -96,11 +97,11 @@ Deploy Microsoft Purview Data Loss Prevention (DLP) policies to govern and preve
 
 Learning modules for consultants and admins:
 
-- [Introduction to information protection and data lifecycle management in Microsoft Purview](/learn/modules/m365-compliance-information-governance)
-- [Classify data for protection and governance](/learn/modules/m365-compliance-information-classify-data)
-- [Protect information in Microsoft Purview](/learn/modules/m365-compliance-information-protect-information)
-- [Prevent data loss in Microsoft Purview](/learn/modules/m365-compliance-information-prevent-data-loss)
+- [Introduction to information protection and data lifecycle management in Microsoft Purview](/training/modules/m365-compliance-information-governance)
+- [Classify data for protection and governance](/training/modules/m365-compliance-information-classify-data)
+- [Protect information in Microsoft Purview](/training/modules/m365-compliance-information-protect-information)
+- [Prevent data loss in Microsoft Purview](/training/modules/m365-compliance-information-prevent-data-loss)
 
 To help train your users to apply and use the sensitivity labels that you configure for them, see [End-user documentation for sensitivity labels](get-started-with-sensitivity-labels.md#end-user-documentation-for-sensitivity-labels).
 
-When you deploy data loss prevention policies for Teams, you might find useful the following end-user guidance as an introduction to this technology with some potential messages that they might see: [Teams messages about data loss prevention (DLP) and communication compliance policies ](https://support.microsoft.com/office/teams-messages-about-data-loss-prevention-dlp-and-communication-compliance-policies-c5631c3f-f61b-4306-a6ac-6603d9fc5ff0).
+When you deploy data loss prevention policies for Teams, you might find useful the following end-user guidance as an introduction to this technology with some potential messages that they might see: [Teams messages about data loss prevention (DLP) and communication compliance policies](https://support.microsoft.com/office/teams-messages-about-data-loss-prevention-dlp-and-communication-compliance-policies-c5631c3f-f61b-4306-a6ac-6603d9fc5ff0).

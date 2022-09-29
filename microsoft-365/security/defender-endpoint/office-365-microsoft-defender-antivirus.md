@@ -17,7 +17,8 @@ ms.custom:
 ms.reviewer: 
 manager: dansimp
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Better together: Microsoft Defender Antivirus and Office 365

@@ -1,21 +1,22 @@
 ---
 title: "Encrypted message portal activity log"
+description: "Access logs are available for encrypted messages retrieved through the encrypted message portal."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.date: 07/21/2022
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- audit
 search.appverid:
 - MET150
-description: "Access logs are available for encrypted messages retrieved through the encrypted message portal."
 ---
 
 # Encrypted message portal activity log by Microsoft Purview Advanced Message Encryption
@@ -24,7 +25,7 @@ Access logs are available for encrypted messages through the encrypted message p
 
 ## Enabling message access audit logs in PowerShell
 
-Access log can be enabled using [Exchange Online PowerShell V2 module](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps). The *-EnablePortalTrackingLogs* parameter of Set-IrmConfiguration specifies whether to enable the audit logs of accessing the encrypted message portal. Valid values are:
+Access log can be enabled using [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). The *EnablePortalTrackingLogs* parameter of the **[Set-IrmConfiguration](/powershell/module/exchange/set-irmconfiguration)** cmdlet specifies whether to enable the audit logs of accessing the encrypted message portal. Valid values are:
 
 - $true: Turn on audit feature.
 - $false: Turn off audit feature

@@ -14,7 +14,8 @@ ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Manage Microsoft Defender Antivirus updates and scans for endpoints that are out of date

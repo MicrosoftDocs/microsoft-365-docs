@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 09/08/2022
+ms.date: 09/27/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -17,8 +17,9 @@ ms.reviewer: pahuijbr, mkaminska, v-vutrieu
 manager: dansimp
 ms.subservice: mde
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
+search.appverid: met150
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -82,33 +83,32 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
-<details> 
-<summary> August-2022 (Platform: 4.18.2207.7| Engine:  1.1.19600.3)</summary> 
-  
-&ensp;Security intelligence update version:  **1.373.1647.0** <br/>
-&ensp;Released: **September 6th, 2022**<br/>
+<details>
+<summary>August-2022 (Platform: 4.18.2207.7 | Engine: 1.1.19600.3)</summary>
+
+&ensp;Security intelligence update version: **1.373.1647.0**<br/>
+&ensp;Release date: **September 6, 2022**<br/>
 &ensp;Platform: **4.18.2207.7**<br/>
 &ensp;Engine: **1.1.19600.3**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
-  
+
 Engine version: 1.1.19600.3<br/>
-Security intelligence update version: 1.373.1647.0<br/>
-  
-### What's new 
+Security intelligence update version: 1.373.1647.0 <br/>
 
-- Fixed Unified agent installer issues on WS2012R2 Server and Windows Server 2016 <br/>
-- Fixed remediation issue for custom detection <br/>
-- Fixed Race condition related to behavior monitoring <br/>
-- Resolved multiple deadlock scenarios in Defender dlls <br/>
-- Improved frequency of Windows toasts notification for ASR rules  
-  
-### Known Issues 
+### What's new
 
-No known issues   
+- Fixed Unified agent installer issues on WS2012R2 Server and Windows Server 2016
+- Fixed remediation issue for custom detection
+- Fixed Race condition related to behavior monitoring
+- Resolved multiple deadlock scenarios in Defender dlls
+- Improved frequency of Windows toasts notification for ASR rules
 
-<br/> 
-</details> 
-<details>
+### Known Issues
+
+- None
+
+<br/><br/>
+</details><details>
 <summary>July-2022 (Platform: 4.18.2207.5 | Engine: 1.1.19500.2)</summary>
 
 &ensp;Security intelligence update version: **1.373.219.0**<br/>
@@ -790,14 +790,14 @@ The below table provides the Microsoft Defender Antivirus platform and engine ve
 
 |Windows 10 release  |Platform version  |Engine version |Support phase |
 |:---|:---|:---|:---|
-|2004  (20H1/20H2) |4.18.1909.6 |1.1.17000.2 | Technical upgrade support (only) |
-|1909  (19H2) |4.18.1902.5 |1.1.16700.3 | Technical upgrade support (only) |
-|1903  (19H1) |4.18.1902.5 |1.1.15600.4 | Technical upgrade support (only) |
-|1809  (RS5) |4.18.1807.18075 |1.1.15000.2 | Technical upgrade support (only) |
-|1803  (RS4) |4.13.17134.1 |1.1.14600.4 | Technical upgrade support (only) |
-|1709  (RS3) |4.12.16299.15 |1.1.14104.0 | Technical upgrade support (only) |
-|1703  (RS2) |4.11.15603.2 |1.1.13504.0 | Technical upgrade support (only) |
-|1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Technical upgrade support (only) |
+|2004  (20H1/20H2) | `4.18.1909.6` | `1.1.17000.2` | Technical upgrade support (only) |
+|1909  (19H2) |`4.18.1902.5` |`1.1.16700.3` | Technical upgrade support (only) |
+|1903  (19H1) |`4.18.1902.5` |`1.1.15600.4` | Technical upgrade support (only) |
+|1809  (RS5) |`4.18.1807.1807`5 |`1.1.15000.2` | Technical upgrade support (only) |
+|1803  (RS4) |`4.13.17134.1` |`1.1.14600.4` | Technical upgrade support (only) |
+|1709  (RS3) |`4.12.16299.15` |`1.1.14104.0` | Technical upgrade support (only) |
+|1703  (RS2) |`4.11.15603.2` |`1.1.13504.0` | Technical upgrade support (only) |
+|1607 (RS1) |`4.10.14393.3683` |`1.1.12805.0` | Technical upgrade support (only) |
 
 For Windows 10 release information, see the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
 
@@ -808,6 +808,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220925.2</summary>
+
+&ensp;Package version: **20220925.2**<br/>
+&ensp;Platform version: **4.18.2207.7**<br/>
+&ensp;Engine version: **1.1.19600.3**<br/>
+&ensp;Signature version: **1.373.1371.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
 <summary>20220901.4</summary>
 
 &ensp;Package version: **20220901.4**<br/>

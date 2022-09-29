@@ -12,9 +12,10 @@ ms.localizationpriority: medium
 ms.date: 08/01/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint Device Control Removable Storage Protection

@@ -15,12 +15,12 @@ search.appverid:
   - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 description: Admins can learn how to find and use the email security reports that are available in the Microsoft 365 Defender portal.
 ms.custom: 
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # View email security reports in the Microsoft 365 Defender portal
@@ -1139,8 +1139,6 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 [Anti-spam protection in EOP](anti-spam-protection.md)
 
 [Anti-malware protection in EOP](anti-malware-protection.md)
-
-[Smart reports and insights in the Microsoft 365 Defender portal](reports-and-insights-in-security-and-compliance.md)
 
 [View mail flow reports in the Microsoft 365 Defender portal](view-mail-flow-reports.md)
 

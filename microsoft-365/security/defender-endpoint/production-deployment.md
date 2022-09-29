@@ -12,13 +12,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-endpointprotect
   - m365solution-scenario
   - highpri
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Set up Microsoft Defender for Endpoint deployment

@@ -12,9 +12,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Partner applications in Microsoft Defender for Endpoint
@@ -83,8 +84,8 @@ Logo|Partner name|Description
 Logo|Partner name|Description
 :---|:---|:---
 ![Image of Aruba ClearPass Policy Manager logo.](images/aruba-logo.png)|[Aruba ClearPass Policy Manager](https://go.microsoft.com/fwlink/?linkid=2127544)|Ensure Defender for Endpoint is installed and updated on each endpoint before allowing access to the network
-![Image of Blue Hexagon for Network logo.](images/bluehexagon-logo.png)|[Blue Hexagon for Network](/learn/modules/explore-malware-threat-protection/)|Blue Hexagon has built the industry's first real-time deep learning platform for network threat protection
-![Image of Corelight logo.](images/logo-corelight.png)| [Corelight]( https://corelight.com/integrations/iot-security)| Using data, sent from Corelight network appliances, Microsoft 365 Defender gains increased visibility into the network activities of unmanaged devices, including communication with other unmanaged devices or external networks.
+![Image of Blue Hexagon for Network logo.](images/bluehexagon-logo.png)|[Blue Hexagon for Network](/training/modules/explore-malware-threat-protection/)|Blue Hexagon has built the industry's first real-time deep learning platform for network threat protection
+![Image of Corelight logo.](images/logo-corelight.png)| [Corelight](https://corelight.com/integrations/iot-security)| Using data, sent from Corelight network appliances, Microsoft 365 Defender gains increased visibility into the network activities of unmanaged devices, including communication with other unmanaged devices or external networks.
 ![Image of CyberMDX logo.](images/cybermdx-logo.png)|[CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620)|Cyber MDX integrates comprehensive healthcare assets visibility, threat prevention and repose into your Defender for Endpoint environment
 ![Image of HYAS Protect logo.](images/hyas-logo.png)|[HYAS Protect](https://go.microsoft.com/fwlink/?linkid=2156763)|HYAS Protect utilizes authoritative knowledge of attacker infrastructure to proactively protect Microsoft Defender for Endpoint endpoints from cyberattacks
 ![Image of Vectra Network Detection and Response (NDR) logo.](images/vectra-logo.png)|[Vectra Network Detection and Response (NDR)](https://go.microsoft.com/fwlink/?linkid=866934)|Vectra applies AI & security research to detect and respond to cyber-attacks in real time

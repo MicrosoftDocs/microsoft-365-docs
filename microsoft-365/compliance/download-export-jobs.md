@@ -1,21 +1,24 @@
 ---
 title: Export documents to an organization Azure Storage account
+description: "Export documents in a review set to an Azure Storage account and then use Azure Storage Explorer to download them to a local computer."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
 ms.custom: seo-marvel-mar2020
-description: "Export documents in a review set to an Azure Storage account and then use Azure Storage Explorer to download them to a local computer."
 ---
 
 # Export documents in a review set to an Azure Storage account

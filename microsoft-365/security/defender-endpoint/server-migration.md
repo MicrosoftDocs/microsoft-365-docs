@@ -11,10 +11,10 @@ ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
 ms.localizationpriority: medium
-ms.date: 08/10/2022
+ms.date: 09/19/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
 ms.subservice: mde
 ---
@@ -55,9 +55,11 @@ To facilitate upgrades when Microsoft Endpoint Configuration Manager is not yet 
 4. Install Microsoft Defender for Endpoint.
 5. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft 365 Defender](https://security.microsoft.com).
 
-To use the script, download it to an installation directory where you have also placed the installation and onboarding packages (see [Configure server endpoints](configure-server-endpoints.md).
+To use the script, download it to an installation directory where you have also placed the installation and onboarding packages (see [Configure server endpoints](configure-server-endpoints.md)).
 
 EXAMPLE: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd"
+
+For more information on how to use the script, use the PowerShell command "get-help .\install.ps1".
 
 ## Microsoft Endpoint Configuration Manager migration scenarios 
 

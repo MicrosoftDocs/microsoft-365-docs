@@ -1,21 +1,23 @@
 ---
 title: "Set up historical versions in eDiscovery (Premium)"
+description: "Use historical versions in eDiscovery (Premium) to collect content from all versions of documents stored in SharePoint and OneDrive."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: "Use historical versions in eDiscovery (Premium) to collect content from all versions of documents stored in SharePoint and OneDrive."
 ---
 
 # Set up historical versions in eDiscovery (Premium) (preview)

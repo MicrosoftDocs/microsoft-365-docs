@@ -12,9 +12,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # List machines API
@@ -62,6 +63,8 @@ Delegated (work or school account)|Machine.ReadWrite|'Read and write machine inf
 >
 > - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
 > - Response will include only devices, that the user have access to, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2. 
 
 ## HTTP request
 

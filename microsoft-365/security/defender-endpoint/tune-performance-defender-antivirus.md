@@ -12,9 +12,10 @@ author: jweston-1
 ms.author: v-jweston
 ms.date: 08/13/2022
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Performance analyzer for Microsoft Defender Antivirus

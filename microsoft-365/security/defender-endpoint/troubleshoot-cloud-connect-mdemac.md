@@ -11,9 +11,10 @@ author: lovina-saldanha
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:  m365-security-compliance
+ms.collection:  m365-security
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS

@@ -12,11 +12,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
+  - m365-security
   - m365-initiative-defender-endpoint
 ms.topic: article
 ms.date: 04/24/2018
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Investigate alerts in Microsoft Defender for Endpoint

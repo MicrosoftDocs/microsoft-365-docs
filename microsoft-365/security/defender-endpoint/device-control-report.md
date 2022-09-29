@@ -13,8 +13,10 @@ ms.topic: article
 manager: dansimp
 audience: ITPro
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection: m365-security
+search.appverid: met150
 ---
+
 # Device control report
 
 **Applies to:** 

@@ -12,10 +12,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Cloud Apps in Defender for Endpoint overview

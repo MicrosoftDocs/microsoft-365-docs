@@ -1,20 +1,22 @@
 ---
 title: Email threading in eDiscovery (Premium)
+description: "When conducting an eDiscovery (Premium) analysis, email threading parses an email conversation and separates each message into different categories."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-description: "When conducting an eDiscovery (Premium) analysis, email threading parses an email conversation and separates each message into different categories."
 ms.custom: seo-marvel-mar2020
 ---
 

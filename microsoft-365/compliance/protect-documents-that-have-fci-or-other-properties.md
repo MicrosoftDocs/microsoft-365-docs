@@ -15,7 +15,8 @@ ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
