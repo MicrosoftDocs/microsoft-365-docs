@@ -8,7 +8,9 @@ audience: End User
 ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: 
+- scotvorg
+- Ent_O365
 search.appverid:
 - MET150
 - MET150

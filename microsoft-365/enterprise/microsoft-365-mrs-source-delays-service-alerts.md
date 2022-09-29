@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 search.appveyor:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 f1.keywords:
