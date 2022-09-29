@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
+manager: dansimp
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
@@ -17,7 +18,6 @@ ms.reviewer: mkaminska; pahuijbr
 ms.collection: 
 - m365-security
 - tier2
-ms.collection: m365-security
 search.appverid: met150
 ---
 
