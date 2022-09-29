@@ -42,17 +42,7 @@ You can use this guidance to make decisions about security incident priorities a
 | Run a scan or automated investigation | <ol><li>In the Microsoft 365 Defender portal (https://security.microsoft.com), in the navigation pane, choose **Assets** > **Devices**.</li><li>Select a device to open its flyout panel, and review the information that is displayed.</li><li>Select the ellipsis (...) to open the actions menu.</li><li>Select an action, such as **Run antivirus scan** or **Initiate Automated Investigation**.</li></ol> |
 | Weekly  | 
 | Monitor and improve your Microsoft Secure score | Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating fewer improvement actions are needed. The Secure Score helps organizations to: <ul><li>Report on the current state of the organization's security posture.</li><li>Improve their security posture by providing discoverability, visibility, guidance, and control.</li><li>Compare with benchmarks and establish key performance indicators (KPIs).</li></ul>To check your score, follow these steps:<ol><li>In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane choose **Secure score**. </li><li>Review and make decisions about the remediations and actions in order to improve your overall Microsoft secure score.</li></ol> |
-
-### Review the secure score for devices
-
-Also located in found in the Vulnerability management dashboard is the Microsoft Secure score for devices card. This card displays your current score and a higher score indicates your endpoints are more resilient to cyberattacks. It reflects the security state of all the devices, collectively.
-
-The data on this card is the product of a meticulous and ongoing vulnerability discovery process. It's aggregated with configuration discovery assessments that continuously:
-
-- Compare collected configurations to the collected benchmarks to discover misconfigured assets
-- Map configurations to vulnerabilities that can be remediated or partially remediated (risk reduction)
-- Collect and maintain best practice configuration benchmarks (vendors, security feeds, internal research teams)
-- Collect and monitor changes of security control configuration state from all assets
+| Review the secure score for devices | Also located in found in the Vulnerability management dashboard is the Microsoft Secure score for devices card. This card displays your current score and a higher score indicates your endpoints are more resilient to cyberattacks. It reflects the security state of all the devices, collectively.<p>The data on this card is the product of a meticulous and ongoing vulnerability discovery process. It's aggregated with configuration discovery assessments that continuously:<ul><li>Compare collected configurations to the collected benchmarks to discover misconfigured assets</li><li>Map configurations to vulnerabilities that can be remediated or partially remediated (risk reduction)</li><li>Collect and maintain best practice configuration benchmarks (vendors, security feeds, internal research teams)</li><li>Collect and monitor changes of security control configuration state from all assets</li></ul> |
 
 ### Improve your secure score for devices
 
