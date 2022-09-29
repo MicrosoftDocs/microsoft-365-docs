@@ -29,7 +29,7 @@ Web browsers are often used by users to access both sensitive and non-sensitive 
 - Files copied to USB devices
 - Browsing risky websites
 
-Signals for these events are detected in Microsoft Edge using built-in browser capabilities and using the *Microsoft Compliance Extension* add-on. In Google Chrome, customers use the *Microsoft Compliance Extension* for signal detection.
+Signals for these events are detected in Microsoft Edge using built-in browser capabilities and using the *Microsoft Purview Extension* add-on. In Google Chrome, customers use the *Microsoft Purview Extension* for signal detection.
 
 The following table summarizes detected activities and extension support for each browser:
 
