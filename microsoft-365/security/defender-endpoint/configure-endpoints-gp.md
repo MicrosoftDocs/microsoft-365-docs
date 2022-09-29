@@ -246,7 +246,7 @@ With Group Policy there isn't an option to monitor deployment of policies on the
 
 ## Setup Defender AV policies
 
-Create a new Group Policy or group these settings in with the other policies. This is dependent upon the customers environment and how they would like to roll out the service by targeting different organizational units (OUs).
+Create a new Group Policy or group these settings in with the other policies. This is dependent upon the customer's environment and how they would like to roll out the service by targeting different organizational units (OUs).
 
 1. After you choose the GP, or create a new one, edit the GP.
 
