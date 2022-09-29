@@ -122,13 +122,11 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 - **Unauthorized disclosure (preview)**: Detects sharing of information containing content that is explicitly designated as confidential or internal to unauthorized individuals. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 2010 and SEC Rule 10b-5. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
 
 > [!NOTE]
-> The **Corporate sabotage, Gifts & entertainment, Money laundering, Regulatory collusion, Stock Manipulation, and Unauthorized disclosure classifiers** may capture a large volume of bulk sender/newsletter content due to a known issue in development. This behavior will be resolved in January 2023. 
-
-> For a temporary solution to address large volumes of bulk sender/newsletter content, add the **Message is not sent to any of these domains condition** with a list of domains to exclude. 
+> The **Corporate sabotage, Gifts & entertainment, Money laundering, Regulatory collusion, Stock Manipulation, and Unauthorized disclosure classifiers** may capture a large volume of bulk sender/newsletter content due to a known issue. While it's in preview, you can address large volumes of bulk sender/newsletter content by adding the **Message is not sent to any of these domains condition** with a list of domains to exclude. 
 
 These classifiers appear in the **Microsoft Purview compliance portal** \> **Data classification** \> **Trainable classifiers** view with the status of `Ready to use`.
 
-![classifiers-pre-trained-classifiers.](../media/classifiers-ready-to-use-classifiers.png)
+
 
 > [!IMPORTANT]
 > Please note that the built-in trainable and global classifiers don't provide an exhaustive or complete list of terms or language across these areas. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update these classifiers in its discretion. While classifiers may assist your organization in detecting these areas, classifiers are not intended to provide your organization's sole means of detecting or addressing the use of such language. Your organization, not Microsoft or its subsidiaries, remains responsible for all decisions related to monitoring, scanning, blocking, removal, and retention of any content identified by a pre-trained classifier, including compliance with local privacy and other applicable laws. Microsoft encourages consulting with legal counsel before deployment and use.
