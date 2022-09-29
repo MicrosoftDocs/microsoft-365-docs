@@ -16,8 +16,8 @@ ms.custom: asr
 ms.topic: conceptual
 ms.subservice: mde
 ms.collection: 
-- m365initiative-m365-defender
 - m365-security
+- tier2
 ms.date: 05/16/2022
 search.appverid: met150
 ---

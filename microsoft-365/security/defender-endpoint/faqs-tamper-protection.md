@@ -19,7 +19,7 @@ ms.custom:
 ms.subservice: mde
 ms.collection: 
 - m365-security
-- m365initiative-defender-endpoint
+- tier2
 search.appverid: met150
 ---
 

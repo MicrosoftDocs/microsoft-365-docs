@@ -14,8 +14,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security
-  - m365-initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 ---

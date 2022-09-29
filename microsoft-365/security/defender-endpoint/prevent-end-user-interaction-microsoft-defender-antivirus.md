@@ -15,7 +15,9 @@ ms.reviewer:
 manager: dansimp
 ms.subservice: mde
 ms.topic: article
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier2
 search.appverid: met150
 ---
 
