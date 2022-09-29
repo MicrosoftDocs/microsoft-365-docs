@@ -41,43 +41,7 @@ You can use this guidance to make decisions about security incident priorities a
 | Learn about new incidents or alerts | <ol><li>In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation menu, select **Incidents**. Incidents are displayed on the page with associated alerts.</li><li>Select an alert to open its flyout pane, where you can learn more about the alert.</li><li>In the flyout, you can see the alert title, view a list of assets (such as endpoints or user accounts) that were affected, take available actions, and use links to view more information and even open the details page for the selected alert.</li></ol> |
 | Run a scan or automated investigation | <ol><li>In the Microsoft 365 Defender portal (https://security.microsoft.com), in the navigation pane, choose **Assets** > **Devices**.</li><li>Select a device to open its flyout panel, and review the information that is displayed.</li><li>Select the ellipsis (...) to open the actions menu.</li><li>Select an action, such as **Run antivirus scan** or **Initiate Automated Investigation**.</li></ol> |
 | Weekly  | 
-
-| Monthly | [Run reports](#run-reports).<br/>[Run a simulation tutorial](#run-a-simulation-tutorial).<br/>[Explore the Learning hub](#explore-the-learning-hub). |
-| As needed | [Use the Threat analytics dashboard](#use-the-threat-analytics-dashboard).<br/>[Run a scan or automated investigation](#run-a-scan-or-automated-investigation).<br/>[Remediate an item](#remediate-an-item). | 
-
-The following sections provide more details about each task.
-  
-## Suggested daily tasks
-
-Here are some suggestions for security tasks to pursue on a daily basis.
-
-- [Check your threat vulnerability](#check-your-threat-vulnerability).
-- [Review pending actions in the Action center](#review-pending-actions-in-the-action-center).
-- [Review devices with threat detections](#review-devices-with-threat-detections).
-- [Learn about new incidents or alerts](#learn-about-new-incidents-or-alerts).
-
-
-## Suggested weekly tasks
-
-Here are some suggestions of important security tasks to do at least on a weekly basis.
-
-- [Monitor and improve your Microsoft Secure score](#monitor-and-improve-your-microsoft-secure-score).
-- [Review the secure score for devices](#review-the-secure-score-for-devices).
-- [Improve your secure score for devices](#improve-your-secure-score-for-devices).
-
-### Monitor and improve your Microsoft Secure score
-
-Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating fewer improvement actions are needed.
-
-The Secure Score helps organizations:
-
-- Report on the current state of the organization's security posture.
-- Improve their security posture by providing discoverability, visibility, guidance, and control.
-- Compare with benchmarks and establish key performance indicators (KPIs).
-
-1. To check your secure score, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane choose **Secure score**. 
-
-2. Review and make decisions about the remediations and actions in order to improve your overall Microsoft secure score.
+| Monitor and improve your Microsoft Secure score | Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating fewer improvement actions are needed. The Secure Score helps organizations to: <ul><li>Report on the current state of the organization's security posture.</li><li>Improve their security posture by providing discoverability, visibility, guidance, and control.</li><li>Compare with benchmarks and establish key performance indicators (KPIs).</li></ul>To check your score, follow these steps:<ol><li>In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane choose **Secure score**. </li><li>Review and make decisions about the remediations and actions in order to improve your overall Microsoft secure score.</li></ol> |
 
 ### Review the secure score for devices
 
@@ -109,6 +73,11 @@ Improve your security configuration by remediating issues using the security rec
 7. Return to the Microsoft Secure Score for Devices card on the dashboard. The number of security controls recommendations has decreased as a result of your actions.
 
 8. Select **Security controls** to go back to the Security recommendations page. The item that you addressed isn't listed there anymore, which results in your Microsoft secure score improving.
+
+
+| Monthly | [Run reports](#run-reports).<br/>[Run a simulation tutorial](#run-a-simulation-tutorial).<br/>[Explore the Learning hub](#explore-the-learning-hub). |
+| As needed | [Use the Threat analytics dashboard](#use-the-threat-analytics-dashboard).<br/>[Run a scan or automated investigation](#run-a-scan-or-automated-investigation).<br/>[Remediate an item](#remediate-an-item). | 
+
 
 ## Suggested monthly tasks
 
