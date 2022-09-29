@@ -10,7 +10,7 @@ ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.search: M365-security-compliance
+ms.search: purview-compliance
 ms.localizationpriority: medium
 search.appverid: 
 - MOE150

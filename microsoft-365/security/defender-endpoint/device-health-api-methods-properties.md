@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection:
  - m365-security
  - EngageScoreSep2022
+ - tier3
 ms.topic: article 
 ms.subservice: mde 
 ms.custom: api 
