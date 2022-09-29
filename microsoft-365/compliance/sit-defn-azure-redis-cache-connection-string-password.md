@@ -72,12 +72,12 @@ This SIT is designed to match the security information that’s used to connect 
 It uses several primary resources:
 
 - Patterns of Base64 encoded string literal.
-- Patterns of Base64 encoded 256 bits symmetric key.
+- Patterns of Base64 encoded 256-bits symmetric key.
 - Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id.
 - Patterns of mockup values, redactions, and placeholders.
 - A dictionary of vocabulary.
 
-The patterns are designed to match actual credentials with reasonable confidence. The patterns do not match credentials formatted as examples. Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present will not be matched.
+The patterns are designed to match actual credentials with reasonable confidence. The patterns don't match credentials formatted as examples. Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present will not be matched.
 
 ## Keywords
 
