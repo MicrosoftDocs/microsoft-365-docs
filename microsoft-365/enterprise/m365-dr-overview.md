@@ -99,56 +99,21 @@ There are three methods for ensuring that the tenant data location for a particu
 
 |**Service Name**|**Product Terms**|**Multi-Geo**|**ADR**|
 |:-----|:-----|:-----|:-----|
-|Exchange Online <br/> |X<sup>1</sup>  <br/> |X2  <br/> |X3  <br/> |
-| SharePoint Online / OneDrive for Business <br/> |X1  <br/> |X2  <br/> |X2  <br/> |
-| Microsoft Teams <br/> |X1  <br/> |X2  <br/> |X2  <br/> |
-| Microsoft Defender for Office P1 <br/> |-  <br/> |-  <br/> |X2  <br/> |
-| Office for the Web <br/> |-  <br/> |-  <br/> |X2  <br/> |
-| Viva Connections <br/> |-  <br/> |-  <br/> |X2  <br/> |
-| Viva Topics <br/> |-  <br/> |-  <br/> |X2  <br/> |
-| Microsoft Purview <br/> |-  <br/> |-  <br/> |X2  <br/> |
+|Exchange Online <br/> |X<sup>1</sup>  <br/> |X<sup>2</sup>  <br/> |X<sup>3</sup>  <br/> |
+| SharePoint Online / OneDrive for Business <br/> |X<sup>1</sup>  <br/> |X<sup>2</sup>  <br/> |X<sup>2</sup>  <br/> |
+| Microsoft Teams <br/> |X<sup>1</sup>  <br/> |X<sup>2</sup>  <br/> |X<sup>2</sup>  <br/> |
+| Microsoft Defender for Office P1 <br/> |-  <br/> |-  <br/> |X<sup>2</sup>  <br/> |
+| Office for the Web <br/> |-  <br/> |-  <br/> |X<sup>2</sup>  <br/> |
+| Viva Connections <br/> |-  <br/> |-  <br/> |X<sup>2</sup>  <br/> |
+| Viva Topics <br/> |-  <br/> |-  <br/> |X<sup>2</sup>  <br/> |
+| Microsoft Purview <br/> |-  <br/> |-  <br/> |X<sup>2</sup>  <br/> |
+
+1. Only available for _Local Geography_ countries, European Union and the United States.
+2. Available in _Local Geography, Expanded Local Geography_ and _Regional Geography countries/regions_
+3. Only available for _Local Geography_ and _Expanded Local Geography countries_
 
 >[!NOTE]
 >See ***Section 5 Workload Data Residency Capabilities PAGE LINK*** for more details
-
-**Table 3: Available Data Residency by Country**
-
-|   | Exchange Online  | SharePoint Online  | Teams  | MDO P1  | Office for the web  | Viva Connections  | Viva Topics  |  Purview  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Australia  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
-| Brazil  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
-| Canada  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
-| European Union  | P-M  | P-M  | P-M  | -  | -  | -  | -  | -  |
-| France  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
-| Germany  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
-| India  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
-| Japan  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
-| Qatar  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
-| South Korea  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
-| Norway  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
-| South Africa  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
-| Sweden  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
-| Switzerland  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
-| United Arab Emirates  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
-| United Kingdom  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
-| United States  | P-M  | P-M  | P-M  | -  | -  | -  | -  | -  |
-| Poland (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
-| Israel (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
-| Spain (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
-| Mexico (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
-| Malaysia (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
-| Austria (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
-| Chile (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
-| New Zealand (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
-| Denmark (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
-| Greece (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
-| Taiwan (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
-
-P=Product Terms Data Residency
-
-M=Multi-Geo Data Residency
-
-A=Advanced Data Residency
 
 ### Country/Region specific Data Center city locations
 
@@ -156,30 +121,30 @@ The following Regional Geographies can store data at rest.
 
 **Table 4 Regional Geographies**
 
-|Column1  |Column2  |
+|**Regional Geographies** |**Locations where customer data may be stored**  |
 |---------|---------|
-|Row1     |         |
-|Row2     |         |
-|Row3     |         |
+|Regional Geography 1 - EMEA (Europe, Middle East and Africa) |  Austria, Finland, France, Ireland, Netherlands, Sweden  |
+|Regional Geography 2 - Asia Pacific |  Hong Kong, Japan, Malaysia, Singapore, South Korea  |
+|Regional Geography 3 - Americas | Brazil, Chile, United States  |
 
 **Table 5 Current Local Geographies and Region specific Data Center locations**
 
 |Column1  |Column2  |
 |---------|---------|
-|Row1     |         |
-|Row2     |         |
-|Row3     |         |
-|Row4     |         |
-|Row5     |         |
-|Row6     |         |
-|Row7     |         |
-|Row8     |         |
-|Row9     |         |
-|Row10     |         |
-|Row11     |         |
-|Row12     |         |
-|Row13     |         |
-|Row14     |         |
-|Row15     |         |
-|Row16     |         |
-|Row17     |         |
+|Australia   |Sydney, Melbourne   |
+|Brazil   |Rio, Campinas   |
+|Canada	  |Quebec City, Toronto    |
+|European Union	  |Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Netherlands (Amsterdam), Sweden (Gävle, Sandviken, Staffanstorp)     |
+|France	  |Paris, Marseille     |
+|Germany	 |Frankfurt, Berlin       |
+|India   |Chennai, Mumbai, Pune        |
+|Japan	 |Osaka, Tokyo      |
+|South Korea   |Busan, Seoul        |
+|Norway	 |Oslo, Stavanger       |
+|Qatar	 |Doha          |
+|South Africa	   |Cape Town, Johannesburg        |
+|Sweden	 |Gävle, Sandviken, Staffanstorp      |
+|Switzerland		   |Geneva, Zurich     |
+|United Arab Emirates    |Dubai, Abu Dhabi        |
+|United Kingdom	   |Durham, London, Cardiff      |
+|United States    |Boydton, Cheyenne, Chicago, Des Moines, Quincy, San Antonio, Santa Clara, San Jose       |
