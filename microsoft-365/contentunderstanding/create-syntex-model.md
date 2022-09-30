@@ -40,7 +40,7 @@ Follow these steps to create a model in SharePoint Syntex.
     - [**Train a custom model**](#train-a-custom-model)
     - [**Set up a prebuilt model**](#set-up-a-prebuilt-model)
 
-    ![Screenshot of the View options for classification and extraction page showing the custom models and prebuilt models.](../media/content-understanding/view-options-for-classification-and-extraction-page.png) 
+    ![Screenshot of the View options for classification and extraction page showing the custom models and prebuilt models.](../media/content-understanding/options-for-model-creation.png) 
 
     > [!NOTE]
     > All model options might not be available. These options are configured by your Microsoft 365 admin.
