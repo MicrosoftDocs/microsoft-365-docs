@@ -15,7 +15,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Refresh your sensitive information source table file. You can refresh your sensitive information database up to 5 times in every 24 hour period.
+description: Learn how to refresh your sensitive information source table file on a one time basis or set up automated recurring refresh cycles.
 ms.custom: seo-marvel-apr2020
 ---
 
