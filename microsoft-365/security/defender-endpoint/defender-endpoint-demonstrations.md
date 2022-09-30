@@ -20,7 +20,7 @@ ms.subservice: mde
 
 # Microsoft Defender for Endpoint - demonstration scenarios
 
-The following demonstration scenarios will help you learn about the capabilities of Microsoft Defender for Endpoint. Demonstration scenarios are provided for the following Microsoft Defender for Endpoint protection areas:
+The following demonstration scenarios will help you learn about the capabilities of Microsoft Defender for Endpoint on Windows (Mac and Linux are out of scope). Demonstration scenarios are provided for the following Microsoft Defender for Endpoint protection areas:
 
 :::image type="content" source="images/microsoft-defender-for-endpoint-cloud-protection.png" alt-text="Shows the areas of Microsoft Defender for Endpoint demonstration scenarios covered in this collection" lightbox="images/microsoft-defender-for-endpoint-cloud-protection.png":::
 
@@ -47,7 +47,7 @@ The following table lists the available demonstrations alphabetically, with thei
 | 6 | [Controlled folder access (CFA) demonstrations](defender-endpoint-demonstration-controlled-folder-access.md) | ASR | Download and execute a sample file to trigger CFA ransomware protection. |
 | 7 | [Exploit protection (EP) demonstrations](defender-endpoint-demonstration-exploit-protection.md) | ASR | Apply custom exploit protection settings. |
 | 8 | [Network protection demonstrations](defender-endpoint-demonstration-network-protection.md) | ASR | Navigate to a suspicious URL to trigger network protection. |
-| 9 | [Potentially unwanted applications (PUA) demonstration](defender-endpoint-demonstration-potentially-unwanted-applications.md) | EDR | Confirm that potentially unwanted applications (PUAs) are being blocked on your network by downloading a fake (safe) PUA file. |
+| 9 | [Potentially unwanted applications (PUA) demonstration](defender-endpoint-demonstration-potentially-unwanted-applications.md) | NGP | Confirm that potentially unwanted applications (PUAs) are being blocked on your network by downloading a fake (safe) PUA file. |
 | 10 | [URL reputation demonstrations](defender-endpoint-demonstration-smartscreen-url-reputation.md) | NGP | Navigate to the URL Reputation page to see the demonstration scenarios using Microsoft Edge. |
 
 ## See also
