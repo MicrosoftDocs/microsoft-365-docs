@@ -132,7 +132,7 @@ You can find settings for specific Compliance Manager functions by selecting **C
 
 - [Testing source](#testing-source-for-automated-testing): allows you to turn off or on the automatic testing of improvement actions
 - [Manage user history](#manage-user-history): allows you to manage the data of users associated to improvement actions, including the ability to reassign improvement actions to a different user
-- [User permissions](#user-permissions-for-assessments): allows you to view and manage user roles for access to assessments or assessment templates
+- [User access](#user-access): allows you to view and manage user roles for access to assessments or assessment templates
 
 Compliance Manager settings can only be accessed by users who hold a global administrator or Compliance Manager Administrator role.
 
@@ -245,38 +245,39 @@ Deleting a user’s history will remove them as an owner of improvement actions,
 
 To delete a user’s history, follow the steps below:
 
-1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft Purview compliance portal.
+1. In **Compliance Manager settings,** select **Manage user history**.
 
-2. On the settings page, select **Compliance Manager**.
+1. Find a user by searching the list email addresses on the page, or by selecting **Search** and entering that user’s email address.
 
-3. Select **Manage user history** from the navigation at left.
+1. From the **Select** drop-down menu, choose **Delete history**.
 
-4. Find a user by searching the list email addresses, or by selecting **Search** and entering that user’s email address.
+1. A window appears asking you to confirm the permanent deletion of the user’s history. To continue with deletion, select **Delete history**. To leave without deleting the history, select **Cancel**.
 
-5. From the **Select** drop-down menu, choose **Delete history**.
+1. You’ll arrive back at the **Manage user history** page with a confirmation message at the top that the history for the user was deleted.
 
-6. A window appears asking you to confirm the permanent deletion of the user’s history. To continue with deletion, select **Delete history**. To leave without deleting the history, select **Cancel**.
+### User access
 
-7. You’ll arrive back at the **Manage user history** page with a confirmation message at the top that the history for the user was deleted.
-
-### User permissions for assessments
-
-The **User permissions** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments. This section is also where you can revoke access to an assessment by removing their assessment-specific role.
+The **User access** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments. This section is also where you can revoke access to an assessment by removing their assessment-specific role.
 
 [Visit these instructions](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for assigning user roles from an assessment's details page.
 
 To remove a user's access to an assessment:
 
-- In **Compliance Manager settings,** select **User permissions**.
-- Select the checkbox next to the name of the user whose role you want to edit. Only one user can be selected at a time.
-- Select **Manage assessments**. An **Edit assessment permissions** flyout pane will appear.
-- Go to the tab that corresponds to the role you want to remove: Reader, Assessor, or Contributor.
-- Select the button next to the assessment for which you want to remove access, and select **Remove assessment**.
-- A **Remove access?** confirmation box appears. Select **Confirm** to remove the user's role for that assessment, or select **Cancel** to cancel.
-- The name of the assessment will now be removed from the role tab.
-- Select **Save** on the flyout pane. The role removal won't be completed until you select the Save button. Selecting **Close** will cancel out of the process without saving the role removal.
+1. In **Compliance Manager settings,** select **User access**.
 
-The user list on the **User permissions** page will now reflect the changes you made.
+1. Select the checkbox next to the name of the user whose role you want to edit. Only one user can be selected at a time.
+
+1. Select **Manage assessments**. An **Edit assessment permissions** flyout pane will appear.
+
+1. Go to the tab that corresponds to the role you want to remove: Reader, Assessor, or Contributor.
+
+1. Select the button next to the assessment for which you want to remove access, and select **Remove assessment**.
+
+1. A **Remove access?** confirmation box appears. Select **Confirm** to remove the user's role for that assessment, or select **Cancel** to cancel. The name of the assessment will now be removed from the role tab.
+
+1. Select **Save** on the flyout pane. The role removal won't be completed until you select the Save button. Selecting **Close** will cancel out of the process without saving the role removal.
+
+The user list on the **User access** page will now reflect the changes you made.
 
 ## Understand the Compliance Manager dashboard
 
