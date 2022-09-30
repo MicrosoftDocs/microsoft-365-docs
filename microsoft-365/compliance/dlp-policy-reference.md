@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 09/23/2022
+ms.date:
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -14,8 +14,8 @@ search.appverid:
 - MET150
 ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
-- M365-security-compliance
-- SPO_Content
+- tier3
+- purview-compliance
 recommendations: false
 description: "DLP policy component and configuration reference. This article provides a detailed anatomy of a DLP policy."
 ms.custom: seo-marvel-apr2021
