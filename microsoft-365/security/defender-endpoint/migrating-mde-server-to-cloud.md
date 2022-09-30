@@ -10,7 +10,8 @@ ms.topic: article
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - m365-security
+- m365-security
+- tier2
 ms.custom: migrationguides
 ms.date: 07/19/2022
 ms.subservice: mde

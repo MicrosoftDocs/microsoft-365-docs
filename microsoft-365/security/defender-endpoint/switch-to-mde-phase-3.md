@@ -16,6 +16,7 @@ ms.collection:
   - m365-security
   - m365solution-migratetomdatp
   - highpri
+  - tier1
 ms.custom: 
 - migrationguides
 - admindeeplinkDEFENDER

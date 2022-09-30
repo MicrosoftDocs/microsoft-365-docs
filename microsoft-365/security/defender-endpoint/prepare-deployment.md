@@ -16,6 +16,7 @@ ms.collection:
   - m365solution-endpointprotect
   - m365solution-scenario
   - highpri
+  - tier1
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150

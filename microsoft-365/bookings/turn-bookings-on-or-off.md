@@ -8,6 +8,8 @@ ms.topic: article
 ms.service: bookings
 ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: "Learn how to get access to Microsoft Bookings in Microsoft 365."
 ---

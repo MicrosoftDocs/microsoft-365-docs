@@ -13,7 +13,9 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 search.appverid: met150
 ---

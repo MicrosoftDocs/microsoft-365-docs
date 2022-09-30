@@ -14,7 +14,9 @@ ms.date: 08/04/2022
 ms.reviewer:
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier3
 search.appverid: met150
 ---
 

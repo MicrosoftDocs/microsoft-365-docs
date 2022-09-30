@@ -14,6 +14,7 @@ ms.collection:
 - m365solution-compliancemanager
 - m365initiative-compliance
 - highpri
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150

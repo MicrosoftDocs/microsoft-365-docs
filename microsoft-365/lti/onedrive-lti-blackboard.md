@@ -6,7 +6,7 @@ manager: serdars
 ms.reviewer: amitman 
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.collection: m365initiative-edu
 ms.localizationpriority: medium
 description: Create and grade assignments, build and curate course content, and collaborate on files in real time with the new Microsoft OneDrive Learning Tools Interoperability for Blackboard.
