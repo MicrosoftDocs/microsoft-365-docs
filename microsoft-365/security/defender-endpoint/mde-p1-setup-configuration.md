@@ -14,7 +14,7 @@ ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: 
 - m365-security
-- m365initiative-defender-endpoint
+- tier2
 ---
 
 # Set up and configure Microsoft Defender for Endpoint Plan 1

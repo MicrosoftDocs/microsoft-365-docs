@@ -15,6 +15,7 @@ f1.keywords:
 - NOCSH
 description: Learn about new Office 365 datacenter geos and how to use the data residency option to request a move of your core data to a new geo.
 ms.custom: seo-marvel-apr2020
+ms.collection: scotvorg
 ---
 
 # Moving core data to new Microsoft 365 datacenter geos

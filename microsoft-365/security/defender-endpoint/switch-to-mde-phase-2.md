@@ -19,6 +19,7 @@ ms.collection:
   - m365solution-mcafeemigrate
   - m365solution-symantecmigrate
   - highpri
+  - tier1
 ms.topic: article
 ms.custom: migrationguides
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
