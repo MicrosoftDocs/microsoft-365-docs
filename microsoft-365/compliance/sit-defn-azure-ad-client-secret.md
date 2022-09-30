@@ -14,7 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier2
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -65,6 +65,6 @@ The patterns are designed to match actual credentials with reasonable confidence
 ### Keyword_AppSecret:
 
 - secret
-- assword
+- password
 - key
 
