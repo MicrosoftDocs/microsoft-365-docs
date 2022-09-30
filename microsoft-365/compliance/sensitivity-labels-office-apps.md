@@ -103,6 +103,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Yes |
 |[PDF support](#pdf-support) | Preview: Rolling out to [Beta Channel](https://office.com/insider)|  Under review | Under review | Under review | Under review |
 |[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook) | Preview: Rolling out to [Beta Channel](https://office.com/insider) | 16.61+ <sup>\*</sup>                   | 4.2226+ | 4.2203+ | Under review |
+|[Label inheritance from email attachments](#configure-label-inheritance-from-email-attachments) | Preview: Rolling out to [Beta Channel](https://office.com/insider) | Under review                   | Under review | Under review | Yes |
 |[Sensitivity bar](#sensitivity-bar) and [display label color](#label-colors) | Under review |  Under review | Under review | Under review | Under review |
 
 **Footnotes:**
@@ -410,6 +411,14 @@ Set-Label -Identity "8faca7b8-8d20-48a3-8ea2-0f96310a848e" -AdvancedSettings @{S
 ```
 
 For more help in specifying PowerShell advanced settings, see [PowerShell tips for specifying the advanced settings](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
+
+## Configure label inheritance from email attachments
+
+> [!NOTE]
+> This capability is currently rolling out in preview for built-in labeling, and in various stages of release across the platforms. Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Label inheritance from email attachments**.
+
+
+
 
 ## PDF support
 
