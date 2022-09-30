@@ -40,9 +40,9 @@ These are the key features you'll get with the Microsoft 365 support integration
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-description-field-2.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-description-field-2.png" alt-text="Recommended solutions description field.":::
 
-- Microsoft service request: Escalate issues to Microsoft support agents and receive status updates for your case.
-
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-service-request.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-service-request.png" alt-text="Service request form.":::
+- Microsoft service request: Escalate issues to Microsoft support agents and receive status updates for your request. With an updated workflow, you can now create a service request by adding your preferred title, description, and contact information similar to what is found in the Microsoft 365 admin portal.
+![SNOW_escalation](https://user-images.githubusercontent.com/93688542/193369021-ac8885b0-c473-49c1-9c49-2ca5211d8304.png)
+![SNOW_escalation2](https://user-images.githubusercontent.com/93688542/193369043-7857645f-8c8e-4bdf-a7f3-ef3fa55e53c1.png)
 
 ## Prerequisites
 
@@ -81,9 +81,11 @@ After the Microsoft 365 Support Integration app has been installed, two Applicat
 ## Setup the integration
 
 After you've downloaded the app, navigate to the Microsoft 365 setup wizard in your SNOW environment to complete the setup process.
-:::image type="content" source="../../media/154124985-76e13e7d-b32e-4741-830b-bbb110d3ecbf.png" alt-text="Snow setup wizard":::
+![MicrosoftTeams-image (3)](https://user-images.githubusercontent.com/93688542/193369141-a3fc8000-9643-4480-a758-3b0cc5752280.png)
 
 You can learn more about the steps by visiting the following pages:
+- If you would like to get started without setting up the Microsoft 365 support integration app, you can select the **Continue without any setup** option. This option will continue to provide basic recommended solutions.
+![MicrosoftTeams-image (2)](https://user-images.githubusercontent.com/93688542/193369125-a2fff44e-faa6-48e8-be9c-a3876026741e.png)
 - If your ServiceNow environment allows Basic Authentication (access with ServiceNow user credential) for inbound webservice calls, then follow instructions in [Set up Microsoft 365 support integration with ServiceNow Basic Authentication](servicenow-basic-authentication.md).
 - If your ServiceNow environment does NOT allows Basic Authentication (access with ServiceNow user credential) for inbound webservice calls, then follow instructions in [Set up Microsoft 365 support integration with Azure AD Auth Token](servicenow-aad-oauth-token.md).
   - This configuration will require an SSO tenant in order for the AAD Auth Token to work correctly.
