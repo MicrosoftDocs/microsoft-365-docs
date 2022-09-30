@@ -55,7 +55,7 @@ Follow these steps to create a model in SharePoint Syntex.
 
     - [**Freeform selection method**](#freeform-selection-method). This creates a freeform document processing model.
 
-    - [**Layout method**](#layout-method). This creates a structured document model.
+    - [**Layout method**](#layout-method). This creates a structured document processing model.
 
 2. When you select a custom model, the next page will show you more information about the model. If you want to continue to create the model, select **Next**.
 
