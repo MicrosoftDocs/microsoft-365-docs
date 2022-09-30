@@ -25,7 +25,7 @@ With content assembly, you can use an existing document to create a *modern temp
 > You must be a licensed SharePoint Syntex user to access and use content assembly capabilities. You also must have permissions to manage SharePoint lists.
 
 
-
+<!---
 ## Create a modern template
 
 Follow these steps to create a modern template.
@@ -63,8 +63,6 @@ Follow these steps to create a modern template.
 
    > [!NOTE]
    > You can create placeholders for text, and also placeholders for text within cells in a table. However, images, smart art, complete tables, and bulleted lists are currently not supported.   
-
-
 
 ### Associate a placeholder by entering text or selecting a date
 
@@ -186,7 +184,7 @@ You can use a *published* modern template to quickly create similar documents wi
 >- The uploaded document that is used to create the modern template will be saved as a separate copy and placed in the /forms directory of the document library. The original file on the disk will be unaffected.
 >- You can create placeholders for text, and also placeholders for text within cells in a table. However, images, smart art, complete tables, and bulleted lists are currently not supported.
 >- Once a document is created from a template, it's not associated with the template.
-
+--->
 
 
  
