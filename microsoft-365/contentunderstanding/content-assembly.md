@@ -24,6 +24,40 @@ With content assembly, you can use an existing document to create a *modern temp
 > [!NOTE]
 > You must be a licensed SharePoint Syntex user to access and use content assembly capabilities. You also must have permissions to manage SharePoint lists.
 
+## Supported file types
+
+Only Microsoft Word documents (.docx/.doc extension) are currently supported for creating a template.
+
+## File limitations
+
+- The Word document you want to use as a modern template should not include comments or have Track Changes enabled.
+
+- Because content controls are used in Word to create fields for the modern template, make sure any text placeholders for images are not text-wrapped. If the document already contains content controls, remove them before you use it to create a modern template.
+
+## Current release limitations
+
+- The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library.
+
+- The uploaded document that is used to create the modern template will be saved as a separate copy and placed in the /forms directory of the document library. The original file on the disk will be unaffected.
+
+- You can create fields for text, and also fields for text within cells in a table. However, images, smart art, complete tables, and bulleted lists are currently not supported.
+
+- Once a document is created from a template, it's not associated with the template.
+
+## Differences between modern templates and other document templates
+
+|Feature  |Modern templates  |Other templates  |
+|---------|---------|---------|
+|Licensing		|Syntex license needed to access this offering.  |Offered as a part of Microsoft E3/E5 license.  |
+|When to use each		     | You should use for generating standard transactional documents such as service agreements and statements of work when only specific parts of the document changes. Documents generated from modern templates ensure consistency and less chances of manual error and typos that occur when users change sections of the document in free flow.  |You should use this when you want to set a document as a sample for other users to refer. You can consider using regular templates for non-transactional documents such as sales pitches or executive summaries.  |
+|Standardizing content generation |You can add fields and then associate with various data sources for only specific sections of the content to make it easy for users to generate documents once template is published.  |Once uploaded, the file is kept as-is in the template. Any user using the template have to change the content accordingly.   |
+|Data Sources supported		|You can associate fields with SharePoint lists and term store while creating templates.   |Not applicable   |
+|Document types supported	 |Only Microsoft Word documents (.docx/.doc extension) are currently supported for creating a template.  |You can use any file to upload as template.   |
+|Management of templates	|Once template is created, you can edit or manage the template fields, rename the template, and republish for use.  |You can r [to be provided].   |
+|Draft version of templates	|You can create draft versions of templates before finally publishing it for use by other users.   |There is no capability to create drafts of regular templates.  |
+|Workflows   |You can automate document generation from templates by [setting up Power Automate workflows](automate-document-generation.md).  |Workflows cannot be configured with regular templates.  |
+
+
 
 <!---
 ## Create a modern template
