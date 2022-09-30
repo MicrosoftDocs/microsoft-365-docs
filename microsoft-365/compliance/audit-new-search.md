@@ -32,6 +32,8 @@ The Audit New Search (preview) builds upon the existing search functionalities a
 - Completed search jobs are now stored, giving customers the ability to reference historical audit searches. These search jobs are presented in the UI, listing the search name, search job status, progress %, Number of results, Creation Time, and Searched by.
 - Each admin Audit account user can have a maximum of 10 search jobs in progress at a time.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Information to get started
 
 View the available Microsoft Purview Audit documentation as the search job creation and export experiences have many parallels with the current search experience:

@@ -24,6 +24,8 @@ description: "Canada passport number sensitive information type entity definitio
 
 # Canada passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 two uppercase letters followed by six digits

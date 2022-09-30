@@ -24,6 +24,8 @@ description: "Estonia passport number sensitive information type entity definiti
 
 # Estonia passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 one letter followed by seven digits with no spaces or delimiters

@@ -45,6 +45,8 @@ Check out the [Microsoft Mechanics video](https://www.youtube.com/watch?v=Ynkfu8
 > [!IMPORTANT]
 > Insider risk management is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that insider risk management is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Modern risk pain points
 
 Managing and minimizing risk in your organization starts with understanding the types of risks found in the modern workplace. Some risks are driven by external events and factors that are outside of direct control. Other risks are driven by internal events and user activities that can be minimized and avoided. Some examples are risks from illegal, inappropriate, unauthorized, or unethical behavior and actions by users in your organization. These behaviors include a broad range of internal risks from users:

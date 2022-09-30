@@ -60,6 +60,8 @@ To keep up with the latest communication compliance updates, select **What's new
 > [!IMPORTANT]
 > Communication compliance is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that communication compliance is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Scenarios for communication compliance
 
 Communication compliance policies can assist with reviewing messages in your organization in several important compliance areas:

@@ -24,6 +24,8 @@ description: "Azure SAS sensitive information type entity definition."
 
 # Azure SAS
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 The string `sig` followed by the characters and strings outlined in the pattern below.

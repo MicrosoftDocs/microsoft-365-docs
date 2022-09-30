@@ -24,6 +24,8 @@ description: "Azure Bot Framework secret key sensitive information type entity d
 
 # Azure Bot Framework secret key (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 55 characters consisting of letters, digits, and special characters.

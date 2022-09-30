@@ -24,6 +24,8 @@ description: "Germany tax identification number sensitive information type entit
 
 # Germany tax identification number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11 digits without spaces and delimiters

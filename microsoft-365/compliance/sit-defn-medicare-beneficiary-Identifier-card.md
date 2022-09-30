@@ -24,6 +24,8 @@ description: "Medicare Beneficiary Identifier (MBI) card sensitive information t
 
 # Medicare Beneficiary Identifier (MBI) card
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11 character alphanumeric pattern

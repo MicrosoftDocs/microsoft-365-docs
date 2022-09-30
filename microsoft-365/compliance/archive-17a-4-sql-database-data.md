@@ -23,6 +23,8 @@ Use the [SQL DataParser](https://www.17a-4.com/sql-dataparser/) from 17a-4 LLC t
 
 After SQL data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a SQL connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Overview of archiving SQL data
 
 The following overview explains the process of using a data connector to archive SQL data in Microsoft 365.

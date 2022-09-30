@@ -24,6 +24,8 @@ description: "Brazil national identification card (RG) sensitive information typ
 
 # Brazil national identification card (RG)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Registro Geral (old format): Nine digits

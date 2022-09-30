@@ -38,6 +38,8 @@ Watch this video for a quick summary of creating a trainable classifier. You'll 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Prerequisites
 
 ### Licensing requirements

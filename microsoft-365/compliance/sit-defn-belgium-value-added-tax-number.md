@@ -24,6 +24,8 @@ description: "Belgium value added tax number sensitive information type entity d
 
 # Belgium value added tax number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 12-character alphanumeric pattern

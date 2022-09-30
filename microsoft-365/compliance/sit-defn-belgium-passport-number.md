@@ -24,6 +24,8 @@ description: "Belgium passport number sensitive information type entity definiti
 
 # Belgium passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 two letters followed by six digits with no spaces or delimiters

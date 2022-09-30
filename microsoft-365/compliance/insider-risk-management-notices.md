@@ -23,6 +23,8 @@ Insider risk management notice templates allow you to automatically send email m
 
 Create notice templates if you want to send users an email reminder notice for policy matches as part of the case resolution process. Notices can only be sent to the user email address associated with the specific case being reviewed. When selecting a notice template to apply to a policy match, you can choose to accept the field values defined in the template or overwrite the fields as needed
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Notice templates dashboard
 
 The **Notices templates dashboard** displays a list of configured notice templates and allows you to create new notice templates. The notice templates are listed in reverse date order with the most recent notice template listed first.

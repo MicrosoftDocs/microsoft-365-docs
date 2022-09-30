@@ -24,6 +24,8 @@ description: "Credentials in URL sensitive information type entity definition."
 
 # Credentials in URL
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Paired username and password used in URL

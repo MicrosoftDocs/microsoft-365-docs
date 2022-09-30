@@ -29,6 +29,8 @@ description: Use Mobile Device Management tools to deploy the configuration pack
 You can use mobile device management (MDM) solutions to configure devices. Microsoft 365 information protection supports MDMs by providing OMA-URIs to create policies to manage devices.
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 If you're using Microsoft Intune, you must have the device MDM Enrolled. Otherwise, settings will not be applied successfully. 
 

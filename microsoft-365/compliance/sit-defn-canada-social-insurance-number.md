@@ -24,6 +24,8 @@ description: "Canada social insurance number sensitive information type entity d
 
 # Canada social insurance number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits with optional hyphens or spaces

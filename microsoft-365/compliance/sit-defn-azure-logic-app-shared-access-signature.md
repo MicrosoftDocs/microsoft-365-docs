@@ -24,6 +24,8 @@ description: "Azure Logic App shared access signature sensitive information type
 
 # Azure Logic App shared access signature (preview) 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of up to 76 characters consisting of letters, digits, and special characters.

@@ -28,6 +28,8 @@ When you have [published](create-sensitivity-labels.md#publish-sensitivity-label
 
 Use the information in this article to help you successfully manage sensitivity labels in Office apps. For example, identify the minimum versions of apps you need for features that are specific to built-in labeling, any additional configuration information for these features, and understand interactions with the Azure Information Protection unified labeling client and other apps and services.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Labeling client for desktop apps
 
 To use sensitivity labels that are built into Office desktop apps for Windows and Mac, you must use a subscription edition of Office. This labeling client doesn't support standalone editions of Office, sometimes called "Office Perpetual".

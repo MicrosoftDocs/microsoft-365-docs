@@ -27,6 +27,8 @@ Compliance Manager offers the option to add your own controls and improvement ac
 
 To extend a template, you will use special instructions for modifying template data, depending on whether you’re extending Microsoft assessment templates or universal assessment templates.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Extend Microsoft assessment templates
 
 When you extend a Microsoft template, such as one created for use with Microsoft 365, it can still receive updates released by Microsoft. Updates may happen when there are changes to the related regulation or product (see [Accept updates to assessments](compliance-manager-assessments.md#accept-updates-to-assessments)).

@@ -24,6 +24,8 @@ description: "Azure AD client access token sensitive information type entity def
 
 # Azure AD client access token (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of up to 10,000 characters consisting of letters, digits, and special characters.

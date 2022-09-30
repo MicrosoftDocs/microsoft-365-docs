@@ -24,6 +24,8 @@ description: "Canada bank account number sensitive information type entity defin
 
 # Canada bank account number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 7 or 12 digits

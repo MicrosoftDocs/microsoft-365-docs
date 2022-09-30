@@ -33,6 +33,8 @@ For data governance that maps and manages data across your data estate, includin
 
 For a data protection solution, see [Deploy an information protection solution with Microsoft Purview](information-protection-solution.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Licensing
 
 To understand your licensing requirements and options, see the information from the Microsoft 365 guidance for security & compliance, [Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) section for feature-level licensing requirements.

@@ -32,6 +32,8 @@ The auto-apply functionality uses SharePoint metadata for document classificatio
 
 In this article, we'll look at the information architecture and definition of the retention labels. Then we'll classify documents by auto-applying the labels. And finally we'll generate the events that initiate the retention period.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Information architecture
 
 Our scenario is a manufacturing company that uses SharePoint to store all the documents about the products that the company develops. These documents include product specifications, agreements with suppliers, and user manuals. When these documents are stored in SharePoint through Enterprise Content Management policies, document metadata is defined, which is used to classify them. Each document has the following metadata properties:

@@ -24,6 +24,8 @@ description: "Client secret / API key sensitive information type entity definiti
 
 # Client secret / API key (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A client secret or refresh token used in OAuth 2.0 protocol.

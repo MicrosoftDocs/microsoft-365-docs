@@ -60,6 +60,8 @@ You can find these reports in the Microsoft Purview compliance portal \> **Repor
 
 ![DLP policy matches report.](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## View the justification submitted by a user for an override
 
 If your DLP policy allows users to override it, you can use the false positive and override report to view the text submitted by users in the policy tip.

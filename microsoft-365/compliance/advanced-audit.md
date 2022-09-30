@@ -34,6 +34,8 @@ The [Audit functionality](search-the-audit-log-in-security-and-compliance.md) in
 
 This article provides an overview of Audit (Premium) capabilities and shows you how to set up users for Audit (Premium).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Long-term retention of audit logs
 
 Audit (Premium) retains all Exchange, SharePoint, and Azure Active Directory audit records for one year. This is accomplished by a default audit log retention policy that retains any audit record that contains the value of **Exchange**, **SharePoint**, or **AzureActiveDirectory** for the **Workload** property (which indicates the service in which the activity occurred) for one year. Retaining audit records for longer periods can help with on-going forensic or compliance investigations. For more information, see the "Default audit log retention policy" section in [Manage audit log retention policies](audit-log-retention-policies.md#default-audit-log-retention-policy).

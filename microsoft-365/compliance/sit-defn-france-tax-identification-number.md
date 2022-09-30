@@ -24,6 +24,8 @@ description: "France tax identification number sensitive information type entity
 
 # France tax identification number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 13 digits

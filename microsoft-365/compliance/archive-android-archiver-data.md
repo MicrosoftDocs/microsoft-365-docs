@@ -23,6 +23,8 @@ Use a TeleMessage connector in the Microsoft Purview compliance portal to import
 
 After data from Android mobile phones is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, Content Search, and Microsoft 365 retention policies to Android Archiver data. For example, you can search Android Archiver mobile communication using Content Search or associate the mailbox that contains the Android Archiver connector data with a custodian in an eDiscovery (Premium) case. Using an Android Archiver connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Overview of archiving Android mobile data
 
 The following overview explains the process of using a connector to archive Android mobile data in Microsoft 365.

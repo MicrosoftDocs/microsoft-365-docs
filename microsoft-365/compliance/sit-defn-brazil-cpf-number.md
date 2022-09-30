@@ -24,6 +24,8 @@ description: "Brazil CPF number sensitive information type entity definition."
 
 # Brazil CPF number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11 digits that include a check digit and can be formatted or unformatted

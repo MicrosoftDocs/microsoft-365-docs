@@ -39,6 +39,8 @@ You can use the Content search eDiscovery tool in the Microsoft Purview complian
 
 After you run a search, the number of content locations and an estimated number of search results are displayed on the search flyout page. You can quickly view statistics, such as the content locations that have the most items that match the search query. After you run a search, you can preview the results or export them to a local computer.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you run a search
 
 - To access to the Content search tool in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a> (to run searches and preview results and export results), an administrator, compliance officer, or eDiscovery manager must be a member of the eDiscovery Manager role group in the compliance portal. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).

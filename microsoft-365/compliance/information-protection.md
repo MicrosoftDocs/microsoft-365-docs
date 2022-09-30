@@ -39,6 +39,8 @@ Use the following sections to learn more about the available capabilities and ho
 
 For information about governing your data for compliance or regulatory requirements, see [Govern your data with Microsoft Purview](manage-data-governance.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Know your data
 
 To understand your data landscape and identify sensitive data across your hybrid environment, use the following capabilities:

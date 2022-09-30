@@ -24,6 +24,8 @@ description: "Bulgaria driver's license number sensitive information type entity
 
 # Bulgaria drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits without spaces and delimiters

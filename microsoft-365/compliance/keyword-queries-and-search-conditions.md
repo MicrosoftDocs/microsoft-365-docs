@@ -40,6 +40,8 @@ For step-by-step instructions on how to create different eDiscovery searches, se
 > [!NOTE]
 > eDiscovery searches in the compliance portal and the corresponding **\*-ComplianceSearch** cmdlets in Security & Compliance PowerShell use the Keyword Query Language (KQL). For more detailed information, see [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Searchable email properties
 
 The following table lists email message properties that can be searched by using the eDiscovery search tools in the compliance portal or by using the **New-ComplianceSearch** or the **Set-ComplianceSearch** cmdlet. The table includes an example of the  _property:value_ syntax for each property and a description of the search results returned by the examples. You can type these  `property:value` pairs in the keywords box for an eDiscovery search.

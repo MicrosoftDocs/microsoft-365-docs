@@ -24,6 +24,8 @@ description: "Hong Kong identity card (HKID) number sensitive information type e
 
 # Hong Kong identity card (HKID) number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Combination of 8-9 letters and numbers plus optional parentheses around the final character

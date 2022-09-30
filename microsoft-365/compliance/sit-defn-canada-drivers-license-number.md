@@ -24,6 +24,8 @@ description: "Canada driver's license number sensitive information type entity d
 
 # Canada drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Varies by province

@@ -53,6 +53,8 @@ Using these capabilities, you can incorporate your organization's retention sche
 
 In addition to the online documentation, you might find it useful to download a [deck with FAQs](https://aka.ms/MIPC/Blog-RecordsManagementWebinar) from a records management webinar. The recording of the actual webinar is no longer available.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Records
 
 When content is declared a record:

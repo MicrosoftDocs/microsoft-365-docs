@@ -23,6 +23,8 @@ Use the [LivePerson Conversational Cloud DataParser](https://www.17a-4.com/livep
 
 After data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a LivePerson Conversational Cloud connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Overview of archiving LivePerson Conversational Cloud data
 
 The following overview explains the process of using a data connector to archive LivePerson Conversational Cloud data in Microsoft 365.

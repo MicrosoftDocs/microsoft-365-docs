@@ -28,6 +28,8 @@ To view the **Permissions** tab in the compliance portal, users need to be a glo
 
 Permissions in the compliance portal are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services, so if you're familiar with the permission structure in these services, granting permissions in the compliance portal will be familiar. It's important to remember that the permissions managed in the compliance portal don't cover the management of all the permissions needed in each individual service. You'll still need to manage certain service-specific permissions in the admin center for the specific service. For example, if you need to assign permissions for archiving, auditing, and MRM retention policies, you'll need to manage these permissions in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Relationship of members, roles, and role groups
 
 A role grants permissions to do a set of tasks; for example, the Case Management role lets users work with eDiscovery cases.

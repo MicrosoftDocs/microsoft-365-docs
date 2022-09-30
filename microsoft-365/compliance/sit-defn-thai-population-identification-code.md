@@ -24,6 +24,8 @@ description: "Thai population identification code sensitive information type ent
 
 # Thai population identification code
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 13 digits

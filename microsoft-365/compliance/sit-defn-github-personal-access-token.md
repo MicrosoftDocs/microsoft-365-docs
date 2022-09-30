@@ -24,6 +24,8 @@ description: "GitHub personal access token sensitive information type entity def
 
 # GitHub personal access token (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 40 characters consisting of letters, digits, and special characters.

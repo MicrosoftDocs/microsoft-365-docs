@@ -30,6 +30,8 @@ Instead of exporting the full set of search results from a Content search in the
   
 When you export a report, the report files are downloaded to a folder on your local computer that has the same name as the Content Search, but that's appended with *_ReportsOnly*. For example, if the Content Search is named  *ContosoCase0815*, then the report is downloaded to a folder named *ContosoCase0815_ReportsOnly*. For a list of documents that are included in the report, see [What's included in the report](#whats-included-in-the-report).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you export a search report
 
 - To export a search report, you have to be assigned the Compliance Search management role in compliance portal. This role is assigned by default to the built-in eDiscovery Manager and Organization Management role groups. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).

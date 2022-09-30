@@ -25,6 +25,8 @@ Compliance Manager helps you manage your organization’s compliance requirement
 
 Your licensing agreement to use Compliance Manager may include one or more built-in templates for building assessments. An extensive library of premium assessment templates is also available for building assessments specific to your organization’s needs. To try out these templates before purchasing licenses, sign up for the free Compliance Manager premium assessments trial.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Terms and conditions
 
 See the [terms and conditions](/legal/microsoft-365/microsoft-365-trial) for Microsoft 365 trials.

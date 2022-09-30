@@ -33,6 +33,8 @@ You can fine tune a template by modifying any of its existing rules or adding ne
 
 You can also choose the Custom template, which has no default rules, and configure your DLP policy from scratch, to meet the specific compliance requirements for your organization.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Permissions
 
 Members of your compliance team who will create DLP policies need permissions to the Compliance Center. By default, your tenant admin will have access can give compliance officers and other people access. Follow these steps:

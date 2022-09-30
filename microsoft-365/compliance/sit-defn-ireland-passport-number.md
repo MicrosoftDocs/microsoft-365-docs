@@ -24,6 +24,8 @@ description: "Ireland passport number sensitive information type entity definiti
 
 # Ireland passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Two letters or digits followed by seven digits with no spaces or delimiters

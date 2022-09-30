@@ -24,6 +24,8 @@ description: "Understand how to use Configuration Analyzer for Microsoft Purview
 
 **In this article:** Learn how to install and run the Configuration Analyzer for Microsoft Purview (CAMP) tool to get quickly started with Microsoft Purview Compliance Manger.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Compliance Configuration Analyzer (CAMP) overview
 
 The Configuration Analyzer for Microsoft Purview (CAMP) is a tool that can help you get started with [Microsoft Purview Compliance Manager](compliance-manager.md). CAMP is a PowerShell-based utility that will fetch your organization's current configurations and validate them against Microsoft 365 recommended best practices. These best practices are based on a set of controls that include key regulations and standards for data protection and data governance.
