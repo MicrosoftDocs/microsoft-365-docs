@@ -14,7 +14,6 @@ ms.collection:
 - purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
-- highpri
 - tier1
 search.appverid: 
 - MOE150

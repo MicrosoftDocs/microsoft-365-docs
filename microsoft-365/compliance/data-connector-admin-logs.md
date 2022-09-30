@@ -12,7 +12,7 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier1
+- tier3
 - purview-compliance
 - data-connectors
 search.appverid:
