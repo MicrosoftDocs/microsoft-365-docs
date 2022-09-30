@@ -23,9 +23,9 @@ ms.subservice: mde
 Test how Microsoft Defender SmartScreen helps you identify phishing and malware websites based on URL reputation.
 Scenario requirements and setup
 
-- Windows 10
-- Internet Explorer or Edge browser required
-- To turn ON/OFF go to Settings -> Update & Security -> Windows Security -> Open Windows Security -> App & browser control >
+- Windows 10 or 11
+- Edge browser required
+- For more information click [here](https://learn.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 ## SmartScreen for Microsoft Edge URL scenario demonstrations
 
@@ -87,6 +87,6 @@ A benign page hosting a malicious advertisement
 
 ## See also
 
-[Microsoft Defender SmartScreen Documentation](/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview.md)
+[Microsoft Defender SmartScreen Documentation](https://learn.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 [Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)
