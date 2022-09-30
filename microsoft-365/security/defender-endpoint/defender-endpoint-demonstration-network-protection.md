@@ -55,6 +55,6 @@ Set-MpPreference -EnableNetworkProtection Disabled
 
 ## See also
 
-[Network Protection](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/network-protection?ocid=wd-av-demo-np-bottom&view=o365-worldwide)
+[Network Protection](network-protection.md)
 
 [Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)
