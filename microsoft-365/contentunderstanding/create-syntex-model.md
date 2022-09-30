@@ -51,7 +51,7 @@ Follow these steps to create a model in SharePoint Syntex.
 
     ![Screenshot of the Build a custom model section on the View options for classification and extraction page.](../media/content-understanding/build-a-custom-model-section.png) 
 
-    - [**Teaching method**](#teaching method)
+    - [**Teaching method**](#teaching-method)
 
     - [**Freeform selection method**](#freeform-selection-method)
 
