@@ -65,6 +65,6 @@ The patterns are designed to match actual credentials with reasonable confidence
 ### Keyword_AppSecret:
 
 - secret
-- assword
+- password
 - key
 
