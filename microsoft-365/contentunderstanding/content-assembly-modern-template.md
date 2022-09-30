@@ -146,3 +146,6 @@ If you need to edit an existing template or to delete or unpublish a template, f
    - For **Draft templates**, select **Edit** to open the template studio where you can edit the draft template. You can also choose to delete or publish the template.
 
       ![Screenshot of the Modern templates section showing the draft templates.](../media/content-understanding/content-assembly-edit-draft.png)
+
+> [!div class="nextstepaction"]
+> [Next step > Create a document from a modern template](content-assembly-create-document.md)
