@@ -17,3 +17,36 @@ ms.collection:
 ---
 
 # Data Residency for Other Microsoft 365 Services
+
+##Data Residency commitments available
+
+
+For data location information for the following services, please refer to the data location information in Section ***(TODO: add reference link to datamaps)***
+
+-Whiteboard
+
+-Forms
+
+-Intune
+
+-Planner
+
+-Viva Insights – Advanced, Mgr, Leader
+
+-Viva Insights – Personal
+
+-Viva Learning
+
+-Yammer
+
+-Office for mobile
+
+-OneNote Services
+
+-Power Apps for Microsoft 365
+
+-Stream
+
+**Commitment:**
+
+**No data residency commitments available, unless otherwise stated**
