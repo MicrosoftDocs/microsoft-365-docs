@@ -85,6 +85,7 @@ OCR processing works best on documents that meet the following requirements:
 
 **Classify and extract by text pattern** models support the following file types:
 
+- csv
 - doc
 - docx
 - eml
