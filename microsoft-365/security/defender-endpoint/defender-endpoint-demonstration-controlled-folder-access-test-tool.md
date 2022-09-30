@@ -25,11 +25,13 @@ Controlled Folder Access helps you protect valuable data from malicious apps and
 ## Scenario requirements and setup
 
 - Windows 10 1709 build 16273
-- Microsoft Defender AV
+- Microsoft Defender Antivirus
 
 ## PowerShell commands
 
-- Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
+```powershell
+Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
+```
 
 States
 
@@ -39,7 +41,9 @@ States
 
 ### Verify configuration
 
-- Get-MpPreference
+```powershell
+Get-MpPreference
+```
 
 ## Test file
 [CFA ransomware test file](https://demo.wd.microsoft.com/Content/ransomware_testfile_unsigned.exe)
@@ -56,20 +60,20 @@ Save this [clean file](https://demo.wd.microsoft.com/Content/testfile_safe.txt) 
 Execute PowerShell commands above
 
 ## Scenario 1: CFA blocks ransomware test file
-Turn on CFA using powershell command: Set-MpPreference -EnableControlledFolderAccess Enabled
+Turn on CFA using PowerShell command: Set-MpPreference -EnableControlledFolderAccess Enabled
 Add the demo folder to protected folders list using PowerShell command: Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
 Download the ransomware [test file](https://demo.wd.microsoft.com/Content/ransomware_testfile_unsigned.exe)
-Execute the ransomware test file *this is not ransomware, it simple tries to encrypt c:\demo
+Execute the ransomware test file *this isn't ransomware, it simple tries to encrypt c:\demo
 
 Expected results
 5 seconds after executing the ransomware test file you should see a notification CFA blocked it
 
 ## Scenario 2: What would happen without CFA
-Turn off CFA using this powershell command: Set-MpPreference -EnableControlledFolderAccess Disabled
+Turn off CFA using this PowerShell command: Set-MpPreference -EnableControlledFolderAccess Disabled
 Execute the ransomware [test file](https://demo.wd.microsoft.com/Content/ransomware_testfile_unsigned.exe)
 
 Expected results
-The files in c:\demo will be encrypted and you should get a warning message
+The files in c:\demo will be encrypted and you should get a warning message. 
 Execute the ransomware test file again to decrypt the files
 
 ## Clean-up

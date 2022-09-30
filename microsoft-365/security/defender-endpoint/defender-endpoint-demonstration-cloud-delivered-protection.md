@@ -26,22 +26,22 @@ Cloud-delivered protection for Microsoft Defender Antivirus, also referred to as
 
 - Windows 7, Windows 8.1 & Windows 10
 - Microsoft Defender Real-time protection is enabled
-- Cloud-delivered protection is enabled by default, however you may need to re-enable it if it has been disabled as part of previous organizational policies. See the [Enable cloud-delivered protection in Microsoft Defender AV](/windows/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus?ocid=wd-av-demo-cloud-middle) topic for more information.
+- Cloud-delivered protection is enabled by default, however you may need to re-enable it if it has been disabled as part of previous organizational policies. For more information, see [Enable cloud-delivered protection in Microsoft Defender Antivirus](/windows/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus?ocid=wd-av-demo-cloud-middle).
 - You can also download and use the [PowerShell script](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/) to enable this setting and others on Windows 10.
 
 ### Scenario
 
-1. [Click here](https://microsoft-my.sharepoint-df.com/:u:/p/alexkautz/ESSB16ruEZRIpA04A2_PpLwBBEjTh6dkC0knUCtg470Vqg) to download the test file. Important: The test file is not malicious, it is just a harmless file simulating a virus
+1. [Download the test file](https://microsoft-my.sharepoint-df.com/:u:/p/alexkautz/ESSB16ruEZRIpA04A2_PpLwBBEjTh6dkC0knUCtg470Vqg). Important: The test file isn't malicious, it's just a harmless file simulating a virus.
 
-2. If you see file blocked by Microsoft Defender SmartScreen, click on "View downloads" button.
+2. If you see file blocked by Microsoft Defender SmartScreen, select on "View downloads" button.
 
-   :::image type="content" source="images/cloud-delivered-protection-smartscreen-block.png" alt-text="SmartScreen blocks an unsafe download, and provides a button to click to view the **Downloads** list details.":::
+   :::image type="content" source="images/cloud-delivered-protection-smartscreen-block.png" alt-text="SmartScreen blocks an unsafe download, and provides a button to select to view the **Downloads** list details.":::
 
-3. In Downloads menu right click on the blocked file and click on **Download unsafe file**.
+3. In Downloads menu right select on the blocked file and select on **Download unsafe file**.
 
    :::image type="content" source="images/cloud-delivered-protection-smartscreen-block-view-downloads.png" alt-text="Lists the download as unsafe, but provides an option to proceed with the download":::
 
-4. If successful you should see that "Microsoft Defender Antivirus" found a virus and deleted it.
+4. You should see that "Microsoft Defender Antivirus" found a virus and deleted it.
 
    :::image type="content" source="images/cloud-delivered-protection-smartscreen-blocked-successful.png" alt-text="Microsoft Defender Antivirus detects the virus and deletes the unsafe download.":::
 
@@ -51,7 +51,7 @@ Cloud-delivered protection for Microsoft Defender Antivirus, also referred to as
 
    :::image type="content" source="images/cloud-delivered-protection-smartscreen-threat-found-notification.png" alt-text="Microsoft Defender Antivirus Threats found notification provides options to get details":::
 
-5. If the file executes, or if you see it blocked by Microsoft Defender SmartScreen it means that cloud-delivered protection is not working and you should go to [Configure and validate network connections for Microsoft Defender Antivirus](/windows/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus?ocid=wd-av-demo-cloud-middle) to learn more.
+5. If the file executes, or if you see that it was blocked by Microsoft Defender SmartScreen,  cloud-delivered protection isn't working. For more information, see [Configure and validate network connections for Microsoft Defender Antivirus](/windows/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus?ocid=wd-av-demo-cloud-middle).
 
 ### Example
 

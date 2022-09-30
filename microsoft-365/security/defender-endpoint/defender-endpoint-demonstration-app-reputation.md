@@ -25,8 +25,8 @@ Test how Microsoft Defender for Endpoint SmartScreen helps you identify phishing
 ## Scenario requirements and setup
 
 - Windows 10
-- Internet Explorer or Edge browser required
-- To turn ON/OFF go to **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **App & browser control** > **Check apps and files**
+- Internet Explorer or Microsoft Edge browser required
+- To turn ON/OFF, go to **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **App & browser control** > **Check apps and files**
 
 ## Scenario Demos
 
@@ -44,7 +44,7 @@ This program has a good reputation; the download should run uninterrupted:
 
 ### Unknown program
 
-Because the program download does not have sufficient reputation to ensure that it is trustworthy, SmartScreen will show a warning before running the program download.
+Because the program download doesn't have sufficient reputation to ensure that it's trustworthy, SmartScreen will show a warning before running the program download.
 
 - [Unknown program](https://demo.smartscreen.msft.net/download/unknown/freevideo.exe)
 
@@ -52,7 +52,7 @@ Because the program download does not have sufficient reputation to ensure that 
   
   Launching this link should render a message similar to the following:
 
-  :::image type="content" source="images/smartscreen-app-reputation-unknown.png" alt-text="SmartScreen does not have sufficient reputation information about the download file, and warns the user to stop or proceed with caution.":::
+  :::image type="content" source="images/smartscreen-app-reputation-unknown.png" alt-text="SmartScreen doesn't have sufficient reputation information about the download file, and warns the user to stop or proceed with caution.":::
 
 ### Known malware
 

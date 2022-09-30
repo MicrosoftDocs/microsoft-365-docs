@@ -56,10 +56,10 @@ You can perform these manual steps instead:
 
 ### Scenario 1: CFA blocks ransomware test file
 
-1. Turn on CFA using powershell command: Set-MpPreference -EnableControlledFolderAccess Enabled
+1. Turn on CFA using PowerShell command: Set-MpPreference -EnableControlledFolderAccess Enabled
 2. Add the demo folder to protected folders list using PowerShell command: Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
 3. Download the ransomware [test file](https://demo.wd.microsoft.com/Content/ransomware_testfile_unsigned.exe)
-4. Execute the ransomware test file *this is not ransomware, it simple tries to encrypt c:\demo
+4. Execute the ransomware test file *this isn't ransomware, it simple tries to encrypt c:\demo
 
 #### Scenario 1 expected results
 
@@ -67,7 +67,7 @@ You can perform these manual steps instead:
 
 ### Scenario 2: What would happen without CFA
 
-1. Turn off CFA using this powershell command: Set-MpPreference -EnableControlledFolderAccess Disabled
+1. Turn off CFA using this PowerShell command: Set-MpPreference -EnableControlledFolderAccess Disabled
 2. Execute the ransomware [test file](https://demo.wd.microsoft.com/Content/ransomware_testfile_unsigned.exe)
 
 #### Scenario 2 expected results
