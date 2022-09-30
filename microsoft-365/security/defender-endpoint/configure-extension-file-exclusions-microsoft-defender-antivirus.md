@@ -14,7 +14,9 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: thdoucet
 manager: dansimp
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier2
 search.appverid: met150
 ---
 
