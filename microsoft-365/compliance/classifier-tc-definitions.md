@@ -23,7 +23,7 @@ description: "This is a list of all trainable classifiers, their definitions and
 
 # Trainable classifiers definitions
 
-Microsoft 365 comes with multiple pre-trained classifiers:
+Microsoft Purview comes with multiple pre-trained classifiers:
 
 
 - **Adult, racy, and gory**: Detects images of these types. The images must be between 50 kilobytes (KB) and 4 megabytes (MB) in size and be greater than 50 x 50 pixels in height x width dimensions. Scanning and detection are supported for Exchange Online email messages, and Microsoft Teams channels and chats. Detects content in .jpeg, .png, .gif, and .bmp files.
