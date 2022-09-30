@@ -101,14 +101,19 @@ The script does the following actions. You'll be prompted to enter setup and con
 
 A Success message on the screen indicates that your connection is successfully set up.
 
-## If you need to make changes to a connection
+## Manage your connection
 
-You can use PowerShell or the Microsoft 365 admin center to manage and make changes to a connection after it's set up. For example, you can use PowerShell to update sync settings, team mappings, and disable sync for a connection. In the Microsoft 365 admin center, you can view information such as health status for all your connections and access the wizard to change connection settings.
+After a connection is set up, you can manage and make changes to it in the Microsoft 365 admin center or by using PowerShell.
 
-To learn more, see:
+### Use the Microsoft 365 admin center
 
-- [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md)
-- [Use the Microsoft 365 admin center to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-admin-center-manage.md)
+The Connector Management page lists each connection that you've set up, along with information such as health status and sync interval details. You can also access the wizard to make changes to any of your connections. For example, you can update sync settings and team mappings.
+
+To learn more, see [Use the Microsoft 365 admin center to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-admin-center-manage.md).
+
+### Use PowerShell
+
+You can use PowerShell to view an error report, change connection settings, disable sync, and more. For step-by-step guidance, see [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
 
 ## Scripts
 
