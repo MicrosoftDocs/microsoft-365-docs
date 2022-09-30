@@ -57,7 +57,9 @@ Only Microsoft Word documents (.docx/.doc extension) are currently supported for
 |Draft version of templates	|You can create draft versions of templates before finally publishing it for use by other users.   |There is no capability to create drafts of regular templates.  |
 |Workflows   |You can automate document generation from templates by [setting up Power Automate workflows](automate-document-generation.md).  |Workflows cannot be configured with regular templates.  |
 
-
+<br>
+> [!div class="nextstepaction"]
+> [Get started > Create a modern template](content-assembly-modern-template.md)
 
 <!---
 ## Create a modern template
