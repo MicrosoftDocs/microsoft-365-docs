@@ -40,7 +40,7 @@ Follow these steps to create a model in SharePoint Syntex.
     - [**Train a custom model**](#train-a-custom-model)
     - [**Set up a prebuilt model**](#set-up-a-prebuilt-model)
 
-    ![Screenshot of the View options for classification and extraction page showing the custom models and prebuilt models.](../media/content-understanding/options-for-model-creation.png) 
+    ![Screenshot of the Options for model creation page showing the custom models and prebuilt models.](../media/content-understanding/options-for-model-creation.png) 
 
     > [!NOTE]
     > All model options might not be available. These options are configured by your Microsoft 365 admin.
@@ -49,13 +49,13 @@ Follow these steps to create a model in SharePoint Syntex.
 
 1. In the **Train a custom model** section, view the types of custom models you can create. 
 
-    ![Screenshot of the Build a custom model section on the View options for classification and extraction page.](../media/content-understanding/build-a-custom-model-section.png) 
+    ![Screenshot of the Build a custom model section on the Options for model creation page.](../media/content-understanding/build-a-custom-model-section.png) 
 
-    - [**Teaching method**](#teaching-method). This creates an unstructured document processing model.
+    - [**Teaching method**](#teaching-method). This creates an [unstructured document processing model](document-understanding-overview.md).
 
-    - [**Freeform selection method**](#freeform-selection-method). This creates a freeform document processing model.
+    - [**Freeform selection method**](#freeform-selection-method). This creates a [freeform document processing model](freeform-document-processing-overview.md).
 
-    - [**Layout method**](#layout-method). This creates a structured document processing model.
+    - [**Layout method**](#layout-method). This creates a [structured document processing model](form-processing-overview.md).
 
 2. When you select a custom model, the next page will show you more information about the model. If you want to continue to create the model, select **Next**.
 
@@ -73,7 +73,7 @@ Use this method to create an [unstructured document processing model](document-u
 
     - **Description** – Enter information about how this model will be used.
 
-        ![Screenshot of the right panel of the Create a model to classify and extract by text pattern page.](../media/content-understanding/create-a-model-panel.png) 
+        ![Screenshot of the right panel of the Create a model with the teaching method  page.](../media/content-understanding/create-a-model-panel.png) 
     
 4. Under **Advanced settings**:
 
@@ -99,7 +99,7 @@ Use this method to create a [freeform document processing model](freeform-docume
 
     - **Description** – Enter information about how this model will be used.
 
-        ![Screenshot of the right panel of the Extract by text pattern and layout page.](../media/content-understanding/create-a-model-panel.png) 
+        ![Screenshot of the right panel of the Create a model with the Freeform selection method page.](../media/content-understanding/create-a-model-panel.png) 
     
 4. Under **Advanced settings**:
 
@@ -108,7 +108,7 @@ Use this method to create a [freeform document processing model](freeform-docume
     - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a compliance label has been already applied to the library where the file is stored, it will be shown.
 
     > [!NOTE]
-    > Sensitivity labels are not available for **Extract by text pattern and layout** models at this time.
+    > Sensitivity labels are not available for **Freeform selection method** (freeform document processing models) at this time.
 
 5. When you are ready to create the model, select **Create**.
 
@@ -131,7 +131,7 @@ Use this method to create a [structured document processing model](form-processi
 
     - **Description** – Enter information about how this model will be used.
 
-        ![Screenshot of the right panel of the Extract by layout page.](../media/content-understanding/create-a-model-panel.png) 
+        ![Screenshot of the right panel of the Create a model with the layout method page.](../media/content-understanding/create-a-model-panel.png) 
     
 4. Under **Advanced settings**:
 
@@ -140,7 +140,7 @@ Use this method to create a [structured document processing model](form-processi
     - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a compliance label has been already applied to the library where the file is stored, it will be shown.
 
     > [!NOTE]
-    > Sensitivity labels are not available for **Extract by layout** models at this time.
+    > Sensitivity labels are not available for **Layout method** (structured document processing models) at this time.
 
 5. When you are ready to create the model, select **Create**.
 
@@ -153,7 +153,7 @@ Use this method to create a [structured document processing model](form-processi
 
 1. In the **Set up a prebuilt model** section, view the types of prebuilt models you can use. Select the type of prebuilt model you want to learn more about or to start using. 
 
-    ![Screenshot of the Use a prebuilt model section on the View options for classification and extraction page.](../media/content-understanding/use-a-trained-model-section.png) 
+    ![Screenshot of the Use a prebuilt model section on the Set up a prebuilt model page.](../media/content-understanding/use-a-trained-model-section.png) 
 
     - [**Invoice processing**](#invoice-processing)
 
