@@ -209,7 +209,7 @@ Follow the steps to grant user access to an assessment.
 
 You can revoke user access to individual assessments. To do this, begin by following the same steps outlined above for adding users. When you see the user's name whose role you want to revoke listed in the **Manage user access** flyout pane, uncheck the box next to their names, then select **Save**. You'll see a confirmation box asking you to confirm removal of the user's access. Select **Remove** to confirm and proceed, or select **Cancel** to cancel and exit.
 
-To learn how to get a broader view of all users with access to assessments, visit [User permissions for assessments](compliance-manager-setup#user-permissions-for-assessments).
+To learn how to get a broader view of all users with access to assessments, visit [User permissions for assessments](compliance-manager-setup.md#user-permissions-for-assessments).
 
 ## Accept updates to assessments
 
