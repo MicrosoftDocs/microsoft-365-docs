@@ -25,7 +25,7 @@ Network Protection helps reduce the attack surface of your devices from Internet
 ## Scenario requirements and setup
 
 - Windows 10 1709 build 16273
-- Microsoft Defender AV
+- Microsoft Defender Antivirus
 
 ## PowerShell command
 
