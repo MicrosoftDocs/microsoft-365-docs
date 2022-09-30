@@ -21,8 +21,19 @@
 ### [Microsoft Defender for Endpoint on non-Windows platforms](non-windows.md)
 ### [Antivirus solution compatibility with Defender for Endpoint](defender-compatibility.md)
 
-
 ## [Evaluate capabilities](evaluation-lab.md)
+### [Microsoft defender for endpoint demonstrations]()
+#### [Microsoft Defender for Endpoint demonstration scenarios](defender-endpoint-demonstrations.md)
+#### [App reputation demonstrations](defender-endpoint-demonstration-app-reputation.md)
+#### [Attack surface reduction rules demonstrations](defender-endpoint-demonstration-attack-surface-reduction-rules.md)
+#### [Block at First Sight \(BAFS\) demonstration)](defender-endpoint-demonstration-block-at-first-sight-bafs.md)
+#### [Cloud-delivered protection demonstration](defender-endpoint-demonstration-cloud-delivered-protection.md)
+#### [Controlled folder access \(CFA\) demonstration test tool](defender-endpoint-demonstration-controlled-folder-access-test-tool.md)
+#### [Controlled folder access \(CFA\) demonstration](defender-endpoint-demonstration-controlled-folder-access.md)
+#### [Exploit protection \(EP\) demonstrations](defender-endpoint-demonstration-exploit-protection.md)
+#### [Network protection demonstration](defender-endpoint-demonstration-network-protection.md)
+#### [Potentially unwanted applications \(PUA\) demonstration](defender-endpoint-demonstration-potentially-unwanted-applications.md)
+#### [URL reputation demonstrations](defender-endpoint-demonstration-smartscreen-url-reputation.md)
 
 ## [Plan deployment](deployment-strategy.md)
 
