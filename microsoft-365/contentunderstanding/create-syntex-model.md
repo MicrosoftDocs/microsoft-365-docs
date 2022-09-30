@@ -35,35 +35,39 @@ Follow these steps to create a model in SharePoint Syntex.
 
     ![Screenshot of the Models library showing the Create a model button.](../media/content-understanding/create-a-model-from-the-models-page.png) 
 
-2. On the **View options for classification and extraction** page, there are two sections:
+2. On the **Options for model creation** page, there are two sections:
 
-    - [**Build a custom model**](#build-a-custom-model)
-    - [**Use a prebuilt model**](#use-a-prebuilt-model)
+    - [**Train a custom model**](#train-a-custom-model)
+    - [**Set up a prebuilt model**](#set-up-a-prebuilt-model)
 
     ![Screenshot of the View options for classification and extraction page showing the custom models and prebuilt models.](../media/content-understanding/view-options-for-classification-and-extraction-page.png) 
 
     > [!NOTE]
     > All model options might not be available. These options are configured by your Microsoft 365 admin.
 
-## Build a custom model
+## Train a custom model
 
-1. In the **Build a custom model** section, view the types of custom models you can create. 
+1. In the **Train a custom model** section, view the types of custom models you can create. 
 
     ![Screenshot of the Build a custom model section on the View options for classification and extraction page.](../media/content-understanding/build-a-custom-model-section.png) 
 
-    - [**Classify and extract by text pattern**](#classify-and-extract-by-text-pattern)
+    - [**Teaching method**](#teaching method)
 
-    - [**Extract by layout**](#extract-by-layout)
+    - [**Freeform selection method**](#freeform-selection-method)
 
-    - [**Extract by text pattern and layout**](#extract-by-text-pattern-and-layout)
+    - [**Layout method**](#layout-method)
 
 2. When you select a custom model, the next page will show you more information about the model. If you want to continue to create the model, select **Next**.
 
-### Classify and extract by text pattern
+### Teaching method
 
-1. On the **Classify and extract by text pattern** page, you'll find more information about the model. If you want to proceed with creating the model, select **Next**.
+Use this method to create an [unstructured document processing model](document-understanding-overview.md).
 
-2. On the right panel of the **Create model to classify and extract by text pattern** page, enter the following information.
+1. Select **Teaching method**.
+
+2. On the **Teaching method: Details** page, you'll find more information about the model. If you want to proceed with creating the model, select **Next**.
+
+3. On the right panel of the **Create a model with the teaching method** page, enter the following information.
 
     - **Model name** – Enter the name of the model, for example *Service agreements*.
 
@@ -71,61 +75,25 @@ Follow these steps to create a model in SharePoint Syntex.
 
         ![Screenshot of the right panel of the Create a model to classify and extract by text pattern page.](../media/content-understanding/create-a-model-panel.png) 
     
-3. Under **Advanced settings**:
+4. Under **Advanced settings**:
 
     - In the **Content type** section, choose whether to create a new content type or to use an existing one.
 
     - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. Under **Sensitivity labels**, select the sensitivity label you want to add. If a compliance label has been already applied to the library where the file is stored, it will be shown.
 
-4. When you are ready to create the model, select **Create**.
+5. When you are ready to create the model, select **Create**.
 
-5. You are now ready to begin training the model:
+6. You are now ready to [train the model](create-a-classifier).
 
-    - [Upload six example files](create-a-classifier#add-your-example-files).
-    - [Train the model to classify](create-a-classifier.md).
-    - [Add explanations of text patterns](explanation-types-overview.md).
-    - [Train extractors](create-an-extractor.md) (optional).
-    - [Test model](create-a-classifier#test-your-model) (optional).
+### Freeform selection method
 
-### Extract by layout
+Use this method to create a [freeform document processing model](freeform-document-processing-overview.md).
 
-1. On the **Extract by layout** page, you'll find more information about the model. If you want to proceed with creating the model, select **Next**.
+1. Select **Freeform selection method**.
 
-2. On the right panel of the **Create model to extract by layout** page, enter the following information.
+2. On the **Freeform selection method: Details** page, you'll find more information about the model. If you want to proceed with creating the model, select **Next**.
 
-    - **Model name** – Enter the name of the model, for example *Service agreements*.
-
-    - **Description** – Enter information about how this model will be used.
-
-        ![Screenshot of the right panel of the Extract by layout page.](../media/content-understanding/create-a-model-panel.png) 
-    
-3. Under **Advanced settings**:
-
-    - In the **Content type** section, choose whether to create a new content type or to use an existing one.
-
-    - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a compliance label has been already applied to the library where the file is stored, it will be shown.
-
-    > [!NOTE]
-    > Sensitivity labels are not available for **Extract by layout** models at this time.
-
-4. When you are ready to create the model, select **Create**.
-
-5. You are now ready to begin training the model:
-
-    - [Name extractors](create-an-extractor.md)
-    - [Add collections of documents](create-a-form-processing-model.md#step-2-add-and-analyze-documents)
-    - [Tag documents](create-a-form-processing-model.md#step-3-tag-fields-and-tables)
-    - [Check results and publish](create-a-form-processing-model.md#step-4-train-and-publish-your-model)
-    - [Apply model to library](apply-a-model.md)
-
-    > [!NOTE]
-    > When published, this model type is available for reuse by others who do not own the model. Currently, this model can be edited and shared for editing only by the model owner.
-
-### Extract by text pattern and layout
-
-1. On the **Extract by text pattern and layout** page, you'll find more information about the model. If you want to proceed with creating the model, select **Next**.
-
-2. On the right panel of the **Create model to extract by text pattern and layout** page, enter the following information.
+3. On the right panel of the **Create a model with the freeform selection method** page, enter the following information.
 
     - **Model name** – Enter the name of the model, for example *Service agreements*.
 
@@ -133,7 +101,7 @@ Follow these steps to create a model in SharePoint Syntex.
 
         ![Screenshot of the right panel of the Extract by text pattern and layout page.](../media/content-understanding/create-a-model-panel.png) 
     
-3. Under **Advanced settings**:
+4. Under **Advanced settings**:
 
     - In the **Content type** section, choose whether to create a new content type or to use an existing one.
 
@@ -142,36 +110,91 @@ Follow these steps to create a model in SharePoint Syntex.
     > [!NOTE]
     > Sensitivity labels are not available for **Extract by text pattern and layout** models at this time.
 
-4. When you are ready to create the model, select **Create**.
+5. When you are ready to create the model, select **Create**.
 
-5. You are now ready to begin training the model:
-    
-    - [Name extractors](create-an-extractor.md)
-    - [Add collections of documents](create-a-form-processing-model.md#step-2-add-and-analyze-documents)
-    - [Tag documents](create-a-form-processing-model.md#step-3-tag-fields-and-tables)
-    - [Check results and publish](create-a-form-processing-model.md#step-4-train-and-publish-your-model)
-    - [Apply model to library](apply-a-model.md) 
+6. You are now ready to [train the model](train-freeform-document-processing-model.md).
 
     > [!NOTE]
     > When published, this model type is available for reuse by others who do not own the model. Currently, this model can be edited and shared for editing only by the model owner.
 
-## Use a prebuilt model
+### Layout method
 
-1. In the **Use a prebuilt model** section, view the types of prebuilt models you can use. Select the type of prebuilt model you want to learn more about or to start using. 
+Use this method to create a [structured document processing model](form-processing-overview.md).
+
+1. Select **Layout method**.
+
+2. On the **Layout method: Details** page, you'll find more information about the model. If you want to proceed with creating the model, select **Next**.
+
+3. On the right panel of the **Create a model with the layout method** page, enter the following information.
+
+    - **Model name** – Enter the name of the model, for example *Service agreements*.
+
+    - **Description** – Enter information about how this model will be used.
+
+        ![Screenshot of the right panel of the Extract by layout page.](../media/content-understanding/create-a-model-panel.png) 
+    
+4. Under **Advanced settings**:
+
+    - In the **Content type** section, choose whether to create a new content type or to use an existing one.
+
+    - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a compliance label has been already applied to the library where the file is stored, it will be shown.
+
+    > [!NOTE]
+    > Sensitivity labels are not available for **Extract by layout** models at this time.
+
+5. When you are ready to create the model, select **Create**.
+
+6. You are now ready to [train the model](create-a-form-processing-model.md).
+
+    > [!NOTE]
+    > When published, this model type is available for reuse by others who do not own the model. Currently, this model can be edited and shared for editing only by the model owner.
+
+## Set up a prebuilt model
+
+1. In the **Set up a prebuilt model** section, view the types of prebuilt models you can use. Select the type of prebuilt model you want to learn more about or to start using. 
 
     ![Screenshot of the Use a prebuilt model section on the View options for classification and extraction page.](../media/content-understanding/use-a-trained-model-section.png) 
 
-    - [**Receipts**](#receipts)
+    - [**Invoice processing**](#invoice-processing)
 
-    - [**Invoices**](#invoices)
+    - [**Receipt processing**](#receipt-processing)
 
 2. When you select a prebuilt model, the next page will show you more information about the model. If you want to continue to create the model, select **Next**.
 
-### Receipts
+### Invoice processing
 
-1. On the **Receipts** page, you'll find more information about the model. If you want to proceed with using the model, select **Next**.
+1. Select **Invoice processing**.
 
-2. On the right panel of the **Create a model to process receipts** page, enter the following information.
+2. On the **Invoice processing: Details** page, you'll find more information about the model. If you want to proceed with using the model, select **Next**.
+
+3. On the right panel of the **Create an invoice processing model** page, enter the following information.
+
+    - **Model name** – Enter the name of the model, for example *Office expenses*.
+
+    - **Description** – Enter information about how this model will be used.
+
+        ![Screenshot of the right panel of the Create an invoice processing model page.](../media/content-understanding/create-a-model-panel.png) 
+    
+4. Under **Advanced settings**:
+
+    - In the **Content type** section, choose whether to create a new content type or to use an existing one.
+
+    - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a retention label has been already applied to the library where the file is stored, it will be selected. 
+
+    > [!NOTE]
+    > Sensitivity labels are not available for prebuilt models at this time.
+
+5. When you are ready to create the model, select **Create**.
+
+6. You are now ready to [complete setting up the model](prebuilt-model-invoice.md).
+
+### Receipt processing
+
+1. Select **Receipt processing**.
+
+2. On the **Receipt processing: Details** page, you'll find more information about the model. If you want to proceed with using the model, select **Next**.
+
+2. On the right panel of the **Create a receipt processing model** page, enter the following information.
 
     - **Model name** – Enter the name of the model, for example *Office expenses*.
 
@@ -190,38 +213,4 @@ Follow these steps to create a model in SharePoint Syntex.
 
 4. When you are ready to create the model, select **Create**.
 
-5. To complete the model:
-
-    - [Upload an example file](prebuilt-model-receipt.md#upload-an-example-file-to-analyze).
-    - [Select extractors](prebuilt-model-receipt.md#select-extractors-for-your-model).
-    - [Apply model to library](prebuilt-model-receipt.md#apply-the-model).
-
-### Invoices
-
-1. On the **Invoices** page, you'll find more information about the model. If you want to proceed with using the model, select **Next**.
-
-2. On the right panel of the **Create a model to process invoices** page, enter the following information.
-
-    - **Model name** – Enter the name of the model, for example *Office expenses*.
-
-    - **Description** – Enter information about how this model will be used.
-
-        ![Screenshot of the right panel of the Create a model to process invoices page.](../media/content-understanding/create-a-model-panel.png) 
-    
-3. Under **Advanced settings**:
-
-    - In the **Content type** section, choose whether to create a new content type or to use an existing one.
-
-    - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a retention label has been already applied to the library where the file is stored, it will be selected. 
-
-    > [!NOTE]
-    > Sensitivity labels are not available for prebuilt models at this time.
-
-4. When you are ready to create the model, select **Create**.
-
-5. To complete the model:
-
-    - [Upload an example file](prebuilt-model-invoice.md#upload-an-example-file-to-analyze).
-    - [Select extractors](prebuilt-model-invoice.md#select-extractors-for-your-model).
-    - [Apply model to library](prebuilt-model-invoice.md#apply-the-model).
-
+5. You are now ready to [complete setting up the model](prebuilt-model-receipt.md).
