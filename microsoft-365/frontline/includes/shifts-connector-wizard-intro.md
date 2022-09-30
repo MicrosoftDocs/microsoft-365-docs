@@ -12,4 +12,4 @@ The wizard configures the Shifts connector, creates a connection to your WFM sys
 
 You can set up multiple connections, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection with unique sync settings for each location. Keep in mind that a WFM instance can only be mapped to one team at any given time. If a WFM instance is already mapped to a team, it can't be mapped to another team.
 
-With your WFM system as the system of record, your frontline workers can see and swap shifts, manage their availability, and request time off in Shifts on their devices. Frontline managers can continue to use your WFM system to set up schedules.
+With your WFM system as the system of record, your frontline workers can efficiently manage their schedules and availability in Shifts on their devices. Frontline managers can continue to use your WFM system to set up schedules.
