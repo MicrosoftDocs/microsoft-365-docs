@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/23/2022
+ms.date: 09/30/2022
 ms.reviewer: 
 ms.custom:
 - it-pro
@@ -115,6 +115,43 @@ There are three methods for ensuring that the tenant data location for a particu
 >[!NOTE]
 >See ***Section 5 Workload Data Residency Capabilities PAGE LINK*** for more details
 
+**Table 3: Available Data Residency by Country**
+
+|   | Exchange Online  | SharePoint Online  | Teams  | MDO P1  | Office for the web  | Viva Connections  | Viva Topics  |  Purview  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Australia  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
+| Brazil  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
+| Canada  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
+| European Union  | P-M  | P-M  | P-M  | -  | -  | -  | -  | -  |
+| France  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
+| Germany  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
+| India  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
+| Japan  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
+| Qatar  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
+| South Korea  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
+| Norway  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
+| South Africa  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
+| Sweden  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
+| Switzerland  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
+| United Arab Emirates  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
+| United Kingdom  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
+| United States  | P-M  | P-M  | P-M  | -  | -  | -  | -  | -  |
+| Poland (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
+| Israel (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
+| Spain (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
+| Mexico (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
+| Malaysia (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
+| Austria (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
+| Chile (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
+| New Zealand (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
+| Denmark (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
+| Greece (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
+| Taiwan (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
+
+P=Product Terms Data Residency<br>
+M=Multi-Geo Data Residency<br>
+A=Advanced Data Residency
+
 ### Country/Region specific Data Center city locations
 
 The following Regional Geographies can store data at rest.
@@ -133,18 +170,18 @@ The following Regional Geographies can store data at rest.
 |---------|---------|
 |Australia   |Sydney, Melbourne   |
 |Brazil   |Rio, Campinas   |
-|Canada	  |Quebec City, Toronto    |
-|European Union	  |Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Netherlands (Amsterdam), Sweden (Gävle, Sandviken, Staffanstorp)     |
-|France	  |Paris, Marseille     |
-|Germany	 |Frankfurt, Berlin       |
+|Canada      |Quebec City, Toronto    |
+|European Union      |Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Netherlands (Amsterdam), Sweden (Gävle, Sandviken, Staffanstorp)     |
+|France      |Paris, Marseille     |
+|Germany     |Frankfurt, Berlin       |
 |India   |Chennai, Mumbai, Pune        |
-|Japan	 |Osaka, Tokyo      |
+|Japan     |Osaka, Tokyo      |
 |South Korea   |Busan, Seoul        |
-|Norway	 |Oslo, Stavanger       |
-|Qatar	 |Doha          |
-|South Africa	   |Cape Town, Johannesburg        |
-|Sweden	 |Gävle, Sandviken, Staffanstorp      |
-|Switzerland		   |Geneva, Zurich     |
+|Norway     |Oslo, Stavanger       |
+|Qatar     |Doha          |
+|South Africa       |Cape Town, Johannesburg        |
+|Sweden     |Gävle, Sandviken, Staffanstorp      |
+|Switzerland           |Geneva, Zurich     |
 |United Arab Emirates    |Dubai, Abu Dhabi        |
-|United Kingdom	   |Durham, London, Cardiff      |
+|United Kingdom       |Durham, London, Cardiff      |
 |United States    |Boydton, Cheyenne, Chicago, Des Moines, Quincy, San Antonio, Santa Clara, San Jose       |
