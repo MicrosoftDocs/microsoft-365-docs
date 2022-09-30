@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - SPO_Content
 ms.custom:
 - seo-marvel-apr2020

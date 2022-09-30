@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Business Premium trial playbook"
+title: "Microsoft 365 Business Premium trial guide"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -7,37 +7,39 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.collection: m365-security-compliance
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.collection: 
+- m365-security
+- tier1
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 08/24/2022
 search.appverid: 
 - MOE150
 - MET150
 description: "Make the most of your Microsoft 365 Business Premium trial. Try out some of the key productivity and security capabilities."
 ---
 
-# Trial playbook: Microsoft 365 Business Premium
+# Trial guide: Microsoft 365 Business Premium
 
-Welcome to the Microsoft Business Premium trial playbook. This playbook will help you make the most of your 30-day free trial by experiencing how Microsoft 365 Business Premium increases productivity and helps safeguard your organization with advanced security capabilities. Using Microsoft recommendations, learn how you can set up your threat protection features, analyze detected threats, and respond to cyberattacks.
+Welcome to the Microsoft Business Premium trial guide! This guide will help you make the most of your 30-day free trial. You can see firsthand how Microsoft 365 Business Premium increases productivity and helps safeguard your organization with advanced security capabilities. Use this guide to set up your threat protection features, analyze detected threats, and respond to cyberattacks.
 
 ## Set up the Microsoft 365 Business Premium trial
 
 When you [start a trial or purchase Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your first step is to get everything set up.
 
 > [!TIP]
-> Save this playbook to your browser favorites. When links in the playbook take you away from this location, simply return to this playbook to continue.
+> Save this guide to your browser favorites. When links in the guide take you away from this location, it'll be easier to return to this guide to continue.
 
-First, [set up your trial](../business-premium/m365bp-setup.md)!
+1. [Set up your trial](../business-premium/m365bp-setup.md)!
 
-After you've initiated the trial and completed the setup process, it can take up to two hours for changes to take effect.
+   After you've initiated the trial and completed the setup process, it can take up to two hours for changes to take effect.
 
-Microsoft 365 Business Premium includes [Preset security policies](/security/office-365-security/preset-security-policies.md) that you can use in your environment. These policies represent a baseline protection profile that's suitable for most users. Standard protection includes:
+2. Use your [preset security policies](/security/office-365-security/preset-security-policies.md). These policies represent a baseline protection profile that's suitable for most users. Standard protection includes:
 
-- [Safe Links](../security/office-365-security/safe-links.md), [Safe Attachments](../security/office-365-security/safe-attachments.md) and [Anti-Phishing](../security/office-365-security/anti-phishing-protection.md) policies that are scoped to the entire tenant or the subset of users you may have chosen during the trial setup process. (Your trial subscription is for up to 25 users.)
+   - [Safe Links](../security/office-365-security/safe-links.md), [Safe Attachments](../security/office-365-security/safe-attachments.md) and [Anti-Phishing](../security/office-365-security/anti-phishing-protection.md) policies that are scoped to the entire tenant or the subset of users you may have chosen during the trial setup process. (Your trial subscription is for up to 25 users.)
 
-- Protection for productivity apps, such as [SharePoint](/sharepoint/introduction), [OneDrive](/onedrive/one-drive-quickstart-small-business), [Office apps](/deployoffice/about-microsoft-365-apps), and [Microsoft Teams](/microsoftteams/teams-overview).
+   - Protection for productivity apps, such as [SharePoint](/sharepoint/introduction), [OneDrive](/onedrive/one-drive-quickstart-small-business), [Office apps](/deployoffice/about-microsoft-365-apps), and [Microsoft Teams](/microsoftteams/teams-overview).
 
 ## Add a domain
 
@@ -65,7 +67,7 @@ Microsoft 365 Business Premium includes Defender for Business, a new security so
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Run the [setup wizard](../security/defender-business/mdb-use-wizard.md).
+2. Go to **Assets** > **Devices**. If Defender for Business isn't already set up, you will be prompted to run the [setup wizard](../security/defender-business/mdb-use-wizard.md).
 
 3. [Onboard devices](../security/defender-business/mdb-onboard-devices.md).
 

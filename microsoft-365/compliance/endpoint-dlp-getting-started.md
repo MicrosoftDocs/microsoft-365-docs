@@ -13,9 +13,12 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE

@@ -15,7 +15,10 @@ ms.reviewer:
 manager: dansimp
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Run and review the results of a Microsoft Defender Offline scan

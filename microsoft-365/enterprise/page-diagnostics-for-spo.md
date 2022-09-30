@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Ent_O365
 - SPO_Content
 search.appverid:

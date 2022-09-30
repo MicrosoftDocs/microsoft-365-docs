@@ -14,7 +14,10 @@ ms.topic: article
 ms.date: 10/22/2021
 manager: dansimp
 ms.custom: nextgen
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy

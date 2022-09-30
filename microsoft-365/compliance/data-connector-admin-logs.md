@@ -1,9 +1,10 @@
 ---
 title: "Use the admin log for data connectors to view status about importing data"
+description: "Learn how to access and view admin logs for data connectors to get status information for the data imported by the connector."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date:
 audience: Admin
@@ -11,13 +12,14 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
+- data-connectors
 search.appverid:
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn how to access and view admin logs for data connectors to get status information for the data imported by the connector."
 ---
 
 # View admin logs for data connectors

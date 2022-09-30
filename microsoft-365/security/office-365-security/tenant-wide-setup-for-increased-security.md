@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.collection: 
   - Ent_O365
   - Strat_O365_IP
-  - M365-security-compliance
+  - m365-security
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom: 
@@ -35,9 +35,6 @@ ms.service: microsoft-365-security
 
 This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment. Your security needs might require more or less security. Use these recommendations as a starting point.
 
-## Check Office 365 Secure Score
-
-Office 365 Secure Score analyzes your organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Adjusting some tenant-wide settings will increase your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment that do not negatively affect productivity for your users. See [Microsoft Secure Score](../defender/microsoft-secure-score.md).
 
 ## Tune threat management policies in the Microsoft 365 Defender portal
 
@@ -130,6 +127,6 @@ More information:
 
 These articles and guides provide additional prescriptive information for securing your Microsoft 365 environment:
 
-- [Microsoft security guidance for political campaigns, nonprofits, and other agile organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) (you can use these recommendation in any environment, especially cloud-only environments)
+- [Microsoft security guidance for political campaigns, nonprofits, and other agile organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) (you can use these recommendations in any environment, especially cloud-only environments)
 
 - [Recommended security policies and configurations for identities and devices](microsoft-365-policies-configurations.md) (these recommendations include help for AD FS environments)

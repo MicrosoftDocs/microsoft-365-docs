@@ -14,7 +14,10 @@ ms.custom: nextgen
 ms.date: 07/11/2022
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Turn on block at first sight

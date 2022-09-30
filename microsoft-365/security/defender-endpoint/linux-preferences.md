@@ -13,10 +13,12 @@ ms.localizationpriority: medium
 ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Set preferences for Microsoft Defender for Endpoint on Linux

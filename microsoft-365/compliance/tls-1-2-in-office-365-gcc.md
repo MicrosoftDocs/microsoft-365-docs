@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 search.appverid: 
 - MET150
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: purview-compliance
 ms.service: information-protection
 ms.topic: article
 ms.reviewer: krowley

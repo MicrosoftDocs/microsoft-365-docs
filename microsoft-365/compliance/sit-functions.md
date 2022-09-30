@@ -11,7 +11,8 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: low
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150

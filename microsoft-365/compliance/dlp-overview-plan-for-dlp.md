@@ -10,8 +10,10 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- M365-security-compliance
+ms.collection:
+- tier1
+- highpri 
+- purview-compliance
 search.appverid: 
 - MET150
 description: "Overview of the planning process for data loss prevention"

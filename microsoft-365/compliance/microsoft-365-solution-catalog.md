@@ -1,5 +1,6 @@
 ---
 title: "Microsoft Purview solution catalog"
+description: Learn about the Microsoft Purview solution catalog, including what it contains, how to access it, and your next steps.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,8 +10,9 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-description: Learn about the Microsoft Purview solution catalog, including what it contains, how to access it, and your next steps.
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 

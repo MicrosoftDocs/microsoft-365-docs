@@ -1,17 +1,20 @@
 ---
 title: "Set up a connector to archive Bloomberg Message data"
+description: "Administrators can set up a data connector to import and archive data from the Bloomberg Message email tool in Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, Content Search, and retention policies to manage your organization's third-party data."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: "Administrators can set up a data connector to import and archive data from the Bloomberg Message email tool in Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, Content Search, and retention policies to manage your organization's third-party data."
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ---
 
 # Set up a connector to archive Bloomberg Message data

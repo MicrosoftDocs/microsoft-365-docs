@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Manage Microsoft Defender for Endpoint alerts
@@ -28,7 +31,7 @@ ms.subservice: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
 
-Defender for Endpoint notifies you of possible malicious events, attributes, and contextual information through alerts. A summary of new alerts is displayed in the **Security operations dashboard**, and you can access all alerts in the **Alerts queue**.
+Defender for Endpoint notifies you of possible malicious events, attributes, and contextual information through alerts. A summary of new alerts is displayed and you can access all alerts in the **Alerts queue**.
 
 You can manage alerts by selecting an alert in the **Alerts queue**, or the **Alerts** tab of the Device page for an individual device.
 

@@ -1,17 +1,20 @@
 ---
 title: "Set up a connector to archive Yieldbroker data in Microsoft 365"
+description: "Admins can set up a connector to import and archive Yieldbroker data from Veritas to Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365. After your archive this data, you can use compliance features such as legal hold, content search, and retention policies to manage third-party data."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: "Admins can set up a connector to import and archive Yieldbroker data from Veritas to Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365. After your archive this data, you can use compliance features such as legal hold, content search, and retention policies to manage third-party data."
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ---
 
 # Set up a connector to archive Yieldbroker data

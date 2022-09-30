@@ -1,23 +1,22 @@
 ---
 title: "Set up compliance boundaries for eDiscovery investigations"
+description: "Learn how to use compliance boundaries to create logical boundaries that control the user content locations that an eDiscovery manager can search in Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
-description: "Learn how to use compliance boundaries to create logical boundaries that control the user content locations that an eDiscovery manager can search in Microsoft 365."
 ms.custom: seo-marvel-apr2020
 ---
 

@@ -2,15 +2,15 @@
 title: "New alert policies in Microsoft Defender for Office 365"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150

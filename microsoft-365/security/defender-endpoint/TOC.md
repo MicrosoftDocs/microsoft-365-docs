@@ -6,7 +6,9 @@
 ### [Compare Microsoft endpoint security plans](defender-endpoint-plan-1-2.md)
 ### [Minimum requirements](minimum-requirements.md)
 ### [Supported Microsoft Defender for Endpoint capabilities by platform](supported-capabilities-by-platform.md)
-### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-endpoint.md)
+### [What's new]()
+#### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-endpoint.md)
+#### [What's new in Microsoft Defender for Endpoint on Windows](windows-whatsnew.md)
 ### [Preview features](preview.md)
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](use.md)
@@ -247,6 +249,8 @@
 
 ### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
 
+### [Built-in protection](built-in-protection.md)
+
 ### [Attack surface reduction]()
 #### [Attack surface reduction overview](overview-attack-surface-reduction.md)
 #### [Attack surface reduction (ASR) rules]()
@@ -269,7 +273,11 @@
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 #### [Device Control]()
 ##### [Removable Storage Protection](device-control-removable-storage-protection.md)
-##### [Removable Storage Access Control](device-control-removable-storage-access-control.md)
+##### [Removable Storage Access Control]()
+###### [Overview](device-control-removable-storage-access-control.md)
+###### [Deploy and manage using Intune](deploy-manage-removable-storage-intune.md)
+###### [Deploy and manage using group policy](deploy-manage-removable-storage-group-policy.md)
+###### [Frequently asked questions](device-control-removable-storage-access-control-faq.md)
 ##### [Device Installation](mde-device-control-device-installation.md)
 ##### [Device Control Printer Protection](printer-protection.md)
 ##### [Device Control Reports](device-control-report.md)
@@ -294,7 +302,6 @@
 ###### [Monitor web security](web-protection-monitoring.md)
 ###### [Respond to web threats](web-protection-response.md)
 ##### [Web content filtering](web-content-filtering.md)
-
 
 ### Next-generation protection
 #### [Next-generation protection overview](next-generation-protection.md)
@@ -375,7 +382,9 @@
 ##### [Troubleshooting mode scenarios](troubleshooting-mode-scenarios.md)
 
 #### Diagnostics and performance for Microsoft Defender Antivirus
-##### [Device health and compliance reports](machine-reports.md)
+##### [Device health reports](device-health-reports.md)
+###### [Microsoft Defender Antivirus health report](device-health-microsoft-defender-antivirus-health.md)
+###### [Sensor health and OS report](device-health-sensor-health-os.md)
 ##### [Troubleshoot performance issues related to real-time protection](troubleshoot-performance-issues.md) 
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
 ##### [Collect diagnostic data of Microsoft Defender Antivirus](collect-diagnostic-data.md)
@@ -401,7 +410,6 @@
 ## [Investigate and respond to threats]()
 ### [Endpoint detection and response]()
 #### [Endpoint detection and response overview](overview-endpoint-detection-response.md)
-#### [Security operations dashboard](security-operations-dashboard.md)
 #### [Submit files](admin-submissions-mde.md)
 #### [Incidents queue]()
 ##### [View and organize the Incidents queue](view-incidents-queue.md)
@@ -525,8 +533,8 @@
 ####### [Export software vulnerabilities assessment](get-assessment-software-vulnerabilities.md)
 
 ###### [Browser extensions]()
-####### [Export broswer extenstions assessment](get-assessment-browser-extensions.md)
-####### [Get browser extenstions permisson information](get-browser-extensions-permission-info.md)
+####### [Export browser extensions assessment](get-assessment-browser-extensions.md)
+####### [Get browser extensions permission information](get-browser-extensions-permission-info.md)
 
 ###### [Automated investigation]()
 ####### [Investigation methods and properties](investigation.md)

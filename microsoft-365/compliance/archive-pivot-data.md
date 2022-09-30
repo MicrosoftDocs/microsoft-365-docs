@@ -2,15 +2,15 @@
 title: "Set up a connector to archive Pivot data in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection: purview-compliance
 description: "Admins can set up a connector to import and archive Pivot data from Veritas in Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
 

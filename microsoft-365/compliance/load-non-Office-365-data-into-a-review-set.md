@@ -1,20 +1,23 @@
 ---
 title: "Load non-Microsoft 365 data into a review set"
+description: "Learn how to import non-Microsoft 365 data to a review set for analysis in an eDiscovery (Premium) case."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to import non-Microsoft 365 data to a review set for analysis in an eDiscovery (Premium) case."
 ms.custom: seo-marvel-apr2020
 ---
 

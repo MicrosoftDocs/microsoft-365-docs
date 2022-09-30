@@ -1,9 +1,10 @@
 ---
 title: "Disable reports when you export Content Search results"
+description: Edit the Windows Registry on your local computer to disable reports when you export the results of a Content Search from the Microsoft Purview compliance portal.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 12/30/2016
 audience: Admin
@@ -13,10 +14,12 @@ ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 ms.custom:
 - seo-marvel-apr2020
-description: Edit the Windows Registry on your local computer to disable reports when you export the results of a Content Search from the Microsoft Purview compliance portal.
+ms.collection:
+- tier1
+- purview-compliance
+- content-search
 ---
 
 # Disable reports when you export Content Search results

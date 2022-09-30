@@ -13,7 +13,10 @@ ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier1
+search.appverid: met150
 ---
 
 # Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution

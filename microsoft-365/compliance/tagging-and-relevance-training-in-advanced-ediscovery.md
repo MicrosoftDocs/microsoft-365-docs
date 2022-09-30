@@ -1,9 +1,10 @@
 ---
 title: "Tagging and Relevance training in eDiscovery (Premium)"
+description: "Learn the steps to tag and then work with a training sample of 40 files during the Relevance training stage of eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 
@@ -14,9 +15,11 @@ ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn the steps to tag and then work with a training sample of 40 files during the Relevance training stage of eDiscovery (Premium)."
 ---
 
 # Tagging and Relevance training in eDiscovery (Premium)

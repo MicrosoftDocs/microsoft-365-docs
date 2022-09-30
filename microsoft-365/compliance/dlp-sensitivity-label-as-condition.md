@@ -13,7 +13,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - SPO_Content
 search.appverid: 
 - MET150

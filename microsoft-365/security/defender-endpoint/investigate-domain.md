@@ -12,11 +12,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
+- m365-security
+- tier2
 ms.topic: article
 ms.date: 04/24/2018
 ms.subservice: mde
+search.appverid: met150
 ---
+
 # Investigate domains and URLs associated with a Microsoft Defender for Endpoint alert
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]

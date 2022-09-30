@@ -14,10 +14,12 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- m365-security-compliance
+- highpri 
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 - MOE150
@@ -125,6 +127,10 @@ Communication compliance policies scan and capture messages across several commu
 - **Third-party sources**: You can scan messages from [third-party sources](/microsoft-365/compliance/archiving-third-party-data) for data imported into mailboxes in your Microsoft 365 organization. Communication compliance supports connections to several popular platforms, including Instant Bloomberg and others.
 
 To learn more about messaging channel support in communication compliance policies, see [Detect channel signals with communication compliance](/microsoft-365/compliance/communication-compliance-channels).
+
+## Get started with recommended actions (preview)
+
+Whether you're setting up communication compliance for the first time or getting started with creating new policies, the new [recommended actions](/microsoft-365/compliance/communication-compliance-configure#recommended-actions-preview) experience can help you get the most out of communication compliance capabilities. Recommended actions include setting up permissions, creating distribution groups, creating a policy, and more
 
 ## Workflow
 

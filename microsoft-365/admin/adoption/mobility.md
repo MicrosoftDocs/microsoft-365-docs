@@ -2,14 +2,15 @@
 title: "Microsoft Adoption Score - Mobility"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC

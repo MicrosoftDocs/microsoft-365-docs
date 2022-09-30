@@ -15,8 +15,10 @@ manager: dansimp
 ms.custom: asr
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: m365-security-compliance
-ms.date: 
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Protect important folders with controlled folder access

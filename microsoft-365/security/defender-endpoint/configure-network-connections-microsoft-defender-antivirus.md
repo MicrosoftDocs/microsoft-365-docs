@@ -9,13 +9,16 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
+manager: dansimp
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.date: 06/28/2022
 ms.reviewer: mkaminska; pahuijbr
-manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Configure and validate Microsoft Defender Antivirus network connections
