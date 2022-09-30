@@ -91,7 +91,7 @@ A user can only hold one role at a time. Any change in a user's role will overri
 
 ### Role-based access to assessments
 
-You can assign roles to users in order to grant access to specific assessments. Granting access to individual assessments is useful when you need to ensure that only the people working on certain regulatory requirements have access to that data. You can grant per-assessment access to users outside of your organization, which helps when you have external auditors. For users outside your organization, you'll need to assign them an Azure AD role. For instructions, see [More about Azure AD](#more-about-azure-ad).
+You can assign roles to users in order to grant access to specific assessments. Granting access to individual assessments is useful when you need to ensure that only the people working on certain regulatory requirements have access to that data. You can grant access to individual assessments to users outside of your organization, which helps when you have external auditors. For users outside your organization, you'll need to assign them an Azure AD role. For instructions, see [More about Azure AD](#more-about-azure-ad).
 
 The four roles listed in table above provide access to assessments: Compliance Manager Reader, Compliance Manager Contribution, Compliance Manager Assessor, and Compliance Manager Administration. What you can do with each assessment remains restricted based on which activities the role allows.
 
@@ -128,7 +128,7 @@ Learn more about getting started with assessments by visiting the [Assessments p
 
 ## Compliance Manager settings
 
-The settings for specific Compliance Manager functions are found by selecting **Compliance Manager settings** in the upper right area of the screen. The types of settings you can configure include:
+You can find settings for specific Compliance Manager functions by selecting **Compliance Manager settings** in the upper-right of the screen. The types of settings include:
 
 - [Testing source](#testing-source-for-automated-testing): allows you to turn off or on the automatic testing of improvement actions
 - [Manage user history](#manage-user-history): allows you to manage the data of users associated to improvement actions, including the ability to reassign improvement actions to a different user
@@ -261,9 +261,11 @@ To delete a user’s history, follow the steps below:
 
 ### User permissions for assessments
 
-The **User permissions** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments. This section is also where you can revoke access to an assessment by removing their assessment-specific role. (Assigning such roles can be done from an assessment's details page; [get instructions](compliance-manager-assessments.md#grant-user-access-to-individual-assessments).)
+The **User permissions** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments. This section is also where you can revoke access to an assessment by removing their assessment-specific role.
 
-Use the **Manage assessments** command to remove a user's role for an assessment.To remove a user's access to an assessment:
+[Visit these instructions](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for assigning user roles from an assessment's details page.
+
+To remove a user's access to an assessment:
 
 - In **Compliance Manager settings,** select **User permissions**.
 - Select the checkbox next to the name of the user whose role you want to edit. Only one user can be selected at a time.

@@ -182,18 +182,18 @@ You can restrict user access to only certain assessments by managing user roles 
 External users who need access for auditing or other purposes can also be assigned a role for viewing assessments and editing test data. You'll provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles](compliance-manager-setup.md#more-about-azure-ad).
 
 #### Assessment roles can coexist with other Compliance Manager roles
-It is possible for a user to have one role with respect to an assessment, and another role with respect to overall Compliance Manager access. For example, if you've assigned a user a **Compliance Manager Reader** role in Microsoft Purview compliance portal **Permissions,** you can also assign that user a **Compliance Manager Assessor** role for a specific assessment. In effect, the user will hold the two roles at the same time, but their ability to edit data will be limited to the assessment to which they've been assigned the **Assessor** role. 
+It is possible for a user to have one role with respect to an assessment, and another role with respect to overall Compliance Manager access. For example, if you've assigned a user a **Compliance Manager Reader** role in Microsoft Purview compliance portal **Permissions,** you can also assign that user a **Compliance Manager Assessor** role for a specific assessment. In effect, the user will hold the two roles at the same time, but their ability to edit data will be limited to the assessment to which they've been assigned the **Assessor** role.
 
 #### Steps for granting access
 
-Follow the steps to grant user access to an assessment. Note that you can also assign user roles for individual assessment templates using the same process.
+Follow the steps to grant user access to an assessment.
 
 1. From your **Assessments** page, find the assessment you want to grant access to. Select it to open its details page.
     1. To grant user access to a template, go to your **Assessment templates** page, find the template you want to grant access to, and follow the same steps outlined below.
 
 1. In the upper-right corner, select **Manage user access**.
 
-1. A **Manage user access** flyout pane appears. It has three tabs, one for each role of Readers, Assessors, and Contributors. Navigate to the tab for the role you want your user to hold for this assessment. *ASK HARDIK-- WILL EXTERNAL USERS IN THEIR ADD BE HERE?* Users who currently have access to the assessment will have a blue box with a check mark to the left of their name.
+1. A **Manage user access** flyout pane appears. It has three tabs, one for each role of Readers, Assessors, and Contributors. Navigate to the tab for the role you want your user to hold for this assessment.  Users who currently have access to the assessment will have a blue box with a check mark to the left of their name.
 
 1. Select the **+ Add** command for the role tab you're on: **Add reader**, or **Add assessor** or **Add contributor**.
 
@@ -205,11 +205,11 @@ Follow the steps to grant user access to an assessment. Note that you can also a
 
 1. The flyout pane will close and you'll arrive back at your assessment details page. A confirmation message at the top will confirm the new role assignment for that assessment.
 
-#### Steps for revoking access
+#### Steps for removing access
 
 You can revoke user access to individual assessments. To do this, begin by following the same steps outlined above for adding users. When you see the user's name whose role you want to revoke listed in the **Manage user access** flyout pane, uncheck the box next to their names, then select **Save**. You'll see a confirmation box asking you to confirm removal of the user's access. Select **Remove** to confirm and proceed, or select **Cancel** to cancel and exit.
 
-ASK HARDIK IF THIS ALSO OVERRIDES ROLE ASSIGMENT.
+To learn how to get a broader view of all users with access to assessments, visit [User permissions for assessments](compliance-manager-setup#user-permissions-for-assessments).
 
 ## Accept updates to assessments
 
