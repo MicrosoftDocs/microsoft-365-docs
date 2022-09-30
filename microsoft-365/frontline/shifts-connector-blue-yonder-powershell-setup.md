@@ -33,7 +33,7 @@ We provide two scripts. You can use either script, depending on whether you want
 
 You can set up multiple connections, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection with unique sync settings for each location. Keep in mind that a Blue Yonder WFM instance can only be mapped to one team at any given time. If an instance is already mapped to a team, it can't be mapped to another team.
 
-With Blue Yonder WFM as the system of record, your frontline workers can see and swap shifts, manage their availability, and request time off in Shifts on their devices. Frontline managers can continue to use Blue Yonder WFM to set up schedules.
+With Blue Yonder WFM as the system of record, your frontline workers can efficiently manage their schedules and availability in Shifts on their devices. Frontline managers can continue to use Blue Yonder WFM to set up schedules.
 
 > [!NOTE]
 > You can also use the [Shifts connector wizard](shifts-connector-wizard.md) in the Microsoft 365 admin center to connect Shifts to Blue Yonder WFM.
