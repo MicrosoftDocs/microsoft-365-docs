@@ -25,7 +25,7 @@ Scenario requirements and setup
 
 - Windows 10 or 11
 - Edge browser required
-- For more information click [here](https://learn.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
+- For more information see [Microsoft Defender Smartscreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 ## SmartScreen for Microsoft Edge URL scenario demonstrations
 
@@ -87,6 +87,6 @@ A benign page hosting a malicious advertisement
 
 ## See also
 
-[Microsoft Defender SmartScreen Documentation](https://learn.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
+[Microsoft Defender SmartScreen Documentation](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 [Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)
