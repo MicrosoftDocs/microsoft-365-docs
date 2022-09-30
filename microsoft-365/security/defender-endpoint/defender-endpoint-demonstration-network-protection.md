@@ -55,6 +55,6 @@ Set-MpPreference -EnableNetworkProtection Disabled
 
 ## See also
 
-[Network Protection](/windows/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard?ocid=wd-av-demo-np-bottom)
+[Network Protection](network-protection.md)
 
 [Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)
