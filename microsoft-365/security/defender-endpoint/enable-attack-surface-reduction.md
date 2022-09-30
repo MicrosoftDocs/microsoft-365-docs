@@ -16,6 +16,7 @@ ms.subservice: mde
 ms.topic: how-to
 ms.collection: 
 - m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
 search.appverid: met150

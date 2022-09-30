@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier1
+- tier3
 - purview-compliance
 - data-connectors
 ---
