@@ -39,7 +39,7 @@ You may also set your current OS in "OS baseline for Insight". We would provide 
 
 ![Feature update validation. Choosing the Insider beta channel.](Media/windowsfeatureupdatevalidation02-osbaseline.png) 
 
-To check more details on the Windows Insider Preview builds, refer to [[Flight Hub - Windows Insider Program | Microsoft Docs](https://docs.microsoft.com/windows-insider/flight-hub)].
+To check more details on the Windows Insider Preview builds, refer to [[Flight Hub - Windows Insider Program | Microsoft Docs](docs.microsoft.com/windows-insider/flight-hub)].
 
 
 ## Next steps
