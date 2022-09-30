@@ -102,7 +102,12 @@ A Success message on the screen indicates that your connection is successfully s
 
 ## If you need to make changes to a connection
 
-To make changes to a connection after it's set up, see [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md). For example, you can update sync settings, team mappings, and disable sync for a connection.
+You can use PowerShell or the Microsoft 365 admin center to manage and make changes to a connection after it's set up. For example, you can use PowerShell to update sync settings, team mappings, and disable sync for a connection. In the Microsoft 365 admin center, you can view information such as health status for all your connections and access the wizard to change connection settings.
+
+To learn more, see:
+
+- [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md).
+- [Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md)
 
 ## Scripts
 
@@ -116,7 +121,7 @@ Start-Sleep 1
 #Ensure Teams module is at least version x
 Write-Host "Checking Teams module version"
 try {
-    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.1.0
+    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
 } catch {
     throw
 }
@@ -134,7 +139,7 @@ $enabledConnectorScenario = $blueYonder.SupportedScenario
 $wfiSupportedScenario = $blueYonder.wfiSupportedScenario
 
 #Prompt for entering of WFM username and password
-$WfmUserName = Read-Host -Prompt 'Input your WFM super user name'
+$WfmUserName = Read-Host -Prompt 'Input your WFM user name'
 $WfmPwd = Read-Host -Prompt 'Input your WFM password' -AsSecureString
 $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($WfmPwd))
 
@@ -147,7 +152,20 @@ $essApiUrl = Read-Host -Prompt 'Input ess api url'
 $federatedAuthUrl = Read-Host -Prompt 'Input federated authorization url'
 $retailWebApiUrl = Read-Host -Prompt 'Input retail web api url'
 $siteManagerUrl = Read-Host -Prompt 'Input site manager url'
-$testResult = Test-CsTeamsShiftsConnectionValidate -Name $InstanceName -ConnectorId $BlueYonderId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName
+$testResult = Test-CsTeamsShiftsConnectionValidate `
+    -Name $InstanceName `
+    -ConnectorId $BlueYonderId `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+        -Property @{
+            AdminApiUrl = $adminApiUrl
+            SiteManagerUrl = $siteManagerUrl
+            EssApiUrl = $essApiUrl
+            RetailWebApiUrl = $retailWebApiUrl
+            CookieAuthUrl = $cookieAuthUrl
+            FederatedAuthUrl = $federatedAuthUrl
+            LoginUserName = $WfmUserName
+            LoginPwd = $plainPwd
+        })
 if ($testResult.Code -ne $NULL) {
     write $testResult
     throw "Validation failed, conflict found"
@@ -156,7 +174,7 @@ Write-Host "Test complete, no conflicts found"
 
 #Create a connection instance (includes WFM site team ids)
 Write-Host "Creating a connection instance"
-$designatorName = Read-Host -Prompt "Enter your Microsoft 365's user name"
+$designatorName = Read-Host -Prompt "Input designated actor's user name"
 $domain = $designatorName.Split("@")[1]
 $designator = Get-MgUser -UserId $designatorName
 $teamsUserId = $designator.Id
@@ -175,7 +193,25 @@ if ($decision -eq 1) {
     break
 }
 }
-$InstanceResponse = New-CsTeamsShiftsConnectionInstance -Name $InstanceName -ConnectorId $BlueYonderId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName -DesignatedActorId $teamsUserId -EnabledConnectorScenario $enabledConnectorScenario -EnabledWfiScenario $wfiSupportedScenario -SyncFrequencyInMin $syncFreq -ConnectorAdminEmail $AdminEmailList
+$InstanceResponse = New-CsTeamsShiftsConnectionInstance `
+    -ConnectorId $BlueYonderId `
+    -ConnectorAdminEmail $AdminEmailList `
+    -DesignatedActorId $teamsUserId `
+    -EnabledConnectorScenario $enabledConnectorScenario `
+    -EnabledWfiScenario $wfiSupportedScenario `
+    -Name $InstanceName `
+    -SyncFrequencyInMin $syncFreq `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+        -Property @{
+            AdminApiUrl = $adminApiUrl
+            SiteManagerUrl = $siteManagerUrl
+            EssApiUrl = $essApiUrl
+            RetailWebApiUrl = $retailWebApiUrl
+            CookieAuthUrl = $cookieAuthUrl
+            FederatedAuthUrl = $federatedAuthUrl
+            LoginUserName = $WfmUserName
+            LoginPwd = $plainPwd
+        })
 $InstanceId = $InstanceResponse.id
 $Etag = $InstanceResponse.etag
 if ($InstanceId -ne $null){
@@ -184,11 +220,11 @@ if ($InstanceId -ne $null){
     throw "Connector instance creation failed"
 }
 
-#Retrieve the list of WFM instances
+#Retrieve the list of instances
 Write-Host "Listing the WFM team sites"
 $WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
 write $WfmTeamIds
-if ($WfmTeamIds -ne $NULL && $WfmTeamIds.Count -gt 0){
+if (($WfmTeamIds -ne $NULL) -and ($WfmTeamIds.Count -gt 0)){
     [System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
 }
 else {
@@ -237,7 +273,7 @@ $RequestBody = @{
 $teamUpdateUrl="https://graph.microsoft.com/v1.0/teams/"+$TeamsTeamId+"/schedule"
 $Schedule = Invoke-MgGraphRequest -Uri $teamUpdateUrl -Method PUT -Body $RequestBody
 
-#Create a mapping of the new team to the WFM instance
+#Create a mapping of the new team to the instance
 Write-Host "Create a mapping of the new team to the site"
 $TimeZone = Read-Host -Prompt "Input the time zone of team mapping"
 $teamMappingResult = New-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId $InstanceId -TeamId $TeamsTeamId -TimeZone $TimeZone -WfmTeamId $WfmTeamId
@@ -252,8 +288,6 @@ if ($decision -eq 1) {
     break
 }
 }
-
-#The Teams admin was set as an owner directly when creating a new team, removing it from owners
 Remove-TeamUser -GroupId $TeamsTeamId -User $currentUser -Role Owner
 Disconnect-MgGraph
 ```
@@ -268,7 +302,7 @@ Start-Sleep 1
 #Ensure Teams module is at least version x
 Write-Host "Checking Teams module version"
 try {
-    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.1.0
+    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
 } catch {
     throw
 }
@@ -286,7 +320,7 @@ $enabledConnectorScenario = $blueYonder.SupportedScenario
 $wfiSupportedScenario = $blueYonder.wfiSupportedScenario
 
 #Prompt for entering of WFM username and password
-$WfmUserName = Read-Host -Prompt 'Input your WFM super user name'
+$WfmUserName = Read-Host -Prompt 'Input your WFM user name'
 $WfmPwd = Read-Host -Prompt 'Input your WFM password' -AsSecureString
 $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($WfmPwd))
 
@@ -299,20 +333,33 @@ $essApiUrl = Read-Host -Prompt 'Input ess api url'
 $federatedAuthUrl = Read-Host -Prompt 'Input federated authorization url'
 $retailWebApiUrl = Read-Host -Prompt 'Input retail web api url'
 $siteManagerUrl = Read-Host -Prompt 'Input site manager url'
-$testResult = Test-CsTeamsShiftsConnectionValidate -Name $InstanceName -ConnectorId $BlueYonderId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName
+$testResult = Test-CsTeamsShiftsConnectionValidate `
+    -Name $InstanceName `
+    -ConnectorId $BlueYonderId `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+        -Property @{
+            AdminApiUrl = $adminApiUrl
+            SiteManagerUrl = $siteManagerUrl
+            EssApiUrl = $essApiUrl
+            RetailWebApiUrl = $retailWebApiUrl
+            CookieAuthUrl = $cookieAuthUrl
+            FederatedAuthUrl = $federatedAuthUrl
+            LoginUserName = $WfmUserName
+            LoginPwd = $plainPwd
+        })
 if ($testResult.Code -ne $NULL) {
     write $testResult
     throw "Validation failed, conflict found"
 }
 Write-Host "Test complete, no conflicts found"
 
-#Create a connection instance (includes WFM site team ids)
+#Create an instance (includes WFM site team ids)
 Write-Host "Creating a connection instance"
-$designatorName = Read-Host -Prompt "Enter your Microsoft 365 user name"
+$designatorName = Read-Host -Prompt "Input designated actor's user name"
 $domain = $designatorName.Split("@")[1]
 $designator = Get-MgUser -UserId $designatorName
 $teamsUserId = $designator.Id
-$syncFreq = Read-Host -Prompt "Input sync frequency in minutes. Value should be equal to or more than 10."
+$syncFreq = Read-Host -Prompt "Input sync frequency. Value should be equal to or more than 10."
 
 #Read admin email list
 [psobject[]]$AdminEmailList = @()
@@ -327,8 +374,26 @@ if ($decision -eq 1) {
     break
 }
 }
-$InstanceResponse = New-CsTeamsShiftsConnectionInstance -Name $InstanceName -ConnectorId $BlueYonderId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName -DesignatedActorId $teamsUserId -EnabledConnectorScenario $enabledConnectorScenario -EnabledWfiScenario $wfiSupportedScenario -SyncFrequencyInMin $syncFreq -ConnectorAdminEmail AdminEmailList
 
+$InstanceResponse = New-CsTeamsShiftsConnectionInstance `
+    -ConnectorId $BlueYonderId `
+    -ConnectorAdminEmail $AdminEmailList `
+    -DesignatedActorId $teamsUserId `
+    -EnabledConnectorScenario $enabledConnectorScenario `
+    -EnabledWfiScenario $wfiSupportedScenario `
+    -Name $InstanceName `
+    -SyncFrequencyInMin $syncFreq `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+        -Property @{
+            AdminApiUrl = $adminApiUrl
+            SiteManagerUrl = $siteManagerUrl
+            EssApiUrl = $essApiUrl
+            RetailWebApiUrl = $retailWebApiUrl
+            CookieAuthUrl = $cookieAuthUrl
+            FederatedAuthUrl = $federatedAuthUrl
+            LoginUserName = $WfmUserName
+            LoginPwd = $plainPwd
+    })
 $InstanceId = $InstanceResponse.id
 $Etag = $InstanceResponse.etag
 if ($InstanceId -ne $null){
@@ -337,11 +402,11 @@ if ($InstanceId -ne $null){
     throw "Connector instance creation failed"
 }
 
-#Retrieve the list of WFM instances
+#Retrieve the list of instances
 Write-Host "Listing the WFM team sites"
 $WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
 write $WfmTeamIds
-if ($WfmTeamIds -ne $NULL && $WfmTeamIds.Count -gt 0){
+if (($WfmTeamIds -ne $NULL) -and ($WfmTeamIds.Count -gt 0)){
     [System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
 }
 else {
@@ -368,12 +433,11 @@ $Delimiters = ",", ".", ":", ";", " ", "`t"
 $entityType = $entityTypeString -Split {$Delimiters -contains $_}
 $entityType = $entityType.Trim()
 $entityType = $entityType.Split('',[System.StringSplitOptions]::RemoveEmptyEntries)
-Remove-CsTeamsShiftsScheduleRecord -TeamId $TeamsTeamId -DateRangeStartDate $startTime -DateRangeEndDate $endTime -ClearSchedulingGroup:$True -EntityType $entityType -DesignatedActorId $$teamsUserId
+Remove-CsTeamsShiftsScheduleRecord -TeamId $TeamsTeamId -DateRangeStartDate $startTime -DateRangeEndDate $endTime -ClearSchedulingGroup:$True -EntityType $entityType -DesignatedActorId $teamsUserId
 
-#Create a mapping of the new team to the WFM instance
+#Create a mapping of the existing team to the instance
 Write-Host "Create a mapping of the existing team to the site"
-$TimeZone = Read-Host -Prompt "Input the time zone of team mapping"
-$teamMappingResult = New-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId $InstanceId -TeamId $TeamsTeamId -TimeZone $TimeZone -WfmTeamId $WfmTeamId
+$teamMappingResult = New-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId $InstanceId -TeamId $TeamsTeamId -TimeZone "America/Los_Angeles" -WfmTeamId $WfmTeamId
 Write-Host "Success"
 
 
@@ -413,6 +477,7 @@ For help with Shifts connector cmdlets, including the cmdlets used in the script
 
 - [Shifts connectors](shifts-connectors.md)
 - [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md)
+- [Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md)
 - [Manage the Shifts app](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Teams PowerShell overview](/microsoftteams/teams-powershell-overview)
 - [Teams PowerShell cmdlet reference](/powershell/teams/intro)

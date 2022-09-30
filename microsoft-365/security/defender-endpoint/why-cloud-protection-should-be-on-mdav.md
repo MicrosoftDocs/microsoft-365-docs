@@ -17,7 +17,7 @@ ms.topic: article
 ms.date: 10/22/2021
 ms.collection: 
 - m365-security
-- m365initiative-defender-endpoint
+- tier2
 search.appverid: met150
 ---
 

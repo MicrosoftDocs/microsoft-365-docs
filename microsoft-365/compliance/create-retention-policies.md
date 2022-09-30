@@ -99,7 +99,7 @@ For guidance when to use retention policies for Teams and understand the end use
 
 For technical details about how retention works for Teams, including what elements of messages are supported for retention and timing information with example walkthroughs, see [Learn about retention for Microsoft Teams](retention-policies-teams.md).
 
-#### Known configuration issues
+#### Known configuration issues for Teams retention policies
 
 - Although you can select the option to start the retention period when items were last modified, the value of **When items were created** is always used. For messages that are edited, a copy of the original message is saved with its original timestamp to identify when this pre-edited message was created, and the post-edited message has a newer timestamp.
 
@@ -154,7 +154,7 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 
 For technical details about how retention works for Yammer, including what elements of messages are supported for retention and timing information with example walkthroughs, see [Learn about retention for Yammer](retention-policies-yammer.md).
 
-#### Known configuration issues
+#### Known configuration issues for Yammer retention policies
 
 - Although you can select the option to start the retention period when items were last modified, the value of **When items were created** is always used. For messages that are edited, a copy of the original message is saved with its original timestamp to identify when this pre-edited message was created, and the post-edited message has a newer timestamp.
 
