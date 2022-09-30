@@ -31,7 +31,7 @@ The following demonstration scenarios will help you learn about the capabilities
 > [!NOTE]
 > None of the sample files or _suspicious_ links provided in this collection are actually malicious; all links and demonstration files are harmless.
 >
-> We encourage you to read [Microsoft Defender Antivirus documentation](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/next-generation-protection?view=o365-worldwide), and to download the [Evaluation guide](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/evaluate-microsoft-defender-antivirus?view=o365-worldwide).
+> We encourage you to read [Microsoft Defender Antivirus documentation](next-generation-protection.md), and to download the [Evaluation guide](evaluate-microsoft-defender-antivirus.md).
 
 ## Demonstrations
 
