@@ -51,11 +51,11 @@ Follow these steps to create a model in SharePoint Syntex.
 
     ![Screenshot of the Build a custom model section on the View options for classification and extraction page.](../media/content-understanding/build-a-custom-model-section.png) 
 
-    - [**Teaching method**](#teaching-method)
+    - [**Teaching method**](#teaching-method). This creates an unstructured document processing model.
 
-    - [**Freeform selection method**](#freeform-selection-method)
+    - [**Freeform selection method**](#freeform-selection-method). This creates a freeform document processing model.
 
-    - [**Layout method**](#layout-method)
+    - [**Layout method**](#layout-method). This creates a structured document model.
 
 2. When you select a custom model, the next page will show you more information about the model. If you want to continue to create the model, select **Next**.
 
