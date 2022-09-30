@@ -40,7 +40,7 @@ The **Match**, **Not a match** experience is available in:
 |Fingerprint SIT| No|No|Yes|
 |Exact data match SIT|No|No|No|
 |Named entities| No| No| No|
-|Credential Scan| No| No| No|
+|Credential scan| No| No| No|
 |Built-in Trainable classifiers|No| Yes| Yes|
 |Custom trainable classifier |No| No| Yes|
 
