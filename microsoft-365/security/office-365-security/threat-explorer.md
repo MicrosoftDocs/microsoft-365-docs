@@ -64,7 +64,7 @@ We are making this integration more relevant by introducing the alert ID (see an
 ### Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 to 30 days
 
 As part of this change, you will be able to search for, and filter email data across 30 days (an increase from the previous 7 days) in Threat Explorer/Real-time detections for both Defender for Office P1 and P2 trial tenants.
-This does not impact any production tenants for both P1 and P2/E5 customers, which already has the 30 day data retention and search capabilities.
+This does not impact any production tenants for both P1 and P2/E5 customers, which already have the 30 day data retention and search capabilities.
 
 ### Updated limits for Export of records for Threat Explorer
 
@@ -180,7 +180,7 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 
 *System overrides* enable you to make exceptions to the intended delivery location of a message. You override the delivery location provided by the system, based on the threats and other detections identified by the filtering stack. System overrides can be set through tenant or user policy to deliver the message as suggested by the policy. Overrides can identify unintentional delivery of malicious messages due to configurations gaps, such as an overly broad Safe Sender policy set by a user. These override values can be:
 
-- Allowed by user policy: A user creates policies at the mailbox level to allows domains or senders.
+- Allowed by user policy: A user creates policies at the mailbox level to allow domains or senders.
 
 - Blocked by user policy: A user creates policies at the mail box level to block domains or senders.
 
