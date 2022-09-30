@@ -39,7 +39,7 @@ If your organization has [Microsoft Defender for Office 365](defender-for-office
 
 Explorer or Real-time detections helps your security operations team investigate and respond to threats efficiently. The report resembles the following image:
 
-:::image type="content" source="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png" alt-text="The Explorer menu item" lightbox="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png":::
+:::image type="content" source="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png" alt-text="Screenshot that shows the Explorer menu item." lightbox="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png":::
 
 With this report, you can:
 
