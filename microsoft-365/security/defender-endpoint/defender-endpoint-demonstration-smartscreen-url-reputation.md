@@ -24,8 +24,8 @@ Test how Microsoft Defender SmartScreen helps you identify phishing and malware 
 Scenario requirements and setup
 
 - Windows 10 or 11
-- Edge browser required
-- For more information see [Microsoft Defender Smartscreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
+- Microsoft Edge browser required
+- For more information, see [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 ## SmartScreen for Microsoft Edge URL scenario demonstrations
 
@@ -35,7 +35,7 @@ Alerts the user to a suspicious page and ask for feedback:
 
 - [Is this Phishing?](https://demo.smartscreen.msft.net/other/areyousure.html)
 
-  Launching this link should render a message similar to the following:
+  Launching this link should render a message similar to the following screenshot:
 
   :::image type="content" source="images/smartscreen-url-reputation-is-this-phishing.png" alt-text="SmartScreen alerts the user the site is potentially a phishing site and possibly unsafe":::
 
@@ -45,7 +45,7 @@ A page known for phishing that should be blocked:
 
 - [A known Phishing page](https://demo.smartscreen.msft.net/phishingdemo.html)
 
-  Launching this link should render a message similar to the following:
+  Launching this link should render a message similar to the following example:
 
   :::image type="content" source="images/smartscreen-url-reputation-this-is-phishing.png" alt-text="SmartScreen reports the site is known for containing phishing threats":::
 
@@ -55,7 +55,7 @@ A page that hosts malware and should be blocked:
 
 - [A known malware page](https://demo.smartscreen.msft.net/other/malware.html)
 
-  Launching this link should render a message similar to the following:
+  Launching this link should render a message similar to the following screenshot:
 
   :::image type="content" source="images/smartscreen-url-reputation-malware-page.png" alt-text="SmartScreen alerts the user that the site is know for containing harmful programs":::
 
@@ -81,7 +81,7 @@ A benign page hosting a malicious advertisement
 
 - [A page known to contain malicious advertisements](https://demo.smartscreen.msft.net/other/exploit_frame.html)
 
-  Launching this link should render a message similar to the following:
+  Launching this link should render a message similar to the following screenshot:
 
   :::image type="content" source="images/smartscreen-url-reputation-malvertising.png" alt-text="A demonstration of how SmartScreen responds to a frame on a page that is detected to be malicious. Only the malicious frame is blocked":::
 
