@@ -33,10 +33,10 @@ Block at First Sight, is a feature of Microsoft Defender Antivirus cloud-deliver
 
 - Click the create and download new file button
 - You should see the browser scanning the file, followed by an antivirus block notification.
-- [Create & download new file!](https://demo.wd.microsoft.com/Files/Create)
+- [Create & download new file!](https://demowdtestground.blob.core.windows.net/samples/ztp_xzXLX_s1H8MsxK2SRlsjmzaH62cOZEaqtstGsOw/wdtestfile.exe?sv=2015-07-08&sr=b&sig=7JNcGzAYWEinuWKNmjoC6tDmEjGZMQj8rAEF9HIzJdE%3D&se=2022-09-30T18%3A29%3A28Z&sp=r)
 
 ## See also
 
-[Block at First Sight](/windows/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus?ocid=wd-av-demo-fl-bottom)
+[Block at First Sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 
 [Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)
