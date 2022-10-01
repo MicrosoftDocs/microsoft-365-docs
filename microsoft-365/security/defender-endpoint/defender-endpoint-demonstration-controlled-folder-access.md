@@ -18,19 +18,21 @@ ms.topic: article
 ms.subservice: mde
 ---
 
-# Controlled folder access (CFA) demonstrations
+# Controlled folder access (CFA) demonstrations (block ransomware)
 
 Controlled Folder Access helps you protect valuable data from malicious apps and threats, such as ransomware. All apps (any executable file, including .exe, .scr, .dll files and others) are assessed by Microsoft Defender Antivirus, which then determines if the app is malicious or safe. If the app is determined to be malicious or suspicious, then it will not be allowed to make changes to any files in any protected folder.
 
 ## Scenario requirements and setup
 
 - Windows 10 1709 build 16273
-- Microsoft Defender Antivirus
+- Microsoft Defender Antivirus (active mode)
 
 ## PowerShell commands
 
-- Set-MpPreference -EnableControlledFolderAccess Enabled
+- Set-MpPreference -EnableControlledFolderAccess (State)
 - Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
+
+States
 - Enabled = Block mode (1)
 - AuditMode = Audit Mode (2)
 - Disabled = Off (0)
@@ -83,9 +85,4 @@ Download and run this [cleanup script](https://demo.wd.microsoft.com/Content/ASR
 - Cleanup c:\demo encryption run the [encrypt/decrypt file](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe)
 
 ## See also
-
-[Controlled folder access demonstration test tool](defender-endpoint-demonstration-controlled-folder-access-test-tool.md)
-
 [Controlled folder access](/windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard?ocid=wd-av-demo-cfa-bottom)
-
-[Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)

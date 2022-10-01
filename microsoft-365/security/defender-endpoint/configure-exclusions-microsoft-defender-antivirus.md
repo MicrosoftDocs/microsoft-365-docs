@@ -57,7 +57,7 @@ Keep the following points in mind when you are defining exclusions:
 
 - Review and audit changes to your list of exclusions. Your security team should preserve context around why a certain exclusion was added to avoid confusion later on. Your security team should be able to provide specific answers to questions about why exclusions exist.
 
-## Microsoft Exchange AMSI integration and Antivirus Exclusions
+## Audit Antivirus Exclusions
 
 Exchange has supported integration with the Antimalware Scan Interface (AMSI) since the June 2021 Quarterly Updates for Exchange. It is highly recommended to ensure these updates are installed and AMSI is working using the guidance provided by the Exchange Team as this integration will allow the best ability for Defender Antivirus to detect and block exploitation of Exchange.  
 
