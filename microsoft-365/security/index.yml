@@ -30,13 +30,14 @@ highlightedContent:
       itemType: overview
       url: /microsoft-365/solutions/ransomware-protection-microsoft-365
     # Card
+    - title: Microsoft 365 Defender Tech Community
+      itemType: whats-new
+      url: https://techcommunity.microsoft.com/t5/microsoft-365-defender/bd-p/MicrosoftThreatProtection
+    # Card
     - title: Microsoft SIEM and XDR security solutions
       itemType: overview
-      url: https://www.microsoft.com/security/blog/2021/03/02/microsoft-unifies-siem-and-xdr-to-help-stop-advanced-attacks/
-    # Card
-    - title: Microsoft 365 Defender Tech Community
-      itemType: overview
-      url: https://techcommunity.microsoft.com/t5/microsoft-365-defender/bd-p/MicrosoftThreatProtection
+      url: https://www.microsoft.com/en-us/security/business/threat-protection
+
 
 # productDirectory section (optional)
 productDirectory:
