@@ -160,5 +160,35 @@ conceptualContent:
          - url: /microsoft-365/security/office-365-security/attack-simulation-training-get-started
            itemType: overview
            text: Attack simulation and training
+        # Card
+      - title: Placeholder
+        links:
+         - url: /microsoft-365/security/defender-endpoint/onboard-configure
+           itemType: how-to-guide
+           text: Protect your endpoints
+         - url: /microsoft-365/security/defender/microsoft-secure-score
+           itemType: how-to-guide
+           text: Assess your security posture and take action
+         - url: /microsoft-365/security/office-365-security/mdo-sec-ops-guide
+           itemType: how-to-guide
+           text: Set up operations for monitoring Defender for Office 365
+   # Card
+      - title: Placeholder
+        links:
+         - url: /microsoft-365/security/defender/microsoft-365-defender-portal
+           itemType: concept
+           text: Start using the Microsoft 365 Defender Portal
+         - url: /microsoft-365/security/defender/first-incident-overview
+           itemType: how-to-guide
+           text: Respond to your first incident
+         - url: /microsoft-365/security/defender-endpoint/attack-simulations
+           itemType: concept
+           text: Simulate an attack (Defender for Endpoint)    
+  # Card
+      - title: Placeholder
+        links:
+         - url: /microsoft-365/security/office-365-security/attack-simulation-training-get-started
+           itemType: overview
+           text: Attack simulation and training
 
 
