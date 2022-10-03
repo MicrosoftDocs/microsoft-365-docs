@@ -1,5 +1,5 @@
 ---
-title: "France national id card (CNI) entity definition"
+title: "France national ID card (CNI) entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,10 +19,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: "France national id card (CNI) sensitive information type entity definition."
+description: "France national ID card (CNI) sensitive information type entity definition."
 ---
 
-# France national id card (CNI)
+# France national ID card (CNI)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
