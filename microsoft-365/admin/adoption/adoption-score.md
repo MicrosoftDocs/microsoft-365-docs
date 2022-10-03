@@ -74,7 +74,7 @@ Microsoft is committed to protecting individual privacy. This [privacy document]
 You can access the experience from Microsoft 365 Admin home under **Reports** > **Adoption Score**.
 
 > [!NOTE]
-> This feature is not available in GCC High, GCC and DOD tenants.
+> This feature is not available in GCC High, GCC, and DOD tenants.
   
 ## How the score is calculated
 
