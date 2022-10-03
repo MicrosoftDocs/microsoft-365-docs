@@ -15,6 +15,7 @@ metadata:
   author: dansimp #Required; your GitHub user alias, with correct capitalization.
   ms.author: dansimp #Required; microsoft alias of author; optional team alias.
   ms.date: 06/22/2022 #Required; mm/dd/yyyy format.
+  ms.custom: intro-hub-or-landing
 
 # highlightedContent section (optional)
 # Maximum of 8 items
