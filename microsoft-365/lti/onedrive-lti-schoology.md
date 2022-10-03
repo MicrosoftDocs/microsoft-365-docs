@@ -20,11 +20,6 @@ This guide provides IT admins steps for registering the OneDrive LTI app for the
 
 For an overview of Microsoft LTI, see [Integrating Microsoft products with your Learning Management System (LMS)](index.md).
 
-The steps to add the OneDrive LTI app are:
-
-1. [Register the OneDrive LTI app in Schoology](#register-the-onedrive-lti-app-in-schoology).
-1. [Configure the OneDrive LTI app to work with Schoology](#configure-the-onedrive-lti-app-to-work-with-schoology).
-
 The person who performs this integration should be an administrator of Schoology and an administrator of the Microsoft 365 tenant.
 
 ## Recommended browser settings
@@ -36,6 +31,16 @@ The person who performs this integration should be an administrator of Schoology
 > Cookies aren't allowed by default in the Chrome browser incognito mode and will need to be allowed.
 >
 > Microsoft OneDrive LTI works in the private mode in Microsoft Edge browser. Ensure that you haven't blocked cookies (which are allowed by default).
+
+## Register a new Microsoft OneDrive LTI app for your Microsoft 365 tenant
+
+1. Sign into the [Microsoft OneDrive LTI Registration Portal](https://onedrivelti.microsoft.com/admin) using an Office 365 Global Admin credential.
+1. Select the **Admin Consent** button and accept the permissions.
+    1. If this step isn't completed successfully, the following step will give you an error, and you may not be able to take this step for an hour once you've gotten the error. If the consent fails, please insure you are signed in as a Global Admin and repeat this step.
+1. Select the **Create new LTI Tenant** button.
+1. In the **LTI Consumer Platform** list, select **Schoology**.
+1. In the **Schoology Base URL** field, enter your Schoology base URL, like `https://testschool.schoology.com`.
+1. Select the **Next** button. The **Register LTI 1.3 App** page will load.
 
 ## Register the OneDrive LTI app in Schoology
 
@@ -57,17 +62,3 @@ The person who performs this integration should be an administrator of Schoology
 >
 > 1. Going to the [Organization Apps list](https://app.schoology.com/apps/school_apps), selecting the **Install/Remove** button, and choosing the courses in which to install the app.
 > 1. Or, they can select the **Install Your App(s)** link at the bottom of the course left rail navigation menu, and then select the **Microsoft OneDrive** app to install.
-
-## Configure the OneDrive LTI app to work with Schoology
-
-1. Visit [Microsoft LMS Gateway](https://lti.microsoft.com/) and select the **Go to registration portal** button.
-1. Sign in with a Microsoft 365 administrator account.
-1. Select the **Admin Consent** button and accept the permissions.
-    1. If this step isn't performed, the following step will give you an error, and you won't be able to take this step for an hour once you've received the error.
-1. Select the **Create new LTI Tenant** button.
-1. On the LTI Registration page, choose **Schoology** from the LTI Consumer Platform dropdown, and then select the **Next** button.
-1. Paste the **Deployment ID** that you copied while registering the tool in Schoology and select **Next**.
-1. Review and save your changes. A message will be displayed upon successful registration.
-1. Your registration details can also be reviewed by selecting the **View LTI Tenants** button on the home page.
-
-After you complete these steps, your educators will be able to open documents from OneDrive.
