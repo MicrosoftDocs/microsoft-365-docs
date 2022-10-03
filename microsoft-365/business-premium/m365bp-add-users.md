@@ -12,6 +12,7 @@ ms.subservice: other
 ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
+- tier1
 ms.custom:
 - MiniMaven
 - OKR_SMB_M365

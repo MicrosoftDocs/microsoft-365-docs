@@ -7,7 +7,9 @@ ms.date: 06/02/2022
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
-ms.collection: SPO_Content
+ms.collection: 
+- scotvorg
+- SPO_Content
 search.appverid:
 - MET150
 ms.localizationpriority: medium

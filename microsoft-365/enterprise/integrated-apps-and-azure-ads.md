@@ -12,7 +12,9 @@ f1.keywords:
 ms.custom: 
  - Adm_O365
  - seo-marvel-apr2020
-ms.collection: M365-subscription-management
+ms.collection: 
+- scotvorg
+- M365-subscription-management
 search.appverid:
 - MET150
 - MOE150

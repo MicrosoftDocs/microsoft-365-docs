@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.localizationpriority: medium
 ms.collection: 
   - m365-frontline
+  - highpri
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
@@ -40,7 +41,7 @@ Running a pilot program is part of the overall adoption process. For more inform
 - [Enabling your frontline workers with Microsoft Teams](https://adoption.microsoft.com/microsoft-teams/frontline-workers/)
 - [3 ways to support frontline workers in a hybrid world](https://www.microsoft.com/microsoft-365/blog/2021/10/19/3-ways-to-support-frontline-workers-in-a-hybrid-world/)
 
-We recommend that you prepare for deployment by completing this 30-minute learning path: [Prepare for a Teams deployment with Microsoft 365](/learn/modules/m365-teams-collab-prepare-deployment/).
+We recommend that you prepare for deployment by completing this 30-minute learning path: [Prepare for a Teams deployment with Microsoft 365](/training/modules/m365-teams-collab-prepare-deployment/).
 
 ## Steps to run a pilot program
 

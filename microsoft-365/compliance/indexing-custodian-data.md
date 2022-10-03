@@ -1,21 +1,23 @@
 ---
 title: "Advanced indexing of custodian data"
+description: "When a custodian is added to an eDiscovery (Premium) case, any content that was deemed as partially indexed is reprocessed to make it fully searchable."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: "When a custodian is added to an eDiscovery (Premium) case, any content that was deemed as partially indexed is reprocessed to make it fully searchable."
 ---
 
 # Advanced indexing of custodian data
@@ -31,6 +33,8 @@ To learn more about processing support and partially indexed items, see:
 - [File formats indexed by Exchange Search](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
 - [Default crawled file name extensions and parsed file types in SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Viewing Advanced indexing results
 
