@@ -18,7 +18,7 @@ ms.collection:
 
 # Data Residency for Microsoft Defender for Office P1
 
-##Summary
+## Summary
  
 Service documentation:  <a href="[https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide)" target="_blank">**Office 365 Security including Microsoft Defender for Office 365 and Exchange Online Protection**</a>
 
@@ -26,9 +26,9 @@ Service documentation:  <a href="[https://www.microsoft.com/licensing/terms/prod
 Capability Summary: Protects email and collaboration from zero-day malware, phish, and business email compromise.  MDO P1 builds on Exchange Online Protection (EOP).  Data residency capabilities for EOP can be found in Section (***TODO: add link***).
 
 
-##Data Residency commitments available
+## Data Residency commitments available
 
-###Option 1: Advanced Data Residency add-on
+### Option 1: Advanced Data Residency add-on
 
 Required Conditions:
 
