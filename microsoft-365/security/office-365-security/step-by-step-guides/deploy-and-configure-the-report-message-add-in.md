@@ -3,6 +3,7 @@ title: How-to deploy and configure the report message add-in
 description: The steps to deploy and configure Microsoft's phish reporting add-in(s) aimed at security administrators.
 search.product: 
 ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +14,11 @@ author: MSFTBen
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection: 
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
-ms.subservice: mdo
 search.appverid: met150
 ---
 
@@ -34,7 +37,7 @@ Depending on whether you are licensed for Defender for Office 365, you'll also g
 ## What you'll need
 
 -	Exchange Online Protection (some features require Defender for Office 365 Plan 2)
--	Sufficient permissions (Global admin for add-in deployment, security admin for customisation)
+-	Sufficient permissions (Global admin for add-in deployment, security admin for customization)
 - 5-10 minutes to perform the steps below
 
 ## Deploy the add-in for users
@@ -44,7 +47,7 @@ Depending on whether you are licensed for Defender for Office 365, you'll also g
 1.	On the page that loads, press **Get Apps**.
 1.	In the page that appears, in the top right Search box, enter **Report Message** or **Report Phishing**, and then select **Search**.
 1.	Press **Get it now** on your chosen app within the search results (publisher is **Microsoft Corporation**).
-1.	On the flyout that appears, select who to deploy the add-in to. If testing you may wish to use a specific group, otherwise configure it for the **entire organisation** – when you've made a selection press **Next**.
+1.	On the flyout that appears, select who to deploy the add-in to. If testing you may wish to use a specific group, otherwise configure it for the **entire organization** – when you've made a selection press **Next**.
 1.	Review the permissions, information and capabilities then press **Next**.
 1.	Press **Finish deployment** (it can take 12-24 hours for the add-in to appear automatically in Outlook clients).
 
@@ -61,9 +64,9 @@ Depending on whether you are licensed for Defender for Office 365, you'll also g
 ## Optional steps – configure notifications
 
 1.	On the configuration page from the earlier steps, underneath the **User reporting experience**, configure the before and after reporting pop-ups title and body if desired. The end users will see the before reporting pop up if **Ask me before reporting** is also enabled.
-2.	If you wish for notifications to come from an internal organisational mailbox, select **Specify Office 365 email address to use as sender** and search for a valid mailbox in your organisation to send the notifications from.
+2.	If you wish for notifications to come from an internal organizational mailbox, select **Specify Office 365 email address to use as sender** and search for a valid mailbox in your organization to send the notifications from.
 3.	Press **Customize notifications** to set up the text sent to reporting users after admin reviews a reported message using Mark & Notify, configure the **Phishing**, **Junk** & **No threats** found options.
-4.	On the **Footer** tab, select the global footer to be sent for notifications, along with your organisation's logo if appropriate.
+4.	On the **Footer** tab, select the global footer to be sent for notifications, along with your organization's logo if appropriate.
 
 
 ### Further reading

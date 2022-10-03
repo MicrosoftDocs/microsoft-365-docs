@@ -5,6 +5,7 @@ metadata:
   keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
   ms.pagetype: security
   ms.service: microsoft-365-security
+  ms.subservice: mde
   ms.mktglfcycl: manage
   ms.sitesec: library
   ms.localizationpriority: medium
@@ -15,7 +16,7 @@ metadata:
   manager: dansimp
   ms.custom: asr
   ms.topic: faq
-  ms.collection: m365-security-compliance
+  ms.collection: m365-security
   ms.date: 09/13/2022
 
 title: Attack surface reduction frequently asked questions (FAQ)

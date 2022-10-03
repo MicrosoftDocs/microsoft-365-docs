@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.collection: m365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
 ms.service: microsoft-365-security
@@ -181,7 +181,7 @@ Watch this video to learn more: [Learn how to use the Submissions portal to subm
 
 Use the reporting capabilities in Defender for Office 365 to get more details about your environment.
 
-- The [Evaluation dashboard](try-microsoft-defender-for-office-365.md#reports-for-audit-mode-only) provides an easy view of the threats detected by Defender for Office 365 during evaluation.
+- The [Evaluation dashboard](try-microsoft-defender-for-office-365.md#reports-for-audit-mode) provides an easy view of the threats detected by Defender for Office 365 during evaluation.
 - Understand threats received in email and collaboration tools with the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
 
 ### Step 2: Intermediate steps in auditing mode
@@ -230,6 +230,6 @@ Equip your users with the right knowledge to identify threats and report suspici
 
 - **Interactive guide**: Unfamiliar with Defender for Office 365? Review the [interactive guide](https://mslearn.cloudguides.com/guides/Safeguard%20your%20organization%20with%20Microsoft%20Defender%20for%20Office%20365) to understand how to get started.
 - **Fast Track Get Started Guide***: [Microsoft Defender for Office 365](https://go.microsoft.com/fwlink/p/?linkid=2197415)
-- **Microsoft docs**: Get detailed information on how Defender for Office 365 works and how to best implement it for your organization. Visit [Docs](overview.md).
+- **Microsoft Defender for Office 365 documentation**: Get detailed information on how Defender for Office 365 works and how to best implement it for your organization. Visit the [Microsoft Defender for Office 365 documentation](defender-for-office-365.md).
 - **What's included**: For a full list of Office 365 email security features listed by product tier, view the [Feature Matrix](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability).
 - **Why Defender for Office 365**: The [Defender for Office 365 Datasheet](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FCiy) shows the top 10 reasons customers choose Microsoft.

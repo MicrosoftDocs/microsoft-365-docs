@@ -1,9 +1,10 @@
 ---
 title: "Collection statistics and reports"
+description: "Learn how to access and use statistics and reports for draft collections and collections that have been committed to a review set in Microsoft Purview eDiscovery (Premium)." 
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: 04/08/2022
@@ -11,11 +12,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to access and use statistics and reports for draft collections and collections that have been committed to a review set in Microsoft Purview eDiscovery (Premium)." 
 ---
 
 # Collection statistics and reports in Microsoft Purview eDiscovery (Premium)
@@ -23,6 +26,8 @@ description: "Learn how to access and use statistics and reports for draft colle
 After you create a draft collection, you can view statistics on the retrieved items, such as the content locations that contain the most items that matched the search criteria and the number of items returned by the search query. You can also preview a subset of the results.
 
 When you've identified the set of documents you want to further examine, you can add the search results to a review set to collect and process.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Statistics and reports for draft collections
 

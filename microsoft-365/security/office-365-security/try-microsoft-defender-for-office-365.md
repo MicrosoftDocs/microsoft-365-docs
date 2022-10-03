@@ -14,7 +14,7 @@ search.appverid:
   - MET150
   - MOE150
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom: 
 ms.subservice: mdo
 ms.service: microsoft-365-security
@@ -279,7 +279,11 @@ After you set up your evaluation or trial in audit mode or blocking mode, the **
 
 ## Reports for your evaluation or trial of Defender for Office 365
 
-In **audit mode** or **blocking mode**, the following reports show detections by Defender for Office 365:
+This section describes the reports that are available in audit mode and blocking mode.
+
+### Reports for blocking mode
+
+In **blocking mode**, the following reports show detections by Defender for Office 365:
 
 - The [Mailflow view for the Mailflow status report](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report):
 
@@ -323,9 +327,16 @@ In **audit mode** or **blocking mode**, the following reports show detections by
 
   - The [URL protection report](view-reports-for-mdo.md#url-protection-report)
 
-### Reports for audit mode only
+### Reports for audit mode
 
-In [Threat Explorer](threat-explorer.md), messages that were detected by the Defender for Office 365 evaluation show the following banner in the details of the entry:
+In **audit mode**, the following reports show detections by Defender for Office 365:
+
+- The [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) has **Evaluation: Yes/No** as a filterable property in the following views:
+  - [View data by Email \> Phish and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
+  - [View data by Email \> Malware and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
+  - [View data by Email \> Spam and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--spam-and-chart-breakdown-by-detection-technology)
+
+- [Threat Explorer](threat-explorer.md) shows the following banner in message detection details on the **Analysis** tab for **Bad attachment**, **spam url + malware**, **Phish url**, and **impersonation** messages that were detected by the Defender for Office 365 evaluation show the following banner in the details of the entry:
 
   ![Notification banner in message details that the Defender for Office 365 evaluation detected a malicious email message.](../../media/evalv2-detection-banner.png)
 

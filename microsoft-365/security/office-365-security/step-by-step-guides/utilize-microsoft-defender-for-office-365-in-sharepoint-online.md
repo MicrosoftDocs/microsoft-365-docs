@@ -13,7 +13,10 @@ author: MSFTBen
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection: 
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
@@ -38,8 +41,8 @@ To learn more, read [Step 1: Use the Microsoft 365 Defender portal to turn on Sa
 1.	Sign in to the [security center’s safe attachments configuration page](https://security.microsoft.com/safeattachmentv2).
 1.	Select **Global settings**.
 1.	Ensure that **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** is set to **on**.
-1.	Navigate to the [security center’s Safe links configuration page](https://security.microsoft.com/safelinksv2).
 1.	Select **Save**.
+
 
 ## Stop infected file downloads from SharePoint Online
 

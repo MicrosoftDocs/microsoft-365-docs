@@ -4,7 +4,7 @@
       href: index.md
     - name: Productivity and security 
       href: m365bp-secure-users.md
-    - name: Microsoft 365 Business Premium trial playbook
+    - name: Microsoft 365 Business Premium trial guide
       href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: Get Microsoft 365 Business Premium
       href: get-microsoft-365-business-premium.md
@@ -125,7 +125,7 @@
     - name: Microsoft Defender for Business
       href: ../security/defender-business/index.yml
     - name: Microsoft Defender for Office 365
-      href: ../security/office-365-security/overview.md
+      href: /microsoft-365/security/office-365-security/overview
     - name: Microsoft 365 Lighthouse
       href: ../lighthouse/m365-lighthouse-overview.md
     - name: Threat protection by Microsoft Defender Antivirus

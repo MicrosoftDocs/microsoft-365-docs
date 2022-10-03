@@ -4,6 +4,7 @@ description: Learn how to cancel an already launched machine action
 keywords: apis, graph api,
 search.appverid: met150
 ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +15,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
 ms.custom: api
 ---

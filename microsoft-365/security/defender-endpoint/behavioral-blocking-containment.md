@@ -10,12 +10,15 @@ ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 ms.custom:
   - next-gen
   - edr
   - admindeeplinkDEFENDER
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 search.appverid: met150
 ---
 

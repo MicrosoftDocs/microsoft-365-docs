@@ -3,6 +3,7 @@ manager: dansimp
 ms.author: dansimp
 author: dansimp
 ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.topic: include
 ms.custom: admindeeplinkDEFENDER
 search.appverid: met150
