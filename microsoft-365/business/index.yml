@@ -196,6 +196,9 @@ conceptualContent:
         - url: ../admin/security-and-compliance/secure-your-business-data.md
           itemType: how-to-guide
           text: See top 10 ways to secure my business
+        - url: ../business-premium/m365bp-trial-playbook-microsoft-business-premium.md
+          itemType: how-to-guide
+          text: User trial guide - Microsoft 365 Business Premium
         - url: ../admin/manage/find-your-partner-or-reseller.md
           itemType: how-to-guide
           text: Find a Microsoft partner to help my business

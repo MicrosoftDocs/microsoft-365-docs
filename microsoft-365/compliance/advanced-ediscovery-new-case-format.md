@@ -13,7 +13,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery 
 search.appverid: 
 - MOE150
@@ -23,6 +23,8 @@ search.appverid:
 # Use the new case format in eDiscovery (Premium)
 
 More organizations are using the eDiscovery (Premium) solution in Microsoft Purview for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation. As usage of eDiscovery (Premium) increases, a common customer requirement is to expand the total amount of content that can be managed in a single eDiscovery (Premium) case. To help accommodate significant increases in case size, both for total data volume and the total number of items, you can now choose the new case format when you create an eDiscovery (Premium) case.  
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Create a case
 

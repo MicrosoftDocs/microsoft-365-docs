@@ -12,8 +12,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -130,6 +131,9 @@ Configure the supervised mode for Defender for Endpoint app through an App confi
 
 1. Provide a name of the profile. When prompted to import a Configuration profile file, select the one downloaded from the previous step.
 1. In the **Assignment** section, select the device group to which you want to apply this profile. As a best practice, this should be applied to all managed iOS devices. Select **Next**.
+    > [!NOTE]
+    > Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2
+
 1. On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
 
 

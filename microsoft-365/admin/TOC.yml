@@ -275,6 +275,8 @@
       items:
          - name: Monitor Microsoft 365 activity by using reports
            href: activity-reports/activity-reports.md
+         - name: Microsoft 365 Teams apps usage reports
+           href: activity-reports/microsoft-teams-apps-usage.md  
          - name: Microsoft Adoption Score - overview
            href: adoption/adoption-score.md
            items:

@@ -12,7 +12,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
@@ -32,6 +34,12 @@ search.appverid: met150
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+
+> [!NOTE]
+>**Before you begin**:
+You first need to [create an app](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro?view=o365-worldwide).
+
 
 In this section you will learn to create a Power BI report on top of Defender for Endpoint APIs.
 

@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
@@ -38,6 +38,8 @@ Although you can create and manage retention labels from **Data lifecycle manage
 File plan can be used for all retention labels, even if they don't mark content as a record.
 
 For information about what retention labels are and how to use them, see [Learn about retention policies and retention labels](retention.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Accessing file plan
 

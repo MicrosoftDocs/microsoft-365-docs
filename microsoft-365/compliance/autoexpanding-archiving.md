@@ -10,8 +10,8 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- tier1
+- purview-compliance
+- tier2
 search.appverid:
 - MOE150
 - MET150
@@ -31,6 +31,8 @@ For step-by-step instructions for turning on auto-expanding archiving, see [Enab
 
 > [!NOTE]
 > Auto-expanding archiving also supports shared mailboxes.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How auto-expanding archiving works
 
