@@ -42,7 +42,6 @@ highlightedContent:
 # productDirectory section (optional)
 productDirectory:
   title: Microsoft 365 Defender products and services # < 60 chars (optional)
-  summary: See the list of products and services that power Microsoft 365 Defender # < 160 chars (optional)
   items:
     # Card
     - title: Microsoft 365 Defender
