@@ -49,6 +49,10 @@ To troubleshoot such issues, begin by [collecting MDEClientAnalyzer logs](run-an
 > [!NOTE]
 > As a general best practice, it is recommended to update the [Microsoft Defender for Endpoint agent to latest available version](linux-whatsnew.md) and confirming issue still persists before investigating further.
 
+> [!NOTE]
+> That there are additional configurations that can affect AuditD subsystem CPU strain. <BR>
+> Specifically, in [auditd.conf](https://linux.die.net/man/8/auditd.conf), the value for **disp_qos** can be set to "lossy" to reduce the high CPU consumption. <BR>
+> However, this means that some events may be dropped during peak CPU consumption. <BR>
 
 ## XMDEClientAnalyzer 
 
