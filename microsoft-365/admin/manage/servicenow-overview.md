@@ -83,6 +83,7 @@ After the Microsoft 365 Support Integration app has been installed, two Applicat
 ## Setup the integration
 
 After you've downloaded the app, navigate to the Microsoft 365 setup wizard in your SNOW environment to complete the setup process.
+
 ![MicrosoftTeams-image (3)](https://user-images.githubusercontent.com/93688542/193369141-a3fc8000-9643-4480-a758-3b0cc5752280.png)
 
 You can learn more about the steps by visiting the following pages:
