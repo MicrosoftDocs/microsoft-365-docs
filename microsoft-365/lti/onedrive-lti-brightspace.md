@@ -23,7 +23,6 @@ The steps to add the OneDrive LTI app are:
 1. [Step 1: Add the new Microsoft OneDrive LTI app](#step-1-add-the-new-microsoft-onedrive-lti-app).
 1. [Step 2: Deploy the LTI app in users' Brightspace experience](#step-2-deploy-the-lti-app-in-users-brightspace-experience).
 1. [Step 3: Turn on the new OneDrive LTI app on the Quicklinks Activity Bar](#step-3-turn-on-the-new-onedrive-lti-app-on-the-quicklinks-activity-bar).
-1. [Step 4: Turn on the new OneDrive LTI app on the Quicklinks activity bar](#step-4-turn-on-the-new-onedrive-lti-app-on-the-quicklinks-activity-bar-optional) (optional).
 
 > [!NOTE]
 > The person who performs this integration should be an administrator of Brightspace and an administrator of the Microsoft 365 tenant.
