@@ -112,7 +112,7 @@ Security intelligence update version: x.xxx.xxxx.x <br/>
 
 ### Known Issues
 
-- Some customers might have received platform updates 4.18.2209.2 from preview. In this case, the service can get stuck at the start state after the update.  
+- Some customers might have received platform updates 4.18.2209.2 from preview. It can cause the service to get stuck at the start state after the update.  
 <br/><br/>
 </details><details>
 <summary>August-2022 (Platform: 4.18.2207.7 | Engine: 1.1.19600.3)</summary>
