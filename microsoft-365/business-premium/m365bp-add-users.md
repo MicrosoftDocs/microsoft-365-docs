@@ -2,28 +2,23 @@
 title: "Add a new user to your network and systems"
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: how-to
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
-- M365-subscription-management
-- M365-identity-device-management 
-- Adm_TOC
+- tier1
 ms.custom:
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
 - OKR_SMB_M365
-- seo-marvel-mar
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: "How to add a new employee or user to your organization's network and internal systems. When a new employee joins your company, you must securely add them to the network."
 ---
 
@@ -38,12 +33,14 @@ The following information tells you how to use Microsoft 365 Business Premium to
 ## How to add a new user
 
 1. Go to admin.microsoft.com
-1. Click **Add a user**.
-1. Enter the basic information and the *personal* email address of the new employee.
+
+2. Click **Add a user**.
+
+3. Enter the basic information and the *personal* email address of the new employee.
 
     When you set up your new employee in the Admin center, make sure to enter and send log-in details to the employee's personal account. This way, they'll receive an email from the Microsoft Online Service Team that tells them how to log in to Microsoft 365 Business Premium. If you don't send it to their personal email address, instead, print out the employee's sign in name and password, and give it to them in person. Or, tell them the information over the phone.
   
-1. Have the new user sign in to use Microsoft 365 Business Premium. Give them the following sign in information:
+4. Have the new user sign in to use Microsoft 365 Business Premium. Give them the following sign in information:
   
     - Sign in at [https://www.office.com](https://www.office.com).
     - Select **Sign in**, then type the user ID and password.

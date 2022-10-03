@@ -1,29 +1,27 @@
 ---
 title: "Detailed properties in the audit log"
+description: This article provides descriptions of additional properties included when you export results for an Office 365 audit log record.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- audit
 search.appverid:
 - MOE150
 - BCS160
 - MET150
-ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
-description: This article provides descriptions of additional properties included when you export results for an Office 365 audit log record.
 ms.custom: seo-marvel-apr2020
 ---
 
 # Detailed properties in the audit log
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 When you export the results of an audit log search from the Microsoft Purview compliance portal, you have the option to download all the results that meet your search criteria. You do this by selecting **Export results** \> **Download all results** on the **Audit log search** page. For more information, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
   
@@ -84,7 +82,6 @@ The following table describes the properties that are included (depending on the
 |UserDomain|Identity information about the tenant organization of the user (actor) who performed the action.|Azure Active Directory|
 |UserId|The user who performed the action (specified in the **Operation** property) that resulted in the record being logged. Audit records for activity performed by system accounts (such as SHAREPOINT\system or NT AUTHORITY\SYSTEM) are also included in the audit log. Another common value for the UserId property is app@sharepoint. This indicates that the "user" who performed the activity was an application that has the necessary permissions in SharePoint to perform organization-wide actions (such as search a SharePoint site or OneDrive account) on behalf of a user, admin, or service. <br/><br/>For more information, see:<br/> [The app\@sharepoint user in audit records](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)<br/> or <br/>[System accounts in Exchange mailbox audit records](search-the-audit-log-in-security-and-compliance.md#system-accounts-in-exchange-mailbox-audit-records). |All|
 |UserKey|An alternative ID for the user identified in the **UserID** property. For example, this property is populated with the passport unique ID (PUID) for events performed by users in SharePoint. This property also might specify the same value as the **UserID** property for events occurring in other services and events performed by system accounts.|All|
-|UserSharedWith|The user that a resource was shared with. This property is included if the value for the **Operation** property is **SharingSet**. This user is also listed in the **Shared with** column in the report.|SharePoint|
 |UserType|The type of user that performed the operation. The following values indicate the user type. <br/> <br/> **0** - A regular user. <br/>**2** - An administrator in your Microsoft 365 organization.<sup>1</sup> <br/>**3** - A Microsoft datacenter administrator or datacenter system account. <br/>**4** - A system account. <br/>**5** - An application. <br/>**6** - A service principal.<br/>**7** - A custom policy.<br/>**8** - A system policy.|All|
 |Version|Indicates the version number of the activity (identified by the **Operation** property) that's logged.|All|
 |Workload|The Microsoft 365 service where the activity occurred.|All|

@@ -8,20 +8,22 @@ manager: scotv
 ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: null
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
 - commerce_licensing
+- empty
 search.appverid: MET150
 description: "Learn about the new allotments feature."
 ms.date: 05/12/2022
 ---
 
-# Allotment basics
+# Microsoft 365 license allotment basics
 
 License allotments let you set license limits and delegate management of license assignment to only the products and license limits that you select.
 

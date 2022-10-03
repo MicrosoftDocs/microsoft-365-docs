@@ -1,11 +1,12 @@
 ---
 title: Attack surface reduction rules reference
-description: Lists details about attack surface reduction rules on a per-rule basis.
-keywords: Attack surface reduction rules, ASR, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit rules, antiexploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules, ASR rule description
-ms.prod: m365-security
+description: Lists details about Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules on a per-rule basis.
+keywords: Microsoft Attack surface reduction rules, Microsoft Defender for Endpoint ASR rules, ASR rules list, ASR, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit rules, antiexploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules, ASR rule description
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
@@ -13,13 +14,15 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
 ms.topic: article
-ms.collection: M365-security-compliance
-ms.date: 02/04/2022
+ms.collection: 
+- m365-security
+- tier2
+- ms.date: 08/10/2022
+search.appverid: met150
 ---
 
-# Attack surface reduction rules reference
+# Attack surface reduction (ASR) rules reference
 
 **Applies to:**
 
@@ -32,16 +35,16 @@ ms.date: 02/04/2022
 
 - Windows
 
-This article provides information about attack reduction rules:
+This article provides information about Microsoft Defender for Endpoint attack surface reduction (ASR) rules:
 
-- [Supported operating system versions](#supported-operating-systems)
-- [Supported configuration management systems](#supported-configuration-management-systems)
-- [Per-rule alert and notification details](#per-rule-alert-and-notification-details)
+- [ASR rules supported operating system versions](#asr-rules-supported-operating-systems)
+- [ASR rules supported configuration management systems](#asr-rules-supported-configuration-management-systems)
+- [Per ASR rule alert and notification details](#per-asr-rule-alert-and-notification-details)
 - [ASR rule to GUID matrix](#asr-rule-to-guid-matrix)
 - [ASR rule modes](#asr-rule-modes)
 - [Per-rule-descriptions](#per-rule-descriptions)
 
-## Supported operating systems
+## ASR rules supported operating systems
 
 The following table lists the supported operating systems for rules that are currently released to general availability. The rules are listed alphabetical order in this table.
 
@@ -64,7 +67,7 @@ The following table lists the supported operating systems for rules that are cur
 | [Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | Y | Y | Y | Y | Y |
 | [Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y | Y | Y | Y |
 | [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | Y | Y | Y | Y | Y |
-| [Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) <br> \* _File and folder exclusions not supported._ | Y <br> version 1903 (build 18362) or later <sup>[[3](#fn1)]<sup></sup> | Y | Y <br> version 1903 (build 18362) or later | N | N |
+| [Block persistence through Windows Management Instrumentation (WMI) event subscription](#block-persistence-through-wmi-event-subscription) <br> \* _File and folder exclusions not supported._ | Y <br> version 1903 (build 18362) or later <sup>[[3](#fn1)]<sup></sup> | Y | Y <br> version 1903 (build 18362) or later | N | N |
 | [Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y <br> version 1803 or later <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 | [Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y | Y | Y | Y |
 | [Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y | Y | Y | N | N |
@@ -76,7 +79,7 @@ The following table lists the supported operating systems for rules that are cur
 
 (<a id="fn1">3</a>) Version and build number apply only to Windows&nbsp;10.
 
-## Supported configuration management systems
+## ASR rules supported configuration management systems
 
 Links to information about configuration management system versions referenced in this table are listed below this table.
 
@@ -106,7 +109,7 @@ Links to information about configuration management system versions referenced i
 - [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM is now Microsoft Endpoint Configuration Manager._
 
-## Per rule alert and notification details
+## Per ASR rule alert and notification details
 
 Toast notifications are generated for all rules in Block mode. Rules in any other mode won't generate toast notifications
 
@@ -224,7 +227,7 @@ Advanced hunting action type:
 - AsrAdobeReaderChildProcessAudited
 - AsrAdobeReaderChildProcessBlocked
 
-Dependencies: MDAV
+Dependencies: Microsoft Defender Antivirus
 
 ### Block all Office applications from creating child processes
 
@@ -243,7 +246,7 @@ Advanced hunting action type:
 - AsrOfficeChildProcessAudited
 - AsrOfficeChildProcessBlocked
 
-Dependencies: MDAV
+Dependencies: Microsoft Defender Antivirus
 
 ### Block credential stealing from the Windows local security authority subsystem
 
@@ -268,14 +271,14 @@ Advanced hunting action type:
 - AsrLsassCredentialTheftAudited
 - AsrLsassCredentialTheftBlocked
 
-Dependencies: MDAV
+Dependencies: Microsoft Defender Antivirus
 
 ### Block executable content from email client and webmail
 
 This rule blocks the following file types from launching from email opened within the Microsoft Outlook application, or Outlook.com and other popular webmail providers:
 
 - Executable files (such as .exe, .dll, or .scr)
-- Script files (such as a PowerShell .ps, Visual Basic .vbs, or JavaScript .js file)
+- Script files (such as a PowerShell .ps1, Visual Basic .vbs, or JavaScript .js file)
 
 Intune name: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
@@ -288,7 +291,7 @@ Advanced hunting action type:
 - AsrExecutableEmailContentAudited
 - AsrExecutableEmailContentBlocked
 
-Dependencies: MDAV
+Dependencies: Microsoft Defender Antivirus
 
 > [!NOTE]
 > The rule **Block executable content from email client and webmail** has the following alternative descriptions, depending on which application you use:
@@ -319,7 +322,7 @@ Advanced hunting action type:
 - AsrUntrustedExecutableAudited
 - AsrUntrustedExecutableBlocked
 
-Dependencies: MDAV, Cloud Protection
+Dependencies: Microsoft Defender Antivirus, Cloud Protection
 
 ### Block execution of potentially obfuscated scripts
 
@@ -344,7 +347,7 @@ Advanced hunting action type:
 - AsrObfuscatedScriptAudited
 - AsrObfuscatedScriptBlocked
 
-Dependencies: MDAV, AMSI
+Dependencies: Microsoft Defender Antivirus, AntiMalware Scan Interface (AMSI)
 
 ### Block JavaScript or VBScript from launching downloaded executable content
 
@@ -363,7 +366,7 @@ Advanced hunting action type:
 - AsrScriptExecutableDownloadAudited
 - AsrScriptExecutableDownloadBlocked
 
-Dependencies: MDAV, AMSI
+Dependencies: Microsoft Defender Antivirus, AMSI
 
 ### Block Office applications from creating executable content
 
@@ -382,7 +385,7 @@ Advanced hunting action type:
 - AsrExecutableOfficeContentAudited
 - AsrExecutableOfficeContentBlocked
 
-Dependencies: MDAV, RPC
+Dependencies: Microsoft Defender Antivirus, RPC
 
 ### Block Office applications from injecting code into other processes
 
@@ -405,7 +408,7 @@ Advanced hunting action type:
 - AsrOfficeProcessInjectionAudited
 - AsrOfficeProcessInjectionBlocked
 
-Dependencies: MDAV
+Dependencies: Microsoft Defender Antivirus
 
 ### Block Office communication application from creating child processes
 
@@ -427,7 +430,7 @@ Advanced hunting action type:
 - AsrOfficeCommAppChildProcessAudited
 - AsrOfficeCommAppChildProcessBlocked
 
-Dependencies: MDAV
+Dependencies: Microsoft Defender Antivirus
 
 ### Block persistence through WMI event subscription
 
@@ -449,7 +452,7 @@ Advanced hunting action type:
 - AsrPersistenceThroughWmiAudited
 - AsrPersistenceThroughWmiBlocked
 
-Dependencies: MDAV, RPC
+Dependencies: Microsoft Defender Antivirus, RPC
 
 ### Block process creations originating from PSExec and WMI commands
 
@@ -469,7 +472,7 @@ Advanced hunting action type:
 - AsrPsexecWmiChildProcessAudited
 - AsrPsexecWmiChildProcessBlocked
 
-Dependencies: MDAV
+Dependencies: Microsoft Defender Antivirus
 
 ### Block untrusted and unsigned processes that run from USB
 
@@ -489,7 +492,7 @@ Advanced hunting action type:
 - AsrUntrustedUsbProcessAudited
 - AsrUntrustedUsbProcessBlocked
 
-Dependencies: MDAV
+Dependencies: Microsoft Defender Antivirus
 
 ### Block Win32 API calls from Office macros
 
@@ -515,7 +518,7 @@ Advanced hunting action type:
 - AsrOfficeMacroWin32ApiCallsAudited
 - AsrOfficeMacroWin32ApiCallsBlocked
 
-Dependencies: MDAV, AMSI
+Dependencies: Microsoft Defender Antivirus, AMSI
 
 ### Use advanced protection against ransomware
 
@@ -541,4 +544,14 @@ Advanced hunting action type:
 - AsrRansomwareAudited
 - AsrRansomwareBlocked
 
-Dependencies: MDAV, Cloud Protection
+Dependencies: Microsoft Defender Antivirus, Cloud Protection
+
+## See also
+
+- [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
+- [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+- [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
+- [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
+- [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Attack surface reduction \(ASR\) rules report](attack-surface-reduction-rules-report.md)
+- [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)

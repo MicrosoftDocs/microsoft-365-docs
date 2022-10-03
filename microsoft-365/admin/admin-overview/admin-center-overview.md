@@ -7,13 +7,16 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
@@ -27,12 +30,16 @@ description: "Use either simplified view in the Microsoft 365 admin center to ma
 
 # Overview of the Microsoft 365 admin center
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 - [The admin center in simplified view](#watch-the-admin-center-in-simplified-view)
 - [The admin center in dashboard view](#watch-the-admin-center-in-dashboard-view)
 
 The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> has two views: simplified view helps smaller organizations manage their most common tasks. Dashboard view includes more complex settings and tasks. You can switch between them from a button at the top of the admin center.
 
 ## Watch: The admin center in simplified view
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197911).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 

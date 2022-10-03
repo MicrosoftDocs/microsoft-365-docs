@@ -11,21 +11,26 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Insider risk management policies
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>[!IMPORTANT]
+>Microsoft Purview Insider Risk Management correlates various signals to identify potentially malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider Risk Management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
 
-Insider risk management policies determine which users are in-scope and which types of risk indicators are configured for alerts. You can quickly create a policy that applies to all users in your organization or define individual users or groups for management in a policy. Policies support content priorities to focus policy conditions on multiple or specific Microsoft Teams, SharePoint sites, data sensitivity types, and data labels. Using templates, you can select specific risk indicators and customize event thresholds for policy indicators, effectively customizing risk scores, and level and frequency of alerts. Additionally, risk score boosters and anomaly detections help identify user activity that is of higher importance or more unusual. Policy windows allow you to define the time frame to apply the policy to alert activities and are used to determine the duration of the policy once activated.
+Insider risk management policies determine which users are in-scope and which types of risk indicators are configured for alerts. You can quickly create a security policy that applies to all users in your organization or define individual users or groups for management in a policy. Policies support content priorities to focus policy conditions on multiple or specific Microsoft Teams, SharePoint sites, data sensitivity types, and data labels. Using templates, you can select specific risk indicators and customize event thresholds for policy indicators, effectively customizing risk scores, and level and frequency of alerts. Using quick policies, you can even create data leaks or data theft by departing user policies that automatically define policy conditions based on results from the latest analytics scans. Additionally, risk score boosters and anomaly detections help identify risky user activity that is of higher importance or more unusual. Policy windows allow you to define the time frame to apply the policy to alert activities and are used to determine the duration of the policy once activated.
 
 Check out the [Insider Risk Management Policies Configuration video](https://www.youtube.com/watch?v=kudK5ajZTUo) for an overview of how policies created with built-in policy templates can help you to quickly act on potential risks.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Policy dashboard
 
-The **Policy dashboard** allows you to quickly see the policies in your organization, the health of the policy, manually add users to policies, and to view the status of alerts associated with each policy.
+The **Policy dashboard** allows you to quickly see the policies in your organization, the health of the policy, manually add users to security policies, and to view the status of alerts associated with each policy.
 
 - **Policy name**: The name assigned to the policy in the policy wizard.
 - **Status**: The health status for each policy. Displays number of policy warnings and recommendations, or a status of *Healthy* for policies without issues.  You can select the policy to see the health status details for any warnings or recommendations.
@@ -38,9 +43,13 @@ The **Policy dashboard** allows you to quickly see the policies in your organiza
 
 ## Policy recommendations from analytics
 
-Insider risk analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring.
+Insider risk analytics gives you an aggregate view of anonymized user activities related to security and compliance, enabling you to evaluate potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher risk and help determine the type and scope of insider risk management policies you may consider configuring. If you decide to act on analytics scan results for general data leaks or data theft  by departing users policies, you even have the option to configure a quick policy based on these results.
 
 To learn more about insider risk analytics and policy recommendations, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics).
+
+## Quick policies from recommended actions (preview)
+
+For some organizations, getting started with an initial policy can be a challenge. If you're new to insider risk management and using the Recommended actions to get started, you can use a quick policy to expedite the configuration of a *General data leaks* or *Data theft by departing users* policy. Quick policy settings are automatically populated based on results from the latest analytics scan in your organization. For example, if the scan detected potential data leak activities, the quick policy would include the indicators used to detect those activities. You'll just need to review the quick policy settings and configure the policy with a single selection. If you need to customize a quick policy, you can change the conditions during the initial configuration or after the policy has been created. Additionally, you can stay up to date with the detection results for a quick policy by configuring email notifications each time you have a policy warning or each time the policy generates a high severity alert.
 
 ## Policy templates
 
@@ -48,7 +57,7 @@ Insider risk management templates are pre-defined policy conditions that define 
 
 ### Data theft by departing users
 
-When users leave your organization, there are specific risk indicators typically associated with data theft by departing users. This policy template uses exfiltration indicators for risk scoring and focuses on detection and alerts in this risk area. Data theft for departing users may include downloading files from SharePoint Online, printing files, and copying data to personal cloud messaging and storage services near their employment resignation and end dates. By using either the Microsoft 365 HR connector or the option to automatically monitor for user account deletion in Azure Active Directory for your organization, this template starts scoring for risk indicators relating to these activities and how they correlate with user employment status.
+When users leave your organization, there are specific risk indicators typically associated with data theft by departing users. This policy template uses exfiltration indicators for risk scoring and focuses on detection and alerts in this risk area. Data theft for departing users may include downloading files from SharePoint Online, printing files, and copying data to personal cloud messaging and storage services near their employment resignation and end dates. By using either the Microsoft HR connector or the option to automatically check for user account deletion in Azure Active Directory for your organization, this template starts scoring for risk indicators relating to these activities and how they correlate with user employment status.
 
 > [!IMPORTANT]
 > When using this template, you can configure a Microsoft 365 HR connector to periodically import resignation and termination date information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization. If you choose not to use the HR connector, you must select the User account deleted from Azure AD option when configuring trigger events in the policy wizard.
@@ -64,7 +73,7 @@ When using a *Data leaks* template, you can assign a DLP policy to trigger indic
 When creating or modifying DLP policies for use with insider risk management policies, consider the following guidelines:
 
 - Prioritize data exfiltration events and be selective when assigning **Incident reports** settings to *High* when configuring rules in your DLP policies. For example, emailing sensitive documents to a known competitor should be a *High* alert level exfiltration event. Over-assigning the *High* level in the **Incident reports** settings in other DLP policy rules can increase the noise in the insider risk management alert workflow and make it more difficult for your data investigators and analysts to properly evaluate these alerts. For example, assigning *High* alert levels to access denial activities in DLP policies makes it more challenging to evaluate truly risky user behavior and activities.
-- When using a DLP policy as the triggering event, make sure you understand and properly configure the in-scope users in both the DLP and insider risk management policies. Only users defined as in-scope for insider risk management policies using the **Data leaks** template will have high severity DLP policy alerts processed. Additionally, only users defined as in-scope in a rule for a high severity DLP alert will be examined by the insider risk management policy for consideration. It's important that you don't unknowingly configure in-scope users in both your DLP and insider risk policies in a conflicting manner.
+- When using a DLP policy as the triggering event, make sure you understand and properly configure the in-scope users in both the DLP and insider risk management policies. Only users defined as in-scope for insider risk management policies using the **Data leaks** template will have high severity DLP policy alerts processed. Additionally, only users defined as in-scope in a rule for a high severity DLP alert will be analyzed by the insider risk management policy for consideration. It's important that you don't unknowingly configure in-scope users in both your DLP and insider risk policies in a conflicting manner.
 
      For example, if your DLP policy rules are scoped to only users on the Sales Team and the insider risk policy created from the **Data leaks** template has defined all users as in-scope, the insider risk policy will only actually process high severity DLP alerts for the users on the Sales Team. The insider risk policy won't receive any high priority DLP alerts for users to process that aren't defined in the DLP rules in this example. Conversely, if your insider risk management policy created from **Data leaks** templates is scoped to only users on the Sales Team and the assigned DLP policy is scoped to all users, the insider risk policy will only process high severity DLP alerts for members of the Sales Team. The insider risk management policy will ignore high severity DLP alerts for all users not on the Sales Team.
 
@@ -87,7 +96,7 @@ As with the **General data leaks template**, you can choose a DLP policy to trig
 
 ### Data leaks by disgruntled users (preview)
 
-When users experience employment stressors, they may become disgruntled, which may increase the chances of insider risk activity. This template starts scoring user activity when an indicator associated with disgruntlement is identified. Examples include performance improvement notifications, poor performance reviews, or changes to job level status. Data leaks for disgruntled users may include downloading files from SharePoint Online and copying data to personal cloud messaging and storage services near employment stressor events.
+When users experience employment stressors, they may become disgruntled, which may increase the chances of insider risk activity. This template starts scoring security and compliance related user activity when an indicator associated with disgruntlement is identified. Examples include system signals performance improvement notifications, poor performance reviews, or changes to job level status. Data leaks for disgruntled users may include downloading files from SharePoint Online and copying data to personal cloud messaging and storage services near employment stressor events.
 
 When using this template, you must also configure a Microsoft 365 HR connector to periodically import performance improvement notifications, poor performance review status, or job level change information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization.
 
@@ -103,17 +112,25 @@ Protecting healthcare record data and preventing the misuse of patient personal 
 
 This policy template enables risk scoring for internal users that detects suspicious activities associated with records hosted on existing electronic medical record (EMR) systems. Detection focuses on unauthorized access, viewing, modification, and export of patient data. You'll need to configure a connector the [Microsoft Healthcare connector](import-healthcare-data.md) or [Epic connector](import-epic-data.md) to support detection of access, exfiltration, or obfuscation activities in your EMR system.
 
-When using this template, you must also configure a Microsoft 365 HR connector to periodically import organization profile data for users in your organization. See the [Set up a connector to import HR data](/microsoft-365/compliance/import-hr-data) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization.
+When using this template, you must also configure a Microsoft HR connector to periodically import organization profile data for users in your organization. See the [Set up a connector to import HR data](/microsoft-365/compliance/import-hr-data) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization.
+
+### General risky browser usage (preview)
+
+Identifying user visitation to inappropriate or unacceptable web sites on organization devices and networks is an important part of minimizing security, legal, and regulatory risks. Users that inadvertently or purposefully visit these types of websites may expose the organization to legal actions from other users, violate regulatory requirements, elevate network security risks, or jeopardize current and future business operations and opportunities. This misuse is often defined in an organization's acceptable use policy for user devices and organization network resources but is often difficult to quickly identify and act upon.
+
+To help protect against these risks, this policy can help detect and enable risk scoring for web browsing that might be in violation of your organization's acceptable use policy, such as visiting sites that pose a threat (for example phishing sites) or contain adult content. Several types of categories are available for automatic categorization of web browsing activities by in-scope users.
+
+When using this policy template, you'll need several prerequisites. For more information, see [Learn about and configure insider risk management browser signal detection](/microsoft-365/compliance/insider-risk-management-browser-support).
 
 ### Security policy violations by departing users (preview)
 
-Departing users, whether leaving on positive or negative terms, may be higher risks for security policy violations. To help protect against inadvertent or malicious security violations for departing users, this policy template uses Defender for Endpoint alerts to provide insights into security-related activities. These activities include the user installing malware or other potentially harmful applications and disabling security features on their devices. By using either the [Microsoft 365 HR connector](import-hr-data.md) or the option to automatically monitor for user account deletion in Azure Active Directory for your organization, this template starts scoring for risk indicators relating to these security activities and how they correlate with user employment status.
+Departing users, whether leaving on positive or negative terms, may be higher risks for security policy violations. To help protect against inadvertent or malicious security violations for departing users, this policy template uses Defender for Endpoint alerts to provide insights into security-related activities. These activities include the user installing malware or other potentially harmful applications and disabling security features on their devices. By using either the [Microsoft HR connector](import-hr-data.md) or the option to automatically check for user account deletion in Azure Active Directory for your organization, this template starts scoring for risk indicators relating to these security activities and how they correlate with user employment status.
 
 You'll need to have Microsoft Defender for Endpoint configured in your organization and enable Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
 
 ### Security policy violations by priority users (preview)
 
-Protecting against security violations for users in your organization may depend on their position, level of access to sensitive information, or risk history. Because security violations by priority users may have a significant impact on your organization's critical areas, this policy template starts scoring on these indicators and uses Microsoft Defender for Endpoint alerts to provide insights into security-related activities for these users. These activities may include the priority users installing malware or other potentially harmful applications and disabling security features on their devices. Priority users are defined in priority user groups configured in the insider risk management settings area.
+Protecting against security violations for users in your organization may depend on their position, level of access to sensitive information, or risk history. Because security violations by priority users may have a significant impact on your organization's critical areas, this policy template starts scoring on these indicators, and uses Microsoft Defender for Endpoint alerts to provide insights into security-related activities for these users. These activities may include the priority users installing malware or other potentially harmful applications and disabling security features on their devices. Priority users are defined in priority user groups configured in the insider risk management settings area.
 
 You'll need to have Microsoft Defender for Endpoint configured in your organization and enable Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center). Additionally, you'll need to assign priority user groups created in **Insider risk management** > **Settings** > **Priority user groups** to the policy.
 
@@ -121,7 +138,7 @@ You'll need to have Microsoft Defender for Endpoint configured in your organizat
 
 Users that experience employment stressors may be at a higher risk for inadvertent or malicious security policy violations. These stressors may include the user being placed on a performance improvement plan, poor performance review status, or being demoted from their current position. This policy template starts risk scoring based on these indicators and activities associated with these events for these users.
 
-When using this template, you must also configure a Microsoft 365 HR connector to periodically import performance improvement notifications, poor performance review status, or job level change information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization.
+When using this template, you must also configure a Microsoft HR connector to periodically import system signals related to performance improvement notifications, poor performance review status, or job level change information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft HR connector for your organization.
 
 You'll also need to have Microsoft Defender for Endpoint configured in your organization and enable Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
 
@@ -136,9 +153,10 @@ The following table lists the triggering events and prerequisites for policies c
 | **Data theft by departing users** | Resignation or termination date indicator from HR connector or Azure Active Directory account deletion | (optional) Microsoft 365 HR connector configured for termination and resignation date indicators |
 | **General data leaks** | Data leak policy activity that creates a *High severity* alert or built-in exfiltration event triggers | DLP policy configured for *High severity* alerts <br><br> OR <br><br> Customized triggering indicators |
 | **Data leaks by priority users** | Data leak policy activity that creates a *High severity* alert or built-in exfiltration event triggers | DLP policy configured for *High severity* alerts <br><br> OR <br><br> Customized triggering indicators <br><br> Priority user groups configured in insider risk settings |
-| **Data leaks by disgruntled users** | Performance improvement, poor performance, or job level change indicators from HR connector | Microsoft 365 HR connector configured for disgruntlement indicators |
+| **Data leaks by disgruntled users** | Performance improvement, poor performance, or job level change indicators from HR connector | Microsoft HR connector configured for disgruntlement indicators |
 | **General security policy violations** | Defense evasion of security controls or unwanted software detected by Microsoft Defender for Endpoint | Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft Purview compliance portal configured |
 | **General patient data misuse** | Defense evasion of security controls from EMR systems <br><br> User and patient address matching indicators from HR systems | Healthcare access indicators selected in policy or insider risk settings <br><br> Microsoft 365 HR connector configured for address matching <br><br> Microsoft Healthcare or Epic connector configured |
+| **General risky browser usage** | User browsing activity related to security that matches at least one selected *Browsing indicator* | See the complete list of prerequisites in the [browser signal detection article](/microsoft-365/compliance/insider-risk-management-browser-support) |
 | **Security policy violations by departing users** | Resignation or termination date indicators from HR connector or Azure Active Directory account deletion | (optional) Microsoft 365 HR connector configured for termination and resignation date indicators <br><br> Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft Purview compliance portal configured |
 | **Security policy violations by priority users** | Defense evasion of security controls or unwanted software detected by Microsoft Defender for Endpoint | Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft Purview compliance portal configured <br><br> Priority user groups configured in insider risk settings |
 | **Security policy violations by disgruntled user** | Performance improvement, poor performance, or job level change indicators from HR connector | Microsoft 365 HR connector configured for disgruntlement indicators <br><br> Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft Purview compliance portal configured |
@@ -151,12 +169,13 @@ For example, your organization has a dedicated SharePoint site for a highly conf
 
 When you create an insider risk management policy in the policy wizard, you can choose from the following priorities:
 
-- **SharePoint sites**: Any activity associated with all file types in defined SharePoint sites is assigned a higher risk score. Users configuring the policy and selecting priority Share Point sites can select SharePoint sites that they have permission to access. If SharePoint sites aren't available for selection in the policy by the current user, another user with the required permissions can select the sites for the policy later or the current user should be given access to the required sites.
+- **SharePoint sites**: Any activity associated with all file types in defined SharePoint sites is assigned a higher risk score. Users configuring the policy and selecting priority SharePoint sites can select SharePoint sites that they have permission to access. If SharePoint sites aren't available for selection in the policy by the current user, another user with the required permissions can select the sites for the policy later, or the current user should be given access to the required sites.
 - **Sensitive information types**: Any activity associated with content that contains [sensitive information types](sensitive-information-type-entity-definitions.md) are assigned a higher risk score.
 - **Sensitivity labels**: Any activity associated with content that has specific [sensitivity labels](sensitivity-labels.md) applied are assigned a higher risk score.
 - **File extensions**: Any activity associated with content that has specific file extensions. Users configuring a data theft/leak policy that select **File extensions to prioritize** in the policy wizard can define up to 50 file extensions to prioritize in the policy. Entered extensions can include or omit a '.' as the first character of the prioritized extension.
+- **Trainable classifiers**: Any activity associated with content that is included in a [trainable classifier](/microsoft-365/compliance/classifier-learn-about). Users configuring a policy that select Trainable classifiers in the policy wizard can select up to 5 trainable classifiers to apply to the policy. These classifiers can be existing classifiers that identify patterns of sensitive information like social security, credit card, or bank account numbers or custom classifiers created in your organization.
 
-## Sequence detection
+## Sequence detection (preview)
 
 Risky activities may not occur as isolated events. These risks are frequently part of a larger sequence of events. A sequence is a group of two or more user activities performed one after the other that might suggest an elevated risk. Identifying these related activities is an important part of evaluating overall risk. When sequence detection is enabled for data theft or data leaks policies, insights from sequence information activities are displayed on the **User activity** tab within an insider risk management case. The following policy templates support sequence detection:
 
@@ -181,7 +200,7 @@ To learn more about sequence detection management in the **User activity** view,
 
 ## Cumulative exfiltration detection (preview)
 
-Insider risk indicators help identify unusual levels of risk activities when evaluated daily for users that are in-scope for insider risk policies. Cumulative exfiltration detection uses machine learning models to help you identify when exfiltration activities that a user performs over a certain time exceeds the normal amount performed by users in your organization for the past 30 days over multiple exfiltration activity types. For example, if a user shared more files than most users over the past month, this activity would be detected and classified as a cumulative exfiltration activity.
+With privacy on by default, insider risk indicators help identify unusual levels of risk activities when evaluated daily for users that are in-scope for insider risk policies. Cumulative exfiltration detection uses machine learning models to help you identify when exfiltration activities that a user performs over a certain time exceeds the normal amount performed by users in your organization for the past 30 days over multiple exfiltration activity types. For example, if a user shared more files than most users over the past month, this activity would be detected and classified as a cumulative exfiltration activity.
 
 Insider risk management analysts and investigators may use cumulative exfiltration detection insights to help identify exfiltration activities that may not typically generate alerts but are above what is typical for their organization. Some examples may be departing users slowly exfiltrate data across a range of days, or when users repeatedly share data across multiple channels more than usual for data sharing for your organization.  Higher risk scores are assigned to cumulative exfiltration activities for SharePoint sites, sensitive information types, and content with [sensitivity labels](/microsoft-365/compliance/sensitivity-labels#label-priority-order-matters) configured as priority content in a policy or for activity involving labels configured as high priority in Microsoft Purview Information Protection.
 
@@ -224,25 +243,25 @@ For more details about any recommendations or warnings, select a policy on the *
 
 Use the following table to learn more about recommendations and warning notifications and actions to take to resolve potential issues.
 
-|Notification messages|Policy templates|Causes / Try this action to fix|
-|---|---|---|
-|Policy isn't assigning risk scores to activity|All policy templates|You may want to review your policy scope and triggering event configuration so that the policy can assign risk scores to activities <br><br> 1. Review the users that are selected for the policy. If you have few users selected, you may want to select additional users. <br> 2. If you're using an HR connector, check that your HR connector is sending the correct data. <br> 3. If you're using a DLP policy as your triggering event, check your DLP policy configuration to ensure it's configured to be used in this policy. <br> 4. For security violation policies, review the Microsoft Defender for Endpoint alert triage status selected in Insider risk settings > Intelligent detections. Confirm that the alert filter isn't too narrow.|
-|Policy hasn't generated any alerts|All policy templates|You may want to review your policy configuration so that you're analyzing the scoring the activity that you care about. <br><br> 1. Confirm that you've selected indicators that you want to score. The more indicators selected, the more activities are assigned risk scores. <br> 2. Review threshold customization for policy. If the thresholds selected don't align with your organization's risk tolerance, adjust the selections so that alerts are created based on your preferred thresholds. <br> 3. Review the users and groups selected for the policy. Confirm you've selected all of the applicable users and groups. <br> 4. For security violation policies, confirm you've selected the alert triage status that you want to score for Microsoft Defender for Endpoint alerts in Intelligent Detections in settings.|
-|No users or groups are included in this policy|All policy templates|Users or groups aren't assigned to the policy. <br><br> Edit your policy and select users or groups for the policy.|
-|No indicators have been selected for this policy|All policy templates|Indicators haven't been selected for the policy <br><br> Edit your policy and select appropriate policy indicators for the policy.|
-|No priority user groups are included in this policy|- Data leaks by priority users <br> - Security policy violations by priority users|Priority user groups aren't assigned to the policy. <br><br> Configure priority user groups in Insider risk management settings and assign priority user groups to the policy.|
-|No triggering event has been selected for this policy|All policy templates|A triggering event isn't configured for the policy <br><br> Risk scores won't be assigned to user activities until you edit the policy and select a triggering event.|
-|HR connector isn't configured or working as expected|- Data theft by departing user <br> - Security policy violations by departing user <br> - Data leaks by disgruntled users <br> - Security policy violations by disgruntled users|There's an issue with the HR connector. <br><br> 1. If you're using an HR connector, check that your HR connector is sending correct data <br><br> OR <br><br> 2. Select the Azure AD account deleted triggering event.|
-|No devices are onboarded|- Data theft by departing users <br> - General data leaks <br> - Data leaks by disgruntled users <br> - Data Leaks by priority users|Device indicators are selected but there aren't any devices onboarded to the Microsoft 365 <br><br> Check whether devices are onboarded and meet requirements.|
-|HR connector hasn't uploaded data recently|- Data theft by departing user <br> - Security policy violations by departing user <br> - Data leaks by disgruntled users <br> - Security policy violations by disgruntled users|HR connector hasn't imported data in more than 7 days. <br><br> Check that your HR connector is configured correctly and sending data.|
-|We're unable to check the status of your HR connector right now, please check again later|- Data theft by departing user <br> - Security policy violations by departing user <br> - Data leaks by disgruntled users <br> - Security policy violations by disgruntled users|The insider risk management solution is unable to check the status of your HR connector. <br><br> Check that your HR connector is configured correctly and sending data, or come back and check the policy status.|
-|DLP policy isn't selected as the triggering event|- General Data leaks <br> - Data leaks by priority users|A DLP policy hasn't been selected as a triggering event or the selected DLP policy has been deleted. <br><br> Edit the policy and either select an active DLP policy or 'User performs an exfiltration activity' as the triggering event in the policy configuration.|
-|DLP policy used in this policy is turned off|- General Data leaks <br> - Data leaks by priority users|DLP policy used in this policy is turned off. <br><br> 1. Turn the DLP policy assigned to this policy on. <br><br> OR <br><br> 2. Edit this policy and either select a new DLP policy or 'User performs an exfiltration activity' as the triggering event in the policy configuration.|
-|DLP policy doesn't meet requirements|- General Data leaks <br> - Data leaks by priority users|DLP policies used as triggering events must be configured to generate high severity alerts. <br><br>  1. Edit your DLP policy to assign applicable alerts as *High severity*. <br><br> OR <br><br> 2. Edit this policy and select *User performs an exfiltration activity* as the triggering event.|
-|Your organization doesn't have a Microsoft Defender for Endpoint subscription|- General security policy violations <br> - Security policy violations by departing users <br> - Security policy violations by disgruntled users <br> - Security policy violations by priority users|An active Microsoft Defender for Endpoint subscription wasn't detected for your organization. <br><br> Until a Microsoft Defender for Endpoint subscription is added, these policies won't assign risk scores to user activity.|
-|Microsoft Defender for Endpoint alerts aren't being shared with the compliance portal|- General security policy violations <br> - Security policy violations by departing users <br> - Security policy violations by disgruntled users <br> - Security policy violations by priority users|Microsoft Defender for Endpoint alerts aren't being shared with the compliance portal. <br><br> Configure sharing of Microsoft Defender for Endpoint alerts.|
-|You're approaching the maximum limit of users being actively scored for this policy template.|All policy templates|Each policy template has a maximum number of in-scope users. See the template limit section details. <br><br> Review the users in the Users tab and remove any users who don't need to be scored anymore.|
-|Triggering event is repeatedly occurring for over 15% of users in this policy.|All policy templates|Adjust the triggering event to help reduce how often users are brought into the policy scope.|
+|**Notification messages**|**Policy templates**|**Causes / Try this action to fix**|
+|:------------------------|:-------------------|:----------------------------------|
+|**Policy isn't assigning risk scores to activity**| All policy templates | You may want to review your policy scope and triggering event configuration so that the policy can assign risk scores to activities <br><br> 1. Review the users that are selected for the policy. If you have few users selected, you may want to select additional users. <br> 2. If you're using an HR connector, check that your HR connector is sending the correct data. <br> 3. If you're using a DLP policy as your triggering event, check your DLP policy configuration to ensure it's configured to be used in this policy. <br> 4. For security violation policies, review the Microsoft Defender for Endpoint alert triage status selected in Insider risk settings > Intelligent detections. Confirm that the alert filter isn't too narrow.|
+|**Policy hasn't generated any alerts**| All policy templates|You may want to review your policy configuration so that you're analyzing the most relevant scoring activity. <br><br> 1. Confirm that you've selected indicators that you want to score. The more indicators selected, the more activities are assigned risk scores. <br> 2. Review threshold customization for policy. If the thresholds selected don't align with your organization's risk tolerance, adjust the selections so that alerts are created based on your preferred thresholds. <br> 3. Review the users and groups selected for the policy. Confirm you've selected all of the applicable users and groups. <br> 4. For security violation policies, confirm you've selected the alert triage status that you want to score for Microsoft Defender for Endpoint alerts in Intelligent Detections in settings.|
+|**No users or groups are included in this policy**| All policy templates | Users or groups aren't assigned to the policy. <br><br> Edit your policy and select users or groups for the policy.|
+|**No indicators have been selected for this policy**| All policy templates | Indicators haven't been selected for the policy <br><br> Edit your policy and select appropriate policy indicators for the policy.|
+|**No priority user groups are included in this policy**|- Data leaks by priority users <br> - Security policy violations by priority users|Priority user groups aren't assigned to the policy. <br><br> Configure priority user groups in Insider risk management settings and assign priority user groups to the policy.|
+|**No triggering event has been selected for this policy**| All policy templates | A triggering event isn't configured for the policy <br><br> Risk scores won't be assigned to user activities until you edit the policy and select a triggering event.|
+|**HR connector isn't configured or working as expected**|- Data theft by departing user <br> - Security policy violations by departing user <br> - Data leaks by disgruntled users <br> - Security policy violations by disgruntled users|There's an issue with the HR connector. <br><br> 1. If you're using an HR connector, check that your HR connector is sending correct data <br><br> OR <br><br> 2. Select the Azure AD account deleted triggering event.|
+|**No devices are onboarded**|- Data theft by departing users <br> - General data leaks <br> - Data leaks by disgruntled users <br> - Data Leaks by priority users|Device indicators are selected but there aren't any devices onboarded to the compliance portal <br><br> Check whether devices are onboarded and meet requirements.|
+|**HR connector hasn't uploaded data recently**|- Data theft by departing user <br> - Security policy violations by departing user <br> - Data leaks by disgruntled users <br> - Security policy violations by disgruntled users|HR connector hasn't imported data in more than 7 days. <br><br> Check that your HR connector is configured correctly and sending data.|
+|**We're unable to check the status of your HR connector right now, please check again later**|- Data theft by departing user <br> - Security policy violations by departing user <br> - Data leaks by disgruntled users <br> - Security policy violations by disgruntled users|The insider risk management solution is unable to check the status of your HR connector. <br><br> Check that your HR connector is configured correctly and sending data, or come back and check the policy status.|
+|**DLP policy isn't selected as the triggering event**|- General Data leaks <br> - Data leaks by priority users|A DLP policy hasn't been selected as a triggering event or the selected DLP policy has been deleted. <br><br> Edit the policy and either select an active DLP policy or 'User performs an exfiltration activity' as the triggering event in the policy configuration.|
+|**DLP policy used in this policy is turned off** |- General Data leaks <br> - Data leaks by priority users|DLP policy used in this policy is turned off. <br><br> 1. Turn the DLP policy assigned to this policy on. <br><br> OR <br><br> 2. Edit this policy and either select a new DLP policy or 'User performs an exfiltration activity' as the triggering event in the policy configuration.|
+|**DLP policy doesn't meet requirements**|- General Data leaks <br> - Data leaks by priority users|DLP policies used as triggering events must be configured to generate high severity alerts. <br><br>  1. Edit your DLP policy to assign applicable alerts as *High severity*. <br><br> OR <br><br> 2. Edit this policy and select *User performs an exfiltration activity* as the triggering event.|
+|**Your organization doesn't have a Microsoft Defender for Endpoint subscription**|- General security policy violations <br> - Security policy violations by departing users <br> - Security policy violations by disgruntled users <br> - Security policy violations by priority users|An active Microsoft Defender for Endpoint subscription wasn't detected for your organization. <br><br> Until a Microsoft Defender for Endpoint subscription is added, these policies won't assign risk scores to user activity.|
+|**Microsoft Defender for Endpoint alerts aren't being shared with the compliance portal**|- General security policy violations <br> - Security policy violations by departing users <br> - Security policy violations by disgruntled users <br> - Security policy violations by priority users|Microsoft Defender for Endpoint alerts aren't being shared with the compliance portal. <br><br> Configure sharing of Microsoft Defender for Endpoint alerts.|
+|**You're approaching the maximum limit of users being actively scored for this policy template**|All policy templates|Each policy template has a maximum number of in-scope users. See the template limit section details. <br><br> Review the users in the Users tab and remove any users who don't need to be scored anymore.|
+|**Triggering event is repeatedly occurring for over 15% of users in this policy**|All policy templates|Adjust the triggering event to help reduce how often users are brought into the policy scope.|
 
 ## Policy template limits
 
@@ -252,30 +271,31 @@ The limit for each policy is calculated based on the total number of unique user
 
 Use the following table to determine the maximum number of in-scope users supported for each policy template:
 
-|Policy template|Current in-scope user maximum|
-|---|---|
+|**Policy template**|**Current in-scope user maximum**|
+|:------------------|:--------------------------------|
 |General data leak|15,000|
 |Data leak by disgruntled users|7,500|
 |Data leak by priority users|1,000|
 |Data theft by departing users|20,000|
 |General security policy violations|1,000|
 |General patient data misuse|5,000|
+|General risky browser usage|7,000|
 |Security policy violation by priority users|1,000|
 |Security policy violations by departing users|15,000|
 |Security policy violations by disgruntled users|7,500|
 
 ## Create a new policy
 
-To create a new insider risk management policy, you'll use the policy wizard in **Insider risk management** solution in the Microsoft Purview compliance portal.
+To create a new insider risk management policy, you'll generally use the policy wizard in **Insider risk management** solution in the Microsoft Purview compliance portal. You can also create quick policies for general data leaks and data theft by departing users from Analytics scans if applicable.
 
-Complete the following steps to create a new policy:
+Complete the following steps to create a new policy using the policy wizard:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. Select **Create policy** to open the policy wizard.
 3. On the **Policy template** page, choose a policy category and then select the template for the new policy. These templates are made up of conditions and indicators that define the risk activities you want to detect and investigate. Review the template prerequisites, triggering events, and detected activities to confirm this policy template fits your needs.
 
     > [!IMPORTANT]
-    > Some policy templates have prerequisites that must be configured for the policy to generate relevant alerts. If you haven't configured the applicable policy prerequisites, see **Step 4** above.
+    > Some policy templates have prerequisites that must be configured for the policy to generate relevant alerts. If you haven't configured the applicable policy prerequisites, see **Step 4** in the [Get started with insider risk management](/microsoft-365/compliance/insider-risk-management-configure).
 
 4. Select **Next** to continue.
 5. On the **Name and description** page, complete the following fields:
@@ -300,7 +320,7 @@ Complete the following steps to create a new policy:
     - **File extensions**: Add up to 50 file extensions. You can include or omit the '.' with the file extension. For example, *.py* or *py* would prioritize Python files.
 
     >[!NOTE]
-    >Users configuring the policy and selecting priority Share Point sites can select SharePoint sites that they have permission to access. If SharePoint sites aren't available for selection in the policy by the current user, another user with the required permissions can select the sites for the policy later or the current user should be given access to the required sites.
+    >Users configuring the policy and selecting priority SharePoint sites can select SharePoint sites that they have permission to access. If SharePoint sites aren't available for selection in the policy by the current user, another user with the required permissions can select the sites for the policy later or the current user should be given access to the required sites.
 
 12. Select **Next** to continue.
 13. If you've selected the *General data leaks* or *Data leaks by priority users* templates, you'll see options on the **Triggers** for this policy page for custom triggering events and policy indicators. You have the choice to select a DLP policy or indicators for triggering events that bring users assigned to the policy in-scope for activity scoring. If you select the **User matches a data loss prevention (DLP) policy triggering event** option, you must select a DLP policy from the DLP policy dropdown list to enable triggering indicators for the DLP Policy for this insider risk management policy. If you select the **User performs an exfiltration activity triggering event** option, you must select one or more of the listed indicators for the policy triggering event.
@@ -321,6 +341,7 @@ Complete the following steps to create a new policy:
 
     If you've selected at least one *Office* or *Device* indicator, select the **Risk score boosters** as appropriate. Risk score boosters are only applicable for selected indicators.
     If you've selected a *Data theft* or *Data leaks* policy template, select one or more **Sequence detection** methods and a **Cumulative exfiltration detection** method to apply to the policy.
+    If you've selected the *General risky browser usage* policy template, select one or more of the **Browsing indicators**.
 
 20. Select **Next** to continue.
 21. On the **Decide whether to use default or custom indicator thresholds** page, choose custom or default thresholds for the policy indicators that you've selected. Choose either the **Use default thresholds for all indicators** or **Specify custom thresholds** for the selected policy indicators. If you've selected Specify custom thresholds, choose the appropriate level to generate the desired level of activity alerts for each policy indicator.
@@ -337,11 +358,11 @@ Complete the following steps to manage an existing policy:
 2. On the policy dashboard, select the policy you want to manage.
 3. On the policy details page, select **Edit policy**
 4. In the policy wizard, you can't edit the following:
-    - **Policy template**: The template used to define the types of risk indicators monitored by the policy.
+    - **Policy template**: The template used to define the types of risk indicators checked by the policy.
     - **Name**: The friendly name for the policy
 5. On the **Name and description** page, update the description for the policy in the **Description** field.
 6. Select **Next** to continue.
-7. On the **Users and groups** page, select **Include all users and groups** or **Include specific users and groups** to define which users or groups are included in the policy, or if you've chosen a priority users-based template; select **Add or edit priority user groups**. Selecting **Include all users and groups** will look for triggering events for all users and groups in your organization to start assigning risk scores for the policy. Selecting **Include specific users and groups** allows you to define which users and groups to assign to the policy. Guest user accounts aren't supported.
+7. On the **Users and groups** page, select **Include all users and groups** or **Include specific users and groups** to define which users or groups are included in the policy, or if you've chosen a priority users-based template; select **Add or edit priority user groups**. Selecting **Include all users and groups** will look for triggering security and compliance related events for all users and groups in your organization to start assigning risk scores for the policy. Selecting **Include specific users and groups** allows you to define which users and groups to assign to the policy. Guest user accounts aren't supported.
 8. Select **Next** to continue.
 9. On the **Content to prioritize** page, you can assign (if needed) the sources to prioritize, which increases the chance of generating a high severity alert for these sources. Select one of the following choices:
 
@@ -358,7 +379,7 @@ Complete the following steps to manage an existing policy:
     - **File extensions**: Add up to 50 file extensions. You can include or omit the '.' with the file extension. For example, *.py* or *py* would prioritize Python files.
 
     >[!NOTE]
-    >Users configuring the policy and selecting priority Share Point sites can select SharePoint sites that they have permission to access. If SharePoint sites aren't available for selection in the policy by the current user, another user with the required permissions can select the sites for the policy later or the current user should be given access to the required sites.
+    >Users configuring the policy and selecting priority SharePoint sites can select SharePoint sites that they have permission to access. If SharePoint sites aren't available for selection in the policy by the current user, another user with the required permissions can select the sites for the policy later or the current user should be given access to the required sites.
 
 12. Select **Next** to continue.
 13. If you've selected the *General data leaks* or *Data leaks by priority users* templates, you'll see options on the **Triggers** for this policy page for custom triggering events and policy indicators. You have the choice to select a DLP policy or indicators for triggering events that bring users assigned to the policy in-scope for activity scoring. If you select the **User matches a data loss prevention (DLP) policy triggering event** option, you must select a DLP policy from the DLP policy dropdown list to enable triggering indicators for the DLP Policy for this insider risk management policy. If you select the **User performs an exfiltration activity triggering event** option, you must select one or more of the listed indicators for the policy triggering event.
@@ -396,7 +417,7 @@ Complete the following steps to copy an existing policy:
 3. On the policy details page, select Copy.
 4. In the policy wizard, name the new policy and update the policy configuration as needed.
 
-## Immediately start scoring user activity
+## Immediately start scoring security-related user activity
 
 There may be scenarios where you need to immediately start assigning risk scores to users with insider risk policies outside of the insider risk management triggering event workflow. Use **Start scoring activity for users** on the **Policies** tab to manually add a user (or users) to one or more insider risk policies for a specific amount of time, to immediately start assigning risk scores to their activity, and to bypass the requirement for a user to have a triggering indicator (like a DLP policy match). You can also add a reason for adding the user to the policy, which will appear on the users' activity timeline. Users manually added to policies are displayed in the **Users** dashboard and alerts are created if activity meets the policy alert thresholds.
 

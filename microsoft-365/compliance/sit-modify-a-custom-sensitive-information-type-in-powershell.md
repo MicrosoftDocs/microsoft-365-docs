@@ -10,7 +10,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -18,8 +19,6 @@ description: "Learn how to modify a custom sensitive information using PowerShel
 ---
 
 # Modify a custom sensitive information type using PowerShell
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 In Security & Compliance PowerShell, modifying a custom sensitive information type requires you to:
 
@@ -30,6 +29,8 @@ In Security & Compliance PowerShell, modifying a custom sensitive information ty
 3. Import the updated XML file back into the existing rule package.
 
 To connect to Security & Compliance PowerShell, see [Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Export the existing rule package to an XML file
 

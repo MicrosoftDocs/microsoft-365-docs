@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
@@ -148,6 +148,9 @@ Two flows are available to process a selected file or batch of files in a librar
     - Specify how you want the order sorted (ascending or descending order).
 
     ![Screenshot showing the Run flow panel with parameter options highlighted.](../media/content-understanding/run-flow-panel.png)  
+    
+> [!NOTE]
+> The **Extract info from an image or PDF file with a form processing model** flow is automatically available for a library with a form processing model associated. The **Extract info from files with a form processing model** flow is a template that must be added to the library if required.
 
 ### Classification Date field
 
@@ -167,4 +170,4 @@ To run the flow:
   
 [Power Automate documentation](/power-automate/)
 
-[Training: Improve business performance with AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Training: Improve business performance with AI Builder](/training/paths/improve-business-performance-ai-builder/?source=learn)

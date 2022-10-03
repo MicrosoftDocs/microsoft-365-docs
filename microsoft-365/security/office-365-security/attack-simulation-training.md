@@ -5,14 +5,15 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
 description: Admins can learn how to simulate phishing attacks and train their users on phishing prevention using Attack simulation training in Microsoft Defender for Office 365 Plan 2.
-ms.technology: mdo
+ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Simulate a phishing attack with Attack simulation training in Defender for Office 365
@@ -50,6 +51,7 @@ On the **Select technique** page, select an available social engineering techniq
 - **Link in attachment**: A type of credential harvest hybrid. An attacker inserts a URL into an email attachment. The URL within the attachment follows the same technique as credential harvest.
 - **Link to malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user will contain a link to this malicious file. Opening the file will help the attacker compromise the target's device.
 - **Drive-by URL**: The malicious URL in the message takes the user to a familiar-looking website that silently runs and/or installs code on the user's device.
+- **OAuth Consent Grant**: The malicious URL asks users to grant permissions to data for a malicious Azure Application.
 
 If you click the **View details** link in the description, a details flyout opens that describes the technique and the simulation steps that result from the technique.
 
@@ -66,33 +68,32 @@ On the **Name simulation** page, configure the following settings:
 
 When you're finished, click **Next**.
 
-## Select a payload
+## Select a payload and login page
 
-On the **Select payload** page, you need to select an existing payload from the list, or create a new payload.
+On the **Select payload and login** page, you need to select an existing payload from the list, or create a new payload.
 
-The following details are displayed in the list of payloads to help you choose:
+You can also view the login page that's used in the payload, select a different login page to use, or create a new login page to use.
+
+### Payload
+
+The following details are shown for each payload:
 
 - **Payload name**
 - **Language**: The language of the payload content. Microsoft's payload catalog (global) provides payloads in 10+ languages which can also be filtered.
 - **Click rate**: How many people have clicked on this payload.
-- **Predicted compromise rate**: Historical data for the payload across Microsoft 365 that predicts the percentage of people who will get compromised by this payload.
+- **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this payload (users compromised / total number of users who receive the payload).
 - **Simulations launched** counts the number of times this payload was used in other simulations.
 
 In the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box, you can type part of the payload name and press Enter to filter the results.
 
 If you click **Filter**, the following filters are available:
 
-- **Source**: Indicates whether the payload was created in your organization or is a part of Microsoft's pre-existing payload catalog. Valid values are:
-  - **Global** (built-in)
-  - **Tenant** (custom)
-  - **All**
-
 - **Complexity**: Calculated based on the number of indicators in the payload that indicate a possible attack (spelling errors, urgency, etc.). More indicators are easier to identify as an attack and indicate lower complexity. The available values are:
-  - **Low**
-  - **Medium**
   - **High**
+  - **Medium**
+  - **Low**
 
-- **Language**: The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
+- **Language**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, or **Other**.
 
 - **Add tag(s)**
 
@@ -106,22 +107,80 @@ If you click **Filter**, the following filters are available:
 
 - **Controversial**: The available values are **Yes** or **No**.
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="The Select payload page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
-
-If you select a payload from the list, details about the payload are shown in a flyout:
-
-- The **Overview** tab contains an example and other details about the payload.
-- The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
-
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details.png" alt-text="The Payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details.png":::
-
-If you select a payload from the list by clicking on the name, a ![Send a test payload icon.](../../media/m365-cc-sc-create-icon.png) **Send a test** button appears on the main page where you can send a copy of the payload email to yourself (the currently logged in user) for inspection.
+If you select a payload from the list by selecting the check box, a ![Send a test payload icon.](../../media/m365-cc-sc-create-icon.png) **Send a test** button appears on the main page where you can send a copy of the payload email to yourself (the currently logged in user) for inspection.
 
 To create your own payload, click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload**. For more information, see [Create custom payloads for Attack simulation training](attack-simulation-training-payloads.md#create-payloads).
 
-When you're finished, click **Next**.
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="The Select payload page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
+
+If you select a payload from the list by clicking anywhere in the row other than the check box, details about the payload are shown in a flyout:
+
+- The **Payload** tab contains an example and other details about the payload.
+- The **Login page** tab is available only in **Credential Harvest** or **Link in attachment** payloads and is described in the next section.
+- The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="The Payload tab in the payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
+
+### Login page
+
+> [!NOTE]
+> The **Login page** tab is available only in **Credential Harvest** or **Link in attachment** payloads.
+
+Select the payload from the list by clicking anywhere in the row other than the check box to open the details flyout.
+
+The **Login page** tab in the payload details flyout shows the login page that's currently selected for the payload.
+
+To view the complete login page, use the **Page 1** and **Page 2** links at the bottom of the page for two-page login pages.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png" alt-text="The login page tab in the payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png":::
+
+To change the login page that's used in the payload, click ![Change login page icon.](../../media/m365-cc-sc-edit-icon.png) **Change login page**.
+
+On the **Select login page** flyout that appears, The following information is shown for each login page:
+
+- **Name**
+- **Language**
+- **Source**: For built-in login pages, the value is **Global**. For custom login pages, the value is **Tenant**.
+- **Status**: **Ready** or **Draft**.
+- **Created by**: For built-in login pages, the value is **Microsoft**. For custom login pages, the value is the UPN of the user who created the login page.
+- **Last modified**
+- **Actions**: Click ![Preview icon.](../../media/m365-cc-sc-eye-icon.png) **Preview** to preview the login page.
+
+To find a login page in the list, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find the name of the login page.
+
+Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the login pages by **Source** or **Language**.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-select-login-page.png" alt-text="The Select login page in the Login page tab in payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-select-login-page.png":::
+
+To create a new login page, click [Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** to start the create end user login page wizard. The steps are the same as at **Login pages** at **Attack simulation training** \> **Simulated content library** tab. For instructions, see [Create login pages](attack-simulation-training-login-pages.md#create-login-pages).
+
+Back on the **Select login page**, verify the new login page you created is selected, and then click **Save**.
+
+Back on the payload details flyout, click [Close icon.](../../media/m365-cc-sc-close-icon.png) **Close**.
+
+When you're finished on the **Select a payload and login page**, click **Next**.
+
+## Configure OAuth Payload
+
+> [!NOTE]
+> This page is available only if you selected **OAuth Consent Grant** on the [Select technique](#select-a-social-engineering-technique) page. Otherwise, you're taken to the **Target users** page.
+
+On the **Configure OAuth payload** page, configure the following settings:
+
+- **App name**
+
+- **App logo**: Click **Browse** to select a .png, .jpeg, or .gif file to use. To remove a file after you've selected it, click **Remove**.
+
+- **Select app scope**: Choose one of the following values:
+  - **Read user calendars**
+  - **Read user contacts**
+  - **Read user mail**
+  - **Read all chat messages**
+  - **Read all files that user can access**
+  - **Read and write access to user mail**
+  - **Send mail as a user**
 
 ## Target users
 
@@ -265,19 +324,31 @@ Microsoft-curated landing pages are available in 12 languages: Chinese (Simplifi
     If you select **Use a custom URL**, you need to add the URL in the **Enter the custom landing page URL** box that appears. No other options are available on the page.
 
   - **Create your own landing page**: This value has the following associated options to configure:
-    - **Add payload indicators to email**: This setting is available to select only if both of the following conditions are true:
-      - You previously selected **Credential harvest**, **Link in attachment**, or **Drive-by URL** on the [Select technique](#select-a-social-engineering-technique) page.
-      - After you add the **Dynamic tag** named **Insert email content** into the page content.
+    - **Add payload indicators to email**:This setting is available to select only if both of the following statements are true:
+      - You selected **Credential harvest**, **Link in attachment**, **Drive-by URL**, or **OAuth Consent Grant** on the [Select technique](#select-a-social-engineering-technique) page.
+      - You've added the **Dynamic tag** named **Insert Payload content** in the landing page content on this page.
 
-    - Page content: Two tabs are available:
+    - Landing page content: Two tabs are available:
       - **Text**: A rich text editor is available to create your landing page. In addition to the typical font and formatting settings, the following settings are available:
         - **Dynamic tag**: Select from the following tags:
-          - **Insert name**
-          - **Insert sender name**
-          - **Insert sender email**
-          - **Insert email subject**
-          - **Insert email content**
-          - **Insert date**
+
+          |Tag name|Tag value|
+          |---|---|
+          |**Insert User name**|`${userName}`|
+          |**Insert First name**|`${firstName}`|
+          |**Insert Last name**|`${lastName}`|
+          |**Insert UPN**|`${upn}`|
+          |**Insert Email**|`${emailAddress}`|
+          |**Insert Department**|`${department}`|
+          |**Insert Manager**|`${manager}`|
+          |**Insert Mobile phone**|`${mobilePhone}`|
+          |**Insert City**|`${city}`|
+          |**Insert sender name**|`${FromName}`|
+          |**Insert sender email**|`${FromEmail}`|
+          |**Insert Payload subject**|`${EmailSubject}`|
+          |**Insert Payload content**|`${EmailContent}`|
+          |**Insert Date**|`${date|MM/dd/yyyy|offset}`|
+
         - **Use from default**: Select an available template to start with. You can modify the text and layout in the editing area. To reset the landing page back to the default text and layout of the template, click **Reset to default**.
     - **Code**: You can view and modify the HTML code directly.
 
@@ -296,7 +367,7 @@ On the **Select end user notification** page, select from the following notifica
 
 - **Microsoft default notification (recommended)**: The following additional settings are available on the page:
 
-  - **Select default language**: The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
+  - **Select default language**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, or **Other**.
 
   - By default, the following notifications are included:
     - **Microsoft positive reinforcement notification**
@@ -452,7 +523,8 @@ The following settings are available:
     - **Select launch time**
 - **Configure number of days to end simulation after**: The default value is 2.
 - **Enable region aware time zone delivery**: Deliver simulated attack messages to your employees during their working hours based on their region.
-- **Display the drive-by technique interstitial data gathered page**: You can show the overlay that comes up for the drive-bu URL technique attacks. To hide the overlay and go directly to the landing page, de-select this option.
+
+- **Display the drive-by technique interstitial data gathered page**: This setting is available only if you selected **Drive-by URL** on the [select a technique page](#select-a-social-engineering-technique) page. You can show the overlay that comes up for drive-by URL technique attacks. To hide the overlay and go directly to the landing page, don't select this option.
 
 When you're finished, click **Next**.
 

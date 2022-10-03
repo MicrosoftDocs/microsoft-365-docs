@@ -10,8 +10,8 @@ ms.service: O365-seccomp
 f1.keywords:
 - NOCSH
 ms.collection:
-- m365-security-compliance
-- m365initiative-compliance
+- tier1
+- purview-compliance
 ms.custom: 
 - admindeeplinkDEFENDER
 - intro-get-started
@@ -20,13 +20,13 @@ ms.localizationpriority: medium
 
 # Quick tasks for getting started with compliance in Microsoft Purview
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 If you're new to Microsoft Purview and wondering where to start, this article provides guidance on the basics and prioritizes important compliance tasks. This article will help you quickly get started with managing and monitoring your data, protecting information, and minimizing insider risks.
 
 This article is also helpful if you're figuring out how best to manage risks, protect your data, and remain compliant with regulations and standards with a newly remote workforce. Employees are now collaborating and connecting with each other in new ways, and this change means your existing compliance processes and controls may need to adapt. Identifying and managing these new compliance risks within your organization is critical to safeguarding your data and minimizing threats and risks.
 
 After you've completed these basic compliance tasks, consider expanding compliance coverage in your organization by implementing additional Microsoft Purview solutions.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Task 1: Configure compliance permissions
 
@@ -34,7 +34,7 @@ It's important to manage who in your organization has access to the Microsoft Pu
 
 Start by assigning compliance permissions to the people in your organization so that they can perform these tasks and to prevent unauthorized people from having access to areas outside of their responsibilities. You'll want to make sure that you've assigned the proper people to the **Compliance data administrator** and the **Compliance administrator** admin roles before you start to configure and implement compliance solutions included with Microsoft 365. You'll also need to assign users to the Azure Active Directory global reader role to view data in Compliance Manager.
 
-For step-by-step guidance to configure permissions and assign people to admin roles, see [Permissions in the Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+For step-by-step guidance to configure permissions and assign people to admin roles, see [Permissions in the Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center-permissions).
 
 ## Task 2: Know your state of compliance
 

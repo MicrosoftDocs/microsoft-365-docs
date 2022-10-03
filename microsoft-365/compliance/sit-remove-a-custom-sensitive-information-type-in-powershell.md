@@ -10,7 +10,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -18,8 +19,6 @@ description: "Learn how to remove a custom sensitive information type using Powe
 ---
 
 # Remove a custom sensitive information type using PowerShell
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 In Security & Compliance PowerShell, there are two methods to remove custom sensitive information types:
 
@@ -69,6 +68,8 @@ In Security & Compliance PowerShell, there are two methods to remove custom sens
      ```powershell
      Get-DlpSensitiveInformationType -Identity "<Name>"
      ```
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## More information
 

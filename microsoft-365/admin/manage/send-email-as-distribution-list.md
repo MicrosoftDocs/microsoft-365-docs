@@ -7,11 +7,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- scotvorg 
 - Adm_O365
-
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio

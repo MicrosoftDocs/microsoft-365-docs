@@ -11,7 +11,8 @@ ms.date:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
@@ -22,8 +23,6 @@ description: "Administrators can enable sensitivity label support for Word, Exce
 # Enable sensitivity labels for Office files in SharePoint and OneDrive
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Enable built-in labeling for [supported Office files](sensitivity-labels-office-apps.md#office-file-types-supported) in SharePoint and OneDrive so that users can apply your [sensitivity labels](sensitivity-labels.md) in Office for the web. When this feature is enabled, users will see the **Sensitivity** button on the ribbon so they can apply labels, and see any applied label name on the status bar.
 
@@ -61,6 +60,8 @@ Watch the following video (no audio) to see the new capabilities in action:
 You always have the choice to disable sensitivity labels for Office files in SharePoint and OneDrive ([opt-out](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out)) at any time.
 
 If you are currently protecting documents in SharePoint by using SharePoint Information Rights Management (IRM), be sure to check the [SharePoint Information Rights Management (IRM) and sensitivity labels](#sharepoint-information-rights-management-irm-and-sensitivity-labels) section on this page.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Requirements
 
@@ -120,7 +121,9 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
 
 ## How to enable sensitivity labels for SharePoint and OneDrive (opt-in)
 
-You can enable the new capabilities by using the Microsoft Purview compliance portal, or by using PowerShell. As with all tenant-level configuration changes for SharePoint and OneDrive, it takes about 15 minutes for the change to take effect.
+You can enable the new capabilities by using the Microsoft Purview compliance portal, or by using PowerShell. See the following sections for instructions.
+
+As with all tenant-level configuration changes for SharePoint and OneDrive, it takes about 15 minutes for the change to take effect.
 
 ### Use the Microsoft Purview compliance portal to enable support for sensitivity labels
 
@@ -269,6 +272,9 @@ If you have Microsoft 365 Multi-Geo, you must run this command for each of your 
 
 ## Next steps
 
-After you've enabled sensitivity labels for Office files in SharePoint and OneDrive, consider automatically labeling these files by using auto-labeling policies. For more information, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
+After you've enabled sensitivity labels for Office files in SharePoint and OneDrive, consider automatically labeling files by using either, or both of the following labeling methods:
+
+- Applying a default sensitivity label for document libraries, for new and edited files in SharePoint. For more information, see [Configure a default sensitivity label for a SharePoint document library](sensitivity-labels-sharepoint-default-label.md).
+- Auto-labeling policies that use content inspection for files in SharePoint and OneDrive. For more information, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
 
 Need to share your labeled and encrypted documents with people outside your organization?  See [Sharing encrypted documents with external users](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).

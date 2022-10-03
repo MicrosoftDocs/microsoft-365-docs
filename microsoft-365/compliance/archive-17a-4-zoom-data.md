@@ -1,26 +1,29 @@
 ---
 title: "Set up a connector to archive Zoom data in Microsoft 365"
+description: "Learn how to set up and use a 17a-4 Zoom DataParser connector to import and archive Zoom data in Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: "Learn how to set up and use a 17a-4 Zoom DataParser connector to import and archive Zoom data in Microsoft 365."
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ---
 
 # Set up a connector to archive Zoom data
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Use the [Zoom DataParser](https://www.17a-4.com/dataparser/) from 17a-4 LLC to import and archive data from the Zoom platform to user mailboxes in your Microsoft 365 organization. The DataParser includes a Zoom connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The Zoom DataParser connector converts Zoom data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
 After Zoom data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a Zoom connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Overview of archiving Zoom data
 

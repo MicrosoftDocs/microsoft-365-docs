@@ -3,7 +3,8 @@ title: Microsoft 365 Defender advanced hunting API
 description: Learn how to run advanced hunting queries using Microsoft 365 Defender's advanced hunting API
 keywords: Advanced Hunting, APIs, api, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,12 +15,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+ - m365-security
+ - tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ms.custom: api
 ---
 
@@ -62,7 +64,7 @@ Delegated (work or school account) | AdvancedHunting.Read | Run advanced queries
 >[!Note]
 > When obtaining a token using user credentials:
 >
->- The user needs to have the 'View Data' AD role
+>- The user needs to have the 'View Data' role.
 >- The user needs to have access to the device, based on device group settings.
 
 ## HTTP request

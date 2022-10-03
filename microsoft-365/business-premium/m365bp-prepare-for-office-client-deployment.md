@@ -2,26 +2,23 @@
 title: "Prepare for Office client deployment with Microsoft 365 Business Premium"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
-manager: scotv
-ms.date: 04/01/2022
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: conceptual
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.collection: M365-subscription-management 
+ms.collection: 
+- tier1
 ms.custom:
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
-- OKR_SMB_M365
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ROBOTS: NO INDEX, NO FOLLOW
-ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: "Learn how to automatically install the 32-bit Office apps on Windows computers and keep them updated in Microsoft 365 Business Premium."
 ---
 

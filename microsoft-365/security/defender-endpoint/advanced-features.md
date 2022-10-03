@@ -2,7 +2,7 @@
 title: Configure advanced features in Microsoft Defender for Endpoint
 description: Turn on advanced features such as block file in Microsoft Defender for Endpoint.
 keywords: advanced features, settings, block file, automated investigation, auto resolve, skype, microsoft defender for identity, office 365, azure information protection, intune
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Configure advanced features in Defender for Endpoint
@@ -71,7 +74,9 @@ Turn on this feature so that potentially unwanted applications (PUA) are remedia
 This configuration can be used for scenarios where local SOC operations would like to limit alert correlations only to device groups that they can access. By turning on this setting, an incident composed of alerts that cross-device groups will no longer be considered a single incident. The local SOC can then take action on the incident because they have access to one of the device groups involved. However, global SOC will see several different incidents by device group instead of one incident. We don't recommend turning on this setting unless doing so outweighs the benefits of incident correlation across the entire organization.
 
 > [!NOTE]
-> Changing this setting impacts future alert correlations only.
+> - Changing this setting impacts future alert correlations only.
+>
+> - Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## Enable EDR in block mode
 
@@ -134,7 +139,6 @@ Keep tamper protection turned on to prevent unwanted changes to your security so
 
 Turn on this feature so that you can see user details stored in Azure Active Directory. Details include a user's picture, name, title, and department information when investigating user account entities. You can find user account information in the following views:
 
-- Security operations dashboard
 - Alert queue
 - Device details page
 
@@ -200,6 +204,10 @@ Block access to websites containing unwanted content and track web activity acro
 Forwards endpoint security alerts and their triage status to Microsoft Purview compliance portal, allowing you to enhance insider risk management policies with alerts and remediate internal risks before they cause harm. Forwarded data is processed and stored in the same location as your Office 365 data.
 
 After configuring the [Security policy violation indicators](/microsoft-365/compliance/insider-risk-management-settings#indicators) in the insider risk management settings, Defender for Endpoint alerts will be shared with insider risk management for applicable users.
+
+## Authenticated telemetry
+
+You can **Turn on** Authenticated telemetry to prevent spoofing telemetry into your dashboard.
 
 ## Microsoft Intune connection
 

@@ -9,7 +9,7 @@ ms.topic: landing-page
 ms.custom: 
 - intro-overview
 - intro-get-started
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
@@ -49,7 +49,7 @@ The resources in this section help you learn more about the methods of data clas
 |See resources in the Microsoft Tech Community Resource Center|[SharePoint Syntex - Content services in Microsoft 365](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
 |SharePoint Syntex FAQ on the Microsoft Tech Community Resource Center |[SharePoint Syntex - FAQ](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |How to get SharePoint Syntex |[SharePoint Syntex product page](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
-|Learn to use SharePoint Syntex |[SharePoint Syntex learning path](/learn/paths/syntex-get-started)|
+|Learn to use SharePoint Syntex |[SharePoint Syntex learning path](/training/paths/syntex-get-started)|
 
 ## Adoption
 

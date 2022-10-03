@@ -3,7 +3,7 @@ title: Create indicators for IPs and URLs/domains
 ms.reviewer:
 description: Create indicators for IPs and URLs/domains that define the detection, prevention, and exclusion of entities.
 keywords: ip, url, domain, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Create indicators for IPs and URLs/domains
@@ -22,6 +25,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -60,13 +64,13 @@ It's important to understand the following prerequisites prior to creating indic
 > If there are conflicting URL indicator policies, the longer path is applied. For example, the URL indicator policy `https://support.microsoft.com/office` takes precedence over the URL indicator policy `https://support.microsoft.com`.
 
 > [!NOTE]
-> For all other processes, web protection scenarios leverage Network Protection for inspection and enforcement:
+> For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage Network Protection for inspection and enforcement:
 >
-> - IP is supported for all three protocols
-> - Only single IP addresses are supported (no CIDR blocks or IP ranges)
+> - IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS))
+> - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators
 > - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge)
-> - Encrypted URLS (FQDN only) can be blocked outside of first party browsers (Internet Explorer, Edge)
-> - Full URL path blocks can be applied on the domain level and all unencrypted URLs
+> - Encrypted URLs (FQDN only) can be blocked in third party browsers (i.e. other than Internet Explorer, Edge)
+> - Full URL path blocks can be applied for unencrypted URLs
 >
 > There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked.
 

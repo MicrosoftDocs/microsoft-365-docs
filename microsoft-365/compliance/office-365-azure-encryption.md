@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_Enterprise
-- M365-security-compliance
+- purview-compliance
 - Strat_O365_Enterprise
 description: Learn about encryption available in Azure, such as Azure Disk Encryption
 ms.custom: seo-marvel-apr2020
@@ -21,17 +21,17 @@ ms.custom: seo-marvel-apr2020
 
 # Encryption in Azure
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Technological safeguards in Azure, such as encrypted communications and operational processes, help keep your data secure. You also have the flexibility to implement additional encryption features and manage your own cryptographic keys. Regardless of customer configuration, Microsoft applies encryption to protect customer data in Azure. Microsoft also enables you to control your data hosted in Azure through a range of advanced technologies to encrypt, control, and manage cryptographic keys, and control and audit access to data. In addition, Azure Storage provides a comprehensive set of security capabilities which together enable developers to build secure applications.
 
 Azure offers many mechanisms for protecting data as it moves from one location to another. Microsoft uses TLS to protect data when it's traveling between the cloud services and customers. Microsoft's data centers negotiate a TLS connection with client systems that connect to Azure services. Perfect Forward Secrecy (PFS) protects connections between customers' client systems and Microsoft's cloud services by unique keys. Connections also use RSA-based 2,048-bit encryption key lengths. This combination makes it difficult for someone to intercept and access data that is in-transit.
 
 Data can be secured in transit between an application and Azure by using [client-side encryption](/azure/storage/storage-client-side-encryption), HTTPS, or SMB 3.0. You can enable encryption for traffic between your own virtual machines (VMs) and your users. With [Azure Virtual Networks](https://azure.microsoft.com/services/virtual-network/), you can use the industry-standard IPsec protocol to encrypt traffic between your corporate VPN gateway and Azure as well as between the VMs located on your Virtual Network.
 
-For data at rest, Azure offers many encryption options, such as support for AES-256, giving you the flexibility to choose the data storage scenario that best meets your needs. Data can be automatically encrypted when written to Azure Storage using [Storage Service Encryption](/azure/storage/storage-service-encryption), and operating system and data disks used by VMs can be encrypted. For more information, see [Security recommendations for Windows virtual machines in Azure](/azure/security/azure-security-disk-encryption). In addition, delegated access to data objects in Azure Storage can be granted using [Shared Access Signatures](/azure/storage/storage-dotnet-shared-access-signature-part-1). Azure also provides encryption for data at rest using [Transparent Data Encryption for Azure SQL Database and Data Warehouse](/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql).
+For data at rest, Azure offers many encryption options, such as support for AES-256, giving you the flexibility to choose the data storage scenario that best meets your needs. Data can be automatically encrypted when written to Azure Storage using [Storage Service Encryption](/azure/storage/storage-service-encryption), and operating system and data disks used by VMs can be encrypted. For more information, see [Security recommendations for Windows virtual machines in Azure](/azure/virtual-machines/security-recommendations). In addition, delegated access to data objects in Azure Storage can be granted using [Shared Access Signatures](/azure/storage/storage-dotnet-shared-access-signature-part-1). Azure also provides encryption for data at rest using [Transparent Data Encryption for Azure SQL Database and Data Warehouse](/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql).
 
 For more information about encryption in Azure, see [Azure encryption overview](/azure/security/security-azure-encryption-overview) and [Azure Data Encryption-at-Rest](/azure/security/azure-security-encryption-atrest).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Azure Disk Encryption
 

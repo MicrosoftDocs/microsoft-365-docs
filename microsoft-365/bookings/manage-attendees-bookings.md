@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 description: "Follow these instructions to create your About Us page, including business name, address, phone number, website URL, logo, and business hours in Microsoft Bookings."
 ---
 

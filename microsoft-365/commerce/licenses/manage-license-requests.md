@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
@@ -22,7 +23,7 @@ description: "Learn how to review and approve or deny license requests from user
 ms.date: 04/22/2022
 ---
 
-# Manage license requests
+# Manage self-service license requests
 
 > [!NOTE]
 > The information in this article only applies to self-service purchased products. To learn more, see [Self-service purchase FAQ](../subscriptions/self-service-purchase-faq.yml).

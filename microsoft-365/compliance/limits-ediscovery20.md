@@ -1,28 +1,31 @@
 ---
 title: "eDiscovery (Premium) limits"
+description: "Learn about the case limits, indexing limits, and search limits in effect for the eDiscovery (Premium) solution in Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn about the case limits, indexing limits, and search limits in effect for the eDiscovery (Premium) solution in Microsoft 365."
 ---
 
 # Limits in eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 This article describes the limits in the Microsoft Purview eDiscovery (Premium) solution in Microsoft 365.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Case and review set limits
 
@@ -32,13 +35,10 @@ The following table lists the limits for cases and review sets in eDiscovery (Pr
 |---|---|---|
 |Total number of documents that can be added to a case (for all review sets in a case).|3 million|40 million|
 |Total file size per load set. This includes loading non-Office 365 into a review set.|300 GB|1 TB|
-|Total amount of data loaded into all review sets in the organization per day.<br/>|2 TB|2 TB|
 |Maximum number of load sets per case.|200|200|
 |Maximum number of review sets per case.|20|20|
 |Maximum number of tag groups per case.|1,000|1,000|
 |Maximum number of unique tags per case.|1,000<sup>1</sup>|1,000<sup>1</sup>|
-|Maximum concurrent jobs in your organization to add content to a review set. These jobs are named **Adding data to a review set** and are displayed on the **Jobs** tab in a case.|10<sup>2</sup>|10<sup>2</sup>|
-|Maximum concurrent jobs to add content to a review set per user. These jobs are named **Adding data to a review set** and are displayed on the **Jobs** tab in a case.|3|3|
 
 ## Hold limits
 
@@ -62,6 +62,15 @@ The following table lists the indexing limits in eDiscovery (Premium).
 |Maximum size of files processed by Optical Character Recognition (OCR).|24 MB<sup>4</sup> <br/> |
 |Maximum advanced indexing throughput | 2 GB per hour |
 
+## Jobs limits
+
+|Description of limit|Limit|
+|---|---|
+|Maximum number of concurrent jobs in your organization.|100|
+|Maximum number of concurrent jobs that a single user can start at one time.|50|
+|Maximum number of concurrent tenant-wide jobs (for example, tenant-wide searches) in your organization.|50|
+|Maximum number of concurrent tenant-wide jobs (for example, tenant-wide searches) that a single user can start at one time.|25|
+
 ## Search limits
 
 The limits described in this section are related to using the search tool on the **Searches** tab to collect data for a case. For more information, see [Collect data for a case in eDiscovery (Premium)](collecting-data-for-ediscovery.md).
@@ -70,7 +79,6 @@ The limits described in this section are related to using the search tool on the
 |---|---|
 |Maximum number of mailboxes or sites that can be searched in a single search.|No limit|
 |Maximum number of searches that can run at the same time.|No limit|
-|Maximum number of searches that a single user can start at the same time.|10|
 |Maximum number of characters for a search query (including operators and conditions).|10,000<sup>5</sup>|
 |Maximum number of characters for a search query for SharePoint and OneDrive for Business sites (including operators and conditions).|10,000<br>4,000 with Wildcards<sup>5</sup>|
 |Minimum number of alpha characters for prefix wildcards; for example, **one\*** or **set\***.|3|
@@ -111,7 +119,6 @@ The limits described in this section are related to exporting documents out of a
 |Description of limit|Limit|
 |---|---|
 |Maximum size of a single export.|5 million documents or 500 GB, whichever is smaller|
-|Maximum concurrent exports per review set.|1|
 
 ## Review set download limits
 

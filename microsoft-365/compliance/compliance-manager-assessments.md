@@ -10,9 +10,10 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- tier1
 search.appverid:
 - MOE150
 - MET150
@@ -21,9 +22,9 @@ description: "Build assessments in Microsoft Purview Compliance Manager to help 
 
 # Build and manage assessments in Compliance Manager
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 **In this article:** Learn how to customize Compliance Manager for your organization by creating and managing **assessments**. This article walks you through how to create assessments, how to organize them into **groups**, working with **controls**, accepting **updates**, and exporting assessment **reports**.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Introduction to assessments
 
@@ -209,7 +210,7 @@ After selecting **Review update** from the assessment details page, a flyout pan
 - An overview explaining the update
 - Specific details about the changes, including the impact to your compliance score, the amount of progress toward completion of the assessment, and the specific number of changes to improvement actions and controls.
 
-Selecting the **Updated template** link will download an Excel file containing control data for the version of the template with the pending updates. Selecting the **Current template** link downloads a file of the existing template without the changes.
+Selecting the **Updated template** command will download an Excel file containing control data for the version of the template with the pending updates. Selecting the **Current template** command downloads a file of the existing template without the updates.
 
 To accept the update and make the changes to your assessment, select **Accept update**. Accepted changes are permanent.
 

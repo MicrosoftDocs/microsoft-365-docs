@@ -6,11 +6,12 @@ summary: Protect your Microsoft 365 environment with Microsoft 365 Defender # < 
 brand: m365
 
 metadata:
-  title: Microsoft 365 security # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Documentation and learning resources for Microsoft 365 security and Microsoft 365 Defender # Required; article description that is displayed in search results. < 160 chars.
+  title: Microsoft 365 security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about Microsoft Defender for Endpoint - how it protects endpoints from cyber threats and provides security operation teams with capabilities to remediate threats. # Required; article description that is displayed in search results. < 160 chars.
+  services: office-365-security-compliance
+  ms.service: microsoft-365-security
   ms.topic: hub-page # Required
   ms.collection: m365-security-compliance
-  ms.prod: m365-security
   author: dansimp #Required; your GitHub user alias, with correct capitalization.
   ms.author: dansimp #Required; microsoft alias of author; optional team alias.
   ms.date: 06/22/2022 #Required; mm/dd/yyyy format.

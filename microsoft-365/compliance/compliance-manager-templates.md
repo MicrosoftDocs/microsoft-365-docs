@@ -11,9 +11,10 @@ ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- tier1
 search.appverid: 
 - MOE150
 - MET150
@@ -22,12 +23,12 @@ description: "Understand how to use and manage templates for building assessment
 
 # Learn about assessment templates in Compliance Manager
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 **In this article:** Understand **how templates work** and **how to manage them** from your assessment templates page. Get instructions for **creating** new templates, **extending** and **modifying** existing templates, **formatting your template data with Excel**, and exporting template **reports**.
 
 > [!IMPORTANT]
 > The assessment templates that are available to your organization depend on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Templates overview
 

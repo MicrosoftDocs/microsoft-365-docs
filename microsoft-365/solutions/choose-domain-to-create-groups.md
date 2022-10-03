@@ -7,9 +7,10 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-subscription-management 
 - Adm_O365
 - m365solution-collabgovernance
@@ -72,7 +73,9 @@ Let's say you want to control what sub-domains Microsoft 365 groups are created 
   ```
   New-EmailAddressPolicy -Name OtherGroups -IncludeUnifiedGroupRecipients -EnabledPrimarySMTPAddressTemplate "SMTP:@groups.contoso.com" -Priority 3
   ```
-
+> [!NOTE]
+> This scenario does not work when the MX record points to third-party spam filtering.
+ 
 ## Change email address policies
 
 To change the priority or email address templates for an existing EAP, use the Set-EmailAddressPolicy cmdlet.
@@ -120,4 +123,4 @@ There are a few more things to know:
 
 [Create your collaboration governance plan](collaboration-governance-first.md) (article)
 
-[Create an Microsoft 365 group in the admin center](../admin/create-groups/create-groups.md) (article)
+[Create a Microsoft 365 group in the admin center](../admin/create-groups/create-groups.md) (article)

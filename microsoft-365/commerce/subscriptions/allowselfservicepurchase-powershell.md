@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: null
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
@@ -90,7 +91,7 @@ The following table lists the available products and their **ProductId**.
 
 | Product | ProductId |
 |-----------------------------|--------------|
-| Power Apps per user | CFQ7TTC0LH2H |
+| Power Apps per user* | CFQ7TTC0LH2H |
 | Power Automate per user | CFQ7TTC0KP0N |
 | Power Automate RPA | CFQ7TTC0KXG6  |
 | Power BI Premium (standalone) | CFQ7TTC0KXG7  |
@@ -102,6 +103,11 @@ The following table lists the available products and their **ProductId**.
 | Windows 365 Enterprise | CFQ7TTC0HHS9 |
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows 365 Business with Windows Hybrid Benefit | CFQ7TTC0HX99 |
+| Microsoft 365 F3 | CFQ7TTC0LH05 |
+| Dynamics 365 Marketing | CFQ7TTC0LH3N |
+| Dynamics 365 Marketing Attach | CFQ7TTC0LHWP | 
+| Dynamics 365 Marketing Additional Application | CFQ7TTC0LHVK |
+| Dynamics 365 Marketing Additional Non-Prod Application | CFQ7TTC0LHWM |
 
 *These IDs have changed. If you previously blocked products using the old IDs, they are automatically blocked using the new IDs. No additional work is required.
 
@@ -145,7 +151,6 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Enabled $false
 ```
 
-
 ## Troubleshooting
 
 ### Problem
@@ -158,10 +163,10 @@ This may be due to an older version of Transport Layer Security (TLS). To connec
 
 ### Solution
 
-Upgrade to TLS 1.2. The following syntax updates the ServicePointManager Security Protocol to TLS1.2:
+Upgrade to TLS 1.2. The following syntax updates the ServicePointManager Security Protocol to allow TLS1.2:
 
 ```powershell
- [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+ [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
 ```
 
 To learn more, see [How to enable TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2).

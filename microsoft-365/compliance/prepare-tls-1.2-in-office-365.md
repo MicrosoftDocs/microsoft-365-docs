@@ -17,7 +17,7 @@ appliesto:
 
 # Preparing for TLS 1.2 in Office 365 and Office 365 GCC
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Summary
 

@@ -1,9 +1,10 @@
 ---
 title: "Clone a Content Search"
+description: "Use the PowerShell script in this article to quickly clone an existing Content Search in the Microsoft Purview compliance portal in Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 4/26/2017
 audience: Admin
@@ -14,15 +15,15 @@ search.appverid:
 - MOE150
 - MED150
 - MET150
-ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
-description: "Use the PowerShell script in this article to quickly clone an existing Content Search in the Microsoft Purview compliance portal in Microsoft 365."
+ms.collection:
+- tier1
+- purview-compliance
+- content-search
 ---
 
 # Clone a Content Search
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Creating a Content Search in the Microsoft Purview compliance portal in Microsoft 365 that searches many mailboxes or SharePoint and OneDrive for Business sites can take a while. Specifying the sites to search can also be prone to errors if you mistype a URL. To avoid these issues, you can use the Windows PowerShell script in this article to quickly clone an existing Content Search. When you clone a search, a new search (with a different name) is created that contains the same properties (such as the content locations and the search query) as the original search. Then you can edit the new search by changing the keyword query or the date range, and run it.
 
@@ -34,9 +35,11 @@ Why clone Content Searches?
 
 - To decrease the size of the search results. For example, if you have a search that returns too many results to export, you can clone the search and then add a search condition based on a date range to reduce the number of search results.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Script information
 
-- You need to install the Exchange Online V2 module. For instructions, see [Install and maintain the EXO V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+- You need to install the Exchange Online PowerShell module. For instructions, see [Install and maintain the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 
 - You have to be a member of the eDiscovery Manager role group in the Microsoft Purview compliance portal to run the script described in this topic.
 

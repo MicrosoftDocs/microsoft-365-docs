@@ -1,28 +1,30 @@
 ---
 title: Email threading in eDiscovery (Premium)
+description: "When conducting an eDiscovery (Premium) analysis, email threading parses an email conversation and separates each message into different categories."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-description: "When conducting an eDiscovery (Premium) analysis, email threading parses an email conversation and separates each message into different categories."
 ms.custom: seo-marvel-mar2020
 ---
 
 # Email threading in eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Consider an email conversation that has been going on for a while. In most cases, the last message in the email thread will include the contents of all the preceding messages. Therefore, reviewing the last message will give a complete context of the conversation that happened in the thread. Email threading identifies such messages so that reviewers can review a fraction of collected documents without losing any context.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## What does email threading do?
 

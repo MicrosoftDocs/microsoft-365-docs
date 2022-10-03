@@ -11,7 +11,8 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
@@ -24,13 +25,18 @@ description: "A requirement for all Microsoft Purview Information Protection sol
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 All Microsoft Purview Information Protection solutions are implemented by using [sensitivity labels](sensitivity-labels.md). To create and publish these labels, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
 
 First, create and configure the sensitivity labels that you want to make available for apps and other services. For example, the labels you want users to see and apply from Office apps.
 
 Then, create one or more label policies that contain the labels and policy settings that you configure. It's the label policy that publishes the labels and settings for your chosen users and locations.
+
+> [!TIP]
+> If you don't yet have any sensitivity labels, you might be eligible for the automatic creation of default labels and a default label policy. Even if you have some labels, you might find it useful to see the configuration of these default labels that we're creating for new customers. For example, you can make the same manual configurations to help accelerate your own label deployment.
+> 
+> For more information, see [Default labels and policies for Microsoft Purview Information Protection](mip-easy-trials.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 
@@ -42,7 +48,7 @@ The global admin for your organization has full permissions to create and manage
 
 2. On the **Labels** page, select **+ Create a label** to start the new sensitivity label configuration: 
     
-    ![Create a sensitivity label.](../media/create-sensitivity-label-full.png)
+    :::image type="content" source="../media/create-sensitivity-label-full.png" alt-text="Create a sensitivity label." lightbox="../media/create-sensitivity-label-full.png":::
 
     > [!NOTE]
     > By default, tenants don't have any labels and you must create them. The labels in the example picture show default labels that were [migrated from Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
@@ -51,7 +57,7 @@ The global admin for your organization has full permissions to create and manage
 
     ![Scopes for sensitivity labels.](../media/sensitivity-labels-scopes.png)
 
-    - If **Files & emails** is selected, you can configure settings that apply to apps that support sensitivity labels, such as Office Word and Outlook. If this option isn't selected, you see the first page of these settings but you can't configure them and the labels won't be available for users to select in these apps.
+    - If **Items** is selected, you can configure settings that apply to apps that support sensitivity labels, such as Office Word and Outlook. If this option isn't selected, you see the first page of these settings but you can't configure them and the labels won't be available for users to select in these apps.
 
     - If **Groups & sites** is selected, you can configure settings that apply to Microsoft 365 groups, and sites for Teams and SharePoint. If this option isn't selected, you see the first page of these settings but you can't configure them and the labels won't be available for users to select for groups and site.
 
@@ -145,7 +151,7 @@ To check your label's configuration, including advanced settings, use the follow
 
 2. On the **Label policies** page, select **Publish label** to start the **Create policy** configuration:
     
-    ![Publish labels.](../media/publish-sensitivity-labels-full.png)
+   :::image type="content" source="../media/publish-sensitivity-labels-full.png" alt-text="Publish labels." lightbox="../media/publish-sensitivity-labels-full.png":::
     
     > [!NOTE]
     > By default, tenants don't have any label policies and you must create them. 
@@ -159,7 +165,7 @@ To check your label's configuration, including advanced settings, use the follow
 
 5. Follow the prompts to configure the policy settings.
 
-    The policy settings that you see match the scope of the labels that you selected. For example, if you selected labels that have just the **Files & emails** scope, you don't see the policy settings **Apply this label by default to groups and sites** and **Require users to apply a label to their groups and sites**.
+    The policy settings that you see match the scope of the labels that you selected. For example, if you selected labels that have just the **Items** scope, you don't see the policy settings **Apply this label by default to groups and sites** and **Require users to apply a label to their groups and sites**.
 
     For more information about these settings, see [What label policies can do](sensitivity-labels.md#what-label-policies-can-do) from the overview information and use the help in the UI for individual settings.
 

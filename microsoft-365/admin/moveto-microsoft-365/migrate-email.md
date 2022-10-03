@@ -7,12 +7,15 @@ author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
@@ -26,13 +29,17 @@ description: "Learn how to migrate email, contacts, and calendar from Google Wor
 
 # Migrate business email and calendar from Google Workspace
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
+## Watch: Migrate business email and calendar from Google Workspace
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198034).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LPt6?autoplay=false]
 
 You can use an admin-ran migration to Exchange Online from Google Workspace. You can migrate the mail either all at once, or in stages. The following steps show how to migrate the email data at once. For more information, see [Perform a G Suite migration](/exchange/mailbox-migration/perform-g-suite-migration).
 
 The migration process takes several steps and can take from several hours to a couple of days depending on the amount of data you are migrating.
-
-## Try it!
 
 ### Create a Google Service Account
 

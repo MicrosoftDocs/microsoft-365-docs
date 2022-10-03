@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
@@ -23,8 +23,6 @@ description: Understand how to transition legacy files to Office 365 Message Enc
 ---
 
 # Legacy information for Office 365 Message Encryption
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 If you haven't yet moved your organization to Microsoft Purview Message Encryption, but you have already deployed OME, then the information in this article applies to your organization. Microsoft recommends that you make a plan to move to Microsoft Purview Message Encryption as soon as it is reasonable for your organization. For instructions, see [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). If you want to find out more about how the new message encryption first, see [Message encryption](ome.md). The rest of this article refers to OME behavior before the release of Microsoft Purview Message Encryption.
 
@@ -37,6 +35,8 @@ Here are some examples:
 - A mortgage broker requests financial information from a customer for a loan application
 - A health care provider sends health care information to patients
 - An attorney sends confidential information to a customer or another attorney
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How Office 365 Message Encryption works without the new capabilities
 

@@ -8,13 +8,15 @@ manager: laurawi
 ms.date: 01/04/2021
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: 
 description: Use auditing and alert policies and data subject requests to monitor and respond to personal data incidents.
 ---

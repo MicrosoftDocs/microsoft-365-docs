@@ -11,13 +11,13 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Plan for insider risk management
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Before getting started with [insider risk management](insider-risk-management.md) in your organization, there are important planning activities and considerations that should be reviewed by your information technology and compliance management teams. Thoroughly understanding and planning for deployment in the following areas will help ensure that your implementation and use of insider risk management features goes smoothly and is aligned with the best practices for the solution. 
 
@@ -30,6 +30,8 @@ Watch the video below to learn how the insider risk management workflow can help
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
 Check out the [Microsoft Mechanics video](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) on how insider risk management and communication compliance work together to help minimize data risks from users in your organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Work with stakeholders in your organization
 

@@ -7,6 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection: scotvorg
 description: "Use this page to create your staff list and to manage staff member details such as name, phone number, and email address."
 ---
 

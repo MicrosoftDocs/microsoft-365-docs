@@ -10,12 +10,13 @@ metadata:
   ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
   ms.topic: landing-page # Required
-  ms.collection: m365-security-compliance
+  ms.collection: purview-compliance
   ms.custom: intro-hub-or-landing
   author: robmazz #Required; your GitHub user alias, with correct capitalization.
   ms.author: robmazz #Required; microsoft alias of author; optional team alias.
   ms.date: 04/22/2022 #Required; mm/dd/yyyy format
   ms.localizationpriority: high
+  titleSuffix: Microsoft Purview (compliance)
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 

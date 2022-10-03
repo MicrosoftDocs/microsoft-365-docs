@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - SPO_Content
 ms.custom:
 - seo-marvel-apr2020
@@ -25,8 +25,6 @@ description: Learn how to set up an information management policy to control how
 ---
 
 # Create and apply information management policies
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Information management policies enable your organization to control how long to retain content, to audit what people do with content, and to add barcodes or labels to documents. A policy can help enforce compliance with legal and governmental regulations or internal business processes. As an administrator, you can set up a policy to control how to track documents and how long to retain documents.
 
@@ -37,6 +35,8 @@ You can create an information management policy can at three different locations
 - Create a policy for a list or library.
 
 For more information, see [Introduction to information management policies](intro-to-info-mgmt-policies.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Create a policy for multiple content types within a site collection
 <a name="__toc261001590"> </a>

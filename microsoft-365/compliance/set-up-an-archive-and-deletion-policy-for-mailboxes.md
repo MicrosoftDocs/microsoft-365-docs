@@ -10,8 +10,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
+- tier2
 search.appverid:
 - MOE150
 - MED150
@@ -22,16 +22,16 @@ ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: "How to create a custom Messaging Records Management (MRM) archiving and deletion policy to automatically move items to a user's archive mailbox."
+description: "How to create a custom messaging records management (MRM) archiving and deletion policy to automatically move items to a user's archive mailbox."
 ---
 
 # Customize an archive and deletion policy for mailboxes in your organization
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+To retain and delete emails, we recommend you use [Microsoft 365 retention policies and retention labels](retention.md) rather than the older messaging records management (MRM) from Exchange Online. However, a valid reason to still use this older feature is to automatically move emails from a user's primary mailbox to their [archive mailbox](archive-mailboxes.md). You might also need to use MRM to apply retention and deletion settings to specific folders in the mailbox, rather than the entire mailbox.
 
-Microsoft Purview admins can create an archiving and deletion policy that automatically moves items to a user's [archive mailbox](archive-mailboxes.md) and automatically deletes items from the mailbox.
+Use this article as an example deployment for these two valid reasons to use MRM retention policies and retention tags. For all other retention and deletion scenarios, use Microsoft 365 retention policies and retention labels.
 
-You do this by creating a Messaging Records Management (MRM) retention policy that you then assign to mailboxes. This policy moves items to a user's archive mailbox after a specified period of time and also deletes items from the mailbox after they reach a certain age limit.
+The configuration requires you to create an MRM retention policy that you then assign to mailboxes. This policy moves items to a user's archive mailbox after a specified period of time and also deletes items from the Deleted items folder after they reach a specific age limit.
 
 The actual rules that determine what items are moved or deleted and when that happens are called retention tags. Retention tags are linked to an MRM retention policy, that in turn is assigned to a user's mailbox. A retention tag applies retention settings to individual messages and folders in a user's mailbox. It defines how long a message remains in the mailbox and what action is taken when the message reaches the specified retention age. When a message reaches its retention age, it's either moved to the user's archive mailbox or it's deleted.
   
@@ -39,18 +39,21 @@ The steps in this article set up an archiving and retention policy for a fictiti
   
 - Enable an archive mailbox for every user in the organization. This procedure gives users more mailbox storage, and is required so that a retention policy can automatically move items to the archive mailbox. A user can also manually move items to their archive mailbox for archival storage.
 
-- Create three custom retention tags to do the following actions:
+- Create two custom retention tags to do the following actions:
+    
+    - Automatically move items that are 3 years old to the user's archive mailbox. Moving items to the archive mailbox frees up space in a user's primary mailbox.
+    
+    - Automatically delete items that are 5 years old from the Deleted Items folder. This also frees up space in the user's primary mailbox. User's will have the opportunity to recover these items if necessary. See the footnote in the [More information](#more-information) section for more details. 
 
-  - Automatically move items that are 3 years old to the user's archive mailbox. Moving items to the archive mailbox frees up space in a user's primary mailbox.
-
-  - Automatically delete items that are 5 years old from the Deleted Items folder. This also frees up space in the user's primary mailbox. User's will have the opportunity to recover these items if necessary. See the footnote in the [More information](#more-information) section for more details. 
-
-  - Automatically (and permanently) delete items that are 7 years old from both the primary and archive mailbox. Because of compliance regulations, some organization's are required to retain email for a specific period of time. When this time period expires, an organization might want to permanently remove these items from user mailboxes.
-
-- Create a new retention policy and adding the new custom retention tags to it. Additionally, you'll also add built-in retention tags to the new retention policy. This includes personal tags that users can assign to items in their mailbox. You'll also add a retention tag that moves items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in their archive mailbox. This action helps free up space in a user's Recoverable Items folder when their mailbox is placed on hold.
+- Create a new retention policy and add the new custom retention tags to it. Additionally, you'll add a built-in retention tag that can't be achieved with a recommended Microsoft 365 retention label because it also moves items to the archive mailbox. It's a personal tag for archiving after 1 year that users can assign to items in their mailbox when they want a shorter archive period than their default of 3 years.
 
 You can follow some or all of the steps in this article to set up an archive and deletion policy for mailboxes in your own organization. We recommend that you test this process on a few mailboxes before implementing it on all mailboxes in your organization.
-  
+
+> [!NOTE]
+> Instructions in this article use the [Microsoft Purview compliance portal](microsoft-365-compliance-center.md) and the [new Exchange admin center](/exchange/features-in-new-eac).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you set up an archive and deletion policy
 
 - You must be a global administrator in your organization to perform the steps in this article.
@@ -63,151 +66,120 @@ You can follow some or all of the steps in this article to set up an archive and
 
 The first step is to ensure each user in your organization has an archive mailbox. A user's archive mailbox must be enabled so that a retention tag with a "Move to Archive" retention action can move the item after the retention age expires.
 
-For instructions to enable archive mailboxes, see [Enable archive mailboxes in the Microsoft Purview compliance portal](enable-archive-mailboxes.md).
+For instructions to enable archive mailboxes, see [Enable archive mailboxes in Microsoft 365](enable-archive-mailboxes.md).
   
 > [!NOTE]
 > You can enable archive mailboxes any time during this process, just as long as they're enabled at some point before you complete the process. If an archive mailbox isn't enabled, no action is taken on any items that have an archive or deletion policy assigned to it.
 
 ## Step 2: Create new retention tags for the archive and deletion policies
 
-In this step, you'll create the three custom retention tags that were previously described.
+In this step, you'll create the two custom retention tags that were previously described.
   
 - Alpine House 3 Year Move to Archive (custom archive policy)
 
-- Alpine House 7 Year Permanently Delete (custom deletion policy)
-
 - Alpine House Deleted Items 5 Years Delete and Allow Recovery (custom tag for the Deleted Items folder)
 
-To create new retention tags, you'll use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> in your Exchange Online organization. Be sure to use the classic version of the EAC.
+To create new retention tags, you'll use the [Microsoft Purview compliance portal](microsoft-365-compliance-center.md).
   
-1. Go to [https://admin.protection.outlook.com/ecp/](https://admin.protection.outlook.com/ecp/) and sign in using your credentials.
+1. Go to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) and sign in using your credentials.
   
-2. In the EAC, go to **Compliance management** > **Retention tags**
-
+2. In the compliance portal, go to **Solutions** \> **Data lifecycle management** \> **Exchange (legacy)** > **MRM Retention tags**
+    
     A list of the retention tags for your organization is displayed.
 
 ### Create a custom archive default policy tag
   
 First, you'll create a custom archive default policy tag (DPT) that will move items to the archive mailbox after 3 years.
   
-1. On the **Retention tags** page, select **New tag**![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), and then select **applied automatically to entire mailbox (default)**.
+1. On the **MRM Retention tags** page, select **+ New tag**, and then on the **Name your tag** page, type a name for the new retention tag, and an optional description that explains the purpose of the custom retention tag.
+    
+    For our example scenario, we'll name this tag "Alpine House 3 Year Move to Archive".
 
-2. On the **New tag applied automatically to entire mailbox (default)** page, complete the following fields: 
+2. On the **Define how the tag will be applied** page, select **Automatically to entire mailbox (default)**.
 
-    ![Settings to create a new archive default policy tag.](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
+2. On the **Define retention settings** page, complete the following fields: 
   
-   1. **Name** Type a name for the new retention tag. 
+   1. **When items reaches the following age (in days)** Enter the duration of the retention period. For this scenario, items will be moved to the archive mailbox after 1095 days (3 years). 
 
-   2. **Retention action** Select **Move to Archive** to move items to the archive mailbox when the retention period expires.
+   2. For the **Retention Action** Select **Move item to archive** to move items to the archive mailbox when the retention period expires.
 
-   3. **Retention period** Select **When the item reaches the following age (in days)**, and then enter the duration of the retention period. For this scenario, items will be moved to the archive mailbox after 1095 days (3 years).
+4. Select **Next**, and then review and submit to create the custom archive DPT.
 
-   4. **Comment** (Optional) Type a comment that explains the purpose of the custom retention tag.
-
-3. Select **Save** to create the custom archive DPT.
-
-    The new archive DPT is displayed in the list of retention tags.
-
-### Create a custom deletion default policy tag
-  
-Next, you'll create another custom DPT but this one will be a deletion policy that permanently deletes items after 7 years.
-  
-1. On the **Retention tags** page, select **New tag**![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), and then select **applied automatically to entire mailbox (default)**.
-
-2. On the **New tag applied automatically to entire mailbox (default)** page, complete the following fields: 
-
-    ![Settings to create a new deletion default policy tag.](../media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
-  
-   1. **Name** Type a name for the new retention tag. 
-
-   2. **Retention action** Select **Permanently Delete** to purge items from the mailbox when the retention period expires.
-
-   3. **Retention period** Select **When the item reaches the following age (in days)**, and then enter the duration of the retention period. For this scenario, items will be purged after 2555 days (7 years).
-
-   4. **Comment** (Optional) Type a comment that explains the purpose of the custom retention tag. 
-
-3. Select **Save** to create the custom deletion DPT. 
-
-    The new deletion DPT is displayed in the list of retention tags.
+The new archive DPT is displayed in the list of retention tags.
 
 ### Create a custom retention policy tag for the Deleted Items folder
   
-The last retention tag to create is a custom retention policy tag (RPT) for the Deleted Items folder. This tag will delete items in the Deleted Items folder after 5 years, and provides a recovery period when users can use the Recover Deleted Items tool to recover an item.
+The second retention tag to create is a custom retention policy tag (RPT) for the Deleted Items folder. This tag will delete items in the Deleted Items folder after 5 years, and provides a recovery period when users can use the Recover Deleted Items tool to recover an item.
+
+1. Back on the **MRM Retention tags** page, select **+ New tag**, and on the **Name your tag** page, type a name for the new retention tag, and an optional description that explains the purpose of the custom retention tag.
+    
+    For our example scenario, we'll name this tag "Alpine House Deleted Items 5 Years Delete and Allow Recovery".
+
+2. On the **Define how the tag will be applied** page, select **Automatically to default folder** and then for the **Apply tag to this folder** option, select **Deleted items**.
+
+3. On the **Define retention settings** page, complete the following fields: 
   
-1. On the **Retention tags** page, select **New tag** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), and then select **applied automatically to a default folder**.
+   1. **When items reaches the following age (in days)** Enter the duration of the retention period. For this scenario, items will be deleted after 1825 days (5 years).
 
-2. On the **New tag applied automatically to a default folder** page, complete the following fields:
+   2. For the **Retention Action** Select **Delete and allow recovery** to delete items when the retention period expires, but allow users to recover a deleted item within the deleted item retention period (which by default is 14 days).
 
-    ![Settings to create a new retention policy tag for the Deleted Items folder.](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
-  
-   1. **Name** Type a name for the new retention tag. 
+4. Select **Next**, and then review and submit to create the custom deletion DPT.
 
-   2. **Apply this tag to the following default folder** In the drop-down list, select **Deleted Items**.
-
-   3. **Retention action** Select **Delete and Allow Recovery** to delete items when the retention period expires, but allow users to recover a deleted item within the deleted item retention period (which by default is 14 days).
-
-   4. **Retention period** Select **When the item reaches the following age (in days)**, and then enter the duration of the retention period. For this scenario, items will be deleted after 1825 days (5 years).
-
-   5. **Comment** (Optional) Type a comment that explains the purpose of the custom retention tag. 
-
-3. Select **Save** to create the custom RPT for the Deleted Items folder.
-
-    The new RPT is displayed in the list of retention tags.
+The new RPT is displayed in the list of retention tags.
 
 ## Step 3: Create a new retention policy
 
-After you create the custom retention tags, the next step is to create a new retention policy and add the retention tags. You'll add the three custom retention tags that you created in Step 2, and the built-in tags that were mentioned in the first section. In Step 4, you'll assign this new retention policy to user mailboxes.
+After you create the custom retention tags, the next step is to create a new retention policy and add the retention tags. You'll add the two custom retention tags that you created in Step 2, and the built-in tags that were mentioned in the first section. In Step 4, you'll assign this new retention policy to user mailboxes.
   
-1. In the EAC, go to **Compliance management** > **Retention policies**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Data lifecycle management** \> **Exchange (legacy)** > **MRM Retention policies**.
 
-2. On the **Retention policies** page, select **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
+2. On the **MRM Retention policies** page, select **New policy**.
 
 3. In the **Name** box, type a name for the new retention policy; for example, **Alpine House Archive and Deletion Policy**.
 
-4. Under **Retention tags**, select **Add** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
+4. Select **+ Add tag**.
+    
+    A list of the retention tags in your organization is displayed, which includes the custom tags that you created in Step 2.
 
-    A list of the retention tags in your organization is displayed. Note the custom tags that you created in Step 2 are displayed.
+5. Add the 3 retention tags that are described in more detail in the [More information](#more-information) section:
+    
+    - **Alpine House 3 Year Move to Archive** - the custom archive default policy tag created in step 2 of these instructions
+    - **Alpine House Deleted Items 5 Years Delete and Allow Recovery** - the custom tag for the Deleted Items folder created in step 2 of these instructions
+    - **Personal 1 year move to archive** - a built-in tag that's preconfigured
+    
+    To add these retention tags, select them, and then select **Add**.
 
-5. Add the 9 retention tags that are highlighted in the following screenshot (these tags are described in more detail in the [More information](#more-information) section). To add a retention tag, select it and then select **Add**.
+7. Back on the **Configure your policy** page, select **Next** to review and submit the new policy.
 
-    ![Add retention tags to the new retention policy.](../media/d8e87176-0716-4238-9e6a-7c4af35541dc.png)
-  
-    > [!TIP]
-    > You can select multiple retention tags by holding down the **Ctrl** key and then clicking each tag. 
-  
-6. After you've added the retention tags, select **OK**.
+The new retention policy is displayed in the list. Select it to display the retention tags linked to it in the details pane.
 
-7. On the **New retention policy** page, select **Save** to create the new policy.
-
-    The new retention policy is displayed in the list. Select it to display the retention tags linked to it in the details pane.
-
-    ![The new retention policy and the list of linked retention tags.](../media/63bc45e6-110b-4dc9-a85f-8eb1961a8258.png)
-  
 ## Step 4: Assign the new retention policy to user mailboxes
 
-When a new mailbox is created, a retention policy named Default MRM policy is assigned to it by default. In this step, you'll replace this retention policy by assigning the new retention policy that you created in Step 3 to the user mailboxes in your organization. Replacement is required because a mailbox can have only one MRM retention policy assigned to it at a time. This step assumes that you'll assign the new policy to all mailboxes in your organization.
+When a new mailbox is created, a retention policy named Default MRM policy is assigned to it by default. In this step, you'll replace this retention policy by assigning the new retention policy that you created in Step 3 to the user mailboxes in your organization. 
+
+Replacement is required because a mailbox can have only one MRM retention policy assigned to it at a time. This step assumes that you'll assign the new policy to all mailboxes in your organization.
+
+To follow these steps, make sure you use the [new Exchange admin center](/exchange/features-in-new-eac), rather than the classic version.
   
-1. In the EAC, go to **Recipients** > **Mailboxes**.
+1. Sign in to the new [Exchange admin center (EAC)](https://admin.exchange.microsoft.com/), and go to **Recipients** > **Mailboxes**.
 
     A list of all user mailboxes in your organization is displayed.
 
-2. Select all the mailboxes by clicking on the first one in the list, holding down the **Shift** key, and then clicking the last one in the list. 
+2. Select all the mailboxes by selecting the box for **Display name**. 
 
-3. In the details pane in the EAC, under **Bulk Edit**, select **More options**.
+3. Select the **Mailbox policies** option.
 
-4. Under **Retention Policy**, select **Update**.
+4. In the **Mailbox policies** flyout pane, under **Retention Policy**, select the retention policy that you created in Step 3; for example, **Alpine House Archive and Retention Policy**.
 
-5. On the **Bulk assign retention policy** page, in the **Select the retention policy** drop-down list, select the retention policy that you created in Step 3; for example, **Alpine House Archive and Retention Policy**.
+5. Select **Save** to save the new retention policy assignment.
 
-6. Select **Save** to save the new retention policy assignment.
+6. To verify that the new retention policy was assigned to mailboxes:
 
-7. To verify that the new retention policy was assigned to mailboxes:
+   1. Select a mailbox on the **Mailboxes** page.
 
-   1. Select a mailbox on the **Mailboxes** page, and then select **Edit** ![Edit.](../media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png).
-
-   2. On the mailbox properties page for the selected user, select **Mailbox features**.
-
-   The name of the new policy assigned to the mailbox is displayed in the **Retention policy** drop-down list.
+   2. On the mailbox properties page for the selected user, select **Mailbox**.
+    
+    The name of the new policy assigned to the mailbox is displayed for the **Retention policy**.
 
 ## (Optional) Step 5: Run the Managed Folder Assistant to apply the new settings
 
@@ -274,15 +246,9 @@ You do this by using Exchange Online PowerShell to update your organization's de
     | Retention tag | What this tag does | Built-in or custom? | Type |
     |:-----|:-----|:-----|:-----|
     |Alpine House 3 Year Move to Archive  <br/> |Moves items that are 1095 days (3 years) old to the archive mailbox.  <br/> |Custom (See [Step 2: Create new retention tags for the archive and deletion policies](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Default Policy Tag (archive); this tag is automatically applied to the entire mailbox.  <br/> |
-    |Alpine House 7 Year Permanently Delete  <br/> |Permanently deletes items in the primary mailbox or the archive mailbox when they're 7 years old.  <br/> |Custom (See [Step 2: Create new retention tags for the archive and deletion policies](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Default Policy Tag (deletion); this tag is automatically applied to the entire mailbox.  <br/> |
-    |Alpine House Deleted Items 5 Years Delete and Allow Recovery  <br/> |Deletes items from the Deleted Items folder that are 5 years old. Users can recover these items for up 14 days after they're deleted.<sup>\*</sup> <br/> |Custom (See [Step 2: Create new retention tags for the archive and deletion policies](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Retention Policy Tag (Deleted Items); this tag is automatically applied to items in the Deleted items folder.  <br/> |
-    |Recoverable Items 14 days Move to Archive  <br/> |Moves items that have been in the Recoverable Items folder for 14 days to the Recoverable Items folder in the archive mailbox.  <br/> |Built-in  <br/> |Retention Policy Tag (Recoverable Items); this tag is automatically applied to items in the Recoverable Items folder.  <br/> |
-    |Junk Email  <br/> |Permanently deletes items that have been in the Junk Email folder for 30 days. Users can recover these items for up 14 days after they're deleted.<sup>\*</sup> <br/> |Built-in  <br/> |Retention Policy Tag (Junk Email); this tag is automatically applied to items in Junk Email folder.  <br/> |
-    |1 Month Delete  <br/> |Permanently deletes items that are 30 days old. Users can recover these items for up 14 days after they're deleted.<sup>\*</sup> <br/> |Built-in  <br/> |Personal; this tag can be applied by users.  <br/> |
-    |1 Year Delete  <br/> |Permanently deletes items that are 365 days old. Users can recover these items for up 14 days after they're deleted.<sup>\*</sup> <br/> |Built-in  <br/> |Personal; this tag can be applied by users.  <br/> |
-    |Never Delete  <br/> |This tag prevents items from being deleted by a retention policy.  <br/> |Built-in  <br/> |Personal; this tag can be applied by users.  <br/> |
-    |Personal 1 year move to archive  <br/> |Moves items to the archive mailbox after 1 year.  <br/> |Built-in  <br/> |Personal; this tag can be applied by users.  <br/> |
-
-    > <sup>\*</sup> Users can use the Recover Deleted Items tool in Outlook and Outlook on the web (formerly known as Outlook Web App) to recover a deleted item within the deleted item retention period, which by default is 14 days in Exchange Online. An administrator can use Exchange Online PowerShell to increase the deleted item retention period to a maximum of 30 days. For more information, see: [Recover deleted items in Outlook for Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) and [Change the deleted item retention period for a mailbox in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention).
+    |Alpine House Deleted Items 5 Years Delete and Allow Recovery  <br/> |Deletes items from the Deleted Items folder that are 5 years old. Users can recover these items for up 14 days after they're deleted. See the next list entry for more information. <br/> |Custom (See [Step 2: Create new retention tags for the archive and deletion policies](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Retention Policy Tag (Deleted Items); this tag is automatically applied to items in the Deleted items folder.  <br/> |
+    |Personal 1 year move to archive  <br/> |Moves items to the archive mailbox after 1 year.  <br/> |Built-in  <br/> |Personal; this tag can be applied by users.   |
+    
+    
+- Users can use the Recover Deleted Items tool in Outlook and Outlook on the web (formerly known as Outlook Web App) to recover a deleted item within the deleted item retention period, which by default is 14 days in Exchange Online. An administrator can use Exchange Online PowerShell to increase the deleted item retention period to a maximum of 30 days. For more information, see: [Recover deleted items in Outlook for Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) and [Change the deleted item retention period for a mailbox in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention).
   
-- Using the **Recoverable Items 14 days Move to Archive** retention tag helps free up storage space in the Recoverable Items folder in the user's primary mailbox. This is useful when a user's mailbox is placed on hold, which means nothing is ever permanently deleted from the user's mailbox. Without moving items to the archive mailbox, it's possible the storage quota for the Recoverable Items folder in the primary mailbox will be reached. For more information about this and how to avoid it, see [Increase the Recoverable Items quota for mailboxes on hold](./increase-the-recoverable-quota-for-mailboxes-on-hold.md).

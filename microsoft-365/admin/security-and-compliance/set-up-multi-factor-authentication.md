@@ -7,13 +7,16 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection: 
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
@@ -32,6 +35,8 @@ monikerRange: 'o365-worldwide'
 
 # Set up multifactor authentication for Microsoft 365
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 Multifactor authentication means you and your employees must provide more than one way to sign in to Microsoft 365 is one of the easiest ways to secure your business. Based on your understanding of [multifactor authentication (MFA) and its support in Microsoft 365](multi-factor-authentication-microsoft-365.md), it's time to set it up and roll it out to your organization. 
 
 > [!IMPORTANT]
@@ -41,6 +46,8 @@ Multifactor authentication means you and your employees must provide more than o
 > If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Watch: Turn on multifactor authentication
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197909).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 
@@ -103,10 +110,8 @@ For more information about the Azure AD P1 and P2, see [Azure Active Directory p
 
 For most subscriptions modern authentication is automatically turned on, but if you purchased your subscription before August 2017, it's likely that you'll need to turn on Modern Authentication in order to get features like Multifactor Authentication to work in Windows clients like Outlook.
 
-
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, in the left nav choose **Settings** \> **Org settings**.
 2. Under the **Services** tab, choose **Modern authentication**, and in the **Modern authentication** pane, make sure **Enable Modern authentication** is selected. Choose **Save changes**.
-
 
 ## Next steps
 

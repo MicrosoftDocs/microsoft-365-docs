@@ -10,9 +10,12 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- highpri 
+- tier2
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.localizationpriority: null
 f1.keywords:
 - NOCSH
@@ -21,9 +24,7 @@ ms.custom: seo-marvel-apr2020
 
 # Learn about information barriers
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview Information Barriers (IB) is a compliance solution that allows you to restrict two-way communication and collaboration between groups and users in Microsoft Teams, SharePoint Online, and OneDrive for Business. Often used in highly regulated industries, IB can help to avoid conflicts of interest and safeguard internal information between users and organizational areas.
+Microsoft Purview Information Barriers (IB) is a compliance solution that allows you to restrict two-way communication and collaboration between groups and users in Microsoft Teams, SharePoint, and OneDrive. Often used in highly regulated industries, IB can help to avoid conflicts of interest and safeguard internal information between users and organizational areas.
 
 When IB policies are in place, users who shouldn't communicate or share files with other specific users won't be able to find, select, chat, or call those users. IB policies automatically put checks in place to detect and prevent unauthorized communication and collaboration among defined groups and users. IB policies are independent from [compliance boundaries](/microsoft-365/compliance/set-up-compliance-boundaries) for eDiscovery investigations that control user content locations that eDiscovery managers can search.
 
@@ -37,6 +38,8 @@ IB policies can allow or prevent communication and collaboration between groups 
 
 > [!IMPORTANT]
 > Information barriers **only supports** two-way communication and collaboration restrictions. For example, a scenario where Marketing can communicate and collaborate with Day Traders, but Day Traders cannot communicate and collaborate with Marketing **isn't supported**.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Information barriers and Microsoft Teams
 
@@ -58,7 +61,7 @@ For more information, see [information barriers in Microsoft Teams](/MicrosoftTe
 
 ## Information barriers and SharePoint and OneDrive
 
-In SharePoint Online and OneDrive, IB policies detect and prevent the following kinds of unauthorized collaboration:
+In SharePoint and OneDrive, IB policies detect and prevent the following kinds of unauthorized collaboration:
 
 - Adding a member to a site
 - Accessing site or content by a user

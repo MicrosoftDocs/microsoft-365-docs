@@ -14,14 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - Strat_O365_IP
 description: "View a complete list of root certificates and certificate authorities (CAs) in Microsoft 365."
 ---
 
 # Microsoft 365 encryption chains
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft 365 leverages a number of different certificate providers. The following describes the complete list of known Microsoft 365 root certificates that customers may encounter when accessing Microsoft 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md). The following certificate information applies to all worldwide and national cloud instances of Microsoft 365.
 
@@ -36,6 +34,8 @@ Last updated: **4/25/2022**
 | Publicly Trusted Intermediate Certificates | [Microsoft 365 Intermediate Certificate Bundle (P7B)](https://download.microsoft.com/download/1/4/7/14777f28-3fde-4958-aebf-bd192a4a7fac/m365_intermediate_certs_20201013.p7b) | cdp1.public-trust.com<br>crl.cnnic.cn<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>ocspcnnicroot.cnnic.cn<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com<br>www.cnnic.cn |
 
 Expand the root and intermediate sections below to see additional details about the certificate providers.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## **Microsoft 365 Root Certificate Details**
 

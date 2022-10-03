@@ -2,7 +2,7 @@
 title: Enable attack surface reduction rules
 description: Enable attack surface reduction (ASR) rules to protect your devices from attacks that use macros, scripts, and common injection techniques.
 keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, enable, turn on
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,13 +12,14 @@ author: jweston-1
 ms.author: v-jweston
 ms.reviewer: oogunrinde
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
 ms.collection: 
-- m365solution-scenario
-- M365-security-compliance
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
+search.appverid: met150
 ---
 
 # Enable attack surface reduction rules
@@ -55,7 +56,7 @@ You can set attack surface reduction rules for devices that are running any of t
 
 To use the entire feature-set of attack surface reduction rules, you need:
 
-- Windows Defender Antivirus as primary AV (real-time protection on)
+- Microsoft Defender Antivirus as primary AV (real-time protection on)
 - [Cloud-Delivery Protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) on (some rules require that)
 - Windows 10 Enterprise E5 or E3 License
 
@@ -276,6 +277,9 @@ Example:
 5. Review the settings and select **Next** to create the policy.
 
 6. After the policy is created, select **Close**.
+
+> [!WARNING]
+> There is a known issue with the applicability of Attack Surface Reduction on Server OS versions which is marked as compliant without any actual enforcement. Currently, there is no ETA for when this will be fixed.
 
 ### Group Policy
 

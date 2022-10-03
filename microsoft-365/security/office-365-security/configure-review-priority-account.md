@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 search.appverid:
   - MET150
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: Learn how to identify critical people in an organization and add the priority account tag to provide them with extra protection.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Configure and review Priority accounts in Microsoft Defender for Office 365
@@ -37,7 +37,7 @@ Priority account protection is turned on by default for pre-identified critical 
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration** \> **Priority account protection**. To go directly to the **Priority account protection** page, use <https://security.microsoft.com/securitysettings/priorityAccountProtection>.
 
-2. On the **Priority account protection** page, turn on **Priority account protection**.
+2. On the **Priority account protection** page, turn on **Priority account protection** (:::image type="icon" source="../../media/scc-toggle-on.png" border="false":::).
 
     > [!div class="mx-imgBorder"]
     > ![Turn on Priority account protection.](../../media/mdo-priority-account-protection.png)
@@ -45,7 +45,23 @@ Priority account protection is turned on by default for pre-identified critical 
 > [!NOTE]
 > We don't recommend disabling or turning off priority account protection.
 
-### Enable the Priority account tag
+If you want to use Exchange Online PowerShell to turn on priority account protection, do the following steps:
+
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and run the following command:
+
+   ```powershell
+   Set-EmailTenantSettings -EnablePriorityAccountProtection $true
+   ```
+
+2. To verify that priority account protection is turned on, run the following command to verify the EnablePriorityAccountProtection property value:
+
+   ```powershell
+   Get-EmailTenantSettings | Format-List Identity,EnablePriorityAccountProtection
+   ```
+
+   The value True means priority account protection is turned on. The value False means priority account protection is turned off.
+
+### Assign the Priority account tag to users
 
 Microsoft Defender for Office 365 supports priority accounts as tags that can be used as filters in alerts, reports, incidents, and more.
 
@@ -56,7 +72,7 @@ For more information, see [User tags in Microsoft Defender for Office 365](user-
 The affects of priority account protection are visible in the following features:
 
 - [Alerts](alerts.md)
-- [Custom alert policies](../../compliance/alert-policies.md#viewing-alerts)
+- [Custom alert policies](../../compliance/alert-policies.md#view-alerts)
 - [Threat Explorer and real-time detections](threat-explorer.md)
 - [Compromised user report](view-email-security-reports.md#compromised-users-report)
 - [Email entity page](mdo-email-entity-page.md#other-innovations)

@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ROBOTS: NO INDEX, NO FOLLOW
 description: "Use Bookings with me to let others schedule meetings with you in Outlook."
 ---
@@ -20,9 +22,9 @@ description: "Use Bookings with me to let others schedule meetings with you in O
 
 Bookings with me has two different views:
 
-- **Organizer view** A personal booking page where you can create meeting types that others can book with you. Custom meeting types give you the ability to customize when you want to meet and how that meeting type is shared with others. You control whether each meeting type is public to your scheduling page or is private and can only be accessed by a select group of people. You can also choose to add a Teams meeting to all meetings booked through your Bookings with me page. You can access your Bookings with me page through Outlook on the web. After you set up your page and publish it, you can share it with others. For example, you can add it to your Outlook signature.
+- [Bookings with me: setup and sharing](https://support.microsoft.com/office/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2) A personal booking page where you can create meeting types that others can book with you. Custom meeting types give you the ability to customize when you want to meet and how that meeting type is shared with others. You control whether each meeting type is public to your scheduling page or is private and can only be accessed by a select group of people. You can also choose to add a Teams meeting to all meetings booked through your Bookings with me page. You can access your Bookings with me page through Outlook on the web. After you set up your page and publish it, you can share it with others. For example, you can add it to your Outlook signature.
 
-- **Attendee view** When you share your Bookings with me page with others, they will see the attendee view. If the organizer has shared their Bookings with me page link with you, you'll be able to see all of their public meeting types. If the organizer has shared a meeting link, you'll only be able to view that meeting.
+- [Attendee view](https://support.microsoft.com/office/select-a-meeting-time-in-bookings-with-me-8f3bbe5b-4bc6-4073-bf61-57383c00b43a) When you share your Bookings with me page with others, they will see the attendee view. If the organizer has shared their Bookings with me page link with you, you'll be able to see all of their public meeting types. If the organizer has shared a meeting link, you'll only be able to view that meeting.
   - Public meetings can be viewed and scheduled by anyone that has your Bookings with me page link. You are in control of who you share that link with. All public meeting types will be visible to anyone that has your Bookings with me page link.
   - Private meetings can only be viewed by people who have the link for that meeting type. The difference between public meetings and private meetings is private meetings can have different links and the links expire after 90 days. You can also set private links to expire after a one-time booking. When accessing the scheduling view for a private meeting, only that meeting type will be visible.
 
@@ -57,7 +59,7 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
 
 1. Bookings with me and Bookings share the same licensing model. However, Bookings doesn't have to be turned on for the organization using tenant settings for users to access Bookings with me. The Bookings app must be enabled for users to have access to Bookings with me.
 
-   To turn on Bookings with me without access to Bookings, block access to Microsoft Bookings using the [OWA Mailbox policy PowerShell command](/powershell/module/exchange/set-owamailboxpolicy?view=exchange-ps) or follow the instructions here: [Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md).
+   To turn on Bookings with me without access to Bookings, block access to Microsoft Bookings using the [OWA Mailbox policy PowerShell command](/powershell/module/exchange/set-owamailboxpolicy) or follow the instructions here: [Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md).
 
 2. Calendar FreeBusy Anonymous sharing must be enabled to use Bookings with me. This allows the Bookings page to have access to the free/busy information in your Outlook calendar. Use PowerShell to check the status.
 
@@ -65,15 +67,32 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
      Get-SharingPolicy -Identity "Default Sharing Policy" | fl Domains 
    ```
 
-    "Anonymous:CalendarSharingFreeBusyReviewer"" should be one of the domains in the response.
+    Anonymous:SharingPolicyAction must be one of the domains in the response. SharingPolicyAction value can be CalendarSharingFreeBusySimple, CalendarSharingFreeBusyDetail, or CalendarSharingFreeBusyReviewer (default).
 
    To enable anonymous sharing, use the following command.
 
    ```PowerShell
-     Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusyReviewer 
+     Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
+   ```
+3.	For mailboxes that get assigned a customized SharingPolicy, the policy must have Anonymous:SharingPolicyActio as one of the domains.
+
+   ```Powershell:
+      get-mailbox adam@contoso.com | Format-List SharingPolicy
    ```
 
-## Turn Bookings with me on or off  
+   If the command returns:
+
+   `SharingPolicy        : "contoso.onmicrosoft.com\Default Sharing (CONTOSO)"`
+
+   You must update the policy with one of the required domains:
+
+   ```Powershell
+   Set-SharingPolicy "Default Sharing (CONTOSO)" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
+   ```
+
+For more information, see [Set-SharingPolicy](/powershell/module/exchange/set-sharingpolicy).
+
+## Turn Bookings with me on or off
 
 Bookings with me can be turned on or off for your entire organization or specific users. When Bookings with me is turned on, users can create a Bookings with me page and share links with others inside or outside your organization.
 
@@ -94,7 +113,8 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
 
     If the command returns “EwsEnabled: **$true**" then proceed to Step 2.
 
-    If the command returns “EwsEnabled:" (empty is default), then enable and proceed to Step 2.
+    If the command returns “EwsEnabled:" (empty is default), then enable, but only if need to block "Bookings with", and proceed to Step 2.
+    Otherwise the default values of EwsEnabled is enough to leave "Bookings with me" enabled, no further changes are needed.
 
    ```PowerShell
    Set-OrganizationConfig -EwsEnabled: $true
@@ -213,13 +233,13 @@ Bookings with me is in preview for all enterprise users worldwide. We're collect
 
 ### Who can access my public Bookings page?
 
-Public meeting types can be accessed by anyone that has your Bookings with me page address. You decide who you share your Bookings with me page address with.
+Public meeting types can be accessed by anyone that has your Bookings with me page address. You decide who you share your Bookings with me page address with. For more information, see [Select a meeting time in Bookings with me](https://support.microsoft.com/office/select-a-meeting-time-in-bookings-with-me-8f3bbe5b-4bc6-4073-bf61-57383c00b43a).
 
 ### What is the difference between public and private meeting types?
 
 Meeting types can be public or private. Public meeting types are available to anyone that you share your Bookings page link with. Private meeting types are only available to people that you share the individual private meeting type with.  
 
-Private meeting types can also generate single use links. Single use links expire after their first booking.
+Private meeting types can also generate single use links. Single use links expire after their first booking. For more information, see [setup Bookings with me meeting types](https://support.microsoft.com/office/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2).
 
 ### Do people need to have a Microsoft account or Bookings license to schedule time with me?
 

@@ -1,9 +1,10 @@
 ---
 title: "Use a script to create an eDiscovery holds report"
+description: Learn how to generate a report that contains information about all the holds that are associated with eDiscovery cases.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 05/10/2022
 audience: Admin
@@ -11,24 +12,23 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
-description: Learn how to generate a report that contains information about all the holds that are associated with eDiscovery cases.
 ---
 
 # Use a script to create a report on holds in eDiscovery cases
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with eDiscovery (Standard) and eDiscovery (Premium) cases in the Microsoft Purview compliance portal. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. If there are cases that don't have any holds, the script will create an additional report with a list of cases without holds.
 
 See the [More information](#more-information) section for a detailed description of the information included in the report.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Admin requirements and script information
 
@@ -125,7 +125,7 @@ After you've connected to Security & Compliance PowerShell, the next step is to 
    }
    }
    else{
-   write-host "No hold policies found in case:" $cc.name -foregroundColor 'Yellow'
+    "No hold policies found in case:" $cc.name -foregroundColor 'Yellow'
    " "
    [string]$cc.name | out-file -filepath $noholdsfilepath -append
    }
@@ -142,7 +142,7 @@ After you've connected to Security & Compliance PowerShell, the next step is to 
    if($cc.status -eq 'Closed')
    {
    $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'
-   add-tocasereport -casename $cc.name -casestatus -casetype $cc.casetype $cc.Status -caseclosedby $cc.closedby -caseClosedDateTime $cc.ClosedDateTime -casemembers $cmembers
+   add-tocasereport -casename $cc.name -casestatus $cc.Status -casetype $cc.casetype -caseclosedby $cc.closedby -caseClosedDateTime $cc.ClosedDateTime -casemembers $cmembers
    }
    else{
    $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'

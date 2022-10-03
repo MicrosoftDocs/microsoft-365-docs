@@ -1,9 +1,10 @@
 ---
 title: "Collect cloud attachments in eDiscovery (Premium)"
+description: "Use collections in Microsoft Purview eDiscovery (Premium) to collect cloud attachments for review in an investigation or case." 
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: 06/03/2022
@@ -11,22 +12,24 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "Use collections in Microsoft Purview eDiscovery (Premium) to collect cloud attachments for review in an investigation or case." 
 ---
 
 # Collect cloud attachments in Microsoft Purview eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cloud attachments are links to documents that are typically stored in SharePoint site and OneDrive. So instead of attaching an actual copy of a document in an email message or a Teams chat conversation, you have the option of sharing a link to the file. Cloud attachments are an effective way to share documents and collaborate with other people in your organization. But cloud attachments present challenges during the eDiscovery workflow because only the cloud attachment link and not the actual content in the shared document are returned in an eDiscovery search. To address this challenge, eDiscovery (Premium) provides two solutions for collecting cloud attachments:  
 
 - Collecting the live version of a document that is linked to in a cloud attachment.
 
 - Collecting the version of the document at the time it was shared in a cloud attachment.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Collecting cloud attachments
 

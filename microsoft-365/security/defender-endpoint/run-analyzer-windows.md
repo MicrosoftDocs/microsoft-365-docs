@@ -2,7 +2,7 @@
 title:  Run the client analyzer on Windows
 description: Learn how to run the Microsoft Defender for Endpoint Client Analyzer on Windows.
 keywords: client analyzer, troubleshoot sensor, analyzer, mdeanalyzer, windows
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,16 +13,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
-ms.technology: m365d
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Run the client analyzer on Windows
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 1. Download the [MDE Client Analyzer tool](https://aka.ms/mdatpanalyzer) to the Windows machine you need to investigate.
@@ -89,11 +91,11 @@ By default, the unpacked MDEClientAnalyzerResult.zip file will contain the follo
 - SystemInfoLogs \[Folder\]
   - AddRemovePrograms.csv
 
-    Description: List of x86 installed software on  x64 OS software collected from registry.
+    Description: List of x64 installed software on x64 OS collected from registry.
 
   - AddRemoveProgramsWOW64.csv
 
-    Description: List of x86 installed software on x64 OS software collected from registry.
+    Description: List of x86 installed software on x64 OS collected from registry.
 
     - CertValidate.log
 

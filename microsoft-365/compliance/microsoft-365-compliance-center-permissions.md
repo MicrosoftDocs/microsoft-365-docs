@@ -1,5 +1,6 @@
 ---
 title: "Permissions in the Microsoft Purview compliance portal"
+description: Learn about managing permissions in the Microsoft Purview compliance portal.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,16 +10,15 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: Learn about managing permissions in the Microsoft Purview compliance portal.
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: 
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
 ---
 
 # Permissions in the Microsoft Purview compliance portal
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The Microsoft Purview compliance portal supports directly  managing permissions for users who perform compliance tasks in Microsoft 365. This update means you'll no longer have to use the Office 365 Security & Compliance Center to manage permissions for compliance solutions. Using the new **Permissions** page in the compliance portal, you can manage permissions to users for compliance tasks in features like device management, Microsoft Purview Data Loss Prevention, eDiscovery, insider risk management, retention, and many others. Users can perform only the compliance tasks that you explicitly grant them access to.
 
@@ -27,6 +27,8 @@ To view the **Permissions** tab in the compliance portal, users need to be a glo
 ![Permissions page in Microsoft Purview compliance portal.](../media/m365-compliance-center-permissions.png)
 
 Permissions in the compliance portal are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services, so if you're familiar with the permission structure in these services, granting permissions in the compliance portal will be familiar. It's important to remember that the permissions managed in the compliance portal don't cover the management of all the permissions needed in each individual service. You'll still need to manage certain service-specific permissions in the admin center for the specific service. For example, if you need to assign permissions for archiving, auditing, and MRM retention policies, you'll need to manage these permissions in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Relationship of members, roles, and role groups
 

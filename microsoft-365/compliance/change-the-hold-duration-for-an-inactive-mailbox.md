@@ -11,8 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
+- tier2
 search.appverid: 
 - MOE150
 - MET150
@@ -24,7 +24,7 @@ description: "After an Office 365 mailbox is made inactive, change the duration 
 
 # Change the hold duration for an inactive mailbox
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 An [inactive mailbox](inactive-mailboxes-in-office-365.md) is mailbox state that is used to retain a former employee's email after they leave your organization. A mailbox becomes inactive when an applicable hold is applied to it before the Microsoft 365 user object is deleted.  The following types of holds will initiate the creation of an inactive mailbox upon user account deletion:
 
@@ -55,6 +55,8 @@ However, if the hold is time-based, the mailbox content will be retained until t
 > For inactive mailboxes, we recommend using a retain and delete setting for your Microsoft 365 retention policy or labels.  If you choose a retain only setting, the Recoverable Items folder will purge at the end of the hold duration, however any other non-deleted items will remain within the inactive mailbox indefinitely.
 
 As regulations and policies evolve, there may be some situations in which you need to change the duration of the hold assigned to the inactive mailbox.  The following steps outline how to do this.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Connect to PowerShell
 
@@ -275,7 +277,7 @@ In-Place Holds have been retired and can no longer be modified. If an inactive m
 
     Conversely, any archive policies (MRM retention tags configured with a **MoveToArchive** action) that are included in the MRM retention policy assigned to an inactive mailbox are ignored. That means items in an inactive mailbox that are tagged with an archive policy remain in the primary mailbox when the retention period expires. They're not moved to the archive mailbox or to the Recoverable Items folder in the archive mailbox. They will be retained indefinitely.
     > [!NOTE]
-    > Applying an Exchange retention policy (the Messaging Records Management, or MRM, feature in Exchange Online) does not create an inactive mailbox when the user account is deleted.
+    > Applying an Exchange retention policy (the messaging records management, or MRM, feature in Exchange Online) does not create an inactive mailbox when the user account is deleted.
 
 - **As with regular mailboxes, the Managed Folder Assistant (MFA) also processes inactive mailboxes.** In Exchange Online, the MFA processes mailboxes approximately once every seven days. After you change the hold duration for an inactive mailbox, you can use the **Start-ManagedFolderAssistant** cmdlet to immediately start processing the new hold duration for the inactive mailbox. Run the following command. 
 

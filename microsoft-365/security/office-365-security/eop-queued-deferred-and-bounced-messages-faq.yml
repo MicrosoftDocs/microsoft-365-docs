@@ -15,8 +15,8 @@ metadata:
   ms.custom: 
     - seo-marvel-apr2020
   description: Find answers to the most common questions about messages that have been queued, deferred, or bounced during the Exchange Online Protection (EOP) filtering process.
-  ms.technology: mdo
-  ms.prod: m365-security
+  ms.subservice: mdo
+  ms.service: microsoft-365-security
 title: EOP queued, deferred, and bounced messages FAQ
 summary: |
   [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]

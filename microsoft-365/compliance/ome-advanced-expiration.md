@@ -14,14 +14,12 @@ search.appverid:
 - MET150
 ms.collection: 
 - Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
 description: Use Microsoft Purview Advanced Message Encryption to extend your email security by setting an expiration date on emails through a custom branded template.
 ms.custom: seo-marvel-apr2020
 ---
 
 # Set an expiration date for email encrypted by Microsoft Purview Advanced Message Encryption
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview Advanced Message Encryption is included in [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (Nonprofit Staff Pricing), Office 365 Enterprise E5 (Nonprofit Staff Pricing), and Office 365 Education A5. Microsoft 365 E5 Compliance SKU add-on for Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing), or the Office 365 Advanced Compliance SKU add-on for Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing), or Office 365 SKUs.
 
@@ -36,6 +34,8 @@ When an end user receives mail that has an expiration date set, the user sees th
 You can only set expiration dates for emails to external recipients.
 
 With Microsoft Purview Advanced Message Encryption, anytime you apply custom branding, the Office 365 applies the wrapper to email that fits the mail flow rule to which you apply the template. In addition, you can only use expiration if you use custom branding.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Create a custom branding template to force mail expiration by using PowerShell
 

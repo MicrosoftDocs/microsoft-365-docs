@@ -1,1 +1,0 @@
-# Welcome to Defender-Threat-Intelligence!

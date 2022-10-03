@@ -2,8 +2,8 @@
 title: What's new in Microsoft Purview risk and compliance solutions
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: reference
@@ -15,14 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 description: Whether it be adding new solutions to the compliance center, updating existing features based on your feedback, or rolling out fresh and updated documentation, Microsoft 365 helps you stay on top of the ever-changing compliance landscape. Find out what we've been up to this month.
 ms.custom: seo-marvel-mar2020
 ---
 
 # What's new in Microsoft Purview risk and compliance solutions
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Whether it be adding new solutions to the [Microsoft Purview compliance portal](microsoft-365-compliance-center.md), updating existing features based on your feedback, or rolling out fresh and updated documentation, Microsoft 365 helps you stay on top of the ever-changing compliance landscape. Take a look below to see what’s new in Microsoft Purview today.
 
@@ -37,6 +35,143 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 > - [What's new in Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## August 2022
+
+### Compliance Manager
+
+- [Update improvement actions and bring compliance data into Compliance Manager](compliance-manager-update-actions.md) - new functionality for updating multiple improvement actions at once, which also allows orgs to bring compliance work completed in other systems into Compliance Manager for tracking there.
+- [Working with improvement actions in Compliance Manager](compliance-manager-improvement-actions.md) - users can now include a link/URL as part of evidence for improvement action implementation or testing work.
+
+### Compliance offerings & service assurance
+
+- [Microsoft 365 change management](/compliance/assurance/assurance-microsoft-365-change-management) - new assurance topic that covers code and non-code changes to Microsoft services.
+- **Japan CS Gold Mark offering topic** - retired, certification not renewed.
+
+### Data lifecycle management and records management
+
+- [Exchange (legacy)](data-lifecycle-management.md#exchange-legacy-features) configuration is moving from the Classic Exchange admin center (EAC) to the Microsoft Purview compliance portal, under **Data lifecycle management**. Existing data lifecycle management features are located under a new subnode, **Microsoft 365**.
+- For cloud attachments (currently rolling out in preview), automatic and temporary retention of deleted files in the Preservation Hold library to safeguard against the original file being deleted by users before the copy can be created and labeled. For more information, see [How retention works with cloud attachments](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
+
+### Data Loss Prevention
+
+- [Get started with endpoint data loss prevention](endpoint-dlp-getting-started.md) - updated links for more accessible article names
+- [Learn about endpoint data loss prevention](endpoint-dlp-learn-about.md) - updated links for more accessible article names; updated guidance on supported file types; updated copy-to-other-app guidance
+- [Share data loss prevention alerts](dlp-share-alerts.md) (preview) - new
+- [Configure endpoint DLP settings](dlp-configure-endpoint-settings.md) - GA of Sensitive Service Domains
+- [Data loss prevention policy reference](dlp-policy-reference.md) - GA of Sensitive Service Domains
+- [Using endpoint data loss prevention](endpoint-dlp-using.md) - GA of Sensitive Service Domains
+
+### Microsoft Priva
+
+- [Microsoft Priva trial playbook](/privacy/priva/priva-trial-playbook) - refreshed and simplified guidance to align with recent documentation updates
+
+### Sensitive Information Types
+
+- [Create exact data match sensitive information type workflow classic experience](sit-create-edm-sit-classic-ux-workflow.md) - new
+- [Create the EDM SIT sample file for the new experience](sit-create-edm-sit-unified-ux-sample-file.md) - new
+- [Create EDM SIT using the new experience](sit-create-edm-sit-unified-ux-schema-rule-package.md) - new
+- [Create exact data match sensitive information type workflow new experience](sit-create-edm-sit-unified-ux-workflow.md) - new
+- Added guidance for new and classic EDM SIT creation experience in the following topics:
+  - [Get started with exact data match based sensitive information types](sit-get-started-exact-data-match-based-sits-overview.md)
+  - [Create exact data match sensitive information type/rule package](sit-get-started-exact-data-match-create-rule-package.md)
+  - [Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md)
+  - [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md)
+  - [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md)
+  - [Test an exact data match sensitive information type](sit-get-started-exact-data-match-test.md)
+  - [Learn about exact data match sensitive information types](sit-learn-about-exact-data-match-based-sits.md)
+- [Sensitive information type limits](sit-limits.md) - new
+
+### Sensitivity labels
+
+- Generally available (GA) and no longer need to opt in: Mobile devices (iOS and Android, with minimal versions) support [co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md).
+- GA with Current Channel 2208+ for Word, Excel, PowerPoint on Windows: [Support for PDF](sensitivity-labels-office-apps.md#pdf-support). Support for Outlook to block print to PDF when required, is rolling out to Beta Channel.
+- Rolling out to GA with Current Channel 2208+ for Windows, and 16.63+ for macOS: Default label for existing documents.
+- In preview: Trainable classifiers for [auto-labeling policies](apply-sensitivity-label-automatically.md).
+- Guidance how to [configure Azure AD for encrypted content](encryption-azure-ad-configuration.md), which includes information about External Identities cross-tenant access settings, Conditional Access policies, and guest accounts.
+
+## July 2022
+
+### Compliance Manager
+
+- [Compliance Manager templates list](compliance-manager-templates-list.md) - added new premium template in the Asia-Pacific countries category for "Hong Kong - Code of Banking Practice and Payment Card".
+
+### Compliance offerings & service assurance
+
+- [SharePoint and OneDrive data resiliency in Microsoft 365](/compliance/assurance/assurance-sharepoint-onedrive-data-resiliency) - changes to blob storage resilience section.
+
+### Data lifecycle management and records management
+
+- [Combined licensing section](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) with added details for scenarios.
+- The retention of SharePoint document versions no longer uses separate files in the Preservation Hold library. For more information, see the updated documentation, [How retention works with document versions](retention-policies-sharepoint.md#how-retention-works-with-document-versions).
+- Guidance how to [validate records that you've migrated to SharePoint or OneDrive](records-management.md#validating-migrated-records).
+- Updated Cohasset Assessment report for [SEC 17a-4(f), FINRA 4511(c), and CFTC 1.31(c)-(d)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d).
+- Removed preview disclaimers for retention policies for Teams shared channels now that this feature is rolling out in GA.
+
+### Data Loss Prevention
+
+- [DLP policy reference](dlp-policy-reference.md#blocking-and-notifications-in-sharepoint-online-and-onedrive-for-business) - added new section on Blocking and notifications in SharePoint Online, and OneDrive for Business in response to customer escalations. Updated to support the public preview of sensitive services domains. Updated support for Power BI. Updated support for trainable classifiers.
+- [Configure endpoint DLP settings](dlp-configure-endpoint-settings.md#sensitive-service-domains) - added new content in support of the public preview release of sensitive service domains public preview. Updated URL matching behavior.
+- [Using endpoint DLP](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) - new scenario content in support of the public preview release of sensitive services domains. Updated subscription information.
+
+### eDiscovery
+
+- [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md) - removed superseded information.
+
+### Sensitive information types
+
+- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) - We added 41 new SIT entity definitions in support of the 41 new credential scanning SITs. SIT entity definitions content was completely reworked from a single monolithic article into more easily referenceable and supportable individual articles. There are now 303 articles in total including the 42 new credential scanning SITs.
+
+### Sensitivity labels
+
+- In preview: [Default sensitivity label for a SharePoint document library](sensitivity-labels-sharepoint-default-label.md).
+- In preview: [Organization-wide custom permissions](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions) for Windows when a sensitivity label is configured to let users assign permissions. For more information, see  [Support for organization-wide custom permissions](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions).
+- Now rolling out to Current Channel (Preview) for Windows: Default label for existing documents.
+- Now available with the Semi-Annual Enterprise Channel: [Co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md).
+- The [label scope name](sensitivity-labels.md#label-scopes) of "Files & emails" that you see when configuring a sensitivity label is now "Items".
+
+## June 2022
+
+### Compliance Manager
+
+- [Microsoft Purview Compliance Manager alerts and alert policies](compliance-manager-alert-policies.md) - added three AAD roles that have permissions to create or edit alert policies.
+- [Configuration Analyzer for Microsoft Purview](compliance-manager-mcca.md) - new name and updated reference links for this getting-started tool for Compliance Manager formerly named 'Microsoft Compliance Configuration Analyzer'.
+
+### Data Loss Prevention
+
+- Numerous page updates for Microsoft Purview branded screenshots.
+
+### Data lifecycle management and records management
+
+- In preview: [Microsoft Graph API for records management](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview)
+
+### Microsoft Priva
+
+- [Subject Rights Requests](/privacy/priva/subject-rights-requests) - significant updates, and restructuring of SRR content to better assist users through each progress step; details below.
+  - [Learn about Priva Subject Rights Requests](/privacy/priva/subject-rights-requests) - clearer articulation of customer value prop and general outline of the SRR process.
+  - [Understand the workflow and details pages](/privacy/priva/subject-rights-requests-workflow) - articulates the steps in completing a request, indicating manual vs. automatic progression, and linking off to detailed content; a section explains how to interpret and work with a request's details page, including the new "History" tab.
+  - [Create a request and define search settings](/privacy/priva/subject-rights-requests-create) - new framing with subheads explaining there are now two ways to create a request: via a custom method using a guided process, and via the new feature of using a template, whose search parameters aim to retrieve the most relevant content for the situation.
+  - [Data estimate and retrieval](/privacy/priva/subject-rights-requests-data-retrieval) - explains why some requests pause at the data estimate stage and how to adjust the search as a result; also explains how to set a request to pause first before automatically progressing to data retrieval.
+  - [Review data for a subject rights request](/privacy/priva/subject-rights-requests-data-review) - new import file features allows users to bring files from non-Microsoft 365 locations, or files otherwise not picked up by the search, into the Data collected tab.
+  - [Generate reports and close requests](/privacy/priva/subject-rights-requests-reports) - clarifies when final data packages are generated and what types of files they include.
+  - [Integrate and extend through Microsoft Graph API and Power Automate](/privacy/priva/subject-rights-requests-automate) - revised the title of this previous Power Automate page and expanded page content to include Graph API content and reference links that previously lived on another page.
+
+### Sensitive Information Types
+
+- [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md) - added section on services that EDM supports.
+
+### Sensitivity labels
+
+- In preview: [PDF support for Office apps](sensitivity-labels-office-apps.md#pdf-support), which includes converting documents to PDF format, inheriting the label with any visual markings and encryption. Print to PDF isn't supported, and this option becomes unavailable for users if their label policy is configured for mandatory labeling.
+- In preview: The dialog box that users see when their label policy is configured to require justification to remove or downgrade a label is updated to warn users that their typed response should not include sensitive data. The screenshot in the [What label policies can do](sensitivity-labels.md#what-label-policies-can-do) section shows this updated dialog box that will make its way into the Office deployment channels for production use.
+- In preview: [Support for Outlook to apply S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) is just starting to roll out across client platforms.
+- For [auto-labeling policies](apply-sensitivity-label-automatically.md#creating-an-auto-labeling-policy), a new setting that can automatically turn on the policy if not edited within a set number of days.
+
+### Trainable Classifiers
+
+- [Learn about trainable classifiers](classifier-learn-about.md) - added Adult, Racy, Gory images trainable classifier.
 
 ## May 2022
 
@@ -213,7 +348,7 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 
 - [Retention policies for Yammer](create-retention-policies.md#retention-policy-for-yammer-locations) are now generally available (GA).
 - Support for shared channels, currently in preview. When you configure a retention policy for the Teams channel message location, any shared channels inherit retention settings from their parent team.
-- [Per-tenant limits for content disposition](retention-limits.md#maximum-number-of-items-for-disposition).
+- [Per-tenant limits for content disposition](retention-limits.md#maximum-numbers-for-disposition).
 
 ### Data Loss Prevention
 
@@ -222,11 +357,11 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 - [Configure endpoint data loss prevention settings](dlp-configure-endpoint-settings.md) - new for public preview of restricted app groups.
 - [Data loss prevention policy reference](dlp-policy-reference.md) - updated for public preview of restricted app groups.
 - [Get started with data loss prevention for Power BI](dlp-powerbi-get-started.md) - new for public preview.
-- 
+
 ### Information protection
 
 - [Support for double byte character set release notes](mip-dbcs-relnotes.md) - added guidance for macOS.
-- 
+
 ### Insider risk management
 
 - [Get started with insider risk management](insider-risk-management-configure.md) - added new tasks for the Recommended actions guidance.
@@ -246,76 +381,3 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
   - Support for templates, previously listed as [not supported with Teams Graph APIs and PowerShell cmdlets]( /microsoftteams/sensitivity-labels#limitations).  
 - For auditing Word, Excel, and PowerPoint on the web, justification text is now fully rolled out.
 - Applying a default label to existing documents for Word, Excel, and PowerPoint on the web is now fully rolled out.
-
-## February 2022
-
-### eDiscovery
-
-- [Manage custodian communications templates in eDiscovery (Premium)](advanced-ediscovery-communications-library.md) - eDiscovery managers can now create custodian communications templates that can be used in any eDiscovery (Premium) case in the organization.
-- [Manage issuing officers in eDiscovery (Premium)](advanced-ediscovery-issuing-officers.md) - eDiscovery managers can add a list of issuing officers that can be assigned to custodian communications in any eDiscovery (Premium) case in the organization.
-
-### Data lifecycle management and records management
-
-- [Adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) for retention policies and retention label policies are now generally available (GA). The instructions for [configuring an adaptive scope](retention-settings.md#to-configure-an-adaptive-scope) now include more information for SharePoint site scopes: Blog post reference for using custom site properties and how to use the site property SiteTemplate to include or exclude specific site types with the advanced query builder.
-- [Policy lookup](retention.md#policy-lookup) in the data lifecycle management solution is now generally available (GA.
-- PowerShell alternative to the records management setting that allows users to delete labeled items in SharePoint and OneDrive by using AllowFilesWithKeepLabelToBeDeletedSPO and AllowFilesWithKeepLabelToBeDeletedODB from [Get-PnPTenant](https://pnp.github.io/powershell/cmdlets/Get-PnPTenant.html) and [Set-PnPTenant](https://pnp.github.io/powershell/cmdlets/Set-PnPTenant.html).
-
-### Sensitivity labels
-
-- New guidance [Why choose built-in labeling over the AIP add-in for Office apps](sensitivity-labels-aip.md) if you are using the Azure Information Protection (AIP) unified labeling client for Windows computers. This page includes information about the new private preview for Office apps.
-- New settings for [auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange):
-  - Additional settings for email to support always applying a matched sensitivity label, and to apply encryption to email received from outside the organization.
-  - Exclusions for specific instances (users, groups, sites) are supported by using the new **Excluded** option when the default selection of **All** is specified for **Included**.
-- Now in preview: Mobile devices (iOS and Android) support [co-authoring](sensitivity-labels-coauthoring.md) when you have minimum versions and opt in to this preview.
-- Support for setting the default sharing link type is extended to individual documents in SharePoint and OneDrive. For more information, see the new article [Use sensitivity labels to configure the default sharing link type for sites and documents in SharePoint and OneDrive]( sensitivity-labels-default-sharing-link.md).
-- Teams admin center now supports container labels (sensitivity labels with the scope of Groups & sites).
-
-## January 2022
-
-### Microsoft Purview Data Lifecycle Management
-
-- The documentation for what was formerly Microsoft Information Governance has been substantially revised and restructured to help you more easily find information that relates to the solutions you configure in the Microsoft Purview compliance portal: Data Connectors, Data Lifecycle Management, and Records Management. As part of this revision, the documentation provides a clearer distinction for the retention scenarios for data lifecycle management vs. records management.
-- [Learn about data lifecycle management](data-lifecycle-management.md) - new, to support the restructure.
-- [Get started with data lifecycle management](get-started-with-data-lifecycle-management.md) - new, to replace "Get started with retention", this article includes getting started steps for all data lifecycle management capabilities, which include retention.
-- [Create retention labels for exceptions to your retention policies](create-retention-labels-data-lifecycle-management.md) - new, identified scenario for using retention labels for data lifecycle management rather than records management.
-- [Learn about archive mailboxes](archive-mailboxes.md) - new, to support the restructure, contains conceptual information that was previously in the "Enable archive mailboxes" article.
-
-### Microsoft Priva
-
-- [Privacy management is now Microsoft Priva](/privacy/priva/priva-overview) - updated to rebrand the product and its solutions, Priva Privacy Risk Management and Priva Subject Rights Requests.
-
-### Sensitivity labels
-
-- Support for new [role groups and roles](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels), now in preview.
-- New [monitoring capabilities](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy) for auto-labeling policies.
-- Now rolling out: default label for existing documents, and justification text for Office on the web.
-- Announced for the July Semi-Annual Enterprise Channel with version 2202+: Co-authoring and auditing for Outlook.
-
-## December 2021
-
-### Compliance and service assurance
-
-- [Azure, Dynamics 365, and Windows breach notification under the GDPR](/compliance/regulatory/gdpr-breach-notification) - updated to clarify that customers don't need to use a pay service such as Defender for Cloud to receive security and privacy notifications
-
-### eDiscovery
-
-- [eDiscovery (Premium) workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#reference-guide) - updated with a new downloadable quick reference guide for managing Teams content in eDiscovery (Premium)
-
-### Data lifecycle management
-
-- [Enable archive mailboxes in the compliance center](enable-archive-mailboxes.md#run-diagnostics-on-archive-mailboxes) - added section about new diagnostics tool for archive mailboxes
-- [Use network upload to import your organization's PST files to Microsoft 365](use-network-upload-to-import-pst-files.md#step-2-upload-your-pst-files-to-microsoft-365) - PST import now supports AzCopy v10
-- [Restore an inactive mailbox](restore-an-inactive-mailbox.md) - revised procedure to restore an inactive mailbox by first adding LegacyExchangeDN of inactive mailbox to target mailbox
-
-### Information protection
-
-- [Deploy an information protection solution with Microsoft Purview](information-protection-solution.md) - New step-by-step guidance for customers looking for a prescriptive roadmap to deploy Microsoft Purview Information Protection
-
-### Retention and records management
-
-- New guidance for [How long it takes for retention policies to take effect](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)
-- New tenant settings rolling out: A records management setting that prevents the editing of properties for labeled SharePoint items that are marked as a record and locked, and other setting to prevent users from unlocking items that are marked as a record
-
-### Sensitivity labels
-
-- Mandatory labeling and a default label for Power BI are now generally available (GA)

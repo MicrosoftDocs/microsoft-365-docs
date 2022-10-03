@@ -13,7 +13,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - SPO_Content
 search.appverid: 
 - MET150
@@ -21,8 +22,6 @@ description: "Learn how to configure endpoint data loss prevention (DLP) central
 ---
 
 # Configure endpoint data loss prevention settings
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Many aspects of Endpoint data loss prevention (DLP) behavior are controlled by centrally configured settings. Settings are applied to all DLP policies for devices.
 
@@ -36,6 +35,8 @@ You must configure these settings if you intend to control:
 - Browser and domain restrictions.
 - How business justifications for overriding policies appear in policy tips.
 - If activities on Office, PDF, and CSV files are automatically audited.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## DLP settings
 
@@ -58,9 +59,9 @@ Before you get started, you should set up your DLP settings.
 
 ### Advanced classification scanning and protection
 
-Advanced classification scanning and protection allows the more advanced Microsoft Purview cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of classification techniques like [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, [named entities](named-entities-learn.md), and [trainable classifiers](classifier-learn-about.md) in your DLP policies.
+Advanced classification scanning and protection allows the more advanced Microsoft Purview cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of classification techniques like [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, and [named entities](named-entities-learn.md) in your DLP policies.
 
-When advanced classification is turned on, content is sent from the local device to the cloud services for scanning and classification. If bandwidth utilization is a concern, you can set a limit on how much can be used in a rolling 24 hour period. The limit is configured in Endpoint DLP settings and is applied per device. If you set a bandwidth utilization limit and it's exceeded, DLP stops sending the user content to the cloud. At this point data classification continues locally on the device but classification using exact data match, named entities, and trainable classifiers aren't available. When When the cumulative bandwidth utilization drops below the rolling 24 hour limit, communication with the cloud services will resume.
+When advanced classification is turned on, content is sent from the local device to the cloud services for scanning and classification. If bandwidth utilization is a concern, you can set a limit on how much can be used in a rolling 24 hour period. The limit is configured in Endpoint DLP settings and is applied per device. If you set a bandwidth utilization limit and it's exceeded, DLP stops sending the user content to the cloud. At this point data classification continues locally on the device but classification using exact data match, named entities, and trainable classifiers aren't available. When the cumulative bandwidth utilization drops below the rolling 24 hour limit, communication with the cloud services will resume.
 
 If bandwidth utilization isn't a concern, you select **No limit** to allow unlimited bandwidth utilization.
 
@@ -88,7 +89,7 @@ You can use this logic to construct your exclusion paths for Windows 10 devices:
 
 - Valid file path that ends with `\`, which means only files directly under folder. <br/>For example: `C:\Temp\`
 
-- Valid file path that ends with `\*`, which means only files under subfolders, besides the files directly under the folder. <br/>For example: `C:\Temp\*`
+- Valid file path that ends with `\*`, which means only files under subfolders. Files directly under the folder are not excluded. <br/>For example: `C:\Temp\*`
 
 - Valid file path that ends without `\` or `\*`, which means all files directly under folder and all subfolders. <br/>For example: `C:\Temp`
 
@@ -248,9 +249,23 @@ Use the FQDN format of the service domain without the ending `.`
 
 For example:
 
- `www.contoso.com` 
 
-Wildcards aren't supported.
+| Input | URL matching behavior |
+|---|---|
+| **CONTOSO.COM** |**Matches the specified domain name, and any subsite**: <p>*://contoso.com<p>*://contoso.com/ <p>*://contoso.com/anysubsite1 <p>*://contoso.com/anysubsite1/anysubsite2 (etc) <p>**Does not match sub-domains or unspecified domains**: <p>*://anysubdomain.contoso.com <p>*://anysubdomain.contoso.com.AU |
+| ***.CONTOSO.COM** |**Matches the specified domain name, any subdomain, and any site**: <p>*://contoso.com <p>*://contoso.com/anysubsite <p>*://contoso.com/anysubsite1/anysubsite2 <p>*://anysubdomain.contoso.com/ <p>*://anysubdomain.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite1/anysubsite2 (etc) <p>**Does not match unspecified domains** <p>*://anysubdomain.contoso.com.AU/ |
+| **`www.contoso.com`** |**Matches the specified domain name**: <p>`www.contoso.com` <p>**Does not match unspecified domains or subdomains** <p>*://anysubdomain.contoso.com/, in this case, you have to put the FQDN domain name itself `www.contoso.com`|
+
+#### Sensitive service domains
+
+When you list a website in Sensitive services domains you can audit, block with override, or block users when they attempt to:
+
+- print from a website
+- copy data from a website
+- save a website as local files
+
+Each website must be listed in a website group and the user must be accessing the website through Microsoft Edge. Sensitive service domains is used in conjunction with a DLP policy for Devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
+
 
 ### Additional settings for endpoint DLP
 

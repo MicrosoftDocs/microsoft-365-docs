@@ -1,26 +1,26 @@
 ---
 title: "Advanced indexing of custodian data"
+description: "When a custodian is added to an eDiscovery (Premium) case, any content that was deemed as partially indexed is reprocessed to make it fully searchable."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: "When a custodian is added to an eDiscovery (Premium) case, any content that was deemed as partially indexed is reprocessed to make it fully searchable."
 ---
 
 # Advanced indexing of custodian data
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 When a custodian is added to an eDiscovery (Premium) case, any content that was deemed as partially indexed or had indexing errors is reindexed. This reindexing process is called *Advanced indexing*. There are many reasons that content is partially indexed or has indexing errors. This includes image files or the presence of images in a file, unsupported file types, or file sized indexing limits. For SharePoint files, Advanced indexing only runs on items are marked as partially indexed or that have indexing errors. In Exchange, email messages that have image attachments are not marked as partially indexed or with indexing errors. This means that those files will not be reindexed by the Advanced indexing process.
 
@@ -33,6 +33,8 @@ To learn more about processing support and partially indexed items, see:
 - [File formats indexed by Exchange Search](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
 - [Default crawled file name extensions and parsed file types in SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Viewing Advanced indexing results
 

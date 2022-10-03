@@ -1,34 +1,34 @@
 ---
 title: "Use Content search for targeted collections"
+description: "Use Content search in the Microsoft Purview compliance portal to perform a targeted collection, which searches for items in a specific mailbox or site folder."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- content-search
 ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: "Use Content search in the Microsoft Purview compliance portal to perform a targeted collection, which searches for items in a specific mailbox or site folder."
 ---
 
 # Use Content search for targeted collections
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The Content search tool in the Microsoft Purview compliance portal doesn't provide a direct way in the UI to search specific folders in Exchange mailboxes or SharePoint and OneDrive for Business sites. However, it's possible to search specific folders (called a *targeted collection*) by specifying the folder ID property for email or path (DocumentLink) property for sites in the actual search query syntax. Using Content Search to perform a targeted collection is useful when you're confident that items responsive to a case or privileged items are located in a specific mailbox or site folder. You can use the script in this article to obtain the folder ID for mailbox folders or the path (DocumentLink) for folders on a SharePoint and OneDrive for Business site. Then you can use the folder ID or path in a search query to return items located in the folder.
 
 > [!NOTE]
 > To return content located in a folder in a SharePoint or OneDrive for Business site, the script in this topic uses the DocumentLink managed property instead of the Path property. The DocumentLink property is more robust than the Path property because it will return all content in a folder, whereas the Path property won't return some media files.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you run a targeted collection
 

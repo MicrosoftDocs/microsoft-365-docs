@@ -7,14 +7,15 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 ms.assetid: 
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn how to use the Mail flow map in the Mail flow dashboard in the Security & Compliance Center to visualize and track how mail flows to and from their organization over connectors and without using connectors.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Mail flow map in the Security & Compliance Center

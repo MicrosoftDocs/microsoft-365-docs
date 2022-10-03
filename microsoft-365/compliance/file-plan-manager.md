@@ -10,7 +10,9 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: M365-security-compliance
+ms.collection: 
+- purview-compliance
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
@@ -22,8 +24,6 @@ description: File plan provides advanced management capabilities for retention l
 # Use file plan to create and manage retention labels
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Although you can create and manage retention labels from **Data lifecycle management** in the Microsoft Purview compliance portal, file plan from **Records management** has additional management capabilities:
 
@@ -38,6 +38,8 @@ Although you can create and manage retention labels from **Data lifecycle manage
 File plan can be used for all retention labels, even if they don't mark content as a record.
 
 For information about what retention labels are and how to use them, see [Learn about retention policies and retention labels](retention.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Accessing file plan
 
@@ -203,7 +205,7 @@ Use the following information to help you fill out the downloaded template to im
 |Notes|String|No|Use this property to add a description about the retention label for users. This description appears when users hover over the label in apps like Outlook, SharePoint, and OneDrive. If you leave this property blank, a default description is displayed, which explains the label's retention settings. |
 |IsRecordLabel|String|No, unless **Regulatory** is **TRUE**|This property specifies whether the label marks the content as a record. Valid values are: </br>**TRUE**: The label marks the item as a record and as a result, the item can't be deleted. </br>**FALSE**: The label doesn't mark the content as a record. This is the default value. </br> </br> Group dependencies: When this property is specified, RetentionAction, RetentionDuration, and RetentionType must also be specified.|
 |RetentionAction|String|No, unless **RetentionDuration**, **RetentionType**, or **ReviewerEmail** are specified|This property specifies what action to take after the value specified by the RetentionDuration property (if specified) expires. Valid values are: </br>**Delete**: Items older than the value specified by the RetentionDuration property are deleted.</br>**Keep**: Retain items for the duration specified by the RetentionDuration property and then do nothing when the duration period expires. </br>**KeepAndDelete**: Retain items for the duration specified by the RetentionDuration property and then delete them when the duration period expires. </br> </br> Group dependencies: When this property is specified, RetentionDuration and RetentionType must also be specified. |
-|RetentionDuration|String|No, unless **RetentionAction** or **RetentionType** are specified|This property specifies the number of days to retain the content. Valid values are: </br>**Unlimited**: Items will be retained indefinitely. </br>***n**: A positive integer in days; for example, **365**. The maximum number supported is 24,855, which is 68 years. If you need longer than this maximum, use Unlimited instead.</br> </br> Group dependencies: When this property is specified, RetentionAction and RetentionType must also be specified.
+|RetentionDuration|String|No, unless **RetentionAction** or **RetentionType** are specified|This property specifies the number of days to retain the content. Valid values are: </br>**Unlimited**: Items will be retained indefinitely. </br>***n**: A positive integer in days; for example, **365**. The maximum number supported is 36,525, which is 100 years. If you need longer than this maximum, use Unlimited instead.</br> </br> Group dependencies: When this property is specified, RetentionAction and RetentionType must also be specified.
 |RetentionType|String|No, unless **RetentionAction** or **RetentionDuration** are specified|This property specifies whether the retention duration (if specified) is calculated from the content creation date, event date, when labeled date, or last modified date. Valid values are: </br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** </br> </br> Group dependencies: When this property is specified, RetentionAction and RetentionDuraction must also be specified.|
 |ReviewerEmail|SmtpAddress|No|When this property is specified, a disposition review will be triggered when the retention duration expires. This property specifies the email address of a reviewer in your tenant for the **KeepAndDelete** retention action. </br> </br> You can include the email address of individual users, distribution groups, or security groups in your tenant. Specify multiple email addresses by separating them with semicolons. </br> </br> Group dependencies: When this property is specified, **RetentionAction** (must be **KeepAndDelete**), **RetentionDuration**, and **RetentionType** must also be specified.|
 |ReferenceId|String|No|This property specifies the value that's displayed in the **Reference Id** file plan descriptor, which you can use as a unique value to your organization.| 

@@ -4,7 +4,8 @@ description: Learn how to configure Microsoft 365 Defender to stream Advanced Hu
 keywords: raw data export, streaming API, API, Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,10 +14,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
 ---
 
 # Configure Microsoft 365 Defender to stream Advanced Hunting events to your Storage account
@@ -34,6 +36,14 @@ ms.technology: mde
 1. Create a [Storage account](/azure/storage/common/storage-account-overview) in your tenant.
 
 2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to Microsoft.Insights**.
+
+### Add contributor permissions
+
+Once the Storage account is created you will need to:
+
+1. Define the user who will be logging into Microsoft 365 Defender as Contributor.
+
+    Go to **Storage Account > Access control (IAM) > Add** and verify under **Role assignments**.
 
 ## Enable raw data streaming
 
@@ -94,6 +104,11 @@ In order to get the data types for our events properties do the following:
 - Here is an example for Device Info event:
 
   :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="An example device info query" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
+
+## Monitoring created resources
+
+You can monitor the resources created by the streaming API using **Azure Monitor**. 
+For more information, see [Monitor destinations - Azure Monitor | Microsoft Docs](/azure/azure-monitor/logs/logs-data-export?tabs=portal#monitor-destinations).
 
 ## Related topics
 

@@ -10,7 +10,8 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 ms.localizationpriority: high
 search.appverid:
@@ -25,8 +26,6 @@ description: "Learn how to use PowerShell to create and publish retention labels
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 After you've decided to use [retention labels](retention.md) to help you keep or delete documents and emails in Microsoft 365, you might have realized that you have many and possibly hundreds of retention labels to create and publish. The recommended method to create retention labels at scale is by using [file plan](file-plan-manager.md) from the Microsoft Purview compliance portal. However, you can also use [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
 
 Use the information, template files and examples, and script in this article to help you bulk-create retention labels and publish them in retention label policies. Then, the retention labels can be [applied by administrators and users](create-apply-retention-labels.md#how-to-apply-published-retention-labels).
@@ -38,6 +37,8 @@ Overview:
 1. In Excel, create a list of your retention labels and a list of their retention label policies.
 
 2. Use PowerShell to create the retention labels and retention label policies in those lists.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Disclaimer
 

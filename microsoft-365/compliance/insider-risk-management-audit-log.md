@@ -11,20 +11,20 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ---
 
 # Insider risk management audit log
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The insider risk management audit log enables you to stay informed on the actions that were taken on insider risk management features. This log allows independent review of the actions taken by users assigned to one or more insider risk management role groups. The insider risk management audit log is automatically enabled in your organization and cannot be disabled.
 
 ![Insider risk management audit log.](../media/insider-risk-audit-log.png)
 
-The audit log is automatically and immediately updated whenever monitored activities occur and the log retains information about the activity for 180 days (about six months). After 180 days, the data for the activity is permanently deleted from the log.
+The audit log is automatically and immediately updated whenever detected activities occur and the log retains information about the activity for 180 days (about six months). After 180 days, the data for the activity is permanently deleted from the log.
 
-Areas included in activity monitoring include:
+Areas included in activity detection include:
 
 - Policies
 - Cases
@@ -38,9 +38,11 @@ To view and export data from the audit log, users must be assigned to the *Insid
 > [!NOTE]
 > The insider risk management audit log isn't associated with the Microsoft 365 audit log, they are independent auditing systems and capture information on separate activities. Disabling Microsoft 365 auditing doesn't impact activity auditing within insider risk management.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## View activity in the insider risk audit log
 
-To view feature activity monitored for insider risk management, navigate to, and select the **Insider risk audit log** link in the top-right area of any insider risk management tab. By default, you'll see the following information displayed for insider risk management activities:
+To view feature activity detected for insider risk management, navigate to, and select the **Insider risk audit log** link in the top-right area of any insider risk management tab. By default, you'll see the following information displayed for insider risk management activities:
 
 - **Activity:** A description of the activity taken within the insider risk management solution by a user.
 - **Category:** The area or item where the activity was performed. For example, you'll see *Policies* as the category when policy change activities were performed.

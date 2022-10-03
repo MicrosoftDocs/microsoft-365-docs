@@ -1,23 +1,26 @@
 ---
-title: Onboard Windows devices using Mobile Device Management tools
-description: Use Mobile Device Management tools to deploy the configuration package on devices so that they are onboarded to the Defender for Endpoint service.
+title: Onboard Windows devices to Defender for Endpoint using Intune 
+description: Use Microsoft Intune to deploy the configuration package on devices so that they are onboarded to the Defender for Endpoint service.
 keywords: onboard devices using mdm, device management, onboard Microsoft Defender for Endpoint devices, mdm
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
-# Onboard Windows devices using Mobile Device Management tools
+# Onboard Windows devices to Defender for Endpoint using Intune 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,12 +33,11 @@ ms.technology: mde
 
 You can use mobile device management (MDM) solutions to configure Windows 10 devices. Defender for Endpoint supports MDMs by providing OMA-URIs to create policies to manage devices.
 
-
 For more information on using Defender for Endpoint CSP see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
 ## Before you begin
 
-If you're using Microsoft Intune, you must have the device MDM Enrolled. Otherwise, settings won't be applied successfully.
+Devices must be enrolled with Intune as your Mobile Device Management (MDM) solution.
 
 For more information on enabling MDM with Microsoft Intune, see [Device enrollment (Microsoft Intune)](/mem/intune/enrollment/device-enrollment).
 
@@ -52,15 +54,14 @@ For more information on using Defender for Endpoint CSP see, [WindowsAdvancedThr
 >
 > - The **Health Status for onboarded devices** policy uses read-only properties and can't be remediated.
 > - Configuration of diagnostic data reporting frequency is only available for devices on Windows 10, version 1703.
+> - Onboarding to Defender for Endpoint will onboard the device to [Data Loss Prevention (DLP)](../../compliance/endpoint-dlp-learn-about.md), which is also a part of Microsoft 365 compliance.
 
-
-Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) or [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender for Endpoint.
 
 ## Run a detection test to verify onboarding
 After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
 
 
-## Offboard and monitor devices using Mobile Device Management tools
+## Offboard devices using Mobile Device Management tools
 
 For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you'll be notified of the packages expiry date and it will also be included in the package name.
 

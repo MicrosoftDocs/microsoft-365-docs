@@ -1,9 +1,10 @@
 ---
 title: "Set up a connector to archive Instant Bloomberg data"
+description: "Learn how administrators can set up and use a data connector to import and archive data from the Instant Bloomberg chat tool into Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 04/06/2022
 audience: Admin
@@ -12,18 +13,19 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-ms.custom: seo-marvel-apr2020
-description: "Learn how administrators can set up and use a data connector to import and archive data from the Instant Bloomberg chat tool into Microsoft 365."
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ---
 
 # Set up a connector to archive Instant Bloomberg data
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Use a native connector in the Microsoft Purview compliance portal to import and archive financial services chat data from the [Instant Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) collaboration tool. After you set up and configure a connector, it connects to your organization's Bloomberg secure FTP site (SFTP) once every day, converts the content of chat messages to an email message format, and then imports those items to mailboxes in Microsoft 365.
 
 After Instant Bloomberg data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, Communication compliance, and Microsoft 365 retention policies to Instant Bloomberg data. For example, you can search Instant Bloomberg chat messages using Content Search or associate the mailbox that contains the Instant Bloomberg data with a custodian in a Microsoft Purview eDiscovery (Premium) case. Using an Instant Bloomberg connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Overview of archiving Instant Bloomberg data
 

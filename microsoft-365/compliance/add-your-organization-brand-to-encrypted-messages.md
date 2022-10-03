@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: 7a29260d-2959-42aa-8916-feceff6ee51d
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
@@ -26,8 +26,6 @@ description: Learn how Office 365 global administrators can apply your organizat
 ---
 
 # Add your organization's brand to your Microsoft 365 for business Message Encryption encrypted messages
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 You can apply your company branding to customize the look of your organization's email messages and the encryption portal. You'll need to apply global administrator permissions to your work or school account before you can get started. Once you have these permissions, use the Get-OMEConfiguration and Set-OMEConfiguration cmdlets in Exchange Online PowerShell to customize these parts of encrypted email messages:
 
@@ -49,6 +47,8 @@ If you'd like more control, use Microsoft Purview Advanced Message Encryption to
 - Whether you want emails sent to external recipients to expire after a specified number of days.
 
 Once you've created the templates, you can apply them to encrypted emails by using Exchange mail flow rules. If you have Microsoft Purview Advanced Message Encryption, you can revoke any email that you've branded by using these templates.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Work with OME branding templates
 

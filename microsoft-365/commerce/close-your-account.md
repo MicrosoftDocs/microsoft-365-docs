@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
@@ -23,7 +24,7 @@ description: "When you close your account with Microsoft all information related
 ms.date: 04/02/2021
 ---
 
-# Close your account
+# Close your Microsoft account
 
 When you close your account with Microsoft, all information related to your account is deleted. This information includes subscriptions, licenses, payment methods, users, and user data.
 

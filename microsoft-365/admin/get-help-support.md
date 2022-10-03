@@ -7,12 +7,15 @@ author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection: 
+- scotvorg
+- highpri
 - Adm_O365
 - Adm_TOC
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
@@ -28,7 +31,11 @@ description: "Learn how to get online or phone support for your Microsoft 365 fo
 
 ::: moniker range="o365-worldwide"
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 ## Watch: Get help or support
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197598).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 

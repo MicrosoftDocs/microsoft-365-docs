@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- scotvorg 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -22,7 +23,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "The method you use to unassign product licenses depends on whether you unassign licenses from specific users or from a specific product."
-ms.date: 04/22/2022
+ms.date: 07/12/2022
 ---
 
 # Unassign Microsoft 365 licenses from users
@@ -30,9 +31,9 @@ ms.date: 04/22/2022
 You can unassign licenses from users on either the **Active users** page, or on the **Licenses** page. The method you use depends on whether you want to unassign product licenses from specific users or unassign users licenses from a specific product.
 
 > [!NOTE]
-> 
+>
 > - As an admin, you can't assign or unassign licenses for a self-service purchase subscription bought by a user in your organization. You can [take over a self-service purchase subscription](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription), and then assign or unassign licenses.
-> 
+>
 > - For some subscriptions, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, turn off recurring billing to cancel the subscription at the end of its term.
 
 ## Before you begin
@@ -43,7 +44,9 @@ You can unassign licenses from users on either the **Active users** page, or on 
 
 ## Use the Licenses page to unassign licenses
 
-When you use the **Licenses** page to unassign licenses, you unassign licenses for a specific product for up to 20 users.
+The **Licenses** page lets you assign or unassign licenses for up to 20 users at a time. The page shows the products you own, the number of available licenses for each product, and the number of assigned licenses out of the total licenses available.
+
+The **Licenses** page shows an aggregate total of licenses for all subscriptions for the same product name. For example, you might have one subscription for Microsoft 365 Business Premium that has 5 licenses, and another subscription that has 8 licenses for the same product. The **Licenses** page shows that you have a total of 13 licenses for Microsoft 365 Business Premium across all your subscriptions. This is different from what you see on the **Your products** page, which displays a row for each subscription you own, even if they are for the same product.
 
 ::: moniker range="o365-worldwide"
 
@@ -57,9 +60,9 @@ When you use the **Licenses** page to unassign licenses, you unassign licenses f
 
 ::: moniker-end
 
-2. Select the product for which you want to unassign licenses.
+2. Select a product.
 
-3. Select the users for which you want to unassign licenses.
+3. Select the check boxes of the users for whom you want to unassign licenses.
 
 4. Select **Unassign licenses**.
 
@@ -122,7 +125,7 @@ When you use the **Active users** page to unassign licenses, you unassign produc
 
 ## Next steps
 
-If you’re not going to [reassign the unused licenses to other users](../../managed-desktop/get-started/assign-licenses.md), consider [removing the licenses from your subscription](../../commerce/licenses/buy-licenses.md) so that you’re not paying for more licenses than you need.
+If you’re not going to [reassign the unused licenses to other users](assign-licenses-to-users.md), consider [removing the licenses from your subscription](../../commerce/licenses/buy-licenses.md) so that you’re not paying for more licenses than you need.
 
 ## Related content
 

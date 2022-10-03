@@ -11,7 +11,8 @@ ms.service: O365-seccomp
 ms.date: 
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -21,18 +22,18 @@ ms.custom: seo-marvel-apr2020
 
 # Create notifications for exact data match activities
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 When you [create custom sensitive information types with exact data match (EDM)](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types), there are a number of activities that are created in the [audit log](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log). You can use the [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) PowerShell cmdlet to create notifications that let you know when these activities occur:
 
-- CreateSchema
-- EditSchema
-- RemoveSchema
-- UploadDataFailed
-- UploadDataCompleted
+- `CreateSchema`
+- `EditSchema`
+- `RemoveSchema`
+- `UploadDataFailed`
+- `UploadDataCompleted`
 
 > [!NOTE]
  The ability to create notifications for EDM activities is available for the World Wide and GCC clouds only.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Pre-requisites
 
@@ -57,13 +58,13 @@ To learn more about DLP licensing, see [Microsoft 365 licensing guidance for sec
 
 1. Connect to the [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-2. Run the `New-ProtectionAlert` cmdlet using the activity that you want to create the notification for.  For example, if you want to be notified when the **UploadDataCompleted** action occurred, run:
+2. Run the `New-ProtectionAlert` cmdlet using the activity that you want to create the notification for.  For example, if you want to be notified when the `UploadDataCompleted` action occurred, run:
 
     ```powershell
     New-ProtectionAlert -Name "EdmUploadCompleteAlertPolicy" -Category Others -NotifyUser <address to send notification to> -ThreatType Activity -Operation UploadDataCompleted -Description "Custom alert policy to track when EDM upload Completed" -AggregationType None
     ```
     
-    For the **UploadDataFailed** you can run:
+    For the `UploadDataFailed` you can run:
     
     ```powershell
     New-ProtectionAlert -Name "EdmUploadFailAlertPolicy" -Category Others -NotifyUser <SMTP address to send notification to> -ThreatType Activity -Operation UploadDataFailed -Description "Custom alert policy to track when EDM upload Failed" -AggregationType None -Severity High

@@ -12,15 +12,15 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
+- highpri
 ---
 
 # Insider risk management
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Increasingly, employees have more access to create, manage, and share data across a broad spectrum of platforms and services. In most cases, organizations have limited resources and tools to identify and mitigate organization-wide risks while also meeting compliance requirements and employee privacy standards. These risks may include data theft by departing employees and data leaks of information outside your organization by accidental oversharing or malicious intent.
 
@@ -36,6 +36,8 @@ Watch the videos below to learn how insider risk management can help your organi
 
 **Insider risk management workflow**:
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Configure insider risk management
 

@@ -14,10 +14,12 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority:  null
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 - SPO_Content
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 ms.custom:
@@ -29,8 +31,6 @@ description: data loss prevention reference material
 ---
 
 # Data loss prevention reference
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!IMPORTANT]
 > This is reference topic is no longer the main resource for Microsoft Purview Data Loss Prevention (DLP) information. The DLP content set is being updated and restructured. The topics covered in this article will be moving to new, updated articles. For more information about DLP, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
@@ -67,6 +67,8 @@ With a DLP policy, you can:
     To view alerts and metadata related to your DLP policies you can use the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md). You can also view policy match reports to assess how your organization is complying with a DLP policy. If a DLP policy allows users to override a policy tip and report a false positive, you can also view what users have reported
 
 -->
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Create and manage DLP policies
 
 You create and manage DLP policies on the data loss prevention page in the Microsoft Purview compliance portal.

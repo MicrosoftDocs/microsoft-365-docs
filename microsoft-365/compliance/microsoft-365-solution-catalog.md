@@ -1,5 +1,6 @@
 ---
 title: "Microsoft Purview solution catalog"
+description: Learn about the Microsoft Purview solution catalog, including what it contains, how to access it, and your next steps.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,20 +10,21 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-description: Learn about the Microsoft Purview solution catalog, including what it contains, how to access it, and your next steps.
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Microsoft Purview solution catalog
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Are you looking for a way to quickly get started with compliance tasks in Microsoft Purview? Check out the [Microsoft Purview solution catalog](https://compliance.microsoft.com/solutioncatalog) to discover, learn, and quickly get started with risk and compliance solutions.
 
 Risk and compliance solutions in Microsoft Purview are collections of integrated capabilities you can use to help you manage end-to-end compliance scenarios. A solution's capabilities and tools might include a combination of policies, alerts, reports, and more.
 
 Read this article to get acquainted with the solution catalog in the Microsoft Purview compliance portal, [how to access](#how-do-i-access) and your [next steps](#next-steps).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Catalog organization
 

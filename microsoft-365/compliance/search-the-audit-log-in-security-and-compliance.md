@@ -1,23 +1,22 @@
 ---
 title: "Search the audit log in the Microsoft Purview compliance portal"
+description: "Use the Microsoft Purview compliance portal to search the unified audit log to view user and administrator activity in your organization."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- audit
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: "Use the Microsoft Purview compliance portal to search the unified audit log to view user and administrator activity in your organization."
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkMAC
@@ -25,9 +24,9 @@ ms.custom:
 
 # Search the audit log in the compliance portal
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the audit log search tool in Microsoft Purview compliance portal to search the unified audit log to view user and administrator activity in your organization. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Users in your organization can use the audit log search tool to search for, view, and export (to a CSV file) the audit records for these operations.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Microsoft 365 services that support auditing
 
@@ -193,7 +192,7 @@ Here's the process for searching the audit log in Microsoft 365.
 
 - Click **Clear** to clear the current search criteria. The date range returns to the default of the last seven days. You can also click **Clear all to show results for all activities** to cancel all selected activities.
 
-- If 50,000 results are found, you can probably assume that there are more than 50,000 events that met the search criteria. You can either refine the search criteria and rerun the search to return fewer results, or you can export all of the search results by selecting **Export results** \> **Download all results**.
+- If 50,000 results are found, you can probably assume that there are more than 50,000 events that met the search criteria. You can either refine the search criteria and rerun the search to return fewer results, or you can export the 50,000 search results by selecting **Export results** \> **Download all results**.
 
 ### Step 2: View the search results
 
@@ -889,11 +888,12 @@ The following table lists the quarantine activities that you can search for in t
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Deleted quarantine message|QuarantineDelete|A user deleted an email message that was deemed to be harmful.|
-|Exported quarantine message|QuarantineExport|A user exported an email message that was deemed to be harmful.|
-|Previewed quarantine message|QuarantinePreview|A user previewed an email message that was deemed to be harmful.|
-|Released quarantine message|QuarantineRelease|A user released an email message from quarantine that was deemed to be harmful.|
-|Viewed quarantine message's header|QuarantineViewHeader|A user viewed the header an email message that was deemed to be harmful.|
+|Deleted quarantine message|QuarantineDelete|An Admin or user deleted an email message that was deemed to be harmful.|
+|Exported quarantine message|QuarantineExport|An Admin or  user exported an email message that was deemed to be harmful.|
+|Previewed quarantine message|QuarantinePreview|An Admin or user previewed an email message that was deemed to be harmful.|
+|Released quarantine message|QuarantineRelease|An Admin or  user released an email message from quarantine that was deemed to be harmful.|
+|Viewed quarantine message's header|QuarantineViewHeader|An Admin or user viewed the header an email message that was deemed to be harmful.|
+|Release request quarantine message|QuarantineReleaseRequest|A user requested the release of an email message that was deemed to be harmful.|
 
 ### Microsoft Forms activities
 

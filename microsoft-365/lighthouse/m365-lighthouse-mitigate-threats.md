@@ -7,9 +7,10 @@ manager: scotv
 ms-reviewer: algreer
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -35,11 +36,11 @@ Microsoft 365 Lighthouse lets partners investigate and mitigate threats across a
 
 To investigate a specific threat:
 
-1. In the left navigation pane in Lighthouse, select **Threat management**.
+1. In the left navigation pane in Lighthouse, select **Devices** > **Threat management**.
 
 2. Select the **Threats** tab.
 
-3. From the threat list, select the threat you want to investigate.
+3. From the list of threats, select the threat you want to investigate.
 
 The threat details pane provides the following information:
 
@@ -57,7 +58,7 @@ The threat details pane provides the following information:
 
 To investigate threats on a specific device:
 
-1. In the left navigation pane in Lighthouse, select **Threat management**.
+1. In the left navigation pane in Lighthouse, select **Devices** > **Threat management**.
 
 2. Select the **Antivirus protection** tab.
 
@@ -71,11 +72,11 @@ Lighthouse displays all threats found on the device. To see details, select the 
 
 A quick scan searches common locations where malware could be, such as registry keys and know startup folders. A full scan searches the entire device. In most cases, a quick scan is sufficient and is the recommended option for scheduled scans.
 
-1. In the left navigation pane in Lighthouse, select **Threat management**.
+1. In the left navigation pane in Lighthouse, select **Devices** > **Threat management**.
 
 2. Select the **Antivirus protection** tab.
 
-3. From the device list, select a device.
+3. From the list of devices, select a device.
 
 4. In the device details pane, select **Run full scan** or **Run quick scan**.
 
@@ -85,27 +86,27 @@ You can also scan multiple devices by selecting the checkbox next to each device
 
 To update Microsoft Defender Antivirus on a single device:
 
-1. In the left navigation pane in Lighthouse, select **Threat management**.
+1. In the left navigation pane in Lighthouse, select **Devices** > **Threat management**.
 
 2. Select the **Antivirus protection** tab.
 
-3. From the device list, select a device.
+3. From the list of devices, select a device.
 
 4. In the device details pane, select **Update antivirus**.
 
 You can get updates for multiple devices by selecting the checkbox next to each device name in the list and then select **Update antivirus**.
 
-If you need to create a new policy, select **Update policy** from the device details pane. Lighthouse will redirect you to Microsoft Endpoint Manager (MEM). For more information about creating a policy, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
+If you need to create a new policy, select **Update policy** in the device details pane. Lighthouse will redirect you to Microsoft Endpoint Manager (MEM). For more information about creating a policy, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
 ## Check pending antivirus actions on a device
 
 When consecutive actions are applied to a device, you'll receive an action pending message. To check which actions are pending on a device:
 
-1. In the left navigation pane in Lighthouse, select **Threat management**.
+1. In the left navigation pane in Lighthouse, select **Devices** > **Threat management**.
 
 2. Select the **Antivirus protection** tab.
 
-3. From the device list, select a device.
+3. From the list of devices, select a device.
 
 4. In the device details pane, select the **Device action statuses** tab to view pending actions.
 
@@ -113,11 +114,11 @@ When consecutive actions are applied to a device, you'll receive an action pendi
 
 Some updates may require a device to restart to install correctly.
 
-1. In the left navigation pane in Lighthouse, select **Threat management**.
+1. In the left navigation pane in Lighthouse, select **Devices** > **Threat management**.
 
 2. Select the **Antivirus protection** tab.
 
-3. From the device list, select a device.
+3. From the list of devices, select a device.
 
 4. In the device details pane, select **Reboot device**.
 
