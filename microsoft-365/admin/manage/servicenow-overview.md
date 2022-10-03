@@ -41,7 +41,9 @@ These are the key features you'll get with the Microsoft 365 support integration
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-description-field-2.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-description-field-2.png" alt-text="Recommended solutions description field.":::
 
 - Microsoft service request: Escalate issues to Microsoft support agents and receive status updates for your request. With an updated workflow, you can now create a service request by adding your preferred title, description, and contact information similar to what is found in the Microsoft 365 admin portal.
+
 ![SNOW_escalation](https://user-images.githubusercontent.com/93688542/193369021-ac8885b0-c473-49c1-9c49-2ca5211d8304.png)
+
 ![SNOW_escalation2](https://user-images.githubusercontent.com/93688542/193369043-7857645f-8c8e-4bdf-a7f3-ef3fa55e53c1.png)
 
 ## Prerequisites
