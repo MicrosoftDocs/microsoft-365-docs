@@ -42,10 +42,11 @@ New reports typically take up to 10 hours before they're ready for review. When 
 
 ![Insider risk management user activity report.](../media/insider-risk-user-activity-report.png)
 
-The **User activity report** for the selected user contains the **User activity** and **Activity explorer** tabs:
+The **User activity report** for the selected user contains the **User activity**, **Activity explorer**, and **Forensic evidence (preview)** tabs:
 
 - **User activity**: Use this chart view to investigate activities and view potential activities that occur in sequences. This tab is structured to enable quick review of a case, including a historical timeline of all activities, activity details, the current risk score for the user in the case, the sequence of risk events, and filtering controls to help with investigative efforts.
 - **Activity explorer**: The **Activity explorer** tab provides risk investigators with a comprehensive analytic tool that provides detailed information about activities. With the Activity explorer, reviewers can quickly review a timeline of detected risky activity and identify and filter all risk activities associated with alerts. To learn more about using the Activity explorer, see the *Activity explorer* section later in this article.
+- **Forensic evidence (preview)**: The **Forensic evidence (preview)** tab provides access to forensic evidence screen captures associated with activities for the user. Forensic evidence enables customizable screen capturing across devices to help your organization better mitigate, understand, and respond to potential data risks like unauthorized data exfiltration of sensitive data. To learn more about using forensic evidence, see [Learn about insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence).
 
 ## Alert dashboard
 

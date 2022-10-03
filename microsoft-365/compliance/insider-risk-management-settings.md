@@ -36,6 +36,7 @@ Insider risk management settings apply to all insider risk management policies, 
 - [Microsoft Teams (preview)](#microsoft-teams-preview)
 - [Analytics](#analytics)
 - [Admin notifications](#admin-notifications)
+- [Forensic evidence (preview)](#forensic-evidence-preview)
 
 Before you get started and create insider risk management policies, it's important to understand these settings and choose setting levels best for the compliance needs for your organization.
 
@@ -413,7 +414,7 @@ Complete the following steps to delete a priority user group:
 
 Identifying access to priority physical assets and correlating access activity to user events is an important component of your compliance infrastructure. These physical assets represent priority locations in your organization, such as company buildings, data centers, or server rooms. Insider risk activities may be associated with users working unusual hours, attempting to access these unauthorized sensitive or secure areas, and requests for access to high-level areas without legitimate needs.
 
-With priority physical assets enabled and the [Physical badging data connector](import-physical-badging-data.md) configured, insider risk management integrates signals from your physical control and access systems with other user risk activities. By examining patterns of behavior across physical access systems and correlating these activities with other insider risk events, insider risk management can help compliance investigators and analysts make more informed response decisions for alerts. Access to priority physical assets are scored and identified in insights differently from access to non-priority assets.
+With priority physical assets enabled and the [Physical badging data connector](import-physical-badging-data.md) configured, insider risk management integrates signals from your physical control and access systems with other user risk activities. By examining patterns of behavior across physical access systems and correlating these activities with other insider risk events, insider risk management can help compliance investigators and analysts make more informed response decisions for alerts. Access to priority physical assets is scored and identified in insights differently from access to non-priority assets.
 
 For example, your organization has a badging system for users that governs and approves physical access to normal working and sensitive project areas. You have several users working on a sensitive project and these users will return to other areas of your organization when the project is completed. As the sensitive project nears completion, you want to make sure that the project work remains confidential and that access to the project areas is tightly controlled.
 
@@ -664,3 +665,32 @@ If you prefer to disable admin and analytics notifications, complete the followi
     - **Send an email notification when Analytics is turned off**
 
 4. Select **Save** to configure and exit.
+
+## Forensic evidence (preview)
+
+Forensic evidence enables customizable screen capturing across devices to help your organization better mitigate, understand, and respond to potential data risks like unauthorized data exfiltration of sensitive data.
+As part of configuring forensic evidence  in your organization, you'll need to configure screen capturing settings that apply to your entire organization. You'll also need to request and approve or reject specific users that will be eligible for forensic evidence screen captures.
+
+### General settings
+
+The General settings page is where you'll enable or disable screen capturing, determine the user activity to capture, and define capturing settings and storage limits.
+
+- **Allow forensic capturing in your org**: Select to enable capturing support in your forensic evidence policies. If this is turned off later, this will disable forensic evidence capturing in your organization and will remove all previously added users and groups for forensic evidence policies.
+- **User activity to capture**: You can select one of the following options:
+    - **Only activity detected by policies**: This option only captures activities detected by policies that users are included in. These activities are defined by the indicators selected in forensic evidence policies. Captures for this option will be available for review on the **Forensic evidence (preview)** tab on the **Alerts** and **Cases** dashboards.
+    - **All user activity**: This option captures any activity performed by users, regardless of whether they're included in a forensic evidence policy. This includes mouse movement, keystrokes, and all activities defined by insider risk indicators. Capturing for this option will be available for review only on the Forensic evidence (preview) tab on the User activity reports (preview) dashboard.
+- **Capturing time**: Select when to start and stop capturing. Available values are *10 seconds*, *30 seconds*, *1 minute*, *3 minutes*, or *5 minutes* before the activity is detected by a policy and after the activity ends.
+- **Upload bandwidth limit**: This setting defines the amount of data to upload into your data storage account per user, per day. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.
+- **Offline capturing**: This option enables offline capturing if needed. When enabled, users' offline activity is captured and uploaded to your data storage account the next time they are online.
+- **Offline capturing cache limit**: This setting defines the maximum cache size to store on users' devices when offline capturing is enabled. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.
+
+### User management
+
+The **User management settings** page is where you'll request, approve, and view users subject to forensic evidence capturing.
+
+- **Approved users & groups tab**: Displays the approver users and groups for forensic evidence capturing. To remove approval for a user or group, select the user or group and select **Remove**. To export the list of approved users and groups to a .csv file, select **Download list**.
+- **Manage requests tab**: Allows users assigned to the *Insider Risk Management* or *Insider Risk Management Admins* role groups to request that forensic capturing be turned on for specific users. To create a request, select **Create request** and complete the required fields. Users assigned to the *Insider Risk Management Approvers* role group can approve or reject pending requests.
+
+### Device onboarding
+
+The **Device onboarding settings** page is where you'll download the forensic evidence agent to install on user devices. User devices eligible for capturing must be onboarded to the Microsoft Purview Compliance portal and must have the forensic evidence agent installed. Select **Download installer package (x64 version)** to download the installation package.

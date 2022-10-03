@@ -195,11 +195,11 @@ Employment stresses events can impact user behavior in several ways that relate 
 - [Data leaks by disgruntled users (preview)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Security policy violations by disgruntled users (preview)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
-### Risky browser usage that could result in a security incident (preview)
+### Visual context for risky user activities with forensic evidence (preview)
 
-Most organizations provide users with rules and guidelines that clarify how an organization's devices and internet access should be used. These policies help protect both the organization and users from security and regulatory risks. To help identity these types of risky actions, the following insider risk management policy template can help detect and enable risk scoring for web browsing behaviors that might result in a data security incident, such as visiting sites that provide malware or hacking tools.
+Having visual context is crucial for security teams during forensic investigations to get better insights into potentially risky user activities. This may include screen-by-screen capturing of these activities to help evaluate if they are indeed risky or taken out of context and not potentially risky. For activities that are determined to be risky, having screen captures can help investigators and your organization better mitigate, understand, and respond to these activities. To help with this scenario, the following insider risk management policy templates enable screen-by-screen capturing for online and offline devices in your organization:
 
-- [General risky browser usage (preview)](insider-risk-management-policies.md#general-risky-browser-usage-preview)
+- Forensic evidence policy template (preview)
 
 ## Ready to get started?
 

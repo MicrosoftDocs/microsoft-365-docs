@@ -260,6 +260,14 @@
           href: insider-risk-management-activities.md
         - name: Take action on insider risk cases
           href: insider-risk-management-cases.md
+        - name: Screen recording with forensic evidence
+          items:
+          - name: Learn about forensic evidence
+            href: insider-risk-management-forensic-evidence.md
+          - name: Get started with forensic evidence
+            href: insider-risk-management-forensic-evidence-configure.md
+          - name: Manage forensic evidence
+            href: insider-risk-management-forensic-evidence-manage.md
         - name: Learn about and configure browser signal detection
           href: insider-risk-management-browser-support.md
         - name: Review activities with the insider risk audit log

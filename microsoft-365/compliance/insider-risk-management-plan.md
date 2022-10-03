@@ -56,15 +56,19 @@ Depending on how you wish to manage insider risk management policies and alerts,
 
 You'll choose from these role group options and solution actions when working with insider risk management:
 
-|**Actions**|**Insider Risk Management**|**Insider Risk Management Admin**|**Insider Risk Management Analysts**|**Insider Risk Management Investigators**|**Insider Risk Management Auditors**|
-|:----------|:--------------------------|:--------------------------------|:-----------------------------------|:----------------------------------------|:-----------------------------------|
-| Configure policies and settings | Yes | Yes | No | No | No |
-| Access analytics insights | Yes | Yes | Yes | No | No |
-| Access & investigate alerts | Yes | No | Yes | Yes | No |
-| Access & investigate cases | Yes | No | Yes | Yes | No |
-| Access & view the Content Explorer | Yes | No | No | Yes | No |
-| Configure notice templates | Yes | No | Yes | Yes | No |
-| View & export audit logs | Yes | No | No | No | Yes |
+|**Actions**|**Insider Risk Management**|**Insider Risk Management Admin**|**Insider Risk Management Analysts**|**Insider Risk Management Investigators**|**Insider Risk Management Auditors**|**Insider Risk Management Approvers**|
+|---|---|---|---|---|---|---|
+|Configure policies and settings|Yes|Yes|No|No|No|No|
+|Access analytics insights|Yes|Yes|Yes|No|No|No|
+|Access & investigate alerts|Yes|No|Yes|Yes|No|No|
+|Access & investigate cases|Yes|No|Yes|Yes|No|No|
+|Access & view the Content Explorer|Yes|No|No|Yes|No|No|
+|Configure notice templates|Yes|No|Yes|Yes|No|No|
+|View & export audit logs|Yes|No|No|No|Yes|No|
+|Access & view forensic evidence captures|Yes|No|No|Yes|No|No|
+|Create forensic evidence capturing request|Yes|Yes|No|No|No|No|
+|Approve forensic evidence capturing requests|Yes|No|No|No|No|Yes|
+|View device health report|Yes|Yes|No|No|No|No|
 
 >[!IMPORTANT]
 >Make sure you always have at least one user in the *Insider Risk Management* or *Insider Risk Management Admin* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.
@@ -93,6 +97,7 @@ If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try i
 - When using **Data leaks** templates, you must configure at least one Microsoft Purview Data Loss Prevention (DLP) policy to define sensitive information in your organization and to receive insider risk alerts for High Severity DLP policy alerts. See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) article for step-by-step guidance to configure DLP policies for your organization.
 - When using **Security policy violation** templates, you must enable Microsoft Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. For step-by-step guidance to enable Defender for Endpoint integration with insider risk management, see [Configure advanced features in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features).
 - When using **Disgruntled user** templates, you must configure a Microsoft 365 HR connector to periodically import performance or demotion status information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization.
+- When using the **Forensic evidence policy** template, you must enable configure forensic evidence for your organization. Additionally, you must explicitly request and receive approval for screen capturing for users. See the [Get started with insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) article for step-by-step guidance.
 
 ## Test with a small group of users in a production environment
 
