@@ -14,9 +14,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 description: "Configure device proxy and internet connection settings for Information Protection"
@@ -40,6 +41,8 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 - Manual static proxy configuration:
   - Registry-based configuration
   - WinHTTP configured using netsh command – Suitable only for desktops in a stable topology (for example: a desktop in a corporate network behind the same proxy)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Configure the proxy server manually using a registry-based static proxy
 

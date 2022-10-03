@@ -10,6 +10,9 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: other
 ms.date: 09/15/2022
+ms.collection:
+- m365-security
+- tier1
 ms.localizationpriority: medium
 search.appverid:
 - BCS160

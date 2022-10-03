@@ -12,7 +12,7 @@ ms.date:
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -21,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Create exact data match sensitive information type/rule package
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Applies to
 

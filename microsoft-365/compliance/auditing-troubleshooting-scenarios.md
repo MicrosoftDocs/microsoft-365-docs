@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - audit
 search.appverid:
 - MET150
@@ -33,6 +33,8 @@ This article describes how to use the audit log search tool to help you investig
 - Investigate why there was a successful login by a user outside your organization
 - Search for mailbox activities performed by users with non-E5 licenses
 - Search for mailbox activities performed by delegate users
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Using the audit log search tool
 

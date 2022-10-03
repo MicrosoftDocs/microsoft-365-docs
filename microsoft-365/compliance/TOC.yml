@@ -768,6 +768,8 @@
                 href: sit-defn-japan-my-number-personal.md
               - name: Japan passport number
                 href: sit-defn-japan-passport-number.md
+              - name: Japan physical addresses
+                href: sit-defn-japan-physical-addresses.md
               - name: Japan residence card number
                 href: sit-defn-japan-residence-card-number.md
               - name: Japan resident registration number
@@ -1311,6 +1313,8 @@
           href: file-plan-manager.md
         - name: Start retention when an event occurs
           href: event-driven-retention.md
+        - name: Customization for the end of the retention period
+          href: retention-label-flow.md
         - name: Publish & apply retention labels in apps
           href: create-apply-retention-labels.md
         - name: Automatically apply retention labels to content

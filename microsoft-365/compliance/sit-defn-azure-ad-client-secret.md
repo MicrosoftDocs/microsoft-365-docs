@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -22,6 +23,8 @@ description: "Azure AD client secret sensitive information type entity definitio
 ---
 
 # Azure AD client secret (preview)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 
@@ -64,6 +67,6 @@ The patterns are designed to match actual credentials with reasonable confidence
 ### Keyword_AppSecret:
 
 - secret
-- assword
+- password
 - key
 

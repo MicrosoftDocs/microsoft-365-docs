@@ -13,9 +13,10 @@ ms.localizationpriority: medium
 ms.collection:
 - tier1
 - highpri
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
@@ -25,15 +26,17 @@ description: "Trainable classifiers can recognize various types of content for l
 
 # Learn about trainable classifiers
 
-Classifying and labeling content so it can be protected and handled properly is the starting place for the information protection discipline. Microsoft 365 has three ways to classify content.
+Categorizaing and labeling content so it can be protected and handled properly is the starting place for the information protection discipline. Microsoft Purview has three ways to classify content.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Manually
 
-Manual classification requires human judgment and action. Users and admins apply them to content as they encounter it. You can use either use the pre-existing labels and sensitive information types or use custom created ones.  You can then protect the content and manage its disposition.
+Manual categorizing requires human judgment and action. Users and admins categorize content as they encounter it. You can use either use the pre-existing labels and sensitive information types or use custom created ones.  You can then protect the content and manage its disposition.
 
 ## Automated pattern-matching
 
-This category of classification mechanisms includes finding content by:
+These categorization mechanisms includes finding content by:
 
 - Keywords or metadata values (keyword query language).
 - Using previously identified patterns of sensitive information like social security, credit card, or bank account numbers [(Sensitive information type entity definitions)](sensitive-information-type-entity-definitions.md).
@@ -44,7 +47,7 @@ Sensitivity and retention labels can then be automatically applied to make the c
 
 ## Classifiers
 
-This classification method is well suited to content that isn't easily identified by either the manual or automated pattern-matching methods. This method of classification is more about using a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching). A classifier learns how to identify a type of content by looking at hundreds of examples of the content you're interested in classifying.
+This categorization method is well suited to content that isn't easily identified by either the manual or automated pattern-matching methods. This method of categorization is more about using a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching). A classifier learns how to identify a type of content by looking at hundreds of examples of the content you're interested in indentifying.
 
 > [!NOTE]
 > In Preview - You can view the trainable classifiers in content explorer by expanding **Trainable Classifiers** in the filters panel. The trainable classifiers will automatically display the number of incidents found in SharePoint, Teams, and OneDrive, without requiring any labeling.
@@ -62,7 +65,7 @@ Sensitivity labels can use classifiers as conditions, see [Apply a sensitivity l
 ## Types of classifiers
 
 - **pre-trained classifiers** - Microsoft has created and pre-trained multiple classifiers that you can start using without training them. These classifiers will appear with the status of `Ready to use`.
-- **custom trainable classifiers** - If you have classification needs that extend beyond what the pre-trained classifiers cover, you can create and train your own classifiers.
+- **custom trainable classifiers** - If you have content identification and categorization needs that extend beyond what the pre-trained classifiers cover, you can create and train your own classifiers.
 
 See, [Trainable classifiers definitions](classifier-tc-definitions.md#trainable-classifiers-definitions) for a complete list of all pre-trained classifiers.
 

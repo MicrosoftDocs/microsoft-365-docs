@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: 
 - tier1
-- M365-security-compliance
+- purview-compliance
 ms.localizationpriority: medium
 search.appverid: 
 - MOE150
@@ -34,6 +34,8 @@ In Microsoft Purview, you can create a data loss prevention (DLP) policy in two 
 DLP policies created in these admin centers work side by side - this article explains how.
  
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How DLP in the Compliance portal works with DLP and mail flow rules in the Exchange admin center
 
 After you create a DLP policy in the Compliance portal, the policy is deployed to all of the locations included in the policy. If the policy includes Exchange Online, the policy's synced there and enforced in exactly the same way as a DLP policy created in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. 

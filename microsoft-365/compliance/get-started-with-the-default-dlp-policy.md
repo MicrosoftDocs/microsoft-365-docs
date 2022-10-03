@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection: 
 - tier1
-- M365-security-compliance
+- purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Learn how to use the report to refine your organization's default data loss prevention (DLP) policy.
@@ -30,6 +30,8 @@ You can use this widget to quickly view when and how much sensitive information 
   
 ![Widget named Further protect shared content.](../media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## View the report and refine the default DLP policy
 
 When the widget shows you that users have shared sensitive information with people outside your organization, choose **Refine DLP policy** at the bottom. 
