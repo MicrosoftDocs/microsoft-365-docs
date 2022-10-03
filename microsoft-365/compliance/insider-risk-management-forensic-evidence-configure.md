@@ -56,6 +56,9 @@ To install the Microsoft Purview Client, complete the following steps:
     - **Microsoft Endpoint Manager**: [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) is an integrated solution for managing all of your devices. Microsoft brings together [Configuration Manager](/mem/configmgr/core/understand/introduction) and [Intune](/mem/intune/fundamentals/what-is-intune), without a complex migration, and with simplified licensing.
     - **Third-party device management solutions**: If your organization is using third-party device management solutions, see the documentation for these tools to install the client.
 
+>[!IMPORTANT]
+>Forensic evidence clips are deleted 30 days after they're captured or at the end of the public preview period, whichever is sooner. You can download or transfer forensic evidence clips before they're deleted.
+
 ### Step 3: Configure settings
 
 Forensic evidence has several configuration settings that provide flexibility for the types of security-related user activity captured, capturing parameters, bandwidth limits, and offline capturing options. Forensic evidence capturing enables you to create policies based on your requirements in just a few steps and policy creation requires dual authorization.
