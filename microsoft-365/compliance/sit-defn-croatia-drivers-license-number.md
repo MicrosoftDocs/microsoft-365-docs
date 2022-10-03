@@ -63,7 +63,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ### Keywords_eu_driver's_license_number
 
-`
 - driverlic
 - driverlics
 - driverlicense
@@ -182,7 +181,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - dl no
 - dlno
 - dl number
-`
+
 ### Keywords_croatia_eu_driver's_license_number
 
 - vozačka dozvola
