@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid: 
 - MOE150
@@ -43,6 +43,8 @@ To configure search and analytics settings for a case:
    The case settings page is displayed. These settings are applied to all review sets in a case.
 
    ![Configure analytics and search settings for an eDiscovery (Premium) case.](../media/AeDCaseSettings.png)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Near duplicates and email threading
 

@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid: 
 - MOE150
@@ -28,6 +28,8 @@ Occasionally Microsoft Support engineers require specific information about your
 
 > [!IMPORTANT]
 > The output from the cmdlets and diagnostic information described in this article may include sensitive information about litigation or internal investigations in your organization. Before sending the raw diagnostic information to Microsoft Support, you should review the information and redact any sensitive information (such as names or other information about parties to litigation or investigation) by replacing it with `XXXXXXX`. Using this method will also indicate to the Microsoft Support engineer that information was redacted.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Collect diagnostic information for eDiscovery (Standard)
 

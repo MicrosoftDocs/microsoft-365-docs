@@ -12,8 +12,8 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier1
-- M365-security-compliance
+- tier3
+- purview-compliance
 - data-connectors
 ---
 
@@ -22,6 +22,8 @@ ms.collection:
 Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from Zoom Meetings to user mailboxes in your Microsoft 365 organization. Veritas provides a [Zoom Meetings](https://globanet.com/zoom/) connector that is configured to capture items from the third-party data source (on a regular basis) and import those items to Microsoft 365. The connector converts the content of the meetings (including chats, recorded files, and metadata) from the Zoom Meetings account to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
 After Zoom Meetings data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a Zoom Meetings connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Overview of archiving Zoom Meetings data
 

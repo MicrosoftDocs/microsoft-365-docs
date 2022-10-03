@@ -14,9 +14,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
 - tier1
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MET150
@@ -26,6 +27,8 @@ description: "Set up data loss prevention on-premises scanner"
 # Get started with the data loss prevention on-premises scanner
 
 This article walks you through the prerequisites and configuration for the Microsoft Purview data loss prevention on-premises scanner.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 

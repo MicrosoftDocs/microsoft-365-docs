@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
 - tier1
-- M365-security-compliance 
+- purview-compliance 
 search.appverid:
 - MET150 
 description: Learn how to onboard and offboard macOS devices into Microsoft Purview solutions using Microsoft Intune for MDE customers
@@ -29,6 +29,8 @@ description: Learn how to onboard and offboard macOS devices into Microsoft Purv
 - [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - [Insider risk management](insider-risk-management.md)
 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 

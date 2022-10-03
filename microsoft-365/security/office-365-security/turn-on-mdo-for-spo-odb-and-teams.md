@@ -14,7 +14,7 @@ search.appverid:
   - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - SPO_Content
 description: Admins can learn how to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, including how to set alerts for detected files.
 ms.custom: 

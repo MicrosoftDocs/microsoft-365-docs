@@ -16,7 +16,7 @@ search.appverid:
 ms.collection:
 - highpri 
 - tier1
-- M365-security-compliance
+- purview-compliance
 ---
 
 # eDiscovery (Premium) workflow for content in Microsoft Teams
@@ -36,6 +36,8 @@ There are six categories of Teams content that you can collect and process using
 - **Private channels**. Message posts, replies, and attachments shared in a private Teams channel.
 
 - **Shared channels**. Message posts, replies, and attachments shared in a shared Teams channel.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Where Teams content is stored
 

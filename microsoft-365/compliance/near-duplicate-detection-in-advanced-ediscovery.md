@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery 
 search.appverid: 
 - MOE150
@@ -24,6 +24,8 @@ ms.custom: seo-marvel-mar2020
 # Near duplicate detection in eDiscovery (Premium)
 
 Consider a set of documents to be reviewed in which a subset is based on the same template and has mostly the same boilerplate language, with a few differences here and there. If a reviewer could identify this subset, review one of them thoroughly, and review the differences for the rest, they would not have missed any unique information while taking only a fraction of time that would have taken them to read all documents cover to cover. Near duplicate detection groups textually similar documents together to help you make your review process more efficient.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How does it work?
 

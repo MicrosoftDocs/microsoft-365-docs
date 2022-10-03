@@ -15,13 +15,15 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
 ---
 
 # Create and manage communication compliance policies
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Policies
 

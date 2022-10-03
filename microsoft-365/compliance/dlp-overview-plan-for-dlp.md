@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.collection:
 - tier1
 - highpri 
-- M365-security-compliance
+- purview-compliance
 search.appverid: 
 - MET150
 description: "Overview of the planning process for data loss prevention"
@@ -22,6 +22,8 @@ description: "Overview of the planning process for data loss prevention"
 # Plan for data loss prevention (DLP)
 
 Every organization will plan for and implement data loss prevention (DLP) differently, because every organization's business needs, goals, resources, and situation are unique to them. However, there are elements that are common to all successful DLP implementations. This article presents the best practices that are used by organizations in their DLP planning.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Multiple starting points
 

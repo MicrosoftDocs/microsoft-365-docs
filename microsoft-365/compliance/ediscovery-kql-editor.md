@@ -14,7 +14,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid: 
 - MOE150
@@ -34,6 +34,8 @@ Here are the key benefits to using the KQL editor:
 - Quickly identifies potential errors and displays hints about how to resolve issues.
 
 The KQL editor is also available when you create query-based holds in eDiscovery (Standard) and eDiscovery (Premium).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Displaying the KQL editor
 

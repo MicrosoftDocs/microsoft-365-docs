@@ -12,7 +12,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 ms.custom: 
 - admindeeplinkCOMPLIANCE
 - intro-overview
@@ -25,6 +25,8 @@ If you're interested in your organization's compliance posture, you're going to 
 Read this article to get acquainted with the compliance portal, [how to access it](#how-do-i-access-the-compliance-portal), and your [next steps](#next-steps).
 
 [![Microsoft Purview compliance portal home page.](../media/m365-compliance-center-home.png)](https://compliance.microsoft.com)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Welcome to Microsoft Purview
 

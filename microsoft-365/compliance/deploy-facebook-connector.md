@@ -14,8 +14,8 @@ ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection:
-- tier1
-- M365-security-compliance
+- tier3
+- purview-compliance
 - data-connectors
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
@@ -24,6 +24,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 # Deploy a connector to archive Facebook Business pages data
 
 This article contains the step-by-step process to deploy a connector that uses the Office 365 Import service to import data from Facebook Business pages to Microsoft 365. For a high-level overview of this process and a list of prerequisites required to deploy a Facebook connector, see [Set up a connector to archive Facebook data](archive-facebook-data-with-sample-connector.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Create an app in Azure Active Directory
 

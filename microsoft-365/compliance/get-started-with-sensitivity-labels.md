@@ -11,11 +11,13 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - tier1
 - highpri
 - SPO_Content
 - m365solution-mip
+- m365initiative-compliance
+- highpri
 search.appverid: 
 - MOE150
 - MET150
@@ -46,6 +48,8 @@ When you're ready to start protecting your organization's data by using sensitiv
 The basic flow for deploying and applying sensitivity labels:
 
 ![Diagram showing workflow for sensitivity labels.](../media/Sensitivity-label-flow.png)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Subscription and licensing requirements for sensitivity labels
 

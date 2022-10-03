@@ -10,7 +10,7 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - tier1
 ms.topic: article
 ms.custom: admindeeplinkMAC
@@ -79,6 +79,8 @@ There are two different methods for automatically applying a sensitivity label t
 > 
 > For more information, see [Default labels and policies for Microsoft Purview Information Protection](mip-easy-trials.md).
 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Compare auto-labeling for Office apps with auto-labeling policies
 

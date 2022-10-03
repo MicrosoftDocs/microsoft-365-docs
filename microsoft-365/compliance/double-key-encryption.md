@@ -12,7 +12,7 @@ audience: Admin
 ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
@@ -29,6 +29,8 @@ Double Key Encryption (DKE) uses two keys together to access protected content. 
 Double Key Encryption supports both cloud and on-premises deployments. These deployments help to ensure that encrypted data remains opaque wherever you store the protected data.
 
 For more information about the default, cloud-based tenant root keys, see [Planning and implementing your Azure Information Protection tenant key](/azure/information-protection/plan-implement-tenant-key).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## When your organization should adopt DKE
 

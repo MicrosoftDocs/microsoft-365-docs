@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 search.appverid: MET150
 mscollection:
 - tier3
-- M365-security-compliance
+- purview-compliance
 ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
@@ -23,6 +23,8 @@ ms.custom:
 # Get started with Microsoft Service Trust Portal
 
 The Microsoft Service Trust Portal provides a variety of content, tools, and other resources about how Microsoft cloud services protect your data, and how you can manage cloud data security and compliance for your organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Accessing the Service Trust Portal
 
