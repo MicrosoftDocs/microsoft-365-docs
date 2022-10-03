@@ -24,6 +24,8 @@ description: "Saudi Arabia National ID sensitive information type entity definit
 
 # Saudi Arabia National ID
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 10 digits

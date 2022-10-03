@@ -24,6 +24,8 @@ description: "Greece passport number sensitive information type entity definitio
 
 # Greece passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Two letters followed by seven digits with no spaces or delimiters

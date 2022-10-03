@@ -23,6 +23,8 @@ Use a Veritas connector in the Microsoft Purview compliance portal to import and
 
 After XSLT/XML data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, and retention policies and retention labels. Using an XSLT/XML connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Overview of archiving XSLT/XML data
 
 The following overview explains the process of using a connector to archive XSLT/XML source data in Microsoft 365.

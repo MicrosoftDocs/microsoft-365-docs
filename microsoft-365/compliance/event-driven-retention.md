@@ -47,6 +47,8 @@ Event-based retention, sometimes also referred to as "event-driven retention", i
 
 A retention label based on an event has the same capabilities as any retention label in Microsoft Purview. For more information, see [Learn about retention policies and retention labels](retention.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Understanding the relationship between event types, labels, events, and asset IDs
 
 To successfully use event-based retention, it's important to understand the relationship between event types, retention labels, events, and asset IDs as illustrated in the diagrams and the explanation that follows: 

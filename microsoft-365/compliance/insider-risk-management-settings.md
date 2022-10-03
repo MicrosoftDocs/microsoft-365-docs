@@ -39,6 +39,8 @@ Insider risk management settings apply to all insider risk management policies, 
 
 Before you get started and create insider risk management policies, it's important to understand these settings and choose setting levels best for the compliance needs for your organization.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Privacy
 
 Protecting the privacy of users that have policy matches is important and can help promote objectivity in data investigation and analysis reviews for insider risk alerts. For users with an insider risk policy match, you can choose one of the following settings:

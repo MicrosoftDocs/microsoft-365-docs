@@ -24,6 +24,8 @@ description: "Azure DocumentDB auth key sensitive information type entity defini
 
 # Azure DocumentDB auth key
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 The string `DocumentDb` followed by the characters and strings outlined in the pattern below.

@@ -23,6 +23,8 @@ Use the TeleMessage connector in the Microsoft Purview compliance portal to impo
 
 After Verizon Network connector data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, Content Search, and Microsoft 365 retention policies to Verizon data. For example, you can search Verizon SMS and MMS messages using Content Search or associate the mailbox that contains Verizon Network data with a custodian in a Microsoft Purview eDiscovery (Premium) case. Using a Verizon Network connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Overview of archiving Verizon Network data
 
 The following overview explains the process of using a connector to archive Verizon Network data in Microsoft 365.

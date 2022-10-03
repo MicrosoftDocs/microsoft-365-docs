@@ -37,6 +37,8 @@ Setting up a Healthcare connector consists of the following tasks:
 
 If you’d like to participate in the preview, please reach out to the team at dcfeedback@microsoft.com.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you set up the connector
 
 - The user who creates the Healthcare connector in Step 3 must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).

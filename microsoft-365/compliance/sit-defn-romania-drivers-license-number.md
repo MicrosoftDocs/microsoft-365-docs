@@ -24,6 +24,8 @@ description: "Romania driver's license number sensitive information type entity 
 
 # Romania drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 one character followed by eight digits

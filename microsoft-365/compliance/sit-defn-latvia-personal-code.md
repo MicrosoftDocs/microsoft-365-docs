@@ -24,6 +24,8 @@ description: "Latvia personal code sensitive information type entity definition.
 
 # Latvia personal code
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11 digits and an optional hyphen

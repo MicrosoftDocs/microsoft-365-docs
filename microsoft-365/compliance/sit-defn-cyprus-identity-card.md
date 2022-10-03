@@ -25,6 +25,8 @@ description: "Cyprus identity card sensitive information type entity definition.
 
 # Cyprus identity card
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 10 digits without spaces and delimiters

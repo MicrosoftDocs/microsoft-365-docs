@@ -24,6 +24,8 @@ description: "Azure COSMOS DB account access key sensitive information type enti
 
 # Azure COSMOS DB account access key (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 88 characters consisting of letters, digits, and special characters.

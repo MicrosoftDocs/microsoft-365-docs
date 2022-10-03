@@ -24,6 +24,8 @@ description: "Malta driver's license number sensitive information type entity de
 
 # Malta drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Combination of two characters and six digits in the specified pattern

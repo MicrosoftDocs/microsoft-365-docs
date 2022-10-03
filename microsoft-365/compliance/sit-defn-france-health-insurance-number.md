@@ -24,6 +24,8 @@ description: "France health insurance number sensitive information type entity d
 
 # France health insurance number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 21-digit number

@@ -47,6 +47,8 @@ In summary, a locked policy can be increased or extended, but it can't be reduce
 
 Configure Preservation Lock after you've created a [retention policy](create-retention-policies.md), or a retention label policy that you [publish](create-apply-retention-labels.md) and contains only labels that [mark items as regulatory records](records-management.md#records).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How to lock a retention policy or retention label policy
 
 You must use PowerShell if you need to use Preservation Lock. Because administrators can't disable or delete a policy for retention after this lock is applied, enabling this feature is not available in the UI to safeguard against accidental configuration.

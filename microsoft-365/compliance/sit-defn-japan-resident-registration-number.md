@@ -24,6 +24,8 @@ description: "Japan resident registration number sensitive information type enti
 
 # Japan resident registration number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11 digits

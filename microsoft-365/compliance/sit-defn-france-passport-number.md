@@ -26,6 +26,8 @@ description: "France passport number sensitive information type entity definitio
 
 This entity is available in the EU Passport Number sensitive information type. It's also available as a stand-alone sensitive information type entity.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits and letters

@@ -41,6 +41,8 @@ Sensitivity labels appear as an option in the **Content contains** list.
 > **Sensitivity Labels** as a condition will not be available if you have selected **Teams chat and channel messages** as a location to apply the DLP policy.
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Supported items, scenarios, and policy tips
 
 You can use sensitivity labels as conditions on these items and in these scenarios.

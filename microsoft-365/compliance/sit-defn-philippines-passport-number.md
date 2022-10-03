@@ -24,6 +24,8 @@ description: "Philippines passport number sensitive information type entity defi
 
 # Philippines passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 seven or eight or nine alphanumeric characters

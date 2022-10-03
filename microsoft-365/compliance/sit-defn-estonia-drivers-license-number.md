@@ -24,6 +24,8 @@ description: "Estonia driver's license number sensitive information type entity 
 
 # Estonia drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 two letters followed by six digits

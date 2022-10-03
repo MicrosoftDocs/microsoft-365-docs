@@ -24,6 +24,8 @@ description: "Taiwan-resident certificate (ARC/TARC) number sensitive informatio
 
 # Taiwan-resident certificate (ARC/TARC) number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 10 letters and digits

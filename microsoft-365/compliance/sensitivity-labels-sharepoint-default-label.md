@@ -42,6 +42,8 @@ When you use Office on the web to create or edit a file, the default sensitivity
 - File upload: it can take a few minutes for the label to be applied.
 - Microsoft 365 Apps: the label is applied after the app is closed.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Will an existing label be overridden?
 
 Summary of outcomes:

@@ -24,6 +24,8 @@ description: "Qatari ID card number sensitive information type entity definition
 
 # Qatari ID card number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 eleven digits

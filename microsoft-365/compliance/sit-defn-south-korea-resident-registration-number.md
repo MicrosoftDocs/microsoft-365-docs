@@ -24,6 +24,8 @@ description: "South Korea resident registration number sensitive information typ
 
 # South Korea resident registration number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 13 digits containing a hyphen

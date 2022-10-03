@@ -22,6 +22,8 @@ description: "Learn which user roles are required in order to sign up for a tria
 
 This article outlines the user roles required in order to enroll your organization in a Microsoft 365 trial.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Who can start all trials
 
 A user with one of the roles listed below can start any Microsoft 365 trial.

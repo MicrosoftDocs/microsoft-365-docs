@@ -39,6 +39,8 @@ File plan can be used for all retention labels, even if they don't mark content 
 
 For information about what retention labels are and how to use them, see [Learn about retention policies and retention labels](retention.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Accessing file plan
 
 To access file plan, you must have one of the following admin roles:

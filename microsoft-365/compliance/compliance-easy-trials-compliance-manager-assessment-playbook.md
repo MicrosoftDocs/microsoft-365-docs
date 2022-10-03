@@ -28,6 +28,8 @@ This playbook will help you make the most of your 90-day free trial by teaching 
 
 Using Microsoft recommendations, you'll quickly see how the premium assessment templates can help your organization assess risks and efficiently respond to global, regional and industrial regulatory requirements.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Get to know Compliance Manager
 
 Our [Compliance Manager overview page](compliance-manager.md) is the best first stop for a comprehensive review of what Compliance Manager is and how it works. You may also want to jump right to key sections of our documentation using the links below:

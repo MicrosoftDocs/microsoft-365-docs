@@ -24,6 +24,8 @@ description: "New Zealand social welfare number sensitive information type entit
 
 # New Zealand social welfare number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits
