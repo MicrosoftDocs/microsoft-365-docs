@@ -30,15 +30,15 @@ Capability summary:  Office for the web (formerly Office Web Apps) opens Word, E
 
 Required Conditions:
 
-1.	Tenant has a sign up country included in Local Geography or Expanded Local Geography.
+1.	Tenant has a sign up country included in *Local Geography* or *Expanded Local Geography*y.
 2.	Tenant has a valid Advanced Data Residency subscription for all users in the tenant
-3.	The MDO P1 subscription customer data is provisioned in Local Geography or Expanded Local Geography
+3.	The MDO P1 subscription customer data is provisioned in *Local Geography* or *Expanded Local Geography*.
 
 **Commitment:**
 
 The following customer data will be stored in the related *Geography*:
 
--Cached documents that users open will be stored in the relevant Geography.
+- Cached documents that users open will be stored in the relevant Geography.
 
 ### Migration 
-The cached for documents are not migrated to the new Geography, and will be reestablished as users work on documents.
+The cached for documents are not migrated to the new *Geography*, and will be reestablished as users work on documents.
