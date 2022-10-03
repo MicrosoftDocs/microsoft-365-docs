@@ -25,8 +25,8 @@ ms.collection:
 *For current language please refer to the Privacy and Security Product Terms <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank">**webpage**</a> and view the section titled “Location of Customer Data at Rest for Core Online Services”.*
 
 **Commitment:** 
- [!NOTE]
->•	Office 365 Services. If Customer provisions its tenant in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, or the United States, Microsoft will store the following Customer Data at rest only within that Geo (2) SharePoint Online site content and the files stored within that site, and (3) files uploaded to OneDrive for Business.
+>[!NOTE]
+>Office 365 Services. If Customer provisions its tenant in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, or the United States, Microsoft will store the following Customer Data at rest only within that Geo (2) SharePoint Online site content and the files stored within that site, and (3) files uploaded to OneDrive for Business.
 
 **Option 2: Multi-Geo add-on**
 
