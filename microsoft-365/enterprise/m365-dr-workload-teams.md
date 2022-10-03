@@ -19,16 +19,16 @@ ms.collection:
 # Data Residency for Microsoft Teams
 
 
-##Data Residency commitments available
+## Data Residency commitments available
 
-###Option 1: Privacy and Security Product Terms
+### Option 1: Privacy and Security Product Terms
 
 *For current language please refer to the Privacy and Security Product Terms <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank">**webpage**</a> and view the section titled "Location of Customer Data at Rest for Core Online Services".*
 
 >[!NOTE]
 >If Customer provisions its tenant in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, United Arab Emirates, United Kingdom, or United States, Microsoft will store the following Customer Data at rest only within that *Geography*: Microsoft Teams chat, channel, and meeting conversations, and, for customers using Microsoft Stream (based on SharePoint), meeting recordings.
 
-###Option 2: Multi-Geo add-on
+### Option 2: Multi-Geo add-on
 
 Required Conditions:
 
@@ -56,7 +56,7 @@ Microsoft Teams Core customer data consists of chat and channel messages, associ
 -Images and Media: Meeting recordings, Media used in chats (except for Giphy GIFs which are not stored but are a reference link to the original Giphy URL) is stored in an Azure based Media Service that are deployed to the same locations as the chat service.
 
 
-##Multi-Geo Capabilities in Microsoft Teams
+## Multi-Geo Capabilities in Microsoft Teams
 
 Multi-Geo capabilities in Teams enable Teams chat data to be stored at rest in a specified *Regional* or *Local Geography* location. Chat data consists of chat messages, including private messages, channel messages, and images used in chats.
 
@@ -65,7 +65,7 @@ Teams uses the Preferred Data Location (PDL) for users and groups to determine w
 >[!NOTE]
 >Multi-Geo capabilities in Teams rolled out in July 2021. Your chat and channel messages will be automatically migrated to the correct Regional or Local Geography location over the next few quarters. Any new PDL changes will be processed after the tenant has completed the initial sync, and new PDL changes beyond that will be queued and processed in the order they are received.
 
-###User chat
+### User chat
 
 User chat includes one-to-one, one-to-many, and private meeting messages.
 
@@ -80,7 +80,7 @@ To find the current location of a user's Teams data, connect to Teams PowerShell
 Get-MultiGeoRegion -EntityType User -EntityId <UPN>
 ```
 
-###Channel messages
+### Channel messages
 
 Each Microsoft 365 group has a Preferred Data Location (PDL) which denotes the *Geography* location where related data is to be stored. Teams uses the PDL for the group associated with each team to determine where to store channel messaging data for that team. This includes private channels and chat that occurs within a channel meeting.
 
@@ -96,11 +96,11 @@ To find the current location of a team's data, connect to Teams PowerShell and r
 Get-MultiGeoRegion -EntityType Group -EntityId <GroupObjectId>
 ```
 
-###User Experience
+### User Experience
 
 Teams Multi-Geo is seamless to the end user. Once you change the PDL of a user or a group, the respective data will queue for migration and the migration will occur automatically with no impact to the user or their Teams client even if they’re active while the migration occurs.
 
-###Migration 
+### Migration 
 
 **Files Tab**
 After the migration is complete the Files tab may take additional time (up to 7 seconds) to fully load when the user first attempts to use it.
