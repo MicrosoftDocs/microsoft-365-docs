@@ -47,7 +47,7 @@ To configure approved users for forensic evidence capturing, complete the follow
 8. On the **Justification** page, let the reviewer know why you're requesting that capturing be enabled for the users you added in the **Justification for turning on forensic evidence capturing** text box. This is a required field. When complete, select **Next**.
 9. On the **Email notifications** page, you sse a notification template to send an email to users letting them know that forensic evidence capturing will be turned on for their device in accordance with your organization's policies. The email will be sent to users only if their request is approved.
 
-    Select the **Send an email notification to approved users** checkbox. Choose an existing template o create a new one. To create a new template, select **Create a notification template** and complete the following required fields in the **Create a new email notice template** pane.
+    Select the **Send an email notification to approved users** checkbox. Choose an existing template o create a new one. To create a new template, select **Create a notification template** and complete the following required fields in the **New email notification template** pane.
 
 10. Select **Next**.
 11. On the **Finish** page, review your settings before submitting the request. Select **Edit users** or **Edit justification** to change any of the request values or select **Submit** to create and send the request to reviewers.
@@ -76,15 +76,15 @@ To revoke approvals for users, users assigned to the *Insider Risk Management Ap
 3. Select a user, then select **Remove**.
 4. On the removal confirmation page, select **Remove** to revoke capturing approval or select **Cancel** to close the confirmation page.
 
-## Creating and managing email templates
+## Creating and managing notification templates
 
 You can create and use a notification template to send an email to users letting them know that forensic evidence capturing will be turned on for their device in accordance with your organization's policies. The email is sent to users only if their request is approved.
 
 To create a new notification template, complete the following steps:
 
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Email notices**.
-2. Select **Create a notice template**.
-3. On the **Create a new email notice template** pane, complete the following required fields:
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Notification templates**.
+2. Select **Create notification template**.
+3. On the **New email notification template** pane, complete the following required fields:
     - Template name
     - Send from
     - Subject
