@@ -40,7 +40,7 @@ The steps to add the OneDrive LTI app are:
 1. Select the **Create new LTI Tenant** button.
 1. In the **LTI Consumer Platform** list, select **D2L Brightspace**.
 1. In the **D2L Brightspace Base URL** field, enter your Brightspace base URL, like `https://myschool.brightspace.com`.
-1. Select the **Next** button. The **Register LTI 1.3 App** page will load.
+1. Select the **Next** button. The **Register LTI 1.3 App** page will load. \
    Keep this page open in its own tab when completing the next set of steps. The values required will be generated in the next steps.
 
 ### Add Microsoft LTI app to Brightspace
