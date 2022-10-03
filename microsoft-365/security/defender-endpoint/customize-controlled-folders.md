@@ -13,8 +13,10 @@ ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.date:
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Customize controlled folder access

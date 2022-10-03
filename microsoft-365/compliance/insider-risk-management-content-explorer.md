@@ -11,7 +11,9 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ---
 
 # Insider risk management Content explorer
@@ -26,6 +28,8 @@ If the content includes Information Rights Management permissions, these permiss
 
 > [!NOTE]
 > Content explorer includes user activities related to Microsoft 365 service files, such as user activity on SharePoint, Exchange, Microsoft Teams, and OneDrive for Business.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Column options
 

@@ -16,7 +16,7 @@ search.appverid:
   - MET150
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about end-user spam notifications for quarantined messages in Exchange Online Protection (EOP).

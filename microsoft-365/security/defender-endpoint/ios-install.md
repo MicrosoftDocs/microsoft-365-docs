@@ -12,10 +12,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Deploy Microsoft Defender for Endpoint on iOS
@@ -129,6 +131,9 @@ Configure the supervised mode for Defender for Endpoint app through an App confi
 
 1. Provide a name of the profile. When prompted to import a Configuration profile file, select the one downloaded from the previous step.
 1. In the **Assignment** section, select the device group to which you want to apply this profile. As a best practice, this should be applied to all managed iOS devices. Select **Next**.
+    > [!NOTE]
+    > Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2
+
 1. On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
 
 
@@ -158,7 +163,7 @@ This step simplifies the onboarding process by setting up the VPN profile. For a
 
     :::image type="content" source="images/ios-deploy-8.png" alt-text="The VPN profile Configuration settings tab" lightbox="images/ios-deploy-8.png":::
     - To mandate that VPN cannot be disabled in users device, Admins can select **Yes** from **Block users from disabling automatic VPN**. By default, it's not configured and users can disable VPN only in the Settings.
-    - To allow Users to Change the VPN toggle from within the app, add **EnableVPNToggleInApp = TRUE**, in the key-value pairs. By default, users cannot the change the toggle from within the app.
+    - To allow Users to Change the VPN toggle from within the app, add **EnableVPNToggleInApp = TRUE**, in the key-value pairs. By default, users cannot change the toggle from within the app.
 
 1. Click Next and assign the profile to targeted users.
 1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**.
@@ -186,7 +191,7 @@ Admins can configure Microsoft Defender for Endpoint to deploy and activate sile
     :::image type="content" source="images/ios-deploy-9.png" alt-text="The VPN profile Configuration page" lightbox="images/ios-deploy-9.png":::
 
     - To mandate that VPN can't be disabled in users device, Admins can select **Yes** from **Block users from disabling automatic VPN**. By default, it's not configured and users can disable VPN only in the Settings.
-    - To allow Users to Change the VPN toggle from within the app, add **EnableVPNToggleInApp = TRUE**, in the key-value pairs. By default, users can't the change the toggle from within the app.
+    - To allow Users to Change the VPN toggle from within the app, add **EnableVPNToggleInApp = TRUE**, in the key-value pairs. By default, users can't change the toggle from within the app.
 
 1. Select **Next** and assign the profile to targeted users.
 1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**.
@@ -237,7 +242,7 @@ Intune allows you to configure the Defender for iOS app through an App Configura
 1. In the next screen, select **Use configuration designer** as the format. Specify the following property:
     - Configuration Key: `issupervised`
     - Value type: String
-    - Configuration Value: `issupervised`
+    - Configuration Value: `{{issupervised}}`
 
     > :::image type="content" source="images/ios-deploy-6.png" alt-text="The page from which to choose the format for the settings of the policy configuration" lightbox="images/ios-deploy-6.png":::
 

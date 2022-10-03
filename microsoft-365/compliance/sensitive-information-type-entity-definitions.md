@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier2
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -219,6 +220,7 @@ This article is a list of all sensitive information type (SIT) entity definition
 - [Japan My Number - Corporate](sit-defn-japan-my-number-corporate.md)
 - [Japan My Number - Personal](sit-defn-japan-my-number-personal.md)
 - [Japan passport number](sit-defn-japan-passport-number.md)
+- [Japan physical addresses](sit-defn-japan-physical-addresses.md)
 - [Japan residence card number](sit-defn-japan-residence-card-number.md)
 - [Japan resident registration number](sit-defn-japan-resident-registration-number.md)
 - [Japan social insurance number (SIN)](sit-defn-japan-social-insurance-number.md)

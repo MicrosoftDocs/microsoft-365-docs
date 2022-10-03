@@ -7,11 +7,12 @@ audience: ITPro
 ms.topic: reference
 f1_keywords:
 - 'microsoft-365-and-office-365-general-information'
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.custom:
 - Adm_ServiceDesc
 - Adm_ServiceDesc_top
+ms.collection: scotvorg
 ms.assetid: 721676a0-5108-488e-ae0c-7316617d0006
 description: "Learn about the information available for Microsoft 365 feature descriptions."
 ---
@@ -192,7 +193,7 @@ Microsoft Office 365 provides the following help and training resources. Communi
 
 **Online help:** Help articles and videos are available from any inline help link in the service, including the help icon in the top navigation bar of the Office 365 portal and Microsoft 365 admin center. You can also search all Office 365 help on [https://office.microsoft.com](https://go.microsoft.com/fwlink/p/?LinkId=272056).
 
-**Training:** Training is available through videos, recorded live events, and classes leading to certification. For more information, see [Microsoft 365 basics video training](https://support.microsoft.com/office/microsoft-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb), [Microsoft 365 Training](https://support.microsoft.com/training), [for admins and IT Pros](/learn/m365/), [for small businesses](/microsoft-365/admin/admin-video-library), [browse the full learning catalog](/learn/browse/), [become Microsoft certified](/learn/certifications/), [browse all learning options](/learn/browse/), and [watch live and recorded events](/learn/tv/).
+**Training:** Training is available through videos, recorded live events, and classes leading to certification. For more information, see [Microsoft 365 basics video training](https://support.microsoft.com/office/microsoft-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb), [Microsoft 365 Training](https://support.microsoft.com/training), [for admins and IT Pros](/training/m365/), [for small businesses](/microsoft-365/admin/admin-video-library), [browse the full learning catalog](/training/browse/), [become Microsoft certified](/certifications/), [browse all learning options](/training/browse/), and [watch live and recorded events](/training/tv/).
 
 **Community:** The Office 365 Community is a single destination for self-help support information. It has the latest information to help customers find answers to a variety of technical, billing, and service questions through support forums, wikis, and blogs. The support forums are staffed and moderated by Microsoft Support agents. From the Office 365 Community home page, customers can access the following resources: Forums, Wikis, Blogs. For more information, visit the [Office 365 community](https://techcommunity.microsoft.com/).
 

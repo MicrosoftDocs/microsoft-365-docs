@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: troubleshooting
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Collect support logs in Microsoft Defender for Endpoint using live response

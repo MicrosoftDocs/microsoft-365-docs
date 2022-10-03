@@ -170,4 +170,4 @@ To run the flow:
   
 [Power Automate documentation](/power-automate/)
 
-[Training: Improve business performance with AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Training: Improve business performance with AI Builder](/training/paths/improve-business-performance-ai-builder/?source=learn)

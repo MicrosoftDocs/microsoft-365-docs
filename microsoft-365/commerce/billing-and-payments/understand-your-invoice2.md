@@ -8,9 +8,11 @@ manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri 
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -34,7 +36,7 @@ Your bill or invoice provides a summary of charges for your subscription and inc
 
 ## Watch: Understand your bill or invoice
 
-Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197915).
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2209539).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53wxS?autoplay=false]
 
