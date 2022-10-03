@@ -30,6 +30,8 @@ Refer to this article to learn about certificates, technologies, and TLS cipher 
 - If you're looking for setup information, see [Set up encryption in Office 365 Enterprise](set-up-encryption.md).
 - For information about cipher suites supported by specific versions of Windows, see [Cipher Suites in TLS/SSL (Schannel SSP)](/windows/desktop/SecAuthN/cipher-suites-in-schannel).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Microsoft Office 365 certificate ownership and management
 
 You don't need to purchase or maintain certificates for Office 365. Instead, Office 365 uses its own certificates.

@@ -24,6 +24,8 @@ description: "Poland REGON number sensitive information type entity definition."
 
 # Poland REGON number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 9-digit or 14-digit number

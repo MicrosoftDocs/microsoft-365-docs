@@ -24,6 +24,8 @@ description: "Taiwan national identification number sensitive information type e
 
 # Taiwan national identification number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 one letter (in English) followed by nine digits

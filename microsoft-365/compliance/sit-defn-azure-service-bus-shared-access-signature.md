@@ -24,6 +24,8 @@ description: "Azure service bus shared access signature sensitive information ty
 
 # Azure service bus shared access signature (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 44-characters consisting of letters, digits, and special characters ending with an equals sign (=) that is not part of the pattern.

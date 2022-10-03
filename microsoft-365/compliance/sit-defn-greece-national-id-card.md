@@ -24,6 +24,8 @@ description: "Greece national ID card sensitive information type entity definiti
 
 # Greece national ID card
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Combination of 7-8 letters and numbers plus a dash

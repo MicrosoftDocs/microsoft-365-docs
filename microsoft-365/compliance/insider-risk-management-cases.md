@@ -30,6 +30,8 @@ After investigating the details of a case, you can take action by:
 
 Check out the [Insider Risk Management Investigation and Escalation video](https://www.youtube.com/watch?v=UONUSmkRC8s) for an overview of how cases are investigated and managed in insider risk management.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Cases dashboard
 
 The insider risk management **Cases dashboard** allows you to view and act on cases. Each report widget on the dashboard displays information for last 30 days.

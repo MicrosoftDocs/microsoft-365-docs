@@ -24,6 +24,8 @@ description: "Netherlands driver's license number sensitive information type ent
 
 # Netherlands drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 10 digits without spaces and delimiters

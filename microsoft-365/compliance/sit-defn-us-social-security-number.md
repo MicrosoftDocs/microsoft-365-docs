@@ -24,6 +24,8 @@ description: "U.S. social security number (SSN) sensitive information type entit
 
 # U.S. social security number (SSN)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits, which may be in a formatted or unformatted pattern

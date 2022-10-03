@@ -25,6 +25,8 @@ description: "India Driver's License Number sensitive information type entity de
 
 # India Drivers License Number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 15 character alphanumeric pattern

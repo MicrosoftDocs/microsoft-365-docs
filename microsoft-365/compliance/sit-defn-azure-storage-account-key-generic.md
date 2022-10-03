@@ -24,6 +24,8 @@ description: "Azure Storage account key (generic) sensitive information type ent
 
 # Azure Storage account key (generic)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Any combination of 86 lower- or uppercase letters, digits, the forward slash (/), or plus sign (+), preceded or followed by the characters outlined in the pattern below.

@@ -26,6 +26,8 @@ description: "Poland passport number sensitive information type entity definitio
 
 This sensitive information type entity is included in the EU Passport Number sensitive information type. It's also available as a stand-alone sensitive information type entity.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 two letters and seven digits

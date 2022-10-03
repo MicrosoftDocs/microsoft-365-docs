@@ -24,6 +24,8 @@ description: "IP address v6 sensitive information type entity definition."
 
 # IP Address v6
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Complex pattern that accounts for formatted IPv6 numbers (which include colons)

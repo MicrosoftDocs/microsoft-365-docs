@@ -32,6 +32,8 @@ DLP examines email messages and files for sensitive information, like a credit c
 - Display a warning to the end user who is sending the email or sharing the file
 - Actively block the email or file sharing from taking place
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Permissions
 
 Members of your compliance team who will create DLP policies need permissions to the Compliance Center. By default, your tenant admin will have access can give compliance officers and other people access. Follow these steps:

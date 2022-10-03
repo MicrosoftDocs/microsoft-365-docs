@@ -35,6 +35,8 @@ To help familiarize you with Endpoint DLP features and how they surface in DLP p
 >- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
 ### SKU/subscriptions licensing
@@ -127,7 +129,9 @@ These scenarios require that you already have devices onboarded and reporting in
 
 ## Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine (preview)
 
-### Before you begin
+#[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## Before you begin
 
 In this scenario, synchronizing files with the **Highly Confidential** sensitivity label to OneDrive is blocked. This is a complex scenario with multiple components and procedures. You will need:
 

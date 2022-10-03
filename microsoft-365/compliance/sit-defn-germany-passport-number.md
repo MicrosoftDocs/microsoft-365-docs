@@ -24,6 +24,8 @@ description: "Germany passport number sensitive information type entity definiti
 
 # Germany passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 9 to 11 characters

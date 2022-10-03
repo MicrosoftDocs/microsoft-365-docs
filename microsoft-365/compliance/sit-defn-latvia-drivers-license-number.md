@@ -24,6 +24,8 @@ description: "Latvia driver's license number sensitive information type entity d
 
 # Latvia drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 three letters followed by six digits

@@ -24,6 +24,8 @@ description: "ABA routing number sensitive information type entity definition."
 
 # ABA routing number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits that may be in a formatted or unformatted pattern

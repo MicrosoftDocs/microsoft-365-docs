@@ -24,6 +24,8 @@ description: "Russia passport number domestic sensitive information type entity 
 
 # Russia passport number domestic
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 10-digit number

@@ -27,6 +27,8 @@ description: "Microsoft Purview Compliance Manager provides templates for buildi
 > [!IMPORTANT]
 > The assessment templates that are available to your organization depend on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Overview
 
 [Microsoft Purview Compliance Manager](compliance-manager.md) provides a comprehensive set of templates for creating assessments. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.

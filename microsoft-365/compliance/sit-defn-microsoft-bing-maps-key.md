@@ -24,6 +24,8 @@ description: "Microsoft Bing maps key sensitive information type entity definiti
 
 # Microsoft Bing maps key (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 64 characters consisting of letters, digits, and special characters.

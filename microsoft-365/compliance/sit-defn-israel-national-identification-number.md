@@ -24,6 +24,8 @@ description: "Israel national identification number sensitive information type e
 
 # Israel national identification number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits

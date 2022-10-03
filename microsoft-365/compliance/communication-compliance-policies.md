@@ -23,6 +23,8 @@ search.appverid:
 
 # Create and manage communication compliance policies
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Policies
 
 > [!IMPORTANT]

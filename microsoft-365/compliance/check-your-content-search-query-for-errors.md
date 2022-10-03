@@ -33,6 +33,8 @@ Here's a list of the unsupported characters that we check for in search queries 
 
 - **Lowercase Boolean operators** - If you use a Boolean operator, such as **AND**, **OR**, and **NOT** in a search query, it must be uppercase. When we check a query for typos, the query syntax will often indicate that a Boolean operator is being used even though lowercase operators might be used; for example,  `(WordA or WordB) and (WordC or WordD)`.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## What happens if a query has an unsupported character?
 
 If unsupported characters are found in your query, a warning message is displayed that says unsupported characters were found and suggests an alternative. You then have the option keep the original query or replace it with the suggested revised query.

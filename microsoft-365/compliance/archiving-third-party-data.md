@@ -31,6 +31,8 @@ Watch this interactive guide that demonstrates how to create data connectors to 
 
 > [!VIDEO https://mslearn.cloudguides.com/guides/Archive%20data%20from%20non-Microsoft%20sources%20in%20Microsoft%20365]
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Third-party data connectors
 
 The Microsoft Purview compliance portal provides native third-party data connectors from Microsoft to import data from various data sources, such as LinkedIn, Instant Bloomberg, and Twitter and data connectors that support the Insider risk management solution. In addition to these data connectors, Microsoft works with the following partners to provide many more third part data connectors in the compliance portal. Your organization works with these partners to set up their archiving service before creating a corresponding data connector in the compliance portal.

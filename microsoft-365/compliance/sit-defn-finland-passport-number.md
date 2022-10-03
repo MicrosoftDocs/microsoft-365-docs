@@ -26,6 +26,8 @@ description: "Finland passport number sensitive information type entity definiti
 
 This entity is available in the EU Passport Number sensitive information type and is available as a stand-alone sensitive information type entity.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 combination of nine letters and digits

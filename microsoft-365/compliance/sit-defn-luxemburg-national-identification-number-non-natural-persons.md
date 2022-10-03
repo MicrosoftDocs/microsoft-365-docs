@@ -24,6 +24,8 @@ description: "Luxemburg national identification number (non-natural persons) sen
 
 # Luxemburg national identification number (non-natural persons)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11 digits

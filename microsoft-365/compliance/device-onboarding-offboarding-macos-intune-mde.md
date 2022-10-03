@@ -30,6 +30,8 @@ description: Learn how to onboard and offboard macOS devices into Microsoft Purv
 - [Insider risk management](insider-risk-management.md)
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
 - Make sure your [macOS devices are onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 

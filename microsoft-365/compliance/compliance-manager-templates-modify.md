@@ -29,6 +29,8 @@ However, there are details to be aware of as you format your file with changes t
 
 To learn more about the format of this spreadsheet, see [Format your template data with Excel](compliance-manager-templates-format-excel.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format your Excel file to modify an existing template
 
 From your **assessment templates** page, select the template you want to modify, which will bring up its details page. Then select **Export to Excel**. An Excel file with all your template data will download. Save the file to your local machine.

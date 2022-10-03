@@ -36,6 +36,8 @@ If you are new to Microsoft Purview DLP, it's helpful to work through these arti
   - [Set goals and strategy](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
 - [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference) - this article introduces all the components of a DLP policy and how each one influences the behavior of a policy
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Policy design overview
 
 [Designing a policy](#policy-design-process) is mostly about clearly [defining your business needs, documenting them in a policy intent statement](#define-intent-for-the-policy) and then [mapping those needs to policy configuration](#map-business-needs-to-policy-configuration). You'll use the decisions you made in your planning phase to inform some of your policy design decisions.

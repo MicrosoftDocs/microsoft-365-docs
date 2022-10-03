@@ -24,6 +24,8 @@ description: "General Symmetric key sensitive information type entity definition
 
 # General Symmetric key (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 44 characters consisting of letters, digits, and special characters.

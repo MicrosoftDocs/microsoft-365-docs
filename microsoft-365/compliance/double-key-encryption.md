@@ -30,6 +30,8 @@ Double Key Encryption supports both cloud and on-premises deployments. These dep
 
 For more information about the default, cloud-based tenant root keys, see [Planning and implementing your Azure Information Protection tenant key](/azure/information-protection/plan-implement-tenant-key).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## When your organization should adopt DKE
 
 Double Key Encryption is intended for your most sensitive data that is subject to the strictest protection requirements. DKE isn't intended for all data. In general, you'll be using Double Key Encryption to protect only a small part of your overall data. You should do due diligence in identifying the right data to cover with this solution before you deploy. In some cases, you might need to narrow your scope and use other solutions for most of your data, such as Microsoft Purview Information Protection with Microsoft-managed keys or BYOK. These solutions are sufficient for documents that aren't subject to enhanced protections and regulatory requirements. Also, these solutions enable you to use the most powerful Office 365 services; services that you can't use with DKE encrypted content. For example:

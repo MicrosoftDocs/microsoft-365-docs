@@ -27,6 +27,8 @@ ms.custom: seo-marvel-apr2020
 
 You can use the Exchange Online auto-expanding archiving feature to enable additional storage space for archive mailboxes. When auto-expanding archiving is turned on, additional storage space is automatically added to a user's archive mailbox until it reaches the storage limit of 1.5 TB. You can turn on auto-expanding archiving for everyone in your organization or just for specific users. For more information about auto-expanding archiving, see [Learn about auto-expanding archiving](autoexpanding-archiving.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you enable auto-expanding archiving
 
 - Understand the following restrictions: 

@@ -34,6 +34,8 @@ Microsoft 365 delivers multiple encryption options to help you meet your busines
 
 - Information Rights Management (IRM).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How Microsoft 365 uses email encryption
 
 Encryption is the process by which information is encoded so that only an authorized recipient can decode and consume the information. Microsoft 365 uses encryption in two ways: in the service, and as a customer control. In the service, encryption is used in Microsoft 365 by default; you don't have to configure anything. For example, Microsoft 365 uses Transport Layer Security (TLS) to encrypt the connection, or session, between two servers. 
