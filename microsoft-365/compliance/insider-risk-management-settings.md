@@ -361,8 +361,8 @@ To create a new priority user group, you'll use setting controls in the **Inside
 Complete the following steps to create a priority user group:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups (preview)** page.
-3. On the **Priority user groups (preview)** page, select **Create priority user group** to start the group creation wizard.
+2. Select the **Priority user groups ** page.
+3. On the **Priority user groups ** page, select **Create priority user group** to start the group creation wizard.
 4. On the **Name and describe** page, complete the following fields:
     - **Name (required)**: Enter a friendly name for the priority user group. You can't change the name of the priority user group after you complete the wizard.
     - **Description (optional)**: Enter a description for the priority user group.
@@ -381,7 +381,7 @@ To update an existing priority user group, you'll use setting controls in the **
 Complete the following steps to edit a priority user group:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups (preview)** page.
+2. Select the **Priority user groups** page.
 3. Select the priority user group you want to edit and select **Edit group**.
 4. On the **Name and describe** page, update the Description field if needed. You can't update the name of the priority user group. Select **Next** to continue.
 5. On the **Choose members** page, add new members to the group using the **Choose members** control. To remove a user from the group, select the 'X' next to the user you wish to remove. Select **Next** to continue.
@@ -400,7 +400,7 @@ To delete an existing priority user group, you'll use setting controls in the **
 Complete the following steps to delete a priority user group:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups (preview)** page.
+2. Select the **Priority user groups ** page.
 3. Select the priority user group you want to edit and select **Delete** from the dashboard menu.
 4. On the **Delete** dialog, select **Yes** to delete the priority user group or select **Cancel** to return to the dashboard.
 
