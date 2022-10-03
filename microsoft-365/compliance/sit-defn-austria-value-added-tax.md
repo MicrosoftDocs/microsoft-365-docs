@@ -24,6 +24,8 @@ description: "Austria value added tax sensitive information type entity definiti
 
 # Austria value added tax
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11-character alphanumeric pattern

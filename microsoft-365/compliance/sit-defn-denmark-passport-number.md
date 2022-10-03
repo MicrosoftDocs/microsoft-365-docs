@@ -24,6 +24,8 @@ description: "Denmark passport number sensitive information type entity definiti
 
 # Denmark passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits without spaces and delimiters

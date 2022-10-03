@@ -24,6 +24,8 @@ description: "Japan bank account number sensitive information type entity defini
 
 # Japan bank account number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 seven or eight digits

@@ -24,6 +24,8 @@ description: "Indonesia identity card (KTP) number sensitive information type en
 
 # Indonesia identity card (KTP) number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 16 digits containing optional periods

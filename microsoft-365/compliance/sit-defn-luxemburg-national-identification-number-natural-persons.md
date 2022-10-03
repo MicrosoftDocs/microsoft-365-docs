@@ -24,6 +24,8 @@ description: "Luxemburg national identification number (natural persons) sensiti
 
 # Luxemburg national identification number (natural persons)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 13 digits with no spaces or delimiters

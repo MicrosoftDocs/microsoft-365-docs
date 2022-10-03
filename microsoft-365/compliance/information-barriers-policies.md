@@ -32,6 +32,8 @@ For more information about IB scenarios and features, see [Learn about informati
 > [!TIP]
 > To help you prepare your plan, an [example scenario](#example-scenario-contosos-departments-segments-and-policies) is included in this article.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Required subscriptions and permissions
 
 Before you get started with IB, you should confirm your Microsoft 365 subscription and any add-ons. To access and use IB, your organization must have one of the following subscriptions or add-ons:

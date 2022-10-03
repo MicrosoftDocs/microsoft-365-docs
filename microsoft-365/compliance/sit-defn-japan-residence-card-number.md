@@ -24,6 +24,8 @@ description: "Japan residence card number sensitive information type entity defi
 
 # Japan residence card number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 12 letters and digits

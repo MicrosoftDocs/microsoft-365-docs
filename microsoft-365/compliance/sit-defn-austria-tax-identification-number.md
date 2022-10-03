@@ -24,6 +24,8 @@ description: "Austria tax identification number sensitive information type entit
 
 # Austria tax identification number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits with optional hyphen and forward slash

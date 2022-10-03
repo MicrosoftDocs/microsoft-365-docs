@@ -24,6 +24,8 @@ description: "Portugal passport number sensitive information type entity definit
 
 # Portugal passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 one letter followed by six digits with no spaces or delimiters

@@ -32,6 +32,8 @@ For other workloads, see:
 - [Learn about retention for Microsoft Teams](retention-policies-teams.md)
 - [Learn about retention for Exchange](retention-policies-exchange.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## What's included for retention and deletion
 
 Yammer user messages and community messages can be deleted by using retention policies for Yammer, and in addition to the text in these messages, the following items can be retained for compliance reasons: Hypertext links and links to other Yammer messages.

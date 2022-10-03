@@ -37,6 +37,8 @@ These steps include ensuring the proper organizational subscriptions and user li
 
 For more information, see [Audit (Standard) in Microsoft 365](auditing-solutions-overview.md#audit-standard).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Verify organization subscription and user licensing
 
 Licensing for Audit (Standard) requires the appropriate organization subscription that provides access to audit log search tool and per-user licensing that's required to log and retain audit records.

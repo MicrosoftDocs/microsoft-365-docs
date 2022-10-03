@@ -42,6 +42,8 @@ A DLP policy simply looks for a specific property name/value pair. Any document 
 
 If you want to apply your DLP policy to content with specific Microsoft 365 labels, you should not follow the steps here. Instead, learn how to [Using a retention label as a condition in a DLP policy](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you create the DLP policy
 
 Before you can use a Windows Server FCI property or other property in a DLP policy, you need to create a managed property in the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>. Here's why.

@@ -24,6 +24,8 @@ description: "Azure IAAS database connection string and Azure SQL connection str
 
 # Azure IAAS database connection string and Azure SQL connection string
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 The string `Server`, `server`, or `data source` followed by the characters and strings outlined in the pattern below, including the string `cloudapp.azure.com` or `cloudapp.azure.net` or `database.windows.net`, and the string `Password` or `password` or `pwd`.

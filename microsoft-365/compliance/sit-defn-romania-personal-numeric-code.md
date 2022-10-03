@@ -24,6 +24,8 @@ description: "Romania personal numeric code (CNP) sensitive information type ent
 
 # Romania personal numeric code (CNP)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 13 digits without spaces and delimiters

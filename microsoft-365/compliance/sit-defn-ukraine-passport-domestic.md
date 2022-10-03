@@ -24,6 +24,8 @@ description: "Ukraine passport domestic sensitive information type entity defini
 
 # Ukraine passport domestic
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits

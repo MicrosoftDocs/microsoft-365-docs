@@ -24,6 +24,8 @@ description: "Finland european health insurance number sensitive information typ
 
 # Finland european health insurance number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 20-digit number

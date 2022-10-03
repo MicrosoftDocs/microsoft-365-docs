@@ -45,6 +45,8 @@ For more information about these capabilities that extend labeling beyond Office
 
 Independently from labeling, you can continue to use the [AIPService](/powershell/module/aipservice) PowerShell module for tenant-level management of the encryption service. For example, configure super user access when you need to remove encryption for data recovery, track and revoke documents that have been opened by the AIP client, and configure the use license validity period for offline access. For more information, see [Administering protection from Azure Information Protection by using PowerShell](/azure/information-protection/administer-powershell).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Decide whether to use built-in labeling for Office apps or the AIP add-in
 
 Now that the AIP client is in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613), we don't recommend you use the AIP add-in for Office apps for the following reasons:

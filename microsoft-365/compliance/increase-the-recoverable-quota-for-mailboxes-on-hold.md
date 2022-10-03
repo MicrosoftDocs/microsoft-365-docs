@@ -55,6 +55,8 @@ The remainder of this topic describes the step-by-step procedures to create a cu
 
 [(Optional) Step 4: Run the Managed Folder Assistant to apply the new retention settings](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Create a custom retention tag for the Recoverable Items folder
 
 The first step is to create a custom retention tag (called a retention policy tag or RPT) for the Recoverable Items folder. As previously explained, this RPT moves items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in the user's archive mailbox. You have to use PowerShell to create an RPT for the Recoverable Items folder. You can't use the Exchange admin center (EAC).

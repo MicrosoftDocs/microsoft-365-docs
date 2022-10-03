@@ -21,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 ---
 # Manage your exact data match schema
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Editing the schema for EDM-based classification manually
 
 If you want to make changes to your EDM schema, for example the **edm.xml** file, such as changing which fields are used for EDM-based classification, follow these steps:

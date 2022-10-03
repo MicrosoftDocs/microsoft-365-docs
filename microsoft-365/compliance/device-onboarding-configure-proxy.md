@@ -42,6 +42,8 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
   - Registry-based configuration
   - WinHTTP configured using netsh command – Suitable only for desktops in a stable topology (for example: a desktop in a corporate network behind the same proxy)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Configure the proxy server manually using a registry-based static proxy
 
 For endpoint devices that aren't permitted to connect to the Internet, you need to configure a registry-based static proxy. You need to configure this to allow only Microsoft Endpoint DLP to report diagnostic data and communicate with Microsoft endpoint cloud service.

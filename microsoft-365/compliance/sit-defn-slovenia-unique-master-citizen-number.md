@@ -24,6 +24,8 @@ description: "Slovenia Unique Master Citizen Number sensitive information type e
 
 # Slovenia Unique Master Citizen Number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 13 digits without spaces or delimiters

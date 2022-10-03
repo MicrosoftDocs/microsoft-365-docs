@@ -24,6 +24,8 @@ description: "New Zealand driver's license number sensitive information type ent
 
 # New Zealand drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 eight character alphanumeric pattern

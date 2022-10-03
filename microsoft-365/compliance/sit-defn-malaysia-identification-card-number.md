@@ -24,6 +24,8 @@ description: "Malaysia identification card number sensitive information type ent
 
 # Malaysia identification card number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 12 digits containing optional hyphens

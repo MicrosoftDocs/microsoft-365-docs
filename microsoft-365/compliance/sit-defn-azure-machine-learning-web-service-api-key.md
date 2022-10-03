@@ -24,6 +24,8 @@ description: "Azure Machine Learning web service API key sensitive information t
 
 # Azure Machine Learning web service API key (preview) 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 88 characters consisting of letters, digits, and special characters ending in two equals signs (==).

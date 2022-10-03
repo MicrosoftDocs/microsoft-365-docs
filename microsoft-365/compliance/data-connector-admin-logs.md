@@ -29,6 +29,8 @@ After you create a data connector to import non-Microsoft data to Microsoft Purv
 > [!IMPORTANT]
 > Audit logging must be enabled for your organization to view admin log. It is enabled by default for Microsoft 365 and Office 365 organizations, but we strongly recommend that you verify auditing status of your organization. For instructions to check auditing status, please click here. For instructions to turn on auditing manually, please click here. Once auditing is turned on, it could take up to 48 hours to log import events. We strongly recommend enabling auditing before a connector is configured. Once a connector is configured, it could take up to 72 hours to generate logs that contains import status summary.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you view admin logs
 
 - Auditing must be enabled for your organization to generate and view admin log for your organization. Auditing is enabled by default in Microsoft Purview. However, we recommend that you verify auditing status of your organization. For instructions, see [Verify the auditing status for your organization](turn-audit-log-search-on-or-off.md#verify-the-auditing-status-for-your-organization). If you need to enable auditing for your organization, see [Turn on auditing](turn-audit-log-search-on-or-off.md#turn-on-auditing).

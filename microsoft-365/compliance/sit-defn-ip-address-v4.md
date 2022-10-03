@@ -24,6 +24,8 @@ description: "IP address v4 sensitive information type entity definition."
 
 # IP Address v4
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Complex pattern that accounts for formatted (periods) and unformatted (no periods) versions of the IPv4 addresses.

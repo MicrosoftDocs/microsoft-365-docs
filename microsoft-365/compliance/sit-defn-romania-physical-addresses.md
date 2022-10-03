@@ -26,6 +26,8 @@ description: "Romania physical addresses sensitive information type entity defin
 
 This unbundled named entity detects patterns related to physical address from Romania. It's also included in the [All Physical Addresses](sit-defn-all-physical-addresses.md) bundled named entity SIT.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Confidence level
 
 Medium

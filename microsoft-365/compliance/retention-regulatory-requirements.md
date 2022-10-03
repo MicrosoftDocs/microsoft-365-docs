@@ -27,6 +27,8 @@ Use the resources on this page to help you meet specific regulatory requirements
 
 These resources are available to download from the [Data Protection Resources, FAQ, and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) page of the Service Trust Portal.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## New Zealand Public Records Act
 
 **Supporting New Zealand's Public Records Act compliance obligations with Microsoft 365** - [Download assessment](https://aka.ms/NZPRA)

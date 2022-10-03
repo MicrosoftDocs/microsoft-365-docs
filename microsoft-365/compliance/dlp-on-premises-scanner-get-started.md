@@ -28,6 +28,8 @@ description: "Set up data loss prevention on-premises scanner"
 
 This article walks you through the prerequisites and configuration for the Microsoft Purview data loss prevention on-premises scanner.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
 ### SKU/subscriptions licensing

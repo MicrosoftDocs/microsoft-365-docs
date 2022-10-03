@@ -24,6 +24,8 @@ description: "Mexico Unique Population Registry Code (CURP) sensitive informatio
 
 # Mexico Unique Population Registry Code (CURP)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 18 character alphanumeric pattern
