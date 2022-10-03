@@ -39,7 +39,7 @@ search.appverid: met150
 - [Endpoint Protection point site system role](/mem/configmgr/protect/deploy-use/endpoint-protection-site-role)
 
 > [!IMPORTANT]
-> The Endpoint Protection point site system role is required so that antivirus and attack surface reduction policies are properly deployed to the targeted endpoints.  Without this role, the endpoints in the device collection will not receive the configured antivirus and attack surface reduction policies.
+> The Endpoint Protection point site system role is required so that antivirus and attack surface reduction policies are properly deployed to the targeted endpoints.  Without this role, the endpoints in the device collection won't receive the configured antivirus and attack surface reduction policies.
 
 You can use Configuration Manager to onboard endpoints to the Microsoft Defender for Endpoint service. 
 
