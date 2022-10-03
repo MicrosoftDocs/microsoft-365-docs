@@ -129,7 +129,6 @@ conceptualContent:
   # Supports up to 3 subsections
   sections:
   - title: Key scenarios
-    summary: TBD
     items:
       # Card
       - title: Protect your Microsoft 365 organization
