@@ -179,17 +179,30 @@ conceptualContent:
            text: Configure 3rd party phishing simulation
 
         # Card
-      - title: Placeholder
+      - title: Enable safe email messages
         links:
-         - url: /microsoft-365/security/defender-endpoint/onboard-configure
+         - url: /microsoft-365/security/office-365-security/create-block-sender-lists-in-office-365
+           itemType: overview
+           text: Create blocked sender lists
+         - url: /microsoft-365/security/office-365-security/responding-to-a-compromised-email-account
            itemType: how-to-guide
-           text: Protect your endpoints
-         - url: /microsoft-365/security/defender/microsoft-secure-score
+           text: Respond to a Compromised Email Account
+         - url: /microsoft-365/security/office-365-security/impersonation-insight
+           itemType: overview
+           text: Identify impersonation
+         - url: /microsoft-365/security/office-365-security/manage-quarantined-messages-and-files
            itemType: how-to-guide
-           text: Assess your security posture and take action
-         - url: /microsoft-365/security/office-365-security/mdo-sec-ops-guide
+           text: Manage quarantined messages
+         - url: /microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user
            itemType: how-to-guide
-           text: Set up operations for monitoring Defender for Office 365
+           text: Find and release quarantined messages
+         - url: /microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams
+           itemType: how-to-guide
+           text: Turn on safe attachments
+         - url: /microsoft-365/security/office-365-security/admin-submission
+           itemType: how-to-guide
+           text: Submit suspected spam
+
    # Card
       - title: Placeholder
         links:
