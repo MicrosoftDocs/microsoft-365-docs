@@ -13,7 +13,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid:
 - MOE150
@@ -39,6 +39,8 @@ To export documents from a review set:
 
 > [!NOTE]
 > Export jobs are retained for the life of the case. However, you must download the content from an export job within 30 days after the export job is complete.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Export options
 

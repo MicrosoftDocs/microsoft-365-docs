@@ -17,9 +17,10 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.collection: 
- - M365-security-compliance
+ - m365-security
  - m365solution-asr-rules
  - highpri
+ - tier1
 ms.date: 09/18/2022
 search.appverid: met150
 ---
@@ -71,7 +72,11 @@ You can use Microsoft Endpoint Manager (MEM) Endpoint Security to configure cust
 
 8. [Optional] In the **Scope tags** pane, you can add tag information to specific devices. You can also use role-based access control and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Learn more: [Use role-based access control (RBAC) and scope tags for distributed IT in Intune](/mem/intune/fundamentals/scope-tags).
 9. In the **Assignments** pane, you can deploy or "assign" the profile to your user or device groups. Learn more: [Assign device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
-10. Review your settings in the **Review + create** pane. Click **Create** to apply the rules.
+   
+    >[!Note]
+    > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
+
+1. Review your settings in the **Review + create** pane. Click **Create** to apply the rules.
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/asr-mem-review-create.png" alt-text="The Create profile page" lightbox="images/asr-mem-review-create.png":::

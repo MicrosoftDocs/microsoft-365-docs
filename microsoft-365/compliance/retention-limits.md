@@ -11,7 +11,8 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
@@ -25,6 +26,8 @@ description: "Understand the maximum number of policies and items per policy for
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 When you use [retention policies and retention label policies](retention.md#retention-policies-and-retention-labels) to automatically retain or delete data for your organization, there are some maximum numbers to be aware of.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Maximum number of retention labels per tenant
 

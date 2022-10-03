@@ -13,7 +13,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery 
 search.appverid: 
 - MOE150
@@ -23,6 +23,8 @@ search.appverid:
 # Set up attorney-client privilege detection in eDiscovery (Premium)
 
 A major and costly aspect of the review phase of any eDiscovery process is reviewing documents for privileged content. Microsoft Purview eDiscovery (Premium) provides machine learning-based detection of privileged content to make this process more efficient. This feature is called *attorney-client privilege detection*.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How does it work?
 

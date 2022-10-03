@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid: 
 - MOE150
@@ -22,6 +22,8 @@ search.appverid:
 # Close, reopen, and delete a eDiscovery (Standard) case
 
 This article describes how to close, reopen, and delete Microsoft Purview eDiscovery (Standard) cases in Microsoft 365.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Close a case
 

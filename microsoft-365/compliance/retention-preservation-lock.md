@@ -9,7 +9,9 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection: 
+- purview-compliance
+- tier1
 ms.localizationpriority: high
 search.appverid: 
 - MOE150
@@ -44,6 +46,8 @@ In summary, a locked policy can be increased or extended, but it can't be reduce
 > Before you lock a retention policy or retention label policy, it's critical that you understand the impact and confirm whether it's required for your organization. For example, it might be needed to meet regulatory requirements. Administrators won't be able to disable or delete these policies after the preservation lock is applied.
 
 Configure Preservation Lock after you've created a [retention policy](create-retention-policies.md), or a retention label policy that you [publish](create-apply-retention-labels.md) and contains only labels that [mark items as regulatory records](records-management.md#records).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How to lock a retention policy or retention label policy
 

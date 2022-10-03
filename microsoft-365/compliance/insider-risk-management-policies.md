@@ -13,7 +13,7 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
@@ -25,6 +25,8 @@ ms.custom: admindeeplinkCOMPLIANCE
 Insider risk management policies determine which users are in-scope and which types of risk indicators are configured for alerts. You can quickly create a security policy that applies to all users in your organization or define individual users or groups for management in a policy. Policies support content priorities to focus policy conditions on multiple or specific Microsoft Teams, SharePoint sites, data sensitivity types, and data labels. Using templates, you can select specific risk indicators and customize event thresholds for policy indicators, effectively customizing risk scores, and level and frequency of alerts. Using quick policies, you can even create data leaks or data theft by departing user policies that automatically define policy conditions based on results from the latest analytics scans. Additionally, risk score boosters and anomaly detections help identify risky user activity that is of higher importance or more unusual. Policy windows allow you to define the time frame to apply the policy to alert activities and are used to determine the duration of the policy once activated.
 
 Check out the [Insider Risk Management Policies Configuration video](https://www.youtube.com/watch?v=kudK5ajZTUo) for an overview of how policies created with built-in policy templates can help you to quickly act on potential risks.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Policy dashboard
 

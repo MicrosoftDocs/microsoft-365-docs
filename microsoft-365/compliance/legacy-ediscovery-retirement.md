@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 ms.custom: admindeeplinkCOMPLIANCE
 ---
@@ -61,6 +61,8 @@ As a result of this new and improved eDiscovery functionality in the compliance 
 > The eDiscovery functionality being retired only applies to cloud-based versions of Microsoft 365 and Office 365. eDiscovery functionality in on-premises versions of Exchange and SharePoint will still be supported until further notice.
 
 The following sections in this article provide guidance about each feature being retired. This information including timelines and alternative tools that you can use instead of the retired tool.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## In-Place eDiscovery and In-Place Holds in the Exchange admin center 
 

@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid:
 - MOE150
@@ -26,6 +26,8 @@ ms.custom:
 # Feature reference for Content search
 
 This article describes features and functionality of Content search.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Content search limits
 

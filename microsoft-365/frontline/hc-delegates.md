@@ -18,6 +18,8 @@ ms.collection:
   - Teams_ITAdmin_Healthcare
   - microsoftcloud-healthcare
   - m365-frontline
+  - highpri
+  - EngageScoreSep2022
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

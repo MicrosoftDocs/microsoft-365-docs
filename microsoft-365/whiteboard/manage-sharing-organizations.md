@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.collection:
 ms.localizationpriority: medium
 description: Learn how to manage sharing for Microsoft Whiteboard.
+
 ---
 
 # Manage sharing for Microsoft Whiteboard
@@ -26,9 +27,7 @@ There's more capability for temporary collaboration by external and shared devic
 
 In this case, Whiteboard provides temporary viewing and collaboration on the whiteboard during the Teams meeting only. A share link isn't created and Whiteboard doesn't grant access to the file.
 
-If you have external sharing enabled for OneDrive for Business, no further action is required.
-
-If you restrict external sharing for OneDrive for Business, you can keep it restricted, and just enable a new setting in order for external and shared device accounts to work. To do so, follow these steps:
+To enable this behavior, follow these steps:
 
 1. Ensure that Whiteboard is enabled for your organization. For more information, see [Manage access to Whiteboard](manage-whiteboard-access-organizations.md).
 
@@ -90,5 +89,7 @@ When you share whiteboards from the web, desktop, or mobile clients, you can cho
 [Manage access to Whiteboard](manage-whiteboard-access-organizations.md)
 
 [Manage data for Whiteboard](manage-data-organizations.md)
+
+[Network requirements for Microsoft Defender of Cloud Apps](https://learn.microsoft.com/defender-cloud-apps/network-requirements)
 
 [Deploy Whiteboard on Windows](deploy-on-windows-organizations.md)

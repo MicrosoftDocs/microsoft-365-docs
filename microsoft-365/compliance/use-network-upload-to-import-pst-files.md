@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - import
 search.appverid:
 - MOE150
@@ -43,6 +43,8 @@ Here are the step-by-step instructions required to use network upload to bulk-im
 [Step 6: Filter data and start the PST Import job](#step-6-filter-data-and-start-the-pst-import-job)
 
 You have to perform Step 1 only once to import PST files to Microsoft 365 mailboxes. After you perform these steps, follow Step 2 through Step 6 each time you want to upload and import a batch of PST files.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you import PST files
   

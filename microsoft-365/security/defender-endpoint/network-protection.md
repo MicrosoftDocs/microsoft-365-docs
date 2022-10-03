@@ -17,8 +17,8 @@ ms.custom: asr
 ms.subservice: mde
 ms.topic: overview
 ms.collection: 
-- m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
+- tier2
 search.appverid: met150
 ---
 

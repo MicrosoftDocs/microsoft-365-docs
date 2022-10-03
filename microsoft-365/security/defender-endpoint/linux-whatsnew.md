@@ -12,7 +12,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
+- m365-security
+- tier3
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
@@ -45,7 +46,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 - Fixes a kernel hang observed on select customer workloads running mdatp version 101.75.43. After RCA this was attributed to a race condition while releasing the ownership of a sensor file descriptor. The race condition was exposed due to a recent product change in the shutdown path. Customers on newer Kernel versions (5.1+) are not impacted by this issue.
 
-- When upgrading from mdatp version 101.75.43, run the following commands before attempting to upgrade to version 101.80.97
+- When upgrading from mdatp version 101.75.43 or 101.78.13, run the following commands before attempting to upgrade to version 101.80.97
 
 ```
 sudo mdatp config real-time-protection --value=disabled
@@ -55,6 +56,25 @@ sudo systemctl disable mdatp
 
 <br/><br/>
 </details>
+
+<details>
+   <summary>Aug-2022 (Build: 101.78.13, | Release version: 30.122072.17813.0)</summary>
+
+ &ensp;Released: **August 24, 2022**<br/>
+ &ensp;Published: **August 24, 2022**<br/>
+ &ensp;Build: **101.78.13**<br/>
+ &ensp;Release version: **30.122072.17813.0**<br/>
+ &ensp;Engine version: **1.1.19300.3**<br/>
+ &ensp;Signature version: **1.369.395.0**<br/>
+
+ **What's new**
+
+ - Rolled back due to reliability issues
+
+ </br>
+
+ <br/><br/>
+ </details>
 
 <details>
   <summary>Aug-2022 (Build: 101.75.43 | Release version: 30.122071.17543.0)</summary>

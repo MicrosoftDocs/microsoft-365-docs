@@ -10,7 +10,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
@@ -40,6 +41,8 @@ When you use Office on the web to create or edit a file, the default sensitivity
 
 - File upload: it can take a few minutes for the label to be applied.
 - Microsoft 365 Apps: the label is applied after the app is closed.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Will an existing label be overridden?
 

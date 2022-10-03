@@ -10,7 +10,7 @@ ms.topic: article
 ms.date: 11/18/2019
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 ms.custom: 
   - Ent_Solutions
   - SIEM

@@ -14,7 +14,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - content-search
 search.appverid:
 - MOE150
@@ -29,6 +29,8 @@ After a Content search is successfully run, you can export the search results to
   
 Exporting the results of a Content search involves preparing the results, and then downloading them to a local computer. These steps for exporting search results also apply to exporting the results of a search that's associated with Microsoft Purview eDiscovery (Standard) cases.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you export search results
 
 - To export search results, you have to be assigned the Export management role in Microsoft Purview compliance portal. This role is assigned to the built-in eDiscovery Manager role group. It isn't assigned by default to the Organization Management role group. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
