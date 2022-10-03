@@ -152,15 +152,19 @@ conceptualContent:
    # Card
       - title: Respond to security incidents
         links:
+         - url: /microsoft-365/security/defender/incidents-overview
+           itemType: overview
+           text: Incident response with Microsoft 365 Defender
          - url: /microsoft-365/security/defender/microsoft-365-defender-portal
            itemType: concept
            text: Start using the Microsoft 365 Defender Portal
+         - url: /microsoft-365/security/defender/manage-incidents
+           itemType: how-to-guide
+           text: Manage incidents
          - url: /microsoft-365/security/defender/first-incident-overview
            itemType: how-to-guide
            text: Respond to your first incident
-         - url: /microsoft-365/security/defender-endpoint/attack-simulations
-           itemType: concept
-           text: Simulate an attack (Defender for Endpoint)    
+
   # Card
       - title: Train your employees
         links:
