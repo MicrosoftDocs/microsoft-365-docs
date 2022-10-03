@@ -87,6 +87,7 @@ After you've downloaded the app, navigate to the Microsoft 365 setup wizard in y
 
 You can learn more about the steps by visiting the following pages:
 - If you would like to get started without setting up the Microsoft 365 support integration app, you can select the **Continue without any setup** option. This option will continue to provide basic recommended solutions.
+
 ![MicrosoftTeams-image (2)](https://user-images.githubusercontent.com/93688542/193369125-a2fff44e-faa6-48e8-be9c-a3876026741e.png)
 - If your ServiceNow environment allows Basic Authentication (access with ServiceNow user credential) for inbound webservice calls, then follow instructions in [Set up Microsoft 365 support integration with ServiceNow Basic Authentication](servicenow-basic-authentication.md).
 - If your ServiceNow environment does NOT allows Basic Authentication (access with ServiceNow user credential) for inbound webservice calls, then follow instructions in [Set up Microsoft 365 support integration with Azure AD Auth Token](servicenow-aad-oauth-token.md).
