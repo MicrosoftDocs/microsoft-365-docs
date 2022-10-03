@@ -131,17 +131,24 @@ conceptualContent:
   - title: Key scenarios
     items:
       # Card
-      - title: Protect your Microsoft 365 organization
+      - title: Protect against and recover from ransomware
         links:
-         - url: /microsoft-365/security/defender-endpoint/onboard-configure
+         - url: /microsoft-365/compliance/assurance/assurance-malware-and-ransomware-protection
+           itemType: concept
+           text: What is ransomware?
+         - url: /microsoft-365/compliance/assurance/assurance-malware-and-ransomware-protection
+           itemType: concept
+           text: Malware and ransomware protection
+         - url: /microsoft-365/solutions/ransomware-protection-microsoft-365
+           itemType: overview
+           text: Deploy ransomware protection
+         - url: /microsoft-365/office-365-security/recover-from-ransomware
            itemType: how-to-guide
-           text: Protect your endpoints
-         - url: /microsoft-365/security/defender/microsoft-secure-score
-           itemType: how-to-guide
-           text: Assess your security posture and take action
-         - url: /microsoft-365/security/office-365-security/mdo-sec-ops-guide
-           itemType: how-to-guide
-           text: Set up operations for monitoring Defender for Office 365
+           text: Recover from a ransomware attack
+         - url: /microsoft-365/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online
+           itemType: overview
+           text: Handling ransomware in Sharepoint Online
+
    # Card
       - title: Respond to security incidents
         links:
