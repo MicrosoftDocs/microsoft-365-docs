@@ -17,7 +17,7 @@ manager: dansimp
 ms.subservice: mde
 ms.collection: 
 - m365-security
-- tier1
+- tier2
 search.appverid: met150
 ---
 
