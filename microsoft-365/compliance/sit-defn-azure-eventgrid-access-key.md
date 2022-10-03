@@ -24,6 +24,8 @@ description: "Azure EventGrid access key sensitive information type entity defin
 
 # Azure EventGrid access key (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 43 characters consisting of letters, digits, and special characters ending in an equals sign (=) that is not part of the pattern.

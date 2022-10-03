@@ -24,6 +24,8 @@ description: "Netherlands passport number sensitive information type entity defi
 
 # Netherlands passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine letters or digits with no spaces or delimiters

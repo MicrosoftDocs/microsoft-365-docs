@@ -24,6 +24,8 @@ description: "Azure Cognitive search API key sensitive information type entity d
 
 # Azure Cognitive Search API key (preview) 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 32 characters consisting of letters and digits.

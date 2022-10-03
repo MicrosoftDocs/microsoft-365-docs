@@ -26,6 +26,8 @@ Once the MX, A/AAAA and DNSSEC-related resource records for a domain are returne
 
 After receiving the authentic TLSA record, the sending mail server establishes an SMTP connection to the MX host associated with the authentic TLSA record. The sending mail server will try to set up TLS and compare the server's TLS certificate with the data in the TLSA record to validate that the destination mail server connected to the sender is the legitimate receiving mail server. The message will be transmitted (using TLS) if authentication succeeds. When authentication fails or if TLS isn't supported by the destination server, Exchange Online will retry the entire validation process beginning with a DNS query for the same destination domain again after 15 minutes, then 15 minutes after that, then every hour for the next 24 hours. If authentication continues to fail after 24 hours of retrying, the message will expire and an NDR with error details will be generated and sent to the sender.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## What are the components of DANE?
 
 ### TLSA Resource Record

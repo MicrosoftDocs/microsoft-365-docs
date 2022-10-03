@@ -23,6 +23,8 @@ The Slack eDiscovery data connector provided by Microsoft helps you to import an
 
 If you’d like to participate in the preview, please reach out to the team at dcfeedback@microsoft.com.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Overview of archiving Slack eDiscovery data
 
 The following overview explains the process of using a Microsoft data connector to archive the Slack data in Microsoft 365.

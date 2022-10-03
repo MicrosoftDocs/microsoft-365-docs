@@ -24,6 +24,8 @@ description: "Slovakia passport number sensitive information type entity definit
 
 # Slovakia passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 eight or nine character alphanumeric pattern

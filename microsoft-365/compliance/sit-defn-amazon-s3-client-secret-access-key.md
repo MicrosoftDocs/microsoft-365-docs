@@ -24,6 +24,8 @@ description: "Amazon S3 client secret access key sensitive information type enti
 
 # Amazon S3 client secret access key (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 40 characters consisting of letters, digits, and special characters. 

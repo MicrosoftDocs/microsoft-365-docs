@@ -24,6 +24,8 @@ description: "India permanent account number (PAN) sensitive information type en
 
 # India permanent account number (PAN)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 10 letters or digits

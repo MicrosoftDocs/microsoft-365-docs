@@ -24,6 +24,8 @@ description: "EU debit card number sensitive information type entity definition.
 
 # EU debit card number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 16 to 19 digits

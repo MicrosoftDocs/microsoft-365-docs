@@ -26,6 +26,8 @@ description: "All Physical Addresses sensitive information type entity definitio
 
 All physical addresses is a bundled entity SIT, which detects patterns related to physical addresses from all supported countries/regions.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Various

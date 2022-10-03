@@ -24,6 +24,8 @@ description: "Finland national ID sensitive information type entity definition."
 
 # Finland national ID
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 six digits plus a character indicating a century plus three digits plus a check digit

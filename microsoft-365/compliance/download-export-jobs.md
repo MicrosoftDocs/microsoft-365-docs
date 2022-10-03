@@ -25,6 +25,8 @@ ms.custom: seo-marvel-mar2020
 
 When you export documents from a review set in an eDiscovery (Premium) case, you have the option to export them to an Azure Storage account managed by your organization. If you use this option, the documents are uploaded to your Azure Storage location. After they are exported, you can access the documents (and download them to a local computer or other location) by using the Azure Storage Explorer. This article provides instructions for how to export documents to your Azure Storage account and the use the Azure Storage Explorer to connect to an Azure Storage location to download the exported documents. For more information about Azure Storage Explorer, see [Use Azure Storage Explorer](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you export documents from a review set
 
 - You need to provide a shared access signature (SAS) token for your Azure Storage account and the URL for a specific container in the storage account to export documents from a review set. Be sure to have these at hand (for example, copied to a text file) when you perform Step 2

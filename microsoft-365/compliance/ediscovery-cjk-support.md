@@ -31,6 +31,8 @@ Microsoft Purview eDiscovery (Premium) supports double-byte character set langua
 
 - When you [analyze case data in a review set](analyzing-data-in-review-set.md) by using near duplicate detection, email threading, and themes analytics.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Frequently asked questions
 
 **How do I create a search to collect items that contains CJK characters?**

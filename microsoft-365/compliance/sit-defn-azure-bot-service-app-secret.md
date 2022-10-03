@@ -24,6 +24,8 @@ description: "Azure Bot service app secret sensitive information type entity def
 
 # Azure Bot service app secret (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of up to 40 characters consisting of letters, digits, and special characters.

@@ -25,6 +25,8 @@ description: "Lithuania personal code sensitive information type entity definiti
 
 # Lithuania personal code
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11 digits without spaces and delimiters

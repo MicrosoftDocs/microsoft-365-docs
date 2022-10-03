@@ -25,6 +25,8 @@ description: "Latvia passport number sensitive information type entity definitio
 
 # Latvia passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 two letters or digits followed by seven digits with no spaces or delimiters

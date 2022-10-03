@@ -39,6 +39,8 @@ Content Search and eDiscovery-related activities (for Microsoft Purview eDiscove
   
 For more information about searching the audit log, the permissions that are required, and exporting search results, see [Search the audit log in the compliance portal](search-the-audit-log-in-security-and-compliance.md).
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How to search for and view eDiscovery activities
 
 Currently, you have to do a few specific things to view eDiscovery activities in the audit log. Here's how.

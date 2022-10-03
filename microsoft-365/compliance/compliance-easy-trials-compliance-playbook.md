@@ -24,6 +24,8 @@ ms.custom: trial-playbook
 
 Welcome to the Microsoft Purview solutions trial playbook. This playbook will help you make the most of your free trial by helping you discover robust and comprehensive capabilities of Microsoft Purview and security products.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Compliance actions with Microsoft Purview
 
 Easily and quickly start trying Microsoft’s compliance solutions without changing your organization’s metadata.

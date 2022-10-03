@@ -26,6 +26,8 @@ ms.custom:
 
 You can use either Exchange mail flow rules or Microsoft Purview data loss prevention (DLP) to create a sensitive information type policy with Office 365 Message Encryption. To create an Exchange mail flow rule, you can use either the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> or PowerShell.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## To create the policy by using mail flow rules in the EAC
 
 Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> and go to **Mail flow** > **Rules**. On the Rules page, create a rule that applies Office 365 Message Encryption. You can create a rule based on conditions such as the presence of certain keywords or sensitive information types in the message or attachment.

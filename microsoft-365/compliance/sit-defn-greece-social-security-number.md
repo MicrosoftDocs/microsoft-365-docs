@@ -24,6 +24,8 @@ description: "Greece Social Security Number (AMKA) sensitive information type en
 
 # Greece Social Security Number (AMKA)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11 digits without spaces and delimiters

@@ -24,6 +24,8 @@ description: "Spain tax identification number sensitive information type entity 
 
 # Spain tax identification number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 seven or eight digits and one or two letters in the specified pattern

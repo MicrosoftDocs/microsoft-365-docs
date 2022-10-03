@@ -24,6 +24,8 @@ description: "Spain social security number (SSN) sensitive information type enti
 
 # Spain social security number (SSN)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11-12 digits

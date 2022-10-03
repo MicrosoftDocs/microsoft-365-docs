@@ -24,6 +24,8 @@ description: "Cyprus passport number sensitive information type entity definitio
 
 # Cyprus passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 one letter followed by 6-8 digits with no spaces or delimiters

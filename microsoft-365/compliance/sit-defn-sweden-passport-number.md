@@ -24,6 +24,8 @@ description: "Sweden passport number sensitive information type entity definitio
 
 # Sweden passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 eight digits

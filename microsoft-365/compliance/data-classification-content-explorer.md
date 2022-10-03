@@ -27,6 +27,8 @@ description: "Content explorer allows you to natively view labeled items."
 
 Content explorer allows you to natively view the items that were summarized on the overview page.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Prerequisites
 
 For licensing requirements, see [Information Protection: Data Classification Analytics: Overview Content & Activity Explorer](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)

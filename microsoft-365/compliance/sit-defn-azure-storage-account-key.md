@@ -24,6 +24,8 @@ description: "Azure storage account key sensitive information type entity defini
 
 # Azure storage account key
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 The string `DefaultEndpointsProtocol` followed by the characters and strings outlined in the pattern below, including the string `AccountKey`.

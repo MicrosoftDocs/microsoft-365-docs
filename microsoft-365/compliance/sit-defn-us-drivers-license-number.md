@@ -24,6 +24,8 @@ description: "U.S. driver's license number sensitive information type entity def
 
 # U.S. drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Depends on the state

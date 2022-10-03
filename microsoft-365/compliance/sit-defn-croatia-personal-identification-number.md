@@ -25,6 +25,8 @@ description: "Croatia personal identification (OIB) number sensitive information
 
 # Croatia personal identification (OIB) number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11 digits
