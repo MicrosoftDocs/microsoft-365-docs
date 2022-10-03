@@ -325,7 +325,7 @@ In this scenario, we'll define a group of printers that the legal department use
     1. USB vendor ID
     1. IP range
     1. Print to file
-    1. Universal printer
+    1. Universal print deployed on a printer
     1. Corporate printer
     1. Print to local
 1. Select **Close**.
