@@ -105,21 +105,21 @@ productDirectory:
 additionalContent:
   # Supports up to 4 subsections
   sections:
-    - title: Learning, Training, and Community # < 60 chars (optional)
-      summary: Get your learn on # < 160 chars (optional)
+    - title: Learning, Training, and Certification # < 60 chars (optional)
+      summary: Explore topics in-depth through guided paths and training modules or prepare for the next step in your career with a certification.  # < 160 chars (optional)
       items:
         # Card
         - title: Microsoft 365 Defender Ninja training
-          summary: Enhance your cybersecurity skills with the Microsoft 365 Defender Ninja training
+          summary: Enhance your cybersecurity skills with the Microsoft 365 Defender Ninja training.
           url: https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/become-a-microsoft-365-defender-ninja/ba-p/1789376
                   # Card
         - title: Recommended Learning Paths
-          summary: Start your Microsoft 365 Defender learning journey with our recommended learning paths
-          url: https://docs.microsoft.com/en-us/learn/m365/defender
+          summary: Start your Microsoft 365 Defender learning journey with our recommended learning paths.
+          url: https://learn.microsoft.com/en-us/training/m365/defender
         # Card
         - title: Security Operations Analyst Certification & Exams
-          summary: Prepare yourself for Microsoft Security certifications with learning and training
-          url: https://docs.microsoft.com/en-us/learn/certifications/browse/
+          summary: Prepare yourself for Microsoft Security certifications.
+          url: https://learn.microsoft.com/en-us/certifications/browse/
           
 # conceptualContent section (optional)
 conceptualContent:
