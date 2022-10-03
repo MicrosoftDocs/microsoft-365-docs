@@ -100,12 +100,12 @@ Security intelligence update version: x.xxx.xxxx.x <br/>
 - Improved processing of Defender fallback order on Server SKU
 - Fixed Defender updates during OOBE process
 - Fixed Trusted Installer security descriptor vulnerability
-- Fixed Microsoft Defender Antivirus exclusions visibility
+- Fixed [Microsoft Defender Antivirus exclusions](configure-exclusions-microsoft-defender-antivirus.md) visibility
 - Fixed output of fallback order of the PowerShell cmdlet
 - Fixed Defender Platform update failure on Server Core 2019 SKUs
 - Improved hardening support for Defender disablement configurations on Server SKUs
-- Improved Defender configuration logics for tamper protection on servers
-- Improved WARN mode for ASR rule
+- Improved Defender configuration logics for [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) on servers
+- Improved WARN mode for [ASR rule](attack-surface-reduction-rules-reference.md)
 - Improved certificate handling of OSX  
 - Improved logging for scanning FilesStash location
 - Beginning with platform version 4.18.2208.0 and later: If a server has been [onboarded to Microsoft Defender for Endpoint](onboard-configure.md#onboard-devices-to-the-service), the "Turn off Windows Defender" [group policy setting](configure-endpoints-gp.md#update-endpoint-protection-configuration) will no longer completely disable Windows Defender Antivirus on Windows Server 2012 R2 and later operating systems. Instead, it will be either ignored (if [ForceDefenderPassiveMode](switch-to-mde-phase-2.md#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) is configured explicitly) or it will place Microsoft Defender Antivirus into [passive mode](microsoft-defender-antivirus-windows.md#comparing-active-mode-passive-mode-and-disabled-mode) (if `ForceDefenderPassiveMode` is not configured). Moreover, [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) will allow a switch to active mode via changing `ForceDefenderPassiveMode` to `0`, but not to passive mode. Note that these changes apply only to servers onboarded to Microsoft Defender for Endpoint. For more information, please refer to [Microsoft Defender Antivirus compatibility with other security products](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)
