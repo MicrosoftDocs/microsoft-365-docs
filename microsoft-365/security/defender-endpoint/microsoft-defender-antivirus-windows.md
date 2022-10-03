@@ -77,7 +77,7 @@ You'll see the name of your antivirus/antimalware solution on the security provi
 
    - **Passive mode** means Microsoft Defender Antivirus running, but is not the primary antivirus/antimalware product on your device. Passive mode is only available for devices that are onboarded to Microsoft Defender for Endpoint and that meet certain requirements. To learn more, see [Requirements for Microsoft Defender Antivirus to run in passive mode](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode).
 
-   - **EDR Block Mode** means Microsoft Defender Antivirus is running and [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md), a capability in Microsoft Defender for Endpoint, is enabled.
+   - **EDR Block Mode** means Microsoft Defender Antivirus is running and [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md), a capability in Microsoft Defender for Endpoint, is enabled. However, one has to check the registry key ForceDefenderPassiveMode. If equal to 0, than in Normal mode, otherwise Passive mode.
 
    - **SxS Passive Mode** means Microsoft Defender Antivirus is running alongside another antivirus/antimalware product, and  [limited periodic scanning is used](limited-periodic-scanning-microsoft-defender-antivirus.md).
 
