@@ -90,7 +90,7 @@ You can select from the following policy templates to quickly get started with i
 
 - [Data theft by departing users](insider-risk-management-policies.md#data-theft-by-departing-users)
 - [General data leaks](insider-risk-management-policies.md#general-data-leaks)
-- [Data leaks by priority users (preview)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
+- [Data leaks by priority users](insider-risk-management-policies.md#data-leaks-by-priority-users)
 - [Data leaks by disgruntled users (preview)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [General security policy violations (preview)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [General patient data misuse (preview)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
@@ -161,7 +161,7 @@ When users leave an organization, either voluntarily or as the result of termina
 In most cases, users try their best to properly handle sensitive or confidential information. But occasionally users may make mistakes and information is accidentally shared outside your organization or in violation of your information protection policies. In other circumstances, users may intentionally leak or share sensitive and confidential information with malicious intent and for potential personal gain. Insider risk management policies created using the following Data leaks policy templates automatically detect activities typically associated with sharing sensitive or confidential information:
 
 - [General data leaks](insider-risk-management-policies.md#general-data-leaks)
-- [Data leaks by priority users (preview)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
+- [Data leaks by priority users)](insider-risk-management-policies.md#data-leaks-by-priority-users)
 - [Data leaks by disgruntled users (preview)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 
 ### Intentional or unintentional security policy violations (preview)
@@ -178,7 +178,7 @@ Users typically have a large degree of control when managing their devices in th
 Users in your organization may have different levels of risk depending on their position, level of access to sensitive information, or risk history. This structure may include members of your organization's executive leadership team, IT administrators that have extensive data and network access privileges, or users with a past history of risky activities. In these circumstances, closer inspection and more aggressive risk scoring are important to help surface alerts for investigation and quick action. To help identify risky activities for these types of users, you can create priority user groups and create policies from the following policy templates:
 
 - [Security policy violations by priority users (preview)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
-- [Data leaks by priority users (preview)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
+- [Data leaks by priority users](insider-risk-management-policies.md#data-leaks-by-priority-users)
 
 ### Healthcare (preview)
 
