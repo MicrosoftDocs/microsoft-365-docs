@@ -125,7 +125,7 @@ On the **All placeholders** panel:
    > [!TIP]
    > When you enable the **Allow new values** option (only allowed for open term sets), users are more likely to add redundant terms in the term store. Redundant terms can make it difficult for admins to manage a term set.
 
-### Save a modern template as a draft
+## Save a modern template as a draft
 
 You can create as many fields as you think are necessary. When you're done, you can choose to save the template as a draft.
 
@@ -133,7 +133,7 @@ You can create as many fields as you think are necessary. When you're done, you 
 
 2. To view, edit, or publish saved drafts from the **Draft templates** dropdown menu in the **Modern templates**, select **New** > **Edit New menu** from the document library.
 
-### Publish a modern template
+## Publish a modern template
 
 When you have completed adding all relevant fields to the template and you want to make it available for use for other users in the document library, you can publish the template.
 
@@ -141,7 +141,7 @@ When you have completed adding all relevant fields to the template and you want 
 
 2. To view, edit, or unpublish *published* templates from the **Published templates** dropdown menu in the **Modern templates** section, select **New** > **Edit New menu** from the document library. 
 
-### Edit a modern template
+## Edit a modern template
 
 If you need to edit an existing template or to delete or unpublish a template, follow these steps.
 
