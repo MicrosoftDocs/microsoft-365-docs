@@ -72,6 +72,9 @@ The role-based access control model for Adoption Score helps organizations furth
 Microsoft is committed to protecting individual privacy. This [privacy document](privacy.md)  explains the controls we provide you, as your organization's IT administrator, to ensure that the information is actionable while not compromising the trust you place in Microsoft.
 
 You can access the experience from Microsoft 365 Admin home under **Reports** > **Adoption Score**.
+
+> [!NOTE]
+> This feature is not available in GCC High, GCC and DOD tenants.
   
 ## How the score is calculated
 
