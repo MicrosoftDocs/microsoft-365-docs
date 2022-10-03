@@ -15,7 +15,9 @@ ms.localizationpriority:  medium
 description: Learn how to create a modern template in Microsoft SharePoint Syntex.
 ---
 
-## Create a modern template in Microsoft SharePoint Syntex
+# Create a modern template in Microsoft SharePoint Syntex
+
+## Upload a document to create a modern template
 
 Follow these steps to create a modern template.
 
@@ -23,14 +25,14 @@ Follow these steps to create a modern template.
 
    ![Screenshot of document library with the Create modern template option highlighted.](../media/content-understanding/content-assembly-create-template-1.png)
 
-2. Choose an existing Word document that you want to use as a basis for creating a modern template, and then select **Open**.
+2. Choose to upload a Word document from your organization’s SharePoint or OneDrive, or from your local storage.
 
    ![Screenshot of upload page where you select a document.](../media/content-understanding/content-assembly-create-template-2.png)
 
    > [!NOTE]
    > Currently, you can upload only Word documents (.docx extension) to create templates. Upload Word documents from your local storage or desktop.
 
-3. After you upload the document, the document is displayed in the template studio where you can convert the document to a template.
+3. After you upload the document, the document is displayed in the template studio where you can convert the document to a template by adding fields.
 
    ![Screenshot of the document in the template viewer.](../media/content-understanding/content-assembly-create-template-3.png)
 
@@ -38,6 +40,7 @@ Follow these steps to create a modern template.
 
    ![Screenshot of the template viewer showing the name of the document to select to rename.](../media/content-understanding/content-assembly-create-template-3a.png)
 
+<!---
 5. Create placeholders for all dynamic text in the document that users might want to change from one document to another. For example, you might want to create a placeholder for input such as company name, client name, address, phone number, or date.
 
     To create a placeholder, select the text (such as the date). The **All placeholders** panel will open, where you'll give the placeholder a relevant name and choose the type of input you want to associate with the placeholder.
@@ -52,8 +55,11 @@ Follow these steps to create a modern template.
 
    > [!NOTE]
    > You can create placeholders for text, and also placeholders for text within cells in a table. However, images, smart art, complete tables, and bulleted lists are currently not supported.   
+--->
 
-## Associate a placeholder by entering text or selecting a date
+## Associate fields with different data sources
+
+### Associate a placeholder by entering text or selecting a date
 
 On the **All placeholders** panel:
 
@@ -70,7 +76,7 @@ On the **All placeholders** panel:
    > [!NOTE]
    > You can configure multiple date formatters such as MM/DD/YYYY, DD/MM/YYYY, YYYY/MM/DD, and Month DD, including setting time in both 12-hour and 24-hour format. 
 
-## Associate a placeholder by selecting from choices in a column of a list or library
+### Associate a placeholder by selecting from choices in a column of a list or library
 
 On the **All placeholders** panel:
 
@@ -96,7 +102,7 @@ On the **All placeholders** panel:
 
 6. If you want users to be able to add inputs manually, in addition to choosing from a list, select **Allow authors to add new choices**. In this case, the default for the manual input data type is *Single line of text*. Also the values input by the authors will only be used to generate the document. They won't be added to the SharePoint list.
 
-## Associate a placeholder by selecting from managed metadata term set or term
+### Associate a placeholder by selecting from managed metadata term set or term
 
 On the **All placeholders** panel:
 
@@ -119,13 +125,23 @@ On the **All placeholders** panel:
    > [!TIP]
    > When you enable the **Allow new values** option (only allowed for open term sets), users are more likely to add redundant terms in the term store. Redundant terms can make it difficult for admins to manage a term set.
 
-You can create as many placeholders as you think are necessary. When you're done, you can choose to save the template as a draft or publish the template.
+### Save a modern template as a draft
 
-   - **Save draft** – Saves the template as a draft and you can access it later. You can view, edit, or publish saved drafts from the **Modern templates** section by selecting **New** > **Edit New menu** from the document library.
- 
-   - **Publish** – Publishes the template to be used by other users in the organization to create documents. You can view, edit, or unpublish *published* templates from the **Modern templates** section by selecting **New** > **Edit New menu** from the document library. 
+You can create as many fields as you think are necessary. When you're done, you can choose to save the template as a draft.
 
-## Edit a modern template
+1. Select **Save draft** to save the template as a draft and you can access it later.
+
+2. To view, edit, or publish saved drafts from the **Draft templates** dropdown menu in the **Modern templates**, select **New** > **Edit New menu** from the document library.
+
+### Publish a modern template
+
+When you have completed adding all relevant fields to the template and you want to make it available for use for other users in the document library, you can publish the template.
+
+1. Select **Publish** to publish the template to be used by other users in the organization to create documents.
+
+2. To view, edit, or unpublish *published* templates from the **Published templates** dropdown menu in the **Modern templates** section, select **New** > **Edit New menu** from the document library. 
+
+### Edit a modern template
 
 If you need to edit an existing template or to delete or unpublish a template, follow these steps.
 
