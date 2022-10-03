@@ -18,15 +18,15 @@ ms.collection:
 
 # Data Residency for Viva Topics
 
-##Summary
+## Summary
 
 Service documentation:  <a href="https://learn.microsoft.com/en-us/viva/topics/topic-experiences-overview" target="_blank">**Microsoft Viva Topics overview**</a>
 
 Capability summary: Viva Topics uses Microsoft AI technology, Microsoft 365, Microsoft Graph, Search, and other components and services to bring knowledge to your users in the Microsoft 365 apps they use everyday, starting with SharePoint modern pages, Outlook, Microsoft Search, and Search in Word, PowerPoint, and Excel.
 
-##Data Residency commitments available
+## Data Residency commitments available
 
-###Option 1: Advanced Data Residency add-on
+### Option 1: Advanced Data Residency add-on
 
 Required Conditions:
 
@@ -45,6 +45,6 @@ The following customer data will be stored in the related *Geography*:
 
 -The administration configuration data is stored within the relevant *Geographies*.
 
-##Migration 
+## Migration 
 
 Data storage is maintained within Exchange Online, SharePoint Online and Microsoft Teams.  Migration processes are handled in those workloads.
