@@ -1,6 +1,6 @@
 ---
-title: Professional Services supported by Microsoft Defender for Endpoint
-description: See the list of professional services that Microsoft Defender for Endpoint integrates with.
+title: Professional Services supported by Microsoft 365 Defender
+description: See the list of professional services that Microsoft 365 Defender can integrate with.
 keywords: professional service provider, mssp, configure, integration, protect, evolve, educate, respond, 
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -17,7 +17,7 @@ ms.subservice: mde
 search.appverid: met150
 ---
 
-# Professional Services supported by Microsoft Defender for Endpoint
+# Professional Services supported by Microsoft 365 Defender
 
 **Applies to:**
 

@@ -1,7 +1,7 @@
 ---
-title: Technological Partners of Microsoft Defender for Endpoint
+title: Technological Partners of Microsoft 365 Defender
 ms.reviewer:
-description: See the list of supported technological partners to enhance detection, investigation, and threat intelligence capabilities of the platform.
+description: View technological partners of M365 Defender to enhance detection, investigation, and threat intelligence capabilities of the platform.
 keywords: partners, technological partner, applications, third-party, SIEM, threat intelligence, sentinel, 
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -18,7 +18,7 @@ ms.subservice: mde
 search.appverid: met150
 ---
 
-# Technological Partners of Microsoft Defender for Endpoint
+# Technological Partners of Microsoft 365 Defender
 
 **Applies to:**
 
