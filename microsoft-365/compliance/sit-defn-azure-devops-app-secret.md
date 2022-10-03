@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -22,6 +23,8 @@ description: "Azure DevOps app secret sensitive information type entity definiti
 ---
 
 # Azure DevOps app secret (preview)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 
@@ -36,7 +39,7 @@ Any combination of 52 characters consisting of:
 
 for example:
 
-`ntpi2ch67ci2vjzcohglogyygwo5fuyl365n2zdowwxhsys6jnoa`
+`abcdefghijklmnopqrstuvwxyz234567abcdefghijklmnopqrst`
 
 
 ## Checksum
@@ -49,12 +52,12 @@ This SIT is designed to match the security information that's used to authentica
 
 It uses several primary resources:
 
-- Patterns of Base32 encoded 256 bits symmetric key.
+- Patterns of Base32 encoded 256-bits symmetric key.
 - Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName.
 - Patterns of mockup values, redactions, and placeholders.
 - A dictionary of vocabulary
 
-The patterns are designed to match actual credentials with reasonable confidence. The patterns do not match credentials formatted as examples. Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present will not be matched.
+The patterns are designed to match actual credentials with reasonable confidence. The patterns don't match credentials formatted as examples. Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present won't be matched.
 
 ## Keywords
 

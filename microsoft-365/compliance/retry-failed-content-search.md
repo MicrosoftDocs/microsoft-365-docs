@@ -1,20 +1,22 @@
 ---
 title: "Retry a Content Search to resolve a content location error"
+description: During an investigation, you can use the Retry button to resolve Content Searches that have content location errors.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- tier1
+- purview-compliance
+- content-search
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 
-description: During an investigation, you can use the Retry button to resolve Content Searches that have content location errors.
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -34,6 +36,8 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 ```
 
 These errors (with error codes of CS001-002, CS003-002, CS008-009, CS012-002, and other errors of the form CS0XX-0XX) indicate that Content Search failed to search specific content locations; in this example, two mailboxes weren't searched. These errors are displayed on the status details flyout page of the Content Search.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Cause of content location errors
 

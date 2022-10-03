@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: During and after an automated investigation in Microsoft 365, you can view the results and key findings.
 ms.date: 01/29/2021
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Details and results of an automated investigation in Microsoft 365

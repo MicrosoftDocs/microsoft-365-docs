@@ -9,9 +9,10 @@ manager: scotv
 ms.reviewer: nalinkla, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration 
-localization_priority: Normal
+ms.service: microsoft-365-business 
+ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -26,7 +27,7 @@ ms.date: 07/15/2022
 
 # Enable pay-as-you-go for your subscription
 
-By default, when you buy a subscription that has a calling plan, you’re limited to the number of minutes included in the plan. After those minutes are used up, your users can’t make Teams calls until the next billing period. If you choose to turn on the pay-as-you-go option, your users can continue to make calls over the number of minutes included in the plan, referred to as *overage*. Your next invoice shows overage charges for extra calls at the pay-as-you-go rate.
+By default, when you buy a subscription that has a calling plan, you're limited to the number of minutes included in the plan. After those minutes are used up, your users can't make Teams calls until the next billing period. If you choose to turn on the pay-as-you-go option, your users can continue to make calls over the number of minutes included in the plan, referred to as *overage*. Your next invoice shows overage charges for extra calls at the pay-as-you-go rate.
 
 ## Before you begin
 

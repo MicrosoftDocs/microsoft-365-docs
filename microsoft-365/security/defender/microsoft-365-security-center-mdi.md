@@ -2,7 +2,8 @@
 title: Microsoft Defender for Identity in Microsoft 365 Defender
 description: Learn about changes from the Microsoft Defender for Identity to Microsoft 365 Defender
 keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Identity, NDI
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,7 +18,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.collection: 
-- M365-security-compliance 
+- m365-security 
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ---
 
@@ -70,11 +72,11 @@ Global search in Microsoft 365 Defender (using the search bar at the top of the 
 
 ### Onboarding and administration
 
-The onboarding process is now automatic for new customers, with no need to manually configure a workspace. Additionally, all the admin features are available under the **Identities** menu in Microsoft 365 Defender’s Settings.
+The onboarding process is now automatic for new customers, with no need to manually configure a workspace. Additionally, all the admin features are available under the **Identities** menu in Microsoft 365 Defender's Settings.
 
 ### Alerting and incident correlation
 
-Defender for Identity alerts are now included in Microsoft 365 Defender’s alert queue, making them available to the auto incident correlation feature. This ensures that all alerts are available in one place, and that the scope of a breach can be determined quicker than before. For more information, see [Defender for Identity security alerts in Microsoft 365 Defender](/defender-for-identity/manage-security-alerts).
+Defender for Identity alerts are now included in Microsoft 365 Defender's alert queue, making them available to the auto incident correlation feature. This ensures that all alerts are available in one place, and that the scope of a breach can be determined quicker than before. For more information, see [Defender for Identity security alerts in Microsoft 365 Defender](/defender-for-identity/manage-security-alerts).
 
 ### Advanced hunting (new)
 

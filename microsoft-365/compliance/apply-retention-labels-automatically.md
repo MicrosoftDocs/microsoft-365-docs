@@ -11,7 +11,8 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
@@ -54,6 +55,8 @@ Use the following instructions for the two admin steps.
 >
 > For these scenarios, see [Publish retention labels and apply them in apps](create-apply-retention-labels.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
 The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see the permissions information for [records management](get-started-with-records-management.md#permissions) or [data lifecycle management](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels), depending on the solution you're using.
@@ -72,7 +75,7 @@ When you create an auto-apply policy, you select a retention label to automatica
         - **Solutions** \> **Records management** \> **Label policies** tab \> **Auto-apply a label**
 
     - If you are using data lifecycle management:
-        - **Solutions** \> **Data lifecycle management** \> **Label policies** tab \> **Auto-apply a label**
+        - **Solutions** \> **Data lifecycle management** \> **Microsoft 365** \> **Label policies** tab \> **Auto-apply a label**
 
     Don't immediately see your solution in the navigation pane? First select **Show all**.
 
@@ -155,7 +158,7 @@ After you select a policy template, you can add or remove any types of sensitive
 For more information about these options, see the following guidance from the DLP documentation [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
 > [!IMPORTANT]
-> Sensitive information types have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> Sensitive information types have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](sit-limits.md#instance-count-supported-values-for-sit).
 
 To consider when using sensitive information types to auto-apply retention labels:
 
@@ -264,6 +267,9 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 #### Auto-apply labels to content by using trainable classifiers
 
+> [!IMPORTANT]
+> Currently, trainable classifiers for auto-labeling can't be used with [adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention). Use a static scope instead.
+
 When you choose the option for a trainable classifier, you can select one or more of the pre-trained or custom trainable classifiers:
 
 ![Choose trainable classifier.](../media/retention-label-classifers.png)
@@ -284,7 +290,7 @@ To consider when using trainable classifiers to auto-apply retention labels:
 #### Auto-apply labels to cloud attachments
 
 > [!NOTE]
-> This option is gradually rolling out in preview and is subject to change.
+> This option is in preview and subject to change.
 
 You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications by users. You use this option in conjunction with retention policies for the communication services themselves, Exchange and Teams.
 

@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier2
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -23,19 +24,21 @@ description: "Poland driver's license number sensitive information type entity d
 
 # Poland drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
-14 digits containing two forward slashes
+11 or 14 digits containing two forward slashes
 
 ## Pattern
 
-14 digits and two forward slashes:
+11 or 14 digits containing two forward slashes
 
 - five digits
 - a forward slash
 - two digits
 - a forward slash
-- seven digits
+- four or seven digits
 
 ## Checksum
 

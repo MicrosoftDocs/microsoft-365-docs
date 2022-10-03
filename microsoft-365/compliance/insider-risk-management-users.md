@@ -11,7 +11,9 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
@@ -26,6 +28,8 @@ Learn more about how the Users dashboard displays users in the following scenari
 - Users with active insider risk policy alerts
 - Users with triggering events
 - Users added temporarily to policies
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Users with active insider risk policy alerts
 

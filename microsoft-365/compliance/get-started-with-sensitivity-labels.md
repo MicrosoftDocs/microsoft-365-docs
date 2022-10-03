@@ -11,10 +11,13 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
+- highpri
 - SPO_Content
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid: 
 - MOE150
 - MET150
@@ -45,6 +48,8 @@ When you're ready to start protecting your organization's data by using sensitiv
 The basic flow for deploying and applying sensitivity labels:
 
 ![Diagram showing workflow for sensitivity labels.](../media/Sensitivity-label-flow.png)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Subscription and licensing requirements for sensitivity labels
 
@@ -89,6 +94,7 @@ All scenarios require you to [Create and configure sensitivity labels and their 
 |Extend labeling to File Explorer and PowerShell, with additional features for Office apps on Windows (if needed)|[Azure Information Protection unified labeling client for Windows](/azure/information-protection/rms-client/aip-clientv2)|
 |Encrypt documents and emails with sensitivity labels and restrict who can access that content and how it can be used |[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md)|
 |Enable sensitivity labels for Office on the web, with support for coauthoring, eDiscovery, data loss prevention, search—even when documents are encrypted | [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
+|Files in SharePoint to be automatically labeled with a default sensitivity label | [Configure a default sensitivity label for a SharePoint document library](sensitivity-labels-sharepoint-default-label.md)
 |Use co-authoring and AutoSave in Office desktop apps when documents are encrypted | [Enable co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md)
 |Automatically apply sensitivity labels to documents and emails | [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)|
 |Use sensitivity labels to protect content in Teams and  SharePoint |[Use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md)|
@@ -121,6 +127,8 @@ You can also use the following resources for basic instructions:
 
 - [Automatically apply or recommend sensitivity labels to your files and emails in Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [Known issues with automatically applying or recommending sensitivity labels](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
+
+- [Create protected PDFs from Office files](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4)
 
 - [Azure Information Protection unified labeling user guide](/azure/information-protection/rms-client/clientv2-user-guide)
 

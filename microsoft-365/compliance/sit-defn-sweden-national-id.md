@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier2
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -22,6 +23,8 @@ description: "Sweden national ID sensitive information type entity definition."
 ---
 
 # Sweden national ID
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 

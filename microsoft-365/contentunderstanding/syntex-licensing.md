@@ -6,7 +6,7 @@ ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
@@ -30,7 +30,10 @@ The following tasks require a [SharePoint Syntex license](https://www.microsoft.
 - Creating a form processing model via the entry point in a library
 - Uploading content to a library where a document understanding or form processing model has been applied
 - Running a document understanding model on-demand
-- Use premium taxonomy services. (Premium taxonomy services comprise SKOS-based term set import, pushing enterprise content types to hub-associated sites, and term store reports.)
+- Creating a modern template with content assembly
+- Generating a document from a modern template
+- Use of advanced metadata search
+- Use of premium taxonomy services. (Premium taxonomy services comprise SKOS-based term set import, pushing enterprise content types to hub-associated sites, and term store reports.)
 
 Unlicensed users can be granted access to a content center and can create document understanding models there but can't apply them to a document library.
  

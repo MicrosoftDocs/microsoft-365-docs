@@ -1,21 +1,21 @@
 ---
 title: Term store reports
-description: "Learn how to report on term store activity"
+description: Learn how to report on term store activity.
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
-    - m365initiative-viva-topics
+    - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
 
-
 ---
+
 # Term store reports
 
 You can access reports for <a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">Term store</a> in the SharePoint admin center. This feature requires a [SharePoint Syntex](index.md) license.

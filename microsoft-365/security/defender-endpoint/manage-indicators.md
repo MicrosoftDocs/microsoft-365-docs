@@ -3,7 +3,7 @@ title: Create indicators
 ms.reviewer: 
 description: Create indicators for a file hash, IP address, URLs, or domains that define the detection, prevention, and exclusion of entities.
 keywords: manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Create indicators
@@ -43,7 +46,7 @@ The cloud detection engine of Defender for Endpoint regularly scans collected da
 
 ## Endpoint prevention engine
 
-The same list of indicators is honored by the prevention agent. Meaning, if Microsoft Defender AV is the primary AV configured, the matched indicators will be treated according to the settings. For example, if the action is "Alert and Block", Microsoft Defender AV will prevent file executions (block and remediate) and a corresponding alert will be raised. On the other hand, if the Action is set to "Allow", Microsoft Defender AV will not detect nor block the file from being run.
+The same list of indicators is honored by the prevention agent. Meaning, if Microsoft Defender Antivirus is the primary Antivirus configured, the matched indicators will be treated according to the settings. For example, if the action is "Alert and Block", Microsoft Defender Antivirus will prevent file executions (block and remediate) and a corresponding alert will be raised. On the other hand, if the Action is set to "Allow", Microsoft Defender Antivirus will not detect nor block the file from being run.
 
 ## Automated investigation and remediation engine
 

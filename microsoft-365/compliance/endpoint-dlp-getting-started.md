@@ -13,9 +13,12 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
@@ -27,6 +30,8 @@ description: "Set up Endpoint data loss prevention to monitor file activities an
 Endpoint data loss prevention (Endpoint DLP) is part of the Microsoft Purview Data Loss Prevention (DLP) suite of features you can use to discover and protect sensitive items across Microsoft 365 services. For more information about all of Microsoft’s DLP offerings, see [Learn about data loss prevention](dlp-learn-about-dlp.md). To learn more about Endpoint DLP, see [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 
 Microsoft Endpoint DLP allows you to monitor [onboarded Windows 10, and Windows 11](device-onboarding-overview.md) and [onboarded macOS devices](device-onboarding-macos-overview.md) running Catalina 10.15 and higher. Once a device is onboarded, DLP will detect when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they are used and protected properly, and to help prevent risky behavior that might compromise them.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 
@@ -73,10 +78,10 @@ For specific guidance to onboarding macOS devices, see:
 
 Topic | Description
 :---|:---
-|[Onboard and offboard macOS devices into Microsoft Purview solutions using Intune](device-onboarding-offboarding-macos-intune.md)|For macOS devices that are managed through Intune
-|[Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers](device-onboarding-offboarding-macos-intune-mde.md) |For macOS devices that are managed through Intune and that have Microsoft Defender for Endpoint (MDE) deployed to them
-|[Onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro)](device-onboarding-offboarding-macos-jamfpro.md) | For macOS devices that are managed through JAMF Pro
-|[Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers)](device-onboarding-offboarding-macos-jamfpro-mde.md)|For macOS devices that are managed through JAMF Pro and that have Microsoft Defender for Endpoint (MDE) deployed to them
+|[Intune](device-onboarding-offboarding-macos-intune.md)|For macOS devices that are managed through Intune
+|[Intune for Microsoft Defender for Endpoint customers](device-onboarding-offboarding-macos-intune-mde.md) |For macOS devices that are managed through Intune and that have Microsoft Defender for Endpoint (MDE) deployed to them
+|[JAMF Pro)](device-onboarding-offboarding-macos-jamfpro.md) | For macOS devices that are managed through JAMF Pro
+|[JAMF Pro for Microsoft Defender for Endpoint customers)](device-onboarding-offboarding-macos-jamfpro-mde.md)|For macOS devices that are managed through JAMF Pro and that have Microsoft Defender for Endpoint (MDE) deployed to them
 
 Once a device is onboarded, it should be visible in the devices list and also start reporting audit activity to Activity explorer.
 

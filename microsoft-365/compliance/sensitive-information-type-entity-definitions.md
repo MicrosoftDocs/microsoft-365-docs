@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier2
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -219,6 +220,7 @@ This article is a list of all sensitive information type (SIT) entity definition
 - [Japan My Number - Corporate](sit-defn-japan-my-number-corporate.md)
 - [Japan My Number - Personal](sit-defn-japan-my-number-personal.md)
 - [Japan passport number](sit-defn-japan-passport-number.md)
+- [Japan physical addresses](sit-defn-japan-physical-addresses.md)
 - [Japan residence card number](sit-defn-japan-residence-card-number.md)
 - [Japan resident registration number](sit-defn-japan-resident-registration-number.md)
 - [Japan social insurance number (SIN)](sit-defn-japan-social-insurance-number.md)
@@ -262,6 +264,7 @@ This article is a list of all sensitive information type (SIT) entity definition
 - [New Zealand social welfare number](sit-defn-new-zealand-social-welfare-number.md)
 - [Norway identification number](sit-defn-norway-identification-number.md)
 - [Norway physical addresses](sit-defn-norway-physical-addresses.md)
+- [Philippines passport number](sit-defn-philippines-passport-number.md)
 - [Philippines unified multi-purpose identification number](sit-defn-philippines-unified-multi-purpose-identification-number.md)
 - [Poland driver's license number](sit-defn-poland-drivers-license-number.md)
 - [Poland identity card](sit-defn-poland-identity-card.md)
@@ -275,6 +278,7 @@ This article is a list of all sensitive information type (SIT) entity definition
 - [Portugal passport number](sit-defn-portugal-passport-number.md)
 - [Portugal physical addresses](sit-defn-portugal-physical-addresses.md)
 - [Portugal tax identification number](sit-defn-portugal-tax-identification-number.md)
+- [Qatari identification card number](sit-defn-qatari-id-card-number.md)
 - [Romania driver's license number](sit-defn-romania-drivers-license-number.md)
 - [Romania passport number](sit-defn-romania-passport-number.md)
 - [Romania personal numeric code (CNP)](sit-defn-romania-personal-numeric-code.md)

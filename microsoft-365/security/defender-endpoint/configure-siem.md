@@ -3,7 +3,7 @@ title: Integrate your SIEM tools with Microsoft Defender for Endpoint
 description: Learn how to ingest incidents and alerts, and integrate SIEM tools.
 keywords: configure siem, security information and events management tools, splunk, arcsight, custom indicators, rest api, alert definitions, indicators of compromise
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Integrate your SIEM tools with Microsoft Defender for Endpoint

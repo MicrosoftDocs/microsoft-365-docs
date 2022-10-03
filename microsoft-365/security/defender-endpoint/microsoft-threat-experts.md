@@ -2,22 +2,23 @@
 title: Microsoft Threat Experts
 ms.reviewer:
 description: Microsoft Threat Experts provides an extra layer of expertise to Microsoft Defender for Endpoint.
-keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, endpoint attack notification, Endpoint Attack Notification
+keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, endpoint attack notification, Endpoint Attack Notification, Ask Defender Experts
 search.product: Windows 10
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: dolmont
+author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
+ms.collection: 
+- m365-security
+- tier1
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Threat Experts
@@ -29,6 +30,9 @@ ms.technology: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> [!NOTE]
+> As of August 2022, the Experts on Demand option to **Consult a threat expert** has been rebranded to **Ask Defender Experts**.
 
 Microsoft Threat Experts is a managed threat hunting service that provides your Security Operation Centers (SOCs) with expert level monitoring and analysis to help them ensure that critical threats in your unique environments don't get missed.
 
@@ -61,6 +65,8 @@ Endpoint Attack Notifications (previously referred to as Microsoft Threat Expert
 - Scope of compromise and as much context as can be quickly delivered to enable fast SOC response.
 
 ## Microsoft Threat Experts - Experts on Demand
+> [!NOTE]
+> Experts on Demand is not a security incident response service. It’s intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
 
 Customers can engage our security experts directly from within Microsoft 365 Defender portal to get their response. Experts provide insights needed to better understand the complex threats affecting your organization, from alert inquiries, potentially compromised devices, root cause of a suspicious network connection, to more threat intelligence regarding ongoing advanced persistent threat campaigns. With this capability, you can:
 
@@ -68,23 +74,22 @@ Customers can engage our security experts directly from within Microsoft 365 Def
 - Gain clarity into suspicious device behavior and next steps if faced with an advanced attacker
 - Determine risk and protection regarding threat actors, campaigns, or emerging attacker techniques
 
-The option to **Consult a threat expert** is available in several places in the portal so you can engage with experts in the context of your investigation:
+> [!NOTE]
+> As of August 2022, the Experts on Demand option to **Consult a threat expert** has been rebranded to **Ask Defender Experts**.
 
-- ***Help and support menu***
-
-  :::image type="content" source="images/mte-eod-menu.png" alt-text="The MTE-EOD menu item" lightbox="images/mte-eod-menu.png":::
+The option to **Ask Defender Experts** is available in several places in the portal so you can engage with experts in the context of your investigation:
 
 - ***Device page actions menu***
 
-  :::image type="content" source="images/mte-eod-machines.png" alt-text="The MTE-EOD device page action menu option" lightbox="images/mte-eod-machines.png":::
+![Screenshot of the Ask Defender Experts menu option in the Device page action menu in the Microsoft 365 Defender portal.](../../media/mte/device-page-actions-menu.png)
 
 - ***Alerts page actions menu***
 
-  :::image type="content" source="images/mte-eod-alerts.png" alt-text="The MTE-EOD alert page action menu option" lightbox="images/mte-eod-alerts.png":::
+![Screenshot of the Ask Defender Experts menu option in the Alerts page action menu in the Microsoft 365 Defender portal.](../../media/mte/alerts-page-actions-menu.png)
 
 - ***File page actions menu***
 
-  :::image type="content" source="images/mte-eod-file.png" alt-text="The MTE-EOD file page action menu option" lightbox="images/mte-eod-file.png":::
+![Screenshot of the Ask Defender Experts menu option in the Incidents page action menu in the Microsoft 365 Defender portal.](../../media/mte/incidents-page-actions-menu.png)
 
 > [!NOTE]
 > If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager.

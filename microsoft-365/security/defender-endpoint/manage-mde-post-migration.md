@@ -2,8 +2,8 @@
 title: Manage Microsoft Defender for Endpoint after initial setup or migration
 description: Now that you've made the switch to Microsoft Defender for Endpoint, your next step is to manage your threat protection features
 keywords: post-migration, manage, operations, maintenance, utilization, Microsoft Defender for Endpoint, edr
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,12 +12,13 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - M365-security-compliance
-
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.date: 07/01/2022
 ms.reviewer: chventou
+search.appverid: met150
 ---
 
 # Manage Microsoft Defender for Endpoint after initial setup or migration
@@ -35,7 +36,7 @@ The following table lists various tools/methods you can use, with links to learn
 
 |Tool/Method|Description|
 |---|---|
-|**[Threat and vulnerability management dashboard insights](/windows/security/threat-protection/microsoft-defender-atp/tvm-dashboard-insights)** in the [Microsoft 365 Defender](https://security.microsoft.com/) portal|The threat & vulnerability management dashboard provides actionable information that your security operations team can use to reduce exposure and improve your organization's security posture. <br/><br/> See [Threat & vulnerability management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) and [Overview of Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use).|
+|**[Microsoft Defender Vulnerability Management dashboard insights](/windows/security/threat-protection/microsoft-defender-atp/tvm-dashboard-insights)** in the [Microsoft 365 Defender](https://security.microsoft.com/) portal|The Defender Vulnerability Management dashboard provides actionable information that your security operations team can use to reduce exposure and improve your organization's security posture. <br/><br/> See [Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) and [Overview of Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use).|
 |**[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)**  (recommended)|Microsoft Intune (Intune), a component of [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), focuses on mobile device management (MDM) and mobile application management (MAM). With Intune, you control how your organization's devices are used, including mobile phones, tablets, and laptops. You can also configure specific policies to control applications. <br/><br/> See [Manage Microsoft Defender for Endpoint using Intune](manage-mde-post-migration-intune.md).|
 |**[Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction)**|Microsoft Endpoint Manager (Configuration Manager), formerly known as System Center Configuration Manager, is a component of [Microsoft Endpoint Manager](/mem/endpoint-manager-overview). Configuration Manager is a powerful tool to manage your users, devices, and software. <br/><br/> See [Manage Microsoft Defender for Endpoint with Configuration Manager](manage-mde-post-migration-configuration-manager.md).|
 |**[Group Policy Objects in Azure Active Directory Domain Services](/azure/active-directory-domain-services/manage-group-policy)**|[Azure Active Directory Domain Services](/azure/active-directory-domain-services/overview) includes built-in Group Policy Objects for users and devices. You can customize the built-in Group Policy Objects as needed for your environment, as well as create custom Group Policy Objects and organizational units (OUs). <br/><br/> See [Manage Microsoft Defender for Endpoint with Group Policy Objects](manage-mde-post-migration-group-policy-objects.md).|

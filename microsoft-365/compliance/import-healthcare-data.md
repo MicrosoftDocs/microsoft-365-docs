@@ -1,9 +1,10 @@
 ---
 title: "Set up a connector to import generic healthcare audit data"
+description: "Administrators can set up a data connector to import electronic healthcare records (EHR) data from their healthcare system to Microsoft 365. This lets you use EHR data in insider risk management policies to help you detect unauthorized access activity to patient data by your employees."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 07/15/2022
 audience: Admin
@@ -12,13 +13,15 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "Administrators can set up a data connector to import electronic healthcare records (EHR) data from their healthcare system to Microsoft 365. This lets you use EHR data in insider risk management policies to help you detect unauthorized access activity to patient data by your employees."
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ---
 
 # Set up a connector to import healthcare EHR audit data (preview)
 
-You can set up a data connector in the Microsoft Purview compliance portal to import auditing data for user activity in your organization's Electronic Healthcare Records (EHR) system. Auditing data from your healthcare EHR system include data for events related to accessing a patient's health records. Healthcare EHR auditing data can be used by the Microsoft 365 [insider risk management solution](insider-risk-management.md) to help protect your organization from unauthorized access to patient information.
+You can set up a data connector in the Microsoft Purview compliance portal to import auditing data for user activity in your organization's Electronic Healthcare Records (EHR) system. Auditing data from your healthcare EHR system include data for events related to accessing a patient's health records. Healthcare EHR auditing data can be used by the Microsoft Purview [Insider Risk Management solution](insider-risk-management.md) to help protect your organization from unauthorized access to patient information.
 
 Setting up a Healthcare connector consists of the following tasks:
 
@@ -33,6 +36,8 @@ Setting up a Healthcare connector consists of the following tasks:
 - Optionally, scheduling the script to run automatically to import the auditing data.
 
 If you’d like to participate in the preview, please reach out to the team at dcfeedback@microsoft.com.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you set up the connector
 

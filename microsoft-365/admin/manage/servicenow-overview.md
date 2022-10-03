@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
@@ -91,3 +92,6 @@ To understand each feature, see [Microsoft 365 support integration](https://stor
 
 > [!NOTE]
 > This app is not supported in regulated or restricted environments.
+
+> [!IMPORTANT]
+> The Microsoft 365 support integration app will occasionally prompt users for feedback about the app. If you don’t want users to be prompted for feedback, turn off this functionality in the app settings. For more information about Microsoft feedback policies, see [Learn about Microsoft feedback for your organization](/microsoft-365/admin/misc/feedback-user-control). To change the feedback settings, follow the steps in the installation process.

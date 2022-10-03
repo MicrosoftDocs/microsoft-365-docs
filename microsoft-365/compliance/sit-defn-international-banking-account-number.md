@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier2
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -22,6 +23,8 @@ description: "International banking account number (IBAN) sensitive information 
 ---
 
 # International banking account number (IBAN)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 
@@ -36,7 +39,7 @@ Pattern must include all of the following:
 - 1-7 groups of four letters or digits (can be separated by spaces)
 - 1-3 letters or digits
 
-The format for each country is slightly different. The IBAN sensitive information type covers these 60 countries:
+The format for each country is slightly different. The IBAN sensitive information type covers these 68 countries:
 
 - ad
 - ae
@@ -47,6 +50,7 @@ The format for each country is slightly different. The IBAN sensitive informatio
 - be
 - bg
 - bh
+- br
 - ch
 - cr
 - cy
@@ -64,12 +68,14 @@ The format for each country is slightly different. The IBAN sensitive informatio
 - gi
 - gl
 - gr
+- gt
 - hr
 - hu
 - ie
 - il
 - is
 - it
+- jo
 - kw
 - kz
 - lb
@@ -86,8 +92,11 @@ The format for each country is slightly different. The IBAN sensitive informatio
 - mu
 - nl
 - no
+- pk
 - pl
+- ps
 - pt
+- qa
 - ro
 - rs
 - sa
@@ -95,9 +104,12 @@ The format for each country is slightly different. The IBAN sensitive informatio
 - si
 - sk
 - sm
+- tl
 - tn
 - tr
 - vg
+- xk
+
 
 ## Checksum
 

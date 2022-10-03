@@ -12,8 +12,10 @@ description: Learn about the capabilities in Microsoft Teams for scheduling and 
 ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
+  - highpri
   - m365solution-frontline
   - m365solution-scenario
+  - highpri
 f1.keywords:
 - NOCSH
 appliesto: 
@@ -50,7 +52,7 @@ To learn more, see:
 
 ## Teams Electronic Health Record (EHR) connector
 
-If your healthcare organization uses an EHR system, you can use the Teams EHR connector to integrate Teams for a more seamless virtual care experience. The Teams EHR connector requires an active subscription⁠ to Microsoft Cloud for Healthcare or a subscription to Microsoft Teams EHR connector standalone offer.
+If your healthcare organization uses an EHR system, you can use the Teams EHR connector to integrate Teams for a more seamless virtual care experience. The Teams EHR connector requires an active subscription to Microsoft Cloud for Healthcare or a subscription to Microsoft Teams EHR connector standalone offer.
 
 After you set up the Teams EHR connector, clinicians can launch visits with patients and consultations with other providers in Teams directly from the EHR system.
 

@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier2
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -23,13 +24,15 @@ description: "EU debit card number sensitive information type entity definition.
 
 # EU debit card number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
-16 digits
+16 to 19 digits
 
 ## Pattern
 
-Complex and robust pattern
+16 to 19 formatted or unformatted digits
 
 ## Checksum
 
@@ -48,9 +51,14 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
     - The function `Func_expiration_date` finds a date in the right date format.
 - The checksum passes.
 
+A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
+- The function Func_eu_debit_card finds content that matches the pattern.
+- The checksum passes.
+
 ```xml
     <!-- EU Debit Card Number -->
-    <Entity id="0e9b3178-9678-47dd-a509-37222ca96b42" patternsProximity="300" recommendedConfidence="85">
+    <Entity id="0e9b3178-9678-47dd-a509-37222ca96b42" patternsProximity="300" recommendedConfidence="85" relaxProximity="true">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_eu_debit_card" />
         <Any minMatches="1">
@@ -60,6 +68,10 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
           <Match idRef="Keyword_card_expiration_terms_dict" />
           <Match idRef="Func_expiration_date" />
         </Any>
+      </Pattern>
+        
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_eu_debit_card" />
       </Pattern>
     </Entity>
 ```

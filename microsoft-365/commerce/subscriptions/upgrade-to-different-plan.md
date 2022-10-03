@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: nalinkla, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -160,4 +161,4 @@ The day your plan upgrade is complete, the billing on your old subscription will
 ## Related content
 
 [Change plans manually](change-plans-manually.md) (article)\
-[Back up data before switching Microsoft 365 for business plans](back-up-data-before-switching-plans.md) (article)
+[Back up data before switching Microsoft 365 for business plans](move-users-different-subscription.md) (article)

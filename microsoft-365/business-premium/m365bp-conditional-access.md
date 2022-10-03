@@ -7,12 +7,15 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 07/19/2022
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -24,9 +27,7 @@ description: "Learn how security defaults can help protect your organization fro
 
 # Security defaults and multi-factor authentication
 
-Microsoft 365 Business Premium was designed to help protect your company's user accounts with preconfigured security settings. These settings include enabling multi-factor authentication (MFA) for all your admins and user accounts. For most organizations, security defaults offer a good level of sign-in security.
-
-For more information about security defaults and the policies they enforce, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+Microsoft 365 Business Premium was designed to help protect your company's user accounts with preconfigured security settings. These settings include enabling multi-factor authentication (MFA) for all your admins and user accounts. For most organizations, security defaults offer a good level of sign-in security. For organizations who must meet more stringent requirements, Conditional Access can be used.
 
 This article provides information about:
 
@@ -34,7 +35,7 @@ This article provides information about:
 - **[Conditional Access](#conditional-access)** (for businesses with more stringent security requirements)
 
 > [!NOTE]
-> If you've been using Conditional Access policies, you'll need to turn them off before using security defaults. You can use either security defaults or Conditional Access policies, but you can't use both at the same time.
+> You can use *either* security defaults *or* Conditional Access policies, but you can't use both at the same time.
 
 ## Security defaults
 
@@ -97,4 +98,4 @@ To learn more about Conditional Access, see [What is Conditional Access?](/azure
 
 ## Next objective
 
-Set up ways to [protect against malware and other threats](m365bp-increase-protection.md).
+[Protect your administrator accounts in Microsoft 365 Business Premium](m365bp-protect-admin-accounts.md)
