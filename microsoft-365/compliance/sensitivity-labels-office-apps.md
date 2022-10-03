@@ -427,7 +427,7 @@ If you further select the option as a recommendation, users see a message displa
 
 By default, if the automatically selected label applies encryption, the same encryption is applied to the email. When the encryption settings are selected by users, the email message inherits the same user choices.
 
-For example, if the highest priority label applies encryption with Full Control to the Marketing group, the email will be protected with Full Control to the Marketing group. If the highest priority label applies encryption with custom permissions a user assigned for a Word document, the same custom permissions will be applied to the email message.
+For example, if the highest priority label applies encryption with Full Control to the Marketing group, the email will be protected with Full Control to the Marketing group. If the highest priority label applies encryption and prompts users to select custom permissions for a Word document, the same custom permissions will be applied to the email message.
 
 However, take into consideration the outcome when an email client doesn't support a specific protection action that's been applied to an attachment. See the exception lists for details. 
 
@@ -441,7 +441,7 @@ Exceptions for the automatically selected label:
 
 - For the Azure Information Protection (AIP) unified labeling client:
 
-    - **Custom permissions for Word, Excel, or PowerPoint**: If the highest priority label applies custom permissions for Word, Excel, or PowerPoint, no label or encryption is selected for the email message.
+    - **Custom permissions for Word, Excel, or PowerPoint**: If the highest priority label prompts users to select custom permissions for Word, Excel, or PowerPoint, no label or encryption is selected for the email message.
     
     - **Priority for sublabels**: By default, the first label that's found from the parent label with the highest priority is selected for the email message. To take the ordering of sublabels into consideration, you must configure the advanced client setting **CompareSubLabelsInAttachmentAction** and set the value to **True**.
 
