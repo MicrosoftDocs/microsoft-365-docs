@@ -42,7 +42,7 @@ The person who performs this integration should be an administrator of Schoology
 1. In the **Schoology Base URL** field, enter your Schoology base URL, like `https://testschool.schoology.com`.
 1. Select the **Next** button. The **Register LTI 1.3 App** page will load.
 
-## Register the OneDrive LTI app in Schoology
+## Deploy the OneDrive LTI app in Schoology
 
 1. Sign into your Schoology instance as an administrator with access to install and configure apps.
 1. Access the **Microsoft OneDrive** app in the [**App Center**](https://app.schoology.com/apps) by opening this direct link [Microsoft OneDrive on Schoology](https://app.schoology.com/apps/profile/5910037138).

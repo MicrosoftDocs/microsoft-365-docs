@@ -23,7 +23,7 @@ For an overview of Microsoft LTI, see [Integrating Microsoft products with your 
 > [!NOTE]
 > The person who performs this integration should be an administrator of Schoology. However, Schoology users with access to the Schoology **App Center** can also install the Microsoft Teams Meetings LTI app.
 
-## Register the Teams Meetings LTI app for Schoology
+## Deploy the Teams Meetings LTI app in Schoology
 
 1. Sign into your Schoology instance as an administrator with access to install and configure apps.
 1. Access the **Microsoft Teams Meetings** app in the [**App Center**](https://app.schoology.com/apps) by opening this direct link [Microsoft Teams Meetings on Schoology](https://app.schoology.com/apps/profile/6017478062).
