@@ -419,13 +419,11 @@ For more help in specifying PowerShell advanced settings, see [PowerShell tips f
 > [!NOTE]
 > This capability is currently rolling out in preview for built-in labeling, and in various stages of release across the platforms. Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Label inheritance from email attachments**.
 
-When you select the option **Email inherits highest priority label from attachment(s)**, a sensitivity label for the email message is dynamically chosen, based on the sensitivity labels that are applied to the attachments. The [highest priority label](sensitivity-labels.md#label-priority-order-matters) is selected.
+Turn on email inheritance for when users attach labeled documents or labeled emails to an email message, and do not label the email message itself. In this scenario, a sensitivity label is automatically selected for them, based on the sensitivity labels that are applied to the attachments. The [highest priority label](sensitivity-labels.md#label-priority-order-matters) is dynamically selected.
 
-The attachment must be a physical file, and can't be a link to a file (for example, a link to a file on Microsoft SharePoint or OneDrive).
+The configuration option is named **Email inherits highest priority label from attachment(s)** in the sensitivity label policy. The attachment must be a physical file, and can't be a link to a file (for example, a link to a file on Microsoft SharePoint or OneDrive).
 
-If you further select the option as a recommendation, users see a message displayed to accept or dismiss the automatically selected label: **If the attachment(s) have a higher priority label than the email, show the label upgrade as a recommendation to end users.**
-
-Without the recommendation option, the label is automatically applied but users can still remove the label or select a different label before sending the email.
+If you further select the option as a recommendation, users see a message displayed to accept or dismiss the automatically selected label: **If the attachment(s) have a higher priority label than the email, show the label upgrade as a recommendation to end users.** Without the recommendation option, the label is automatically applied but users can still remove the label or select a different label before sending the email.
 
 By default, if the automatically selected label applies encryption, the same encryption is applied to the email. When the encryption settings are selected by users, the email message inherits the same user choices.
 
