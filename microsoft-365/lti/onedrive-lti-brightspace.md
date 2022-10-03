@@ -140,26 +140,43 @@ The OneDrive LTI app is now available to users, but the older OneDrive app must 
 1. Navigate to **Admin** > **Config Variable Browser**
 1. Locate the variable titled **d2l.3rdParty.OneDrive.EnableOneDrivePicker** and set the value to **off**.
 
-## Step 4: Turn on the new OneDrive LTI app on the Quicklinks activity bar (optional)
+To add the OneDrive LTI app to Brightspace's activity bar for quick access, you'll need to set an org unit **Config Variable** to the link ID of the LTI app.
 
-To add the OneDrive LTI app to Brightspace's activity bar, set an org unit **Config Variable** to the **link ID** of the LTI app.
+> [!NOTE]
+> You'll need to repeat these steps for every org ID (or parent org ID) where you want the OneDrive LTI app to appear in the activity bar.
 
-You'll need to repeat these steps for every org ID (or parent org ID) where you want the OneDrive LTI app to appear in the activity bar.
+### Collect the Link ID
 
-### Collect the Link IDs
-
-1. Sign in to your Brightspace admin portal.
-1. Navigate to **Admin** > **External Learning Tools** > **LTI Advantage Deployments** > **View Links** at the bottom of the page.
-1. Navigate to the correct link, and then move your mouse to the URL at the top of the browser.
-    1. For example, `https://example.desire2learn.com/d2l/le/ltiadvantage/deployments/3bfcc0b7-2fb6-4ffe-b353-95b520d4bae6/links/details/25988`.
-1. Copy the digits after the final `/` in the URL.
-    1. For example, using the URL above, copy `25988`.
+1. Sign in to Brightspace as an Administrator or Super Administrator.
+1. Navigate to **Admin Tools** by selecting the gear icon at the top right.
+1. Select **Manage Extensibility** to view the **LTI Advantage Deployments** list.
+1. Select the name of the LTI Advantage app you created.
+1. Scroll to the bottom of the page and select **View Deployments**.
+1. Select the name of the app deployment you created.
+1. Scroll down to the bottom of the page and select **View Links**.
+1. Select the name of the link with the **Deep Linking Quicklink** type.
+1. Move your mouse to the URL address bar in your browser.
+1. Copy the numeric digits after the final `/` in the URL.
+    1. For example, if the link url is `https://example.desire2learn.com/d2l/le/ltiadvantage/deployments/3bfcc0b7-2fb6-4ffe-b353-95b520d4bae6/links/details/259`, copy the `259` numeric value.
 
 ### Update the Config Variables
 
-1. In the Brightspace admin portal, navigate to **Admin** > **Config Variable Browser**.
-1. Locate the variable titled **3rdparty.microsoft.onedriveLTI.linkId**, and paste the copied URL to the **link ID** field for the org units where OneDrive LTI should appear.
-    1. This value is a number.
+1. In the Brightspace admin portal, navigate to **Admin Tools** by selecting the top right gear icon.
+1. Select **Config Variable Browser**.
+1. In the **All Variables** menu on the left, navigate to **3rdParty** > **Microsoft** >  and select **OneDriveLTI**.
+    1. You should see the variable name `3rdparty.microsoft.onedriveLTI.linkId` in the right pane.
+1. Select the **LinkId variable** name.
+1. On the **LinkId configuration** screen, select **Add Value** to select an **Org Unit** and paste the numeric **Link ID** value you collected previously.  
+    1. You'll need to repeat this for each Org Unit you wish to use the **Quicklinks Activity Bar**.
+1. To have this setting applied to descendent org types of those you added, you can edit the **Cascading Org Unit Types** and select which types and in which order the settings will apply.
+
+The OneDrive LTI app will now show up in the **Add Existing Content**, **QuickLinks**, and **Insert Stuff** menus in Brightspace.
+
+Users will see a generic link icon rather than a OneDrive cloud icon. The name shown in the menu will be the name provided in the app's LTI link settings.  
+
+These links can be turned off and on as desired and targeted to specific Orgs and decedents by configuration.
+
+For more information on configuring applications in Brightspace, visit [Brightspace Help](https://documentation.brightspace.com).
 
 ## Common questions concerning the OneDrive LTI app
 
