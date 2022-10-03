@@ -30,6 +30,10 @@ search.appverid: met150
 
 The following professional services can be integrated with Microsoft Defenders’ products:
 
+## Manage
+
+Managed security services that assist organizations to detect threats early and help minimize the impact of a breach.
+
 | Service name  | Vendor | Description  |
 | -------- | --------- | --------- |
 | [Microsoft Defender Experts](https://go.microsoft.com/fwlink/?linkid=2203232)| Microsoft    | Defender Experts for Hunting is a proactive threat hunting service for Microsoft 365 Defender.    |
@@ -59,6 +63,8 @@ The following professional services can be integrated with Microsoft Defenders�
 | [dinext. pi-SOC](https://go.microsoft.com/fwlink/?linkid=2202581)| dinext AG    | Through a close integration of deployment support, security operations and consulting in hardening and architectural improvements, dinext AG accompanies customers holistically on their way to a modern security environment. |
 | [Synergy Advisors Teams App](https://go.microsoft.com/fwlink/?linkid=2202392)| Synergy Advisors LLC    | E-Visor Teams App is a centralized place to involve and empower your end-users in the security and productivity of the organization by presenting unique information using data from Microsoft Defenders and Azure Active Directory while ensuring identity governance, and compliance. |
 | [Managed Microsoft XDR](https://go.microsoft.com/fwlink/?linkid=2202846) | Quorum Cyber | Quorum Cyber’s Managed Microsoft XDR, a solution designed to enable customers to unleash the power of Microsoft security to reduce cyber risk and maximize return of investment in security. |
+|[SecureShield365](https://go.microsoft.com/fwlink/?linkid=2209718)| Patriot Consulting | SecureShield365 includes a full deployment of all M365 Defender products including Intune plus 12 months of support. Microsoft XDR including Sentinel, Defender for Cloud, and MDR are available options.|
+|[Open Systems MDR+](https://go.microsoft.com/fwlink/?linkid=2208895) | Open Systems| Built for Microsoft security customers, MDR+ combines certified experts, exemplary processes, and seamless technology to deliver tailored, 24×7 protection while reducing attack surfaces and MTTR.|
 
 ## Respond
 
@@ -92,6 +98,8 @@ Respond to security incidents quickly, effectively and at scale with complete in
 | [dinext. pi-SOC](https://go.microsoft.com/fwlink/?linkid=2202581)    | dinext AG   | Through a close integration of deployment support, security operations and consulting in hardening and architectural improvements, dinext AG accompanies customers holistically on their way to a modern security environment.   |
 | [Synergy Advisors Teams App](https://go.microsoft.com/fwlink/?linkid=2202392)    | Synergy Advisors LLC    | E-Visor Teams App is a centralized place to involve and empower your end-users in the security and productivity of the organization by presenting unique information using data from Microsoft Defenders and Azure Active Directory while ensuring identity governance, and compliance.    |
 | [SepagoSOC](https://go.microsoft.com/fwlink/?linkid=2202677)| Sepago GmbH   | SepagoSOC experts ensure that your environment is constantly monitored and protected utilizing the complete range of Microsoft 365 Defender solutions and Microsoft Sentinel. They help you to constantly evolve your security landscape with both technical and organizational experience.|
+|[SecureShield365](https://go.microsoft.com/fwlink/?linkid=2209718)| Patriot Consulting | SecureShield365 includes a full deployment of all M365 Defender products including Intune plus 12 months of support. Microsoft XDR including Sentinel, Defender for Cloud, and MDR are available options.|
+|[Open Systems MDR+](https://go.microsoft.com/fwlink/?linkid=2208895) | Open Systems| Built for Microsoft security customers, MDR+ combines certified experts, exemplary processes, and seamless technology to deliver tailored, 24×7 protection while reducing attack surfaces and MTTR.|
 
 ## Protect
 
@@ -124,6 +132,8 @@ Protect your organization proactively by evaluating your organization’s abilit
 | [Synergy Advisors Teams App](https://go.microsoft.com/fwlink/?linkid=2202392)   | Synergy Advisors LLC    | E-Visor Teams App is a centralized place to involve and empower your end-users in the security and productivity of the organization by presenting unique information using data from Microsoft Defenders and Azure Active Directory while ensuring identity governance, and compliance.    |
 | [Managed Microsoft XDR](https://go.microsoft.com/fwlink/?linkid=2202846)    | Quorum Cyber| Quorum Cyber’s Managed Microsoft XDR, a solution designed to enable customers to unleash the power of Microsoft security to reduce cyber risk and maximize return of investment in security.  |
 | [SepagoSOC](https://go.microsoft.com/fwlink/?linkid=2202677)    | Sepago GmbH   | SepagoSOC experts ensure that your environment is constantly monitored and protected utilizing the complete range of Microsoft 365 Defender solutions and Microsoft Sentinel. They help you to constantly evolve your security landscape with both technical and organizational experience.|
+|[SecureShield365](https://go.microsoft.com/fwlink/?linkid=2209718)| Patriot Consulting | SecureShield365 includes a full deployment of all M365 Defender products including Intune plus 12 months of support. Microsoft XDR including Sentinel, Defender for Cloud, and MDR are available options.|
+|[Open Systems MDR+](https://go.microsoft.com/fwlink/?linkid=2208895) | Open Systems| Built for Microsoft security customers, MDR+ combines certified experts, exemplary processes, and seamless technology to deliver tailored, 24×7 protection while reducing attack surfaces and MTTR.|
 
 ## Evolve
 
@@ -147,6 +157,8 @@ Evolve your organization’s security posture through improved processes and tec
 | [dinext. pi-SOC](https://go.microsoft.com/fwlink/?linkid=2202581)| dinext AG| Through a close integration of deployment support, security operations and consulting in hardening and architectural improvements, it accompanies customers holistically on their way to a modern security environment.   |
 | [Managed Microsoft XDR](https://go.microsoft.com/fwlink/?linkid=2202846) | Quorum Cyber   | Quorum Cyber’s Managed Microsoft XDR, a solution designed to enable customers to unleash the power of Microsoft security to reduce cyber risk and maximize return of investment in security.  |
 | [SepagoSOC](https://go.microsoft.com/fwlink/?linkid=2202677) | Sepago GmbH | SepagoSOC experts ensure that your environment is constantly monitored and protected utilizing the complete range of Microsoft 365 Defender solutions and Microsoft Sentinel. They help you to constantly evolve your security landscape with both technical and organizational experience.|
+|[SecureShield365](https://go.microsoft.com/fwlink/?linkid=2209718)| Patriot Consulting | SecureShield365 includes a full deployment of all M365 Defender products including Intune plus 12 months of support. Microsoft XDR including Sentinel, Defender for Cloud, and MDR are available options.|
+|[Open Systems MDR+](https://go.microsoft.com/fwlink/?linkid=2208895) | Open Systems| Built for Microsoft security customers, MDR+ combines certified experts, exemplary processes, and seamless technology to deliver tailored, 24×7 protection while reducing attack surfaces and MTTR.|
 
 ## Educate
 
@@ -170,6 +182,7 @@ Mature and maintain your internal team’s security capabilities to prevent, det
 | [Cloud Control - Managed Detection & Response](https://go.microsoft.com/fwlink/?linkid=2202678)  | The Collective | The Collective's Cloud Control Managed Protection, Detection and Response services is an enterprise grade managed service, delivering true Security Operations Center-as-a-Service (SOC) experience with a personal touch.   |
 | [Synergy Advisors Teams App](https://go.microsoft.com/fwlink/?linkid=2202392)   | Synergy Advisors LLC | E-Visor Teams App is a centralized place to involve and empower your end-users in the security and productivity of the organization by presenting unique information using data from Microsoft Defenders and Azure Active Directory while ensuring identity governance, and compliance.|
 | [Managed Microsoft XDR](https://go.microsoft.com/fwlink/?linkid=2202846)    | Quorum Cyber   | Quorum Cyber’s Managed Microsoft XDR, a solution designed to enable customers to unleash the power of Microsoft security to reduce cyber risk and maximize return of investment in security.   |
+|[SecureShield365](https://go.microsoft.com/fwlink/?linkid=2209718)| Patriot Consulting | SecureShield365 includes a full deployment of all M365 Defender products including Intune plus 12 months of support. Microsoft XDR including Sentinel, Defender for Cloud, and MDR are available options.|
 
 ## Related topics
 

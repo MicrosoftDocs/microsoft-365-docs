@@ -682,8 +682,6 @@
 
 #### [Partners & APIs]()
 ##### [Partner applications](partner-applications.md)
-##### [Technological partners](technological-partners.md)
-##### [Professional Services](professional-services.md)
 ##### [Connected applications](connected-applications.md)
 ##### [API explorer](api-explorer.md)
 
