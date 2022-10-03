@@ -3,20 +3,22 @@ title: Microsoft Defender Antivirus compatibility with other security products
 description: Learn about Microsoft Defender Antivirus with other security products and the operating systems.
 keywords: windows defender, defender for endpoint, next-generation, antivirus, compatibility, passive mode
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
+ms.date: 08/30/2022
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Microsoft Defender Antivirus compatibility with other security products
@@ -127,6 +129,7 @@ In order for Microsoft Defender Antivirus to run in passive mode, endpoints must
 
 > [!IMPORTANT]
 > - Microsoft Defender Antivirus is only available on devices running Windows 10 and 11, Windows Server 2022, Windows Server 2019, Windows Server, version 1803 or newer, Windows Server 2016, and Windows Server 2012 R2.
+> - Passive mode is only supported on Windows Server 2012 R2 & 2016 when the device is onboarded using the [modern, unified solution](/microsoft-365/security/defender-endpoint/configure-server-endpoints). 
 > - In Windows 8.1, enterprise-level endpoint antivirus protection is offered as [System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10)), which is managed through Microsoft Endpoint Configuration Manager.
 > - Windows Defender is also offered for [consumer devices on Windows 8.1](/previous-versions/windows/it-pro/windows-8.1-and-8/dn344918(v=ws.11)#BKMK_WindowsDefender), although Windows Defender does not provide enterprise-level management.
 

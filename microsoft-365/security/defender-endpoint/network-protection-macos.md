@@ -2,7 +2,7 @@
 title: Use network protection to help prevent macOS connections to bad sites 
 description: Protect your network by preventing macOS users from accessing known malicious and suspicious network addresses
 keywords: Network protection, MacOS exploits, malicious website, ip, domain, domains, command and control, SmartScreen, toast notification
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,12 +13,13 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
+ms.subservice: mde
 ms.topic: overview
 ms.collection: 
-- m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
+- tier2
 ms.date:
+search.appverid: met150
 ---
 
 # Network protection for macOS
@@ -243,7 +244,10 @@ plutil -lint com.microsoft.wdav.xml
    > [!NOTE]
    > If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
    > Pro tip: You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.
-4. [Integrate Microsoft Defender for Endpoint with Cloud App Security](/defender-cloud-apps/mde-integration) and your network protection-enabled macOS devices will have endpoint policy enforcement capabilities.
+   >
+   > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
+
+4. [Integrate Microsoft Defender for Endpoint with Defender for Cloud Apps](/defender-cloud-apps/mde-integration) and your network protection-enabled macOS devices will have endpoint policy enforcement capabilities.
    > [!NOTE]
    > Discovery and other features are currently not supported on these platforms.
 
@@ -350,11 +354,10 @@ No End-user notification on third party browsers? Check your toast message setti
 ## See also
 
 - [Microsoft 365 Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-- [Microsoft 365 Defender for Endpoint integration with Microsoft Microsoft 365 Defender for Cloud Applications](/defender-cloud-apps/mde-integration.md)
+- [Microsoft 365 Defender for Endpoint integration with Microsoft Microsoft 365 Defender for Cloud Applications](/defender-cloud-apps/mde-integration)
 - [Get to know the innovative features in Microsoft Edge](https://www.microsoft.com/edge/features)
 - [Protect your network](network-protection.md)
 - [Turn on network protection](enable-network-protection.md)
 - [Web protection](web-protection-overview.md)
 - [Create indicators](manage-indicators.md)
 - [Web content filtering](web-content-filtering.md)
-- [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)

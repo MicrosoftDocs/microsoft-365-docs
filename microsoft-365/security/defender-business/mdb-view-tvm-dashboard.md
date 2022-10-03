@@ -6,16 +6,17 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
-ms.topic: article
-ms.prod: m365-security
-ms.technology: mdb
+ms.topic: conceptual
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/02/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
+- tier1
 ms.custom: intro-get-started
 ---
 

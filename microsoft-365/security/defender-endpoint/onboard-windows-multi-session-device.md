@@ -1,8 +1,8 @@
 ---
-title: "Onboard Windows devices in Azure Virtual Desktop"
+title: Onboard Windows devices in Azure Virtual Desktop
 description: Learn bout onboarding Windows devices to Defender for Endpoint in Azure Virtual Desktop
 keywords: Azure Virtual Desktop, AVD, microsoft defender, endpoint, onboard
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,11 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Onboard Windows devices in Azure Virtual Desktop

@@ -6,14 +6,17 @@ manager: scotv
 ms.date: 05/31/2022
 audience: ITPro
 ms.topic: faq
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Find answers to frequently asked questions (FAQs) about moving core data to a new Office 365 datacenter geo.
 ms.custom: seo-marvel-mar2020
+ms.collection: 
+- scotvorg
+description: Find answers to frequently asked questions (FAQs) about moving core data to a new Office 365 datacenter geo.
+
 ---
 
 # Data move general FAQ

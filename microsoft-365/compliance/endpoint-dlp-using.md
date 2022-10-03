@@ -12,8 +12,10 @@ f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: 
-- M365-security-compliance
+ms.collection:
+- tier1
+- highpri 
+- purview-compliance
 - SPO_Content
 search.appverid: 
 - MET150
@@ -32,6 +34,8 @@ To help familiarize you with Endpoint DLP features and how they surface in DLP p
 >- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 >- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 
@@ -125,7 +129,9 @@ These scenarios require that you already have devices onboarded and reporting in
 
 ## Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine (preview)
 
-### Before you begin
+#[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## Before you begin
 
 In this scenario, synchronizing files with the **Highly Confidential** sensitivity label to OneDrive is blocked. This is a complex scenario with multiple components and procedures. You will need:
 
@@ -290,7 +296,7 @@ Here are some examples:
 1. Select **Add a new group of sensitive service domains**.
 1. Name the group.
 1. Select the **Match type** you want. You can select from **URL**, **IP address**, **IP address range**.
-1. Type in the appropriate value in the **Add new service domains to this group**. You can add multiple websites to a group and use wildcards to cover subdomains.  For example, www.contoso.com for just the top level website or *.contoso.com for corp.contoso.com, hr.contoso.com, fin.contoso.com
+1. Type in the appropriate value in the **Add new service domains to this group**. You can add multiple websites to a group and use wildcards to cover subdomains.  For example, `www.contoso.com` for just the top level website or \*.contoso.com for corp.contoso.com, hr.contoso.com, fin.contoso.com
 1. Select **Save**.
 1. Select **Policies**.
 1. Create and scope a policy that is applied only to **Devices**. See, [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) for more information on how to create a policy.

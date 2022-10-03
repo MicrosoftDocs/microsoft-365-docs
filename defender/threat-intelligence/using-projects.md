@@ -3,6 +3,7 @@ title: 'Using Projects with Microsoft Defender Threat Intelligence (MDTI)'
 description: 'Learn how to manage projects using Microsoft Defender Threat Intelligence (MDTI).'
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence 
 ms.topic: how-to 
 ms.date: 08/02/2022

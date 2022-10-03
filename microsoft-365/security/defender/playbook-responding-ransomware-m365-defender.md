@@ -8,10 +8,12 @@ manager:                   dolmont
 audience:                  ITPro
 ms.topic:                  article
 ms.date:                   05/30/2022 
-ms.prod:                   m365-security
+ms.service:                microsoft-365-security
+ms.subservice:             m365d
 ms.localizationpriority:   medium
-ms.collection:             M365-security-compliance
-ms.technology:             m365d
+ms.collection: 
+- m365-security
+- tier1
 f1.keywords:               NOCSH
 ---
 # Responding to ransomware attacks

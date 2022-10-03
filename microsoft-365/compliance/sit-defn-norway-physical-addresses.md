@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier2
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -24,6 +25,8 @@ description: "Norway physical addresses sensitive information type entity defini
 # Norway physical addresses
 
 This unbundled named entity detects patterns related to physical address from Norway. It's also included in the [All Physical Addresses](sit-defn-all-physical-addresses.md) bundled named entity SIT.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Confidence level
 

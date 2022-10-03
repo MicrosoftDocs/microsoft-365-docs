@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.prod: office-online-server
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -13,6 +13,7 @@ ms.custom:
  - Adm_O365
  - seo-marvel-mar2020
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 search.appverid:

@@ -15,10 +15,11 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - Strat_O365_IP
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 description: "With Office 365, your content is encrypted at rest and in transit with the strongest encryption, protocols, and technologies available. Get an overview of encryption in Office 365."
 ---
 
@@ -29,6 +30,8 @@ Encryption is an important part of your file protection and information protecti
 - For information about certificates and technologies like TLS, see [Technical reference details about encryption in Office 365](technical-reference-details-about-encryption.md).
 
 - For information about how to configure or set up encryption for your organization, see [Set up encryption in Office 365 Enterprise](set-up-encryption.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## What is encryption, and how does it work in Office 365?
 

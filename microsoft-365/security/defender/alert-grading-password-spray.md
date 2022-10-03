@@ -2,7 +2,8 @@
 title: Suspicious password-spray-related IP address activity alert
 description: Alert grading for suspicious password-spray-related IP address activity to review the alerts and take recommended actions to remediate the attack and protect your network.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, devices, users, 365, microsoft, m365, password, spray, alert classification, alert grading, cloud apps, suspicious IP
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +15,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
   - MOE150
-ms.technology: m365d
+  - met150
 ---
+
 # Suspicious password spray-related IP activity
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
