@@ -21,7 +21,7 @@ ms.collection:
 ## Summary
 
 
-Service documentation:  <a href="https://learn.microsoft.com/en-us/viva/connections/viva-connections-overview" target="_blank">**Overview: Viva Connections**</a>
+Service documentation:  [Overview: Viva Connections](/viva/connections/viva-connections-overview)
 
 Capability summary: Microsoft Viva Connections is your gateway to a modern employee experience designed to keep everyone engaged and informed. Viva Connections is a customizable app in Microsoft Teams that gives everyone a personalized destination to discover relevant news, conversations, and the tools they need to succeed.  Data storage is related to the following Viva Connections Components: Dashboard and feed.
 
