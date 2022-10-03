@@ -886,11 +886,12 @@ The following table lists the quarantine activities that you can search for in t
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Deleted quarantine message|QuarantineDelete|A user deleted an email message that was deemed to be harmful.|
-|Exported quarantine message|QuarantineExport|A user exported an email message that was deemed to be harmful.|
-|Previewed quarantine message|QuarantinePreview|A user previewed an email message that was deemed to be harmful.|
-|Released quarantine message|QuarantineRelease|A user released an email message from quarantine that was deemed to be harmful.|
-|Viewed quarantine message's header|QuarantineViewHeader|A user viewed the header an email message that was deemed to be harmful.|
+|Deleted quarantine message|QuarantineDelete|An Admin or user deleted an email message that was deemed to be harmful.|
+|Exported quarantine message|QuarantineExport|An Admin or  user exported an email message that was deemed to be harmful.|
+|Previewed quarantine message|QuarantinePreview|An Admin or user previewed an email message that was deemed to be harmful.|
+|Released quarantine message|QuarantineRelease|An Admin or  user released an email message from quarantine that was deemed to be harmful.|
+|Viewed quarantine message's header|QuarantineViewHeader|An Admin or user viewed the header an email message that was deemed to be harmful.|
+|Release request quarantine message|QuarantineReleaseRequest|A user requested the release of an email message that was deemed to be harmful.|
 
 ### Microsoft Forms activities
 
