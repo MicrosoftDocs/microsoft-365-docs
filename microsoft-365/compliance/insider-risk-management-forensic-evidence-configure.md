@@ -1,6 +1,6 @@
 ---
 title: Get started with insider risk management forensic evidence
-description: Get started with insider risk management forensic evidence in Microsoft Purview. Forensic evidence is an investigative tool for viewing captured user activity to help determine whether the user's actions pose a risk.
+description: Get started with insider risk management forensic evidence in Microsoft Purview. Forensic evidence is an investigative tool for viewing captured security-related user activity to help determine whether the user's actions pose a risk.
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -58,12 +58,12 @@ To install the Microsoft Purview Client, complete the following steps:
 
 ### Step 3: Configure settings
 
-Forensic evidence has several configuration settings that provide flexibility for the types of user activity captured, capturing parameters, bandwidth limits, and offline capturing options. Forensic evidence capturing is off by default and policy creation requires dual authorization.
+Forensic evidence has several configuration settings that provide flexibility for the types of security-related user activity captured, capturing parameters, bandwidth limits, and offline capturing options. Forensic evidence capturing enables you to create policies based on your requirements in just a few steps and policy creation requires dual authorization.
 
 To configure forensic evidence settings, complete the following steps:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Forensic evidence settings**.
-2. Select **Forensic evidence capturing** enable capturing support in your forensic evidence policies. If this is turned off later, this will remove all previously added users for forensic evidence policies.
+2. Select **Forensic evidence capturing** to enable capturing support in your forensic evidence policies. If this is turned off later, this will remove all previously added users for forensic evidence policies.
 3. In the **Capturing windoe** section, define when to start and stop activity capturing. Available values are *10 seconds*, *30 seconds*, *1 minute*, *3 minutes*, or *5 minutes*.
 4. In the **Upload bandwidth limit** section, define the amount of capture data to upload into your data storage account per user, per day. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.
 5. In the **Offline capturing** section, enable offline capturing if needed. When enabled, users' offline activity is captured and uploaded to your data storage account the next time they are online.
@@ -72,11 +72,11 @@ To configure forensic evidence settings, complete the following steps:
 
 ### Step 4: Create a policy
 
-Forensic evidence policies define the scope of user activity to capture on configured devices. You can have one policy that captures all activities approved users perform on their devices (all keystrokes, mouse movements, and so on) and additional policies that capture only specific activities (such as printing or deleting files). Once created, you'll include these policies in forensic evidence requests to control what activity to capture for users whose requests are approved.
+Forensic evidence policies define the scope of security-related user activity to capture on configured devices. You can have one policy that captures all activities approved users perform on their devices (all keystrokes, mouse movements, and so on) and additional policies that capture only specific activities (such as printing or deleting files). Once created, you'll include these policies in forensic evidence requests to control what activity to capture for users whose requests are approved.
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Forensic evidence policies**.
 2. Select **Create forensic evidence policy**.
-3. On the **Scope** page, you'll choose the scope of user activity to capture. Select one of the following options:
+3. On the **Scope** page, you'll choose the scope of security-related user activity to capture. Select one of the following options:
 
     - **Specific activities**: This option only captures activities detected by policies that users are included in. These activities are defined by the indicators selected in forensic evidence policies. Captures for this option will be available for review on the **Forensic evidence (preview)** tab on the **Alerts** dashboard.
     - **All activities**: This option captures any activity performed by users. This includes mouse movement, keystrokes, and all activities defined by insider risk indicators. Captures for this option will be available for review on the **Forensic evidence (preview)** tab on the **User activity reports (preview)** dashboard.
@@ -96,7 +96,7 @@ After you've completed the policy configuration steps, continue to Step 5.
 
 ### Step 5: Define and approve users for capturing
 
-Before user activities can be captured, users must follow the dual authorization process in forensic evidence. This process mandates that enabling visual capturing for specific users is both defined and approved by applicable people in your organization.
+Before security-related user activities can be captured, users must follow the dual authorization process in forensic evidence. This process mandates that enabling visual capturing for specific users is both defined and approved by applicable people in your organization.
 
 >[!IMPORTANT]
 >For public preview, a maximum of 5 concurrent users are eligible for forensic evidence capturing. Capturing for groups isn't supported in public preview.
@@ -108,4 +108,4 @@ You must request that forensic evidence capturing be turned on for specific user
 
 ## Next steps
 
-After you've configured your forensic evidence policy, it may take up to 48 hours for the first eligible clip captures to be available for review in alerts for other policies or as activity in User Activity Reports. For more information about managing forensic evidence and reviewing clip captures, see the [Manage information risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence-manage) article.
+After you've configured your forensic evidence policy, it may take up to 48 hours for the first eligible clip captures to be available for review in alerts for other policies or as activity in **User Activity Reports**. For more information about managing forensic evidence and reviewing clip captures, see the [Manage information risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence-manage) article.

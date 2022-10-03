@@ -1,6 +1,6 @@
 ---
 title: Manage insider risk management forensic evidence
-description: Manage insider risk management forensic evidence in Microsoft Purview. Forensic evidence is an investigative tool for viewing captured user activity to help determine whether the user's actions pose a risk.
+description: Manage insider risk management forensic evidence in Microsoft Purview. Forensic evidence is an investigative tool for viewing captured security-related user activity to help determine whether the user's actions pose a risk.
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -19,7 +19,7 @@ ms.collection: m365-security-compliance
 >[!IMPORTANT]
 >Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
 
-After you've completed the configuration steps and created your forensic evidence policy, you'll start to see alerts for potentially risky user activities that meet the conditions for indicators that are defined in the policy.
+After you've completed the configuration steps and created your forensic evidence policy, you'll start to see alerts for potentially risky security-related user activities that meet the conditions for indicators that are defined in the policy.
 
 ## Dashboard
 
@@ -124,7 +124,7 @@ To view a capture clip, complete the following steps:
 
 To view captures for activity not associated with alerts, you'll use [User activity reports](/microsoft-365/compliance/insider-risk-management-activities#user-activity-reports). User activity reports allow you to examine activities for specific users for a defined time period without having to assign them temporarily or explicitly to an insider risk management policy. If these user activities include activities supported by forensic evidence capturing, captures are included with the user activity.
 
-If you've configured forensic evidence to capture all user activity, regardless of whether they're included in a forensic evidence policy, you'll review these captures by selecting **Insider risk management** > **User activity reports** and then selecting a specific user and selecting the **Forensic evidence (preview)** tab. Reviewing forensic evidence captures for cases follows the same process as when you review captures as part of examining alerts.
+If you've configured forensic evidence to capture all security-related user activity, regardless of whether they're included in a forensic evidence policy, you'll review these captures by selecting **Insider risk management** > **User activity reports** and then selecting a specific user and selecting the **Forensic evidence (preview)** tab. Reviewing forensic evidence captures for cases follows the same process as when you review captures as part of examining alerts.
 
 SCREENSHOT
 
