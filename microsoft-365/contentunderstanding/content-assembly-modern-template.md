@@ -25,9 +25,9 @@ Follow these steps to create a modern template.
 
    ![Screenshot of document library with the Create modern template option highlighted.](../media/content-understanding/content-assembly-create-template-1.png)
 
-2. Choose to upload a Word document from your organization’s SharePoint or OneDrive, or from your local storage.
+2. Select a Word document to upload from your organization’s SharePoint or OneDrive, or from your local storage.
 
-   ![Screenshot of upload page where you select a document.](../media/content-understanding/content-assembly-create-template-2.png)
+   ![Screenshot of upload page where you select a document.](../media/content-understanding/content-assembly-pick-a-file.png)
 
    > [!NOTE]
    > Currently, you can upload only Word documents (.docx extension) to create templates. Upload Word documents from your local storage or desktop.
