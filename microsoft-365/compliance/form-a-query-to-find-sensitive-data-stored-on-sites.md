@@ -27,6 +27,8 @@ Users often store sensitive data, such as credit card numbers, social security n
 > [!NOTE]
 > Electronic discovery, or eDiscovery, and DLP are premium features that require [SharePoint Online Plan 2](https://go.microsoft.com/fwlink/?LinkId=510080).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Forming a basic DLP query
 
 There are three parts that make up a basic DLP query: SensitiveType, count range, and confidence range. As illustrated in the following graphic, **SensitiveType:"\<type\>"** is required, and both **|\<count range\>** and **|\<confidence range\>** are optional.

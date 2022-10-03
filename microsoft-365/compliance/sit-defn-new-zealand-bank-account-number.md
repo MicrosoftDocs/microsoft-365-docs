@@ -24,6 +24,8 @@ description: "New Zealand bank account number sensitive information type entity 
 
 # New Zealand bank account number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 14-digit to 16-digit pattern with optional delimiter

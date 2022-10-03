@@ -23,6 +23,8 @@ Set up Azure before you can use Customer Key. This article describes the steps y
 > [!IMPORTANT]
 > We strongly recommend that you follow the best practices in this article. These are called out as **TIP** and **IMPORTANT**. Customer Key gives you control over root encryption keys whose scope can be as large as your entire organization. This means that mistakes made with these keys can have a broad impact and may result in service interruptions or irrevocable loss of your data.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you set up Customer Key
 
 Before you get started, ensure that you have the appropriate Azure subscriptions and M365/O365 licensing for your organization. You must use paid Azure Subscriptions. Subscriptions you got through Free, Trial, Sponsorships, MSDN Subscriptions, and those under Legacy Support are not eligible.

@@ -24,6 +24,8 @@ description: "Slovenia driver's license number sensitive information type entity
 
 # Slovenia drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits without spaces and delimiters

@@ -24,6 +24,8 @@ description: "Azure Storage account shared access signature for high risk resour
 
 # Azure Storage account shared access signature for high risk resources (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 44 characters consisting of letters, digits, and special characters.

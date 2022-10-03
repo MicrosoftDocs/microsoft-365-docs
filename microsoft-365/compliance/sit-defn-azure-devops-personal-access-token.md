@@ -24,6 +24,8 @@ description: "Azure DevOps personal access token sensitive information type enti
 
 # Azure DevOps personal access token (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 52 characters consisting of letters, digits, and special characters.

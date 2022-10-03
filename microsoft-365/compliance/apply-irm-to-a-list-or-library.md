@@ -27,6 +27,8 @@ ms.custom: seo-marvel-apr2020
 
 You can use Information Rights Management (IRM) to help control and protect files that are downloaded from lists or libraries. This feature is only supported in the Microsoft global cloud. IRM is not supported for SharePoint lists and libraries in national cloud deployments.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Administrator preparations before applying IRM
 
 - The Azure Rights Management service (Azure RMS) from Azure Information Protection, and the on-premises equivalent, Active Directory Rights Management Services (AD RMS), support Information Rights Management for sites. No separate or additional installations are required.

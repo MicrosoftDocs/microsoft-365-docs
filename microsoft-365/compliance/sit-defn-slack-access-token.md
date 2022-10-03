@@ -24,6 +24,8 @@ description: "Slack access token sensitive information type entity definition."
 
 # Slack access token (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of up to 34 characters consisting of letters, digits, and special characters.

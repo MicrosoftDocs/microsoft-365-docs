@@ -37,6 +37,8 @@ Watch the videos below to learn how insider risk management can help your organi
 **Insider risk management workflow**:
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Configure insider risk management
 
 Use the following steps to configure insider risk management for your organization:

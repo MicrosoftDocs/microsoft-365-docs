@@ -25,6 +25,8 @@ Microsoft Purview solutions help protect your organization from internal threats
 
 The Microsoft Purview solutions trial is the easiest way to try all the capabilities of Microsoft Purview solutions, and setting it up only takes a couple of minutes. After the trial setup is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Terms and conditions
 
 See the [terms and conditions](/legal/microsoft-365/microsoft-365-trial) for Microsoft 365 trials.

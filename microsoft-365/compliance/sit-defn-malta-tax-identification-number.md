@@ -24,6 +24,8 @@ description: "Malta tax identification number sensitive information type entity 
 
 # Malta tax identification number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 For Maltese nationals:

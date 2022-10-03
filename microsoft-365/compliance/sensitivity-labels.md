@@ -73,6 +73,8 @@ In all these cases, sensitivity labels from Microsoft Purview can help you take 
 
 For more information about these and other scenarios that are supported by sensitivity labels, see [Common scenarios for sensitivity labels](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). New features are being developed all the time that support sensitivity labels, so you might also find it useful to check the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## What a sensitivity label is
 
 When you assign a sensitivity label to content, it's like a stamp that's applied and is:

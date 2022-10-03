@@ -24,6 +24,8 @@ description: "Australia medical account number sensitive information type entity
 
 # Australia medical account number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 10-11 digits

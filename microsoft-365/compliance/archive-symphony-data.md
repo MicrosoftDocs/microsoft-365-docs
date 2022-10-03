@@ -23,6 +23,8 @@ Use a Veritas connector in the Microsoft Purview compliance portal to import and
 
 After Symphony communications are stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a Symphony connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Overview of archiving Symphony data
 
 The following overview explains the process of using a data connector to archive Symphony communications in Microsoft 365.

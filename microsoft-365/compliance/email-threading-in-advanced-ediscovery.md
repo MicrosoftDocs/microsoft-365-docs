@@ -24,6 +24,8 @@ ms.custom: seo-marvel-mar2020
 
 Consider an email conversation that has been going on for a while. In most cases, the last message in the email thread will include the contents of all the preceding messages. Therefore, reviewing the last message will give a complete context of the conversation that happened in the thread. Email threading identifies such messages so that reviewers can review a fraction of collected documents without losing any context.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## What does email threading do?
 
 Email threading parses each email thread and deconstructs it to individual messages. Each email thread is a chain of individual messages. Microsoft Purview eDiscovery (Premium) analyzes all email messages in the review set to determine whether an email message has unique content or if the chain (parent messages) are wholly contained in the final message in the email thread. Email messages are divided into four inclusive values:

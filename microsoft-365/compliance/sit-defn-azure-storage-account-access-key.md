@@ -24,6 +24,8 @@ description: "Azure storage account access key sensitive information type entity
 
 # Azure storage account access key (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of up to 20,000 characters consisting of letters, digits, and special characters.

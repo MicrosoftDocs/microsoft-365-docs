@@ -75,6 +75,8 @@ If you want to enforce DLP rules on the scanned files, enforcement must be enabl
 2. Edit the policy.
 3. On the **Test or turn on the policy** page, select **Yes, turn it on right away**.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## See also
 
 - [Learn about DLP on-premises scanner](dlp-on-premises-scanner-learn.md)

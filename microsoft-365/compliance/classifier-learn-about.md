@@ -28,6 +28,8 @@ description: "Trainable classifiers can recognize various types of content for l
 
 Categorizaing and labeling content so it can be protected and handled properly is the starting place for the information protection discipline. Microsoft Purview has three ways to classify content.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Manually
 
 Manual categorizing requires human judgment and action. Users and admins categorize content as they encounter it. You can use either use the pre-existing labels and sensitive information types or use custom created ones.  You can then protect the content and manage its disposition.

@@ -26,6 +26,8 @@ description: "U.K. national insurance number (NINO) sensitive information type e
 
 This sensitive information type entity is included in the EU National Identification Number sensitive information type. It's also available as a stand-alone sensitive information type entity.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 seven characters or nine characters separated by spaces or dashes

@@ -24,6 +24,8 @@ description: "Netherlands citizen's service (BSN) number sensitive information t
 
 # Netherlands citizens service (BSN) number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 eight or nine digits containing optional spaces

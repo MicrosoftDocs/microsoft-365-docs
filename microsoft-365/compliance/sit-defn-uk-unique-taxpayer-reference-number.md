@@ -24,6 +24,8 @@ description: "U.K. Unique Taxpayer Reference Number sensitive information type e
 
 # U.K. Unique Taxpayer Reference Number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 10 digits without spaces and delimiters

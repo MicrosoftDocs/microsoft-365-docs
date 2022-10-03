@@ -24,6 +24,8 @@ description: "Netherlands value added tax number sensitive information type enti
 
 # Netherlands value added tax number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 14 character alphanumeric pattern

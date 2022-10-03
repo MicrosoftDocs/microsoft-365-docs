@@ -24,6 +24,8 @@ description: "Azure Databricks personal access token sensitive information type 
 
 # Azure Databricks personal access token (preview) 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 32 characters consisting of letters and digits.

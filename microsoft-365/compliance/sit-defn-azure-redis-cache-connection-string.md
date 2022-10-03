@@ -24,6 +24,8 @@ description: "Azure Redis cache connection string sensitive information type ent
 
 # Azure Redis cache connection string
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 The string `redis.cache.windows.net` followed by the characters and strings outlined in the pattern below, including the string `password` or `pwd`.

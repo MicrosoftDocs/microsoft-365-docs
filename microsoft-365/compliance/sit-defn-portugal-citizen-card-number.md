@@ -24,6 +24,8 @@ description: "Portugal citizen card number sensitive information type entity def
 
 # Portugal citizen card number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 eight digits

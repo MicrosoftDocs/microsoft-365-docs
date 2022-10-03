@@ -28,6 +28,8 @@ In addition, enabling this functionality results in the [AutoSave](https://suppo
 
 To read the release announcement, see the blog post [Co-authoring on Microsoft Information Protection encrypted documents is now generally available](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/co-authoring-on-microsoft-information-protection-encrypted/ba-p/2693718).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Metadata changes for sensitivity labels
 
 > [!IMPORTANT]

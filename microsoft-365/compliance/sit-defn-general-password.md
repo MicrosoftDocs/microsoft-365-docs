@@ -24,6 +24,8 @@ description: "General password sensitive information type entity definition."
 
 # General Password (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Up to 20,000-character combination of letters, digits, and special characters.

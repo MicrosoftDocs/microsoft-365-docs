@@ -27,6 +27,8 @@ After you create a draft collection, you can view statistics on the retrieved it
 
 When you've identified the set of documents you want to further examine, you can add the search results to a review set to collect and process.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Statistics and reports for draft collections
 
 This section describes the statistics that are available for draft collections. These statistics are available on the **Search statistics** tab on the flyout page of a draft collection.

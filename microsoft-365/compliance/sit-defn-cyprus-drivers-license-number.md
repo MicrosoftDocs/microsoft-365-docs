@@ -25,6 +25,8 @@ description: "Cyprus driver's license number sensitive information type entity d
 
 # Cyprus drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 12 digits without spaces and delimiters

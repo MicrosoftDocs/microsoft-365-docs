@@ -24,6 +24,8 @@ description: "Singapore national registration identity card (NRIC) number sensit
 
 # Singapore national registration identity card (NRIC) number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine letters and digits

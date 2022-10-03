@@ -28,6 +28,8 @@ description: "South Africa identification number sensitive information type enti
 
 13 digits that may contain spaces
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Pattern
 
 13 digits:

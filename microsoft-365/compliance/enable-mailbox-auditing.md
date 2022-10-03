@@ -38,6 +38,8 @@ Here are some benefits of mailbox auditing on by default:
 > - The important thing to remember about the release of mailbox auditing on by default is: you don't need to do anything to manage mailbox auditing. However, to learn more, customize mailbox auditing from the default settings, or turn it off altogether, this article can help you.
 > - By default, only mailbox audit events for E5 users are available in audit log searches in the Microsoft Purview compliance portal or via the Office 365 Management Activity API. For more information, see the [More information](#more-information) section in this article.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Verify mailbox auditing on by default is turned on
 
 To verify that mailbox auditing on by default is turned on for your organization, run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):

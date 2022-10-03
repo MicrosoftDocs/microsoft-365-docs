@@ -24,6 +24,8 @@ description: "Slovenia tax identification number sensitive information type enti
 
 # Slovenia tax identification number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 eight digits with no spaces or delimiters
