@@ -414,6 +414,8 @@ The most common use case is to use network share group as an allowlist as in the
 
 ### VPN settings
 
+Use the VPN list to control only those actions that are being carried out over that VPN.
+
 When you list a VPN in **VPN Settings** you can assign these policy actions to them:
 
 - Allow (audit with no user notifications or alerts)
@@ -455,7 +457,7 @@ Get-VpnConnection
 1. Close the item.
 
 > [!IMPORTANT]
-> When you use the VPN list in defining the actions of a policy, you will also see **Corporate network** as an option. **Corporate network** are all connections to your organization resources that are not through a VPN. The VPN list includes the connection to your organizations resources through those VPNs.
+> When you use the VPN list in defining the actions of a policy, you will also see **Corporate network** as an option. **Corporate network** connections are are all connections to your organizations resources.These connections can include VPNs. 
 
 See, [Scenario 8 Network exceptions](endpoint-dlp-using.md#scenario-8-network-exceptions)for more information on configuring policy actions to use network exceptions.
 

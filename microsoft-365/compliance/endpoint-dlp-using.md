@@ -411,7 +411,7 @@ Get-VpnConnection
 1. Select **VPN** and set the action to **Block with override**.
 
 > [!IMPORTANT]
-> **Corporate network** applies to the user activities on the files that are not through a VPN.
+> When you want to control the activities of a user when they're connected through a VPN *you must* select the VPN and make the VPN the top priority in the **Network exceptions** configuration. Otherwise, if the **Corporate network** option is selected, then that action defined for the **Corporate network** entry will be enforced.
 
 > [!CAUTION]
 > The **Apply to all activities** option will copy the network exceptions that are defined here and apply them to all the other configured specific activities, like **Print**, and **Copy to a network share**. ***This will overwrite the network exceptions on the other activities The last saved configuration wins.***  
