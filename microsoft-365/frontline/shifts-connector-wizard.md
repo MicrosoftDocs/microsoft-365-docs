@@ -23,17 +23,11 @@ appliesto:
 
 ## Overview
 
-The Shifts connector wizard in the Microsoft 365 admin center enables you to integrate the Shifts app in Microsoft Teams with your workforce management (WFM) system. After you set up a connection, your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
-
-The wizard configures the Shifts connector, creates a connection to your WFM system, and applies the sync settings and team mappings that you choose. Sync settings determine the schedule information that's synced between your WFM system and Shifts. Team mappings define the sync relationship between your WFM instances and teams in Teams. You can map to existing teams and new teams.
-
-You can set up multiple connections, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection with unique sync settings for each location. Keep in mind that a WFM instance can only be mapped to one team at any given time. If a WFM instance is already mapped to a team, it can't be mapped to another team.
-
-With your WFM system as the system of record, your frontline workers can see and swap shifts, manage their availability, and request time off in Shifts on their devices. Frontline managers can continue to use your WFM system to set up schedules.
+[!INCLUDE [shifts-connector-wizard-intro](includes/shifts-connector-wizard-intro.md)]
 
 ## Integrate Shifts with Blue Yonder Workforce Management
 
-Currently, the wizard supports the [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder). This connector enables you to integrate Shifts with Blue Yonder Workforce Management (Blue Yonder WFM) to manage your schedules and keep them up to date. In this article, we walk you through how to run the wizard to set up a connection to Blue Yonder WFM through the connector.
+The [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) enables you to integrate Shifts with Blue Yonder Workforce Management (Blue Yonder WFM) to manage your schedules and keep them up to date. In this article, we walk you through how to run the wizard to set up a connection to Blue Yonder WFM through the connector.
 
 > [!NOTE]
 > You can also use PowerShell to integrate Shifts with Blue Yonder WFM. To learn more, see [Use PowerShell to connect Shifts to Blue Yonder Workforce Management](shifts-connector-blue-yonder-powershell-setup.md).
@@ -56,7 +50,7 @@ You must be a Microsoft 365 global admin to run the wizard.
 
 Use PowerShell to remove schedules from teams.
 
-1. First, you'll need to install the PowerShell modules and get set up. Follow the steps to [set up your environment](shifts-connector-powershell-manage.md#set-up-your-environment).
+1. First, you'll need to install the PowerShell modules and get set up. Follow the steps to [set up your environment](shifts-connector-powershell-manage.md#set-up-your-environment)
 1. Run the following command:
 
     ```powershell
@@ -75,7 +69,7 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 1. Select **Connect your workforce management system**. Here, you can learn more about Shifts connectors and the frontline worker and manager experience when you connect Shifts to your WFM system.
     :::image type="content" source="media/shifts-connector-wizard-get-started.png" alt-text="Screenshot of the details page for the Shifts connector wizard in the Microsoft 365 admin center." lightbox="media/shifts-connector-wizard-get-started.png":::
 1. When you're ready, select **Get started**.
-1. Select **Next** to create a Blue Yonder WFM connection.
+1. On the Choose your connector page, choose **Blue Yonder Workforce Management**, and then select **Next** to create a Blue Yonder WFM connection.
 
 ### Enter connection details
 <a name="connection_details"> </a>
@@ -96,7 +90,8 @@ On the Sync settings page, you choose the information to sync from Blue Yonder W
 1. Under **Email notification recipients**, choose who receives email notifications about this connection. You can add individual users and groups. The email notifications contain information about connection setup status and any issues or errors that may occur after the connection is set up.
 1. Choose your sync settings:
     1. Under **Schedule and shifts**, choose the Blue Yonder WFM data that Shifts users can see or change, and then set the sync frequency.
-    2. Under **Requests**, choose the types of requests that Shifts users can see and create.
+    1. Under **Time card**, choose what action Shifts users can do with time entries.
+    1. Under **Requests**, choose the types of requests that Shifts users can see and create.
 
     > [!IMPORTANT]
     > If you chose any of the following options to disable open shifts, open shift requests, swap requests, or time off requests, there's another step you need to do to hide the capability in Shifts.
@@ -127,25 +122,7 @@ Select the instances that you want to map.
 Then, map each instance to a team in Teams. You can map an instance to an existing team or you can create a new team.
 :::image type="content" source="media/shifts-connector-wizard-search-team.png" alt-text="Screenshot of the pane showing the search team option and create a new team option." lightbox="media/shifts-connector-wizard-search-team.png":::
 
-##### To map an instance to an existing team
-
-1. Select the instance name.
-2. In the pane, search for the team, and then select it. Keep in mind that teams that are already mapped to an instance in this connection don't show up in the search.
-3. Choose the time zone and closest city.
-4. Select **Save**, and then select **Next**.
-
-##### To map an instance to a new team
-
-1. Select the instance name.
-2. In the pane, choose **Create a new team**. You'll be taken to a new tab in your browser where you can create a new team in the Microsoft 365 admin center.
-    1. Enter a name and an optional description for the team.
-    1. Add one or more team owners. Make sure you add the Microsoft 365 system account as owner.
-    1. Add team members.
-    1. Add a team email address and choose a privacy setting.
-    1. Review your settings, and then choose **Add team**. When your team is created, choose **Close**.
-3. Go back to the wizard, search for, and then select the new team you created.
-4. Choose the time zone and closest city.
-5. Select **Save**, and then select **Next**.
+[!INCLUDE [shifts-connector-manually-map-instances](includes/shifts-connector-manually-map-instances.md)]
 
 #### Use a CSV file to map instances to teams
 
@@ -216,13 +193,22 @@ To hide open shifts, swap requests, and time off requests in Shifts, use the Gra
 
 To hide open shifts requests in Shifts, go to **Settings** in Shifts, and then turn off the **Open shifts** setting.
 
-## If you need to make changes to a connection
+## Manage your connection
 <a name="update_connection"> </a>
 
-After a connection is set up, you use PowerShell to make changes to it. For example, you can update sync settings, team mappings, and disable sync for a connection. For step-by-step guidance, see [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md).
+After a connection is set up, you can manage and make changes to it in the Microsoft 365 admin center or by using PowerShell.
+
+### Use the Microsoft 365 admin center
+
+The Connector Management page lists each connection that you've set up, along with information such as health status and sync interval details. You can also access the wizard to make changes to any of your connections. For example, you can update sync settings and team mappings.
+
+To learn more, see [Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md).
+
+### Use PowerShell
+
+You can use PowerShell to view an error report, change connection settings, disable sync, and more. For step-by-step guidance, see [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md).
 
 ## Related articles
 
 - [Shifts connectors](shifts-connectors.md)
-- [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md)
 - [Manage the Shifts app in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)

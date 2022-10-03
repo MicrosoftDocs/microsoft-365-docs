@@ -576,7 +576,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Forms | United States |
 | Viva Connections | Australia |
 | Viva Topics | Australia |
-| Viva Learning | Global Geography 2 – Asia Pacific |
+| Viva Learning | Australia |
 | Viva Insights - Personal | Australia |
 | Viva Insights - Manager/Leader AAD org data only | Global Geography 2 – Asia Pacific |
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
