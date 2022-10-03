@@ -24,6 +24,8 @@ description: "Azure Container Registry access key sensitive information type ent
 
 # Azure Container Registry access key (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 32 characters consisting of letters, digits, and special characters.

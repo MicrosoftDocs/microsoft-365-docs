@@ -26,6 +26,8 @@ ms.collection:
   
 In the Relevance module in eDiscovery (Premium), the Decide tab provides additional information for viewing and using decision-support statistics for determining the size of the review set of case files.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Using the Decide tab
 
 ![Relevance Decide.](../media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)

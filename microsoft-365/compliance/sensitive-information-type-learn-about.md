@@ -32,6 +32,8 @@ Sensitive information types (SIT) are pattern-based classifiers. They detect sen
 
 Microsoft provides a large number of pre-configured SITs or you can create your own.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Sensitive information types are used in
 
 - [Microsoft Purview Data Loss Prevention policies](dlp-learn-about-dlp.md)

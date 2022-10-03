@@ -24,6 +24,8 @@ description: "Czech personal identity number sensitive information type entity d
 
 # Czech personal identity number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits with optional forward slash (old format)

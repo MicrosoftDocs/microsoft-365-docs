@@ -25,6 +25,8 @@ description: "Drug Enforcement Agency (DEA) number sensitive information type en
 
 # Drug Enforcement Agency (DEA) number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 two letters followed by seven digits

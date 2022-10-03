@@ -29,6 +29,8 @@ Compliance Manager provides intelligent and actionable data upon your first visi
 
 Whether you’re coming to Compliance Manager for the first time, or are ready to use some of the advanced features, this guide can support you along your journey.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## First visit: get to know Compliance Manager
 
 Compliance Manager is located in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>. Your organization's global administrator will need to [set up user permissions and assign roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) before you start using Compliance Manager.

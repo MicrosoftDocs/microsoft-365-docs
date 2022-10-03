@@ -41,6 +41,8 @@ Here's a list of the jobs (which are typically long-running processes) that are 
 |Running analytics|A user analyzes data in a review set by running eDiscovery (Premium) analytics tools such as near duplicate detection, email threading analysis, and themes analysis. For more information, see [Analyze data in a review set](analyzing-data-in-review-set.md).|
 |Tagging documents|This job is triggered when a user clicks **Start tagging job** in the **Tagging panel** when reviewing documents in a review set. A user can start this job after tagging documents in a review set and then bulk-selecting them in the view document panel. For more information, see [Tag documents in a review set](tagging-documents.md).|
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Job status
 
 The following table describes the different status states for jobs.

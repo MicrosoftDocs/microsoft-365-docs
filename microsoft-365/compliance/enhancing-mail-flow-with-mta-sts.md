@@ -24,6 +24,8 @@ Support for the [SMTP MTA Strict Transport Security](https://datatracker.ietf.or
 
 MTA-STS can be broken down into two scenarios: Inbound and Outbound Protection. Inbound covers the protection of domains hosted in Exchange Online with MTA-STS and Outbound covers the MTA-STS validations performed by Exchange Online when sending emails to MTA-STS protected domains.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Outbound Protection
 
 All messages sent outbound from Exchange Online to MTA-STS protected recipients are being validated with these extra security checks set out by the MTA-STS standard. There's nothing admins need to do to apply it. Our outbound implementation respects the wishes of the recipient domain owners via their MTA-STS policy. MTA-STS forms part of the security infrastructure of Exchange Online, and it's therefore always on (like other core SMTP features).

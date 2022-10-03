@@ -25,6 +25,8 @@ Error remediation allows eDiscovery administrators the ability to rectify data i
 
 Use the following workflow to remediate files with errors in eDiscovery (Premium) cases.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Create an error remediation session to remediate files with processing errors
 
 > [!NOTE]

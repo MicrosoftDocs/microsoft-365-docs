@@ -24,6 +24,8 @@ description: "Japan social insurance number (SIN) sensitive information type ent
 
 # Japan social insurance number (SIN)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 7-12 digits

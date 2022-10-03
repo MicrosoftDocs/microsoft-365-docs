@@ -34,6 +34,8 @@ When you use retention labels, these contain the retention settings and their po
 - A retention label policy that you publish needs a rule that defines which labels should be displayed in apps.
 - An auto-apply retention label policy needs a rule that defines the label to apply and the conditions for applying the label.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Retention cmdlets for most locations
 
 Use the cmdlets in the following table when the locations are **Exchange email**, **SharePoint sites**, **OneDrive accounts**, **Microsoft 365 Groups**, **Skype for Business**, **Exchange public folders**, **Teams chat messages**, or **Teams channel messages**.

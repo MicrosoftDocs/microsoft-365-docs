@@ -30,6 +30,8 @@ After setting up Microsoft Purview eDiscovery (Premium) and [assigning permissio
 
 This article also provides a high-level overview of using cases to manage the eDiscovery (Premium) workflow for a legal case or other types of investigations.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Create a case
 
 Complete the following steps to create a case and add members. The user who creates the case is automatically added as a member. Members of the case can access the case in the Microsoft Purview compliance portal and perform eDiscovery (Premium) tasks.

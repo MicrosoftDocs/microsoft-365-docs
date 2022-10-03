@@ -67,6 +67,8 @@ With a DLP policy, you can:
     To view alerts and metadata related to your DLP policies you can use the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md). You can also view policy match reports to assess how your organization is complying with a DLP policy. If a DLP policy allows users to override a policy tip and report a false positive, you can also view what users have reported
 
 -->
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Create and manage DLP policies
 
 You create and manage DLP policies on the data loss prevention page in the Microsoft Purview compliance portal.

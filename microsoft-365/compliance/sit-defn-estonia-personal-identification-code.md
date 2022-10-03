@@ -24,6 +24,8 @@ description: "Estonia Personal Identification Code sensitive information type en
 
 # Estonia personal identification code
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11 digits without spaces and delimiters

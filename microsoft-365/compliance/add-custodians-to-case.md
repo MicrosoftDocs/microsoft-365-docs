@@ -36,6 +36,8 @@ You can add and manage custodians in eDiscovery (Premium) cases in four steps:
 
 4. Review the custodians and complete the process.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Make sure you have the necessary permissions
 
 To add custodians to a case, you must be a member of the eDiscovery Manager role group. This provides you with the necessary permissions to add custodians to a case and place a hold on the custodial data sources. For more information, see [Assign eDiscovery permissions](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions).

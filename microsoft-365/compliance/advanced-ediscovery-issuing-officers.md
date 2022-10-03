@@ -30,6 +30,8 @@ When you or others create a hold notification or other type of communication tha
 
 This article explains how to add and remove users to the list of organization-wide issuing officers.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you add an issuing officer
 
 - You must be an eDiscovery Administrator in your organization to add or remove issuing officers. For more information, see [Assign eDiscovery permissions in the Microsoft Purview compliance portal](assign-ediscovery-permissions.md)  

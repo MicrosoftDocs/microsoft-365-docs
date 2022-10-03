@@ -26,6 +26,8 @@ ms.custom: seo-marvel-apr2021
 
 Microsoft Purview Data Loss Prevention (DLP) policies have many components to configure. To create an effective policy, you need to understand what the purpose of each component is and how its configuration alters the behavior of the policy. This article provides a detailed anatomy of a DLP policy.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Policy templates 
 
 DLP policy templates are pre-sorted into four categories:

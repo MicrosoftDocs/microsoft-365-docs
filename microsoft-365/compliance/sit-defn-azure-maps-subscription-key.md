@@ -24,6 +24,8 @@ description: "Azure Maps subscription key sensitive information type entity defi
 
 # Azure Maps subscription key (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 43 characters consisting of letters, digits, and special characters.

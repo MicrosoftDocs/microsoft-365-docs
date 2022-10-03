@@ -24,6 +24,8 @@ description: "U.S./U.K. passport number sensitive information type entity defini
 
 # U.S./U.K. passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits

@@ -24,6 +24,8 @@ description: "Japan My Number - Personal sensitive information type entity defin
 
 # Japan My Number - Personal
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 12-digit number

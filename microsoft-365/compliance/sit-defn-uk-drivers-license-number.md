@@ -24,6 +24,8 @@ description: "U.K. driver's license number sensitive information type entity def
 
 # U.K. drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Combination of 18 letters and digits in the specified format

@@ -25,6 +25,8 @@ A compromised user account (also called an *account takeover*) is a type of atta
 
 To help you with investigating compromise email accounts, we're now auditing accesses of mail data by mail protocols and clients with the *MailItemsAccessed* mailbox-auditing action. This new audited action will help investigators better understand email data breaches and help you identify the scope of compromises to specific mail items that may been compromised. The goal of using this new auditing action is forensics defensibility to help assert that a specific piece of mail data was not compromised. If an attacker gained access to a specific piece of mail, Exchange Online audits the event even though there is no indication that the mail item was read.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## The MailItemsAccessed mailbox-auditing action
 
 The new MailItemsAccessed action is part of the new [Audit (Premium)](advanced-audit.md) functionality. It's part of [Exchange mailbox auditing](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) and is enabled by default for users that are assigned an Office 365 or Microsoft 365 E5 license or for organizations with a Microsoft 365 E5 Compliance add-on subscription.

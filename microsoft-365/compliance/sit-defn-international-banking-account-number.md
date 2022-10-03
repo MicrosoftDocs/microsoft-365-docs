@@ -24,6 +24,8 @@ description: "International banking account number (IBAN) sensitive information 
 
 # International banking account number (IBAN)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Country code (two letters) plus check digits (two digits) plus bban number (up to 30 characters)

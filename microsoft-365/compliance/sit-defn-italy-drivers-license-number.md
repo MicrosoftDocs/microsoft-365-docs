@@ -26,6 +26,8 @@ description: "Italy driver's license number sensitive information type entity de
 
 This type entity is included in the EU Driver's License Number sensitive information type. It's also available as a stand-alone sensitive information type entity.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 a combination of 10 letters and digits
