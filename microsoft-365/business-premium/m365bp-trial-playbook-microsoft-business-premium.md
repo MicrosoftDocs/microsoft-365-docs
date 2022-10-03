@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Business Premium trial guide"
+title: "User trial guide: Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -20,16 +20,16 @@ search.appverid:
 description: "Make the most of your Microsoft 365 Business Premium trial. Try out some of the key productivity and security capabilities."
 ---
 
-# Trial guide: Microsoft 365 Business Premium
+# User trial guide: Microsoft 365 Business Premium
 
-Welcome to the Microsoft Business Premium trial guide! This guide will help you make the most of your 30-day free trial. You can see firsthand how Microsoft 365 Business Premium increases productivity and helps safeguard your organization with advanced security capabilities. Use this guide to set up your threat protection features, analyze detected threats, and respond to cyberattacks.
+Welcome to the Microsoft Business Premium user trial guide! This guide will help you make the most of your 30-day free trial. You can see firsthand how Microsoft 365 Business Premium increases productivity and helps safeguard your organization with advanced security capabilities. Use this guide to set up your threat protection features, analyze detected threats, and respond to cyberattacks.
 
 ## Set up the Microsoft 365 Business Premium trial
 
 When you [start a trial or purchase Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your first step is to get everything set up.
 
 > [!TIP]
-> Save this guide to your browser favorites. When links in the guide take you away from this location, it'll be easier to return to this guide to continue.
+> Save this user trial guide to your browser favorites. When links in the user trial guide take you away from this location, it'll be easier to return to this guide to continue.
 
 1. [Set up your trial](../business-premium/m365bp-setup.md)!
 
