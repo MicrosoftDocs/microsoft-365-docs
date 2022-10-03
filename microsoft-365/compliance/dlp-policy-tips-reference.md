@@ -57,6 +57,8 @@ DLP policy tips in Outlook Web Access is supported for all the conditions, excep
 - Prepend email subject
 - Remove O365 Message Encryption and rights protection
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Outlook 2013 and later supports showing policy tips for only some conditions and exceptions
 
 Currently, Outlook 2013 and later supports showing policy tips for policies which do not contain any condition or exception apart from the below mentioned conditions and corresponding exceptions:

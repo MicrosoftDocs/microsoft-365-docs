@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 06/03/2020
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
@@ -34,7 +34,10 @@ The Page Diagnostics for SharePoint tool can be installed for:
 >[!TIP]
 >Version **2.0.0** and later includes support for modern pages in addition to classic site pages. If you are unsure which version of the tool you are using, you can select the **About** link or the ellipses (...) to verify your version. **Always update to the latest version** when using the tool.
 
-The Page Diagnostics for SharePoint tool is a browser extension for the new Microsoft Edge (https://www.microsoft.com/edge) and Chrome browsers that analyzes both SharePoint Online modern portal and classic publishing site pages. This tool only works for SharePoint Online, and can’t be used on a SharePoint system page.
+The Page Diagnostics for SharePoint tool is a browser extension for the new Microsoft Edge (https://www.microsoft.com/edge) and Chrome browsers that analyzes both SharePoint Online modern portal and classic publishing site pages. 
+
+> [!IMPORTANT]
+> This tool only works for SharePoint Online, and can’t be used on a SharePoint system page or on a SharePoint App page. The App page type is designed to be used for specific business applications within SharePoint Online and not for portals. The tool is designed to optimize portal pages and Teams site pages.
 
 The tool generates a report for each analyzed page showing how the page performs against a pre-defined set of rules and displays detailed information when results for a test fall outside the baseline value. SharePoint Online administrators and designers can use the tool to troubleshoot performance issues and to ensure that new pages are optimized prior to publishing.
 

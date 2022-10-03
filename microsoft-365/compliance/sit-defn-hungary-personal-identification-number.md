@@ -24,6 +24,8 @@ description: "Hungary personal identification number sensitive information type 
 
 # Hungary personal identification number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11 digits

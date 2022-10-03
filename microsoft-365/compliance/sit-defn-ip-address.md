@@ -24,6 +24,8 @@ description: "IP address sensitive information type entity definition."
 
 # IP address
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 ### IPv4:

@@ -30,6 +30,8 @@ Your information protection strategy is driven by your business needs. Many orga
 
 Microsoft Purview Information Protection (formerly Microsoft Information Protection) provides a framework, process, and capabilities you can use to accomplish your specific business objectives. 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Microsoft Purview Information Protection framework
 
 Use Microsoft Purview Information Protection to help you discover, classify, protect, and govern sensitive information wherever it lives or travels.

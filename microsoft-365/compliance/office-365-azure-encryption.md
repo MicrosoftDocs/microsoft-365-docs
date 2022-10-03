@@ -31,6 +31,8 @@ For data at rest, Azure offers many encryption options, such as support for AES-
 
 For more information about encryption in Azure, see [Azure encryption overview](/azure/security/security-azure-encryption-overview) and [Azure Data Encryption-at-Rest](/azure/security/azure-security-encryption-atrest).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Azure Disk Encryption
 
 Azure Disk Encryption enables you to encrypt your Windows and Linux Infrastructure as a Service (IaaS) VM disks. Azure Disk Encryption leverages the BitLocker feature of Windows and the DM-Crypt feature of Linux to provide volume-level encryption for the operating system and the data disks. It also ensures that all data on the VM disks are encrypted at rest in your Azure storage. Azure Disk Encryption is integrated with Azure Key Vault to help you control, manage, and audit the use of the encryption keys and secrets.

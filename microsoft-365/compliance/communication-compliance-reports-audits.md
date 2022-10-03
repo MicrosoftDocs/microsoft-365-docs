@@ -23,6 +23,8 @@ search.appverid:
 
 # Use communication compliance reports and audits
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Reports
 
 The **Reports** dashboard is the central location for viewing all communication compliance reports. To view and manage reports, users must be assigned to the *Communication Compliance Viewers* role group.

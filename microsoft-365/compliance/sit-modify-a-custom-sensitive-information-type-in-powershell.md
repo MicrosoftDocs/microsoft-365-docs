@@ -30,6 +30,8 @@ In Security & Compliance PowerShell, modifying a custom sensitive information ty
 
 To connect to Security & Compliance PowerShell, see [Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Export the existing rule package to an XML file
 
 > [!NOTE]

@@ -36,6 +36,8 @@ When the manager is satisfied with the scope of the collection and the estimated
 
 With the release of collections in an eDiscovery (Premium), the **Searches** tab has been renamed to **Collections** in an eDiscovery (Premium) case in the Microsoft Purview compliance portal. The steps to define the scope and size of the collection follow the same process as search to define locations and conditions. Save as draft and get preview estimates enables quick validation of targeted scope of collections prior to committing a full search and collection into the review set. This enables improved job management, and targeted iterations for starting to minimize content during the search and collection process.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Collections workflow
 
 To get started using collections in eDiscovery (Premium), here's a basic workflow and descriptions of each step in the process.

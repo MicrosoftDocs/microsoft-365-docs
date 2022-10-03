@@ -30,6 +30,8 @@ If you're not sure whether to use a record or a regulatory record, see [Compare 
 
 You can then either publish those labels in a retention label policy so that users and administrators can apply them to content, or for labels that mark items as records (but not regulatory records), auto-apply those labels to content that you want to declare a record.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How to display the option to mark content as a regulatory record
 
 > [!NOTE]

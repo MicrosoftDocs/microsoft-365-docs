@@ -34,6 +34,8 @@ You can also manually onboard individual devices to Microsoft 365. You might wan
 >
 > To deploy at scale, use [other deployment options](device-onboarding-overview.md). For example, you can deploy an onboarding script to more than 10 devices in production with the script available in [Onboard Windows 10 devices using Group Policy](device-onboarding-gp.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Onboard devices
  
 1. Get the configuration package .zip file (*DeviceComplianceOnboardingPackage.zip*) package from [Microsoft Purview compliance portal](https://compliance.microsoft.com)

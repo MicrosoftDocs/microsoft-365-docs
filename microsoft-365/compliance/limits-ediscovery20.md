@@ -25,6 +25,8 @@ ms.custom:
 
 This article describes the limits in the Microsoft Purview eDiscovery (Premium) solution in Microsoft 365.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Case and review set limits
 
 The following table lists the limits for cases and review sets in eDiscovery (Premium).

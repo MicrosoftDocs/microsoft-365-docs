@@ -26,6 +26,8 @@ description: "Germany driver's license number sensitive information type entity 
 
 This sensitive information type entity is included in the EU Driver's License Number sensitive information type. It's also available as a stand-alone sensitive information type entity.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 combination of 11 digits and letters

@@ -32,6 +32,8 @@ For step-by-step instructions for turning on auto-expanding archiving, see [Enab
 > [!NOTE]
 > Auto-expanding archiving also supports shared mailboxes.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How auto-expanding archiving works
 
 As explained in the introduction, additional mailbox storage space is created when a user's archive mailbox is enabled. When auto-expanding archiving is enabled, Microsoft Purview periodically checks the size of the archive mailbox. When an archive mailbox gets close to its storage limit, additional storage space is automatically created for the archive. If the user runs out of this additional storage space, more storage space is automatically added to the user's archive. This process continues until the user's archive reaches a size 1.5 TB. This process happens automatically, which means administrators don't have to request additional archive storage or manage auto-expanding archiving.

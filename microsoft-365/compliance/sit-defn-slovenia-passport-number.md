@@ -24,6 +24,8 @@ description: "Slovenia passport number sensitive information type entity definit
 
 # Slovenia passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 two letters followed by seven digits with no spaces or delimiters

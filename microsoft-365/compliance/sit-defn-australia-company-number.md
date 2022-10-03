@@ -26,6 +26,8 @@ description: "Australia company number sensitive information type entity definit
 
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits with delimiters

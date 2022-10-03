@@ -24,6 +24,8 @@ description: "France national id card (CNI) sensitive information type entity de
 
 # France national id card (CNI)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 12 digits

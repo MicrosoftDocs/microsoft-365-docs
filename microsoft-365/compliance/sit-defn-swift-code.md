@@ -24,6 +24,8 @@ description: "SWIFT code sensitive information type entity definition."
 
 # SWIFT code
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 four letters followed by 5-31 letters or digits

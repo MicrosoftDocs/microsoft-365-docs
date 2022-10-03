@@ -24,6 +24,8 @@ description: "Migrate your existing compliance data into Microsoft Purview Compl
 
 **In this article:** Learn how to migrate your organization's existing compliance activities into Compliance Manager and update multiple improvement actions at once by uploading a formatted Excel file.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Overview
 
 Compliance Manager enables organizations to bring their existing compliance activity data and evidence into the Compliance Manager solution. By uploading a specially formatted Excel file, organizations who are new to Compliance Manager can migrate compliance activities completed in other systems into Compliance Manager and quickly start increasing their overall compliance score.

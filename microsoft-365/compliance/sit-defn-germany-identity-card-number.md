@@ -24,6 +24,8 @@ description: "Germany identity card number sensitive information type entity def
 
 # Germany identity card number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 since 1 November 2010: Nine to 11 letters and digits

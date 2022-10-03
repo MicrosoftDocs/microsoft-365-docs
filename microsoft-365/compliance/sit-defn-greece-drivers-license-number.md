@@ -26,6 +26,8 @@ description: "Greece driver's license number sensitive information type entity d
 
 This entity is included in the EU Driver's License Number sensitive information type. It's also available as a stand-alone sensitive information type entity.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits without spaces and delimiters
