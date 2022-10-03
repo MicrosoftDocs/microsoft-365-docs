@@ -101,14 +101,17 @@ Security intelligence update version: x.xxx.xxxx.x <br/>
 - Fixed Defender updates during OOBE process 
 - Fixed Trusted Installer security descriptor vulnerability 
 - Fixed Microsoft Defender Antivirus exclusions visibility 
-- Fixed output of Fallback Order of the Powershell cmdlet 
+- Fixed output of fallback order of the PowerShell cmdlet 
 - Fixed Defender Platform update failure on Server Core 2019 SKUs 
 - Improved hardening support for Defender disablement configurations on Server SKUs 
 - Improved Defender configuration logics for tamper protection on servers 
 - Improved WARN mode for ASR rule 
 - Improved certificate handling of OSX  
 - Improved logging for scanning FilesStash location 
-- (Denise to publish notes from Paul's email) 
+- Beginning with platform version 4.18.2208.0 and later: If a server has been onboarded to Microsoft Defender for Endpoint, the "Turn off Windows Defender" group policy setting will no longer completely disable Windows Defender Antivirus on Windows Server 2012 R2 and later operating systems. Instead, it will be either ignored (if ForceDefenderPassiveMode is configured explicitly) or it will place Microsoft Defender Antivirus into passive mode (if ForceDefenderPassiveMode is not configured). In addition, the [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) feature will allow a switch to active mode via changing ForceDefenderPassiveMode to 0, but not to passive mode. 
+
+   > [!NOTE]
+   > These changes apply only to servers onboarded to Microsoft Defender for Endpoint. For more information, please refer to [Microsoft Defender Antivirus compatibility with other security products](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)
 
 ### Known Issues
 
