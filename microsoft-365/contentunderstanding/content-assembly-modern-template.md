@@ -135,7 +135,7 @@ You can create as many fields as you think are necessary. When you're done, you 
 
 ## Publish a modern template
 
-When you have completed adding all relevant fields to the template and you want to make it available for use for other users in the document library, you can publish the template.
+When you have completed adding all relevant fields to the template and you want to make it available for use by other users in the document library, you can publish the template.
 
 1. Select **Publish** to publish the template to be used by other users in the organization to create documents.
 
