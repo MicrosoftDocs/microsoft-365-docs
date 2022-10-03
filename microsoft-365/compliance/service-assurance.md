@@ -36,6 +36,8 @@ You can also find out how Office 365 can help customers comply with standards, l
     
 - Federal Risk and Authorization Management Program (FedRAMP)
     
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Who can access Office 365 Service assurance, and how?
 
  **New customers, and customers evaluating Microsoft online services** can access Service assurance which is included with Office 365 Enterprise E3 and E5 plans (both trial and paid subscriptions). If you don't have one of these plans and want to try Service assurance, you can [sign-up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).

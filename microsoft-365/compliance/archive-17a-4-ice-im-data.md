@@ -1,5 +1,6 @@
 ---
 title: "Set up a connector to archive ICE Connect Chat data in Microsoft 365"
+description: "Learn how to set up and use a 17a-4 ICE Connect Chat DataParser connector to import and archive ICE Connect Chat data in Microsoft 365."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,8 +11,10 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: "Learn how to set up and use a 17a-4 ICE Connect Chat DataParser connector to import and archive ICE Connect Chat data in Microsoft 365."
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ---
 
 # Set up a connector to archive ICE Connect Chat data
@@ -19,6 +22,8 @@ description: "Learn how to set up and use a 17a-4 ICE Connect Chat DataParser co
 Use the [ICE DataParser](https://www.17a-4.com/ice-dataparser/) from 17a-4 LLC to import and archive data from ICE Connect Chat to user mailboxes in your Microsoft 365 organization. The DataParser includes an ICE Chat connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The ICE DataParser connector converts ICE Connect Chat data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
 After ICE Connect Chat data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using an ICE DataParser connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Overview of archiving ICE Chat data
 

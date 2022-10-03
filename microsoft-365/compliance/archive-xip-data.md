@@ -1,5 +1,6 @@
 ---
 title: "Set up a connector to archive XIP source data in Microsoft 365"
+description: "Admins can set up a connector to import and archive XIP source data from Veritas to Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365. After your archive this data, you can use compliance features such as legal hold, content search, and retention policies to manage third-party data."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,8 +11,10 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: "Admins can set up a connector to import and archive XIP source data from Veritas to Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365. After your archive this data, you can use compliance features such as legal hold, content search, and retention policies to manage third-party data."
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ---
 
 # Set up a connector to archive XIP source data
@@ -19,6 +22,8 @@ description: "Admins can set up a connector to import and archive XIP source dat
 Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from the XIP source platform to user mailboxes in your Microsoft 365 organization. Veritas provides a [XIP](https://globanet.com/xip/) connector that allows using an XIP file to import items to Microsoft 365. An XIP file is similar to a ZIP file, but allows for a digital signature to be used. The digital signature is verified by Veritas Merge 1 before the XIP source file is extracted. The connector converts the content from the XIP source file to an email message format and then imports those items to the user mailboxes in Microsoft 365.
 
 After XIP source data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using an XIP connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Overview of archiving the XIP source data
 

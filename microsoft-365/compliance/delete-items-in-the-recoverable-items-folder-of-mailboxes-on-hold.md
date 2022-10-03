@@ -1,5 +1,6 @@
 ---
 title: Delete items in the Recoverable Items folder
+description: Learn how admins can delete items in a user's Recoverable Items folder for an Exchange Online mailbox, even if that mailbox is placed on legal hold.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,14 +10,14 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: Learn how admins can delete items in a user's Recoverable Items folder for an Exchange Online mailbox, even if that mailbox is placed on legal hold.
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
@@ -43,6 +44,8 @@ This article explains how admins can delete items from the Recoverable Items fol
 > [!CAUTION]
 > The procedures outlined in this article will result in data being permanently deleted (purged) from an Exchange Online mailbox. That means messages that you delete from the Recoverable Items folder can't be recovered and won't be available for legal discovery or other compliance purposes. If you want to delete messages from a mailbox that's placed on hold as part of a Litigation Hold, In-Place Hold, eDiscovery hold, or retention policy created in the Microsoft Purview compliance portal, check with your records management or legal departments before removing the hold. Your organization might have a policy that defines whether a mailbox on hold or a data spillage incident takes priority.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you delete items
 
 - To create and run a Content Search, you have to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role. To delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions](./assign-ediscovery-permissions.md).

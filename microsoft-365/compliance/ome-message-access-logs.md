@@ -1,5 +1,6 @@
 ---
 title: "Encrypted message portal activity log"
+description: "Access logs are available for encrypted messages retrieved through the encrypted message portal."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,17 +11,19 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.date: 07/21/2022
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- audit
 search.appverid:
 - MET150
-description: "Access logs are available for encrypted messages retrieved through the encrypted message portal."
 ---
 
 # Encrypted message portal activity log by Microsoft Purview Advanced Message Encryption
 
 Access logs are available for encrypted messages through the encrypted message portal that lets your organization determine when messages are read, and forwarded by your external recipients. To ensure logs are available for any external recipients, you should apply a custom branding template to protected emails sent by your organization to external recipients that enforces a portal experience. See [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Enabling message access audit logs in PowerShell
 

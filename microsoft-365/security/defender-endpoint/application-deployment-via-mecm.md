@@ -13,7 +13,9 @@ ms.author: macapara
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier1
 ms.topic: article
 ---
 

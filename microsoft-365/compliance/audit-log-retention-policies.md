@@ -1,5 +1,6 @@
 ---
 title: "Manage audit log retention policies"
+description: "Audit log retention policies are part of the new Microsoft Purview Audit (Premium) capabilities. An audit log retention policy lets you specify how long to retain audit logs in your organization."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,13 +11,12 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- audit
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 
-description: "Audit log retention policies are part of the new Microsoft Purview Audit (Premium) capabilities. An audit log retention policy lets you specify how long to retain audit logs in your organization."
 ---
 
 # Manage audit log retention policies
@@ -26,6 +26,8 @@ You can create and manage audit log retention policies in the Microsoft Purview 
 - All activities in one or more Microsoft 365 services
 - Specific activities (in a Microsoft 365 service) performed by all users or by specific users
 - A priority level that specifies which policy takes precedence in you have multiple policies in your organization
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Default audit log retention policy
 

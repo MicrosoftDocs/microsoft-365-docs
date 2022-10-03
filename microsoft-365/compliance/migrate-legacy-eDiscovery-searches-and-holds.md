@@ -1,5 +1,6 @@
 ---
 title: "Migrate legacy eDiscovery searches and holds to the Microsoft Purview compliance portal"
+description: learn about migrating legacy eDiscovery searches and holds to the compliance portal.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,10 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
-description:
 ---
 
 # Migrate legacy eDiscovery searches and holds to the compliance portal
@@ -25,6 +28,8 @@ To help customers take advantage of the new and improved functionality, this art
 
 > [!NOTE]
 > Because there are many different scenarios, this article provides general guidance to transition searches and holds to a eDiscovery (Standard) case in the compliance portal. Using eDiscovery cases aren't always required, but they add an extra layer of security by letting you assign permissions to control who has access to the eDiscovery cases in your organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 

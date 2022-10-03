@@ -14,14 +14,16 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
 ---
 
 # Use communication compliance reports and audits
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Reports
 

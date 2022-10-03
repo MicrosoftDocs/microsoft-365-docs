@@ -1,5 +1,6 @@
 ---
 title: "Configure permissions filtering for eDiscovery"
+description: "Use search permissions filtering to let eDiscovery managers search only a subset of mailboxes and sites in your organization."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,14 +12,12 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
-description: "Use search permissions filtering to let eDiscovery managers search only a subset of mailboxes and sites in your organization."
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -41,6 +40,8 @@ The following four cmdlets in Security & Compliance PowerShell let you configure
 - [Get-ComplianceSecurityFilter](#get-compliancesecurityfilter)
 - [Set-ComplianceSecurityFilter](#set-compliancesecurityfilter)
 - [Remove-ComplianceSecurityFilter](#remove-compliancesecurityfilter)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Requirements to configure permissions filtering
 

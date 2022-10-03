@@ -1,5 +1,6 @@
 ---
 title: "Clone a Content Search"
+description: "Use the PowerShell script in this article to quickly clone an existing Content Search in the Microsoft Purview compliance portal in Microsoft 365."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -14,10 +15,12 @@ search.appverid:
 - MOE150
 - MED150
 - MET150
-ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
-description: "Use the PowerShell script in this article to quickly clone an existing Content Search in the Microsoft Purview compliance portal in Microsoft 365."
+ms.collection:
+- tier1
+- purview-compliance
+- content-search
 ---
 
 # Clone a Content Search
@@ -31,6 +34,8 @@ Why clone Content Searches?
 - To save you from having to reenter a large number of content locations when you create a new search.
 
 - To decrease the size of the search results. For example, if you have a search that returns too many results to export, you can clone the search and then add a search condition based on a date range to reduce the number of search results.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Script information
 

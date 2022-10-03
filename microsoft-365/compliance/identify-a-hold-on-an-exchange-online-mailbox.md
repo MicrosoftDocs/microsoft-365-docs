@@ -1,24 +1,24 @@
 ---
 title: "How to identify the hold on an Exchange Online mailbox"
+description: "Learn how to identify the different types of hold that can be placed on an Exchange Online mailbox in Microsoft 365."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: "Learn how to identify the different types of hold that can be placed on an Exchange Online mailbox in Microsoft 365."
-
 ---
 
 # How to identify the type of hold placed on an Exchange Online mailbox
@@ -47,6 +47,8 @@ Microsoft 365 offers several ways that your organization can prevent mailbox con
 - **[Microsoft 365 retention labels](retention.md):** If a user applies a Microsoft 365 retention label (one that's configured to retain content or retain and then delete content) to *any* folder or item in their mailbox, a hold is placed on the mailbox as if the mailbox was placed on Litigation Hold or assigned to a Microsoft 365 retention policy. For more information, see the [Identifying mailboxes on hold because a retention label has been applied to a folder or item](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) section in this article.
 
 To manage mailboxes on hold, you may have to identify the type of hold that's placed on a mailbox so that you can perform tasks such as changing the hold duration, temporarily or permanently removing the hold, or excluding a mailbox from a Microsoft 365 retention policy. In these cases, the first step is to identify the type of hold placed on the mailbox. And because multiple holds (and different types of holds) can be placed on a single mailbox, you have to identify all holds placed on a mailbox if you want to remove or change a hold.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Obtain the GUID for holds placed on a mailbox
 

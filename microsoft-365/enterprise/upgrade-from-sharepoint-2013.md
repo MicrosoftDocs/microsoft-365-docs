@@ -8,6 +8,7 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.collection:
+- scotvorg
 - Ent_O365
 search.appverid:
 - MET150

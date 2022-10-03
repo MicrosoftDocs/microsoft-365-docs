@@ -1,5 +1,6 @@
 ---
 title: "Predictive coding reference"
+description: "Learn about the key concepts and metrics of the predictive coding tool in Microsoft Purview eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,13 +13,17 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "Learn about the key concepts and metrics of the predictive coding tool in Microsoft Purview eDiscovery (Premium)."
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Predictive coding reference (preview)
 
 This article describes the key concepts and metrics of the predictive coding tool in Microsoft Purview eDiscovery (Premium). The sections in the article are listed in alphabetical order.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Confidence level
 
