@@ -1,6 +1,6 @@
 ---
 title: Data Residency for Viva Connections
-description: 
+description: Data Residency for Viva Connections
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
