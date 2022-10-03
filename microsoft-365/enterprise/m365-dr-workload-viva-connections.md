@@ -39,7 +39,7 @@ Required Conditions:
 
 The following customer data will be stored in the related *Geography*:
 
--The Dashboard and Feed can have content sourced from SharePoint Online, Exchange Online and Microsoft Teams.  All data sourced from these services that are covered by their data residency commitments will be stored in the relevant *Geography*.   Please refer to sections ***TODO ADD LINK 5.1,5.2, and 5.3.***
+- The Dashboard and Feed can have content sourced from SharePoint Online, Exchange Online and Microsoft Teams.  All data sourced from these services that are covered by their data residency commitments will be stored in the relevant *Geography*.   Please refer to sections ***TODO ADD LINK 5.1,5.2, and 5.3.***
 
 ### Migration 
 
