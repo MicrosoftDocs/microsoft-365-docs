@@ -23,11 +23,11 @@ highlightedContent:
   items:
     # Card
     - title: Zero Trust and Microsoft 365 Defender
-      itemType: overview
+      itemType: get-started
       url: /microsoft-365/security/microsoft-365-zero-trust
     # Card
     - title: Ransomware protection in Microsoft 365
-      itemType: how-to-guide
+      itemType: overview
       url: /microsoft-365/solutions/ransomware-protection-microsoft-365
     # Card
     - title: Microsoft SIEM and XDR security solutions
