@@ -17,3 +17,217 @@ ms.collection:
 ---
 
 # Data Residency for Microsoft Purview
+
+Data residency commitments for the Purview set of services are available with the Advanced Data Residency add-on.
+The required conditions for the related commitments for the services described below are:
+1.	Tenant has a sign up country included in *Local Geography* or *Expanded Local Geography*.
+2.	Tenant has a valid Advanced Data Residency subscription for all users in the tenant
+3.	The Purview service customer data is provisioned in *Local Geography* or *Expanded Local Geography*.
+
+## Migration 
+
+The customer data for Purview services are closely aligned with the Exchange Online and SharePoint Online services, and the bulk of the data migrated will be handled by those services.  In the cases where supporting customer data is maintained in an Azure Service, for example, the migration of that data is tied to the migration of the underlying Exchange Online/Sharepoint Online data.
+
+### Purview Audit (Standard)
+
+#### Summary
+
+Service documentation:  <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/auditing-solutions-overview?view=o365-worldwide" target="_blank">**Microsoft Purview auditing solutions**</a>
+
+Capability summary: Microsoft Purview Audit (Standard) provides with you with the ability to log and search for audited activities and power your forensic, IT, compliance, and legal investigations.
+
+#### Data Residency commitments available
+
+Commitment:
+
+The following customer data will be stored in the related Geography:
+- Service configuration data
+- Audited Activities
+- Audit Records
+- Audit log query permissions
+
+### Purview Audit (Premium)
+
+#### Summary
+
+Service documentation:  <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/auditing-solutions-overview?view=o365-worldwide" target="_blank">**Microsoft Purview auditing solutions**</a>
+
+Capability summary: Audit (Premium) builds on the capabilities of Audit (Standard) by providing audit log retention policies, longer retention of audit records, high-value crucial events, and higher bandwidth access to the Office 365 Management Activity API.
+
+#### Data Residency commitments available
+
+Commitment:
+
+The following customer data will be stored in the related Geography:
+
+In addition to the data stored as part of Purview Audit (Standard), configuration and customer data related to high-value events are stored in the relevant Geography.          
+  
+
+### Data lifecycle management - Data Retention 
+
+#### Summary
+
+Applies to the following services:
+- Manual retention labels
+- Basic org-wide or location-wide retention policies
+- Rules-based automatic retention policies
+- Machine Learning-based retention
+- Teams message retention policies
+
+Service documentation:  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/retention?view=o365-worldwide" target="_blank">**Learn about retention policies & labels**</a>
+
+For more detailed information about how retention settings work for different workloads, see the following articles:
+
+- <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/retention-policies-exchange?view=o365-worldwide" target="_blank">**Learn about retention for Exchange**</a>
+
+-  <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/retention-policies-sharepoint?view=o365-worldwide" target="_blank">**Learn about retention for SharePoint and OneDrive**</a>
+
+- <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/retention-policies-teams?view=o365-worldwide" target="_blank">**Learn about retention for Microsoft Teams**</a>
+
+
+Capability summary: Lets you retain or delete content with policy management for email, documents, and Teams.
+
+#### Data Residency commitments available
+
+Commitment:
+
+The following customer data will be stored in the related *Geography*:
+- Retention policy settings
+- Retention label definitions
+- Customer Data stored in original locations for the following services:
+  - Exchange email
+  - SharePoint site
+  - OneDrive accounts
+  - Microsoft 365 Groups
+  - Exchange public folders
+  - Microsoft Teams chats and channel messages
+- Customer Data copied and stored in Exchange Online hidden mailboxes 
+  - Teams channel messages
+  - Teams chats
+  - Teams private channel messages
+  - SharePoint Online, OneDrive for Business, Exchange Online and Microsoft Teams follow the data residency commitments for those services.  Please refer to sections ***TODO: UPDATE LINKS***5.1,5.2, and 5.3
+- Training classifiers
+- Disposition data
+- Mappings between retention labels and Data Loss Prevention (DLP) policies.
+
+### Data lifecycle management - Records Management
+
+#### Summary
+
+Service documentation:  <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/records-management?view=o365-worldwide" target="_blank">**Learn about Microsoft Purview Records Management**</a>
+
+Capability summary: Organizations of all types require a records-management solution to manage regulatory, legal, and business-critical records across their corporate data. Records management for Microsoft Purview helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be retained, no longer of value, or no longer required for business purposes.
+
+#### Data Residency commitments available
+
+Commitment:
+
+The following customer data will be stored in the related *Geography*:
+- Record retention label definitions.
+- File plan definitions
+- Event-based retention policy settings.
+- Disposition review records
+- Records of deletion
+
+### Information Protection - Sensitivity labels
+
+##### Summary
+
+Applies to the following services: 
+- Manual, default, and mandatory sensitivity labeling in Office 365
+- Automatic sensitivity labeling in Office 365 apps
+- Automatic sensitivity labels in Exchange, SharePoint, and OneDrive
+- Sensitivity labels based on advanced classification
+- Sensitivity labeling for containers in Office 365
+
+
+Service documentation:
+- <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide" target="_blank">**Learn about sensitivity labels**</a>
+- <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide" target="_blank">**Get started with Activity explorer**</a>
+
+Capability summary: Sensitivity labels from Microsoft Purview Information Protection let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered.
+
+#### Data Residency commitments available
+
+Commitment:
+
+The following customer data will be stored in the related *Geography*:
+- Label configuration
+- Labels definition
+- Label policies
+- Custom Help page
+- Activity Explorer and Microsoft 365 unified audit logs
+- Label change justification records.
+
+### Information Protection - Data Loss Prevention (DLP)
+
+#### Summary
+
+Applies to the following services:
+- Office 365 Data Loss Prevention (DLP) for emails and files
+- DLP for Teams chat
+
+Service documentation:  <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp?view=o365-worldwide" target="_blank">**Learn about data loss prevention**</a>
+
+Capability summary:
+
+Organizations have sensitive information under their control such as financial data, proprietary data, credit card numbers, health records, or social security numbers. To help protect this sensitive data and reduce risk, they need a way to prevent their users from inappropriately sharing it with people who shouldn't have it. This practice is called data loss prevention (DLP).
+
+In Microsoft Purview, you implement data loss prevention by defining and applying DLP policies. With a DLP policy, you can identify, monitor, and automatically protect sensitive items across:
+- Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive
+- Office applications such as Word, Excel, and PowerPoint
+- Windows 10, Windows 11 and macOS (Catalina 10.15 and higher) endpoints
+- non-Microsoft cloud apps
+- on-premises file shares and on-premises SharePoint.
+
+DLP detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches to keywords, by the evaluation of regular expressions, by internal function validation, and by secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies.
+
+
+#### Data Residency commitments available
+
+Commitment:
+
+The following customer data will be stored in the related *Geography*:
+- DLP admin configuration
+- DLP policies in Compliance Center
+- DLP monitored activities
+- Violation history, Activity Explorer and Microsoft 365 unified audit logs
+- Quarantine storage
+- DLP Alerts and DLP Alert management dashboard
+
+
+### Information Protection - Office Message Encryption
+
+#### Summary
+
+Applies to the following services:
+- Basic Office Message Encryption
+- Advanced Office Message Encryption
+
+Service documentation:  <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/ome?view=o365-worldwide" target="_blank">**Office 365 Message Encryption - Microsoft Purview**</a>
+
+Capability summary: With Office 365 Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Office 365 Message Encryption works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps ensure that only intended recipients can view message content.
+
+#### Data Residency commitments available
+
+Commitment:
+
+The following customer data will be stored in the related *Geography*:
+***TODO: need commitment text***
+
+
+### Insider Risk Management - Information Barriers
+
+#### Summary
+
+Service documentation:  <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/information-barriers?view=o365-worldwide" target="_blank">**Learn about information barriers**</a>
+
+Capability summary: Microsoft Purview Information Barriers (IB) is a compliance solution that allows you to restrict two-way communication and collaboration between groups and users in Microsoft Teams, SharePoint, and OneDrive. Often used in highly regulated industries, IB can help to avoid conflicts of interest and safeguard internal information between users and organizational areas.
+
+#### Data Residency commitments available
+
+Commitment:
+
+The following customer data will be stored in the related *Geography*:
+- Policy settings and risk indicators
+- Admin settings
