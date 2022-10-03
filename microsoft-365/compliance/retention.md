@@ -11,8 +11,9 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - tier1
+- highpri
 - SPO_Content
 search.appverid:
 - MOE150
@@ -57,6 +58,8 @@ With these two retention actions, you can configure retention settings for the f
 These retention settings work with content in place that saves you the additional overheads of creating and configuring additional storage when you need to retain content for compliance reasons. In addition, you don't need to implement customized processes to copy and synchronize this data.
 
 Use the following sections to learn more about how retention policies and retention labels work, when to use them, and how they supplement each other. But if you're ready to get started and deploy retention settings for some common scenarios, see [Get started with data lifecycle management](get-started-with-data-lifecycle-management.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How retention settings work with content in place
 
@@ -261,6 +264,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Persists if the content is moved | No | Yes, within your Microsoft 365 tenant |
 |Declare item as a record| No | Yes |
 |Start the retention period when labeled or based on an event | No | Yes |
+|Run a Power Automate flow at the end of the retention period | No | Yes|
 |Disposition review | No| Yes |
 |Proof of disposition for up to 7 years | No |Yes, when you use disposition review or item is marked a record|
 |Audit admin activities| Yes | Yes|

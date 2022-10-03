@@ -11,7 +11,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
@@ -90,6 +92,8 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 - **Ensure that the device has an Automation Remediation level assigned to it**.
 
   You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
+  > [!NOTE]
+  > Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2. 
 
   You'll receive the following error:
 

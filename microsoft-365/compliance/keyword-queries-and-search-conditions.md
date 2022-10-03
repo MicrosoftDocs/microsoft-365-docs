@@ -14,7 +14,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid:
 - MOE150
@@ -39,6 +39,8 @@ For step-by-step instructions on how to create different eDiscovery searches, se
 
 > [!NOTE]
 > eDiscovery searches in the compliance portal and the corresponding **\*-ComplianceSearch** cmdlets in Security & Compliance PowerShell use the Keyword Query Language (KQL). For more detailed information, see [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Searchable email properties
 

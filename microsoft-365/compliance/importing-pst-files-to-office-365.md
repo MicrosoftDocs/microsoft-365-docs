@@ -15,7 +15,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - import
 search.appverid: MET150
 ms.custom:
@@ -35,6 +35,8 @@ You can use the Import service in the <a href="https://go.microsoft.com/fwlink/p
 - **Network upload** ![Cloud upload.](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) - Upload the PST files over the network to a temporary Azure Storage location in the Microsoft cloud. Then you use the Microsoft 365 Import service to import the PST data to mailboxes in your organization.
 
 - **Drive shipping** ![Hard disk.](../media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) - Copy the PST files to a BitLocker-encrypted hard drive and then physically ship the drive to Microsoft. When Microsoft receives the hard drive, data center personnel upload the data to a temporary Azure Storage location in the Microsoft cloud. Then you use the Microsoft 365 Import service to import the data to mailboxes in your organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step-by-step instructions
 

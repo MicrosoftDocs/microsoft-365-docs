@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Business Premium trial playbook"
+title: "Microsoft 365 Business Premium trial guide"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -7,7 +7,9 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier1
 ms.service: microsoft-365-security
 ms.subservice: other
 ms.date: 09/15/2022
@@ -18,16 +20,16 @@ search.appverid:
 description: "Make the most of your Microsoft 365 Business Premium trial. Try out some of the key productivity and security capabilities."
 ---
 
-# Trial playbook: Microsoft 365 Business Premium
+# Trial guide: Microsoft 365 Business Premium
 
-Welcome to the Microsoft Business Premium trial playbook! This playbook will help you make the most of your 30-day free trial. You can see firsthand how Microsoft 365 Business Premium increases productivity and helps safeguard your organization with advanced security capabilities. Use this playbook to set up your threat protection features, analyze detected threats, and respond to cyberattacks.
+Welcome to the Microsoft Business Premium trial guide! This guide will help you make the most of your 30-day free trial. You can see firsthand how Microsoft 365 Business Premium increases productivity and helps safeguard your organization with advanced security capabilities. Use this guide to set up your threat protection features, analyze detected threats, and respond to cyberattacks.
 
 ## Set up the Microsoft 365 Business Premium trial
 
 When you [start a trial or purchase Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your first step is to get everything set up.
 
 > [!TIP]
-> Save this playbook to your browser favorites. When links in the playbook take you away from this location, it'll be easier to return to this playbook to continue.
+> Save this guide to your browser favorites. When links in the guide take you away from this location, it'll be easier to return to this guide to continue.
 
 1. [Set up your trial](../business-premium/m365bp-setup.md)!
 

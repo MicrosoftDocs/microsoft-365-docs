@@ -15,7 +15,7 @@ search.appverid:
   - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: Admins can learn how to view, create, modify, and delete Safe Links policies and global Safe Links settings in Microsoft Defender for Office 365.
 ms.subservice: mdo

@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid: 
 - MOE150
@@ -24,6 +24,8 @@ ms.custom:
 # Limits in eDiscovery (Premium)
 
 This article describes the limits in the Microsoft Purview eDiscovery (Premium) solution in Microsoft 365.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Case and review set limits
 

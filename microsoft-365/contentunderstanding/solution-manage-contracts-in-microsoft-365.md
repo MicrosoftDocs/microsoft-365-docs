@@ -11,6 +11,8 @@ ms.service: microsoft-365-enterprise
 ms.collection:
 - m365solution-managecontracts
 - m365solution-overview
+- highpri
+- m365initiative-syntex
 search.appverid: 
 ms.localizationpriority:  medium
 ROBOTS: 

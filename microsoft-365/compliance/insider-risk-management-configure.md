@@ -14,8 +14,10 @@ audience: itpro
 ms.collection:
 - highpri 
 - tier1
-- M365-security-compliance
+- purview-compliance
 - m365solution-insiderrisk
+- m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
@@ -27,6 +29,8 @@ Use insider risk management policies to identify risky activities and management
 > The insider risk management solution provides a tenant level option to help customers facilitate internal governance at the user level. Tenant level administrators can set up permissions to provide access to this solution for members of your organization and set up data connectors in the Microsoft Purview compliance portal to import relevant data to support user level identification of potentially risky activity. Customers acknowledge insights related to the individual user's behavior, character, or performance materially related to employment can be calculated by the administrator and made available to others in the organization. In addition, customers acknowledge that they must conduct their own full investigation related to the individual user's behavior, character, or performance materially related to employment, and not just rely on insights from the insider risk management service. Customers are solely responsible for using the insider risk management service, and any associated feature or service in compliance with all applicable laws, including laws relating to individual user identification and any remediation actions.
 
 For more information about how insider risk policies can help you manage risk in your organization, see [Learn about insider risk management](insider-risk-management.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Subscriptions and licensing
 

@@ -19,7 +19,7 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 ---
 
@@ -36,6 +36,8 @@ Here's what happens when you create a Litigation hold.
 - The storage quota for the Recoverable Items folder is increased from 30 GB to 110 GB.
 
 - Items in the user's primary and the archive mailboxes are retained
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Assign an Exchange Online Plan 2 license
 

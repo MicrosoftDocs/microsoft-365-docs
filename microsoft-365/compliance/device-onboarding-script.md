@@ -11,7 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance 
+- tier1
+- purview-compliance 
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150 
@@ -32,6 +33,8 @@ You can also manually onboard individual devices to Microsoft 365. You might wan
 > This script has been optimized for use on up to 10 devices.
 >
 > To deploy at scale, use [other deployment options](device-onboarding-overview.md). For example, you can deploy an onboarding script to more than 10 devices in production with the script available in [Onboard Windows 10 devices using Group Policy](device-onboarding-gp.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Onboard devices
  

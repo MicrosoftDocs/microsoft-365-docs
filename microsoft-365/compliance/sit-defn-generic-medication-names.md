@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier2
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -24,6 +25,8 @@ description: "Generic medication names sensitive information type entity definit
 # Generic medication names
 
 This unbundled named entity detects names of generic medications, such as *acetaminophen*. It supports English terms only. It's also included in the [All medical terms and conditions](sit-defn-all-medical-terms-conditions.md) bundled named entity SIT.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Confidence level
 
