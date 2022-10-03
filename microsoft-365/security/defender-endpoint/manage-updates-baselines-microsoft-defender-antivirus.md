@@ -84,6 +84,37 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>September-2022 (Platform: 4.18.2209.3 | Engine: 1.1.19700.1)</summary>
+
+&ensp;Security intelligence update version: **x.xxx.xxxx.x** (*version number coming soon*)<br/>
+&ensp;Release date: **October 6, 2022**<br/>
+&ensp;Platform: **4.18.2209.3**<br/>
+&ensp;Engine: **1.1.19700.1**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.19700.1<br/>
+Security intelligence update version: x.xxx.xxxx.x <br/>
+
+### What's new
+
+- Improved processing of Defender fallback order on Server SKU 
+- Fixed Defender updates during OOBE process 
+- Fixed Trusted Installer security descriptor vulnerability 
+- Fixed Microsoft Defender Antivirus exclusions visibility 
+- Fixed output of Fallback Order of the Powershell cmdlet 
+- Fixed Defender Platform update failure on Server Core 2019 SKUs 
+- Improved hardening support for Defender disablement configurations on Server SKUs 
+- Improved Defender configuration logics for tamper protection on servers 
+- Improved WARN mode for ASR rule 
+- Improved certificate handling of OSX  
+- Improved logging for scanning FilesStash location 
+- (Denise to publish notes from Paul's email) 
+
+### Known Issues
+
+- Some customers might have received platform updates 4.18.2209.2 from preview. The service gets stuck at the start state after the update.  
+<br/><br/>
+</details><details>
 <summary>August-2022 (Platform: 4.18.2207.7 | Engine: 1.1.19600.3)</summary>
 
 &ensp;Security intelligence update version: **1.373.1647.0**<br/>
@@ -146,14 +177,21 @@ Security intelligence update version: 1.373.219.0 <br/>
 - Customers deploying platform update 4.18.2207.5 might experience lagging network performance that could impact applications.
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
+
+<details>
 <summary>May-2022 (Platform: 4.18.2205.7 | Engine: 1.1.19300.2)</summary>
 
 &ensp;Security intelligence update version: **1.369.88.0**<br/>
 &ensp;Released: **June 22, 2022**<br/>
 &ensp;Platform: **4.18.2205.7**<br/>
 &ensp;Engine: **1.1.19300.2**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.19300.2<br/>
 Security intelligence update version: 1.369.88.0<br/>
@@ -173,14 +211,7 @@ Security intelligence update version: 1.369.88.0<br/>
 No known issues
 
 <br/><br/>
-</details>
-
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
-
-<details>
+</details><details>
 <summary>March-2022 *UPDATE* (Platform: 4.18.2203.5 | Engine:  1.1.19200.5)</summary>
 
 *Customers who applied the March 2022 Microsoft Defender engine update (**1.1.19100.5**) might have encountered high resource utilization (CPU and/or memory). Microsoft has released an update (**1.1.19200.5**) that resolves the bugs introduced in the earlier version. Customers are recommended to update to at least this new engine build of Antivirus Engine (**1.1.19200.5**). To ensure any performance issues are fully fixed, it's recommended to reboot machines after applying update.*
