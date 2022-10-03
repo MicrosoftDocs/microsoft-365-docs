@@ -166,11 +166,18 @@ conceptualContent:
            text: Respond to your first incident
 
   # Card
-      - title: Train your employees
+      - title: Simulate attacks
         links:
          - url: /microsoft-365/security/office-365-security/attack-simulation-training-get-started
+           itemType: get-started
+           text: Get started using attack simulation training
+         - url: /microsoft-365/security/office-365-security/attack-simulation-training-insights
            itemType: overview
-           text: Attack simulation and training
+           text: Insights and reporting for attack simulation
+         - url: /microsoft-365/security/office-365-security/configure-advanced-delivery
+           itemType: how-to-guide
+           text: Configure 3rd party phishing simulation
+
         # Card
       - title: Placeholder
         links:
