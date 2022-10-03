@@ -40,4 +40,4 @@ Required Conditions:
 
 The following customer data will be stored in the related *Geography*:
 
--MDO P1 does not store any customer data within its service.  In addition, all processing of data that is required to analyze threats and inspect suspicious emails, documents, messages, links, etc. is done in a sandbox environment and performed within the *Local Geography* or *Expanded Local Geography*.
+- MDO P1 does not store any customer data within its service.  In addition, all processing of data that is required to analyze threats and inspect suspicious emails, documents, messages, links, etc. is done in a sandbox environment and performed within the *Local Geography* or *Expanded Local Geography*.
