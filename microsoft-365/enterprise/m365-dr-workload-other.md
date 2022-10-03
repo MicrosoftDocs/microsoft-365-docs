@@ -1,6 +1,6 @@
 ---
 title: Data Residency for Other Microsoft 365 Services
-description: 
+description: Data Residency for Other Microsoft 365 Services
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -18,8 +18,7 @@ ms.collection:
 
 # Data Residency for Other Microsoft 365 Services
 
-##Data Residency commitments available
-
+## Data Residency commitments available
 
 For data location information for the following services, please refer to the data location information in Section ***(TODO: add reference link to datamaps)***
 
