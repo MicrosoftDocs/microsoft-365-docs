@@ -43,7 +43,7 @@ Get-MpPreference
 ## Scenario
 
 1. Turn on Network Protection using powershell command: Set-MpPreference -EnableNetworkProtection Enabled
-2. Using the browser of your choice (not Edge*), navigate to the [Network Protection website test](https://smartscreentestratings2.net/) (Edge has other security measures in place to protect from this vulnerability(smartscreen))
+2. Using the browser of your choice (not Microsoft Edge*), navigate to the [Network Protection website test](https://smartscreentestratings2.net/) (Microsoft Edge has other security measures in place to protect from this vulnerability(SmartScreen))
 
 ## Expected results
 
