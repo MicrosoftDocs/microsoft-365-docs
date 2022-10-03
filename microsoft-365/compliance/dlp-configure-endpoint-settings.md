@@ -263,8 +263,9 @@ When you list a website in Sensitive services domains you can audit, block with 
 - print from a website
 - copy data from a website
 - save a website as local files
+- upload a sensitive file to an excluded website (this is configured in the policy)
 
-Each website must be listed in a website group and the user must be accessing the website through Microsoft Edge. Sensitive service domains is used in conjunction with a DLP policy for Devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
+For the print, copy data and save actions, each website must be listed in a website group and the user must be accessing the website through Microsoft Edge. For the upload action, the user can be using Microsoft Edge or Google Chrome with the Purview extension. Sensitive service domains is used in conjunction with a DLP policy for Devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
 
 
 ### Additional settings for endpoint DLP
