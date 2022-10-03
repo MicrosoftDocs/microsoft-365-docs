@@ -94,9 +94,9 @@ After Microsoft OneDrive LTI and Brightspace are connected, you need to deploy t
 1. Don't select any configuration settings, substitution parameters, or customer parameters.
 1. Select **Add Org Units** and choose the org units you want to use the new LTI app.  \
    You can select: \
-        - The **Root org** along with the **All descendants** option to include everyone.
-        - Individual org units to include just those units.
-        - **All descendant** units using the radio buttons in the **Options** column.
+   - The **Root org** along with the **All descendants** option to include everyone.
+   - Individual org units to include just those units.
+   - **All descendant** units using the radio buttons in the **Options** column.
 1. Select **Create Deployment**. \
    Your new deployment will display in the list. Leave this tab option and continue with the next steps.
 
