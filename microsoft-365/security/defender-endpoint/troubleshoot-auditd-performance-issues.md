@@ -56,7 +56,7 @@ To troubleshoot such issues, begin by [collecting MDEClientAnalyzer logs](run-an
 
 ## XMDEClientAnalyzer 
 
-When you use XMDEClientAnalyzer, the following files will display output that provide insights to help you troubleshoot issues.
+When you use [XMDEClientAnalyzer](run-analyzer-macos-linux.md), the following files will display output that provides insights to help you troubleshoot issues.
 - auditd_info.txt
 - auditd_log_analysis.txt
 
