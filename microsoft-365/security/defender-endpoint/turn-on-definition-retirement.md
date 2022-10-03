@@ -16,7 +16,9 @@ manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
 ms.topic: article
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 search.appverid: met150
 ---
 

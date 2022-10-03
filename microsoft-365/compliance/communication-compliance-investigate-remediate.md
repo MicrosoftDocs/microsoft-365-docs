@@ -15,7 +15,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
@@ -30,6 +30,8 @@ After you've configured your [communication compliance policies](/microsoft-365/
 - Be assigned as a reviewer in the policy associated with the alert
 
 After you have the required permissions, follow the workflow instructions here to investigate and remediate alert issues.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Investigate alerts
 

@@ -18,7 +18,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - tier3
-- m365-security-compliance
+- m365-security
 ms.topic: article
 ---
 

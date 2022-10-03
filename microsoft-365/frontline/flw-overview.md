@@ -11,6 +11,7 @@ ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
+  - highpri
   - m365solution-overview
   - m365solution-frontline
   - highpri

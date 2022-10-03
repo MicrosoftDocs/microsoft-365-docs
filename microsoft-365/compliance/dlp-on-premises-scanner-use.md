@@ -14,7 +14,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
 - highpri
@@ -74,6 +74,8 @@ If you want to enforce DLP rules on the scanned files, enforcement must be enabl
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies) and select the DLP policy that is targeted to the on-premises location repositories you have configured in AIP.
 2. Edit the policy.
 3. On the **Test or turn on the policy** page, select **Yes, turn it on right away**.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## See also
 

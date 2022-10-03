@@ -10,10 +10,10 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
-- highpri
+- tier2
 search.appverid: 
 - MOE150
 - MET150
@@ -23,6 +23,8 @@ description: "Understand how to use Configuration Analyzer for Microsoft Purview
 # Configuration Analyzer for Microsoft Purview (CAMP)
 
 **In this article:** Learn how to install and run the Configuration Analyzer for Microsoft Purview (CAMP) tool to get quickly started with Microsoft Purview Compliance Manger.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Compliance Configuration Analyzer (CAMP) overview
 

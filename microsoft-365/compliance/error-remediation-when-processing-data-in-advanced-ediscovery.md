@@ -10,7 +10,9 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
@@ -22,6 +24,8 @@ ms.custom: seo-marvel-mar2020
 Error remediation allows eDiscovery administrators the ability to rectify data issues that prevent Microsoft Purview eDiscovery (Premium) from properly processing the content. For example, files that are password protected can't be processed since the files are locked or encrypted. Using error remediation, eDiscovery administrators can download files with such errors, remove the password protection, and then upload the remediated files.
 
 Use the following workflow to remediate files with errors in eDiscovery (Premium) cases.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Create an error remediation session to remediate files with processing errors
 

@@ -10,10 +10,10 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
-- highpri
+- tier1
 search.appverid: 
 - MOE150
 - MET150
@@ -23,6 +23,8 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 # What's new in Microsoft Purview Compliance Manager
 
 **In this article:** Learn about recent updates in Compliance Manager.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## August 2022
 

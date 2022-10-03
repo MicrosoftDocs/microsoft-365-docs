@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ms.collection: 
 - highpri
 - tier1
-- M365-security-compliance
+- purview-compliance
 - m365solution-aed
 - m365solution-scenario
 - highpri
@@ -33,6 +33,8 @@ This article discusses the following steps necessary to set up eDiscovery (Premi
 ![Steps to set up eDiscovery (Premium).](../media/set-up-advanced-ediscovery.png)
 
 This includes ensuring the proper licensing required to access eDiscovery (Premium) and add custodians to cases, and assigning permissions to your legal and investigation team so they can access and manage cases.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Verify and assign appropriate licenses
 

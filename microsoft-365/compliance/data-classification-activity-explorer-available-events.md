@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
 - tier1
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
 - highpri
@@ -23,6 +23,8 @@ description: "A list of labeling activities that are available in Activity explo
 ---
 
 # Labeling activities that are available in Activity explorer
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Sensitivity label applied
 

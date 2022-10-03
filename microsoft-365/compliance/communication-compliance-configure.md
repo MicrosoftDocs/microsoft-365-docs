@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 ms.collection:
 - highpri 
 - tier1
-- M365-security-compliance
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
 - highpri
@@ -29,6 +29,8 @@ search.appverid:
 # Get started with communication compliance
 
 Use communication compliance policies to identify user communications for examination by internal or external reviewers. For more information about how communication compliance policies can help you detect communications in your organization, see [communication compliance policies](/microsoft-365/compliance/communication-compliance-policies). If you'd like to review how Contoso quickly configured a communication compliance policy to detect inappropriate content in Microsoft Teams, Exchange Online, and Yammer communications, check out this [case study](/microsoft-365/compliance/communication-compliance-case-study).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Subscriptions and licensing
 

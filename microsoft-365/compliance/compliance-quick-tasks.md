@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.collection:
 - tier1
-- m365-security-compliance
+- purview-compliance
 ms.custom: 
 - admindeeplinkDEFENDER
 - intro-get-started
@@ -25,6 +25,8 @@ If you're new to Microsoft Purview and wondering where to start, this article pr
 This article is also helpful if you're figuring out how best to manage risks, protect your data, and remain compliant with regulations and standards with a newly remote workforce. Employees are now collaborating and connecting with each other in new ways, and this change means your existing compliance processes and controls may need to adapt. Identifying and managing these new compliance risks within your organization is critical to safeguarding your data and minimizing threats and risks.
 
 After you've completed these basic compliance tasks, consider expanding compliance coverage in your organization by implementing additional Microsoft Purview solutions.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Task 1: Configure compliance permissions
 

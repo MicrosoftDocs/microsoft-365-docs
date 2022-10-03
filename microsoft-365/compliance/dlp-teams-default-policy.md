@@ -1,5 +1,5 @@
 ---
-title: "Learn about the default DLP policy in Microsoft Teams (preview)"
+title: "Learn about the default DLP policy in Microsoft Teams"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -12,16 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
 - tier1
-- M365-security-compliance
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MET150
 description: "Learn about the default data loss prevention policy in Microsoft Teams"
 ---
 
-# Learn about the default data loss prevention policy in Microsoft Teams (preview)
+# Learn about the default data loss prevention policy in Microsoft Teams
 
 [Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) capabilities have been extended to include Microsoft Teams chat and channel messages, including private channel messages. As a part of this release, we created a default DLP policy for Microsoft Teams for first-time customers to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Licensing
 

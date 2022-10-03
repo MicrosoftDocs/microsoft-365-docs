@@ -15,13 +15,15 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
 - tier1
-- M365-security-compliance
+- purview-compliance
 description: "Use these procedures to take advantage of named entities in your data loss prevention policies"
 ---
 
 # Use named entities in your data loss prevention policies
 
 Read through [Learn about named entities](named-entities-learn.md) before you start to use them.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 

@@ -11,10 +11,10 @@ ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
-- highpri
+- tier1
 search.appverid: 
 - MOE150
 - MET150
@@ -27,6 +27,8 @@ description: "Understand how to use and manage templates for building assessment
 
 > [!IMPORTANT]
 > The assessment templates that are available to your organization depend on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Templates overview
 

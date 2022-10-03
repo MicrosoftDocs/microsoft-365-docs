@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier2
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -23,6 +24,8 @@ description: "India Driver's License Number sensitive information type entity de
 
 
 # India Drivers License Number
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 

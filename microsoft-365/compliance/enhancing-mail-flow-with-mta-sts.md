@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: high 
 ms.assetid: 
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
 - highpri
@@ -23,6 +23,8 @@ description: Learn how to enhance mail flow with MTA-STS.
 Support for the [SMTP MTA Strict Transport Security](https://datatracker.ietf.org/doc/html/rfc8461) (MTA-STS) standard is added to Exchange Online. The standard was developed to ensure that TLS is always used for connections between email servers. It also provides a way for sending servers to validate that the receiving server has a trusted certificate. If either TLS isn't offered or the certificate isn't valid, the sender refuses to deliver messages. These new checks improve the overall security of SMTP and protect against man-in-the-middle attacks.
 
 MTA-STS can be broken down into two scenarios: Inbound and Outbound Protection. Inbound covers the protection of domains hosted in Exchange Online with MTA-STS and Outbound covers the MTA-STS validations performed by Exchange Online when sending emails to MTA-STS protected domains.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Outbound Protection
 

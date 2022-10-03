@@ -14,7 +14,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
 - tier1
-- M365-security-compliance
+- purview-compliance
 - SPO_Content
 search.appverid: 
 - MET150
@@ -35,6 +35,8 @@ You must configure these settings if you intend to control:
 - Browser and domain restrictions.
 - How business justifications for overriding policies appear in policy tips.
 - If activities on Office, PDF, and CSV files are automatically audited.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## DLP settings
 

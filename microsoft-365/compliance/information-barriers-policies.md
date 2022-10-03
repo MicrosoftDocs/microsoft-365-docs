@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 ms.collection:
 - highpri 
 - tier2
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
 - highpri
@@ -31,6 +31,8 @@ For more information about IB scenarios and features, see [Learn about informati
 
 > [!TIP]
 > To help you prepare your plan, an [example scenario](#example-scenario-contosos-departments-segments-and-policies) is included in this article.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Required subscriptions and permissions
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - tier1
 - SPO_Content
 ms.custom: admindeeplinkSPO
@@ -45,6 +45,8 @@ Be aware that some label options can extend configuration settings to site owner
 Content in these containers however, do not inherit the labels for the sensitivity category or settings for files and emails, such as content markings and encryption. So that users can label their documents in SharePoint sites or team sites, make sure you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 Container labels don't support displaying [other languages](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell) and display the original language only for the label name and description.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Using sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites
 

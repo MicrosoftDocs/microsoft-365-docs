@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
 - tier1
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
 - highpri
@@ -26,6 +26,8 @@ description: "Content explorer allows you to natively view labeled items."
 # Get started with content explorer
 
 Content explorer allows you to natively view the items that were summarized on the overview page.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Prerequisites
 

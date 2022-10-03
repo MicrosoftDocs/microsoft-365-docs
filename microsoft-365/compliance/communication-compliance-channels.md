@@ -15,7 +15,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
@@ -24,6 +24,8 @@ search.appverid:
 # Detect channel signals with communication compliance
 
 With communication compliance policies, you can choose to scan messages in one or more of the following communication platforms as a group or as standalone sources. Original messages captured across these platforms are retained in the original platform location in accordance with your organization's [retention and hold policies](/microsoft-365/compliance/information-governance). Copies of messages used by communication compliance policies for analysis and investigation are retained for as long as policy is in place, even if users leave your organization and their mailboxes are deleted. When a communication policy is deleted, copies of messages associated with the policy are also deleted.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Microsoft Teams
 

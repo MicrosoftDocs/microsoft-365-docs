@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - tier2
-- M365-security-compliance
+- purview-compliance
 ms.localizationpriority: null
 f1.keywords:
 - NOCSH
@@ -19,6 +19,8 @@ f1.keywords:
 # Manage information barriers policies
 
 After you have [defined information barriers (IB) policies](information-barriers-policies.md), you may need to make changes to those policies or to your user segments, as part of [troubleshooting](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) or as regular maintenance.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## What do you want to do?
 

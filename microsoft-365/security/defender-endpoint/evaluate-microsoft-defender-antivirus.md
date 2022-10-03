@@ -14,7 +14,9 @@ ms.date: 10/18/2018
 ms.reviewer:
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 search.appverid: met150
 ---
 

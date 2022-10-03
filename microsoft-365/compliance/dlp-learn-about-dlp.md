@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.collection:
 - tier1
 - highpri
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MET150
 description: "Learn how to protect your sensitive information using Microsoft Purview data loss prevention policies and tools and take a tour through the DLP lifecycle."
@@ -32,6 +32,8 @@ In Microsoft Purview, you implement data loss prevention by defining and applyin
 - on-premises file shares and on-premises SharePoint.
 
 DLP detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches to keywords, by the evaluation of regular expressions, by internal function validation, and by secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## DLP is part of the larger Microsoft Purview offering
 

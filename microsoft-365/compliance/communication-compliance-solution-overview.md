@@ -13,7 +13,7 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
@@ -23,6 +23,8 @@ ms.collection:
 # Communication compliance
 
 Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards. Microsoft Purview Communication Compliance helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications. These include inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Configure communication compliance
 

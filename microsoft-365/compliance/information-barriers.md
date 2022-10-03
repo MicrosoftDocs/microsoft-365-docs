@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.collection:
 - highpri 
 - tier2
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
 - highpri
@@ -38,6 +38,8 @@ IB policies can allow or prevent communication and collaboration between groups 
 
 > [!IMPORTANT]
 > Information barriers **only supports** two-way communication and collaboration restrictions. For example, a scenario where Marketing can communicate and collaborate with Day Traders, but Day Traders cannot communicate and collaborate with Marketing **isn't supported**.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Information barriers and Microsoft Teams
 
