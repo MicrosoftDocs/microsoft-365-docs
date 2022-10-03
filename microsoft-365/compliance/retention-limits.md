@@ -27,6 +27,8 @@ description: "Understand the maximum number of policies and items per policy for
 
 When you use [retention policies and retention label policies](retention.md#retention-policies-and-retention-labels) to automatically retain or delete data for your organization, there are some maximum numbers to be aware of.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Maximum number of retention labels per tenant
 
 A maximum of 1,000 retention labels are supported per tenant.

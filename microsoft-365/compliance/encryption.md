@@ -31,6 +31,8 @@ Encryption is an important part of your file protection and information protecti
 
 - For information about how to configure or set up encryption for your organization, see [Set up encryption in Office 365 Enterprise](set-up-encryption.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## What is encryption, and how does it work in Office 365?
 
 The encryption process encodes your data (referred to as plaintext) into ciphertext. Unlike plaintext, ciphertext can't be used by people or computers unless and until the ciphertext is decrypted. Decryption requires an encryption key that only authorized users have. Encryption helps ensure that only authorized recipients can decrypt your content. Content includes files, email messages, calendar entries, and so on.

@@ -37,6 +37,8 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 These errors (with error codes of CS001-002, CS003-002, CS008-009, CS012-002, and other errors of the form CS0XX-0XX) indicate that Content Search failed to search specific content locations; in this example, two mailboxes weren't searched. These errors are displayed on the status details flyout page of the Content Search.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Cause of content location errors
 
 When searching a large number of mailboxes, the search is distributed across thousands of servers in a Microsoft datacenter. At any one time, specific servers could be in reboot state or in the process of failing over to redundant copies. In either of these cases, the Content Search's request to retrieve data will time out. In the previous example, the errors for the mailboxes that failed were the result of the search timing out.

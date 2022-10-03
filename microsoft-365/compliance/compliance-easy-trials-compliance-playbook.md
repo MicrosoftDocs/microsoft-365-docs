@@ -8,7 +8,9 @@ manager: laurawi
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
-ms.collection: m365-security-compliance
+ms.collection: 
+- purview-compliance
+- tier3
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: 
@@ -21,6 +23,8 @@ ms.custom: trial-playbook
 # Trial playbook: Microsoft Purview solutions
 
 Welcome to the Microsoft Purview solutions trial playbook. This playbook will help you make the most of your free trial by helping you discover robust and comprehensive capabilities of Microsoft Purview and security products.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Compliance actions with Microsoft Purview
 

@@ -27,6 +27,8 @@ description: "Croatia identity card number sensitive information type entity def
 
 This entity is included in the EU National Identification Number sensitive information type. It's available as a stand-alone sensitive information type entity.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits

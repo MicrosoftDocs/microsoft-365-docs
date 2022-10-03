@@ -24,6 +24,8 @@ search.appverid:
 
 After you have initiated your legal hold notification workflow, you can use the communications workflow in Microsoft Purview eDiscovery (Premium) to track the status of your communications. The Communications tab contains a list of all notifications within your eDiscovery (Premium) case. You can see details such as the number of custodians that have been assigned or have acknowledged the notice.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Monitor acknowledgments
 
 After you select a communication from the **Communications** tab, you can view a list of custodians that have acknowledged a hold notice. 

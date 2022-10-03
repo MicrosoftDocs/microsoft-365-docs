@@ -25,6 +25,8 @@ description: "Cyprus tax identification number sensitive information type entity
 
 # Cyprus tax identification number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 eight digits and one letter in the specified pattern

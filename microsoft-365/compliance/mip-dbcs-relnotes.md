@@ -28,6 +28,8 @@ description: "Release notes for support for double byte character sets."
 
 This support is available for sensitive information types and keyword dictionaries and will be reflected in Microsoft Purview Data Loss Prevention (for Exchange Online, SharePoint Online, OneDrive for Business, and Teams), Communications Compliance, Auto Labelling in office apps and Microsoft Defender for Cloud Apps.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Known issues
 
 - When a text file attached to an email is in UTF-8 format without byte order mark (BOM), the email isn't detected by the Communication Compliance policy.

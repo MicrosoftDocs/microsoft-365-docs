@@ -24,6 +24,8 @@ description: "Czech driver's license number sensitive information type entity de
 
 # Czech drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 two letters followed by six digits

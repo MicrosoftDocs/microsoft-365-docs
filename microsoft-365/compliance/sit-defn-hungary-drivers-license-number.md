@@ -24,6 +24,8 @@ description: "Hungary driver's license number sensitive information type entity 
 
 # Hungary drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Two letters followed by six digits

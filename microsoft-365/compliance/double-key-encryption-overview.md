@@ -20,6 +20,8 @@ ms.collection:
 
 Have a question about how Double Key Encryption works? Check for an answer here.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## What is Double Key Encryption (DKE)?
 
 Double Key Encryption enables customers to protect their highly sensitive data to meet specialized requirements. It helps you maintain full control of their encryption keys. It uses two keys to protect data; one key in your control and a second key stored securely in Microsoft Azure. Viewing data protected with Double Key Encryption requires access to both keys. Since Microsoft can access only one of these keys, protected data remains inaccessible to Microsoft, ensuring that you have full control over your data privacy and security.  

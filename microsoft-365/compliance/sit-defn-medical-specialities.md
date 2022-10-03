@@ -26,6 +26,8 @@ description: "Medical specialities sensitive information type entity definition.
 
 This unbundled named entity detects terms related to medical specialties, such as *dermatology*.  It supports English terms only. It's also included in the [All medical terms and conditions](sit-defn-all-medical-terms-conditions.md) bundled named entity SIT.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Confidence level
 
 High

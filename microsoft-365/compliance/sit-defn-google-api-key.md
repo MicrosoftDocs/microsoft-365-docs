@@ -24,6 +24,8 @@ description: "Google API key sensitive information type entity definition."
 
 # Google API key (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 39 characters consisting of letters, digits, and special characters.

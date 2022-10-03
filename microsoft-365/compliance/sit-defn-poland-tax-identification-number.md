@@ -24,6 +24,8 @@ description: "Poland tax identification number sensitive information type entity
 
 # Poland tax identification number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11 digits with no spaces or delimiters

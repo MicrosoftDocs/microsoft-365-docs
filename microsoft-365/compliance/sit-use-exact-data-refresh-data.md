@@ -39,6 +39,8 @@ You can refresh your sensitive information database up to 5 times in every 24 ho
    |Task Scheduler API|See the [Task Scheduler](/windows/desktop/TaskSchd/using-the-task-scheduler) documentation|
    |Windows user interface|In Windows, click **Start**, and type Task Scheduler. Then, in the list of results, right-click **Task Scheduler**, and choose **Run as administrator**.|
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Example PowerShell script for Task Scheduler
 
 This section includes an example PowerShell script you can use to schedule your tasks for hashing data and uploading the hashed data:

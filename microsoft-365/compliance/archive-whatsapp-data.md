@@ -12,7 +12,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier1
+- tier3
 - purview-compliance
 - data-connectors
 ---
@@ -22,6 +22,8 @@ ms.collection:
 Use the TeleMessage connector in the Microsoft Purview compliance portal to import and archive WhatsApp calls, chats, attachments, files, and deleted messages. After you set up and configure a connector, it connects to your organization's TeleMessage account once every day, and imports the mobile communication of employees using the TeleMessage WhatsApp Phone Archiver or TeleMessage WhatsApp Cloud Archiver to mailboxes in Microsoft 365.
 
 After WhatsApp data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, Content search, and Microsoft 365 retention policies to WhatsApp data. For example, you can search WhatsApp messages using Content search or associate the mailbox that contains WhatsApp messages with a custodian in an eDiscovery (Premium) case. Using a WhatsApp connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Overview of archiving WhatsApp data
 

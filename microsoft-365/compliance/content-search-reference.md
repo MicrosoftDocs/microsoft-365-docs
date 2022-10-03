@@ -27,6 +27,8 @@ ms.custom:
 
 This article describes features and functionality of Content search.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Content search limits
 
 For a description of the limits that are applied to Content searches, see [Limits for Content search](limits-for-content-search.md).

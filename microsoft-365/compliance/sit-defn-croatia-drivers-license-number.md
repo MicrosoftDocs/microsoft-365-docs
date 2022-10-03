@@ -25,6 +25,8 @@ description: "Croatia driver's license number sensitive information type entity 
 
 # Croatia drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 eight digits without spaces and delimiters

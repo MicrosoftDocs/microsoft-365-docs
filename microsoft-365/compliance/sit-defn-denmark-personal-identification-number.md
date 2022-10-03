@@ -24,6 +24,8 @@ description: "Denmark personal identification number sensitive information type 
 
 # Denmark personal identification number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 10 digits containing a hyphen

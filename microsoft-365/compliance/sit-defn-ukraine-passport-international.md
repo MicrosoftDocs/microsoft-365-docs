@@ -24,6 +24,8 @@ description: "Ukraine passport international sensitive information type entity d
 
 # Ukraine passport international
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 eight-character alphanumeric pattern

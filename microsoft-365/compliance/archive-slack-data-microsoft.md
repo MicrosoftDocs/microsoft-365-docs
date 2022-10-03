@@ -12,7 +12,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier1
+- tier3
 - purview-compliance
 - data-connectors
 ---
@@ -22,6 +22,8 @@ ms.collection:
 The Slack eDiscovery data connector provided by Microsoft helps you to import and archive instant messaging data (such as messages, attachments, links, and revisions) from your organization's Slack workspaces to Microsoft 365. The data connector pulls data from the Slack API, converts it to an email message format, and then imports those items to user mailboxes in Microsoft 365. After the Slack data is imported, you can apply compliance solutions, such as Litigation hold, Microsoft Purview eDiscovery (Premium), Communication compliance, and retention settings to the Slack content. Using a Slack eDiscovery data connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
 If you’d like to participate in the preview, please reach out to the team at dcfeedback@microsoft.com.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Overview of archiving Slack eDiscovery data
 

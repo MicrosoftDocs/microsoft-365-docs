@@ -22,6 +22,8 @@ ms.collection:
 
 [Microsoft Purview](/purview/purview) risk and compliance solutions help you manage and monitor your data, protect information, minimize compliance risks, and meet regulatory requirements. This article will help you learn about Microsoft Purview risk and compliance solutions and quickly get started with deploying these solutions to meet specific compliance needs for your organization.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Protect sensitive data across clouds, apps, and devices
 
 Your information protection strategy should be driven by your business needs, but every organization has a requirement to protect some or all of its data. Use the capabilities from [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) (formerly Microsoft Information Protection) to help you discover, classify, protect, and govern sensitive information wherever it lives or travels.

@@ -24,6 +24,8 @@ description: "New Zealand inland revenue number sensitive information type entit
 
 # New Zealand inland revenue number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 eight or nine digits with optional delimiters

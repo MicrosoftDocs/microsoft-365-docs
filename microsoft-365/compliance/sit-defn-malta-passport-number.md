@@ -24,6 +24,8 @@ description: "Malta passport number sensitive information type entity definition
 
 # Malta passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 seven digits without spaces or delimiters

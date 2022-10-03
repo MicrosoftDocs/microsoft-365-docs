@@ -24,6 +24,8 @@ description: "Turkey national identification number sensitive information type e
 
 # Turkey national identification number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11 digits

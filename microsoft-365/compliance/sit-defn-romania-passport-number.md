@@ -24,6 +24,8 @@ description: "Romania passport number sensitive information type entity definiti
 
 # Romania passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 eight or nine digits without spaces and delimiters

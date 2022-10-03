@@ -24,6 +24,8 @@ description: "Switzerland SSN AHV number sensitive information type entity defin
 
 # Switzerland SSN AHV number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 13-digit number

@@ -24,6 +24,8 @@ description: "Poland national ID (PESEL) sensitive information type entity defin
 
 # Poland national ID (PESEL)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11 digits

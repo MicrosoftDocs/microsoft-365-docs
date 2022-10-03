@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection:
-- tier1
+- tier3
 - purview-compliance
 - data-connectors
 ms.custom: admindeeplinkCOMPLIANCE
@@ -28,6 +28,8 @@ Setting up a connector for HR data that insider risk management policies can use
 
 > [!IMPORTANT]
 > A new version of the HR connector is now available for public preview. To create a new HR connector or to import data for the [new employee profile scenario](#csv-file-for-employee-profile-data-preview) for the healthcare policy scenario for insider risk management, go to the **Data connectors** page in the compliance portal, select the **Connectors** tab, and then click **Add a connector > HR (preview)** to start the set up. Existing HR connectors will continue to work without any disruption.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 

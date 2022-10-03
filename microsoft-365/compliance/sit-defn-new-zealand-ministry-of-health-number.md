@@ -24,6 +24,8 @@ description: "New Zealand ministry of health number sensitive information type e
 
 # New Zealand ministry of health number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 three letters and four digits

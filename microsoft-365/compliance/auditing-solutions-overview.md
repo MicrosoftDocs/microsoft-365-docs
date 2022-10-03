@@ -30,6 +30,8 @@ Microsoft Purview auditing solutions provide an integrated solution to help orga
 > [!NOTE]
 > Microsoft Purview auditing is the new name for the unified audit log.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Microsoft Purview auditing solutions
 
 Microsoft Purview provides two auditing solutions: Audit (Standard) and Audit (Premium).

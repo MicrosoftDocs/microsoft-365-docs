@@ -23,6 +23,8 @@ search.appverid:
 
 This article describes how to close, reopen, and delete Microsoft Purview eDiscovery (Standard) cases in Microsoft 365.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Close a case
 
 When the legal case or investigation supported by a eDiscovery (Standard) case is completed, you can close the case. Here's what happens when you close a case:

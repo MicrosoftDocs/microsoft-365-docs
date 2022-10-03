@@ -24,6 +24,8 @@ description: "Ireland personal public service (PPS) number sensitive information
 
 # Ireland personal public service (PPS) number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Old format (until 31 December 2012):

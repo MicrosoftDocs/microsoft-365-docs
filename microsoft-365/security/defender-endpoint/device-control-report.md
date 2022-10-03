@@ -13,7 +13,9 @@ ms.topic: article
 manager: dansimp
 audience: ITPro
 ms.subservice: mde
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier3
 search.appverid: met150
 ---
 

@@ -26,6 +26,8 @@ description: "France driver's license number sensitive information type entity d
 
 This entity is available in the EU Driver's License Number sensitive information type and is available as a stand-alone sensitive information type entity.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 12 digits
