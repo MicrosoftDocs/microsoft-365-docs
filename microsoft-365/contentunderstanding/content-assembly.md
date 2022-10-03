@@ -17,9 +17,10 @@ description: Learn how to automatically create documents and other content using
 
 # Overview of content assembly in Microsoft SharePoint Syntex
 
-You can use SharePoint Syntex to help you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, sales pitches, and correspondence. You can do all this quicker, more consistently, and with fewer errors by using content assembly in SharePoint Syntex.
 
-With content assembly, you can use an existing document to create a *modern template*, and then use that template to automatically generate new content using SharePoint lists or manual entries as a data source.
+You can use the content assembly capabilities in SharePoint Syntex to help you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, sales pitches, and correspondence. You can do all this quicker, more consistently, and with fewer errors by creating modern templates and using those templates to generate documents.
+
+You can upload an existing document to create a modern template, and then use that template to automatically generate new content using SharePoint lists or manual entries as a data source.
 
 > [!NOTE]
 > You must be a licensed SharePoint Syntex user to access and use content assembly capabilities. You also must have permissions to manage SharePoint lists.
@@ -53,7 +54,7 @@ Only Microsoft Word documents (.docx/.doc extension) are currently supported for
 |Standardizing content generation |You can add fields and then associate with various data sources for only specific sections of the content to make it easy for users to generate documents once template is published.  |Once uploaded, the file is kept as-is in the template. Any user using the template have to change the content accordingly.   |
 |Data sources supported		|You can associate fields with SharePoint lists and term store while creating templates.   |Not applicable   |
 |Document types supported	 |Only Microsoft Word documents (.docx/.doc extension) are currently supported for creating a template.  |You can use any file to upload as template.   |
-|Management of templates	|Once template is created, you can edit or manage the template fields, rename the template, and republish for use.  |You can r [to be provided].   |
+|Management of templates	|Once template is created, you can edit or manage the template fields, rename the template, and republish for use.  |Not applicable   |
 |Draft version of templates	|You can create draft versions of templates before finally publishing it for use by other users.   |There is no capability to create drafts of regular templates.  |
 |Workflows   |You can automate document generation from templates by [setting up Power Automate workflows](automate-document-generation.md).  |Workflows cannot be configured with regular templates.  |
 
