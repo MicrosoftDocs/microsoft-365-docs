@@ -22,6 +22,8 @@ Content understanding in SharePoint Syntex starts with AI models. Models let you
 
 SharePoint Syntex uses [custom models](#custom-models) and [prebuilt models](#prebuilt-models). 
 
+![Diagram showing the types of Syntex custom and prebuilt models.](../media/content-understanding/syntex-model-types-diagram.png)
+
 <!---
 </br>
 
