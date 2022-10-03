@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
 description: Admins can learn how to simulate phishing attacks and train their users on phishing prevention using Attack simulation training in Microsoft Defender for Office 365 Plan 2.
@@ -81,7 +81,7 @@ The following details are shown for each payload:
 - **Payload name**
 - **Language**: The language of the payload content. Microsoft's payload catalog (global) provides payloads in 10+ languages which can also be filtered.
 - **Click rate**: How many people have clicked on this payload.
-- **Predicted compromise rate**: Historical data for the payload across Microsoft 365 that predicts the percentage of people who will get compromised by this payload.
+- **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this payload (users compromised / total number of users who receive the payload).
 - **Simulations launched** counts the number of times this payload was used in other simulations.
 
 In the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box, you can type part of the payload name and press Enter to filter the results.

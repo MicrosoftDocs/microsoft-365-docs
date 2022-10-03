@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 ms.date: 07/20/2022
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: 
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.subservice: mde
@@ -38,6 +38,9 @@ Depending on
 - how your organization's [device groups](/microsoft-365/security/defender-endpoint/machine-groups) are configured,
 
 remediation actions can occur automatically or only upon approval by your organization's security operations team.
+
+> [!NOTE]
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 Here are a few examples:
 

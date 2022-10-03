@@ -8,6 +8,7 @@ ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 f1.keywords:
