@@ -48,7 +48,7 @@ This migration phase includes the following steps:
 
 ## Get and deploy updates across your organization's devices
 
-As a best practice, keep your organization's devices and endpoints up to date. Make sure your existing endpoint protection and antivirus solution is up to date, and that the operating systems and apps your organization is also have the latest updates. Doing this now can help prevent problems later as you migrate to Defender for Endpoint and Microsoft Defender Antivirus.
+As a best practice, keep your organization's devices and endpoints up to date. Make sure your existing endpoint protection and antivirus solution is up to date, and that your organization's operating systems and apps also have the latest updates. Doing this now can help prevent problems later as you migrate to Defender for Endpoint and Microsoft Defender Antivirus.
 
 ### Make sure your existing solution is up to date
 
