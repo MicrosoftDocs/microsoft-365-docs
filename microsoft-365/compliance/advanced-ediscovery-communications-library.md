@@ -26,6 +26,8 @@ When you or other users create a hold notification or other types of custodian c
 
 This article explains how to create organization-wide communications templates and select them when creating a new custodian notification for a specific eDiscovery (Premium) case.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you create templates in the Communications library
 
 - You must be an eDiscovery Administrator in your organization to add or remove templates in the Communications library in eDiscovery (Premium). For more information, see [Assign eDiscovery permissions in the Microsoft Purview compliance portal](assign-ediscovery-permissions.md)  

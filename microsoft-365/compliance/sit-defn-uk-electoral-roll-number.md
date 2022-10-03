@@ -24,6 +24,8 @@ description: "U.K. electoral roll number sensitive information type entity defin
 
 # U.K. electoral roll number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 two letters followed by 1-4 digits

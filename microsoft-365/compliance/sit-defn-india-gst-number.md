@@ -24,6 +24,8 @@ description: "India GST Number sensitive information type entity definition."
 
 # India GST Number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 15 character alphanumeric pattern

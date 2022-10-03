@@ -36,6 +36,8 @@ You must configure these settings if you intend to control:
 - How business justifications for overriding policies appear in policy tips.
 - If activities on Office, PDF, and CSV files are automatically audited.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## DLP settings
 
 Before you get started, you should set up your DLP settings. 

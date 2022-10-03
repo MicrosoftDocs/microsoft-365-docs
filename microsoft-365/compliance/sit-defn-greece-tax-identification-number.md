@@ -24,6 +24,8 @@ description: "Greece tax identification number sensitive information type entity
 
 # Greece tax identification number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Nine digits without spaces and delimiters

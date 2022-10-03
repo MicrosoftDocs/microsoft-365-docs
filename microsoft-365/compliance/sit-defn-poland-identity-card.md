@@ -24,6 +24,8 @@ description: "Poland identity card sensitive information type entity definition.
 
 # Poland identity card
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 three letters and six digits

@@ -24,6 +24,8 @@ description: "Hungary passport number sensitive information type entity definiti
 
 # Hungary passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Two letters followed by six or seven digits with no spaces or delimiters

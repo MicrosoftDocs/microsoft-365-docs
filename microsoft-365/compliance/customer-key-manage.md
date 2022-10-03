@@ -18,6 +18,8 @@ description: "After you set up Customer Key, learn how to manage it by restoring
 
 After you've set up Customer Key, you'll need to create and assign one or more data encryption policies (DEP). Once you've assigned your DEPs, you can manage your keys as described in this article. Learn more about Customer Key in the related topics.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Create a DEP for use with multiple workloads for all tenant users
 
 Before you begin, ensure that you've completed the tasks required to set up Customer Key. For information, see [Set up Customer Key](customer-key-set-up.md). To create the DEP, you need the Key Vault URIs you obtained during setup. For information, see [Obtain the URI for each Azure Key Vault key](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).

@@ -13,7 +13,7 @@ ms.collection:
 - purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
-- highpri
+- tier1
 search.appverid: 
 - MOE150
 - MET150
@@ -23,6 +23,8 @@ description: "Learn how to implement and test controls by working with improveme
 # Working with improvement actions in Compliance Manager
 
 **In this article:** This article explains how to **manage your compliance workflow** with improvement actions. Learn how to **assign improvement actions** for implementation and testing, **manage updates**, and export **reports**.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Manage compliance workflows with improvement actions
 

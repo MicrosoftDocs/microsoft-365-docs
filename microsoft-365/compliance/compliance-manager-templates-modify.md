@@ -14,7 +14,7 @@ ms.collection:
 - purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
-- highpri
+- tier1
 search.appverid: 
 - MOE150
 - MET150
@@ -28,6 +28,8 @@ When working with assessments in Compliance Manager, you may want to modify an a
 However, there are details to be aware of as you format your file with changes to existing template data. **We recommend you review these instructions carefully to ensure you don't overwrite any existing data that you want to retain.**
 
 To learn more about the format of this spreadsheet, see [Format your template data with Excel](compliance-manager-templates-format-excel.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format your Excel file to modify an existing template
 

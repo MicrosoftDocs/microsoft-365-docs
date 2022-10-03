@@ -24,6 +24,8 @@ description: "U.S. bank account number sensitive information type entity definit
 
 # U.S. bank account number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 6-17 digits

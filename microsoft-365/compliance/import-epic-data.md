@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection:
-- tier1
+- tier3
 - purview-compliance
 - data-connectors
 ---
@@ -36,6 +36,8 @@ Setting up an Epic connector consists of the following tasks:
 - Optionally, scheduling the script to run automatically to import audit records.
 
 If you’d like to participate in the preview, please reach out to the team at dcfeedback@microsoft.com.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you set up the connector
 

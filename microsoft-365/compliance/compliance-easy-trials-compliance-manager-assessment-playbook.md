@@ -8,7 +8,9 @@ manager: laurawi
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
-ms.collection: m365-security-compliance
+ms.collection: 
+- purview-compliance
+- tier3
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: 
@@ -25,6 +27,8 @@ Welcome to the Microsoft Purview Compliance Manager premium assessment trial pla
 This playbook will help you make the most of your 90-day free trial by teaching you how to use the comprehensive set of premium assessment templates (add-on).
 
 Using Microsoft recommendations, you'll quickly see how the premium assessment templates can help your organization assess risks and efficiently respond to global, regional and industrial regulatory requirements.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Get to know Compliance Manager
 

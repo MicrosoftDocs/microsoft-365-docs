@@ -58,6 +58,8 @@ While the document is unlocked, any user with standard edit permissions can edit
 
 For more information about what user actions are allowed when a record is locked or unlocked, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Locking and unlocking a record
 
 After a retention label that marks content as a record is applied to a document, any user with Contribute permissions or a narrower permission level can unlock a record or lock an unlocked record.

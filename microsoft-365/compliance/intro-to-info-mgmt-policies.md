@@ -31,6 +31,8 @@ For example, an organization that must follow government regulations requiring t
   
 For how-to information, see [Create and apply information management policies](create-info-mgmt-policies.md).
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Features of information management policies
 <a name="__top"> </a>
 

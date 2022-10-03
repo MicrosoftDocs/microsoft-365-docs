@@ -24,6 +24,8 @@ description: "SQL Server connection string sensitive information type entity def
 
 # SQL Server connection string
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 The string `User Id`, `User ID`, `uid`, or `UserId` followed by the characters and strings outlined in the pattern below.

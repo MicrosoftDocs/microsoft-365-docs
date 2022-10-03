@@ -36,6 +36,8 @@ You can use Microsoft Purview Data Loss Prevention (DLP) to monitor the actions 
 > [!NOTE]
 > In Microsoft Purview, DLP policy evaluation of sensitive items occurs centrally, so there is no time lag for policies and policy updates to be distributed to individual devices. When a policy is updated in compliance center, it generally takes about an hour for those updates to be synchronized across the service. Once policy updates are synchronized, items on targeted devices are automatically re-evaluated the next time they are accessed or modified.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Endpoint activities you can monitor and take action on
 
 Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items that are physically stored Windows 10, Windows 11, or macOS devices.

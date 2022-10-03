@@ -24,6 +24,8 @@ description: "Israel bank account number sensitive information type entity defin
 
 # Israel bank account number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 13 digits

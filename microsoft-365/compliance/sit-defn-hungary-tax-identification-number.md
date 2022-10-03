@@ -24,6 +24,8 @@ description: "Hungary tax identification number sensitive information type entit
 
 # Hungary tax identification number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 10 digits with no spaces or delimiters

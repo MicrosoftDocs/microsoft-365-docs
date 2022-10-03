@@ -24,6 +24,8 @@ description: "Spain DNI sensitive information type entity definition."
 
 # Spain DNI
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 eight digits followed by one character

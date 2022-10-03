@@ -29,6 +29,8 @@ Here are two ways you can use the prediction score filter:
 
 - Cull items from the review set that the model has predicted are not relevant. Alternative, you can use the prediction score filter to de-prioritize the review of non-relevant items.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you apply a prediction score filter
 
 - Create a predictive coding model so that a corresponding prediction score filter is created.
