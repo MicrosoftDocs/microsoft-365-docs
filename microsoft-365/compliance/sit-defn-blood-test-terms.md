@@ -26,6 +26,8 @@ description: "Blood test terms sensitive information type entity definition."
 
 This unbundled named entity detects terms related to blood tests, such as *hCG*. It supports English terms only. It's also included in the [All medical terms and conditions](sit-defn-all-medical-terms-conditions.md) bundled named entity SIT.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Confidence level
 
 High

@@ -24,6 +24,8 @@ description: "International classification of diseases (ICD-10-CM) sensitive inf
 
 # International classification of diseases (ICD-10-CM)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Dictionary

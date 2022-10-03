@@ -29,6 +29,8 @@ This can be extended to how a person wants to consume a set of documents. They w
 
 The Themes functionality in eDiscovery (Premium) attempts to mimic how humans reason about documents, by analyzing the *themes* that are discussed in a review set and assigning a theme to documents in the review set. In eDiscovery (Premium), Themes goes one step further and identifies the *dominant theme* in each document. The dominant theme is the one that appears the most often in a document.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How does Themes work?
 
 The Themes functionality analyzes documents with text in a review set to parse out common themes that appear across all the documents in the review set. eDiscovery (Premium) assigns those themes to the documents in which they appear. It also labels each theme with the words used in the documents that are representative of the theme. Because a document can contain various types of subject matter, eDiscovery (Premium) often assigns multiple themes to documents. The theme that appears most prominently in a document is designated as its dominant theme.

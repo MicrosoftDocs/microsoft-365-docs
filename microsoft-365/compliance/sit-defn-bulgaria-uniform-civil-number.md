@@ -24,6 +24,8 @@ description: "Bulgaria uniform civil number sensitive information type entity de
 
 # Bulgaria uniform civil number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 10 digits without spaces and delimiters

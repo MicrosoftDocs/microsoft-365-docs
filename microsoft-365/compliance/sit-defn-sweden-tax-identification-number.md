@@ -24,6 +24,8 @@ description: "Sweden tax identification number sensitive information type entity
 
 # Sweden tax identification number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 10 digits and a symbol in the specified pattern

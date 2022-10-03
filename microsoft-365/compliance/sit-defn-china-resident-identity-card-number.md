@@ -25,6 +25,8 @@ description: "China resident identity card (PRC) number sensitive information ty
 
 # China resident identity card (PRC) number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 18 digits

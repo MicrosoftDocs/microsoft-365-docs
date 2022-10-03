@@ -24,6 +24,8 @@ description: "Chile identity card number sensitive information type entity defin
 
 # Chile identity card number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 seven to eight digits plus delimiters a check digit or letter

@@ -24,6 +24,8 @@ description: "Azure App Service Deployment Password sensitive information type e
 
 # Azure App Service deployment password (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 60 characters consisting of letters, digits, and special characters.

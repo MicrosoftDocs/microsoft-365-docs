@@ -24,6 +24,8 @@ description: "Czech passport number sensitive information type entity definition
 
 # Czech passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 eight digits without spaces or delimiters

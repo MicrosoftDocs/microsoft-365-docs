@@ -24,6 +24,8 @@ description: "Italy fiscal code sensitive information type entity definition."
 
 # Italy fiscal code
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 a 16-character combination of letters and digits in the specified pattern

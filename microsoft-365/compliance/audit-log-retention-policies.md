@@ -27,6 +27,8 @@ You can create and manage audit log retention policies in the Microsoft Purview 
 - Specific activities (in a Microsoft 365 service) performed by all users or by specific users
 - A priority level that specifies which policy takes precedence in you have multiple policies in your organization
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Default audit log retention policy
 
 Audit (Premium) in Microsoft 365 provides a default audit log retention policy for all organizations. This policy retains all Exchange Online, SharePoint Online, OneDrive for Business, and Azure Active Directory audit records for one year. This default policy retains audit records that contain the value of **Exchange**, **SharePoint**, **OneDrive**, **AzureActiveDirectory** for the **Workload** property (which is the service in which the activity occurred). The default policy can't be modified. See the [More information](#more-information) section in this article for a list of record types for each workload that are included in the default policy.

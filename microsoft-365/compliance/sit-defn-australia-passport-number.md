@@ -24,6 +24,8 @@ description: "Australia passport number sensitive information type entity defini
 
 # Australia passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 eight or nine alphanumeric characters

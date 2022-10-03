@@ -25,6 +25,8 @@ description: "Credit card number sensitive information type entity definition."
 
 # Credit card number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 14 to 19 digits that can be formatted or unformatted (dddddddddddddddd) and that must pass the Luhn test.

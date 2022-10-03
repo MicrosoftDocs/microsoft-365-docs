@@ -26,6 +26,8 @@ description: "Brand medication names sensitive information type entity definitio
 
 This unbundled named entity detects names of brand medication, such as *Tylenol*. It supports English terms only. It's also included in the [All medical terms and conditions](sit-defn-all-medical-terms-conditions.md) bundled named entity SIT.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Confidence level
 
 High

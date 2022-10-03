@@ -24,6 +24,8 @@ description: "Http authorization header sensitive information type entity defini
 
 # Http authorization header (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 An authorization header used in HTTP request.

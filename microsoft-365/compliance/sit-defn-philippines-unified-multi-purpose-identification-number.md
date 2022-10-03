@@ -24,6 +24,8 @@ description: "Philippines unified multi-purpose identification number sensitive 
 
 # Philippines unified multi-purpose identification number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 12 digits separated by hyphens

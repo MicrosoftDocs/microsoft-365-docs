@@ -28,6 +28,8 @@ To support the historical versions capability in eDiscovery (Premium), SharePoin
 
 After an eDiscovery administrator turns on historical versions for the organization and then activates it for specific SharePoint sites, the SharePoint content push service crawls all major and minor versions of documents on the activated sites and then sends those versions for indexing. After the crawling and indexing process is complete, documents and their versions are available for eDiscovery search. As long as a specific version can be accessed (by version history), then that version will be discoverable in an eDiscovery (Premium) collection search.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Set up historical versions
 
 To enable historical versions in eDiscovery (Premium), your organization has to turn it on and then activate specific sites so that all versions of documents stored on those sites are indexed for search. Before you set up eDiscovery (Premium) for historical versions, you have to enable versioning support in SharePoint.

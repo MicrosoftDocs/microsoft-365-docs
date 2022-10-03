@@ -24,6 +24,8 @@ description: "Brazil legal entity number (CNPJ) sensitive information type entit
 
 # Brazil legal entity number (CNPJ)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 14 digits that include a registration number, branch number, and check digits, plus delimiters

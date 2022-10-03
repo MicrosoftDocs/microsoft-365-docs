@@ -24,6 +24,8 @@ description: "Slovakia personal number sensitive information type entity definit
 
 # Slovakia personal number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine or 10 digits containing optional backslash

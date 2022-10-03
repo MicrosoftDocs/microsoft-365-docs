@@ -31,6 +31,8 @@ Watch the video below to learn how the insider risk management workflow can help
 
 Check out the [Microsoft Mechanics video](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) on how insider risk management and communication compliance work together to help minimize data risks from users in your organization.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Work with stakeholders in your organization
 
 Identify the appropriate stakeholders in your organization to collaborate for taking actions on insider risk management alerts and cases. Some recommended stakeholders to consider including in initial planning and the end-to-end [insider risk management workflow](insider-risk-management.md#workflow) are people from the following areas of your organization:

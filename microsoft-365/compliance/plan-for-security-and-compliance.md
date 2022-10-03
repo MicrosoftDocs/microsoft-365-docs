@@ -25,6 +25,8 @@ ms.custom: seo-marvel-apr2020
 
 Managing security and compliance is a partnership. You're responsible for protecting your data, identities, and devices, while Microsoft vigorously protects Microsoft 365 services. You can use Microsoft 365 and Enterprise Mobility + Security (EMS) together to help you achieve the appropriate level of protection for your organization.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Review capabilities
 
 Orient yourself to the information protection capabilities in the Information Protection for Office 365 poster. 

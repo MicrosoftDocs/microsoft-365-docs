@@ -24,6 +24,8 @@ description: "Ireland driver's license number sensitive information type entity 
 
 # Ireland drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Six digits followed by four letters

@@ -26,6 +26,8 @@ description: "Liechtenstein physical addresses sensitive information type entity
 
 This unbundled named entity detects patterns related to physical address from Liechtenstein. It's also included in the [All Physical Addresses](sit-defn-all-medical-terms-conditions.md) bundled named entity SIT.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Confidence level
 
 Medium

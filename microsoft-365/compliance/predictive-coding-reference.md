@@ -23,6 +23,8 @@ ms.collection:
 
 This article describes the key concepts and metrics of the predictive coding tool in Microsoft Purview eDiscovery (Premium). The sections in the article are listed in alphabetical order.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Confidence level
 
 The confidence level is an advanced setting when you create a predictive coding model. It defines that the model's performance metrics (for example, richness, precision, and recall) fall within a specified range (that's determined the margin of error defined for the model) that's representative of the true values of the prediction scores the model assigns to items in the review set. The values for the confidence level and margin of error also help determine how many items are included in the control set. The default value for the confidence level is 0.95 or 95%.

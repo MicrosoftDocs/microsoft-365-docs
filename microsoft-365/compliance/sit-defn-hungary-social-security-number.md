@@ -24,6 +24,8 @@ description: "Hungary social security number (TAJ) sensitive information type en
 
 # Hungary social security number (TAJ)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Nine digits without spaces and delimiters

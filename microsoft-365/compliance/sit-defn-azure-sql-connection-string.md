@@ -24,6 +24,8 @@ description: "Azure SQL connection string sensitive information type entity defi
 
 # Azure SQL connection string (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Up to 20,000-character combination of letters, digits, and special characters.

@@ -24,6 +24,8 @@ description: "Belgium national number sensitive information type entity definiti
 
 # Belgium national number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11 digits plus optional delimiters

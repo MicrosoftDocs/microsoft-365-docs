@@ -24,6 +24,8 @@ description: "Canada personal health identification number (PHIN) sensitive info
 
 # Canada personal health identification number (PHIN)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits

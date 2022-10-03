@@ -24,6 +24,8 @@ description: "Spain driver's license number sensitive information type entity de
 
 # Spain drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 eight digits followed by one character

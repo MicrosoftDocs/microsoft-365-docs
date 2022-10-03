@@ -24,6 +24,8 @@ description: "Azure Shared Access key / Web Hook token sensitive information typ
 
 # Azure Shared Access key / Web Hook token (preview) 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 44 characters consisting of letters, digits, and special characters.

@@ -30,6 +30,8 @@ After Twitter data is imported, you can apply Microsoft Purview features such as
 
 If you’d like to participate in the preview, please reach out to the team at dcfeedback@microsoft.com.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you set up a connector
 
 Complete the following prerequisites before you can set up and configure a connector in the compliance portal to import and archive data from your organization's Twitter account.

@@ -24,6 +24,8 @@ description: "U.K. national health service number sensitive information type ent
 
 # U.K. national health service number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 10-17 digits separated by spaces

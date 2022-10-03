@@ -24,6 +24,8 @@ description: "Argentina Unique Tax Identification Key (CUIT/CUIL) sensitive info
 
 # Argentina Unique Tax Identification Key (CUIT/CUIL)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11 digits with dash

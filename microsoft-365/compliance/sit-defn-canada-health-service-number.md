@@ -24,6 +24,8 @@ description: "Canada health service number sensitive information type entity def
 
 # Canada health service number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
  10 digits

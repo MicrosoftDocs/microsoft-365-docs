@@ -24,6 +24,8 @@ description: "U.S. individual taxpayer identification number (ITIN) sensitive in
 
 # U.S. individual taxpayer identification number (ITIN)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits that start with a "9" and contain a "7" or "8" as the fourth digit, optionally formatted with spaces or dashes

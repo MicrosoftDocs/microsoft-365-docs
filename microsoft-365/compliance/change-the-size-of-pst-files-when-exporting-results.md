@@ -27,6 +27,8 @@ When you use the eDiscovery Export tool to export the email results of an eDisco
 > [!NOTE]
 > The eDiscovery Export tool is used to export the search results when using the Content search tool in the Microsoft Purview compliance portal.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Create a registry setting to change the size of PST files when you export eDiscovery search results
 
 Perform the following procedure on the computer that you'll use to export the results of an eDiscovery search.

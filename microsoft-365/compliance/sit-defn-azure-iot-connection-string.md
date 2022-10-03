@@ -28,6 +28,8 @@ description: "Azure IoT connection string sensitive information type entity defi
 
 The string `HostName` followed by the characters and strings outlined in the pattern below, including the strings `azure-devices.net` and `SharedAccessKey`.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Pattern
 
 - the string `HostName`

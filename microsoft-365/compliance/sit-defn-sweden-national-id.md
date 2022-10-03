@@ -24,6 +24,8 @@ description: "Sweden national ID sensitive information type entity definition."
 
 # Sweden national ID
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 10 or 12 digits and an optional delimiter

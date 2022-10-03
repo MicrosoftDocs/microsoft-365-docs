@@ -22,6 +22,8 @@ ms.custom: seo-marvel-apr2020
 
 # Test an exact data match sensitive information type
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Applies to
 
 - [New experience](sit-create-edm-sit-unified-ux-workflow.md)

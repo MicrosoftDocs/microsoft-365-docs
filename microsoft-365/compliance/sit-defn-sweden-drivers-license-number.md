@@ -24,6 +24,8 @@ description: "Sweden driver's license number sensitive information type entity d
 
 # Sweden drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 10 digits containing a hyphen

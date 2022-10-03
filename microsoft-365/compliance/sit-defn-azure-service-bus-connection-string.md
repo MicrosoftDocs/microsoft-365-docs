@@ -24,6 +24,8 @@ description: "Azure service bus connection string sensitive information type ent
 
 # Azure service bus connection string
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 The string `EndPoint` followed by the characters and strings outlined in the pattern below, including the strings `servicebus.windows.net` and `SharedAccesKey`.

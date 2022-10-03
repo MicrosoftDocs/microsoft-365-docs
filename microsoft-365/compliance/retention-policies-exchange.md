@@ -30,6 +30,8 @@ The information in this article supplements [Learn about retention](retention.md
 - [Learn about retention for Microsoft Teams](retention-policies-teams.md)
 - [Learn about retention for Yammer](retention-policies-yammer.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## What's included for retention and deletion
 
 The following Exchange items from user mailboxes and shared mailboxes can be retained and deleted by using retention policies and retention labels: Mail messages (includes received messages, drafts, sent messages) with any attachments, tasks when they have an end date, and notes. 

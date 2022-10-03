@@ -24,6 +24,8 @@ description: "Spain passport number sensitive information type entity definition
 
 # Spain passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 an eight- or nine-character combination of letters and numbers with no spaces or delimiters

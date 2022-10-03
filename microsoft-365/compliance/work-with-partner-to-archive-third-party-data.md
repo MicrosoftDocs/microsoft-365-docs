@@ -42,6 +42,8 @@ Here's an overview of the process and the steps necessary to work with a Microso
 
 [Step 5: Register the third-party data connector in Azure Active Directory](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How the third-party data import process works
 
 The following illustration and description explain how the third-party data import process works when working with a partner.

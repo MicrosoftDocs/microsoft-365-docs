@@ -36,6 +36,8 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 >
 > And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## August 2022
 
 ### Compliance Manager
