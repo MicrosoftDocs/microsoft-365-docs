@@ -1,8 +1,8 @@
 ---
-title: Experts on Demand
+title: Ask Defender Experts
 ms.reviewer:
-description: Experts on Demand is intended to provide a better understanding of complex threats
-keywords: experts on demand, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, endpoint attack notification, Endpoint Attack Notification, Ask Defender Experts
+description: You can partner with Microsoft Defender Experts who can be engaged directly from within the Microsoft 365 Defender portal for their response
+keywords: Ask Defender Experts, experts on demand, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, endpoint attack notification, Endpoint Attack Notification
 search.product: Windows 10
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -21,7 +21,7 @@ ms.subservice: mde
 search.appverid: met150
 ---
 
-# Experts on Demand
+# Ask Defender Experts
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
