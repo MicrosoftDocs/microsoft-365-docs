@@ -1,7 +1,7 @@
 ---
 title: Professional Services supported by Microsoft 365 Defender
 description: See the list of professional services that Microsoft 365 Defender can integrate with.
-keywords: professional service, managed security services, m365 defender, m365 defender services, mssp, configure, integration, protect, evolve, educate, respond, 
+keywords: professional service, managed security services, m365 defender, m365 defender services, mssp, configure, integration, protect, evolve, educate, defender for endpoint, detection 
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
