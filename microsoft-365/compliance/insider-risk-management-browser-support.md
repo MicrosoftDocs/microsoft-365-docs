@@ -12,9 +12,11 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: 
-- m365-security-compliance
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
+- tier1
 ---
 
 # Learn about and configure insider risk management browser signal detection
@@ -38,6 +40,8 @@ The following table summarizes detected activities and extension support for eac
 | Files transferred or copied to a network share | Extension          | Extension         |
 | Files copied to USB devices                    | Extension          | Extension         |
 | Browsing risky websites                        | Extension          | Extension         |
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Common requirements
 

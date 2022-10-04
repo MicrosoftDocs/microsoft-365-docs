@@ -7,13 +7,14 @@ author: brendacarter
 manager: dansimp
 audience: Admin
 ms.topic: tutorial
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - remotework
+- tier2
 ms.custom: admindeeplinkDEFENDER
 description: "Protect your business email and data from cyber threats, including ransomware, phishing, and malicious attachments."
 ---

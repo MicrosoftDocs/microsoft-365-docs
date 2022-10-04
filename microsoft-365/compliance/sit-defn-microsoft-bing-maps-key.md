@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -22,6 +23,8 @@ description: "Microsoft Bing maps key sensitive information type entity definiti
 ---
 
 # Microsoft Bing maps key (preview)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 
@@ -49,7 +52,7 @@ This SIT is designed to match the security information that's used to call [Bing
 
 It uses several primary resources:
 
-- Patterns of Base64 URL encoded 384 bits symmetric key.
+- Patterns of Base64 URL encoded 384-bits symmetric key.
 - Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName.
 - Patterns of mockup values, redactions, and placeholders.
 - A dictionary of vocabulary.
