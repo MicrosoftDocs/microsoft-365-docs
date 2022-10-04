@@ -122,13 +122,13 @@ conceptualContent:
            itemType: how-to-guide
            text: Submit suspected spam
 
-# productDirectory section (optional)
-productDirectory:
-  title: Microsoft 365 Defender products and services # < 60 chars (optional)
-  items:
+additionalContent:
+  # Supports up to 4 subsections
+  sections:
+  - title: Microsoft 365 Defender products and services # < 60 chars (optional)
+    items:
     # Card
     - title: Microsoft 365 Defender
-      imageSrc: /office/media/icons/security-blue.svg
       links:
       - url: /microsoft-365/security/defender/microsoft-365-defender
         text: Overview
@@ -138,7 +138,6 @@ productDirectory:
         text: Set up an evaluation
     # Card
     - title: Microsoft Defender for Office 365
-      imageSrc: /office/media/icons/users-group.svg
       links:
        - url: /microsoft-365/security/office-365-security/defender-for-office-365
          text: Overview
@@ -148,7 +147,6 @@ productDirectory:
          text: Set up an evaluation 
     # Card
     - title: Microsoft Defender Endpoint
-      imageSrc: /office/media/icons/devices-2-blue.svg
       links:
       - url: /microsoft-365/security/defender-endpoint/microsoft-defender-endpoint
         text: Overview  
@@ -158,7 +156,6 @@ productDirectory:
         text: Set up an evaluation   
     # Card
     - title: Microsoft Defender Vulnerability Management
-      imageSrc: /office/media/icons/blocks.svg
       links:
       - url: /microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management
         text: Overview
@@ -166,7 +163,6 @@ productDirectory:
         text: Get Started
     # Card
     - title: Microsoft Defender for Identity
-      imageSrc: /office/media/icons/authentication.svg
       links:
        - url: /defender-for-identity/what-is
          text: Overview
@@ -176,7 +172,6 @@ productDirectory:
          text: Set up an evaluation
      # Card
     - title: Microsoft Defender for Cloud apps
-      imageSrc: /office/media/icons/cloud.svg
       links:
       - url: /defender-cloud-apps/what-is-defender-for-cloud-apps
         text: Overview
@@ -187,12 +182,9 @@ productDirectory:
 
 # additionalContent section (optional)
 # Card with summary style
-additionalContent:
-  # Supports up to 4 subsections
-  sections:
-    - title: Learning, Training, and Certification # < 60 chars (optional)
-      summary: Explore topics in-depth through guided paths and training modules or prepare for the next step in your career with a certification.  # < 160 chars (optional)
-      items:
+  - title: Learning, Training, and Certification # < 60 chars (optional)
+    summary: Explore topics in-depth through guided paths and training modules or prepare for the next step in your career with a certification.  # < 160 chars (optional)
+    items:
         # Card
         - title: Microsoft 365 Defender Ninja training
           summary: Enhance your cybersecurity skills with the Microsoft 365 Defender Ninja training.
