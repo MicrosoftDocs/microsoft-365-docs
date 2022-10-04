@@ -58,12 +58,12 @@ To view pending approval requests, navigate to **Insider risk management** > **F
 
 Users assigned to the *Insider Risk Management Approvers* role group can select a user on the **Forensic evidence request (preview)** tab and review the request. After reviewing the request, these users can approve or reject the forensic evidence capturing request. Approving or rejecting the capturing request removes the pending request for users from this view.
 
-### Approve capturing requests
+### Approve or reject capturing requests
 
-After requests are complete, users assigned to the *Insider Risk Management Approvers* role group will receive an email notification for the approval request. To approve requests, reviewers must complete the following steps:
+After requests are complete, users assigned to the *Insider Risk Management Approvers* role group will receive an email notification for the approval request. To approve or reject requests, reviewers must complete the following steps:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Pending requests**.
-2. Select a user.
+2. Select a user to review.
 3. On the **Review forensic evidence request (preview)** pane, review the justification submitted by the requestor. Select **Approve** or **Reject** as applicable.
 4. On the **Request approved** or **Request rejected** page, select **Close**.
 
