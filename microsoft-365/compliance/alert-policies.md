@@ -304,6 +304,7 @@ To see which category a default alert policy is assigned to, see the tables in [
 >
 > ```powershell
 > $RoleGroups = Get-RoleGroup
+>
 > $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,("-"*25); Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
 > ```
 >
