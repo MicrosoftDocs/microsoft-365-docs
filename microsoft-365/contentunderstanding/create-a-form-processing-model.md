@@ -31,7 +31,7 @@ Using [AI Builder](/ai-builder/overview)—a feature in Microsoft Power Apps—S
 
 Follow the instructions in [Create a model in SharePoint Syntex](create-syntex-model.md) to create a structured document processing model. Then use this article to train your model.
 
-To train an structured document processing model, follow these steps:
+To train a structured document processing model, follow these steps:
 
  - [Step 1: Add and analyze documents](#step-1-add-and-analyze-documents)
  - [Step 2: Tag fields and tables](#step-2-tag-fields-and-tables)
@@ -97,7 +97,7 @@ After you create your structured document processing model, your browser opens a
 
 2.  You can create as many collections of document layouts you want your model to process. For detailed steps, see [Group documents by collections](/ai-builder/create-form-processing-model#group-documents-by-collections). 
 
-3. After you create your collections and add the example files for each, AI Builder will examine the uploaded documents to detect the fields and tables. This usually takes a few minutes. When the analysis is complete, you can proceed with tagging the documents.
+3. After you create your collections and add the example files for each, AI Builder will examine the uploaded documents to detect the fields and tables. This process usually takes a few minutes. When the analysis is complete, you can proceed with tagging the documents.
 
 ## Step 2: Tag fields and tables
 
@@ -107,7 +107,7 @@ You need to tag the documents to teach the model to understand the fields and ta
 
 1. After you create and train your model, you're ready to publish it and use it in SharePoint. For detailed steps, see [Train and publish your document processing model](/ai-builder/form-processing-train). 
 
-2. After the model is published, select **Use model**, and then select **Create flow**. This creates a Power Automate flow that can run in your SharePoint document library and that extracts the fields that have been identified in the model.
+2. After the model is published, select **Use model**, and then select **Create flow**. This process creates a Power Automate flow that can run in your SharePoint document library and that extracts the fields that have been identified in the model.
 
     ![Screenshot in AI Builder showing the Create a flow panel.](../media/content-understanding/ai-builder-create-a-flow-1.png)
  
@@ -142,7 +142,7 @@ Two flows are available to process a selected file or batch of files in a librar
 
 - **Extract info from files with a document processing model** — Use with document processing models to read and extract information from a batch of files. Processes up to 5,000 SharePoint files at a time. When you run this flow, there are certain parameters you can set. You can:
 
-    - Choose whether to include previously processed files (the default is not to include previously processed files).
+    - Choose whether to include previously processed files (the default isn't to include previously processed files).
     - Select the number of files to process (the default is 100 files).
     - Specify the order in which to process the files (choices are by file ID, file name, file created time, or last modified time).
     - Specify how you want the order sorted (ascending or descending order).

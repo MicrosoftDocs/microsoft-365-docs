@@ -22,70 +22,10 @@ Follow the instructions in [Create a model in SharePoint Syntex](create-syntex-m
 
 To train a freeform document processing model, follow these steps:
 
-<!---
-SharePoint Syntex uses [AI Builder](/ai-builder/overview)—a feature in Microsoft Power Apps—to create an **Extract by text pattern and layout** model directly from a SharePoint document library. In AI Builder, both the **Extract by text pattern and layout** model and the **Extract by text pattern and layout** model are referred to as *document processing* models.
-
-Creating an **Extract by text pattern and layout** model involves the following steps:
---->
-
  - [Step 1: Add and analyze documents](#step-1-add-and-analyze-documents)
  - [Step 2: Tag fields and tables](#step-2-tag-fields-and-tables)
  - [Step 3: Train and publish your model](#step-3-train-and-publish-your-model)
  - [Step 4: Use your model](#step-4-use-your-model)
-
-<!---
-## Requirements
-
-You can only create an **Extract by text pattern and layout** model in SharePoint document libraries for which it's enabled. If document processing is enabled, you're able to see the **Automate** > **AI Builder** > **Create a model to process forms** menu in your document library. If you need processing enabled on your document library, you must contact your SharePoint administrator.
-
-![Screenshot showing the AI Builder model.](../media/content-understanding/create-ai-builder-model2.png)
-
-## Step 1: Create an **Extract by text pattern and layout** model
-
-The first step in creating a this model is to name the model, define the new content type, and create a new document library view for it.
-
-1. From the document library, select the **Automate** menu, select **AI Builder**, and then select **Create a model to process forms**.
-
-    ![Screenshot showing the Automate menu and the Create a model to process forms option.](../media/content-understanding/create-ai-builder-model2.png)
-
-2. In the **Create a model to process forms** panel, in the **Name** field, type a name for your model (for example, *Purchase Orders*).
-
-    ![Screenshot showing the Create a model to process forms panel.](../media/content-understanding/new-form-model2.png) 
-
-3. You can now automatically extract and save information from a *collection* of structured files that share a similar layout—such as invoices or tax documents—that are in a SharePoint document library. This lets you compose several models into a single model and extract specific table item information.
-
-   The collection name is saved to a dedicated column in the document library where the model is applied, which allows you to distinguish different file layouts processed by the same model.
-
-   In addition, the extracted table information is saved to a specified list and associated with the uploaded file for easy viewing or for additional business process automation.
-
-   To extract table information to an associated list:
-
-     1. In the **Extract info from tables?** section, select **Yes**.
-
-      ![Screenshot showing the Extract info from tables section on the Create a model to process forms panel.](../media/content-understanding/extract-info-from-tables.png) 
-
-     2. In the **Where should we save table info?** section:
- 
-        - If you select **A new list** (the default setting), a suggested name is automatically provided in the **New list name** box. You can modify the name if you want to. If you want to show the list in the site navigation, select the **Show in site navigation** checkbox.
-
-        - If you select **An existing list**, in the **Selected list** box, choose the list you want to use.
-
-4. When you create an **Extract by text pattern and layout** model, you create a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint content types are managed through the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>.
-
-   To map this model to an existing content type in the SharePoint content types gallery, select **Advanced settings**.
-
-    ![Screenshot showing the Advanced settings in the Create a model to process forms panel.](../media/content-understanding/new-form-model-advanced-settings.png) 
-
-   1. In the <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">Content type gallery</a>, choose whether to create a new content type or to use an existing one. 
-
-   2. To use an existing content type, select **Select one**, and choose a content type from the list.
-
-   3. Your model creates a new view in your document library for your extracted data. If you don't want it to be the default view, in the **Library view for this model** section, clear the **Set the view as default** checkbox.
-
-   4. To apply a retention label to your files, in the **Retention label** section, select the retention label you want to use.
-
-5. Select **Create**.
---->
 
 ## Step 1: Add and analyze documents
 
@@ -98,7 +38,7 @@ After you create your new model, your browser opens a new Power Apps AI Builder 
 
 2.  You can create as many collections of document layouts you want your model to process. For detailed steps, see [Group documents by collections](/ai-builder/create-form-processing-model#group-documents-by-collections). 
 
-3. After you create your collections and add the example files for each, AI Builder will examine the uploaded documents to detect the fields and tables. This usually takes a few minutes. When the analysis is complete, you can proceed with tagging the documents.
+3. After you create your collections and add the example files for each, AI Builder will examine the uploaded documents to detect the fields and tables. This process usually takes a few minutes. When the analysis is complete, you can proceed with tagging the documents.
 
 ## Step 2: Tag fields and tables
 
@@ -108,7 +48,7 @@ You need to tag the documents to teach the model to understand the fields and ta
 
 1. After you create and train your model, you're ready to publish it and use it in SharePoint. For detailed steps, see [Train and publish your document processing model](/ai-builder/form-processing-train). 
 
-2. After the model is published, select **Use model**, and then select **Create flow**. This creates a Power Automate flow that can run in your SharePoint document library and that extracts the fields that have been identified in the model.
+2. After the model is published, select **Use model**, and then select **Create flow**. This process creates a Power Automate flow that can run in your SharePoint document library and that extracts the fields that have been identified in the model.
 
     ![Screenshot in AI Builder showing the Create a flow panel.](../media/content-understanding/ai-builder-create-a-flow-1.png)
  
@@ -143,7 +83,7 @@ Two flows are available to process a selected file or batch of files in a librar
 
 - **Extract info from files with a document processing model** — Use with document processing models to read and extract information from a batch of files. Processes up to 5,000 SharePoint files at a time. When you run this flow, there are certain parameters you can set. You can:
 
-    - Choose whether to include previously processed files (the default is not to include previously processed files).
+    - Choose whether to include previously processed files (the default isn't to include previously processed files).
     - Select the number of files to process (the default is 100 files).
     - Specify the order in which to process the files (choices are by file ID, file name, file created time, or last modified time).
     - Specify how you want the order sorted (ascending or descending order).
