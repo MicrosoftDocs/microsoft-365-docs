@@ -419,13 +419,13 @@ For more help in specifying PowerShell advanced settings, see [PowerShell tips f
 > [!NOTE]
 > This capability is currently rolling out in preview for built-in labeling, and in various stages of release across the platforms. Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Label inheritance from email attachments**.
 
-Turn on email inheritance for when users attach labeled documents or labeled emails to an email message that isn't manually labeled. With this configuration, a sensitivity label is dynamically selected for the email message, based on the sensitivity labels that are applied to the attachments. The [highest priority label](sensitivity-labels.md#label-priority-order-matters) is dynamically selected. 
+Turn on email inheritance for when users attach labeled documents or labeled emails to an email message that isn't manually labeled. With this configuration, a sensitivity label is dynamically selected for the email message, based on the sensitivity labels that are applied to the attachments. The [highest priority label](sensitivity-labels.md#label-priority-order-matters) is dynamically selected.
 
 Whether this label inheritance will override an existing label on the email message:
 
 - When an email message has been manually labeled, that label won't be replaced by label inheritance from email attachments.
 
-- For built-in labeling but not the Azure Information Protection (AIP) unified labeling client, label inheritance from email attachments will replace a lower priority sensitivity label that is automatically applied or applied as a default label, but won't override a higher priority label.
+- Label inheritance from email attachments will replace a lower priority sensitivity label that is automatically applied or applied as a default label, but won't override a higher priority label.
 
 The configuration option is named **Email inherits highest priority label from attachment(s)** in the sensitivity label policy. The attachment must be a physical file, and can't be a link to a file (for example, a link to a file on Microsoft SharePoint or OneDrive).
 
@@ -435,7 +435,7 @@ By default, if the automatically selected label applies encryption, the same enc
 
 For example, if the highest priority label applies encryption with Full Control to the Marketing group, the email will be protected with Full Control to the Marketing group. If the highest priority label applies encryption and prompts users to select custom permissions for a Word document, the same custom permissions will be applied to the email message.
 
-However, take into consideration the outcome when an email client doesn't support a specific protection action that's been applied to an attachment. See the exception lists for details. 
+However, take into consideration the outcome when an email client doesn't support a specific protection action that's been applied to an attachment. See the exception lists for details.
 
 Exceptions for the automatically selected label:
 
@@ -446,12 +446,12 @@ Exceptions for the automatically selected label:
     - **Double Key Encryption**: If the highest priority label applies Double Key Encryption, no label or encryption is selected for the email message in Outlook for Windows. In Outlook for the web, the label with the next highest priority is selected for the email message.
 
 - For the Azure Information Protection (AIP) unified labeling client:
+    
+    - **S/MIME**: If the highest priority label applies S/MIME signing and encryption, and the label is also configured for encryption from the Azure Rights Management Service, that label is applied to the email message with the same S/MIME signing and encryption but also the label's configured encryption settings for the Azure Rights Management Service.
+    
+    - **Double Key Encryption**: If the highest priority label applies the encryption settings for Double Key Encryption, no label or encryption is selected for the email message if Outlook doesn't support Double Key Encryption.
 
-    - **Custom permissions for Word, Excel, or PowerPoint**: If the highest priority label prompts users to select custom permissions for Word, Excel, or PowerPoint, no label or encryption is selected for the email message.
-    
-    - **Priority for sublabels**: By default, the first label that's found from the parent label with the highest priority is selected for the email message. To take the ordering of sublabels into consideration, you must configure the PowerShell advanced client setting **CompareSubLabelsInAttachmentAction** and set the value to **True**.
-    
-    - **Already labeled email messages**: Label inheritance from email attachments is supported only for unlabeled email messages, however they were labeled.
+    - **Encrypt-Only**: If the highest priority label applies the encryption settings for Encrypt-Only, no label or protection is selected for the email message because the AIP unified labeling client doesn't support this setting.
 
 
 ## PDF support
