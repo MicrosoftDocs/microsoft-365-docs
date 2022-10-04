@@ -89,7 +89,7 @@ This solution relies on the following functionality, all available as part of a 
 
 New to SharePoint Syntex? Learn how to use SharePoint Syntex to manage content using AI.
 
-The [Get started with SharePoint Syntex](/training/paths/syntex-get-started) learning path will teach how you can use document understanding and form processing models to classify documents, extract text, and label your documents for quick and easy knowledge management.
+The [Get started with SharePoint Syntex](/training/paths/syntex-get-started) learning path will teach how you can use unstructured, freeform, and unstructured document processing models to classify documents, extract text, and label your documents for quick and easy knowledge management.
 
 ## Create the solution
 
