@@ -11,7 +11,7 @@ ms.date:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - tier1
 - SPO_Content
 search.appverid:
@@ -60,6 +60,8 @@ Watch the following video (no audio) to see the new capabilities in action:
 You always have the choice to disable sensitivity labels for Office files in SharePoint and OneDrive ([opt-out](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out)) at any time.
 
 If you are currently protecting documents in SharePoint by using SharePoint Information Rights Management (IRM), be sure to check the [SharePoint Information Rights Management (IRM) and sensitivity labels](#sharepoint-information-rights-management-irm-and-sensitivity-labels) section on this page.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Requirements
 

@@ -15,8 +15,10 @@ ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
 ms.topic: article
-ms.collection: M365-security-compliance
-ms.date: 08/10/2022
+ms.collection: 
+- m365-security
+- tier2
+- ms.date: 08/10/2022
 search.appverid: met150
 ---
 

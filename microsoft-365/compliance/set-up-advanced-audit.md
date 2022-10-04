@@ -13,10 +13,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
 - tier1
-- M365-security-compliance
+- purview-compliance
 - m365solution-audit
 - m365solution-scenario
-- audit
+- highpri
 ms.custom: admindeeplinkMAC
 search.appverid: 
 - MOE150
@@ -28,6 +28,8 @@ search.appverid:
 If your organization has a subscription and end-user licensing that supports Audit (Premium), perform the following steps to set up and use the additional capabilities in Audit (Premium).
 
 ![Workflow to set up Audit (Premium).](../media/AdvancedAuditWorkflow.png)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Set up Audit (Premium) for users
 

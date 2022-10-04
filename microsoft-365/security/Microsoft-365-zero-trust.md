@@ -16,9 +16,10 @@ search.appverid:
 ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
-- M365-security-compliance
+- m365-security
 - zerotrust-solution
 - highpri
+- tier1
 ---
 
 # Microsoft 365 Zero Trust deployment plan

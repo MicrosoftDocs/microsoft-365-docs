@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - content-search
 ms.localizationpriority: medium
 search.appverid: 
@@ -30,6 +30,8 @@ For more information about working with a partner to import third-party data and
 > [!IMPORTANT]
 > The guidance in this article only applies to third-party data that was imported by a custom partner connector. This article doesn't apply to third-party data that is imported by using the [third-party data connectors](archiving-third-party-data.md#third-party-data-connectors) in the Microsoft compliance center.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Creating a query to search all third-party data
 
 To search (or place on hold) any type of third-party data that you've imported to Office 365, you can use the  `kind:externaldata` message property-value pair in the keyword box for a Content Search or when creating a query-based hold. For example, to search for items imported from any third-party data source and contain the word "contoso" in the Subject property of the imported item, you would use the following query: 

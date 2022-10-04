@@ -13,7 +13,7 @@ ms.date: 09/20/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020

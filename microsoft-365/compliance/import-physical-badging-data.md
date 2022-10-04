@@ -14,8 +14,8 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- tier1
-- M365-security-compliance
+- tier3
+- purview-compliance
 - data-connectors
 ms.custom: admindeeplinkCOMPLIANCE
 ---
@@ -37,6 +37,8 @@ Setting up a physical badging connector consists of the following tasks:
 - Optionally, scheduling the script to run automatically to import currently physical badging data.
 
 If you’d like to participate in the preview, please reach out to the team at dcfeedback@microsoft.com.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you set up the connector
 

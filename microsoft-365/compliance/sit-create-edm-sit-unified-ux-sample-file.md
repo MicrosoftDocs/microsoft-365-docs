@@ -11,7 +11,8 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -22,6 +23,8 @@ ms.custom: seo-marvel-apr2020
 # Create EDM SIT sample file for the new experience
 
 Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. They can be used in Microsoft Purview data loss prevention policies, eDiscovery and certain content governance tasks.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Applies to
 

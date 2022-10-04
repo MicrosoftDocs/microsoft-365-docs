@@ -13,7 +13,7 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
@@ -28,6 +28,8 @@ Learn more about how the Users dashboard displays users in the following scenari
 - Users with active insider risk policy alerts
 - Users with triggering events
 - Users added temporarily to policies
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Users with active insider risk policy alerts
 

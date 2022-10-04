@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -23,13 +24,15 @@ description: "Finland national ID sensitive information type entity definition."
 
 # Finland national ID
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 six digits plus a character indicating a century plus three digits plus a check digit
 
 ## Pattern
 
-Pattern must include all of the following:
+Pattern must include all of these patterns:
 
 - six digits in the format DDMMYY, which are a date of birth
 - century marker (either '-', '+' or 'a')
