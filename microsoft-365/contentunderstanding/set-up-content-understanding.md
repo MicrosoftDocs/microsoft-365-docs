@@ -81,14 +81,14 @@ For details about SharePoint Syntex licensing, see [SharePoint Syntex licensing]
       - **No SharePoint libraries** if you don't want to make it available to any sites (you can change this after setup).
 
    > [!div class="mx-imgBorder"]
-   > ![Configure form processing site options.](../media/content-understanding/admin-configforms.png)
+   > ![Configure document processing site options.](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > Removing a site after it has been included does not affect existing models applied to the libraries in that site or the ability to apply unstructured document processing models to a library. 
     
     If you have multiple Power Platform environments configured, you can choose which one you want to use with for document processing. (This option will not appear if you only have one environment.)
 
-    ![Configure form processing Power Platform options.](../media/content-understanding/setup-power-platform-env.png)
+    ![Configure document processing Power Platform options.](../media/content-understanding/setup-power-platform-env.png)
 
     For **Power Platform environment**, you can select:
     - **Use the default environment** to use your default Power Platform environment.
