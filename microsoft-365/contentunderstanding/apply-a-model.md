@@ -98,7 +98,7 @@ To sync changes to one or only selected libraries:
 
 ## Apply the model to files and folder content already in the document library
 
-While an applied model processes all files and folder content uploaded to the document library after it's applied, you can also do the following to run the model on files and folder content that already exist in the document library prior to the model being applied:
+An applied model processes all files and folder content uploaded to the document library after it's applied. You can also do the following steps to run the model on files and folder content that already exist in the document library prior to the model being applied:
 
 1. In your document library, select the files and folders that you want to be processed by your model.
 
