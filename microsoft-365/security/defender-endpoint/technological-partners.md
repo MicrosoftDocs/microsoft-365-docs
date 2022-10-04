@@ -1,5 +1,5 @@
 ---
-title: Technological Partners of Microsoft 365 Defender
+title: Technological partners of Microsoft 365 Defender
 ms.reviewer:
 description: View technological partners of M365 Defender to enhance detection, investigation, and threat intelligence capabilities of the platform.
 keywords: partners, technological partner, applications, third-party, SIEM, threat intelligence, sentinel, SOAR, cross platform, m365 integrations, dns security, network protection
@@ -18,7 +18,7 @@ ms.subservice: mde
 search.appverid: met150
 ---
 
-# Technological Partners of Microsoft 365 Defender
+# Technological partners of Microsoft 365 Defender
 
 **Applies to:**
 
