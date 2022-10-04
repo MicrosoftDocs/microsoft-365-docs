@@ -98,9 +98,11 @@ Here are some things to consider before you enable a mailbox for auto-expanding 
 
 - Users can delete items in an auto-expanded storage area. However, they can't use the [Recover Deleted Items feature](https://support.microsoft.com/office/recover-deleted-items-in-outlook-for-windows-49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) to recover an item after auto-expanding archiving is enabled for their mailbox.
 
-- Search for auto-expanded archiving is available in Outlook for the web (OWA). Similar to Online Archive, users can search for items that were moved to an additional storage area. When archive is selected as the search scope in OWA, all archives (including auto-expanded archives) and their corresponding subfolders will be searched. However, search isn't recursive for nested subfolders within each archive folder.
+- Search for auto-expanded archiving is available in Outlook for the web (OWA). Similar to Online Archive, users can search for items that were moved to an additional storage area. When archive is selected as the search scope in OWA, all archives (including auto-expanded archives) and their corresponding subfolders will be searched.
 
-- Auto-expanded archive search is available in Outlook for Windows in Monthly Enterprise Channel. With this update the Current Mailbox scope is available, thus allowing you to search the auto-expanded archive. Note that search is not supported for the auto-expanded archive feature in a cloud-only archive situation (primary mailbox still on-premises). For more information about this and other Microsoft Search support features, see [How Outlook for Windows connected to Exchange Online utilizes Microsoft Search](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
+- Auto-expanded archive search is available when you use Outlook for Windows from the Monthly Enterprise Channel, build 16.0.13519+. With this update the Current Mailbox scope is available, so users can search the auto-expanded archive. However, search isn't recursive for nested subfolders within each archive folder.
+
+- Search is not supported for the auto-expanded archive feature in a cloud-only archive situation (primary mailbox still on-premises). For more information about this and other Microsoft Search support features, see [How Outlook for Windows connected to Exchange Online utilizes Microsoft Search](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
 
 - Item counts in Outlook and Read/Unread counts (in Outlook and Outlook on the web) in an auto-expanded archive might not be accurate.
 
