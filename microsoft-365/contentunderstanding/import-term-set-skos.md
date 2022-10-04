@@ -44,6 +44,6 @@ On successful import of the file, a success message will be displayed, and the t
 
 [Introduction to managed metadata](/sharepoint/managed-metadata)
 
-[Document understanding overview](document-understanding-overview.md)
+[Unstructured document processing overview](document-understanding-overview.md)
 
 [Import term sets (site level)](https://support.microsoft.com/office/168fbc86-7fce-4288-9a1f-b83fc3921c18)
