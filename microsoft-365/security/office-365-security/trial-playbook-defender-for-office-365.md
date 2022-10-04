@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Defender for Office 365 trial playbook"
+title: "Microsoft Defender for Office 365 trial user guide"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -9,17 +9,16 @@ audience: Admin
 ms.topic: conceptual
 ms.collection: m365-security
 ms.localizationpriority: high
-ROBOTS: NOINDEX, NOFOLLOW
 ms.service: microsoft-365-security
 search.appverid:
 - MOE150
 - MET150
-description: "Microsoft Defender for Office 365 solutions trial playbook."
+description: "Microsoft Defender for Office 365 solutions trial user guide."
 ms.subservice: mdo
 ms.custom: trial-playbook
 ---
 
-# Trial playbook: Microsoft Defender for Office 365
+# Trial user guide: Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -27,21 +26,45 @@ ms.custom: trial-playbook
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Welcome to the Microsoft Defender for Office 365 trial playbook! This playbook will help you make the most of your 90-day free trial by teaching you how to safeguard your organization with Defender for Office 365.
+Welcome to the Microsoft Defender for Office 365 trial user guide! This user guide will help you make the most of your free trial by teaching you how to safeguard your organization against malicious threats posed by email messages, links (URLs), and collaboration tools.
 
-Now you have the option to try Defender for Office 365 in one of two ways:
+## What is Defender for Office 365?
 
-- **Blocking mode (recommended)**: If your mail exchanger (MX) record points to Microsoft 365, you can evaluate Defender for Office 365 capabilities in blocking mode. Defender for Office 365 automatically applies the Standard [preset security policy](preset-security-policies.md) settings.
+Defender for Office 365 helps organizations secure their enterprise by offering a comprehensive slate of capabilities including threat protection policies, reports, threat investigation and response capabilities and automated investigation and response capabilities.
 
-  Throughout the evaluation period, you can choose at any time to opt into a higher protection template (our Strict preset security policy settings), or you create your own individual protection policies to suits your needs.
+:::image type="content" source="../../media/microsoft-defender-for-office-365.png" alt-text="Microsoft Defender for Office 365 conceptual diagram." lightbox="../../media/microsoft-defender-for-office-365.png":::
 
-- **Audit mode**: If your MX record points somewhere other than to Microsoft 365 (for example, a third-party email gateway), you can evaluate Defender for Office 365 in audit mode. Defender for Office 365 will not take blocking action on messages that we determine to be harmful.
+Watch this short video to learn more about how you can get more done in less time with Microsoft Defender for Office 365.
 
-  These threats will be logged and available for your review through the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report), which gives you detailed information on the types of detected threats, who the threats were targeting, and much more. These additional "catches" indicate the additional protection capabilities of Defender for Office 365 over the standard Exchange Online Protection (EOP) capabilities, or the capabilities of other third-party email gateways. Once you're satisfied and are ready to use Defender for Office 365, you can [migrate to Defender for Office 365](migrate-to-defender-for-office-365.md).
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMmIe]
 
-:::image type="content" source="../../media/mdo-trial-playbook-what-is-mdo.png" alt-text="A graphical representation of all components of Microsoft Defender for Office 365." lightbox="../../media/mdo-trial-playbook-what-is-mdo.png":::
+### Audit mode vs. blocking mode for Defender for Office 365
 
-Using the recommendations in this guide, you'll learn how Defender for Office 365 can help you define protection policies, analyze threats to your organization, and respond to attacks.
+Do you want your Defender for Office 365 experience to be active or passive? These are the two modes that you can select from:
+
+- **Audit mode**: Special *evaluation policies* are created for anti-phishing (which includes impersonation protection), Safe Attachments, and Safe Links. These evaluation policies are configured to *detect* threats only. Defender for Office 365 detects harmful messages for reporting, but the messages aren't acted upon (for example, detected messages aren't quarantined). The settings of these evaluation policies are described in the [Policies in audit mode](try-microsoft-defender-for-office-365.md#policies-in-audit-mode) section later in this article.
+
+  Audit mode provides access to customized reports for threats detected by Defender for Office 365 on the **Evaluation mode** page at <https://security.microsoft.com/atpEvaluation>.
+
+- **Blocking mode**: The Standard template for [preset security policies](preset-security-policies.md) is turned on and used for the trial, and the users you specify to include in the trial are added to the Standard preset security policy. Defender for Office 365 *detects* and *takes action on* harmful messages (for example, detected messages are quarantined).
+
+  The default and recommended selection is to scope these Defender for Office 365 policies to all users in the organization. But during or after the setup of your trial, you can change the policy assignment to specific users, groups, or email domains in the Microsoft 365 Defender portal or in [Policy settings associated with Defender for Office 365 trials](try-microsoft-defender-for-office-365.md#policy-settings-associated-with-defender-for-office-365-trials)
+
+  Blocking mode does not provide customized reports for threats detected by Defender for Office 365. Instead, the information is available in the regular reports and investigation features of Defender for Office 365 Plan 2.
+
+A key factor in audit mode vs. blocking mode is how email is delivered to your Microsoft 365 organization:
+
+- Mail from the internet flows directly Microsoft 365, but your current subscription has only [Exchange Online Protection (EOP)](exchange-online-protection-overview.md) or [Defender for Office 365 Plan 1](overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
+
+  ![Mail flows from the internet into Microsoft 365, with protection from EOP and/or Defender for Office 365 Plan 1.](../../media/mdo-trial-mail-flow.png)
+
+  In these environments, you can select **audit mode** or **blocking mode**.
+
+- You're currently using a third-party service or device for email protection of your Microsoft 365 mailboxes. Mail from the internet flows through the protection service before delivery into your Microsoft 365 organization. Microsoft 365 protection is as low as possible (it's never completely off; for example, malware protection is always enforced).
+
+  ![Mail flows from the internet through the third-party protection service or device before delivery into Microsoft 365.](../../media/mdo-migration-before.png)
+
+  In these environments, you can select **audit mode** only. You don't need to change your mail flow (MX records).
 
 Let's get started!
 
@@ -130,7 +153,7 @@ Watch this video to learn more: [Campaign Views in Microsoft Defender for Office
 
 Respond efficiently using Automated investigation and response (AIR) to review, prioritize, and respond to threats.
 
-- [Learn more](automated-investigation-response-office.md) about investigation playbooks.
+- [Learn more](automated-investigation-response-office.md) about investigation user guides.
 - [View details and results](email-analysis-investigations.md) of an investigation.
 - Eliminate threats by [approving remediation actions](air-remediation-actions.md).
 
