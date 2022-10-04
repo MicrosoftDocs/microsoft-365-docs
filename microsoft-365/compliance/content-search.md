@@ -1,18 +1,19 @@
 ---
 title: "Create and run a Content search in the Microsoft Purview compliance portal"
+description: "Use the Content search eDiscovery tool in the compliance center to search for content in different Microsoft 365 services."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MED150
@@ -20,7 +21,6 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-description: "Use the Content search eDiscovery tool in the compliance center to search for content in different Microsoft 365 services."
 ---
 
 # Create a content search
@@ -38,6 +38,8 @@ You can use the Content search eDiscovery tool in the Microsoft Purview complian
 - Yammer Groups
 
 After you run a search, the number of content locations and an estimated number of search results are displayed on the search flyout page. You can quickly view statistics, such as the content locations that have the most items that match the search query. After you run a search, you can preview the results or export them to a local computer.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you run a search
 

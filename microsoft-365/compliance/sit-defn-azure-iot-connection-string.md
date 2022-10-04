@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -26,6 +27,8 @@ description: "Azure IoT connection string sensitive information type entity defi
 ### Format
 
 The string `HostName` followed by the characters and strings outlined in the pattern below, including the strings `azure-devices.net` and `SharedAccessKey`.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Pattern
 
