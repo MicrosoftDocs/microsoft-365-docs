@@ -25,6 +25,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 This article contains the step-by-step process to deploy a connector that uses the Office 365 Import service to import data from your organization's Twitter account to Microsoft 365. For a high-level overview of this process and a list of prerequisites required to deploy a Twitter connector, see [Set up a connector to archive Twitter data ](archive-twitter-data-with-sample-connector.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Create an app in Azure Active Directory
 
 1. Go to <https://portal.azure.com> and sign in using the credentials of a global admin account.

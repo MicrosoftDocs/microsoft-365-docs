@@ -24,6 +24,8 @@ description: "India Voter Id Card sensitive information type entity definition."
 
 # India Voter Id Card
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 10 character alphanumeric pattern

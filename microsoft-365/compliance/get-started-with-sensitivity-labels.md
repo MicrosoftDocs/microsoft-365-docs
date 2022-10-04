@@ -49,6 +49,8 @@ The basic flow for deploying and applying sensitivity labels:
 
 ![Diagram showing workflow for sensitivity labels.](../media/Sensitivity-label-flow.png)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Subscription and licensing requirements for sensitivity labels
 
 A number of different subscriptions support sensitivity labels and the licensing requirements for users depend on the features you use.

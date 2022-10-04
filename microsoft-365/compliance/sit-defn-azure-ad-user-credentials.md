@@ -24,6 +24,8 @@ description: "Azure AD user credentials sensitive information type entity defini
 
 # Azure AD user credentials (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A paired username and password related to *.onmicrosoft.com domain.

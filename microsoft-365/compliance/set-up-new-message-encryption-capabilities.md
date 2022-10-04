@@ -29,6 +29,8 @@ Microsoft Purview Message Encryption allows organizations to share protected ema
 
 Follow the steps below to ensure that Microsoft Purview Message Encryption is available in your organization.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Verify that Azure Rights Management is active
 
 Microsoft Purview Message Encryption leverages the protection features in [Azure Rights Management Services (Azure RMS)](/azure/information-protection/what-is-information-protection), the technology used by [Azure Information Protection](/azure/information-protection/what-is-azure-rms) to protect emails and documents via encryption and access controls.

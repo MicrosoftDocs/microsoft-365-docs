@@ -24,6 +24,8 @@ description: "User login credentials sensitive information type entity definitio
 
 # User login credentials (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A paired username and password used in general authentication process.

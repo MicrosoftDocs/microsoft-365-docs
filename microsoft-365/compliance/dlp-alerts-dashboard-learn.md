@@ -30,6 +30,8 @@ When the criteria in a Microsoft Purview Data Loss Prevention (DLP) policy is ma
 
 <!-- [Microsoft Purview compliance portal](https://compliance.microsoft.com/)-->
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Workloads
 
 The [DLP alert management dashboard](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts), in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, shows alerts for DLP policies on these workloads:

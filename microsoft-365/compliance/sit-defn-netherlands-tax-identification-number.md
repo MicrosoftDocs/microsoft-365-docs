@@ -24,6 +24,8 @@ description: "Netherlands tax identification number sensitive information type e
 
 # Netherlands tax identification number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits without spaces or delimiters

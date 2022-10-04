@@ -22,6 +22,8 @@ Microsoft Purview Message Encryption lets email users send encrypted messages to
   
 To learn how to create mail flow rules for encryption, see [Define rules to encrypt or decrypt email messages](./define-mail-flow-rules-to-encrypt-email.md).
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## See also
 
 [Encryption in Office 365](./encryption.md)

@@ -24,6 +24,8 @@ description: "Australia business number sensitive information type entity defini
 
 # Australia business number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11 digits with optional delimiters

@@ -35,6 +35,8 @@ Here are the key benefits to using the KQL editor:
 
 The KQL editor is also available when you create query-based holds in eDiscovery (Standard) and eDiscovery (Premium).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Displaying the KQL editor
 
 When you create or edit an eDiscovery search, the option to display and use the KQL editor is located on the **Conditions** page in the search or collections wizard.

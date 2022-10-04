@@ -24,6 +24,8 @@ description: "Malta identity card number sensitive information type entity defin
 
 # Malta identity card number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 seven digits followed by one letter
