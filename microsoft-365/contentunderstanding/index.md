@@ -22,9 +22,9 @@ description: Learn how to find resources for Microsoft SharePoint Syntex.
 
 SharePoint Syntex is a Microsoft 365 service that provides an end-to-end intelligent document processing solution for your organization. With SharePoint Syntex, you can:
 
-- Use artificial intelligence (AI), machine learning, and advanced AI technologies to amplify human experiences.
-- Automate your document-based processes by using models to extract knowledge and information from structured, semi-structured, and unstructured documents.
-- Use that information to facilitate knowledge discovery and sharing, provide business process automation, and to ensure content compliance.
+- Use advanced AI and machine teaching and learning to amplify human experiences
+- Automate content processing
+- Transform content into knowledge
 
 The resources on this page are designed to get you started with learning about and using SharePoint Syntex in your organization.
 
