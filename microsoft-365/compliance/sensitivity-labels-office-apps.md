@@ -419,7 +419,9 @@ For more help in specifying PowerShell advanced settings, see [PowerShell tips f
 > [!NOTE]
 > This capability is currently rolling out in preview for built-in labeling, and in various stages of release across the platforms. Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Label inheritance from email attachments**.
 
-Turn on email inheritance for when users attach labeled documents or labeled emails to an email message, and do not label the email message itself. In this scenario, a sensitivity label is automatically selected for them, based on the sensitivity labels that are applied to the attachments. The [highest priority label](sensitivity-labels.md#label-priority-order-matters) is dynamically selected.
+Turn on email inheritance for when users attach labeled documents or labeled emails to an email message that isn't manually labeled. With this configuration, a sensitivity label is dynamically selected for the email message, based on the sensitivity labels that are applied to the attachments. The [highest priority label](sensitivity-labels.md#label-priority-order-matters) is dynamically selected. 
+
+If the email is already labeled by means other than manual labeling, such as a default label or automatic labeling, a label is selected only when it has a higher priority than the currently applied label.
 
 The configuration option is named **Email inherits highest priority label from attachment(s)** in the sensitivity label policy. The attachment must be a physical file, and can't be a link to a file (for example, a link to a file on Microsoft SharePoint or OneDrive).
 
@@ -444,6 +446,8 @@ Exceptions for the automatically selected label:
     - **Custom permissions for Word, Excel, or PowerPoint**: If the highest priority label prompts users to select custom permissions for Word, Excel, or PowerPoint, no label or encryption is selected for the email message.
     
     - **Priority for sublabels**: By default, the first label that's found from the parent label with the highest priority is selected for the email message. To take the ordering of sublabels into consideration, you must configure the advanced client setting **CompareSubLabelsInAttachmentAction** and set the value to **True**.
+    
+    - **Already labeled email messages**: The highest priority label isn't selected if the email message is already labeled with default labeling or automatic labeling.
 
 
 ## PDF support
