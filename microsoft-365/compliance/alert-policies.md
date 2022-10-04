@@ -278,7 +278,7 @@ To see which category a default alert policy is assigned to, see the tables in [
 |Role|Information<br>governance|Data loss<br>prevention|Mail<br>flow|Permissions|Threat<br>management|Others|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |Compliance Administrator|✔|✔||✔||✔|
-|<!---X--->DLP Compliance Management||✔|||||
+|DLP Compliance Management||✔|||||
 |Information Protection Admin||✔|||||
 |Information Protection Analyst||✔|||||
 |Information Protection Investigator||✔|||||
@@ -286,18 +286,18 @@ To see which category a default alert policy is assigned to, see the tables in [
 |Organization Configuration||||||✔|
 |Privacy Management|||||||
 |Quarantine|||||||
-|<!---X--->Record Management|✔||||||
+|Record Management|✔||||||
 |Retention Management|✔||||||
 |Role Management||||✔|||
 |Security Administrator||✔||✔|✔|✔|
 |Security Reader||✔||✔|✔|✔|
 |Transport Hygiene|||||||
-|<!---X--->View-Only DLP Compliance Management||✔|||||
+|View-Only DLP Compliance Management||✔|||||
 |View-Only Configuration|||||||
 |View-Only Manage Alerts||||||✔|
 |View-Only Recipients|||✔||||
-|<!---X--->View-Only Record Management|✔||||||
-|<!---X--->View-Only Retention Management|✔||||||
+|View-Only Record Management|✔||||||
+|View-Only Retention Management|✔||||||
 
 > [!TIP]
 > To view the roles that are assigned to each of the default role groups, run the following commands in Security & Compliance PowerShell:
