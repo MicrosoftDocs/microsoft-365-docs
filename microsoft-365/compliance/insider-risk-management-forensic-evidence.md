@@ -21,6 +21,8 @@ ms.collection: m365-security-compliance
 
 Having visual context is crucial for security teams during forensic investigations to get better insights into potentially risky security-related user activities. With customizable event triggers and built-in user privacy protection controls, Forensic evidence enables customizable visual activity capturing across devices to help your organization better mitigate, understand, and respond to potential data risks like unauthorized data exfiltration of sensitive data. You set the right policies for your organization, including what risky events are the highest priority for capturing forensic evidence, what data is most sensitive, and whether users are notified when forensic capturing is activated. Forensic evidence capturing is off by default and policy creation requires dual authorization.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Feature capabilities
 
 - **Visual capturing** allows organizations to capture clips of key security-related user activities, allowing for more secure or compliant visibility and meeting organizational needs.

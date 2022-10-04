@@ -21,6 +21,8 @@ ms.collection: m365-security-compliance
 
 After you've completed the configuration steps and created your forensic evidence policy, you'll start to see alerts for potentially risky security-related user activities that meet the conditions for indicators that are defined in the policy.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Dashboard
 
 The forensic evidence dashboard is the summary view of key areas of the forensic evidence configuration in your organization. For the preview, the dashboard includes only a **Forensic evidence device health** section. Select **View device health report** to open the **Device health** tab and report. Other sections will be included in future releases.

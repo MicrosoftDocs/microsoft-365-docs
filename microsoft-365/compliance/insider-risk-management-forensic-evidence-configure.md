@@ -23,6 +23,8 @@ ms.collection: m365-security-compliance
 
 Configuring forensic evidence in your organization is very similar to configuring other policies from insider risk management policy templates. In general, you'll follow the same basic configuration steps to set up forensic evidence, but there are a few areas that need feature-specific configuration actions before your get started with the basic configuration steps.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ### Step 1: Confirm your subscription and configure data storage access
 
 Before you get started with forensic evidence, you should confirm your [insider risk management subscription](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-insider-risk-management) and any add-ons. Users included in forensic evidence policies must be assigned licenses from one of the supported insider risk management plans.
