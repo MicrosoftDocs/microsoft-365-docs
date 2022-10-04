@@ -37,6 +37,8 @@ There are six categories of Teams content that you can collect and process using
 
 - **Shared channels**. Message posts, replies, and attachments shared in a shared Teams channel.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Where Teams content is stored
 
 A prerequisite to managing Teams content in eDiscovery (Premium) is to understand the type of Teams content that you can collect, process, and review in eDiscovery (Premium) and where that content is stored in Microsoft 365.

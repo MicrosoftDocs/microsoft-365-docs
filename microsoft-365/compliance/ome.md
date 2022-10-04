@@ -27,6 +27,8 @@ People often use email to exchange sensitive information, such as financial data
 
 With Office 365 Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Office 365 Message Encryption works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps ensure that only intended recipients can view message content.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How Message Encryption works
 
 The rest of this article applies to the Microsoft Purview Message Encryption.

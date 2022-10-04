@@ -24,6 +24,8 @@ description: "France value added tax number sensitive information type entity de
 
 # France value added tax number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 13 character alphanumeric pattern

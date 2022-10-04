@@ -25,6 +25,8 @@ description: "Hungary value added tax number sensitive information type entity d
 
 # Hungary value added tax number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 10 character alphanumeric pattern

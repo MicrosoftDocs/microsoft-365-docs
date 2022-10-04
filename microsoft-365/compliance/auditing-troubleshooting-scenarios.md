@@ -34,6 +34,8 @@ This article describes how to use the audit log search tool to help you investig
 - Search for mailbox activities performed by users with non-E5 licenses
 - Search for mailbox activities performed by delegate users
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Using the audit log search tool
 
 Each of the troubleshooting scenarios described in this article is based on using the audit log search tool in the Microsoft Purview compliance portal. This section lists the permissions required to search the audit log and describes the steps to access and run audit log searches. Each scenario section explains how to configure an audit log search query and what to look for in the detailed information in the audit records that match the search criteria.

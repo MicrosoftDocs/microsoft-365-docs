@@ -24,6 +24,8 @@ description: "Poland driver's license number sensitive information type entity d
 
 # Poland drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 11 or 14 digits containing two forward slashes

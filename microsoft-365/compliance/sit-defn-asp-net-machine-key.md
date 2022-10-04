@@ -24,6 +24,8 @@ description: "ASP.NET machine key sensitive information type entity definition."
 
 # ASP.NET machine key (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Symmetric keys in XML configuration.

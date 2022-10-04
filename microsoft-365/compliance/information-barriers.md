@@ -39,6 +39,8 @@ IB policies can allow or prevent communication and collaboration between groups 
 > [!IMPORTANT]
 > Information barriers **only supports** two-way communication and collaboration restrictions. For example, a scenario where Marketing can communicate and collaborate with Day Traders, but Day Traders cannot communicate and collaborate with Marketing **isn't supported**.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Information barriers and Microsoft Teams
 
 In Microsoft Teams, IB policies determine and prevent the following kinds of unauthorized communication and collaboration:

@@ -25,6 +25,8 @@ ms.custom: seo-marvel-apr2020
 
 The **Custodians** page on the **Data sources** tab in an Microsoft Purview eDiscovery (Premium) case contains a list of all custodians that have been added to the case. After you add custodians to a case, details about each custodian are automatically collected from Azure Active Directory and are viewable in eDiscovery (Premium).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## View custodian details
 
 To view the details about a custodian, click the custodian from the list on the **Custodians** tab. A flyout page is displayed and contains the following information about the custodian.

@@ -24,6 +24,8 @@ description: "France social security number (INSEE) sensitive information type e
 
 # France social security number (INSEE)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 15 digits

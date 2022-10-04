@@ -24,6 +24,8 @@ description: "Taiwan passport number sensitive information type entity definitio
 
 # Taiwan passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 - biometric passport number: nine digits

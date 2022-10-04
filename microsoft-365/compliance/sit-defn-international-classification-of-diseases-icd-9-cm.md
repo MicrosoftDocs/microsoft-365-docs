@@ -24,6 +24,8 @@ description: "International classification of diseases (ICD-9-CM) sensitive info
 
 # International classification of diseases (ICD-9-CM)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Dictionary

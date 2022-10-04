@@ -44,6 +44,8 @@ To preview a sample of results returned by a search:
 
    In the previous screenshot, notice that keywords from the search query are highlighted when you preview items.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How the search result samples are selected
 
 A maximum of 1,000 randomly selected items are available to preview. In addition to being randomly selected, items available for preview must also meet the following criteria:

@@ -23,6 +23,8 @@ Use the [InvestEdge DataParser](https://www.17a-4.com/investedge-dataparser/) fr
 
 After InvestEdge data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a InvestEdge connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Overview of archiving InvestEdge data
 
 The following overview explains the process of using a data connector to archive InvestEdge data in Microsoft 365.

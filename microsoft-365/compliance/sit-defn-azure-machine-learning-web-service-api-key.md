@@ -14,7 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier2
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -23,6 +23,8 @@ description: "Azure Machine Learning web service API key sensitive information t
 ---
 
 # Azure Machine Learning web service API key (preview) 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 
@@ -51,12 +53,12 @@ This SIT is designed to match the security information that's used to connect to
 
 It uses several primary resources:
 
-- Patterns of Base64 encoded 512 bits symmetric key.
+- Patterns of Base64 encoded 512-bits symmetric key.
 - Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id, AccountName.
 - Patterns of mockup values, redactions, and placeholders.
 - A dictionary of vocabulary.
 
-The patterns are designed to match actual credentials with reasonable confidence. The patterns do not match credentials formatted as examples. Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present will not be matched.
+The patterns are designed to match actual credentials with reasonable confidence. The patterns don't match credentials formatted as examples. Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present will not be matched.
 
 ## Keywords
 

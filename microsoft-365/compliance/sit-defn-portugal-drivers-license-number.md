@@ -24,6 +24,8 @@ description: "Portugal driver's license number sensitive information type entity
 
 # Portugal drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 two patterns - two letters followed by 5-8 digits with special characters

@@ -24,6 +24,8 @@ description: "Lithuania passport number sensitive information type entity defini
 
 # Lithuania passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 eight digits or letters with no spaces or delimiters

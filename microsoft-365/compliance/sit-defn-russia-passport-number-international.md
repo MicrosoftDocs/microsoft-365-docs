@@ -24,6 +24,8 @@ description: "Russia passport number international sensitive information type en
 
 # Russia passport number international
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine-digit number

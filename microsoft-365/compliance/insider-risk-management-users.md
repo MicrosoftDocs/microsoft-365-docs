@@ -29,6 +29,8 @@ Learn more about how the Users dashboard displays users in the following scenari
 - Users with triggering events
 - Users added temporarily to policies
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Users with active insider risk policy alerts
 
 The **Users dashboard** automatically displays all users with active insider risk policy alerts. These users with alerts have both a triggering indicator and an activity risk score that meets the requirements for creating an insider risk alert. Activities for these users are viewed by selecting the user in the **Users dashboard** and navigating to the **User activity** tab.

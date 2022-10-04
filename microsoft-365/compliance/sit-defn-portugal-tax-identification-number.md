@@ -24,6 +24,8 @@ description: "Portugal tax identification number sensitive information type enti
 
 # Portugal tax identification number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine digits with optional spaces

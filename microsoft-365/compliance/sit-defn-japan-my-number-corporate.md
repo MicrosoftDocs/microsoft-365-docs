@@ -24,6 +24,8 @@ description: "Japan My Number - Corporate sensitive information type entity defi
 
 # Japan My Number - Corporate
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 13-digit number
