@@ -46,7 +46,7 @@ productDirectory:
   items:
     # Card
     - title: Microsoft 365 Defender
-      imageSrc: /microsoft-365/office/media/icons/lightbulb-idea-capture-blue.svg
+      imageSrc: /office/media/icons/lightbulb-idea-capture-blue.png
       links:
       - url: /microsoft-365/security/defender/microsoft-365-defender
         text: Overview
@@ -76,7 +76,7 @@ productDirectory:
         text: Set up an evaluation   
     # Card
     - title: Microsoft Defender Vulnerability Management
-      imageSrc: /microsoft-365/office/media/icons/lightbulb-idea-capture-blue.svg
+      imageSrc: /microsoft-365/office/media/icons/lightbulb-idea-capture-blue.png
       links:
       - url: /microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management
         text: Overview
