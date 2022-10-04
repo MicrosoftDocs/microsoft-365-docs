@@ -35,7 +35,8 @@ Connectors sync schedule data between your WFM system and Shifts, bringing your 
 
 Data flows via the connector both ways to ensure schedules are always up to date. Schedules in your WFM system are synced to Shifts. And, changes made to schedules in Shifts are synced back to your WFM system. As the system of record, all business rules are enforced by your WFM system before data is saved to Shifts.
 
-<a name="prereq"> </a> <a name="remove_schedules"> </a>
+<a name="prereq"> </a>
+<a name="remove_schedules"> </a>
 ## Managed Shifts connectors
 
 Managed Shifts connectors are connectors developed in collaboration with our partners. Managed connectors are hosted and managed either by us or our partners. With managed connectors, only minimal setup is needed.
