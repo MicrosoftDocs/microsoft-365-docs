@@ -1,5 +1,5 @@
 ---
-title: "Medical specialities entity definition"
+title: "Medical specialties entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,10 +19,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: "Medical specialities sensitive information type entity definition."
+description: "Medical specialties sensitive information type entity definition."
 ---
 
-# Medical specialities
+# Medical specialties
 
 This unbundled named entity detects terms related to medical specialties, such as *dermatology*.  It supports English terms only. It's also included in the [All medical terms and conditions](sit-defn-all-medical-terms-conditions.md) bundled named entity SIT.
 

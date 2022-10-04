@@ -52,7 +52,7 @@ This SIT is designed to match the security information that's used to call [Bing
 
 It uses several primary resources:
 
-- Patterns of Base64 URL encoded 384 bits symmetric key.
+- Patterns of Base64 URL encoded 384-bits symmetric key.
 - Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName.
 - Patterns of mockup values, redactions, and placeholders.
 - A dictionary of vocabulary.
