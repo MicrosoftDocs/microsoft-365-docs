@@ -11,7 +11,7 @@ search.appverid:
 - MET150
 ms.collection:
 - purview-compliance
-description: "Learn how to set up Customer Key."
+description: "This article describes the steps to create and configure the required Azure resources and then provides the steps for setting up Customer Key."
 ---
 
 # Set up Customer Key

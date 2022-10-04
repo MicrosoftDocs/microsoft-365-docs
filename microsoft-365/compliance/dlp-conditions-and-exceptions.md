@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 recommendations: false
-description: "learn about dlp policy conditions and exceptions"
+description: "Learn about dlp policy conditions and exceptions that identify sensitive items that the policy is applied to."
 ---
 
 # DLP policy conditions, exceptions, and actions
