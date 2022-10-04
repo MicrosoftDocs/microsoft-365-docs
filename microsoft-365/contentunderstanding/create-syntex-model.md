@@ -50,11 +50,11 @@ The **Train a custom model** section shows the types of custom models you can cr
 
 ![Screenshot of the Build a custom model section on the Options for model creation page.](../media/content-understanding/build-a-custom-model-section.png) 
 
-- **Teaching method** – This creates an [unstructured document processing model](document-understanding-overview.md).
+- **Teaching method** – Creates an [unstructured document processing model](document-understanding-overview.md).
 
-- **Freeform selection method** – This creates a [freeform document processing model](freeform-document-processing-overview.md).
+- **Freeform selection method** – Creates a [freeform document processing model](freeform-document-processing-overview.md).
 
-- **Layout method** – This creates a [structured document processing model](form-processing-overview.md).
+- **Layout method** – Creates a [structured document processing model](form-processing-overview.md).
 
 Select one of the following tabs to continue with the custom model you want to use.
 
@@ -80,9 +80,9 @@ Use the **Teaching method** to create an [unstructured document processing model
 
     - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. Under **Sensitivity labels**, select the sensitivity label you want to add. If a compliance label has been already applied to the library where the file is stored, it will be shown.
 
-5. When you are ready to create the model, select **Create**.
+5. When you're ready to create the model, select **Create**.
 
-6. You are now ready to [train the model](create-a-classifier).
+6. You're now ready to [train the model](create-a-classifier).
 
 # [Freeform selection method](#tab/freeform-selection-method)
 
@@ -109,9 +109,9 @@ Use the **Freeform selection method** to create a [freeform document processing 
     > [!NOTE]
     > Sensitivity labels are not available for **Freeform selection method** (freeform document processing models) at this time.
 
-5. When you are ready to create the model, select **Create**.
+5. When you're ready to create the model, select **Create**.
 
-6. You are now ready to [train the model](train-freeform-document-processing-model.md).
+6. You're now ready to [train the model](train-freeform-document-processing-model.md).
 
     > [!NOTE]
     > When published, this model type is available for reuse by others who do not own the model. Currently, this model can be edited and shared for editing only by the model owner.
@@ -141,9 +141,9 @@ Use the **Layout method** to create a [structured document processing model](for
     > [!NOTE]
     > Sensitivity labels are not available for **Layout method** (structured document processing models) at this time.
 
-5. When you are ready to create the model, select **Create**.
+5. When you're ready to create the model, select **Create**.
 
-6. You are now ready to [train the model](create-a-form-processing-model.md).
+6. You're now ready to [train the model](create-a-form-processing-model.md).
 
     > [!NOTE]
     > When published, this model type is available for reuse by others who do not own the model. Currently, this model can be edited and shared for editing only by the model owner.
@@ -185,9 +185,9 @@ Select one of the following tabs to continue with the prebuilt model you want to
     > [!NOTE]
     > Sensitivity labels are not available for prebuilt models at this time.
 
-5. When you are ready to create the model, select **Create**.
+5. When you're ready to create the model, select **Create**.
 
-6. You are now ready to [complete setting up the model](prebuilt-model-invoice.md).
+6. You're now ready to [complete setting up the model](prebuilt-model-invoice.md).
 
 # [Receipt processing](#tab/receipt-processing)
 
@@ -213,9 +213,9 @@ Select one of the following tabs to continue with the prebuilt model you want to
     > [!NOTE]
     > Sensitivity labels are not available for prebuilt models at this time.
 
-4. When you are ready to create the model, select **Create**.
+4. When you're ready to create the model, select **Create**.
 
-5. You are now ready to [complete setting up the model](prebuilt-model-receipt.md).
+5. You're now ready to [complete setting up the model](prebuilt-model-receipt.md).
 
 ---
 
