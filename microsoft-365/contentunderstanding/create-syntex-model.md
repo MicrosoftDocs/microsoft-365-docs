@@ -47,17 +47,17 @@ Follow these steps to create a model in SharePoint Syntex.
 
 ## Train a custom model
 
-1. In the **Train a custom model** section, view the types of custom models you can create. 
+The **Train a custom model** section shows the types of custom models you can create.
 
-    ![Screenshot of the Build a custom model section on the Options for model creation page.](../media/content-understanding/build-a-custom-model-section.png) 
+![Screenshot of the Build a custom model section on the Options for model creation page.](../media/content-understanding/build-a-custom-model-section.png) 
 
-    - [**Teaching method**](#teaching-method). This creates an [unstructured document processing model](document-understanding-overview.md).
+- **Teaching method**. This creates an [unstructured document processing model](document-understanding-overview.md).
 
-    - [**Freeform selection method**](#freeform-selection-method). This creates a [freeform document processing model](freeform-document-processing-overview.md).
+- **Freeform selection method**. This creates a [freeform document processing model](freeform-document-processing-overview.md).
 
-    - [**Layout method**](#layout-method). This creates a [structured document processing model](form-processing-overview.md).
+- **Layout method**. This creates a [structured document processing model](form-processing-overview.md).
 
-2. When you select a custom model, the next page will show you more information about the model. If you want to continue to create the model, select **Next**.
+Select one of the following tabs to continue with the custom model you want to use.
 
 # [Teaching method](#tab/teaching-method)
 
@@ -151,18 +151,17 @@ Use the **Layout method** to create a [structured document processing model](for
 
 ---
 
-
 ## Set up a prebuilt model
 
-1. In the **Set up a prebuilt model** section, view the types of prebuilt models you can use. Select the type of prebuilt model you want to learn more about or to start using. 
+The **Set up a prebuilt model** section shows the types of prebuilt models you can use. 
 
-    ![Screenshot of the Use a prebuilt model section on the Set up a prebuilt model page.](../media/content-understanding/use-a-trained-model-section.png) 
+![Screenshot of the Use a prebuilt model section on the Set up a prebuilt model page.](../media/content-understanding/use-a-trained-model-section.png) 
 
-    - [**Invoice processing**](#invoice-processing)
+- **Invoice processing**
 
-    - [**Receipt processing**](#receipt-processing)
+- **Receipt processing**
 
-2. When you select a prebuilt model, the next page will show you more information about the model. If you want to continue to create the model, select **Next**.
+Select one of the following tabs to continue with the prebuilt model you want to use.
 
 # [Invoice processing](#tab/invoice-processing)
 
