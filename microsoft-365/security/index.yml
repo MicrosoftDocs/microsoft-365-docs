@@ -45,7 +45,7 @@ productDirectory:
   items:
     # Card
     - title: Microsoft 365 Defender
-      imageSrc: /office/media/icons/education-tutorial-blue.svg
+      imageSrc: /office/media/icons/k-icon.svg
       links:
       - url: /microsoft-365/security/defender/microsoft-365-defender
         text: Overview
