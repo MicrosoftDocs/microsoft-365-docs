@@ -74,7 +74,7 @@ On the extractor details page, you'll see the document area on the right and the
 
    ![Screenshot of the extractor details page and Extractor panel.](../media/content-understanding/prebuilt-extractor-details-page.png) 
 
-The entity fields that are highlighted in green in the document area are the items that were detected by the model when it analyzed the file. When you select an entity to extract, the highlighted field will change to blue. If you later decide not to include the entity, the highlighted field will change to gray. The highlights make it easier to see the current state of the extractors you have selected.
+The entity fields that are highlighted in green in the document area are the items that were detected by the model when it analyzed the file. When you select an entity to extract, the highlighted field will change to blue. If you later decide not to include the entity, the highlighted field will change to gray. The highlights make it easier to see the current state of the extractors you've selected.
 
 > [!TIP]
 > You can use the scroll wheel on your mouse or the controls at the bottom of the document area to zoom in or out as needed to read the entity fields.
