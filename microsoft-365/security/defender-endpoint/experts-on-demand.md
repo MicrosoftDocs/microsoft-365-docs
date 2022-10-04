@@ -71,7 +71,7 @@ The **Inquiry topic** field is pre-populated with the link to the relevant page 
 
 Watch this video for a quick overview of the Microsoft Services Hub.
 
-> [!VIDEO <https://www.microsoft.com/videoplayer/embed/RE4pk9f>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pk9f]
 
 ## Sample investigation topics that you can consult with Microsoft Threat Experts - Experts on Demand
 
