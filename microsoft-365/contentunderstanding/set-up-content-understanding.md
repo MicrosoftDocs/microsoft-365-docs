@@ -136,6 +136,4 @@ To assign licenses:
 
 [Overview of the document processing model in AI Builder](/ai-builder/form-processing-model-overview)
 
-[Step-by-Step: How to Build a Document Understanding Model (video)](https://www.youtube.com/watch?v=DymSHObD-bg)
-
 [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)
