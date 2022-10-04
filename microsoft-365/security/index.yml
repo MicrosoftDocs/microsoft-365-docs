@@ -45,7 +45,7 @@ productDirectory:
   items:
     # Card
     - title: Microsoft 365 Defender
-      imageSrc: /office/media/icons/k-icon.svg
+      imageSrc: /office/media/icons/security-blue.svg
       links:
       - url: /microsoft-365/security/defender/microsoft-365-defender
         text: Overview
@@ -55,7 +55,7 @@ productDirectory:
         text: Set up an evaluation
     # Card
     - title: Microsoft Defender for Office 365
-      imageSrc: /office/media/icons/education-tutorial-blue.svg
+      imageSrc: /office/media/icons/users-group.svg
       links:
        - url: /microsoft-365/security/office-365-security/defender-for-office-365
          text: Overview
@@ -65,7 +65,7 @@ productDirectory:
          text: Set up an evaluation 
     # Card
     - title: Microsoft Defender Endpoint
-      imageSrc: /office/media/icons/education-tutorial-blue.svg
+      imageSrc: /office/media/icons/devices-2-blue.svg
       links:
       - url: /microsoft-365/security/defender-endpoint/microsoft-defender-endpoint
         text: Overview  
@@ -75,7 +75,7 @@ productDirectory:
         text: Set up an evaluation   
     # Card
     - title: Microsoft Defender Vulnerability Management
-      imageSrc: /office/media/icons/education-tutorial-blue.svg
+      imageSrc: /office/media/icons/blocks.svg
       links:
       - url: /microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management
         text: Overview
@@ -83,7 +83,7 @@ productDirectory:
         text: Get Started
     # Card
     - title: Microsoft Defender for Identity
-      imageSrc: /office/media/icons/education-tutorial-blue.svg
+      imageSrc: /office/media/icons/authentication.svg
       links:
        - url: /defender-for-identity/what-is
          text: Overview
@@ -93,7 +93,7 @@ productDirectory:
          text: Set up an evaluation
      # Card
     - title: Microsoft Defender for Cloud apps
-      imageSrc: /office/media/icons/education-tutorial-blue.svg
+      imageSrc: /office/media/icons/cloud.svg
       links:
       - url: /defender-cloud-apps/what-is-defender-for-cloud-apps
         text: Overview
