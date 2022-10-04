@@ -29,21 +29,20 @@ For this article, we start in the **Models** library. For information about the 
 
 ## Create a model
 
-Follow these steps to create a model in SharePoint Syntex.
+From the **Models** library, select **Create a model**.
 
-1. From the **Models** library, select **Create a model**.
+![Screenshot of the Models library showing the Create a model button.](../media/content-understanding/create-a-model-from-the-models-page.png) 
 
-    ![Screenshot of the Models library showing the Create a model button.](../media/content-understanding/create-a-model-from-the-models-page.png) 
+On the **Options for model creation** page, there are two sections:
 
-2. On the **Options for model creation** page, there are two sections:
+- [**Train a custom model**](#train-a-custom-model)
+    
+- [**Set up a prebuilt model**](#set-up-a-prebuilt-model)
 
-    - [**Train a custom model**](#train-a-custom-model)
-    - [**Set up a prebuilt model**](#set-up-a-prebuilt-model)
+![Screenshot of the Options for model creation page showing the custom models and prebuilt models.](../media/content-understanding/options-for-model-creation.png) 
 
-    ![Screenshot of the Options for model creation page showing the custom models and prebuilt models.](../media/content-understanding/options-for-model-creation.png) 
-
-    > [!NOTE]
-    > All model options might not be available. These options are configured by your Microsoft 365 admin.
+> [!NOTE]
+> All model options might not be available. These options are configured by your Microsoft 365 admin.
 
 ## Train a custom model
 
