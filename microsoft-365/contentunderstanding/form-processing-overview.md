@@ -68,8 +68,8 @@ If you use a custom environment (rather than the default environment) for Power 
   
 [Power Automate documentation](/power-automate/)
 
-[Create a form processing model](create-a-form-processing-model.md)
+[Create a structured document processing model](create-a-form-processing-model.md)
 
-[Document understanding overview](document-understanding-overview.md)
+[Unstructured document processing overview](document-understanding-overview.md)
 
 [Training: Improve business performance with AI Builder](/training/paths/improve-business-performance-ai-builder/?source=learn)
