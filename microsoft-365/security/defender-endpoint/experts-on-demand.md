@@ -1,7 +1,7 @@
 ---
 title: Experts on Demand
 ms.reviewer:
-description: Microsoft Threat Experts provides an extra layer of expertise to Microsoft Defender for Endpoint.
+description: Experts on Demand is intended to provide a better understanding of complex threats
 keywords: experts on demand, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, endpoint attack notification, Endpoint Attack Notification, Ask Defender Experts
 search.product: Windows 10
 ms.service: microsoft-365-security
