@@ -57,7 +57,7 @@ To install the Microsoft Purview Client, complete the following steps:
     - **Third-party device management solutions**: If your organization is using third-party device management solutions, see the documentation for these tools to install the client.
 
 >[!IMPORTANT]
->Forensic evidence clips are deleted 30 days after they're captured or at the end of the public preview period, whichever is sooner. You can download or transfer forensic evidence clips before they're deleted.
+>Forensic evidence clips are deleted 30 days after they're captured or at the end of the preview period, whichever is sooner. You can download or transfer forensic evidence clips before they're deleted.
 
 ### Step 3: Configure settings
 
@@ -102,7 +102,7 @@ After you've completed the policy configuration steps, continue to Step 5.
 Before security-related user activities can be captured, users must follow the dual authorization process in forensic evidence. This process mandates that enabling visual capturing for specific users is both defined and approved by applicable people in your organization.
 
 >[!IMPORTANT]
->For public preview, a maximum of 5 concurrent users are eligible for forensic evidence capturing. Capturing for groups isn't supported in public preview.
+>For the preview release, a maximum of 5 concurrent users are eligible for forensic evidence capturing. Capturing for groups isn't supported in the preview release.
 
 You must request that forensic evidence capturing be turned on for specific users. When a request is submitted, approvers in your organization are notified in email and can approve or reject the request. If approved, the user will appear on the **Approved users** tab and will be eligible for capturing.
 

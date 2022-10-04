@@ -128,7 +128,7 @@ For more information about the Activity explorer, see the [Insider risk manageme
 
 ### Forensic evidence (preview)
 
-The **Forensic evidence (preview)** tab allows risk investigators to review screen captures associated with risk activities included in cases. For example, as part of the case management actions, investigators may need to help clarify the context of the user activity under review. Viewing the actual screen-by-screen capturing of the activity can help the investigator determine if the user activity is potentially risky.
+The **Forensic evidence (preview)** tab allows risk investigators to review visual captures associated with risk activities included in cases. For example, as part of the case management actions, investigators may need to help clarify the context of the user activity under review. Viewing the actual clips of the activity can help the investigator determine if the user activity is potentially risky.
 
 For more information about forensic evidence, see the [Learn about insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence) article.
 

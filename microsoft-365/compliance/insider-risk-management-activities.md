@@ -46,7 +46,7 @@ The **User activity report** for the selected user contains the **User activity*
 
 - **User activity**: Use this chart view to investigate activities and view potential activities that occur in sequences. This tab is structured to enable quick review of a case, including a historical timeline of all activities, activity details, the current risk score for the user in the case, the sequence of risk events, and filtering controls to help with investigative efforts.
 - **Activity explorer**: The **Activity explorer** tab provides risk investigators with a comprehensive analytic tool that provides detailed information about activities. With the Activity explorer, reviewers can quickly review a timeline of detected risky activity and identify and filter all risk activities associated with alerts. To learn more about using the Activity explorer, see the *Activity explorer* section later in this article.
-- **Forensic evidence (preview)**: The **Forensic evidence (preview)** tab provides access to forensic evidence screen captures associated with activities for the user. Forensic evidence enables customizable screen capturing across devices to help your organization better mitigate, understand, and respond to potential data risks like unauthorized data exfiltration of sensitive data. To learn more about using forensic evidence, see [Learn about insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence).
+- **Forensic evidence (preview)**: The **Forensic evidence (preview)** tab provides access to forensic evidence captures associated with security-related activities for the user. Forensic evidence enables customizable visual capturing across devices to help your organization better mitigate, understand, and respond to potential data risks like unauthorized data exfiltration of sensitive data. To learn more about using forensic evidence, see [Learn about insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence).
 
 ## Alert dashboard
 
@@ -186,11 +186,11 @@ The **User activity** chart is one of the most powerful tools for internal risk 
 > [!NOTE]
 > Activity explorer is available in the alert management area for users with triggering events after this feature is available in your organization.
 
-The Activity explorer provides risk investigators and analysts with a comprehensive analytic tool that provides detailed information about alerts. With the Activity explorer, reviewers can quickly review a timeline of detected risky activity and identify and filter all risk activities associated with alerts. 
+The Activity explorer provides risk investigators and analysts with a comprehensive analytic tool that provides detailed information about alerts. With the Activity explorer, reviewers can quickly review a timeline of detected risky activity and identify and filter all risk activities associated with alerts.
 
 To filter alerts on the Activity explorer for column information, select the Filter control. You can filter alerts by one or more attributes listed in the details pane for the alert. Activity explorer also supports customizable columns to help investigators and analysts focus the dashboard on the information most important to them.
 
-Use the Activity scope and Risk insight filters to display and sort activities and insights for the following areas.
+Use the *Activity scope* and *Risk insight* filters to display and sort activities and insights for the following areas.
 
 - **Activity scope filters**: Filters all scored activities for the user.
   - All scored activity for this user
@@ -241,8 +241,8 @@ As insider risk management alerts age, their value to minimize risky activity di
 
 To help minimize the number of older items that provide limited current value, the following retention and limits apply for insider risk management alerts, cases, and user activity reports:
 
-|Item|Retention/Limit|
-|---|---|
+|**Item**|**Retention/Limit**|
+|:-------|:------------------|
 |Alerts with Needs review status|120 days from alert creation, then automatically deleted|
 |Active cases (and associated artifacts)|Indefinite retention, never expire|
 |Resolved cases (and associated artifacts)|120 days from case resolution, then automatically deleted|

@@ -195,11 +195,9 @@ Employment stresses events can impact user behavior in several ways that relate 
 - [Data leaks by disgruntled users (preview)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Security policy violations by disgruntled users (preview)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
-### Visual context for risky user activities with forensic evidence (preview)
+### Visual context for potentially risky user activities with forensic evidence (preview)
 
-Having visual context is crucial for security teams during forensic investigations to get better insights into potentially risky user activities. This may include screen-by-screen capturing of these activities to help evaluate if they are indeed risky or taken out of context and not potentially risky. For activities that are determined to be risky, having screen captures can help investigators and your organization better mitigate, understand, and respond to these activities. To help with this scenario, the following insider risk management policy templates enable screen-by-screen capturing for online and offline devices in your organization:
-
-- Forensic evidence policy template (preview)
+Having visual context is crucial for security teams during forensic investigations to get better insights into potentially risky user activities. This may include visual capturing of these activities to help evaluate if they are indeed risky or taken out of context and not potentially risky. For activities that are determined to be risky, having forensic evidence captures can help investigators and your organization better mitigate, understand, and respond to these activities. To help with this scenario, [enable forensic evidence capturing](insider-risk-management-forensic-evidence.md) for online and offline devices in your organization.
 
 ## Ready to get started?
 

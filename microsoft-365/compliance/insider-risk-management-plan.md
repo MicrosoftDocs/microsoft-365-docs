@@ -97,7 +97,6 @@ If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try i
 - When using **Data leaks** templates, you must configure at least one Microsoft Purview Data Loss Prevention (DLP) policy to define sensitive information in your organization and to receive insider risk alerts for High Severity DLP policy alerts. See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) article for step-by-step guidance to configure DLP policies for your organization.
 - When using **Security policy violation** templates, you must enable Microsoft Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. For step-by-step guidance to enable Defender for Endpoint integration with insider risk management, see [Configure advanced features in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features).
 - When using **Disgruntled user** templates, you must configure a Microsoft 365 HR connector to periodically import performance or demotion status information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization.
-- When using the **Forensic evidence policy** template, you must enable configure forensic evidence for your organization. Additionally, you must explicitly request and receive approval for screen capturing for users. See the [Get started with insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) article for step-by-step guidance.
 
 ## Test with a small group of users in a production environment
 
@@ -123,3 +122,4 @@ Ready to configure insider risk management for your organization? Review the fol
 
 - [Get started with insider risk management settings](insider-risk-management-settings.md) to configure global policy settings.
 - [Get started with insider risk management](insider-risk-management-configure.md) to configure prerequisites, create policies, and start receiving alerts.
+- [Get started with insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) for step-by-step guidance to configure forensic evidence capturing in your organization.
