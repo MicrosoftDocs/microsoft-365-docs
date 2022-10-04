@@ -46,24 +46,6 @@ You can only create a structured document processing model in SharePoint documen
 
 For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md#extract-by-layout).
 
-<!---
-## File limitations
-
-When using form processing models, make sure to note the [requirements and limitations for file usage](/ai-builder/form-processing-model-requirements).
-
-## Supported languages
-
-Form processing supports documents in more than 73 languages. For the list of languages, see [Form processing language support](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support).
-
-## Multi-Geo environments
-
-When setting up SharePoint Syntex in a [Microsoft 365 Multi-Geo environment](../enterprise/microsoft-365-multi-geo.md), you can only configure it to use form processing in the central location. If you want to use form processing in a satellite location, contact Microsoft support.
-
-## Custom environments
-
-If you use a custom environment (rather than the default environment) for Power Platform processing, there are additional setup requirements. For more information, see [Custom Power Platform environments](set-up-content-understanding.md#requirements).
---->
-
 ## See also
   
 [Power Automate documentation](/power-automate/)
