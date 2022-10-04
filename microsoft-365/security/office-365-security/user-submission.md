@@ -68,6 +68,8 @@ Before you get started, you need to configure Exchange Online Protection and Def
 
 After you've verified that the mailbox meets these requirements, use the rest of the instructions in this article to identify the user submissions mailbox and other user reported message settings.
 
+If you have Data Loss and Prevention (DLP) as well, exclude the custom mailbox from it. For instructions, see [Creating exceptions in DLP](compliance/dlp-conditions-and-exceptions?view=o365-worldwide).
+
 ## What do you need to know before you begin?
 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **User submissions** page, use <https://security.microsoft.com/userSubmissionsReportMessage>.
