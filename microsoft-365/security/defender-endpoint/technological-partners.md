@@ -132,7 +132,7 @@ The following are the solution’s categories:
 | [GITHUB](https://go.microsoft.com/fwlink/?linkid=2201957)   | Microsoft    | GitHub is a code hosting platform for collaboration and version control. It allows developers to work together on their projects right from planning and coding to shipping the software. |
 | [Google Workspace](https://go.microsoft.com/fwlink/?linkid=2201958)| Alphabet| Google Workspace plans provide a custom email for your business and includes collaboration tools like Gmail, Calendar, Meet, Chat, Drive, Docs, Sheets, Slides, Forms, Sites, and more.   |
 | [Google Cloud Platform](https://go.microsoft.com/fwlink/?linkid=2202244) | Alphabet| Google Cloud Platform is a set of modular cloud-based services that allows you to create anything from simple websites to complex applications.|
-| [NetDocuments](https://go.microsoft.com/fwlink/?linkid=2201768)  | NetDocuments | NetDocuments enables businesses of all sizes to create, secure, manage, access, and collaborate on documents and email anywhere, any time. |
+| [NetDocuments](https://go.microsoft.com/fwlink/?linkid=2201768)  | NetDocuments | NetDocuments enables businesses of all sizes to create, secure, manage, access, and collaborate on documents and email anywhere, anytime. |
 | [Office 365](https://go.microsoft.com/fwlink/?linkid=2201959)    | Microsoft    | Microsoft Office 365 is a subscription-based online office and software services suite, which offers access to various services and software built around the Microsoft Office platform.   |
 | [OKTA](https://go.microsoft.com/fwlink/?linkid=2201867)| OKTA | Okta is a management platform that secures critical resources from cloud to ground for workforce and customers.  |
 | [OneLogin](https://go.microsoft.com/fwlink/?linkid=2201868) | OneLogin| OneLogin is a cloud identity and access management solution that enables enterprises to secure all apps for their users on all devices. |
@@ -142,7 +142,7 @@ The following are the solution’s categories:
 | [SmartSheet](https://go.microsoft.com/fwlink/?linkid=2201871)    | SmartSheet   | Smartsheet is a cloud-based work management platform that empowers collaboration, drives better decision making, and accelerates innovation. |
 | [Webex](https://go.microsoft.com/fwlink/?linkid=2201872)    | Cisco| Webex, a Cisco company, provides on-demand applications for businesses to conduct web conferencing, telework and application remote control. |
 | [Workday](https://go.microsoft.com/fwlink/?linkid=2201960)  | Workday| Workday offers enterprise-level software solutions for human resource and financial management.|
-| [Zendesk](https://go.microsoft.com/fwlink/?linkid=2201961)  | Zendesk| Zendesk is a customer service platform that develops a software to empower organization and customer relationships.|
+| [Zendesk](https://go.microsoft.com/fwlink/?linkid=2201961)  | Zendesk| Zendesk is a customer service platform that develops software to empower organization and customer relationships.|
 
 ### Threat and vulnerability management
 
