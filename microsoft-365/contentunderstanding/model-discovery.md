@@ -29,17 +29,17 @@ To make your trained model available for others to use:
 
 2. On the **Model settings** panel, in the **Sites where this model is available** section, select **Edit**.
 
-3. At this point, the **Select the sites where this model is available** panel will be different depending on whether or not you are an administrator. 
+3. At this point, the **Select the sites where this model is available** panel will be different depending on whether or not you're an administrator. 
 
-    If you are a SharePoint administrator, you will see this view.
+    If you're a SharePoint administrator, you'll see this view.
 
     ![Screenshot of the Select the sites where this model is available panel showing the options of where you want the model to be available for others.](../media/content-understanding/select-sites.png)
 
     - **Not available on any sites** – The model won't be available for others to use.
     - **All sites** – The model will be available in the content type gallery for others to use.
-    - **Only selected sites** – You can choose which site or sites in which the model will be available. Click in the text box to search for and choose the sites to which you want the model applied. You'll only see sites for which you have access.
+    - **Only selected sites** – You can choose which site or sites in which the model will be available. Use the text box to search for and choose the sites to which you want the model applied. You'll only see sites for which you have access.
 
-    If you are *not* a SharePoint administrator, you will see this view.
+    If you *aren't* a SharePoint administrator, you'll see this view.
 
     ![Screenshot of the Select the sites where this model is available panel showing the options for end users with only a few available sites.](../media/content-understanding/select-site-user.png)
 
