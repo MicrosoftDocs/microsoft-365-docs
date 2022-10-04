@@ -2,13 +2,15 @@
 title: "Microsoft Purview solutions trial playbook"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
-ms.collection: m365-security-compliance
+ms.collection: 
+- purview-compliance
+- tier3
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: 
@@ -21,6 +23,8 @@ ms.custom: trial-playbook
 # Trial playbook: Microsoft Purview solutions
 
 Welcome to the Microsoft Purview solutions trial playbook. This playbook will help you make the most of your free trial by helping you discover robust and comprehensive capabilities of Microsoft Purview and security products.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Compliance actions with Microsoft Purview
 
@@ -294,7 +298,7 @@ Each recommended action guides you through the required activities for the recom
 
 Note that the recommended steps in the playbook (above) may also be included in the Recommended actions shown in the portal.
 
-Set up recommendations are also available on the Microsoft docs page, via the [Microsoft Purview Insider Risk Management Setup Guide](https://go.microsoft.com/fwlink/?linkid=2197153).
+Setup recommendations are also available on Microsoft Learn via the [Microsoft Purview Insider Risk Management Setup Guide](https://go.microsoft.com/fwlink/?linkid=2197153).
 
 To fully leverage the functionality of Insider Risk Management, we recommend setting up policies for your organization to better identify potential risky actions that may lead to a security incident, leveraging templates for Data leaks or Data theft.  
 
@@ -354,7 +358,7 @@ To access eDiscovery (Premium) or be added as a member of an eDiscovery (Premium
 
 More organizations use the eDiscovery (Premium) solution in Microsoft 365 for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation.
 
-1. Manage eDiscovery (Premium) – [learn how to configure eDiscovery (Premium), manage cases by using the Security & Compliance Center, manage a workflow in Advanced eDiscovery, and analyze Advanced eDiscovery search results](/learn/modules/manage-advanced-ediscovery).
+1. Manage eDiscovery (Premium) – [learn how to configure eDiscovery (Premium), manage cases by using the Security & Compliance Center, manage a workflow in Advanced eDiscovery, and analyze Advanced eDiscovery search results](/training/modules/manage-advanced-ediscovery).
 1. [Create an eDiscovery case](advanced-ediscovery-new-case-format.md) using eDiscovery Premium’s new case format
 1. [Close or delete a case](close-or-delete-case.md) - When the legal case or investigation is completed, you can close or delete. You can also reopen a closed case.
 

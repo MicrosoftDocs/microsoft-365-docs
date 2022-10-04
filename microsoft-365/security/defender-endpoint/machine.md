@@ -11,7 +11,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
@@ -62,7 +64,7 @@ search.appverid: met150
 |firstSeen|DateTimeOffset|First date and time where the [machine](machine.md) was observed by Microsoft Defender for Endpoint.|
 |lastSeen|DateTimeOffset|Time and date of the last received full device report. A device typically sends a full report every 24 hours.|
 |osPlatform|String|Operating system platform.|
-|onboardingstatus|String|Status of machine onboarding. Possible values are: "onboarded" and "offboarded".|
+|onboardingstatus|String|Status of machine onboarding. Possible values are: "onboarded", "CanBeOnboarded", "Unsupported", and "InsufficientInfo".|
 |osProcessor|String|Operating system processor. Use osArchitecture property instead.|
 |version|String|Operating system Version.|
 |osBuild|Nullable long|Operating system build number.|

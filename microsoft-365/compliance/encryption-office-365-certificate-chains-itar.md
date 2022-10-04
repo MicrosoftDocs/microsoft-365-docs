@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - Strat_O365_IP
 description: "View a complete list of DOD and GCC High root certificates and certificate authorities (CAs) in Microsoft 365."
 ---
@@ -35,6 +35,8 @@ Last updated: **10/16/2020**
 | Publicly Trusted Root and Intermediate Certificates | [Microsoft 365 ITAR Certificate Bundle (P7B)](https://download.microsoft.com/download/b/3/a/b3ae08a2-516c-46a9-8723-6256e4fd6383/m365_chain_certs_itar20201012.p7b) | crl.entrust.net<br>crl3.digicert.com<br>crl4.digicert.com | ocsp.digicert.com<br>ocsp.entrust.net |
 
 Expand the root and intermediate sections below to see additional details about the certificate providers.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## **Microsoft 365 Certificate Details**
 

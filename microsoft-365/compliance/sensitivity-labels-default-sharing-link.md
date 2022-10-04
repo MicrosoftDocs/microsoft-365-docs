@@ -11,7 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid: 
 - MOE150
@@ -44,6 +45,8 @@ Configuring the default link type for documents might also be appropriate withou
 - Documents labeled **Highly Confidential** have a default sharing link type that restricts sharing to specific people rather than anybody in the organization.
 - Documents labeled **General** have a default sharing link type that restricts sharing to people in your organization.
 - Documents labeled **Personal** have a default sharing link type that allows sharing to anyone with the link.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Prerequisites
 

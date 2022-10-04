@@ -14,7 +14,8 @@ ms.localizationpriority: high
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
-- M365-security-compliance
+- m365-security
+- tier1
 ms.custom: intro-get-started
 ---
 

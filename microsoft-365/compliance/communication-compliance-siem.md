@@ -14,8 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
@@ -26,6 +26,8 @@ search.appverid:
 [Communication compliance](/microsoft-365/compliance/communication-compliance) is an insider risk solution in Microsoft Purview that helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization. Security information and event management (SIEM) solutions such as [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) or [Splunk](https://www.splunk.com/) are commonly used to aggregate and track threats within an organization.
 
 A common need for organizations is to integrate communication compliance alerts and these SIEM solutions. With this integration, organizations can view communication compliance alerts in their SIEM solution and then remediate alerts within the communication compliance workflow and user experience. For example, an employee sends an offensive message to another employee and that message is detected by a communication compliance policy for inappropriate content. These events are tracked in Microsoft 365 Audit (also known as "unified audit log") by the communication compliance solution and imported into the SIEM solution. An alert is then triggered in the SIEM solution for the organization from events included in Microsoft 365 Audit that are associated with communication compliance alerts. Investigators are notified of the alert in the SIEM solutions and then they investigate and remediate the alert in the communication compliance solution.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Communication compliance alerts in Microsoft 365 Audit
 
