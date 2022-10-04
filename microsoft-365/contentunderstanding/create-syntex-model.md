@@ -50,11 +50,11 @@ The **Train a custom model** section shows the types of custom models you can cr
 
 ![Screenshot of the Build a custom model section on the Options for model creation page.](../media/content-understanding/build-a-custom-model-section.png) 
 
-- **Teaching method**. This creates an [unstructured document processing model](document-understanding-overview.md).
+- **Teaching method** – This creates an [unstructured document processing model](document-understanding-overview.md).
 
-- **Freeform selection method**. This creates a [freeform document processing model](freeform-document-processing-overview.md).
+- **Freeform selection method** – This creates a [freeform document processing model](freeform-document-processing-overview.md).
 
-- **Layout method**. This creates a [structured document processing model](form-processing-overview.md).
+- **Layout method** – This creates a [structured document processing model](form-processing-overview.md).
 
 Select one of the following tabs to continue with the custom model you want to use.
 
