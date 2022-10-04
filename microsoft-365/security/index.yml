@@ -39,14 +39,13 @@ highlightedContent:
       itemType: overview
       url: https://www.microsoft.com/en-us/security/business/threat-protection
 
-
 # productDirectory section (optional)
 productDirectory:
   title: Microsoft 365 Defender products and services # < 60 chars (optional)
   items:
     # Card
     - title: Microsoft 365 Defender
-      imageSrc: /office/media/icons/lightbulb-idea-capture-blue.png
+      imageSrc: /office/media/icons/education-tutorial-blue.svg
       links:
       - url: /microsoft-365/security/defender/microsoft-365-defender
         text: Overview
@@ -56,7 +55,7 @@ productDirectory:
         text: Set up an evaluation
     # Card
     - title: Microsoft Defender for Office 365
-      imageSrc: /microsoft-365/office/media/icons/lightbulb-idea-capture-blue.svg
+      imageSrc: /office/media/icons/education-tutorial-blue.svg
       links:
        - url: /microsoft-365/security/office-365-security/defender-for-office-365
          text: Overview
@@ -66,7 +65,7 @@ productDirectory:
          text: Set up an evaluation 
     # Card
     - title: Microsoft Defender Endpoint
-      imageSrc: /office/media/icons/security-blue.svg
+      imageSrc: /office/media/icons/education-tutorial-blue.svg
       links:
       - url: /microsoft-365/security/defender-endpoint/microsoft-defender-endpoint
         text: Overview  
@@ -76,7 +75,7 @@ productDirectory:
         text: Set up an evaluation   
     # Card
     - title: Microsoft Defender Vulnerability Management
-      imageSrc: /microsoft-365/office/media/icons/lightbulb-idea-capture-blue.png
+      imageSrc: /office/media/icons/education-tutorial-blue.svg
       links:
       - url: /microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management
         text: Overview
@@ -84,7 +83,7 @@ productDirectory:
         text: Get Started
     # Card
     - title: Microsoft Defender for Identity
-      imageSrc: /microsoft-365/office/media/icons/lightbulb-idea-capture-blue.svg
+      imageSrc: /office/media/icons/education-tutorial-blue.svg
       links:
        - url: /defender-for-identity/what-is
          text: Overview
@@ -94,7 +93,7 @@ productDirectory:
          text: Set up an evaluation
      # Card
     - title: Microsoft Defender for Cloud apps
-      imageSrc: /microsoft-365/office/media/icons/lightbulb-idea-capture-blue.svg
+      imageSrc: /office/media/icons/education-tutorial-blue.svg
       links:
       - url: /defender-cloud-apps/what-is-defender-for-cloud-apps
         text: Overview
@@ -102,6 +101,7 @@ productDirectory:
         text: Get Started
       - url: /microsoft-365/security/defender/eval-defender-mcas-overview
         text: Set up an evaluation
+
 # additionalContent section (optional)
 # Card with summary style
 additionalContent:
