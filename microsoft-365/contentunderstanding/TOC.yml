@@ -18,9 +18,9 @@
               href: model-types-overview.md 
             - name: Requirements and limitations 
               href: requirements-and-limitations.md  
-            - name: Create a model
+            - name: Create an enterprise model
               href: create-syntex-model.md
-            - name: Local models 
+            - name: Create a local model 
               href: create-local-model.md 
             - name: Manage your model
               items:
