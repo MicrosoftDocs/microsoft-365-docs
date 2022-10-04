@@ -487,7 +487,7 @@
 
 ## [Endpoint Attack Notifications](endpoint-attack-notifications.md)
 
-### [Ask Defender Experts](experts-on-demand.md)
+### [Experts on Demand](experts-on-demand.md)
 
 ## Reference
 ### [Understand threat intelligence concepts](threat-indicator-concepts.md)
