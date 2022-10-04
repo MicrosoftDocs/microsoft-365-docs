@@ -94,7 +94,7 @@ productDirectory:
          text: Set up an evaluation
      # Card
     - title: Microsoft Defender for Cloud apps
-      imageSrc: /microsoft-365/media/check-mark.png
+      imageSrc: none
       links:
       - url: /defender-cloud-apps/what-is-defender-for-cloud-apps
         text: Overview
