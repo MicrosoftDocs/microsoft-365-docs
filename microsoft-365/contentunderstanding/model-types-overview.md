@@ -80,8 +80,8 @@ If you don't need to build a custom model, you can use a [prebuilt model](prebui
 
 Prebuilt models include:
 
-- [Invoice processing](#invoices-model)
-- [Receipt processing](#receipts-model)
+- [Invoice processing](#invoice-processing)
+- [Receipt processing](#receipt-processing)
 
 Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization.
 
