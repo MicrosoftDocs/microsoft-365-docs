@@ -202,10 +202,10 @@ To specify the reason why the original attached messages were reported, messages
   - 3. X-Ms-Exchange-Organization-Network-Message-Id
   - 4. X-Ms-Exchange-Crosstenant-Id
 
-> [!NOTE]
-> TenantId in `X-Ms-Exchange-Crosstenant-Id` should be the same as the tenant.
->
-> `X-Microsoft-Antispam-Message-Info` should be a valid xmi.
+   > [!NOTE]
+   > TenantId in `X-Ms-Exchange-Crosstenant-Id` should be the same as the tenant.
+   >
+   > `X-Microsoft-Antispam-Message-Info` should be a valid xmi.
 
 - The Subject line (Envelope Title) of messages sent to the user submissions mailbox must start with one of the following prefix values:
   - `1|` or `Junk:`.
