@@ -46,7 +46,7 @@ Members of your compliance team who will create DLP policies need permissions to
     
 3. Use the **Choose Members** section to add members to the role group.
 
-Use the **View-Only DLP Compliance Management** role to create role group with view-only privileges to the DLP policies and DLP reports.
+Use the **View-Only DLP Compliance Management** role to create a role group with view-only privileges to the DLP policies and DLP reports.
 
 For more information, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
   
