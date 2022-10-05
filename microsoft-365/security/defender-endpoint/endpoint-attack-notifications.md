@@ -68,6 +68,7 @@ Endpoint Attack Notifications can be identified by:
 You can create rules to send email notifications for notification recipients. See [Configure alert notifications](configure-email-notifications.md) to create, edit, delete, or troubleshoot email notification, for details.
 
 
-### To proactively hunt threats across endpoints, Office 365, cloud applications, and identity, refer to:
-
+## Next steps
+#### Ask Defender Experts
+#### To proactively hunt threats across endpoints, Office 365, cloud applications, and identity, refer to:
 - [Microsoft Defender Experts for Hunting in Microsoft 365 Defender](../defender/defender-experts-for-hunting.md)
