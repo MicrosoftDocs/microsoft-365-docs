@@ -39,13 +39,12 @@ You can also choose the Custom template, which has no default rules, and configu
 
 Members of your compliance team who will create DLP policies need permissions to the Compliance Center. By default, your tenant admin will have access can give compliance officers and other people access. Follow these steps:
   
-1. Create a group in Microsoft 365 and add compliance officers to it.
-    
-2. Create a role group on the **Permissions** page of the Microsoft Purview compliance portal. 
+   
+1. Create a role group on the **Permissions** page of the Microsoft Purview compliance portal. 
 
-3. While creating the role group, use the **Choose Roles** section to add the following role to the role group: **DLP Compliance Management**.
+2. While creating the role group, use the **Choose Roles** section to add the following role to the role group: **DLP Compliance Management**.
     
-4. Use the **Choose Members** section to add the Microsoft 365 group you created before to the role group.
+3. Use the **Choose Members** section to add members to the role group.
 
 Use the **View-Only DLP Compliance Management** role to create role group with view-only privileges to the DLP policies and DLP reports.
 
