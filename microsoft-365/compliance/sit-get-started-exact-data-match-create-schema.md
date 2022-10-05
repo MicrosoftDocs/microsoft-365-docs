@@ -11,7 +11,8 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -20,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Create the schema for exact data match based sensitive information types
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Applies to
 
@@ -65,7 +68,7 @@ You can use this wizard to help simplify the schema file creation process.
     1. **Enter custom delimiters and punctuation for this field**
 
    > [!IMPORTANT]
-   > At least one, but no more than five of your schema fields must be designated as searchable.
+   > At least one, but no more than ten of your schema fields must be designated as searchable.
 
 7. Choose **Save**. Your schema will now be listed and available for use.
 

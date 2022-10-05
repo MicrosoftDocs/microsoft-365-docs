@@ -6,9 +6,10 @@ author: samanro
 manager: bcarter
 ms.audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-collaboration
 - M365-security-compliance
 ms.custom:
@@ -33,9 +34,9 @@ Use the following posters to start envisioning what your organization can do wit
 
 | Item | Description |
 |:-----|:-----|
-|[![Microsoft 365 for frontline worker scenarios.](/microsoft-365/frontline/media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Updated September 2022   |This poster provides an overview of the scenarios you can implement for your frontline workforce to increase communications, enhance wellbeing and engagement, train and onboard your workers, and manage your workforce and operations.<br/><br/>**Related solution guides** <br/> <ul><li>[Microsoft 365 for frontline workers](/microsoft-365/frontline/flw-overview)|
-|[![Microsoft 365 for frontline workers: Healthcare scenarios.](/microsoft-365/frontline/media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Updated September 2022   |This poster provides an overview of the scenarios you can implement for your frontline workforce in a healthcare setting.<br/><br/>**Related solution guides** <br/> <ul><li>[Get started with Microsoft 365 for healthcare organizations](/microsoft-365/frontline/teams-in-hc)|
-|[![Microsoft 365 for frontline workers: Retail scenarios.](/microsoft-365/frontline/media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Updated September 2022   |This poster provides an overview of the scenarios you can implement for your frontline workforce in a retail setting.<br/><br/>**Related solution guides** <br/> <ul><li>[Get started with Microsoft 365 for retail organizations](/microsoft-365/frontline/teams-for-retail-landing-page)|
+|[![Microsoft 365 for frontline worker scenarios.](/microsoft-365/frontline/media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Updated September 2022   |**Frontline worker scenarios**<br><br>This poster provides an overview of the scenarios you can implement for your frontline workforce to increase communications, enhance wellbeing and engagement, train and onboard your workers, and manage your workforce and operations.<br/><br/>**Related solution guides** <br/> <ul><li>[Microsoft 365 for frontline workers](/microsoft-365/frontline/flw-overview)|
+|[![Microsoft 365 for frontline workers: Healthcare scenarios.](/microsoft-365/frontline/media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Updated September 2022   |**Healthcare scenarios**<br><br>This poster provides an overview of the scenarios you can implement for your frontline workforce in a healthcare setting.<br/><br/>**Related solution guides** <br/> <ul><li>[Get started with Microsoft 365 for healthcare organizations](/microsoft-365/frontline/teams-in-hc)|
+|[![Microsoft 365 for frontline workers: Retail scenarios.](/microsoft-365/frontline/media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Updated September 2022   |**Retail scenarios**<br><br>This poster provides an overview of the scenarios you can implement for your frontline workforce in a retail setting.<br/><br/>**Related solution guides** <br/> <ul><li>[Get started with Microsoft 365 for retail organizations](/microsoft-365/frontline/teams-for-retail-landing-page)|
 
 ## Corporate communications with Microsoft 365 — a Contoso case study
 Employee engagement is a significant contributor to workplace satisfaction, retention, and productivity at any organization. Across Microsoft 365, there are multiple ways to communicate and engage your audience. 

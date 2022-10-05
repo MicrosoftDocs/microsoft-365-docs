@@ -18,8 +18,9 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.subservice: mde
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Frequently asked questions on tamper protection

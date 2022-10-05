@@ -16,8 +16,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - tier1
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -40,13 +40,13 @@ With the urgency of protecting your organization and its data from attackers, yo
 
 The content is structured into three different knowledge levels, with multiple modules: Fundamentals, Intermediate, and Expert. Each level includes a knowledge check to test your understanding of the material.
 
-## Microsoft Learn learning paths
+## Learning paths
 
-Use these Microsoft Learn learning paths and their modules to build an understanding of Microsoft 365 Defender and Microsoft Defender for Endpoint, one module and unit at a time.
+Use these learning paths and their modules to build an understanding of Microsoft 365 Defender and Microsoft Defender for Endpoint, one module and unit at a time.
 
- - [Detect and respond to cyber attacks with Microsoft 365 Defender](/learn/paths/defender-detect-respond/)
+ - [Detect and respond to cyber attacks with Microsoft 365 Defender](/training/paths/defender-detect-respond/)
 
- - [Secure your organization with Microsoft Defender for Endpoint](/learn/paths/defender-endpoint-fundamentals/)  
+ - [Secure your organization with Microsoft Defender for Endpoint](/training/paths/defender-endpoint-fundamentals/)  
 
 
 ## Learning paths in the Microsoft 365 Defender portal learning hub
@@ -67,4 +67,3 @@ One of the best ways to learn is by configuring and testing Microsoft 365 Defend
 ## Simulating an attack
 
 To test your security staff on their ability to detect and respond to a cyberattack, use a simulated attack. See [Simulate attacks with the Microsoft 365 Defender portal](eval-defender-investigate-respond-simulate-attack.md#simulate-attacks-with-the-microsoft-365-defender-portal) for more information. 
-

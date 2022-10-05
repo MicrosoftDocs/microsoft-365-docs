@@ -1,10 +1,11 @@
 ---
-title: Attack surface reduction rules reporting
-description: Provides information about Attack surface reduction (ASR) rules detections, configuration, block threats, and methods to enable basic rules and exclusions.
+title: Attack surface reduction (ASR) rules reporting
+description: Provides information about attack surface reduction (ASR) rules detections, configuration, block threats, and methods to enable three standard rules and exclusions.
 keywords: Attack surface reduction rules, ASR, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit rules, antiexploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules, ASR rule description
-ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
@@ -13,13 +14,15 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.date: 08/25/2022
+search.appverid: met150
 ---
 
-# Attack surface reduction rules report
+# Attack surface reduction (ASR) rules report
 
 **Applies to:**
 
@@ -40,7 +43,7 @@ The attack surface reduction (ASR) rules report provides information about the _
 
 - detected threats
 - blocked threats
-- devices that don't use basic rules to block threats
+- devices that aren't configured to use the standard protection rules to block threats
 
 Additionally, this report provides an easy-to-use interface that enables you to:
 
@@ -55,11 +58,11 @@ For more information about individual attack surface reduction rules, see [Attac
 ## Prerequisites
 
 > [!IMPORTANT]
-> For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in Attack surface reduction rules reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
+> For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in the **Attack surface reduction rules report**, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
 ## Report access permissions
 
-To access the Attack surface reduction rules report in the Microsoft 365 Security dashboard, the following permissions are required:
+To access the **Attack surface reduction rules report** in the Microsoft 365 Security dashboard, the following permissions are required:
 
 | Permission type | Permission | Permission display name |
 |:---|:---|:---|
@@ -88,7 +91,7 @@ To navigate to the summary cards for the attack surface reduction rules report
 
 The summary report cards for ASR rules are shown in the following figure.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-summary.png" alt-text="Shows the Attack surface reduction (ASR) rules report summary cards" lightbox="images/attack-surface-reduction-rules-report-summary.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-summary.png" alt-text="Shows the ASR rules report summary cards" lightbox="images/attack-surface-reduction-rules-report-summary.png":::
 
 ## ASR rules report summary cards
 
@@ -103,46 +106,46 @@ Shows a summary of the number of detected threats blocked by ASR rules.
 
 Provides two 'action' buttons:
 
-- View detections - opens the Attack surface reduction rules > main Detections tab
-- Add exclusions - Opens the Attack surface reduction rules > main Exclusions tab
+- View detections - opens the **Attack surface reduction rules** > main **Detections** tab
+- Add exclusions - Opens the **Attack surface reduction rules** > main **Exclusions** tab
 
-:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-card.png" alt-text="Shows the Attack surface reduction (ASR) rules report summary detections card." lightbox="images/attack-surface-reduction-rules-report-main-detections-card.png":::
+:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-card.png" alt-text="Shows the ASR rules report summary detections card." lightbox="images/attack-surface-reduction-rules-report-main-detections-card.png":::
 
 Clicking on the **ASR rules detections** link at the top of the card also opens the main [Attack surface reduction rules Detections tab](#attack-surface-reduction-rules-main-detections-tab).
 
 ### ASR rules configuration summary card
 
-**The top section** focuses on three recommended rules, which protect against common attack techniques. This card shows current-state information about the computers in your organization that have the following [Three basic attack surface reduction \(ASR\) rules](#three-basic-asr-rules) set in **Block mode**, **Audit mode**, or **off** (not configured).The **Protect devices** button will show full configuration details for only the three rules; customers can quickly take action to enable these rules.
+**The top section** focuses on three recommended rules, which protect against common attack techniques. This card shows current-state information about the computers in your organization that have the following [Three \(ASR\) standard protection rules](#simplified-standard-protection-option) set in **Block mode**, **Audit mode**, or **off** (not configured).The **Protect devices** button will show full configuration details for only the three rules; customers can quickly take action to enable these rules.
 
 **The bottom section** surfaces six rules based on the number of unprotected devices per rule. The “View configuration” button surfaces all configuration details for all ASR rules. The “Add exclusion” button shows the add exclusion page with all detected file/process names listed for Security Operation Center (SOC) to evaluate. The **Add exclusion** page is linked to Microsoft Endpoint Manager (MEM).
 
 Provides two 'action' buttons:
 
-- View configuration - opens the Attack surface reduction rules > main Detections tab
-- Add exclusions - Opens the Attack surface reduction rules > main Exclusions tab
+- View configuration - opens the **Attack surface reduction rules** > main **Detections** tab
+- Add exclusions - Opens the **Attack surface reduction rules** > main **Exclusions** tab
 
-:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-configuration-card.png" alt-text="Shows the Attack surface reduction (ASR) rules report summary configuration card." lightbox="images/attack-surface-reduction-rules-report-main-detections-configuration-card.png":::
+:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-configuration-card.png" alt-text="Shows the ASR rules report summary configuration card." lightbox="images/attack-surface-reduction-rules-report-main-detections-configuration-card.png":::
 
 Clicking on the **ASR rules configuration** link at the top of the card also opens the main [Attack surface reduction rules Configuration tab](#attack-surface-reduction-rules-main-configuration-tab).
 
-#### Three basic ASR rules
+#### Simplified standard protection option
 
-This card provides a button to **Protect devices** with the three basic rules. At minimum, Microsoft recommends that you enable the three basic attack surface reduction rules:
+The configuration summary card provides a button to **Protect devices** with the three standard protection rules. At minimum, Microsoft recommends that you enable these three attack surface reduction standard protection rules:
 
 - [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem)
 - [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
 - [Block persistence through Windows Management Instrumentation (WMI) event subscription](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
 
-To enable the three basic rules:
+To enable the three standard protection rules:
 
 1. Select **Protect devices**. The main **Configuration** tab opens.
-1. On the **Configuration** tab, **Basic rules** automatically toggles from **All rules** to **Basic rules** enabled.
-1. In the **Devices** list, select the devices for which you want the basic rules to apply, and then select **Save**.
+1. On the **Configuration** tab, **Basic rules** automatically toggles from **All rules** to **Standard protection rules** enabled.
+1. In the **Devices** list, select the devices for which you want the standard protection rules to apply, and then select **Save**.
 
 This card has two other navigation buttons:
 
-- **View configuration** - Opens the Attack surface reduction rules > main Configuration tab.
-- **Add exclusions** - Opens the Attack surface reduction rules > main Exclusions tab.
+- **View configuration** - Opens the **Attack surface reduction rules** > main **Configuration** tab.
+- **Add exclusions** - Opens the **Attack surface reduction rules** > main **Exclusions** tab.
 
 Clicking on the **ASR rules configuration** link at the top of the card also opens the main [Attack surface reduction rules Configuration tab](#attack-surface-reduction-rules-main-configuration-tab).
 
@@ -158,19 +161,18 @@ While the ASR rules report summary cards are useful for getting quick summary of
 
  Search capability is added to **Detection**, **Configuration**, and **Add exclusion** main tabs. With this capability, you can search by using device ID, file name, or process name.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search.png" alt-text="Shows the Attack surface reduction (ASR) rules report search feature." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search.png" alt-text="Shows the ASR rules report search feature." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search.png":::
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png" alt-text="Shows the Attack surface reduction (ASR) rules report search feature on the configuration tab." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png" alt-text="Shows the ASR rules report search feature on the configuration tab." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png":::
 
 ### Filtering
 
 Filtering provides a way for you to specify what results are returned:
 
-- **Basic rules**  enables you to limit results to the [three basic ASR rules](#three-basic-asr-rules). By default, this filter is set to **false**.
 - **Date**  enables you to specify a date range for data results.
 - **Filters**
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-filtering.png" alt-text="Shows the Attack surface reduction (ASR) rules report filtering feature" lightbox="images/attack-surface-reduction-rules-report-main-detections-filtering.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-filtering.png" alt-text="Shows the ASR rules report filtering feature" lightbox="images/attack-surface-reduction-rules-report-main-detections-filtering.png":::
 
 ### Attack surface reduction rules main detections tab
 
@@ -178,7 +180,7 @@ Filtering provides a way for you to specify what results are returned:
 - **Blocked Detections** Shows how many threat detections were blocked by rules set in _Block_ mode.
 - **Large, consolidated graph** Shows blocked and audited detections.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-tab.png" alt-text="Shows the Attack surface reduction (ASR) rules report main detections tab, with _Audit detections_ and _Blocked detections_ outlined." lightbox="images/attack-surface-reduction-rules-report-main-detections-tab.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-tab.png" alt-text="Shows the ASR rules report main detections tab, with _Audit detections_ and _Blocked detections_ outlined." lightbox="images/attack-surface-reduction-rules-report-main-detections-tab.png":::
 
 The graphs provide detection data over the displayed date range, with the capability to hover over a specific location to gather date-specific information.
 
@@ -188,7 +190,7 @@ The bottom section of the report lists detected threats - on a per-device basis 
 |:---|:---|
 | Detected file | The file determined to contain a possible or known threat |
 | Detected on | The date the threat was detected |
-| Blocked\/Audited? | Whether the detecting rule was in Block or Audit mode  |
+| Blocked\/Audited? | Whether the detecting rule for the specific event was in Block or Audit mode |
 | Rule | Which rule detected the threat |
 | Source app | The application that made the call to the offending "detected file" |
 | Device | The name of the device on which the Audit or Block event occurred |
@@ -202,7 +204,7 @@ For more information about ASR rule audit and block modes, see [Attack surface r
 
 The “Detection” main page has a list of all detections (files/processes) in the last 30 days. Select on any of the detections to open with drill-down capabilities.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-flyout.png" alt-text="Shows the Attack surface reduction (ASR) rules report main detections tab flyout" lightbox="images/attack-surface-reduction-rules-report-main-detections-flyout.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-flyout.png" alt-text="Shows the ASR rules report main detections tab flyout" lightbox="images/attack-surface-reduction-rules-report-main-detections-flyout.png":::
 
 The **Possible exclusion and impact** section provides impact of the selected file or process. You can:
 
@@ -218,7 +220,7 @@ For more information about Advanced hunting, see [Proactively hunt for threats w
 
 ### Attack surface reduction rules main Configuration tab
 
-The Attack surface reduction rules main Configuration tab provides summary and per-device ASR rules configuration details. There are three main aspects to the Configuration tab:
+The ASR rules main **Configuration** tab provides summary and per-device ASR rules configuration details. There are three main aspects to the Configuration tab:
 
 **Basic rules** Provides a method to toggle results between **Basic rules** and **All Rules**. By default, **Basic rules** is selected.
 
@@ -240,7 +242,7 @@ The Attack surface reduction rules main Configuration tab provides summary and p
 
 These elements are shown in the following figure.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-configuration-tab.png" alt-text="Shows the Attack surface reduction (ASR) rules report main configuration tab" lightbox="images/attack-surface-reduction-rules-report-main-configuration-tab.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-configuration-tab.png" alt-text="Shows the ASR rules report main configuration tab" lightbox="images/attack-surface-reduction-rules-report-main-configuration-tab.png":::
 
 To enable ASR rules:
 
@@ -252,7 +254,7 @@ The **Configuration** tab and _add rule_ flyout are shown in the following image
 > [NOTE!]
 > If you have devices that require that different ASR rules be applied, you should configure those devices individually.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png" alt-text="Shows the Attack surface reduction (ASR) rules fly-out to add ASR rules to devices" lightbox="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png" alt-text="Shows the ASR rules fly-out to add ASR rules to devices" lightbox="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png":::
 
 ### Attack surface reduction rules Add exclusions tab
 
@@ -262,7 +264,7 @@ The **Add exclusions** tab presents a ranked list of detections by file name and
 - **Detections** The total number of detected events for named file. Individual devices can trigger multiple ASR rules events.
 - **Devices** The number of devices on which the detection occurred.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-exclusion-tab.png" alt-text="Shows the Attack surface reduction (ASR) rules report add exclusions tab" lightbox="images/attack-surface-reduction-rules-report-exclusion-tab.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-exclusion-tab.png" alt-text="Shows the ASR rules report add exclusions tab" lightbox="images/attack-surface-reduction-rules-report-exclusion-tab.png":::
 
 > [!IMPORTANT]
 > Excluding files or folders can severely reduce the protection provided by ASR rules. Excluded files are allowed to run, and no report or event will be recorded.
@@ -283,5 +285,10 @@ The Add exclusion page has two buttons for actions that can be used on any detec
 
 ## See also
 
-- [Enable attack surface reduction rules](attack-surface-reduction-rules-deployment-implement.md)
+- [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
+- [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+- [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
+- [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
+- [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Attack surface reduction \(ASR\) rules report](attack-surface-reduction-rules-report.md)
 - [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)

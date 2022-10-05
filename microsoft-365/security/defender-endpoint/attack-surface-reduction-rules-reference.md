@@ -1,11 +1,12 @@
 ---
 title: Attack surface reduction rules reference
-description: Lists details about attack surface reduction rules on a per-rule basis.
-keywords: Attack surface reduction rules, ASR, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit rules, antiexploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules, ASR rule description
-ms.prod: m365-security
+description: Lists details about Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules on a per-rule basis.
+keywords: Microsoft Attack surface reduction rules, Microsoft Defender for Endpoint ASR rules, ASR rules list, ASR, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit rules, antiexploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules, ASR rule description
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
@@ -13,13 +14,15 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
 ms.topic: article
-ms.collection: M365-security-compliance
-ms.date: 08/10/2022
+ms.collection: 
+- m365-security
+- tier2
+- ms.date: 08/10/2022
+search.appverid: met150
 ---
 
-# Attack surface reduction rules reference
+# Attack surface reduction (ASR) rules reference
 
 **Applies to:**
 
@@ -32,16 +35,16 @@ ms.date: 08/10/2022
 
 - Windows
 
-This article provides information about attack reduction rules:
+This article provides information about Microsoft Defender for Endpoint attack surface reduction (ASR) rules:
 
-- [Supported operating system versions](#supported-operating-systems)
-- [Supported configuration management systems](#supported-configuration-management-systems)
-- [Per-rule alert and notification details](#per-rule-alert-and-notification-details)
+- [ASR rules supported operating system versions](#asr-rules-supported-operating-systems)
+- [ASR rules supported configuration management systems](#asr-rules-supported-configuration-management-systems)
+- [Per ASR rule alert and notification details](#per-asr-rule-alert-and-notification-details)
 - [ASR rule to GUID matrix](#asr-rule-to-guid-matrix)
 - [ASR rule modes](#asr-rule-modes)
 - [Per-rule-descriptions](#per-rule-descriptions)
 
-## Supported operating systems
+## ASR rules supported operating systems
 
 The following table lists the supported operating systems for rules that are currently released to general availability. The rules are listed alphabetical order in this table.
 
@@ -76,7 +79,7 @@ The following table lists the supported operating systems for rules that are cur
 
 (<a id="fn1">3</a>) Version and build number apply only to Windows&nbsp;10.
 
-## Supported configuration management systems
+## ASR rules supported configuration management systems
 
 Links to information about configuration management system versions referenced in this table are listed below this table.
 
@@ -106,7 +109,7 @@ Links to information about configuration management system versions referenced i
 - [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM is now Microsoft Endpoint Configuration Manager._
 
-## Per rule alert and notification details
+## Per ASR rule alert and notification details
 
 Toast notifications are generated for all rules in Block mode. Rules in any other mode won't generate toast notifications
 
@@ -542,3 +545,13 @@ Advanced hunting action type:
 - AsrRansomwareBlocked
 
 Dependencies: Microsoft Defender Antivirus, Cloud Protection
+
+## See also
+
+- [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
+- [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+- [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
+- [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
+- [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Attack surface reduction \(ASR\) rules report](attack-surface-reduction-rules-report.md)
+- [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)

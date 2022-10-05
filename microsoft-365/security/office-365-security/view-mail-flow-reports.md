@@ -15,11 +15,11 @@ search.appverid:
   - MOE150
 ms.assetid: 
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Admins can learn about the mail flow reports that are available in the Reports dashboard in the Security & Compliance Center.
 ms.custom:
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # View mail flow reports in the Reports dashboard in Security & Compliance Center
@@ -109,12 +109,3 @@ For more information, see [Permissions in the Security & Compliance Center](perm
 > [!NOTE]
 > Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
-## Related topics
-
-[Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
-
-[Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md)
-
-[View email security reports in the Security & Compliance Center](view-email-security-reports.md)
-
-[View reports for Microsoft Defender for Office 365](view-reports-for-mdo.md)

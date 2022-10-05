@@ -25,24 +25,24 @@ productDirectory:
   items:
     # Card
     - title: Watch
-      imageSrc: https://docs.microsoft.com/office/media/icons/video-play.svg
+      imageSrc: /office/media/icons/video-play.svg
       summary: Top five benefits of Microsoft 365 Business Premium.
       url: https://aka.ms/M365BPvideo
     # Card
     - title: What's new?
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
+      imageSrc: /office/media/icons/get-started-blue.svg
       summary: Learn about new Defender for Business capabilities in Business Premium and Microsoft 365 Lighthouse.
       url: https://aka.ms/SMBsecurityFebBlog
     # Card
     - title: Get the free partner kit
-      imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+      imageSrc: /office/media/icons/education-tutorial-blue.svg
       summary: Practical guidance and go to market resources for partners for securing hybrid work.
       url: https://aka.ms/SMBSecurityKit
     # Card
     - title: Join the partner webinar series
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+      imageSrc: /office/media/icons/education-tutorial-blue.svg
       summary: Learn how to drive upsell and grow your business with Microsoft 365 Business Premium, Microsoft Defender for Business, and Microsoft 365 Lighthouse.
       url: https://aka.ms/M365MDBseries 
 # conceptualContent section (optional)
@@ -124,7 +124,7 @@ conceptualContent:
         - url: https://partner.microsoft.com
           itemType: overview
           text: Microsoft Partner Network 
-        - url: https://docs.microsoft.com/partner-center/overview
+        - url: /partner-center/overview
           itemType: overview
           text: Get started with Partner Center
 
@@ -193,6 +193,12 @@ conceptualContent:
   # Card
     - title: How do I...
       links:
+        - url: ../admin/security-and-compliance/secure-your-business-data.md
+          itemType: how-to-guide
+          text: See top 10 ways to secure my business
+        - url: ../business-premium/m365bp-trial-playbook-microsoft-business-premium.md
+          itemType: how-to-guide
+          text: User trial guide - Microsoft 365 Business Premium
         - url: ../admin/manage/find-your-partner-or-reseller.md
           itemType: how-to-guide
           text: Find a Microsoft partner to help my business
@@ -205,5 +211,3 @@ conceptualContent:
         - url: ../admin/get-help-support.md
           itemType: how-to-guide
           text: Contact support for Microsoft 365
-
-

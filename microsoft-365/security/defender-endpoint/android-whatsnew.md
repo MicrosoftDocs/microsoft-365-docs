@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: reference
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # What's new in Microsoft Defender for Endpoint on Android
@@ -31,9 +34,12 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 >
 > If users can't access the play store, the app can be updated through the company portal. 
 
+## Microsoft Defender for Endpoint on Company-owned personally enabled devices
+MDE is now generally available on AE COPE devices. Enterprises can onboard devices on COPE mode and push MDE to user’s devices through the [Microsoft Endpoint Manager Admin center](https://endpoint.microsoft.com). With this support, Android Enterprise COPE devices will get the full capabilities of our offering on Android including phishing and web protection, malware scanning, Network protection (preview) and additional breach prevention through integration with Microsoft Endpoint Manager and Conditional Access. Read the announcement [here](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-is-now-available-on-android/ba-p/3626100).
+
 ## Privacy Controls
 
-Microsoft Defender for Endpoint on Android enables Privacy Controls for both the Admins and the End Users. This includes the controls for enrolled (MDM) as well as unenrolled (MAM) devices (in preview). Admins can configure the privacy in the alert report while End Users can configure the information shared to their organization. For more information, see [privacy controls(MDM)](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) and [privacy controls (MAM)](/microsoft-365/security/defender-endpoint/android-configure-mam#configure-privacy-controls).
+Microsoft Defender for Endpoint on Android enables Privacy Controls for both the Admins and the End Users. This includes the controls for enrolled (MDM) as well as unenrolled (MAM) devices. Admins can configure the privacy in the alert report while End Users can configure the information shared to their organization. For more information, see [privacy controls(MDM)](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) and [privacy controls (MAM)](/microsoft-365/security/defender-endpoint/android-configure-mam#configure-privacy-controls).
 
 ## Optional Permissions and Disable Web Protection
 
