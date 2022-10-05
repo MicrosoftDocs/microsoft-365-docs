@@ -42,9 +42,6 @@ Endpoint Attack Notifications (previously referred to as Microsoft Threat Expert
 ![Screenshot of the Endpoint Attack Notifications alert](../../media/defender-endpoint/endpoint-attack-notification-alert.png)
 
 ## Apply for Endpoint Attack Notifications
-> [!NOTE]
-> Discuss the eligibility requirements with your Microsoft Technical Service provider and account team before you apply to the managed threat hunting service. Endpoint Attack Notifications is currently not available in Microsoft 365 for U.S Government clouds.
-
 If you're a Microsoft Defender for Endpoint customer, you can apply for Endpoint Attack Notifications. Go to **Settings** \> **Endpoints** \> **General** \> **Advanced features** \> **Endpoint Attack Notifications** to apply. Once accepted, you'll get the benefits of Endpoint Attack Notifications.
 
 ![How to enable Endpoint Attack Notifications in 365 Defender Portal](../../media/defender-endpoint/enable-endpoint-attack-notifications.png)
