@@ -1,6 +1,6 @@
 ---
 title: Data Residency for SharePoint Online and OneDrive for Business
-description: 
+description: Data Residency for SharePoint Online and OneDrive for Business
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/20/2022
+ms.date: 10/5/2022
 ms.reviewer: 
 ms.custom:
 - it-pro
@@ -25,6 +25,7 @@ ms.collection:
 *For current language please refer to the Privacy and Security Product Terms <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank">**webpage**</a> and view the section titled “Location of Customer Data at Rest for Core Online Services”.*
 
 **Commitment:** 
+
 >[!NOTE]
 >Office 365 Services. If Customer provisions its tenant in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, or the United States, Microsoft will store the following Customer Data at rest only within that Geo (2) SharePoint Online site content and the files stored within that site, and (3) files uploaded to OneDrive for Business.
 
@@ -49,7 +50,6 @@ Required Conditions:
 **Commitment:**
 The following customer data will be stored in the related Geography:
 SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business.***TODO- ADD TEXT FROM ROB WHEN DONE***
-
 
 ## **Multi-Geo Capabilities in SharePoint Online / OneDrive for Business**
 
@@ -114,11 +114,9 @@ To remove the allocated storage quota for a *Geography* location, set `StorageQu
 Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB 0
 ```
 
+### Move a OneDrive site
 
-
-### **	Move a OneDrive site**
-
-#### **Move a OneDrive site to a different Geography location**
+#### Move a OneDrive site to a different Geography location
 
 With OneDrive *Geography* move, you can move a user's OneDrive to a different *Geography* location. OneDrive *Geography* move is performed by the SharePoint Online administrator or the Microsoft 365 global administrator. Before you start a OneDrive *Geography* move, be sure to notify the user whose OneDrive is being moved and recommend they close all files for the duration of the move. (If the user has a document open using the Office client during the move, then upon move completion the document will need to be saved to the new location.) The move can be scheduled for a future time, if desired.
 
@@ -129,7 +127,7 @@ During OneDrive *Geography* move window (about 2-6 hours) the user's OneDrive is
 The procedures in this article require the [Microsoft SharePoint Online PowerShell Module](https://www.microsoft.com/download/details.aspx?id=35588).
 
 
-#### **Communicating to your users**
+#### Communicating to your users
 
 When moving OneDrive sites between *Geography* locations, it's important to communicate to your users what to expect. This can help reduce user confusion and calls to your help desk. Email your users before the move and let them know the following information:
 -When the move is expected to start and how long it is expected to take
@@ -140,7 +138,7 @@ When moving OneDrive sites between *Geography* locations, it's important to comm
 
 Be sure to send your users an email when the move has successfully completed informing them that they can resume working in OneDrive.
 
-#### **Scheduling OneDrive site moves**
+#### Scheduling OneDrive site moves
 
 You can schedule OneDrive site moves in advance (described later in this article). We recommend that you start with a small number of users to validate your workflows and communication strategies. Once you are comfortable with the process, you can schedule moves as follows:
 -You can schedule up to 4,000 moves at a time.
