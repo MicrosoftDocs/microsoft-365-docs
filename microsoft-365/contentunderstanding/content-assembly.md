@@ -26,17 +26,20 @@ You upload an existing document to create a modern template, and then use that t
 > [!NOTE]
 > You must be a licensed SharePoint Syntex user to access and use content assembly capabilities. You also must have permissions to manage SharePoint lists.
 
-## Supported file types
+
+## Requirements and limitations
+
+### Supported file types
 
 Only Microsoft Word documents (.docx/.doc extension) are currently supported for creating a template.
 
-## File limitations
+### File limitations
 
 - The Word document you want to use as a modern template shouldn't include comments or have Track Changes enabled.
 
 - Because content controls are used in Word to create fields for the modern template, make sure any text placeholders for images aren't text-wrapped. If the document already contains content controls, remove them before you use it to create a modern template.
 
-## Current release limitations
+### Current release limitations
 
 - The template and the document are associated with one document library. To use the template in another document library, you'll need to create the template again in that document library.
 
