@@ -32,7 +32,7 @@ search.appverid: met150
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!NOTE]
-> As of August 2022, the Experts on Demand option to **Consult a threat expert** has been rebranded to **Ask Defender Experts**. If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager.
+> As of August 2022, the Experts on Demand option to **Consult a threat expert** has been rebranded to **Ask Defender Experts**. If you're interested to explore the service beyond your current license, refer to [Microsoft Defender Experts for Hunting](https://learn.microsoft.com/en-us/microsoft-365/security/defender/defender-experts-for-hunting). [Experts on Demand](https://learn.microsoft.com/en-us/microsoft-365/security/defender/onboarding-defender-experts-for-hunting?view=o365-worldwide#collaborate-with-experts-on-demand) is included in Microsoft Defender Experts for Hunting subscription.
 
 Customers can engage our security experts directly from within Microsoft 365 Defender portal to get their response. Experts provide insights needed to better understand the complex threats affecting your organization, from alert inquiries, potentially compromised devices, root cause of a suspicious network connection, to more threat intelligence regarding ongoing advanced persistent threat campaigns. With this capability, you can:
 
