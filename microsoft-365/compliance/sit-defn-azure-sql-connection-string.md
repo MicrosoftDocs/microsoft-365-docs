@@ -1,5 +1,5 @@
 ---
-title: "Azure SQL connection string entity definition (preview)"
+title: "Azure SQL connection string entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "Azure SQL connection string sensitive information type entity definition."
 ---
 
-# Azure SQL connection string (preview)
+# Azure SQL connection string
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

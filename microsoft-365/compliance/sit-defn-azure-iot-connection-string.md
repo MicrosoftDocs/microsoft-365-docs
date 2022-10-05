@@ -1,5 +1,5 @@
 ---
-title: "Azure IoT connection string entity definition (preview)"
+title: "Azure IoT connection string entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "Azure IoT connection string sensitive information type entity definition."
 ---
 
-# Azure IoT connection string (preview)
+# Azure IoT connection string
 
 ### Format
 

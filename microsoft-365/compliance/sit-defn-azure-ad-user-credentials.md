@@ -1,5 +1,5 @@
 ---
-title: "Azure AD user credentials entity definition (preview)"
+title: "Azure AD user credentials entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "Azure AD user credentials sensitive information type entity definition."
 ---
 
-# Azure AD user credentials (preview)
+# Azure AD user credentials
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

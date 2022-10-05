@@ -1,5 +1,5 @@
 ---
-title: "Azure Cognitive search API key entity definition (preview)"
+title: "Azure Cognitive search API key entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "Azure Cognitive search API key sensitive information type entity definition."
 ---
 
-# Azure Cognitive Search API key (preview) 
+# Azure Cognitive Search API key 
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

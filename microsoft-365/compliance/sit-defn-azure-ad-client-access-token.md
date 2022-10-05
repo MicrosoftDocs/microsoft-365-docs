@@ -1,5 +1,5 @@
 ---
-title: "Azure AD client access token entity definition (preview)"
+title: "Azure AD client access token entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "Azure AD client access token sensitive information type entity definition."
 ---
 
-# Azure AD client access token (preview)
+# Azure AD client access token
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

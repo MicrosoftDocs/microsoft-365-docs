@@ -1,5 +1,5 @@
 ---
-title: "Azure Batch Shared Access Key entity definition (preview)"
+title: "Azure Batch Shared Access Key entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "Azure Batch Shared Access Key sensitive information type entity definition."
 ---
 
-# Azure Batch Shared Access Key (preview)
+# Azure Batch Shared Access Key
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

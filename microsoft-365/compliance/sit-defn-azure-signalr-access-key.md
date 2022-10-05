@@ -1,5 +1,5 @@
 ---
-title: "Azure SignalR access key entity definition (preview)"
+title: "Azure SignalR access key entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "Azure SignalR access key sensitive information type entity definition."
 ---
 
-# Azure SignalR access key (preview)  
+# Azure SignalR access key  
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
