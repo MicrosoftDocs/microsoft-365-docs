@@ -56,15 +56,11 @@ You can partner with Microsoft Defender Experts who can be engaged directly from
 
 2. From the upper right-hand menu, click the **?** icon. Then, select **Ask Defender Experts**
 
-![The Microsoft Ask Defender Experts trial subscription page](../../media/mte/flyout-screen-trial-subscription.png)
-
-A flyout screen opens. The following screen shows when you are on a trial subscription.
-
 The **Inquiry topic** field is pre-populated with the link to the relevant page for your investigation request. For example, a link to the incident, alert, or device details page that you were at when you made the request.
 
-3. In the next field, provide enough information to give the Microsoft Security Experts enough context to start the investigation.
+3. In the next field, provide enough information to give Microsoft Defender Experts enough context to start the investigation.
 
-4. Enter the email address that you'd like to use to correspond with Microsoft Security Experts.
+4. Enter the email address that you'd like to use to correspond with Microsoft Defender Experts.
 
 > [!NOTE]
 > If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager.
@@ -96,7 +92,7 @@ Watch this video for a quick overview of the Microsoft Services Hub.
 
 - Can your incident response team help us address the Endpoint Attack Notifications that we got?
 - I received this Endpoint Attack Notifications from Microsoft Security Experts. We don't have our own incident response team. What can we do now, and how can we contain the incident?
-- I received an Endpoint Attack Notifications from Microsoft Security Experts. What data can you provide to us that we can pass on to our incident response team?
+- I received an Endpoint Attack Notifications from Microsoft Defender Experts. What data can you provide to us that we can pass on to our incident response team?
 
   > [!NOTE]
   > Ask Defender Experts is a managed cybersecurity hunting service and not an incident response service. However, you can engage with your own incident response team to address issues that require an incident response. If you don't have your own incident response team and would like Microsoft's help, you can engage with the CSS Cybersecurity Incident Response Team (CIRT). They can open a ticket to help address your inquiry.
@@ -105,7 +101,7 @@ Watch this video for a quick overview of the Microsoft Services Hub.
 
 ### Receive a progress report about your managed hunting inquiry
 
-Response from Microsoft Security Experts varies according to your inquiry. They'll email a progress report to you about your **Ask Defender Experts** inquiry within two days, to communicate the investigation status from the following categories:
+Response from Microsoft Defender Experts varies according to your inquiry. They'll email a progress report to you about your **Ask Defender Experts** inquiry within two days, to communicate the investigation status from the following categories:
 
 - More information is needed to continue with the investigation
 - A file or several file samples are needed to determine the technical context
