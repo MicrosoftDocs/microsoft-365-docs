@@ -40,6 +40,8 @@ Yammer user messages and community messages can be deleted by using retention po
 
 > [!NOTE]
 > As explained in the following section, user messages include private messages for an individual user, and any community messages associated with that user.
+> 
+> User messages also include Storyline messages, which are supported by retention policies.
 
 User messages include all the names of the people in the conversation, and community messages include the community name and the message title (if supplied).
 

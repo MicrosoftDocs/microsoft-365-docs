@@ -154,6 +154,8 @@ You can apply just one sensitivity label to an item such as a document, email, o
 
 The ordering of sublabels is used with [automatic labeling](apply-sensitivity-label-automatically.md), though. When you configure labels to be applied automatically or as a recommendation, multiple matches can result for more than one label. To determine the label to apply or recommend, the label ordering is used: The last sensitive label is selected, and then if applicable, the last sublabel.
 
+The ordering of sublabels is also used with [label inheritance from email attachments](sensitivity-labels-office-apps.md#configure-label-inheritance-from-email-attachments).
+
 ![Option to create a sublabel.](../media/Sensitivity-label-sublabel-options.png)
 
 ### Sublabels (grouping labels)
