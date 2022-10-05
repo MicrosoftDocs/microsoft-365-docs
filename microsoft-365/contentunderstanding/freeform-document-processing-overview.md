@@ -17,7 +17,7 @@ description: Learn how to use AI Builder to create freeform document processing 
 
 # Overview of freeform document processing in Microsoft SharePoint Syntex
 
-Use the freeform document processing model to automatically extract information from unstructured and freeform documents such as letters and contracts.
+Use the freeform document processing model ([freeform selection method](create-syntex-model.md#train-a-custom-model)) to automatically extract information from unstructured and freeform documents such as letters and contracts.
 
 SharePoint Syntex uses Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) document processing (formerly known as form processing) to create freeform document processing models within SharePoint document libraries.
 
