@@ -204,6 +204,8 @@
                   href: /azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/microsoft-365/Enterprise/toc.json&bc=/microsoft-365/enterprise/breadcrumb/toc.json
                 - name: Configure search
                   href: configure-search-for-multi-geo.md
+                - name: User Testing in Multi-Geo
+                  href: m365-multi-geo-user-testing.md
             - name: Manage
               items: 
                 - name: Administering a multi-geo environment
