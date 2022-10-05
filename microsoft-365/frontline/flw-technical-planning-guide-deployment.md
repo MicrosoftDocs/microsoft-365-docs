@@ -19,7 +19,7 @@ appliesto:
 
 ---
 
-# Technical planning guide for deploying frontline solutions (White paper)
+# Technical planning guide for deploying frontline solutions (white paper)
 
 Technical teams who are involved in planning and implementing a frontline solution must understand frontline workers' day-to-day experiences, needs and challenges, and adopt new practices for managing user access and application service delivery for a mobile-only workforce.
 
