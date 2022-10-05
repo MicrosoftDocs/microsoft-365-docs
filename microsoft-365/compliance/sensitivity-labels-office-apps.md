@@ -446,17 +446,17 @@ Exceptions for the automatically selected label:
 
     - **Double Key Encryption**: If the highest priority label applies Double Key Encryption, no label or encryption is selected for the email message in Outlook for Windows. In Outlook for the web, the label with the next highest priority is selected for the email message.
 
-    - **Custom permissions for Word, Excel, and PowerPoint**: If the highest priority label applies just custom permissions for Word, Excel, and PowerPoint without also applying Do Not Forward for Outlook, no label or protection is selected for the email message because Outlook doesn't support this label configuration.
+    - **Custom permissions for Word, PowerPoint, and Excel**: If the highest priority label applies just user-defined permissions for Word, PowerPoint, and Excel (the option **Let users assign permissions when they apply the label** and **In Word, PowerPoint, and Excel, prompt users to specify permissions**), no label or protection is selected for the email message because Outlook doesn't support this label configuration.
 
 - For the Azure Information Protection (AIP) unified labeling client:
     
-    - **S/MIME**: If the highest priority label applies S/MIME signing and encryption, and the label is also configured for encryption from the Azure Rights Management Service, that label is applied to the email message with the same S/MIME signing and encryption but also the label's configured encryption settings for the Azure Rights Management Service.
+    - **S/MIME**: If the highest priority label applies S/MIME signing and encryption, and the label is also configured for encryption from the Azure Rights Management service, that label is applied to the email message with the same S/MIME signing and encryption but also the label's configured encryption settings for the Azure Rights Management service.
     
-    - **Double Key Encryption**: If the highest priority label applies the encryption settings for Double Key Encryption, no label or encryption is selected for the email message if Outlook doesn't support Double Key Encryption.
+    - **Double Key Encryption**: If the highest priority label applies the encryption setting for Double Key Encryption, no label or encryption is selected for the email message if Outlook doesn't support Double Key Encryption.
 
-    - **Custom permissions for Word, Excel, and PowerPoint**: If the highest priority label applies just custom permissions for Word, Excel, and PowerPoint without also applying Do Not Forward for Outlook, no label or protection is selected for the email message because Outlook doesn't support this label configuration.
+    - **Custom permissions for Word, PowerPoint, and Excel**: If the highest priority label applies just user-defined permissions for Word, PowerPoint, and Excel (the option **Let users assign permissions when they apply the label** and **In Word, PowerPoint, and Excel, prompt users to specify permissions**), no label or protection is selected for the email message because Outlook doesn't support this label configuration.
 
-    - **Encrypt-Only**: If the highest priority label applies the encryption settings for Encrypt-Only, no label or protection is selected for the email message because the AIP unified labeling client doesn't support this setting.
+    - **Encrypt-Only**: If the highest priority label applies the encryption setting for Encrypt-Only, no label or protection is selected for the email message because the AIP unified labeling client doesn't support this setting.
 
 
 ## PDF support
