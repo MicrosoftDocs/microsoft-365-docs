@@ -419,7 +419,7 @@ For more help in specifying PowerShell advanced settings, see [PowerShell tips f
 > [!NOTE]
 > This capability is currently rolling out in preview for built-in labeling, and in various stages of release across the platforms. Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Label inheritance from email attachments**.
 
-Turn on email inheritance for when users attach labeled documents or labeled emails to an email message that isn't manually labeled. With this configuration, a sensitivity label is dynamically selected for the email message, based on the sensitivity labels that are applied to the attachments. The [highest priority label](sensitivity-labels.md#label-priority-order-matters) is dynamically selected.
+Turn on email inheritance for when users attach labeled documents or labeled emails to an email message that isn't manually labeled. With this configuration, a sensitivity label is dynamically selected for the email message, based on the sensitivity labels that are applied to the attachments and published to the user. The [highest priority label](sensitivity-labels.md#label-priority-order-matters) is dynamically selected when it's supported by Outlook.
 
 Whether this label inheritance will override an existing label on the email message:
 
@@ -429,11 +429,12 @@ Whether this label inheritance will override an existing label on the email mess
 
 The configuration option is named **Email inherits highest priority label from attachment(s)** in the sensitivity label policy. The attachment must be a physical file, and can't be a link to a file (for example, a link to a file on Microsoft SharePoint or OneDrive).
 
-If you further select the option as a recommendation, users see a message displayed to accept or dismiss the automatically selected label: **If the attachment(s) have a higher priority label than the email, show the label upgrade as a recommendation to end users.** Without the recommendation option, the label is automatically applied but users can still remove the label or select a different label before sending the email.
+If you further select the following option for recommending the label, users see a message displayed to accept or dismiss the automatically selected label: **If the attachment(s) have a higher priority label than the email, show the label upgrade as a recommendation to end users.** Without the recommendation option, the label is automatically applied but users can still remove the label or select a different label before sending the email.
 
-By default, if the automatically selected label applies encryption, the same encryption is applied to the email. When the encryption settings are selected by users, the email message inherits the same user choices.
+> [!NOTE]
+> If you've configured the PowerShell advanced setting **AttachmentAction** for the Azure Information Protection (AIP) unified labeling client to be Automatic or Recommended, these options are automatically reflected in the compliance portal. However, the **AttachmentActionTip** advanced setting for a customized recommendation message doesn't have a corresponding entry in the compliance portal and isn't supported by built-in labeling.
 
-For example, if the highest priority label applies encryption with Full Control to the Marketing group, the email will be protected with Full Control to the Marketing group. If the highest priority label applies encryption and prompts users to select custom permissions for a Word document, the same custom permissions will be applied to the email message.
+By default, if the automatically selected label applies encryption, the same encryption is applied to the email. For example, if the highest priority label applies encryption with Full Control to the Marketing group, the email will be protected with Full Control to the Marketing group. If the highest priority label applies the encryption option of Do Not Forward, the email message is also labeled and encrypted with Do Not Forward.
 
 However, take into consideration the outcome when an email client doesn't support a specific protection action that's been applied to an attachment. See the exception lists for details.
 
@@ -445,11 +446,15 @@ Exceptions for the automatically selected label:
 
     - **Double Key Encryption**: If the highest priority label applies Double Key Encryption, no label or encryption is selected for the email message in Outlook for Windows. In Outlook for the web, the label with the next highest priority is selected for the email message.
 
+    - **Custom permissions for Word, Excel, and PowerPoint**: If the highest priority label applies just custom permissions for Word, Excel, and PowerPoint without also applying Do Not Forward for Outlook, no label or protection is selected for the email message because Outlook doesn't support this label configuration.
+
 - For the Azure Information Protection (AIP) unified labeling client:
     
     - **S/MIME**: If the highest priority label applies S/MIME signing and encryption, and the label is also configured for encryption from the Azure Rights Management Service, that label is applied to the email message with the same S/MIME signing and encryption but also the label's configured encryption settings for the Azure Rights Management Service.
     
     - **Double Key Encryption**: If the highest priority label applies the encryption settings for Double Key Encryption, no label or encryption is selected for the email message if Outlook doesn't support Double Key Encryption.
+
+    - **Custom permissions for Word, Excel, and PowerPoint**: If the highest priority label applies just custom permissions for Word, Excel, and PowerPoint without also applying Do Not Forward for Outlook, no label or protection is selected for the email message because Outlook doesn't support this label configuration.
 
     - **Encrypt-Only**: If the highest priority label applies the encryption settings for Encrypt-Only, no label or protection is selected for the email message because the AIP unified labeling client doesn't support this setting.
 
