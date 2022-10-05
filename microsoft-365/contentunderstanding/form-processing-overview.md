@@ -44,12 +44,14 @@ You can only create a structured document processing model in SharePoint documen
 
 ## Requirements
 
-For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md#extract-by-layout).
+For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md#structured-document-processing).
 
 ## See also
-  
-[Power Automate documentation](/power-automate/)
+
+[Compare custom models](difference-between-document-understanding-and-form-processing-model.md)
 
 [Train a structured document processing model](create-a-form-processing-model.md)
+
+[Power Automate documentation](/power-automate/)
 
 [Training: Improve business performance with AI Builder](/training/paths/improve-business-performance-ai-builder/?source=learn)
