@@ -116,7 +116,7 @@
   items:
     - name: Top 10 ways to secure a business
       href: ../admin/security-and-compliance/secure-your-business-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: Glossary of terms
+    - name: Glossary of security terms
       href: m365bp-glossary.yml
     - name: Microsoft 365 Business Premium FAQ
       href: microsoft-365-business-faqs.yml
