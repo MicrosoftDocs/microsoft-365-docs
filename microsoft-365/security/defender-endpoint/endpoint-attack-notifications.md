@@ -69,5 +69,5 @@ You can create rules to send email notifications for notification recipients. Se
 
 
 ## Next steps
-- To ask Defender Experts directly from the Microsoft Defender for Endpoint portal about insights on certain endpoint notifications, refer to [Ask Defender Experts ](../defender-endpoint/experts-on-demand.md)
-- To proactively hunt threats across endpoints, Office 365, cloud applications, and identity, refer to [Microsoft Defender Experts for Hunting in Microsoft 365 Defender](../defender/defender-experts-for-hunting.md)
+- To ask Defender Experts directly from the Microsoft Defender for Endpoint portal about insights on certain endpoint notifications, refer to [Ask Defender Experts ](../defender-endpoint/experts-on-demand.md).
+- To proactively hunt threats across endpoints, Office 365, cloud applications, and identity, refer to [Microsoft Defender Experts for Hunting in Microsoft 365 Defender](../defender/defender-experts-for-hunting.md).
