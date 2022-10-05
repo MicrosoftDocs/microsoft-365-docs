@@ -97,7 +97,7 @@ To assign preset security policies, follow these steps:
 
 2. Go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. (To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.)
 
-3. On the **Preset security policies** page, in either the **Standard protection** or **Strict protection** section, change the toggle from **Disabled** to **Enabled**, and then select **Manage**.
+3. On the **Preset security policies** page, in either the **Standard protection** or **Strict protection** section,  select **Manage Portection Settings**.
 
 4. The **Apply Standard protection** or **Apply Strict protection** wizard starts in a flyout. On the **EOP protections apply to** page, identify the internal recipients that the policies apply to (recipient conditions):
    - **Users**
