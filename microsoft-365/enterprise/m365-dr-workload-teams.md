@@ -51,9 +51,9 @@ Required Conditions:
 The following customer data will be stored in the related Geography:
 Microsoft Teams Core customer data consists of chat and channel messages, associated media and all the teams and channels present in the tenant.
 
--Chat/ channel messages & team structure: Every team in Microsoft Teams is backed by an Office 365 Modern Group and its SharePoint site and Exchange mailbox. Private chats (including group chats), messages sent as part of a conversation in a channel, and the structure of teams and channels are stored in an Azure powered chat service. The data is also stored in a hidden folder in the user and group mailboxes to enable information protection features.  
+- Chat/ channel messages & team structure: Every team in Microsoft Teams is backed by an Office 365 Modern Group and its SharePoint site and Exchange mailbox. Private chats (including group chats), messages sent as part of a conversation in a channel, and the structure of teams and channels are stored in an Azure powered chat service. The data is also stored in a hidden folder in the user and group mailboxes to enable information protection features.  
 
--Images and Media: Meeting recordings, Media used in chats (except for Giphy GIFs which are not stored but are a reference link to the original Giphy URL) is stored in an Azure based Media Service that are deployed to the same locations as the chat service.
+- Images and Media: Meeting recordings, Media used in chats (except for Giphy GIFs which are not stored but are a reference link to the original Giphy URL) is stored in an Azure based Media Service that are deployed to the same locations as the chat service.
 
 
 ## Multi-Geo Capabilities in Microsoft Teams
@@ -111,8 +111,8 @@ Teams chat services moves each thread individually. The thread is locked in a re
 **In-scope for Migration**
 In addition to Exchange Online, SharePoint Online, and OneDrive for Business; Microsoft will migrate Teams data to the local datacenter.
 
--Teams chat messages, including private messages and channel messages.
+- Teams chat messages, including private messages and channel messages.
 
--Teams images used in chats.
+- Teams images used in chats.
 
 Teams files are stored in SharePoint Online and Teams chat files are stored in OneDrive for Business. Voicemail, calendar, and contacts are stored in Exchange Online. In many cases, Exchange Online, SharePoint Online, and OneDrive for Business are already used by the customer in the local datacenter *Geography* and are also part of the Microsoft 365 migration program for eligible customer countries.
