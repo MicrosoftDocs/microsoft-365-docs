@@ -1,5 +1,5 @@
 ---
-title: "India Voter Id Card entity definition"
+title: "India Voter ID Card entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,15 +14,15 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier2
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: "India Voter Id Card sensitive information type entity definition."
+description: "India Voter ID Card sensitive information type entity definition."
 ---
 
-# India Voter Id Card
+# India Voter ID Card
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
