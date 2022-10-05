@@ -40,7 +40,7 @@ Check out this short video for an overview of how to run the wizard to onboard y
 
 ## Run the wizard
 
-1. In the left navigation of the [Microsoft 365 admin center](https://admin.microsoft.com/), choose **Setup**. Go to the **Apps and email** section, and then under **Get your frontline workforce up and running**, select **View**. Here, you can learn more about the capabilities that Microsoft 365 for frontline workers offers.
+1. In the left navigation of the [Microsoft 365 admin center](https://admin.microsoft.com/), choose **Setup**. Go to the **Apps and email** section, and then under **Get your frontline workforce up and running**, Play the **Video** to learn more about the capabilities that Microsoft 365 for frontline workers offers.
 
     :::image type="content" source="media/flw-onboarding-wizard-get-started.png" alt-text="Screenshot of the details page for the Frontline Worker onboarding experience in the Microsoft 365 admin center" lightbox="media/flw-onboarding-wizard-get-started.png":::
 
