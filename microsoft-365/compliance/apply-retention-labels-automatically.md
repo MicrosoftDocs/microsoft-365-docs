@@ -24,6 +24,9 @@ description: Create auto-labeling retention policies so you can automatically ap
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
+> [!IMPORTANT]
+> Currently, there's an issue with adaptive scopes and the **Exchange email** location when you use sensitive information or use keywords or searchable properties as conditions for auto-labeling. Until the issue is resolved, you won't be able to select this location for the specified configurations.
+
 > [!NOTE]
 > This scenario is not supported for [regulatory records](records-management.md#records) or default labels for an organizing structure such as a document set or library in SharePoint, or a folder in Exchange. These scenarios require a [published retention label policy](create-apply-retention-labels.md).
 
@@ -89,9 +92,6 @@ When you create an auto-apply policy, you select a retention label to automatica
 
     - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](retention-settings.md#configuration-information-for-adaptive-scopes) added. For example, if you only added a scope type of **User**, you will be able to select **Exchange email** but not **SharePoint sites**.
     
-    > [!IMPORTANT]
-    > Currently, there's an issue with adaptive scopes and the Exchange email location. Until the issue is resolved, you won't be able to select this location with an adaptive scope.
-
     - If you chose **Static**: On the **Choose locations** page, toggle on or off any of the locations. For each location, you can leave it at the default to [apply the policy to the entire location](retention-settings.md#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)
 
     For information about the location choices, see [Locations](retention-settings.md#locations).

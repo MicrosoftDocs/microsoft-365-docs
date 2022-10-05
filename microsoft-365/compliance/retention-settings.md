@@ -241,6 +241,9 @@ Locations in policies for retention identify specific Microsoft 365 services tha
 
 ### Configuration information for Exchange email and Exchange public folders
 
+> [!IMPORTANT]
+> Currently, there's an issue with adaptive scopes and the **Exchange email** location when you use sensitive information or use keywords or searchable properties as conditions for auto-labeling. Until the issue is resolved, you won't be able to select this location for the specified configurations.
+
 Both the **Exchange email** location and the **Exchange public folders** location require mailboxes to have at least 10 MB of data before retention settings will apply to them.
 
 The **Exchange email** location supports retention for users' email, calendar, and other mailbox items, by applying retention settings at the level of a mailbox. Shared mailboxes and resource mailboxes for equipment and rooms are also supported.
