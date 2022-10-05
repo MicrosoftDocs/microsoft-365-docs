@@ -436,9 +436,7 @@ If you further select the following option for recommending the label, users see
 
 By default, if the automatically selected label applies encryption, the same encryption is applied to the email. For example, if the highest priority label applies encryption with Full Control to the Marketing group, the email will be protected with Full Control to the Marketing group. If the highest priority label applies the encryption option of Do Not Forward, the email message is also labeled and encrypted with Do Not Forward.
 
-However, take into consideration the outcome when an email client doesn't support a specific protection action that's been applied to an attachment. See the exception lists for details.
-
-Exceptions for the automatically selected label:
+However, take into consideration the outcome when an email client doesn't support a specific protection action that's been applied to an attachment:
 
 - For built-in labeling:
     
