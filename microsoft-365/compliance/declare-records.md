@@ -17,7 +17,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: "Declare records by using retention labels."
+description: "To declare documents and emails as records, use Microsoft 365 retention labels that mark items as a record or a regulatory record."
 ---
 
 # Declare records by using retention labels
