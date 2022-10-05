@@ -86,7 +86,7 @@ When you've more than one retention policy, and when you also use retention labe
     
     - If you chose **Static**: On the **Choose locations to apply the policy** page, select one or more locations for Teams:
         - **Teams channel message**: Messages from standard and shared channel chats, and standard and shared channel meetings, but not from [private channels](/microsoftteams/private-channels) that have their own policy location.
-        - **Teams chats**: Messages from private 1:1 chats, group chats, and meeting chats.
+        - **Teams chats**: Messages from private 1:1 chats, group chats, meeting chats, and chat with yourself.
         - **Teams private channel messages**: Messages from private channel chats and private channel meetings. If you select this option, you can't select the other Teams locations in the same retention policy.
         
        By default, [all teams and all users are selected](retention-settings.md#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the [**Choose** and **Exclude** options](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
