@@ -23,7 +23,7 @@ For an overview of Microsoft LTI, see [Integrating Microsoft products with your 
 > [!NOTE]
 > The person who performs this integration should be an administrator of Schoology. However, Schoology users with access to the Schoology **App Center** can also install the Microsoft Teams Meetings LTI app.
 
-## Register the Teams Meetings LTI app for Schoology
+## Deploy the Teams Meetings LTI app in Schoology
 
 1. Sign into your Schoology instance as an administrator with access to install and configure apps.
 1. Access the **Microsoft Teams Meetings** app in the [**App Center**](https://app.schoology.com/apps) by opening this direct link [Microsoft Teams Meetings on Schoology](https://app.schoology.com/apps/profile/6017478062).
@@ -45,17 +45,3 @@ For an overview of Microsoft LTI, see [Integrating Microsoft products with your 
 >
 > 1. Going to the [Organization Apps list](https://app.schoology.com/apps/school_apps), selecting the **Install/Remove** button, and choosing the courses in which to install the app.
 > 1. Or, they can select the **Install Your App(s)** link at the bottom of the course left rail navigation menu, and then select the **Microsoft Teams Meetings** app to install.
-
-## Configure the Teams Meetings LTI app to work with Schoology
-
-1. Visit [Microsoft LMS Gateway](https://lti.microsoft.com/) and select the **Go to registration portal** button.
-1. Sign in with a Microsoft 365 administrator account.
-1. Select the **Admin Consent** button and accept the permissions.
-    1. If this step isn't performed, the following step will give you an error, and you won't be able to take this step for an hour once you've received the error.
-1. Select the **Create new LTI Tenant** button.
-1. On the LTI Registration page, choose **Schoology** from the LTI Consumer Platform dropdown, and then select the **Next** button.
-1. Paste the **Deployment ID** that you copied while registering the tool in Schoology and select **Next**.
-1. Review and save your changes. A message will be displayed upon successful registration.
-1. Your registration details can also be reviewed by selecting the **View LTI Tenants** button on the home page.
-
-After you complete these steps, your educators will be able to use the Teams Meetings LTI app.
