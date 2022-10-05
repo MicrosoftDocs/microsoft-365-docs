@@ -134,3 +134,7 @@ Keep the following things in mind after you enable auto-expanding archiving:
 
 > [!IMPORTANT]
 > Auto-expanding archiving is supported only for mailboxes used by individual users or for shared mailboxes with a growth rate that doesn't exceed 1 GB per day. Using journaling, transport rules, or auto-forwarding rules to copy messages to an archive mailbox for the purposes of archiving is not permitted. A user's archive mailbox is intended for just that user. Microsoft reserves the right to deny additional archiving in instances where a user's archive mailbox is used to store archive data for other users or in other cases of inappropriate use.
+
+## Next steps
+
+Make sure you prepare end users for the changes they can expect after enabling their mailbox for auto-expanding archives.

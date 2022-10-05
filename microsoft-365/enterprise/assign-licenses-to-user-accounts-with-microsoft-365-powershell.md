@@ -3,7 +3,7 @@ title: Assign Microsoft 365 licenses to user accounts with PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 09/23/2020
+ms.date: 09/19/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
