@@ -29,7 +29,7 @@ The forensic evidence dashboard is the summary view of key areas of the forensic
 
 ## Managing users
 
-You must request and approve specific users before they are eligible for forensic evidence capturing. Simply adding users to a forensic evidence policy doesn't automatically make those users eligible for capturing. You can request and approve users before or after forensic evidence policies are created, but the clip captures associated with policy indicators will only be created and available for reviewing once the users are approved.
+You must request and approve specific users before they're eligible for forensic evidence capturing. Simply adding users to a forensic evidence policy doesn't automatically make those users eligible for capturing. You can request and approve users before or after forensic evidence policies are created, but the clip captures associated with policy indicators will only be created and available for reviewing once the users are approved.
 
 Users assigned to the *Insider Risk Management* or *Insider Risk Management Admins* role groups can submit approval requests to users assigned to the *Insider Risk Management Approvers* role group.
 
@@ -47,7 +47,7 @@ To configure approved users for forensic evidence capturing, complete the follow
 6. On the **Forensic evidence policy** page, select a forensic evidence policy for the added users. The policy you choose determines the scope of activity to capture for users.
 7. Select **Next**.
 8. On the **Justification** page, let the reviewer know why you're requesting that capturing be enabled for the users you added in the **Justification for turning on forensic evidence capturing** text box. This is a required field. When complete, select **Next**.
-9. On the **Email notifications** page, you sse a notification template to send an email to users letting them know that forensic evidence capturing will be turned on for their device in accordance with your organization's policies. The email will be sent to users only if their request is approved.
+9. On the **Email notifications** page, you use a notification template to send an email to users letting them know that forensic evidence capturing will be turned on for their device in accordance with your organization's policies. The email will be sent to users only if their request is approved.
 
     Select the **Send an email notification to approved users** checkbox. Choose an existing template o create a new one. To create a new template, select **Create a notification template** and complete the following required fields in the **New email notification template** pane.
 
@@ -152,10 +152,31 @@ The device health queue lists all the devices in configured for forensic evidenc
 - **Device name**: The name of the device, defined by the *ComputerName* attribute of the device.
 - **Device status**: The status of the Microsoft Purview Client on the device. Status values are as follows:
     - ***Healthy***: The client on the device is working properly and forensic evidence capture features are fully supported.
-    - ***Warning***: The client on the device is...
-    - ***Error***: The client on the device is...
+    - ***Warning***: The client on the device has a warning and forensic evidence capture features may not be fully supported.
+    - ***Error***: The client on the device has an error and forensic evidence capture features are disabled or not fully supported.
 - **Status details**: More information about the device status.
-- **Last sync (UTC)**: Date and time of the last status sync for the device
+- **Last sync (UTC)**: Date and time of the last status sync for the device.
 - **User name**: The user name for the user logged into the device when the status sync was performed.
 - **Windows version**: The version on Microsoft Windows installed on the device.
 - **Client version**: The version of the Microsoft Purview Client installed on the device.
+
+The device health status gives you insights into potential issues with your devices and the Microsoft Purview Client. The **Device status** column on the **Device health** page can alert you to device issues that may prevent user activity from being captured or why the volume of forensic evidence capturing is unusual. The device health status can also confirm that the devices include in forensic evidence capturing are healthy and don't need attention or configuration changes. The following table lists potential status detail messages and recommended actions you can take to address warnings and errors:
+
+|**Status Details**|**Status**|**Suggested Action**|
+|:----------|:-------|:-------------------|
+| An internal server error occurred. As a result, capture data might be missing. | Warning | TO-DO |
+| Upload bandwidth has reached 90% of the configured limit on this device. Captures might be overwritten soon.  | Warning | Increase the upload bandwidth limit on the [Forensic evidence settings](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) page. |
+| The configured upload bandwidth limit has been reached on this device. No more captures will be uploaded for the day. | Warning | Increase the upload bandwidth limit on the [Forensic evidence settings](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) page. |
+| Offline storage has reached 90% of the configured limit on this device. Captures might be overwritten soon.  | Warning | Increase the offline capturing cache limit on the [Forensic evidence settings](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) page. |
+| The configured offline storage limit has been reached on this device. As a result, offline captures are being overwritten. | Warning | Increase the offline capturing cache limit on the [Forensic evidence settings](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) page. |
+| Tampering has been detected on local capture files.  | Warning | TO-DO |
+| CPU usage on the device has exceeded the maximum threshold. | Error | The capture process has been stopped and will restart in a few minutes. |
+| Memory usage on the device has exceeded the maximum threshold. | Error | The capture process has been stopped and will restart in a few minutes. |
+| GPU usage on the device has exceeded the maximum threshold. | Error | The capture process has been stopped and will restart in a few minutes. |
+| The Microsoft Purview Client installed on the device in unable to sync with the forensic evidence policy. | Error | TO-DO |
+| The Microsoft Purview Client installed on the device hasn't synced with the forensic evidence policy in over 24 hours. | Error | TO-DO |
+| The Microsoft Purview Client is unable to capture activity because no graphics card is detected on this device. | Error | TO-DO |
+| The Microsoft Purview Client is unable to capture activity because no display monitors are detected on this device. | Error | TO-DO |
+| The Microsoft Purview Client is unable to capture activity because display monitors on this device were turned off or disconnected. | Error | TO-DO |
+| Device is unable to access the directory that stores forensic evidence captures. | Error | TO-DO |
+| Encoder initialization failed.  | Error | Reinstall the client on this device. |

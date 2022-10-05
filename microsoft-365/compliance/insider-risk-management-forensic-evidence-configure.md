@@ -21,7 +21,7 @@ ms.collection: m365-security-compliance
 
 ## Configure forensic evidence
 
-Configuring forensic evidence in your organization is very similar to configuring other policies from insider risk management policy templates. In general, you'll follow the same basic configuration steps to set up forensic evidence, but there are a few areas that need feature-specific configuration actions before your get started with the basic configuration steps.
+Configuring forensic evidence in your organization is similar to configuring other policies from insider risk management policy templates. In general, you'll follow the same basic configuration steps to set up forensic evidence, but there are a few areas that need feature-specific configuration actions before your get started with the basic configuration steps.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -29,7 +29,7 @@ Configuring forensic evidence in your organization is very similar to configurin
 
 Before you get started with forensic evidence, you should confirm your [insider risk management subscription](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-insider-risk-management) and any add-ons. Users included in forensic evidence policies must be assigned licenses from one of the supported insider risk management plans.
 
-Additionally, you'll need to add the following domain to your firewall allow list to support forensic evidence capture storage for your organization:
+Additionally, you'll need to add the following domain to your firewall allowlist to support forensic evidence capture storage for your organization:
 
 - *compliancedrive.microsoft.com*
 
@@ -69,9 +69,9 @@ To configure forensic evidence settings, complete the following steps:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Forensic evidence settings**.
 2. Select **Forensic evidence capturing** to enable capturing support in your forensic evidence policies. If this is turned off later, this will remove all previously added users for forensic evidence policies.
-3. In the **Capturing windoe** section, define when to start and stop activity capturing. Available values are *10 seconds*, *30 seconds*, *1 minute*, *3 minutes*, or *5 minutes*.
+3. In the **Capturing window** section, define when to start and stop activity capturing. Available values are *10 seconds*, *30 seconds*, *1 minute*, *3 minutes*, or *5 minutes*.
 4. In the **Upload bandwidth limit** section, define the amount of capture data to upload into your data storage account per user, per day. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.
-5. In the **Offline capturing** section, enable offline capturing if needed. When enabled, users' offline activity is captured and uploaded to your data storage account the next time they are online.
+5. In the **Offline capturing** section, enable offline capturing if needed. When enabled, users' offline activity is captured and uploaded to your data storage account the next time they're online.
 6. In the **Offline capturing cache limit** section, define the maximum cache size to store on users' devices when offline capturing is enabled. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.
 7. Select **Save**.
 
@@ -106,7 +106,7 @@ Before security-related user activities can be captured, users must follow the d
 >[!IMPORTANT]
 >For the preview release, a maximum of 5 concurrent users are eligible for forensic evidence capturing. Capturing for groups isn't supported in the preview release.
 
-You must request that forensic evidence capturing be turned on for specific users. When a request is submitted, approvers in your organization are notified in email and can approve or reject the request. If approved, the user will appear on the **Approved users** tab and will be eligible for capturing.
+You must request that forensic evidence capturing is enabled for specific users. When a request is submitted, approvers in your organization are notified in email and can approve or reject the request. If approved, the user will appear on the **Approved users** tab and will be eligible for capturing.
 
 - To request approval for forensic evidence capturing for users, complete [these configuration steps](/microsoft-365/compliance/insider-risk-management-forensic-evidence-manage#request-capturing-approvals).
 - To approve (or reject) requests for forensic evidence capturing for users, complete [these configuration steps](/microsoft-365/compliance/insider-risk-management-forensic-evidence-manage#approve-capturing-requests).
