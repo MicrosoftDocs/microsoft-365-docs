@@ -3,7 +3,7 @@ title: Collect diagnostic data for Update Compliance and Microsoft Defender Anti
 description: Use a tool to collect data to troubleshoot Update Compliance issues when using the Microsoft Defender Antivirus Assessment add-in.
 keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender AV, Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,12 @@ ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer:
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Collect update compliance diagnostic data for Microsoft Defender Antivirus assessment

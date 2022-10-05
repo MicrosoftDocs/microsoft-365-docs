@@ -2,8 +2,8 @@
 title: Manage Microsoft Defender for Endpoint using Intune
 description: Learn how to manage Microsoft Defender for Endpoint with Intune
 keywords: post-migration, manage, operations, maintenance, utilization, intune, Microsoft Defender for Endpoint, edr
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,12 +12,13 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - M365-security-compliance
-
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
 ms.date: 07/01/2022
 ms.reviewer: chventou
+search.appverid: met150
 ---
 
 # Manage Microsoft Defender for Endpoint with Intune
@@ -82,4 +83,4 @@ If you haven't already done so, configure your Microsoft 365 Defender portal to 
 ## Next steps
 
 - [Get an overview of Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Visit the Microsoft 365 Defender portal security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+

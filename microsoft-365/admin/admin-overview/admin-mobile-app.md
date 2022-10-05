@@ -7,9 +7,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -75,6 +77,12 @@ You must be an administrator in a Microsoft 365 organization to use the admin mo
 ## Frequently asked questions
 
 Below are answers to frequently asked questions.
+
+### Does the admin app support multi-tenant billing features? 
+
+The admin mobile app is missing a few multi-tenant features where the authorized admin can see the products and licenses of the tenant in question along with the products and licenses of associated tenants in a single view. 
+
+This feature is not yet part of Microsoft 365 Admin mobile app and will be coming soon. For more information, admins can go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.  
   
 ### What do I need to do to be able to use the app?
 

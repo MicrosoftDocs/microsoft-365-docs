@@ -3,18 +3,21 @@ title: Onboard devices without Internet access to Microsoft Defender for Endpoin
 ms.reviewer: 
 description: Onboard devices without Internet access so that they can send sensor data to the Microsoft Defender for Endpoint sensor
 keywords: onboard, servers, vm, on-premises, oms gateway, log analytics, azure log analytics, mma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Onboard devices without Internet access to Microsoft Defender for Endpoint

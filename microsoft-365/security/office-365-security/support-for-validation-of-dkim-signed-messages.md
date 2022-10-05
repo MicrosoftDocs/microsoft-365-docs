@@ -13,10 +13,10 @@ search.appverid:
   - MET150
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Learn about the validation of DKIM signed messages in Exchange Online Protection and Exchange Online
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Support for validation of DKIM signed messages

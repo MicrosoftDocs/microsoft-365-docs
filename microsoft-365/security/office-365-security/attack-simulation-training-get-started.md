@@ -14,13 +14,13 @@ search.appverid:
   - MOE150
 ms.assetid:
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-m365-defender
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn how to use Attack simulation training to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Get started using Attack simulation training in Defender for Office 365

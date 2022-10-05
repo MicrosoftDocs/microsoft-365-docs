@@ -14,13 +14,13 @@ search.appverid:
   - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
   - seo-marvel-apr2020
 description: Learn how to use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure messages sent from your custom domain are trusted by the destination email systems.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Use DKIM to validate outbound email sent from your custom domain

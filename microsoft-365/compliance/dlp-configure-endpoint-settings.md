@@ -13,7 +13,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - SPO_Content
 search.appverid: 
 - MET150
@@ -34,6 +35,8 @@ You must configure these settings if you intend to control:
 - Browser and domain restrictions.
 - How business justifications for overriding policies appear in policy tips.
 - If activities on Office, PDF, and CSV files are automatically audited.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## DLP settings
 
@@ -253,7 +256,7 @@ For example:
 | ***.CONTOSO.COM** |**Matches the specified domain name, any subdomain, and any site**: <p>*://contoso.com <p>*://contoso.com/anysubsite <p>*://contoso.com/anysubsite1/anysubsite2 <p>*://anysubdomain.contoso.com/ <p>*://anysubdomain.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite1/anysubsite2 (etc) <p>**Does not match unspecified domains** <p>*://anysubdomain.contoso.com.AU/ |
 | **`www.contoso.com`** |**Matches the specified domain name**: <p>`www.contoso.com` <p>**Does not match unspecified domains or subdomains** <p>*://anysubdomain.contoso.com/, in this case, you have to put the FQDN domain name itself `www.contoso.com`|
 
-#### Sensitive service domains (preview)
+#### Sensitive service domains
 
 When you list a website in Sensitive services domains you can audit, block with override, or block users when they attempt to:
 
@@ -261,7 +264,7 @@ When you list a website in Sensitive services domains you can audit, block with 
 - copy data from a website
 - save a website as local files
 
-Each website must be listed in a website group and the user must be accessing the website through Microsoft Edge. Sensitive service domains (preview) is used in conjunction with a DLP policy for Devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) for more information.
+Each website must be listed in a website group and the user must be accessing the website through Microsoft Edge. Sensitive service domains is used in conjunction with a DLP policy for Devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
 
 
 ### Additional settings for endpoint DLP

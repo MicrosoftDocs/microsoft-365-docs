@@ -11,10 +11,13 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: 
-- m365-security-compliance
+ms.collection:
+- highpri 
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
@@ -26,6 +29,8 @@ Use insider risk management policies to identify risky activities and management
 > The insider risk management solution provides a tenant level option to help customers facilitate internal governance at the user level. Tenant level administrators can set up permissions to provide access to this solution for members of your organization and set up data connectors in the Microsoft Purview compliance portal to import relevant data to support user level identification of potentially risky activity. Customers acknowledge insights related to the individual user's behavior, character, or performance materially related to employment can be calculated by the administrator and made available to others in the organization. In addition, customers acknowledge that they must conduct their own full investigation related to the individual user's behavior, character, or performance materially related to employment, and not just rely on insights from the insider risk management service. Customers are solely responsible for using the insider risk management service, and any associated feature or service in compliance with all applicable laws, including laws relating to individual user identification and any remediation actions.
 
 For more information about how insider risk policies can help you manage risk in your organization, see [Learn about insider risk management](insider-risk-management.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Subscriptions and licensing
 
@@ -242,7 +247,7 @@ Before configuring a policy, define the following insider risk settings:
     - [File type exclusions](insider-risk-management-settings.md#file-type-exclusions)
     - [Minimum number of daily events to boost score for unusual activity](insider-risk-management-settings.md#minimum-number-of-daily-events-to-boost-score-for-unusual-activity)
     - [Alert volume level](insider-risk-management-settings.md#alert-volume)
-    - [Microsoft Defender for Endpoint alert status](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
+    - [Microsoft Defender for Endpoint alert status](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses-preview)
     - [Domain settings](insider-risk-management-settings.md#domains)
 6. On the **Export alerts** page, enable export of insider risk alert information using the Office 365 Management APIs if needed.
 7. On the **Priority user groups** page, create a priority user group and add users if not created in **Step 3**.
@@ -307,6 +312,7 @@ Insider risk management policies include assigned users and define which types o
 
     If you've selected at least one *Office* or *Device* indicator, select the **Risk score boosters** as appropriate. Risk score boosters are only applicable for selected indicators.
     If you've selected a *Data theft* or *Data leaks* policy template, select one or more **Sequence detection** methods and a **Cumulative exfiltration detection** method to apply to the policy.
+    If you've selected the *Risky browser usage* policy template, select one or more of the **Browsing indicators**.
 
 20. Select **Next** to continue.
 21. On the **Decide whether to use default or custom indicator thresholds** page, choose custom or default thresholds for the policy indicators that you've selected. Choose either the **Use default thresholds for all indicators** or **Specify custom thresholds** for the selected policy indicators. If you've selected Specify custom thresholds, choose the appropriate level to generate the desired level of activity alerts for each policy indicator.

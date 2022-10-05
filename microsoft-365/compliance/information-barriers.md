@@ -1,6 +1,6 @@
 ---
 title: "Learn about information barriers"
-description: "Learn about information barriers in Microsoft Purview."
+description: "Learn about information barriers in Microsoft Purview. Information barriers can help to avoid conflicts of interest and safeguard internal information between users and organizational areas."
 keywords: Microsoft 365, Microsoft Purview, compliance, information barriers
 ms.author: robmazz
 author: robmazz
@@ -10,9 +10,12 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- highpri 
+- tier2
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.localizationpriority: null
 f1.keywords:
 - NOCSH
@@ -35,6 +38,8 @@ IB policies can allow or prevent communication and collaboration between groups 
 
 > [!IMPORTANT]
 > Information barriers **only supports** two-way communication and collaboration restrictions. For example, a scenario where Marketing can communicate and collaborate with Day Traders, but Day Traders cannot communicate and collaborate with Marketing **isn't supported**.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Information barriers and Microsoft Teams
 

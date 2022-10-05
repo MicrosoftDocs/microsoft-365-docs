@@ -2,7 +2,7 @@
 title: List exposure score by device group
 description: Retrieves a list of exposure scores by device group.
 keywords: apis, graph api, supported apis, get, exposure score, device group, device group exposure score
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # List exposure score by device group

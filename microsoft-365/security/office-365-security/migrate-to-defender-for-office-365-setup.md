@@ -13,12 +13,13 @@ search.appverid:
   - MET150
   - MOE150
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-mdo-migration
+  - highpri
 ms.custom: migrationguides
 description: "Take the steps to begin migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Migrate to Microsoft Defender for Office 365 - Phase 2: Setup

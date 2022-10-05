@@ -10,7 +10,8 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.localizationpriority: medium
 search.appverid:
 - MOE150
@@ -58,6 +59,8 @@ All DLP reports can show data from the most recent four-month time period. The m
 You can find these reports in the Microsoft Purview compliance portal \> **Reports** \> **Dashboard**.
 
 ![DLP policy matches report.](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## View the justification submitted by a user for an override
 
