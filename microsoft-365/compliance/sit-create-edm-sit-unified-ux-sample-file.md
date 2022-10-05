@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Create the sample file to use in the new experience.
+description: Learn how to create the sample file to use in the new exact data match experience.
 ms.custom: seo-marvel-apr2020
 ---
 
 # Create EDM SIT sample file for the new experience
 
-Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. They can be used in Microsoft Purview data loss prevention policies, eDiscovery and certain content governance tasks  This article outlines the workflow and links to the procedures for each phase using the classic experience.
+Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. They can be used in Microsoft Purview data loss prevention policies, eDiscovery and certain content governance tasks.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
