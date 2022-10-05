@@ -47,6 +47,9 @@ For guidance on how to download and use Windows Security Baselines for Windows s
 
 In order to be eligible to purchase Microsoft Defender for Endpoint Server SKU, you must have already purchased a combined minimum of any of the following: Windows E5/A5, Microsoft 365 E5/A5, or Microsoft 365 E5 Security subscription licenses. For more information on licensing, see the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).
 
+> [!NOTE]
+> As of September 2022, Microsoft Defender for Endpoint Server is no longer generally available for new customers.
+
 ## Windows Server onboarding overview
 
 You'll need to complete the following general steps to successfully onboard servers 2008 R2, 2012 R2, 2016, 2019, 2022.
