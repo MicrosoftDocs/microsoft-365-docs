@@ -11,7 +11,8 @@ metadata:
   ms.service: microsoft-365-security #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: other
   ms.topic: hub-page # Required
-  ms.collection: collection
+  ms.collection: 
+  - tier2
   ms.custom: 
   - AdminSurgePortfolio
   - intro-hub-or-landing
