@@ -22,29 +22,29 @@ ms.collection:
 
 For data location information for the following services, please refer to the data location information in Section ***(TODO: add reference link to datamaps)***
 
--Whiteboard
+- Whiteboard
 
--Forms
+- Forms
 
--Intune
+- Intune
 
--Planner
+- Planner
 
--Viva Insights – Advanced, Mgr, Leader
+- Viva Insights – Advanced, Mgr, Leader
 
--Viva Insights – Personal
+- Viva Insights – Personal
 
--Viva Learning
+- Viva Learning
 
--Yammer
+- Yammer
 
--Office for mobile
+- Office for mobile
 
--OneNote Services
+- OneNote Services
 
--Power Apps for Microsoft 365
+- Power Apps for Microsoft 365
 
--Stream
+- Stream
 
 **Commitment:**
 
