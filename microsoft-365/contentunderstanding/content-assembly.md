@@ -21,6 +21,8 @@ You can use the content assembly capabilities in SharePoint Syntex to help you a
 
 You can upload an existing document to create a modern template, and then use that template to automatically generate new content using SharePoint lists or manual entries as a data source.
 
+![Diagram of the flow of creating documents from a modern template.](../media/content-understanding/content-assembly-diagram.png)
+
 > [!NOTE]
 > You must be a licensed SharePoint Syntex user to access and use content assembly capabilities. You also must have permissions to manage SharePoint lists.
 
