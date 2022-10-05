@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Purview solutions trial playbook"
+title: "Microsoft Purview solutions trial user guide"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,13 +16,13 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Purview solutions trial playbook."
+description: "Microsoft Purview solutions trial user guide."
 ms.custom: trial-playbook
 ---
 
-# Trial playbook: Microsoft Purview solutions
+# trial user guide: Microsoft Purview solutions
 
-Welcome to the Microsoft Purview solutions trial playbook. This playbook will help you make the most of your free trial by helping you discover robust and comprehensive capabilities of Microsoft Purview and security products.
+Welcome to the Microsoft Purview solutions trial user guide. This playbook will help you make the most of your free trial by helping you discover robust and comprehensive capabilities of Microsoft Purview and security products.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -424,7 +424,7 @@ Help your organization assess risks and efficiently respond to nations, regional
 
 [More information on the Compliance Manager premium assessments trial](compliance-easy-trials-compliance-manager-assessments.md).
 
-[Trial playbook: Microsoft Purview Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessment-playbook.md)
+[trial user guide: Microsoft Purview Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessment-playbook.md)
 
 ### Microsoft Priva Privacy Risk Management and Microsoft Priva Subject Rights Requests
 
@@ -434,7 +434,7 @@ Proactively identify and protect against privacy risks such as data hoarding, da
 
 [Learn more about Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management).
 
-[Trial playbook: Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
+[trial user guide: Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
 
 ## Additional resources
 
