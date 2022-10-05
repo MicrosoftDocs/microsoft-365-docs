@@ -11,7 +11,9 @@ author: jweston-1
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api

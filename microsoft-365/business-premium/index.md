@@ -15,6 +15,9 @@ ms.collection:
 - M365-Campaigns
 - m365solution-overview
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 - intro-overview

@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 03/02/2022
+ms.date:
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -14,15 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - SPO_Content
 recommendations: false
-description: "DLP policy component and configuration reference"
+description: "DLP policy component and configuration reference. This article provides a detailed anatomy of a DLP policy."
 ms.custom: seo-marvel-apr2021
 ---
 # Data Loss Prevention policy reference
 
 Microsoft Purview Data Loss Prevention (DLP) policies have many components to configure. To create an effective policy, you need to understand what the purpose of each component is and how its configuration alters the behavior of the policy. This article provides a detailed anatomy of a DLP policy.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Policy templates 
 
@@ -515,8 +519,8 @@ Whether an action takes effect or not depends on how you configure the mode of t
 
 <!--This section introduces the business need for user notifications, what they are, their benefit, how to use them, how to customize them, and links out to 
 
-- https://docs.microsoft.com/en-us/microsoft-365/compliance/use-notifications-and-policy-tips?view=o365-worldwide
-- https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-policy-tips-reference?view=o365-worldwide
+- https://learn.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips?view=o365-worldwide
+- https://learn.microsoft.com/microsoft-365/compliance/dlp-policy-tips-reference?view=o365-worldwide
 
 for where they are used/expected behavior-->
 
@@ -667,7 +671,7 @@ The intent of **User overrides** is to give users a way to bypass, with justific
 
 Typically, user overrides are useful when your organization is first rolling out a policy. The feedback that you get from any override justifications and identifying false positives helps in tuning the policy. 
 
-<!-- This section covers what they are and how to best use them in conjunction with Test/Turn it on right away and link out to where to find the business justification for the override (DLP reports?  https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide)  https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide#view-the-justification-submitted-by-a-user-for-an-override-->
+<!-- This section covers what they are and how to best use them in conjunction with Test/Turn it on right away and link out to where to find the business justification for the override (DLP reports?  https://learn.microsoft.com/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide)  https://learn.microsoft.com/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide#view-the-justification-submitted-by-a-user-for-an-override-->
 
 - If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
  
@@ -682,8 +686,8 @@ To learn more about user overrides, see:
 <!--DLP interacts with other M365 information protection services, like IR. Link this to a process outline for triaging/managing/resolving DLP incidents
 
 
-https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide
-https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide-->
+https://learn.microsoft.com/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide
+https://learn.microsoft.com/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide-->
 
 When a rule is matched, you can send an incident report to your compliance officer (or any people you choose) with details of the event. The report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes as an attachment the original message that matches a DLP policy.
 

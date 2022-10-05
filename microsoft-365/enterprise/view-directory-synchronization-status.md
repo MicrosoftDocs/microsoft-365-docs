@@ -13,6 +13,7 @@ ms.custom:
  - Adm_O365
  - seo-marvel-apr2020
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:

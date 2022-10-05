@@ -1,9 +1,10 @@
 ---
 title: "Use the KQL editor to build search queries"
+description: "You can use the KQL editor to configure eDiscovery search queries in Content search, eDiscovery (Standard), and eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: 
@@ -11,11 +12,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "You can use the KQL editor to configure eDiscovery search queries in Content search, eDiscovery (Standard), and eDiscovery (Premium)." 
 ---
 
 # Use the KQL editor to build search queries
@@ -31,6 +34,8 @@ Here are the key benefits to using the KQL editor:
 - Quickly identifies potential errors and displays hints about how to resolve issues.
 
 The KQL editor is also available when you create query-based holds in eDiscovery (Standard) and eDiscovery (Premium).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Displaying the KQL editor
 
