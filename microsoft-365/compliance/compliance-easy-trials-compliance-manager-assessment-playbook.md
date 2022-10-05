@@ -20,7 +20,7 @@ description: "Microsoft Purview Compliance Manager premium assessments trial use
 ms.custom: trial-playbook
 ---
 
-# trial user guide: Microsoft Purview Compliance Manager premium assessments
+# Trial user guide: Microsoft Purview Compliance Manager premium assessments
 
 Welcome to the Microsoft Purview Compliance Manager premium assessment trial user guide.
 
