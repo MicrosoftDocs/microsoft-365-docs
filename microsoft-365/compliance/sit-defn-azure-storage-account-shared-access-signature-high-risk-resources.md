@@ -71,7 +71,7 @@ This SIT is designed to match the security information that's used to grant rest
 
 It uses several primary resources:
 
-- Patterns of Base64 encoded 256 bits symmetric key.
+- Patterns of Base64 encoded 256-bits symmetric key.
 - Patterns of URL Encoded 256 bits symmetric key.
 - Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id.
 - Patterns of mockup values, redactions, and placeholders.

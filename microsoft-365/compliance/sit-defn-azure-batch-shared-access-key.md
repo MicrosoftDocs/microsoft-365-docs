@@ -54,7 +54,7 @@ This SIT is designed to match the security information that's used to access [Az
 It uses several primary resources:
 
 - Patterns of Base64 encoded 256-bits symmetric key.
-- Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id.
+- Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, ID.
 - Patterns of mockup values, redactions, and placeholders.
 - A dictionary of vocabulary.
 
