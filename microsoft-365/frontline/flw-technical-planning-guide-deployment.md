@@ -21,12 +21,12 @@ appliesto:
 
 # Technical planning guide for deploying frontline solutions (white paper)
 
-Technical teams involved planning and implementing a frontline solution must understand both the frontline worker’s day-to-day experience, needs and challenges, and adopt new patterns and practices for managing user access and application service delivery for a mobile-only workforce.
+Technical teams who are involved in planning and implementing a frontline solution must understand frontline workers' day-to-day experiences, needs and challenges, and adopt new practices for managing user access and application service delivery for a mobile-only workforce.
 
-This guide helps you plan and deploy Microsoft's frontline solution in the context of your organization's existing infrastructure and core business apps. It covers the following topics:
+Use this guide to help you plan and deploy Microsoft's frontline solution in the context of your organization's existing infrastructure and core business apps. It covers the following areas:
 
 - Overview of Microsoft's frontline solution
 - Frontline deployment architecture
 - Frontline deployment process
 
-Download the guide. 
+Download the guide.
