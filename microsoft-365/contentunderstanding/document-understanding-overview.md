@@ -50,77 +50,7 @@ After publishing your model, use the content center to apply it to any SharePoin
 
 ## Requirements
 
-For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md#classify-and-extract-by-text-pattern).
-
-<!---
-## File limitations
-
-**Classify and extract by text pattern** models use optical character recognition (OCR) technology to scan PDFs, images, and TIFF files. Files are scanned when you train a model with example files and when you run the model against files in a document library.
-
-Note the following differences about Microsoft Office text-based files and OCR-scanned files (PDF, image, or TIFF):
-
-- Office files: Truncated at 64,000 characters (in training and when run against files in a document library).
-
-- OCR-scanned files: There's a 20-page limit.  
-
-### Requirements
-
-OCR processing works best on documents that meet the following requirements:
-
-- JPG, PNG, or PDF format (text or scanned). Text-embedded PDFs are better, because there won't be any errors in character extraction and location.
-
-- If your PDFs are password-locked, you must remove the lock before submitting them.
-
-- The combined file size of the documents used for training per collection must not exceed 50 MB, and PDF documents shouldn't have more than 500 pages.
-
-- For images, dimensions must be between 50 x 50 and 10,000 x 10,000 pixels.
-   > [!NOTE]
-   > Images that are very wide or have odd dimensions (for example, floor plans) might get truncated in the OCR process and lose accuracy.
-
-- For PDF files, dimensions must be at most 17 x 17 inches, corresponding to Legal or A3 paper sizes and smaller.
-
-- If scanned from paper documents, scans should be high-quality images.
-
-- Must use the Latin alphabet (English characters).
-
-### Supported file types
-
-**Classify and extract by text pattern** models support the following file types:
-
-- csv
-- doc
-- docx
-- eml
-- heic
-- heif
-- htm
-- html
-- jpeg
-- jpg
-- markdown
-- md
-- msg
-- pdf
-- png
-- ppt
-- pptx
-- rtf
-- tif
-- tiff
-- txt
-- xls
-- xlsx
-
-### Supported languages
-
-**Classify and extract by text pattern** models support *all* of the Latin-based languages, including:
-
-- English
-- French
-- German
-- Italian
-- Spanish
---->
+For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md#unstructured-document-processing).
 
 ## See also
 
