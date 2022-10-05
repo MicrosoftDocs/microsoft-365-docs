@@ -11,7 +11,9 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
@@ -28,6 +30,8 @@ Watch the video below to learn how the insider risk management workflow can help
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
 Check out the [Microsoft Mechanics video](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) on how insider risk management and communication compliance work together to help minimize data risks from users in your organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Work with stakeholders in your organization
 

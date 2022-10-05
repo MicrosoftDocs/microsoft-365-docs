@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 ms.custom: 
 description: Admins can learn how to identify specific groups of users with user tags in Microsoft Defender for Office 365 Plan 2. Tag filtering is available across alerts, reports, and investigations in Microsoft Defender for Office 365 to quickly identify the tagged users.
 ms.subservice: mdo

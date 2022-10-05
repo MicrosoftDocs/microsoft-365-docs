@@ -10,7 +10,7 @@ ms.topic: article
 ms.date: 11/18/2019
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 ms.custom: 
   - Ent_Solutions
   - SIEM
@@ -18,6 +18,7 @@ ms.custom:
 description: Get an overview of Security Information and Event Management (SIEM) server integration with your Microsoft 365 cloud services and applications
 ms.subservice: mdo
 ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Security Information and Event Management (SIEM) server integration with Microsoft 365 services and applications

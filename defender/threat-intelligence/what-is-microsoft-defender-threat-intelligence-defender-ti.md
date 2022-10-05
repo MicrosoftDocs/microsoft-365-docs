@@ -3,6 +3,7 @@ title: 'What is Microsoft Defender Threat Intelligence (Defender TI)?'
 description: 'In this overview article, learn about the main features that come with Microsoft Defender Threat Intelligence (Defender TI).'
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence 
 ms.topic: overview
 ms.date: 08/02/2022
@@ -54,7 +55,7 @@ The description section of the article detail screen contains information about 
 
 ## Public indicators
 
-The public indicators section of the screen shows the previously published indicators related to the article. The links in the public indicators take one to the underlying Defender TI data or relevant external sources (e.g., VirusTotal for hashes).
+The public indicators section of the screen shows the previously published indicators related to the article. The links in the public indicators take one to the underlying Defender TI data or relevant external sources.
 
 ![TI Overview Article Public Indicators](media/tiOverviewArticlePublicIndicators.png)
 
@@ -99,7 +100,7 @@ Microsoft centralizes numerous data sets into a single platform, Defender TI, ma
 
 Microsoft collects, analyzes, and indexes internet data to assist users in detecting and responding to threats, prioritizing incidents, and proactively identifying adversaries’ infrastructure associated with actor groups targeting their organization. Microsoft collects internet data via its’ PDNS sensor network, global proxy network of virtual users, port scans, and leverages third-party sources for malware and added Domain Name System (DNS) data.
 
-This internet data is categorized into two distinct groups: traditional and advanced. Traditional data sets include Resolutions, WHOIS, SSL Certificates, Subdomains, Hashes, DNS, Reverse DNS, and Services. Advanced data sets include Trackers, Components, Host Pairs, and Cookies. Trackers, Components, Host Pairs, and Cookies data sets are collected from observing the Document Object Model (DOM) of web pages crawled. Additionally, Components and Trackers are also observed from detection rules that are triggered based on the banner responses from port scans or SSL Certificate details. Many of these data sets have various methods to sort, filter, and download data, making it easier to access information that may be associated with a specific artifact type or time in history.
+This internet data is categorized into two distinct groups: traditional and advanced. Traditional data sets include Resolutions, WHOIS, SSL Certificates, Subdomains, DNS, Reverse DNS, and Services. Advanced data sets include Trackers, Components, Host Pairs, and Cookies. Trackers, Components, Host Pairs, and Cookies data sets are collected from observing the Document Object Model (DOM) of web pages crawled. Additionally, Components and Trackers are also observed from detection rules that are triggered based on the banner responses from port scans or SSL Certificate details. Many of these data sets have various methods to sort, filter, and download data, making it easier to access information that may be associated with a specific artifact type or time in history.
 
 For more information, see:
 

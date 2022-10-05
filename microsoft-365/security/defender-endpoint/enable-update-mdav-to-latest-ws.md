@@ -13,11 +13,12 @@ ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365-initiative-defender-endpoint
+- m365-security
+- tier2
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Enable and update Defender Antivirus to the latest version on Windows Server

@@ -18,7 +18,10 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
+search.appverid: met150
 ---
 
 # Report and troubleshoot Microsoft Defender for Endpoint ASR Rules

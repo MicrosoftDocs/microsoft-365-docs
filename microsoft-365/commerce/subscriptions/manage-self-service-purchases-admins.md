@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: prlachhw, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration 
+ms.service: microsoft-365-business 
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 

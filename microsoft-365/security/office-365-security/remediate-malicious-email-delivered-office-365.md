@@ -4,7 +4,7 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 audience: admin
 f1.keywords: 
   - NOCSH

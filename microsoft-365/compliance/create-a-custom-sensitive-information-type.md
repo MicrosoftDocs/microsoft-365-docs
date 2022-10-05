@@ -11,7 +11,8 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -29,6 +30,8 @@ There are two ways to create a new sensitive information type:
 - [from scratch where you fully define all elements](#create-a-custom-sensitive-information-type)
 - [copy and modify an existing sensitive information type](#copy-and-modify-a-sensitive-information-type)
 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 
