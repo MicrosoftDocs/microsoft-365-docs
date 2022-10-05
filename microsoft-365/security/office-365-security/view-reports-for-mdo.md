@@ -14,7 +14,7 @@ search.appverid:
   - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: Admins can learn how to find and use the Defender for Office 365 reports that are available in the Microsoft 365 Defender portal.
 ms.custom:

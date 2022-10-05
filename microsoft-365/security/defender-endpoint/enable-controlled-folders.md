@@ -14,7 +14,9 @@ ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.date:
 search.appverid: met150
 ---

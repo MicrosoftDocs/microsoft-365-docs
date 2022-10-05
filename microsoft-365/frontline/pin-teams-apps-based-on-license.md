@@ -13,15 +13,13 @@ ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration
   - m365-frontline
+  - highpri
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ---
 
 # Tailor Teams apps for your frontline workers
-
-> [!NOTE]
-> This feature is currently being rolled out and might not be available in your organization yet. To stay on top of upcoming Teams features, check out the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=microsoft%2Cteams).
 
 ## Overview
 

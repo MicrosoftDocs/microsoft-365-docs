@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 03/02/2022
+ms.date:
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -14,15 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - SPO_Content
 recommendations: false
-description: "DLP policy component and configuration reference"
+description: "DLP policy component and configuration reference. This article provides a detailed anatomy of a DLP policy."
 ms.custom: seo-marvel-apr2021
 ---
 # Data Loss Prevention policy reference
 
 Microsoft Purview Data Loss Prevention (DLP) policies have many components to configure. To create an effective policy, you need to understand what the purpose of each component is and how its configuration alters the behavior of the policy. This article provides a detailed anatomy of a DLP policy.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Policy templates 
 

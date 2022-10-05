@@ -16,7 +16,9 @@ ms.custom:
   - next-gen
   - edr
   - admindeeplinkDEFENDER
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 search.appverid: met150
 ---
 

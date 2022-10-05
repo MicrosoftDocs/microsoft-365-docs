@@ -10,9 +10,11 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- highpri
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
@@ -23,6 +25,8 @@ description: "Set Microsoft Purview Compliance Manager user permissions and role
 # Get started with Compliance Manager
 
 **In this article:** This article helps you set up Compliance Manager. Learn how to **access** Compliance Manager, **set roles and permissions**, and configure **automatic testing of improvement actions**. Walk through **your Compliance Manager dashboard** and understand the main pages: the improvement actions page, the solutions page, the assessments page, and the assessment templates page.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Who can access Compliance Manager
 

@@ -14,8 +14,8 @@ ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection:
-- tier1
-- M365-security-compliance
+- tier3
+- purview-compliance
 - data-connectors
 ---
 
@@ -24,6 +24,8 @@ ms.collection:
 Use a native connector in the Microsoft Purview compliance portal to import and archive financial services chat data from the [Instant Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) collaboration tool. After you set up and configure a connector, it connects to your organization's Bloomberg secure FTP site (SFTP) once every day, converts the content of chat messages to an email message format, and then imports those items to mailboxes in Microsoft 365.
 
 After Instant Bloomberg data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, Communication compliance, and Microsoft 365 retention policies to Instant Bloomberg data. For example, you can search Instant Bloomberg chat messages using Content Search or associate the mailbox that contains the Instant Bloomberg data with a custodian in a Microsoft Purview eDiscovery (Premium) case. Using an Instant Bloomberg connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Overview of archiving Instant Bloomberg data
 

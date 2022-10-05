@@ -5,7 +5,7 @@ summary: Last updated September 9, 2022. Curious which help articles are most po
 metadata:
   title: Top 20 most-viewed admin help articles this month # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Check out this collection of top 20 help articles that are most popular with admins, updated monthly. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   author: SKjerland #Required; your GitHub user alias, with correct capitalization.
   ms.author: sharik #Required; microsoft alias of author; optional team alias.
@@ -16,6 +16,7 @@ metadata:
   - VSBFY23
   - AdminSurgePortfolio
   ms.collection: 
+  - scotvorg
   - highpri
   - Adm_TOC
 

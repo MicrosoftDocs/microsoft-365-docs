@@ -17,6 +17,8 @@ appliesto:
 
 # Preparing for TLS 1.2 in Office 365 and Office 365 GCC
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Summary
 
 To provide the best-in-class encryption to our customers, Microsoft plans to deprecate Transport Layer Security (TLS) versions 1.0 and 1.1 in Office 365 and Office 365 GCC. We understand that the security of your data is important, and we're committed to transparency about changes that may affect your use of the TLS service.

@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid:
 - MOE150
@@ -43,6 +43,8 @@ To preview a sample of results returned by a search:
    ![Preview items in the reading pane.](../media/PreviewSearchResults2.png)
 
    In the previous screenshot, notice that keywords from the search query are highlighted when you preview items.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How the search result samples are selected
 

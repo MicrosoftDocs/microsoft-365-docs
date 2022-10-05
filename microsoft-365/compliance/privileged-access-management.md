@@ -16,8 +16,10 @@ search.appverid:
 ms.collection:
 - highpri
 - tier3
-- m365-security-compliance
+- purview-compliance
 - m365solution-insiderrisk
+- m365initiative-compliance
+- highpri
 ms.custom: 
  - Ent_Solutions
  - seo-marvel-apr2020
@@ -28,6 +30,8 @@ ms.custom:
 Microsoft Purview Privileged Access Management allows granular access control over privileged admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. Privileged access management requires users to request just-in-time access to complete elevated and privileged tasks through a highly scoped and time-bounded approval workflow. This configuration gives users just-enough-access to perform the task at hand, without risking exposure of sensitive data or critical configuration settings. Enabling privileged access management allows your organization to operate with zero standing privileges and provide a layer of defense against standing administrative access vulnerabilities.
 
 For a quick overview of the integrated Customer Lockbox and privileged access management workflow, see this [Customer Lockbox and privileged access management video](https://go.microsoft.com/fwlink/?linkid=2066800).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Layers of protection
 

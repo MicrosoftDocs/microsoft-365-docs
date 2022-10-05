@@ -9,6 +9,9 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
+ms.collection:
+- purview-compliance
+- tier1
 ms.localizationpriority: high
 description: Learn about the default labels and policies for Microsoft Purview Information Protection to classify and protect sensitive content.
 ---
@@ -39,6 +42,8 @@ Eligibility includes customers who have a [free trial for Microsoft Purview](com
     |Service-side auto-labeling | At least one auto-labeling policy that's turned on|
     |DLP for Teams | At least one DLP policy for Teams|
     |DLP for devices | At least one DLP policy for devices|
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Activate the default labels and policies
 

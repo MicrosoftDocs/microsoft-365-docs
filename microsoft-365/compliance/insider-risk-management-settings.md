@@ -14,8 +14,10 @@ audience: itpro
 ms.collection:
 - highpri 
 - tier1
-- M365-security-compliance
+- purview-compliance
 - m365solution-insiderrisk
+- m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
@@ -36,6 +38,8 @@ Insider risk management settings apply to all insider risk management policies, 
 - [Admin notifications](#admin-notifications)
 
 Before you get started and create insider risk management policies, it's important to understand these settings and choose setting levels best for the compliance needs for your organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Privacy
 

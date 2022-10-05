@@ -13,11 +13,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
 - m365solution-overview
 - m365solution-fpfn
 - highpri
+- tier1
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: 

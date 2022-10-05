@@ -13,8 +13,8 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 ---
 
 # Set up and configure Microsoft Defender for Endpoint Plan 1

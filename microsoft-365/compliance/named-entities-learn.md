@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 description: "Learn how named entities help you detect sensitive items containing names of people, physical addresses, and medical terms via data loss prevention policies"
 ---
 
@@ -40,6 +41,8 @@ DLP makes special use of named entities in *enhanced policy templates*, which ar
 <!-- There are many other SITs that detect strings like social security, credit card, or bank account numbers to identify sensitive items. For more information, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md).-->
 
 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Examples of named entity SITs
 

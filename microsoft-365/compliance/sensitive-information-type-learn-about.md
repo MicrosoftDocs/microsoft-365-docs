@@ -14,7 +14,9 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 description: "This article gives an overview of sensitive information types and how they detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items"
 ---
 
@@ -29,6 +31,8 @@ Identifying and classifying sensitive items that are under your organizations co
 Sensitive information types (SIT) are pattern-based classifiers. They detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md) for a complete list of all SITs.
 
 Microsoft provides a large number of pre-configured SITs or you can create your own.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Sensitive information types are used in
 
