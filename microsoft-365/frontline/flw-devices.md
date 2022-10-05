@@ -10,7 +10,9 @@ ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 search.appverid: MET150
 description: Get an overview of managing mobile devices for frontline workers in your organization. 
-ms.collection: m365-frontline
+ms.collection: 
+    - m365-frontline
+    - highpri
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

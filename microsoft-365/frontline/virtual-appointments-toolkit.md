@@ -18,6 +18,7 @@ ms.collection:
   - m365solution-healthcare
   - m365solution-scenario
   - m365-frontline
+  - highpri
 ms.reviewer: 
 description: Customizable resources and infographics you can add to your website to help your clients understand how to use virtual appointments with your organization. 
 appliesto: 

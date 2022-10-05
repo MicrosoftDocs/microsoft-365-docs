@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: null
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
@@ -150,7 +151,6 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Enabled $false
 ```
 
-
 ## Troubleshooting
 
 ### Problem
@@ -163,10 +163,10 @@ This may be due to an older version of Transport Layer Security (TLS). To connec
 
 ### Solution
 
-Upgrade to TLS 1.2. The following syntax updates the ServicePointManager Security Protocol to TLS1.2:
+Upgrade to TLS 1.2. The following syntax updates the ServicePointManager Security Protocol to allow TLS1.2:
 
 ```powershell
- [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+ [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
 ```
 
 To learn more, see [How to enable TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2).

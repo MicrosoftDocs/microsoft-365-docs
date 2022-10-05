@@ -1,14 +1,15 @@
 ---
 title: Import a term set using a SKOS-based format
-description: "Learn how to Import a term set using a SKOS-based format"
+description: Learn how to Import a term set using a SKOS-based format.
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.topic: article
-ms.service: 
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 ms.custom: admindeeplinkSPO
 search.appverid: 
 ms.localizationpriority: high

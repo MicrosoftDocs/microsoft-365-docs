@@ -7,9 +7,10 @@ author: Kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -39,13 +40,13 @@ The table below represents which apps and services are currently connected to th
 |**Intune Company Portal (Android)**|Yes|Yes|Yes|Yes|
 |**Microsoft Stream (Android, iOS)**|Yes|Yes|Yes|Yes|
 |**Microsoft Whiteboard**|Yes|Yes|Yes|Yes|
-|**Office.com**|Coming soon|Coming soon|Coming soon|Coming soon|
+|**Office.com**|Yes|Yes|Yes|Yes|
 |**OneNote**|Yes|Yes|Yes|Yes|
 |**OneDrive**|[Some settings currently managed by other controls.](/onedrive/disable-contact-support-send-feedback)||||
 |**Outlook (Web, iOS)**|Coming soon|Coming soon|Coming soon|Coming soon|
-|**Outlook (Desktop, Android, Mac)**|Coming soon|Coming soon|Coming soon|Coming soon|
+|**Outlook (Desktop, Android, Mac)**|Yes|Yes|Yes|Yes|
 |**PowerPoint**|Yes|Yes|Yes|Yes|
-|**Project**|Coming soon|Coming soon|Coming soon|Coming soon|
+|**Project**|Yes|Yes|Yes|Yes|
 |**Publisher**|Yes|Yes|Yes|Yes|
 |**SharePoint**|[Some settings currently managed by other controls.](/powershell/module/sharepoint-online/set-spotenant)||||
 |**Teams**|[Some settings currently managed by other controls.](/microsoftteams/manage-feedback-policies-in-teams)||||
@@ -53,6 +54,7 @@ The table below represents which apps and services are currently connected to th
 |**Word**|Yes|Yes|Yes|Yes|
 |**Visio**|Yes|Yes|Yes|Yes|
 |**Viva Goals**|Yes|Yes|Yes|Yes|
+|**Viva Insights**|Yes|Yes|Yes|Yes|
 |**Whiteboard**|Yes|Yes|Yes|Yes|
 |**Yammer**|Yes|Yes|Yes|Yes|
 

@@ -14,10 +14,10 @@ search.appverid:
   - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 description: Learn how to enable the Report Message or the Report Phishing add-ins for Outlook and Outlook on the web, for individual users, or for your entire organization.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Enable the Report Message or the Report Phishing add-ins

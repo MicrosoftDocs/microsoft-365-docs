@@ -9,17 +9,17 @@ f1.keywords: NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 09/20/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # What's new in Microsoft Defender for Office 365
@@ -40,9 +40,9 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft 365 Defender](../defender/whats-new.md)
 - [What's new in Microsoft Defender for Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
-- [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
+- [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
-## August 2022
+## September 2022
 
 **Automatic redirection from Office 365 Security and Compliance Center to Microsoft 365 Defender portal:** Automatic redirection begins for users accessing the security solutions in Office 365 Security and Compliance center (protection.office.com) to the appropriate solutions in Microsoft 365 Defender portal (security.microsoft.com). This is for all security workflows like: Alerts, Threat Management, and Reports. 
 - Redirection URLs:
@@ -62,6 +62,7 @@ For more information on what's new with other Microsoft Defender security produc
 - This change impacts all users who log in to the Office 365 Security and Compliance portal (protection.office.com), including security teams and end-users who access the Email Quarantine experience, at the **Microsoft Defender Portal** > **Review** > **Quarantine**.
 - Redirection is enabled by default and impacts all users of the Tenant.
 - Global Administrators and Security Administrators can turn on or off redirection in the Microsoft 365 Defender portal by navigating to **Settings** > **Email & collaboration** > **Portal redirection** and switch the redirection toggle.
+- **Built-in protection**: A profile that enables a base level of Safe Links and Safe Attachments protection that's on by default for all Defender for Office 365 customers. To learn more about this new policy and order of precedence, see [Preset security policies](preset-security-policies.md) and to learn about the specific Safe Links and Safe Attachment controls set, see [Safe Attachments settings](recommended-settings-for-eop-and-office365.md#safe-attachments-settings) and [Safe Links settings](recommended-settings-for-eop-and-office365.md#safe-links-settings).
 
 ## July 2022
 
@@ -82,6 +83,8 @@ For more information on what's new with other Microsoft Defender security produc
   - Configure impersonation protection settings for custom users and custom domains within Preset Strict/Standard policies and automatically protect your targeted users and targeted domain against impersonation attacks.
 
 - [Simplifying the quarantine experience (part two) in Microsoft 365 Defender for office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687): Highlights additional features to make the quarantine experience even easier to use.
+
+- [Introducing differentiated protection for priority accounts in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-differentiated-protection-for-priority-accounts-in/ba-p/3283838): Introducing GCC, GCC-H, and DoD availability of differentiated protection for priority accounts.
 
 ## April 2022
 

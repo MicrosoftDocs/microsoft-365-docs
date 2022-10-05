@@ -1,21 +1,23 @@
 ---
 title: "Set up historical versions in eDiscovery (Premium)"
+description: "Use historical versions in eDiscovery (Premium) to collect content from all versions of documents stored in SharePoint and OneDrive."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: "Use historical versions in eDiscovery (Premium) to collect content from all versions of documents stored in SharePoint and OneDrive."
 ---
 
 # Set up historical versions in eDiscovery (Premium) (preview)
@@ -25,6 +27,8 @@ The historical versions feature in eDiscovery (Premium) lets eDiscovery managers
 To support the historical versions capability in eDiscovery (Premium), SharePoint administrators must enable versioning for sites in their organization. Then, when users modify documents in SharePoint or OneDrive, implicit regular versions are created when document is saved (or autosaved). SharePoint versioning allows for tracking of the activity performed on SharePoint items (including documents, events, and tasks). This versioning capability leaves an audit trail that can provide evidence in legal investigations. These older versions of a document are available to the organization, who may be required to share such versions that have sensitive or relevant content during court discovery in a legal matter.
 
 After an eDiscovery administrator turns on historical versions for the organization and then activates it for specific SharePoint sites, the SharePoint content push service crawls all major and minor versions of documents on the activated sites and then sends those versions for indexing. After the crawling and indexing process is complete, documents and their versions are available for eDiscovery search. As long as a specific version can be accessed (by version history), then that version will be discoverable in an eDiscovery (Premium) collection search.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Set up historical versions
 

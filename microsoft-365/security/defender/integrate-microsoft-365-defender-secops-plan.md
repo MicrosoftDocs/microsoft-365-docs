@@ -3,7 +3,8 @@ title: Step 1. Plan for Microsoft 365 Defender operations readiness
 description: The basics of planning for Microsoft 365 Defender operations readiness when integrating Microsoft 365 Defender into your security operations.
 keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, secops, security operations, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +16,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-m365dsecops
+  - tier2
 ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 # Step 1. Plan for Microsoft 365 Defender operations readiness
 

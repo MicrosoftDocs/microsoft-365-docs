@@ -9,7 +9,8 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- tier2
+- purview-compliance
 ms.localizationpriority: null
 f1.keywords:
 - NOCSH
@@ -25,6 +26,8 @@ This article describes how to use attributes with information barriers, and it p
 - [Information barriers](information-barriers.md)
 - [Define policies for information barriers in Microsoft Teams](information-barriers-policies.md)
 - [Edit (or remove) IB policies](information-barriers-edit-segments-policies.md)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How to use attributes in IB policies
 

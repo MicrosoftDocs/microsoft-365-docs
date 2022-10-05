@@ -11,8 +11,8 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365initiative-compliance
+- purview-compliance
+- tier1
 search.appverid: 
 - MOE150
 - MET150
@@ -45,6 +45,8 @@ For more information about these capabilities that extend labeling beyond Office
 
 Independently from labeling, you can continue to use the [AIPService](/powershell/module/aipservice) PowerShell module for tenant-level management of the encryption service. For example, configure super user access when you need to remove encryption for data recovery, track and revoke documents that have been opened by the AIP client, and configure the use license validity period for offline access. For more information, see [Administering protection from Azure Information Protection by using PowerShell](/azure/information-protection/administer-powershell).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Decide whether to use built-in labeling for Office apps or the AIP add-in
 
 Now that the AIP client is in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613), we don't recommend you use the AIP add-in for Office apps for the following reasons:
@@ -69,16 +71,21 @@ Some features are only supported by built-in labeling for Office apps, and won't
     - Access to intelligent classification services that include [trainable classifiers](classifier-learn-about.md), [exact data match (EDM)](sit-learn-about-exact-data-match-based-sits.md), and [named entities](named-entities-learn.md)
     - Detection of sensitive information as users type
     - In Word, users can review and remove the identified sensitive content
-- [PDF support](sensitivity-labels-office-apps.md#pdf-support) (in preview)
+- [Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) is integrated into existing user workflows
+- [PDF support](sensitivity-labels-office-apps.md#pdf-support)
 - For labels that let users assign permissions, different permissions (Read or Change) can be granted to users or groups
 - Encrypt-Only for emails
-- Visibility of labels on the status bar
+- Visibility of labels on the status bar (Will be replaced with the sensitivity bar on the window title.)
 - Support for account switching
 - Users can't disable labeling
 
 Example showing how users can review and optionally remove identified sensitive content in Word:
 
 ![Credit card numbers identified to users as sensitivity content with an option to remove.](../media/detect-sensitive-content.png)
+
+Example showing how sensitivity labels are integrated into user workflows:
+
+![Example showing sensitivity label name and description in the Save this file dialog box.](../media/sensitivity-label-in-save-dialog.png)
 
 To keep informed when new labeling capabilities become available for built-in labeling, see [What's new in Microsoft Purview](whats-new.md) and the **Sensitivity labels** sections.
 
@@ -130,8 +137,8 @@ Use the following information to help you identify if you're using a feature fro
 |**Category: User Experience** ||
 |Labeling button on the ribbon|![Supported.](../media/yes-icon.png)|
 |Multilanguage support for label names and tooltips| ![Supported.](../media/yes-icon.png) <br>[Learn more](create-sensitivity-labels.md#example-configuration-to-configure-a-sensitivity-label-for-different-languages) |
-|Label colors| In planning or development |
-|Visibility of labels on the toolbar| In planning or development |
+|Visibility of labels on a toolbar| ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#sensitivity-bar) |
+|Label colors| ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#label-colors) |
 |**Category: Labeling actions** ||
 |Manual labeling |  ![Supported.](../media/yes-icon.png) <br>[Learn more](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) |
 |Mandatory labeling | ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels.md#what-label-policies-can-do)|

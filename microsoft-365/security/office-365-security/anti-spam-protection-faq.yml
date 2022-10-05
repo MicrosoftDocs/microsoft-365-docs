@@ -14,13 +14,13 @@ metadata:
     - MET150
   ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
   ms.collection: 
-    - M365-security-compliance
+    - m365-security
     - m365initiative-defender-office365
   ms.custom: 
     - seo-marvel-apr2020
   description: Admins can view frequently asked questions and answers about anti-spam protection in Exchange Online Protection (EOP).
-  ms.technology: mdo
-  ms.prod: m365-security
+  ms.subservice: mdo
+  ms.service: microsoft-365-security
 title: Anti-spam protection FAQ
 summary: |
   [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
