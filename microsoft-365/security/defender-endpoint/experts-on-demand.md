@@ -110,6 +110,6 @@ Response from Microsoft Defender Experts varies according to your inquiry. They'
 
 It's crucial to respond in quickly to keep the investigation moving.
 
-#### To proactively hunt threats across endpoints, Office 365, cloud applications, and identity, refer to:
+#### To proactively hunt for and ask Defender Experts about notifications on threats across endpoints, Office 365, cloud applications, and identity, refer to:
 
 - [Microsoft Defender Experts for Hunting in Microsoft 365 Defender](../defender/defender-experts-for-hunting.md)
