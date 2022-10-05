@@ -46,3 +46,8 @@ You can only create a freeform document processing model in SharePoint document 
 
 For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md#freeform-document-processing). 
 
+## See also
+
+[Compare custom models](difference-between-document-understanding-and-form-processing-model.md)
+
+[Train a freeform document processing model](train-freeform-document-processing-model.md)
