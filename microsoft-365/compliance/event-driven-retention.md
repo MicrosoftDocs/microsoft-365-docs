@@ -11,7 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 search.appverid: 
 - MOE150
 - MET150
@@ -45,6 +46,8 @@ Event-based retention, sometimes also referred to as "event-driven retention", i
 - Retention labels based on events often trigger a disposition review at the end of the retention period, so that a records manager can manually review and dispose of the content. For more information, see [Disposition of content](disposition.md).
 
 A retention label based on an event has the same capabilities as any retention label in Microsoft Purview. For more information, see [Learn about retention policies and retention labels](retention.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Understanding the relationship between event types, labels, events, and asset IDs
 

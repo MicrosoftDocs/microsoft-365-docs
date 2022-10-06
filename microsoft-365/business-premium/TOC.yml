@@ -4,7 +4,7 @@
       href: index.md
     - name: Productivity and security 
       href: m365bp-secure-users.md
-    - name: Microsoft 365 Business Premium trial playbook
+    - name: User trial guide - Microsoft 365 Business Premium
       href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: Get Microsoft 365 Business Premium
       href: get-microsoft-365-business-premium.md
@@ -70,28 +70,20 @@
     items:
       - name: Overview
         href: m365bp-protect-devices.md
-      - name: Set up managed devices
-        href: m365bp-managed-devices-setup.md
+      - name: Upgrade to Windows 10 Pro (if needed)
+        href: m365bp-upgrade-windows-10-pro.md    
       - name: Onboard enrolled devices and apply policies
         href: m365bp-onboard-devices-mdb.md
-      - name: Protect Windows devices
-        items: 
-          - name: Secure Windows devices
-            href: m365bp-secure-windows-devices.md
-          - name: Upgrade to Windows 10 Pro (if needed)
-            href: m365bp-upgrade-windows-10-pro.md
-          - name: Manage Windows devices
-            href: m365bp-manage-windows-devices.md
-          - name: Prepare for Office client deployment
-            href: m365bp-prepare-for-office-client-deployment.md
-          - name: Create app protection settings for Windows devices
-            href: m365bp-protection-settings-for-windows-10-devices.md
-          - name: Validate app settings on Windows devices
-            href: m365bp-validate-settings-on-windows-10-pcs.md
-  - name: Review and edit device policies
-    href: m365bp-view-edit-create-mdb-policies.md
-  - name: Manage device groups
-    href: m365bp-device-groups-mdb.md
+      - name: Use Windows Autopilot to set up or reset devices
+        href: /mem/autopilot/windows-autopilot?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      - name: Install Microsoft 365 Apps on devices
+        href: ../admin/setup/install-applications.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+  - name: Monitor onboarded devices
+    items: 
+      - name: Review and edit device policies
+        href: m365bp-view-edit-create-mdb-policies.md
+      - name: Manage device groups
+        href: m365bp-device-groups-mdb.md
 - name: Security incident management
   items: 
     - name: Overview
@@ -122,7 +114,9 @@
       href: m365bp-reset-devices-to-factory-settings.md
 - name: Reference
   items:
-    - name: Glossary of terms
+    - name: Top 10 ways to secure a business
+      href: ../admin/security-and-compliance/secure-your-business-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Glossary of security terms
       href: m365bp-glossary.yml
     - name: Microsoft 365 Business Premium FAQ
       href: microsoft-365-business-faqs.yml
@@ -131,7 +125,7 @@
     - name: Microsoft Defender for Business
       href: ../security/defender-business/index.yml
     - name: Microsoft Defender for Office 365
-      href: ../security/office-365-security/overview.md
+      href: /microsoft-365/security/office-365-security/overview
     - name: Microsoft 365 Lighthouse
       href: ../lighthouse/m365-lighthouse-overview.md
     - name: Threat protection by Microsoft Defender Antivirus
@@ -142,18 +136,8 @@
       href: m365bp-map-protection-features-to-intune-settings.md
     - name: Compliance Manager
       href: m365bp-set-up-compliance.md
-    - name: Windows Autopilot
-      items:
-        - name: Add Autopilot devices and profile
-          href: m365bp-add-Autopilot-devices-and-profile.md
-        - name: Autopilot profile settings
-          href: m365bp-Autopilot-profile-settings.md
-        - name: Create and edit Autopilot profiles
-          href: m365bp-create-and-edit-Autopilot-devices.md
-    - name: App protection settings for Android and iOS
-      href: m365bp-app-protection-settings-for-android-and-ios.md
-    - name: Validate app settings on Android and iOS
-      href: m365bp-validate-settings-on-android-or-ios.md
+    - name: Windows Autopilot scenarios and capabilities
+      href: /mem/autopilot/windows-autopilot-scenarios
 
       
 

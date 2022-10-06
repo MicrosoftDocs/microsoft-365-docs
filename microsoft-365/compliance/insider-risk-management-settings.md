@@ -11,10 +11,13 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: 
-- m365-security-compliance
+ms.collection:
+- highpri 
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
@@ -35,6 +38,8 @@ Insider risk management settings apply to all insider risk management policies, 
 - [Admin notifications](#admin-notifications)
 
 Before you get started and create insider risk management policies, it's important to understand these settings and choose setting levels best for the compliance needs for your organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Privacy
 
@@ -195,7 +200,7 @@ User activities detected by insider risk policies are assigned a specific risk s
 - **Default volume**: You'll see all high severity alerts and a balanced amount of medium and low severity alerts.
 - **More alerts**: You'll see all medium and high severity alerts and most low severity alerts. This setting level might result in more false positives.
 
-### Microsoft Defender for Endpoint (preview)
+### Microsoft Defender for Endpoint alert statuses (preview)
 
 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. To have better visibility of security violations in your organization, you can import and filter Defender for Endpoint alerts for activities used in policies created from insider risk management security violation policy templates.
 
@@ -231,6 +236,72 @@ For each of the following domain settings, you can enter up to 500 domains:
     By specifying allowed domains in settings, this activity with these domains is treated similarly to how internal organization activity is treated. For example, domains added here map to activities may involve sharing content with someone outside your organization (such as sending email to someone with a gmail.com address).
 
 - **Third party domains:** If your organization uses third-party domains for business purposes (such as cloud storage), include them here so you can receive alerts for activity related to the device indicator *Use a browser to download content from a third-party site*.
+
+### File path exclusions
+
+By defining file paths to exclude, user activities that map to specific indicators and that occur in these file path locations won't generate policy alerts. Some examples are copying or moving files to a system folder or network share path. You can enter up to 500 file paths for exclusion.
+
+To add file paths to exclude, complete the following steps:
+
+1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
+2. In the **File path exclusion** section, select **Add file paths to exclude**.
+3. On the **Add a file path** pane, enter an exact network share or device path to exclude from risk scoring. You can also use * and *([0-9]) to denote specific folders and sub-folders to be excluded.
+4. Select **Add file paths** to exclude to configure the file path exclusions or **Close** to discard the changes. 
+
+To delete a file path exclusion, select the file path exclusion and select **Delete**.
+
+### Default file path exclusions
+
+By default, several file paths are automatically excluded from generating policy alerts. Activities in these file paths are typically benign and could potentially increase the volume of non-actionable alerts. If needed, you can cancel the selection for these default file path exclusions to enable risk scoring for activities in these locations.
+
+The default file path exclusions are:
+
+- \Users\\\*\AppData
+- \Users\\\*\AppData\Local
+- \Users\\\*\AppData\Local\Roaming
+- \Users\\\*\AppData\Local\Local\Temp
+
+The wildcards in these paths denote that all folder levels between the \Users and \AppData are included in the exclusion. For example, activities in *C:\Users\Test1\AppData\Local* and *C:\Users\Test2\AppData\Local*, *C:\Users\Test3\AppData\Local* (and so on) would all be included and not scored for risk as part of the *\Users\\\*\AppData\Local* exclusion selection.
+
+### Site URL exclusions
+
+Configure site URL exclusions to prevent potential risk activities that occur in SharePoint (and SharePoint sites associated with Team channel sites) from generating policy alerts. You might want to consider excluding sites and channels that contain non-sensitive files and data that can be shared with stakeholders or the public. You can enter up to 500 site URL paths to exclude.
+
+To add site URL paths to exclude, complete the following steps:
+
+1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**.
+2. In the **Site URL exclusion** section, select **Add or edit SharePoint sites**.
+3. On the **Add or edit SharePoint sites** pane, enter or search for the SharePoint site to exclude from risk scoring. You'll only see SharePoint sites that you have permission to access.
+4. Select **Add** to configure the site URL exclusions or **Cancel** to discard the changes.
+
+To edit site URL paths to exclude, complete the following steps:
+
+1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**.
+2. In the **Site URL exclusion** section, select **Add or edit SharePoint sites**.
+3. On the **Add or edit SharePoint sites** pane, enter or search for the SharePoint site to exclude from risk scoring. You'll only see SharePoint sites that you have permission to access.
+4. Select **Edit** to configure the site URL exclusions or **Cancel** to discard the changes.
+
+To delete a Site URL exclusion, select the site URL exclusion and select **Delete**.
+
+### Keyword exclusions
+
+Configure exclusions for keywords that appear in file names, file paths, or email message subject lines. This allows flexibility for organizations that need to reduce potential alert noise due to flagging of benign terms specified for your organization. Such activities related to files or email subjects containing the keyword will be ignored by your insider risk management policies and won't generate alerts. You can enter up to 500 keywords to exclude. 
+
+Use the **Exclude only if it does not contain** field to define specific groupings of terms to ignore for exclusion, For example, if you want to exclude the keyword 'training,' but not exclude 'compliance training,' you would enter 'compliance' (or 'compliance training') in the **Exclude only if it does not contain** field and 'training' in the **But does contain** field.
+
+If you just want to exclude specific standalone terms, enter the terms in the **But does contain field** only.
+
+To add standalone keywords to exclude, complete the following steps:
+
+1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**.
+2. In the **Keyword exclusion** section, enter the standalone keywords in the **But does contain** field.
+3. Select **Save** to configure the keyword exclusions.
+
+To delete a standalone keyword to exclude, complete the following steps:
+
+1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
+2. In the **Keyword exclusion** section, select the *X* for the specific standalone keyword in the **But does contain** field. Repeat as needed to remove multiple keywords.
+3. Select **Save** to delete the keyword exclusions.
 
 ## Export alerts
 
