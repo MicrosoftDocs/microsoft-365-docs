@@ -477,7 +477,7 @@
 ##### [Power BI - How to use API - Samples](api-power-bi.md)
 ##### [Threat protection reports](threat-protection-reports.md)
 
-### [Advanced hunting](../defender/advanced-hunting-overview)
+### [Advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview)
 
 ### [Threat analytics overview](threat-analytics.md)
 #### [Read the analyst report](threat-analytics-analyst-reports.md)
