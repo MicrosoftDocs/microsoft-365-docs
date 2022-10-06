@@ -7909,6 +7909,11 @@
       "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-overview.md",
       "redirect_url": "/microsoft-365/security/defender/advanced-hunting-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/sit-defn-credentials-in-url.md",
+      "redirect_url": "/microsoft-365/compliance/sensitive-information-type-entity-definitions",
+      "redirect_document_id": true
     }            
-    ]
+   ]
   }
