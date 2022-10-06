@@ -44,6 +44,34 @@ This article provides information about Microsoft Defender for Endpoint attack s
 - [ASR rule modes](#asr-rule-modes)
 - [Per-rule-descriptions](#per-rule-descriptions)
 
+## Attack surface reduction rules by type
+
+ASR rules are categorized as one of two types:
+
+1. **Standard protection rules**: Are the minimum set of rules which Microsoft recommends you always enable, while you are evaluating the impact and configuration needs of the other ASR rules. These rules typically have minimal-to-no noticeable impact on the end user.
+1. **Other rules**: Rules which require some measure of following the documented deployment steps [Plan > Test (audit) > Enable (block/warn modes)], as documented in the [Attack surface reduction (ASR) rules deployment guide](attack-surface-reduction-rules-deployment.md)
+
+For the easiest method to enable the standard protection rules, see: [Simplified standard protection option](attack-surface-reduction-rules-report.md#simplified-standard-protection-option).
+
+| ASR rule name: | Standard protection rule? | Other rule? |
+|:---|:---|:---|
+| Block abuse of exploited vulnerable signed drivers| Yes | |
+| Block Adobe Reader from creating child processes | | Yes |
+| Block all Office applications from creating child processes | | Yes |
+| Block credential stealing from the Windows local security authority subsystem (lsass.exe) | Yes | |
+| Block executable content from email client and webmail | | Yes |
+| Block executable files from running unless they meet a prevalence, age, or trusted list criterion | | Yes |
+| Block execution of potentially obfuscated scripts | | Yes |
+| Block JavaScript or VBScript from launching downloaded executable content | | Yes |
+| Block Office applications from creating executable content | | Yes |
+| Block Office applications from injecting code into other processes | | Yes |
+| Block Office communication application from creating child processes | | Yes |
+| Block persistence through WMI event subscription | Yes | |
+| Block process creations originating from PSExec and WMI commands | | Yes |
+| Block untrusted and unsigned processes that run from USB | | Yes |
+| Block Win32 API calls from Office macros | | Yes |
+| Use advanced protection against ransomware | | Yes |
+
 ## ASR rules supported operating systems
 
 The following table lists the supported operating systems for rules that are currently released to general availability. The rules are listed alphabetical order in this table.
