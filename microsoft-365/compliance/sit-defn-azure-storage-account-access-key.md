@@ -14,7 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier2
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -23,6 +23,8 @@ description: "Azure storage account access key sensitive information type entity
 ---
 
 # Azure storage account access key (preview)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 
@@ -72,7 +74,7 @@ This SIT is designed to match the security information that's used to make reque
 It uses several primary resources:
 
 - Patterns of Base64 encoded string literal.
-- Patterns of Base64 encoded 512 bits symmetric key.
+- Patterns of Base64 encoded 512-bits symmetric key.
 - Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id, AccountName.
 - Patterns of mockup values, redactions, and placeholders.
 - A dictionary of vocabulary.

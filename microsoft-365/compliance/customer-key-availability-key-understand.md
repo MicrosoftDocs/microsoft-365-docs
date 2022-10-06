@@ -28,6 +28,8 @@ Sharing the responsibility to protect your data, using various protections and p
 
 See the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data) for more information about how we secure keys.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Availability key uses
 
 The availability key provides recovery capability for scenarios in which an external malefactor or malicious insider steals control of your key vault, or when inadvertent mismanagement results in loss of root keys. This recovery capability applies to all Microsoft 365 services compatible with Customer Key. Individual services use the availability key differently. Microsoft 365 only uses the availability key in the ways described below.

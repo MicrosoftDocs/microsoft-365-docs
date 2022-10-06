@@ -29,6 +29,8 @@ If the content includes Information Rights Management permissions, these permiss
 > [!NOTE]
 > Content explorer includes user activities related to Microsoft 365 service files, such as user activity on SharePoint, Exchange, Microsoft Teams, and OneDrive for Business.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Column options
 
 To make it easier for risk analysts and investigators to review captured data and messages and review the context to the case, several filtering and sorting tools are included in the Content explorer. For basic sorting, the **Date** and **File class** columns support sorting using the column titles in the content queue pane. Other queue columns are available to add to the view to provide different pivots on the files and messages.

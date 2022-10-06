@@ -35,6 +35,8 @@ You can only set expiration dates for emails to external recipients.
 
 With Microsoft Purview Advanced Message Encryption, anytime you apply custom branding, the Office 365 applies the wrapper to email that fits the mail flow rule to which you apply the template. In addition, you can only use expiration if you use custom branding.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Create a custom branding template to force mail expiration by using PowerShell
 
 1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) with an account that has global administrator permissions in your organization.

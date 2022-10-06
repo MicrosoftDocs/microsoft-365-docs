@@ -25,6 +25,8 @@ ms.custom: seo-marvel-mar2020
 
 As you define the content of your portal content, legal hold notifications, and related reminders/escalations, you can use the Communications Editor to format and dynamically customize your content.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Rich text editor
 
 The Communications Editor allows user to customize the text using the editor options. For example, users can change font types, create bulleted lists, highlight content, and more.

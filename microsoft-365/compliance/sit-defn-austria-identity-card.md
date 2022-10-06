@@ -24,6 +24,8 @@ description: "Austria identity card sensitive information type entity definition
 
 # Austria identity card
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A 24-character combination of letters, digits, and special characters

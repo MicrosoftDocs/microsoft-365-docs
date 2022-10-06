@@ -20,6 +20,8 @@ description: "Document Fingerprinting makes it easier for you to protect informa
 
 Information workers in your organization handle many kinds of sensitive information during a typical day. In the Microsoft Purview compliance portal, Document Fingerprinting makes it easier for you to protect this information by identifying standard forms that are used throughout your organization. This topic describes the concepts behind Document Fingerprinting and how to create one by using PowerShell.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Basic scenario for Document Fingerprinting
 
 Document Fingerprinting is a Microsoft Purview Data Loss Prevention (DLP) feature that converts a standard form into a sensitive information type, which you can use in the rules of your DLP policies. For example, you can create a document fingerprint based on a blank patent template and then create a DLP policy that detects and blocks all outgoing patent templates with sensitive content filled in. Optionally, you can set up [policy tips](use-notifications-and-policy-tips.md) to notify senders that they might be sending sensitive information, and the sender should verify that the recipients are qualified to receive the patents. This process works with any text-based forms used in your organization. Additional examples of forms that you can upload include:

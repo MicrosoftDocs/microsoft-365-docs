@@ -33,6 +33,8 @@ In Microsoft Purview, you implement data loss prevention by defining and applyin
 
 DLP detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches to keywords, by the evaluation of regular expressions, by internal function validation, and by secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## DLP is part of the larger Microsoft Purview offering
 
 DLP is just one of the Microsoft Purview tools that you will use to help protect your sensitive items wherever they live or travel. You should understand the other tools in the Microsoft Purview tools set, how they interrelate, and work better together.  See, [Microsoft Purview tools](protect-information.md) to learn more about the information protection process.

@@ -29,6 +29,8 @@ If your organization has a subscription and end-user licensing that supports Aud
 
 ![Workflow to set up Audit (Premium).](../media/AdvancedAuditWorkflow.png)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Set up Audit (Premium) for users
 
 Audit (Premium) features such as the ability to log crucial events such as MailItemsAccessed and Send require an appropriate E5 license assigned to users. Additionally, the Advanced Auditing app/service plan must be enabled for those users. To verify that the Advanced Auditing app is assigned to users, perform the following steps for each user:

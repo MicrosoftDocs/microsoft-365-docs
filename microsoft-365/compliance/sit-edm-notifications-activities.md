@@ -33,6 +33,8 @@ When you [create custom sensitive information types with exact data match (EDM)]
 > [!NOTE]
  The ability to create notifications for EDM activities is available for the World Wide and GCC clouds only.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Pre-requisites
 
 The account you use must be one of the following:

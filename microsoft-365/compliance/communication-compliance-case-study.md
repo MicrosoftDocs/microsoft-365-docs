@@ -38,6 +38,8 @@ This case study will cover the basics for quickly configuring a communication co
 - [Step 3: Configuring prerequisites and creating a communication compliance policy](#step-3-configuring-prerequisites-and-creating-a-communication-compliance-policy)
 - [Step 4: Investigate and remediate alerts](#step-4-investigate-and-remediate-alerts)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Planning for communication compliance
 
 Contoso IT administrators and compliance specialists attended online webinars about compliance solutions in Microsoft 365 and decided that communication compliance policies will help them meet the updated corporate policy requirements for reducing workplace harassment. Working together, they've developed a plan to create and enable a communication compliance policy that will detect inappropriate messages. This configuration includes detecting text for chats sent in Microsoft Teams, private messages and community conversations in Yammer, and in email messages sent in Exchange Online. Their plan includes identifying:

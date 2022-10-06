@@ -43,6 +43,8 @@ When you create a DLP policy, you can configure the user notifications to:
 
   - For Excel, PowerPoint, and Word documents that are stored on a OneDrive for Business site or SharePoint Online site that's included in the DLP policy, the policy tip appears on the Message Bar and the Backstage view (**File** menu \> **Info**).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Add user notifications to a DLP policy
 
 When you create a DLP policy, you can enable **User notifications**. When user notifications are enabled, Microsoft 365 sends out both email notifications and policy tips. You can customize who notification emails are sent to, the email text and the policy tip text.

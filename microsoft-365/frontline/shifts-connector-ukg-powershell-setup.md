@@ -34,7 +34,7 @@ We provide two scripts. You can use either script, depending on whether you want
 
 You can set up multiple connections, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection with unique sync settings for each location. Keep in mind that a UKG Dimensions instance can only be mapped to one team at any given time. If an instance is already mapped to a team, it can't be mapped to another team.
 
-With UKG Dimensions as the system of record, your frontline workers can see and swap shifts, manage their availability, and request time off in Shifts on their devices. Frontline managers can continue to use UKG Dimensions to set up schedules.
+With UKG Dimensions as the system of record, your frontline workers can efficiently manage their schedules and availability in Shifts on their devices. Frontline managers can continue to use UKG Dimensions to set up schedules.
 
 > [!NOTE]
 > You can also use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the Microsoft 365 admin center to connect Shifts to UKG Dimensions.
@@ -101,14 +101,19 @@ The script does the following actions. You'll be prompted to enter setup and con
 
 A Success message on the screen indicates that your connection is successfully set up.
 
-## If you need to make changes to a connection
+## Manage your connection
 
-You can use PowerShell or the Microsoft 365 admin center to manage and make changes to a connection after it's set up. For example, you can use PowerShell to update sync settings, team mappings, and disable sync for a connection. In the Microsoft 365 admin center, you can view information such as health status for all your connections and access the wizard to change connection settings.
+After a connection is set up, you can manage and make changes to it in the Microsoft 365 admin center or by using PowerShell.
 
-To learn more, see:
+### Use the Microsoft 365 admin center
 
-- [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md)
-- [Use the Microsoft 365 admin center to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-admin-center-manage.md)
+The Connector Management page lists each connection that you've set up, along with information such as health status and sync interval details. You can also access the wizard to make changes to any of your connections. For example, you can update sync settings and team mappings.
+
+To learn more, see [Use the Microsoft 365 admin center to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-admin-center-manage.md).
+
+### Use PowerShell
+
+You can use PowerShell to view an error report, change connection settings, disable sync, and more. For step-by-step guidance, see [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
 
 ## Scripts
 

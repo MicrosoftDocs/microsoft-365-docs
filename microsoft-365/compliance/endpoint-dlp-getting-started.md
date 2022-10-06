@@ -31,6 +31,8 @@ Endpoint data loss prevention (Endpoint DLP) is part of the Microsoft Purview Da
 
 Microsoft Endpoint DLP allows you to monitor [onboarded Windows 10, and Windows 11](device-onboarding-overview.md) and [onboarded macOS devices](device-onboarding-macos-overview.md) running Catalina 10.15 and higher. Once a device is onboarded, DLP will detect when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they are used and protected properly, and to help prevent risky behavior that might compromise them.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
 ### SKU/subscriptions licensing

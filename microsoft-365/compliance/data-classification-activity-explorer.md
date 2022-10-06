@@ -41,6 +41,8 @@ There are over 30 different filters available for use, some are:
 
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Prerequisites
 
 Every account that accesses and uses data classification must have a license assigned to it from one of these subscriptions:

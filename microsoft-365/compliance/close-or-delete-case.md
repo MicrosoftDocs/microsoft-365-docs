@@ -25,6 +25,8 @@ ms.custom: seo-marvel-mar2020
 
 When the legal case or investigation supported by a Microsoft Purview eDiscovery (Premium) case is completed, you can close or delete a case. You can also reopen a closed case.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Close a case
 
 Here's what happens when you close an eDiscovery (Premium) case:

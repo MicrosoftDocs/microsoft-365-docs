@@ -31,6 +31,8 @@ After you've configured your [communication compliance policies](/microsoft-365/
 
 After you have the required permissions, follow the workflow instructions here to investigate and remediate alert issues.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Investigate alerts
 
 The first step to investigate issues detected by your policies is to review communication compliance alerts in the Microsoft Purview compliance portal. There are several areas in the communication compliance solution area to help you to quickly investigate alerts, depending on how you prefer to view alert grouping:

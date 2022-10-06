@@ -22,7 +22,7 @@ description: Learn how to find resources for Microsoft SharePoint Syntex.
 
 SharePoint Syntex is a Microsoft 365 service that helps organizations to:
 
-- Use advanced AI and machine teaching to amplify human experiences
+- Use advanced AI and machine teaching and learning to amplify human experiences
 - Automate content processing
 - Transform content into knowledge
 
