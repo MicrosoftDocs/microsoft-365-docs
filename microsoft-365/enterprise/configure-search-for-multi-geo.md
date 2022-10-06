@@ -50,7 +50,7 @@ Confirm that the OneDrive sync client automatically detects your OneDrive for Bu
 
 Office applications:
 
-Confirm that you can access OneDrive for Business by logging in from an Office application, such as Word. Open the Office application and select **OneDrive – /<TenantName/>**. Office will detect your OneDrive location and show you the files that you can open.
+Confirm that you can access OneDrive for Business by logging in from an Office application, such as Word. Open the Office application and select **OneDrive – \<TenantName\>**. Office will detect your OneDrive location and show you the files that you can open.
 
 Sharing:
 
