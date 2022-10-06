@@ -34,7 +34,7 @@ Defender for Office 365 helps organizations secure their enterprise by offering 
 
 :::image type="content" source="../../media/microsoft-defender-for-office-365.png" alt-text="Microsoft Defender for Office 365 conceptual diagram." lightbox="../../media/microsoft-defender-for-office-365.png":::
 
-Watch this short video to learn more about how you can get more done in less time with Microsoft Defender for Office 365.
+In addition to the detection of advanced threats, the following video shows how the SecOps capabilities of Defender for Office 365 can help your team respond to threats:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMmIe]
 
