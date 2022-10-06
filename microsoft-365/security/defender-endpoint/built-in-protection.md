@@ -27,7 +27,7 @@ f1.keywords: NOCSH
 > **You don't have to wait for built-in protection to come to you**! You can protect your organization's devices now by configuring these capabilities:
 > - [Enable cloud protection](why-cloud-protection-should-be-on-mdav.md)
 > - [Turn tamper protection on](prevent-changes-to-security-settings-with-tamper-protection.md)
-> - [Set basic attack surface reduction rules to block mode](attack-surface-reduction-rules-deployment.md)
+> - [Set standard attack surface reduction rules to block mode](attack-surface-reduction-rules-deployment.md)
 > - [Enable network protection in block mode](enable-network-protection.md)
 
 ## What is built-in protection, and how does it work?
