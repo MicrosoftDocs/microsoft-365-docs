@@ -17,14 +17,52 @@ description: Learn how to configure search in a multi-geo environment. Only some
 
 # Configure Search for Microsoft 365 Multi-Geo
 
-In a multi-geo environment, each geo location has its own search index and Search Center. When a user searches, the query is fanned out to all the indexes, and the returned results are merged.
+## Configure Multi-Geo Search
 
-For example, a user in one geo location can search for content stored in another geo location, or for content on a SharePoint site that's restricted to a different geo location. If the user has access to this content, search will show the result.
+Your Multi-Geo tenant will have aggregate search capabilities allowing a search query to return results from anywhere within the tenant.
 
-## Which search clients work in a multi-geo environment?
+By default, searches from these entry points will return aggregate results, even though each search index is located within its relevant _Geography_ location:
 
-These clients can return results from all geo locations:
+- OneDrive for Business
+- Delve
+- SharePoint Home
+- Search Center
 
+Additionally, Multi-Geo search capabilities can be configured for your custom search applications that use the SharePoint search API.
+
+Please review <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/configure-search-for-multi-geo?view=o365-worldwide" target="_blank">Configure Search for OneDrive for Business Multi-Geo</a> for instructions including any limitations and differences.
+
+## Validating the Microsoft 365 Multi-Geo configuration
+
+Below are some basic use cases you may wish to include in your validation plan before broadly rolling out Microsoft 365 Multi-Geo to your company. Once you have completed these tests and any additional use cases that are relevant to your company, you may choose to move on to adding the users in your initial pilot group.
+
+OneDrive for Business:
+
+Select OneDrive from the Microsoft 365 app launcher and confirm that you are automatically directed to the appropriate _Geography_ location for the user, based on the user's PDL. OneDrive for Business should now begin provisioning at that location. Once provisioned, try uploading and downloading some documents.
+
+OneDrive Mobile App:
+
+Log in to your OneDrive mobile App with your test account credentials. Confirm that you can see your OneDrive for Business files and can interact with them from your mobile device.
+
+OneDrive sync client:
+
+Confirm that the OneDrive sync client automatically detects your OneDrive for Business _Geography_ location upon login. If you need to download the sync client, you can click **Sync** in the OneDrive library.
+
+Office applications:
+
+Confirm that you can access OneDrive for Business by logging in from an Office application, such as Word. Open the Office application and select "OneDrive – <TenantName>". Office will detect your OneDrive location and show you the files that you can open.
+
+Sharing:
+
+Try sharing OneDrive files. Confirm that the people picker shows you all your SharePoint online users regardless of their _Geography_ location.
+   
+In a multi-geo environment, each _Geography_ location has its own search index and Search Center. When a user searches, the query is fanned out to all the indexes, and the returned results are merged.
+
+For example, a user in one _Geography_ location can search for content stored in another _Geography_ location, or for content on a SharePoint site that's restricted to a different Geography location. If the user has access to this content, search will show the result.
+
+## Which search clients work in a Multi-Geo environment?
+
+These clients can return results from all Geography locations:
 - OneDrive
 - Delve
 - The SharePoint home page
@@ -32,28 +70,28 @@ These clients can return results from all geo locations:
 - Custom search applications that use the SharePoint Search API
 
 ### OneDrive
-
-As soon as the multi-geo environment has been set up, users that search in OneDrive get results from all geo locations.
-
+   
+As soon as the Multi-Geo environment has been set up, users that search in OneDrive get results from all _Geography_ locations.
+   
 ### Delve
 
-As soon as the multi-geo environment has been set up, users that search in Delve get results from all geo locations.
+As soon as the Multi-Geo environment has been set up, users that search in Delve get results from all _Geography_ locations.
 
-The Delve feed and the profile card only show previews of files that are stored in the central location. For files that are stored in satellite locations, the icon for the file type is shown instead.
+The Delve feed and the profile card only show previews of files that are stored in the central location. For files that are stored in _Satellite Geography_ locations, the icon for the file type is shown instead.
 
 ### The SharePoint home page
 
-As soon as the multi-geo environment has been set up, users will see news, recent and followed sites from multiple geo locations on their SharePoint home page. If they use the search box on the SharePoint home page, they'll get merged results from multiple geo locations.
+As soon as the Multi-Geo environment has been set up, users will see news, recent and followed sites from multiple _Geography_ locations on their SharePoint home page. If they use the search box on the SharePoint home page, they'll get merged results from multiple _Geography_ locations.
 
 ### The Search Center
 
-After the multi-geo environment has been set up, each Search Center continues to only show results from their own geo location. Admins must [change the settings of each Search Center](#_Set_up_a_1) to get results from all geo locations. Afterwards, users that search in the Search Center get results from all geo locations.
+After the multi-geo environment has been set up, each Search Center continues to only show results from their own _Geography_ location. Admins must [change the settings of each Search Center](#_Set_up_a_1) to get results from all _Geography_ locations. Afterwards, users that search in the Search Center get results from all _Geography_ locations.
 
 ### Custom search applications
 
-As usual, custom search applications interact with the search indexes by using the existing SharePoint Search REST APIs. To get results from all, or some geo locations, the application must [call the API and include the new Multi-Geo query parameters](#_Get_custom_search) in the request. This triggers a fan out of the query to all geo locations.
+As usual, custom search applications interact with the search indexes by using the existing SharePoint Search REST APIs. To get results from all, or some _Geography_ locations, the application must [call the API and include the new Multi-Geo query parameters](#_Get_custom_search) in the request. This triggers a fan out of the query to all _Geography_ locations.
 
-## What's different about search in a multi-geo environment?
+## What's different about search in a Multi-Geo environment?
 
 Some search features you might be familiar with, work differently in a multi-geo environment.
 
@@ -68,28 +106,28 @@ Some search features you might be familiar with, work differently in a multi-geo
 <tbody>
 <tr class="odd">
 <td align="left">Promoted results</td>
-<td align="left">You can create query rules with promoted results at different levels: for the whole tenant, for a site collection, or for a site. In a multi-geo environment, define promoted results at the tenant level to promote the results to the Search Centers in all geo locations. If you only want to promote results in the Search Center that's in the geo location of the site collection or site, define the promoted results at the site collection or site level. These results are not promoted in other geo locations.</td>
-<td align="left">If you don't need different promoted results per geo location, for example different rules for traveling, we recommend defining promoted results at the tenant level.</td>
+<td align="left">You can create query rules with promoted results at different levels: for the whole tenant, for a site collection, or for a site. In a Multi-Geo environment, define promoted results at the tenant level to promote the results to the Search Centers in all _Geography_ locations. If you only want to promote results in the Search Center that's in the _Geography_ location of the site collection or site, define the promoted results at the site collection or site level. These results are not promoted in other _Geography_ locations.</td>
+<td align="left">If you don't need different promoted results per _Geography_ location, for example different rules for traveling, we recommend defining promoted results at the tenant level.</td>
 </tr>
 <tr class="even">
 <td align="left">Search refiners</td>
-<td align="left">Search returns refiners from all the geo locations of a tenant and then aggregates them. The aggregation is a best effort, meaning that the refiner counts might not be 100% accurate. For most search-driven scenarios, this accuracy is sufficient.
+<td align="left">Search returns refiners from all the _Geography_ locations of a tenant and then aggregates them. The aggregation is a best effort, meaning that the refiner counts might not be 100% accurate. For most search-driven scenarios, this accuracy is sufficient.
 </td>
-<td align="left">For search-driven applications that depend on refiner completeness, query each geo location independently.</td>
+<td align="left">For search-driven applications that depend on refiner completeness, query each _Geography_ location independently.</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
-<td align="left">Multi-geo search doesn't support dynamic bucketing for numerical refiners.</td>
+<td align="left">Multi-Geo search doesn't support dynamic bucketing for numerical refiners.</td>
 <td align="left">Use the <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" parameter</a> for numerical refiners.</td>
 </tr>
 <tr class="even">
 <td align="left">Document IDs</td>
-<td align="left">If you're developing a search-driven application that depends on document IDs, note that document IDs in a multi-geo environment aren't unique across geo locations, they are unique per geo location.</td>
-<td align="left">We've added a column that identifies the geo location. Use this column to achieve uniqueness. This column is named "GeoLocationSource".</td>
+<td align="left">If you're developing a search-driven application that depends on document IDs, note that document IDs in a Multi-Geo environment aren't unique across _Geography_ locations, they are unique per _Geography_ location.</td>
+<td align="left">We've added a column that identifies the _Geography_ location. Use this column to achieve uniqueness. This column is named "GeoLocationSource".</td>
 </tr>
 <tr class="odd">
 <td align="left">Number of results</td>
-<td align="left">The search results page shows combined results from the geo locations, but it's not possible to page beyond 500 results.</td>
+<td align="left">The search results page shows combined results from the _Geography_ locations, but it's not possible to page beyond 500 results.</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
@@ -118,20 +156,20 @@ Some of the search features you might be familiar with, aren't supported in a mu
 </tr>
 <tr class="even">
 <td align="left">Guests</td>
-<td align="left">Guests only get results from the geo location that they're searching from.</td>
+<td align="left">Guests only get results from the _Geography_ location that they're searching from.</td>
 </tr>
 </tbody>
 </table>
 
-## How does search work in a multi-geo environment?
+## How does search work in a Multi-Geo environment?
 
 All the search clients use the existing SharePoint Search REST APIs to interact with the search indexes.
 
 ![Diagram showing how SharePoint Search REST APIs interact with the search indexes.](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. A search client calls the Search REST endpoint with the query property EnableMultiGeoSearch= true.
-2. The query is sent to all geo locations in the tenant.
-3. Search results from each geo location are merged and ranked.
+2. The query is sent to all _Geography_ locations in the tenant.
+3. Search results from each _Geography_ location are merged and ranked.
 4. The client gets unified search results.
 
 <span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Notice that we don't merge the search results until we've received results from all the geo locations. This means that multi-geo searches have additional latency compared to searches in an environment with only one geo location.
@@ -164,7 +202,7 @@ Each Search Center has several verticals and you have to set up each vertical in
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## Get custom search applications to show results from all or some geo locations
 
-Custom search applications get results from all, or some, geo locations by specifying query parameters with the request to the SharePoint Search REST API. Depending on the query parameters, the query is fanned out to all geo locations, or to some geo locations. For example, if you only need to query a subset of geo locations to find relevant information, you can control the fan out to only these. If the request succeeds, the SharePoint Search REST API returns response data.
+Custom search applications get results from all, or some, _Geography_ locations by specifying query parameters with the request to the SharePoint Search REST API. Depending on the query parameters, the query is fanned out to all _Geography_ locations, or to some geo locations. For example, if you only need to query a subset of _Geography_ locations to find relevant information, you can control the fan out to only these. If the request succeeds, the SharePoint Search REST API returns response data.
 
 ### Requirement
 
@@ -188,7 +226,7 @@ MultiGeoSearchConfiguration - This is an optional list of which geo locations in
 <tbody>
 <tr class="odd">
 <td align="left">DataLocation</td>
-<td align="left">The geo location, for example NAM.</td>
+<td align="left">The _Geography_ location, for example NAM.</td>
 </tr>
 <tr class="even">
 <td align="left">EndPoint</td>
@@ -217,11 +255,11 @@ MultiGeoSearchStatus – This is a property that the SharePoint Search API retur
 <tbody>
 <tr class="odd">
 <td align="left">Full</td>
-<td align="left">Full results from <strong>all</strong> the geo locations.</td>
+<td align="left">Full results from <strong>all</strong> the _Geography_ locations.</td>
 </tr>
 <tr class="even">
 <td align="left">Partial</td>
-<td align="left">Partial results from one or more geo locations. The results are incomplete due to a transient error.</td>
+<td align="left">Partial results from one or more _Geography_ locations. The results are incomplete due to a transient error.</td>
 </tr>
 </tbody>
 </table>
@@ -318,7 +356,7 @@ https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id
 
 ### Query using CSOM
 
-Here's a sample CSOM query that's fanned out to **all** geo locations:
+Here's a sample CSOM query that's fanned out to **all** _Geography_ locations:
 
 ```CSOM
 var keywordQuery = new KeywordQuery(ctx);
