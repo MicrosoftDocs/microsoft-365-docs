@@ -34,6 +34,8 @@ This article discusses the following steps necessary to set up eDiscovery (Premi
 
 This includes ensuring the proper licensing required to access eDiscovery (Premium) and add custodians to cases, and assigning permissions to your legal and investigation team so they can access and manage cases.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Verify and assign appropriate licenses
 
 Licensing for eDiscovery (Premium) requires the appropriate organization subscription and per-user licensing. For a list of licensing requirements for eDiscovery (Premium), see [Subscriptions and licensing](overview-ediscovery-20.md#subscriptions-and-licensing).

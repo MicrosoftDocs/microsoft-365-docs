@@ -14,6 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -24,6 +25,8 @@ description: "All Physical Addresses sensitive information type entity definitio
 # All Physical Addresses
 
 All physical addresses is a bundled entity SIT, which detects patterns related to physical addresses from all supported countries/regions.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 
@@ -73,6 +76,7 @@ This bundled named entity SIT contains these individual SITs:
 - Iceland physical addresses
 - Ireland physical addresses
 - Italy physical addresses
+- Japan physical addresses
 - Latvia physical addresses
 - Liechtenstein physical addresses
 - Lithuania physical addresses

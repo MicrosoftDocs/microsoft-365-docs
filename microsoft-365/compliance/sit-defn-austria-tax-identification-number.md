@@ -14,6 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -22,6 +23,8 @@ description: "Austria tax identification number sensitive information type entit
 ---
 
 # Austria tax identification number
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 

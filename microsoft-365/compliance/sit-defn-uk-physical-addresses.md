@@ -14,6 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -24,6 +25,8 @@ description: "U.K. physical addresses sensitive information type entity definiti
 # U.K. physical addresses
 
 This unbundled named entity detects patterns related to physical address from the U.K.. It's also included in the [All Physical Addresses](sit-defn-all-physical-addresses.md) bundled named entity SIT.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Confidence level
 

@@ -36,6 +36,8 @@ Here are some examples:
 - A health care provider sends health care information to patients
 - An attorney sends confidential information to a customer or another attorney
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How Office 365 Message Encryption works without the new capabilities
 
 Office 365 Message Encryption is an online service that's built on Microsoft Azure Rights Management (Azure RMS). With Azure RMS, administrators can define mail flow rules to determine the conditions for encryption. For example, a rule can require the encryption of all messages addressed to a specific recipient.

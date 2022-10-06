@@ -55,6 +55,8 @@ Use the following instructions for the two admin steps.
 >
 > For these scenarios, see [Publish retention labels and apply them in apps](create-apply-retention-labels.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
 The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see the permissions information for [records management](get-started-with-records-management.md#permissions) or [data lifecycle management](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels), depending on the solution you're using.
@@ -288,7 +290,7 @@ To consider when using trainable classifiers to auto-apply retention labels:
 #### Auto-apply labels to cloud attachments
 
 > [!NOTE]
-> This option is gradually rolling out in preview and is subject to change.
+> This option is in preview and subject to change.
 
 You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications by users. You use this option in conjunction with retention policies for the communication services themselves, Exchange and Teams.
 

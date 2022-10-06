@@ -14,6 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -22,6 +23,8 @@ description: "Azure Storage account shared access signature for high risk resour
 ---
 
 # Azure Storage account shared access signature for high risk resources (preview)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 
@@ -68,7 +71,7 @@ This SIT is designed to match the security information that's used to grant rest
 
 It uses several primary resources:
 
-- Patterns of Base64 encoded 256 bits symmetric key.
+- Patterns of Base64 encoded 256-bits symmetric key.
 - Patterns of URL Encoded 256 bits symmetric key.
 - Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id.
 - Patterns of mockup values, redactions, and placeholders.

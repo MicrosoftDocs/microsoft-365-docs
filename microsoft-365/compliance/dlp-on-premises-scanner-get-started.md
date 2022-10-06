@@ -21,12 +21,14 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MET150
-description: "Set up data loss prevention on-premises scanner"
+description: "This article describes the prerequisites and configuration for the Microsoft Purview data loss prevention on-premises scanner."
 ---
 
 # Get started with the data loss prevention on-premises scanner
 
 This article walks you through the prerequisites and configuration for the Microsoft Purview data loss prevention on-premises scanner.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 

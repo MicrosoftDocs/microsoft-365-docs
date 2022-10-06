@@ -158,6 +158,8 @@ Our Threat, Profanity, and Harassment classifiers can scan content in these lang
 
 All others are English only.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## See also
 
 - [Retention labels](retention.md)

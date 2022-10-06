@@ -32,6 +32,8 @@ For other workloads, see:
 - [Learn about retention for Yammer](retention-policies-yammer.md)
 - [Learn about retention for Exchange](retention-policies-exchange.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## What's included for retention and deletion
 
 All files stored in SharePoint or OneDrive sites can be retained by applying a retention policy or retention label. 

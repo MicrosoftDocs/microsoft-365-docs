@@ -14,6 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -22,6 +23,8 @@ description: "Italy value added tax number sensitive information type entity def
 ---
 
 # Italy value added tax number
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 

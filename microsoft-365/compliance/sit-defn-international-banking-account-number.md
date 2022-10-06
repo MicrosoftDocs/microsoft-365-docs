@@ -14,6 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -23,13 +24,15 @@ description: "International banking account number (IBAN) sensitive information 
 
 # International banking account number (IBAN)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Country code (two letters) plus check digits (two digits) plus bban number (up to 30 characters)
 
 ## Pattern
 
-Pattern must include all of the following:
+Pattern must include all of these patterns:
 
 - Two-letter country code
 - Two check digits (followed by an optional space)

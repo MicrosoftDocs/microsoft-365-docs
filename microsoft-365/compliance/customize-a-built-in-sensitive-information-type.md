@@ -27,6 +27,8 @@ When looking for sensitive information in content, you need to describe that inf
 
 You can take this example and apply it to other built-in sensitive information types. For a list of default sensitive information types and XML definitions, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Export the XML file of the current rules
 
 To export the XML, you need to [connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).

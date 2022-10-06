@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection:
-- tier1
+- tier3
 - purview-compliance
 - data-connectors
 ms.custom: admindeeplinkCOMPLIANCE
@@ -24,6 +24,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 # Set up a connector to import HR data in US Government
 
 You can set up a data connector in the Microsoft Purview compliance portal to import human resources (HR) data to your US Government organization. HR-related data includes the date an employee submitted their resignation and date of the employee's last day. This HR data can then be used by Microsoft information protection solutions, such as the [insider risk management solution](insider-risk-management.md), to help protect your organization from malicious activity or data theft inside your organization. Setting up an HR connector consists of creating an app in Azure Active Directory that's used for authentication by connector, creating a CSV mapping files that contains your HR data, creating a data connector in the compliance center, and then running a script (on a scheduled basis) that ingests the HR data in the CSV file to the Microsoft cloud. Then the data connector is used by the insider risk management tool to access the HR data that was imported to your Microsoft 365 US Government organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 

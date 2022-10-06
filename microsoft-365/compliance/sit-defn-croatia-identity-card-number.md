@@ -14,6 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -25,6 +26,8 @@ description: "Croatia identity card number sensitive information type entity def
 # Croatia identity card number
 
 This entity is included in the EU National Identification Number sensitive information type. It's available as a stand-alone sensitive information type entity.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 

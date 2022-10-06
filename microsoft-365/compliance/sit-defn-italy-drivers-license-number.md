@@ -14,6 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -23,7 +24,9 @@ description: "Italy driver's license number sensitive information type entity de
 
 # Italy drivers license number
 
-This type entity is included in the EU Driver's License Number sensitive information type. It's also available as a stand-alone sensitive information type entity.
+This entity is included in the EU Driver's License Number sensitive information type. It's also available as a stand-alone sensitive information type entity.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 

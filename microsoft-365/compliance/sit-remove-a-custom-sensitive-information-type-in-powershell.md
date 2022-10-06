@@ -69,6 +69,8 @@ In Security & Compliance PowerShell, there are two methods to remove custom sens
      Get-DlpSensitiveInformationType -Identity "<Name>"
      ```
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## More information
 
 - [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)

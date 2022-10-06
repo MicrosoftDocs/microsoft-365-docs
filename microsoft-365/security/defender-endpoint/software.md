@@ -6,12 +6,14 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api

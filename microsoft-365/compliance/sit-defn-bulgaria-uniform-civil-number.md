@@ -14,6 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -22,6 +23,8 @@ description: "Bulgaria uniform civil number sensitive information type entity de
 ---
 
 # Bulgaria uniform civil number
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 

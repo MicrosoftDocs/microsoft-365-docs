@@ -14,6 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -22,6 +23,8 @@ description: "X.509 certificate private key sensitive information type entity de
 ---
 
 # X.509 certificate private key (preview)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 
@@ -48,7 +51,7 @@ for example:
 
 or
 
-5 dashes (-)
+five dashes (-)
 
 And a combination of up to 30 characters:
 
