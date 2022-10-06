@@ -82,7 +82,7 @@ This SIT is designed to match the security information that's used as individual
 
 It uses several primary resources:
 
-- Patterns of Plain-text username and password for Azure AD tenant.
+- Patterns of Plain-text username and password for Azure AD tenants.
 - Patterns of Password context in code.
 - Patterns of Password context in XML.
 - Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName.
