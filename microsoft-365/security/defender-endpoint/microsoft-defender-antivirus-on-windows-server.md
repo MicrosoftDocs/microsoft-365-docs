@@ -11,9 +11,8 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.technology: mde
 ms.topic: article
-ms.date: 04/01/2022
+ms.date: 10/06/2022
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
