@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- tier1
+- tier3
 - purview-compliance
 - data-connectors
 ms.custom:
@@ -41,6 +41,8 @@ Here's an overview of the process and the steps necessary to work with a Microso
 [Step 4: Provide your partner with information](#step-4-provide-your-partner-with-information)
 
 [Step 5: Register the third-party data connector in Azure Active Directory](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How the third-party data import process works
 

@@ -28,6 +28,8 @@ This article describes how de-duplication of eDiscovery search results works and
   
 When using eDiscovery tools to export the results of an eDiscovery search, you have the option to de-duplicate the results that are exported. What does this mean? When you enable de-duplication (by default, de-duplication isn't enabled), only one copy of an email message is exported even though multiple instances of the same message might have been found in the mailboxes that were searched. De-duplication helps you save time by reducing the number of items that you have to review and analyze after the search results are exported. But it's important to understand how de-duplication works and be aware that there are limitations to the algorithm that might cause a unique item to be marked as a duplicate during the export process.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How duplicate messages are identified
 
 eDiscovery tools use a combination of the following email properties to determine whether a message is a duplicate:

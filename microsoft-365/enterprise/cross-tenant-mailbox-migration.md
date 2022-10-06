@@ -7,15 +7,16 @@ manager: scotv
 ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.date: 06/20/2022
 ms.reviewer: georgiah
 ms.custom:
-  - it-pro
-  - admindeeplinkMAC
-  - admindeeplinkEXCHANGE
+- it-pro
+- admindeeplinkMAC
+- admindeeplinkEXCHANGE
 ms.collection:
-  - M365-subscription-management
+- scotvorg
+- M365-subscription-management
 ---
 
 # Cross-tenant mailbox migration (preview)
@@ -184,7 +185,8 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
 2. Accept the application when the pop-up appears. You can also log into your Azure Active Directory portal and find the application under Enterprise applications.
 
-3. Create a new organization relationship or edit your existing organization relationship object to your target (destination) tenant in Exchange Online PowerShell:
+3. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) on the source Exchange Online tenant.
+4. Create a new organization relationship or edit your existing organization relationship object to your target (destination) tenant in Exchange Online PowerShell:
 
    ```powershell
    $targetTenantId="[tenant id of your trusted partner, where the mailboxes are being moved to]"
@@ -358,11 +360,20 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 ```
 
 > [!NOTE]
-> The email address in the CSV file must be the one specified in the target tenant, not the source tenant.
+> The email address in the CSV file must be the one specified in the target tenant (for example, userA@targettenant.onmicrosoft.com), not the one in the source tenant.
 >
 > [For more information on the cmdlet click here](/powershell/module/exchange/new-migrationbatch)
 >
-> [For an example CSV file click here](/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
+> [For some example CSV file info click here](/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
+
+The following is a minimal example CSV file:
+
+```csv
+EmailAddress
+userA@targettenant.onmicrosoft.com
+userB@targettenant.onmicrosoft.com
+userC@targettenant.onmicrosoft.com
+```
 
 Migration batch submission is also supported from the new [Exchange admin center](https://go.microsoft.com/fwlink/p/?linkid=2059104) when selecting the cross-tenant option.
 
@@ -550,6 +561,15 @@ These conversions happen automatically during the migration process. No manual s
 ### At which step should I assign the Exchange Online license to destination MailUsers?
 
 This can be done before the migration is complete, but you should not assign a license prior to stamping the _ExchangeGuid_ attribute or the conversion of MailUser object to mailbox will fail and a new mailbox will be created instead. To mitigate this risk, it is best to wait until after the migration is complete, and assign licenses during the 30 day grace period.
+
+### Can I use Azure AD Connect to sync users to the new tenant if I am keeping the on-prem Active Directory?
+
+Yes. It is possible to have two instances of Azure AD Connect synchronize to different tenants.
+However, there are some things you need to be aware of.
+
+- Preprovisioning the user's accounts with the script provided in this article should not be done. Instead, a selective OU sync of the users in scope for the migration can be performed to populate the target tenant; you will receive a warning about the UPN not matching during Azure AD Connect configuration.
+- Depending on your current state of Hybrid Exchange, you need to verify that the on-prem directory objects have the required attributes (such as msExchMailboxGUID and proxyAddresses) populated correctly before attempting to sync to another tenant, or you will run into issues with double mailboxes and migration failures.
+- You need to take some extra steps to manage UPN transitioning, changing it on-prem once the migration has been completed for a user unless you are also moving the custom domain during a cut-over migration.
 
 ## Known issues
 

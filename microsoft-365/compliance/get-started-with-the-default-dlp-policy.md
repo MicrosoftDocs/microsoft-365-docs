@@ -30,6 +30,8 @@ You can use this widget to quickly view when and how much sensitive information 
   
 ![Widget named Further protect shared content.](../media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## View the report and refine the default DLP policy
 
 When the widget shows you that users have shared sensitive information with people outside your organization, choose **Refine DLP policy** at the bottom. 

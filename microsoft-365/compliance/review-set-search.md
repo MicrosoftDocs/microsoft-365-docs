@@ -25,6 +25,8 @@ ms.custom: seo-marvel-mar2020
 
 In most cases, it will be useful to dig deeper into the content in a review set and organize it to facilitate a more efficient review. Using filters and queries in a review set helps you focus on a subset of documents that meet the criteria of your review.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Default filters
 
 In a review set, there are five default filters that are pre-loaded in the review set:

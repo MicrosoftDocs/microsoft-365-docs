@@ -31,6 +31,8 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions.
 - [Insider risk management](insider-risk-management.md)
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
 - Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) and are associated with an identity (Azure AD joined UPN) through JAMF Connect or Intune.

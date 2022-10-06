@@ -24,6 +24,8 @@ ms.custom: seo-marvel-apr2020
 
 You can create the EDM schema and sensitive information type (or rule package) using the new experience in the compliance portal.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Applies to
 
 - New experience

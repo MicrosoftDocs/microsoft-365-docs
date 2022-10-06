@@ -16,7 +16,7 @@ ms.reviewer: shlomi, efratka
 f1.keywords: NOCSH  
 ms.collection: 
 - m365-security
-- m365initiative-defender-endpoint
+- tier1
 ---
 
 # Compare Microsoft endpoint security plans

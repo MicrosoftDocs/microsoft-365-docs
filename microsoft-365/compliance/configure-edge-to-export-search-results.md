@@ -22,6 +22,8 @@ search.appverid:
 
 As a result of recent changes to the newest version of Microsoft Edge, ClickOnce support is no longer enabled by default. To continue using the eDiscovery Export Tool to download Content Search or eDiscovery search results, you either need to use [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) or enable ClickOnce support in the newest version of Microsoft Edge.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Enable ClickOnce support in Microsoft Edge
 
 1. In Microsoft Edge, go to **edge://flags/#edge-click-once**.

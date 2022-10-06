@@ -36,6 +36,8 @@ Last updated: **10/16/2020**
 
 Expand the root and intermediate sections below to see additional details about the certificate providers.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## **Microsoft 365 Certificate Details**
 
 ### **Baltimore CyberTrust Root**

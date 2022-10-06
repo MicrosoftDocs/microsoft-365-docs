@@ -12,7 +12,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier1
+- tier3
 - purview-compliance
 - data-connectors
 ---
@@ -22,6 +22,8 @@ ms.collection:
 Use the TeleMessage connector in the Microsoft Purview compliance portal to import and archive SMS and MMS data from the Rogers mobile network. After you set up and configure a [Rogers Network Archiver connector](https://www.telemessage.com/mobile-archiver/network-archiver/rogers/), it connects to your organization's Rogers mobile network, and imports SMS and MMS data to mailboxes in Microsoft 365.
 
 After data from the Rogers mobile network is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, Content search, and Microsoft 365 retention policies to the data. For example, you can search for SMS and MMS messages from the Rogers mobile network using Content search or a search associated with a Microsoft Purview eDiscovery (Standard) case. Using a Rogers Network Archiver connector to import and archive data in Microsoft 365 can help your organization stay compliant with corporate governance regulations and regulatory policies.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Overview of archiving Rogers mobile network data
 

@@ -42,6 +42,8 @@ Microsoft 365 risk prevention features are designed and built-in to our insider 
 | ![Security violations icon.](../media/ir-risk-security-violations.png)| Security violations |  | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |
 | ![Regulatory compliance violations icon.](../media/ir-risk-regulatory-compliance-violations.png)| Regulatory compliance violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Insider risk solutions
 
 To help protect your organization against insider risks, use these Microsoft Purview capabilities and features.

@@ -12,7 +12,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier1
+- tier3
 - purview-compliance
 - data-connectors
 ---
@@ -22,6 +22,8 @@ ms.collection:
 Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from the Twitter platform to user mailboxes in your Microsoft 365 organization. Veritas provides a [Twitter](https://www.veritas.com/insights/merge1/twitter) connector that is configured to capture items from a third-party data source and import those items to Microsoft 365. The connector converts content such as tweets, retweets, and comments from Twitter to an email message format and then imports those items to the user mailboxes in Microsoft 365.
 
 After Twitter data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels. Using a Twitter connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Overview of archiving Twitter data
 

@@ -13,7 +13,6 @@ ms.collection:
 - purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
-- highpri
 - tier1
 search.appverid: 
 - MOE150
@@ -24,6 +23,8 @@ description: "Migrate your existing compliance data into Microsoft Purview Compl
 # Update improvement actions and bring compliance data into Compliance Manager
 
 **In this article:** Learn how to migrate your organization's existing compliance activities into Compliance Manager and update multiple improvement actions at once by uploading a formatted Excel file.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Overview
 

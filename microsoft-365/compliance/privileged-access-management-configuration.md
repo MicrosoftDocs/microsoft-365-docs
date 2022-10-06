@@ -30,6 +30,8 @@ ms.assetid:
 
 This article guides you through enabling and configuring privileged access management in your organization. You can use either the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> or Exchange Management PowerShell to manage and use privileged access.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
 Before you get started with privileged access management, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use privileged access management, your organization must have one of the following subscriptions or add-ons:
