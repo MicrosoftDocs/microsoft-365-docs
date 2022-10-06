@@ -52,13 +52,16 @@ To provide clarity to the descriptions below on data residency functionality and
 Microsoft 365 Cloud services run on our data centers around the world and provide services to customers around the world.  Customer data may be stored in multiple data centers.  Data residency refers to the geographic location where customer data is stored at rest. Data residency is important for government, public sector, education and regulated commercial entities to help ensure protection of personal and/or sensitive information.  In many countries, customers are expected to comply with laws, regulations or industry standards that explicitly govern the location of data storage.
 
 Microsoft makes decisions on where to persistently store customer data based on two factors:
-  1.    The _Default Geography_ of the tenant
-  2.    Available _Geographies_ for a given service
 
-***Default Geography of the AAD tenant***
-When a customer creates a new AAD tenant, the customre will enter a country during the creation process.  This country is what defines the _Default Geography_ for the tenant.  There are multiple paths to creating tenants.  They can be created through AAD forms, they can be created when trying out new M365 services (trials), etc.  Once a tenant is created, the _Default Geography_ cannot be changed.
+1. The _Default Geography_ of the tenant
+1. Available _Geographies_ for a given service
 
-**Available Geographies for a given service**
+### Default Geography of the AAD tenant
+
+When a customer creates a new AAD tenant, the customer will enter a country during the creation process.  This country is what defines the _Default Geography_ for the tenant.  There are multiple paths to creating tenants.  They can be created through AAD forms, they can be created when trying out new M365 services (trials), etc.  Once a tenant is created, the _Default Geography_ cannot be changed.
+
+### Available Geographies for a given service
+
 M365 services are not deployed to all Microsoft data centers globally.  The larger services, like Exchange Online, SharePoint Online and Teams are universally deployed to all _Geographies_.   Other services make decisions on where to deploy their services based on the number of customers, regional affiliations, and software architectures.  When a customer first uses a service in this category, the provisioning logic will use the _Default Geography_ and the supported _Geographies_ to determine where to provision a given customer.
 
 >[!NOTE]
@@ -78,22 +81,23 @@ Some examples:
 
 **Example 4b:** For a tenant with the sign up country as "Sweden" that has a subscription that includes Microsoft Yammer from before Yammer was deployed to _Macro Regional Geography 1 - EMEA_, then the customer data for Yammer will be located in _Macro Region Geography 3 - Americas_.  Why?  Because, at that time, Yammer only had a single deployment for all customers at that time in _Macro Region Geography 3 - Americas_.
 
-**Migrations/Moves**
+### Migrations/Moves
+
 Once a M365 service provisions a tenant into a particular _Geography_, there are five ways that this data could be moved to another _Geography_:
 
-1) The M365 service decides to move the data to a new _Geography_ for service operations reasons, if there are no other policies in place to prevent the move.
-2) For _Local Geographies_ that have Microsoft data centers, and for tenants that have the same country, there are options to migrate data from the _Regional Geographies_ into the _Local Geographies_.  This option is typically only available for 6 months after a _Local Geography_ has been established.
-3) If a tenant subscribes to the _Multi-Geo_ service, then users data for Exchange Online, SharePoint Online and Microsoft Teams can be assigned to _Satellite Geographies_.
-4) If a tenant has sign up country as a _Local Geography_ or _Expanded Geography_ and has a subscription to the _Advanced Data Residency_ service add-on, then the tenant data for the included services will be migrated from the _Regional Geography_ to the relevant _Local Geography_.
-5) At times Microsoft reopens Migration opt in from _Regional Geography_ to the relevant _Local Geographies_ or _Expanded Local Geographies_.
+1. The M365 service decides to move the data to a new _Geography_ for service operations reasons, if there are no other policies in place to prevent the move.
+1. For _Local Geographies_ that have Microsoft data centers, and for tenants that have the same country, there are options to migrate data from the _Regional Geographies_ into the _Local Geographies_.  This option is typically only available for 6 months after a _Local Geography_ has been established.
+1. If a tenant subscribes to the _Multi-Geo_ service, then users data for Exchange Online, SharePoint Online and Microsoft Teams can be assigned to _Satellite Geographies_.
+1. If a tenant has sign up country as a _Local Geography_ or _Expanded Geography_ and has a subscription to the _Advanced Data Residency_ service add-on, then the tenant data for the included services will be migrated from the _Regional Geography_ to the relevant _Local Geography_.
+1. At times Microsoft reopens Migration opt in from _Regional Geography_ to the relevant _Local Geographies_ or _Expanded Local Geographies_.
 
-**Durable commitments on data location**
+### Durable commitments on data location
 
 There are three methods for ensuring that the _tenant_ data location for a particular service does not change.
 
-1) Product Terms: Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams provisioned in any _Local Geography_, or the European Union or the United States have a commitment for customer data residency expressed in the <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank">Product Terms</a>.  For more information see the <a href="https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-product-terms-dr?view=o365-worldwide&branch=kvice-ADR-new" target="_blank">Product Terms Data Residency page</a>.
-2) _Multi Geo_ subscription: allows customers to assign data location for Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams to any supported Geography.  For more information see <a href="https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide&branch=kvice-ADR-new" target="_blank">Multi Geo Data Residency</a>.
-3) _Advanced Data Residency_ subscription will guarantee data residency for an expanded set of M365 services in any _Local Region Geography_ or _Expanded Local Region Geography_.  For more information see the <a href="https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/advanced-data-residency?view=o365-worldwide&branch=kvice-ADR-new" target="_blank">Advanced Data Residency page</a>.
+1. Product Terms: Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams provisioned in any _Local Geography_, or the European Union or the United States have a commitment for customer data residency expressed in the [Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).  For more information see the [Product Terms Data Residency page](m365-dr-product-terms-dr.md).
+1. _Multi Geo_ subscription: allows customers to assign data location for Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams to any supported Geography.  For more information see [Multi Geo Data Residency](microsoft-365-multi-geo.md).
+1. _Advanced Data Residency_ subscription will guarantee data residency for an expanded set of M365 services in any _Local Region Geography_ or _Expanded Local Region Geography_.  For more information see the [Advanced Data Residency page](advanced-data-residency.md).
 
 **Table 2: Available Data Residency by Workload**
 
@@ -109,8 +113,8 @@ There are three methods for ensuring that the _tenant_ data location for a parti
 | Microsoft Purview <br/> |-  <br/> |-  <br/> |X<sup>2</sup>  <br/> |
 
 1. Only available for _Local Geography_ countries, European Union and the United States.
-2. Available in _Local Geography, Expanded Local Geography_ and _Regional Geography countries/regions_
-3. Only available for _Local Geography_ and _Expanded Local Geography countries_
+1. Available in _Local Geography, Expanded Local Geography_ and _Regional Geography countries/regions_
+1. Only available for _Local Geography_ and _Expanded Local Geography countries_
 
 >[!NOTE]
 >See ***Section 5 Workload Data Residency Capabilities PAGE LINK*** for more details
@@ -148,15 +152,15 @@ There are three methods for ensuring that the _tenant_ data location for a parti
 | Greece (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
 | Taiwan (future)  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
 
-P=Product Terms Data Residency<br>
-M=Multi-Geo Data Residency<br>
-A=Advanced Data Residency
+P: Product Terms Data Residency<br>
+M: Multi-Geo Data Residency<br>
+A: Advanced Data Residency
 
 ### Country/Region specific Data Center city locations
 
 The following Regional Geographies can store data at rest.
 
-**Table 4 Regional Geographies**
+**Table 4: Regional Geographies**
 
 |**Regional Geographies** |**Locations where customer data may be stored**  |
 |---------|---------|
@@ -164,9 +168,9 @@ The following Regional Geographies can store data at rest.
 |Macro Region Geography 2 - Asia Pacific |  Hong Kong, Japan, Malaysia, Singapore, South Korea  |
 |Macro Region Geography 3 - Americas | Brazil, Chile, United States  |
 
-**Table 5 Current Local Geographies and Region specific Data Center locations**
+**Table 5: Current Local Geographies and Region specific Datacenter locations**
 
-|Column1  |Column2  |
+|Country |Datacenter Location  |
 |---------|---------|
 |Australia   |Sydney, Melbourne   |
 |Brazil   |Rio, Campinas   |
