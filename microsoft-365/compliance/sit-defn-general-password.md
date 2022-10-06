@@ -14,7 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier2
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -81,7 +81,7 @@ for example:
 
 or
 
-Various command line sign in credentials formats, for example: 
+Various command line sign-in credentials formats, for example: 
 
 `-u username:********`
 
@@ -227,7 +227,7 @@ Yes
 
 ## Description
 
-This SIT is designed to match the security information that's like usernames and passwords used in general sign in process [user login process](/azure/key-vault/quick-create-portal). It uses several primary resources:
+This SIT is designed to match the security information that's like usernames and passwords used in general sign-in process [user login process](/azure/key-vault/quick-create-portal). It uses several primary resources:
 
 - Patterns of Base64 encoded string literal.
 - Patterns of Password context in command line.

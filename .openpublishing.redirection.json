@@ -572,7 +572,7 @@
     },
     {
       "source_path": "microsoft-365/business/set-up-windows-devices.md",
-      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
       "redirect_document_id": false
     },
     {
@@ -7672,7 +7672,7 @@
     },
     {
       "source_path": "microsoft-365/business-premium/m365bp-set-up-windows-devices.md",
-      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-devices",
       "redirect_document_id": false
     },
     {
@@ -7889,6 +7889,26 @@
       "source_path": "microsoft-365/security/office-365-security/overview.md",
       "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365",
       "redirect_document_id": true
-    }
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/mssp-list.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/professional-services",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-schema-reference.md",
+      "redirect_url": "/microsoft-365/security/defender/advanced-hunting-schema-tables",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-devicealertevents-table.md",
+      "redirect_url": "/microsoft-365/security/defender/advanced-hunting-migrate-from-mde#map-devicealertevents-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-overview.md",
+      "redirect_url": "/microsoft-365/security/defender/advanced-hunting-overview",
+      "redirect_document_id": false
+    }            
     ]
   }
