@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/20/2022
+ms.date: 10/6/2022
 ms.reviewer: 
 ms.custom:
 - it-pro
@@ -26,9 +26,9 @@ ms.collection:
 > [!NOTE]
 > Due to the release of Advanced Data Residency, *we are opening the opt-in period for all previously released in-country data centers* (minus Qatar) to allow all remaining region-based tenants to opt in for a final free move to their respective signup countries.  This move effort will have an SLO (Service Level Objective) of 24 months, starting from the request deadline date. See the table below for a list of eligible countries and related dates.
 
-
 *When Can I Request a Move (final opt-in opportnuity)*
-||**Customers with signup country in**|**Request period begins**|**Request deadline**|
+
+|**Customers with signup country in**|**Request period begins**|**Request deadline**|
 |:-----|:-----|:-----|
 | Japan <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> |
 | Australia, New Zealand, Fiji <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> |
@@ -45,19 +45,17 @@ ms.collection:
 | Brazil <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> |
 | Sweden <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> |
 
-
 ## Remaining Countries in the Move Program
 
 > [!NOTE]
 > Even though the Move Program is officially ending, we still have some in-flight geographies that we will see through to completion, based on the original 24-month SLO. Please refer to the table below for the remaining countries and their migration deadlines. 
 
-||**Customers with signup country in**|**All moves completed by**|
+|**Customers with signup country in**|**All moves completed by**|
 |:-----|:-----|
 | Germany <br/> | May 1, 2023  <br/> |
 | Brazil <br/> | June 1, 2023  <br/> |
 | Sweden <br/> | June 1, 2024  <br/> |
 | Qatar <br/> | March 1, 2025  <br/> |
-
 
 ## Data move general FAQ
 
