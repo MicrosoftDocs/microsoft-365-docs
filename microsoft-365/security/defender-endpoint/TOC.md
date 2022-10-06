@@ -708,7 +708,6 @@
 
 ### [Managed security service provider (MSSP) integration]()
 #### [Configure managed security service provider integration](configure-mssp-support.md)
-#### [Supported managed security service providers](mssp-list.md)
 #### [Grant MSSP access to the portal](grant-mssp-access.md)
 #### [Access the MSSP customer portal](access-mssp-portal.md)
 #### [Configure alert notifications](configure-mssp-notifications.md)
