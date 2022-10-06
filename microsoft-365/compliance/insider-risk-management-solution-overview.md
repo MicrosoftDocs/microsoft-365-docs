@@ -1,6 +1,6 @@
 ---
 title: Insider risk management
-description: Learn how to configure insider risk management.
+description: Learn how to configure insider risk management. Insider risk management allows you to define specific policies to identify risk indicators.
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -13,8 +13,11 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - m365solution-insiderrisk
+- m365initiative-compliance
+- m365solution-scenario
+- highpri
 ---
 
 # Insider risk management
@@ -33,6 +36,8 @@ Watch the videos below to learn how insider risk management can help your organi
 
 **Insider risk management workflow**:
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Configure insider risk management
 

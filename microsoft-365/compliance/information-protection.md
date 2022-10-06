@@ -15,6 +15,8 @@ search.appverid:
 - MET150
 ms.collection:
 - m365solution-mip
+- m365initiative-compliance
+- highpri
 - tier1
 recommendations: false
 description: "Implement Microsoft Purview Information Protection capabilities to help you protect sensitive information wherever it lives or travels."
@@ -23,9 +25,6 @@ description: "Implement Microsoft Purview Information Protection capabilities to
 # Protect your sensitive data with Microsoft Purview
 
 >*[Licensing for Microsoft 365 Security & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
-
-> [!TIP]
-> *Did you know you can try the premium versions of all nine Microsoft Purview solutions for free?* Use the 90-day Purview solutions trial to explore how robust Purview capabilities can help your organization meet its compliance needs. Microsoft 365 E3 and Office 365 E3 customers can start now at the [Microsoft Purview compliance portal trials hub](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Learn details about [who can sign up and trial terms](compliance-easy-trials.md).
 
 Implement capabilities from **Microsoft Purview Information Protection** (formerly Microsoft Information Protection) to help you discover, classify, and protect sensitive information wherever it lives or travels.
 
@@ -36,6 +35,8 @@ These information protection capabilities give you the tools to [know your data]
 Use the following sections to learn more about the available capabilities and how to get started with each one. However, if you're looking for a guided deployment, see [Deploy an information protection solution with Microsoft Purview](information-protection-solution.md).
 
 For information about governing your data for compliance or regulatory requirements, see [Govern your data with Microsoft Purview](manage-data-governance.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Know your data
 

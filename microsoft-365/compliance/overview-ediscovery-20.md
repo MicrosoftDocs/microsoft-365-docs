@@ -13,9 +13,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- m365-security-compliance
+- purview-compliance
 - m365solution-aed
 - m365solution-overview
+- highpri
 - ediscovery
 search.appverid:
 - MOE150
@@ -26,6 +27,8 @@ ms.custom: seo-marvel-apr2020
 # Overview of Microsoft Purview eDiscovery (Premium)
 
 The Microsoft Purview eDiscovery (Premium) solution builds on the existing Microsoft eDiscovery and analytics capabilities. eDiscovery (Premium) provides an end-to-end workflow to preserve, collect, analyze, review, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## eDiscovery (Premium) capabilities
 

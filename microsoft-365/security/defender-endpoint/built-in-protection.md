@@ -12,6 +12,8 @@ ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
 ms.collection: 
+- m365-security
+- tier2
 ms.custom: 
 ms.reviewer: joshbregman
 f1.keywords: NOCSH 

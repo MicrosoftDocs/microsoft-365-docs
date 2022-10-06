@@ -474,6 +474,12 @@
                  href: configure-siem-defender.md
                - name: Troubleshoot issues with integrating SIEM tools
                  href: ../defender-endpoint/troubleshoot-siem.md
+            - name: Partner catalog
+              items:
+               - name: Technological partners of Microsoft 365 Defender
+                 href: ../defender-endpoint/technological-partners.md 
+               - name: Professional services supported by Microsoft 365 Defender
+                 href: ../defender-endpoint/professional-services.md           
             - name: Understand threat intelligence concepts
               href: ../defender-endpoint/threat-indicator-concepts.md 
         - name: Security intelligence

@@ -4,7 +4,7 @@
       href: index.md
     - name: Productivity and security 
       href: m365bp-secure-users.md
-    - name: Microsoft 365 Business Premium trial playbook
+    - name: User trial guide - Microsoft 365 Business Premium
       href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: Get Microsoft 365 Business Premium
       href: get-microsoft-365-business-premium.md
@@ -116,7 +116,7 @@
   items:
     - name: Top 10 ways to secure a business
       href: ../admin/security-and-compliance/secure-your-business-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: Glossary of terms
+    - name: Glossary of security terms
       href: m365bp-glossary.yml
     - name: Microsoft 365 Business Premium FAQ
       href: microsoft-365-business-faqs.yml

@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - tier1
 - SPO_Content
 search.appverid: 
@@ -31,6 +31,8 @@ For other workloads, see:
 - [Learn about retention for Microsoft Teams](retention-policies-teams.md)
 - [Learn about retention for Yammer](retention-policies-yammer.md)
 - [Learn about retention for Exchange](retention-policies-exchange.md)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## What's included for retention and deletion
 

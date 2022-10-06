@@ -10,7 +10,7 @@ ms.topic: article
 ms.date: 05/05/2021
 ms.localizationpriority: medium
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: View and investigate malware phishing attempts.
 ms.custom: 

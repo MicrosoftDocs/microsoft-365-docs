@@ -12,8 +12,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier1
-- M365-security-compliance
+- tier3
+- purview-compliance
 - data-connectors
 search.appverid: 
 - MOE150
@@ -31,6 +31,8 @@ There are two key building blocks for compliance extensibility:
 - **Data connectors**. Use to import and archive non-Microsoft data so you can apply Microsoft 365 protection and governance capabilities to third-party data.
 
 - **APIs**. Enables programmatic access to Microsoft Purview capabilities.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Data connectors
 
