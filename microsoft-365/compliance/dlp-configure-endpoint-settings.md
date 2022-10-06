@@ -416,6 +416,12 @@ The most common use case is to use network share group as an allowlist as in the
 
 Use the VPN list to control only those actions that are being carried out over that VPN.
 
+This feature is available for devices running any of these versions of Windows:  
+	
+- Windows 10 and later (20H2, 21H1, 21H2) 
+- Windows 11 21H2, 22H2
+- Windows 10 RS5 (KB 5006744)
+
 When you list a VPN in **VPN Settings** you can assign these policy actions to them:
 
 - Allow (audit with no user notifications or alerts)
