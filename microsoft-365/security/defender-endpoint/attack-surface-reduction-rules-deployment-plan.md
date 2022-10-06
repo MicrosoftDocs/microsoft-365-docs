@@ -31,6 +31,16 @@ Before you test or enable Microsoft Defender for Endpoint (MDE) attack surface r
 
 > :::image type="content" source="images/asr-rules-planning-steps.png" alt-text="The ASR rules planning steps. Preparation before you test Microsoft Defender for Endpoint (MDE) ASR rules, or enable MDE ASR rules. " lightbox="images/asr-rules-planning-steps.png":::
 
+> [!IMPORTANT]
+>
+> While you're going through the process of planning, auditing, and enable ASR rules, it's recommended that you enable the following three _standard protection rules_. See [Attack surface reduction rules by type](attack-surface-reduction-rules-reference.md#attack-surface-reduction-rules-by-type) for important details about the two types of ASR rules.
+>
+> - [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem)
+> - [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
+> - [Block persistence through Windows Management Instrumentation (WMI) event subscription](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
+>
+> You can typically enable the standard protection rules with minimal noticeable impact to the end user. For an easy method to enable the standard protection rules, see: [Simplified standard protection option](attack-surface-reduction-rules-report.md#simplified-standard-protection-option)
+
 ## Start your ASR rules deployment with the right business unit
 
 How you select the business unit to roll out your ASR rules  deployment will depend on factors such as:
