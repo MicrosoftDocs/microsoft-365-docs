@@ -52,7 +52,7 @@ Use the unstructured document processing model to automatically classify documen
 
 For example, an unstructured document could be a contract renewal letter that can be written in different ways. However, information exists consistently in the body of each contract renewal document, such as the text string "Service start date of" followed by an actual date.
 
-This model type supports the widest range of file types and only works on files using the Latin alphabet.
+This model type supports the widest range of file types and only works on files using the Latin alphabet (English characters).
 
 For more information, see [Overview of unstructured document processing](document-understanding-overview.md).
 
@@ -62,9 +62,9 @@ Use the freeform document processing model to automatically extract information 
 
 Freeform document processing models use Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) to create and train models within SharePoint Syntex. This model type is the best option for English documents in PDF or image files when you don't require automatic classification of the type of document.
 
-<discuss w/ Chuck before removing>You can use AI Builder to train AI models that use machine learning technology to identify and extract key-value pairs and table data from documents. You can then use Power Automate flows to automatically process the files.</remove>
-
 Because your organization receives letters and documents in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text and other information from these documents, this model automates this process.
+
+This model is the best option for English documents in PDF or image files when you don't need to automatically classify the type of document.
 
 For more information, see [Overview of freeform document processing](freeform-document-processing-overview.md).
 
@@ -74,9 +74,7 @@ Use the structured document processing model to automatically identify field and
 
 Structured document processing models use Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) document processing (formerly known as form processing) to create and train models within SharePoint Syntex. 
 
-<discuss w/ Chuck before removing>You can use AI Builder document processing to create AI models that use machine learning technology to identify and extract key-value pairs and table data from documents. You can then use Power Automate flows to automatically process the files.</remove>
-
-These models support the widest range of languages and are trained to understand the layout of your form from example documents, and learn to look for the data you need to extract from similar locations. Forms usually have a more structured layout where entities are in the same location (for example, a social security number in a tax form).
+This models supports the widest range of languages and are trained to understand the layout of your form from example documents, and learn to look for the data you need to extract from similar locations. Forms usually have a more structured layout where entities are in the same location (for example, a social security number on a tax form).
 
 For more information, see [Overview of structured document processing](form-processing-overview.md).
 
@@ -86,8 +84,8 @@ If you don't need to build a custom model, you can use a [prebuilt model](prebui
 
 Prebuilt models include:
 
-- [Invoice processing](#invoices-model)
-- [Receipt processing](#receipts-model)
+- [Invoice processing](#invoice-processing)
+- [Receipt processing](#receipt-processing)
 
 Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization.
 
