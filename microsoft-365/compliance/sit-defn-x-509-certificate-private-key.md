@@ -51,7 +51,7 @@ for example:
 
 or
 
-5 dashes (-)
+five dashes (-)
 
 And a combination of up to 30 characters:
 
