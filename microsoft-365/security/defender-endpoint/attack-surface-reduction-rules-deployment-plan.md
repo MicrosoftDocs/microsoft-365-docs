@@ -39,7 +39,7 @@ Before you test or enable Microsoft Defender for Endpoint (MDE) attack surface r
 > - [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
 > - [Block persistence through Windows Management Instrumentation (WMI) event subscription](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
 >
-> You can typically enable the standard protection rules with minimal noticeable impact to the end user. For an easy method to enable the standard protection rules, see: [Simplified standard protection option](attack-surface-reduction-rules-report.md#simplified-standard-protection-option)
+> You can typically enable the standard protection rules with minimal noticeable impact to the end user. For an easy method to enable the standard protection rules, see: [Simplified standard protection option](attack-surface-reduction-rules-report.md#simplified-standard-protection-option).
 
 ## Start your ASR rules deployment with the right business unit
 
