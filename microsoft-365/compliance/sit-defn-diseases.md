@@ -14,12 +14,12 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier2
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: "Diseases sensitive information type entity definition."
+description: "Diseases sensitive information type entity definition, this unbundled named entity detects text that matches disease names."
 ---
 
 # Diseases

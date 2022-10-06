@@ -5,7 +5,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-business
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 ms.reviewer: 
 author: serdars
