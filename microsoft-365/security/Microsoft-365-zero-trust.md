@@ -49,10 +49,8 @@ In the illustration:
 For more information about Zero Trust, see Microsoft's [_**Zero Trust Guidance Center**_](/security/zero-trust).
 
 <!---
-For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.learn.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype).
+For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](/security/zero-trust/zero-trust-ramp-overview).
 -->
-
-
 
 ## Deploying Zero Trust for Microsoft 365
 

@@ -7891,6 +7891,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/mssp-list.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/professional-services",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-schema-reference.md",
       "redirect_url": "/microsoft-365/security/defender/advanced-hunting-schema-tables",
       "redirect_document_id": false
