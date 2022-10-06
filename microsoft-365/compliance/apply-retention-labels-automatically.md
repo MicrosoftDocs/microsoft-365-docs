@@ -24,9 +24,6 @@ description: Create auto-labeling retention policies so you can automatically ap
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-> [!IMPORTANT]
-> Currently, there's an issue with adaptive scopes and the **Exchange email** location when you use sensitive information or use keywords or searchable properties as conditions for auto-labeling. Until the issue is resolved, you won't be able to select this location for the specified configurations.
-
 > [!NOTE]
 > This scenario is not supported for [regulatory records](records-management.md#records) or default labels for an organizing structure such as a document set or library in SharePoint, or a folder in Exchange. These scenarios require a [published retention label policy](create-apply-retention-labels.md).
 
