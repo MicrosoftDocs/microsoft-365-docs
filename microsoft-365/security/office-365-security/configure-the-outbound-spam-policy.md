@@ -14,12 +14,12 @@ search.appverid:
   - MET150
 ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn how to view, create, modify, and delete outbound spam policies in Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Configure outbound spam filtering in EOP
@@ -113,14 +113,14 @@ Creating a custom outbound spam policy in the Microsoft 365 Defender portal crea
    - **Exclude these users, groups, and domains**: To add exceptions for the internal senders that the policy applies to (recipient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
 
    > [!IMPORTANT]
-   > Multiple different conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
+   > Multiple different types of conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
    >
-   > - The recipient is: romain@contoso.com
-   > - The recipient is a member of: Executives
+   > - Users: romain@contoso.com
+   > - Groups: Executives
    >
-   > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives groups. If he's not a member of the group, then the policy is not applied to him.
+   > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy is not applied to him.
    >
-   > Likewise, if you use the same recipient filter as an exception to the policy, the policy is not applied to romain@contoso.com _only_ if he's also a member of the Executives groups. If he's not a member of the group, then the policy still applies to him.
+   > Likewise, if you use the same recipient filter as an exception to the policy, the policy is not applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy still applies to him.
 
    When you're finished, click **Next**.
 

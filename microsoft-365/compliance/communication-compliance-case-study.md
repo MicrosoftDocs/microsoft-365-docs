@@ -18,9 +18,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- remotework
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
@@ -38,6 +37,8 @@ This case study will cover the basics for quickly configuring a communication co
 - [Step 2: Accessing communication compliance](#step-2-accessing-communication-compliance)
 - [Step 3: Configuring prerequisites and creating a communication compliance policy](#step-3-configuring-prerequisites-and-creating-a-communication-compliance-policy)
 - [Step 4: Investigate and remediate alerts](#step-4-investigate-and-remediate-alerts)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Planning for communication compliance
 

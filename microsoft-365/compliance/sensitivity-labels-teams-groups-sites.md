@@ -11,7 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 ms.custom: admindeeplinkSPO
 search.appverid: 
@@ -24,7 +25,7 @@ description: "Use sensitivity labels to protect content in SharePoint and Micros
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-In addition to using [sensitivity labels](sensitivity-labels.md) to classify and protect documents and emails, you can also use sensitivity labels to protect content in the following containers: Microsoft Teams sites, Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)), and SharePoint sites. For this container-level classification and protection, use the following label settings:
+In addition to using [sensitivity labels](sensitivity-labels.md) to protect documents and emails, you can also use sensitivity labels to protect content in the following containers: Microsoft Teams sites, Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)), and SharePoint sites. For this container-level protection, use the following label settings:
 
 - Privacy (public or private) of teams sites and Microsoft 365 groups
 - External user access
@@ -37,9 +38,15 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to classify and
 > [!IMPORTANT]
 > The settings for unmanaged devices and authentication contexts work in conjunction with Azure Active Directory Conditional Access. You must configure this dependent feature if you want to use a sensitivity label for these settings. Additional information is included in the instructions that follow.
 
-When you apply this sensitivity label to a supported container, the label automatically applies the classification and configured protection settings to the site or group.
+When you apply this sensitivity label to a supported container, the label automatically applies the sensitivity category and configured protection settings to the site or group.
 
-Content in these containers however, do not inherit the labels for the classification or settings for files and emails, such as visual markings and encryption. So that users can label their documents in SharePoint sites or team sites, make sure you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Be aware that some label options can extend configuration settings to site owners, that are otherwise restricted to administrators. When you configure and publish the label settings for external sharing options and the authentication context, a site owner can now set and change these options for a site by applying or changing the sensitivity label for a team or site. Don't configure these specific label settings if you don't want site owners to be able to make these changes.
+
+Content in these containers however, do not inherit the labels for the sensitivity category or settings for files and emails, such as content markings and encryption. So that users can label their documents in SharePoint sites or team sites, make sure you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+
+Container labels don't support displaying [other languages](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell) and display the original language only for the label name and description.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Using sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites
 
@@ -52,7 +59,7 @@ After you enable and configure sensitivity labels for containers, users can addi
 ![A sensitivity label when creating a team site from SharePoint.](../media/sensitivity-labels-new-team-site.png)
 
 > [!NOTE]
-> Sensitivity labels for containers support [Teams shared channels](/MicrosoftTeams/shared-channels), currently in preview. If a team has any shared channels, they automatically inherit sensitivity label settings from their parent team, and that label can't be removed or replaced with a different label.
+> Sensitivity labels for containers support [Teams shared channels](/MicrosoftTeams/shared-channels). If a team has any shared channels, they automatically inherit sensitivity label settings from their parent team, and that label can't be removed or replaced with a different label.
 
 ## How to enable sensitivity labels for containers and synchronize labels
 

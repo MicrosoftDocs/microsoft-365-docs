@@ -6,11 +6,14 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: conceptual
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.collection:
+- tier1
+- m365-security
+ms.date: 09/15/2022
 localization_priority: Normal
-ms.collection: 
-- SMB
 search.appverid:
 - MET150
 - MOE150
@@ -76,6 +79,6 @@ You can choose from several methods to upgrade:
 
 [Activate Windows](https://support.microsoft.com/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227#WindowsVersion=Windows_10)
 
-[Microsoft 365 for business training videos](../admin/admin-video-library.yml)
+[Microsoft 365 for business training videos](https://go.microsoft.com/fwlink/?linkid=2197659)
 
 

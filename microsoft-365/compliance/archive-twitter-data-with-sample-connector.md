@@ -1,9 +1,10 @@
 ---
 title: "Set up a connector to archive Twitter data"
+description: "Learn how administrators can set up and use a native connector to import Twitter data into Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 04/08/2022
 audience: Admin
@@ -12,9 +13,11 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ms.custom: seo-marvel-apr2020
-description: "Learn how administrators can set up and use a native connector to import Twitter data into Microsoft 365."
 ---
 
 # Set up a Microsoft connector to archive Twitter data (preview)
@@ -24,6 +27,10 @@ Use a connector in the Microsoft Purview compliance portal to import and archive
 After the Twitter data is imported, you can apply Microsoft Purview features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, and Microsoft 365 retention policies to the Twitter data. For example, when a mailbox is placed on Litigation Hold or assigned to a retention policy, the Twitter data is preserved. You can search third-party data using Content Search or associate the mailbox where the Twitter data is stored with a custodian in a Microsoft Purview eDiscovery (Premium) case. Using a connector to import and archive Twitter data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
 After Twitter data is imported, you can apply Microsoft Purview features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, Communication compliance, and Microsoft 365 retention policies to the data stored in the mailbox. For example, you can search Twitter data using Content Search or associate the mailbox where the data is stored with a custodian in an eDiscovery (Premium) case. Using a connector to import and archive Twitter data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+
+If you’d like to participate in the preview, please reach out to the team at dcfeedback@microsoft.com.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you set up a connector
 

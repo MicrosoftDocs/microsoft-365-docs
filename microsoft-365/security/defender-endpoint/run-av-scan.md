@@ -2,7 +2,7 @@
 title: Run antivirus scan API
 description: Use this API to create calls related to running an antivirus scan on a device.
 keywords: apis, graph api, supported apis, remove device from isolation
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+mms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Run antivirus scan API
@@ -44,7 +47,7 @@ Initiate Microsoft Defender Antivirus scan on a device.
 > [!IMPORTANT]
 >
 > - This action is available for devices on Windows 10, version  1709 or later, and on Windows 11.
-> - A Microsoft Defender Antivirus (Microsoft Defender AV) scan can run alongside other antivirus solutions, whether Microsoft Defender Antivirus is the active antivirus solution or not. Microsoft Defender Antivirus can be in Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+> - A Microsoft Defender Antivirus scan can run alongside other antivirus solutions, whether Microsoft Defender Antivirus is the active antivirus solution or not. Microsoft Defender Antivirus can be in Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 ## Permissions
 
@@ -60,6 +63,8 @@ Delegated (work or school account)|Machine.Scan|'Scan machine'
 >
 > - The user needs to have at least the following role permission: 'Active remediation actions' (See [Create and manage roles](user-roles.md) for more information)
 > - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+> 
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 ## HTTP request
 

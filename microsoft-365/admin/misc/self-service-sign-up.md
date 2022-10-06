@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -43,7 +44,7 @@ Following are the currently available self-service programs. This list will be u
 |:-----|:-----|:-----|:-----|
 |****Office 365 A1**** <br/> |Any student or teacher can use a school email address to sign up for free Office 365 and get Office apps for the web, 1 TB of OneDrive cloud storage and SharePoint Online for class, team and project sites.  <br/> |[Office 365 Education Technical FAQ](/microsoft-365/education/deploy/office-365-education-self-sign-up) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Office 365 A1 Plus** <br/> |Eligible students and teachers can sign up for Office 365 A1 Plus, which includes everything mentioned above plus Microsoft 365 Apps for enterprise. Microsoft 365 Apps for enterprise is productivity software, including Word, PowerPoint, Excel, Outlook, OneNote, Publisher, Access, and Skype for Business, that is installed on your desktop or laptop computer.  <br/> |[Office 365 Education Technical FAQ](/microsoft-365/education/deploy/office-365-education-self-sign-up) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
-|**Power BI** <br/> |Power BI enables users to visualize data, share discoveries, and collaborate in intuitive new ways. <br/> If your organization already subscribes you may additionally see licenses for "Power BI Pro Individual User Trial," which offer users limited, free access to advanced capabilities.  <br/> |[Power BI in your organization](./power-bi-in-your-organization.md) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
+|**Power BI** <br/> |Power BI enables users to visualize data, share discoveries, and collaborate in intuitive new ways. <br/> If your organization already subscribes you may additionally see licenses for "Power BI Pro Individual User Trial," which offer users limited, free access to advanced capabilities.  <br/> |[Power BI in your organization](/power-bi/enterprise/service-admin-org-subscription) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
 |**Rights Management Services (RMS)** <br/> |RMS for individuals is a free self-service subscription for users in an organization who have been sent sensitive files that have been protected by Azure Rights Management (Azure RMS), but their IT department has not implemented Azure Rights Management (Azure RMS), or Active Directory Rights Management Services (AD RMS).  <br/> |[RMS for Individuals and Azure Rights Management](/azure/information-protection/rms-for-individuals) <br/> |[Microsoft Rights Management portal](https://portal.azure.com/) so you can check whether you can open a given rights-protected document.  <br/> |
 |**Microsoft Power Apps** <br/> |In Power Apps, you can manage organizational data by running an app that you created or that someone else created and shared with you. Apps run on mobile devices such as phones, or you can run them in a browser by opening Dynamics 365. You can create an infinite variety of apps - all without learning a programming language such as C#.  <br/> |[Self-service sign up for Power Apps](/powerapps/maker/signup-for-powerapps) <br/> |[Microsoft Power Apps](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |
 |**Dynamics 365 for Financials** <br/> |Get a complete business and financial management solution for small and medium-sized businesses. Dynamics 365 for Financials makes ordering, selling, invoicing, and reporting easier—starting on day one.  <br/> |[Microsoft Dynamics 365 for Financials](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |[Microsoft Dynamics 365 for Financials](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |

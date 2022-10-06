@@ -1,18 +1,17 @@
 ---
 title: Introduction to Microsoft Whiteboard
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
 audience: admin
 ms.topic: landing-page
 ms.custom: 
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Find resources about how to set up and manage Microsoft Whiteboard.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
@@ -29,7 +28,7 @@ The resources in this section help you learn more about what Microsoft Whiteboar
 |Learn how to get Microsoft Whiteboard|[Microsoft Whiteboard product page](https://www.microsoft.com/en-us/microsoft-365/microsoft-whiteboard/digital-whiteboard-app)|
 |Find resources in the Microsoft Tech Community Resource Center|[Microsoft 365 Whiteboard blog](https://techcommunity.microsoft.com/t5/microsoft-365-blog/bg-p/microsoft_365blog/label-name/Microsoft%20Whiteboard)|
 |Watch videos to explore helpful tips|[Microsoft Whiteboard YouTube channel](https://www.youtube.com/c/MicrosoftWhiteboard/videos/Microsoft%20Whiteboard)|
-|Find Microsoft Whiteboard guidance for end users|[Microsoft Whiteboard help](https://support.microsoft.com/office/microsoft-whiteboard-help-d236aef8-fcdf-4b5e-b5d7-7f157461e920)|
+|Find Microsoft Whiteboard guidance for end users|[Microsoft Whiteboard help center](https://support.microsoft.com/office/microsoft-whiteboard-help-d236aef8-fcdf-4b5e-b5d7-7f157461e920)|
 
 ## Setup and management
 
@@ -39,12 +38,26 @@ The resources in this section help the admin in your organization to set up and 
 
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
-|Learn how to set up and manage access to Whiteboard for your organization|[Manage access to Whiteboard](manage-whiteboard-access-organizations.md)|
-|Find where your Whiteboard content and data are stored in Azure and OneDrive for Business  |[Manage data for Whiteboard](manage-data-organizations.md)  |
+|Learn how to manage access to Whiteboard for your organization|[Manage access to Whiteboard](manage-whiteboard-access-organizations.md) |
 |Learn about the sharing experience in Teams and how to share links to specific users  |[Manage sharing for Whiteboard](manage-sharing-organizations.md)  |
-|Deploy Whiteboard on devices that run Windows 10 or later using Microsoft Intune or Microsoft Configuration Manager  |[Deploy Whiteboard on Windows](deploy-on-windows-organizations.md)  |
+|Find where your Whiteboard content and data are stored in Azure and OneDrive for Business  |[Manage data for Whiteboard](manage-data-organizations.md)  |
+|Learn how to configure privacy settings and diagnostic data for Whiteboard |[Configure privacy settings in Whiteboard](configure-privacy-settings.md)  |
+|Learn how to set up Whiteboard on Surface Hub|[Set up and use Whiteboard on Surface Hub](/surface-hub/whiteboard-collaboration)|
+|Deploy Whiteboard on devices that run Windows 10 or later using Microsoft Intune or Microsoft Configuration Manager|[Deploy Microsoft Whiteboard on Windows devices](deploy-on-windows-organizations.md) |
+|Learn how to manage General Data Protection Regulation (GDPR) requirements for personal data collected in Whiteboard |[Manage GDPR data subject requests in Whiteboard](gdpr-requests.md)  |
 
 ### For government
+
+#### GCC
+
+| If you're looking for this information | Go to this resource |
+|:-----|:-----|
+|Learn how to set up and manage access to Whiteboard for US Government GCC environments|[Manage access to Whiteboard - GCC](manage-whiteboard-access-gcc.md)|
+|Find where your Whiteboard content and data are stored in Azure and OneDrive for Business in US Government GCC environments  |[Manage data for Whiteboard - GCC](manage-data-gcc.md)  |
+|Learn about the sharing experience in Teams and how to share links to specific users in US Government GCC environments  |[Manage sharing for Whiteboard - GCC](manage-sharing-gcc.md)  |
+|Learn which clients are currently supported for Whiteboard in US Government GCC environments  |[Manage clients for Whiteboard - GCC](manage-clients-gcc.md)       |
+
+#### GCC High
 
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
@@ -58,6 +71,3 @@ The resources in this section help the admin in your organization to set up and 
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
 |Find PowerShell cmdlet help references to manage Microsoft Whiteboard|[PowerShell for Whiteboard](/powershell/module/whiteboard/)|
-
-
-

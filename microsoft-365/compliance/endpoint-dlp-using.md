@@ -12,8 +12,10 @@ f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: 
-- M365-security-compliance
+ms.collection:
+- tier1
+- highpri 
+- purview-compliance
 - SPO_Content
 search.appverid: 
 - MET150
@@ -31,6 +33,15 @@ To help familiarize you with Endpoint DLP features and how they surface in DLP p
 >- [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
 >- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 >- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
+
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## Before you begin
+
+### SKU/subscriptions licensing
+
+For full licensing details, see [Microsoft 365 licensing guidance for information protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
 ## Scenario 1: Create a policy from a template, audit only
 
@@ -118,12 +129,13 @@ These scenarios require that you already have devices onboarded and reporting in
 
 ## Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine (preview)
 
-### Before you begin
+#[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## Before you begin
 
 In this scenario, synchronizing files with the **Highly Confidential** sensitivity label to OneDrive is blocked. This is a complex scenario with multiple components and procedures. You will need:
 
 - An AAD user account to target and an onboarded Windows 10 computer that is already synchronizing a local OneDrive folder with OneDrive cloud storage.
-- Microsoft Word installed on the target Windows 10 computer
 - Sensitivity labels configured and published—see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) and [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies).
 
 There are three procedures.
@@ -229,7 +241,7 @@ There are three procedures.
 
 ## Scenario 5: Restrict unintentional sharing to unallowed cloud apps and services
 
-With Endpoint DLP and Edge Web browser, you can restrict unintentional sharing of sensitive items to unallowed cloud apps and services. Edge understands when an item is restricted by an Endpoint DLP policy and enforces access restrictions.
+With Endpoint DLP and Microisoft Edge Web browser, you can restrict unintentional sharing of sensitive items to unallowed cloud apps and services. Edge understands when an item is restricted by an Endpoint DLP policy and enforces access restrictions.
 
 When you select **Devices** as a location in a properly configured DLP policy and use the Microsoft Edge browser, the unallowed browsers that you've defined in these settings will be prevented from accessing the sensitive items that match your DLP policy controls. Instead, users will be redirected to use Microsoft Edge which, with its understanding of DLP imposed restrictions, can block or restrict activities when the conditions in the DLP policy are met.
 
@@ -244,6 +256,58 @@ To use this restriction, you’ll need to configure three important pieces:
 You can continue to add new services, apps, and policies to extend and augment your restrictions to meet your business needs and protect sensitive data. 
 
 This configuration will help ensure your data remains safe while also avoiding unnecessary restrictions that prevent or restrict users from accessing and sharing non-sensitive items.
+
+## Scenario 6 Monitor or restrict user activities on sensitive service domains
+
+Use this scenario when you want to audit, block with override, or block these user activities on a website.
+
+- print from a website
+- copy data from a website
+- save a website as local files
+
+The user must be accessing the website through Microsoft Edge.
+
+### Supported syntax for designating websites in a website group
+
+You can use a flexible syntax to include and exclude domains, subdomains, websites, and subsites in your website groups.
+
+- use `*` as a wildcard to specify all domains or all subdomains
+- use `/` as a terminator at the end of a URL to scope to that specific site only.
+
+When you add a URL without a terminating `/`, that URL is scoped to that site and all subsites.
+
+This syntax applies to all http/https websites.
+
+Here are some examples:
+
+
+|URL that you add to the website group  |URL will match  | URL will not match|
+|---------|---------|---------|
+|contoso.com  | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/ </br> //<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2|        //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com.au    |
+|contoso.com/     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/         |//<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/au   |
+|*.contoso.com   | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/allsubsites </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/allsubsites </br> //<!--nourl-->allsubdomains1/allsubdomains2/contoso.com/allsubsites1/allsubsites2         | //<!--nourl-->allsubdomains.contoso.com.au|
+|*.contoso.com/xyz     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->contoso.con/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2         | //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/|
+|*.contoso.com/xyz/     |//<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz         |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2|
+
+
+### Configure Sensitive service domains
+
+1. In the Microsoft Purview compliance portal open **Data loss prevention** > **Endpoint DLP settings** > **Browser and domain restrictions to sensitive data** > **Sensitive service domains**.
+1. Select **Add a new group of sensitive service domains**.
+1. Name the group.
+1. Select the **Match type** you want. You can select from **URL**, **IP address**, **IP address range**.
+1. Type in the appropriate value in the **Add new service domains to this group**. You can add multiple websites to a group and use wildcards to cover subdomains.  For example, `www.contoso.com` for just the top level website or \*.contoso.com for corp.contoso.com, hr.contoso.com, fin.contoso.com
+1. Select **Save**.
+1. Select **Policies**.
+1. Create and scope a policy that is applied only to **Devices**. See, [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) for more information on how to create a policy.
+1. Create a rule that uses the **the user accessed a sensitive site from Edge**, and the action **Audit or restrict activities when users access sensitive sites in Microsoft Edge browser on Windows devices**.
+1. In the action select **Add or remove Sensitive site groups**.
+1. Select the **Sensitive site groups** you want.
+1. Select **Add**.
+1. Select the user activities you want to monitor or restrict and the actions you DLP to take in response to those activities.
+1. Finish configuring the rule and policy and apply it.
+
+
 ## See also
 
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)

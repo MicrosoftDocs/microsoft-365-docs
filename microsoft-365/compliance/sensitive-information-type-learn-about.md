@@ -14,7 +14,9 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 description: "This article gives an overview of sensitive information types and how they detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items"
 ---
 
@@ -30,6 +32,8 @@ Sensitive information types (SIT) are pattern-based classifiers. They detect sen
 
 Microsoft provides a large number of pre-configured SITs or you can create your own.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Sensitive information types are used in
 
 - [Microsoft Purview Data Loss Prevention policies](dlp-learn-about-dlp.md)
@@ -39,6 +43,8 @@ Microsoft provides a large number of pre-configured SITs or you can create your 
 - [Communication compliance](communication-compliance.md)
 - [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Microsoft Priva](/privacy/priva)
+
+
 
 ## Categories of sensitive information types
 
@@ -192,6 +198,11 @@ You can choose from several options to create custom sensitive information types
 > `(?<!\d)([4][0-9]{3}[\-?\-\t]*[0-9]{4}`
 >
 > We recommend using string match instead of word match in a keyword list.
+
+## Provide match/not a match accuracy feedback in sensitive info types
+
+You can view the number of matches a SIT has in **Sensitive info types** and **Content explorer**. You can also provide feedback on whether an item is actually a match or not using the **Match**, **Not a Match** feedback mechanism and use that feedback to tune your SITs. See, [Increase classifier accuracy (preview)](data-classification-increase-accuracy.md) for more information. 
+
 
 ## For further information
 

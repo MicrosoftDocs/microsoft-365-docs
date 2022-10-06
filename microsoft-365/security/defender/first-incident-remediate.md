@@ -3,7 +3,8 @@ title: Step 2. Remediate your first incident
 description: How to get started in remediating your first incident in Microsoft 365 Defender.
 keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +16,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - m365solution-firstincident
+  - highpri
+  - tier1
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 # Step 2. Remediate your first incident
 

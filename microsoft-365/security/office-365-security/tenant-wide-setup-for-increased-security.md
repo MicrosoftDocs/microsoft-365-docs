@@ -13,15 +13,15 @@ ms.localizationpriority: medium
 ms.collection: 
   - Ent_O365
   - Strat_O365_IP
-  - M365-security-compliance
+  - m365-security
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom: 
   - seo-marvel-apr2020
   - admindeeplinkSPO
 description: This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Configure your Microsoft 365 tenant for increased security
@@ -35,9 +35,6 @@ ms.prod: m365-security
 
 This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment. Your security needs might require more or less security. Use these recommendations as a starting point.
 
-## Check Office 365 Secure Score
-
-Office 365 Secure Score analyzes your organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Adjusting some tenant-wide settings will increase your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment that do not negatively affect productivity for your users. See [Microsoft Secure Score](../defender/microsoft-secure-score.md).
 
 ## Tune threat management policies in the Microsoft 365 Defender portal
 
@@ -45,10 +42,10 @@ The Microsoft 365 Defender portal includes capabilities that protect your enviro
 
 |Area|Default policy?|Recommendation|
 |---|---|---|
-|**Anti-phishing**|Yes|Configure the default anti-phishing policy as described here: [Configure anti-phishing protection settings in EOP and Defender for Office 365](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365). <p> More information: <ul><li>[Anti-phishing policies in Microsoft 365](set-up-anti-phishing-policies.md)</li><li>[Recommended anti-phishing policy settings in Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [Impersonation insight](impersonation-insight.md)</li><li>[Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md)</li><li>[Manage the Tenant Allow/Block List](tenant-allow-block-list.md).</li></ul>|
+|**Anti-phishing**|Yes|Configure the default anti-phishing policy as described here: [Configure anti-phishing protection settings in EOP and Defender for Office 365](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365). <p> More information: <ul><li>[Anti-phishing policies in Microsoft 365](set-up-anti-phishing-policies.md)</li><li>[Recommended anti-phishing policy settings in Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [Impersonation insight](impersonation-insight.md)</li><li>[Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md)</li><li>[Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md).</li></ul>|
 |**Anti-Malware Engine**|Yes|Configure the default anti-malware policy as described here: [Configure anti-malware protection settings in EOP](protect-against-threats.md#part-1---anti-malware-protection-in-eop). <p> More information: <ul><li>[Anti-malware protection](anti-malware-protection.md)</li><li>[Recommended anti-malware policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)</li><li>[Configure anti-malware policies](configure-anti-malware-policies.md)</li></ul>|
 |**Safe Attachments in Defender for Office 365**|No|Configure the global settings for Safe Attachments and create a Safe Attachments policy as described here: [Configure Safe Attachments settings in Microsoft Defender for Office 365](protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365). <p> More information: <ul><li>[Recommended Safe Attachments settings](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)</li><li>[Safe Attachments in Microsoft Defender for Office 365](safe-attachments.md)</li><li>[Set up Safe Attachments policies](set-up-safe-attachments-policies.md)</li><li>[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Safe Documents in Microsoft 365 E5](safe-docs.md)</li></ul>|
-|**Safe Links in Microsoft Defender for Office 365**|No|Configure the global settings for Safe Links and create a Safe Links policy as described here: [Configure Safe Links settings in Microsoft Defender for Office 365](protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365). <p> More information: <ul><li>[Recommended Safe Links settings](recommended-settings-for-eop-and-office365.md#safe-links-settings)</li><li>[Set up Safe Links policies](set-up-safe-links-policies.md)</li><li>[Safe Links in Microsoft Defender for Office 365](safe-links.md)</li><li>[Configure global settings for Safe Links in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md)</li></ul>|
+|**Safe Links in Microsoft Defender for Office 365**|No|Create a Safe Links policy as described here: [Configure Safe Links settings in Microsoft Defender for Office 365](protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365). <p> More information: <ul><li>[Recommended Safe Links settings](recommended-settings-for-eop-and-office365.md#safe-links-settings)</li><li>[Set up Safe Links policies](set-up-safe-links-policies.md)</li><li>[Safe Links in Microsoft Defender for Office 365](safe-links.md)</li></ul>|
 |**Anti-spam (mail filtering)**|Yes|Configure the default anti-spam policy as described here: [Configure anti-spam protection settings in EOP](protect-against-threats.md#part-3---anti-spam-protection-in-eop) <p> More information: <ul><li>[Recommended anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)</li><li>[Anti-spam protection in EOP](anti-spam-protection.md)</li><li>[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)</li></ul>|
 |***Email Authentication***|Yes|Email authentication uses DNS records to add verifiable information to email messages about the message source and sender. Microsoft 365 automatically configures email authentication for its default domain (onmicrosoft.com), but Microsoft 365 admins can also configure email authentication for custom domains. Three authentication methods are used: <ul><li>Sender Policy Framework (or SPF).</li><ul><li>For setup, see [Set up SPF in Microsoft 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md).</li></ul> <li>DomainKeys Identified Mail (DKIM).</li><ul><li>See [Use DKIM to validate outbound email sent from your custom domain](use-dkim-to-validate-outbound-email.md).</li><li>After you've configured DKIM, enable it in the Microsoft 365 Defender portal.</li></ul><li>Domain-based Message Authentication, Reporting, and Conformance (DMARC).</li><ul><li>For DMARC setup [Use DMARC to validate email in Microsoft 365](use-dmarc-to-validate-email.md).</li></ul></ul>|
 
@@ -130,6 +127,6 @@ More information:
 
 These articles and guides provide additional prescriptive information for securing your Microsoft 365 environment:
 
-- [Microsoft security guidance for political campaigns, nonprofits, and other agile organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) (you can use these recommendation in any environment, especially cloud-only environments)
+- [Microsoft security guidance for political campaigns, nonprofits, and other agile organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) (you can use these recommendations in any environment, especially cloud-only environments)
 
 - [Recommended security policies and configurations for identities and devices](microsoft-365-policies-configurations.md) (these recommendations include help for AD FS environments)

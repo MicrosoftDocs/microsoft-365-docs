@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 8/6/2019
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection: 
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy

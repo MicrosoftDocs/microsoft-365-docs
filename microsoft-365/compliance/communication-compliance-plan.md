@@ -14,8 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
@@ -31,6 +31,8 @@ You can also check out the [Microsoft Mechanics video](https://www.youtube.com/w
 
 > [!IMPORTANT]
 > Communication compliance is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that communication compliance is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Transitioning from Supervision in Office 365
 
@@ -57,7 +59,7 @@ Identify the appropriate stakeholders in your organization to collaborate for ta
 
 ### Permissions
 
-Select dedicated stakeholders to monitor and review the alerts and cases on a regular cadence in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/). Make sure you understand how you'll assign users and stakeholders to different communication compliance role groups in your organization.
+Select dedicated stakeholders to investigate and review the alerts and cases on a regular cadence in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/). Make sure you understand how you'll assign users and stakeholders to different communication compliance role groups in your organization.
 
 > [!IMPORTANT]
 > After configuring your role groups, it may take up to 30 minutes for the role group permissions to apply to assigned users across your organization.
@@ -106,7 +108,7 @@ When you create a communication compliance policy, you must determine who review
 
 ### Groups for supervised users and reviewers
 
-To simplify your setup, create groups for people who need their communications reviewed and groups for people who review those communications. If you're using groups, you might need several. For example, if you want to scan communications between two distinct groups of people, or if you want to specify a group that isn't supervised. When you assign a Distribution group in the policy, the policy monitors all emails from each user in Distribution group. When you assign a Microsoft 365 group in the policy, the policy monitors all emails sent to that group, not the individual emails received by each group member.
+To simplify your setup, create groups for people who need their communications reviewed and groups for people who review those communications. If you're using groups, you might need several. For example, if you want to scan communications between two distinct groups of people, or if you want to specify a group that isn't supervised. When you assign a Distribution group in the policy, the policy detects all emails from each user in Distribution group. When you assign a Microsoft 365 group in the policy, the policy detects all emails sent to that group, not the individual emails received by each group member.
 
 Adding groups and distribution lists to communication compliance policies are part of the overall conditions and rules set, so the maximum number of groups and distribution lists that a policy supports varies depending on the number of conditions also added to the policy. Each policy should support approximately 20 groups or distribution lists, depending on the number of additional conditions present in the policy.
 
@@ -134,8 +136,8 @@ When planning for communication compliance policies, consider the following area
 
 - Consider adding all users in your organization as in-scope for your communication compliance policies. Identifying specific users as in-scope for individual policies are useful in some circumstances, however most organizations should include all users in communication compliance policies optimized for harassment or discrimination detection.
 - Configure the percentage of communications to review at 100% to ensure that policies are catching all issues of concern in communications for your organization.
-- You can scan communications from [third-party sources](/microsoft-365/compliance/communication-compliance-channels#third-party-sources) for data imported into mailboxes in your Microsoft 365 organization. To include review of communications in these platforms, you'll need to configure a connector to these services before messages meeting policy conditions are monitored by communication policy.
-- Policies can support monitoring languages other than English in custom communication compliance policies. Build a [custom keyword dictionary](/microsoft-365/compliance/communication-compliance-policies#custom-keyword-dictionaries) of offensive words in the language of your choice or build your own machine learning model using [trainable classifiers](/microsoft-365/compliance/classifier-get-started-with) in Microsoft 365.
+- You can scan communications from [third-party sources](/microsoft-365/compliance/communication-compliance-channels#third-party-sources) for data imported into mailboxes in your Microsoft 365 organization. To include review of communications in these platforms, you'll need to configure a connector to these services before messages meeting policy conditions are detected by communication policy.
+- Policies can support detecting languages other than English in custom communication compliance policies. Build a [custom keyword dictionary](/microsoft-365/compliance/communication-compliance-policies#custom-keyword-dictionaries) of offensive words in the language of your choice or build your own machine learning model using [trainable classifiers](/microsoft-365/compliance/classifier-get-started-with) in Microsoft 365.
 - All organizations have different communication standards and policy needs. Detect specific keywords using communication compliance [policy conditions](/microsoft-365/compliance/communication-compliance-policies#conditional-settings) or detect specific types of information with [custom sensitive information types](/microsoft-365/compliance/create-a-custom-sensitive-information-type).
 
 ## Creating a communication compliance policy walkthrough

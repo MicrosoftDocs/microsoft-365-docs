@@ -5,8 +5,9 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection: 
+- highpri
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection
@@ -45,7 +46,7 @@ Azure Active Directory is the directory service used by Microsoft 365. The Azure
 |:-----|:-----|:-----|
 |Guest user access|Guest users have limited access to properties and memberships of directory objects|Determines the [permissions that guests have in Azure Active Directory](/azure/active-directory/fundamentals/users-default-permissions).|
 |Guest invite settings|Anyone in the organization can invite guest users including guests and non-admins|Determines whether guests, members, and admins can invite guests to the organization. <p> This setting affects  Microsoft 365 sharing experiences such as Teams and SharePoint.|
-|Enable guest self-service sign up via user flows|No|Determines if you can create user flows that allow someone to sign up for an app that you created and create a new guest account.|
+|Enable guest self-service sign-up via user flows|No|Determines if you can create user flows that allow someone to sign up for an app that you created and create a new guest account.|
 |Collaboration restrictions|Allow invitations to be sent to any domain|This setting allows you to specify a list of allowed or blocked domains for sharing. When allowed domains are specified, then sharing invitations can only be sent to those domains. When denied domains are specified, then sharing invitations cannot be sent to those domains. <p> This setting affects  Microsoft 365 sharing experiences such as Teams and SharePoint. You can allow or block domains at a more granular level by using domain filtering in SharePoint or Teams.|
 
 These settings affect how users are invited to the directory. They do not affect sharing with guests who are already in the directory.
@@ -112,7 +113,7 @@ These settings are at the organization level. See [Create settings for a specifi
 
 ## Teams
 
-The Teams master guest access switch, **Allow guest access in Teams**, must be **On** for the other guest settings to be available.
+The Teams guest access switch, **Allow guest access in Teams**, must be **On** for the other guest settings to be available.
 
 **Admin role:** Teams service administrator
 
@@ -177,7 +178,7 @@ Because OneDrive is a hierarchy of sites within SharePoint, the organization-lev
 
 **Navigation:** SharePoint admin center > **Policies** > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>
 
-![Screenshot of SharePoint organization-level sharing settings.](../media/external-sharing.png)
+![Screenshot of SharePoint organization-level sharing settings.](../media/sharepoint-organization-external-sharing-controls.png)
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|

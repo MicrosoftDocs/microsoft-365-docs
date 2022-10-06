@@ -2,21 +2,23 @@
 title: Microsoft Defender Antivirus in Windows
 description: Learn how to manage, configure, and use Microsoft Defender Antivirus, built-in antimalware and antivirus protection.
 keywords: Microsoft Defender Antivirus, windows defender, antimalware, scep, system center endpoint protection, system center configuration manager, virus, malware, threat, detection, protection, security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
+ms.date: 10/03/2022
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
+ms.subservice: mde
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Microsoft Defender Antivirus in Windows
@@ -42,8 +44,6 @@ If you're using a non-Microsoft antivirus/antimalware product on your device, yo
 
 The following table describes what to expect when Microsoft Defender Antivirus is in active mode, passive mode, or disabled.
 
-<br/><br/>
-
 | Mode | What happens |
 |---|---|
 | Active mode | In active mode, Microsoft Defender Antivirus is used as the primary antivirus app on the device. Files are scanned, threats are remediated, and detected threats are listed in your organization's security reports and in your Windows Security app. |
@@ -54,21 +54,21 @@ To learn more, see [Microsoft Defender Antivirus compatibility](microsoft-defend
 
 ## Check the state of Microsoft Defender Antivirus on your device
 
-If you want to check the state of Microsoft Defender Antivirus on your device, you can use one of several methods, such as the Windows Security app or Windows PowerShell.
+You can use one of several methods, such as the Windows Security app or Windows PowerShell, to check the state of Microsoft Defender Antivirus on your device.
 
-### Use the Windows Security app to check status of Microsoft Defender Antivirus
+### Use the Windows Security app to check the status of Microsoft Defender Antivirus
 
-1. On your Windows device, select the Start menu, and begin typing `Security`. Then open the Windows Security app in the results.
+1. On your Windows device, select the **Start** menu, and begin typing `Security`. Then open the Windows Security app in the results.
 
 2. Select **Virus & threat protection**.
 
-3. Under **Virus & threat protection settings**, choose **Manage settings**.
+3. Under **Who's protecting me?**, choose **Manage Providers**.
 
-You'll see the name of your antivirus/antimalware solution on the settings page.
+You'll see the name of your antivirus/antimalware solution on the security providers page.
 
-### Use PowerShell to check status of Microsoft Defender Antivirus
+### Use PowerShell to check the status of Microsoft Defender Antivirus
 
-1. Select the Start menu, and begin typing `PowerShell`. Then open Windows PowerShell in the results.
+1. Select the **Start** menu, and begin typing `PowerShell`. Then open Windows PowerShell in the results.
 
 2. Type `Get-MpComputerStatus`.
 
@@ -78,16 +78,16 @@ You'll see the name of your antivirus/antimalware solution on the settings page.
 
    - **Passive mode** means Microsoft Defender Antivirus running, but is not the primary antivirus/antimalware product on your device. Passive mode is only available for devices that are onboarded to Microsoft Defender for Endpoint and that meet certain requirements. To learn more, see [Requirements for Microsoft Defender Antivirus to run in passive mode](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode).
 
-   - **EDR Block Mode** means Microsoft Defender Antivirus is running and [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md), a capability in Microsoft Defender for Endpoint, is enabled.
+   - **EDR Block Mode** means Microsoft Defender Antivirus is running and [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md), a capability in Microsoft Defender for Endpoint, is enabled. Check the **ForceDefenderPassiveMode** registry key. If its value is 0, it is running in normal mode; otherwise, it is running in passive mode.
 
-   - **SxS Passive Mode** means Microsoft Defender Antivirus is running alongside another antivirus/antimalware product, and  [limited periodic scanning is used](limited-periodic-scanning-microsoft-defender-antivirus.md).
+   - **SxS Passive Mode** means Microsoft Defender Antivirus is running alongside another antivirus/antimalware product, and [limited periodic scanning is used](limited-periodic-scanning-microsoft-defender-antivirus.md).
 
 > [!TIP]
 > To learn more about the Get-MpComputerStatus PowerShell cmdlet, see the reference article [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).
 
 ## Get your antivirus/antimalware platform updates
 
-It's important to keep Microsoft Defender Antivirus, or any antivirus/antimalware solution, up to date. Microsoft releases regular updates to help ensure that your devices have the latest technology to protect against new malware and attack techniques. To learn more, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
+It's important to keep Microsoft Defender Antivirus (or any antivirus/antimalware solution) up to date. Microsoft releases regular updates to help ensure that your devices have the latest technology to protect against new malware and attack techniques. To learn more, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:

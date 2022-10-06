@@ -5,13 +5,14 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: Admins can learn how to create automated simulations that contain specific techniques and payloads that launch when the specified conditions are met in Microsoft Defender for Office 365 Plan 2.
-ms.technology: mdo
+ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Simulation automations for Attack simulation training
@@ -56,6 +57,7 @@ On the **Select social engineering techniques** page, select one or more of the 
 - **Link in attachment**: A type of credential harvest hybrid. An attacker inserts a URL into an email attachment. The URL within the attachment follows the same technique as credential harvest.
 - **Link to malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user will contain a link to this malicious file. Opening the file and help the attacker compromise the target's device.
 - **Drive-by URL**: The malicious URL in the message takes the user to a familiar-looking website that silently runs and/or installs code on the user's device.
+- **OAuth Consent Grant**: The malicious URL asks users to grant permissions to data for a malicious Azure Application.
 
 If you click the **View details** link in the description, a details flyout opens that describes the technique and the simulation steps that result from the technique.
 
@@ -84,7 +86,7 @@ If you select **Manually select**, you need to select one or more payloads from 
 - **Technique**: You need to select at least one payload per technique that you selected on the previous page.
 - **Language**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, or **Other**.
 - **Click rate**: How many people have clicked on this payload.
-- **Predicted compromise rate**: Historical data for the payload across Microsoft 365 that predicts the percentage of people who will get compromised by this payload.
+- **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this payload (users compromised / total number of users who receive the payload).
 - **Simulations launched** counts the number of times this payload was used in other simulations.
 
 In the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box, you can type part of the payload name and press Enter to filter the results.
@@ -92,7 +94,6 @@ In the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box, y
 If you click **Filter**, the following filters are available:
 
 - **Complexity**: Calculated based on the number of indicators in the payload that indicate a possible attack (spelling errors, urgency, etc.). More indicators are easier to identify as an attack and indicate lower complexity. The available values are:
-
   - **High**
   - **Medium**
   - **Low**
@@ -111,17 +112,20 @@ If you click **Filter**, the following filters are available:
 
 - **Controversial**: The available values are **Yes** or **No**.
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 If you select a payload from the list by clicking anywhere in the row other than the check box, details about the payload are shown in a flyout:
 
 - The **Payload** tab contains an example and other details about the payload.
-- The **Login page** tab is described in the next section.
+- The **Login page** tab is available only in **Credential Harvest** or **Link in attachment** payloads and is described in the next section.
 - The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
 
 :::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="The Payload tab in the payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
 
 ### Login page
+
+> [!NOTE]
+> The **Login page** tab is available only in **Credential Harvest** or **Link in attachment** payloads.
 
 Select the payload from the list by clicking anywhere in the row other than the check box to open the details flyout.
 
@@ -156,6 +160,28 @@ Back on the **Select login page**, verify the new login page you created is sele
 Back on the payload details flyout, click [Close icon.](../../media/m365-cc-sc-close-icon.png) **Close**.
 
 When you're finished on the **Select a payload and login page**, click **Next**.
+
+## Configure OAuth Payload
+
+> [!NOTE]
+> This page is available only if you selected **OAuth Consent Grant** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page. Otherwise, you're taken to the **Target users** page.
+
+On the **Configure OAuth payload** page, configure the following settings:
+
+- **App name**
+
+- **App logo**: Click **Browse** to select a .png, .jpeg, or .gif file to use. To remove a file after you've selected it, click **Remove**.
+
+- **Select app scope**: Choose one of the following values:
+  - **Read user calendars**
+  - **Read user contacts**
+  - **Read user mail**
+  - **Read all chat messages**
+  - **Read all files that user can access**
+  - **Read and write access to user mail**
+  - **Send mail as a user**
+
+When you're finished on the **Configure OAuth payload** page, click **Next**.
 
 ## Target users
 
@@ -293,20 +319,32 @@ On the **Landing page** page, you configure the web page that user are taken to 
 
     You need to configure the following additional settings on the **Landing page** page:
 
-    - **Payload indicators**:  This setting is available to select only if both of the following conditions are true:
-      - You previously selected **Credential harvest**, **Link in attachment**, or **Drive-by URL** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
-      - After you add the **Dynamic tag** named **Insert email content** into the page content.
+    - **Add payload indicators to email**:  This setting is available to select only if both of the following statements are true:
+      - You selected **Credential harvest**, **Link in attachment**, **Drive-by URL**, or **OAuth Consent Grant** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
+      - You've added the **Dynamic tag** named **Insert Payload content** in the landing page content on this page.
 
-    - Page content: Two tabs are available:
+    - Landing page content: Two tabs are available:
 
       - **Text**: A rich text editor is available to create your landing page. In addition to the typical font and formatting settings, the following settings are available:
         - **Dynamic tag**: Select from the following tags:
-          - **Insert name**
-          - **Insert sender name**
-          - **Insert sender email**
-          - **Insert email subject**
-          - **Insert email content**
-          - **Insert date**
+
+          |Tag name|Tag value|
+          |---|---|
+          |**Insert User name**|`${userName}`|
+          |**Insert First name**|`${firstName}`|
+          |**Insert Last name**|`${lastName}`|
+          |**Insert UPN**|`${upn}`|
+          |**Insert Email**|`${emailAddress}`|
+          |**Insert Department**|`${department}`|
+          |**Insert Manager**|`${manager}`|
+          |**Insert Mobile phone**|`${mobilePhone}`|
+          |**Insert City**|`${city}`|
+          |**Insert sender name**|`${FromName}`|
+          |**Insert sender email**|`${FromEmail}`|
+          |**Insert Payload subject**|`${EmailSubject}`|
+          |**Insert Payload content**|`${EmailContent}`|
+          |**Insert Date**|`${date|MM/dd/yyyy|offset}`|
+
         - **Use from default**: Select one of the 5 available landing page templates to start with. You can modify the text and layout in the editing area. To reset the landing page back to the default text and layout of the template, click **Reset to default**.
         - **Training link**: In the **Name training URL** dialog that appears, enter a link title for the training link, and then click **Confirm** to add the link to the landing page.
       - **Code**: You can view and modify the HTML code directly.
@@ -511,10 +549,12 @@ When you're finished, click **Next**.
 On the **Launch details** page, configure the following additional settings for the automation:
 
 - **Use unique payloads across simulations within an automation**: By default, this setting is not selected.
+- **Target all selected users in every simulation run**: By default, this setting is not selected.
 - **Target repeat offenders**: By default, this setting is not selected. If you select it, configure the following setting that appears:
   - **Enter the maximum number of times a user can be targeted within this automation**: Enter a value from 1 to 10.
 - **Send simulation email based upon the user's current time zone setting from Outlook web app**: By default, this setting is not selected.
-- **Display the drive-by technique interstitial data gathered page**: This setting is available only if you selected **Drive-by URL** on the **[Select social engineering techniques](#select-one-or-more-social-engineering-techniques)** page. By default, the setting is on (![Toggle on icon.](../../media/scc-toggle-on.png)).
+
+- **Display the drive-by technique interstitial data gathered page**: This setting is available only if you selected **Drive-by URL** on the **[Select social engineering techniques](#select-one-or-more-social-engineering-techniques)** page.  You can show the overlay that comes up for drive-by URL technique attacks. By default, the setting is on ![Toggle on icon.](../../media/scc-toggle-on.png). To hide the overlay and go directly to the landing page, turn this setting off ![Toggle off icon.](../../media/scc-toggle-off.png).
 
 ## Review simulation automation
 

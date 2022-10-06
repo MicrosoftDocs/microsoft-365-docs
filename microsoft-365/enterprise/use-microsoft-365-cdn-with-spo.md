@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 07/13/2021
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 f1.keywords:
@@ -158,7 +159,6 @@ Unless you specify otherwise, Office 365 sets up some default origins for you wh
 
 Default private CDN origins:
 
-+ \*/userphoto.aspx
 + \*/siteassets
 
 Default public CDN origins:
@@ -992,7 +992,7 @@ You can also use your browser's developer tools to view the URL for each asset o
 > [!NOTE]
 > If you use a network tool such as Fiddler to test your assets outside of rendering the asset from a SharePoint page, you must manually add the referer header "Referer: `https://yourdomain.sharepoint.com`" to the GET request where the URL is the root URL of your SharePoint Online tenant.
 
-You cannot test CDN URLs directly in a web browser because you must have a referer coming from SharePoint Online. However, if you add the CDN asset URL to a SharePoint page and then open the page in a browser, you will see the CDN asset rendered on the page.
+You cannot test CDN URLs directly in a web browser because you must have a referrer coming from SharePoint Online. However, if you add the CDN asset URL to a SharePoint page and then open the page in a browser, you will see the CDN asset rendered on the page.
 
 For more information on using the developer tools in the Microsoft Edge browser, see [Microsoft Edge Developer Tools](/microsoft-edge/devtools-guide).
 

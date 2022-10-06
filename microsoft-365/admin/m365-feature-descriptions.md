@@ -1,17 +1,18 @@
 ---
 title: "Microsoft 365 feature descriptions"
 ms.author: office365servicedesc
-author: pamelaar
-manager: gailw
+author: pebaum
+manager: scotv
 audience: ITPro
 ms.topic: reference
 f1_keywords:
 - 'microsoft-365-and-office-365-general-information'
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.custom:
 - Adm_ServiceDesc
 - Adm_ServiceDesc_top
+ms.collection: scotvorg
 ms.assetid: 721676a0-5108-488e-ae0c-7316617d0006
 description: "Learn about the information available for Microsoft 365 feature descriptions."
 ---
@@ -104,59 +105,6 @@ For other issues, visit the [Microsoft support center](https://support.microsoft
 
 **Azure Active Directory services:** Azure Active Directory (AD) brings comprehensive identity and access management capabilities to Office 365. It combines directory services, advanced identity governance, application access management and a rich standards-based platform for developers. To learn more about AD features in Office 365, see [Sign in page branding and cloud user self-service password reset](https://go.microsoft.com/fwlink/?linkid=2144147). Learn more about the [Free, Basic, and Premium editions of Azure Active Directory](/previous-versions/azure/dn532272(v=azure.100)).
 
-# [**Service health and continuity**](#tab/Service-health-and-continuity)
-
-## Service health and continuity
-
-Microsoft admins can view the status of services and find out when maintenance is scheduled. Service health information is available at any time by signing in. If you're using Office 365 operated by 21Vianet, some of the information below might not apply. Instead, see the [**21Vianet service level agreement**](https://www.21vbluecloud.com/office365/O365-SLA/).
-
-**View status of services:** The Service health section shows the current status of the service and details about service disruptions and outages. Planned maintenance information is available on the Message Center. For more information, see [View the status of your services](/office365/enterprise/view-service-health).
-
-**Service incidents:** A service incident is an event that affects the delivery of a service. Service incidents may be caused by hardware or software failure in the Microsoft data center, a faulty network connection due to a change made by Microsoft, or a major data center challenge such as fire, flood, or regional catastrophe. Interruptions caused by third party service providers, or changes made within customer managed environment, aren't considered service incidents. Most service incidents can be addressed using Microsoft technology and process solutions and are resolved within a short time. However, some service incidents are more serious and can lead to longer term outages.
-
-**Service notifications:** There are two types of notifications about times when services may not be available: **Planned maintenance events** and **Unplanned downtime.**
-
-**Planned maintenance events:** Planned maintenance is regular Microsoft-initiated service updates to the infrastructure and software applications. Planned maintenance notifications inform customers about service work that might affect the functionality of a Microsoft service. Customers are notified no later than five days in advance of all planned maintenance through Message center on the Microsoft 365 admin center. Microsoft typically plans maintenance for times when service usage is historically at its lowest based on regional time zones.
-
-**Unplanned downtime:** Unplanned service incidents occur when one of the services is unavailable or unresponsive due to a failure within the Microsoft managed environment. Customers are notified of known service incidents through Service health on the Microsoft 365 admin center.
-
-**Recent worldwide uptimes:** Moving to a cloud service shouldn't mean losing the ability to know what's going on. With Microsoft 365, it doesn't. We aim to be transparent in our operations so you can monitor the state of your service, track issues, and have a historical view of availability. The following tables show recent worldwide uptime data.
-
-| Years| Q1 | Q2 | Q3 | Q4 |
-|:-----|:-----|:-----|:-----|:-----|
-| 2022  | | | | |
-| 2021 | 99.97%  | 99.98% | 99.99% | 99.98%|
-| 2020 | 99.98%  | 99.99% | 99.97% | 99.97%|
-| 2019 | 99.97%  | 99.97% | 99.98% | 99.98%|
-| 2018 | 99.99%  | 99.98% | 99.97% | 99.98%|
-| 2017 | 99.99%  | 99.97% | 99.98% | 99.99%|
-
-**Notification policy:** When a service incident occurs, Microsoft recognizes that timely, targeted, and accurate communications are critical for customers. Microsoft notifies administrators by communicating directly to impacted customers via Service health on the Microsoft 365 admin center. Service incident updates are provided on an hourly cadence or, if a different cadence is required, it will be stated in the SHD communication posting.
-
-**Service health communication channels --** **Admin App:** The Admin App for organization administrators gives you the ability to connect with your organization's Microsoft service status on the go. Microsoft administrators will have the ability to view service health information and maintenance status updates from their mobile devices. For more information, visit the [Admin App FAQ](/office365/admin/admin-overview/admin-mobile-app).
-
-**Microsoft 365 Management Pack for Microsoft System Center Operations Manager:** Microsoft System Center Operations Manager (SCOM) is an integrated management platform that helps you manage data center, client devices, and hybrid cloud IT environments. Microsoft administrators who use SCOM have the option to import the Microsoft 365 Management Pack, which lets them view all service communications within Operations Manager in System Center. Using this tool gives you access to the status of your subscribed services, active and resolved service incidents, and Message center communications. For more information, get the [Microsoft System Center Management Pack for Microsoft 365](https://www.microsoft.com/download/details.aspx?id=103379) in the Microsoft Download Center.
-
-**Microsoft 365 Service Communications API in Graph:** The Microsoft 365 Service Communications API lets you access service communications the way you want. With this API, you can create or connect your tools to service communications, potentially simplifying how you monitor your environment. The Service Communications API lets you monitor the following items your environment: Real-time service health and Message Center communications. For more information, see the [Microsoft 365 Service Communications API reference](/graph/api/resources/service-communications-api-overview).
-
-**Post-incident reviews:** Microsoft's commitment to continuous improvement involves analysis of unplanned customer-impacting service incidents to minimize future recurrence. Unplanned service incidents are defined as multi-tenant service disruptions that impact service usage as defined by our service-level agreements (SLAs), and have been declared as such through Service health on Microsoft 365 admin center. For unplanned customer-impacting service incidents in which there was broad and noticeable impact across a large number of organizations, a preliminary post-incident review (PIR) will be delivered via your Service health within 48 hours of incident resolution, followed by a final PIR within five business days.
-
-**PIR report:** The detailed PIR report includes: User experience and customer impact, Incident start and end date/time, Detailed timeline of impact and resolution measures, and Root cause analysis and actions being taken for continuous improvement. For all other service incidents, the Service health page on Microsoft 365 admin center will provide an incident closure summary including a final summary of the event, root cause, start and end times, and information detailing next steps. For this category of service incident, a PIR won't be generated.
-
-**Service continuity:** Microsoft offerings are delivered by highly resilient systems that help to maintain peak service performance. Service continuity provisions are part of the system design. These provisions enable Microsoft to recover quickly from unexpected events such as hardware or application failure, data corruption, or other incidents that affect users. These service continuity solutions also apply during catastrophic outages (for example, natural disasters or an incident within a Microsoft data center that renders the entire data center inoperable).
-
-**Outage recovery:** After recovery from catastrophic outages, there may be a period of time before full data center redundancy is restored for the service. For example, if Data Center 1 fails, services are restored by resources in Data Center 2. However, there may be a period of time until services in Data Center 2 have service continuity support either by restored resources in Data Center 1, or new resources in Data Center 3. The Microsoft [Service Level Agreement](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) (SLA) applies during this time. Office 365 operated by 21Vianet has a different SLA. For more information, see the [21Vianet site](https://www.21vbluecloud.com/office365/O365-SLA/).
-
-**Ensuring data availability:** Microsoft ensures that customer data is available whenever it's needed through the following features: **Data storage and redundancy, Data monitoring,** and **Completing preventative maintenance.**
-
-**Data storage and redundancy:** Customer data is stored in a redundant environment with robust data protection capabilities to enable availability, business continuity, and rapid recovery. Multiple levels of data redundancy are implemented, ranging from redundant disks to guard against local disk failure to continuous, full data replication to a geographically diverse data center.
-
-**Data monitoring:** Microsoft services maintain high levels of performance by monitoring: Databases, Blocked processes, Packet loss, Queued processes, and Query latency.
-
-**Completing preventative maintenance:** Preventative maintenance includes database consistency checks, periodic data compression, and error log reviews.
-
-**Reports:** Administrators of Microsoft can view reports showing how your organization is using Microsoft services. You can use these reports to identify issues, filter data, and download data to Microsoft Excel. You can also create your own reports using the Microsoft 365 reporting web services. Exchange Online and Exchange Online Protection (EOP) administrators can [use mail protection reports to view data about malware, spam, and rule detections](/exchange/monitoring/use-mail-protection-reports). For more information, see [View and download reports about service usage](/microsoft-365/admin/activity-reports/activity-reports). For Office 365 operated by 21Vianet, see [View and download reports for Office 365 operated by 21Vianet](/microsoft-365/admin/activity-reports/activity-reports).
-
 # [**Support, help, and training**](#tab/Support)
 
 ## Support
@@ -245,7 +193,7 @@ Microsoft Office 365 provides the following help and training resources. Communi
 
 **Online help:** Help articles and videos are available from any inline help link in the service, including the help icon in the top navigation bar of the Office 365 portal and Microsoft 365 admin center. You can also search all Office 365 help on [https://office.microsoft.com](https://go.microsoft.com/fwlink/p/?LinkId=272056).
 
-**Training:** Training is available through videos, recorded live events, and classes leading to certification. For more information, see [Microsoft 365 basics video training](https://support.microsoft.com/office/microsoft-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb), [Microsoft 365 Training](https://support.microsoft.com/training), [for admins and IT Pros](/learn/m365/), [for small businesses](/microsoft-365/admin/admin-video-library), [browse the full learning catalog](/learn/browse/), [become Microsoft certified](/learn/certifications/), [browse all learning options](/learn/browse/), and [watch live and recorded events](/learn/tv/).
+**Training:** Training is available through videos, recorded live events, and classes leading to certification. For more information, see [Microsoft 365 basics video training](https://support.microsoft.com/office/microsoft-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb), [Microsoft 365 Training](https://support.microsoft.com/training), [for admins and IT Pros](/training/m365/), [for small businesses](/microsoft-365/admin/admin-video-library), [browse the full learning catalog](/training/browse/), [become Microsoft certified](/certifications/), [browse all learning options](/training/browse/), and [watch live and recorded events](/training/tv/).
 
 **Community:** The Office 365 Community is a single destination for self-help support information. It has the latest information to help customers find answers to a variety of technical, billing, and service questions through support forums, wikis, and blogs. The support forums are staffed and moderated by Microsoft Support agents. From the Office 365 Community home page, customers can access the following resources: Forums, Wikis, Blogs. For more information, visit the [Office 365 community](https://techcommunity.microsoft.com/).
 
@@ -277,7 +225,7 @@ Microsoft Office 365 provides the following help and training resources. Communi
 
 **Languages for Troubleshooting:** Chinese-Simplified, Chinese-Traditional, French, German, Italian, Japanese, Korean, Polish, Portuguese-Brazil, Russian, and Spanish.
 
-# [**Domains, networks, partners, S&C, and SLA**](#tab/Domains)
+# [**Domains, networking and partners**](#tab/Domains)
 
 ## Domains
 
@@ -350,6 +298,8 @@ As an authorized Microsoft partner, Microsoft Office 365 offers you an opportuni
 **Connect with customers and other partners in the Office 365 Marketplace:** Office 365 Marketplace offers customers the opportunity to find partner services and expertise. For more information, see [Connect with customers through record or up next widget](/dynamics365/sales/connect-with-customers) and [Work with other partners - Partner Center](/partner-center/work-with-other-partners).
 
 **Microsoft partner network:** The Microsoft Partner Network is committed to serving the needs of our partners. To join the network, and to see how Microsoft serves its partners, see [Microsoft Partner Network](https://go.microsoft.com/fwlink/?LinkID=272021&clcid=0x409).
+
+# [**Privacy, security, rights, and SLA**](#tab/Privacy)
 
 ## Privacy, security, and transparency
 

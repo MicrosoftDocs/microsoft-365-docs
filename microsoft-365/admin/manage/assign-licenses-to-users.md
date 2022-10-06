@@ -8,14 +8,17 @@ manager: scotv
 ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
-ms.collection: 
+ms.collection:
+- scotvorg 
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom:
 - commerce_licensing
+- VSBFY23
 - AdminSurgePortfolio
 - TopSMBIssues
 - SaRA
@@ -25,7 +28,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Assign licenses depending on whether you want to assign product licenses to specific users or assign users licenses to a specific product."
-ms.date: 06/23/2022
+ms.date: 07/12/2022
 ---
 
 # Assign Microsoft 365 licenses to users
@@ -49,12 +52,11 @@ You can assign licenses to users on either the **Active users** page, or on the 
 - To use group-based licensing, see [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 - Some services, like Sway, are automatically assigned to users, and don't need to be assigned individually.
 
-
 ## Use the Licenses page to assign licenses to users
 
-The **Licenses** page lets you assign or unassign licenses for up to 20 users at a time. The page shows the products you own, the number of available licenses for each product, and the number of assigned licenses out of the total licenses available. The number of licenses is an aggregate total of licenses for all subscriptions for the same product name.
+The **Licenses** page lets you assign or unassign licenses for up to 20 users at a time. The page shows the products you own, the number of available licenses for each product, and the number of assigned licenses out of the total licenses available.
 
-For example, you might have one subscription for Microsoft 365 Business Premium that has 5 licenses, and another subscription that has 8 licenses for the same product. The **Licenses** page shows that you have a total of 13 licenses for Microsoft 365 Business Premium across all your subscriptions. This is different from what you see on the **Your products** page, which displays a row for each subscription you own, even if they are for the same product.
+The **Licenses** page shows an aggregate total of licenses for all subscriptions for the same product name. For example, you might have one subscription for Microsoft 365 Business Premium that has 5 licenses, and another subscription that has 8 licenses for the same product. The **Licenses** page shows that you have a total of 13 licenses for Microsoft 365 Business Premium across all your subscriptions. This is different from what you see on the **Your products** page, which displays a row for each subscription you own, even if they are for the same product.
 
 ::: moniker range="o365-worldwide"
 
@@ -74,7 +76,7 @@ For example, you might have one subscription for Microsoft 365 Business Premium 
 
 4. In the **Assign licenses to users** pane, begin typing a name, and then choose it from the results to add it to the list. You can add up to 20 users at a time.
 
-4. Select **Turn apps and services on or off** to assign or remove access to specific items.
+5. Select **Turn apps and services on or off** to assign or remove access to specific items.
 
 6. When you're finished, select **Assign**, then close the right pane.
 

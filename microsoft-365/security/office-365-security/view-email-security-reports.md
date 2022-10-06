@@ -15,12 +15,12 @@ search.appverid:
   - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 description: Admins can learn how to find and use the email security reports that are available in the Microsoft 365 Defender portal.
 ms.custom: 
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # View email security reports in the Microsoft 365 Defender portal
@@ -91,7 +91,7 @@ You can filter both the chart and the details table by clicking **Filter** and s
 - **Activity**: **Restricted** or **Suspicious**
 - **Tag**: **All** or the specified user tag (including priority accounts).
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 On the **Compromised users** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
@@ -135,7 +135,7 @@ You can filter both the chart and the details table by clicking **Filter** and s
 - **Direction**: **Outbound** and **Inbound**.
 - **Severity**: **High severity**, **Medium severity**, and **Low severity**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 On the **Exchange transport rule report** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
@@ -166,7 +166,7 @@ You can filter both the chart and the details table by clicking **Filter** and s
 - **Direction**: **Outbound** and **Inbound**
 - **Severity**: **High severity**, **Medium severity**, and **Low severity**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 On the **Exchange transport rule report** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
@@ -219,7 +219,7 @@ You can filter both the chart and the details table by clicking **Filter** and s
   - **Rule messages**
   - **Phishing email**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 Back on the **Mailflow status report** page, if you click **Choose a category for more details**, you can select from the following values:
 
@@ -251,7 +251,7 @@ You can filter both the chart and the details table by clicking **Filter** and s
   - **Rule messages**
   - **Phishing email**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 Back on the **Mailflow status report** page, if you click **Choose a category for more details**, you can select from the following values:
 
@@ -314,7 +314,7 @@ You can filter both the chart and the details table by clicking **Filter** and s
 - **Date (UTC)** **Start date** and **End date**.
 - **Direction**: **Outbound** and **Inbound**.
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 Back on the **Mailflow status report** page, you can click **Show trends** to see trend graphs in the **Mailflow trends** flyout that appears.
 
@@ -340,7 +340,7 @@ The **Mail latency report** in Defender for Office 365 contains information on t
 
 The **Spoof detections** report shows information about messages that were blocked or allowed due to spoofing. For more information about spoofing, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
 
-The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for ten days of filtering.
+The aggregate and detail views of the report allows for 90 days of filtering.
 
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Spoof detections** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/SpoofMailReport>.
 
@@ -478,7 +478,7 @@ If you click **Filter**, the following filters are available:
   - **Mail flow rule** (transport rule)
   - **Others**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 ### View data by Email \> Phish and Chart breakdown by Detection Technology
 
@@ -543,7 +543,7 @@ If you click **Filter**, the following filters are available:
 - **Policy name (details table view only)**: **All** or the specified policy.
 - **Recipients**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 On the **Threat protection status** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
@@ -593,7 +593,7 @@ If you click **Filter**, the following filters are available:
 - **Policy name (details table view only)**: **All** or the specified policy.
 - **Recipients**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 On the **Threat protection status** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
@@ -650,7 +650,7 @@ If you click **Filter**, the following filters are available:
 - **Policy name (details table view only)**: **All** or the specified policy.
 - **Recipients**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 On the**Threat protection status** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
@@ -702,7 +702,7 @@ If you click **Filter**, the following filters are available:
 
 <sup>\*</sup> Defender for Office 365 only
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 On the **Threat protection status** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
@@ -757,7 +757,7 @@ If you click **Filter**, the following filters are available:
 
 <sup>\*</sup> Defender for Office 365 only
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 On the **Threat protection status** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
@@ -786,7 +786,7 @@ If you click **Filter**, the following filters are available:
 - **Detection**: The same values as in the chart.
 - **Workload**: **Teams**, **SharePoint**, and **OneDrive**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 On the **Threat protection status** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
@@ -832,7 +832,7 @@ If you click **Filter**, the following filters are available:
 - **Policy name (details table view only)**: **All**
 - **Recipients**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 On the **Threat protection status** page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** button is available.
 
@@ -889,7 +889,7 @@ If you click **Filter**, the following filters are available:
 
 <sup>\*</sup> Defender for Office 365 only
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 On the **Threat protection status** page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** button is available.
 
@@ -947,7 +947,7 @@ The details table below the graph shows the senders or recipients and message co
 
 You can filter both the chart and the details table by clicking **Filter** and selecting **Start date** and **End date**. Users can also filter by user tags. 
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 On the **Top senders and recipients** page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export** button is available.
 
@@ -982,7 +982,7 @@ You can filter both the chart and the details table by clicking **Filter** and s
   - **Spam**
 - **Phish simulation**: **Yes** or **No**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 To group the entries, click **Group** and select one of the following values from the drop-down list:
 
@@ -1139,8 +1139,6 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 [Anti-spam protection in EOP](anti-spam-protection.md)
 
 [Anti-malware protection in EOP](anti-malware-protection.md)
-
-[Smart reports and insights in the Microsoft 365 Defender portal](reports-and-insights-in-security-and-compliance.md)
 
 [View mail flow reports in the Microsoft 365 Defender portal](view-mail-flow-reports.md)
 

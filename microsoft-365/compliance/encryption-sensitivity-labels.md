@@ -10,7 +10,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 search.appverid: 
 - MOE150
 - MET150
@@ -45,6 +46,8 @@ The encryption settings are available when you [create a sensitivity label](crea
 > [!NOTE]
 > Now rolling out in preview, a sensitivity label in Outlook can apply S/MIME protection rather than encryption and permissions from the Azure Rights Management service. For more information, see [Configure a label to apply S/MIME protection in Outlook](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Understand how the encryption works
 
 Encryption uses the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
@@ -62,6 +65,10 @@ Before you can use encryption, you might need to do some configuration tasks. Wh
 - Check for network requirements
     
     You might need to make some changes on your network devices such as firewalls. For details, see [Firewalls and network infrastructure](/azure/information-protection/requirements#firewalls-and-network-infrastructure) from the Azure Information Protection documentation.
+
+- Check your Azure AD configuration
+    
+    There are some Azure Active Directory (Azure AD) configurations that can prevent authorized access to encrypted content. For example, cross-tenant access settings and Conditional Access policies. For more information, see [Azure AD configuration for encrypted content](encryption-azure-ad-configuration.md).
 
 - Configure Exchange for Azure Information Protection
     
@@ -86,9 +93,9 @@ Before you can use encryption, you might need to do some configuration tasks. Wh
 
 4.  On the **Encryption** page, select one of the following options:
     
-    - **Remove encryption if the file is encrypted**: This option is supported by the Azure Information Protection unified labeling client only. When you select this option and use built-in labeling, the label might not display in apps, or display and not make any encryption changes.
+    - **Remove encryption if the file or email is encrypted**: When you select this option, applying the label will remove existing encryption, even if it was applied independently from a sensitivity label.
         
-        For more information about this scenario, see the [What happens to existing encryption when a label's applied](#what-happens-to-existing-encryption-when-a-labels-applied) section. It's important to understand that this setting can result in a sensitivity label that users might not be able to apply when they don't have sufficient permissions.
+        It's important to understand that this setting can result in a sensitivity label that users might not be able to apply when they don't have sufficient permissions to remove the existing encryption. For more information about this scenario, see the [What happens to existing encryption when a label's applied](#what-happens-to-existing-encryption-when-a-labels-applied) section.
     
     - **Configure encryption settings**: Turns on encryption and makes the encryption settings visible:
         
@@ -108,16 +115,11 @@ However, the content might be already encrypted. For example, another user might
 
 The following table identifies what happens to existing encryption when a sensitivity label is applied to that content:
 
-| | Encryption: Not selected | Encryption: Configured | Encryption: Remove <sup>\*</sup> |
+| | Encryption: Not selected | Encryption: Configured | Encryption: Remove |
 |:-----|:-----|:-----|:-----|
 |**Permissions specified by a user**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
 |**Protection template**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
 |**Label with administator-defined permissions**|Original encryption is removed|New label encryption is applied|Original encryption is removed|
-
-**Footnote:**
-
-<sup>\*</sup>
-Supported by the Azure Information Protection unified labeling client only
 
 In the cases where the new label encryption is applied or the original encryption is removed, this happens only if the user who applies the label has a usage right or role that supports this action:
 
@@ -284,7 +286,7 @@ You can use the following options to let users assign permissions when they manu
 
     This option is supported by the Azure Information Protection unified labeling client and by some apps that use built-in labeling. For apps that don't support this capability, the label either won't be visible for users, or the label is visible for consistency but it can't be applied with an explanation message to users.
     
-    To check which apps that use built-in labeling support this option, use the [capabilities table for Word, Excel, and PowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the row **Let users assign permissions: - Prompt users**.
+    To check which apps that use built-in labeling support this option, use the [capabilities table for Word, Excel, and PowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the rows for **Let users assign permissions**.
 
 When the options are supported, use the following table to identify when users see the sensitivity label:
 
@@ -339,6 +341,16 @@ For built-in labeling, and for the Azure Information Protection unified labeling
 
 > [!TIP]
 > If users were familiar with configuring custom permissions with the Azure Information Protection unified labeling client before [co-authoring was enabled](sensitivity-labels-coauthoring.md), you might find it helpful to review the mapping of permission levels to individual usage rights: [Rights included in permissions levels](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels).
+
+#### Support for organization-wide custom permissions
+
+Now rolling out in preview for built-in labeling in Windows, users can specify a domain name that will apply to all users in an organization that owns the domain and it is in Azure Active Directory. This capability provides [parity with the Azure Information Protection unified labeling client](sensitivity-labels-aip.md#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps):
+
+![Updated dialog box to support organization-wide custom permissions.](../media/org-wide-custom-permissions-dialog.png)
+
+For example, a user types "@contoso.com" (or "contoso.com") and grants read access. Because Contoso Corporation owns the contoso.com domain, all users in that domain and all other domains that the organization owns in Azure Active Directory will be granted read access.
+
+It's important to let users know that access isn't restricted to just the users in the domain specified. For example, "@sales.contoso.com" wouldn't restrict access to users in just the sales subdomain, but also grant access to users in the marketing.contoso.com domain, and even users with a disjoint namespace in the same Azure Active Directory tenant.
 
 ## Example configurations for the encryption settings
 

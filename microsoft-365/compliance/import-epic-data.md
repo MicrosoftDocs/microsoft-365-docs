@@ -1,24 +1,27 @@
 ---
 title: "Set up a connector to import Epic EHR data"
+description: "Administrators can set up a data connector to import electronic healthcare records (EHR) data from your organization's Epic system to Microsoft 365. This lets you use Epic EHR data in insider risk management policies to help you detect unauthorized access activity to patient data by your employees."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "Administrators can set up a data connector to import electronic healthcare records (EHR) data from your organization's Epic system to Microsoft 365. This lets you use Epic EHR data in insider risk management policies to help you detect unauthorized access activity to patient data by your employees."
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ---
 
 # Set up a connector to import Epic EHR audit data (preview)
 
-You can set up a data connector in the Microsoft Purview compliance portal to import audit records for user activity in your organization's Epic Electronic Healthcare Records (EHR) system. Audit records from your Epic EHR system include records for events related to accessing a patient's health records. Epic EHR audit records can be used by the Microsoft 365 [insider risk management solution](insider-risk-management.md) to help protect your organization from unauthorized access to patient information.
+You can set up a data connector in the Microsoft Purview compliance portal to import audit records for user activity in your organization's Epic Electronic Healthcare Records (EHR) system. Audit records from your Epic EHR system include records for events related to accessing a patient's health records. Epic EHR audit records can be used by the Microsoft Purview [Insider Risk Management solution](insider-risk-management.md) to help protect your organization from unauthorized access to patient information.
 
 Setting up an Epic connector consists of the following tasks:
 
@@ -31,6 +34,10 @@ Setting up an Epic connector consists of the following tasks:
 - Running a script to push Epic EHR audit records to the API endpoint.
 
 - Optionally, scheduling the script to run automatically to import audit records.
+
+If you’d like to participate in the preview, please reach out to the team at dcfeedback@microsoft.com.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you set up the connector
 
@@ -93,7 +100,7 @@ The next step is to create an Epic connector in the compliance portal. After you
 
    A status page is displayed that confirms the connector was created. This page contains two important things that you need to complete the next step to run the sample script to upload your Epic EHR audit records data.
 
-    Review page with job ID and link to github for sample script
+    Review page with job ID and link to GitHub for sample script
 
     1. **Job ID.** You'll need this job ID to run the script in the next step. You can copy it from this page or from the connector flyout page.
 

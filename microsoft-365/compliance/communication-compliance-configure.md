@@ -14,10 +14,12 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- m365-security-compliance
+- highpri 
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
@@ -27,6 +29,8 @@ search.appverid:
 # Get started with communication compliance
 
 Use communication compliance policies to identify user communications for examination by internal or external reviewers. For more information about how communication compliance policies can help you detect communications in your organization, see [communication compliance policies](/microsoft-365/compliance/communication-compliance-policies). If you'd like to review how Contoso quickly configured a communication compliance policy to detect inappropriate content in Microsoft Teams, Exchange Online, and Yammer communications, check out this [case study](/microsoft-365/compliance/communication-compliance-case-study).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Subscriptions and licensing
 
@@ -49,15 +53,37 @@ If you don't have an existing Office 365 Enterprise E5 plan and want to try comm
 > [!NOTE]
 > Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
 
-## Recommended actions
+## Recommended actions (preview)
 
-Recommended actions can help your organization get started with communication compliance capabilities and get the most out of your existing policies. Included on the **Policies** page, recommended actions provide insights and summarizes sensitive information types and inappropriate content activities in communications in your organization. Insights are supported by [data classification](/microsoft-365/compliance/data-classification-overview) and the application of sensitivity labels, retention labels, and sensitive information type classification. These insights don't include any personally identifiable information (PII) for users in your organization.
+Recommended actions can help your organization quickly get started with communication compliance. Included on the **Overview** page, recommended actions will help guide you through the steps to configure and deploy policies.
+
+The following recommendations are available to help you get started with or maximize your communication compliance configuration:
+
+- **Get to know communication compliance**: Before setting up things, review our official documentation to learn about, plan for, and deploy communication compliance in your organization.
+- **Assign permissions to ensure your team can get their jobs done**: Ensure that only the appropriate stakeholders can access the solution, by assigning team members responsible for managing communication compliance features and investigating and reviewing alerts.
+- **Create distribution groups for users' whose communications you want to detect**: We recommend creating distribution groups containing users who will be included in communication compliance policies.
+- **Create your first policy to start detecting communications**: To investigate potential regulatory compliance violations, you must first set up a policy that detects potential violations across your organization's internal and/or external communications.
+- **Review alerts to investigate detected messages and take action**: Messages that match a policy's conditions will trigger alerts that provide context around a policy violation so you can investigate and take action if needed.
+- **Review reports for quick insights into how policies are performing**: Get quick insights into how your policies are performing, view detailed reports to drill down further, and export results for further analysis.
+
+Each recommended action included in this experience has three attributes:
+
+- **Action**: The name and description of the recommended action.
+- **Recommended, required or optional**: Whether the recommended action is highly recommended, required, or optional for communication compliance features to function as expected.
+- **Estimated time to complete**: Estimated time to complete the recommended action in minutes.
+
+Select a recommendation from the list to get started with configuring communication compliance. Each recommended action guides you through the required activities for the recommendation, including any requirements, what to expect, and the impact of configuring the feature in your organization. Some recommended actions will be automatically marked as complete when configured. If not, you'll need to manually select the action as complete when configured.
+
+Also included on the Policies page, recommended actions insights help summarize current sensitive information types and potential regulatory compliance violations in communications in your organization. Insights are supported by [data classification](/microsoft-365/compliance/data-classification-overview) and the application of sensitivity labels, retention labels, and sensitive information type classification. These insights are aggregated and don't include any personally identifiable information (PII) for users in your organization.
 
 ![Communication compliance recommended actions.](../media/communication-compliance-recommended-actions.png)
 
-Activity in messages containing inappropriate content is aggregated by [classifier type](/microsoft-365/compliance/communication-compliance-policies#classifiers) from existing policies that use the inappropriate content template or custom policies that use classifiers for inappropriate content. Investigate alerts for these messages on the Alert dashboard for your policies.
+Activity in messages is aggregated by [classifier type](/microsoft-365/compliance/communication-compliance-policies#classifiers) from existing policies that use the *Detect inappropriate text* policy template or custom policies that use classifiers. Investigate alerts for these messages on the **Alert dashboard** for your policies.
 
-Activity involving [sensitive information types](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) is detected in messages covered in existing policies and for messages that aren't covered by existing policies. Insights are aggregated for all sensitive information types, including ones that your organization hasn't previously defined in an existing communication compliance policy. Use these insights to create a new communication compliance policy or to update existing policies.
+Activity involving [sensitive information types](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) is detected in messages covered in existing policies and for messages that aren't covered by existing policies. Insight messages that aren't covered by existing policies can't be investigated and remediated, a new policy must be created to detect and remediate similar activity in future messages. Insights are aggregated for all sensitive information types, including ones that your organization hasn't previously defined in an existing communication compliance policy. Use these insights to create a new communication compliance policy or to update existing policies. After creating a new policy, messages alerts for this policy might or might not match an equal number of messages identified in a similar insight. Your policy might have different conditions, a different number of in-scope users, and only detects message activity that occurs after the policy is active.
+
+>[!TIP]
+>Don't want to see the recommended action insights? Open a request with Microsoft Support to disable the display of these insight widgets for your organization.
 
 ## Step 1 (required): Enable permissions for communication compliance
 
@@ -154,11 +180,11 @@ Use the following chart to help you configure groups in your organization for co
 |Supervised users <br> Excluded users | Distribution groups <br> Microsoft 365 Groups | Dynamic distribution groups <br> Nested distribution groups <br> Mail-enabled security groups <br> Microsoft 365 groups with dynamic membership |
 | Reviewers | None | Distribution groups <br> Dynamic distribution groups <br> Nested distribution groups <br> Mail-enabled security groups |
 
-When you assign a *distribution group* in the policy, the policy monitors all emails and Teams chats from each user in the *distribution group*. When you assign a *Microsoft 365 group* in the policy, the policy detects all emails and Teams chats sent to the *Microsoft 365 group*,* not the individual emails and chats received by each group member. Using distribution groups in communication compliance policies are recommended so that individual emails and Teams chats from each user are automatically monitored.
+When you assign a *distribution group* in the policy, the policy detects all emails and Teams chats from each user in the *distribution group*. When you assign a *Microsoft 365 group* in the policy, the policy detects all emails and Teams chats sent to the *Microsoft 365 group*,* not the individual emails and chats received by each group member. Using distribution groups in communication compliance policies are recommended so that individual emails and Teams chats from each user are automatically detected.
 
-If you're an organization with an Exchange on-premises deployment or an external email provider and you want to detect Microsoft Teams chats for your users, you must create a distribution group for the users with on-premises or external mailboxes to monitor. Later in these steps, you'll assign this distribution group as the **Supervised users and groups** selection in the policy wizard. For more information about the requirements and limitations for enabling cloud-based storage and Teams support for on-premises users, see [Search for Teams chat data for on-premises users](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
+If you're an organization with an Exchange on-premises deployment or an external email provider and you want to detect Microsoft Teams chats for your users, you must create a distribution group for the users with on-premises or external mailboxes. Later in these steps, you'll assign this distribution group as the **Supervised users and groups** selection in the policy wizard. For more information about the requirements and limitations for enabling cloud-based storage and Teams support for on-premises users, see [Search for Teams chat data for on-premises users](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
 
-To manage supervised users in large enterprise organizations, you may need to monitor all users across large groups. You can use PowerShell to configure a distribution group for a global communication compliance policy for the assigned group. This enables you to monitor thousands of users with a single policy and keep the communication compliance policy updated as new employees join your organization.
+To manage supervised users in large enterprise organizations, you may need to detect messages for all users across large groups. You can use PowerShell to configure a distribution group for a global communication compliance policy for the assigned group. This enables you to detect messages for thousands of users with a single policy and keep the communication compliance policy updated as new employees join your organization.
 
 1. Create a dedicated [distribution group](/powershell/module/exchange/new-distributiongroup) for your global communication compliance policy with the following properties: Make sure that this distribution group isn't used for other purposes or other Office 365 services.
 
@@ -221,7 +247,7 @@ For more information about configuring Yammer in Native Mode, see:
 
     - Confirm or update the policy name. Policy names can't be changed once the policy is created.
 
-    - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude. When using the conflict of interest template, you'll select two groups or two users to monitor for internal communications.
+    - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude. When using the conflict of interest template, you'll select two groups or two users to detect internal communications.
 
     - Choose the reviewers for the policy. Reviewers are individual users and all reviewers must have mailboxes hosted on Exchange Online. Reviewers added here are the reviewers that you can choose from when escalating an alert in the investigation and remediation workflow. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
 

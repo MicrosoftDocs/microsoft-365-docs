@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
@@ -33,11 +34,11 @@ These are the key features you'll get with the Microsoft 365 support integration
 
 - Service Health Incidents: Information about known Microsoft service health incidents, including user impact, scope, current status, and next expected update. Using machine learning, ServiceNow incidents are matched to Microsoft service health incidents based on the short description field.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-description-field-1.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-description-field-1.png" alt-text="Service Health Incidents description field.":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow_service_health_incidents.png" lightbox="../../media/ServiceNow-guide/servicenow_service_health_incidents.png" alt-text="Service Health Incidents description field.":::
 
 - Recommended solutions: Descriptions of tasks and incidents are used to recommend precise targeted solutions and relevant articles from Microsoft powered by machine learning. You can also use Search to find other solutions, if needed.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-description-field-2.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-description-field-2.png" alt-text="Recommended solutions description field.":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow_recommended_articles.png" lightbox="../../media/ServiceNow-guide/servicenow_recommended_articles.png" alt-text="Recommended solutions description field.":::
 
 - Microsoft service request: Escalate issues to Microsoft support agents and receive status updates for your case.
 
@@ -91,3 +92,6 @@ To understand each feature, see [Microsoft 365 support integration](https://stor
 
 > [!NOTE]
 > This app is not supported in regulated or restricted environments.
+
+> [!IMPORTANT]
+> The Microsoft 365 support integration app will occasionally prompt users for feedback about the app. If you don’t want users to be prompted for feedback, turn off this functionality in the app settings. For more information about Microsoft feedback policies, see [Learn about Microsoft feedback for your organization](/microsoft-365/admin/misc/feedback-user-control). To change the feedback settings, follow the steps in the installation process.

@@ -4,7 +4,7 @@ description: Configure the Microsoft Defender for Endpoint proxy and internet se
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, netsh, winhttp, proxy server
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,10 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
-ms.topic: article
-ms.technology: mde
+- m365-security
+- tier1
+ms.topic: conceptual
+ms.subservice: mde
 ---
 
 # Configure device proxy and Internet connectivity settings
@@ -90,6 +90,15 @@ The static proxy is configurable through group policy (GP), both the settings un
 | Configure authenticated proxy usage for the connected user experience and the telemetry service | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `DisableEnterpriseAuthProxy` | 1 (REG_DWORD) |
 | Configure connected user experiences and telemetry | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> For example: ```10.0.0.6:8080``` (REG_SZ) |
 
+> [!NOTE]
+> If you are using 'TelemetryProxyServer' setting on devices that are otherwise **completely offline**, meaning the operating system is unable to connect for the online certificate revocation list or Windows Update, then it is recommended to add the additional registry setting `PreferStaticProxyForHttpRequest` with a value of `1`.<br>
+> Parent registry path location for "PreferStaticProxyForHttpRequest" is "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"<br>
+> The following command can be used to insert the registry value in the correct location:<br>
+> ```reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f```<br>
+> The above registry value is applicable only starting with MsSense.exe version 10.8210.* and later, or version 10.8049.* and later (on Windows Server 2012R2/2016 with the unified agent)
+
+
+
 ## Configure a static proxy for Microsoft Defender Antivirus
 
 Microsoft Defender Antivirus [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) provides near-instant, automated protection against new and emerging threats. Note, the connectivity is required for [custom indicators](manage-indicators.md) when Defender Antivirus is your active anti-malware solution. For [EDR in block mode](edr-in-block-mode.md) has primary anti-malware solution when using a non-Microsoft solution.
@@ -139,7 +148,6 @@ Use netsh to configure a system-wide static proxy.
 > [!NOTE]
 >
 > - This will affect all applications including Windows services which use WinHTTP with default proxy.</br>
-> - Laptops that are changing topology (for example: from office to home) will malfunction with netsh command. Use the registry-based static proxy configuration.
 
 1. Open an elevated command line:
    1. Go to **Start** and type **cmd**.

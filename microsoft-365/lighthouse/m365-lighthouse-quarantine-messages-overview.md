@@ -7,9 +7,10 @@ manager: scotv
 ms-reviewer: shcallaw
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -22,7 +23,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Microsoft 365 Lighthouse lets you see insights and information about quarantined emails across all your customer tenants. From a single view, you can triage quarantined emails and take the appropriate actions. The data is available if the tenant has implemented Exchange Online Protection (EOP) and Microsoft Defender for Office365 Plan 1 (MDO).
 
-You can access the information by selecting **Data Protection** from the left navigation or the **Home** page.
+You can access the information by selecting **Home** in the left navigation pane, or by selecting **Data Protection** in the left navigation pane to open the Quarantined messages page.
 
 ## Quarantined messages page
 
@@ -38,7 +39,7 @@ The **Status of messages** section provides a consolidated view across eligible 
 
 The data reflects the last 30 days; however, you can use the **Time range** filter to modify the view.
 
-The **Quarantine** **reason** chart contains a breakdown of quarantine counts by Exchange Online Protection (EOP) and Microsoft Defender for Office365 Plan 1 (MDO) policy type. These types include
+The **Quarantine reason** section contains a breakdown of quarantine counts by Exchange Online Protection (EOP) and Microsoft Defender for Office365 Plan 1 (MDO) policy type. These types include
 
 - Malware
 - Phishing
@@ -48,15 +49,15 @@ The **Quarantine** **reason** chart contains a breakdown of quarantine counts by
 
 The quarantine list is a sortable view of quarantine information by tenant. Within this view, you can filter by the following information:
 
-- **Quarantine Reason:** Any, Malware, Phish, High confidence phish, Spam, Bulk Email
-- **Policy Type:** Any, Anti-malware, Anti-phishing, Anti-spam, Safe Attachments, Transport Rule, Unknown
-- **About to Expire:** Any, Today, within two days, within seven days
+- **Quarantine reason:** Any, Malware, Phish, High confidence phish, Spam, Bulk Email
+- **Policy type:** Any, Anti-malware, Anti-phishing, Anti-spam, Safe Attachments, Transport Rule, Unknown
+- **About to expire:** Any, Today, within two days, within seven days
 
 You also can adjust the columns and sort data based on tenant, message status, and expiration dates.
 
 :::image type="content" source="../media/m365-lighthouse-data-protection/quarantine-email-page.png" alt-text="Quarantine messages page in Microsoft 365 Lighthouse" lightbox="../media/m365-lighthouse-data-protection/quarantine-email-page.png":::
 
-The **Copy Link to Messages in Microsoft** **365 Defender** option provides a link to Microsoft 365 Defender portal where you can access and manage your tenant’s email quarantine queue. You must authenticate before you can take any action.
+The **Copy Link to Messages in Microsoft** **365 Defender** option provides a link to Microsoft 365 Defender portal where you can access and manage your tenant's email quarantine queue. You must authenticate before you can take any action.
 
 ## Related content
 

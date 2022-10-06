@@ -14,10 +14,11 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- Strat_O365_IP
-- m365-security-compliance
+- tier3
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
 ms.custom:
  - Ent_Solutions
  - seo-marvel-apr2020
@@ -28,6 +29,8 @@ ms.assetid:
 # Get started with privileged access management
 
 This article guides you through enabling and configuring privileged access management in your organization. You can use either the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> or Exchange Management PowerShell to manage and use privileged access.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 

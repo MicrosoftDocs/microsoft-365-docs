@@ -15,12 +15,12 @@ search.appverid:
   - MOE150
 ms.assetid:
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 description: Admins can learn how the impersonation insight works. They can quickly determine which senders are legitimately sending email into their organizations from domains that don't pass email authentication checks (SPF, DKIM, or DMARC).
 ms.custom: 
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Impersonation insight in Defender for Office 365
@@ -30,9 +30,6 @@ ms.prod: m365-security
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are not available in all organizations.
 
 Impersonation is where the sender of an email message looks very similar to a real or expected sender email address. Attackers often user impersonated sender email addresses in phishing or other types of attacks in an effort to gain the trust of the recipient. There are basically two types of impersonation:
 
@@ -67,7 +64,7 @@ You can use the impersonation insight in the Microsoft 365 Defender portal to qu
 
 2. On the **Anti-phishing** page, the impersonation insight looks like this:
 
-   :::image type="content" source="../../media/m365-sc-impersonation-and-spoof-intelligence-insight.png" alt-text="The impersonation insight and spoof intelligence on the Anti-phishing policy page" lightbox="../../media/m365-sc-impersonation-and-spoof-intelligence-insight.png":::
+   :::image type="content" source="../../media/m365-sc-impersonation-insight.png" alt-text="The impersonation insight on the Anti-phishing policy page in the Microsoft 365 Defender portal." lightbox="../../media/m365-sc-impersonation-insight.png":::
 
    The insight has two modes:
 
@@ -75,9 +72,6 @@ You can use the impersonation insight in the Microsoft 365 Defender portal to qu
     - **What if mode**: If impersonation protection is not enabled and configured in any active anti-phishing policies, the insight shows you how many messages *would* have been detected by our impersonation protection capabilities over the past seven days.
 
 To view information about the impersonation detections, click **View impersonations** in the impersonation insight.
-
-   > [!NOTE]
-   > For information about the spoof intelligence insight, see [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
 
 ## View information about messages from senders in impersonated domains
 
