@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/30/2022
+ms.date: 10/6/2022
 ms.reviewer: 
 ms.custom:
 - it-pro
@@ -117,7 +117,7 @@ There are three methods for ensuring that the _tenant_ data location for a parti
 
 **Table 3: Available Data Residency by Country**
 
-|   | Exchange Online  | SharePoint Online  | Teams  | MDO P1  | Office for the web  | Viva Connections  | Viva Topics  |  Purview  |
+| Exchange Online  | SharePoint Online  | Teams  | MDO P1  | Office for the web  | Viva Connections  | Viva Topics  |  Purview  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Australia  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
 | Brazil  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
