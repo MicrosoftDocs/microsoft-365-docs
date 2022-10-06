@@ -76,6 +76,8 @@ Get-ComplianceCase "<eDiscovery (Standard) case name>"| %{$_|fl;"`t==Searches=="
 
 ## Collect diagnostic information for eDiscovery (Premium)
 
+Collect Case Information:
+
 The **Settings** tab in an eDiscovery (Premium) case lets you quickly copy the diagnostic information for the case. The diagnostic information is saved to the clipboard so you can paste it to a text file and send to Microsoft Support.
 
 1. Go to the compliance portal, and select **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a>.
@@ -88,6 +90,16 @@ The **Settings** tab in an eDiscovery (Premium) case lets you quickly copy the d
 
 5. Open a text file (in Notepad) and then paste the information in the text file.
 
-6. Save the text file and name it something like `AeD Diagnostic Info YYYY.MM.DD` (for example, `AeD Diagnostic Info 2020.11.03`).
+6. Save the text file and name it something like `eDP Diagnostic Info YYYY.MM.DD` (for example, `eDP Diagnostic Info 2020.11.03`).
 
 After reviewing the file and redacting sensitive information, send it to the Microsoft Support engineer working on your case.
+
+Collect Job  Information:
+
+1. While in the Case, click the **Jobs** Tab. 
+2. Scroll down to the Job that faied and click on it to open the Job Information screen.
+3. Click the button **Copy Support Information** to copy the Job diagnostics information to the clipboard.
+4. Open a text file (in Notepad) and then paste the information in the text file.
+5. Save the text file and name it something like `eDP Job Diagnostic Info YYYY.MM.DD` (for example, `eDP Diagnostic Info 2020.11.03`).
+6. After reviewing the file and redacting sensitive information, send it to the Microsoft Support engineer working on your case.
+
