@@ -30,7 +30,7 @@ By default, searches from these entry points will return aggregate results, even
 
 Additionally, Multi-Geo search capabilities can be configured for your custom search applications that use the SharePoint search API.
 
-Please review <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/configure-search-for-multi-geo?view=o365-worldwide" target="_blank">Configure Search for OneDrive for Business Multi-Geo</a> for instructions including any limitations and differences.
+Please review [Configure Search for OneDrive for Business Multi-Geo](configure-search-for-multi-geo.md) for instructions including any limitations and differences.
 
 ## Validating the Microsoft 365 Multi-Geo configuration
 
@@ -50,7 +50,7 @@ Confirm that the OneDrive sync client automatically detects your OneDrive for Bu
 
 Office applications:
 
-Confirm that you can access OneDrive for Business by logging in from an Office application, such as Word. Open the Office application and select "OneDrive – <TenantName>". Office will detect your OneDrive location and show you the files that you can open.
+Confirm that you can access OneDrive for Business by logging in from an Office application, such as Word. Open the Office application and select **OneDrive – /<TenantName/>**. Office will detect your OneDrive location and show you the files that you can open.
 
 Sharing:
 
