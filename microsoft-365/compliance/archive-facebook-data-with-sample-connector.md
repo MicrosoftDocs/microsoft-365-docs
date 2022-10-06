@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection:
-- tier1
+- tier3
 - purview-compliance
 - data-connectors
 ms.custom: seo-marvel-apr2020
@@ -27,6 +27,8 @@ Use a connector in the Microsoft Purview compliance portal to import and archive
 After the Facebook data is imported, you can apply Microsoft Purview features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, Communication compliance, and Microsoft 365 retention policies to the Facebook data. For example, when a mailbox is placed on Litigation Hold or assigned to a retention policy, the Facebook data is preserved. You can search third-party data using Content Search or associate the mailbox where the Facebook data is stored with a custodian in a Microsoft Purview eDiscovery (Premium) case. Using a connector to import and archive Facebook data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
 If you’d like to participate in the preview, please reach out to the team at dcfeedback@microsoft.com.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Prerequisites for setting up a connector for Facebook Business pages
 

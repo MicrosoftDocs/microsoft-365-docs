@@ -30,6 +30,8 @@ Microsoft Purview Data Loss Prevention (DLP) policies can take protective action
 
 If you are new to DLP alerts, you should review [Learn about the data loss prevention alerts dashboard](dlp-alerts-dashboard-learn.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
 Before you begin, make sure you have the necessary prerequisites:

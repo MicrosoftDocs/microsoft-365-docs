@@ -30,6 +30,8 @@ ms.collection:
   
  eDiscovery (Premium) includes components for the Relevance training and tagging of files relevant to a case. eDiscovery (Premium) learns from the trained samples of Relevant and Not Relevant files to provide Relevance scores for each file, and generates analytical results that can be used during and after the file review process. 
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Guidelines for setting up Relevance training
 
  In Advance eDiscovery, in the **Cases** window, select a case and click **Go to case**. Click **Relevance** \> **Relevance setup**. Follow these recommended guidelines to set up Relevance. 

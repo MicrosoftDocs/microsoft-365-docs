@@ -14,7 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier2
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -25,6 +25,8 @@ description: "France driver's license number sensitive information type entity d
 # France drivers license number
 
 This entity is available in the EU Driver's License Number sensitive information type and is available as a stand-alone sensitive information type entity.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 

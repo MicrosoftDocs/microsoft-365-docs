@@ -46,6 +46,8 @@ Content in these containers however, do not inherit the labels for the sensitivi
 
 Container labels don't support displaying [other languages](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell) and display the original language only for the label name and description.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Using sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites
 
 Before you enable sensitivity labels for containers and configure sensitivity labels for the new settings, users can see and apply sensitivity labels in their apps. For example, from Word:

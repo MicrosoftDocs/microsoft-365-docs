@@ -13,7 +13,7 @@ ms.collection:
 - purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
-- highpri
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
@@ -24,6 +24,8 @@ description: "Learn how to create alerts for activities in Microsoft Purview Com
 # Microsoft Purview Compliance Manager alerts and alert policies
 
 **In this article:** Learn how to **set alerts** for certain activities in Compliance Manager, how to manage alerts, and how to **create alert policies** for defining alert conditions.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Overview
 Compliance Manger can alert you to changes as soon as they happen so that you can stay on track with your compliance goals. For example, you can set up alerts to inform you when an improvement action's score value has increased or decreased due to a configuration change in your tenant, or when an improvement action has been assigned to a user to perform implementation or testing work. View the [types of events](#create-an-alert-policy) for which you can create alerts.

@@ -52,6 +52,8 @@ You can follow some or all of the steps in this article to set up an archive and
 > [!NOTE]
 > Instructions in this article use the [Microsoft Purview compliance portal](microsoft-365-compliance-center.md) and the [new Exchange admin center](/exchange/features-in-new-eac).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you set up an archive and deletion policy
 
 - You must be a global administrator in your organization to perform the steps in this article.

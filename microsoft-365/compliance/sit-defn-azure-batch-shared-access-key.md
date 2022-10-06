@@ -14,7 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier2
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -23,6 +23,8 @@ description: "Azure Batch Shared Access Key sensitive information type entity de
 ---
 
 # Azure Batch Shared Access Key (preview)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 
@@ -52,7 +54,7 @@ This SIT is designed to match the security information that's used to access [Az
 It uses several primary resources:
 
 - Patterns of Base64 encoded 256-bits symmetric key.
-- Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id.
+- Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, ID.
 - Patterns of mockup values, redactions, and placeholders.
 - A dictionary of vocabulary.
 
