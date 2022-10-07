@@ -16,25 +16,174 @@ description: "Get an overview of...."
 
 # Conformance metadata for Message Center posts
 
-To keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Message center</a>.
-  
-To open Message center:
+When planning for new features or service deployments, you need to understand and assess the changes for conformance to industry, region, and country regulations. We've heard your feedback that if there's insufficient conformance information about a new or changing feature, you may have to conduct your own research about the feature or reach out to the Compliance Program with questions.  
 
-::: moniker range="o365-worldwide"
+In this pilot program, we want to proactively provide metadata for new and updated Microsoft 365 features and services. Our goal is to help you efficiently assess your compliance requirements and help you with adoption and change management decisions.  
 
-- In the admin center, go to **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Message center</a>.
+For example, if for a feature the metadata has the following values, feature adoption decision should be quick.  
 
-::: moniker-end
+- Customer data is stored? **Yes/No**
 
-::: moniker range="o365-21vianet"
+- Change to customer data storage? **No**
 
-- In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to **Health** > **Message center**.
+- Changes to existing data flow? **No**
 
-::: moniker-end
+- Feature integrates with 3rd party services? **No**
 
-You can also use the [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/p/?linkid=627216) on your mobile device to view Message center, which is a great way to stay current with push notifications.
+> [!NOTE]
+> The above list is slightly different from what you previously saw in the pilot conformance posts. We've updated the list based on feedback we've received from pilot customers.
 
-To unsubscribe from Message center emails, see [Unsubscribe from Message center emails](#unsubscribe-from-message-center-emails) in this article.
+For features where the metadata is different from the list above, the Message center post may provide you with documentation.
+
+## Understanding conformance metadata
+
+Metadata name 
+
+Values 
+
+Definition and Question asked to feature team) 
+
+Example: Yes 
+
+Example: No 
+
+Customer data is stored  
+
+Yes/No 
+
+Does this change/feature store or process any NET NEW data (classified as customer or personal data) which was not previously stored or processed by the service/previous version of this feature  
+
+ 
+
+Teams Meetings Recordings capturing/collecting customer data/content and is now stored in OD. 
+
+ 
+
+Message Center Service MAU feature which shows the aggregated service monthly active users for a tenant ID which is not classified as customer or personal data. 
+
+ 
+
+Change to customer data storage 
+
+Yes/No 
+
+Does this change/feature use a NEW or DIFFERENT service to store data 
+
+ 
+
+Teams Meetings Recordings capturing/collecting customer data/content and is now stored in OD. 
+
+ 
+
+Expanded reactions in Teams. This is expanding message reactions in Teams to a larger set. The newer reactions being stored are customer data. However, there is no change in HOW data is stored or processed.  
+
+ 
+
+Changes to existing data flow 
+
+Yes/No 
+
+Does this feature process data via a new or different processing pipeline  
+
+ 
+
+ 
+
+OR 
+
+is the feature just extending an existing processing pipeline to newer data / exposing data already exposed on one surface to another surface?  (Answer = No) 
+
+ 
+
+When Bing for Business started using text from Word to send to Bing then bring data back to Word, the flow of data changed 
+
+ 
+
+Productivity score being used on the Experience Insights page in admin center, the data is showed on a new surface, but storage and processing is the same.  
+
+ 
+
+Suggested Reply in Group Chats on Teams Desktop (an extension of 1:1 chats) does not have any net new data; it is an extension of the pipeline already set up for Suggested Reply in 1:1 chats . 
+
+ 
+
+ 
+
+Feature integrates with 3rd party services 
+
+Yes/No 
+
+Does this feature utilize a net new service / app (1st party or 3rd party) such that customer data could potentially be stored or processed "outside" of M365. 
+
+Bing for Business may receive customer content in the form of "search" data to present a user with potentially relevant information/content. 
+
+Message Center Service MAU feature which shows the service monthly active users using Usage Report Graph API which is within M365 boundary 
+
+Feature benefits from regional deployment 
+
+We are removing this metadata since currently we are unable to accurately provide information, which would meet the customer need. This is because the nuances of the Microsoft365 features make it difficult to efficiently extract and standardize this information at scale. 
+
+ 
+
+Background 
+
+ 
+
+Why are we doing this pilot? 
+
+When planning for new features or service deployments, we understand the need to assess changes for conformance to industry, region, and country regulations. 
+
+  
+
+We have heard that if there is insufficient conformance information about a new or changing feature, you may conduct your own research or reach out to the Compliance Program with questions.  
+
+  
+
+Responding to this feedback, we are looking to pilot a project where we proactively provide metadata for new and updated M365 features and services. Our goal is to help our customers efficiently assess their compliance posture and assist them in making adoption and change management decisions.  
+
+ 
+
+Joining this pilot, you will have conformance metadata supporting a few applicable Message Center posts and we’ll need you to provide us with feedback on how we can improve. 
+
+ 
+
+How Can you Join? What Should You Expect? 
+
+Join by completing this opt-in survey. 
+
+After a Message center post has been delivered, you will receive an additional Message Center post that says, “Additional Conformance Information for MC######”. This post will contain additional conformance metadata. The additional posts will begin at the end of May 2022. 
+
+We’ll start with a few features from Microsoft Teams, OneDrive for Business and SharePoint Online. 
+
+Once you start receiving these conformance related posts, please provide feedback on how helpful this additional metadata is by… 
+
+Directly providing feedback on the additional post 
+
+Emailing MCSHDPMS@Microsoft.com 
+
+Sending feedback on our Co-Dev channel 
+
+ 
+
+Example of pilot post V2 
+
+Graphical user interface, text, application, email
+
+Description automatically generated 
+
+Example of pilot post V1 
+
+ 
+
+Graphical user interface, text, application, email
+
+Description automatically generated 
+
+ 
+
+ 
+
+ 
 
 ## Frequently asked questions
 
@@ -42,18 +191,12 @@ To unsubscribe from Message center emails, see [Unsubscribe from Message center 
 
 ****
 
-|Question|Answer|
-|---|---|
-|Who can view posts in Message center?|Most users who have been assigned any admin role in Microsoft 365 can view Message center posts. [Here's a list](#admin-roles-that-dont-have-access-to-the-message-center) of admin roles that don't have access to the Message center. You can also assign the Message center reader role to users who should be able to read and share Message center posts without having any other admin privileges.|
-|Is this the only way Microsoft will communicate changes about Microsoft 365?|No, but Message center is the primary way we communicate the timing of individual changes in Microsoft 365. See [Stay on top of Microsoft 365 changes](stay-on-top-of-updates.md) for information about additional resources.|
-|How can I see posts in my language?|Message center posts are written in English only, but you can control whether, by default, posts are shown in English or are automatically machine-translated to your preferred language. You can also select to machine-translate posts to any language we support. See [Language translation for Message center posts](language-translation-for-message-center-posts.md) for more details.|
-|Can I preview changes or features before they are rolled-out to my organization?|Some changes and new features can be previewed by opting in to the Targeted release program. To opt in, in the admin center, go to **Settings** > **Org settings** > **Organization profile** > **Release preferences**. (In the admin center, you may need to select **Show all** at the bottom of the left navigation pane to see **Settings**.) You can choose Targeted release for your entire organization, or just for selected users. See [Standard or Targeted release options in Microsoft 365](release-options-in-office-365.md) for more information about the program.|
-|Can I find out the exact date a change will be available to my organization?|Unfortunately, we can't tell you the exact date a change will be made to your organization. In our Message center post, we will give as much information as we can on the timing of the release, based on our confidence level. We're working on improvements to get better with that level of detail.|
-|Are these messages specific to my organization?|We do our best to make sure that you only see Message center posts that affect your organization. The Microsoft 365 Roadmap includes all of the features we are currently working on and rolling out, but not all of these features apply to every organization.|
-|Can I get message center posts emailed instead?|Yes! You can select to have a weekly digest emailed to you and up to two other email addresses. The emailed weekly digest is turned on by default. If you aren't getting your weekly digests, check your spam folder. See the [Preferences](#preferences) section of this article for more information on how to set up the weekly digest.|
-|How do I stop getting the Message center digest?|Go to Message center in the admin center and select **Preferences**. In the **Email** tab, turn off the option to **Send me email notifications from message center**.|
-|How can I ensure data privacy notifications are received by the right contacts in my organization?|As a global admin you will receive data privacy messages for your organization. Additionally, you can assign the Message Center Privacy reader role to people who should see data privacy messages. Other admin roles with access to Message Center cannot view data privacy messages.   <br/><br/>For more info, see [Preferences](#preferences) in this article.|
-|Why can’t I see a message that was previously there?|To manage the number of messages within Message center, each message will expire and be removed after a period of time. Generally, messages expire 30 days post the time period outlined in the message body.|
+|Metadata name|Values|Definition and questions asked| Example|
+|---|---|---|---|
+|Customer data is stored|Yes/No|Does this change/feature store or process any NET NEW data (classified as customer or personal data) which was not previously stored or processed by the service/previous version of this feature|Teams Meetings Recordings capturing/collecting customer data/content and is now stored in|Message Center Service MAU feature which shows the aggregated service monthly active users for a tenant ID which is not classified as customer or personal data.|
+|Change to customer data storage|Yes/No|Does this change/feature use a NEW or DIFFERENT service to store data|Teams Meetings Recordings capturing/collecting customer data/content and is now stored in|Expanded reactions in Teams. This is expanding message reactions in Teams to a larger set. The newer reactions being stored are customer data. However, there is no change in HOW data is stored or processed.|
+|Changes to existing data flow|Yes/No|Does this feature process data via a new or different processing pipeline <br> OR <br> is the feature just extending an existing processing pipeline to newer data / exposing data already exposed on one surface to another surface?  (Answer = No)|When Bing for Business started using text from Word to send to Bing then bring data back to Word, the flow of data changed|Productivity score being used on the Experience Insights page in admin center, the data is showed on a new surface, but storage and processing is the same. <br> Suggested Reply in Group Chats on Teams Desktop (an extension of 1:1 chats) does not have any net new data; it is an extension of the pipeline already set up for Suggested Reply in 1:1 chats|
+|Feature integrates with 3rd party services|Yes/No|Does this feature utilize a net new service / app (1st party or 3rd party) such that customer data could potentially be stored or processed "outside" of M365.|Bing for Business may receive customer content in the form of "search" data to present a user with potentially relevant information/content.|Message Center Service MAU feature which shows the service monthly active users using Usage Report Graph API which is within M365 boundary.|
 |
 
 ## Filter messages
