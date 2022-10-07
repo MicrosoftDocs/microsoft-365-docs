@@ -317,6 +317,7 @@
 ### Next-generation protection
 #### [Next-generation protection overview](next-generation-protection.md)
 ##### [Overview of Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
+##### [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 ##### [Enable and update Microsoft Defender Antivirus on Windows Server](enable-update-mdav-to-latest-ws.md)
 ##### [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
 ##### [Better together: Microsoft Defender Antivirus and Office 365](office-365-microsoft-defender-antivirus.md)
@@ -477,10 +478,7 @@
 ##### [Power BI - How to use API - Samples](api-power-bi.md)
 ##### [Threat protection reports](threat-protection-reports.md)
 
-### [Advanced hunting]()
-#### [Advanced hunting overview](advanced-hunting-overview.md)
-#### [Understand the schema](advanced-hunting-schema-reference.md)
-#### [DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)
+### [Advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview)
 
 ### [Threat analytics overview](threat-analytics.md)
 #### [Read the analyst report](threat-analytics-analyst-reports.md)
@@ -711,7 +709,6 @@
 
 ### [Managed security service provider (MSSP) integration]()
 #### [Configure managed security service provider integration](configure-mssp-support.md)
-#### [Supported managed security service providers](mssp-list.md)
 #### [Grant MSSP access to the portal](grant-mssp-access.md)
 #### [Access the MSSP customer portal](access-mssp-portal.md)
 #### [Configure alert notifications](configure-mssp-notifications.md)
