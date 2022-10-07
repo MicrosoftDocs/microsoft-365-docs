@@ -8,16 +8,17 @@ brand: m365
 metadata:
   title: Microsoft 365 Business Premium resources # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Documentation for setting up and working with Microsoft 365 Business Premium. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: business-premium
+  ms.service: microsoft-365-security #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: other
   ms.topic: hub-page # Required
-  ms.collection: collection
+  ms.collection: 
+  - tier2
   ms.custom: 
   - AdminSurgePortfolio
   - intro-hub-or-landing
   author: denisebmsft #Required; your GitHub user alias, with correct capitalization.
   ms.author: deniseb #Required; microsoft alias of author; optional team alias.
-  ms.date: 08/26/2022
+  ms.date: 10/05/2022
 
 # productDirectory section (optional)
 productDirectory:
@@ -67,6 +68,9 @@ conceptualContent:
         - url: ../admin/misc/microsoft-365-business-faqs.yml
           itemType: reference
           text: Microsoft 365 Business Premium FAQ
+        - url: ../business-premium/m365bp-glossary.yml
+          itemType: reference
+          text: Glossary of security concepts
   # Card
     - title: Set up Microsoft 365 Business Premium
       links:
@@ -193,6 +197,12 @@ conceptualContent:
   # Card
     - title: How do I...
       links:
+        - url: ../admin/security-and-compliance/secure-your-business-data.md
+          itemType: how-to-guide
+          text: See top 10 ways to secure my business
+        - url: ../business-premium/m365bp-trial-playbook-microsoft-business-premium.md
+          itemType: how-to-guide
+          text: User trial guide - Microsoft 365 Business Premium
         - url: ../admin/manage/find-your-partner-or-reseller.md
           itemType: how-to-guide
           text: Find a Microsoft partner to help my business

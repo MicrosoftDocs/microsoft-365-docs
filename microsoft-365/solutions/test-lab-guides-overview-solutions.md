@@ -8,11 +8,12 @@ manager: scotv
 ms.date: 02/09/2021
 audience: ITPro
 ms.topic: overview
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: 
+- highpri
 - M365-security-compliance
 ms.custom: 
 - Ent_Architecture

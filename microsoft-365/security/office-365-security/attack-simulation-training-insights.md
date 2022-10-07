@@ -8,11 +8,12 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
 description: Admins can learn how Attack simulation training in the Microsoft 365 Defender portal affects users and can gain insights from simulation and training outcomes.
 ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Insights and reports for Attack simulation training in Defender for Office 365
@@ -57,8 +58,8 @@ The **Behavior impact on compromise rate** card on the **Overview** tab shows ho
 
 The chart data itself shows the following information:
 
-- **Predicted compromise rate**<sup>\*</sup>: The average compromise rate for Attack simulation training simulations that use the same type of payload across all other Microsoft 365 organizations.
-- **Actual compromise rate**<sup>\*</sup>: The actual percentage of users that fell for the simulation.
+- **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this simulation (users compromised / total number of users who receive the simulation).
+- **Actual compromise rate**: The actual percentage of people who were compromised by the simulation (actual users compromised / total number of users in your organization who received the simulation).
 
 If you hover over a data point in the chart, the actual percentage values are shown.
 

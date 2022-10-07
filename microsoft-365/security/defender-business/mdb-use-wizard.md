@@ -6,7 +6,7 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
@@ -15,8 +15,9 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
+- tier1
 ms.custom: intro-get-started
 ---
 
@@ -33,7 +34,7 @@ Defender for Business was designed to save small and medium-sized businesses tim
 
 The setup wizard is designed to run the first time someone in your company signs into the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
 
-If your company has been using Microsoft 365 Business Premium, the Defender for Business setup wizard will run the first time someone goes to **Endpoints** > **Device inventory**. 
+If your company has been using Microsoft 365 Business Premium, the Defender for Business setup wizard will run the first time someone goes to **Assets** > **Devices**. 
 
 The setup wizard start screen looks like the following image:
 

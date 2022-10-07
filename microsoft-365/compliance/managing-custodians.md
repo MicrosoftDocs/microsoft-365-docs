@@ -1,23 +1,25 @@
 ---
 title: "Work with custodians in eDiscovery (Premium)"
+description: Learn how to use the custodian management tool in eDiscovery (Premium) to manage data for a legal case.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
 ms.assetid: 
 ms.custom:
 - seo-marvel-apr2020
-description: Learn how to use the custodian management tool in eDiscovery (Premium) to manage data for a legal case.
 ---
 
 # Work with custodians and non-custodial data sources in eDiscovery (Premium)

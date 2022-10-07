@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -22,6 +23,8 @@ description: "Azure SignalR access key sensitive information type entity definit
 ---
 
 # Azure SignalR access key (preview)  
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 
@@ -50,7 +53,7 @@ This SIT is designed to match the security information that's used to authentica
 
 It uses several primary resources:
 
-- Patterns of Base64 encoded 256 bits symmetric key.
+- Patterns of Base64 encoded 256-bits symmetric key.
 - Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id.
 - Patterns of mockup values, redactions, and placeholders.
 - A dictionary of vocabulary.

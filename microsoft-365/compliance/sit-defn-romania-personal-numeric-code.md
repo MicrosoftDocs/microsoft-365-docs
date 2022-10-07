@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -22,6 +23,8 @@ description: "Romania personal numeric code (CNP) sensitive information type ent
 ---
 
 # Romania personal numeric code (CNP)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 

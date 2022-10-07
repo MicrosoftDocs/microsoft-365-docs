@@ -1,9 +1,8 @@
 ---
-title: Microsoft 365 docs navigation tips 
+title: Microsoft 365 documentation navigation tips 
 description: Tips and tricks for navigating the Microsoft 365 technical documentation - explains such things as the hub page, the table of contents, the header, as well as how to use the breadcrumbs and how to use the version filter. 
 ms.date: 08/12/2020
-ms.prod: sql
-ms.technology: release-landing
+ms.service: microsoft-365-enterprise
 ms.reviewer: "serdars"
 ms.custom: ""
 ms.topic: conceptual
@@ -12,7 +11,7 @@ ms.author: "samanro"
 manager: pamgreen
 ms.collection: Adm_TOC
 ---
-# Microsoft 365 docs navigation guide
+# Microsoft 365 documentation navigation guide
 
 This topic provides some tips and tricks for navigating the Microsoft 365 technical documentation space.  
 
@@ -24,12 +23,14 @@ You can always navigate back to this page by selecting **Microsoft 365** from th
 
 ![Microsoft 365 in header.](media/m365-header-cursor.png)
 
-## TOC search 
-On Microsoft Docs, you can search the content in the table of contents by using the filter search box at the top:
+## TOC search
+
+On Microsoft Learn, you can search the content in the table of contents by using the filter search box at the top:
 
 ![Use filter box.](media/m365-filter-by-title.png)
 
 ## Version filter
+
 The Microsoft 365 technical documentation provides content for additional products, including Office 365 Germany and Office 365 operated by 21 Vianet (China). Features can vary between these versions, and as such, sometimes the content itself can vary.
 
 You can use the version filter to ensure that you are seeing content for the appropriate version of Microsoft 365:
@@ -48,7 +49,7 @@ The right-hand navigation pane allows you to quickly navigate to sections within
 
 ![Right-hand navigation.](media/m365-article-sections.png)
 
-## Submit docs feedback
+## Submit feedback
 
 If you find something wrong within an article, you can submit feedback to the SQL Content team for that article by scrolling down to the bottom of the page and selecting **Content feedback**.
 
@@ -56,7 +57,7 @@ If you find something wrong within an article, you can submit feedback to the SQ
 
 ## Contribute to Microsoft 365 documentation
 
-Did you know that you could edit the content on Microsoft Docs yourself? If you do so, not only will our documentation improve, but you'll also be credited as a contributor to the page. To get started, see:
+Did you know that you could edit the content on Microsoft Learn yourself? If you do so, not only will our documentation improve, but you'll also be credited as a contributor to the page. To get started, see:
 
 - [Microsoft Docs contributor guide](/contribute/)
 

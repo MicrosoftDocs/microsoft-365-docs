@@ -12,10 +12,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365-initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Supported Microsoft Defender for Endpoint capabilities by platform

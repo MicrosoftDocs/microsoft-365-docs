@@ -11,7 +11,9 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ---
 
 # Insider risk management audit log
@@ -35,6 +37,8 @@ To view and export data from the audit log, users must be assigned to the *Insid
 
 > [!NOTE]
 > The insider risk management audit log isn't associated with the Microsoft 365 audit log, they are independent auditing systems and capture information on separate activities. Disabling Microsoft 365 auditing doesn't impact activity auditing within insider risk management.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## View activity in the insider risk audit log
 
