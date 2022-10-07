@@ -1,5 +1,5 @@
 ---
-title: Manage insider risk management forensic evidence
+title: Manage insider risk management forensic evidence (preview)
 description: Manage insider risk management forensic evidence in Microsoft Purview. Forensic evidence is an investigative tool for viewing captured security-related user activity to help determine whether the user's actions pose a risk and may lead to a security incident.
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ audience: itpro
 ms.collection: m365-security-compliance
 ---
 
-# Manage insider risk management forensic evidence
+# Manage insider risk management forensic evidence (preview)
 
 >[!IMPORTANT]
 >Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
