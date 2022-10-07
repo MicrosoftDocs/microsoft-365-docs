@@ -26,7 +26,7 @@ description: Learn how to train a structured document processing model in Micros
 </br>
 
 
-Using [AI Builder](/ai-builder/overview)—a feature in Microsoft Power Apps—Syntex users can create an [**Extract by layout**](form-processing-overview.md) model directly from a SharePoint document library. 
+Using [AI Builder](/ai-builder/overview)—a feature in Microsoft Power Apps—Syntex users can create a [structured document processing](form-processing-overview.md) model directly from a SharePoint document library. 
 --->
 
 Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a structured document processing model. Then use this article to train your model.
