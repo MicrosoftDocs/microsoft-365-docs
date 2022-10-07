@@ -1,5 +1,5 @@
 ---
-title: Overview of model types in Microsoft SharePoint Syntex
+title: Overview of model types in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,16 +13,16 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about custom models and prebuilt models in Microsoft SharePoint Syntex.
+description: Learn about custom models and prebuilt models in Microsoft Syntex.
 ---
 
-# Overview of model types in Microsoft SharePoint Syntex
+# Overview of model types in Microsoft Syntex
 
-Content understanding in SharePoint Syntex starts with AI models. Models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
+Content understanding in Microsoft Syntex starts with AI models. Models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
 
 When applied to a SharePoint document library, the model is associated with a content type and has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
 
-SharePoint Syntex uses [custom models](#custom-models) and [prebuilt models](#prebuilt-models). 
+Syntex uses [custom models](#custom-models) and [prebuilt models](#prebuilt-models). 
 
 ![Diagram showing the types of Syntex custom and prebuilt models.](../media/content-understanding/syntex-model-types-diagram.png)
 
@@ -60,7 +60,7 @@ For more information, see [Overview of unstructured document processing](documen
 
 Use the freeform document processing model to automatically extract information from unstructured and freeform documents such as letters and contracts where the information can appear anywhere in the document.
 
-Freeform document processing models use Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) to create and train models within SharePoint Syntex. 
+Freeform document processing models use Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) to create and train models within Syntex. 
 
 Because your organization receives letters and documents in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text and other information from these documents, this model automates this process.
 
@@ -72,7 +72,7 @@ For more information, see [Overview of freeform document processing](freeform-do
 
 Use the structured document processing model to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices.
 
-Structured document processing models use Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) document processing (formerly known as form processing) to create and train models within SharePoint Syntex. 
+Structured document processing models use Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) document processing (formerly known as form processing) to create and train models within Syntex. 
 
 This model type supports the widest range of languages and is trained to understand the layout of your form from example documents, and then learns to look for the data you need to extract from similar locations. Forms usually have a more structured layout where entities are in the same location (for example, a social security number on a tax form).
 
@@ -103,6 +103,6 @@ For more information about prebuilt receipt processing models, see [Use a prebui
 
 ## See also
 
-[Compare custom models in SharePoint Syntex](./difference-between-document-understanding-and-form-processing-model.md)
+[Compare custom models in Microsoft Syntex](./difference-between-document-understanding-and-form-processing-model.md)
 
 [Training: Improve business performance with AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)

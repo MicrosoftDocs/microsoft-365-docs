@@ -1,5 +1,5 @@
 ---
-title: Analyze how your models are used in Microsoft SharePoint Syntex
+title: Analyze how your models are used in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,10 +12,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to find more information about how your AI models are performing.
+description: Learn how to find more information about how your AI models are performing in Microsoft Syntex.
 ---
 
-# Analyze how your models are used in Microsoft SharePoint Syntex
+# Analyze how your models are used in Microsoft Syntex
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
@@ -27,7 +27,7 @@ description: Learn how to find more information about how your AI models are per
 </br>
 --->
 
-Your SharePoint Syntex content center provides you model usage analytics to provide more information about how your models that have been published from the content center are being used. The **How your models are performing in the last 30 days** section of the content center includes a 30 day roll-up of usage analytics data provided in the following charts and lists:
+Your content center in Microsoft Syntex provides you model usage analytics to provide more information about how your models that have been published from the content center are being used. The **How your models are performing in the last 30 days** section of the content center includes a 30 day roll-up of usage analytics data provided in the following charts and lists:
 
 - Classification by model
 - Classification by library
@@ -37,7 +37,7 @@ Your SharePoint Syntex content center provides you model usage analytics to prov
 
 ### Roll up of model usage data in the default content center
 
-In SharePoint Syntex, the default content center is created during setup. More content centers can also be created as needed. For example, departments might create their own content centers to create and manage their models. 
+In Syntex, the default content center is created during setup. More content centers can also be created as needed. For example, departments might create their own content centers to create and manage their models. 
 
 Regarding model usage analytics, note that:
 

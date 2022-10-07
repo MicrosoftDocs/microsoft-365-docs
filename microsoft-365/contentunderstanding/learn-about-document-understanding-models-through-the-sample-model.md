@@ -1,5 +1,5 @@
 ---
-title: Import a sample model for Microsoft SharePoint Syntex
+title: Import a sample model for Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,12 +13,12 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about Syntex unstructured document processing models by using the sample model.
+description: Learn about unstructured document processing models in Microsoft Syntex by using the sample model.
 ---
 
-# Import a sample model for Microsoft SharePoint Syntex
+# Import a sample model for Microsoft Syntex
 
-SharePoint Syntex provides you with a sample unstructured document processing model you can use to examine, giving you a better understanding of how to create your own models. The sample model also allows you to examine model components, such as its classifier, extractors, and explanations. You can also use the sample files to train the model.
+Microsoft Syntex provides you with a sample unstructured document processing model you can use to examine, giving you a better understanding of how to create your own models. The sample model also allows you to examine model components, such as its classifier, extractors, and explanations. You can also use the sample files to train the model.
 
 ## Import the sample model
 
@@ -42,7 +42,7 @@ Not only can you look through analyze the sample model to get a better understan
 
 ## Get sample models
 
-You can access the [SharePoint Syntex Samples repository](https://github.com/pnp/syntex-samples), which contains community samples that demonstrate different usage patterns of unstructured document processing models. The samples in this repository contain both the model files and the files used to train the model. Once imported, you can use these models to process files and to view and edit the classifier and extractors.
+You can access the [Syntex Samples repository](https://github.com/pnp/syntex-samples), which contains community samples that demonstrate different usage patterns of unstructured document processing models. The samples in this repository contain both the model files and the files used to train the model. Once imported, you can use these models to process files and to view and edit the classifier and extractors.
 
 ## See also
 

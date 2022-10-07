@@ -1,5 +1,5 @@
 ---
-title: Share an enterprise model in Microsoft SharePoint Syntex
+title: Share an enterprise model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,10 +12,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to make trained models available to other users and how to apply other trained models in Microsoft SharePoint Syntex.
+description: Learn how to make trained models available to other users and how to apply other trained models in Microsoft Syntex.
 ---
 
-# Share an enterprise model in Microsoft SharePoint Syntex
+# Share an enterprise model in Microsoft Syntex
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
