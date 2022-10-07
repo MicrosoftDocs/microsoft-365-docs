@@ -19,11 +19,11 @@ ms.custom:
 
 # Create a Microsoft 365 group with a specific preferred data location
 
-When users in a multi-geo environment create a Microsoft 365 group, the group preferred data location (PDL) is automatically set to that of the user. Global, SharePoint, and Exchange Administrators can create groups in any region they select. 
+When users in a multi-geo environment create a Microsoft 365 group, the group preferred data location (PDL) is automatically set to that of the user. Global, SharePoint, and Exchange Administrators can create groups in any _Geography_ they select. 
 
 If you need to create a group with a specific PDL, you can do that using from the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a> or through the Exchange Online New-UnifiedGroup Microsoft PowerShell cmdlet. When you do this, both the group mailbox and SharePoint site associated with the group will be provisioned in the specified PDL.
 
-To create a Microsoft 365 group with the PDL that you specify, go to the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a> in the geo location where you want to create the group site.
+To create a Microsoft 365 group with the PDL that you specify, go to the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a> in the _Geography_ location where you want to create the group site.
 
 For example:
 
@@ -32,7 +32,7 @@ If you want to create a group site in your Australia location, you can go to `ht
 1. Select **+ Create**.
 2. Follow the process to create a group site.
 
-Your group site will be provisioned in the geo location corresponding to the SharePoint admin center from which you initiated the site creation request. 
+Your group site will be provisioned in the _Geography_ location corresponding to the SharePoint admin center from which you initiated the site creation request. 
 
 Using Exchange PowerShell 
 
