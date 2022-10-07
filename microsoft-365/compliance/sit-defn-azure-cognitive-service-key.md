@@ -1,5 +1,5 @@
 ---
-title: "Azure Cognitive Service key entity definition (preview)"
+title: "Azure Cognitive Service key entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "Azure Cognitive Service key sensitive information type entity definition."
 ---
 
-# Azure Cognitive Service key (preview)
+# Azure Cognitive Service key
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

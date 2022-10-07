@@ -1,5 +1,5 @@
 ---
-title: "Azure AD user credentials entity definition (preview)"
+title: "Azure AD user credentials entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "Azure AD user credentials sensitive information type entity definition."
 ---
 
-# Azure AD user credentials (preview)
+# Azure AD user credentials
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -90,7 +90,7 @@ This SIT is designed to match the security information that's used as individual
 
 It uses several primary resources:
 
-- Patterns of Plain-text username and password for Azure AD tenant.
+- Patterns of Plain-text username and password for Azure AD tenants.
 - Patterns of Password context in code.
 - Patterns of Password context in XML.
 - Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName.

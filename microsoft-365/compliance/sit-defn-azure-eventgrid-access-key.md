@@ -1,5 +1,5 @@
 ---
-title: "Azure EventGrid access key entity definition (preview)"
+title: "Azure EventGrid access key entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "Azure EventGrid access key sensitive information type entity definition."
 ---
 
-# Azure EventGrid access key (preview)
+# Azure EventGrid access key
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

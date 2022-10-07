@@ -1,5 +1,6 @@
 ---
-title: "Azure Shared Access key / Web Hook token entity definition (preview)"
+
+title: "Azure Shared Access key / Web Hook token signature entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +23,7 @@ recommendations: false
 description: "Azure Shared Access key / Web Hook token sensitive information type entity definition."
 ---
 
-# Azure Shared Access key / Web Hook token (preview) 
+# Azure Shared Access key / Web Hook token 
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

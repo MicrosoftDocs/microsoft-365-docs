@@ -1,5 +1,5 @@
 ---
-title: "Azure Maps subscription key entity definition (preview)"
+title: "Azure Maps subscription key entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "Azure Maps subscription key sensitive information type entity definition."
 ---
 
-# Azure Maps subscription key (preview)
+# Azure Maps subscription key
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

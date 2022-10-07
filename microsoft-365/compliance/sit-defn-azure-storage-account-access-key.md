@@ -1,5 +1,5 @@
 ---
-title: "Azure storage account access key entity definition (preview)"
+title: "Azure storage account access key entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "Azure storage account access key sensitive information type entity definition."
 ---
 
-# Azure storage account access key (preview)
+# Azure storage account access key
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

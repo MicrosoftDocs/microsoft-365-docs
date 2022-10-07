@@ -1,5 +1,5 @@
 ---
-title: "Azure App Service Deployment Password entity definition (preview)"
+title: "Azure App Service Deployment Password entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "Azure App Service Deployment Password sensitive information type entity definition."
 ---
 
-# Azure App Service deployment password (preview)
+# Azure App Service deployment password
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

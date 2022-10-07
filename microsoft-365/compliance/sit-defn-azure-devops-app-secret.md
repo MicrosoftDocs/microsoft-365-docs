@@ -1,5 +1,5 @@
 ---
-title: "Azure DevOps app secret entity definition (preview)"
+title: "Azure DevOps app secret entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "Azure DevOps app secret sensitive information type entity definition."
 ---
 
-# Azure DevOps app secret (preview)
+# Azure DevOps app secret
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

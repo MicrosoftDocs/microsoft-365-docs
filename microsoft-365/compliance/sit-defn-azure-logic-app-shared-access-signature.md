@@ -1,5 +1,5 @@
 ---
-title: "Azure Logic App shared access signature entity definition (preview)"
+title: "Azure Logic App shared access signature entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "Azure Logic App shared access signature sensitive information type entity definition."
 ---
 
-# Azure Logic App shared access signature (preview) 
+# Azure Logic App shared access signature 
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
