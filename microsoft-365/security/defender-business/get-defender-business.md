@@ -41,7 +41,7 @@ If you have signed up for a trial, after you receive your acceptance email, you 
 3. Proceed to [Add users and assign licenses](mdb-add-users.md).
 
 > [!TIP]
-> See the [User Trial guide for Defender for Business](trial-playbook-defender-business.md).
+> See the [Trial user guide for Defender for Business](trial-playbook-defender-business.md).
 
 ## Get Microsoft 365 Business Premium
 
@@ -102,7 +102,7 @@ When you're ready to get started, you'll work with two main portals: the Microso
 
 ## Next steps
 
-- [See the User trial guide: Microsoft Defender for Business](trial-playbook-defender-business.md).
+- [See the trial user guide: Microsoft Defender for Business](trial-playbook-defender-business.md).
 - [Use the setup wizard in Microsoft Defender for Business](mdb-use-wizard.md).
 - [See the setup and configuration process for Defender for Business](mdb-setup-configuration.md).
 - [See how to get help and support for Defender for Business](mdb-get-help.md) (just in case you need help).
