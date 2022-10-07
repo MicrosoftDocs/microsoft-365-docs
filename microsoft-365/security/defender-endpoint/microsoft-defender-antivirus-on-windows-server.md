@@ -43,7 +43,7 @@ The process of setting up and running Microsoft Defender Antivirus on Windows Se
 4. [Update your antimalware Security intelligence](#update-antimalware-security-intelligence).
 5. (As needed) [Submit samples](#submit-samples).
 6. (As needed) [Configure automatic exclusions](#configure-automatic-exclusions).
-7. (Only if necessary) Set [Windows Server to passive mode](#passive-mode-and-windows-server).
+7. (Only if necessary) [Set Windows Server to passive mode](#passive-mode-and-windows-server).
 
 ## Enable the user interface on Windows Server
 
@@ -56,6 +56,8 @@ By default, Microsoft Defender Antivirus is installed and functional on Windows 
 |:---|:---|
 | Turn on the GUI using the Add Roles and Features Wizard | 1. See [Install roles, role services, and features by using the add Roles and Features Wizard](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard), and use the **Add Roles and Features Wizard**. <br/><br/>2. When you get to the **Features** step of the wizard, under **Windows Defender Features**, select the **GUI for Windows Defender** option. |
 | Turn on the GUI using PowerShell | 1. On your Windows Server, open Windows PowerShell as an administrator. <br/><br/>2. Run the following PowerShell cmdlet: `Install-WindowsFeature -Name Windows-Defender-GUI` |
+
+For more information, see [Getting Started with PowerShell](/powershell/scripting/learn/ps101/01-getting-started).
 
 ## Install Microsoft Defender Antivirus on Windows Server
 
@@ -165,6 +167,8 @@ The following table describes methods to set Microsoft Defender Antivirus to pas
 | Disable Microsoft Defender Antivirus using the Remove Roles and Features wizard | See [Install or Uninstall Roles, Role Services, or Features](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#remove-roles-role-services-and-features-by-using-the-remove-roles-and-features-wizard), and use the **Remove Roles and Features Wizard**. <br/><br/>When you get to the **Features** step of the wizard, clear the **Windows Defender Features** option. <br/><br/> If you clear **Windows Defender** by itself under the **Windows Defender Features** section, you'll be prompted to remove the interface option **GUI for Windows Defender**.<br/><br/>Microsoft Defender Antivirus will still run normally without the user interface, but the user interface can't be enabled if you disable the core **Windows Defender** feature. |
 | Uninstall Microsoft Defender Antivirus using PowerShell | Use the following PowerShell cmdlet: `Uninstall-WindowsFeature -Name Windows-Defender` |
 | Disable Microsoft Defender Antivirus using Group Policy | In your Local Group Policy Editor, navigate to **Administrative Template** > **Windows Component** > **Endpoint Protection** > **Disable Endpoint Protection**, and then select **Enabled** > **OK**. |
+
+For more information, see [Working with Registry Keys](/powershell/scripting/samples/working-with-registry-keys?view=powershell-7.2).
 
 ### Are you using Windows Server 2012 R2 or Windows Server 2016?
 
