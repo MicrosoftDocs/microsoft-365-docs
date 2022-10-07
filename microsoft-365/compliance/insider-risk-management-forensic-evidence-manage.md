@@ -162,7 +162,7 @@ The device health queue lists all the devices in configured for forensic evidenc
 - **Windows version**: The version on Microsoft Windows installed on the device.
 - **Client version**: The version of the Microsoft Purview Client installed on the device.
 
-The device health status gives you insights into potential issues with your devices and the Microsoft Purview Client. The **Device status** column on the **Device health** page can alert you to device issues that may prevent user activity from being captured or why the volume of forensic evidence capturing is unusual. The device health status can also confirm that the devices include in forensic evidence capturing are healthy and don't need attention or configuration changes. The following table lists potential status detail messages and recommended actions you can take to address warnings and errors:
+The device health status gives you insights into potential issues with your devices and the Microsoft Purview Client. The **Device status** column on the **Device health** page can alert you to device issues that may prevent user activity from being captured or why the volume of forensic evidence capturing is unusual. The device health status can also confirm that the devices included in forensic evidence capturing are healthy and don't need attention or configuration changes. The following table lists potential status detail messages and recommended actions you can take to address warnings and errors:
 
 |**Status Details**|**Status**|**Suggested Action**|
 |:----------|:-------|:-------------------|
