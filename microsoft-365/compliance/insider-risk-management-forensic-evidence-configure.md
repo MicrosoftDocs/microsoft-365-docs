@@ -101,7 +101,7 @@ After you've completed the policy configuration steps, continue to Step 5.
 
 ### Step 5: Define and approve users for capturing
 
-Before security-related user activities can be captured, users must follow the dual authorization process in forensic evidence. This process mandates that enabling visual capturing for specific users is both defined and approved by applicable people in your organization.
+Before security-related user activities can be captured, admins must follow the dual authorization process in forensic evidence. This process mandates that enabling visual capturing for specific users is both defined and approved by applicable people in your organization.
 
 >[!IMPORTANT]
 >For the preview release, a maximum of 5 concurrent users are eligible for forensic evidence capturing. Capturing for groups isn't supported in the preview release.
