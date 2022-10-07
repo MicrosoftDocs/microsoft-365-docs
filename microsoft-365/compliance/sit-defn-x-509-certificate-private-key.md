@@ -70,8 +70,8 @@ for example:
 
 `-----BEGIN PRIVATE KEY----- MIIPuQIBAzCCD38GCSqGSIb3DQEHAaCCD3AEgg9sMIIPaDCCBZ8GCSqGSIb3DQEHBqCCBZAw...`
 
-[!IMPORTANT]
-This example has been truncated. It’s not a detectable example of this SIT.
+> [!IMPORTANT]
+> This example has been truncated. It’s not a detectable example of this SIT.
 
 ## Checksum
 

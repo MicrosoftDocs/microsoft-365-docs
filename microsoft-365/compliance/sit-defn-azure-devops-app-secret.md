@@ -48,8 +48,8 @@ for example:
 
 `AdoAppId=...;AdoAppSecret=abcdefghijklmnopqrstuvwxyz234567abcdefghijklmnopqrst;`
 
-[!IMPORTANT]
-This example has been invalidated. It’s not a detectable example of this SIT.
+> [!IMPORTANT]
+> This example has been invalidated. It’s not a detectable example of this SIT.
 
 ## Checksum
 
