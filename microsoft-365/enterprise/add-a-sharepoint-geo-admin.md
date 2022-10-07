@@ -15,7 +15,7 @@ description: Need to configure separate administrators for each geo location? Le
 ms.custom: seo-marvel-apr2020
 ---
 
-## Add or remove a _Geography_ administrator in Microsoft 365 Multi-Geo
+# Add or remove a _Geography_ administrator in Microsoft 365 Multi-Geo
 
 You can configure separate administrators for each _Geography_ location that you have in your tenant. These administrators will have access to the SharePoint Online and OneDrive settings that are specific to their _Geography_ location.
 
@@ -23,7 +23,7 @@ Some services - such as the term store - are administered from the _Primary Prov
 
 Global administrators and SharePoint Online administrators continue to have access to settings in the _Primary Provisioned Geography_ location and all _Satellite Geography_ locations.
 
-### Configuring _Geography_ administrators
+## Configuring _Geography_ administrators
 
 Configuring _Geography_ admins requires SharePoint Online PowerShell module.
 
@@ -31,13 +31,13 @@ Use [Connect-SPOService](/powershell/module/sharepoint-online/Connect-SPOService
 
 To view the existing _Geography_ admins of a location, run `Get-SPOGeoAdministrator`
 
-### Adding a user as a _Geography_ admin
+## Adding a user as a _Geography_ admin
 
 To add a user as a _Geography_ admin, run `Add-SPOGeoAdministrator -UserPrincipalName <UPN>`
 
 To remove a user as a _Geography_ Admin of a location, run  `Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`
 
-### Adding a group as a _Geography_ admin
+## Adding a group as a _Geography_ admin
 
 You can add a security group or a mail-enabled security group as a _Geography_ admin. (Distribution groups and Microsoft 365 Groups are not supported.)
 
