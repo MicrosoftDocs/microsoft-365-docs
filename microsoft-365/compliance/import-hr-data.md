@@ -436,7 +436,7 @@ Complete the following the steps to automatically upload HR data when new files 
 2.	Select **Import** and upload the *ImportHRDataforIRM_20220912092628.zip* package.
 3.	After the package gets uploaded, update the content (name & OneDrive for Business connection), and select **Import**.
 
-    ![HR connector Power Automate flow import.](../media/hr-connector-pa-import-flow.png)
+    ![Power Automate flow import.](../media/hr-connector-pa-import-flow.png)
 
 4.	Select **Open flow** and update the parameters. The following table describes the parameters to use in this Power Automate Flow and their required values. The information you obtained in the previous steps is used in the values for these parameters.
 
@@ -449,16 +449,16 @@ Complete the following the steps to automatically upload HR data when new files 
     | Tenant ID | Identifier for your Microsoft 365 organization obtained in **Step 2**. You can also obtain the tenant ID for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization. |
     | URI | Verify that the value for this parameter is *https://webhook.ingestion.office.com/api/signals* |
 
-    ![HR connector Power Automate flow import.](../media/hr-connector-pa-flow.png)
+    ![Power Automate flow.](../media/hr-connector-pa-flow.png)
 
 5.	Select **Save**.
 6.	Navigate to **Flow overview** and select **Turn on**.
 
-    ![HR connector Power Automate flow import.](../media/hr-connector-pa-turn-on.png)
+    ![Turn on the Power Automate flow.](../media/hr-connector-pa-turn-on.png)
 
 7.	Test the flow manually by uploading a new file to your OneDrive for Business folder and verify that it ran successfully. This may take a few minutes after the upload before the flow is triggered.
 
-    ![HR connector Power Automate flow import.](../media/hr-connector-pa-test.png)
+    ![Power Automate flow test.](../media/hr-connector-pa-test.png)
 
 8.	You can now monitor the HR connector as described in **Step 5**.
 
