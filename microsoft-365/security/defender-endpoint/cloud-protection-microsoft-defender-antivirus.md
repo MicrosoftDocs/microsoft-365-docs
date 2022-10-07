@@ -14,7 +14,10 @@ ms.custom: nextgen
 ms.subservice: mde
 ms.topic: article
 ms.date: 10/18/2021
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Cloud protection and Microsoft Defender Antivirus

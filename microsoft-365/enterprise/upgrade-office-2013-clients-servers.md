@@ -5,7 +5,7 @@ author: dhb-msft
 manager: dougeby
 audience: ITPro
 ms.topic: overview
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 description: Plan your upgrade from Office 2013 clients and servers, because support ends on April 11, 2023.

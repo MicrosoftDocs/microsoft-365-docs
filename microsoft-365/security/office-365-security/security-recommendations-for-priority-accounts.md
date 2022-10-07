@@ -15,7 +15,7 @@ search.appverid:
   - MOE150
 ms.assetid: 
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365solution-overview
   - m365solution-protecthve
   - highpri
@@ -111,7 +111,7 @@ Microsoft 365 provides the following resources to help inform users in your orga
 |Concept|Resources|Description|
 |---|---|---|
 |Microsoft 365|[Customizable learning pathways](/office365/customlearning/)|These resources can help you put together training for users in your organization.|
-|Microsoft 365 security|[Learning module: Secure your organization with built-in, intelligent security from Microsoft 365](/learn/modules/security-with-microsoft-365)|This module enables you to describe how Microsoft 365 security features work together and to articulate the benefits of these security features.|
+|Microsoft 365 security|[Learning module: Secure your organization with built-in, intelligent security from Microsoft 365](/training/modules/security-with-microsoft-365)|This module enables you to describe how Microsoft 365 security features work together and to articulate the benefits of these security features.|
 |Multi-factor authentication|[Two-step verification: What is the additional verification page?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|This article helps end users understand what multi-factor authentication is and why it's being used at your organization.|
 |Attack simulation training|[Get started using Attack simulation training](attack-simulation-training-get-started.md)|Attack simulation training in Microsoft Defender for Office 365 Plan 2 allows admin to configure, launch, and track simulated phishing attacks against specific groups of users.|
 

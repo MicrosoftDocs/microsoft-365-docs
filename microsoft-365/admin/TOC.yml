@@ -181,6 +181,8 @@
              href: add-users/let-users-reset-passwords.md
            - name: Set passwords to never expire
              href: add-users/set-password-to-never-expire.md
+           - name: Password policy recommendations
+             href: misc/password-policy-recommendations.md
            - name: Resend user passwords
              href: add-users/resend-user-password.md
            - name: Turn off strong passwords
@@ -273,6 +275,8 @@
       items:
          - name: Monitor Microsoft 365 activity by using reports
            href: activity-reports/activity-reports.md
+         - name: Microsoft 365 Teams apps usage reports
+           href: activity-reports/microsoft-teams-apps-usage.md  
          - name: Microsoft Adoption Score - overview
            href: adoption/adoption-score.md
            items:

@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.collection:
 ms.localizationpriority: medium
 description: Learn how to manage sharing for Microsoft Whiteboard.
+
 ---
 
 # Manage sharing for Microsoft Whiteboard
@@ -26,9 +27,7 @@ There's more capability for temporary collaboration by external and shared devic
 
 In this case, Whiteboard provides temporary viewing and collaboration on the whiteboard during the Teams meeting only. A share link isn't created and Whiteboard doesn't grant access to the file.
 
-If you have external sharing enabled for OneDrive for Business, no further action is required.
-
-If you restrict external sharing for OneDrive for Business, you can keep it restricted, and just enable a new setting in order for external and shared device accounts to work. To do so, follow these steps:
+To enable this behavior, follow these steps:
 
 1. Ensure that Whiteboard is enabled for your organization. For more information, see [Manage access to Whiteboard](manage-whiteboard-access-organizations.md).
 
@@ -60,9 +59,7 @@ These changes should take approximately 60 minutes to apply across your tenancy.
 |Start the whiteboard from a Surface Hub or Microsoft Teams Rooms|Storage: Azure (Whiteboard files will be moved to OneDrive for Business in the future)<br><br>Owner: Meeting participant|Not applicable|In-tenant users: Can initiate, view, and collaborate<br><br>External users: Can view and collaborate during the meeting only<br><br> Shared device accounts: Can view and collaborate during the meeting only|
 
 > [!NOTE]
->If a Whiteboard is stored in OneDrive and already attached to a meeting, it cannot be initiated on a Surface Hub or Microsoft Teams Rooms device. An authenticated user on another device will need to do so. We plan to enable this functionality in a future release.
-
-
+> If a Whiteboard is stored in OneDrive and already attached to a meeting, it cannot be initiated on a Surface Hub or Microsoft Teams Rooms device. An authenticated user on another device will need to do so. We plan to enable this functionality in a future release.
 
 ## Add as a tab in Teams channels and chats
 
@@ -90,5 +87,7 @@ When you share whiteboards from the web, desktop, or mobile clients, you can cho
 [Manage access to Whiteboard](manage-whiteboard-access-organizations.md)
 
 [Manage data for Whiteboard](manage-data-organizations.md)
+
+[Network requirements for Microsoft Defender of Cloud Apps](/defender-cloud-apps/network-requirements)
 
 [Deploy Whiteboard on Windows](deploy-on-windows-organizations.md)

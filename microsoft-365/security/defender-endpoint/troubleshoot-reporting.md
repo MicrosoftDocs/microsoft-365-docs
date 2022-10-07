@@ -14,7 +14,10 @@ ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
+search.appverid: met150
 ---
 
 # Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance

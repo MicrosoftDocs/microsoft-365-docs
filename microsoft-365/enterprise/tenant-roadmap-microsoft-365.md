@@ -7,9 +7,10 @@ author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - m365initiative-coredeploy
 ms.custom: it-pro
@@ -63,7 +64,7 @@ For more information, see [Microsoft 365 Multi-Geo](microsoft-365-multi-geo.md).
 
 ## Manage multiple Microsoft 365 tenants 
 
-Although having a single tenant for your oganization is ideal, you may be one of many organizations that have multiple tenants. Reasons can include mergers and aquisitions, you want administrative isolation, or you have a decentralized IT.
+Although having a single tenant for your organization is ideal, you may be one of many organizations that have multiple tenants. Reasons can include mergers and acquisitions, you want administrative isolation, or you have a decentralized IT.
 
 If you have multiple Microsoft 365 tenants, see these articles for more information about:
 

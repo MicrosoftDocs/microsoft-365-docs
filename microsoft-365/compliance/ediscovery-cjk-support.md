@@ -1,21 +1,24 @@
 ---
 title: "CJK/Double Byte support for eDiscovery (Premium)"
+description: "Learn how Microsoft Purview eDiscovery (Premium) in Microsoft 365 supports Chinese, Japanese, and Korean (CJK) languages, which use a double-byte character set."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn how Microsoft Purview eDiscovery (Premium) in Microsoft 365 supports Chinese, Japanese, and Korean (CJK) languages, which use a double-byte character set."
 ---
 
 # CJK language support for eDiscovery (Premium)
@@ -27,6 +30,8 @@ Microsoft Purview eDiscovery (Premium) supports double-byte character set langua
 - When you [tag documents in a review set](tagging-documents.md).
 
 - When you [analyze case data in a review set](analyzing-data-in-review-set.md) by using near duplicate detection, email threading, and themes analytics.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Frequently asked questions
 

@@ -2,8 +2,8 @@
 title: What's new in Microsoft Purview risk and compliance solutions
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: reference
@@ -15,7 +15,7 @@ search.appverid:
 - MET150
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 description: Whether it be adding new solutions to the compliance center, updating existing features based on your feedback, or rolling out fresh and updated documentation, Microsoft 365 helps you stay on top of the ever-changing compliance landscape. Find out what we've been up to this month.
 ms.custom: seo-marvel-mar2020
 ---
@@ -36,6 +36,22 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 >
 > And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## September 2022
+
+### Data Classification
+
+- [Increase classifier accuracy (preview)](data-classification-increase-accuracy.md) - This article shows you how to confirm whether items matched by a classifier are true positive (a Match) or a false positive (Not a match) and provide Match, or Not a match feedback. You can use that feedback to tune your classifiers to increase accuracy. You can also send redacted versions of the document and the Match, Not a Match feedback to Microsoft if you want to help increase the accuracy of the classifiers that Microsoft provides.
+
+### Data loss prevention
+
+- [Design a data loss prevention policy complex rule design (preview)](dlp-policy-design.md#complex-rule-design-preview) - The DLP rule builder supports boolean logic (AND, OR, NOT) and nested groups. New video and content added that walks you through this new functionality.
+ 
+### Trainable classifiers
+
+- [Trainable classifiers definitions](classifier-tc-definitions.md)  - more than 20 new classifiers have been added, so the definitions for all trainable classifiers have been broken out into this new article.
+
 ## August 2022
 
 ### Compliance Manager
@@ -51,7 +67,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Data lifecycle management and records management
 
 - [Exchange (legacy)](data-lifecycle-management.md#exchange-legacy-features) configuration is moving from the Classic Exchange admin center (EAC) to the Microsoft Purview compliance portal, under **Data lifecycle management**. Existing data lifecycle management features are located under a new subnode, **Microsoft 365**.
-- For cloud attachments (currently rolling out in preview), automatic and temporary retention of deleted files in the Preservation Hold library to safeguard against the original file being deleted by users before the copy can be created and labeled. For more information, see [How retention works with cloud attachements](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
+- For cloud attachments (currently rolling out in preview), automatic and temporary retention of deleted files in the Preservation Hold library to safeguard against the original file being deleted by users before the copy can be created and labeled. For more information, see [How retention works with cloud attachments](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
 
 ### Data Loss Prevention
 
@@ -64,7 +80,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Microsoft Priva
 
-- [Microsoft Priva trial playbook](/privacy/priva/priva-trial-playbook) - refreshed and simplified guidance to align with recent documentation updates
+- [Microsoft Priva trial user guide](/privacy/priva/priva-trial-playbook) - refreshed and simplified guidance to align with recent documentation updates
 
 ### Sensitive Information Types
 
@@ -84,7 +100,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Sensitivity labels
 
-- Generally available (GA) and no longer need to opt-in: Mobile devices (iOS and Android, with minimal versions) support [co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md).
+- Generally available (GA) and no longer need to opt in: Mobile devices (iOS and Android, with minimal versions) support [co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md).
 - GA with Current Channel 2208+ for Word, Excel, PowerPoint on Windows: [Support for PDF](sensitivity-labels-office-apps.md#pdf-support). Support for Outlook to block print to PDF when required, is rolling out to Beta Channel.
 - Rolling out to GA with Current Channel 2208+ for Windows, and 16.63+ for macOS: Default label for existing documents.
 - In preview: Trainable classifiers for [auto-labeling policies](apply-sensitivity-label-automatically.md).
@@ -346,7 +362,7 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 
 - [Retention policies for Yammer](create-retention-policies.md#retention-policy-for-yammer-locations) are now generally available (GA).
 - Support for shared channels, currently in preview. When you configure a retention policy for the Teams channel message location, any shared channels inherit retention settings from their parent team.
-- [Per-tenant limits for content disposition](retention-limits.md#maximum-number-of-items-for-disposition).
+- [Per-tenant limits for content disposition](retention-limits.md#maximum-numbers-for-disposition).
 
 ### Data Loss Prevention
 
@@ -355,11 +371,11 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 - [Configure endpoint data loss prevention settings](dlp-configure-endpoint-settings.md) - new for public preview of restricted app groups.
 - [Data loss prevention policy reference](dlp-policy-reference.md) - updated for public preview of restricted app groups.
 - [Get started with data loss prevention for Power BI](dlp-powerbi-get-started.md) - new for public preview.
-- 
+
 ### Information protection
 
 - [Support for double byte character set release notes](mip-dbcs-relnotes.md) - added guidance for macOS.
-- 
+
 ### Insider risk management
 
 - [Get started with insider risk management](insider-risk-management-configure.md) - added new tasks for the Recommended actions guidance.
