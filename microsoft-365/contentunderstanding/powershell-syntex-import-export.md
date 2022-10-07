@@ -1,5 +1,5 @@
 ---
-title: Export and import Classify and extract by text pattern models with PowerShell
+title: Export and import unstructured document processing models with PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
@@ -12,17 +12,17 @@ ms.collection:
     - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Learn about how to export and import models with PowerShell in SharePoint Syntex.
+description: Learn about how to export and import models with PowerShell in Microsoft Syntex.
 ---
 
-# Export and import Classify and extract by text pattern models with PowerShell
+# Export and import unstructured document processing models with PowerShell
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
 > [!IMPORTANT]
-> The SharePoint Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
+> The Microsoft Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
 
-SharePoint Syntex models can be exported as PnP templates, enabling reuse across content centers or tenants.
+Syntex models can be exported as PnP templates, enabling reuse across content centers or tenants.
 
 ## Export all models in a content center
 

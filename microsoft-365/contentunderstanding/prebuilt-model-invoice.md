@@ -1,5 +1,5 @@
 ---
-title: Use a prebuilt model to extract information from invoices in Microsoft SharePoint Syntex
+title: Use a prebuilt model to extract information from invoices in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,11 +12,11 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to use a prebuilt invoices model in SharePoint Syntex.
+description: Learn how to use a prebuilt invoices model in Microsoft Syntex.
 
 ---
 
-# Use a prebuilt model to extract information from invoices in Microsoft SharePoint Syntex
+# Use a prebuilt model to extract information from invoices in Microsoft Syntex
 
 The prebuilt *invoices model* analyzes and extracts key information from sales invoices. The API recognizes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction), such as customer name, billing address, due date, and amount due.
 
@@ -29,7 +29,7 @@ To use an invoices model, follow these steps:
 
 ## Create an invoices model
 
-Follow the instructions in [Create a model in SharePoint Syntex](create-syntex-model.md) to create a prebuilt invoices model. Then continue with the following steps to complete your model.
+Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a prebuilt invoices model. Then continue with the following steps to complete your model.
 
 
 <!---

@@ -1,5 +1,5 @@
 ---
-title: Overview of prebuilt models in Microsoft SharePoint Syntex
+title: Overview of prebuilt models in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,12 +13,12 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about prebuilt models in SharePoint Syntex.
+description: Learn about prebuilt models in Microsoft Syntex.
 ---
 
-# Overview of prebuilt models in Microsoft SharePoint Syntex
+# Overview of prebuilt models in Microsoft Syntex
 
-In addition to [custom models](model-types-overview.md#custom-models), SharePoint Syntex provides *prebuilt models* to automate the extraction of information.
+In addition to [custom models](model-types-overview.md#custom-models), Microsoft Syntex provides *prebuilt models* to automate the extraction of information.
 
 Prebuilt models are preconfigured to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization. 
 
@@ -40,7 +40,7 @@ Additional prebuilt models will be available in future releases.
 
 ## Requirements
 
-For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md). 
+For information about requirements to consider when choosing this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md). 
 
 ## See also
 

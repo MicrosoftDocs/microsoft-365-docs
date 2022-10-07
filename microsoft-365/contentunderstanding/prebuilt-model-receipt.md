@@ -1,5 +1,5 @@
 ---
-title: Use a prebuilt model to extract information from receipts in Microsoft SharePoint Syntex
+title: Use a prebuilt model to extract information from receipts in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,13 +12,13 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to use a prebuilt receipts model in SharePoint Syntex.
+description: Learn how to use a prebuilt receipts model in Microsoft Syntex.
 
 ---
 
-# Use a prebuilt model to extract information from receipts in Microsoft SharePoint Syntex
+# Use a prebuilt model to extract information from receipts in Microsoft Syntex
 
-The prebuilt *receipts model* in SharePoint Syntex analyzes and extracts key information from sales receipts. The API recognizes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction), such as merchant name, merchant phone number, transaction date, tax, and transaction total. Receipts can be of various formats and quality including printed and handwritten receipts.
+The prebuilt *receipts model* in Microsoft Syntex analyzes and extracts key information from sales receipts. The API recognizes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction), such as merchant name, merchant phone number, transaction date, tax, and transaction total. Receipts can be of various formats and quality including printed and handwritten receipts.
 
 To use a receipts model, follow these steps:
 
@@ -29,7 +29,7 @@ To use a receipts model, follow these steps:
 
 ## Step 1: Create a receipts model
 
-Follow the instructions in [Create a model in SharePoint Syntex](create-syntex-model.md) to create a prebuilt receipts model. Then continue with the following steps to complete your model.
+Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a prebuilt receipts model. Then continue with the following steps to complete your model.
 
 ## Step 2: Upload an example file to analyze
 
