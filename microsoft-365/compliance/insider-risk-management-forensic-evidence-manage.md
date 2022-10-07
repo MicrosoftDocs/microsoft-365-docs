@@ -67,6 +67,8 @@ After requests are complete, users assigned to the *Insider Risk Management Appr
 3. On the **Review forensic evidence request (preview)** pane, review the justification submitted by the requestor. Select **Approve** or **Reject** as applicable.
 4. On the **Request approved** or **Request rejected** page, select **Close**.
 
+SCREENSHOT
+
 ### Revoke capturing approvals
 
 If needed, you can revoke approval for specific users and exclude them from forensic evidence capturing. Revoking approval doesn't delete or remove any existing captures for these users, only future capturing of activity for these users is disabled.
@@ -81,6 +83,8 @@ To revoke approvals for users, users assigned to the *Insider Risk Management Ap
 ## Creating and managing notification templates
 
 You can create and use a notification template to send an email to users letting them know that forensic evidence capturing will be turned on for their device in accordance with your organization's policies. The email is sent to users only if their request is approved.
+
+SCREENSHOT
 
 To create a new notification template, complete the following steps:
 
@@ -112,8 +116,6 @@ Overall, reviewing an alert for potentially risky activity that may contain fore
 - **Activity type**: The insider risk management activity type included in the capture. These activities are based on global and policy indicators assigned to the associated policy.
 - **Capture events**: Each capture contains events within the capture to help focus your review on specific activities for the capturing session.
 
-SCREENSHOT
-
 To view a capture clip, complete the following steps:
 
 1. If needed, configure the filters for the available captures. You can filter by the **Dates (UTC)** or by **Activity**.
@@ -126,9 +128,9 @@ To view a capture clip, complete the following steps:
 
 To view clips for activity not associated with alerts, you'll use [User activity reports](/microsoft-365/compliance/insider-risk-management-activities#user-activity-reports). User activity reports allow you to examine activities for specific users for a defined time period without having to assign them temporarily or explicitly to an insider risk management policy. If these user activities include activities supported by forensic evidence capturing, clips are included with the user activity.
 
-If you've configured forensic evidence to capture all security-related user activity, regardless of whether they're included in a forensic evidence policy, you'll review these captures by selecting **Insider risk management** > **User activity reports** and then selecting a specific user and selecting the **Forensic evidence (preview)** tab. Reviewing forensic evidence captures for cases follows the same process as when you review captures as part of examining alerts.
-
 SCREENSHOT
+
+If you've configured forensic evidence to capture all security-related user activity, regardless of whether they're included in a forensic evidence policy, you'll review these captures by selecting **Insider risk management** > **User activity reports** and then selecting a specific user and selecting the **Forensic evidence (preview)** tab. Reviewing forensic evidence captures for cases follows the same process as when you review captures as part of examining alerts.
 
 ### Reviewing capture clips included with cases
 
