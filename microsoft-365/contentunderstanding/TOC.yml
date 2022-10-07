@@ -1,13 +1,13 @@
-    - name: Microsoft SharePoint Syntex
+    - name: Microsoft Syntex
       href: index.yml
  
     - name: Get started
       items:
-            - name: Overview of SharePoint Syntex
+            - name: Overview of Syntex
               href: syntex-overview.md 
-            - name: Licensing for SharePoint Syntex
+            - name: Licensing for Syntex
               href: syntex-licensing.md
-            - name: Set up SharePoint Syntex
+            - name: Set up Syntex
               href: set-up-content-understanding.md
             - name: Create a content center 
               href: create-a-content-center.md
@@ -146,7 +146,7 @@
               items:
                - name: Overview
                  href: solution-manage-contracts-in-microsoft-365.md 
-               - name: Step 1. Use SharePoint Syntex
+               - name: Step 1. Use Microsoft Syntex
                  href: solution-manage-contracts-step1.md
                - name: Step 2. Use Microsoft Teams
                  href: solution-manage-contracts-step2.md
@@ -161,7 +161,7 @@
 
     - name: Extensibility
       items: 
-        - name: SharePoint Syntex REST API 
+        - name: Microsoft Syntex REST API 
           href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
 
 

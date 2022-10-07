@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Microsoft SharePoint Syntex documentation # < 60 chars
-summary: SharePoint Syntex is a Microsoft 365 service that uses advanced content artificial intelligence (AI) and machine learning to provide an end-to-end intelligent document processing solution for your organization.
+title: Microsoft Syntex documentation # < 60 chars
+summary: Microsoft Syntex is a Microsoft 365 service that uses advanced content artificial intelligence (AI) and machine learning to provide an end-to-end intelligent document processing solution for your organization.
 metadata:
-  title: Microsoft SharePoint Syntex documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: This page contains links to some important topics related to Microsoft SharePoint Syntex features. Start here to learn about compliance for SharePoint Syntex. # Required; article description that is displayed in search results. < 160 chars.
+  title: Microsoft Syntex documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: This page contains links to some important topics related to Microsoft Syntex features. Start here to learn about compliance for Syntex. # Required; article description that is displayed in search results. < 160 chars.
   services: 
   ms.service: microsoft-365-enterprise #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
@@ -15,7 +15,7 @@ metadata:
   ms.author: chucked #Required; microsoft alias of author; optional team alias.
   ms.date: 09/01/2022 #Required; mm/dd/yyyy format
   ms.localizationpriority: medium
-  titleSuffix: Microsoft SharePoint Syntex
+  titleSuffix: Microsoft Syntex
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
