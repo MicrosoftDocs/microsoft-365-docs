@@ -24,6 +24,8 @@ description: "Azure Maps subscription key sensitive information type entity defi
 
 # Azure Maps subscription key (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 43 characters consisting of letters, digits, and special characters.
@@ -56,7 +58,7 @@ It uses several primary resources:
 - Patterns of mockup values, redactions, and placeholders.
 - A dictionary of vocabulary.
 
-The patterns are designed to match actual credentials with reasonable confidence. The patterns don't match credentials formatted as examples. Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present will not be matched.
+The patterns are designed to match actual credentials with reasonable confidence. The patterns don't match credentials formatted as examples. Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present won't be matched.
 
 ## Keywords
 

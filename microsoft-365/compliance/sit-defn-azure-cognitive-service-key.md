@@ -24,6 +24,8 @@ description: "Azure Cognitive Service key sensitive information type entity defi
 
 # Azure Cognitive Service key (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 32 characters consisting of letters and digits.

@@ -23,6 +23,8 @@ Use the [FX Connect DataParser](https://www.17a-4.com/dataparser-roadmap/) from 
 
 After FX Connect data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a FX Connect connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Overview of archiving FX Connect data
 
 The following overview explains the process of using a data connector to archive FX Connect data in Microsoft 365.

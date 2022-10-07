@@ -16,11 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: configure services
+description: Test an EDM using the test function in the sensitive information types section in the Compliance center.
 ms.custom: seo-marvel-apr2020
 ---
 
 # Test an exact data match sensitive information type
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Applies to
 

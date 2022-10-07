@@ -27,6 +27,8 @@ Organizations have many reasons to respond to a legal case involving certain exe
   
 **Want to know how Microsoft manages its eDiscovery investigations?** Here's a [technical white paper](https://go.microsoft.com/fwlink/?linkid=852161) you can download that explains how we use the same search and investigation tools to manage our internal eDiscovery workflow.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Manage legal investigations with eDiscovery cases
 
 eDiscovery cases let you control who can create, access, and manage eDiscovery cases in your organization. Use cases to add members and control what types of actions they can perform, place a hold on content locations relevant to a legal case, and use the Content Search tool to search the locations on hold for content that might be responsive to your case. Then you can also export and download those results for further investigation by external reviewers.

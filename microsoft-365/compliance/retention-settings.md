@@ -36,6 +36,8 @@ Settings that are specific to each scenario are explained in their respective do
 
 For overview information about policies for retention and how retention works in Microsoft 365, see [Learn about retention policies and retention labels](retention.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Scopes - adaptive and static
 
 If you're unfamiliar with adaptive and static scopes, and to help you choose which one to use when you configure a policy for retention, see [Adaptive or static policy scopes for retention](retention.md#adaptive-or-static-policy-scopes-for-retention). 

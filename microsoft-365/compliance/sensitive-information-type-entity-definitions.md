@@ -119,7 +119,6 @@ This article is a list of all sensitive information type (SIT) entity definition
 - [Chile identity card number](sit-defn-chile-identity-card-number.md)
 - [China resident identity card (PRC) number](sit-defn-china-resident-identity-card-number.md)
 - [Client secret / API key (preview)](sit-defn-client-secret-api-key.md)
-- [Credentials in URL](sit-defn-credentials-in-url.md)
 - [Credit card number](sit-defn-credit-card-number.md)
 - [Croatia driver's license number](sit-defn-croatia-drivers-license-number.md)
 - [Croatia identity card number](sit-defn-croatia-identity-card-number.md)

@@ -40,6 +40,8 @@ To export documents from a review set:
 > [!NOTE]
 > Export jobs are retained for the life of the case. However, you must download the content from an export job within 30 days after the export job is complete.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Export options
 
 Use the following options to configure the export. Not all options are allowed for some output options, most notably, export of text files and redacted PDFs aren't allowed when exporting to the PST format.

@@ -25,6 +25,8 @@ Various limits are applied to eDiscovery search tools in the Microsoft Purview c
 
 For limits related to the Microsoft Purview eDiscovery (Premium) tool, see [Limits in eDiscovery (Premium)](limits-ediscovery20.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Search limits
 
 The following table lists the search limits when using the content search tool in the compliance portal and for searches that are associated with a Microsoft Purview eDiscovery (Standard) case.

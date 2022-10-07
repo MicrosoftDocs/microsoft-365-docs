@@ -41,6 +41,8 @@ The following table summarizes detected activities and extension support for eac
 | Files copied to USB devices                    | Extension          | Extension         |
 | Browsing risky websites                        | Extension          | Extension         |
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Common requirements
 
 Before installing the Microsoft Edge add-on or Google Chrome extension, customers need to ensure that devices for in-scope policy users meet the following requirements:

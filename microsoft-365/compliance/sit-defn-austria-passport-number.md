@@ -24,6 +24,8 @@ description: "Austria passport number sensitive information type entity definiti
 
 # Austria passport number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 One letter followed by an optional space and seven digits

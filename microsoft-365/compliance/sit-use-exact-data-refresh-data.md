@@ -16,11 +16,11 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Refresh your sensitive information source table file.
+description: Learn how to refresh your sensitive information source table file on a one time basis or set up automated recurring refresh cycles.
 ms.custom: seo-marvel-apr2020
 ---
 
-# Refresh your exact data match sensitive information source table file 
+# Refresh your exact data match sensitive information source table file
 
 You can refresh your sensitive information database up to 5 times in every 24 hour period. You'll have to rehash and upload your sensitive information source table. Refreshing overwrites the existing sensitive information source table with the new one.
 
@@ -38,6 +38,8 @@ You can refresh your sensitive information database up to 5 times in every 24 ho
    |PowerShell|See the [ScheduledTasks](/powershell/module/scheduledtasks/) documentation and the [example PowerShell script](#example-powershell-script-for-task-scheduler) in this article|
    |Task Scheduler API|See the [Task Scheduler](/windows/desktop/TaskSchd/using-the-task-scheduler) documentation|
    |Windows user interface|In Windows, click **Start**, and type Task Scheduler. Then, in the list of results, right-click **Task Scheduler**, and choose **Run as administrator**.|
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Example PowerShell script for Task Scheduler
 

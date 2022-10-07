@@ -24,6 +24,8 @@ description: "Azure SignalR access key sensitive information type entity definit
 
 # Azure SignalR access key (preview)  
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 43 characters consisting of letters, digits, and special characters ending in an equals sign (=) that isn't part of the pattern.
@@ -51,7 +53,7 @@ This SIT is designed to match the security information that's used to authentica
 
 It uses several primary resources:
 
-- Patterns of Base64 encoded 256 bits symmetric key.
+- Patterns of Base64 encoded 256-bits symmetric key.
 - Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id.
 - Patterns of mockup values, redactions, and placeholders.
 - A dictionary of vocabulary.

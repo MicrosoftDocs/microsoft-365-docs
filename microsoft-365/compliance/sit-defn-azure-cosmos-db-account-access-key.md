@@ -24,6 +24,8 @@ description: "Azure COSMOS DB account access key sensitive information type enti
 
 # Azure COSMOS DB account access key (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 88 characters consisting of letters, digits, and special characters.
@@ -53,7 +55,7 @@ This SIT is designed to match the security information that's used to provide ac
 It uses several primary resources:
 
 - Patterns of Base64 encoded 512-bits symmetric key.
-- Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id, AccountName.
+- Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, ID, AccountName.
 - Patterns of mockup values, redactions, and placeholders.
 - A dictionary of vocabulary.
 

@@ -24,6 +24,8 @@ description: "Azure Storage account shared access signature sensitive informatio
 
 # Azure Storage account shared access signature (preview)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 A combination of 44 characters consisting of letters, digits, and special characters.
@@ -70,9 +72,9 @@ This SIT is designed to match the security information that's used to grant rest
 
 It uses several primary resources:
 
-- Patterns of Base64 encoded 256 bits symmetric key.
-- Patterns of URL Encoded 256 bits symmetric key.
-- Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id.
+- Patterns of Base64 encoded 256-bits symmetric key.
+- Patterns of URL Encoded 256-bits symmetric key.
+- Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, ID.
 - Patterns of mockup values, redactions, and placeholders.
 - A dictionary of vocabulary.
 
