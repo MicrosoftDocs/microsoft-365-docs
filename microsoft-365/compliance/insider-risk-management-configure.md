@@ -235,7 +235,7 @@ See the [Configure advanced features in Defender for Endpoint](/windows/security
 
 #### Configure forensic evidence (optional)
 
-Having visual context is crucial for security teams during forensic investigations to get better insights into risky user activities. With customizable event triggers and built-in user privacy protection controls, forensic evidence enables customizable capturing across devices to help your organization better mitigate, understand, and respond to potential data risks like unauthorized data exfiltration of sensitive data.
+Having visual context is crucial for security teams during forensic investigations to get better insights into risky user activities that may lead to a security incident. With customizable event triggers and built-in user privacy protection controls, forensic evidence enables customizable capturing across devices to help your organization better mitigate, understand, and respond to potential data risks like unauthorized data exfiltration of sensitive data.
 
 See the [Get started with insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) article for step-by-step guidance to configure forensic evidence for your organization. 
 
