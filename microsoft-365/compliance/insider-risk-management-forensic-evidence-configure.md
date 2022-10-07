@@ -40,7 +40,7 @@ Captures and capture data are stored at this domain and is assigned only to your
 User devices eligible for forensic evidence capturing must be onboarded to the [Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center) and must have the Microsoft Purview Client installed. 
 
 >[!IMPORTANT]
->The Microsoft Purview Client used to capture activity on users' devices is licensed under the Use of Software with the Online Services on the Microsoft Product Terms. Note that customers are solely responsible for using the insider risk management solution, including the Microsoft Purview Client, in compliance with all applicable laws.
+>The Microsoft Purview Client automatically collects general diagnostic data related to device configuration and performance metrics. This includes data on critical errors, RAM consumption, process failures, and other data. This data helps us assess the client's health and identify any issues. For more details about how diagnostic data may be used, see the Use of Software with Online Services on the [Microsoft Product Terms](https://www.microsoft.com/licensing/product-licensing/products).
 
 Visual captures in forensic evidence are supported for the following devices/configurations:
 
@@ -69,11 +69,15 @@ To configure forensic evidence settings, complete the following steps:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Forensic evidence settings**.
 2. Select **Forensic evidence capturing** to enable capturing support in your forensic evidence policies. If this is turned off later, this will remove all previously added users for forensic evidence policies.
-3. In the **Capturing window** section, define when to start and stop activity capturing. Available values are *10 seconds*, *30 seconds*, *1 minute*, *3 minutes*, or *5 minutes*.
-4. In the **Upload bandwidth limit** section, define the amount of capture data to upload into your data storage account per user, per day. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.
-5. In the **Offline capturing** section, enable offline capturing if needed. When enabled, users' offline activity is captured and uploaded to your data storage account the next time they're online.
-6. In the **Offline capturing cache limit** section, define the maximum cache size to store on users' devices when offline capturing is enabled. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.
-7. Select **Save**.
+
+    >[!IMPORTANT]
+    >The Microsoft Purview Client used to capture activity on users' devices is licensed under the Use of Software with the Online Services on the Microsoft Product Terms. Note that customers are solely responsible for using the insider risk management solution, including the Microsoft Purview Client, in compliance with all applicable laws.
+ 
+1. In the **Capturing window** section, define when to start and stop activity capturing. Available values are *10 seconds*, *30 seconds*, *1 minute*, *3 minutes*, or *5 minutes*.
+1. In the **Upload bandwidth limit** section, define the amount of capture data to upload into your data storage account per user, per day. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.
+1. In the **Offline capturing** section, enable offline capturing if needed. When enabled, users' offline activity is captured and uploaded to your data storage account the next time they're online.
+1. In the **Offline capturing cache limit** section, define the maximum cache size to store on users' devices when offline capturing is enabled. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.
+1. Select **Save**.
 
 ### Step 4: Create a policy
 
