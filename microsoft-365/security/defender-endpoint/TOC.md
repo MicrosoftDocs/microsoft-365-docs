@@ -491,12 +491,12 @@
 #### [Configure AIR capabilities](configure-automated-investigations-remediation.md)
 #### [View the details and results of an automated investigation](autoir-investigation-results.md)
 
-### [Microsoft Threat Experts]()
-#### [Microsoft Threat Experts overview](microsoft-threat-experts.md)
-#### [Configure and manage Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md)
-
 ### [Next generation protection]()
 #### [Run and customize scheduled and on-demand scans](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+
+## [Endpoint Attack Notifications](endpoint-attack-notifications.md)
+
+### [Experts on Demand](experts-on-demand.md)
 
 ## Reference
 ### [Understand threat intelligence concepts](threat-indicator-concepts.md)
