@@ -28,6 +28,8 @@ After the Facebook data is imported, you can apply Microsoft Purview features su
 
 If you’d like to participate in the preview, please reach out to the team at dcfeedback@microsoft.com.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Prerequisites for setting up a connector for Facebook Business pages
 
 Complete the following prerequisites before you can set up and configure a connector in the compliance portal to import and archive data from your organization's Facebook Business pages. 

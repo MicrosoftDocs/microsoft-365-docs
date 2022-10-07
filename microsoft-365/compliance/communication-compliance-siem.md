@@ -27,6 +27,8 @@ search.appverid:
 
 A common need for organizations is to integrate communication compliance alerts and these SIEM solutions. With this integration, organizations can view communication compliance alerts in their SIEM solution and then remediate alerts within the communication compliance workflow and user experience. For example, an employee sends an offensive message to another employee and that message is detected by a communication compliance policy for inappropriate content. These events are tracked in Microsoft 365 Audit (also known as "unified audit log") by the communication compliance solution and imported into the SIEM solution. An alert is then triggered in the SIEM solution for the organization from events included in Microsoft 365 Audit that are associated with communication compliance alerts. Investigators are notified of the alert in the SIEM solutions and then they investigate and remediate the alert in the communication compliance solution.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Communication compliance alerts in Microsoft 365 Audit
 
 All communication compliance policy matches are captured in Microsoft 365 Audit. The following examples show the details available for selected communication compliance policy match activities:

@@ -26,6 +26,8 @@ Microsoft Purview eDiscovery (Standard) in Microsoft Purview provides a basic eD
 
 This article discusses the steps necessary to set up eDiscovery (Standard). This includes ensuring the proper licensing required to access eDiscovery (Standard) and place an eDiscovery hold on content locations, as well as assigning permissions to your IT, legal, and investigation team so they can access and manage cases. This article also provides a high-level overview of using cases to search for and export content.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Verify and assign appropriate licenses
 
 Licensing for eDiscovery (Standard) requires the appropriate organization subscription and per-user licensing.

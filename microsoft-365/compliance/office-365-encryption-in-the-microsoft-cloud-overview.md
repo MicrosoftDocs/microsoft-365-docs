@@ -48,6 +48,8 @@ For customer data in transit, all Office 365 servers negotiate secure sessions u
 
 (All customer-facing servers negotiate to TLS 1.2 by default.)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Related Links
 
 - [Encryption in Azure](office-365-azure-encryption.md)

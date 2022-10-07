@@ -31,6 +31,8 @@ description: Deploy the configuration package on virtual desktop infrastructure 
 > [!WARNING]
 > Endpoint data loss prevention support for Windows Virtual Desktop supports single session scenarios. Multi-session scenarios on Windows Virtual Desktop are currently not supported.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Onboard VDI devices
 
 Microsoft 365 supports non-persistent virtual desktop infrastructure (VDI) session onboarding.
