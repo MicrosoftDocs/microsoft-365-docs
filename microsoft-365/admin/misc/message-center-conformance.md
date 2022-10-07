@@ -37,7 +37,7 @@ For features where the metadata is different from the list above, the Message ce
 
 ## Understanding conformance metadata
 
-|**Metadata name**|**Values**|**Definition and questions asked**|**Example**|
+|**Metadata name**|**Values**|**Definition and questions asked**|**Example: Yes**|**Example: No**|
 |---|---|---|---|
 |**Customer data is stored**|Yes/No|Does this change store or process any net new data (classified as customer or personal data) which was not previously stored or processed by the service/previous version of this feature?|Teams Meetings recordings capturing and collecting customer data and is now stored in.|Message Center Service monthly active users (MAU) feature which shows the aggregated service monthly active users for a tenant ID which is not classified as customer or personal data.|
 |**Change to customer data storage**|Yes/No|Does this change use a new or different service to store data|Teams Meetings Recordings capturing/collecting customer data/content and is now stored in.|Expanded reactions in Teams. This is expanding message reactions in Teams to a larger set. The newer reactions being stored are customer data, however, there is no change in how data is stored or processed.|
