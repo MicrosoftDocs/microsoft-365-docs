@@ -104,18 +104,36 @@ Due to the nature of how migrations work, there is no granular status provided t
 
 ### FAQ
 
-1. Who can purchase the Advanced Data Residency add-on?  
+#### Who can purchase the Advanced Data Residency add-on?
+<details><summary>Click to expand</summary>
+
 The Advanced Data Residency ("ADR") add-on is intended for enterprise customers of Microsoft 365 who have comprehensive data residency requirements.  To be eligible to purchase ADR, customers must meet three pre-requisites:
 
-1. Active subscription for Microsoft 365 F1/F3/E3/E5, Office 365 F3/E1/E3/E5, Exchange Online, OneDrive for Business, or SharePoint Online.
-1. Subscription purchased through Microsoft Enterprise Agreement ("EA") or Web Direct channel.
-1. Billing address located in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, or the United Arab Emirates. Additional geographic and channel availability will be updated as available.
-1. How do enterprise customers purchase the Microsoft 365 Advanced Data Residency add-on?
+- Active subscription for Microsoft 365 F1/F3/E3/E5, Office 365 F3/E1/E3/E5, Exchange Online, OneDrive for Business, or SharePoint Online.
+- Subscription purchased through Microsoft Enterprise Agreement ("EA") or Web Direct channel.
+- Billing address located in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, or the United Arab Emirates.
+  
+Additional geographic and channel availability will be updated as available.
+
+</details>
+
+#### How do enterprise customers purchase the Microsoft 365 Advanced Data Residency add-on?
+<details><summary>Click to expand</summary>
+
 Eligible enterprise customers should contact their Microsoft account team or Enterprise Agreement licensing partner to facilitate a purchase of Advanced Data Residency add-on. Web Direct customers should purchase through their online account.
-1. What does the launch of ADR mean for the Move Program?
+</details>
+
+#### What does the launch of ADR mean for the Move Program?
+<details><summary>Click to expand</summary>
+
 The Advanced Data Residency and Move Program efforts will exist simultaneously for a limited andtime and have different customer commitments. The Move Program is limited to Exchange Online, SharePoint Online, OneDrive for Business, and Teams. ADR includes these and additional workloads.  The Move program was terminated with the launch of the Qatar local datacenter and will not be available for any future local datacenters.  Advanced Data Residency customers receive prioritized migration services over Move Program customers. Please see the Migration Expectation section for additional detail.
-1. How can I move my data to my country with Advanced Data Residency? What does the process look like?
+</details>
+
+#### How can I move my data to my country with Advanced Data Residency? What does the process look like?
+<details><summary>Click to expand</summary>
+
 The first step is to purchase the ADR SKU; check with your Microsoft representative to ensure you qualify.  Once you have purchased ADR, you will receive a notification via Message Center (in the tenant admin center) outlining the purchase confirmation and the 12-month SLO (Service Level Objective) commitment to migrate all your customer at-rest data, as it relates to the workloads listed above. Then once a core workload is picked up for migration, which in this case is Exchange Online (EXO), OneDrive and SharePoint Online (ODSP) and Teams, Message Center notifications on the start of data migration will go out, and again at the time of data move completion for each core workload.
+</details>
 
 ## Related topics
 
