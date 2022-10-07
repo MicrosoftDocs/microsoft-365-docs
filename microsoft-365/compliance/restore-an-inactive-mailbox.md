@@ -9,7 +9,9 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection: 
+- purview-compliance
+- tier2
 ms.localizationpriority: medium
 search.appverid: 
 - MOE150
@@ -36,6 +38,8 @@ See the [More information](#more-information) section in this article for more d
 >
 > - [Content search](content-search.md)
 > - [Export content search results](export-search-results.md)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Requirements to restore an inactive mailbox
 

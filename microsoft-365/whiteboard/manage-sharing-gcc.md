@@ -12,7 +12,6 @@ search.appverid: MET150
 ms.collection:
 ms.localizationpriority: medium
 description: Learn how to manage sharing for Microsoft Whiteboard in GCC environments.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
@@ -29,9 +28,7 @@ There's more capability for temporary collaboration by most external and shared 
 
 In this case, Whiteboard provides temporary viewing and collaboration on the whiteboard during the Teams meeting only. A share link isn't created and Whiteboard doesn't grant access to the file.
 
-If you have external sharing enabled for OneDrive for Business, no further action is required.
-
-If you restrict external sharing for OneDrive for Business, you can keep it restricted, and just enable a new setting in order for external and shared device accounts to work. To do so, follow these steps:
+To enable this behavior, follow these steps:
 
 1. Ensure that Whiteboard is enabled for your organization. For more information, see [Manage access to Whiteboard in GCC environments](manage-whiteboard-access-gcc.md).
 

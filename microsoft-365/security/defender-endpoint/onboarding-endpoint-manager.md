@@ -6,18 +6,20 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-endpointprotect
   - m365solution-scenario
   - highpri
+  - tier1
 ms.topic: article
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Onboarding using Microsoft Endpoint Manager

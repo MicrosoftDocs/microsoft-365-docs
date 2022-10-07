@@ -75,17 +75,11 @@ OCR processing works best on documents that meet the following requirements:
 
 - Must use the Latin alphabet (English characters).
 
-> [!NOTE]
-> AI Builder doesn't currently support the following types of form processing input data:
->
-> - Check boxes or radio buttons
-> - Signatures
-> - Fillable PDFs
-
 ### Supported file types
 
 Document understanding models support the following file types:
 
+- csv
 - doc
 - docx
 - eml

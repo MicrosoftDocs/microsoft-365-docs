@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 ms.assetid: 
 ms.custom: 
@@ -15,6 +15,7 @@ ms.custom:
 description: Admins can learn how to use the SMTP Auth insight and report in the Mail flow dashboard in the Security & Compliance Center to monitor email senders in their organization that use authenticated SMTP (SMTP AUTH) to send email messages.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # SMTP Auth clients insight and report in the Security & Compliance Center

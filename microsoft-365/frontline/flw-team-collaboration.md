@@ -12,8 +12,10 @@ ms.service: microsoft-365-frontline
 ms.collection: 
   - M365-collaboration
   - m365-frontline
+  - highpri
   - m365solution-frontline
   - m365solution-scenario
+  - highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -197,22 +199,24 @@ Refine what's in your team with apps. You can allow or block apps for your organ
 
 Your users can add any apps that you have allowed to their teams. Share this training with your users to show them how: [Find and use apps](https://support.microsoft.com/office/find-and-use-apps-6e22a734-c002-4da0-ba63-681f155b142d).
 
+## Communicate over email with Exchange Online and Outlook
 
-### Use Viva Connections to create a personalized experience
+Email is a core communication tool for most workplaces. [Set up email with Exchange Online](flw-setup-microsoft-365.md#set-up-email-with-exchange-online) to let your frontline managers and workers communicate with each other, with employees in other locations, or with headquarters. Users must have an F3 license to have an email mailbox.
 
-Viva Connections is part of the [Microsoft Viva suite](/viva/microsoft-viva-overview) and enables you to create a personalized landing experience in Teams. 
+You can also set up shared mailboxes to allow for incoming mail from customers (such as for customer service or scheduling requests) and have a group of workers who monitor and send email from a public email alias like info@contoso.com. For more information about shared mailboxes, see [About shared mailboxes](../admin/email/about-shared-mailboxes.md) and [Open and use a shared mailbox in Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd).
+
+## Use Viva Connections to create a personalized experience
+
+> [!NOTE]
+> Viva Connections isn't currently available for tablets.
+
+Viva Connections is part of the [Microsoft Viva suite](/viva/microsoft-viva-overview) and enables you to create a personalized landing experience in Teams.
 
 ![Screenshot of the Viva Connections Dashboard on a mobile device.](media/flw-shifts-praise-tasks-approvals.png)
 
+Use the Viva Connections Dashboard and add the Shifts, Tasks, and Approvals cards. Cards are connected to the Shifts, Tasks, and Approvals apps in Teams. Content in the cards is dynamic and personalized to the user.
 
-Use the Viva Connections Dashboard and add the Shifts, Tasks, and Approvals cards. Cards are connected to the Shifts, Tasks, and Approvals apps in Teams. Content in the cards is dynamic and personalized to the user. 
-
-Learn more about [how to get Viva Connections](/viva/connections/viva-connections-overview) and [how to create a Viva Connections Dashboard](/viva/connections/create-dashboard). 
-
-
-
-
-
+Learn more about [how to get Viva Connections](/viva/connections/viva-connections-overview) and [how to create a Viva Connections Dashboard](/viva/connections/create-dashboard).
 
 ## Learn more about Teams capabilities for specific industries
 

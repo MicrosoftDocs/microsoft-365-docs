@@ -14,7 +14,10 @@ ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint

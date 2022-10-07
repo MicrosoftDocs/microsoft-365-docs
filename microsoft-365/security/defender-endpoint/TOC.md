@@ -6,7 +6,9 @@
 ### [Compare Microsoft endpoint security plans](defender-endpoint-plan-1-2.md)
 ### [Minimum requirements](minimum-requirements.md)
 ### [Supported Microsoft Defender for Endpoint capabilities by platform](supported-capabilities-by-platform.md)
-### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-endpoint.md)
+### [What's new]()
+#### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-endpoint.md)
+#### [What's new in Microsoft Defender for Endpoint on Windows](windows-whatsnew.md)
 ### [Preview features](preview.md)
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](use.md)
@@ -19,8 +21,19 @@
 ### [Microsoft Defender for Endpoint on non-Windows platforms](non-windows.md)
 ### [Antivirus solution compatibility with Defender for Endpoint](defender-compatibility.md)
 
-
 ## [Evaluate capabilities](evaluation-lab.md)
+### [Microsoft defender for endpoint demonstrations]()
+#### [Microsoft Defender for Endpoint demonstration scenarios](defender-endpoint-demonstrations.md)
+#### [App reputation demonstrations](defender-endpoint-demonstration-app-reputation.md)
+#### [Attack surface reduction rules demonstrations](defender-endpoint-demonstration-attack-surface-reduction-rules.md)
+#### [Block at First Sight \(BAFS\) demonstration)](defender-endpoint-demonstration-block-at-first-sight-bafs.md)
+#### [Cloud-delivered protection demonstration](defender-endpoint-demonstration-cloud-delivered-protection.md)
+#### [Controlled folder access \(CFA\) demonstration test tool](defender-endpoint-demonstration-controlled-folder-access-test-tool.md)
+#### [Controlled folder access \(CFA\) demonstration](defender-endpoint-demonstration-controlled-folder-access.md)
+#### [Exploit protection \(EP\) demonstrations](defender-endpoint-demonstration-exploit-protection.md)
+#### [Network protection demonstration](defender-endpoint-demonstration-network-protection.md)
+#### [Potentially unwanted applications \(PUA\) demonstration](defender-endpoint-demonstration-potentially-unwanted-applications.md)
+#### [URL reputation demonstrations](defender-endpoint-demonstration-smartscreen-url-reputation.md)
 
 ## [Plan deployment](deployment-strategy.md)
 
@@ -247,6 +260,8 @@
 
 ### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
 
+### [Built-in protection](built-in-protection.md)
+
 ### [Attack surface reduction]()
 #### [Attack surface reduction overview](overview-attack-surface-reduction.md)
 #### [Attack surface reduction (ASR) rules]()
@@ -258,6 +273,7 @@
 ###### [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
 ###### [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
 ##### [Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)
+##### [Attack surface reduction rules report](attack-surface-reduction-rules-report.md)
 ##### [Troubleshoot attack surface reduction (ASR) rules](troubleshoot-asr-rules.md)
 ##### [Enable ASR rules alternate configuration methods](enable-attack-surface-reduction.md)
 #### [Attack surface reduction FAQ](attack-surface-reduction-faq.yml)
@@ -268,7 +284,11 @@
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 #### [Device Control]()
 ##### [Removable Storage Protection](device-control-removable-storage-protection.md)
-##### [Removable Storage Access Control](device-control-removable-storage-access-control.md)
+##### [Removable Storage Access Control]()
+###### [Overview](device-control-removable-storage-access-control.md)
+###### [Deploy and manage using Intune](deploy-manage-removable-storage-intune.md)
+###### [Deploy and manage using group policy](deploy-manage-removable-storage-group-policy.md)
+###### [Frequently asked questions](device-control-removable-storage-access-control-faq.md)
 ##### [Device Installation](mde-device-control-device-installation.md)
 ##### [Device Control Printer Protection](printer-protection.md)
 ##### [Device Control Reports](device-control-report.md)
@@ -293,7 +313,6 @@
 ###### [Monitor web security](web-protection-monitoring.md)
 ###### [Respond to web threats](web-protection-response.md)
 ##### [Web content filtering](web-content-filtering.md)
-
 
 ### Next-generation protection
 #### [Next-generation protection overview](next-generation-protection.md)
@@ -374,7 +393,9 @@
 ##### [Troubleshooting mode scenarios](troubleshooting-mode-scenarios.md)
 
 #### Diagnostics and performance for Microsoft Defender Antivirus
-##### [Device health and compliance reports](machine-reports.md)
+##### [Device health reports](device-health-reports.md)
+###### [Microsoft Defender Antivirus health report](device-health-microsoft-defender-antivirus-health.md)
+###### [Sensor health and OS report](device-health-sensor-health-os.md)
 ##### [Troubleshoot performance issues related to real-time protection](troubleshoot-performance-issues.md) 
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
 ##### [Collect diagnostic data of Microsoft Defender Antivirus](collect-diagnostic-data.md)
@@ -400,7 +421,6 @@
 ## [Investigate and respond to threats]()
 ### [Endpoint detection and response]()
 #### [Endpoint detection and response overview](overview-endpoint-detection-response.md)
-#### [Security operations dashboard](security-operations-dashboard.md)
 #### [Submit files](admin-submissions-mde.md)
 #### [Incidents queue]()
 ##### [View and organize the Incidents queue](view-incidents-queue.md)
@@ -416,7 +436,7 @@
 ##### [Investigate files](investigate-files.md)
 ##### [Investigate devices](investigate-machines.md)
 ##### [Investigate an IP address](investigate-ip.md)
-##### [Investigate a domain](investigate-domain.md)
+##### [Investigate domains and URLs associated with a Microsoft Defender for Endpoint alert](investigate-domain.md)
 ###### [Investigate connection events that occur behind forward proxies](investigate-behind-proxy.md)
 ##### [Investigate a user account](investigate-user.md)
 
@@ -457,10 +477,7 @@
 ##### [Power BI - How to use API - Samples](api-power-bi.md)
 ##### [Threat protection reports](threat-protection-reports.md)
 
-### [Advanced hunting]()
-#### [Advanced hunting overview](advanced-hunting-overview.md)
-#### [Understand the schema](advanced-hunting-schema-reference.md)
-#### [DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)
+### [Advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview)
 
 ### [Threat analytics overview](threat-analytics.md)
 #### [Read the analyst report](threat-analytics-analyst-reports.md)
@@ -524,8 +541,8 @@
 ####### [Export software vulnerabilities assessment](get-assessment-software-vulnerabilities.md)
 
 ###### [Browser extensions]()
-####### [Export broswer extenstions assessment](get-assessment-browser-extensions.md)
-####### [Get browser extenstions permisson information](get-browser-extensions-permission-info.md)
+####### [Export browser extensions assessment](get-assessment-browser-extensions.md)
+####### [Get browser extensions permission information](get-browser-extensions-permission-info.md)
 
 ###### [Automated investigation]()
 ####### [Investigation methods and properties](investigation.md)
@@ -691,7 +708,6 @@
 
 ### [Managed security service provider (MSSP) integration]()
 #### [Configure managed security service provider integration](configure-mssp-support.md)
-#### [Supported managed security service providers](mssp-list.md)
 #### [Grant MSSP access to the portal](grant-mssp-access.md)
 #### [Access the MSSP customer portal](access-mssp-portal.md)
 #### [Configure alert notifications](configure-mssp-notifications.md)

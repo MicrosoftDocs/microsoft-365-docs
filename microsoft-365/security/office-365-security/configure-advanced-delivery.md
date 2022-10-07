@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 search.appverid:
   - MET150
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: Admins can learn how to use the advanced delivery policy in Exchange Online Protection (EOP) to identify messages that should not be filtered in specific supported scenarios (third-party phishing simulations and messages delivered to security operations (SecOps) mailboxes.
 ms.subservice: mdo
@@ -329,7 +329,7 @@ Configuring a third-party phishing simulation in PowerShell is a multi-step proc
 
 #### Step 1: Use PowerShell to create the phishing simulation override policy
 
-In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), this example creates the phishing simulation override policy.
+In [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), this example creates the phishing simulation override policy.
 
 ```powershell
 New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
@@ -341,7 +341,7 @@ For detailed syntax and parameter information, see [New-PhishSimOverridePolicy](
 
 #### Step 2: Use PowerShell to create the phishing simulation override rule
 
-In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
+In [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), use the following syntax:
 
 ```powershell
 New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains <Domain1>,<Domain2>,...<Domain10> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntry10>
@@ -383,7 +383,7 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListItem
 
 ### Use PowerShell to view the phishing simulation override policy
 
-In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), this example returns detailed information about the one and only phishing simulation override policy.
+In [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), this example returns detailed information about the one and only phishing simulation override policy.
 
 ```powershell
 Get-PhishSimOverridePolicy
@@ -393,7 +393,7 @@ For detailed syntax and parameter information, see [Get-PhishSimOverridePolicy](
 
 ### Use PowerShell to view phishing simulation override rules
 
-In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), this example returns detailed information about phishing simulation override rules.
+In [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), this example returns detailed information about phishing simulation override rules.
 
 ```powershell
 Get-PhishSimOverrideRule
@@ -423,7 +423,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListItem
 
 ### Use PowerShell to modify the phishing simulation override policy
 
-In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
+In [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), use the following syntax:
 
 ```powershell
 Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy [-Comment "<DescriptiveText>"] [-Enabled <$true | $false>]
@@ -439,7 +439,7 @@ For detailed syntax and parameter information, see [Set-PhishSimOverridePolicy](
 
 ### Use PowerShell to modify phishing simulation override rules
 
-In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
+In [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), use the following syntax:
 
 ```powershell
 Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011 [-Comment "<DescriptiveText>"] [-AddSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-RemoveSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-AddSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>] [-RemoveSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>]
@@ -480,7 +480,7 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListItem
 
 ### Use PowerShell to remove a phishing simulation override policy
 
-In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), this example removes the phishing simulation override policy and the corresponding rule.
+In [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), this example removes the phishing simulation override policy and the corresponding rule.
 
 ```powershell
 Remove-PhishSimOverridePolicy -Identity PhishSimOverridePolicy
@@ -490,7 +490,7 @@ For detailed syntax and parameter information, see [Remove-PhishSimOverridePolic
 
 ### Use PowerShell to remove phishing simulation override rules
 
-In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
+In [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), use the following syntax:
 
 ```powershell
 Remove-PhishSimOverrideRule -Identity <RuleIdentity>

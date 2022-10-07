@@ -14,7 +14,7 @@ search.appverid:
   - MET150
 ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn how to view, create, modify, and delete outbound spam policies in Exchange Online Protection (EOP).
@@ -115,8 +115,8 @@ Creating a custom outbound spam policy in the Microsoft 365 Defender portal crea
    > [!IMPORTANT]
    > Multiple different types of conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
    >
-   > - The recipient is: romain@contoso.com
-   > - The recipient is a member of: Executives
+   > - Users: romain@contoso.com
+   > - Groups: Executives
    >
    > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy is not applied to him.
    >

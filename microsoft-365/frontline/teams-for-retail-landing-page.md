@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 for Retail
+title: Microsoft 365 for retail organizations
 description: Learn about the admin resources available to manage and get the most out of Teams for your retail stores and workforce.
 ms.topic: conceptual
 author: samanro
@@ -13,8 +13,10 @@ ms.collection:
   - M365-collaboration
   - microsoftcloud-retail
   - m365-frontline
+  - highpri
   - m365solution-retail
   - m365solution-overview
+  - highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -25,7 +27,7 @@ appliesto:
   - Microsoft 365 for frontline workers
 ---
 
-# Get started with Microsoft 365 for Retail
+# Get started with Microsoft 365 for retail organizations
 
 Retail environments, with their rotating schedules and on-the-go staff, have very different needs than other organizations. To get the most benefit for your retail organization, you first choose which scenarios Microsoft 365 and Microsoft Teams can help you with in your day-to-day business operations, and then make sure that you prepare your Teams environment with the right fundamentals, teams, and apps to support those scenarios.
 
@@ -44,10 +46,19 @@ Microsoft 365 and Microsoft Teams offer several capabilities that can help retai
 > [!NOTE]
 > These scenarios are also part of the Microsoft Cloud for Retail. You can do more with these scenarios when you also use other capabilities from the Microsoft Cloud for Retail, such as Microsoft Dynamics 365. Learn more about using this solution, which brings together capabilities from Azure, Dynamics 365, and Microsoft 365 at [Microsoft Cloud for Retail](/industry/retail).
 
+### Download a poster with scenario overviews
+
+Use the following poster to start envisioning what your organization can do with Microsoft 365 for frontline workers.
+
+| Item | Description |
+|:-----|:-----|
+|[![Microsoft 365 for frontline workers: Retail scenarios.](media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Updated September 2022   |This poster provides an overview of the scenarios you can implement for your frontline workforce in a retail setting.|
+
+### Video overviews
+
 Watch the following video to see how you can help your store associates connect and collaborate:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
-
 
 Watch the following video to see how you can simplify business processes in retail environments:
 
@@ -60,7 +71,7 @@ Bring in-store associates and management together to collaborate and streamline 
 
 **Key apps:** Shifts, Walkie Talkie, Tasks, Approvals, Chat, Praise, Lists, Files, Updates
 
-**Additional services:** Viva Connections, SharePoint, Power Platform and Power Apps
+**Additional services:** Outlook, Viva Connections, SharePoint, Power Platform and Power Apps
 
 More information: [Frontline team collaboration](flw-team-collaboration.md)
 
@@ -70,7 +81,7 @@ Staff members can communicate and collaboration across multiple stores in a regi
 
 **Key apps:** Shifts, Walkie Talkie, Tasks, Approvals, Chat, Praise, Lists, Files, Updates
 
-**Additional services:** Viva Connections, Yammer, SharePoint, Power Platform and Power Apps
+**Additional services:** Outlook, Viva Connections, Yammer, SharePoint, Power Platform and Power Apps
 
 More information: [Frontline team collaboration](flw-team-collaboration.md)
 

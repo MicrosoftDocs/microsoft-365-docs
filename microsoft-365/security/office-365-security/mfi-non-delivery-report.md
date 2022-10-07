@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 ms.assetid:
 ms.custom:
@@ -15,6 +15,7 @@ ms.custom:
 description: Admins can learn how to use the Non-delivery details report in the Mail flow dashboard in the Security & Compliance Center to monitor the most frequently encountered error codes in non-delivery reports (also known as NDRs or bounce messages) from senders in your organization.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Non-delivery report in the Security & Compliance Center

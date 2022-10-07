@@ -13,10 +13,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint - Mobile Threat Defense
@@ -36,8 +37,6 @@ Microsoft Defender for Endpoint on Android and iOS is our **mobile threat defens
 
 Microsoft Defender for Endpoint on Android and iOS provides the below key capabilities, For information about the latest features and benefits, read our [announcements](https://aka.ms/mdeblog).
 
-<br>
-
 |Capability|Description|
 |---|---|
 |Web Protection|Anti-phishing, blocking unsafe network connections, and support for custom indicators.|
@@ -45,13 +44,12 @@ Microsoft Defender for Endpoint on Android and iOS provides the below key capabi
 |Jailbreak Detection (iOS-only)|Detection of jailbroken devices.|
 |Microsoft Defender Vulnerability Management (MDVM) |Vulnerability assessment of onboarded mobile devices. Visit this [page](next-gen-threat-and-vuln-mgt.md) to learn more about Microsoft Defender Vulnerability Management in Microsoft Defender for Endpoint. *Note that on iOS only OS vulnerabilities are supported in this preview.*|
 |Network Protection *(Public Preview)*| Protection against rogue Wi-Fi related threats and rogue certificates; ability to allow list the root CA and private root CA certificates in Intune; establish trust with endpoints.|
-|Unified alerting|Alerts from all platforms in the unified M365 security console|
-|Conditional Access, Conditional launch|Blocking risky devices from accessing corporate resources. Defender for Endpoint risk signals can also be added to app protection policies (MAM)|
-|Privacy Controls. In preview (see note below)|Configure privacy in the threat reports by controlling the data sent by Microsoft Defender for Endpoint. *Note that privacy controls are currently available only for enrolled devices. Controls for unenrolled devices will be added later*|
+|Unified alerting|Alerts from all platforms in the unified M365 security console.|
+|Conditional Access, Conditional launch|Blocking risky devices from accessing corporate resources. Defender for Endpoint risk signals can also be added to app protection policies (MAM).|
+|Privacy Controls|Configure privacy in the threat reports by controlling the data sent by Microsoft Defender for Endpoint. Privacy controls are available for admin and end users. It's there for enrolled and unenrolled devices as well.|
 |Integration with Microsoft Tunnel|Can integrate with Microsoft Tunnel, a VPN gateway solution to enable security and connectivity in a single app. Available on Android and is now generally available on iOS also.|
 
 All these capabilities are available for Microsoft Defender for Endpoint license holders. For more information, see [Licensing requirements](minimum-requirements.md#licensing-requirements).
-
 
 ## Overview and Deploy
 
@@ -73,7 +71,7 @@ The following table summarizes how to deploy Microsoft Defender for Endpoint on 
 |--------------------|-------------|
 |Android Enterprise with Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|[Deploy on Android Enterprise enrolled devices](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
 |Device Administrator with Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|[Deploy on Device Administrator enrolled devices](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
-|Unmanaged BYOD OR devices managed by other Unified Endpoint Managers / Setup app protection policy (MAM)|[Configure Defender risk signals in app protection policy (MAM)](android-configure-mam.md)|
+|Unmanaged BYOD OR devices managed by other Unified Endpoint Managers / Set up app protection policy (MAM)|[Configure Defender risk signals in app protection policy (MAM)](android-configure-mam.md)|
 
 **iOS**
 
@@ -81,7 +79,7 @@ The following table summarizes how to deploy Microsoft Defender for Endpoint on 
 |--------------------|-------------|
 |Supervised devices with Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|1. [Deploy as iOS store app](ios-install.md)<br/>2. [Setup Web Protection without VPN for supervised iOS devices](ios-install.md#complete-deployment-for-supervised-devices)|
 |Unsupervised (BYOD) devices enrolled with Intune UEM (Microsoft Endpoint Manager)|[Deploy as iOS store app](ios-install.md)|
-|Unmanaged BYOD OR devices managed by other UEMs / Setup app protection policy (MAM)|[Configure Defender risk signals in app protection policy (MAM)](ios-install-unmanaged.md)|
+|Unmanaged BYOD OR devices managed by other UEMs / Set up app protection policy (MAM)|[Configure Defender risk signals in app protection policy (MAM)](ios-install-unmanaged.md)|
 
 ### End-user onboarding
 
