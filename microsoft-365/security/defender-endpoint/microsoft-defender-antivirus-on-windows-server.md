@@ -168,7 +168,7 @@ The following table describes methods to set Microsoft Defender Antivirus to pas
 | Uninstall Microsoft Defender Antivirus using PowerShell | Use the following PowerShell cmdlet: `Uninstall-WindowsFeature -Name Windows-Defender` |
 | Disable Microsoft Defender Antivirus using Group Policy | In your Local Group Policy Editor, navigate to **Administrative Template** > **Windows Component** > **Endpoint Protection** > **Disable Endpoint Protection**, and then select **Enabled** > **OK**. |
 
-For more information, see [Working with Registry Keys](/powershell/scripting/samples/working-with-registry-keys?view=powershell-7.2).
+For more information, see [Working with Registry Keys](/powershell/scripting/samples/working-with-registry-keys).
 
 ### Are you using Windows Server 2012 R2 or Windows Server 2016?
 
