@@ -60,7 +60,7 @@ The **Inquiry topic** field is pre-populated with the link to the relevant page 
 
 3. In the next field, provide enough information to give Microsoft Defender Experts enough context to start the investigation.
 
-4. Enter the email address that you'd like to use to correspond with Microsoft Defender Experts.
+4. Enter the email address that you'd like to use to correspond with Microsoft Defender Experts. Ensure that the email address is for an account with a mailbox attached to it. If not, include an email address with a mailbox attached.
 
 > [!NOTE]
 > If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager.
