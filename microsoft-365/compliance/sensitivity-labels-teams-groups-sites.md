@@ -31,7 +31,7 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to protect docu
 - External user access
 - External sharing from SharePoint sites
 - Access from unmanaged devices
-- Authentication contexts (in preview)
+- Authentication contexts
 - Default sharing link for a SharePoint site (PowerShell-only configuration)
 - In preview: Site sharing settings (PowerShell-only configuration)
 
@@ -116,7 +116,7 @@ After sensitivity labels are enabled for containers as described in the previous
             
             For additional configuration information, see [More information about the dependencies for the unmanaged devices option](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) at the end of this section.
             
-        - **Choose an existing authentication context**: Currently in preview, this option lets you enforce more stringent access conditions when users access SharePoint sites that have this label applied. These conditions are enforced when you select an existing authentication context that has been created and published for your organization's Conditional Access deployment. If users don't meet the configured conditions or if they use apps that don't support authentication contexts, they are denied access.
+        - **Choose an existing authentication context**: This option lets you enforce more stringent access conditions when users access SharePoint sites that have this label applied. These conditions are enforced when you select an existing authentication context that has been created and published for your organization's Conditional Access deployment. If users don't meet the configured conditions or if they use apps that don't support authentication contexts, they are denied access.
             
             For additional configuration information, see [More information about the dependencies for the authentication context option](#more-information-about-the-dependencies-for-the-authentication-context-option) at the end of this section.
             
@@ -169,7 +169,7 @@ Not all apps support authentication contexts. If a user with an unsupported app 
     - iOS: Rolling out in 12.30
     - Android: Not yet supported
 
-Known limitations for this preview:
+Known limitations:
 
 - For the OneDrive sync app, supported for OneDrive only and not for other sites.
 
