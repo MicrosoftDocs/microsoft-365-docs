@@ -404,6 +404,8 @@
                 href: sensitive-information-type-entity-definitions.md
               - name: ABA routing number
                 href: sit-defn-aba-routing.md
+              - name: All credentials
+                href: sit-defn-all-creds.md
               - name: All full names
                 href: sit-defn-all-full-names.md
               - name: All medical terms and conditions
