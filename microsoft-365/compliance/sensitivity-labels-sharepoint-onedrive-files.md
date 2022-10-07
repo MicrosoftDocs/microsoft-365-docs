@@ -71,7 +71,7 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
 
 ## Supported file types
 
-After you've enabled sensitivity labels for SharePoint and OneDrive, the following file types are supported for sensitivity labeling scenarios:
+After you've enabled sensitivity labels for SharePoint and OneDrive, the following file types are supported for sensitivity labeling scenarios.
 
 Applying a sensitivity label in Office on the web or in SharePoint:
 
