@@ -34,6 +34,7 @@ This article is a list of all sensitive information type (SIT) entity definition
 > - High confidence: 85
 
 - [ABA routing number](sit-defn-aba-routing.md)
+- [All credentials](sit-defn-all-creds.md)
 - [All full names](sit-defn-all-full-names.md)
 - [All medical terms and conditions](sit-defn-all-medical-terms-conditions.md)
 - [All Physical Addresses](sit-defn-all-physical-addresses.md)
@@ -118,8 +119,7 @@ This article is a list of all sensitive information type (SIT) entity definition
 - [Canada social insurance number](sit-defn-canada-social-insurance-number.md)
 - [Chile identity card number](sit-defn-chile-identity-card-number.md)
 - [China resident identity card (PRC) number](sit-defn-china-resident-identity-card-number.md)
-- [Client secret / API key](sit-defn-client-secret-api-key.md)
-- [Credentials in URL](sit-defn-credentials-in-url.md)
+- [Client secret / API key (preview)](sit-defn-client-secret-api-key.md)
 - [Credit card number](sit-defn-credit-card-number.md)
 - [Croatia driver's license number](sit-defn-croatia-drivers-license-number.md)
 - [Croatia identity card number](sit-defn-croatia-identity-card-number.md)

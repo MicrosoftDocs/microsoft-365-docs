@@ -1,5 +1,5 @@
 ---
-title: "Azure subscription management certificate entity definition (preview)"
+title: "Azure subscription management certificate entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "Azure subscription management certificate sensitive information type entity definition."
 ---
 
-# Azure subscription management certificate (preview)
+# Azure subscription management certificate
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
