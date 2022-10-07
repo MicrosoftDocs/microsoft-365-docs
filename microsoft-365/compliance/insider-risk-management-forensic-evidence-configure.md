@@ -71,7 +71,7 @@ To configure forensic evidence settings, complete the following steps:
 2. Select **Forensic evidence capturing** to enable capturing support in your forensic evidence policies. If this is turned off later, this will remove all previously added users for forensic evidence policies.
 
     >[!IMPORTANT]
-    >The Microsoft Purview Client used to capture activity on users' devices is licensed under the Use of Software with the Online Services on the Microsoft Product Terms. Note that customers are solely responsible for using the insider risk management solution, including the Microsoft Purview Client, in compliance with all applicable laws.
+    >The Microsoft Purview Client used to capture activity on users' devices is licensed under the Use of Software with the Online Services on the [Microsoft Product Terms](https://www.microsoft.com/licensing/product-licensing/products). Note that customers are solely responsible for using the insider risk management solution, including the Microsoft Purview Client, in compliance with all applicable laws.
  
 1. In the **Capturing window** section, define when to start and stop activity capturing. Available values are *10 seconds*, *30 seconds*, *1 minute*, *3 minutes*, or *5 minutes*.
 1. In the **Upload bandwidth limit** section, define the amount of capture data to upload into your data storage account per user, per day. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.

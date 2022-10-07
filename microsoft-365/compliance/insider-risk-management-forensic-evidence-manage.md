@@ -182,3 +182,5 @@ The device health status gives you insights into potential issues with your devi
 | The Microsoft Purview Client is unable to capture activity because display monitors on this device were turned off or disconnected. | Error | Connect/Turn on display monitors for the device |
 | Device is unable to access the directory that stores forensic evidence captures. | Error | Reinstall the client on this device |
 | Encoder initialization failed.  | Error | Reinstall the client on this device. |
+
+Contact Microsoft Support if the recommended actions don't resolve issues with the client.
