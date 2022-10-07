@@ -25,7 +25,7 @@ ms.custom: trial-playbook
 
 **Welcome to the Defender for Business user trial guide!**
 
-This guide will help you set-up and use key features of your free trial. Using recommendations in this article from the Microsoft Defender team, learn how Defender for Business can help elevate your security from traditional antivirus protection to next-generation protection, endpoint detection and response, and vulnerability management.
+This guide will help you set up and use key features of your free trial. Using recommendations in this article from the Microsoft Defender team, learn how Defender for Business can help elevate your security from traditional antivirus protection to next-generation protection, endpoint detection and response, and vulnerability management.
 
 ## What is Defender for Business?
 
