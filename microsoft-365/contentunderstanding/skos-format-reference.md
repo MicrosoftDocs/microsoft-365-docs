@@ -1,5 +1,5 @@
 ---
-title: 'SKOS format reference for SharePoint taxonomy'
+title: SKOS format reference for SharePoint taxonomy
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -11,8 +11,9 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: high
-description: 'SKOS format reference for SharePoint taxonomy'
+description: Learn about the SKOS format reference for SharePoint taxonomy.
 ---
+
 # SKOS format reference for SharePoint taxonomy
 
 This article includes RDF vocabulary used to represent [SharePoint taxonomy](/dotnet/api/microsoft.sharepoint.taxonomy) and is based on [SKOS](https://www.w3.org/TR/skos-primer/). For serialization of this RDF syntax, use RDF [TURTLE](https://www.w3.org/TR/turtle/).
