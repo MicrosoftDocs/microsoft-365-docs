@@ -1,5 +1,5 @@
 ---
-title: Use explanation templates in Microsoft SharePoint Syntex
+title: Use explanation templates in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,10 +12,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn more about how to use and save explanation templates in Microsoft SharePoint Syntex.
+description: Learn more about how to use and save explanation templates in Microsoft Syntex.
 ---
 
-# Use explanation templates in Microsoft SharePoint Syntex
+# Use explanation templates in Microsoft Syntex
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
@@ -115,4 +115,4 @@ You can save an explanation as a template to make it available in the explanatio
 
 ### See also
 
-[Explanation types in SharePoint Syntex](explanation-types-overview.md)
+[Explanation types in Microsoft Syntex](explanation-types-overview.md)

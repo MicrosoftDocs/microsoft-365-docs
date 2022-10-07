@@ -1,5 +1,5 @@
 ---
-title: Overview of structured document processing in Microsoft SharePoint Syntex
+title: Overview of structured document processing in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,20 +12,20 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to use AI Builder to create structured document processing models in Microsoft SharePoint Syntex.
+description: Learn how to use AI Builder to create structured document processing models in Microsoft Syntex.
 ---
 
-# Overview of structured document processing in Microsoft SharePoint Syntex
+# Overview of structured document processing in Microsoft Syntex
 
 Use the structured document processing model ([layout method](create-syntex-model.md#train-a-custom-model)) to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices.
 
-SharePoint Syntex uses Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) document processing (formerly known as form processing) to create structured document processing models within SharePoint document libraries.
+Microsoft Syntex uses Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) document processing (formerly known as form processing) to create structured document processing models within SharePoint document libraries.
 
  ![AI Builder.](../media/content-understanding/ai-builder.png)
 
 You can use AI Builder document processing to create structured document processing models that use machine learning technology to identify and extract key-value pairs and table data from structured or semi-structured documents, such as forms and invoices.
 
-Organizations often receive invoices in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text, key-value pairs, and tables from your documents, SharePoint Syntex automates this process. 
+Organizations often receive invoices in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text, key-value pairs, and tables from your documents, Syntex automates this process. 
 
 > [!NOTE]
 > For more ideas about how to use these models in your organization, see [Get started driving adoption](adoption-getstarted.md) and [Scenarios and use cases](adoption-scenarios.md).
@@ -44,7 +44,7 @@ You can only create a structured document processing model in SharePoint documen
 
 ## Requirements
 
-For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md#structured-document-processing).
+For information about requirements to consider when choosing this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md#structured-document-processing).
 
 ## See also
 

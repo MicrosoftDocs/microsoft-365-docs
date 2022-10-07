@@ -1,5 +1,5 @@
 ---
-title: Overview of freeform document processing in Microsoft SharePoint Syntex
+title: Overview of freeform document processing in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,20 +12,20 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to use AI Builder to create freeform document processing models in Microsoft SharePoint Syntex.
+description: Learn how to use AI Builder to create freeform document processing models in Microsoft Syntex.
 ---
 
-# Overview of freeform document processing in Microsoft SharePoint Syntex
+# Overview of freeform document processing in Microsoft Syntex
 
 Use the freeform document processing model ([freeform selection method](create-syntex-model.md#train-a-custom-model)) to automatically extract information from unstructured and freeform documents such as letters and contracts.
 
-SharePoint Syntex uses Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) document processing (formerly known as form processing) to create freeform document processing models within SharePoint document libraries.
+Microsoft Syntex uses Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) document processing (formerly known as form processing) to create freeform document processing models within SharePoint document libraries.
 
  ![AI Builder.](../media/content-understanding/ai-builder.png)
 
 You can use AI Builder document processing to create freeform document processing models that use machine learning technology to identify and extract key-value pairs and table data from unstructured or freeform documents, such as contracts and correspondence.
 
-Organizations often receive documents that have no structure in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text, key-value pairs, and tables from your documents, SharePoint Syntex automates this process. 
+Organizations often receive documents that have no structure in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text, key-value pairs, and tables from your documents, Syntex automates this process. 
 
 > [!NOTE]
 > For more ideas about how to use these models in your organization, see [Get started driving adoption](adoption-getstarted.md) and [Scenarios and use cases](adoption-scenarios.md).
@@ -44,7 +44,7 @@ You can only create a freeform document processing model in SharePoint document 
 
 ## Requirements
 
-For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md#freeform-document-processing). 
+For information about requirements to consider when choosing this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md#freeform-document-processing). 
 
 ## See also
 

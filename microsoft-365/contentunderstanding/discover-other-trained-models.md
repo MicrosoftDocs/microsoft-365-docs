@@ -1,5 +1,5 @@
 ---
-title: Discover other trained models in Microsoft SharePoint Syntex
+title: Discover other trained models in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,10 +12,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to find trained models that have been applied to other content centers in Microsoft SharePoint Syntex.
+description: Learn how to find trained models that have been applied to other content centers in Microsoft Syntex.
 ---
 
-# Discover other trained models in Microsoft SharePoint Syntex
+# Discover other trained models in Microsoft Syntex
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 

@@ -1,5 +1,5 @@
 ---
-title: Overview of classification and extraction by text pattern in Microsoft SharePoint Syntex
+title: Overview of unstructured document processing in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,10 +13,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about the unstructured document processing model in Microsoft SharePoint Syntex.
+description: Learn about the unstructured document processing model in Microsoft Syntex.
 ---
 
-# Overview of unstructured document processing in Microsoft SharePoint Syntex
+# Overview of unstructured document processing in Microsoft Syntex
 
 <!---
 </br>
@@ -31,7 +31,7 @@ Use the unstructured document processing model ([training method](create-syntex-
 The unstructured document processing model (formerly known as document understanding model) uses artificial intelligence (AI) to process documents. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
 
 > [!NOTE]
-> For more information about how to use SharePoint Syntex and scenario examples, see [Get started driving adoption of SharePoint Syntex](./adoption-getstarted.md) and [Scenarios and use cases for SharePoint Syntex](./adoption-scenarios.md).
+> For more information about how to use Syntex and scenario examples, see [Get started driving adoption of Microsoft Syntex](./adoption-getstarted.md) and [Scenarios and use cases for Microsoft Syntex](./adoption-scenarios.md).
 
 Unstructured document processing models are created and managed in a type of SharePoint site called a [content center](create-a-content-center.md). When applied to a SharePoint document library, the model is associated with a content type has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
 
@@ -50,7 +50,7 @@ After publishing your model, use the content center to apply it to any SharePoin
 
 ## Requirements
 
-For information about requirements to consider when choosing this model, see [Requirements and limitations for models in SharePoint Syntex](requirements-and-limitations.md#unstructured-document-processing).
+For information about requirements to consider when choosing this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md#unstructured-document-processing).
 
 ## See also
 

@@ -1,5 +1,5 @@
 ---
-title: Compare custom models in Microsoft SharePoint Syntex
+title: Compare custom models in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,10 +12,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about key differences between custom models in Microsoft SharePoint Syntex.
+description: Learn about key differences between custom models in Microsoft Syntex.
 ---
 
-# Compare custom models in Microsoft SharePoint Syntex 
+# Compare custom models in Microsoft Syntex 
 
 Use the following table to see differences in custom models to help identify the most appropriate model to use for your needs.
 
@@ -29,7 +29,7 @@ Use the following table to see differences in custom models to help identify the
 | Integrate with managed metadata | Yes, by training entity extractor referencing a configured managed metadata field. | No | No |
 | Compliance feature integration with Microsoft Purview Information Protection | Set published retention labels.<br>Set published sensitivity labels. | Set retention labels is coming. <br>Set sensitivity labels is coming. | Set published retention labels. <br>Set sensitivity labels is coming. |
 | Supported regions| Available in all regions. | Relies on Power Platform. For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). | Relies on Power Platform. For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). |
-| Transactional cost | Not applicable | Uses AI Builder credits.<br>3,500 credits are included for each SharePoint Syntex license per month.<br>1 million credits will allow processing of 2,000 file pages. | Uses AI Builder credits.<br>3,500 credits are included for each SharePoint Syntex license per month.<br>1 million credits will allow processing of 2,000 file pages. |
+| Transactional cost | Not applicable | Uses AI Builder credits.<br>3,500 credits are included for each Syntex license per month.<br>1 million credits will allow processing of 2,000 file pages. | Uses AI Builder credits.<br>3,500 credits are included for each Syntex license per month.<br>1 million credits will allow processing of 2,000 file pages. |
 | Capacity | No capacity restrictions. | Uses the default Power Platform environment (custom environments with Dataverse database supported). | Uses the default Power Platform environment (custom environments with Dataverse database supported). |
 | Supported languages| Models work on all Latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese. | Current language support is for English. | Language support for [73 languages](/ai-builder/form-processing-model-requirements.md#languages-supported). |
 

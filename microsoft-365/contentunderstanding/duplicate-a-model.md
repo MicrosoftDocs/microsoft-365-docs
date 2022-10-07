@@ -1,5 +1,5 @@
 ---
-title: Duplicate a model in Microsoft SharePoint Syntex
+title: Duplicate a model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,10 +12,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how and why to duplicate a model in Microsoft SharePoint Syntex.
+description: Learn how and why to duplicate a model in Microsoft Syntex.
 ---
 
-# Duplicate a model in Microsoft SharePoint Syntex
+# Duplicate a model in Microsoft Syntex
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
@@ -53,4 +53,4 @@ Follow these steps to duplicate an unstructured document processingmodel.
 
 [Rename a model](rename-a-model.md)
 
-[SharePoint Syntex Accessibility Mode](accessibility-mode.md)
+[Syntex accessibility mode](accessibility-mode.md)
