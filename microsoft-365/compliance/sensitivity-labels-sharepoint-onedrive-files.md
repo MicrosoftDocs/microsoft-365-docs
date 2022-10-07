@@ -75,15 +75,15 @@ After you've enabled sensitivity labels for SharePoint and OneDrive, the followi
 
 Applying a sensitivity label:
 
-- Word: .docx, .docm
-- Excel: .xlsx, .xlsm, .xlsb
-- PowerPoint: .pptx, .ppsx
+- **Word**: .docx, .docm
+- **Excel**: .xlsx, .xlsm, .xlsb
+- **PowerPoint**: .pptx, .ppsx
 
 Uploading a labeled document, and then extracting and displaying that sensitivity label:
 
-- Word: doc, .docx, .docm, .dot, .dotx, .dotm
-- Excel: .xls, .xlt, .xla, .xlc, .xlm, .xlw, .xlsx, .xltx, .xlsm, .xltm, .xlam, .xlsb
-- PowerPoint: .ppt, .pot, .pps, .ppa, .pptx, .ppsx, .ppsxm, .potx, .ppam, .pptm, .potm, .ppsm
+- **Word**: doc, .docx, .docm, .dot, .dotx, .dotm
+- **Excel**: .xls, .xlt, .xla, .xlc, .xlm, .xlw, .xlsx, .xltx, .xlsm, .xltm, .xlam, .xlsb
+- **PowerPoint**: .ppt, .pot, .pps, .ppa, .pptx, .ppsx, .ppsxm, .potx, .ppam, .pptm, .potm, .ppsm
 
 ## Limitations
 
