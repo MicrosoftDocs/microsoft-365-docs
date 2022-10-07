@@ -1,5 +1,5 @@
 ---
-title: "General Symmetric key entity definition (preview)"
+title: "General Symmetric key entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "General Symmetric key sensitive information type entity definition."
 ---
 
-# General Symmetric key (preview)
+# General Symmetric key
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -70,8 +70,8 @@ This SIT is designed to match the security information that's used in [general a
 
 It uses several primary resources:
 
-- Patterns of Base64 encoded 256 bits symmetric key.
-- Patterns of Base64 encoded 512 bits symmetric key.
+- Patterns of Base64 encoded 256-bits symmetric key.
+- Patterns of Base64 encoded 512-bits symmetric key.
 - Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id, AccountName.
 - Patterns of mockup values, redactions, and placeholders.
 - A dictionary of vocabulary.

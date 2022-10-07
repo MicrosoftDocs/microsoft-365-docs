@@ -1,5 +1,5 @@
 ---
-title: "General password entity definition (preview)"
+title: "General password entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "General password sensitive information type entity definition."
 ---
 
-# General Password (preview)
+# General Password
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -81,7 +81,7 @@ for example:
 
 or
 
-Various command line sign in credentials formats, for example: 
+Various command line sign-in credentials formats, for example: 
 
 `-u username:********`
 
@@ -227,7 +227,7 @@ Yes
 
 ## Description
 
-This SIT is designed to match the security information that's like usernames and passwords used in general sign in process [user login process](/azure/key-vault/quick-create-portal). It uses several primary resources:
+This SIT is designed to match the security information that's like usernames and passwords used in general sign-in process [user login process](/azure/key-vault/quick-create-portal). It uses several primary resources:
 
 - Patterns of Base64 encoded string literal.
 - Patterns of Password context in command line.

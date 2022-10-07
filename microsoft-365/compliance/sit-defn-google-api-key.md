@@ -1,5 +1,5 @@
 ---
-title: "Google API key entity definition (preview)"
+title: "Google API key entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "Google API key sensitive information type entity definition."
 ---
 
-# Google API key (preview)
+# Google API key
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
