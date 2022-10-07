@@ -177,14 +177,9 @@ Learn more about [how controls and improvement actions are tracked and scored.](
 
 ## Grant user access to individual assessments
 
-When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, they can view or edit data within all assessments by default (review the [Compliance Manager role types](compliance-manager-setup.md#role-types)).
-
-You can restrict user access to only certain assessments by managing user roles from within an assessment or assessment template. Restricting access in this way can help ensure that users who play a role in overseeing compliance with particular regulations or standards have access only to the data and information they need to perform their duties.
+When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, they can view or edit data within all assessments by default (review the [Compliance Manager role types](compliance-manager-setup.md#role-types)). You can restrict user access to only certain assessments by managing user roles from within an assessment or assessment template. Restricting access in this way can help ensure that users who play a role in overseeing compliance with particular regulations or standards have access only to the data and information they need to perform their duties.
 
 External users who need access for auditing or other purposes can also be assigned a role for viewing assessments and editing test data. You'll provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles](compliance-manager-setup.md#more-about-azure-ad).
-
-#### Assessment roles can coexist with other Compliance Manager roles
-It is possible for a user to have one role with respect to an assessment, and another role with respect to overall Compliance Manager access. For example, if you've assigned a user a **Compliance Manager Reader** role in Microsoft Purview compliance portal **Permissions,** you can also assign that user a **Compliance Manager Assessor** role for a specific assessment. In effect, the user will hold the two roles at the same time, but their ability to edit data will be limited to the assessment to which they've been assigned the **Assessor** role.
 
 #### Steps for granting access
 
@@ -212,6 +207,14 @@ Follow the steps to grant user access to an assessment.
 You can revoke user access to individual assessments. To do this, begin by following the same steps outlined above for adding users. When you see the user's name whose role you want to revoke listed in the **Manage user access** flyout pane, uncheck the box next to their names, then select **Save**. You'll see a confirmation box asking you to confirm removal of the user's access. Select **Remove** to confirm and proceed, or select **Cancel** to cancel and exit.
 
 To learn how to get a broader view of all users with access to assessments, visit [User permissions for assessments](compliance-manager-setup.md#user-permissions-for-assessments).
+
+##### Note about multiple roles
+
+- A user can have one role that applies to an assessment, while also holding another role that applies broadly to overall Compliance Manager access.
+    - For example, if you've assigned a user a **Compliance Manager Reader** role in Microsoft Purview compliance portal **Permissions,** you can also assign that user a **Compliance Manager Assessor** role for a specific assessment. In effect, the user will hold the two roles at the same time, but their ability to edit data will be limited to the assessment to which they've been assigned the **Assessor** role.
+
+- For an individual assessment, one user can only hold one assessment-based role at a time.
+    - For example, if a user holds a reader role for a GDPR assessment and you want to change them to a contributor role, you'll first need to remove their reader role, and then re-assign them the reader role.
 
 ## Accept updates to assessments
 

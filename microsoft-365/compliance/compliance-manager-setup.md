@@ -97,11 +97,7 @@ You can assign roles to users in order to grant access to specific assessments. 
 
 The four roles listed in table above provide access to assessments: Compliance Manager Reader, Compliance Manager Contribution, Compliance Manager Assessor, and Compliance Manager Administration. What you can do with each assessment remains restricted based on which activities the role allows.
 
-You can grant users access to individual assessments from two places:
-
-1. **From an assessment's details page**: Open an assessment and select the **Manage users access** command to add users by role. 
-
-1. **From an assessment template page**: Open a template and select the **Manage user access** command to add users by role.
+To grant users access to an assessment, open the assessment's details page and select **Manage users access** to add users by role.
 
 If a user has a role assigned to them in the Microsoft Purview compliance portal for overall access to Compliance Manager, any role you assign them for a specific assessment will apply only to that assessment.
 
