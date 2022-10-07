@@ -56,9 +56,9 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - [Design a data loss prevention policy complex rule design (preview)](dlp-policy-design.md#complex-rule-design-preview) - The DLP rule builder supports boolean logic (AND, OR, NOT) and nested groups. New video and content added that walks you through this new functionality.
 
 ### Sensitivity labels
-- [PDF support](sensitivity-labels-office-apps.md#pdf-support ) in Word, Excel, and PowerPoint is now available to Windows Current Channel and Monthly Enterprise Channel.
+- [PDF support](sensitivity-labels-office-apps.md#pdf-support) in Word, Excel, and PowerPoint is now available to Windows Current Channel and Monthly Enterprise Channel.
 - Default label for existing documents is now fully rolled out to Mac and Windows in Current Channel and Monthly Enterprise Channel, providing parity with the AIP add-in.
-- In preview: [Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) and support for [label colors](sensitivity-labels-office-apps.md#label-colors) in Office apps, providing parity with the AIP add-in with additional functionality.
+- In preview: The new [sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) and support for [label colors](sensitivity-labels-office-apps.md#label-colors) in Office apps, providing parity with the AIP add-in with additional functionality.
 - In preview: [S/MIME support](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) for Windows, providing parity with the AIP add-in. Support for Mac and mobile is now fully rolled out.
 - In preview: Trainable classifiers for auto-labeling policies (all workloads).
 
