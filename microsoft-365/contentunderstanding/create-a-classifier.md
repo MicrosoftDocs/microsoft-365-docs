@@ -52,11 +52,11 @@ The first step to create your model is to give it a name:
 
 1. From the content center, select **New**, and then **Model**.
 
-2. On the **View options for classification and extraction** page, select **Classify and extract by test pattern**.
+2. On the **Options for model creation** page, select **Teaching method**.
 
-3. On the **Classify and extract by text pattern** page, select **Next**.
+3. On the **Teaching method: Details** page, select **Next**.
 
-4. On the **Create a model to classify and extract by text pattern** page, in the **Model name** field, type the name of the model. For example, if you want to identify contract renewal documents, you could name the model *Contract Renewal*.
+4. On the **Create a model with the teaching method** page, in the **Model name** field, type the name of the model. For example, if you want to identify contract renewal documents, you could name the model *Contract Renewal*.
 
 5. Choose **Create**. This creates a home page for the model.
 

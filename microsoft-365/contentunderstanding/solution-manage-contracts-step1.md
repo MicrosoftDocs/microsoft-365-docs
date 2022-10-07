@@ -45,9 +45,9 @@ Unstructured document processing models use optical character recognition (OCR) 
 
 The first step is to create your Contract model.
 
-1. From the content center, select **New**, and then **Create a model**.
+1. From the content center, select **New** > **Model** > **Teaching method**.
 
-2. On the **Classify and extract by text pattern** pane, in the **Name** field, type the name of the model. For this contract management solution, you can name the model *Contract*.
+2. On the **Create a model with the teaching method** pane, in the **Name** field, type the name of the model. For this contract management solution, you can name the model *Contract*.
 
 4. Choose **Create**. This creates a home page for the model.</br>
 
