@@ -79,11 +79,11 @@ Applying a sensitivity label:
 - Excel: .xlsx, .xlsm, .xlsb
 - PowerPoint: .pptx, .ppsx
 
-Uploading a labeled document and then extracting and displaying that sensitivity label:
+Uploading a labeled document, and then extracting and displaying that sensitivity label:
 
-- Word: doc, docx, docm, dot, dotx, dotm
-- Excel: xls, xlt, xla, xlc, xlm, xlw, xlsx, xltx, xlsm, xltm, xlam, xlsb
-- PowerPoint: .ppt, .pot,. pps, .ppa, .pptx, .ppsx, .ppsxm, .potx, .ppam, .pptm, .potm, .ppsm
+- Word: doc, .docx, .docm, .dot, .dotx, .dotm
+- Excel: .xls, .xlt, .xla, .xlc, .xlm, .xlw, .xlsx, .xltx, .xlsm, .xltm, .xlam, .xlsb
+- PowerPoint: .ppt, .pot, .pps, .ppa, .pptx, .ppsx, .ppsxm, .potx, .ppam, .pptm, .potm, .ppsm
 
 ## Limitations
 
