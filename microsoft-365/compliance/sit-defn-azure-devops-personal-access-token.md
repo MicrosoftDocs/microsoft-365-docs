@@ -1,5 +1,5 @@
 ---
-title: "Azure DevOps personal access token entity definition (preview)"
+title: "Azure DevOps personal access token entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,11 +22,13 @@ recommendations: false
 description: "Azure DevOps personal access token sensitive information type entity definition."
 ---
 
-# Azure DevOps personal access token (preview)
+# Azure DevOps personal access token
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Format
+This SIT is also included in the [All credentials](sit-defn-all-creds.md) bundled SIT.
+
+ ## Format
 
 A combination of 52 characters consisting of letters, digits, and special characters.
 
@@ -39,11 +41,20 @@ Any combination of 52 characters consisting of:
 
 for example:
 
-`ntpi2ch67ci2vjzcohglogyygwo5fuyl365n2zdowwxhsys6jnoa`
+`abcdefghijklmnopqrstuvwxyz234567abcdefghijklmnopqrst`
+
+## Credential example 
+
+`URL="org.visualstudio.com/proj"; PAT = "abcdefghijklmnopqrstuvwxyz234567abcdefghijklmnopqrst"`
+
+> [!IMPORTANT]
+> This example has been invalidated. It’s not a detectable example of this SIT.
 
 ## Checksum
 
 Yes
+
+SITs that have checksums use a unique calculation to check if the information is valid. This means when the **Checksum** value is **Yes**, the service can make a positive detection based on the sensitive data alone. When the **Checksum** value is **No**, other (secondary) elements must also be detected for the service to make a positive detection.
 
 ## Definition
 
