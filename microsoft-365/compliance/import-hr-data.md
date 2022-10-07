@@ -426,6 +426,44 @@ You can use the Task Scheduler app in Windows to automatically run the script ev
 
    You can also verify the last time the script ran on the flyout page of the corresponding HR connector in the compliance center.
 
+## (Optional) Step 7: Upload data using Power Automate templates
+
+You can upload HR data using Power Automate templates and define triggers.For example, you can configure a Power Automate template to trigger when new HR connector files are available in SharePoint or OneDrive locations. You can also streamline this process by storing confidential information like Azure AD application secret (created in **Step 2**) in Azure Key Vault and using it with Power Automate for authentication.
+
+Complete the following the steps to automatically upload HR data when new files become available on OneDrive for Business:
+
+1.	In [Power Automate](https://make.preview.powerautomate.com), navigate to **My flows**.
+2.	Select **Import** and upload the *ImportHRDataforIRM_20220912092628.zip* package.
+3.	After the package gets uploaded, update the content (name & OneDrive for Business connection), and select **Import**.
+
+    ![HR connector Power Automate flow import.](../media/hr-connector-pa-import-flow.png)
+
+4.	Select **Open flow** and update the parameters. The following table describes the parameters to use in this Power Automate Flow and their required values. The information you obtained in the previous steps is used in the values for these parameters.
+
+    |**Parameter**|**Description**|
+    |:------------|:--------------|
+    | App ID | This is the Azure AD application ID for the app that you created in Azure AD in **Step 2**. This is used by Azure AD for authentication when the script attempts to access your Microsoft 365 organization. |
+    | App Secret | This is the Azure AD application secret for the app that you created in Azure AD in **Step 2**. This used for authentication. |
+    | File location | This is the OneDrive for Business location where Power Automate monitors for 'new file created' activities to trigger this flow.|
+    | Job ID | Identifier for the HR connector created in **Step 3**. This is used to associate the HR data uploaded to the Microsoft cloud with the HR connector. |
+    | Tenant ID | Identifier for your Microsoft 365 organization obtained in **Step 2**. You can also obtain the tenant ID for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization. |
+    | URI | Verify that the value for this parameter is *https://webhook.ingestion.office.com/api/signals* |
+
+    ![HR connector Power Automate flow import.](../media/hr-connector-pa-flow.png)
+
+5.	Select **Save**.
+6.	Navigate to **Flow overview** and select **Turn on**.
+
+    ![HR connector Power Automate flow import.](../media/hr-connector-pa-turn-on.png)
+
+7.	Test the flow manually by uploading a new file to your OneDrive for Business folder and verify that it ran successfully. This may take a few minutes after the upload before the flow is triggered.
+
+    ![HR connector Power Automate flow import.](../media/hr-connector-pa-test.png)
+
+8.	You can now monitor the HR connector as described in **Step 5**.
+
+If needed, you can update the flow to create triggers based on file availability and modification events on SharePoint and other data sources supported by Power Automate Flows.
+
 ## Existing HR connectors
 
 On December 13, 2021, we released the employee profile data scenario for HR connectors. If you created an HR connector before this date, we will migrate the existing instances or your organization's HR connectors so your HR data continues to be imported to the Microsoft cloud. You don't have to do anything to maintain this functionality. You can keep using these connectors without disruption.
