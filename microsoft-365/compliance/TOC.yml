@@ -566,8 +566,6 @@
                 href: sit-defn-china-resident-identity-card-number.md
               - name: Client secret / API key
                 href: sit-defn-client-secret-api-key.md
-              - name: Credentials in URL
-                href: sit-defn-credentials-in-url.md
               - name: Credit card number
                 href: sit-defn-credit-card-number.md
               - name: Croatia drivers license number
