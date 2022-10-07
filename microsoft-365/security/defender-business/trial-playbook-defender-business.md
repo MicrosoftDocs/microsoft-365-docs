@@ -25,7 +25,7 @@ ms.custom: trial-playbook
 
 **Welcome to the Defender for Business user trial guide!**
 
-This guide is designed to help you make the most of your 30-day free trial. Use the recommendations in this article from the Microsoft Defender team to learn how Defender for Business can help elevate your security from traditional antivirus protection to next-generation protection, endpoint detection and response, and vulnerability management.
+This guide will help you set-up and use key features of your 30-day free trial. Using recommendations in this article from the Microsoft Defender team, learn how Defender for Business can help elevate your security from traditional antivirus protection to next-generation protection, endpoint detection and response, and vulnerability management.
 
 ## What is Defender for Business?
 
@@ -68,7 +68,7 @@ Defender for Business was designed to save small and medium-sized businesses tim
 #### Setup wizard flow: what to expect
 
 > [!TIP]
-> **Using the setup wizard is optional.** (See [What happens if I don't use the wizard?](mdb-use-wizard.md#what-happens-if-i-dont-use-the-wizard)) If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can complete the setup and configuration process on your own. See [Step 4](#step-4-set-up-and-configure-defender-for-business). 
+> **Using the setup wizard is optional.** (See [What happens if I don't use the wizard?](mdb-use-wizard.md#what-happens-if-i-dont-use-the-wizard)). If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can complete the setup and configuration process on your own. See [Step 4](#step-4-set-up-and-configure-defender-for-business).
 
 1. **[Assign user permissions](mdb-roles-permissions.md#view-or-edit-role-assignments)**. Grant your security team access to the Microsoft 365 Defender portal.
 
@@ -111,14 +111,14 @@ Defender for Business includes pre-configured security policies that use recomme
 
 Security policies to review and configure include:
 
-- [Next-generation protection policies](mdb-configure-security-settings.md#view-or-edit-your-next-generation-protection-policies) which determine antivirus and antimalware protection for your company's devices.
-- [Firewall protection and rules](mdb-configure-security-settings.md#view-or-edit-your-firewall-policies-and-custom-rules) which determine what network traffic is allowed to flow to and from your company's devices.
-- [Web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering)which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability.
-- [Advanced features](mdb-configure-security-settings.md#review-settings-for-advanced-features) such as automated investigation and response and endpoint detection and response (EDR) in block mode.
+- [Next-generation protection policies](mdb-configure-security-settings.md#view-or-edit-your-next-generation-protection-policies) which determine antivirus and antimalware protection for your company's devices
+- [Firewall protection and rules](mdb-configure-security-settings.md#view-or-edit-your-firewall-policies-and-custom-rules) which determine what network traffic is allowed to flow to and from your company's devices
+- [Web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering)which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability
+- [Advanced features](mdb-configure-security-settings.md#review-settings-for-advanced-features) such as automated investigation and response and endpoint detection and response (EDR) in block mode
 
 ## Start using Defender for Business
 
-In the next 30 days, we recommend you try out your new security capabilities, as described in the following sections:
+In the next 30 days, here’s guidance from the product team on key features to try:
 
 - [Use your Microsoft Defender Vulnerability Management dashboard](#use-the-defender-vulnerability-management-dashboard) 
 - [View and respond to detected threats](#view-and-respond-to-detected-threats)
@@ -145,8 +145,10 @@ As threats are detected and alerts are triggered, incidents are created. Your or
 
 ### Review security policies
 
-In Defender for Business, security settings are configured through policies that are applied to devices. Defender for Business includes preconfigured policies to help protect your company's devices as soon as they are onboarded, safeguarding your organization against identity, device, application, and document security threats. Learn how to [review security policies](mdb-view-edit-create-policies.md).
-  
+In Defender for Business, security settings are configured through policies that are applied to devices. Defender for Business includes pre-configured policies to help protect your company's devices as soon as they are onboarded, safeguarding your organization against identity, device, application, and document security threats. 
+
+Learn how to [review security policies](mdb-view-edit-create-policies.md).
+
 ### Prepare for ongoing security management
 
 New security events, such as threat detection on a device, adding new devices, and employees joining or leaving the organization, will require you to manage security. In Defender for Business, there are many ways for you to manage device security.
