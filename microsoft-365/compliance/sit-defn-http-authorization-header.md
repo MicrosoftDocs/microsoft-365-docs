@@ -1,5 +1,5 @@
 ---
-title: "Http authorization header entity definition (preview)"
+title: "Http authorization header entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "Http authorization header sensitive information type entity definition."
 ---
 
-# Http authorization header (preview)
+# Http authorization header
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

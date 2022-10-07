@@ -1,5 +1,5 @@
 ---
-title: "Client secret / API key entity definition (preview)"
+title: "Client secret / API key entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "Client secret / API key sensitive information type entity definition."
 ---
 
-# Client secret / API key (preview)
+# Client secret / API key
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
