@@ -66,7 +66,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Microsoft Priva
 
-- [Microsoft Priva trial playbook](/privacy/priva/priva-trial-playbook) - refreshed and simplified guidance to align with recent documentation updates
+- [Microsoft Priva trial user guide](/privacy/priva/priva-trial-playbook) - refreshed and simplified guidance to align with recent documentation updates
 
 ### Sensitive Information Types
 
