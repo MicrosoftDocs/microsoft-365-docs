@@ -99,7 +99,7 @@ To delete an existing notification template, select a template and select **Dele
 
 If you've selected the settings option to only capture activities detected by policies that users are included in, capture clips are available as part of the alert and are accessible on the **Forensic evidence (preview)** tab on the **Alerts dashboard**. If alerts are later escalated to cases, the associated clips are accessible on the **Forensic evidence (preview)** tab on the **Cases** dashboard.
 
-If you've selected the settings option to capture any activity performed by users, regardless of whether they're included in a forensic evidence policy, you'll view the clips for individual users on the **User activity report** dashboard.
+If you've selected the settings option to capture any security-related activity performed by users, regardless of whether they're included in a forensic evidence policy, you'll view the clips for individual users on the **User activity report** dashboard.
 
 ### Reviewing capture clips included with alerts
 
