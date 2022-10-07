@@ -1,5 +1,5 @@
 ---
-title: Accessibility mode in Microsoft SharePoint Syntex
+title: Accessibility mode in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,14 +12,14 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to use accessibility features mode when training and working with models in SharePoint Syntex.
+description: Learn how to use accessibility features mode when training and working with models in Microsoft Syntex.
 ---
 
-# Accessibility mode in Microsoft SharePoint Syntex
+# Accessibility mode in Microsoft Syntex
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
-In SharePoint Syntex, users can turn on accessibility mode in all stages of model training (label, train, test) when working with example documents. Using accessibility mode can help low-sight users to have easier keyboard accessibility as they navigate and label items in the document viewer.
+In Microsoft Syntex, users can turn on accessibility mode in all stages of model training (label, train, test) when working with example documents. Using accessibility mode can help low-sight users to have easier keyboard accessibility as they navigate and label items in the document viewer.
 
 This helps users to use their keyboards to navigate through text in the document viewer and to hear a narration of not only the selected values, but also of actions (such as labeling or removing labeling from selected text), or predicted label values as you train the model with additional example documents. 
 

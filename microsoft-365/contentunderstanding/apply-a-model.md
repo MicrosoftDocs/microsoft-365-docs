@@ -1,5 +1,5 @@
 ---
-title: Apply a model to a document library in Microsoft SharePoint Syntex
+title: Apply a model to a document library in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,10 +12,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to apply a published a model to a SharePoint document library in Microsoft SharePoint Syntex.
+description: Learn how to apply a published a model to a SharePoint document library in Microsoft Syntex.
 ---
 
-# Apply a model to a document library in Microsoft SharePoint Syntex
+# Apply a model to a document library in Microsoft Syntex
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
@@ -123,13 +123,13 @@ The **Classification Date** field is used by the [**When a file is classified by
 
 The **When a file is classified by a content understanding model** trigger can then be used to start a flow using any extracted information from the file or folder.
 
-As an example, when a model is stamped with the **Classification Date**, you can use the **Send an email after SharePoint Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in the SharePoint document library.
+As an example, when a model is stamped with the **Classification Date**, you can use the **Send an email after Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in the SharePoint document library.
 
 To run the flow:
 
 1. Select a file, and then select **Integrate** > **Power Automate** > **Create a flow**.
 
-2. On the **Create a flow** panel, select **Send an email after SharePoint Syntex processes a file**.
+2. On the **Create a flow** panel, select **Send an email after Syntex processes a file**.
 
     ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
 

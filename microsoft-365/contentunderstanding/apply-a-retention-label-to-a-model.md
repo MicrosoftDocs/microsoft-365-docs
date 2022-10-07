@@ -1,5 +1,5 @@
 ---
-title: Apply a retention label to a model in Microsoft SharePoint Syntex
+title: Apply a retention label to a model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,10 +12,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to apply a retention label to a model in Microsoft SharePoint Syntex.
+description: Learn how to apply a retention label to a model in Microsoft Syntex.
 ---
 
-# Apply a retention label to a model in Microsoft SharePoint Syntex
+# Apply a retention label to a model in Microsoft Syntex
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing &ensp; | &ensp; &#10003; Structured document processing &ensp;| &ensp; &#10003; All prebuilt models</sup>
 
@@ -27,7 +27,7 @@ description: Learn how to apply a retention label to a model in Microsoft ShareP
 </br>
 --->
 
-You can easily apply a [retention label](../compliance/retention.md) to a model in Microsoft SharePoint Syntex.
+You can easily apply a [retention label](../compliance/retention.md) to a model in Microsoft Syntex.
 
 > [!Note]
 > Retention labels are not yet available for Freeform document processing models.
@@ -133,7 +133,7 @@ You can add a retention label to an existing structured document processing mode
 
 ## See also
 
-[Apply a sensitivity label to a model in SharePoint Syntex](create-a-classifier.md)
+[Apply a sensitivity label to a model in Microsoft Syntex](create-a-classifier.md)
 
 
 
