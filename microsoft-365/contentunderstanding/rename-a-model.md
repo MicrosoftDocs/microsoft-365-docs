@@ -1,5 +1,5 @@
 ---
-title: Rename a model in Microsoft SharePoint Syntex
+title: Rename a model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,10 +12,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how and why to rename a model in Microsoft SharePoint Syntex.
+description: Learn how and why to rename a model in Microsoft Syntex.
 ---
 
-# Rename a model in Microsoft SharePoint Syntex
+# Rename a model in Microsoft Syntex
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 

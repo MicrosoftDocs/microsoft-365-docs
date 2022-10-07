@@ -1,5 +1,5 @@
 ---
-title: Requirements and limitations for models in Microsoft SharePoint Syntex
+title: Requirements and limitations for models in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,14 +12,14 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about file limitations, file types, supported languages, and other requirements for models in SharePoint Syntex.
+description: Learn about file limitations, file types, supported languages, and other requirements for models in Microsoft Syntex.
 ---
 
-# Requirements and limitations for models in Microsoft SharePoint Syntex
+# Requirements and limitations for models in Microsoft Syntex
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-SharePoint Syntex lets you create [custom models and prebuilt models](model-types-overview.md). Depending on the type of model you choose, there might be different requirements, such as file type and size, languages that need to be supported, geographical considerations, and other factors that will help you decide which type of model to use.
+Microsoft Syntex lets you create [custom models and prebuilt models](model-types-overview.md). Depending on the type of model you choose, there might be different requirements, such as file type and size, languages that need to be supported, geographical considerations, and other factors that will help you decide which type of model to use.
 
 - [Unstructured document processing](#unstructured-document-processing)
 - [Freeform document processing](#freeform-document-processing)
@@ -43,7 +43,7 @@ SharePoint Syntex lets you create [custom models and prebuilt models](model-type
 | ![Conversation symbol.](https://docs.microsoft.com/office/media/icons/chat-room-conversation-blue.png)  | **Supported languages** <br>This model supports the following language: English. |
 | ![Paragraph symbol.](https://docs.microsoft.com/office/media/icons/paragraph-writing-blue.png) | **OCR considerations** <br>This model uses optical character recognition (OCR) technology to scan .pdf files, image files, and .tiff files. OCR processing works best on documents that meet [these requirements](/ai-builder/form-processing-model-requirements#requirements). |
 | ![Bandwidth/efficiency symbol.](https://docs.microsoft.com/office/media/icons/bandwidth-efficiency-blue.png)  | **Optimization tips** <br>If your model isn't performing as you want it to, try [these steps to improve the performance of your model](https://docs.microsoft.com/en-us/ai-builder/improve-form-processing-performance). |
-| ![Globe symbol.](https://docs.microsoft.com/office/media/icons/globe-internet.png)  | **Multi-Geo environments** <br>When setting up SharePoint Syntex in a [Microsoft 365 Multi-Geo](https://docs.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-multi-geo) environment, you can only configure it to use the model type in the central location. If you want to use this model type in a satellite location, contact Microsoft support. |
+| ![Globe symbol.](https://docs.microsoft.com/office/media/icons/globe-internet.png)  | **Multi-Geo environments** <br>When setting up Syntex in a [Microsoft 365 Multi-Geo](https://docs.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-multi-geo) environment, you can only configure it to use the model type in the central location. If you want to use this model type in a satellite location, contact Microsoft support. |
 | ![Blocks symbol.](https://docs.microsoft.com/office/media/icons/blocks-blue.png)  | **Custom environments** <br>If you use a custom environment (rather than the default environment) for Power Platform processing, there are additional setup requirements. For more information, see [Custom Power Platform environments](https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/set-up-content-understanding#custom-power-platform-environments). |
 
 ## Structured document processing
@@ -54,7 +54,7 @@ SharePoint Syntex lets you create [custom models and prebuilt models](model-type
 | ![Conversation symbol.](https://docs.microsoft.com/office/media/icons/chat-room-conversation-blue.png)  | **Supported languages** <br>This model supports 73 languages: see [supported languages](https://docs.microsoft.com/en-us/ai-builder/form-processing-model-requirements#languages-supported). |
 | ![Paragraph symbol.](https://docs.microsoft.com/office/media/icons/paragraph-writing-blue.png) | **OCR considerations** <br>This model uses optical character recognition (OCR) technology to scan .pdf files, image files, and .tiff files. OCR processing works best on documents that meet [these requirements](/ai-builder/form-processing-model-requirements#requirements). |
 | ![Bandwidth/efficiency symbol.](https://docs.microsoft.com/office/media/icons/bandwidth-efficiency-blue.png)  | **Optimization tips** <br>If your model isn't performing as you want it to, try [these steps to improve the performance of your model](https://docs.microsoft.com/en-us/ai-builder/improve-form-processing-performance). |
-| ![Globe symbol.](https://docs.microsoft.com/office/media/icons/globe-internet.png)  | **Multi-Geo environments** <br>When setting up SharePoint Syntex in a [Microsoft 365 Multi-Geo](https://docs.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-multi-geo) environment, you can only configure it to use the model type in the central location. If you want to use this model type in a satellite location, contact Microsoft support. |
+| ![Globe symbol.](https://docs.microsoft.com/office/media/icons/globe-internet.png)  | **Multi-Geo environments** <br>When setting up Syntex in a [Microsoft 365 Multi-Geo](https://docs.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-multi-geo) environment, you can only configure it to use the model type in the central location. If you want to use this model type in a satellite location, contact Microsoft support. |
 | ![Blocks symbol.](https://docs.microsoft.com/office/media/icons/blocks-blue.png)  | **Custom environments** <br>If you use a custom environment (rather than the default environment) for Power Platform processing, there are additional setup requirements. For more information, see [Custom Power Platform environments](https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/set-up-content-understanding#custom-power-platform-environments). |
 
 ## Invoice processing
