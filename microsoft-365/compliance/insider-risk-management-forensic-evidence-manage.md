@@ -176,7 +176,7 @@ The device health status gives you insights into potential issues with your devi
 | Memory usage on the device has exceeded the maximum threshold. | Error | The capture process has been stopped and will restart in a few minutes. |
 | GPU usage on the device has exceeded the maximum threshold. | Error | The capture process has been stopped and will restart in a few minutes. |
 | The Microsoft Purview Client installed on the device in unable to sync with the forensic evidence policy. | Warning | Connect to network & reinstall client |
-| The Microsoft Purview Client installed on the device hasn't synced with the forensic evidence policy in over 24 hours. | Error | TO-DO |
+| The Microsoft Purview Client installed on the device hasn't synced with the forensic evidence policy in over 24 hours. | Error | Connect to network & reinstall client |
 | The Microsoft Purview Client is unable to capture activity because no graphics card is detected on this device. | Error | TO-DO |
 | The Microsoft Purview Client is unable to capture activity because no display monitors are detected on this device. | Error | TO-DO |
 | The Microsoft Purview Client is unable to capture activity because display monitors on this device were turned off or disconnected. | Error | TO-DO |
