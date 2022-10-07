@@ -159,7 +159,7 @@ The device health queue lists all the devices in configured for forensic evidenc
 - **Status details**: More information about the device status.
 - **Last sync (UTC)**: Date and time of the last status sync for the device.
 - **User name**: The user name for the user logged into the device when the status sync was performed.
-- **Windows version**: The version on Microsoft Windows installed on the device.
+- **Windows version**: The version of Microsoft Windows installed on the device.
 - **Client version**: The version of the Microsoft Purview Client installed on the device.
 
 The device health status gives you insights into potential issues with your devices and the Microsoft Purview Client. The **Device status** column on the **Device health** page can alert you to device issues that may prevent user activity from being captured or why the volume of forensic evidence capturing is unusual. The device health status can also confirm that the devices included in forensic evidence capturing are healthy and don't need attention or configuration changes. The following table lists potential status detail messages and recommended actions you can take to address warnings and errors:
