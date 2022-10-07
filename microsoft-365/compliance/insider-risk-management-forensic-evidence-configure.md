@@ -59,7 +59,7 @@ To install the Microsoft Purview Client, complete the following steps:
     - **Third-party device management solutions**: If your organization is using third-party device management solutions, see the documentation for these tools to install the client.
 
 >[!IMPORTANT]
->Forensic evidence clips are deleted 30 days after they're captured or at the end of the preview period, whichever is sooner. You can download or transfer forensic evidence clips before they're deleted.
+>Forensic evidence clips are deleted 120 days after they're captured or at the end of the preview period, whichever is sooner. You can download or transfer forensic evidence clips before they're deleted.
 
 ### Step 3: Configure settings
 
