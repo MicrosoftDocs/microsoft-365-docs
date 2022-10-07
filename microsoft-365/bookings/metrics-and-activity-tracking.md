@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 060a9781-c8a2-4e85-a769-31e6417d05b3
 description: "Various metrics are available on the main Bookings page, allowing you to easily track revenue and customer activity."
 ---

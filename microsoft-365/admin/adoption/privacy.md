@@ -2,18 +2,18 @@
 title: "Microsoft Adoption Score - Privacy"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 monikerRange: 'o365-worldwide'
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
-
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
@@ -48,21 +48,6 @@ To view the entire Adoption Score, you need be one of the following admin roles:
 
 Assign the Reports Reader or the Usage Summary Reports Reader role to anyone who's responsible for change management and adoption, but not necessarily an IT administrator. This role gives them access to the complete Adoption Score experience in the Microsoft 365 admin Center.
 
-The Usage Summary Reports Reader role will have to be assigned through PowerShell cmdlets until it becomes assignable from the Microsoft 365 admin center later in 2020.
-
-To assign the Usage Summary Reports Reader role with PowerShell:
-
-- Run the following PowerShell:
-
-```powershell
-Connect-AzureAD
-Enable-AzureADDirectoryRole -RoleTemplateId '75934031-6c7e-415a-99d7-48dbd49e875e'
-$role=Get-AzureADDirectoryRole -Filter "roleTemplateId eq '75934031-6c7e-415a-99d7-48dbd49e875e'"
-Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
-$u=Get-AzureADUser -ObjectId <user upn>
-Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
-```
-
 ## Capability to opt out of people experiences
 
 You can also opt out of the people experiences area of Adoption Score. If you opt out, no one from your organization will be able to view these metrics, and your organization will be removed from any calculations that involve communication, meetings, teamwork, content collaboration, and mobility. You have to be a Global admin to opt your organization out of the people experiences reports.
@@ -70,7 +55,8 @@ You can also opt out of the people experiences area of Adoption Score. If you op
 To opt out:
 
 1. In the admin center, go to **Settings**  >  **Org Settings** > **Adoption Score**.
-2. Un-check the box that says  **Allow Microsoft 365 usage data to be used for people experiences insights**. To understand how to modify data-sharing settings for Endpoint Analytics in the Intune configuration manager, select **Learn more**.
-3. Select  **Save**.
+2. Select **No users (people experience insights won’t be calculated)**. 
+3. On the **Do you want to remove data from people experiences?** confirmation screen, select **Remove Data**.
+4. Select  **Save**.
 
 :::image type="content" source="../../media/orgsettingspageoptout.png" alt-text="Org settings page where you can opt out from people experiences.":::

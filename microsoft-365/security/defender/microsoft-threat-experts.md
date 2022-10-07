@@ -5,7 +5,8 @@ description: Microsoft Threat Experts provides an extra layer of expertise to Mi
 keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, endpoint attack notification, Endpoint Attack Notification
 search.product: Windows 10
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,10 +16,9 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.technology: m365d
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier1
 ---
 
 # Microsoft Threat Experts in Microsoft 365 overview
@@ -49,6 +49,9 @@ If you already have Microsoft Defender for Endpoint and Microsoft 365 Defender, 
 Once your application is approved, you'll start receiving endpoint attack notifications whenever Threat Experts detect a threat to your environment.
 
 ## Subscribe to Microsoft Threat Experts - Experts on Demand
+
+> [!NOTE]
+> Experts on Demand is not a security incident response service. It’s intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
 
 Contact your Microsoft representative to subscribe to Experts on Demand.  See [Configure Microsoft Threat Experts capabilities](./configure-microsoft-threat-experts.md) for full details.
 

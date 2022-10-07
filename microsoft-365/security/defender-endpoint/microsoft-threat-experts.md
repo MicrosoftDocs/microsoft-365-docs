@@ -4,20 +4,21 @@ ms.reviewer:
 description: Microsoft Threat Experts provides an extra layer of expertise to Microsoft Defender for Endpoint.
 keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, endpoint attack notification, Endpoint Attack Notification, Ask Defender Experts
 search.product: Windows 10
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: dolmont
+author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
+ms.collection: 
+- m365-security
+- tier1
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Threat Experts
@@ -64,6 +65,8 @@ Endpoint Attack Notifications (previously referred to as Microsoft Threat Expert
 - Scope of compromise and as much context as can be quickly delivered to enable fast SOC response.
 
 ## Microsoft Threat Experts - Experts on Demand
+> [!NOTE]
+> Experts on Demand is not a security incident response service. It’s intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
 
 Customers can engage our security experts directly from within Microsoft 365 Defender portal to get their response. Experts provide insights needed to better understand the complex threats affecting your organization, from alert inquiries, potentially compromised devices, root cause of a suspicious network connection, to more threat intelligence regarding ongoing advanced persistent threat campaigns. With this capability, you can:
 

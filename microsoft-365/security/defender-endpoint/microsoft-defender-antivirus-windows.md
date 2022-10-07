@@ -2,21 +2,23 @@
 title: Microsoft Defender Antivirus in Windows
 description: Learn how to manage, configure, and use Microsoft Defender Antivirus, built-in antimalware and antivirus protection.
 keywords: Microsoft Defender Antivirus, windows defender, antimalware, scep, system center endpoint protection, system center configuration manager, virus, malware, threat, detection, protection, security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
+ms.date: 10/03/2022
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
+ms.subservice: mde
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Microsoft Defender Antivirus in Windows
@@ -76,9 +78,9 @@ You'll see the name of your antivirus/antimalware solution on the security provi
 
    - **Passive mode** means Microsoft Defender Antivirus running, but is not the primary antivirus/antimalware product on your device. Passive mode is only available for devices that are onboarded to Microsoft Defender for Endpoint and that meet certain requirements. To learn more, see [Requirements for Microsoft Defender Antivirus to run in passive mode](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode).
 
-   - **EDR Block Mode** means Microsoft Defender Antivirus is running and [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md), a capability in Microsoft Defender for Endpoint, is enabled.
+   - **EDR Block Mode** means Microsoft Defender Antivirus is running and [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md), a capability in Microsoft Defender for Endpoint, is enabled. Check the **ForceDefenderPassiveMode** registry key. If its value is 0, it is running in normal mode; otherwise, it is running in passive mode.
 
-   - **SxS Passive Mode** means Microsoft Defender Antivirus is running alongside another antivirus/antimalware product, and  [limited periodic scanning is used](limited-periodic-scanning-microsoft-defender-antivirus.md).
+   - **SxS Passive Mode** means Microsoft Defender Antivirus is running alongside another antivirus/antimalware product, and [limited periodic scanning is used](limited-periodic-scanning-microsoft-defender-antivirus.md).
 
 > [!TIP]
 > To learn more about the Get-MpComputerStatus PowerShell cmdlet, see the reference article [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).

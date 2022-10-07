@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
@@ -104,7 +104,7 @@ While an applied model processes all files and folder content uploaded to the do
 3. The files and folders you selected will be added to the queue to be processed.
 
     > [!NOTE]
-    > You'll receive a message indicating how long classification might take. If you've selected only files, classification might take up to 30 minutes. If you've selected one or more folders, classification might take up to 24 hours.
+    > If you've selected one or more folders or are migrating a large set of files, classification might take up to 24 hours.
 
 ### Classification Date field
 

@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -22,6 +23,8 @@ description: "Amazon S3 client secret access key sensitive information type enti
 ---
 
 # Amazon S3 client secret access key (preview)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 
@@ -39,7 +42,7 @@ A combination of 40 characters consisting of:
 
 for example: 
 
-`abcdefghijklmnopqrst0123456789/+ABCDEFGH`
+`AWS Secret: abcdefghijklmnopqrst0123456789/+ABCDEFGH;`
 
 ## Checksum
 

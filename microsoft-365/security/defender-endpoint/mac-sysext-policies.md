@@ -4,7 +4,7 @@ description: This topic describes the changes that are must be made in order to 
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, system, extensions, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -13,11 +13,12 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # New configuration profiles for macOS Catalina and newer versions of macOS

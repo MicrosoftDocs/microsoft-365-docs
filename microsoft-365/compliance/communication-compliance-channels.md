@@ -14,8 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
@@ -24,6 +24,8 @@ search.appverid:
 # Detect channel signals with communication compliance
 
 With communication compliance policies, you can choose to scan messages in one or more of the following communication platforms as a group or as standalone sources. Original messages captured across these platforms are retained in the original platform location in accordance with your organization's [retention and hold policies](/microsoft-365/compliance/information-governance). Copies of messages used by communication compliance policies for analysis and investigation are retained for as long as policy is in place, even if users leave your organization and their mailboxes are deleted. When a communication policy is deleted, copies of messages associated with the policy are also deleted.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Microsoft Teams
 
@@ -36,7 +38,7 @@ For private chat and private channels, communication compliance policies support
 | **Share a channel with an internal team** | Communication compliance policies apply to in-scope users and all messages in the shared channel |
 | **Share a channel with an external team** | Communication compliance policies apply to internal in-scope users and messages in the shared channel for the internal organization |
 
-Modern attachments are files sourced from [OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) or [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) sites that are included in Teams messages. Text is automatically extracted from these attachments for automated processing and potential matches with active communication compliance policy conditions and classifiers. There isn't any additional configuration necessary for Modern attachment detection and processing. Text is only extracted for attachments matching policy conditions. Text isn't extracted for attachments for messages with policy matches, even if the attachment also has a policy match.
+Modern attachments are files sourced from [OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) or [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) sites that are included in Teams messages. Text is automatically extracted from these attachments for automated processing and potential matches with active communication compliance policy conditions and classifiers. There isn't any additional configuration necessary for Modern attachment detection and processing. Text is only extracted for attachments matching policy conditions at the time the message was sent. Text isn't extracted for attachments for messages with policy matches, even if the attachment also has a policy match.
 
 Modern attachment scanning is supported for the following file types:
 

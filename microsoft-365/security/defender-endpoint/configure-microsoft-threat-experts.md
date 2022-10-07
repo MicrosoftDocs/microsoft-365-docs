@@ -4,7 +4,7 @@ ms.reviewer:
 description: Register to Microsoft Threats Experts to configure, manage, and use it in your daily security operations and security administration work.
 keywords: Microsoft Threat Experts, managed threat hunting service, MTE, Microsoft managed hunting service
 search.product: Windows 10
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,11 +13,12 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
+ms.collection: 
+- m365-security
+- tier1
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Configure and manage Microsoft Threat Experts capabilities
@@ -95,6 +96,8 @@ You can filter your incidents and alerts if you want to only see the Endpoint At
 ## Subscribe to Microsoft Threat Experts - Experts on Demand
 
 This is available as a subscription service. If you're already a Defender for Endpoint customer, you can contact your Microsoft representative to subscribe to Microsoft Threat Experts - Experts on Demand.
+> [!NOTE]
+> Experts on Demand is not a security incident response service. It’s intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
 
 ## Ask Defender Experts about suspicious cybersecurity activities in your organization
 

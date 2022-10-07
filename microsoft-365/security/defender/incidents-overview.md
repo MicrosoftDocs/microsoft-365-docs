@@ -3,7 +3,8 @@ title: Incident response with Microsoft 365 Defender
 description: Investigate incidents seen across devices, users, and mailboxes in the Microsoft 365 Defender portal.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +16,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 
 # Incident response with Microsoft 365 Defender
@@ -238,7 +238,7 @@ Use this learning module from Microsoft Learn to understand how to use Microsoft
 |![Investigate incidents with Microsoft 365 Defender training icon.](../../media/incidents-overview/m365-defender-address-security-investigation.svg)| Microsoft 365 Defender unifies threat data from multiple services and uses AI to combine them into incidents and alerts. Learn how to minimize the time between an incident and its management for subsequent response and resolution. <p> 27 min - 6 Units |
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/defender-investigate-incidents/)
+> [Start >](/training/modules/defender-investigate-incidents/)
 
 ## Next steps
 

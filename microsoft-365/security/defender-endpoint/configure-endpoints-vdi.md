@@ -4,20 +4,22 @@ description: Deploy the configuration package on virtual desktop infrastructure 
 keywords: configure virtual desktop infrastructure (VDI) device, vdi, device management, configure Microsoft Defender for Endpoint, endpoints
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 04/15/2022
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft 365 Defender
@@ -188,8 +190,8 @@ The following configuration settings are recommended:
   - `%TEMP%*.VHDX`
   - `%Windir%\TEMP*.VHD`
   - `%Windir%\TEMP*.VHDX`
-  - `\\stroageaccount.file.core.windows.net\share**.VHD`
-  -  `\\stroageaccount.file.core.windows.net\share**.VHDX`
+  - `\\storageaccount.file.core.windows.net\share**.VHD`
+  -  `\\storageaccount.file.core.windows.net\share**.VHDX`
 
 #### Real-time Protection
 

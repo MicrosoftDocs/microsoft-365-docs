@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -13,6 +13,7 @@ ms.custom:
 - Adm_O365
 - 'O365E_SetupDirSyncLocalDir'
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:

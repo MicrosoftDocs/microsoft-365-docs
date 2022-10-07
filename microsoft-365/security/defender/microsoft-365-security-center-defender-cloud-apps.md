@@ -2,7 +2,8 @@
 title: Microsoft Defender for Cloud Apps in Microsoft 365 Defender (Preview)
 description: Learn about changes from the Microsoft Defender for Cloud Apps to Microsoft 365 Defender
 keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Cloud Apps
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,7 +18,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.collection: 
-- M365-security-compliance 
+- m365-security 
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ---
 

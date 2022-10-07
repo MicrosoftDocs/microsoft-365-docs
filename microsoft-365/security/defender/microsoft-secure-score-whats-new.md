@@ -2,17 +2,19 @@
 title: What's new in Microsoft Secure Score
 description: Describes what new changes have happened to Microsoft Secure Score in the Microsoft 365 Defender portal.
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal
-ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.service: microsoft-365-security
+ms.subservice: m365d
+ms.author: siosulli
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
+  - tier2
 ms.topic: article
 search.appverid: 
   - MOE150
@@ -20,7 +22,6 @@ search.appverid:
 ms.custom: 
   - seo-marvel-apr2020
   - seo-marvel-jun2020
-ms.technology: m365d
 ---
 
 # What's new in Microsoft Secure Score
@@ -32,6 +33,27 @@ To make Microsoft Secure Score a better representative of your security posture,
 The more improvement actions you take, the higher your Secure Score will be. For more information, see [Microsoft Secure Score](microsoft-secure-score.md).
 
 Microsoft Secure Score can be found at <https://security.microsoft.com/securescore> in the [Microsoft 365 Defender portal](microsoft-365-defender-portal.md).
+
+## September 2022
+
+New Microsoft Defender for Office 365 recommendations for anti-phishing policies are now available as Secure Score improvement actions:
+
+- Set the phishing email level threshold at 2 or higher
+- Enable impersonated user protection
+- Enable impersonated domain protection
+- Ensure that mailbox intelligence is enabled
+- Ensure that intelligence for impersonation protection is enabled
+- Quarantine messages that are detected from impersonated users
+- Quarantine messages that are detected from impersonated domains
+- Move messages that are detected as impersonated users by mailbox intelligence
+- Enable the ‘show first contact safety tip’ option
+- Enable the user impersonation safety tip
+- Enable the domain impersonation safety tip
+- Enable the user impersonation unusual characters safety tip
+
+A New SharePoint Online recommendation is now available as a Secure Score improvement action:
+
+- Sign out inactive users in SharePoint Online
 
 ## August 2022
 

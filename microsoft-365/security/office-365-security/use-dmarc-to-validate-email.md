@@ -13,11 +13,11 @@ search.appverid:
   - MET150
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: Learn how to configure Domain-based Message Authentication, Reporting, and Conformance (DMARC) to validate messages sent from your organization.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Use DMARC to validate email
@@ -35,6 +35,9 @@ DMARC ensures the destination email systems trust messages sent from your domain
 
 > [!TIP]
 > Visit the [Microsoft Intelligent Security Association (MISA)](https://www.microsoft.com/misapartnercatalog) catalog to view third-party vendors offering DMARC reporting for Microsoft 365.
+
+> [!TIP]
+> **Hove you seen our step-by-step guides?** Configuration 1-2-3s and no frills, for admins in a hurry. Visit for the steps to *[enable DMARC Reporting for Microsoft Online Email Routing Addresses (MOERA) and parked Domains](step-by-step-guides/how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains.md)*.
 
 ## How do SPF and DMARC work together to protect email in Microsoft 365?
 

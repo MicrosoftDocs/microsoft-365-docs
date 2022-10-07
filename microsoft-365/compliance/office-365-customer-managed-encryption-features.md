@@ -27,6 +27,8 @@ description: In this article, you'll learn about encryption technologies that yo
 
 For more information about these technologies, see the [Microsoft 365 service descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Azure Rights Management
 
 [Azure Rights Management](/azure/information-protection/what-is-azure-rms) (Azure RMS) is the protection technology used by [Azure Information Protection](/information-protection/understand-explore/what-is-information-protection). It uses encryption, identity, and authorization policies to help secure your files and email across multiple platforms and devices—phones, tablets, and PCs. Information can be protected both within and outside your organization because protection remains with the data. Azure RMS provides persistent protection of all file types, protects files anywhere, supports business-to-business collaboration, and a wide range of Windows and non-Windows devices. Azure RMS protection can also augment [data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention). For more information about which applications and services can use the Azure Rights Management service from Azure Information Protection, see [How applications support the Azure Rights Management service](/information-protection/understand-explore/applications-support).

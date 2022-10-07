@@ -7,8 +7,10 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
-description: "Follow these instructions to create an appointment and assign an employee through the Microsoft Bookings app."
+description: "Follow these instructions to create an appointment and assign an employee."
 ---
 
 # Create a manual booking

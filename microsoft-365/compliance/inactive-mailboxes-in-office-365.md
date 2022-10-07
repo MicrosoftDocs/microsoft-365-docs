@@ -11,8 +11,8 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
+- tier2
 search.appverid: 
 - MOE150
 - MET150
@@ -27,6 +27,8 @@ description: Learn how to retain mailbox content for former employees by turning
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Your organization might need to retain former employees' email after they leave the organization. Depending on your organization's retention requirements, you might need to retain mailbox content for a few months or years after employment ends, or you might need to retain mailbox content indefinitely. Regardless of how long you need to retain email, you can create inactive mailboxes to retain the mailbox of former employees.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## What are inactive mailboxes?
 

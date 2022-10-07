@@ -3,7 +3,7 @@ title: Advanced Hunting API
 ms.reviewer:
 description: Learn to use the advanced hunting API to run advanced queries on Microsoft Defender for Endpoint. Find out about limitations and see an example.
 keywords: apis, supported apis, advanced hunting, query
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Advanced hunting API
@@ -39,7 +42,7 @@ ms.custom: api
 
 1. You can only run a query on data from the last 30 days.
 
-2. The results will include a maximum of 100,000 rows.
+2. The results will include a maximum of 10,000 rows.
 
 3. The number of executions is limited per tenant:
    - API calls: Up to 45 calls per minute, up to 1500 calls per hour.
@@ -65,6 +68,8 @@ Delegated (work or school account)|AdvancedQuery.Read|'Run advanced queries'
 >
 > - The user needs to have 'View Data' AD role
 > - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 ## HTTP request
 

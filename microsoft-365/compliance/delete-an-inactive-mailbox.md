@@ -10,7 +10,9 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection: 
+- purview-compliance
+- tier2
 search.appverid: 
 - MOE150
 - MET150
@@ -31,6 +33,8 @@ An inactive mailbox is used to preserve a former employee's email after they lea
   
 See the [More information](#more-information) section for a description of what happens after holds are removed from an inactive mailbox.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you delete an inactive mailbox
 
 - You must use Exchange Online PowerShell to remove holds from an inactive mailbox. You can't use the Exchange admin center (EAC) or the Microsoft Purview compliance portal for these procedures. For step-by-step instructions to use Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).

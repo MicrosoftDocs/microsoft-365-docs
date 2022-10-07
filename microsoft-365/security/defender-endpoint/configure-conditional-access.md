@@ -2,7 +2,7 @@
 title: Configure Conditional Access in Microsoft Defender for Endpoint
 description: Learn about steps that you need to do in Intune, Microsoft 365 Defender, and Azure to implement Conditional access
 keywords: conditional access, conditional, access, device risk, risk level, integration, intune integration
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Configure Conditional Access in Microsoft Defender for Endpoint
