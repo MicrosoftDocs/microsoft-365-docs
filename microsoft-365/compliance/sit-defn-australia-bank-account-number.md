@@ -24,6 +24,8 @@ description: "Australia bank account number sensitive information type entity de
 
 # Australia bank account number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 six to 10 digits with or without a bank state branch number

@@ -23,6 +23,8 @@ CellTrust SL2 captures mobile communications data and integrates with the leadin
 
 After data is imported to user mailboxes in Microsoft 365, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, Microsoft 365 retention policies, and communication compliance. Using the CellTrust SL2 Data Connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Overview of archiving with the CellTrust SL2 Data Connector
 
 CellTrust's SL2 platform captures communication data from multiple sources. SL2 data sources are either Person-to-Person (P2P) or Application-to-Person (A2P). The process described in this article pertains only to P2P data sources. For all P2P data sources, at least one party in the collaboration is an SL2 user who is subscribed to the SL2 service. The following overview explains the process of using the CellTrust SL2 Data Connector in Microsoft 365.

@@ -28,6 +28,8 @@ description: "Prepare for and deploy the Microsoft Purview Extension."
 
 Use these procedures to roll out the Microsoft Purview Extension.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
 To use Microsoft Purview Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP

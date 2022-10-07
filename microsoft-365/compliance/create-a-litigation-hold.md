@@ -37,6 +37,8 @@ Here's what happens when you create a Litigation hold.
 
 - Items in the user's primary and the archive mailboxes are retained
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Assign an Exchange Online Plan 2 license
 
 To place an Exchange Online mailbox on Litigation hold, it must be assigned an Exchange Online Plan 2 license. If a mailbox is assigned an Exchange Online Plan 1 license, you would have to assign it a separate Exchange Online Archiving license to place it on hold.

@@ -41,6 +41,8 @@ With Office 365, several encryption capabilities are available by default. Addit
 |Files are shared in online meetings and IM conversations (Microsoft Teams)|When people are working with files using Microsoft Teams, TLS is used for the connection. This is built into Office 365 automatically. Microsoft Teams does not currently support inline rendering of encrypted email. To prevent encrypted email from landing in Microsoft Teams as encrypted, see [Message Encryption FAQ](./ome-faq.yml#can-i-automatically-remove-encryption-on-incoming-and-outgoing-mail-).|
 |
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Additional information
 
 To learn more about file protection solutions that include encryption options, see [File Protection Solutions in Office 365](https://www.microsoft.com/download/details.aspx?id=55523).

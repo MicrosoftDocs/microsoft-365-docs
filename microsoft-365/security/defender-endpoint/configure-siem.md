@@ -69,7 +69,7 @@ Using the Microsoft 365 Defender Add-on for Splunk that supports:
 - Ingesting Microsoft Defender for Endpoint alerts
 - Updating alerts in Microsoft Defender for Endpoint from within Splunk
 
-For more information on the Microsoft 365 Defender Add-on for Splunk, see [splunkbase](https://splunkbase.splunk.com/app/4959/).
+For more information on the Microsoft 365 Defender Add-on for Splunk, see [splunkbase](https://splunkbase.splunk.com/app/6207/).
 
 ### Datadog
 

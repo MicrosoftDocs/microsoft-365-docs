@@ -31,6 +31,8 @@ If a message was encrypted using Microsoft Purview Advanced Message Encryption, 
 > [!NOTE]
 > To guarantee that the ability to track and revoke OME messages is available, you must add a custom branding template. See [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md)
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Encrypted emails that you can revoke
 
 Admins and message senders can revoke encrypted emails if the recipient received a link-based, branded encrypted email. If the recipient received a native inline experience in a supported Outlook client, then you can't revoke the message.

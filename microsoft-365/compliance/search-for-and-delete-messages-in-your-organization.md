@@ -34,6 +34,8 @@ You can use the Content search feature to search for and delete email messages f
 > [!TIP]
 > If your organization has a Defender for Office 365 Plan 2 subscription, we recommend using the procedure detailed in [Remediate malicious email delivered in Office 365](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365), rather than following the procedure described in this article.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
 - The search and purge workflow described in this article doesn't delete chat messages or other content from Microsoft Teams. If the Content search that you create in Step 2 returns items from Microsoft Teams, those items won't be deleted when you purge items in Step 3. To search for and delete chat messages, see [Search and purge chat messages in Teams](search-and-delete-Teams-chat-messages.md).

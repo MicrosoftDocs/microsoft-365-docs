@@ -27,6 +27,8 @@ This topic shows you how to configure IRM to use an AD RMS server. For informati
 
 To learn more about IRM in Exchange Online, see [Information Rights Management in Exchange Online](information-rights-management-in-exchange-online.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## What do you need to know before you begin?
 
 - Estimated time to complete this task: 30 minutes

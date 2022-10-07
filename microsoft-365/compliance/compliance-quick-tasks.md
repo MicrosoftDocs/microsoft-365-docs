@@ -26,6 +26,8 @@ This article is also helpful if you're figuring out how best to manage risks, pr
 
 After you've completed these basic compliance tasks, consider expanding compliance coverage in your organization by implementing additional Microsoft Purview solutions.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Task 1: Configure compliance permissions
 
 It's important to manage who in your organization has access to the Microsoft Purview compliance portal to view content and perform management tasks. Microsoft 365 provides administrative roles specific to compliance and for using the tools included in the Microsoft Purview compliance portal.

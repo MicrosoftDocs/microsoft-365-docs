@@ -26,6 +26,8 @@ When configuring the search query when creating a [collection](collections-overv
 
 ![Use keywords and conditions to narrow the results of a search.](../media/SearchQueryBox.png)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Keyword searches
 
 Type a keyword query in the **Keywords** box in the search query. You can specify keywords, email message properties, such as sent and received dates, or document properties, such as file names or the date that a document was last changed. You can use more complex queries that use a Boolean operator, such as **AND**, **OR**, **NOT**, and **NEAR**. You can also search for sensitive information (such as social security numbers) in documents in SharePoint and OneDrive (not in email messages), or search for documents that have been shared externally. If you leave the **Keywords** box empty, all content located in the specified content locations is in the search results.

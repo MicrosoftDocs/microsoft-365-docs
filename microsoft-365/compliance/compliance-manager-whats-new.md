@@ -24,6 +24,8 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 **In this article:** Learn about recent updates in Compliance Manager.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## August 2022
 
 Compliance Manager has published the following new assessment template:

@@ -80,6 +80,8 @@ There are two different methods for automatically applying a sensitivity label t
 > For more information, see [Default labels and policies for Microsoft Purview Information Protection](mip-easy-trials.md).
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Compare auto-labeling for Office apps with auto-labeling policies
 
 Use the following table to help you identify the differences in behavior for the two complementary automatic labeling methods:

@@ -29,6 +29,8 @@ Using eDiscovery (Premium) custodian communications, organizations can manage th
 
 The article outlines the steps in the hold notification workflow.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Specify communication details
 
 The first step is to specify the appropriate details for legal hold notices or other custodian communications.

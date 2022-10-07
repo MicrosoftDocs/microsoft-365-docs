@@ -23,6 +23,8 @@ Use a native connector in the Microsoft Purview compliance portal to import and 
 
 After ICE chat data is stored in user mailboxes, you can apply Microsoft Purview features such as litigation hold, eDiscovery, archiving, auditing, communication compliance, and Microsoft 365 retention policies to ICE Chat data. For example, you can search ICE Chat messages using content search or associate the mailbox that contains the ICE Chat data with a custodian in an eDiscovery (Premium) case. Using an ICE Chat connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Overview of archiving ICE Chat data
 
 The following overview explains the process of using a connector to archive ICE chat data in Microsoft 365.

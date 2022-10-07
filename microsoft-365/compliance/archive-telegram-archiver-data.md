@@ -23,6 +23,8 @@ Use the TeleMessage connector in the Microsoft Purview compliance portal to impo
 
 After Telegram Archiver connector data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, Content search, and Microsoft 365 retention policies to Telegram communication data. For example, you can search Telegram communication using Content Search or associate the mailbox that contains the Telegram Archiver connector data with a custodian in an eDiscovery (Premium) case. Using a Telegram Archiver connector to import and archive data in Microsoft 365 can help your organization stay compliant with corporate governance regulations and regulatory policies.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Overview of archiving Telegram communications data
 
 The following overview explains the process of using a connector to archive Telegram communications data in Microsoft 365.

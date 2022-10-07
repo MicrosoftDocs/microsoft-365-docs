@@ -29,6 +29,8 @@ Cloud attachments are links to documents that are typically stored in SharePoint
 
 - Collecting the version of the document at the time it was shared in a cloud attachment.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Collecting cloud attachments
 
 When you create a draft collection and the search results contain items that include cloud attachments, you have to the option of collecting the target of the cloud attachment when you commit the draft collection to a review set. When you select this option, eDiscovery (Premium) adds the documents that are linked to in the cloud attachment to the review set. This allows you to review the target documents and determine if the document is relevant to your case or investigation.

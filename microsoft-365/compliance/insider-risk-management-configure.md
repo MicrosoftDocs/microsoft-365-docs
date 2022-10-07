@@ -30,6 +30,8 @@ Use insider risk management policies to identify risky activities and management
 
 For more information about how insider risk policies can help you manage risk in your organization, see [Learn about insider risk management](insider-risk-management.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Subscriptions and licensing
 
 Before you get started with insider risk management, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use insider risk management, your organization must have one of the following subscriptions or add-ons:
