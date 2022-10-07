@@ -25,7 +25,7 @@ ms.custom: trial-playbook
 
 **Welcome to the Defender for Business user trial guide!**
 
-This guide will help you set-up and use key features of your 30-day free trial. Using recommendations in this article from the Microsoft Defender team, learn how Defender for Business can help elevate your security from traditional antivirus protection to next-generation protection, endpoint detection and response, and vulnerability management.
+This guide will help you set-up and use key features of your free trial. Using recommendations in this article from the Microsoft Defender team, learn how Defender for Business can help elevate your security from traditional antivirus protection to next-generation protection, endpoint detection and response, and vulnerability management.
 
 ## What is Defender for Business?
 
@@ -68,7 +68,7 @@ Defender for Business was designed to save small and medium-sized businesses tim
 #### Setup wizard flow: what to expect
 
 > [!TIP]
-> **Using the setup wizard is optional.** (See [What happens if I don't use the wizard?](mdb-use-wizard.md#what-happens-if-i-dont-use-the-wizard)). If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can complete the setup and configuration process on your own. See [Step 4](#step-4-set-up-and-configure-defender-for-business).
+> **Using the setup wizard is optional.** (See [What happens if I don't use the wizard?](mdb-use-wizard.md#what-happens-if-i-dont-use-the-wizard)). If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can complete the setup and configuration process on your own. See [Step 4: Set up and configure Defender for Business](#step-4-set-up-and-configure-defender-for-business).
 
 1. **[Assign user permissions](mdb-roles-permissions.md#view-or-edit-role-assignments)**. Grant your security team access to the Microsoft 365 Defender portal.
 
@@ -89,7 +89,7 @@ If you choose not to use the setup wizard, see the following diagram that depict
 
 [:::image type="content" source="media/mdb-setup-process-2.png" alt-text="Setup and configuration process for Defender for Business.":::](mdb-setup-configuration.md)
 
-If you used the setup wizard but you need to onboard more devices, such as non-Windows devices, go directly to step 4 in the following procedure:
+If you used the setup wizard but you need to onboard more devices, such as non-Windows devices, go directly to [step 4](mdb-onboard-devices.md) in the following procedure:
 
 1. **[Review the requirements](mdb-requirements.md)** to configure and use Defender for Business.
 
@@ -118,15 +118,19 @@ Security policies to review and configure include:
 
 ## Start using Defender for Business
 
-In the next 30 days, here’s guidance from the product team on key features to try:
+For the next 30 days, here’s guidance from the product team on key features to try:
 
-- [Use your Microsoft Defender Vulnerability Management dashboard](#use-the-defender-vulnerability-management-dashboard) 
-- [View and respond to detected threats](#view-and-respond-to-detected-threats)
-- [Review security policies](#review-security-policies)
-- [Prepare for ongoing security management](#prepare-for-ongoing-security-management)
-- [Try the Document Drops Backdoor tutorial](#try-the-document-drops-backdoor-tutorial)
+1. [Use your Microsoft Defender Vulnerability Management dashboard](#1-use-the-defender-vulnerability-management-dashboard). 
 
-### Use the Defender Vulnerability Management dashboard
+2. [View and respond to detected threats](#2-view-and-respond-to-detected-threats).
+
+3. [Review security policies](#3-review-security-policies).
+
+4. [Prepare for ongoing security management](#4-prepare-for-ongoing-security-management).
+
+5. [Try the Document Drops Backdoor tutorial](#5-try-the-document-drops-backdoor-tutorial).
+
+### 1. Use the Defender Vulnerability Management dashboard
 
 Defender for Business includes a Defender Vulnerability Management dashboard that's designed to save your security team time and effort. Learn how to [use your Defender Vulnerability Management dashboard](mdb-view-tvm-dashboard.md).
 
@@ -134,7 +138,7 @@ Defender for Business includes a Defender Vulnerability Management dashboard tha
 - View your top security recommendations, such as address impaired communications with devices, turn on firewall protection, or update Microsoft Defender Antivirus definitions.
 - View remediation activities, such as any files that were sent to quarantine, or vulnerabilities found on devices.
 
-### View and respond to detected threats
+### 2. View and respond to detected threats
 
 As threats are detected and alerts are triggered, incidents are created. Your organization's security team can view and manage incidents in the Microsoft 365 Defender portal. Learn how to [view and respond to detected threats](mdb-view-manage-incidents.md). 
 
@@ -143,13 +147,13 @@ As threats are detected and alerts are triggered, incidents are created. Your or
 - [Review mediation actions in the Action Center](mdb-review-remediation-actions.md).
 - [View and use reports](mdb-reports.md).
 
-### Review security policies
+### 3. Review security policies
 
 In Defender for Business, security settings are configured through policies that are applied to devices. Defender for Business includes pre-configured policies to help protect your company's devices as soon as they are onboarded, safeguarding your organization against identity, device, application, and document security threats. 
 
 Learn how to [review security policies](mdb-view-edit-create-policies.md).
 
-### Prepare for ongoing security management
+### 4. Prepare for ongoing security management
 
 New security events, such as threat detection on a device, adding new devices, and employees joining or leaving the organization, will require you to manage security. In Defender for Business, there are many ways for you to manage device security.
 
@@ -158,7 +162,7 @@ New security events, such as threat detection on a device, adding new devices, a
 - [Onboard a device to Defender for Business](mdb-manage-devices.md#onboard-a-device).
 - [Offboard a device from Defender for Business](mdb-manage-devices.md#offboard-a-device).
 
-### Try the Document Drops Backdoor tutorial
+### 5. Try the Document Drops Backdoor tutorial
 
 Quickly see how Defender for Business works by trying a tutorial.
 
@@ -170,8 +174,10 @@ Simulate an attack that introduces file-based malware on a test device. The tuto
 To access the tutorial, do the following:
 
 1. Go to the [Microsoft 365 Defender portal](https://security.microsoft.com) and sign in.
+
 2. In the navigation pane, under **Endpoints**, choose **Tutorials**.
-3. Choose Document Drops Backdoor.
+
+3. Choose **Document Drops Backdoor**.
 
 ## Additional resources
 
