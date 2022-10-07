@@ -23,6 +23,9 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 # Get started with insider risk management settings
 
+>[!IMPORTANT]
+>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
+
 Insider risk management settings apply to all insider risk management policies, regardless of the template you choose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management pages. These settings control policy components for the following areas:
 
 - [Privacy](#privacy)
