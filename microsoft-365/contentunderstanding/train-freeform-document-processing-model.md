@@ -1,5 +1,5 @@
 ---
-title: Train a freeform document processing model in Microsoft SharePoint Syntex
+title: Train a freeform document processing model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,12 +13,12 @@ ms.collection:
     - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
-description: Learn how to train a freeform document processing model in SharePoint Syntex.
+description: Learn how to train a freeform document processing model in Microsoft Syntex.
 ---
 
-# Train a freeform document processing model in Microsoft SharePoint Syntex
+# Train a freeform document processing model in Microsoft Syntex
 
-Follow the instructions in [Create a model in SharePoint Syntex](create-syntex-model.md) to create a freeform document processing model. Then use this article to train your model.
+Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a freeform document processing model. Then use this article to train your model.
 
 To train a freeform document processing model, follow these steps:
 
@@ -95,21 +95,21 @@ Two flows are available to process a selected file or batch of files in a librar
 
 ### Classification Date field
 
-When a SharePoint Syntex custom model is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
+When a Syntex custom model is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
 
-When a model is stamped with the **Classification Date**, you can use the **Send an email after SharePoint Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in the SharePoint document library.
+When a model is stamped with the **Classification Date**, you can use the **Send an email after Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in the SharePoint document library.
 
 To run the flow:
 
 1. Select a file, and then select **Integrate** > **Power Automate** > **Create a flow**.
 
-2. On the **Create a flow** panel, select **Send an email after SharePoint Syntex processes a file**.
+2. On the **Create a flow** panel, select **Send an email after Syntex processes a file**.
 
     ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
 
 ## See also
   
-[Create a model in SharePoint Syntex](create-syntex-model.md)
+[Create a model in Microsoft Syntex](create-syntex-model.md)
 
 [Power Automate documentation](/power-automate/)
 
