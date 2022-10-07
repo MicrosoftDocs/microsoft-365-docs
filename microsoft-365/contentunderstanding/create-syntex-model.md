@@ -1,5 +1,5 @@
 ---
-title: Create an enterprise model in Microsoft SharePoint Syntex
+title: Create an enterprise model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,20 +12,20 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create a custom or prebuilt model with SharePoint Syntex.
+description: Learn how to create a custom or prebuilt model with Microsoft Syntex.
 ---
 
-# Create an enterprise model in Microsoft SharePoint Syntex
+# Create an enterprise model in Microsoft Syntex
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-An enterprise model is created and trained in the [content center](create-a-content-center.md), and can be discovered by others to use. Whether you want to create a custom model or use a prebuilt model, you can do so from any of these places in SharePoint Syntex:
+An enterprise model is created and trained in the [content center](create-a-content-center.md), and can be discovered by others to use. Whether you want to create a custom model or use a prebuilt model, you can do so from any of these places in Microsoft Syntex:
 
 - From the **Models** library
 - From the [content center](create-a-content-center.md) home page
-- From any document library in a site where SharePoint Syntex has been activated
+- From any document library in a site where Syntex has been activated
 
-For this article, we start in the **Models** library. For information about the different model types, see [Overview of model types in SharePoint Syntex](model-types-overview.md).
+For this article, we start in the **Models** library. For information about the different model types, see [Overview of model types in Syntex](model-types-overview.md).
 
 ## Create a model
 

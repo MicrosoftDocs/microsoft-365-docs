@@ -1,5 +1,5 @@
 ---
-title: Create a model on a local SharePoint site with Microsoft SharePoint Syntex
+title: Create a model on a local SharePoint site with Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,19 +12,19 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create a local model on a local SharePoint site with SharePoint Syntex.
+description: Learn how to create a local model on a local SharePoint site with Microsoft Syntex.
 ---
 
-# Create a model on a local SharePoint site with Microsoft SharePoint Syntex
+# Create a model on a local SharePoint site with Microsoft Syntex
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All trained models</sup>
 
-SharePoint Syntex provides an option to create and train models locally on your own SharePoint site. These models can be used only on the site where they're created. 
+Microsoft Syntex provides an option to create and train models locally on your own SharePoint site. These models can be used only on the site where they're created. 
 
 > [!NOTE]
 > If you want to make your model discoverable and available for other users, you need to create an *enterprise model*. An enterprise model is a model that is created and trained in the [content center](create-a-content-center.md).  
 
-By activating document classification and extraction on your SharePoint site, SharePoint Syntex lets you classify files in document libraries, extract information from new files, and automate activities based on extracted information.
+By activating document classification and extraction on your SharePoint site, Syntex lets you classify files in document libraries, extract information from new files, and automate activities based on extracted information.
 
 When you activate local model creation, the following lists and libraries will be added to your site:
 
@@ -43,7 +43,7 @@ This feature is available for all [model types](model-types-overview.md).
 
     ![Screenshot of a SharePoint document library with the Classify and extract option highlighted.](../media/content-understanding/local-model-classify-and-extract-option.png) 
 
-2. The first time you use this feature, you're activating SharePoint Syntex on your site. You'll see the following message.
+2. The first time you use this feature, you're activating Syntex on your site. You'll see the following message.
 
     ![Screenshot of the Activate document classification and extraction infomation page.](../media/content-understanding/local-model-first-run-activate-message.png) 
 

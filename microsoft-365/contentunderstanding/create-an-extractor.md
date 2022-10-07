@@ -1,5 +1,5 @@
 ---
-title: Create an extractor in Microsoft SharePoint Syntex
+title: Create an extractor in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,10 +12,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create an extractor in Microsoft SharePoint Syntex.
+description: Learn how to create an extractor in Microsoft Syntex.
 ---
 
-# Create an extractor in Microsoft SharePoint Syntex
+# Create an extractor in Microsoft Syntex
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
@@ -182,4 +182,4 @@ If you have duplicate entities and want to extract only one value or a certain n
 
 [Leverage term store taxonomy when creating an extractor](leverage-term-store-taxonomy.md)
 
-[SharePoint Syntex Accessibility Mode](accessibility-mode.md)
+[Syntex Accessibility Mode](accessibility-mode.md)

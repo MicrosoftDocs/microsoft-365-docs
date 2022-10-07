@@ -1,5 +1,5 @@
 ---
-title: Train a structured document processing model in Microsoft SharePoint Syntex
+title: Train a structured document processing model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,10 +13,10 @@ ms.collection:
     - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
-description: Learn how to train a structured document processing model in SharePoint Syntex.
+description: Learn how to train a structured document processing model in Microsoft Syntex.
 ---
 
-# Train a structured document processing model in Microsoft SharePoint Syntex
+# Train a structured document processing model in Microsoft Syntex
 
 <!---
 </br>
@@ -26,10 +26,10 @@ description: Learn how to train a structured document processing model in ShareP
 </br>
 
 
-Using [AI Builder](/ai-builder/overview)—a feature in Microsoft Power Apps—SharePoint Syntex users can create an [**Extract by layout**](form-processing-overview.md) model directly from a SharePoint document library. 
+Using [AI Builder](/ai-builder/overview)—a feature in Microsoft Power Apps—Syntex users can create an [**Extract by layout**](form-processing-overview.md) model directly from a SharePoint document library. 
 --->
 
-Follow the instructions in [Create a model in SharePoint Syntex](create-syntex-model.md) to create a structured document processing model. Then use this article to train your model.
+Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a structured document processing model. Then use this article to train your model.
 
 To train a structured document processing model, follow these steps:
 
@@ -37,54 +37,6 @@ To train a structured document processing model, follow these steps:
  - [Step 2: Tag fields and tables](#step-2-tag-fields-and-tables)
  - [Step 3: Train and publish your model](#step-3-train-and-publish-your-model)
  - [Step 4: Use your model](#step-4-use-your-model)
-
-<!---
-## Create an Extract by layout model
-
-The first step in creating an **Extract by layout** model is to name the model, define the new content type, and create a new document library view for it.
-
-1. From the document library, select the **Automate** menu, select **AI Builder**, and then select **Create a model to process forms**.
-
-    ![Screenshot showing the Automate menu and the Create a model to process forms option.](../media/content-understanding/create-ai-builder-model2.png)
-
-2. In the **Create a model to process forms** panel, in the **Name** field, type a name for your model (for example, *Purchase Orders*).
-
-    ![Screenshot showing the Create a model to process forms panel.](../media/content-understanding/new-form-model2.png) 
-
-3. You can now automatically extract and save information from a *collection* of structured files that share a similar layout—such as invoices or tax documents—that are in a SharePoint document library. This lets you compose several models into a single model and extract specific table item information.
-
-   The collection name is saved to a dedicated column in the document library where the model is applied, which allows you to distinguish different file layouts processed by the same model.
-
-   In addition, the extracted table information is saved to a specified list and associated with the uploaded file for easy viewing or for additional business process automation.
-
-   To extract table information to an associated list:
-
-     1. In the **Extract info from tables?** section, select **Yes**.
-
-      ![Screenshot showing the Extract info from tables section on the Create a model to process forms panel.](../media/content-understanding/extract-info-from-tables.png) 
-
-     2. In the **Where should we save table info?** section:
- 
-        - If you select **A new list** (the default setting), a suggested name is automatically provided in the **New list name** box. You can modify the name if you want to. If you want to show the list in the site navigation, select the **Show in site navigation** checkbox.
-
-        - If you select **An existing list**, in the **Selected list** box, choose the list you want to use.
-
-4. When you create an **Extract by layout** model, you create a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint content types are managed through the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>.
-
-   To map this model to an existing content type in the SharePoint content types gallery, select **Advanced settings**.
-
-    ![Screenshot showing the Advanced settings in the Create a model to process forms panel.](../media/content-understanding/new-form-model-advanced-settings.png) 
-
-   1. In the <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">Content type gallery</a>, choose whether to create a new content type or to use an existing one. 
-
-   2. To use an existing content type, select **Select one**, and choose a content type from the list.
-
-   3. Your model creates a new view in your document library for your extracted data. If you don't want it to be the default view, in the **Library view for this model** section, clear the **Set the view as default** checkbox.
-
-   4. To apply a retention label to your files, in the **Retention label** section, select the retention label you want to use.
-
-5. Select **Create**.
---->
 
 ## Step 1: Add and analyze documents
 
@@ -156,19 +108,19 @@ Two flows are available to process a selected file or batch of files in a librar
 
 When any custom model is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
 
-When a model is stamped with the **Classification Date**, you can use the **Send an email after SharePoint Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in the SharePoint document library.
+When a model is stamped with the **Classification Date**, you can use the **Send an email after Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in the SharePoint document library.
 
 To run the flow:
 
 1. Select a file, and then select **Integrate** > **Power Automate** > **Create a flow**.
 
-2. On the **Create a flow** panel, select **Send an email after SharePoint Syntex processes a file**.
+2. On the **Create a flow** panel, select **Send an email after Syntex processes a file**.
 
     ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
 
 ## See also
 
-[Create a model in SharePoint Syntex](create-syntex-model.md)
+[Create a model in Microsoft Syntex](create-syntex-model.md)
 
 [Power Automate documentation](/power-automate/)
 
