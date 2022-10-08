@@ -24,22 +24,25 @@ The Microsoft 365 Advanced Data Residency add-on ("ADR") provides eligible custo
 
 The workloads and related commitments are detailed in their related pages, which includes:
 
-- Exchange Online (EXO) ***[LINK TO ADR COMMITMENT SECTION OF EXO PAGE]***
-- SharePoint Online and OneDrive (ODSP) ***[LINK TO ADR COMMITMENT SECTION OF ODSP PAGE]***
-- Microsoft Teams ***[LINK TO ADR COMMITMENT SECTION OF TEAMS PAGE]***
-- Microsoft Defender for Office (MDO P1) ***[LINK TO ADR COMMITMENT SECTION OF MPO P1 PAGE]***
-- Office for the Web (Office Online) ***[LINK TO ADR COMMITMENT SECTION OF OFFICE OF THE WEB PAGE]***
-- Viva Connections ***[LINK TO ADR COMMITMENT SECTION OF VIVA CONN. PAGE]***
-- Viva Topics ***[LINK TO ADR COMMITMENT SECTION OF VIVA TOPICS PAGE]***
+- Exchange Online (EXO): see the [ADR Commitment section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide&branch=kvice-ADR-new#option-3-advanced-data-residency-add-on) of the EXO page for details.
+- SharePoint Online and OneDrive (ODSP): see the [ADR Commitment section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-spo?view=o365-worldwide&branch=kvice-ADR-new#data-residency-commitments-available) of the ODSP page for details.
+- Microsoft Teams: see the [ADR Commitment section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-teams?view=o365-worldwide&branch=kvice-ADR-new#data-residency-commitments-available) of the Microsoft Teams page for details.
+- Microsoft Defender for Office (MDO P1): see the [ADR Commitments section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-mdo-p1?view=o365-worldwide&branch=kvice-ADR-new#data-residency-commitments-available) of the MDO P1 page for details.
+- Office for the Web (Office Online): see the [ADR Commentment section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-office-for-web?view=o365-worldwide&branch=kvice-ADR-new#data-residency-commitments-available) of the Office for the Web page for details.
+- Viva Connections: see the [ADR Commitment section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-viva-connections?view=o365-worldwide&branch=kvice-ADR-new#data-residency-commitments-available) of the Viva Connections page for details.
+- Viva Topics: see the [ADR Commitment section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-viva-topics?view=o365-worldwide&branch=kvice-ADR-new#data-residency-commitments-available) of the Viva Topics page for details.
 - Microsoft Purview
-  - Audit (Standard) ***[LINK TO THIS ADR COMMITMENT SECTION OF PURVIEW PAGE]***
-  - Audit (Premium) ***[LINK TO ADR COMMITMENT SECTION OF EXO PAGE]***
-  - Data Retention ***[LINK TO ADR COMMITMENT SECTION OF EXO PAGE]***
-  - Records Management ***[LINK TO ADR COMMITMENT SECTION OF EXO PAGE]***
-  - Sensitivity Labels ***[LINK TO ADR COMMITMENT SECTION OF EXO PAGE]***
-  - Data Loss Prevention ***[LINK TO ADR COMMITMENT SECTION OF EXO PAGE]***
-  - Office Message Encryption ***[LINK TO ADR COMMITMENT SECTION OF EXO PAGE]***
-  - Information Barriers ***[LINK TO ADR COMMITMENT SECTION OF EXO PAGE]***
+  - Audit (Standard): see the [related Data Residency commitments section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-purview?view=o365-worldwide&branch=kvice-ADR-new#data-residency-commitments-available) for details
+  - Audit (Premium): see the [related Data Residency commitments section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-purview?view=o365-worldwide&branch=kvice-ADR-new#data-residency-commitments-available-1) for details
+  - Data Retention: see the [related Data Residency commitments section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-purview?view=o365-worldwide&branch=kvice-ADR-new#data-residency-commitments-available-2) for details
+  - Records Management: see the [related Data Residency commitments section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-purview?view=o365-worldwide&branch=kvice-ADR-new#data-residency-commitments-available-3) for details
+  - Sensitivity Labels: see the [related Data Residency commitments section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-purview?view=o365-worldwide&branch=kvice-ADR-new#data-residency-commitments-available-4) for details
+  - Data Loss Prevention: see the [related Data Residency commitments section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-purview?view=o365-worldwide&branch=kvice-ADR-new#data-residency-commitments-available-5) for details
+  - Office Message Encryption: see the [related Data Residency commitments section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-purview?view=o365-worldwide&branch=kvice-ADR-new#data-residency-commitments-available-6) for details
+  - Information Barriers: see the [related Data Residency commitments section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-purview?view=o365-worldwide&branch=kvice-ADR-new#data-residency-commitments-available-7) for details
+
+> [!NOTE]
+> If you have purchased the Multi-Geo subscription for your tenancy, then your customer data will be stored at rest in more than one Geo based on your configuration.
 
 ## Licensing and Purchase
 
@@ -75,8 +78,8 @@ In addition to a notification posted to the Message Center upon completion, the 
 
 #### Migration Expectation
 
-To the best of its ability, Microsoft intends to complete an Advanced Data Residency add-on customer migration within twelve (12) months from the time the customer administrator has signaled they are ready for the migration, meaning at the time of purchase confirmation of ADR.
-In some instances, for significantly larger or more complex customers, or for situations outside of Microsoft's control we may require additional time to complete the migration. In those instances, Microsoft will do what is within its power to complete the migration as close to the intended timeline as possible.
+Microsoft will use reasonable efforts to try to complete an Advanced Data Residency add-on customer migration within twelve (12) months from the time the customer administrator has signaled they are ready for migration.
+However, Microsoft may not be able to complete the migration within this timeframe for all customers. For example, significantly larger or more complex customers or situations outside of Microsoft’s control may require additional time to complete the migration.
 Advanced Data Residency add-on customers also receive prioritized migration services for their tenants over the legacy Move Program migration option.
 
 #### During and After your Migration
