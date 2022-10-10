@@ -15,7 +15,7 @@ ms.custom:
   - goldenconfig
 ms.collection: 
   - M365-identity-device-management
-  - M365-security-compliance
+  - m365-security
   - m365solution-identitydevice
   - m365solution-overview
   - m365solution-zero-trust
@@ -84,7 +84,7 @@ Watch this video for a quick overview of identity and device access configuratio
 
 ## Intended audience
 
-These recommendations are intended for enterprise architects and IT professionals who are familiar with Microsoft 365 cloud productivity and security services, which includes Azure AD (identity), Microsoft Intune (device management), and Microsoft Purview Information Protection (data protection).
+These recommendations are intended for enterprise architects and IT professionals who are familiar with Microsoft 365 cloud productivity and security services, which include Azure AD (identity), Microsoft Intune (device management), and Microsoft Purview Information Protection (data protection).
 
 ### Customer environment
 
@@ -175,12 +175,6 @@ This guidance shows you how to create recommended policies to enforce the use of
 This guidance shows you how to implement a set of policies to protect access to Microsoft 365 cloud services, including Microsoft Teams, Exchange, SharePoint, and OneDrive. In addition to implementing these policies, we recommend you also raise the level of protection for your tenant using these resources:
 
 - [Configure your tenant for increased security](tenant-wide-setup-for-increased-security.md)
-
-  Recommendations that apply to starting point security for your tenant.
-
-- [Security roadmap: Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md)
-
-  Recommendations that include logging, data governance, admin access, and threat protection.
 
 ### Windows 11 or Windows 10 with Microsoft 365 Apps for enterprise
 

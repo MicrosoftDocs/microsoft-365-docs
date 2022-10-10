@@ -18,15 +18,17 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- remotework
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
 ---
 
 # Case study - Contoso quickly configures an inappropriate text policy for Microsoft Teams, Exchange, and Yammer communications
+
+>[!IMPORTANT]
+>Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy.
 
 [Microsoft Purview Communication Compliance](/microsoft-365/compliance/communication-compliance) helps minimize communication risks by helping you detect, capture, and act on messages with inappropriate text in your organization. inappropriate text may include profanity, threats, harassment, and inappropriate images. Pre-defined and custom [policies](/microsoft-365/compliance/communication-compliance-policies) allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can [investigate alerts](/microsoft-365/compliance/communication-compliance-investigate-remediate#investigate-alerts) for email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate [remediation actions](/microsoft-365/compliance/communication-compliance-investigate-remediate#remediate-alerts) to make sure they're compliant with your organization's message standards.
 
@@ -38,6 +40,8 @@ This case study will cover the basics for quickly configuring a communication co
 - [Step 2: Accessing communication compliance](#step-2-accessing-communication-compliance)
 - [Step 3: Configuring prerequisites and creating a communication compliance policy](#step-3-configuring-prerequisites-and-creating-a-communication-compliance-policy)
 - [Step 4: Investigate and remediate alerts](#step-4-investigate-and-remediate-alerts)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Planning for communication compliance
 

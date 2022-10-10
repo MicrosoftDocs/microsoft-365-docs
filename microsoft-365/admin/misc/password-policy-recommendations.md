@@ -7,9 +7,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- ContentEngagementFY23
+- scotvorg
 - highpri
 - Adm_O365
 - Adm_NonTOC
@@ -43,6 +45,8 @@ For more information about Microsoft 365 passwords, see:
 [Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)
 
 [Resend a user's password - Admin Help](../add-users/resend-user-password.md) (article)
+
+[Time to rethink mandatory password changes](https://go.microsoft.com/fwlink/p/?linkid=861018).
   
 ## Understanding password recommendations
 
@@ -58,7 +62,7 @@ Good password practices fall into a few broad categories:
 
 The primary goal of a more secure password system is password diversity. You want your password policy to contain lots of different and hard to guess passwords. Here are a few recommendations for keeping your organization as secure as possible.
 
-- Maintain an eight-character minimum length requirement
+- Maintain a 14-character minimum length requirement
 
 - Don't require character composition requirements. For example, \*&amp;(^%$
 
@@ -88,7 +92,7 @@ These are some of the most commonly used password management practices, but rese
   
 ### Password expiration requirements for users
 
-Password expiration requirements do more harm than good, because these requirements make users select predictable passwords, composed of sequential words and numbers that are closely related to each other. In these cases, the next password can be predicted based on the previous password. Password expiration requirements offer no containment benefits because cybercriminals almost always use credentials as soon as they compromise them. Check out [Time to rethink mandatory password changes](https://go.microsoft.com/fwlink/p/?linkid=861018) for more info.
+Password expiration requirements do more harm than good, because these requirements make users select predictable passwords, composed of sequential words and numbers that are closely related to each other. In these cases, the next password can be predicted based on the previous password. Password expiration requirements offer no containment benefits because cybercriminals almost always use credentials as soon as they compromise them. 
   
 ### Minimum password length requirements
 

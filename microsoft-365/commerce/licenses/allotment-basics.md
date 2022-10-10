@@ -8,10 +8,11 @@ manager: scotv
 ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: null
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 

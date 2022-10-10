@@ -16,10 +16,11 @@ ms.custom:
   - goldenconfig
 ms.collection: 
   - M365-identity-device-management
-  - M365-security-compliance
+  - m365-security
   - m365solution-identitydevice
   - m365solution-scenario
   - zerotrust-solution
+  - highpri
 ms.subservice: mdo
 search.appverid: met150
 ---

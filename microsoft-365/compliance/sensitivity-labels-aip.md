@@ -11,8 +11,8 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365initiative-compliance
+- purview-compliance
+- tier1
 search.appverid: 
 - MOE150
 - MET150
@@ -44,6 +44,8 @@ When you keep the AIP client installed but disabled in Office apps, the other ca
 For more information about these capabilities that extend labeling beyond Office apps, see the [Azure Information Protection unified labeling client administrator guide](/azure/information-protection/rms-client/clientv2-admin-guide) from the AIP documentation.
 
 Independently from labeling, you can continue to use the [AIPService](/powershell/module/aipservice) PowerShell module for tenant-level management of the encryption service. For example, configure super user access when you need to remove encryption for data recovery, track and revoke documents that have been opened by the AIP client, and configure the use license validity period for offline access. For more information, see [Administering protection from Azure Information Protection by using PowerShell](/azure/information-protection/administer-powershell).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Decide whether to use built-in labeling for Office apps or the AIP add-in
 

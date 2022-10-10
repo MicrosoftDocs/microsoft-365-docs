@@ -1,17 +1,19 @@
 ---
 title: "Set up a connector to archive Cisco Jabber data in Microsoft 365"
+description: "Learn how to set up and use a 17a-4 Cisco Jabber DataParser connector to import and archive Cisco Jabber data in Microsoft 365."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: "Learn how to set up and use a 17a-4 Cisco Jabber DataParser connector to import and archive Cisco Jabber data in Microsoft 365."
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ---
 
 # Set up a connector to archive Cisco Jabber data
@@ -19,6 +21,8 @@ description: "Learn how to set up and use a 17a-4 Cisco Jabber DataParser connec
 Use the [Cisco Jabber DataParser](https://www.17a-4.com/jabber-dataparser/) from 17a-4 LLC to import and archive data from Cisco Jabber to user mailboxes in your Microsoft 365 organization. The DataParser includes a Cisco Jabber connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The Cisco Jabber DataParser connector converts Cisco Jabber data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
 After Cisco Jabber data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a Cisco Jabber connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Overview of archiving Cisco Jabber data
 

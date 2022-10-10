@@ -6,9 +6,10 @@ ms.author: kwekua
 author: kwekua
 manager: scotv
 audience: Admin
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Adm_O365
 - Adm_TOC
 search.appverid:

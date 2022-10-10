@@ -1,5 +1,6 @@
 ---
 title: "Manage jobs in eDiscovery (Premium)"
+description: "eDiscovery (Premium) jobs help you track the status of long-running processes related to performing various eDiscovery (Premium) tasks."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,11 +11,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-description: "eDiscovery (Premium) jobs help you track the status of long-running processes related to performing various eDiscovery (Premium) tasks."
 ---
 
 # Manage jobs in eDiscovery (Premium)
@@ -37,6 +40,8 @@ Here's a list of the jobs (which are typically long-running processes) that are 
 |Re-indexing custodian data|When you add a custodian to a case, all partially indexed items in the custodian's selected data sources are reindexed by a process called *Advanced indexing*. This job is also triggered when you click **Update index** on the **Processing** tab of a case, and when you update the index for a specific custodian on the custodian properties flyout page. For more information, see [Advanced indexing of custodian data](indexing-custodian-data.md).
 |Running analytics|A user analyzes data in a review set by running eDiscovery (Premium) analytics tools such as near duplicate detection, email threading analysis, and themes analysis. For more information, see [Analyze data in a review set](analyzing-data-in-review-set.md).|
 |Tagging documents|This job is triggered when a user clicks **Start tagging job** in the **Tagging panel** when reviewing documents in a review set. A user can start this job after tagging documents in a review set and then bulk-selecting them in the view document panel. For more information, see [Tag documents in a review set](tagging-documents.md).|
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Job status
 

@@ -1,5 +1,6 @@
 ---
 title: "Preview the results of an eDiscovery search"
+description: "Preview a sample of the results returned by a Content search or a eDiscovery (Standard) search in the Microsoft Purview compliance portal."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,17 +10,16 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: "Preview a sample of the results returned by a Content search or a eDiscovery (Standard) search in the Microsoft Purview compliance portal."
 ---
 
 # Preview eDiscovery search results
@@ -43,6 +43,8 @@ To preview a sample of results returned by a search:
    ![Preview items in the reading pane.](../media/PreviewSearchResults2.png)
 
    In the previous screenshot, notice that keywords from the search query are highlighted when you preview items.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How the search result samples are selected
 

@@ -67,14 +67,50 @@ As an Intune customer who has an Intune package, which has been already onboarde
 4. Check the dependency binaries **which has been uploaded** put under the **guid** folder.
 5. You can edit the scripts as needed and save.
     > [!Note] 
-    > If the dependency package has not been uploaded, Test Base will not generate install/uninstall commands for it.
+    > If the dependency package has not been uploaded, Test Base will not generate install/uninstall commands for it.  
 
 
-**Step 4: Test Matrix**
-1. Check the default selections present in the OS list for the corresponding test types.
-    - Test base supports selecting multiple Windows cumulative update **from Windows 10 1909 except Windows 10 2004**, however Intune Win app would be assigned with a version from versions equal to or higher than **Windows 10 1607**.
-    - OS list will be default to include all OSes supported by Test base, which is higher than the minimum OS specified for the Intune Win app.
-2. Users are allowed to modify the OS selection as need.
+**Step 4. Set test matrix**
+
+The Test matrix tab is for you to indicate the specific Windows update program or Windows product that you may want your test to execute against.
+
+   > [!div class="mx-imgBorder"]
+   > ![Set test matrix new package](Media/settestmatrix01-newpackage.png)
+
+1. Choose **OS update type**
+   - Test Base provides scheduled testing to make sure your applications performance won’t break by the latest Windows updates. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Set test matrix choose osupdate](Media/settestmatrix02-chooseosupdate.png)
+
+   - There are 2 available options:
+   
+     - The **Security updates** enable your package to be tested against incremental churns of Windows monthly security updates.
+     - The **Feature updates** enable your package to be tested against new features in the latest Windows Insider Preview Builds from the Windows Insider Program.
+
+2. Configure **Security Update**
+   To set up for security updates, you must specify the Windows product(s) you want to test against from the dropdown list of "OS versions to test".
+
+   > [!div class="mx-imgBorder"]
+   > ![Set test matrix configure securityupdate](Media/settestmatrix03-configuresecurityupdate.png)
+
+   - Your selection will register your application for automatic test runs against the B release of Windows monthly quality updates of selected product(s).
+     - For customers who have Default Access customers on Test Base, their applications are validated against the final release version of the B release security              updates, starting from Patch Tuesday.
+     - For customers who have Full Access customers on Test Base, their applications are validated against the pre-release versions of the B release security                  updates, starting up to 3-weeks before prior to Patch Tuesday. This allows time for the Full Access customers time to take proactive steps in resolving any            issues found during testing before in advance of the final release on Patch Tuesday.  
+       (How to become a Full Access customer? Please refer to [Request to change access level | Microsoft Docs](accesslevel.md))
+
+3. Configure **Feature Update**
+   - To set up for feature updates, you must specify the target product and it’s preview channel from "Insider Channel" dropdown list.
+
+   > [!div class="mx-imgBorder"]
+   > ![Set test matrix configure featureupdate](Media/settestmatrix04-configurefeatureupdate.png)
+
+   - Your selection will register your application for automatic test runs against the latest feature updates of your selected product channel and all future new            updates in the latest Windows Insider Preview Builds of your selection.
+
+   - You may also set your current OS in "OS baseline for Insight". We would provide you more test insights by regression analysis of your as-is OS environment and the      latest target OS.
+
+   > [!div class="mx-imgBorder"]
+   > ![Set test matrix set os](Media/settestmatrix05-setos.png)  
 
 
 **Step 5: Review + Publish** <br/>

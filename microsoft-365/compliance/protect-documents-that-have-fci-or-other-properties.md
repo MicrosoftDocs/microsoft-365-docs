@@ -15,7 +15,8 @@ ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
@@ -40,6 +41,8 @@ In Microsoft 365, you can create a DLP policy that identifies documents that hav
 A DLP policy simply looks for a specific property name/value pair. Any document property can be used, as long as the property has a corresponding managed property for SharePoint search. For example, a SharePoint site collection might use a content type named **Trip Report** with a required field named **Customer**. Whenever a person creates a trip report, they must enter the customer name. This property name/value pair can also be used in a DLP policy—for example, if you want a rule that blocks access to the document for guests when the **Customer** field contains **Contoso**.
 
 If you want to apply your DLP policy to content with specific Microsoft 365 labels, you should not follow the steps here. Instead, learn how to [Using a retention label as a condition in a DLP policy](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you create the DLP policy
 
