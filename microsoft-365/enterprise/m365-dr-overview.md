@@ -117,7 +117,7 @@ There are three methods for ensuring that the _tenant_ data location for a parti
 1. Only available for _Local Geography_ and _Expanded Local Geography countries_
 
 >[!NOTE]
->See the [Workload Data Residency Capabilities section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide&branch=kvice-ADR-new) for more details on these topics.
+>See the [Workload Data Residency Capabilities section](m365-dr-workload-exo.md) for more details on these topics.
 
 **Table 3: Available Data Residency by Country**
 
