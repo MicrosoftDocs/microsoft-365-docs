@@ -186,7 +186,6 @@ External users who need access for auditing or other purposes can also be assign
 Follow the steps to grant user access to an assessment.
 
 1. From your **Assessments** page, find the assessment you want to grant access to. Select it to open its details page.
-    1. To grant user access to a template, go to your **Assessment templates** page, find the template you want to grant access to, and follow the same steps outlined below.
 
 1. In the upper-right corner, select **Manage user access**.
 
@@ -204,7 +203,16 @@ Follow the steps to grant user access to an assessment.
 
 #### Steps for removing access
 
-You can revoke user access to individual assessments. To do this, begin by following the same steps outlined above for adding users. When you see the user's name whose role you want to revoke listed in the **Manage user access** flyout pane, uncheck the box next to their names, then select **Save**. You'll see a confirmation box asking you to confirm removal of the user's access. Select **Remove** to confirm and proceed, or select **Cancel** to cancel and exit.
+You can remove a user's access to individual assessments by following the steps below:
+
+1. On the assessment's details page, select **Manage user access**.
+1. On the **Manage user access** flyout pane, go the tab corresponding to the user's role you want to remove.
+
+1. Find the user whose role you want to remove. Check the circle to the left of their name, then select the **Remove** command just below the role tab. To remove all users at once, simply select the **Remove all** command without checking the circle next to every user's name.
+
+1. A **Remove access?** dialog appears, asking you to confirm the removal. Select **Remove access** to confirm the role removal.
+
+1. Select **Save** on the flyout pane. The user roles will now be removed from the assessment.
 
 Learn how to get a broad [view of all users with access to assessments](compliance-manager-setup.md#user-access).
 
