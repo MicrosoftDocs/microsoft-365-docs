@@ -200,11 +200,9 @@ To delete evidence files or links, select the action menu (the three dots) to th
 
 After you complete the work, conduct testing, and upload evidence, the next step is to assign the improvement action to an assessor for validation. The assessor validates the work and examines the documentation, and selects the appropriate test status.
 
-**If test status is set to “Passed”**: the action is complete and the points achieved shows the maximum points achieved. The points are then counted toward your overall compliance score.
+- **If test status is set to “Passed”**: the action is complete and the points achieved shows the maximum points achieved. The points are then counted toward your overall compliance score.
 
-**If test status is  set to “Failed”**: the action doesn't meet the requirements, and the assessor can assign it back to the appropriate user for additional work.
-
-#### Granting user access to assessors
+- **If test status is  set to “Failed”**: the action doesn't meet the requirements, and the assessor can assign it back to the appropriate user for additional work.
 
 Users will need a **Compliance Manager Assessor** role in order to edit improvement action testing notes. You may also want to grant users access only to certain assessments. Learn [how to set permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles) and [how to grant role-based assess to assessments](compliance-manager-setup.md#role-based-access-to-assessments).
 

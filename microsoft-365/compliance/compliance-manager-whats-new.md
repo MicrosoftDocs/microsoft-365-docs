@@ -26,6 +26,10 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## October 2022
+
+Compliance Manager now allows you to assign user roles that are specific to individual assessments. This feature allows you to provide assessors with scoped access to Compliance Manager. Learn more about [granting user access to individual assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments).
+
 ## August 2022
 
 Compliance Manager has published the following new assessment template:
@@ -77,7 +81,7 @@ View our [full list of assessment templates](compliance-manager-templates-list.m
 
 ### Continuous compliance assessment of improvement actions
 
-We're adding automated testing and evidence generation for over 35 improvement actions in Compliance Manager that were not previously covered by Secure Score. With continuous compliance assessment, you can receive updates about which of these improvement actions you've completed if they're relevant for your compliance assessments and you're licensed to access the relevant solutions. Continuous compliance assessment also gives users visibility into the scoring logic of your improvement actions and provides insight and evidence about why you received a certain score. This feature works alongside existing integrations with Microsoft 365 Secure Score, and any automated actions you've previously configured will continue to work as-is. Learn more about [automated testing settings](compliance-manager-setup.md#set-up-automated-testing).
+We're adding automated testing and evidence generation for over 35 improvement actions in Compliance Manager that were not previously covered by Secure Score. With continuous compliance assessment, you can receive updates about which of these improvement actions you've completed if they're relevant for your compliance assessments and you're licensed to access the relevant solutions. Continuous compliance assessment also gives users visibility into the scoring logic of your improvement actions and provides insight and evidence about why you received a certain score. This feature works alongside existing integrations with Microsoft 365 Secure Score, and any automated actions you've previously configured will continue to work as-is. Learn more about [automated testing settings](compliance-manager-setup.md#testing-source-for-automated-testing).
 
 ## February 2022
 
