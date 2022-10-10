@@ -212,7 +212,7 @@ You can remove a user's access to individual assessments by following the steps 
 
 1. A **Remove access?** dialog appears, asking you to confirm the removal. Select **Remove access** to confirm the role removal.
 
-1. Select **Save** on the flyout pane. The user roles will now be removed from the assessment.
+1. Select **Save** on the flyout pane. The users' roles will now be removed from the assessment.
 
 Learn how to get a broad [view of all users with access to assessments](compliance-manager-setup.md#user-access).
 
