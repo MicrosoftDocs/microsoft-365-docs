@@ -121,7 +121,7 @@ There are three methods for ensuring that the _tenant_ data location for a parti
 
 **Table 3: Available Data Residency by Country**
 
-|     | Exchange Online  | SharePoint Online  | Teams  | MDO P1  | Office for the web  | Viva Connections  | Viva Topics  |  Purview  |
+| Country    | Exchange Online  | SharePoint Online  | Teams  | MDO P1  | Office for the web  | Viva Connections  | Viva Topics  |  Purview  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Australia  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
 | Brazil  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
