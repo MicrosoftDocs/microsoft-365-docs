@@ -88,7 +88,7 @@ All our updates contain
 
 &ensp;Security intelligence update version: **1.377.8.0**<br/>
 &ensp;Release date: **October 10, 2022**<br/>
-&ensp;Platform: **4.18.2209.x** (*final platform number coming soon*)<br/>
+&ensp;Platform: **4.18.2209.x**<br/>
 &ensp;Engine: **1.1.19700.3**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
