@@ -61,9 +61,6 @@ conceptualContent:
          - url: /microsoft-365/security/defender/advanced-hunting-find-ransomware
            itemType: how-to-guide
            text: Hunt for ransomware
-         - url: /microsoft-365/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online
-           itemType: overview
-           text: Handling ransomware in Sharepoint Online
 
    # Card
       - title: Respond to security incidents
