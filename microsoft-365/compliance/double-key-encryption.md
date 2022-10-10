@@ -60,17 +60,20 @@ If your organizations have any of the following requirements, you can use DKE to
 
 **Azure Information Protection**. DKE works with sensitivity labels and requires Azure Information Protection.
 
-DKE sensitivity labels are made available to end users through the sensitivity button in the AIP Unified Labeling client in Office Desktop Apps. Install these prerequisites on each client computer where you want to protect and consume protected documents.
+DKE sensitivity labels are made available to end users through the sensitivity button in the AIP Unified Labeling client in Office Desktop Apps, File Explorer right-click, AIP Powershell and the AIP scanner. Install these prerequisites on each client computer where you want to protect and consume protected documents.
 
-**Microsoft Office Apps for enterprise** version 2009 or later (Desktop versions of Word, Excel, PowerPoint and Outlook) on Windows.
+**Microsoft Office Apps for enterprise** version 2009 or later (Desktop versions of Word, Excel, PowerPoint and Outlook) on Windows. 
 
-**Azure Information Protection Unified Labeling Client** versions 2.14.93.0 or later. Download and install the Unified Labeling client from the [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=53018).
+**Azure Information Protection Unified Labeling Client** versions 2.14.94.0 or later. Download and install the Unified Labeling client from the [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=53018) for DKE label support in Word, Excel and PowerPoint. [Open a support case](/azure/information-protection/information-support#to-contact-microsoft-support) for Unified Labeling client versions with DKE label support in Outlook.
 
 ## Supported environments for storing and viewing DKE-protected content
 
 **Supported applications**. [Microsoft 365 Apps for enterprise](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clients on Windows, including Word, Excel, PowerPoint and Outlook.
 
 **Online content support**. You can store documents and files that are protected with Double Key Encryption online in both Microsoft SharePoint and OneDrive for Business. You must label and protect documents and files with DKE by supported applications before you upload to these locations. You can share encrypted content by email, but you can't view encrypted documents and files online. Instead, you must view protected content using the supported desktop applications and clients on your local computer.
+
+**Labeling scenarios outside of Office apps**
+Apply DKE labels outside of Office apps using the File Explorer "Classify & Protect" right-click, AIP PowerShell commandlets or the AIP scanner by administrators. 
 
 **Outlook encryption only and do not forward scenarios**
 Configuring DKE for supported scenarios will create a warning in the label configuration experience. For encryption only and do not forward, these unsupported scenarios have no warning in the label configuration experience.
