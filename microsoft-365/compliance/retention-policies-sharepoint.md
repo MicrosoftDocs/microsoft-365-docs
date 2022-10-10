@@ -11,7 +11,8 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid: 
 - MOE150
@@ -30,6 +31,8 @@ For other workloads, see:
 - [Learn about retention for Microsoft Teams](retention-policies-teams.md)
 - [Learn about retention for Yammer](retention-policies-yammer.md)
 - [Learn about retention for Exchange](retention-policies-exchange.md)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## What's included for retention and deletion
 
@@ -67,7 +70,7 @@ A timer job periodically runs on the Preservation Hold library. For content that
 
 This behavior for copying files into the Preservation Hold library applies to content that exists when the retention settings were applied. In addition, for retention policies, any new content that's created or added to the site after it was included in the policy will be retained in the Preservation Hold library. However, new content isn't copied to the Preservation Hold library the first time it's edited, only when it's deleted. To retain all versions of a file, [versioning](#how-retention-works-with-document-versions) must be turned on for the original site.
   
-Users see an error message if they try to delete a library, list, folder, or site that's subject to retention. They can delete a folder if they first move or delete any files in the folder that are subject to retention.
+Users see an error message if they try to delete a library, list, folder, or site that's subject to retention. They can delete an unlabeled folder if they first move or delete any files in the folder that are subject to retention.
 
 Users also see an error message if they try to delete a labeled item in any of the following circumstances. The item isn't copied to the Preservation Hold library but remains in the original location:
 

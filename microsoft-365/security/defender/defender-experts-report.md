@@ -5,7 +5,8 @@ description: The Defender Experts for Hunting service publishes monthly reports 
 keywords: analyst report, defender experts report, detections, defender expert notification, hunting, notifications, threat categories, hunting reports
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +18,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
+- m365-security 
+- tier1
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
@@ -67,20 +69,20 @@ This link redirects you to the Microsoft 365 Defender incidents page. Defender E
 
 The MITRE ATT&CK tactics represent adversary goals—what they're trying to achieve in each attack phase. The **MITRE ATT&CK tactics observed** section of the report tracks the progression of attack against the phase they reached:
 
-1.	Reconnaissance
-2.  Resource Development
-3.  Initial access
-4.	Execution
-3.	Persistence
-4.	Privilege escalation
-5.	Defense evasion
-6.	Credential access
-7.	Discovery
-8.	Lateral movement
-9.	Collection
-10.	Command and control
-11.	Exfiltration
-12.	Impact
+1. Reconnaissance
+2. Resource Development
+3. Initial access
+4. Execution
+5. Persistence
+6. Privilege escalation
+7. Defense evasion
+8. Credential access
+9. Discovery
+10. Lateral movement
+11. Collection
+12. Command and control
+13. Exfiltration
+14. Impact
 
 Signals from Microsoft 365 Defender and investigations by Defender Experts for Hunting help identify these tactics, represented in the bar chart. This chart helps you visualize where the surge is and provides you with the information you need to plan the corresponding containment and remediation actions.
 
@@ -97,4 +99,3 @@ Among the various threat categories available, the following categories are care
 - Delivery
 
 You can prioritize remediation based on the most impacted category, as depicted in the bar chart.
-

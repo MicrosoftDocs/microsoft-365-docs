@@ -8,15 +8,16 @@ metadata:
   manager: dansimp 
   audience: Admin
   ms.topic: faq
-  ms.prod: m365-security
-  ms.technology: mdb
+  ms.service: microsoft-365-security
+  ms.subservice: mdb
   ms.localizationpriority: medium
   ms.date: 08/10/2022
   ms.reviewer: shlomiakirav
   f1.keywords: NOCSH 
   ms.collection: 
   - SMB
-  - M365-security-compliance
+  - m365-security
+  - tier1
 
 title: Microsoft Defender for Business - Frequently asked questions and answers
 summary: | 

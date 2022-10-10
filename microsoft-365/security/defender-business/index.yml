@@ -5,13 +5,15 @@ summary: Simple, comprehensive endpoint security to help you protect your busine
 metadata:
   title: Microsoft Defender for Business documentation
   description: Defender for Business is a cybersecurity solution for small and medium-sized businesses. Protect devices with enterprise-grade security at an affordable price. 
-  ms.prod: m365-security
-  ms.technology: mdb
+  ms.service: microsoft-365-security
+  ms.subservice: mdb
   ms.topic: landing-page
+  ms.date: 07/19/2022
   ms.collection: 
   - SMB
-  - M365-security-compliance
+  - m365-security
   - m365-initiative-defender-business
+  - tier1
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
@@ -50,7 +52,7 @@ landingContent:
             url: https://aka.ms/MDB-GetStartedGuide
           - text: Get Defender for Business
             url: get-defender-business.md
-          - text: Use the trial playbook
+          - text: See the trial user guide
             url: trial-playbook-defender-business.md
           - text: Use the setup wizard
             url: mdb-use-wizard.md

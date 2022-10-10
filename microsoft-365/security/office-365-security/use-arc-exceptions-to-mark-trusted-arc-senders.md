@@ -11,13 +11,13 @@ ms.localizationpriority: high
 search.appverid:
   - MET150
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
   - seo-marvel-apr2020
 description: Authenticated Received Chain (ARC) is email authentication that tries to preserve authentication results across devices and any indirect mailflows that come between the sender and recipient. Here's how to make exceptions for your trusted ARC Senders.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Make a list of trusted ARC Senders to trust *legitimate* indirect mailflows

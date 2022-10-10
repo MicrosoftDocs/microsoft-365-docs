@@ -4,7 +4,8 @@ description: Learn about the Microsoft 365 Defender for US Government customers 
 keywords: government, gcc, high, requirements, capabilities, defender, Microsoft 365 Defender, xdr, dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +14,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security-compliance
+- tier3
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Microsoft 365 Defender for US Government customers

@@ -3,12 +3,14 @@ title: Assign Microsoft 365 licenses to user accounts with PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 09/23/2020
+ms.date: 09/19/2022
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: 
@@ -168,7 +170,7 @@ Set-MgUserLicense -UserId "belinda@litwareinc.onmicrosoft.com" -AddLicenses $add
 This example assigns **jamesp\@litwareinc.com** with the same licensing plan that has been applied to **belindan\@litwareinc.com**:
 
 ```powershell
-$mgUser = Get-MgUser -UserId "belindan@litwareinc.com"
+$mgUser = Get-MgUser -UserId "belindan@litwareinc.com" -Property AssignedLicenses
 Set-MgUserLicense -UserId "jamesp@litwareinc.com" -AddLicenses $mgUser.AssignedLicenses -RemoveLicenses @()
 ```
 

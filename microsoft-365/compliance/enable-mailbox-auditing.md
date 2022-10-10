@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -36,7 +36,9 @@ Here are some benefits of mailbox auditing on by default:
 > [!NOTE]
 >
 > - The important thing to remember about the release of mailbox auditing on by default is: you don't need to do anything to manage mailbox auditing. However, to learn more, customize mailbox auditing from the default settings, or turn it off altogether, this article can help you.
-> - By default, only mailbox audit events for E5 users are available in audit log searches in the Microsoft Purview compliance portal or via the Office 365 Management Activity API. For more information, see the [More information](#more-information) section in this article.
+> - By default, only mailbox audit events for users with licenses that include [Microsoft Purview Audit (Premium)](advanced-audit.md) are available in audit log searches in the Microsoft Purview compliance portal or via the Office 365 Management Activity API. These licenses are described [here](auditing-solutions-overview.md#audit-premium-1). For brevity, this article will collectively refer to licenses that include Audit (Premium) as *E5/A5/G5 licenses*.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Verify mailbox auditing on by default is turned on
 
@@ -314,7 +316,7 @@ The value **True** indicates that mailbox audit logging is bypassed for the user
 
 ## More information
 
-- Although mailbox audit logging on by default is enabled for all organizations, only users with E5 licenses will return mailbox audit log events in [audit log searches in the Microsoft Purview compliance portal](search-the-audit-log-in-security-and-compliance.md) or via the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference) **by default**.
+- As previously mentioned, although mailbox audit logging on by default is enabled for all organizations, only users with [licenses that include Audit (Premium)](auditing-solutions-overview.md#audit-premium-1) (collectively referred to in this article as *E5/A5/G5 licenses*) will return mailbox audit log events in [audit log searches in the Microsoft Purview compliance portal](search-the-audit-log-in-security-and-compliance.md) or via the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference) **by default**.
 
   To retrieve mailbox audit log entries for users without E5/A5/G5 licenses, you can use any of the following workarounds:
 

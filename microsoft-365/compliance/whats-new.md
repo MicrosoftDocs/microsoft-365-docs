@@ -2,8 +2,8 @@
 title: What's new in Microsoft Purview risk and compliance solutions
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: reference
@@ -15,7 +15,7 @@ search.appverid:
 - MET150
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 description: Whether it be adding new solutions to the compliance center, updating existing features based on your feedback, or rolling out fresh and updated documentation, Microsoft 365 helps you stay on top of the ever-changing compliance landscape. Find out what we've been up to this month.
 ms.custom: seo-marvel-mar2020
 ---
@@ -35,6 +35,76 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 > - [What's new in Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## September 2022
+
+### Data Classification
+
+- [Increase classifier accuracy (preview)](data-classification-increase-accuracy.md) - This article shows you how to confirm whether items matched by a classifier are true positive (a Match) or a false positive (Not a match) and provide Match, or Not a match feedback. You can use that feedback to tune your classifiers to increase accuracy. You can also send redacted versions of the document and the Match, Not a Match feedback to Microsoft if you want to help increase the accuracy of the classifiers that Microsoft provides.
+
+### Data loss prevention
+
+- [Design a data loss prevention policy complex rule design (preview)](dlp-policy-design.md#complex-rule-design-preview) - The DLP rule builder supports boolean logic (AND, OR, NOT) and nested groups. New video and content added that walks you through this new functionality.
+ 
+### Trainable classifiers
+
+- [Trainable classifiers definitions](classifier-tc-definitions.md)  - more than 20 new classifiers have been added, so the definitions for all trainable classifiers have been broken out into this new article.
+
+## August 2022
+
+### Compliance Manager
+
+- [Update improvement actions and bring compliance data into Compliance Manager](compliance-manager-update-actions.md) - new functionality for updating multiple improvement actions at once, which also allows orgs to bring compliance work completed in other systems into Compliance Manager for tracking there.
+- [Working with improvement actions in Compliance Manager](compliance-manager-improvement-actions.md) - users can now include a link/URL as part of evidence for improvement action implementation or testing work.
+
+### Compliance offerings & service assurance
+
+- [Microsoft 365 change management](/compliance/assurance/assurance-microsoft-365-change-management) - new assurance topic that covers code and non-code changes to Microsoft services.
+- **Japan CS Gold Mark offering topic** - retired, certification not renewed.
+
+### Data lifecycle management and records management
+
+- [Exchange (legacy)](data-lifecycle-management.md#exchange-legacy-features) configuration is moving from the Classic Exchange admin center (EAC) to the Microsoft Purview compliance portal, under **Data lifecycle management**. Existing data lifecycle management features are located under a new subnode, **Microsoft 365**.
+- For cloud attachments (currently rolling out in preview), automatic and temporary retention of deleted files in the Preservation Hold library to safeguard against the original file being deleted by users before the copy can be created and labeled. For more information, see [How retention works with cloud attachments](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
+
+### Data Loss Prevention
+
+- [Get started with endpoint data loss prevention](endpoint-dlp-getting-started.md) - updated links for more accessible article names
+- [Learn about endpoint data loss prevention](endpoint-dlp-learn-about.md) - updated links for more accessible article names; updated guidance on supported file types; updated copy-to-other-app guidance
+- [Share data loss prevention alerts](dlp-share-alerts.md) (preview) - new
+- [Configure endpoint DLP settings](dlp-configure-endpoint-settings.md) - GA of Sensitive Service Domains
+- [Data loss prevention policy reference](dlp-policy-reference.md) - GA of Sensitive Service Domains
+- [Using endpoint data loss prevention](endpoint-dlp-using.md) - GA of Sensitive Service Domains
+
+### Microsoft Priva
+
+- [Microsoft Priva trial user guide](/privacy/priva/priva-trial-playbook) - refreshed and simplified guidance to align with recent documentation updates
+
+### Sensitive Information Types
+
+- [Create exact data match sensitive information type workflow classic experience](sit-create-edm-sit-classic-ux-workflow.md) - new
+- [Create the EDM SIT sample file for the new experience](sit-create-edm-sit-unified-ux-sample-file.md) - new
+- [Create EDM SIT using the new experience](sit-create-edm-sit-unified-ux-schema-rule-package.md) - new
+- [Create exact data match sensitive information type workflow new experience](sit-create-edm-sit-unified-ux-workflow.md) - new
+- Added guidance for new and classic EDM SIT creation experience in the following topics:
+  - [Get started with exact data match based sensitive information types](sit-get-started-exact-data-match-based-sits-overview.md)
+  - [Create exact data match sensitive information type/rule package](sit-get-started-exact-data-match-create-rule-package.md)
+  - [Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md)
+  - [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md)
+  - [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md)
+  - [Test an exact data match sensitive information type](sit-get-started-exact-data-match-test.md)
+  - [Learn about exact data match sensitive information types](sit-learn-about-exact-data-match-based-sits.md)
+- [Sensitive information type limits](sit-limits.md) - new
+
+### Sensitivity labels
+
+- Generally available (GA) and no longer need to opt in: Mobile devices (iOS and Android, with minimal versions) support [co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md).
+- GA with Current Channel 2208+ for Word, Excel, PowerPoint on Windows: [Support for PDF](sensitivity-labels-office-apps.md#pdf-support). Support for Outlook to block print to PDF when required, is rolling out to Beta Channel.
+- Rolling out to GA with Current Channel 2208+ for Windows, and 16.63+ for macOS: Default label for existing documents.
+- In preview: Trainable classifiers for [auto-labeling policies](apply-sensitivity-label-automatically.md).
+- Guidance how to [configure Azure AD for encrypted content](encryption-azure-ad-configuration.md), which includes information about External Identities cross-tenant access settings, Conditional Access policies, and guest accounts.
 
 ## July 2022
 
@@ -292,7 +362,7 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 
 - [Retention policies for Yammer](create-retention-policies.md#retention-policy-for-yammer-locations) are now generally available (GA).
 - Support for shared channels, currently in preview. When you configure a retention policy for the Teams channel message location, any shared channels inherit retention settings from their parent team.
-- [Per-tenant limits for content disposition](retention-limits.md#maximum-number-of-items-for-disposition).
+- [Per-tenant limits for content disposition](retention-limits.md#maximum-numbers-for-disposition).
 
 ### Data Loss Prevention
 
@@ -301,11 +371,11 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 - [Configure endpoint data loss prevention settings](dlp-configure-endpoint-settings.md) - new for public preview of restricted app groups.
 - [Data loss prevention policy reference](dlp-policy-reference.md) - updated for public preview of restricted app groups.
 - [Get started with data loss prevention for Power BI](dlp-powerbi-get-started.md) - new for public preview.
-- 
+
 ### Information protection
 
 - [Support for double byte character set release notes](mip-dbcs-relnotes.md) - added guidance for macOS.
-- 
+
 ### Insider risk management
 
 - [Get started with insider risk management](insider-risk-management-configure.md) - added new tasks for the Recommended actions guidance.
@@ -325,26 +395,3 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
   - Support for templates, previously listed as [not supported with Teams Graph APIs and PowerShell cmdlets]( /microsoftteams/sensitivity-labels#limitations).  
 - For auditing Word, Excel, and PowerPoint on the web, justification text is now fully rolled out.
 - Applying a default label to existing documents for Word, Excel, and PowerPoint on the web is now fully rolled out.
-
-## February 2022
-
-### eDiscovery
-
-- [Manage custodian communications templates in eDiscovery (Premium)](advanced-ediscovery-communications-library.md) - eDiscovery managers can now create custodian communications templates that can be used in any eDiscovery (Premium) case in the organization.
-- [Manage issuing officers in eDiscovery (Premium)](advanced-ediscovery-issuing-officers.md) - eDiscovery managers can add a list of issuing officers that can be assigned to custodian communications in any eDiscovery (Premium) case in the organization.
-
-### Data lifecycle management and records management
-
-- [Adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) for retention policies and retention label policies are now generally available (GA). The instructions for [configuring an adaptive scope](retention-settings.md#to-configure-an-adaptive-scope) now include more information for SharePoint site scopes: Blog post reference for using custom site properties and how to use the site property SiteTemplate to include or exclude specific site types with the advanced query builder.
-- [Policy lookup](retention.md#policy-lookup) in the data lifecycle management solution is now generally available (GA.
-- PowerShell alternative to the records management setting that allows users to delete labeled items in SharePoint and OneDrive by using AllowFilesWithKeepLabelToBeDeletedSPO and AllowFilesWithKeepLabelToBeDeletedODB from [Get-PnPTenant](https://pnp.github.io/powershell/cmdlets/Get-PnPTenant.html) and [Set-PnPTenant](https://pnp.github.io/powershell/cmdlets/Set-PnPTenant.html).
-
-### Sensitivity labels
-
-- New guidance [Why choose built-in labeling over the AIP add-in for Office apps](sensitivity-labels-aip.md) if you are using the Azure Information Protection (AIP) unified labeling client for Windows computers. This page includes information about the new private preview for Office apps.
-- New settings for [auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange):
-  - Additional settings for email to support always applying a matched sensitivity label, and to apply encryption to email received from outside the organization.
-  - Exclusions for specific instances (users, groups, sites) are supported by using the new **Excluded** option when the default selection of **All** is specified for **Included**.
-- Now in preview: Mobile devices (iOS and Android) support [co-authoring](sensitivity-labels-coauthoring.md) when you have minimum versions and opt in to this preview.
-- Support for setting the default sharing link type is extended to individual documents in SharePoint and OneDrive. For more information, see the new article [Use sensitivity labels to configure the default sharing link type for sites and documents in SharePoint and OneDrive]( sensitivity-labels-default-sharing-link.md).
-- Teams admin center now supports container labels (sensitivity labels with the scope of Groups & sites).

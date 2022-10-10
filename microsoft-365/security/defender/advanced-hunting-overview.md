@@ -2,7 +2,8 @@
 title: Overview - Advanced hunting
 description: Learn about advanced hunting queries in Microsoft 365 and how to use them to proactively find threats and weaknesses in your network
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,11 +15,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-m365-defender
+  - tier1
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.technology: m365d
+search.appverid: met150
 ---
 
 # Proactively hunt for threats with advanced hunting in Microsoft 365 Defender
@@ -65,8 +67,19 @@ Advanced hunting data can be categorized into two distinct types, each consolida
 - **Event or activity data**—populates tables about alerts, security events, system events, and routine assessments. Advanced hunting receives this data almost immediately after the sensors that collect them successfully transmit them to the corresponding cloud services. For example, you can query event data from healthy sensors on workstations or domain controllers almost immediately after they are available on Microsoft Defender for Endpoint and Microsoft Defender for Identity.
 - **Entity data**—populates tables with information about users and devices. This data comes from both relatively static data sources and dynamic sources, such as Active Directory entries and event logs. To provide fresh data, tables are updated with any new information every 15 minutes, adding rows that might not be fully populated. Every 24 hours, data is consolidated to insert a record that contains the latest, most comprehensive data set about each entity.
 
+
 ## Time zone
-Time information in advanced hunting is in the UTC (Universal Time Coordinated) time zone.
+### Queries
+Advanced hunting data uses the UTC (Universal Time Coordinated) timezone. 
+![Screenshot of custom time range.](../../media/custom-time-range.png)
+
+Queries should be created in UTC.
+
+### Results
+Advanced hunting results are converted to the [timezone](m365d-time-zone.md) set in Microsoft 365 Defender. 
+
+
+
 
 ## Related topics
 - [Choose between guided and advanced hunting modes](advanced-hunting-modes.md)

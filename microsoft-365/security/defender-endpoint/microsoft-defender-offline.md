@@ -2,7 +2,7 @@
 title: Microsoft Defender Offline in Windows
 description: You can use Microsoft Defender Offline straight from the Microsoft Defender Antivirus app. You can also manage how it is deployed in your network.
 keywords: scan, defender, offline
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,12 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Run and review the results of a Microsoft Defender Offline scan

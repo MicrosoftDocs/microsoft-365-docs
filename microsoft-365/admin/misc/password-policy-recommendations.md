@@ -7,9 +7,12 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- ContentEngagementFY23
+- scotvorg
+- highpri
 - Adm_O365
 - Adm_NonTOC
 ms.custom: 
@@ -29,7 +32,7 @@ description: "Make your organization more secure against password attacks, and b
 
 As the admin of an organization, you're responsible for setting the password policy for users in your organization. Setting the password policy can be complicated and confusing, and this article provides recommendations to make your organization more secure against password attacks.
 
-Microsoft cloud-only accounts have a pre-defined password policy that cannot be changed. The only items you can change are the number of days until a password expires and whether or not passwords expire at all. 
+Microsoft cloud-only accounts have a pre-defined password policy that cannot be changed. The only items you can change are the number of days until a password expires and whether or not passwords expire at all.
   
 To determine how often Microsoft 365 passwords expire in your organization, see [Set password expiration policy for Microsoft 365](../manage/set-password-expiration-policy.md).
 
@@ -42,6 +45,8 @@ For more information about Microsoft 365 passwords, see:
 [Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)
 
 [Resend a user's password - Admin Help](../add-users/resend-user-password.md) (article)
+
+[Time to rethink mandatory password changes](https://go.microsoft.com/fwlink/p/?linkid=861018).
   
 ## Understanding password recommendations
 
@@ -56,9 +61,8 @@ Good password practices fall into a few broad categories:
 ## Password guidelines for administrators
 
 The primary goal of a more secure password system is password diversity. You want your password policy to contain lots of different and hard to guess passwords. Here are a few recommendations for keeping your organization as secure as possible.
-  
 
-- Maintain an eight-character minimum length requirement
+- Maintain a fourteen-character minimum length requirement
 
 - Don't require character composition requirements. For example, \*&amp;(^%$
 
@@ -88,11 +92,13 @@ These are some of the most commonly used password management practices, but rese
   
 ### Password expiration requirements for users
 
-Password expiration requirements do more harm than good, because these requirements make users select predictable passwords, composed of sequential words and numbers that are closely related to each other. In these cases, the next password can be predicted based on the previous password. Password expiration requirements offer no containment benefits because cybercriminals almost always use credentials as soon as they compromise them. Check out [Time to rethink mandatory password changes](https://go.microsoft.com/fwlink/p/?linkid=861018) for more info.
+Password expiration requirements do more harm than good, because these requirements make users select predictable passwords, composed of sequential words and numbers that are closely related to each other. In these cases, the next password can be predicted based on the previous password. Password expiration requirements offer no containment benefits because cybercriminals almost always use credentials as soon as they compromise them. 
   
-### Requiring long passwords
+### Minimum password length requirements
 
-Password length requirements (greater than about 10 characters) can result in user behavior that is predictable and undesirable. For example, users who are required to have a 16-character password may choose repeating patterns like **fourfourfourfour** or **passwordpassword** that meet the character length requirement but aren't hard to guess. Additionally, length requirements increase the chances that users will adopt other insecure practices, such as writing down their passwords, reusing them, or storing them unencrypted in their documents. To encourage users to think about a unique password, we recommend keeping a reasonable 8-character minimum length requirement.
+<!--Password length requirements (greater than about 10 characters) can result in user behavior that is predictable and undesirable. For example, users who are required to have a 16-character password may choose repeating patterns like **fourfourfourfour** or **passwordpassword** that meet the character length requirement but aren't hard to guess. Additionally, length requirements increase the chances that users will adopt other insecure practices, such as writing down their passwords, reusing them, or storing them unencrypted in their documents.-->
+
+To encourage users to think about a unique password, we recommend keeping a reasonable 14-character minimum length requirement.
   
 ### Requiring the use of multiple character sets
 
