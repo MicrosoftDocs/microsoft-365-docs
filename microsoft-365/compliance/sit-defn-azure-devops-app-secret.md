@@ -48,14 +48,14 @@ for example:
 
 `AdoAppId=...;AdoAppSecret=abcdefghijklmnopqrstuvwxyz234567abcdefghijklmnopqrst;`
 
-[!IMPORTANT]
-This example has been invalidated. It’s not a detectable example of this SIT.
+> [!IMPORTANT]
+> This example has been invalidated. It’s not a detectable example of this SIT.
 
 ## Checksum
 
 Yes
 
-SITs that have checksums use a unique calculation to check if the information is valid. This means when the **Checksum** value is **Yes**, the service can make a positive detection based on the sensitive data alone. When the **Checksum** value is **No** additional (secondary) elements must also be detected  for the service to make a positive detection.
+SITs that have checksums use a unique calculation to check if the information is valid. This means when the **Checksum** value is **Yes**, the service can make a positive detection based on the sensitive data alone. When the **Checksum** value is **No**, other (secondary) elements must also be detected for the service to make a positive detection.
 
 ## Definition
 
