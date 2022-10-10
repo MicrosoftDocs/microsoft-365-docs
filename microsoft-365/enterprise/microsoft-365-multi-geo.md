@@ -69,7 +69,7 @@ Follow these steps to get started with Multi-Geo:
 6. [Set up search](configure-search-for-multi-geo.md).
   
 > [!NOTE]
-> For more information on the Microsoft 365 services that support Multi-Geo please see ***sections 6.1, 6.2 and 6.3 [NEEDS CORRECT SECTION / PAGE REFERENCING]***
+> For more information on the Microsoft 365 services that support Multi-Geo please see the [Plan](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/plan-for-multi-geo?view=o365-worldwide&branch=kvice-ADR-new), [Deploy](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/multi-geo-tenant-configuration?view=o365-worldwide&branch=kvice-ADR-new) and [Manage](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/administering-a-multi-geo-environment?view=o365-worldwide&branch=kvice-ADR-new) sections on this topic.
 
 ## See also
 
