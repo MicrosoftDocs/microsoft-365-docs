@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Defender for Business User trial guide"
+title: "Microsoft Defender for Business trial user guide"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -21,9 +21,9 @@ description: "Make the most of your Defender for Business trial with this guide.
 ms.custom: trial-playbook
 ---
 
-# User trial guide: Microsoft Defender for Business
+# Trial user guide: Microsoft Defender for Business
 
-**Welcome to the Defender for Business user trial guide!**
+**Welcome to the Defender for Business trial user guide!**
 
 This guide will help you set up and use key features of your free trial. Using recommendations in this article from the Microsoft Defender team, learn how Defender for Business can help elevate your security from traditional antivirus protection to next-generation protection, endpoint detection and response, and vulnerability management.
 

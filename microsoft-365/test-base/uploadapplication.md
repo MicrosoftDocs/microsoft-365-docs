@@ -121,30 +121,47 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 
 4. Once all required info is filled out, you can proceed to step 4 by selecting the Next button at the bottom.
 
-### Step 4. Test matrix
+### Step 4. Set test matrix
 
-1. In the Test matrix tab, select the **OS update type**. There are two OS update types supported.
-
-   - The **Security updates** enable your package to be tested against incremental churns of Windows pre-release monthly security updates.
-   - The **Feature updates** enable your package to be tested against Windows pre-release bi-annual feature updates builds from the Windows Insider Program.
-
-2. Select the OS version(s) for Security update tests.
-
-   If **Security updates** is selected in OS update type, you need to select the OS version(s) of Windows your package will be tested on.
-
-   > [!NOTE]
-   > If you select to test your package against both Server and Client OSes, please make sure that the package is compatible and can run on both OSes.
-
-3. Select options for Feature update tests.
-
-   - If **Feature updates** is selected in OS update type, you need to finish the following options.
-   - For **Insider Channel**, select the Windows Insider Program Channel as the build that your packages should be tested against. We currently use builds flighted in the **Insider Beta Channel**.
-   - For **OS baseline for Insight**, select the Windows OS version to be used as a baseline in comparing your test results.
+The Test matrix tab is for you to indicate the specific Windows update program or Windows product that you may want your test to execute against.
 
    > [!div class="mx-imgBorder"]
-   > [ ![Test matrix](Media/uploadingzip11-test-matrix.png) ](Media/uploadingzip11-test-matrix.png#lightbox)
+   > ![Set test matrix new package](Media/settestmatrix01-newpackage.png)
 
-4. Once all the required info is filled out, you can proceed to step 5 (the last step) by selecting the Next button at the bottom.
+1. Choose **OS update type**
+   - Test Base provides scheduled testing to make sure your applications performance won’t break by the latest Windows updates. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Set test matrix choose osupdate](Media/settestmatrix02-chooseosupdate.png)
+
+   - There are 2 available options:
+   
+     - The **Security updates** enable your package to be tested against incremental churns of Windows monthly security updates.
+     - The **Feature updates** enable your package to be tested against new features in the latest Windows Insider Preview Builds from the Windows Insider Program.
+
+2. Configure **Security Update**
+   To set up for security updates, you must specify the Windows product(s) you want to test against from the dropdown list of "OS versions to test".
+
+   > [!div class="mx-imgBorder"]
+   > ![Set test matrix configure securityupdate](Media/settestmatrix03-configuresecurityupdate.png)
+
+   - Your selection will register your application for automatic test runs against the B release of Windows monthly quality updates of selected product(s).
+     - For customers who have Default Access customers on Test Base, their applications are validated against the final release version of the B release security updates, starting from Patch Tuesday.
+     - For customers who have Full Access customers on Test Base, their applications are validated against the pre-release versions of the B release security updates, starting up to 3-weeks before prior to Patch Tuesday. This allows time for the Full Access customers time to take proactive steps in resolving any issues found during testing before in advance of the final release on Patch Tuesday.  
+       (How to become a Full Access customer? Please refer to [Request to change access level | Microsoft Docs](accesslevel.md))
+
+3. Configure **Feature Update**
+   - To set up for feature updates, you must specify the target product and it’s preview channel from "Insider Channel" dropdown list.
+
+   > [!div class="mx-imgBorder"]
+   > ![Set test matrix configure featureupdate](Media/settestmatrix04-configurefeatureupdate.png)
+
+   - Your selection will register your application for automatic test runs against the latest feature updates of your selected product channel and all future new updates in the latest Windows Insider Preview Builds of your selection.
+
+   - You may also set your current OS in "OS baseline for Insight". We would provide you more test insights by regression analysis of your as-is OS environment and the latest target OS.
+
+   > [!div class="mx-imgBorder"]
+   > ![Set test matrix set os](Media/settestmatrix05-setos.png)  
 
 ### Step 5. Review + publish
 
