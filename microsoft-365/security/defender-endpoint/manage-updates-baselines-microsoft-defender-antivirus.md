@@ -86,14 +86,14 @@ All our updates contain
 <details>
 <summary>September-2022 (Platform: 4.18.2207.7 | Engine: 1.1.19600.3)</summary>
 
-&ensp;Security intelligence update version: **1.375.1857.0** (*final version number coming soon*)<br/>
+&ensp;Security intelligence update version: **1.377.8.0**<br/>
 &ensp;Release date: **October 10, 2022**<br/>
 &ensp;Platform: **4.18.2207.7**<br/>
-&ensp;Engine: **1.1.19600.3**<br/>
+&ensp;Engine: **1.1.19700.3**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
-Engine version: 1.1.19600.3<br/>
-Security intelligence update version: 1.375.1857.0 (*final version number coming soon*)<br/>
+Engine version: 1.1.19700.3<br/>
+Security intelligence update version: 1.377.8.0<br/>
 
 ### What's new
 
