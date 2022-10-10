@@ -87,10 +87,10 @@ for example:
 
 ## Credential example 
 
-`Authroization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ing0Nzh4eU9wbHNNMUg3TlhrN1N4MTd4MX...`
+`Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ing0Nzh4eU9wbHNNMUg3TlhrN1N4MTd4MX...`
 
-[!IMPORTANT]
-This example has been truncated. It’s not a detectable example of this SIT.
+> [!IMPORTANT]
+> This example has been truncated. It’s not a detectable example of this SIT.
 
 ## Checksum
 
