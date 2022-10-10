@@ -29,4 +29,4 @@ Use this guide to help you plan and deploy Microsoft's frontline solution in the
 - Frontline deployment architecture
 - Frontline deployment process
 
-Download the guide.
+Download the guide in [PDF](https://go.microsoft.com/fwlink/?linkid=2211637) or [Microsoft Word](https://go.microsoft.com/fwlink/?linkid=2211461) format.
