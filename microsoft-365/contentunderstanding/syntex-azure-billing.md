@@ -16,3 +16,6 @@ description: Learn about Azure billing configuration
 ---
 
 # Azure billing configuration
+
+
+Would be this link. https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/exports/open/exports/openedBy/AzurePortal
