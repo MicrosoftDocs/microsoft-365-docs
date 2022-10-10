@@ -49,8 +49,8 @@ for example:
 
 `<Subscription id="f70163aa-03a8-4f4a-8a30-d38e3f38fde4" ManagementCertificate="MIIPuQIBAzCCD38GCSqGS...`
 
-[!IMPORTANT]
-This example has been truncated. It’s not a detectable example of this SIT.
+> [!IMPORTANT]
+> This example has been truncated. It’s not a detectable example of this SIT.
 
 ## Checksum
 
