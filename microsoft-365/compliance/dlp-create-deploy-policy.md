@@ -12,7 +12,9 @@ f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: 
+ms.collection:
+- highpri
+- tier1 
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
@@ -24,7 +26,7 @@ description: "Scenarios for creating and deploying DLP policies"
 
 # Create and Deploy data loss prevention policies
 
-There are many configuration options in a Microsoft Purview data loss prevention (DLP) policy, each option changes the policy behavior. This article presents four common policy configuration scenarios. Once you familiarize yourself with these scenarios, you'll be comfortable using the DLP policy creation UX to create your own policies and manage their deployment.
+There are many configuration options in a Microsoft Purview data loss prevention (DLP) policy, each option changes the policy behavior. This article presents some common policy configuration scenarios. Once you familiarize yourself with these scenarios, you'll be comfortable using the DLP policy creation UX to create your own policies and manage their deployment.
 
 ## Before you begin
 
