@@ -154,7 +154,7 @@ The Test matrix tab is for you to indicate the specific Windows update program o
        (How to become a Full Access customer? Please refer to [Request to change access level | Microsoft Docs](accesslevel.md))
 
 3. Configure **Feature Update**
-   - To set up for feature updates, you must specify the target product and it’s preview channel from "Insider Channel" dropdown list.
+   - To set up for feature updates, you must specify the target product and its preview channel from "Insider Channel" dropdown list.
 
    > [!div class="mx-imgBorder"]
    > ![Set test matrix configure featureupdate](Media/settestmatrix04-configurefeatureupdate.png)
