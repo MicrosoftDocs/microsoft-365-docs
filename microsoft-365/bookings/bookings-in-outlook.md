@@ -219,6 +219,12 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
    Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
+### Create Bookings with me
+
+1. Open [Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+2. Select **Calendar**.
+3. Select the **Create bookings page** link that appears in your calendar to create Bookings with me.
+
 ## Frequently asked questions
 
 ### What is the difference between Bookings and Bookings with me?

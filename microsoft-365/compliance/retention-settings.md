@@ -408,9 +408,6 @@ Before you configure retention, first familiarize yourself with capacity and sto
 
 #### Relabeling at the end of the retention period
 
-> [!NOTE]
-> This option is in preview and subject to change.
-
 When you configure a retention label to automatically apply a different retention label at the end of the retention period, the item is then subject to the retention settings of the newly selected retention label. This option lets you automatically change the retention settings for the item.
 
 You can change the replacement label after you've created and saved the primary retention label. For items that already have the primary retention label applied and within the configured retention period, the change of replacement label will synchronize to these items. As with other label changes, allow up to 7 days for this synchronization period.
