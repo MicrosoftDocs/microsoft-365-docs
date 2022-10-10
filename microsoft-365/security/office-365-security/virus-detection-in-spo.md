@@ -16,7 +16,7 @@ search.appverid:
   - MET150
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Learn about how SharePoint Online detects viruses in files that users upload and prevents users from downloading or syncing the files.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
@@ -34,7 +34,7 @@ ms.service: microsoft-365-security
 Microsoft 365 uses a common virus detection engine for scanning files that users upload to SharePoint Online, OneDrive, and Microsoft Teams. This protection is included with all subscriptions that include SharePoint Online, OneDrive, and Microsoft Teams.
 
 > [!IMPORTANT]
-> The built-in anti-virus capabilities are a way to help contain viruses. They aren't intended as a single point of defense against malware for your environment. We encourage all customers to investigate and implement anti-malware protection at various layers and apply best practices for securing their enterprise infrastructure. For more information about strategies and best practices, see [Security roadmap](security-roadmap.md).
+> The built-in anti-virus capabilities are a way to help contain viruses. They aren't intended as a single point of defense against malware for your environment. We encourage all customers to investigate and implement anti-malware protection at various layers and apply best practices for securing their enterprise infrastructure. 
 
 ## What happens if an infected file is uploaded to SharePoint Online?
 

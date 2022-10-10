@@ -1,17 +1,20 @@
 ---
 title: "Set up a connector to archive YouTube data in Microsoft 365"
+description: "Admins can set up a connector to import and archive YouTube data from Veritas to Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365. After your archive this data, you can use compliance features such as legal hold, eDiscovery, and retention policies to manage third-party data."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: "Admins can set up a connector to import and archive YouTube data from Veritas to Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365. After your archive this data, you can use compliance features such as legal hold, eDiscovery, and retention policies to manage third-party data."
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ---
 
 # Set up a connector to archive YouTube data
@@ -19,6 +22,8 @@ description: "Admins can set up a connector to import and archive YouTube data f
 Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from YouTube to user mailboxes in your Microsoft 365 organization. Veritas provides a connector that is configured to capture items from a third-party data source and import those items to Microsoft 365. The connector converts content such as chats, attachments, tasks, notes, and posts from YouTube to an email message format and then imports those items to the user mailboxes in Microsoft 365.
 
 After YouTube data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels. Using a YouTube connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Overview of archiving YouTube data
 

@@ -17,8 +17,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - tier1
 ms.custom: 
   - admindeeplinkDEFENDER
   - intro-overview
@@ -142,7 +142,7 @@ Threat analytics is the Microsoft 365 Defender threat intelligence solution from
 > Along with the Product filter, current topics, types of resources (from videos to webinars), levels of familiarity or experience with security areas, security roles, and product features are listed.
 
 > [!TIP]
-> There are lots of other learning opportunities in [Microsoft Learn](/learn/). You'll find certification training such as [Course MS-500T02-A: Implementing Microsoft 365 Threat Protection](/learn/certifications/courses/ms-500t02).
+> There are lots of other learning opportunities in [Microsoft Learn](/training/). You'll find certification training such as [Course MS-500T02-A: Implementing Microsoft 365 Threat Protection](/training/certifications/courses/ms-500t02).
 
 ## Send us your feedback
 
@@ -169,7 +169,7 @@ With this learning path from Microsoft Learn, you can understand Microsoft 365 D
 |![Microsoft 365 Defender training icon.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Microsoft 365 Defender unifies threat signals across endpoints, identities, email, and applications to provide integrated protection against sophisticated cyber attacks. Microsoft 365 Defender is the central experience to investigate and respond to incidents and proactively search for ongoing malicious cyber security activities.<p> 1 hr 38 min - Learning Path - 5 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/paths/defender-detect-respond/)
+> [Start >](/training/paths/defender-detect-respond/)
 
 
 ## See also

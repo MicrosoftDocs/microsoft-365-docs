@@ -10,11 +10,13 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 09/09/2022
+ms.date: 09/29/2022
 ms.reviewer: tewchen
 search.appverid: met150
 ---
@@ -63,8 +65,9 @@ Deploy Removable Storage Access Control on Windows 10 and Windows 11 devices tha
 
 The Removable Storage Access Control includes Removable storage group creation and access policy rule creation:
 
-   - Removable storage group allows you to create group. For example, authorized USB group or encrypted USB group.
-   - Access policy rule allows you to create policy to restrict each removable storage group. For example, only allow authorized user to Write access-authorized USB group.
+- Removable storage group allows you to create group. For example, authorized USB group or encrypted USB group.
+- Access policy rule allows you to create policy to restrict each removable storage group. For example, only allow authorized user to Write access-authorized USB group.
+- To block a specific removable storage class but allow specific media, you can use ‘`IncludedIdList` a group through `PrimaryId` and `ExcludedIDList` a group through `DeviceId`\/`HardwareId`/etc.`  For additional guidance, see [Deploy Removable Storage Access Control by using Intune OMA-URI](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-oma-uri).
 
 Here are the properties you can use when you create the group and policy XML files.
 
@@ -124,7 +127,7 @@ DeviceEvents
 | extend MediaProductId = tostring(parsed.ProductId)
 | extend MediaVendorId = tostring(parsed.VendorId)
 | extend MediaSerialNumber = tostring(parsed.SerialNumber)
-|project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber
+|project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber, FolderPath, FileSize
 | order by Timestamp desc
 ```
 

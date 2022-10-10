@@ -1,9 +1,10 @@
 ---
 title: "Manage holds in eDiscovery (Premium)"
+description: Learn how to place holds on custodians and their data sources to preserve relevant content for your eDiscovery (Premium) case.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 04/27/2022
 audience: Admin
@@ -11,13 +12,12 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
-- SPO_Content
+- highpri
+- tier1
+- purview-compliance
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: Learn how to place holds on custodians and their data sources to preserve relevant content for your eDiscovery (Premium) case.
 ms.custom: 
 - seo-marvel-mar2020
 - admindeeplinkMAC
@@ -26,6 +26,8 @@ ms.custom:
 # Manage holds in eDiscovery (Premium)
 
 You can use an Microsoft Purview eDiscovery (Premium) case to create holds to preserve content that might be relevant to your case. Using the eDiscovery (Premium) hold capabilities, you can place holds on custodians and their data sources. Additionally, you can place a non-custodial hold on mailboxes and OneDrive for Business sites. You can also place a hold on the group mailbox, SharePoint site, and OneDrive for Business site for a Microsoft 365 Group. Similarly, you can place a hold on the mailbox and site that are associated with Microsoft Teams. When you place content locations on hold, content is held until you release the custodian, remove a specific data location, or delete the hold policy entirely.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Manage custodian-based holds
 

@@ -13,7 +13,9 @@ ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier1
 ---
 
 # Manage Microsoft Defender for Endpoint Plan 1

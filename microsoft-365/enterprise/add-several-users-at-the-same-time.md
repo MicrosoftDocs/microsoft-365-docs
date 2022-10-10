@@ -15,6 +15,8 @@ ms.custom:
 - 'O365M_AddUsersCSV'
 - 'O365E_AddUsersCSV'
 - admindeeplinkMAC
+ms.collection: 
+- scotvorg
 search.appverid:
 - MET150
 - MOP150

@@ -10,12 +10,14 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-identity-device-management
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 - m365solution-m365-identity
 - m365solution-overview
 - zerotrust-solution
+- highpri
 ms.custom:
 - intro-overview
 description: Deploy your identity infrastructure for Microsoft 365.

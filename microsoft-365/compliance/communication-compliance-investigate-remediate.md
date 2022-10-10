@@ -14,8 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
@@ -24,12 +24,17 @@ search.appverid:
 
 # Investigate and remediate communication compliance alerts
 
+>[!IMPORTANT]
+>Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy.
+
 After you've configured your [communication compliance policies](/microsoft-365/compliance/communication-compliance-policies), you'll start to receive alerts in the [Microsoft Purview compliance portal](https://compliance.microsoft.com) for message issues that match your policy conditions. To view and act on alerts, users must have the following permissions:
 
 - Be assigned to the *Communication Compliance Analysts* or the *Communication Compliance Investigators* role group
 - Be assigned as a reviewer in the policy associated with the alert
 
 After you have the required permissions, follow the workflow instructions here to investigate and remediate alert issues.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Investigate alerts
 
