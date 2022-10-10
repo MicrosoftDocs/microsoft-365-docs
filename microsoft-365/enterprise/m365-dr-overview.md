@@ -117,11 +117,11 @@ There are three methods for ensuring that the _tenant_ data location for a parti
 1. Only available for _Local Geography_ and _Expanded Local Geography countries_
 
 >[!NOTE]
->See ***Section 5 Workload Data Residency Capabilities PAGE LINK*** for more details
+>See the [Workload Data Residency Capabilities section](m365-dr-workload-exo.md) for more details on these topics.
 
 **Table 3: Available Data Residency by Country**
 
-| Exchange Online  | SharePoint Online  | Teams  | MDO P1  | Office for the web  | Viva Connections  | Viva Topics  |  Purview  |
+| Country    | Exchange Online  | SharePoint Online  | Teams  | MDO P1  | Office for the web  | Viva Connections  | Viva Topics  |  Purview  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Australia  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
 | Brazil  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
