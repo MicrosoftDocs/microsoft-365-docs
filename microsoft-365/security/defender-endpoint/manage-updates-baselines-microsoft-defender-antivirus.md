@@ -84,16 +84,16 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>September-2022 (Platform: 4.18.2209.3 | Engine: 1.1.19700.1)</summary>
+<summary>September-2022 (Platform: 4.18.2207.7 | Engine: 1.1.19600.3)</summary>
 
-&ensp;Security intelligence update version: **x.xxx.xxxx.x** (*version number coming soon*)<br/>
-&ensp;Release date: **October 6, 2022**<br/>
-&ensp;Platform: **4.18.2209.3**<br/>
-&ensp;Engine: **1.1.19700.1**<br/>
+&ensp;Security intelligence update version: **1.375.1857.0** (*final version number coming soon*)<br/>
+&ensp;Release date: **October 10, 2022**<br/>
+&ensp;Platform: **4.18.2207.7**<br/>
+&ensp;Engine: **1.1.19600.3**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
-Engine version: 1.1.19700.1<br/>
-Security intelligence update version: x.xxx.xxxx.x <br/>
+Engine version: 1.1.19600.3<br/>
+Security intelligence update version: 1.375.1857.0 (*final version number coming soon*)<br/>
 
 ### What's new
 
