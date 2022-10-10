@@ -127,7 +127,7 @@ To verify that you've successfully configured the global settings for Safe Links
 - In Exchange Online PowerShell or Exchange Online Protection PowerShell, run the following command and verify the settings:
 
   ```powershell
-  Get-AtpPolicyForO365 | Format-List BlockUrls,EnableSafeLinksForO365Clients,AllowClickThrough,TrackClicks
+  Get-AtpPolicyForO365 | Format-List BlockUrls
   ```
 
   For detailed syntax and parameter information, see [Get-AtpPolicyForO365](/powershell/module/exchange/get-atppolicyforo365).

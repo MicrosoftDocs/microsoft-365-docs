@@ -26,7 +26,9 @@ description: "X.509 certificate private key sensitive information type entity de
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Format
+This SIT is also included in the [All credentials](sit-defn-all-creds.md) bundled SIT.
+
+ ## Format
 
 A combination of up to 20,000 characters consisting of letters, digits, and special characters.
 
@@ -64,9 +66,18 @@ for example:
 `-----BEGIN PRIVATE KEY-----`
 
 
+## Credential example 
+
+`-----BEGIN PRIVATE KEY----- MIIPuQIBAzCCD38GCSqGSIb3DQEHAaCCD3AEgg9sMIIPaDCCBZ8GCSqGSIb3DQEHBqCCBZAw...`
+
+> [!IMPORTANT]
+> This example has been truncated. It’s not a detectable example of this SIT.
+
 ## Checksum
 
 Yes
+
+SITs that have checksums use a unique calculation to check if the information is valid. This means when the **Checksum** value is **Yes**, the service can make a positive detection based on the sensitive data alone. When the **Checksum** value is **No** additional (secondary) elements must also be detected  for the service to make a positive detection.
 
 ## Definition
 
