@@ -1,6 +1,6 @@
 ---
 title: Overview of Product Terms Data Residency
-description: 
+description: Learn about Product Terms Data Residency
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -35,6 +35,6 @@ There are no plans to add additional *Geographies* or Online services in the fut
 
 When Microsoft’s data centers were launched in *Local Geographies*, it was possible for any tenant with the appropriate *Default Geography* to opt in to move their data into the *Local Geographies*. This opt in period was open for six months after the Data Center was operational.
 
-Practically, this means that there are a number of tenants that did not opt in to move and remain in the *Regional Geography* data centers.  On our about Nov 1, 2022 with the introduction of the Advanced Data Residency add-on, all tenants that remain in the *Regional Geography* data centers will have another six month period to opt in for data migration to their *Local Geography*.  ***See section 7 for more information MUST PROVIDE PAGE LINK***.
+Practically, this means that there are a number of tenants that did not opt in to move and remain in the *Regional Geography* data centers.  On our about Nov 1, 2022 with the introduction of the Advanced Data Residency add-on, all tenants that remain in the *Regional Geography* data centers will have another six month period to opt in for data migration to their *Local Geography*.  See the [Legacy Move Program page](m365-dr-legacy-move-program.md#how-to-request-your-data-move---final-opportunity) for more details.
 
 ## FAQ
