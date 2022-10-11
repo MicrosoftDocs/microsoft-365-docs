@@ -33,6 +33,11 @@ With the tailored frontline app experience, your frontline workers get the most 
 
 Apps are pinned to the app bar, which is the bar at the bottom of the Teams mobile clients (iOS and Android) and on the side of the Teams desktop client. The following apps are pinned for users who have an [F license](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt):
 
+- [Viva Connections](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) (coming soon)
+
+    > [!NOTE]
+    > Viva Connections will soon be part of the frontline tailored apps experience. Frontline users who see the tailored app experience will have Viva Connections pinned in the first position on both mobile and desktop. This experience includes a default dashboard with relevant frontline cards such as Tasks, Shifts, Approvals, and Top News that can be customized to fit the needs of your organization. If your organization has already setup a Viva Connections homesite, that will take precedence over the default experience.  
+
 - [Activity](https://support.microsoft.com/office/explore-the-activity-feed-in-teams-91c635a1-644a-4c60-9c98-233db3e13a56)
 - [Chat](https://support.microsoft.com/office/get-started-with-chat-0b506ce2-eb6d-4fca-9668-e56980ba755e)
 - [Teams](https://support.microsoft.com/office/teams-and-channels-in-microsoft-teams-c6d0e61d-a61e-44a6-a972-04f2a8fa4155)
@@ -40,10 +45,6 @@ Apps are pinned to the app bar, which is the bar at the bottom of the Teams mobi
 - [Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070)
 - [Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821)
 - [Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3)
-- [Viva Connections](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) (coming soon)
-
-> [!NOTE]
-> Viva Connections will soon be part of the frontline tailored apps experience. Frontline users who see the tailored app experience will have Viva Connections pinned in the first position on both mobile and desktop. This experience includes a default dashboard with relevant frontline cards such as Tasks, Shifts, Approvals, and Top News that can be customized to fit the needs of your organization. If your organization has already setup a Viva Connections homesite, that will take precedence over the default experience.  
 
 **Teams mobile**
 
