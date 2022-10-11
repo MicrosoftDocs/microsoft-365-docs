@@ -129,8 +129,6 @@ These scenarios require that you already have devices onboarded and reporting in
 
 ## Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine (preview)
 
-#[!INCLUDE [purview-preview](../includes/purview-preview.md)]
-
 ## Before you begin scenario 4
 
 In this scenario, synchronizing files with the **Highly Confidential** sensitivity label to OneDrive is blocked. This is a complex scenario with multiple components and procedures. You will need:
@@ -300,10 +298,11 @@ Here are some examples:
 1. Select **Save**.
 1. Select **Policies**.
 1. Create and scope a policy that is applied only to **Devices**. See, [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) for more information on how to create a policy.
-1. Create a rule that uses the **the user accessed a sensitive site from Edge**, and the action **Audit or restrict activities when users access sensitive sites in Microsoft Edge browser on Windows devices**.
-1. In the action select **Add or remove Sensitive site groups**.
+1. Create a rule that uses the **The user accessed a sensitive site from Edge**, and the action **Audit or restrict activities on devices**.
+1. In **Service domain and browser activities** select **Upload to a restricted cloud service domain or access from an unallowed browser** and set the action to **Audit only**. This sets the overall action for all the site groups.
 1. Select the **Sensitive site groups** you want.
 1. Select **Add**.
+1. OPTIONAL: If you want to create an exception (usually an allowlist) to the overall action for one or more site groups, select **Configure sensitive service domain exceptions**, add the site group you want the exception for, configure the desired action and **Save** the configuration.
 1. Select the user activities you want to monitor or restrict and the actions you DLP to take in response to those activities.
 1. Finish configuring the rule and policy and apply it.
 

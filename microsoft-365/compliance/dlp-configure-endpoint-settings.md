@@ -109,7 +109,7 @@ Similar to Windows 10 devices you can add your own exclusions for macOS devices.
 
 - Wildcard values are supported. So a path definition can contain a `*` in the middle of the path or at the end of the path. For example: `/Users/*/Library/Application Support/Microsoft/Teams/*`
 
-#####  Recommended file path exclusions (preview)
+##### Recommended file path exclusions (preview)
 
 For performance reasons, Endpoint DLP includes a list of recommended file path exclusions for macOS devices. These exclusions are turned on by default. You can disable them if you want by toggling the **Include recommended file path exclusions for Mac** toggle. The list includes:
 
@@ -263,8 +263,9 @@ When you list a website in Sensitive services domains you can audit, block with 
 - print from a website
 - copy data from a website
 - save a website as local files
+- upload a sensitive file to an excluded website (this is configured in the policy)
 
-Each website must be listed in a website group and the user must be accessing the website through Microsoft Edge. The sensitive service domains setting is used with a DLP policy for Devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
+For the print, copy data and save actions, each website must be listed in a website group and the user must be accessing the website through Microsoft Edge. For the upload action, the user can be using Microsoft Edge or Google Chrome with the Purview extension. Sensitive service domains is used in conjunction with a DLP policy for Devices. You can also define website groups that you want to assign policy actions to that are different from the global website group actions. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
 
 
 ### Additional settings for endpoint DLP
