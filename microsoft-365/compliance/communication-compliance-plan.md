@@ -37,7 +37,7 @@ You can also check out the [Microsoft Mechanics video](https://www.youtube.com/w
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Transition from supervision in Office 365
+## Transition from Supervision in Office 365
 
 For organizations using supervision policies in Office 365, you should immediately plan to transition to communication compliance policies in Microsoft Purview and need to understand these important points:
 
