@@ -65,7 +65,7 @@ Endpoint Attack Notifications can be identified by:
 > If you have enrolled for Endpoint Attack Notifications but are not seeing any alerts from the service, it indicates that you have a strong security posture and are less prone to attacks.
 
 ## Create an email notification rule
-You can create rules to send email notifications for notification recipients. See [Configure alert notifications](configure-email-notifications.md) to create, edit, delete, or troubleshoot email notification, for details.
+You can create rules to send email notifications for notification recipients. See [Configure alert notifications](../../security/defender-endpoint/configure-email-notifications.md) to create, edit, delete, or troubleshoot email notification, for details.
 
 
 ## Next steps
