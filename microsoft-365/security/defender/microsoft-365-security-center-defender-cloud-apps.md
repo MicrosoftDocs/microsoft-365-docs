@@ -2,7 +2,8 @@
 title: Microsoft Defender for Cloud Apps in Microsoft 365 Defender (Preview)
 description: Learn about changes from the Microsoft Defender for Cloud Apps to Microsoft 365 Defender
 keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Cloud Apps
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -10,14 +11,15 @@ f1.keywords:
 ms.author: dacurwin
 author: dcurwin
 manager: dansimp
-ms.date: 05/03/2022
+ms.date: 08/21/2022
 audience: ITPro
 ms.topic: article
 search.appverid: 
 - MOE150
 - MET150
 ms.collection: 
-- M365-security-compliance 
+- m365-security 
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ---
 
@@ -69,8 +71,9 @@ The image and the table below lists the changes in navigation between Microsoft 
 
 > [!NOTE]
 > The new Defender for Cloud Apps experience in the Microsoft 365 Defender portal is currently available for all users detailed in [Manage admin access](/defender-cloud-apps/manage-admins), except for:
-> * **App/Instance admin**, **User group admin**, **Cloud Discovery global admin**, and **Cloud Discovery report admin**, as defined in [Built-in admin roles in Defender for Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
-> * User privacy groups as defined in [Activity privacy](/defender-cloud-apps/activity-privacy)
+>
+> - **App/Instance admin**, **User group admin**, **Cloud Discovery global admin**, and **Cloud Discovery report admin**, as defined in [Built-in admin roles in Defender for Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
+> - User privacy groups as defined in [Activity privacy](/defender-cloud-apps/activity-privacy)
 
 ## What's changed
 

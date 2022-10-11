@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: how-to
 f1_keywords: 
   - 'ms.o365.cc.PermissionsHelp'
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 search.appverid: 
   - MOE150
@@ -18,8 +18,8 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Users need to be assigned permissions in the Microsoft 365 Security & Compliance Center before they can manage any of its security or compliance features.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Give users access to the Security & Compliance Center

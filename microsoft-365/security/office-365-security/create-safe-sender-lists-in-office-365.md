@@ -8,7 +8,7 @@ manager: dansimp
 ms.date:
 audience: ITPro
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 search.appverid:
   - MET150s
@@ -16,8 +16,8 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about the available and preferred options to allow inbound messages in Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Create safe sender lists in EOP
@@ -48,7 +48,7 @@ Mail flow rules allow the most flexibility to ensure that only the right message
 >
 > - While you can use safe sender lists to help with false positives (good email marked as bad), you should consider the use of safe sender lists as a temporary solution that should be avoided if possible. We don't recommend managing false positives by using safe sender lists, because exceptions to spam filtering can open your organization to spoofing and other attacks. If you insist on using safe sender lists to manage false positives, you need to be vigilant and keep the topic [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md) at the ready.
 >
-> - To allow a domain to send unauthenticated email (bypass anti-spoofing protection) but not bypass anti-spam and other protections, you can use the [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [Tenant Allow/Block List](tenant-allow-block-list.md).
+> - To allow a domain to send unauthenticated email (bypass anti-spoofing protection) but not bypass anti-spam and other protections, you can use the [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [Tenant Allow/Block List](manage-tenant-allow-block-list.md).
 >
 > - EOP and Outlook inspect different message properties to determine the sender of the message. For more information, see the [Considerations for bulk email](#considerations-for-bulk-email) section later in this article.
 >

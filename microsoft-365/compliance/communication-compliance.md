@@ -14,10 +14,12 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- m365-security-compliance
+- highpri 
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 - MOE150
@@ -25,8 +27,8 @@ search.appverid:
 
 # Learn about communication compliance
 
-> [!TIP]
-> *Did you know you can try the premium versions of all nine Microsoft Purview solutions for free?* Use the 90-day Purview solutions trial to explore how robust Purview capabilities can help your organization meet its compliance needs. Microsoft 365 E3 and Office 365 E3 customers can start now at the [Microsoft Purview compliance portal trials hub](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Learn details about [who can sign up and trial terms](/microsoft-365/compliance/compliance-easy-trials).
+>[!IMPORTANT]
+>Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy.
 
 Microsoft Purview Communication Compliance is an insider risk solution that helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate actions to make sure they're compliant with your organization's message standards.
 
@@ -57,6 +59,8 @@ To keep up with the latest communication compliance updates, select **What's new
 
 > [!IMPORTANT]
 > Communication compliance is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that communication compliance is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Scenarios for communication compliance
 
@@ -125,6 +129,10 @@ Communication compliance policies scan and capture messages across several commu
 - **Third-party sources**: You can scan messages from [third-party sources](/microsoft-365/compliance/archiving-third-party-data) for data imported into mailboxes in your Microsoft 365 organization. Communication compliance supports connections to several popular platforms, including Instant Bloomberg and others.
 
 To learn more about messaging channel support in communication compliance policies, see [Detect channel signals with communication compliance](/microsoft-365/compliance/communication-compliance-channels).
+
+## Get started with recommended actions (preview)
+
+Whether you're setting up communication compliance for the first time or getting started with creating new policies, the new [recommended actions](/microsoft-365/compliance/communication-compliance-configure#recommended-actions-preview) experience can help you get the most out of communication compliance capabilities. Recommended actions include setting up permissions, creating distribution groups, creating a policy, and more
 
 ## Workflow
 

@@ -2,7 +2,7 @@
 title:  Run the client analyzer on macOS or Linux
 description: Learn how to run the Microsoft Defender for Endpoint Client Analyzer on macOS or Linux
 keywords: client analyzer, troubleshoot sensor, analyzer, mdeanalyzer, macos, linux, mdeanalyzer
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
-ms.technology: m365d
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Run the client analyzer on macOS and Linux
@@ -30,7 +33,7 @@ ms.technology: m365d
 1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.
 
    > [!NOTE]
-   > The current SHA256 hash of 'XMDEClientAnalyzer.zip' that is downloaded from the above link is: 'bf102a79626c88fe58b5be3034640835f96f54230292486716d72f515875966c'.
+   > The current SHA256 hash of 'XMDEClientAnalyzer.zip' that is downloaded from the above link is: 'BF102A79626C88FE58B5BE3034640835F96F54230292486716D72F515875966C'
 
 2. Extract the contents of XMDEClientAnalyzer.zip on the machine.
 
@@ -65,7 +68,7 @@ Open a terminal or SSH into the relevant machine and run the following commands:
 > - In addition, the tool currently requires Python version 3 or later to be installed.
 >
 > - If you are running on a machine that cannot use Python 3 or fetch the lxml component, then you can download a binary based version of the analyzer that does not have any of the requirements: [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary). <br> Note that the binary is currently unsigned. To allow the package run on MacOS, you will need to use the syntax: "spctl --add /Path/To/Application.app".
-> - The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: '7FE67373CDF493BF2748FD778BD106EE85A71C968D594BCC67C7374620506EF2'
+> - The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: '6FEB44EF2D9FEB8C8093A016FAB2B5F3ED580931008066BF134E8B1E04CAB222'
 >
 > - If your device is behind a proxy, then you can simply pass the proxy server as an environment variable to the mde_support_tool.sh script. For example:
 > `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`

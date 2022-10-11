@@ -6,9 +6,10 @@ author: brendacarter
 manager: bcarter
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-identity-device-management
 - M365-security-compliance
 - M365solutions
@@ -157,7 +158,7 @@ Read about [Microsoft Fluid Framework](https://techcommunity.microsoft.com/t5/mi
 
 Overall, it's becoming harder to draw a clear line between Office 365 and other services in Microsoft clouds. I view it as a great benefit to customers since they can benefit from total innovation across everything we do even if they use one component. Pretty cool and has far reaching implications for many customers.
 
-Today, I find many customer IT groups are structured around "products." It's logical for an on-premises world since you need an expert for each specific product. However, I'm totally happy that I don't have to debug an Active Directory or Exchange database ever again as these services have moved to the cloud. Automation (which cloud kind of is) removes certain repetitive manual jobs (look what happened to factories). However, these tasks are replaced with more complex requirements to understand cross-services interaction, impact, business needs, and so on. If you are willing to [learn](/learn/), there are great opportunities enabled by cloud transformation. Before jumping into technology, I often talk to customers about managing change in IT skills and team structures.
+Today, I find many customer IT groups are structured around "products." It's logical for an on-premises world since you need an expert for each specific product. However, I'm totally happy that I don't have to debug an Active Directory or Exchange database ever again as these services have moved to the cloud. Automation (which cloud kind of is) removes certain repetitive manual jobs (look what happened to factories). However, these tasks are replaced with more complex requirements to understand cross-services interaction, impact, business needs, and so on. If you are willing to [learn](/training/), there are great opportunities enabled by cloud transformation. Before jumping into technology, I often talk to customers about managing change in IT skills and team structures.
 
 To all SharePoint fan-people and developers, please stop asking "How can I do XYZ in SharePoint online?" Use [Power Automate](/power-automate/) (or Flow) for workflow, it's a much more powerful platform. Use [Azure Bot Framework](/azure/bot-service/) to create a better UX for your 500-K item list. Start using [Microsoft Graph](https://developer.microsoft.com/graph/) instead of CSOM. [Microsoft Teams](/MicrosoftTeams/Teams-overview) includes SharePoint but also a world more. There are many other examples I can list. There's a vast and wonderful universe out there. Open the door and [start exploring]().
 

@@ -13,9 +13,12 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 description: "Endpoint data loss prevention extends monitoring of file activities and protective actions for those files to endpoints. Files are made visible in the Compliance solutions "
@@ -33,6 +36,8 @@ You can use Microsoft Purview Data Loss Prevention (DLP) to monitor the actions 
 > [!NOTE]
 > In Microsoft Purview, DLP policy evaluation of sensitive items occurs centrally, so there is no time lag for policies and policy updates to be distributed to individual devices. When a policy is updated in compliance center, it generally takes about an hour for those updates to be synchronized across the service. Once policy updates are synchronized, items on targeted devices are automatically re-evaluated the next time they are accessed or modified.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Endpoint activities you can monitor and take action on
 
 Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items that are physically stored Windows 10, Windows 11, or macOS devices.
@@ -40,7 +45,7 @@ Endpoint DLP enables you to audit and manage the following types of activities u
 |Activity |Description  |Windows 10 1809 and later/ Windows 11| macOS Catalina 10.15 and later | Auditable/restrictable|
 |---------|---------|---------|---------|---------|
 |upload to cloud service, or access by unallowed browsers    | Detects when a user attempts to upload an item to a restricted service domain or access an item through a browser.  If they are using a browser that is listed in DLP as an unallowed browser, the upload activity will be blocked and the user is redirected to use Microsoft Edge. Microsoft Edge will then either allow or block the upload or access based on the DLP policy configuration         |supported | supported|auditable and restrictable|
-|copy to other app    |Detects when a user attempts to copy information from a protected item and then paste it into another app, process or item. Copying and pasting information within the same app, process, or item is not detected by this activity.|supported|supported         | auditable and restrictable|
+|copy to other app    |Detects when a user attempts to copy information from a protected item and then paste it into another app, process or item. It also detects when a user copies and pastes content among files within the same app, process or item for Word, Excel, and PowerPoint.|supported|supported         | auditable and restrictable|
 |copy to USB removable media |Detects when a user attempts to copy an item or information to removable media or USB device.|supported|supported         | auditable and restrictable|
 |copy to a network share    |Detects when a user attempts to copy an item to a network share or mapped network drive |supported|supported         |auditable and restrictable|
 |print a document    |Detects when a user attempts to print a protected item to a local or network printer.|supported|supported|auditable and restrictable         |
@@ -61,7 +66,7 @@ See, [Design a data loss prevention policy](dlp-policy-design.md) for more guida
 
 ## Monitored files
 
-Endpoint DLP supports monitoring of these file types. DLP audits the activities for these file types, even if there isn't a policy match. 
+Endpoint DLP supports monitoring of these file types through policy:
 
 - Word files
 - PowerPoint files
@@ -72,12 +77,19 @@ Endpoint DLP supports monitoring of these file types. DLP audits the activities 
 - .txt files
 - .rtf files
 - .c files
-- .class files
+- .class files (Windows only)
 - .cpp files
 - .cs files
 - .h files
 - .java files
  
+DLP audits the activities for these file types, even if there isn't a policy match: 
+
+- Word files
+- PowerPoint files
+- Excel files
+- PDF files
+
 If you only want monitoring data from policy matches, you can turn off the **Always audit file activity for devices** in the endpoint DLP global settings.
 
 > [!NOTE]
@@ -97,8 +109,9 @@ File Types are a grouping of file formats which are utilized to protect specific
 |word processing |Word, PDF | .doc, .docx,  .docm, .dot, .dotx, .dotm, .docb, .pdf |
 |spreadsheet    |Excel, CSV, TSV |.xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .csv, .tsv         |
 |presentation |PowerPoint|.ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx|
-|archive  |file archive and compression tools | .zip, .zipx, .rar, .7z, .tar, .gz        |
+|archive  |file archive and compression tools | .zip, .zipx, .rar, .7z, .tar, .gz |
 |email    |Outlook |.pst, .ost, .msg         |
+
 
 ### File extensions
 
@@ -138,7 +151,7 @@ Onboarding and offboarding are handled via scripts you download from the Device 
 
  Use the procedures in [Getting started with Microsoft 365 Endpoint DLP](endpoint-dlp-getting-started.md) to onboard devices.
 
-If you have onboarded devices through [Microsoft Defender for Endpoint](../security/defender-endpoint/configure-machines-onboarding.md), those devices will automatically show up in the list of devices. This is because onboarding to Defender also onboards devices to DLP. You only need to **Turn on device monitoring** to use endpoint DLP. .
+If you have onboarded devices through [Microsoft Defender for Endpoint](../security/defender-endpoint/configure-machines-onboarding.md), those devices will automatically show up in the list of devices. This is because onboarding to Defender also onboards devices to DLP. You only need to **Turn on device monitoring** to use endpoint DLP.
 
 > [!div class="mx-imgBorder"]
 > ![managed devices list.](../media/endpoint-dlp-learn-about-2-device-list.png)

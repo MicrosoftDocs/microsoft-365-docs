@@ -7,12 +7,16 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 08/16/2022
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -25,26 +29,20 @@ description: "An overview for how to set up and secure managed devices from secu
 
 :::image type="content" source="media/mission6.png" alt-text="Secure managed devices with Defender for Business.":::
 
-Welcome to your final critical mission. Here, you'll onboard and implement protection for all the managed devices in your organization. [Onboard your devices to Defender for Business](../security/defender-business/mdb-onboard-devices.md) to help ensure those devices are protected from ransomware, malware, phishing, and other threats. You can also make sure Windows devices are protected and ready for Office deployment. When you're done, you can rest assured, knowing you've done what you can to protect your organization when these objectives have been achieved!
+**Welcome to your final critical mission**! Here, you'll onboard and implement protection for all the managed devices in your organization. Microsoft Defender for Business capabilities now included in Microsoft 365 Business Premium can help ensure that your organization's devices are protected from ransomware, malware, phishing, and other threats. When you're done completing your objectives, you can rest assured, knowing you've done your part to protect your organization!
 
 Your objectives are to:
 
-- [Set up managed devices](m365bp-managed-devices-setup.md)
-- [Onboard enrolled devices and apply policies](m365bp-onboard-devices-mdb.md)
-- Protect Windows devices by taking these steps:
-   - [Upgrade Windows devices to Windows 10 Pro](m365bp-upgrade-windows-10-pro.md) (if necessary)
-   - [Learn about threat protection by Microsoft Defender Antivirus](m365bp-threats-detected-defender-av.md)
-   - [Secure Windows devices with default settings](m365bp-secure-windows-devices.md)
-   - [Manage Windows devices with Microsoft 365 Business Premium](m365bp-manage-windows-devices.md)
-   - [Prepare to automatically install Office apps to client computers](m365bp-prepare-for-office-client-deployment.md)
-   - [Validate device protection settings for Windows 10 or 11 PCs](m365bp-validate-settings-on-windows-10-pcs.md)
-- [Review and edit device policies](m365bp-view-edit-create-mdb-policies.md)
-- [Manage device groups](m365bp-device-groups-mdb.md)
+- [Upgrade Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro to Windows 10 or 11 Pro](m365bp-upgrade-windows-10-pro.md).
+- [Onboard devices to Defender for Business and apply security policies](m365bp-onboard-devices-mdb.md).
+- [Use Windows Autopilot to set up and configure new devices, or to reset, repurpose, and recover devices](/mem/autopilot/windows-autopilot).
+- [Install Microsoft 365 Apps](../admin/setup/install-applications.md) on any devices that don't already have Office applications
 
 Once these objectives have been achieved, your overall mission to protect your organization against cyberattacks and other cybersecurity threats is a success! Now, make sure to set up your response teams to deal with any situation that may arise while defending the integrity of the system. See your next steps!
 
 ## Next steps
 
+- [Manage devices in Microsoft Defender for Business](../security/defender-business/mdb-manage-devices.md)
 - [Set up a security operations process](m365bp-security-incident-quick-start.md).
 - [Learn about security incident management](m365bp-security-incident-management.md).
 - [Learn how to maintain your environment](m365bp-maintain-environment.md).

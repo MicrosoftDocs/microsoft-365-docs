@@ -14,14 +14,17 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
 ---
 
 # Plan for communication compliance
+
+>[!IMPORTANT]
+>Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy.
 
 Before getting started with [communication compliance](/microsoft-365/compliance/communication-compliance) in your organization, there are important planning activities and considerations that should be reviewed by your information technology and compliance management teams. Thoroughly understanding and planning for deployment in the following areas will help ensure that your implementation and use of communication compliance features goes smoothly and is aligned with the best practices for the solution.
 
@@ -31,6 +34,8 @@ You can also check out the [Microsoft Mechanics video](https://www.youtube.com/w
 
 > [!IMPORTANT]
 > Communication compliance is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that communication compliance is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Transitioning from Supervision in Office 365
 

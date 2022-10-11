@@ -15,11 +15,11 @@ search.appverid:
   - MET150
 ms.assetid:
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: Admins can learn how to use the configuration analyzer to find and fix security policies that are below the settings in Standard protection and Strict protection in preset security policies.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365

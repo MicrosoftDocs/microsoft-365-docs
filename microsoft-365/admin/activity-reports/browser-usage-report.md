@@ -5,9 +5,10 @@ author: sarahwxy
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -24,7 +25,7 @@ description: "Learn how to get a Microsoft browser usage report using the Micros
 
 The Microsoft 365 Reports dashboard shows you an activity overview across the products in your organization. It enables you to drill into individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). 
 
-The **Microsoft Browser Usage report** in the Microsoft 365 Admin Center lets you see if users access Microsoft 365 online services via Microsoft Edge. This report insight can help you migrate your organization to Microsoft Edge. Usage reporting is based on an aggregate count of users in your organization that sign in to their Microsoft 365 account and use the Microsoft Edge browser to access Microsoft 365 services
+The **Microsoft Browser Usage report** in the Microsoft 365 Admin Center lets you see if users access Microsoft 365 online services via Microsoft Edge. This report insight can help you migrate your organization to Microsoft Edge. Usage reporting is based on an aggregate count of users in your organization that sign in to their Microsoft 365 account and use the Microsoft Edge browser to access Microsoft 365 services.
 
 ## How to get to the Microsoft browser usage report
 
@@ -46,7 +47,7 @@ The **Active Users** chart shows you the total number of users accessing Microso
 The report is internal to your organization with permissions limited to IT admins with existing access to the activity reports on the usage dashboard in the Microsoft 365 Admin Center.
 
 > [!NOTE]
-> Aggregate Microsoft browser usage and user level reporting is available. User level identification can be [removed per your organization’s policies](activity-reports.md#show-user-details-in-the-reports) and [role based access controls](/add-users/assign-admin-roles.md) can be used to adjust report access.
+> Aggregate Microsoft browser usage and user level reporting is available. User level identification can be [removed per your organization’s policies](activity-reports.md#show-user-details-in-the-reports) and [role based access controls](../../admin/add-users/assign-admin-roles.md) can be used to adjust report access.
 
 
 |Item|Description|

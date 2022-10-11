@@ -14,12 +14,12 @@ search.appverid:
   - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: Admins can learn about threat protection in Microsoft 365 and configure how to use it for your organization.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Protect against threats

@@ -14,10 +14,12 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- m365-security-compliance
+- highpri 
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
@@ -26,7 +28,12 @@ search.appverid:
 
 # Get started with communication compliance
 
+>[!IMPORTANT]
+>Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy.
+
 Use communication compliance policies to identify user communications for examination by internal or external reviewers. For more information about how communication compliance policies can help you detect communications in your organization, see [communication compliance policies](/microsoft-365/compliance/communication-compliance-policies). If you'd like to review how Contoso quickly configured a communication compliance policy to detect inappropriate content in Microsoft Teams, Exchange Online, and Yammer communications, check out this [case study](/microsoft-365/compliance/communication-compliance-case-study).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Subscriptions and licensing
 
@@ -49,15 +56,37 @@ If you don't have an existing Office 365 Enterprise E5 plan and want to try comm
 > [!NOTE]
 > Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
 
-## Recommended actions
+## Recommended actions (preview)
 
-Recommended actions can help your organization get started with communication compliance capabilities and get the most out of your existing policies. Included on the **Policies** page, recommended actions provide insights and summarizes sensitive information types and inappropriate content activities in communications in your organization. Insights are supported by [data classification](/microsoft-365/compliance/data-classification-overview) and the application of sensitivity labels, retention labels, and sensitive information type classification. These insights don't include any personally identifiable information (PII) for users in your organization.
+Recommended actions can help your organization quickly get started with communication compliance. Included on the **Overview** page, recommended actions will help guide you through the steps to configure and deploy policies.
+
+The following recommendations are available to help you get started with or maximize your communication compliance configuration:
+
+- **Get to know communication compliance**: Before setting up things, review our official documentation to learn about, plan for, and deploy communication compliance in your organization.
+- **Assign permissions to ensure your team can get their jobs done**: Ensure that only the appropriate stakeholders can access the solution, by assigning team members responsible for managing communication compliance features and investigating and reviewing alerts.
+- **Create distribution groups for users' whose communications you want to detect**: We recommend creating distribution groups containing users who will be included in communication compliance policies.
+- **Create your first policy to start detecting communications**: To investigate potential regulatory compliance violations, you must first set up a policy that detects potential violations across your organization's internal and/or external communications.
+- **Review alerts to investigate detected messages and take action**: Messages that match a policy's conditions will trigger alerts that provide context around a policy violation so you can investigate and take action if needed.
+- **Review reports for quick insights into how policies are performing**: Get quick insights into how your policies are performing, view detailed reports to drill down further, and export results for further analysis.
+
+Each recommended action included in this experience has three attributes:
+
+- **Action**: The name and description of the recommended action.
+- **Recommended, required or optional**: Whether the recommended action is highly recommended, required, or optional for communication compliance features to function as expected.
+- **Estimated time to complete**: Estimated time to complete the recommended action in minutes.
+
+Select a recommendation from the list to get started with configuring communication compliance. Each recommended action guides you through the required activities for the recommendation, including any requirements, what to expect, and the impact of configuring the feature in your organization. Some recommended actions will be automatically marked as complete when configured. If not, you'll need to manually select the action as complete when configured.
+
+Also included on the Policies page, recommended actions insights help summarize current sensitive information types and potential regulatory compliance violations in communications in your organization. Insights are supported by [data classification](/microsoft-365/compliance/data-classification-overview) and the application of sensitivity labels, retention labels, and sensitive information type classification. These insights are aggregated and don't include any personally identifiable information (PII) for users in your organization.
 
 ![Communication compliance recommended actions.](../media/communication-compliance-recommended-actions.png)
 
-Activity in messages containing inappropriate content is aggregated by [classifier type](/microsoft-365/compliance/communication-compliance-policies#classifiers) from existing policies that use the inappropriate content template or custom policies that use classifiers for inappropriate content. Investigate alerts for these messages on the Alert dashboard for your policies.
+Activity in messages is aggregated by [classifier type](/microsoft-365/compliance/communication-compliance-policies#classifiers) from existing policies that use the *Detect inappropriate text* policy template or custom policies that use classifiers. Investigate alerts for these messages on the **Alert dashboard** for your policies.
 
-Activity involving [sensitive information types](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) is detected in messages covered in existing policies and for messages that aren't covered by existing policies. Insights are aggregated for all sensitive information types, including ones that your organization hasn't previously defined in an existing communication compliance policy. Use these insights to create a new communication compliance policy or to update existing policies.
+Activity involving [sensitive information types](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) is detected in messages covered in existing policies and for messages that aren't covered by existing policies. Insight messages that aren't covered by existing policies can't be investigated and remediated, a new policy must be created to detect and remediate similar activity in future messages. Insights are aggregated for all sensitive information types, including ones that your organization hasn't previously defined in an existing communication compliance policy. Use these insights to create a new communication compliance policy or to update existing policies. After creating a new policy, messages alerts for this policy might or might not match an equal number of messages identified in a similar insight. Your policy might have different conditions, a different number of in-scope users, and only detects message activity that occurs after the policy is active.
+
+>[!TIP]
+>Don't want to see the recommended action insights? Open a request with Microsoft Support to disable the display of these insight widgets for your organization.
 
 ## Step 1 (required): Enable permissions for communication compliance
 

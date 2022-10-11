@@ -11,7 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 ms.custom: admindeeplinkSPO
 search.appverid: 
@@ -32,16 +33,20 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to protect docu
 - Access from unmanaged devices
 - Authentication contexts (in preview)
 - Default sharing link for a SharePoint site (PowerShell-only configuration)
-- In preview: Site sharing settings (PowerShell-only configuration)
+- Site sharing settings (PowerShell-only configuration)
 
 > [!IMPORTANT]
 > The settings for unmanaged devices and authentication contexts work in conjunction with Azure Active Directory Conditional Access. You must configure this dependent feature if you want to use a sensitivity label for these settings. Additional information is included in the instructions that follow.
 
 When you apply this sensitivity label to a supported container, the label automatically applies the sensitivity category and configured protection settings to the site or group.
 
+Be aware that some label options can extend configuration settings to site owners, that are otherwise restricted to administrators. When you configure and publish the label settings for external sharing options and the authentication context, a site owner can now set and change these options for a site by applying or changing the sensitivity label for a team or site. Don't configure these specific label settings if you don't want site owners to be able to make these changes.
+
 Content in these containers however, do not inherit the labels for the sensitivity category or settings for files and emails, such as content markings and encryption. So that users can label their documents in SharePoint sites or team sites, make sure you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 Container labels don't support displaying [other languages](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell) and display the original language only for the label name and description.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Using sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites
 
@@ -180,9 +185,6 @@ In addition to the label settings for sites and groups that you can configure fr
 For more information and instructions, see [Use sensitivity labels to configure the default sharing link type for sites and documents in SharePoint and OneDrive](sensitivity-labels-default-sharing-link.md).
 
 ### Configure site sharing permissions by using PowerShell advanced settings
-
-> [!NOTE]
-> This label setting is currently in preview.
 
 Another PowerShell advanced setting that you can configure for the sensitivity label to be applied to a SharePoint site is **MembersCanShare**. This setting is the equivalent configuration that you can set from the SharePoint admin center > **Site permissions** > **Site Sharing** > **Change how members can share** > **Sharing permissions**. 
 

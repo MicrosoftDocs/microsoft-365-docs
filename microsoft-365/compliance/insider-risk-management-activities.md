@@ -11,13 +11,20 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Investigate insider risk management activities
 
+>[!IMPORTANT]
+>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
+
 Investigating risky user activities is an important first step in minimizing insider risks for your organization. These risks may be activities that generate alerts from insider risk management policies, or risks from activities that are detected by policies but don't immediately create an insider risk management alert for users. You can investigate these types of activities by using the **User activity reports (preview)** or with the **Alert dashboard**.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## User activity reports (preview)
 
@@ -136,6 +143,7 @@ This tab opens the summary of risk factors for the user's alert activity. Risk f
 - **Priority content**: Displays activities associated with priority content.
 - **Unallowed domains**: Displays activities for events associated with unallowed domains.
 - **Health record access**: Displays activities for events associated with accessing health records.
+- **Risky browser usage**: Displays activities for events associated with browsing to potentially inappropriate websites.
 
 With these filters, you'll only see alerts with these risk factors, but the activity that generated an alert might not fall into any of these categories. For example, an alert containing sequence activities might have been generated simply because the user copied a file to a USB device.
 
@@ -197,6 +205,7 @@ Use the Activity scope and Risk insight filters to display and sort activities a
   - Sequence activities
   - Cumulative exfiltration activities
   - Health record access activities
+  - Risky browser usage
 
 ![Insider risk management activity explorer overview.](../media/insider-risk-activity-explorer.png)
 
@@ -269,4 +278,4 @@ Modern workplace users often have a wide variety of responsibilities and demands
 
 - **Focus analyst and investigator efforts on the highest risk alerts first**. Depending on your policies, you may be capturing activities and generating alerts with varying degrees of potential impact to your risk mitigation efforts. [Filter alerts](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard) by severity and prioritize *High severity* alerts.
 - **Assign users as analysts and investigators**. Having the right user assigned to the proper roles is an important part of the insider risk alert review process. Make sure you've assigned the appropriate users to the *Insider Risk Management Analysts* and *Insider Risk Management Investigators* role groups.  
-- **Use automated insider risk features to help discover the highest risk activities**. Insider risk management [sequence detection](insider-risk-management-policies.md#sequence-detection) and [cumulative exfiltration detection](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) features can help you quickly discover harder to find risks in your organization. Consider fine-tuning your [risk score boosters](insider-risk-management-settings.md#indicators), [file type exclusions](insider-risk-management-settings.md#file-type-exclusions), [domains](insider-risk-management-settings.md#domains), and the minimum [indicator threshold settings](insider-risk-management-settings.md#indicator-level-settings-preview) for your policies.
+- **Use automated insider risk features to help discover the highest risk activities**. Insider risk management [sequence detection](insider-risk-management-policies.md#sequence-detection-preview) and [cumulative exfiltration detection](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) features can help you quickly discover harder to find risks in your organization. Consider fine-tuning your [risk score boosters](insider-risk-management-settings.md#indicators), [file type exclusions](insider-risk-management-settings.md#file-type-exclusions), [domains](insider-risk-management-settings.md#domains), and the minimum [indicator threshold settings](insider-risk-management-settings.md#indicator-level-settings-preview) for your policies.

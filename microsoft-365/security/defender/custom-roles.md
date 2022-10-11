@@ -1,9 +1,10 @@
 ---
 title: Custom roles for role-based access control
 description: Learn how to manage custom roles in the Microsoft 365 Defender portal
-keywords: access, permissions, Microsoft 365 Defender, M365, security, MCAS, Cloud App Security, Microsoft Defender for Endpoint, scope, scoping, RBAC, roles-based access, custom roles-based access, roles-based auth, RBAC in MDO, roles, rolegroups, permissions inheritance, fine-grained permissions
+keywords: access, permissions, Microsoft 365 Defender, M365, security, Defender for Cloud Apps, Microsoft Defender for Endpoint, scope, scoping, RBAC, roles-based access, custom roles-based access, roles-based auth, RBAC in MDO, roles, rolegroups, permissions inheritance, fine-grained permissions
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,12 +15,13 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 # Custom roles in role-based access control for Microsoft 365 Defender
 

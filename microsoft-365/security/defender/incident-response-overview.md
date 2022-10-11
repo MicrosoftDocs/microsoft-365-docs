@@ -3,7 +3,8 @@ title: Investigate and respond with Microsoft 365 Defender
 description: Investigate and respond to incidents with the capabilities of Microsoft 365 Defender.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyberattack
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +16,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
+  - tier1
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 
 # Investigate and respond with Microsoft 365 Defender
@@ -50,11 +51,11 @@ If your organization is using Microsoft 365 Defender, your security operations t
 
 When an automated investigation completes, a verdict is reached for every piece of evidence of an incident. Depending on the verdict, remediation actions are identified. In some cases, remediation actions are taken automatically; in other cases, remediation actions await approval through the Microsoft 365 Defender Action center. 
 
-See [Automated investigation and response in Microsoft 365 Defender](m365d-autoir.md) for more information.
+For more information, see [Automated investigation and response in Microsoft 365 Defender](m365d-autoir.md).
 
 ## Proactive search for threats with advanced hunting
 
-It is not enough to respond to attacks as they occur. For extended, multi-phase attacks such as ransomware, you must proactively search for the evidence of an attack in progress and take action to stop it before it completes.
+It's not enough to respond to attacks as they occur. For extended, multi-phase attacks such as ransomware, you must proactively search for the evidence of an attack in progress and take action to stop it before it completes.
 
 Advanced hunting is a query-based threat hunting tool in Microsoft 365 Defender that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. This flexible access to the Microsoft 365 Defender data enables unconstrained hunting for both known and potential threats.
 
@@ -80,6 +81,6 @@ For more information, see [Threat analytics in Microsoft 365 Defender](threat-an
 
 ## Collaborate with Microsoft experts
 
-Microsoft Threat Experts - Targeted Attack Notifications is a managed threat hunting service. Once you apply and are accepted, you'll receive targeted attack notifications from Microsoft threat experts, so you won't miss critical threats to your environment. These notifications will help you protect your organization's endpoints, email, and identities. Microsoft Threat Experts – Experts on Demand lets you get expert advice about threats your organization is facing and you can reach out for help on threats your organization is facing. It's available as an additional subscription service.
+Endpoint Attack Notifications (previously referred to as Microsoft Threat Experts - Targeted Attack Notifications) is a managed threat hunting service. Once you apply and are accepted, you'll receive Endpoint Attack Notifications from Microsoft threat experts, so you won't miss critical threats to your environment. These notifications will help you protect your organization's endpoints, email, and identities. Microsoft Defender Experts – Experts on Demand lets you get expert advice about threats your organization is facing and you can reach out for help on threats your organization is facing. It's available as an additional subscription service.
 
-For more information, see [Microsoft Threat Experts in Microsoft 365 overview](/microsoft-365/security/defender/microsoft-threat-experts).
+For more information, see [Microsoft Defender Experts in Microsoft 365 overview](/microsoft-365/security/defender/microsoft-threat-experts).

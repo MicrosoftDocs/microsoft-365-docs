@@ -2,7 +2,7 @@
 title: Take response actions on a file in Microsoft Defender for Endpoint
 description: Take response actions on file-related alerts by stopping and quarantining a file or blocking a file and checking activity details.
 keywords: respond, stop and quarantine, block file, deep analysis
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Take response actions on a file
@@ -39,7 +42,7 @@ Response actions run along the top of the file page, and include:
 - Stop and Quarantine File
 - Add Indicator
 - Download file
-- Consult a threat expert
+- Ask Defender Experts
 - Action center
 
 You can also submit files for deep analysis, to run the file in a secure cloud sandbox. When the analysis is complete, you'll get a detailed report that provides information about the behavior of the file. You can submit files for deep analysis and read past reports by selecting the **Deep analysis** tab. It's located below the file information cards.
@@ -102,7 +105,7 @@ This action takes effect on devices with Windows 10, version 1703 or later, and 
 
 4. Select any of the status indicators to view more information about the action. For example, select **Failed** to see where the action failed.
 
-#### Notification on device userf
+#### Notification on device user
 
 When the file is being removed from a device, the following notification is shown:
 
@@ -150,13 +153,13 @@ Files that have been quarantined by Microsoft Defender Antivirus or your securit
 
 The location depends on your organization's geo settings (either EU, UK, or US). A quarantined file will only be collected once per organization. Learn more about Microsoft's data protection from the Service Trust Portal at https://aka.ms/STP.
 
-Having this setting turned on can help security teams examine potentially bad files and investigate incidents quickly and in a less risky way. However, if you need to turn this setting off, go to **Settings** \> **Endpoints** \> **Advanced features** \> **Download quarantined files** to adjust the setting. [Learn more about advanced features](advanced-features.md)
+Having this setting turned on can help security teams examine potentially bad files and investigate incidents quickly and in a less risky way. However, if you need to turn off this setting, go to **Settings** \> **Endpoints** \> **Advanced features** \> **Download quarantined files** to adjust the setting. [Learn more about advanced features](advanced-features.md)
 
 #### Backing up quarantined files
 
 Users may be prompted to provide explicit consent before backing up the quarantined file, depending on your [sample submission configuration](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-protection).
 
-This feature will not work if sample submission is turned off. If automatic sample submission is set to request permission from the user, only samples that the user agrees to send will be collected.
+This feature won't work if sample submission is turned off. If automatic sample submission is set to request permission from the user, only samples that the user agrees to send will be collected.
 
 > [!IMPORTANT]
 > Download quarantined file requirements:
@@ -169,7 +172,7 @@ This feature will not work if sample submission is turned off. If automatic samp
 
 ### Collect files
 
-If a file is not already stored by Microsoft Defender for Endpoint, you can't download it. Instead, you'll see a **Collect file** button in the same location. If a file hasn't been seen in the organization in the past 30 days, **Collect file** will be disabled.
+If a file isn't already stored by Microsoft Defender for Endpoint, you can't download it. Instead, you'll see a **Collect file** button in the same location. If a file hasn't been seen in the organization in the past 30 days, **Collect file** will be disabled.
 > [!Important]
 > A file that was quarantined as a potential network threat might not be recoverable. If a user attempts to restore the file after quarantine, that file might not be accessible. This can be due to the system no longer having network credentials to access the file. Typically, this is a result of a temporary log on to a system or shared folder and the access tokens expired.
 
@@ -209,9 +212,9 @@ You can also edit indicators from  the **Settings** page, under **Rules** \> **I
 
 ## Consult a threat expert
 
-Consult a Microsoft threat expert for more insights on a potentially compromised device, or already compromised devices. Microsoft Threat Experts are engaged directly from within the Microsoft 365 Defender portal for timely and accurate response. Experts provide insights on a potentially compromised device and help you understand complex threats and targeted attack notifications. They can also provide information about the alerts or a threat intelligence context that you see on your portal dashboard.
+Consult a Microsoft threat expert for more insights on a potentially compromised device, or already compromised devices. Microsoft Defender Experts are engaged directly from within the Microsoft 365 Defender portal for timely and accurate response. Experts provide insights on a potentially compromised device and help you understand complex threats and targeted attack notifications. They can also provide information about the alerts or a threat intelligence context that you see on your portal dashboard.
 
-See [Consult a Microsoft Threat Expert](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) for details.
+See [Ask Defender Experts](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#ask-defender-experts-about-suspicious-cybersecurity-activities-in-your-organization) for details.
 
 ## Check activity details in Action center
 
@@ -312,7 +315,7 @@ If you come across a problem when trying to submit a file, try each of the follo
 
 5. Change the organizational unit through the Group Policy. For more information, see [Configure with Group Policy](configure-endpoints-gp.md).
 
-6. If these steps do not resolve the issue, contact support.
+6. If these steps don't resolve the issue, contact support.
 
 ## Related topics
 

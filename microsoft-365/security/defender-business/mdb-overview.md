@@ -7,16 +7,17 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
+- tier1
 ms.custom: intro-overview
 ---
 
@@ -56,7 +57,7 @@ With Defender for Business, you can help protect the devices and data your busin
    - [Find out how to get Defender for Business](get-defender-business.md).
 
 - **Learn how to set up your threat protection capabilities**. 
-   - [Use the trial playbook: Defender for Business](trial-playbook-defender-business.md).
+   - [See the trial user guide: Defender for Business](trial-playbook-defender-business.md).
    - [Learn about the simplified configuration process](mdb-simplified-configuration.md).
    - [See how to set up and configure Defender for Business](mdb-setup-configuration.md).
 

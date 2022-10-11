@@ -12,8 +12,10 @@ ms.service: microsoft-365-frontline
 ms.collection: 
   - M365-collaboration
   - m365-frontline
+  - highpri
   - m365solution-frontline
   - m365solution-scenario
+  - highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -79,22 +81,19 @@ Financial services organizations can also use the [Collaboration Manager for Loa
 > [!TIP]
 > Examples are given for the financial services, healthcare, nonprofit, and retail industries, but you can use these apps for an organization in any sector.
 
+[View videos and resources](collab-features-apps-toolkit.md) to share with your team to help them use collaboration apps and features in Teams.
+
 ### Create, manage, and share schedules with Shifts
 
 Use Shifts to seamlessly manage and share schedules. Managers can create custom groups such as cashiers, nurses, or mortgage specialists, assign shifts to employees, add custom labeling and breaks, and add open shifts that employees can request to take. Employees can use Shifts to set their availability, view their schedules, swap shifts with coworkers, and clock in and out. Managers can also create open shifts that employees can request. For example, a volunteer coordinator at a nonprofit could create open shifts that volunteers can request to take.
 
-[Learn how to Manage Shifts for your organization](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+Learn how to [Manage Shifts for your organization](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+
+Learn how to [help your employees track time and attendance with Shifts](shifts-toolkit.md).
 
 Share this [Shifts video training](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) with your users.
 
-#### Shifts videos
-
-- [Watch the Tags with Shifts video](https://go.microsoft.com/fwlink/?linkid=2202712)
-- [Watch the Clocking in with Shifts video](https://go.microsoft.com/fwlink/?linkid=2202613)
-- [Watch the Create a schedule with Shifts video](https://go.microsoft.com/fwlink/?linkid=2202612)
-- [Watch the Re-use a schedule from Excel with Shifts video](https://go.microsoft.com/fwlink/?linkid=2202611)
-- [Watch the Copy a schedule with Shifts video](https://go.microsoft.com/fwlink/?linkid=2202298)
-- [Watch the Swap Shifts video](https://go.microsoft.com/fwlink/?linkid=2202711)
+[View videos and resources](shifts-toolkit.md) to share with your team to help them use features in Shifts.
 
 ### Keep in touch with Walkie Talkie
 
@@ -107,7 +106,7 @@ The Walkie Talkie app provides instant push-to-talk communication. By using Walk
 |Financial services |A bank employee discussing loan options with a customer can use Walkie Talkie to consult a loan expert to determine the best option for the customer. |
 |Manufacturing |A technician can use Walkie Talkie to consult with an expert in another location while performing equipment maintenance or repair. |
 
-[Learn how to manage Walkie Talkie for your organization](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+Learn how to [manage Walkie Talkie for your organization](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Share this [Walkie Talkie video training](https://support.microsoft.com/office/use-walkie-talkie-in-teams-884a008a-761e-4b62-99f8-15671d9a2f69) with your users.
 
@@ -124,13 +123,13 @@ The Praise app allows management and frontline team members to congratulate each
 |Financial services |A bank manager can send the **Achiever** badge to a relationship manager who helps to retain an important client. |
 |Manufacturing |A supervisor can send the **Leadership** badge to a foreman whose team is performing well. |
 
-[Learn how to manage the Praise app for your organization](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+Learn how to [manage the Praise app for your organization](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Share this [Praise video training](https://support.microsoft.com/office/communication-and-praise-7d37ef80-542b-42e5-aa01-0fabbaa634b6) with your users.
 
 ### Track and monitor work with Tasks
 
-Use Tasks in Teams to track to-do items for your whole retail team. Store managers and employees can create, assign, and schedule tasks, categorize tasks, and update status at any time from any device running Teams. IT pros and admins can also publish tasks to specific teams for your organization. For example, you could publish a set of tasks for daily cleaning or steps to set up a new display.
+Use Tasks in Teams to track to-do items for your whole frontline team. Store managers and employees can create, assign, and schedule tasks, categorize tasks, and update status at any time from any device running Teams. IT pros and admins can also publish tasks to specific teams for your organization. For example, you could publish a set of tasks for daily cleaning or steps to set up a new display.
 
 |Industry |Example |
 |:--------|:-------|
@@ -139,7 +138,7 @@ Use Tasks in Teams to track to-do items for your whole retail team. Store manage
 |Financial services |A bank manager can assign mortgage specialists a task to review and get familiar with new rates or policies. |
 |Manufacturing |A supervisor can assign a worker a task to inspect a new batch of products. |
 
-[Learn how to manage the Tasks app for your organization](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+Learn how to [manage the Tasks app for your organization](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Share this [Tasks video training](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) with your users.
 
@@ -156,7 +155,7 @@ Use Approvals to streamline requests and processes with your team. Create, manag
 |Financial services |A lending specialist could submit an approval request to a supervisor to offer a special interest rate. |
 |Manufacturing |A machine operator can submit a request for approval to adjust the settings on a piece of equipment. |
 
-[Learn how to manage the Approvals app for your organization](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+Learn how to [manage the Approvals app for your organization](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Share this [Approvals video training](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3?wt.mc_id=otc_microsoft_teams) with your users.
 
@@ -173,7 +172,7 @@ The Updates in Microsoft Teams app provides a centralized place for members of y
 |Financial services |A bank manager could create and assign a recurring daily template for tellers to confirm morning counts. |
 |Manufacturing |A supervisor can create and assign a template to keep track of progress on production of a new batch of items. |
 
-[Learn how to manage the Updates app for your organization](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+Learn how to [manage the Updates app for your organization](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Share this [Updates video training](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) with your users.
 
@@ -200,22 +199,24 @@ Refine what's in your team with apps. You can allow or block apps for your organ
 
 Your users can add any apps that you have allowed to their teams. Share this training with your users to show them how: [Find and use apps](https://support.microsoft.com/office/find-and-use-apps-6e22a734-c002-4da0-ba63-681f155b142d).
 
+## Communicate over email with Exchange Online and Outlook
 
-### Use Viva Connections to create a personalized experience
+Email is a core communication tool for most workplaces. [Set up email with Exchange Online](flw-setup-microsoft-365.md#set-up-email-with-exchange-online) to let your frontline managers and workers communicate with each other, with employees in other locations, or with headquarters. Users must have an F3 license to have an email mailbox.
 
-Viva Connections is part of the [Microsoft Viva suite](/viva/microsoft-viva-overview) and enables you to create a personalized landing experience in Teams. 
+You can also set up shared mailboxes to allow for incoming mail from customers (such as for customer service or scheduling requests) and have a group of workers who monitor and send email from a public email alias like info@contoso.com. For more information about shared mailboxes, see [About shared mailboxes](../admin/email/about-shared-mailboxes.md) and [Open and use a shared mailbox in Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd).
+
+## Use Viva Connections to create a personalized experience
+
+> [!NOTE]
+> Viva Connections isn't currently available for tablets.
+
+Viva Connections is part of the [Microsoft Viva suite](/viva/microsoft-viva-overview) and enables you to create a personalized landing experience in Teams.
 
 ![Screenshot of the Viva Connections Dashboard on a mobile device.](media/flw-shifts-praise-tasks-approvals.png)
 
+Use the Viva Connections Dashboard and add the Shifts, Tasks, and Approvals cards. Cards are connected to the Shifts, Tasks, and Approvals apps in Teams. Content in the cards is dynamic and personalized to the user.
 
-Use the Viva Connections Dashboard and add the Shifts, Tasks, and Approvals cards. Cards are connected to the Shifts, Tasks, and Approvals apps in Teams. Content in the cards is dynamic and personalized to the user. 
-
-Learn more about [how to get Viva Connections](/viva/connections/viva-connections-overview) and [how to create a Viva Connections Dashboard](/viva/connections/create-dashboard). 
-
-
-
-
-
+Learn more about [how to get Viva Connections](/viva/connections/viva-connections-overview) and [how to create a Viva Connections Dashboard](/viva/connections/create-dashboard).
 
 ## Learn more about Teams capabilities for specific industries
 

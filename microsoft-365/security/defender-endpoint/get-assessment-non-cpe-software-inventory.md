@@ -2,7 +2,7 @@
 title: Export non product code software inventory assessment per device
 description: Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion for software that doesn't have a Common Platform Enumeration (CPE)
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Export non product code software inventory assessment per device
@@ -64,8 +67,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 ---|---|---
-Application|Software.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
-Delegated (work or school account)|Software.Read|\'Read Threat and Vulnerability Management vulnerability information\'
+Application|Software.Read.All|\'Read Threat and Vulnerability Management software information\'
+Delegated (work or school account)|Software.Read|\'Read Threat and Vulnerability Management software information\'
 
 ### 1.3 URL
 
@@ -169,8 +172,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 ---|---|---
-Application|Software.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
-Delegated (work or school account)|Software.Read|\'Read Threat and Vulnerability Management vulnerability information\'
+Application|Software.Read.All|\'Read Threat and Vulnerability Management software information\'
+Delegated (work or school account)|Software.Read|\'Read Threat and Vulnerability Management software information\'
 
 ### 2.3 URL
 

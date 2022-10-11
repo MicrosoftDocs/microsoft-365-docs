@@ -2,7 +2,7 @@
 title: Use network protection to help prevent connections to bad sites
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
 keywords: Network protection, exploits, malicious website, ip, domain, domains, command and control, SmartScreen, toast notification
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,11 +14,12 @@ ms.author: deniseb
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
+ms.subservice: mde
 ms.topic: overview
 ms.collection: 
-- m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Protect your network
@@ -43,6 +44,17 @@ Network protection helps protect devices from Internet-based events. Network pro
 
 Network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level. It provides the web protection functionality found in Microsoft Edge to other supported browsers and non-browser applications. Network protection also provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](manage-indicators.md) that you can use to block specific domains or host names.
 
+> [!NOTE]
+> For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage Network Protection for inspection and enforcement:
+>
+> - IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS)).
+> - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators.
+> - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge).
+> - Encrypted URLs (FQDN only) can be blocked in third party browsers (i.e. other than Internet Explorer, Edge).
+> - Full URL path blocks can be applied for unencrypted URLs.
+>
+> There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked.
+
 Watch this video to learn how Network protection helps reduce the attack surface of your devices from phishing scams, exploits, and other malicious content.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yZ]
 
@@ -59,7 +71,7 @@ Network protection requires Windows 10 or 11 (Pro or Enterprise), Windows Server
 Network protection is a part of the attack surface reduction group of solutions in Microsoft Defender for Endpoint. Network protection enables layer the network layer of blocking URLs and IP addresses. Network protection can block URLs from being accessed by using certain browsers and standard network connections. By default, network protection guards your computers from known malicious URLs using the SmartScreen feed, which blocks malicious URLs in a manner similar to SmartScreen in Microsoft Edge browser. The network protection functionality can be extended to:
 
 - Block IP/URL addresses from your own threat intelligence ([indicators](indicator-ip-domain.md))
-- Block unsanctioned services from [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) (formerly known as Microsoft Cloud App Security)
+- Block unsanctioned services from [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps)
 - Block sites based on category ([Web content filtering](web-content-filtering.md))
 
 Network protection is a critical part of the Microsoft protection and response stack.
@@ -132,6 +144,8 @@ A user visits a website:
 
 ### Network protection: C2 detection and remediation
 
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 In its initial form, ransomware is a commodity threat, pre-programmed and focused on limited, specific outcomes (for example, encrypting a computer). However, ransomware has evolved into a sophisticated threat that is human-driven, adaptive, and focused on larger scale and more widespread outcomes; like holding an entire organization's assets or data for ransom.
 
 Support for Command and Control servers (C2) is a key part of this ransomware evolution and is what enables these attacks to adapt to the environment they target. Breaking the link to the command-and-control infrastructure stops the progression of an attack to its next stage.
@@ -155,6 +169,8 @@ Network protection is enabled per device, which is typically done using your man
 
 You can enable network protection in **Audit** mode or **Block** mode. If you want to evaluate the impact of enabling network protection before actually blocking IP addresses or URLs, you can enable network protection in Audit mode for a period of time to gather data on what would be blocked. Audit mode logs when end users have connected to an address or site that would otherwise have been blocked by network protection.
 
+For information about Network protection for Linux and macOS see: [Network protection for Linux](network-protection-linux.md) and [Network protection for MacOS](network-protection-macos.md).
+
 ## Advanced hunting
 
 If you're using advanced hunting to identify audit events, you'll have up to 30 days history available from the console. See [Advanced hunting](advanced-hunting-overview.md).
@@ -168,7 +184,7 @@ The following example includes the blocked actions:
 ```kusto
 
 DeviceEvents
-|Where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
+|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 
 ```
 

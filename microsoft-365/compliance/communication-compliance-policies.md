@@ -14,14 +14,19 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
 ---
 
 # Create and manage communication compliance policies
+
+>[!IMPORTANT]
+>Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Policies
 

@@ -4,7 +4,7 @@ description: Describes the recommended common Zero Trust identity and device acc
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 audience: Admin
 f1.keywords:
@@ -15,12 +15,14 @@ ms.custom:
   - goldenconfig
 ms.collection:
   - M365-identity-device-management
-  - M365-security-compliance
+  - m365-security
   - remotework
   - m365solution-identitydevice
   - m365solution-scenario
   - zerotrust-solution
-ms.technology: mdo
+  - highpri
+ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Common Zero Trust identity and device access policies

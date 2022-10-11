@@ -2,7 +2,7 @@
 title: Get missing KBs by device ID
 description: Retrieves missing security updates by device ID
 keywords: apis, graph api, supported apis, get, list, file, information, device id, threat & vulnerability management api, Microsoft Defender for Endpoint tvm api
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Get missing KBs by device ID

@@ -11,13 +11,13 @@ ms.localizationpriority: high
 search.appverid:
   - MET150
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
   - seo-marvel-apr2020
 description: Authenticated Received Chain (ARC) is email authentication that tries to preserve authentication results across devices and any indirect mailflows that come between the sender and recipient. Here's how to make exceptions for your trusted ARC Senders.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Make a list of trusted ARC Senders to trust *legitimate* indirect mailflows
@@ -32,7 +32,7 @@ Email authentication mechanisms like [SPF](set-up-spf-in-office-365-to-help-prev
 
 ## Authenticated Received Chain (ARC) in Microsoft 365 Defender for Office
 
-Services that modify content during transport of the message before delivery to your organization, can invalidate the DKIM email signature and affect the authentication of the message. When these intermediary services, perform such actions, they can use ARC can be used to provide details of the original authentication before the modifications occurred, which your organization can then trust to help with authenticating the message.  
+Services that modify message content in transit before delivery to your organization can invalidate DKIM email signatures and affect authentication of the message. When these intermediary services perform such actions, they can use ARC to provide details of the original authentication before the modifications occurred. Your organization can then trust these details to help with authenticating the message.  
 
 **Trusted ARC sealers lets admins add a list of *trusted* intermediaries into the Microsoft 365 Defender portal.** Trusted ARC sealers allows Microsoft to honor ARC signatures from these trusted intermediaries, preventing these legitimate messages from failing the authentication chain.
 
