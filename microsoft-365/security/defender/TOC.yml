@@ -359,9 +359,9 @@
        - name: Endpoint Attack Notifications
          items:
               - name: Endpoint Attack Notifications
-                href: endpoint-attack-notifications.md
+                href: ../defender-endpoint/endpoint-attack-notifications.md
               - name: Experts on Demand
-                href: experts-on-demand.md
+                href: ../defender-endpoint/experts-on-demand.md
        - name: Collaborate with Microsoft Defender Experts for Hunting
          items:
               - name: Overview
