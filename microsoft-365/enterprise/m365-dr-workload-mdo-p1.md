@@ -57,24 +57,24 @@ Capability summary: Exchange Online Protection (EOP) is the cloud-based filterin
 
 Required Conditions:
 
-1.	Tenant has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
-2.	Tenant has a valid Advanced Data Residency subscription for all users in the tenant
-3.	The EOP subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_
+1. Tenant has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. Tenant has a valid Advanced Data Residency subscription for all users in the tenant
+1. The EOP subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_
 
 **Commitment:**
 
 The following customer data will be stored in the related _Geography_:
 
--	EOP service configuration data and policies
--	Quarantined email and attachments
--	Junk email
--	Grading analysis
--	Block lists (url, tenant, user)
--	Spam domains
--	Reports
--	Alerts
+- EOP service configuration data and policies
+- Quarantined email and attachments
+- Junk email
+- Grading analysis
+- Block lists (url, tenant, user)
+- Spam domains
+- Reports
+- Alerts
 
-## Migration 
+## Migration
 
 EOP customer data migrates during the Exchange Online migration. MDO P1 does not have customer data to migrate.
 
