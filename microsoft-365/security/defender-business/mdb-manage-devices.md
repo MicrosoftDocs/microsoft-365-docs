@@ -15,8 +15,9 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
+- tier1
 ---
 
 # Manage devices in Microsoft Defender for Business

@@ -1,12 +1,12 @@
 ---
 title: "Understand Assessment in Relevance in eDiscovery (Premium)"
+description: "Get an overview of the Assessment stage and its role in determining the richness of issues during Relevance training in Microsoft Purview eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 titleSuffix: Office 365
-ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -14,16 +14,20 @@ ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
-description: "Get an overview of the Assessment stage and its role in determining the richness of issues during Relevance training in Microsoft Purview eDiscovery (Premium)."
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Assessment in the Relevance module in eDiscovery (Premium)
   
 Microsoft Purview eDiscovery (Premium) enables early assessment, for example, for the defined issues and the data imported for a case. eDiscovery (Premium) lets the expert make decisions about an adopted approach and to apply these decisions to the document review project.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Understanding assessment
 
 In Assessment, the expert reviews a random set of at least 500 files, which are used to determine the richness of the issues and to produce statistics that reflect the training results. Assessment is successful when enough relevant files are found to reach a statistical level that will help eDiscovery (Premium) Relevance to provide accurate statistics and to effectively determine the stabilization point in the training process. 

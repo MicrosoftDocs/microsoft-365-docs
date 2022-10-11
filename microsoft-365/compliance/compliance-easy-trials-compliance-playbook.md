@@ -1,26 +1,30 @@
 ---
-title: "Microsoft Purview solutions trial playbook"
+title: "Microsoft Purview solutions trial user guide"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
-ms.collection: m365-security-compliance
+ms.collection: 
+- purview-compliance
+- tier3
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Purview solutions trial playbook."
+description: "Microsoft Purview solutions trial user guide."
 ms.custom: trial-playbook
 ---
 
-# Trial playbook: Microsoft Purview solutions
+# Trial user guide: Microsoft Purview solutions
 
-Welcome to the Microsoft Purview solutions trial playbook. This playbook will help you make the most of your free trial by helping you discover robust and comprehensive capabilities of Microsoft Purview and security products.
+Welcome to the Microsoft Purview solutions trial user guide. This playbook will help you make the most of your free trial by helping you discover robust and comprehensive capabilities of Microsoft Purview and security products.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Compliance actions with Microsoft Purview
 
@@ -294,7 +298,7 @@ Each recommended action guides you through the required activities for the recom
 
 Note that the recommended steps in the playbook (above) may also be included in the Recommended actions shown in the portal.
 
-Set up recommendations are also available on the Microsoft docs page, via the [Microsoft Purview Insider Risk Management Setup Guide](https://go.microsoft.com/fwlink/?linkid=2197153).
+Setup recommendations are also available on Microsoft Learn via the [Microsoft Purview Insider Risk Management Setup Guide](https://go.microsoft.com/fwlink/?linkid=2197153).
 
 To fully leverage the functionality of Insider Risk Management, we recommend setting up policies for your organization to better identify potential risky actions that may lead to a security incident, leveraging templates for Data leaks or Data theft.  
 
@@ -420,7 +424,7 @@ Help your organization assess risks and efficiently respond to nations, regional
 
 [More information on the Compliance Manager premium assessments trial](compliance-easy-trials-compliance-manager-assessments.md).
 
-[Trial playbook: Microsoft Purview Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessment-playbook.md)
+[Trial user guide: Microsoft Purview Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessment-playbook.md)
 
 ### Microsoft Priva Privacy Risk Management and Microsoft Priva Subject Rights Requests
 
@@ -430,7 +434,7 @@ Proactively identify and protect against privacy risks such as data hoarding, da
 
 [Learn more about Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management).
 
-[Trial playbook: Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
+[Trial user guide: Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
 
 ## Additional resources
 

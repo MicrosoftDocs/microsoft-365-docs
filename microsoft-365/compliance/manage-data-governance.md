@@ -8,7 +8,9 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-ms.collection: m365-security-compliance
+ms.collection: 
+- purview-compliance
+- tier1
 ms.localizationpriority: high
 search.appverid: 
 - MOE150
@@ -35,6 +37,8 @@ Use the following graphic to help you identify the main configurable components 
 The following sections detail the main capabilities for each solution, with links to understand more. However, if you're looking for a guided deployment, see [Deploy a data governance solution with Microsoft Purview](data-governance-solution.md).
 
 Looking for complementary capabilities to protect your data? See [Protect your data with Microsoft Purview](information-protection.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Microsoft Purview Data Lifecycle Management
 

@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_Enterprise
-- M365-security-compliance
+- purview-compliance
 - Strat_O365_Enterprise
 ms.custom:
 - seo-marvel-mar2020
@@ -39,6 +39,8 @@ Some risk scenarios and the currently available encryption technologies that mit
 | S/MIME | Exchange Online | Customer | Email falls into the hands of a person who is not the intended recipient. | S/MIME provides value to customers by assuring that email encrypted with S/MIME can only be decrypted by the direct recipient of the email. |
 | Office 365 Message Encryption | Exchange Online, SharePoint Online | Customer | Email, including protected attachments, falls in hands of a person either within or outside Microsoft 365 who is not the intended recipient of the email. | OME provides value to customers where all emails originating from Microsoft 365 that match certain criteria (i.e., all emails to a certain address) are automatically encrypted before they get sent to another internal or an external recipient. |
 | SMTP TLS with partner organization | Exchange Online | Customer | Email is intercepted via a man-in-the-middle or other attack while in transit from a Microsoft 365 tenant to another partner organization. | This scenario provides value to the customer such that they can send/receive all emails between their Microsoft 365 tenant and their partner's email organization inside an encrypted SMTP channel. |
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Encryption technologies available in multi-tenant environments
 

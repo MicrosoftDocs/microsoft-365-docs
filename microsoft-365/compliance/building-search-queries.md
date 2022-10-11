@@ -1,21 +1,23 @@
 ---
 title: Build search queries in eDiscovery (Premium)
+description: "Use keywords and conditions to narrow the scope of the search when searching for data using eDiscovery (Premium) in Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
 ms.custom: seo-marvel-mar2020
-description: "Use keywords and conditions to narrow the scope of the search when searching for data using eDiscovery (Premium) in Microsoft 365."
 ---
 
 # Build search queries for collections in eDiscovery (Premium)
@@ -23,6 +25,8 @@ description: "Use keywords and conditions to narrow the scope of the search when
 When configuring the search query when creating a [collection](collections-overview.md) in an eDiscovery (Premium) case, you can use keywords to find specific content and conditions to narrow the scope of the search to return items that are most relevant to your legal investigation.
 
 ![Use keywords and conditions to narrow the results of a search.](../media/SearchQueryBox.png)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Keyword searches
 

@@ -11,7 +11,8 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -23,6 +24,8 @@ description: "Learn how to modify a keyword dictionary in the Microsoft Purview 
 # Modify a keyword dictionary
 
 You might need to modify keywords in one of your keyword dictionaries, or modify one of the built-in dictionaries. You can do this through PowerShell or through the Compliance center.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Modify a keyword dictionary in Compliance center
 

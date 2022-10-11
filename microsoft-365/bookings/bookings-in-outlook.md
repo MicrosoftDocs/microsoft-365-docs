@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ROBOTS: NO INDEX, NO FOLLOW
 description: "Use Bookings with me to let others schedule meetings with you in Outlook."
 ---
@@ -72,8 +74,23 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
    ```PowerShell
      Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
    ```
-  
-  For more information, see [Set-SharingPolicy](/powershell/module/exchange/set-sharingpolicy).
+3.	For mailboxes that get assigned a customized SharingPolicy, the policy must have Anonymous:SharingPolicyActio as one of the domains.
+
+   ```Powershell:
+      get-mailbox adam@contoso.com | Format-List SharingPolicy
+   ```
+
+   If the command returns:
+
+   `SharingPolicy        : "contoso.onmicrosoft.com\Default Sharing (CONTOSO)"`
+
+   You must update the policy with one of the required domains:
+
+   ```Powershell
+   Set-SharingPolicy "Default Sharing (CONTOSO)" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
+   ```
+
+For more information, see [Set-SharingPolicy](/powershell/module/exchange/set-sharingpolicy).
 
 ## Turn Bookings with me on or off
 
@@ -201,6 +218,12 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
     ```PowerShell
    Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
+
+### Create Bookings with me
+
+1. Open [Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+2. Select **Calendar**.
+3. Select the **Create bookings page** link that appears in your calendar to create Bookings with me.
 
 ## Frequently asked questions
 
