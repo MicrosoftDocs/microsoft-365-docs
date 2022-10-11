@@ -43,7 +43,7 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
 ## October 2022
-- [Automated Investigations email cluster action de-duplication](air-review-approve-pending-completed-actions.md) We are putting additional checks if the same investigation cluster is already approved in last 1 hour, new duplicate remediation will not be processed again. 
+- [Automated Investigations email cluster action de-duplication](air-review-approve-pending-completed-actions.md): We have added additional checks. If the same investigation cluster is already approved during the past hour, new duplicate remediation will not be processed again. 
 
 ## September 2022
 **Automatic redirection from Office action center to unified action center:** The action center in the Email & collaboration blade - **Email & Collaboration** > **Review** > **Action center**(https://security.microsoft.com/threatincidents) is automatically redirected to **Actions & Submissions** > **Action center** > **History** (https://security.microsoft.com/action-center/history).
