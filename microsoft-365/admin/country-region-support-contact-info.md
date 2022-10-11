@@ -200,14 +200,15 @@ Spanish: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-800 0123\
-After dialing, enter\
-877 635 7034
+800 0123
 
-**Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+After dialing, enter:\
+877 635 7034
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+Spanish: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
@@ -237,14 +238,15 @@ Spanish: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-1800 0164\
-After dialing, enter\
-877 635 7036
+1800 0164
 
-**Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+After dialing, enter:\
+877 635 7036
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+Spanish: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
@@ -969,14 +971,15 @@ Spanish: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-1 800 225 528\
-After dialing, enter\
-877 663 5075
+1 800 225 528
 
-**Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+After dialing, enter:\
+877 663 5075
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+Spanish: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1953,14 +1956,15 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-0800 94 288\
-After dialing, enter\
-877 663 5075
+0800 94 288
 
-**Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+After dialing, enter:\
+877 663 5075
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+English: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3206,15 +3210,16 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-800 103 072\
-After dialing, enter\
-877 867 2337
+800 103 072
 
+After dialing, enter:\
+877 867 2337
+   :::column-end:::
+   :::column:::
 **Billing support hours:**\
 French: Mon-Fri 8 AM-4 PM\
 English: Mon-Fri 8 AM-4 PM
-   :::column-end:::
-   :::column:::
+
 **Technical support hours:**\
 French: Mon-Fri 7 AM-8 PM\
 English: 24 hours a day, 7 days a week
@@ -3541,15 +3546,16 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-18 800 000\
-After dialing, enter\
-877 663 5075
+18 800 000
 
+After dialing, enter:\
+877 663 5075
+   :::column-end:::
+   :::column:::
 **Billing support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: Mon-Fri 10 AM-6 PM
-   :::column-end:::
-   :::column:::
+
 **Technical support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
@@ -3760,14 +3766,15 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-157 0011\
-After dialing, enter\
-+1877 857 3235
+157 0011
 
-**Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+After dialing, enter:\
++1877 857 3235
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+English: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3795,14 +3802,15 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-800 1111 673\
-After dialing, enter\
-877 413 1767
+800 1111 673
 
-**Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+After dialing, enter:\
+877 413 1767
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+English: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4069,8 +4077,9 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-0800 111\
-After dialing, enter\
+0800 111
+
+After dialing, enter:\
 877 860 4890
 
 **Billing support hours:**\
@@ -4346,8 +4355,9 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-+8 641 744 0010\
-After dialing, enter\
++8 641 744 0010
+
+After dialing, enter:\
 877 867 5369\
 International call charges apply.
 
@@ -4473,14 +4483,15 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-004 890 1001\
-After dialing, enter\
-877 860 4596
+004 890 1001
 
-**Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+After dialing, enter:\
+877 860 4596
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+English: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
