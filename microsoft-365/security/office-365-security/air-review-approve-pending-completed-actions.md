@@ -34,7 +34,10 @@ As automated investigations on email & collaboration content result in verdicts,
 - Soft deleting email messages or clusters
 - Turning off external mail forwarding
 
-These remediation actions are not taken unless and until your security operations team approves them. We recommend reviewing and approving any pending actions as soon as possible so that your automated investigations complete in a timely manner. In some cases, you can reconsider submitted actions.  You need to be part of Search & purge role before taking any actions.
+These remediation actions are not taken unless and until your security operations team approves them. We recommend reviewing and approving any pending actions as soon as possible so that your automated investigations complete in a timely manner. You need to be part of Search & purge role before taking any actions.
+
+In case of duplicate/overlapping investigations with same clusters approved multiple times, we are putting additional checks if the same investigation cluster is already approved in last 1 hour, new duplicate remediation will not be processed again. It doesn't remove duplicate investigations or investigation evidence - it simply de-duplicates approved actions to improve remediation processing speed. For the duplicate approved cluster investigations you will not see action details in the action center <https://security.microsoft.com/action-center/history> side panel. 
+
 
 ## Approve (or reject) pending actions
 
