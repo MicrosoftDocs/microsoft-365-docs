@@ -8,8 +8,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,6 +19,8 @@ ms.collection:
 ms.topic: article
 ms.subservice: mde
 ---
+
+<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
 
 # Cloud-delivered protection demonstration
 
