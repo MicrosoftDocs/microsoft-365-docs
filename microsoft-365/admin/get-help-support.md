@@ -57,8 +57,7 @@ Save time by starting your service request online. We'll help you find a solutio
 5. Enter a description of your issue, confirm your contact number and email address, select your preferred contact method, and then select **Contact me**. The expected wait time is indicated in the **Contact support** pane.
 
     > [!NOTE]
-    > If you bought your subscription through a partner, you first see the contact information for that partner. Alternatively, select **New Microsoft service request** at the bottom of the pane.
-
+    > If you bought your subscription through a partner, you first see the contact information for that partner.
 ## Phone support
 
 Use the drop-down menu below to find the number for your country or region.
