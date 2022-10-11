@@ -43,7 +43,7 @@ Apps are pinned to the app bar, which is the bar at the bottom of the Teams mobi
 - [Viva Connections](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) (coming soon)
 
 > [!NOTE]
-> Viva Connections will be part of the frontline tailored apps experience. Frontline users who see the tailored app experience will have Viva Connections pinned in the first position on both mobile and desktop. This experience includes a default dashboard with relevant frontline cards such as Tasks, Shifts, Approvals, and Top News that can be customized to fit the needs of your organization. If your organization has already setup a Viva Connections homesite, that will take precedence over the default experience.  
+> Viva Connections will now be part of the frontline tailored apps experience. Frontline users who see the tailored app experience will have Viva Connections pinned in the first position on both mobile and desktop. This experience includes a default dashboard with relevant frontline cards such as Tasks, Shifts, Approvals, and Top News that can be customized to fit the needs of your organization. If your organization has already setup a Viva Connections homesite, that will take precedence over the default experience.  
 
 **Teams mobile**
 
