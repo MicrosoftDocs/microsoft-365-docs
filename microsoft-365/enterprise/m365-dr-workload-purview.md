@@ -20,13 +20,17 @@ ms.collection:
 
 Data residency commitments for the Purview set of services are available with the Advanced Data Residency add-on.
 The required conditions for the related commitments for the services described below are:
-1.	Tenant has a sign up country included in *Local Geography* or *Expanded Local Geography*.
+1.	Tenant has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
 2.	Tenant has a valid Advanced Data Residency subscription for all users in the tenant
-3.	The Purview service customer data is provisioned in *Local Geography* or *Expanded Local Geography*.
+3.	The Purview service customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
 ## Migration 
 
 The customer data for Purview services are closely aligned with the Exchange Online and SharePoint Online services, and the bulk of the data migrated will be handled by those services.  In the cases where supporting customer data is maintained in an Azure Service, for example, the migration of that data is tied to the migration of the underlying Exchange Online/Sharepoint Online data.
+
+## How can I determine customer data location?
+
+We are in the process of updating the actual data location in Tenant Admin Center.  When this change is complete you will be able to see the actual data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Until that change is visible, you can view the Exchange Online data location information in order to understand where your committed data is stored for this service.
 
 ### Purview Audit (Standard)
 
