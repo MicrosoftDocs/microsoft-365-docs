@@ -265,7 +265,9 @@ The **Exchange public folders** location applies retention settings to all publi
 
 #### Exceptions for auto-apply policies configured for sensitive information types
 
-When you configure an auto-apply policy that uses sensitive information types and select the **Exchange email** location, see the important callout for [Auto-apply labels to content with specific types of sensitive information](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information).
+When you configure an auto-apply policy that uses sensitive information types and select the **Exchange email** location:
+
+- See the important callout for [Auto-apply labels to content with specific types of sensitive information](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information).
 
 ### Configuration information for SharePoint sites and OneDrive accounts
 
