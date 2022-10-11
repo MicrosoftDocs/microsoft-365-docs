@@ -3,6 +3,7 @@ title: Push content types to a hub
 description: Learn how to push content types to a hub.
 ms.author: mikeplum
 author: MikePlumleyMSFT
+ms.reviewer: shrganguly
 manager: serdars
 audience: admin
 ms.topic: article
