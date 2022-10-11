@@ -116,3 +116,6 @@ In addition to Exchange Online, SharePoint Online, and OneDrive for Business; Mi
 - Teams images used in chats.
 
 Teams files are stored in SharePoint Online and Teams chat files are stored in OneDrive for Business. Voicemail, calendar, and contacts are stored in Exchange Online. In many cases, Exchange Online, SharePoint Online, and OneDrive for Business are already used by the customer in the local datacenter *Geography* and are also part of the Microsoft 365 migration program for eligible customer countries.
+
+  ### How can I determine customer data location?
+	You can find the actual data location in Tenant Admin Center.  As a tenant administrator you can find the actual data location, for committed data,  by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location. 
