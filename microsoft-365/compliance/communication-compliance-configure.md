@@ -64,7 +64,7 @@ The following recommendations are available to help you get started and maximize
 
 - **Get to know communication compliance**: Before completing set up, review our official documentation to learn about, plan for, and deploy communication compliance in your organization.
 - **Assign permissions to ensure your team can get their jobs done**: Ensure that only the appropriate stakeholders can access the solution by assigning team members responsible for managing communication compliance features and investigating and reviewing alerts.
-- **Create distribution groups for users' whose communications you wat to detect**: Create distribution groups containing users who will be included in communication compliance policies.
+- **Create distribution groups for users' whose communications you want to detect**: Create distribution groups containing users who will be included in communication compliance policies.
 - **Create your first policy to start detecting communications**: Detect and investigate potential regulatory compliance violations by first setting up a policy that identifies potential violations across your organization's internal and/or external communications.
 - **Review alerts to investigate detected messages and take action**: Identify and analyze messages that match a policy's conditions to trigger alerts that provide context around a policy violation, so you can investigate and take action if needed.
 - **Review reports for quick insights into how policies are performing**: Get quick insights into how your policies are performing, view detailed reports to drill down further, and export results for further analyses.
