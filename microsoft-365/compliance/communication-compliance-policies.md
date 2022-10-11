@@ -39,7 +39,7 @@ Users assigned the *Communication Compliance Admin* role can set up policies, an
 
 ## Policy templates
 
-Communication policy templates are pre-defined policy settings that you can use to quickly create policies to address common compliance scenarios. Each of these templates has differences in conditions and scope, and all templates use the same types of signals. You can choose from the following policy templates:
+Communication compliance policy templates are pre-defined policy settings that you can use to quickly create policies to address common compliance scenarios. Each of these templates has differences in conditions and scope, and all templates use the same types of signals. You can choose from the following policy templates:
 
 |**Area**|**Policy Template**|**Details**|
 |:-----|:-----|:-----|
