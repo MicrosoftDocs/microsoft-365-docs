@@ -8,8 +8,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp <!--- v-jweston resumes ms.authorship appx April-May 2023 ---> 
+author: dansimp <!--- v-jweston resumes authorship appx April-May 2023 ---> 
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
