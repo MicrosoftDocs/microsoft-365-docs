@@ -53,6 +53,10 @@ You can manage testing and deployment of purchased and licensed Microsoft 365 Ap
 
 8. If the app has a status of **Update pending**, you can click on the app to open the Manage pane and update the app.
 
+
+> [!NOTE]
+> _Is this a test deployment_ is an administrative tag to determine if the app is still in testing phase. It has no technical impact.
+
 ## Find published apps for testing and full deployment
 
 You can find, test, and fully deploy published apps that don't already appear in the list on the Integrated apps page. By purchasing and licensing the apps from the admin center, you can add Microsoft and Microsoft partner apps to your list from a single location.
