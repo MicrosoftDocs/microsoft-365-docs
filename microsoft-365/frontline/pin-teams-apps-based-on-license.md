@@ -100,7 +100,7 @@ The feature is off.   | The frontline worker gets the apps defined in the global
 
  Viva Connections will soon be part of the frontline tailored apps experience. Frontline users who see the tailored app experience will have Viva Connections pinned in the first position on both mobile and desktop. This experience includes a default dashboard with relevant frontline cards such as Tasks, Shifts, Approvals, and Top News that can be customized to fit the needs of your organization. If your organization has already setup a Viva Connections homesite, that will take precedence over the default experience.
 
-:::image type="content" source="media/tailored-teams-apps-viva-connections.png" alt-text="Viva Connections in the tailored frontline app experience on Teams mobile" lightbox="media/tailored-teams-apps-desktop.png":::
+:::image type="content" source="media/tailored-teams-apps-viva-connections.png" alt-text="Viva Connections in the tailored frontline app experience on Teams mobile" lightbox="tailored-teams-apps-viva-connections.png":::
 
 ## Related articles
 
