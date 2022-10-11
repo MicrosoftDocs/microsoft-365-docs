@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/23/2022
+ms.date: 10/11/2022
 ms.reviewer: 
 ms.custom:
 - it-pro
@@ -107,7 +107,7 @@ The requirements for installing and using the Exchange Online PowerShell module 
 
 To connect Exchange Online PowerShell to a specific _Geography_ location, the ConnectionUri parameter is different than the regular connection instructions. The rest of the commands and values are the same.
 
-Specifically, you need to add the ?email=<emailaddress> value to end of the ConnectionUri value. \<emailaddress\> is the email address of **any** mailbox in the target Geography location. Your permissions to that mailbox or the relationship to your credentials are not a factor; the email address simply tells Exchange Online PowerShell where to connect.
+Specifically, you need to add the ?email=\<emailaddress\> value to end of the ConnectionUri value. \<emailaddress\> is the email address of **any** mailbox in the target Geography location. Your permissions to that mailbox or the relationship to your credentials are not a factor; the email address simply tells Exchange Online PowerShell where to connect.
   
 Microsoft 365 or Microsoft 365 GCC customers typically don't need to use the _ConnectionUri_ parameter to connect to Exchange Online PowerShell. But, to connect to a specific Geography location, you do need to use ConnectionUri parameter so you can use ?email=\<emailaddress\> in the value.
   
@@ -144,7 +144,7 @@ To view your tenant's Primary Provisioned Geography location, run the following 
  ```powershell
 Get-OrganizationConfig | Select DefaultMailboxRegion
 ```
-  
+
 #### Find the Geography location of a mailbox
 
 The **Get-Mailbox** cmdlet in Exchange Online PowerShell displays the following multi-geo related properties on mailboxes:
