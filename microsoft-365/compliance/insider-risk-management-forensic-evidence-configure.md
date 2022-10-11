@@ -27,7 +27,7 @@ Configuring forensic evidence in your organization is similar to configuring oth
 
 ### Step 1: Confirm your subscription and configure data storage access
 
-Before you get started with forensic evidence, you should confirm your [insider risk management subscription](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-insider-risk-management) and any add-ons. Users included in forensic evidence policies must be assigned licenses from one of the supported insider risk management plans.
+Before you get started with forensic evidence, you should confirm your [insider risk management subscription](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-insider-risk-management) and any add-ons.
 
 Additionally, you'll need to add the following domain to your firewall allowlist to support forensic evidence capture storage for your organization:
 
@@ -58,12 +58,10 @@ To install the Microsoft Purview Client, complete the following steps:
     - **Microsoft Endpoint Manager**: [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) is an integrated solution for managing all of your devices. Microsoft brings together [Configuration Manager](/mem/configmgr/core/understand/introduction) and [Intune](/mem/intune/fundamentals/what-is-intune), without a complex migration, and with simplified licensing.
     - **Third-party device management solutions**: If your organization is using third-party device management solutions, see the documentation for these tools to install the client.
 
->[!IMPORTANT]
->Forensic evidence clips are deleted 120 days after they're captured or at the end of the preview period, whichever is sooner. You can download or transfer forensic evidence clips before they're deleted.
 
 ### Step 3: Configure settings
 
-Forensic evidence has several configuration settings that provide flexibility for the types of security-related user activity captured, capturing parameters, bandwidth limits, and offline capturing options. Forensic evidence capturing enables you to create policies based on your requirements in just a few steps and policy creation requires dual authorization.
+Forensic evidence has several configuration settings that provide flexibility for the types of security-related user activity captured, capturing parameters, bandwidth limits, and offline capturing options. Forensic evidence capturing enables you to create policies based on your requirements in just a few steps and adding users to a policy requires dual authorization.
 
 To configure forensic evidence settings, complete the following steps:
 
