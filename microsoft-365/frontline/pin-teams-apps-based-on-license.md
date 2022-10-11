@@ -104,7 +104,13 @@ This experience includes a default dashboard with relevant frontline cards such 
 
 To learn more, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=99706).
 
-:::image type="content" source="media/tailored-teams-apps-viva-connections.png" alt-text="Viva Connections in the tailored frontline app experience on Teams mobile" lightbox="tailored-teams-apps-viva-connections.png":::
+**Teams mobile**
+
+:::image type="content" source="media/tailored-teams-apps-viva-connections-mobile.png" alt-text="Viva Connections in the tailored frontline app experience on Teams mobile" lightbox="media/tailored-teams-apps-viva-connections-mobile.png":::
+
+**Teams desktop**
+
+:::image type="content" source="media/tailored-teams-apps-viva-connections-desktop.png" alt-text="Viva Connections in the tailored frontline app experience on Teams mobile" lightbox="media/tailored-teams-apps-viva-connections-desktop.png":::
 
 ## Related articles
 
