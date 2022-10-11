@@ -33,7 +33,7 @@ ms.collection:
 
 Required Conditions:
 
-1. Tenants have a valid Multi-Geo subscription that covers all users assigned to a Satellite Geography
+1. Tenants have a valid Multi-Geo subscription that covers all users assigned to a _Satellite Geography_.
 1. Customer must have an active Enterprise Agreement.
 1. Total purchased Multi-Geo units must be greater than 5% of the total eligible seats in the tenant.
 
@@ -45,73 +45,73 @@ Customers may assign a Satellite Geography supported by Multi-Geo to a supported
 
 Required Conditions:
 
-1. Tenant has a sign-up country included in Local Geography or Expanded Local Geography.
+1. Tenant has a sign-up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
 1. Tenant has a valid Advanced Data Residency subscription for all users in the tenant
 1. The Exchange Online subscription customer data is provisioned in Local Geography or Expanded Local Geography
 
 **Commitment:**
 
-Data at Rest for Office 365 Services as defined by the product terms, specifically Exchange Online mailbox content,  (e-mail body, calendar entries, and the content of e-mail attachments stored in the related Local Geography or Expanded Local Geography.  
+Data at Rest for Office 365 Services as defined by the product terms, specifically Exchange Online mailbox content,  (e-mail body, calendar entries, and the content of e-mail attachments stored in the related _Local Region Geography_ or _Expanded Local Region Geography_.  
 This includes all types of mailboxes, including user mailboxes, resource mailboxes, archive mailboxes.
 
 ## Multi-Geo Capabilities in Exchange Online
 
-Customers may assign a Satellite Geography supported by Multi-Geo to a user. See the [Microsoft 365 Multi-Geo availability section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide&branch=kvice-ADR-new#microsoft-365-multi-geo-availability) of the Microsoft 365 Multi-Geo page for details. The user's Data at Rest for Office 365 Services as defined by the product terms shall be stored in the assigned Satellite Geography. This includes all types of Exchange Online mailboxes, including user mailboxes, resource mailboxes, Microsoft 365 Group mailboxes, shared mailboxes, and archive mailboxes.
+Customers may assign a _Satellite Geography_ supported by Multi-Geo to a user. See the [Microsoft 365 Multi-Geo availability section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide&branch=kvice-ADR-new#microsoft-365-multi-geo-availability) of the Microsoft 365 Multi-Geo page for details. The user's Data at Rest for Office 365 Services as defined by the product terms shall be stored in the assigned _Satellite Geography_. This includes all types of Exchange Online mailboxes, including user mailboxes, resource mailboxes, Microsoft 365 Group mailboxes, shared mailboxes, and archive mailboxes.
 
-You can place mailboxes in Satellite Geography locations by:
+You can place mailboxes in _Satellite Geography_ locations by:
 
-1. Creating a new Exchange Online mailbox directly in a Satellite Geography location.
-1. Moving an existing Exchange Online mailbox to a Satellite Geography location by changing the user's preferred data location.
-1. Onboarding a mailbox from an on-premises Exchange organization directly into a satellite geo location.
+1. Creating a new Exchange Online mailbox directly in a _Satellite Geography_ location.
+1. Moving an existing Exchange Online mailbox to a _Satellite Geography_ location by changing the user's preferred data location.
+1. Onboarding a mailbox from an on-premises Exchange organization directly into a _Satellite Geography_ location.
 
 ### Mailbox placement and moves
 
 After Microsoft completes the prerequisite Multi-Geo configuration steps, Exchange Online will honor the PreferredDataLocation attribute on user objects in Azure AD.
-Exchange Online synchronizes the PreferredDataLocation property from AAD into the MailboxRegion property in the Exchange Online directory service. The value of MailboxRegion determines the Regional or Local Geography where user mailboxes and any associated archive mailboxes will be placed. It is not possible to configure a user's primary mailbox and archive mailboxes to reside in different geo locations. Only one Regional or Local Geography may be configured per user object.
+Exchange Online synchronizes the PreferredDataLocation property from AAD into the MailboxRegion property in the Exchange Online directory service. The value of MailboxRegion determines the _Macro Region Geography_ or _Local Region Geography_ where user mailboxes and any associated archive mailboxes will be placed. It is not possible to configure a user's primary mailbox and archive mailboxes to reside in different _Geography_ locations. Only one _Macro Region Geography_ or _Local Region Geography_ may be configured per user object.
 
-- When PreferredDataLocation is configured on a user with an existing mailbox, the mailbox will be put into a relocation queue and automatically moved to the specified Regional or Local Geography.
-- When PreferredDataLocation is configured on a user without an existing mailbox, when you provision the mailbox, it will be provisioned into the specified Regional or Local Geography.
-- When PreferredDataLocation is not specified on a user, when you provision the mailbox, it will be provisioned in the Primary Provisioned Geography.
-- If the PreferredDataLocation code is incorrect (e.g. a typo of NAN instead of NAM), the mailbox will be provisioned in the Primary Provisioned Geography.
+- When PreferredDataLocation is configured on a user with an existing mailbox, the mailbox will be put into a relocation queue and automatically moved to the specified _Macro Region Geography_ or _Local Region Geography_.
+- When PreferredDataLocation is configured on a user without an existing mailbox, when you provision the mailbox, it will be provisioned into the specified _Macro Region Geography_ or _Local Region Geography_.
+- When PreferredDataLocation is not specified on a user, when you provision the mailbox, it will be provisioned in the _Primary Provisioned Geography_.
+- If the PreferredDataLocation code is incorrect (e.g. a typo of NAN instead of NAM), the mailbox will be provisioned in the _Primary Provisioned Geography_.
 
 >[!NOTE]
->Multi-geo capabilities and Skype for Business Online regionally hosted meetings both use the PreferredDataLocation property on user objects to locate services. If you configure PreferredDataLocation values on user objects for regionally hosted meetings, the mailbox for those users will be automatically moved to the specified Regional or Local Geography after Multi-Geo is enabled on the Microsoft 365 tenant.
+>Multi-geo capabilities and Skype for Business Online regionally hosted meetings both use the PreferredDataLocation property on user objects to locate services. If you configure PreferredDataLocation values on user objects for regionally hosted meetings, the mailbox for those users will be automatically moved to the specified _Macro Region Geography_ or _Local Region Geography_ after Multi-Geo is enabled on the Microsoft 365 tenant.
 
 ### Feature limitations for Multi-Geo in Exchange Online
 
 - Security and compliance features (for example, auditing and eDiscovery) that are available in the Exchange admin center (EAC) aren't available in Multi-Geo organizations. Instead, you need to use the Microsoft 365 Security & Compliance Center to configure security and compliance features.
-- Outlook for Mac users may experience a temporary loss of access to their Online Archive folder while you move their mailbox to a new geo location. This condition occurs when the user's the primary and archive mailboxes are in different geo locations, because cross-geo mailbox moves may complete at different times.
-- Users can't share mailbox folders across geo locations in Outlook on the web (formerly known as Outlook Web App or OWA). For example, a user in the European Union can't use Outlook on the web to open a shared folder in a mailbox that's located in the United States. However, Outlook on the Web users can open other mailboxes in different geo locations by using a separate browser window as described in Open another person's mailbox in a separate browser window in Outlook Web App.
+- Outlook for Mac users may experience a temporary loss of access to their Online Archive folder while you move their mailbox to a new _Geography_ location. This condition occurs when the user's the primary and archive mailboxes are in different _Geography_ locations, because cross-geo mailbox moves may complete at different times.
+- Users can't share mailbox folders across _Geography_ locations in Outlook on the web (formerly known as Outlook Web App or OWA). For example, a user in the European Union can't use Outlook on the web to open a shared folder in a mailbox that's located in the United States. However, Outlook on the Web users can open other mailboxes in different _Geography_ locations by using a separate browser window as described in Open another person's mailbox in a separate browser window in Outlook Web App.
 
 >[!NOTE]
 >Cross-geo mailbox folder sharing is supported in Outlook on Windows.
 
-- Public folders are supported in multi-geo organizations. However, the public folders must remain in the *Primary Provisioned Geography* location. You can't move public folders to satellite geo locations.
-- In a multi-geo environment, cross-geo mailbox auditing is not supported. For example, if a user is assigned permissions to access a shared mailbox in a different geo location, mailbox actions performed by that user are not logged in the mailbox audit log of the shared mailbox. Exchange admin audit events are also only available for the default location. For more information, see Manage mailbox auditing.
+- Public folders are supported in Multi-Geo organizations. However, the public folders must remain in the _Primary Provisioned Geography_ location. You can't move public folders to satellite geo locations.
+- In a Multi-Geo environment, cross-geo mailbox auditing is not supported. For example, if a user is assigned permissions to access a shared mailbox in a different _Geography_ location, mailbox actions performed by that user are not logged in the mailbox audit log of the shared mailbox. Exchange admin audit events are also only available for the default location. For more information, see Manage mailbox auditing.
 
 ### Administering Exchange Multi-Go
 
-#### Administering Exchange Online mailboxes in a multi-geo environment
+#### Administering Exchange Online mailboxes in a Multi-Geo environment
 
-Exchange Online PowerShell is required to view and configure multi geo properties in your Microsoft 365 environment. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Exchange Online PowerShell is required to view and configure Multi-Geo properties in your Microsoft 365 environment. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 You need the [Microsoft Azure Active Directory PowerShell Module](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 or later in v1.x to see the **PreferredDataLocation** property on user objects. User objects synchronized via AAD Connect into AAD cannot have their **PreferredDataLocation** value directly modified via AAD PowerShell. Cloud-only user objects can be modified via AAD PowerShell. To connect to Azure AD PowerShell, see [Connect to PowerShell](connect-to-microsoft-365-powershell.md).
 
-In Exchange Online multi-geo environments, you don't need to do any manual steps to add Geographies to your tenant. After you receive the Message Center post that says multi-geo is ready for Exchange Online, all available Geographies will be ready and configured for you to use.
+In Exchange Online Multi-Geo environments, you don't need to do any manual steps to add Geographies to your tenant. After you receive the Message Center post that says multi-geo is ready for Exchange Online, all available Geographies will be ready and configured for you to use.
 
 #### Connect directly to a geo location using Exchange Online PowerShell
 
-Typically, Exchange Online PowerShell will connect to Primary Provisioned Geography location. But, you can also connect directly to Satellite Geography locations. Because of performance improvements, we recommend connecting directly to the Satellite Geography location when you only manage users in that location.
+Typically, Exchange Online PowerShell will connect to _Primary Provisioned Geography_ location. But, you can also connect directly to _Satellite Geography_ locations. Because of performance improvements, we recommend connecting directly to the _Satellite Geography_ location when you only manage users in that location.
 
 The requirements for installing and using the Exchange Online PowerShell module are described in ***[Install and maintain the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module)***.
 
-To connect Exchange Online PowerShell to a specific Geography location, the ConnectionUri parameter is different than the regular connection instructions. The rest of the commands and values are the same.
+To connect Exchange Online PowerShell to a specific _Geography_ location, the ConnectionUri parameter is different than the regular connection instructions. The rest of the commands and values are the same.
 
 Specifically, you need to add the ?email=<emailaddress> value to end of the ConnectionUri value. <emailaddress> is the email address of **any** mailbox in the target Geography location. Your permissions to that mailbox or the relationship to your credentials are not a factor; the email address simply tells Exchange Online PowerShell where to connect.
   
 Microsoft 365 or Microsoft 365 GCC customers typically don't need to use the _ConnectionUri_ parameter to connect to Exchange Online PowerShell. But, to connect to a specific Geography location, you do need to use ConnectionUri parameter so you can use ?email=<emailaddress> in the value.
   
-#### Connect to a geo location in Exchange Online PowerShell
+#### Connect to a Geography location in Exchange Online PowerShell
 
 The following connection instructions work for accounts that are or aren't configured for multi-factor authentication (MFA).
 
@@ -145,7 +145,7 @@ To view your tenant's Primary Provisioned Geography location, run the following 
 Get-OrganizationConfig | Select DefaultMailboxRegion
 ```
   
-#### Find the geo location of a mailbox
+#### Find the Geography location of a mailbox
 
 The **Get-Mailbox** cmdlet in Exchange Online PowerShell displays the following multi-geo related properties on mailboxes:
 
@@ -216,7 +216,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 #### Move an inactive mailbox to a specific Geography
   
-You can't move inactive mailboxes that are preserved for compliance purposes (for example, mailboxes on Litigation Hold) by changing their **PreferredDataLocation** value. To move an inactive mailbox to a different *Geography*, do the following steps:
+You can't move inactive mailboxes that are preserved for compliance purposes (for example, mailboxes on Litigation Hold) by changing their **PreferredDataLocation** value. To move an inactive mailbox to a different _Geography_, do the following steps:
 
 1. Recover the inactive mailbox. For instructions, see [Recover an inactive mailbox](../compliance/recover-an-inactive-mailbox.md).
 
@@ -273,7 +273,7 @@ New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "E
 For more information about creating new user accounts and finding LicenseAssignment values in Azure AD PowerShell, see [Create user accounts with PowerShell](create-user-accounts-with-microsoft-365-powershell.md) and [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
 
 > [!NOTE]
-> If you are using Exchange Online PowerShell to enable a mailbox and need the mailbox to be created directly in the *Geographic* location that's specified in **PreferredDataLocation**, you need to use an Exchange Online cmdlet such as **Enable-Mailbox** or **New-Mailbox** directly against the cloud service. If you use the **Enable-RemoteMailbox** cmdlet in on-premises Exchange PowerShell, the mailbox will be created in the *Primary Provisioned Geography* location.
+> If you are using Exchange Online PowerShell to enable a mailbox and need the mailbox to be created directly in the _Geographic_ location that's specified in **PreferredDataLocation**, you need to use an Exchange Online cmdlet such as **Enable-Mailbox** or **New-Mailbox** directly against the cloud service. If you use the **Enable-RemoteMailbox** cmdlet in on-premises Exchange PowerShell, the mailbox will be created in the *Primary Provisioned Geography* location.
 
 #### Onboard existing on-premises mailboxes in a specific Geography location
 
@@ -285,7 +285,7 @@ Or, you can use the following steps to onboard mailboxes directly in a specific 
 
 1. Verify the user object exists for each mailbox to be onboarded and that **PreferredDataLocation** is set to the desired value in Azure AD. The value of **PreferredDataLocation** will be synchronized to the **MailboxRegion** attribute of the corresponding mail user object in Exchange Online.
 
-1. Connect directly to the specific satellite geo location using the connection instructions from earlier in this topic.
+1. Connect directly to the specific _Satellite Geography_ location using the connection instructions from earlier in this topic.
 
 1. In Exchange Online PowerShell, store the on-premises administrator credentials that's used to perform a mailbox migration in a variable by running the following command:
 
@@ -303,12 +303,12 @@ Or, you can use the following steps to onboard mailboxes directly in a specific 
 
 1. If you need to migrate additional mailboxes to different satellite geo locations, repeat steps 2 through 4 for each specific location.
 
-## Multi-geo reporting
+## Multi-Geo reporting
   
 > [!NOTE]
 > The multi-geo reporting feature is currently in Preview, is not available in all organizations, and is subject to change.
 
-**Multi-Geo Usage Reports** in the Microsoft 365 admin center displays the user count by *Geographic* location. The report displays user distribution for the current month and provides historical data for the past 6 months.
+**Multi-Geo Usage Reports** in the Microsoft 365 admin center displays the user count by _Geographic_ location. The report displays user distribution for the current month and provides historical data for the past 6 months.
 
 ## Migration
 
