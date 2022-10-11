@@ -27,7 +27,7 @@ You can set up a data connector in the Microsoft Purview compliance portal to im
 Setting up a connector for HR data that insider risk management policies can use to generate risk indicators consists of creating a CSV file that contains that contains the HR data, creating an app in Azure Active Directory that's used for authentication, creating an HR data connector in the compliance portal, and then running a script (on a scheduled basis) that ingests the HR data in CSV files to the Microsoft cloud so it's available to the insider risk management solution.
 
 > [!IMPORTANT]
-> A new version of the HR connector is now available for public preview. To create a new HR connector or to import data for the [new employee profile scenario](#csv-file-for-employee-profile-data-preview) for the healthcare policy scenario for insider risk management, go to the **Data connectors** page in the compliance portal, select the **Connectors** tab, and then click **Add a connector > HR (preview)** to start the set up. Existing HR connectors will continue to work without any disruption.
+> A new version of the HR connector is now available for public preview. To create a new HR connector or to import data for the [new employee profile scenario](#csv-file-for-employee-profile-data-preview) for the healthcare policy scenario for insider risk management, go to the **Data connectors** page in the compliance portal, select the **Connectors** tab, and then select **Add a connector > HR (preview)** to start the set up. Existing HR connectors will continue to work without any disruption.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -167,7 +167,7 @@ The following table describes each column in the CSV file for performance review
 ### CSV file for employee profile data (preview)
 
 > [!NOTE]
-> The capability to create an HR connector for employee profile data is in public preview. To create an HR connector that supports employee profile data, go to the **Data connectors** page in the compliance portal, select the **Connectors** tab, and then click **Add a connector** > **HR (preview)**. Follow the steps to create a connector in [Step 3: Create the HR connector](#step-3-create-the-hr-connector).
+> The capability to create an HR connector for employee profile data is in public preview. To create an HR connector that supports employee profile data, go to the **Data connectors** page in the compliance portal, select the **Connectors** tab, and then select **Add a connector** > **HR (preview)**. Follow the steps to create a connector in [Step 3: Create the HR connector](#step-3-create-the-hr-connector).
 
 Here's an example of a CSV file for the data for the employee profile data.
 
@@ -422,7 +422,7 @@ You can use the Task Scheduler app in Windows to automatically run the script ev
 
    ![The new task is displayed in the Task Scheduler Library.](../media/HRConnectorTaskSchedulerLibrary.png)
 
-   The last time the script ran and the next time it's scheduled to run is displayed. You can double-click the task to edit it.
+   The last time the script ran and the next time it's scheduled to run is displayed. You can double-select the task to edit it.
 
    You can also verify the last time the script ran on the flyout page of the corresponding HR connector in the compliance center.
 
