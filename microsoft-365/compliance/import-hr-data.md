@@ -432,13 +432,14 @@ You can upload HR data using Power Automate templates and define triggers. For e
 
 Complete the following the steps to automatically upload HR data when new files become available on OneDrive for Business:
 
-1.	In [Power Automate](https://make.preview.powerautomate.com), navigate to **My flows**.
-2.	Select **Import** and upload the *ImportHRDataforIRM_20220912092628.zip* package.
-3.	After the package gets uploaded, update the content (name & OneDrive for Business connection), and select **Import**.
+1.	Download the *ImportHRDataforIRM.zip* package from the [GitHub site](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/ImportHRDataforIRM.zip).
+2. In [Power Automate](https://make.preview.powerautomate.com), navigate to **My flows**.
+3.	Select **Import** and upload the *ImportHRDataforIRM.zip* package.
+4.	After the package gets uploaded, update the content (name & OneDrive for Business connection), and select **Import**.
 
     ![Power Automate flow import.](../media/hr-connector-pa-import-flow.png)
 
-4.	Select **Open flow** and update the parameters. The following table describes the parameters to use in this Power Automate Flow and their required values. The information you obtained in the previous steps is used in the values for these parameters.
+5.	Select **Open flow** and update the parameters. The following table describes the parameters to use in this Power Automate Flow and their required values. The information you obtained in the previous steps is used in the values for these parameters.
 
     |**Parameter**|**Description**|
     |:------------|:--------------|
@@ -451,16 +452,16 @@ Complete the following the steps to automatically upload HR data when new files 
 
     ![Power Automate flow.](../media/hr-connector-pa-flow.png)
 
-5.	Select **Save**.
-6.	Navigate to **Flow overview** and select **Turn on**.
+6.	Select **Save**.
+7.	Navigate to **Flow overview** and select **Turn on**.
 
     ![Turn on the Power Automate flow.](../media/hr-connector-pa-turn-on.png)
 
-7.	Test the flow manually by uploading a new file to your OneDrive for Business folder and verify that it ran successfully. This may take a few minutes after the upload before the flow is triggered.
+8.	Test the flow manually by uploading a new file to your OneDrive for Business folder and verify that it ran successfully. This may take a few minutes after the upload before the flow is triggered.
 
     ![Power Automate flow test.](../media/hr-connector-pa-test.png)
 
-8.	You can now monitor the HR connector as described in **Step 5**.
+9.	You can now monitor the HR connector as described in **Step 5**.
 
 If needed, you can update the flow to create triggers based on file availability and modification events on SharePoint and other data sources supported by Power Automate Flows.
 
