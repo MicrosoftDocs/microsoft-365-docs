@@ -65,10 +65,9 @@ When a customer creates a new AAD tenant, the customer will enter a country duri
 
 M365 services are not deployed to all Microsoft data centers globally.  The larger services, like Exchange Online, SharePoint Online and Teams are universally deployed to all _Geographies_.   Other services make decisions on where to deploy their services based on the number of customers, regional affiliations, and software architectures.  When a customer first uses a service in this category, the provisioning logic will use the _Default Geography_ and the supported _Geographies_ to determine where to provision a given customer.
 
->[!NOTE]
->Over time, a particular service may deploy their software to additional _Geographies_, so the provisioning locations for new customers can change over time, and this does not necessarily cause customer data to be moved to a new _Geography_.
+Over time, a particular service may deploy their software to additional _Geographies_, so the provisioning locations for new customers can change over time, and this does not necessarily cause customer data to be moved to a new _Geography_.
 
-At any given time, there is a _M365 Service provisioning country mapping_ that should be referenced to understand where your service data will be provisioned if you start to use the service for the first time.  This mapping can be found in section 7.  It is important to understand that this mapping does not reflect where "your" data is at any given time.  Your data could have been provisioned earlier, at a time when the mapping was different from what it is today.  The primary option for you to understand your actual data location is to refer to the M365 Admin Center Data Location, though there are a limited number of services exposed there.  If it is critical for you to understand where your data is stored, for a given service, reach out to your Microsoft contact or create a case with Microsoft Support.
+In order to understand where your data, for a given service is stored, your primarily tool for understanding this is in the Tenant Admin Center.  As a tenant administrator you can find the actual data location by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Currently the data location is available for Exchange Online, SharePoint Online and Microsoft Teams.  In addition to this resource, please review to section (***TODO: insert link to datamaps link farm page)***.
 
 Some examples:
 
