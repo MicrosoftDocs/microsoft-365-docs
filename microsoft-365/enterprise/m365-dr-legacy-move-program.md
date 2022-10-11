@@ -1,6 +1,6 @@
 ---
 title: Data Residency Legacy Move Program
-description: 
+description: Learn about the Data Residency Legacy Move Program
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 10/6/2022
+ms.date: 10/11/2022
 ms.reviewer: 
 ms.custom:
 - it-pro
@@ -19,14 +19,14 @@ ms.collection:
 # Data Residency Legacy Move Program
 
 > [!NOTE]
-> With the advent of Advanced Data Residency, **the Move Program is no longer being offered with any new in-country data center launches** (last country is Qatar).  However, the following information is still valid for the remaining countries involved in the Move Program. For more details on Advanced Data Residency, see <a href="https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/advanced-data-residency?view=o365-worldwide&branch=kvice-ADR-new" target="_blank">the ADR page</a>.
+> With the advent of Advanced Data Residency, **the Move Program is no longer being offered with any new in-country data center launches** (last country is Qatar).  However, the following information is still valid for the remaining countries involved in the Move Program. For more details on Advanced Data Residency, see <a href="advanced-data-residency.md" target="_blank">the ADR page</a>.
 
 ## How to Request your Data Move - FINAL OPPORTUNITY
 
 > [!NOTE]
 > Due to the release of Advanced Data Residency, *we are opening the opt-in period for all previously released in-country data centers* (minus Qatar) to allow all remaining region-based tenants to opt in for a final free move to their respective signup countries.  This move effort will have an SLO (Service Level Objective) of 24 months, starting from the request deadline date. See the table below for a list of eligible countries and related dates.
 
-*When Can I Request a Move (final opt-in opportnuity)*
+## When Can I Request a Move (final opt-in opportunity)
 
 |**Customers with signup country in**|**Request period begins**|**Request deadline**|
 |:-----|:-----|:-----|
