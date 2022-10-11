@@ -42,7 +42,7 @@ The procedures in this section require the <a href="https://www.powershellgaller
 
 [Connect and sign in](connect-to-microsoft-365-powershell.md) with a set of global administrator credentials for your tenant.
 
-Use the [Set-MsolUser](/powershell/module/msonline/set-msoluser) cmdlet to set the preferred data location for each of your users. For example:
+Use the [Set-MsolUser](https://learn.microsoft.com/powershell/module/msonline/set-msoluser) cmdlet to set the preferred data location for each of your users. For example:
 
 ```PowerShell
 Set-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR
