@@ -128,7 +128,7 @@ For more information, see [Apply a retention label to a model in Microsoft Synte
 
 :::row:::
    :::column span="3":::
-      Having one or more Syntex licenses in your organization enables the following additional term store features for admins:
+      Having one or more Syntex licenses in your organization enables the following additional term store features for admins:<br><br>
        
       - [SKOS-based term set import](import-term-set-skos.md), which lets you import a term set using a SKOS-based format.      
    :::column-end:::
