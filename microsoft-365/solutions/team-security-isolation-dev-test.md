@@ -1,20 +1,23 @@
 ---
 title: "Configure a team with security isolation in a dev/test environment"
-author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
-ms.author: josephd
-manager: laurawi
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom: admindeeplinkCOMPLIANCE
+ms.custom: 
+- admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
 description: Configure the security and infrastructure that allows your employees to work remotely from anywhere and at any time.
 ---
 
@@ -134,7 +137,7 @@ Next, you need to configure a sensitivity label with the following settings:
 
 Follow these steps:
 
-1. Open the Microsoft 365 compliance center, under **Solutions**, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection**</a>.
+1. Open the Microsoft Purview compliance portal, under **Solutions**, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection**</a>.
 1. Click **Create a label**.
 1. Type **Company Strategy** for the label name.
 1. Type **Senior leadership company strategy documents** as the tool tip, and then click **Next**.
@@ -155,7 +158,7 @@ Follow these steps:
 
 Next, publish the new label with these steps:
 
-1. In the Microsoft 365 compliance center, on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection**</a>, choose the **Label policies** tab.
+1. In the Microsoft Purview compliance portal, on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection**</a>, choose the **Label policies** tab.
 2. Click **Publish labels**.
 3. On the **Choose sensitivity labels to publish** page, click **Choose sensitivity labels to publish**.
 4. Select **Company Strategy**, and then click **Add**.
@@ -172,15 +175,14 @@ It may take some time for the **Company Strategy** label to become available aft
 
 Next, apply your new label to the **Company Strategy** team and update the default sharing link type to reduce the risk of accidentally sharing files and folders to a wider audience than intended.
 
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-1. Under **Sites**, click **Active sites**.
-1. Click the **Company Strategy** site.
-1. On the **Policies** tab, under **Sensitivity**, click **Edit**.
-1. Select the **Company Strategy** label, and then click **Save**.
-1. On the **Policies** tab, under **External sharing**, click **Edit**.
+1. Open the SharePoint admin center, under **Sites**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
+1. Select the **Company Strategy** site.
+1. On the **Policies** tab, under **Sensitivity**, select **Edit**.
+1. Select the **Company Strategy** label, and then select **Save**.
+1. On the **Policies** tab, under **External sharing**, select **Edit**.
 1. Choose **Only people in your organization**.
 1. Under **Default sharing** link type, clear the **Same as organization-level setting** check box, and select **People with existing access**.
-1. Click **Save**.
+1. Select **Save**.
 
 Next, configure owners-only site sharing for the **Company Strategy** team.
 

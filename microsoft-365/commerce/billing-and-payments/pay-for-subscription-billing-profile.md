@@ -2,24 +2,25 @@
 title: "Paying for your subscription with a billing profile"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
 description: "Learn what payment options are available to pay for your subscription with a billing profile."
 ms.custom: 
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
-ms.date: 10/29/2021
+ms.date: 05/26/2022
 ---
 
 # How to pay for your subscription with a billing profile
@@ -34,6 +35,16 @@ By default, recurring billing is automatically turned on for all paid subscripti
 
 If recurring billing is turned off for a billing profile, you can use the **Pay now** button on your invoice to pay for it every billing period, regardless of what payment method is linked with the billing profile. You can also pay by check or electronic funds transfer (EFT). Instructions for how to do that are included on the PDF copy of your invoice.
 
+## New regulations from the Reserve Bank of India
+
+As of 1 October 2021, automatic payments in India might block some credit card transactions, especially transactions exceeding 5,000 INR. Because of this regulation, you might have to make payments manually in the Microsoft 365 admin center. These regulations won't affect the total amount you’re charged for your usage.
+
+[Learn more about the Reserve Bank of India regulation for recurring payments](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
+
+On 30 September 2022, Microsoft and other online merchants will no longer store credit card information. To comply with this regulation, Microsoft will remove all stored card details from the Microsoft 365 admin center. To avoid service interruption, you must add a payment method and make a one-time payment for all subscriptions and billing profiles.
+
+[Learn about the Reserve Bank of India regulation for card storage](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
+
 ## Paying by invoice
 
 If you have a billing profile that is set up to be paid by invoice, you can pay for your subscription with a check or EFT. You can also use a credit card to make an online payment by using the **Pay now** button on your invoice.
@@ -46,7 +57,7 @@ To be eligible to pay by invoice, you must:
 
 If a credit check is required, you’re notified when you buy your subscription. If you agree to be contacted, you get an email that includes more information about applying for credit approval. Credit checks are usually completed within two business days.
 
-If your billing profile is backed by an invoice, you get an email when your billing statement is ready to view. This email doesn’t contain a copy of your billing statement. However, you can choose to [receive a copy of your billing statement in email](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). Your billing statement includes details about your options for making a payment, and where to send it. If you enter a purchase order (PO) number in your billing profile, the number appears on your billing statement. For information about accessing billing statements, see [View your bill or invoice](view-your-bill-or-invoice.md).
+If your billing profile is backed by an invoice, you get an email when your billing statement is ready to view. This email doesn’t contain a copy of your billing statement. However, you can choose to [receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Your billing statement includes details about your options for making a payment, and where to send it. If you enter a purchase order (PO) number in your billing profile, the number appears on your billing statement. For information about accessing billing statements, see [View your bill or invoice](view-your-bill-or-invoice.md).
 
 ## Where do I send my check or EFT payment?
 
@@ -54,7 +65,6 @@ If your billing profile is backed by an invoice, you get an email when your bill
 
 > [!NOTE]
 > Paying by check is only available in a few countries.
-
 
 ## Can I pay my invoice online?
 

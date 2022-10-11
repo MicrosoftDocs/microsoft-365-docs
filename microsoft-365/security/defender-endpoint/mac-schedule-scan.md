@@ -2,7 +2,7 @@
 title: How to schedule scans with Microsoft Defender for Endpoint on macOS
 description: Learn how to schedule an automatic scanning time for Microsoft Defender for Endpoint in macOS to better protect your organization's assets.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, scans, antivirus
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Schedule scans with Microsoft Defender for Endpoint on macOS
@@ -105,7 +106,7 @@ The following code shows the schema you need to use to schedule a quick scan.
             <key>Hour</key>
             <integer>2</integer>
             <key>Minute</key>
-            <integer>0</integer>
+            <integer>50</integer>
             <key>Weekday</key>
             <integer>5</integer>
         </dict>
@@ -127,10 +128,14 @@ The following code shows the schema you need to use to schedule a quick scan.
     launchctl start <your file name>
     ```
 
-3. Your scheduled scan will run at the date, time, and frequency you defined in your p-list. In the examples above, the scan runs at 2:00 AM every Friday. 
+3. Your scheduled scan will run at the date, time, and frequency you defined in your p-list. In the previous examples, the scan runs at 2:50 AM every Friday. 
 
-    The `Weekday` value of `StartCalendarInterval` uses an integer to indicate the fifth day of the week, or Friday.
-
+    - The `Weekday` value of `StartCalendarInterval` uses an integer to indicate the fifth day of the week, or Friday. The range is between 0 and 7 with 7 representing Sunday.
+    - The `Day` value of `StartCalendarInterval` uses an integer to indicate the third day of the month. The range is between 1 and 31.
+    - The `Hour` value of `StartCalendarInterval` uses an integer to indicate the second hour of the day. The range is between 0 and 24.
+    The `Minute` value of `StartCalendarInterval` uses an integer to indicate fifty minutes of the hour. The range is between 0 and 59.
+    
+    
  > [!IMPORTANT]
  > Agents executed with *launchd* will not run at the scheduled time while the device is asleep. They will instead run once the device resumes from sleep mode.
  >

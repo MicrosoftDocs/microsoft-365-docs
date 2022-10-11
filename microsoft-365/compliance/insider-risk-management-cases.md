@@ -1,7 +1,7 @@
 ---
 title: Insider risk management cases
-description: Learn about insider risk management cases in Microsoft 365
-keywords: Microsoft 365, insider risk management, risk management, compliance
+description: Learn about insider risk management cases in Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -11,7 +11,9 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
@@ -24,9 +26,11 @@ After investigating the details of a case, you can take action by:
 - sending the user a notice
 - resolving the case as benign
 - sharing the case with your ServiceNow instance or with an email recipient
-- escalating the case for an Advanced eDiscovery investigation
+- escalating the case for an eDiscovery (Premium) investigation
 
 Check out the [Insider Risk Management Investigation and Escalation video](https://www.youtube.com/watch?v=UONUSmkRC8s) for an overview of how cases are investigated and managed in insider risk management.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Cases dashboard
 
@@ -91,7 +95,7 @@ The **Case overview** tab also includes an **Alerts** section that includes the 
 
 ### Alerts
 
-The **Alerts** tab summarizes the current alerts included in the case. New alerts may be added to an existing case and they will be added to the **Alert** queue as they are assigned. The following alert attributes are listed the queue:
+The **Alerts** tab summarizes the current alerts included in the case. New alerts may be added to an existing case and they'll be added to the **Alert** queue as they're assigned. The following alert attributes are listed the queue:
 
 - Status
 - Severity
@@ -114,36 +118,13 @@ Use the filter control to filter alerts by several attributes, including:
 
 ### User activity
 
-The **User activity** tab is one of the most powerful tools for internal risk analysis and investigation for cases in the insider risk management solution. This tab is structured to enable quick review of a case, including a historical timeline of all alerts, alert details, the current risk score for the user in the case, the sequence of risk events, and controls to take effective action to contain the risks in the case.
-
-![Insider risk management user activity.](../media/insider-risk-user-activities.png)
-
-1. **Time filters**: By default, the last six months of alerts confirmed in the case are displayed in the User activity chart. You can easily filter the chart view by selecting the *6 Months*, *3 Months*, or *1 Month* tabs on the bubble chart.
-2. **Risk alert activity and details**: Risk activities are visually displayed as colored bubbles in the User activity chart. Bubbles are created for different categories of risk and bubble size is proportional to the number of risk activities for the category. Select a bubble to display the details for each risk activity. Details include:
-    - **Date** of the risk activity.
-    - The **risk activity category**. For example, *Email(s) with attachments sent outside the organization* or *File(s) downloaded from SharePoint Online*.
-    - **Risk score** for the alert. This score is the numerical score for the alert risk severity level.
-    - Number of events associated with the alert. Links to each file or email associated with the risk activity are also available.
-3. **Risk sequence (preview)**: The chronological order of risky activities is an important aspect of risk investigation and identifying these related activities is an important part of evaluating overall risk for your organization. Alert activities that are related are displayed with connecting lines to highlight that these activities are associated with a larger risk area. This view of activities can help investigators literally 'connect the dots' for risk activities that could have been viewed as isolated or one-off events. Select any bubble in the sequence to display details for all the associated risk activities. Details include:
-
-    - **Name** of the sequence.
-    - **Date** or **Date range** of the sequence.
-    - **Risk score** for the sequence. This score is the numerical score for the sequence of the combined alert risk severity levels for each related activity in the sequence.
-    - **Number of events associated with each alert in the sequence**. Links to each file or email associated with each risk activity are also available.
-    - **Show activities in sequence**. Displays sequence as a highlight line on the bubble chart and expands the alert details to display all related alerts in the sequence.
-
-4. **Risk activity legend**: Across the bottom of the user activity chart, a color-coded legend helps you quickly determine risk category for each alert.
-5. **Risk activity chronology**: The full chronology of all risk alerts associated with the case are listed, including all the details available in the corresponding alert bubble.
-6. **Case actions**: Options for resolving the case are on the case action toolbar. You can resolve a case, send an email notice to the user, or escalate the case for a data or user investigation.
+The **User activity** tab allows risk analysts and investigators to review activity details and use a visual representation of all the activities associated with risk alerts and cases. For example, as part of the alert triage process, analysts may need to review all the risk activities associated with the case for more details. In cases, risk investigators can review user activity details and the bubble chart to help understand the overall scope of the activities associated with the case. For more information about the User activity chart, see the [Insider risk management activities](insider-risk-management-activities.md#user-activity) article.
 
 ### Activity explorer (preview)
 
-> [!IMPORTANT]
-> The Activity explorer tab is available in the case management area for users with triggering events after this feature is available in your organization.
-
 The **Activity explorer** tab allows risk analysts and investigators to review activity details associated with risk alerts. For example, as part of the case management actions, investigators and analysts may need to review all the risk activities associated with the case for more details. With the **Activity explorer**, reviewers can quickly review a timeline of detected risky activity and identify and filter all risk activities associated with alerts.
 
-For more information about the Activity explorer, see the [Insider risk management alerts](insider-risk-management-activities.md#activity-explorer) article.
+For more information about the Activity explorer, see the [Insider risk management activities](insider-risk-management-activities.md#activity-explorer) article.
 
 ### Content explorer
 
@@ -155,20 +136,20 @@ The Content explorer is a powerful tool with basic and advanced search and filte
 
 ### Case notes
 
-The **Case notes** tab in the case is where risk analysts and investigators share comments, feedback, and insights about their work for the case. Notes are permanent additions to a case and cannot be edited or deleted after the note is saved. When a case is created from an alert, the comments entered in the **Confirm alert and create insider risk case** dialog are automatically added as a case note.
+The **Case notes** tab in the case is where risk analysts and investigators share comments, feedback, and insights about their work for the case. Notes are permanent additions to a case and can’t be edited or deleted after the note is saved. When a case is created from an alert, the comments entered in the **Confirm alert and create insider risk case** dialog are automatically added as a case note.
 
 The case notes dashboard displays notes by the user that created the note and the time that has passed since the note was saved. To search the case note text field for a specific keyword, use the **Search** button on the case dashboard and enter a specific keyword.
 
 To add a note to a case:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
 2. Select a case, then select the **Case notes** tab.
 3. Select **Add case note**.
 4. On the **Add case note** dialog, type your note for the case. Select **Save** to add the note to the case or select **Cancel** close without saving the note to the case.
 
 ### Contributors
 
-The **Contributors** tab in the case is where risk analysts and investigators can add other reviewers to the case. Be default, all users assigned the **Insider Risk Management Analysts** and the **Insider Risk Management Investigators** roles are listed as contributors for each active and closed case. Only users assigned the **Insider Risk Management Investigators** role have permission to view files and messages in the Content explorer.
+The **Contributors** tab in the case is where risk analysts and investigators can add other reviewers to the case. By default, all users assigned the **Insider Risk Management Analysts** and the **Insider Risk Management Investigators** roles are listed as contributors for each active and closed case. Only users assigned the **Insider Risk Management Investigators** role have permission to view files and messages in the Content explorer.
 
 Temporary access to a case can be granted by adding a user as a contributor. Contributors have all case management control on the specific case except:
 
@@ -178,7 +159,7 @@ Temporary access to a case can be granted by adding a user as a contributor. Con
 
 To add a contributor to a case:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
 2. Select a case, then select the **Contributors** tab.
 3. Select **Add contributor**.
 4. On the **Add contributor** dialog, start typing the name of the user you want to add and then select the user from the suggested user list. This list is generated from the Azure Active Directory of your tenant subscription.
@@ -186,7 +167,7 @@ To add a contributor to a case:
 
 ## Case actions
 
-Risk investigators can take action on a case in one of several methods, depending on the severity of the case, the history of risk of the user, and the risk guidelines of your organization. In some situations, you may need to escalate a case to a user or data investigation to collaborate with other areas of your organization and to dive deeper into risk activities. Insider risk management is tightly integrated with other Microsoft 365 compliance solutions to help you with end-to-end resolution management.
+Risk investigators can take action on a case in one of several methods, depending on the severity of the case, the history of risk of the user, and the risk guidelines of your organization. In some situations, you may need to escalate a case to a user or data investigation to collaborate with other areas of your organization and to dive deeper into risk activities. Insider risk management is tightly integrated with other Microsoft Purview solutions to help you with end-to-end resolution management.
 
 ### Send email notice
 
@@ -196,7 +177,7 @@ It's important to remember that sending an email notice to a user ***does not***
 
 To send a notice to the user assigned to a case:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
 2. Select a case, then select the **Send email notice** button on the case action toolbar.
 3. On the **Send e-mail notice** dialog, select the **Choose a notice template** dropdown control to select the notice template for the notice. This selection pre-fills the other fields on the notice.
 4. Review the notice fields and update as appropriate. The values entered here will override the values on the template.
@@ -204,17 +185,17 @@ To send a notice to the user assigned to a case:
 
 ### Escalate for investigation
 
-Escalate the case for user investigation in situations where additional legal review is needed for the user's risk activity. This escalation opens a new Advanced eDiscovery case in your Microsoft 365 organization. Advanced eDiscovery provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external legal investigations. It also lets your legal team manage the entire legal hold notification workflow to communicate with custodians involved in a case. Assigning a reviewer as a custodian in an Advanced eDiscovery case created from an insider risk management case helps your legal team take appropriate action and manage content preservation. To learn more about Advanced eDiscovery cases, see [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
+Escalate the case for user investigation in situations where additional legal review is needed for the user's risk activity. This escalation opens a new Microsoft Purview eDiscovery (Premium) case in your Microsoft 365 organization. eDiscovery (Premium) provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external legal investigations. It also lets your legal team manage the entire legal hold notification workflow to communicate with custodians involved in a case. Escalating to an eDiscovery (Premium) case from an insider risk management case helps your legal team take appropriate action and manage content preservation. To learn more about eDiscovery (Premium) cases, see [Overview of Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md).
 
 To escalate a case to a user investigation:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
 2. Select a case, then select the **Escalate for investigation** button on the case action toolbar.
 3. On the **Escalate for investigation** dialog, enter a name for the new user investigation. If needed, enter notes about the case and select **Escalate**.
 4. Review the notice fields and update as appropriate. The values entered here will override the values on the template.
 5. Select **Confirm** to create the user investigation case or select **Cancel** to close the dialog without creating a new user investigation case.
 
-After the insider risk management case has been escalated to a new user investigation case, you can review the new case in the **eDiscovery** > **Advanced** area in the Microsoft 365 compliance center.
+After the insider risk management case has been escalated to a new user investigation case, you can review the new case in the **eDiscovery** > **Advanced** area in the Microsoft Purview compliance portal.
 
 ### Run automated tasks with Power Automate flows for the case
 
@@ -252,7 +233,7 @@ After risk analysts and investigators have completed their review and investigat
 
 To resolve a case:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
 2. Select a case, then select the **Resolve case** button on the case action toolbar.
 3. On the **Resolve case** dialog, select the **Resolve as** dropdown control to select the resolution classification for the case. The options are **Benign** or **Confirmed policy violation**.
 4. On the **Resolve case** dialog, enter the reasons for the resolution classification in the **Action taken** text field.

@@ -2,8 +2,8 @@
 title: Manage Microsoft Defender for Endpoint using Intune
 description: Learn how to manage Microsoft Defender for Endpoint with Intune
 keywords: post-migration, manage, operations, maintenance, utilization, intune, Microsoft Defender for Endpoint, edr
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,12 +12,13 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - M365-security-compliance
-  - m365solution-scenario
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.date: 11/29/2021
+ms.date: 07/01/2022
 ms.reviewer: chventou
+search.appverid: met150
 ---
 
 # Manage Microsoft Defender for Endpoint with Intune
@@ -54,8 +55,6 @@ This article describes how to find your Microsoft Defender for Endpoint settings
 
 The following table lists various tasks you can perform to configure Microsoft Defender for Endpoint with Intune. You don't have to configure everything all at once; choose a task, read the corresponding resources, and then proceed.
 
-<br/><br/>
-
 |Task|Resources to learn more|
 |---|---|
 |**Manage your organization's devices using Intune** to protect those devices and data stored on them|[Protect devices with Microsoft Intune](/mem/intune/protect/device-protect)|
@@ -76,12 +75,12 @@ The following table lists various tasks you can perform to configure Microsoft D
 
 ## Configure your Microsoft 365 Defender portal
 
-If you haven't already done so, configure your Microsoft 365 Defender portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. See [Microsoft 365 Defender](microsoft-defender-security-center.md). You can also configure whether and what features end users can see in the Microsoft 365 Defender portal.
+If you haven't already done so, configure your Microsoft 365 Defender portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. See [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender). You can also configure whether and what features end users can see in the Microsoft 365 Defender portal.
 
 - [Overview of Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 - [Endpoint protection: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 ## Next steps
 
-- [Get an overview of threat and vulnerability management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Visit the Microsoft 365 Defender portal security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+- [Get an overview of Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+

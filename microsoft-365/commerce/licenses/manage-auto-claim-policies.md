@@ -2,37 +2,29 @@
 title: "Manage auto-claim policies"
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.review: yinggiy, pablom
+ms.reviewer: yinggiy, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_licensing
+- AdminSurgePortfolio
 description: "Learn how to create and manage auto-claim policies that automatically assign licenses to users for certain apps."
 search.appverid: MET150
 ms.date: 04/06/2021
 ---
 
-# Manage auto-claim policies
+# Manage Microsoft Teams auto-claim policies
 
 An auto-claim policy lets users automatically claim a license for a product the first time that they sign into an app. As an admin, you typically assign licenses to users either manually, or by using group-based licensing. By using auto-claim policies, you manage the products for which users can automatically claim licenses. You can also control which products those licenses come from.
-
-After you create an auto-claim policy, you can do the following tasks to manage the policy:
-
-- [Turn the policy on or off](#turn-a-policy-on-or-off)
-- [Edit the policy friendly name](#edit-the-policy-friendly-name)
-- [Add or remove backup products](#add-or-remove-backup-products)
-- [Manage the assigning apps and services](#change-the-assigning-apps-and-services)
-- [Change the assigning order](#change-the-assigning-order-for-backup-products)
-- [View a policy report](#view-an-auto-claim-policy-report)
 
 > [!IMPORTANT]
 > Auto-claim policies are currently only available for Microsoft Teams. More products will be available to use in the future.

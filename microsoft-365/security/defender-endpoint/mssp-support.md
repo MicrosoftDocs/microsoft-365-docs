@@ -2,7 +2,7 @@
 title: Managed security service provider (MSSP) partnership opportunities
 description: Understand how Microsoft Defender for Endpoint integrates with managed security service providers (MSSP)
 keywords: mssp, integration, managed, security, service, provider
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Managed security service provider partnership opportunities
@@ -37,7 +40,7 @@ To address this demand, managed security service providers (MSSP) offer to deliv
 
 Defender for Endpoint adds partnership opportunities for this scenario and allows MSSPs to take the following actions:
 
-- Get access to MSSP customer's Microsoft Defender Security Center portal
+- Get access to MSSP customer's Microsoft 365 Defender portal
 - Get email notifications, and 
 - Fetch alerts through security information and event management (SIEM) tools
 

@@ -7,18 +7,19 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-
+ms.collection: m365-security
 ms.localizationpriority: medium
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Admins can learn about the insights and reports that are available in the Mail flow dashboard in the Security & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Mail flow insights in the Security & Compliance Center
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -27,32 +28,21 @@ ms.prod: m365-security
 
 Admins can use Mail flow dashboard in the Security & Compliance Center to discover trends, insights, and take actions to fix issues related to mail flow in their organization.
 
-![The Mail flow dashboard in the Security & Compliance Center.](../../media/mail-flow-dashboard-v2.png)
+:::image type="content" source="../../media/mail-flow-dashboard-v2.png" alt-text="The Mail flow dashboard in the Security & Compliance Center" lightbox="../../media/mail-flow-dashboard-v2.png":::
 
 The available insights are:
 
 - [Auto-forwarded messages insight](mfi-auto-forwarded-messages-report.md)
-
 - [Fix possible mail loop insight](mfi-mail-loop-insight.md)<sup>1</sup>
-
 - [Fix slow mail flow rules insight](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
-
 - [Mail flow map](mfi-mail-flow-map-report.md)
-
 - [New domains being forwarded email insight](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
-
 - [New users forwarding email insight](mfi-new-users-forwarding-email.md)<sup>2</sup>
-
 - [Non-accepted domain report](mfi-non-accepted-domain-report.md)
-
 - [Non-delivery report](mfi-non-delivery-report.md)
-
 - [Outbound and inbound mail flow insight](mfi-outbound-and-inbound-mail-flow.md)
-
 - [Queues insight](mfi-queue-alerts-and-queues.md)
-
 - [SMTP Auth clients insight and report](mfi-smtp-auth-clients-report.md)
-
 - [Top domain mail flow status insight](mfi-domain-mail-flow-status-insight.md)
 
 <sup>1</sup> This insight appears in the **Recommended for you** area of the Mail flow dashboard only after the issue is detected. Otherwise, you won't see it.
@@ -75,7 +65,5 @@ The Mail flow dashboard is available to members of the following role groups:
 For more information about permissions, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) and [Give users access to the Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
 
 ## Where to find the Mail flow dashboard
-
-Open the Security & Compliance Center at <https://protection.office.com>, expand **Mail flow**, and then select **Dashboard**.
 
 To go directly to the Mail flow dashboard, open <https://protection.office.com/mailflow/dashboard>.

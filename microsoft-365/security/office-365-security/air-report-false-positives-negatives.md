@@ -8,26 +8,25 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
-ms.prod: m365-security
+author: dansimp
+ms.author: dansimp
+ms.service: microsoft-365-security
 ms.date: 01/29/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.topic: how-to
 ms.custom: 
 - autoir
-- admindeeplinkDEFENDER
-ms.technology: mdo
+ms.subservice: mdo
 ---
 
 # How to report false positives/negatives in automated investigation and response capabilities
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
@@ -64,25 +63,19 @@ In most cases, if a remediation action was taken on an email message, email atta
 
 With Threat Explorer, your security operations team can find an email affected by an action and potentially undo the action.
 
-<br>
-
-****
-
 |Scenario|Undo Options|Learn more|
 |---|---|---|
 |An email message was routed to a user's Junk Email folder|<ul><li>Move the message to the user's Deleted Items folder</li><li>Move the message to the user's Inbox</li><li>Delete the message</li></ul>|[Find and investigate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md)|
 |An email message or a file was quarantined|<ul><li>Release the email or file</li><li> Delete the email or file</li></ul>|[Manage quarantined messages as an admin](manage-quarantined-messages-and-files.md)|
-|
 
 ### Undo an action in the Action center
 
 In the Action center, you can see remediation actions that were taken and potentially undo the action.
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
-2. In the navigation pane, select **Action center**.
-3. Select the **History** tab to view the list of completed actions.
-4. Select an item. Its flyout pane opens.
-5. In the flyout pane, select **Undo**. (Only actions that can be undone will have an **Undo** button.)
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the Action center by selecting **Action center**. To go directly to the Action center, use <https://security.microsoft.com/action-center/>.
+2. In the Action center, select the **History** tab to view the list of completed actions.
+3. Select an item. Its flyout pane opens.
+4. In the flyout pane, select **Undo**. (Only actions that can be undone will have an **Undo** button.)
 
 ## See also
 

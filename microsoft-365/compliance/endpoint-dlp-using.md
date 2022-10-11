@@ -1,5 +1,5 @@
 ---
-title: "Using  Endpoint data loss prevention"
+title: "Using Endpoint DLP"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -12,258 +12,38 @@ f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: 
-- M365-security-compliance
+ms.collection:
+- tier1
+- highpri 
+- purview-compliance
 - SPO_Content
 search.appverid: 
 - MET150
-description: "Learn how to configure data loss prevention (DLP) policies to use Microsoft 365 Endpoint data loss prevention (EPDLP) locations."
+description: "Learn how to configure data loss prevention (DLP) policies to use Endpoint data loss prevention locations."
 ---
 
 # Using Endpoint data loss prevention
-
-This article walks you through four scenarios where you create and modify a DLP policy that uses devices as a location.
-
-## DLP settings
-
-Before you get started, you should set up your DLP settings. Settings are applied to all DLP policies for devices. You must configure these if you intend to create policies that enforce:
-
-- cloud egress restrictions
-- unallowed apps restrictions
-
-Or
-
-- If you want to exclude noisy file paths from monitoring
-
-  > [!div class="mx-imgBorder"]
-  > ![DLP settings.](../media/endpoint-dlp-1-using-dlp-settings.png)
-
-### Endpoint DLP Windows 10/11 and macOS settings
-
-|Setting |Windows 10, 1809 and later, Windows 11  |macOS Catalina 10.15 or later (preview)  |Notes  |
-|---------|---------|---------|---------|
-|File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
-|Unallowed Apps     |Supported         |Supported         |         |
-|Unallowed Bluetooth apps    |Supported         |Not Supported         |         |
-|Browser and domain restrictions to sensitive items      |Supported         |Supported         |         |
-|Additional settings for Endpoint DLP     |Supported         |Supported         |Only the default business justifications are supported for macOS devices         |
-|Always audit file activity for devices     |Supported         |Supported         |         |
-|Auto-quarantine file from unallowed apps | Supported | Not Supported| |
-|Advanced classification | Supported | Not Supported| |
-|Business justification in policy tips | Supported | Supported| |
-
-### Advanced classification scanning and protection
-
-<!--#### Get registered
-
-To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).
-
-When enabled,--> 
-
-Advanced classification scanning and protection allows the more advanced Microsoft 365 cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, [named entities (preview)](named-entities-learn.md#learn-about-named-entities-preview) classification techniques in your DLP policies.
-
-In advanced classification, content is sent from the local device to the cloud services for scanning and classification. If bandwidth utilization is a concern, you can set a limit in this global setting that is applied per device on how much can be used in a rolling 24 hour period. If you set a bandwidth utilization limit and it is exceeded, DLP stops sending the user content to the cloud and data classification will continue locally on the device. When the cumulative bandwidth utilization drops below the rolling 24 hour limit, communication with the cloud services will resume.
-
-If bandwidth utilization is not a concern, you can not set a limit and allow unlimited utilization.
-
-These Windows versions support advanced classification scanning and protection:
-
-- Windows 10 versions 20H1/20H2/21H1 (KB 5006738)
-- Windows 10 versions 19H1/19H2 (KB 5007189)
-- Windows 10 RS5 (KB 5006744)
-
-> [!NOTE]
-> Support for advanced classification is available for Office (Word, Excel, PowerPoint) and PDF file types.
-
-> [!NOTE]
-> DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
-
-### File path exclusions
-
-Open [Compliance center](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **File path exclusions**.
-
-You may want to exclude certain paths from DLP monitoring, DLP alerting, and DLP policy enforcement on your devices because they are too noisy or don’t contain files you are interested in. Files in those locations will not be audited and any files that are created or modified in those locations will not be subject to DLP policy enforcement. You can configure path exclusions in DLP settings.
-
-#### Windows 10 devices
-
-You can use this logic to construct your exclusion paths for Windows 10 devices:
-
-- Valid file path that ends with `\`, which means only files directly under folder. <br/>For example: `C:\Temp\`
-
-- Valid file path that ends with `\*`, which means only files under subfolders, besides the files directly under the folder. <br/>For example: `C:\Temp\*`
-
-- Valid file path that ends without `\` or `\*`, which means all files directly under folder and all subfolders. <br/>For example: `C:\Temp`
-
-- A path with wildcard between `\` from each side. <br/>For example: `C:\Users\*\Desktop\`
-
-- A path with wildcard between `\` from each side and with `(number)` to give exact number of subfolders. <br/>For example: `C:\Users\*(1)\Downloads\`
-
-- A path with SYSTEM environment variables. <br/>For example: `%SystemDrive%\Test\*`
-
-- A mix of all the above. <br/>For example: `%SystemDrive%\Users\*\Documents\*(2)\Sub\`
-
-#### macOS devices (preview)
-
-Similar to Windows 10 devices you can add your own exclusions for macOS devices.
-
-- File path definitions are case insensitive, so `User` is the same as `user`.
-
-- Wildcard values are supported. So a path definition can contain a `*` in the middle of the path or at the end of the path. For example: `/Users/*/Library/Application Support/Microsoft/Teams/*`
-
-#####  Recommended file path exclusions (preview)
-
-For performance reasons, Endpoint DLP includes a list of recommended file path exclusions for macOS devices. These exclusions are turned on by default. You can disable them if you want by toggling the **Include recommended file path exclusions for Mac** toggle. The list includes:
-
-- /Applications/*
-- /System/*
-- /usr/*
-- /Library/*
-- /private/*
-- /opt/*
-- /Users/*/Library/Application Support/Microsoft/Teams/*
-
-### Unallowed apps
-
-Unallowed apps is a list of applications that you create which will not be allowed to access a DLP protected file. It is available for Windows 10 and macOS devices (preview).
-
-When a policy's **Access by unallowed apps** setting is turned on, and an app that is on the unallowed list attempts to access a protected file, the activity will be allowed, blocked, or blocked but users can override the restriction. All activity is audited and available to review in activity explorer.
-
-> [!IMPORTANT]
-> Do not include the path to the executable, but only the executable name (such as browser.exe).
-
-#### macOS devices (preview)
-
-Just like on Windows devices, you will now be able to prevent macOS apps from accessing sensitive data by defining them in the **Unallowed apps** list. 
-
-> [!NOTE]
-> Note that cross platform apps must be entered with their unique paths respective to the OS they are running on.
-
-To find the full path of Mac apps:
-
-1. On the macOS device, open **Activity Monitor**. Find and double-click the process you want to restrict
-
-2. Choose **Open Files and Ports** tab.
-  
-3. The app name is located at the end of the full path.
-
-
-#### Protect sensitive data from cloud synchronization apps
-
-To prevent sensitive items from being synced to the cloud by cloud sync apps, like *onedrive.exe*, add the cloud sync app to the **Unallowed apps** list. When an unallowed cloud-sync app tries to access an item that is protected by a blocking DLP policy, DLP may generate repeated notifications. You can avoid these repeated notifications by enabling the **Auto-quarantine** option under **Unallowed apps**.  
-
-##### Auto-quarantine (preview)
-
-> [!NOTE]
-> Auto-quarantine is supported in Windows 10 only
-
-When enabled, Auto-quarantine kicks in when an unallowed app attempts to access a DLP protected sensitive item. Auto-quarantine moves the sensitive item to an admin configured folder and can leave a placeholder **.txt** file in the place of the original. You can configure the text in the placeholder file to tell users where the item was moved to and other pertinent information.  
-
-You can use auto-quarantine to prevent an endless chain of DLP notifications for the user and admins—see [Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine (preview)](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview).
-
-### Unallowed Bluetooth apps
-
-Prevent people from transferring files protected by your policies via specific Bluetooth apps.
-
-### Browser and domain restrictions to sensitive data
-
-Restrict sensitive files that match your policies from being shared with unrestricted cloud service domains.
-
-#### Unallowed browsers
-
-For Windows devices you add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Microsoft Edge.
-
-For macOS devices, you must add the full file path. To find the full path of Mac apps:
-
-1. On the macOS device, open **Activity Monitor**. Find and double-click the process you want to restrict
-
-2. Choose **Open Files and Ports** tab.
-  
-3. The app name is located at the end of the full path.
-
-#### Service domains
-
-> [!NOTE]
-> The **Service domains** setting only applies to files uploaded using Microsoft Edge or Google Chrome with the [the Microsoft Compliance Extension](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension) installed.
-
-You can control whether sensitive files protected by your policies can be uploaded to specific service domains from Microsoft Edge.
-
-If the list mode is set to **Block**, then user will not be able to upload sensitive items to those domains. When an upload action is blocked because an item matches a DLP policy, DLP will either generate a warning or block the upload of the sensitive item.
-
-If the list mode is set to **Allow**, then users will be able to upload sensitive items ***only*** to those domains, and upload access to all other domains is not allowed.
-
-> [!IMPORTANT]
-> When the service restriction mode is set to "Allow", you must have at least one service domain configured before restrictions are enforced.
-
-Use the FQDN format of the service domain without the ending `.` 
-
-For example:
-
- `www.contoso.com` 
-
-Wildcards are not supported.
-
-### Additional settings for endpoint DLP
-
-#### Business justification in policy tips
-
-You can control how users interact with the business justification option in DLP policy tip notifications. This option appears when users perform an activity that's protected by the **Block with override** setting in a DLP policy. This is a global setting. You can choose from one the following options:
-
-- **Show default options and custom text box**: By default, users can select either a built-in justification, or enter their own text.
-- **Only show default options**: Users can only select a built-in justification.
-- **Only show custom text box**: Users can only enter their own justification. Only the text box will appear in the end-user policy tip notification. 
-
-##### Customizing the options in the drop-down menu
-
-You can create up to five customized options that will appear when users interact with the policy notification tip by selecting the **Customize the options drop-down menu**. 
-
-
-|Option |Default text  |
-|---------|---------|
-|option 1    | **This is part of an established business workflow**  or you can enter customized text        |
-|option 2  |**My manager has approved this action** or you can enter customized text         |
-|option 3   |**Urgent access required; I'll notify my manager separately** or you can enter customized text          |
-|Show false positive option     |**The information in these files is not sensitive** or you can enter customized text          |
-|option 5    |**Other** or you can enter customized text         |
-
-<!--See [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
-
-### Always audit file activity for devices
-
-By default, when devices are onboarded, activity for Office, PDF, and CSV files is automatically audited and available for review in activity explorer. Turn this feature off if you want this activity to be audited only when onboarded devices are included in an active policy.
-
-File activity will always be audited for onboarded devices, regardless of whether they are included in an active policy.
-
-## Tying DLP settings together
-
-With Endpoint DLP and Edge Chromium Web browser, you can restrict unintentional sharing of sensitive items to unallowed cloud apps and services. Edge Chromium understands when an item is restricted by an Endpoint DLP policy and enforces access restrictions.
-
-When you use Endpoint DLP as a location in a properly configured DLP policy and the Microsoft Edge browser, the unallowed browsers that you've defined in these settings will be prevented from accessing the sensitive items that match your DLP policy controls. Instead, users will be redirected to use Microsoft Edge which, with its understanding of DLP imposed restrictions, can block or restrict activities when the conditions in the DLP policy are met.
-
-To use this restriction, you’ll need to configure three important pieces:
-
-1. Specify the places – services, domains, IP addresses – that you want to prevent sensitive items from being shared to.
-
-2. Add the browsers that aren’t allowed to access certain sensitive items when a DLP policy match occurs.
-
-3. Configure DLP policies to define the kinds of sensitive items for which upload should be restricted to these places by turning on **Upload to cloud services** and **Access from unallowed browser**.
-
-You can continue to add new services, apps, and policies to extend and augment your restrictions to meet your business needs and protect sensitive data. 
-
-This configuration will help ensure your data remains safe while also avoiding unnecessary restrictions that prevent or restrict users from accessing and sharing non-sensitive items.
-
-## Endpoint DLP policy scenarios
 
 To help familiarize you with Endpoint DLP features and how they surface in DLP policies, we've put together some scenarios for you to follow.
 
 > [!IMPORTANT]
 > These Endpoint DLP scenarios are not the official procedures for creating and tuning DLP policies. Refer to the below topics when you need to work with DLP policies in general situations:
 >
->- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+>- [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 >- [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
 >- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 >- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 
-### Scenario 1: Create a policy from a template, audit only
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## Before you begin
+
+### SKU/subscriptions licensing
+
+For full licensing details, see [Microsoft 365 licensing guidance for information protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
+
+## Scenario 1: Create a policy from a template, audit only
 
 These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
 
@@ -289,11 +69,11 @@ These scenarios require that you already have devices onboarded and reporting in
 
 11. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy; see [Get started with activity explorer](data-classification-activity-explorer.md), if needed.
 
-12. Attempt to share a test that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
+12. Attempt to share a test item that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
 
 13. Check Activity explorer for the event.
 
-### Scenario 2: Modify the existing policy, set an alert
+## Scenario 2: Modify the existing policy, set an alert
 
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
@@ -305,8 +85,7 @@ These scenarios require that you already have devices onboarded and reporting in
 
 5. Scroll down to the **Incident reports** section and set **Send an alert to admins when a rule match occurs** to **On**. Email alerts will be automatically sent to the administrator and anyone else you add to the list of recipients. 
 
-   > [!div class="mx-imgBorder"]
-   > ![turn-on-incident-reports.](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+![turn-on-incident-reports.](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
    
 6. For the purposes of this scenario, choose **Send alert every time an activity matches the rule**.
 
@@ -314,11 +93,11 @@ These scenarios require that you already have devices onboarded and reporting in
 
 8. Retain all your previous settings by choosing **Next** and then **Submit** the policy changes.
 
-9. Attempt to share a test that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
+9. Attempt to share a test item that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
 
 10. Check Activity explorer for the event.
 
-### Scenario 3: Modify the existing policy, block the action with allow override
+## Scenario 3: Modify the existing policy, block the action with allow override
 
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
@@ -339,7 +118,7 @@ These scenarios require that you already have devices onboarded and reporting in
 
 8. Retain all your previous settings by choosing **Next** and then **Submit** the policy changes.
 
-9. Attempt to share a test that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
+9. Attempt to share a test item that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
 
    You'll see a popup like this on the client device:
 
@@ -348,14 +127,15 @@ These scenarios require that you already have devices onboarded and reporting in
 
 10. Check Activity explorer for the event.
 
-### Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine (preview)
+## Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine (preview)
 
-#### Before you begin
+#[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## Before you begin
 
 In this scenario, synchronizing files with the **Highly Confidential** sensitivity label to OneDrive is blocked. This is a complex scenario with multiple components and procedures. You will need:
 
 - An AAD user account to target and an onboarded Windows 10 computer that is already synchronizing a local OneDrive folder with OneDrive cloud storage.
-- Microsoft Word installed on the target Windows 10 computer
 - Sensitivity labels configured and published—see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) and [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies).
 
 There are three procedures.
@@ -364,7 +144,7 @@ There are three procedures.
 2. Create a policy that blocks sensitive items that have the **Highly Confidential** sensitivity label.
 3. Create a Word document on the Windows 10 device that the policy is targeted to, apply the label, and copy it to the user accounts local OneDrive folder that is being synchronized.  
 
-#### Configure Endpoint DLP unallowed app and Auto-quarantine settings
+### Configure Endpoint DLP unallowed app and Auto-quarantine settings
 
 1. Open [Endpoint DLP settings](https://compliance.microsoft.com/datalossprevention?viewid=globalsettings)
 
@@ -399,7 +179,7 @@ There are three procedures.
 
 9. Choose **Save**
 
-#### Configure a policy to block OneDrive synchronization of files with the sensitivity label Highly Confidential
+### Configure a policy to block OneDrive synchronization of files with the sensitivity label Highly Confidential
 
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
@@ -431,9 +211,9 @@ There are three procedures.
 
 11. The new DLP policy will appear in the policy list.
 
-#### Test Auto-quarantine on the Windows 10 device
+### Test Auto-quarantine on the Windows 10 device
 
-1. Login to the Windows 10 computer with the user account you specified in [Configure a policy to block OneDrive synchronization of files with the sensitivity label Highly Confidential](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential) step 5.
+1. Log in to the Windows 10 computer with the user account you specified in [Configure a policy to block OneDrive synchronization of files with the sensitivity label Highly Confidential](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential) step 5.
 
 2. Create a folder whose contents will not be synchronized to OneDrive. For example:
 
@@ -459,6 +239,75 @@ There are three procedures.
 
 9. Check Activity explorer for the event.
 
+## Scenario 5: Restrict unintentional sharing to unallowed cloud apps and services
+
+With Endpoint DLP and Microisoft Edge Web browser, you can restrict unintentional sharing of sensitive items to unallowed cloud apps and services. Edge understands when an item is restricted by an Endpoint DLP policy and enforces access restrictions.
+
+When you select **Devices** as a location in a properly configured DLP policy and use the Microsoft Edge browser, the unallowed browsers that you've defined in these settings will be prevented from accessing the sensitive items that match your DLP policy controls. Instead, users will be redirected to use Microsoft Edge which, with its understanding of DLP imposed restrictions, can block or restrict activities when the conditions in the DLP policy are met.
+
+To use this restriction, you’ll need to configure three important pieces:
+
+1. Specify the places – services, domains, IP addresses – that you want to prevent sensitive items from being shared to.
+
+2. Add the browsers that aren’t allowed to access certain sensitive items when a DLP policy match occurs.
+
+3. Configure DLP policies to define the kinds of sensitive items for which upload should be restricted to these places by turning on **Upload to cloud services** and **Access from unallowed browser**.
+
+You can continue to add new services, apps, and policies to extend and augment your restrictions to meet your business needs and protect sensitive data. 
+
+This configuration will help ensure your data remains safe while also avoiding unnecessary restrictions that prevent or restrict users from accessing and sharing non-sensitive items.
+
+## Scenario 6 Monitor or restrict user activities on sensitive service domains
+
+Use this scenario when you want to audit, block with override, or block these user activities on a website.
+
+- print from a website
+- copy data from a website
+- save a website as local files
+
+The user must be accessing the website through Microsoft Edge.
+
+### Supported syntax for designating websites in a website group
+
+You can use a flexible syntax to include and exclude domains, subdomains, websites, and subsites in your website groups.
+
+- use `*` as a wildcard to specify all domains or all subdomains
+- use `/` as a terminator at the end of a URL to scope to that specific site only.
+
+When you add a URL without a terminating `/`, that URL is scoped to that site and all subsites.
+
+This syntax applies to all http/https websites.
+
+Here are some examples:
+
+
+|URL that you add to the website group  |URL will match  | URL will not match|
+|---------|---------|---------|
+|contoso.com  | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/ </br> //<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2|        //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com.au    |
+|contoso.com/     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/         |//<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/au   |
+|*.contoso.com   | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/allsubsites </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/allsubsites </br> //<!--nourl-->allsubdomains1/allsubdomains2/contoso.com/allsubsites1/allsubsites2         | //<!--nourl-->allsubdomains.contoso.com.au|
+|*.contoso.com/xyz     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->contoso.con/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2         | //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/|
+|*.contoso.com/xyz/     |//<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz         |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2|
+
+
+### Configure Sensitive service domains
+
+1. In the Microsoft Purview compliance portal open **Data loss prevention** > **Endpoint DLP settings** > **Browser and domain restrictions to sensitive data** > **Sensitive service domains**.
+1. Select **Add a new group of sensitive service domains**.
+1. Name the group.
+1. Select the **Match type** you want. You can select from **URL**, **IP address**, **IP address range**.
+1. Type in the appropriate value in the **Add new service domains to this group**. You can add multiple websites to a group and use wildcards to cover subdomains.  For example, `www.contoso.com` for just the top level website or \*.contoso.com for corp.contoso.com, hr.contoso.com, fin.contoso.com
+1. Select **Save**.
+1. Select **Policies**.
+1. Create and scope a policy that is applied only to **Devices**. See, [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) for more information on how to create a policy.
+1. Create a rule that uses the **the user accessed a sensitive site from Edge**, and the action **Audit or restrict activities when users access sensitive sites in Microsoft Edge browser on Windows devices**.
+1. In the action select **Add or remove Sensitive site groups**.
+1. Select the **Sensitive site groups** you want.
+1. Select **Add**.
+1. Select the user activities you want to monitor or restrict and the actions you DLP to take in response to those activities.
+1. Finish configuring the rule and policy and apply it.
+
+
 ## See also
 
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
@@ -467,7 +316,7 @@ There are three procedures.
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
-- [Onboarding tools and methods for Windows 10 machines](/microsoft-365/compliance/dlp-configure-endpoints)
+- [Onboard Windows 10 and Windows 11 devices into Microsoft Purview overview](/microsoft-365/compliance/device-onboarding-overview)
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure Active Directory (AAD) joined](/azure/active-directory/devices/concept-azure-ad-join)
 - [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

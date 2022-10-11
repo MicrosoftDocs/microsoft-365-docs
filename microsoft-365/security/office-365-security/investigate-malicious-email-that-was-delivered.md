@@ -16,18 +16,17 @@ search.appverid:
   - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Learn how to use threat investigation and response capabilities to find and investigate malicious email.
 ms.custom: 
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Investigate malicious email that was delivered in Microsoft 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to:**
 
@@ -55,23 +54,18 @@ Make sure that the following requirements are met:
 
 To perform certain actions, such as viewing message headers or downloading email message content, you must have the *Preview* role added to another appropriate role group. The following table clarifies required roles and permissions.
 
-<br>
-
-****
-
 |Activity|Role group|Preview role needed?|
 |---|---|---|
-|Use Threat Explorer (and Real-time detections) to analyze threats |Global Administrator <p> Security Administrator <p> Security Reader|No|
-|Use Threat Explorer (and Real-time detections) to view headers for email messages as well as preview and download quarantined email messages|Global Administrator <p> Security Administrator <p> Security Reader|No|
-|Use Threat Explorer to view headers, preview email (only in the email entity page) and download email messages delivered to mailboxes|Global Administrator <p> Security Administrator <p> Security Reader <p> Preview|Yes|
-|
+|Use Threat Explorer (and Real-time detections) to analyze threats|Global Administrator <p> Security Administrator <p> Security Reader|No|
+|Use Threat Explorer (and Real-time detections) to view headers for email messages as well as preview and download quarantined email messages|Global Administrator <p> Security Administrator <p> Security Reader|No|
+|Use Threat Explorer to view headers, preview email (only in the email entity page) and download email messages delivered to mailboxes|Global Administrator <p> Security Administrator <p> Security Reader <p> Preview|Yes|
 
 > [!NOTE]
-> *Preview* is a role, not a role group. The Preview role must be added to an existing role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Go to **Permissions**, and then either edit an existing role group or add a new role group with the **Preview** role assigned.
+> **Preview** is a role, not a role group. The Preview role must be added to an existing role group or a new role group in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 >
-> The Global Administrator role is assigned the Microsoft 365 admin center (<https://admin.microsoft.com>), and the Security Administrator and Security Reader roles are assigned in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. To learn more about roles and permissions, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+> The Global Administrator role is assigned the Microsoft 365 admin center at <https://admin.microsoft.com>. The Security Administrator and Security Reader roles are assigned in Microsoft 365 Defender portal.
 
-We understand previewing and downloading email are sensitive activities, and so we auditing is enabled for these. Once an admin performs these activities on emails, audit logs are generated for the same and can be seen in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Go to **Audit** \> **Search** tab, and filter on the admin name in **Users** box. The filtered results will show activity **AdminMailAccess**. Select a row to view details in the **More information** section about previewed or downloaded email.
+We understand previewing and downloading email are sensitive activities, so auditing is enabled for these activities. Once an admin performs these activities on email, audit logs are generated for the same and can be seen in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Audit** \> **Search** tab, and filter on the admin name in **Users** box. The filtered results will show activity **AdminMailAccess**. Select a row to view details in the **More information** section about previewed or downloaded email.
 
 ## Find suspicious email that was delivered
 
@@ -80,15 +74,13 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 > [!NOTE]
 > Default searches in Explorer don't currently include delivered items that were removed from the cloud mailbox by zero-hour auto purge (ZAP). This limitation applies to all views (for example, the **Email \> Malware** or **Email \> Phish** views). To include items removed by ZAP, you need to add a **Delivery action** set to include **Removed by ZAP**. If you include all options, you'll see all delivery action results, including items removed by ZAP.
 
-1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in using your work or school account for Office 365.
-
-2. Go to **Threat Explorer** by choosing **Email & collaboration** \> **Explorer** in the left navigation. To go to **Threat Explorer** directly, use <https://security.microsoft.com/threatexplorer>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer** . To go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
    On the **Explorer** page, the **Additional actions** column shows admins the outcome of processing an email. The **Additional actions** column can be accessed in the same place as **Delivery action** and **Delivery location**. Special actions might be updated at the end of Threat Explorer's email timeline, which is a new feature aimed at making the hunting experience better for admins.
 
-3. In the **View** menu, choose **Email** \> **All email** from the drop down list.
+2. In the **View** menu, choose **Email** \> **All email** from the drop down list.
 
-    ![Threat explorer View menu, and Email - Malware, Phish, Submissions and All Email options, also Content - Malware.](../../media/tp-InvestigateMalEmail-viewmenu.png)
+    :::image type="content" source="../../media/tp-InvestigateMalEmail-viewmenu.png" alt-text="The Malware drop-down list" lightbox="../../media/tp-InvestigateMalEmail-viewmenu.png":::
 
     The *Malware* view is currently the default, and captures emails where a malware threat is detected. The *Phish* view operates in the same way, for Phish.
 
@@ -108,11 +100,11 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 
    Advanced filtering is a great addition to search capabilities. A boolean NOT on the **Recipient**, **Sender** and **Sender domain** filters allows admins to investigate by excluding values. This option is the **Equals none of** selection. This option allows admins to exclude unwanted mailboxes from investigations (for example, alert mailboxes and default reply mailboxes), and is useful for cases where admins search for a specific subject (for example, Attention) where the Recipient can be set to *Equals none of: defaultMail@contoso.com*. This is an exact value search.
 
-   ![The Recipients - 'Contains none of' Advanced filter.](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
+   :::image type="content" source="../../media/tp-InvestigateMalEmail-AdvancedFilter.png" alt-text="The Recipients pane" lightbox="../../media/tp-InvestigateMalEmail-AdvancedFilter.png":::
 
    Adding a time filter to the start date and end date helps your security team to drill down quickly. The shortest allowed time duration is 30 minutes. If you can narrow the suspicious action by time-frame (e.g., it happened 3 hours ago), this will limit the context and help pinpoint the problem.
 
-   ![The filtering by hours option to narrow the amount of data security teams have to process, and whose shortest duration is 30 minutes.](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
+   :::image type="content" source="../../media/tp-InvestigateMalEmail-FilterbyHours.png" alt-text="The filtering by hours option" lightbox="../../media/tp-InvestigateMalEmail-FilterbyHours.png":::
 
 6. **Fields in Threat Explorer**: Threat Explorer exposes a lot more security-related mail information such as *Delivery action*, *Delivery location*, *Special action*, *Directionality*, *Overrides*, and *URL threat*. It also allows your organization's security team to investigate with a higher certainty.
 
@@ -137,10 +129,6 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 
     **Overrides**: This filter takes information that appears on the mail's details tab and uses it to expose where organizational, or user policies, for allowing and blocking mails have been *overridden*. The most important thing about this filter is that it helps your organization's security team see how many suspicious emails were delivered due to configuration. This gives them an opportunity to modify allows and blocks as needed. This result set of this filter can be exported to spreadsheet.
 
-    <br>
-
-    ****
-
     |Threat Explorer Overrides|What they mean|
     |---|---|
     |Allowed by Org Policy|Mail was allowed into the mailbox as directed by the organization policy.|
@@ -148,7 +136,6 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
     |File extension blocked by Org Policy|File was blocked from delivery to the mailbox as directed by the organization policy.|
     |Allowed by User Policy|Mail was allowed into the mailbox as directed by the user policy.|
     |Blocked by User Policy|Mail was blocked from delivery to the mailbox as directed by the user policy.|
-    |
 
     **URL threat**: The URL threat field has been included on the *details* tab of an email to indicate the threat presented by a URL. Threats presented by a URL can include *Malware*, *Phish*, or *Spam*, and a URL with *no threat* will say *None* in the threats section.
 

@@ -2,13 +2,14 @@
 title: "Routing with ExpressRoute for Office 365"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/3/2019
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 f1.keywords:
@@ -52,7 +53,7 @@ The Office 365 front-end servers are accessible on both the Internet and Express
   
 Regardless of whether you initiate a connection to Office 365 over the Internet or ExpressRoute, the source must be a publicly routable address. With many customers peering directly with Microsoft, having private addresses where duplication is possible between customers isn't feasible.
   
-The following are scenarios where communications from Office 365 to your on-premises network will be initiated. To simplify your network design, we recommend routing these over the Internet path.
+The following are scenarios where communications from Office 365 to your on-premises network will be initiated. To simplify your network design, we recommend routing the following over the Internet path.
   
 - SMTP services such as mail from an Exchange Online tenant to an on-premises host or SharePoint Online Mail sent from SharePoint Online to an on-premises host. SMTP protocol is used more broadly within Microsoft's network than the route prefixes shared over ExpressRoute circuits and advertising on-premises SMTP servers over ExpressRoute will cause failures with these other services.
 
@@ -64,7 +65,7 @@ The following are scenarios where communications from Office 365 to your on-prem
 
 - [SharePoint hybrid BCS](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution).
 
-- [Skype for Business hybrid](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json) and/or [Skype for Business federation](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features).
+- [Skype for Business hybrid](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=/SkypeForBusiness/breadcrumb/toc.json&toc=/SkypeForBusiness/toc.json) and/or [Skype for Business federation](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features).
 
 - [Skype for Business Cloud Connector](/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition).
 
@@ -74,7 +75,7 @@ For Microsoft to route back to your network for these bi-directional traffic flo
 
 2) Use separate NAT IP pools per ExpressRoute circuit and separate to that of your internet circuits.
 
-3) Be aware that any route advertised to Microsoft will attract network traffic from any server in Microsoft's network, not only those for which routes are advertised to your network over ExpressRoute. Only advertise routes to servers where routing scenarios are defined and well understood by your team. Advertise separate IP Address route prefixes at each of multiple ExpressRoute circuits from your network.
+3) Any route advertised to Microsoft will attract network traffic from any server in Microsoft's network, not only those for which routes are advertised to your network over ExpressRoute. Only advertise routes to servers where routing scenarios are defined and well understood by your team. Advertise separate IP Address route prefixes at each of multiple ExpressRoute circuits from your network.
   
 ## Deciding which applications and features route over ExpressRoute
 
@@ -82,7 +83,7 @@ When you configure a peering relationship using the Microsoft peering routing do
   
 Each of the Office 365 features that are available using Microsoft peering are listed in the [Office 365 endpoints article](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) by application type and FQDN. The reason for using the FQDN in the tables is to allow customers to manage traffic using PAC files or other proxy configurations, see our guide to [managing Office 365 endpoints](./managing-office-365-endpoints.md) for example PAC files.
   
-In some situations we've used a wildcard domain where one or more sub-FQDNs are advertised differently than the higher-level wildcard domain. This usually happens when the wildcard represents a long list of servers that are all advertised to ExpressRoute and the Internet, while a small subset of destinations is only advertised to the Internet, or the reverse. Refer to the tables below to understand where the differences are.
+In some situations we've used a wildcard domain where one or more sub-FQDNs are advertised differently than the higher-level wildcard domain. It usually happens when the wildcard represents a long list of servers that are all advertised to ExpressRoute and the Internet, while a small subset of destinations is only advertised to the Internet, or the reverse. Refer to the tables below to understand where the differences are.
   
 This table displays the wildcard FQDNs that are advertised to both the internet and Azure ExpressRoute alongside the sub-FQDNs that are advertised only to the internet.
 
@@ -103,7 +104,7 @@ This table displays the wildcard domains that are advertised to Internet circuit
 
 |**Wildcard domain advertised to Internet circuits only**|**Sub-FQDN advertised to ExpressRoute and Internet circuits**|
 |:-----|:-----|
-|\*.office.com  <br/> |\*.outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> <div style="display: inline">www.office.com</div>  <br/> |
+|\*.office.com  <br/> |\*.outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> www.office.com  <br/> |
 |\*.office.net  <br/> |agent.office.net  <br/> |
 |\*.office365.com  <br/> |outlook.office365.com  <br/> smtp.office365.com  <br/> |
 |\*.outlook.com  <br/> |\*.protection.outlook.com  <br/> \*.mail.protection.outlook.com  <br/> autodiscover-\<tenant\>.outlook.com  <br/> |
@@ -115,7 +116,7 @@ To route to the Office 365 application of your choosing, you'll need to determin
   
 1. How much bandwidth the application will require. Sampling existing usage is the only reliable method for determining this in your organization.
 
-2. What egress location(s) you want the network traffic to leave your network from. You should plan to minimize the network latency for connectivity to Office 365 as this will impact performance. Because Skype for Business uses real-time voice and video, it is particularly susceptible to poor network latency.
+2. What egress location(s) you want the network traffic to leave your network from. You should plan to minimize the network latency for connectivity to Office 365 as this will impact performance. Because Skype for Business uses real-time voice and video, it is susceptible to poor network latency.
 
 3. If you want all or a subset of your network locations to use ExpressRoute.
 
@@ -153,13 +154,13 @@ The highest volume FQDNs for Exchange Online, SharePoint Online, and Skype for B
 
 Learn more about [deploying and managing proxy settings in Windows 8](/archive/blogs/deploymentguys/windows-8-supporting-proxy-services-with-static-configurations-web-hosted-pac-files-and-domain-policy-configured-proxy) and [ensuring Office 365 isn't throttled by your proxy](https://blogs.technet.com/b/onthewire/archive/2014/03/28/ensuring-your-office-365-network-connection-isn-t-throttled-by-your-proxy.aspx).
   
-With a single ExpressRoute circuit, there is no high availability for Trey Research. In the event Trey's redundant pair of edge devices that are servicing the ExpressRoute connectivity fail, there is not an additional ExpressRoute circuit to failover to. This leaves Trey Research in a predicament as failing over to the internet will require manual reconfiguration and in some cases new IP addresses. If Trey wants to add high availability, the simplest solution is to add additional ExpressRoute circuits for each location and configure the circuits in an active/active manner.
+With a single ExpressRoute circuit, there is no high availability for Trey Research. In the event Trey's redundant pair of edge devices that are servicing the ExpressRoute connectivity fail, there is not an extra ExpressRoute circuit to fail over to. This leaves Trey Research in a predicament as failing over to the internet will require manual reconfiguration and in some cases new IP addresses. If Trey wants to add high availability, the simplest solution is to add extra ExpressRoute circuits for each location and configure the circuits in an active/active manner.
   
 ## Routing ExpressRoute for Office 365 with multiple locations
 
 The last scenario, routing Office 365 traffic over ExpressRoute is the foundation for even more complex routing architecture. Regardless of the number of locations, number of continents where those locations exist, number of ExpressRoute circuits, and so on, being able to route some traffic to the Internet and some traffic over ExpressRoute will be required.
   
-The additional questions that must be answered for customers with multiple locations in multiple geographies include:
+The extra questions that must be answered for customers with multiple locations in multiple geographies include:
   
 1. Do you require an ExpressRoute circuit in every location? If you're using Skype for Business Online or are concerned with latency sensitivity for SharePoint Online or Exchange Online, a redundant pair of active/active ExpressRoute circuits is recommended in each location. See the Skype for Business media quality and network connectivity guide for more details.
 
@@ -182,7 +183,7 @@ Each of these considerations must be taken into account for each unique network.
   
 ### Example 2: Multi-geographic locations
   
-This example is a scenario for a fictitious company called Humongous Insurance who has multiple geographic locations.
+This example is a scenario for a fictitious company called 'Humongous Insurance' who has multiple geographic locations.
   
 Humongous Insurance is geographically dispersed with offices all over the world. They want to implement Azure ExpressRoute for Office 365 to keep most their Office 365 traffic on direct network connections. Humongous Insurance also has offices on two additional continents. The employees in the remote office where ExpressRoute is not feasible will need to route back to one or both of the primary facilities to use an ExpressRoute connection.
   
@@ -196,7 +197,7 @@ If Humongous Insurance isn't using or doesn't plan to use Skype for Business Onl
   
 ![ExpressRoute multi-geography.](../media/98fdd883-2c5a-4df7-844b-bd28cd0b9f50.png)
   
-When Humongous Insurance is planning their multi-geography strategy, there are a number of things to consider around size of circuit, number of circuits, failover, and so on.
+When Humongous Insurance is planning their multi-geography strategy, there are many things to consider around size of circuit, number of circuits, failover, and so on.
   
 With ExpressRoute in a single location with multiple regions attempting to use the circuit, Humongous Insurance wants to ensure that connections to Office 365 from the remote office are sent to the Office 365 datacenter nearest headquarters and received by the headquarters location. To do this, Humongous Insurance implements DNS forwarding to reduce the number of round trips and DNS lookups required to establish the appropriate connection with the Office 365 environment closest to the headquarters internet egress point. This prevents the client from resolving a local front-end server and ensures the Front-End server the person connects to be near the headquarters where Humongous Insurance is peering with Microsoft. You can also learn to [Assign a Conditional Forwarder for a Domain Name](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc794735(v=ws.10)).
   
@@ -208,7 +209,7 @@ Learn more about sample [routing configurations](/azure/expressroute/expressrout
   
 ## Selective routing with ExpressRoute
 
-Selective routing with ExpressRoute may be needed for a variety of reasons, such as testing, rolling out ExpressRoute to a subset of users. There are various tools customers can use to selectively route Office 365 network traffic over ExpressRoute:
+Selective routing with ExpressRoute may be needed for various reasons, such as testing, rolling out ExpressRoute to a subset of users. There are various tools customers can use to selectively route Office 365 network traffic over ExpressRoute:
   
 1. **Route filtering/segregation** - allowing the BGP routes to Office 365 over ExpressRoute to a subset of your subnets or routers. This selectively routes by customer network segment or physical office location. This is common for staggering rollout of ExpressRoute for Office 365 and is configured on your BGP devices.
 

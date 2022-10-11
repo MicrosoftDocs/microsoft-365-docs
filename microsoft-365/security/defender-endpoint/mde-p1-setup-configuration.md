@@ -7,13 +7,14 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 12/07/2021
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ---
 
 # Set up and configure Microsoft Defender for Endpoint Plan 1
@@ -25,7 +26,7 @@ This article describes how to set up and configure Defender for Endpoint Plan 1.
 
 ## The setup and configuration process
 
-:::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="Setup and deployment flow for Microsoft Defender for Endpoint Plan 1":::
+:::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="Setup and deployment flow for Microsoft Defender for Endpoint Plan 1" lightbox="images/mde-p1-deploymentflow.png":::
 
 The general setup and configuration process for Defender for Endpoint Plan 1 is as follows: <br/><br/>
 
@@ -46,9 +47,9 @@ The following table lists the basic requirements for Defender for Endpoint Plan 
 
 | Requirement | Description |
 |:---|:---|
-| Licensing requirements | Defender for Endpoint Plan 1 |
+| Licensing requirements | Defender for Endpoint Plan 1 (standalone, or as part of Microsoft 365 E3 or A3) |
 | Browser requirements | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
-| Operating systems | Windows 10, version 1709 or later <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina), or 10.14.6 (Mojave) <br/>iOS <br/>Android OS  |
+| Operating systems | Windows 11, or Windows 10, version 1709, or later <br/>macOS (the three most recent releases are supported) <br/>iOS <br/>Android OS <br/><br/>Note that the standalone version of Defender for Endpoint Plan 1 does not include server licenses. To onboard servers, you'll need Defender for Servers Plan 1 or Plan 2 as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction). |
 | Datacenter | One of the following datacenter locations: <br/>- European Union <br/>- United Kingdom <br/>- United States |
 
 
@@ -108,7 +109,7 @@ The following table describes key roles to consider for Defender for Endpoint in
 
 ## Onboard to Defender for Endpoint
 
-When you’re ready to onboard your organization’s endpoints, you can choose from several methods, as listed in the following table: <br/><br/>
+When you're ready to onboard your organization's endpoints, you can choose from several methods, as listed in the following table: <br/><br/>
 
 |Endpoint Operating System | Onboarding methods|
 |---|---|
@@ -121,15 +122,15 @@ Then, proceed to configure your next-generation protection and attack surface re
 
 ## Configure next-generation protection
 
-We recommend using [Microsoft Endpoint Manager](/mem) to manage your organization’s devices and security settings, as shown in the following image:
+We recommend using [Microsoft Endpoint Manager](/mem) to manage your organization's devices and security settings, as shown in the following image:
  
-:::image type="content" source="../../media/mde-p1/endpoint-policies.png" alt-text="Endpoint security policies in MEM":::
+:::image type="content" source="../../media/mde-p1/endpoint-policies.png" alt-text="Endpoint security policies in the Micorosft Endpoint Manager portal" lightbox="../../media/mde-p1/endpoint-policies.png":::
 
 To configure your next-generation protection in Microsoft Endpoint Manager, follow these steps:
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
-2. Select **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don’t have an existing policy, create a new policy.)
+2. Select **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don't have an existing policy, create a new policy.)
 
 3. Set or change your antivirus configuration settings. Need help? Refer to the following resources: <br/>
 
@@ -156,7 +157,7 @@ Attack surface reduction is all about reducing the places and ways your organiza
 
 Attack surface reduction rules are available on devices running Windows. We recommend using Microsoft Endpoint Manager, as shown in the following image:
 
-:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="Attack surface reduction rules in Microsoft Endpoint Manager":::
+:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="Attack surface reduction rules in the Microsoft Endpoint Manager portal" lightbox="../../media/mde-p1/mem-asrpolicies.png":::
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
@@ -184,7 +185,7 @@ Attack surface reduction rules are available on devices running Windows. We reco
 > To learn more about attack surface reduction rules, see the following resources:
 > - [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md)
 > - [View the list of attack surface reduction rules](attack-surface-reduction-rules-reference.md)
-> - [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
+> - [Attack surface reduction rules deployment Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
 
 ### Ransomware mitigation
 
@@ -192,7 +193,7 @@ You get ransomware mitigation through [controlled folder access](controlled-fold
 
 We recommend using Microsoft Endpoint Manager to configure controlled folder access.
 
-:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="ASR policies in Microsoft Endpoint Manager":::
+:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="ASR policies in the Microsoft Endpoint Manager portal" lightbox="../../media/mde-p1/mem-asrpolicies.png":::
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in. 
 
@@ -224,7 +225,7 @@ We recommend using Microsoft Endpoint Manager to configure controlled folder acc
 
 You can configure Defender for Endpoint to block or allow removable devices and files on removable devices. We recommend using Microsoft Endpoint Manager to configure your device control settings.
 
-:::image type="content" source="../../media/mde-p1/mem-admintemplates.png" alt-text="Microsoft Endpoint Manager administrative templates":::
+:::image type="content" source="../../media/mde-p1/mem-admintemplates.png" alt-text="Microsoft Endpoint Manager administrative templates" lightbox="../../media/mde-p1/mem-admintemplates.png":::
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in. 
 
@@ -257,7 +258,7 @@ You can configure Defender for Endpoint to block or allow removable devices and 
 
 With network protection, you can help protect your organization against dangerous domains that might host phishing scams, exploits, and other malicious content on the Internet. We recommend using Microsoft Endpoint Manager to turn on network protection.
 
-:::image type="content" source="../../media/mde-p1/mem-endpointprotectionprofile.png" alt-text="Endpoint protection profile in Microsoft Endpoint Manager":::
+:::image type="content" source="../../media/mde-p1/mem-endpointprotectionprofile.png" alt-text="Endpoint protection profile in the Microsoft Endpoint Manager portal" lightbox="../../media/mde-p1/mem-endpointprotectionprofile.png":::
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in. 
 
@@ -345,7 +346,7 @@ With web protection, you can protect your organization's devices from web threat
 
 Network firewall helps reduce the risk of network security threats. Your security team can set rules that determine which traffic is permitted to flow to or from your organization's devices. We recommend using Microsoft Endpoint Manager to configure your network firewall. 
 
-:::image type="content" source="../../media/mde-p1/mem-firewallpolicy.png" alt-text="Firewall policy in Microsoft Endpoint Manager":::
+:::image type="content" source="../../media/mde-p1/mem-firewallpolicy.png" alt-text="Firewall policy in the Microsoft Endpoint Manager portal" lightbox="../../media/mde-p1/mem-firewallpolicy.png":::
 
 To configure basic firewall settings, follow these steps:
 

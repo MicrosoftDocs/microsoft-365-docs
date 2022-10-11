@@ -4,18 +4,20 @@ description: Learn about Microsoft Defender for Endpoint integration with Micros
 keywords: integration, server, azure, 2012r2, 2016, 2019, server onboarding, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-ms.technology: mde
 ---
 
 # Integration with Microsoft Defender for Cloud
@@ -36,7 +38,7 @@ The following capabilities are included in this integration:
     > The integration between Microsoft Defender for servers and Microsoft Defender for Endpoint has been expanded to support [Windows Server 2019 and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
 
 - Windows servers monitored by Microsoft Defender for Cloud will also be available in Defender for Endpoint - Microsoft Defender for Cloud seamlessly connects to the Defender for Endpoint tenant, providing a single view across clients and servers.  In addition, Defender for Endpoint alerts will be available in the Microsoft Defender for Cloud console.
-- Server investigation -  Microsoft Defender for Cloud customers can access Microsoft Defender Security Center to perform detailed investigation to uncover the scope of a potential breach.
+- Server investigation -  Microsoft Defender for Cloud customers can access the Microsoft 365 Defender portal to perform detailed investigation to uncover the scope of a potential breach.
 
 > [!IMPORTANT]
 > - When you use Microsoft Defender for Cloud to monitor servers, a Defender for Endpoint tenant is automatically created (in the US for US users, in the EU for European and UK users).<br>

@@ -1,8 +1,8 @@
 ---
 title: Configure advanced features in Microsoft Defender for Endpoint
 description: Turn on advanced features such as block file in Microsoft Defender for Endpoint.
-keywords: advanced features, settings, block file, automated investigation, auto-resolve, skype, microsoft defender for identity, office 365, azure information protection, intune
-ms.prod: m365-security
+keywords: advanced features, settings, block file, automated investigation, auto resolve, skype, microsoft defender for identity, office 365, azure information protection, intune
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Configure advanced features in Defender for Endpoint
@@ -43,6 +46,9 @@ Turn on this feature to take advantage of the automated investigation and remedi
 
 ## Live response
 
+> [!NOTE]
+> Live response requires **Automated investigation** to be turned on before you can enable it in the advanced settings section in the Microsoft Defender for Endpoint portal.
+
 Turn on this feature so that users with the appropriate permissions can start a live response session on devices.
 
 For more information about role assignments, see [Create and manage roles](user-roles.md).
@@ -61,14 +67,16 @@ Enabling this feature allows you to run unsigned scripts in a live response sess
 
 Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software, which might be unexpected or unwanted.
 
-Turn on this feature so that potentially unwanted applications (PUA) are remediated on all devices in your tenant even if PUA protection is not configured on the devices. This will help protect users from inadvertently installing unwanted applications on their device. When turned off, remediation is dependent on the device configuration.
+Turn on this feature so that potentially unwanted applications (PUA) are remediated on all devices in your tenant even if PUA protection is not configured on the devices. This activation of the feature helps to protect users from inadvertently installing unwanted applications on their device. When turned off, remediation is dependent on the device configuration.
 
 ## Restrict correlation to within scoped device groups
 
-This configuration can be used for scenarios where local SOC operations would like to limit alert correlations only to device groups that they can access. By turning on this setting, an incident composed of alerts that cross device groups will no longer be considered a single incident. The local SOC can then take action on the incident because they have access to one of the device groups involved. However, global SOC will see several different incidents by device group instead of one incident. We don't recommend turning on this setting unless doing so outweighs the benefits of incident correlation across the entire organization.
+This configuration can be used for scenarios where local SOC operations would like to limit alert correlations only to device groups that they can access. By turning on this setting, an incident composed of alerts that cross-device groups will no longer be considered a single incident. The local SOC can then take action on the incident because they have access to one of the device groups involved. However, global SOC will see several different incidents by device group instead of one incident. We don't recommend turning on this setting unless doing so outweighs the benefits of incident correlation across the entire organization.
 
 > [!NOTE]
-> Changing this setting impacts future alert correlations only.
+> - Changing this setting impacts future alert correlations only.
+>
+> - Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## Enable EDR in block mode
 
@@ -76,7 +84,7 @@ Endpoint detection and response (EDR) in block mode provides protection from mal
 
 ## Autoresolve remediated alerts
 
-For tenants created on or after Windows 10, version 1809, the automated investigation, and remediation capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated". If you don't want to have alerts auto-resolved, you'll need to manually turn off the feature.
+For tenants created on or after Windows 10, version 1809, the automated investigation, and remediation capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated". If you don't want to have alerts auto resolved, you'll need to manually turn off the feature.
 
 > [!TIP]
 > For tenants created prior to that version, you'll need to manually turn this feature on from the [Advanced features](https://security.microsoft.com//preferences2/integration) page.
@@ -101,7 +109,7 @@ To turn **Allow or block** files on:
 
 1. Toggle the setting between **On** and **Off**.
  
-    :::image type="content" source="../../media/alloworblockfile.png" alt-text="Image of advanced settings for block file feature.":::
+    :::image type="content" source="../../media/alloworblockfile.png" alt-text="The Endpoints screen" lightbox="../../media/alloworblockfile.png":::
 
 1. Select **Save preferences** at the bottom of the page.
 
@@ -131,7 +139,6 @@ Keep tamper protection turned on to prevent unwanted changes to your security so
 
 Turn on this feature so that you can see user details stored in Azure Active Directory. Details include a user's picture, name, title, and department information when investigating user account entities. You can find user account information in the following views:
 
-- Security operations dashboard
 - Alert queue
 - Device details page
 
@@ -139,7 +146,7 @@ For more information, see [Investigate a user account](investigate-user.md).
 
 ## Skype for Business integration
 
-Enabling the Skype for Business integration gives you the ability to communicate with users using Skype for Business, email, or phone. This can be handy when you need to communicate with the user and mitigate risks.
+Enabling the Skype for Business integration gives you the ability to communicate with users using Skype for Business, email, or phone. This activation can be handy when you need to communicate with the user and mitigate risks.
 
 > [!NOTE]
 > When a device is being isolated from the network, there's a pop-up where you can choose to enable Outlook and Skype communications which allows communications to the user while they are disconnected from the network. This setting applies to Skype and Outlook communication when devices are in isolation mode.
@@ -176,10 +183,6 @@ Enabling this setting forwards Defender for Endpoint signals to Microsoft Defend
 > [!NOTE]
 > This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on devices running Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809 (OS Build 17763.379 with [KB4489899](https://support.microsoft.com/help/4489899)), later Windows 10 versions, or Windows 11.
 
-## Microsoft Secure Score
-
-Forwards Microsoft Defender for Endpoint signals to Microsoft Secure Score in the Microsoft 365 Defender portal. Turning on this feature gives Microsoft Secure Score visibility into the device's security posture. Forwarded data is stored and processed in the same location as your Microsoft Secure Score data.
-
 ### Enable the Microsoft Defender for Endpoint integration from the Microsoft Defender for Identity portal
 
 To receive contextual device integration in Microsoft Defender for Identity, you'll also need to enable the feature in the Microsoft Defender for Identity portal.
@@ -196,11 +199,15 @@ After completing the integration steps on both portals, you'll be able to see re
 
 Block access to websites containing unwanted content and track web activity across all domains. To specify the web content categories you want to block, create a [web content filtering policy](https://security.microsoft.com/preferences2/web_content_filtering_policy). Ensure you've network protection in block mode when deploying the [Microsoft Defender for Endpoint security baseline](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2).
 
-## Share endpoint alerts with Microsoft Compliance Center
+## Share endpoint alerts with Microsoft Purview compliance portal
 
-Forwards endpoint security alerts and their triage status to Microsoft Compliance Center, allowing you to enhance insider risk management policies with alerts and remediate internal risks before they cause harm. Forwarded data is processed and stored in the same location as your Office 365 data.
+Forwards endpoint security alerts and their triage status to Microsoft Purview compliance portal, allowing you to enhance insider risk management policies with alerts and remediate internal risks before they cause harm. Forwarded data is processed and stored in the same location as your Office 365 data.
 
 After configuring the [Security policy violation indicators](/microsoft-365/compliance/insider-risk-management-settings#indicators) in the insider risk management settings, Defender for Endpoint alerts will be shared with insider risk management for applicable users.
+
+## Authenticated telemetry
+
+You can **Turn on** Authenticated telemetry to prevent spoofing telemetry into your dashboard.
 
 ## Microsoft Intune connection
 
@@ -209,7 +216,7 @@ Defender for Endpoint can be integrated with [Microsoft Intune](/intune/what-is-
 > [!IMPORTANT]
 > You'll need to enable the integration on both Intune and Defender for Endpoint to use this feature. For more information on specific steps, see [Configure Conditional Access in Defender for Endpoint](configure-conditional-access.md).
 
-This feature is only available if you've the following:
+This feature is only available if you've the following prerequisites:
 
 - A licensed tenant for Enterprise Mobility + Security E3, and Windows E5 (or Microsoft 365 Enterprise E5)
 - An active Microsoft Intune environment, with Intune-managed Windows devices [Azure AD-joined](/azure/active-directory/devices/concept-azure-ad-join/).

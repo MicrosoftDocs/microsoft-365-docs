@@ -1,62 +1,128 @@
-    - name: Learn about Microsoft SharePoint Syntex
-      items: 
-        - name: Introduction to SharePoint Syntex
-          href: index.md
-        - name: Document understanding overview
-          href: document-understanding-overview.md
-        - name: Form processing overview 
-          href: form-processing-overview.md
-        - name: Difference between document understanding and form processing models 
-          href: difference-between-document-understanding-and-form-processing-model.md   
+    - name: Microsoft SharePoint Syntex
+      href: index.md
  
-    - name: Get started with models
+    - name: Custom models
+      items:
+            - name: Differences between custom models 
+              href: difference-between-document-understanding-and-form-processing-model.md  
+            - name: Document understanding
+              items:
+                - name: Overview
+                  href: document-understanding-overview.md
+                - name: Import a sample model 
+                  href: learn-about-document-understanding-models-through-the-sample-model.md
+                - name: Create a content center 
+                  href: create-a-content-center.md
+                - name: Create a classifier
+                  href: create-a-classifier.md
+                - name: Duplicate a model
+                  href: duplicate-a-model.md
+                - name: Rename a model
+                  href: rename-a-model.md
+                - name: Delete a model
+                  href: delete-a-model.md
+                - name: Create an extractor
+                  href: create-an-extractor.md
+                - name: Rename an extractor
+                  href: rename-an-extractor.md
+                - name: Explanation types 
+                  href: explanation-types-overview.md
+                - name: Use explanation templates 
+                  href: explanation-templates.md
+                - name: Apply a document understanding model
+                  href: apply-a-model.md
+                - name: Publish and discover a model
+                  href: model-discovery.md
+                - name: Apply a retention label 
+                  href: apply-a-retention-label-to-a-model.md
+                - name: Apply a sensitivity label 
+                  href: apply-a-sensitivity-label-to-a-model.md
+                - name: Create a local model 
+                  href: create-local-model.md
+                - name: Model usage analytics
+                  href: model-usage-analytics.md
+                - name: Leverage term store taxonomy when creating an extractor
+                  href: leverage-term-store-taxonomy.md
+                - name: Accessibility mode
+                  href: accessibility-mode.md
+            - name: Form processing
+              items:
+                - name: Overview 
+                  href: form-processing-overview.md
+                - name: Create a form processing model 
+                  href: create-a-form-processing-model.md
+                - name: Apply a retention label 
+                  href: apply-a-retention-label-to-a-model.md
+                - name: Model usage analytics
+                  href: model-usage-analytics.md
+
+    - name: Prebuilt models
+      items:
+            - name: Overview 
+              href: prebuilt-overview.md
+            - name: Invoice and receipt prebuilt models 
+              href: prebuilt-models.md
+            - name: Apply a retention label 
+              href: apply-a-retention-label-to-a-model.md
+            - name: Create a local model 
+              href: create-local-model.md
+            - name: Model usage analytics
+              href: model-usage-analytics.md
+
+    - name: Content assembly
       items: 
-        - name: Learn about models through the sample model 
-          href: learn-about-document-understanding-models-through-the-sample-model.md
+        - name: Create documents using content assembly 
+          href: content-assembly.md
+        - name: Generate documents using Power Automate 
+          href: automate-document-generation.md
+     
+    - name: Metadata search
+      items: 
+        - name: Search for metadata in document libraries 
+          href: metadata-search.md
+     
+    - name: Taxonomy
+      items:
+        - name: Import using SKOS
+          href: import-term-set-skos.md
+        - name: SKOS formatting reference
+          href: skos-format-reference.md
+        - name: Push content type to hub
+          href: push-content-type-to-hub.md
+        - name: Term store reports
+          href: term-store-analytics.md
+
+    - name: Setup and administration
+      items:
+        - name: Licensing for SharePoint Syntex
+          href: syntex-licensing.md
+        - name: Set up SharePoint Syntex
+          href: set-up-content-understanding.md
         - name: Create a content center 
           href: create-a-content-center.md
-        - name: Create a classifier
-          href: create-a-classifier.md
-        - name: Duplicate a model
-          href: duplicate-a-model.md
-        - name: Rename a model
-          href: rename-a-model.md
-        - name: Create an extractor
-          href: create-an-extractor.md
-        - name: Rename an extractor
-          href: rename-an-extractor.md
-        - name: Explanation types 
-          href: explanation-types-overview.md
-        - name: Use explanation templates 
-          href: explanation-templates.md
-        - name: Apply a document understanding model
-          href: apply-a-model.md
-        - name: Create a form processing model 
-          href: create-a-form-processing-model.md
-        - name: Publish and discover a model
-          href: model-discovery.md
-        - name: Apply a retention label 
-          href: apply-a-retention-label-to-a-model.md
-        - name: Apply a sensitivity label 
-          href: apply-a-sensitivity-label-to-a-model.md
-        - name: Search for metadata in libraries 
-          href: metadata-search.md
-        - name: Model usage analytics
-          href: model-usage-analytics.md
-        - name: Leverage term store taxonomy when creating an extractor
-          href: leverage-term-store-taxonomy.md
-        - name: SharePoint Syntex accessibility mode
-          href: accessibility-mode.md
-    
+        - name: Manage SharePoint Syntex with PowerShell
+          items:
+            - name: Overview
+              href: powershell-syntex-intro.md
+            - name: Export and import models
+              href: powershell-syntex-import-export.md
+            - name: Publish models
+              href: powershell-syntex-publishing.md
+            - name: Request processing by a model
+              href: powershell-syntex-processing.md
+            - name: Work with model explanations
+              href: powershell-syntex-explanations.md
+
     - name: Adoption
       items:
         - name: Get started with adoption
           href: adoption-getstarted.md
         - name: Scenarios and use cases
           href: adoption-scenarios.md 
+        - name: Assess your environment
+          href: adoption-assessment-tool.md 
         - name: Run a trial
           href: trial-syntex.md 
-
         - name: Manage contracts in Microsoft 365
           items:
             - name: Overview
@@ -67,27 +133,11 @@
               href: solution-manage-contracts-step2.md
             - name: Step 3. Use Power Automate
               href: solution-manage-contracts-step3.md
+        - name: Contracts Management site template
+          href: use-contracts-management-site.md 
+        - name: Content Center site template
+          href: use-content-center-site.md 
 
-    - name: Setup and administration
-      items:
-
-        - name: Licensing for SharePoint Syntex
-          href: syntex-licensing.md
-        - name: Set up SharePoint Syntex
-          href: set-up-content-understanding.md
-        
-    - name: Content services
-      items:
-
-        - name: Import using SKOS
-          href: import-term-set-skos.md
-        - name: SKOS formatting reference
-          href: skos-format-reference.md
-        - name: Push content type to hub
-          href: push-content-type-to-hub.md
-        - name: Term store reports
-          href: term-store-analytics.md
-     
     - name: Extensibility
       href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
 

@@ -1,6 +1,7 @@
 ---
 title: "Investigate and remediate communication compliance alerts"
-description: "Investigate and remediate communication compliance alerts in Microsoft 365."
+description: "Investigate and remediate communication compliance alerts in Microsoft Purview."
+keywords: Microsoft 365, Microsoft Purview, compliance, communication compliance
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -13,8 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
@@ -23,13 +24,20 @@ search.appverid:
 
 # Investigate and remediate communication compliance alerts
 
-After you've configured your communication compliance policies, you'll start to receive alerts in the Microsoft 365 compliance center for message issues that match your policy conditions. Follow the workflow instructions here to investigate and remediate alert issues.
+After you've configured your [communication compliance policies](/microsoft-365/compliance/communication-compliance-policies), you'll start to receive alerts in the [Microsoft Purview compliance portal](https://compliance.microsoft.com) for message issues that match your policy conditions. To view and act on alerts, users must have the following permissions:
+
+- Be assigned to the *Communication Compliance Analysts* or the *Communication Compliance Investigators* role group
+- Be assigned as a reviewer in the policy associated with the alert
+
+After you have the required permissions, follow the workflow instructions here to investigate and remediate alert issues.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Investigate alerts
 
-The first step to investigate issues detected by your policies is to review communication compliance alerts in the Microsoft 365 compliance center. There are several areas in the communication compliance solution area to help you to quickly investigate alerts, depending on how you prefer to view alert grouping:
+The first step to investigate issues detected by your policies is to review communication compliance alerts in the Microsoft Purview compliance portal. There are several areas in the communication compliance solution area to help you to quickly investigate alerts, depending on how you prefer to view alert grouping:
 
-- **Communication compliance policy page**: When you sign into the [Microsoft 365 compliance center](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization, select **Communication compliance** to display the communication compliance **Policy** page. This page displays communication compliance policies configured for your Microsoft 365 organization and links to recommended policy templates. Each policy listed includes the count of alerts that need review, the number of escalated and resolved items, status of the policy, and the date and time of the last policy scan. Selecting a policy displays all the pending alerts for matches to the policy, select a specific alert to launch the policy details page and to start remediation actions.
+- **Communication compliance policy page**: When you sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization, select **Communication compliance** to display the communication compliance **Policy** page. This page displays communication compliance policies configured for your Microsoft 365 organization and links to recommended policy templates. Each policy listed includes the count of alerts that need review, the number of escalated and resolved items, status of the policy, and the date and time of the last policy scan. Selecting a policy displays all the pending alerts for matches to the policy, select a specific alert to launch the policy details page and to start remediation actions.
 - **Alerts**: Navigate to **Communication compliance** > **Alerts** to display the last 30 days of alerts grouped by policy matches. This view allows you to quickly see which communication compliance policies are generating the most alerts ordered by severity. To start remediation actions, select the policy associated with the alert to launch the **Policy details** page. From the **Policy details** page, you can review a summary of the activities on the **Overview** page, review and act on alert messages on the **Pending** page, or review the history of closed alerts on the **Resolved** page.
 - **Reports**: Navigate to **Communication compliance** > **Reports** to display communication compliance report widgets. Each widget provides an overview of communication compliance activities and statuses, including access to deeper insights about policy matches and remediation actions.
 
@@ -58,15 +66,15 @@ The following table outlines filter details:
 | **Size** | The size of the message in KB. |
 | **Subject/Title** | The message subject or chat title. |
 | **Tags** | The tags assigned to a message, either *Questionable*, *Compliant*, or *Non-compliant*. |
-| **Language** | The detected language of text in the message. The message is classified according to the language of the majority of the message text. For example, for a message containing both German and Italian text, but the majority of text is German, the message is classified as German (DE). The following languages are supported: Chinese (Simplified - ZH), English (EN), French (FR), German (DE), Italian (IT), Japanese (JP), Portuguese (PT), and Spanish (ES). For example, to filter messages classified as German and Italian, enter 'DE,IT' (the 2-digit language codes) in the Language filter search box. To view the detected language classification for a message, select a message, select View message details, and scroll to the EmailDetectedLanguage field. |
+| **Language** | The detected language of text in the message. The message is classified according to the language of the majority of the message text. For example, for a message containing both German and Italian text, but the majority of text is German, the message is classified as German (DE). For a list of supported languages, see [Learn about trainable classifiers](/microsoft-365/compliance/classifier-learn-about). <br><br> You can also filter by more than one language. For example, to filter messages classified as German and Italian, enter 'DE,IT' (the 2-digit language codes) in the Language filter search box. To view the detected language classification for a message, select a message, select View message details, and scroll to the *EmailDetectedLanguage* field. |
 | **Escalated To** | The user name of the person included as part of a message escalation action. |
 | **Classifiers** | The name of built-in and custom classifiers that apply to the message. Some examples include *Targeted Harassment*, *Profanity*, *Threat*, and more.
 
 #### To configure a filter
 
-1. Sign into the [Microsoft 365 compliance center](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
-2. In the Microsoft 365 compliance center, go to **Communication compliance**.
+2. In the Microsoft Purview compliance portal, go to **Communication compliance**.
 
 3. Select the **Policies** tab and then select a policy for investigation, double-click to open the **Policy** page.
 
@@ -81,30 +89,6 @@ The following table outlines filter details:
 8. If you'd like to save the selected filters as a filter query, select **Save the query** control after you've configured at least one filter value. Enter a name for the filter query and select **Save**. This filter is available to use for only this policy and is listed in the **Saved filter queries** section of the **Filters** details page.
 
     ![Communication compliance filter detail controls.](../media/communication-compliance-filter-detail-controls.png)
-
-### Using near and exact duplicate analysis
-
-Communication compliance policies automatically scan and pre-group near and exact message duplicates without any additional configuration steps. This view allows you to quickly act on similar messages one-by-one or as a group, reducing the message investigation burden for reviewers. As duplicates are detected, the **Near Duplicates** and/or the **Exact Duplicates** controls are displayed in the remediation action toolbar. This view isn't available if near or exact duplicates aren't found.
-
-#### To remediate duplicates
-
-1. Sign into the [Microsoft 365 compliance center](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
-
-2. In the Microsoft 365 compliance center, go to **Communication compliance**.
-
-3. Select the **Policies** tab and then select a policy for investigation, double-click to open the **Policy** page.
-
-4. On the **Policy** page, select either the **Pending** or **Resolved** tab to display duplicate messages.
-
-5. Select the **Near Duplicates** or **Exact Duplicates** controls to open the duplicates details page.
-
-6. Select one or more messages to remediation action controls for these messages.
-
-7. Select **Resolve**, **Notify**, **Escalate**, or **Download** to apply the action to the selected duplicate messages as the default filter.
-
-8. Select **Close** after completing the remediation actions on the messages.
-
-    ![Communication compliance exact duplicates controls.](../media/communication-compliance-duplicates-controls.png)
 
 ## Remediate alerts
 
@@ -121,9 +105,8 @@ No matter where you start to review alerts or the filtering you configure, the n
 After reviewing the message basics, it's time to open a message to examine the details and to determine further remediation actions. Select a message to view the complete message header and body information. Several different options and views are available to help you decide the proper course of action:
 
 - **Attachments**: This option allows you to examine Modern attachments that match policy conditions. Modern attachments content is extracted as text and is viewable on the Pending alerts dashboard for a policy. For more information, see the [Communication compliance feature reference](/microsoft-365/compliance/communication-compliance-channels).
-- **Source**: This view is the standard message view commonly seen in most web-based messaging platforms. The header information is formatted in the normal style and the message body supports imbedded graphic files and word-wrapped text. If [optical character recognition (OCR)](communication-compliance-policies.md#optical-character-recognition-ocr) is enabled for the policy, images containing printed or handwritten text that match policy conditional are viewed as a child item for the associated message in this view.
-- **Plain text**: Text view displays a line-numbered text-only view of the message and includes keyword highlighting in messages and attachments for sensitive info type terms or keywords matched in the associated communication compliance policy. Keyword highlighting can help you quickly scan long messages and attachments for the area of interest. In some cases, highlighted text may be only in attachments for messages matching policy conditions. Keyword highlighting isn't supported for terms identified by built-in classifiers assigned to a policy. Embedded files aren't displayed and the line numbering this view is helpful for referencing pertinent details among multiple reviewers.
-- **Annotate**: This view allows reviewers to add annotations directly on the message that are saved to the view of the message. If [OCR is enabled](communication-compliance-policies.md#optical-character-recognition-ocr) for the policy, images containing printed or handwritten text that match policy conditional are viewed as a child item for the associated message in this view and may be annotated.
+- **Source**: This view is the standard message view commonly seen in most web-based messaging platforms. The header information is formatted in the normal style and the message body supports imbedded graphic files and word-wrapped text. If [optical character recognition (OCR)](/microsoft-365/compliance/communication-compliance-policies#optical-character-recognition-ocr) is enabled for the policy, images containing printed or handwritten text that match policy conditional are viewed as a child item for the associated message in this view.
+- **Plain text**: Text view that displays a line-numbered text-only view of the message and includes keyword highlighting in messages and attachments for sensitive info type terms, terms identified by built-in classifiers assigned to a policy, or for terms included in a dedicated keyword dictionary assigned to a policy. Keyword highlighting can help direct you to the area of interest in long messages and attachments. In some cases, highlighted text might be only in attachments for messages matching policy conditions. Embedded files aren't displayed and the line numbering in this view is helpful for referencing pertinent details among multiple reviewers.
 - **Conversation (preview)**: Available for Microsoft Teams chat messages, this view displays up to five messages before and after an alert message to help reviewers view the activity in the conversational context. This context helps reviewers to quickly evaluate messages and make more informed message resolution decisions. Real-time message additions to conversations are displayed, including all inline images, emojis, and stickers available in Teams. Image or text file attachments to messages aren't displayed. Notifications are automatically displayed for messages that have been edited or for messages that have been deleted from the conversation window. When a message is resolved, the associated conversational messages aren't retained with the resolved message. Conversation messages are available for up to 60 days after the alert message is identified.
 - **User history**: User history view displays all other alerts generated by any communication compliance policy for the user sending the message.
 - **Pattern detected notification**: Many harassing and bullying actions over time and involve reoccurring instances of the same behavior by a user. The *Pattern detected* notification is displayed in the alert details and raises attention to the alert. Detection of patterns is on a per-policy basis and evaluates behavior over the last 30 days when at least two messages are sent to the same recipient by a sender. Investigators and reviewers can use this notification to identify repeated behavior to evaluate the alert as appropriate.
@@ -134,15 +117,13 @@ After reviewing the message basics, it's time to open a message to examine the d
 Now that you've reviewed the details of the message for the alert, you can choose several remediation actions:
 
 - **Resolve**: Selecting the **Resolve** control immediately removes the message from the **Pending alerts** queue and no further action can be taken on the message. By selecting **Resolve**, you've essentially closed the alert without further classification. All resolved messages are displayed in the **Resolved** tab.
-- **Report as misclassified (preview)**: You can always resolve a message as misclassified at any point during the message review workflow. Misclassified signifies that the alert was non-actionable or that the alert was incorrectly generated by the alerting process and any trainable classifiers. Resolving the item as misclassified sends message content, attachments, and the message subject (including metadata) to Microsoft to help improve trainable classifiers. Data that is sent to Microsoft does not contain information that may identify or be used to identify any users in your organization. Further actions cannot be taken on the message and all misclassified messages are displayed in the **Resolved** tab.
+- **Report as misclassified**: You can always resolve a message as misclassified at any point during the message review workflow. Misclassified signifies that the alert was non-actionable or that the alert was incorrectly generated by the alerting process and any trainable classifiers. Resolving the item as misclassified sends message content, attachments, and the message subject (including metadata) to Microsoft to help improve trainable classifiers. Data that is sent to Microsoft doesn't contain information that may identify or be used to identify any users in your organization. Further actions can’t be taken on the message and all misclassified messages are displayed in the **Resolved** tab.
 - **Power Automate (preview)**: Use a Power Automate flow to automate process tasks for an alert message. By default, communication compliance includes the *Notify manager when a user has a communication compliance alert* flow template that reviewers can use to automate the notification process for users with message alerts. For more information about creating and managing Power Automate flows in communication compliance, see the **Step 5: Consider Power Automate flows** section in this article.
 - **Tag as**: Tag the message as *compliant*, *non-compliant*, or as *questionable* as it relates to the policies and standards for your organization. Adding tags and tagging comments helps you micro-filter policy alerts for escalations or as part of other internal review processes. After tagging is complete, you can also choose to resolve the message to move it out of the pending review queue.
 - **Notify**: You can use the **Notify** control to assign a custom notice template to the alert and to send a warning notice to the user. Choose the appropriate notice template configured in the **Communication compliance settings** area and select **Send** to email a reminder to the user that sent the message and to resolve the issue.
 - **Escalate**: Using the **Escalate** control, you can choose who else in your organization should review the message. Choose from a list of reviewers configured in the communication compliance policy to send an email notification requesting additional review of the message alert. The selected reviewer can use a link in the email notification to go directly to items escalated to them for review.
-- **Escalate for investigation**: Using the **Escalate for investigation** control, you can create a new [Advanced eDiscovery case](overview-ediscovery-20.md) for single or multiple messages. You'll provide a name and notes for the new case, and user who sent the message matching the policy is automatically assigned as the case custodian. You don't need any additional permissions to manage the case. Creating a case does not resolve or create a new tag for the message. You can select a total of 100 messages when creating an Advanced eDiscovery case during the remediation process. Messages in all communication channels monitored by communication compliance are supported. For example, you could select 50 Microsoft Teams chats, 25 Exchange Online email messages, and 25 Yammer messages when you open a new Advanced eDiscovery case for a user.
-- **Remove message in Teams**: Using the **Remove message in Teams** control, you can block inappropriate messages and content identified in alerts from Microsoft Teams channels and 1:1 and group chats. Removed messages and content are replaced with a policy tip that explains that it is blocked and the policy that applies to its removal from view. Recipients are provided a link in the policy tip to learn more about the applicable policy and the review process. The sender receives a policy tip for the blocked message and content but can review the details of the blocked message and content for context regarding the removal.
-
-    ![Remove a message from Microsoft Teams.](../media/communication-compliance-remove-teams-message.png)
+- **Escalate for investigation**: Using the **Escalate for investigation** control, you can create a new [eDiscovery (Premium) case](/microsoft-365/compliance/overview-ediscovery-20) for single or multiple messages. You'll provide a name and notes for the new case, and user who sent the message matching the policy is automatically assigned as the case custodian. You don't need any additional permissions to manage the case. Creating a case doesn't resolve or create a new tag for the message. You can select a total of 100 messages when creating an eDiscovery (Premium) case during the remediation process. Messages in all communication channels included in communication compliance are supported. For example, you could select 50 Microsoft Teams chats, 25 Exchange Online email messages, and 25 Yammer messages when you open a new eDiscovery (Premium) case for a user.
+- **Remove message in Teams**: Using the **Remove message in Teams** control, you can block inappropriate messages and content identified in alerts from Microsoft Teams channels and 1:1 and group chats. This includes Teams chat messages reported by users and chat messages detected using machine-learning and classifier-based communication compliance policies. Removed messages and content are replaced with a policy tip that explains that it's blocked and the policy that applies to its removal from view. Recipients are provided a link in the policy tip to learn more about the applicable policy and the review process. The sender receives a policy tip for the blocked message and content but can review the details of the blocked message and content for context regarding the removal.
 
 ### Step 4: Determine if message details should be archived outside of communication compliance
 
@@ -152,7 +133,7 @@ Message details can be exported or downloaded if you need to archive the message
 
 [Microsoft Power Automate](/power-automate/getting-started) is a workflow service that automates actions across applications and services. By using flows from templates or created manually, you can automate common tasks associated with these applications and services. When you enable Power Automate flows for communication compliance, you can automate important tasks for alerts and users. You can configure Power Automate flows to notify managers when users have communication compliance alerts and other applications.
 
-Customers with Microsoft 365 subscriptions that include communication compliance do not need additional Power Automate licenses to use the recommended default communication compliance Power Automate template. The default template can be customized to support your organization and cover core communication compliance scenarios. If you choose to use premium Power Automate features in these templates, create a custom template using the Microsoft 365 compliance connector, or use Power Automate templates for other compliance areas in Microsoft 365, you may need additional Power Automate licenses.
+Customers with Microsoft 365 subscriptions that include communication compliance don't need additional Power Automate licenses to use the recommended default communication compliance Power Automate template. The default template can be customized to support your organization and cover core communication compliance scenarios. If you choose to use premium Power Automate features in these templates, create a custom template using the Microsoft Purview connector, or use Power Automate templates for other compliance areas in Microsoft Purview, you may need additional Power Automate licenses.
 
 > [!IMPORTANT]
 > Are you receiving prompts for additional license validation when testing Power Automate flows? Your organization may not have received service updates for this preview feature yet. Updates are being deployed and all organizations with Microsoft 365 subscriptions that include communication compliance should have license support for flows created from the recommended Power Automate templates by October 30, 2020.
@@ -172,13 +153,13 @@ To create a Power Automate flow from a recommended default template, you'll use 
 
 Complete the following steps to create a Power Automate flow from a default template:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
 2. From the policy, select the **Pending** tab and select a pending alert.
 3. Select **Power Automate** from the alert action menu.
 4. On the **Power Automate** page, select a default template from the **Communication compliance templates you may like** section on the page.
 5. The flow will list the embedded connections needed for the flow and will display if the connection statuses are available. If needed, update any connections that aren't displayed as available. Select **Continue**.
 6. By default, the recommended flows are pre-configured with the recommended communication compliance and Microsoft 365 service data fields required to complete the assigned task for the flow. If needed, customize the flow components by using the **Show advanced options** control and configuring the available properties for the flow component.
-7. If needed, add any additional steps to the flow by selecting the **New step** button. In most cases, this change should not be needed for the recommended default templates.
+7. If needed, add any additional steps to the flow by selecting the **New step** button. In most cases, this change shouldn't be needed for the recommended default templates.
 8. Select **Save draft** to save the flow for further configuration later, or select **Save** to complete the configuration for the flow.
 9. Select **Close** to return to the Power Automate flow page. The new template will be listed as a flow on the **My flows** tab and is automatically available from the Power Automate control for the user that created the flow when working with communication compliance alerts.
 
@@ -189,7 +170,7 @@ By default, Power Automate flows created by a user are only available to that us
 To share a Power Automate flow, you must be a member of at least one communication compliance role group.
 Complete the following steps to share a Power Automate flow:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
 2. From the policy, select the **Pending** tab and select a pending alert.
 3. Select **Power Automate** from the alert action menu.
 4. On the **Power Automate flows** page, select the **My flows** or **Team flows** tab.
@@ -203,7 +184,7 @@ If you need to edit a flow, you'll use the **Power Automate** control when worki
 
 Complete the following steps to edit a Power Automate flow:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
 2. From the policy, select the **Pending** tab and select a pending alert.
 3. Select **Power Automate** from the alert action menu.
 4. On the **Power Automate flows** page, select flow to edit. Select **Edit** from the flow control menu.
@@ -216,7 +197,7 @@ If you need to delete a flow, you'll use the **Power Automate** control when wor
 
 Complete the following steps to delete a Power Automate flow:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
 2. From the policy, select the **Pending** tab and select a pending alert.
 3. Select **Power Automate** from the alert action menu.
 4. On the **Power Automate flows** page, select flow to delete. Select **Delete** from the flow control menu.
@@ -258,12 +239,12 @@ If you'd like to create more than a simple text-based email message for notifica
 
 ## Unresolve messages (preview)
 
-When messages are resolved, they are removed from the **Pending** tab view and displayed in the **Resolved** tab view. Investigation and remediation actions aren't available for messages in the *Resolved* view. However, there may be instances where you need to take additional action on a message that was mistakenly resolved or that needs further investigation after initial resolution. You can use the unresolve command feature move one or more messages from the *Resolved* view back to the *Pending* view.
+When messages are resolved, they're removed from the **Pending** tab view and displayed in the **Resolved** tab view. Investigation and remediation actions aren't available for messages in the *Resolved* view. However, there may be instances where you need to take additional action on a message that was mistakenly resolved or that needs further investigation after initial resolution. You can use the unresolve command feature move one or more messages from the *Resolved* view back to the *Pending* view.
 
 To unresolve messages, complete the following steps:
 
-1. Sign into the [Microsoft 365 compliance center](https://compliance.microsoft.com) using credentials for a user assigned to the *Communication Compliance Analyst* or *Communication Compliance Investigator* role groups in your Microsoft 365 organization.
-2. In the Microsoft 365 compliance center, go to **Communication compliance**.
+1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for a user assigned to the *Communication Compliance Analyst* or *Communication Compliance Investigator* role groups in your Microsoft 365 organization.
+2. In the Microsoft Purview compliance portal, go to **Communication compliance**.
 3. Select the **Policies** tab and then select a policy that contains the resolved alert message, double-click to open the **Policy** page.
 4. On the **Policy** page, select the **Resolved** tab.
 5. On the **Resolved** tab, select one or more messages to move back to *Pending*.

@@ -1,28 +1,28 @@
 ---
-title: "Create eDiscovery holds in a Core eDiscovery case"
+title: "Create eDiscovery holds in a eDiscovery (Standard) case"
+description: "You can create a hold that's associated with a eDiscovery (Standard) case in Microsoft 365 to preserve content relevant to an investigation or legal case."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ms.custom: admindeeplinkMAC
 search.appverid: 
 - MOE150
 - MET150
-description: "You can create a hold that's associated with a Core eDiscovery case in Microsoft 365 to preserve content relevant to an investigation or legal case."
 ---
 
 # Create an eDiscovery hold
 
-You can use a Core eDiscovery case to create holds to preserve content that might be relevant to the case. You can place a hold on the Exchange mailboxes and OneDrive for Business accounts of people you're investigating in the case. You can also place a hold on the mailboxes and sites that are associated with Microsoft Teams, Office 365 Groups, and Yammer Groups. When you place content locations on hold, content is preserved until you remove the content location from the hold or until you delete the hold.
+You can use a Microsoft Purview eDiscovery (Standard) case to create holds to preserve content that might be relevant to the case. You can place a hold on the Exchange mailboxes and OneDrive for Business accounts of people you're investigating in the case. You can also place a hold on the mailboxes and sites that are associated with Microsoft Teams, Office 365 Groups, and Yammer Groups. When you place content locations on hold, content is preserved until you remove the content location from the hold or until you delete the hold.
 
 After you create an eDiscovery hold, it may take up to 24 hours for the hold to take effect.
 
@@ -32,15 +32,17 @@ When you create a hold, you have the following options to scope the content that
 
 - Specify a date range to preserve only the content that was sent, received, or created within that date range. Alternatively, you can hold all content in specified locations regardless of when it was sent, received, or created.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How to create an eDiscovery hold
 
-To create an eDiscovery hold that's associated with a Core eDiscovery case:
+To create an eDiscovery hold that's associated with a eDiscovery (Standard) case:
   
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions.
 
 2. In the left navigation pane, click **Show all**, and then click **eDiscovery > Core**.
 
-3. On the **Core eDiscovery** page, click the name of the case that you want to create the hold in.
+3. On the **eDiscovery (Standard)** page, click the name of the case that you want to create the hold in.
 
 4. On the **Home** page for the case, click the **Hold** tab.
   
@@ -58,8 +60,8 @@ To create an eDiscovery hold that's associated with a Core eDiscovery case:
   
    3. **Exchange public folders**: Set the toggle to **On** to put all public folders in your Exchange Online organization on hold. You can't choose specific public folders to put on hold. Leave the toggle switch off if you don't want to put a hold on public folders.
 
-   > [!NOTE]
-   > You must add at least one content location to the hold. Otherwise, the eDiscovery hold statistics will show that no items are on hold.
+   > [!IMPORTANT]
+   > When adding Exchange mailboxes or SharePoint sites to a hold, you must explicitly add at least one content location to the hold. In other words, if you set the toggle to **On** for mailboxes or sites, you must select specific mailboxes or sites to add to the hold. Otherwise, the eDiscovery hold will be created but no mailboxes or sites will be added to the hold.
 
 8. When you're done adding locations to the hold, click **Next**.
 
@@ -77,35 +79,20 @@ To create an eDiscovery hold that's associated with a Core eDiscovery case:
 
 11. Review your settings (and edit them if necessary), and then click **Submit**.
 
+> [!NOTE]
+> When you create a query-based hold, all content from selected locations is initially placed on hold. Subsequently, any content that doesn't match the specified query is cleared from the hold every seven to 14 days. However, a query-based hold won't clear content if more than five holds of any type are applied to a content location, or if any item has indexing issues.
+
 ## Query-based holds placed on sites
 
 Keep the following things in mind when you place a query-based eDiscovery hold on documents located in SharePoint sites:
 
-- A query-based hold initially preserves all documents in a site for a short period of time after they are deleted. That means when a document is deleted, it will be moved to the Preservation Hold library even if it doesn't match the criteria of the query-based hold. However, deleted documents that don't match a query-based hold will be removed by a timer job that processes the Preservation Hold library. The timer job runs periodically and compares all documents in the Preservation Hold library to your query-based eDiscovery holds (and other types of holds and retention policies). The timer job deletes the documents that don't match a query-based hold and preserves the documents that do.
+- A query-based hold initially preserves all documents in a site for a short period of time after they're deleted. That means when a document is deleted, it will be moved to the Preservation Hold library even if it doesn't match the criteria of the query-based hold. However, deleted documents that don't match a query-based hold will be removed by a timer job that processes the Preservation Hold library. The timer job runs periodically and compares all documents in the Preservation Hold library to your query-based eDiscovery holds (and other types of holds and retention policies). The timer job deletes the documents that don't match a query-based hold and preserves the documents that do.
 
-- Query-based holds should not be used to perform targeted preservation, like preserving documents in a specific folder or site or by using other location-based hold criteria. Doing so may have unintended results. We recommend using non-location based hold criteria such as keywords, date ranges, or other document properties to preserve site documents.
-
-## eDiscovery hold statistics
-
-After you create an eDiscovery hold, information about the new hold is displayed on the flyout page for the selected hold. This information includes the number of mailboxes and sites on hold and statistics about the content that was placed on hold, such as the total number and size of items placed on hold and the last time the hold statistics were calculated. These hold statistics help you identify the amount of content related to the case is being preserved.
-  
-![Hold statistics.](../media/eDiscoveryHoldStatistics.png)
-  
-Keep the following things in mind about eDiscovery hold statistics:
-  
-- The total number of items on hold indicates the number of items from all content sources that are placed on hold. If you've created a query-based hold, this statistic indicates the number of items that match the query.
-
-- The number of items on hold also includes unindexed items found in the content locations. If you create a query-based hold, all unindexed items in the content locations are placed on hold. This includes unindexed items that don't match the search criteria of a query-based hold and unindexed items that might fall outside of a date range condition. This is different than what happens when you run a search, in which unindexed items that don't match the search query or are excluded by a date range condition aren't included in the search results. For more information about unindexed items, see [Partially indexed items](partially-indexed-items-in-content-search.md).
-
-- You can get the latest hold statistics by clicking **Update statistics** to rerun a search estimate that calculates the current number of items on hold.
-
-- It's normal for the number of items on hold to increase over time because users whose mailbox or site is on hold are typically sending or receiving new email message and creating new documents in SharePoint and OneDrive.
-
-- If an Exchange mailbox, SharePoint site, or OneDrive account is moved to a different region in a multi-geo environment, the statistics for that site won't be included in the hold statistics. But the content in those locations will still be preserved. Also, if a mailbox or site is moved to a different region, the SMTP address or URL that's displayed in the hold will not automatically be updated. You'll have to edit the hold and update the URL or SMTP address so the content locations are once again included in the hold statistics
+- Query-based holds shouldn't be used to perform targeted preservation, like preserving documents in a specific folder or site or by using other location-based hold criteria. Doing so may have unintended results. We recommend using non-location based hold criteria such as keywords, date ranges, or other document properties to preserve site documents.
 
 ## Search locations on eDiscovery hold
 
-When you [search for content](search-for-content-in-core-ediscovery.md) in a Core eDiscovery case, you can quickly configure the search to only search the content locations that have been placed on a hold associated with the case.
+When you [search for content](search-for-content-in-core-ediscovery.md) in a eDiscovery (Standard) case, you can quickly configure the search to only search the content locations that have been placed on a hold associated with the case.
 
 Select the **Locations on hold** option to search all the content locations that have been placed on hold. If the case contains multiple eDiscovery holds, the content locations from all holds will be searched when you select this option. Additionally, if a content location was placed on a query-based hold, only the items that match the hold query will be searched when you run the search. In other words, only the content that matches both the hold criteria and the search criteria is returned with the search results. For example, if a user was placed on query-based case hold that preserves items that were sent or created before a specific date, only those items would be searched. This is accomplished by connecting the case hold query and the search query by an **AND** operator.
 
@@ -207,7 +194,7 @@ After a mailbox, SharePoint site, or OneDrive account is removed from an eDiscov
 
    For more information, see [Releasing a policy for retention](retention.md#releasing-a-policy-for-retention).
 
-A delay hold is also applied to content locations on hold when you close a Core eDiscovery case because holds are turned off when a case is closed. For more information about closing a case, see [Close, reopen, and delete a Core eDiscovery case](close-reopen-delete-core-ediscovery-cases.md).
+A delay hold is also applied to content locations on hold when you close a eDiscovery (Standard) case because holds are turned off when a case is closed. For more information about closing a case, see [Close, reopen, and delete a eDiscovery (Standard) case](close-reopen-delete-core-ediscovery-cases.md).
 
 ## eDiscovery hold limits
 
@@ -216,14 +203,13 @@ The following table lists the limits for eDiscovery cases and case holds.
   | Description of limit | Limit |
   |:-----|:-----|
   |Maximum number of cases for an organization.  <br/> |No limit  <br/> |
-  |Maximum number of eDiscovery holds for an organization.  <br/> |10,000  <br/> |
+  |Maximum number of eDiscovery hold policies for an organization. This limit includes the combined total of hold policies in eDiscovery (Standard) and eDiscovery (Premium) cases.  <br/> |10,000<sup>1</sup>  <br/> |
   |Maximum number of mailboxes in a single eDiscovery hold. This limit includes the combined total of user mailboxes, and the mailboxes associated with Microsoft 365 Groups, Microsoft Teams, and Yammer Groups.  <br/> |1,000  <br/> |
   |Maximum number of sites in a single eDiscovery hold. This limit includes the combined total of OneDrive for Business sites, SharePoint sites, and the sites associated with Microsoft 365 Groups, Microsoft Teams, and Yammer Groups.  <br/> |100  <br/> |
-  |Maximum number of cases displayed on the eDiscovery home page, and the maximum number of items displayed on the Holds, Searches, and Export tabs within a case. <sup>1</sup> |1,000|
-  |||
+  |Maximum number of cases displayed on the eDiscovery home page, and the maximum number of items displayed on the Holds, Searches, and Export tabs within a case.  |1,000<sup>1</sup>|
 
    > [!NOTE]
-   > <sup>1</sup> To view a list of more than 1,000 cases, holds, searches, or exports, you can use the corresponding Office 365 Security & Compliance PowerShell cmdlet:
+   > <sup>1</sup> To view a list of more than 1,000 cases, holds, searches, or exports, you can use the corresponding Security & Compliance PowerShell cmdlet:
    >
    > - [Get-ComplianceCase](/powershell/module/exchange/get-compliancecase)
    > - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)

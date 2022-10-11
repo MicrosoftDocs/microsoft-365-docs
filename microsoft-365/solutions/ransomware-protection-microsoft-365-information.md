@@ -1,32 +1,33 @@
 ---
 title: "Step 5. Protect information"
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - ransomware
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, zero trust
-description: Use controlled folder access, MIP, DLP, and Microsoft Defender for Cloud Apps to protect your Microsoft 365 sensitive data.
+description: Use controlled folder access, Microsoft Purview Information Protection, DLP, and Microsoft Defender for Cloud Apps to protect your Microsoft 365 sensitive data.
 ---
 
 # Step 5. Protect information
 
 Because ransomware attackers will also look at your on-premises data located on file, database, and other types of servers, one of the best ways to protect that data is to migrate it to your Microsoft 365 tenant. Once there, it can be protected by built-in mitigation and recovery features such as [versioning, recycle bin, and Files Restore](ransomware-protection-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365).
 
-To provide additional protection of your sensitive information in your Microsoft 365 tenant:
+To provide additional protection of sensitive information in your Microsoft 365 tenant:
 
 - Locate your sensitive information.
-- Implement strict permissions and eliminating broad access (for example, too many users having write, edit, and delete abilities).
+- Implement strict permissions and eliminating broad access (for example, prevent too many users having write, edit, and delete capabilities).
 - Protect your sensitive information.
 
 >[!Note]
@@ -49,17 +50,17 @@ For each type of sensitive information, determine the following:
 - Its current location, such as a OneDrive or SharePoint folder or collaboration venue such as a Microsoft Teams team
 - The current permissions, which consist of:
 
-   - The user accounts who have access to it
+   - The user accounts who have access
 
-   - The actions that are allowed to each account that has access to it
+   - The actions that are allowed to each account that has access 
 
 ## Implement strict permissions for locations with sensitive information
 
-Using strict permissions within your Microsoft 365 tenant is the principle of least privilege for locations and communications venues, which in Microsoft 365 are typically OneDrive folders, SharePoint sites and folders, and teams. 
+Implementing strict permissions within your Microsoft 365 tenant uses the principle of least privilege for locations and communications venues, which in Microsoft 365 are typically OneDrive folders, SharePoint sites and folders, and teams. 
 
 While it is easier to create file storage locations or teams with broad access (such as the default of everyone in your organization), for sensitive information, the user accounts that are permitted and the actions that are allowed must be confined to the minimum set required to meet collaboration and business requirements.
 
-Once a ransomware attacker has infiltrated your tenant, they try to escalate their privileges by compromising the credentials of user accounts with wider scope of permissions across your tenant, such as administrator role accounts or user accounts that have access to sensitive information. 
+Once a ransomware attacker has infiltrated your tenant, they try to escalate their privileges by compromising the credentials of user accounts with wider scopes of permissions across your tenant, such as administrator role accounts or user accounts that have access to sensitive information. 
 
 Based on this typical attacker behavior, there are two levels of difficulty for the attacker:
 
@@ -75,17 +76,17 @@ You can ensure strict permissions in your tenant with these steps:
 3. Perform change management for your users so that future locations for sensitive information are created and maintained with strict permissions.
 4. Audit and monitor the locations for sensitive information to ensure that broad permissions aren't being granted.
 
-See [Set up secure collaboration with Microsoft 365 and Microsoft Teams](setup-secure-collaboration-with-teams.md) for detailed guidance. An example of a communication and collaboration venue with strict permissions for sensitive information is a [team with security isolation](/microsoft-365/solutions/secure-teams-security-isolation).
+See [Set up secure file sharing and collaboration with Microsoft Teams](setup-secure-collaboration-with-teams.md) for detailed guidance. An example of a communication and collaboration venue with strict permissions for sensitive information is a [team with security isolation](/microsoft-365/solutions/secure-teams-security-isolation).
 
 ## Protect your sensitive information
 
-To protect your sensitive information in case a ransomware attacker has access to it:
+To protect your sensitive information in case a ransomware attacker obtains access to it:
 
 - Use [controlled folder access](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) to make it more difficult for unauthorized applications to modify the data in controlled folders.
 
-- Use [Microsoft Information Protection](/microsoft-365/compliance/information-protection) and sensitivity labels and apply them to sensitive information. Sensitivity labels can be configured for additional encryption and permissions with defined user accounts and allowed actions. A file labeled with this type of sensitivity label that is exfiltrated from your tenant will only be useable to a user account defined in the label.
+- Use [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) and sensitivity labels and apply them to sensitive information. Sensitivity labels can be configured for additional encryption and permissions with defined user accounts and allowed actions. A file labeled with this type of sensitivity label that is exfiltrated from your tenant will only be useable to a user account defined in the label.
 
-- Use Microsoft 365 [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) to detect, warn, and block risky, inadvertent, or inappropriate sharing of data containing personal or confidential information based on sensitivity labels, both internally and externally.
+- Use Microsoft Purview [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) to detect, warn, and block risky, inadvertent, or inappropriate sharing of data containing personal or confidential information based on sensitivity labels, both internally and externally.
 
 - Use [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) to block downloads of sensitive information such as files. You can also use [Defender for Cloud Apps anomaly detection policies](/cloud-app-security/anomaly-detection-policy#ransomware-activity) to detect a high rate of file uploads or file deletion activities.
 
@@ -95,13 +96,13 @@ Administrative changes to broad permissions can lead to users being denied acces
 
 Additionally, for the protection of sensitive information in your Microsoft 365 tenant, train your users to:
 
-- Create communication and collaboration venues with strict permissions (the minimum set of user accounts for access and the minimum allowed actions for each). 
+- Create communication and collaboration venues with strict permissions (the minimum set of user accounts for access and the minimum allowed actions for each account). 
 - Apply the proper sensitivity labels to sensitive information.
 - Use controlled folder access.
 
 ## Resulting configuration
 
-Here is the ransomware protection for your tenant for steps 1-5.
+Here's the ransomware protection for your tenant for steps 1-5.
 
 ![Ransomware protection for your Microsoft 365 tenant after Step 5](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step5.png)
 
@@ -114,6 +115,7 @@ Key information from Microsoft:
 - [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft 365 Defender portal
+- Microsoft's Detection and Response Team (DART) ransomware [approach and best practices](/security/compass/incident-response-playbook-dart-ransomware-approach) and [case study](/security/compass/dart-ransomware-case-study)
 
 Microsoft 365:
 
@@ -123,7 +125,6 @@ Microsoft 365:
 - [Protect your Windows 10 PC from ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 - [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft 365 Defender portal
-
 
 Microsoft 365 Defender:
 

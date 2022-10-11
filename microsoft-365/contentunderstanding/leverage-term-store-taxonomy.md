@@ -6,11 +6,12 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
 description: Use term store taxonomy when creating an extractor in your document understanding model in Microsoft SharePoint Syntex.
 ---
@@ -31,7 +32,7 @@ As an example, your model identifies and classifies all **Contract** documents t
 
 ## Use a Managed metadata column in your extractor
 
-Term sets are configured in the Managed Metadata services (MMS) term store in the SharePoint admin center. In the example below, the *Contract Services* [term set](/sharepoint/managed-metadata#term-set) is configured to include several terms, including *Creative*.  The details for it show that the term has three synonyms (*Design*, *Graphics*, and *Topography*) and the synonyms should be translated to *Creative*. 
+Term sets are configured in the Managed Metadata services (MMS) term store in the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>. In the example below, the *Contract Services* [term set](/sharepoint/managed-metadata#term-set) is configured to include several terms, including *Creative*.  The details for it show that the term has three synonyms (*Design*, *Graphics*, and *Topography*) and the synonyms should be translated to *Creative*. 
 
    ![Term set.](../media/content-understanding/term-store.png)</br>
 
@@ -45,8 +46,10 @@ After applying your model to the document library, when documents are uploaded t
 
    ![Contract service column.](../media/content-understanding/creative.png)</br>
 
+> [!NOTE]
+> If the term set is open, then any extracted values that do not match a preferred term or synonym value will be added as a new term to the root of the term set. These new terms can be moved, merged, or made synonyms in the term store where the term set resides.
 
-## See Also
+## See also
 [Introduction to Managed Metadata](/sharepoint/managed-metadata#terms)
 
 [Create an extractor](create-an-extractor.md)

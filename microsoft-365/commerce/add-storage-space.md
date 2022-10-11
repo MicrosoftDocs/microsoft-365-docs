@@ -2,35 +2,42 @@
 title: "Add more SharePoint storage to your subscription"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: drjones, jmueller
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- scotvorg 
 - M365-subscription-management 
 - Adm_O365
 - SPO_Content
 ms.custom:
+- commerce_purchase
 - MAX_CampaignID
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_purchase
+- business_assist
 - AdminTemplateSet
+- admindeeplinkSPO
 search.appverid: MET150
 description: "Add file storage in your Microsoft 365 subscription. With extra file storage, you can store more content in SharePoint."
-ms.date: 04/02/2021
+ms.date: 05/24/2022
 ---
 
 # Add more SharePoint storage to your subscription
+
 If you start to run out of storage for your SharePoint sites, you can add storage to your subscription if your plan is eligible. If you don't see the **Office 365 Extra File Storage** in the list of available add-ons, it means your plan is not eligible. For more information, see [Is my plan eligible?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
 > If you bought your subscription through Volume Licensing or a CSP, you can't buy **Office 365 Extra File Storage** for your organization directly from Microsoft. Contact your representative or partner for help.
 > For information about OneDrive storage, see [Set the default storage space for OneDrive users](/onedrive/set-default-storage-space).
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Before you begin
 
@@ -38,11 +45,9 @@ You must be a Global or SharePoint admin to do the tasks in this article. For mo
 
 ## View available storage
 
-1. In the SharePoint admin center, go to the <a href="https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true" target="_blank">Active sites</a> page, and sign in with an account that has [admin permissions](/sharepoint/sharepoint-admin-role) for your organization.
+1. In the SharePoint admin center, go to <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>, and sign in with an account that has [admin permissions](/sharepoint/sharepoint-admin-role) for your organization.
 
 2. In the upper right of the page, see the amount of storage used across all sites, and the total storage for your subscription. If your organization has configured Multi-Geo in Office 365, the bar also shows the amount of storage used across all geo locations.
-
-   ![Storage bar on the Active sites page.](/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
 
    > [!NOTE]
    > The storage used doesn't include changes made within the last 24-48 hours.
@@ -81,7 +86,7 @@ Office 365 Extra File Storage is available for the following subscriptions:
 - Office 365 Enterprise E1
 - Office 365 Enterprise E2
 - Office 365 Enterprise E3
-- Office 365 Enterprise E4
+<!-- Office 365 Enterprise E4 -->
 - Office 365 Enterprise E5
 - Office 365 A3 (faculty)
 - Office 365 A5 (faculty)
@@ -95,11 +100,11 @@ Office 365 Extra File Storage is available for the following subscriptions:
 - Microsoft 365 E3
 - Microsoft 365 E5
 - Microsoft 365 F1
+- Microsoft 365 F3
 
 > [!NOTE]
 > Office 365 Extra File Storage is also available for GCC, GCC High, and DOD plans.
 
 ## Related content
 
-[Manage site storage limits](/sharepoint/manage-site-collection-storage-limits) (article)\
-
+[Manage site storage limits](/sharepoint/manage-site-collection-storage-limits) (article)

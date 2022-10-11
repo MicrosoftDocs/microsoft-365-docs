@@ -15,16 +15,16 @@ search.appverid:
   - MOE150
 ms.assetid: 
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Admins can learn about the mail flow reports that are available in the Reports dashboard in the Security & Compliance Center.
-ms.custom: admindeeplinkEXCHANGE
-ms.technology: mdo
-ms.prod: m365-security
+ms.custom:
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # View mail flow reports in the Reports dashboard in Security & Compliance Center
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -33,7 +33,7 @@ ms.prod: m365-security
 
 > [!NOTE]
 >
-> Most of the reports in this article are also available in the Microsoft 365 Defender portal or the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. For more information, see the following topics:
+> Most of the reports in this article are also available in the Microsoft 365 Defender portal or the Exchange admin center (EAC). For more information, see the following topics:
 >
 > - [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 > - [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md)
@@ -42,7 +42,7 @@ In addition to the mail flow reports that are available in the [Mail flow dashbo
 
 If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the Security & Compliance Center at <https://protection.office.com> by going to **Reports** \> **Dashboard**. To go directly to the Reports dashboard, open <https://protection.office.com/insightdashboard>.
 
-![Reports dashboard in the Security & Compliance Center.](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+:::image type="content" source="../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png" alt-text="The Reports dashboard in the Security & Compliance Center" lightbox="../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png":::
 
 ## Connector report
 
@@ -55,10 +55,10 @@ The **Exchange transport rule report** shows the effect of mail flow rules (also
 
 To view the report, open the Security & Compliance Center at <https://protection.office.com>, go to **Reports** \> **Dashboard** and select **Exchange Transport rule**. To go directly to the report, open <https://security.microsoft.com/reports/ETRRuleReport>.
 
-![Exchange transport rule widget in the Reports dashboard.](../../media/scc-transport-rule-report-widget.png)
+:::image type="content" source="../../media/scc-transport-rule-report-widget.png" alt-text="The Exchange transport rule widget in the Reports dashboard" lightbox="../../media/scc-transport-rule-report-widget.png":::
 
 > [!NOTE]
-> Clicking on the widget for this report in the Security & Compliance Center (protection.office.com) now takes you to the full report in the Microsoft 365 Defender portal (security.microsoft.com). For details about the report, see [Exchange transport rule report](view-email-security-reports.md#exchange-transport-rule-report).
+> The **Exchange transport rule report** is now available in the EAC. For more information, see [Exchange transport rule report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
 
 ## Forwarding report
 
@@ -71,7 +71,7 @@ The **Mailflow status report** is similar to the [Sent and received email report
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Mailflow status report**. To go directly to the **Mail flow status report**, open <https://security.microsoft.com/reports/mailflowStatusReport>.
 
-![Mailflow status report widget in the Reports dashboard.](../../media/scc-mail-flow-status-report-widget.png)
+:::image type="content" source="../../media/scc-mail-flow-status-report-widget.png" alt-text="The Mailflow status report widget in the Reports dashboard" lightbox="../../media/scc-mail-flow-status-report-widget.png":::
 
 > [!NOTE]
 > Clicking on the widget for this report in the Security & Compliance Center (protection.office.com) now takes you to the full report in the Microsoft 365 Defender portal (security.microsoft.com). For details about the report, see [Mailflow status report](view-email-security-reports.md#mailflow-status-report).
@@ -90,7 +90,7 @@ To view the report, open the Security & Compliance Center at <https://protection
 - Defender for Office 365: <https://protection.office.com/TopSenderRecipientsATP>
 - EOP: <https://protection.office.com/TopSenderRecipients>
 
-![Top senders and recipients widget in the Reports dashboard.](../../media/scc-top-senders-and-recipients-widget.png)
+:::image type="content" source="../../media/scc-top-senders-and-recipients-widget.png" alt-text="The Top senders and recipients widget in the Reports dashboard" lightbox="../../media/scc-top-senders-and-recipients-widget.png":::
 
 > [!NOTE]
 > Although clicking on the widget for this report in the Security & Compliance Center takes you to a protection.office.com page, the page content is from the Microsoft 365 Defender portal. For details about the report, see [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report).
@@ -109,12 +109,3 @@ For more information, see [Permissions in the Security & Compliance Center](perm
 > [!NOTE]
 > Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
-## Related topics
-
-[Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
-
-[Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md)
-
-[View email security reports in the Security & Compliance Center](view-email-security-reports.md)
-
-[View reports for Microsoft Defender for Office 365](view-reports-for-mdo.md)
