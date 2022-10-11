@@ -33,12 +33,12 @@ Capability Summary: Protects email and collaboration from zero-day malware, phis
 
 Required Conditions:
 
-1.	Tenant has a sign-up country included in Local Geography or Expanded Local Geography.
-2.	Tenant has a valid Advanced Data Residency subscription for all users in the tenant
-3.	The MDO P1 subscription customer data is provisioned in *Local Geography* or *Expanded Local Geography*.
+1.	Tenant has a sign-up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+2.	Tenant has a valid Advanced Data Residency subscription for all users in the tenant.
+3.	The MDO P1 subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
 **Commitment:**
 
-The following customer data will be stored in the related *Geography*:
+The following customer data will be stored in the related _Geography_:
 
-- MDO P1 does not store any customer data within its service.  In addition, all processing of data that is required to analyze threats and inspect suspicious emails, documents, messages, links, etc. is done in a sandbox environment and performed within the *Local Geography* or *Expanded Local Geography*.
+- MDO P1 does not store any customer data within its service.  In addition, all processing of data that is required to analyze threats and inspect suspicious emails, documents, messages, links, etc. is done in a sandbox environment and performed within the _Local Region Geography_ or _Expanded Local Region Geography_.
