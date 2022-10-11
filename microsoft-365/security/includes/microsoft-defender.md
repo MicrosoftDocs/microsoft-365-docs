@@ -1,12 +1,13 @@
 ---
+manager: dansimp
 ms.author: dansimp
 author: dansimp
-ms.service: microsoft-365-enterprise 
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.topic: include
-ms.date: 09/21/2020
-f1.keywords:
-- NOCSH
+ms.custom: admindeeplinkDEFENDER
+search.appverid: met150
 ---
 
-> [!IMPORTANT]
-> Welcome to **Microsoft 365 Defender**, the new name for **Microsoft Threat Protection**. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). 
+> [!NOTE]
+> Want to experience Microsoft 365 Defender? Learn more about how you can [evaluate and pilot Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview?ocid=cx-docs-MTPtriallab).

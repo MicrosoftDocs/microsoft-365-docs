@@ -1,18 +1,21 @@
 ---
-title: "Apply a retention label to a document understanding model"
-ms.author: efrene
-author: efrene
+title: Apply a retention label to a model in SharePoint Syntex
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
-ms.collection: enabler-strategic
-localization_priority: Priority
-description: "This article discusses how to apply a retention label to a document understanding model"
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
+ms.localizationpriority:  medium
+description: Learn how to apply a retention label to a model in SharePoint Syntex.
 ---
 
-# Apply a retention label to a document understanding model
+# Apply a retention label to a model in SharePoint Syntex
 
 </br>
 
@@ -20,21 +23,20 @@ description: "This article discusses how to apply a retention label to a documen
 
 </br>
 
+You can easily apply a [retention label](../compliance/retention.md) to a model in Microsoft SharePoint Syntex. You can do this for both document understanding and form processing models.
 
-You can easily apply a [retention label](https://docs.microsoft.com/microsoft-365/compliance/retention) to a document understanding model in Microsoft SharePoint Syntex.
+Retention labels let you apply retention settings to the documents that your models identify.  For example, you want your model to not only identify any *Insurance notice* documents that are uploaded to your document library, but to also apply a *Business* retention tag to them so that these documents cannot be deleted from the document library for the specified time period (the next five months, for example).
 
-Retention labels let you apply retention settings to the documents that your document understanding models identify.  For example, you want your model to not only identify any *Insurance notice* documents that are uploaded to your document library, but to also apply a *Business* retention tag to them so that these documents cannot be deleted from the document library for the specified time period (the next five months, for example).
-
-You can apply a pre-existing retention label to your document understanding model through your model settings on your model's home page. 
+You can apply a pre-existing retention label to your model through your model settings on your model's home page. 
 
 > [!Important]
-> For retention labels to be available to apply to your content understanding model, they need to be [created and published in the Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
+> For retention labels to be available to apply to your document understanding models, they need to be [created](../compliance/file-plan-manager.md#create-retention-labels) and [published](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) in the Microsoft Purview compliance portal.
 
 ## To add a retention label to a document understanding model
 
 1. From the model home page, select **Model settings**.</br>
 2. In **Model settings**, in the **Security and compliance** section, select the **Retention label** menu to see a list of retention labels that are available for your to apply to the model.</br>
- ![Retention label menu](../media/content-understanding/retention-labels-menu.png)</br> 
+ ![Retention label menu.](../media/content-understanding/retention-labels-menu.png)</br> 
 3. Select the retention label you want to apply to the model, and then select **Save**.</br>
 
 After applying the retention label to your model, you are able to apply it to a:
@@ -47,7 +49,7 @@ If your document understanding model has already been applied to a document libr
 
 1. On your model home page, in the **Libraries with this model** section, select the document library to which you want to apply the retention label update. </br> 
 2. Select **Sync**. </br>
- ![Sync model](../media/content-understanding/sync-model.png)</br> 
+ ![Sync model.](../media/content-understanding/sync-model.png)</br> 
 
 
 After applying the update and syncing it to your model, you can confirm that it has been applied by doing the following:
@@ -63,11 +65,66 @@ On your model's view page in your document library, a new **Retention label** co
 
 For example, all *Insurance notice* documents that your model identifies will also have the *Business* retention label applied to them, preventing them from being deleted from the document library for five months. If an attempt is made to delete the file from the document library, an error will display saying it is not allowed because of the applied retention label.
 
-## See Also
+## To add a retention label to a form processing model
+
+> [!Important]
+> For retention labels to be available to apply to your form processing model, they need to be [created](../compliance/file-plan-manager.md#create-retention-labels) and [published](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) in the Microsoft Purview compliance portal.
+
+You can either apply a retention label to a form processing model when you are creating a model, or apply it to an existing model.
+
+### To add a retention label when you create a form processing model
+
+1. When you are [creating a new form processing model](./create-a-form-processing-model.md), select <b>Advanced settings.</b>
+2. In <b>Advanced settings</b>, in the <b>Retention label</b> section, select the menu and then select the retention label you want to apply to the model.</b>
+
+ 
+     ![Add to a new form processing model.](../media/content-understanding/retention-label-forms.png)</br>
+
+3.  After you've completed your remaining model settings, select <b>Create</b> to build your model.
+
+### To add a retention label to an existing form processing model
+
+You can add a retention label to an existing form processing model in different ways:
+- Through the Automate menu in the document library
+- Through the Active model settings in the document library 
+
+
+#### To add a retention label to an existing form processing model through the Automate menu
+
+You can add a retention label to an existing form processing model that you own through the Automate menu in the document library in which the model is applied.
+
+
+1. In your document library to which the form processing model is applied, select the <b>Automate</b> menu, select <b>AI Builder</b>, then select <b>View form processing model details</b>.
+
+   ![Automate menu.](../media/content-understanding/automate-menu.png)</br>
+
+2. In the model details, in the <b>Retention Label</b> section, select the retention label you want to apply.  Then select <b>Save</b>.
+
+     ![Add to an existing form processing model.](../media/content-understanding/retention-label-model-details.png)</br> 
+
+#### To add a retention label to an existing form processing model in the active model settings
+
+You can add a retention label to an existing form processing model that you own through the Active model settings in the document library in which the model is applied.
+
+1. In the SharePoint document library in which the model is applied, select the <b>View active models</b> icon, and then select <b>View active models</b>.</b>
+
+   ![View active models.](../media/content-understanding/info-du.png)</br> 
+
+2. In <b>Active models</b>, select the form processing model to which you want to apply the retention label.
+
+     ![Model details.](../media/content-understanding/retention-label-model-details.png)</br> 
+
+
+3. In the model details, in the <b>Retention Label</b> section, select the retention label you want to apply.  Then select <b>Save</b>.
+
+> [!NOTE]
+> You must be the model owner for the model settings pane to be editable. 
+
+
+## See also
+
 [Create a classifier](create-a-classifier.md)
 
 [Create an extractor](create-an-extractor.md)
 
 [Document Understanding overview](document-understanding-overview.md)
-
-

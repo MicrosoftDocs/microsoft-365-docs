@@ -1,35 +1,40 @@
 ---
-title: "Troubleshooting mail sent to Microsoft 365"
-f1.keywords:
-- NOCSH
+title: Troubleshooting mail sent to Microsoft 365
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
-localization_priority: Normal
-search.appverid:
-- MET150
+
+ms.localizationpriority: medium
+search.appverid: 
+  - MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "This article provides troubleshooting information for issues with sending email to inboxes in Microsoft 365 & best practices for bulk mailing to Microsoft 365 customers."
+ms.collection: 
+  - m365-security
+ms.custom: 
+  - seo-marvel-apr2020
+description: This article provides troubleshooting information for issues with sending email to inboxes in Microsoft 365 & best practices for bulk mailing to Microsoft 365 customers.
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Troubleshooting mail sent to Microsoft 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
 This article provides troubleshooting information for senders who are experiencing issues when trying to send email to inboxes in Microsoft 365 and best practices for bulk mailing to customers.
 
 ## Are you managing your IP and domain's sending reputation?
 
-EOP filtering technologies are designed to provide anti-spam protection for Microsoft 365 as well as other Microsoft products like Exchange Server. We also leverage SPF, DKIM, and DMARC; email authentication technologies that help address the problem of spoofing and phishing by verifying that the domain sending the email is authorized to do so. EOP filtering is influenced by a number of factors related to the sending IP, domain, authentication, list accuracy, complaint rates, content and more. Of these, one of the principal factors in driving down a sender's reputation and their ability to deliver email is their junk email complaint rate.
+EOP filtering technologies are designed to provide anti-spam protection for Microsoft 365 and other Microsoft products like Exchange Server. We also use SPF, DKIM, and DMARC; email authentication technologies that help address the problem of spoofing and phishing by verifying that the domain sending the email is authorized to do so. EOP filtering is influenced by many factors related to the sending IP, domain, authentication, list accuracy, complaint rates, content and more. Of these, one of the principal factors in driving down a sender's reputation and their ability to deliver email is their junk email complaint rate.
 
 ## Are you sending email from new IP addresses?
 
@@ -53,7 +58,7 @@ We may not accept email from senders who fail a reverse-DNS lookup. In some case
 
 Some delivery issues are the result of the sender's IP address being blocked by Microsoft or because the user account is identified as banned sender due to previous spam activity. If you believe that you have received the NDR in error, first follow any instructions in the NDR message to resolve the issue.
 
-For more information about the error you received, see the list of error codes in [Email non-delivery reports in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+For more information about the error you received, see the list of error codes in [Email non-delivery reports in Exchange Online](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
  For example, if you receive the following NDR, it indicates that the sending IP address was blocked by Microsoft:
 
@@ -75,7 +80,7 @@ You received the NDR because suspicious activity has been detected from the IP a
 
 ## I can't receive email from senders in Microsoft 365
 
- In order to receive messages from our users, make sure your network allows connections from the IP addresses that EOP uses in our datacenters. For more information, see [Exchange Online Protection IP addresses](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
+ In order to receive messages from our users, make sure your network allows connections from the IP addresses that EOP uses in our datacenters. For more information, see [Exchange Online Protection IP addresses](../../enterprise/urls-and-ip-address-ranges.md).
 
 ## Best practices for bulk emailing to Microsoft 365 users
 
@@ -111,7 +116,7 @@ This industry best practice is recommended if your company requires or encourage
 
 During the registration process, if the "Yes, please send me your newsletter" or "Yes, please send me special offers" checkbox is selected by default, users who do not pay close attention may unintentionally sign up for marketing email or newsletters that they do not want to receive.
 
- We recommend the double opt-in option instead, which means that the checkbox for marketing emails or newsletters is unchecked by default. Additionally, once the registration form has been submitted, a verification email is sent to the user with a URL that allows them to confirm their decision to receive marketing emails.
+ Microsoft recommends the double opt-in option instead, which means that the checkbox for marketing emails or newsletters is unchecked by default. Additionally, once the registration form has been submitted, a verification email is sent to the user with a URL that allows them to confirm their decision to receive marketing emails.
 
  This helps ensure that only those users who want to receive marketing email are signed up for the emails, subsequently clearing the sending company of any questionable email marketing practices.
 
@@ -123,7 +128,7 @@ Just as important as the way the emails are sent is the content they contain. Wh
 
 - Redirects included in the body of the message should be similar and consistent, and not multiple and varied. A redirect in this context is anything that points away from the message, such as links and documents. If you have a lot of advertising or Unsubscribe links or Update the Profile links, they should all point to the same domain. For example:
 
-  Correct:
+  Correct (all domains are the same):
 
   `unsubscribe.bulkmailer.com`
 
@@ -131,7 +136,7 @@ Just as important as the way the emails are sent is the content they contain. Wh
 
   `options.bulkmailer.com`
 
-  Incorrect:
+  Incorrect (all domains are different):
 
   `unsubscribe.bulkmailer.com`
 

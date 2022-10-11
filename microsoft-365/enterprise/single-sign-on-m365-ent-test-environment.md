@@ -2,15 +2,16 @@
 title: "Azure AD Seamless Single Sign-on for your Microsoft 365 test environment"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: 
@@ -32,7 +33,7 @@ Setting up Azure AD Seamless SSO involves two phases:
 - [Phase 1: Configure password hash synchronization for your Microsoft 365 test environment](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
 - [Phase 2: Configure Azure AD Connect on APP1 for Azure AD Seamless SSO](#phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso)
    
-![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
@@ -43,7 +44,7 @@ Follow the instructions in [password hash synchronization for Microsoft 365](pas
 
 Your resulting configuration looks like this:
   
-![The simulated enterprise with password hash synchronization test environment](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![The simulated enterprise with password hash synchronization test environment.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 This configuration consists of:
   
@@ -99,7 +100,7 @@ Notice that although User1 has domain administrator permissions for the TESTLAB 
 
 Here is your resulting configuration:
 
-![The simulated enterprise with pass-through authentication test environment](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![The simulated enterprise with pass-through authentication test environment.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
 
 This configuration consists of:
 
@@ -118,4 +119,4 @@ Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) featu
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](/microsoft-365-enterprise/)

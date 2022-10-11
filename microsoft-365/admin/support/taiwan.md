@@ -7,17 +7,18 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.collection: 
+- scotvorg
+- Adm_Support
+ms.localizationpriority: medium
 description: Learn how to contact support for your country or region.
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Contact support for Taiwan
 
-[Find another country or region](../contact-support-for-business-products.md).
+[Find another country or region](../get-help-support.md).
 
 ## Phone number
 0800 666 802

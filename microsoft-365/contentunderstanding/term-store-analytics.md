@@ -1,21 +1,26 @@
 ---
 title: Term store reports
-description: "Learn how to report on term store activity"
+description: Learn how to report on term store activity.
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
-ms.collection: enabler-strategic
-localization_priority: Priority
-
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
+ms.custom: admindeeplinkSPO
+ms.localizationpriority: high
 
 ---
+
 # Term store reports
 
-You can access reports for the term store in the SharePoint admin center. Expand **Reports**, and then click **Content services**.
+You can access reports for <a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">Term store</a> in the SharePoint admin center. This feature requires a [SharePoint Syntex](index.md) license.
+
+Expand **Reports**, and then click **Content services**.
 
 The following reports are available:
 
@@ -33,7 +38,7 @@ View the distribution of open and closed term sets. This is useful if you want t
 
 ### Terms without synonyms
 
-View the number of terms in each of the added working languages that do not have synonyms defined. This is useful to help identify languages where you want to define synonyms. Synonyms help end users disambiguate and find the correct terms to tag their content.
+View the number of terms in each of the added working languages that don't have synonyms defined. This is useful to help identify languages where you want to define synonyms. Synonyms help end users disambiguate and find the correct terms to tag their content.
 
 ## See also
 

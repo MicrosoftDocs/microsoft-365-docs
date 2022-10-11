@@ -1,0 +1,29 @@
+- name: Microsoft 365
+  tocHref: /microsoft-365/
+  topicHref: /microsoft-365/index
+  items:
+  - name: Lighthouse
+    tocHref: /microsoft-365/lighthouse/
+    topicHref: /microsoft-365/lighthouse/m365-lighthouse-overview
+  - name: SharePoint Syntex
+    tocHref: /microsoft-365/contentunderstanding/
+    topicHref: /microsoft-365/contentunderstanding/index
+  - name: Microsoft Bookings
+    tocHref: /microsoft-365/bookings/
+    topicHref: /microsoft-365/bookings/
+  - name: Microsoft 365 Business Premium
+    tocHref: /microsoft-365/business-premium/index
+    topicHref: /business-premium/index
+  - name: Office 365 Enterprise
+    tocHref: /microsoft-365/Enterprise/index
+    topicHref: /microsoft-365/Enterprise/index
+  - name: Microsoft 365 for frontline workers
+    tocHref: /microsoft-365/frontline/
+    topicHref: /microsoft-365/frontline/
+  - name: Microsoft 365 solutions
+    tocHref: /microsoft-365/solutions/
+    topicHref: /microsoft-365/solutions/
+  - name: Compliance
+    tocHref: /microsoft-365/compliance/
+    topicHref: /microsoft-365/compliance/
+

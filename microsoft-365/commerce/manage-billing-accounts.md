@@ -1,27 +1,34 @@
 ---
-title: Manage billing accounts
+title: Understand billing accounts
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
+ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration 
-localization_priority: Normal
+ms.service: microsoft-365-business 
+ms.localizationpriority: medium
 ms.collection:
-- commerce 
-ms.custom: AdminSurgePortfolio
-search.appverid:
-- MET150
-description: "Learn about billing accounts and how to manage them."
+- scotvorg
+- M365-subscription-management 
+- Adm_O365
+ms.custom: 
+- commerce_billing
+- AdminSurgePortfolio
+- AdminTemplateSet
+- admindeeplinkMAC
+search.appverid: MET150
+description: "Learn about billing accounts and how they're used to manage account settings, invoices, payment methods, and purchases."
+ms.date: 05/24/2022
 ---
 
-# Manage billing accounts
+# Understand your Microsoft billing accounts
 
 A billing account is created when you sign up to try or buy Microsoft products. You use your billing account to manage your account settings, invoices, payment methods, and purchases. You can have access to multiple billing accounts. For example, you signed up for Microsoft 365 directly, or you have access to your organization's Enterprise Agreement, Microsoft Product & Services Agreement or Microsoft Customer Agreement. For each of these scenarios, you would have a separate billing account.
 
-The Microsoft 365 admin center currently supports the following type of billing accounts:
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> currently supports the following type of billing accounts:
 
 - Microsoft Online Services Program: This billing account is created when you sign up for a Microsoft 365 subscription directly.
 - Microsoft Products & Services Agreement (MPSA) Program: This billing account is created when your organization signs an MPSA Volume Licensing agreement to purchase software and online services.
@@ -42,16 +49,15 @@ The following table lists the important terms that you see in the **Billing acco
 | Account status | A read-only field that specifies the status of your commercial account with Microsoft. |
 | Tax ID | If you are outside the United States, you must provide a VAT or local equivalent. For more information, see [Tax information](billing-and-payments/tax-information.md). |
 | Agreement | When a billing account is created, either through a direct purchase or a Volume Licensing arrangement, a signatory for the organization accepts, or signs, an agreement that outlines the terms & conditions of the account. If applicable, this view lists an agreement history. If you're required to accept updated terms, a link for **Approve agreement** is displayed. |
-| Billing profiles | A billing profile defines properties of your invoice, like who receives the bill, how the bill is delivered, payment terms, and a PO number. To distribute billing across your organization, you can create multiple billing profiles and identify the appropriate billing profile at the time of purchase. For more information about billing profiles and how you can use them to build more flexible billing options for your organization, [Manage billing profiles](billing-and-payments/manage-billing-profiles.md). |
+| Billing profiles | A billing profile defines properties of your invoice, like who receives the bill, how the bill is delivered, payment terms, and a PO number. To distribute billing across your organization, you can create multiple billing profiles and identify the appropriate billing profile at the time of purchase. For more information about billing profiles and how you can use them to build more flexible billing options for your organization, [Understand billing profiles](billing-and-payments/manage-billing-profiles.md). |
 
 > [!NOTE]
-> If you want to change the **Sold-to** name or address, but don't see an **Edit** link, you must  [contact support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) to change it. Requests for a **Sold-to** name change will require a credit check. When you contact support, have one of the following documents ready:
+> If you need to change the **Sold-to** name or address, but don't see an **Edit** link, you must [contact support](../admin/get-help-support.md) to change it. Requests for a **Sold-to** name change will require a credit check. Complete [this form](https://www.microsoft.com/download/details.aspx?id=102732), and be ready to share one of following documents with Microsoft when you contact support:
 >
-> - External announcement document that indicates any change in the company's name or corporate structure
-> - Government issued document or registration letter
+> - Government-issued document or registration letter
 > - Print out of the local company's registry
 >
-> Support can help with name and address changes where only the customer name changes, but the entity remains the same. Documentation provided should clearly indicate that only the entity's name has changed. If the change is related to any transaction, like a sale of business, or a divestiture or "spinoff" of a Customer Affiliate, please contact your Microsoft Seller.
+> Support can help with name and address changes where only the customer name changes, but the entity remains the same. Documentation provided should clearly show that only the entity's name has changed. If the change is the result of a transaction, including the sale of business, a change of controls, or a divestiture or "spinoff" of a Customer Affiliate, please contact your Microsoft Seller.
 
 ## Shipping addresses
 
@@ -59,17 +65,17 @@ This section lists the shipping addresses associated with your billing account. 
 
 ## Understand access to billing accounts
 
-You can provide others with access to the billing account in the Microsoft 365 admin center through roles and permissions. Only a billing account owner can grant access to a billing account. You can assign one of the following roles to users:
+You can provide others with access to the billing account in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> through roles and permissions. Only a billing account owner can grant access to a billing account. You can assign one of the following roles to users:
 
 - **Billing account owner** &mdash; Can assign permissions, edit accounts, sign agreements, and view accounts.
 - **Billing account contributor** &mdash; Can edit accounts, sign agreements, and view accounts.
 - **Billing account reader** &mdash; Can view accounts.
 
 > [!Note]
-> Billing account roles only apply to billing accounts, and don't apply to other Microsoft 365 admin center scenarios.
+> - Billing account roles only apply to billing accounts, and don't apply to other Microsoft 365 admin center scenarios.
+> - For billing accounts created inside of Microsoft 365 sign-up, new Global, Billing and Global Reader Administrators are automatically granted distinct levels of access. You can manage this access from the **Billing** > **Billing accounts** page by explicitly removing those users from the role assignment section at the bottom of the page.
 
-## Related articles
+## Related content
 
-[Tax information](billing-and-payments/tax-information.md)
-
-[Manage billing profiles](billing-and-payments/manage-billing-profiles.md)
+[Tax information](billing-and-payments/tax-information.md) (article) \
+[Understand billing profiles](billing-and-payments/manage-billing-profiles.md) (article)

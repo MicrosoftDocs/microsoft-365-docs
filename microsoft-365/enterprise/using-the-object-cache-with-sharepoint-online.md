@@ -2,13 +2,14 @@
 title: "Using the object cache with SharePoint Online"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 4/20/2015
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Ent_O365
 - SPO_Content
 f1.keywords:
@@ -29,9 +30,9 @@ There is significant negative impact of relying on the object cache in SharePoin
   
 ## How the SharePoint Online and SharePoint Server 2013 object cache works
 
-When SharePoint Server 2013 is hosted on-premises, the customer has private front-end web servers that host the object cache. This means the cache is dedicated to one customer and is only limited by how much memory is available and allocated to the object cache. Because only one customer is served in the on-premises scenario the front-end web servers typically have users making requests to the same sites over and over. This means that the cache gets full quickly and remains full of the list query results and SharePoint objects that your users are requesting on a regular basis.
+When SharePoint Server 2013 is hosted on-premises, the customer has private front-end web servers that host the object cache. This means the cache is dedicated to one customer and is only limited by how much memory is available and allocated to the object cache. Because only one customer is served in the on-premises scenario, the front-end web servers typically have users making requests to the same sites over and over. This means that the cache gets full quickly and remains full of the list query results and SharePoint objects that your users are requesting regularly.
   
-![Shows traffic and load to on-premises front-end web servers](../media/a0d38b36-4909-4abb-8d4e-4930814bb3de.png)
+![Shows traffic and load to on-premises front-end web servers.](../media/a0d38b36-4909-4abb-8d4e-4930814bb3de.png)
   
 As a result, the second time a user visits a page, the page load time improves. After a minimum of four loads of the same page, the page is cached on all of the front-end web servers.
   
@@ -39,7 +40,7 @@ In contrast, in SharePoint Online there are many more servers but also many more
   
 In the following figure, each dot represents a page that a user is requesting and where it cached. Different colors represent different customers making shared use of the SaaS infrastructure.
   
-![Shows the results of object caching in SharePoint Online](../media/25d04011-ef83-4cb7-9e04-a6ed490f63c3.png)
+![Shows the results of object caching in SharePoint Online.](../media/25d04011-ef83-4cb7-9e04-a6ed490f63c3.png)
   
 As you can see from the diagram, the chances of any given user hitting a server with the cached version of their page are slim. Also, due to the large throughput and fact that the servers are shared between many sites, the cache doesn't last long since there is only so much space for caching available.
   
@@ -47,7 +48,7 @@ For all of these reasons, relying on users getting cached objects is not an effe
   
 ## If we can't rely on the object cache to improve performance in SharePoint Online, what do we use instead?
 
-Since you shouldn't rely on caching in SharePoint Online, you should evaluate alternative design approaches for SharePoint customizations that use the object cache. This means using approaches for performance issues which do not rely on the object caching in order to produce good results for users. This is described in some of the other articles in this series and include:
+Since you shouldn't rely on caching in SharePoint Online, you should evaluate alternative design approaches for SharePoint customizations that use the object cache. This means using approaches for performance issues, which do not rely on the object caching in order to produce good results for users. This is described in some of the other articles in this series and includes:
   
 - [Navigation options for SharePoint Online](navigation-options-for-sharepoint-online.md)
     
@@ -57,4 +58,3 @@ Since you shouldn't rely on caching in SharePoint Online, you should evaluate al
     
 - [Delay loading images and JavaScript in SharePoint Online](delay-loading-images-and-javascript-in-sharepoint-online.md)
     
-

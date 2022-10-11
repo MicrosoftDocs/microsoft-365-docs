@@ -2,13 +2,14 @@
 title: "Office 365 Content Delivery Network (CDN) Quickstart"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 06/04/2020
+manager: scotv
+ms.date: 01/13/2022
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Ent_O365
 - SPO_Content
 - m365initiative-coredeploy
@@ -34,11 +35,11 @@ For more detailed information guidance see [Use the Office 365 Content Delivery 
 
 You can use the **Page Diagnostics for SharePoint tool** browser extension to easily list assets in your SharePoint Online pages that can be added to a CDN origin.
 
-The **Page Diagnostics for SharePoint tool** is a browser extension for the new Microsoft Edge (https://www.microsoft.com/edge) and Chrome browsers that analyzes both SharePoint Online modern portal and classic publishing site pages. The tool provides a report for each analyzed page showing how the page performs against a defined set of performance criteria. To install and learn about the Page Diagnostics for SharePoint tool, visit [Use the Page Diagnostics tool for SharePoint Online](https://aka.ms/perftool).
+The **Page Diagnostics for SharePoint tool** is a browser extension for the new Microsoft Edge (<https://www.microsoft.com/edge>) and Chrome browsers that analyzes both SharePoint Online modern portal and classic publishing site pages. The tool provides a report for each analyzed page showing how the page performs against a defined set of performance criteria. To install and learn about the Page Diagnostics for SharePoint tool, visit [Use the Page Diagnostics tool for SharePoint Online](./page-diagnostics-for-spo.md).
 
 When you run the Page Diagnostics for SharePoint tool on a SharePoint Online page, you can click the **Diagnostic Tests** tab to see a list of assets not being hosted by the CDN. These assets will be listed under the heading **Content Delivery Network (CDN) check** as shown in the screenshot below.
 
-![Page diagnostics](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
+![Page diagnostics.](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
 
 >[!NOTE]
 >The Page Diagnostics tool only works for SharePoint Online, and cannot be used on a SharePoint system page.
@@ -73,16 +74,16 @@ Set-SPOTenantCdnEnabled -CdnType Both -Enable $true
 
 Output of these cmdlets should look like the following:
 
-![Output of Set-SPOTenantCdnEnabled](../media/O365-CDN/o365-cdn-enable-output.png)
+![Output of Set-SPOTenantCdnEnabled.](../media/O365-CDN/o365-cdn-enable-output.png)
 
 ## See also
 
-[Use the Page Diagnostics tool for SharePoint Online](https://aka.ms/perftool)
+[Use the Page Diagnostics tool for SharePoint Online](./page-diagnostics-for-spo.md)
 
 [Use the Office 365 Content Delivery Network (CDN) with SharePoint Online](use-microsoft-365-cdn-with-spo.md)
 
-[Content Delivery Networks](https://aka.ms/o365cdns)
+[Content Delivery Networks](./content-delivery-networks.md)
 
-[Network planning and performance tuning for Office 365](https://aka.ms/tune)
+[Network planning and performance tuning for Office 365](./network-planning-and-performance.md)
 
 [SharePoint Performance Series - Office 365 CDN video series](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)

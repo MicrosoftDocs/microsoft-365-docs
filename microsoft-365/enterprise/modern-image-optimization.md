@@ -2,13 +2,14 @@
 title: "Optimize images in SharePoint Online modern site pages"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content
@@ -30,7 +31,7 @@ This article will help you understand how to optimize images in SharePoint Onlin
 For information about optimizing images in classic publishing sites, see [Image optimization for SharePoint Online](image-optimization-for-sharepoint-online.md)..
 
 >[!NOTE]
->For more information about performance in SharePoint Online modern portals, see [Performance in the modern SharePoint experience](https://docs.microsoft.com/sharepoint/modern-experience-performance).
+>For more information about performance in SharePoint Online modern portals, see [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance).
 
 ## Use the Page Diagnostics for SharePoint tool to analyze image optimization
 
@@ -48,7 +49,7 @@ Possible results include:
 
 If the **Large images detected** result appears in the **Attention required** section of the results, you can click the result to see additional details.
 
-![Page Diagnostics tool results](../media/modern-portal-optimization/pagediag-large-images.png)
+![Page Diagnostics tool results.](../media/modern-portal-optimization/pagediag-large-images.png)
 
 ## Remediate large image issues
 
@@ -56,7 +57,7 @@ If a page contains images over 300KB in size, select the **Large images detected
 
 Before you make page revisions to remediate performance issues, make a note of the page load time in the analysis results. Run the tool again after your revision to see if the new result is within the baseline standard, and check the new page load time to see if there was an improvement.
 
-![Page load time results](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Page load time results.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >Page load time can vary based on a variety of factors such as network load, time of day, and other transient conditions. You should test page load time a few times before and after making changes to help you average the results.
@@ -67,7 +68,7 @@ Before you make page revisions to remediate performance issues, make a note of t
 
 [Tune Office 365 performance](tune-microsoft-365-performance.md)
 
-[Performance in the modern SharePoint experience](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance)
 
 [Content delivery networks](content-delivery-networks.md)
 

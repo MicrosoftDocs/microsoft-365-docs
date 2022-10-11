@@ -2,14 +2,15 @@
 title: "Microsoft 365 usage analytics data model"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -27,10 +28,10 @@ description: "Learn how usage analytics connects to an API and provides monthly 
 
 ## Data for the Microsoft 365 usage analytics tables
 
-Microsoft 365 usage analytics connects to an API that exposes a multidimensional data model. The APIs are in preview and can be accessed at `https://reports.office.com/pbi/v1.0/\<tenantid\>` (replace the \<tenant id\> with your tenant GUID). 
+Microsoft 365 usage analytics connects to an API that exposes a multidimensional data model. The APIs that Microsoft 365 usage analytics uses to generate its data are from the various, generally available, Graph APIs. The function of the Microsoft 365 usage analytics API by itself isn't generally available.
   
 > [!NOTE]
-> For more information, see [Working with Microsoft 365 usage reports in Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=864336). 
+> For more information, see [Working with Microsoft 365 usage reports in Microsoft Graph](/graph/api/resources/report). 
   
 This API provides information about the monthly trend of usage of the various Microsoft 365 services. For the exact data returned by the API refer to the table in the following section.
   
@@ -63,12 +64,12 @@ This table provides user level details for all users that have a license assigne
 |UPN  <br/> |User principal name, uniquely identifies the user to be able to join with other external data sources.  <br/> |
 |DisplayName  <br/> |User's display name.  <br/> |
 |IDType  <br/> |ID type is set to 1 if the user is a Yammer user who connects by using their Yammer ID or 0 if they connect to Yammer by using their Microsoft 365 ID.  <br/> Value is 1 to represent that this user connects to Yammer with their Yammer ID and not their Microsoft 365 ID  <br/> |
-|HasLicenseEXO  <br/> |Set to true if user is assigned a license and enabled to use Exchange.  <br/> |
-|HasLicenseODB  <br/> |Set to true if user is assigned a license and enabled to use OneDrive for Business.  <br/> |
-|HasLicenseSPO  <br/> |Set to true if user is assigned a license and enabled to use SharePoint Online.  <br/> |
-|HasLicenseYAM  <br/> |Set to true if user is assigned a license and enabled to use Yammer.  <br/> |
-|HasLicenseSFB  <br/> |Set to true if user is assigned a license and enabled to use Skype For Business.  <br/> |
-|HasLicenseTeams  <br/> |Set to true if user is assigned a license and enable to use Microsoft Teams.  <br/> |
+|HasLicenseEXO  <br/> |Set to true if user is assigned a license and enabled to use Exchange on the last day of the month.  <br/> |
+|HasLicenseODB  <br/> |Set to true if user is assigned a license and enabled to use OneDrive for Business on the last day of the month.  <br/> |
+|HasLicenseSPO  <br/> |Set to true if user is assigned a license and enabled to use SharePoint Online on the last day of the month.  <br/> |
+|HasLicenseYAM  <br/> |Set to true if user is assigned a license and enabled to use Yammer on the last day of the month.  <br/> |
+|HasLicenseSFB  <br/> |Set to true if user is assigned a license and enabled to use Skype For Business on the last day of the month.  <br/> |
+|HasLicenseTeams  <br/> |Set to true if user is assigned a license and enable to use Microsoft Teams on the last day of the month.  <br/> |
 |Company  <br/> |Company data represented in Azure Active Directory for this user.  <br/> |
 |Department  <br/> |Department data represented in Azure Active Directory for this user.  <br/> |
 |LocationCity  <br/> |City data represented in Azure Active Directory for this user.  <br/> |
@@ -104,14 +105,14 @@ This table contains data about each user who had an activity in any of the servi
 |ODB_FileSynched  <br/> |Number of files this user synchronized on any OneDrive for Business.  <br/> |
 |ODB_FileSharedInternally  <br/> |Number of files this user shared internally from any OneDrive for Business, or with users within groups (that might include external users).  <br/> |
 |ODB_FileSharedExternally  <br/> |Number of files this user shared externally from any OneDrive for Business.  <br/> |
-|ODB_AccessByOwner  <br/> |Number of files the user interacted with that reside on their own OneDrive for Business.  <br/> |
-|ODB_AccessOthers  <br/> |Number of files this user interacted with which reside on another user's OneDrive for Business.  <br/> |
-|SPO_GroupFileViewedModified  <br/> |Number of files with this user interacted on any group site.  <br/> |
+|ODB_AccessedByOwner  <br/> |Number of sites the user interacted with that reside on their own OneDrive for Business.  <br/> |
+|ODB_AccessedByOthers  <br/> |Number of sites this user interacted with which reside on another user's OneDrive for Business.  <br/> |
+|SPO_GroupFileViewedModified  <br/> |Number of files this user interacted with on any group site.  <br/> |
 |SPO_GroupFileSynched  <br/> |Number of files this user synchronized on any group site.  <br/> |
 |SPO_GroupFileSharedInternally  <br/> |The count of files that have been shared with users within the organization, or with users within groups (that might include external users).  <br/> |
 |SPO_GroupFileSharedExternally  <br/> |Number of files this user shared externally from any group site.  <br/> |
-|SPO_GroupAccessByOwner  <br/> |Number of files the user interacted with that reside on a group site that they own.  <br/> |
-|SPO_GroupAccessByOthers  <br/> |Number of files the user interacted with that reside on a group site that another user owns.  <br/> |
+|SPO_GroupAccessedByOwner  <br/> |Number of sites the user interacted with that reside on a group site that they own.  <br/> |
+|SPO_GroupAccessedByOthers  <br/> |Number of sites the user interacted with that reside on a group site that another user owns.  <br/> |
 |SPO_OtherFileViewedModified  <br/> |Number of files with which this user interacted on any other site.  <br/> |
 |SPO_OtherFileSynched  <br/> |Number of files this user synchronized from any other site.  <br/> |
 |SPO_OtherFileSharedInternally  <br/> |Number of files this user shared internally from any other site, or with users within groups (that might include external users). <br/> |
@@ -122,8 +123,8 @@ This table contains data about each user who had an activity in any of the servi
 |SPO_TeamFileSynched  <br/> |Number of files this user synchronized from any team site.  <br/> |
 |SPO_TeamFileSharedInternally  <br/> |Number of files this user shared internally from any team site, or with users within groups (that might include external users).  <br/> |
 |SPO_TeamFileSharedExternally  <br/> |Number of files this user shared externally from any team site.  <br/> |
-|SPO_TeamAccessByOwner  <br/> |Number of files the user interacted with that reside on a team site that they own.  <br/> |
-|SPO_TeamAccessByOthers  <br/> |Number of files the user interacted with that reside on a team site that another user owns.  <br/> |
+|SPO_TeamAccessedByOwner  <br/> |Number of sites the user interacted with that reside on a team site that they own.  <br/> |
+|SPO_TeamAccessedByOthers  <br/> |Number of sites the user interacted with that reside on a team site that another user owns.  <br/> |
 |Teams_ChatMessages  <br/> |Number of chat messages sent.  <br/> |
 |Teams_ChannelMessage  <br/> |Number of messages posted to channels.  <br/> |
 |Teams_CallParticipate  <br/> |Number of calls the user participated in.  <br/> |
@@ -151,7 +152,7 @@ This table provides month-over-month adoption data in terms of enable, active, r
 |ActiveUsers  <br/> |Number of users who performed an intentional activity in the product for the time-frame value.  <br/> A user is counted as active for a product in a particular month, if they have performed one of the key activities in the product. The key activities are available in the **Tenant Product Activity** table.  <br/> |
 |CumulativeActiveUsers  <br/> |Number of users who are enabled to use a product and have used the product up to the timeframe month at least once since data collection started in the new usage system.  <br/> |
 |MoMReturningUsers  <br/> |Number of users who are active in the timeframe month and also were active in the previous month.  <br/> |
-|FirstTimeUsers  <br/> |Number of users who became active in the timeframe for the first time since data collection in the new usage system.  <br/> A user is counted as a first-time user in a particular month, if we detect their activity for the first time since the beginning of data collection in this new reporting system. Once counted as a first-time user, even if this user has a large gap in their activity they will never be counted again as a first-time user  <br/> |
+|FirstTimeUsers  <br/> |Number of users who became active in the timeframe for the first time since data collection in the new usage system.  <br/> A user is counted as a first-time user in a particular month, if we detect their activity for the first time since the beginning of data collection in this new reporting system. Once counted as a first-time user, even if this user has a large gap in their activity they'll never be counted again as a first-time user  <br/> |
 |Content Date  <br/> |If timeframe shows current month, this value will represent the latest date of the current month for which data is available.  <br/> If Timeframe shows previous month, this value will represent the last date of the timeframe month.  <br/> |
    
 ### Data table - Tenant Product Activity
@@ -170,7 +171,7 @@ This table provides monthly totals of activity and active user count for various
    
 ### Data table - Tenant Mailbox Usage
 
-This table consists of summary data across all licensed Exchange Online users who have a user mailbox. It contains end of month state across all user mailboxes. The data in this table is not additive across multiple months. Latest month's data in this table represents the most recent state.
+This table consists of summary data across all licensed Exchange Online users who have a user mailbox. It contains end of month state across all user mailboxes. The data in this table isn't additive across multiple months. Latest month's data in this table represents the most recent state.
   
 |**Column name**|**Column description**|
 |:-----|:-----|
@@ -189,7 +190,7 @@ This table consists of summary data across all licensed Exchange Online users wh
    
 ### Data table - Tenant Client Usage
 
-This table provides month-over-month summary data about the clients that the users are using to connect to Exchange Online, Skype for Business and Yammer. This table does not yet have client use data for SharePoint Online and OneDrive for Business.
+This table provides month-over-month summary data about the clients that the users are using to connect to Exchange Online, Skype for Business and Yammer. This table doesn't yet have client use data for SharePoint Online and OneDrive for Business.
   
 |**Column name**|**Column description**|
 |:-----|:-----|
@@ -273,7 +274,17 @@ This table provides data about how Microsoft 365 Groups is used across the organ
 |YAM_LikedActivities  <br/> |Number of Yammer like activities.  <br/> |
 |YAM_PostedActivties  <br/> |Number of Yammer post activities.  <br/> |
 |YAM_ReadActivites  <br/> |Number of Yammer read activities.  <br/> |
-   
+
+### Data table - Tenant Office Licenses
+
+This table provides month-over-month summary data about the license assignment for users. 
+  
+|**Column name**|**Column description**|
+|:-----|:-----|
+|LicenseName  <br/> |Name of the license.  <br/> |
+|AssignedCount  <br/> |Number of assigned licenses.  <br/> |
+|Timeframe  <br/> |Month value.  <br/> |
+
 ### Data table - Tenant Office Activation
 
 The table provides data about the number of Office subscription activations across the service plans, for example, Microsoft 365 Apps for enterprises, Visio, Project. It also provides data about number of activations per device (Android/iOS/Mac/PC).
@@ -290,5 +301,3 @@ The table provides data about the number of Office subscription activations acro
 |WinRtCount  <br/> |Number of activations per service plan for Windows Mobile device by the end of the timeframe.  <br/> |
 |Timeframe  <br/> |This column has the date value. Used as Many to one relationship for Calendar table.  <br/> |
 |Content Date  <br/> |If timeframe shows current month, this value will represent the latest date of the current month for which data is available.  <br/> If Timeframe shows previous month, this value will represent the last date of the timeframe month.  <br/> |
-   
-

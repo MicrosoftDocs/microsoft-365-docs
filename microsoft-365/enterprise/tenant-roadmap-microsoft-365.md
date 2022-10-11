@@ -2,14 +2,15 @@
 title: Tenant roadmap for Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - m365initiative-coredeploy
 ms.custom: it-pro
@@ -38,15 +39,15 @@ To plan for your tenant implementation:
 - [Plan for client app support](microsoft-365-client-support-certificate-based-authentication.md)
 - [Determine how to use hybrid modern authentication](hybrid-modern-auth-overview.md)
 - [Plan for Office 2007 and Office 2010 upgrades](plan-upgrade-previous-versions-office.md)
-- [Understand tenant isolation](microsoft-365-tenant-isolation-overview.md)
+- [Understand tenant isolation](/compliance/assurance/assurance-microsoft-365-isolation-controls#tenant-isolation)
 
 ### Deploy
 
 To deploy your tenant: 
 
-- Add the [DNS domains](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) for your organization.
+- Add the [DNS domains](../admin/setup/add-domain.md) for your organization.
 - Use the [setup guides in the Microsoft 365 admin center](setup-guides-for-microsoft-365.md).
-- Build out your [identity infrastructure](identity-roadmap-microsoft-365.md) and [secure your user sign-ins](microsoft-365-secure-sign-in.md).
+- Build out your [identity infrastructure](deploy-identity-solution-overview.md).
 
 ### Move a tenant's geographic locations
 
@@ -63,7 +64,7 @@ For more information, see [Microsoft 365 Multi-Geo](microsoft-365-multi-geo.md).
 
 ## Manage multiple Microsoft 365 tenants 
 
-Although having a single tenant for your oganization is ideal, you may be one of many organizations that have multiple tenants. Reasons can include mergers and aquisitions, you want administrative isolation, or you have a decentralized IT.
+Although having a single tenant for your organization is ideal, you may be one of many organizations that have multiple tenants. Reasons can include mergers and acquisitions, you want administrative isolation, or you have a decentralized IT.
 
 If you have multiple Microsoft 365 tenants, see these articles for more information about:
 

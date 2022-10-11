@@ -1,16 +1,17 @@
 ---
 title: "Deploy high availability federated authentication for Microsoft 365 in Azure"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 search.appverid:
 - MET150s
 ms.collection: 
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 f1.keywords:
@@ -37,17 +38,17 @@ Here is the configuration, with placeholder names for each server.
   
 **A high availability federated authentication for Microsoft 365 infrastructure in Azure**
 
-![The final configuration of the high availability Microsoft 365 federated authentication infrastructure in Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![The final configuration of the high availability Microsoft 365 federated authentication infrastructure in Azure.](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 All of the virtual machines are in a single cross-premises Azure virtual network (VNet). 
   
 > [!NOTE]
-> Federated authentication of individual users does not rely on any on-premises resources. However, if the cross-premises connection becomes unavailable, the domain controllers in the VNet will not receive updates to user accounts and groups made in the on-premises Active Directory Domain Services (AD DS). To ensure this does not happen, you can configure high availability for your cross-premises connection. For more information, see [Highly Available Cross-Premises and VNet-to-VNet Connectivity](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> Federated authentication of individual users does not rely on any on-premises resources. However, if the cross-premises connection becomes unavailable, the domain controllers in the VNet will not receive updates to user accounts and groups made in the on-premises Active Directory Domain Services (AD DS). To ensure this does not happen, you can configure high availability for your cross-premises connection. For more information, see [Highly Available Cross-Premises and VNet-to-VNet Connectivity](/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
 Each pair of virtual machines for a specific role is in its own subnet and availability set.
   
 > [!NOTE]
-> Because this VNet is connected to the on-premises network, this configuration does not include jumpbox or monitoring virtual machines on a management subnet. For more information, see [Running Windows VMs for an N-tier architecture](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm). 
+> Because this VNet is connected to the on-premises network, this configuration does not include jumpbox or monitoring virtual machines on a management subnet. For more information, see [Running Windows VMs for an N-tier architecture](/azure/guidance/guidance-compute-n-tier-vm). 
   
 The result of this configuration is that you will have federated authentication for all of your Microsoft 365 users, in which they can use their AD DS credentials to sign in rather than their Microsoft 365 account. The federated authentication infrastructure uses a redundant set of servers that are more easily deployed in Azure infrastructure services, rather than in your on-premises edge network.
   
@@ -104,4 +105,3 @@ To build a dev/test environment or a proof-of-concept of this configuration, see
 ## Next step
 
 Start the configuration of this workload with [Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md). 
-  

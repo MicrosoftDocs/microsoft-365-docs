@@ -1,16 +1,17 @@
 ---
 title: "Set up your network for Microsoft 365"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 11/19/2019
 audience: ITPro
-ms.topic: hub-page
-ms.service: o365-solutions
-localization_priority: Normal
+ms.topic: landing-page
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 f1.keywords:
@@ -60,7 +61,6 @@ There are currently five different Office 365 clouds. This table takes you to th
 | [U.S. Government DoD endpoints](microsoft-365-u-s-government-dod-endpoints.md) | The endpoints for United States Department of Defense (DoD) subscriptions. |
 | [U.S. Government GCC High endpoints](microsoft-365-u-s-government-gcc-high-endpoints.md) | The endpoints for United States Government Community Cloud High (GCC High) subscriptions. |
 | [Office 365 operated by 21Vianet endpoints](urls-and-ip-address-ranges-21vianet.md) | The endpoints for Office 365 operated by 21Vianet, which is designed to meet the needs for Office 365 in China. |
-| [Office 365 Germany endpoints](microsoft-365-germany-endpoints.md) | The endpoints for a separate cloud in Europe for the most regulated customers in Germany, the European Union (EU), and the European Free Trade Association (EFTA). |
 |||
 
 To automate getting the latest list of endpoints for your Office 365 cloud, see the [Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md).

@@ -6,7 +6,8 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.collection: scotvorg
+ms.localizationpriority: medium
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: "If you need to ask customers questions when they book an appointment with you online, you can add custom questions and required questions to the booking page."
 ---
@@ -28,15 +29,17 @@ For more information about how to personalize and customize your booking page, s
 
 1. Sign in to Microsoft 365 and go to **Bookings**.
 
+1. Choose your calendar.
+
 1. Go to **Services** and either edit an existing service or **Add a service**.
 
-1. Scroll down to the **Custom fields** section, and then select **Modify**.
+1. Choose the **Custom fields** section.
 
    We already added some basic customer information questions: Customer email, phone number, customer address, and customer notes. The first time you do this, the customer information questions are highlighted in gray. That means that the user will see this question. If you select the question, the highlight box around it will disappear and your customer won't be asked that question.
 
    In this example, phone number and customer notes have been turned off and we created two new custom questions to ask.
 
-   ![Image of custom questions screen](../media/bookings-questions-custom-fields.png)
+   ![Image of custom questions screen.](../media/bookings-questions-custom-fields.png)
 
 1. To make the question required, select the **Required** checkbox. Your customer won't be able to complete the booking until they've answered the required questions.
 
@@ -50,7 +53,7 @@ Bookings will save all of your custom questions in a master list so that you can
 
 In this example, you can see that the questions that were added for the first service are available for this service. Any questions you create for this service will be available for all services.
 
-   ![Image of questions that appear for multiple services](../media/bookings-questions-services.png)
+   ![Image of questions that appear for multiple services.](../media/bookings-questions-services.png)
 
 If your booking page is already published, you don't need to do anything else. Customers will see the questions the next time they book with you. If your booking page isn't published yet, go to the **booking page** from Outlook on the web, and then select **Save and publish**.
 
@@ -61,10 +64,10 @@ If your booking page is already published, you don't need to do anything else. C
 
 When your customers book an appointment with you, the basic customer information questions will show in the **Add your details** section. Any customized questions you add will be in the **Provide additional information** section.
 
-![Image of what customers see when questions are enabled](../media/bookings-questions-customer.png)
+![Image of what customers see when questions are enabled.](../media/bookings-questions-customer.png)
 
 ## Staff experience
 
 When your customers book an appointment with you, your staff will see the questions and the customer's answers on the booking calendar. To see it, go to **Bookings** \> **Calendar** and then open an appointment.
 
-![Image of what staff see when questions are enabled](../media/bookings-questions-staff.png)
+![Image of what staff see when questions are enabled.](../media/bookings-questions-staff.png)

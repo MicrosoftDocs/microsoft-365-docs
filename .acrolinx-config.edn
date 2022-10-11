@@ -1,5 +1,5 @@
-{:allowed-branchname-matches ["master"]
- :allowed-filename-matches ["microsoft-365/"]
+{:allowed-branchname-matches ["main"]
+ :allowed-filename-matches ["microsoft-365/"] ;; Can be overridden in repo-specific edn file. This is an allow list that identifies which folders contain the files Acrolinx will check. Separate multiple folders as follows ["folder/" "folder2"]
  
  :use-gh-statuses true
  
@@ -13,7 +13,7 @@
              }
      :scores {
               ;;:terminology 100
-              :qualityscore 65 ;; Confirmed with Hugo that you just comment out the single score and leave the structure in place
+              :qualityscore 80 ;; Confirmed with Hugo that you just comment out the single score and leave the structure in place
               ;;:spelling 40
              }
    }
@@ -39,7 +39,7 @@
 
 ## Acrolinx Scorecards 
  
-**The minimum Acrolinx topic score of 65 is required for all MARVEL content merged to the default branch.**
+**The minimum Acrolinx topic score of 80 is required for all MARVEL content merged to the default branch.**
 
 If you need a scoring exception for content in this PR, add the *Sign off* and the *Acrolinx exception* labels to the PR. The PubOps Team will review the exception request and may take one or more of the following actions:
 
@@ -51,12 +51,12 @@ For more information about the exception criteria and exception process, see [Mi
  
 Click the scorecard links for each article to review the Acrolinx feedback on grammar, spelling, punctuation, writing style, and terminology:
 
-| Article | Score | Issues | Scorecard | Processed |
-| ------- | ----- | ------ | --------- | --------- |
+| Article | Score | Issues | Correctness | Scorecard | Processed |
+| ------- | ----- | ------ | ------ | --------- | --------- |
 "
 
  :template-change
- "| ${s/file} | ${acrolinx/qualityscore} | ${acrolinx/flags/issues} | [link](${acrolinx/scorecard}) | ${s/status} |
+ "| ${s/file} | ${acrolinx/qualityscore} | ${acrolinx/flags/issues} | ${acrolinx/scores/correctness} | [link](${acrolinx/scorecard}) | ${s/status} |
 "
  
  :template-footer

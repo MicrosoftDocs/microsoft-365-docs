@@ -2,36 +2,34 @@
 title: "Renew Microsoft 365 for business"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
+ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Priority
+ms.service: microsoft-365-business
+ms.localizationpriority: high
 ms.collection: 
+- scotvorg
+- highpri 
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
+- commerce_subscriptions
+- VSBFY23
 - SaRA
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: "Learn how to renew your Microsoft 365 by turning recurring billing off or on."
+- AdminTemplateSet
+search.appverid: MET150 
+description: "Learn how to renew most Microsoft 365 for business subscriptions by turning recurring billing off or on."
+ms.date: 08/18/2022
 ---
 
 # Renew Microsoft 365 for business
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
+> [!IMPORTANT]
+> As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you're an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.
 
 This article applies to most paid Microsoft 365 for business subscriptions.
   
@@ -49,63 +47,61 @@ If you prepaid for your subscription with a product key, your subscription will 
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+
+::: moniker-end
+
 2. Select the subscription for which you want to manage recurring billing.
+
 3. On the subscription details page, under **Subscription and payment settings**, select **Edit recurring billing**.
-4. In the **Edit recurring billing settings** pane, select **On**, **On, but renew once**, or **Turn off**.
+
+4. In the **Edit recurring billing** pane, select **On**, **On, but renew once**, or **Turn off**.
+
 5. Select **Save**.
 
     > [!NOTE]
+    >
     > - You can only change the **Recurring billing** setting for active subscriptions. If your subscription has already expired or is disabled, you will need to [reactivate it](reactivate-your-subscription.md) before you can turn **Recurring billing** on or off.
     > - When **Recurring billing** is turned off, the subscription isn't cancelled. If you want to keep the subscription active, you must pay the bill manually.
     > - If you turn off **Recurring billing**, the subscription remains active until it expires. You can view the expiration date on the subscription details page in the **Subscription and payment settings** section.
     > - To learn how to cancel the subscription right away, see [Cancel my subscription](cancel-your-subscription.md).
 
-::: moniker-end
+## Extend the expiration date of your prepaid subscription by using a Microsoft 365 product key
 
-::: moniker range="o365-germany"
-  
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
+Prepaid product licenses are issued to you as a 25-character alphanumeric code, called a product key. If you buy another pre-paid subscription for a product you already own, you can use the product key to extend the expiration date of your subscription. You can also use a product key to [add more licenses to your subscription](../licenses/buy-licenses.md#add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key).
 
-2. Choose the subscription for which you want to manage recurring billing.
+::: moniker range="o365-worldwide"
 
-3. To turn on **Recurring billing**, switch the toggle to **On**.
-
-    ![Close-up of a Subscription card that has Recurring billing turned on.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
-  
-    You can turn off **Recurring billing** by switching the toggle to **Off**.
-
-    > [!NOTE]
-    > - You can only change the **Recurring billing** setting for active subscriptions. If your subscription has already expired or is disabled, you will need to [reactivate it](reactivate-your-subscription.md) before you can turn **Recurring billing** on or off.
-    > - When **Recurring billing** is turned off, the subscription isn't cancelled right away. It remains active until it expires. You can view the expiration date on the subscription card
-    > - To learn how to cancel the subscription right away, see [Cancel my subscription](cancel-your-subscription.md).
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-  
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
 
-2. Choose the subscription for which you want to manage recurring billing.
-
-3. To turn on **Recurring billing**, switch the toggle to **On**.
-
-    ![Close-up of a Subscription card that has Recurring billing turned on.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
-  
-    You can turn off **Recurring billing** by switching the toggle to **Off**.
-
-    > [!NOTE]
-    > - You can only change the **Recurring billing** setting for active subscriptions. If your subscription has already expired or is disabled, you will need to [reactivate it](reactivate-your-subscription.md) before you can turn **Recurring billing** on or off.
-    > - When **Recurring billing** is turned off, the subscription isn't cancelled right away. It remains active until it expires. You can view the expiration date on the subscription card.
-    > - To learn how to cancel the subscription right away, see [Cancel my subscription](cancel-your-subscription.md).
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
 
 ::: moniker-end
 
-## Related articles
+2. On the **Products** tab, select the subscription that you want to extend.
 
-[Reactivate your subscription](reactivate-your-subscription.md)
-  
-[What happens to my data and access when my subscription ends?](what-if-my-subscription-expires.md)
+3. On the subscription details page, in the **Subscription and payment settings** section, select **Extend end date**.
 
-[Enter your product key](../enter-your-product-key.md)
-  
-[Buy your trial version of Microsoft 365 for business](../buy-a-subscription-from-your-free-trial.md)
+4. On the **renew or add user licenses** page, select **Use a new and unused product key**, then select **Next**.
+
+5. Enter the product key, then select **Next**.
+    > [!NOTE]
+    > If you have more than one product key, you can select **Add another product key** to enter them.
+
+6. Review your order details, then select **Redeem**.
+
+## Related content
+
+[Reactivate your subscription](reactivate-your-subscription.md) (article)\
+[What happens to my data and access when my subscription ends?](what-if-my-subscription-expires.md) (article)\
+[Enter your product key](../enter-your-product-key.md) (article)\
+[Buy your trial version of Microsoft 365 for business](../try-or-buy-microsoft-365.md) (article)

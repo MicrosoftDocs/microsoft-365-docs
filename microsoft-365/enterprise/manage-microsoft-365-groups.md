@@ -1,18 +1,19 @@
 ---
 title: "Manage Microsoft 365 groups"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: Admin
 ms.topic: overview
-ms.prod: office-online-server
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: 
  - Adm_O365
  - seo-marvel-mar2020
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 search.appverid:
@@ -28,7 +29,7 @@ description: "Learn about how to manage Microsoft 365 groups."
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-You can manage Microsoft 365 groups in several different ways, depending on your configuration. You can manage user accounts in the [Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/add-users/), PowerShell, in Active Directory Domain Services (AD DS), or in the [Azure Active Directory (Azure AD) admin center](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
+You can manage Microsoft 365 groups in several different ways, depending on your configuration. You can manage user accounts in the [Microsoft 365 admin center](/admin), PowerShell, in Active Directory Domain Services (AD DS), or in the [Azure Active Directory (Azure AD) admin center](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
 
 ## Plan for where and how you will manage your groups
 
@@ -38,9 +39,9 @@ Where and how you can manage your user accounts depends on the identity model yo
 
 You create and manage groups with:
 
-- [The Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/add-users/)
+- [The Microsoft 365 admin center](/admin)
 - [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
-- [Azure AD admin center](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+- [Azure AD admin center](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
     
 ### Hybrid
 
@@ -48,9 +49,9 @@ AD DS groups are synchronized with Microsoft 365 from AD DS, so you must use on-
 
 You can also create and manage Azure AD groups that are separate from AD DS groups but can contain users and groups from AD DS. In this case, you can use:
 
-- [The Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/add-users/)
+- [The Microsoft 365 admin center](/admin)
 - [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
-- [Azure AD admin center](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+- [Azure AD admin center](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 
 ## Allow users to create and manage their own groups
 
@@ -62,7 +63,7 @@ Users can request membership in a security group and that request goes to the gr
 >Self-service group management is available only for Azure AD security and Microsoft 365 groups. It is not available for mail-enabled groups, distribution lists, or any group that has been synchronized from AD DS.
 >
 
-For more information, see the [instructions to configure an Azure AD group for self-service management](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management).
+For more information, see the [instructions to configure an Azure AD group for self-service management](/azure/active-directory/active-directory-accessmanagement-self-service-group-management).
 
 ## Set up dynamic group membership
 
@@ -77,7 +78,7 @@ Here's how the rules are applied:
 
 To use dynamic membership, you must first determine the sets of groups that have a common set of user account attributes. For example, all members of the Sales department should be in the Sales Azure AD group, based on the user account attribute Department set to "Sales".
 
-See the [instructions to create and configure the rules for a dynamic Azure AD group](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
+See the [instructions to create and configure the rules for a dynamic Azure AD group](/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
 
 ## Set up automatic licensing
 
@@ -91,6 +92,6 @@ Make sure you have enough licenses for all the group members. If you run out of 
 >You should not configure group-based licensing for groups that contain Azure business to business (B2B) accounts.
 >
 
-For more information, see [Group-based licensing basics in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal).
+For more information, see [Group-based licensing basics in Azure AD](/azure/active-directory/active-directory-licensing-whatis-azure-portal).
 
-See the [instructions to configure group-based licensing for an Azure security group](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal).
+See the [instructions to configure group-based licensing for an Azure security group](/azure/active-directory/active-directory-licensing-group-assignment-azure-portal).

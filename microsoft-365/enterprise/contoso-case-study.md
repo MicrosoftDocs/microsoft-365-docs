@@ -1,15 +1,16 @@
 ---
 title: "Microsoft 365 for enterprise for the Contoso Corporation"
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
-manager: laurawi
+ms.author: kvice
+manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: 
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection:
+- scotvorg 
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom:
@@ -19,7 +20,7 @@ description: How a fictional but representative global organization adopted Micr
 
 # Microsoft 365 for enterprise for the Contoso Corporation
 
-Microsoft 365 for enterprise is the Microsoft premier cloud offering that combines local and cloud-based productivity apps and services with Windows 10 Enterprise and advanced security features. It's a complete, intelligent solution that that enables everyone to work together creatively and securely.
+Microsoft 365 for enterprise is the Microsoft premier cloud offering that combines local and cloud-based productivity apps and services with Windows 10 Enterprise and advanced security features. It's a complete, intelligent solution that enables everyone to work together creatively and securely.
 
 Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris. The company deployed Microsoft 365 for enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security.
 
@@ -67,15 +68,19 @@ See these additional IT scenarios and configurations:
 
 - [COVID-19 response and infrastructure for remote and onsite work](../solutions/contoso-remote-onsite-work.md)
 
-  Learn how Contoso updated their remote access infrastructure for the COVID-19 pandemic and their new installs and updates infrastructure for remote and onsite work.
+  Learn how Contoso updated their remote access capability and their new installs and updates infrastructure for remote and onsite workers.
 
 - [Team for a top-secret project](../solutions/contoso-team-for-top-secret-project.md)
 
   To create a secure collaboration environment for a top-secret project, Contoso used a team with security isolation.
 
-- [Teams voice migration overview](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+- [Teams voice migration](/MicrosoftTeams/voice-case-study-overview)
 
   Learn how Contoso migrated their on-premises users to Microsoft Teams for unified communication, collaboration, and voice.
+
+- [Communication compliance offensive language policy](../compliance/communication-compliance-case-study.md)
+
+  Learn how Contoso quickly configured an offensive language policy for Microsoft Teams, Exchange, and Yammer communications.
 
 ## Next step
 

@@ -1,38 +1,51 @@
 ---
 title: Understand your bill or invoice
-f1.keywords:
-- NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - 'MACBillingBillsPaymentsInvoices'
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
-search.appverid:
-- MET150
+- ContentEngagementFY23
+- scotvorg
+- highpri 
+- M365-subscription-management
+- Adm_O365
+ms.custom: 
+- commerce_billing
+- VSBFY23
+- AdminSurgePortfolio
+- AdminTemplateSet
+search.appverid: MET150
 description: "Learn how to read and understand your bill or invoice for Microsoft business products."
-keywords: billing accounts, organization info, invoices
+ms.date: 08/08/2022
 ---
 
 # Understand your bill or invoice
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
-
 The invoice provides a summary of your charges and instructions for payment. You can [view your online invoice](#view-your-online-invoice) in the Microsoft 365 admin center. You can also download it in the Portable Document Format (.pdf) to send via email.
 
+To view and print your invoice:
+
+1. On the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, select an invoice date range.
+2. To print or save a PDF copy of the bill, select **Download invoice PDF**, and then print the PDF.
+
+To learn more, see [View your bill or invoice](view-your-bill-or-invoice.md).
+
 If you only have a Microsoft 365 subscription, see [Understand your bill or invoice for Microsoft 365 for business](understand-your-invoice2.md).
+
+## How often and when am I billed?
+
+Depending on the billing frequency you chose when you bought your subscription, you receive an invoice monthly, every 3 months, every 6 months, or annually. The amount of time since the last invoice date is called the Billing Period and is shown on page one of the invoice, above the Billing Summary section. This time represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
+
+Starting on page two of the invoice, you see the charges grouped by product order. For Azure customers, the charges might be organized by invoice section.
+
+At the end of each billing period, you receive an email that says your new invoice is ready to view or download in the Microsoft 365 admin center. If you have more than one billing profile, you receive an invoice for each billing profile. Learn how to [find and view your bill or invoice](view-your-bill-or-invoice.md).
 
 ## Understand the invoice header
 
@@ -55,14 +68,14 @@ The **Billing Summary** shows the summary of charges since the previous billing 
 | --- | --- |
 | Charges|Total number of products purchased for this billing period, and their related charges and taxes. Purchases are aggregated to provide a concise view of your bill. |
 | Credits |Credits you received from returns |
-| Azure credits applied |Your Azure credits that are automatically applied to Azure charges each billing period. If you don't have any Azure credits, this field is hidden. For more information about Azure credits, see [Track Microsoft Customer Agreement Azure credit balance](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance). |
+| Azure credits applied |Your Azure credits that are automatically applied to Azure charges each billing period. If you don't have any Azure credits, this field is hidden. For more information about Azure credits, see [Track Microsoft Customer Agreement Azure credit balance](/azure/billing/billing-mca-check-azure-credits-balance). |
 | Subtotal |The pre-tax amount due |
 | Tax |The type and amount of tax that you pay, depending on the country of your billing profile. If you don't have to pay tax, no tax is shown on your invoice. |
 
 ### Understand your charges
 
 The charges pages show the cost broken down by product. For Azure customers, the charges might be organized by invoice section. For more information about how invoice sections are used with Azure products, see
-[Invoice sections](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections) in [Get started with your Microsoft Customer Agreement billing account](https://docs.microsoft.com/azure/billing/billing-mca-overview). Within each product order, cost is broken down by service family.
+[Invoice sections](/azure/billing/billing-mca-overview#invoice-sections) in [Get started with your Microsoft Customer Agreement billing account](/azure/billing/billing-mca-overview). Within each product order, cost is broken down by service family.
 
 | Term |Description |
 | --- | --- |
@@ -74,8 +87,7 @@ The charges pages show the cost broken down by product. For Azure customers, the
 | Tax amount | Amount of tax applied to the purchase based on tax rate |
 | Total | The total amount due for the purchase |
 
-Line items details vary depending on the type of product you're charged for. For example, for Azure products, the amount of Azure credits applied is shown. Seat-based products show a unit price and
-quantity. The invoice details show the products purchased, discount or credits that were applied, tax rate and amount, and the line item totals.
+Line items details vary depending on the type of product you're charged for. For example, for Azure products, the amount of Azure credits applied is shown. Seat-based products show a unit price and quantity. The invoice details show the products purchased, discount or credits that were applied, tax rate and amount, and the line item totals.
 
 > Total = Charges - Azure Credit + Tax
 
@@ -83,7 +95,7 @@ The total amount due for each service family is calculated by subtracting Azure 
 
 > Total = Charges/Credits - Azure Credit + Tax
 
-If there are Azure charges on your invoice that you would like more details on, see [Review your Microsoft Customer Agreement invoice](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
+If there are Azure charges on your invoice that you would like more details on, see [Review your Microsoft Customer Agreement invoice](/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
 ## Understand the last invoice page
 
@@ -97,21 +109,16 @@ If you have third-party services in your bill, the name and address of each publ
 
 ## View your online invoice
 
-Invoices are available online. A link to your online invoice is available from your PDF invoice, and from an email notification. The online invoice is expandable so you can view the charges on your invoice and
-see more details for each item. The online invoice includes:
+Invoices are available online. A link to your online invoice is available from your PDF invoice, and from an email notification. The online invoice is expandable so you can view the charges on your invoice and see more details for each item. The online invoice includes:
 
 - **Pricing details**&mdash;Additional information including details about discounts and product pricing.
-
 - **Online payment**&mdash;You can choose to make a payment online from the invoice.
-
 - **Azure cost management**&mdash;For Azure customers, online invoices include a link to Azure cost management.
 
 ### To view your online invoice
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
-
 2. To download the .pdf version of your invoice, choose **Download invoice PDF** in the row for the invoice you want to see.
-
 3. To view your online invoice, choose an invoice from the list. You can also download the .pdf from the invoice details page.
 
 ## Invoice FAQ
@@ -139,19 +146,19 @@ Payment instructions depend on your payment method and are provided at the botto
 - **Service period:** The time period during which you're charged to use the service.
 - **Billing period:** The time period since the last invoice date.
 
-### How do I view and print my bill?
-
-1. On the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, select an invoice date range.
-2. To print or save a PDF copy of the bill, select **Download invoice PDF**, and then print the PDF.
-
-To learn more, see [View your bill or invoice](view-your-bill-or-invoice.md).
-
 ### Why don't I see Azure prepayment as a payment method?
 
-Azure prepayment is available as a payment method only for eligible Azure product and services.
+Azure prepayment is available as a payment method only for eligible Azure product and services
 
-## Need help? Contact support.
+## Need help? Contact support
 
 If you have questions or need help with your Azure credits, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">create a support request with Azure support</a>.
 
-If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](../../admin/contact-support-for-business-products.md).
+If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](../../admin/get-help-support.md).
+
+## Related content
+
+[Understand your bill or invoice for Microsoft 365 for business](understand-your-invoice2.md) (article)\
+[Track Microsoft Customer Agreement Azure credit balance](/azure/billing/billing-mca-check-azure-credits-balance) (article)\
+[Review your Microsoft Customer Agreement invoice](/azure/cost-management-billing/understand/review-customer-agreement-bill) (article)\
+[Get started with your Microsoft Customer Agreement billing account](/azure/billing/billing-mca-overview) (article)

@@ -1,14 +1,16 @@
 ---
 title: "High availability federated authentication Phase 5 Configure federated authentication for Microsoft 365"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
@@ -34,7 +36,7 @@ Get a digital certificate from a public certification authority with the followi
     
 Additionally, your organization computers and devices must trust the public certification authority that is issuing the digital certificate. This trust is established by having a root certificate from the public certification authority installed in the trusted root certification authorities store on your computers and devices. Computers running Microsoft Windows typically have a set of these types of certificates installed from commonly-used certification authorities. If the root certificate from your public certification authority is not already installed, you must deploy this to the computers and devices of your organization.
   
-For more information about certificate requirements for federated authentication, see [Prerequisites for federation installation and configuration](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration).
+For more information about certificate requirements for federated authentication, see [Prerequisites for federation installation and configuration](/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration).
   
 When you receive the certificate, copy it to a folder on the C: drive of the directory synchronization server. For example, name the file SSL.pfx and store it in the C:\\Certs folder on the directory synchronization server.
   
@@ -60,7 +62,7 @@ Here is an example for the Contoso organization:
   
 **An example configuration for a high availability federated authentication infrastructure in Azure**
 
-![An example configuration of the high availability Microsoft 365 federated authentication infrastructure in Azure](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
+![An example configuration of the high availability Microsoft 365 federated authentication infrastructure in Azure.](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
 ## Run Azure AD Connect to configure federated authentication
 
@@ -80,7 +82,7 @@ The Azure AD Connect tool configures the AD FS servers, the web application prox
     
 7. On the **User sign-in** page, click **Federation with AD FS**, and then click **Next**.
     
-8. On the **Connect to Azure AD** page, type the name and password of a global administrator account for your Microsoft 365 subscription, and then click **Next**.
+8. On the **Connect to Azure AD** page, type the name and password of a **Azure AD DC admin**, or **Global admin** account for your Microsoft 365 subscription, and then click **Next**.
     
 9. On the **Connect your directories** page, ensure that your on-premises Active Directory Domain Services (AD DS) forest is selected in **Forest**, type the name and password of a domain administrator account, click **Add Directory**, and then click **Next**.
     
@@ -130,7 +132,7 @@ Here is the final configuration, with placeholder names for the servers.
   
 **Phase 5: The final configuration of a high availability federated authentication infrastructure in Azure**
 
-![The final configuration of the high availability Microsoft 365 federated authentication infrastructure in Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![The final configuration of the high availability Microsoft 365 federated authentication infrastructure in Azure.](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 Your high availability federated authentication infrastructure for Microsoft 365 in Azure is complete.
   
@@ -140,8 +142,6 @@ Your high availability federated authentication infrastructure for Microsoft 365
   
 [Federated identity for your Microsoft 365 dev/test environment](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Microsoft 365 solution and architecture center](../solutions/solution-architecture-center.md)
+[Microsoft 365 solution and architecture center](../solutions/index.yml)
 
 [Federated identity for Microsoft 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
-
-

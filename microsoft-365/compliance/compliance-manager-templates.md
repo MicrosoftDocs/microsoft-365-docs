@@ -1,5 +1,5 @@
 ---
-title: "Working with assessment templates in Microsoft Compliance Manager"
+title: "Learn about assessment templates in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -7,218 +7,132 @@ author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
+ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.localizationpriority: medium
+ms.collection: 
+- purview-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
+- tier1
 search.appverid: 
 - MOE150
 - MET150
-description: "Understand how to use and manage templates for building assessments in Microsoft Compliance Manager. Create and modify templates using a formatted Excel file."
+description: "Understand how to use and manage templates for building assessments in Microsoft Purview Compliance Manager. Create and modify templates using a formatted Excel file."
 ---
 
-# Working with assessment templates in Compliance Manager
+# Learn about assessment templates in Compliance Manager
 
-**In this article:** Understand **how templates work** and **how to manage them** from your assessment templates page. Get instructions for **creating** new templates, **modifying** existing templates, **formatting your template data with Excel**, and exporting template **reports**.
+**In this article:** Understand **how templates work** and **how to manage them** from your assessment templates page. Get instructions for **creating** new templates, **extending** and **modifying** existing templates, **formatting your template data with Excel**, and exporting template **reports**.
 
 > [!IMPORTANT]
-> The assessment templates that are available to your organization depends on your licensing agreement. [Review the details](https://go.microsoft.com/fwlink/?linkid=2132371).
+> The assessment templates that are available to your organization depend on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Templates overview
 
-A template is a framework for creating an assessment in Compliance Manager. They contain the controls for meeting the requirements of a certification using a certain product. Compliance Manager provides a comprehensive set of templates to help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
+A template is a framework of controls for creating an assessment in Compliance Manager. Our comprehensive set of templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. We refer to templates by the same name as their underlying certification or regulation, such as the EU GDPR template and the ISO/IEC 27701:2019 template.
 
-## List of pre-built templates for assessments
+## Template versions: Microsoft and universal
 
-Compliance Manager provides templates for building assessments to help you comply with various regulations and standards. View the [list of templates](compliance-manager-templates-list.md) provided by Compliance Manager. New templates are added regularly, so check the list often.
+Compliance Manger can be used to assess different types of products. All templates, except the [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) default template, come in two versions:
 
-## Viewing and managing templates from the assessment templates page
+1. A version that applies to a pre-defined product, such as Microsoft 365, and
+2. A universal version that can be tailored to suit other products.
 
-The assessment templates page in Compliance Manager displays a list of templates and key details. The list includes templates provided by Compliance Manager as well as any templates your organization has modified or created. You can apply filters to find a template based on certification, product scope, country, industry, who created it, and whether the template is enabled for assessment creation.
+Assessments from universal templates are more generalized but offer expanded versatility, since they can help you easily track your organization's compliance across multiple products.
+
+Note that US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers cannot currently use universal templates.
+
+## Template availability and licensing
+
+There are two categories of templates in Compliance Manager: included and premium.
+
+1. **Included templates** are granted by your Compliance Manager license and cover key regulations and requirements. To learn more about what templates are available under your licensing agreement, see [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
+2. **Premium templates** to cover additional needs and scenarios can be obtained by purchasing template licenses.
+
+When you begin creating assessments, Compliance Manager will track how many templates are active so you can monitor your usage. To learn more, see [Active and inactive templates](compliance-manager-templates.md#active-and-inactive-templates).
+
+View the [full list of templates](compliance-manager-templates-list.md) available in Compliance Manager.
+
+### Purchase premium template licenses
+
+Template licenses can be obtained by one or more of these methods, depending on your Compliance Manager licensing agreement. Once your purchase has been finalized, the templates should become available in your tenant within 48 hours.
+
+**Commercial and GCC Moderate**
+
+Commercial and GCC Moderate accounts can purchase template licenses in the admin center ([learn more about subscriptions, licenses, and billing](/microsoft-365/commerce/)). Select the quantity of licenses you wish to purchase and your payment plan.
+
+Purchase links:
+
+- [Commercial](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)
+- [GCC Moderate](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986d-5f4b-413b-a34b-b706db5a7669)
+
+You may also acquire licenses through your participation in the [Cloud Solution Provider program](https://partner.microsoft.com/membership/cloud-solution-provider) or [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
+
+**GCC High and DOD accounts**
+
+GCC High and DOD accounts must purchase template licenses through [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
+
+### Try out premium templates
+
+To try out premium templates before you make a purchase, you may also acquire trial versions of the licenses. Trial licenses are good for up to 25 templates for 90 days. Once you obtain your trial license, the templates should become available in your tenant within 48 hours.
+
+If your organization has a commercial license for Compliance Manager, you can learn how to start your trial at [About the free trial for Microsoft Purview Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessments.md).
+
+If your organization is under a GCC or DOD license, choose the appropriate trial link for your organization:
+
+- [GCC Moderate](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
+- [GCC High](https://portal.office365.us/SubscriptionDetails?OfferId=e14362d7-2c11-4a43-9c92-59f1b499b96a)
+- [DOD](https://portal.apps.mil/Commerce/Trial.aspx?OfferId=17e28290-7de6-41a9-af30-f6497396ab2e)
+
+#### Active and inactive templates
+
+Templates will display an activation status as either active or inactive:
+
+- A template is considered **active** once you create an assessment from that template.
+- A template is considered **inactive** if your organization isn't using it for an assessment.
+
+If you link any assessments to a purchased premium template, that template will be active for one year. Your purchase will automatically renew unless you cancel.
+
+#### Activated templates counter
+
+Your assessment page and assessment templates page have an **activated templates** counter near the top. The counter displays the number of templates in use out of the number you're eligible to use according to your licensing agreement. Template use is counted at the certification level.
+
+For example, if your counter shows 2/5, this means your organization has activated 2 templates out of the 5 that are available to use.
+
+If your counter shows 5/2, this indicates that your organization exceeds its limits and needs to purchase 3 of the premium templates in use.
+
+Templates for a pre-defined product, such as Microsoft 365, have joint licensing with the universal versions of the same template. This enables you to use the same underlying certification across more than one product. Using either or both versions of the same template will only count as one activated template.
+
+For further details, see [Compliance Manager licensing guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
+
+## View and manage templates
+
+The assessment templates page in Compliance Manager displays a list of templates and key details about them. The list includes templates provided by Compliance Manager as well as any templates your organization has modified or created. You can apply filters to find a template based on certification, product scope, country, industry, who created it, and whether the template is enabled for assessment creation.
 
 Select a template from its row to bring up its details page. This page contains a description of the template and further information about certification, scope, and controls details. From this page you can select the appropriate buttons to create an assessment, export the template data to Excel, or modify the template.
 
-## Creating and modifying templates overview
+## Create an assessment template
 
-To modify an existing template or to create your own new template, you’ll use a specially formatted Excel spreadsheet ([download an example](https://go.microsoft.com/fwlink/?linkid=2124865)) to assemble the necessary control data. After completing the spreadsheet, you import it into Compliance Manager during the process of creating or modifying a template.
+To create your own new template for custom assessments in Compliance Manager, you'll use a specially formatted Excel spreadsheet to assemble the necessary control data. After completing the spreadsheet, you will import it into Compliance Manager. To learn more, see [Create an assessment template](compliance-manager-templates-create.md).
 
-> [!NOTE]
-> The spreadsheet has a specific format and schema that must be used, or it will not import correctly into Compliance Manager. The [formatting instructions](#formatting-your-template-data-with-excel) are below.
+## Modify an assessment template
 
-**Required roles**
+When working with assessments in Compliance Manager, you may want to modify an assessment template that you've created. The process is similar to the template creation process in that you'll upload a formatted Excel file with your template data. To learn more about how to make changes and how to preserve data you still want to maintain, see [Modify an assessment template](compliance-manager-templates-modify.md).
 
-Only users who hold a Global Administrator or  Compliance Manager Administration role can create and modify templates. Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
+## Extend an assessment template
 
-## Create a new template
+Compliance Manager offers the option to add your own controls and improvement actions to an existing template. This process is called extending a template. To extend a template, you will use special instructions for adding to template data, depending on whether you're extending Microsoft assessment templates or universal assessment templates. To learn more, see [Extend an assessment template](compliance-manager-templates-extend.md).
 
-To create your own new template (used for building custom assessments), follow the steps below.
+## Format assessment template data in Excel
 
-1. Go to your **assessment templates** page in Compliance Manager.
-2. Select **Create new template**. A template creation wizard will open.
-3. Choose the type of template you want to create. In this case, select **Create a custom template**, then select **Next**.
-4. At the **Upload file** screen, select **Browse** to find and upload your formatted Excel file containing all the required template data (see [instructions for properly formatting your file](#formatting-your-template-data-with-excel)).
-5. If there are no problems with your file, the name of the file uploaded will be displayed. Select **Next** to continue. (If you need to change the file, select **Upload a different file**).
-    - If there’s an error with your file, an error message at the top explains what’s wrong. You’ll need to fix your file and upload it again. Errors will result if your spreadsheet is formatted improperly, or if there’s invalid information in certain fields (refer again to the [formatting instructions](#formatting-your-template-data-with-excel)).  
-    
-6. The **Review and finish** screen shows the number of improvement actions and controls and the maximum score for the template. When ready to approve, select **Create template.** (If you need to make changes, select **Back**.)
-7. The last screen confirms a new template has been created. Select **Done** to exit the wizard.
-8. You’ll arrive at your new template’s details page, where you can [create your assessment](compliance-manager-assessments.md#create-your-own-custom-assessment).
-
-## Formatting your template data with Excel
-
-The Excel spreadsheet used to create templates contains four tabs, three of which are required:
-
-1. [Template](#template-tab) (required)
-2. [ControlFamily](#controlfamily-tab) (required)
-3. [Actions](#actions-tab) (required)
-4. [Dimensions](#dimensions-tab) (optional)
-
-When filling out your spreadsheet with template data, the spreadsheet  **must include the tabs in the order listed above**, otherwise your data won't successfully import to a template.
-
-##### Template tab
-
-The **Template** tab is required. The information in this tab provides metadata about the template. There are four required columns. The columns must retain the order on the Excel sheet as listed below. You can add your own column **after** the four columns to provide your own dimensions. If you do this, be sure to add them to the **Dimensions** tab using the [instructions below](#dimensions-tab).
-
-- **title**: This is the title for your template, which must be unique. It can't share a name with another template you have in Compliance Manager, including your own templates or a Compliance Manager template.
-
-- **product**: This is a required dimension. List the product associated with the template.
-
-- **certification**: This is the regulation you're using for the template.
-
-- **inScopeServices**: These are the services within the product that this assessment addresses (for example, if you listed Office 365 as the product, Microsoft Teams could be an in-scope service). You can list multiple services separated by two semi-colons.
-
-> [!NOTE]
-> The data you insert in the **product** and **certification** cells can't be edited after you import the spreadsheet to create or customize a template. Also, a group can't contain two assessments that have the same **product/certification** combination. You can have multiple templates with the same product/certification combination.
-
-##### ControlFamily tab
-
-The **ControlFamily** tab is required.  The required columns in this tab, which must follow the order provided in the sample spreadsheet, are:
-
-- **controlName**: This is the control name from the certification, standard, or regulation, which is typically some type of ID. Control names must be unique within a template. You can't have multiple controls with the same name in the spreadsheet.
-
-- **controlFamily**: Provide a word or phrase for the controlFamily, which identifies a broad grouping of controls. A controlFamily doesn't have to be unique; it can be listed more than once in a spreadsheet. The same controlFamily can also be listed in multiple templates, though they have no relation to each other. Every controlFamily must be mapped to at least one control.
-
-- **controlTitle**: Provide a title for the control. Whereas the controlName is a reference code, the title is a rich text format typically seen in the regulations.
-
-- **controlDescription**: Provide a description of the control.
-
-- **controlActionTitle**: This is the title of an action that you want to relate to this control. You can add multiple actions by separating by two semi-colons with no space in between. Every control you list must include at least one action, and the action must exist (which means you can list an action that you list on the **Actions** tab of the same spreadsheet, an action that exists in a different template, or an action created by Microsoft). Different controls can reference the same action.
-
-##### Actions tab
-
-The **Actions** tab is required.  It designates improvement actions managed by your organization and not those of Microsoft, which already exist in Compliance Manager. The required columns for this tab, which must follow the order provided in the sample spreadsheet, are:
-
-- **actionTitle**: This is the title for your action and is a required field. The title you provide must be unique. **Important**: if you reference an action you own that already exists (such as in another template) and you modify any of its elements in the subsequent columns, those changes will propagate to the same action in other templates.
-
-- **implementationType**: In this required field, list one of the three implementation types below:
-    - **Operational** - actions implemented by people and processes to protect the confidentiality, integrity, and availability of organizational systems, assets, data, and personnel (example: security awareness and training)
-    - **Technical** - actions completed through the use of technology and mechanisms contained in the hardware, software, or firmware components of the information system to protect the confidentiality, integrity, and availability of organizational systems and data (example: multi-factor authentication)
-    - **Documentation** - actions implemented through documented policies and procedures establishing and defining the controls required to protect the confidentiality, integrity, and availability of organizational systems, assets, data, and personnel (example: an information security policy)
-
-- **actionScore**: In this required field, provide a numeric score value for your action. It must be a whole number ranging from 1 to 99; it cannot be 0, null, or blank. The higher the number, the greater its value toward improving your compliance posture. The image below demonstrates how Compliance Manager scores controls:
-
-![Compliance Manager controls point values](../media/compliance-score-action-scoring.png "Compliance Manager controls point values")
-
-- **actionDescriptionTitle**: This is the title of the description and is required. This description title allows you to have the same action in multiple templates and surface a different description in each template.  This field helps you clarify what template the description is referencing. In most cases, you can put the name of the template you're creating in this field.
-
-- **actionDescription**: Provide a description of the action. You can apply formatting such as bold text and hyperlinks. This is required field.
-
-- **dimension-Action Purpose**: This is an optional field. If you include it, the header must include the "dimension-" prefix. Any dimensions you include here will be used as filters in Compliance Manager and appear on the improvement actions details page in Compliance Manager.
-
-##### Dimensions tab
-
-The **Dimensions** tab is optional. However, if you reference a dimension elsewhere, you need to specify it here if it does not exist in a template you've already created or in a Microsoft template. The columns for this tab are listed below:
-
-- **dimensionKey**: list as "product", "certifications," "action purpose"
-- **dimensionValue**: examples: Office 365, HIPPA, Preventative, Detective
-
-You can view your existing dimensions by going to **Tenant Management** and selecting the **Dimensions** tab. Also, anytime you export an existing template, the exported spreadsheet will have the **Dimensions** tab, which lists all the dimensions used in the template.
-
-## Modify a template
-
-You may want to modify a template you’ve already created, such as to add controls, or add or remove improvement actions. The process is similar to the template creation process in that you’ll  upload formatted Excel file with your template data.
-
-However, there are particular details to be aware of as you format your file with changes to existing template data. **We recommend you review these instructions carefully to ensure you don’t overwrite any existing data that you want to retain.**
-
-### Template modification process steps
-
-To modify a template, follow the steps below:
-
-1. From your **assessment templates** page, select the template you want to modify, which will bring up its details page.
-2. Select **Export to Excel**. An Excel file with all your template data will download. Save the file to your local machine.
-3. Make your template changes by [modifying the Excel file using the instructions below](#formatting-your-excel-file-to-modify-a-template).
-4. When you're done making changes to your Excel file, save the file.
-5. At your template’s details page, select **Modify template** to initiate the modification wizard. 
-6. At the **Upload file** screen, select **Browse** to find and upload your Excel file.
-7. If there are no problems with your file, the next screen shows the name of the file uploaded. Select **Next** to continue (if you need to change the file, select **Upload a different file**).
-    - If there’s a problem with your file, an error message at the top explains what’s wrong. You’ll need to fix your file and upload it again. Errors will result if your spreadsheet is formatted improperly, or if there’s invalid information in certain fields.
-
-8. The **Review and finish** screen shows the number of improvement actions and controls and the maximum score for the template. When ready to approve, select **Next**.
-9. The last screen confirms that the template has been modified. Select **Done** to exit the wizard.
-
-Your template will now include the changes you made. Any assessments that use this modified template will now show pending updates, and you’ll need to accept the updates to the assessments to reflect the changes made in the template. Learn more about [updates to assessments](compliance-manager-assessments.md#accepting-updates-to-assessments).
-
-> [!NOTE]
-> If you use Compliance Manager in a language other than English, you’ll notice that some text appears in English when you export a template to Excel. The titles of actions (both your improvement actions and Microsoft actions) must be in English to be recognized by controls. If you make changes to an action title, be sure to write it in English so that the file imports correctly.
-
-### Formatting your Excel file to modify a template
-
-Jump to a section below to quickly find the instructions you need:
-
-- [Edit the main template attributes](#edit-the-main-template-attributes)
-- [Add an improvement action](#add-an-improvement-action)
-- [Edit an improvement action’s information](#edit-an-improvement-actions-information)
-- [Change an improvement action’s name](#change-an-improvement-actions-name)
-- [Remove an improvement action](#remove-an-improvement-action)
-- [Remove a control](#remove-a-control)
-
-#### Edit the main template attributes
-
-On the **Templates** tab, you can edit anything in the **title** column, the **inScopeServices** column, and in any other column you may have added. However, you can't edit anything in the **product** or **certification** columns.
-
-#### Add an improvement action
-
-1. Go to the **Actions** tab. Add your information in the required fields in the first empty row underneath your existing actions.
-2. Go to your **ControlFamily** tab. Find the row containing the control your improvement action maps to. Add your new action to the **controlActionTitle** column in that row (remember to separate multiple actions in this field with two semi-colons, no space in between).
-3. Save your spreadsheet.
-
-#### Edit an improvement action's information
-
-You can change any improvement action's information *except for its title*. You can edit any cell from columns B onward, and when you import the file back into the template, the improvement actions in that template will now contain the updated data.
-
-You cannot edit the **actionTitle** (column A) because if you do, Compliance Manager considers this to be a new improvement action. If you want to change an improvement action's name, see the instructions immediately below.
-
-#### Change an improvement action’s name
-
-If you want to change the name of an improvement action, you have to explicitly designate in the spreadsheet that you are replacing an existing name with a new name. Follow these steps:
-
-1. In the **Actions** tab of your spreadsheet, add a new column to the spreadsheet after column A.
-2. In this new column, which is now column B, put as its header in row 1: **oldActionTitle**.
-3. Copy the contents of column A and paste them into column B. This puts your existing improvement action titles, which are what you want to change, into column B.
-4. In column A, **actionTitle**, delete the old name and replace it with the new name for your improvement action.
-
-Note that action titles, both for your improvement actions and for Microsoft actions, must be written in English in order to be recognized when referenced in controls.
-
-#### Remove an improvement action
-
-Deleting an improvement action from a row in a spreadsheet **does not** remove the action from the template you're editing. Instead, follow the process below:
-
-1. On the **Actions** tab, insert a new column as column A and put **Operation** in the header row, which is row number one.
-2. On the row for the improvement action you want to remove, put **Delete** in column A for that row.
-3. Ensure that this improvement action is no longer referenced by a control. Go to the **ControlFamily** tab and look for your improvement action's title in column F, which is **controlActionTitle**.
-4. When you find your improvement action listed in the **controlActionTitle** column, delete it.
-5. Save your spreadsheet.
-
-When you import your spreadsheet back into the template, your action will be removed from the template. Removing an action from a template does not completely remove the action. That action can still be referenced by another template.
-
-If you're removing the last improvement action that a control references, then you need to remove the control.
-
-#### Remove a control
-
-To remove a control, follow the same process for removing an improvement action as outlined above. In the **ControlFamily** tab, add an **Operation** column and put **Delete** next to the control you want to remove.
+When creating, modifying, or extending assessment templates in Compliance Manager, you will work with Excel spreadsheets that use a specific format and schema. These specifications must be followed for the files to import correctly. To learn more, see [Format assessment template data in Excel](compliance-manager-templates-format-excel.md).
 
 ## Export a template
 
-You can export an Excel file that contains all of a template’s data. You’ll need to export a template in order to modify the template, as this will be the Excel file you edit and upload in the [modification process](#modify-a-template).
+You can export an Excel file that contains all of a template's data. You'll need to export a template in order to modify it, since this will be the Excel file you edit and upload in the [modification process](compliance-manager-templates-modify.md). You can also export a template for reference if you want to use data from it while constructing a new custom template.
 
 To export your template, go to your template details page and select the **Export to Excel** button.
 

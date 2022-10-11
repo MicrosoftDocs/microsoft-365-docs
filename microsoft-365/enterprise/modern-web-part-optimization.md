@@ -2,13 +2,14 @@
 title: "Optimize web part performance in SharePoint Online modern site pages"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: 
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection:
+- scotvorg 
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content
@@ -27,15 +28,15 @@ description: Learn how to use Page Diagnostics to optimize the performance of we
 
 SharePoint Online modern site pages contain web parts that can contribute to overall page load times. This article will help you understand how to determine how web parts in your pages affect user perceived latency, and how to remediate common issues.
 
->[!NOTE]
->For more information about performance in SharePoint Online modern portals, see [Performance in the modern SharePoint experience](https://docs.microsoft.com/sharepoint/modern-experience-performance).
+> [!NOTE]
+> For more information about performance in SharePoint Online modern portals, see [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance).
 
 ## Use the Page Diagnostics for SharePoint tool to analyze web parts
 
 The Page Diagnostics for SharePoint tool is a browser extension for the new Microsoft Edge (https://www.microsoft.com/edge) and Chrome browsers that analyzes both SharePoint Online modern portal and classic publishing site pages. The tool provides a report for each analyzed page showing how the page performs against a defined set of performance criteria. To install and learn about the Page Diagnostics for SharePoint tool, visit [Use the Page Diagnostics tool for SharePoint Online](page-diagnostics-for-spo.md).
 
->[!NOTE]
->The Page Diagnostics tool only works for SharePoint Online, and cannot be used on a SharePoint system page.
+> [!NOTE]
+> The Page Diagnostics tool only works for SharePoint Online, and cannot be used on a SharePoint system page.
 
 When you analyze a SharePoint site page with the Page Diagnostics for SharePoint tool, you can see information about web parts that exceed the baseline metric in the **Web parts are impacting page load time** result in the _Diagnostic tests_ pane.
 
@@ -47,17 +48,23 @@ Possible results include:
 
 If the **Web parts are impacting page load time** result appears in either the **Attention required** or **Improvement opportunities** section of the results, click the result to see details about which web parts are loading slowly. Future updates to the Page Diagnostics for SharePoint tool may include updates to analysis rules, so please ensure you always have the latest version of the tool.
 
-![Page Diagnostics tool results](../media/modern-portal-optimization/pagediag-web-part.png)
+![Page Diagnostics tool results.](../media/modern-portal-optimization/pagediag-web-part.png)
 
 Information available in the results includes:
 
-- **Made by** shows whether the web part is custom or Microsoft OOTB
-- **Name and ID** shows identifying information that can help you find the web part on the page
-- **Total** shows the total time for the web part to load
-- **Module Load** shows the time taken to fetch and load the web part components
-- **Lazy Load** shows the time for deferred loading of web parts not seen in the main section of the page
-- **Init** shows the time taken for web part initialization
-- **Render** shows the time taken for the web part to fetch and render results
+- **Made by** shows whether the web part is custom or Microsoft OOTB.
+- **Name and ID** shows identifying information that can help you find the web part on the page.
+- **Total** shows the total time for the web part to module load, initialize and render. It is the total relative time taken by the web part to render on the page, from beginning to the end.
+- **Module Load** shows the time taken to download, evaluate and load the extensions JavaScript and CSS files. It will then start the Init process.
+- **Lazy Load** shows the time for deferred loading of web parts not seen in the main section of the page. There are certain conditions where there are too many web parts to render, and they are queued to render to minimize the page load time.
+- **Init** shows the time taken for the web part to initialize the data.
+
+  It is an asynchronous call and init time is the calculation of time for the onInit function when the returned promise is resolved.
+
+- **Render** shows the time taken to render the UI (user interface) once the module load and Init are complete.
+
+  It is the JavaScript execution time to mount the DOM in the document (page).
+  Rendering of asynchronous resources, for example, images, might take additional time to complete.
 
 This information is provided to help designers and developers troubleshoot issues. This information should be provided to your design and development team.
 
@@ -72,7 +79,7 @@ There are three categories of possible causes for poor web part performance. Use
   - Move the less frequent scenarios and edit mode code (like the property pane) to separate chunks using the _import()_ statement.
   - Review dependencies of the _package.json_ file to remove any dead code completely. Move any test/build only dependencies to devDependencies.
   - Use of the Office 365 CDN is required for optimal static resource download. Public CDN origins are preferable for _js/css_ files. For more information about using the Office 365 CDN, see [Use the Office 365 Content Delivery Network (CDN) with SharePoint Online](use-microsoft-365-cdn-with-spo.md).
-  - Reuse frameworks like _React_ and _Fabric imports_ that come as part of the SharePoint Framework (SPFx). For more information, see [Overview of the SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
+  - Reuse frameworks like _React_ and _Fabric imports_ that come as part of the SharePoint Framework (SPFx). For more information, see [Overview of the SharePoint Framework](/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Ensure that you are using the latest version of the SharePoint Framework, and upgrade to new versions as they become available.
 - Data fetching/caching
   - If the web part relies on extra server calls to fetch data for display, ensure those server APIs are fast and/or implement client side caching (such as using _localStorage_ or _IndexedDB_ for larger sets).
@@ -89,7 +96,7 @@ dispose resources such as event handlers to avoid memory leaks.
 
 Before you make page revisions to remediate performance issues, make a note of the page load time in the analysis results. Run the tool again after your revision to see if the new result is within the baseline standard, and check the new page load time to see if there was an improvement.
 
-![Page load time results](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Page load time results.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >Page load time can vary based on a variety of factors such as network load, time of day, and other transient conditions. You should test page load time a few times before and after making changes to help you average the results.
@@ -100,7 +107,7 @@ Before you make page revisions to remediate performance issues, make a note of t
 
 [Tune Office 365 performance](tune-microsoft-365-performance.md)
 
-[Performance in the modern SharePoint experience](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance)
 
 [Content delivery networks](content-delivery-networks.md)
 

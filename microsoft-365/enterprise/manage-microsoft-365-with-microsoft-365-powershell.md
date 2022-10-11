@@ -1,15 +1,17 @@
 ---
 title: "Manage Microsoft 365 with PowerShell"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: Admin
-ms.topic: hub-page
-ms.service: o365-administration
-localization_priority: Normal
+ms.topic: landing-page
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: 
@@ -41,7 +43,7 @@ Select from the following topics to learn how to use PowerShell to manage Micros
 
     Start here if you want to use automation commands to manage SharePoint.
 
-- [**Exchange Online**](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
+- [**Exchange Online**](/powershell/exchange/exchange-online-powershell)
 
     Start here if you want to manage Exchange Online.
 
@@ -49,7 +51,7 @@ Select from the following topics to learn how to use PowerShell to manage Micros
 
     Start here if you want to migrate your email from pre-existing systems.
 
-- [**Security & Compliance Center**](https://docs.microsoft.com/powershell/exchange/scc-powershell)
+- [**Security & Compliance Center**](/powershell/exchange/scc-powershell)
 
     Start here if you want to manage Security & Compliance Center features.
 

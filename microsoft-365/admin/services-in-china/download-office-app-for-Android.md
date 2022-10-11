@@ -7,9 +7,10 @@ author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: 
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
+ms.collection:
+- scotvorg 
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
@@ -42,7 +43,6 @@ A few Office app for Android features aren't available for Office 365 operated b
 Download the Office app for Android phones from any of these China stores:
 - [Baidu](https://shouji.baidu.com/software/26842919.html)
 - [Xiaomi](http://app.mi.com/details?id=com.microsoft.office.officehub&ref=search)
-- [Huawei](https://appstore.huawei.com/app/C10888510)
 - [Lenovo](https://www.lenovomm.com/appdetail/com.microsoft.office.officehub/43003745)
 - [360](http://zhushou.360.cn/detail/index/soft_id/708682?recrefer=SE_D_office%20mobile)
 - [tencent](https://sj.qq.com/myapp/detail.htm?apkName=com.microsoft.office.officehub)

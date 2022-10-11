@@ -1,23 +1,27 @@
 ---
-title: "Configure a team with security isolation"
+title: "Configure a team with security isolation by using a unique sensitivity label"
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
-ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.service: o365-solutions
+ms.localizationpriority: high
 ms.collection: 
+- highpri
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-3tiersprotection
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
+recommendations: false
 description: "Learn how to create a team with a unique sensitivity label for security."
 ---
 
-# Configure a team with security isolation
+# Configure a team with security isolation by using a unique sensitivity label
 
 This article provides you with recommendations and steps to configure a private team in Microsoft Teams and use a unique sensitivity label to encrypt files so that only team members can decrypt them.
 
@@ -35,18 +39,23 @@ The elements of configuration for a team with security isolation are:
     - Encrypts documents to which the label is applied
 
 > [!IMPORTANT]
-> Be sure you have enabled [sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) before you proceed with the steps in this article.
+> Be sure you have enabled [sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md) before you proceed with the steps in this article.
 
 Watch this video for an overview of the deployment process.
+<br>
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
 <a name="poster"></a>
-For a 2-page summary of this scenario, see the [Microsoft Teams with security isolation poster](../downloads/team-security-isolation-poster.pdf).
+For a 1-page summary of this scenario, see the [Microsoft Teams with security isolation poster](../downloads/team-security-isolation-poster.pdf).
 
-[![Microsoft Teams with security isolation poster](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
+[![Microsoft Teams with security isolation poster.](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
 You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) or [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) formats and print it on letter, legal, or tabloid (11 x 17) size paper.
+
+Try this configuration in your own test lab environment with [these instructions](team-security-isolation-dev-test.md).
+
+See how the Contoso Corporation used an isolated team for a top-secret project in [this case study](contoso-team-for-top-secret-project.md).
 
 ## Initial protections
 
@@ -61,8 +70,8 @@ Depending on the nature of your business, you may or may not want to enable gues
 
 For details about sharing with guests securely, see the following resources:
 
-- [Limit accidental exposure to files when sharing with people outside your organization](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
-- [Create a secure guest sharing environment](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
+- [Limit accidental exposure to files when sharing with people outside your organization](./share-limit-accidental-exposure.md)
+- [Create a secure guest sharing environment](./create-secure-guest-sharing-environment.md)
 
 To allow or block guest sharing, we use a combination of a sensitivity label for the team and site-level sharing controls for the associated SharePoint site, both discussed later.
 
@@ -89,7 +98,7 @@ To restrict private channel creation
 2. On the **Settings** tab, expand **Member permissions**.
 3. Clear the **Allow members to create private channels** check box.
 
-You can also use [teams policies](https://docs.microsoft.com/MicrosoftTeams/teams-policies) to control who can create private channels.
+You can also use [teams policies](/MicrosoftTeams/teams-policies) to control who can create private channels.
 
 ## Create a sensitivity label
 
@@ -98,37 +107,40 @@ To configure a team for security isolation, we'll be using a sensitivity label c
 If you have an internal partner or stakeholder group who should be able to view encrypted documents but not edit them, you can add them to the label with view-only permissions. You can then add these people to the team's SharePoint site with Reader permissions, and they will have read-only access to the site where the documents are kept, but not the team itself.
 
 To create a sensitivity label
-1. Open the [Microsoft 365 compliance center](https://compliance.microsoft.com).
-2. Under **Solutions**, click **Information protection**.
-3. Click **Create a label**.
-4. Type a name for the label that is similar to your team name. For example, **Highly sensitive - Project Saturn**.
-5. Add a tool tip, and then click **Next**.
-6. On the **Encryption** page, in the **Encryption** dropdown, choose **Apply**.
-7. To add the team permissions:<br>
-  a. Click **Assign permissions**.<br>
-  b. Click **Add users or groups**, select the team that you created, and then click **Add**<br>
-  c. Click **Choose permissions**.<br>
-  d. Choose **Co-Author** from the dropdown list, and then click **Save**.<br>
-8. If you want to include users or groups with read-only access to files with the label:<br>
-  a. Click **Assign permissions**.<br>
-  b. Click **Add users or groups**, select the users or groups that you want to add, and then click **Add**.<br>
-  c. Click **Choose permissions**.<br>
-  d. Choose **Viewer** from the dropdown list, and then click **Save**.<br>
-  e. Click **Save**.
-9. Click **Next**.
-10. On the **Content marking** page, turn on content marking if you want to automatically add a header, footer, or watermark to files that are classified with this label.
-11. On the **Site and group settings** page, set **Site and group settings** to **On**.
-12. In the **Privacy of Office 365 group-connected team sites** dropdown, choose **Private - only members can access the site**.
-13. If you want to allow guest access, select the **Let Office 365 group owners add people outside the organization to the group** check box. 
-14. Under **Unmanaged devices**, choose **Block access**.
-15. Click **Next**.
-16. On the **Auto-labeling for Office apps** page, click **Next**.
-17. Click **Submit**, and then click **Done**.
+
+1. Open the Microsoft Purview compliance portal, and under **Solutions**, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection**</a>.
+1. Click **Create a label**.
+1. Give the label a name. We suggest naming it after the team that you'll be using it with.
+1. Add a display name and description, and then click **Next**.
+1. On the **Define the scope for this label page**, select **Files & emails** and **Groups & sites** and click **Next**.
+1. On the **Choose protection settings for files and emails** page, select **Encrypt files and emails**, and then click **Next**.
+1. On the **Encryption** page, choose **Configure encryption settings**.
+1. Click **Add users or groups**, select the team that you created, and then click **Add**
+1. Click **Choose permissions**.
+1. Choose **Co-Author** from the dropdown list, and then click **Save**.
+1. If you want to include users or groups with read-only access to files with the label:
+    1. Click **Assign permissions**.
+    1. Click **Add users or groups**, select the users or groups that you want to add, and then click **Add**.
+    1. Click **Choose permissions**.
+    1. Choose **Viewer** from the dropdown list, and then click **Save**.
+13.  Click **Save**, and then click **Next**.
+14. On the *Auto-labeling for files and emails** page, click **Next**.
+15. On the **Define protection settings for groups and sites** page, select **Privacy and external user access settings** and **Device access and external sharing settings** and click **Next**.
+16. On the **Define privacy and external user access settings** page, under **Privacy**, select the **Private** option.
+17. If you want to allow guest access, under **External user access**, select **Let Microsoft 365 Group owners add people outside your organization to the group as guests**.
+18. Click **Next**.
+19. On the **Define external sharing and device access settings** page, select **Control external sharing from labeled SharePoint sites**.
+20. Under **Content can be shared with**, choose **New and existing guests** if you're allowing guest access or **Only people in your organization** if not.
+21. Under **Access from unmanaged devices**, choose **Block access**.
+22. Click **Next**.
+23. On the **Auto-labeling for database columns** page, click **Next**.
+24. Click **Create label**, and then click **Done**.
 
 Once you've created the label, you need to publish it to the users who will use it. In this case, we'll make the label available only to people in the team.
 
-To publish a sensitivity label
-1. In the Microsoft 365 compliance center, on the **Information protection** page, choose the **Label policies** tab.
+To publish a sensitivity label:
+
+1. In the Microsoft Purview compliance portal, on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection** page</a>, choose the **Label policies** tab.
 2. Click **Publish labels**.
 3. On the **Choose sensitivity labels to publish** page, click **Choose sensitivity labels to publish**.
 4. Select the label that you created, and then click **Add**.
@@ -146,11 +158,11 @@ To publish a sensitivity label
 Once the label has been published, you must apply it to the team in order for the guest sharing and managed devices settings to take effect. This is done in the SharePoint admin center. Note, it may take some time for the label to become available after it's been published.
 
 To apply the sensitivity label
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. Under **Sites**, click **Active sites**.
-3. Click the site that is associated with team.
-4. On the **Policies** tab, under **Sensitivity**, click **Edit**.
-5. Select the label that you created, and then click **Save**.
+
+1. Open the SharePoint admin center, and under **Sites**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
+1. Select the site that is associated with team.
+1. On the **Policies** tab, under **Sensitivity**, select **Edit**.
+1. Select the label that you created, and then select **Save**.
 
 ## SharePoint settings
 
@@ -172,17 +184,17 @@ The guest sharing setting that you chose when you created the label (which only 
 We'll also update the default sharing link type to reduce the risk of accidentally sharing files and folders to a wider audience than intended.
 
 To update site settings
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. Under **Sites**, click **Active sites**.
-3. Click the site that is associated with team.
-4. On the **Policies** tab, under **External sharing**, click **Edit**.
-5. If you allowed guest sharing when you created the sensitive label, ensure that **New and existing guests** is selected. If you didn't allow sharing when you created the label, choose **Only people in your organization**.
-6. Under Default sharing link type, clear the **Same as organization-level setting** check box, and select **People with existing access**.
-7. Click **Save**.
+
+1. Open the SharePoint admin center, and under **Sites**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>
+1. Select the site that is associated with team.
+1. On the **Policies** tab, under **External sharing**, select **Edit**.
+1. If you allowed guest sharing when you created the sensitive label, ensure that **New and existing guests** is selected. If you didn't allow sharing when you created the label, choose **Only people in your organization**.
+1. Under Default sharing link type, clear the **Same as organization-level setting** check box, and select **People with existing access**.
+1. Select **Save**.
 
 #### Private channels
 
-If you add private channels to the team, each private channel creates a new SharePoint site with the default sharing settings. These sites are not visible in the SharePoint admin center, so you must use the [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) PowerShell cmdlet with the following parameters to update the guest sharing settings:
+If you add private channels to the team, each private channel creates a new SharePoint site with the default sharing settings. These sites are not visible in the SharePoint admin center, so you must use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) PowerShell cmdlet with the following parameters to update the guest sharing settings:
 
 - `-SharingCapability Disabled` to turn off guest sharing (it's on by default)
 - `-DefaultSharingLinkType Internal` to change the default sharing link to *Specific people*
@@ -217,10 +229,10 @@ To add users to the site
 
 Microsoft 365 offers additional methods for securing your content. Consider if the following options would help improve security for your organization.
 
-- Have your guests agree to a [terms of use](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
-- Configure a [session timeout policy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) for guests.
-- Create [sensitive information types](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) and use [data loss protection](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) to set policies around accessing sensitive information.
-- Use [Azure Active Directory access](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) reviews to periodically review team access and membership.
+- Have your guests agree to a [terms of use](/azure/active-directory/conditional-access/terms-of-use).
+- Configure a [session timeout policy](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) for guests.
+- Create [sensitive information types](../compliance/sensitive-information-type-learn-about.md) and use [data loss protection](../compliance/dlp-learn-about-dlp.md) to set policies around accessing sensitive information.
+- Use [Azure Active Directory access](/azure/active-directory/governance/access-reviews-overview) reviews to periodically review team access and membership.
 
 ## Drive user adoption for team members
 
@@ -246,7 +258,7 @@ This training should include hands-on exercises so that your team members can ex
 
 In the weeks after training:
 
-- Quickly address team member feedback and fine tune polices and configurations.
+- Quickly address team member feedback and fine tune policies and configurations.
 - Analyze usage for the team and compare it with usage expectations.
 - Verify that highly regulated files have been properly labeled with the sensitivity label. (You can see which files have a label assigned by viewing a folder in SharePoint and adding the **Sensitivity** column through the **Show/hide columns** option of **Add column**.
 
@@ -254,4 +266,4 @@ Retrain your users as needed.
 
 ## See also
 
-[Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)
+[Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure)

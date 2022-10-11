@@ -1,35 +1,38 @@
 ---
-title: "Create, report on, and delete multiple Content Searches"
+title: "Create, report on, and delete Content Searches"
+description: "Learn how to automate Content Search tasks like creating searches and running reports using Security & Compliance PowerShell."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
-- SPO_Content
-localization_priority: Normal
+- tier1
+- purview-compliance
+- ediscovery
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
 - MET150
-ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: "Learn how to automate Content Search tasks like creating searches and running reports via PowerShell scripts in the Security & Compliance Center in Office 365."
 ms.custom: seo-marvel-apr2020
 ---
 
 # Create, report on, and delete multiple Content Searches
 
- Quickly creating and reporting discovery searches is often an important step in eDiscovery and investigations when you're trying to learn about the underlying data, and the richness and quality of your searches. To help you do this, the Security & Compliance Center PowerShell offers a set of cmdlets to automate time-consuming Content Search tasks. These scripts provide a quick and easy way to create a number of searches, and then run reports of the estimated search results that can help you determine the quantity of data in question. You can also use the scripts to create different versions of searches to compare the results each one produces. These scripts can help you to quickly and efficiently identify and cull your data.
+ Quickly creating and reporting discovery searches is often an important step in eDiscovery and investigations when you're trying to learn about the underlying data, and the richness and quality of your searches. To help you do this, Security & Compliance PowerShell offers a set of cmdlets to automate time-consuming Content Search tasks. These scripts provide a quick and easy way to create a number of searches, and then run reports of the estimated search results that can help you determine the quantity of data in question. You can also use the scripts to create different versions of searches to compare the results each one produces. These scripts can help you to quickly and efficiently identify and cull your data.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you create a Content Search
 
-- You have to be a member of the eDiscovery Manager role group in the Security & Compliance Center to run the scripts that are described in this topic.
+- You have to be a member of the eDiscovery Manager role group in the Microsoft Purview compliance portal to run the scripts that are described in this topic.
 
-- To collect a list of the URLs for the OneDrive for Business sites in your organization that you can add to the CSV file in Step 1, see [Create a list of all OneDrive locations in your organization](https://docs.microsoft.com/onedrive/list-onedrive-urls).
+- To collect a list of the URLs for the OneDrive for Business sites in your organization that you can add to the CSV file in Step 1, see [Create a list of all OneDrive locations in your organization](/onedrive/list-onedrive-urls).
 
 - Be sure to save all the files that you create in this topic to the same folder. That will make it easier to run the scripts.
 
@@ -70,9 +73,9 @@ The comma separated value (CSV) file that you create in this step contains a row
 
 3. Save the Excel file as a CSV file to a folder on your local computer. The script that you create in Step 3 will use the information in this CSV file to create the searches.
 
-## Step 2: Connect to Security & Compliance Center PowerShell
+## Step 2: Connect to Security & Compliance PowerShell
 
-The next step is to connect to Security & Compliance Center PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+The next step is to connect to Security & Compliance PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## Step 3: Run the script to create and start the searches
 
@@ -96,24 +99,24 @@ To run the script:
    import-csv $csvFile |
      ForEach-Object{
 
-  	 $searchName = $searchGroup +'_' + $searchCounter
-  	 $search = Get-ComplianceSearch $searchName -EA SilentlyContinue
-  	 if ($search)
-  	 {
-  	    Write-Error "The Search Group ID conflicts with existing searches.  Please choose a search group name and restart the script."
-  	    return
-  	 }
-  	 $searchCounter++
+    $searchName = $searchGroup +'_' + $searchCounter
+    $search = Get-ComplianceSearch $searchName -EA SilentlyContinue
+    if ($search)
+    {
+       Write-Error "The Search Group ID conflicts with existing searches.  Please choose a search group name and restart the script."
+       return
+    }
+    $searchCounter++
    }
 
    $searchCounter = 1
    import-csv $csvFile |
      ForEach-Object{
 
-  	 # Create the query
-  	 $query = $_.ContentMatchQuery
-  	 if(($_.StartDate -or $_.EndDate))
-  	 {
+    # Create the query
+    $query = $_.ContentMatchQuery
+    if(($_.StartDate -or $_.EndDate))
+    {
           # Add the appropriate date restrictions.  NOTE: Using the Date condition property here because it works across Exchange, SharePoint, and OneDrive for Business.
           # For Exchange, the Date condition property maps to the Sent and Received dates; for SharePoint and OneDrive for Business, it maps to Created and Modified dates.
           if($query)
@@ -134,7 +137,7 @@ To run the script:
               $query += "Date <= " + $_.EndDate
           }
           $query += ")"
-  	 }
+    }
 
      # -ExchangeLocation can't be set to an empty string, set to null if there's no location.
      $exchangeLocation = $null
@@ -143,21 +146,21 @@ To run the script:
            $exchangeLocation = $_.ExchangeLocation
      }
 
-  	 # Create and run the search
-  	 $searchName = $searchGroup +'_' + $searchCounter
-  	 Write-Host "Creating and running search: " $searchName -NoNewline
-  	 $search = New-ComplianceSearch -Name $searchName -ExchangeLocation $exchangeLocation -SharePointLocation $_.SharePointLocation -ContentMatchQuery $query
+    # Create and run the search
+    $searchName = $searchGroup +'_' + $searchCounter
+    Write-Host "Creating and running search: " $searchName -NoNewline
+    $search = New-ComplianceSearch -Name $searchName -ExchangeLocation $exchangeLocation -SharePointLocation $_.SharePointLocation -ContentMatchQuery $query
 
-  	 # Start and wait for each search to complete
-  	 Start-ComplianceSearch $search.Name
-  	 while ((Get-ComplianceSearch $search.Name).Status -ne "Completed")
-  	 {
-  	    Write-Host " ." -NoNewline
-  	    Start-Sleep -s 3
-  	 }
-  	 Write-Host ""
+    # Start and wait for each search to complete
+    Start-ComplianceSearch $search.Name
+    while ((Get-ComplianceSearch $search.Name).Status -ne "Completed")
+    {
+       Write-Host " ." -NoNewline
+       Start-Sleep -s 3
+    }
+    Write-Host ""
 
-  	 $searchCounter++
+    $searchCounter++
    }
    ```
 
@@ -175,7 +178,7 @@ To run the script:
 
    The script displays the progress of creating and running the searches. When the script is complete, it returns to the prompt.
 
-   ![Sample output from running the script to create multiple compliance searches](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
+   ![Sample output from running the script to create multiple compliance searches.](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
 
 ## Step 4: Run the script to report the search estimates
 
@@ -250,7 +253,7 @@ After you create the searches, the next step is to run a script that displays a 
 
    The script displays the progress of creating and running the searches. When the script is complete, the report is displayed.
 
-   ![Run the search report to display the estimates for the search group](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
+   ![Run the search report to display the estimates for the search group.](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
 
 > [!NOTE]
 > If the same mailbox or site is specified as a content location in more than one search in a search group, the total results estimate in the report (for both the number of items and the total size) might include results for the same items. That's because the same email message or document will be counted more than once if it matches the query for different searches in the search group.
@@ -285,4 +288,4 @@ Because you might be creating a lot of searches, this last script just makes it 
 
    The script displays the name of each search that's deleted.
 
-   ![Run the script to delete the searches in the search group](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)
+   ![Run the script to delete the searches in the search group.](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)

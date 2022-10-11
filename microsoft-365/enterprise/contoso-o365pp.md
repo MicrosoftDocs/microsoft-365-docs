@@ -1,15 +1,16 @@
 ---
 title: "Microsoft 365 Apps for enterprise deployment for Contoso"
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
-manager: laurawi
+ms.author: kvice
+manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom:
@@ -35,7 +36,7 @@ Based on their requirements, Contoso chose to deploy Windows 10 Enterprise and M
 - Intelligent language pack deployment, including automatically deploying the same language as the operating system.
 - A fully supported and easy-to-use method of removing existing versions of Office from a client during deployment.
 
-In addition to Configuration Manager, Contoso used the [Readiness Toolkit for Office add-ins and VBA](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), a free tool from Microsoft, to assess compatibility issues with their Office macros and add-ins.
+In addition to Configuration Manager, Contoso used the [Readiness Toolkit for Office Add-ins and VBA](/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), a free tool from Microsoft, to assess compatibility issues with their Office macros and add-ins.
 
 ## Managing deployment and updates
 
@@ -46,7 +47,7 @@ Microsoft 365 Apps for enterprise has a new release model: Office as a service. 
 
 Instead of managing updates to Office by using Configuration Manager, Contoso enabled automatic updates from the cloud. Cloud-based updates reduce administrative overhead while ensuring that devices stay up to date.
 
-Contoso followed the same two-stage approach for feature updates as they used for deploying Office: Devices in the pilot group received feature updates four months earlier than devices in the rest of the organization (the broad group). To enable this for Office, Contoso used two recommended [update channels](https://docs.microsoft.com/DeployOffice/overview-update-channels):
+Contoso followed the same two-stage approach for feature updates as they used for deploying Office: Devices in the pilot group received feature updates four months earlier than devices in the rest of the organization (the broad group). To enable this for Office, Contoso used two recommended [update channels](/DeployOffice/overview-update-channels):
 
 - Semi-Annual Enterprise Channel (Preview) for updates to the pilot group
 - Semi-Annual Enterprise Channel for updates to the broad group
@@ -57,7 +58,7 @@ Because the Semi-Annual Enterprise Channel (Preview) releases a version of Micro
 
 To complete the deployment of Office, Contoso implemented the following process, which includes best practice recommendations from Microsoft:
 
-1. Before deployment, Contoso used the Readiness Toolkit for Office add-in and VBA to test their apps and Office Add-ins to assess their compatibility with Microsoft 365 Apps for enterprise.
+1. Before deployment, Contoso used the Readiness Toolkit for Office Add-in and VBA to test their apps and Office Add-ins to assess their compatibility with Microsoft 365 Apps for enterprise.
 1. In Configuration Manager, they enabled peer cache on their client devices, which helps with limited network capacity when deploying to client devices in remote locations. 
 1. Contoso defined two deployment groups as device collections in Configuration Manager: a pilot group and a broad group. The pilot group, which included a small set of representative devices across the organization, was used for additional testing of apps, add-ins, and hardware with Windows 10 Enterprise and Microsoft 365 Apps for enterprise.
 1. They created deployment packages for Office by using the Office Client Management dashboard and the Office 365 Installer wizard, which are both part of the Configuration Manager console. They built two Microsoft 365 Apps for enterprise packages, one for the pilot group on the Semi-Annual Enterprise Channel (Preview) and one for the broad group on the Semi-Annual Enterprise Channel.
@@ -70,7 +71,7 @@ Because Contoso chose to automatically update devices from the cloud, there was 
 
 Here is the Contoso Microsoft 365 Apps for enterprise installation and ongoing updates deployment architecture.
 
-![The Contoso deployment infrastructure for Microsoft 365 Apps for enterprise](../media/contoso-o365pp/contoso-o365pp-fig1.png)
+![The Contoso deployment infrastructure for Microsoft 365 Apps for enterprise.](../media/contoso-o365pp/contoso-o365pp-fig1.png)
  
 ## Next step
 
@@ -78,7 +79,7 @@ Learn how Contoso is [using Microsoft Intune](contoso-mdm.md) in Microsoft 365 f
 
 ## See also
 
-[Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
+[Microsoft 365 Apps for enterprise](/deployoffice/deployment-guide-microsoft-365-apps)
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 

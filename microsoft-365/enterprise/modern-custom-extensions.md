@@ -2,13 +2,14 @@
 title: "Optimize custom extensions in SharePoint Online modern site pages"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 03/11/2020
+manager: scotv
+ms.date: 09/19/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: 
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection:
+- scotvorg 
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content
@@ -41,16 +42,18 @@ Additionally, if there are too many extensions on a page they can impact the pag
 - **Improvement Opportunities** (yellow) If **five** or more extensions are used they will be highlighted in this section as a warning until seven or more are used which will then be highlighted as Attention Required.
 - **No action required** (green): No extension is taking longer than one second to load.
 
-If an extension is impacting page load time or there are too many extsnions on the page, the result appears in the **Attention required** section of the results. Click the result to see details about which extension is loading slowly or too many extensions has been highlighted. Future updates to the Page Diagnostics for SharePoint tool may include updates to analysis rules, so please ensure you always have the latest version of the tool.
+If an extension is impacting page load time or there are too many extensions on the page, the result appears in the **Attention required** section of the results. Click the result to see details about which extension is loading slowly or too many extensions has been highlighted. Future updates to the Page Diagnostics for SharePoint tool may include updates to analysis rules, so please ensure you always have the latest version of the tool.
 
-![Page load time results](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
+![Screenshot showing page load time results.](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
 Information available in the results includes:
 
 - **Name and ID** shows identifying information that can help you find the extension on the page
-- **Total** shows the total time for the extension to initialize and load
-- **Module Load** shows the time taken to fetch and load the extension
-- **Init** shows the time taken for the extension to initialize
+- **Total** shows the total time for the extension to module load and initialize. It is the total relative time taken by the extension to execute on the page, from beginning to the end.
+- **Module Load** shows the time taken to download, evaluate and load the extensions JavaScript and CSS files. It will then start the Init process.
+- **Init** shows the time taken for the extension to initialize the data.
+
+  It is an asynchronous call and init time is the calculation of time for the onInit function when the returned promise is resolved.
 
 This information is provided to help designers and developers troubleshoot issues. This information should be provided to your design and development team.
 
@@ -83,7 +86,7 @@ Page authors can also use the audit result to see whether a page has too many ex
 
 - **Extension size and dependencies**
   - Use of the Office 365 CDN is required for optimal static resource download. Public CDN origins are preferable for _js/css_ files. For more information about using the Office 365 CDN, see [Use the Office 365 Content Delivery Network (CDN) with SharePoint Online](use-microsoft-365-cdn-with-spo.md).
-  - Reuse frameworks like _React_ and _Fabric imports_ that come as part of the SharePoint Framework (SPFx). For more information, see [Overview of the SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
+  - Reuse frameworks like _React_ and _Fabric imports_ that come as part of the SharePoint Framework (SPFx). For more information, see [Overview of the SharePoint Framework](/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Ensure that you are using the latest version of the SharePoint Framework, and upgrade to new versions as they become available.
 - **Data fetching/caching**
   - If the extension relies on extra server calls to fetch data for display, ensure those server APIs are fast and/or implement client side caching (such as using _localStorage_ or _IndexDB_ for larger sets).
@@ -99,7 +102,7 @@ Page authors can also use the audit result to see whether a page has too many ex
 
 Before you make page revisions to remediate performance issues, make a note of the page load time in the analysis results. Run the tool again after your revision to see if the new result is within the baseline standard, and check the new page load time to see if there was an improvement.
 
-![Page load time results](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Example of page load time results.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >Page load time can vary based on a variety of factors such as network load, time of day, and other transient conditions. You should test page load time a few times before and after making changes to help you average the results.
@@ -110,7 +113,7 @@ Before you make page revisions to remediate performance issues, make a note of t
 
 [Tune Office 365 performance](tune-microsoft-365-performance.md)
 
-[Performance in the modern SharePoint experience](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance)
 
 [Content delivery networks](content-delivery-networks.md)
 

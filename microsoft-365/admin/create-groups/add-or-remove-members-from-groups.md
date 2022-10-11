@@ -4,21 +4,21 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: "Learn how to add a member to a group, remove member from group, and manage group owner status in the Microsoft 365 admin center."
 ---
@@ -32,9 +32,9 @@ In Microsoft 365, group members typically create their own groups, add themselve
   
 ## Add a member to a group in the admin center
 
-1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.  
+1. In the admin center, go to the [**Active groups**](https://admin.microsoft.com/Adminportal/Home?#/groups) page.  
 
-2. Select a group name.
+2. Click a group name.
 
 3. In the details pane, on the **Members** tab, select **View all and manage members**, and then select **Add members**.
 
@@ -44,9 +44,9 @@ In Microsoft 365, group members typically create their own groups, add themselve
 
 ## Add a group to a member in the admin center
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.  
+1. In the admin center, go to the [**Active users**](https://admin.microsoft.com/Adminportal/Home?#/users) page.  
 
-2. Select a user.
+2. Click a user.
 
 3. In the details pane, on the **Account** tab, select **Manage groups**.
 
@@ -57,11 +57,11 @@ In Microsoft 365, group members typically create their own groups, add themselve
 ## Remove a member from a group in the admin center
 
 > [!NOTE]
-> When you remove a member from a private group, it takes 5 minutes for the person to be blocked from the group (after membership changes are fully replicated among domain controllers).
+> When you remove a member from a private group, it takes 5 minutes for the person to be blocked from the group.
 
-1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
+1. In the admin center, go to the [**Active groups**](https://admin.microsoft.com/Adminportal/Home?#/groups) page.  
 
-2. Select a group name.
+2. Click a group name.
 
 3. In the details pane, on the **Members** tab, select **View all and manage members**.
 
@@ -75,13 +75,13 @@ By default, the person who created the group is the group owner. Often a group w
   
 ### Promote a member to owner status in the admin center
 
-1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
+1. In the admin center, go to the [**Active groups**](https://admin.microsoft.com/Adminportal/Home?#/groups) page.  
 
-2. Select a group name.
+2. Click a group name.
 
 3. In the details pane, on the **Members** tab, select **View all and manage owners**.
 
-4. Search for a member, or select **Add owners**.
+4. Select **Add owners**.
 
 5. Select the check box next to the name of the member you want to add.
 
@@ -89,9 +89,9 @@ By default, the person who created the group is the group owner. Often a group w
 
 ### Remove owner status in the admin center
 
-1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
+1. In the admin center, go to the [**Active groups**](https://admin.microsoft.com/Adminportal/Home?#/groups) page.  
 
-2. Select a group name.
+2. Click a group name.
 
 3. In the details pane, on the **Members** tab, select **View all and manage owners**.
 
@@ -99,22 +99,18 @@ By default, the person who created the group is the group owner. Often a group w
 
 5. Select **Save**.
 
-## More on managing membership
+## Next steps
 
-- [Manage groups dynamically in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=847632): see the section "How can I manage the membership of a group dynamically?"
+- [Manage groups dynamically in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal): see the section "How can I manage the membership of a group dynamically?"
 
-- To add hundreds or thousands of users to groups, use the [Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191).
+- To add hundreds or thousands of users to groups, use the [Add-UnifiedGroupLinks](/powershell/module/exchange/add-unifiedgrouplinks).
 
 - [Assign a new owner to an orphaned group](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-## Articles about managing groups
+## Related content
 
-- [Upgrade distribution lists to Microsoft 365 groups in Outlook](../manage/upgrade-distribution-lists.md)
-
-- [Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
-
-- [Manage guest access in Microsoft 365 groups](manage-guest-access-in-groups.md)
-
-- [Manage Microsoft 365 groups with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell): this article introduces you to key cmdlets and provides examples
-
-- [Microsoft 365 groups naming policy](groups-naming-policy.md)
+[Upgrade distribution lists to Microsoft 365 groups in Outlook](../manage/upgrade-distribution-lists.md) (article)\
+[Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (article)\
+[Manage guest access in Microsoft 365 groups](manage-guest-access-in-groups.md) (article)\
+[Manage Microsoft 365 groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md): this article introduces you to key cmdlets and provides examples (article)\
+[Microsoft 365 groups naming policy](../../solutions/groups-naming-policy.md) (article)

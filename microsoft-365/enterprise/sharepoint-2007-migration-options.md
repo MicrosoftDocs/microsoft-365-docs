@@ -2,13 +2,14 @@
 title: "SharePoint 2007 migration options to consider"
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: scotv
 ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-solutions
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Ent_O365
 - SPO_Content
 search.appverid:
@@ -41,7 +42,7 @@ There are multiple methods to upgrade a SharePoint Server environment. If you ha
   
 - Database attach
     
-- Side-by-side upgrade
+- Side by side upgrade
     
 - In-place upgrade
     
@@ -64,22 +65,22 @@ Your knowledge of what your farm does and is used for is a tactical strength whe
   
 Remember to check the [Product Lifecycle](https://support.microsoft.com/lifecycle/search) and System Requirements for whatever version of SharePoint you're upgrading to. This is so you'll be aware when the next upgrade will be necessary (for example, if you pause at a legacy product like SharePoint Server 2010 to plan for more upgrades, be sure you know its end of support date), and to be certain you have hardware that supports your plan. 
   
-If you're planning to transition some, or all, of your SharePoint sites to Microsoft 365 in the Cloud, this is a time to bookmark a link to the [Microsoft 365 and Office 365 service descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library). You'll need the Service Descriptions to learn about SharePoint Online features and how they might differ from on-premises SharePoint Server. Upgrade functional Microsoft Office SharePoint Server 2007 farms. If your installation has sites that are broken, fix them prior to upgrade.
+If you're planning to transition some, or all, of your SharePoint sites to Microsoft 365 in the Cloud, this is a time to bookmark a link to the [Microsoft 365 and Office 365 service descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library). You'll need the Service Descriptions to learn about SharePoint Online features and how they might differ from on-premises SharePoint Server. Upgrade functional Microsoft Office SharePoint Server 2007 farms. If your installation has sites that are broken, fix them prior to upgrade.
   
 ## A note about managing risk
 
-Methods like 'side-by-side' are important in the scheme of upgrade logic. When you upgrade side-by-side, you maintain your Microsoft Office SharePoint Server 2007 farm, but build a farm the next version up from it (SharePoint Server 2010) on new hardware. This helps in three ways:
+Methods like 'side-by-side' are important in the scheme of upgrade logic. When you upgrade side by side, you maintain your Microsoft Office SharePoint Server 2007 farm, but build up a farm the next version from it (SharePoint Server 2010) on new hardware. This helps in three ways:
   
 1. You have a place to take backups of your Microsoft Office SharePoint Server 2007 databases to upgrade them separately, by using database attach.
     
-2. If you figure out that only a small number of critical document libraries and other information are in use on your Microsoft Office SharePoint Server 2007 farm, you can choose to manually move data from Microsoft Office SharePoint Server 2007 to SharePoint Server 2010, or take only specific sites and webs to the next version (which can make your job easier).
+2. If you figure out that only a few critical document libraries and other information are in use on your Microsoft Office SharePoint Server 2007 farm, you can choose to manually move data from Microsoft Office SharePoint Server 2007 to SharePoint Server 2010, or take only specific sites and webs to the next version (which can make your job easier).
     
 3. The less you do to the Microsoft Office SharePoint Server 2007 server farm, directly, the safer the data that farm contains as you upgrade.
     
 Methods like In-Place upgrade will act directly on your Microsoft Office SharePoint Server 2007 farm, giving you fewer easy options to abandon a path and begin again with your pristine environment. As much as possible, build in some safety measures (like taking and testing backups of the original environment). For example, if your Microsoft Office SharePoint Server 2007 farm is virtual, and is duplicated for the purposes of backup and restore, then back-up and restore the most current databases prior to your service window for the upgrade. Knowing that you have the option to restore database backups will not only give you a failsafe, it can give you peace of mind.
   
 > [!TIP]
-> Best practices documents for upgrade exist for [Microsoft Office SharePoint Server 2007](https://technet.microsoft.com/library/cc261992%28v=office.12%29.aspx), [SharePoint Server 2010](https://technet.microsoft.com/library/cc261992%28v=office.14%29.aspx), [SharePoint Server 2013](https://technet.microsoft.com/library/cc261992%28v=office.15%29.aspx), and [SharePoint Server 2016](https://technet.microsoft.com/library/cc261992%28v=office.16%29.aspx). You can also search for [Microsoft Partners](https://partnercenter.microsoft.com/pcv/search) who have experience with upgrades or Microsoft 365 migrations. 
+> Best practices documents for upgrade exist for [Microsoft Office SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc261992(v=office.12)), [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc261992(v=office.14)), [SharePoint Server 2013](/SharePoint/upgrade-and-update/best-practices-for-upgrading-from-sharepoint-2010-to-sharepoint-2013), and [SharePoint Server 2016](/SharePoint/upgrade-and-update/best-practices-for-upgrade). You can also search for [Microsoft Partners](https://partnercenter.microsoft.com/pcv/search) who have experience with upgrades or Microsoft 365 migrations. 
   
 ## Make your plan
 
@@ -90,7 +91,7 @@ If you need to upgrade, you need a plan, and one-size doesn't fit all in these c
   
 ### First, know your farm
 
-When upgrading, your decision-making should be based on what your farm does for your organization. What need does it satisfy? What's its role? Each farm in your company may have a different role. Some of your SharePoint farms may be  *critical*  , some may be file archives -- there for safe-keeping. Or, if your farm fills many roles at once, then you may need to know what site collections, webs, or even document libraries do, any customizations, and how important they are. Analyzing your data at this level may seem like a lot of work, but it saves time and effort to master your domain before you upgrade, or migrate, it. Once you know all the moving parts, and the most important bits, you'll also know what you've outgrown and can leave behind. That knowledge will only benefit you going forward. 
+When upgrading, your decision-making should be based on what your farm does for your organization. What need does it satisfy? What's its role? Each farm in your company may have a different role. Some of your SharePoint farms may be  *critical*, some may be file archives--there for safe-keeping. Or, if your farm fills many roles at once, then you may need to know what site collections, webs, or even document libraries do, any customizations, and how important they are. Analyzing your data at this level may seem like much work, but it saves time and effort to master your domain before you upgrade, or migrate, it. Once you know all the moving parts, and the most important bits, you'll also know what you've outgrown and can leave behind. That knowledge will only benefit you going forward. 
   
 So, what are users saying is most important about your SharePoint Server farm?
   
@@ -106,15 +107,15 @@ So, what are users saying is most important about your SharePoint Server farm?
     
 - Customizations
     
-If you run something essential to your business from your SharePoint farm, say it acts like a large catalog of critical data about client service requirements, you may put a tick beside 'Critical apps', but also 'Availability' -- that is, your business would be impacted if you couldn't use SharePoint for a while. Likewise, you might check 'Customizations' because the critical services your farm offers are based on custom code, site definitions, or a number of customizations that work together.
+If you run something essential to your business from your SharePoint farm, say it acts like a large catalog of critical data about client service requirements, you may put a tick beside 'Critical apps', but also 'Availability'--that is, your business would be impacted if you couldn't use SharePoint for a while. Likewise, you might check 'Customizations' because the critical services your farm offers are based on custom code, site definitions, or many customizations that work together.
   
-If SharePoint met those needs without your having to do anything outside of using what's built-in to the software, and you generally update it and carry out normal administration and maintenance, you may have chosen 'Built-in SharePoint' -- this may also be your reason for sitting on an older version of SharePoint. In other words, it already does what you need it to and you haven't needed to upgrade until now, at Microsoft Office SharePoint Server 2007 end of support.
+If SharePoint met those needs without your involvement outside of using what's built in to the software, and you generally update it and carry out normal administration and maintenance, you may have chosen 'Built-in SharePoint'--this may also be your reason for sitting on an older version of SharePoint. In other words, it already does what you need it to and you haven't needed to upgrade until now, at Microsoft Office SharePoint Server 2007 end of support.
   
 When you bullet-list these things, you create criteria for your upgrade. In other words, any upgrade would have to meet this bar to be considered. This gives you a way to rule out methods that don't currently fit your needs.
   
 ### A simple sample plan
 
-There may need to be wider consensus with leadership and other admins on the path your SharePoint Upgrade will take. SharePoint Server Administrators often cooperate with Microsoft SQL Server admins, work with Networking and Security teams, and more. Where there are a lot of stakeholders, you may need to build agreement for, or adjust, your upgrade and migration plan. For example, if you migrate data so that part of your company uses SharePoint Online in Microsoft 365, there will likely need to be performance tuning or testing inside your network. Affected teams should be informed ahead of time.
+There may need to be wider consensus with leadership and other admins on the path your SharePoint Upgrade will take. SharePoint Server Administrators often cooperate with Microsoft SQL Server admins, work with Networking and Security teams, and more. Where there are many stakeholders, you may need to build agreement for, or adjust, your upgrade and migration plan. For example, if you migrate data so that part of your company uses SharePoint Online in Microsoft 365, there will likely need to be performance tuning or testing inside your network. Affected teams should be informed ahead of time.
   
 In my simple sample, I show a SharePoint administrator's proposal and then list out the plan that all the stakeholders agreed upon. For clarity, document your agreements and decisions.
   
@@ -124,13 +125,13 @@ My 'most important' bullet list:
   
 - Availability, features built-in to SharePoint, and Compliance standards.
     
-- Most of the data is on three site collections, with one Meeting Workspace used by a Dev team particularly important and in heavy use in multiple time-zones worldwide.
+- Most of the data is on three site collections, with one Meeting Workspace used by a Dev team important and in heavy use in multiple time-zones worldwide.
     
-- There are seventeen other sites that are widely used.
+- There are 17 other sites that are widely used.
     
 - Two document libraries (Meeting Workspace and Documents on the root site collection) are largest (over 8000 docs each). We have a large number of archived docs and list with spreadsheet attachments.
     
-- There are fourteen lists of libraries that have sensitive data that MUST stay in Compliance.
+- There are 14 lists of libraries that have sensitive data that MUST stay in Compliance.
     
 - We MUST have the ability to do holds and e-discovery wherever we go.
     
@@ -141,7 +142,7 @@ My 'most important' bullet list:
 | Yes | No |
 |:-----|:-----|
 |Upgrade databases with database attach  <br/> |In-place upgrade  <br/> |
-|Upgrade with farms side-by-side  <br/> |Hybrid Upgrade  <br/> |
+|Upgrade with farms side by side  <br/> |Hybrid Upgrade  <br/> |
 |Migration API to SPO in Microsoft 365 (for personal site data)  <br/> |SharePoint Hybrid (not needed yet)  <br/> |
 |Some manual data migrations to SharePoint Online for critical data  <br/> |FastTrack wizard upgrade to Microsoft 365  <br/> |
    
@@ -153,7 +154,7 @@ Upgrade on-premises, with versions of SharePoint side-by-side, some virtualized,
     
 - Consider [FastTrack assistance](https://fasttrack.microsoft.com) if you would like to upgrade to SharePoint Online from here. 
     
-- Determine if any site collections can be offloaded to a Microsoft 365 Subscription. (Microsoft 365 meets many [Compliance standards](https://technet.microsoft.com/library/office-365-compliance.aspx). Microsoft 365 has [eDiscovery](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) and can do [Holds](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E) through the Compliance Centre.) 
+- Determine if any site collections can be offloaded to a Microsoft 365 Subscription. (Microsoft 365 meets many [Compliance standards](/compliance/regulatory/offering-home). Microsoft 365 has [eDiscovery](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) and can do [Holds](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E) through the Compliance Centre.) 
     
 Otherwise, continue with a side-by-side upgrade to SharePoint Server 2016.
   
@@ -181,5 +182,3 @@ Often major factors in choosing a method are the total cost of the upgrade and t
 [Microsoft Lifecycle Policy and Lifecycle search](https://support.microsoft.com/lifecycle)
   
 [Search for Microsoft Partners who can help with upgrade or migration](https://partnercenter.microsoft.com/pcv/search)
-  
-
