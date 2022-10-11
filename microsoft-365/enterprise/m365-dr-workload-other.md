@@ -20,7 +20,7 @@ ms.collection:
 
 ## Data Residency commitments available
 
-For data location information for the following services, please refer to the data location information in Section ***(TODO: add reference link to datamaps)***
+For data location information for the following services, please refer to the data location information on the [Data Maps page](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide&branch=kvice-ADR-new) for more details.
 
 - Whiteboard
 
