@@ -25,7 +25,7 @@ Before you create a new model, you might consider whether to reuse an existing o
 
 To find trained models that might be suitable for your content:
 
-1. In the document library for your model, select **Automate** > **View models**.
+1. In the document library for your model, select **Classify and extract**.
 
 2. On the **Review models and apply new ones** page, you can review the applied models and the models that are available to be applied to your document library.
 
