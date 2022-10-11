@@ -20,11 +20,29 @@ ms.collection:
 
 ## Data Residency commitments available
 
+
+>[!NOTE] 
+>The following M365 services do not have specific commitments for data residency.  You can find methods for determining the customer data location for these services below.
+
 Use the following guidance to determine where your data is located. Please reference your tenant Default Geography. 
 
--	Forms: Tenants in EU member Countries maintain data in Macro Region Geography 1 – EMEA.  All other tenants have customer data stored in the United States.
+-	**Forms**: Tenants in EU member Countries maintain data in Macro Region Geography 1 – EMEA.  All other tenants have customer data stored in the United States.
   
 -	**Intune**:  Refer to endpoint.microsoft.com, Tenant Administration > Tenant Status for existing tenants.  If you do not have an existing tenant, create a trial tenant and provision Intune.
+		
+	- Microsoft will not store Intune customer data at rest outside the stated geo, except if:
+
+	- It is necessary for Microsoft to provide customer support, troubleshoot the service, or comply with legal requirements.
+
+	- The customer configures an account to enable such storage of customer data, including through the use of the following:
+  	
+	- Features that are designed to operate globally, such as Content Delivery Network (CDN), which provides a global caching service and stores customer data at edge locations around the world.
+  	
+	- Azure Active Directory (Azure AD), which may store directory data globally. This does not apply to Azure AD deployments in the United States (where Azure AD data is stored solely in the United States) or in Europe (where Azure AD data is stored in Europe or the United States).
+  	
+	- Preview, beta, or other prerelease services, which typically store customer data in the United States but may store it globally.
+
+	- Regardless, Microsoft does not control or limit the Geo from which customers or their end users may access customer data. Similarly, where customer data in other services is subsequently integrated into Intune, the originating customer data will continue to be stored subject to the other service's own Geo commitments (if any); only the copy of the customer data integrated into Intune will be stored in the stated Geo for Intune.
 
 -	**Office for mobile**:  Customer data for this service comes from other services, like Exchange Online and SharePoint Online.  There is no customer data stored outside of those services with the exception of the mobile device.
  
@@ -38,9 +56,13 @@ Use the following guidance to determine where your data is located. Please refer
 	
 -	**Sway**:  Sway stores customer data in the United States for all tenants.
   
--	**Viva Insights – Advanced**, Mgr, Leader:  Please see section (***TODO: add link to section 10***)
+-	**Viva Insights – Advanced, Mgr, Leader**:  Please see section (***TODO: add link to section 10***)
+	
+	- The data region for Manager/Leader and Advanced is determined by the primary region of the tenant, not individual users.
+
   
 - **Viva Insights – Personal**:  Customer data for this service is stored within Exchange Online.  See (***TODO: link to EXO***).
+	- Data residency for the Personal app is based on the user's mailbox location.
 
 -	**Viva Learning**:  Please see section (***TODO: add link to section 10***)
 
@@ -49,6 +71,4 @@ Use the following guidance to determine where your data is located. Please refer
 -	**Yammer**:  Please refer to [Data residency - Yammer | Microsoft Learn](/yammer/manage-security-and-compliance/data-residency)
 
 
-**Commitment:**
 
-**No data residency commitments available, unless otherwise stated**
