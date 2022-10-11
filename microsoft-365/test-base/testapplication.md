@@ -129,13 +129,13 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 The Test matrix tab is for you to indicate the specific Windows update program or Windows product that you may want your test to execute against.
 
    > [!div class="mx-imgBorder"]
-   > ![Set test matrix new package](Media/settestmatrix01-newpackage.png)
+   > ![Screenshot shows Set test matrix new package.](Media/settestmatrix01-newpackage.png)
 
 1. Choose **OS update type**
    - Test Base provides scheduled testing to make sure your applications performance won’t break by the latest Windows updates. 
 
    > [!div class="mx-imgBorder"]
-   > ![Set test matrix choose osupdate](Media/settestmatrix02-chooseosupdate.png)
+   > ![Screenshot shows Set test matrix choose osupdate.](Media/settestmatrix02-chooseosupdate.png)
 
    - There are 2 available options:
    
@@ -146,7 +146,7 @@ The Test matrix tab is for you to indicate the specific Windows update program o
    To set up for security updates, you must specify the Windows product(s) you want to test against from the dropdown list of "OS versions to test".
 
    > [!div class="mx-imgBorder"]
-   > ![Set test matrix configure securityupdate](Media/settestmatrix03-configuresecurityupdate.png)
+   > ![Screenshot shows Set test matrix configure securityupdate.](Media/settestmatrix03-configuresecurityupdate.png)
 
    - Your selection will register your application for automatic test runs against the B release of Windows monthly quality updates of selected product(s).
      - For customers who have Default Access customers on Test Base, their applications are validated against the final release version of the B release security              updates, starting from Patch Tuesday.
@@ -157,14 +157,14 @@ The Test matrix tab is for you to indicate the specific Windows update program o
    - To set up for feature updates, you must specify the target product and its preview channel from "Insider Channel" dropdown list.
 
    > [!div class="mx-imgBorder"]
-   > ![Set test matrix configure featureupdate](Media/settestmatrix04-configurefeatureupdate.png)
+   > ![Screenshot shows Set test matrix configure featureupdate.](Media/settestmatrix04-configurefeatureupdate.png)
 
    - Your selection will register your application for automatic test runs against the latest feature updates of your selected product channel and all future new            updates in the latest Windows Insider Preview Builds of your selection.
 
    - You may also set your current OS in "OS baseline for Insight". We would provide you more test insights by regression analysis of your as-is OS environment and the      latest target OS.
 
    > [!div class="mx-imgBorder"]
-   > ![Set test matrix set os](Media/settestmatrix05-setos.png)
+   > ![Screenshot shows Set test matrix set os.](Media/settestmatrix05-setos.png)
 
 ### Step 5. Review + publish
 
