@@ -178,7 +178,7 @@ Follow these steps to share a Power Automate flow:
 2. From the policy, select the **Pending** tab and select a pending alert.
 3. Select **Power Automate** from the alert action menu.
 4. On the **Power Automate flows** page, select the **My flows** or **Team flows** tab.
-5. Select the flow to share, then select **Share** from the Flow Options menu.
+5. Select the flow to share, then select **Share** from the **Flow Options** menu.
 6. On the flow sharing page, enter the name of the user or group you want to add as an owner for the flow.
 7. On the **Connection Used** dialog, select **OK** to acknowledge that the added user or group will have full access to the flow.
 
