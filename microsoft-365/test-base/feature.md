@@ -31,13 +31,13 @@ Highlighted below are the steps to take as you fill out the **Test Matrix**:
 
 To set up for feature updates, you must specify the target product and its preview channel from "Insider Channel" dropdown list. 
 
-![Feature update validation OS type.](Media/windowsfeatureupdatevalidation01-featureupdate.png)
+![Screenshot shows Set insider channel product.](Media/windowsfeatureupdatevalidation01-featureupdate.png)
 
 Your selection will register your application for automatic test runs against the latest feature updates of your selected product channel and all future new updates in the latest Windows Insider Preview Builds of your selection. 
 
 You may also set your current OS in "OS baseline for Insight". We would provide you with more test insights by regression analysis of your as-is OS environment and the latest target OS. 
 
-![Feature update validation. Choosing the Insider beta channel.](Media/windowsfeatureupdatevalidation02-osbaseline.png) 
+![Screenshot shows Set OS baseline for Insight product.](Media/windowsfeatureupdatevalidation02-osbaseline.png) 
 
 To check more details on the Windows Insider Preview builds, refer to [Flight Hub - Windows Insider Program | Microsoft Docs](/../../../../MicrosoftDocs/windows-insider/tree/public/wip/flight-hub/index.md).
 
