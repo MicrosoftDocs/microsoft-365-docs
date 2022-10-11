@@ -79,7 +79,7 @@ Each identified threat includes an analyst report, a comprehensive analysis of t
 
 For more information, see [Threat analytics in Microsoft 365 Defender](threat-analytics.md).
 
-## Collaborate with Microsoft experts
+## Collaborate with Microsoft Defender experts
 
 Endpoint Attack Notifications (previously referred to as Microsoft Threat Experts - Targeted Attack Notifications) is a managed threat hunting service. Once you apply and are accepted, you'll receive Endpoint Attack Notifications from Microsoft threat experts, so you won't miss critical threats to your environment. These notifications will help you protect your organization's endpoints, email, and identities. Microsoft Defender Experts – Experts on Demand lets you get expert advice about threats your organization is facing and you can reach out for help on threats your organization is facing. It's available as an additional subscription service.
 
