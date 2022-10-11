@@ -307,7 +307,7 @@ Here are some examples:
 1. Select the user activities you want to monitor or restrict and the actions you DLP to take in response to those activities.
 1. Finish configuring the rule and policy and apply it.
 
-## Scenario 7 Authorization groups
+## Scenario 7 Authorization groups (preview)
 
 > [!IMPORTANT]
 > Before you can use **Printer groups**, **Removable storage device groups**, **Network share groups**, and **Network exceptions/VPN** you must register [here](https://forms.office.com/r/GNVTFvxuZv).
@@ -358,7 +358,7 @@ In this scenario, we'll define a group of printers that the legal department use
 
 13. The new DLP policy will appear in the policy list.
 
-## Scenario 8 Network exceptions
+## Scenario 8 Network exceptions (preview)
 
 > [!IMPORTANT]
 > Before you can use **Printer groups**, **Removable storage device groups**, **Network share groups**, and **Network exceptions/VPN** you must register [here](https://forms.office.com/r/GNVTFvxuZv).
