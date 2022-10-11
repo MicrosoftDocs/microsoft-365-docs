@@ -44,11 +44,11 @@ The start and end break capability of the time clock feature isn't supported in 
 
 Teams mobile users can set their personal availability in Shifts. However, if a user sets their availability after the day that's established as the start of the week in UKG Dimensions, their availability applies to the following week onwards and not to the current week. For example, Sunday is set as the start of the week in UKG Dimensions, and on Monday of the current week, a user changes their availability for Thursday and Friday. In this scenario, their availability settings are applied to the following week.
 
-## Users sees a red "X" when a co-worker accepts their swap request and the manager declines the request
+## Users sees a red "X" when a coworker accepts their swap request and the manager declines the request
 
-Currently, if a user creates a swap request with a co-worker and the co-worker accepts the request but the manager denies it, the user unexpectedly sees a red "X" next to both the co-worker's and manager's response.
+Currently, if a user creates a swap request with a coworker and the coworker accepts the request but the manager denies it, the user unexpectedly sees a red "X" next to both the coworker's and manager's response.
 
-The correct, expected behavior is a green check mark to indicate that the co-worker accepted the request and a red "X" to indicate that the manager denied the request.
+The correct, expected behavior is a green check mark to indicate that the coworker accepted the request and a red "X" to indicate that the manager denied the request.
 
 ## A user can’t perform some actions in Shifts in the Teams web app after signing in with a different account
 
