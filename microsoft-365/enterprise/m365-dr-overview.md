@@ -204,7 +204,7 @@ Review our [definitions for different types of data](https://go.microsoft.com/fw
 
 <details><summary>Click to expand</summary>
 
-Microsoft does not disclose the exact addresses of its data centers. We established this policy to help secure our data center facilities.  However, we do list city locations. Please see Table 5 in the [Country/Region specific Dat Center City Locations](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-overview?view=o365-worldwide&branch=kvice-ADR-new#countryregion-specific-data-center-city-locations) on the Overview and Definitions page to learn more.
+Microsoft does not disclose the exact addresses of its data centers. We established this policy to help secure our data center facilities. However, we do list city locations. Please see Table 5 in the [Country/Region-specific Data Center City Locations](m365-dr-overview.md#countryregion-specific-data-center-city-locations) on the Overview and Definitions page to learn more.
 
 </details>
 
