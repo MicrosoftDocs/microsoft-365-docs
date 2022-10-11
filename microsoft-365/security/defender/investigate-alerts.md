@@ -313,4 +313,4 @@ As needed for in-process incidents, continue your [investigation](investigate-in
 - [Manage incidents](manage-incidents.md)
 - [Investigate incidents](investigate-incidents.md)
 - [Investigate data loss incidents](investigate-dlp.md)
-- [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+- [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
