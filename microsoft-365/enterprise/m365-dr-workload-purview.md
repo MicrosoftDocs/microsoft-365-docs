@@ -20,9 +20,9 @@ ms.collection:
 
 Data residency commitments for the Purview set of services are available with the Advanced Data Residency add-on.
 The required conditions for the related commitments for the services described below are:
-1.	Tenant has a sign up country included in *Local Geography* or *Expanded Local Geography*.
-2.	Tenant has a valid Advanced Data Residency subscription for all users in the tenant
-3.	The Purview service customer data is provisioned in *Local Geography* or *Expanded Local Geography*.
+1.	Tenant has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+2.	Tenant has a valid Advanced Data Residency subscription for all users in the tenant.
+3.	The Purview service customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
 ## Migration 
 
@@ -89,7 +89,7 @@ Capability summary: Lets you retain or delete content with policy management for
 
 Commitment:
 
-The following customer data will be stored in the related *Geography*:
+The following customer data will be stored in the related _Geography_:
 - Retention policy settings
 - Retention label definitions
 - Customer Data stored in original locations for the following services:
@@ -103,7 +103,7 @@ The following customer data will be stored in the related *Geography*:
   - Teams channel messages
   - Teams chats
   - Teams private channel messages
-  - SharePoint Online, OneDrive for Business, Exchange Online and Microsoft Teams follow the data residency commitments for those services.  Please refer to sections ***TODO: UPDATE LINKS***5.1,5.2, and 5.3
+  - SharePoint Online, OneDrive for Business, Exchange Online and Microsoft Teams follow the data residency commitments for those services.  Please refer to the [EXO](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide&branch=kvice-ADR-new), [ODSP](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide&branch=kvice-ADR-new) and [Teams](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-teams?view=o365-worldwide&branch=kvice-ADR-new) workload data residency pages for more details.
 - Training classifiers
 - Disposition data
 - Mappings between retention labels and Data Loss Prevention (DLP) policies.
@@ -120,7 +120,7 @@ Capability summary: Organizations of all types require a records-management solu
 
 Commitment:
 
-The following customer data will be stored in the related *Geography*:
+The following customer data will be stored in the related _Geography_:
 - Record retention label definitions.
 - File plan definitions
 - Event-based retention policy settings.
@@ -148,7 +148,7 @@ Capability summary: Sensitivity labels from Microsoft Purview Information Protec
 
 Commitment:
 
-The following customer data will be stored in the related *Geography*:
+The following customer data will be stored in the related _Geography_:
 - Label configuration
 - Labels definition
 - Label policies
@@ -183,7 +183,7 @@ DLP detects sensitive items by using deep content analysis, not by just a simple
 
 Commitment:
 
-The following customer data will be stored in the related *Geography*:
+The following customer data will be stored in the related _Geography_:
 - DLP admin configuration
 - DLP policies in Compliance Center
 - DLP monitored activities
@@ -207,7 +207,7 @@ Capability summary: With Office 365 Message Encryption, your organization can se
 
 Commitment:
 
-The following customer data will be stored in the related *Geography*:
+The following customer data will be stored in the related _Geography_:
 ***TODO: need commitment text***
 
 ### Insider Risk Management - Information Barriers
@@ -222,6 +222,6 @@ Capability summary: Microsoft Purview Information Barriers (IB) is a compliance 
 
 Commitment:
 
-The following customer data will be stored in the related *Geography*:
+The following customer data will be stored in the related _Geography_:
 - Policy settings and risk indicators
 - Admin settings
