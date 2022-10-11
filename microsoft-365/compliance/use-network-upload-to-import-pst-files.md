@@ -1,23 +1,23 @@
 ---
 title: "Use network upload to import PST files"
+description: "For administrators: Learn how to use network upload to bulk-import multiple PST files to user mailboxes in Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- import
 search.appverid:
 - MOE150
 - MED150
 - MET150
-ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
-description: "For administrators: Learn how to use network upload to bulk-import multiple PST files to user mailboxes in Microsoft 365."
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -43,6 +43,8 @@ Here are the step-by-step instructions required to use network upload to bulk-im
 [Step 6: Filter data and start the PST Import job](#step-6-filter-data-and-start-the-pst-import-job)
 
 You have to perform Step 1 only once to import PST files to Microsoft 365 mailboxes. After you perform these steps, follow Step 2 through Step 6 each time you want to upload and import a batch of PST files.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you import PST files
   
@@ -236,12 +238,12 @@ After the PST files have been uploaded to the Azure Storage location for your or
 
 3. Use the information in the following table to populate the CSV file with the required information.
 
-    | Parameter | Description | Example |
-    |:-----|:-----|:-----|
-    | `Workload` <br/> |Specifies the service that data will be imported to. To import PST files to user mailboxes, use  `Exchange`.  <br/> | `Exchange` <br/> |
-    | `FilePath` <br/> |Specifies the folder location in the Azure Storage location that you uploaded the PST files to in Step 2.  <br/> If you didn't include an optional subfolder name in the SAS URL in the  `/Dest:` parameter in Step 2, leave this parameter blank in the CSV file. If you included a subfolder name, specify it in this parameter (see the second example). The value for this parameter is case-sensitive.  <br/> Either way,  *don't*  include "ingestiondata" in the value for the  `FilePath` parameter.  <br/><br/> **Important:** The case for the file path name must be the same as the case you used if you included an optional subfolder name in the SAS URL in the destination field in Step 2. For example, if you used  `PSTFiles` for the subfolder name in Step 2 and then use  `pstfiles` in the  `FilePath` parameter in CSV file, the import for the PST file will fail. Be sure to use the same case in both instances.  <br/> |(leave blank)  <br/> Or  <br/>  `PSTFiles` <br/> |
-    | `Name` <br/> |Specifies the name of the PST file that will be imported to the user mailbox. The value for this parameter is case-sensitive. The file name of each PST file in the mapping file for an import job must be unique. <br/> <br/>**Important:** The case for the PST file name in the CSV file must be the same as the PST file that was uploaded to the Azure Storage location in Step 2. For example, if you use  `annb.pst` in the  `Name` parameter in the CSV file, but the name of the actual PST file is `AnnB.pst`, the import for that PST file will fail. Be sure that the name of the PST in the CSV file uses the same case as the actual PST file.  <br/> | `annb.pst` <br/> |
-    | `Mailbox` <br/> |Specifies the email address of the mailbox that the PST file will be imported to. You can't specify a public folder because the PST Import Service doesn't support importing PST files to public folders.  <br/> To import a PST file to an inactive mailbox, you have to specify the mailbox GUID for this parameter. To obtain this GUID, run the following PowerShell command in Exchange Online:  `Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> <br/>**Note:** Sometimes you might have multiple mailboxes with the same email address, where one mailbox is an active mailbox and the other mailbox is in a soft-deleted (or inactive) state. In these situations, you have to specify the mailbox GUID to uniquely identify the mailbox to import the PST file to. To obtain this GUID for active mailboxes, run the following PowerShell command:  `Get-Mailbox <identity of active mailbox> | FL Guid`. To obtain the GUID for soft-deleted (or inactive) mailboxes, run this command  `Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`.  <br/> | `annb@contoso.onmicrosoft.com` <br/> Or  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
+    |**Parameter**|**Description**|**Example**|
+    |:------------|:--------------|:----------|
+    |`Workload`|Specifies the service that data will be imported to. To import PST files to user mailboxes, use  `Exchange`.| `Exchange`|
+    |`FilePath`|Specifies the folder location in the Azure Storage location that you uploaded the PST files to in Step 2.  <br/> If you didn't include an optional subfolder name in the SAS URL in the  `/Dest:` parameter in Step 2, leave this parameter blank in the CSV file. If you included a subfolder name, specify it in this parameter (see the second example). The value for this parameter is case-sensitive.  <br/> Either way,  *don't*  include "ingestiondata" in the value for the  `FilePath` parameter.  <br/><br/> **Important:** The case for the file path name must be the same as the case you used if you included an optional subfolder name in the SAS URL in the destination field in Step 2. For example, if you used  `PSTFiles` for the subfolder name in Step 2 and then use  `pstfiles` in the  `FilePath` parameter in CSV file, the import for the PST file will fail. Be sure to use the same case in both instances. |(leave blank)  <br/> Or  <br/>  `PSTFiles` |
+    |`Name`|Specifies the name of the PST file that will be imported to the user mailbox. The value for this parameter is case-sensitive. The file name of each PST file in the mapping file for an import job must be unique. <br/> <br/>**Important:** The case for the PST file name in the CSV file must be the same as the PST file that was uploaded to the Azure Storage location in Step 2. For example, if you use  `annb.pst` in the  `Name` parameter in the CSV file, but the name of the actual PST file is `AnnB.pst`, the import for that PST file will fail. Be sure that the name of the PST in the CSV file uses the same case as the actual PST file.| `annb.pst`|
+    |`Mailbox`|Specifies the email address of the mailbox that the PST file will be imported to. You can't specify a public folder or unified group because the PST Import Service doesn't support importing PST files or unified groups to public folders.  <br/> To import a PST file to an inactive mailbox, you have to specify the mailbox GUID for this parameter. To obtain this GUID, run the following PowerShell command in Exchange Online:  `Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly FL Guid`. | **Note:** Sometimes you might have multiple mailboxes with the same email address, where one mailbox is an active mailbox and the other mailbox is in a soft-deleted (or inactive) state. In these situations, you have to specify the mailbox GUID to uniquely identify the mailbox to import the PST file to. To obtain this GUID for active mailboxes, run the following PowerShell command:  `Get-Mailbox <identity of active mailbox>`.  <br/><br/>To obtain the GUID for soft-deleted (or inactive) mailboxes, run this command:  `Get-Mailbox \<identity of soft-deleted or inactive mailbox\> -SoftDeletedMailbox FL Guid annb@contoso.onmicrosoft.com` <br/> Or  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
     | `IsArchive` <br/> | Specifies whether to import the PST file to the user's archive mailbox. There are two options:  <br/><br/>**FALSE:** Imports the PST file to the user's primary mailbox.  <br/> **TRUE:** Imports the PST file to the user's archive mailbox. This assumes that the [user's archive mailbox is enabled](enable-archive-mailboxes.md). <br/><br/>If you set this parameter to  `TRUE` and the user's archive mailbox isn't enabled, the import for that user will fail. If an import fails for one user (because their archive isn't enabled and this property is set to  `TRUE`), the other users in the import job won't be affected.  <br/>  If you leave this parameter blank, the PST file is imported to the user's primary mailbox.  <br/> <br/>**Note:** To import a PST file to a cloud-based archive mailbox for a user whose primary mailbox is on-premises, just specify  `TRUE` for this parameter and specify the email address for the user's on-premises mailbox for the  `Mailbox` parameter.  <br/> | `FALSE` <br/> Or  <br/>  `TRUE` <br/> |
     | `TargetRootFolder` <br/> | Specifies the mailbox folder that the PST file is imported to.  <br/> <br/> If you leave this parameter blank, the PST file will be imported to a new folder named **Imported** at the root level of the mailbox (the same level as the Inbox folder and the other default mailbox folders).  <br/> <br/> If you specify  `/`, the folders and items in the PST file are imported to the top of the folder structure in the target mailbox or archive. If a folder exists in the target mailbox (for example, default folders such as Inbox, Sent Items, and Deleted Items), the items in that folder in the PST are merged into the existing folder in the target mailbox. For example, if the PST file contains an Inbox folder, items in that folder are imported to the Inbox folder in the target mailbox. New folders are created if they don't exist in the folder structure for the target mailbox.  <br/><br/>  If you specify  `/<foldername>`, items and folders in the PST file are imported to a folder named  *\<foldername\>*  . For example, if you use  `/ImportedPst`, items would be imported to a folder named **ImportedPst**. This folder will be located in the user's mailbox at the same level as the Inbox folder.  <br/><br/> **Tip:** Consider running a few test batches to experiment with this parameter so you can determine the best folder location to import PST files.  <br/> |(leave blank)  <br/> Or  <br/>  `/` <br/> Or  <br/>  `/ImportedPst` <br/> |
     | `ContentCodePage` <br/> |This optional parameter specifies a numeric value for the code page to use for importing PST files in the ANSI file format. This parameter is used for importing PST files from Chinese, Japanese, and Korean (CJK) organizations because these languages typically use a double byte character set (DBCS) for character encoding. If this parameter isn't used to import PST files for languages that use DBCS for mailbox folder names, the folder names are often garbled after they're imported.  <br/><br/> For a list of supported values to use for this parameter, see [Code Page Identifiers](/windows/win32/intl/code-page-identifiers).  <br/> <br/>**Note:** As previously stated, this is an optional parameter and you don't have to include it in the CSV file. Or you can include it and leave the value blank for one or more rows.  <br/> |(leave blank)  <br/> Or  <br/>  `932` (which is the code page identifier for ANSI/OEM Japanese)  <br/> |

@@ -9,8 +9,9 @@ audience: ITPro
 ms.topic: how-to
 ms.collection: 
   - o365_security_incident_response
-  - M365-security-compliance
+  - m365-security
   - m365solution-smb
+  - highpri
 ms.custom: 
   - TopSMBIssues
   - seo-marvel-apr2020
@@ -18,8 +19,8 @@ ms.localizationpriority: high
 search.appverid: 
   - MET150
 description: Learn how to recognize and respond to a compromised email account using tools available in Microsoft 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 # Responding to a Compromised Email Account
 
@@ -174,14 +175,6 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 2. Any other service that used this Exchange account as its alternative email account may have been compromised. First, do these steps for your Microsoft 365 subscription, and then do these steps for your other accounts.
 
 3. Make sure that your contact information, such as telephone numbers and addresses, is correct.
-
-## Secure Microsoft 365 like a cybersecurity pro
-
-Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.  Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Microsoft 365 tenant.
-
-- Tasks to accomplish in the first 30 days. These have immediate affect and are low-impact to your users.
-- Tasks to accomplish in 90 days. These take a bit more time to plan and implement but greatly improve your security posture.
-- Beyond 90 days. These enhancements build in your first 90 days work.
 
 ## See also
 

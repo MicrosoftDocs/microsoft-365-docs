@@ -10,9 +10,10 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- tier1
 search.appverid: 
 - MOE150
 - MET150
@@ -22,6 +23,8 @@ description: "Learn how to implement and test controls by working with improveme
 # Working with improvement actions in Compliance Manager
 
 **In this article:** This article explains how to **manage your compliance workflow** with improvement actions. Learn how to **assign improvement actions** for implementation and testing, **manage updates**, and export **reports**.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Manage compliance workflows with improvement actions
 
@@ -149,7 +152,7 @@ Compliance Manager provides you options for how to test improvement actions. In 
 Improvement actions set for manual testing are actions which you manually test and implement. You set the necessary implementation and test status states, and upload any evidence files on the **Documents** tab. For some actions, this is the only available method for testing improvement actions.
 
 #### Automatic testing source
-Certain improvement actions can be automatically tested by Compliance Manager. [Get details](compliance-manager-improvement-actions.md#update-testing-source) on which improvement actions can and can't be tested automatically.
+Certain improvement actions can be automatically tested by Compliance Manager. [Get details](compliance-manager-setup.md#set-up-automated-testing) on which improvement actions can and can't be tested automatically.
 
 For those improvement actions that can be automatically tested, you'll see the **Automatic** option for testing source. Compliance Manager will detect signals from other compliance solutions you've set up in your Microsoft 365 environment, as well as any complementary actions that Microsoft Secure Score also monitors. The **Testing logic** field on the **Testing** tab will show what kind of policy or configuration is required in another solution in order for the action to pass and earn points toward your compliance score.
 

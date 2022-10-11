@@ -1,12 +1,12 @@
 ---
-title: Create an extractor Microsoft SharePoint Syntex
+title: Create an extractor in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid:
 ms.collection:
     - enabler-strategic

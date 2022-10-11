@@ -2,7 +2,7 @@
 title: Manage how and where Microsoft Defender Antivirus receives updates
 description: Manage the fallback order for how Microsoft Defender Antivirus receives protection updates.
 keywords: updates, security baselines, protection, fallback order, ADL, MMPC, UNC, file path, share, wsus
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,11 @@ ms.author: deniseb
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
-ms.collection: m365-security-compliance
+ms.subservice: mde
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Manage the sources for Microsoft Defender Antivirus protection updates
@@ -72,7 +75,7 @@ There are five locations where you can specify where an endpoint should obtain u
 To ensure the best level of protection, Microsoft Update allows for rapid releases, which means smaller downloads on a frequent basis. The Windows Server Update Service, Microsoft Endpoint Configuration Manager, Microsoft security intelligence updates, and platform updates sources deliver less frequent updates. Thus, the delta can be larger, resulting in larger downloads.
 
 > [!NOTE]
-> Security intelligence updates contain engine updates and are released on a monthly cadence.
+> Platform updates contain engine updates and are released on a monthly cadence.
 Security intelligence updates are also delivered multiple times a day, but this package doesn't contain an engine.
 
 

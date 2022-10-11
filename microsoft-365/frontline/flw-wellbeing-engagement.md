@@ -12,8 +12,10 @@ ms.service: microsoft-365-frontline
 ms.collection: 
   - M365-collaboration
   - m365-frontline
+  - highpri
   - m365solution-frontline
   - m365solution-scenario
+  - highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -58,7 +60,7 @@ Viva Connections is comprised of three main components that can be set up and cu
 |Component |Description |Capabilities |
 |:---------|:-----------|:------------|
 |Dashboard |The Dashboard is your employee’s digital toolset and enables quick access to popular tasks. |Prioritize cards that help frontline workers accomplish popular tasks like clocking in and out, or viewing assigned tasks. Cards can be targeted to distinct roles and regions. |
-|Feed |The Feed aggregates content from Yammer, SharePoint news, and Stream to display a personalized news stream. |Content in the Feed gets automatically aggregated based on sites and Yammer communities that the user follows. Content can be prioritized to display more prominently in the Feed. |
+|Feed |The Feed aggregates content from Yammer, SharePoint news, and Stream to display a personalized news stream. |Content in the Feed gets automatically aggregated based on sites and Yammer communities that the user follows. Content can be prioritized to display more prominently in the Feed. Use audience targeting to display content to specific audiences. |
 |Resources |The Resources surface links to popular SharePoint portals and other content. |Resources are inherited from global navigation in SharePoint. Link to popular SharePoint portals like HR benefits and training resources. Modern SharePoint portals will display in Teams to provide the best possible viewing experience. |
 
 There are several ways to use Viva Connections to communicate with your workforce. Viva Connections features a [Feed where news, content from Yammer, and videos are aggregated and displayed](/viva/connections/viva-connections-overview#viva-connections-feed) in a personalized view based on the sites and communities that the viewer follows. The [Dashboard](/viva/connections/create-dashboard) can also be used to highlight certain cards that link to important news sources.
@@ -82,7 +84,7 @@ Creating channels for your frontline workers to share feedback helps these teams
 Frontline workers need extra support when it comes to managing health and wellbeing. Not only are their jobs fast paced, but they can also be physically and emotionally demanding.
 
 - **On the Dashboard**: Surface daily health checks, wellness reminders, and [other third-party solutions that keep people feeling connected and productive](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration).
-- **In the Feed**: Use [SharePoint news posts](https://support.microsoft.com/office/create-and-share-news-on-your-sharepoint-sites-495f8f1a-3bef-4045-b33a-55e5abe7aed7#:~:text=In%20SharePoint%20Online%2C%20you%20can%20add%20news%20posts,instructions%20Create%20the%20news%20post%20.%20See%20More) and [Video news links](/viva/connections/video-news-links) to spotlight wellness and health resources.
+- **In the Feed**: Use [SharePoint news posts](https://support.microsoft.com/office/create-and-share-news-on-your-sharepoint-sites-495f8f1a-3bef-4045-b33a-55e5abe7aed7#:~:text=In%20SharePoint%20Online%2C%20you%20can%20add%20news%20posts,instructions%20Create%20the%20news%20post%20.%20See%20More) and [Video news links](/viva/connections/video-news-links) to spotlight wellness and health resources. You can use audience targeting to make sure that posts reach the most relevant people.
 - **In Resources**: Link to wellness and health resources to your workers can access them at any time.
 
 ### Create a supportive digital ecosystem
@@ -141,7 +143,7 @@ If your organization already uses Microsoft Teams, you may have recorded some of
 
 Once a meeting is recorded and saved in SharePoint, your corporate communications team can [add a card in Viva Connections](/viva/connections/create-dashboard#create-a-dashboard-and-add-cards) to make it easily accessible for your frontline team.
 
-### Host live events and share content on Microsoft Stream
+### Host live events and share video content on Microsoft Stream
 
 Microsoft Stream is your organization's own streaming video platform. With Stream, anyone in your organization can record and upload videos to share. Ways you can use Stream to engage your frontline workers include:
 

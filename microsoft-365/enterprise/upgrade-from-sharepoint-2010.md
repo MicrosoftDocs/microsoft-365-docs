@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 04/13/2020
 audience: ITPro
 ms.topic: conceptual
-ms.prod: office-online-server
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 search.appverid:

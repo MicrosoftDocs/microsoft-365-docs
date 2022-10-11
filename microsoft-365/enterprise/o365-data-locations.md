@@ -3,14 +3,15 @@ title: "Microsoft 365 data locations"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/13/2022
+ms.date: 08/30/2022
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection: 
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
@@ -32,9 +33,9 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the trans
 
 Find information about the contractual commitments for the storage location of customer data at rest in the [Microsoft Products and Services Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA).
 
-For Azure Active Directory data locations, please visit [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/#overview).
+For Azure Active Directory data locations, see [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/#overview).
 
-If Customer's billing address is outside Europe and Customer has an Office 365 Education subscription, then notwithstanding the "Location of Customer Data at Rest for Core Online Services" section of the OST, Microsoft may provision Customer's Office 365 tenant in, transfer Customer Data to, and store Customer Data at rest anywhere within Europe or North America.  If Customer's billing address is in Europe and Customer has an Office 365 Education subscription, then notwithstanding the "Location of Customer Data at Rest for Core Online Services" section of the OST, Microsoft may provision Customer's Office 365 tenant in, transfer Customer Data to, and store Customer Data at rest anywhere within the European Union.
+If your billing address is outside Europe and you have an Office 365 Education subscription, then notwithstanding the "Location of Customer Data at Rest for Core Online Services" section of the OST, Microsoft may provision your Office 365 tenant in, transfer your data to, and store your data at rest anywhere within Europe or North America.  If your billing address is in Europe and you have an Office 365 Education subscription, then notwithstanding the "Location of Customer Data at Rest for Core Online Services" section of the OST, Microsoft may provision your Office 365 tenant in, transfer your data to, and store your data at rest anywhere within the European Union.
 
 ## FAQ
 
@@ -575,7 +576,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Forms | United States |
 | Viva Connections | Australia |
 | Viva Topics | Australia |
-| Viva Learning | Global Geography 2 – Asia Pacific |
+| Viva Learning | Australia |
 | Viva Insights - Personal | Australia |
 | Viva Insights - Manager/Leader AAD org data only | Global Geography 2 – Asia Pacific |
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
@@ -5204,6 +5205,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva learning | European Union |
 | Yammer | European Union |
 | Forms | United States |
+
 *Every service that stores customer data at rest in Exchange Online, SharePoint Online or OneDrive for Business, or is deployed locally.
 </p></details>
 
