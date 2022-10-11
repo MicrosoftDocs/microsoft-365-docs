@@ -131,7 +131,7 @@ These scenarios require that you already have devices onboarded and reporting in
 
 #[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Before you begin
+## Before you begin scenario 4
 
 In this scenario, synchronizing files with the **Highly Confidential** sensitivity label to OneDrive is blocked. This is a complex scenario with multiple components and procedures. You will need:
 
@@ -241,7 +241,7 @@ There are three procedures.
 
 ## Scenario 5: Restrict unintentional sharing to unallowed cloud apps and services
 
-With Endpoint DLP and Microisoft Edge Web browser, you can restrict unintentional sharing of sensitive items to unallowed cloud apps and services. Edge understands when an item is restricted by an Endpoint DLP policy and enforces access restrictions.
+With Endpoint DLP and Microsoft Edge Web browser, you can restrict unintentional sharing of sensitive items to unallowed cloud apps and services. Edge understands when an item is restricted by an Endpoint DLP policy and enforces access restrictions.
 
 When you select **Devices** as a location in a properly configured DLP policy and use the Microsoft Edge browser, the unallowed browsers that you've defined in these settings will be prevented from accessing the sensitive items that match your DLP policy controls. Instead, users will be redirected to use Microsoft Edge which, with its understanding of DLP imposed restrictions, can block or restrict activities when the conditions in the DLP policy are met.
 
@@ -308,7 +308,129 @@ Here are some examples:
 1. Select the user activities you want to monitor or restrict and the actions you DLP to take in response to those activities.
 1. Finish configuring the rule and policy and apply it.
 
+## Scenario 7 Authorization groups (preview)
 
+> [!IMPORTANT]
+> Before you can use **Printer groups**, **Removable storage device groups**, **Network share groups**, and **Network exceptions/VPN** you must register [here](https://forms.office.com/r/GNVTFvxuZv).
+
+These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
+
+Authorization groups are mostly used as allow lists. You assigned policy actions to the group that are different than the global policy actions. In this scenario, we'll go through defining a printer group and then configuring a policy with block actions for all print activities except for the printers in the group. These procedures are essentially the same for **Removeable storage device groups**, and **Network share groups**.
+
+In this scenario, we'll define a group of printers that the legal department uses for printing contracts. Printing contracts to any other printers is blocked.
+
+### Create and use printer groups
+
+1. In the Microsoft Purview compliance portal open **Data loss prevention** > **Endpoint DLP settings** > **Printer groups**.
+1. Select **Create printer group** and give the group a name. In this scenarion, we'll use `Legal printers`.
+1. Select **Add printer** and provide a name. You can define printers by:
+    1. Friendly printer name 
+    1. USB product ID
+    1. USB vendor ID
+    1. IP range
+    1. Print to file
+    1. Universal print deployed on a printer
+    1. Corporate printer
+    1. Print to local
+1. Select **Close**.
+
+### Configure policy printing actions
+
+1. Open the **Policies** tab.
+
+1. Select **Create policy** and select the custom policy template.
+1. Scope the location to only **Devices**.
+
+1. Create a rule where:
+    1. **Content contains** = **Trainable classifiers**, **Legal Affairs**
+    1. **Actions** = **Audit or restrict activities on devices**
+    1. Then pick **File activities on all apps**
+    1. The select **Apply restrictions to specific activity**
+    1. Select **Print** = **Block**
+1. Select **Choose different print restrictions**
+1. Under **Printer group restrictions**, select **Add group** and select **Legal printers**.
+1. Set **Action** = **Allow**.
+    > [!TIP]
+    > The **Allow** action wil record  and audit event to the audit log, but not generate an alert or notification. 
+10. Save.
+11. Accept the default **I'd like to test it out first** value and choose **Show policy tips while in test mode**. Choose **Next**.
+
+12. Review your settings and choose **Submit**.
+
+13. The new DLP policy will appear in the policy list.
+
+## Scenario 8 Network exceptions (preview)
+
+> [!IMPORTANT]
+> Before you can use **Printer groups**, **Removable storage device groups**, **Network share groups**, and **Network exceptions/VPN** you must register [here](https://forms.office.com/r/GNVTFvxuZv).
+
+These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
+
+In this scenario, we'll define a list of VPNs that hybrid workers use for accessing organization resources.
+
+### Create and use a Network exception
+
+Network exceptions enables you to configure Allow, Audit only, Block with override, and Block actions to the file activities based on the network that users are accessing the file from. You can select from the [VPN settings](dlp-configure-endpoint-settings.md#vpn-settings-preview) list you defined and **Corporate network** option. The actions can be applied individually or collectively to these user activities:
+
+- Copy to clipboard
+- Copy to a USB removable device
+- Copy to a network share
+- Print
+- Copy or move using unallowed Bluetooth app
+- Copy or move using RDP
+
+#### Get the Server address or Network address
+
+1. On a DLP monitored Windows device, open a **Windows PowerShell** window as an administrator.
+1. Run this cmdlet
+
+```powershell-interactive
+Get-VpnConnection
+```
+
+3. Running this cmdlet returns multiple fields and values.
+1. Find the **ServerAddress** field and record that value. You'll use this when you create a VPN entry in the VPN list.
+1. Find the **Name** field and record that value. The **Name** field maps to the **Network address** field when you create a VPN entry in the VPN list.
+
+#### Add a VPN
+
+1. Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **VPN settings**.
+1. Select **Add or edit VPN addresses**.
+1. Provide either the **Server address** or **Network address** from running Get-VpnConnection.
+1. Select **Save**.
+1. Close the item.
+
+#### Configure policy actions
+
+1. Open the **Policies** tab.
+
+1. Select **Create policy** and select the custom policy template.
+1. Scope the location to only **Devices**.
+
+1. Create a rule where:
+    1. **Content contains** = **Trainable classifiers**, **Legal Affairs**
+    1. **Actions** = **Audit or restrict activities on devices**
+    1. Then pick **File activities on all apps**
+    1. The select **Apply restrictions to specific activity**
+    1. Select the actions that you want to configure **Network exceptions** for.
+1. Select **Copy to clipboard** and the **Audit only** action
+1. Select **Choose different copy to clipboard restrictions**.
+1. Select **VPN** and set the action to **Block with override**.
+
+> [!IMPORTANT]
+> When you want to control the activities of a user when they're connected through a VPN *you must* select the VPN and make the VPN the top priority in the **Network exceptions** configuration. Otherwise, if the **Corporate network** option is selected, then that action defined for the **Corporate network** entry will be enforced.
+
+> [!CAUTION]
+> The **Apply to all activities** option will copy the network exceptions that are defined here and apply them to all the other configured specific activities, like **Print**, and **Copy to a network share**. ***This will overwrite the network exceptions on the other activities The last saved configuration wins.***  
+
+8. Save.
+1. Accept the default **I'd like to test it out first** value and choose **Show policy tips while in test mode**. Choose **Next**.
+
+1. Review your settings and choose **Submit**.
+
+1. The new DLP policy will appear in the policy list.
+ 
+ 
 ## See also
 
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
