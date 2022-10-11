@@ -317,6 +317,7 @@
 ### Next-generation protection
 #### [Next-generation protection overview](next-generation-protection.md)
 ##### [Overview of Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
+##### [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 ##### [Enable and update Microsoft Defender Antivirus on Windows Server](enable-update-mdav-to-latest-ws.md)
 ##### [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
 ##### [Better together: Microsoft Defender Antivirus and Office 365](office-365-microsoft-defender-antivirus.md)
@@ -490,12 +491,12 @@
 #### [Configure AIR capabilities](configure-automated-investigations-remediation.md)
 #### [View the details and results of an automated investigation](autoir-investigation-results.md)
 
-### [Microsoft Threat Experts]()
-#### [Microsoft Threat Experts overview](microsoft-threat-experts.md)
-#### [Configure and manage Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md)
-
 ### [Next generation protection]()
 #### [Run and customize scheduled and on-demand scans](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+
+## [Endpoint Attack Notifications](endpoint-attack-notifications.md)
+
+### [Experts on Demand](experts-on-demand.md)
 
 ## Reference
 ### [Understand threat intelligence concepts](threat-indicator-concepts.md)

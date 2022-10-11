@@ -21,6 +21,9 @@ ms.collection:
 
 # Learn about and configure insider risk management browser signal detection
 
+>[!IMPORTANT]
+>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
+
 Web browsers are often used by users to access both sensitive and non-sensitive files within an organization. Insider risk management allows your organization to detect and act on browser exfiltration signals for all non-executable files viewed in [Microsoft Edge](https://www.microsoft.com/edge) and [Google Chrome](https://www.google.com/chrome) browsers. With these signals, analysts and investigators can quickly act when any of the following activities are performed by in-scope policy users when using these browsers:
 
 - Files copied to personal cloud storage
