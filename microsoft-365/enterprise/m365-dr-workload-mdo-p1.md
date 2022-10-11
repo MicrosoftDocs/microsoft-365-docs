@@ -20,12 +20,9 @@ ms.collection:
 
 ## Summary
  
-Service documentation:  
+Service documentation: <a href="https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide" target="_blank">**Office 365 Security including Microsoft Defender for Office 365**</a> 
 
-- [Office 365 Security including Microsoft Defender for Office 365 and Exchange Online Protection](/security/office-365-security/defender-for-office-365)
-- [Privacy and Security Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all)
-
-Capability Summary: Protects email and collaboration from zero-day malware, phish, and business email compromise.  MDO P1 builds on Exchange Online Protection (EOP).  Data residency capabilities for EOP can be found in Section (***TODO: add link***).
+Capability Summary: Protects email and collaboration from zero-day malware, phish, and business email compromise.  MDO P1 builds on Exchange Online Protection (EOP).  
 
 ## Data Residency commitments available
 
@@ -33,12 +30,51 @@ Capability Summary: Protects email and collaboration from zero-day malware, phis
 
 Required Conditions:
 
-1.	Tenant has a sign-up country included in Local Geography or Expanded Local Geography.
+1.	Tenant has a sign-up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
 2.	Tenant has a valid Advanced Data Residency subscription for all users in the tenant
-3.	The MDO P1 subscription customer data is provisioned in *Local Geography* or *Expanded Local Geography*.
+3.	The MDO P1 subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
 **Commitment:**
 
 The following customer data will be stored in the related *Geography*:
 
 - MDO P1 does not store any customer data within its service.  In addition, all processing of data that is required to analyze threats and inspect suspicious emails, documents, messages, links, etc. is done in a sandbox environment and performed within the *Local Geography* or *Expanded Local Geography*.
+
+## Exchange Online Protection
+
+### Summary
+
+Service documentation: <a href="https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide" target="_blank">**Exchange Online Protection (EOP) overview**</a>
+
+Capability summary: Exchange Online Protection (EOP) is the cloud-based filtering service that protects your organization against spam, malware, and other email threats.
+
+### Data Residency commitments available
+
+#### Option 1: Advanced Data Residency add-on
+
+Required Conditions:
+
+1.	Tenant has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+2.	Tenant has a valid Advanced Data Residency subscription for all users in the tenant
+3.	The EOP subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_
+
+**Commitment:**
+
+The following customer data will be stored in the related _Geography_:
+
+-	EOP service configuration data and policies
+-	Quarantined email and attachments
+-	Junk email
+-	Grading analysis
+-	Block lists (url, tenant, user)
+-	Spam domains
+-	Reports
+-	Alerts
+
+## Migration 
+
+EOP customer data migrates during the Exchange Online migration.  MDO P1 does not have customer data to migrate.
+
+## How can I determine customer data location?
+
+We are in the process of updating the actual data location in Tenant Admin Center.  When this change is complete you will be able to see the actual data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Until that change is visible, you can view the Exchange Online data location information in order to understand where your committed data is stored for this service.
