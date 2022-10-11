@@ -46,7 +46,7 @@ For more information on what's new with other Microsoft Defender security produc
 - [Automated Investigations email cluster action de-duplication](air-review-approve-pending-completed-actions.md) We are putting additional checks if the same investigation cluster is already approved in last 1 hour, new duplicate remediation will not be processed again. 
 
 ## September 2022
-**Automatic redirection from Office Action Center to Unified Action Center:** Action center in the Email & collaboration blade Email & Collaboration > Review > Action center( https://security.microsoft.com/threatincidents) is automated reditected to Actions & Submissions > Action center -> History tab (https://security.microsoft.com/action-center/history)
+**Automatic redirection from Office action center to unified action center:** The action center in the Email & collaboration blade - **Email & Collaboration** > **Review** > **Action center**(https://security.microsoft.com/threatincidents) is automatically redirected to **Actions & Submissions** > **Action center** > **History** (https://security.microsoft.com/action-center/history).
 
 
 **Automatic redirection from Office 365 Security and Compliance Center to Microsoft 365 Defender portal:** Automatic redirection begins for users accessing the security solutions in Office 365 Security and Compliance center (protection.office.com) to the appropriate solutions in Microsoft 365 Defender portal (security.microsoft.com). This is for all security workflows like: Alerts, Threat Management, and Reports. 
