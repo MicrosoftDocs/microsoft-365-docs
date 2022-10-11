@@ -82,7 +82,7 @@ Make sure you understand the following prerequisites before you turn on this fea
     - **Azure Information Protection unified labeling client and scanner:**
         - Minimum version [2.12.62.0](/information-protection/rms-client/unifiedlabelingclient-version-release-history#version-212620) that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
         - For Office apps, requires minimum versions listed for Microsoft 365 Apps for enterprise
-        - You're not using Double Key Encryption in the same tenant
+        - You're not using [Double Key Encryption](double-key-encryption.md) in the same tenant
     
     - **OneDrive sync app for Windows or macOS:**
         - Minimum version of 19.002.0121.0008
