@@ -131,7 +131,7 @@ These scenarios require that you already have devices onboarded and reporting in
 
 #[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Before you begin
+## Before you begin scenario 4
 
 In this scenario, synchronizing files with the **Highly Confidential** sensitivity label to OneDrive is blocked. This is a complex scenario with multiple components and procedures. You will need:
 
