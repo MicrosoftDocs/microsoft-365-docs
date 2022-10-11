@@ -67,7 +67,7 @@ M365 services are not deployed to all Microsoft data centers globally.  The larg
 
 Over time, a particular service may deploy their software to additional _Geographies_, so the provisioning locations for new customers can change over time, and this does not necessarily cause customer data to be moved to a new _Geography_.
 
-In order to understand where your data, for a given service is stored, your primarily tool for understanding this is in the Tenant Admin Center.  As a tenant administrator you can find the actual data location by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Currently the data location is available for Exchange Online, SharePoint Online and Microsoft Teams.  In addition to this resource, please review to section (***TODO: insert link to datamaps link farm page)***.
+In order to understand where your data, for a given service is stored, your primarily tool for understanding this is in the Tenant Admin Center.  As a tenant administrator you can find the actual data location by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Currently the data location is available for Exchange Online, SharePoint Online and Microsoft Teams.  In addition to this resource, please see the [Data Maps page](o365-data-locations.md).
 
 Some examples:
 
@@ -204,7 +204,7 @@ Review our [definitions for different types of data](https://go.microsoft.com/fw
 
 <details><summary>Click to expand</summary>
 
-Microsoft does not disclose the exact addresses of its data centers. We established this policy to help secure our data center facilities.  However, we do list city locations. Please see (***TODO add link to city table***) to learn more.
+Microsoft does not disclose the exact addresses of its data centers. We established this policy to help secure our data center facilities.  However, we do list city locations. Please see Table 5 in the [Country/Region specific Dat Center City Locations](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-overview?view=o365-worldwide&branch=kvice-ADR-new#countryregion-specific-data-center-city-locations) on the Overview and Definitions page to learn more.
 
 </details>
 
@@ -218,7 +218,7 @@ The performance of Microsoft 365 is not simply proportional to a user's distance
 #### How does Microsoft help me comply with my national, regional, and industry-specific regulations?
 <details><summary>Click to expand</summary>
 
-To help you comply with national, regional, and industry-specific requirements governing the collection and use of individuals' data, Microsoft 365 offers the most comprehensive set of compliance offerings of any global cloud productivity provider. Please review [our compliance offerings](/compliance/regulatory/offering-home) and more details in the [Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=862317) section on the Microsoft Trust Center. Also, certain Microsoft 365 plans offer further compliance solutions to help you manage your data, comply with legal and regulatory requirements, and monitor actions taken on your data.
+To help you comply with national, regional, and industry-specific requirements governing the collection and use of individuals' data, Microsoft 365 offers the most comprehensive set of compliance offerings of any global cloud productivity provider. Please review [our compliance offerings](compliance.md) and more details in the [Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=862317) section on the Microsoft Trust Center. Also, certain Microsoft 365 plans offer further compliance solutions to help you manage your data, comply with legal and regulatory requirements, and monitor actions taken on your data.
 
 </details>
 
