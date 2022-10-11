@@ -327,4 +327,5 @@ The process of email data migration to Microsoft 365 during the Exchange Online 
 
   
   ### How can I determine customer data location?
-	You can find the actual data location in Tenant Admin Center.  As a tenant administrator you can find the actual data location, for committed data,  by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  
+  
+You can find the actual data location in Tenant Admin Center.  As a tenant administrator you can find the actual data location, for committed data,  by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  If you do not have a tenant created, you can have a tenant created when signing up for a M365 trial.
