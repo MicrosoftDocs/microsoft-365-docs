@@ -107,4 +107,4 @@ Microsoft 365 Defender licensing requirements must be met before you can enable 
 
 ## See also
 
-- [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+- [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
