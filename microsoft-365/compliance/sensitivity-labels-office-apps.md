@@ -472,19 +472,17 @@ As part of this high visibility, these labels also support colors. For more info
 
 Newly created labels don't have a color by default. If your labels were [migrated from Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) or you configured label colors for the Azure Information Protection unified labeling client, these label colors are now displayed in apps that support them.
 
-Use the Microsoft Purview compliance portal to select one of 10 standard colors for sensitivity labels. This configuration is on the first page of the label configuration after the label name and description.
+Use the Microsoft Purview compliance portal to select one of 10 standard colors for sensitivity labels. The **Label color** configuration is on the first page of the label configuration after the label name and description.
 
 You can't select colors for sublabels because they automatically inherit the label color from their parent label.
 
-If the label is configured for a different color from one of the 10 colors, you see a **Custom color** option selected and the standard color options aren't available:
+If a label is configured for a different color from one of the 10 default colors, you see a **Use previously assigned customer color** checkbox selected, and the standard color options aren't available. You can change the custom color to one of the standard colors by first clearing the checkbox, and then you can select one of the standard colors. 
 
-![Sensitivity label color configuration when the label has a custom color.](../media/label-custom-color-configuration.png)
-
-You can change the custom color to one of the standard colors by first removing the custom color selection, and then selecting one of the standard colors. But you can't use the compliance portal to configure a different custom color. Instead, use PowerShell, as described in the next section.
+You can't use the compliance portal to configure a different custom color. Instead, use PowerShell, as described in the next section.
 
 #### Configuring custom colors by using PowerShell 
 
-You can use the [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell) advanced setting **color** to set a color for a sensitivity label. This configuration supports colors that you can't configure in the Microsoft Purview compliance portal.
+You can use the [Security & Compliance PowerShell](/powershell/exchange/scc-powershell) advanced setting **color** to set a color for a sensitivity label. This configuration supports colors that you can't configure in the Microsoft Purview compliance portal.
 
 To specify your choice of color, use a hex triplet code for the red, green, and blue (RGB) components of the color. For example, #40e0d0 is the RGB hex value for turquoise.
 
