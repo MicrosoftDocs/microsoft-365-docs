@@ -343,7 +343,7 @@ You can assign these policy actions to the group in a DLP policy:
 1. Add other printers as needed.
 1. Select **Close**.
 
-The most common use case is to use printers groups as an allowlist as in the above example for allowing the printing of contracts only to printers that are in the legal department. After you define a printer group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups) for more information on configuring policy actions to use authorization groups.
+The most common use case is to use printers groups as an allowlist as in the above example for allowing the printing of contracts only to printers that are in the legal department. After you define a printer group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) for more information on configuring policy actions to use authorization groups.
 
 ### Removable storage device groups (preview)
 
@@ -388,7 +388,7 @@ You can assign these policy actions to the group in a DLP policy:
 1. Add other devices to the group as needed.
 1. Select **Close**.
 
-The most common use case is to use removable storage devices groups as an allowlist as in the above example for allowing the copying of files only to devices that are in the **Backup** group. After you define a removable storage device group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups) for more information on configuring policy actions to use authorization groups. While scenario 7 uses printer authorization groups as an example, the principles are identical. The only thing that changes are the names of the groups and the actions you select.
+The most common use case is to use removable storage devices groups as an allowlist as in the above example for allowing the copying of files only to devices that are in the **Backup** group. After you define a removable storage device group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) for more information on configuring policy actions to use authorization groups. While scenario 7 uses printer authorization groups as an example, the principles are identical. The only thing that changes are the names of the groups and the actions you select.
 
 ### Network share groups (preview)
 
@@ -433,7 +433,7 @@ You can assign these policy actions to the group in a DLP policy:
 1. Select **Close**.
 
 
-The most common use case is to use network share group as an allowlist as in the above example for allowing users to save or copy protected files only to the network shares that are defined in the group. After you define a networks share group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups) for more information on configuring policy actions to use authorization groups.
+The most common use case is to use network share group as an allowlist as in the above example for allowing users to save or copy protected files only to the network shares that are defined in the group. After you define a networks share group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) for more information on configuring policy actions to use authorization groups.
 
 ### VPN settings (preview)
 
@@ -488,7 +488,7 @@ Get-VpnConnection
 > [!IMPORTANT]
 > When you use the VPN list in defining the actions of a policy, you will also see **Corporate network** as an option. **Corporate network** connections are are all connections to your organizations resources.These connections can include VPNs. 
 
-See, [Scenario 8 Network exceptions](endpoint-dlp-using.md#scenario-8-network-exceptions)for more information on configuring policy actions to use network exceptions.
+See, [Scenario 8 Network exceptions](endpoint-dlp-using.md#scenario-8-network-exceptions-preview)for more information on configuring policy actions to use network exceptions.
 
 ## See also
 
