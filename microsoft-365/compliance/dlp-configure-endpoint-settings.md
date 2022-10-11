@@ -297,7 +297,7 @@ By default, when devices are onboarded, activity for Office, PDF, and CSV files 
 File activity will always be audited for onboarded devices, regardless of whether they're included in an active policy.
 
 > [!IMPORTANT]
-> Before you can use [Printer groups](#printer-groups), [Removable storage device groups](#removable-storage-device-groups), [Network share groups](#network-share-groups), and [VPN settings](#vpn-settings) you must register [here](https://forms.office.com/r/GNVTFvxuZv).
+> Before you can use [Printer groups (preview)](#printer-groups-preview), [Removable storage device groups](#removable-storage-device-groups-preview), [Network share groups](#network-share-groups-preview), and [VPN settings](#vpn-settings-preview) you must register [here](https://forms.office.com/r/GNVTFvxuZv).
 
 ### Printer groups (preview)
 
