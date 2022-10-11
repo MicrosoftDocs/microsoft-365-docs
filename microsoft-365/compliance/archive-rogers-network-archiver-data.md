@@ -59,13 +59,13 @@ The following overview explains the process of using a connector to archive Roge
 
 After you've completed the prerequisites described in the previous section, you can create the Rogers Network Archiver connector in the compliance portal. The connector uses the information you provide to connect to the TeleMessage site and transfer Rogers SMS/MMS data to the corresponding user mailbox boxes in Microsoft 365.
 
-1. Go to <https://compliance.microsoft.com> and then click **Data connectors** > **Rogers Network Archiver**.
+1. Go to <https://compliance.microsoft.com> and then select **Data connectors** > **Rogers Network Archiver**.
 
-2. On the **Rogers Network Archiver** product description page, click **Add connector**.
+2. On the **Rogers Network Archiver** product description page, select **Add connector**.
 
-3. On the **Terms of service** page, click **Accept**.
+3. On the **Terms of service** page, select **Accept**.
 
-4. On the **Login to TeleMessage** page, under Step 3, enter the required information in the following boxes and then click **Next**.
+4. On the **Login to TeleMessage** page, under Step 3, enter the required information in the following boxes and then select **Next**.
 
     - **Username:** Your TeleMessage username.
 
@@ -73,9 +73,9 @@ After you've completed the prerequisites described in the previous section, you 
 
 5. After the connector is created, you can close the pop-up window and go to the next page.
 
-6. On the **User mapping** page, enable automatic user mapping. To enable custom mapping, upload a CSV file that contains the user mapping information, and then click **Next**.
+6. On the **User mapping** page, enable automatic user mapping. To enable custom mapping, upload a CSV file that contains the user mapping information, and then select **Next**.
 
-7. Review your settings, and then click **Finish** to create the connector.
+7. Review your settings, and then select **Finish** to create the connector.
 
 8. Go to the Connectors tab in **Data connectors** page to see the progress of the import process for the new connector.
 

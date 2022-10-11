@@ -61,13 +61,13 @@ Some of the implementation steps required to archive TELUS Network data are exte
 
 After you've completed the prerequisites described in the previous section, you can create TELUS Network connector in the compliance portal. The connector uses the information you provide to connect to the TeleMessage site and transfer SMS messages to the corresponding user mailbox boxes in Microsoft 365.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** > **TELUS Network**.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then select **Data connectors** > **TELUS Network**.
 
-2. On the **TELUS Network** product description page, click **Add connector**
+2. On the **TELUS Network** product description page, select **Add connector**
 
-3. On the **Terms of service** page, click **Accept**.
+3. On the **Terms of service** page, select **Accept**.
 
-4. On the **Login to TeleMessage** page, under Step 3, enter the required information in the following boxes and then click **Next**.
+4. On the **Login to TeleMessage** page, under Step 3, enter the required information in the following boxes and then select **Next**.
 
    - **Username:** Your TeleMessage username.
 
@@ -75,9 +75,9 @@ After you've completed the prerequisites described in the previous section, you 
 
 5. After the connector is created, you can close the pop-up window and go to the next page.
 
-6. On the **User mapping** page, enable automatic user mapping and click **Next**. In case you need custom mapping upload a CSV file, and click **Next**.
+6. On the **User mapping** page, enable automatic user mapping and select **Next**. In case you need custom mapping upload a CSV file, and select **Next**.
 
-7. Review your settings, and then click **Finish** to create the connector.
+7. Review your settings, and then select **Finish** to create the connector.
 
 8. Go to the Connectors tab in **Data connectors** page to see the progress of the import process for the new connector.
 

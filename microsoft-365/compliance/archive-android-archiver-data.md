@@ -57,23 +57,23 @@ Some of the implementation steps required to archive Android communication data 
 
 The last step is to create an Android Archiver connector in the compliance portal. The connector uses the information you provide to connect to the TeleMessage site and transfer Android communication to the corresponding user mailbox boxes in Microsoft 365.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** > **Android Archiver**.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and select **Data connectors** > **Android Archiver**.
 
-2. On the **Android Archiver** product description page, click **Add connector**.
+2. On the **Android Archiver** product description page, select **Add connector**.
 
-3. On the **Terms of service** page, click **Accept**.
+3. On the **Terms of service** page, select **Accept**.
 
-4. On the **Login to TeleMessage** page, under Step 3, enter the required information in the following boxes and then click **Next**.
+4. On the **Login to TeleMessage** page, under Step 3, enter the required information in the following boxes and then select **Next**.
 
    - **Username:** Your TeleMessage username.
 
    - **Password:** Your TeleMessage password.
 
-5. After the connector is created, close the pop-up window and click **Next**.
+5. After the connector is created, close the pop-up window and select **Next**.
 
-6. On the **User mapping** page, enable automatic user mapping and click **Next**. In case you need custom mapping upload a CSV file, and click **Next**.
+6. On the **User mapping** page, enable automatic user mapping and select **Next**. In case you need custom mapping upload a CSV file, and select **Next**.
 
-7. Review your settings, and then click **Finish** to create the connector.
+7. Review your settings, and then select **Finish** to create the connector.
 
 8. Go to the Connectors tab in **Data connectors** page to see the progress of the import process for the new connector.
 

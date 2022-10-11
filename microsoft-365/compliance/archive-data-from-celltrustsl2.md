@@ -53,21 +53,21 @@ CellTrust's SL2 platform captures communication data from multiple sources. SL2 
 
 The first step is to create a data connector in the compliance portal.
 
-1. Go to <https://compliance.microsoft.com> and click **Data connectors** on the left navigation pane.
+1. Go to <https://compliance.microsoft.com> and select **Data connectors** on the left navigation pane.
 
-2. On the **Overview** tab, click **Filter** and select **By CellTrust**, and then apply the filter.
+2. On the **Overview** tab, select **Filter** and select **By CellTrust**, and then apply the filter.
 
    ![Configure filter to display CellTrust connectors.](../media/dataconnectorsFilter.png)
 
-3. Click **CellTrust SL2 (preview)**.
+3. Select **CellTrust SL2 (preview)**.
 
-4. On the **CellTrust SL2 (preview)** product description page, click **Add connector**.
+4. On the **CellTrust SL2 (preview)** product description page, select **Add connector**.
 
-5. On the **Terms of service** page, click **Accept**.
+5. On the **Terms of service** page, select **Accept**.
 
-6. Enter a unique name that identifies the connector and then click **Next**. The name you enter will identify the connector on the **Data connectors** page after you create it.
+6. Enter a unique name that identifies the connector and then select **Next**. The name you enter will identify the connector on the **Data connectors** page after you create it.
 
-7. On the **Sign in to your CellTrust account** page, click **Sign into CellTrust**. You'll be redirected to the **CellTrust Portal for Microsoft 365** in a new browser window.
+7. On the **Sign in to your CellTrust account** page, select **Sign into CellTrust**. You'll be redirected to the **CellTrust Portal for Microsoft 365** in a new browser window.
 
 ## Step 2: Select the domains or OUs to archive
 
@@ -93,7 +93,7 @@ The last step is to map users and complete the connector setup in the compliance
 
 1. On the **User mapping** page, select **Enable automatic user mapping** if the email address for users is the same in both SL2 and  Microsoft 365. Otherwise, you should manually user email addresses by uploading a CSV file that maps users' SL2 address to their Microsoft 365 address.
 
-2. Click **Next**, review your settings, and then click **Finish** to create the connector.
+2. Select **Next**, review your settings, and then select **Finish** to create the connector.
 
    The new connector is added to the list on the **Data connectors** page.
 

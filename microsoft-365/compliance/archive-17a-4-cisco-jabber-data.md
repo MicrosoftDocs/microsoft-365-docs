@@ -50,13 +50,13 @@ The following overview explains the process of using a data connector to archive
 
 The first step is to access to the Data connectors page in the compliance portal and create a 17a-4 connector for Cisco Jabber data.
 
-1. Go to <https://compliance.microsoft.com> and then click **Data connectors** > **Cisco Jabber DataParser**.
+1. Go to <https://compliance.microsoft.com> and then select **Data connectors** > **Cisco Jabber DataParser**.
 
-2. On the **Cisco Jabber DataParser** product description page, click **Add connector**.
+2. On the **Cisco Jabber DataParser** product description page, select **Add connector**.
 
-3. On the **Terms of service** page, click **Accept**.
+3. On the **Terms of service** page, select **Accept**.
 
-4. Enter a unique name that identifies the connector and then click **Next**.
+4. Enter a unique name that identifies the connector and then select **Next**.
 
 5. Sign in to your 17a-4 account and complete the steps in the Cisco Jabber DataParser connection wizard.
 
@@ -72,11 +72,11 @@ The Cisco Jabber DataParser connector will automatically map users to their Micr
 
 After you create a Cisco Jabber DataParser connector, you can view the connector status in the compliance portal.
 
-1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
+1. Go to <https://compliance.microsoft.com> and select **Data connectors** in the left nav.
 
-2. Click the **Connectors** tab and then select the Cisco Jabber DataParser connector that you created to display the flyout page, which contains the properties and information about the connector.
+2. Select the **Connectors** tab and then select the Cisco Jabber DataParser connector that you created to display the flyout page, which contains the properties and information about the connector.
 
-3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about the data that's been imported to the Microsoft cloud. For more information, see [View admin logs for data connectors](data-connector-admin-logs.md).
+3. Under **Connector status with source**, select the **Download log** link to open (or save) the status log for the connector. This log contains information about the data that's been imported to the Microsoft cloud. For more information, see [View admin logs for data connectors](data-connector-admin-logs.md).
 
 ## Known issues
 

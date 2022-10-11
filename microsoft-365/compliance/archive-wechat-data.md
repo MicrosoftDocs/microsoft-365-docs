@@ -57,13 +57,13 @@ The following overview explains the process of using a connector to archive WeCh
 
 Follow the steps in this section to create a WeChat Archiver connector in the compliance portal. The connector uses the information you provide to connect to the TeleMessage site and transfer WeChat communications data to the corresponding user mailboxes in Microsoft 365.
 
-1. Go to <https://compliance.microsoft.com> and then click **Data connectors** > **WeChat Archiver**.
+1. Go to <https://compliance.microsoft.com> and then select **Data connectors** > **WeChat Archiver**.
 
-2. On the **WeChat Archiver** product description page, click **Add connector**
+2. On the **WeChat Archiver** product description page, select **Add connector**
 
-3. On the **Terms of service** page, click **Accept**.
+3. On the **Terms of service** page, select **Accept**.
 
-4. On the **Login to TeleMessage** page, under Step 3, enter the required information in the following boxes and then click **Next**.
+4. On the **Login to TeleMessage** page, under Step 3, enter the required information in the following boxes and then select **Next**.
 
     - **Username**: Your TeleMessage user name.
 
@@ -73,7 +73,7 @@ Follow the steps in this section to create a WeChat Archiver connector in the co
 
 6. On the **User mapping** page, enable automatic user mapping. You can also upload a custom user mapping CSV file.
 
-7. Click **Next**, review your settings, and then click **Finish** to create the connector.
+7. Select **Next**, review your settings, and then select **Finish** to create the connector.
 
 8. Go to the **Connectors** tab on **Data connectors** page to see the progress of the import process for the new connector.
 

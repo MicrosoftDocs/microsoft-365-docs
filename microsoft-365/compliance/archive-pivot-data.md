@@ -48,13 +48,13 @@ The following overview explains the process of using a connector to archive the 
 
 The first step is to access to the **Data Connectors** page in the Microsoft compliance center and create a connector for Pivot data.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** > **Pivot**.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then select **Data connectors** > **Pivot**.
 
-2. On the **Pivot** product description page, click **Add connector**.
+2. On the **Pivot** product description page, select **Add connector**.
 
-3. On the **Terms of service** page, click **Accept**.
+3. On the **Terms of service** page, select **Accept**.
 
-4. Enter a unique name that identifies the connector and then click **Next**.
+4. Enter a unique name that identifies the connector and then select **Next**.
 
 5. Sign in to your Merge1 account to configure the connector.
 
@@ -62,7 +62,7 @@ The first step is to access to the **Data Connectors** page in the Microsoft com
 
 The second step is to configure the Pivot connector on the Merge1 site. For information about how to configure the Pivot connector on the Veritas Merge1 site, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Pivot%20User%20Guide%20.pdf).
 
-After you click **Save & Finish**, the **User mapping** page in the connector wizard in the compliance portal is displayed.
+After you select **Save & Finish**, the **User mapping** page in the connector wizard in the compliance portal is displayed.
 
 ## Step 3: Map users and complete the connector setup
 
@@ -70,17 +70,17 @@ To map users and complete the connector setup in the Microsoft 356 compliance ce
 
 1. On the **Map Pivot users to Microsoft 365 users** page, enable automatic user mapping. The Pivot items include a property called *Email*, which contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the items are imported to that user's mailbox.
 
-2. Click **Next**, review your settings, and go to the **Data connectors** page to see the progress of the import process for the new connector.
+2. Select **Next**, review your settings, and go to the **Data connectors** page to see the progress of the import process for the new connector.
 
 ## Step 4: Monitor the Pivot connector
 
 After you create the Pivot connector, you can view the connector status in the compliance portal.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** in the left nav.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and select **Data connectors** in the left nav.
 
-2. Click the **Connectors** tab and then select the **Pivot** connector to display the flyout page. This page contains the properties and information about the connector.
+2. Select the **Connectors** tab and then select the **Pivot** connector to display the flyout page. This page contains the properties and information about the connector.
 
-3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about the data that's been imported to the Microsoft cloud. For more information, see [View admin logs for data connectors](data-connector-admin-logs.md).
+3. Under **Connector status with source**, select the **Download log** link to open (or save) the status log for the connector. This log contains information about the data that's been imported to the Microsoft cloud. For more information, see [View admin logs for data connectors](data-connector-admin-logs.md).
 
 ## Known issues
 
