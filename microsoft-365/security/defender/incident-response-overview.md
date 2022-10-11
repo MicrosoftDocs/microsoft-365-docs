@@ -32,7 +32,7 @@ Here are the primary investigate and respond tasks for Microsoft 365 Defender:
 - [Review and approve automatic remediation actions](#automated-investigation-and-remediation)
 - [Search for known threats in your data](#proactive-search-for-threats-with-advanced-hunting)
 - [Understand the latest cyberattacks](#get-ahead-of-emerging-threats-with-threat-analytics)
-- [Get help](#collaborate-with-microsoft-experts)
+- [Get help](#collaborate-with-microsoft-defender-experts)
 
 ## Incident response
 
@@ -49,7 +49,7 @@ For each incident, use your incident response workflow to analyze the incident a
 
 If your organization is using Microsoft 365 Defender, your security operations team receives an alert within the Microsoft 365 Defender portal whenever a malicious or suspicious activity or artifact is detected. Given the never-ending flow of threats that can come in, security teams often face the challenge of addressing the high volume of alerts. Fortunately, Microsoft 365 Defender includes automated investigation and response (AIR) capabilities that can help your security operations team address threats more efficiently and effectively.
 
-When an automated investigation completes, a verdict is reached for every piece of evidence of an incident. Depending on the verdict, remediation actions are identified. In some cases, remediation actions are taken automatically; in other cases, remediation actions await approval through the Microsoft 365 Defender Action center. 
+When an automated investigation completes, a verdict is reached for every piece of evidence of an incident. Depending on the verdict, remediation actions are identified. In some cases, remediation actions are taken automatically; in other cases, remediation actions await approval through the Microsoft 365 Defender Action center.
 
 For more information, see [Automated investigation and response in Microsoft 365 Defender](m365d-autoir.md).
 
