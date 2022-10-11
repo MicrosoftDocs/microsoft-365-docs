@@ -129,14 +129,14 @@ For more information, see [Apply a retention label to a model in Microsoft Synte
 :::row:::
    :::column span="3":::
       Having one or more Syntex licenses in your organization enables the following additional term store features for admins:
-      - [SKOS-based term set import](import-term-set-skos.md), which lets you import a term set using a SKOS-based format.
-       
+             
    :::column-end:::
    :::column span="":::
       ![Image of generic taxonomy icon.](../media/content-understanding/taxonomy-image.png)
    :::column-end:::
 :::row-end:::
 
+- [SKOS-based term set import](import-term-set-skos.md), which lets you import a term set using a SKOS-based format.
 - [Pushing enterprise content types to a hub site](push-content-type-to-hub.md), which also adds them to the associated sites and any newly created lists or libraries.
 - [Term store reports](term-store-analytics.md), which provides you insights into published term sets and their use across your organization.
 
