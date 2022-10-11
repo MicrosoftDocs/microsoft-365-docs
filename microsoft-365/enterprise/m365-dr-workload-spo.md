@@ -560,3 +560,5 @@ The following search features are affected:
 As part of the migration, the *Primary Provisioned Geography*  will change and all new content will be stored at rest in the new *Primary Provisioned Geography*. Existing content will move in the background with no impact to you for up to 90 days after the first change to the SharePoint Online data location in the admin center.
 
 
+  ## How can I determine customer data location?
+	You can find the actual data location in Tenant Admin Center.  As a tenant administrator you can find the actual data location, for committed data,  by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location. 
