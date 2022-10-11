@@ -23,7 +23,7 @@ ms.collection:
 Service documentation:  
 
 - [Office 365 Security including Microsoft Defender for Office 365 and Exchange Online Protection](/security/office-365-security/defender-for-office-365)
-- [Privacy and Security Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all)
+
 
 Capability Summary: Protects email and collaboration from zero-day malware, phish, and business email compromise.  MDO P1 builds on Exchange Online Protection (EOP).  
 
