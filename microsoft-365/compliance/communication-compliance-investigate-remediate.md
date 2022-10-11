@@ -241,7 +241,7 @@ If you'd like to create more than a simple text-based email message for notifica
 > [!NOTE]
 > HTML href attribute implementation in the communication compliance notification templates currently support only single quotation marks instead of double quotation marks for URL references.
 
-## Unresolved messages (preview)
+## Unresolve messages (preview)
 
 When messages are resolved, they're removed from the **Pending** tab view and displayed in the **Resolved** tab. Investigation and remediation actions aren't available for messages in the *Resolved* view. However, there may be instances where you need to take additional action on a message that was mistakenly resolved or that needs further investigation after initial resolution. You can use the unresolve command feature move one or more messages from the *Resolved* view back to the *Pending* view.
 
