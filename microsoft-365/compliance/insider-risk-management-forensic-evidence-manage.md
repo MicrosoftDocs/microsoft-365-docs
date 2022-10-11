@@ -67,7 +67,7 @@ After requests are complete, users assigned to the *Insider Risk Management Appr
 3. On the **Review forensic evidence request (preview)** pane, review the justification submitted by the requestor. Select **Approve** or **Reject** as applicable.
 4. On the **Request approved** or **Request rejected** page, select **Close**.
 
-SCREENSHOT
+![Insider risk management forensic evidence approval.](../media/insider-risk-forensic-evidence-approval.png)
 
 ### Revoke capturing approvals
 
@@ -84,7 +84,7 @@ To revoke approvals for users, users assigned to the *Insider Risk Management Ap
 
 You can create and use a notification template to send an email to users letting them know that forensic evidence capturing will be turned on for their device in accordance with your organization's policies. The email is sent to users only if their request is approved.
 
-SCREENSHOT
+![Insider risk management forensic evidence notification.](../media/insider-risk-forensic-evidence-notification.png)
 
 To create a new notification template, complete the following steps:
 
@@ -128,7 +128,7 @@ To view a capture clip, complete the following steps:
 
 To view clips for activity not associated with alerts, you'll use [User activity reports](/microsoft-365/compliance/insider-risk-management-activities#user-activity-reports). User activity reports allow you to examine activities for specific users for a defined time period without having to assign them temporarily or explicitly to an insider risk management policy. If these user activities include activities supported by forensic evidence capturing, clips are included with the user activity.
 
-SCREENSHOT
+![Insider risk management forensic evidence user activity.](../media/insider-risk-forensic-evidence-user-activity.png)
 
 If you've configured forensic evidence to capture all security-related user activity, regardless of whether they're included in a forensic evidence policy, you'll review these captures by selecting **Insider risk management** > **User activity reports** and then selecting a specific user and selecting the **Forensic evidence (preview)** tab. Reviewing forensic evidence captures for cases follows the same process as when you review captures as part of examining alerts.
 
@@ -140,7 +140,7 @@ If alerts are escalated to cases, all associated forensic evidence captures are 
 
 After devices are configured to support forensic evidence, you can review the Microsoft Purview Client health status for all devices in your organization by navigating to **Insider risk management** > **Forensic evidence (preview)** > **Device health**.
 
-SCREENSHOT
+![Insider risk management forensic evidence device health.](../media/insider-risk-forensic-evidence-device-health.png)
 
 The report allows you to view the status and health of all devices that have the forensic evidence agent installed. Each report widget on the report displays information for last 24 hours.
 
