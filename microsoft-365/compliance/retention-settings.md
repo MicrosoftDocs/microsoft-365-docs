@@ -265,11 +265,7 @@ The **Exchange public folders** location applies retention settings to all publi
 
 #### Exceptions for auto-apply policies configured for sensitive information types
 
-When you configure an auto-apply policy that uses sensitive information types and select the **Exchange email** location:
-
-- Microsoft 365 group mailboxes are included.
-
-- All mailboxes are automatically included, even if you configure an adaptive scope to identify specific mailboxes. If you've chosen a static policy scope, you won't be able to specify recipients to include or exclude.
+When you configure an auto-apply policy that uses sensitive information types and select the **Exchange email** location, see the important callout for [Auto-apply labels to content with specific types of sensitive information](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information).
 
 ### Configuration information for SharePoint sites and OneDrive accounts
 
