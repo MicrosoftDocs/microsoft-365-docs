@@ -75,17 +75,13 @@ Complete the following steps to add users to the eDiscovery Manager role group:
 
 1. Go to the compliance portal and sign in using the credentials for an admin account in your Microsoft 365 or Office 365 organization.
 
-2. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> page, select the **eDiscovery Manager** role group.
-
-3. On the eDiscovery Manager flyout page, click **Edit** next to the **eDiscovery Manager** section.
-
-4. On the **Choose eDiscovery Manager** page in the edit role group wizard, click **Choose Discovery Manager**.
-
-5. Click **Add** then select the checkbox for all users you want to add to the role group.
-
-6. Click **Add** to add the selected users, and then click **Done**.
-
-7. Click **Save** to add the users to the role group, and then click **Close** to complete the step.
+2. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> page, expand the **Microsoft Purview solution** section
+3. Click on **Roles** section and Click on **eDiscovery Manager** check box.
+4. On the eDiscovery Manager flyout page, Click **Edit Role Group**/
+5. On the **Choose eDiscovery Manager** page in the edit role group wizard, Click **Choose dicovery manager**
+6. Click **Add** then select the checkbox for all users you want to add to the role group.
+7. Click **Add** to add the selected users, and then click **Done**.
+8. Click **Save** to add the users to the role group, and then click **Close** to complete the step.
 
 ### More information about the eDiscovery Manager role group
 
