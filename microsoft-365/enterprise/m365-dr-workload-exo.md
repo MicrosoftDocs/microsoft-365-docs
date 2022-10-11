@@ -1,6 +1,6 @@
 ---
 title: Data Residency for Exchange Online
-description: Data Residency for Exchange Online
+description: Learn about Data Residency for Exchange Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -107,9 +107,9 @@ The requirements for installing and using the Exchange Online PowerShell module 
 
 To connect Exchange Online PowerShell to a specific Geography location, the ConnectionUri parameter is different than the regular connection instructions. The rest of the commands and values are the same.
 
-Specifically, you need to add the ?email=<emailaddress> value to end of the ConnectionUri value. <emailaddress> is the email address of **any** mailbox in the target Geography location. Your permissions to that mailbox or the relationship to your credentials are not a factor; the email address simply tells Exchange Online PowerShell where to connect.
+Specifically, you need to add the ?email=\<emailaddress\> value to end of the ConnectionUri value. \<emailaddress\> is the email address of **any** mailbox in the target Geography location. Your permissions to that mailbox or the relationship to your credentials are not a factor; the email address simply tells Exchange Online PowerShell where to connect.
   
-Microsoft 365 or Microsoft 365 GCC customers typically don't need to use the _ConnectionUri_ parameter to connect to Exchange Online PowerShell. But, to connect to a specific Geography location, you do need to use ConnectionUri parameter so you can use ?email=<emailaddress> in the value.
+Microsoft 365 or Microsoft 365 GCC customers typically don't need to use the _ConnectionUri_ parameter to connect to Exchange Online PowerShell. But, to connect to a specific Geography location, you do need to use ConnectionUri parameter so you can use ?email=\<emailaddress\> in the value.
   
 #### Connect to a geo location in Exchange Online PowerShell
 
