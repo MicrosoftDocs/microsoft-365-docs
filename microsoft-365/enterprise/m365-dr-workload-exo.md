@@ -1,6 +1,6 @@
 ---
 title: Data Residency for Exchange Online
-description: Data Residency for Exchange Online
+description: Learn about Data Residency for Exchange Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv

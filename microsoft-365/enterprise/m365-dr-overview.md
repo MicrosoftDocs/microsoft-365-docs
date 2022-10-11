@@ -1,6 +1,6 @@
 ---
 title: Overview and Definitions
-description: Data Residency feature Overview and Definitions
+description: Learn about Data Residency feature Overview and Definitions
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 10/6/2022
+ms.date: 10/11/2022
 ms.reviewer: 
 ms.custom:
 - it-pro
