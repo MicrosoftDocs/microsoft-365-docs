@@ -23,7 +23,7 @@ Technical support is provided in English 24 hours a day, 7 days a week.
 Admins, have your account details ready when you call.
 
 > [!NOTE]
-> To better protect your organization, we added a PIN-based verification step to our existing phone-based verification process. If you contact us from a number that isn't registered with your organization profile, the Microsoft support representative sends a verification code to the registered email or phone number in your Microsoft 365 admin center profile. You must provide this code to the support representative to grant them access to your organization’s account.
+> To better protect your organization, we added a PIN-based verification step to our existing phone-based verification process. If you contact us from a number that isn't registered with your organization profile, the Microsoft support representative sends a verification code to the registered email or phone number in your Microsoft 365 admin center profile. You must provide this code to the support representative to grant them access to your organization's account.
 
 :::row:::
    :::column:::
@@ -199,7 +199,8 @@ Spanish: 24 hours a day, 7 days a week
    :::column:::
 **Phone number:**\
 800 0123\
-Select "Business", then select "Microsoft 365"
+After dialing, enter\
+877 635 7034
 
 **Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
@@ -235,7 +236,8 @@ Spanish: 24 hours a day, 7 days a week
    :::column:::
 **Phone number:**\
 1800 0164\
-Select "Business", then select "Microsoft 365"
+After dialing, enter\
+877 635 7036
 
 **Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
@@ -938,7 +940,7 @@ Local call charges apply
    :::column:::
 **Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
- 
+
 **Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
@@ -966,7 +968,8 @@ Spanish: 24 hours a day, 7 days a week
    :::column:::
 **Phone number:**\
 1 800 225 528\
-Select "Business", then select "Microsoft 365"
+After dialing, enter\
+877 663 5075
 
 **Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
@@ -1949,7 +1952,8 @@ English: 24 hours a day, 7 days a week
    :::column:::
 **Phone number:**\
 0800 94 288\
-Select "Business", then select "Microsoft 365"
+After dialing, enter\
+877 663 5075
 
 **Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
@@ -2306,7 +2310,7 @@ English: 24 hours a day, 7 days a week
 [Comoros](#comoros)\
 [Congo](#congo)\
 [Congo (DRC)](#congo-drc)\
-[Côte d’Ivoire](#côte-divoire)\
+[Côte d'Ivoire](#côte-divoire)\
 [Djibouti](#djibouti)\
 [Egypt](#egypt)\
 [Equatorial Guinea](#equatorial-guinea)\
@@ -2474,7 +2478,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-+1 312 843 5147
++1 312 843 5147\
+International call charges apply
 
 **Billing support hours:**\
 French: Mon-Fri 10 AM-6 PM\
@@ -2483,8 +2488,7 @@ English: Mon-Fri 10 AM-6 PM
    :::column:::
 **Technical support hours:**\
 French: Mon-Fri 9 AM-10 PM\
-English: 24 hours a day, 7 days a week\
-International call charges apply
+English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
 
@@ -2531,7 +2535,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-+1 312 843 5147
++1 312 843 5147\
+International call charges apply
 
 **Billing support hours:**\
 French: Mon-Fri 9 AM-5 PM\
@@ -2540,8 +2545,7 @@ English: Mon-Fri 9 AM-5 PM
    :::column:::
 **Technical support hours:**\
 French: Mon-Fri 8 AM-9 PM\
-English: 24 hours a day, 7 days a week\
-International call charges apply
+English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
 
@@ -2621,7 +2625,7 @@ English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
 
-### Côte d’Ivoire
+### Côte d'Ivoire
 
 :::row:::
    :::column:::
@@ -3201,7 +3205,8 @@ English: 24 hours a day, 7 days a week
    :::column:::
 **Phone number:**\
 800 103 072\
-Select "Business", then select "Microsoft 365"
+After dialing, enter\
+877 867 2337
 
 **Billing support hours:**\
 French: Mon-Fri 8 AM-4 PM\
@@ -3535,7 +3540,8 @@ English: 24 hours a day, 7 days a week
    :::column:::
 **Phone number:**\
 18 800 000\
-Select "Business", then select "Microsoft 365"
+After dialing, enter\
+877 663 5075
 
 **Billing support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
@@ -3753,7 +3759,8 @@ English: 24 hours a day, 7 days a week
    :::column:::
 **Phone number:**\
 157 0011\
-Select "Business", then select "Microsoft 365"
+After dialing, enter\
++1877 857 3235
 
 **Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
@@ -3787,7 +3794,8 @@ English: 24 hours a day, 7 days a week
    :::column:::
 **Phone number:**\
 800 1111 673\
-Select "Business", then select "Microsoft 365"
+After dialing, enter\
+877 413 1767
 
 **Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
@@ -3955,7 +3963,7 @@ English: 24 hours a day, 7 days a week
 0120 996 680 (Office 365 Enterprise)\
 0120 628 860 (Other Plans)
 
-Alternative Phone Number:\
+Alternative Phone Numbers:\
 03 4332 5493 (Office 365 Enterprise)\
 03 4332 6257 (Other Plans)\
 Local call charges apply
@@ -4060,7 +4068,8 @@ English: 24 hours a day, 7 days a week
    :::column:::
 **Phone number:**\
 0800 111\
-Select "Business", then select "Microsoft 365"
+After dialing, enter\
+877 860 4890
 
 **Billing support hours:**\
 Cantonese: Mon-Fri 9 AM-5 PM\
@@ -4336,7 +4345,8 @@ English: 24 hours a day, 7 days a week
    :::column:::
 **Phone number:**\
 +8 641 744 0010\
-Select "Business", then select "Microsoft 365"\
+After dialing, enter\
+877 867 5369\
 International call charges apply
 
 **Billing support hours:**\
@@ -4462,7 +4472,8 @@ English: 24 hours a day, 7 days a week
    :::column:::
 **Phone number:**\
 004 890 1001\
-Select "Business", then select "Microsoft 365"
+After dialing, enter\
+877 860 4596
 
 **Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
@@ -4509,7 +4520,7 @@ English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
 
-### Heard Island and Mcdonald Islands
+### Heard Island and McDonald Islands
 
 :::row:::
    :::column:::
@@ -4693,7 +4704,6 @@ International call charges apply
 
 **Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
-
    :::column-end:::
    :::column:::
 **Technical support hours:**\
