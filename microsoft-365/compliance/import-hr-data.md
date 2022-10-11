@@ -430,7 +430,7 @@ You can use the Task Scheduler app in Windows to automatically run the script ev
 
 You can upload HR data using Power Automate templates and define triggers. For example, you can configure a Power Automate template to trigger when new HR connector files are available in SharePoint or OneDrive locations. You can also streamline this process by storing confidential information like Azure AD application secret (created in **Step 2**) in Azure Key Vault and using it with Power Automate for authentication.
 
-Complete the following the steps to automatically upload HR data when new files become available on OneDrive for Business:
+Complete the following steps to automatically upload HR data when new files become available on OneDrive for Business:
 
 1.	Download the *ImportHRDataforIRM.zip* package from the [GitHub site](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/ImportHRDataforIRM.zip).
 2. In [Power Automate](https://make.preview.powerautomate.com), navigate to **My flows**.
