@@ -39,7 +39,7 @@ Required Conditions:
 
 **Commitment:**
 
-Customers may assign a Satellite Geography supported by Multi-Geo (***see Section 4.1.3***) to a supported mailbox type. The Data at Rest for Office 365 Services for the mailbox as defined by the product terms shall be stored in the assigned Satellite Geography. Supported mailbox types includes Exchange Online user primary and archive mailboxes, resource mailboxes, Microsoft 365 Group mailboxes, and shared mailboxes.
+Customers may assign a Satellite Geography supported by Multi-Geo to a supported mailbox type. See the [Microsoft 365 Multi-Geo availability section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide&branch=kvice-ADR-new#microsoft-365-multi-geo-availability) of the Microsoft 365 Multi-Geo page for details. The Data at Rest for Office 365 Services for the mailbox as defined by the product terms shall be stored in the assigned Satellite Geography. Supported mailbox types includes Exchange Online user primary and archive mailboxes, resource mailboxes, Microsoft 365 Group mailboxes, and shared mailboxes.
 
 ### Option 3: Advanced Data Residency add-on
 
@@ -56,7 +56,7 @@ This includes all types of mailboxes, including user mailboxes, resource mailbox
 
 ## Multi-Geo Capabilities in Exchange Online
 
-Customers may assign a Satellite Geography supported by Multi-Geo (***see Section 4.1.3***) to a user. The user's Data at Rest for Office 365 Services as defined by the product terms shall be stored in the assigned Satellite Geography. This includes all types of Exchange Online mailboxes, including user mailboxes, resource mailboxes, Microsoft 365 Group mailboxes, shared mailboxes, and archive mailboxes.
+Customers may assign a Satellite Geography supported by Multi-Geo to a user. See the [Microsoft 365 Multi-Geo availability section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide&branch=kvice-ADR-new#microsoft-365-multi-geo-availability) of the Microsoft 365 Multi-Geo page for details. The user's Data at Rest for Office 365 Services as defined by the product terms shall be stored in the assigned Satellite Geography. This includes all types of Exchange Online mailboxes, including user mailboxes, resource mailboxes, Microsoft 365 Group mailboxes, shared mailboxes, and archive mailboxes.
 
 You can place mailboxes in Satellite Geography locations by:
 
