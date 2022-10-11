@@ -47,6 +47,8 @@ This setting applies only to whiteboards and replaces the previously shared sett
 
 > [!NOTE]
 > This applies only to guests and federated users. It does not apply to anonymous meeting users at this time.
+>
+> If you would like shared device accounts to have access to Whiteboard in Teams meetings but not anonymous users, you can disable **Anonymous users can interact with apps in meetings** while having **AllowAnonymousMeetingParticipantsToAccessWhiteboards** enabled
 
 These changes should take approximately 60 minutes to apply across your tenancy.
 
