@@ -369,7 +369,7 @@ In this scenario, we'll define a list of VPNs that hybrid workers use for access
 
 ### Create and use a Network exception
 
-Network exceptions enables you to configure Allow, Audit only, Block with override, and Block actions to the file activities based on the network that users are accessing the file from. You can select from the [VPN settings](dlp-configure-endpoint-settings.md#vpn-settings) list you defined and **Corporate network** option. The actions can be applied individually or collectively to these user activities:
+Network exceptions enables you to configure Allow, Audit only, Block with override, and Block actions to the file activities based on the network that users are accessing the file from. You can select from the [VPN settings](dlp-configure-endpoint-settings.md#vpn-settings-preview) list you defined and **Corporate network** option. The actions can be applied individually or collectively to these user activities:
 
 - Copy to clipboard
 - Copy to a USB removable device
