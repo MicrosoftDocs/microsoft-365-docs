@@ -31,9 +31,9 @@ Capability summary: Microsoft Viva Connections is your gateway to a modern emplo
 
 Required Conditions:
 
-1.	Tenant has a sign up country included in *Local Geography* or *Expanded Local Geography*.
-2.	Tenant has a valid Advanced Data Residency subscription for all users in the tenant
-3.	The Viva Connections subscription customer data is provisioned in *Local Geography* or *Expanded Local Geography*
+1.	Tenant has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+2.	Tenant has a valid Advanced Data Residency subscription for all users in the tenant.
+3.	The Viva Connections subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_*
 
 **Commitment:**
 
@@ -44,3 +44,7 @@ The following customer data will be stored in the related *Geography*:
 ### Migration 
 
 Data storage is maintained within Exchange Online, SharePoint Online and Microsoft Teams.  Migration processes are handled in those workloads.
+
+### How can I determine customer data location?
+
+We are in the process of updating the actual data location in Tenant Admin Center.  When this change is complete you will be able to see the actual data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Until that change is visible, you can view the Exchange Online, SharePoint Online and Microsoft Teams data location information in order to understand where your committed data is stored for this service.
