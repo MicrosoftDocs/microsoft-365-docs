@@ -26,7 +26,7 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## October 2022
+## November 2022
 
 Compliance Manager now allows you to assign user roles that are specific to individual assessments. This feature allows you to provide assessors with scoped access to Compliance Manager. Learn more about [granting user access to individual assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments).
 
