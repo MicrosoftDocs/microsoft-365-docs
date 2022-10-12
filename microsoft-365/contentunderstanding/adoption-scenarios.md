@@ -23,7 +23,7 @@ Use the following example scenarios to prompt ideas about how you can use Micros
 
 - [Scenario: Track data from invoices with form processing](adoption-scenarios.md#scenario-track-data-from-invoices-with-form-processing)
 - [Scenario: Track information from contracts with document understanding](adoption-scenarios.md#scenario-track-information-from-contracts-with-document-understanding)
-- [Scenario: Avoid risk with records management, document governance, and compliance processes based on Syntex](adoption-scenarios.md#scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex)
+- [Scenario: Avoid risk with records management, document governance, and compliance processes based on Syntex](adoption-scenarios.md#scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-syntex)
 - [Scenario: Capture information from previously inaccessible documents](adoption-scenarios.md#scenario-capture-information-from-previously-inaccessible-documents)
 - [Scenario: Improve data processing to provide insights and analytics](adoption-scenarios.md#scenario-improve-data-processing-to-provide-insights-and-analytics)
 - [Scenario: Automate order processing](adoption-scenarios.md#scenario-automate-order-processing)
