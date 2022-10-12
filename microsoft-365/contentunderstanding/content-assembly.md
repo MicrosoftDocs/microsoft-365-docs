@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to automatically create documents and other content using a modern template in Microsoft SharePoint Syntex.
+description: Learn how to automatically create documents and other content using a modern template in Microsoft Syntex.
 ---
 
 # Overview of content assembly in Microsoft SharePoint Syntex
@@ -24,7 +24,7 @@ You can use the content assembly capabilities in SharePoint Syntex to help you a
 You upload an existing document to create a modern template, and then use that template to automatically generate new content using SharePoint lists or manual entries as a data source.
 
 > [!NOTE]
-> You must be a licensed SharePoint Syntex user to access and use content assembly capabilities. You also must have permissions to manage SharePoint lists.
+> You must be a licensed Syntex user to access and use content assembly capabilities. You also must have permissions to manage SharePoint lists.
 
 
 ## Requirements and limitations
@@ -212,7 +212,7 @@ You can use a *published* modern template to quickly create similar documents wi
 
    ![Screenshot of document library showing the Create a document from a template panel.](../media/content-understanding/content-assembly-create-document-2b.png)
 
-   To help reduce time and effort involved in filling values for placeholders, SharePoint Syntex provides:
+   To help reduce time and effort involved in filling values for placeholders, Syntex provides:
 
       - Suggestions to help you easily pick values when selecting values from a list.
       - Autofill placeholder values if able to uniquely identify a record for placeholders associated with the same list.

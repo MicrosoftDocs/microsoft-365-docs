@@ -52,7 +52,7 @@ Use the Submissions portal (also known as *admin submission*) at <https://securi
 
 - **Files**: Email messages that contain these blocked files are blocked as *malware*.
 
-- **URLs**: Email messages that contain these blocked URLs are blocked as *high confidence phishing*.
+- **URLs**: Email messages that contain these blocked URLs are blocked as *high confidence phishing*. Messages containing the blocked URLs are quarantined.
 
 In the Tenant Allow/Block List, you can also directly create block entries for the following types of items:
 
