@@ -86,7 +86,7 @@ If your country or region isn't listed above, use the sections below to find the
 001 212 497 6305
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Mon - Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
