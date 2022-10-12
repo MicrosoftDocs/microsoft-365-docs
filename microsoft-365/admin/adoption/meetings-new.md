@@ -16,7 +16,7 @@ ms.collection:
 - highpri
 ms.custom:                                           
 search.appverid: MET150
-description: "Details of the Meetings - people experiences Adoption Score." 
+description: "Details of new Meetings insights score - people experiences Adoption Score." 
 ---
 
 # Meetings insights score – People experiences (New)
