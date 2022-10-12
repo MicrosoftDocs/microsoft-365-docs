@@ -7,6 +7,8 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Configure Defender for Identity detection exclusions in Microsoft 365 Defender
@@ -32,11 +34,11 @@ For example, a **DNS Reconnaissance** alert could be triggered by a security sca
 
 1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
 
-    ![Go to Settings, then Identities.](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="The Identities option in the Name column" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. You'll then see **Excluded entities** in the left-hand menu.
 
-    ![Excluded entities.](../../media/defender-identity/excluded-entities.png)
+   :::image type="content" source="../../media/defender-identity/excluded-entities.png" alt-text="The Excluded entities pane" lightbox="../../media/defender-identity/excluded-entities.png":::
 
 You can then set exclusions by two methods: **Exclusions by detection rule** and **Global excluded entities**.
 
@@ -44,37 +46,37 @@ You can then set exclusions by two methods: **Exclusions by detection rule** and
 
 1. In the left-hand menu, select **Exclusions by detection rule**. You'll see a list of detection rules.
 
-    ![Exclusions by detection rule.](../../media/defender-identity/exclusions-by-detection-rule.png)
+   :::image type="content" source="../../media/defender-identity/exclusions-by-detection-rule.png" alt-text="The Exclusions by detection rule option in the Excluded entities item in the left pane" lightbox="../../media/defender-identity/exclusions-by-detection-rule.png":::
 
 1. For each detection you want to configure, do the following steps:
 
     1. Select the rule. You can search for detections using the search bar. Once selected, a pane will open with the detection rule details.
 
-        ![Detection rule details.](../../media/defender-identity/detection-rule-details.png)
+       :::image type="content" source="../../media/defender-identity/detection-rule-details.png" alt-text="The details of a detection rule" lightbox="../../media/defender-identity/detection-rule-details.png":::
 
     1. To add an exclusion, select the **Excluded entities** button, and then choose the exclusion type. Different excluded entities are available for each rule. They include users, devices, domains and IP addresses. In this example, the choices are **Exclude devices** and **Exclude IP addresses**.
 
-        ![Exclude devices or IP addresses.](../../media/defender-identity/exclude-devices-or-ip-addresses.png)
+       :::image type="content" source="../../media/defender-identity/exclude-devices-or-ip-addresses.png" alt-text="The option to exclude devices or IP addresses" lightbox="../../media/defender-identity/exclude-devices-or-ip-addresses.png":::
 
     1. After choosing the exclusion type, you can add the exclusion. In the pane that opens, select the **+** button to add the exclusion.
 
-        ![Add an exclusion.](../../media/defender-identity/add-exclusion.png)
+       :::image type="content" source="../../media/defender-identity/add-exclusion.png" alt-text="The option to add an exclusion" lightbox="../../media/defender-identity/add-exclusion.png":::
 
     1. Then add the entity to be excluded. Select **+ Add** to add the entity to the list.
 
-        ![Add an entity to be excluded.](../../media/defender-identity/add-excluded-entity.png)
+       :::image type="content" source="../../media/defender-identity/add-excluded-entity.png" alt-text="The option to add entity that is to be excluded" lightbox="../../media/defender-identity/add-excluded-entity.png":::
 
     1. Then select **Exclude IP addresses** (in this example) to complete the exclusion.
 
-        ![Exclude IP addresses.](../../media/defender-identity/exclude-ip-addresses.png)
+       :::image type="content" source="../../media/defender-identity/exclude-ip-addresses.png" alt-text="The option to exclude IP addresses" lightbox="../../media/defender-identity/exclude-ip-addresses.png":::
 
     1. Once you've added exclusions, you can export the list or remove the exclusions by returning to the **Excluded entities** button. In this example, we've returned to **Exclude devices**. To export the list, select the down arrow button.
 
-        ![Return to Exclude devices.](../../media/defender-identity/return-to-exclude-devices.png)
+       :::image type="content" source="../../media/defender-identity/return-to-exclude-devices.png" alt-text="The Return to Exclude devices option" lightbox="../../media/defender-identity/return-to-exclude-devices.png":::
 
     1. To delete an exclusion, select the exclusion and select the trash icon.
 
-        ![Delete an exclusion.](../../media/defender-identity/delete-exclusion.png)
+       :::image type="content" source="../../media/defender-identity/delete-exclusion.png" alt-text="The Delete an exclusion option" lightbox="../../media/defender-identity/delete-exclusion.png":::
 
 ## Global excluded entities
 
@@ -82,23 +84,23 @@ You can now also configure exclusions by **Global excluded entities**. Global ex
 
 1. In the left-hand menu, select **Global excluded entities**. You'll see the categories of entities that you can exclude.
 
-    ![Global excluded entities.](../../media/defender-identity/global-excluded-entities.png)
+   :::image type="content" source="../../media/defender-identity/global-excluded-entities.png" alt-text="The Global excluded entities submenu item" lightbox="../../media/defender-identity/global-excluded-entities.png":::
 
 1. Choose an exclusion type. In this example, we selected **Exclude domains**.
 
-    ![Exclude domains.](../../media/defender-identity/exclude-domains.png)
+   :::image type="content" source="../../media/defender-identity/exclude-domains.png" alt-text="The Domains tab" lightbox="../../media/defender-identity/exclude-domains.png":::
 
 1. A pane will open where you can add a domain to be excluded. Add the domain you want to exclude.
 
-    ![Add a domain to be excluded.](../../media/defender-identity/add-excluded-domain.png)
+   :::image type="content" source="../../media/defender-identity/add-excluded-domain.png" alt-text="The option to add a domain to be excluded" lightbox="../../media/defender-identity/add-excluded-domain.png":::
 
 1. The domain will be added to the list. Select **Exclude domains** to complete the exclusion.
 
-    ![Select exclude domains.](../../media/defender-identity/select-exclude-domains.png)
+   :::image type="content" source="../../media/defender-identity/select-exclude-domains.png" alt-text="The option to Select domains to be excluded" lightbox="../../media/defender-identity/select-exclude-domains.png":::
 
 1. You'll then see the domain in the list of entities to be excluded from all detection rules. You can export the list, or remove the entities by selecting them and clicking the **Remove** button.
 
-    ![List of global excluded entries.](../../media/defender-identity/global-excluded-entries-list.png)
+   :::image type="content" source="../../media/defender-identity/global-excluded-entries-list.png" alt-text="The list of global excluded entries" lightbox="../../media/defender-identity/global-excluded-entries-list.png":::
 
 ## See also
 

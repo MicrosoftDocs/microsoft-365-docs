@@ -1,71 +1,85 @@
 ---
-title: "Cancel your subscription"
+title: "Cancel your Microsoft business subscription"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
+- highpri 
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_subscriptions
+- VSBFY23
+- AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to cancel your Dynamics 365, Intune, Power Platform, and Microsoft 365 for business trial or paid subscriptions in the Microsoft 365 admin center."
-ms.date: 01/20/2022
+ms.date: 07/07/2022
 ---
 
-# Cancel your subscription
+# Cancel your Microsoft business subscription
 
-You can cancel your subscription at any time in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. However, to receive a refund, you must meet certain refund eligibility requirements. For more information, see [Understand refund eligibility](#understand-refund-eligibility).
+If you want to cancel your subscription, the easiest way to do that is to [turn off recurring billing](renew-your-subscription.md). When you turn off recurring billing, you can continue to use your subscription until it expires at the end of the subscription term. If you want to cancel immediately, use the information and steps in this article to do that.
 
-If you have multiple subscriptions to the same product, such as Microsoft 365 Business Premium, canceling one subscription won’t impact the purchased licenses or services inside the others.
+You can cancel your free trial at any time to stop future charges. After your 1-month free trial ends, you will be charged the applicable subscription fee.
 
 > [!IMPORTANT]
-> This article only applies to Dynamics 365, Intune, Power Platform, and Microsoft 365 for business subscriptions. If you have Microsoft 365 Family or Personal, see [Cancel a Microsoft 365 subscription](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
+> - This article only applies to Dynamics 365, Intune, Power Platform, Windows 365, and Microsoft 365 for business subscriptions. If you have Microsoft 365 Family or Personal, see [Cancel a Microsoft 365 subscription](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
+> - If you bought your subscription through a Microsoft representative or a reseller partner, you have seven days to cancel for a pro-rated refund. Contact your seller or partner to help you cancel your subscription. [Learn more about partners](../manage-partners.md#what-can-a-partner-do-for-my-organization-or-school).
+> - If your organization is located in Chile, and you bought your subscription through a partner in Chile, you have 10 days to cancel for a pro-rated refund.
 
 ## Before you begin
 
-You must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- You must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- Before you cancel a subscription, make sure your users [save their data](#save-your-data).
+- If you added your own domain name to use with your subscription, you must [remove the domain](../../admin/get-help-with-domains/remove-a-domain.md) before you cancel your subscription.
+- If you have a domain subscription, to prevent any other charges for that subscription, [turn off recurring billing](renew-your-subscription.md).
 
-## Understand refund eligibility
+## Determine your cancellation options
+
+> [!IMPORTANT]
+> Before you continue, [determine if you have a billing profile](../billing-and-payments/manage-billing-profiles.md#view-my-billing-profiles).
 
 ### If you have a billing profile
 
-You must cancel within 72 hours of starting a paid subscription to get a prorated refund for unused time you already paid for. Refunds aren’t available after 72 hours.
+You can only cancel and receive a prorated credit or refund if you cancel within seven days after the start or renewal of your subscription. If you cancel during this limited time window, the prorated amount is either credited towards your next invoice or returned to you in the next billing cycle.
 
-For example, let's say you bought a one year subscription for which you pay $20 each month for a single license. You bought the subscription on February 1, 2022 at 11 AM UST, and decide to cancel it on February 3, 2022 at 11 AM UST. We deduct $1.43 for the two days you held the subscription, and you receive a prorated refund of $18.57.
+If you need to cancel within seven days after the start or renewal of your subscription, go to [Steps to cancel your subscription](#steps-to-cancel-your-subscription) later in this article.
 
-**Not sure if you have a billing profile?** To learn how to find out if you have a billing profile, see [View my billing profiles](../billing-and-payments/manage-billing-profiles.md#view-my-billing-profiles).
+If more than seven days have passed, [turn off recurring billing](renew-your-subscription.md). This prevents your subscription from renewing at the end of its term.  You keep access to your products and services for the remainder of your subscription. If you have an annual subscription and are paying monthly, you are charged each month for the remainder of your subscription term.
 
 ### If you don't have a billing profile
 
-Use the following table to help determine if you can cancel your subscription yourself.
+If you cancel after you start or renew your subscription, you receive a prorated credit or refund. The amount is either credited towards your next invoice or returned to you in the next billing cycle.
+
+The steps to cancel your trial or paid subscription depend on the number of licenses in your subscription. The following table explains what steps you can take, based on your number of licenses.
 
 |If your subscription has  |You can  |
 |--------------|--------------|
-|25 or fewer licenses  | Cancel your trial or paid subscription online in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> at any time.        |
-|More than 25 licenses   | Reduce the number of licenses to 25 or fewer and try again, or [call support to cancel your subscription](../../admin/get-help-support.md).        |
+|25 or fewer licenses  | [Use the steps below to cancel](#steps-to-cancel-your-subscription) your trial or paid subscription online in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.        |
+|More than 25 licenses   | Reduce the number of licenses to 25 or fewer and then [use the steps below to cancel](#steps-to-cancel-your-subscription).      |
 
-For subscriptions that don't have a billing profile, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, [turn off recurring billing](renew-your-subscription.md) to cancel the subscription at the end of its term.
+If you can't reduce the number of licenses, [turn off recurring billing](renew-your-subscription.md). This prevents you from being charged again for your subscription, and lets you keep your access to your products and services for the remainder of your subscription.
 
-If you cancel during the limited time window, any prorated credit will be returned to you within the next billing cycle.
+If you're unable to cancel your subscription, [contact support](../../admin/get-help-support.md) for help.
 
 ## Steps to cancel your subscription
 
-If you added your own domain name to use with your subscription, you must remove the domain before you cancel your subscription. For more information, see [Remove a domain](../../admin/get-help-with-domains/remove-a-domain.md).
+> [!NOTE]
+> If you have multiple subscriptions to the same product, such as Microsoft 365 Business Premium, canceling one subscription won't impact the purchased licenses or services inside the others.
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 ::: moniker-end
 
@@ -83,65 +97,23 @@ If you added your own domain name to use with your subscription, you must remove
 
 Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For more information about what you can expect when a paid Microsoft 365 for business subscription is canceled, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
 
-> [!NOTE]
-> If you explicitly delete a subscription, then it skips the Expired and Disabled stages and the SharePoint Online data and content, including OneDrive, is deleted immediately.
-
-## What happens when you cancel a subscription
-
-If you cancel a subscription before the end of your term, the subscription status moves directly into a disabled state. For most subscriptions, in most countries and regions, the disabled state lasts 90 days. Admins can still access and back up data for their organization while the subscription is in the disabled state, but we recommend that admins [back up their data](back-up-data-before-switching-plans.md) before they cancel a subscription, especially if it's their only subscription. Admins can also reactivate the subscription while it's in the disabled state.
-
-After 90 days, the subscription moves into the deleted state. Any data you leave behind may be deleted after those 90 days but is deleted no later than 180 days after cancellation. You can't remove a payment method from a canceled subscription until after it reaches the deleted state.
-
-### What to expect for you and your users if you cancel a subscription
-  
-- **Admin access** Admins can still sign in and access the admin center, and buy other subscriptions as needed. As a global or billing admin, you have 90 days to [reactivate the subscription](reactivate-your-subscription.md) with all data intact.
-
-- **User access** Your users won't be able to use services like OneDrive for Business, or access customer data like email or documents on team sites. Office applications, like Word and Excel, will eventually move into a read-only, reduced functionality mode and display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380).
-
-To learn more, see [What happens to my data and access when my subscription ends?](what-if-my-subscription-expires.md)
-
 > [!IMPORTANT]
-> If you want your subscription data to be deleted before the typical Disabled period is over, you can [close your account](../close-your-account.md).
+> If you explicitly delete a subscription, then it skips the **Expired** and **Disabled** states and the SharePoint Online data and content, including OneDrive, is deleted immediately.
 
-## Other steps you might have to take
-
-### Change custom domain settings
-
-If you use a custom domain with your subscription, there are a few extra steps that you must do before you can cancel your subscription. If you don't have a custom domain, you can skip ahead to [Save your data](#save-your-data).
-
-#### Change your domain nameserver records (if needed)
-
-If you set up a custom domain, you added DNS records so the domain would work with Microsoft 365 services. Before you remove your domain, be sure to update the DNS records, such as your domain MX record, at your DNS host.
-
-For example, change the MX record at your DNS host. Email sent to your domain stops coming to your Microsoft address and goes to your new email provider instead. (An MX record determines where email for your domain is sent.)
-
-- If your nameserver (NS) records [are pointing to Microsoft 365 nameservers](../../admin/setup/add-domain.md), changes to your MX record don't take effect until you change your NS records to point to your new DNS host (see Step 2).
-
-- Before you update the MX record, let your users know the date you plan to switch their email, and the new email provider you plan to use. Also, if your users want to move their existing Microsoft email to the new provider, they must take extra steps.
-
-- On the day you change the MX record, follow the rest of the steps in this article.
-
-#### Update your domain MX and other DNS records (if you're using a custom domain)
-
-If you switched your nameserver (NS) records to Microsoft 365 when you set up your domain, you must set up or update your MX record and other DNS records at the DNS host you plan to use, and then change your NS record to that DNS host.
-
-If you didn't switch NS records when you set up your domain, when you change the MX record, your mail starts going to the new address right away.
-
-To change your NS records, see [Remove a domain](../../admin/get-help-with-domains/remove-a-domain.md).
-
-### Save your data
+## Save your data
 
 When the cancellation becomes effective, your users lose access to their data. Before you cancel the subscription, have them save their OneDrive for Business or SharePoint Online files to another location. Any customer data that you leave behind might be deleted after 30 days, and is deleted no later than 180 days after cancellation.
 
 - To move email, contacts, tasks, and calendar information to another account, see [Export or backup email, contacts, and calendar to an Outlook .pst file](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91).
+- To save a document library or list content (such as contacts) from a SharePoint Online environment (OneDrive for Business or team sites) to file shares or to a local computer, see [Information about manual migration of SharePoint Online content](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
 
-- To save a document library or list content (such as contacts) from a SharePoint Online environment (OneDrive for Business or team sites) to file shares or to a local computer, see [Manual migration of SharePoint Online content](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
+## Next steps
 
 ### Uninstall Office (optional)
 
 If you canceled your subscription, and didn't [move users to a different subscription](move-users-different-subscription.md) that includes Microsoft 365, Microsoft 365 runs in reduced functionality mode. When this happens, users can only read and print documents, and Microsoft 365 applications display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380). To avoid any confusion, have your users [uninstall Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8) from their machines.
 
-## Next steps
+### Close your account (optional)
 
 If you want to completely close your account with Microsoft, see [Close your account](../close-your-account.md).
 

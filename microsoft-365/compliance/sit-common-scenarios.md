@@ -3,15 +3,16 @@ title: "Common usage scenarios for sensitive information types"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
-author: v-tophillips
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date:
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -22,6 +23,8 @@ ms.custom: seo-marvel-apr2020
 # Common usage scenarios for sensitive information types
 
 This article describes how to implement some common sensitive information type (SIT) use case scenarios. You can use these procedures as examples and adapt them to your specific needs.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Protect credit card numbers
 
@@ -36,7 +39,7 @@ Contoso Bank needs to classify the credit card numbers that they issue as sensit
 
 ## Test numbers similar to Social Security numbers
 
-Contoso has identified a few nine-digit test numbers that trigger false positive matches in the Social Security Number (SSN) data loss prevention (DLP) policy. They would like to exclude these numbers from the list of valid matches for SSN.
+Contoso has identified a few nine-digit test numbers that trigger false positive matches in the Social Security Number (SSN) Microsoft Purview data loss prevention (DLP) policy. They would like to exclude these numbers from the list of valid matches for SSN.
 
 **Suggested solution**
 

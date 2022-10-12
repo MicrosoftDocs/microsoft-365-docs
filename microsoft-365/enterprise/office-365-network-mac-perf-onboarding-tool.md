@@ -6,11 +6,12 @@ manager: scotv
 ms.date: 1/18/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 description: "Microsoft 365 network connectivity test tool"
@@ -47,7 +48,7 @@ After office location identification, we run a TCP latency test in JavaScript an
 
 ### Download the advanced tests client application
 
-Next, we start the download of the advanced tests client application. We rely on the user to launch the client application and they must also have .NET Core installed.
+Next, we start the download of the advanced tests client application. We rely on the user to launch the client application and they must also have .NET 6.0 Runtime installed.
 
 There are two parts to the Microsoft 365 network connectivity test: the web site <https://connectivity.office.com> and a downloadable Windows client application that runs advanced network connectivity tests. Most of the tests require the application to be run. It will populate results back into the web page as it runs.
 
@@ -58,7 +59,7 @@ You'll be prompted to download the advanced client test application from the web
 
 ### Start the advanced tests client application
 
-Once the client application starts, the web page will update to show this result. Test data will start to be received to the web page. The page updates each time new data is received and you can review the data as it arrives.
+Once the client application starts, the web page will update to show this result. Test data will start to be received to the web page. The page updates each time new-data is received and you can review the data as it arrives.
 
 ### Advanced tests completed and test report upload
 
@@ -66,7 +67,7 @@ When the tests are completed, the web page and the advanced tests client will bo
 
 ## Sharing your test report
 
-The test report requires authentication to your Microsoft 365 account. Your administrator selects how you can share your test report.
+The test report requires authentication to your Microsoft 365 account. Your administrator selects how you can share your test report. The default settings allow for sharing of your reports with other user within your organization and the ReportID link is not available. Reports will expire by default after 90 days.
 
 ### Sharing your report with your administrator
 
@@ -154,7 +155,7 @@ This is provided for information only and does not contribute to any network ins
 
 The in-use DNS Recursive Resolver is identified by making a specific DNS request and then asking the DNS Name Server for the IP Address that it received the same request from. This IP Address is the DNS Recursive Resolver and it will be looked up in IP Address location databases to find the location. The distance from the user office location to the DNS Recursive Resolver server location is then calculated. This is shown as a network insight if the distance is greater than **500 miles** (800 kilometers).
 
-The location looked up from the network egress IP Address may not be accurate and this would lead to a false result from this test. To validate if this error is occurring for a specific IP Address you can use publicly accessible network IP Address location web sites.
+The location looked up from the network egress IP Address may not be accurate and this would lead to a false result from this test. To validate if this error is occurring for a specific IP Address, you can use publicly accessible network IP Address location web sites.
 
 This network insight will specifically impact the selection of the Exchange Online service front door. To address this insight local and direct network egress should be a pre-requisite and then DNS Recursive Resolver should be located close to that network egress.
 
@@ -188,11 +189,11 @@ The in-use SharePoint service front door is identified in the same way that the 
 
 #### Download speed
 
-We measure the download speed for a 15Mb file from the SharePoint service front door. The result is shown in megabytes per second to indicate what size file in megabytes can be downloaded from SharePoint or OneDrive in **one second**. The number should be similar to one tenth of the minimum circuit bandwidth in megabits per second. For example if you have a 100mbps internet connection, you may expect 10 megabytes per second (10MBps).
+We measure the download speed for a 15 Mb file from the SharePoint service front door. The result is shown in megabytes per second to indicate what size file in megabytes can be downloaded from SharePoint or OneDrive in **one second**. The number should be similar to one tenth of the minimum circuit bandwidth in megabits per second. For example if you have a 100mbps internet connection, you may expect 10 megabytes per second (10 MBps).
 
 #### Buffer bloat
 
-During the 15Mb download we measure the TCP latency to the SharePoint service front door. This is the latency under load and It's compared to the latency when not under load. The increase in latency when under load is often attributable to consumer network device buffers being loaded (or bloated). A network insight is shown for any bloat of 1,000 or more.
+During the 15Mb download we measure the TCP latency to the SharePoint service front door. This is the latency under load and it's compared to the latency when not under load. The increase in latency when under load is often attributable to consumer network device buffers being loaded (or bloated). A network insight is shown for any bloat of 100ms or more.
 
 #### Service front door recorded in the client DNS
 
@@ -204,11 +205,11 @@ This section shows test results related to Microsoft Teams.
 
 #### Media connectivity (audio, video, and application sharing)
 
-This tests for UDP connectivity to the Microsoft Teams service front door. If this is blocked then Microsoft Teams may still work using TCP, but audio and video will be impaired. Read more about these UDP network measurements, which also apply to Microsoft Teams at [Media Quality and Network Connectivity Performance in Skype for Business Online](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance).
+This tests for UDP connectivity to the Microsoft Teams service front door. If this is blocked, then Microsoft Teams may still work using TCP, but audio and video will be impaired. Read more about these UDP network measurements, which also apply to Microsoft Teams at [Media Quality and Network Connectivity Performance in Skype for Business Online](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance).
 
 #### Packet loss
 
-Shows the UDP packet loss measured in a 10 second test audio call from the client to the Microsoft Teams service front door. This should be lower than **1.00%** for a pass.
+Shows the UDP packet loss measured in a 10-second test audio call from the client to the Microsoft Teams service front door. This should be lower than **1.00%** for a pass.
 
 #### Latency
 
@@ -246,13 +247,49 @@ This shows any significant health issues with Microsoft's global network, which 
 > [!div class="mx-imgBorder"]
 > ![Network health status.](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
+## Testing from the Command Line
+
+We provide a command line executable that can be used by your remote deployment and execution tools and run the same tests as are available in the Microsoft 365 network connectivity test tool web site.
+
+The command line test tool can be downloaded here: [Command Line Tool](https://connectivity.office.com/api/AnonymousConnectivityTest/DownloadStandAloneRichClient)
+
+You can run it by double clicking the executable in Windows File Explorer, or you can start it from a command prompt, or you can schedule it with task scheduler.
+
+The first time you launch the executable you will be prompted to accept the end user license agreement (EULA) before testing is performed. If you have already read and accepted the EULA you can create an empty file called Microsoft-365-Network-Connectivity-Test-EULA-accepted.txt in the current working directory for the executable process when it is launched. To accept the EULA you can type 'y' and press enter in the command line window when prompted.
+
+The executable accepts the following  command line parameters:
+- -h to show a link to this help documentation
+- -testlist &lt;test&gt; Specifies tests to run. By default only basic tests are run. Valid test names include: all, dnsConnectivityPerf, dnsResolverIdentification, bufferBloat, traceroute, proxy, vpn, skype, connectivity, networkInterface
+- -filepath &lt;filedir&gt; Directory path of test result files. Allowed value is absolute or relative path of an accessible directory
+- -city &lt;city&gt; For the city, state, and country fields the specified value will be used if provided. If not provided then Windows Location Services (WLS) will be queried. If WLS fails the location will be detected fromthe machines network egress 
+- -state &lt;state&gt;
+- -country &lt;country&gt; 
+- -proxy &lt;account&gt; &lt;password&gt; Proxy account name and password can be provided if you require a proxy to access the Internet
+
+### Results
+Output of results are written to a JSON file in a folder called TestResults which is created in the current working directory of the process unless it already exists. The filename format for the output is connectivity_test_result_YYYY-MM-DD-HH-MM-SS.json. The results are in JSON nodes that match the output shown on the web page for the Microsoft 365 network connectivity test tool web site. A new result file is created each time you run it and the standalone executable does not upload results to your Microsoft tenant for viewing in the Admin Center Network Connectivity pages. Front door codes, longitudes, and latitudes are not included in the result file.
+
+### Launching from Windows File Explorer
+You can simply double click on the executable to start the testing and a command prompt window will appear.
+
+### Launching from the Command Prompt
+On a CMD.EXE command prompt window you can type the path and name of the executable to run it. The filename is Microsoft.Connectivity.Test.exe
+
+### Launching from Windows Task Scheduler
+In Windows Task Scheduler you can add a task to launch the standalone test executable. You should specify the current working directory of the task to be where you have created the EULA accepted file since the executable will block until the EULA is accepted. You cannot interactively accept the EULA if the process is started in the background with no console.
+
+### More details on the standalone executable
+The commandline tool uses Windows Location Services to find the users City State Country information for determining some distances. If Windows Location Services is disabled in the control panel then user location based assessments will be blank. In Windows Settings "Location services" must be on and "Let desktop apps access your location" must also be on.
+
+The commandline tool will attempt to install the .NET Framework if it is not already installed. It will also download the main testing executable from the Microsoft 365 network connectivity test tool and launch that.
+
 ## FAQ
 
 Here are answers to some of our frequently asked questions.
 
 ### What is required to run the advanced test client?
 
-The advanced test client requires .NET Core 3.1 Desktop Runtime. If you run the advanced test client without that installed you will be directed to [the .NET Core 3.1 installer page](https://dotnet.microsoft.com/download/dotnet-core/3.1). Be sure to install the Desktop Runtime and not the SDK, or the ASP.NET Core Runtime, which are higher up on the page. Administrator permissions on the machine are required to install .NET Core.
+The advanced test client requires .NET 6.0 Runtime. If you run the advanced test client without that installed you will be directed to [the .NET 6.0 installer page](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime?utm_source=getdotnetcore). Be sure to install from the Run desktop apps column for Windows. Administrator permissions on the machine are required to install .NET 6.0 Runtime.
 
 The advanced test client uses SignalR to communicate to the web page. For this you must ensure that TCP port 443 connectivity to **connectivity.service.signalr.net** is open. This URL isn't published in the <https://aka.ms/o365ip> because that connectivity isn't required for a Microsoft 365 client application user.
 

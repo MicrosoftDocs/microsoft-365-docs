@@ -2,14 +2,15 @@
 title: "Perform an internal admin takeover"
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- scotvorg 
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
@@ -24,7 +25,7 @@ ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: "Learn how to verify your email and domain ownership to take over an unmanaged account created by a self-service user signup in Microsoft 365."
 ---
 
-# Perform an internal admin takeover
+# Internal admin takeover
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
 
@@ -60,11 +61,11 @@ When a user signs up for Microsoft 365 services using an email address, an accou
 
     You're redirected to the admin takeover wizard.
 
-1. Select **Next** and verify that you own the domain you want to take over by adding a TXT record to your domain registrar.
+2. Select **Next** and verify that you own the domain you want to take over by adding a TXT record to your domain registrar.
 
     The wizard will give you the TXT record to add, as well as provide a link to your registrar's website, and a link to step-by-step instructions.
 
-1. On the **You're now the admin** page, select **Go to the admin center**.
+3. On the **You're now the admin** page, select **Go to the admin center**.
 
     You have the admin privileges required to manage the account in the admin center. For example, you can manage account users and groups, purchase new subscriptions and make user assignments, and manage the account domains.
 
@@ -72,7 +73,7 @@ When a user signs up for Microsoft 365 services using an email address, an accou
   
 ## Related content
 
-YouTube: [3 steps to do an IT Admin Takeover for Power BI and Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk) (video)\
+YouTube: [Three steps to do an IT Admin Takeover for Power BI and Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk) (video)\
 [Admin takeover in Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (article)\
 [Using self-service sign up in your organization](self-service-sign-up.md) (article)\
 [Understanding the Power BI service administrator role](/power-bi/service-admin-role) (article)

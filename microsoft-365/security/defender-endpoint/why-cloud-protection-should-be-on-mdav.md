@@ -3,7 +3,7 @@ title: Why cloud protection should be enabled for Microsoft Defender Antivirus
 description: See why cloud protection should be turned on for Microsoft Defender Antivirus. It helps many security features in Microsoft Defender for Endpoint work
 keywords: Microsoft Defender Antivirus, cloud protection, security features, sample submission
 search.product: 
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,25 +12,29 @@ ms.author: deniseb
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.date: 10/22/2021
 ms.collection: 
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Why cloud protection should be enabled for Microsoft Defender Antivirus
 
 **Applies to:**
 
+- Microsoft Defender Antivirus
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 Microsoft Defender Antivirus cloud protection helps protect against malware on your endpoints and across your network. We recommend keeping cloud protection turned on, because certain security features and capabilities in Microsoft Defender for Endpoint only work when cloud protection is enabled. 
 
-[:::image type="content" source="images/mde-cloud-protection.png" alt-text="Diagram showing things that depend on cloud protection":::](enable-cloud-protection-microsoft-defender-antivirus.md)
+[![alt-text="Diagram showing things that depend on cloud protection](images/mde-cloud-protection.png#lightbox)](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 The following table summarizes the features and capabilities that depend on cloud protection: <br/><br/>
 
@@ -61,3 +65,13 @@ Now that you have an overview of cloud protection and its role in Microsoft Defe
 4. **[Configure the "block at first sight" feature](configure-block-at-first-sight-microsoft-defender-antivirus.md)**. The "block at first sight" feature can block new malware within seconds, without having to wait hours for traditional Security intelligence. You can enable and configure it by using Microsoft Endpoint Manager or Group Policy.
 
 5. **[Configure the cloud block timeout period](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)**. Microsoft Defender Antivirus can block suspicious files from running while it queries our cloud protection service. You can configure the amount of time the file will be prevented from running by using Microsoft Endpoint Manager or Group Policy.
+
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)

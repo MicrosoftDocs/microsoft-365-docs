@@ -2,8 +2,8 @@
 title: Manage Microsoft Defender for Endpoint using Group Policy Objects
 description: Learn how to manage Microsoft Defender for Endpoint with Group Policy Objects
 keywords: post-migration, manage, operations, maintenance, utilization, PowerShell, Microsoft Defender for Endpoint, edr
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,12 +12,12 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - M365-security-compliance
-  - m365solution-scenario
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.date: 11/29/2021
 ms.reviewer: chventou
+search.appverid: met150
 ---
 
 # Manage Microsoft Defender for Endpoint with Group Policy Objects
@@ -41,13 +41,11 @@ You can use Group Policy Objects in Azure Active Directory Domain Services to ma
 
 The following table lists various tasks you can perform to configure Microsoft Defender for Endpoint with Group Policy Objects.
 
-<br/><br/>
-
 |Task|Resources to learn more|
 |---|---|
 |**Manage settings for user and computer objects** <br/><br/> *Customize built-in Group Policy Objects, or create custom Group Policy Objects and organizational units to suit your organizational needs.*|[Administer Group Policy in an Azure Active Directory Domain Services managed domain](/azure/active-directory-domain-services/manage-group-policy)|
 |**Configure Microsoft Defender Antivirus** <br/><br/> *Configure antivirus features & capabilities, including policy settings, exclusions, remediation, and scheduled scans on your organization's devices (also referred to as endpoints).*|[Use Group Policy settings to configure and manage Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus) <br/><br/> [Use Group Policy to enable cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-group-policy-to-enable-cloud-delivered-protection)|
-|**Manage your organization's attack surface reduction rules** <br/><br/> *Customize your attack surface reduction rules by excluding files & folders, or by adding custom text to notification alerts that appear on users' devices.*|[Customize attack surface reduction rules with Group Policy Objects](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-group-policy-to-exclude-files-and-folders)|
+|**Manage your organization's attack surface reduction rules** <br/><br/> *Customize your attack surface reduction rules by excluding files & folders, or by adding custom text to notification alerts that appear on users' devices.*|[Customize attack surface reduction rules with Group Policy Objects](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-implement)|
 |**Manage exploit protection settings** <br/><br/> *You can customize your exploit protection settings, import a configuration file, and then use Group Policy to deploy that configuration file.*|[Customize exploit protection settings](/microsoft-365/security/defender-endpoint/customize-exploit-protection) <br/><br/> [Import, export, and deploy exploit protection configurations](/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml) <br/><br/> [Use Group Policy to distribute the configuration](/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml#use-group-policy-to-distribute-the-configuration)|
 |**Enable Network Protection** to help prevent employees from using apps that malicious content on the Internet <br/><br/> *We recommend using [audit mode](/microsoft-365/security/defender-endpoint/evaluate-network-protection) at first for network protection in a test environment to see which apps would be blocked before rolling out.*|[Turn on network protection using Group Policy](/microsoft-365/security/defender-endpoint/enable-network-protection#group-policy)|
 |**Configure controlled folder access** to protect against ransomware <br/><br/> *[Controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders) is also referred to as antiransomware protection.*|[Enable controlled folder access using Group Policy](/microsoft-365/security/defender-endpoint/enable-controlled-folders#group-policy)|
@@ -57,13 +55,12 @@ The following table lists various tasks you can perform to configure Microsoft D
 
 ## Configure your Microsoft 365 Defender portal
 
-If you haven't already done so, configure your Microsoft 365 Defender portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. See [Microsoft 365 Defender](microsoft-defender-security-center.md). You can also configure whether and what features end users can see in the Microsoft 365 Defender portal.
+If you haven't already done so, configure your Microsoft 365 Defender portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. See [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender). You can also configure whether and what features end users can see in the Microsoft 365 Defender portal.
 
 - [Overview of Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 - [Endpoint protection: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 ## Next steps
 
-- [Get an overview of threat and vulnerability management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Visit the Microsoft 365 Defender portal security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+- [Get an overview of Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Manage Microsoft Defender for Endpoint with Intune](manage-mde-post-migration-intune.md)

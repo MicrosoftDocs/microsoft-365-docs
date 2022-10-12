@@ -1,5 +1,5 @@
 ---
-title: "Publish retention labels and apply them in apps to retain or delete content"
+title: "Publish and apply retention labels"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -11,7 +11,8 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
@@ -41,9 +42,11 @@ Making retention labels available to people in your organization so that they ca
 
 Use the following instructions for the two admin steps.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
-The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see the permissions information for [records management](get-started-with-records-management.md#permissions) or [information governance](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels), depending on the solution you're using.
+The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see the permissions information for [records management](get-started-with-records-management.md#permissions) or [data lifecycle management](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels), depending on the solution you're using.
 
 Make sure you have [created the retention labels](file-plan-manager.md#create-retention-labels) you want to apply to items.
 
@@ -51,13 +54,13 @@ Make sure you have [created the retention labels](file-plan-manager.md#create-re
 
 Decide before you create your retention label policy whether it will be **adaptive** or **static**. For more information, see [Adaptive or static policy scopes for retention](retention.md#adaptive-or-static-policy-scopes-for-retention). If you decide to use an adaptive policy, you must create one or more adaptive scopes before you create your retention label policy, and then select them during the create retention label policy process. For instructions, see [Configuration information for adaptive scopes](retention-settings.md#configuration-information-for-adaptive-scopes).
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to one of the following locations:
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, go to one of the following locations:
     
     - If you are using records management:
         - **Solutions** > **Records management** > > **Label policies** tab > **Publish labels**
     
-    - If you are using information governance:
-        - **Solutions** > **Information governance** > **Label policies** tab > **Publish labels**
+    - If you are using data lifecycle management:
+        - **Solutions** > **Data lifecycle management** > **Microsoft 365** > **Label policies** tab > **Publish labels**
     
     Don't immediately see your solution in the navigation pane? First select **Show all**. 
 
@@ -81,19 +84,27 @@ To edit an existing retention label policy (the policy type is **Publish**), sel
 
 If you publish retention labels to SharePoint or OneDrive, those labels typically appear for users to select within one day. However, allow up to seven days. 
 
-If you publish retention labels to Exchange, it can take up to seven days for those retention labels to appear for users, and the mailbox must contain at least 10 MB of data.
+If you publish retention labels to Exchange, it can take up to seven days for those retention labels to appear for users. As with all retention settings for Exchange, the mailbox must contain at least 10 MB of data.
 
 ![Diagram of when published labels take effect.](../media/retention-labels-published-timings.png)
 
-If the labels don't appear after seven days, check the **Status** of the label policy by selecting it from the **Label policies** page in the compliance center. If you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy), a PowerShell command, to retry the policy distribution:
+If the labels don't appear after seven days, check the **Status** of the label policy by selecting it from the **Label policies** page in the Microsoft Purview compliance portal. If you see **(Error)** included in the status and in the details for the locations see a message that it's taking longer than expected to deploy the policy or to try redeploying the policy, try running the [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) or [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell command to retry the policy distribution:
 
-1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
+1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-2. Run the following command:
+2. Run one of the following commands:
     
-    ``` PowerShell
-    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
-   ```
+    - For the policy locations **Teams private channel messages**, **Yammer user messages** and **Yammer community messages**:
+    
+        ```PowerShell
+        Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
+    
+    - For all other policy locations, such as **Exchange email**, **SharePoint sites**, **Teams channel messages** etc.:
+    
+        ```PowerShell
+        Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
 
 ### How to check on the status of retention labels published to Exchange
 
@@ -143,7 +154,7 @@ End users, as well as administrators, can manually apply retention labels from t
     
 - SharePoint
     
-- Microsoft 365 groups (both the group site and group mailbox in Outlook on the web)
+- Microsoft 365 group site for Teams
     
 Use the following sections to understand how to apply retention labels. 
 
@@ -260,7 +271,7 @@ Some settings can't be changed after the label or policy is created and saved, w
 
 ### Deleting retention labels
 
-You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records.
+You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or that mark items as regulatory records.
 
 For retention labels that you can delete, if they have been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
 

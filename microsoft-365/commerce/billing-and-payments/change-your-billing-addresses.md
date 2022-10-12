@@ -2,28 +2,29 @@
 title: "Change your billing addresses"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn how to update your billing addresses or the email address used to receive billing notifications for Microsoft 365 for business."
 ms.date: 01/24/2022
 ---
 
-# Change your billing addresses
+# Change your Microsoft 365 for business billing addresses
 
 Your bill or invoice contains three addresses:
   

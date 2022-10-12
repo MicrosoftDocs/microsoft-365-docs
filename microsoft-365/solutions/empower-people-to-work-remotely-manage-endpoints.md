@@ -2,14 +2,15 @@
 title: "Step 4. Deploy endpoint management for your devices, PCs, and other endpoints"
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection: 
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
@@ -25,7 +26,7 @@ With hybrid workers, you need to support a growing number of personal devices. E
 
 [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) provides services and tools for managing mobile devices, desktop computers, virtual machines, embedded devices, and servers by combining the following services you may already know and be using.
 
-![The components of endpoint management for Microsoft 365.](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
+:::image type="content" source="../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png" alt-text="The components of endpoint management for Microsoft 365" lightbox="../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png":::
 
 ## Microsoft Intune
 
@@ -33,9 +34,9 @@ Microsoft Intune is a cloud-based service that focuses on mobile device manageme
 
 - **MDM:** For organization-owned devices, you can exercise full control including settings, features, and security. Devices are "enrolled" in Intune where they receive Intune policies with rules and settings. For example, you can set password and PIN requirements, create a VPN connection, set up threat protection, and more.
 
-- **MAM:** Remote workers might not want you to have full control on their personal devices, also known as bring-your-own device (BYOD) devices. You can give your hybrid workers options and still protect your organization. For example, hybrid workers can enroll their devices if they want full access to your organization resources. Or, if these users only want access to email or Microsoft Teams, then use app protection policies that require multi-factor authentication (MFA) to use these apps.
+- **MAM:** Remote workers might not want you to have full control of their personal devices, also known as bring-your-own device (BYOD) devices. You can give your hybrid workers options and still protect your organization. For example, hybrid workers can enroll their devices if they want full access to your organization resources. Or, if these users only want access to email or Microsoft Teams, then use app protection policies that require multi-factor authentication (MFA) to use these apps.
 
-For more information, see the [Manage endpoints with Intune and Microsoft 365](manage-devices-with-intune-overview.md) foundation solution.
+For more information, see the [Manage devices with Intune](manage-devices-with-intune-overview.md) foundation solution.
 
 ## Configuration Manager
 
@@ -53,17 +54,9 @@ For more information, see this [overview of co-management](/mem/configmgr/comana
 
 ## Endpoint Analytics
 
-Endpoint Analytics is a cloud-based service that integrates with Configuration Manager and provides you with insight and intelligence so you can make informed decisions about your Windows clients. It combines data from your organization with data aggregated from millions of other devices connected to Microsoft cloud services. 
+Endpoint analytics aims to improve user productivity and reduce IT support costs by providing insights into the user experience. The insights enable IT to optimize the end-user experience with proactive support and to detect regressions to the user experience by assessing user impact of configuration changes.
 
-With Endpoint Analytics, you can:
-
-- Create an inventory of apps running in your organization.
-- Assess app compatibility with the latest Windows 10 feature updates.
-- Identify compatibility issues and receive mitigation suggestions based on cloud-enabled data insights.
-- Create pilot groups that represent the entire application and driver estate across a minimal set of devices.
-- Deploy Windows 10 to pilot and production-managed devices.
-
-For more information, see this [overview of Endpoint Analytics](/mem/configmgr/desktop-analytics/overview)
+For more information, see this [overview of Endpoint Analytics](/mem/analytics/overview)
 
 ## Windows Autopilot
 

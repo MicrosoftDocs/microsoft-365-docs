@@ -7,12 +7,16 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- ContentEngagementFY23
+- scotvorg
+- highpri
 - Adm_O365
 - Adm_NonTOC
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
@@ -24,9 +28,11 @@ ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: "Make your organization more secure against password attacks, and ban common passwords and enable risk-based multi-factor authentication."
 ---
 
-# Password policy recommendations
+# Password policy recommendations for Microsoft 365 passwords
 
 As the admin of an organization, you're responsible for setting the password policy for users in your organization. Setting the password policy can be complicated and confusing, and this article provides recommendations to make your organization more secure against password attacks.
+
+Microsoft cloud-only accounts have a pre-defined password policy that cannot be changed. The only items you can change are the number of days until a password expires and whether or not passwords expire at all.
   
 To determine how often Microsoft 365 passwords expire in your organization, see [Set password expiration policy for Microsoft 365](../manage/set-password-expiration-policy.md).
 
@@ -39,6 +45,8 @@ For more information about Microsoft 365 passwords, see:
 [Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)
 
 [Resend a user's password - Admin Help](../add-users/resend-user-password.md) (article)
+
+[Time to rethink mandatory password changes](https://go.microsoft.com/fwlink/p/?linkid=861018).
   
 ## Understanding password recommendations
 
@@ -53,8 +61,8 @@ Good password practices fall into a few broad categories:
 ## Password guidelines for administrators
 
 The primary goal of a more secure password system is password diversity. You want your password policy to contain lots of different and hard to guess passwords. Here are a few recommendations for keeping your organization as secure as possible.
-  
-- Maintain an 8-character minimum length requirement
+
+- Maintain a 14-character minimum length requirement
 
 - Don't require character composition requirements. For example, \*&amp;(^%$
 
@@ -62,7 +70,7 @@ The primary goal of a more secure password system is password diversity. You wan
 
 - Ban common passwords, to keep the most vulnerable passwords out of your system
 
-- Educate your users to not re-use their organization passwords for non-work related purposes
+- Educate your users to not reuse their organization passwords for non-work related purposes
 
 - Enforce registration for [multi-factor authentication](../security-and-compliance/set-up-multi-factor-authentication.md)
 
@@ -74,7 +82,7 @@ Here's some password guidance for users in your organization. Make sure to let y
   
 - Don't use a password that is the same or similar to one you use on any other websites
 
-- Don't use a single word, for example, **password**, or a commonly-used phrase like **Iloveyou**
+- Don't use a single word, for example, **password**, or a commonly used phrase like **Iloveyou**
 
 - Make passwords hard to guess, even by those who know a lot about you, such as the names and birthdays of your friends and family, your favorite bands, and phrases you like to use
 
@@ -84,11 +92,13 @@ These are some of the most commonly used password management practices, but rese
   
 ### Password expiration requirements for users
 
-Password expiration requirements do more harm than good, because these requirements make users select predictable passwords, composed of sequential words and numbers which are closely related to each other. In these cases, the next password can be predicted based on the previous password. Password expiration requirements offer no containment benefits because cyber criminals almost always use credentials as soon as they compromise them. Check out [Time to rethink mandatory password changes](https://go.microsoft.com/fwlink/p/?linkid=861018) for more info.
+Password expiration requirements do more harm than good, because these requirements make users select predictable passwords, composed of sequential words and numbers that are closely related to each other. In these cases, the next password can be predicted based on the previous password. Password expiration requirements offer no containment benefits because cybercriminals almost always use credentials as soon as they compromise them. 
   
-### Requiring long passwords
+### Minimum password length requirements
 
-Password length requirements (greater than about 10 characters) can result in user behavior that is predictable and undesirable. For example, users who are required to have a 16-character password may choose repeating patterns like **fourfourfourfour** or **passwordpassword** that meet the character length requirement but aren't hard to guess. Additionally, length requirements increase the chances that users will adopt other insecure practices, such as writing their passwords down, re-using them, or storing them unencrypted in their documents. To encourage users to think about a unique password, we recommend keeping a reasonable 8-character minimum length requirement.
+<!--Password length requirements (greater than about 10 characters) can result in user behavior that is predictable and undesirable. For example, users who are required to have a 16-character password may choose repeating patterns like **fourfourfourfour** or **passwordpassword** that meet the character length requirement but aren't hard to guess. Additionally, length requirements increase the chances that users will adopt other insecure practices, such as writing down their passwords, reusing them, or storing them unencrypted in their documents.-->
+
+To encourage users to think about a unique password, we recommend keeping a reasonable 14-character minimum length requirement.
   
 ### Requiring the use of multiple character sets
 
@@ -100,7 +110,7 @@ Password complexity requirements reduce key space and cause users to act in pred
 
 - non-alphanumeric characters
 
-Most people use similar patterns, for example, a capital letter in the first position, a symbol in the last, and a number in the last 2. Cyber criminals know this, so they run their dictionary attacks using the most common substitutions, "$" for "s", "@" for "a," "1" for "l". Forcing your users to choose a combination of upper, lower, digits, special characters has a negative effect. Some complexity requirements even prevent users from using secure and memorable passwords, and force them into coming up with less secure and less memorable passwords.
+Most people use similar patterns, for example, a capital letter in the first position, a symbol in the last, and a number in the last 2. Cybercriminals know this, so they run their dictionary attacks using the most common substitutions, "$" for "s", "@" for "a," "1" for "l". Forcing your users to choose a combination of upper, lower, digits, special characters has a negative effect. Some complexity requirements even prevent users from using secure and memorable passwords, and force them into coming up with less secure and less memorable passwords.
   
 ## Successful Patterns
 
@@ -110,9 +120,9 @@ In contrast, here are some recommendations in encouraging password diversity.
 
 The most important password requirement you should put on your users when creating passwords is to ban the use of common passwords to reduce your organization's susceptibility to brute force password attacks. Common user passwords include: **abcdefg**, **password**, **monkey**.
   
-### Educate users to not re-use organization passwords anywhere else
+### Educate users to not reuse organization passwords anywhere else
 
-One of the most important messages to get across to users in your organization is to not re-use their organization password anywhere else. The use of organization passwords in external websites greatly increases the likelihood that cyber criminals will compromise these passwords.
+One of the most important messages to get across to users in your organization is to not reuse their organization password anywhere else. The use of organization passwords in external websites greatly increases the likelihood that cybercriminals will compromise these passwords.
   
 ### Enforce Multi-Factor Authentication registration
 

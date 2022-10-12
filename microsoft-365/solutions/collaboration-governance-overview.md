@@ -6,9 +6,10 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-collaboration
 - m365solution-overview 
 - m365solution-collabgovernance
@@ -128,7 +129,7 @@ Because groups and teams can be created in several ways, we recommend training y
 
 - If your organization does most of its communication using email, instruct your users to create groups in Outlook.
 - If your organization heavily uses SharePoint or is migrating from SharePoint on-premises, instruct your users to create SharePoint team sites for collaboration.
-- If your organization has deployed Teams, instruct your users to create a team when they need need a collaboration space.
+- If your organization has deployed Teams, instruct your users to create a team when they need a collaboration space.
 
 This helps avoid confusion if users are unfamiliar with how groups relate to their related services. For more information about how to talk to your users about groups, see [Explaining Microsoft 365 Groups to your users](../admin/create-groups/explain-groups-knowledge-worker.md).
 
@@ -171,25 +172,25 @@ These training modules from Microsoft Learn can help you learn the governance fe
 |![Information protection training icon.](../media/information-protection-governance.svg)|The amount of data being generated today is growing faster than ever, employees want to get work done everywhere, and the regulatory landscape is constantly changing. Microsoft's solutions for information protection and governance help organizations achieve the right balance between keeping their data protected and their people productive. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<br><br>5 hr 13 min - Learning Path - 7 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/m365-compliance-information-governance/introduction/)
+> [Start >](/training/modules/m365-compliance-information-governance/introduction/)
 
 <br><br>
 
 |Training:|Protect enterprise information with Microsoft 365|
 |:---|:---|
-|![Teams training icon.](../media/protect-enterprise-information-microsoft-365.svg)|Protecting and securing your organization's information is more challenging than ever. The Protect enterprise information with Microsoft 365 learning path discusses how to protect your sensitive information from accidental oversharing or misuse, how to discover and classify data, how to protect it with sensitivity labels, and how to both monitor and analyze your sensitive information to protect against its loss. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications..<br><br>1 hr - Learning Path - 5 Modules|
+|![Teams training icon.](../media/protect-enterprise-information-microsoft-365.svg)|Protecting and securing your organization's information is more challenging than ever. The Protect enterprise information with Microsoft 365 learning path discusses how to protect your sensitive information from accidental oversharing or misuse, how to discover and classify data, how to protect it with sensitivity labels, and how to both monitor and analyze your sensitive information to protect against its loss. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<br><br>1 hr - Learning Path - 5 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/m365-security-info-overview/introduction/)
+> [Start >](/training/modules/m365-security-info-overview/introduction/)
 
 #### Security and compliance
 
 |Training:|Demonstrate fundamental knowledge of Microsoft 365 security and compliance capabilities|
 |:---|:---|
-|![Security and compliance training icon.](../media/microsoft-365-security-and-compliance-capabilities.svg)|Learn about the Microsoft 365 security and compliance solutions areas and the capabilities available to help enterprises secure their enterprise and meet regulatory requirements. If you're unfamiliar with basic cloud computing concepts, we recommend you take [Cloud Concepts - Principles of cloud computing](/learn/modules/principles-cloud-computing/index).<br><br>3 hr 11 min - Learning Path - 8 Modules|
+|![Security and compliance training icon.](../media/microsoft-365-security-and-compliance-capabilities.svg)|Learn about the Microsoft 365 security and compliance solutions areas and the capabilities available to help enterprises secure their enterprise and meet regulatory requirements. If you're unfamiliar with basic cloud computing concepts, we recommend you take [Cloud Concepts - Principles of cloud computing](/training/modules/principles-cloud-computing/index).<br><br>3 hr 11 min - Learning Path - 8 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/what-is-m365/1-introduction/)
+> [Start >](/training/modules/what-is-m365/1-introduction/)
 
 ## Illustrations
 
@@ -200,7 +201,7 @@ What IT architects need to know about groups in Microsoft 365
 
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Thumb image for groups infographic.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Updated June 2019|These illustrations detail the different types of groups, how these are created and managed, and a few governance recommendations.|
+|[![Thumb image for groups infographic.](../downloads/msft-m365-groups-architecture-thumb.png)](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) <br/> [PDF](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) \| [Visio](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.vsdx) <br> Updated May 2022|These illustrations detail the different types of groups, how these are created and managed, and a few governance recommendations.|
 
 ### Microsoft Teams and related productivity services in Microsoft 365 for IT architects
 The logical architecture of productivity services in Microsoft 365, leading with Microsoft Teams.
@@ -218,7 +219,7 @@ This set of illustrations uses one of the most regulated industries, financial s
 
 | Item | Description |
 |:-----|:-----|
-|[![Model poster: Microsoft 365 information protection and compliance capabilities.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> English: [Download as a PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japanese: [Download as a PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Updated November 2020|Includes: <ul><li>  Microsoft information protection and data loss prevention</li><li>Retention policies and retention labels </li><li>Information barriers</li><li>Communication compliance</li><li>Insider risk</li><li>Third-party data ingestion</li>|
+|[![Model poster: Microsoft Purview information protection and compliance capabilities.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> English: [Download as a PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japanese: [Download as a PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Updated November 2020|Includes: <ul><li>  Microsoft Purview Information Protection and Microsoft Purview Data Loss Prevention</li><li>Retention policies and retention labels </li><li>Information barriers</li><li>Communication compliance</li><li>Insider risk</li><li>Third-party data ingestion</li>|
 
 ## Conference sessions
 
@@ -234,16 +235,16 @@ Learn the fundamentals and new innovations in Microsoft 365 Groups, including ma
 
 Learn how to set up your groups expiry lifecycle, naming policies, classification labels, collaboration with external guests, and manage group creation permissions.
 
-- [Transform collaboration and fight shadow IT with Office 365 groups](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
+- [Transform collaboration and fight shadow IT with Office 365 Groups](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
 
 **Customer example**
 
 See a behind-the-scenes example of how Microsoft 365 Groups, SharePoint, Teams, and Yammer work together to provide a global collaboration platform.
 
-- [Finding your collaboration sweet spot with Office 365 Groups, SharePoint, Teams, and Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
+- [Finding your collaboration sweet spot with Microsoft 365 Groups, SharePoint, Teams, and Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
 
 ## See also
 
 [Microsoft 365 security documentation](../security/index.yml)
 
-[Microsoft 365 compliance documentation](../compliance/index.yml)
+[Microsoft Purview documentation](../compliance/index.yml)

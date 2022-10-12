@@ -6,11 +6,12 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 audience: Admin
-ms.article: article
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -26,7 +27,9 @@ For more information about sensitive information types, see [Learn about sensiti
 After you've created a well-formed XML file, you can upload it to Microsoft 365 using PowerShell. Then, you're ready to use your custom sensitive information type in policies. You can test its effectiveness in detecting the sensitive information as you intended.
 
 > [!NOTE]
-> If you don't need the fine-grained control that PowerShell provides, you can create custom sensitive information types in the Microsoft 365 compliance center. For more information, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md).
+> If you don't need the fine-grained control that PowerShell provides, you can create custom sensitive information types in the Microsoft Purview compliance portal. For more information, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Important disclaimer
 
@@ -230,7 +233,7 @@ Sensitive information types can also use built-in functions to identify corrobor
 
 For example, an employee ID badge has a hire date on it, so this custom entity can use the built-in `Func_us_date` function   to identify a date in the format that's commonly used in the US.
 
-For more information, see [What the DLP functions look for](what-the-dlp-functions-look-for.md).
+For more information, see [Sensitive information type functions](sit-functions.md).
 
 ![XML markup showing Match element referencing built-in function.](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
 
@@ -312,7 +315,7 @@ Note that for email, the message body and each attachment are treated as separat
 
 The more evidence that a pattern requires, the more confidence you have that an actual entity (such as employee ID) has been identified when the pattern is matched. For example, you have more confidence in a pattern that requires a nine-digit ID number, hire date, and keyword in close proximity, than you do in a pattern that requires only a nine-digit ID number.
 
-The Pattern element has a required confidenceLevel attribute. You can think of the value of confidenceLevel (an integer between 1 and 100) as a unique ID for each pattern in an entity — the patterns in an entity must have different confidence levels that you assign. The precise value of the integer doesn't matter — simply pick numbers that make sense to your compliance team. After you upload your custom sensitive information type and then create a policy, you can reference these confidence levels in the conditions of the rules that you create.
+The Pattern element has a required confidenceLevel attribute. You can think of the value of confidenceLevel (a value among 65/75/85 indicating Low/Medium/High confidence levels) as a unique ID for each pattern in an entity. After you upload your custom sensitive information type and then create a policy, you can reference these confidence levels in the conditions of the rules that you create.
 
 ![XML markup showing Pattern elements with different values for confidenceLevel attribute.](../media/sit-xml-markedup-2.png)
 
@@ -320,7 +323,7 @@ In addition to confidenceLevel for each Pattern, the Entity has a recommendedCon
 
 ## Do you want to support other languages in the UI of the Compliance center? [LocalizedStrings element]
 
-If your compliance team uses the Microsoft 365 Compliance center to create polices policies in different locales and in different languages, you can provide localized versions of the name and description of your custom sensitive information type. When your compliance team uses Microsoft 365 in a language that you support, they'll see the localized name in the UI.
+If your compliance team uses the Microsoft Purview compliance portal to create policies in different locales and in different languages, you can provide localized versions of the name and description of your custom sensitive information type. When your compliance team uses Microsoft 365 in a language that you support, they'll see the localized name in the UI.
 
 ![Instance count and match accuracy configuration.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
@@ -395,7 +398,7 @@ Microsoft 365 exposes function processors for commonly used SITs as validators. 
 
 This gives you the ability to define your own RegEx and validate them. To use validators, define your own RegEx and use the `Validator` property to add the function processor of your choice. Once defined, you can use this RegEx in an SIT.
 
-In the example below, a regular expression - Regex_credit_card_AdditionalDelimiters is defined for Credit card which is then validated using the checksum function for credit card by using Func_credit_card as a validator.
+In the example below, a regular expression - Regex_credit_card_AdditionalDelimiters is defined for Credit card, which is then validated using the checksum function for credit card by using Func_credit_card as a validator.
 
 ```xml
 <Regex id="Regex_credit_card_AdditionalDelimiters" validators="Func_credit_card"> (?:^|[\s,;\:\(\)\[\]"'])([0-9]{4}[ -_][0-9]{4}[ -_][0-9]{4}[ -_][0-9]{4})(?:$|[\s,;\:\(\)\[\]"'])</Regex>
@@ -445,7 +448,7 @@ In this example, a date validator is defined for a RegEx part of which is date.
 
 ## Changes for Exchange Online
 
-Previously, you might have used Exchange Online PowerShell to import your custom sensitive information types for DLP. Now your custom sensitive information types can be used in both the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> and the Compliance center. As part of this improvement, you should use Compliance center PowerShell to import your custom sensitive information types — you can't import them from the Exchange PowerShell anymore. Your custom sensitive information types will continue to work just like before; however, it may take up to one hour for changes made to custom sensitive information types in the Compliance center to appear in the Exchange admin center.
+Previously, you might have used Exchange Online PowerShell to import your custom sensitive information types for DLP. Now your custom sensitive information types can be used in both the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> and the Compliance center. As part of this improvement, you should use Security & Compliance PowerShell to import your custom sensitive information types — you can't import them from Exchange Online PowerShell anymore. Your custom sensitive information types will continue to work just like before; however, it may take up to one hour for changes made to custom sensitive information types in the Compliance center to appear in the Exchange admin center.
 
 Note that in the Compliance center, you use the **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** cmdlet to upload a rule package. (Previously, in the Exchange admin center, you used the  **ClassificationRuleCollection**` cmdlet.)
 
@@ -455,7 +458,7 @@ To upload your rule package, do the following steps:
 
 1. Save it as an .xml file with Unicode encoding.
 
-2. [Connect to Compliance center PowerShell](/powershell/exchange/exchange-online-powershell)
+2. [Connect to Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell)
 
 3. Use the following syntax:
 
@@ -532,13 +535,13 @@ When you upload your rule package XML file, the system validates the XML and che
 
 - Each Custom Sensitive Information Type can have a maximum of 2048 keywords total.
 
-- The maximum size of Keyword Dictionaries in a single tenant is 480KB compressed to comply with AD Schema limits. Reference the same dictionary as many times as necessary when creating custom sensitive information types. Start with creating custom keyword lists in the sensitive information type and use keyword dictionaries if you have more than 2048 keywords in a keyword list or a keyword is larger than 50 characters in length.
+- The maximum size of Keyword Dictionaries in a single tenant is 480 KB compressed to comply with AD Schema limits. Reference the same dictionary as many times as necessary when creating custom sensitive information types. Start with creating custom keyword lists in the sensitive information type and use keyword dictionaries if you have more than 2048 keywords in a keyword list or a keyword is larger than 50 characters in length.
 
 - A maximum of 50 keyword dictionary based sensitive information types are allowed in a tenant.
 
 - Ensure each Entity element contains a recommendedConfidence attribute.
 
-- When using the PowerShell Cmdlet there is a maximum return size of the Deserialized Data of approximately 1 megabyte.   This will affect the size of your rule pack XML file. Keep the uploaded file limited to a 770 kilobyte maximum as a suggested limit for consistent results without error when processing.
+- When using the PowerShell Cmdlet, there is a maximum return size of the Deserialized Data of approximately 1 megabyte.   This will affect the size of your rule pack XML file. Keep the uploaded file limited to a 770 kilobyte maximum as a suggested limit for consistent results without error when processing.
 
 - The XML structure doesn’t require formatting characters such as spaces, tabs, or carriage return/linefeed entries.  Take note of this when optimizing for space on uploads. Tools such as Microsoft Visual Code provide join line features to compact the XML file.
 
@@ -905,6 +908,6 @@ You can copy this markup, save it as an XSD file, and use it to validate your ru
 
 ## More information
 
-- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+- [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
-- [What the DLP functions look for](what-the-dlp-functions-look-for.md)
+- [Sensitive information type functions](sit-functions.md)

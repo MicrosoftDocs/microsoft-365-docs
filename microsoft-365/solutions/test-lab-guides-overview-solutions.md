@@ -2,17 +2,18 @@
 title: "Test Lab Guides for solutions and scenarios"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 02/09/2021
 audience: ITPro
 ms.topic: overview
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: 
+- highpri
 - M365-security-compliance
 ms.custom: 
 - Ent_Architecture

@@ -3,7 +3,7 @@ title: Troubleshoot problems with attack surface reduction rules
 description: Resources and sample code to troubleshoot issues with attack surface reduction rules in Microsoft Defender for Endpoint.
 keywords: troubleshoot, error, fix, windows defender eg, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, Microsoft Defender for Endpoint
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,9 +14,12 @@ ms.date: 03/27/2019
 ms.reviewer:
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
+search.appverid: met150
 ---
 
 # Troubleshoot attack surface reduction rules
@@ -59,8 +62,6 @@ If these prerequisites have all been met, proceed to the next step to test the r
 
 ## Use audit mode to test the rule
 
-You can visit the Windows Defender Test ground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm attack surface reduction rules are generally working for pre-configured scenarios and processes on a device, or you can use audit mode, which enables rules for reporting only.
-
 Follow these instructions in [Use the demo tool to see how attack surface reduction rules work](evaluate-attack-surface-reduction.md) to test the specific rule you're encountering problems with.
 
 1. Enable audit mode for the specific rule you want to test. Use Group Policy to set the rule to **Audit mode** (value: **2**) as described in [Enable attack surface reduction rules](enable-attack-surface-reduction.md). Audit mode allows the rule to report the file or process, but will still allow it to run.
@@ -91,7 +92,7 @@ To add an exclusion, see [Customize Attack surface reduction](attack-surface-red
 
 ## Report a false positive or false negative
 
-Use the [Windows Defender Security Intelligence web-based submission form](https://www.microsoft.com/wdsi/filesubmission) to report a false negative or false positive for network protection. With a Windows E5 subscription, you can also [provide a link to any associated alert](alerts-queue.md).
+Use the [Windows Defender Security Intelligence web-based submission form](https://www.microsoft.com/wdsi/support/report-exploit-guard) to report a false negative or false positive for network protection. With a Windows E5 subscription, you can also [provide a link to any associated alert](alerts-queue.md).
 
 ## Collect diagnostic data for file submissions
 

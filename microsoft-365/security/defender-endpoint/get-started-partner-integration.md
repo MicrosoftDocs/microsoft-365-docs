@@ -3,7 +3,7 @@ title: Become a Microsoft Defender for Endpoint partner
 ms.reviewer:
 description: Learn the steps and requirements to integrate your solution with Microsoft Defender for Endpoint and be a partner
 keywords: partner, integration, solution validation, certification, requirements, member, misa, application portal
-ms.prod: w10
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Become a Microsoft Defender for Endpoint partner
@@ -34,7 +38,7 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://si
 
 ## Step 2: Fulfill the solution validation and certification requirements
 
-The best way for technology partners to certify that their integration works is to have a joint customer approve the suggested integration design (the customer can use the **Recommend a partner** option in the [Partner Application page](https://securitycenter.microsoft.com/interoperability/partners) in the Microsoft Defender Security Center) and have it tested and demoed to the Microsoft Defender for Endpoint team.
+The best way for technology partners to certify that their integration works is to have a joint customer approve the suggested integration design (the customer can use the **Recommend a partner** option \(Partners and API > Partner applications\) in the [Partner Application page](https://security.microsoft.com/interoperability/partnersapps) in the Microsoft 365 Defender and have it tested and demoed to the Microsoft Defender for Endpoint team.
 
 Once the Microsoft Defender for Endpoint team has reviewed and approves the integration, we will direct you to be included as a partner at the Microsoft Intelligent Security Association.
 

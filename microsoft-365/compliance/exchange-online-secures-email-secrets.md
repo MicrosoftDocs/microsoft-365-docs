@@ -14,17 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: 989ba10c-f73f-4efb-ad1b-af3322e5f376
 ms.collection:
-- M365-security-compliance
-description: "In addition to the Office 365 Trust Center which provides Security, Privacy and Compliance Information for Microsoft 365, you might want to know how Microsoft helps protect secrets you store in its datacenters. We use a technology called Distributed Key Manager (DKM)."
+- purview-compliance
+description: "In addition to the Office 365 Trust Center that provides Security, Privacy, and Compliance Information for Microsoft 365, you might want to know how Microsoft helps protect secrets you store in its datacenters. We use a technology called Distributed Key Manager (DKM)."
 ---
 
 # How Exchange Online secures your email secrets
 
 This article describes how Microsoft secures your email secrets in its datacenters.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How do we secure secret information provided by you?
 
-In addition to the Office 365 Trust Center which provides [Security, Privacy and Compliance Information for Office 365](./get-started-with-service-trust-portal.md), you might want to know how Microsoft helps protects secrets you provide in its datacenters. We use a technology called Distributed Key Manager (DKM).
+In addition to the Office 365 Trust Center that provides [Security, Privacy, and Compliance Information for Office 365](./get-started-with-service-trust-portal.md), you might want to know how Microsoft helps protects secrets you provide in its datacenters. We use a technology called Distributed Key Manager (DKM).
   
 [Distributed Key Manager](office-365-bitlocker-and-distributed-key-manager-for-encryption.md) (DKM) is a client-side functionality that uses a set of secret keys to encrypt and decrypt information. Only members of a specific security group in Active Directory Domain Services can access those keys in order to decrypt the data that is encrypted by DKM. In Exchange Online, only certain service accounts under which the Exchange processes run are part of that security group. As part of standard operating procedure in the datacenter, no human is given credentials that are part of this security group and therefore no human has access to the keys that can decrypt these secrets.
   

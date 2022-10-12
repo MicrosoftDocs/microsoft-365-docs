@@ -2,33 +2,35 @@
 title: "Manage payment methods"
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: jamitche, jmueller
+ms.reviewer: lishepar, vikdesai
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_billing
 - TopSMBIssues
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 - AdminTemplateSet
 - adminvideo
+- business_assist
 search.appverid: MET150
 description: "Buy business products or services from Microsoft by using an existing payment method or adding a new one in the Microsoft 365 admin center."
-ms.date: 04/02/2021
+ms.date: 06/01/2022
 ---
 
 # Manage payment methods
 
 > [!IMPORTANT]
-> As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you’re an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.
+> As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you’re an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account that is in good standing. However, you can't add new subscriptions to the bank account.
 
 When you buy business products or services from Microsoft, you can use an existing payment method, or add a new one. You can use a credit or debit card, or bank account to pay for the things you buy.
 
@@ -40,6 +42,9 @@ If your business account doesn't have a billing profile, any Global or Billing a
 > The option to pay with a bank account is not available in some countries or regions.
 >
 > You must use a payment method issued from the same country as your tenant.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Watch: Update your payment method
 

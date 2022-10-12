@@ -4,12 +4,13 @@ ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -23,7 +24,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
-description: "Microsoft 365 Group members get a group email and shared workspace for conversations, files, and calendar events, Stream and a Planner."
+description: "Microsoft 365 Group members get a group email and shared workspace for conversations, files, and calendar events, Stream, and a Planner."
 ---
 
 # Compare groups
@@ -48,7 +49,7 @@ All of these group types can be used with Power Automate.
 
 ## Microsoft 365 Groups
 
-Microsoft 365 Groups are used for collaboration between users, both inside and outside your company. With each Microsoft 365 Group, members get a group email and shared workspace for conversations, files, and calendar events, Stream and a Planner.
+Microsoft 365 Groups are used for collaboration between users, both inside and outside your company. With each Microsoft 365 Group, members get a group email and shared workspace for conversations, files, and calendar events, Stream, and a Planner.
 
 You can add people from outside your organization to a group as long as this has been [enabled by the administrator](manage-guest-access-in-groups.md). You can also allow external senders to send email to the group email address.
 
@@ -58,7 +59,9 @@ Microsoft 365 Groups can be accessed through mobile apps such as Outlook for iOS
 
 Group members can send as or send on behalf of the group email address if this has been [enabled by the administrator](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md).
 
-Microsoft 365 Groups don't support nesting with other Microsoft 365 Groups or with distribution or security groups.
+Microsoft 365 groups support nesting through [dynamic groups in Azure Active Directory](/azure/active-directory/enterprise-users/groups-dynamic-rule-member-of).
+
+Microsoft 365 Groups can be added to one of the three SharePoint groups (Owners, Members, or Visitors) to give people permissions to the site.
 
 ## Distribution groups
 
@@ -106,9 +109,9 @@ Shared mailboxes can receive external emails if the administrator has enabled th
 
 Shared mailboxes include a calendar that can be used for collaboration.
 
-Users with permissions to the group mailbox can send as or send on behalf of the mailbox email address if the administrator has given that user permissions to do that. This is particularly useful for help and support mailboxes because users can send emails from "Contoso Support" or "Building A Reception Desk."
+Users with permissions to the group mailbox can send as or send on behalf of the mailbox email address, if the administrator has given that user permissions to do that. This is especially useful for help and support mailboxes because users can send emails from "Contoso Support" or "Building A Reception Desk."
 
-It's not possible to migrate a shared mailbox to a Microsoft 365 Group. 
+It's not possible to migrate a shared mailbox to a Microsoft 365 Group.
 
 ## Related content
 

@@ -1,14 +1,16 @@
 ---
 title: "Get help and support for Microsoft 365 Lighthouse"
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,25 +22,23 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Get help and support for Microsoft 365 Lighthouse 
 
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+Several options are available if you need help. First, check to see if there are any known issues:
 
-Several options are available if you need help. Start by checking the current health of customer tenant services:
+- Review the current health of customer tenant services:
 
-1. In the left navigation pane of Lighthouse, select **Service health**.
-2. View detailed information about current and past issues.
+    1. In the left navigation pane of Lighthouse, select **Service health**. 
+    2. View detailed information about current and past issues.
 
-To check the current health of the Lighthouse tenant services:
+- Review the current health of the Lighthouse tenant services:
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
-2. In the left navigation pane, select **Health** > **Service health**.
-3. In the list of services, find **Microsoft 365 suite**, and then expand it to show all the services in the suite.
-4. Find **Microsoft 365 Lighthouse** and check the health.
+    1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+    2. In the left navigation pane, select **Health** > **Service health**.
+    3. In the list of services, find **Microsoft 365 suite**, and then expand it to show all the services in the suite.
+    4. Find **Microsoft 365 Lighthouse** and check the health.
 
-If you're experiencing an issue that isn't listed in either of the Service health dashboards, follow the instructions in this article to view self-help options or to create a service request.
+- See if the issue is listed in [Known issues with Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-known-issues).
 
-> [!NOTE]
-> Support is limited to English while Lighthouse is in Preview.
+If you're experiencing an issue that isn't listed in any of these resources, then follow the instructions in this article to view self-help options or to create a service request.
 
 ## Before you begin
 
@@ -76,4 +76,6 @@ If you're experiencing an issue that isn't listed in either of the Service healt
 
 ## Related content
 
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Known issues with Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)\
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
+[Troubleshooot and resolve problems and error messages in Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (article)

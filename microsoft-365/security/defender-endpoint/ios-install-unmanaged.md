@@ -2,7 +2,7 @@
 title: Deploy Microsoft Defender for Endpoint on iOS features
 description: Describes how to deploy Microsoft Defender for Endpoint on unenrolled iOS devices.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, configure, features, ios
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,12 @@ author: sunasing
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Deploy Microsoft Defender for Endpoint on unenrolled iOS devices
@@ -39,7 +41,7 @@ Microsoft Defender for Endpoint on iOS threat information is leveraged by Intune
 
 Microsoft Defender for Endpoint on iOS supports both the configurations of MAM
 - **Intune MDM + MAM**: IT administrators can only manage apps using App Protection Policies on devices that are enrolled with Intune mobile device management (MDM).
-- **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using [App Protection Policies](/mem/intune/app/app-protection-policy) on devices not enrolled with Intune MDM. This means apps can be managed by Intune on devices enrolled with third-party EMM providers. 
+- **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using [App Protection Policies](/mem/intune/apps/app-protection-policy) on devices not enrolled with Intune MDM. This means apps can be managed by Intune on devices enrolled with third-party EMM providers. 
 To manage apps using in both the above configurations customers should use Intune in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
 
 To enable this capability an administrator needs to configure the connection between Microsoft Defender for Endpoint and Intune, create the app protection policy, and apply the policy on targeted devices and applications. 
@@ -50,11 +52,12 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
 1. **Verify that the connector is enabled**. <br> On the [unified security console](https://security.microsoft.com), go to **Settings** > **Endpoints** > **Advanced Features** and ensure that **Microsoft Intune connection** is enabled.
 
-  ![Image of Defender for Endpoint -Intune connector](images/enable-intune-connection.png)
+  :::image type="content" source="images/enable-intune-connection.png" alt-text="The Defender for Endpoint - Intune connector" lightbox="images/enable-intune-connection.png":::
+
   
 2. **Verify that the connector is enabled on the Intune portal**. <br> In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint Security** > **Microsoft Defender for Endpoint** and ensure that the Connection status is enabled.
 
-  ![App settings](images/app-settings.png)
+  :::image type="content" source="images/app-settings.png" alt-text="The application settings" lightbox="images/app-settings.png":::
 
 ### Create an app protection policy
  
@@ -64,7 +67,7 @@ Microsoft Defender for Endpoint can be configured to send threat signals to be u
 1. Create a policy <br>
 App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A policy can be a rule that is enforced when the user attempts to access or move "corporate" data, or a set of actions that are prohibited or monitored when the user is inside the app. 
 
-![Image of policy creation](images/create-policy.png)
+:::image type="content" source="images/create-policy.png" alt-text="The Create policy tab on the App protection policies menu item" lightbox="images/create-policy.png":::
 
 2. Add apps <br>
     a. Choose how you want to apply this policy to apps on different devices. Then add at least one app. <br>
@@ -76,12 +79,14 @@ Because mobile app management doesn't require device management, you can protect
 
     *Example: Outlook as a managed app*
 
-    ![Image Outlook as managed app](images/managed-app.png)
+     :::image type="content" source="images/managed-app.png" alt-text="The Microsoft Outlook menu item on the left navigation pane" lightbox="images/managed-app.png":::
+  
 
  3. Set sign-in security requirements for your protection policy. <br>
 Select **Setting > Max allowed device threat level** in **Device Conditions** and enter a value. Then select  **Action:  "Block Access"**. Microsoft Defender for Endpoint on iOS shares this Device Threat Level.
 
-    ![Image of conditional launch](images/conditional-launch.png)
+    
+   :::image type="content" source="images/conditional-launch.png" alt-text="The Device conditions pane" lightbox="images/conditional-launch.png":::
 
 4. Assign user groups for whom the policy needs to be applied.<br>
   Select **Included groups**. Then add the relevant groups. 

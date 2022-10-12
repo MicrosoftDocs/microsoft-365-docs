@@ -1,22 +1,23 @@
 ---
-title: "Verify academic eligibility for Microsoft 365 Education subscriptions"
+title: "Verify eligibility for Microsoft 365 Education subscriptions"
 f1.keywords:
 - CSH
 - FWLink-2135711
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: pablom
+ms.reviewer: pablom, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_subscriptions
+- AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to verify your school's eligibility for Microsoft 365 Education academic pricing."

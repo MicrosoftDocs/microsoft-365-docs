@@ -10,14 +10,15 @@ ms.topic: article
 ms.date: 11/18/2019
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 ms.custom: 
   - Ent_Solutions
   - SIEM
   - seo-marvel-apr2020
 description: Get an overview of Security Information and Event Management (SIEM) server integration with your Microsoft 365 cloud services and applications
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Security Information and Event Management (SIEM) server integration with Microsoft 365 services and applications
@@ -27,7 +28,7 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 ## Summary
 
@@ -64,6 +65,22 @@ Make sure that audit logging is turned on before you configure SIEM server integ
 
 - For SharePoint Online, OneDrive for Business, and Azure Active Directory, see [Turn auditing on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 - For Exchange Online, see [Manage mailbox auditing](../../compliance/enable-mailbox-auditing.md).
+
+## Integration steps if your SIEM is Microsoft Sentinel
+
+Be sure that your current plan allows for Microsoft Sentinel integration (for example, you have Microsoft Defender for Office 365 Plan 2 or higher), and that your account in Microsoft Defender for Office 365 or Microsoft 365 Defender is a *Security Administrator*. Finally, be sure that you have *Write permissions in Microsoft Sentinel*.
+
+1. Navigate to Microsoft Sentinel.
+1. On the navigation to the left of the screen **Configuration** > **Data connectors**.
+1. **Search for** Microsoft 365 Defender and select the **Microsoft 365 Defender (preview) connector**.
+1. On the right of your screen select **Open Connector Page**.
+1. Under **Configuration** > select **Connect incidents & alerts**
+    1. Turn off all Microsoft incident creation rules for the products currently selected.
+1. Scroll to **Microsoft Defender for Office 365** in the **Connect events** section of the page.
+
+Note that you can choose tables from *any other Microsoft Defender product* you find helpful and applicable while completing the final step, (below).
+
+7. Select **EmailEvents**, **EmailUrlInfo**, **EmailAttachmentInfo**, and **EmailPostDeliveryEvents** > and **Apply Changes**.
 
 ## More resources
 

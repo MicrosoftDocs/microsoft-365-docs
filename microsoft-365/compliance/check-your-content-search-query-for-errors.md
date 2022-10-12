@@ -1,11 +1,11 @@
 ---
 title: "Check your search query for errors"
+description: "Learn how to detect errors and typos in your keyword query for eDiscovery searches before running the search."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,15 @@ search.appverid:
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
-description: "Learn how to detect errors and typos in your keyword query for eDiscovery searches before running the search."
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Check your search query for errors
   
-Here's a list of the unsupported characters that we check for in search queries for Content search and Core eDiscovery. Unsupported characters are often hidden, and they typically cause a search error or return unintended results.
+Here's a list of the unsupported characters that we check for in search queries for Content search and Microsoft Purview eDiscovery (Standard). Unsupported characters are often hidden, and they typically cause a search error or return unintended results.
   
 - **Smart quotation marks** - Smart single and double quotation marks (also called curly quotes) aren't supported. Only straight quotation marks can be used in a search query. 
 
@@ -29,6 +32,8 @@ Here's a list of the unsupported characters that we check for in search queries 
 - **Left-to-right and right-to-left marks** - These marks are control characters used to indicate text direction for left-to-right languages (such as English and Spanish) and right-to-left languages (such as Arabic and Hebrew).
 
 - **Lowercase Boolean operators** - If you use a Boolean operator, such as **AND**, **OR**, and **NOT** in a search query, it must be uppercase. When we check a query for typos, the query syntax will often indicate that a Boolean operator is being used even though lowercase operators might be used; for example,  `(WordA or WordB) and (WordC or WordD)`.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## What happens if a query has an unsupported character?
 

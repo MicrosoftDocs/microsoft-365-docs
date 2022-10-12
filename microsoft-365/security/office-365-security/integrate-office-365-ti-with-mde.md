@@ -14,18 +14,17 @@ search.appverid:
   - MET150
   - MOE150
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 description: Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint to get more detailed information about threats against your devices and email content.
-ms.custom: 
+ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 [Microsoft Defender for Office 365](defender-for-office-365.md) can be configured to work with [Microsoft Defender for Endpoint](/windows/security/threat-protection).
 
@@ -33,9 +32,9 @@ Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoi
 
 The following image depicts what the **Devices** tab looks like when you have Microsoft Defender for Endpoint integration enabled:
 
-![When Microsoft Defender for Endpoint is enabled, you can see a list of devices with alerts.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
+:::image type="content" source="../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG" alt-text="A list of devices with alerts" lightbox="../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG":::
 
-In this example, you can see that the recipients of the detected email message have four devices and one has an alert. Clicking the link for a device opens its page in the [Microsoft 365 Defender portal](../defender-endpoint/microsoft-defender-security-center.md) (formerly the Microsoft Defender Security Center).
+In this example, you can see that the recipients of the detected email message have four devices and one has an alert. Clicking the link for a device opens its page in the [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender).
 
 > [!TIP]
 > The Microsoft 365 Defender portal replaces the Microsoft Defender Security Center. See [Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
@@ -54,13 +53,13 @@ Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoi
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Go to **Email & collaboration** \> **Explorer**. 
+2. Go to **Email & collaboration** \> **Explorer**.
 
 3. On the **Explorer** page, in the upper right corner of the screen, select **MDE Settings**.
 
 3. In the **Microsoft Defender for Endpoint connection** flyout that appears, turn on **Connect to Microsoft Defender for Endpoint** (![Toggle on.](../../media/scc-toggle-on.png)) and then select **Close**.
 
-    :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="MDE Connection.":::
+   :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="The MDE Connection page" lightbox="../../media/explorer-mdeconnection-dialognew.png":::
 
 4. In the navigation pane, choose **Settings**. On the **Settings** page, choose **Endpoints**
 

@@ -1,13 +1,14 @@
 ---
-title: "Configure a team with security isolation"
+title: "Configure a team with security isolation by using a unique sensitivity label"
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection: 
+- highpri
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-3tiersprotection
@@ -15,11 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
 recommendations: false
 description: "Learn how to create a team with a unique sensitivity label for security."
 ---
 
-# Configure a team with security isolation
+# Configure a team with security isolation by using a unique sensitivity label
 
 This article provides you with recommendations and steps to configure a private team in Microsoft Teams and use a unique sensitivity label to encrypt files so that only team members can decrypt them.
 
@@ -106,7 +108,7 @@ If you have an internal partner or stakeholder group who should be able to view 
 
 To create a sensitivity label
 
-1. Open the Microsoft 365 compliance center, and under **Solutions**, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection**</a>.
+1. Open the Microsoft Purview compliance portal, and under **Solutions**, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection**</a>.
 1. Click **Create a label**.
 1. Give the label a name. We suggest naming it after the team that you'll be using it with.
 1. Add a display name and description, and then click **Next**.
@@ -138,7 +140,7 @@ Once you've created the label, you need to publish it to the users who will use 
 
 To publish a sensitivity label:
 
-1. In the Microsoft 365 compliance center, on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection** page</a>, choose the **Label policies** tab.
+1. In the Microsoft Purview compliance portal, on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection** page</a>, choose the **Label policies** tab.
 2. Click **Publish labels**.
 3. On the **Choose sensitivity labels to publish** page, click **Choose sensitivity labels to publish**.
 4. Select the label that you created, and then click **Add**.
@@ -156,11 +158,11 @@ To publish a sensitivity label:
 Once the label has been published, you must apply it to the team in order for the guest sharing and managed devices settings to take effect. This is done in the SharePoint admin center. Note, it may take some time for the label to become available after it's been published.
 
 To apply the sensitivity label
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. Under **Sites**, click **Active sites**.
-3. Click the site that is associated with team.
-4. On the **Policies** tab, under **Sensitivity**, click **Edit**.
-5. Select the label that you created, and then click **Save**.
+
+1. Open the SharePoint admin center, and under **Sites**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
+1. Select the site that is associated with team.
+1. On the **Policies** tab, under **Sensitivity**, select **Edit**.
+1. Select the label that you created, and then select **Save**.
 
 ## SharePoint settings
 
@@ -182,13 +184,13 @@ The guest sharing setting that you chose when you created the label (which only 
 We'll also update the default sharing link type to reduce the risk of accidentally sharing files and folders to a wider audience than intended.
 
 To update site settings
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. Under **Sites**, click **Active sites**.
-3. Click the site that is associated with team.
-4. On the **Policies** tab, under **External sharing**, click **Edit**.
-5. If you allowed guest sharing when you created the sensitive label, ensure that **New and existing guests** is selected. If you didn't allow sharing when you created the label, choose **Only people in your organization**.
-6. Under Default sharing link type, clear the **Same as organization-level setting** check box, and select **People with existing access**.
-7. Click **Save**.
+
+1. Open the SharePoint admin center, and under **Sites**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>
+1. Select the site that is associated with team.
+1. On the **Policies** tab, under **External sharing**, select **Edit**.
+1. If you allowed guest sharing when you created the sensitive label, ensure that **New and existing guests** is selected. If you didn't allow sharing when you created the label, choose **Only people in your organization**.
+1. Under Default sharing link type, clear the **Same as organization-level setting** check box, and select **People with existing access**.
+1. Select **Save**.
 
 #### Private channels
 
@@ -256,7 +258,7 @@ This training should include hands-on exercises so that your team members can ex
 
 In the weeks after training:
 
-- Quickly address team member feedback and fine tune polices and configurations.
+- Quickly address team member feedback and fine tune policies and configurations.
 - Analyze usage for the team and compare it with usage expectations.
 - Verify that highly regulated files have been properly labeled with the sensitivity label. (You can see which files have a label assigned by viewing a folder in SharePoint and adding the **Sensitivity** column through the **Show/hide columns** option of **Add column**.
 

@@ -2,24 +2,25 @@
 title: "Manage licenses for devices"
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: shegu, nicholak
-ms.audience: Admin
+audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- scotvorg 
 - M365-subscription-management
 - Adm_O365
 description: "Learn how to assign licenses to groups for use with devices."
 ms.custom: 
+- commerce_licensing
 - AdminSurgePortfolio
 - okr_SMB
-- commerce_licensing
 search.appverid: MET150
-ms.date: 08/27/2021
+ms.date: 05/12/2022
 ---
 # Manage licenses for devices
 

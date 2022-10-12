@@ -14,16 +14,16 @@ search.appverid:
   - MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: What are best practices for Exchange Online Protection (EOP) and Defender for Office 365 security settings? What's the current recommendations for standard protection? What should be used if you want to be more strict? And what extras do you get if you also use Defender for Office 365?
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Recommended settings for EOP and Microsoft Defender for Office 365 security
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -38,10 +38,16 @@ To automatically apply the Standard or Strict settings to users, see [Preset sec
 
 This article describes the default settings, and also the recommended Standard and Strict settings to help protect your users. The tables contain the settings in the Microsoft 365 Defender portal and PowerShell (Exchange Online PowerShell or standalone Exchange Online Protection PowerShell for organizations without Exchange Online mailboxes).
 
-> [!TIP]
-> You can't change the recommended Standard and Strict settings in the Microsoft 365 Defender portal. To change recommended values like **Enable users to protect**, you need to use [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
->
+> [!NOTE]
 > The Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) module for PowerShell can help you (admins) find the current values of these settings. Specifically, the **Get-ORCAReport** cmdlet generates an assessment of anti-spam, anti-phishing, and other message hygiene settings. You can download the ORCA module at <https://www.powershellgallery.com/packages/ORCA/>.
+>
+> In Microsoft 365 organizations, we recommend that you leave the Junk Email Filter in Outlook set to **No automatic filtering** to prevent unnecessary conflicts (both positive and negative) with the spam filtering verdicts from EOP. For more information, see the following articles:
+>
+> - [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md)
+> - [About junk email settings in Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)
+> - [Change the level of protection in the Junk Email Filter](https://support.microsoft.com/en-us/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
+> - [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md)
+> - [Create blocked sender lists in EOP](create-block-sender-lists-in-office-365.md)
 
 ## Anti-spam, anti-malware, and anti-phishing protection in EOP
 
@@ -51,64 +57,54 @@ Anti-spam, anti-malware, and anti-phishing are EOP features that can be configur
 
 To create and configure anti-spam policies, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
-<br>
-
-****
-
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Bulk email threshold & spam properties**|||||
-|**Bulk email threshold** <p> _BulkThreshold_|7|6|4|For details, see [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md).|
+|**Bulk email threshold** <br><br> _BulkThreshold_|7|6|5|For details, see [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md).|
 |_MarkAsSpamBulkMail_|`On`|`On`|`On`|This setting is only available in PowerShell.|
 |**Increase spam score** settings|Off|Off|Off|All of these settings are part of the Advanced Spam Filter (ASF). For more information, see the [ASF settings in anti-spam policies](#asf-settings-in-anti-spam-policies) section in this article.|
 |**Mark as spam** settings|Off|Off|Off|Most of these settings are part of ASF. For more information, see the [ASF settings in anti-spam policies](#asf-settings-in-anti-spam-policies) section in this article.|
-|**Contains specific languages** <p> _EnableLanguageBlockList_ <p> _LanguageBlockList_|**Off** <p> `$false` <p> Blank|**Off** <p> `$false` <p> Blank|**Off** <p> `$false` <p> Blank|We have no specific recommendation for this setting. You can block messages in specific languages based on your business needs.|
-|**From these countries** <p> _EnableRegionBlockList_ <p> _RegionBlockList_|**Off** <p> `$false` <p> Blank|**Off** <p> `$false` <p> Blank|**Off** <p> `$false` <p> Blank|We have no specific recommendation for this setting. You can block messages from specific countries based on your business needs.|
+|**Contains specific languages** <br><br> _EnableLanguageBlockList_ <br><br> _LanguageBlockList_|**Off** <br><br> `$false` <br><br> Blank|**Off** <br><br> `$false` <br><br> Blank|**Off** <br><br> `$false` <br><br> Blank|We have no specific recommendation for this setting. You can block messages in specific languages based on your business needs.|
+|**From these countries** <br><br> _EnableRegionBlockList_ <br><br> _RegionBlockList_|**Off** <br><br> `$false` <br><br> Blank|**Off** <br><br> `$false` <br><br> Blank|**Off** <br><br> `$false` <br><br> Blank|We have no specific recommendation for this setting. You can block messages from specific countries based on your business needs.|
 |**Test mode** (_TestModeAction_)|**None**|**None**|**None**|This setting is part of ASF. For more information, see the [ASF settings in anti-spam policies](#asf-settings-in-anti-spam-policies) section in this article.|
-|**Actions**||||Wherever you select **Quarantine message**, a **Select quarantine policy** box is available. Quarantine policies define what users are allowed to do to quarantined messages. <p> When you create a new anti-spam policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined by that particular verdict (AdminOnlyAccessPolicy for **High confidence phishing**; DefaultFullAccessPolicy for everything else). <p> Admins can create and select custom quarantine policies that define more restrictive or less restrictive capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).|
-|**Spam** detection action <p> _SpamAction_|**Move message to Junk Email folder** <p> `MoveToJmf`|**Move message to Junk Email folder** <p> `MoveToJmf`|**Quarantine message** <p> `Quarantine`||
-|**High confidence spam** detection action <p> _HighConfidenceSpamAction_|**Quarantine message** <p> `MoveToJmf`|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`||
-|**Phishing** detection action <p> _PhishSpamAction_|**Quarantine message** <p> `MoveToJmf`|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`||
-|**High confidence phishing** detection action <p> _HighConfidencePhishAction_|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`||
-|**Bulk** detection action <p> _BulkSpamAction_|**Move message to Junk Email folder** <p> `MoveToJmf`|**Move message to Junk Email folder** <p> `MoveToJmf`|**Quarantine message** <p> `Quarantine`||
-|**Retain spam in quarantine for this many days** <p> _QuarantineRetentionPeriod_|15 days<sup>\*</sup>|30 days|30 days|<sup>\*</sup> The default value is 15 days in the default anti-spam policy, and in new anti-spam policies that you create in PowerShell. The default value is 30 days in new anti-spam policies that you create in the Microsoft 365 Defender portal. <p> This value also affects messages that are quarantined by anti-phishing policies. For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).|
-|**Enable spam safety tips** <p> _InlineSafetyTipsEnabled_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
-|Enable zero-hour auto purge (ZAP) for phishing messages <p> _PhishZapEnabled_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
-|Enable ZAP for spam messages <p> _SpamZapEnabled_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
+|**Actions**||||Wherever you select **Quarantine message**, a **Select quarantine policy** box is available. Quarantine policies define what users are allowed to do to quarantined messages. <br><br> Standard and Strict preset security policies use the default quarantine policies (AdminOnlyAccessPolicy or DefaultFullAccessPolicy with no quarantine notifications) as described in the table [here](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <br><br> When you create a new anti-spam policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined by that particular verdict (AdminOnlyAccessPolicy with no quarantine notifications for **High confidence phishing**; DefaultFullAccessPolicy with no quarantine notifications for everything else). <br><br> Admins can create and select custom quarantine policies that define more restrictive or less restrictive capabilities for users in the default or custom anti-spam policies. For more information, see [Quarantine policies](quarantine-policies.md).|
+|**Spam** detection action <br><br> _SpamAction_|**Move message to Junk Email folder** <br><br> `MoveToJmf`|**Move message to Junk Email folder** <br><br> `MoveToJmf`|**Quarantine message** <br><br> `Quarantine`||
+|**High confidence spam** detection action <br><br> _HighConfidenceSpamAction_|**Move message to Junk Email folder** <br><br> `MoveToJmf`|**Quarantine message** <br><br> `Quarantine`|**Quarantine message** <br><br> `Quarantine`||
+|**Phishing** detection action <br><br> _PhishSpamAction_|**Move message to Junk Email folder**<sup>\*</sup> <br><br> `MoveToJmf`|**Quarantine message** <br><br> `Quarantine`|**Quarantine message** <br><br> `Quarantine`|<sup>\*</sup> The default value is **Move message to Junk Email folder** in the default anti-spam policy and in new anti-spam policies that you create in PowerShell. The default value is **Quarantine message** in new anti-spam policies that you create in the Microsoft 365 Defender portal.|
+|**High confidence phishing** detection action <br><br> _HighConfidencePhishAction_|**Quarantine message** <br><br> `Quarantine`|**Quarantine message** <br><br> `Quarantine`|**Quarantine message** <br><br> `Quarantine`||
+|**Bulk** detection action <br><br> _BulkSpamAction_|**Move message to Junk Email folder** <br><br> `MoveToJmf`|**Move message to Junk Email folder** <br><br> `MoveToJmf`|**Quarantine message** <br><br> `Quarantine`||
+|**Retain spam in quarantine for this many days** <br><br> _QuarantineRetentionPeriod_|15 days|30 days|30 days|  <br><br> This value also affects messages that are quarantined by anti-phishing policies. For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).|
+|**Enable spam safety tips** <br><br> _InlineSafetyTipsEnabled_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
+|Enable zero-hour auto purge (ZAP) for phishing messages <br><br> _PhishZapEnabled_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
+|Enable ZAP for spam messages <br><br> _SpamZapEnabled_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Allow & block list**|||||
-|Allowed senders <p> _AllowedSenders_|None|None|None||
-|Allowed sender domains <p> _AllowedSenderDomains_|None|None|None|Adding domains to the allowed senders list is a very bad idea. Attackers would be able to send you email that would otherwise be filtered out. <p> Use the [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [Tenant Allow/Block List](tenant-allow-block-list.md) to review all senders who are spoofing sender email addresses in your organization's email domains or spoofing sender email addresses in external domains.|
-|Blocked senders <p> _BlockedSenders_|None|None|None||
-|Blocked sender domains <p> _BlockedSenderDomains_|None|None|None||
-|
+|Allowed senders <br><br> _AllowedSenders_|None|None|None||
+|Allowed sender domains <br><br> _AllowedSenderDomains_|None|None|None|Adding domains to the allowed senders list is a very bad idea. Attackers would be able to send you email that would otherwise be filtered out. <br><br> Use the [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) to review all senders who are spoofing sender email addresses in your organization's email domains or spoofing sender email addresses in external domains.|
+|Blocked senders <br><br> _BlockedSenders_|None|None|None||
+|Blocked sender domains <br><br> _BlockedSenderDomains_|None|None|None||
 
 #### ASF settings in anti-spam policies
 
-The table in this section describes the Advanced Spam Filter (ASF) settings that are available in anti-spam policies. All of these settings are **Off** for both **Standard** and **Strict** levels. For more information about ASF settings, see [Advanced Spam Filter (ASF) settings in EOP](advanced-spam-filtering-asf-options.md).
+For more information about Advanced Spam Filter (ASF) settings in anti-spam policies, see [Advanced Spam Filter (ASF) settings in EOP](advanced-spam-filtering-asf-options.md).
 
-<br>
-
-****
-
-|Security feature name|Comment|
-|---|---|
-|**Image links to remote sites** (_IncreaseScoreWithImageLinks_)||
-|**Numeric IP address in URL** (_IncreaseScoreWithNumericIps_)||
-|**URL redirect to other port** (_IncreaseScoreWithRedirectToOtherPort_)||
-|**Links to .biz or .info websites** (_IncreaseScoreWithBizOrInfoUrls_)||
-|**Empty messages** (_MarkAsSpamEmptyMessages_)||
-|**Embed tags in HTML** (_MarkAsSpamEmbedTagsInHtml_)||
-|**JavaScript or VBScript in HTML** (_MarkAsSpamJavaScriptInHtml_)||
-|**Form tags in HTML** (_MarkAsSpamFormTagsInHtml_)||
-|**Frame or iframe tags in HTML** (_MarkAsSpamFramesInHtml_)||
-|**Web bugs in HTML** (_MarkAsSpamWebBugsInHtml_)||
-|**Object tags in HTML** (_MarkAsSpamObjectTagsInHtml_)||
-|**Sensitive words** (_MarkAsSpamSensitiveWordList_)||
-|**SPF record: hard fail** (_MarkAsSpamSpfRecordHardFail_)||
-|**Sender ID filtering hard fail** (_MarkAsSpamFromAddressAuthFail_)||
-|**Backscatter** (_MarkAsSpamNdrBackscatter_)||
-|**Test mode** (_TestModeAction_)|For ASF settings that support **Test** as an action, you can configure the test mode action to **None**, **Add default X-Header text**, or **Send Bcc message** (`None`, `AddXHeader`, or `BccMessage`). For more information, see [Enable, disable, or test ASF settings](advanced-spam-filtering-asf-options.md#enable-disable-or-test-asf-settings).|
-|
+|Security feature name|Default|Recommended<br/>Standard|Recommended<br/>Strict|Comment|
+|---|:---:|:---:|:---:|---|
+|**Image links to remote sites** <br><br> _IncreaseScoreWithImageLinks_|Off|Off|Off||
+|**Numeric IP address in URL** <br><br> _IncreaseScoreWithNumericIps_|Off|Off|Off||
+|**URL redirect to other port** <br><br> _IncreaseScoreWithRedirectToOtherPort_|Off|Off|Off||
+|**Links to .biz or .info websites** <br><br> _IncreaseScoreWithBizOrInfoUrls_|Off|Off|Off||
+|**Empty messages** <br><br> _MarkAsSpamEmptyMessages_|Off|Off|Off||
+|**Embed tags in HTML** <br><br> _MarkAsSpamEmbedTagsInHtml_|Off|Off|Off||
+|**JavaScript or VBScript in HTML** <br><br> _MarkAsSpamJavaScriptInHtml_|Off|Off|Off||
+|**Form tags in HTML** <br><br> _MarkAsSpamFormTagsInHtml_|Off|Off|Off||
+|**Frame or iframe tags in HTML** <br><br> _MarkAsSpamFramesInHtml_|Off|Off|Off||
+|**Web bugs in HTML** <br><br> _MarkAsSpamWebBugsInHtml_|Off|Off|Off||
+|**Object tags in HTML** <br><br> _MarkAsSpamObjectTagsInHtml_|Off|Off|Off||
+|**Sensitive words** <br><br> _MarkAsSpamSensitiveWordList_|Off|Off|Off||
+|**SPF record: hard fail** <br><br> _MarkAsSpamSpfRecordHardFail_|Off|Off|Off||
+|**Sender ID filtering hard fail** <br><br> _MarkAsSpamFromAddressAuthFail_|Off|Off|Off||
+|**Backscatter** <br><br> _MarkAsSpamNdrBackscatter_|Off|Off|Off||
+|**Test mode** <br><br> _TestModeAction_)|None|None|None|For ASF settings that support **Test** as an action, you can configure the test mode action to **None**, **Add default X-Header text**, or **Send Bcc message** (`None`, `AddXHeader`, or `BccMessage`). For more information, see [Enable, disable, or test ASF settings](advanced-spam-filtering-asf-options.md#enable-disable-or-test-asf-settings).|
 
 #### EOP outbound spam policy settings
 
@@ -117,75 +113,58 @@ To create and configure outbound spam policies, see [Configure outbound spam fil
 For more information about the default sending limits in the service, see [Sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
 
 > [!NOTE]
-> Outbound spam policies are not part of Standard or Strict preset security policies. The **Standard** and **Strict** values indicate our **recommended** values in the default outbound spam policy or custom policies that you create.
+> Outbound spam policies are not part of Standard or Strict preset security policies. The **Standard** and **Strict** values indicate our **recommended** values in the default outbound spam policy or custom outbound spam policies that you create.
 
-<br>
-
-****
-
-|Security feature name|Default|Standard|Strict|Comment|
+|Security feature name|Default|Recommended<br/>Standard|Recommended<br/>Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|**Set an external message limit** <p> _RecipientLimitExternalPerHour_|0|500|400|The default value 0 means use the service defaults.|
-|**Set an internal message limit** <p> _RecipientLimitInternalPerHour_|0|1000|800|The default value 0 means use the service defaults.|
-|**Set a daily message limit** <p> _RecipientLimitPerDay_|0|1000|800|The default value 0 means use the service defaults.|
-|**Restriction placed on users who reach the message limit** <p> _ActionWhenThresholdReached_|**Restrict the user from sending mail until the following day** <p> `BlockUserForToday`|**Restrict the user from sending mail** <p> `BlockUser`|**Restrict the user from sending mail** <p> `BlockUser`||
-|**Automatic forwarding rules** <p> _AutoForwardingMode_|**Automatic - System-controlled** <p> `Automatic`|**Automatic - System-controlled** <p> `Automatic`|**Automatic - System-controlled** <p> `Automatic`|
-|**Send a copy of outbound messages that exceed these limits to these users and groups** <p> _BccSuspiciousOutboundMail_ <p> _BccSuspiciousOutboundAdditionalRecipients_|Not selected <p> `$false` <p> Blank|Not selected <p> `$false` <p> Blank|Not selected <p> `$false` <p> Blank|We have no specific recommendation for this setting. <p> This setting only works in the default outbound spam policy. It doesn't work in custom outbound spam policies that you create.|
-|**Notify these users and groups if a sender is blocked due to sending outbound spam** <p> _NotifyOutboundSpam_ <p> _NotifyOutboundSpamRecipients_|Not selected <p> `$false` <p> Blank|Not selected <p> `$false` <p> Blank|Not selected <p> `$false` <p> Blank|The default [alert policy](../../compliance/alert-policies.md) named **User restricted from sending email** already sends email notifications to members of the **TenantAdmins** (**Global admins**) group when users are blocked due to exceeding the limits in policy. **We strongly recommend that you use the alert policy rather than this setting in the outbound spam policy to notify admins and other users**. For instructions, see [Verify the alert settings for restricted users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).|
-|
+|**Set an external message limit** <br><br> _RecipientLimitExternalPerHour_|0|500|400|The default value 0 means use the service defaults.|
+|**Set an internal message limit** <br><br> _RecipientLimitInternalPerHour_|0|1000|800|The default value 0 means use the service defaults.|
+|**Set a daily message limit** <br><br> _RecipientLimitPerDay_|0|1000|800|The default value 0 means use the service defaults.|
+|**Restriction placed on users who reach the message limit** <br><br> _ActionWhenThresholdReached_|**Restrict the user from sending mail until the following day** <br><br> `BlockUserForToday`|**Restrict the user from sending mail** <br><br> `BlockUser`|**Restrict the user from sending mail** <br><br> `BlockUser`||
+|**Automatic forwarding rules** <br><br> _AutoForwardingMode_|**Automatic - System-controlled** <br><br> `Automatic`|**Automatic - System-controlled** <br><br> `Automatic`|**Automatic - System-controlled** <br><br> `Automatic`|
+|**Send a copy of outbound messages that exceed these limits to these users and groups** <br><br> _BccSuspiciousOutboundMail_ <br><br> _BccSuspiciousOutboundAdditionalRecipients_|Not selected <br><br> `$false` <br><br> Blank|Not selected <br><br> `$false` <br><br> Blank|Not selected <br><br> `$false` <br><br> Blank|We have no specific recommendation for this setting. <br><br> This setting only works in the default outbound spam policy. It doesn't work in custom outbound spam policies that you create.|
+|**Notify these users and groups if a sender is blocked due to sending outbound spam** <br><br> _NotifyOutboundSpam_ <br><br> _NotifyOutboundSpamRecipients_|Not selected <br><br> `$false` <br><br> Blank|Not selected <br><br> `$false` <br><br> Blank|Not selected <br><br> `$false` <br><br> Blank|The default [alert policy](../../compliance/alert-policies.md) named **User restricted from sending email** already sends email notifications to members of the **TenantAdmins** (**Global admins**) group when users are blocked due to exceeding the limits in policy. **We strongly recommend that you use the alert policy rather than this setting in the outbound spam policy to notify admins and other users**. For instructions, see [Verify the alert settings for restricted users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).|
 
 ### EOP anti-malware policy settings
 
 To create and configure anti-malware policies, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
-<br>
-
-****
-
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Protection settings**|||||
-|**Enable the common attachments filter** <p> _EnableFileFilter_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|This setting quarantines messages that contain executable attachments based on file type, regardless of the attachment content.|
-|**Enable zero-hour auto purge for malware** <p> _ZapEnabled_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
-|**Quarantine policy**|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|When you create a new anti-malware policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined as malware (AdminOnlyAccessPolicy). <p> Admins can create and select custom quarantine policies that define more capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).|
-|**Recipient notifications**|||||
-|**Notify recipients when messages are quarantined as malware** <p> _Action_|Not selected <p> _DeleteMessage_|Not selected <p> _DeleteMessage_|Not selected <p> _DeleteMessage_|If malware is detected in an email attachment, the message is quarantined and can be released only by an admin.|
-|**Sender notifications**|||||
-|**Notify internal senders when messages are quarantined as malware** <p> _EnableInternalSenderNotifications_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`||
-|**Notify external senders when messages are quarantined as malware** <p> _EnableExternalSenderNotifications_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`||
+|**Enable the common attachments filter** <br><br> _EnableFileFilter_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|This setting quarantines messages that contain attachments based on file type, regardless of the attachment content. For the list of file types, see [Anti-malware policies](anti-malware-protection.md#anti-malware-policies).|
+|Common attachment filter notifications (**When these file types are found**) <br><br> _FileTypeAction_|**Reject the messages with a non-delivery receipt (NDR)** <br><br> `Reject`|**Reject the messages with a non-delivery receipt (NDR)** <br><br> `Reject`|**Reject the messages with a non-delivery receipt (NDR)** <br><br> `Reject`||
+|**Enable zero-hour auto purge for malware** <br><br> _ZapEnabled_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
+|**Quarantine policy**|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|When you create a new anti-malware policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined as malware (AdminOnlyAccessPolicy with no quarantine notifications). <br><br> Standard and Strict preset security policies use the default quarantine policy (AdminOnlyAccessPolicy with no quarantine notifications) as described in the table [here](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <br><br> Admins can create and select custom quarantine policies that define more capabilities for users in the default or custom anti-malware policies. For more information, see [Quarantine policies](quarantine-policies.md).|
 |**Admin notifications**|||||
-|**Notify an admin about undelivered messages from internal senders** <p> _EnableInternalSenderAdminNotifications_ <p> _InternalSenderAdminAddress_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`|We have no specific recommendation for this setting.|
-|**Notify an admin about undelivered messages from external senders** <p> _EnableExternalSenderAdminNotifications_ <p> _ExternalSenderAdminAddress_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`|We have no specific recommendation for this setting.|
+|**Notify an admin about undelivered messages from internal senders** <br><br> _EnableInternalSenderAdminNotifications_ <br><br> _InternalSenderAdminAddress_|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|We have no specific recommendation for this setting.|
+|**Notify an admin about undelivered messages from external senders** <br><br> _EnableExternalSenderAdminNotifications_ <br><br> _ExternalSenderAdminAddress_|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|We have no specific recommendation for this setting.|
 |**Customize notifications**||||We have no specific recommendations for these settings.|
-|**Use customized notification text** <p> _CustomNotifications_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`||
-|**From name** <p> _CustomFromName_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
-|**From address** <p> _CustomFromAddress_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
-|**Customize notifications for messages from internal senders**||||These settings are used only if **Notify internal senders when messages are quarantined as malware** or **Notify an admin about undelivered messages from internal senders** is selected.|
-|**Subject** <p> _CustomInternalSubject_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
-|**Message** <p> _CustomInternalBody_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
-|**Customize notifications for messages from external senders**||||These settings are used only if **Notify external senders when messages are quarantined as malware** or **Notify an admin about undelivered messages from external senders** is selected.|
-|**Subject** <p> _CustomExternalSubject_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
-|**Message** <p> _CustomExternalBody_|Blank <p> `$null`|Blank <p> `$null`|Blank <p> `$null`||
-|
+|**Use customized notification text** <br><br> _CustomNotifications_|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Not selected <br><br> `$false`||
+|**From name** <br><br> _CustomFromName_|Blank <br><br> `$null`|Blank <br><br> `$null`|Blank <br><br> `$null`||
+|**From address** <br><br> _CustomFromAddress_|Blank <br><br> `$null`|Blank <br><br> `$null`|Blank <br><br> `$null`||
+|**Customize notifications for messages from internal senders**||||These settings are used only if **Notify an admin about undelivered messages from internal senders** is selected.|
+|**Subject** <br><br> _CustomInternalSubject_|Blank <br><br> `$null`|Blank <br><br> `$null`|Blank <br><br> `$null`||
+|**Message** <br><br> _CustomInternalBody_|Blank <br><br> `$null`|Blank <br><br> `$null`|Blank <br><br> `$null`||
+|**Customize notifications for messages from external senders**||||These settings are used only if **Notify an admin about undelivered messages from external senders** is selected.|
+|**Subject** <br><br> _CustomExternalSubject_|Blank <br><br> `$null`|Blank <br><br> `$null`|Blank <br><br> `$null`||
+|**Message** <br><br> _CustomExternalBody_|Blank <br><br> `$null`|Blank <br><br> `$null`|Blank <br><br> `$null`||
 
 ### EOP anti-phishing policy settings
 
 For more information about these settings, see [Spoof settings](set-up-anti-phishing-policies.md#spoof-settings). To configure these settings, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 
-<br>
-
-****
+The spoof settings are inter-related, but the **Show first contact safety tip** setting has no dependency on spoof settings.
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Phishing threshold & protection**|||||
-|**Enable spoof intelligence** <p> _EnableSpoofIntelligence_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
+|**Enable spoof intelligence** <br><br> _EnableSpoofIntelligence_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Actions**|||||
-|**If message is detected as spoof** <p> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](learn-about-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](tenant-allow-block-list.md). <p> If you select **Quarantine the message**, an **Apply quarantine policy** box is available to select the quarantine policy that defines what users are allowed to do to messages that are quarantined as spoofing. When you create a new anti-phishing policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined as spoofing (DefaultFullAccessPolicy). <p> Admins can create and select custom quarantine policies that define more restrictive or less restrictive capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).|
-|**Show first contact safety tip** <p> _EnableFirstContactSafetyTips_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`|For more information, see [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
-|**Show (?) for unauthenticated senders for spoof** <p> _EnableUnauthenticatedSender_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Unauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).|
-|**Show "via" tag** <p> _EnableViaTag_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`|Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address. <p> For more information, see [Unauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).|
-|
+|**If message is detected as spoof** <br><br> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Quarantine the message** <br><br> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](learn-about-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](manage-tenant-allow-block-list.md). <br><br> If you select **Quarantine the message**, an **Apply quarantine policy** box is available to select the quarantine policy that defines what users are allowed to do to messages that are quarantined as spoofing. When you create a new anti-phishing policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined as spoofing (DefaultFullAccessPolicy with no quarantine notifications). <br><br> Standard and Strict preset security policies use the default quarantine policy (DefaultFullAccessPolicy with no quarantine notifications) as described in the table [here](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <br><br> Admins can create and select custom quarantine policies that define more restrictive or less restrictive capabilities for users in the default or custom anti-phishing policies. For more information, see [Quarantine policies](quarantine-policies.md).|
+|**Show first contact safety tip** <br><br> _EnableFirstContactSafetyTips_|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|For more information, see [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
+|**Show (?) for unauthenticated senders for spoof** <br><br> _EnableUnauthenticatedSender_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Unauthenticated sender indicators](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).|
+|**Show "via" tag** <br><br> _EnableViaTag_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address. <br><br> For more information, see [Unauthenticated sender indicators](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).|
 
 ## Microsoft Defender for Office 365 security
 
@@ -195,7 +174,7 @@ Additional security benefits come with a Microsoft Defender for Office 365 subsc
 >
 > - The default anti-phishing policy in Microsoft Defender for Office 365 provides [spoof protection](set-up-anti-phishing-policies.md#spoof-settings) and mailbox intelligence for all recipients. However, the other available [impersonation protection](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) features and [advanced settings](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are not configured or enabled in the default policy. To enable all protection features, modify the default anti-phishing policy or create additional anti-phishing policies.
 >
-> - Although there's no default Safe Attachments policy or Safe Links policy, the **Built-in protection** preset security policy provides Safe Attachments protection and Safe Links protection to all recipients (users who aren't defined in custom Safe Attachments policies or Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
+> - Although there's no default Safe Attachments policy or Safe Links policy, the **Built-in protection** preset security policy provides Safe Attachments protection and Safe Links protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Attachments policies or Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 >
 > - [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md) protection and [Safe Documents](safe-docs.md) protection have no dependencies on Safe Links policies.
 
@@ -209,68 +188,41 @@ EOP customers get basic anti-phishing as previously described, but Defender for 
 
 For more information about this setting, see [Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365). To configure this setting, see [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
-<br>
-
-****
-
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|**Phishing email threshold** <p> _PhishThresholdLevel_|**1 - Standard** <p> `1`|**2 - Aggressive** <p> `2`|**3 - More aggressive** <p> `3`||
-|
+|**Phishing email threshold** <br><br> _PhishThresholdLevel_|**1 - Standard** <br><br> `1`|**3 - More aggressive** <br><br> `2`|**4 - Most aggressive** <br><br> `3`||
 
 #### Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365
 
 For more information about these settings, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). To configure these settings, see [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
-<br>
-
-****
-
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Phishing threshold & protection**|||||
-|**Enable users to protect** (impersonated user protection) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Not selected <p> `$false` <p> none|Selected <p> `$true` <p> \<list of users\>|Selected <p> `$true` <p> \<list of users\>|We recommend adding users (message senders) in key roles. Internally, protected senders might be your CEO, CFO, and other senior leaders. Externally, protected senders could include council members or your board of directors. <p> In preset security policies, you can't specify the users to protect. You need to disable the preset security policies and use custom anti-phishing policies to add users in key roles as suggested.|
+|**Enable users to protect** (impersonated user protection) <br><br> _EnableTargetedUserProtection_ <br><br> _TargetedUsersToProtect_|Not selected <br><br> `$false` <br><br> none|Selected <br><br> `$true` <br><br> \<list of users\>|Selected <br><br> `$true` <br><br> \<list of users\>|We recommend adding users (message senders) in key roles. Internally, protected senders might be your CEO, CFO, and other senior leaders. Externally, protected senders could include council members or your board of directors.|
 |**Enable domains to protect** (impersonated domain protection)|Not selected|Selected|Selected||
-|**Include domains I own** <p> _EnableOrganizationDomainsProtection_|Off <p> `$false`|Selected <p> `$true`|Selected <p> `$true`||
-|**Include custom domains** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Off <p> `$false` <p> none|Selected <p> `$true` <p> \<list of domains\>|Selected <p> `$true` <p> \<list of domains\>|We recommend adding domains (sender domains) that you don't own, but you frequently interact with. <p> In preset security policies, you can't specify the custm domains to protect. You need to disable the preset security policies and use custom anti-phishing policies to add custom domains to protect as suggested.|
-|**Add trusted senders and domains** <p> _ExcludedSenders_ <p> _ExcludedDomains_|None|None|None|Depending on your organization, we recommend adding senders or domains that are incorrectly identified as impersonation attempts.|
-|**Enable mailbox intelligence** <p> _EnableMailboxIntelligence_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
-|**Enable intelligence for impersonation protection** <p> _EnableMailboxIntelligenceProtection_|Off <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|This setting allows the specified action for impersonation detections by mailbox intelligence.|
-|**Actions**||||Wherever you select **Quarantine the message**, a **Select quarantine policy** box is available. Quarantine policies define what users are allowed to do to quarantined messages. <p> When you create a new anti-phishing policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined by that verdict (DefaultFullAccessPolicy for all impersonation detection types). <p> Admins can create and select custom quarantine policies that define less restrictive or more restrictive capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).|
-|**If message is detected as an impersonated user** <p> _TargetedUserProtectionAction_|**Don't apply any action** <p> `NoAction`|**Quarantine the message** <p> `Quarantine`|**Quarantine the message** <p> `Quarantine`|Remember, preset security policies don't allow you to specify the users to protect, so this setting effectively does nothing in preset security policies.|
-|**If message is detected as an impersonated domain** <p> _TargetedDomainProtectionAction_|**Don't apply any action** <p> `NoAction`|**Quarantine the message** <p> `Quarantine`|**Quarantine the message** <p> `Quarantine`|Remember, preset security policies don't allow you to specify the custom domains to protect, so this setting affects only domains that you own, not custom domains.|
-|**If mailbox intelligence detects and impersonated user** <p> _MailboxIntelligenceProtectionAction_|**Don't apply any action** <p> `NoAction`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`||
-|**Show user impersonation safety tip** <p> _EnableSimilarUsersSafetyTips_|Off <p> `$false`|Selected <p> `$true`|Selected <p> `$true`||
-|**Show domain impersonation safety tip** <p> _EnableSimilarDomainsSafetyTips_|Off <p> `$false`|Selected <p> `$true`|Selected <p> `$true`||
-|**Show user impersonation unusual characters safety tip** <p> _EnableUnusualCharactersSafetyTips_|Off <p> `$false`|Selected <p> `$true`|Selected <p> `$true`||
-|
+|**Include domains I own** <br><br> _EnableOrganizationDomainsProtection_|Off <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`||
+|**Include custom domains** <br><br> _EnableTargetedDomainsProtection_ <br><br> _TargetedDomainsToProtect_|Off <br><br> `$false` <br><br> none|Selected <br><br> `$true` <br><br> \<list of domains\>|Selected <br><br> `$true` <br><br> \<list of domains\>|We recommend adding domains (sender domains) that you don't own, but you frequently interact with.|
+|**Add trusted senders and domains** <br><br> _ExcludedSenders_ <br><br> _ExcludedDomains_|None|None|None|Depending on your organization, we recommend adding senders or domains that are incorrectly identified as impersonation attempts.|
+|**Enable mailbox intelligence** <br><br> _EnableMailboxIntelligence_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
+|**Enable intelligence for impersonation protection** <br><br> _EnableMailboxIntelligenceProtection_|Off <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`|This setting allows the specified action for impersonation detections by mailbox intelligence.|
+|**Actions**||||Wherever you select **Quarantine the message**, a **Select quarantine policy** box is available. Quarantine policies define what users are allowed to do to quarantined messages. <br><br> Standard and Strict preset security policies use the default quarantine policy (DefaultFullAccessPolicy with no quarantine notifications) as described in the table [here](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <br><br> When you create a new anti-phishing policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined by that verdict (DefaultFullAccessPolicy for all impersonation detection types). <br><br> Admins can create and select custom quarantine policies that define less restrictive or more restrictive capabilities for users in the default or custom anti-phishing policies. For more information, see [Quarantine policies](quarantine-policies.md).|
+|**If message is detected as an impersonated user** <br><br> _TargetedUserProtectionAction_|**Don't apply any action** <br><br> `NoAction`|**Quarantine the message** <br><br> `Quarantine`|**Quarantine the message** <br><br> `Quarantine`||
+|**If message is detected as an impersonated domain** <br><br> _TargetedDomainProtectionAction_|**Don't apply any action** <br><br> `NoAction`|**Quarantine the message** <br><br> `Quarantine`|**Quarantine the message** <br><br> `Quarantine`||
+|**If mailbox intelligence detects an impersonated user** <br><br> _MailboxIntelligenceProtectionAction_|**Don't apply any action** <br><br> `NoAction`|**Move message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Quarantine the message** <br><br> `Quarantine`||
+|**Show user impersonation safety tip** <br><br> _EnableSimilarUsersSafetyTips_|Off <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`||
+|**Show domain impersonation safety tip** <br><br> _EnableSimilarDomainsSafetyTips_|Off <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`||
+|**Show user impersonation unusual characters safety tip** <br><br> _EnableUnusualCharactersSafetyTips_|Off <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 
 #### EOP anti-phishing policy settings in Microsoft Defender for Office 365
 
 These are the same settings that are available in [anti-spam policy settings in EOP](#eop-anti-spam-policy-settings).
 
-The spoof settings are inter-related, but the **Show first contact safety tip** setting has no dependency on spoof settings.
-
-<br>
-
-****
-
-|Security feature name|Default|Standard|Strict|Comment|
-|---|:---:|:---:|:---:|---|
-|**Phishing threshold & protection**|||||
-|**Enable spoof intelligence** <p> _EnableSpoofIntelligence_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
-|**Actions**|||||
-|**If message is detected as spoof** <p> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](learn-about-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](tenant-allow-block-list.md). <p> If you select **Quarantine the message**, an **Apply quarantine policy** box is available to select the quarantine policy that defines what users are allowed to do to quarantined messages. When you create a new anti-phishing policy, a blank value means the default quarantine policy is used to define the historical capabilities for spoof quarantined messages (DefaultFullAccessPolicy). <p> Admins can create and select a custom quarantine policy that defines what recipients are allowed to do to these messages in quarantine. For more information, see [Quarantine policies](quarantine-policies.md).|
-|**Show first contact safety tip** <p> _EnableFirstContactSafetyTips_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|For more information, see [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
-|**Show (?) for unauthenticated senders for spoof** <p> _EnableUnauthenticatedSender_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Unauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).|
-|**Show "via" tag** <p> _EnableViaTag_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`|Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address. <p> For more information, see [Unauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).|
-|
-
 ### Safe Attachments settings
 
 Safe Attachments in Microsoft Defender for Office 365 includes global settings that have no relationship to Safe Attachments policies, and settings that are specific to each Safe Links policy. For more information, see [Safe Attachments in Defender for Office 365](safe-attachments.md).
 
-Although there's no default Safe Attachments policy, the **Built-in protection** preset security policy provides Safe Attachments protection to all recipients (users who aren't defined in custom Safe Attachments policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
+Although there's no default Safe Attachments policy, the **Built-in protection** preset security policy provides Safe Attachments protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Attachments policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
 #### Global settings for Safe Attachments
 
@@ -283,16 +235,11 @@ To configure these settings, see [Turn on Safe Attachments for SharePoint, OneDr
 
 In PowerShell, you use the [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) cmdlet for these settings.
 
-<br>
-
-****
-
 |Security feature name|Default|Built-in protection|Comment|
 |---|:---:|:---:|---|
-|**Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|Off <p> `$false`|On <p> `$true`|To prevent users from downloading malicious files, see [Use SharePoint Online PowerShell to prevent users from downloading malicious files](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).|
-|**Turn on Safe Documents for Office clients** <p> _EnableSafeDocs_|Off <p> `$false`|On <p> `$true`|This feature is available and meaningful only with licenses that are not included in Defender for Office 365 (for example, Microsoft 365 E5 or Microsoft 365 E5 Security). For more information, see [Safe Documents in Microsoft 365 E5](safe-docs.md).|
-|**Allow people to click through Protected View even if Safe Documents identified the file as malicious** <p> _AllowSafeDocsOpen_|Off <p> `$false`|Off <p> `$false`|This setting is related to Safe Documents.|
-|
+|**Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** <br><br> _EnableATPForSPOTeamsODB_|Off <br><br> `$false`|On <br><br> `$true`|To prevent users from downloading malicious files, see [Use SharePoint Online PowerShell to prevent users from downloading malicious files](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).|
+|**Turn on Safe Documents for Office clients** <br><br> _EnableSafeDocs_|Off <br><br> `$false`|On <br><br> `$true`|This feature is available and meaningful only with licenses that are not included in Defender for Office 365 (for example, Microsoft 365 A5 or Microsoft 365 E5 Security). For more information, see [Safe Documents in Microsoft 365 A5 or E5 Security](safe-docs.md).|
+|**Allow people to click through Protected View even if Safe Documents identified the file as malicious** <br><br> _AllowSafeDocsOpen_|Off <br><br> `$false`|Off <br><br> `$false`|This setting is related to Safe Documents.|
 
 #### Safe Attachments policy settings
 
@@ -301,27 +248,22 @@ To configure these settings, see [Set up Safe Attachments policies in Defender f
 In PowerShell, you use the [New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy) and [Set-SafeAttachmentPolicy](/powershell/module/exchange/set-safelinkspolicy) cmdlets for these settings.
 
 > [!NOTE]
-> As described earlier, there is no default Safe Attachments policy, but Safe Attachments protection is assigned to all recipients by the [**Built-in protection** preset security policy](preset-security-policies.md).
+> As described earlier, there is no default Safe Attachments policy, but Safe Attachments protection is assigned to all recipients by the [**Built-in protection** preset security policy](preset-security-policies.md) (users who aren't defined in any Safe Attachments policies).
 >
 > The **Default in custom** column refers to the default values in new Safe Attachments policies that you create. The remaining columns indicate (unless otherwise noted) the values that are configured in the corresponding preset security policies.
 
-<br>
-
-****
-
 |Security feature name|Default in custom|Built-in protection|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|:---:|---|
-|**Safe Attachments unknown malware response** <p> _Enable_ and _Action_|**Off** <p> `-Enable $false` and `-Action Block`|**Block** <p> `-Enable $true` and `-Action Block`|**Block** <p> `-Enable $true` and `-Action Block`|**Block** <p> `-Enable $true` and `-Action Block`|When the _Enable_ parameter is $false, the value of the _Action_ parameter doesn't matter.|
-|**Quarantine policy** (_QuarantineTag_)|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|When you create a new Safe Attachments policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined by Safe Attachments (AdminOnlyAccessPolicy). <p> Admins can create and select custom quarantine policies that define more capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).|
-|**Redirect attachment with detected attachments** : **Enable redirect** <p> _Redirect_ <p> _RedirectAddress_|Not selected and no email address specified. <p> `-Redirect $false` <p> _RedirectAddress_ is blank (`$null`)|Not selected and no email address specified. <p> `-Redirect $false` <p> _RedirectAddress_ is blank (`$null`)|Selected and specify an email address. <p> `$true` <p> an email address|Selected and specify an email address. <p> `$true` <p> an email address|Redirect messages to a security admin for review. <p> **Note**: This setting is not configured in the **Standard**, **Strict**, or **Built-in protection** preset security policies. The **Standard** and **Strict** values indicate our **recommended** values in new Safe Attachments policies that you create.|
-|**Apply the Safe Attachments detection response if scanning can't complete (timeout or errors)** <p> _ActionOnError_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
-|
+|**Safe Attachments unknown malware response** <br><br> _Enable_ and _Action_|**Off** <br><br> `-Enable $false` and `-Action Block`|**Block** <br><br> `-Enable $true` and `-Action Block`|**Block** <br><br> `-Enable $true` and `-Action Block`|**Block** <br><br> `-Enable $true` and `-Action Block`|When the _Enable_ parameter is $false, the value of the _Action_ parameter doesn't matter.|
+|**Quarantine policy** (_QuarantineTag_)|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy| <br><br> Standard and Strict preset security policies use the default quarantine policy (AdminOnlyAccessPolicy with no quarantine notifications) as described in the table [here](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <br><br> When you create a new Safe Attachments policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined by Safe Attachments (AdminOnlyAccessPolicy with no quarantine notifications). <br><br> Admins can create and select custom quarantine policies that define more capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).|
+|**Redirect attachment with detected attachments** : **Enable redirect** <br><br> _Redirect_ <br><br> _RedirectAddress_|Not selected and no email address specified. <br><br> `-Redirect $false` <br><br> _RedirectAddress_ is blank (`$null`)|Not selected and no email address specified. <br><br> `-Redirect $false` <br><br> _RedirectAddress_ is blank (`$null`)|Selected and specify an email address. <br><br> `$true` <br><br> an email address|Selected and specify an email address. <br><br> `$true` <br><br> an email address|Redirect messages to a security admin for review. <br><br> **Note**: This setting is not configured in the **Standard**, **Strict**, or **Built-in protection** preset security policies. The **Standard** and **Strict** values indicate our **recommended** values in new Safe Attachments policies that you create.|
+|**Apply the Safe Attachments detection response if scanning can't complete (timeout or errors)** <br><br> _ActionOnError_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 
 ### Safe Links settings
 
 Safe Links in Defender for Office 365 includes global settings that apply to all users who are included in active Safe Links policies, and settings that are specific to each Safe Links policy. For more information, see [Safe Links in Defender for Office 365](safe-links.md).
 
-Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection to all recipients (users who aren't defined in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
+Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
 #### Global settings for Safe Links
 
@@ -334,17 +276,9 @@ To configure these settings, see [Configure global settings for Safe Links in De
 
 In PowerShell, you use the [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) cmdlet for these settings.
 
-<br>
-
-****
-
 |Security feature name|Default|Built-in protection|Comment|
 |---|:---:|:---:|---|
-|**Block the following URLs** <p> _ExcludedUrls_|Blank <p> `$null`|Blank <p> `$null`|We have no specific recommendation for this setting. <p> For more information, see ["Block the following URLs" list for Safe Links](safe-links.md#block-the-following-urls-list-for-safe-links).
-|**Use Safe Links in Office 365 apps** <p> _EnableSafeLinksForO365Clients_|On <p> `$true`|On <p> `$true`|Use Safe Links in supported Office 365 desktop and mobile (iOS and Android) apps. For more information, see [Safe Links settings for Office 365 apps](safe-links.md#safe-links-settings-for-office-365-apps).|
-|**Do not track when users click protected links in Office 365 apps** <p> _TrackClicks_|On <p> `$false`|Off <p> `$true`|Turning off this setting (setting _TrackClicks_ to `$true`) tracks user clicks in supported Office 365 apps.|
-|**Do not let users click through to the original URL in Office 365 apps** <p> _AllowClickThrough_|On <p> `$false`|On <p> `$false`|Turning on this setting (setting _AllowClickThrough_ to `$false`) prevents click through to the original URL in supported Office 365 apps.|
-|
+|**Block the following URLs** <br><br> _ExcludedUrls_|Blank <br><br> `$null`|Blank <br><br> `$null`|We have no specific recommendation for this setting. <br><br> For more information, see ["Block the following URLs" list for Safe Links](safe-links.md#block-the-following-urls-list-for-safe-links). <br><br> **Note**: You can now manage block URL entries in the [Tenant Allow/Block List](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). The "Block the following URLs" list is in the process of being deprecated. We'll attempt to migrate existing entries from the "Block the following URLs" list to block URL entries in the Tenant Allow/Block List. Messages containing the blocked URL will be quarantined.|
 
 #### Safe Links policy settings
 
@@ -353,30 +287,30 @@ To configure these settings, see [Set up Safe Links policies in Microsoft Defend
 In PowerShell, you use the [New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy) and [Set-SafeLinksPolicy](/powershell/module/exchange/set-safelinkspolicy) cmdlets for these settings.
 
 > [!NOTE]
-> As described earlier, there's no default Safe Links policy, but Safe Links protection is assigned to all recipients by the [**Built-in protection** preset security policy](preset-security-policies.md).
+> As described earlier, there's no default Safe Links policy, but Safe Links protection is assigned to all recipients by the [**Built-in protection** preset security policy](preset-security-policies.md) (users who otherwise aren't included in any Safe Links policies).
 >
 > The **Default in custom** column refers to the default values in new Safe Links policies that you create. The remaining columns indicate (unless otherwise noted) the values that are configured in the corresponding preset security policies.
 
-<br>
-
-****
-
 |Security feature name|Default in custom|Built-in protection|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|:---:|---|
-|**Protection settings**||||||
-|**Select the action for unknown potentially malicious URLs in messages** <p> _IsEnabled_|**Off** <p> `$false`|**On** <p> `$true`|**On** <p> `$true`|**On** <p> `$true`||
-|**Select the action for unknown or potentially malicious URLs within Microsoft Teams** <p> _EnableSafeLinksForTeams_|**Off** <p> `$false`|**On** <p> `$true`|**On** <p> `$true`|**On** <p> `$true`||
-|**Apply real-time URL scanning for suspicious links and links that point to files** <p> _ScanUrls_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
-|**Wait for URL scanning to complete before delivering the message** <p> _DeliverMessageAfterScan_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
-|**Apply Safe Links to email messages sent within the organization** <p> _EnableForInternalSenders_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
-|**Do not track user clicks** <p> _DoNotTrackUserClicks_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`|Turning off this setting (setting _DoNotTrackUserClicks_ to `$false`) tracks users clicks.|
-|**Do not let users click through to the original URL** <p> _DoNotAllowClickThrough_|Not selected <p> `$false`|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|Turning on this setting (setting _DoNotAllowClickThrough_ to `$true`) prevents click through to the original URL.|
-|**Display the organization branding on notification and warning pages** <p> _EnableOrganizationBranding_|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`|Not selected <p> `$false`|We have no specific recommendation for this setting. <p> Before you turn on this setting, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your company logo.|
-|**Do not rewrite URLs, do checks via Safe Links API only** <p> _DisableURLRewrite_|Not selected <p> `$false`|Selected <p> `$true`|Not selected <p> `$false`|Not selected <p> `$false`||
-|**Do not rewrite the following URLs** <p> _DoNotRewriteUrls_|Not selected <p> blank|Not selected <p> blank|Not selected <p> blank|Not selected <p> blank|We have no specific recommendation for this setting. For more information, see ["Do not rewrite the following URLs" lists in Safe Links policies](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).|
+|**URL & click protection settings**||||||
+|**Action on potentially malicious URLs within Emails**||||||
+|**On: Safe Links checks a list of known, malicious links when users click links in email** <br><br> _EnableSafeLinksForEmail_|Not selected <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
+|**Apply Safe Links to email messages sent within the organization** <br><br> _EnableForInternalSenders_|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`||
+|**Apply real-time URL scanning for suspicious links and links that point to files** <br><br> _ScanUrls_|Not selected <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
+|**Wait for URL scanning to complete before delivering the message** <br><br> _DeliverMessageAfterScan_|Not selected <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
+|**Do not rewrite URLs, do checks via Safe Links API only** <br><br> _DisableURLRewrite_|Not selected <br><br> `$false`|Selected <br><br> `$true`|Not selected <br><br> `$false`|Not selected <br><br> `$false`||
+|**Do not rewrite the following URLs in email** <br><br> _DoNotRewriteUrls_|Blank <br><br> `$null`|Blank <br><br> `$null`|Blank <br><br> `$null`|Blank <br><br> `$null`|We have no specific recommendation for this setting. <br><br> **Note**: Entries in the "Do not rewrite the following URLs" list are not scanned or wrapped by Safe Links during mail flow. Use [allow URL entries in the Tenant Allow/Block List](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) so URLs are not scanned or wrapped by Safe Links during mail flow _and_ at time of click.|
+|**Action for potentially malicious URLs in Microsoft Teams**||||||
+|**On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams** <br><br> _EnableSafeLinksForTeams_|Not selected <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
+|**Action for potentially malicious URLs in Microsoft Office apps**||||||
+|**On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps** <br><br> _EnableSafeLinksForOffice_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Use Safe Links in supported Office 365 desktop and mobile (iOS and Android) apps. For more information, see [Safe Links settings for Office apps](safe-links.md#safe-links-settings-for-office-apps).|
+|**Click protection settings**||||||
+|**Track user clicks** <br><br> _TrackUserClicks_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
+|**Let users click through to the original URL** <br><br> _AllowClickThrough_|Selected <br><br> `$true`|Selected <br><br> `$true`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Turning off this setting (setting _AllowClickThrough_ to `$false`) prevents click through to the original URL.|
+|**Display the organization branding on notification and warning pages** <br><br> _EnableOrganizationBranding_|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|We have no specific recommendation for this setting. <br><br> Before you turn on this setting, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your company logo.|
 |**Notification**||||||
-|**How would you like to notify your users?**|**Use the default notification text**|**Use the default notification text**|**Use the default notification text**|**Use the default notification text**|We have no specific recommendation for this setting. <p> You can select **Use custom notification text** (_CustomNotificationText_) to enter customized notification text to use. You can also select **Use Microsoft Translator for automatic localization** (_UseTranslatedNotificationText_) to translate the custom notification text into the user's language.
-|
+|**How would you like to notify your users?** <br><br> _CustomNotificationText_ <br><br> _UseTranslatedNotificationText_|**Use the default notification text** <br><br> Blank (`$null`) <br><br> `$false`|**Use the default notification text** <br><br> Blank (`$null`) <br><br> `$false`|**Use the default notification text** <br><br> Blank (`$null`) <br><br> `$false`|**Use the default notification text** <br><br> Blank (`$null`) <br><br> `$false`|We have no specific recommendation for this setting. <br><br> You can select **Use custom notification text** (`-CustomNotificationText "<Custom text>"`) to enter and use customized notification text. If you specify custom text, you can also select **Use Microsoft Translator for automatic localization** (`-UseTranslatedNotificationText $true`) to automatically translate the text into the user's language.|
 
 ## Related articles
 
