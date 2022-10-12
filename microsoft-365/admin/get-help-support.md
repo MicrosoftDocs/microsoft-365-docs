@@ -68,6 +68,9 @@ Admins, have your account details ready when you call.
 > [!NOTE]
 > To better protect your organization, we added a PIN-based verification step to our existing phone-based verification process. If you contact us from a number that isn't registered with your organization profile, the Microsoft support representative sends a verification code to the registered email or phone number in your Microsoft 365 admin center profile. You must provide this code to the support representative to grant them access to your organization's account.
 
+Billing support for Microsoft 365 for business products and services is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday through Friday.\
+Technical support is provided in English 24 hours a day, 7 days a week.
+
 - **In the United States, call 1 800 865 9408.**
 
 - **In Australia, call 1 800 197 503.**
