@@ -2,9 +2,8 @@
 title: Get live response results
 description: Learn how to retrieve a specific live response command result by its index.
 keywords: apis, graph api, supported apis, upload to library
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,10 +15,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+- m365-security
+- tier3
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
 ---
 
@@ -55,6 +54,8 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
   Devices must be running one of the following versions of Windows
 
+  - **Windows 11**
+  
   - **Windows 10**
     - [Version 1909](/windows/whats-new/whats-new-windows-10-version-1909) or later
     - [Version 1903](/windows/whats-new/whats-new-windows-10-version-1903) with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)

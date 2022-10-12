@@ -3,22 +3,27 @@ title: "Step 3. Set up compliance policies for devices with Intune"
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- Create compliance policies
+- Intune device compliance policy
 manager: dougeby
 audience: ITPro
+description: Learn how to create device compliance policies that specify the minimum requirements for a device to access your environment.
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
+- m365solution-managedevices
+- m365solution-scenario
+- zerotrust-solution
 ms.custom: 
 keywords: 
-description: 
 ---
 
 # Step 3. Set up compliance policies for devices with Intune
 
-Enrolling devices into management gives you the ability to achieve even greater security and control of data in your environment. [Step 2. Enroll devices into management](manage-devices-with-intune-enroll.md) details how to accomplish this using Intune and Autopilot. This article covers the next step, which is to configure device compliance policies. 
+Enrolling devices to Intune gives you the ability to achieve even greater security and control of data in your environment. [Step 2. Enroll devices to Intune](manage-devices-with-intune-enroll.md) details how to accomplish this using Intune. This article covers the next step, which is to configure device compliance policies. 
 
 ![Steps managing devices](../media/devices/intune-mdm-step-2.png#lightbox)
 

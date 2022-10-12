@@ -2,14 +2,15 @@
 title: "Remove a domain"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -17,6 +18,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -32,6 +34,9 @@ description: "Learn how to remove an old domain from Microsoft 365 and move user
 
 Are you removing your domain because you want to add it to a different Microsoft 365 subscription plan? Or do you just want to cancel your subscription? You can [change your plan or subscription](../../commerce/subscriptions/switch-to-a-different-plan.md) or [cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).
 
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+
 ### Step 1: Move users to another domain
 
 #### Move users
@@ -39,12 +44,6 @@ Are you removing your domain because you want to add it to a different Microsoft
 ::: moniker range="o365-worldwide"
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>.
 
 ::: moniker-end
 
@@ -72,12 +71,6 @@ You'll need to do this for yourself, too, if you're on the domain that you want 
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.
@@ -101,11 +94,6 @@ You can also use PowerShell to move users to another domain. See [Set-MsolUserPr
 1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
 
 ::: moniker-end
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>,  go to the **Groups** > **Groups** page.
-
-::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
@@ -123,13 +111,10 @@ You can also use PowerShell to move users to another domain. See [Set-MsolUserPr
 
 ::: moniker range="o365-worldwide"
 
+> [!NOTE]
+> If you are removing a custom domain, see [remove a custom domain](#remove-a-custom-domain) before proceeding.
+
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.
 
 ::: moniker-end
 
@@ -145,6 +130,35 @@ You can also use PowerShell to move users to another domain. See [Set-MsolUserPr
 
 4. Follow any additional prompts, and then select **Close**.
 
+
+
+
+### Remove a custom domain
+
+If you are canceling your subscription and you use a custom domain, there are a few extra steps that you must do before you can cancel your subscription. 
+
+#### Change your domain nameserver records (if needed)
+
+If you set up a custom domain, you added DNS records so the domain would work with Microsoft 365 services. Before you remove your domain, be sure to update the DNS records, such as your domain MX record, at your DNS host.
+
+For example, change the MX record at your DNS host. Email sent to your domain stops coming to your Microsoft address and goes to your new email provider instead. (An MX record determines where email for your domain is sent.)
+
+- If your nameserver (NS) records [are pointing to Microsoft 365 nameservers](../../admin/setup/add-domain.md), changes to your MX record don't take effect until you change your NS records to point to your new DNS host (see Step 2).
+
+- Before you update the MX record, let your users know the date you plan to switch their email, and the new email provider you plan to use. Also, if your users want to move their existing Microsoft email to the new provider, they must take extra steps.
+
+- On the day you change the MX record, make sure to [save your data](/microsoft-365/commerce/subscriptions/cancel-your-subscription#save-your-data) and [uninstall Office if needed](/microsoft-365/commerce/subscriptions/cancel-your-subscription#uninstall-office-optional).
+
+#### Update your domain MX and other DNS records (if you're using a custom domain)
+
+If you switched your nameserver (NS) records to Microsoft 365 when you set up your domain, you must set up or update your MX record and other DNS records at the DNS host you plan to use, and then change your NS record to that DNS host.
+
+If you didn't switch NS records when you set up your domain, when you change the MX record, your mail starts going to the new address right away.
+
+To change your NS records, see [Change nameservers to set up Microsoft 365 with any domain registrar](../../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
+
+
+
 ## How long does it take for a domain to be removed?
 
 It can take as little as 5 minutes for Microsoft 365 to remove a domain if it's not referenced in a lot of places such as security groups, distribution lists, users, and Microsoft 365 groups. If there are many references that use the domain it can take several hours (a day) for the domain to be removed.
@@ -159,15 +173,6 @@ If you have hundreds or thousands of users, use PowerShell to query for all user
 > You can't remove the [".onmicrosoft.com"](../setup/domains-faq.yml) domain from your account. When you remove a domain, user accounts will revert back to the ".onmicrosoft.com" address as the Primary SMTP/UserprincipalName.
 
 Still not working? Your domain might need to be manually removed. [Give us a call](../../business-video/get-help-support.md) and we'll help you take care of it!
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-> [!NOTE]
-> You can't remove the [".onmicrosoft.de"](../setup/domains-faq.yml) domain from your account. When you remove a domain, user accounts will revert back to the ".onmicrosoft.de" address as the Primary SMTP/UserprincipalName.
-
-Still not working? Your domain might need to be manually removed. [Give us a call](../../business-video/get-help-support.md?view=o365-germany&preserve-view=true) and we'll help you take care of it!
 
 ::: moniker-end
 

@@ -7,7 +7,7 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: 
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.localizationpriority:  medium
 ROBOTS: 
@@ -16,11 +16,11 @@ description: Learn how to use Power Automate to create your flow to process your
 
 # Step 3. Use Power Automate to create the flow to process your contracts
 
-You've created your Contract Management channel and have attached your SharePoint document library. The next step is to create a Power Automate flow to process your contracts that your SharePoint Syntex model identifies and classifies. You can do this step by [creating a Power Automate flow in your SharePoint document library](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
+You've created your Contract Management channel and have attached your SharePoint document library. The next step is to create a Power Automate flow to process your contracts that your Syntex model identifies and classifies. You can do this step by [creating a Power Automate flow in your SharePoint document library](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
 
 For your contracts management solution, you want to create a Power Automate flow to do the following actions:
 
--  After a contract has been classified by your SharePoint Syntex model, change the contract status to **In review**.
+-  After a contract has been classified by your Syntex model, change the contract status to **In review**.
 - The contract is then reviewed and is either approved or rejected.
 - For approved contracts, the contract information is posted to a tab for payment processing.
 - For rejected contracts, the team is notified for further analysis. 
@@ -31,7 +31,7 @@ The following diagram shows the Power Automate flow for the contract management 
 
 ## Prepare your contract for review
 
-When a contract is identified and classified by your SharePoint Syntex document understanding model, the Power Automate flow will first change the status to **In review**.
+When a contract is identified and classified by your Syntex document understanding model, the Power Automate flow will first change the status to **In review**.
 
 ![Update status.](../media/content-understanding/flow-overview.png)
 
@@ -155,7 +155,7 @@ When a contract has been approved, the following things occur:
     | Approval state  | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['submitActionId']         |
     | Approved by     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['responder']['displayName']        |
     | Approval date     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['responseTime']         |
-    | Comment     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']['acComments']         |
+    | Comment     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['acComments']         |
     
     The following example shows how to use the formula box in Power Automate to write an expression.
 
@@ -227,7 +227,7 @@ When a contract has been approved, the following things occur:
                         },
                         {
                             "title": "Approval comment",
-                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']['acComments']}"
+                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['acComments']}"
                         },
                         {
                             "title": " ",
@@ -323,7 +323,7 @@ The following code is the JSON used for this step in the Power Automate flow.
                         },
                         {
                             "title": "Comment",
-                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']['acComments']}"
+                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['acComments']}"
                         },
                         {
                             "title": " ",

@@ -4,7 +4,7 @@
   items: 
     - name: Get started
       items: 
-        - name: Microsoft 365 zero trust deployment plan
+        - name: Microsoft 365 Zero Trust deployment plan
           href: microsoft-365-zero-trust.md
         - name: Top tasks to support working from home
           href: top-security-tasks-for-remote-work.md        
@@ -28,19 +28,23 @@
           href: ./office-365-security/mcas-saas-access-policies.md
         - name: Continuous access evaluation
           href: ./office-365-security/microsoft-365-continuous-access-evaluation.md
-    - name: Microsoft 365 Defender
-      href: ./defender/index.yml
-    - name: Microsoft Defender for Office 365
-      href: ./office-365-security/index.yml
-    - name: Microsoft Defender for Endpoint
-      href: ./defender-endpoint/index.yml
-    - name: Microsoft Defender for Identity
-      href: /defender-for-identity
-    - name: Microsoft 365 for Enterprise
+    - name: Microsoft 365 Defender docs
+      items: 
+       - name: Microsoft 365 Defender
+         href: ./defender/index.yml
+       - name: Defender for Office 365
+         href: ./office-365-security/index.yml
+       - name: Defender for Endpoint
+         href: ./defender-endpoint/index.yml
+       - name: Defender for Identity
+         href: /defender-for-identity
+       - name: Defender for Cloud Apps
+         href: /cloud-app-security
+       - name: Defender for Business
+         href: ./defender-business/index.yml
+    - name: Microsoft 365 Enterprise
       href: ../enterprise/index.yml
-    - name: Microsoft 365 for Business
-      href: ./index.yml
-    - name: Microsoft 365 Compliance
+    - name: Microsoft Purview
       href: ../compliance/index.yml
     - name: Manage active content in Office documents
       href: active-content-in-trusted-docs.md

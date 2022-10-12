@@ -2,13 +2,14 @@
 title: "Microsoft 365 global tenant performance optimization for China users"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 11/17/2020
+manager: scotv
+ms.date: 3/3/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
@@ -22,6 +23,15 @@ description: "This article provides guidance for optimizing network performance 
 
 > [!IMPORTANT]
 > This guidance is specific to usage scenarios in which **enterprise Microsoft 365 users located in China** connect to a **global Microsoft 365 tenant**. This guidance does **not** apply to tenants in Office 365 operated by 21Vianet.
+
+>[!NOTE]
+>This article is part of a set of articles that address Microsoft 365 optimization for remote users.
+
+>- For an overview of using VPN split tunneling to optimize Microsoft 365 connectivity for remote users, see [Overview: VPN split tunneling for Microsoft 365](microsoft-365-vpn-split-tunnel.md).
+>- For detailed guidance on implementing VPN split tunneling, see [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
+>- For a detailed list of VPN split tunneling scenarios, see [Common VPN split tunneling scenarios for Microsoft 365](microsoft-365-vpn-common-scenarios.md).
+>- For guidance on securing Teams media traffic in VPN split tunneling environments, see [Securing Teams media traffic for VPN split tunneling](microsoft-365-vpn-securing-teams.md).
+>- For information about how to configure Stream and live events in VPN environments, see [Special considerations for Stream and live events in VPN environments](microsoft-365-vpn-stream-and-live-events.md).
 
 For enterprises with global Microsoft 365 tenants and a corporate presence in China, Microsoft 365 client performance for China-based users can be complicated by factors unique to China Telco's Internet architecture.
 
@@ -68,7 +78,7 @@ For organizations with global Microsoft 365 tenants and a presence in China, Mic
 As a result, Microsoft has partnered with telecommunications providers to carry Teams and Skype for Business Online real-time media traffic using a higher-quality, preferential network path between domestic and public internet connections in China and the Teams and Skype services in the Microsoft 365 global cloud. This capability has resulted in a more than ten-fold improvement in packet loss and other key metrics impacting your user's experience.
 
 >[!IMPORTANT]
->Currently, these improvements do not address attending Microsoft Live Events meetings such as large broadcast or “town hall” style meetings using Teams or Microsoft Stream. To view a Live Events meeting, users in China need to use a private network or SDWAN/VPN solution. However, the network improvements will benefit users who are presenting or producing a Live Events meeting, because that experience acts as a regular Teams meeting for the producer or presenter.
+>Currently, these improvements do not address attending Microsoft Live Events meetings such as large broadcast or “town hall” style meetings using Teams or Microsoft Stream. The network improvements will benefit users who are presenting or producing a Live Events meeting, because that experience acts as a regular Teams meeting for the producer or presenter.
 
 ### Organization network best practices for Teams meetings
 
@@ -97,14 +107,28 @@ For configuring a network device or a VPN/SDWAN setup, you need to exclude only 
 
 Microsoft is continually working to improve the Microsoft 365 user experience and the performance of clients over the widest possible range of network architectures and characteristics. Visit the [Office 365 Networking Tech Community](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking) to start or join a conversation, find resources, and submit feature requests and suggestions
 
-## Related topics
+## Related articles
 
-[Network planning and performance tuning for Microsoft 365](./network-planning-and-performance.md)
+[Overview: VPN split tunneling for Microsoft 365](microsoft-365-vpn-split-tunnel.md)
 
-[Microsoft 365 network connectivity principles](microsoft-365-network-connectivity-principles.md)
+[Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md)
 
-[Managing Office 365 endpoints](managing-office-365-endpoints.md)
+[Common VPN split tunneling scenarios for Microsoft 365](microsoft-365-vpn-common-scenarios.md)
 
-[Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md)
+[Securing Teams media traffic for VPN split tunneling](microsoft-365-vpn-securing-teams.md)
+
+[Special considerations for Stream and live events in VPN environments](microsoft-365-vpn-stream-and-live-events.md)
+
+[Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md)
+
+[Assessing Microsoft 365 network connectivity](assessing-network-connectivity.md)
+
+[Microsoft 365 network and performance tuning](network-planning-and-performance.md)
+
+[Alternative ways for security professionals and IT to achieve modern security controls in today's unique remote work scenarios (Microsoft Security Team blog)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+
+[Enhancing VPN performance at Microsoft: using Windows 10 VPN profiles to allow auto-on connections](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
+
+[Running on VPN: How Microsoft is keeping its remote workforce connected](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
 [Microsoft global network](/azure/networking/microsoft-global-network)

@@ -3,8 +3,7 @@ title: Hello World for Microsoft Defender for Endpoint API
 ms.reviewer:
 description: Create a practice 'Hello world'-style API call to the Microsoft Defender for Endpoint API.
 keywords: apis, supported apis, advanced hunting, query, microsoft defender atp, microsoft defender for endpoint
-search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,10 +12,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint API - Hello World
@@ -55,7 +57,7 @@ For the Application registration stage, you must have a **Global administrator**
 
 2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**.
 
-   ![Image of Microsoft Azure and navigation to application registration.](images/atp-azure-new-app2.png)
+   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="The App registrations option under the Manage pane in the Azure Active Directory portal"  lightbox="images/atp-azure-new-app2.png":::
 
 3. In the registration form, choose a name for your application and then click **Register**.
 
@@ -63,48 +65,52 @@ For the Application registration stage, you must have a **Global administrator**
 
    - On your application page, click **API Permissions** \> **Add permission** \> **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
 
-   - **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
+     > [!NOTE]
+     > WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   ![Image of API access and API selection1.](images/add-permission.png)
+     :::image type="content" source="images/add-permission.png" alt-text="The API permissions option under the Manage pane in the Azure Active Directory portal" lightbox="images/add-permission.png":::
 
-   - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**
+   - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**.
 
-   ![Image of API access and API selection2.](images/application-permissions.png)
+     :::image type="content" source="images/application-permissions.png" alt-text="The permission type and settings panes in the Request API permissions page" lightbox="images/application-permissions.png":::
 
-   **Important note**: You need to select the relevant permissions. 'Read All Alerts' is only an example!
+     > [!IMPORTANT]
+     > You need to select the relevant permissions. 'Read All Alerts' is only an example!
 
-     For instance,
+     For example:
 
-     - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
-     - To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission
+     - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission.
+     - To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission.
      - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
-5. Click **Grant consent**
+5. Click **Grant consent**.
 
-   - **Note**: Every time you add permission you must click on **Grant consent** for the new permission to take effect.
+   > [!NOTE]
+   > Every time you add permission, you must click on **Grant consent** for the new permission to take effect.
 
-   ![Image of Grant permissions.](images/grant-consent.png)
+   :::image type="content" source="images/grant-consent.png" alt-text="The grant permission consent option in the Azure Active Directory portal" lightbox="images/grant-consent.png":::
 
 6. Add a secret to the application.
 
-   - Click **Certificates & secrets**, add description to the secret and click **Add**.
+    Click **Certificates & secrets**, add description to the secret and click **Add**.
 
-    **Important**: After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
+    > [!IMPORTANT]
+    > After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
 
-    ![Image of create app key.](images/webapp-create-key2.png)
+    :::image type="content" source="images/webapp-create-key2.png" alt-text="The Certificates & secrets menu item in the Manage pane in the Azure Active Directory portal" lightbox="images/webapp-create-key2.png":::
 
-7. Write down your application ID and your tenant ID:
+7. Write down your application ID and your tenant ID.
 
-   - On your application page, go to **Overview** and copy the following:
+   On your application page, go to **Overview** and copy the following:
 
-   ![Image of created app id.](images/app-and-tenant-ids.png)
+   :::image type="content" source="images/app-and-tenant-ids.png" alt-text="The application details pane under the Overview menu item in the Azure Active Directory portal" lightbox="images/app-and-tenant-ids.png":::
 
 Done! You have successfully registered an application!
 
 ### Step 2 - Get a token using the App and use this token to access the API.
 
-- Copy the script below to PowerShell ISE or to a text editor, and save it as "**Get-Token.ps1**"
-- Running this script will generate a token and will save it in the working folder under the name "**Latest-token.txt**".
+- Copy the script below to PowerShell ISE or to a text editor, and save it as **Get-Token.ps1**.
+- Running this script will generate a token and will save it in the working folder under the name **Latest-token.txt**.
 
    ```powershell
    # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
@@ -130,12 +136,12 @@ Done! You have successfully registered an application!
 
 - Sanity Check:
   - Run the script.
-  - In your browser go to: <https://jwt.ms/>
+  - In your browser go to: <https://jwt.ms/>.
   - Copy the token (the content of the Latest-token.txt file).
   - Paste in the top box.
-  - Look for the "roles" section. Find the Alert.Read.All role.
+  - Look for the "roles" section. Find the _Alert.Read.All_ role.
 
-  ![Image jwt.ms.](images/api-jwt-ms.png)
+  :::image type="content" source="images/api-jwt-ms.png" alt-text="The Decoded Token pane for jwt.ms" lightbox="images/api-jwt-ms.png":::
 
 ### Lets get the Alerts!
 

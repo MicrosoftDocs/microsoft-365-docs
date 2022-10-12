@@ -2,15 +2,16 @@
 title: "Microsoft 365 network assessment"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 09/21/2020
+manager: scotv
+ms.date: 12/06/2021
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 description: "Microsoft 365 network assessment"
@@ -35,9 +36,6 @@ A very low network assessment value suggests that Microsoft 365 clients will hav
 | 40                 | Users may experience issues |
 | 20                 | Users may complain       |
 | 0                  | Network problems a common topic of discussion |
-
->[!IMPORTANT]
->Network insights, performance recommendations and assessments in the Microsoft 365 Admin Center is currently in preview status, and is only available for Microsoft 365 tenants that have been enrolled in the feature preview program.
 
 ## Network assessment panel
 
@@ -94,10 +92,10 @@ We calculate a mean opinion score from these UDP measurements for a scale from o
 
 ## Related topics
 
-[Network connectivity in the Microsoft 365 Admin Center (preview)](office-365-network-mac-perf-overview.md)
+[Network connectivity in the Microsoft 365 Admin Center](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365 network performance insights (preview)](office-365-network-mac-perf-insights.md)
+[Microsoft 365 network performance insights](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365 network connectivity test tool (preview)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 network connectivity test tool](office-365-network-mac-perf-onboarding-tool.md)
 
-[Microsoft 365 Network Connectivity Location Services (preview)](office-365-network-mac-location-services.md)
+[Microsoft 365 Network Connectivity Location Services](office-365-network-mac-location-services.md)

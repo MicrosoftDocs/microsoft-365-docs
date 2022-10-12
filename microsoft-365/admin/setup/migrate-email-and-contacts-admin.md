@@ -7,20 +7,24 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
 ms.custom:
+- VSBFY23
 - TopSMBIssues
 - okr_smb
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - AdminTemplateSet
 - adminvideo
+- business_assist
 search.appverid:
 - MET150
 - MOE150
@@ -34,13 +38,20 @@ description: "Learn to import contacts, calendars, and emails from Gmail or anot
 
 # Migrate email and contacts to Microsoft 365
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 Import or migrate email from Gmail or another email provider to Microsoft 365.
   
- **Want help with this?**  [Contact Microsoft 365 for business support](../../business-video/get-help-support.md) . 
+ **Want help with this?**  [Contact Microsoft 365 for business support](../../business-video/get-help-support.md). 
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
   
 You need to use a version of Outlook that is installed on your desktop for this task. Outlook is included in most Microsoft 365 [plans](https://go.microsoft.com/fwlink/p/?LinkId=723731).
   
 ## Watch: Import and redirect email
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197916).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
 
@@ -100,4 +111,4 @@ Depending on your source email system, you can choose from several bulk migratio
 
 [Plan your setup of Microsoft 365 for business](plan-your-setup.md) (article)\
 [Install Office applications](install-applications.md) (link page)\
-[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)
+[Overview of the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)

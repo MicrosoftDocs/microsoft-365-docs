@@ -7,19 +7,20 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: troubleshooting
-
+ms.custom:
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Admins can learn about the error codes that are associated with message delivery using connectors (also known as mail flow intelligence).
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.collection: m365-security
 ---
 
 # Mail flow intelligence in EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -70,9 +71,9 @@ Typically, this error means Microsoft 365 encountered a connection error when it
 
 - If no more messages should be delivered to your on-premises environment, click **Fix now** in the alert so Microsoft 365 can immediately reject the messages with invalid recipients. This will reduce the risk of exceeding your organization's quota for invalid recipients, which could impact normal message delivery. Or, you can use the following instructions to manually fix the issue:
 
-  - In the [Exchange admin center (EAC)](/Exchange/exchange-admin-center), disable or delete the connector that delivers email from Microsoft 365 to your on-premises email environment:
+  - In the Exchange admin center, disable or delete the connector that delivers email from Microsoft 365 to your on-premises email environment:
 
-    1. In the EAC, go to **Mail flow** \> **Connectors**.
+    1. In the EAC at <https://admin.exchange.microsoft.com>, go to **Mail flow** \> **Connectors**. To go directly to the **Connectors** page, use <https://admin.exchange.microsoft.com/#/connectors>.
 
     2. Select the connector with the **From** value **Office 365** and the **To** value **Your organization's email server** and do one of the following steps:
        - Delete the connector by clicking **Delete** ![Remove icon.](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)

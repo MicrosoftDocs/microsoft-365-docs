@@ -2,28 +2,29 @@
 title: "Buy or manage add-ons"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
 ms.custom: 
+- commerce_purchase
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_purchase
 - AdminTemplateSet
 description: "Learn how to buy and manage add-ons for your Microsoft 365 for business subscription."
 ms.date: 04/02/2021
 ---
 
-# Buy or manage add-ons
+# Buy or manage add-ons for Microsoft 365 business plans
 
 Many Microsoft 365 for business plans have add-ons that you can buy for your subscriptions. Add-ons provide more features to enhance your subscription experience.
 
@@ -65,7 +66,7 @@ You manage a traditional add-on by going to the subscription that contains it an
 
 To remove a standalone add-on subscription, you [cancel the subscription](subscriptions/cancel-your-subscription.md), just like any other subscription. Or you can [turn off Recurring billing](subscriptions/renew-your-subscription.md).
 
-You can’t remove a traditional add-on. If you want to remove a traditional add-on, [contact support for help](../business-video/get-help-support.md).
+You can’t remove a traditional add-on. If you want to remove a traditional add-on, contact support for help ([Get support](../admin/get-help-support.md).
   
 ## Related content
 

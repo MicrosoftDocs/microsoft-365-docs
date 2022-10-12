@@ -62,7 +62,7 @@
     "groups": {
       "office365": {
         "dest": "o365-dest",
-        "moniker_range": "=o365-worldwide || =o365-21vianet || =o365-germany"
+        "moniker_range": "=o365-worldwide || =o365-21vianet"
       }
     },
     "overwrite": [],
@@ -75,6 +75,7 @@
       "extendBreadcrumb": true,
       "recommendations": true,
       "uhfHeaderId": "MSDocsHeader-M365-IT",
+      "searchScope": ["Microsoft 365", "Microsoft Bookings", "SharePoint Syntex", "Microsoft 365 for frontline workers"],
       "contributors_to_exclude": [ 
         "rjagiewich", 
         "traya1", 
@@ -82,7 +83,9 @@
         "claydetels19", 
         "jborsecnik",
         "tiburd",
-        "garycentric"
+        "garycentric",
+        "v-dihans",
+        "AngelaMotherofDragons"
       ]
     },
     "fileMetadata": {
@@ -90,35 +93,51 @@
         "admin/**/*.md": false,
         "business/**/*.md": false,
         "business-video/**/*.md": false,
-        "commerce/**/*.md": false
+        "commerce/**/*.md": false,
+        "lighthouse/**/*.md": false
         },
       "titleSuffix": {
-        "compliance/**/*.md": "Microsoft 365 Compliance",
+        "compliance/**/*.md": "Microsoft Purview (compliance)",
         "security/mtp/**/*.md": "Microsoft 365 security",
         "security/office-365-security/**/*.md": "Office 365",
         "managed-desktop/**/*.md": "Microsoft Managed Desktop",
         "enterprise/**/*.md": "Microsoft 365 Enterprise",
-        "campaigns/**/*.md": "Microsoft 365 for Campaigns",
+        "business-premium/**/*.md": "Microsoft 365 Business Premium",
         "business/**/*.md": "Microsoft 365 Business",
         "admin/**/*.md": "Microsoft 365 admin",
-        "lighthouse/**/*.md": "Microsoft 365 Lighthouse"
+        "lighthouse/**/*.md": "Microsoft 365 Lighthouse",
+        "contentunderstanding/**/*.md": "SharePoint Syntex",
+        "frontline/**/*.md": "Microsoft 365 for frontline workers"
       },
       "feedback_product_url": {
-        "compliance/**/*.md":"https://office365.uservoice.com/forums/289138-office-365-security-compliance",
-        "security/**/*.md":"https://office365.uservoice.com/forums/289138-office-365-security-compliance",
+        "compliance/**/*.md":"https://feedbackportal.microsoft.com/feedback/",
+        "security/**/*.md":"https://docs.microsoft.com/microsoft-365/security/defender/feedback",
         "admin/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
-        "bookings/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
-        "bookings/**/*.yml":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
+        "bookings/":"https://feedbackportal.microsoft.com/feedback/forum/e9c7c7d1-011c-ec11-b6e7-0022481f8472",
         "business/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "business-video/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
-        "campaigns/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
+        "business-premium/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
+        "solutions/**.*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "commerce/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
+        "contentunderstanding/**/*.md":"https://aka.ms/syntex/feedback",
         "enterprise/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
-        "lighthouse/**/*.md":"https://github.com/MicrosoftDocs/microsoft-365-docs/issues"
+        "solutions/**.*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
+        "lighthouse/":"https://feedbackportal.microsoft.com/feedback/forum/d6a21c42-fe1b-ec11-b6e7-0022481f8472",
+        "frontline/":"https://feedbackportal.microsoft.com/feedback/forum/ad198462-1c1c-ec11-b6e7-0022481f8472"
       },
       "searchScope": {
-        "security/office-365-security/**/*.md": "Defender for Office",
-        "lighthouse/**/*.md": "Microsoft 365 Lighthouse"
+        "admin/**/*.md": ["Microsoft 365"],
+        "bookings/**/*.md": ["Microsoft Bookings"],
+        "business/**/*.md": ["Microsoft 365"],
+        "business-video/**/*.md": ["Microsoft 365"],
+        "commerce/**/*.md": ["Microsoft 365"],
+        "compliance/**/*.md": ["Microsoft 365"],
+        "contentunderstanding/**/*.md":["SharePoint Syntex"],
+        "lighthouse/**/*.md": ["Microsoft 365 Lighthouse"],
+        "frontline/**/*.md": ["Microsoft 365 for frontline workers"],
+        "enterprise/**/*.md": ["Microsoft 365"],
+        "security/**/*.md": ["Microsoft 365"],
+        "solutions/**.*.md": ["Microsoft 365"]
       }
     },
     "template": [],

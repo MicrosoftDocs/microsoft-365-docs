@@ -2,16 +2,17 @@
 title: "How to configure Skype for Business on-premises to use Hybrid Modern Authentication"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/3/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
+- scotvorg
 - M365-security-compliance
 f1.keywords:
 - NOCSH
@@ -25,9 +26,10 @@ ms.custom: seo-marvel-apr2020
 
 Modern Authentication, is a method of identity management that offers more secure user authentication and authorization, is available for Skype for Business server on-premises and Exchange server on-premises, and split-domain Skype for Business hybrids.
 
- **Important** Would you like to know more about Modern Authentication (MA) and why you might prefer to use it in your company or organization? Check [this document](hybrid-modern-auth-overview.md) for an overview. If you need to know what Skype for Business topologies are supported with MA, that's documented here!
+> [!IMPORTANT]
+> Would you like to know more about Modern Authentication (MA) and why you might prefer to use it in your company or organization? Check [this document](hybrid-modern-auth-overview.md) for an overview. If you need to know what Skype for Business topologies are supported with MA, that's documented here!
 
- **Before we begin**, I use these terms:
+**Before we begin**, I use these terms:
 
 - Modern Authentication (MA)
 
@@ -69,7 +71,8 @@ As you can see there are four different places to turn on MA! For the best user 
 
 See the [Supportability topic for Skype for Business with MA](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported) for supported topologies.
 
- **Important** Double-check that you've met all the prerequisites before you begin. You'll find that information in [Hybrid modern authentication overview and prerequisites](hybrid-modern-auth-overview.md).
+> [!IMPORTANT]
+> Double-check that you've met all the prerequisites before you begin. You'll find that information in [Hybrid modern authentication overview and prerequisites](hybrid-modern-auth-overview.md).
 
 ## Collect all HMA-specific info you'll need
 
@@ -85,7 +88,7 @@ After you've double-checked that you meet the [prerequisites](hybrid-modern-auth
 
 - **SFB 2015 CU5 Web Service URLs**
 
-you'll need internal and external web service URLs for all SfB 2015 pools deployed. To obtain these, run the following from Skype for Business Management Shell:
+You'll need internal and external web service URLs for all SfB 2015 pools deployed. To obtain these, run the following from Skype for Business Management Shell:
 
 ```powershell
 Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
@@ -115,7 +118,8 @@ Follow the instructions here: [How to configure Exchange Server on-premises to u
 
 Now you'll need to run commands to add the URLs (collected earlier) as Service Principals in SFBO.
 
- **Note** Service principal names (SPNs) identify web services and associate them with a security principal (such as an account name or group) so that the service can act on the behalf of an authorized user. Clients authenticating to a server make use of information that's contained in SPNs.
+> [!NOTE]
+> Service principal names (SPNs) identify web services and associate them with a security principal (such as an account name or group) so that the service can act on the behalf of an authorized user. Clients authenticating to a server make use of information that's contained in SPNs.
 
 1. First, connect to Azure Active Directory (Azure AD) with [these instructions](/powershell/azure/active-directory/overview).
 
@@ -125,20 +129,20 @@ Now you'll need to run commands to add the URLs (collected earlier) as Service P
 
    Take note of (and screenshot for later comparison) the output of this command, which will include an SE and WS URL, but mostly consist of SPNs that begin with `00000004-0000-0ff1-ce00-000000000000/`.
 
-```powershell
-Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
-```
+   ```powershell
+   Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
+   ```
 
 3. If the internal **or** external SFB URLs from on-premises are missing (for example, https://lyncwebint01.contoso.com and https://lyncwebext01.contoso.com) we will need to add those specific records to this list.
 
     Be sure to replace  *the example URLs* below with your actual URLs in the Add commands!
 
-```powershell
-$x= Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
-$x.ServicePrincipalnames.Add("https://lyncwebint01.contoso.com/")
-$x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
-Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
-```
+    ```powershell
+    $x= Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
+    $x.ServicePrincipalnames.Add("https://lyncwebint01.contoso.com/")
+    $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
+    Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
+    ```
 
 4. Verify your new records were added by running the **Get-MsolServicePrincipal** command from step 2 again, and looking through the output. Compare the list or screenshot from before to the new list of SPNs. You might also screenshot the new list for your records. If you were successful, you'll see the two new URLs in the list. Going by our example, the list of SPNs will now include the specific URLs https://lyncwebint01.contoso.com and https://lyncwebext01.contoso.com/.
 
@@ -166,7 +170,7 @@ To test that HMA is working after you've enabled it, sign out of a test SFB Wind
 
 You should also check the 'Configuration Information' for Skype for Business Clients for an 'OAuth Authority'. To do this on your client computer, hold down the CTRL key at the same time you right-click the Skype for Business Icon in the Windows Notification tray. Click **Configuration Information** in the menu that appears. In the 'Skype for Business Configuration Information' window that will appear on the desktop, look for the following:
 
-![The Configuration information of a Skype for Business Client using Modern Authentication shows a Lync and EWS OAUTH Authority URL of https://login.windows.net/common/oauth2/authorize.](../media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
+:::image type="content" alt-text="The Configuration information of a Skype for Business Client using Modern Authentication shows a Lync and EWS OAUTH Authority URL of https://login.windows.net/common/oauth2/authorize." source="../media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png":::
 
 You should also hold down the CTRL key at the same time you right-click the icon for the Outlook client (also in the Windows Notifications tray) and click 'Connection Status'. Look for the client's SMTP address against an AuthN type of 'Bearer\*', which represents the bearer token used in OAuth.
 
@@ -174,4 +178,4 @@ You should also hold down the CTRL key at the same time you right-click the icon
 
 [Link back to the Modern Authentication overview](hybrid-modern-auth-overview.md).
 
-Do you need to know how to use Modern Authentication (ADAL) for your Skype for Business clients? We've got steps [here](./hybrid-modern-auth-overview.md).
+Do you need to know how to use Modern Authentication for your Skype for Business clients? We've got steps here: [Hybrid modern authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](./hybrid-modern-auth-overview.md).

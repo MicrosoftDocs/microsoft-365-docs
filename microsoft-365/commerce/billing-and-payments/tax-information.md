@@ -2,28 +2,29 @@
 title: "Tax Information"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: tugu, jmueller
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
-description: "Find out how much tax you will be charged for your Microsoft 365 for business subscription in different regions. "
 ms.custom:
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 - AdminTemplateSet
+description: "Find out how much tax you will be charged for your Microsoft 365 for business subscription in different regions."
 ms.date: 03/17/2021
 ---
 
-# Tax information
+# Microsoft 365 tax information
 
 When you buy Microsoft 365 products and services, the taxes that you pay are determined by one of two things: your business address, or your shipping address, if it's different. If your organization is in the United States, you must provide a Federal Employer Identification Number (FEIN).
 
@@ -107,11 +108,11 @@ When you buy Microsoft 365 services in the EMEA region, this purchase could be s
 
 You might qualify for VAT zero-rating if:
   
-- **You're in a European Union Member State outside Ireland:** You can provide your valid local VAT ID. This lets Microsoft Ireland Operations Ltd. to VAT zero-rate the transaction. However, you might have a local VAT accounting obligation. If you have any concerns, check with your tax advisers. For instructions, see [Add your VAT ID](#add-your-vat-id).
+- **You're in a European Union Member State outside Ireland:** You can provide your valid local VAT ID. This lets Microsoft Ireland Operations Ltd. to VAT zero-rate the transaction. However, you might have a local VAT accounting obligation. If you have any concerns, check with your tax advisors. For instructions, see [Add your VAT ID](#add-your-vat-id).
 
 - **You're in Ireland and have the relevant valid VAT exemption certification:** Microsoft Ireland Operations Ltd. may be entitled to exempt the transaction from VAT. If you don't, Microsoft Ireland Operations Ltd. applies the current Irish VAT rate, whether you provide a VAT ID or not.
 
-- **You're in Armenia, Belarus, Norway, Turkey, or United Arab Emirates:** You can provide your local VAT ID. This entitles Microsoft Ireland Operations Ltd. to VAT zero-rate the transaction. However, you may have a local VAT accounting obligation, so please check with your tax advisers if you have any concerns. For instructions, see [Add your VAT ID](#add-your-vat-id).
+- **You're in Armenia, Belarus, Norway, Turkey, or United Arab Emirates:** You can provide your local VAT ID. This entitles Microsoft Ireland Operations Ltd. to VAT zero-rate the transaction. However, you may have a local VAT accounting obligation, so please check with your tax advisors if you have any concerns. For instructions, see [Add your VAT ID](#add-your-vat-id).
 
 ## Asia Pacific countries (APAC)
 
@@ -129,7 +130,7 @@ If you're billed from one of the following locations, the current local tax is a
 
 In the United States, Canada, Mexico, Chile, and Colombia, various tax rates apply depending on the product nature and your location.
   
-If your billing is done by Microsoft Corporation ([see your invoice](view-your-bill-or-invoice.md)), and you signed up for Microsoft 365 outside of the United States, Canada, Puerto Rico, Chile, and Colombia, then tax is generally not charged.
+If your billing is done by Microsoft Corporation ([see your invoice](view-your-bill-or-invoice.md), and you signed up for Microsoft 365 outside of the United States, Canada, Puerto Rico, Chile, and Colombia, then tax is generally not charged.
 
 ## Add your VAT ID
 
@@ -153,7 +154,7 @@ For example:
 
 ## Apply for tax-exempt status
 
-If you qualify for tax-exempt status in your market, [start a service request](../../business-video/get-help-support.md) to establish tax exempt status for your organization.
+If you qualify for tax-exempt status in your market, [start a service request](../../admin/get-help-support.md) to establish tax exempt status for your organization.
 
 |Country or locale | Documentation |
 |------------------|----------------|

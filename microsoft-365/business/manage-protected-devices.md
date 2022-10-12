@@ -10,9 +10,10 @@ ms.topic: conceptual
 f1_keywords:
 - 'O365E_DevicesManageLM'
 - 'O365E_DevicesManageKM'
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management 
 - M365-identity-device-management
 ms.custom:
@@ -36,6 +37,6 @@ After a user connects their device to your organization by signing in with their
 
 ## Related content
   
-[Remove company data from devices](remove-company-data.md) (article)\
+[Remove company data from devices](/business-premium/m365bp-remove-company-data.md) (article)\
 [Reset Windows 10 devices to their factory settings](reset-devices-to-factory-settings.md) (article)\
-[Add a managed device](./app-protection-settings-for-android-and-ios.md) (article)
+[Add a managed device](/business-premium/m365bp-app-protection-settings-for-android-and-ios.md) (article)

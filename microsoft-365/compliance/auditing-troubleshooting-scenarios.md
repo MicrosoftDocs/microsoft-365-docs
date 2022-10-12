@@ -1,23 +1,25 @@
 ---
 title: "Search the audit log to troubleshoot common scenarios"
+description: "Learn how to use the Microsoft 365 audit log search tool to help troubleshoot common support issues for email accounts."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
-ms.topic: troubleshooting
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- audit
 search.appverid:
 - MET150
 - MOE150
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn how to use the Microsoft 365 audit log search tool to help troubleshoot common support issues for email accounts."
+- admindeeplinkEXCHANGE
 ---
 
 # Search the audit log to investigate common support issues
@@ -32,13 +34,15 @@ This article describes how to use the audit log search tool to help you investig
 - Search for mailbox activities performed by users with non-E5 licenses
 - Search for mailbox activities performed by delegate users
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Using the audit log search tool
 
-Each of the troubleshooting scenarios described in this article is based on using the audit log search tool in the Microsoft 365 compliance center. This section lists the permissions required to search the audit log and describes the steps to access and run audit log searches. Each scenario section explains how to configure an audit log search query and what to look for in the detailed information in the audit records that match the search criteria.
+Each of the troubleshooting scenarios described in this article is based on using the audit log search tool in the Microsoft Purview compliance portal. This section lists the permissions required to search the audit log and describes the steps to access and run audit log searches. Each scenario section explains how to configure an audit log search query and what to look for in the detailed information in the audit records that match the search criteria.
 
 ### Permissions required to use the audit log search tool
 
-You must be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
+You must be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. Global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
 ### Running audit log searches
 

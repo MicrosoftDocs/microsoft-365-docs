@@ -1,10 +1,10 @@
 ---
 title: AADSpnSignInEventsBeta table in the advanced hunting schema
 description: Learn about information associated with Azure Active Directory's service principal and managed identity sign-in events table.
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AlertInfo, alert, entities, evidence, file, IP address, device, machine, user, account, identity, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,9 +15,10 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-ms.technology: m365d
 ---
 # AADSpnSignInEventsBeta
 
@@ -31,7 +32,7 @@ The `AADSpnSignInEventsBeta` table in the advanced hunting schema contains infor
 
 Use this reference to construct queries that return information from the table.
 
-For information on other tables in the advanced hunting schema, see [the advanced hunting reference](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
+For information on other tables in the advanced hunting schema, see [the advanced hunting reference](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
 
 <br>
 
@@ -39,25 +40,25 @@ For information on other tables in the advanced hunting schema, see [the advanc
 
 |Column name|Data type|Description|
 |---|---|---|
-|`Timestamp`|datetime|Date and time when the record was generated|
-|`Application`|string|Application that performed the recorded action|
-|`ApplicationId`|string|Unique identifier for the application|
-|`IsManagedIdentity`|boolean|Indicates whether the sign-in was started by a managed identity|
-|`ErrorCode`|int|Contains the error code if a sign-in error occurs. To find a description of a specific error code, visit <https://aka.ms/AADsigninsErrorCodes>.|
-|`CorrelationId`|string|Unique identifier of the sign-in event|
-|`ServicePrincipalName`|string|Name of the service principal that started the sign-in|
-|`ServicePrincipalId`|string|Unique identifier of the service principal that started the sign-in|
-|`ResourceDisplayName`|string|Display name of the resource accessed|
-|`ResourceId`|string|Unique identifier of the resource accessed|
-|`ResourceTenantId`|string|Unique identifier of the tenant of the resource accessed|
-|`IPAddress`|string|IP address assigned to the endpoint and used during related network communications|
-|`Country`|string|Two-letter code indicating the country where the client IP address is geolocated|
-|`State`|string|State where the sign-in occurred, if available|
-|`City`|string|City where the account user is located|
-|`Latitude`|string|The north to south coordinates of the sign-in location|
-|`Longitude`|string|The east to west coordinates of the sign-in location|
-|`RequestId`|string|Unique identifier of the request|
-|`ReportId`|string|Unique identifier for the event|
+|`Timestamp`|`datetime`|Date and time when the record was generated|
+|`Application`|`string`|Application that performed the recorded action|
+|`ApplicationId`|`string`|Unique identifier for the application|
+|`IsManagedIdentity`|`boolean`|Indicates whether the sign-in was started by a managed identity|
+|`ErrorCode`|`int`|Contains the error code if a sign-in error occurs. To find a description of a specific error code, visit <https://aka.ms/AADsigninsErrorCodes>.|
+|`CorrelationId`|`string`|Unique identifier of the sign-in event|
+|`ServicePrincipalName`|`string`|Name of the service principal that started the sign-in|
+|`ServicePrincipalId`|`string`|Unique identifier of the service principal that started the sign-in|
+|`ResourceDisplayName`|`string`|Display name of the resource accessed|
+|`ResourceId`|`string`|Unique identifier of the resource accessed|
+|`ResourceTenantId`|`string`|Unique identifier of the tenant of the resource accessed|
+|`IPAddress`|`string`|IP address assigned to the endpoint and used during related network communications|
+|`Country`|`string`|Two-letter code indicating the country where the client IP address is geolocated|
+|`State`|`string`|State where the sign-in occurred, if available|
+|`City`|`string`|City where the account user is located|
+|`Latitude`|`string`|The north to south coordinates of the sign-in location|
+|`Longitude`|`string`|The east to west coordinates of the sign-in location|
+|`RequestId`|`string`|Unique identifier of the request|
+|`ReportId`|`string`|Unique identifier for the event|
 ||||
 
 ## Related articles

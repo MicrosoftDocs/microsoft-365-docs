@@ -1,19 +1,23 @@
 ---
-title: SharePoint Syntex accessibility mode
+title: Accessibility mode in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to use accessibility mode when training a model in SharePoint Syntex.
+description: Learn how to use accessibility features mode when training and working with models in Microsoft Syntex.
 ---
 
-# SharePoint Syntex accessibility mode
+# Accessibility mode in Microsoft Syntex
 
-In [SharePoint Syntex](index.md), users can turn on accessibility mode in all stages of model training (label, train, test) when working with example documents. Using accessibility mode can help low-sight users to have easier keyboard accessibility as they navigate and label items in the document viewer.
+In [Microsoft Syntex](index.md), users can turn on accessibility mode in all stages of model training (label, train, test) when working with example documents. Using accessibility mode can help low-sight users to have easier keyboard accessibility as they navigate and label items in the document viewer.
 
 This helps users to use their keyboards to navigate through text in the document viewer and to hear a narration of not only the selected values, but also of actions (such as labeling or removing labeling from selected text), or predicted label values as you train the model with additional example documents. 
 
@@ -54,7 +58,7 @@ As you navigate through the sample documents and label string values, Narrator w
 
 After a string is labeled or a label has been removed in the viewer, Narrator audio will warn you to save your changes before you exit.
 
-## See Also
+## See also
 
 [Create an extractor](create-an-extractor.md)
 

@@ -1,9 +1,8 @@
 ---
 title: List all recommendations
 description: Retrieves a list of all security recommendations affecting the organization.
-keywords: apis, graph api, supported apis, get, security recommendations, Microsoft Defender for Endpoint tvm api, threat and vulnerability management, threat and vulnerability management api
-search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+keywords: apis, graph api, supported apis, get, security recommendations, Microsoft Defender for Endpoint tvm api, threat and vulnerability management, threat and vulnerability management api, mdvm
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +11,13 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # List all recommendations
@@ -98,9 +100,9 @@ Here is an example of the response.
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Recommendations",
     "value": [
         {
-            "id": "va-_-microsoft-_-windows_10",
-            "productName": "windows_10",
-            "recommendationName": "Update Windows 10",
+            "id": "va-_-microsoft-_-windows_10" "va-_-microsoft-_-windows_11",
+            "productName": "windows_10" "Windows_11",
+            "recommendationName": "Update Windows 10" "Update Windows 11",
             "weaknesses": 397,
             "vendor": "microsoft",
             "recommendedVersion": "",
@@ -123,7 +125,7 @@ Here is an example of the response.
             "totalMachineCount": 37,
             "exposedMachinesCount": 7,
             "nonProductivityImpactedAssets": 0,
-            "relatedComponent": "Windows 10"
+            "relatedComponent": "Windows 10" "Windows 11"
         }
         ...
      ]
@@ -132,5 +134,5 @@ Here is an example of the response.
 
 ## See also
 
-- [Risk-based Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Threat & Vulnerability security recommendation](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Vulnerability management security recommendations](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

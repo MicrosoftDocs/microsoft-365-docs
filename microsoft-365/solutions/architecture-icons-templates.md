@@ -1,18 +1,20 @@
 ---
-title: Microsoft 365 architecture icons and templates
-description: Icons for use in building architecture diagrams for Microsoft 365.
+title: Microsoft 365 architecture diagram templates and icons
+description: "Create Microsoft 365 architecture diagrams in Visio with these icons, stencils, and templates."
 ms.author: samanro
 author: samanro
 manager: bcarter
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.custom: 
 f1.keywords: NOCSH
+ms.collection: 
+- highpri
 ---
 
-# Microsoft 365 architecture icons and templates
+# Microsoft 365 architecture templates and icons
 
 Helping our partners and customers design and architect new solutions is important. Architecture diagrams like those included in our guidance can help communicate design decisions and the relationships between components in an environment. We use a set of symbols and icons along with Visio templates to create the architecture diagrams we product and are providing these tools here to help you build a custom architecture diagram for your next solution.
 

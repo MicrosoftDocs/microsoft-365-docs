@@ -7,13 +7,15 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 11/23/2021
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier1
+ms.custom: intro-overview
 ---
 
 # Overview of Microsoft Defender for Endpoint Plan 1
@@ -22,9 +24,6 @@ ms.collection: M365-security-compliance
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> [!TIP]
-> If you have Microsoft 365 E3 or A3 but not Microsoft 365 E5 or A5, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) to sign up for the preview program!
-
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help organizations like yours to prevent, detect, investigate, and respond to advanced threats. We are pleased to announce that Defender for Endpoint is now available in two plans: 
 
 - **Defender for Endpoint Plan 1**, described in this article; and 
@@ -32,11 +31,11 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 The green boxes in the following image depict what's included in Defender for Endpoint Plan 1:
 
-:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Defender for Endpoint Plan 1 diagram":::
+:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="What's inculded with Defender for Endpoint Plan 1" lightbox="../../media/mde-p1/mde-p1-overview-diagram.png":::
 
 Use this guide to:
 
-- [Get an overview of what’s included in Defender for Endpoint Plan 1](#defender-for-endpoint-plan-1-capabilities)
+- [Get an overview of what's included in Defender for Endpoint Plan 1](#defender-for-endpoint-plan-1-capabilities)
 - [Compare Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md)
 - [Learn how to set up and configure Defender for Endpoint Plan 1](mde-p1-setup-configuration.md)
 - [Get started using the Microsoft 365 Defender portal, where you can view incidents and alerts, manage devices, and use reports about detected threats](mde-plan1-getting-started.md)
@@ -74,7 +73,7 @@ Manual response actions are actions that your security team can take when threat
 | File/Device | Action | Description |
 |:---|:---|:---|
 | Device | Run antivirus scan | Starts an antivirus scan. If any threats are detected on the device, those threats are often addressed during an antivirus scan. |
-| Device | Isolate device | Disconnects a device from your organization’s network while retaining connectivity to Defender for Endpoint. This action enables you to monitor the device and take further action if needed. |
+| Device | Isolate device | Disconnects a device from your organization's network while retaining connectivity to Defender for Endpoint. This action enables you to monitor the device and take further action if needed. |
 | File | Stop and quarantine |Stops processes from running and quarantines associated files. |
 | File | Add an indicator to block or allow a file | Block indicators prevent portable executable files from being read, written, or executed on devices. <p>Allow indicators prevent files from being blocked or remediated. |
 
@@ -85,7 +84,7 @@ To learn more, see the following articles:
 
 ## Attack surface reduction
 
-Your organization’s attack surfaces are all the places where you’re vulnerable to cyberattacks. With Defender for Endpoint Plan 1, you can reduce your attack surfaces by protecting the devices and applications that your organization uses. The attack surface reduction capabilities that are included in Defender for Endpoint Plan 1 are described in the following sections.
+Your organization's attack surfaces are all the places where you're vulnerable to cyberattacks. With Defender for Endpoint Plan 1, you can reduce your attack surfaces by protecting the devices and applications that your organization uses. The attack surface reduction capabilities that are included in Defender for Endpoint Plan 1 are described in the following sections.
 
 - [Attack surface reduction rules](#attack-surface-reduction-rules)
 - [Ransomware mitigation](#ransomware-mitigation)
@@ -117,16 +116,16 @@ To learn more, see [Protect important folders with controlled folder access](con
 
 ### Device control
 
-Sometimes threats to your organization’s devices come in the form of files on removable drives, such as USB drives. Defender for Endpoint includes capabilities to help prevent threats from unauthorized peripherals from compromising your devices. You can configure Defender for Endpoint to block or allow removable devices and files on removable devices. 
+Sometimes threats to your organization's devices come in the form of files on removable drives, such as USB drives. Defender for Endpoint includes capabilities to help prevent threats from unauthorized peripherals from compromising your devices. You can configure Defender for Endpoint to block or allow removable devices and files on removable devices. 
 
 To learn more, see [Control USB devices and removable media](control-usb-devices-using-intune.md).
 
 ### Web protection
 
-With web protection, you can protect your organization’s devices from web threats and unwanted content. Web protection includes web threat protection and web content filtering.
+With web protection, you can protect your organization's devices from web threats and unwanted content. Web protection includes web threat protection and web content filtering.
 
 - [Web threat protection](web-threat-protection.md) prevents access to phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, and sites that you explicitly block.
-- [Web content filtering](web-content-filtering.md) (preview) prevents access to certain sites based on their category. Categories can include adult content, leisure sites, legal liability sites, and more.
+- [Web content filtering](web-content-filtering.md) prevents access to certain sites based on their category. Categories can include adult content, leisure sites, legal liability sites, and more.
 
 To learn more, see [web protection](web-protection-overview.md).
 
@@ -138,7 +137,7 @@ To learn more, see [Protect your network](network-protection.md).
 
 ### Network firewall
 
-With network firewall protection, you can set rules that determine which network traffic is permitted to flow to or from your organization’s devices. With your network firewall and advanced security that you get with Defender for Endpoint, you can:
+With network firewall protection, you can set rules that determine which network traffic is permitted to flow to or from your organization's devices. With your network firewall and advanced security that you get with Defender for Endpoint, you can:
 
 - Reduce the risk of network security threats
 - Safeguard sensitive data and intellectual property
@@ -177,7 +176,7 @@ To learn more, see [Get started with Microsoft Defender for Endpoint Plan 1](mde
 
 ### APIs
 
-With the Defender for Endpoint APIs, you can automate workflows and integrate with your organization’s custom solutions. 
+With the Defender for Endpoint APIs, you can automate workflows and integrate with your organization's custom solutions. 
 
 To learn more, see [Defender for Endpoint APIs](management-apis.md). 
 
@@ -185,8 +184,13 @@ To learn more, see [Defender for Endpoint APIs](management-apis.md).
 
 Most organizations use various devices and operating systems. Currently, Defender for Endpoint Plan 1 supports the following operating systems:
 
+- Windows 7 (ESU required)
+- Windows 8.1
 - Windows 10, version 1709, or later
-- macOS: 11.5 (Big Sur), 10.15.7 (Catalina), or 10.14.6 (Mojave)
+- Windows 10 Enterprise
+- Windows 10 Enterprise LTSC 2016 (or later)](/windows/whats-new/ltsc/)
+- Windows 10 Enterprise IoT
+- macOS (the three most recent releases are supported)
 - iOS
 - Android OS
 

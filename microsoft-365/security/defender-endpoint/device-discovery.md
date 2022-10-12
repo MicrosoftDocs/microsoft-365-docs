@@ -2,23 +2,26 @@
 title: Device discovery overview
 description: Learn how to leverage endpoint discovery in Microsoft 365 Defender to find unmanaged devices in your network
 keywords: device discovery, discover, passive, proactive, network, visibility, server, workstation, onboard, unmanaged devices
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
+ms.author: siosulli
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-m365-defender
+- m365-initiative-defender-endpoint
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: m365d
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Device discovery overview
@@ -26,102 +29,126 @@ ms.technology: m365d
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Protecting your environment requires taking inventory of the devices that are in your network. However, mapping devices in a network can often be expensive, challenging, and time-consuming.
 
-Microsoft Defender for Endpoint provides a device discovery capability that helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes.
+Microsoft Defender for Endpoint provides a device discovery capability that helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Device discovery uses onboarded endpoints, in your network to collect, probe, or scan your network to discover unmanaged devices. The device discovery capability allows you to discover:
 
-The device discovery capability allows you to:
+- Enterprise endpoints (workstations, servers and mobile devices) that are not yet onboarded to Microsoft Defender for Endpoint
+- Network devices like routers and switches
+- IoT devices like printers and cameras
 
-- **Discover enterprise endpoints connected to your corporate network**
+Unknown and unmanaged devices introduce significant risks to your network - whether it's an unpatched printer, network devices with weak security configurations, or a server with no security controls. Once devices are discovered, you can:
 
-  Using either basic or standard discovery options, you can discover workstations, servers, and mobile endpoints that are not yet onboarded to Microsoft Defender for Endpoint.
+- Onboard unmanaged endpoints to the service, increasing the security visibility on them.
+- Reduce the attack surface by identifying and assessing vulnerabilities, and detecting configuration gaps.
 
-- **Onboard discovered endpoints**
+Watch this video for a quick overview of how to assess and onboard unmanaged devices that Microsoft Defender for Endpoint discovered.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4RwQz]
 
-  Unmanaged endpoints in your network introduce vulnerabilities and risks to your network. Onboarding them to the service can increase the security visibility on them.
-
-
-Watch this video for a quick overview of how device discovery:
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
-
-
-In conjunction with this capability, a new security recommendation to onboard devices to Microsoft Defender for Endpoint will be available as part of the existing Threat and Vulnerability Management experience.
+In conjunction with this capability, a security recommendation to onboard devices to Microsoft Defender for Endpoint is available as part of the existing Microsoft Defender Vulnerability Management experience.
 
 ## Discovery methods
 
-There are two modes of discovery:
+You can choose the discovery mode to be used by your onboarded devices. The mode controls the level of visibility you can get for unmanaged devices in your corporate network.
 
-- Basic discovery
-- Standard discovery (recommended)
+There are two modes of discovery available:
+
+- **Basic discovery**: In this mode, endpoints will passively collect events in your network and extract device information from them. Basic discovery uses the SenseNDR.exe binary for passive network data collection and no network traffic will be initiated. Endpoints will simply extract data from every network traffic that is seen by an onboarded device. With basic discovery, you'll only gain limited visibility of unmanaged endpoints in your network.
+
+- **Standard discovery** (recommended): This mode allows endpoints to actively find devices in your network to enrich collected data and discover more devices - helping you build a reliable and coherent device inventory. In addition to devices that were observed using the passive method, standard mode also leverages common discovery protocols that use multicast queries in the network to find even more devices. Standard mode uses smart, active probing to discover additional information about observed devices to enrich existing device information. When Standard mode is enabled, minimal, and negligible network activity generated by the discovery sensor might be observed by network monitoring tools in your organization.
+
+You can change and customize your discovery settings, for more information, see [Configure device discovery](configure-device-discovery.md).
 
 > [!IMPORTANT]
-> Discovery is set to basic mode. You can choose to retain this configuration through the settings page. Standard discovery will be the default mode for all customers starting July 19, 2021 - unless modified through the settings page before this date.
-
-
-Only devices that were observed by the basic discovery mode will be actively probed in standard mode.
-
-
-### Basic discovery
-
-In this mode, endpoints will passively collect events in your network and extract device information from them. Basic discovery uses the SenseNDR.exe binary for passive network data collection and no network traffic will be initiated. Endpoints will simply extract data from every network traffic that is seen by an onboarded device.
-
-### Standard discovery
-
-This mode allows endpoints to actively probe observed devices in the network to enrich collected data and discover more devices - helping you build a reliable and coherent device inventory. Standard mode uses smart, active probing to discover even more information about observed devices to enrich existing device information. Standard mode also leverages common discovery protocols that use multicast queries in the network to find even more devices, in addition to the ones that were ovserved using the passive method.
-
-When Standard mode is enabled, minimal and negligible network activity generated by the discovery sensor might be observed by network monitoring tools in your organization.
-
- If you choose not to enable this mode, you will only gain limited visibility of unmanaged endpoints in your network.
-
-Standard discovery uses various PowerShell scripts to actively probe devices in the network. Those PowerShell scripts are Microsoft signed and are executed from the following location: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`. For example, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
-
-You can change and customize your discovery settings, for more information see [Configure device discovery](configure-device-discovery.md).
+> Standard discovery is the default mode for all customers starting July 19, 2021. You can choose to change this configuration to basic through the settings page. If you choose basic mode, you'll only gain limited visibility of unmanaged endpoints in your network.
 
 > [!NOTE]
 > The discovery engine distinguishes between network events that are received in the corporate network versus outside of the corporate network. Devices that are not connected to corporate networks will not be discovered or listed in the device inventory.
 
-## Device Inventory
+## Device inventory
 
-Devices that have been discovered but have not yet been onboarded and secured by Microsoft Defender for Endpoint will be listed in Device Inventory within the Endpoints tab.
-You can now use a new filter in the device inventory list called Onboarding status which can have any of the following values:
+Devices that have been discovered but have not yet been onboarded and secured by Microsoft Defender for Endpoint will be listed in the device inventory within the Computers and Mobile tab.
+
+To assess these devices, you can use a filter in the device inventory list called Onboarding status, which can have any of the following values:
 
 - Onboarded: The endpoint is onboarded to Microsoft Defender for Endpoint.
 - Can be onboarded: The endpoint was discovered in the network and the Operating System was identified as one that is supported by Microsoft Defender for Endpoint, but it is not currently onboarded. We highly recommend onboarding these devices.
 - Unsupported: The endpoint was discovered in the network but is not supported by Microsoft Defender for Endpoint.
 - Insufficient info: The system could not determine the supportability of the device. Enabling standard discovery on more devices in the network can enrich the discovered attributes.
 
-![Image of device inventory dashboard.](images/2b62255cd3a9dd42f3219e437b956fb9.png)
+:::image type="content" source="images/2b62255cd3a9dd42f3219e437b956fb9.png" alt-text="The device inventory dashboard" lightbox="images/2b62255cd3a9dd42f3219e437b956fb9.png":::
 
 > [!TIP]
 > You can always apply filters to exclude unmanaged devices from the device inventory list. You can also use the onboarding status column on API queries to filter out unmanaged devices.
 
+For more information, see [Device inventory](machines-view-overview.md).
+
+## Network device discovery
+
+The large number of unmanaged network devices deployed in an organization creates a large surface area of attack, and represents a significant risk to the entire enterprise. Microsoft Defender for Endpoint network discovery capabilities helps you ensure network devices are discovered, accurately classified, and added to the asset inventory.
+
+Network devices are not managed as standard endpoints, as Defender for Endpoint doesn't have a sensor built into the network devices themselves. These types of devices require an agentless approach where a remote scan will obtain the necessary information from the devices. To do this, a designated Microsoft Defender for Endpoint device will be used on each network segment to perform periodic authenticated scans of preconfigured network devices. Once discovered, Defender for Endpoint's vulnerability management capabilities provide integrated workflows to secure discovered switches, routers, WLAN controllers, firewalls, and VPN gateways.
+
+For more information, see [Network devices](network-devices.md).
+
+## Device discovery Integrations
+
+To address the challenge of gaining enough visibility to locate, identify, and secure your complete OT/IOT asset inventory Microsoft Defender for Endpoint now supports the following integrations:
+
+- **Corelight**: Microsoft has partnered with Corelight to receive data from Corelight network appliances. This provides Microsoft 365 Defender with increased visibility into the network activities of unmanaged devices, including communication with other unmanaged devices or external networks. for more information, see [Enable Corelight data integration](corelight-integration.md).
+
+- **Microsoft Defender for IoT**: This integration combines Microsoft Defender for Endpoint's device discovery capabilities, with the agentless monitoring capabilities of Microsoft Defender for IoT, to secure enterprise IoT devices connected to an IT network (for example, Voice over Internet Protocol (VoIP), printers, and smart TVs). For more information, see [Enable Microsoft Defender for IoT integration](enable-microsoft-defender-for-iot-integration.md).
+
 ## Vulnerability assessment on discovered devices
 
-Vulnerabilities and risks on your devices as well as other discovered unmanaged devices in the network are part of the current TVM flows under "Security Recommendations" and represented in entity pages across the portal.
+Vulnerabilities and risks on your devices as well as other discovered unmanaged devices in the network are part of the current Defender Vulnerability Management flows under "Security Recommendations" and represented in entity pages across the portal.
 Search for "SSH" related security recommendations to find SSH vulnerabilities that are related for unmanaged and managed devices.
 
-![Image of security recommendations dashboard.](images/1156c82ffadd356ce329d1cf551e806c.png)
+:::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="The security recommendations dashboard" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
 
-## Use Advanced Hunting on discovered devices
+## Use advanced hunting on discovered devices
 
-You can use Advanced Hunting queries to gain visibility on discovered devices.
-Find details about discovered Endpoints in the DeviceInfo table, or network-related information about those devices in the DeviceNetworkInfo table.
+You can use advanced hunting queries to gain visibility on discovered devices. Find details about discovered devices in the DeviceInfo table, or network-related information about those devices, in the DeviceNetworkInfo table.
 
-![Image of advanced hunting use.](images/f48ba1779eddee9872f167453c24e5c9.png)
+:::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="The Advanced hunting page on which queries can be used" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
-Device discovery leverages Microsoft Defender for Endpoint onboarded devices as a network data source to attribute activities to non-onboarded devices. This means that if a Microsoft Defender for Endpoint onboarded device communicated with a non-onboarded device, activities on the non-onboarded device can be seen on the timeline and through the Advanced hunting DeviceNetworkEvents table.
+### Query discovered devices details
 
-New events are Transmission Control Protocol (TCP) connections-based and will fit to the current DeviceNetworkEvents scheme. TCP ingress to the Microsoft Defender for Endpoint enabled device from a non-Microsoft Defender for Endpoint enabled.
+Run this query on the DeviceInfo table to return all discovered devices along with the most up-to-date details for each device:
 
-The following action types have also been added:
+```query
+DeviceInfo
+| summarize arg_max(Timestamp, *) by DeviceId  // Get latest known good per device Id
+| where isempty(MergedToDeviceId) // Remove invalidated/merged devices
+| where OnboardingStatus != "Onboarded"
+```
+
+By invoking the **SeenBy** function, in your advanced hunting query, you can get detail on which onboarded device a discovered device was seen by. This information can help determine the network location of each discovered device and subsequently, help to identify it in the network.
+
+```query
+DeviceInfo
+| where OnboardingStatus != "Onboarded"
+| summarize arg_max(Timestamp, *) by DeviceId 
+| where isempty(MergedToDeviceId) 
+| limit 100
+| invoke SeenBy()
+| project DeviceId, DeviceName, DeviceType, SeenBy
+```
+
+For more information, see the [SeenBy()](/microsoft-365/security/defender/advanced-hunting-seenby-function) function.
+
+### Query network related information
+
+Device discovery leverages Microsoft Defender for Endpoint onboarded devices as a network data source to attribute activities to non-onboarded devices. The network sensor on the Microsoft Defender for Endpoint onboarded device identifies two new connection types:
 
 - ConnectionAttempt - An attempt to establish a TCP connection (syn)
 - ConnectionAcknowledged - An acknowledgment that a TCP connection was accepted (syn\ack)
+
+This means that when a non-onboarded device attempts to communicate with an onboarded Microsoft Defender for Endpoint device, the attempt will generate a DeviceNetworkEvent and the  non-onboarded device activities can be seen on the onboarded device timeline, and through the Advanced hunting DeviceNetworkEvents table.
 
 You can try this example query:
 
@@ -130,16 +157,6 @@ DeviceNetworkEvents
 | where ActionType == "ConnectionAcknowledged" or ActionType == "ConnectionAttempt"
 | take 10
 ```
-
-## Changed behavior
-
-The following section lists the changes you'll observe in Microsoft Defender for Endpoint and <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> when this capability is enabled.
-
-1. Devices that are not onboarded to Microsoft Defender for Endpoint are expected to appear in the device inventory, advanced hunting, and API queries. This may significantly increase the size of query results.
-    1. "DeviceInfo" and "DeviceNetworkInfo" tables in Advanced Hunting will now hold discovered device. You can filter out those devices by using "OnboardingStatus" attribute.
-    2. Discovered devices are expected to appear in Streaming API query results. You can filter out those devices by using the `OnboardingStatus` filter in your query.
-2. Unmanaged devices will be assigned to existing device groups based on the defined criteria.
-3. In rare cases, Standard discovery might trigger alerts on network monitors or security tools. Please provide feedback, if you experience such events, to help prevent these issues from recurring. You can explicitly exclude specific targets or entire subnets from being actively probed by Standard discovery.
 
 ## Next steps
 

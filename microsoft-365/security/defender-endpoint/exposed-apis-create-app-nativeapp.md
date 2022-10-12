@@ -3,8 +3,7 @@ title: Use Microsoft Defender for Endpoint APIs
 ms.reviewer:
 description: Learn how to design a native Windows app to get programmatic access to Microsoft Defender for Endpoint without a user.
 keywords: apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file, advanced hunting, query
-search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,10 +12,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Use Microsoft Defender for Endpoint APIs
@@ -26,6 +28,11 @@ ms.custom: api
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/index.yml)
+
+> [!IMPORTANT]
+> Advanced hunting capabilities are not included in Defender for Business. See [Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
+
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -62,25 +69,24 @@ This page explains how to create an AAD application, get an access token to Micr
 
 2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**.
 
-   ![Image of Microsoft Azure and navigation to application registration.](images/atp-azure-new-app2.png)
+   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="The App registrations page in the Microsoft Azure portal" lightbox="images/atp-azure-new-app2.png":::
 
 3. When the **Register an application** page appears, enter your application's registration information:
    - **Name** - Enter a meaningful application name that will be displayed to users of the app.
    - **Supported account types** - Select which accounts you would like your application to support.
 
-   <br>
+     <br>
 
-   ****
-
-   |Supported account types|Description|
-   |---|---|
-   |**Accounts in this organizational directory only**|Select this option if you're building a line-of-business (LOB) application. This option is not available if you're not registering the application in a directory. <p> This option maps to Azure AD only single-tenant. <p> This is the default option unless you're registering the app outside of a directory. In cases where the app is registered outside of a directory, the default is Azure AD multi-tenant and personal Microsoft accounts.|
-   |**Accounts in any organizational directory**|Select this option if you would like to target all business and educational customers. <p> This option maps to an Azure AD only multi-tenant. <p> If you registered the app as Azure AD only single-tenant, you can update it to be Azure AD multi-tenant and back to single-tenant through the **Authentication** blade.|
-   |**Accounts in any organizational directory and personal Microsoft accounts**|Select this option to target the widest set of customers. <p> This option maps to Azure AD multi-tenant and personal Microsoft accounts. <p> If you registered the app as Azure AD multi-tenant and personal Microsoft accounts, you cannot change this in the UI. Instead, you must use the application manifest editor to change the supported account types.|
-   |
+     |Supported account types|Description|
+     |---|---|
+     |**Accounts in this organizational directory only**|Select this option if you're building a line-of-business (LOB) application. This option is not available if you're not registering the application in a directory. <p> This option maps to Azure AD only single-tenant. <p> This is the default option unless you're registering the app outside of a directory. In cases where the app is registered outside of a directory, the default is Azure AD multi-tenant and personal Microsoft accounts.|
+     |**Accounts in any organizational directory**|Select this option if you would like to target all business and educational customers. <p> This option maps to an Azure AD only multi-tenant. <p> If you registered the app as Azure AD only single-tenant, you can update it to be Azure AD multi-tenant and back to single-tenant through the **Authentication** blade.|
+     |**Accounts in any organizational directory and personal Microsoft accounts**|Select this option to target the widest set of customers. <p> This option maps to Azure AD multi-tenant and personal Microsoft accounts. <p> If you registered the app as Azure AD multi-tenant and personal Microsoft accounts, you cannot change this in the UI. Instead, you must use the application manifest editor to change the supported account types.|
 
    - **Redirect URI (optional)** - Select the type of app you're building, **Web** or **Public client (mobile & desktop)**, and then enter the redirect URI (or reply URL) for your application.
+
      - For web applications, provide the base URL of your app. For example, `http://localhost:31544` might be the URL for a web app running on your local machine. Users would use this URL to sign in to a web client application.
+
      - For public client applications, provide the URI used by Azure AD to return token responses. Enter a value specific to your application, such as `myapp://auth`.
 
      To see specific examples for web applications or native applications, check out our [quickstarts](/azure/active-directory/develop/#quickstarts).
@@ -90,37 +96,41 @@ This page explains how to create an AAD application, get an access token to Micr
 4. Allow your Application to access Microsoft Defender for Endpoint and assign it 'Read alerts' permission:
 
    - On your application page, select **API Permissions** \> **Add permission** \> **APIs my organization uses** > type **WindowsDefenderATP** and select on **WindowsDefenderATP**.
-   - **Note**: *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
-     ![add permission.](images/add-permission.png)
+     > [!NOTE]
+     > *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
-   - Choose **Delegated permissions** \> **Alert.Read** > select **Add permissions**
+     :::image type="content" alt-text="add permission." source="images/add-permission.png" lightbox="images/add-permission.png":::
 
-      ![application permissions.](images/application-permissions-public-client.png)
+   - Choose **Delegated permissions** \> **Alert.Read** > select **Add permissions**.
 
-   - **Important note**: Select the relevant permissions. Read alerts is only an example.
+      :::image type="content" source="images/application-permissions-public-client.png" alt-text="The application type and permissions panes" lightbox="images/application-permissions-public-client.png":::
 
-     For instance,
+   > [!IMPORTANT]
+   > Select the relevant permissions. Read alerts is only an example.
 
-     - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
-     - To [isolate a device](isolate-machine.md), select 'Isolate machine' permission
+     For example:
+
+     - To [run advanced queries](run-advanced-query-api.md), select **Run advanced queries** permission.
+     - To [isolate a device](isolate-machine.md), select **Isolate machine** permission.
      - To determine which permission you need, view the **Permissions** section in the API you are interested to call.
 
-   - Select **Grant consent**
+   - Select **Grant consent**.
 
-      **Note**: Every time you add permission you must select on **Grant consent** for the new permission to take effect.
+      > [!NOTE]
+      > Every time you add permission you must select on **Grant consent** for the new permission to take effect.
 
-      ![Image of Grant permissions.](images/grant-consent.png)
+      :::image type="content" source="images/grant-consent.png" alt-text="The Grand admin consent option" lightbox="images/grant-consent.png":::
 
-5. Write down your application ID and your tenant ID:
+5. Write down your application ID and your tenant ID.
 
-   - On your application page, go to **Overview** and copy the following information:
+    On your application page, go to **Overview** and copy the following information:
 
-   ![Image of created app id.](images/app-and-tenant-ids.png)
+    :::image type="content" source="images/app-and-tenant-ids.png" alt-text="The created app ID"  lightbox="images/app-and-tenant-ids.png":::
 
 ## Get an access token
 
-For more information on AAD tokens, see [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+For more information on AAD tokens, see [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 ### Using C\#
 
@@ -169,19 +179,19 @@ For more information on AAD tokens, see [Azure AD tutorial](/azure/active-direct
 
 Verify to make sure you got a correct token:
 
-- Copy/paste into [JWT](https://jwt.ms) the token you got in the previous step in order to decode it
-- Validate you get a 'scp' claim with the desired app permissions
+- Copy/paste into [JWT](https://jwt.ms) the token you got in the previous step in order to decode it.
+- Validate you get a 'scp' claim with the desired app permissions.
 - In the screenshot below you can see a decoded token acquired from the app in the tutorial:
 
-![Image of token validation.](images/nativeapp-decoded-token.png)
+  :::image type="content" source="images/nativeapp-decoded-token.png" alt-text="The token validation page" lightbox="images/nativeapp-decoded-token.png":::
 
 ## Use the token to access Microsoft Defender for Endpoint API
 
-- Choose the API you want to use - [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
-- Set the Authorization header in the HTTP request you send to "Bearer {token}" (Bearer is the Authorization scheme)
-- The Expiration time of the token is 1 hour (you can send more than one request with the same token)
+- Choose the API you want to use - [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md).
+- Set the Authorization header in the HTTP request you send to "Bearer {token}" (Bearer is the Authorization scheme).
+- The Expiration time of the token is 1 hour (you can send more than one request with the same token).
 
-- Example of sending a request to get a list of alerts **using C#**
+- Example of sending a request to get a list of alerts **using C#**:
 
     ```csharp
     var httpClient = new HttpClient();

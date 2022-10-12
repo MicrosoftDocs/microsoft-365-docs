@@ -4,7 +4,8 @@ description: Learn about security assessment events in the DeviceTvmSecureConfig
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, security configuration, DeviceTvmSecureConfigurationAssessment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,9 +16,10 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-ms.technology: m365d
 ---
 
 # DeviceTvmSecureConfigurationAssessment
@@ -29,8 +31,7 @@ ms.technology: m365d
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
-
-Each row in the `DeviceTvmSecureConfigurationAssessment` table contains an assessment event for a specific security configuration from [Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Use this reference to check the latest assessment results and determine whether devices are compliant.
+Each row in the `DeviceTvmSecureConfigurationAssessment` table contains an assessment event for a specific security configuration from [Microsoft Defender Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Use this reference to check the latest assessment results and determine whether devices are compliant.
 
 You can join this table with the [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) table using `ConfigurationId` so you can, for example, view the text description of the configuration from the `ConfigurationDescription` column of the `DeviceTvmSecureConfigurationAssessmentKB` table, in the configuration assessment results.
 
@@ -38,18 +39,18 @@ For information on other tables in the advanced hunting schema, see [the advance
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `DeviceId` | string | Unique identifier for the device in the service |
-| `DeviceName` | string | Fully qualified domain name (FQDN) of the device |
-| `OSPlatform` | string | Platform of the operating system running on the device. Indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10, and Windows 7.|
-| `Timestamp` | datetime | Date and time when the record was generated |
-| `ConfigurationId` | string | Unique identifier for a specific configuration |
-| `ConfigurationCategory` | string | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls |
-| `ConfigurationSubcategory` | string | Subcategory or subgrouping to which the configuration belongs. In many cases,  string describes specific capabilities or features. |
-| `ConfigurationImpact` | string | Rated impact of the configuration to the overall configuration score (1-10) |
-| `IsCompliant` | boolean | Indicates whether the configuration or policy is properly configured |
-| `IsApplicable` | Boolean | Indicates whether the configuration or policy applies to the device |
-| `Context` | string | Additional contextual information about the configuration or policy |
-| `IsExpectedUserImpact` | boolean | Indicates whether there will be user impact if the configuration or policy is applied |
+| `DeviceId` | `string` | Unique identifier for the device in the service |
+| `DeviceName` | `string` | Fully qualified domain name (FQDN) of the device |
+| `OSPlatform` | `string` | Platform of the operating system running on the device. Indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10, and Windows 7.|
+| `Timestamp` | `datetime` | Date and time when the record was generated |
+| `ConfigurationId` | `string` | Unique identifier for a specific configuration |
+| `ConfigurationCategory` | `string` | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls |
+| `ConfigurationSubcategory` | `string` | Subcategory or subgrouping to which the configuration belongs. In many cases,  string describes specific capabilities or features. |
+| `ConfigurationImpact` | `string` | Rated impact of the configuration to the overall configuration score (1-10) |
+| `IsCompliant` | `boolean` | Indicates whether the configuration or policy is properly configured |
+| `IsApplicable` | `boolean` | Indicates whether the configuration or policy applies to the device |
+| `Context` | `string` | Additional contextual information about the configuration or policy |
+| `IsExpectedUserImpact` | `boolean` | Indicates whether there will be user impact if the configuration or policy is applied |
 
 You can try this example query to return information on devices with non-compliant antivirus configurations along with the relevant configuration metadata from the `DeviceTvmSecureConfigurationAssessmentKB` table:
 
@@ -72,4 +73,4 @@ DeviceTvmSecureConfigurationAssessment
 - [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
-- [Overview of Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Overview of Microsoft Defender Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

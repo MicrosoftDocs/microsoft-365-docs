@@ -6,41 +6,47 @@ manager: scotv
 ms.date: 
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
-ms.custom: admindeeplinkMAC
+ms.custom: 
+- admindeeplinkMAC
+- admindeeplinkEXCHANGE
 f1.keywords:
 - NOCSH
-description: "Use mailbox utilization service alerts to monitor mailboxes on hold that are reaching their mailbox quota."
+description: "Use mailbox utilization service advisories to monitor mailboxes on hold that are reaching their mailbox quota."
 ---
 
-# Service alerts for mailbox utilization in Exchange Online monitoring
+# Service advisories for mailbox utilization in Exchange Online monitoring
 
-We've released a new Exchange Online service alert that informs you of mailboxes that are on hold that are at risk of reaching or exceeding their quota. These service alerts provide visibility to the number of mailboxes in your organization that may require admin intervention.
+We've released a new Exchange Online service advisory that informs you of mailboxes that are on hold that are at risk of reaching or exceeding their quota. These service advisories provide visibility to the number of mailboxes in your organization that may require admin intervention.
 
-These service alerts are displayed in the Microsoft 365 admin center. To view these service alerts, go to **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Service health**</a> > **Exchange Online** and then click the **Active issues** tab. Here's an example of a mailbox utilization service alert.
+These service advisories are displayed in the Microsoft 365 admin center. To view these service advisories, go to **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Service health**</a> > **Exchange Online** and then click the **Active issues** tab. Here's an example of a mailbox utilization service advisory.
 
 :::image type="content" alt-text="Mailbox utilization service alert." source="../media/MailboxUtilizationServiceAlert.png" lightbox="../media/MailboxUtilizationServiceAlert.png":::
 
-To display a list of mailboxes that are nearing their storage quota (called the *mailbox usage report*), click the highlighted link in the following screenshot. This link is displayed in the service alert.
+To display a list of mailboxes that are nearing their storage quota, select the highlighted link in the following screenshot to access your mailbox usage report. This link is displayed in the service advisory.
 
 :::image type="content" alt-text="Link to mailbox usage report." source="../media/LinkToMailboxUsageReport.png" lightbox="../media/LinkToMailboxUsageReport.png":::
 
 Alternatively, the direct URL to the mailbox usage report is <https://admin.microsoft.com/Adminportal/Home?source=applauncher#/reportsUsage/MailboxUsage>.
 
-## What do these service alerts indicate?
+> [!NOTE]
+> The mailbox usage report information could be 24 hours behind your mailbox utilization service advisory alert.
 
-The service alerts for mailbox utilization inform admins about mailboxes on hold that are nearing the mailbox storage quota. The type of holds that that can be placed on mailboxes include Litigation holds, eDiscovery hold, and Microsoft 365 retention policies (that are configured to retain data). When a mailbox is on hold, users (or automated processes) can't permanently remove data from their mailbox. Instead, admins must configure MRM retention policies in Exchange Online (inline with their organization's compliance policies related to data retention) to move data from a user's primary mailbox to their archive mailbox. If not and a mailbox on a hold reaches a critical or warning state, admins have to [enable archive mailboxes](../compliance/enable-archive-mailboxes.md) and [enable auto-expanding archiving](../compliance/enable-autoexpanding-archiving.md) and then make sure that the retention period for the archive policy assigned to the mailbox (that moves email from the primary mailbox to the archive mailbox) is short enough. If nothing is done to resolve the quota issues that are identified by the mailbox utilization service alerts, then users might not be able to send or receive email messages or meeting invites.
+## What do these service advisories indicate?
 
-A service alert for mailbox utilization contains tables about the number of mailboxes that are nearing their quota. The following sections describe the information in these tables and the action admins can take to help ensure these mailboxes don't exceed their quota.
+The service advisories for mailbox utilization inform admins about mailboxes on hold that are nearing the mailbox storage quota. The type of holds that that can be placed on mailboxes include Litigation holds, eDiscovery hold, and Microsoft 365 retention policies (that are configured to retain data). When a mailbox is on hold, users (or automated processes) can't permanently remove data from their mailbox. Instead, admins must configure MRM retention policies in Exchange Online (inline with their organization's compliance policies related to data retention) to move data from a user's primary mailbox to their archive mailbox. If not and a mailbox on a hold reaches a critical or warning state, admins have to [enable archive mailboxes](../compliance/enable-archive-mailboxes.md) and [enable auto-expanding archiving](../compliance/enable-autoexpanding-archiving.md) and then make sure that the retention period for the archive policy assigned to the mailbox (that moves email from the primary mailbox to the archive mailbox) is short enough. If nothing is done to resolve the quota issues that are identified by the mailbox utilization service advisory, then users might not be able to send or receive email messages or meeting invites.
+
+A service advisory for mailbox utilization contains tables about the number of mailboxes that are nearing their quota. The following sections describe the information in these tables and the action admins can take to help ensure these mailboxes don't exceed their quota.
 
 > [!NOTE]
-> Service alerts contain descriptions of the mailbox quota properties that appear in the columns in the tables described in the following sections.
+> Service advisories contain descriptions of the mailbox quota properties that appear in the columns in the tables described in the following sections.
 
 ### Mailboxes on hold without an archive
 
@@ -73,7 +79,7 @@ Admins should also make sure that an MRM archive policy that moves items to the 
 
 ### MRM retention policies in your organization
 
-Service alerts for mailbox utilization may also contain a table with information about the MRM retention policies in your organization and whether or not the mailboxes that are a retention policy have an archive mailbox. For more information about retention policies, see [Retention tags and retention policies in Exchange Online](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies).
+Service advisories for mailbox utilization may also contain a table with information about the MRM retention policies in your organization and whether or not the mailboxes that are a retention policy have an archive mailbox. For more information about retention policies, see [Retention tags and retention policies in Exchange Online](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies).
 
 | RetentionPolicyGuid | MailboxType | HasMoveDumpsterToArchiveTag | HasMovePrimaryToArchiveTag | HasPersonalArchiveTag |  Mailboxes |
 |:--------------|:--------------|:---------------|:---------------|:---------------|:--------------- |
@@ -94,7 +100,7 @@ The following list describes each column in the previous table.
    Get-RetentionPolicy <GUID> | FL
    ```
 
-   The value of the **Name** property is the name of the retention policy that's displayed on the **Retention policies** page in the Exchange admin center.
+   The value of the **Name** property is the name of the retention policy that's displayed on the **Retention policies** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
 - **MailboxType**: Specifies what type of mailboxes the policy is assigned to. Values include *Primary* (mailboxes without an archive) or *PrimaryWithArchive* (mailboxes with an archive). If the value in this column is *Primary*, then you should enable the archive for the mailboxes (the **Mailbox** column indicates the number of these mailboxes) that are assigned the policy. Otherwise, an archive policy or personal archive tag won't work because there isn't an archive to move items to.
 
@@ -106,12 +112,12 @@ The following list describes each column in the previous table.
 
 - **Mailboxes**: Indicates the number of mailboxes (those with or without an archive, which is indicated in the **MailboxType** column) the retention policy is assigned to.
 
-## How often will I see these service alerts?
+## How often will I see these service advisories?
 
-If you don't take action to resolve the quota issues, you can expect to see this type of service alert every four days. Subsequent service alerts may contain higher mailbox counts for other mailboxes that are nearing their quota. If you take action to resolve quota issues, this service alert will only occur when another mailbox with quota issues is identified.
+If you don't take action to resolve the quota issues, you can expect to see this type of service advisory every seven days. Subsequent service advisories may contain higher mailbox counts for other mailboxes that are nearing their quota. If you take action to resolve quota issues, this service advisory will only occur when another mailbox with quota issues is identified.
 
 ## More information
 
-- For information about troubleshooting and resolving archive mailbox issues, see [Microsoft 365 compliance troubleshooting](/office365/troubleshoot/microsoft-365-compliance-welcome).
+- For information about troubleshooting and resolving archive mailbox issues, see [Microsoft Purview troubleshooting](/office365/troubleshoot/microsoft-365-compliance-welcome).
 
 - For guidance about identifying the holds placed on a mailbox, see [How to identify the type of hold placed on a mailbox](../compliance/identify-a-hold-on-an-exchange-online-mailbox.md).

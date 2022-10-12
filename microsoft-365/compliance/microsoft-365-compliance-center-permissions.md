@@ -1,5 +1,6 @@
 ---
-title: "Permissions in the Microsoft 365 compliance center"
+title: "Permissions in the Microsoft Purview compliance portal"
+description: Learn about managing permissions in the Microsoft Purview compliance portal.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,38 +10,43 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: Learn about managing permissions in the Microsoft 365 compliance center.
-ms.collection: M365-security-compliance
-ms.custom: admindeeplinkCOMPLIANCE
+ms.collection:
+- tier1
+- purview-compliance
+ms.custom: 
+- admindeeplinkCOMPLIANCE
+- admindeeplinkEXCHANGE
 ---
 
-# Permissions in the Microsoft 365 compliance center
+# Permissions in the Microsoft Purview compliance portal
 
-The Microsoft 365 compliance center has been recently updated and now supports directly  managing permissions for users who perform compliance tasks in Microsoft 365. This update means you'll no longer have to use the Office 365 Security & Compliance Center to manage permissions for compliance solutions. Using the new **Permissions** page in the Microsoft 365 compliance center, you can manage permissions to users for compliance tasks in features like device management, data loss prevention, eDiscovery, insider risk management, retention, and many others. Users can perform only the compliance tasks that you explicitly grant them access to.
+The Microsoft Purview compliance portal supports directly  managing permissions for users who perform compliance tasks in Microsoft 365. This update means you'll no longer have to use the Office 365 Security & Compliance Center to manage permissions for compliance solutions. Using the new **Permissions** page in the compliance portal, you can manage permissions to users for compliance tasks in features like device management, Microsoft Purview Data Loss Prevention, eDiscovery, insider risk management, retention, and many others. Users can perform only the compliance tasks that you explicitly grant them access to.
 
-To view the **Permissions** tab in the Microsoft 365 compliance center, users need to be a global administrator or need to be assigned the *Role Management* role (a role is assigned only to the *Organization Management* role group). The *Role Management* role allows users to view, create, and modify role groups.
+To view the **Permissions** tab in the compliance portal, users need to be a global administrator or need to be assigned the *Role Management* role (a role is assigned only to the *Organization Management* role group). The *Role Management* role allows users to view, create, and modify role groups.
 
-![Permissions page in Microsoft 365 compliance center.](../media/m365-compliance-center-permissions.png)
+![Permissions page in Microsoft Purview compliance portal.](../media/m365-compliance-center-permissions.png)
 
-Permissions in the Microsoft 365 compliance center are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services, so if you're familiar with the permission structure in these services, granting permissions in the Microsoft 365 compliance center will be familiar. It's important to remember that the permissions managed in the Microsoft 365 compliance center don't cover the management of all the permissions needed in each individual service. You'll still need to manage certain service-specific permissions in the admin center for the specific service. For example, if you need to assign permissions for archiving, auditing, and MRM retention policies, you'll need to manage these permissions in the Exchange admin center.
+Permissions in the compliance portal are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services, so if you're familiar with the permission structure in these services, granting permissions in the compliance portal will be familiar. It's important to remember that the permissions managed in the compliance portal don't cover the management of all the permissions needed in each individual service. You'll still need to manage certain service-specific permissions in the admin center for the specific service. For example, if you need to assign permissions for archiving, auditing, and MRM retention policies, you'll need to manage these permissions in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Relationship of members, roles, and role groups
 
 A role grants permissions to do a set of tasks; for example, the Case Management role lets users work with eDiscovery cases.
 
-A role group is a set of roles that enable users do their jobs across compliance solutions the Microsoft 365 compliance center. For example, by adding users to the *Insider Risk Management* role group, designated administrators, analysts, investigators, and auditors are configured for the necessary insider risk management permissions in a single group. The Microsoft 365 compliance center includes default role groups for tasks and functions for each compliance solution that you'll need to assign people to. Generally, we recommend simply adding individual users as members to the default compliance role groups as needed.
+A role group is a set of roles that enable users do their jobs across compliance solutions the compliance portal. For example, by adding users to the *Insider Risk Management* role group, designated administrators, analysts, investigators, and auditors are configured for the necessary insider risk management permissions in a single group. The compliance portal includes default role groups for tasks and functions for each compliance solution that you'll need to assign people to. Generally, we recommend simply adding individual users as members to the default compliance role groups as needed.
 
 ![Diagram showing relationship of role groups to roles and members.](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
-## Permissions needed to use features in the Microsoft 365 compliance center
+## Permissions needed to use features in the compliance portal
 
-To view all of the default role groups that are available in the Microsoft 365 compliance center and the roles that are assigned to the role groups by default, see the [Permissions in the Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+To view all of the default role groups that are available in the compliance portal and the roles that are assigned to the role groups by default, see the [Permissions in the Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
-Managing permissions in the Microsoft 365 compliance center only gives users access to the compliance features that are available within the Microsoft 365 compliance center. If you want to grant permissions to other features that aren't in the Microsoft 365 compliance center, such as Exchange mail flow rules (also known as transport rules), you'll need to use the Exchange admin center.
+Managing permissions in the compliance portal only gives users access to the compliance features that are available within the compliance portal. If you want to grant permissions to other features that aren't in the compliance portal, such as Exchange mail flow rules (also known as transport rules), you'll need to use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
-## Azure roles in the Microsoft 365 compliance center
+## Azure roles in the compliance portal
 
-The roles that appear in the **Azure AD** > **Roles** section of the Microsoft 365 compliance center **Permissions** page are Azure Active Directory roles. These roles are designed to align with job functions in your organization's IT group, making it easy to give a person all the permissions necessary to get their job done. You can view the users currently assigned to each role by selecting an Admin role and viewing the role panel details. To manage members of an Azure AD role, select Manage members in Azure AD. This choice redirects you to the Azure management portal.
+The roles that appear in the **Azure AD** > **Roles** section of the compliance portal **Permissions** page are Azure Active Directory roles. These roles are designed to align with job functions in your organization's IT group, making it easy to give a person all the permissions necessary to get their job done. You can view the users currently assigned to each role by selecting an Admin role and viewing the role panel details. To manage members of an Azure AD role, select Manage members in Azure AD. This choice redirects you to the Azure management portal.
 
 |Role|Description|
 |:---|:----------|
@@ -59,7 +65,7 @@ The roles that appear in the **Azure AD** > **Roles** section of the Microsoft 3
 
 Complete the following steps to add users to a compliance role group:
 
-1. Sign into the permissions area of the Microsoft 365 compliance center using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> to select the link to view and manage compliance roles in Microsoft 365.
+1. Sign into the permissions area of the compliance portal using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> to select the link to view and manage compliance roles in Microsoft 365.
 1. Expand the **Compliance center** section and select **Roles**.
 1. On the **Compliance center roles** page, select a compliance role group you want to add users to, then select **Edit role group** on the details pane.
 1. Select **Choose members** from the left navigation pane, then select **Edit**.
@@ -71,7 +77,7 @@ Complete the following steps to add users to a compliance role group:
 
 Complete the following steps to remove users from a compliance role group:
 
-1. Sign into the permissions area of the Microsoft 365 compliance center using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> to select the link to view and manage compliance roles in Microsoft 365.
+1. Sign into the permissions area of the compliance portal using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> to select the link to view and manage compliance roles in Microsoft 365.
 1. Expand the Compliance center section and select **Roles**.
 1. On the **Compliance center roles** page, select a compliance role group you want to remove users from, then select **Edit role group** on the details pane.
 1. Select **Choose members** from the left navigation pane, then select **Edit**.
@@ -83,7 +89,7 @@ Complete the following steps to remove users from a compliance role group:
 
 Complete the following steps to create a custom role group:
 
-1. Sign into the permissions area of the Microsoft 365 compliance center using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
+1. Sign into the permissions area of the compliance portal using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
 1. On the **Permissions & roles** page, select **Compliance center > Roles**.
 1. On the **Compliance center roles** page, select **Create**.
 1. On the **Name your role group** page, enter a name for the custom role group in the **Name** field. The name of the role group cannot be changed after creation of the role group. If needed, enter a description for the custom role group in the **Description** field. Select **Next** to continue.
@@ -99,7 +105,7 @@ Complete the following steps to create a custom role group:
 
 Complete the following steps to update a custom role group:
 
-1. Sign into the permissions area of the Microsoft 365 compliance center using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
+1. Sign into the permissions area of the compliance portal using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
 1. On the **Permissions & roles** page, select **Compliance center > Roles**.
 1. On the **Compliance center roles** page and select the role group to update.
 1. On the details pane for the selected role group, select **Edit role group**.
@@ -115,7 +121,7 @@ Complete the following steps to update a custom role group:
 
 Complete the following steps to update a custom role group:
 
-1. Sign into the permissions area of the Microsoft 365 compliance center using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
+1. Sign into the permissions area of the compliance portal using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
 1. On the **Permissions & roles** page, select **Compliance center > Roles**.
 1. On the **Compliance center roles** page and select the role group to update.
 1. On the details pane for the selected role group, select **Delete role group**.

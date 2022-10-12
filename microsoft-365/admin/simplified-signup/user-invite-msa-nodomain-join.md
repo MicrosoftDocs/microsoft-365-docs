@@ -1,5 +1,5 @@
 ---
-title: "Accept an email invitation to a Microsoft 365 Business Standard subscription organization using an Outlook, Yahoo, Gmail or other account (User)"
+title: "Accept an email invitation to a Microsoft 365 for business subscription organization using an Outlook, Yahoo, Gmail or other account (User)"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -7,27 +7,31 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
 description: "Accept an email invitation to join a Microsoft 365 Business Standard organization using an Outlook, Yahoo, Gmail or other account."
 ---
 
-# Accept an email invitation to a Microsoft 365 Business Standard subscription organization using an Outlook, Yahoo, Gmail or other account (User)
+# Accept an email invitation to a Microsoft 365 for business subscription organization using an Outlook, Yahoo, Gmail or other account (User)
+
+> [!IMPORTANT]
+> These steps apply to Microsoft 365 Business Standard, Microsoft 365 Business Basic and Microsoft 365 Apps for business.
 
 When someone adds you to a Microsoft 365 for business organization, you'll get an email invitation with steps on how to join. In this scenario, you're joining an organization that doesn't have a different professional email for users. You'll sign in with your regular email account.
 
 > [!IMPORTANT]
-> If you’re an admin and you’re looking for steps on how to send a user an invite to your Microsoft 365 Business Standard subscription, check out [Invite users to Microsoft 365 Business Standard (Admin)](admin-invite-business-standard.md).
+> If you’re an admin and you’re looking for steps on how to send a user an invite to your Microsoft 365 for business subscription, check out [Invite users to Microsoft 365 for business (Admin)](admin-invite-business-standard.md).
 
-## Join a Microsoft 365 Business Standard organization using an Outlook, Yahoo, Gmail or other account
+## Join a Microsoft 365 for business organization using an Outlook, Yahoo, Gmail or other account
 
 Your email looks like this to set up your user account. When you get this email, you'll have to complete a few steps before you can start using your new user account.
 
-:::image type="content" source="../../media/ssu-accept-invite-msa.png" alt-text="Screenshot: Accept invite to join Microsoft 365 Business Standard":::
+:::image type="content" source="../../media/ssu-accept-invite-msa.png" alt-text="Screenshot: Accept invite to join Microsoft 365 for business organization":::
 
 1. From the invitation email, select **Accept**.
 
@@ -78,7 +82,7 @@ You will need to leave your previous Microsoft 365 Business subscription first. 
 
 ### I have a question about using this account. Who can I talk to?
 
-Contact our small business support experts who can help you upgrade your Microsoft 365 subscription. Learn more at [Get support](../../business-video/get-help-support.md).
+Contact our small business support experts who can help you upgrade your Microsoft 365 subscription. Learn more at [Get support](../get-help-support.md).
 
 ### The Gmail, Outlook, Yahoo or other email account that I’m using as a Microsoft Account already has some personal files in it. Can the technical administrator or business owner see these?
 

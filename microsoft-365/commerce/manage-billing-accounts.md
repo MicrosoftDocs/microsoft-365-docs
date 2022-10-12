@@ -2,28 +2,29 @@
 title: Understand billing accounts
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: tugu, jmueller
+ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration 
+ms.service: microsoft-365-business 
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn about billing accounts and how they're used to manage account settings, invoices, payment methods, and purchases."
-ms.date: 03/17/2021
+ms.date: 05/24/2022
 ---
 
-# Understand billing accounts
+# Understand your Microsoft billing accounts
 
 A billing account is created when you sign up to try or buy Microsoft products. You use your billing account to manage your account settings, invoices, payment methods, and purchases. You can have access to multiple billing accounts. For example, you signed up for Microsoft 365 directly, or you have access to your organization's Enterprise Agreement, Microsoft Product & Services Agreement or Microsoft Customer Agreement. For each of these scenarios, you would have a separate billing account.
 
@@ -51,7 +52,7 @@ The following table lists the important terms that you see in the **Billing acco
 | Billing profiles | A billing profile defines properties of your invoice, like who receives the bill, how the bill is delivered, payment terms, and a PO number. To distribute billing across your organization, you can create multiple billing profiles and identify the appropriate billing profile at the time of purchase. For more information about billing profiles and how you can use them to build more flexible billing options for your organization, [Understand billing profiles](billing-and-payments/manage-billing-profiles.md). |
 
 > [!NOTE]
-> If you need to change the **Sold-to** name or address, but don't see an **Edit** link, you must [contact support](../business-video/get-help-support.md) to change it. Requests for a **Sold-to** name change will require a credit check. Complete [this form](https://www.microsoft.com/download/details.aspx?id=102732), and be ready to share one of following documents with Microsoft when you contact support:
+> If you need to change the **Sold-to** name or address, but don't see an **Edit** link, you must [contact support](../admin/get-help-support.md) to change it. Requests for a **Sold-to** name change will require a credit check. Complete [this form](https://www.microsoft.com/download/details.aspx?id=102732), and be ready to share one of following documents with Microsoft when you contact support:
 >
 > - Government-issued document or registration letter
 > - Print out of the local company's registry
@@ -71,7 +72,8 @@ You can provide others with access to the billing account in the <a href="https:
 - **Billing account reader** &mdash; Can view accounts.
 
 > [!Note]
-> Billing account roles only apply to billing accounts, and don't apply to other Microsoft 365 admin center scenarios.
+> - Billing account roles only apply to billing accounts, and don't apply to other Microsoft 365 admin center scenarios.
+> - For billing accounts created inside of Microsoft 365 sign-up, new Global, Billing and Global Reader Administrators are automatically granted distinct levels of access. You can manage this access from the **Billing** > **Billing accounts** page by explicitly removing those users from the role assignment section at the bottom of the page.
 
 ## Related content
 

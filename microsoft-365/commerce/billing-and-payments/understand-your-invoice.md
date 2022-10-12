@@ -1,28 +1,29 @@
 ---
 title: Understand your bill or invoice
-f1.keywords:
-- CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - 'MACBillingBillsPaymentsInvoices'
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- ContentEngagementFY23
+- scotvorg
+- highpri 
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_billing
+- VSBFY23
+- AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn how to read and understand your bill or invoice for Microsoft business products."
-keywords: billing accounts, organization info, invoices
-ms.date: 05/04/2021
+ms.date: 08/08/2022
 ---
 
 # Understand your bill or invoice
@@ -37,6 +38,14 @@ To view and print your invoice:
 To learn more, see [View your bill or invoice](view-your-bill-or-invoice.md).
 
 If you only have a Microsoft 365 subscription, see [Understand your bill or invoice for Microsoft 365 for business](understand-your-invoice2.md).
+
+## How often and when am I billed?
+
+Depending on the billing frequency you chose when you bought your subscription, you receive an invoice monthly, every 3 months, every 6 months, or annually. The amount of time since the last invoice date is called the Billing Period and is shown on page one of the invoice, above the Billing Summary section. This time represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
+
+Starting on page two of the invoice, you see the charges grouped by product order. For Azure customers, the charges might be organized by invoice section.
+
+At the end of each billing period, you receive an email that says your new invoice is ready to view or download in the Microsoft 365 admin center. If you have more than one billing profile, you receive an invoice for each billing profile. Learn how to [find and view your bill or invoice](view-your-bill-or-invoice.md).
 
 ## Understand the invoice header
 
@@ -145,7 +154,7 @@ Azure prepayment is available as a payment method only for eligible Azure produc
 
 If you have questions or need help with your Azure credits, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">create a support request with Azure support</a>.
 
-If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](../../business-video/get-help-support.md).
+If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](../../admin/get-help-support.md).
 
 ## Related content
 

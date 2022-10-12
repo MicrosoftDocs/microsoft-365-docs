@@ -7,9 +7,10 @@ author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
@@ -32,9 +33,9 @@ While our goal is to deliver all commercial features and functionality to custom
 
 The following list includes the existing gaps between AIP for Office 365 operated by 21Vianet and our commercial offerings as of January 2021:
 
-- Information Rights Management (IRM) is supported only for Microsoft 365 Apps for enterprise (build 11731.10000 or higher). Office 2010, Office 2013, and other Office 2016 versions are not supported.
+- Active Directory Rights Management Services (AD RMS) encryption is supported only in Microsoft 365 Apps for enterprise (build 11731.10000 or later). Office Professional Plus doesn't support AD RMS.
 
-- Migration from Active Directory Rights Management Services (AD RMS) to AIP is currently not available.
+- Migration from AD RMS to AIP is currently not available.
   
 - Sharing of protected emails with users in the commercial cloud is supported.
   
@@ -47,6 +48,10 @@ The following list includes the existing gaps between AIP for Office 365 operate
 - The [Mobile Viewer](/azure/information-protection/rms-client/mobile-app-faq) is not supported by Azure China 21Vianet.
 
 - The AIP area of the Azure portal is unavailable to customers in China. Use [PowerShell commands](#step-6-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs) instead of performing actions in the portal, such as managing and running your content scan jobs.
+
+- AIP endpoints in Office 365 operated by 21Vianet are different than the endpoints required for other cloud services. Network connectivity from clients to the following endpoints is required:
+    - Download label and label policies: `*.protection.partner.outlook.cn`
+    - Azure Rights Management service: `*.aadrm.cn`
 
 ## Configure AIP for customers in China
 
@@ -70,18 +75,26 @@ For the encryption to work correctly, RMS must be enabled for the tenant.
 1. Check if RMS is enabled:
 
     1. Launch PowerShell as an administrator.
-    2. If the AIPService module isn't installed, run `Install-Module AipService`.
+    2. If the AIPService module isn't installed, run `Install-Module AipService`.
     3. Import the module using `Import-Module AipService`.
-    4. Connect to the service using `Connect-AipService -environmentname azurechinacloud`.
-    5. Run `(Get-AipServiceConfiguration).FunctionalState` and check if the state is `Enabled`.
+    4. Connect to the service using `Connect-AipService -environmentname azurechinacloud`.
+    5. Run `(Get-AipServiceConfiguration).FunctionalState` and check if the state is `Enabled`.
 
-2. If the functional state is `Disabled`, run `Enable-AipService`.
+2. If the functional state is `Disabled`, run `Enable-AipService`.
 
 ### Step 2: Add the Microsoft Information Protection Sync Service service principal
 
-The **Microsoft Information Protection Sync Service** service principal is not available in Azure China tenants by default, and is required for Azure Information Protection.
+The **Microsoft Information Protection Sync Service**  service principal is not available in Azure China tenants by default, and is required for Azure Information Protection. Create this service principal manually via the Azure Az PowerShell module.
 
-1. Create this service principal manually using the [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) cmdlet and the `870c4f2e-85b6-4d43-bdda-6ed9a579b725` application ID for the Microsoft Information Protection Sync Service. 
+1. If you don't have the Azure Az module installed, install it or use a resource where the Azure Az module comes preinstalled, such as [Azure Cloud Shell](/azure/cloud-shell/overview). For more information, see [Install the Azure Az PowerShell module](/powershell/azure/install-az-ps).
+
+1. Connect to the service using the [Connect-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) cmdlet and the `azurechinacloud` environment name:
+
+    ```powershell
+    Connect-azaccount -environmentname azurechinacloud
+    ```
+
+1. Create the **Microsoft Information Protection Sync Service**  service principal manually using the [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) cmdlet and the `870c4f2e-85b6-4d43-bdda-6ed9a579b725` application ID for the Microsoft Purview Information Protection Sync Service:
 
     ```powershell 
     New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725
@@ -100,19 +113,19 @@ Also, the assumption is that users will log in with a username based off the ten
 1. Get the RMS ID:
 
     1. Launch PowerShell as an administrator.
-    2. If the AIPService module isn't installed, run `Install-Module AipService`.
-    3. Connect to the service using `Connect-AipService -environmentname azurechinacloud`.
-    4. Run `(Get-AipServiceConfiguration).RightsManagementServiceId` to get the RMS ID.
+    2. If the AIPService module isn't installed, run `Install-Module AipService`.
+    3. Connect to the service using `Connect-AipService -environmentname azurechinacloud`.
+    4. Run `(Get-AipServiceConfiguration).RightsManagementServiceId` to get the RMS ID.
 
 2. Log in to your DNS provider, navigate to the DNS settings for the domain, and then add a new SRV record.
 
-    - Service = `_rmsredir`
-    - Protocol = `_http`
-    - Name = `_tcp`
-    - Target = `[GUID].rms.aadrm.cn` (where GUID is the RMS ID)
+    - Service = `_rmsredir`
+    - Protocol = `_http`
+    - Name = `_tcp`
+    - Target = `[GUID].rms.aadrm.cn` (where GUID is the RMS ID)
     - Priority, Weight, Seconds, TTL = default values
 
-3. Associate the custom domain with the tenant in the [Azure portal](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains). This will add an entry in DNS, which might take several minutes to get verified after you add the value to the DNS settings.
+3. Associate the custom domain with the tenant in the [Azure portal](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains). This will add an entry in DNS, which might take several minutes to get verified after you add the value to the DNS settings.
 
 4. Log in to the Microsoft 365 admin center with the corresponding global admin credentials and add the domain (for example, `contoso.cn`) for user creation. In the verification process, additional DNS changes might be required. Once verification is done, users can be created.
 
@@ -120,11 +133,11 @@ Also, the assumption is that users will log in with a username based off the ten
 
 Log in to your DNS provider, navigate to the DNS settings for the domain, and then add a new SRV record.
 
-- Service = `_rmsdisco`
-- Protocol = `_http`
-- Name = `_tcp`
-- Target = `api.aadrm.cn`
-- Port = `80`
+- Service = `_rmsdisco`
+- Protocol = `_http`
+- Name = `_tcp`
+- Target = `api.aadrm.cn`
+- Port = `80`
 - Priority, Weight, Seconds, TTL = default values
 
 

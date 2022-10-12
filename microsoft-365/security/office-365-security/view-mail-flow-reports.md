@@ -15,16 +15,16 @@ search.appverid:
   - MOE150
 ms.assetid: 
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Admins can learn about the mail flow reports that are available in the Reports dashboard in the Security & Compliance Center.
-ms.custom: 
-ms.technology: mdo
-ms.prod: m365-security
+ms.custom:
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # View mail flow reports in the Reports dashboard in Security & Compliance Center
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -32,16 +32,17 @@ ms.prod: m365-security
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Most of the reports in this article are available in the Microsoft 365 Defender portal or the Exchange admin center (EAC). For more information, see the following topics:
+>
+> Most of the reports in this article are also available in the Microsoft 365 Defender portal or the Exchange admin center (EAC). For more information, see the following topics:
 >
 > - [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 > - [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md)
 
 In addition to the mail flow reports that are available in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center, a variety of additional mail flow reports are available in the Reports dashboard to help you monitor your Microsoft 365 organization.
 
-If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the [Security & Compliance Center](https://protection.office.com) by going to **Reports** \> **Dashboard**. To go directly to the Reports dashboard, open <https://protection.office.com/insightdashboard>.
+If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the Security & Compliance Center at <https://protection.office.com> by going to **Reports** \> **Dashboard**. To go directly to the Reports dashboard, open <https://protection.office.com/insightdashboard>.
 
-![Reports dashboard in the Security & Compliance Center.](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+:::image type="content" source="../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png" alt-text="The Reports dashboard in the Security & Compliance Center" lightbox="../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png":::
 
 ## Connector report
 
@@ -52,70 +53,12 @@ If you have the [necessary permissions](#what-permissions-are-needed-to-view-the
 
 The **Exchange transport rule report** shows the effect of mail flow rules (also known as transport rules) on incoming and outgoing messages in your organization.
 
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Exchange Transport rule**. To go directly to the report, open <https://protection.office.com/reportv2?id=ETRRuleReport>.
+To view the report, open the Security & Compliance Center at <https://protection.office.com>, go to **Reports** \> **Dashboard** and select **Exchange Transport rule**. To go directly to the report, open <https://security.microsoft.com/reports/ETRRuleReport>.
 
-![Exchange transport rule widget in the Reports dashboard.](../../media/transport-rule-report-widget.png)
+:::image type="content" source="../../media/scc-transport-rule-report-widget.png" alt-text="The Exchange transport rule widget in the Reports dashboard" lightbox="../../media/scc-transport-rule-report-widget.png":::
 
-### Report view for the Exchange transport rule report
-
-The following charts are available in report view:
-
-- **View data by: Exchange transport rules** \> **Break down by: Direction**: This chart shows the number of **Inbound** and **Outbound** messages that were affected by transport rules.
-
-- **View data by: Exchange transport rules** \> **Break down by: Severity**: This chart shows the number of **High severity** and **Medium severity**, and **Low severity** messages. You set the severity level as an action in the rule (**Audit this rule with severity level** or _SetAuditSeverity_). For more information, see [Mail flow rule actions in Exchange Online](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
-
-- **View data by: DLP Exchange transport rules** \> **Break down by: Direction**: This chart shows the number of **Inbound** and **Outbound** messages that were affected by data loss prevention (DLP) transport rules. You can further refine the chart by selecting on of the following options:
-
-  - **Show data for: All DLP transport rules**
-  - **Show data for: Compromised users**
-  - **Show data for: Low volume of content detected U.S. Patriot Act**
-
-- **View data by: DLP Exchange transport rules** \> **Break down by: Direction**: This view shows the number of **High severity** and **Medium severity**, and **Low severity** messages that were affected by DLP transport rules. You can further refine the chart by selecting on of the following options:
-
-  - **Show data for: All DLP transport rules**
-  - **Show data for: Compromised users**
-  - **Show data for: Low volume of content detected U.S. Patriot Act**
-
-If you click **Filters** in a report view, you can modify the results with the following filters::
-
-- **Start date** and **End date**
-- Direction values
-- Severity values
-
-![Report view in the Exchange transport rule report.](../../media/transport-rule-report-report-view.png)
-
-### Details table view for the Exchange transport rule report
-
-If you click **View details table**, the information that's shown depends on the chart you were looking at:
-
-- **View data by: Exchange Transport rules**:
-
-  - **Date**
-  - **Transport rule**
-  - **Subject**
-  - **Sender address**
-  - **Recipient address**
-  - **Severity**
-  - **Direction**
-
-- **View data by: DLP Exchange transport rules**:
-
-  - **Date**
-  - **DLP policy**
-  - **Transport rule**
-  - **Subject**
-  - **Sender address**
-  - **Recipient address**
-  - **Severity**
-  - **Direction**
-
-If you click **Filters** in a details table view, you can modify the results with the following filters:
-
-- **Start date** and **End date**
-- Direction values
-- Severity values
-
-To go back to the report view, click **View report**.
+> [!NOTE]
+> The **Exchange transport rule report** is now available in the EAC. For more information, see [Exchange transport rule report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
 
 ## Forwarding report
 
@@ -125,209 +68,13 @@ To go back to the report view, click **View report**.
 ## Mailflow status report
 
 The **Mailflow status report** is similar to the [Sent and received email report](#sent-and-received-email-report), with additional information about email allowed or blocked on the edge. This is the only report that contains edge protection information, and shows just how much email is blocked before being allowed into the service for evaluation by Exchange Online Protection (EOP). It's important to understand that if a message is sent to five recipients we count it as five different messages and not one message.
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Mailflow status report**. To go directly to the **Mail flow status report**, open <https://protection.office.com/mailflowStatusReport>.
 
-![Mailflow status report widget in the Reports dashboard.](../../media/mail-flow-status-report-widget.png)
+To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Mailflow status report**. To go directly to the **Mail flow status report**, open <https://security.microsoft.com/reports/mailflowStatusReport>.
 
-### Type view for the Mailflow status report
+:::image type="content" source="../../media/scc-mail-flow-status-report-widget.png" alt-text="The Mailflow status report widget in the Reports dashboard" lightbox="../../media/scc-mail-flow-status-report-widget.png":::
 
-When you open the report, the **Type** tab is selected by default. By default, this view contains a chart and a data table that's configured with the following filters:
-
-- **Date**: The last 7 days.
-- **Direction**:
-
-  - **Inbound**
-  - **Outbound**
-  - **Intra-org**: this count is for messages within a tenant i.e sender abc@domain.com sends to recipient xyz@domain.com  (counted separately from **Inbound** and **Outbound**)
-
-- **Type**:
-
-  - **Good mail**
-  - **Malware**
-  - **Spam**
-  - **Edge protection**
-  - **Rule messages**
-  - **Phishing email**
-
-The chart is organized by the **Type** values.
-
-You can change these filters by clicking **Filter** or by clicking a value in the chart legend.
-
-The data table contains the following information:
-
-- **Direction**
-- **Type**
-- **24 hours**
-- **3 days**
-- **7 days**
-- **15 days**
-- **30 days**
-
-If you click **Choose a category for more details**, you can select from the following values:
-
-- **Phishing email**: This selection takes you to the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
-- **Malware in email**: This selection takes you to the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
-- **Spam detections**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
-- **Edge blocked spam**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
-
-**Export**:
-
-For the detail view, you can only export data for one day. So, if you want to export data for 7 days, you need to do 7 different export actions.
-
-Each exported .csv file is limited to 150,000 rows. If the data for that day contains more than 150,000 rows, then multiple .csv files will be created.
-
-![Type view in the Mailflow status report.](../../media/mail-flow-status-report-type-view.png)
-
-### Direction view for the Mailflow status report
-
-If you click the **Direction** tab, the same default filters from the **Type** view are used.
-
-The chart is organized by **Direction** values.
-
-You can change these filters by clicking **Filter** or by clicking a value in the chart legend. The same filters from the **Type** view are used.
-
-The data table contains same information from the **Type** view.
-
-The **Choose a category for more details** available selections and behavior are the same as the **Type** view.
-
-**Export**:
-
-For the detail view, you can only export data for one day. So, if you want to export data for 7 days, you need to do 7 different export actions.
-
-Each exported .csv file is limited to 150,000 rows. If the data for that day contains more than 150,000 rows, then multiple .csv files will be created.
-
-![Direction view in the Mailflow status report.](../../media/mail-flow-status-report-direction-view.png)
-
-### Funnel view for the Mailflow status report
-
-The **Funnel** view shows you how Microsoft's email threat protection features filter incoming and outgoing email in your organization. It provides details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam, and anti-spoofing affect this count.
-
-If you click the **Funnel** tab, by default, this view contains a chart and a data table that's configured with the following filters:
-
-- **Date**: The last 7 days.
-
-- **Direction**:
-
-  - **Inbound**
-  - **Outbound**
-  - **Intra-org**: This count is for messages sent within a tenant; i.e, sender abc@domain.com sends to recipient xyz@domain.com (counted separately from Inbound and Outbound).
-
-The aggregate view and data table view allow for 90 days of filtering.
-
-If you click **Filter**, you can filter both the chart and the data table.
-
-This chart shows the email count organized by:
-
-- **Total email**
-- **Email after edge protection**
-- **Email after anti-malware, file reputation, file type block**
-- **Email after anti-phish, URL reputation, brand impersonation, anti-spoof**
-- **Email after anti-spam, bulk mail filtering**
-- **Email after user and domain impersonation**<sup>1</sup>
-- **Email after file and URL detonation**<sup>1</sup>
-- **Email detected as benign after post-delivery protection (URL click time protection)**
-
-<sup>1</sup> Defender for Office 365 only
-
-To view the email filtered by EOP or Defender for Office 365 separately, click on the value in the chart legend.
-
-The data table contains the following information, shown in descending date order:
-
-- **Date**
-- **Total email**
-- **Edge protection**
-- **Anti-malware, file reputation, file type block**:
-  - **File reputation**: Messages filtered due to identification of an attached file by other Microsoft customers.
-  - **File type block**: Messages filtered due to the type of malicious file identified in the message.
-- **Anti-phish, URL reputation, Brand impersonation, anti-spoof**:
-  - **URL reputation**: Messages filtered due to the identification of the URL by other Microsoft customers.
-  - **Brand impersonation**: Messages filtered due to the message coming from well-known brand impersonating senders.
-  - **Anti-spoof**: Messages filtered due to the message attempting to spoof a domain that the recipient belongs to, or a domain that the message sender doesn't own.
-- **Anti-spam, bulk mail filtering**:
-  - **Bulk mail filtering**: Messages filtered due to an attempt to deliver bulk mail to its recipients.
-- **User and domain impersonation (Defender for Office 365)**:
-  - **User impersonation**: Messages filtered due to an attempt to impersonate a user (message sender) that's defined in the impersonation protection settings of an anti-phishing policy.
-  - **Domain impersonation**: Messages filtered due to an attempt to impersonate a domain that's defined in the impersonation protection settings of an anti-phishing policy.
-- **File and URL detonation (Defender for Office 365)**:
-  - **File detonation**: Messages filtered by a Safe Attachments policy.
-  - **URL detonation**: Message filtered by a Safe Links policy.
-- **Post-delivery protection and ZAP (ATP), or ZAP (EOP)**: ZAP indicates zero hour auto-purge.
-
-If you select a row in the data table, a further breakdown of the email counts are shown in the flyout.
-
-**Export**:
-
-After you click **Export** under **Options**, you can select one of the following values:
-
-- **Summary (with data for last 90 days at most)**
-- **Details (with data for last 30 days at most)**
-
-Under **Date**, choose a range, and then click **Apply**. Data for the current filters will be exported to a .csv file.
-
-Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, then multiple .csv files will be created.
-
- ![Funnel view in the Mailflow status report.](../../media/mail-flow-status-report-funnel-view.png)
-
-### Tech view for the Mailflow status report
-
-The **Tech view** is similar to the **Funnel** view, providing more granular details for the configured threat protections features. From the chart, you can see how messages are categorized at the different stages of threat protection.
-
-If you click the **Tech view** tab, by default, this view contains a chart and a data table that's configured with the following filters:
-
-- **Date**: The last 7 days.
-
-- **Direction**:
-
-  - **Inbound**
-  - **Outbound**
-  - **Intra-org**: this count is for messages within a tenant i.e sender abc@domain.com sends to recipient xyz@domain.com (counted separately from Inbound and Outbound)
-
-The aggregate view and data table view allow for 90 days of filtering.
-
-If you click **Filter**, you can filter both the chart and the data table.
-
-This chart shows messages organized into the following categories:
-
-- **Total email**
-- **Edge allow** and **Edge filtered**
-- **Not malware**, **Safe Attachments detection**<sup>\*</sup>, **Anti-malware engine detection**, and **Rule messages**
-- **Not phish**, **DMARC failure**, **Impersonation detection**, **Spoof detection**, and **Phish detection**
-- **No detection with URL detonation** and **URL detonation detection**<sup>\*</sup>
-- **Not spam** and  **Spam**
-- **Non-malicious email**, **Safe Links detection**<sup>\*</sup>, and **ZAP**
-
-<sup>\*</sup> Defender for Office 365
-
-When you hover over a category in the chart, you can see the number of messages in that category.
-
-The data table contains the following information, shown in descending date order:
-
-- **Date**
-- **Total email**
-- **Edge filtered**
-- **Anti-malware engine, Safe Attachments, rule filtered**:
-  - **Rule filtered**: Messages filtered due to  mail flow rules (also known as transport rules).
-- **DMARC, impersonation, spoof, phish filtered**:
-  - **DMARC**: Messages filtered due to the message failing its DMARC authentication check.
-- **URL detonation detection**
-- **Anti-spam filtered**
-- **ZAP removed**
-- **Detection by Safe Links**
-
-If you select a row in the data table, a further breakdown of the email counts are shown in the flyout.
-
-**Export**:
-
-On clicking **Export**, under **Options** you can select one of the following values:
-
-- **Summary (with data for last 90 days at most)**
-- **Details (with data for last 30 days at most)**
-
-Under **Date**, choose a range, and then click **Apply**. Data for the current filters will be exported to a .csv file.
-
-Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, then multiple .csv files will be created.
-
- ![Tech view in the Mailflow status report.](../../media/mail-flow-status-report-Tech-view.png)
+> [!NOTE]
+> Clicking on the widget for this report in the Security & Compliance Center (protection.office.com) now takes you to the full report in the Microsoft 365 Defender portal (security.microsoft.com). For details about the report, see [Mailflow status report](view-email-security-reports.md#mailflow-status-report).
 
 ## Sent and received email report
 
@@ -336,62 +83,17 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 
 ## Top senders and recipients report
 
-The **Top senders and recipients** report is a pie chart showing your top email senders and recipients.
+The **Top senders and recipients** shows the top messages senders in your organization, as well as the top recipients for messages that were detected by EOP and Defender for Office 365 protection features.
 
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Top senders and recipients**. To go directly to the report, open <https://protection.office.com/reportv2?id=TopSenderRecipientsATP>.
+To view the report, open the Security & Compliance Center at <https://protection.office.com>, go to **Reports** \> **Dashboard** and select **Top senders and recipients**. To go directly to the report, open one of the following URLs:
 
-![Top senders and recipients widget in the Reports dashboard.](../../media/top-senders-and-recipients-widget.png)
+- Defender for Office 365: <https://protection.office.com/TopSenderRecipientsATP>
+- EOP: <https://protection.office.com/TopSenderRecipients>
 
-### Report view for the Top senders and recipient report
+:::image type="content" source="../../media/scc-top-senders-and-recipients-widget.png" alt-text="The Top senders and recipients widget in the Reports dashboard" lightbox="../../media/scc-top-senders-and-recipients-widget.png":::
 
-The following charts are available in the report view:
-
-- **Show data for \> Top mail senders**
-- **Show data for \> Top mail recipients**
-- **Show data for \> Top spam recipients**
-- **Show data for \> Top malware recipients** (EOP)
-- **Show data for \> Top malware recipients (Defender for Office 365)**
-
-The composition of the pie chart changes based on these selections.
-
-When you hover over a wedge in the pie chart, you can see a count of messages sent or received.
-
-If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
-
-![Pie chart in Report view in the Top senders and recipients report.](../../media/top-senders-and-recipients-report-view.png)
-
-### Details table view for the Top senders and recipient report
-
-If you click **View details table**, the information that's shown depends on the chart you were looking at:
-
-- **Show data for \> Top mail senders**
-
-  - **Top mail senders**
-  - **Count**
-
-- **Show data for \> Top mail recipients**
-
-  - **Top mail recipients**
-  - **Count**
-
-- **Show data for \> Top spam recipients**
-
-  - **Top spam recipients**
-  - **Count**
-
-- **Show data for \> Top malware recipients** (EOP)
-
-  - **Top malware recipients**
-  - **Count**
-
-- **Show data for \> Top malware recipients (Defender for Office 365)**
-
-  - **Top malware recipients (Defender for Office 365)**
-  - **Count**
-
-If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.
-
-To go back to the report view, click **View report**.
+> [!NOTE]
+> Although clicking on the widget for this report in the Security & Compliance Center takes you to a protection.office.com page, the page content is from the Microsoft 365 Defender portal. For details about the report, see [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report).
 
 ## What permissions are needed to view these reports?
 
@@ -407,12 +109,3 @@ For more information, see [Permissions in the Security & Compliance Center](perm
 > [!NOTE]
 > Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
-## Related topics
-
-[Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
-
-[Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md)
-
-[View email security reports in the Security & Compliance Center](view-email-security-reports.md)
-
-[View reports for Microsoft Defender for Office 365](view-reports-for-mdo.md)

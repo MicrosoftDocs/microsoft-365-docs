@@ -2,8 +2,8 @@
 title: Microsoft Defender for Endpoint API release notes
 description: Release notes for updates made to the Microsoft Defender for Endpoint set of APIs.
 keywords: Microsoft Defender for Endpoint API release notes, mde, APIs, Microsoft Defender for Endpoint API, updates, notes, release
-search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-MS.technology: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint API release notes
@@ -36,6 +38,10 @@ The following information lists the updates made to the Microsoft Defender for E
 > ```
 
 ## Release notes - newest to oldest (dd.mm.yyyy)
+
+### 08.08.2022
+
+- Added new Export Device Health API method - GET /api/public/avdeviceshealth [Export device health methods and properties](device-health-api-methods-properties.md)
 
 ### 06.10.2021
 

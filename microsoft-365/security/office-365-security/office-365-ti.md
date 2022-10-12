@@ -1,6 +1,6 @@
 ---
-title: Threat investigation & response capabilities - Microsoft Defender for Office 365 Plan 2
-f1.keywords: 
+title: Threat investigation & response capabilities in Microsoft Defender for Office 365
+f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: msfttracyp
@@ -8,43 +8,40 @@ manager: dansimp
 ms.date: 12/09/2019
 audience: Admin
 ms.topic: overview
-
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
   - MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
-ms.collection: 
-  - M365-security-compliance
+ms.collection:
+  - m365-security
   - m365initiative-defender-office365
-ms.custom: 
+ms.custom:
   - seo-marvel-apr2020
-  - admindeeplinkDEFENDER
 description: Learn about threat investigation and response capabilities in Microsoft Defender for Office 365 Plan.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Threat investigation and response
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies To**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-
 Threat investigation and response capabilities in [Microsoft Defender for Office 365](defender-for-office-365.md) help security analysts and administrators protect their organization's Microsoft 365 for business users by:
 
-- Making it easy to identify, monitor, and understand cyberattacks
-- Helping to quickly address threats in Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams
-- Providing insights and knowledge to help security operations prevent cyberattacks against their organization
-- Employing [automated investigation and response in Office 365](automated-investigation-response-office.md) for critical email-based threats
+- Making it easy to identify, monitor, and understand cyberattacks.
+- Helping to quickly address threats in Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams.
+- Providing insights and knowledge to help security operations prevent cyberattacks against their organization.
+- Employing [automated investigation and response in Office 365](automated-investigation-response-office.md) for critical email-based threats.
 
 Threat investigation and response capabilities provide insights into threats and related response actions that are available in the Microsoft 365 Defender portal. These insights can help your organization's security team protect users from email- or file-based attacks. The capabilities help monitor signals and gather data from multiple sources, such as user activity, authentication, email, compromised PCs, and security incidents. Business decision makers and your security operations team can use this information to understand and respond to threats against your organization and protect your intellectual property.
 
 ## Get acquainted with threat investigation and response tools
 
-Threat investigation and response capabilities surface in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, as a set of tools and response workflows, including the following:
+Threat investigation and response capabilities in the Microsoft 365 Defender portal at <https://security.microsoft.com> are a set of tools and response workflows that include:
 
 - [Explorer](#explorer)
 - [Incidents](#incidents)
@@ -55,25 +52,35 @@ Threat investigation and response capabilities surface in the <a href="https://g
 
 Use [Explorer (and real-time detections)](threat-explorer.md) to analyze threats, see the volume of attacks over time, and analyze data by threat families, attacker infrastructure, and more. Explorer (also referred to as Threat Explorer) is the starting place for any security analyst's investigation workflow.
 
-![Threat explorer.](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
+:::image type="content" source="../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png" alt-text="The Threat explorer page" lightbox="../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png":::
 
-To view and use this report, in the Microsoft 365 Defender portal, go to **Email & collaboration** > **Explorer**.
+To view and use this report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
+
+## Office 365 Threat Intelligence connection
+
+This feature is only available if you have an active Office 365 E5 subscription or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
+
+When you turn on this feature, you'll be able to incorporate data from Microsoft Defender for Office 365 into Microsoft 365 Defender to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
+
+> [!NOTE]
+> You'll need to have the appropriate license to enable this feature.
+
+To receive contextual device integration in Office 365 Threat Intelligence, you'll need to enable the Defender for Endpoint settings in the Security & Compliance dashboard.
 
 ### Incidents
 
 Use the Incidents list (this is also called Investigations) to see a list of in flight security incidents. Incidents are used to track threats such as suspicious email messages, and to conduct further investigation and remediation.
 
-![List of current Threat Incidents in Office 365.](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
+:::image type="content" source="../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png" alt-text="The list of current Threat Incidents in Office 365" lightbox="../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png":::
 
-To view the list of current incidents for your organization, in the Microsoft 365 Defender portal, go to **Incidents & alerts** > **Incidents**.
+To view the list of current incidents for your organization in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Incidents & alerts** \> **Incidents**. Or, to go directly to the **Incidents** page, use <https://security.microsoft.com/incidents>.
 
-![In the Security & Compliance Center, choose Threat management \> Review.](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
 ### Attack simulation training
 
 Use Attack simulation training to set up and run realistic cyberattacks in your organization, and identify vulnerable people before a real cyberattack affects your business. To learn more, see [Simulate a phishing attack](attack-simulation-training.md).
 
-To view and use this feature in the Microsoft 365 Defender portal, go to **Email & collaboration** > **Attack simulation training**.
+To view and use this feature in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** > **Attack simulation training**. Or, to go directly to the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator?viewid=overview>.
 
 ### Automated investigation and response
 
@@ -83,7 +90,7 @@ Use automated investigation and response (AIR) capabilities to save time and eff
 
 As part of the Microsoft Defender for Office 365 Plan 2 offering, security analysts can review details about a known threat. This is useful to determine whether there are additional preventative measures/steps that can be taken to keep users safe.
 
-![Security Trends showing information about recent threats.](../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png)
+:::image type="content" source="../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png" alt-text="The Security trends pane showing information about recent threats" lightbox="../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png":::
 
 ## How do we get these capabilities?
 
@@ -99,18 +106,13 @@ Microsoft Defender for Office 365 uses role-based access control. Permissions ar
 > - [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md)
 > - [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)
 
-<br>
-
-****
-
 |Activity|Roles and permissions|
 |---|---|
-|Use the Threat & Vulnerability Management dashboard (or the new [Security dashboard](security-dashboard.md)) <p> View information about recent or current threats|One of the following: <ul><li>**Global Administrator**</li><li>**Security Administrator**</li><li>**Security Reader**</li></ul> <p> These roles can be assigned in either Azure Active Directory (<https://portal.azure.com>) or the Microsoft 365 admin center (<https://admin.microsoft.com>).|
+|Use the Microsoft Defender Vulnerability Management dashboard <p> View information about recent or current threats|One of the following: <ul><li>**Global Administrator**</li><li>**Security Administrator**</li><li>**Security Reader**</li></ul> <p> These roles can be assigned in either Azure Active Directory (<https://portal.azure.com>) or the Microsoft 365 admin center (<https://admin.microsoft.com>).|
 |Use [Explorer (and real-time detections)](threat-explorer.md) to analyze threats|One of the following: <ul><li>**Global Administrator**</li><li>**Security Administrator**</li><li>**Security Reader**</li></ul> <p> These roles can be assigned in either Azure Active Directory (<https://portal.azure.com>) or the Microsoft 365 admin center (<https://admin.microsoft.com>).|
 |View Incidents (also referred to as Investigations) <p> Add email messages to an incident|One of the following: <ul><li>**Global Administrator**</li><li>**Security Administrator**</li><li>**Security Reader**</li></ul> <p> These roles can be assigned in either Azure Active Directory (<https://portal.azure.com>) or the Microsoft 365 admin center (<https://admin.microsoft.com>).|
 |Trigger email actions in an incident <p> Find and delete suspicious email messages|One of the following: <ul><li>**Global Administrator**</li><li>**Security Administrator** plus the **Search and Purge** role</li></ul> <p> The **Global Administrator** and **Security Administrator** roles can be assigned in either Azure Active Directory (<https://portal.azure.com>) or the Microsoft 365 admin center (<https://admin.microsoft.com>). <p> The **Search and Purge** role must be assigned in the **Email & collaboration roles** in the Microsoft 36 Defender portal (<https://security.microsoft.com>).|
 |Integrate Microsoft Defender for Office 365 Plan 2 with Microsoft Defender for Endpoint <p> Integrate Microsoft Defender for Office 365 Plan 2 with a SIEM server|Either the **Global Administrator** or the **Security Administrator** role assigned in either Azure Active Directory (<https://portal.azure.com>) or the Microsoft 365 admin center (<https://admin.microsoft.com>). <p> --- **plus** --- <p> An appropriate role assigned in additional applications (such as [Microsoft Defender Security Center](/windows/security/threat-protection/microsoft-defender-atp/user-roles) or your SIEM server).|
-|
 
 ## Next steps
 

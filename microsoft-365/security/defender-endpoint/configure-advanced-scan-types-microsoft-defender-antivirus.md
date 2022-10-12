@@ -1,9 +1,9 @@
 ---
 title: Configure scanning options for Microsoft Defender Antivirus
-description: You can configure Microsoft Defender AV to scan email storage files, back-up or reparse points, network files, and archived files (such as .zip files).
+description: You can configure Microsoft Defender Antivirus to scan email storage files, back-up or reparse points, network files, and archived files (such as .zip files).
 keywords: advanced scans, scanning, email, archive, zip, rar, archive, reparse scanning
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,10 +12,13 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.technology: mde
-ms.date: 10/19/2021
-ms.collection: M365-security-compliance
+ms.subservice: mde
+ms.date: 12/03/2021
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: how-to
+search.appverid: met150
 ---
 
 # Configure Microsoft Defender Antivirus scanning options
@@ -23,6 +26,10 @@ ms.topic: how-to
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows 
 
 ## Use Microsoft Intune to configure scanning options
 
@@ -33,6 +40,11 @@ For more information, see [Configure device restriction settings in Microsoft In
 For details on configuring Microsoft Endpoint Manager (current branch), see [How to create and deploy antimalware policies: Scan settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).
 
 ## Use Group Policy to configure scanning options
+
+> [!TIP]
+> Download the Group Policy Reference Spreadsheet, which lists the policy settings for computer and user configurations that are included in the Administrative template files delivered with for Windows. You can configure refer to the spreadsheet when you edit Group Policy Objects. <br/><br/> Here are the most recent versions:
+> - [Group Policy Settings Reference Spreadsheet for Windows 10 May 2020 Update (2004)](https://www.microsoft.com/download/details.aspx?id=101451)
+> - [Group Policy Settings Reference Spreadsheet for Windows 11 October 2021 Update (21H2)](https://www.microsoft.com/download/details.aspx?id=103506)
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
@@ -51,6 +63,7 @@ For details on configuring Microsoft Endpoint Manager (current branch), see [How
 |Policy item and location|Default setting (if not configured)|PowerShell `Set-MpPreference` parameter or WMI property for `MSFT_MpPreference` class|
 |---|---|---|
 |Email scanning <p> **Scan** \> **Turn on e-mail scanning**<p>See [Email scanning limitations](#email-scanning-limitations) (in this article)|Disabled|`-DisableEmailScanning`|
+| Script scanning | Enabled  | This policy setting allows you to configure script scanning. If you enable or do not configure this setting, script scanning will be enabled. <p>See [Defender/AllowScriptScanning](/windows/client-management/mdm/policy-csp-defender)  | 
 |Scan [reparse points](/windows/win32/fileio/reparse-points) <p> **Scan** \> **Turn on reparse point scanning**|Disabled|Not available <p>See [Reparse points](/windows/win32/fileio/reparse-points)|
 |Scan mapped network drives <p> **Scan** \> **Run full scan on mapped network drives**|Disabled|`-DisableScanningMappedNetworkDrivesForFullScan`|
 |Scan archive files (such as .zip or .rar files). <p> **Scan** \> **Scan archive files**|Enabled|`-DisableArchiveScanning` <p>The [extensions exclusion list](configure-extension-file-exclusions-microsoft-defender-antivirus.md) will take precedence over this setting.|
@@ -94,6 +107,16 @@ If Microsoft Defender Antivirus detects a threat inside an email message, it wil
 ## Scanning mapped network drives
 
 On any OS, only the network drives that are mapped at system level, are scanned. User-level mapped network drives aren't scanned. User-level mapped network drives are those that a user maps in their session manually and using their own credentials.
+
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 ## See also
 

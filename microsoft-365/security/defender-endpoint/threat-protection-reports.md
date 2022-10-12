@@ -2,7 +2,7 @@
 title: Threat protection report in Microsoft Defender for Endpoint
 description: Track alert detections, categories, and severity using the threat protection report
 keywords: alert detection, source, alert by category, alert severity, alert classification, determination
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Threat protection report in Microsoft Defender for Endpoint
@@ -31,7 +34,7 @@ The threat protection report provides high-level information about alerts genera
 
 The dashboard is structured into two sections:
 
-![Image of the threat protection report.](images/threat-protection-reports.png)
+:::image type="content" source="images/threat-protection-reports.png" alt-text="The threat protection report" lightbox="images/threat-protection-reports.png":::
 
 Section|Description
 ---|---
@@ -85,4 +88,4 @@ For example, to show data about high-severity alerts only:
 
 ## Related topic
 
-- [Device health and compliance report](machine-reports.md)
+- [Device health and compliance report](device-health-reports.md)

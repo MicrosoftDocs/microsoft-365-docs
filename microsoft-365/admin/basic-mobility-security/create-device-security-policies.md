@@ -7,15 +7,17 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
 search.appverid:
 - MET150
 description: "Use Basic Mobility and Security to create device policies that protect your organization information."
@@ -36,17 +38,17 @@ You can use Basic Mobility and Security to create device policies that help prot
 - Before you deploy policies, let your organization know the potential impacts of enrolling a device in Basic Mobility and Security. Depending on how you set up the policies, noncompliant devices can be blocked from accessing Microsoft 365 and data, including installed applications, photos, and personal information on an enrolled device, and data can be deleted.
 
 > [!NOTE]
-> Policies and access rules created in Basic Mobility and Security for Microsoft 365 Business Standard override Exchange ActiveSync mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in Basic Mobility and Security for Microsoft 365 Business Standard, any Exchange ActiveSync mobile device mailbox policy or device access rule applied to the device is ignored. To learn more about Exchange ActiveSync, see [Exchange ActiveSync in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
+> Policies and access rules created in Basic Mobility and Security for Microsoft 365 Business Standard override Exchange ActiveSync mobile device mailbox policies and device access rules created in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. After a device is enrolled in Basic Mobility and Security for Microsoft 365 Business Standard, any Exchange ActiveSync mobile device mailbox policy or device access rule applied to the device is ignored. To learn more about Exchange ActiveSync, see [Exchange ActiveSync in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
 
 ## Step 1: Create a device policy and deploy to a test group
 
 Before you can start, make sure you have activated and set up Basic Mobility and Security. For instructions, see [Overview of Basic Mobility and Security](overview.md).
 
-1. From your browser, type <https://protection.office.com/devicev2>.
+1. From your browser, type <https://compliance.microsoft.com/basicmobilityandsecurity>.
 
 2. Select **Create a policy**.
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Basic Mobility and Security policy settings.":::
+   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="Basic Mobility and Security policy settings.":::
 
 3. On the **Policy settings** page, specify the requirements you want applied to mobile devices in your organization.
 
@@ -62,7 +64,7 @@ The policy is pushed to the device of each user the policy applies to the next t
 
 After you’ve created a device policy, check that the policy works as you expect before you deploy it to your organization.
 
-1. From your browser, type [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
+1. From your browser, type [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
 2. Select **View the list of managed devices**.
 3. Check the status of user devices that have the policy applied. You want the **State** of devices to be **Managed.**
 4. You can also do a full or selective wipe on a device by clicking on **Factory reset** or **Remove company data** from **Manage** button after selecting a device. For instructions, see [Wipe a mobile device in Microsoft 365.
@@ -71,7 +73,7 @@ After you’ve created a device policy, check that the policy works as you expec
 
 After you’ve created a device policy and verified that it works as expected, deploy it to your organization.
 
-1. From your browser type: [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
+1. From your browser type: [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
 2. Select the policy you want to deploy, and choose **Edit** next to **Groups applied to.**
 3. Search for a group to add and click on **Select**.
 4. Select **Close** and **Change setting.**
@@ -85,21 +87,21 @@ To help secure your organization information, you should block app access to Mic
 
 **To block app access:**
 
-1. From your browser, type [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
+1. From your browser, type [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
 2. Select **Manage organization-wide device access settings**.
-3. To block unsupported devices, choose **Block** under **If a device isn't supported by Basic Mobility and Security for Microsoft 365**, and then select **Save**.
+3. To block unsupported devices, choose **Access** under **If a device isn't supported by Basic Mobility and Security for Microsoft 365**, and then select **Save**.
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Basic Mobility and Security block access option.":::
+   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-access.png" alt-text="Basic Mobility and Security block access option.":::
 
 ## Step 5: Choose security groups to be excluded from conditional access checks
 
 If you want to exclude some people from conditional access checks on their mobile devices and you've created one or more security groups for those people, add the security groups here. The people in these groups won't have any policies enforced for their supported mobile devices. This is the recommended option if you no longer want to use Basic Mobility and Security in your organization.
 
-1. From your browser, type [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
+1. From your browser, type [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
 
 2. Select **Manage organization-wide device access settings**.
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Basic Mobility and Security create a policy option.":::
+   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="Basic Mobility and Security create a policy option.":::
 
 3. Select **Add** to add the security group that has users you want to exclude from having blocked access to Microsoft 365. When a user has been added to this list, they can access Microsoft 365 email when they are using an unsupported device.
 
@@ -109,13 +111,13 @@ If you want to exclude some people from conditional access checks on their mobil
 
 6. On the **Organization-wide device access settings** panel, choose **Save**.
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-8-allow-access.png" alt-text="Basic Mobility and Security allow access option.":::
+   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-groups.png" alt-text="Basic Mobility and Security allow access option.":::
 
 ## What is the impact of security policies on different device types?
 
 When you apply a policy to user devices, the impact on each device varies somewhat among device types. See the following table for examples of the impact of policies on different devices.
 
-|**Security Policy**|**Android 4 and later**|**Samsung KNOX**|**iOS 6 and later**|**Notes**|
+|**Security Policy**|**Android**|**Samsung KNOX**|**iOS**|**Notes**|
 |:-----|:-----|:-----|:-----|:-----|
 |Require encrypted backup|No|Yes|Yes|iOS encrypted backup required.|
 |Block cloud backup|Yes|Yes|Yes|Block Google backup on Android (grayed out), cloud backup on iOS.|
@@ -133,7 +135,7 @@ When you apply a policy to user devices, the impact on each device varies somewh
 
 When you delete a policy or remove a user from a group to which the policy was deployed, the policy settings, Microsoft 365 email profile and cached emails might be removed from the user's device. See the following table to see what is removed for the different device types.
 
-|**What's removed**|**iOS 6 and later**|**Android 4 and later (including Samsung KNOX**|
+|**What's removed**|**iOS**|**Android (including Samsung KNOX**|
 |:-----|:-----|:-----|
 |Managed email profiles<sup>1</sup>|Yes|No|
 |Block cloud backup|Yes|No|

@@ -10,7 +10,7 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
 - Strat_O365_IP
@@ -30,6 +30,8 @@ Refer to this article to learn about certificates, technologies, and TLS cipher 
 - If you're looking for setup information, see [Set up encryption in Office 365 Enterprise](set-up-encryption.md).
 - For information about cipher suites supported by specific versions of Windows, see [Cipher Suites in TLS/SSL (Schannel SSP)](/windows/desktop/SecAuthN/cipher-suites-in-schannel).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Microsoft Office 365 certificate ownership and management
 
 You don't need to purchase or maintain certificates for Office 365. Instead, Office 365 uses its own certificates.
@@ -46,7 +48,7 @@ All cipher suites supported by Office 365 use algorithms acceptable under FIPS 1
 
 TLS, and SSL that came before TLS, are cryptographic protocols that secure communication over a network by using security certificates to encrypt a connection between computers. Office 365 supports TLS version 1.2 (TLS 1.2).
 
-TLS version 1.3 (TLS 1.3) is currently not supported.
+TLS version 1.3 (TLS 1.3) is supported by some of the services.
 
 > [!IMPORTANT]
 > Be aware that TLS versions deprecate, and that deprecated versions *should not be used* where newer versions are available. If your legacy services do not require TLS 1.0 or 1.1 you should disable them.

@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -31,7 +32,9 @@ ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: "Learn how to assign administrator roles to a user or multiple users in your business so that they can perform specific tasks in the admin center."
 ---
 
-# Assign admin roles
+# Assign admin roles in the Microsoft 365 admin center
+
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 If you're the person who purchased your Microsoft business subscription, you are the global admin. This means you have unlimited control over the products in your subscriptions and you can access most data.
 
@@ -40,6 +43,8 @@ For more information, see [About admin roles](about-admin-roles.md).
 When you add new users, if you don't assign them an admin role then they are in the *user role* and don't have admin privileges to any of the Microsoft admin centers. But if you need help getting things done, you can assign an admin role to a user. For example, if you need someone to help reset passwords, you shouldn't assign them the global admin role, you should assign them the password admin role. Having too many global admins, with unlimited access to your data and online business, is a security risk.
 
 ## Watch: Add an admin
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198030).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
@@ -51,7 +56,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ## Assign admin roles 
 
-You can assign users to a role in 2 different ways:
+You can assign users to a role in two different ways:
 
 - You can go to the user's details and **Manage roles** to assign a role to the user.
 - Or you can go to **Roles** and select the role, and then add multiple users to it.
@@ -70,12 +75,6 @@ You can assign users to a role in 2 different ways:
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to **Users** > [Active users](https://go.microsoft.com/fwlink/p/?linkid=834822) page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 ::: moniker-end
 

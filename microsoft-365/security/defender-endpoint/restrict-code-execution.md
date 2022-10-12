@@ -2,8 +2,7 @@
 title: Restrict app execution API
 description: Use this API to create calls related to restricting an application from executing.
 keywords: apis, graph api, supported apis, collect investigation package
-search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +11,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Restrict app execution API
@@ -47,7 +49,7 @@ Restrict execution of all applications on the device except a predefined set.
 
 > [!IMPORTANT]
 >
-> - This action is available for devices on Windows 10, version  1709 or later.
+> - This action is available for devices on Windows 10, version  1709 or later, and on Windows 11.
 > - This feature is available if your organization uses Microsoft Defender Antivirus.
 > - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
 
@@ -65,6 +67,8 @@ Delegated (work or school account)|Machine.RestrictExecution|'Restrict code exec
 >
 > - The user needs to have at least the following role permission: 'Active remediation actions' (See [Create and manage roles](user-roles.md) for more information)
 > - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 ## HTTP request
 

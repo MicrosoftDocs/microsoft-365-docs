@@ -4,7 +4,8 @@ description: Learn how to use the DeviceFromIP() function to get the devices tha
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, device, devicefromIP, function, enrichment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,9 +16,10 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-ms.technology: m365d
 ---
 
 # DeviceFromIP()
@@ -38,8 +40,8 @@ This function returns a table with the following columns:
 
 | Column | Data type | Description |
 |------------|-------------|-------------|
-| `IP` | string | IP address  |
-| `DeviceId` | string | Unique identifier for the device in the service |
+| `IP` | `string` | IP address  |
+| `DeviceId` | `string` | Unique identifier for the device in the service |
 
 
 ## Syntax

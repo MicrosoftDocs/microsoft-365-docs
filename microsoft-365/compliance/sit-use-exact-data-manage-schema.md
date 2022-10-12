@@ -9,9 +9,10 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date:
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -20,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 ---
 # Manage your exact data match schema
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Editing the schema for EDM-based classification manually
 
 If you want to make changes to your EDM schema, for example the **edm.xml** file, such as changing which fields are used for EDM-based classification, follow these steps:
@@ -27,15 +30,14 @@ If you want to make changes to your EDM schema, for example the **edm.xml** file
 > [!TIP]
 > You can change your EDM schema and sensitive information table source file to take advantage of **configurable match**. When configured, EDM will ignore case differences and some delimiters when it evaluates an item. This makes defining your xml schema and your sensitive data files easier. To learn more see, [Using the caseInsensitive and ignoredDelimiters fields](sit-get-started-exact-data-match-create-schema.md#using-the-caseinsensitive-and-ignoreddelimiters-fields).
 
-1. Edit your **edm.xml** file (this is the file discussed in the [Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types).
+1. Edit your **edm.xml** file (this is the file discussed in the [Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types).
 
-2. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+2. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-3. To update your database schema, run the following cmdlets, one at a time:
+3. To update your database schema, run the following command:
 
       ```powershell
-      $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
-      Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
+      Set-DlpEdmSchema -FileData ([System.IO.File]::ReadAllBytes('.\\edm.xml')) -Confirm:$true
       ```
 
       You will be prompted to confirm, as follows:
@@ -49,18 +51,18 @@ If you want to make changes to your EDM schema, for example the **edm.xml** file
       > \[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):
 
       > [!TIP]
-      > If you want your changes to occur without confirmation, in Step 3, use this cmdlet instead: Set-DlpEdmSchema -FileData $edmSchemaXml
+      > If you want your changes to occur without confirmation, don't use `-Confirm:$true` in Step 3.
 
       > [!NOTE]
-      > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.-->
+      > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
 
 ## Removing the schema for EDM-based classification manually
 
 If you want to remove the schema you're using for EDM-based classification, follow these steps:
 
-1. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-2. Run the following PowerShell cmdlets, substituting the data store name of "patient records" with the one you want to remove (using the patientrecords store as an example):
+2. Run the following command, substituting the data store name of "patient records" with the one you want to remove (using the patientrecords store as an example):
 
       ```powershell
       Remove-DlpEdmSchema -Identity 'patientrecords'
@@ -77,11 +79,11 @@ If you want to remove the schema you're using for EDM-based classification, foll
       > \[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):
 
       > [!TIP]
-      >  If you want your changes to occur without confirmation, in Step 2, use this cmdlet instead: Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false
+      > If you want your changes to occur without confirmation, don't use `-Confirm:$true` in Step 2.
 
 ### Edit or delete the EDM schema with the wizard
 
-1. Open **Compliance center** > **Data classification** > **Exact data matches**.
+1. Open **Compliance center** \> **Data classification** \> **Exact data matches**.
 
 2. Choose **EDM schemas**.
 
