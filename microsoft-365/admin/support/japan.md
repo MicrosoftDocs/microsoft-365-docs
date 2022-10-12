@@ -23,7 +23,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 ## Phone number
 0120 996 680 (Office 365 Enterprise)
 
-0120 628 860 (Other Plans)
+0120 628 860 (Other Plans) (Example : Microsoft 365 Business Basic, Standard, Premium etc)
 
 ## Hours
 ### Billing Support:
@@ -44,7 +44,7 @@ Japanese: 24 hours a day, 7 days a week
 
 English: 24 hours a day, 7 days a week
 
-**Other Plans:**
+**Other Plans:** (Example : Microsoft 365 Business Basic, Standard, Premium etc):
 
 Telephone technical support is available from 9:00-17:30 on weekdays. For high severity issues, technical support is available 24 hours a day, 7 days a week.
 
