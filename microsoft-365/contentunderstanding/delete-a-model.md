@@ -1,5 +1,5 @@
 ---
-title: Delete a model in Microsoft SharePoint Syntex
+title: Delete a model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,10 +12,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to delete a document understanding model in Microsoft SharePoint Syntex.
+description: Learn how to delete a document understanding model in Microsoft Syntex.
 ---
 
-# Delete a model in Microsoft SharePoint Syntex
+# Delete a model in Microsoft Syntex
 
 At some point, you might want to delete a document understanding model or a prebuilt model. Before you delete the model, you must first remove the model from all of the SharePoint document libraries where it has been applied.
 
