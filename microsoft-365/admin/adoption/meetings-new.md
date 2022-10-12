@@ -56,7 +56,7 @@ For each meeting:
 
 1. **Header**: Shows the score, out of 100, based on the average of Set Up, Meet Up and Follow Up phases for online meetings on Microsoft Teams held in the past 28 days.
 1. **Body**: Provides more information on how using online meeting tools effectively can make meetings more effective.
-1. **Visualization (current state)**: In this horizontal bar chart, the blue (colored) portion represents the score (out of 100) shown in the header
+1. **Visualization (current state)**: In this horizontal bar chart, the blue (colored) portion represents the score (out of 100) shown in the header.
 
 ## Trend visualization of the score
 
