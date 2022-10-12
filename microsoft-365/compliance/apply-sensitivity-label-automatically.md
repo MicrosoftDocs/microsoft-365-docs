@@ -10,7 +10,8 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 ms.topic: article
 ms.custom: admindeeplinkMAC
 search.appverid:
@@ -79,6 +80,8 @@ There are two different methods for automatically applying a sensitivity label t
 > For more information, see [Default labels and policies for Microsoft Purview Information Protection](mip-easy-trials.md).
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Compare auto-labeling for Office apps with auto-labeling policies
 
 Use the following table to help you identify the differences in behavior for the two complementary automatic labeling methods:
@@ -87,7 +90,7 @@ Use the following table to help you identify the differences in behavior for the
 |:-----|:-----|:-----|
 |App dependency|Yes ([minimum versions](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |No \* |
 |Restrict by location|No |Yes |
-|Conditions: Trainable classifiers|Yes |No |
+|Conditions: Trainable classifiers|Yes |In preview |
 |Conditions: Sharing options and additional options for email|No |Yes |
 |Conditions: Exceptions|No |Yes (email only) |
 |Recommendations, policy tooltip, and user overrides|Yes |No |
@@ -157,7 +160,7 @@ When this sensitivity label is automatically applied, the user sees a notificati
 
 ### Configuring sensitive info types for a label
 
-When you select the **Sensitive info types** option, you see the same list of sensitive information types as when you create a data loss prevention (DLP) policy. So you can, for example, automatically apply a Highly Confidential label to any content that contains customers' personal information, such as credit card numbers, social security numbers, or passport numbers:
+When you select the **Sensitive info types** option, you see the same list of [sensitive information types](sensitive-information-type-learn-about.md) as when you create a data loss prevention (DLP) policy. So you can, for example, automatically apply a Highly Confidential label to any content that contains customers' personal information, such as credit card numbers, social security numbers, or passport numbers:
 
 ![Sensitive info types for auto-labeling in Office apps.](../media/sensitivity-labels-sensitive-info-types.png)
 
@@ -168,7 +171,7 @@ Similarly to when you configure DLP policies, you can then refine your condition
 You can learn more about these configuration options from the DLP documentation: [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
 > [!IMPORTANT]
-> Sensitive information types have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> Sensitive information types have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](sit-limits.md#instance-count-supported-values-for-sit).
 
 Also similarly to DLP policy configuration, you can choose whether a condition must detect all sensitive information types, or just one of them. And to make your conditions more flexible or complex, you can add [groups and use logical operators between the groups](data-loss-prevention-policies.md).
 
@@ -189,8 +192,7 @@ When you select the **Trainable classifiers** option, select one or more of the 
 
 ![Options for trainable classifiers and sensitivity labels.](../media/sensitivity-labels-classifers.png)
 
-> [!CAUTION]
-> We are deprecating the **Offensive Language** pre-trained classifier because it has been producing a high number of false positives. Don't use this classifier and if you are currently using it, we recommend you move your business processes off it and instead use the **Targeted Harassment**, **Profanity**, and **Threat** pre-trained classifiers.
+The available pre-trained classifiers are often updated, so there might be more entries to select than the ones displayed in this screenshot.
 
 For more information about these classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
@@ -331,9 +333,9 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, including more options for Exchange, select **Advanced rules**. Then select **Next**.
 
-    The rules use conditions that include sensitive information types and sharing options:
-    - For sensitive information types, you can select both built-in and custom sensitive information types.
-    - For the shared options, you can choose **only with people inside my organization** or **with people outside my organization**.
+    The rules use conditions that include [sensitive information types](sensitive-information-type-learn-about.md), [trainable classifiers](classifier-learn-about.md), and sharing options:
+    - To select a sensitive information type or trainable classifier as a condition, under **Content contains**, select **Add**, and then choose **Sensitive info types** or **Trainable classifiers**.
+    - To select sharing options as a condition, under **Content is shared**, choose either **only with people inside my organization** or **with people outside my organization**.
 
     If your location is **Exchange** and you selected **Advanced rules**, there are other conditions that you can select:
     - Sender IP address is
@@ -453,7 +455,9 @@ For more information about the PowerShell cmdlets that support auto-labeling pol
 
 Although auto-labeling is one of the most efficient ways to classify, label, and protect Office files that your organization owns, check whether you can supplement it with any of the following methods to increase your labeling reach:
 
-- With SharePoint Syntex, you can [apply a sensitivity label to a document understanding model](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model), so that identified documents in a SharePoint library are automatically labeled.
+- For SharePoint document libraries, you can apply a default sensitivity label for new and edited files. For more information, see [Configure a default sensitivity label for a SharePoint document library](sensitivity-labels-sharepoint-default-label.md).
+
+- With SharePoint Syntex, you can [apply a sensitivity label to a document understanding model](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model), so that identified documents in a SharePoint document library are automatically labeled.
 
 - When you use the [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/aip-clientv2):
 

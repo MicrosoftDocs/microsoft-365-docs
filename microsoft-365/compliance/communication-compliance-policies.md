@@ -1,6 +1,6 @@
 ---
-title: "Communication compliance policies"
-description: "Learn more about communication compliance policies."
+title: "Create and manage communication compliance policies"
+description: "Learn more about creating and managing communication compliance policies."
 keywords: Microsoft 365, Microsoft Purview, compliance, communication compliance
 f1.keywords:
 - NOCSH
@@ -14,21 +14,26 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
 ---
 
-# Communication compliance policies
+# Create and manage communication compliance policies
+
+>[!IMPORTANT]
+>Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Policies
 
 > [!IMPORTANT]
 > Using PowerShell to create and manage communication compliance policies is not supported. To create and manage these policies, you must use the policy management controls in the [communication compliance solution](https://compliance.microsoft.com/supervisoryreview).
 
-You create communication compliance policies for Microsoft 365 organizations in the Microsoft Purview compliance portal. Communication compliance policies define which communications and users are subject to review in your organization, define which custom conditions the communications must meet, and specify who should do reviews. Users assigned the *Communication Compliance Admin* role can set up policies, and anyone who has this role assigned can access the **Communication compliance** page and global settings in the Microsoft Purview compliance portal. If needed, you can export the history of modifications to a policy to a .csv (comma-separated values) file that also includes the status of alerts pending review, escalated items, and resolved items. Policies can't be renamed and can be deleted when no longer needed.
+You create communication compliance policies for Microsoft 365 organizations in the Microsoft Purview compliance portal. Communication compliance policies define which communications and users are subject to review in your organization, define which custom conditions the communications must meet, and specify who should do reviews. Users assigned the *Communication Compliance Admins* role can set up policies, and anyone who has this role assigned can access the **Communication compliance** page and global settings in the Microsoft Purview compliance portal. If needed, you can export the history of modifications to a policy to a .csv (comma-separated values) file that also includes the status of alerts pending review, escalated items, and resolved items. Policies can't be renamed and can be deleted when no longer needed.
 
 ## Policy templates
 
@@ -76,9 +81,24 @@ The *Report a concern* option is enabled by default and can be controlled via Te
 >[!IMPORTANT]
 >If you're using PowerShell to turn on or turn off the **End user reporting** option in the Teams Admin Center, you must use [Microsoft Teams cmdlets module version 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) or later.
 
+## Policy for insider risk management integration (preview)
+
+When users experience employment stressors, they may become disgruntled. This feeling may lead to uncharacteristic or malicious behavior by some users that could surface as potentially inappropriate behavior on your organization's messaging systems. Communication compliance can provide disgruntlement signals detected in applicable messages to [insider risk management](/microsoft-365/compliance/insider-risk-management) disgruntlement policies by using a dedicated [Detect inappropriate text](#policy-templates) policy. This policy is automatically created (if selected as an option) during configuration of a [Data leaks by disgruntled employees](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-disgruntled-users-preview) or [Security policy violations by disgruntled employees](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-disgruntled-users-preview) policy in insider risk management.
+
+When configured for an insider risk management disgruntlement policy, a dedicated policy named *Disgruntlement in messages - (date created)* is created in communication compliance and automatically includes all organization users in the policy. This policy starts detecting disgruntlement behavior in messages by using the built-in [Threat, Harassment, and Discrimination classifiers](#classifiers) and automatically sends these signals to insider risk management. If needed, this policy can be edited to update the scope of included users and the policy conditions and classifiers.  
+
+Users that send 5 or more messages classified as disgruntled within 24 hours are automatically brought in-scope for insider risk management policies that include this option. Once in-scope, the insider risk management detect risky activities configured in the policy and generate alerts as applicable. It may take up to 48 hours from the time disgruntlement messages are sent until the time a user is brought in-scope in an insider risk management policy. If an the alert is generated for a risky activity detected by the insider risk management policy, the triggering event for the alert is identified as being sourced from the communication compliance disgruntlement activity.
+
+All users assigned to the [Insider Risk Management Investigators](/microsoft-365/compliance/insider-risk-management-plan#plan-for-the-review-and-investigation-workflow) role group are automatically assigned as reviewers in the dedicated communication compliance policy. If inside risk management investigators need to review the associated disgruntlement alert directly on the communication compliance alerts page (linked from the insider risk management alert details), they must be manually added to the *Communication Compliance Investigators* role group.
+
+Before integrating communication compliance with insider risk management, you should also consider the following guidance when detecting messages containing potentially inappropriate text:
+
+- **For organizations without an existing *Detect inappropriate text* policy**. The new *Disgruntlement in messages - (date created)* policy will be automatically created by the insider risk management policy wizard. In most cases, no further actions are needed.
+- **For organizations with an existing *Detect inappropriate text* policy**. The new *Disgruntlement in messages - (date created)* policy will be automatically created by the insider risk management policy wizard. Although you'll have two communication compliance policies for potentially inappropriate text in messages, investigators will not see duplicate alerts for the same activity. Insider risk management investigators will only see alerts for the dedicated integration policy and communication compliance investigators will only see the alerts for the existing policy. If needed, you can edit the dedicated policy to change the in-scope users or individual policy conditions as applicable.
+
 ## Pause a policy
 
-After you've created a communication compliance policy, the policy may be temporarily paused if needed. Pausing a policy may be used for testing or troubleshooting policy matches, or for optimizing policy conditions. Instead of deleting a policy in these circumstances, pausing a policy also preserves existing policy alerts and messages for ongoing investigations and reviews. Pausing a policy prevents inspection and alert generation for all user message conditions defined in the policy for the time the policy is paused. To pause or restart a policy, users must be a member of the *Communication Compliance Admin* role group.
+After you've created a communication compliance policy, the policy may be temporarily paused if needed. Pausing a policy may be used for testing or troubleshooting policy matches, or for optimizing policy conditions. Instead of deleting a policy in these circumstances, pausing a policy also preserves existing policy alerts and messages for ongoing investigations and reviews. Pausing a policy prevents inspection and alert generation for all user message conditions defined in the policy for the time the policy is paused. To pause or restart a policy, users must be a member of the *Communication Compliance Admins* role group.
 
 To pause a policy, navigate to the **Policy** page, select a policy, and then select **Pause policy** from the actions toolbar. On the **Pause policy** pane, confirm you'd like to pause the policy by selecting **Pause**. In some cases, it may take up to 24 hours for a policy to be paused. Once the policy is paused, alerts for messages matching the policy aren't created. However, messages associated with alerts that were created prior to pausing the policy remain available for investigation, review, and remediation.
 
@@ -101,7 +121,7 @@ For organizations with existing communication compliance policies, there may be 
 - **Detect and review inappropriate messages for different groups of users**: Some organizations may prefer to create multiple policies with the same configuration but include different in-scope users and different reviewers for each policy.
 - **Similar policies with small changes**: For policies with complex configurations or conditions, it may save time to create a new policy from a similar policy.
 
-To copy a policy, users must be a member of the *Communication Compliance* or *Communication Compliance Admin* role groups. After a new policy is created from an existing policy, it may take up to 24 hours to view messages that match the new policy configuration.
+To copy a policy, users must be a member of the *Communication Compliance* or *Communication Compliance Admins* role groups. After a new policy is created from an existing policy, it may take up to 24 hours to view messages that match the new policy configuration.
 
 To copy a policy and create a new policy, complete the following steps:
 
@@ -135,7 +155,7 @@ To identify an older policy, review *Last policy scan* column on the **Policy** 
 
 ## Storage limit notification (preview)
 
-Each communication compliance policy has a storage limit size of 100 GB or 1 million messages, whichever is reached first. As the policy approaches these limits, notification emails are automatically sent to users assigned to the *Communication Compliance* or *Communication Compliance Admin* role groups. Notifications messages are sent when the storage size or message count reach 80, 90, and 95 percent of the limit. When the policy limit is reached, the policy is automatically deactivated, and the policy stops processing messages for alerts.
+Each communication compliance policy has a storage limit size of 100 GB or 1 million messages, whichever is reached first. As the policy approaches these limits, notification emails are automatically sent to users assigned to the *Communication Compliance* or *Communication Compliance Admins* role groups. Notifications messages are sent when the storage size or message count reach 80, 90, and 95 percent of the limit. When the policy limit is reached, the policy is automatically deactivated, and the policy stops processing messages for alerts.
 
 >[!IMPORTANT]
 >If a policy is deactivated due to reaching the storage and message limits, be sure to evaluate how to manage the deactivated policy. If you delete the policy, all messages, associated attachments, and message alerts will be permanently deleted. If you need to maintain these items for future use, do not delete the deactivated policy.
@@ -162,7 +182,7 @@ By default, the **Direction is** condition is displayed and can't be removed. Co
 
 ### Sensitive information types
 
-You have the option of including sensitive information types as part of your communication compliance policy. Sensitive information types are either pre-defined or custom data types that can help identify and protect credit card numbers, bank account numbers, passport numbers, and more. As part of [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md), the sensitive information configuration can use patterns, character proximity, confidence levels, and even custom data types to help identify and flag content that may be sensitive. The default sensitive information types are:
+You have the option of including sensitive information types as part of your communication compliance policy. Sensitive information types are either pre-defined or custom data types that can help identify and protect credit card numbers, bank account numbers, passport numbers, and more. As part of [Learn about Microsoft Purview Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp), the sensitive information configuration can use patterns, character proximity, confidence levels, and even custom data types to help identify and flag content that may be sensitive. The default sensitive information types are:
 
 - Financial
 - Medical and health
@@ -170,13 +190,13 @@ You have the option of including sensitive information types as part of your com
 - Custom information type
 
 > [!IMPORTANT]
-> SITs have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> SITs have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](/microsoft-365/compliance/create-a-custom-sensitive-information-type#instance-count-supported-values-for-sit).
 
-To learn more about sensitive information details and the patterns included in the default types, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
+To learn more about sensitive information details and the patterns included in the default types, see [Sensitive information type entity definitions](/microsoft-365/compliance/sensitive-information-type-entity-definitions).
 
 ### Custom keyword dictionaries
 
-Configure custom keyword dictionaries (or lexicons) to provide simple management of keywords specific to your organization or industry. Keyword dictionaries support up to 100 KB of terms (post-compression) in the dictionary and support any language. The tenant limit is also 100 KB after compression. If needed, you can apply multiple custom keyword dictionaries to a single policy or have a single keyword dictionary per policy. These dictionaries are assigned in a communication compliance policy and can be sourced from a file (such as a .csv or .txt list), or from a list you can [Import in the compliance portal](create-a-keyword-dictionary.md). Use custom dictionaries when you need to support terms or languages specific to your organization and policies.
+Configure custom keyword dictionaries (or lexicons) to provide simple management of keywords specific to your organization or industry. Keyword dictionaries support up to 100 KB of terms (post-compression) in the dictionary and support any language. The tenant limit is also 100 KB after compression. If needed, you can apply multiple custom keyword dictionaries to a single policy or have a single keyword dictionary per policy. These dictionaries are assigned in a communication compliance policy and can be sourced from a file (such as a .csv or .txt list), or from a list you can [Import in the compliance portal](/microsoft-365/compliance/create-a-keyword-dictionary). Use custom dictionaries when you need to support terms or languages specific to your organization and policies.
 
 ### Classifiers
 
@@ -216,7 +236,6 @@ Images from 50 KB to 4 MB in the following image formats are scanned and process
 When reviewing pending alerts for policies with OCR enabled, images identified and matched to policy conditions are displayed as child items for associated alerts. You can view the original image to evaluate the identified text in context with the original message. It may take up to 48 hours for detected images to be available with alerts.
 
 ### Conditional settings
-<a name="ConditionalSettings"> </a>
 
 The conditions you choose for the policy apply to communications from both email and third-party sources in your organization (like from Instant Bloomberg).
 
@@ -224,19 +243,18 @@ The following table explains more about each condition.
 
 |**Condition**|**How to use this condition**|
 |:-----|:-----|
-| **Content matches any of these classifiers** | Apply to the policy when any classifiers are included or excluded in a message. Some classifiers are pre-defined in your organization, and custom classifiers must be configured separately before they're available for this condition. Only one classifier can be defined as a condition in a policy. For more information about configuring classifiers, see [Learn about trainable classifiers (preview)](classifier-learn-about.md). |
-| **Content contains any of these sensitive info types** | Apply to the policy when any sensitive information types are included or excluded in a message. Some classifiers are pre-defined in your tenant, and custom classifiers can be configured separately or as part of the condition assignment process. Each sensitive information type you choose is applied separately and only one of these sensitive information types must apply for the policy to apply to the message. For more information about custom sensitive information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md). |
+| **Content matches any of these classifiers** | Apply to the policy when any classifiers are included or excluded in a message. Some classifiers are pre-defined in your organization, and custom classifiers must be configured separately before they're available for this condition. Only one classifier can be defined as a condition in a policy. For more information about configuring classifiers, see [Learn about trainable classifiers (preview)](/microsoft-365/compliance/classifier-learn-about). |
+| **Content contains any of these sensitive info types** | Apply to the policy when any sensitive information types are included or excluded in a message. Some classifiers are pre-defined in your tenant, and custom classifiers can be configured separately or as part of the condition assignment process. Each sensitive information type you choose is applied separately and only one of these sensitive information types must apply for the policy to apply to the message. For more information about custom sensitive information types, see [Learn about sensitive information types](/microsoft-365/compliance/sensitive-information-type-learn-about). |
 | **Message is received from any of these domains**  <br><br> **Message is not received from any of these domains** | Apply the policy to include or exclude specific domains or email addresses in received messages. Enter each domain or email address and separate multiple domains or email addresses with a comma. Each domain or email address entered is applied separately, only one domain or email address must apply for the policy to apply to the message. <br><br> If you want to scan all email from a specific domain, but want to exclude messages that don't need review (newsletters, announcements, and so on), you must configure a **Message is not received from any of these domains** condition that excludes the email address (example "newsletter@contoso.com"). |
 | **Message is sent to any of these domains**  <br><br> **Message is not sent to any of these domains** | Apply the policy to include or exclude specific domains in sent messages. Enter each domain and separate multiple domains with a comma. Each domain is applied separately, only one domain must apply for the policy to apply to the message. <br><br> If you want to exclude all emails sent to two specific domains, you'd configure the **Message is not sent to any of these domains** condition with the two domains (example 'contoso.com,wingtiptoys.com'). |
-| **Message is classified with any of these labels**  <br><br> **Message is not classified with any of these labels** | To apply the policy when certain retention labels are included or excluded in a message. Retention labels must be configured separately and configured labels are chosen as part of this condition. Each label you choose is applied separately (only one of these labels must apply for the policy to apply to the message). For more information about retention labels, see [Learn about retention policies and retention labels](retention.md).|
-| **Message contains any of these words**  <br><br> **Message contains none of these words** | To apply the policy when certain words or phrases are included or excluded in a message, enter each word separated with a comma. For phrases of two words or more, use quotation marks around the phrase. Each word or phrase you enter is applied separately (only one word must apply for the policy to apply to the message). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](communication-compliance-policies.md#Matchwords).|
-| **Attachment contains any of these words**  <br><br> **Attachment contains none of these words** | To apply the policy when certain words or phrases are included or excluded in a message attachment (such as a Word document), enter each word separated with a comma. For phrases of two words or more, use quotation marks around the phrase. Each word or phrase you enter is applied separately (only one word must apply for the policy to apply to the attachment). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](communication-compliance-policies.md#Matchwords).|
+| **Message is classified with any of these labels**  <br><br> **Message is not classified with any of these labels** | To apply the policy when certain retention labels are included or excluded in a message. Retention labels must be configured separately and configured labels are chosen as part of this condition. Each label you choose is applied separately (only one of these labels must apply for the policy to apply to the message). For more information about retention labels, see [Learn about retention policies and retention labels](/microsoft-365/compliance/retention).|
+| **Message contains any of these words**  <br><br> **Message contains none of these words** | To apply the policy when certain words or phrases are included or excluded in a message, enter each word separated with a comma. For phrases of two words or more, use quotation marks around the phrase. Each word or phrase you enter is applied separately (only one word must apply for the policy to apply to the message). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](#matching-words-and-phrases-to-emails-or-attachments).|
+| **Attachment contains any of these words**  <br><br> **Attachment contains none of these words** | To apply the policy when certain words or phrases are included or excluded in a message attachment (such as a Word document), enter each word separated with a comma. For phrases of two words or more, use quotation marks around the phrase. Each word or phrase you enter is applied separately (only one word must apply for the policy to apply to the attachment). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](#matching-words-and-phrases-to-emails-or-attachments).|
 | **Attachment is any of these file types**  <br><br> **Attachment is none of these file types** | To supervise communications that include or exclude specific types of attachments, enter the file extensions (such as .exe or .pdf). If you want to include or exclude multiple file extensions, enter file types separated by a comma (example *.exe,.pdf,.zip*). Only one attachment extension must match for the policy to apply.|
 | **Message size is larger than**  <br><br> **Message size is not larger than** | To review messages based on a certain size, use these conditions to specify the maximum or minimum size a message can be before it's subject to review. For example, if you specify **Message size is larger than** \> **1.0 MB**, all messages that are 1.01 MB and larger are subject to review. You can choose bytes, kilobytes, megabytes, or gigabytes for this condition.|
 | **Attachment is larger than**  <br><br> **Attachment is not larger than** | To review messages based on the size of their attachments, specify the maximum or minimum size an attachment can be before the message and its attachments are subject to review. For example, if you specify **Attachment is larger than** \> **2.0 MB**, all messages with attachments 2.01 MB and over are subject to review. You can choose bytes, kilobytes, megabytes, or gigabytes for this condition.|
 
 #### Matching words and phrases to emails or attachments
-<a name="Matchwords"> </a>
 
 Each word you enter and separate with a comma is applied separately (only one word must apply for the policy condition to apply to the email or attachment). For example, let's use the condition, **Message contains any of these words**, with the keywords "banker", "confidential", and "insider trading" separated by a comma (banker, confidential,"insider trading"). The policy applies to any messages that includes the word "banker", "confidential", or the phrase "insider trading". Only one of these words or phrases must occur for this policy condition to apply. Words in the message or attachment must exactly match what you enter.
 
@@ -248,7 +266,7 @@ Each word you enter and separate with a comma is applied separately (only one wo
 > *confidential* <br>
 > *insider trading*
 
-To scan both email messages and attachments for the same keywords, create a [custom keyword dictionary](create-a-keyword-dictionary.md) for the terms you wish to scan in messages. This policy configuration identifies defined keywords that appear in either the email message **OR** in the email attachment. Using the standard conditional policy settings (*Message contains any of these words* and *Attachment contains any of these words*) to identify terms in messages and in attachments requires the terms to be present in **BOTH** the message and the attachment.
+To scan both email messages and attachments for the same keywords, create a [custom keyword dictionary](/microsoft-365/compliance/create-a-keyword-dictionary) for the terms you wish to scan in messages. This policy configuration identifies defined keywords that appear in either the email message **OR** in the email attachment. Using the standard conditional policy settings (*Message contains any of these words* and *Attachment contains any of these words*) to identify terms in messages and in attachments requires the terms to be present in **BOTH** the message and the attachment.
 
 #### Enter multiple conditions
 

@@ -2,20 +2,23 @@
 title: Configure and validate Microsoft Defender Antivirus network connections
 description: Configure and test your connection to the Microsoft Defender Antivirus cloud protection service.
 keywords: antivirus, Microsoft Defender Antivirus, antimalware, security, defender, cloud, aggressiveness, protection level
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
+manager: dansimp
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.date: 06/28/2022
 ms.reviewer: mkaminska; pahuijbr
-manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Configure and validate Microsoft Defender Antivirus network connections
@@ -33,10 +36,6 @@ To ensure Microsoft Defender Antivirus cloud-delivered protection works properly
 
 > [!IMPORTANT]
 > This article contains information about configuring network connections only for Microsoft Defender Antivirus. If you are using Microsoft Defender for Endpoint (which includes Microsoft Defender Antivirus), see [Configure device proxy and Internet connectivity settings for Defender for Endpoint](configure-proxy-internet.md).
-
-
-> [!NOTE]
-> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
 ## Allow connections to the Microsoft Defender Antivirus cloud service
 
@@ -98,7 +97,7 @@ If you're using Microsoft Edge, you'll also see a notification message:
 
 A similar message occurs if you're using Internet Explorer:
 
-:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="The Microsoft Defender AV notification that malware was found" lightbox="../../media/wdav-bafs-ie.png":::
+:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="The Microsoft Defender Antivirus notification that malware was found" lightbox="../../media/wdav-bafs-ie.png":::
 
 #### View the fake malware detection in your Windows Security app
 

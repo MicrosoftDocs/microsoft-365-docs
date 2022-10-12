@@ -7,8 +7,9 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: 
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg 
 ms.localizationpriority: medium
 description: Learn how to contact support for your country or region.
 ROBOTS: NOINDEX, NOFOLLOW

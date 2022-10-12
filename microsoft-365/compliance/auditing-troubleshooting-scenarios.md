@@ -1,24 +1,25 @@
 ---
 title: "Search the audit log to troubleshoot common scenarios"
+description: "Learn how to use the Microsoft 365 audit log search tool to help troubleshoot common support issues for email accounts."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- audit
 search.appverid:
 - MET150
 - MOE150
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: "Learn how to use the Microsoft 365 audit log search tool to help troubleshoot common support issues for email accounts."
 ---
 
 # Search the audit log to investigate common support issues
@@ -32,6 +33,8 @@ This article describes how to use the audit log search tool to help you investig
 - Investigate why there was a successful login by a user outside your organization
 - Search for mailbox activities performed by users with non-E5 licenses
 - Search for mailbox activities performed by delegate users
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Using the audit log search tool
 

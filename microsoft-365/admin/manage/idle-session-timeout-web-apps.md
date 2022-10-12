@@ -7,15 +7,20 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: Adm_TOC
+ms.collection: 
+- scotvorg
+- Adm_TOC
 description: "Set how long user's session will last in Microsoft 365 before they're timed out."
 ---
 
 # Idle session timeout for Microsoft 365
 
 <!-- Add metadata: localization, AdminSurgePortfolio, admindeeplinkMAC. remove robots nofollow -->
+
+> [!IMPORTANT]
+> Idle session timeout isn't available for Microsoft 365 operated by 21Vianet or Microsoft 365 Germany.
 
 Use idle session timeout to configure a policy on how long users are inactive in your organization before they are signed out of Microsoft 365 web apps. This helps protect sensitive company data and adds another layer of security for end users who work on non-company or shared devices.
 
@@ -26,7 +31,7 @@ When a user reaches the idle timeout session you've set, they'll get a notificat
 
 ## Turn on Idle session timeout
 
-If you aren't a Microsoft 365 or Office 365 global admin, you won't see the **Security & privacy** tab.
+You must be a member of the Global admin, Security admin, Application admin, or Cloud Application admin roles to see the idle session timeout setting.
 
 1. In the Microsoft 365 admin center, select **Org Settings** **->**  [Security & privacy](https://go.microsoft.com/fwlink/p/?linkid=2072756) tab and select **Idle session timeout**.
 
@@ -68,15 +73,17 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
 - Users must be inactive on all Microsoft 365 web app tabs for the configured duration. If the user is active on one tab (say OWA) while being inactive on another tab (say SPO), they will be considered active and will not be signed out.  
 
 - Users won’t get signed out in these cases.
-    - If they get single sign-on (SSO) into the web app from the device joined account or selected **Stay signed in** at the time of sign-in. For more info on hiding this option for your organization, see [Add branding to your organization's sign-in page](/azure/active-directory/fundamentals/customize-branding).
-    - If they're on a managed device (one that is compliant or joined to a domain) and using a supported browser like Microsoft Edge or Google Chrome (with the [Windows Accounts extension](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)). For this feature to not trigger on a managed device, an eligible Azure AD Premium P1 or P2 subscription, and a specific Conditional Access policy, is required. See below for further details.
+    - If they get single sign-on (SSO) into the web app from the device joined account.
+    - If they selected **Stay signed in** at the time of sign-in. For more info on hiding this option for your organization, see [Add branding to your organization's sign-in page](/azure/active-directory/fundamentals/customize-branding).
+    - If they're on a managed device (one that is compliant or joined to a domain) and using a supported browser like Microsoft Edge or Google Chrome (with the [Windows Accounts extension](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)).
 
-> [!IMPORTANT]
-> Idle session timeout isn't available for Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
+## Trigger idle session timeout only on unmanaged devices
+
+By default, the idle session timeout feature triggers on all device types if the other conditions are met. For this feature to trigger only on an unmanaged device, an eligible Azure AD Premium P1 or P2 subscription is required. You'll also need to add a Conditional Access policy in the Azure AD admin center.
 
 ## Idle session timeout on unmanaged devices  
 
-For idle session timeout to get triggered on unmanaged devices, you'll need to add a Conditional Access policy in the Azure AD admin center.
+For idle session timeout to get triggered only on unmanaged devices, you'll need to add a Conditional Access policy in the Azure AD admin center.
 
 1. On the **Conditional Access | Policies** page of the Azure AD admin center, select **New policy** and enter a name for the policy.
 

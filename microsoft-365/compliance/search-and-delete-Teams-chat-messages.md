@@ -1,29 +1,29 @@
 ---
 title: "Search for and delete chat messages in Teams"
+description: "Use eDiscovery (Premium) and the Microsoft Graph Explorer to search for and purge chat messages in Microsoft Teams, and respond to data spillage incidents in Teams."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: "Use eDiscovery (Premium) and the Microsoft Graph Explorer to search for and purge chat messages in Microsoft Teams, and respond to data spillage incidents in Teams."
 ---
 
 # Search and purge chat messages in Teams (Preview)
 
 You can use eDiscovery (Premium) and the Microsoft Graph Explorer to search for and delete chat messages in Microsoft Teams. This can help you find and remove sensitive information or inappropriate content. This search and purge workflow will also help you respond to a data spillage incident, when content containing confidential or malicious information is released through Teams chat messages.
 
-> [!NOTE]
-> This article applies to Microsoft 365 Enterprise organizations. Support for the US Government cloud (including GCC, GCC High, and DoD) is coming soon.
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you search and purge chat messages
 
@@ -138,6 +138,9 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 3. Copy the corresponding Id (or copy and paste it to a text file). You'll use this Id in the next task to purge the chat messages.
 
+> [!TIP]
+> Instead of using the previous procedure to obtain the collection Id, you can open the case in the Microsoft Purview compliance portal. Open the case and navigate to the Jobs tab. Select the relevant collection and under Support information, find the job ID (the job ID displayed here is the same as the collection ID).
+
 ### Purge the chat messages
 
 1. In Graph Explorer, run the following POST request to purge the items returned by the collection that you created in Step 2. Use the value `https://graph.microsoft.com/beta/compliance/ediscovery/cases('caseId')/sourceCollections('collectionId')/purgeData` in the address bar of the request query, where caseId and collectionId are the Ids that you obtained in the previous procedures. Be sure to surround the Id values with parentheses and single quotation marks.
@@ -150,11 +153,28 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
   For more information on purgeData, see [sourceCollection: purgeData](/graph/api/ediscovery-sourcecollection-purgedata).
 
+> [!NOTE]
+> Because Microsoft Graph Explorer is not available in the US Government cloud (GCC, GCC High, and DOD), you must use PowerShell to accomplish these tasks.
+
+You can also purge chat messages using PowerShell. For example, to purge messages in the US Government cloud you could use a command similar to:
+
+``
+Connect-MgGraph -Scopes "ediscovery.ReadWrite.All" -Environment USGov
+``
+
+``Invoke-MgGraphRequest  -Method POST -Uri '/beta/security/cases/ediscoveryCases/<case ID>/searches/<collection ID>/purgeData'
+``
+
+For more information on using PowerShell to purge chat messages, see [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata).
+
 ## Step 6: Verify chat messages are purged
 
 After you run the POST request to purge chat messages, these messages are removed from the Teams client and replaced with an automatically generated stating that an admin has removed the message. For an example of this message, see the [End-user experience](#end-user-experience) section in this article.
 
 Purged chat messages are moved to the SubstrateHolds folder, which is a hidden mailbox folder. Purged chat messages are stored there for at least 1 day, and then are permanently deleted the next time the timer job runs (typically between 1-7 days). For more information, see [Learn about retention for Microsoft Teams](retention-policies-teams.md).
+
+> [!NOTE]
+> Because Microsoft Graph Explorer is not available in the US Government cloud (GCC, GCC High, and DOD), you must use PowerShell to accomplish these tasks.
 
 ## Step 7: Reapply holds and retention policies to data sources
 

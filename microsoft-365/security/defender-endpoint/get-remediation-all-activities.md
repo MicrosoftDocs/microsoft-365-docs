@@ -2,7 +2,7 @@
 title: List all remediation activities
 description: Returns information about all remediation activities.
 keywords: apis, remediation, remediation api, get, remediation tasks, all remediation, 
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: jweston-1
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # List all remediation activities
@@ -27,7 +30,9 @@ ms.custom: api
 - [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink).
+
+> Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 [!Include[Prerelease information](../../includes/prerelease.md)]
 
@@ -96,14 +101,14 @@ vendorId|String|Related vendor name|Microsoft
 ### Request example
 
 ```http
-GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
+GET https://api.securitycenter.windows.com/api/remediationtasks/
 ```
 
 ### Response example
 
 ```json
 {
-    "@odata.context": "https://wpatdadi-luna-stg.cloudapp.net/api/$metadata#RemediationTasks",
+    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#RemediationTasks",
     "value": [
         {
             "id": "03942ef5-aewb-4w6e-b555-d6a97013844w",
@@ -147,5 +152,5 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 - [Remediation methods and properties](get-remediation-methods-properties.md)
 - [Get one remediation activity by ID](get-remediation-one-activity.md)
 - [List exposed devices of one remediation activity](get-remediation-exposed-devices-activities.md)
-- [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilities in your organization](tvm-weaknesses.md)

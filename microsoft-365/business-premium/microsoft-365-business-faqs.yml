@@ -6,10 +6,14 @@ metadata:
   f1.keywords:
   - NOCSH
   ms.author: deniseb
-  ms.topic: faq
-  ms.prod: microsoft-365-business
-  ms.collection: M365-subscription-management
-  ms.custom: AdminSurgePortfolio
+  ms.topic: how-to
+  ms.service: microsoft-365-security
+  ms.collection:
+  - tier1
+  - highpri
+  - m365-security
+  ms.subservice: other
+  ms.date: 09/15/2022
   ms.localizationpriority: medium
   audience: microsoft-business 
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
@@ -34,7 +38,7 @@ sections:
           - Helps control and manage how sensitive information is accessed and transmitted with data loss prevention policies and Azure Information Protection Plan 1.
           - Helps protect, preserve, and back up your data with Exchange Online Archiving.
           - App protection for Office and other mobile apps with Intune App Protection.
-          - Device management for Windows 10 PCs, macOS, and mobile devices with Intune device management.
+          - Device management for Windows 10 and 11 PCs, Mac, and mobile devices with Intune device management.
           - Identity protection with multi-factor authentication, self-service password reset, and conditional access.
           - Consistent security configuration across devices&mdash;protection of company data across devices; Microsoft Defender Antivirus, which is always on and up to date.
           
@@ -106,7 +110,7 @@ sections:
           
           - **Device Management for Windows 10 PCs** allows businesses to choose to set and enforce capabilities such as Microsoft Defender Antivirus protection for malware, automatic updates, and turning off screens after a prescribed amount of time. In addition, lost or stolen Windows 10 devices can be completely wiped of business applications and data through the admin center.
           
-          - **Device Management for iOS, Android & macOS** features helps businesses securely manage a diverse device ecosystem that includes iOS, Android, Windows, and macOS devices.
+          - **Device Management for iOS, Android & Mac** features helps businesses securely manage a diverse device ecosystem that includes iOS, Android, Windows, and Mac devices.
           
       - question: How does Microsoft 365 Business Premium help protect PCs in my organization from malicious attacks?
         answer: |
@@ -145,13 +149,13 @@ sections:
           The most direct path to a successful Microsoft 365 Business Premium deployment is to engage with a Microsoft Partner. They have extensive training and experience with a wide variety of customer scenarios and are best equipped to understand your environment and needs.
           
       - question: Does Microsoft 365 Business Premium include the full capabilities of Microsoft Intune?
-        answer: Yes, Microsoft 365 Business Premium subscribers are licensed to use full Intune capabilities for iOS, Android, macOS, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business Premium, like third-party app management, configuration of Wi-Fi profiles, and VPN certificates, can be managed in the full Intune console.
+        answer: Yes, Microsoft 365 Business Premium subscribers are licensed to use full Intune capabilities for iOS, Android, Mac, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business Premium, like third-party app management, configuration of Wi-Fi profiles, and VPN certificates, can be managed in the full Intune console.
 
       - question: Does Azure Active Directory (Azure AD) Premium P1 come with Microsoft 365 Business Premium?
         answer: Yes, Azure AD Premium P1 is included with Microsoft Business Premium.
 
       - question: Does Microsoft 365 Business Premium allow customers to manage Macs?
-        answer: Intune helps you securely manage iOS, Android, Windows, and macOS devices.
+        answer: Intune helps you securely manage iOS, Android, Windows, and Mac devices.
 
       - question: What is Windows Autopilot?
         answer: |

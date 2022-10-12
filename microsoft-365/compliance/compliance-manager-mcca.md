@@ -10,9 +10,10 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- tier2
 search.appverid: 
 - MOE150
 - MET150
@@ -22,6 +23,8 @@ description: "Understand how to use Configuration Analyzer for Microsoft Purview
 # Configuration Analyzer for Microsoft Purview (CAMP)
 
 **In this article:** Learn how to install and run the Configuration Analyzer for Microsoft Purview (CAMP) tool to get quickly started with Microsoft Purview Compliance Manger.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Compliance Configuration Analyzer (CAMP) overview
 
@@ -42,9 +45,9 @@ Certain user roles are required to access and use CAMP, and to access informatio
 
 You can install the CAMP tool using Windows PowerShell. Once you download and install the tool, you don't need to repeat those steps in order to run reports. Each time you open CAMP, it will ask you for you to log in, and it will generate a new, updated report.
 
-### Step 1: Install the Exchange Online PowerShell V2 module
+### Step 1: Install the Exchange Online PowerShell module
 
-To begin, you'll need the Exchange Online PowerShell module (v2.0.3 or higher) that's available in the PowerShell gallery. For installation instructions, see [Install and maintain the EXO V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+To begin, you'll need the Exchange Online PowerShell module (v2.0.3 or higher) that's available in the PowerShell gallery. For installation instructions, see [Install and maintain the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 
 ### Step 2: Install CAMP
 

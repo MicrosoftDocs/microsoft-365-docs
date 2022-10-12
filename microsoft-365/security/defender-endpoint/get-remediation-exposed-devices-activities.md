@@ -2,7 +2,7 @@
 title: List exposed devices of one remediation activity
 description: Returns information about exposed devices for the specified remediation task.
 keywords: apis, remediation, remediation api, get, remediation tasks, remediation exposed devices
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: jweston-1
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # List exposed devices of one remediation activity
@@ -67,14 +70,14 @@ rbacGroupName|String|Name of the device group this device is associated with|Ser
 ### Request example
 
 ```http
-GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
+GET https://api.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
 ```
 
 ### Response example
 
 ```json
 {
-    "@odata.context": "https://wpatdadi-luna-stg.cloudapp.net/api/$metadata#MachineReferences",
+    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineReferences",
     "value": [
         {
             "id": "3cb5df6bb3640a2d37ad09fcd357b182d684fafc",
@@ -113,5 +116,5 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 - [Remediation methods and properties](get-remediation-methods-properties.md)
 - [Get one remediation activity by Id](get-remediation-one-activity.md)
 - [List all remediation activities](get-remediation-all-activities.md)
-- [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilities in your organization](tvm-weaknesses.md)

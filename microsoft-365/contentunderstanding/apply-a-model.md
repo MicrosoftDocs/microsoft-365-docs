@@ -1,21 +1,21 @@
 ---
-title: Apply a document understanding model in Microsoft SharePoint Syntex
+title: Apply a document understanding model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to apply a published a model to a SharePoint document library in Microsoft SharePoint Syntex.
+description: Learn how to apply a published a model to a SharePoint document library in Microsoft Syntex.
 ---
 
-# Apply a document understanding model in Microsoft SharePoint Syntex
+# Apply a document understanding model in Microsoft Syntex
 
 </br>
 
@@ -104,11 +104,11 @@ While an applied model processes all files and folder content uploaded to the do
 3. The files and folders you selected will be added to the queue to be processed.
 
     > [!NOTE]
-    > You'll receive a message indicating how long classification might take. If you've selected only files, classification might take up to 30 minutes. If you've selected one or more folders, classification might take up to 24 hours.
+    > If you've selected one or more folders or are migrating a large set of files, classification might take up to 24 hours.
 
 ### Classification Date field
 
-When a SharePoint Syntex document understanding model (or a form processing model) is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
+When a Syntex document understanding model (or a form processing model) is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
 
    ![Screenshot of a document library showing the Classification Date column.](../media/content-understanding/class-date-column.png) 
 
@@ -118,13 +118,13 @@ The **Classification Date** field is used by the [**When a file is classified by
 
 The **When a file is classified by a content understanding model** trigger can then be used to start a flow using any extracted information from the file or folder.
 
-As an example, when a model is stamped with the **Classification Date**, you can use the **Send an email after SharePoint Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in the SharePoint document library.
+As an example, when a model is stamped with the **Classification Date**, you can use the **Send an email after Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in the SharePoint document library.
 
 To run the flow:
 
 1. Select a file, and then select **Integrate** > **Power Automate** > **Create a flow**.
 
-2. On the **Create a flow** panel, select **Send an email after SharePoint Syntex processes a file**.
+2. On the **Create a flow** panel, select **Send an email after Syntex processes a file**.
 
     ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
 

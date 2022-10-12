@@ -7,11 +7,11 @@ author: Kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Adm_O365
-
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -45,16 +45,16 @@ You need to be an [administrator](../add-users/about-admin-roles.md) to view and
 
 ## NPS survey insights
 
-1. In the admin center, go to the **Health** > **Product feedback** > **NPS survey insights**.
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to **Health** > **Product feedback** > **NPS survey insights**.
 2. From the **NPS survey insights** page, navigate on the page to see survey insights related to NPS for your organization.
 
-:::image type="content" source="../../media/product-feedback-main-page.png" alt-text="Screenshot: Net Promoter Score (NPS) main chart":::
+:::image type="content" source="../../media/product-feedback-main-page.png" alt-text="Screenshot: Net Promoter Score (NPS) main chart" lightbox="../../media/product-feedback-main-page.png":::
 
 ### Top topic filters
 
 We've identified the common themes from user feedback. Then we used machine learning models that train the data sets and automatically organize the feedback into **Top Topics**. You can then identify the top five topics with the most volume of verbatim feedback.  
 
-:::image type="content" source="../../media/top-topics-filter.png" alt-text="Screenshot: Top five topics with the most verbatim feedback":::
+:::image type="content" source="../../media/top-topics-filter.png" alt-text="Screenshot: Top five topics with the most verbatim feedback" lightbox="../../media/top-topics-filter.png":::
 
 > [!NOTE]
 > We only publish an intelligent topic after it meets a minimum quality bar set in partnership with subject matter experts. Precision and recall metrics are used to determine the same.
@@ -135,7 +135,7 @@ Charts are filtered by the NPS rating as follows:
 - Passives are customers that are satisfied with the service but not enough to recommend your product or service.
 - Promoters- Happy customers that are loyal, enthusiastic and are likely to recommend your product or service.
 
-:::image type="content" source="../../media/how-likely-recommend.png" alt-text="Screenshot: Chart showing how likely are you to recommend an app to a friend or colleague":::
+:::image type="content" source="../../media/how-likely-recommend.png" alt-text="Screenshot: Chart showing how likely are you to recommend an app to a friend or colleague" lightbox="../../media/how-likely-recommend.png":::
 
 ### Export to CSV and Search
 
@@ -158,7 +158,7 @@ The majority of Microsoft 365 for business **Products** can be found under this 
 
 Use **Feedback Types** (set only to NPS feedback types) to filter feedback that we collect.
 
-:::image type="content" source="../../media/feedback-filters.png" alt-text="Screenshot: Chart showing feedback types":::
+:::image type="content" source="../../media/feedback-filters.png" alt-text="Screenshot: Chart showing feedback types" lightbox="../../media/feedback-filters.png":::
 
 ### We want to hear from you
 

@@ -1,9 +1,10 @@
 ---
 title: "Keyword queries and search conditions for eDiscovery"
+description: "Learn about email and document properties that you can search by using the eDiscovery search tools in Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -12,16 +13,14 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn about email and document properties that you can search by using the eDiscovery search tools in Microsoft 365."
 ---
 
 # Keyword queries and search conditions for eDiscovery
@@ -41,6 +40,8 @@ For step-by-step instructions on how to create different eDiscovery searches, se
 > [!NOTE]
 > eDiscovery searches in the compliance portal and the corresponding **\*-ComplianceSearch** cmdlets in Security & Compliance PowerShell use the Keyword Query Language (KQL). For more detailed information, see [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Searchable email properties
 
 The following table lists email message properties that can be searched by using the eDiscovery search tools in the compliance portal or by using the **New-ComplianceSearch** or the **Set-ComplianceSearch** cmdlet. The table includes an example of the  _property:value_ syntax for each property and a description of the search results returned by the examples. You can type these  `property:value` pairs in the keywords box for an eDiscovery search.
@@ -48,9 +49,9 @@ The following table lists email message properties that can be searched by using
 > [!NOTE]
 > When searching email properties, it's not possible to search for items in which the specified property is empty or blank. For example, using the *property:value* pair of **subject:""** to search for email messages with an empty subject line will return zero results. This also applies when searching site and contact properties.
 
-|Property|Property description|Examples|Search results returned by the examples|
-|---|---|---|---|
-|AttachmentNames|The names of files attached to an email message.|`attachmentnames:annualreport.ppt` <p> `attachmentnames:annual*` <br/> `attachmentnames:.pptx`|Messages that have an attached file named annualreport.ppt. In the second example, using the wildcard character ( * ) returns messages with the word "annual" in the file name of an attachment. The third example returns all attachments with the pptx file extension.|
+|**Property**|**Property description**|**Examples**|**Search results returned by the examples**|
+|:-----------|:-----------------------|:-----------|:------------------------------------------|
+|AttachmentNames|The names of files attached to an email message.|`attachmentnames:annualreport.ppt` <p> `attachmentnames:annual*`|Messages that have an attached file named annualreport.ppt. In the second example, using the wildcard character ( * ) returns messages with the word "annual" in the file name of an attachment.<sup>1</sup>
 |Bcc|The Bcc field of an email message.<sup>1</sup>|`bcc:pilarp@contoso.com` <p> `bcc:pilarp` <p> `bcc:"Pilar Pinilla"`|All examples return messages with Pilar Pinilla included in the Bcc field.<br>([See Recipient Expansion](keyword-queries-and-search-conditions.md#recipient-expansion))|
 |Category|The categories to search. Categories can be defined by users by using Outlook or Outlook on the web (formerly known as Outlook Web App). The possible values are: <ul><li>blue<li>green<li>orange<li>purple<li>red<li>yellow</li></ul>|`category:"Red Category"`|Messages that have been assigned the red category in the source mailboxes.|
 |Cc|The Cc field of an email message.<sup>1</sup>|`cc:pilarp@contoso.com` <p> `cc:"Pilar Pinilla"`|In both examples, messages with Pilar Pinilla specified in the Cc field.<br>([See Recipient Expansion](keyword-queries-and-search-conditions.md#recipient-expansion))|
@@ -135,7 +136,7 @@ The following table lists the contact properties that are indexed and that you c
 |Surname|The name in the **Last** name property.|
 |Title|The title in the **Job title** property.|
 
-## Searchable sensitive data types
+<!--## Searchable sensitive data types
 
 You can use eDiscovery search tools in the compliance portal to search for sensitive data, such as credit card numbers or social security numbers, that is stored in documents on SharePoint and OneDrive for Business sites. You can do this by using the `SensitiveType` property and the name (or ID) of a sensitive information type in a keyword query. For example, the query `SensitiveType:"Credit Card Number"` returns documents that contain a credit card number. The query  `SensitiveType:"U.S. Social Security Number (SSN)"` returns documents that contain a U.S. social security number.
 
@@ -143,7 +144,7 @@ To see a list of the sensitive information types that you can search for, go to 
 
 For more information about creating queries using the `SensitiveType` property, see [Form a query to find sensitive data stored on sites](form-a-query-to-find-sensitive-data-stored-on-sites.md).
 
-### Limitations for searching sensitive data types
+<!--### Limitations for searching sensitive data types
 
 - To search for custom sensitive information types, you have to specify the ID of the sensitive information type in the `SensitiveType` property. Using the name of a custom sensitive information type (as shown in the example for built-in sensitive information types in the previous section) will return no results. Use the **Publisher** column on the **Sensitive info types** page in the compliance center (or the **Publisher** property in PowerShell) to differentiate between built-in and custom sensitive information types. Built-in sensitive data types have a value of `Microsoft Corporation` for the **Publisher** property.
 
@@ -155,7 +156,7 @@ For more information about creating queries using the `SensitiveType` property, 
 
   Then you can use the ID in the `SensitiveType` search property to return documents that contain the custom sensitive data type; for example, `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
 
-- You can't use sensitive information types and the `SensitiveType` search property to search for sensitive data at-rest in Exchange Online mailboxes. This includes 1:1 chat messages, 1:N group chat messages, and team channel conversations in Microsoft Teams because all of this content is stored in mailboxes. However, you can use data loss prevention (DLP) policies to protect sensitive email data in transit. For more information, see [Learn about data loss prevention](dlp-learn-about-dlp.md) and [Search for and find personal data](/compliance/regulatory/gdpr).
+- You can't use sensitive information types and the `SensitiveType` search property to search for sensitive data at-rest in Exchange Online mailboxes. This includes 1:1 chat messages, 1:N group chat messages, and team channel conversations in Microsoft Teams because all of this content is stored in mailboxes. However, you can use data loss prevention (DLP) policies to protect sensitive email data in transit. For more information, see [Learn about data loss prevention](dlp-learn-about-dlp.md) and [Search for and find personal data](/compliance/regulatory/gdpr).-->
 
 ## Search operators
 
@@ -278,7 +279,7 @@ Keep the following in mind when using search conditions.
 
 - The search query that is created by using the keywords box and conditions is displayed on the **Search** page, in the details pane for the selected search. In a query, everything to the right of the notation  `(c:c)` indicates conditions that are added to the query.
 
-- Conditions only add properties to the search query; the don't add operators. This is why the query displayed in the detail pane doesn't show operators to the right of the  `(c:c)` notation. KQL adds the logical operators (according to the previously explained rules) when the executing the query.
+- Conditions only add properties to the search query; they don't add operators. This is why the query displayed in the detail pane doesn't show operators to the right of the  `(c:c)` notation. KQL adds the logical operators (according to the previously explained rules) when the executing the query.
 
 - You can use the drag and drop control to resequence the order of conditions. Click on the control for a condition and move it up or down.
 

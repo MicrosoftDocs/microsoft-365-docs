@@ -3,7 +3,8 @@ title: Enable the evaluation environment for Microsoft Defender for Cloud Apps
 description: Learn the architecture of Defender for Cloud Apps within Microsoft Defender for Office 365 and understand interactions between the Microsoft 365 Defender products.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,11 +16,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365solution-scenario
   - m365solution-evalutatemtp
+  - zerotrust-solution
+  - highpri
+  - tier1
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Enable the evaluation environment for Microsoft Defender for Cloud Apps

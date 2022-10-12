@@ -7,17 +7,17 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -101,5 +101,4 @@ To protect all your admin accounts, make sure to follow these recommendations:
 
 ## Next objective
 
-Take the steps to [turn on security defaults](m365bp-conditional-access.md).
-
+[Increase threat protection for Microsoft 365 Business Premium](m365bp-increase-protection.md)
