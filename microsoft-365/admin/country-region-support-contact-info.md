@@ -17,7 +17,7 @@ description: "Learn how to get phone support for your Microsoft 365 for business
 
 # Support contacts by country or region
 
-Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday to Friday.\
+Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday through Friday.\
 Technical support is provided in English 24 hours a day, 7 days a week.
 
 Admins, have your account details ready when you call.
@@ -86,7 +86,7 @@ If your country or region isn't listed above, use the sections below to find the
 001 212 497 6305
 
 **Billing support hours:**\
-English: Monday &mdash; Friday, 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -102,7 +102,7 @@ English: 24 hours a day, 7 days a week
 1 877 639 9636
 
 **Billing support hours:**\
-English: Monday  Friday 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -118,13 +118,13 @@ English: 24 hours a day, 7 days a week
 1 800 865 9408
 
 **Billing support hours:**\
-English: Monday &mdash Friday 9 AM-5 PM Local\
-French: Mon-Fri 9 AM-5 PM ET
+English: Monday through Friday 9 AM-5 PM Local\
+French: Monday through Friday, 9 AM-5 PM ET
    :::column-end:::
    :::column:::
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week\
-French: Mon-Fri 9 AM-5 PM ET
+French: Monday through Friday, 9 AM-5 PM ET
    :::column-end:::
 :::row-end:::
 
@@ -136,7 +136,7 @@ French: Mon-Fri 9 AM-5 PM ET
 0800 012 1447
 
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -153,7 +153,7 @@ Spanish: 24 hours a day, 7 days a week
 Select "Business", then select "Microsoft 365"
 
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -170,7 +170,7 @@ Spanish: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 7 AM-3 PM
+English: Monday through Friday, 7 AM-3 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -187,7 +187,7 @@ English: 24 hours a day, 7 days a week
 Select "Business", then select "Microsoft 365"
 
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -207,7 +207,7 @@ After dialing, enter:\
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
@@ -226,7 +226,7 @@ Local call charges apply.
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
@@ -245,7 +245,7 @@ After dialing, enter:\
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
@@ -261,7 +261,7 @@ Spanish: 24 hours a day, 7 days a week
 Select "Business", then select "Microsoft 365"
 
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -278,12 +278,12 @@ Spanish: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 6 AM-2 PM\
-English: Mon-Fri 6 AM-2 PM
+French: Monday through Friday, 6 AM-2 PM\
+English: Monday through Friday, 6 AM-2 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 5 AM-6 PM\
+French: Monday through Friday, 5 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -296,7 +296,7 @@ English: 24 hours a day, 7 days a week
 1 800 865 9408
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -354,7 +354,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -371,7 +371,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -388,8 +388,8 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-Dutch: Mon-Fri 4 AM-noon\
-English: Mon-Fri 4 AM-noon
+Dutch: Monday through Friday, 4 AM-noon\
+English: Monday through Friday, 4 AM-noon
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -406,7 +406,7 @@ English: 24 hours a day, 7 days a week
 Select "Business", then select "Microsoft 365"
 
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -422,7 +422,7 @@ Spanish: 24 hours a day, 7 days a week
 1 877 639 0597
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -439,8 +439,8 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-Dutch: Mon-Fri 4 AM-noon\
-English: Mon-Fri 4 AM-noon
+Dutch: Monday through Friday, 4 AM-noon\
+English: Monday through Friday, 4 AM-noon
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -457,7 +457,7 @@ English: 24 hours a day, 7 days a week
 Local call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -473,7 +473,7 @@ English: 24 hours a day, 7 days a week
 1 877 308 6465
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -490,7 +490,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -507,7 +507,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-Spanish: Mon-Fri 11 AM-7 PM
+Spanish: Monday through Friday, 11 AM-7 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -528,7 +528,7 @@ Alternative Phone Number: 1 809 200 8794\
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
@@ -544,7 +544,7 @@ Spanish: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -561,12 +561,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 6 AM-noon\
-English: Mon-Fri 6 AM-1 PM
+French: Monday through Friday, 6 AM-noon\
+English: Monday through Friday, 6 AM-1 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 6 AM-1 PM\
+French: Monday through Friday, 6 AM-1 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -580,12 +580,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 3 AM-11 AM\
-English: Mon-Fri 3 AM-11 AM
+French: Monday through Friday, 3 AM-11 AM\
+English: Monday through Friday, 3 AM-11 AM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 2 AM-3 PM\
+French: Monday through Friday, 2 AM-3 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -598,7 +598,7 @@ English: 24 hours a day, 7 days a week
 1 800 865 9408
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -615,12 +615,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French Mon-Fri 6 AM-noon\
-English: Mon-Fri 6 AM-1 PM
+French Monday through Friday, 6 AM-noon\
+English: Monday through Friday, 6 AM-1 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 6 AM-1 PM\
+French: Monday through Friday, 6 AM-1 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -634,7 +634,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -650,8 +650,8 @@ English: 24 hours a day, 7 days a week
 1 800 865 9408
 
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -669,7 +669,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -686,12 +686,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 4 AM-12 PM\
-English: Mon-Fri 4 AM-12 PM
+French: Monday through Friday, 4 AM-12 PM\
+English: Monday through Friday, 4 AM-12 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 3 AM-4 PM\
+French: Monday through Friday, 3 AM-4 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -704,7 +704,7 @@ English: 24 hours a day, 7 days a week
 1 877 302 1308
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -721,7 +721,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -738,12 +738,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 4 AM-noon\
-English: Mon-Fri 4 AM-noon
+French: Monday through Friday, 4 AM-noon\
+English: Monday through Friday, 4 AM-noon
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 3 AM-4 PM\
+French: Monday through Friday, 3 AM-4 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -757,7 +757,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -774,7 +774,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -791,7 +791,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -807,7 +807,7 @@ English: 24 hours a day, 7 days a week
 1 855 214 7711
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -824,7 +824,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -840,7 +840,7 @@ English: 24 hours a day, 7 days a week
 800 865 9408
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -886,7 +886,7 @@ Local call charges apply.
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
@@ -901,7 +901,7 @@ Spanish: 24 hours a day, 7 days a week
 800 110 263
 
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -922,8 +922,8 @@ Alternative Phone Number:\
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-Portuguese: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+Portuguese: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 Portuguese: 24 hours a day, 7 days a week\
@@ -943,7 +943,7 @@ Local call charges apply.
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
@@ -958,7 +958,7 @@ Spanish: 24 hours a day, 7 days a week
 01 800 518 1781
 
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -978,7 +978,7 @@ After dialing, enter:\
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
@@ -994,7 +994,7 @@ Spanish: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 10 AM-6 PM
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1011,12 +1011,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 5 AM-1 PM\
-English: Mon-Fri 5 AM-1 PM
+French: Monday through Friday, 5 AM-1 PM\
+English: Monday through Friday, 5 AM-1 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 4 AM-5 PM\
+French: Monday through Friday, 4 AM-5 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1030,7 +1030,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1047,7 +1047,7 @@ English: 24 hours a day, 7 days a week
 Select "Business", then select "Microsoft 365"
 
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1063,7 +1063,7 @@ Spanish: 24 hours a day, 7 days a week
 009 800 441 0088
 
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1080,7 +1080,7 @@ Spanish: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 11 AM-7 PM
+English: Monday through Friday, 11 AM-7 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1097,8 +1097,8 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-Dutch: Mon-Fri 5 AM-1 PM\
-English: Mon-Fri 5 AM-1 PM
+Dutch: Monday through Friday, 5 AM-1 PM\
+English: Monday through Friday, 5 AM-1 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1114,7 +1114,7 @@ English: 24 hours a day, 7 days a week
 000 411 002 7131
 
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1130,7 +1130,7 @@ Spanish: 24 hours a day, 7 days a week
 0800 100 8763
 
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1216,7 +1216,7 @@ Spanish: 24 hours a day, 7 days a week
 Local call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 10 AM-6 PM
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1235,7 +1235,7 @@ Local call charges apply.
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
@@ -1251,12 +1251,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-Spanish: Mon-Fri 10 AM-6 PM\
-English: Mon-Fri 10 AM-6 PM
+Spanish: Monday through Friday, 10 AM-6 PM\
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Spanish: Mon-Fri 9 AM-10 PM\
+Spanish: Monday through Friday, 9 AM-10 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1271,12 +1271,12 @@ Select "Business", then select "Microsoft 365"\
 Local call charges apply.
 
 **Billing support hours:**\
-Russian: Mon-Fri 10 AM-7 PM Moscow\
-English: Mon-Fri 9 AM-5 PM London
+Russian: Monday through Friday, 10 AM-7 PM Moscow\
+English: Monday through Friday, 9 AM-5 PM London
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Russian: Mon-Fri 7 AM-8 PM Moscow\
+Russian: Monday through Friday, 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1292,12 +1292,12 @@ Alternative Phone Number: 01 206 09 15 78\
 Local call charges apply.
 
 **Billing support hours:**\
-German: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+German: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-German: Mon-Fri 8 AM-9 PM\
+German: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1312,12 +1312,12 @@ Select "Business", then select "Microsoft 365"\
 Local call charges apply.
 
 **Billing support hours:**\
-Russian: Mon-Fri 10 AM-7 PM Moscow\
-English: Mon-Fri 9 AM-5 PM London
+Russian: Monday through Friday, 10 AM-7 PM Moscow\
+English: Monday through Friday, 9 AM-5 PM London
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Russian: Mon-Fri 7 AM-8 PM Moscow\
+Russian: Monday through Friday, 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1331,12 +1331,12 @@ English: 24 hours a day, 7 days a week
 Select "Business", then select "Microsoft 365"
 
 **Billing support hours:**\
-Russian: Mon-Fri 10 AM-7 PM Moscow\
-English: Mon-Fri 9 AM-5 PM London
+Russian: Monday through Friday, 10 AM-7 PM Moscow\
+English: Monday through Friday, 9 AM-5 PM London
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Russian: Mon-Fri 7 AM-8 PM Moscow\
+Russian: Monday through Friday, 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1352,13 +1352,13 @@ Alternative Phone Number: 02 200 88 84\
 Local call charges apply.
 
 **Billing support hours:**\
-Dutch: Mon-Fri 9 AM-5 PM\
-French: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+Dutch: Monday through Friday, 9 AM-5 PM\
+French: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 8 AM-9 PM\
+French: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1376,7 +1376,7 @@ International call charges apply.
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
@@ -1391,7 +1391,7 @@ English: 24 hours a day, 7 days a week
 00800 118 4446
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1408,7 +1408,7 @@ English: 24 hours a day, 7 days a week
 Local call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1425,7 +1425,7 @@ English: 24 hours a day, 7 days a week
 Local call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1444,12 +1444,12 @@ Alternative Phone Number: 239 016 433\
 Local call charges apply.
 
 **Billing support hours:**\
-Czech: Mon-Fri 9 AM-6 PM\
-English: Mon-Fri 9 AM-6 PM
+Czech: Monday through Friday, 9 AM-6 PM\
+English: Monday through Friday, 9 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Czech: Mon-Fri 8 AM-6 PM\
+Czech: Monday through Friday, 8 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1466,7 +1466,7 @@ Local call charges apply.
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
@@ -1481,7 +1481,7 @@ English: 24 hours a day, 7 days a week
 800 0044 483
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1498,7 +1498,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1518,7 +1518,7 @@ Local call charges apply.
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
@@ -1536,12 +1536,12 @@ Alternative Phone Number: 01 57 32 42 97\
 Local call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+French: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 8 AM-9 PM\
+French: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1556,12 +1556,12 @@ Select "Business", then select "Microsoft 365"\
 Local call charges apply.
 
 **Billing support hours:**\
-Russian: Mon-Fri 10 AM-7 PM Moscow\
-English: Mon-Fri 9 AM-5 PM London
+Russian: Monday through Friday, 10 AM-7 PM Moscow\
+English: Monday through Friday, 9 AM-5 PM London
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Russian: Mon-Fri 7 AM-8 PM Moscow\
+Russian: Monday through Friday, 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1577,12 +1577,12 @@ Alternative Phone Number: 069 380 789 508\
 Local call charges apply.
 
 **Billing support hours:**\
-German: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+German: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-German: Mon-Fri 8 AM-9 PM\
+German: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1596,7 +1596,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 11 AM-7 PM
+English: Monday through Friday, 11 AM-7 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1613,7 +1613,7 @@ English: 24 hours a day, 7 days a week
 Local call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1630,7 +1630,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 10 AM-6 PM
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1649,11 +1649,11 @@ Alternative Phone Number: +36 1 778 9292\
 Local call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Hungarian: Mon-Fri 8 AM-6 PM\
+Hungarian: Monday through Friday, 8 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1666,7 +1666,7 @@ English: 24 hours a day, 7 days a week
 800 9609
 
 **Billing support hours:**\
-English: Mon-Fri 8 AM-4 PM
+English: Monday through Friday, 8 AM-4 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1686,7 +1686,7 @@ Local call charges apply.
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
@@ -1702,7 +1702,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 10 AM-6 PM
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1721,12 +1721,12 @@ Alternative Phone Number: 02 6943 0746\
 Local call charges apply.
 
 **Billing support hours:**\
-Italian: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+Italian: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Italian: Mon-Fri 8 AM-9 PM\
+Italian: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1740,7 +1740,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-6 PM
+English: Monday through Friday, 9 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1757,7 +1757,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 10 AM-6 PM
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1774,7 +1774,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 11 AM-7 PM
+English: Monday through Friday, 11 AM-7 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1791,7 +1791,7 @@ English: 24 hours a day, 7 days a week
 Local call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1810,12 +1810,12 @@ Alternative Phone Number: +41 22 76 141 14\
 Local call charges apply.
 
 **Billing support hours:**\
-German: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+German: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-German: Mon-Fri 8 AM-9 PM\
+German: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1829,7 +1829,7 @@ English: 24 hours a day, 7 days a week
 Local call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1848,14 +1848,14 @@ Alternative Phone Number: 24 87 15 10\
 Local call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 9 AM-5 PM\
-German: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+French: Monday through Friday, 9 AM-5 PM\
+German: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 8 AM-9 PM\
-German: Mon-Fri 8 AM-9 PM\
+French: Monday through Friday, 8 AM-9 PM\
+German: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1869,7 +1869,7 @@ English: 24 hours a day, 7 days a week
 Local call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1887,7 +1887,7 @@ Select "Business", then select "Microsoft 365"\
 Local call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1904,12 +1904,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+French: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 8 AM-9 PM\
+French: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1923,7 +1923,7 @@ English: 24 hours a day, 7 days a week
 Select "Business", then select "Microsoft 365"
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1942,8 +1942,8 @@ Alternative Phone Number: 020 203 5362\
 Local call charges apply.
 
 **Billing support hours:**\
-Dutch: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+Dutch: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -1963,7 +1963,7 @@ After dialing, enter:\
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
@@ -1982,7 +1982,7 @@ Local call charges apply.
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
@@ -2000,12 +2000,12 @@ Alternative Phone Number: 022 306 05 17\
 Local call charges apply.
 
 **Billing support hours:**\
-Polish: Mon-Fri 8 AM-6 PM\
-English: Mon-Fri 8 AM-6 PM
+Polish: Monday through Friday, 8 AM-6 PM\
+English: Monday through Friday, 8 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Polish: Mon-Fri 8 AM-6 PM\
+Polish: Monday through Friday, 8 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2021,11 +2021,11 @@ Alternative Phone Number: 21 366 5030\
 Local call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Portuguese: Mon-Fri 8 AM-6 PM\
+Portuguese: Monday through Friday, 8 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2042,7 +2042,7 @@ Local call charges apply.
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
@@ -2060,12 +2060,12 @@ Alternative Phone Number: 499 922 86 23\
 Local call charges apply.
 
 **Billing support hours:**\
-Russian: Mon-Fri 10 AM-7 PM Moscow\
-English: Mon-Fri 9 AM-5 PM London
+Russian: Monday through Friday, 10 AM-7 PM Moscow\
+English: Monday through Friday, 9 AM-5 PM London
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Russian: Mon-Fri 7 AM-8 PM Moscow\
+Russian: Monday through Friday, 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2079,12 +2079,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-Italian: Mon-Fri 10 AM-6 PM\
-English: Mon-Fri 10 AM-6 PM
+Italian: Monday through Friday, 10 AM-6 PM\
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Italian: Mon-Fri 9 AM-10 PM\
+Italian: Monday through Friday, 9 AM-10 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2097,7 +2097,7 @@ English: 24 hours a day, 7 days a week
 0800 190 095
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -2117,7 +2117,7 @@ Local call charges apply.
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
@@ -2132,7 +2132,7 @@ English: 24 hours a day, 7 days a week
 080 080 922
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -2151,12 +2151,12 @@ Alternative Phone Number: 912 718 160\
 Local call charges apply.
 
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Spanish: Mon-Fri 8 AM-9 PM\
+Spanish: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2170,7 +2170,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-6 PM
+English: Monday through Friday, 9 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -2190,7 +2190,7 @@ Local call charges apply.
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
@@ -2208,16 +2208,16 @@ Alternative Phone Number: 022 76 141 14\
 Local call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 9 AM-5 PM\
-German: Mon-Fri 9 AM-5 PM\
-Italian: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+French: Monday through Friday, 9 AM-5 PM\
+German: Monday through Friday, 9 AM-5 PM\
+Italian: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 8 AM-9 PM\
-German: Mon-Fri 8 AM-9 PM\
-Italian: Mon-Fri 8 AM-9 PM\
+French: Monday through Friday, 8 AM-9 PM\
+German: Monday through Friday, 8 AM-9 PM\
+Italian: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2230,12 +2230,12 @@ English: 24 hours a day, 7 days a week
 0 850 3902777
 
 **Billing support hours:**\
-Turkish: Mon-Fri 9 AM-6 PM\
-English: Mon-Fri 9 AM-6 PM
+Turkish: Monday through Friday, 9 AM-6 PM\
+English: Monday through Friday, 9 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Turkish: Mon-Fri 8 AM-6 PM\
+Turkish: Monday through Friday, 8 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2248,12 +2248,12 @@ English: 24 hours a day, 7 days a week
 0800 502 285
 
 **Billing support hours:**\
-Russian: Mon-Fri 10 AM-7 PM Moscow\
-English: Mon-Fri 9 AM-5 PM London
+Russian: Monday through Friday, 10 AM-7 PM Moscow\
+English: Monday through Friday, 9 AM-5 PM London
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Russian: Mon-Fri 7 AM-8 PM Moscow\
+Russian: Monday through Friday, 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2270,7 +2270,7 @@ Local call charges apply.
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
@@ -2288,12 +2288,12 @@ Alternative Phone Number: 02 6943 0746\
 Local call charges apply.
 
 **Billing support hours:**\
-Italian: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+Italian: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Italian: Mon-Fri 9 AM-6 PM\
+Italian: Monday through Friday, 9 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2377,14 +2377,14 @@ Select "Business", then select "Microsoft 365"\
 Local call charges apply.
 
 **Billing support hours:**\
-Arabic: Sun-Thu 9 AM-5 PM\
-French: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+Arabic: Sunday through Thursday, 9 AM-5 PM\
+French: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Arabic: Sun-Thu 9 AM-5 PM\
-French: Mon-Fri 8 AM-9 PM\
+Arabic: Sunday through Thursday, 9 AM-5 PM\
+French: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2398,11 +2398,11 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Portuguese: Mon-Fri 9 AM-10 PM\
+Portuguese: Monday through Friday, 9 AM-10 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2416,12 +2416,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+French: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 8 AM-9 PM\
+French: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2435,7 +2435,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -2452,7 +2452,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -2469,12 +2469,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 8AM-4 PM\
-English: Mon-Fri 8 AM-4 PM
+French: Monday through Friday, 8AM-4 PM\
+English: Monday through Friday, 8 AM-4 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 7 AM-8 PM\
+French: Monday through Friday, 7 AM-8 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2488,12 +2488,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 10 AM-6 PM\
-English: Mon-Fri 10 AM-6 PM
+French: Monday through Friday, 10 AM-6 PM\
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 9 AM-10 PM\
+French: Monday through Friday, 9 AM-10 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2507,11 +2507,11 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 8 AM-4 PM
+English: Monday through Friday, 8 AM-4 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Portuguese: Mon-Fri 7 AM-8 PM\
+Portuguese: Monday through Friday, 7 AM-8 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2526,12 +2526,12 @@ Select "Business", then select "Microsoft 365"\
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 8 AM-4 PM\
-English: Mon-Fri 8 AM-4 PM
+French: Monday through Friday, 8 AM-4 PM\
+English: Monday through Friday, 8 AM-4 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 8 AM-9 PM\
+French: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2545,12 +2545,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+French: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 8 AM-9 PM\
+French: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2564,12 +2564,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+French: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 8 AM-9 PM\
+French: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2582,12 +2582,12 @@ English: 24 hours a day, 7 days a week
 +1 312 843 5147
 
 **Billing support hours:**\
-French: Mon-Fri 11 AM-7 PM\
-English: Mon-Fri 11 AM-7 PM
+French: Monday through Friday, 11 AM-7 PM\
+English: Monday through Friday, 11 AM-7 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 10 AM-11 PM\
+French: Monday through Friday, 10 AM-11 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2602,12 +2602,12 @@ Select "Business", then select "Microsoft 365"\
 Local call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+French: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 8 AM-9 PM\
+French: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2621,12 +2621,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+French: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 8 AM-9 PM\
+French: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2641,12 +2641,12 @@ Select "Business", then select "Microsoft 365"\
 Local call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 8 AM-4 PM\
-English: Mon-Fri 8 AM-4 PM
+French: Monday through Friday, 8 AM-4 PM\
+English: Monday through Friday, 8 AM-4 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 7 AM-8 PM\
+French: Monday through Friday, 7 AM-8 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2660,12 +2660,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 11 AM-7 PM\
-English: Mon-Fri 11 AM-7 PM
+French: Monday through Friday, 11 AM-7 PM\
+English: Monday through Friday, 11 AM-7 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 10 AM-11 PM\
+French: Monday through Friday, 10 AM-11 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2678,12 +2678,12 @@ English: 24 hours a day, 7 days a week
 0800 000 0325
 
 **Billing support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
-English: Mon-Fri 10 AM-6 PM
+Arabic: Sunday through Thursday, 10 AM-6 PM\
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
+Arabic: Sunday through Thursday, 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2697,12 +2697,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+Spanish: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Spanish: Mon-Fri 8 AM-9 PM\
+Spanish: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2717,12 +2717,12 @@ Select "Business", then select "Microsoft 365"\
 International call charges apply.
 
 **Billing support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
-English: Mon-Fri 10 AM-6 PM
+Arabic: Sunday through Thursday, 10 AM-6 PM\
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
+Arabic: Sunday through Thursday, 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2736,7 +2736,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 10 AM-6 PM
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -2753,7 +2753,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 10 AM-6 PM
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -2770,12 +2770,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 1 PM-9 PM\
-English: Mon-Fri 1 PM-9 PM
+French: Monday through Friday, 1 PM-9 PM\
+English: Monday through Friday, 1 PM-9 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 12 PM-11 PM\
+French: Monday through Friday, 12 PM-11 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2789,12 +2789,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+French: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 8 AM-9 PM\
+French: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2808,7 +2808,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -2826,7 +2826,7 @@ Select "Business", then select "Microsoft 365"\
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 8 AM-4 PM
+English: Monday through Friday, 8 AM-4 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -2843,7 +2843,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 10 AM-6 PM
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -2860,7 +2860,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -2879,7 +2879,7 @@ Select "Business", then select "Microsoft 365"\
 Local call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 10 AM-6 PM
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -2896,7 +2896,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 10 AM-6 PM
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -2913,7 +2913,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -2931,12 +2931,12 @@ Select "Business", then select "Microsoft 365"\
 International call charges apply.
 
 **Billing support hours:**\
-Arabic: Sun-Thu 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+Arabic: Sunday through Thursday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Arabic: Sun-Thu 9 AM-5 PM\
+Arabic: Sunday through Thursday, 9 AM-5 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2950,12 +2950,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 11 AM-7 PM\
-English: Mon-Fri 11 AM-7 PM
+French: Monday through Friday, 11 AM-7 PM\
+English: Monday through Friday, 11 AM-7 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 10 AM-11 PM\
+French: Monday through Friday, 10 AM-11 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2969,7 +2969,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 11 AM-7 PM
+English: Monday through Friday, 11 AM-7 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -2986,12 +2986,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 8 AM-4 PM\
-English: Mon-Fri 8 AM-4 PM
+French: Monday through Friday, 8 AM-4 PM\
+English: Monday through Friday, 8 AM-4 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 7AM-8 PM\
+French: Monday through Friday, 7AM-8 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3006,12 +3006,12 @@ Select "Business", then select "Microsoft 365"\
 International call charges apply.
 
 **Billing support hours:**\
-Arabic: Sun-Thu 8 AM-4 PM\
-English: Mon-Fri 8 AM-4 PM
+Arabic: Sunday through Thursday, 8 AM-4 PM\
+English: Monday through Friday, 8 AM-4 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Arabic: Sun-Thu 8 AM-4 PM\
+Arabic: Sunday through Thursday, 8 AM-4 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3024,12 +3024,12 @@ English: 24 hours a day, 7 days a week
 802 044 0086
 
 **Billing support hours:**\
-French: Mon-Fri 11 AM-7 PM\
-English: Mon-Fri 11 AM-7 PM
+French: Monday through Friday, 11 AM-7 PM\
+English: Monday through Friday, 11 AM-7 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 11 AM-midnight\
+French: Monday through Friday, 11 AM-midnight\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3043,12 +3043,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 11 AM-7 PM\
-English: Mon-Fri 11 AM-7 PM
+French: Monday through Friday, 11 AM-7 PM\
+English: Monday through Friday, 11 AM-7 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 10 AM-11 PM\
+French: Monday through Friday, 10 AM-11 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3063,14 +3063,14 @@ Select "Business", then select "Microsoft 365"\
 Local call charges apply.
 
 **Billing support hours:**\
-Arabic: Sun-Thu 8 AM-4 PM\
-French: Mon-Fri 8 AM-4 PM\
-English: Mon-Fri 8 AM-4 PM
+Arabic: Sunday through Thursday, 8 AM-4 PM\
+French: Monday through Friday, 8 AM-4 PM\
+English: Monday through Friday, 8 AM-4 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Arabic: Sun-Thu 8 AM-4 PM\
-French: Mon-Fri 7 AM-8 PM\
+Arabic: Sunday through Thursday, 8 AM-4 PM\
+French: Monday through Friday, 7 AM-8 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3084,11 +3084,11 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 7 AM-6 PM
+English: Monday through Friday, 7 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Portuguese: Mon-Fri 9 AM-7 PM\
+Portuguese: Monday through Friday, 9 AM-7 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3103,7 +3103,7 @@ Select "Business", then select "Microsoft 365"\
 Local call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -3120,12 +3120,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+French: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 8 AM-9 PM\
+French: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3140,7 +3140,7 @@ Select "Business", then select "Microsoft 365"\
 Local call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -3157,12 +3157,12 @@ English: 24 hours a day, 7 days a week
 Local call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri noon-8 PM\
-English: Mon-Fri noon-8 PM
+French: Monday through Friday, noon-8 PM\
+English: Monday through Friday, noon-8 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 11 AM-11 PM\
+French: Monday through Friday, 11 AM-11 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3177,12 +3177,12 @@ Select "Business", then select "Microsoft 365"\
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 10 AM-6 PM\
-English: Mon-Fri 10 AM-6 PM
+French: Monday through Friday, 10 AM-6 PM\
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 9 AM-10 PM\
+French: Monday through Friday, 9 AM-10 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3196,11 +3196,11 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Portuguese: Mon-Fri 8 AM-9 PM\
+Portuguese: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3217,11 +3217,11 @@ After dialing, enter:\
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-French: Mon-Fri 8 AM-4 PM\
-English: Mon-Fri 8 AM-4 PM
+French: Monday through Friday, 8 AM-4 PM\
+English: Monday through Friday, 8 AM-4 PM
 
 **Technical support hours:**\
-French: Mon-Fri 7 AM-8 PM\
+French: Monday through Friday, 7 AM-8 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3235,7 +3235,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 1 PM-9 PM
+English: Monday through Friday, 1 PM-9 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -3252,7 +3252,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -3270,12 +3270,12 @@ Select "Business", then select "Microsoft 365"\
 International call charges apply.
 
 **Billing support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
-English: Mon-Fri 9 AM-5 PM
+Arabic: Sunday through Thursday, 10 AM-6 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
+Arabic: Sunday through Thursday, 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3292,7 +3292,7 @@ Local call charges apply.
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
@@ -3308,7 +3308,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 10 AM-6 PM
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -3325,7 +3325,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -3343,7 +3343,7 @@ Select "Business", then select "Microsoft 365"\
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 10 AM-6 PM
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -3360,12 +3360,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 8 AM-4 AM\
-English: Mon-Fri 8 AM-4 AM
+French: Monday through Friday, 8 AM-4 AM\
+English: Monday through Friday, 8 AM-4 AM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 7 AM-8 AM\
+French: Monday through Friday, 7 AM-8 AM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3380,14 +3380,14 @@ Select "Business", then select "Microsoft 365"\
 Local call charges apply.
 
 **Billing support hours:**\
-Arabic: Sun-Thu 9 AM-5 PM\
-French: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+Arabic: Sunday through Thursday, 9 AM-5 PM\
+French: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Arabic: Sun-Thu 9 AM-5 PM\
-French: Mon-Fri 8 AM-9 PM\
+Arabic: Sunday through Thursday, 9 AM-5 PM\
+French: Monday through Friday, 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3401,7 +3401,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 10 AM-6 PM
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -3418,7 +3418,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -3435,7 +3435,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -3477,7 +3477,7 @@ Select "Business", then select "Microsoft 365"\
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 10 AM-6 PM
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -3493,12 +3493,12 @@ English: 24 hours a day, 7 days a week
 800 81 250
 
 **Billing support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
-English: Mon-Fri 10 AM-6 PM
+Arabic: Sunday through Thursday, 10 AM-6 PM\
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
+Arabic: Sunday through Thursday, 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3513,12 +3513,12 @@ Select "Business", then select "Microsoft 365"\
 International call charges apply.
 
 **Billing support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
-English: Mon-Fri 10 AM-6 PM
+Arabic: Sunday through Thursday, 10 AM-6 PM\
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
+Arabic: Sunday through Thursday, 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3531,12 +3531,12 @@ English: 24 hours a day, 7 days a week
 1 809 344 179
 
 **Billing support hours:**\
-Hebrew: Sun-Thu 9 AM-6 PM\
-English: Mon-Fri 9 AM-6 PM
+Hebrew: Sunday through Thursday, 9 AM-6 PM\
+English: Monday through Friday, 9 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Hebrew: Sun-Thu 9 AM-6 PM\
+Hebrew: Sunday through Thursday, 9 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3553,11 +3553,11 @@ After dialing, enter:\
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
-English: Mon-Fri 10 AM-6 PM
+Arabic: Sunday through Thursday, 10 AM-6 PM\
+English: Monday through Friday, 10 AM-6 PM
 
 **Technical support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
+Arabic: Sunday through Thursday, 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3572,12 +3572,12 @@ Select "Business", then select "Microsoft 365"\
 Local call charges apply.
 
 **Billing support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
-English: Mon-Fri 10 AM-6 PM
+Arabic: Sunday through Thursday, 10 AM-6 PM\
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
+Arabic: Sunday through Thursday, 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3592,12 +3592,12 @@ Select "Business", then select "Microsoft 365"\
 Local call charges apply.
 
 **Billing support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
-English: Mon-Fri 10 AM-6 PM
+Arabic: Sunday through Thursday, 10 AM-6 PM\
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
+Arabic: Sunday through Thursday, 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3611,12 +3611,12 @@ English: 24 hours a day, 7 days a week
 Select "Business", then select "Microsoft 365"
 
 **Billing support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
-English: Mon-Fri 10 AM-6 PM
+Arabic: Sunday through Thursday, 10 AM-6 PM\
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Arabic: Sun-Thu 11 AM-8 PM\
+Arabic: Sunday through Thursday, 11 AM-8 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3631,12 +3631,12 @@ Select "Business", then select "Microsoft 365"\
 International call charges apply.
 
 **Billing support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
-English: Mon-Fri 10 AM-6 PM
+Arabic: Sunday through Thursday, 10 AM-6 PM\
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
+Arabic: Sunday through Thursday, 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3651,12 +3651,12 @@ Select "Business", then select "Microsoft 365"\
 Local call charges apply.
 
 **Billing support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
-English: Mon-Fri 10 AM-6 PM
+Arabic: Sunday through Thursday, 10 AM-6 PM\
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
+Arabic: Sunday through Thursday, 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3669,12 +3669,12 @@ English: 24 hours a day, 7 days a week
 800 844 4558
 
 **Billing support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
-English: Mon-Fri 10 AM-6 PM
+Arabic: Sunday through Thursday, 10 AM-6 PM\
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
+Arabic: Sunday through Thursday, 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3688,12 +3688,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
-English: Mon-Fri 10 AM-6 PM
+Arabic: Sunday through Thursday, 10 AM-6 PM\
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Arabic: Sun-Thu 11 AM-8 PM\
+Arabic: Sunday through Thursday, 11 AM-8 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3708,12 +3708,12 @@ Select "Business", then select "Microsoft 365"\
 International call charges apply.
 
 **Billing support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
-English: Mon-Fri 10 AM-6 PM
+Arabic: Sunday through Thursday, 10 AM-6 PM\
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Arabic: Sun-Thu 10 AM-6 PM\
+Arabic: Sunday through Thursday, 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3773,7 +3773,7 @@ After dialing, enter:\
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
@@ -3789,7 +3789,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -3809,7 +3809,7 @@ After dialing, enter:\
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
@@ -3825,7 +3825,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -3843,12 +3843,12 @@ English: 24 hours a day, 7 days a week
 Alternative Phone Number: 400 920 0365 (Mobile)
 
 **Billing support hours:**\
-Chinese (Mandarin): Mon-Fri 9 AM-6 PM\
-English: Mon-Fri 9 AM-6 PM
+Chinese (Mandarin): Monday through Friday, 9 AM-6 PM\
+English: Monday through Friday, 9 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Chinese (Mandarin): Mon-Fri 9 AM-6 PM\
+Chinese (Mandarin): Monday through Friday, 9 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3865,11 +3865,11 @@ English: 24 hours a day, 7 days a week
 +86 4000 890 365
 
 **Billing support hours:**\
-Chinese and English: Mon-Fri 9 AM-6 PM
+Chinese and English: Monday through Friday, 9 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Chinese and English phone support: Mon-Fri 9 AM-9 PM\
+Chinese and English phone support: Monday through Friday, 9 AM-9 PM\
 Chinese and English online support (through the admin center): 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3883,7 +3883,7 @@ Chinese and English online support (through the admin center): 24 hours a day, 7
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -3900,7 +3900,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -3917,14 +3917,14 @@ English: 24 hours a day, 7 days a week
 Local call charges apply.
 
 **Billing support hours:**\
-Cantonese: Mon-Fri 9 AM-6 PM\
-Mandarin: Mon-Fri 9 AM-6 PM\
-English: Mon-Fri 9 AM-6 PM
+Cantonese: Monday through Friday, 9 AM-6 PM\
+Mandarin: Monday through Friday, 9 AM-6 PM\
+English: Monday through Friday, 9 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Cantonese: Mon-Fri 9 AM-6 PM\
-Mandarin: Mon-Fri 9 AM-6 PM\
+Cantonese: Monday through Friday, 9 AM-6 PM\
+Mandarin: Monday through Friday, 9 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3938,7 +3938,7 @@ English: 24 hours a day, 7 days a week
 Local toll-free
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-6 PM
+English: Monday through Friday, 9 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -3955,12 +3955,12 @@ English: 24 hours a day, 7 days a week
 001 803 442 304 (Indosat)
 
 **Billing support hours:**\
-Bahasa Indonesia: Mon-Fri 8 AM-5 PM\
-English: Mon-Fri 9 AM-6 PM
+Bahasa Indonesia: Monday through Friday, 8 AM-5 PM\
+English: Monday through Friday, 9 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Bahasa Indonesia: Mon-Fri 8 AM-5 PM\
+Bahasa Indonesia: Monday through Friday, 8 AM-5 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3979,9 +3979,9 @@ Alternative Phone Numbers:\
 Local call charges apply.
 
 **Billing support hours:**\
-Japanese: Mon-Fri 9:00-17:00\
+Japanese: Monday through Friday, 9:00-17:00\
 (Closed on weekends and public holidays)\
-English: Mon-Fri 9:00-17:00\
+English: Monday through Friday, 9:00-17:00\
 (Closed on weekends and public holidays)
    :::column-end:::
    :::column:::
@@ -4005,12 +4005,12 @@ Telephone technical support is available from 9:00-17:30 on weekdays. For high s
 International call charges apply.
 
 **Billing support hours:**\
-Russian: Mon-Fri 10 AM-7 PM Moscow\
-English: Mon-Fri 9 AM-5 PM London
+Russian: Monday through Friday, 10 AM-7 PM Moscow\
+English: Monday through Friday, 9 AM-5 PM London
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Russian: Mon-Fri 7 AM-8 PM Moscow\
+Russian: Monday through Friday, 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4026,12 +4026,12 @@ Alternative Phone Number: 02 3483 1937\
 Local call charges apply.
 
 **Billing support hours:**\
-Korean: Mon-Fri 9 AM-6 PM\
-English: Mon-Fri 9 AM-6 PM
+Korean: Monday through Friday, 9 AM-6 PM\
+English: Monday through Friday, 9 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Korean: Mon-Fri 9 AM-6 PM\
+Korean: Monday through Friday, 9 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4045,12 +4045,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-Russian: Mon-Fri 10 AM-7 PM Moscow\
-English: Mon-Fri 9 AM-5 PM London
+Russian: Monday through Friday, 10 AM-7 PM Moscow\
+English: Monday through Friday, 9 AM-5 PM London
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Russian: Mon-Fri 7 AM-8 PM Moscow\
+Russian: Monday through Friday, 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4064,7 +4064,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4083,14 +4083,14 @@ After dialing, enter:\
 877 860 4890
 
 **Billing support hours:**\
-Cantonese: Mon-Fri 9 AM-5 PM\
-Mandarin: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
+Cantonese: Monday through Friday, 9 AM-5 PM\
+Mandarin: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Cantonese: Mon-Fri 9 AM-5 PM\
-Mandarin: Mon-Fri 9 AM-5 PM\
+Cantonese: Monday through Friday, 9 AM-5 PM\
+Mandarin: Monday through Friday, 9 AM-5 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4107,7 +4107,7 @@ Local call charges apply.
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-English: Mon-Fri 9 AM-6 PM
+English: Monday through Friday, 9 AM-6 PM
 
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
@@ -4123,7 +4123,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 10 AM-6 PM
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4140,12 +4140,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-Russian: Mon-Fri 10 AM-7 PM Moscow\
-English: Mon-Fri 9 AM-5 PM London
+Russian: Monday through Friday, 10 AM-7 PM Moscow\
+English: Monday through Friday, 9 AM-5 PM London
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Russian: Mon-Fri 7 AM-8 PM Moscow\
+Russian: Monday through Friday, 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4159,7 +4159,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4193,7 +4193,7 @@ Select "Business", then select "Microsoft 365"\
 Local call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 10 AM-6 PM
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4210,7 +4210,7 @@ English: 24 hours a day, 7 days a week
 1800 8908 6422 (Globe)
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4230,7 +4230,7 @@ Local call charges apply.
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-English: Mon-Fri 9 AM-6 PM
+English: Monday through Friday, 9 AM-6 PM
 
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
@@ -4246,7 +4246,7 @@ English: 24 hours a day, 7 days a week
 Local call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-6 PM
+English: Monday through Friday, 9 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4265,12 +4265,12 @@ Alternative Phone Number: 02 2656 7301\
 Local call charges apply.
 
 **Billing support hours:**\
-Chinese (Mandarin): Mon-Fri 9 AM-6 PM\
-English: Mon-Fri 9 AM-6 PM Local
+Chinese (Mandarin): Monday through Friday, 9 AM-6 PM\
+English: Monday through Friday, 9 AM-6 PM Local
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Chinese (Mandarin): Mon-Fri 9 AM-6 PM\
+Chinese (Mandarin): Monday through Friday, 9 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4284,12 +4284,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-Russian: Mon-Fri 10 AM-7 PM Moscow\
-English: Mon-Fri 9 AM-5 PM London
+Russian: Monday through Friday, 10 AM-7 PM Moscow\
+English: Monday through Friday, 9 AM-5 PM London
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Russian: Mon-Fri 7 AM-8 PM Moscow\
+Russian: Monday through Friday, 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4302,12 +4302,12 @@ English: 24 hours a day, 7 days a week
 001 800 441 2619
 
 **Billing support hours:**\
-Thai: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-6 PM
+Thai: Monday through Friday, 9 AM-5 PM\
+English: Monday through Friday, 9 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Thai: Mon-Fri 9 AM-5 PM\
+Thai: Monday through Friday, 9 AM-5 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4321,8 +4321,8 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-Portuguese: Mon-Fri 9 PM-5 AM\
-English: Mon-Fri 9 PM-5 AM
+Portuguese: Monday through Friday, 9 PM-5 AM\
+English: Monday through Friday, 9 PM-5 AM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4340,12 +4340,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-Russian: Mon-Fri 10 AM-7 PM Moscow\
-English: Mon-Fri 9 AM-5 PM London
+Russian: Monday through Friday, 10 AM-7 PM Moscow\
+English: Monday through Friday, 9 AM-5 PM London
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Russian: Mon-Fri 7 AM-8 PM Moscow\
+Russian: Monday through Friday, 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4362,12 +4362,12 @@ After dialing, enter:\
 International call charges apply.
 
 **Billing support hours:**\
-Russian: Mon-Fri 10 AM-7 PM Moscow\
-English: Mon-Fri 9 AM-5 PM London
+Russian: Monday through Friday, 10 AM-7 PM Moscow\
+English: Monday through Friday, 9 AM-5 PM London
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Russian: Mon-Fri 7 AM-8 PM Moscow\
+Russian: Monday through Friday, 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4380,7 +4380,7 @@ English: 24 hours a day, 7 days a week
 120 852 137
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4434,7 +4434,7 @@ English: 24 hours a day, 7 days a week
 Local call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 6 AM-2 PM
+English: Monday through Friday, 6 AM-2 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4454,7 +4454,7 @@ Local call charges apply.
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-English: Mon-Fri 9 AM-6 PM
+English: Monday through Friday, 9 AM-6 PM
 
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
@@ -4470,7 +4470,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 10 AM-6 PM
+English: Monday through Friday, 10 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4490,7 +4490,7 @@ After dialing, enter:\
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
 
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
@@ -4506,12 +4506,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Sun-Fri 10 PM-6 AM\
-English: Sun-Fri 10 PM-6 AM
+French: Sunday through Friday, 10 PM-6 AM\
+English: Sunday through Friday, 10 PM-6 AM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 9 PM-10 AM\
+French: Monday through Friday, 9 PM-10 AM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4525,7 +4525,7 @@ English: 24 hours a day, 7 days a week
 Local call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 3 AM-12 PM
+English: Monday through Friday, 3 AM-12 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4542,7 +4542,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4559,7 +4559,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4576,7 +4576,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 1 PM-9 PM
+English: Monday through Friday, 1 PM-9 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4593,7 +4593,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 11 AM-7 PM
+English: Monday through Friday, 11 AM-7 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4610,7 +4610,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4627,12 +4627,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Mon-Fri 7 PM-3 AM\
-English: Mon-Fri 7 PM-3 AM
+French: Monday through Friday, 7 PM-3 AM\
+English: Monday through Friday, 7 PM-3 AM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 6 PM-7 AM\
+French: Monday through Friday, 6 PM-7 AM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4649,7 +4649,7 @@ Local call charges apply.
    :::column-end:::
    :::column:::
 **Billing support hours:**\
-English: Mon-Fri 9 AM-6 PM
+English: Monday through Friday, 9 AM-6 PM
 
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
@@ -4665,7 +4665,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4682,7 +4682,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 12 PM-8 PM
+English: Monday through Friday, 12 PM-8 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4699,7 +4699,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4716,7 +4716,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4733,7 +4733,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 11 AM-7 PM
+English: Monday through Friday, 11 AM-7 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4750,7 +4750,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4767,7 +4767,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 2 PM-10 PM
+English: Monday through Friday, 2 PM-10 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4784,7 +4784,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4801,7 +4801,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 2 PM-10 PM
+English: Monday through Friday, 2 PM-10 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4818,7 +4818,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 2 PM-10 PM
+English: Monday through Friday, 2 PM-10 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4835,7 +4835,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4852,7 +4852,7 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
+English: Monday through Friday, 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
@@ -4869,12 +4869,12 @@ English: 24 hours a day, 7 days a week
 International call charges apply.
 
 **Billing support hours:**\
-French: Sun-Fri 8 PM-4 AM\
-English: Sun-Fri 8 PM-4 AM
+French: Sunday through Friday, 8 PM-4 AM\
+English: Sunday through Friday, 8 PM-4 AM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-French: Mon-Fri 7 PM-8 AM\
+French: Monday through Friday, 7 PM-8 AM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
