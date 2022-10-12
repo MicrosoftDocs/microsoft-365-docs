@@ -49,10 +49,12 @@ sections:
       - question: How many devices can I onboard and secure with Defender for Business? 
         answer: |
           You can onboard and secure up to five client devices per user license.
+
+          If you have servers, you'll need the [Microsoft Defender for Business servers](get-defender-business-servers.md) add-on.
           
       - question: Does Defender for Business protect Mac, Android, and iOS/iPadOS client devices?
         answer: |
-          Yes. Defender for Business supports protection for Mac, Android, and iOS/iPadOS devices. See [Onboard devices](mdb-onboard-devices.md).
+          Yes. Defender for Business supports protection for Windows, Mac, Android, and iOS/iPadOS devices. See [Onboard devices](mdb-onboard-devices.md).
 
           - You can onboard Mac devices using a local script in the Microsoft 365 Defender portal. 
           - To onboard Android and iOS/iPadOS devices, you can use [Microsoft Intune](/mem/intune/).
@@ -63,7 +65,9 @@ sections:
         answer: |
           Server support is now available! See [How to get Microsoft Defender for Business servers](get-defender-business-servers.md).  
 
-          The Microsoft Defender for Business servers license is offered as an add-on to Microsoft 365 Business Premium and the standalone version of Defender for Business, priced at $3 per server instance. If you have been using Microsoft Defender for Business servers (preview), you can now either purchase a license for each onboarded server, or choose to offboard servers from Defender for Business.
+          The Microsoft Defender for Business servers license is offered as an add-on to [Microsoft 365 Business Premium](/microsoft-365/business-premium/) and the standalone version of [Defender for Business](mdb-overview.md). Microsoft Defender for Business servers is priced at $3 per server instance. 
+          
+          If you were previously using Microsoft Defender for Business servers (preview), now's the time to either [purchase a license](get-defender-business-servers.md) for each onboarded server, or [offboard servers](mdb-offboard-devices.md) from Defender for Business.
 
       - question: What is the difference between Microsoft Defender for Business servers and Microsoft Defender for Servers Plan 1 and Plan 2?
         answer: |
