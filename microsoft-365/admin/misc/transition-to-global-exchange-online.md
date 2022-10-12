@@ -7,15 +7,19 @@ author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
-ms.custom: AdminSurgePortfolio
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
+ms.custom: 
+- AdminSurgePortfolio
+- admindeeplinkMAC
+ms.collection:
+- scotvorg
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to transition from Microsoft Cloud Germany Exchange Online to the global Exchange Online service"
 ---
 # Update your MX records to transition to the global Exchange Online service
 
-1. Sign in to [Microsoft 365 admin center](https://admin.microsoft.com), and go to **Settings** > **Domains**
+1. Sign in to Microsoft 365 admin center, and go to **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>
 
 2. Status will be shown on the right side for each domain. If your organization’s domains point to Microsoft Cloud Germany Exchange Online, you'll need to update your MX record.
 

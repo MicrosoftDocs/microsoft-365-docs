@@ -45,7 +45,7 @@
 > - [Central African Republic](../support/central-african-republic.md)
 > - [Chad](../support/chad.md)
 > - [Chile](../support/chile.md)
-> - [China (PRC)](../support/china-prc.md)
+> - [China](../support/china-prc.md)
 > - [Christmas Island](../support/christmas-island.md)
 > - [Cocos (Keeling) Islands](../support/cocos-keeling-islands.md)
 > - [Colombia](../support/colombia.md)

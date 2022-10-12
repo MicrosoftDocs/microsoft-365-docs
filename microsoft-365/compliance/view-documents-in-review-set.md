@@ -1,30 +1,35 @@
 ---
-title: View documents in a review set in Advanced eDiscovery
+title: View documents in a review set in eDiscovery (Premium)
+description: "Choose how you view content in eDiscovery (Premium), such as text, annotate, converted, or native view."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.localizationpriority: medium
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-description: "Choose how you view content in Advanced eDiscovery, such as text, annotate, converted, or native view."
 ms.custom: seo-marvel-mar2020
 ---
 
-# View documents in a review set in Advanced eDiscovery
+# View documents in a review set in eDiscovery (Premium)
 
-Advanced eDiscovery displays content via several viewers each with different purposes. The various viewers can be used by clicking on any document within a review set. The viewers currently provided are:
+eDiscovery (Premium) displays content via several viewers each with different purposes. The various viewers can be used by clicking on any document within a review set. The viewers currently provided are:
 
 - File metadata
 - Native view
 - Text view
 - Annotate view
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## File metadata
 
@@ -48,9 +53,9 @@ The Text viewer provides a view of the extracted text of a file. It ignores any 
 - Search hit highlighting that will highlight terms within the document as well as the scrollbar
 - Diff view provides a comparison view that highlights textual differences when viewing Near Duplicate documents
 
-![Text view](../media/Reviewimage4.png)
+![Text view.](../media/Reviewimage4.png)
 
-![Diff view](../media/Reviewimage5.png)
+![Diff view.](../media/Reviewimage5.png)
 
 ## Annotate view
 
@@ -67,7 +72,7 @@ The Annotate view provides features that allow users to apply markup on a docume
 - Rotate – user can rotate document clockwise
 - Search – user can search within a document and navigate to the various hits within the document
 
-  ![Annotate view](../media/Reviewimage1.png)
+  ![Annotate view.](../media/Reviewimage1.png)
 
 ## Dashboard View
 

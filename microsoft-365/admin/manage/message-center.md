@@ -1,5 +1,5 @@
 ---
-title: "Message center"
+title: "Message center in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -7,12 +7,12 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
@@ -25,7 +25,7 @@ ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: "Get an overview of Microsoft 365 Message center and its role in tracking new and changed features and other important announcements."
 ---
 
-# Message center
+# Track new and changed features in the Microsoft 365 Message center
 
 To keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Message center</a>.
   
@@ -34,12 +34,6 @@ To open Message center:
 ::: moniker range="o365-worldwide"
 
 - In the admin center, go to **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Message center</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-- In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to **Health** > **Message center**.
 
 ::: moniker-end
 
@@ -85,17 +79,7 @@ Use the **Service**, **Tag**, and **Message state**  drop-down menus to select a
 
 You can select any column heading, except **Service** and **Tag**,  to sort messages in ascending or descending order.
 
-:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Message center view sorted by Admin impact":::
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Use the **Views** drop-down menu to select a filtered view of messages.
-
-You can select any column heading to sort messages in ascending or descending order. For example, in this illustration the messages are sorted on the **Act by** date.
-
-![Message center view sorted by Admin impact tag](../../media/message-center-filter-act-by.png)
+:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Message center view sorted by Admin impact.":::
 
 ::: moniker-end
 
@@ -148,24 +132,6 @@ If administration is distributed across your organization, you may not want or n
   
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Select **Edit Message center preferences** at the top of Message center.
-
-2. Make sure that the toggle is set to **On** for each service that you want to monitor. Use the toggle to change the setting to **Off** for the services you want to filter out of your Message center view.
-
-3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, change the **Send a weekly digest of my messages** setting to **Off**.
-
-   Email notification for major updates is a separate control. If you want to receive email notices about major updates, verify that **Send me emails for major updates** is **On**. Change the setting to **Off** to stop getting email about major updates. 
-
-   To receive email notices about data privacy messages, verify that **Send me emails for data privacy messages** is **On**. To stop receiving these notices, change the setting to **Off**. (Data privacy messages are not included in the weekly digest.)
-
-   You can select or clear your primary email address, but you can't change it. To specify other email addresses to which the weekly email summary is sent, verify that **Send a weekly digest of my messages** is **On**. Enter the email address for a Microsoft 365 group or a distribution list if more than two people should get the digest email.
-
-4. Select **Save** to keep your changes.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Select **Preferences** at the top of Message center.
@@ -189,6 +155,17 @@ We use machine translation to automatically display messages in your preferred l
 > [!NOTE]
 > The weekly digest and any posts that are emailed are sent in English-only. Recipients can use [Translator for Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) to read the message in their preferred language.
 
+## Monthly active users
+
+When you open a message center post, we'll tell you the number of users who've been using that Microsoft 365 app or service in the **Service & monthly active users** section. The numbers are for the last 28 days. This info can help you prioritize which changes you should work on.
+
+:::image type="content" source="../../media/msgctr-mau-teams.png" alt-text="Screenshot: Showing the Microsoft Teams Chat density page in the message center post with monthly active user data":::
+
+The number of monthly users applies to all users who've used that Microsoft 365 app or service on any device.
+
+> [!NOTE]
+> This feature isn't available for all Microsoft 365 apps and services yet. We'll let you know when the feature isn't available.
+
 ## Choose columns
 
 To choose columns, on the **Message center** page, on the far right, select **Choose columns**, and in the **Choose columns** pane, select the ones you want displayed.
@@ -207,7 +184,7 @@ Here's a quick overview of the information you'll see in each column.
 |Message title|Message titles are brief descriptions of upcoming changes. If the full title doesn't display, hover your cursor over it and the entire title will appear in a pop-up box.|
 |Service|Icons indicate the application to which the message applies.|
 |More options|More options lets you dismiss a message, mark it as read or unread, or share it with another admin. To restore an archived message, select the **Archive** tab, select the check mark next to the message, and select **Restore**.|
-|Tags|You can choose tags from the **Tag** drop-down to filter messages. The available tags are: **Admin impact**, **Major update**, **Data Privacy**, **Feature update**, **New feature**, **Retirement**, and **User impact**.|
+|Tags| You can choose tags from the Tag drop-down to filter messages. <br> <p> **Data Privacy**: Data privacy notification (limited to global administrator and Message center Privacy reader roles). <p> **Major update**: Changes communicated at least 30 days in advance ([Major updates](#major-updates)). <p> **Retirement**: Retirement of a service or feature. <p> **New feature**: New feature or service. <p> **Feature update**: Update to an existing feature. <p> **Admin impact**: When the change clearly impacts the admin in the following ways - UI change, workflow change, control available and Specific/Potential Action. <p> **User impact**: When the change to the service clearly impacts the user - UI Change and workflow change. <p> **Updated message**: When a message is updated.|
 |Category| This is not shown by default, but can be specified in the **Choose columns** panel. Messages are identified by one of the following three categories: <p> **Prevent or fix issues**: Informs you of known issues affecting your organization and may require that you take action to avoid disruptions in service. Prevent or fix issues are different than Service health messages because they prompt you to be proactive to avoid issues. <p> **Plan for change**: Informs you of changes to Microsoft 365 that may require you to act to avoid disruptions in service. For example, we'll let you know about changes to system requirements or about features that are being removed. We try to provide at least 30 days' notice of any change that requires an admin to act to keep the service running normally. <p> **Stay informed**: Tells you about new or updated features we are turning on in your organization. The features are usually announced first in the [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?linkid=2070821). <p> May also let you know about planned maintenance in accordance with our Service Level Agreement. Planned maintenance may result in down time, where you or your users can't access Microsoft 365, a specific feature, or a service such as email or OneDrive for Business.|
 |Act by|We'll only have dates here if we're making a change that requires you to take an action by a certain deadline. Since we rarely use the **Act by** column, if you see something here, you should pay extra attention to it.|
 |Last updated|Date that the message was published or last updated.|
@@ -218,7 +195,7 @@ Here's a quick overview of the information you'll see in each column.
 
 - Compliance administrator
 - Conditional access administrator
-- Customer LockBox access approver
+- Customer Lockbox access approver
 - Device administrators
 - Directory readers
 - Directory synchronization accounts
@@ -232,6 +209,9 @@ Here's a quick overview of the information you'll see in each column.
 In the Message center, you can select a message to see details.
 
 If you want to provide feedback on the message, in the details pane, select either the **Like** or **Dislike** icon on the bottom of the message details pane, and provide optional feedback in the text box that appears. Do not provide any personal information. You can optionally select **It's OK to contact me about this feedback** and then select **Send**.
+
+> [!NOTE]
+> If you're using Microsoft 365 for Government - GCC, Microsoft 365 for Government - GCC High and Office 365 Government - DoD, you won't be able to provide feedback on a post.
 
 ## Share a message
 
@@ -286,7 +266,7 @@ When you open a message in a reading pane, you can use the **Up** and **Down** :
 
 A lot of actionable information about changes to Microsoft 365 services arrives in the Microsoft 365 message center. It can be difficult to keep track of which changes require tasks to be done, when, and by whom, and to track each task to completion. You also might want to make a note of something and tag it to check on later. You can do all this and more when you sync your messages from the Microsoft 365 admin center to Microsoft Planner. For more information, see [Track your message center tasks in Planner](/office365/planner/track-message-center-tasks-planner).
 
-For an overview of Message center, see [Message center in Microsoft 365](message-center.md). Or, to learn how to set your language preferences to enable machine translation for Message center posts, see [Language translation for Message center posts](language-translation-for-message-center-posts.md). If you'd like to program an alternative way to get real-time service health information and Message Center communications, please reference [Microsoft 365 Service Communications API Overview](/previous-versions/office/developer/o365-enterprise-developers/jj984343(v=office.15)).
+For an overview of Message center, see [Message center in Microsoft 365](message-center.md). Or, to learn how to set your language preferences to enable machine translation for Message center posts, see [Language translation for Message center posts](language-translation-for-message-center-posts.md). If you'd like to program an alternative way to get real-time service health information and Message center communications, see [Working with service communications API in Microsoft Graph](/graph/api/resources/service-communications-api-overview).
 
 ## Unsubscribe from Message center emails
 
@@ -300,5 +280,4 @@ For an overview of Message center, see [Message center in Microsoft 365](message
 ## Related content
 
 [Set up the Standard or Targeted release options](../manage/release-options-in-office-365.md) (article)\
-[Manage which Office features appear in What's New](../manage/show-hide-new-features.md) (article)\
 [Business subscriptions and billing documentation](../../commerce/index.yml) (link page)

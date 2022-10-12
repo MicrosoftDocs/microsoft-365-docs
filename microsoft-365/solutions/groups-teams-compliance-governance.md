@@ -6,9 +6,10 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.service: o365-solutions
+ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-collaboration
 - m365solution-collabgovernance
 ms.custom: 
@@ -34,8 +35,8 @@ The following table provides a quick reference for the compliance controls avail
 ||Automatically classify sensitive content|[Apply a sensitivity label to content automatically](../compliance/apply-sensitivity-label-automatically.md)|
 ||Encrypt sensitive content|[Restrict access to content by using sensitivity labels to apply encryption](../compliance/encryption-sensitivity-labels.md)|
 |Information protection|||
-||Prevent the loss of sensitive information|[Learn about data loss prevention](../compliance/dlp-learn-about-dlp.md)|
-||Protect sensitive information in chat.|[Data loss prevention and Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
+||Prevent the loss of sensitive information|[Learn about Microsoft Purview Data Loss Prevention](../compliance/dlp-learn-about-dlp.md)|
+||Protect sensitive information in chat.|[Microsoft Purview Data Loss Prevention and Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
 ||Define your organization's sensitive information|[Custom sensitive information types](../compliance/sensitive-information-type-learn-about.md)|
 |User segmentation|||
 ||Restrict communication between user segments|[Information barriers](../compliance/information-barriers.md)|
@@ -58,7 +59,7 @@ User chats are retained indefinitely even if a user account is deleted. If you d
 
 - [Retention policies in Microsoft Teams](/microsoftteams/retention-policies)
 
-A single retention policy can be set to apply to Teams chat and Teams channel messages. 
+A single retention policy can be set to apply to Teams chat and Teams channel messages (including shared channel messages). Teams private channel messages must be contained in their own retention policy.
 
 Additional resources:
 
@@ -97,13 +98,13 @@ DLP in Teams can help protect sensitive information in Teams chat and channel me
 
 - [Data loss prevention and Microsoft Teams](../compliance/dlp-microsoft-teams.md)
 
-If you have sensitive information that is unique to your organization, such as project code names, you can create your own sensitive information types and apply them to DLP policies to protect content in groups, teams, and Sharepoint.
+If you have sensitive information that is unique to your organization, such as project code names, you can create your own sensitive information types and apply them to DLP policies to protect content in groups, teams, and SharePoint.
 
 - [Custom sensitive information types](../compliance/sensitive-information-type-learn-about.md)
 
 ## User segmentation
 
-With information barriers, you can segment your data and users to restrict unwanted communication and collaboration between groups and avoid conflicts of interest in your organization. Information barriers lets you create policies to allow or prevent file collaboration, chatting, calling, or meeting invitations between groups of people in your organization.
+With information barriers, you can segment your data and users to restrict unwanted communication and collaboration between groups and avoid conflicts of interest in your organization. Information barriers let you create policies to allow or prevent file collaboration, chatting, calling, or meeting invitations between groups of people in your organization.
 
 - [Information barriers](../compliance/information-barriers.md)
 
@@ -121,7 +122,9 @@ With Microsoft 365 Multi-Geo, you can provision and store data at rest in the ge
 
 ## Related topics
 
-[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+
+[Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Create your collaboration governance plan](collaboration-governance-first.md)
 

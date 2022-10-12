@@ -6,14 +6,14 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.collection: 
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about SharePoint storage quotas in multi-geo environments and how quotas can be managed by the SharePoint Online admin.
 ---
 
@@ -41,7 +41,7 @@ To view Storage Quota for the current geo location, run:
 Get-SPOGeoStorageQuota
 ```
 
-![Screenshot of PowerShell window showing Get-SPOGeoStorageQuota cmdlet](../media/multi-geo-storage-quota.png)
+![Screenshot of PowerShell window showing Get-SPOGeoStorageQuota cmdlet.](../media/multi-geo-storage-quota.png)
 
 To view Storage Quota for all geo locations, run:
 

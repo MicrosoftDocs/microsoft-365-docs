@@ -7,31 +7,30 @@ metadata:
   author: chrisda
   manager: dansimp
   audience: ITPro
-  ms.topic: troubleshooting
+  ms.topic: faq
   
-  localization_priority: Normal
+  ms.localizationpriority: medium
   search.appverid: 
     - MET150
   ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
   ms.collection: 
-    - M365-security-compliance
+    - m365-security
     - m365initiative-defender-office365
   ms.custom: 
     - seo-marvel-apr2020
   description: Admins can view frequently asked questions and answers about anti-spam protection in Exchange Online Protection (EOP).
-  ms.technology: mdo
-  ms.prod: m365-security
-    
+  ms.subservice: mdo
+  ms.service: microsoft-365-security
 title: Anti-spam protection FAQ
 summary: |
-  [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+  [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
   
   **Applies to**
   - [Exchange Online Protection](exchange-online-protection-overview.md)
   - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
   
-  This topic provides frequently asked questions and answers about anti-malware protection for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
+  This topic provides frequently asked questions and answers about anti-spam protection for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
   
   For questions and answers about the quarantine, see [Quarantine FAQ](quarantine-faq.yml).
   
@@ -147,7 +146,7 @@ sections:
           
             If a sending domain has no A-record and no MX record in DNS, the service will route the message through its higher risk delivery pool regardless of whether or not the content of the message is spam. For more information about the higher risk delivery pool, see [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md).
           
-          - **Outbound mail eserver should have a reverse DNS (PTR) entry.**
+          - **Outbound email server should have a reverse DNS (PTR) entry.**
           
             For example, if the email source IP address is 192.0.43.10, the reverse DNS entry would be `43-10.any.icann.org`.`
           
@@ -218,3 +217,14 @@ sections:
           - **Use Hotmail's Smart Network Data Services (SNDS) program.**
           
             Hotmail uses a program called Smart Network Data Services that allows senders to check complaints submitted by end users. The SNDS is the primary portal for troubleshooting delivery problems to Hotmail.
+
+      - question: |
+          How do I turn off spam filtering?
+        answer: |
+          If you use a third-party protection service or device to scan email before it's delivered to Microsoft 365, you can use a mail flow rule (also known as a transport rule) to bypass most spam filtering for incoming messages. For instructions, see [Use mail flow rules to set the spam confidence level (SCL) in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+
+          If you use a mail flow rule to bypass spam filtering, high confidence phishing messages are still filtered. Other features in EOP are not affected (for example, messages are always scanned for malware).
+
+          If you use a third-party protection service or device to scan email before it's delivered to Microsoft 365, you should also enable Enhanced Filtering for Connectors (also known as *skip listing*) so detection, reporting, and investigation features in Microsoft 365 are able to correctly identify messages sources. For more information, see [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+
+          If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](configure-advanced-delivery.md).

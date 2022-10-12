@@ -3,23 +3,26 @@ title: Details and results of an automated investigation
 description: View the results and key findings of automated investigation in Microsoft 365 Defender
 keywords: automated, investigation, results, analyze, details, remediation, autoair
 search.appverid: met150
-ms.prod: m365-security
-ms.technology: m365d
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-localization_priority: Normal
+ms.author: dansimp
+author: dansimp
+ms.localizationpriority: medium
+ms.date: 08/11/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: conceptual
-ms.custom: autoir
+ms.custom: 
+- autoir
+- admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ---
 
@@ -30,17 +33,15 @@ ms.reviewer: evaldm, isco
 **Applies to:**
 - Microsoft 365 Defender
 
-With Microsoft 365 Defender, when an [automated investigation](m365d-autoir.md) runs, details about that investigation are available both during and after the automated investigation process. If you have the [necessary permissions](m365d-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view. This view provides you with up-to-date status and the ability to approve any pending actions. 
+With Microsoft 365 Defender, when an [automated investigation](m365d-autoir.md) runs, details about that investigation are available both during and after the automated investigation process. If you have the [necessary permissions](m365d-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view that provides you with up-to-date status and the ability to approve any pending actions. 
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Investigation details":::
-
-## (NEW!) Unified investigation page
+## (NEW) Unified investigation page
 
 The investigation page has recently been updated to include information across your devices, email, and collaboration content. The new, unified investigation page defines a common language and provides a unified experience for automatic investigations across [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and [Microsoft Defender for Office 365](../office-365-security/defender-for-office-365.md). To access the unified investigation page, select the link in the yellow banner you'll see on:
 
-- Any investigation page in the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com))
-- Any investigation page in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com))
-- Any incident or Action center experience in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
+- Any investigation page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Microsoft Purview compliance portal</a>
+- Any investigation page in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
+- Any incident or Action center experience in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>
 
 ## Open the investigation details view
 
@@ -56,7 +57,7 @@ The improved [Action center](m365d-action-center.md) ([https://security.microsof
 > [!TIP]
 > You must have [certain permissions](m365d-action-center.md#required-permissions-for-action-center-tasks) to approve, reject, or undo actions.
 
-1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
 
 2. In the navigation pane, choose **Action center**. 
 
@@ -72,7 +73,7 @@ The improved [Action center](m365d-action-center.md) ([https://security.microsof
 
 Use an incident details page to view detailed information about an incident, including alerts that were triggered information about any affected devices, user accounts, or mailboxes.
 
-1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
 
 2. In the navigation pane, choose **Incidents & alerts** > **Incidents**. 
 
@@ -84,13 +85,13 @@ Use an incident details page to view detailed information about an incident, inc
 
 Here's an example.
 
-:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="Incident details":::
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="The investigation page in the Microsoft 365 Defender portal" lightbox="../../media/mtp-incidentdetails-tabs.png":::
 
 ## Investigation details
 
 Use the investigation details view to see past, current, and pending activity pertaining to an investigation. Here's an example.
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Investigation details":::
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="The investigation details page in the Microsoft 365 Defender portal" lightbox="../../media/mtp-air-investdetails.png":::
 
 In the Investigation details view, you can see information on the **Investigation graph**, **Alerts**, **Devices**, **Identities**, **Key findings**, **Entities**, **Log**, and **Pending actions** tabs, described in the following table.
 
@@ -100,7 +101,7 @@ In the Investigation details view, you can see information on the **Investigatio
 | Tab | Description |
 |:--------|:--------|
 | **Investigation graph** | Provides a visual representation of the investigation. Depicts entities and lists threats found, along with alerts and whether any actions are awaiting approval.<br/>You can select an item on the graph to view more details. For example, selecting the **Evidence** icon takes you to the **Evidence** tab, where you can see detected entities and their verdicts. |
-| **Alerts** | Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's device, in Office apps, Microsoft Cloud App Security, and other Microsoft 365 Defender features.|
+| **Alerts** | Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's device, in Office apps, Microsoft Defender for Cloud Apps, and other Microsoft 365 Defender features. <br> <br> If you see *Unsupported alert type*, it means that automated investigation capabilities cannot pick up that alert to run an automated investigation. However, you can [investigate these alerts manually](investigate-incidents.md#alerts).
 | **Devices** | Lists devices included in the investigation along with their remediation level. (Remediation levels correspond to [the automation level for device groups](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups).) |
 | **Mailboxes** |Lists mailboxes that are impacted by detected threats.  |
 | **Users**  | Lists user accounts that are impacted by detected threats. |
@@ -108,6 +109,59 @@ In the Investigation details view, you can see information on the **Investigatio
 | **Entities** | Provides details about each analyzed entity, including a verdict for each entity type (*Malicious*, *Suspicious*, or *No threats found*).|
 |**Log** | Provides a chronological, detailed view of all the investigation actions taken after an alert was triggered.|
 | **Pending actions history** | Lists items that require approval to proceed. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) to approve pending actions. |
+
+
+## Investigation states
+
+The following table lists investigation states and what they indicate.
+
+
+|Investigation state  |Definition  |
+|---------|---------|
+|Benign   | Artifacts were investigated and a determination was made that no threats were found.|
+|PendingResource     | An automated investigation is paused because either a remediation action is pending approval, or the device on which an artifact was found is temporarily unavailable.|
+|UnsupportedAlertType     | An automated investigation is not available for this type of alert. Further investigation can be done manually, by using advanced hunting. |
+|Failed     | At least one investigation analyzer ran into a problem where it couldn't complete the investigation. If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded.|
+|Successfully remediated| An automated investigation completed, and all remediation actions were completed or approved.|
+
+To provide more context about how investigation states show up, the following table lists alerts and their corresponding automated investigation state. This table is included as an example of what a security operations team might see in the Microsoft 365 Defender portal.
+
+|Alert name | Severity | Investigation state | Status | Category |
+|-----------|----------|---------------------|--------|----------|
+|Malware was detected in a wim disk image file|Informational|Benign|Resolved|Malware|
+|Malware was detected in a rar archive file|Informational|PendingResource|New|Malware|
+|Malware was detected in a rar archive file|Informational|UnsupportedAlertType|New|Malware|
+|Malware was detected in a rar archive file|Informational|UnsupportedAlertType|New|Malware|
+|Malware was detected in a rar archive file|Informational|UnsupportedAlertType|New|Malware|
+|Malware was detected in a zip archive file|Informational|PendingResource|New|Malware|
+|Malware was detected in a zip archive file|Informational|PendingResource|New|Malware|
+|Malware was detected in a zip archive file|Informational|PendingResource|New|Malware|
+|Malware was detected in a zip archive file|Informational|PendingResource|New|Malware|
+|Wpakill hacktool was prevented|Low|Failed|New|Malware|
+|GendowsBatch hacktool was prevented|Low|Failed|New|Malware|
+|Keygen hacktool was prevented|Low|Failed|New|Malware|
+|Malware was detected in a zip archive file|Informational|PendingResource|New|Malware|
+|Malware was detected in a rar archive file|Informational|PendingResource|New|Malware|
+|Malware was detected in a rar archive file|Informational|PendingResource|New|Malware|
+|Malware was detected in a zip archive file|Informational|PendingResource|New|Malware|
+|Malware was detected in a rar archive file|Informational|PendingResource|New|Malware|
+|Malware was detected in a rar archive file|Informational|PendingResource|New|Malware|
+|Malware was detected in an iso disc image file|Informational|PendingResource|New|Malware|
+|Malware was detected in an iso disc image file|Informational|PendingResource|New|Malware|
+|Malware was detected in a pst outlook data file|Informational|UnsupportedAlertType|New|Malware|
+|Malware was detected in a pst outlook data file|Informational|UnsupportedAlertType|New|Malware|
+|MediaGet detected|Medium|PartiallyInvestigated|New|Malware|
+|TrojanEmailFile|Medium|SuccessfullyRemediated|Resolved|Malware|
+|CustomEnterpriseBlock malware was prevented|Informational|SuccessfullyRemediated|Resolved|Malware|
+|An active CustomEnterpriseBlock malware was blocked|Low|SuccessfullyRemediated|Resolved|Malware|
+|An active CustomEnterpriseBlock malware was blocked|Low|SuccessfullyRemediated|Resolved|Malware|
+|An active CustomEnterpriseBlock malware was blocked|Low|SuccessfullyRemediated|Resolved|Malware|
+|TrojanEmailFile|Medium|Benign|Resolved|Malware|
+|CustomEnterpriseBlock malware was prevented|Informational|UnsupportedAlertType|New|Malware|
+|CustomEnterpriseBlock malware was prevented|Informational|SuccessfullyRemediated|Resolved|Malware|
+|TrojanEmailFile|Medium|SuccessfullyRemediated|Resolved|Malware|
+|TrojanEmailFile|Medium|Benign|Resolved|Malware|
+|An active CustomEnterpriseBlock malware was blocked|Low|PendingResource|New|Malware|
 
 ## Next steps
 

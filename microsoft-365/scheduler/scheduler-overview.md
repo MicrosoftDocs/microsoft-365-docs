@@ -6,7 +6,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: scheduler
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Overview of Scheduler for Microsoft 365."
 ---
 
@@ -47,3 +47,11 @@ After a user sends a meeting request to Cortana, the Scheduler service:
 - Finds a time to meet based on the availability of the organizer and attendees in the same tenant.
 - If the organizer does not have access to availability of the attendees, Cortana negotiates a time to meet with those attendees by email. 
 - Once a mutually agreeable time has been found, Cortana adds a Teams meeting and sends out the calendar invites. 
+
+## Pricing and licensing
+
+Learn more:  [Scheduler for Microsoft 365 licensing](https://www.microsoft.com/microsoft-365/meeting-scheduler-pricing)
+
+>[Note: 
+>Meeting attendees do not need a Scheduler or Microsoft 365 license. <br>The Scheduler assistant mailbox does not require a Microsoft 365 or a Scheduler license.
+

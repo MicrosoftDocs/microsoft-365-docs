@@ -2,15 +2,16 @@
 title: "Password reset for your Microsoft 365 test environment"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: 
@@ -33,7 +34,7 @@ Setting up SSPR involves three phases:
 - [Phase 2: Enable password writeback](#phase-2-enable-password-writeback)
 - [Phase 3: Configure and test password reset](#phase-3-configure-and-test-password-reset)
     
-![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
@@ -44,7 +45,7 @@ First, follow the instructions in [password hash synchronization](password-hash-
 
 Your resulting configuration looks like this:
   
-![The simulated enterprise with password hash synchronization test environment](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![The simulated enterprise with password hash synchronization test environment.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 This configuration consists of:
   

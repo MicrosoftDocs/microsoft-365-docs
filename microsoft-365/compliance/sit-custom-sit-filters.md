@@ -1,5 +1,5 @@
 ---
-title: "Custom Sensitive Information Type Filters Reference"
+title: "Custom sensitive information type filters reference"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -8,9 +8,10 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -19,13 +20,15 @@ description: "This article presents a list of the filters that can be encoded in
 
 # Custom sensitive information type filters reference
 
-In Microsoft you can define filters or additional checks while creating a custom sensitive information types (SIT).
+In Microsoft you can define filters or other checks while creating a custom sensitive information types (SIT).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## List of supported filters and use cases
 
 ### AllDigitsSame Exclude
 
-Description: Allows you to exclude matches which have all digits as duplicate digits, like 111111111 or 111-111-111
+Description: Allows you to exclude matches that have all digits as duplicate digits, like 111111111 or 111-111-111
 
 Defining filters
 ```xml
@@ -65,7 +68,7 @@ For example to exclude the numbers starting with 0500, 91, 091, 010 in a list li
 - 1000-3265-9874
 - 0100-7892-3012
 
-you can use this xml
+You can use the following xml
 
 ```xml
 <Filters id="phone_number_filters_exc">
@@ -91,7 +94,7 @@ For example, to include the numbers starting with 0500, 91, 091, 0100 in a list 
 - 1000-3265-9874
 - 0100-7892-3012
 
-you can use this xml
+You can use the following xml
 
 ```xml
 <Filters id="phone_filters_inc">
@@ -110,7 +113,7 @@ For example, to exclude the numbers ending with 0500,91,091, 0100 in a list like
 - 1234.4567.7091
 - 1234-8091-4564
 
-you can use this xml
+You can use the following xml
 
 ```xml
 <Filters id="phone_number_filters_exc">
@@ -134,7 +137,7 @@ For example, to include the numbers ending with 0500, 91, 091, 0100, in a list l
 - 1234.4567.7091
 - 1234-8091-4564
 
-you can use this xml
+You can use the following xml
 
 ```xml
 <Filters id="phone_filters_inc">
@@ -152,7 +155,7 @@ For example, to exclude credit card numbers like 4111111111111111 and 3241891031
 - 4111111111111111
 - 3241891031113111
 
-you can use this xml
+You can use the following xml
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -173,7 +176,7 @@ For example, to include credit card numbers like 4111111111111111 and 3241891031
 - 4111111111111111
 - 3241891031113111
 
-you can use this xml
+You can use the following xml
 
 ```xml
 <Filters id="cc_filters_inc">
@@ -185,13 +188,13 @@ you can use this xml
 
 Description: Allows you to define the preceding characters that should be always included or excluded. For example, if Credit card number is preceded by ‘Order ID:’ then remove the match from the valid matches.
 
-For example, to exclude occurrences of phone numbers which have **Phone number** and **call me at** strings before the phone number, in a list like this:
+For example, to exclude occurrences of phone numbers that have **Phone number** and **call me at** strings before the phone number, in a list like this:
 
-- phone number 091-8974-653278
+- Phone number 091-8974-653278
 - Phone 45-124576532-123
 - 45-124576532-123
 
-you can use this xml
+You can use the following xml
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -210,7 +213,7 @@ For example, to include occurrences that have **credit card** and **card #** str
 - Credit card 45-124576532-123 
 - 45-124576532-123  (which could be phone number)
 
-you can use this xml
+You can use the following xml
 
 ```xml
 <Filters id="cc_filters_inc">
@@ -229,12 +232,12 @@ you can use this xml
 
 Description: Allows you to define the following characters that should be always included or excluded. For example, if Credit card number is followed by ‘/xuid’ then remove the match from the valid matches.
 
-For example, top exclude occurrences if there are 5 more instances of four digits as suffix in a list like this:
+For example, top exclude occurrences if there are five more instances of four digits as suffix in a list like this:
 
 - 1234-5678-9321 4500 9870 6321 48925566
 - 1234-5678-9321
 
-you can use this xml
+You can use the following xml
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -248,9 +251,9 @@ For example, to exclude occurrences if they are followed by **/xuidsuffix**, lik
 - 1234-5678-9321 /xuid
 - 1234-5678-9321
 
-you can use this xml
+You can use this xml
 
-``xml
+```xml
 <Filters id="cc_number_filters_exc">
     <Filter type="TextMatchFilter" direction="Prefix" logic="Exclude" textProcessorId="Keyword_false_positives_suffix">
 </Filter>
@@ -268,7 +271,7 @@ For example, to include an occurrence only if it is followed by **cvv** or **exp
 - 45-124576532-123  cvv 966
 - 45-124576532-123  expires 03/23
 
-you can use this xml
+You can use this xml
 
 ```xml
 <Filters id="cc_filters_inc">
@@ -334,8 +337,8 @@ The filters will be applied on **all** the instances classified by any of the pa
 
 ## More information
 
-- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+- [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 
-- [What the DLP functions look for](what-the-dlp-functions-look-for.md)
+- [Sensitive information type functions](sit-functions.md)

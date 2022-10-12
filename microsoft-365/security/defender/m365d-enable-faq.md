@@ -3,23 +3,26 @@ title: Frequently asked questions when turning on Microsoft 365 Defender
 description: Get answers to the most commonly asked questions about licensing, permissions, initial settings, and other products and services related to enabling Microsoft 365 Defender
 keywords: frequently asked questions, FAQ, GCC, get started, enable Microsoft 365 Defender, Microsoft 365 Defender, M365, security, data location, required permissions, license eligibility, settings page
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: lomayor
-author: lomayor
-localization_priority: Normal
+ms.author: dansimp
+author: dansimp
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 
 # Frequently asked questions when turning on Microsoft 365 Defender
@@ -34,13 +37,13 @@ Read responses to the most commonly asked questions about turning on [Microsoft 
 
 For instructions on how to turn on the service, [read Turn on Microsoft 365 Defender](m365d-enable.md).
 
-## I don’t have a Microsoft 365 E5 license. Can I still use Microsoft 365 Defender?
+## I don't have a Microsoft 365 E5 license. Can I still use Microsoft 365 Defender?
 
 Customers with the following non-E5 licenses can use Microsoft 365 Defender:
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Defender for Office 365 (Plan 2)
 
 For a full list of supported licenses, [read the licensing requirements](prerequisites.md#licensing-requirements).
@@ -56,15 +59,15 @@ To optimize your Microsoft 365 Defender experiences, we recommend deploying *all
 Microsoft 365 Defender automatically selects an optimal location for the data center where consolidated data is processed and stored. If you have Microsoft Defender for Endpoint, it selects the same location used by Defender for Endpoint.
 
 >[!NOTE]
->Microsoft Defender for Endpoint automatically provisions in European Union (EU) data centers when turned on through Azure Defender. Microsoft 365 Defender will automatically provision in the same EU data center for customers who have provisioned Microsoft Defender for Endpoint in this manner.
+>Microsoft Defender for Endpoint automatically provisions in European Union (EU) data centers when turned on through Microsoft Defender for Cloud. Microsoft 365 Defender will automatically provision in the same EU data center for customers who have provisioned Microsoft Defender for Endpoint in this manner.
 
-The data center location is shown before and after the service is provisioned in the settings page for Microsoft 365 Defender (**Settings > Microsoft 365 Defender**). If you prefer to use another data center location, select **Need help?** in the Microsoft 365 security center to contact Microsoft support.
+The data center location is shown before and after the service is provisioned in the settings page for Microsoft 365 Defender (**Settings > Microsoft 365 Defender**). If you prefer to use another data center location, select **Need help?** in the Microsoft 365 Defender portal to contact Microsoft support.
 
 ## Where can I access Microsoft 365 Defender?
 
-Microsoft 365 Defender is available in Microsoft 365 security center. To go to the security center, browse to the URL <https://security.microsoft.com>.
+Microsoft 365 Defender is available at: <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a>.
 
-## What permissions do I need to access Microsoft 365 Defender in Microsoft 365 security center?
+## What permissions do I need to access Microsoft 365 Defender?
 
 Accounts assigned the following Azure Active Directory (Azure AD) roles can access Microsoft 365 Defender functionality and data:
 
@@ -73,6 +76,11 @@ Accounts assigned the following Azure Active Directory (Azure AD) roles can acce
 - Security Operator
 - Global Reader
 - Security Reader
+- Compliance Administrator
+- Compliance Data Administrator
+- Application Administrator
+- Cloud Application Administrator
+
 
 > [!NOTE]
 > Role-based access control settings in Microsoft Defender for Endpoint influence access to data. For more information, read about [managing access to Microsoft 365 Defender](m365d-permissions.md).
@@ -89,10 +97,6 @@ Microsoft regularly provides information through the various channels, including
 - Blogposts in the [Microsoft 365 security & compliance tech community](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
 
 Get the latest publicly available experiences by turning on [preview features](preview.md).
-
-## Is Microsoft 365 Defender available for US Government Community Cloud (GCC) or GCC High?
-
-At the moment, it is not available.
 
 ## Related topics
 

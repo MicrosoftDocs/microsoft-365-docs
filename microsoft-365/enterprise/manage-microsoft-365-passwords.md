@@ -1,18 +1,19 @@
 ---
 title: "Manage Microsoft 365 user account passwords"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: Admin
 ms.topic: overview
-ms.prod: office-online-server
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: 
  - Adm_O365
  - seo-marvel-mar2020
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 search.appverid:
@@ -28,7 +29,7 @@ description: "Learn about how to manage Microsoft 365 user account passwords."
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-You can manage Microsoft 365 user account passwords in several different ways, depending on your identity configuration. You can manage user accounts in the [Microsoft 365 admin center](../admin/add-users/index.yml), in Active Directory Domain Services (AD DS), or in the Azure Active Directory (Azure AD) admin center.
+You can manage Microsoft 365 user account passwords in several different ways, depending on your identity configuration. You can manage user accounts in the [Microsoft 365 admin center](/admin), in Active Directory Domain Services (AD DS), or in the Azure Active Directory (Azure AD) admin center.
 
 ## Plan for where and how you will manage your user account passwords
 
@@ -38,7 +39,7 @@ Where and how you can manage your user accounts depends on the identity model yo
 
 You manage user account passwords in:
 
-- [The Microsoft 365 admin center](../admin/add-users/index.yml)
+- [The Microsoft 365 admin center](/admin)
 - The Azure AD admin center
     
 ### Hybrid

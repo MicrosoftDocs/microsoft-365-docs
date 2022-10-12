@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -38,19 +39,19 @@ This example shows how to modify the **Activation** tab within the **Activation/
 
 1. Within the **Activation/Licensing** report, select the **Activation** tab.
 
-2. Enter the edit mode by choosing the **Edit** button on the top through the ![The more page button in Power BI](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) button.
+2. Enter the edit mode by choosing the **Edit** button on the top through the ![The more page button in Power BI.](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) button.
 
-    ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
+    ![Click Edit report on the top right navigation.](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
 
 3. On the top right, choose **Duplicate this page**.
 
-    ![Choose Duplicate this page](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
+    ![Choose Duplicate this page.](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
 
 4. In the bottom right, choose any of the bar-charts showing the count of users activating based on the OS such as Android, iOS, Mac, etc.
 
 5. In the **Visualizations** area to the right, in order to remove **Mac Count** from the visual, select the **X** next to it.
 
-    ![Remove Mac Count](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)
+    ![Remove Mac Count.](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)
 
 ### Create a new visual
 
@@ -58,13 +59,13 @@ The following example shows how to create a new visual to track new Yammer users
 
 1. Go to the **Product Usage** report using the left nav and select the **Yammer** tab.
 
-2. Switch to edit mode by choosing ![The more page button in Power BI](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) and **Edit**.
+2. Switch to edit mode by choosing ![The more page button in Power BI.](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) and **Edit**.
 
-3. At the bottom of the page, select the ![The add page button in Power BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) to create a new page.
+3. At the bottom of the page, select the ![The add page button in Power BI.](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) to create a new page.
 
 4. In the **Visualizations** area to the right, choose the **Stacked bar chart** (top row, first from left).
 
-    ![Select Bar Chart](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
+    ![Select Bar Chart.](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
 
 5. Select the bottom right of that visualization and drag to make it larger.
 
@@ -72,7 +73,7 @@ The following example shows how to create a new visual to track new Yammer users
 
 7. Drag **MonthName** to the fields area, directly below the **Axis** heading in the **Visualizations** area.
 
-    ![Drag Month Name](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
+    ![Drag Month Name.](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
 
 8. In the **Fields** area to the right, expand the **TenantProductUsage** table.
 
@@ -82,9 +83,9 @@ The following example shows how to create a new visual to track new Yammer users
 
 11. In the **Filter Type** area that appears, select the **Yammer** check box.
 
-    ![Select Yammer checkbox](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
+    ![Select Yammer checkbox.](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
 
-12. Just below the list of visualizations, choose the **Format** icon ![Format icon in Power BI Visualizaions](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png).
+12. Just below the list of visualizations, choose the **Format** icon ![Format icon in Power BI Visualizaions.](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png).
 
 13. Expand Title and change the **Title Text** value to **First-Time Yammer Users by Month**.
 
@@ -109,7 +110,7 @@ You can start by connecting directly to the ODATA reporting APIs from Microsoft 
     **NOTE:**
     The reporting APIs are in preview and are subject to change until they go into production.
 
-    ![OData feed URL for Power BI desktop](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
+    ![OData feed URL for Power BI desktop.](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
 
 3. Enter your Microsoft 365 (organization or school) admin credentials to authenticate to Microsoft 365 when prompted.
 
@@ -121,7 +122,7 @@ You can start by connecting directly to the ODATA reporting APIs from Microsoft 
 
     This will download the data into your Power BI Desktop. Save this file and then you can start creating the reports you need.
 
-    ![ODATA values available in the reporting API](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
+    ![ODATA values available in the reporting API.](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
 
 ### Use the Microsoft 365 usage analytics template
 
@@ -133,7 +134,7 @@ You can download the Power BI template file from the [Microsoft Download Center]
 
 2. Enter your tenant id value in the dialog.
 
-    ![Enter your tenant ID to open the pbit file](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
+    ![Enter your tenant ID to open the pbit file.](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
 
 3. Enter your admin credentials to authenticate to Microsoft 365 when prompted.
 

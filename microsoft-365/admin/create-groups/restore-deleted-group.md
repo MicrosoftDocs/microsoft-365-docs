@@ -4,12 +4,13 @@ ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -45,6 +46,8 @@ When a group is restored, the following content is restored:
 - Teams
 
 - Yammer group and group content (If the Microsoft 365 group was created from Yammer)
+
+- Power BI [Classic workspace](/power-bi/collaborate-share/service-create-workspaces)
 
 > [!NOTE]
 > This article describes restoring only Microsoft 365 groups. All other groups cannot be restored once deleted.

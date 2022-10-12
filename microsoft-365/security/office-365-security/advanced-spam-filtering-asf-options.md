@@ -5,40 +5,34 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn about the Advanced Spam Filter (ASF) settings that are available in anti-spam policies in Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Advanced Spam Filter (ASF) settings in EOP
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-> [!NOTE]
-> ASF settings that are currently available in anti-spam policies are in the process of being deprecated. We recommend that you don't use these settings in anti-spam policies. The functionality of these ASF settings is being incorporated into other parts of the filtering stack. For more information, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
-
 In all Microsoft 365 organizations, the Advanced Spam Filter (ASF) settings in anti-spam policies in EOP allow admins to mark messages as spam based on specific message properties. ASF specifically targets these properties because they're commonly found in spam. Depending on the property, ASF detections will either mark the message as **Spam** or **High confidence spam**.
 
 > [!NOTE]
 > Enabling one or more of the ASF settings is an aggressive approach to spam filtering. You can't report messages that are filtered by ASF as false positives. You can identify messages that were filtered by ASF by:
 >
-> - Periodic end-user spam quarantine notifications.
+> - Periodic quarantine notifications from spam and high confidence spam filter verdicts.
 > - The presence of filtered messages in quarantine.
 > - The specific `X-CustomSpam:` X-header fields that are added to messages as described in this article.
 
@@ -65,11 +59,7 @@ For each ASF setting, the following options are available in anti-spam policies:
 
 ## Increase spam score settings
 
-The following ASF settings set the spam confidence level (SCL) of detected messages to 5 or 6, which corresponds to the **Spam** filter verdict and the corresponding action in anti-spam policies.
-
-<br>
-
-****
+The following **Increase spam score** ASF settings set the spam confidence level (SCL) of detected messages to 5 or 6, which corresponds to a **Spam** filter verdict and the corresponding action in anti-spam policies.
 
 |Anti-spam policy setting|Description|X-header added|
 |---|---|---|
@@ -77,15 +67,10 @@ The following ASF settings set the spam confidence level (SCL) of detected messa
 |**Numeric IP address in URL** <p> *IncreaseScoreWithNumericIps*|Messages that contain numeric-based URLs (typically, IP addresses) are marked as spam.|`X-CustomSpam: Numeric IP in URL`|
 |**URL redirect to other port** <p> *IncreaseScoreWithRedirectToOtherPort*|Message that contain hyperlinks that redirect to TCP ports other than 80 (HTTP), 8080 (alternate HTTP), or 443 (HTTPS) are marked as spam.|`X-CustomSpam: URL redirect to other port`|
 |**Links to .biz or .info websites** <p> *IncreaseScoreWithBizOrInfoUrls*|Messages that contain `.biz` or `.info` links in the body of the message are marked as spam.|`X-CustomSpam: URL to .biz or .info websites`|
-|
 
 ## Mark as spam settings
 
-The following ASF settings set the SCL of detected messages to 9, which corresponds to the **High confidence spam** filter verdict and the corresponding action in anti-spam policies.
-
-<br>
-
-****
+The following **Mark as spam** ASF settings set the SCL of detected messages to 9, which corresponds to a **High confidence spam** filter verdict and the corresponding action in anti-spam policies.
 
 |Anti-spam policy setting|Description|X-header added|
 |---|---|---|
@@ -98,6 +83,10 @@ The following ASF settings set the SCL of detected messages to 9, which correspo
 |**Object tags in HTML** <p> *MarkAsSpamObjectTagsInHtml*|Messages that contain `<object>` HTML tags are marked as high confidence spam. <p> This tag allows plug-ins or applications to run in an HTML window.|`X-CustomSpam: Object tag in html`|
 |**Sensitive words** <p> *MarkAsSpamSensitiveWordList*|Microsoft maintains a dynamic but non-editable list of words that are associated with potentially offensive messages. <p> Messages that contain words from the sensitive word list in the subject or message body are marked as high confidence spam.|`X-CustomSpam: Sensitive word in subject/body`|
 |**SPF record: hard fail** <p> *MarkAsSpamSpfRecordHardFail*|Messages sent from an IP address that isn't specified in the SPF Sender Policy Framework (SPF) record in DNS for the source email domain are marked as high confidence spam. <p> Test mode is not available for this setting.|`X-CustomSpam: SPF Record Fail`|
+
+The following **Mark as spam** ASF settings set the SCL of detected messages to 6, which corresponds to a **Spam** filter verdict and the corresponding action in anti-spam policies.
+
+|Anti-spam policy setting|Description|X-header added|
+|---|---|---|
 |**Sender ID filtering hard fail** <p> *MarkAsSpamFromAddressAuthFail*|Messages that hard fail a conditional Sender ID check are marked as spam. <p> This setting combines an SPF check with a Sender ID check to help protect against message headers that contain forged senders. <p> Test mode is not available for this setting.|`X-CustomSpam: SPF From Record Fail`|
-|**Backscatter** <p> *MarkAsSpamNdrBackscatter*|*Backscatter* is useless non-delivery reports (also known as NDRs or bounce messages) caused by forged senders in email messages. For more information, see [Backscatter messages and EOP](backscatter-messages-and-eop.md). <p> You don't need to configure this setting in the following environments, because legitimate NDRs are delivered, and backscatter is marked as spam: <ul><li>Microsoft 365 organizations with Exchange Online mailboxes.</li><li>On-premises email organizations where you route *outbound* email through EOP.</li></ul> <p> In standalone EOP environments that protect inbound email to on-premises mailboxes, turning this setting on or off has the following result: <ul><li> **On**: Legitimate NDRs are delivered, and backscatter is marked as spam.</li><li>**Off**: Legitimate NDRs and backscatter go through normal spam filtering. Most legitimate NDRs will be delivered to the original message sender. Some, but not all, backscatter are marked as high confidence spam. By definition, backscatter can only be delivered to the spoofed sender, not to the original sender.</li></ul> <p> Test mode is not available for this setting.|`X-CustomSpam: Backscatter NDR`|
-|
+|**Backscatter** <p> *MarkAsSpamNdrBackscatter*|*Backscatter* is useless non-delivery reports (also known as NDRs or bounce messages) caused by forged senders in email messages. For more information, see [Backscatter messages and EOP](backscatter-messages-and-eop.md). <p> You don't need to configure this setting in the following environments, because legitimate NDRs are delivered, and backscatter is marked as spam: <ul><li>Microsoft 365 organizations with Exchange Online mailboxes.</li><li>On-premises email organizations where you route *outbound* email through EOP.</li></ul> <p> In standalone EOP environments that protect inbound email to on-premises mailboxes, turning this setting on or off has the following result: <ul><li> **On**: Legitimate NDRs are delivered, and backscatter is marked as spam.</li><li>**Off**: Legitimate NDRs and backscatter go through normal spam filtering. Most legitimate NDRs will be delivered to the original message sender. Some, but not all, backscatter is marked as spam. By definition, backscatter can only be delivered to the spoofed sender, not to the original sender.</li></ul> <p> Test mode is not available for this setting.|`X-CustomSpam: Backscatter NDR`|

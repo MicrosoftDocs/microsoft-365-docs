@@ -1,46 +1,41 @@
 ---
-title: "Microsoft Compliance Manager"
+title: "Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- highpri
+- tier1
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Compliance Manager helps organizations simplify and automate risk assessments, and suggests recommended actions to help address risks."
+description: "Microsoft Purview Compliance Manager helps organizations manage their regulatory requirements with greater ease. Multicloud assessments, control mapping, and continuous control assessment help you stay on track and address risks."
 ---
 
-# Microsoft Compliance Manager
+# Microsoft Purview Compliance Manager
 
 **In this article:** Learn what Compliance Manager is, how it helps simplify compliance and reduce risk, and its key components.
 
-## What's new: the GA release of Compliance Manager
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-Compliance Manager is now generally available (GA) as an end-to-end compliance management solution inside the [Microsoft 365 compliance center](microsoft-365-compliance-center.md). With this release, Compliance Manager completes the transition from its previous location in the Microsoft Service Trust Portal. Compliance Manager is also  available to US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers.
+## What is Compliance Manager?
 
-What began as the public preview of Compliance Score has evolved into a centralized tool with enhanced compliance management capabilities and greater ease of use.  The GA release brings a larger collection of pre-built assessments to help you scale your compliance activities.
-
-**Learn more about the GA release:**
-- Our [frequently asked questions](compliance-manager-faq.yml) walk you through the evolution in greater detail.
-- Read about GA feature enhancements in [this blog post](https://aka.ms/compliancemanager/GAblog).
+[Microsoft Purview Compliance Manager](https://compliance.microsoft.com/compliancemanager) is a feature in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> that helps you manage your organization’s multicloud compliance requirements with greater ease and convenience. Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
 
 Watch the video below to learn how Compliance Manager can help simplify how your organization manages compliance:
 <br>
 <br>
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
-
-## What is Compliance Manager
-
-[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that helps you manage your organization’s compliance requirements with greater ease and convenience. Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VdoO]
 
 Compliance Manager helps simplify compliance and reduce risk by providing:
 
@@ -52,9 +47,9 @@ Compliance Manager helps simplify compliance and reduce risk by providing:
 
 - A risk-based compliance score to help you understand your compliance posture by measuring your progress in completing improvement actions.
 
-Your Compliance Manager dashboard shows your current compliance score, helps you see what needs attention, and guides you to key improvement actions. Below is an example of what your Compliance Manager dashboard will look like:
+The Compliance Manager overview page shows your current compliance score, helps you see what needs attention, and guides you to key improvement actions. Below is an example of the overview page:
 
-![Compliance Manager - dashboard](../media/compliance-manager-dashboard.png "Compliance Manager dashboard")
+![Compliance Manager - dashboard.](../media/compliance-manager-overview.png "Compliance Manager overview page")
 
 ## Understanding your compliance score
 

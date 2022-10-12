@@ -1,17 +1,18 @@
 ---
 title: "Set up directory synchronization for Microsoft 365"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:
@@ -32,7 +33,7 @@ Microsoft 365 uses an Azure Active Directory (Azure AD) tenant to store and mana
 
 If you have an on-premises Active Directory Domain Services (AD DS) domain or forest, you can synchronize your AD DS user accounts, groups, and contacts with the Azure AD tenant of your Microsoft 365 subscription. This is hybrid identity for Microsoft 365. Here are its components.
 
-![Components of directory synchronization for Microsoft 365](../media/about-microsoft-365-identity/hybrid-identity.png)
+![Components of directory synchronization for Microsoft 365.](../media/about-microsoft-365-identity/hybrid-identity.png)
 
 Azure AD Connect runs on an on-premises server and synchronizes your AD DS with the Azure AD tenant. Along with directory synchronization, you can also specify these authentication options:
 

@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: 
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
+ms.collection:
+- scotvorg 
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -24,7 +25,7 @@ ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: "Learn to enable or disable the Clutter feature for all or specific users in your organization, using Exchange PowerShell. "
 ---
 
-# Configure Clutter for your organization
+# Configure Microsoft 365 Clutter for your organization
 
 > [!TIP]
 > [Focused Inbox](../setup/configure-focused-inbox.md) is going to replace Clutter. Learn more: [Update on Focused Inbox and our plans for Clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)

@@ -1,35 +1,38 @@
 ---
-title: "About the Exchange Online admin role"
+title: "About the Exchange Administrator role"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: "Exchange online admins manage your organization's email and mailboxes. For example, they recover deleted items in a user's mailbox."
+description: "Exchange administrators manage your organization's email and mailboxes and, for example, recover deleted items in a user's mailbox."
 ---
 
-# About the Exchange Online admin role
+# About the Exchange Administrator role
 
-To help you administer Microsoft 365, you can [assign](assign-admin-roles.md) users permissions to manage your organization's email and mailboxes from the [Exchange admin center](/exchange/exchange-admin-center). You do this by assigning them to the Exchange admin role.
+To help you administer Microsoft 365, you can [assign](assign-admin-roles.md) users permissions to manage your organization's email and mailboxes from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. You do this by assigning them to the Exchange Administrator role.
   
- **Tip**: When you assign someone to the Exchange admin role, also assign them to the Service admin role. This way they can see important information in the Microsoft 365 admin center, such as the health of the Exchange Online service, and change and release notifications.
+> [!TIP]
+> When you assign someone to the Exchange Administrator role, we recommend assigning them to the Service Support Administrator role. This way they can see important information in the Microsoft 365 admin center, such as the health of the Exchange Online service, and change and release notifications.
 
-Here are some of the key tasks users can do when they are assigned to the Exchange admin role:
+Here are some of the key tasks users can do when they are assigned to the Exchange Administrator role:
   
 - [Recover deleted items in a user mailbox - Admin Help](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 

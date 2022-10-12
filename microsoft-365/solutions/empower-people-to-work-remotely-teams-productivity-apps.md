@@ -2,14 +2,15 @@
 title: "Step 5. Deploy hybrid worker productivity apps and services"
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.service: o365-solutions
+ms.localizationpriority: high
 ms.collection: 
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
@@ -31,11 +32,11 @@ To be productive, people need to communicate and collaborate with one another. T
 | Desktop and mobile device Office applications | Microsoft 365 Apps | Create new content or collaborate on existing content with versions of Word, PowerPoint, Excel, and Outlook that are installed on your local computer and receive ongoing feature and security updates. |
 ||||
 
-![Use Teams, Outlook, SharePoint, OneDrive, and Microsoft 365 Apps to stay productive](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
+![Use Teams, Outlook, SharePoint, OneDrive, and Microsoft 365 Apps to stay productive.](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
 
 ## Keep people connected with Microsoft Teams
 
-Teams allows you to chat, meet, call, and collaborate all in one place. Millions of people get their work done in Teams every day because it brings together everything you need to work on-site or remotely into a hub for teamwork. 
+Teams with Microsoft Teams allows your organization to chat, meet, call, and collaborate all in one place. Millions of people get their work done with teams every day because it brings together everything you need to work on-site or remotely into a hub for teamwork. 
 
 For detailed guidance, see [Support remote workers using Microsoft Teams](/microsoftteams/support-remote-work-with-teams). 
 
@@ -43,7 +44,7 @@ Watch the [Enabling hybrid work with Microsoft Teams webcasts](https://resources
 
 ### Chat and conversations
 
-Chat and threaded conversations are at the center of Teams with support for individual 1:1 chats and group chats and conversations. Remote workers can share information, opinions, and personality by using gifs, stickers, and emojis in group chats or one-to-one messages.
+Chat and threaded conversations are at the center of Teams with support for individual 1:1 chats and group chats and conversations. Remote workers can share information, opinions, and personality by using pictures, stickers, and emojis in group chats or one-to-one messages.
 
 ### Meetings and conferencing 
 
@@ -51,7 +52,7 @@ Teams can certainly help maintain communications and information sharing with hy
 
 ### Calling
 
-Teams supports direct VoIP calling between users and even other organizations using federation. It uses the same codecs as meetings and provide great audio world-wide without additional PSTN charges. However, some users may need a dedicated phone number to take external calls when working on-site or remotely. Teams can quickly provide cloud phone service for these users to make and receive phone calls.
+Teams supports direct VoIP calling between users and even other organizations using federation. It uses the same codecs as meetings and provides great audio world-wide without additional PSTN charges. However, some users may need a dedicated phone number to take external calls when working on-site or remotely. Teams can quickly provide cloud phone service for these users to make and receive phone calls.
 
 ### Apps and workflows
 
@@ -100,6 +101,6 @@ For more information, see the [Deployment guide for Microsoft 365 Apps](/deployo
 
 ## Next step
 
-[![Step 6: Train your users and monitor their success](../media/empower-people-to-work-remotely/remote-workers-step-grid-6.png)](empower-people-to-work-remotely-train-monitor-usage.md)
+[![Step 6: Train your users and monitor their success.](../media/empower-people-to-work-remotely/remote-workers-step-grid-6.png)](empower-people-to-work-remotely-train-monitor-usage.md)
 
 Continue with [Step 6](empower-people-to-work-remotely-train-monitor-usage.md) to train your users and monitor their success.

@@ -8,14 +8,16 @@ manager: laurawi
 ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.service: o365-solutions
+ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-overview
-ms.custom:
+- zerotrust-solution
+ms.custom: admindeeplinkCOMPLIANCE
 description: Configure information protection in Microsoft 365 for data privacy regulations like GDPR and the California Consumer Privacy Act (CCPA), including Microsoft Teams, SharePoint, and email.
 
 ---
@@ -26,7 +28,7 @@ Your organization may be subject to regional data privacy regulations that requi
 
 Examples of the types of data in Microsoft 365 include chat sessions in Microsoft Teams, emails in Exchange, and files in SharePoint and OneDrive. This solution provides guidance on how to assess risks and take appropriate action to protect personal data in Microsoft 365. This includes identifying  personal information so you can protect, govern, and respond to data privacy incidents.
 
-![What is information protection for data privacy regulations](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
+![What is information protection for data privacy regulations.](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
 Additional information is also provided on the use of Microsoft 365 identity, device, and threat protection controls for your data privacy needs.
 
@@ -39,7 +41,7 @@ These Microsoft 365 capabilities and features help you meet the criteria for pro
 
 | Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
-| Compliance Manager | Manage regulatory compliance activities, get an overall score of your current compliance configuration, and find recommendations for improvement. This is a workflow-based risk assessment tool in the Microsoft 365 compliance center. | Microsoft 365 E3 and E5 |
+| Compliance Manager | Manage regulatory compliance activities, get an overall score of your current compliance configuration, and find recommendations for improvement. This is a workflow-based risk assessment tool in the Microsoft Purview compliance portal. | Microsoft 365 E3 and E5 |
 | Microsoft Defender for Office 365 | Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. | Microsoft 365 E3 and E5 |
 | Sensitivity labels | Classify and protect your organization's data without hindering the productivity of users and their ability to collaborate. Place labels with various levels of protection on email, files, or sites. | Microsoft 365 E3 and E5 |
 | Data Loss Protection (DLP) | Detect, warn, and block risky, inadvertent, or inappropriate sharing of data containing personal information, both internally and externally. | Microsoft 365 E3 and E5 |
@@ -51,7 +53,7 @@ These Microsoft 365 capabilities and features help you meet the criteria for pro
 
 To help you understand the Microsoft 365 tools available to help you meet one or more privacy-related regulations, this guidance is organized into sections.
 
-![Steps to implement information protection for data privacy regulations](../media/information-protection-deploy/information-protection-data-privacy-regulations-steps.png)
+![Steps to implement information protection for data privacy regulations.](../media/information-protection-deploy/information-protection-data-privacy-regulations-steps.png)
 
 Each of these sections corresponds to a separate article in this solution.
 
@@ -69,7 +71,7 @@ For more information, see [Assess data privacy risks and identify sensitive item
 
 ## Track: Run risk assessments and check your compliance score
 
-Compliance Manager, available in the Microsoft 365 compliance center, provides you with a built-in ability to track and manage improvement actions overall as well as those related to multiple data privacy regulations that apply to you.
+Compliance Manager, available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, provides you with a built-in ability to track and manage improvement actions overall as well as those related to multiple data privacy regulations that apply to you.
 
 You can use built in assessment templates specific to each regulation, where you can track action items for each assessment template selected, as well as view specific regulatory controls, and relate them to specific actions.
 
@@ -116,16 +118,16 @@ These training modules from Microsoft Learn can help you learn about how capabil
 
 |Training:|Protect enterprise information with Microsoft 365|
 |:---|:---|
-|![Teams info protection training icon](../media/protect-enterprise-information-microsoft-365.svg)|Protecting and securing your organization's information is more challenging than ever. The Protect enterprise information with Microsoft 365 learning path discusses how to protect your sensitive information from accidental oversharing or misuse, how to discover and classify data, how to protect it with sensitivity labels, and how to both monitor and analyze your sensitive information to protect against its loss. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications..<br><br>1 hr - Learning Path - 5 Modules|
+|![Teams info protection training icon.](../media/protect-enterprise-information-microsoft-365.svg)|Protecting and securing your organization's information is more challenging than ever. The Protect enterprise information with Microsoft 365 learning path discusses how to protect your sensitive information from accidental oversharing or misuse, how to discover and classify data, how to protect it with sensitivity labels, and how to both monitor and analyze your sensitive information to protect against its loss. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications..<br><br>1 hr - Learning Path - 5 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/m365-security-info-overview/introduction/)
+> [Start >](/training/modules/m365-security-info-overview/introduction/)
 
 #### Identity and access
 
 |Training:|Protect identity and access with Azure Active Directory|
 |:---|:---|
-|![Identity and access training icon](../media/protect-identity-and-access-with-microsoft-365.svg)|The Identity and Access learning path covers the latest identity and access technologies, tools for strengthening authentication, and guidance on identity protection within your organization. Microsoft access and identity technologies enable you to secure your organization’s identity, whether it is on-premises or in the cloud, and empower your users to work securely from any location. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<br><br>2 hr 52 min - Learning Path - 6 Modules|
+|![Identity and access training icon.](../media/protect-identity-and-access-with-microsoft-365.svg)|The Identity and Access learning path covers the latest identity and access technologies, tools for strengthening authentication, and guidance on identity protection within your organization. Microsoft access and identity technologies enable you to secure your organization’s identity, whether it is on-premises or in the cloud, and empower your users to work securely from any location. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<br><br>2 hr 52 min - Learning Path - 6 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/m365-identity-overview/introduction/)
+> [Start >](/training/modules/m365-identity-overview/introduction/)

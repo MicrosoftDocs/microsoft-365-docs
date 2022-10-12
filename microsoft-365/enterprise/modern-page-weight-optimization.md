@@ -2,13 +2,14 @@
 title: "Optimize page weight in SharePoint Online modern site pages"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: 
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection:
+- scotvorg 
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content
@@ -48,7 +49,7 @@ Possible results include:
 
 If the **Page weight under 500KB** result appears in the **Attention required** section, you can click the result for details.
 
-![Requests to SharePoint results](../media/modern-portal-optimization/pagediag-page-weight.png)
+![Requests to SharePoint results.](../media/modern-portal-optimization/pagediag-page-weight.png)
 
 ## Remediate page weight issues
 
@@ -67,7 +68,7 @@ You can find additional guidance for limiting page weight in the following artic
 
 Before you make page revisions to remediate performance issues, make a note of the page load time in the analysis results. Run the tool again after your revision to see if the new result is within the baseline standard, and check the new page load time to see if there was an improvement.
 
-![Page load time results](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Page load time results.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >Page load time can vary based on a variety of factors such as network load, time of day, and other transient conditions. You should test page load time a few times before and after making changes to help you average the results.

@@ -6,14 +6,16 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkSPO
 ms.collection: 
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn about how to administer SharePoint and OneDrive services in a multi-geo environment.
 ---
 
@@ -23,11 +25,14 @@ Here's a look at how Microsoft 365 services work in a multi-geo environment.
 
 ## Administrator experience
 
-The [SharePoint admin center](https://admin.microsoft.com/sharepoint) has a **Geo locations** tab in the left navigation which features a geo locations map where you can view and manage your geo locations. Use this page to add or delete geo locations for your tenant.
+The SharePoint admin center has a <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">**Geo locations** tab</a> in the left navigation that features a geo locations map where you can view and manage your geo locations. Use this page to add or delete geo locations for your tenant.
 
 ## Audit log search
 
 A unified [Audit log](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) for all your satellite locations is available from the Microsoft 365 audit log search page. You can see all the audit log entries from across geo locations, for example, NAM & EUR users' activities will show up in one org view and then you can apply existing filters to see specific user's activities.
+
+> [!NOTE]
+> Exchange admin audit events are only available for the default location.
 
 ## BCS, Secure Store, Apps
 
@@ -35,7 +40,7 @@ BCS, Secure Store, and Apps all have separate instances in each satellite locati
 
 ## Compliance admin center
 
-There is one central compliance center for a multi-geo tenant: [Microsoft 365 Compliance admin center](https://compliance.microsoft.com/).
+There is one central compliance center for a multi-geo tenant: [Microsoft Purview admin center](https://compliance.microsoft.com/).
 
 ## eDiscovery
 
@@ -51,11 +56,11 @@ You can set your IP DLP policies for OneDrive for Business, SharePoint, and Exch
 
 The DLP policies are automatically synchronized based on their applicability to each geo location.
 
-Implementing Information Protection and Data Loss prevention policies to all users in a geo location is not an option available in the UI, instead you must select the applicable accounts for the policy or apply the policy globally to all accounts.
+Implementing Information Protection and Microsoft Purview Data Loss Prevention policies to all users in a geo location is not an option available in the UI, instead you must select the applicable accounts for the policy or apply the policy globally to all accounts.
 
-## Microsoft PowerApps
+## Microsoft Power Apps
 
-PowerApps created for the satellite location will use the end point located in the central location for the tenant. Microsoft PowerApps is not a Multi-Geo service. 
+Power Apps created for the satellite location will use the end point located in the central location for the tenant. Microsoft Power Apps is not a Multi-Geo service. 
 
 ## Power Automate
 

@@ -1,5 +1,5 @@
 ---
-title: "Step 4 - Give another employee access to OneDrive and Outlook data"
+title: "Step 4 - Forward a former employee's email to another employee or convert to a shared mailbox"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -19,172 +20,52 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
-- AdminTemplateSet
 - m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow the steps in this article to give another employee access to the former employee's OneDrive and Outlook data."
+description: "Forward a former employee's email to another employee or convert it to a shared mailbox where several people will be able to access it instead of one person."
 ---
 
-# Step 4 - Give another employee access to OneDrive and Outlook data
+# Step 4 - Forward a former employee's email to another employee or convert to a shared mailbox
 
-When an employee leaves your organization, you'll want to access their OneDrive and Outlook data, back it up, and choose whether to give it to another employee.
-  
-## Access a former user's OneDrive documents
+In this step, you assign the former employee's email address to another employee, or convert the user's mailbox to a shared mailbox.
 
-If you remove a user's license but don't delete the account, you can give yourself access to the content in the user's OneDrive. If you delete the user's account, you have 30 days by default to access the former user's OneDrive data. [Learn how to set the OneDrive retention for deleted users](/onedrive/set-retention). If you don't [restore a user account](/office365/admin/add-users/restore-user) within this time, their OneDrive content is deleted.
+## Convert former employee's mailbox to a shared mailbox
 
-To preserve a former user's OneDrive files, first give yourself access to their OneDrive, and then move the files you want to keep.
+When you convert a user's mailbox to a shared mailbox, all of the existing email and calendar are retained. Only now it's in a shared mailbox where several people will be able to access it instead of one person. You can convert a shared mailbox back to a user (private) mailbox at a later date if you want.
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.  
+- Creating a shared mailbox is the less expensive way to go because you won't have to pay for a license **as long as the mailbox is smaller than 50 GB**. If it is over 50 GB, you'll need to assign a license to it.
+- If you convert the mailbox to a shared mailbox, all the old email will be available, too. This can take up a lot of space.
+- If you set up email forwarding, only *new* emails sent to the former employee will be sent to the current employee.
 
-2. Select a user.
+Follow these steps to [convert the user's mailbox to a shared mailbox](../email/convert-user-mailbox-to-shared-mailbox.md).
 
-3. In the right pane, select **OneDrive**. Under **Get access to files**, select **Create link to files**.
+## Forward a former employee's email to another employee
 
-4. Select the link to open the file location. Download the files to your computer, or select **Move to** or **Copy to** to move or copy them to your own OneDrive or to a shared library.
+ > [!IMPORTANT]
+ > If you're setting up email forwarding or a shared mailbox, in the end, don't delete the former employee's account. The account needs to be there to anchor the email forwarding or shared mailbox.
 
-> [!NOTE]
-> You can move or copy up to 500 MB of files and folders at a time.<br/>
-> When you move or copy documents that have version history, only the latest version is moved.  
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
+2. Select the name of the employee that you want to block, and then select the **Mail** tab.
+3. Under **Email Forwarding**, select **Manage email forwarding**.
+4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee who's going to get the email.
+5. Select **Save**.
+6. Remember, don't delete the former employee's account.
 
-You can also grant access to another user to access a former employee's OneDrive.
+### Cancel Outlook meetings
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> as a global admin or SharePoint admin.
+Make sure to cancel all meetings that the former user had on their calendar. This lets people remove the meetings created by the former user.
 
-    If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
-
-2. In the left pane, select **Admin centers** \> **SharePoint**. (You might need to select **Show all** to see the list of admin centers.)
-
-3. If the classic SharePoint admin center appears, select **Open it now** at the top of the page to open the SharePoint admin center.
-
-4. In the left pane, select **More features**.
-
-5. Under **User profiles**, select **Open**.
-
-6. Under **People**, select **Manage User Profiles**.
-
-7. Enter the former employee's name and select **Find**.
-
-8. Right-click the user, and then choose **Manage site collection owners**.
-
-9. Add the user to **Site collection administrators** and select **Ok**.
-
-10. The user will now be able to access the former employee's OneDrive using the OneDrive URL. 
-
-### Revoke admin access to a user's OneDrive
-
-You can give yourself access to the content in a user's OneDrive, but you may want to remove your access when you no longer need it.
-
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> as a global admin or SharePoint admin.
-
-    If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
-
-2. In the left pane, select **Admin centers** \> **SharePoint**. (You might need to select **Show all** to see the list of admin centers.)
-
-3. If the classic SharePoint admin center appears, select **Open it now** at the top of the page to open the SharePoint admin center.
-
-4. In the left pane, select **More features**.
-
-5. Under **User profiles**, select **Open**.
-
-6. Under **People**, select **Manage User Profiles**.
-
-7. Enter the user's name and select **Find**.
-
-8. Right-click the user, and then choose **Manage site collection owners**.
-
-9. Remove the person who no longer needs access to the user's data, and then select **OK**.
-
-## Access the Outlook data of a former user
-
-To save the email messages, calendar, tasks, and contacts of the former employee, export the information to an Outlook Data File (.pst).
-  
-1. [Add the former employee's email](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) to your Outlook (If you [reset the user's password](reset-passwords.md), you can set it to something only you know.)
-
-2. In Outlook, select **File**.
-
-    ![This is what the ribbon looks like in Outlook 2016.](../../media/d7f66ed3-9861-4521-b410-e86a58ab15a7.png)
-  
-3. Select **Open &amp; Export** \> **Import/Export**.
-
-    ![Import/Export command in the Backstage view](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
-  
-4. Select **Export to a file**, and then select **Next**.
-
-    ![Export to a file option in the Import and Export Wizard](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
-  
-5. Select **Outlook Data File (.pst)**, and then select **Next**.
-
-6. Select the account you want to export by selecting the name or email address, such as Mailbox - Anne Weiler or anne@contoso.com. If you want to export everything in your account, including mail, calendar, contacts, tasks, and notes, make sure the **Include subfolders** check box is selected.
-
-    > [!NOTE]
-    > You can export one account at a time. If you want to export multiple accounts, after one account is exported, repeat these steps.
-  
-    ![Export Outlook Data File dialog box with top folder selected and Include subfolders checked](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
-  
-7. Select **Next**.
-
-8. Select **Browse** to select where to save the Outlook Data File (.pst). Type a  *file name*, and then select **OK** to continue.
-
-    > [!NOTE]
-    > If you've used export before, the previous folder location and file name appear. Type a  *different file name*  before selecting **OK**.
-  
-9. If you are exporting to an existing Outlook Data File (.pst), under **Options**, specify what to do when exporting items that already exist in the file.
-
-10. Select **Finish**.
-
-Outlook begins the export immediately unless a new Outlook Data File (.pst) is created or a password-protected file is used.
-  
-- If you're creating an Outlook Data File (.pst), an optional password can help protect the file. When the **Create Outlook Data File** dialog box appears, type the  *password*  in the **Password** and **Verify Password** boxes, and then select **OK**. In the **Outlook Data File Password** dialog box, type the  *password*, and then select **OK**.
-
-- If you're exporting to an existing Outlook Data File (.pst) that is password protected, in the **Outlook Data File Password** dialog box, type the  *password*, and then select **OK**.
-
-See how to [Export or backup email, contacts, and calendar to an Outlook .pst file](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) in Outlook 2010.
-
-  > [!NOTE]
-  > By default, your email is available offline for a period of 12 months. If required, see how to [increase the data available offline](/outlook/troubleshoot/mailboxes/only-subset-items-synchronized).
-
-### Give another user access to a former user's email
-
-To give access to the email messages, calendar, tasks, and contacts of the former employee to another employee, import the information to another employee's Outlook inbox.
-
-> [!NOTE]
-> You can also [convert the former user's mailbox to a shared mailbox](/office365/admin/email/convert-user-mailbox-to-shared-mailbox) or [forward a former employee's email to another employee](/office365/admin/add-users/remove-former-employee#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox).
-
-1. In Outlook, go to **File** \> **Open &amp; Export** \> **Import/Export**.
-
-    This starts the Import and Export Wizard.
-
-2. Select **Import from another program or file**, and then select **Next**.
-
-    ![Import and Export Wizard](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
-  
-3. Select **Outlook Data File (.pst)**, and select **Next**.
-
-4. Browse to the .pst file you want to import.
-
-5. Under **Options**, choose how you want to deal with duplicates
-
-6. Select **Next**.
-
-7. If a password was assigned to the Outlook Data File (.pst), enter the password, and then select **OK**.
-
-8. Set the options for importing items. The default settings usually don't need to be changed.
-
-9. Select **Finish**.
-
-> [!NOTE]
-> The steps remain the same for accessing an existing user's OneDrive and email data.
-
-> [!TIP]
-> If you want to import or restore only a few items from an Outlook Data File (.pst), you can open the Outlook Data File. Then, in the navigation pane, drag the items from Outlook Data File folders to your existing Outlook folders. 
+If the person had meetings that booked equipment or rooms, they won't be available to be booked until those meetings are canceled. Read [Delete an appointment or a meeting](https://support.microsoft.com/office/delete-an-appointment-or-a-meeting-2703bfdb-9a07-4396-be3b-a9f79438455b) for the steps.
 
 ## Related content
 
-[Add and remove admins on a OneDrive account](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (article)
-[Restore a deleted OneDrive](/onedrive/restore-deleted-onedrive) (article)
-[OneDrive retention and deletion](/onedrive/retention-and-deletion) (article)
-[Share OneDrive files and folders](https://support.microsoft.com/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07)
+[Open and use a shared mailbox in Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd)
+
+[Access another person's mailbox](https://support.microsoft.com/office/access-another-person-s-mailbox-a909ad30-e413-40b5-a487-0ea70b763081)
+
+[Exchange admin center in Exchange Online](/exchange/exchange-admin-center)
+
+[Manager another person's mail and calendar items](https://support.microsoft.com/office/manage-another-person-s-mail-and-calendar-items-afb79d6b-2967-43b9-a944-a6b953190af5)

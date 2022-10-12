@@ -1,5 +1,5 @@
 ---
-title: "Getting an account disabled error in Outlook on the web?"
+title: "Getting an account disabled error in Outlook on the web"
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -7,9 +7,10 @@ author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW

@@ -9,17 +9,17 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
   - MET150
 ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
   - seo-marvel-apr2020
 description: Learn how to update a Domain Name Service (DNS) record to use Sender Policy Framework (SPF) with your custom domain in Office 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Set up SPF to help prevent spoofing
@@ -30,7 +30,7 @@ ms.prod: m365-security
 - [Troubleshooting SPF](#troubleshooting-spf)
 
 <!--
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -73,18 +73,15 @@ The SPF TXT record for Office 365 will be made in external DNS for any custom do
 
 1. Ensure that you're familiar with the SPF syntax in the following table.
 
-   ****
-
-   |Element|If you're using...|Common for customers?|Add this...|
-   |---|---|---|---|
-   |1|Any email system (required)|Common. All SPF TXT records start with this value|`v=spf1`|
-   |2|Exchange Online|Common|`include:spf.protection.outlook.com`|
-   |3|Exchange Online dedicated only|Not common|`ip4:23.103.224.0/19` <br> `ip4:206.191.224.0/19` <br> `ip4:40.103.0.0/16` <br> `include:spf.protection.outlook.com`|
-   |4|Office 365 Germany, Microsoft Cloud Germany only|Not common|`include:spf.protection.outlook.de`|
-   |5|Third-party email system|Not common|`include:<domain_name>` <p> \<domain_name\> is the domain of the third-party email system.|
-   |6|On-premises email system. For example, Exchange Online Protection plus another email system|Not common|Use one of these for each additional mail system: <p> `ip4:<IP_address>` <br> `ip6:<IP_address>` <br> `include:<domain_name>` <p> \<IP_address\> and \<domain_name\> are the IP address and domain of the other email system that sends mail on behalf of your domain.|
-   |7|Any email system (required)|Common. All SPF TXT records end with this value|`<enforcement rule>` <p> This can be one of several values. We recommend the value `-all`.|
-   |
+    |Element|If you're using...|Common for customers?|Add this...|
+    |---|---|---|---|
+    |1|Any email system (required)|Common. All SPF TXT records start with this value|`v=spf1`|
+    |2|Exchange Online|Common|`include:spf.protection.outlook.com`|
+    |3|Exchange Online dedicated only|Not common|`ip4:23.103.224.0/19` <br> `ip4:206.191.224.0/19` <br> `ip4:40.103.0.0/16` <br> `include:spf.protection.outlook.com`|
+    |4|Office 365 Germany, Microsoft Cloud Germany only|Not common|`include:spf.protection.outlook.de`|
+    |5|Third-party email system|Not common|`include:<domain_name>` <p> \<domain_name\> is the domain of the third-party email system.|
+    |6|On-premises email system. For example, Exchange Online Protection plus another email system|Not common|Use one of these for each additional mail system: <p> `ip4:<IP_address>` <br> `ip6:<IP_address>` <br> `include:<domain_name>` <p> \<IP_address\> and \<domain_name\> are the IP address and domain of the other email system that sends mail on behalf of your domain.|
+    |7|Any email system (required)|Common. All SPF TXT records end with this value|`<enforcement rule>` <p> This can be one of several values. We recommend the value `-all`.|
 
 2. If you haven't already done so, form your SPF TXT record by using the syntax from the table.
 
@@ -146,10 +143,12 @@ For advanced examples, a more detailed discussion about supported SPF syntax, sp
 
  SPF is designed to help prevent spoofing, but there are spoofing techniques that SPF can't protect against. To defend against these, once you've set up SPF, you should configure DKIM and DMARC for Office 365.
 
-[DKIM](use-dkim-to-validate-outbound-email.md) email authentication's goal is to prove the contents of the mail haven't been tampered with.
+[**DKIM**](use-dkim-to-validate-outbound-email.md) email authentication's goal is to prove the contents of the mail haven't been tampered with.
 
-[DMARC](use-dmarc-to-validate-email.md) email authentication's goal is to make sure that SPF and DKIM information matches the From address.
+[**DMARC**](use-dmarc-to-validate-email.md) email authentication's goal is to make sure that SPF and DKIM information matches the From address.
 
  For advanced examples and a more detailed discussion about supported SPF syntax, see [How SPF works to prevent spoofing and phishing in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
+
+[Use trusted ARC Senders for legitimate mailflows](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders)
 
 *Select 'This page' under 'Feedback' if you have feedback on this documentation.*

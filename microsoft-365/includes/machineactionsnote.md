@@ -6,8 +6,8 @@ ms.reviewer:
 manager: dansimp
 ms.author: macapara
 author: mjcaparas
-ms.prod: w10
+ms.service: microsoft-365-security
 ---
 
->[!Note]
-> This page focuses on performing a machine action via API. See [take response actions on a machine](/microsoft-365/security/defender-endpoint/respond-machine-alerts.md) for more information about response actions functionality via Microsoft Defender for Endpoint.
+> [!NOTE]
+> This page focuses on performing a machine action via API. See [take response actions on a machine](/microsoft-365/security/defender-endpoint/respond-machine-alerts) for more information about response actions functionality via Microsoft Defender for Endpoint.

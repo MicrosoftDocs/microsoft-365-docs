@@ -1,16 +1,17 @@
 ---
 title: "Information protection for the Contoso Corporation"
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
-manager: laurawi
+ms.author: kvice
+manager: scotv
 ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom:
@@ -30,7 +31,7 @@ Contoso performed an analysis of their data and determined the following classif
 
 | Level 1: Baseline | Level 2: Sensitive | Level 3: Highly regulated |
 |:-------|:-----|:-----|
-| Data is encrypted and available only to authenticated users.<BR> <BR> Provided for all data stored on-premises and in cloud-based storage and workloads. Data is encrypted while it resides in the service and in transit between the service and client devices. <BR><BR>Examples of Level 1 data are normal business communications (email) and files for administrative, sales, and support workers. | Level 1 plus strong authentication and data loss protection.<BR> <BR> Strong authentication includes Azure AD Multi-Factor Authentication (MFA) with SMS validation. Data loss prevention ensures that sensitive or critical information doesn't travel outside the Microsoft cloud.<BR><BR>Examples of Level 2 data are financial and legal information and research and development data for new products. | Level 2 plus the highest levels of encryption, authentication, and auditing.<BR><BR>The highest levels of encryption for data at rest and in the cloud, compliant with regional regulations, combined with MFA with smart cards and granular auditing and alerting.<BR> <BR>Examples of Level 3 data are customer and partner personal information, product engineering specifications, and proprietary manufacturing techniques.  |
+| Data is encrypted and available only to authenticated users.<BR> <BR> Provided for all data stored on-premises and in cloud-based storage and workloads. Data is encrypted while it resides in the service and in transit between the service and client devices. <BR><BR>Examples of Level 1 data are normal business communications (email) and files for administrative, sales, and support workers. | Level 1 plus strong authentication and data loss protection.<BR> <BR> Strong authentication includes Azure AD Multi-Factor Authentication (MFA) with SMS validation. Microsoft Purview Data Loss Prevention ensures that sensitive or critical information doesn't travel outside the Microsoft cloud.<BR><BR>Examples of Level 2 data are financial and legal information and research and development data for new products. | Level 2 plus the highest levels of encryption, authentication, and auditing.<BR><BR>The highest levels of encryption for data at rest and in the cloud, compliant with regional regulations, combined with MFA with smart cards and granular auditing and alerting.<BR> <BR>Examples of Level 3 data are customer and partner personal information, product engineering specifications, and proprietary manufacturing techniques.  |
 ||||
 
 ## Contoso information policies
@@ -78,10 +79,10 @@ As part of their rollout of Exchange Online and SharePoint, Contoso configured t
 
 Here's resulting set of Contoso policies for information protection.
 
-![Device, Exchange Online, and SharePoint Conditional Access policies](../media/contoso-info-protect/contoso-info-protect-fig1.png)
+:::image type="content" alt-text="Device, Exchange Online, and SharePoint Conditional Access policies." source="../media/contoso-info-protect/contoso-info-protect-fig1.png" lightbox="../media/contoso-info-protect/contoso-info-protect-fig1.png":::
 
 >[!Note]
->Contoso also configured additional Conditional Access policies for identity and sign-in. See [Identity for the Contoso Corporation](contoso-identity.md#conditional-access-policies-for-identity-and-device-access).
+>Contoso also configured additional Conditional Access policies for identity and sign-in. See [Identity for the Contoso Corporation](contoso-identity.md#conditional-access-policies-for-zero-trust-identity-and-device-access).
 >
 
 These policies ensure that:
@@ -105,7 +106,7 @@ The following table maps Contoso data levels to information protection features 
 
 Here's the resulting Contoso information-protection configuration.
 
-![Contoso's resulting information protection configuration](../media/contoso-info-protect/contoso-info-protect-fig2.png)
+:::image type="content" alt-text="Contoso's resulting information protection configuration." source="../media/contoso-info-protect/contoso-info-protect-fig2.png":::
 
 ## Next step
 
@@ -113,7 +114,7 @@ Learn how Contoso uses the [security features across Microsoft 365 for enterpris
 
 ## See also
 
-[Security roadmap](../security/office-365-security/security-roadmap.md)
+[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/overview)
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 

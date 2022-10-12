@@ -1,16 +1,16 @@
 ---
-title: "Move a SharePoint site to a different geo location"
+title: Move a SharePoint site to a different geo location
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Learn how to move a SharePoint site to a different geo location within your multi-geo environment and communicate expectations of the changes to your users.
@@ -23,14 +23,14 @@ With SharePoint site geo move, you can move SharePoint sites to other geo locati
 
 The following types of site can be moved between geo locations:
 
-- Microsoft 365 Group-connected sites, including those associated with Microsoft Teams
-- Modern sites without a Microsoft 365 Group association
+- Microsoft 365 group-connected sites, including those sites associated with Microsoft Teams
+- Modern sites without a Microsoft 365 group association
 - Classic SharePoint sites
 - Communication sites
 
 You must be a Global Administrator or SharePoint Administrator to move a site between geo locations.
 
-There is a read-only window during the SharePoint site geo move of approximately 4-6 hours, depending on site contents.
+There is a read-only window during the SharePoint site geo move of approximately 4-6 hours, depending on site-contents.
 
 ## Best practices
 
@@ -57,6 +57,7 @@ You can schedule SharePoint site moves in advance (described later in this artic
 
 - You can schedule up to 4,000 moves at a time.
 - As the moves begin, you can schedule more, with a maximum of 4,000 pending moves in the queue and any given time.
+- The maximum size of a SharePoint site that can be moved is 1 terabyte (1 TB).
 
 To schedule a SharePoint site geo move for a later time, include one of the following parameters when you start the move:
 
@@ -69,13 +70,13 @@ Time must be specified in Coordinated Universal Time (UTC) for both parameters.
 
 SharePoint site geo move requires that you connect and perform the move from the SharePoint Admin URL in the geo location where the site is.
 
-For example, if the site URL is <https://contosohealthcare.sharepoint.com/sites/Turbines>, connect to the SharePoint Admin URL at <https://contosohealthcare-admin.sharepoint.com>:
+For example, if the site URL is `https://contosohealthcare.sharepoint.com/sites/Turbines`, connect to the SharePoint Admin URL at `https://contosohealthcare-admin.sharepoint.com`:
 
 ```powershell
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 ```
 
-![SharePoint Online Management Shell window showing the Connect-SPOService command](../media/move-onedrive-between-geo-locations-image1.png)
+![SharePoint Online Management Shell window showing the Connect-SPOService command.](../media/move-onedrive-between-geo-locations-image1.png)
 
 ### Validating the environment
 
@@ -87,7 +88,7 @@ We do not support moving sites with:
 - InfoPath forms
 - Information Rights Management (IRM) templates applied
 
-To ensure all geo locations are compatible, run `Get-SPOGeoMoveCrossCompatibilityStatus`. This will display all your geo locations and whether the environment is compatible with the destination geo location.
+To ensure all geo locations are compatible, run `Get-SPOGeoMoveCrossCompatibilityStatus`. This will display all your geo locations and whether the environment is compatible with the destination geo location. If a geo location is incompatible, that means an update is in progress in that location. Try again in a few days.
 
 To perform a validation-only check on your site, use `Start-SPOSiteContentMove` with the `-ValidationOnly` parameter to validate if the site is able to be moved. For example:
 
@@ -97,15 +98,15 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 
 This will return *Success* if the site is ready to be moved or *Fail* if any of blocked conditions are present.
 
-### Start a SharePoint site geo move for a site with no associated Microsoft 365 Group
+### Start a SharePoint site geo move for a site with no associated Microsoft 365 group
 
 By default, initial URL for the site will change to the URL of the destination geo location. For example:
 
-<https://Contoso.sharepoint.com/sites/projectx> to <https://ContosoEUR.sharepoint.com/sites/projectx>
+`https://Contoso.sharepoint.com/sites/projectx` to `https://ContosoEUR.sharepoint.com/sites/projectx`
 
-For sites with no Microsoft 365 Group association, you can also rename the site by using the `-DestinationUrl` parameter. For example:
+For sites with no Microsoft 365 group association, you can also rename the site by using the `-DestinationUrl` parameter. For example:
 
-<https://Contoso.sharepoint.com/sites/projectx> to <https://ContosoEUR.sharepoint.com/sites/projecty>
+<https://Contoso.sharepoint.com/sites/projectx> to `https://ContosoEUR.sharepoint.com/sites/projecty`
 
 To start the site move, run:
 
@@ -113,13 +114,13 @@ To start the site move, run:
 Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>
 ```
 
-![Screenshot of PowerShell window showing Start-SPOSiteContentMove cmdlet](../media/multi-geo-sharepoint-site-move-powershell.png)
+![Screenshot of PowerShell window showing Start-SPOSiteContentMove cmdlet.](../media/multi-geo-sharepoint-site-move-powershell.png)
 
-### Start a SharePoint site geo move for a Microsoft 365 Group-connected site
+### Start a SharePoint site geo move for a Microsoft 365 group-connected site
 
-To move an Office 365 Group-connected site, the Global Administrator or SharePoint Administrator must first change the Preferred Data Location (PDL) attribute for the Office 365 Group.
+To move a Microsoft 365 group-connected site, the Global Administrator or SharePoint Administrator must first change the Preferred Data Location (PDL) attribute for the Microsoft 365 group.
 
-To set the PDL for a Microsoft 365 Group:
+To set the PDL for a Microsoft 365 group:
 
 ```PowerShell
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
@@ -153,7 +154,7 @@ The move statuses are described in the following table.
 |---|---|
 |Ready to Trigger|The move has not started.|
 |Scheduled|The move is in queue but has not yet started.|
-|InProgress (n/4)|The move is in progress in one of the following states: Validation (1/4), Backup (2/4), Restore (3/4), Cleanup (4/4).|
+|InProgress (n/4)|The move is in progress in one of the following states: Validation (1/4), Back up (2/4), Restore (3/4), Cleanup (4/4).|
 |Success|The move has completed successfully.|
 |Failed|The move failed.|
 |
@@ -166,7 +167,7 @@ Site users should notice minimal disruption when their site is moved to a differ
 
 ### Site
 
-While the move is in progress the site is set to read-only. Once the move is completed, the user is directed to the new site in the new geo location when they click on bookmarks or other links to the site.
+While the move is in progress, the site is set to read-only. Once the move is completed, the user is directed to the new site in the new geo location when they click on bookmarks or other links to the site.
 
 ### Permissions
 
@@ -194,9 +195,12 @@ OneNote win32 client and UWP (Universal) App will automatically detect and seaml
 - OneNote UWP – Version 16.0.8431.1006 (and later)
 - OneNote Mobile App – Version 16.0.8431.1011 (and later)
 
-### Teams (applicable to Microsoft 365 Group connected sites)
+### Teams (applicable to Microsoft 365 group connected sites)
 
-When the SharePoint site geo move completes, users will have access to their Microsoft 365 Group site files on the Teams app. Additionally, files shared via Teams chat from their site prior to geo move will continue to work after move is complete.
+When the SharePoint site geo move completes, users will have access to their Microsoft 365 group site files on the Teams app. Additionally, files shared via Teams chat from their site prior to geo move will continue to work after move is complete.
+
+SharePoint site geo move does not support moving Private Channels from one geo to another. Private channels remain in the original geo.
+  
 
 ### SharePoint Mobile App (iOS/Android)
 
@@ -204,20 +208,22 @@ The SharePoint Mobile App is cross geo compatible and able to detect the site's 
 
 ### SharePoint workflows
 
-SharePoint 2013 workflows need to be republished after the site move. SharePoint 2010 workflows should continue to function normally.
+SharePoint 2013 workflows have to be republished after the site move. SharePoint 2010 workflows should continue to function normally.
 
 ### Apps
 
-If you are moving a site with apps, you must re-instantiate the app in the site's new geo location as the app and its connections may not be available in the destination geo location.
+If you are moving a site with apps, you must reinstantiate the app in the site's new geo location as the app and its connections may not be available in the destination geo location.
 
-### Flow
+### Power Automate
 
-In most cases Flows will continue to work after a SharePoint site geo move. We recommend that you test them once the move has completed.
+In most cases, Power Automate Flows will continue to work after a SharePoint site geo move. We recommend that you test them once the move has completed.
 
-### PowerApps
+### Power Apps
 
-PowerApps need to be recreated in the destination location.
+Power Apps need to be recreated in the destination location.
 
 ### Data movement between geo locations
 
-SharePoint uses Azure Blob storage for its content, while the metadata associated with sites and its files is stored within SharePoint. After the site is moved from its source geo location to its destination geo location, the service will also move its associated Blob Storage. Blob Storage moves complete in approximately 40 days.
+SharePoint uses Azure Blob Storage for its content, while the metadata associated with sites and its files is stored within SharePoint. After the site is moved from its source geo location to its destination geo location, the service will also move its associated Blob Storage. Blob Storage moves complete in approximately 40 days. This will not have any impact to users interaction with the data. 
+
+You can check the Blob Storage move status using the [Get-SPOCrossGeoMoveReport](/powershell/module/sharepoint-online/get-spocrossgeomovereport) cmdlet. 

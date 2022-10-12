@@ -7,10 +7,12 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -80,7 +82,7 @@ Search for supported app level settings related to your organization, the servic
 
 You can find quick links to your domains, and then the link will take you to that domain's overview page.
 
-:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="Search results showing domains owned in the admin center":::
+:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="Search results showing domains owned in the admin center.":::
 
 ## Documentation
 

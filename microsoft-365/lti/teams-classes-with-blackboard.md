@@ -1,18 +1,17 @@
 ---
 title: Use Microsoft Teams classes with Blackboard Learn Ultra
-ms.author: v-cichur
+ms.author: danismith
 author: cichur
 manager: serdars
 ms.reviewer: amitman 
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
-localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: "Use Microsoft Teams classes with Blackboard Learn Ultra"
+ms.localizationpriority: medium
+description: Use Microsoft Teams classes with Blackboard Learn Ultra.
 ---
 
 # Use Microsoft Teams classes with Blackboard Learn Ultra
@@ -36,8 +35,7 @@ As part of the evolution with Cloud provider integrations, Blackboard Learn Ultr
 
 The **Institution Email** field allows customized field mappings between a client’s externally supported data sources and Blackboard Learn Ultra. If data sources are cloud providers, such as Microsoft, the User Principle Name (UPN) is a primary unique identifier for each user consisting of a UPN prefix (the user’s account name) and a UPN suffix (a DNS domain name) joined together with an @ symbol. This creates a unique email address for each specific user within the Microsoft Azure Active Directory.
 
-To ensure data is accurate and enrollments or memberships between Blackboard Learn Ultra and Microsoft Teams classes are correctly achieved, a user’s email address must match between both systems. In Blackboard Learn Ultra, users can change or override their existing email address in the user interface, which could result in sync errors occurring and the user not being
- correctly added to a Class Team. The **Institution Email** field mapping ensures this level of security and validation checking can be correctly managed, regardless if users have changed their email within Blackboard Learn Ultra or not.
+To ensure data is accurate and enrollments or memberships between Blackboard Learn Ultra and Microsoft Teams classes are correctly achieved, a user’s email address must match between both systems. In Blackboard Learn Ultra, users can change or override their existing email address in the user interface, which could result in sync errors occurring and the user not being correctly added to a Class Team. The **Institution Email** field mapping ensures this level of security and validation checking can be correctly managed, regardless if users have changed their email within Blackboard Learn Ultra or not.
 
  When two email addresses are different, either:
 
@@ -56,7 +54,7 @@ The Microsoft Teams classes integration is available for **Ultra Course View cou
 
 - Have Blackboard Learn Ultra Learn SaaS with Ultra Base Navigation enabled
 
-  ![an example of the feature is enabled in courses](media/feature-availability.png)
+  ![an example of the feature is enabled in courses.](media/feature-availability.png)
 
 - Enable LTI for use in courses.
 
@@ -157,7 +155,7 @@ If you choose to approve the Blackboard Learn Ultra Teams Classes Azure app befo
 
 You'll see a permissions window that explains you're giving permission to Blackboard Learn Ultra to access Microsoft Teams.
 
-![the permissions window for Microsoft and Blackboard](media/permissions1.png)
+![the permissions window for Microsoft and Blackboard.](media/permissions1.png)
 
 ### After Configuring the LTI Applications
 
@@ -174,5 +172,3 @@ You'll see a permissions window that explains you're giving permission to Blackb
    - If consent hasn’t been approved, follow the steps described to generate the URL for consent and send it to the Microsoft 365 Global Admin for approval.
 
 5. Once you've confirmation of approval, select **Retry** to confirm, and then select **Submit**.
-
-   ![A dialog that indicates your access has been blocked](media/blocked-access.png)

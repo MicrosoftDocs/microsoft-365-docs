@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -26,7 +27,7 @@ ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: "Within 30 days after deleting a user account, you can restore the account and all data, and the user can sign in with the same account."
 ---
 
-# Restore a user
+# Restore a user in the Microsoft 365 admin center
    
 When you restore a user account within 30 days after deleting it, the account and all associated data are restored. The user can sign in with the same work or school account. Their mailbox will be fully restored. To find out how much time remains before a specific user account can no longer be restored, [contact us](../../business-video/get-help-support.md).
   
@@ -34,7 +35,7 @@ Here are a couple of tips:
   
 - Make sure licenses are available to assign to the account.
     
-- If your business uses Active Directory, for instrutcions on restoring a user account, see [How to troubleshoot deleted user accounts in Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts). 
+- If your business uses Active Directory, for instructions on restoring a user account, see [How to troubleshoot deleted user accounts in Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts). 
     
 ## Restore one or more user accounts
 
@@ -67,9 +68,9 @@ To fix this, replace the active user account with the one that you are restoring
     
 4. A message pops up that says there was a problem restoring the account. Do one of the following:
     
-  - Cancel the restore and rename the current active user. Then attempt the restore again.
+     - Cancel the restore and rename the current active user. Then attempt the restore again.
     
-  - OR, type a new primary email address for the user and select **Restore**.
+     - OR, type a new primary email address for the user and select **Restore**.
     
 5. Review the results, and then select **Close**.
     

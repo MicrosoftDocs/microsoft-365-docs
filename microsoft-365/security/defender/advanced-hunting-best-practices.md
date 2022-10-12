@@ -4,7 +4,8 @@ description: Learn how to construct fast, efficient, and error-free threat hunti
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema, kusto, avoid timeout, command lines, process id, optimize, best practice, parse, join, summarize
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,14 +13,13 @@ f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.technology: m365d
 ---
 
 # Advanced hunting query best practices
@@ -33,9 +33,15 @@ ms.technology: m365d
 Apply these recommendations to get results faster and avoid timeouts while running complex queries. For more guidance on improving query performance, read [Kusto query best practices](/azure/kusto/query/best-practices).
 
 ## Understand CPU resource quotas
-Depending on its size, each tenant has access to a set amount of CPU resources allocated for running advanced hunting queries. For detailed information about various service limits, [read about advanced hunting quotas and usage parameters](advanced-hunting-limits.md).
+Depending on its size, each tenant has access to a set amount of CPU resources allocated for running advanced hunting queries. For detailed information about various usage parameters, [read about advanced hunting quotas and usage parameters](advanced-hunting-limits.md).
+
+After running your query, you can see the execution time and its resource usage (Low, Medium, High). High indicates that the query took more resources to run and could be improved to return results more efficiently.
+
+:::image type="content" source="../../media/resource-usage.png" alt-text="The query details under **Results** tab in the Microsoft 365 Defender portal" lightbox="../../media/resource-usage.png":::
 
 Customers who run multiple queries regularly should track consumption and apply the optimization guidance in this article to minimize disruption resulting from exceeding quotas or usage parameters.
+
+Watch [Optimizing KQL queries](https://www.youtube.com/watch?v=ceYvRuPp5D8) to see some of the most common ways to improve your queries.  
 
 ## General optimization tips
 
@@ -57,6 +63,8 @@ Customers who run multiple queries regularly should track consumption and apply 
 - **Filter tables not expressions**—Don't filter on a calculated column if you can filter on a table column.
 - **No three-character terms**—Avoid comparing or filtering using terms with three characters or fewer. These terms are not indexed and matching them will require more resources.
 - **Project selectively**—Make your results easier to understand by projecting only the columns you need. Projecting specific columns prior to running [join](/azure/data-explorer/kusto/query/joinoperator) or similar operations also helps improve performance.
+
+
 
 ## Optimize the `join` operator
 The [join operator](/azure/data-explorer/kusto/query/joinoperator) merges rows from two tables by matching values in specified columns. Apply these tips to optimize queries that use this operator.
@@ -179,9 +187,12 @@ The [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator) agg
     | summarize hint.shufflekey = RecipientEmailAddress count() by Subject, RecipientEmailAddress
     ```
 
+
+
 ## Query scenarios
 
 ### Identify unique processes with process IDs
+
 Process IDs (PIDs) are recycled in Windows and reused for new processes. On their own, they can't serve as unique identifiers for specific processes.
 
 To get a unique identifier for a process on a specific machine, use the process ID together with the process creation time. When you join or summarize data around processes, include columns for the machine identifier (either `DeviceId` or `DeviceName`), the process ID (`ProcessId` or `InitiatingProcessId`), and the process creation time (`ProcessCreationTime` or `InitiatingProcessCreationTime`)
@@ -189,11 +200,11 @@ To get a unique identifier for a process on a specific machine, use the process 
 The following example query finds processes that access more than 10 IP addresses over port 445 (SMB), possibly scanning for file shares.
 
 Example query:
+
 ```kusto
 DeviceNetworkEvents
 | where RemotePort == 445 and Timestamp > ago(12h) and InitiatingProcessId !in (0, 4)
-| summarize RemoteIPCount=dcount(RemoteIP) by DeviceName, InitiatingProcessId
-InitiatingProcessCreationTime, InitiatingProcessFileName
+| summarize RemoteIPCount=dcount(RemoteIP) by DeviceName, InitiatingProcessId, InitiatingProcessCreationTime, InitiatingProcessFileName
 | where RemoteIPCount > 10
 ```
 

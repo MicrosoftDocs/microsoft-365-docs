@@ -1,9 +1,9 @@
 ---
 title: Insider risk management Content explorer
-description: Learn about insider risk management Content explorer in Microsoft 365
-keywords: Microsoft 365, insider risk management, risk management, compliance
-localization_priority: Normal
-ms.prod: microsoft-365-enterprise
+description: Learn about insider risk management Content explorer in Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
+ms.localizationpriority: medium
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -11,21 +11,28 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ---
 
 # Insider risk management Content explorer
 
+>[!IMPORTANT]
+>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
+
 The insider risk management **Content explorer** allows users assigned the *Insider Risk Management Investigators* role to examine the context and details of content associated with activity in alerts. The case data in Content explorer is refreshed daily to include new activity. For all alerts that are confirmed to a case, copies of data and message files are archived as a snapshot in time of the items, while maintaining the original files and messages in the storage sources. If needed, case data files may be exported as a portable document file (PDF) or in the original file format.
 
-The copying of data and messages is transparent to the user associated with the alert and to the owner of the content. For new cases, it usually takes about an hour for content to populate in Content explorer. For cases with large amounts of content, it may take longer to create a snapshot. If content is still loading in Content explorer, you will see a progress indicator that displays the completion percentage.
+For new cases, it usually takes about an hour for content to populate in Content explorer. For cases with large amounts of content, it may take longer to create a snapshot. If content is still loading in Content explorer, you will see a progress indicator that displays the completion percentage.
 
 In some cases, data associated with a case may not be available as a snapshot for review in Content explorer. This situation may occur when case data has been deleted or moved, or when a temporary error occurs when processing case data. If this situation occurs, select **View files** in the warning bar to view the file names, file path, and reason for the failure for each file. If needed, this information can be exported to a .csv (comma-separated values) file.
 
 If the content includes Information Rights Management permissions, these permissions are maintained for the copied content and users assigned the *Insider Risk Management Investigators* role will need these permissions and rights if they need to open and view the files. Each file and message are automatically assigned a unique file ID in the insider risk management case for management purposes. Documents associated with device indicator activities are not included in Content explorer.
 
 > [!NOTE]
-> Content explorer includes activities related to Microsoft Office files. Site-level activities, such as when a SharePoint site is deleted or if site permissions are changed, aren't included in Content explorer.
+> Content explorer includes user activities related to Microsoft 365 service files, such as user activity on SharePoint, Exchange, Microsoft Teams, and OneDrive for Business.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Column options
 

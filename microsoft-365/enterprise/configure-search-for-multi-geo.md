@@ -6,10 +6,10 @@ author: tklarsen
 manager: arnek
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.custom: seo-marvel-mar2020
 ms.collection: Strat_SP_gtc
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Learn how to configure search in a multi-geo environment. Only some clients, such as OneDrive, can return results in a multi-geo environment.
@@ -73,7 +73,7 @@ Some search features you might be familiar with, work differently in a multi-geo
 </tr>
 <tr class="even">
 <td align="left">Search refiners</td>
-<td align="left">Search returns refiners from all the geo locations of a tenant and then aggregates them. The aggregation is a best effort, meaning that the refiner counts might not be 100% accurate. For most search-driven scenarios, this accuracy is sufficient. 
+<td align="left">Search returns refiners from all the geo locations of a tenant and then aggregates them. The aggregation is a best effort, meaning that the refiner counts might not be 100% accurate. For most search-driven scenarios, this accuracy is sufficient.
 </td>
 <td align="left">For search-driven applications that depend on refiner completeness, query each geo location independently.</td>
 </tr>
@@ -127,7 +127,7 @@ Some of the search features you might be familiar with, aren't supported in a mu
 
 All the search clients use the existing SharePoint Search REST APIs to interact with the search indexes.
 
-![Diagram showing how SharePoint Search REST APIs interact with the search indexes](../media/configure-search-for-multi-geo-image1-1.png)
+![Diagram showing how SharePoint Search REST APIs interact with the search indexes.](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. A search client calls the Search REST endpoint with the query property EnableMultiGeoSearch= true.
 2. The query is sent to all geo locations in the tenant.
@@ -147,11 +147,11 @@ Each Search Center has several verticals and you have to set up each vertical in
 
 3. Select the vertical to set up, click **Settings** gear icon in the upper, right corner, and then click **Edit Page**. The search results page opens in Edit mode.
 
-   ![Edit page selection in Settings](../media/configure-search-for-multi-geo-image2.png)
+   ![Edit page selection in Settings.](../media/configure-search-for-multi-geo-image2.png)
 
 4. In the Search Results Web Part, move the pointer to the upper, right corner of the web part, click the arrow, and then click **Edit Web Part** on the menu. The Search Results Web Part tool pane opens under the ribbon in the top right of the page.
 
-   ![Edit Web Part selection](../media/configure-search-for-multi-geo-image3.png)
+   ![Edit Web Part selection.](../media/configure-search-for-multi-geo-image3.png)
 
 5. In the Web Part tool pane, in the **Settings** section, under **Results control settings**, select **Show Multi-Geo results** to get the Search Results Web Part to show results from all geo locations.
 
@@ -164,7 +164,7 @@ Each Search Center has several verticals and you have to set up each vertical in
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## Get custom search applications to show results from all or some geo locations
 
-Custom search applications get results from all, or some, geo locations by specifying query parameters with the request to the SharePoint Search REST API. Depending on the query parameters, the query is fanned out to all geo locations, or to some geo locations. For example, if you only need to query a subset of geo locations to find relevant information, you can control the fan out to only these. If the request succeeds, the SharePoint Search REST API returns response data.
+Custom search applications get results from all, or some, geo locations by specifying query parameters with the request to the SharePoint Search REST API. Depending on the query parameters, the query is fanned out to all geo locations, or to some geo locations. For example, if you only need to query a subset of geo locations to find relevant information, you can control the fan out to only these. If the request succeeds, the SharePoint Search REST API returns response data.
 
 ### Requirement
 

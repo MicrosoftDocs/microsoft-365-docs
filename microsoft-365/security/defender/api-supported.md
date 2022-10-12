@@ -3,7 +3,8 @@ title: Supported Microsoft 365 Defender APIs
 description: Supported Microsoft 365 Defender APIs
 keywords: Microsoft 365 Defender, APIs, api
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,15 +12,17 @@ f1.keywords:
   - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+ - m365-security
+ - tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
+ms.custom: api
 ---
 
 # Supported Microsoft 365 Defender APIs 
@@ -38,7 +41,7 @@ Article | Description
 -|-
 [Advanced Hunting API](api-advanced-hunting.md) | Run Advanced Hunting queries.
 [Incident APIs](api-incident.md) | List and update incidents, along with other practical tasks.
-[Streaming API](streaming-api.md) (Preview) | Ship real-time events and alerts as they occur in a single data stream.
+[Streaming API](streaming-api.md) | Ship real-time events and alerts as they occur in a single data stream.
 
 ### Endpoint URIs
 

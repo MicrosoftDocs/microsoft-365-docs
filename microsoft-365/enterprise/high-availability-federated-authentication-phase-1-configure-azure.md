@@ -1,14 +1,16 @@
 ---
 title: "High availability federated authentication Phase 1 Configure Azure"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
@@ -36,11 +38,11 @@ Before you begin configuring Azure components, fill in the following tables. To 
   
 |**Item**|**Configuration setting**|**Description**|**Value**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |VNet name  <br/> |A name to assign to the VNet (example FedAuthNet).  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |VNet location  <br/> |The regional Azure datacenter that will contain the virtual network.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |VPN device IP address  <br/> |The public IPv4 address of your VPN device's interface on the Internet.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |VNet address space  <br/> |The address space for the virtual network. Work with your IT department to determine this address space.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |IPsec shared key  <br/> |A 32-character random, alphanumeric string that will be used to authenticate both sides of the site-to-site VPN connection. Work with your IT or security department to determine this key value. Alternately, see [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |VNet name  <br/> |A name to assign to the VNet (example FedAuthNet).  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |VNet location  <br/> |The regional Azure datacenter that will contain the virtual network.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |VPN device IP address  <br/> |The public IPv4 address of your VPN device's interface on the Internet.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |VNet address space  <br/> |The address space for the virtual network. Work with your IT department to determine this address space.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |IPsec shared key  <br/> |A 32-character random, alphanumeric string that will be used to authenticate both sides of the site-to-site VPN connection. Work with your IT or security department to determine this key value. Alternately, see [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
    
  **Table V: Cross-premises virtual network configuration**
   
@@ -58,10 +60,10 @@ Work with your IT department to determine these address spaces from the virtual 
   
 |**Item**|**Subnet name**|**Subnet address space**|**Purpose**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |The subnet used by the Active Directory Domain Services (AD DS) domain controller and directory synchronization server virtual machines (VMs).  <br/> |
-|2.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |The subnet used by the AD FS VMs.  <br/> |
-|3.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |The subnet used by the web application proxy VMs.  <br/> |
-|4.  <br/> |GatewaySubnet  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |The subnet used by the Azure gateway VMs.  <br/> |
+|1.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |The subnet used by the Active Directory Domain Services (AD DS) domain controller and directory synchronization server virtual machines (VMs).  <br/> |
+|2.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |The subnet used by the AD FS VMs.  <br/> |
+|3.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |The subnet used by the web application proxy VMs.  <br/> |
+|4.  <br/> |GatewaySubnet  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |The subnet used by the Azure gateway VMs.  <br/> |
    
  **Table S: Subnets in the virtual network**
   
@@ -69,14 +71,14 @@ Next, fill in Table I for the static IP addresses assigned to virtual machines a
   
 |**Item**|**Purpose**|**IP address on the subnet**|**Value**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Static IP address of the first domain controller  <br/> |The fourth possible IP address for the address space of the subnet defined in Item 1 of Table S.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |Static IP address of the second domain controller  <br/> |The fifth possible IP address for the address space of the subnet defined in Item 1 of Table S.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Static IP address of the directory synchronization server  <br/> |The sixth possible IP address for the address space of the subnet defined in Item 1 of Table S.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |Static IP address of the internal load balancer for the AD FS servers  <br/> |The fourth possible IP address for the address space of the subnet defined in Item 2 of Table S.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Static IP address of the first AD FS server  <br/> |The fifth possible IP address for the address space of the subnet defined in Item 2 of Table S.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
-|6.  <br/> |Static IP address of the second AD FS server  <br/> |The sixth possible IP address for the address space of the subnet defined in Item 2 of Table S.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
-|7.  <br/> |Static IP address of the first web application proxy server  <br/> |The fourth possible IP address for the address space of the subnet defined in Item 3 of Table S.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
-|8.  <br/> |Static IP address of the second web application proxy server  <br/> |The fifth possible IP address for the address space of the subnet defined in Item 3 of Table S.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Static IP address of the first domain controller  <br/> |The fourth possible IP address for the address space of the subnet defined in Item 1 of Table S.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Static IP address of the second domain controller  <br/> |The fifth possible IP address for the address space of the subnet defined in Item 1 of Table S.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Static IP address of the directory synchronization server  <br/> |The sixth possible IP address for the address space of the subnet defined in Item 1 of Table S.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Static IP address of the internal load balancer for the AD FS servers  <br/> |The fourth possible IP address for the address space of the subnet defined in Item 2 of Table S.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Static IP address of the first AD FS server  <br/> |The fifth possible IP address for the address space of the subnet defined in Item 2 of Table S.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|6.  <br/> |Static IP address of the second AD FS server  <br/> |The sixth possible IP address for the address space of the subnet defined in Item 2 of Table S.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|7.  <br/> |Static IP address of the first web application proxy server  <br/> |The fourth possible IP address for the address space of the subnet defined in Item 3 of Table S.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|8.  <br/> |Static IP address of the second web application proxy server  <br/> |The fifth possible IP address for the address space of the subnet defined in Item 3 of Table S.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
    
  **Table I: Static IP addresses in the virtual network**
   
@@ -84,8 +86,8 @@ For two Domain Name System (DNS) servers in your on-premises network that you wa
   
 |**Item**|**DNS server friendly name**|**DNS server IP address**|
 |:-----|:-----|:-----|
-|1.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
    
  **Table D: On-premises DNS servers**
   
@@ -95,9 +97,9 @@ For the set of local network address spaces, fill in Table L. Note that three bl
   
 |**Item**|**Local network address space**|
 |:-----|:-----|
-|1.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
    
  **Table L: Address prefixes for the local network**
   
@@ -144,10 +146,10 @@ Fill in the following table for the set of unique resource group names.
   
 |**Item**|**Resource group name**|**Purpose**|
 |:-----|:-----|:-----|
-|1.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |Domain controllers  <br/> |
-|2.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |AD FS servers  <br/> |
-|3.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |Web application proxy servers  <br/> |
-|4.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |Infrastructure elements  <br/> |
+|1.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |Domain controllers  <br/> |
+|2.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |AD FS servers  <br/> |
+|3.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |Web application proxy servers  <br/> |
+|4.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |Infrastructure elements  <br/> |
    
  **Table R: Resource groups**
   
@@ -270,9 +272,9 @@ Next, define the names of three availability sets. Fill out Table A.
   
 |**Item**|**Purpose**|**Availability set name**|
 |:-----|:-----|:-----|
-|1.  <br/> |Domain controllers  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |AD FS servers  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Web application proxy servers  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Domain controllers  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |AD FS servers  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Web application proxy servers  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
    
  **Table A: Availability sets**
   
@@ -297,7 +299,7 @@ This is the configuration resulting from the successful completion of this phase
   
 **Phase 1: The Azure infrastructure for high availability federated authentication for Microsoft 365**
 
-![Phase 1 of the high availability Microsoft 365 federated authentication in Azure with the Azure infrastructure](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Phase 1 of the high availability Microsoft 365 federated authentication in Azure with the Azure infrastructure.](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## Next step
 
@@ -311,4 +313,4 @@ Use [Phase 2: Configure domain controllers](high-availability-federated-authenti
   
 [Microsoft 365 solution and architecture center](../solutions/index.yml)
 
-[Understanding Microsoft 365 identity and Azure Active Directory](about-microsoft-365-identity.md)
+[Understanding Microsoft 365 identity models](deploy-identity-solution-identity-model.md)

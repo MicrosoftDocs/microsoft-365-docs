@@ -1,14 +1,16 @@
 ---
 title: "Cmdlet references for Microsoft 365 services"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 07/16/2020
 audience: ITPro
 ms.topic: reference
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Ent_O365
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -56,11 +58,11 @@ For Skype for Business Online cmdlet reference topics, see [Skype for Business O
 
 For connection instructions for Skype for Business Online PowerShell, see [Manage Skype for Business Online with PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md).
 
-## Security & Compliance Center PowerShell cmdlets
+## Security & Compliance PowerShell cmdlets
 
 The Security & Compliance Center cmdlet references are in the Reference section of the [Security & Compliance PowerShell documentation](/powershell/exchange/scc-powershell).
 
-For connection instructions for Security & Compliance Center PowerShell, see [Connect to the Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+For connection instructions for Security & Compliance PowerShell, see [Connect to the Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## See also
 

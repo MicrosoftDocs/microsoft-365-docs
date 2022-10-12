@@ -9,16 +9,18 @@ ms.date:
 audience: ITPro
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Help and support for EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -33,7 +35,7 @@ Upon logging in, the Microsoft 365 admin center provides information about the s
 
 [Product Overview for Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Contact support for business products - Admin Help](../../business-video/get-help-support.md)
+[Contact support for business products - Admin Help](../../admin/get-help-support.md)
 
 [Microsoft 365 community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
@@ -73,8 +75,6 @@ For more information about how Premier Support can help your organization maximi
 
 Microsoft provides local or toll-free telephone numbers for product support around the world. Many of these support centers provide help in your local language during business hours or in English 24 hours a day, every day. If you don't see your location listed below, use the Virtual Agent as described above to find your local support telephone number.
 
-****
-
 |Country or region|Pre-purchase and billing questions|Technical Support questions|
 |---|---|---|
 |Brazil|Toll-free: 08007621146 <br> Local: 1147001999|Same|
@@ -85,7 +85,6 @@ Microsoft provides local or toll-free telephone numbers for product support arou
 |Spain|Toll-free: 900 814 197 <br> Local: 912 718 160|Same|
 |United Kingdom|Toll-free: 0800 032 6417 <br> Local: 0203 450 6455|Same|
 |United States|Toll-free: 1-877-913-2707|Toll-free: 1-800-865-9408|
-|
 
 ## For more information about EOP documentation
 

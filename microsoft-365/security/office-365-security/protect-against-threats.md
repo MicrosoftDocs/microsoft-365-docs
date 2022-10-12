@@ -7,24 +7,24 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.date: 06/22/2021
 search.appverid: 
   - MOE150
   - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: Admins can learn about threat protection in Microsoft 365 and configure how to use it for your organization.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Protect against threats
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -45,11 +45,7 @@ Here's a quick-start guide that breaks the configuration of Defender for Office 
 Threat protection features are included in *all* Microsoft or Office 365 subscriptions; however, some subscriptions have advanced features. The table below lists the protection features included in this article together with the minimum subscription requirements.
 
 > [!TIP]
-> Notice that beyond the directions to turn on auditing, *steps* start anti-malware, anti-phishing, and anti-spam, which are marked as part of Office 365 Exchange Online Protection (**EOP**). This can seem odd in an Defender for Office 365 article, until you remember (**Defender for Office 365**) contains, and builds on, EOP.
-
-<br>
-
-****
+> Notice that beyond the directions to turn on auditing, *steps* start anti-malware, anti-phishing, and anti-spam, which are marked as part of Office 365 Exchange Online Protection (**EOP**). This can seem odd in a Defender for Office 365 article, until you remember (**Defender for Office 365**) contains, and builds on, EOP.
 
 |Protection type|Subscription requirement|
 |---|---|
@@ -63,16 +59,11 @@ Threat protection features are included in *all* Microsoft or Office 365 subscri
 
 To configure Defender for Office 365 policies, you must be assigned an appropriate role. Take a look at the table below for roles that can do these actions.
 
-<br>
-
-****
-
 |Role or role group|Where to learn more|
 |---|---|
 |global administrator|[About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md)|
-|Security Administrator|[Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
+|Security Administrator|[Azure AD built-in roles](/azure/active-directory/roles/permissions-reference#security-administrator)
 |Exchange Online Organization Management|[Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)|
-|
 
 To learn more, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
@@ -92,6 +83,7 @@ For more information about the recommended settings for anti-malware, see [EOP a
    - **Protection settings** section:
      - **Enable the common attachments filter**: Select (turn on). Click **Customize file types** to add more file types.
      - **Enable zero-hour auto purge for malware**: Verify this setting is selected. For more information about ZAP for malware, see [Zero-hour auto purge (ZAP) for malware](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware).
+   - **Quarantine policy**: Leave the default value AdminOnlyAccessPolicy selected. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
    - **Notification** section: Verify that none of the notification settings are selected.
 
    When you're finished, click **Save**.
@@ -128,10 +120,10 @@ The following procedure describes how to configure the default anti-phishing pol
 
    - **Actions** section: Click **Edit actions** and configure the following settings in the flyout that opens:
      - **Message actions** section: Configure the following settings:
-       - **If message is detected as an impersonated user**<sup>\*</sup>: Select **Quarantine the message**.
-       - **If message is detected as an impersonated domain**<sup>\*</sup>: Select **Quarantine the message**.
-       - **If mailbox intelligence detects an impersonated user**<sup>\*</sup>: Select **Move message to the recipients' Junk Email folders** (Standard) or **Quarantine the message** (Strict).
-       - **If message is detected as spoof**: Select **Move message to the recipients' Junk Email folders** (Standard) or **Quarantine the message** (Strict).
+       - **If message is detected as an impersonated user**<sup>\*</sup>: Select **Quarantine the message**. An **Apply quarantine policy** box appears where you select the [quarantine policy](quarantine-policies.md) that applies to messages that are quarantined by user impersonation protection.
+       - **If message is detected as an impersonated domain**<sup>\*</sup>: Select **Quarantine the message**. An **Apply quarantine policy** box appears where you select the [quarantine policy](quarantine-policies.md) that applies to messages that are quarantined by domain impersonation protection.
+       - **If mailbox intelligence detects an impersonated user**<sup>\*</sup>: Select **Move message to the recipients' Junk Email folders** (Standard) or **Quarantine the message** (Strict). If you select **Quarantine the message**, an **Apply quarantine policy** box appears where you select the [quarantine policy](quarantine-policies.md) that applies to messages that are quarantined by mailbox intelligence protection.
+       - **If message is detected as spoof**: Select **Move message to the recipients' Junk Email folders** (Standard) or **Quarantine the message** (Strict).  If you select **Quarantine the message**, an **Apply quarantine policy** box appears where you select the [quarantine policy](quarantine-policies.md) that applies to messages that are quarantined by spoof intelligence protection.
      - **Safety tips & indicators** section: Configure the following settings:
        - **Show first contact safety tip**: Select (turn on).
        - **Show user impersonation safety tip**<sup>\*</sup>: Select (turn on).
@@ -167,18 +159,17 @@ For more information about the recommended settings for anti-spam, see [EOP anti
      - **Message actions** section:
        - **Spam**: Verify **Move message to Junk Email folder** is selected (Standard) or select **Quarantine message** (Strict).
        - **High confidence spam**: Select **Quarantine message**.
-       - **Phishing**:  Select **Quarantine message**.
+       - **Phishing**: Select **Quarantine message**.
        - **High confidence phishing**: Verify **Quarantine messages** is selected.
        - **Bulk**: Verify **Move message to Junk Email folder** is selected (Standard) or select **Quarantine message** (Strict).
+
+       For each action where you select **Quarantine message**, a **Select quarantine policy** box appears where you select the [quarantine policy](quarantine-policies.md) that applies to messages that are quarantined by anti-spam protection.
+
      - **Retain spam in quarantine for this many days**: Verify the value **30** days.
      - **Enable spam safety tips**: Verify this setting is selected (turned on).
      - **Enable zero-hour auto purge (ZAP)**: Verify this setting is selected (turned on).
        - **Enable for phishing messages**: Verify this setting is selected (turned on). For more information, see [Zero-hour auto purge (ZAP) for phishing](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-phishing).
        - **Enable for spam messages**:  Verify this setting is selected (turned on). For more information, see [Zero-hour auto purge (ZAP) for spam](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-spam).
-     - **Notifications** section:
-       - Select **Enable end-user spam notifications**.
-         - **Send end-user spam notifications every (days)**: Verify the value **3** days.
-         - **Language**: Verify the value **Default** or select a language.
 
      When you're finished, click **Save**.
 
@@ -201,17 +192,17 @@ For more information about the recommended settings for Safe Attachments, see .[
 1. Open the **Safe Attachments** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/safeattachmentv2>.
 
 2. On the **Safe Attachments** page, click **Global settings**, and then configure the following settings on the flyout that appears:
-   - **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams**: Turn on this setting (![Toggle on](../../media/scc-toggle-on.png)).
+   - **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams**: Turn on this setting (![Toggle on.](../../media/scc-toggle-on.png)).
 
      > [!IMPORTANT]
      > **Before you turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, verify that audit logging is turned in your organization**. This action is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md)!
 
-   - **Turn on Safe Documents for Office clients**: Turn on this setting (![Toggle on](../../media/scc-toggle-on.png)). Note that this feature is available and meaningful only with Microsoft 365 E5 or Microsoft 365 E5 Security licenses.
-   - **Allow people to click through Protected View even if Safe Documents identified the file as malicious**: Verify this setting is turned off (![Toggle off](../../media/scc-toggle-off.png)).
+   - **Turn on Safe Documents for Office clients**: Turn on this setting (![Toggle on.](../../media/scc-toggle-on.png)). Note that this feature is available and meaningful only with the required types of licenses. For more information, see [Safe Documents in Microsoft 365 E5](safe-docs.md).
+   - **Allow people to click through Protected View even if Safe Documents identified the file as malicious**: Verify this setting is turned off (![Toggle off.](../../media/scc-toggle-off.png)).
 
    When you're finished, click **Save**
 
-3. Back on the **Safe Attachments** page, click ![Create icon](../../media/m365-cc-sc-create-icon.png).
+3. Back on the **Safe Attachments** page, click ![Create icon.](../../media/m365-cc-sc-create-icon.png).
 
 4. In the **Create Safe Attachments policy** wizard that opens, configure the following settings:
    - **Name your policy** page:
@@ -220,6 +211,7 @@ For more information about the recommended settings for Safe Attachments, see .[
    - **Users and domains** page: Because this is your first policy and you likely want to maximize coverage, consider entering your [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in the **Domains** box. Otherwise, you can use the **Users** and **Groups** boxes for more granular control. You can specify exceptions by selecting **Exclude these users, groups, and domains** and entering values.
    - **Settings** page:
      - **Safe Attachments unknown malware response**: Select **Block**.
+     - **Quarantine policy**: The default value is blank, which means the AdminOnlyAccessPolicy policy is used. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
      - **Redirect attachment with detected attachments** : **Enable redirect**: Turn this setting on (select) and enter an email address to receive detected messages.
      - **Apply the Safe Attachments detection response if scanning can't complete (timeout or errors)**: Verify this setting is selected.
 
@@ -241,42 +233,33 @@ For detailed instructions for configuring Safe Attachments policies and global s
 
 For more information about the recommended settings for Safe Links, see [Safe Links settings](recommended-settings-for-eop-and-office365.md#safe-links-settings).
 
-1. Open the **Safe Links** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/safelinksv2>.
+1. Open the **Safe Links** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/safelinksv2>, and then click ![Create icon.](../../media/m365-cc-sc-create-icon.png).
 
-2. On the **Safe Links** page, click **Global settings**, and then configure the following settings on the flyout that appears:
-   - **Settings that apply to content in supported Office 365 apps** section:
-     - **Use Safe Links in Office 365 apps**: Verify this setting is turned on (![Toggle on](../../media/scc-toggle-on.png)).
-     - **Do not track when users click protected links in Office 365 apps**: Turn this setting off (![Toggle off](../../media/scc-toggle-off.png)).
-     - **Do not let users click through to the original URL in Office 365 apps**: Verify this setting is turned on (![Toggle on](../../media/scc-toggle-on.png)).
-
-   When you're finished, click **Save**
-
-3. Back on the **Safe Links** page, click ![Create icon](../../media/m365-cc-sc-create-icon.png).
-
-4. In the **Create Safe Links policy** wizard that opens, configure the following settings:
+2. In the **Create Safe Links policy** wizard that opens, configure the following settings:
    - **Name your policy** page:
      - **Name**: Enter something unique and descriptive.
      - **Description**: Enter an optional description.
    - **Users and domains** page: Because this is your first policy and you likely want to maximize coverage, consider entering your [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in the **Domains** box. Otherwise, you can use the **Users** and **Groups** boxes for more granular control. You can specify exceptions by selecting **Exclude these users, groups, and domains** and entering values.
-   - **Protection settings** page:
-     - **Select the action for unknown potentially malicious URLs in messages**: Turn this setting **On**.
-     - **Select the action for unknown or potentially malicious URLs within Microsoft Teams**: Turn this setting **On**. As of March 2020, this setting is in Preview and is available or functional only for members of the Microsoft Teams Technology Adoption Program (TAP).
-     - **Apply real-time URL scanning for suspicious links and links that point to files**: Select this setting (turn on).
-       - **Wait for URL scanning to complete before delivering the message**: Select this setting (turn on).
-     - **Apply Safe Links to email messages sent within the organization**: Select this setting (turn on).
-     - **Do not track user clicks**: Verify this setting is not selected (turned off).
-     - **Do not let users click through to the original URL**: Verify this setting is turned on (selected).
-     - **Display the organization branding on notification and warning pages**: Selecting this setting (turning it on) is meaningful only after you've followed the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your company logo.
-     - **Do not rewrite the following URLs**: We have no specific recommendation for this setting. For more information, see ["Do not rewrite the following URLs" lists in Safe Links policies](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).
+   - **Url & click protection settings** page:
+     - **Action on potentially malicious URLs within Emails** section:
+       - **On: Safe Links checks a list of known, malicious links when users click links in email**: Select his setting (turn on).
+       - **Apply Safe Links to email messages sent within the organization**: Select this setting (turn on).
+       - **Apply real-time URL scanning for suspicious links and links that point to files**: Select this setting (turn on).
+         - **Wait for URL scanning to complete before delivering the message**: Select this setting (turn on).
+       - **Do not rewrite URLs, do checks via Safe Links API only**: Verify this setting is not selected (turn off).
+     - **Do not rewrite the following URLs in email**: We have no specific recommendation for this setting. For more information, see ["Do not rewrite the following URLs" lists in Safe Links policies](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).
+     - **Action for potentially malicious URLs in Microsoft Teams** section:
+       - ***On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams**: Select this setting (turn on).
+     - **Click protection settings** section:
+       - **Track user clicks**: Verify this setting is selected (turned on).
+         - **Let users click through to the original URL**: Turn off this setting (not selected).
+         - **Display the organization branding on notification and warning pages**: Selecting this setting (turning it on) is meaningful only after you've followed the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your company logo.
    - **Notification** page:
      - **How would you like to notify users?** section: Optionally, you can select **Use custom notification text** to enter customized notification text to use. You can also select **Use Microsoft Translator for automatic localization** to translate the custom notification text into the user's language. Otherwise, leave **Use the default notification text** selected.
 
-5. When you're finished, click **Submit**, and then click **Done**.
+3. When you're finished, click **Submit**, and then click **Done**.
 
-For detailed instructions for configuring Safe Links policies and global settings for Safe Links, see the following topics:
-
-- [Set up Safe Links policies in Microsoft Defender for Office 365](set-up-safe-links-policies.md)
-- [Configure global settings for Safe Links in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md)
+For detailed instructions for configuring Safe Links policies and global settings for Safe Links, see [Set up Safe Links policies in Microsoft Defender for Office 365](set-up-safe-links-policies.md).
 
 ### Now set up alerts for detected files in SharePoint Online or OneDrive for Business
 
@@ -301,7 +284,7 @@ To receive notification when a file in SharePoint Online or OneDrive for Busines
    When you're finished, click **Next**
 
 5. On the **Set your recipients** page, configure the following settings:
-   - **Send email notifications**: Verify this setting is selcted.
+   - **Send email notifications**: Verify this setting is selected.
    - **Email recipients**: Select one or more global administrators, security administrators, or security readers who should receive notification when a malicious file is detected.
    - **Daily notification limit**: Verify **No limit** is selected.
 
@@ -309,27 +292,22 @@ To receive notification when a file in SharePoint Online or OneDrive for Busines
 
 6. On the **Review your settings** page, review your settings, verify **Yes, turn it on right away** is selected, and then click **Finish**
 
-To learn more about alert policies, see [Alert policies in the Microsoft 365 compliance center](../../compliance/alert-policies.md).
+To learn more about alert policies, see [Alert policies in the Microsoft Purview compliance portal](../../compliance/alert-policies.md).
 
 > [!NOTE]
 > When you're finished configuring, use these links to start workload investigations:
 >
->- [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
->- [Use the Microsoft 365 Defender portal to manage quarantined files in Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
->- [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
->- [Manage quarantined messages and files as an administrator in Microsoft 365](manage-quarantined-messages-and-files.md)
+> - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
+> - [Use the Microsoft 365 Defender portal to manage quarantined files in Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
+> - [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+> - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
 
 ## Post-setup tasks and next steps
 
 After configuring the threat protection features, make sure to monitor how those features are working! Review and revise your policies so that they do what you need them to. Also, watch for new features and service updates that can add value.
-
-<br>
-
-****
 
 |What to do|Resources to learn more|
 |---|---|
 |See how threat protection features are working for your organization by viewing reports|[Email security reports](view-email-security-reports.md) <p> [Reports for Microsoft Defender for Office 365](view-reports-for-mdo.md) <p> [Threat Explorer](threat-explorer.md)|
 |Periodically review and revise your threat protection policies as needed|[Secure Score](../defender/microsoft-secure-score.md) <p> [Microsoft 365 threat investigation and response features](./office-365-ti.md)|
 |Watch for new features and service updates|[Standard and Targeted release options](../../admin/manage/release-options-in-office-365.md) <p> [Message Center](../../admin/manage/message-center.md) <p> [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Service Descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
-|

@@ -1,19 +1,20 @@
 ---
 title: "Skype for Business Online in Office 365 - Admin Help"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 6/29/2018
 audience: Admin
-ms.topic: hub-page
-ms.service: o365-administration
-localization_priority: Normal
+ms.topic: landing-page
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: 
 - Adm_O365
 - 'ms.lync.lac.ProviderManagedFeature'
 - seo-marvel-apr2020
+ms.collection: scotvorg
 search.appverid:
 - MET150
 - MOE150

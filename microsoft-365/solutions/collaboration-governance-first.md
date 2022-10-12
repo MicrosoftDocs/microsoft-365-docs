@@ -6,9 +6,10 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.service: o365-solutions
+ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-collaboration
 - m365solution-collabgovernance
 ms.custom: 
@@ -112,7 +113,7 @@ Business outcome goals should be the primary driver for your governance decision
 
 ### Define roles and responsibilities
 
-In addition to your governance team, there are several other key roles or teams that you will want to think about to position for success with Microsoft 365. Some roles may be combined or filled by the same person and others may not be appropriate for all organizations. Most organizations have an Executive Sponsor for Microsoft 365 as a whole and some also have a Steering Committee or team either for Microsoft 365 as a whole or just for the intranet. [Learn more about the comprehensive admin roles and permissions available in Microsoft 365](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+In addition to your governance team, there are several other key roles or teams that you will want to think about to position for success with Microsoft 365. Some roles may be combined or filled by the same person and others may not be appropriate for all organizations. Most organizations have an Executive Sponsor for Microsoft 365 as a whole and some also have a Steering Committee or team either for Microsoft 365 as a whole or just for the intranet. [Learn more about the comprehensive admin roles and permissions available in Microsoft 365](../admin/add-users/admin-roles-page.md).
 
 ### Revisit as business and technology changes
 
@@ -130,7 +131,7 @@ Ultimately, the success of your governance planning efforts depends on how well 
 
 ## Related topics
 
-[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Governance in the Microsoft Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/govern)
 

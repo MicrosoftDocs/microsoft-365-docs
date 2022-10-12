@@ -2,19 +2,22 @@
 title: "Find and fix issues after adding your domain or DNS records"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
@@ -51,7 +54,6 @@ Getting your domain set up to work with Microsoft 365 can be challenging. The DN
 - [Accessing your website isn't working?](#accessing-your-website-isnt-working)
 
 ## Can't verify your domain?
-<a name="BKMK_verify"> </a>
 
 There are a couple of common reasons that domain verification doesn't work as it should:
   
@@ -62,7 +64,6 @@ There are a couple of common reasons that domain verification doesn't work as it
 3. **The record hasn't updated across the Internet.** It typically only takes a few minutes for us to be able to see the new record, but occasionally it can take as long as a few hours. 
     
 ## Outlook isn't working?
-<a name="BKMK_OutlookBroken"> </a>
 
 If you've set up your MX record and other DNS records correctly for your domain, but mail doesn't work, let us help you [fix your Outlook problems](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues).
   
@@ -81,7 +82,6 @@ There are a couple of scenarios when you just need to verify your organization's
 Check out the guidance in [Verify your Microsoft 365 domain to prove ownership, nonprofit or education status, or to activate Yammer](../setup/domains-faq.yml) to make sure you've completed all the required steps. It's a little different for each situation. 
   
 ## Services not working with your domain?
-<a name="BKMK_Test"> </a>
 
 We can help you track down issues with your domain's DNS setup. The domains troubleshooter in Microsoft 365 will show you any records that need fixing, and exactly what the records need to be set to. 
 
@@ -89,11 +89,10 @@ We can help you track down issues with your domain's DNS setup. The domains trou
 > Got your DNS set up correctly, but mail doesn't work in Outlook on your desktop? Check out the [different mail flow scenarios you can have with Microsoft 365](/exchange/mail-flow-best-practices/mail-flow-best-practices) to make sure you've got things set up correctly for your business. Or get more troubleshooting help with email here: [Fix Outlook problems](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
   
 ## Accessing your website isn't working?
-<a name="BKMK_Website"> </a>
 
 If you've fixed any DNS issues and you're still having trouble, try one of the following.
   
-- People can't get to your website at www.mydomain.com: [Track down website issues](../setup/add-domain.md)
+- People can't get to your website at *contoso.com*: [Track down website issues](../setup/add-domain.md)
     
 - You can't update your A record or CNAME record to point to your website: [Update custom DNS records in Microsoft 365](../setup/add-domain.md)
 

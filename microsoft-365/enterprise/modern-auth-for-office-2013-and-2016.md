@@ -2,12 +2,12 @@
 title: "How modern authentication works for Office 2013 and Office 2016 client apps"
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: scotv
 ms.date: 8/1/2017
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -23,6 +23,7 @@ search.appverid:
 - BCS160
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
+- scotvorg
 - M365-security-compliance
 description: Learn how Microsoft 365 modern authentication features work differently for Office 2013 and 2016 client apps.
 ---

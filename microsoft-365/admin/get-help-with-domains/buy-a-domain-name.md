@@ -2,19 +2,22 @@
 title: "Buy a domain name"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -31,7 +34,7 @@ description: "Learn how to buy a domain name in Microsoft 365."
 > [!NOTE]
 > If your organization uses Office 365 operated by 21Vianet in China, see [How to buy a domain for Office 365 operated by 21Vianet in China](#how-to-buy-a-domain-for-office-365-operated-by-21vianet).
 
- *To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant, *Customized administrators* or *regular users* won't be able to make these changes.*  
+ *To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant, *Customized administrators*, or *regular users* won't be able to make these changes.*  
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
@@ -41,7 +44,7 @@ description: "Learn how to buy a domain name in Microsoft 365."
     
 3. On the **Domains** page, select **Buy domain**.
     
-You can choose from the following top level domains for your domain.
+You can choose from the following top-level domains for your domain.
   
 - .biz
     
@@ -81,8 +84,7 @@ If you want to buy a domain from a domain registrar other than [GoDaddy](https:/
 
 If your domain is managed by a provider that doesn't support all the necessary DNS records, you can transfer it to a different registrar. When you transfer the domain, you change who you send payments to in order to renew and keep your domain name.
   
-Request the transfer at the registrar that you want to move your domain to. Look on their website for an option such as **Transfer DNS**. Be aware that after they make the changes, it can take a few days update across the Internet.
-
+Request the transfer at the registrar that you want to move your domain to. Look on their website for an option such as **Transfer DNS**. After they make the changes, it can take a few days to update across the Internet.
 
 ::: moniker range="o365-21vianet"
 
@@ -95,7 +97,7 @@ To set up a domain in Microsoft 365, you must own a domain and change some of th
 > [!CAUTION]
 > Some domain registrars or DNS hosting providers do not allow creating all the DNS records required by Microsoft 365. The following list of hosting providers supports all the needed records. If you're thinking of using a different hosting provider, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
   
-After you register your domain (at a domain registrar), you sign in to Microsoft 365 as an admin and set up your domain so you can use it with your email address and other services..
+After you register your domain (at a domain registrar), you sign in to Microsoft 365 as an admin. Then, set up your domain so you can use it with your email address and other services.
   
 > [!NOTE]
 > The SharePoint Online Public Website information in this article only applies if your organization purchased Microsoft 365 prior to March 9, 2015. 
@@ -103,13 +105,13 @@ After you register your domain (at a domain registrar), you sign in to Microsoft
 ### Domain registrars that support all DNS records required for Microsoft 365
 
 - [Oray](https://oray.com/)
-    
+
 - [HiChina](https://www.hichina.com/)
-    
+
 - [east.net](http://www.east.net/)
-    
+
 - [BIZCN](https://www.bizcn.com/)
-    
+
 ::: moniker-end
 
 ## Related content

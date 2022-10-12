@@ -2,13 +2,15 @@
 title: "Microsoft Azure Architectures for SharePoint 2013"
 ms.author: bcarter
 author: brendacarter
-manager: laurawi
+manager: scotv
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: 
@@ -90,7 +92,7 @@ When you plan for a cross-premises connection, you define and create an Azure ga
   
 **Figure 2: Using an Azure gateway and an on-premises gateway device to provide site-to-site connectivity between the on-premises environment and Azure**
 
-![On-premises environment connected to an Azure virtual network by a cross-premise connection, which can be a site-to-site VPN connection or ExpressRoute](../media/AZarch-VPNgtwyconnct.png)
+![On-premises environment connected to an Azure virtual network by a cross-premise connection, which can be a site-to-site VPN connection or ExpressRoute.](../media/AZarch-VPNgtwyconnct.png)
   
 In this diagram:
   
@@ -108,7 +110,7 @@ For disaster recovery in Azure, you deploy Windows Server AD and DNS in a hybrid
   
 **Figure 3: Hybrid Active Directory domain configuration**
 
-![STwo virtual machines deployed to the Azure virtual network and the SharePoint Farm subnet are replica domain controllers and DNS servers](../media/AZarch-HyADdomainConfig.png)
+![STwo virtual machines deployed to the Azure virtual network and the SharePoint Farm subnet are replica domain controllers and DNS servers.](../media/AZarch-HyADdomainConfig.png)
   
 This diagram builds on the previous diagrams by adding two virtual machines to a Windows Server AD and DNS subnet. These virtual machines are replica domain controllers and DNS servers. They are an extension of the on-premises Windows Server AD environment. 
   
@@ -132,7 +134,7 @@ Place the virtual machines of the SharePoint farm in tiers on the appropriate su
   
 **Figure 4: Placement of SharePoint virtual machines**
 
-![Database servers and SharePoint server roles added to the Azure virtual network within the SharePoint Farm subnet](../media/AZarch-SPVMsinCloudSer.png)
+![Database servers and SharePoint server roles added to the Azure virtual network within the SharePoint Farm subnet.](../media/AZarch-SPVMsinCloudSer.png)
   
 This diagram builds on the previous diagrams by adding the SharePoint farm server roles in their respective tiers.
   
@@ -148,7 +150,7 @@ When you design the Azure architecture for a SharePoint farm, configure identica
   
 **Figure 5: Use Azure Availability Sets to provide high availability for the SharePoint farm tiers**
 
-![Configuration of availability sets in the Azure infrastructure for a SharePoint 2013 solution](../media/AZenv-WinAzureAvailSetsHA.png)
+![Configuration of availability sets in the Azure infrastructure for a SharePoint 2013 solution.](../media/AZenv-WinAzureAvailSetsHA.png)
   
 This diagram calls out the configuration of availability sets within the Azure infrastructure. Each of the following roles share a separate availability set:
   
@@ -168,7 +170,7 @@ Here is an example that shows a standard Internet Sites architecture that meets 
   
 **Figure 6: Planning example for capacity and performance goals in a three-tier farm**
 
-![Standard SharePoint 2013 Internet Sites architecture with component allocations that meet specific capacity and performance goals](../media/AZarch-CapPerfexmpArch.png)
+![Standard SharePoint 2013 Internet Sites architecture with component allocations that meet specific capacity and performance goals.](../media/AZarch-CapPerfexmpArch.png)
   
 In this diagram:
   
@@ -184,7 +186,7 @@ Let's look closer at the application server tier.
   
 **Figure 7: Application server tier before fine tuning**
 
-![Example SharePoint Server 2013 application server tier before tuning for Microsoft Azure availability sets](../media/AZarch-AppServtierBefore.png)
+![Example SharePoint Server 2013 application server tier before tuning for Microsoft Azure availability sets.](../media/AZarch-AppServtierBefore.png)
   
 In this diagram:
   
@@ -200,7 +202,7 @@ You determine the number of components by the performance and capacity targets f
   
 **Figure 8: Application server tier after fine tuning**
 
-![Example SharePoint Server 2013 application server tier after tuning for Microsoft Azure availability sets](../media/AZarch-AppServtierAfter.png)
+![Example SharePoint Server 2013 application server tier after tuning for Microsoft Azure availability sets.](../media/AZarch-AppServtierAfter.png)
   
 This diagram shows all three application servers configured identically with the same four components.
   
@@ -208,7 +210,7 @@ When we add availability sets to the tiers of the SharePoint farm, the implement
   
 **Figure 9: The completed SharePoint farm in Azure infrastructure services**
 
-![Example SharePoint 2013 farm in Azure infrastructure services with virtual network, cross-premises connectivity, subnets, VMs, and availability sets](../media/7256292f-bf11-485b-8917-41ba206153ee.png)
+![Example SharePoint 2013 farm in Azure infrastructure services with virtual network, cross-premises connectivity, subnets, VMs, and availability sets.](../media/7256292f-bf11-485b-8917-41ba206153ee.png)
   
 This diagram shows the SharePoint farm implemented in Azure infrastructure services, with availability sets to provide fault domains for the servers in each tier.
   

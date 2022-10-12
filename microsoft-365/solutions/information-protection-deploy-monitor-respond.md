@@ -8,13 +8,15 @@ manager: laurawi
 ms.date: 01/04/2021
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.service: o365-solutions
+ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: 
 description: Use auditing and alert policies and data subject requests to monitor and respond to personal data incidents.
 ---
@@ -56,13 +58,13 @@ To help you get started with a monitoring and response scheme in Microsoft 365 f
 - What sort of day-to-day monitoring, investigative and reporting techniques are available for the different data types and sources?
 - What mechanisms will be needed to handle data subject requests (DSRs) and any remedial actions, such as anonymization, redaction, and deletion.
 
-## Auditing and Alert Policies in the Security and Compliance Center
+## Auditing and Alert Policies in the Microsoft Purview compliance portal
 
 See these articles for setting up auditing, advanced auditing, and alert policies:
 
 - [Unified auditing](../compliance/search-the-audit-log-in-security-and-compliance.md)
 - [Mailbox auditing](../compliance/enable-mailbox-auditing.md)
-- [Advanced audit](../compliance/advanced-audit.md)
+- [Audit (Premium)](../compliance/advanced-audit.md)
 - [Alert policies](../compliance/alert-policies.md)
 
 ## Data subject requests for the GDPR and CCPA
@@ -75,4 +77,4 @@ For Microsoft Stream, when a user is deleted from Azure Active Directory (Azure 
 
 ## Insider risk management as an investigative tool
 
-[Insider risk management in Microsoft 365](../compliance/insider-risk-management.md) is a feature of the Microsoft Compliance admin center to help you minimize internal risk by enabling you to detect, investigate, and take action on risky activities in your organization.
+[Insider risk management](../compliance/insider-risk-management.md) is a feature of the Microsoft Purview compliance portal to help you minimize internal risk by enabling you to detect, investigate, and take action on risky activities in your organization.

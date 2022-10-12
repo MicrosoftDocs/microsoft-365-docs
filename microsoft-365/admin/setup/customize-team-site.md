@@ -7,12 +7,12 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - IT_Networking
@@ -98,7 +98,7 @@ While file storage and document management is a start, sharing with your team an
 
 As you manage your team site, you may have to add or remove users. Here's information to help you understand, add, and manage users on your team site.
   
-View a video on groups with [Understand and manage groups](/learn/m365/). 
+View a video on groups with [Understand and manage groups](/training/m365/). 
   
 To add users to a Microsoft 365 group, see [Add users and assign licenses at the same time](../add-users/add-users.md).
   

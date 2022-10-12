@@ -6,42 +6,42 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020 
 ms.collection: 
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Learn about Microsoft 365 Multi-Geo, how multi-geo works, and what geo-locations are available for data storage."
 ---
 
 # Plan for Microsoft 365 Multi-Geo
 
-This guidance is designed for administrators of multi-national companies (MNCs) who are preparing their Microsoft 365 tenant to be expanded to additional geographies in accordance with the company’s presence to meet data residency requirements.
+This guidance is designed for administrators of multi-national companies (MNCs) who are preparing their Microsoft 365 tenant to be expanded to additional geographies in accordance with the company's presence to meet data residency requirements.
 
 In a multi-geo configuration, your Microsoft 365 tenant consists of a central location and one or more satellite locations. This is a single tenant that spans across multiple geo locations. Your tenant information, including geo locations, is mastered in Azure Active Directory (Azure AD).
 
 Here are some key multi-geo terms to help you understand the basic concepts of the configuration:
 
--   **Tenant** – An organization's representation in Microsoft 365 which typically has one or more domains associated with it (for example, https://contoso.sharepoint.com). 
+- **Tenant** – An organization's representation in Microsoft 365 which typically has one or more domains associated with it (for example, https://contoso.sharepoint.com).
 
--   **Geo locations** – The geographic locations available to host data in a Microsoft 365 tenant.
+- **Geo locations** – The geographic locations available to host data in a Microsoft 365 tenant.
 
--   **Satellite locations** – The additional geo locations that you have configured to host data in your Microsoft 365 tenant. Multi-geo tenants span more than one geo location, for example, North America and Europe.
+- **Satellite locations** – The additional geo locations that you have configured to host data in your Microsoft 365 tenant. Multi-geo tenants span more than one geo location, for example, North America and Europe.
 
--   **Preferred Data Location (PDL)** – The geo location where an individual user's Exchange and OneDrive data is stored. This can be set by the administrator to any of the geo locations that have been configured for the tenant. Note that if you change the PDL for a user who already has a OneDrive site, their OneDrive data is not moved to the new geo location automatically. See [Move a OneDrive library to a different geo-location](move-onedrive-between-geo-locations.md) for more information. If they have an Exchange mailbox, the mailbox is moved to the new preferred data location automatically.
+- **Preferred Data Location (PDL)** – The geo location where an individual user's Exchange and OneDrive data is stored. This can be set by the administrator to any of the geo locations that have been configured for the tenant. Note that if you change the PDL for a user who already has a OneDrive site, their OneDrive data is not moved to the new geo location automatically. See [Move a OneDrive library to a different geo-location](move-onedrive-between-geo-locations.md) for more information. If they have an Exchange mailbox, the mailbox is moved to the new preferred data location automatically.
 
 Enabling Multi-Geo requires four key steps:
 
-1.  Work with your account team to add the _Multi-Geo Capabilities in Microsoft 365_ service plan.
+1. Work with your account team to add the _Multi-Geo Capabilities in Microsoft 365_ service plan.
 
-2.  Choose your desired satellite location(s) and add them to your tenant.
+2. Choose your desired satellite location(s) and add them to your tenant.
 
-3.  Set your users' preferred data location to the desired satellite location. When a new OneDrive site or Exchange mailbox is provisioned for a user, it is provisioned to their PDL.
+3. Set your users' preferred data location to the desired satellite location. When a new OneDrive site or Exchange mailbox is provisioned for a user, it is provisioned to their PDL.
 
-4.  Migrate your users' existing OneDrive sites from the central location to their preferred data location as needed. (Exchange mailboxes are migrated automatically when you set a user's PDL.)
+4. Migrate your users' existing OneDrive sites from the central location to their preferred data location as needed. (Exchange mailboxes are migrated automatically when you set a user's PDL.)
 
 See [Configure Microsoft 365 Multi-Geo](multi-geo-tenant-configuration.md) for details on each of these steps.
 
@@ -56,9 +56,9 @@ When you configure multi-geo, consider taking the opportunity to consolidate you
 
 ## Best practices
 
-We recommend that you create a test user in Microsoft 365 to do some initial testing. We’ll walk through some testing and verification steps with this user before you proceed to onboard production users into Microsoft 365 Multi-Geo.
+We recommend that you create a test user in Microsoft 365 to do some initial testing. We'll walk through some testing and verification steps with this user before you proceed to onboard production users into Microsoft 365 Multi-Geo.
 
-Once you’ve completed testing with the test user, select a pilot group – perhaps from your IT department – to be the first to use OneDrive and Exchange in a new geo location. For this first group, select users who do not yet have a OneDrive. We recommend no more than five people in this initial group and gradually expand following a batched rollout approach.
+Once you've completed testing with the test user, select a pilot group – perhaps from your IT department – to be the first to use OneDrive and Exchange in a new geo location. For this first group, select users who do not yet have a OneDrive. We recommend no more than five people in this initial group and gradually expand following a batched rollout approach.
 
 Each user should have a *preferred data location* (PDL) set so that Microsoft 365 can determine in which geo location to provision their OneDrive. The user's preferred data location must match one of your chosen satellite locations or your central location. While the PDL field is not mandatory, we recommend that a PDL be set for all users. Workloads of a user without a PDL will be provisioned in the central location.
 

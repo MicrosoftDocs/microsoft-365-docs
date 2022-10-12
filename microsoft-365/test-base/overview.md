@@ -1,68 +1,58 @@
 ---
 title: 'Overview'
-description: Understanding TEst Base
+description: Understanding Test Base
 search.appverid: MET150
-author: mansipatel-usl
-ms.author: mapatel
+author: Tinacyt
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
-ms.service: virtual-desktop
-localization_priority: Normal
+ms.service: test-base
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
-ms.reviewer: mapatel
-f1.keywords: NOCSH 
+ms.reviewer: tinachen
+f1.keywords: NOCSH
 ---
 
-# What is Test Base for Microsoft 365? 
+# What is Test Base for Microsoft 365?
 
-Test Base for Microsoft 365 (Test Base) is Microsoft’s validation service based in the secure Azure environment.  
-With Test Base, Software Vendors (SVs) and System Integrators (SIs) can accelerate the validation of their applications against pre-released Windows security and feature builds. This is a highly engaged collaboration between SV partners and Microsoft enabling joint testing, validation and remediation.
+Test Base is an Azure service that enables data-driven application testing while providing user access to intelligent testing from anywhere in the world.
 
-Test Base provides a great opportunity to build and maintain a secure validation service on Azure, where customers and partners can stage and test their application's workloads against our pre-released security updates.
+The following entities are encouraged to onboard their applications, binaries, and test scripts onto the Test Base for Microsoft 365 service: Independent Software Vendors (ISVs), System Integrators (SIs) to validate their applications and IT Professionals who want to validate their line-of-business (LOB) applications through integration with Microsoft Intune.
 
-With Test Base, SVs are provided with more visibility into potential issues that could hinder their application(s) from performing at its best on the new OS release before Microsoft releases the update to the market.
+## Why test your application with Test Base?
 
-This new service will help SVs make testing efforts simpler and more efficient. Enterprise customers will benefit from SV and Microsoft testing together in a collaborative environment and gain more confidence that their applications will work as expected. 
+The Test Base for Microsoft 365 service can accommodate the expansion of your testing matrix as necessary so you will have confidence in the integrity, compatibility, and usability of your applications.
 
-### Advantages Test Base offers Eenterprises and their SV partners include: 
- 
-  *	Faster rollout of security updates to secure your devices; 
- 
-  *	Lowered update validation costs by hosting the OS changes and application in the same environment; 
-  
-  *	World-class intelligence report from Microsoft about your apps (code coverage, API impact analysis etc.); 
-  
-  *	Microsoft's expertise in shifting test content and harnesses to Azure. 
+Test Base enables your application to continue working as expected even as platform dependencies vary, and new updates are applied by the Windows update service. With Test Base, you can avoid the aggravation, protracted time commitments, and the expense of setting up and maintaining a complex lab environment for testing your applications.
 
+In addition, you can automatically test compatibility against security and feature updates for Windows by using secure virtual machines (VMs) while also obtaining access to world-class intelligence for testing your applications. You can also get your apps tested for compatibility against pre-release windows security updates by submitting a request to get the access.
 
-### Guide to navigating the Test Base portal
+## How does Test Base work?
 
-This guide is divided into four (4) parts to ensure a hitch free experience while using our service:
+To sign up for the Test Base service, see [Create a new Test Base account](createAccount.md).
 
-1. The **Overview** which provides detailed, step-by-step guidelines on how to upload your application via our self-serve onboarding portal. 
+After a customer has enrolled in the Test Base service, it is a simple matter to begin uploading application packages for testing.
 
-2. The **Quickstarts** section which provides information on the format for the zippped folder structure and what you need to know when preparing your test scripts.
+Following a successful upload, packages are tested against Windows pre-release updates.
 
-3. The **How-to guide** which provides detailed outline on how to use Test Base to infer test results.
+After initial tests are successfully completed, the customer can do a deep dive with insights on performance and regression analysis to detect whether pre-release content updates have degraded application performance in any way.
 
-4. The **Reference** section that provides answers to the typical questions we receive from our customers.
+However, if the package failed any test, then the customer can also leverage Insights from memory or CPU regressions to remediate the failure and then update the package as necessary.
 
-### Test Base is in public preview!
+With Test Base, the customer can use a single location to manage all packages being tested, which can also facilitate uploading and updating packages to generate new application versions as needed.
 
-Test Base has officially been declared ```Public Preview``` during the Microsoft Inspire conference in July 2021. 
+> [!NOTE]
+> **So that customers can take advantage of pre-release update content, they must specifically request access to it. Once your request for access to pre-release updates is approved, your uploaded packages will automatically get scheduled to be tested against the pre-release Windows updates for the OS versions selected during onboarding**.
 
-This means anyone with a valid enterprise Azure account is able to onboard their test collateral and quickly start testing their applications on the service.
+Then, as new Windows pre-release updates become available, application packages are automatically tested with new pre-release content. Thereafter, an additional round of insights may be required. If customers do not specifically request access, then application packages will be tested against only the current released version of Windows.
 
-### Who should onboard?
-
-We are encouraging all Software Vendors (SVs), System Integrators (SIs) to onboard their applications, binaries and test scripts onto the service.
+After packages are successfully tested, customers can deliver them to their software customers and end users with confidence and the assurance that Test Base did its job.
 
 ## Next steps
 
 Follow the link to get started
 > [!div class="nextstepaction"]
-> [Next step](createaccount.md)
-
+> [Create a new Test Base account | Microsoft Docs](createaccount.md)

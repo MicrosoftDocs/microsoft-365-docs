@@ -1,16 +1,18 @@
 ---
 title: "Remove Microsoft 365 licenses from user accounts with PowerShell"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: 
@@ -28,10 +30,62 @@ description: "Explains how to use PowerShell to remove Microsoft 365 licenses th
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
 >[!Note]
->[Learn how to remove licenses from user accounts](../admin/manage/remove-licenses-from-users.md) with the Microsoft 365 admin center. For a list of additional resources, see [Manage users and groups](../admin/add-users/index.yml).
+>[Learn how to remove licenses from user accounts](../admin/manage/remove-licenses-from-users.md) with the Microsoft 365 admin center. For a list of additional resources, see [Manage users and groups](/admin).
 >
 
+## Use the Microsoft Graph PowerShell SDK
+
+First, [connect to your Microsoft 365 tenant](/graph/powershell/get-started#authentication).
+
+Assigning and removing licenses for a user requires the User.ReadWrite.All permission scope or one of the other permissions listed in the ['Assign license' Graph API reference page](/graph/api/user-assignlicense).
+
+The Organization.Read.All permission scope is required to read the licenses available in the tenant.
+
+```powershell
+Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+```
+
+To view the licensing plan information in your organization, see the following topics:
+
+- [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
+
+- [View account license and service details with PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md)
+
+### Removing licenses from user accounts
+
+To remove licenses from an existing user account, use the following syntax:
+  
+```powershell
+Set-MgUserLicense -UserId "<Account>" -RemoveLicenses @("<AccountSkuId1>") -AddLicenses @{}
+```
+
+This example removes the **SPE_E5** (Microsoft 365 E5) licensing plan from the user **BelindaN@litwareinc.com**:
+
+```powershell
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+Set-MgUserLicense -UserId "belindan@litwareinc.com" -RemoveLicenses @($e5Sku.SkuId) -AddLicenses @{}
+```
+
+To remove all licenses from a group of existing licensed users, use the following syntax:
+
+```powershell
+$licensedUsers = Get-MgUser -Filter 'assignedLicenses/$count ne 0' `
+    -ConsistencyLevel eventual -CountVariable licensedUserCount -All `
+    -Select UserPrincipalName,DisplayName,AssignedLicenses
+
+foreach($user in $licensedUsers)
+{
+    $licencesToRemove = $user.AssignedLicenses | Select -ExpandProperty SkuId
+    $user = Set-MgUserLicense -UserId $user.UserPrincipalName -RemoveLicenses $licencesToRemove -AddLicenses @{} 
+}
+```
+
+Another way to free up a license is by deleting the user account. For more information, see [Delete and restore user accounts with PowerShell](delete-and-restore-user-accounts-with-microsoft-365-powershell.md).
+
 ## Use the Azure Active Directory PowerShell for Graph module
+
+>The Set-AzureADUserLicense cmdlet is scheduled to be retired. Please migrate your scripts to the Microsoft Graph SDK's Set-MgUserLicense cmdlet as described above. For more information, see [Migrate your apps to access the license managements APIs from Microsoft Graph](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
+>
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
@@ -41,7 +95,7 @@ Next, list the license plans for your tenant with this command.
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-Next, get the sign-in name of the account for which you want remove a license, also known as the user principal name (UPN).
+Next, get the sign-in name of the account for which you want to remove a license, also known as the user principal name (UPN).
 
 Finally, specify the user sign-in and license plan names, remove the "<" and ">" characters, and run these commands.
 
@@ -49,7 +103,7 @@ Finally, specify the user sign-in and license plan names, remove the "<" and ">"
 $userUPN="<user sign-in name (UPN)>"
 $planName="<license plan name from the list of license plans>"
 $license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$License.RemoveLicenses = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $planName -EQ).SkuID
+$license.RemoveLicenses = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $planName -EQ).SkuID
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $license
 ```
 
@@ -64,18 +118,22 @@ if($userList.Count -ne 0) {
     {
         $licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
         for ($i=0; $i -lt $Skus.Count; $i++) {
-            $Licenses.RemoveLicenses +=  (Get-AzureADSubscribedSku | Where-Object -Property SkuID -Value $Skus[$i].SkuId -EQ).SkuID   
+            $licenses.RemoveLicenses +=  (Get-AzureADSubscribedSku | Where-Object -Property SkuID -Value $Skus[$i].SkuId -EQ).SkuID   
         }
         Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
     } else {
         $licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-        $Licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuID -Value $Skus.SkuId -EQ).SkuID
+        $licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuID -Value $Skus.SkuId -EQ).SkuID
         Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
     }
 }
 ```
 
 ## Use the Microsoft Azure Active Directory Module for Windows PowerShell
+
+>[!Note]
+>The Set-MsolUserLicense and New-MsolUser (-LicenseAssignment) cmdlets are scheduled to be retired. Please migrate your scripts to the Microsoft Graph SDK's Set-MgUserLicense cmdlet as described above. For more information, see [Migrate your apps to access the license managements APIs from Microsoft Graph](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
+>
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
    

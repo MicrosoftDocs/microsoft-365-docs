@@ -1,15 +1,17 @@
 ---
 title: "Plan your upgrade from Office 2007 or 2010 servers and clients"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: ITPro
 ms.topic: overview
-ms.service: o365-solutions
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection: 
+- scotvorg
+- Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
@@ -42,7 +44,7 @@ Microsoft 365 is the way to digitally transform your business with constantly im
 |Resource|Description|
 |---|---|
 |[Microsoft 365](https://www.microsoft.com/microsoft-365)|Get information about the versions of Microsoft 365.|
-|[Microsoft 365 for Business documentation](../business/index.yml)|Get detailed information about the version of Microsoft 365 for small and medium businesses.|
+|[Microsoft 365 for Business documentation](../admin/index.yml)|Get detailed information about the version of Microsoft 365 for small and medium businesses.|
 |[Microsoft 365 for Education documentation](/microsoft-365/education/)|Get detailed information about the version of Microsoft 365 for educational organizations.|
 |[Microsoft 365 for Enterprise documentation](./index.yml)|Get detailed information about the version of Microsoft 365 for enterprise organizations.|
 |||

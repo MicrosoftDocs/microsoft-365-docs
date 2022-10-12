@@ -9,12 +9,13 @@ metadata:
   title: Microsoft 365 for enterprise documentation and resources # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn about the product documentation and resources available for Microsoft 365 for enterprise for IT pros, information workers, and partners. # Required; article description that is displayed in search results. < 160 chars.
   services: service
-  ms.prod: microsoft-365-enterprise
-  ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: microsoft-365-enterprise
   ms.topic: hub-page # Required
-  ms.collection: M365-subscription-management
-  author: robmazz #Required; your GitHub user alias, with correct capitalization.
-  ms.author: robmazz #Required; microsoft alias of author; optional team alias.
+  ms.collection: 
+  - M365-subscription-management
+  - Adm_TOC
+  author: kelleyvice-msft #Required; your GitHub user alias, with correct capitalization.
+  ms.author: kelleyvice-msft #Required; microsoft alias of author; optional team alias.
   ms.date: 07/28/2020 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
@@ -33,7 +34,7 @@ highlightedContent:
     # Card
     - title: Train your IT pros and admins
       itemType: learn
-      url: /learn/m365/
+      url: /training/m365/
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -44,7 +45,7 @@ conceptualContent:
     # Card
     - title: Deploy key elements
       links:
-        - url: identity-roadmap-microsoft-365.md
+        - url: deploy-identity-solution-overview.md
           itemType: how-to-guide
           text: Identity infrastructure
         - url: /windows/deployment/
@@ -81,7 +82,7 @@ additionalContent:
       summary: Learn more about other Microsoft 365 features and resources. # < 160 chars (optional)
       items:
         # Card
-        - title: Microsoft 365 compliance
+        - title: Microsoft Purview
           summary: Help your organization govern information, protect against risks, and comply with legal or regulatory standards.
           url: ../compliance/index.yml
         # Card

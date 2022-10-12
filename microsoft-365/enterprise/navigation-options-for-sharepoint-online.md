@@ -1,14 +1,15 @@
 ---
-title: "Navigation options for SharePoint Online"
+title: Navigation options for SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 4/7/2020
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: 
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection:
+- scotvorg 
 - Ent_O365
 - SPO_Content
 f1.keywords:
@@ -34,7 +35,7 @@ This article describes navigation options sites with SharePoint Publishing enabl
 
 Navigation provider configuration can significantly impact performance for the entire site, and careful consideration must be taken to pick a navigation provider and configuration that scales effectively for the requirements of a SharePoint site. There are two out-of-the-box navigation providers, as well as custom navigation implementations.
 
-The first option, [**Structural navigation**](#using-structural-navigation-in-sharepoint-online), is the recommended navigation option in SharePoint Online for classic Sharepoint sites, **if you turn on structural navigation caching for your site**. This navigation provider displays the navigation items below the current site, and optionally the current site and its siblings. It provides additional capabilities such as security trimming and site structure enumeration. If caching is disabled, this will negatively impact performance and scalability, and may be subject to throttling.
+The first option, [**Structural navigation**](#using-structural-navigation-in-sharepoint-online), is the recommended navigation option in SharePoint Online for classic SharePoint sites, **if you turn on structural navigation caching for your site**. This navigation provider displays the navigation items below the current site, and optionally the current site and its siblings. It provides additional capabilities such as security trimming and site structure enumeration. If caching is disabled, this will negatively impact performance and scalability, and may be subject to throttling.
 
 The second option, [**Managed (Metadata) navigation**](#using-managed-navigation-and-metadata-in-sharepoint-online), represents navigation items using a Managed Metadata term set. We recommend that security trimming be disabled unless required. Security trimming is enabled as a secure-by-default setting for this navigation provider; however, many sites do not require the overhead of security trimming since navigation elements often are consistent for all users of the site. With the recommended configuration to disable security trimming, this navigation provider does not require enumerating site structure and is highly scalable with acceptable performance impact.
 
@@ -70,15 +71,15 @@ This is the out-of-the-box navigation used by default and is the most straightfo
 
 Under **Site Settings** > **Look and Feel** > **Navigation**, you can validate if structural navigation is selected for either global navigation or current navigation. Selecting **Show pages** will have negative impact on performance.
 
-![Structural navigation with Show Subsites selected](../media/SPONavOptionsStructuredShowSubsites.png)
+![Structural navigation with Show Subsites selected.](../media/SPONavOptionsStructuredShowSubsites.png)
 
 Caching can be enabled or disabled at the site collection level and at the site level, and is enabled for both by default. To enable at the site collection level, under **Site Settings** > **Site Collection Administration** > **Site Collection Navigation**, check the box for **Enable caching**.
 
-![Enable caching at site level](../media/structural-nav/structural-nav-caching-site-coll.png)
+![Enable caching at site collection level.](../media/structural-nav/structural-nav-caching-site-coll.png)
 
 To enable at the site level, under **Site Settings** > **Navigation**, check the box for **Enable caching**.
 
-![Enable caching at site level](../media/structural-nav/structural-nav-caching-site.png)
+![Enable caching at site level.](../media/structural-nav/structural-nav-caching-site.png)
 
 ## Using managed navigation and metadata in SharePoint Online
 
@@ -94,11 +95,11 @@ Many sites do not require security trimming, as the navigation structure is ofte
 
 ### How to implement managed navigation and the results
 
-There are several articles on docs.microsoft.com about the details of managed navigation. For example, see [Overview of managed navigation in SharePoint Server](/sharepoint/administration/overview-of-managed-navigation).
+There are several articles on Microsoft Learn about the details of managed navigation. For example, see [Overview of managed navigation in SharePoint Server](/sharepoint/administration/overview-of-managed-navigation).
 
 In order to implement managed navigation, you set up terms with URLs corresponding to the navigation structure of the site. Managed navigation can even be manually curated to replace structural navigation in many cases. For example:
 
-![SharePoint Online site structure](../media/SPONavOptionsListOfSites.png))
+![SharePoint Online site structure.](../media/SPONavOptionsListOfSites.png))
 
 ## Using Search-driven client-side scripting
 
@@ -123,7 +124,7 @@ This approach involves creating a custom master page and replacing the out-of-th
 1. Navigate to the Site Settings page.
 2. Open the master page gallery by clicking **Master Pages**.
 3. From here you can navigate through the library and download the file `seattle.master`.
-4. Edit the code using a text editor and delete the code block in the following screen shot.<br/>![Delete the code block shown](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
+4. Edit the code using a text editor and delete the code block in the following screen shot.<br/>![Delete the code block shown.](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
 5. Remove the code between the `<SharePoint:AjaxDelta id="DeltaTopNavigation">` and `<\SharePoint:AjaxDelta>` tags and replace it with the following snippet:<br/>
 
 ```javascript
@@ -471,7 +472,7 @@ The [above code](#about-the-javascript-file) has the following dependencies:
 
 - jQuery - https://jquery.com/
 - KnockoutJS - https://knockoutjs.com/
-- Linq.js - https://linqjs.codeplex.com/, or github.com/neuecc/linq.js
+- Linq.js - `https://linqjs.codeplex.com/`, or github.com/neuecc/linq.js
 
 The current version of LinqJS does not contain the ByHierarchy method used in the above code and will break the navigation code. To fix this, add the following method to the Linq.js file before the line `Flatten: function ()`.
 

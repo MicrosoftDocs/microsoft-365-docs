@@ -2,29 +2,33 @@
 title: Get package SAS URI API
 description: Use this API to get a URI that allows downloading an investigation package.
 keywords: apis, graph api, supported apis, get package, sas, uri
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Get package SAS URI API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Applies to:** 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -33,19 +37,31 @@ ms.custom: api
 ## API description
 Get a URI that allows downloading of an [Investigation package](collect-investigation-package.md).
 
+> [!IMPORTANT]
+>
+> - These actions are only available for devices on Windows 10, version  1703 or later, and on Windows 11.
+
+## Limitations
+
+Rate limitations for this API are 2 calls per minute and 120 calls per hour. 
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)
 
-Permission type |	Permission	|	Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
-Application |	Machine.CollectForensics |	'Collect forensics'
-Delegated (work or school account) | Machine.CollectForensics |	'Collect forensics'
+Application|Machine.Read.All|''Read all machine profiles''
+Application|"Machine.ReadWrite.All|'Read and write all machine information'
+Delegated (work or school account)|Machine.CollectForensics|'Collect forensics'
 
->[!Note]
+> [!NOTE]
 > When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles.md) for more information)
->- The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> - The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles.md) for more information)
+> - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2. 
 
 ## HTTP request
 
@@ -55,10 +71,9 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action 
 
 ## Request headers
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
-Authorization | String | Bearer {token}. **Required**.
-
+Authorization|String|Bearer {token}. **Required**.
 
 ## Request body
 
@@ -66,25 +81,23 @@ Empty
 
 ## Response
 
-If successful, this method returns 200, Ok response code with object that holds the link to the package in the “value” parameter. This link is valid for a very short time and should be used immediately for downloading the package to a local storage.
-
+If successful, this method returns 200, Ok response code with object that holds the link to the package in the "value" parameter. This link is valid for a short time and should be used immediately for downloading the package to a local storage. If the machine action for the collection exists but isn't complete, this returns 404 Not Found.
 
 ## Example
 
-**Request**
+### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/7327b54fd718525cbca07dacde913b5ac3c85673/GetPackageUri
-
 ```
 
-**Response**
+### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
-```http
+```json
 HTTP/1.1 200 Ok
 Content-type: application/json
 

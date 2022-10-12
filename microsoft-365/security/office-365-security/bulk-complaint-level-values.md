@@ -9,20 +9,18 @@ ms.date:
 audience: ITPro
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Admins can learn about bulk complaint level (BCL) values that are used in Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Bulk complaint level (BCL) in EOP
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -35,11 +33,7 @@ Bulk mailers vary in their sending patterns, content creation, and recipient acq
 
  Spam filtering marks messages as **Bulk email** based on the BCL threshold (the default value or a value you specify) and takes the specified action on the message (the default action is deliver the message to the recipient's Junk Email folder). For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md) and [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
-You can use the Tenant Allow/Block List to configure exceptions for bulk mail filtering. Messages from senders in the specified domains don't receive the action for the **Bulk email** spam filtering verdict in anti-spam policies. For more information, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-
 The BCL thresholds are described in the following table.
-
-****
 
 |BCL|Description|
 |:---:|---|
@@ -47,6 +41,5 @@ The BCL thresholds are described in the following table.
 |1, 2, 3|The message is from a bulk sender that generates few complaints.|
 |4, 5, 6, 7<sup>\*</sup>|The message is from a bulk sender that generates a mixed number of complaints.|
 |8, 9|The message is from a bulk sender that generates a high number of complaints.|
-|
 
 <sup>\*</sup> This is the default threshold value that's used in anti-spam policies.

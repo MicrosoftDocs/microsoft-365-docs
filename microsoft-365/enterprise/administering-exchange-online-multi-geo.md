@@ -6,11 +6,11 @@ author: chrisda
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
-localization_priority: normal
+ms.localizationpriority: medium
 description: Learn how to administer Exchange Online multi-geo settings in your Microsoft 365 environment with PowerShell.
 ---
 
@@ -26,9 +26,9 @@ In Exchange Online multi-geo environments, you don't need to do any manual steps
 
 Typically, Exchange Online PowerShell will connect to the central geo location. But, you can also connect directly to satellite geo locations. Because of performance improvements, we recommend connecting directly to the satellite geo location when you only manage users in that location.
 
-The requirements for installing and using the EXO V2 module are described in [Install and maintain the EXO V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+The requirements for installing and using the Exchange Online PowerShell module are described in [Install and maintain the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 
-To connect Exchange Online PowerShell to a specific geo location, the *ConnectionUri* parameter is different than the regular connection instructions. The rest of the commands and values are the same.
+To connect Exchange Online PowerShell to a specific geo location, the _ConnectionUri_ parameter is different than the regular connection instructions. The rest of the commands and values are the same.
 
 Specifically, you need to add the `?email=<emailaddress>` value to end of the _ConnectionUri_ value. `<emailaddress>` is the email address of **any** mailbox in the target geo location. Your permissions to that mailbox or the relationship to your credentials are not a factor; the email address simply tells Exchange Online PowerShell where to connect.
 
@@ -38,7 +38,7 @@ Microsoft 365 or Microsoft 365 GCC customers typically don't need to use the _Co
 
 The following connection instructions work for accounts that are or aren't configured for multi-factor authentication (MFA).
 
-1. In a Windows PowerShell window, load the EXO V2 module by running the following command:
+1. In a PowerShell window, load the Exchange Online PowerShell module by running the following command:
 
    ```powershell
    Import-Module ExchangeOnlineManagement
@@ -229,6 +229,9 @@ Or, you can use the following steps to onboard mailboxes directly in a specific 
 6. If you need to migrate additional mailboxes to different satellite geo locations, repeat steps 2 through 4 for each specific location.
 
 ## Multi-geo reporting
+
+> [!NOTE]
+> The multi-geo reporting feature is currently in Preview, is not available in all organizations, and is subject to change.
 
 **Multi-Geo Usage Reports** in the Microsoft 365 admin center displays the user count by geo location. The report displays user distribution for the current month and provides historical data for the past 6 months.
 

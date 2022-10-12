@@ -5,15 +5,16 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection: 
+- highpri
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
 - m365initiative-externalcollab
 ms.custom: 
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: "Learn how to create a B2B extranet site or team with managed guests from a partner organization."
@@ -57,7 +58,7 @@ To add a connected organization
 10. Click **Next: Review + Create**.
 11. Review the settings that you've chosen and then click **Create**.
 
-    ![Screenshot of the connected organizations page in Azure Active Directory](../media/identity-governance-connected-organizations.png)
+    ![Screenshot of the connected organizations page in Azure Active Directory.](../media/identity-governance-connected-organizations.png)
 
 ## Choose the resources to share
 
@@ -70,7 +71,7 @@ To create a catalog
 4. Type a name and description for the catalog and ensure that **Enabled** and **Enabled for external users** are both set to **Yes**.
 5. Click **Create**.
 
-   ![Screenshot of the catalogs page in Azure Active Directory Identity Governance](../media/identity-governance-catalogs.png)
+   ![Screenshot of the catalogs page in Azure Active Directory Identity Governance.](../media/identity-governance-catalogs.png)
 
 Once the catalog has been created, you add the SharePoint site or team that you want to share with the partner organization.
 
@@ -79,7 +80,7 @@ To add resources to a catalog
 2. Click **Resources** and then click **Add resources**.
 3. Select the teams or SharePoint sites that you want to include in your extranet, and then click **Add**.
 
-   ![Screenshot of the catalog resources page in Azure Active Directory Identity Governance](../media/identity-governance-catalog-resource.png)
+   ![Screenshot of the catalog resources page in Azure Active Directory Identity Governance.](../media/identity-governance-catalog-resource.png)
 
 Once you've defined the resources that you want to share, the next step is to create an access package, which defines the type of access that partner users are granted and the approval process for new partner users requesting access.
 
@@ -101,7 +102,7 @@ To create an access package
 15. Choose the expiration and access review settings that you want to use, and then click **Next: Review + Create**.
 16. Review your settings, and then click **Create**.
 
-    ![Screenshot of the access packages screen in Azure Active Directory Identity Governance](../media/identity-governance-access-packages.png)
+    ![Screenshot of the access packages screen in Azure Active Directory Identity Governance.](../media/identity-governance-access-packages.png)
 
 If you're partnering with a large organization, you may want to hide the access package. If the package is hidden, then users in the partner organization will not see the package on their *My Access* portal. Instead, they must be sent a direct link to sign up for the package. Hiding the access package can reduce the number of inappropriate access requests and can also help keep available access packages organized in the partner organization's portal.
 
@@ -110,7 +111,7 @@ To set an access package to hidden
 2. On the **Overview** page, click **Edit**.
 3. Under **Properties**, choose **Yes** for **Hidden**, and then click **Save**.
 
-   ![Screenshot of an edit access package properties screen](../media/identity-governance-access-package-hidden.png)
+   ![Screenshot of an edit access package properties screen.](../media/identity-governance-access-package-hidden.png)
 
 ## Invite partner users
 
@@ -120,7 +121,7 @@ To find the access portal link
 1. In Azure AD Identity Governance, click **Access packages**, and then click your access package.
 2. On the **Overview** page, click **Copy to clipboard** link for the **My Access portal link**.
 
-   ![Screenshot of access package properties with access portal link](../media/identity-governance-access-portal-link.png)
+   ![Screenshot of access package properties with access portal link.](../media/identity-governance-access-portal-link.png)
 
 Once you have copied the link, you can share it with your contact at the partner organization and they can send it to the users on their collaboration team.
 

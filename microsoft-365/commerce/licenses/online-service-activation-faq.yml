@@ -1,20 +1,18 @@
 ### YamlMime:FAQ
 metadata:
-  title: "Online service activation for Open program Frequently Asked Questions"
-  ms.author: cmcatee
+  title: "Online service activation for Open program FAQ"
   author: cmcatee-MSFT
+  ms.author: cmcatee
   manager: scotv
-  ms.reviewer: 
-  - Rani Chegondi
-  - Armando Valenzuela
+  ms.reviewer: racheg, armanv
   ms.date: 07/22/2021
   audience: Admin
-  ms.topic: article
-  ms.service: bookings
-  ms.custom: commerce_licensing
-  localization_priority: Normal
+  ms.topic: faq
+  ms.service: microsoft-365-business
+  ms.custom: commerce_vl
+  ms.collection: scotvorg
+  ms.localizationpriority: medium
   description: "Online service activation for Open program Frequently Asked Questions"
-    
 title: Online service activation for Open program Frequently Asked Questions
 summary: |
 
@@ -86,4 +84,3 @@ additionalContent: |
   - [Product keys FAQ](product-keys-faq.yml)
 
   - [Downloads FAQ](downloads-faq.yml)
-

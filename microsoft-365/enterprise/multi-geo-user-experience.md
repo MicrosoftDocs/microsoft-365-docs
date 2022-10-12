@@ -6,14 +6,14 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - Strat_SP_gtc
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about the SharePoint, OneDrive, and Exchange user experience in a multi-geo environment for Microsoft 365.
 ---
 
@@ -27,7 +27,7 @@ A user's Exchange mailbox is provisioned to their preferred data location, and i
 
 ## Hub sites
 
-SharePoint Hub sites enhances the discovery and engagement with content for employees, while creating a complete and consistent representation of projects, departments or regions. In a multi-geo environment, sites from satellite locations can easily be associated with a hub site regardless the hub site's geo location. Users can search and get results across the hub through a single search experience, regardless of the geo location of the sites.
+SharePoint Hub sites enhance the discovery and engagement with content for employees, while creating a complete and consistent representation of projects, departments or regions. In a multi-geo environment, sites from satellite locations can easily be associated with a hub site regardless the hub site's geo location. Users can search and get results across the hub through a single search experience, regardless of the geo location of the sites.
 
 ## Microsoft 365 app launcher
 
@@ -39,7 +39,7 @@ Office applications such as Word, Excel, and PowerPoint will automatically detec
 
 ## OneDrive sync app
 
-The OneDrive sync app (version 17.3.6943.0625 and later) will automatically detect the correct OneDrive geo location for the user. Sync app support includes the ability to sync groups-based sites regardless of their geo location. Note that the Groove sync client is not supported for multi-geo. 
+The OneDrive sync app (version 17.3.6943.0625 and later) will automatically detect the correct OneDrive geo location for the user. Sync app support includes the ability to sync groups-based sites regardless of their geo location. The Groove sync client is not supported for multi-geo. 
 
 ## OneDrive location
 
@@ -47,9 +47,9 @@ Users will have their OneDrive provisioned in their preferred data location. If 
 
 ## OneDrive iOS and Android 
 
-The OneDrive iOS and Android mobile apps will show you your OneDrive files and files shared with you regardless of their geo location. Search from the OneDrive mobile apps will show relevant results from all geo locations. Please download the latest version of these apps.
+The OneDrive iOS and Android mobile apps will show you your OneDrive files and files shared with you regardless of their geo location. Search from the OneDrive mobile apps will show relevant results from all geo locations. Download the latest version of these apps.
 
-See Use [OneDrive on iOS](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247) and [Use OneDrive for Android](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36) for more information.
+For more information, see Use [OneDrive on iOS](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247) and [Use OneDrive for Android](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36) for more information.
 
 ## OneDrive Mobile Client 
 
@@ -73,7 +73,7 @@ The following search clients are supported:
 
 ## SharePoint Home 
 
-In SharePoint Multi-Geo your SharePoint home is hosted in the location where the user resides as determined by their OneDrive location. For example: if the user has their OneDrive hosted in an European satellite location, their SharePoint Home will be rendered from Europe. SharePoint home includes all content relevant to the user regardless of its geo location. 
+In SharePoint Multi-Geo, your SharePoint home is hosted in the location where the user resides as determined by their OneDrive location. For example: if the user has their OneDrive hosted in a European satellite location, their SharePoint Home will be rendered from Europe. SharePoint home includes all content relevant to the user regardless of its geo location. 
 
 **Followed Sites, News from Sites, Recent Sites, Frequent Sites, and Suggested sites**
 
@@ -83,13 +83,13 @@ All of these components will show up for the user regardless of the geo location
 
 Admins may configure Featured links in SharePoint home as appropriate to each geo location. This allows the admin to feature in the SP Home for each region the links that are appropriate for users in the region. 
 
-## SharePoint Mobile Client 
+## SharePoint Mobile Client
 
 The SharePoint Mobile Client is multi-geo aware and will display pertinent content and results from all geo locations.
 
 ## Sharing
 
-The People Picker experience shows all users regardless of their geo location. This allows a user to share with another user in their same geo or in any other of your tenant's geo locations. Content from different geo locations will show up in the **Shared with Me** view in the user's OneDrive and can be accessed with Single Sign-On experience regardless of which geo location it is hosted in.
+The People Picker experience shows all users regardless of their geo location. This allows a user to share with another user in their same geo or in any other of your tenant's geo locations. Content from different geo locations will show up in the **Shared with Me** view in the user's OneDrive, Word, Excel, PowerPoint, and Office.com and can be accessed with Single Sign-On experience regardless of which geo location it is hosted in.
 
 ## Teams Experience
 

@@ -1,47 +1,49 @@
 ---
 title: "Overview of Microsoft 365 Lighthouse"
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.service: microsoft-365-lighthouse
+ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- M365-Lighthouse                         
+- M365-Lighthouse 
+- intro-overview                        
 search.appverid: MET150
 description: "For Managed Service Providers (MSPs), learn how Microsoft 365 Lighthouse can help you secure and manage customer tenants in one location."
 ---
 
 # Overview of Microsoft 365 Lighthouse
 
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers.
 
-Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium. 
+Lighthouse simplifies onboarding of customer tenants by recommending security configuration baselines tailored to SMB customers and providing multi-tenant views across all customer environments. With Lighthouse, MSPs can scale the management of their customers, focus on what's most important, quickly find and investigate risks, and take action to get their customers to a healthy and secure state.
 
-Microsoft 365 Lighthouse simplifies onboarding of Microsoft 365 Business Premium tenants by recommending security configuration baselines tailored to SMB customers and providing multi-tenant views across all customer environments. With Microsoft 365 Lighthouse, MSPs can scale the management of their customers, focus on what's most important, quickly find and investigate risks, and take action to get their customers to a healthy and secure state.
-
-No additional costs are associated with using Microsoft 365 Lighthouse to manage Microsoft 365 services and connected devices. Microsoft 365 Lighthouse is currently in Preview and available to MSPs enrolled in the Cloud Solution Provider (CSP) program and serving SMB customers with a Microsoft 365 Business Premium subscription.
-
-Note that CSP indirect providers aren't currently supported by Microsoft 365 Lighthouse. 
+No additional costs are associated with using Lighthouse to manage Microsoft 365 services and connected devices. Lighthouse is available to MSPs enrolled in the Cloud Solution Provider (CSP) program that service SMB customers. This includes CSP partners transacting directly with Microsoft and those transacting through an indirect provider (distributor).
 
 > [!IMPORTANT] 
-> To use Microsoft 365 Lighthouse, MSPs and their customer tenants must meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements.md).     
+> To use Lighthouse, MSPs and their customer tenants must meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements.md).
 
 For more information about the CSP program, see the [Cloud Solution Provider program overview](/partner-center/csp-overview).
 
 > [!NOTE]  
 > A similar offering, Azure Lighthouse, helps service providers deliver managed services for Azure services by using comprehensive and robust management tooling built into the Azure platform. To learn more, see [What is Azure Lighthouse?](/azure/lighthouse/overview)   
 
+## Watch: What is Microsoft 365 Lighthouse?
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4QVMP]
+
 ## Microsoft 365 Lighthouse benefits
 
-Microsoft 365 Lighthouse helps MSPs secure and manage Microsoft 365 services and connected endpoints at scale by:
+Lighthouse helps MSPs secure and manage Microsoft 365 services and connected endpoints at scale by:
 
 - Providing tenant deployment journeys so technicians can follow a consistent set of steps to secure and configure customer tenants. 
 - Using a default SMB security baseline that prescribes best practices targeted to small- and medium-sized business tenants. 
@@ -49,7 +51,7 @@ Microsoft 365 Lighthouse helps MSPs secure and manage Microsoft 365 services and
 - Simplifying common tasks like resetting a password.
 - Configuring multifactor authentication and self-service password reset, including tools to help drive adoption by users. 
 - Understanding and protecting against risky sign-ins.
-- Managing threats on Windows 10 devices by providing details on threats detected by Microsoft Defender and actions to take to resolve issues and keep devices up to date.
+- Managing threats on Windows 10 devices by providing details on threats detected by Microsoft 365 Defender and actions to take to resolve issues and keep devices up to date.
 - Providing insights into Microsoft 365 service incidents and advisories that impact the customer tenants they manage.
 
 > [!NOTE] 
@@ -57,7 +59,8 @@ Microsoft 365 Lighthouse helps MSPs secure and manage Microsoft 365 services and
 
 ## Related content
 
-[Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)\
-[Microsoft 365 Lighthouse tenant list overview](m365-lighthouse-tenant-list-overview.md) (article)\
-[Microsoft 365 Lighthouse Device compliance page overview](m365-lighthouse-device-compliance-page-overview.md) (article)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)  
+[Overview of the Tenants page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md) (article)   
+[Overview of the Device compliance page in Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (article)   
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)   
+[Microsoft Defender for Business](../security/defender-business/index.yml) (link page)

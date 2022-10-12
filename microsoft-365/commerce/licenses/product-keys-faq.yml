@@ -1,20 +1,18 @@
 ### YamlMime:FAQ
 metadata:
-  title: "Product keys Frequently Asked Questions"
-  ms.author: cmcatee
+  title: "Product keys FAQ"
   author: cmcatee-MSFT
+  ms.author: cmcatee
   manager: scotv
-  ms.reviewer: 
-  - Rani Chegondi
-  - Armando Valenzuela
+  ms.reviewer: racheg, armanv
   ms.date: 07/22/2021
   audience: Admin
-  ms.topic: article
-  ms.service: bookings
-  ms.custom: commerce_licensing
-  localization_priority: Normal
+  ms.topic: faq
+  ms.service: microsoft-365-business
+  ms.custom: commerce_vl
+  ms.collection: scotvorg
+  ms.localizationpriority: medium
   description: "Product keys Frequently Asked Questions"
-    
 title: Product keys Frequently Asked Questions
 summary: |
 
@@ -33,8 +31,8 @@ sections:
       - question: |
           How do I find product keys in the Microsoft 365 admin center?
         answer: |
-          1.	Sign into the Microsoft 365 admin center. 
-          2.	Go to **Billing** > **Your products** > **Volume licensing** > **Downloads & keys** > hover on product and select **View keys**.
+          1. Sign into the Microsoft 365 admin center. 
+          2. Go to **Billing** > **Your products** > **Volume licensing** > **Downloads & keys** > hover on product and select **View keys**.
 
           You’ll find product key information for each product, the type of licensing (Volume Licensing Key, Key Management Service (KMS), and Multiple Activation Key (MAK)) and the number of used and available MAK activations.
 
@@ -43,7 +41,7 @@ sections:
       - question: |
           How do I find SQL Server product keys?
         answer: |
-          The SQL license key is embedded in the software’s activation wizard rather than displayed in the admin center and is detected automatically during installation. For more information, see [The SQL Server Installation Guide] (/sql/database-engine/install-windows/install-sql-server).
+          The SQL license key is embedded in the software’s activation wizard rather than displayed in the admin center and is detected automatically during installation. For more information, see [The SQL Server Installation Guide](/sql/database-engine/install-windows/install-sql-server).
 
           You can also find the key by downloading the SQL ISO file from the admin center > ..\x64 folder > DefaultSetup.ini file. Make sure to back up any existing version before installing or upgrading SQL editions. If you need help troubleshooting technical issues during product installation or online service activation, contact Microsoft Technical Support by submitting a [Technical Support request](https://support.microsoft.com/oas).
 
@@ -75,7 +73,8 @@ sections:
 
           For more information, see the [License Summary FAQ](/licensing/license-faq).
 
-          **Note** All customers have the right to use product keys for re-imaging and downgrade purposes. Select Plus, Enterprise Agreement (EA), and Select customers have limited evaluation rights for training and back-up. For more information, see [Product licensing briefs](/licensing/learn-more/volume-licensing-briefs).
+          > [!NOTE]
+          > All customers have the right to use product keys for re-imaging and downgrade purposes. Select Plus, Enterprise Agreement (EA), and Select customers have limited evaluation rights for training and back-up. For more information, see [Product licensing briefs](https://www.microsoft.com/licensing/docs/view/Licensing-Briefs).
           
   - name: Volume activation
     questions:
@@ -239,9 +238,10 @@ sections:
         answer: |
           Yes. Re-imaging rights are granted to all Microsoft Volume Licensing customers. Under these rights, customers can re-image Original Equipment Manufacturer (OEM) or Full Packaged Product (FPP) licensed copies by using media provided under their agreement if the copies made from the Volume Licensing media are identical to the original licensed product. As a Volume Licensing customer, you can find the Volume License Keys on the product key page or request your keys through a [Microsoft Activation Center](https://licensingapps.microsoft.com/product-activation).
 
-          **Note** If you’re an Open License customer, you must purchase at least one unit of the product that you want to re-image to obtain access to the product media and receive a product key.
+          > [!NOTE]
+          > If you’re an Open License customer, you must purchase at least one unit of the product that you want to re-image to obtain access to the product media and receive a product key.
 
-          For more information on re-imaging rights, see [Product licensing briefs](/licensing/learn-more/volume-licensing-briefs).
+          For more information on re-imaging rights, see [Product licensing briefs](https://www.microsoft.com/licensing/docs/view/Licensing-Briefs).
 
       - question: |
           How do I download my keys to a local file?
@@ -251,10 +251,10 @@ sections:
           A downloadable product key file is in a tab-delimited format and can be opened in Excel or a text editor to sort and view keys. These are the columns included in the file: **License ID**, **Parent Program**, **Organization**, **Product**, **Product Key**, **Type**, and **MAK Activations-Used/Available, Seats and OSA Status**. 
 
           To open a downloaded file in Excel, complete these steps:
-            1.	Open Microsoft Excel.
-            2.	Select **File** > **Open**, and then select the downloaded CSV file.
-            3.	Select **Delimited** (the default), and then select **Tab-separated** (to prevent the display of all data in a single column).
-            4.	Select **Finish**. 
+            1. Open Microsoft Excel.
+            2. Select **File** > **Open**, and then select the downloaded CSV file.
+            3. Select **Delimited** (the default), and then select **Tab-separated** (to prevent the display of all data in a single column).
+            4. Select **Finish**. 
           
           The .CSV file opens in Excel and the data is displayed in separate columns.
 

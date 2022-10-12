@@ -1,46 +1,50 @@
 ---
 title: "Export documents from a review set"
+description: "Learn how to select and export content from an eDiscovery (Premium) review set for presentations or external reviews."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.localizationpriority: medium
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 
-description: "Learn how to select and export content from an Advanced eDiscovery review set for presentations or external reviews."
 ms.custom: seo-marvel-mar2020
 ---
 
-# Export documents from a review set in Advanced eDiscovery
+# Export documents from a review set in eDiscovery (Premium)
 
-Export allows users to customize the content that is included in the download package when you export document from a review set in Advanced eDiscovery.
+Export allows users to customize the content that is included in the download package when you export document from a review set in eDiscovery (Premium).
 
 To export documents from a review set:
 
-1. In the Microsoft 365 compliance center, open the Advanced eDiscovery case, select the **Review sets** tab, and then select the review set that you want to export.
+1. In the Microsoft Purview compliance portal, open the eDiscovery (Premium) case, select the **Review sets** tab, and then select the review set that you want to export.
 
 2. In the review set, click **Action** > **Export**.
 
    The Export tool displays the flyout page with the settings to configure the export. Some options are selected by default, but you can change these. See the following section for descriptions of the export options that you can configure.
 
-   ![Configuration options for exporting items from a review set](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
+   ![Configuration options for exporting items from a review set.](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
 3. After you configure the export, click **Export** to start the export process. Depending on the option that you selected in **Output options** section, you can access the export files by direct download or in your organization's Azure Storage account.
 
 > [!NOTE]
 > Export jobs are retained for the life of the case. However, you must download the content from an export job within 30 days after the export job is complete.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Export options
 
-Use the following options to configure the export. Not all options are allowed for some output options, most notably, export of text files and redacted PDFs are not allowed when exporting to the PST format.
+Use the following options to configure the export. Not all options are allowed for some output options, most notably, export of text files and redacted PDFs aren't allowed when exporting to the PST format.
 
 - **Export name**: Name of the export job. This will be used to name the ZIP files that will be downloaded.
 
@@ -72,6 +76,8 @@ Use the following options to configure the export. Not all options are allowed f
   
   - Replace redacted natives with converted PDFs: If redacted PDF files are generated during review, these files are available for export. You can choose to export only the native files that were redacted (by not selecting this option) or you can select this option to export the PDF files that contain the actual redactions.
 
+  - Conversation PDFs instead of individual chat messages: Select this checkbox to export chat conversations in a PDF file. All chat messages from the same conversation are exported in the same PDF file. If you leave this checkbox unselected, each unique message in a chat conversation is exported as a standalone item. The file is exported in the same format that it was saved as in the mailbox. For a specific conversation, you receive multiple .msg files.
+
 The following sections describe the folder structure for loose files and condensed directory structure options. Exports are partitioned into ZIP files with a maximum size of uncompressed content of 75 GB. If the export size is less than 75 GB, the export will consist of a summary file and a single ZIP file. For exports larger than 75 GB of uncompressed data, multiple ZIP files will be created. Once downloaded, the ZIP files can be uncompressed into a single location to recreate the full export.
 
 ### Loose files and PST export structure
@@ -80,15 +86,22 @@ If you select this export option, the exported content is organized in the follo
 
 - Summary.csv: Includes a summary of the content exported from the review set
 
-- Root folder: This folder in named [Export Name] x of z.zip and will be repeated for each ZIP file partition.
+- Root folder: This folder in named [Export Name] x of z.zip and will be repeated for each ZIP file partition. The root folder contains the following:
   
   - Export_load_file_x of z.csv: The metadata file.
   
   - Warnings and errors x of z.csv: This file includes information about errors encountered when trying to export from the review set.
   
-  - Exchange: This folder contains all content from Exchange stored in PST files. Redacted PDF files cannot be included with this option. If an attachment is selected in the review set, the parent email will be exported with the attachment attached.
+  - Exchange: This folder contains all content from Exchange stored in PST files. Redacted PDF files can’t be included with this option. If an attachment is selected in the review set, the parent email message will be exported with the attachment attached.
   
-  - SharePoint: This folder contains all native content from SharePoint in a native file format. Redacted PDF files cannot be included with this option.
+    The Exchange folder may also contain a subfolder named mailboxname_loosefiles.zip, which contains the following items:
+
+    - Information Rights Management (IRM) protected messages that have been decoded.
+    - Error-remediated messages.
+    - Modern attachments or links referenced in messages.
+    - Encrypted items (which aren't included in the PST files in the Exchange folder).
+  
+  - SharePoint: This folder contains all native content from SharePoint in a native file format. Redacted PDF files can’t be included with this option.
 
 ### Condensed directory structure
 
@@ -108,4 +121,4 @@ If you select this export option, the exported content is organized in the follo
 
 ### Condensed directory structure exported to your Azure Storage Account
 
-This option uses the same general structure as the *Condensed directory structure*, however the contents is not zipped and the data is saved to your Azure Storage account. This option is generally used when working with a third-party eDiscovery provider. For details about how to use this option, see [Export documents in a review set to an Azure Storage account](download-export-jobs.md).
+This option uses the same general structure as the *Condensed directory structure*, however the contents aren't zipped and the data is saved to your Azure Storage account. This option is generally used when working with a third-party eDiscovery provider. For details about how to use this option, see [Export documents in a review set to an Azure Storage account](download-export-jobs.md).

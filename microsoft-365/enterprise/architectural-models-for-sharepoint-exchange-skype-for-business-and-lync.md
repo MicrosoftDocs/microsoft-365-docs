@@ -1,14 +1,15 @@
 ---
 title: "Architectural models for SharePoint, Exchange, Skype for Business, and Lync"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 05/16/2018
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: 
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection:
+- scotvorg 
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content

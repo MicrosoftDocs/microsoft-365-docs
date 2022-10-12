@@ -2,17 +2,18 @@
 title: "Isolated team for a top-secret project of the Contoso Corporation"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: dansimp
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: overview
-ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.service: o365-solutions
+ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: 
+ms.collection:
+- highpri 
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: "Summary: How Contoso used a team with security isolation for a top-secret project to develop a new suite of products and services."
@@ -72,7 +73,7 @@ As private channels for the Project 2X were created, the group owner disabled gu
 
 Here is the resulting configuration of the Project 2X team with security isolation.
 
-![The resulting configuration of the Project 2X team](../media/contoso-team-for-top-secret-project.png)
+![The resulting configuration of the Project 2X team.](../media/contoso-team-for-top-secret-project.png)
 
  ## Step 4: Trained Project 2X team members
 
@@ -87,7 +88,7 @@ The end result was a secure environment in which Project 2X team members collabo
 
 Here is an example of a file stored in the underlying Project 2X site with the Project 2X sensitivity label assigned.
 
-![An example of a file stored in the underlying Project 2X site](../media/contoso-team-for-top-secret-project-example.png)
+![An example of a file stored in the underlying Project 2X site.](../media/contoso-team-for-top-secret-project-example.png)
 
 In a couple of instances, Project 2X team members downloaded files protected by the Project 2X label to a local drive for offline work. 
 

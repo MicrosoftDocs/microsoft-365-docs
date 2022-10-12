@@ -5,18 +5,20 @@ description: Evaluate the different security capabilities in Microsoft Defender 
 keywords: attack surface reduction, evaluate, next, generation, protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Evaluate Microsoft Defender for Endpoint 
@@ -24,14 +26,15 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037) is a unified platform for preventative protection, post-breach detection, automated investigation, and response.
 
-You can evaluate Microsoft Defender for Endpoint in your organization by [starting your free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
+You can evaluate Microsoft Defender for Endpoint in your organization by [starting your free trial](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial).
 
 You can also evaluate the different security capabilities in Microsoft Defender for Endpoint by using the following instructions.
 
@@ -39,7 +42,6 @@ You can also evaluate the different security capabilities in Microsoft Defender 
 
 These capabilities help prevent attacks and exploitations from infecting your organization.
 
-- [Evaluate attack surface reduction](./evaluate-attack-surface-reduction.md)
 - [Evaluate exploit protection](./evaluate-exploit-protection.md)
 - [Evaluate network protection](./evaluate-exploit-protection.md)
 - [Evaluate controlled folder access](./evaluate-controlled-folder-access.md)

@@ -6,9 +6,10 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.service: o365-solutions
+ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-collaboration
 - m365solution-collabgovernance
 ms.custom: 
@@ -31,7 +32,7 @@ The following table provides a quick reference for the access controls available
 ||Dynamic group membership based on rules|[Create or update a dynamic group in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)|
 ||Control who can share files, folders, and sites.|[Set up and manage access requests](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |Conditional access|||
-||Multi-Factor Authentication|[Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks)|
+||Multi-factor Authentication|[Azure AD multi-factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks)|
 ||Control device access based on group, team, or site sensitivity.|[Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||Limit site access for unmanaged devices.|[Control SharePoint access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices)|
 ||Control site access based on location|[Control access to SharePoint and OneDrive data based on network location](/sharepoint/control-access-based-on-network-location)|
@@ -48,7 +49,6 @@ The following table provides a quick reference for the access controls available
 |User management|||
 ||Review team and group membership on a regular basis.|[What are Azure AD access reviews?](/azure/active-directory/governance/access-reviews-overview)|
 ||Automate access management to groups and teams.|[What is Azure AD entitlement management?](/azure/active-directory/governance/entitlement-management-overview)|
-||Allow or block people from creating private channels in Teams.|[Manage the life cycle of private channels in Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)|
 
 ## Membership
 
@@ -69,7 +69,7 @@ SharePoint sites provide the ability to add owners, members, and visitors apart 
 
 With Microsoft 365, you can require multi-factor authentication for both people inside and outside your organization. There are many options for the circumstances when people are prompted for a second factor of authentication. We highly recommend that you deploy multi-factor authentication for your organization:
 
-- [Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Azure AD multi-factor authentication](/azure/active-directory/authentication/concept-mfa-howitworks)
 
 If you have sensitive information in some of your groups and teams, you can enforce device management policies based on a group or team's sensitivity label. You can block access entirely from unmanaged devices, or allow limited, web only access:
 
@@ -91,7 +91,7 @@ Additional resources:
 
 ## Guest access
 
-You can restrict guests based on the domain of their email address. SharePoint offers organization-wide and site-specific domain restriction settings. Groups and Teams use the domain allow and deny lists in Azure AD. Be sure to configure both settings to avoid unwanted sharing and ensure a consistent user experience:
+You can restrict guests based on the domain of their email address. SharePoint offers organization-wide and site-specific domain restriction settings. Groups and Teams use the domain allowlists or blocklists in Azure AD. Be sure to configure both settings to avoid unwanted sharing and ensure a consistent user experience:
 
 - [Restrict sharing of SharePoint and OneDrive content by domain](/sharepoint/restricted-domains-sharing)
 
@@ -151,7 +151,9 @@ Private channels in Teams allow for scoped conversations and file sharing betwee
 
 - [Private channels in Microsoft Teams](/MicrosoftTeams/private-channels)
 
-- [Manage the life cycle of private channels in Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)
+Shared channels allow you to invite people who are outside the team or outside the organization. Depending on your specific business needs and external sharing policies, you may want to allow or block this capability.
+
+- [Shared channels](/MicrosoftTeams/shared-channels)
 
 Additional resources:
 
@@ -159,7 +161,7 @@ Additional resources:
 
 ## Related topics
 
-[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Create your collaboration governance plan](collaboration-governance-first.md)
 

@@ -3,16 +3,16 @@ title: 'CPU regression analysis'
 description: Understanding regression results and metrics for CPU consumption
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
-ms.service: virtual-desktop
-localization_priority: Normal
+ms.service: test-base
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
 ---
 # Intelligent CPU regression analysis
@@ -41,7 +41,7 @@ In the snapshot below, there are two OS releases against which the CPU utilizati
 Customers can now use the functionality to determine if their application's CPU utilization is impacted by OS updates and specifically which processes have regressed from their previous execution.
 
 
-![CPU regression analysis](Media/cpu-regression-analysis.jpg)
+![CPU regression analysis.](Media/cpu-regression-analysis.jpg)
 
 ### Relevant Process Identification ###
 

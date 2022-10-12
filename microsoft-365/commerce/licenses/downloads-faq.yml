@@ -1,20 +1,18 @@
 ### YamlMime:FAQ
 metadata:
-  title: "Downloads Frequently Asked Questions"
-  ms.author: cmcatee
+  title: "Downloads FAQ"
   author: cmcatee-MSFT
+  ms.author: cmcatee
   manager: scotv
-  ms.reviewer: 
-  - Rani Chegondi
-  - Armando Valenzuela
+  ms.reviewer: racheg, armanv
   ms.date: 07/22/2021
   audience: Admin
-  ms.topic: article
-  ms.service: bookings
-  ms.custom: commerce_licensing
-  localization_priority: Normal
+  ms.topic: faq
+  ms.service: microsoft-365-business
+  ms.custom: commerce_vl
+  ms.collection: scotvorg
+  ms.localizationpriority: medium
   description: "Frequently asked questions about Microsoft 365 admin center downloads."
-    
 title: Downloads Frequently Asked Questions
 summary: |
 
@@ -28,7 +26,8 @@ sections:
 
           You can find the system requirements for each product by signing into the admin center and going to **Your products** > **Downloads** page > **Product description**. 
 
-          **Note** Not all products require a product key.
+          > [!NOTE]
+          > Not all products require a product key.
 
       - question: |
           What products can I download from the admin center?
@@ -41,8 +40,8 @@ sections:
 
           To determine if a product is eligible for download:
 
-            1.	Select **Volume Licensing**, and then select the product or **View downloads**.
-            2.	Under **Download**, if the product is not available, you’ll see “This product is not available for download.”
+            1. Select **Volume Licensing**, and then select the product or **View downloads**.
+            2. Under **Download**, if the product is not available, you’ll see “This product is not available for download.”
 
       - question: |
           What is a Client Access License (CAL)?
@@ -71,8 +70,8 @@ sections:
           How do I download products in the admin center?
         answer: |
           To download products in the admin center:
-          1.	Select **Volume Licensing**, and then select the product or **View downloads**.
-          2.	Under **Download**, select a component and select a download action or the download icon. 
+          1. Select **Volume Licensing**, and then select the product or **View downloads**.
+          2. Under **Download**, select a component and select a download action or the download icon. 
 
           To access downloads in the admin center, a VLSC administrator in your organization can provide access by assigning you to one of these roles:
             - Administrator
@@ -83,10 +82,11 @@ sections:
           How do I change my download settings?
         answer: |
           To access download settings in the admin center:
-          1.	Select **Volume Licensing**, and then select the product or **View downloads**.
-          2.	Under **Download**, select the **Language** and **Operating System Type**.
+          1. Select **Volume Licensing**, and then select the product or **View downloads**.
+          2. Under **Download**, select the **Language** and **Operating System Type**.
           
-          **Note** Pop-up blockers can block downloads. Make sure pop-up blockers are disabled when you download software from the admin center.
+          > [!NOTE]
+          > Pop-up blockers can block downloads. Make sure pop-up blockers are disabled when you download software from the admin center.
 
       - question: |
           What are EXE and ISO files?
@@ -96,7 +96,8 @@ sections:
             - **Executable (EXE) files** can be downloaded and installed on the same system, but you can’t create separate boot disks for installation on other computers.
             - **ISO (International Standards Organization) image files** are exact representations of the content and the logical format. You can install these on the computer used to download the package or write the files to disks for distribution and installation on other computers.
           
-          **Note** Not all products are available in all languages and in all formats.
+          > [!NOTE]
+          > Not all products are available in all languages and in all formats.
 
       - question: |
           How do I use ISO image file software to download and save ISO image file to a CD-R or a DVD-R disk?
@@ -110,7 +111,8 @@ sections:
         answer: |
           If you don't have a CD/DVD burner installed on your computer or media isn't available, you can mount the ISO file as a virtual drive. With this method, your computer believes that the file is a real disk drive, and you can read files from this virtual disk.
           
-          **Note** This approach is advisable only for installing applications such as Office or minor system upgrades. You can’t install an operating system using this approach because the virtual drive disappears during the installation.
+          > [!NOTE]
+          > This approach is advisable only for installing applications such as Office or minor system upgrades. You can’t install an operating system using this approach because the virtual drive disappears during the installation.
 
       - question: |
           How do I get support for downloaded products?
@@ -120,7 +122,7 @@ sections:
       - question: |
           Where can I find support for the topics covered in this FAQ?
         answer: |
-          For more training resources, including videos, see [Microsoft Volume Licensing Service Center training and resources](/licensing/existing-customer/vlsc-training-and-resources?activetab=vlsc-tab%3aprimaryr3).
+          For more training resources, including videos, see [Microsoft Volume Licensing Service Center training and resources](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources).
       
       - question: |
           How can I contact Microsoft Support?
@@ -134,3 +136,4 @@ additionalContent: |
   - [Product keys FAQ](product-keys-faq.yml)
 
   - [Online services activation for Open programs FAQ](online-service-activation-faq.yml)
+  

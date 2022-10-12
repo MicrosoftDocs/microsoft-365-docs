@@ -3,7 +3,8 @@ title: Common Microsoft 365 Defender REST API error codes
 description: Learn about the common Microsoft 365 Defender REST API error codes
 keywords: api, error, codes, common errors, Microsoft 365 Defender, api error codes
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,15 +12,17 @@ f1.keywords:
   - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+ - m365-security
+ - tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
+ms.custom: api
 ---
 
 # Common Microsoft 365 Defender REST API error codes
@@ -57,7 +60,7 @@ DisabledFeature | Forbidden (403) | Tenant feature is not enabled.
 DisallowedOperation | Forbidden (403) | \<the disallowed operation and the reason\>.
 NotFound | Not Found (404) | General Not Found error message.
 ResourceNotFound | Not Found (404) | Resource \<the requested resource\> was not found.
-InternalServerError | Internal Server Error (500) | *Note: No error message,  retry the operation or [contact Microsoft](/microsoft-365/business-video/get-help-support) if it does not get resolved*
+InternalServerError | Internal Server Error (500) | *Note: No error message,  retry the operation or [contact Microsoft](../../admin/get-help-support.md) if it does not get resolved*
 
 ## Examples
 

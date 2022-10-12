@@ -7,12 +7,14 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+- Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -24,11 +26,11 @@ ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: "Learn about using Centralized add-ins to deploy add-ins to users and groups in your organization."
 ---
 
-# Manage add-ins in the admin center
+# Manage add-ins in the Microsoft 365 admin center
 
-Office add-ins help you personalize your documents and streamline the way you access information on the web (see [Start using your Office add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). 
+Office Add-ins help you personalize your documents and streamline the way you access information on the web. See [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862). 
 
-After an admin deploys add-ins for users in an organization, the admin can turn add-ins off or on, edit, delete, and manage access to the add-ins.
+After a global or exchange admin deploys add-ins for users in an organization, they can turn add-ins off or on, edit, delete, and manage access to the add-ins.
 
 For more information about installing add-ins from the admin center, see [Deploy add-ins in the admin center](./manage-deployment-of-add-ins.md).
   
@@ -48,25 +50,23 @@ Consider deleting an add-in if no one is using it anymore. For example, turning 
 
 You can also delete an add-in that was deployed.
 
-1. In the admin center, go to the **Settings** > **Services & add-ins** page.
+1. In the admin center, go to the **Settings** > **Integrated apps** page.
 
-    > [!NOTE]
-    > The admin center is getting updated to deployment experience with Integrated Apps . If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
+2. Select the deployed add-in and then select the **Configuration** tab.
 
-2. Select the deployed add-in.
+3. In the **Configuration** pane, go to **Advanced Settings** > **Add-ins**.
 
-3. Click on **Delete Add-In**. Remove the Add-in button on the bottom-right corner.
+4. Select the add-in from the list again.
 
-4. Validate your selections, and choose **Remove add-in**.
+5. Choose **Remove Add-In**. Remove the Add-in button on the bottom right corner.
+
+6. Validate your selections, and choose **Remove**.
 
 ## Edit add-in access
 
 Post deployment, admins can also manage user access to add-ins.
 
-1. In the admin center, go to the **Settings** > **Services & add-ins** page.
-
-    > [!NOTE]
-    > The admin center is getting updated to deployment experience with Integrated Apps . If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
+1. In the admin center, go to the **Settings** > **Integrated apps** page.
 
 2. Select the deployed add-in.
 
@@ -79,18 +79,15 @@ Post deployment, admins can also manage user access to add-ins.
 > [!NOTE]
 > Outlook add-in installation is managed by a [different process](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins).
 
-As an organization you may wish to prevent the download of new Office add-ins from the Office Store. This can be used in conjunction with Centralized Deployment to ensure that only organization-approved add-ins are deployed to users within your organization.
+As an organization you may wish to prevent the download of new Office Add-ins from the Office Store. This can be used in conjunction with Centralized Deployment to ensure that only organization-approved add-ins are deployed to users within your organization.
   
 **To turn off add-in acquisition**
   
-1. In the admin center, go to the **Settings** \> [Services &amp; add-ins](https://go.microsoft.com/fwlink/p/?linkid=2053743) page.
+1. In the admin center, go to the **Settings** \> [Org settings](https://go.microsoft.com/fwlink/p/?linkid=2053743) page.
 
-    > [!NOTE]
-    > The admin center is getting updated to deployment experience with Integrated Apps. If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
+2. Select **User owned apps and services**.
     
-3. Select **User owned apps and services**.
-    
-4. Clear the option to let users access the Office store.
+3. Clear the option to let users access the Office store.
 
     This will prevent all users from acquiring the following add-ins from the store.
       
@@ -129,11 +126,11 @@ To prevent a user from signing in with a Microsoft account, you can restrict log
 
 ## More about the end-user experience with add-ins
 
-After you deploy an add-in, your end users can start using it in their Office applications (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). The add-in appears on all platforms that the add-in supports.
+After you deploy an add-in, your end users can start using it in their Office applications. The add-in appears on all platforms that the add-in supports. See [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862). 
   
 If the add-in supports add-in commands, the commands appear on the Office ribbon. In the following example, the command **Search Citation** appears for the **Citations** add-in. 
 
-![Office ribbon with Search Citations](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
+![Office ribbon with Search Citations.](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   
 If the deployed add-in doesn't support add-in commands or if you want to view all deployed add-ins, you can view them via **My Add-ins**. 
   
@@ -145,20 +142,17 @@ If the deployed add-in doesn't support add-in commands or if you want to view al
     
 3. Double-click the add-in you deployed earlier (in this example, **Citations**).
 
-    ![Admin Managed tab of the Office Add-ins page](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
+    ![Admin Managed tab of the Office Add-ins page.](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
 ### In Outlook
 
 1. On the **Home** ribbon, select **Get Add-ins**.
 
-    ![Store button in Outlook](../../media/getaddinsicon.png)
+    ![Store button in Outlook.](../../media/getaddinsicon.png)
   
 2. Select **Admin-managed** in the left nav. 
 
 ## Related content
 
-[Deploy add-ins in the admin center](./manage-deployment-of-add-ins.md) (article)\
-Learn more about creating and building [Office Add-ins](/office/dev/add-ins/overview/office-add-ins) (article)\
-[Use Centralized Deployment PowerShell cmdlets to manage add-ins](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (article)\
-[Troubleshoot: User not seeing add-ins](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (article)\
-[Minors and acquiring add-ins from the Microsoft Store](./minors-and-acquiring-addins-from-the-store.md) (article)
+[Minors and acquiring add-ins from the Microsoft Store](./minors-and-acquiring-addins-from-the-store.md)
+

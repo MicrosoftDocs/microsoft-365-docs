@@ -2,20 +2,22 @@
 title: Get alerts API
 description: Learn about the methods and properties of the Alert resource type in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, alerts, recent
-search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier1
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Alert resource type
@@ -23,60 +25,65 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+>Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## Methods
 
-Method |Return Type |Description
-:---|:---|:---
-[Get alert](get-alert-info-by-id.md) | [Alert](alerts.md) | Get a single [alert](alerts.md) object.
-[List alerts](get-alerts.md) | [Alert](alerts.md) collection | List [alert](alerts.md) collection.
-[Update alert](update-alert.md) | [Alert](alerts.md) | Update specific [alert](alerts.md).
-[Batch update alerts](batch-update-alerts.md) | | Update a batch of [alerts](alerts.md).
-[Create alert](create-alert-by-reference.md)|[Alert](alerts.md)|Create an alert based on event data obtained from [Advanced Hunting](run-advanced-query-api.md).
-[List related domains](get-alert-related-domain-info.md)|Domain collection| List URLs associated with the alert.
-[List related files](get-alert-related-files-info.md) | [File](files.md) collection |  List the [file](files.md) entities that are associated with the [alert](alerts.md).
-[List related IPs](get-alert-related-ip-info.md) | IP collection | List IPs that are associated with the alert.
-[Get related machines](get-alert-related-machine-info.md) | [Machine](machine.md) | The [machine](machine.md) that is associated with the [alert](alerts.md).
-[Get related users](get-alert-related-user-info.md) | [User](user.md) | The [user](user.md) that is associated with the [alert](alerts.md).
+|Method|Return Type|Description|
+|---|---|---|
+|[Get alert](get-alert-info-by-id.md)|[Alert](alerts.md)|Get a single [alert](alerts.md) object.|
+|[List alerts](get-alerts.md)|[Alert](alerts.md) collection|List [alert](alerts.md) collection.|
+|[Update alert](update-alert.md)|[Alert](alerts.md)|Update specific [alert](alerts.md).|
+|[Batch update alerts](batch-update-alerts.md)||Update a batch of [alerts](alerts.md).|
+|[Create alert](create-alert-by-reference.md)|[Alert](alerts.md)|Create an alert based on event data obtained from [Advanced Hunting](run-advanced-query-api.md).|
+|[List related domains](get-alert-related-domain-info.md)|Domain collection|List URLs associated with the alert.|
+|[List related files](get-alert-related-files-info.md)|[File](files.md) collection|List the [file](files.md) entities that are associated with the [alert](alerts.md).|
+|[List related IPs](get-alert-related-ip-info.md)|IP collection|List IPs that are associated with the alert.|
+|[Get related machines](get-alert-related-machine-info.md)|[Machine](machine.md)|The [machine](machine.md) that is associated with the [alert](alerts.md).|
+|[Get related users](get-alert-related-user-info.md)|[User](user.md)|The [user](user.md) that is associated with the [alert](alerts.md).|
 
 ## Properties
 
-Property |    Type    |    Description
-:---|:---|:---
-id | String | Alert ID.
-title | String | Alert title.
-description | String | Alert description.
-alertCreationTime | Nullable DateTimeOffset | The date and time (in UTC) the alert was created.
-lastEventTime | Nullable DateTimeOffset | The last occurrence of the event that triggered the alert on the same device.
-firstEventTime | Nullable DateTimeOffset | The first occurrence of the event that triggered the alert on that device.
-lastUpdateTime | Nullable DateTimeOffset | The date and time (in UTC) the alert was last updated.
-resolvedTime | Nullable DateTimeOffset | The date and time in which the status of the alert was changed to 'Resolved'.
-incidentId | Nullable Long | The [Incident](view-incidents-queue.md) ID of the Alert.
-investigationId | Nullable Long | The [Investigation](automated-investigations.md) ID related to the Alert.
-investigationState | Nullable Enum | The current state of the [Investigation](automated-investigations.md). Possible values are: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
-assignedTo | String | Owner of the alert.
-severity | Enum | Severity of the alert. Possible values are: 'UnSpecified', 'Informational', 'Low', 'Medium' and 'High'.
-status | Enum | Specifies the current status of the alert. Possible values are: 'Unknown', 'New', 'InProgress' and 'Resolved'.
-classification | Nullable Enum | Specification of the alert. Possible values are: 'Unknown', 'FalsePositive', 'TruePositive'.
-determination | Nullable Enum | Specifies the determination of the alert. Possible values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.
-category| String | Category of the alert.
-detectionSource | String | Detection source.
-threatFamilyName | String | Threat family.
-threatName | String | Threat name.
-machineId | String | ID of a [machine](machine.md) entity that is associated with the alert.
-computerDnsName | String | [machine](machine.md) fully qualified name.
-aadTenantId | String | The Azure Active Directory ID.
-detectorId | String | The ID of the detector that triggered the alert.
-comments | List of Alert comments | Alert Comment object contains: comment string, createdBy string and createTime date time.
-Evidence | List of Alert evidence | Evidence related to the alert. See example below.
+|Property|Type|Description|
+|---|---|---|
+|id|String|Alert ID.|
+|title|String|Alert title.|
+|description|String|Alert description.|
+|alertCreationTime|Nullable DateTimeOffset|The date and time (in UTC) the alert was created.|
+|lastEventTime|Nullable DateTimeOffset|The last occurrence of the event that triggered the alert on the same device.|
+|firstEventTime|Nullable DateTimeOffset|The first occurrence of the event that triggered the alert on that device.|
+|lastUpdateTime|Nullable DateTimeOffset|The date and time (in UTC) the alert was last updated.|
+|resolvedTime|Nullable DateTimeOffset|The date and time in which the status of the alert was changed to 'Resolved'.|
+|incidentId|Nullable Long|The [Incident](view-incidents-queue.md) ID of the Alert.|
+|investigationId|Nullable Long|The [Investigation](automated-investigations.md) ID related to the Alert.|
+|investigationState|Nullable Enum|The current state of the [Investigation](automated-investigations.md). Possible values are: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.|
+|assignedTo|String|Owner of the alert.|
+|rbacGroupName|String|RBAC device group name.|
+|mitreTechniques|String|Mitre Enterprise technique ID.|
+|relatedUser|String|Details of user related to a specific alert.|
+|severity|Enum|Severity of the alert. Possible values are: 'UnSpecified', 'Informational', 'Low', 'Medium' and 'High'.|
+|status|Enum|Specifies the current status of the alert. Possible values are: 'Unknown', 'New', 'InProgress' and 'Resolved'.|
+|classification|Nullable Enum|Specification of the alert. Possible values are: `TruePositive`, `Informational, expected activity`, and `FalsePositive`.|
+|determination|Nullable Enum|Specifies the determination of the alert. <p>Possible determination values for each classification are: <br><li> <b>True positive</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) – consider changing the enum name in public api accordingly, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware), and `Other` (Other). <li> <b>Informational, expected activity:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) - consider changing the enum name in public api accordingly, and `Other` (Other). <li>  <b>False positive:</b> `Not malicious` (Clean) - consider changing the enum name in public api accordingly, `Not enough data to validate` (InsufficientData), and `Other` (Other).|
+|category|String|Category of the alert.|
+|detectionSource|String|Detection source.|
+|threatFamilyName|String|Threat family.|
+|threatName|String|Threat name.|
+|machineId|String|ID of a [machine](machine.md) entity that is associated with the alert.|
+|computerDnsName|String|[machine](machine.md) fully qualified name.|
+|aadTenantId|String|The Azure Active Directory ID.|
+|detectorId|String|The ID of the detector that triggered the alert.|
+|comments|List of Alert comments|Alert Comment object contains: comment string, createdBy string, and createTime date time.|
+|Evidence|List of Alert evidence|Evidence related to the alert. See example below.|
+
+>[!NOTE]
+>Around August 29, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
 
 ### Response example for getting single alert:
 

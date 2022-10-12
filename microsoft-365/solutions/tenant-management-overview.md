@@ -1,13 +1,14 @@
 ---
 title: Tenant management for Microsoft 365 for enterprise
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
-localization_priority: Normal
-ms.collection: 
+ms.service: o365-solutions
+ms.localizationpriority: medium
+ms.collection:
+- highpri
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
@@ -22,7 +23,7 @@ description: "An overview of the planning, deployment, and ongoing operation of 
 
 Creating a path to your organization's digital transformation with cloud computing requires a firm foundation upon which your workers can rely for productivity, collaboration, performance, privacy, compliance, and security.
 
-Correct configuration of your Microsoft 365 tenants provides that foundation, leaving your workers to focus on getting their work done and your IT department to focus on end-to-end solutions that provide additional business value. 
+Correct configuration of your Microsoft 365 tenants provides that foundation, leaving your workers to focus on getting their work done and your IT department to focus on end-to-end solutions that provide additional business value.
 
 This solution takes you through the configuration of that foundation in these steps:
 
@@ -38,13 +39,13 @@ But first, let's take a moment to understand what a tenant is and what a tenant 
 
 A Microsoft 365 tenant is a dedicated instance of the services of Microsoft 365 and your organization data stored within a specific default location, such as Europe or North America. This location is specified when you create the tenant for your organization. Each Microsoft 365 tenant is distinct, unique, and separate from all other Microsoft 365 tenants. You create a Microsoft 365 tenant when you purchase one or more products from Microsoft, such as Microsoft 365 E3 or E5, and a set of licenses for each.
 
-Your Microsoft 365 tenant also includes an Azure Active Directory (Azure AD) tenant, which is a dedicated instance of Azure AD for user accounts, groups, and other objects. Each Azure AD tenant is distinct, unique, and separate from all other Azure AD tenants. While your organization can have multiple Azure AD tenants that you can set up with Azure subscriptions, Microsoft 365 tenants can only use a single Azure AD tenant, the one that was created when you created the tenant. 
+Your Microsoft 365 tenant also includes an Azure Active Directory (Azure AD) tenant, which is a dedicated instance of Azure AD for user accounts, groups, and other objects. Each Azure AD tenant is distinct, unique, and separate from all other Azure AD tenants. While your organization can have multiple Azure AD tenants that you can set up with Azure subscriptions, Microsoft 365 tenants can only use a single Azure AD tenant, the one that was created when you created the tenant.
 
 Here is an example:
 
-![An example Microsoft 365 tenant with its Azure AD tenant](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![An example Microsoft 365 tenant with its Azure AD tenant.](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
-*Tenant management* is the planning, deployment, and ongoing operation of your Microsoft 365 tenants. 
+*Tenant management* is the planning, deployment, and ongoing operation of your Microsoft 365 tenants.
 
 ## Attributes of a well-designed and operating tenant
 
@@ -72,7 +73,7 @@ Here are the elements:
 
 Here is an example of a Microsoft 365 tenant with all these elements in place.
 
-![An example Microsoft 365 tenant](../media/tenant-management-overview/tenant-management-tenant-config.png)
+![An example Microsoft 365 tenant.](../media/tenant-management-overview/tenant-management-tenant-config.png)
 
 In this illustration, the Microsoft 365 tenant includes:
 
@@ -87,48 +88,48 @@ The following sections and table list the key capabilities and licensing for the
 
 ### Tenant
 
-| Capability or feature | Description | Licensing |
-|:-------|:-----|:-------|
-| Multiple tenants | Each Microsoft 365 tenant is distinct, unique, and separate from all other Microsoft 365 tenants. With multiple tenants, there are restrictions and additional considerations when managing them and providing services to your users. | Microsoft 365 E3 or E5 | 
-| Cross-tenant mailbox migration | Tenant administrators can move mailboxes between tenants with minimal infrastructure dependencies in their on-premises systems. This removes the need to off-board and onboard mailboxes. | Microsoft 365 E3 or E5 | 
-| Multi-Geo | Your tenant can store data at rest in the other datacenter geo locations that you've chosen to meet data residency requirements. | Microsoft 365 E3 or E5 | 
-| Move core data to a new datacenter geo | As Microsoft adds new datacenter geos for additional capacity and compute resources, you can request a datacenter geo move for in-geo data residency for your core customer data. | Microsoft 365 E3 or E5 | 
+|Capability or feature|Description|Licensing|
+|---|---|---|
+|Multiple tenants|Each Microsoft 365 tenant is distinct, unique, and separate from all other Microsoft 365 tenants. With multiple tenants, there are restrictions and additional considerations when managing them and providing services to your users.|Microsoft 365 E3 or E5|
+|Cross-tenant mailbox migration|Tenant administrators can move mailboxes between tenants with minimal infrastructure dependencies in their on-premises systems. This removes the need to off-board and onboard mailboxes.|Microsoft 365 E3 or E5|
+|Multi-Geo|Your tenant can store data at rest in the other datacenter geo locations that you've chosen to meet data residency requirements.|Microsoft 365 E3 or E5|
+|Move core data to a new datacenter geo|As Microsoft adds new datacenter geos for additional capacity and compute resources, you can request a datacenter geo move for in-geo data residency for your core customer data.|Microsoft 365 E3 or E5|
 ||||
 
 ### Networking
 
-| Capability or feature | Description | Licensing |
-|:-------|:-----|:-------|
-| Network Insights | Network performance metrics collected from your Microsoft 365 tenant to help you design network perimeters for your office locations. | Microsoft 365 E3 or E5 | 
-| Automate endpoint updates | Automate the configuration and ongoing updates for Microsoft 365 endpoints in your client PAC files and network devices and services. | Microsoft 365 E3 or E5 | 
+|Capability or feature|Description|Licensing|
+|---|---|---|
+|Network Insights|Network performance metrics collected from your Microsoft 365 tenant to help you design network perimeters for your office locations.|Microsoft 365 E3 or E5|
+|Automate endpoint updates|Automate the configuration and ongoing updates for Microsoft 365 endpoints in your client PAC files and network devices and services.|Microsoft 365 E3 or E5|
 ||||
 
 ### Identity
 
-| Capability or feature | Description | Licensing |
-|:-------|:-----|:-------|
-| Synchronize on-premises Active Directory Domain Services (AD DS) with your Azure AD tenant	| Leverage your on-premises identity provider for user accounts, groups, and other objects.	| Microsoft 365 E3 or E5 |
-| MFA enforced with security defaults	| Protect against compromised identities and devices by requiring a second form of authentication for sign-ins. Security defaults requires MFA for all user accounts.	| Microsoft 365 E3 or E5 |
-| MFA enforced with Conditional Access| Require MFA based on the attributes of the sign-in with Conditional Access policies.	| Microsoft 365 E3 or E5 | 
-| MFA enforced with risk-based Conditional Access	| Require MFA based on the risk of the user sign-in with Microsoft Defender for Identity. | Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses | 
-| Self-Service Password Reset (SSPR)	| Allow your users to reset or unlock their passwords or accounts.	| Microsoft 365 E3 or E5 |
+|Capability or feature|Description|Licensing|
+|---|---|---|
+|Synchronize on-premises Active Directory Domain Services (AD DS) with your Azure AD tenant|Leverage your on-premises identity provider for user accounts, groups, and other objects.|Microsoft 365 E3 or E5|
+|MFA enforced with security defaults|Protect against compromised identities and devices by requiring a second form of authentication for sign-ins. Security defaults requires MFA for all user accounts.|Microsoft 365 E3 or E5|
+|MFA enforced with Conditional Access|Require MFA based on the attributes of the sign-in with Conditional Access policies.|Microsoft 365 E3 or E5|
+|MFA enforced with risk-based Conditional Access|Require MFA based on the risk of the user sign-in with Microsoft Defender for Identity.|Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses|
+|Self-Service Password Reset (SSPR)|Allow your users to reset or unlock their passwords or accounts.|Microsoft 365 E3 or E5|
 ||||
 
 ### Migration
 
-| Capability or feature | Description | Licensing |
-|:-------|:-----|:-------|
-| Migrate to Windows 10 | Migrate your devices that run Windows 7 or Windows 8.1 to Windows 10 Enterprise. | Windows 10 Enterprise licenses included with Microsoft 365 E3 or E5 | 
-| Migrate to Microsoft 365 Apps for enterprise | Migrate your Office client apps such as Word and PowerPoint to the versions installed from the cloud that are updated with new features. | Microsoft 365 E3 or E5 | 
-| Migrate on-premises servers and data to Microsoft 365 | Migrate your Exchange mailboxes, SharePoint sites, and Skype for Business Online to Microsoft 365 cloud services. | Microsoft 365 E3 or E5 | 
+|Capability or feature|Description|Licensing|
+|---|---|---|
+|Migrate to Windows 10|Migrate your devices that run Windows 7 or Windows 8.1 to Windows 10 Enterprise.|Windows 10 Enterprise licenses included with Microsoft 365 E3 or E5|
+|Migrate to Microsoft 365 Apps for enterprise|Migrate your Office client apps such as Word and PowerPoint to the versions installed from the cloud that are updated with new features.|Microsoft 365 E3 or E5|
+|Migrate on-premises servers and data to Microsoft 365|Migrate your Exchange mailboxes, SharePoint sites, and Skype for Business Online to Microsoft 365 cloud services.|Microsoft 365 E3 or E5|
 ||||
 
 ### Device and app management
 
-| Capability or feature | Description | Licensing |
-|:-------|:-----|:-------|
-| Microsoft Intune | A cloud-based service that provides mobile device management (MDM) and mobile application management (MAM) to control how your organization’s application and the devices are used, including mobile phones, tablets, and laptops.	| Microsoft 365 E3 or E5 | 
-| Basic Mobility and Security | Secure and manage your users' mobile devices like iPhones, iPads, Androids, and Windows phones with this built-in service.	| Microsoft 365 E3 or E5 | 
+|Capability or feature|Description|Licensing|
+|---|---|---|
+|Microsoft Intune|A cloud-based service that provides mobile device management (MDM) and mobile application management (MAM) to control how your organization’s application and the devices are used, including mobile phones, tablets, and laptops.|Microsoft 365 E3 or E5|
+|Basic Mobility and Security|Secure and manage your users' mobile devices like iPhones, iPads, Androids, and Windows phones with this built-in service.|Microsoft 365 E3 or E5|
 ||||
 
 ## Next steps
@@ -141,7 +142,7 @@ Use these steps to set up and manage your Microsoft 365 tenants.
 4. [Migrate your on-premises Office servers and data](tenant-management-migration.md)
 5. [Deploy device and app management](tenant-management-device-management.md)
 
-[![The steps to deploy and manage a Microsoft 365 tenant](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
+[![The steps to deploy and manage a Microsoft 365 tenant.](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
 
 Each step describes deployment options, summarizes the results, and ongoing maintenance tasks.
 

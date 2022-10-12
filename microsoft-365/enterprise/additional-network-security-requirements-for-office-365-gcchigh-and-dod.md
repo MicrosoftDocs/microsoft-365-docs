@@ -6,8 +6,8 @@ manager: dzazzo
 ms.date: 05/19/2020
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -57,9 +57,9 @@ The body of your message should include the following data:
 
 For security and compliance reasons, keep in mind the following restrictions on your request:
 
-* There is a four subnet limitation per tenant
+* There's a four subnet limitation per tenant
 * Subnets must be in CIDR Notation (for example, 10.1.1.0/28)
-* Subnet ranges cannot be larger than /24
+* Subnet ranges can’t be larger than /24
 * We **cannot** accommodate requests to allow access to commercial cloud services (commercial Office 365, Google G-Suite, Amazon Web Services, etc.)
 
-Once your request has been received and approved by Microsoft, there is a three-week SLA for implementation and cannot be expedited.  You will receive an initial acknowledgment when we’ve received your request and a final acknowledgment once it has been completed.
+Once your request has been received and approved by Microsoft, there's a three-week SLA for implementation and can’t be expedited.  You'll receive an initial acknowledgment when we’ve received your request and a final acknowledgment once it has been completed.

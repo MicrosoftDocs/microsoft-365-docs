@@ -1,26 +1,31 @@
 ---
-title: Export documents to your organization's Azure Storage account
+title: Export documents to an organization Azure Storage account
+description: "Export documents in a review set to an Azure Storage account and then use Azure Storage Explorer to download them to a local computer."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance 
+ms.localizationpriority: medium
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
 ms.custom: seo-marvel-mar2020
-description: "Export documents in a review set to an Azure Storage account and then use Azure Storage Explorer to download them to a local computer."
 ---
 
 # Export documents in a review set to an Azure Storage account
 
-When you export documents from a review set in an Advanced eDiscovery case, you have the option to export them to an Azure Storage account managed by your organization. If you use this option, the documents are uploaded to your Azure Storage location. After they are exported, you can access the documents (and download them to a local computer or other location) by using the Azure Storage Explorer. This article provides instructions for how to export documents to your Azure Storage account and the use the Azure Storage Explorer to connect to an Azure Storage location to download the exported documents. For more information about Azure Storage Explorer, see [Use Azure Storage Explorer](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
+When you export documents from a review set in an eDiscovery (Premium) case, you have the option to export them to an Azure Storage account managed by your organization. If you use this option, the documents are uploaded to your Azure Storage location. After they are exported, you can access the documents (and download them to a local computer or other location) by using the Azure Storage Explorer. This article provides instructions for how to export documents to your Azure Storage account and the use the Azure Storage Explorer to connect to an Azure Storage location to download the exported documents. For more information about Azure Storage Explorer, see [Use Azure Storage Explorer](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you export documents from a review set
 
@@ -36,7 +41,7 @@ When you export documents from a review set in an Advanced eDiscovery case, you 
 
 The first step is to create an export job to export documents out of a review set. For more detailed instructions about all the export options, see [Export documents from a review set](export-documents-from-review-set.md). The following procedure highlights the settings to export documents to your organization's Azure Storage account.
 
-1. In the Microsoft 365 compliance center, open the Advanced eDiscovery case, select the **Review sets** tab, and then select the review set that you want to export.
+1. In the Microsoft Purview compliance portal, open the eDiscovery (Premium) case, select the **Review sets** tab, and then select the review set that you want to export.
 
 2. In the review set, click **Action** > **Export**.
 
@@ -48,7 +53,7 @@ The first step is to create an export job to export documents out of a review se
 
 6. Paste the container URL and the SAS token for your storage account in the corresponding fields.
 
-   ![Paste the connection URL and the SAS token in the corresponding fields](../media/AzureStorageOutputOptions.png)
+   ![Paste the connection URL and the SAS token in the corresponding fields.](../media/AzureStorageOutputOptions.png)
 
 7. Click **Export** to create the export job.
 
@@ -56,13 +61,13 @@ The first step is to create an export job to export documents out of a review se
 
 The next step is to obtain the SAS URL that's generated after you create the export job in Step 1. You use the SAS URL to connect to the container in your Azure Storage account that you exported the review set documents to.
 
-1. On the **Advanced eDiscovery** page, go to the case, and then click the **Exports** tab.
+1. On the **eDiscovery (Premium)** page, go to the case, and then click the **Exports** tab.
 
 2. On the **Exports** tab, click the export job that you want to download. This is the export job that you created in Step 1.
 
 3. On the flyout page, under **Locations**, copy the SAS URL that's displayed. If necessary, you can save it to a text file so you can access it in Step 3.
 
-   ![Copy the SAS URL displayed under Locations](../media/eDiscoExportJob.png)
+   ![Copy the SAS URL displayed under Locations.](../media/eDiscoExportJob.png)
 
    > [!TIP]
    > The SAS URL that's displayed in the export job is a concatenation of the container URL and the SAS token for your Azure Storage account. You can copy it from the export job or create it yourself by combining the URL and the SAS token.
@@ -75,7 +80,7 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
 2. Click the **Open Connect Dialog** icon.
 
-   ![Click the Add account icon](../media/AzureStorageConnect.png)
+   ![Click the Add account icon.](../media/AzureStorageConnect.png)
 
 3. On the **Connect to Azure Storage** page, click **Blob container**.
 
@@ -83,7 +88,7 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
 5. On the **Enter Connection Info** page, paste the SAS URL (that you obtained in the export job in Step 2) in the **Blob Container SAS URL** box.
 
-    ![Paste the SAS URL in the URI box](../media/AzureStorageConnect3.png)
+    ![Paste the SAS URL in the URI box.](../media/AzureStorageConnect3.png)
 
     Notice that the container name is displayed in the **Display name** box. You can edit this name.
 
@@ -91,15 +96,15 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
     The **Blob containers** node (under **Storage Accounts** > **(Attached Containers)** \> is opened.
 
-    ![Export jobs in the Blobs containers node](../media/AzureStorageConnect5.png)
+    ![Export jobs in the Blobs containers node.](../media/AzureStorageConnect5.png)
 
-    It contains a container named with the display name from step 5. This container contains a folder for each export job that you've downloaded to the container in your Azure Storage account. These folders are named with an ID that corresponds to the ID of the export job. You can find these export IDs (and the name of the export) under **Support information** on the flyout page for each **Preparing data for export** job listed on the **Jobs** tab in the Advanced eDiscovery case.
+    It contains a container named with the display name from step 5. This container contains a folder for each export job that you've downloaded to the container in your Azure Storage account. These folders are named with an ID that corresponds to the ID of the export job. You can find these export IDs (and the name of the export) under **Support information** on the flyout page for each **Preparing data for export** job listed on the **Jobs** tab in the eDiscovery (Premium) case.
 
 7. Double-click the export job folder to open it.
 
    A list of folders and export reports is displayed.
 
-    ![The export folder contains exported files and export reports](../media/AzureStorageConnect6.png)
+    ![The export folder contains exported files and export reports.](../media/AzureStorageConnect6.png)
 
 8. To export all contents from the export job, click the **Up** arrow to go back to the export job folder, and then click **Download**.
 
@@ -114,7 +119,7 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
 - The export job folder contains the following items. The actual items in the export folder are determined by the export options configured when the export job was created. For more information about these options, see [Export documents from a review set](export-documents-from-review-set.md).
 
-  - Export_load_file.csv: This CSV file is a detail export report that contains information about each exported document. The file consists of a column for each metadata property for a document. For a list and description of the metadata that's included in this report, see the **Exported field name** column in the table in [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-advanced-ediscovery.md).
+  - Export_load_file.csv: This CSV file is a detail export report that contains information about each exported document. The file consists of a column for each metadata property for a document. For a list and description of the metadata that's included in this report, see the **Exported field name** column in the table in [Document metadata fields in eDiscovery (Premium)](document-metadata-fields-in-advanced-ediscovery.md).
 
   - Summary.txt: A text file that contains a summary of the export including export statistics.
 

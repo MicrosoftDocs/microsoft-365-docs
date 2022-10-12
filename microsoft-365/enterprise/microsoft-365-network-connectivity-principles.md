@@ -1,14 +1,15 @@
 ---
-title: "Microsoft 365 network connectivity principles"
+title: Microsoft 365 network connectivity principles
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 6/23/2020
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
-localization_priority: Priority
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 search.appverid: MET150
@@ -58,7 +59,7 @@ The primary goal in the network design should be to minimize latency by reducing
 <a name="BKMK_P1"> </a>
 ### Identify and differentiate Microsoft 365 traffic
 
-![Identify Microsoft 365 traffic](../media/621aaec9-971d-4f19-907a-1ae2ef6d72fc.png)
+![Identify Microsoft 365 traffic.](../media/621aaec9-971d-4f19-907a-1ae2ef6d72fc.png)
   
 Identifying Microsoft 365 network traffic is the first step in being able to differentiate that traffic from generic Internet-bound network traffic. Microsoft 365 connectivity can be optimized by implementing a combination of approaches like network route optimization, firewall rules, browser proxy settings, and bypass of network inspection devices for certain endpoints.
   
@@ -71,7 +72,7 @@ Microsoft now publishes all Microsoft 365 endpoints as a web service and provide
 <a name="BKMK_P2"> </a>
 ### Egress network connections locally
 
-![Egress network connections locally](../media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
+![Egress network connections locally.](../media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
   
 Local DNS and Internet egress is of critical importance for reducing connection latency and ensuring that user connections are made to the nearest point of entry to Microsoft 365 services. In a complex network topology, it is important to implement both local DNS and local Internet egress together. For more information about how Microsoft 365 routes client connections to the nearest point of entry, see the article [Client Connectivity](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b).
   
@@ -81,11 +82,11 @@ In a traditional network architecture, all outbound Internet connections travers
   
 Enterprise WANs are often designed to backhaul network traffic to a central company head office for inspection before egress to the Internet, usually through one or more proxy servers. The diagram below illustrates such a network topology.
   
-![Traditional enterprise network model](../media/fc87b8fd-a191-47a7-9704-1e445599813a.png)
+![Traditional enterprise network model.](../media/fc87b8fd-a191-47a7-9704-1e445599813a.png)
   
 Because Microsoft 365 runs on the Microsoft Global Network, which includes front-end servers around the world, there will often be a front-end server close to the user's location. By providing local Internet egress and by configuring internal DNS servers to provide local name resolution for Microsoft 365 endpoints, network traffic destined for Microsoft 365 can connect to Microsoft 365 front end servers as close as possible to the user. The diagram below shows an example of a network topology that allows users connecting from main office, branch office, and remote locations to follow the shortest route to the closest Microsoft 365 entry point.
   
-![WAN network model with regional egress points](../media/4d4c07cc-a928-42b8-9a54-6c3741380a33.png)
+![WAN network model with regional egress points.](../media/4d4c07cc-a928-42b8-9a54-6c3741380a33.png)
   
 Shortening the network path to Microsoft 365 entry points in this way can improve connectivity performance and the end-user experience in Microsoft 365, and can also help to reduce the impact of future changes to the network architecture on Microsoft 365 performance and reliability.
   
@@ -93,7 +94,7 @@ Also, DNS requests can introduce latency if the responding DNS server is distant
   
 While regional egress can work well for Microsoft 365, the optimum connectivity model would be to always provide network egress at the user's location, regardless of whether this is on the corporate network or remote locations such as homes, hotels, coffee shops, and airports. This local direct egress model is represented in the diagram below.
   
-![Local egress network architecture](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
+![Local egress network architecture.](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
   
 Enterprises who have adopted Microsoft 365 can take advantage of the Microsoft Global Network's Distributed Service Front Door architecture by ensuring that user connections to Microsoft 365 take the shortest possible route to the nearest Microsoft Global Network entry point. The local egress network architecture does this by allowing Microsoft 365 traffic to be routed over the nearest egress, regardless of user location.
   
@@ -106,9 +107,9 @@ The local egress architecture has the following benefits over the traditional mo
 <a name="BKMK_P3"> </a>
 ### Avoid network hairpins
 
-![Avoid hairpins](../media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
+![Avoid hairpins.](../media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
   
-As a general rule of thumb, the shortest, most direct route between user and closest Microsoft 365 endpoint will offer the best performance. A network hairpin happens when WAN or VPN traffic bound for a particular destination is first directed to another intermediate location (such as security stack, cloud access broker, of cloud-based web gateway), introducing latency and potential redirection to a geographically distant endpoint. Network hairpins can also be caused by routing/peering inefficiencies or suboptimal (remote) DNS lookups.
+As a general rule of thumb, the shortest, most direct route between user and closest Microsoft 365 endpoint will offer the best performance. A network hairpin happens when WAN or VPN traffic bound for a particular destination is first directed to another intermediate location (such as security stack, cloud access broker, or cloud-based web gateway), introducing latency and potential redirection to a geographically distant endpoint. Network hairpins can also be caused by routing/peering inefficiencies or suboptimal (remote) DNS lookups.
   
 To ensure that Microsoft 365 connectivity is not subject to network hairpins even in the local egress case, check whether the ISP that is used to provide Internet egress for the user location has a direct peering relationship with the Microsoft Global Network in close proximity to that location. You may also want to configure egress routing to send trusted Microsoft 365 traffic directly, as opposed to proxying or tunneling through a third-party cloud or cloud-based network security vendor that processes your Internet-bound traffic. Local DNS name resolution of Microsoft 365 endpoints helps to ensure that in addition to direct routing, the closest Microsoft 365 entry points are being used for user connections.
   
@@ -119,7 +120,7 @@ Due to the large number of distributed locations with Microsoft 365 entry points
 <a name="BKMK_P4"> </a>
 ### Assess bypassing proxies, traffic inspection devices, and duplicate security technologies
 
-![Bypass proxies, traffic inspection devices, and duplicate security technologies](../media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
+![Bypass proxies, traffic inspection devices, and duplicate security technologies.](../media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
   
 Enterprise customers should review their network security and risk reduction methods specifically for Microsoft 365 bound traffic and use Microsoft 365 security features to reduce their reliance on intrusive, performance impacting, and expensive network security technologies for Microsoft 365 network traffic.
   
@@ -138,7 +139,7 @@ Microsoft 365 administrators can create PAC (Proxy Automatic Configuration) scri
 #### Microsoft 365 security features
 <a name="BKMK_WebSvc"> </a>
 
-Microsoft is transparent about datacenter security, operational security, and risk reduction around Microsoft 365 servers and the network endpoints that they represent. Microsoft 365 built-in security features are available for reducing network security risk, such as Data Loss Prevention, Anti-Virus, Multi-Factor Authentication, Customer Lock Box, Defender for Office 365, Microsoft 365 Threat Intelligence, Microsoft 365 Secure Score, Exchange Online Protection, and Network DDOS Security.
+Microsoft is transparent about datacenter security, operational security, and risk reduction around Microsoft 365 servers and the network endpoints that they represent. Microsoft 365 built-in security features are available for reducing network security risk, such as Microsoft Purview Data Loss Prevention, Anti-Virus, Multi-Factor Authentication, Customer Lock Box, Defender for Office 365, Microsoft 365 Threat Intelligence, Microsoft 365 Secure Score, Exchange Online Protection, and Network DDOS Security.
   
 For more information on Microsoft datacenter and Global Network security, see the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/security).
   
@@ -184,7 +185,7 @@ In the new model, endpoints are segregated into three categories, **Optimize**, 
   - Ensure that IP addresses returned by DNS name resolution match the routing egress path for these endpoints.
   - Prioritize these endpoints for SD-WAN integration for direct, minimal latency routing into the nearest Internet peering point of the Microsoft global network.
 
-- **Default** endpoints represent Office 365 services and dependencies that do not require any optimization, and can be treated by customer networks as normal Internet bound traffic. Some endpoints in this category may not be hosted in Microsoft datacenters. Examples include  *https://odc.officeapps.live.com*  and  *https://appexsin.stb.s-msn.com*.
+- **Default** endpoints represent Office 365 services and dependencies that do not require any optimization, and can be treated by customer networks as normal Internet bound traffic. Some endpoints in this category may not be hosted in Microsoft datacenters. Examples include  *https://odc.officeapps.live.com*  and  *`https://appexsin.stb.s-msn.com`*.
 
 For more information about Office 365 network optimization techniques, see the article [Managing Office 365 endpoints](managing-office-365-endpoints.md).
   
@@ -202,8 +203,8 @@ Microsoft offers a wide range of Microsoft 365 security features and provides pr
 - **Use multi-factor authentication (MFA)**
     MFA adds an additional layer of protection to a strong password strategy by requiring users to acknowledge a phone call, text message, or an app notification on their smart phone after correctly entering their password.
 
-- **Use Microsoft Cloud App Security**
-    Configure policies to track anomalous activity and act on it. Set up alerts with Microsoft Cloud App Security so that admins can review unusual or risky user activity, such as downloading large amounts of data, multiple failed sign-in attempts, or connections from a unknown or dangerous IP addresses.
+- **Use Microsoft Defender for Cloud Apps**
+    Configure policies to track anomalous activity and act on it. Set up alerts with Microsoft Defender for Cloud Apps so that admins can review unusual or risky user activity, such as downloading large amounts of data, multiple failed sign-in attempts, or connections from a unknown or dangerous IP addresses.
 
 - **Configure Data Loss Prevention (DLP)**
     DLP allows you to identify sensitive data and create policies that help prevent your users from accidentally or intentionally sharing the data. DLP works across Microsoft 365 including Exchange Online, SharePoint Online, and OneDrive so that your users can stay compliant without interrupting their workflow.
@@ -228,7 +229,7 @@ A holistic approach to enhanced security should include consideration of the fol
   - Ensures local egress for Microsoft 365 traffic
 - Improvements can be addressed incrementally as described in the [Incremental optimization](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt) section. Some optimization techniques may offer better cost/benefit ratios depending on your network architecture, and you should choose optimizations that make the most sense for your organization.
 
-For more information on Microsoft 365 security and compliance, see the articles [Microsoft 365 security](../security/index.yml) and [Microsoft 365 compliance](../compliance/index.yml).
+For more information on Microsoft 365 security and compliance, see the articles [Microsoft 365 security](../security/index.yml) and [Microsoft Purview](../compliance/index.yml).
   
 ## Incremental optimization
 <a name="BKMK_IncOpt"> </a>

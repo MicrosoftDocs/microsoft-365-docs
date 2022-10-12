@@ -2,131 +2,184 @@
 title: "Understand your bill or invoice for Microsoft 365 for business"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri 
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_billing
+- VSBFY23
 - TopSMBIssues
 - okr_smb
 - AdminSurgePortfolio
-- commerce_billing
 - AdminTemplateSet
 search.appverid: MET150
-description: "Interpret charges, billing, and payment info on your Microsoft 365 for business bill or invoice, and how to change a purchase order number."
-ms.date: 05/04/2021
+description: "Learn how to interpret charges, billing, and payment info on your Microsoft 365 for business bill or invoice."
+ms.date: 05/24/2022
 ---
 
 # Understand your bill or invoice for Microsoft 365 for business
 
-> [!IMPORTANT]
-> As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you’re an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.
+Your bill or invoice provides a summary of charges for your subscription and includes instructions for how to make a payment.
 
-Either monthly or annually (depending on the option you chose when you purchased your subscription), you'll receive an email that tells you that your new billing statement is available in the admin center. [Learn how to find and view your bill or invoice](view-your-bill-or-invoice.md).
-  
-Your invoice contains two pages. Page 1 is the invoice summary, and contains general information about the invoice, order, amount due, how to make a payment, and how to contact support.
-  
-![Page 1 of a sample invoice.](../../media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
-  
-Page 2 contains details about the billing activity for each subscription.
-  
-![Page 2 of a sample invoice.](../../media/808195cb-b1d2-4492-a748-29671ccecdd2.png)
-  
-For descriptions of the fields and terms included in your invoice, see the [Invoice Field Glossary](#invoice-field-glossary) later in this article.
-  
-## Understand billing concepts
-
-Before you view your invoice, it's helpful to understand a few key billing concepts.
-  
-### Invoice balance vs. order balance
-
- **Invoice balance** is the amount shown on your invoice, and is only the amount due for that particular billing period. Your total **order balance** is the sum of all unpaid invoices. You can view your order balance in the **Billing** section of the admin center.
-  
-### Billing frequency vs. invoice frequency
-
- **Billing frequency** means how often you are billed. Subscriptions are billed either monthly or annually, depending on what option you chose during the subscription purchase. **Invoice frequency** means how often you receive an invoice. If you chose annual billing, you'll only receive one invoice per year, unless activity for your subscription requires a charge or a credit.
-  
-If you have more than one order, you'll receive an invoice for each order.
-  
-## Invoice Field Glossary
-
-The following table describes the fields you might see on your invoice. Some fields listed here might not appear in your invoice, depending on whether you pay by invoice or by credit card or bank account.
-  
 > [!NOTE]
-> Paying by bank account is not available in some countries or regions.
-  
-|**Name**|**Description**|
-|:-----|:-----|
-|Annual Price|Subscriptions are billed monthly or annually. If you chose annual billing during the subscription purchase, the annual license price is reflected on the invoice. If you want to change the billing frequency, you'll have to cancel your subscription and repurchase it with the new billing frequency.|
-|Billing Period|Billing Period is the time period since the last invoice date. Service Period is the time period during which you are charged to use the service.|
-|Bill-To|This is the address of your billing department, and is usually the same as the Sold-To address. To update your billing address, see [Change your billing addresses](change-your-billing-addresses.md).|
-|Charges|Page 1 of your invoice summarizes all charges for the invoice Billing Period. Page 2 shows the detailed charges for each subscription.|
-|Check|If you pay by invoice and check payment is offered in your country, the bottom of page 1 includes information about where to send your payment. Please reference the invoice number on your check.|
-|Credits|Page 1 of your invoice summarizes all credits for the invoice Billing Period. Page 2 shows the detailed credits for each subscription.|
-|Customer PO Number|Your Purchase Order (PO) number. If you update the PO number, future invoices will include it. [Change your purchase order number](#change-your-purchase-order-number). <br/> **NOTE** You can't add a PO number to an existing invoice.           |
-|Days|Each billing transaction is associated with a Service Period. The Days column indicates the number of days in that service period.|
-|Discounts|Page 1 of your invoice summarizes all discounts for the invoice Billing Period. Page 2 shows the detailed discounts for each subscription.|
-|Due Date|The date when payment is due for the invoice. If your subscription is paid with a credit card or bank account, we will charge your credit card or banking account the day after the Invoice Date. <br/> **NOTE** Paying by bank account is not available in some countries or regions.           |
-|Electronic Funds Transfer|If you chose "invoice" as the subscription payment method, page 1 contains the Microsoft bank account information for electronic (wire, ACH, SEPA, etc.) payments. Usually, your bank will have a reference field you complete when you send a payment. Please reference the invoice number shown in this field.|
-|Grand Total|This row includes the totals for all Charges, Discounts, Credits, SubTotal, Tax, and Total columns for all subscriptions listed on the invoice.|
-|Invoice Date|The date the invoice was created. The invoice date is the day after the end of your Billing Period. For example, if your Billing Period is Jan 15 - Feb 14, your Invoice Date is Feb 15.|
-|Invoice Number|The unique number assigned to your invoice. Please reference the Invoice Number with your payment.|
-|Monthly Price|Subscriptions are billed monthly or annually. If you chose monthly billing during the subscription purchase, the monthly license price is reflected on the invoice. If you want to change the billing frequency, you'll have to cancel your subscription and repurchase it with the new billing frequency.|
-|Order Number|Every time you buy a new subscription, an order is created. Every month, you'll receive an invoice for each order.|
-|Payment Instructions|If you pay by credit card, you'll see "Do not pay - charged to credit card on file." If you pay by invoice, you'll see instructions for paying by Electronic Funds Transfer (EFT) and check (if applicable).|
-|Payment Terms|The number of days from the Invoice Date when payment is due. The standard is 30 days.|
-|Product|On page 1 of your invoice, "Online Services" is the generic term used to describe your subscriptions. On page 2 , you'll see the individual subscription names.|
-|QTY|The number of licenses purchased during the Service Period.|
-|Service Period|Service Period is the time period during which you are charged to use the service. A Billing Period is the time period since the last invoice date.|
-|Service Usage Address|The address where the service is being used, usually the same as your Sold-To address. To update your Service Usage Address, see [Change your billing addresses](change-your-billing-addresses.md).|
-|Sold-To|Your company name and address. To update this information, see [Change your organization's address, technical contact email, and other information](../../admin/manage/change-address-contact-and-more.md).|
-|SubTotal|Each subscription listed on your invoice has a separate SubTotal row for all Charges, Discounts, Credits, SubTotal, Tax, and Total columns for that subscription.|
-|Tax|Page 1 of your invoice shows the total tax. Page 2 shows the tax rate applied, and the total tax amount for each line item. If your invoice contains taxes and your company is tax exempt, please [contact support](../../business-video/get-help-support.md).|
-|Total|The amount due for the invoice Billing Period.|
+> If you have other subscriptions instead of or in addition to Microsoft 365, see [Understand your bill or invoice](understand-your-invoice.md).
+
+## Watch: Understand your bill or invoice
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2209539).
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53wxS?autoplay=false]
+
+## How often and when am I billed?
+
+Depending on the billing frequency you chose when you bought your subscription, you receive an invoice either monthly or annually. The amount of time since the last invoice date is called the *Billing Period* and is on page one of the invoice. This time represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
+
+Starting on page two of the invoice, you see the charges grouped by their *Service Period*. The service period is the date range during which you're charged to use the service.
+
+At the end of each billing period, you receive an email that says your new invoice is ready to view or download in the Microsoft 365 admin center. If you have more than one order, you receive an invoice for each order. Learn how to [find and view your bill or invoice](view-your-bill-or-invoice.md).
+
+## Why is my total due different from last month?
+
+The amount billed for your subscription reflects the license price multiplied by the number of licenses purchased and any required taxes or fees.
+
+If the amount billed is different than expected, that can happen for few reasons:
+
+- You added or removed licenses from your subscription. Licenses changed mid-term are reflected on the next invoice. You might see a credit and rebill for the previous service period to account for this change. For details about what this looks like in your invoice, see [Page two](#page-two) below.
+- The subscription was canceled. You receive an invoice after cancellation with any outstanding balance minus any credits.
+- Your subscription renewed for a new term and the license price changed.
+
+## Overview of the invoice .PDF
+
+Your invoice is a .PDF that contains at least two pages. [Page one](#page-one) is the billing summary, and contains general information about the invoice, order, amount due, and payment instructions, if applicable.
+
+:::image type="content" source="../../media/understand-your-invoice2/invoice-page-1.png" alt-text="Page one of the invoice .PDF that shows the high-level information about your order.":::
+
+[Page two](#page-two) contains details about the billing activity for each subscription during the service period.
+
+:::image type="content" source="../../media/understand-your-invoice2/invoice-page-2.png" alt-text="Page two of the invoice .PDF that shows billing activity for each subscription.":::
+
+## Header
+
+The header appears at the top of every invoice page, and includes the month of service, and the **Invoice Date**, which is the date Microsoft created the invoice. The invoice is created the day after the end of your billing period. For example, if your billing period is January 15—February 14, your invoice date is February 15.
+
+The header also includes an **Invoice Number**, the unique number assigned to your invoice. If you pay by Electronic Funds Transfer (EFT) or check, include the invoice number with your payment.
+
+Finally, the header includes the **Due Date** for payment of the invoice, and shows the total amount due. If you pay for your subscription with a credit card or bank account, we charge your card or account the day after the invoice date.
+
+## Footer
+
+The footer appears at the bottom of every invoice page and includes Microsoft business center address. Based on your country or region, it might include other information like the phone number to call for billing or technical support, a link to online self-help articles, and the address and tax ID for Microsoft in your country or region.
+
+## Page one
+
+Page one of your invoice contains address information for your organization, high-level details about your order, a summary of invoice totals, and instructions about how to pay your invoice.
+
+:::image type="content" source="../../media/understand-your-invoice2/invoice-page1-details.png" alt-text="The main section on page one of the invoice.":::
+
+### Addresses
+
+Three addresses appear at the top of the first page. The **Sold-To** address is the name and address of the organization that bought the subscription. The **Bill-To** address is the address of your billing department. **Service Usage Address** is the address where the service is used. Usually, these addresses are the same. Depending on the size and configuration of your organization, these addresses might be different.
+
+To update the **Sold-To** address, see [Change your organization's address, technical contact, and more](../../admin/manage/change-address-contact-and-more.md)**. To update your Bill-To** or **Service Usage Address**, see [Change your billing addresses](change-your-billing-addresses.md).
+
+#### Order Details
+
+On page one of your invoice, the **Product** is "Online Services," the generic term we use to describe your subscription. Page two lists the individual products in your order.
+
+**Customer PO Number** is the purchase order (PO) number that you specify. You can't add a PO number to an existing invoice. If you update the PO number, it's included in future invoices. To change the PO number, see [Change your purchase order number](#change-your-purchase-order-number).
+
+**Order Number** is the globally unique identifier (GUID) that identifies your order. Every time you buy a new subscription, a new order with a new order number is created. You receive an invoice for each order every billing period.
+
+**Billing Period** is the period since the last invoice date.
+
+**Payment Terms** is the number of days from the invoice date when payment is due. The standard payment term is 30 days.
+
+**Due Date** is the date when the invoice payment is due. If your subscription is paid with a credit card or bank account, we charge your card or account the day after the Invoice Date.
+
+### Billing Summary
+
+Page one of your invoice shows the totals of the following items for the invoice billing period. Page two contains details for each category.
+
+- Charges
+- Discounts
+- Credits
+- Tax
+- Total
+
+### Payment Instructions
+
+If you pay by credit card, you see "Please DO NOT PAY. You will be charged the amount due through your selected method of payment." If you pay by invoice, this section contains instructions for paying by EFT or check.
+
+### Electronic Fund Transfer (EFT) and check
+
+If you chose "invoice" as your subscription payment method, page one contains the **Electronic Funds Transfer** section that shows the Microsoft bank account information for electronic payments (wire, ACH, SEPA, and so on). Usually, your bank has a reference field you complete when you send a payment. Make sure you reference the invoice number in that field.
+
+If we accept payments by check for your country or region, you also see a **Check** section that contains the payee name and mailing address. Make sure you reference your invoice number on the check.
+
+### Support
+
+In some countries or regions, the invoice has a **Support** section that includes instructions on how to view past invoices in the Microsoft 365 admin center. It also includes a link to self-help articles, and for some countries and regions, the support phone number.
+
+## Page two
+
+The product name for your subscription is at the top of page two. Below it is the formula that explains how the charges are calculated. If you have more than one product in your order, you see a separate section for each product and the associated charges.
+
+### New charges
+
+:::image type="content" source="../../media/understand-your-invoice2/invoice-new-charges.png" alt-text="The New charges section on page two of the invoice.":::
+
+The **New charges** section shows the service period during which charges, discounts, credits, and taxes were added. It shows the number of licenses included during the service period, the price per license, and the number of days in the service period.
+
+### Previous charges
+
+:::image type="content" source="../../media/understand-your-invoice2/invoice-previous-charges.png" alt-text="The Previous charges section on page two of the invoice.":::
+
+The **Previous charges** section shows a credit for charges you paid for the previous invoice. If you made a change during the previous billing period, your invoice includes the **Previous charges** section. For example, if you added or removed licenses mid-term, the **Previous charges** section shows the number of licenses for that service period, together with the monthly price per license, the number of days in the service period, the charges, and other amounts that apply.
+
+### Charges during this billing period
+
+:::image type="content" source="../../media/understand-your-invoice2/invoice-charges-this-period.png" alt-text="The Charges during this billing period section on page two of your invoice.":::
+
+The **Charges during this billing period** section shows changes to your subscription made during this billing period. If you made a change during the previous billing period, your invoice also includes the **Changes during this billing period** section. For example, if you added or removed licenses mid-term, the **Charges during this billing period** section lists the changes to the subscription and when they occurred. The charges or refunds owed to you because of those changes are prorated for the number of days affected during the billing period.
 
 ## Change your purchase order number
 
 If you pay by invoice, you can add or change the purchase order (PO) number for your subscription.
-  
+
 > [!NOTE]
 > You can't add a PO number to an existing invoice. The PO number will appear on all future invoices.
 
-::: moniker range="o365-worldwide"
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+2. On the **Products** tab, select the subscription that you want to change.
+3. On the subscription details page, in the **Subscription and payment settings** section, select **Edit invoice**.
+4. At the bottom of the **Edit details for paying by invoice** pane, enter your PO number, and then select **Save**.
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+## Run the Unknown Charge Diagnostic
 
-::: moniker-end
+As a Microsoft 365 Global admin, you can use a diagnostic tool that runs within the Microsoft 365 admin center to research unexpected charges from Microsoft that appear on your bank or credit card statement.
 
-::: moniker range="o365-germany"
+> [!NOTE]
+> The Unknown Charge Diagnostic is only available for customers who bought their products and services from Microsoft.com, including Microsoft 365 Enterprise, Education, and Non-profit.
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
+Select the **Run Tests** link below to open the diagnostic tool in the Microsoft 365 admin center.
 
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
-
-::: moniker-end
-
-1. On the **Products** tab, select the subscription that you want to change.
-
-1. On the subscription details page, in the **Subscription and payment settings** section, select **Edit invoice**.
-
-1. At the bottom of the **Edit details for paying by voice** pane, enter your PO number, and then select **Save**.
+>[!div class="nextstepaction"]
+>[Run Tests: Unknown Charge](https://aka.ms/PillarUnknownCharge)
 
 ## Related content
 
-[Learn how to find and view your bill or invoice](view-your-bill-or-invoice.md) (article)\
-[Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article) \
-[Change your billing addresses](change-your-billing-addresses.md) (article)\
-[Change your organization's address, technical contact email, and other information](../../admin/manage/change-address-contact-and-more.md) (article)\
+[View your bill or invoice](view-your-bill-or-invoice.md) (article)\
 [Pay for your Microsoft 365 for business subscription](pay-for-your-subscription.md) (article)\
+[Manage payment methods](manage-payment-methods.md) (article)\
+[Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article) \
 [Minecraft: Education Edition payment options](/education/windows/school-get-minecraft) (article)

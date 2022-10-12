@@ -2,13 +2,15 @@
 title: "Monitor Microsoft 365 connectivity"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 8/4/2020
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Ent_O365
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: 
@@ -31,7 +33,7 @@ Once you've deployed Microsoft 365, you can maintain Microsoft 365 connectivity 
 |Type of monitoring |Description |
 |:-----|:-----|
 |**Getting notified of new Microsoft 365 endpoints** <br/> |If you're [Managing Microsoft 365 endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), you'll want to receive notifications when we publish new endpoints, you can subscribe to our RSS feed using your favorite RSS reader. Here is how to [subscribe via Outlook](https://go.microsoft.com/fwlink/p/?LinkId=532416) or you can [have the RSS feed updates emailed to you](https://go.microsoft.com/fwlink/p/?LinkId=532417).  <br/> |
-|**Use System Center to Monitor Microsoft 365** <br/> |If you're using Microsoft System Center, you can download the [System Center Management Pack for Office 365](https://www.microsoft.com/download/details.aspx?id=43708) to begin monitoring Microsoft 365 today. For more detailed guidance, please see the management pack operations guide. <br/> |
+|**Use System Center to Monitor Microsoft 365** <br/> |If you're using Microsoft System Center, you can download the [Microsoft System Center Operations Manager Management Pack for Microsoft 365](https://www.microsoft.com/download/details.aspx?id=103379) to begin monitoring Microsoft 365 today. For more detailed guidance, please see the management pack operations guide. <br/> |
 |**Monitoring the health of Azure ExpressRoute** <br/> |If you are connecting to Microsoft 365 using Azure ExpressRoute for Microsoft 365, you'll want to ensure that you're using both the Microsoft 365 Service Health Dashboard as well as the Azure [Reducing troubleshooting time with Azure Resource health](https://azure.microsoft.com/blog/reduce-troubleshooting-time-with-azure-resource-health/) <br/> |
 |**Using Azure AD Connect Health with AD FS** <br/> |If you're using AD FS for Single Sign-On with Microsoft 365, you'll want to begin [using Azure AD Connect Health to monitor your AD FS infrastructure](/azure/active-directory/hybrid/how-to-connect-health-adfs).  <br/> |
 |**Programmatically monitor Microsoft 365** <br/> |Refer to our guidance on the [Microsoft 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).  <br/> |

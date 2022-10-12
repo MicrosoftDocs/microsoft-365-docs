@@ -2,26 +2,29 @@
 title: "Download perpetual software and product license keys bought through the Cloud Solution Provider (CSP) program"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: micurn, nicholak
+ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
+- Adm_TOC
 search.appverid: MET150
 ms.custom:
-- AdminSurgePortfolio
 - commerce_licensing
+- AdminSurgePortfolio
+- admindeeplinkMAC
 description: Learn how to download the software and product license keys for perpetual software bought through the Cloud Solution Provider (CSP) program.
 ms.date: 01/27/2021
 ---
 
-# Download perpetual software and product license keys
+# Download perpetual software and product license keys in Microsoft 365
 
 This article explains how to download software and product license keys for perpetual software bought through the Cloud Solution Provider (CSP) program.
 

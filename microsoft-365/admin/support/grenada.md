@@ -7,16 +7,18 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.collection: 
+- scotvorg
+- Adm_Support
+ms.localizationpriority: medium
 description: Learn how to contact support for your country or region.
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Contact support for Grenada
 
-[Find another country or region](../../business-video/get-help-support.md).
+[Find another country or region](../get-help-support.md).
 
 ## Phone number
 +1 312 843 5145

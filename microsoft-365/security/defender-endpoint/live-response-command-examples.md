@@ -1,21 +1,22 @@
 ---
 title: Live response command examples
-description: Learn to run basic or advanced live response commands for Microsoft Defender for Endpoint and see examples on how it's used.
+description: Learn to run basic or advanced live response commands for Microsoft Defender for Endpoint, and see examples on how they're used.
 keywords: example, command, cli, remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Live response command examples
@@ -24,16 +25,16 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Learn about common commands used in live response and see examples on how they are typically used.
+Learn about common commands used in live response and see examples on how they're typically used.
 
-Depending on the role that's been granted to you, you can run basic or advanced live response commands. For more information on basic and advanced commands, see [Investigate entities on devices using live response](live-response.md).
+Depending on the role you have, you can run basic or advanced live response commands. For more information on basic and advanced commands, see [Investigate entities on devices using live response](live-response.md).
 
-## analyze
+## `analyze`
 
 ```console
 # Analyze the file malware.txt
@@ -45,7 +46,7 @@ analyze file c:\Users\user\Desktop\malware.txt
 analyze process 1234
 ```
 
-## connections
+## `connections`
 
 ```console
 # List active connections in json format using parameter name
@@ -57,11 +58,16 @@ connections -output json
 connections json
 ```
 
-## dir
+## `dir`
 
 ```console
-# List files and sub-folders in the current folder
+# List files and sub-folders in the current folder (by default it will show relative paths [-relative_path])
 dir
+```
+
+```console
+# List files and sub-folders in the current folder, with their full path
+dir -full_path
 ```
 
 ```console
@@ -74,21 +80,21 @@ dir C:\Users\user\Desktop\
 dir -output json
 ```
 
-## fileinfo
+## `fileinfo`
 
 ```console
 # Display information about a file
 fileinfo C:\Windows\notepad.exe
 ```
 
-## findfile
+## `findfile`
 
 ```console
 # Find file by name
 findfile test.txt
 ```
 
-## getfile
+## `getfile`
 
 ```console
 # Download a file from a machine
@@ -100,20 +106,20 @@ getfile c:\Users\user\Desktop\work.txt
 getfile c:\Users\user\Desktop\work.txt -auto
 ```
 
->[!NOTE]
+> [!NOTE]
 >
-> The following file types **cannot** be downloaded using this command from within Live Response:
+> The following file types *cannot* be downloaded using this command from within Live Response:
 >
-> - [Reparse point files](/windows/desktop/fileio/reparse-points/)
-> - [Sparse files](/windows/desktop/fileio/sparse-files/)
+> - [Reparse point files](/windows-hardware/drivers/ifs/reparse-points)
+> - [Sparse files](/windows-server/administration/windows-commands/fsutil-sparse)
 > - Empty files
 > - Virtual files, or files that are not fully present locally
 >
-> These file types **are** supported by [PowerShell](/powershell/scripting/overview).
+> These file types *are* supported by [PowerShell](/powershell/scripting/overview).
 >
 > Use PowerShell as an alternative, if you have problems using this command from within Live Response.
 
-## library
+## `library`
 
 ```console
 # List files in the library
@@ -125,7 +131,7 @@ library
 library delete script.ps1
 ```
 
-## processes
+## `processes`
 
 ```console
 # Show all processes
@@ -147,7 +153,7 @@ processes -pid 123
 processes -name notepad.exe
 ```
 
-## putfile
+## `putfile`
 
 ```console
 # Upload file from library
@@ -164,7 +170,7 @@ putfile get-process-by-name.ps1 -overwrite
 putfile get-process-by-name.ps1 -keep
 ```
 
-## registry
+## `registry`
 
 ```console
 # Show information about the values in a registry key
@@ -172,12 +178,12 @@ registry HKEY_CURRENT_USER\Console
 ```
 
 ```console
-# Show information about a specific registry value
+# Show information about a specific registry value (the double backslash \\ indicates a registry value versus key)
 registry HKEY_CURRENT_USER\Console\\ScreenBufferSize
 ```
 
 
-## remediate
+## `remediate`
 
 ```console
 # Remediate file in specific path
@@ -190,11 +196,16 @@ remediate process 7960
 ```
 
 ```console
+# Remediate a registry value (the double backslash \\ indicates a registry value versus key)
+remediate registry HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\\SPStartup
+```
+
+```console
 # See list of all remediated entities
 remediate list
 ```
 
-## run
+## `run`
 
 ```console
 # Run PowerShell script from the library without arguments
@@ -206,12 +217,12 @@ run script.ps1
 run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
 
->[!NOTE]
+> [!NOTE]
 >
 > For long running commands such as '**run**' or '**getfile**', you may want to use the '**&**' symbol at the end of the command to perform that action in the background.
 > This will allow you to continue investigating the machine and return to the background command when done using '**fg**' [basic command](live-response.md#basic-commands).
 
-## scheduledtask
+## `scheduledtask`
 
 ```console
 # Get all scheduled tasks
@@ -228,7 +239,7 @@ scheduledtasks Microsoft\Windows\Subscription\LicenseAcquisition
 scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Evaluation"
 ```
 
-## undo
+## `undo`
 
 ```console
 # Restore remediated registry

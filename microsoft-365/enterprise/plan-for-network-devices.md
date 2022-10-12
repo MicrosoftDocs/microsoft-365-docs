@@ -2,13 +2,15 @@
 title: "Plan for network devices that connect to Office 365 services"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/29/2016
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Ent_O365
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
@@ -24,7 +26,7 @@ description: "Summary: Describes considerations for network capacity, WAN accele
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
   
-Some network hardware may have limitations on the number of concurrent sessions that are supported. For organizations having more than 2,000 users, we recommend that they monitor their network devices to ensure they are capable of handling the additional Office 365 service traffic. Simple Network Management Protocol (SNMP) monitoring software can help you do this.
+Some network hardware may have limitations on the number of concurrent sessions that are supported. For organizations having more than 2,000 users, we recommend that they monitor their network devices to ensure they're capable of handling the additional Office 365 service traffic. Simple Network Management Protocol (SNMP) monitoring software can help you do this.
 
 This article is part of [Network planning and performance tuning for Office 365](./network-planning-and-performance.md).
 
@@ -34,7 +36,7 @@ The following Skype for Business Help articles have more information about Skype
   
 - [Troubleshooting Skype for Business Online sign-in errors for administrators](/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
-- [You cannot connect to Skype for Business, or certain features do not work, because an on-premises firewall blocks the connection](https://go.microsoft.com/fwlink/p/?LinkID=243625)
+- [You cannot connect to Skype for Business, or certain features don't work, because an on-premises firewall blocks the connection](https://go.microsoft.com/fwlink/p/?LinkID=243625)
 
 > [!NOTE]
 > While many of these settings are Skype for Business-specific, the general guidance on network configuration is useful for all Office 365 services.

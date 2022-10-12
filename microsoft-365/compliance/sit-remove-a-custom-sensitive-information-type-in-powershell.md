@@ -8,9 +8,10 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -19,9 +20,7 @@ description: "Learn how to remove a custom sensitive information type using Powe
 
 # Remove a custom sensitive information type using PowerShell
 
-
-
-In Compliance center PowerShell, there are two methods to remove custom sensitive information types:
+In Security & Compliance PowerShell, there are two methods to remove custom sensitive information types:
 
 - **Remove individual custom sensitive information types**: Use the method documented in [Modify a custom sensitive information type using PowerShell](sit-modify-a-custom-sensitive-information-type-in-powershell.md#modify-a-custom-sensitive-information-type-using-powershell). You export the custom rule package that contains the custom sensitive information type, remove the sensitive information type from the XML file, and import the updated XML file back into the existing custom rule package.
 
@@ -30,7 +29,7 @@ In Compliance center PowerShell, there are two methods to remove custom sensitiv
 > [!NOTE]
 > Before your remove a custom sensitive information type, verify that no DLP policies or Exchange mail flow rules (also known as transport rules) still reference the sensitive information type.
 
-1. [Connect to Compliance center PowerShell](/powershell/exchange/exchange-online-powershell)
+1. [Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell)
 
 2. To remove a custom rule package, use the [Remove-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage) cmdlet:
 
@@ -70,10 +69,12 @@ In Compliance center PowerShell, there are two methods to remove custom sensitiv
      Get-DlpSensitiveInformationType -Identity "<Name>"
      ```
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## More information
 
-- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+- [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 
-- [What the DLP functions look for](what-the-dlp-functions-look-for.md)
+- [Sensitive information type functions](sit-functions.md)

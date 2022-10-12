@@ -1,31 +1,33 @@
 ---
 title: "Integrated apps and Azure AD for Microsoft 365 administrators"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: Admin
-ms.topic: hub-page
-ms.service: o365-administration
-localization_priority: Normal
+ms.topic: landing-page
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: 
  - Adm_O365
  - seo-marvel-apr2020
-ms.collection: M365-subscription-management
+ms.collection: 
+- scotvorg
+- M365-subscription-management
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
-description: Learn how to register and administer Office 365 integrated Apps in Azure AD, allowing for app authorizations at the global administrator level.
+description: Learn how to register and administer Office 365 integrated Apps in Azure AD, allowing for app authorizations at the **Azure AD DC admin**, or **Global admin** level.
 ---
 
 # Integrated apps and Azure AD for Microsoft 365 administrators
 
 There's more to managing integrated apps than just [managing user consent to apps](../admin/misc/user-consent.md). With the advent of the Microsoft 365 REST APIs, users can grant apps access to their Microsoft 365 data, such as mail, calendars, contacts, users, groups, files, and folders. By default, users need to individually grant permissions to each app. 
 
-But this doesn't scale well if you want to authorize an app once at the global administrator level and roll it out to your whole organization through the app launcher. To do this, you must register the app in Azure Active Directory (Azure AD). There are some steps you need to take before you can register an app in Azure AD and some background information you should know that can help you manage apps in your Microsoft 365 organization.
+But this doesn't scale well if you want to authorize an app once at the **Azure AD DC admin**, or **Global admin** level and roll it out to your whole organization through the app launcher. To do this, you must register the app in Azure Active Directory (Azure AD). There are some steps you need to take before you can register an app in Azure AD and some background information you should know that can help you manage apps in your Microsoft 365 organization.
   
 ## Azure AD resources for Microsoft 365 admins
 

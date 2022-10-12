@@ -5,18 +5,27 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 01/21/2021
+ms.date: 08/12/2022
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
-localization_priority: Normal
-search.appverid:
+ms.service: microsoft-365-security
+ms.subservice: mdo
+ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
+ms.custom: 
 description: Microsoft Defender for Office 365 E5 and P1 and P2 customers can now get a 360-degree view of each email with email entity page.
+search.appverid: met150
 ---
+
 # The Email entity page
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Applies to:**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **In this article:**
 - [Reach the email entity page](#reach-the-email-entity-page)
@@ -28,13 +37,13 @@ Admins of Microsoft Defender for Office 365 E5, and Defender for Office P1 and P
 
 ## Reach the email entity page
 
-The email entity page is available in the Microsoft 365 Defender portal (<https://security.microsoft.com>) at **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
+The email entity page is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
 In **Explorer**, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select to view the new page.
 
-:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="You'll see a gold banner with the words *Try out our new email entity page with enriched data* to navigate to the new experience.":::
+:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="The gold banner with the words *Try out our new email entity page with enriched data* to navigate to the new experience" lightbox="../../media/email-entities-1-navigation-to-ee.png":::
 
-:::image type="content" source="../../media/email-entities-2-eep.png" alt-text="This graphic of the email entity page focuses on headings that you'll see. Note the email header is displayed here.":::
+:::image type="content" source="../../media/email-entities-2-eep.png" alt-text="The graphic of the email entity page that focuses on headings that you'll see" lightbox="../../media/email-entities-2-eep.png":::
 
 > [!NOTE]
 > The permissions needed to view and use this page are the same as to view **Explorer**. The admin must be a member of Global admin or global reader, or Security admin or Security Reader. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
@@ -45,15 +54,15 @@ The structure is designed to be easy to read and navigate through at a glance. V
 
 1. The most required fields are on the left side of the fly-out. These details are 'sticky', meaning they're anchored to the left no matter the tab you navigate to in the rest of the fly-out.
 
-    :::image type="content" source="../../media/email-entities-3-left-panel.png" alt-text="Graphic of the email entity page with the left side highlighted. The title and facts about the mail delivery are over here.":::
+    :::image type="content" source="../../media/email-entities-3-left-panel.png" alt-text="The Graphic of the email entity page with the left side highlighted" lightbox="../../media/email-entities-3-left-panel.png":::
 
 2. On the top-right corner are the actions that can be taken on an email. Any actions that can be taken through **Explorer** will also be available through email entity page.
 
-    :::image type="content" source="../../media/email-entities-5-preview.png" alt-text="Graphic of the email entity page with the *right* side highlighted, this time. Actions like 'Email preview' and 'Go to quarantine' are here.":::
+    :::image type="content" source="../../media/email-entities-5-preview.png" alt-text="The Graphic of the email entity page with the right side highlighted" lightbox="../../media/email-entities-5-preview.png":::
 
 3. Deeper analysis can be done by sorting through the rest of the page. Check the email detection details, email authentication status, and header. This area should be looked on a case-by-case basis, but the info in these tabs is available for any email.
 
-    :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="The main panel of this page includes the email header and authentication status.":::
+    :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="The main panel of the page which includes the email header and authentication status" lightbox="../../media/email-entities-4-middle-panel.png":::
 
 ### Use email entity page tabs
 
@@ -80,9 +89,9 @@ Admins can preview emails in Cloud mailboxes, ***if*** the mails are still prese
 
 These details are specific to email attachments and URLs. Users can see these details by going to Explorer and applying the *detection technology* filter set to file detonation or URL detonation. Emails filtered for file detonation will contain a malicious file with detonation details, and those filtered for URLs contain a malicious URL and its detonation details.
 
-Users will see enriched detonation details for known malicious attachments or URLs found in their emails, which got detonated for their specific tenant. It will comprise of Detonation chain, Detonation summary, Screenshot, and Observed behavior details to help customers understand why the attachment or URL was deemed malicious and detonated.
+Users will see enriched detonation details for known malicious attachments or URLs found in their emails, which got detonated for their specific tenant. It will include the Detonation chain, Detonation summary, Screenshot, and Observed behavior details to help customers understand why the attachment or URL was deemed malicious and detonated.
 
-1. *Detonation chain*. A single file or URL detonation can trigger multiple detonations. The Detonation chain tracks the path of detonations, including the original malicious file or URL that caused the verdict, and all other files or URLs effected by the detonation. These URLs or attached files may not be directly present in the email, but including that analysis is important to determining why the file or URL was found to be malicious.  
+1. *Detonation chain*. A single file or URL detonation can trigger multiple detonations. The Detonation chain tracks the path of detonations, including the original malicious file or URL that caused the verdict, and all other files or URLs affected by the detonation. These URLs or attached files may not be directly present in the email, but including that analysis is important to determining why the file or URL was found to be malicious.  
 
     > [!NOTE]
     > This may show just the top level item if none of the entities linked to it were found to be problematic, or were detonated.
@@ -90,31 +99,37 @@ Users will see enriched detonation details for known malicious attachments or UR
 1. *Detonation Summary* gives a basic summary for detonation such as *analysis time*, the time when detonation occurred, OS and application, the operating system and application in which the detonation occurred, file size, and verdict reason.
 1. *Screenshots* show the screenshots captured during detonation. There can be multiple screenshots during detonation. No screenshots are captured for
     - Container type files like .zip or .rar.
-    - If a URL opens into a link that directly downloads a file. However, you will see the downloaded file in the detonation chain.
+    - If a URL opens into a link that directly downloads a file. However, you'll see the downloaded file in the detonation chain.
 1. *Behavior Details* are an export that shows behavior details like exact events that took place during detonation, and observables that contain URLs, IPs, domains, and files that were found during detonation (and can either be problematic or benign). Be aware, there may be no behavior details for:
     - Container files like .zip or .rar that are holding other files.
 
-:::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="Screenshot of the detonation summary showing the chain, summary, detonation details, and screenshot under the heading *Deep Analysis*.":::
+:::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="The detonation summary showing the chain, summary, detonation details, and screenshot under the heading *Deep Analysis*" lightbox="../../media/email-entities-6-detonation-page.png":::
 
 ### Other innovations
 
 *Tags*: These are tags applied to users. If the user is a recipient, admins will see a *recipient* tag. Likewise, if the user is a sender, a *sender* tag. This will appear in the left side of the email entities page (in the part that's described as *sticky* and, thus, anchored to the page).
 
-*Latest delivery location*: The latest delivery location is the location where an email landed after system actions like ZAP, or admin actions like Move to Deleted Items, finish. Latest delivery location is not intended to inform admins of the message's *current* location. For example, if a user deletes a message, or moves it to archive, the delivery location won't be updated. However, if a system action has taken place and updated the location (like a ZAP resulting in an email moving to Quarantine) this would update the Latest delivery location to Quarantine.
+*Latest delivery location*: The latest delivery location is the location where an email landed after system actions like ZAP, or admin actions like Move to Deleted Items, finish. Latest delivery location isn't intended to inform admins of the message's *current* location. For example, if a user deletes a message, or moves it to archive, the delivery location won't be updated. However, if a system action has taken place and updated the location (like a ZAP resulting in an email moving to quarantine) this would update the Latest delivery location to quarantine.
 
 *Email details*: Details required for a deeper understanding of email available in the *Analysis* tab.
 
-- *Exchange transport rules (also known as mail flow rules or ETRs)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. These can be only created and modified in the Exchange admin center, but if any ETR applies to a message, the ETR name and GUID will be shown here. Valuable information for tracking purposes.
+- *Exchange transport rules (also known as mail flow rules or ETRs)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. Mail flow rules are created and modified in the Exchange admin center at <https://admin.exchange.microsoft.com/#/transportrules>, but if any mail flow rule applies to a message, the rule name and GUID will be shown here. Valuable information for tracking purposes.
 
-- *System Overrides*: This is a means of making exceptions to the delivery location intended for a message by overriding the delivery location given by system (as per the threat and detection tech).
+- *Primary Override: Source*: Primary override and source refer to the tenant or user setting which impacted the delivery of the email, overriding the delivery location given by the system (as per the threat and detection technology). As an example, this could be an email blocked due to a tenant configured transport rule or an email allowed due to an end-user setting for Safe Senders. 
 
-- *Junk Mailbox Rule*: 'Junk' is hidden Inbox rule that's enabled by default in every mailbox.
-  - When the Junk email rule is enabled on the mailbox, Exchange Online Protection (EOP) is able to move messages to Junk according to some criteria. The move can be based on spam filtering verdict action *Move message to Junk Email folder*, or on the Blocked Senders list on the mailbox. Disabling the Junk email rule prevents the delivery of messages to the Junk email folder based on the *Safe Senders* list on the mailbox.
-  - When the junk email rule is *disabled* on the mailbox, EOP can't move messages to the Junk Email folder based on the spam filtering verdict action *Move message to Junk Email folder*, or the safe list collection on the mailbox.
+- *All Overrides*: All Overrides refer to the list of overrides (tenant or user settings) that was applied on the email, which may or may not have impacted the delivery of an email. As an example, if a tenant configured transport rule, as well as a tenant configured policy setting (for example, from the Tenant Allow Block lists), is applied to an email, then both will be listed in this field. You can check the primary override field to determine the setting that impacted the delivery of the email. 
 
 - *Bulk Complaint Level (BCL)*: The bulk complaint level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (the natural result if the email is likely to be spam).
 
 - *Spam Confidence Level (SCL)*: The spam confidence level (SCL) of the message. A higher value indicates the message is more likely to be spam.
+
+- *Client type*: Indicates the Client type from which the email was sent like REST.
+
+- *Forwarding*: For scenarios with autoforwarding, it indicates the forwarding user as well as the forwarding type like ETR or SMTP forwarding.
+
+- *Distribution list*: Shows the distribution list, if the recipient received the email as a member of the list. It shows the top level distribution list if there are nested distribution lists involved.  
+
+- *To, Cc*: Indicates the addresses that are listed in To, Cc fields of an email. The information in these fields is restricted to 5000 characters.
 
 - *Domain Name*: Is the sender domain name.
 
@@ -128,7 +143,7 @@ Users will see enriched detonation details for known malicious attachments or UR
 
 - Sender Policy Framework (**SPF**):  Describes results for SPF check for the message. Possible values can be:
   - Pass (IP address): The SPF check for the message passed and includes the sender's IP address. The client is authorized to send or relay email on behalf of the sender's domain.
-  - Fail (IP address): The SPF check for the message failed and includes the sender's IP address. This is sometimes called hard fail.
+  - Fail (IP address): The SPF check for the message failed, and includes the sender's IP address. This is sometimes called hard fail.
   - Softfail (reason): The SPF record designated the host as not being allowed to send but is in transition.
   - Neutral: The SPF record explicitly states that it does not assert whether the IP address is authorized to send.
   - None: The domain doesn't have an SPF record, or the SPF record doesn't evaluate to a result.
@@ -138,7 +153,7 @@ Users will see enriched detonation details for known malicious attachments or UR
 - DomainKeys Identified Mail (**DKIM**):
   - Pass: Indicates the DKIM check for the message passed.
   - Fail (reason): Indicates the DKIM check for the message failed and why. For example, if the message was not signed or the signature was not verified.
-  - None: Indicates that the message was not signed. This may or may not indicate that the domain has a DKIM record or the DKIM record does not evaluate to a result, only that this message was not signed.
+  - None: Indicates that the message wasn't signed. This may or may not indicate that the domain has a DKIM record or the DKIM record doesn't evaluate to a result, only that this message was not signed.
 
 - Domain-based Message Authentication, Reporting, and Conformance (**DMARC**):
   - Pass: Indicates the DMARC check for the message passed.
@@ -147,3 +162,63 @@ Users will see enriched detonation details for known malicious attachments or UR
   - None: Indicates that no DMARC TXT record exists for the sending domain in DNS.
 
 *Composite Authentication*: This is a value used by Microsoft 365 to combine email authentication like SPF, DKIM, and DMARC, to determine if the message is authentic. It uses the *From:* domain of the mail as the basis of evaluation.
+## Actions into Email entity Page
+
+Security teams can now take email actions like soft delete and hard delete, move to junk, move to inbox, trigger an investigation, submit to Microsoft for review in line, and et cetera. **Tenant level block** actions like file and URL or sender can also be triggered from the Email entity page.  
+
+You will be able to select **Take actions** from the top right corner of the entity page and this will open the Action wizard for you to select the specific action you need. 
+![Take action from entity page.](../../media/Take-ActionWizard-Email-entity.png)
+
+In the Action wizard you can take email actions, email submissions, block sender and sender domain, investigative actions and two step approval (add to remediation) in the same side pane. This follows a consistent flow for ease of use. The Action wizard uses the same system as is used by Explorer actions (for Delete, Submissions, and Investigation actions), for example. You will be able to see and track these actions in the 
+ [Unified action center](https://security.microsoft.com/action-center/history) (for deleted emails), in the 
+  [Submission portal](https://security.microsoft.com/reportsubmission) (for submissions), and in [Tenant Allow/Block Lists](https://security.microsoft.com/tenantAllowBlockList) page for (TABL blocks). 
+
+We are also bringing Tenant level block URL and attachment to the respective Email entity URL and Attachments tabs. Upon approval, all the Tenant Allow and Block Lists (or TABL) block URL and block attachments can be tracked under TABL/URL and TABL/file pages. 
+![Take block URL action from entity page.](../../media/Block-URL-Email-entity.png)
+
+See [permissions](permissions-microsoft-365-security-center.md) required to take these actions. 
+
+ 
+### Email summary panel
+
+The email summary panel is a summarized view of the full email entity page. It contains standardized details about the email (for example, detections), as well as context-specific information (for example, for Quarantine or Submissions metadata). The email summary panel replaces the traditional Real-time Detections, Threat Explorer, Submissions, and Reporting flyouts.
+
+> [!div class="mx-imgBorder"]
+> ![Open the email entity link.](../../media/open-email-entity-mdo.png)
+
+> [!NOTE]
+> To view all the components, click on the **Open email entity** link to open the full email entity page.  
+
+The email summary panel is divided into the following sections:  
+
+- *Delivery details*: Contains information about threats and corresponding confidence level, detection technologies, and original and latest delivery location.
+
+- *Email details*: Contains information about email properties like sender name, sender address, time received, authentication details, and other several other details.
+
+- *URLs*: By default, you will see 3 URLs and their corresponding threats. You can always select **View all URLs** to expand and see all URLs and export them.  
+
+- *Attachments*: By default, you will see 3 attachments. You can always select **View all attachments** to expand and see all attachments. 
+
+In addition to the above sections, you will also see sections specific to few experiences that are integrated with the summary panel: 
+
+- Submissions: 
+
+    - *Submission details*: Contains information about the specific submissions such as:
+        - Date submitted
+        - Subject
+        - Submission type
+        - Reason for submitting
+        - Submission ID
+        - Submitted by
+
+    - *Result details*: Messages that are submitted are reviewed. You can see the result of your submission as well as any recommended next steps.
+
+- Quarantine:  
+
+    - *Quarantine details*: Contains quarantine-specific details. For more information, see [Manage quarantined messages](manage-quarantined-messages-and-files.md#view-quarantined-message-details).
+
+        - Expires: The date/time when the message will be automatically and permanently deleted from quarantine.
+        - Released to: All email addresses (if any) to which the message has been released.
+        - Not yet released to: All email addresses (if any) to which the message has not yet been released.
+
+    - *Quarantine actions*: For more information on different quarantine actions, see [Manage quarantined messages](manage-quarantined-messages-and-files.md#take-action-on-quarantined-email).

@@ -7,9 +7,10 @@ author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -19,7 +20,7 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
-description: "You can create and use a template to save time and standardize settings when you add multiple users."
+description: "You can create and use a template to save time and standardize settings when you add multiple users in the Microsoft 365 admin center."
 ---
 
 # Create and use a template to add users

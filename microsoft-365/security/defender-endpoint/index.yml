@@ -7,14 +7,15 @@ metadata:
   title: Microsoft Defender for Endpoint documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn about Microsoft Defender for Endpoint and maximize the built-in security capabilities to protect devices, detect malicious activity, and remediate threats# Required; article description that is displayed in search results. < 160 chars.
   services: office-365-security-compliance
-  ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice
+  ms.service: microsoft-365-security
+  ms.subservice: mde
   ms.topic: landing-page # Required
-  ms.collection: m365-security-compliance
+  ms.collection: m365-security
+  ms.custom: intro-hub-or-landing
   author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
   ms.author: macapara #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/5/2021 #Required; mm/dd/yyyy format.
-  localization_priority: Priority
+  ms.date: 10/18/2021
+  ms.localizationpriority: high
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -28,23 +29,29 @@ landingContent:
         links:
         - text: What is Microsoft Defender for Endpoint?
           url:  microsoft-defender-endpoint.md
+        - text: What is Defender for Endpoint plan 1?
+          url: defender-endpoint-plan-1.md
+        - text: Compare Defender for Endpoint plans
+          url: defender-endpoint-plan-1-2.md
       - linkListType: whats-new
         links:
           - text: What's new in Microsoft Defender for Endpoint
-            url: whats-new-in-microsoft-defender-atp.md
+            url: whats-new-in-microsoft-defender-endpoint.md
+          - text: Announcing Microsoft Defender for Endpoint Plan 1
+            url: defender-endpoint-plan-1.md
       - linkListType: video
         links:
           - text: Overview video
             url:  https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0
- 
-  
+
+
 # Card
   - title: Evaluate & deploy the service
     linkLists:
       - linkListType: get-started
         links:
         - text: Evaluate Microsoft Defender for Endpoint
-          url: evaluation-lab.md 
+          url: evaluation-lab.md
         - text: Plan your deployment
           url: deployment-strategy.md
       - linkListType: deploy
@@ -53,6 +60,8 @@ landingContent:
             url: deployment-phases.md
           - text: Onboard supported devices
             url: onboard-configure.md
+          - text: Set up and configure Defender for Endpoint Plan 1
+            url: mde-p1-setup-configuration.md
       - linkListType: how-to-guide
         links:
           - text: Migration guide
@@ -60,15 +69,15 @@ landingContent:
       - linkListType: video
         links:
           - text: Onboarding video
-            url:  https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr 
- 
+            url:  https://www.microsoft.com/videoplayer/embed/RE4bGqr
+
 # Card
   - title: Security operations
     linkLists:
       - linkListType: overview
         links:
         - text: Endpoint detection and response
-          url: overview-endpoint-detection-response.md  
+          url: overview-endpoint-detection-response.md
         - text: Behavioral blocking and containment
           url: behavioral-blocking-containment.md
         - text: Automated investigation and response (AIR)
@@ -86,22 +95,22 @@ landingContent:
       - linkListType: overview
         links:
         - text: Microsoft Defender for Endpoint on Mac
-          url: microsoft-defender-endpoint-mac.md  
+          url: microsoft-defender-endpoint-mac.md
         - text: Microsoft Defender for Endpoint on iOS
           url: microsoft-defender-endpoint-ios.md
         - text: Microsoft Defender for Endpoint on Linux
           url: microsoft-defender-endpoint-linux.md
         - text: Microsoft Defender for Endpoint on Android
-          url: microsoft-defender-endpoint-android.md          
-  
- 
+          url: microsoft-defender-endpoint-android.md
+
+
 # Card
   - title: Reference
     linkLists:
       - linkListType: reference
         links:
         - text: Management and APIs
-          url: management-apis.md  
+          url: management-apis.md
         - text: Partner integration
           url: partner-integration.md
 
@@ -110,9 +119,9 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-        - text: Threat & vulnerability management
-          url: next-gen-threat-and-vuln-mgt.md  
+        - text: Microsoft Defender Vulnerability Management
+          url: ../defender-vulnerability-management/defender-vulnerability-management.md
         - text: Attack surface reduction
           url: overview-attack-surface-reduction.md
         - text: Next-generation protection
-          url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10         
+          url: next-generation-protection.md         

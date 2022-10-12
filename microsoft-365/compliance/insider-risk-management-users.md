@@ -1,9 +1,9 @@
 ---
 title: Insider risk management Users dashboard
-description: Learn about insider risk management Users dashboard in Microsoft 365
-keywords: Microsoft 365, insider risk management, risk management, compliance
-localization_priority: Normal
-ms.prod: microsoft-365-enterprise
+description: Learn about insider risk management Users dashboard in Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
+ms.localizationpriority: medium
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -11,10 +11,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Insider risk management Users dashboard
+
+>[!IMPORTANT]
+>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
 
 The **Users dashboard** is an important tool in the insider risk management workflow and helps investigators and analysts have a more complete understanding of risk activities. This dashboard offers views and management features to meet administrative needs between the creating insider risk management policies and managing insider risk management cases.
 
@@ -25,6 +31,8 @@ Learn more about how the Users dashboard displays users in the following scenari
 - Users with active insider risk policy alerts
 - Users with triggering events
 - Users added temporarily to policies
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Users with active insider risk policy alerts
 
@@ -38,7 +46,7 @@ The **Users dashboard** automatically displays all users with triggering events,
 
 The **Users dashboard** includes users added to insider risk management policies after an unusual event outside of the insider risk management workflow. Temporarily adding users (from the Policies dashboard) is also a way to start scoring user activity for an insider risk management policy for testing the policy, even if a required connector isn't configured.
 
-When a user is manually added to a policy, the user activities for the previous 90 days are scored and added to the **User activity** timeline. For example, you have a user not currently being assigned risk scores for an insider risk policy and the user has data leak activities reported to the legal department in your organization. The legal department recommends that you configure new short-term monitoring requirements for the user. You can temporarily assign the user to your *Data leaks* policy for a designated length of time (activation window). All users added temporarily are displayed in the **Users dashboard** because triggering event requirements are waived.
+When a user is manually added to a policy, the user activities for the previous 90 days are scored and added to the **User activity** timeline. For example, you have a user not currently being assigned risk scores for an insider risk policy and the user has data leak activities reported to the legal department in your organization. The legal department recommends that you configure new short-term detection requirements for the user. You can temporarily assign the user to your *Data leaks* policy for a designated length of time (activation window). All users added temporarily are displayed in the **Users dashboard** because triggering event requirements are waived.
 
 > [!NOTE]
 > It may take several hours for new manually-added users to appear in the **Users dashboard**. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, select the user on the **Users dashboard** and open the **User activity** tab on the details pane.
@@ -64,7 +72,9 @@ Each user displayed in the **Users dashboard** has the following information:
 - **Confirmed violations**: The number of cases resolved as *confirmed policy violation* for the user.
 - **Case**: The current active case for the user.
 
-![Insider risk management users dashboard](../media/insider-risk-users-dashboard.png)
+To quickly locate a specific user, use **Search** at the top right of the User dashboard. When searching for users, you must use the user principal name (UPN). For example, when searching for a user named 'Tiara Hidayah' that has a UPN of 'thidayah' in your organization, you would enter 'thidayah' or some part of the UPN in **Search**.
+
+![Insider risk management users dashboard.](../media/insider-risk-users-dashboard.png)
 
 > [!NOTE]
 > The number of users displayed on the **Users dashboard** may be limited in some instances, depending on the volume of active alerts and matching policies. Users with active alerts are displayed on the **Users dashboard** as the alerts are generated, and there may be rare cases when the maximum number of displayed users is reached. If this limit happens, users with active alerts who aren't displayed will be added to the **Users dashboard** as existing user alerts are triaged.
@@ -91,7 +101,7 @@ There may be scenarios where you need to stop assigning risk scores to a user's 
 
 To manually remove users from in-scope status in all insider risk management policies, complete the following steps:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Users** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Users** tab.
 2. On the **Users dashboard**, select the user or users you want to remove from being in-scope in insider risk management policies.
 3. Select **Remove users**.
 4. On the **Remove user** pane, Select **Remove** or **Cancel** to discard the changes and close the dialog.

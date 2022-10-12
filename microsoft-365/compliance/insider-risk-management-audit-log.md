@@ -1,9 +1,9 @@
 ---
 title: Insider risk management audit log
-description: Learn about the insider risk management audit log in Microsoft 365
-keywords: Microsoft 365, insider risk management, risk management, compliance
-localization_priority: Normal
-ms.prod: microsoft-365-enterprise
+description: Learn about the insider risk management audit log in Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
+ms.localizationpriority: medium
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -11,18 +11,23 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ---
 
 # Insider risk management audit log
 
+>[!IMPORTANT]
+>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
+
 The insider risk management audit log enables you to stay informed on the actions that were taken on insider risk management features. This log allows independent review of the actions taken by users assigned to one or more insider risk management role groups. The insider risk management audit log is automatically enabled in your organization and cannot be disabled.
 
-![Insider risk management audit log](../media/insider-risk-audit-log.png)
+![Insider risk management audit log.](../media/insider-risk-audit-log.png)
 
-The audit log is automatically and immediately updated whenever monitored activities occur and the log retains information about the activity for 180 days (about six months). After 180 days, the data for the activity is permanently deleted from the log.
+The audit log is automatically and immediately updated whenever detected activities occur and the log retains information about the activity for 180 days (about six months). After 180 days, the data for the activity is permanently deleted from the log.
 
-Areas included in activity monitoring include:
+Areas included in activity detection include:
 
 - Policies
 - Cases
@@ -31,14 +36,16 @@ Areas included in activity monitoring include:
 - Users
 - Notice templates
 
-To view and export data from the audit log, users must be assigned to the *Insider Risk Management* or *Insider Risk Management Auditors* role groups. To learn more about insider risk management role groups, see [Getting started with insider risk management Step 1: Enabling permissions](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management).
+To view and export data from the audit log, users must be assigned to the *Insider Risk Management* or *Insider Risk Management Auditors* role groups. To learn more about insider risk management role groups, see [Getting started with insider risk management Step 1: Enabling permissions](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management).
 
 > [!NOTE]
 > The insider risk management audit log isn't associated with the Microsoft 365 audit log, they are independent auditing systems and capture information on separate activities. Disabling Microsoft 365 auditing doesn't impact activity auditing within insider risk management.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## View activity in the insider risk audit log
 
-To view feature activity monitored for insider risk management, navigate to, and select the **Insider risk audit log** link in the top-right area of any insider risk management tab. By default, you'll see the following information displayed for insider risk management activities:
+To view feature activity detected for insider risk management, navigate to, and select the **Insider risk audit log** link in the top-right area of any insider risk management tab. By default, you'll see the following information displayed for insider risk management activities:
 
 - **Activity:** A description of the activity taken within the insider risk management solution by a user.
 - **Category:** The area or item where the activity was performed. For example, you'll see *Policies* as the category when policy change activities were performed.
@@ -59,7 +66,7 @@ Users assigned to the *Insider Risk Management* or *Insider Risk Management Audi
 
 The file contains activity information for the following fields:
 
-- **Activity performed by:** The user name of the user modifying an item value. Users listed here were assigned to one or more of the following role [insider risk management role groups](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management): *Insider Risk Management*, *Insider Risk Management Admins*, *Insider Risk Management Analysts*, *Insider Risk Management Investigators*. Each role group has different permission levels for managing insider risk features.
+- **Activity performed by:** The user name of the user modifying an item value. Users listed here were assigned to one or more of the following role [insider risk management role groups](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management): *Insider Risk Management*, *Insider Risk Management Admins*, *Insider Risk Management Analysts*, *Insider Risk Management Investigators*. Each role group has different permission levels for managing insider risk features.
 - **Activity:** The activity taken on an item. Values are *Viewed, Deleted, Added, Edited policy, Case, User, Alert,* and *Settings.*
 - **Added**: Objects that were added during the activity, such as users, file types, or domains.
 - **Alert volume**: The level of alert volume defined in insider risk management settings.
@@ -68,7 +75,7 @@ The file contains activity information for the following fields:
 - **Category:** The category of the item modified. Values are *Policies, Cases, Users, Alerts, Settings,* and *Notice templates.*
 - **Date:** Date and time, listed in your organization's local date and time.
 - **Description**: The description input by the user for the object being acted on (such as a policy or a priority user group).
-- **DLP policy**: The data loss prevention (DLP) policy selected to trigger inclusion in an insider risk management policy.
+- **DLP policy**: The Microsoft Purview Data Loss Prevention (DLP) policy selected to trigger inclusion in an insider risk management policy.
 - **Indicator**: The indicator in the within insider risk settings that the activity was performed on (such as adding or removing an indicator).
 - **Notice template**: The notice template the activity was performed on.
 - **Number of days**: The policy activation window defined in insider risk settings.

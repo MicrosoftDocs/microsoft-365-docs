@@ -1,26 +1,31 @@
 ---
 title: "Create a draft collection"
+description: "A draft collection is an eDiscovery search of custodial and non-custodial data sources in an eDiscovery (Premium) case that returns a search estimate that matches the search query of the collection. You can review search statistics, preview a sampling of items, and revise and rerun the collection before you commit the results to a review set."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 ms.reviewer: nickrob  
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance 
+ms.localizationpriority: medium
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "A draft collection is an eDiscovery search of custodial and non-custodial data sources in an Advanced eDiscovery case that returns a search estimate that matches the search query of the collection. You can review search statistics, preview a sampling of items, and revise and rerun the collection before you commit the results to a review set."
 ---
 
-# Create a draft collection in Advanced eDiscovery
+# Create a draft collection in eDiscovery (Premium)
 
 After you've identified custodians and any non-custodian data sources for the case, you're ready to identify and locate a set of documents that are relevant. You do this by using the Collections tool to search data sources for relevant content. You do this by creating a collection that searches specified data sources for content that matches your search criteria. You have the option to create a *draft collection*, which is an estimate of the items are found or you can create a collection that automatically adds the items to a review set. When you create a draft collection, you can views information about the estimated results that matched the search query, such as the total number and size of items found, the different data sources where they were found, and statistics about the search query. You can also preview a sample of items that were returned by the collection. Using these statistics, you can change the search query and rerun the draft collection to narrow your results. Once you're satisfied with the collection results, you can commit the collection to a review set. When you commit a draft collection, the items returned by the collection are added to a review set for review, analysis, and export.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you create a draft collection
 
@@ -34,7 +39,7 @@ After you've identified custodians and any non-custodian data sources for the ca
 
 ## Create a draft collection
 
-1. In the Microsoft 365 compliance center, open the Advanced eDiscovery case, and then select the **Collections** tab.
+1. In the Microsoft Purview compliance portal, open the eDiscovery (Premium) case, and then select the **Collections** tab.
 
 2. On the **Collections** page, select **New collection** > **Standard collection**.
 
@@ -77,9 +82,9 @@ After you've identified custodians and any non-custodian data sources for the ca
 
 After you create a draft collection, it listed on the **Collections** page in the case and the status shows that it's in progress. A job named **Preparing search preview and estimates** is also created and displayed on the **Jobs** page in the case.
 
-During the draft collection process, Advanced eDiscovery performs a search estimate using the search criteria and data sources that you specified in the collection. Advanced eDiscovery also prepares a sampling of items that you can preview. When the collection is complete, the following columns and corresponding values on the **Collection** page are updated:
+During the draft collection process, eDiscovery (Premium) performs a search estimate using the search criteria and data sources that you specified in the collection. eDiscovery (Premium) also prepares a sampling of items that you can preview. When the collection is complete, the following columns and corresponding values on the **Collection** page are updated:
 
-![Status states for a draft collection](../media/DraftCollectionStatus.png)
+![Status states for a draft collection.](../media/DraftCollectionStatus.png)
 
 - **Status**: Indicates the status and type of collection. A value of **Estimated** indicates that a draft collection is complete. This same value also indicates that the collection is a draft collection, and that it hasn't been added to a review set. A value of **Committed** in the **Status** column indicates that the collection has been added to a review set.
 
@@ -91,7 +96,7 @@ During the draft collection process, Advanced eDiscovery performs a search estim
 
 After the draft collection is successfully completed, you can perform various tasks. To perform most of these tasks, just go the **Collections** tab and click the name of the draft collection to display the flyout page.
 
-![Flyout page for a draft collection](../media/DraftCollectionFlyoutPage.png)
+![Flyout page for a draft collection.](../media/DraftCollectionFlyoutPage.png)
 
 Here's a list of things you can do from the collection flyout page:
 
@@ -109,7 +114,7 @@ Here's a list of things you can do from the collection flyout page:
 
 You can use the options in the **Actions** menu on the flyout page of a draft collection to perform various management tasks.
 
-![Options on Actions menu for draft collection](../media/DraftCollectionActionsMenu.png)
+![Options on Actions menu for draft collection.](../media/DraftCollectionActionsMenu.png)
 
 Here's are descriptions of the management options.
 

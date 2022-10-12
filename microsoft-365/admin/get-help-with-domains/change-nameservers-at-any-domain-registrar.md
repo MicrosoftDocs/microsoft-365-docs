@@ -2,19 +2,22 @@
 title: "Change nameservers to set up Microsoft 365 with any domain registrar"
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection:
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
 ms.custom:
+- VSBFY23
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -149,7 +152,7 @@ For example, here are some additional steps that might be required for email and
 
 - Move all email addresses that use your domain to Microsoft 365 before you change your NS records.
 
-- Want to add a domain that's currently used with a website address, like www.fourthcoffee.com? You can take below steps while you add the domain to keep its website hosted where the site is hosted now so people can still get to the website after you change the domain's NS records to point to Microsoft 365.
+- Want to add a domain that's currently used with a website address, like `https://www.fourthcoffee.com`? You can take below steps while you add the domain to keep its website hosted where the site is hosted now so people can still get to the website after you change the domain's NS records to point to Microsoft 365.
 
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
@@ -177,7 +180,7 @@ In addition, you can create a CNAME record to help customers find your website.
 1. Select **Add record**.
 2. In the **Add a custom DNS record** pane, from the **Type** dropdown list, select **CNAME (Alias)**.
 3. In the **Host name or Alias** box, type **www**.
-4. In the **Points to address** box, type the fully qualified domain name (FQDN) for your website. For example, **contoso.5om**.
+4. In the **Points to address** box, type the fully qualified domain name (FQDN) for your website. For example, **contoso.com**.
 5. If you want to change the TTL setting for the record, select a new length of time from the **TTL** dropdown list. Otherwise, continue to step 6.
 6. Select **Save**.
 
@@ -190,4 +193,4 @@ After the nameserver records are updated to point to Microsoft, your domain setu
 
 [Add DNS records to connect your domain](create-dns-records-at-any-dns-hosting-provider.md) (article)\
 [Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
-[Manage domains](index.yml) (link page)
+[Manage domains](/admin) (link page)

@@ -5,8 +5,8 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: 
@@ -14,6 +14,9 @@ ms.custom:
 - 'O365P_AddUsersCSV'
 - 'O365M_AddUsersCSV'
 - 'O365E_AddUsersCSV'
+- admindeeplinkMAC
+ms.collection: 
+- scotvorg
 search.appverid:
 - MET150
 - MOP150
@@ -37,7 +40,7 @@ Each person on your team needs a user account before they can sign in and access
 
 1. Sign in to Microsoft 365 with your work or school account.
 
-2. In the admin center, choose **Users** \> **Active users**.
+2. In the admin center, choose **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 
 3. Select **Add multiple users**.
 
@@ -83,11 +86,11 @@ You can download [this sample spreadsheet](https://www.microsoft.com/download/de
   
 Save the file with a new name, and specify CSV format.
   
-![An image of how to save a file in Excel in CSV format](../media/35a86ebe-63ab-4b4d-9a92-e177de33ebae.png)
+![An image of how to save a file in Excel in CSV format.](../media/35a86ebe-63ab-4b4d-9a92-e177de33ebae.png)
   
 When you save the file, you'll probably get a prompt that some features in your workbook will be lost if you save the file in CSV format. This is okay. Click **Yes** to continue.
   
-![A picture of the prompt you might get from Excel asking if you really want to save the file as a CSV format](../media/51032a81-690c-45ef-bfc5-09ea7f790e98.png)
+![A picture of the prompt you might get from Excel asking if you really want to save the file as a CSV format.](../media/51032a81-690c-45ef-bfc5-09ea7f790e98.png)
   
 ### Tips for formatting your spreadsheet
 

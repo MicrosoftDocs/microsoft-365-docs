@@ -2,21 +2,24 @@
 title: Troubleshoot problems with attack surface reduction rules
 description: Resources and sample code to troubleshoot issues with attack surface reduction rules in Microsoft Defender for Endpoint.
 keywords: troubleshoot, error, fix, windows defender eg, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: jweston-1
+ms.author: v-jweston
 ms.date: 03/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
+ms.collection: 
+- m365-security
+- tier3
+search.appverid: met150
 ---
 
 # Troubleshoot attack surface reduction rules
@@ -25,26 +28,22 @@ ms.topic: how-to
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
-
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 When you use [attack surface reduction rules](attack-surface-reduction.md) you may run into issues, such as:
 
 - A rule blocks a file, process, or performs some other action that it shouldn't (false positive)
-
 - A rule doesn't work as described, or doesn't block a file or process that it should (false negative)
 
 There are four steps to troubleshooting these problems:
 
 1. [Confirm prerequisites](#confirm-prerequisites)
-
 2. [Use audit mode to test the rule](#use-audit-mode-to-test-the-rule)
-
 3. [Add exclusions for the specified rule](#add-exclusions-for-a-false-positive) (for false positives)
-
 4. [Submit support logs](#collect-diagnostic-data-for-file-submissions)
 
 ## Confirm prerequisites
@@ -53,7 +52,7 @@ Attack surface reduction rules will only work on devices with the following cond
 
 - Endpoints are running Windows 10 Enterprise, version 1709 (also known as the Fall Creators Update).
 
-- Endpoints are using Microsoft Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Microsoft Defender AV to disable itself](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+- Endpoints are using Microsoft Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Microsoft Defender Antivirus to disable itself](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 - [Real-time protection](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) is enabled.
 
@@ -62,8 +61,6 @@ Attack surface reduction rules will only work on devices with the following cond
 If these prerequisites have all been met, proceed to the next step to test the rule in audit mode.
 
 ## Use audit mode to test the rule
-
-You can visit the Windows Defender Test ground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm attack surface reduction rules are generally working for pre-configured scenarios and processes on a device, or you can use audit mode, which enables rules for reporting only.
 
 Follow these instructions in [Use the demo tool to see how attack surface reduction rules work](evaluate-attack-surface-reduction.md) to test the specific rule you're encountering problems with.
 
@@ -87,15 +84,15 @@ If you've tested the rule with the demo tool and with audit mode, and attack sur
 
 If the attack surface reduction rule is blocking something that it shouldn't block (also known as a false positive), you can add exclusions to prevent attack surface reduction rules from evaluating the excluded files or folders.
 
-To add an exclusion, see [Customize Attack surface reduction](customize-attack-surface-reduction.md).
+To add an exclusion, see [Customize Attack surface reduction](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules).
 
->[!IMPORTANT]
->You can specify individual files and folders to be excluded, but you cannot specify individual rules.
->This means any files or folders that are excluded will be excluded from all ASR rules.
+> [!IMPORTANT]
+> You can specify individual files and folders to be excluded, but you cannot specify individual rules.
+> This means any files or folders that are excluded will be excluded from all ASR rules.
 
 ## Report a false positive or false negative
 
-Use the [Windows Defender Security Intelligence web-based submission form](https://www.microsoft.com/wdsi/filesubmission) to report a false negative or false positive for network protection. With a Windows E5 subscription, you can also [provide a link to any associated alert](alerts-queue.md).
+Use the [Windows Defender Security Intelligence web-based submission form](https://www.microsoft.com/wdsi/support/report-exploit-guard) to report a false negative or false positive for network protection. With a Windows E5 subscription, you can also [provide a link to any associated alert](alerts-queue.md).
 
 ## Collect diagnostic data for file submissions
 
@@ -118,7 +115,5 @@ When you report a problem with attack surface reduction rules, you're asked to c
 ## Related articles
 
 - [Attack surface reduction rules](attack-surface-reduction.md)
-
 - [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
-
 - [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)

@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -17,6 +18,7 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - AdminTemplateSet
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -25,7 +27,7 @@ ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: "Learn how you can have more than one email address, called an email alias, associated with your Microsoft 365 for business account. "
 ---
 
-# Add another email alias for a user
+# Add another email alias for a Microsoft 365 business subscription user
   
 This article is for Microsoft 365 administrators who have business subscriptions. It's not for home users.
   
@@ -37,10 +39,13 @@ You can create up to 400 aliases for a user. No additional fees or licenses are 
   
 > [!Tip]
 > If you want multiple people to manage email sent to a single email address like info@NodPublishers.com or sales@NodPublishers.com, create a shared mailbox. To learn more, see [Create a shared mailbox](create-a-shared-mailbox.md).
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
   
 ## Add email aliases to a user
 
-You must have [admin permissions](../add-users/about-admin-roles.md) to do this. 
+You must have Global Admin rights to add email aliases to a user.
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
@@ -54,6 +59,10 @@ You must have [admin permissions](../add-users/about-admin-roles.md) to do this.
   
     > [!IMPORTANT]
     > If you purchased your subscription from GoDaddy or another Partner, to set the new alias as the primary, you must go to the GoDaddy/partner management console. 
+
+
+   > [!IMPORTANT]
+   >  If you get the error message **This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory**, It means that the Active Directory is authoritative for  attributes on synchronized users, you need to modify the attributes in your on-premises Active Directory.
   
     > [!TIP]
     > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](../setup/add-domain.md). 

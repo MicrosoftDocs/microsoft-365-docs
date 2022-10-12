@@ -1,10 +1,11 @@
 ---
 title: Provide managed security service provider (MSSP) access
-description: Learn about changes from the Microsoft Defender Security Center to the Microsoft 365 security center
-keywords: Getting started with the Microsoft 365 security center, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, single pane of glass, converged portal, security portal, defender security portal
-ms.prod: microsoft-365-enterprise
+description: Learn about changes from the Microsoft Defender Security Center to the Microsoft 365 Defender portal
+keywords: Getting started with the Microsoft 365 Defender portal, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, single pane of glass, converged portal, security portal, defender security portal
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: macapara
@@ -16,8 +17,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+- m365-security
+- tier2 
 ---
 
 # Provide managed security service provider (MSSP) access 
@@ -33,27 +34,27 @@ ms.collection:
 
 To implement a multi-tenant delegated access solution, take the following steps:
 
-1. Enable [role-based access control](/windows/security/threat-protection/microsoft-defender-atp/rbac) in Defender for Endpoint in Microsoft 365 security center and connect with Azure Active Directory (Azure AD) groups.
+1. Enable [role-based access control](/microsoft-365/security/defender-endpoint/rbac) for Defender for Endpoint via the Microsoft 365 Defender portal and connect with Azure Active Directory (Azure AD) groups.
 
-2. Configure [Governance Access Packages](/azure/active-directory/governance/identity-governance-overview) for access request and provisioning.
+2. Configure [entitlement management for external users](/azure/active-directory/governance/entitlement-management-external-users) within Azure AD Identity Governance to enable access requests and provisioning.
 
 3. Manage access requests and audits in [Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve).
 
-## Enable role-based access controls in Microsoft Defender for Endpoint in Microsoft 365 security center
+## Enable role-based access controls in Microsoft Defender for Endpoint in Microsoft 365 Defender portal
 
 1. **Create access groups for MSSP resources in Customer AAD: Groups**
 
-    These groups will be linked to the Roles you create in Defender for Endpoint in Microsoft 365 security center. To do so, in the customer AD tenant, create three groups. In our example approach, we create the following groups:
+    These groups will be linked to the Roles you create in Defender for Endpoint in Microsoft 365 Defender portal. To do so, in the customer AD tenant, create three groups. In our example approach, we create the following groups:
 
     - Tier 1 Analyst
     - Tier 2 Analyst
     - MSSP Analyst Approvers  
 
-2. Create Defender for Endpoint roles for appropriate access levels in Customer Defender for Endpoint in Microsoft 365 security center roles and groups.
+2. Create Defender for Endpoint roles for appropriate access levels in Customer Defender for Endpoint in Microsoft 365 Defender portal roles and groups.
 
-    To enable RBAC in the customer Microsoft 365 security center, access **Permissions >  Endpoints roles & groups > Roles** with a user account with Global Administrator or Security Administrator rights.
+    To enable RBAC in the customer Microsoft 365 Defender portal, access **Permissions >  Endpoints roles & groups > Roles** with a user account with Global Administrator or Security Administrator rights.
 
-    ![Image of MSSP access](../../media/mssp-access.png)
+    :::image type="content" source="../../media/mssp-access.png" alt-text="The details of the MSSP access in the Microsoft 365 Defender portal" lightbox="../../media/mssp-access.png":::
 
     Then, create RBAC roles to meet MSSP SOC Tier needs. Link these roles to the created user groups via "Assigned user groups".
 
@@ -63,9 +64,9 @@ To implement a multi-tenant delegated access solution, take the following steps:
       Perform all actions except for live response and manage security settings.
 
     - **Tier 2 Analysts** <br>
-      Tier 1 capabilities with the addition to [live response](/windows/security/threat-protection/microsoft-defender-atp/live-response)
+      Tier 1 capabilities with the addition to [live response](/microsoft-365/security/defender-endpoint/live-response).
 
-    For more information, see [Use role-based access control](/windows/security/threat-protection/microsoft-defender-atp/rbac).
+    For more information, see [Manage portal access using role-based access control](/microsoft-365/security/defender-endpoint/rbac).
 
 ## Configure Governance Access Packages
 
@@ -81,7 +82,8 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     To do so, in the customer AD tenant,  access Identity Governance: Catalogs, and add **New Catalog**. In our example, we will call it **MSSP Accesses**.
 
-    ![Image of new catalog](../../media/goverance-catalog.png)
+    :::image type="content" source="../../media/goverance-catalog.png" alt-text="A new catalog in the Microsoft 365 Defender portal" lightbox="../../media/goverance-catalog.png":::
+
 
     Further more information, see [Create a catalog of resources](/azure/active-directory/governance/entitlement-management-catalog-create).
 
@@ -96,7 +98,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
     - Can only be requested by users in the MSSP SOC Tenant
     - Access auto expires after 365 days
 
-    ![Image of new access package](../../media/new-access-package.png)
+    :::image type="content" source="../../media/new-access-package.png" alt-text="The details of a new access package in the Microsoft 365 Defender portal" lightbox="../../media/new-access-package.png":::
 
     For more information, see [Create a new access package](/azure/active-directory/governance/entitlement-management-access-package-create).
 
@@ -104,7 +106,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     The My Access portal link is used by MSSP SOC analysts to request access via the access packages created. The link is durable, meaning the same link may be used over time for new analysts. The analyst request goes into a queue for approval by the **MSSP Analyst Approvers**.
 
-    ![Image of access properties](../../media/access-properties.png)
+    :::image type="content" source="../../media/access-properties.png" alt-text="The access properties in the Microsoft 365 Defender portal" lightbox="../../media/access-properties.png":::
 
     The link is located on the overview page of each access package.
 
@@ -120,9 +122,6 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
 2. Approve or deny requests in the **Approvals** section of the UI.
 
-     At this point, analyst access has been provisioned, and each analyst should be able to access the customer's Microsoft 365 Security Center:
+     At this point, analyst access has been provisioned, and each analyst should be able to access the customer's Microsoft 365 Defender portal:
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` with the permissions and roles they were assigned.
-
-> [!IMPORTANT]
-> Delegated access to Microsoft Defender for Endpoint in the Microsoft 365 security center currently allows access to a single tenant per browser window.

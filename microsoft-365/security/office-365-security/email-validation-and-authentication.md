@@ -1,36 +1,35 @@
 ---
 title: Email authentication in Microsoft 365
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: conceptual
 
-search.appverid: 
+search.appverid:
   - MET150
-ms.assetid: 
-ms.collection: 
-  - M365-security-compliance
+ms.assetid:
+ms.collection:
+  - m365-security
   - Strat_O365_IP
 ms.custom: TopSMBIssues
-localization_priority: Priority
+ms.localizationpriority: high
 description: Admins can learn how EOP uses email authentication (SPF, DKIM, and DMARC) to help prevent spoofing, phishing, and spam.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Email authentication in EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
 
 Email authentication (also known as email validation) is a group of standards that tries to stop spoofing (email messages from forged senders). In all Microsoft 365 organizations, EOP uses these standards to verify inbound email:
 
@@ -50,7 +49,7 @@ However, DNS records for SPF, DKIM, and DMARC (collectively known as email authe
 
 As of March 2018, only 9% of domains of companies in the Fortune 500 publish strong email authentication policies. The remaining 91% of companies might be spoofed by an attacker. Unless some other email filtering mechanism is in-place, email from spoofed senders in these domains might be delivered to users.
 
-![DMARC policies of Fortune 500 companies](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
+![DMARC policies of Fortune 500 companies.](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
 The proportion of small-to-medium sized companies that publish strong email authentication policies is smaller. And the number is even smaller for email domains outside North America and western Europe.
 
@@ -83,7 +82,7 @@ Relying only on email authentication records to determine if an incoming message
 
 Composite authentication can address these limitations by passing messages that would otherwise fail email authentication checks.
 
-For simplicity, the following examples concentrate on email authentication results. Other back-end intelligence factors could identify messages that pass email authentication as spoofed, or messages that fail email email authentication as legitimate.
+For simplicity, the following examples concentrate on email authentication results. Other back-end intelligence factors could identify messages that pass email authentication as spoofed, or messages that fail email authentication as legitimate.
 
 For example, the fabrikam.com domain has no SPF, DKIM, or DMARC records. Messages from senders in the fabrikam.com domain can fail composite authentication (note the `compauth` value and reason):
 
@@ -161,9 +160,13 @@ Once you've gotten started with an SPF fallback policy of `?all`, you can gradua
 
 ### Configure permitted senders of unauthenticated email
 
-You can also use the [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [Tenant Allow/Block List](tenant-allow-block-list.md) to permit senders to transmit unauthenticated messages to your organization.
+You can also use the [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) to permit senders to transmit unauthenticated messages to your organization.
 
-For external domains, the spoofed user is the domain in the From address, while the sending infrastructure is either the source IP address (divided up into /24 CIDR ranges), or the organizational domain of the reverse DNS (PTR) record.
+For external domains, the spoofed user is the domain in the From address, while the sending infrastructure is one of the following values:
+
+- The source IP address (divided up into /24 CIDR ranges)
+- The organizational domain of the reverse DNS (PTR) record.
+- A verified DKIM domain.
 
 ### Create an allow entry for the sender/recipient pair
 

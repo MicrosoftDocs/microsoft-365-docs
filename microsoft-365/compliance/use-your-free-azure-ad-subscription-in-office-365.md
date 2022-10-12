@@ -2,26 +2,30 @@
 title: "Use your free Azure Active Directory subscription"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: "Learn how to access Azure Active Directory, which is included in your organization's paid subscription."
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkMAC
 ---
 
 # Use your free Azure Active Directory subscription
 
 If your organization has a paid subscription to Microsoft 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Microsoft Azure Active Directory. You and other admins can use Azure AD to create and manage user and group accounts. To use Azure AD, just go to the Azure portal and sign in to your account.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Open a private browsing session
 
@@ -45,6 +49,6 @@ Use a private browsing session (not a regular session) to access the Azure porta
 
 - A free Azure Active Directory subscription does not include the Sign-ins activity report. To record sign-in activity (which can be useful in a data breach), you need an Azure Active Directory Premium subscription. For more information, see [How long does Azure AD store the data?](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
-- You can also access the **Azure Active Directory** admin center from the Microsoft 365 admin center. In the left navigation pane of the Microsoft 365 admin center, click **Admin centers** \> **Azure Active Directory**.
+- You can also access the **Azure Active Directory** admin center from the Microsoft 365 admin center. In the left navigation pane of the Microsoft 365 admin center, click **Admin centers** \> [**Azure Active Directory**](https://go.microsoft.com/fwlink/p/?linkid=2067268).
 
 - For information about managing users and groups and performing other directory management tasks, see [Manage your Azure AD directory](/azure/active-directory/active-directory-administer).

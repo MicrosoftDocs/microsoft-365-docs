@@ -4,21 +4,23 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: "Learn to manage Microsoft 365 groups, including adding remove group members, editing the email address, group name, or description, and customizing how the group works."
+description: "Learn to manage Microsoft 365 Groups, including adding remove group members, editing the email address, group name, or description, and customizing how the group works."
 ---
 
 # Manage a group in the Microsoft 365 admin center
@@ -29,7 +31,7 @@ Go to the Microsoft 365 admin center at [https://admin.microsoft.com](https://ad
 
 ## Edit the group name or description
 
-1. In the admin center, expand **Groups**, and then click **Groups**.
+1. In the admin center, expand **Groups**, and then click <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
 
 2. Select the group that you want to edit, and then click **Edit name and description**.
 
@@ -37,7 +39,7 @@ Go to the Microsoft 365 admin center at [https://admin.microsoft.com](https://ad
 
 ## Manage group owners and members
 
-1. In the admin center, expand **Groups**, and then click **Groups**.
+1. In the admin center, expand **Groups**, and then click <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
 
 2. Click the name of the group you want to manage to open the settings pane.
 
@@ -55,7 +57,7 @@ When you turn this setting on, group members will get a copy of group emails and
 
 Group members can opt out of receiving these emails by choosing to stop following the group in Outlook.
 
-1. In the admin center, expand **Groups**, and then click **Groups**.
+1. In the admin center, expand **Groups**, and then click <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
 
 2. Click the name of the group you want to manage to open the settings pane.
 
@@ -67,7 +69,7 @@ Group members can opt out of receiving these emails by choosing to stop followin
 
 This option is great if you want to have a company email address such as info@contoso.com.
  
-1. In the admin center, expand **Groups**, and then click **Groups**.
+1. In the admin center, expand **Groups**, and then click <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
 
 2. Click the name of the group you want to manage to open the settings pane.
 
@@ -75,12 +77,15 @@ This option is great if you want to have a company email address such as info@co
     
 4. Select **Save**.
 
+> [!NOTE]
+> It may take up to 30 minutes before users outside the organization can email the group.
+
 ## Permanently delete a Microsoft 365 group
 
 Sometimes you may want to permanently purge a group without waiting for the 30 day soft-deletion period to expire. To do that, start PowerShell and run this command to get the object ID of the group:
  
  ```powershell
-`Get-AzureADMSDeletedGroup`
+Get-AzureADMSDeletedGroup
 ```
 
 Take note of the object ID of the group, or groups, that you want to permanently delete.
@@ -91,7 +96,7 @@ Take note of the object ID of the group, or groups, that you want to permanently
 To purge the group run this command in PowerShell:
 
 ```powershell
-`Remove-AzureADMSDeletedDirectoryObject -Id <objectId>`
+Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 ```
 
 To confirm that the group has been successfully purged, run the  *Get-AzureADMSDeletedGroup*  cmdlet again to confirm that the group no longer appears on the list of soft-deleted groups. In some cases it may take as long as 24 hours for the group and all of its data to be permanently deleted. 
@@ -100,12 +105,12 @@ To confirm that the group has been successfully purged, run the  *Get-AzureADMSD
 
 [Create a Microsoft 365 group](create-groups.md)
 
-[Manage guest access to Microsoft 365 groups](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Manage guest access to Microsoft 365 Groups](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[Choose the domain to use when creating Microsoft 365 groups](../../solutions/choose-domain-to-create-groups.md)
+[Choose the domain to use when creating Microsoft 365 Groups](../../solutions/choose-domain-to-create-groups.md)
 
 [Allow members to send as or send on behalf of a Microsoft 365 group](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
-[Upgrade distribution lists to Microsoft 365 groups](../manage/upgrade-distribution-lists.md)
+[Upgrade distribution lists to Microsoft 365 Groups](../manage/upgrade-distribution-lists.md)
 
-[Manage Microsoft 365 groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
+[Manage Microsoft 365 Groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md)

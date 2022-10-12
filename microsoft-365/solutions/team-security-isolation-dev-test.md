@@ -1,20 +1,23 @@
 ---
 title: "Configure a team with security isolation in a dev/test environment"
-author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
-ms.author: josephd
-manager: laurawi
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.service: o365-solutions
+ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom:
+ms.custom: 
+- admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
 description: Configure the security and infrastructure that allows your employees to work remotely from anywhere and at any time.
 ---
 
@@ -22,7 +25,7 @@ description: Configure the security and infrastructure that allows your employee
 
 This article provides step-by-step instructions to create a [team with security isolation](secure-teams-security-isolation.md) in a dev/test environment.
 
-![Configuration for the Company Strategy isolated team](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
+[Configuration for the Company Strategy isolated team.](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
 Use this dev/test environment to experiment and fine-tune settings for your specific needs before deploying this type of team in production.
 
@@ -134,29 +137,28 @@ Next, you need to configure a sensitivity label with the following settings:
 
 Follow these steps:
 
-1. Open the [Microsoft 365 compliance center](https://compliance.microsoft.com).
-2. Under **Solutions**, click **Information protection**.
-3. Click **Create a label**.
-4. Type **Company Strategy** for the label name.
-5. Type **Senior leadership company strategy documents** as the tool tip, and then click **Next**.
-6. On the **Encryption** page, in the **Encryption** dropdown, choose **Apply**.
-7. To add the team permissions:<br>
+1. Open the Microsoft Purview compliance portal, under **Solutions**, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection**</a>.
+1. Click **Create a label**.
+1. Type **Company Strategy** for the label name.
+1. Type **Senior leadership company strategy documents** as the tool tip, and then click **Next**.
+1. On the **Encryption** page, in the **Encryption** dropdown, choose **Apply**.
+1. To add the team permissions:<br>
   a. Click **Assign permissions**.<br>
   b. Click **Add users or groups**, select **Company Strategy**, and then click **Add**.<br>
   c. Click **Choose permissions**.<br>
   d. Choose **Co-Author** from the dropdown list, and then click **Save**.<br>
-8. Click **Next**.
-9. On the **Content marking** page, click **Next**.
-10. On the **Site and group settings** page, set **Site and group settings** to **On**.
-11. In the **Privacy of Office 365 group-connected team sites** dropdown, choose **Private - only members can access the site**.
-12. Under **Unmanaged devices**, choose **Block access**.
-13. Click **Next**.
-14. On the **Auto-labeling for Office apps** page, click **Next**.
-15. Click **Submit**, and then click **Done**.
+1. Click **Next**.
+1. On the **Content marking** page, click **Next**.
+1. On the **Site and group settings** page, set **Site and group settings** to **On**.
+1. In the **Privacy of Office 365 group-connected team sites** dropdown, choose **Private - only members can access the site**.
+1. Under **Unmanaged devices**, choose **Block access**.
+1. Click **Next**.
+1. On the **Auto-labeling for Office apps** page, click **Next**.
+1. Click **Submit**, and then click **Done**.
 
 Next, publish the new label with these steps:
 
-1. In the Microsoft 365 compliance center, on the **Information protection** page, choose the **Label policies** tab.
+1. In the Microsoft Purview compliance portal, on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection**</a>, choose the **Label policies** tab.
 2. Click **Publish labels**.
 3. On the **Choose sensitivity labels to publish** page, click **Choose sensitivity labels to publish**.
 4. Select **Company Strategy**, and then click **Add**.
@@ -173,15 +175,14 @@ It may take some time for the **Company Strategy** label to become available aft
 
 Next, apply your new label to the **Company Strategy** team and update the default sharing link type to reduce the risk of accidentally sharing files and folders to a wider audience than intended.
 
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. Under **Sites**, click **Active sites**.
-3. Click the **Company Strategy** site.
-4. On the **Policies** tab, under **Sensitivity**, click **Edit**.
-5. Select the **Company Strategy** label, and then click **Save**.
-6. On the **Policies** tab, under **External sharing**, click **Edit**.
-5. Choose **Only people in your organization**.
-6. Under **Default sharing** link type, clear the **Same as organization-level setting** check box, and select **People with existing access**.
-7. Click **Save**.
+1. Open the SharePoint admin center, under **Sites**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
+1. Select the **Company Strategy** site.
+1. On the **Policies** tab, under **Sensitivity**, select **Edit**.
+1. Select the **Company Strategy** label, and then select **Save**.
+1. On the **Policies** tab, under **External sharing**, select **Edit**.
+1. Choose **Only people in your organization**.
+1. Under **Default sharing** link type, clear the **Same as organization-level setting** check box, and select **People with existing access**.
+1. Select **Save**.
 
 Next, configure owners-only site sharing for the **Company Strategy** team.
 
@@ -197,7 +198,7 @@ If you sign in as a member of the Company Strategy group, you will see **Company
 
 Here is the resulting configuration for the Company Strategy team.
 
-![Configuration for the Company Strategy isolated team](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
+![Configuration for the Company Strategy isolated team.](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
 ## Next step
 

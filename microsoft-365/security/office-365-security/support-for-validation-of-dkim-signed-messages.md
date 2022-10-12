@@ -8,20 +8,20 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Learn about the validation of DKIM signed messages in Exchange Online Protection and Exchange Online
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Support for validation of DKIM signed messages
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

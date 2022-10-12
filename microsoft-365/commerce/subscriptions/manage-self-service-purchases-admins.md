@@ -2,25 +2,26 @@
 title: Manage self-service purchases (Admins)
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: mijeffer, pablom
+ms.reviewer: prlachhw, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration 
-localization_priority: Normal
+ms.service: microsoft-365-business 
+ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
+- commerce_ssp
 - AdminSurgePortfolio
 - okr_smb
-- commerce_ssp
 search.appverid:
 - MET150
 description: "Admins can learn how to manage self-service purchases made by users in their organization."
-ms.date: 03/26/2021
+ms.date: 05/24/2022
 ---
 
 # Manage self-service purchases (Admin)
@@ -34,12 +35,6 @@ You can also control whether users in your organization can make self-service pu
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
 
 ::: moniker-end
 
@@ -59,12 +54,6 @@ You can also control whether users in your organization can make self-service pu
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.
 
 ::: moniker-end
 
@@ -91,6 +80,9 @@ You can use the **MSCommerce** PowerShell module to:
 - View a list of applicable products and whether self-service purchase is enabled or disabled
 - View or modify the current setting for a specific product to either enable or disable it
 
+> [!IMPORTANT]
+> When you use the **AllowSelfServicePurchase** policy, it enables or disables both self-service purchases and self-service trials. For a list of the products available for self-service purchase, see [View a list of self-service purchase products and their status](allowselfservicepurchase-powershell.md#view-a-list-of-self-service-purchase-products-and-their-status). Only Project and Visio are available for trial subscriptions.
+
 For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
 
 ## Centralize licenses under a single subscription
@@ -100,12 +92,6 @@ You can assign existing licenses or purchase additional subscriptions through ex
 ::: moniker range="o365-worldwide"
 
 1. In the admin center go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Purchase services** page.
 
 ::: moniker-end
 
@@ -141,12 +127,6 @@ When you move users to a different subscription, the old subscription is automat
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.
@@ -172,12 +152,6 @@ When you choose to cancel a self-service purchase subscription, users with licen
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.
@@ -197,4 +171,4 @@ When you choose to cancel a self-service purchase subscription, users with licen
 
 For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.yml).
 
-If you have questions or need help with self-service purchases, [contact support](../../business-video/get-help-support.md).
+If you have questions or need help with self-service purchases, [contact support](../../admin/get-help-support.md).

@@ -2,14 +2,14 @@
 title: "Service assurance in the Security & Compliance Center"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - BCS160
@@ -36,6 +36,8 @@ You can also find out how Office 365 can help customers comply with standards, l
     
 - Federal Risk and Authorization Management Program (FedRAMP)
     
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Who can access Office 365 Service assurance, and how?
 
  **New customers, and customers evaluating Microsoft online services** can access Service assurance which is included with Office 365 Enterprise E3 and E5 plans (both trial and paid subscriptions). If you don't have one of these plans and want to try Service assurance, you can [sign-up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
@@ -68,7 +70,7 @@ To review and download content, select an option from the navigation pane:
   
 - **Trust documents** to view information about how Microsoft operates Office 365 as shown in the following screen shot. 
     
-    ![Shows the Service assurance page: Trust documents provided by Microsoft](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
+    ![Shows the Service assurance page: Trust documents provided by Microsoft.](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
   
 - **Audited controls** to view information about how Office 365 controls meet security, compliance, and privacy requirements, as shown in the following screen shot. 
     
@@ -90,7 +92,7 @@ Depending on your specific set-up, options included in your view might have some
 ## Get help with Service assurance
 <a name="addother"> </a>
 
-[Contact support for business products - Admin Help](../business-video/get-help-support.md).
+[Contact support for business products - Admin Help](../admin/get-help-support.md).
   
 ## Frequently Asked Questions
 <a name="addother"> </a>

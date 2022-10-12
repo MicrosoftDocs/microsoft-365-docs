@@ -3,7 +3,8 @@ title: Troubleshoot Microsoft 365 Defender service issues
 description: Find solutions and workarounds to known Microsoft 365 Defender issues
 keywords: troubleshoot Microsoft 365 Defender, troubleshoot, Microsoft Defender for Identity, issues, add-on, settings page
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,15 +12,16 @@ f1.keywords:
   - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security-compliance
+- tier3
 ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 
 # Troubleshoot Microsoft 365 Defender service issues
@@ -40,13 +42,13 @@ For more information, see [Prerequisites](prerequisites.md).
 
 ## Microsoft Defender for Identity alerts are not showing up in the Microsoft 365 Defender incidents
 
-If you have Microsoft Defender for Identity deployed in your environment but you're not seeing Defender for Identity alerts as part of Microsoft 365 Defender incidents, you'll need to ensure that the Microsoft Cloud App Security and Defender for Identity integration is enabled.
+If you have Microsoft Defender for Identity deployed in your environment but you're not seeing Defender for Identity alerts as part of Microsoft 365 Defender incidents, you'll need to ensure that the Microsoft Defender for Cloud Apps and Defender for Identity integration is enabled.
 
 For more information, see [Microsoft Defender for Identity integration](/cloud-app-security/mdi-integration).
 
 ## Where is the settings page for turning on the service?
 
-To turn on Microsoft 365 Defender, access **Settings** from the navigation pane in the Microsoft 365 security center. This navigation item is visible only if you have the [prerequisite permissions and licenses](m365d-enable.md#check-license-eligibility-and-required-permissions).
+To turn on Microsoft 365 Defender, access **Settings** from the navigation pane in the Microsoft 365 Defender portal. This navigation item is visible only if you have the [prerequisite permissions and licenses](m365d-enable.md#check-license-eligibility-and-required-permissions).
 
 ## How do I create an exception for my file/URL?
 

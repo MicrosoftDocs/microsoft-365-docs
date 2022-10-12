@@ -1,15 +1,16 @@
 ---
 title: "Overview of Contoso Corporation"
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
-manager: laurawi
+ms.author: kvice
+manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
@@ -25,7 +26,7 @@ The Contoso Corporation is a multinational business with its headquarters in Par
 
 Figure 1 shows the headquarters office in Paris and regional hub and satellite offices on various continents.
 
-![Contoso offices around the world](../media/contoso-overview/contoso-overview-fig1.png)
+![Contoso offices around the world.](../media/contoso-overview/contoso-overview-fig1.png)
 
 **Figure 1: Contoso offices around the world**
  

@@ -1,16 +1,17 @@
 ---
 title: "Deploy Microsoft 365 Directory Synchronization in Microsoft Azure"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 11/05/2018
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-solutions
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: 
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 f1.keywords:
@@ -26,7 +27,7 @@ description: Learn how to deploy Azure AD Connect on a virtual machine in Azure 
 
 Azure Active Directory (Azure AD) Connect (formerly known as the Directory Synchronization tool, Directory Sync tool, or the DirSync.exe tool) is an application that you install on a domain-joined server to synchronize your on-premises Active Directory Domain Services (AD DS) users to the Azure AD tenant of your Microsoft 365 subscription. Microsoft 365 uses Azure AD for its directory service. Your Microsoft 365 subscription includes an Azure AD tenant. This tenant can also be used for management of your organization's identities with other cloud workloads, including other SaaS applications and apps in Azure.
 
-You can install Azure AD Connect on a on-premises server, but you can also install it on a virtual machine in Azure for these reasons:
+You can install Azure AD Connect on an on-premises server, but you can also install it on a virtual machine in Azure for these reasons:
   
 - You can provision and configure cloud-based servers faster, making the services available to your users sooner.
 - Azure offers better site availability with less effort.
@@ -41,9 +42,9 @@ This solution requires connectivity between your on-premises network and your Az
 
 The following diagram shows Azure AD Connect running on a virtual machine in Azure (the directory sync server) that synchronizes an on-premises AD DS forest to a Microsoft 365 subscription.
   
-![Azure AD Connect tool on a virtual machine in Azure synchronizing on-premises accounts to the Azure AD tenant of a Microsoft 365 subscription with traffic flow](../media/CP-DirSyncOverview.png)
+![Azure AD Connect tool on a virtual machine in Azure synchronizing on-premises accounts to the Azure AD tenant of a Microsoft 365 subscription with traffic flow.](../media/CP-DirSyncOverview.png)
   
-In the diagram, there are two networks connected by a site-to-site VPN or ExpressRoute connection. There is an on-premises network where AD DS domain controllers are located, and there is an Azure virtual network with a directory sync server, which is a virtual machine running [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). There are two main traffic flows originating from the directory sync server:
+In the diagram, there are two networks connected by a site-to-site VPN or ExpressRoute connection. There's an on-premises network where AD DS domain controllers are located, and there's an Azure virtual network with a directory sync server, which is a virtual machine running [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). There are two main traffic flows originating from the directory sync server:
   
 -  Azure AD Connect queries a domain controller on the on-premises network for changes to accounts and passwords.
 -  Azure AD Connect sends the changes to accounts and passwords to the Azure AD instance of your Microsoft 365 subscription. Because the directory sync server is in an extended portion of your on-premises network, these changes are sent through the on-premises network's proxy server.
@@ -63,7 +64,7 @@ There are two major steps when you deploy this solution:
     
     Configuring Azure AD Connect requires the credentials (user name and password) of an Azure AD administrator account and a AD DS enterprise administrator account. Azure AD Connect runs immediately and on an ongoing basis to synchronize the on-premises AD DS forest to Microsoft 365.
     
-Before you deploy this solution in production, you can use the instructions in [The simulated enterprise base configuration](simulated-ent-base-configuration-microsoft-365-enterprise.md) to set this configuration up as a proof of concept, for demonstrations, or for experimentation.
+Before you deploy this solution in production, you can use the instructions in [The simulated enterprise base configuration](simulated-ent-base-configuration-microsoft-365-enterprise.md) to set up this configuration as a proof of concept, for demonstrations, or for experimentation.
   
 > [!IMPORTANT]
 > When Azure AD Connect configuration completes, it does not save the AD DS enterprise administrator account credentials. 
@@ -96,9 +97,9 @@ The following list describes the design choices made for this solution.
     
 - On the on-premises network, a domain controller and DNS servers exist.
     
-- Azure AD Connect performs password hash synchronization instead of single sign-on. You do not have to deploy an Active Directory Federation Services (AD FS) infrastructure. To learn more about password hash synchronization and single sign-on options, see [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](/azure/active-directory/hybrid/choose-ad-authn).
+- Azure AD Connect performs password hash synchronization instead of single sign-on. You don't have to deploy an Active Directory Federation Services (AD FS) infrastructure. To learn more about password hash synchronization and single sign-on options, see [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](/azure/active-directory/hybrid/choose-ad-authn).
     
-There are additional design choices that you might consider when you deploy this solution in your environment. These include the following:
+There are other design choices that you might consider when you deploy this solution in your environment. These include the following:
   
 - If there are existing DNS servers in an existing Azure virtual network, determine whether you want your directory sync server to use them for name resolution instead of DNS servers on the on-premises network.
     
@@ -123,7 +124,7 @@ To create and configure the Azure virtual network, complete [Phase 1: Prepare yo
   
 This is your resulting configuration.
   
-![Phase 1 of the directory sync server for Microsoft 365 hosted in Azure](../media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
+![Phase 1 of the directory sync server for Microsoft 365 hosted in Azure.](../media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
   
 This figure shows an on-premises network connected to an Azure virtual network through a site-to-site VPN or ExpressRoute connection.
   
@@ -145,7 +146,7 @@ For Azure AD Connect to gain access to Internet resources, you must configure th
   
 This is your resulting configuration.
   
-![Phase 2 of the directory sync server for Microsoft 365 hosted in Azure](../media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
+![Phase 2 of the directory sync server for Microsoft 365 hosted in Azure.](../media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
   
 This figure shows the directory sync server virtual machine in the cross-premises Azure virtual network.
   
@@ -162,7 +163,7 @@ Complete the following procedure:
   
 This is your resulting configuration.
   
-![Phase 3 of the directory sync server for Microsoft 365 hosted in Azure](../media/3f692b62-b77c-4877-abee-83c7edffa922.png)
+![Phase 3 of the directory sync server for Microsoft 365 hosted in Azure.](../media/3f692b62-b77c-4877-abee-83c7edffa922.png)
   
 This figure shows the directory sync server with Azure AD Connect in the cross-premises Azure virtual network.
   
@@ -172,8 +173,7 @@ Azure AD Connect adds accounts to your Microsoft 365 subscription from the on-pr
   
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com), and then click **Admin**.
     
-2. In the left navigation, click **Users > Active users**.
-    
+2. In the left navigation, click **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 3. In the list of user accounts, select the check box next to the user you want to activate.
     
 4. On the page for the user, click **Edit** for **Product licenses**.

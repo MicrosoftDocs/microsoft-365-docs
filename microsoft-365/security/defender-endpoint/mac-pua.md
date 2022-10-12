@@ -1,23 +1,22 @@
 ---
 title: Detect and block potentially unwanted applications with Microsoft Defender for Endpoint on Mac
-description: Detect and block Potentially Unwanted Applications (PUA) using Microsoft Defender on Endpoint for Mac.
+description: Detect and block Potentially Unwanted Applications (PUA) using Microsoft Defender for Endpoint on macOS.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, pua, pus
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Detect and block potentially unwanted applications with Microsoft Defender for Endpoint on macOS
@@ -25,11 +24,11 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
-
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 The potentially unwanted application (PUA) protection feature in Microsoft Defender for Endpoint on macOS can detect and block PUA files on endpoints in your network.
 
@@ -48,11 +47,11 @@ When a PUA is detected on an endpoint, Microsoft Defender for Endpoint on macOS 
 PUA protection in Microsoft Defender for Endpoint on macOS can be configured in one of the following ways:
 
 - **Off**: PUA protection is disabled.
-- **Audit**: PUA files are reported in the product logs, but not in Microsoft Defender Security Center. No notification is presented to the user and no action is taken by the product.
-- **Block**: PUA files are reported in the product logs and in Microsoft Defender Security Center. The user is presented with a notification and action is taken by the product.
+- **Audit**: PUA files are reported in the product logs, but not in Microsoft 365 Defender portal. No notification is presented to the user and no action is taken by the product.
+- **Block**: PUA files are reported in the product logs and in Microsoft 365 Defender portal. The user is presented with a notification and action is taken by the product.
 
->[!WARNING]
->By default, PUA protection is configured in **Audit** mode.
+> [!WARNING]
+> By default, PUA protection is configured in **Audit** mode.
 
 You can configure how PUA files are handled from the command line or from the management console.
 

@@ -1,6 +1,7 @@
 ---
-title: "Attributes for information barrier policies"
-description: This article is a reference for the Azure Active Directory user account attributes that you can use to define information barrier segments.
+title: "Information barriers attributes"
+description: This article is a reference for the Azure Active Directory user account attributes that you can use to define information barriers segments.
+keywords: Microsoft 365, Microsoft Purview, compliance, information barriers
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -8,26 +9,29 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
-localization_priority: None
+- tier2
+- purview-compliance
+ms.localizationpriority: null
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ---
 
-# Attributes for information barrier policies
+# Information barriers attributes
 
-Certain attributes in Azure Active Directory can be used to segment users. Once segments are defined, those segments can be used as filters for information barrier policies. For example, you might use **Department** to define segments of users by department within your organization (assuming no single employee works for two departments at the same time).
+Certain attributes in Azure Active Directory can be used to segment users in information barriers (IB). Once segments are defined, those segments can be used as filters for IB policies. For example, you might use **Department** to define segments of users by department within your organization (assuming no single employee works for two departments at the same time).
 
 This article describes how to use attributes with information barriers, and it provides a list of attributes that can be used. To learn more about information barriers, see the following resources:
 
 - [Information barriers](information-barriers.md)
 - [Define policies for information barriers in Microsoft Teams](information-barriers-policies.md)
-- [Edit (or remove) information barrier policies](information-barriers-edit-segments-policies.md)
+- [Edit (or remove) IB policies](information-barriers-edit-segments-policies.md)
 
-## How to use attributes in information barrier policies
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-The attributes listed in this article can be used to define or edit segments of users. Your defined segments serve as parameters (called *UserGroupFilter* values) in [information barrier policies](information-barriers-policies.md).
+## How to use attributes in IB policies
+
+The attributes listed in this article can be used to define or edit segments of users. Your defined segments serve as parameters (called *UserGroupFilter* values) in [IB policies](information-barriers-policies.md).
 
 1. Determine which attribute you want to use to define segments. (See the [Reference](#reference) section in this article.)
 
@@ -92,5 +96,5 @@ The following table lists the attributes that you can use with information barri
 ## Resources
 
 - [Define policies for information barriers in Microsoft Teams](information-barriers-policies.md)
-- [Troubleshooting information barriers](information-barriers-troubleshooting.md)
+- [Troubleshooting information barriers](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)
 - [Information barriers](information-barriers.md)

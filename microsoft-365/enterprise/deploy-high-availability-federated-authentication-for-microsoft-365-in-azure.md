@@ -1,16 +1,17 @@
 ---
 title: "Deploy high availability federated authentication for Microsoft 365 in Azure"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 search.appverid:
 - MET150s
 ms.collection: 
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 f1.keywords:
@@ -37,7 +38,7 @@ Here is the configuration, with placeholder names for each server.
   
 **A high availability federated authentication for Microsoft 365 infrastructure in Azure**
 
-![The final configuration of the high availability Microsoft 365 federated authentication infrastructure in Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![The final configuration of the high availability Microsoft 365 federated authentication infrastructure in Azure.](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 All of the virtual machines are in a single cross-premises Azure virtual network (VNet). 
   

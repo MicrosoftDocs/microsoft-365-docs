@@ -7,15 +7,17 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: landing-page
-ms.service: o365-administration
-localization_priority: Priority
+ms.service: microsoft-365-business
+ms.localizationpriority: high
 ms.collection: 
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 - TRN_SMB
 ms.custom:
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
@@ -40,6 +42,6 @@ Not a business? See [Set up for Microsoft 365 Family or Microsoft 365 Personal](
 
 ## Related content
 
-[Get started](../setup/index.yml) (link page)\
+[Get started](/admin) (link page)\
 [How to sign up - Admin Help](../admin-overview/sign-up-for-office-365.md) (video)\
 [Try or buy a Microsoft 365 for business subscription](../../commerce/try-or-buy-microsoft-365.md) (article)

@@ -1,16 +1,17 @@
 ---
 title: "Microsoft 365 solutions for the Contoso Corporation"
-author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
-ms.author: josephd
-manager: dansimp
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.service: o365-solutions
+ms.localizationpriority: high
 ms.collection: 
+- highpri
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom:

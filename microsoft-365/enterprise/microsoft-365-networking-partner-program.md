@@ -2,12 +2,14 @@
 title: "Microsoft 365 Networking Partner Program"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Ent_O365
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 - NOCSH
@@ -30,8 +32,4 @@ To modernize enterprise networks for great connectivity to Microsoft 365, custom
 
 The Microsoft 365 Networking Partner Program helps answer these questions and demonstrates Microsoft’s commitment to help our customers build and optimize their network architecture for the best Microsoft 365 experience. The Microsoft 365 team is working with many network industry partners to help ensure that the key principles for optimal connectivity are natively built into their network product and solutions.
 
-The Microsoft 365 Networking Partner Program designates qualified networking solutions as “Works with Microsoft 365”. Only devices or solutions that meet Microsoft’s rigorous testing requirements, have seamless experiences with setup, and demonstrate a high-quality networking experience when used with Microsoft 365 will receive the “Works with Microsoft 365” designation. These validated partner solutions are listed on the [Microsoft 365 Networking Partner Program page](https://www.microsoft.com/microsoft-365/partners/O365networkingpartners), along with solution details and links to learn more.
-
-If you are a Microsoft 365 customer, you can make your network solution provider aware of this program through this page at [https://aka.ms/Office365NPP]().
-
-For network solution providers who want to inquire about the Microsoft 365 Networking Partner Program, please fill out the form at [https://aka.ms/NPPsignup](https://aka.ms/NPPsignup). Thank you for your interest and we look forward to a beautiful partnership.
+The Microsoft 365 Networking Partner Program designates qualified networking solutions as “Works with Microsoft 365”. Only devices or solutions that meet Microsoft’s rigorous testing requirements, have seamless experiences with setup, and demonstrate a high-quality networking experience when used with Microsoft 365 will receive the “Works with Microsoft 365” designation. These validated partner solutions are listed on the [Microsoft 365 networking partners page](https://cloudpartners.transform.microsoft.com/m365networkingpartners), along with solution details and links to learn more.

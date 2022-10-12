@@ -10,22 +10,22 @@ audience: ITPro
 ms.topic: how-to
 f1_keywords: 
   - 'ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers'
-
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
   - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Admins can learn how to remove users from the Restricted users page in the Microsoft 365 Defender portal. Users are added to the Restricted users portal for sending outbound spam, typically as a result of account compromise.
-ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.custom: 
+- seo-marvel-apr2020
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Remove blocked users from the Restricted users portal in Microsoft 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -34,17 +34,27 @@ ms.prod: m365-security
 
 If a user exceeds one of the outbound sending limits as specified in [the service limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) or in [outbound spam policies](configure-the-outbound-spam-policy.md), the user is restricted from sending email, but they can still receive email.
 
-The user is added to the **Restricted users** page in the Microsoft 365 Defender portal. When they try to send email, the message is returned in a non-delivery report (also known as an NDR or bounce messages) with the error code [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) and the following text:
+The user is added to the **Restricted users** page in the Microsoft 365 Defender portal. When they try to send email, the message is returned in a non-delivery report (also known as an NDR or bounce message) with the error code [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) and the following text:
 
 > "Your message couldn't be delivered because you weren't recognized as a valid sender. The most common reason for this is that
 > your email address is suspected of sending spam and it's no longer allowed to send email.  Contact  your email admin for
 > assistance. Remote Server returned '550 5.1.8 Access denied, bad outbound sender."
 
-Admins can remove users from the Restricted users page in the Microsoft 365 Defender or in Exchange Online PowerShell.
+Admins can remove users from the **Restricted users** page in the Microsoft 365 Defender or in Exchange Online PowerShell.
+
+## Learn more on Restricted entities
+
+A restricted entity is an entity that has been blocked from sending email because either it has been potentially compromised, or it has exceeded sending limit.
+
+There are 2 types of restricted entities: 
+
+- **Restricted user**: Learn about why a user can be restricted and how to handle restricted users (this article).  
+
+- **Restricted connector**: For more information about why a connector can be restricted and how to handle restricted connectors, see [Remove blocked connectors from the Restricted entities portal](remove-blocked-connectors.md). 
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. Too go directly to the **Restricted users** page, use <https://security.microsoft.com/restrictedusers>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Restricted users** page, use <https://security.microsoft.com/restrictedusers>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -64,7 +74,7 @@ Admins can remove users from the Restricted users page in the Microsoft 365 Defe
 
 ## Use the Microsoft 365 Defender portal to remove a user from the Restricted users list
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** > **Review** > **Restricted users**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Restricted users**. To go directly to the **Restricted users** page, use <https://security.microsoft.com/restrictedusers>.
 
 2. On the **Restricted users** page, find and select the user that you want to unblock by clicking on the user.
 
@@ -81,7 +91,7 @@ Admins can remove users from the Restricted users page in the Microsoft 365 Defe
 6. Click **Yes** to confirm the change.
 
    > [!NOTE]
-   > It might take up to 24 hours for all restrictions to be removed from the user.
+   > It might take up to 1 hour for all restrictions to be removed from the user.
 
 ## Verify the alert settings for restricted users
 
@@ -90,15 +100,15 @@ The default alert policy named **User restricted from sending email** will autom
 > [!IMPORTANT]
 > For alerts to work, audit log search must to be turned on. For more information, see [Turn the audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Alert policy**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Alert policy**. To go directly to the **Alert policy** page, use <https://security.microsoft.com/alertpolicies>.
 
-2. On the **Alert policy** page, find and select the alert named **User restricted from sending email**. You can sort the policies by name, or use the **Search box** to find the policy.
+2. On the **Alert policy** page, find and select the alert named **User restricted from sending email**. You can sort the policies by name, or use the **Search** box to find the policy.
 
 3. In the **User restricted from sending email** flyout that appears, verify or configure the following settings:
-   - **Status**: Verify the alert is turned on ![Toggle on](../../media/scc-toggle-on.png).
+   - **Status**: Verify the alert is turned on ![Toggle on.](../../media/scc-toggle-on.png).
    - **Email recipients**: Click **Edit** and verify or configure the following settings in the **Edit recipients** flyout that appears:
      - **Send email notifications**: Verify this is selected (**On**).
-     - **Email recipients**: The default value is **TenantAdmins** (meaning, **Global admin** members). To add more recipients, click in a blank area of the box. A list of recipients will appear, and you can start typing a name to filter and select a recipient. You can remove an existing recipient from the box by clicking ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to their name.
+     - **Email recipients**: The default value is **TenantAdmins** (meaning, **Global admin** members). To add more recipients, click in a blank area of the box. A list of recipients will appear, and you can start typing a name to filter and select a recipient. You can remove an existing recipient from the box by clicking ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to their name.
      - **Daily notification limit**: The default value is **No limit** but you can select a limit for the maximum number of notifications per day.
 
      When you're finished, click **Save**.

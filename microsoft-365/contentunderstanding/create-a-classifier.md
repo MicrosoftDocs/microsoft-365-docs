@@ -1,21 +1,22 @@
 ---
-title: Create a classifier in Microsoft SharePoint Syntex
+title: Create a classifier in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
-localization_priority: Priority
-description: Learn how to create a classifier in Microsoft SharePoint Syntex.
+ms.custom: admindeeplinkSPO
+ms.localizationpriority:  medium
+description: Learn how to create a classifier in Microsoft Syntex.
 ---
 
-# Create a classifier in Microsoft SharePoint Syntex
+# Create a classifier in Microsoft Syntex
 
 
 </br>
@@ -26,7 +27,7 @@ description: Learn how to create a classifier in Microsoft SharePoint Syntex.
 
 A classifier is a type of model that you can use to automate identification and classification of a document type. For example, you might want to identify all *Contract Renewal* documents that are added to your document library, such as is shown in the following illustration.
 
-![Contract Renewal document](../media/content-understanding/contract-renewal.png)
+![Contract Renewal document.](../media/content-understanding/contract-renewal.png)
 
 Creating a classifier enables you to create a new [SharePoint content type](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) that will be associated to the model.
 
@@ -56,7 +57,7 @@ The first step to create your model is to give it a name:
 
 When you create a model, you are also creating a new site content type. A content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint content types are managed through the [Content types gallery](https://support.microsoft.com/office/create-or-customize-a-site-content-type-27eb6551-9867-4201-a819-620c5658a60f). For this example, when you create the model, you are creating a new *Contract Renewal* content type.
 
-Select **Advanced settings** if you want to map this model to an existing enterprise content type in the SharePoint Content types gallery to use its schema. Enterprise content types are stored in the Content Type Hub in the SharePoint admin center and are syndicated to all sites in the tenant. Note that while you can use an existing content type to leverage its schema to help with identification and classification, you still need to train your model to extract information from files it identifies.</br>
+Select **Advanced settings** if you want to map this model to an existing enterprise content type in the SharePoint <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">Content type gallery</a> to use its schema. Enterprise content types are stored in the Content Type Hub in the SharePoint admin center and are syndicated to all sites in the tenant. Note that while you can use an existing content type to leverage its schema to help with identification and classification, you still need to train your model to extract information from files it identifies.</br>
 
 ![Advanced settings.](../media/content-understanding/advanced-settings.png)
 
@@ -138,9 +139,10 @@ If you received a match on your labeled sample files, you can now  test your mod
 1. From the model home page, select the **Test** tab. This runs the model on your unlabeled sample files.
 2. In the **Test files** list, your example files display and shows if the model predicted them to be positive or negative. Use this information to help determine the effectiveness of your classifier in identifying your documents.
 
-    ![Test of unlabeled files](../media/content-understanding/test-on-files.png) 
+    ![Test of unlabeled files.](../media/content-understanding/test-on-files.png) 
 
-## See Also
+## See also
+
 [Create an extractor](create-an-extractor.md)
 
 [Document Understanding overview](document-understanding-overview.md)
@@ -149,4 +151,4 @@ If you received a match on your labeled sample files, you can now  test your mod
 
 [Apply a model](apply-a-model.md) 
 
-[SharePoint Syntex Accessibility Mode](accessibility-mode.md)
+[Syntex accessibility mode](accessibility-mode.md)

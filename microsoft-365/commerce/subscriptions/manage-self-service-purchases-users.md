@@ -2,18 +2,20 @@
 title: Manage self-service purchases (Users)
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration 
-localization_priority: Normal
-ms.collection: M365-subscription-management
+ms.service: microsoft-365-business 
+ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
+- M365-subscription-management
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_ssp
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 description: "Users can learn how to manage their self-service purchases."
@@ -36,12 +38,6 @@ You can view a list of all self-service purchased subscriptions that you bought.
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
@@ -53,12 +49,6 @@ You can view a list of all self-service purchased subscriptions that you bought.
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
 
 ::: moniker-end
 
@@ -74,15 +64,9 @@ You can view a list of all self-service purchased subscriptions that you bought.
 
 ### To assign licenses
 
-:: moniker range="o365-worldwide"
+::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.
 
 ::: moniker-end
 
@@ -100,15 +84,9 @@ You can view a list of all self-service purchased subscriptions that you bought.
 
 ### To unassign licenses
 
-:: moniker range="o365-worldwide"
+::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.
 
 ::: moniker-end
 
@@ -127,12 +105,6 @@ You can view a list of all self-service purchased subscriptions that you bought.
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
 
 ::: moniker-end
 
@@ -175,4 +147,4 @@ You can view a list of all self-service purchased subscriptions that you bought.
 
 For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.yml).
 
-If you have questions or need help with self-service purchases, [contact support](../../business-video/get-help-support.md).
+If you have questions or need help with self-service purchases, [contact support](../../admin/get-help-support.md).

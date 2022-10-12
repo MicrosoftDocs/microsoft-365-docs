@@ -1,16 +1,19 @@
 ---
 title: "Fixing problems with directory synchronization for Microsoft 365"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
-localization_priority: Priority
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: high
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom: 
+- Adm_O365
+- admindeeplinkMAC
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:
@@ -33,7 +36,7 @@ You will also receive a mail (to the alternate email and to your admin email) fr
   
 ## How do I get Azure Active Directory Connect tool?
 
-In the [Microsoft 365 admin center](https://admin.microsoft.com), navigate to **Users** \> **Active users**. Click the **More** menu (three dots) and select **Directory synchronization**. 
+In the [Microsoft 365 admin center](https://admin.microsoft.com), navigate to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>. Click the **More** menu (three dots) and select **Directory synchronization**. 
   
 Follow the [instructions in the wizard](set-up-directory-synchronization.md) to download Azure AD Connect. 
   

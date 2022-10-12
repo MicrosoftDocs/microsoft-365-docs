@@ -3,7 +3,8 @@ title: Provide feedback on Microsoft 365 Defender
 description: Provide product feedback on Microsoft 365 Defender
 keywords: feedback, m365 security, security, 365, capabilities
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,15 +12,16 @@ f1.keywords:
   - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 
 # Provide feedback on Microsoft 365 Defender
@@ -39,8 +41,8 @@ Check out this video to see how easy it is to provide feedback.
 
 1. From any part of the portal, select **Give feedback**. 
 
-    ![Image of feedback button](../../media/feedback.png)
-
+    :::image type="content" source="../../media/feedback.png" alt-text="The incidents in the Microsoft 365 security portal" lightbox="../../media/feedback.png":::   
+ 
 2. Rate your experience and provide details on what you liked or where improvement can be made. You can also choose to be contacted about the feedback. 
 
 3. Select **Submit**.

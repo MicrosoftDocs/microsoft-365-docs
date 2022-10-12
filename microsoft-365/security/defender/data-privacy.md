@@ -3,7 +3,8 @@ title: Microsoft 365 Defender data security and privacy
 description: Describes the privacy and data security of the service.
 keywords: privacy, data, security, trust center, information collection
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,15 +12,16 @@ f1.keywords:
   - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 
 # Microsoft 365 Defender data security and privacy
@@ -37,5 +39,5 @@ Customer data in pseudonymized form might also be stored in central storage and 
 
 For more information on the data storage and privacy information of the specific products, see:
 - [Microsoft Defender for Endpoint data storage and privacy](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
-- [Microsoft Cloud App Security data security and privacy](/cloud-app-security/cas-compliance-trust)
+- [Microsoft Defender for Cloud Apps data security and privacy](/cloud-app-security/cas-compliance-trust)
 - [Microsoft 365 privacy, security, and transparency](/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)

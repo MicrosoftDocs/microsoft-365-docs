@@ -1,16 +1,18 @@
 ---
 title: "Manage SharePoint Online site groups with PowerShell"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 12/17/2019
 audience: Admin
-ms.topic: hub-page
-ms.service: o365-administration
-localization_priority: Normal
+ms.topic: landing-page
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -36,8 +38,8 @@ The procedures in this article require you to connect to SharePoint Online. For 
 
 The SharePoint Online admin center has some easy-to-use methods for managing site groups. For example, suppose you want to look at the groups, and the group members, for the `https://litwareinc.sharepoint.com/sites/finance` site. Here's what you have to do to:
 
-1. From the SharePoint admin center, click **Active sites**, and then click the URL of the site.
-2. On the site page, click the **Settings** icon (located in the upper right-hand corner of the page), and then click **Site permissions**.
+1. From the SharePoint admin center, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>, and then select the URL of the site.
+2. On the site page, select <a href="https://go.microsoft.com/fwlink/?linkid=2185072" target="_blank">**Settings**</a> (located in the upper right-hand corner of the page), and then select **Site permissions**.
 
 And then repeat the process for the next site you want to look at.
 
@@ -65,7 +67,7 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 In both cases, you should see something similar to this:
 
-![SharePoint Online site groups](../media/SPO-site-groups.png)
+![SharePoint Online site groups.](../media/SPO-site-groups.png)
 
 These are all the groups that have been created for the site `https://litwareinc.sharepoint.com/sites/finance`, and all the users assigned to those groups. The group names are in yellow to help you separate group names from their members.
 

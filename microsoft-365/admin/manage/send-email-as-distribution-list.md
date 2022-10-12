@@ -7,11 +7,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: 
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
+ms.collection:
+- scotvorg 
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -24,7 +24,7 @@ ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: "Send email as a distribution list in Microsoft 365 so that when a member replies to a message it appears to be from the distribution list."
 ---
 
-# Send email as a distribution list
+# Send Microsoft 365 email as a distribution list
 
 In Microsoft 365, you can send email as a distribution list. When a person who is a member of the distribution list replies to a message sent to the distribution list, the email appears to be from the distribution list, not from the individual user. This topic shows you how to do this.
   
@@ -42,11 +42,11 @@ Before you perform these steps, make sure you've been added to a Microsoft 365 d
     
 3. Select **Reply**. 
     
-4. At the bottom of the message, select **More** \> **Show from**.<br/> ![Select More and then choose Show From](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
+4. At the bottom of the message, select **More** \> **Show from**.<br/> ![Select More and then choose Show From.](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. Right-click on the From address - such as `Ina@weewalter.me` - and choose **Remove**.<br/> ![Remove the FROM alias](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. Right-click on the From address - such as `Ina@weewalter.me` - and choose **Remove**.<br/> ![Remove the FROM alias.](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
-6. Then type the distribution list address such as support@contoso.com, and send the message. The next time you reply from the distribution list, its address will appear as an option in the **From** list.<br/>![Alias of the shared mailbox appears](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
+6. Then type the distribution list address such as support@contoso.com, and send the message. The next time you reply from the distribution list, its address will appear as an option in the **From** list.<br/>![Alias of the shared mailbox appears.](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
 
 ## Outlook
 

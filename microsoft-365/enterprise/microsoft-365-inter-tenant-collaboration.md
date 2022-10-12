@@ -1,13 +1,14 @@
 ---
 title: "Microsoft 365 inter-tenant collaboration"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-collaboration
 - M365-subscription-management
 - SPO_Content
@@ -53,7 +54,7 @@ Microsoft 365 inter-tenant collaboration options include using a central locatio
 
 | Sharing goal | Administrative action | How-to information |
 |:-----|:-----|:-----|
-|Azure AD B2B collaboration - Content sharing by adding external users to a group in an organization's directory | A global admin for one Microsoft 365 tenant can invite people in another Microsoft 365 tenant to join their directory, add those external users to a group, and grant access to content, such as SharePoint sites and libraries for the group. |  <ul><li> [What is Azure AD B2B collaboration preview?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) </li><li> [Azure AD B2B: New updates make cross-business collab easy](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) </li><li> [External sharing and Azure Active Directory B2B collaboration](/azure/active-directory/active-directory-b2b-o365-external-user) </li><li> [Azure Active Directory B2B collaboration API and customization](/azure/active-directory/active-directory-b2b-api) </li><li> [Azure AD and Identity Show: Azure AD B2B Collaboration (Business to Business](https://channel9.msdn.com/Series/Azure-AD-Identity/AzureADB2B) </li></ul> |
+|Azure AD B2B collaboration - Content sharing by adding external users to a group in an organization's directory | A **Azure AD DC admin**, **Security Admin**, **User Admin**, **Cloud Application Admin**, or **Global admin** for one Microsoft 365 tenant can invite people in another Microsoft 365 tenant to join their directory, add those external users to a group, and grant access to content, such as SharePoint sites and libraries for the group. |  <ul><li> [What is Azure AD B2B collaboration preview?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) </li><li> [Azure AD B2B: New updates make cross-business collab easy](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) </li><li> [External sharing and Azure Active Directory B2B collaboration](/azure/active-directory/active-directory-b2b-o365-external-user) </li><li> [Azure Active Directory B2B collaboration API and customization](/azure/active-directory/active-directory-b2b-api) </li><li> [Azure AD and Identity Show: Azure AD B2B Collaboration (Business to Business](https://channel9.msdn.com/Series/Azure-AD-Identity/AzureADB2B) </li></ul> |
 
 ## Microsoft 365 collaboration options
 
@@ -71,7 +72,7 @@ Microsoft 365 inter-tenant collaboration options include using a central locatio
 
 |Sharing goal|Administrative action|How-to information|
 |:-----|:-----|:-----|
-|Collaborate in Teams with users external to the organization | A global admin for the inviting Microsoft 365 tenant needs to enable external collaboration in Teams. Global admins and team owners will now be able to invite anyone with an email address to collaborate in Teams.  <br/> Admins can also manage and edit Guests already present in their tenant. |  <ul><li> [Authorize Guest Access](/microsoftteams/teams-dependencies) </li><li> [Turn Guest Access On or Off in Teams](/microsoftteams/set-up-guests) </li><li> [Use PowerShell to control Guest Access](/microsoftteams/guest-access-powershell) </li><li> [Guest Access Checklist](/microsoftteams/guest-access-checklist) </li><li> [View Guest Users](/microsoftteams/view-guests) </li><li> [Edit guest user information](/microsoftteams/edit-guests-information) </li></ul> |
+|Collaborate in Teams with users external to the organization | A **User Admin**, or **Global admin** for the inviting Microsoft 365 tenant needs to enable external collaboration in Teams. Global admins and team owners will now be able to invite anyone with an email address to collaborate in Teams.  <br/> Admins can also manage and edit Guests already present in their tenant. |  <ul><li> [Authorize Guest Access](/microsoftteams/teams-dependencies) </li><li> [Turn Guest Access On or Off in Teams](/microsoftteams/set-up-guests) </li><li> [Use PowerShell to control Guest Access](/microsoftteams/guest-access-powershell) </li><li> [Guest Access Checklist](/microsoftteams/guest-access-checklist) </li><li> [View Guest Users](/microsoftteams/view-guests) </li><li> [Edit guest user information](/microsoftteams/edit-guests-information) </li></ul> |
 |Team owners can invite and manage how guests collaborate within their teams.  |Team owners have additional controls on what the guests can do within their teams. |  <ul><li> [Add Guests](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [Add a guest to a team](/microsoftteams/add-guests) </li><li> [Manage Guest Access in Teams](/microsoftteams/manage-guests) </li><li> [See who's on a Team or in a Channel](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
 |Guests from other tenants can view contents in Teams and collaborate with other members | None. | [The guest access experience](/microsoftteams/guest-experience)|
 

@@ -1,5 +1,5 @@
 ---
-title: Step 1. Use SharePoint Syntex to identify contract files and extract data
+title: Step 1. Use Microsoft Syntex to identify contract files and extract data
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -7,16 +7,16 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: 
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
-localization_priority: None
+ms.localizationpriority:  medium
 ROBOTS: 
-description: Learn how to use SharePoint Syntex to identify contract files and extract data by using a Microsoft 365 solution.
+description: Learn how to use Microsoft Syntex to identify contract files and extract data by using a Microsoft 365 solution.
 ---
 
-# Step 1. Use SharePoint Syntex to identify contract files and extract data
+# Step 1. Use Microsoft Syntex to identify contract files and extract data
 
-Your organization needs a way to identify and classify all contract documents from the many files you receive. You also want to be able to quickly view several key elements in each of the contract files identified (for example, *Client*, *Contractor*, and *Fee amount*). You can do this by using [SharePoint Syntex](index.md) to create a document understanding model and applying it to a document library.
+Your organization needs a way to identify and classify all contract documents from the many files you receive. You also want to be able to quickly view several key elements in each of the contract files identified (for example, *Client*, *Contractor*, and *Fee amount*). You can do this by using [Syntex](index.md) to create a document understanding model and applying it to a document library.
 
 ## Overview of the process
 
@@ -26,20 +26,20 @@ Document understanding models use Optical Character Recognition (OCR) technology
 
 1. First, you need to find at least five example files that you can use to "train" the model to search for characteristics that are specific to the content type you're trying to identify (a contract). 
 
-2. Using SharePoint Syntex, create a new document understanding model. Using your example files, you need to [create a classifier](create-a-classifier.md). By training the classifier with your example files, you teach it to search for characteristics that are specific to what you would see in your company's contracts. For example, [create an "explanation"](create-a-classifier.md#create-an-explanation) that searches for specific strings that are in your contracts, such as *Service Agreement*, *Terms of Agreement*, and *Compensation*. You can even train your explanation to look for these strings in specific sections of the document, or located next to other strings. When you think you have trained your classifier with the information it needs, you can test your model on a sample set of example files to see how efficient it is. After testing, if needed you can choose to make changes to your explanations to make them more efficient. 
+2. Using Syntex, create a new document understanding model. Using your example files, you need to [create a classifier](create-a-classifier.md). By training the classifier with your example files, you teach it to search for characteristics that are specific to what you would see in your company's contracts. For example, [create an "explanation"](create-a-classifier.md#create-an-explanation) that searches for specific strings that are in your contracts, such as *Service Agreement*, *Terms of Agreement*, and *Compensation*. You can even train your explanation to look for these strings in specific sections of the document, or located next to other strings. When you think you have trained your classifier with the information it needs, you can test your model on a sample set of example files to see how efficient it is. After testing, if needed you can choose to make changes to your explanations to make them more efficient. 
 
 3. In your model, you can [create an extractor](create-an-extractor.md) to pull out specific pieces of data from each contract. For example, for each contract, the information you're most concerned about is who the client is, the name of the contractor, and the total cost.
 
 4. After you successfully create your model, [apply it to a SharePoint document library](apply-a-model.md). As you upload documents to the document library, your document understanding model will run and will identify and classify all files that match the contracts content type you defined in your model. All files that are classified as contracts will display in a custom library view. The files will also display the values from each contract that you defined in your extractor.
 
-   ![Contracts in document library](../media/content-understanding/doc-lib-solution.png)
+   ![Contracts in document library.](../media/content-understanding/doc-lib-solution.png)
 
 5. If you have retention or security requirements for your contracts, you can also use your model to apply a [retention label](apply-a-retention-label-to-a-model.md) or a [sensitivity label](apply-a-sensitivity-label-to-a-model.md) that will prevent your contracts from being deleted for a specified period of time or to restrict who can access the contracts.
 
 ## Steps to create and train your model
 
 > [!NOTE]
-> For these steps, you can use the example files in the [Contracts Management Solution Assets repository](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management). The examples in this repository contain both the document understanding model files and the files used to train the model.
+> For these steps, you can use the example files in the [Contracts Management Solution Assets repository](https://github.com/pnp/syntex-samples/tree/main/scenario%20samples/Contracts%20Management). The examples in this repository contain both the document understanding model files and the files used to train the model.
 
 ### Create a Contract model
 
@@ -76,7 +76,7 @@ You need to add at least five example files that are contract documents, and one
 
 3. From the **Labeled examples** list on the left, select other files that you want to use as examples, and label them. 
 
-    ![Classifier home page](../media/content-understanding/models-contract-classifier.png) 
+    ![Classifier home page.](../media/content-understanding/models-contract-classifier.png) 
 
 #### Add at least one explanation to train the classifier 
 
@@ -106,7 +106,7 @@ You can test your Contract model on example files it hasn’t seen before. This 
 
 2. In the **Test Files** list, your example files display and shows if the model predicted them to be positive or negative. Use this information to help determine the effectiveness of your classifier in identifying your documents.
 
-    ![Screenshot of the unlabeled files in the Text Files list](../media/content-understanding/test-on-files.png) 
+    ![Screenshot of the unlabeled files in the Text Files list.](../media/content-understanding/test-on-files.png) 
 
 3. When done, select **Exit Training**.
 
@@ -144,7 +144,7 @@ You can create an explanation that provides a hint about the entity format itsel
 - October 14, 2019
 - Monday, October 14, 2019
 
-To help identify the *Contract Start Date*, you can create a pattern explanation.
+To help identify the *Contract Start Date*, you can create an explanation.
 
 1. In the **Explanations** section, select **New** and then **Blank**.
 
@@ -152,7 +152,7 @@ To help identify the *Contract Start Date*, you can create a pattern explanation
 
     a. In the **Name** field, type the name of the explanation (such as *Date*).
 
-    b. In the **Explanation type** field, select **Pattern list**.
+    b. In the **Explanation type** field, select **Phrase list**.
 
     c. In the **Value** field, provide the date variation as they appear in the sample files. For example, if you have date formats that appear as 0/00/0000, you enter any variations that appear in your documents, such as:
 

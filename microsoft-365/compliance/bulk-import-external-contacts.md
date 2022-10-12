@@ -1,20 +1,25 @@
 ---
 title: "Bulk import external contacts to Exchange Online"
+description: "Learn how admins can use Exchange Online PowerShell and a CSV file to bulk import external contacts to the global address list."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 6/29/2018
 audience: End User
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
-description: "Learn how admins can use Exchange Online PowerShell and a CSV file to bulk import external contacts to the global address list."
+ms.custom: admindeeplinkEXCHANGE
+ms.collection:
+- tier1
+- purview-compliance
+- import
 ---
 
 # Bulk import external contacts to Exchange Online
@@ -35,6 +40,8 @@ After you complete these steps to import contacts, you can perform these additio
   
 - [Hide external contacts from the shared address book](#hide-external-contacts-from-the-shared-address-book)
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Create a CSV file that contains information about the external contacts
 
 The first step is to create a CSV file that contains information about each external contact that you want to import to Exchange Online. 
@@ -78,7 +85,7 @@ The next step is to use the CSV file that you created in Step 1 and PowerShell t
 
     It might take a while to create the new contacts, depending on how many you're importing. When the command is finished running, PowerShell displays a list of the new contacts that were created. 
     
-4. To view the new external contacts, go to the Exchange admin center (EAC), and then click **Recipients** \> **Contacts**. 
+4. To view the new external contacts, go to the Exchange admin center (EAC), and then click **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2182970" target="_blank">**Contacts**</a>. 
     
     > [!TIP]
     > For instructions for connecting to the EAC, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center). 
@@ -98,15 +105,10 @@ After you run the command in Step 2, the external contacts are created, but they
     
 2. Go to the desktop folder where you saved the CSV file in Step 1; for example, `C:\Users\Administrator\desktop`.
     
-3. Run the following two commands to add the other properties from the CSV file to the external contacts that you created in Step 2.
+3. Run the following command to add the other properties from the CSV file to the external contacts that you created in Step 2.
     
     ```powershell
-    $Contacts = Import-CSV .\ExternalContacts.csv
-  
-    ```
-
-    ```powershell
-    $contacts | ForEach {Set-Contact $_.Name -StreetAddress $_.StreetAddress -City $_.City -StateorProvince $_.StateorProvince -PostalCode $_.PostalCode -Phone $_.Phone -MobilePhone $_.MobilePhone -Pager $_.Pager -HomePhone $_.HomePhone -Company $_.Company -Title $_.Title -OtherTelephone $_.OtherTelephone -Department $_.Department -Fax $_.Fax -Initials $_.Initials -Notes  $_.Notes -Office $_.Office -Manager $_.Manager}
+     Import-Csv .\ExternalContacts.csv|%{Set-Contact -Identity $_.Name -StreetAddress $_.StreetAddress -City $_.City -StateorProvince $_.StateorProvince -PostalCode $_.PostalCode -Phone $_.Phone -MobilePhone $_.MobilePhone -Pager $_.Pager -HomePhone $_.HomePhone -Company $_.Company -Title $_.Title -OtherTelephone $_.OtherTelephone -Department $_.Department -Fax $_.Fax -Initials $_.Initials -Notes  $_.Notes -Office $_.Office -Manager $_.Manager}
     ```
 
     > [!NOTE]
@@ -116,9 +118,9 @@ After you run the command in Step 2, the external contacts are created, but they
     
 4. To verify that the properties were added to the contacts: 
     
-1. In the EAC, go to **Recipients** \> **Contacts**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients** \> **Contacts**.
     
-2. Click a contact and then click **Edit** ![Edit icon](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) to display the contact's properties. 
+2. Click a contact and then click **Edit** ![Edit icon.](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) to display the contact's properties. 
     
 That's it! Users can see the contacts and the additional information in the address book Outlook and Outlook on the web.
   

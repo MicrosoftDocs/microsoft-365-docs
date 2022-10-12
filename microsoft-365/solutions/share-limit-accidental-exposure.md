@@ -5,15 +5,16 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection: 
+- highpri
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
 - m365initiative-externalcollab
-ms.custom: 
-localization_priority: Priority
+ms.custom: admindeeplinkSPO
+ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: "Learn how to limit accidental exposure of information when sharing files with people outside your organization."
@@ -38,22 +39,24 @@ If you disable *Anyone* links, users can still easily share with guests using *S
 Depending on your needs, you can disable *Anyone* links for specific sites, or for your whole organization.
 
 To turn off *Anyone* links for your organization
-1. In the SharePoint admin center, in the left navigation, click **Sharing**.
+
+1. In the SharePoint admin center, in the left navigation, select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
 2. Set the SharePoint external sharing settings to **New and existing guests**.
 
-   ![Screenshot of organization level SharePoint site external sharing settings](../media/sharepoint-organization-external-sharing-controls-new-users.png)
+   ![Screenshot of organization level SharePoint site external sharing settings.](../media/sharepoint-organization-external-sharing-controls-new-users.png)
 
 3. Click **Save**.
 
 To turn off *Anyone* links for a site
-1. In the SharePoint admin center, in the left navigation, expand **Sites** and click **Active sites**.
+
+1. In the SharePoint admin center, in the left navigation, expand **Sites** and select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
 2. Select the site that you want to configure.
-3. In the ribbon, click **Sharing**.
+3. In the ribbon, select **Sharing**.
 4. Ensure that sharing is set to **New and existing guests**.
 
-   ![Screenshot of site level SharePoint site external sharing settings](../media/sharepoint-site-external-sharing-settings.png)
+   ![Screenshot of site level SharePoint site external sharing settings.](../media/sharepoint-site-external-sharing-settings.png)
 
-5. If you made changes, click **Save**.
+5. If you made changes, select **Save**.
 
 ## Domain filtering
 
@@ -66,12 +69,13 @@ With a deny list, you can specify a list of domains from which users in your org
 The allow and deny lists only affect sharing with guests. Users can still share with people from prohibited domains by using *Anyone* links if you haven't disabled them. For best results with domain allow and deny lists, consider disabling *Anyone* links as described above.
 
 To set up a domain allow or deny list
-1. In the SharePoint admin center, in the left navigation, click **Sharing**.
+
+1. In the SharePoint admin center, in the left navigation, select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>
 2. Under **Advanced settings for external sharing**, select the **Limit external sharing by domain** check box.
 3. Click **Add domains**.
 4. Select whether you want to block domains, type the domains, and click **OK**.
 
-   ![Screenshot of SharePoint limit external sharing by domain setting](../media/sharepoint-sharing-block-domain.png)
+   ![Screenshot of SharePoint limit external sharing by domain setting.](../media/sharepoint-sharing-block-domain.png)
 
 5. Click **Save**.
 
@@ -82,12 +86,13 @@ If you want to limit sharing by domain at a higher level than SharePoint and One
 You can restrict sharing of files, folders, and sites with people outside your organization to members of a specific security group. This is useful if you want to enable external sharing, but with an approval workflow or request process. Alternatively, you might require your users to complete a training course before they're added to the security group and are allowed to share externally.
 
 To limit external sharing to members of a security group
-1. In the [SharePoint admin center](https://admin.microsoft.com/sharepoint), in the left navigation, under **Policies**, click **Sharing**.
+
+1. In the SharePoint admin center, in the left navigation, under **Policies** select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
 2. Under **External sharing**, expand **More external sharing settings**.
 
 3. Select **Allow only users in specific security groups to share externally**, and then select **Manage security groups**.
 
-    ![Screenshot of Manage security groups panel](/sharepoint/sharepointonline/media/manage-security-groups.png)
+    ![Screenshot of Manage security groups panel.](/sharepoint/sharepointonline/media/manage-security-groups.png)
 
 4. In the **Add a security group** box, enter a name for a security group. The security group box appears.
 

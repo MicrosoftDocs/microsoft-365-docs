@@ -6,8 +6,9 @@ manager: serdars
 ms.audience: ITPro
 ms.topic: article
 ms.service: msteams
-localization_priority: Normal
-ms.collection: 
+ms.localizationpriority: medium
+ms.collection:
+- highpri 
 - M365-collaboration
 - m365solution-overview
 - m365solution-voice
@@ -23,7 +24,7 @@ description: Learn how to choose and deploy the right Teams voice solution for y
 
 A Teams voice solution enables people in your organization to make calls both within and outside your organization. A complete voice solution consists of Teams, Microsoft Phone System, and a choice of options for connecting to the Public Switched Telephone Network (PSTN).
 
-![Teams voice solutions overview](..\media\solutions-architecture-center\voice-concepts.png)
+![Teams voice solutions overview.](..\media\solutions-architecture-center\voice-concepts.png)
 
 Phone System provides complete Private Branch Exchange (PBX) capabilities for your organization. Calls between users in your organization--no matter their geographic location--are handled internally within Phone System thereby removing long-distance costs on these internal calls.  
 
@@ -36,7 +37,7 @@ This solution guidance helps you to:
 
 Follow these steps to choose, plan, and configure your voice solution:
 
-![Choose your voice solution](..\media\solutions-architecture-center\voice-solutions-overview-1.png)
+![Choose your voice solution.](..\media\solutions-architecture-center\voice-solutions-overview-1.png)
 
 1. [Choose your voice solution](/MicrosoftTeams/cloud-voice-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)
 

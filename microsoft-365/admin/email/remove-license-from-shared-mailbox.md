@@ -4,24 +4,26 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: SKjerland
-ms.reviewer: nicholak
+ms.reviewer: sinakassaw, nicholak
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
+- Adm_TOC
 ms.custom:
-- AdminSurgePortfolio
 - commerce_licensing
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: "Remove a license from a shared mailbox to assign it to another user or return the license so you're not paying for it. "
-ms.date: 05/11/2021
+ms.date: 04/22/2022
 ---
 
 # Remove a license from a shared mailbox
@@ -30,24 +32,20 @@ Shared mailboxes usually don't require a license. Follow these instructions to r
 
 > [!NOTE]
 >
-> A license is required in the following scenarios:
+> An Exchange Online Plan 2 license is required in the following scenarios:
 >
-> 1. The shared mailbox has more than 50 GB of storage in use.
-> 2. The shared mailbox uses in-place archiving.
-> 3. The shared mailbox is placed in litigation hold.
-> 4. The shared mailbox has a Microsoft Defender license assigned.
+> - The shared mailbox has more than 50 GB of storage in use.
+> - The shared mailbox uses in-place archiving.
+> - The shared mailbox is placed in litigation hold.
+> 
+> For step-by-step instructions on how to assign licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users). 
+
 
 ## Remove the license
 
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 ::: moniker-end
 

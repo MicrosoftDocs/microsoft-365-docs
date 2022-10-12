@@ -1,26 +1,25 @@
 ---
 title: "Export Content search results"
+description: "Export the search results from a Content search in the Microsoft Purview compliance portal to a local computer. Email results are exported as PST files. Content from SharePoint and OneDrive for Business sites are exported as native Office documents."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: how-to
 f1_keywords:
 - 'ms.o365.cc.CustomizeExport'
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+ms.localizationpriority: medium
+ms.collection:
+- tier1
+- purview-compliance
+- content-search
 search.appverid:
 - MOE150
 - MED150
 - MET150
-ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: "Export the search results from a Content search in the Microsoft 365 compliance center to a local computer. Email results are exported as PST files. Content from SharePoint and OneDrive for Business sites are exported as native Office documents."
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -28,30 +27,27 @@ ms.custom: seo-marvel-apr2020
 
 After a Content search is successfully run, you can export the search results to a local computer. When you export email results, they're downloaded to your computer as PST files. When you export content from SharePoint and OneDrive for Business sites, copies of native Office documents are exported. There are other documents and reports included with the exported search results.
   
-Exporting the results of a Content search involves preparing the results, and then downloading them to a local computer. These steps for exporting search results also apply to exporting the results of a search that's associated with Core eDiscovery cases.
+Exporting the results of a Content search involves preparing the results, and then downloading them to a local computer. These steps for exporting search results also apply to exporting the results of a search that's associated with Microsoft Purview eDiscovery (Standard) cases.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you export search results
 
-- To export search results, you have to be assigned the Export management role in Security & Compliance Center. This role is assigned to the built-in eDiscovery Manager role group. It isn't assigned by default to the Organization Management role group. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+- To export search results, you have to be assigned the Export management role in Microsoft Purview compliance portal. This role is assigned to the built-in eDiscovery Manager role group. It isn't assigned by default to the Organization Management role group. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 
 - The computer you use to export the search results has to meet the following system requirements:
   
   - Latest version of Windows (32-bit or 64-bit)
   
-  - Microsoft .NET Framework 4.7
+  - Microsoft .NET Framework 4.7 or higher
   
-- You have to use one of the following supported browsers to run the eDiscovery Export Tool<sup>1</sup>:
-
-  - Microsoft Edge <sup>2</sup>
-  
-    OR
-
-  - Microsoft Internet Explorer 10 and later versions
+- You have to use Microsoft Edge<sup>1</sup> to run the eDiscovery Export Tool. Using Internet Explorer 11 to export search results is no longer supported<sup>2</sup>.
   
   > [!NOTE]
-  > <sup>1</sup> Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.<br/>
-  > <sup>2</sup> As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default. For instructions on enabling ClickOnce support in Edge, see [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
-  
+  > <sup>1</sup> As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default. For instructions on enabling ClickOnce support in Edge, see [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md). Also, Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.
+  >
+  > <sup>2</sup> Beginning August 2021, Microsoft 365 apps and services will no longer support Internet Explorer 11 (IE11) and users may have a degraded experience or be unable to connect to those apps and services. These apps and services will phase out over the upcoming weeks and months to ensure a smooth end of support. Each app and service are being phased out on independent schedules. For more information, see this [blog post](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666).
+
 - The eDiscovery Export Tool that you use in Step 2 to download search results doesn't support automation (by using a script or running cmdlets). We highly recommended that you don't automate the preparation process in Step 1 or the download process in Step 2. If you automate either of these processes, Microsoft Support will not provide assistance if you run into issues.
 
 - We recommend downloading search results to a local computer. To eliminate your company's firewall or proxy infrastructure from causing issues when downloading search results, you might consider downloading search results to a virtual desktop outside of your network. This may decrease timeouts that occur in Azure data connections when exporting a large number of files. For more information about virtual desktops, see [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop).
@@ -85,17 +81,17 @@ Exporting the results of a Content search involves preparing the results, and th
 
 The first step is to prepare the search results for exporting. When you prepare results, they are uploaded to a Microsoft-provided Azure Storage location in the Microsoft cloud. Content from mailboxes and sites is uploaded at a maximum rate of 2 GB per hour.
   
-1. In the Microsoft 365 compliance center, select the content search that you want to export results from.
+1. In the compliance portal, select the content search that you want to export results from.
   
 2. On the **Actions** menu at the bottom of the flyout page, click **Export results**.
 
-   ![Export results option in Actions menu](../media/ActionMenuExportResults.png)
+   ![Export results option in Actions menu.](../media/ActionMenuExportResults.png)
 
    The **Export results** flyout page is displayed. The export options available to export content depend on whether search results are located in mailboxes or sites or a combination of both.
 
 3. Under **Output options**, choose one of the following options:
   
-   ![Export output options](../media/ExportOutputOptions.png)
+   ![Export output options.](../media/ExportOutputOptions.png)
 
     - **All items, excluding ones that have unrecognized format, are encrypted, or weren't indexed for other reasons**. This option exports only indexed items.
   
@@ -107,7 +103,7 @@ The first step is to prepare the search results for exporting. When you prepare 
 
 4. Under **Export Exchange content as**, choose one of the following options:
   
-   ![Exchange options](../media/ExchangeExportOptions.png)
+   ![Exchange options.](../media/ExchangeExportOptions.png)
 
     - **One PST file for each mailbox**: Exports one PST file for each user mailbox that contains search results. Any results from the user's archive mailbox are included in the same PST file. This option reproduces the mailbox folder structure from the source mailbox.
   
@@ -119,7 +115,7 @@ The first step is to prepare the search results for exporting. When you prepare 
   
 5. Configure the following additional options:
 
-   ![Configure other export options](../media/OtherExportOptions.png)
+   ![Configure other export options.](../media/OtherExportOptions.png)
 
    1. Select the **Enable de-duplication for Exchange content** checkbox to exclude duplicate messages.
   
@@ -138,8 +134,11 @@ See the next section for instructions to download the exported search results.
 ## Step 2: Download the search results
 
 The next step is to download the search results from the Azure Storage location to your local computer.
+
+> [!NOTE]
+> The exported search results must be downloaded within 14 days after you created the export job in Step 1.
   
-1. On the **Content search** page in the Microsoft 365 compliance center, select the **Exports** tab
+1. On the **Content search** page in the compliance portal, select the **Exports** tab
   
    You may have to click **Refresh** to update the list of export jobs so that it shows the export job you created. Export jobs have the same name as the corresponding search with **_Export** appended to the search name.
   
@@ -156,7 +155,7 @@ The next step is to download the search results from the Azure Storage location 
 
 6. In the **eDiscovery Export Tool**, do the following:
 
-   ![eDiscovery Export Tool](../media/eDiscoveryExportTool.png)
+   ![eDiscovery Export Tool.](../media/eDiscoveryExportTool.png)
 
    1. Paste the export key that you copied in step 3 in the appropriate box.
   
@@ -239,7 +238,7 @@ For information about limits when exporting content search results, see the "Exp
   
 - If you're exporting mailbox items from a content search that returns all mailbox items in the search results (because no keywords where included in the search query), partially indexed items won't be copied to the PST file that contains the unindexed items. This is because all items, including any partially indexed items, are automatically included in the regular search results. This means that partially indexed items will be included in a PST file (or as individual messages) that contains the other, indexed items.
 
-    If you export both the indexed and partially indexed items or if you export only the indexed items from a content search that returns all items, the same number of items will be downloaded. This happens even though the estimated search results for the content search (displayed in the search statistics in the Security & Compliance Center) will still include a separate estimate for the number of partially indexed items. For example, let's say that the estimate for a search that includes all items (no keywords in the search query) shows that 1,000 items were found and that 200 partially indexed items were also found. In this case, the 1,000 items include the partially indexed items because the search returns all items. In other words, there are 1,000 total items returned by the search, and not 1,200 items (as you might expect). If you export the results of this search and choose to export indexed and partially indexed items (or export only partially indexed items), then 1,000 items will be downloaded. Again, that's because partially indexed items are included with the regular (indexed) results when you use a blank search query to return all items. In this same example, if you choose to export only partially indexed items, then only the 200 unindexed items would be downloaded.
+    If you export both the indexed and partially indexed items or if you export only the indexed items from a content search that returns all items, the same number of items will be downloaded. This happens even though the estimated search results for the content search (displayed in the search statistics in the compliance portal) will still include a separate estimate for the number of partially indexed items. For example, let's say that the estimate for a search that includes all items (no keywords in the search query) shows that 1,000 items were found and that 200 partially indexed items were also found. In this case, the 1,000 items include the partially indexed items because the search returns all items. In other words, there are 1,000 total items returned by the search, and not 1,200 items (as you might expect). If you export the results of this search and choose to export indexed and partially indexed items (or export only partially indexed items), then 1,000 items will be downloaded. Again, that's because partially indexed items are included with the regular (indexed) results when you use a blank search query to return all items. In this same example, if you choose to export only partially indexed items, then only the 200 unindexed items would be downloaded.
 
     Also note that in the previous example (when you export indexed and partially indexed items or you export only indexed items), the **Export Summary** report included with the exported search results would list 1,000 items estimated items and 1,000 downloaded items for the same reasons as previously described. 
 
@@ -247,11 +246,11 @@ For information about limits when exporting content search results, see the "Exp
 
     To export partially indexed items from all content locations for a search, configure the search to return all items (by removing any keywords from the search query) and then export only partially indexed items when you export the search results.
 
-    ![Use the third export option to export only unindexed items](../media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
+    ![Use the third export option to export only unindexed items.](../media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
   
 - When exporting search results from SharePoint or OneDrive for Business sites, the ability to export unindexed items also depends on the export option that you select and whether a site that was searched contains an indexed item that matches the search criteria. For example, if you search specific SharePoint or OneDrive for Business sites and no search results are found, then no unindexed items from those sites will be exported if you choose the second export option to export both indexed and unindexed items. If an indexed item from a site does match the search criteria, then all unindexed items from that site will be exported when exporting both indexed and unindexed items. The following illustration describes the export options based on whether a site contains an indexed item that matches the search criteria.
 
-    ![Choose the export option based on whether a site contains an indexed item that matches the search criteria](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
+    ![Choose the export option based on whether a site contains an indexed item that matches the search criteria.](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
     a. Only indexed items that match the search criteria are exported. No partially indexed items are exported.
 

@@ -1,13 +1,15 @@
 ---
 title: "Resources to help you upgrade from Office 2010 servers and clients"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: ITPro
 ms.topic: overview
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
+- Ent_O365
 search.appverid:
 - MET150
 - LCC120
@@ -41,7 +43,7 @@ While you plan your upgrade, consider moving to Microsoft 365.
 
 For a visual summary of the upgrade, migration, and move-to-the-cloud options for Office 2010 clients and servers and Windows 7, see the [end of support poster](../downloads/Office2010Windows7EndOfSupport.pdf).
 
-[![End of support for Office 2010 clients and servers and Windows 7 poster](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![End of support for Office 2010 clients and servers and Windows 7 poster.](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 This one-page poster summarizes the various paths you can take to handle Office 2010 client and server products and Windows 7 from reaching end of support. Preferred paths and option support in Microsoft 365 Enterprise are highlighted.
 

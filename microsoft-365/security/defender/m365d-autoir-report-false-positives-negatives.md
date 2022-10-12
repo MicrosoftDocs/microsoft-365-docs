@@ -3,24 +3,26 @@ title: Address false positives or false negatives in Microsoft 365 Defender
 description: Was something missed or wrongly detected by AIR in Microsoft 365 Defender? Learn how to submit false positives or false negatives to Microsoft for analysis.
 keywords: automated, investigation, alert, remediation, false positive, false negative
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-localization_priority: Normal
+ms.author: dansimp
+author: dansimp
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: how-to
-ms.custom: autoir
+ms.custom: 
+- autoir
+- admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.technology: m365d
 ---
 
 # Address false positives or false negatives in Microsoft 365 Defender
@@ -49,14 +51,14 @@ The following sections describe how to perform these tasks.
 
 |Scenario |Service |What to do |
 |--------|--------|--------|
-|- An alert is triggered by legitimate use <br/>- An alert is inaccurate    |[Microsoft Cloud App Security](/cloud-app-security)<br/> or <br/>[Azure threat protection](/azure/security/fundamentals/threat-detection)         |[Manage alerts in the Cloud App Security portal](/cloud-app-security/managing-alerts)         |
+|- An alert is triggered by legitimate use <br/>- An alert is inaccurate    |[Microsoft Defender for Cloud Apps](/cloud-app-security)<br/> or <br/>[Azure threat protection](/azure/security/fundamentals/threat-detection)         |[Manage alerts in the Defender for Cloud Apps portal](/cloud-app-security/managing-alerts)         |
 |A file, IP address, URL, or domain is treated as malware on a device, even though it's safe|[Microsoft Defender for Endpoint](/windows/security/threat-protection) |[Create a custom indicator with an "Allow" action](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## Undo a remediation action that was taken on a device
 
 If a remediation action was taken on an entity (such as a device or an email message) and the affected entity is not actually a threat, your security operations team can undo the remediation action in the [Action center](m365d-action-center.md).
 
-1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
 2. In the navigation pane, choose **Action center**. 
 3. On the **History** tab, select an action that you want to undo. Its flyout pane opens.
 4. In the flyout pane, select **Undo**.

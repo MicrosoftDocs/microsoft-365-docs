@@ -2,26 +2,27 @@
 title: "Change Microsoft 365 for business plans manually"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: nalinkla, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_subscriptions
+- AdminSurgePortfolio
 search.appverid: MET150
 description: "Change subscriptions manually by buying a new subscription and ensuring that both the subscriptions are listed and active."
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
 ---
-# Change plans manually
+# Manually change Microsoft plans
 
 ## Step 1: Decide how to change plans
 
@@ -36,7 +37,7 @@ The best way to change all your users from one plan to another is to [use the Up
 To continue with a manual change, read [Step 2: Buy a new subscription](#step-2-buy-a-new-subscription) in this topic.
 
 > [!IMPORTANT]
-> If you are changing to a plan with fewer data-related services than your current plan (downgrading), you need to manually back up any data you wish to keep. For more information, see [Back up data before changing plans](back-up-data-before-switching-plans.md).
+> If you are changing to a plan with fewer data-related services than your current plan (downgrading), you need to manually back up any data you wish to keep. For more information, see [Back up data before changing plans](move-users-different-subscription.md).
 
 ## Step 2: Buy a new subscription
 
@@ -70,7 +71,7 @@ Include a license for each user that you want to move.
 - **If you purchased two subscriptions and they are not both listed here**, they may have been purchased for different organizations
     (for different domains). Subscriptions can't cross organization boundaries.
 
-- **If you know you have an additional subscription**, and it's not listed here, or is not active, [call Microsoft support](../../business-video/get-help-support.md).
+- **If you know you have an additional subscription**, and it's not listed here, or is not active, [call Microsoft support](../../admin/get-help-support.md).
 
 ### What about the old licenses?
 
@@ -114,4 +115,5 @@ If you moved all users from one subscription to another, and you no longer need 
 If you moved only some users to a different subscription, [remove licenses](../licenses/buy-licenses.md) that you no longer need.
 
 ## Call support to help you change plans
-[Call Microsoft support](../../business-video/get-help-support.md)
+
+[Call Microsoft support](../../admin/get-help-support.md).

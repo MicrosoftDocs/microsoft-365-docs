@@ -1,21 +1,23 @@
 ---
 title: List all recommendations
 description: Retrieves a list of all security recommendations affecting the organization.
-keywords: apis, graph api, supported apis, get, security recommendations, Microsoft Defender for Endpoint tvm api, threat and vulnerability management, threat and vulnerability management api
-search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+keywords: apis, graph api, supported apis, get, security recommendations, Microsoft Defender for Endpoint tvm api, threat and vulnerability management, threat and vulnerability management api, mdvm
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # List all recommendations
@@ -23,11 +25,11 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -37,36 +39,51 @@ ms.custom: api
 
 Retrieves a list of all security recommendations affecting the organization.
 
+
+## API description
+
+Returns information about all security recommendations affecting the organization.
+
+*URL:* GET:/api/recommendations
+<br>Supports [OData V4 queries](https://www.odata.org/documentation/).
+<br>OData supported operators:
+<br>```$filter``` on:  ```id```, ```productName```, ```vendor```, ```recommendedVersion```, ```recommendationCategory```, ```subCategory```, ```severityScore```, ```remediationType```, ```recommendedProgram```, ```recommendedVendor```, and ```status``` properties.
+<br>```$top``` with max value of 10,000.
+<br>```$skip```.
+<br>See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
 
-Permission type |	Permission	|	Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
-Application |	SecurityRecommendation.Read.All |	'Read Threat and Vulnerability Management security recommendation information'
-Delegated (work or school account) | SecurityRecommendation.Read |	'Read Threat and Vulnerability Management security recommendation information'
+Application|SecurityRecommendation.Read.All|'Read Threat and Vulnerability Management security recommendation information'
+Delegated (work or school account)|SecurityRecommendation.Read |'Read Threat and Vulnerability Management security recommendation information'
 
 ## HTTP request
-```
+
+```http
 GET /api/recommendations
 ```
 
 ## Request headers
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
-Authorization | String | Bearer {token}. **Required**.
-
+Authorization|String|Bearer {token}. **Required**.
 
 ## Request body
+
 Empty
 
 ## Response
-If successful, this method returns 200 OK with the list of security recommendations in the body.
 
+If successful, this method returns 200 OK with the list of security recommendations in the body.
 
 ## Example
 
-**Request**
+### Request
 
 Here is an example of the request.
 
@@ -74,19 +91,18 @@ Here is an example of the request.
 GET https://api.securitycenter.microsoft.com/api/recommendations
 ```
 
-**Response**
+### Response
 
 Here is an example of the response.
-
 
 ```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Recommendations",
     "value": [
         {
-            "id": "va-_-microsoft-_-windows_10",
-            "productName": "windows_10",
-            "recommendationName": "Update Windows 10",
+            "id": "va-_-microsoft-_-windows_10" "va-_-microsoft-_-windows_11",
+            "productName": "windows_10" "Windows_11",
+            "recommendationName": "Update Windows 10" "Update Windows 11",
             "weaknesses": 397,
             "vendor": "microsoft",
             "recommendedVersion": "",
@@ -109,13 +125,14 @@ Here is an example of the response.
             "totalMachineCount": 37,
             "exposedMachinesCount": 7,
             "nonProductivityImpactedAssets": 0,
-            "relatedComponent": "Windows 10"
+            "relatedComponent": "Windows 10" "Windows 11"
         }
-		...
+        ...
      ]
 }
 ```
-## See also
-- [Risk-based Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Threat & Vulnerability security recommendation](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
 
+## See also
+
+- [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Vulnerability management security recommendations](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

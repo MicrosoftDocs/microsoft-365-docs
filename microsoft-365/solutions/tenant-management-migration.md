@@ -1,13 +1,14 @@
 ---
 title: Step 4. Migration for your Microsoft 365 for enterprise tenants
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.service: o365-solutions
+ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
@@ -77,7 +78,7 @@ For migration for your Microsoft 365 tenant, you have determined:
 
 Here is an example of a tenant with a completed migration of on-premises servers.
 
-![Example of a tenant with a completed migration of on-premises servers](../media/tenant-management-overview/tenant-management-tenant-build-step4.png)
+![Example of a tenant with a completed migration of on-premises servers.](../media/tenant-management-overview/tenant-management-tenant-build-step4.png)
 
 In this illustration, the organization has:
 
@@ -93,6 +94,6 @@ On an ongoing basis, you might need to:
 
 ## Next step
 
-[![Step 5. Deploy device and app management](../media/tenant-management-overview/tenant-management-step-grid-device-mgmt.png)](tenant-management-device-management.md)
+[![Step 5. Deploy device and app management.](../media/tenant-management-overview/tenant-management-step-grid-device-mgmt.png)](tenant-management-device-management.md)
 
 Continue with [device and app management](tenant-management-device-management.md) to deploy device and app management.

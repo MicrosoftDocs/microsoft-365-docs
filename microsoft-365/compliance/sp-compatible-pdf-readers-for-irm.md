@@ -1,5 +1,5 @@
 ---
-title: "SharePoint-Compatible PDF readers that support Microsoft Information Rights Management services"
+title: "SharePoint-compatible PDF readers that support IRM services"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -9,7 +9,7 @@ ms.date: 1/5/2017
 audience: End User
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - OSU150

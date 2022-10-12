@@ -2,22 +2,21 @@
 title: Device control for macOS
 description: Learn how to configure Microsoft Defender for Endpoint on Mac to reduce threats from removable storage such as USB devices.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, device, control, usb, removable, media
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Device control for macOS
@@ -25,17 +24,19 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## Requirements
 
 Device control for macOS has the following prerequisites:
 
->[!div class="checklist"]
-> - Microsoft Defender for Endpoint entitlement (can be trial)
+> [!div class="checklist"]
+>
+> - Microsoft Defender for Endpoint entitlement (can be trial)
 > - Minimum OS version: macOS 11 or higher
 > - Minimum product version: 101.34.20
 
@@ -47,12 +48,17 @@ The device control policy is included in the configuration profile used to confi
 
 Within the configuration profile, the device control policy is defined in the following section:
 
+<br>
+
+****
+
 |Section|Value|
-|:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | deviceControl |
-| **Data type** | Dictionary (nested preference) |
-| **Comments** | See the following sections for a description of the dictionary contents. |
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|deviceControl|
+|**Data type**|Dictionary (nested preference)|
+|**Comments**|See the following sections for a description of the dictionary contents.|
+|
 
 The device control policy can be used to:
 
@@ -63,42 +69,52 @@ The device control policy can be used to:
 
 When the device control policy that you have put in place is enforced on a device (for example, access to a removable media device is restricted), a notification is displayed to the user.
 
-![Device control notification](images/mac-device-control-notification.png)
+:::image type="content" source="images/mac-device-control-notification.png" alt-text="The Device control notification" lightbox="images/mac-device-control-notification.png":::
 
 When end users click this notification, a web page is opened in the default browser. You can configure the URL that is opened when end users click the notification.
 
+<br>
+
+****
+
 |Section|Value|
-|:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | navigationTarget |
-| **Data type** | String |
-| **Comments** | If not defined, the product uses a default URL pointing to a generic page explaining the action taken by the product. |
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|navigationTarget|
+|**Data type**|String|
+|**Comments**|If not defined, the product uses a default URL pointing to a generic page explaining the action taken by the product.|
+|
 
 ### Allow or block removable devices
 
-The removable media section of the device control policy is used to restrict access to removable media. 
+The removable media section of the device control policy is used to restrict access to removable media.
 
 > [!NOTE]
 > The following types of removable media are currently supported and can be included in the policy: USB storage devices.
 
+<br>
+
+****
+
 |Section|Value|
-|:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | removableMediaPolicy |
-| **Data type** | Dictionary (nested preference) |
-| **Comments** | See the following sections for a description of the dictionary contents. |
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|removableMediaPolicy|
+|**Data type**|Dictionary (nested preference)|
+|**Comments**|See the following sections for a description of the dictionary contents.|
+|
 
 This section of the policy is hierarchical, allowing for maximum flexibility and covering a wide range of use cases. At the top level are vendors, identified by a vendor ID. For each vendor, there are products, identified by a product ID. Finally, for each product there are serial numbers denoting specific devices.
 
-```
-|-- policy top level 
-    |-- vendor 1 
-        |-- product 1 
-            |-- serial number 1 
+```text
+|-- policy top level
+    |-- vendor 1
+        |-- product 1
+            |-- serial number 1
             ...
-            |-- serial number N 
+            |-- serial number N
         ...
-        |-- product N 
+        |-- product N
     ...
     |-- vendor N
 ```
@@ -112,17 +128,22 @@ The policy is evaluated from the most specific entry to the most general one. Me
 Under the removable media section, there is an option to set the enforcement level, which can take one of the following values:
 
 - `audit` - Under this enforcement level, if access to a device is restricted, a notification is displayed to the user, however the device can still be used. This enforcement level can be useful to evaluate the effectiveness of a policy.
-- `block` - Under this enforcement level, the operations that the user can perform on the device are limited to what is defined in the policy. Furthermore, a notification is raised to the user. 
+- `block` - Under this enforcement level, the operations that the user can perform on the device are limited to what is defined in the policy. Furthermore, a notification is raised to the user.
 
-> [!NOTE] 
-> By default, the enforcement level is set to `audit`. 
+> [!NOTE]
+> By default, the enforcement level is set to `audit`.
+
+<br>
+
+****
 
 |Section|Value|
-|:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | enforcementLevel |
-| **Data type** | String |
-| **Possible values** | audit (default) <br/> block |
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|enforcementLevel|
+|**Data type**|String|
+|**Possible values**|audit (default) <p> block|
+|
 
 #### Default permission level
 
@@ -132,141 +153,175 @@ This setting can be set to:
 
 - `none` - No operations can be performed on the device
 - A combination of the following values:
-    - `read` - Read operations are permitted on the device
-    - `write` - Write operations are permitted on the device
-    - `execute` - Execute operations are permitted on the device
+  - `read` - Read operations are permitted on the device
+  - `write` - Write operations are permitted on the device
+  - `execute` - Execute operations are permitted on the device
 
 > [!NOTE]
 > If `none` is present in the permission level, any other permissions (`read`, `write`, or `execute`) will be ignored.
-
-> [!NOTE]
+>
 > The `execute` permission only refers to execution of Mach-O binaries. It does not include execution of scripts or other types of payloads.
 
+<br>
+
+****
+
 |Section|Value|
-|:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | permission |
-| **Data type** | Array of strings |
-| **Possible values** | none <br/> read <br/> write <br/> execute |
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|permission|
+|**Data type**|Array of strings|
+|**Possible values**|none <p> read <p> write <p> execute|
+|
 
 #### Restrict removable media by vendor, product, and serial number
 
 As described in [Allow or block removable devices](#allow-or-block-removable-devices), removable media such as USB devices can be identified by the vendor ID, product ID, and serial number.
 
-At the top level of the removable media policy, you can optionally define more granular restrictions at the vendor level. 
+At the top level of the removable media policy, you can optionally define more granular restrictions at the vendor level.
 
 The `vendors` dictionary contains one or more entries, with each entry being identified by the vendor ID.
 
+<br>
+
+****
+
 |Section|Value|
-|:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | vendors |
-| **Data type** | Dictionary (nested preference) |
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|vendors|
+|**Data type**|Dictionary (nested preference)|
+|
 
 For each vendor, you can specify the desired permission level for devices from that vendor.
 
-|Section|Value|
-|:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | permission |
-| **Data type** | Array of strings |
-| **Possible values** | Same as [Default permission level](#default-permission-level) |
+<br>
 
-Furthermore, you can optionally specify the set of products belonging to that vendor for which more granular permissions are defined. The `products` dictionary contains one or more entries, with each entry being identified by the product ID. 
+****
 
 |Section|Value|
-|:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | products |
-| **Data type** | Dictionary (nested preference) |
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|permission|
+|**Data type**|Array of strings|
+|**Possible values**|Same as [Default permission level](#default-permission-level)|
+|
+
+Furthermore, you can optionally specify the set of products belonging to that vendor for which more granular permissions are defined. The `products` dictionary contains one or more entries, with each entry being identified by the product ID.
+
+<br>
+
+****
+
+|Section|Value|
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|products|
+|**Data type**|Dictionary (nested preference)|
+|
 
 For each product, you can specify the desired permission level for that product.
 
+<br>
+
+****
+
 |Section|Value|
-|:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | permission |
-| **Data type** | Array of strings |
-| **Possible values** | Same as [Default permission level](#default-permission-level) |
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|permission|
+|**Data type**|Array of strings|
+|**Possible values**|Same as [Default permission level](#default-permission-level)|
+|
 
 Furthermore, you can specify an optional set of serial numbers for which more granular permissions are defined.
 
 The `serialNumbers` dictionary contains one or more entries, with each entry being identified by the serial number.
 
+<br>
+
+****
+
 |Section|Value|
-|:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | serialNumbers |
-| **Data type** | Dictionary (nested preference) |
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|serialNumbers|
+|**Data type**|Dictionary (nested preference)|
+|
 
 For each serial number, you can specify the desired permission level.
 
+<br>
+
+****
+
 |Section|Value|
-|:---|:---|
-| **Domain** | `com.microsoft.wdav` |
-| **Key** | permission |
-| **Data type** | Array of strings |
-| **Possible values** | Same as [Default permission level](#default-permission-level) |
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|permission|
+|**Data type**|Array of strings|
+|**Possible values**|Same as [Default permission level](#default-permission-level)|
+|
 
 #### Example device control policy
 
 The following example shows how all of the above concepts can be combined into a device control policy. In the following example, note the hierarchical nature of the removable media policy.
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>deviceControl</key> 
-    <dict> 
-        <key>navigationTarget</key> 
-        <string>[custom URL for notifications]</string> 
-        <key>removableMediaPolicy</key> 
-        <dict> 
-            <key>enforcementLevel</key> 
-            <string>[enforcement level]</string> <!-- audit / block --> 
-            <key>permission</key> 
-            <array> 
-                <string>[permission]</string> <!-- none / read / write / execute --> 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deviceControl</key>
+    <dict>
+        <key>navigationTarget</key>
+        <string>[custom URL for notifications]</string>
+        <key>removableMediaPolicy</key>
+        <dict>
+            <key>enforcementLevel</key>
+            <string>[enforcement level]</string> <!-- audit / block -->
+            <key>permission</key>
+            <array>
+                <string>[permission]</string> <!-- none / read / write / execute -->
                 <!-- other permissions -->
-            </array> 
-            <key>vendors</key> 
-            <dict> 
-                <key>[vendor id]</key> 
+            </array>
+            <key>vendors</key>
+            <dict>
+                <key>[vendor id]</key>
                 <dict>
-                    <key>permission</key> 
-                    <array> 
-                        <string>[permission]</string> <!-- none / read / write / execute --> 
+                    <key>permission</key>
+                    <array>
+                        <string>[permission]</string> <!-- none / read / write / execute -->
                         <!-- other permissions -->
-                    </array> 
-                    <key>products</key> 
-                    <dict> 
-                        <key>[product id]</key> 
-                        <dict> 
-                            <key>permission</key> 
-                            <array> 
-                                <string>[permission]</string> <!-- none / read / write / execute --> 
+                    </array>
+                    <key>products</key>
+                    <dict>
+                        <key>[product id]</key>
+                        <dict>
+                            <key>permission</key>
+                            <array>
+                                <string>[permission]</string> <!-- none / read / write / execute -->
                                 <!-- other permissions -->
-                            </array> 
-                            <key>serialNumbers</key> 
-                            <dict> 
-                                <key>[serial-number]</key> 
-                                <array> 
-                                    <string>[permission]</string> <!-- none / read / write / execute --> 
+                            </array>
+                            <key>serialNumbers</key>
+                            <dict>
+                                <key>[serial-number]</key>
+                                <array>
+                                    <string>[permission]</string> <!-- none / read / write / execute -->
                                     <!-- other permissions -->
-                                </array> 
-                                <!-- other serial numbers --> 
-                            </dict> 
-                        </dict> 
-                        <!-- other products --> 
-                    </dict> 
-                </dict> 
-                <!-- other vendors --> 
-            </dict> 
-        </dict> 
-    </dict> 
-</dict> 
-</plist> 
+                                </array>
+                                <!-- other serial numbers -->
+                            </dict>
+                        </dict>
+                        <!-- other products -->
+                    </dict>
+                </dict>
+                <!-- other vendors -->
+            </dict>
+        </dict>
+    </dict>
+</dict>
+</plist>
 ```
 
 We have included more examples of device control policies in the following documents:
@@ -282,19 +337,20 @@ To find the vendor ID, product ID, and serial number of a USB device:
 1. Plug in the USB device for which you want to look up the identifiers.
 1. In the top-level menu of macOS, select **About This Mac**.
 
-    ![About this Mac](images/mac-device-control-lookup-1.png)
+   :::image type="content" source="images/mac-device-control-lookup-1.png" alt-text="The About this Mac page" lightbox="images/mac-device-control-lookup-1.png":::
 
 1. Select **System Report**.
 
-    ![System Report](images/mac-device-control-lookup-2.png)
+   :::image type="content" source="images/mac-device-control-lookup-2.png" alt-text="The system report" lightbox="images/mac-device-control-lookup-2.png":::
 
 1. From the left column, select **USB**.
 
-    ![View of all USB devices](images/mac-device-control-lookup-3.png)
+   :::image type="content" source="images/mac-device-control-lookup-3.png" alt-text="The view of all the USB devices" lightbox="images/mac-device-control-lookup-3.png":::
+    
 
 1. Under **USB Device Tree**, navigate to the USB device that you plugged in.
 
-    ![Details of a USB device](images/mac-device-control-lookup-4.png)
+   :::image type="content" source="images/mac-device-control-lookup-4.png" alt-text="The details of a USB device" lightbox="images/mac-device-control-lookup-4.png":::
 
 1. The vendor ID, product ID, and serial number are displayed. When adding the vendor ID and product ID to the removable media policy, you must only add the part after `0x`. For example, in the below image, vendor ID is `1000` and product ID is `090c`.
 
@@ -302,8 +358,8 @@ To find the vendor ID, product ID, and serial number of a USB device:
 
 You can view mount, unmount, and volume change events originating from USB devices in Microsoft Defender for Endpoint advanced hunting. These events can be helpful to identify suspicious usage activity or perform internal investigations.
 
-```
-DeviceEvents 
+```bash
+DeviceEvents
     | where ActionType == "UsbDriveMounted" or ActionType == "UsbDriveUnmounted" or ActionType == "UsbDriveDriveLetterChanged"
     | where DeviceId == "<device ID>"
 ```

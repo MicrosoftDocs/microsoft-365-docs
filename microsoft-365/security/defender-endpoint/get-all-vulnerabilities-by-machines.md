@@ -2,20 +2,22 @@
 title: Get all vulnerabilities by machine and software
 description: Retrieves a list of all the vulnerabilities affecting the organization by Machine and Software
 keywords: apis, graph api, supported apis, get, vulnerability information, Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # List vulnerabilities by machine and software
@@ -23,54 +25,58 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 Retrieves a list of all the vulnerabilities affecting the organization per [machine](machine.md) and [software](software.md).
+
 - If the vulnerability has a fixing KB, it will appear in the response.
 - Supports [OData V4 queries](https://www.odata.org/documentation/).
-- The OData ```$filter``` is supported on all properties.
+- The OData's `$filter` query is supported on: `id`, `cveId`, `machineId`, `fixingKbId`, `productName`, `productVersion`, `severity`, and `productVendor` properties.
+<br>```$stop``` with max value of 10,000 
+<br>```$skip```
 
->[!Tip]
->This is great API for [Power BI integration](api-power-bi.md).
+> [!TIP]
+> This is great API for [Power BI integration](api-power-bi.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
 
-Permission type |	Permission	|	Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
-Application |	Vulnerability.Read.All |	'Read Threat and Vulnerability Management vulnerability information'
-Delegated (work or school account) | Vulnerability.Read |	'Read Threat and Vulnerability Management vulnerability information'
+Application|Vulnerability.Read.All|'Read Threat and Vulnerability Management vulnerability information'
+Delegated (work or school account)|Vulnerability.Read|'Read Threat and Vulnerability Management vulnerability information'
 
 ## HTTP request
-```
+
+```http
 GET /api/vulnerabilities/machinesVulnerabilities
 ```
 
 ## Request headers
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
-Authorization | String | Bearer {token}. **Required**.
-
+Authorization|String|Bearer {token}. **Required**.
 
 ## Request body
+
 Empty
 
 ## Response
-If successful, this method returns 200 OK with the list of vulnerabilities in the body.
 
+If successful, this method returns 200 OK with the list of vulnerabilities in the body.
 
 ## Example
 
-**Request**
+### Request example
 
 Here is an example of the request.
 
@@ -78,10 +84,9 @@ Here is an example of the request.
 GET https://api.securitycenter.microsoft.com/api/vulnerabilities/machinesVulnerabilities
 ```
 
-**Response**
+### Response example
 
 Here is an example of the response.
-
 
 ```json
 {
@@ -107,7 +112,7 @@ Here is an example of the response.
             "productVersion": "6.3.9600.19728",
             "severity": "Low"
         },
-		...
+        ...
     ]
 
 }
@@ -115,5 +120,5 @@ Here is an example of the response.
 
 ## See also
 
-- [Risk-based threat and vulnerability management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Vulnerabilities in your organization](/microsoft-365/security/defender-endpoint/tvm-weaknesses)
