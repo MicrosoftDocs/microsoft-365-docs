@@ -63,11 +63,9 @@ sections:
 
       - question: Does Defender for Business support servers? 
         answer: |
-          Server support is now available! See [How to get Microsoft Defender for Business servers](get-defender-business-servers.md).  
-
-          The Microsoft Defender for Business servers license is offered as an add-on to [Microsoft 365 Business Premium](/microsoft-365/business-premium/) and the standalone version of [Defender for Business](mdb-overview.md). Microsoft Defender for Business servers is priced at $3 per server instance. 
+          Server support is now available with an add-on called [Microsoft Defender for Business servers](get-defender-business-servers.md). This add-on is available for [Microsoft 365 Business Premium](/microsoft-365/business-premium/) and the standalone version of [Defender for Business](mdb-overview.md). Microsoft Defender for Business servers is priced at $3 per server instance. 
           
-          If you were previously using Microsoft Defender for Business servers (preview), now's the time to either [purchase a license](get-defender-business-servers.md) for each onboarded server, or [offboard servers](mdb-offboard-devices.md) from Defender for Business.
+          If you participated in the preview of Microsoft Defender for Business servers, you can now either [purchase a license](get-defender-business-servers.md) for each onboarded server, or [offboard servers](mdb-offboard-devices.md) from Defender for Business.
 
       - question: What is the difference between Microsoft Defender for Business servers and Microsoft Defender for Servers Plan 1 and Plan 2?
         answer: |
