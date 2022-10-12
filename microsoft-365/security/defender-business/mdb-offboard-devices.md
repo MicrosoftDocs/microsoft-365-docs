@@ -24,6 +24,9 @@ ms.collection:
 
 As devices are replaced or retired, or your business needs change, you can offboard devices from Defender for Business. Offboarding a device causes the device to stop sending data to Defender for Business. However, data received prior to offboarding is retained for up to six (6) months.
 
+> [!NOTE]
+> The procedures in this article describe how to offboard a device from Defender for Business by using the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). If you're using Microsoft Intune to manage devices, see [Remove devices by using wipe, retire, or manually unenrolling the device](/mem/intune/remote-actions/devices-wipe).
+
 ## What to do
 
 1. Select a tab:
