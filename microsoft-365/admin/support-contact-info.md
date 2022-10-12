@@ -29,7 +29,7 @@ Admins, have your account details ready when you call.
 > [!NOTE]
 > To better protect your organization, we added a PIN-based verification step to our existing phone-based verification process. If you contact us from a number that isn't registered with your organization profile, the Microsoft support representative sends a verification code to the registered email or phone number in your Microsoft 365 admin center profile. You must provide this code to the support representative to grant them access to your organization's account.
 
-## Frequently-referenced countries and regions
+## Frequently referenced countries and regions
 
 :::row:::
    :::column:::
