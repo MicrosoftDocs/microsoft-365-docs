@@ -1,6 +1,5 @@
 ---
 title: Microsoft Defender for Office 365
-  - CSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -14,18 +13,18 @@ search.appverid:
   - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
   - seo-marvel-apr2020
   - intro-overview
 description: Microsoft Defender for Office 365 includes Safe Attachments, Safe Links, advanced anti-phishing tools, reporting tools and threat intelligence capabilities.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 # Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -73,22 +72,25 @@ To learn by doing, [click this link](protect-against-threats.md).
 
 The following table summarizes what's included in each plan.
 
-****
-
-|Microsoft Defender for Office 365 Plan 1|Microsoft Defender for Office 365 Plan 2|
+|Defender for Office 365 Plan 1|Defender for Office 365 Plan 2|
 |---|---|
-|Configuration, protection, and detection capabilities: <ul><li>[Safe Attachments](safe-attachments.md)</li><li>[Safe Links](safe-links.md)</li><li>[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Anti-phishing in Defender for Office 365 protection](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Real-time detections](threat-explorer.md)</li></ul>|Microsoft Defender for Office 365 Plan 1 capabilities <br>--- plus ---<br> Automation, investigation, remediation, and education capabilities:<ul><li>[Threat Trackers](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Automated investigation and response](office-365-air.md)</li><li>[Attack simulation training](attack-simulation-training.md)</li><li>[Campaign Views](campaigns.md)</li></ul>|
-|
+|Configuration, protection, and detection capabilities: <ul><li>[Safe Attachments](safe-attachments.md)</li><li>[Safe Links](safe-links.md)</li><li>[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Anti-phishing protection in Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Real-time detections](threat-explorer.md)</li></ul>|Defender for Office 365 Plan 1 capabilities <p> --- plus --- <p> Automation, investigation, remediation, and education capabilities: <ul><li>[Threat Trackers](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Automated investigation and response](office-365-air.md)</li><li>[Attack simulation training](attack-simulation-training.md)</li><li>[Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](../defender/advanced-hunting-overview.md)</li><li>[Investigate incidents in Microsoft 365 Defender](../defender/investigate-incidents.md)</li><li>[Investigate alerts in Microsoft 365 Defender](../defender/investigate-alerts.md)</li></ul>|
 
-- Microsoft Defender for Office 365 Plan 2 is included in Office 365 E5, Office 365 A5, Microsoft 365 E5 Security, and Microsoft 365 E5.
+- Microsoft Defender for Office 365 Plan 2 is included in Office 365 E5, Office 365 A5, and Microsoft 365 E5.
 
 - Microsoft Defender for Office 365 Plan 1 is included in Microsoft 365 Business Premium.
 
-- Microsoft Defender for Office 365 Plan 1 and Microsoft Defender for Office 365 Plan 2 are each available as an add-on for certain subscriptions. To learn more, see [Feature availability across Microsoft Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+- Microsoft Defender for Office 365 Plan 1 and Defender for Office 365 Plan 2 are each available as an add-on for certain subscriptions. To learn more, here's another link [Feature availability across Microsoft Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-- The [Safe Documents](safe-docs.md) feature is only available to users with the Microsoft 365 E5 or Microsoft 365 E5 Security licenses (not included in Microsoft Defender for Office 365 plans).
+- The [Safe Documents](safe-docs.md) feature is only available to users with the Microsoft 365 A5 or Microsoft 365 E5 Security licenses (not included in Microsoft Defender for Office 365 plans).
 
-- If your current subscription does not include Microsoft Defender for Office 365, [contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html), and see how Defender for Office 365 can work for your organization.
+- If your current subscription doesn't include Microsoft Defender for Office 365 and you want it, [contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html), and find out how Microsoft Defender for Office 365 can work for in your organization.
+
+- Microsoft Defender for Office 365 P2 customers have access to **Microsoft 365 Defender integration** to efficiently detect, review, and respond to incidents and alerts. 
+
+Watch this short video to learn more about Microsoft Defender for Office 365 P2 capabilities that have moved into the Microsoft 365 Defender portal.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfx]
+
 
 ## Configure Microsoft Defender for Office 365 policies
 
@@ -139,16 +141,12 @@ Microsoft Defender for Office 365 Plan 2 includes best-of-class [threat investig
 
 To access Microsoft Defender for Office 365 features, you must be assigned an appropriate role. The following table includes some examples:
 
-<br>
-
-****
-
 |Role or role group|Resources to learn more|
 |---|---|
 |global administrator (Organization Management)|You can assign this role in Azure Active Directory or in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).|
 |Security Administrator|You can assign this role in Azure Active Directory or in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).|
 |Organization Management in Exchange Online|[Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
-|Search and Purge|This role is available only in the Microsoft 365 Defender portal or the Microsoft 365 compliance center. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md) and [Permissions in the Microsoft 365 compliance center](../../compliance/microsoft-365-compliance-center-permissions.md).|
+|Search and Purge|This role is available only in the Microsoft 365 Defender portal or the Microsoft Purview compliance portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md) and [Permissions in the Microsoft Purview compliance portal](../../compliance/microsoft-365-compliance-center-permissions.md).|
 |||
 
 ## Get Microsoft Defender for Office 365

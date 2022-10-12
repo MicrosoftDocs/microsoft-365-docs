@@ -6,6 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
+ms.collection: scotvorg
 ms.localizationpriority: medium
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: "If you need to ask customers questions when they book an appointment with you online, you can add custom questions and required questions to the booking page."
@@ -28,9 +29,11 @@ For more information about how to personalize and customize your booking page, s
 
 1. Sign in to Microsoft 365 and go to **Bookings**.
 
+1. Choose your calendar.
+
 1. Go to **Services** and either edit an existing service or **Add a service**.
 
-1. Scroll down to the **Custom fields** section, and then select **Modify**.
+1. Choose the **Custom fields** section.
 
    We already added some basic customer information questions: Customer email, phone number, customer address, and customer notes. The first time you do this, the customer information questions are highlighted in gray. That means that the user will see this question. If you select the question, the highlight box around it will disappear and your customer won't be asked that question.
 

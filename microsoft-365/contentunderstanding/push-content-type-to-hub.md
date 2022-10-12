@@ -1,16 +1,18 @@
 ---
 title: Push content types to a hub
-description: "Learn how to Push content types to a hub"
+description: Learn how to push content types to a hub.
 ms.author: mikeplum
 author: MikePlumleyMSFT
+ms.reviewer: shrganguly
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
 
 ---
@@ -23,13 +25,13 @@ ms.localizationpriority: high
 </br>
 
 
-To make important content types more consistently available to SharePoint libraries and lists, you can push them to the hubs that you choose. Pushing the content types automatically adds them to any new lists and libraries created on the sites associated with the hub, and to any new sites added to the hub. This feature requires a [SharePoint Syntex](index.md) license.
+To make important content types more consistently available to SharePoint libraries and lists, you can push them to the hubs that you choose. Pushing the content types automatically adds them to any new lists and libraries created on the sites associated with the hub, and to any new sites added to the hub. This feature requires a [Microsoft Syntex](index.md) license.
 
 For this feature to work, the content types being pushed must already be published.
 
 To push content types to hubs
 
-1. In the SharePoint admin center, expand **Content services**, and then select **Content type gallery**.
+1. In the SharePoint admin center, expand **Content services**, and then select <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">**Content type gallery**</a>.
 2. Select the content type that you want to push to hubs.
 3. Select **Edit** in the command bar.
 4. Select **Choose hub sites**.

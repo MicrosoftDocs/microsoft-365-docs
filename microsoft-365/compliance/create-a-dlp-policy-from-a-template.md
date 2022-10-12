@@ -13,7 +13,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 ms.custom:
@@ -24,7 +25,7 @@ description: In this article, you'll learn about how to create DLP policies usin
 
 # Create a DLP policy from a template
 
-The easiest, most common way to get started with DLP policies is to use one of the templates included in the Microsoft 365 Compliance center. You can use one of these templates as is, or customize the rules to meet your organization's specific compliance requirements.
+The easiest, most common way to get started with DLP policies is to use one of the templates included in the Microsoft Purview compliance portal. You can use one of these templates as is, or customize the rules to meet your organization's specific compliance requirements.
 
 Microsoft 365 includes over 40 ready-to-use templates that can help you meet a wide range of common regulatory and business policy needs. See; [Policy templates](dlp-policy-reference.md#policy-templates) for a complete list. 
 
@@ -32,13 +33,15 @@ You can fine tune a template by modifying any of its existing rules or adding ne
 
 You can also choose the Custom template, which has no default rules, and configure your DLP policy from scratch, to meet the specific compliance requirements for your organization.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Permissions
 
 Members of your compliance team who will create DLP policies need permissions to the Compliance Center. By default, your tenant admin will have access can give compliance officers and other people access. Follow these steps:
   
 1. Create a group in Microsoft 365 and add compliance officers to it.
     
-2. Create a role group on the **Permissions** page of the Security &amp; Compliance Center. 
+2. Create a role group on the **Permissions** page of the Microsoft Purview compliance portal. 
 
 3. While creating the role group, use the **Choose Roles** section to add the following role to the role group: **DLP Compliance Management**.
     
@@ -46,7 +49,7 @@ Members of your compliance team who will create DLP policies need permissions to
 
 Use the **View-Only DLP Compliance Management** role to create role group with view-only privileges to the DLP policies and DLP reports.
 
-For more information, see [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+For more information, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
   
 These permissions are required to create and apply a DLP policy not to enforce policies.
 
@@ -54,14 +57,14 @@ These permissions are required to create and apply a DLP policy not to enforce p
 
 There are roles and role groups in preview that you can test out to fine tune your access controls.
 
-Here's a list of Microsoft Information Protection (MIP) roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Here's a list of applicable roles. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md)
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of MIP role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Here's a list of applicable role groups. To learn more about the, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md)
 
 - Information Protection
 - Information Protection Admins
@@ -71,12 +74,10 @@ Here's a list of MIP role groups that are in preview. To learn more about the, s
 
 ### Create the DLP policy from a template
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
 
-2. In the Compliance Center \> left navigation \> **Solutions** \> **Data loss prevention** \> **Policies** \> **+ Create policy**.
+2. In the Microsoft Purview compliance portal \> left navigation \> **Solutions** \> **Data loss prevention** \> **Policies** \> **+ Create policy**.
 
-    ![Create a policy button.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
-          
 3. Choose the DLP policy template that protects the types of sensitive information that you need \> **Next**.
 
 4. Name the policy \> **Next**.
@@ -91,7 +92,7 @@ Here's a list of MIP role groups that are in preview. To learn more about the, s
 
 6. Choose \> **Next**.
  
-1. <!-->, do one of the following:
+1. Do one of the following:
 
    - Choose **All locations in Office 365** \> **Next**.
    - Choose **Let me choose specific locations** \> **Next**. For this example, choose this.
@@ -100,9 +101,9 @@ Here's a list of MIP role groups that are in preview. To learn more about the, s
 
    To include only specific SharePoint sites or OneDrive for Business accounts, switch the **Status** to on, and then click the links under **Include** to choose specific sites or accounts. When you apply a policy to a site, the rules configured in that policy are automatically applied to all subsites of that site.
 
-   ![Options for locations where a DLP policy can be applied.](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
+   ![Options for locations where a DLP policy can be applied.](../media/all-locations.png)
 
-   In this example, to protect sensitive information stored in all OneDrive for Business accounts, turn off the **Status** for both **Exchange email** and **SharePoint sites**, and leave the **Status** on for **OneDrive accounts**.-->
+   In this example, to protect sensitive information stored in all OneDrive for Business accounts, turn off the **Status** for both **Exchange email** and **SharePoint sites**, and leave the **Status** on for **OneDrive accounts**.
 
 7. Choose **Review and customize default settings from the template** \> **Next**.
 
@@ -200,7 +201,7 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
 
 ## View the status of a DLP policy
 
-At any time, you can view the status of your DLP policies on the **Policy** page in the **Data loss prevention** section of the Security &amp; Compliance Center. Here you can find important information, such as whether a policy was successfully enabled or disabled, or whether the policy is in test mode.
+At any time, you can view the status of your DLP policies on the **Policy** page in the **Data loss prevention** section of the Microsoft Purview compliance portal. Here you can find important information, such as whether a policy was successfully enabled or disabled, or whether the policy is in test mode.
 
 Here are the different statuses and what they mean.
 
@@ -210,7 +211,7 @@ Here are the different statuses and what they mean.
 
 |Status|Explanation|
 |---|---|
-|**Turning on…**|The policy is being deployed to the content sources that it includes. The policy is not yet enforced on all sources.|
+|**Turning on...**|The policy is being deployed to the content sources that it includes. The policy is not yet enforced on all sources.|
 |**Testing, with notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are sent to the specified recipients.|
 |**Testing, without notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are not sent to the specified recipients.|
 |**On**|The policy is active and enforced. The policy was successfully deployed to all its content sources.|

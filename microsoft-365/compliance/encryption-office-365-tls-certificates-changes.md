@@ -1,12 +1,12 @@
 ---
-title: Office TLS Certificate Changes
+title: Office TLS certificate changes
 description: How to prepare for upcoming changes to Office TLS certificates.
 author: pshelton-skype
 ms.author: pshelton
-manager: elenip
+manager: toddbeckett
 ms.topic: article
 audience: Developer
-ms.date: 1/7/2021
+ms.date: 3/7/2022
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ---
@@ -32,13 +32,24 @@ Affected endpoints include (but are not limited to):
 - *.communication.azure.com
 - *.operatorconnect.microsoft.com
 
-This change will not affect certificates, domains, or services used in the US Government, China, or Germany national cloud instances of Microsoft 365.
+Additionally, Teams and Skype for Business Online endpoints in US Government national cloud instances of Microsoft 365 will make the same change, affecting endpoints such as:
+- *.gcc.teams.microsoft.com
+- *.dod.teams.microsoft.us
+- *.gov.teams.microsoft.us
+- *.online.dod.skypeforbusiness.us
+- *.online.gov.skypeforbusiness.us
+- *.um-dod.office365.us
+- *.um.office365.us
+
+This change will not affect certificates, domains, or services used in the China or Germany national cloud instances of Microsoft 365.
 
 All certificate information in this article was previously provided in [Microsoft 365 encryption chains](./encryption-office-365-certificate-chains.md) no later than October 2020.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## When will this change happen?
 
-Services will begin transitioning to the new Root CAs beginning in Jan 2022, possibly continuing into the third quarter (July-Sept) 2022.
+Services began transitioning to the new Root CAs in January 2022 and will continue through October 2022.
 
 ## What is changing?
 
@@ -52,8 +63,8 @@ with one of the following Intermediate CAs:
 
 | Common Name of the CA | Thumbprint (SHA1) |
 |--|--|
-| [Microsoft RSA TLS CA 01](http://www.microsoft.com/pki/mscorp/Microsoft%20RSA%20TLS%20CA%2001.crt) | 703d7a8f0ebf55aaa59f98eaf4a206004eb2516a |
-| [Microsoft RSA TLS CA 02](http://www.microsoft.com/pki/mscorp/Microsoft%20RSA%20TLS%20CA%2002.crt) | b0c2d2d13cdd56cdaa6ab6e2c04440be4a429c75 |
+| [Microsoft RSA TLS CA 01](https://www.microsoft.com/pki/mscorp/Microsoft%20RSA%20TLS%20CA%2001.crt) | 703d7a8f0ebf55aaa59f98eaf4a206004eb2516a |
+| [Microsoft RSA TLS CA 02](https://www.microsoft.com/pki/mscorp/Microsoft%20RSA%20TLS%20CA%2002.crt) | b0c2d2d13cdd56cdaa6ab6e2c04440be4a429c75 |
 
 New TLS certificates used by Microsoft 365 services will now chain up to one of the following Root CAs:
 
@@ -67,10 +78,14 @@ with one of the following Intermediate CAs:
 
 | Common Name of the CA | Thumbprint (SHA1) |
 |--|--|
-| [Microsoft Azure TLS Issuing CA 01](http://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2001%20-%20xsign.crt) | 2f2877c5d778c31e0f29c7e371df5471bd673173 |
-| [Microsoft Azure TLS Issuing CA 02](http://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2002%20-%20xsign.crt) | e7eea674ca718e3befd90858e09f8372ad0ae2aa |
-| [Microsoft Azure TLS Issuing CA 05](http://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2005%20-%20xsign.crt) | 6c3af02e7f269aa73afd0eff2a88a4a1f04ed1e5 |
-| [Microsoft Azure TLS Issuing CA 06](http://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2006%20-%20xsign.crt) | 30e01761ab97e59a06b41ef20af6f2de7ef4f7b0 |
+| [Microsoft Azure TLS Issuing CA 01](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2001%20-%20xsign.crt) | 2f2877c5d778c31e0f29c7e371df5471bd673173 |
+| [Microsoft Azure TLS Issuing CA 02](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2002%20-%20xsign.crt) | e7eea674ca718e3befd90858e09f8372ad0ae2aa |
+| [Microsoft Azure TLS Issuing CA 05](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2005%20-%20xsign.crt) | 6c3af02e7f269aa73afd0eff2a88a4a1f04ed1e5 |
+| [Microsoft Azure TLS Issuing CA 06](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2006%20-%20xsign.crt) | 30e01761ab97e59a06b41ef20af6f2de7ef4f7b0 |
+
+As an example, this is a valid certificate with one of the new certificate chains:
+
+![Teams TLS Certificate Chain](../media/teams-tls-certificate-chain.png)
 
 ## Will this change affect me?
 
@@ -96,16 +111,16 @@ Here are some ways to detect if your application may be impacted:
    - **IoT or embedded devices**: Embedded devices such as TV set top boxes often ship with a limited set of root authority certificates and have no easy way to update the certificate store. If you write code for, or manage deployments of, custom embedded or IoT devices, make sure the devices trust the new Root CAs. You may need to contact the device manufacturer.
 
 - If you have an environment where firewall rules allow outbound calls only to specific endpoints, allow the following Certificate Revocation List (CRL) or Online Certificate Status Protocol (OCSP) URLs:
-   - http://crl3.digicert.com
-   - http://crl4.digicert.com
-   - http://ocsp.digicert.com
-   - http://crl.microsoft.com
-   - http://oneocsp.microsoft.com
-   - http://ocsp.msocsp.com
-   - http://www.microsoft.com/pkiops
+   - `http://crl3.digicert.com`
+   - `http://crl4.digicert.com`
+   - `http://ocsp.digicert.com`
+   - `http://crl.microsoft.com`
+   - `http://oneocsp.microsoft.com`
+   - `http://ocsp.msocsp.com`
+   - `http://www.microsoft.com/pkiops`
 
 - If you are impacted by this change, you may see error messages dependent on the type of environment you are running in and scenario you are impacted by. Check Windows Application event logs, CAPI2 event logs, and custom application logs for messages that look like:
-   ```
+   ```output
    An operation failed because the following certificate has validation errors:
    
    Subject Name: CN=teams.microsoft.com
@@ -116,6 +131,68 @@ Here are some ways to detect if your application may be impacted:
    The root of the certificate chain is not a trusted root authority.
    ```
 
+- If you use a Session Border Controller, Microsoft has prepared a testing endpoint that can be used to verify that SBC appliances trust certificates issued from the new Root CA. This endpoint should be used only for SIP OPTIONS ping messages and not for voice traffic.
+   ```
+   Global FQDN: sip.mspki.pstnhub.microsoft.com 
+   Port: 5061
+   ```
+   If this does not operate normally, please contact your device manufacturer to determine if updates are available to support the new Root CA. 
+
 ## When can I retire the old CA information?
 
-The current Root CA, Intermediate CA, and leaf certificates will not be revoked. The existing CA Common Names and/or thumbprints will be required through at least Feb 2023 based on the lifetime of existing certificates.
+The current Root CA, Intermediate CA, and leaf certificates will not be revoked. The existing CA Common Names and/or thumbprints will be required through at least October 2023 based on the lifetime of existing certificates.
+
+## Known Issues
+
+Under very rare circumstances, enterprise users may see certificate validation errors where the Root CA "DigiCert Global Root G2" appears as revoked. This is due to a known Windows bug under both of the following conditions:
+
+- The Root CA is in the [CurrentUser\Root certificate store](/windows/win32/seccrypto/system-store-locations#cert_system_store_current_user) and is missing the `NotBeforeFileTime` and `NotBeforeEKU` properties
+- The Root CA is in the [LocalMachine\AuthRoot certificate store](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine) but has both the `NotBeforeFileTime` and `NotBeforeEKU` properties
+- The Root CA is NOT in the [LocalMachine\Root certificate store](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine)
+
+All leaf certificates issued from this Root CA after the `NotBeforeFileTime` will appear revoked. 
+
+Administrators can identify and troubleshoot the issue by inspecting the CAPI2 Log for this error:
+
+```text
+Log Name:      Microsoft-Windows-CAPI2/Operational
+Source:        Microsoft-Windows-CAPI2
+Date:          6/23/2022 8:36:39 AM
+Event ID:      11
+Task Category: Build Chain
+Level:         Error
+[...]
+        <ChainElement>
+          <Certificate fileRef="DF3C24F9BFD666761B268073FE06D1CC8D4F82A4.cer" subjectName="DigiCert Global Root G2" />
+          [...]
+          <TrustStatus>
+            <ErrorStatus value="4000024" CERT_TRUST_IS_REVOKED="true" CERT_TRUST_IS_UNTRUSTED_ROOT="true" CERT_TRUST_IS_EXPLICIT_DISTRUST="true" />
+            <InfoStatus value="10C" CERT_TRUST_HAS_NAME_MATCH_ISSUER="true" CERT_TRUST_IS_SELF_SIGNED="true" CERT_TRUST_HAS_PREFERRED_ISSUER="true" />
+          </TrustStatus>
+          [...]
+          <RevocationInfo freshnessTime="PT0S">
+            <RevocationResult value="80092010">The certificate is revoked.</RevocationResult>
+          </RevocationInfo>
+        </ChainElement>
+      </CertificateChain>
+      <EventAuxInfo ProcessName="Teams.exe" />
+      <Result value="80092010">The certificate is revoked.</Result>
+```
+Note the presence of the `CERT_TRUST_IS_EXPLICIT_DISTRUST="true"` element. 
+
+You can confirm that two copies of the Root CA with different `NotBeforeFileTime` properties are present by running the following `certutil` commands and comparing the output:
+
+```
+certutil -store -v authroot DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
+certutil -user -store -v root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
+```
+
+A user can resolve the issue by deleting the copy of the Root CA in the `CurrentUser\Root` certificate store by doing:
+```
+certutil -user -delstore root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
+```
+or 
+```
+reg delete HKCU\SOFTWARE\Microsoft\SystemCertificates\Root\Certificates\DF3C24F9BFD666761B268073FE06D1CC8D4F82A4 /f
+```
+The first approach creates a Windows dialog that a user must click through while the second approach does not. 

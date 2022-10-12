@@ -1,19 +1,18 @@
 ---
 # required metadata
-
 title: Double Key Encryption overview and FAQ
-description: Frequently asked questions about Double Key Encryption for Microsoft 365.
+description: Frequently asked questions about Double Key Encryption.
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 12/11/2020
+ms.date: 02/28/2022
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
 ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 
 ---
 
@@ -21,9 +20,11 @@ ms.collection:
 
 Have a question about how Double Key Encryption works? Check for an answer here.
 
-## What is Double Key Encryption for Microsoft 365 (DKE)?
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-Double Key Encryption for Microsoft 365 enables customers to protect their highly sensitive data to meet specialized requirements. It helps customers maintain full control of their encryption keys. It uses two keys to protect data; one key in your control and a second key stored securely in Microsoft Azure. Viewing data protected with Double Key Encryption requires access to both keys. Since Microsoft can access only one of these keys, protected data remains inaccessible to Microsoft, ensuring that you have full control over your data privacy and security.  
+## What is Double Key Encryption (DKE)?
+
+Double Key Encryption enables customers to protect their highly sensitive data to meet specialized requirements. It helps you maintain full control of their encryption keys. It uses two keys to protect data; one key in your control and a second key stored securely in Microsoft Azure. Viewing data protected with Double Key Encryption requires access to both keys. Since Microsoft can access only one of these keys, protected data remains inaccessible to Microsoft, ensuring that you have full control over your data privacy and security.  
 
 You can host the Double Key Encryption service used to request your key, in a location of your choice (on-premises key management server or in the cloud). You maintain the service as you would any other application. Double Key Encryption enables you to control access to the Double Key Encryption service. You can store your highly sensitive data on-premises or move it to the cloud. You can be confident about preventing third-party access because you maintain full control of your key. Double Key Encryption allows you to store your data and key in the same location.
 
@@ -63,7 +64,7 @@ You can store Double Key Encrypted documents on-premises or in the cloud. In the
 
 ## What regions and languages is Double Key Encryption available in? Is Double Key Encryption available worldwide?
 
-DKE labels are localized to the same languages as other sensitivity labels in Microsoft Information Protection. Double Key Encryption is available worldwide.
+DKE labels are localized to the same languages as other sensitivity labels in Microsoft Purview Information Protection. Double Key Encryption is available worldwide.
 
 ## Can I convert a non-DKE label to a DKE label?
 

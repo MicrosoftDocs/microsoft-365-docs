@@ -7,14 +7,14 @@ metadata:
   title: Microsoft Defender for Office 365 security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn about the robust security solutions in Defender for Office 365 to better protect your email and collaboration tools. # Required; article description that is displayed in search results. < 160 chars.
   services: office-365-security-compliance
-  ms.prod: m365-security
-  ms.technology: mdo
+  ms.service: microsoft-365-security
+  ms.subservice: mdo
   ms.topic: landing-page # Required 
-  ms.collection: m365-security-compliance
+  ms.collection: m365-security
   ms.custom: intro-hub-or-landing
   author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
   ms.author: macapara #Required; microsoft alias of author; optional team alias.
-  ms.date: 04/13/2021 #Required; mm/dd/yyyy format.
+  ms.date: 09/15/2022
   ms.localizationpriority: high
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -28,7 +28,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Office 365 Security overview
-            url:  overview.md
+            url:  defender-for-office-365.md
           - text: Set up with Preset security policies in EOP and Defender for Office 365
             url: preset-security-policies.md
   # Card
@@ -47,10 +47,10 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-        - text: Evaluate Defender for Office 365
-          url: office-365-evaluation.md
-        - text: Switch to Exchange Online Protection
-          url: switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
+        - text: Try Defender for Office 365
+          url: try-microsoft-defender-for-office-365.md
+        - text: Migrate to Defender for Office 365
+          url: migrate-to-defender-for-office-365.md
    # Card
   - title: Setting up Email Authentication protection
     linkLists:
@@ -91,8 +91,8 @@ landingContent:
             url: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
           - text: Threat Trackers
             url: threat-trackers.md
-          - text: Smart reports and insights in the Security & Compliance Center
-            url: reports-and-insights-in-security-and-compliance.md
+          - text: Email security reports in the Microsoft 365 Defender portal
+            url: view-email-security-reports.md
      # Card
   - title: Investigate
     linkLists:

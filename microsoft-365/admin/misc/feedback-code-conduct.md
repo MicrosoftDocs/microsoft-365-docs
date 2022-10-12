@@ -5,8 +5,10 @@ author: Kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
 description: "Learn about Microsoft code of conduct for the feedback you provide."
 ---
 
@@ -29,7 +31,7 @@ In addition to upholding this Code of Conduct, you're also responsible for adher
 - Cite the source of anything you post or upload if it isn't your own original content. Be honest about your sources.
 - Keep it clean. No profanity, obscenity, insulting or bigoted comments or feedback please.
 - If providing feedback in community experiences, search to see if the feedback you’d like to give has already been posted.  You can then comment on that feedback or vote on it.
-- Report any kind of abuse you find in the community. you'll find "Report abuse" links in every post and in every profile.
+- Report any kind of abuse you find in the community. You'll find "Report abuse" links in every post and in every profile.
 
 ## Don't
 
@@ -37,7 +39,7 @@ In addition to upholding this Code of Conduct, you're also responsible for adher
 - Threaten, stalk, insult, victimize or intimidate anyone (or group of people) for any reason, including on the basis of age, gender, disability, ethnicity, sexual orientation, race, or religion.
 - Incite other users to threaten, stalk, insult, victimize, or intimidate another person or group of people.
 - Harass, insult, tease, or correct other users about the grammar used in their posts. Good or bad grammar isn't the point-the feedback community is about sharing feedback with Microsoft and others within the community.
-- Post content showing nudity of any sort, including full or partial photographic human nudity, or nudity in cartoons, fantasy art, or manga.
+- Post content that is showing nudity of any sort, including full or partial photographic human nudity, or nudity in cartoons, fantasy art, or manga.
 - Post chain letters.
 - Link to websites that require payment to access information.
 - Post links to external sites that violate this Code of Conduct.
@@ -52,7 +54,7 @@ In addition to upholding this Code of Conduct, you're also responsible for adher
 - Pirating Microsoft software or products, or offering pirated software or products for sale, including posting product keys.
 - Specifically violating Microsoft licensing or terms, such as posting content or links that will install a 3rd party kernel, or evade security measures built into the software.
 - Promoting or otherwise facilitating the purchase and sale of ammunition or firearms.
-- Posting 'spam,' 'pyramid schemes,' 'affiliate marketing,' or unsolicited commercial advertisements of any kind, including advertising for money making schemes, discount cards, credit counseling, online surveys, or online contests.
+- Posting 'spam,' 'pyramid schemes,' 'affiliate marketing,' or unsolicited commercial advertisements of any kind, including advertising for money-making schemes, discount cards, credit counseling, online surveys, or online contests.
 - Attempting to manipulate the forums, or other community features, including ranking and reputation systems, by violating any of the provisions of this Code of Conduct, colluding with others on voting, or using multiple profiles.
 - Offering to make international money transfers for amounts exceeding the asking price of an item, with intent to request a refund of any portion of the payment.
 - Using any form of automated device or computer program that enables the submission of postings without the express written consent of Microsoft Corporation.

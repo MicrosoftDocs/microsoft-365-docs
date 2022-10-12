@@ -1,24 +1,26 @@
-- name: Microsoft 365 compliance
+- name: Microsoft Purview risk & compliance solutions
   href: index.yml
-- name: What's new in Microsoft 365 compliance
+- name: Learn about risk & compliance solutions
+  href: purview-compliance.md
+- name: What's new in risk & compliance solutions
   href: whats-new.md
 - name: Compliance trials
   items:
-    - name: About the free trial for Microsoft 365 compliance
+    - name: About the free trial for Microsoft Purview
       href: compliance-easy-trials.md
-    - name: About the free trial for Microsoft Compliance Manager premium assessments
+    - name: About the free trial for Microsoft Purview Compliance Manager premium assessments
       href: compliance-easy-trials-compliance-manager-assessments.md
 - name: Get started
   items: 
-    - name: Quick tasks to get started with compliance
+    - name: Quick tasks to get started with compliance in Microsoft Purview
       href: compliance-quick-tasks.md
-    - name: Microsoft 365 solution catalog
+    - name: Microsoft Purview solution catalog
       href: microsoft-365-solution-catalog.md
-    - name: Microsoft 365 compliance center
+    - name: Microsoft Purview compliance portal
       href: microsoft-365-compliance-center.md
-    - name: Permissions in the Microsoft 365 compliance center
+    - name: Permissions in the Microsoft Purview compliance portal
       href: microsoft-365-compliance-center-permissions.md
-    - name: Redirecting users to the Microsoft 365 compliance center
+    - name: Redirecting users to the Microsoft Purview compliance portal
       href: microsoft-365-compliance-center-redirection.md
     - name: Use your free Azure Active Directory subscription
       href: use-your-free-azure-ad-subscription-in-office-365.md
@@ -26,37 +28,197 @@
       href: plan-for-security-and-compliance.md
     - name: Compliance extensibility
       href: compliance-extensibility.md
-- name: Cross-solution features
+- name: Onboard devices for Microsoft Purview
   items:
-    - name: Onboard Windows 10 and Windows 11 devices
+    - name: Onboard Windows devices
       items:
-        - name: Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview
+        - name: Overview
           href: device-onboarding-overview.md
-        - name: Onboard Windows 10 and Windows 11 devices via Group Policy
-          href: device-onboarding-gp.md
-        - name: Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools
+        - name: Intune
           href: device-onboarding-mdm.md
-        - name: Onboard Windows 10 Windows 11 devices using Configuration Manager
+        - name: Configuration Manager
           href: device-onboarding-sccm.md
-        - name: Onboard Windows 10 and Windows 11 devices using a local script
+        - name: Group Policy
+          href: device-onboarding-gp.md
+        - name: Local script
           href: device-onboarding-script.md
-        - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
+        - name: Non-persistent virtual desktop infrastructure (VDI)
           href: device-onboarding-vdi.md
-    - name: Onboard macOS devices (preview)
+    - name: Onboard macOS devices
       items:
-        - name: Onboard macOS devices into Microsoft 365 overview (preview) 
+        - name: Overview 
           href: device-onboarding-macos-overview.md
-        - name: Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune (preview)
+        - name: Intune
           href: device-onboarding-offboarding-macos-intune.md
-        - name: Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)
+        - name: Intune for Microsoft Defender for Endpoint
           href: device-onboarding-offboarding-macos-intune-mde.md
-        - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro (preview)
+        - name: JAMF Pro
           href: device-onboarding-offboarding-macos-jamfpro.md
-        - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
+        - name: JAMF Pro for Microsoft Defender for Endpoint customers
           href: device-onboarding-offboarding-macos-jamfpro-mde.md
+- name: Manage connectors for third-party data
+  items: 
+   - name: Learn about connectors for third-party data
+     href: archiving-third-party-data.md
+   - name: Microsoft data connectors
+     items:  
+       - name: Bloomberg Message
+         href: archive-bloomberg-message-data.md 
+       - name: Epic EHR healthcare data (preview)
+         href: import-epic-data.md
+       - name: Facebook Business (preview)
+         href: archive-facebook-data-with-sample-connector.md
+       - name: Generic EHR healthcare data (preview)
+         href: import-healthcare-data.md
+       - name: HR data 
+         href: import-hr-data.md
+       - name: ICE Chat
+         href: archive-icechat-data.md 
+       - name: Instant Bloomberg
+         href: archive-instant-bloomberg-data.md
+       - name: LinkedIn
+         href: archive-linkedin-data.md
+       - name: Physical badging data (preview)
+         href: import-physical-badging-data.md
+       - name: Slack eDiscovery (preview)
+         href: archive-slack-data-microsoft.md
+       - name: Twitter (preview)
+         href: archive-twitter-data-with-sample-connector.md
+   - name: Veritas data connectors
+     items:  
+       - name: CellTrust
+         href: archive-celltrust-data.md          
+       - name: Cisco Jabber on MS SQL
+         href: archive-ciscojabberonmssql-data.md
+       - name: Cisco Jabber on Oracle
+         href: archive-ciscojabberonoracle-data.md
+       - name: Cisco Jabber on PostgreSQL
+         href: archive-ciscojabberonpostgresql-data.md
+       - name: EML
+         href: archive-eml-data.md
+       - name: FX Connect
+         href: archive-fxconnect-data.md
+       - name: MS SQL Database
+         href: archive-mssqldatabaseimporter-data.md
+       - name: Pivot
+         href: archive-pivot-data.md
+       - name: Redtail Speak
+         href: archive-redtailspeak-data.md
+       - name: Reuters Dealing
+         href: archive-reutersdealing-data.md
+       - name: Reuters Eikon
+         href: archive-reuterseikon-data.md
+       - name: Reuters FX
+         href: archive-reutersfx-data.md
+       - name: RingCentral
+         href: archive-ringcentral-data.md   
+       - name: Salesforce Chatter
+         href: archive-salesforcechatter-data.md
+       - name: ServiceNow
+         href: archive-servicenow-data.md
+       - name: Skype for Business
+         href: archive-skypeforbusiness-data.md
+       - name: Slack eDiscovery
+         href: archive-slack-data.md    
+       - name: Symphony
+         href: archive-symphony-data.md
+       - name: Text-delimited
+         href: archive-text-delimited-data.md
+       - name: Twitter (preview)
+         href: archive-veritas-twitter-data.md
+       - name: Webex Teams
+         href: archive-webexteams-data.md
+       - name: Webpages
+         href: archive-webpagecapture-data.md
+       - name: Workplace from Facebook
+         href: archive-workplacefromfacebook-data.md    
+       - name: XIP
+         href: archive-xip-data.md
+       - name: XSLT/XML 
+         href: archive-xslt-xml-data.md
+       - name: Yieldbroker
+         href: archive-yieldbroker-data.md
+       - name: YouTube
+         href: archive-youtube-data.md
+       - name: Zoom Meetings
+         href: archive-zoommeetings-data.md
+   - name: TeleMessage data connectors
+     items:  
+       - name: Android Archiver
+         href: archive-android-archiver-data.md
+       - name: AT&T SMS/MMS Network Archiver
+         href: archive-att-network-archiver-data.md
+       - name: Bell SMS/MMS Network Archiver
+         href: archive-bell-network-data.md
+       - name: Enterprise Number Archiver
+         href: archive-enterprise-number-data.md
+       - name: O2 Telefonica SMS and Voice Network Archiver
+         href: archive-o2-network-data.md
+       - name: Rogers Network Archiver
+         href: archive-rogers-network-archiver-data.md
+       - name: Signal Archiver
+         href: archive-signal-archiver-data.md
+       - name: Telegram Archiver
+         href: archive-telegram-archiver-data.md
+       - name: TELUS Network
+         href: archive-telus-network-data.md
+       - name: Verizon SMS/MMS Network Archiver
+         href: archive-verizon-network-data.md
+       - name: WeChat Archiver
+         href: archive-wechat-data.md
+       - name: WhatsApp Archiver
+         href: archive-whatsapp-data.md
+   - name: 17a-4 data connectors
+     items:
+       - name: BlackBerry DataParser 
+         href: archive-17a-4-blackberry-data.md
+       - name: Bloomberg DataParser 
+         href: archive-17a-4-bloomberg-data.md
+       - name: Cisco Jabber DataParser 
+         href: archive-17a-4-cisco-jabber-data.md
+       - name: Cisco Webex DataParser 
+         href: archive-17a-4-webex-teams-data.md
+       - name: FactSet DataParser 
+         href: archive-17a-4-factset-data.md
+       - name: Fuze DataParser 
+         href: archive-17a-4-fuze-data.md
+       - name: FX Connect DataParser 
+         href: archive-17a-4-fxconnect-data.md
+       - name: ICE DataParser 
+         href: archive-17a-4-ice-im-data.md
+       - name: InvestEdge DataParser 
+         href: archive-17a-4-investedge-data.md
+       - name: LivePerson Conversational Cloud DataParser 
+         href: archive-17a-4-liveperson-data.md
+       - name: Quip DataParser 
+         href: archive-17a-4-quip-data.md
+       - name: Refinitiv Eikon Messenger DataParser 
+         href: archive-17a-4-refinitiv-messenger-data.md
+       - name: ServiceNow DataParser 
+         href: archive-17a-4-servicenow-data.md
+       - name: Skype for Business Server DataParser
+         href: archive-17a-4-skype-for-business-server-data.md
+       - name: Slack DataParser 
+         href: archive-17a-4-slack-data.md
+       - name: SQL DataParser 
+         href: archive-17a-4-sql-database-data.md
+       - name: Symphony DataParser 
+         href: archive-17a-4-symphony-data.md
+       - name: Zoom DataParser 
+         href: archive-17a-4-zoom-data.md
+   - name: CellTrust connectors
+     items:
+       - name: CellTrust SL2 
+         href: archive-data-from-celltrustsl2.md
+   - name: Work with a partner to archive third-party data
+     href: work-with-partner-to-archive-third-party-data.md
+   - name: Search for third-party data
+     href: use-content-search-to-search-third-party-data-that-was-imported.md
+   - name: View admin logs for data connectors
+     href: data-connector-admin-logs.md
 - name: Manage insider risks
   items:
-    - name: Microsoft 365 insider risk solutions
+    - name: Microsoft Purview insider risk solutions
       href: insider-risk-solution-overview.md
     - name: Communication compliance
       items:
@@ -74,9 +236,9 @@
           href: communication-compliance-policies.md
         - name: Investigate and remediate communication compliance alerts
           href: communication-compliance-investigate-remediate.md
-        - name: Learn about communication compliance reports & audits
+        - name: Use communication compliance reports & audits
           href: communication-compliance-reports-audits.md
-        - name: Communication compliance with SIEM solutions 
+        - name: Use communication compliance with SIEM solutions 
           href: communication-compliance-siem.md
         - name: Case study - Contoso quickly configures an inappropriate text policy 
           href: communication-compliance-case-study.md
@@ -133,7 +295,7 @@
         - name: Overview
           href: privileged-access-management-solution-overview.md
         - name: Learn about privileged access management
-          href: privileged-access-management-overview.md
+          href: privileged-access-management.md
         - name: Get started with privileged access management
           href: privileged-access-management-configuration.md
     - name: Protect user and device access
@@ -144,9 +306,9 @@
   items:
     - name: Know your data, protect your data, prevent data loss
       href: information-protection.md
-    - name: Deploy a MIP solution
+    - name: Deploy an information protection solution
       href: information-protection-solution.md
-    - name: Default labels and policies for Microsoft Information Protection
+    - name: Default labels and policies to protect your data
       href: mip-easy-trials.md
     - name: Sensitive information types
       items: 
@@ -158,32 +320,56 @@
             href: sit-learn-about-exact-data-match-based-sits.md
           - name: Document Fingerprinting
             href: document-fingerprinting.md
-          - name: Learn about named entities (preview)
+          - name: Learn about named entities
             href: named-entities-learn.md
         - name: Get started with sensitive information type
           items:
-          - name: Get started with custom sensitive information types - Compliance Center
+          - name: Create a custom sensitive information type - Compliance Center
             href: create-a-custom-sensitive-information-type.md
-          - name: Get started with exact data match based sensitive information types
-            href: sit-get-started-exact-data-match-based-sits-overview.md
-          - name: Export source data for exact data match based sensitive information type
-            href: sit-get-started-exact-data-match-export-data.md
-          - name: Create the schema for exact data match based sensitive information types
-            href: sit-get-started-exact-data-match-create-schema.md
-          - name: Hash and upload the sensitive information source table for exact data match sensitive information types
-            href: sit-get-started-exact-data-match-hash-upload.md
-          - name: Create exact data match sensitive information type/rule package
-            href: sit-get-started-exact-data-match-create-rule-package.md
-          - name: Test an exact data match sensitive information type
-            href: sit-get-started-exact-data-match-test.md  
+          - name: Creating EDM SITS
+            items:
+            - name: Get started with EDM SITS
+              href: sit-get-started-exact-data-match-based-sits-overview.md
+            - name: Create EDM SIT new experience
+              items: 
+              - name: Create EDM SIT workflow new experience
+                href: sit-create-edm-sit-unified-ux-workflow.md
+              - name: Export source data
+                href: sit-get-started-exact-data-match-export-data.md 
+              - name: Create EDM SIT sample file for the new experience
+                href: sit-create-edm-sit-unified-ux-sample-file.md
+              - name: Create EDM SIT schema and rule package new experience
+                href: sit-create-edm-sit-unified-ux-schema-rule-package.md
+              - name: Hash and upload the sensitive information source table for EDM classic experience
+                href: sit-get-started-exact-data-match-hash-upload.md
+              - name: Test an EDM sensitive information type
+                href: sit-get-started-exact-data-match-test.md
+            - name: Create EDM SIT classic experience
+              items:
+              - name: Create exact EDM SIT workflow classic experience
+                href: sit-create-edm-sit-classic-ux-workflow.md
+              - name: Export source data
+                href: sit-get-started-exact-data-match-export-data.md
+              - name: Create the schema for EDM classic experience
+                href: sit-get-started-exact-data-match-create-schema.md
+              - name: Hash and upload the sensitive information source table for EDM classic experience
+                href: sit-get-started-exact-data-match-hash-upload.md
+              - name: Create exact data match sensitive information type/rule package
+                href: sit-get-started-exact-data-match-create-rule-package.md
+              - name: Test an EDM sensitive information type
+                href: sit-get-started-exact-data-match-test.md
         - name: Use sensitive information types
           items:
           - name: Customize a built-in sensitive information type
             href: customize-a-built-in-sensitive-information-type.md
           - name: Modify exact data match schema to use configurable match
             href: sit-modify-edm-schema-configurable-match.md
-          - name: Create notifications for exact data match activities (preview)
+          - name: Create notifications for exact data match activities
             href: sit-edm-notifications-activities.md
+          - name: Manage custom sensitive information types in compliance center
+            href: sit-manage-custom-sits-compliance-center.md
+          - name: Sensitive information types REGEX validators and additional checks
+            href: sit-regex-validators-additional-checks.md
           - name: Create a custom sensitive information type - PowerShell
             href: create-a-custom-sensitive-information-type-in-scc-powershell.md
           - name: Remove a custom sensitive information type - PowerShell
@@ -196,18 +382,634 @@
             href: sit-modify-keyword-dictionary.md
           - name: Manage your exact data match schema
             href: sit-use-exact-data-manage-schema.md
-          - name: Refresh your sensitive information source table file
+          - name: Refresh your EDM sensitive information source table file
             href: sit-use-exact-data-refresh-data.md
-          - name: Use named entities in your data loss prevention policies (preview)
+          - name: Use named entities in your data loss prevention policies
             href: named-entities-use.md
+          - name: Common usage scenarios for sensitive information types
+            href: sit-common-scenarios.md
         - name: Sensitive information type reference
           items:
-          - name: Sensitive information type entity definitions 
-            href: sensitive-information-type-entity-definitions.md
-          - name: What the DLP functions look for
-            href: what-the-dlp-functions-look-for.md
+          - name: All Sensitive information type entity definitions
+            items: 
+              - name: Sensitive information type entity definitions
+                href: sensitive-information-type-entity-definitions.md
+              - name: ABA routing number
+                href: sit-defn-aba-routing.md
+              - name: All credentials
+                href: sit-defn-all-creds.md
+              - name: All full names
+                href: sit-defn-all-full-names.md
+              - name: All medical terms and conditions
+                href: sit-defn-all-medical-terms-conditions.md
+              - name: All Physical Addresses
+                href: sit-defn-all-physical-addresses.md
+              - name: Amazon S3 client secret access key 
+                href: sit-defn-amazon-s3-client-secret-access-key.md
+              - name: Argentina national identity (DNI) number
+                href: sit-defn-argentina-national-identity-numbers.md
+              - name: Argentina Unique Tax Identification Key
+                href: sit-defn-argentina-unique-tax-identification-key.md
+              - name: ASP.NET Machine Key
+                href: sit-defn-asp-net-machine-key.md
+              - name: Australia bank account number
+                href: sit-defn-australia-bank-account-number.md
+              - name: Australia business number
+                href: sit-defn-australia-business-number.md
+              - name: Australia company number
+                href: sit-defn-australia-company-number.md
+              - name: Australia drivers license number
+                href: sit-defn-australia-drivers-license-number.md
+              - name: Australia medical account number
+                href: sit-defn-australia-medical-account-number.md
+              - name: Australia passport number
+                href: sit-defn-australia-passport-number.md
+              - name: Australia physical addresses
+                href: sit-defn-australia-physical-addresses.md
+              - name: Australia tax file number
+                href: sit-defn-australia-tax-file-number.md
+              - name: Austria drivers license number
+                href: sit-defn-austria-drivers-license-number.md
+              - name: Austria identity card
+                href: sit-defn-austria-identity-card.md
+              - name: Austria passport number
+                href: sit-defn-austria-passport-number.md
+              - name: Austria physical addresses
+                href: sit-defn-austria-physical-addresses.md
+              - name: Austria social security number
+                href: sit-defn-austria-social-security-number.md
+              - name: Austria tax identification number
+                href: sit-defn-austria-tax-identification-number.md
+              - name: Austria value added tax
+                href: sit-defn-austria-value-added-tax.md
+              - name: Azure AD client access token
+                href: sit-defn-azure-ad-client-access-token.md
+              - name: Azure AD client secret
+                href: sit-defn-azure-ad-client-secret.md
+              - name: Azure AD user credentials
+                href: sit-defn-azure-ad-user-credentials.md
+              - name: Azure App Service Deployment password
+                href: sit-defn-azure-app-service-deployment-password.md
+              - name: Azure Batch Shared Access Key
+                href: sit-defn-azure-batch-shared-access-key.md
+              - name: Azure Bot Framework secret key
+                href: sit-defn-azure-bot-framework-secret-key.md
+              - name: Azure Bot service app secret
+                href: sit-defn-azure-bot-service-app-secret.md
+              - name: Azure Cognitive Search API key
+                href: sit-defn-azure-cognitive-search-api-key.md
+              - name: Azure Cognitive Service key
+                href: sit-defn-azure-cognitive-service-key.md
+              - name: Azure Container Registry access key
+                href: sit-defn-azure-container-registry-access-key.md
+              - name: Azure COSMOS DB account access key
+                href: sit-defn-azure-cosmos-db-account-access-key.md
+              - name: Azure Databricks personal access token 
+                href: sit-defn-azure-databricks-personal-access-token.md
+              - name: Azure DevOps app secret 
+                href: sit-defn-azure-devops-app-secret.md
+              - name: Azure DevOps personal access token
+                href: sit-defn-azure-devops-personal-access-token.md
+              - name: Azure DocumentDB auth key
+                href: sit-defn-azure-document-db-auth-key.md
+              - name: Azure EventGrid access key
+                href: sit-defn-azure-eventgrid-access-key.md
+              - name: Azure Function Master / API key  
+                href: sit-defn-azure-function-master-api-key.md
+              - name: Azure IAAS database connection string and Azure SQL connection string
+                href: sit-defn-azure-iaas-database-connection-string-azure-sql-connection-string.md
+              - name: Azure IoT connection string
+                href: sit-defn-azure-iot-connection-string.md
+              - name: Azure IoT shared access key 
+                href: sit-defn-azure-iot-shared-access-key.md
+              - name: Azure Logic App shared access signature
+                href: sit-defn-azure-logic-app-shared-access-signature.md
+              - name: Azure Machine Learning web service API key  
+                href: sit-defn-azure-machine-learning-web-service-api-key.md
+              - name: Azure Maps subscription key  
+                href: sit-defn-azure-maps-subscription-key.md
+              - name: Azure publish setting password
+                href: sit-defn-azure-publish-setting-password.md
+              - name: Azure Redis cache connection string
+                href: sit-defn-azure-redis-cache-connection-string.md
+              - name: Azure Redis cache connection string password 
+                href: sit-defn-azure-redis-cache-connection-string-password.md
+              - name: Azure SAS
+                href: sit-defn-azure-sas.md
+              - name: Azure service bus connection string
+                href: sit-defn-azure-service-bus-connection-string.md
+              - name: Azure service bus shared access signature
+                href: sit-defn-azure-service-bus-shared-access-signature.md
+              - name: Azure Shared Access key / Web Hook token
+                href: sit-defn-azure-shared-access-key-web-hook-token.md
+              - name: Azure SignalR access key
+                href: sit-defn-azure-signalr-access-key.md
+              - name: Azure SQL connection string 
+                href: sit-defn-azure-sql-connection-string.md
+              - name: Azure storage account access key  
+                href: sit-defn-azure-storage-account-access-key.md
+              - name: Azure storage account key
+                href: sit-defn-azure-storage-account-key.md
+              - name: Azure Storage account key (generic)
+                href: sit-defn-azure-storage-account-key-generic.md
+              - name: Azure Storage account shared access signature
+                href: sit-defn-azure-storage-account-shared-access-signature.md
+              - name: Azure Storage account shared access signature for high risk resources
+                href: sit-defn-azure-storage-account-shared-access-signature-high-risk-resources.md
+              - name: Azure subscription management certificate
+                href: sit-defn-azure-subscription-management-certificate.md
+              - name: Belgium drivers license number
+                href: sit-defn-belgium-drivers-license-number.md
+              - name: Belgium national number
+                href: sit-defn-belgium-national-number.md
+              - name: Belgium passport number
+                href: sit-defn-belgium-passport-number.md
+              - name: Belgium physical addresses
+                href: sit-defn-belgium-physical-addresses.md
+              - name: Belgium value added tax number
+                href: sit-defn-belgium-value-added-tax-number.md
+              - name: Blood test terms
+                href: sit-defn-blood-test-terms.md
+              - name: Brand medication names
+                href: sit-defn-brand-medication-names.md
+              - name: Brazil CPF number
+                href: sit-defn-brazil-cpf-number.md
+              - name: Brazil legal entity number (CNPJ)
+                href: sit-defn-brazil-legal-entity-number.md
+              - name: Brazil national identification card (RG)
+                href: sit-defn-brazil-national-identification-card.md
+              - name: Brazil physical addresses
+                href: sit-defn-brazil-physical-addresses.md
+              - name: Bulgaria drivers license number
+                href: sit-defn-bulgaria-drivers-license-number.md
+              - name: Bulgaria passport number
+                href: sit-defn-bulgaria-passport-number.md
+              - name: Bulgaria physical addresses
+                href: sit-defn-bulgaria-physical-addresses.md
+              - name: Bulgaria uniform civil number
+                href: sit-defn-bulgaria-uniform-civil-number.md
+              - name: Canada bank account number
+                href: sit-defn-canada-bank-account-number.md
+              - name: Canada drivers license number
+                href: sit-defn-canada-drivers-license-number.md
+              - name: Canada health service number
+                href: sit-defn-canada-health-service-number.md
+              - name: Canada passport number
+                href: sit-defn-canada-passport-number.md
+              - name: Canada personal health identification number (PHIN)
+                href: sit-defn-canada-personal-health-identification-number.md
+              - name: Canada physical addresses
+                href: sit-defn-canada-physical-addresses.md
+              - name: Canada social insurance number
+                href: sit-defn-canada-social-insurance-number.md
+              - name: Chile identity card number
+                href: sit-defn-chile-identity-card-number.md
+              - name: China resident identity card (PRC) number
+                href: sit-defn-china-resident-identity-card-number.md
+              - name: Client secret / API key
+                href: sit-defn-client-secret-api-key.md
+              - name: Credit card number
+                href: sit-defn-credit-card-number.md
+              - name: Croatia drivers license number
+                href: sit-defn-croatia-drivers-license-number.md
+              - name: Croatia identity card number
+                href: sit-defn-croatia-identity-card-number.md              
+              - name: Croatia passport number
+                href: sit-defn-croatia-passport-number.md 
+              - name: Croatia personal identification (OIB) number
+                href: sit-defn-croatia-personal-identification-number.md 
+              - name: Croatia physical addresses
+                href: sit-defn-croatia-physical-addresses.md 
+              - name: Cyprus drivers license number
+                href: sit-defn-cyprus-drivers-license-number.md 
+              - name: Cyprus identity card
+                href: sit-defn-cyprus-identity-card.md 
+              - name: Cyprus passport number
+                href: sit-defn-cyprus-passport-number.md 
+              - name: Cyprus physical addresses
+                href: sit-defn-cyprus-physical-addresses.md 
+              - name: Cyprus tax identification number
+                href: sit-defn-cyprus-tax-identification-number.md 
+              - name: Czech drivers license number
+                href: sit-defn-czech-drivers-license-number.md
+              - name: Czech passport number
+                href: sit-defn-czech-passport-number.md
+              - name: Czech personal identity number
+                href: sit-defn-czech-personal-identity-number.md 
+              - name: Czech Republic physical addresses
+                href: sit-defn-czech-republic-physical-addresses.md 
+              - name: Denmark drivers license number
+                href: sit-defn-denmark-drivers-license-number.md 
+              - name: Denmark passport number
+                href: sit-defn-denmark-passport-number.md
+              - name: Denmark personal identification number
+                href: sit-defn-denmark-personal-identification-number.md 
+              - name: Denmark physical addresses
+                href: sit-defn-denmark-physical-addresses.md 
+              - name: Diseases
+                href: sit-defn-diseases.md
+              - name: Drug Enforcement Agency (DEA) number
+                href: sit-defn-drug-enforcement-agency-number.md 
+              - name: Estonia drivers license number
+                href: sit-defn-estonia-drivers-license-number.md  
+              - name: Estonia passport number
+                href: sit-defn-estonia-passport-number.md
+              - name: Estonia personal identification code
+                href: sit-defn-estonia-personal-identification-code.md
+              - name: Estonia physical addresses
+                href: sit-defn-estonia-physical-addresses.md
+              - name: EU debit card number
+                href: sit-defn-eu-debit-card-number.md
+              - name: EU drivers license number
+                href: sit-defn-eu-drivers-license-number.md
+              - name: EU national identification number
+                href: sit-defn-eu-national-identification-number.md
+              - name: EU passport number
+                href: sit-defn-eu-passport-number.md
+              - name: EU social security number or equivalent identification
+                href: sit-defn-eu-social-security-number-equivalent-identification.md
+              - name: EU Tax identification number
+                href: sit-defn-eu-tax-identification-number.md
+              - name: Finland drivers license number
+                href: sit-defn-finland-drivers-license-number.md
+              - name: Finland european health insurance number
+                href: sit-defn-finland-european-health-insurance-number.md
+              - name: Finland national ID
+                href: sit-defn-finland-national-id.md
+              - name: Finland passport number
+                href: sit-defn-finland-passport-number.md
+              - name: Finland physical addresses
+                href: sit-defn-finland-physical-addresses.md
+              - name: France drivers license number
+                href: sit-defn-france-drivers-license-number.md
+              - name: France health insurance number
+                href: sit-defn-france-health-insurance-number.md
+              - name: France national id card (CNI)
+                href: sit-defn-france-national-id-card.md
+              - name: France passport number
+                href: sit-defn-france-passport-number.md
+              - name: France physical addresses
+                href: sit-defn-france-physical-addresses.md
+              - name: France social security number (INSEE)
+                href: sit-defn-france-social-security-number.md
+              - name: France tax identification number
+                href: sit-defn-france-tax-identification-number.md
+              - name: France value added tax number
+                href: sit-defn-france-value-added-tax-number.md
+              - name: General password
+                href: sit-defn-general-password.md
+              - name: General Symmetric key
+                href: sit-defn-general-symmetric-key.md
+              - name: Generic medication names
+                href: sit-defn-generic-medication-names.md
+              - name: Germany drivers license number
+                href: sit-defn-germany-drivers-license-number.md
+              - name: Germany identity card number
+                href: sit-defn-germany-identity-card-number.md
+              - name: Germany passport number
+                href: sit-defn-germany-passport-number.md
+              - name: Germany physical addresses
+                href: sit-defn-germany-physical-addresses.md
+              - name: Germany tax identification number
+                href: sit-defn-germany-tax-identification-number.md
+              - name: Germany value added tax number
+                href: sit-defn-germany-value-added-tax-number.md
+              - name: GitHub personal access token 
+                href: sit-defn-github-personal-access-token.md
+              - name: Google API key
+                href: sit-defn-google-api-key.md
+              - name: Greece drivers license number
+                href: sit-defn-greece-drivers-license-number.md
+              - name: Greece national ID card
+                href: sit-defn-greece-national-id-card.md
+              - name: Greece passport number
+                href: sit-defn-greece-passport-number.md
+              - name: Greece physical addresses
+                href: sit-defn-greece-physical-addresses.md
+              - name: Greece Social Security Number (AMKA)
+                href: sit-defn-greece-social-security-number.md
+              - name: Greece tax identification number
+                href: sit-defn-greece-tax-identification-number.md
+              - name: Hong Kong identity card (HKID) number
+                href: sit-defn-hong-kong-identity-card-number.md
+              - name: Http authorization header
+                href: sit-defn-http-authorization-header.md
+              - name: Hungary drivers license number
+                href: sit-defn-hungary-drivers-license-number.md
+              - name: Hungary passport number
+                href: sit-defn-hungary-passport-number.md
+              - name: Hungary personal identification number
+                href: sit-defn-hungary-personal-identification-number.md
+              - name: Hungary physical addresses
+                href: sit-defn-hungary-physical-addresses.md
+              - name: Hungary social security number (TAJ)
+                href: sit-defn-hungary-social-security-number.md
+              - name: Hungary tax identification number
+                href: sit-defn-hungary-tax-identification-number.md
+              - name: Hungary value added tax number
+                href: sit-defn-hungary-value-added-tax-number.md
+              - name: Iceland physical addresses
+                href: sit-defn-iceland-physical-addresses.md
+              - name: Impairments Listed In The U.S. Disability Evaluation Under Social Security
+                href: sit-defn-impairments-us-disability-evaluation-under-social-security.md
+              - name: India Drivers License Number
+                href: sit-defn-india-drivers-license-number.md
+              - name: India GST Number
+                href: sit-defn-india-gst-number.md
+              - name: India permanent account number (PAN)
+                href: sit-defn-india-permanent-account-number.md
+              - name: India unique identification (Aadhaar) number
+                href: sit-defn-india-unique-identification-number.md
+              - name: India Voter Id Card
+                href: sit-defn-india-voter-id-card.md
+              - name: Indonesia identity card (KTP) number
+                href: sit-defn-indonesia-identity-card-number.md
+              - name: International banking account number (IBAN)
+                href: sit-defn-international-banking-account-number.md
+              - name: International classification of diseases (ICD-10-CM)
+                href: sit-defn-international-classification-of-diseases-icd-10-cm.md
+              - name: International classification of diseases (ICD-9-CM)
+                href: sit-defn-international-classification-of-diseases-icd-9-cm.md
+              - name: IP address
+                href: sit-defn-ip-address.md
+              - name: IP address v4
+                href: sit-defn-ip-address-v4.md
+              - name: IP address v6
+                href: sit-defn-ip-address-v6.md
+              - name: Ireland drivers license number
+                href: sit-defn-ireland-drivers-license-number.md
+              - name: Ireland passport number
+                href: sit-defn-ireland-passport-number.md
+              - name: Ireland personal public service (PPS) number
+                href: sit-defn-ireland-personal-public-service-number.md
+              - name: Ireland physical addresses
+                href: sit-defn-ireland-physical-addresses.md
+              - name: Israel bank account number
+                href: sit-defn-israel-bank-account-number.md
+              - name: Israel national identification number
+                href: sit-defn-israel-national-identification-number.md
+              - name: Italy drivers license number
+                href: sit-defn-italy-drivers-license-number.md
+              - name: Italy fiscal code
+                href: sit-defn-italy-fiscal-code.md
+              - name: Italy passport number
+                href: sit-defn-italy-passport-number.md
+              - name: Italy physical addresses
+                href: sit-defn-italy-physical-addresses.md
+              - name: Italy value added tax number
+                href: sit-defn-italy-value-added-tax-number.md
+              - name: Japan bank account number
+                href: sit-defn-japan-bank-account-number.md
+              - name: Japan drivers license number
+                href: sit-defn-japan-drivers-license-number.md
+              - name: Japan My Number - Corporate
+                href: sit-defn-japan-my-number-corporate.md
+              - name: Japan My Number - Personal
+                href: sit-defn-japan-my-number-personal.md
+              - name: Japan passport number
+                href: sit-defn-japan-passport-number.md
+              - name: Japan physical addresses
+                href: sit-defn-japan-physical-addresses.md
+              - name: Japan residence card number
+                href: sit-defn-japan-residence-card-number.md
+              - name: Japan resident registration number
+                href: sit-defn-japan-resident-registration-number.md
+              - name: Japan social insurance number (SIN)
+                href: sit-defn-japan-social-insurance-number.md
+              - name: Lab test terms
+                href: sit-defn-lab-test-terms.md
+              - name: Latvia drivers license number
+                href: sit-defn-latvia-drivers-license-number.md
+              - name: Latvia passport number
+                href: sit-defn-latvia-passport-number.md
+              - name: Latvia personal code
+                href: sit-defn-latvia-personal-code.md
+              - name: Latvia physical addresses
+                href: sit-defn-latvia-physical-addresses.md
+              - name: Liechtenstein physical addresses
+                href: sit-defn-liechtenstein-physical-addresses.md
+              - name: Lifestyles that relate to medical conditions
+                href: sit-defn-lifestyles-relate-to-medical-conditions.md
+              - name: Lithuania drivers license number
+                href: sit-defn-lithuania-drivers-license-number.md
+              - name: Lithuania passport number
+                href: sit-defn-lithuania-passport-number.md
+              - name: Lithuania personal code
+                href: sit-defn-lithuania-personal-code.md
+              - name: Lithuania physical addresses
+                href: sit-defn-lithuania-physical-addresses.md
+              - name: Luxemburg drivers license number
+                href: sit-defn-luxemburg-drivers-license-number.md
+              - name: Luxemburg national identification number (natural persons)
+                href: sit-defn-luxemburg-national-identification-number-natural-persons.md
+              - name: Luxemburg national identification number (non-natural persons)
+                href: sit-defn-luxemburg-national-identification-number-non-natural-persons.md
+              - name: Luxemburg passport number
+                href: sit-defn-luxemburg-passport-number.md
+              - name: Luxemburg physical addresses
+                href: sit-defn-luxemburg-physical-addresses.md
+              - name: Malaysia identification card number
+                href: sit-defn-malaysia-identification-card-number.md
+              - name: Malta drivers license number
+                href: sit-defn-malta-drivers-license-number.md
+              - name: Malta identity card number
+                href: sit-defn-malta-identity-card-number.md
+              - name: Malta passport number
+                href: sit-defn-malta-passport-number.md
+              - name: Malta physical addresses
+                href: sit-defn-malta-physical-addresses.md
+              - name: Malta tax identification number
+                href: sit-defn-malta-tax-identification-number.md
+              - name: Medical specialities
+                href: sit-defn-medical-specialities.md
+              - name: Medicare Beneficiary Identifier (MBI) card
+                href: sit-defn-medicare-beneficiary-Identifier-card.md
+              - name: Mexico Unique Population Registry Code (CURP)
+                href: sit-defn-mexico-unique-population-registry-code.md
+              - name: Microsoft Bing maps key
+                href: sit-defn-microsoft-bing-maps-key.md
+              - name: Netherlands citizens service (BSN) number
+                href: sit-defn-netherlands-citizens-service-number.md
+              - name: Netherlands drivers license number
+                href: sit-defn-netherlands-drivers-license-number.md
+              - name: Netherlands passport number
+                href: sit-defn-netherlands-passport-number.md
+              - name: Netherlands physical addresses
+                href: sit-defn-netherlands-physical-addresses.md
+              - name: Netherlands tax identification number
+                href: sit-defn-netherlands-tax-identification-number.md
+              - name: Netherlands value added tax number
+                href: sit-defn-netherlands-value-added-tax-number.md
+              - name: New Zealand bank account number
+                href: sit-defn-new-zealand-bank-account-number.md
+              - name: New Zealand drivers license number
+                href: sit-defn-new-zealand-drivers-license-number.md
+              - name: New Zealand inland revenue number
+                href: sit-defn-new-zealand-inland-revenue-number.md
+              - name: New Zealand ministry of health number
+                href: sit-defn-new-zealand-ministry-of-health-number.md
+              - name: New Zealand physical addresses
+                href: sit-defn-new-zealand-physical-addresses.md
+              - name: New Zealand social welfare number
+                href: sit-defn-new-zealand-social-welfare-number.md
+              - name: Norway identification number
+                href: sit-defn-norway-identification-number.md
+              - name: Norway physical addresses
+                href: sit-defn-norway-physical-addresses.md
+              - name: Philippines passport number
+                href: sit-defn-philippines-passport-number.md
+              - name: Philippines unified multi-purpose identification number
+                href: sit-defn-philippines-unified-multi-purpose-identification-number.md
+              - name: Poland drivers license number
+                href: sit-defn-poland-drivers-license-number.md
+              - name: Poland identity card
+                href: sit-defn-poland-identity-card.md
+              - name: Poland national ID (PESEL)
+                href: sit-defn-poland-national-id.md
+              - name: Poland passport number
+                href: sit-defn-poland-passport-number.md
+              - name: Poland physical addresses
+                href: sit-defn-poland-physical-addresses.md
+              - name: Poland REGON number
+                href: sit-defn-poland-regon-number.md
+              - name: Poland tax identification number
+                href: sit-defn-poland-tax-identification-number.md
+              - name: Portugal citizen card number
+                href: sit-defn-portugal-citizen-card-number.md
+              - name: Portugal drivers license number
+                href: sit-defn-portugal-drivers-license-number.md
+              - name: Portugal passport number
+                href: sit-defn-portugal-passport-number.md
+              - name: Portugal physical addresses
+                href: sit-defn-portugal-physical-addresses.md
+              - name: Portugal tax identification number
+                href: sit-defn-portugal-tax-identification-number.md
+              - name: Qatari identification card number
+                href: sit-defn-qatari-id-card-number.md
+              - name: Romania drivers license number
+                href: sit-defn-romania-drivers-license-number.md
+              - name: Romania passport number
+                href: sit-defn-romania-passport-number.md
+              - name: Romania personal numeric code (CNP)
+                href: sit-defn-romania-personal-numeric-code.md
+              - name: Romania physical addresses
+                href: sit-defn-romania-physical-addresses.md
+              - name: Russia passport number domestic
+                href: sit-defn-russia-passport-number-domestic.md
+              - name: Russia passport number international
+                href: sit-defn-russia-passport-number-international.md
+              - name: Saudi Arabia National ID
+                href: sit-defn-saudi-arabia-national-id.md
+              - name: Singapore national registration identity card (NRIC) number
+                href: sit-defn-singapore-national-registration-identity-card-number.md
+              - name: Slack access token
+                href: sit-defn-slack-access-token.md
+              - name: Slovakia drivers license number
+                href: sit-defn-slovakia-drivers-license-number.md
+              - name: Slovakia passport number
+                href: sit-defn-slovakia-passport-number.md
+              - name: Slovakia personal number
+                href: sit-defn-slovakia-personal-number.md
+              - name: Slovakia physical addresses
+                href: sit-defn-slovakia-physical-addresses.md
+              - name: Slovenia drivers license number
+                href: sit-defn-slovenia-drivers-license-number.md
+              - name: Slovenia passport number
+                href: sit-defn-slovenia-passport-number.md
+              - name: Slovenia physical addresses
+                href: sit-defn-slovenia-physical-addresses.md
+              - name: Slovenia tax identification number
+                href: sit-defn-slovenia-tax-identification-number.md
+              - name: Slovenia Unique Master Citizen Number
+                href: sit-defn-slovenia-unique-master-citizen-number.md
+              - name: South Africa identification number
+                href: sit-defn-south-africa-identification-number.md
+              - name: South Korea resident registration number
+                href: sit-defn-south-korea-resident-registration-number.md
+              - name: Spain DNI
+                href: sit-defn-spain-dni.md
+              - name: Spain drivers license number
+                href: sit-defn-spain-drivers-license-number.md
+              - name: Spain passport number
+                href: sit-defn-spain-passport-number.md
+              - name: Spain physical addresses
+                href: sit-defn-spain-physical-addresses.md
+              - name: Spain social security number (SSN)
+                href: sit-defn-spain-social-security-number.md
+              - name: Spain tax identification number
+                href: sit-defn-spain-tax-identification-number.md
+              - name: SQL Server connection string
+                href: sit-defn-sql-server-connection-string.md
+              - name: Surgical procedures
+                href: sit-defn-surgical-procedures.md
+              - name: Sweden drivers license number
+                href: sit-defn-sweden-drivers-license-number.md
+              - name: Sweden national ID
+                href: sit-defn-sweden-national-id.md
+              - name: Sweden passport number
+                href: sit-defn-sweden-passport-number.md
+              - name: Sweden physical addresses
+                href: sit-defn-sweden-physical-addresses.md
+              - name: Sweden tax identification number
+                href: sit-defn-sweden-tax-identification-number.md
+              - name: SWIFT code
+                href: sit-defn-swift-code.md
+              - name: Switzerland physical addresses
+                href: sit-defn-switzerland-physical-addresses.md
+              - name: Switzerland SSN AHV number
+                href: sit-defn-switzerland-ssn-ahv-number.md
+              - name: Taiwan national identification number
+                href: sit-defn-taiwan-national-identification-number.md
+              - name: Taiwan passport number
+                href: sit-defn-taiwan-passport-number.md
+              - name: Taiwan-resident certificate (ARC/TARC) number
+                href: sit-defn-taiwan-resident-certificate-number.md
+              - name: Thai population identification code
+                href: sit-defn-thai-population-identification-code.md
+              - name: Turkey national identification number
+                href: sit-defn-turkey-national-identification-number.md
+              - name: Turkey physical addresses
+                href: sit-defn-turkey-physical-addresses.md
+              - name: Types of medication
+                href: sit-defn-types-of-medication.md
+              - name: U.K. drivers license number
+                href: sit-defn-uk-drivers-license-number.md
+              - name: U.K. electoral roll number
+                href: sit-defn-uk-electoral-roll-number.md
+              - name: U.K. national health service number
+                href: sit-defn-uk-national-health-service-number.md
+              - name: U.K. national insurance number (NINO)
+                href: sit-defn-uk-national-insurance-number.md
+              - name: U.K. physical addresses
+                href: sit-defn-uk-physical-addresses.md
+              - name: U.K. Unique Taxpayer Reference Number
+                href: sit-defn-uk-unique-taxpayer-reference-number.md
+              - name: U.S. bank account number
+                href: sit-defn-us-bank-account-number.md
+              - name: U.S. drivers license number
+                href: sit-defn-us-drivers-license-number.md
+              - name: U.S. individual taxpayer identification number (ITIN)
+                href: sit-defn-us-individual-taxpayer-identification-number.md
+              - name: U.S. physical addresses
+                href: sit-defn-us-physical-addresses.md
+              - name: U.S. social security number (SSN)
+                href: sit-defn-us-social-security-number.md
+              - name: U.S./U.K. passport number
+                href: sit-defn-us-uk-passport-number.md
+              - name: Ukraine passport domestic
+                href: sit-defn-ukraine-passport-domestic.md
+              - name: Ukraine passport international
+                href: sit-defn-ukraine-passport-international.md
+              - name: User login credentials
+                href: sit-defn-user-login-credentials.md
+              - name: X.509 certificate private key
+                href: sit-defn-x-509-certificate-private-key.md
+          - name: Sensitive information type functions
+            href: sit-functions.md
           - name: Custom sensitive information type filters reference
             href: sit-custom-sit-filters.md
+          - name: Sensitive information type limits
+            href: sit-limits.md
     - name: Trainable classifiers
       items: 
         - name: Learn about trainable classifiers
@@ -216,6 +1018,8 @@
           href: classifier-get-started-with.md
         - name: How to retrain a classifier in content explorer
           href: classifier-how-to-retrain-content-explorer.md
+        - name: Trainable classifier definitions
+          href: classifier-tc-definitions.md
     - name: Data classification
       items: 
         - name: Learn about data classification
@@ -226,10 +1030,14 @@
           href: data-classification-activity-explorer.md
         - name: Labeling actions reported in Activity explorer
           href: data-classification-activity-explorer-available-events.md
+        - name: Increase classifier accuracy
+          href: data-classification-increase-accuracy.md
     - name: Sensitivity labels
       items:
         - name: Learn about sensitivity labels
           href: sensitivity-labels.md
+        - name: Migrate the AIP add-in for Office apps
+          href: sensitivity-labels-aip.md
         - name: Get started with sensitivity labels
           href: get-started-with-sensitivity-labels.md
         - name: Create and publish sensitivity labels
@@ -242,14 +1050,20 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
+        - name: Configure a default sensitivity label for SharePoint libraries
+          href: sensitivity-labels-sharepoint-default-label.md
         - name: Enable co-authoring for documents encrypted by sensitivity labels
           href: sensitivity-labels-coauthoring.md
+        - name: Set the default sharing link type by using sensitivity labels
+          href: sensitivity-labels-default-sharing-link.md
         - name: Manage sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
     - name: Encryption
       items: 
         - name: Understand encryption
           href: encryption.md
+        - name: Azure AD configurations
+          href: encryption-azure-ad-configuration.md
         - name: Double Key Encryption (DKE)
           href: double-key-encryption.md
         - name: Double Key Encryption FAQ
@@ -258,7 +1072,7 @@
           href: office-365-service-encryption.md
         - name: Customer Key
           items: 
-            - name: Customer Key in Microsoft 365
+            - name: Service encryption with Microsoft Purview Customer Key
               href: customer-key-overview.md
             - name: Set up Customer Key for Microsoft 365
               href: customer-key-set-up.md
@@ -271,32 +1085,38 @@
         - name: Email encryption
           href: email-encryption.md
           items: 
-            - name: Office 365 Message Encryption (OME)
+            - name: Message encryption
               href: ome.md
-            - name: Set up new Office 365 Message Encryption capabilities
+            - name: Set up Microsoft Purview Message Encryption
               href: set-up-new-message-encryption-capabilities.md
-            - name: Define mail flow rules to encrypt email messages in Office 365
+            - name: Define mail flow rules to encrypt email messages
               href: define-mail-flow-rules-to-encrypt-email.md
             - name: Add your organization's brand to your encrypted messages
               href: add-your-organization-brand-to-encrypted-messages.md
-            - name: Create a sensitive information type policy for your organization using Office 365 Message Encryption
+            - name: Create a sensitive information type policy for your organization using Microsoft Purview Message Encryption
               href: ome-sensitive-info-types.md
-            - name: Manage Office 365 Message Encryption
+            - name: Manage message encryption
               href: manage-office-365-message-encryption.md
-            - name: Office 365 Advanced Message Encryption
+            - name: Advanced message encryption
               href: ome-advanced-message-encryption.md
-            - name: Set an expiration date for email encrypted by Office 365 Advanced Message Encryption
+            - name: Encrypted message portal activity log
+              href: ome-message-access-logs.md
+            - name: Set an expiration date for email encrypted by Microsoft Purview Advanced Message Encryption
               href: ome-advanced-expiration.md
-            - name: Revoke email encrypted by Office 365 Advanced Message Encryption
+            - name: Revoke email encrypted by Microsoft Purview Advanced Message Encryption
               href: revoke-ome-encrypted-mail.md
-            - name: Compare versions of OME
+            - name: Compare versions of message encryption
               href: ome-version-comparison.md
-            - name: Office 365 Message Encryption FAQ
+            - name: Message encryption FAQ
               href: ome-faq.yml
             - name: How Exchange Online secures your email secrets
               href: exchange-online-secures-email-secrets.md
             - name: How Exchange Online uses TLS to secure email connections in Office 365
               href: exchange-online-uses-tls-to-secure-email-connections.md
+            - name: Enhancing mail flow with MTA-STS
+              href: enhancing-mail-flow-with-mta-sts.md
+            - name: How SMTP DANE works
+              href: how-smtp-dane-works.md  
             - name: BitLocker and Distributed Key Manager (DKM) for Encryption
               href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
             - name: Legacy OME
@@ -329,9 +1149,9 @@
             href: endpoint-dlp-learn-about.md
           - name: Learn about the default data loss prevention policy in Microsoft Teams (preview)
             href: dlp-teams-default-policy.md
-          - name: Learn about Microsoft 365 data loss prevention on-premises scanner
+          - name: Learn about data loss prevention on-premises scanner
             href: dlp-on-premises-scanner-learn.md
-          - name: Learn about the Microsoft Compliance Extension
+          - name: Learn about the Microsoft Purview Extension
             href: dlp-chrome-learn-about.md
           - name: Learn about the data loss prevention Alerts dashboard
             href: dlp-alerts-dashboard-learn.md
@@ -345,29 +1165,33 @@
             href: dlp-policy-reference.md 
         - name: Get started with DLP
           items:
+          - name: Configure endpoint data loss prevention settings
+            href: dlp-configure-endpoint-settings.md
           - name: Get started with the default DLP policy
             href: get-started-with-the-default-dlp-policy.md
           - name: Create a DLP policy from a template
             href: create-a-dlp-policy-from-a-template.md
           - name: Create, test, and tune a DLP policy
             href: create-test-tune-dlp-policy.md
-          - name: Get started with Microsoft 365 data loss prevention on-premises scanner
+          - name: Get started with data loss prevention on-premises scanner
             href: dlp-on-premises-scanner-get-started.md
           - name: Get started with Endpoint data loss prevention
             href: endpoint-dlp-getting-started.md
           - name: Configure device proxy and internet connection settings for Information Protection
             href: device-onboarding-configure-proxy.md
-          - name: Get started with the Microsoft Compliance Extension
+          - name: Get started with the Microsoft Purview Extension
             href: dlp-chrome-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
+          - name: Get started with Data loss prevention policies for Power BI (preview)
+            href: dlp-powerbi-get-started.md
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
               href: dlp-microsoft-teams.md
             - name: Using Endpoint data loss prevention
               href: endpoint-dlp-using.md
-            - name: Use Microsoft 365 data loss prevention on-premises scanner
+            - name: Use data loss prevention on-premises scanner
               href: dlp-on-premises-scanner-use.md  
             - name: Use notifications and policy tips in DLP policies
               href: use-notifications-and-policy-tips.md
@@ -379,7 +1203,7 @@
               href: view-the-dlp-reports.md
             - name: Form a query to find sensitive data stored on sites
               href: form-a-query-to-find-sensitive-data-stored-on-sites.md
-            - name: How DLP works between the Security & Compliance Center and Exchange admin center
+            - name: How DLP works between the Microsoft Purview compliance portal and Exchange admin center
               href: how-dlp-works-between-admin-centers.md
             - name: Configure and view alerts for DLP policies (preview)
               href: dlp-configure-view-alerts-policies.md
@@ -393,261 +1217,119 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference
               href: dlp-policy-tips-reference.md
-- name: Manage information governance
+            - name: Share DLP Alerts (preview)
+              href: dlp-share-alerts.md
+- name: Manage data lifecycle & records
   items: 
     - name: Govern your data
-      href: manage-information-governance.md
-    - name: Retain and delete data
+      href: manage-data-governance.md
+    - name: Deploy a data governance solution
+      href: data-governance-solution.md
+    - name: Understand retaining and deleting data
       items: 
-        - name: Learn about retention
-          items:
-            - name: Retention policies and labels
-              href: retention.md
-            - name: Retention flowchart
-              href: retention-flowchart.md
-            - name: Retention for SharePoint and OneDrive
+        - name: Learn about retention policies & retention labels
+          href: retention.md
+        - name: Flowchart for retention & deletion outcomes
+          href: retention-flowchart.md
+        - name: Retention & deletion for Microsoft 365 workloads
+          items: 
+            - name: SharePoint and OneDrive
               href: retention-policies-sharepoint.md
-            - name: Retention for Microsoft Teams
+            - name: Teams
               href: retention-policies-teams.md
-            - name: Retention for Yammer
+            - name: Yammer
               href: retention-policies-yammer.md
-            - name: Retention for Exchange
+            - name: Exchange
               href: retention-policies-exchange.md
-            - name: Common settings for retention
-              href: retention-settings.md
-            - name: Limits for retention
-              href: retention-limits.md
-        - name: Get started with retention
-          href: get-started-with-retention.md
+        - name: Common settings for retention and deletion
+          href: retention-settings.md
+        - name: PowerShell cmdlets for retention and deletion
+          href: retention-cmdlets.md
+        - name: Limits for retention and deletion
+          href: retention-limits.md
+    - name: Data lifecycle management
+      items: 
+        - name: Learn about data lifecycle management
+          href: data-lifecycle-management.md
+        - name: Get started with data lifecycle management
+          href: get-started-with-data-lifecycle-management.md
         - name: Create retention policies
           href: create-retention-policies.md
-        - name: Use file plan
+        - name: Use retention labels for exceptions
+          href: create-retention-labels-data-lifecycle-management.md
+        - name: Archive mailbox data
+          items: 
+            - name: Learn about archive mailboxes
+              href: archive-mailboxes.md
+            - name: Enable archive mailboxes
+              href: enable-archive-mailboxes.md
+            - name: Learn about auto-expanding archiving
+              href: autoexpanding-archiving.md
+            - name: Enable auto-expanding archiving
+              href: enable-autoexpanding-archiving.md
+            - name: Customize an archive and deletion policy for mailboxes (MRM)
+              href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
+        - name: Manage inactive mailboxes
+          items: 
+            - name: Learn about inactive mailboxes
+              href: inactive-mailboxes-in-office-365.md
+            - name: Create and manage inactive mailboxes
+              href: create-and-manage-inactive-mailboxes.md
+            - name: Change the hold duration for an inactive mailbox
+              href: change-the-hold-duration-for-an-inactive-mailbox.md
+            - name: Recover an inactive mailbox
+              href: recover-an-inactive-mailbox.md
+            - name: Restore an inactive mailbox
+              href: restore-an-inactive-mailbox.md
+            - name: Delete an inactive mailbox
+              href: delete-an-inactive-mailbox.md
+        - name: Import PST files
+          items: 
+            - name: Learn about importing PST files
+              href: importing-pst-files-to-office-365.md
+            - name: Use network upload to import PST files
+              href: use-network-upload-to-import-pst-files.md
+            - name: Use drive shipping to import PST files
+              href: use-drive-shipping-to-import-pst-files-to-office-365.md
+            - name: Filter data when importing PST files
+              href: filter-data-when-importing-pst-files.md
+            - name: FAQ about importing PST files
+              href: faqimporting-pst-files-to-office-365.yml
+    - name: Records management
+      items: 
+        - name: Understand records management
+          items:
+            - name: Learn about records management
+              href: records-management.md
+            - name: Resources for regulatory requirements
+              href: retention-regulatory-requirements.md
+            - name: Declare records by using retention labels
+              href: declare-records.md
+            - name: Use record versioning for files
+              href: record-versioning.md
+        - name: Get started with records management
+          href: get-started-with-records-management.md
+        - name: Create and manage retention labels with file plan
           href: file-plan-manager.md
-        - name: Create retention labels and apply them in apps
+        - name: Start retention when an event occurs
+          href: event-driven-retention.md
+        - name: Customization for the end of the retention period
+          href: retention-label-flow.md
+        - name: Publish & apply retention labels in apps
           href: create-apply-retention-labels.md
-        - name: Apply a retention label to content automatically
+        - name: Automatically apply retention labels to content
           href: apply-retention-labels-automatically.md
         - name: Lock policies to restrict changes
           href: retention-preservation-lock.md
-        - name: Create retention labels with PowerShell
+        - name: Use PowerShell to create & publish retention labels
           href: bulk-create-publish-labels-using-powershell.md
-        - name: Start retention when an event occurs
-          href: event-driven-retention.md
-        - name: Use retention labels to manage document lifecycles
+        - name: Use retention labels to manage documents in SharePoint
           href: auto-apply-retention-labels-scenario.md
         - name: Manage disposition of data
           href: disposition.md
-    - name: Import mailbox data
-      items: 
-        - name: Overview of importing PST files
-          href: importing-pst-files-to-office-365.md
-        - name: Use network upload to import PST files
-          href: use-network-upload-to-import-pst-files.md
-        - name: Use drive shipping to import PST files
-          href: use-drive-shipping-to-import-pst-files-to-office-365.md
-        - name: Filter data when importing PST files
-          href: filter-data-when-importing-pst-files.md
-        - name: FAQ about importing PST files
-          href: faqimporting-pst-files-to-office-365.yml
-    - name: Archive third-party data
-      items: 
-        - name: Learn about connectors for third-party data
-          href: archiving-third-party-data.md
-        - name: Microsoft data connectors
-          items:  
-            - name: Bloomberg Message
-              href: archive-bloomberg-message-data.md 
-            - name: Epic EHR healthcare data (preview)
-              href: import-epic-data.md
-            - name: Facebook Business 
-              href: archive-facebook-data-with-sample-connector.md
-            - name: Generic EHR healthcare data (preview)
-              href: import-healthcare-data.md
-            - name: HR data 
-              href: import-hr-data.md
-            - name: ICE Chat
-              href: archive-icechat-data.md 
-            - name: Instant Bloomberg
-              href: archive-instant-bloomberg-data.md
-            - name: LinkedIn
-              href: archive-linkedin-data.md
-            - name: Physical badging data
-              href: import-physical-badging-data.md
-            - name: Slack eDiscovery (preview)
-              href: archive-slack-data-microsoft.md
-            - name: Twitter
-              href: archive-twitter-data-with-sample-connector.md
-        - name: Veritas data connectors
-          items:  
-            - name: CellTrust
-              href: archive-celltrust-data.md          
-            - name: Cisco Jabber on MS SQL
-              href: archive-ciscojabberonmssql-data.md
-            - name: Cisco Jabber on Oracle
-              href: archive-ciscojabberonoracle-data.md
-            - name: Cisco Jabber on PostgreSQL
-              href: archive-ciscojabberonpostgresql-data.md
-            - name: EML
-              href: archive-eml-data.md
-            - name: FX Connect
-              href: archive-fxconnect-data.md
-            - name: Jive
-              href: archive-jive-data.md
-            - name: MS SQL Database
-              href: archive-mssqldatabaseimporter-data.md
-            - name: Pivot
-              href: archive-pivot-data.md
-            - name: Redtail Speak
-              href: archive-redtailspeak-data.md
-            - name: Reuters Dealing
-              href: archive-reutersdealing-data.md
-            - name: Reuters Eikon
-              href: archive-reuterseikon-data.md
-            - name: Reuters FX
-              href: archive-reutersfx-data.md
-            - name: RingCentral
-              href: archive-ringcentral-data.md   
-            - name: Salesforce Chatter
-              href: archive-salesforcechatter-data.md
-            - name: ServiceNow
-              href: archive-servicenow-data.md
-            - name: Skype for Business
-              href: archive-skypeforbusiness-data.md
-            - name: Slack eDiscovery
-              href: archive-slack-data.md    
-            - name: Symphony
-              href: archive-symphony-data.md
-            - name: Text-delimited
-              href: archive-text-delimited-data.md
-            - name: Twitter (preview)
-              href: archive-veritas-twitter-data.md
-            - name: Webex Teams
-              href: archive-webexteams-data.md
-            - name: Webpages
-              href: archive-webpagecapture-data.md
-            - name: Workplace from Facebook
-              href: archive-workplacefromfacebook-data.md    
-            - name: XIP
-              href: archive-xip-data.md
-            - name: XSLT/XML 
-              href: archive-xslt-xml-data.md
-            - name: Yieldbroker
-              href: archive-yieldbroker-data.md
-            - name: YouTube
-              href: archive-youtube-data.md
-            - name: Zoom Meetings
-              href: archive-zoommeetings-data.md
-        - name: TeleMessage data connectors
-          items:  
-            - name: Android Archiver
-              href: archive-android-archiver-data.md
-            - name: AT&T SMS/MMS Network Archiver
-              href: archive-att-network-archiver-data.md
-            - name: Bell SMS/MMS Network Archiver
-              href: archive-bell-network-data.md
-            - name: Enterprise Number Archiver
-              href: archive-enterprise-number-data.md
-            - name: O2 Telefonica SMS and Voice Network Archiver
-              href: archive-o2-network-data.md
-            - name: Rogers Network Archiver
-              href: archive-rogers-network-archiver-data.md
-            - name: Signal Archiver
-              href: archive-signal-archiver-data.md
-            - name: Telegram Archiver
-              href: archive-telegram-archiver-data.md
-            - name: TELUS Network
-              href: archive-telus-network-data.md
-            - name: Verizon SMS/MMS Network Archiver
-              href: archive-verizon-network-data.md
-            - name: WeChat Archiver
-              href: archive-wechat-data.md
-            - name: WhatsApp Archiver
-              href: archive-whatsapp-data.md
-        - name: 17a-4 data connectors
-          items:
-            - name: BlackBerry DataParser 
-              href: archive-17a-4-blackberry-data.md
-            - name: Bloomberg DataParser 
-              href: archive-17a-4-bloomberg-data.md
-            - name: Cisco Jabber DataParser 
-              href: archive-17a-4-cisco-jabber-data.md
-            - name: Cisco Webex DataParser 
-              href: archive-17a-4-webex-teams-data.md
-            - name: FactSet DataParser 
-              href: archive-17a-4-factset-data.md
-            - name: Fuze DataParser 
-              href: archive-17a-4-fuze-data.md
-            - name: FX Connect DataParser 
-              href: archive-17a-4-fxconnect-data.md
-            - name: ICE DataParser 
-              href: archive-17a-4-ice-im-data.md
-            - name: InvestEdge DataParser 
-              href: archive-17a-4-investedge-data.md
-            - name: LivePerson Conversational Cloud DataParser 
-              href: archive-17a-4-liveperson-data.md
-            - name: Quip DataParser 
-              href: archive-17a-4-quip-data.md
-            - name: Refinitiv Eikon Messenger DataParser 
-              href: archive-17a-4-refinitiv-messenger-data.md
-            - name: ServiceNow DataParser 
-              href: archive-17a-4-servicenow-data.md
-            - name: Skype for Business Server DataParser
-              href: archive-17a-4-skype-for-business-server-data.md
-            - name: Slack DataParser 
-              href: archive-17a-4-slack-data.md
-            - name: SQL DataParser 
-              href: archive-17a-4-sql-database-data.md
-            - name: Symphony DataParser 
-              href: archive-17a-4-symphony-data.md
-            - name: Zoom DataParser 
-              href: archive-17a-4-zoom-data.md
-        - name: CellTrust connectors
-          items:
-            - name: CellTrust SL2 
-              href: archive-data-from-celltrustsl2.md
-        - name: Work with a partner to archive third-party data
-          href: work-with-partner-to-archive-third-party-data.md
-        - name: Search for third-party data
-          href: use-content-search-to-search-third-party-data-that-was-imported.md
-    - name: Store mailbox data
-      items: 
-        - name: Enable archive mailboxes
-          href: enable-archive-mailboxes.md
-        - name: Overview of auto-expanding archiving
-          href: autoexpanding-archiving.md
-        - name: Enable auto-expanding archiving
-          href: enable-autoexpanding-archiving.md
-        - name: Set up an archive and deletion policy for mailboxes
-          href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
-    - name: Manage inactive mailboxes
-      items: 
-        - name: Learn about inactive mailboxes
-          href: inactive-mailboxes-in-office-365.md
-        - name: Create and manage inactive mailboxes
-          href: create-and-manage-inactive-mailboxes.md
-        - name: Change the hold duration for an inactive mailbox
-          href: change-the-hold-duration-for-an-inactive-mailbox.md
-        - name: Recover an inactive mailbox
-          href: recover-an-inactive-mailbox.md
-        - name: Restore an inactive mailbox
-          href: restore-an-inactive-mailbox.md
-        - name: Delete an inactive mailbox
-          href: delete-an-inactive-mailbox.md
-    - name: Records management
-      items: 
-        - name: Learn about records management
-          href: records-management.md
-        - name: Get started with records management
-          href: get-started-with-records-management.md
-        - name: Declare records
-          href: declare-records.md
-        - name: Use record versioning
-          href: record-versioning.md
-        - name: Resources for regulatory requirements
-          href: retention-regulatory-requirements.md
 - name: Manage eDiscovery
   items:
-    - name: Microsoft 365 eDiscovery solutions
+    - name: Microsoft Purview eDiscovery solutions
       href: ediscovery.md
     - name: Content search
       items:
@@ -716,9 +1398,9 @@
             href: create-report-on-and-delete-multiple-content-searches.md
           - name: Clone a search
             href: clone-a-content-search.md
-    - name: Core eDiscovery
+    - name: eDiscovery (Standard)
       items:
-        - name: Get started with Core eDiscovery
+        - name: Get started with eDiscovery (Standard)
           href: get-started-core-ediscovery.md
         - name: Create eDiscovery holds
           href: create-ediscovery-holds.md
@@ -728,7 +1410,7 @@
           href: export-content-in-core-ediscovery.md
         - name: Close, reopen, and delete a case
           href: close-reopen-delete-core-ediscovery-cases.md
-        - name: Core eDiscovery reference
+        - name: eDiscovery (Standard) reference
           items:
           - name: eDiscovery search limits
             href: limits-for-content-search.md
@@ -756,7 +1438,7 @@
             href: export-a-content-search-report.md
           - name: Use a script to add users to an eDiscovery hold
             href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
-          - name: Create a report on eDiscovery holds
+          - name: Use a script to create a holds report
             href: create-a-report-on-holds-in-ediscovery-cases.md
           - name: View statistics for search results
             href: view-keyword-statistics-for-content-search.md
@@ -774,19 +1456,19 @@
             href: configure-edge-to-export-search-results.md
           - name: Search for eDiscovery activities in the audit log
             href: search-for-ediscovery-activities-in-the-audit-log.md
-    - name: Advanced eDiscovery
+    - name: eDiscovery (Premium)
       items:
         - name: Overview
           href: overview-ediscovery-20.md
-        - name: Set up Advanced eDiscovery
+        - name: Set up eDiscovery (Premium)
           href: get-started-with-advanced-ediscovery.md
-        - name: Create Advanced eDiscovery cases
+        - name: Create eDiscovery (Premium) cases
           items:
             - name: Create and manage a case
               href: create-and-manage-advanced-ediscoveryv2-case.md
             - name: Use the new case format
               href: advanced-ediscovery-new-case-format.md
-        - name: Advanced eDiscovery workflow for Teams content
+        - name: eDiscovery (Premium) workflow for Teams content
           href: teams-workflow-in-advanced-ediscovery.md
         - name: Manage custodians and non-custodial data sources
           href: managing-custodians.md
@@ -812,11 +1494,18 @@
               href: manage-hold-notification.md
             - name: Acknowledge a hold notification
               href: acknowledge-hold-notification.md
+            - name: Manage issuing officers
+              href: advanced-ediscovery-issuing-officers.md
+            - name: Manage custodian communications templates
+              href: advanced-ediscovery-communications-library.md
         - name: Manage holds
           href: managing-holds.md
+          items:
+            - name: Use a script to create a holds report
+              href: create-a-report-on-holds-in-ediscovery-cases.md
         - name: Manage processing errors
           href: processing-data-for-case.md
-          items: 
+          items:
             - name: Advanced indexing of custodian content
               href: indexing-custodian-data.md
             - name: Error remediation when processing content
@@ -900,14 +1589,16 @@
               href: add-or-remove-members-from-a-case-in-advanced-ediscovery.md
             - name: Configure search and analytics settings
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
-        - name: Advanced eDiscovery reference
+        - name: eDiscovery (Premium) reference
           items:
-            - name: Advanced eDiscovery limits
+            - name: eDiscovery (Premium) limits
               href: limits-ediscovery20.md
             - name: Supported file types
               href: supported-filetypes-ediscovery20.md
             - name: Document metadata fields
               href: document-metadata-fields-in-advanced-ediscovery.md
+            - name: Search and purge Teams chat messages
+              href: search-and-delete-Teams-chat-messages.md
             - name: Set up historical versions
               href: advanced-ediscovery-historical-versions.md
             - name: Set up attorney-client privilege detection
@@ -922,6 +1613,8 @@
               href: permissions-filtering-for-content-search.md
             - name: Content stored in mailboxes for eDiscovery
               href: what-is-stored-in-exo-mailbox.md
+            - name: eDiscovery for Graph connectors
+              href: ediscovery-graph-connector.md  
             - name: Decryption in eDiscovery tools
               href: ediscovery-decryption.md
             - name: Conversation review sets
@@ -950,14 +1643,16 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Manage auditing and alert policies
   items: 
-    - name: Microsoft 365 auditing solutions
+    - name: Microsoft Purview auditing solutions
       href: auditing-solutions-overview.md
-    - name: Basic Audit
+    - name: Audit (Standard)
       items:
-        - name: Set up Basic Audit
+        - name: Set up Audit (Standard)
           href: set-up-basic-audit.md
         - name: Search the audit log
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: Audit New Search
+          href: audit-new-search.md
         - name: Export, configure, and view audit log records
           href: export-view-audit-log-records.md
         - name: Use a PowerShell script to search the audit log
@@ -978,15 +1673,15 @@
               href: /office/office-365-management-api/office-365-management-activity-api-schema
             - name: Office 365 Management Activity API FAQs and troubleshooting
               href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
-    - name: Advanced Audit
+    - name: Audit (Premium)
       items:
-        - name: Overview of Advanced Audit
+        - name: Overview of Audit (Premium)
           href: advanced-audit.md
-        - name: Set up Advanced Audit
+        - name: Set up Audit (Premium)
           href: set-up-advanced-audit.md
         - name: Manage audit log retention policies
           href: audit-log-retention-policies.md
-        - name: Use Advanced Audit to investigate compromised accounts
+        - name: Use Audit (Premium) to investigate compromised accounts
           href: mailitemsaccessed-forensics-investigations.md
     - name: Mailbox auditing
       href: enable-mailbox-auditing.md
@@ -1018,11 +1713,15 @@
           href: compliance-manager-templates-format-excel.md
         - name: Compliance Manager templates list
           href: compliance-manager-templates-list.md
-        - name: Assign and complete improvement actions
+        - name: Working with improvement actions
           href: compliance-manager-improvement-actions.md
+        - name: Updating improvement actions
+          href: compliance-manager-update-actions.md
+        - name: Create and manage alert policies
+          href: compliance-manager-alert-policies.md
         - name: How your compliance score is calculated
           href: compliance-score-calculation.md
-        - name: Compliance Configuration Analyzer tool
+        - name: Configuration Analyzer for Microsoft Purview
           href: compliance-manager-mcca.md
         - name: Frequently asked questions (FAQ)
           href: compliance-manager-faq.yml
@@ -1034,10 +1733,6 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: Energy services security and compliance
           href: ../solutions/energy-secure-collaboration.md
-- name: Privacy management
-  items:
-    - name: Learn about privacy management
-      href: /privacy/solutions/privacymanagement/privacy-management
 - name: Hybrid compliance capabilities
   items: 
     - name: Exchange Online mail encryption with AD RMS
@@ -1051,5 +1746,7 @@
   href: ../security/index.yml
 - name: Microsoft 365 Apps for business
   href: /office365/admin/admin-home
+- name: Microsoft Priva
+  href: /privacy/priva/
 - name: Troubleshooting
   href: /office365/troubleshoot/microsoft-365-compliance-welcome

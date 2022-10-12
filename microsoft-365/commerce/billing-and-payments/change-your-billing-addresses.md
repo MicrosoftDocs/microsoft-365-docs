@@ -2,28 +2,29 @@
 title: "Change your billing addresses"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn how to update your billing addresses or the email address used to receive billing notifications for Microsoft 365 for business."
-ms.date: 04/07/2021
+ms.date: 01/24/2022
 ---
 
-# Change your billing addresses
+# Change your Microsoft 365 for business billing addresses
 
 Your bill or invoice contains three addresses:
   
@@ -97,39 +98,6 @@ To learn more about your bill or invoice, see [View your bill or invoice](view-y
 
 4. In the **Edit service usage address** pane, update your address, then select **Save**.
 
-## Change the alternate email address your billing notifications are sent to
-
-By default, your organization's billing notifications are sent to the Microsoft email address and the alternate email address of every global and billing admin in your organization. Each admin can change their alternate email address by updating their profile information.
-  
-1. Sign in to Microsoft 365 with your work or school account as a global admin. [Learn how to sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
-
-2. Select the **User icon**, then select **My account**.
-  
-3. Select **Personal info**.
-  
-4. In the **Contact details** box, select **Edit**.
-
-5. In the **Alternate email** box, type the alternate email address you want to use, then select **Save**.
-  
-## Change the alternate email address for another admin
-
-You can also change the alternate email address of other global and billing admins in your organization.
-  
-::: moniker range="o365-worldwide"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing notifications</a> page.
-
-::: moniker-end
-
-2. On the **Billing notifications** page, select the admin you want to change.
-
-3. In the **Edit user roles** pane, type the alternate email address you want to use, then select **Save**.
 
 ## Related content
 

@@ -3,8 +3,8 @@ title: Remediation actions in Microsoft Defender for Office 365
 keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords: 
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: "Learn about remediation actions following automated investigation in Microsoft Defender for Office 365."
 ms.date: 04/30/2021
 ms.custom: 
 - air
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Remediation actions in Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)

@@ -3,7 +3,7 @@ title: Partner applications in Microsoft Defender for Endpoint
 ms.reviewer:
 description: View supported partner applications to enhance the detection, investigation, and threat intelligence capabilities of the platform
 keywords: partners, applications, third-party, connections, sentinelone, lookout, bitdefender, corrata, morphisec, paloalto, ziften, better mobile
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Partner applications in Microsoft Defender for Endpoint
@@ -56,7 +59,7 @@ Logo|Partner name|Description
 ![Image of SafeBreach logo.](images/safebreach-logo.png)|[SafeBreach](https://go.microsoft.com/fwlink/?linkid=2114114)|Gain visibility into Defender for Endpoint security events that are automatically correlated with SafeBreach simulations
 ![Image of Skybox Vulnerability Control logo.](images/skybox-logo.png)|[Skybox Vulnerability Control](https://go.microsoft.com/fwlink/?linkid=2127467)|Skybox Vulnerability Control cuts through the noise of vulnerability management, correlating business, network, and threat context to uncover your riskiest vulnerabilities
 ![Image of Splunk logo.](images/splunk-logo.png)|[Splunk](https://go.microsoft.com/fwlink/?linkid=2129805)|The Defender for Endpoint Add-on allows Splunk users to ingest all of the alerts and supporting information to their Splunk
-![Image of XM Cyber logo.](images/xmcyber-logo.png)|[XM Cyber](https://go.microsoft.com/fwlink/?linkid=2136700)|Prioritize your response to an alert based on risk factors and high value assets
+![Image of XM Cyber logo.](images/xmcyber-logo.png)|[XM Cyber](/microsoft-365/compliance/insider-risk-management-configure)|Prioritize your response to an alert based on risk factors and high value assets
 
 ### Orchestration and automation
 
@@ -83,7 +86,8 @@ Logo|Partner name|Description
 Logo|Partner name|Description
 :---|:---|:---
 ![Image of Aruba ClearPass Policy Manager logo.](images/aruba-logo.png)|[Aruba ClearPass Policy Manager](https://go.microsoft.com/fwlink/?linkid=2127544)|Ensure Defender for Endpoint is installed and updated on each endpoint before allowing access to the network
-![Image of Blue Hexagon for Network logo.](images/bluehexagon-logo.png)|[Blue Hexagon for Network](https://go.microsoft.com/fwlink/?linkid=2104613)|Blue Hexagon has built the industry's first real-time deep learning platform for network threat protection
+![Image of Blue Hexagon for Network logo.](images/bluehexagon-logo.png)|[Blue Hexagon for Network](/training/modules/explore-malware-threat-protection/)|Blue Hexagon has built the industry's first real-time deep learning platform for network threat protection
+![Image of Corelight logo.](images/logo-corelight.png)| [Corelight](https://corelight.com/integrations/iot-security)| Using data, sent from Corelight network appliances, Microsoft 365 Defender gains increased visibility into the network activities of unmanaged devices, including communication with other unmanaged devices or external networks.
 ![Image of CyberMDX logo.](images/cybermdx-logo.png)|[CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620)|Cyber MDX integrates comprehensive healthcare assets visibility, threat prevention and repose into your Defender for Endpoint environment
 ![Image of HYAS Protect logo.](images/hyas-logo.png)|[HYAS Protect](https://go.microsoft.com/fwlink/?linkid=2156763)|HYAS Protect utilizes authoritative knowledge of attacker infrastructure to proactively protect Microsoft Defender for Endpoint endpoints from cyberattacks
 ![Image of Vectra Network Detection and Response (NDR) logo.](images/vectra-logo.png)|[Vectra Network Detection and Response (NDR)](https://go.microsoft.com/fwlink/?linkid=866934)|Vectra applies AI & security research to detect and respond to cyber-attacks in real time
@@ -109,7 +113,7 @@ Logo|Partner name|Description
 
 ## SIEM integration
 
-Defender for Endpoint supports SIEM integration through various of methods. This can include specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management. For more information, see [Enable SIEM integration](enable-siem-integration.md).
+Defender for Endpoint supports SIEM integration through various of methods. This can include specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management.
 
 ## Ticketing and IT service management
 

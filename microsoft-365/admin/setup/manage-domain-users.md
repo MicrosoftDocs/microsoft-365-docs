@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_TOC 
 ms.custom:
@@ -47,9 +48,9 @@ To synchronize your users, groups, and contacts from the local Active Directory 
 
  1. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), select **Setup** in the left nav.
 
- 2. Under **Sign-in and security**, choose **View**  under **Sync users from your org's directory**.
+ 2. Under **Sign-in and security**, select **Add or sync users to your Microsoft account**.
 
- 3. On the **Sync users from your org's directory** page, choose **Get started**.
+ 3. On the **Add or sync users to your Microsoft account** page, choose **Get started**.
 
  4. In the first step  run IdFix tool to prepare for Directory sync.
 
@@ -63,4 +64,4 @@ As you configure your options for Azure AD Connect, we recommend that you enable
 > [!NOTE]
 > There are some additional steps for password writeback beyond the check box in Azure AD Connect. For more information, see [How-to: configure password writeback](/azure/active-directory/authentication/howto-sspr-writeback). 
 
-If you also want to manage domain-joined Windows 10 devices, see [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business Premium](manage-windows-devices.md) to set up a hybrid Azure AD Join.
+If you also want to manage domain-joined Windows 10 devices, see [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business Premium](../../business-premium/m365bp-manage-windows-devices.md) to set up a hybrid Azure AD Join.

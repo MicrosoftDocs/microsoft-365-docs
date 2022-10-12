@@ -4,7 +4,8 @@ description: Learn how to create and manage custom detections rules based on adv
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, rules, schema, kusto, RBAC, permissions, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,10 +17,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-m365-defender
+  - tier2
 ms.topic: article
-ms.technology: m365d
 ---
 
 # Create and manage custom detections rules
@@ -109,9 +110,9 @@ DeviceEvents
 
 With the query in the query editor, select **Create detection rule** and specify the following alert details:
 
-- **Detection name**—name of the detection rule
+- **Detection name**—name of the detection rule; should be unique
 - **Frequency**—interval for running the query and taking action. [See additional guidance below](#rule-frequency)
-- **Alert title**—title displayed with alerts triggered by the rule
+- **Alert title**—title displayed with alerts triggered by the rule; should be unique
 - **Severity**—potential risk of the component or activity identified by the rule
 - **Category**—threat component or activity identified by the rule
 - **MITRE ATT&CK techniques**—one or more attack techniques identified by the rule as documented in the [MITRE ATT&CK framework](https://attack.mitre.org/). This section is hidden for certain alert categories, including malware, ransomware, suspicious activity, and unwanted software
@@ -122,11 +123,11 @@ With the query in the query editor, select **Create detection rule** and specify
 When you save a new rule, it runs and checks for matches from the past 30 days of data. The rule then runs again at fixed intervals, applying a lookback duration based on the frequency you choose:
 
 - **Every 24 hours**—runs every 24 hours, checking data from the past 30 days
-- **Every 12 hours**—runs every 12 hours, checking data from the past 24 hours
-- **Every 3 hours**—runs every 3 hours, checking data from the past 6 hours
-- **Every hour**—runs hourly, checking data from the past 2 hours
+- **Every 12 hours**—runs every 12 hours, checking data from the past 48 hours
+- **Every 3 hours**—runs every 3 hours, checking data from the past 12 hours
+- **Every hour**—runs hourly, checking data from the past 4 hours
 
-When you edit a rule, it will run with the applied changes in the next run time scheduled according to the frequency you set.
+When you edit a rule, it will run with the applied changes in the next run time scheduled according to the frequency you set. The rule frequency is based on the event timestamp and not the ingestion time.
 
 
 
@@ -147,7 +148,7 @@ Your custom detection rule can automatically take actions on devices, files, or 
 These actions are applied to devices in the `DeviceId` column of the query results:
 - **Isolate device**—uses Microsoft Defender for Endpoint to apply full network isolation, preventing the device from connecting to any application or service. [Learn more about Microsoft Defender for Endpoint machine isolation](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
 - **Collect investigation package**—collects device information in a ZIP file. [Learn more about the Microsoft Defender for Endpoint investigation package](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- **Run antivirus scan**—performs a full Windows Defender Antivirus scan on the device
+- **Run antivirus scan**—performs a full Microsoft Defender Antivirus scan on the device
 - **Initiate investigation**—initiates an [automated investigation](m365d-autoir.md) on the device
 - **Restrict app execution**—sets restrictions on device to allow only files that are signed with a Microsoft-issued certificate to run. [Learn more about app restrictions with Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
 
@@ -198,7 +199,7 @@ To view all existing custom detection rules, navigate to **Hunting** > **Custom 
 
 To view comprehensive information about a custom detection rule, go to **Hunting** > **Custom detection rules** and then select the name of rule. You can then view general information about the rule, including information its run status and scope. The page also provides the list of triggered alerts and actions.
 
-![Custom detection rule details page.](../../media/custom-detect-rules-view.png)<br>
+:::image type="content" source="../../media/custom-detect-rules-view.png" alt-text="The Custom detection rule details page in the Microsoft 365 Defender portal" lightbox="../../media/custom-detect-rules-view.png":::<br>
 *Custom detection rule details*
 
 You can also take the following actions on the rule from this page:

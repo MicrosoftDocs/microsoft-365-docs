@@ -1,5 +1,5 @@
 ---
-title: "Learn about data classification"
+title: "How to use the Microsoft data classification dashboard"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -11,19 +11,22 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkDEFENDER
 search.appverid: 
 - MOE150
 - MET150
-description: "The data classification dashboard gives you visibility into how much sensitive data has been found and classified in your organization."
+description: "The data Microsoft Purview compliance classification dashboard provides visibility into how much sensitive data has been found and classified in your organization."
 ---
 
-# Learn about data classification
+# How to use the Microsoft data classification dashboard
 
-As a Microsoft 365 administrator or compliance administrator, you can evaluate and then tag content in your organization in order to control where it goes, protect it no matter where it is and to ensure that it is preserved and deleted according to your organizations needs. You do this through the application of [sensitivity labels](sensitivity-labels.md), [retention labels](retention.md#retention-labels), and sensitive information type classification. There are various ways to do the discovery, evaluation and tagging, but the end result is that you may have very large number of documents and emails that are tagged and classified with one or both of these labels. After you apply your retention labels and sensitivity labels, you'll want to see how the labels are being used across your tenant and what is being done with those items. The data classification page provides visibility into that body of content, specifically:
+As a Microsoft 365 administrator or compliance administrator, you can evaluate and then tag content in your organization in order to control where it goes, protect it no matter where it is, and ensure that it is preserved and deleted according to your organization's needs. You do this through the application of [sensitivity labels](sensitivity-labels.md), [retention labels](retention.md#retention-labels), and sensitive information type classification. There are various ways to do the discovery, evaluation, and tagging, but the end result is that you may have very large numbers of documents and emails that are tagged and classified with one or both of these labels. After you apply your retention labels and sensitivity labels, you'll want to see how the labels are being used across your tenant and what is being done with those items. The data classification page provides visibility into that body of content, specifically:
 
 - the number items that have been classified as a sensitive information type and what those classifications are
 - the top applied sensitivity labels in both Microsoft 365 and Azure Information Protection
@@ -39,13 +42,15 @@ You also manage these features on the data classification page:
 - [content explorer](data-classification-content-explorer.md)
 - [activity explorer](data-classification-activity-explorer.md)
 
-You can find data classification in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> or <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> > **Classification** > **Data Classification**.
+You can find data classification in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> or <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> > **Classification** > **Data Classification**.
 
 Take a video tour of our data classification features.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
 
 Data classification will scan your sensitive content and labeled content before you create any policies. This is called **zero change management**. This lets you see the impact that all the retention and sensitivity labels are having in your environment and empower you to start assessing your protection and governance policy needs.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Prerequisites
 
@@ -67,14 +72,14 @@ Data classification will scan your sensitive content and labeled content before 
 
 There are roles and role groups in preview that you can test out to fine tune your access controls.
 
-Here's a list of Microsoft Information Protection (MIP) roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Here's a list of applicable roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of MIP role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Here's a list of applicable role groups that are in preview. To learn more about them, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Information Protection
 - Information Protection Admins
@@ -97,7 +102,7 @@ To find out how many items are in any given classification category, hover over 
 > [!NOTE]
 > If the card displays the message "No data found with sensitive information", it means that there are no items in your organization that have been classified as being a sensitive information type or no items that have been crawled. To get started with labels, see:
 >- [Get started with sensitivity labels](get-started-with-sensitivity-labels.md)
->- [Get started with retention policies and retention labels](get-started-with-retention.md)
+>- [Get started with records-management](get-started-with-records-management.md)
 >- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 
 ## Top sensitivity labels applied to content
@@ -129,7 +134,7 @@ The top applied retention labels card shows you how many items have a given rete
 
 > [!NOTE]
 > If this card displays the message, "No retention labels detected", it means you haven't created or published any retention labels or no content has had a retention label applied. To get started with retention labels, see:
->- [Get started with retention policies and retention labels](get-started-with-retention.md)
+>- [Get started with data lifecycle management](get-started-with-data-lifecycle-management.md)
 
 ## Top activities detected
 

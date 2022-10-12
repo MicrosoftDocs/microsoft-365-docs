@@ -1,15 +1,16 @@
 ---
 title: "Step 1. Configure security baselines"
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - ransomware
@@ -33,7 +34,7 @@ These baselines contain configuration settings and rules that are well-known by 
 
 First, assess and measure your security posture using [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score) and follow instructions to improve it as needed.
 
-Next, use [attack surface reduction rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction) to help block suspicious activity and vulnerable content. These rules include preventing:
+Next, use [attack surface reduction rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) to help block suspicious activity and vulnerable content. These rules include preventing:
 
 - All Office applications from creating child processes
 - Executable content from email client and webmail
@@ -48,36 +49,35 @@ Next, use [attack surface reduction rules](/microsoft-365/security/defender-endp
 - Credential stealing from the Windows local security authority subsystem (lsass.exe)
 - Process creations originating from PSExec and WMI commands
 
-## Exchange email management baseline 
+## Exchange email management baseline
 
 Help prevent initial access to your tenant from an email-based attack with these Exchange email baseline settings:
 
-- Enable Microsoft Defender Antivirus email scanning.
+- Enable [Microsoft Defender Antivirus email scanning](/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus).
 - Use Microsoft Defender for Office 365 for [enhanced phishing protection](/microsoft-365/security/office-365-security/anti-phishing-protection) and coverage against new threats and polymorphic variants.
 - Check your Office 365 email filtering settings to ensure you block spoofed emails, spam, and emails with malware. Use Defender for Office 365 for enhanced phishing protection and coverage against new threats and polymorphic variants. Configure Defender for Office 365 to [recheck links on click](/microsoft-365/security/office-365-security/atp-safe-links) and [delete delivered mails](/microsoft-365/security/office-365-security/zero-hour-auto-purge) in response to newly acquired threat intelligence.
-- Review and update to the latest [recommended settings for EOP and Defender for Office 365 security](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp).
+- Review and update to the latest [recommended settings for EOP and Defender for Office 365 security](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp).
 - Configure Defender for Office 365 to [recheck links on click](/microsoft-365/security/office-365-security/set-up-safe-links-policies) and delete delivered mails in response to newly acquired threat intelligence.
 
 ## Additional baselines
 
 Apply [security baselines](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) for:
 
-- Microsoft Windows 10
+- Microsoft Windows 11 or 10
 - Microsoft 365 Apps for Enterprise
 - Microsoft Edge
 
 ## Impact on users and change management
 
-As a best practice for an attack surface reduction rule, assess how a rule might impact your network by opening the security recommendation for that rule in threat and vulnerability management. The recommendation details pane describes the user impact, which you can use to determine what percentage of your devices can accept a new policy enabling the rule in blocking mode without adverse impact to user productivity.
+As a best practice for an attack surface reduction rule, assess how a rule might impact your network by opening the security recommendation for that rule in Defender Vulnerability Management. The recommendation details pane describes the user impact, which you can use to determine what percentage of your devices can accept a new policy enabling the rule in blocking mode without adverse impact to user productivity.
 
 Additionally, Exchange email baseline settings can block incoming email and prevent the sending of email or the clicking of links within email. Educate your workers on this behavior and the reason these precautions are being taken.
 
 ## Resulting configuration
 
-Here is the ransomware protection for your tenant after this step.
+Here's the ransomware protection for your tenant after this step.
 
 ![Ransomware protection for your Microsoft 365 tenant after Step 1](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step1.png)
-
 
 ## Next step
 

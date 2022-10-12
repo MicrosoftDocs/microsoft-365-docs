@@ -14,17 +14,17 @@ search.appverid:
   - MET150
 ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn how to view, create, modify, and delete outbound spam policies in Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Configure outbound spam filtering in EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -44,19 +44,19 @@ You can configure outbound spam policies in the Microsoft 365 Microsoft 365 Defe
 The basic elements of an outbound spam policy in EOP are:
 
 - **The outbound spam filter policy**: Specifies the actions for outbound spam filtering verdicts and the notification options.
-- **The outbound spam filter rule**: Specifies the priority and recipient filters (who the policy applies to) for a outbound spam filter policy.
+- **The outbound spam filter rule**: Specifies the priority and sender filters (who the policy applies to) for an outbound spam filter policy.
 
 The difference between these two elements isn't obvious when you manage outbound spam polices in the Microsoft 365 Defender portal:
 
 - When you create a policy, you're actually creating a outbound spam filter rule and the associated outbound spam filter policy at the same time using the same name for both.
-- When you modify a policy, settings related to the name, priority, enabled or disabled, and recipient filters modify the outbound spam filter rule. All other settings modify the associated outbound spam filter policy.
+- When you modify a policy, settings related to the name, priority, enabled or disabled, and sender filters modify the outbound spam filter rule. All other settings modify the associated outbound spam filter policy.
 - When you remove a policy, the outbound spam filter rule and the associated outbound spam filter policy are removed.
 
 In Exchange Online PowerShell or standalone EOP PowerShell, you manage the policy and the rule separately. For more information, see the [Use Exchange Online PowerShell or standalone EOP PowerShell to configure outbound spam policies](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies) section later in this article.
 
 Every organization has a built-in outbound spam policy named Default that has these properties:
 
-- The policy is applied to all recipients in the organization, even though there's no outbound spam filter rule (recipient filters) associated with the policy.
+- The policy is applied to all senders in the organization, even though there's no outbound spam filter rule (sender filters) associated with the policy.
 - The policy has the custom priority value **Lowest** that you can't modify (the policy is always applied last). Any custom policies that you create always have a higher priority than the policy named Default.
 - The policy is the default policy (the **IsDefault** property has the value `True`), and you can't delete the default policy.
 
@@ -97,18 +97,30 @@ Creating a custom outbound spam policy in the Microsoft 365 Defender portal crea
 
    When you're finished, click **Next**.
 
-4. On the **Users, groups, and domains** page that appears, identify the internal recipients that the policy applies to (recipient conditions):
-   - **Users**: The specified mailboxes, mail users, or mail contacts in your organization.
-   - **Groups**: The specified distribution groups, mail-enabled security groups, or Microsoft 365 Groups in your organization.
-   - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
+4. On the **Users, groups, and domains** page that appears, identify the internal senders that the policy applies to (recipient conditions):
+   - **Users**: The specified mailboxes, mail users, or mail contacts.
+   - **Groups**:
+     - Members of the specified distribution groups or mail-enabled security groups.
+     - The specified Microsoft 365 Groups.
+   - **Domains**: All senders in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
    Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
    For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
 
-   Multiple values in the same condition use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
+   Multiple values in the same condition use OR logic (for example, _\<sender1\>_ or _\<sender2\>_). Different conditions use AND logic (for example, _\<sender1\>_ and _\<member of group 1\>_).
 
-   - **Exclude these users, groups, and domains**: To add exceptions for the internal recipients that the policy applies to (recpient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
+   - **Exclude these users, groups, and domains**: To add exceptions for the internal senders that the policy applies to (recipient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
+
+   > [!IMPORTANT]
+   > Multiple different types of conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
+   >
+   > - Users: romain@contoso.com
+   > - Groups: Executives
+   >
+   > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy is not applied to him.
+   >
+   > Likewise, if you use the same recipient filter as an exception to the policy, the policy is not applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy still applies to him.
 
    When you're finished, click **Next**.
 
@@ -124,7 +136,7 @@ Creating a custom outbound spam policy in the Microsoft 365 Defender portal crea
 
    - **Restriction placed on users who reach the message limit**: Select an action from the drop down list when any of the limits in the **Protection settings** section are exceeded.
 
-     For all actions, the recipients specified in the **User restricted from sending email** alert policy (and in the now redundant **Notify these users and groups if a sender is blocked due to sending outbound spam** setting later on this page) receive email notifications.
+     For all actions, the senders specified in the **User restricted from sending email** alert policy (and in the now redundant **Notify these users and groups if a sender is blocked due to sending outbound spam** setting later on this page) receive email notifications.
 
      - **Restrict the user from sending mail until the following day**: This is the default value. Email notifications are sent, and the user will be unable to send any more messages until the following day, based on UTC time. There is no way for the admin to override this block.
        - The alert policy named **User restricted from sending email** notifies admins (via email and on the **Incidents & alerts** \> **View alerts** page).
@@ -304,7 +316,7 @@ For detailed syntax and parameter information, see [New-HostedOutboundSpamFilter
 To create an outbound spam filter rule, use this syntax:
 
 ```PowerShell
-New-HostedOutboundSpamFilterRule -Name "<RuleName>" -HostedOutboundSpamFilterPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"]
+New-HostedOutboundSpamFilterRule -Name "<RuleName>" -HostedOutboundSpamFilterPolicy "<PolicyName>" <Sender filters> [<Sender filter exceptions>] [-Comments "<OptionalComments>"]
 ```
 
 This example creates a new outbound spam filter rule named Contoso Executives with these settings:
@@ -409,7 +421,7 @@ For detailed syntax and parameter information, see [Set-HostedOutboundSpamFilter
 
 ### Use PowerShell to enable or disable outbound spam filter rules
 
-Enabling or disabling an outbound spam filter rule in PowerShell enables or disables the whole outbound spam policy (the outbound spam filter rule and the assigned outbound spam filter policy). You can't enable or disable the default outbound spam policy (it's always applied to all recipients).
+Enabling or disabling an outbound spam filter rule in PowerShell enables or disables the whole outbound spam policy (the outbound spam filter rule and the assigned outbound spam filter policy). You can't enable or disable the default outbound spam policy (it's always applied to all senders).
 
 To enable or disable an outbound spam filter rule in PowerShell, use this syntax:
 

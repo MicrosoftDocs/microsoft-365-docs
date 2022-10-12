@@ -1,15 +1,16 @@
 ---
 title: "Set up your infrastructure for hybrid work with Microsoft 365"
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
@@ -23,13 +24,13 @@ description: Step through the layers of infrastructure so your hybrid workers ca
 
 # Set up your infrastructure for hybrid work with Microsoft 365
 
-To secure and optimize your worker’s productivity and collaboration, you need to allow on-site and remote workers to easily and securely access your organization's on-premises and cloud-based information, tools, and resources. This solution steps through the deployment of key layers of infrastructure that empower your workers to do their best work, wherever they are.
+To secure and optimize your worker’s productivity and collaboration, you need to allow on-site and remote workers to access your organization's on-premises and cloud-based information, tools, and resources easily and securely. This solution steps through the deployment of key layers of infrastructure that empower your workers to do their best work, wherever they are.
 
 Hybrid workers can work on-site or remotely in a combination of locations. Allowing workers to work away from a traditional office is important for many organizations to:
 
 - Hire and retain workers who are unwilling to relocate or require a flexible work environment.
 - Reduce worker commuting, leaving workers with more time to be productive and for stress-reducing activities outside of work.
-- Save on office space.
+- Save office space.
 
 Microsoft 365 has the capabilities to empower your hybrid workers to work either on-site or remotely.
 

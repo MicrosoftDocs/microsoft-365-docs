@@ -1,18 +1,18 @@
 ### YamlMime:FAQ
 metadata:
-  title: "Product keys Frequently Asked Questions"
-  ms.author: cmcatee
+  title: "Product keys FAQ"
   author: cmcatee-MSFT
+  ms.author: cmcatee
   manager: scotv
   ms.reviewer: racheg, armanv
   ms.date: 07/22/2021
   audience: Admin
-  ms.topic: article
-  ms.service: o365-administration
+  ms.topic: faq
+  ms.service: microsoft-365-business
   ms.custom: commerce_vl
+  ms.collection: scotvorg
   ms.localizationpriority: medium
   description: "Product keys Frequently Asked Questions"
-    
 title: Product keys Frequently Asked Questions
 summary: |
 
@@ -74,7 +74,7 @@ sections:
           For more information, see the [License Summary FAQ](/licensing/license-faq).
 
           > [!NOTE]
-          > All customers have the right to use product keys for re-imaging and downgrade purposes. Select Plus, Enterprise Agreement (EA), and Select customers have limited evaluation rights for training and back-up. For more information, see [Product licensing briefs](/licensing/learn-more/volume-licensing-briefs).
+          > All customers have the right to use product keys for re-imaging and downgrade purposes. Select Plus, Enterprise Agreement (EA), and Select customers have limited evaluation rights for training and back-up. For more information, see [Product licensing briefs](https://www.microsoft.com/licensing/docs/view/Licensing-Briefs).
           
   - name: Volume activation
     questions:
@@ -241,7 +241,7 @@ sections:
           > [!NOTE]
           > If you’re an Open License customer, you must purchase at least one unit of the product that you want to re-image to obtain access to the product media and receive a product key.
 
-          For more information on re-imaging rights, see [Product licensing briefs](/licensing/learn-more/volume-licensing-briefs).
+          For more information on re-imaging rights, see [Product licensing briefs](https://www.microsoft.com/licensing/docs/view/Licensing-Briefs).
 
       - question: |
           How do I download my keys to a local file?

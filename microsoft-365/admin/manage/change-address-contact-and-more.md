@@ -2,26 +2,27 @@
 title: "Change your organization's address, technical contact, and more"
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- scotvorg 
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
 ms.custom: 
+- commerce_billing
 - AdminSurgePortfolio
-- commcerce_billing
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Make changes to your organization profile, such as organization name, address, phone, technical contact, and email."
-ms.date: 03/30/2021
+ms.date: 02/11/2022
 ---
 
 # Change your organization's address, technical contact, and more
@@ -29,6 +30,17 @@ ms.date: 03/30/2021
 You can make changes to your organization profile, such as your organization name, address, phone, and technical contact. **You must be a global admin to update this information.**
   
 To change the address associated with your bill or subscription, see [Change your billing addresses for Microsoft 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md).
+
+## Change organization settings for Cloud PCs
+
+By default, new Cloud PCs are created with the Windows 11 operating system and the Standard User account type. To change these default settings, use the following steps:
+
+1. Sign in to the Microsoft 365 admin center with a Global admin account.
+2. Go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> page.
+3. On the **Services** tab, select **Windows 365**.
+4. Select your preferred operating system and account type, then select **Save**.
+
+Organization settings only apply to newly-created Cloud PCs. When these settings are changed, they won’t change the OS or account type of existing Cloud PCs.
 
 ## Edit organization information
 
@@ -38,9 +50,7 @@ To change the address associated with your bill or subscription, see [Change you
 To change other information on your company's profile page:
   
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> page.
-
 2. On the **Organization profile** tab, select **Organization information**.
-
 3. Update your organization's information, then select **Save changes**. Be sure to fill in all required fields marked with an * to enable saving your changes.
 
 An explanation of each field is provided below.
@@ -71,7 +81,7 @@ As an admin, you can change your alternate email address for resetting passwords
 5. Edit the address in the **Alternate email** box, then select **Next**.
 
 6. Enter the code sent to the alternate email address and select **OK** to verify the change.
-To learn about changing other profile information, see [Change your contact preferences](change-contact-preferences.md) or [Change your display language](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx).
+To learn about changing other profile information, see [Change your contact preferences](change-contact-preferences.md) or [Change your display language](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b).
   
 ### Email signatures
   

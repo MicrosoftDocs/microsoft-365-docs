@@ -3,7 +3,8 @@ title: Enable the evaluation environment for Microsoft Defender for Cloud Apps
 description: Learn the architecture of Defender for Cloud Apps within Microsoft Defender for Office 365 and understand interactions between the Microsoft 365 Defender products.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,10 +16,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
- 
+  - m365-security
+  - m365solution-scenario
+  - m365solution-evalutatemtp
+  - zerotrust-solution
+  - highpri
+  - tier1
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Enable the evaluation environment for Microsoft Defender for Cloud Apps
@@ -31,16 +35,16 @@ This article is [Step 2 of 2](eval-defender-mcas-overview.md) in the process of 
 
 This article walks you through the process of accessing the Defender for Cloud Apps portal and configuring the necessary integration to collect cloud app traffic data.
 
-To discover cloud apps used in your environment, you can do one or both of the following:
+To discover cloud apps used in your environment, you can implement one or both of the following methods:
 
 - Get up and running quickly with Cloud Discovery by integrating with Microsoft Defender for Endpoint. This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 and Windows 11 devices, on and off your network.
-- To discover all cloud apps accessed by all devices connected to your network, deploy the Defender for Cloud Apps log collector on your firewalls and other proxies. This collects data from your endpoints and sends it to Defender for Cloud Apps for analysis. Defender for Cloud Apps natively integrates with some third-party proxies for even more capabilities.
+- To discover all cloud apps accessed by all devices connected to your network, deploy the Defender for Cloud Apps log collector on your firewalls and other proxies. This deployment helps collect data from your endpoints and sends it to Defender for Cloud Apps for analysis. Defender for Cloud Apps natively integrates with some third-party proxies for even more capabilities.
 
 This article includes guidance for both methods.
 
 Use the following steps to set up Microsoft Defender for Cloud Apps.
 
-![Steps to enable Microsoft Microsoft Defender for Cloud Apps in the Microsoft Defender evaluation environment.](../../media/defender/m365-defender-mcas-eval-enable-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-mcas-eval-enable-steps.png" alt-text="The steps to enable Microsoft Microsoft Defender for Cloud Apps in the Microsoft Defender evaluation environment" lightbox="../../media/defender/m365-defender-mcas-eval-enable-steps.png":::
 
 - [Step 1. Connect to the Defender for Cloud Apps portal](#step-1)
 - [Step 2. Integrate with Microsoft Defender for Endpoint](#step-2)
@@ -53,7 +57,7 @@ Use the following steps to set up Microsoft Defender for Cloud Apps.
 
 To verify licensing and to connect to the Defender for Cloud Apps portal, see [Quickstart: Get started with Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security).
 
-If you're not immediately able to connect to the portal, you might need to add the IP address to the allow list of your firewall. See [Basic setup for Defender for Cloud Apps](/cloud-app-security/general-setup).
+If you're not immediately able to connect to the portal, you might need to add the IP address to the allowlist of your firewall. See [Basic setup for Defender for Cloud Apps](/cloud-app-security/general-setup).
 
 If you're still having trouble, review [Network requirements](/cloud-app-security/network-requirements).
 

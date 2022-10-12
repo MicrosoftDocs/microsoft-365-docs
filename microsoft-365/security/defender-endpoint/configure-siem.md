@@ -3,7 +3,7 @@ title: Integrate your SIEM tools with Microsoft Defender for Endpoint
 description: Learn how to ingest incidents and alerts, and integrate SIEM tools.
 keywords: configure siem, security information and events management tools, splunk, arcsight, custom indicators, rest api, alert definitions, indicators of compromise
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Integrate your SIEM tools with Microsoft Defender for Endpoint
@@ -67,20 +69,29 @@ Using the Microsoft 365 Defender Add-on for Splunk that supports:
 - Ingesting Microsoft Defender for Endpoint alerts
 - Updating alerts in Microsoft Defender for Endpoint from within Splunk
 
-For more information on the Microsoft 365 Defender Add-on for Splunk, see [splunkbase](https://splunkbase.splunk.com/app/4959/).
+For more information on the Microsoft 365 Defender Add-on for Splunk, see [splunkbase](https://splunkbase.splunk.com/app/6207/).
+
+### Datadog
+
+Microsoft 365 Defender for Endpoint integration with Datadog supports:
+
+- Ingesting Microsoft Defender for Endpoint alerts and incidents
+- Dashboards that enable monitoring metrics across endpoints, threats and vulnerabilities, and software
+
+For more information on the integration, see [Datadog Marketplace](https://app.datadoghq.com/marketplace/app/crest-data-systems-microsoft-defender/support).
 
 ### Micro Focus ArcSight
 
 The new SmartConnector for Microsoft 365 Defender ingests incidents that contain alerts from all Microsoft 365 Defender products - including from Microsoft Defender for Endpoint - into ArcSight and maps these onto its Common Event Framework (CEF).
 
-For more information on the new ArcSight SmartConnector for Microsoft 365 Defender, see [ArcSight Product documentation](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender).
+For more information on the new ArcSight SmartConnector for Microsoft 365 Defender, see [ArcSight Product documentation](https://www.microfocus.com/documentation/arcsight/arcsight-smartconnectors/microsoft-365-defender/index.html).
 
 The SmartConnector replaces the previous FlexConnector for Microsoft 365 Defender.
 
 ### IBM QRadar
 
 >[!NOTE]
->IBM QRadar integration with Microsoft 365 Defender, which include Microsoft Defender for Endpoint is now supported by the new Microsoft 365 Defender Device Support Module (DSM) that calls the [Microsoft 365 Defender Streaming API](../defender/streaming-api.md) that allows ingesting streaming event data from Microsoft 365 Defender products, including Microsoft Defender for Endpoint. For more information on the new QRadar Microsoft 365 Defender DSM, see [IBM QRadar Product Documentation](https://www.ibm.com/docs/en/dsm?topic=microsoft-365-defender), and for more information on Streaming API supported event types, see [Supported event types](../defender/supported-event-types.md).
+>IBM QRadar integration with Microsoft 365 Defender, which include Microsoft Defender for Endpoint is now supported by the new Microsoft 365 Defender Device Support Module (DSM) that calls the [Microsoft 365 Defender Streaming API](../defender/streaming-api.md) that allows ingesting streaming event data from Microsoft 365 Defender products, including Microsoft Defender for Endpoint. For more information on the new QRadar Microsoft 365 Defender DSM, see [IBM QRadar Product Documentation](https://www.ibm.com/docs/en/dsm?topic=microsoft-365-defender), and for more information on Streaming API supported event types, see [Supported event types](../defender/supported-event-types.md).
 
 New customers are no longer being onboarded using the previous QRadar Microsoft Defender ATP Device Support Module (DSM), and existing customers are encouraged to adopt the new Microsoft 365 Defender DSM as their single point of integration with all Microsoft 365 Defender products.
 

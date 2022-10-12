@@ -14,12 +14,13 @@ search.appverid:
   - MET150
   - MOE150
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-defender-office365
+  - m365-security
+  - m365solution-mdo-migration
+  - highpri
 ms.custom: migrationguides
 description: "Prerequisite steps for migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Migrate to Microsoft Defender for Office 365 - Phase 1: Prepare
@@ -29,7 +30,7 @@ ms.prod: m365-security
 
 <br>
 
-|![Phase 1: Prepare.](../../media/phase-diagrams/prepare.png) <br> Phase 1: Prepare|[![Phase 2: Set up](../../media/phase-diagrams/setup.png)](migrate-to-defender-for-office-365-setup.md) <br> [Phase 2: Set up](migrate-to-defender-for-office-365-setup.md)|[![Phase 3: Onboard](../../media/phase-diagrams/onboard.png)](migrate-to-defender-for-office-365-onboard.md) <br> [Phase 3: Onboard](migrate-to-defender-for-office-365-onboard.md)|
+|![Phase 1: Prepare.](../../media/phase-diagrams/prepare.png) <br> Phase 1: Prepare|[![Phase 2: Set up](../../media/phase-diagrams/setup.png#lightbox)](migrate-to-defender-for-office-365-setup.md) <br> [Phase 2: Set up](migrate-to-defender-for-office-365-setup.md)|[![Phase 3: Onboard](../../media/phase-diagrams/onboard.png#lightbox)](migrate-to-defender-for-office-365-onboard.md) <br> [Phase 3: Onboard](migrate-to-defender-for-office-365-onboard.md)|
 |---|---|---|
 |*You are here!*|||
 
@@ -79,18 +80,20 @@ Review your existing protection features in Microsoft 365 and consider removing 
 
 ## Move features that modify messages into Microsoft 365
 
-You need to transfer any customizations or features that modify messages in any way into Microsoft 365. For example, your existing protection service adds an **External** tag to the subject or message body of messages from external senders.
+You need to transfer any customizations or features that modify messages in any way into Microsoft 365. For example, your existing protection service adds an **External** tag to the subject or message body of messages from external senders. Any link wrapping feature will also cause problems with some messages. If you're using such a feature today, you should prioritize the rollout of Safe Links as an alternative to minimize problems.
 
-If you don't disable this functionality in your existing protection service, you can expect the following negative results in Microsoft 365:
+If you don't turn off message modification features in your existing protection service, you can expect the following negative results in Microsoft 365:
 
-- DKIM will break.
-- [Spoof intelligence](anti-spoofing-protection.md) will not work properly.
+- DKIM will break. Not all senders rely on DKIM, but those that do will fail authentication.
+- [Spoof intelligence](anti-spoofing-protection.md) and the tuning step later in this guide will not work properly.
 - You'll probably get a high number of false positives (good mail marked as bad).
 
-To recreate this functionality in Microsoft 365, you have the following options:
+To recreate external sender identification in Microsoft 365, you have the following options:
 
 - The [Outlook external sender call-out feature](https://techcommunity.microsoft.com/t5/exchange-team-blog/native-external-sender-callouts-on-email-in-outlook/ba-p/2250098), together with [first contact safety tips](set-up-anti-phishing-policies.md#first-contact-safety-tip).
 - Mail flow rules (also known as transport rules). For more information, see [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers).
+
+Microsoft is working with the industry to support the Authenticated Received Chain (ARC) standard in the near future. If you wish to leave any message modification features enabled at your current mail gateway provider, then we recommend contacting them about their plans to support this standard.
 
 ## Account for any active phishing simulations
 

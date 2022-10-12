@@ -5,12 +5,15 @@ summary: Learn how to buy and manage business subscriptions, perform license man
 metadata:
   title: Business subscriptions and billing documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn how to buy and manage business subscriptions, perform license management tasks, and manage billing and payments for your business accounts with Microsoft. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: o365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
-  ms.collection: 
+  ms.collection:
+  - scotvorg 
+  - highpri 
   - commerce # Optional; Remove if no collection is used.
   - Adm_TOC
   ms.custom: 
+  - VSBFY23
   - commerce_landingpage
   author: cmcatee-MSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: cmcatee #Required; microsoft alias of author; optional team alias.

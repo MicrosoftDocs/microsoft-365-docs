@@ -2,7 +2,7 @@
 title: Device discovery frequently asked questions
 description: Find answers to frequently asked questions (FAQs) about device discovery
 keywords: device discovery, discover, passive, proactive, network, visibility, server, workstation, onboard, unmanaged devices
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,10 +14,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: m365d
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Device discovery frequently asked questions
@@ -44,11 +45,11 @@ You have the option to turn off device discovery through the [Advanced features]
 
 In this mode endpoints onboarded to Microsoft Defender for Endpoint can actively probe observed devices in the network to enrich collected data (with negligible amount of network traffic). Only devices that were observed by the basic discovery mode will be actively probed in standard mode. This mode is highly recommended for building a reliable and coherent device inventory. If you choose to disable this mode, and select Basic discovery mode, you will likely only gain limited visibility of unmanaged endpoints in your network.
 
- Standard mode also leverages common discovery protocols that use multicast queries in the network to find even more devices, in addition to the ones that were ovserved using the passive method.
+ Standard mode also leverages common discovery protocols that use multicast queries in the network to find even more devices, in addition to the ones that were observed using the passive method.
 
 ## Can I control which devices perform Standard discovery?
 
-You can customize the list of devices that are used to perform Standard discovery. You can either enable Standard discovery on all the onboarded devices that also support this capability (currently Windows 10 devices only) or select a subset or subsets of your devices by specifying their device tags. In this case, all other devices will be configured to run Basic discovery only. The configuration is available in the device discovery settings page.
+You can customize the list of devices that are used to perform Standard discovery. You can either enable Standard discovery on all the onboarded devices that also support this capability (currently Windows 10 or later and Windows Server 2019 or later devices only) or select a subset or subsets of your devices by specifying their device tags. In this case, all other devices will be configured to run Basic discovery only. The configuration is available in the device discovery settings page.
 
 ## Can I exclude unmanaged devices from the device inventory list?
 
@@ -56,7 +57,7 @@ Yes, you can apply filters to exclude unmanaged devices from the device inventor
 
 ## Which onboarded devices can perform discovery?
 
-Onboarded devices running on Windows 10 version 1809 or later, or Windows 11 can perform discovery. Servers cannot perform discovery at this point.
+Onboarded devices running on Windows 10 version 1809 or later, Windows 11, Windows Server 2019, or Windows Server 2022 can perform discovery.
 
 ## What happens if my onboarded devices is connected to my home network, or to public access point?
 
@@ -64,13 +65,13 @@ The discovery engine distinguishes between network events that are received in t
 
 ## What protocols are you capturing and analyzing?
 
-By default, all onboarded devices running on Windows 10 version 1809 or later, or Windows 11 are capturing and analyzing the following protocols:
+By default, all onboarded devices running on Windows 10 version 1809 or later, Windows 11, Windows Server 2019, or Windows Server 2022 are capturing and analyzing the following protocols:
 ARP, CDP, DHCP, DHCPv6, IP (headers), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (SYN headers), UDP (headers), WSD
 
 ## Which protocols do you use for active probing in Standard discovery?
-
 When a device is configured to run Standard discovery, exposed services are being probed by using the following protocols:
-ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, DHCP, AFP, CrestonCIP, IphoneSync, WinRM, VNC, SLP
+ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, DHCP, AFP, CrestonCIP, IphoneSync, WinRM, VNC, SLP, LDAP
+
 
 ## How can I exclude targets from being probed with Standard discovery?
 
@@ -87,7 +88,7 @@ As device discovery uses passive methods to discover devices in the network, any
 
 Devices will actively be probed when changes in device characteristics are observed to make sure the existing information is up-to-date (typically, devices probed no more than once in a three-week period)
 
-## My security tool raised alert on UnicastScanner.ps1 or port scanning activity initiated by it, what should I do?
+## My security tool raised alert on UnicastScanner.ps1 / PSScript_{GUID}.ps1 or port scanning activity initiated by it, what should I do?
 
 The active probing scripts are signed by Microsoft and are safe. You can add the following path to your exclusion list:
 `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps1`
@@ -116,7 +117,7 @@ When considering Standard discovery, you may be wondering about the implications
 
 ### Probing is distributed across all Windows devices on the network
 
-As opposed to malicious activity, which would typically scan the entire network from a small number of compromised devices, Microsoft Defender for Endpoint’s Standard discovery probing is initiated from all onboarded Windows devices making the activity benign and non-anomalous. The probing is centrally managed from the cloud to balance the probing attempt between all the supported onboarded devices in the network.  
+As opposed to malicious activity, which would typically scan the entire network from a small number of compromised devices, Microsoft Defender for Endpoint's Standard discovery probing is initiated from all onboarded Windows devices making the activity benign and non-anomalous. The probing is centrally managed from the cloud to balance the probing attempt between all the supported onboarded devices in the network.  
 
 ### Active probing generates negligible amount of extra traffic
 
@@ -132,8 +133,8 @@ Network security and monitoring tools are indifferent to such activities perform
 
 ### Only unmanaged devices are being probed
 
-The device discovery capabilities have been built to only discover and identify unmanaged devices on your network. This means that previously discovered devices that are already onboarded with Microsoft Defender for Endpoint won’t be probed.
+The device discovery capabilities have been built to only discover and identify unmanaged devices on your network. This means that previously discovered devices that are already onboarded with Microsoft Defender for Endpoint won't be probed.
 
 ### You can exclude network lures from active probing
 
-Standard discovery supports exclusion of devices or ranges (subnets) from active probing. If you have network lures deployed in place, you can use the Device Discovery settings to define exclusions based on IP addresses or subnets (a range of IP addresses). Defining those exclusions will ensure that those devices won’t be actively probed and won’t be alerted. Those devices will be discovered using passive methods only (similar to Basic discovery mode).
+Standard discovery supports exclusion of devices or ranges (subnets) from active probing. If you have network lures deployed in place, you can use the Device Discovery settings to define exclusions based on IP addresses or subnets (a range of IP addresses). Defining those exclusions will ensure that those devices won't be actively probed and won't be alerted. Those devices will be discovered using passive methods only (similar to Basic discovery mode).

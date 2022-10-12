@@ -1,4 +1,4 @@
-{:allowed-branchname-matches ["master" "main"]
+{:allowed-branchname-matches ["main"]
  :allowed-filename-matches ["microsoft-365/"] ;; Can be overridden in repo-specific edn file. This is an allow list that identifies which folders contain the files Acrolinx will check. Separate multiple folders as follows ["folder/" "folder2"]
  
  :use-gh-statuses true
@@ -51,12 +51,12 @@ For more information about the exception criteria and exception process, see [Mi
  
 Click the scorecard links for each article to review the Acrolinx feedback on grammar, spelling, punctuation, writing style, and terminology:
 
-| Article | Score | Issues | Spelling<br>issues | Scorecard | Processed |
+| Article | Score | Issues | Correctness | Scorecard | Processed |
 | ------- | ----- | ------ | ------ | --------- | --------- |
 "
 
  :template-change
- "| ${s/file} | ${acrolinx/qualityscore} | ${acrolinx/flags/issues} | ${acrolinx/flags/spelling} | [link](${acrolinx/scorecard}) | ${s/status} |
+ "| ${s/file} | ${acrolinx/qualityscore} | ${acrolinx/flags/issues} | ${acrolinx/scores/correctness} | [link](${acrolinx/scorecard}) | ${s/status} |
 "
  
  :template-footer

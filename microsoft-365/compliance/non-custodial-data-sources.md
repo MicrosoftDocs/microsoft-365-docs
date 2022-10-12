@@ -1,31 +1,35 @@
 ---
-title: "Add non-custodial data sources to an Advanced eDiscovery case"
+title: "Add non-custodial data sources to an eDiscovery (Premium) case"
+description: "You can add non-custodial data sources to an eDiscovery (Premium) case and place a hold on the data source. Non-custodial data sources are reindexed, so any content that was marked as partially indexed is reprocessed to make it fully and quickly searchable." 
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-description: "You can add non-custodial data sources to an Advanced eDiscovery case and place a hold on the data source. Non-custodial data sources are reindexed, so any content that was marked as partially indexed is reprocessed to make it fully and quickly searchable." 
 ---
 
-# Add non-custodial data sources to an Advanced eDiscovery case
+# Add non-custodial data sources to an eDiscovery (Premium) case
 
-In Advanced eDiscovery cases, it doesn't always meet your needs to associate a Microsoft 365 data source with a custodian in the case. But you may still need to associate that data with a case so that you can search it, add it to a review set, and analyze and review it. The feature in Advanced eDiscovery is called *non-custodial data sources* and lets you add data to a case without having to associate it to a custodian. It also applies the same Advanced eDiscovery functionality to non-custodial data that's available for data associated with custodian. Two of the most useful things that you can apply to non-custodial data is placing it on hold and processing it using [Advanced indexing](indexing-custodian-data.md).
+In Microsoft Purview eDiscovery (Premium) cases, it doesn't always meet your needs to associate a Microsoft 365 data source with a custodian in the case. But you may still need to associate that data with a case so that you can search it, add it to a review set, and analyze and review it. The feature in eDiscovery (Premium) is called *non-custodial data sources* and lets you add data to a case without having to associate it to a custodian. It also applies the same eDiscovery (Premium) functionality to non-custodial data that's available for data associated with custodian. Two of the most useful things that you can apply to non-custodial data is placing it on hold and processing it using [Advanced indexing](indexing-custodian-data.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Add a non-custodial data source
 
-Follow these steps to add and manage non-custodial data sources in an Advanced eDiscovery case.
+Follow these steps to add and manage non-custodial data sources in an eDiscovery (Premium) case.
 
-1. On the **Advanced eDiscovery** home page, click the case that you want to add the data to.
+1. On the **eDiscovery (Premium)** home page, click the case that you want to add the data to.
 
 2. Click the **Data sources** tab and then click **Add data source** > **Add data locations**.
 
@@ -54,7 +58,7 @@ After you add non-custodial data sources to the case, a job named *Reindexing no
 
 After you place a hold on a non-custodial data source, a hold policy that contains the non-custodial data sources for the case is automatically created. When you place other non-custodial data sources on hold, they are added to this hold policy.
 
-1. Open the Advanced eDiscovery case and select the **Hold** tab.
+1. Open the eDiscovery (Premium) case and select the **Hold** tab.
 
 2. Click **NCDSHold-\<GUID\>**, where the GUID value is unique to the case.
 

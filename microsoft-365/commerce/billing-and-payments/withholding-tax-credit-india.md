@@ -2,22 +2,23 @@
 title: "Request a credit for Withholding Tax on your account (India customers)"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller, martinl, melmar
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: null
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 search.appverid: MET150
 description: "Learn how to request a credit on your account for Withholding Tax you paid. This article only applies to customers in India." 
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: 'o365-worldwide'
 ms.date: 05/03/2021

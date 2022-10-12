@@ -1,10 +1,10 @@
 ---
 title: Secure email recommended policies - Microsoft 365 for enterprise | Microsoft Docs
 description: Describes the policies for Microsoft recommendations about how to apply email policies and configurations.
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: Laurawi
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 audience: Admin
 f1.keywords: 
@@ -15,18 +15,17 @@ ms.custom:
   - goldenconfig
 ms.collection: 
   - M365-identity-device-management
-  - M365-security-compliance
+  - m365-security
   - remotework
   - m365solution-identitydevice
   - m365solution-scenario
-ms.technology: mdo
+  - zerotrust-solution
+  - highpri
+ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Policy recommendations for securing email
-
-**Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
 This article describes how to implement the recommended Zero Trust identity and device access policies to protect organizational email and email clients that support modern authentication and conditional access. This guidance builds on the [Common identity and device access policies](identity-access-policies.md) and also includes a few additional recommendations.
 
@@ -38,7 +37,7 @@ These recommendations require your users to use modern email clients, including 
 
 To protect email, the following diagram illustrates which policies to update from the common identity and device access policies.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png" alt-text="Summary of policy updates for protecting access to Exchange." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png" alt-text="The summary of policy updates for protecting access to Microsoft Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png":::
 
 Note the addition of a new policy for Exchange Online to block ActiveSync clients. This forces the use of Outlook mobile.
 
@@ -54,7 +53,6 @@ If you included Exchange Online and Outlook in the scope of the policies when yo
 |**Enterprise**|[Require MFA when sign-in risk is *low*, *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include Exchange Online in the assignment of cloud apps|
 ||[Require compliant PCs *and* mobile devices](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Include Exchange Online in the list of cloud apps|
 |**Specialized security**|[*Always* require MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include Exchange Online in the assignment of cloud apps|
-|
 
 ## Block ActiveSync clients
 
@@ -72,7 +70,7 @@ You can restrict the ability for users to download attachments from Outlook on t
 
 Here are the steps:
 
-1. [Connect to an Exchange Online Remote PowerShell session](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 2. If you don't already have an OWA mailbox policy, create one with the [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy) cmdlet.
 3. If you want to allow viewing of attachments but no downloading, use this command:
 
@@ -102,13 +100,13 @@ See the steps to configure this policy in [Manage messaging collaboration access
 
 ## Set up message encryption
 
-With the new Office 365 Message Encryption (OME) capabilities, which leverage the protection features in Azure Information Protection, your organization can easily share protected email with anyone on any device. Users can send and receive protected messages with other Microsoft 365 organizations as well as non-customers using Outlook.com, Gmail, and other email services.
+With Microsoft Purview Message Encryption, which leverages the protection features in Azure Information Protection, your organization can easily share protected email with anyone on any device. Users can send and receive protected messages with other Microsoft 365 organizations as well as non-customers using Outlook.com, Gmail, and other email services.
 
 For more information, see [Set up new Office 365 Message Encryption capabilities](../../compliance/set-up-new-message-encryption-capabilities.md).
 
 ## Next steps
 
-![Step 4: Policies for Microsoft 365 cloud apps.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="The Policies for Microsoft 365 cloud apps" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
 Configure Conditional Access policies for:
 

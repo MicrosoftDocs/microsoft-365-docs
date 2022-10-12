@@ -2,7 +2,7 @@
 title: Privacy for Microsoft Defender for Endpoint on Mac
 description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender for Endpoint on Mac.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, privacy, diagnostic
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,12 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Privacy for Microsoft Defender for Endpoint on macOS
@@ -243,6 +245,7 @@ The following fields are collected:
 |size|Size of the support log.|
 |original_path|Path to the support log (always under */Library/Application Support/Microsoft/Defender/wdavdiag/*).|
 |format|Format of the support log.|
+|metadata|Information about the content of the support log.|
 
 #### Diagnostic log upload completed report
 

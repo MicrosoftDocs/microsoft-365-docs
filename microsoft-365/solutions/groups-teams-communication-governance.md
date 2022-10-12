@@ -6,9 +6,10 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-collaboration
 - m365solution-collabgovernance
 ms.custom: 
@@ -33,7 +34,7 @@ The following table provides a quick reference for the communications controls a
 ||Manage what meeting participants can do.|[Manage meeting policies in Teams](/microsoftteams/meeting-policies-in-teams)|
 ||Allow or prevent anonymous users joining meetings.|[Allow anonymous users to join meetings](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)|
 |Communication compliance|||
-||Surface and respond to careless and negligent communication|[Communication compliance in Microsoft 365](../compliance/communication-compliance.md)|
+||Surface and respond to careless and negligent communication|[Communication compliance](../compliance/communication-compliance.md)|
 
 ## Messaging
 
@@ -58,9 +59,9 @@ You can control anonymous join for Teams meetings which allows anyone with a lin
 
 ## Communication compliance
 
-Communication compliance in Microsoft 365 allows you to examine communications for offensive language, sensitive information, and information related to internal and regulatory standards. Chat communications, mailboxes, and Yammer messages can all be monitored, generating alerts. With administration tools, you can quickly identify and take action on messages with policy matches.
+Communication compliance allows you to examine communications for offensive language, sensitive information, and information related to internal and regulatory standards. Chat communications, mailboxes, and Yammer messages can all be monitored, generating alerts. With administration tools, you can quickly identify and take action on messages with policy matches.
 
-[Communication compliance in Microsoft 365](../compliance/communication-compliance.md)
+[Learn about communication compliance](../compliance/communication-compliance.md)
 
 ## Related topics
 

@@ -2,7 +2,7 @@
 title: Create and manage device groups in Microsoft Defender for Endpoint
 description: Create device groups and set automated remediation levels on them by confirming the rules that apply on the group
 keywords: device groups, groups, remediation, level, rules, aad group, role, assign, rank
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Create and manage device groups
@@ -26,6 +29,9 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> [!NOTE]
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 In an enterprise scenario, security operation teams are typically assigned a set of devices. These devices are grouped together based on a set of attributes such as their domains, computer names, or designated tags.
 
@@ -60,7 +66,7 @@ As part of the process of creating a device group, you'll:
 3. Enter the group name and automation settings and specify the matching rule that determines which devices belong to the group. See [How the automated investigation starts](automated-investigations.md#how-the-automated-investigation-starts).
 
     > [!TIP]
-    > If you want to group devices by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Create and manage device tags](machine-tags.md).
+    > If you want to use tagging for grouping devices, see [Create and manage device tags](machine-tags.md).
 
 4. Preview several devices that will be matched by this rule. If you're satisfied with the rule, click the **User access** tab.
 
@@ -73,7 +79,7 @@ As part of the process of creating a device group, you'll:
 
 ## Manage device groups
 
-You can promote or demote the rank of a device group so that it's given higher or lower priority during matching. When a device is matched to more than one group, it's added only to the highest ranked group. You can also edit and delete groups.
+You can promote or demote the rank of a device group so that it's given higher or lower priority during matching. A device group with a rank of 1 is the highest ranked group. When a device is matched to more than one group, it's added only to the highest ranked group. You can also edit and delete groups.
 
 > [!WARNING]
 > Deleting a device group may affect email notification rules. If a device group is configured under an email notification rule, it will be removed from that rule. If the device group is the only group configured for an email notification, that email notification rule will be deleted along with the device group.

@@ -3,7 +3,7 @@ title: Create indicators
 ms.reviewer: 
 description: Create indicators for a file hash, IP address, URLs, or domains that define the detection, prevention, and exclusion of entities.
 keywords: manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Create indicators
@@ -23,6 +26,7 @@ ms.technology: mde
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -42,7 +46,7 @@ The cloud detection engine of Defender for Endpoint regularly scans collected da
 
 ## Endpoint prevention engine
 
-The same list of indicators is honored by the prevention agent. Meaning, if Microsoft Defender AV is the primary AV configured, the matched indicators will be treated according to the settings. For example, if the action is "Alert and Block", Microsoft Defender AV will prevent file executions (block and remediate) and a corresponding alert will be raised. On the other hand, if the Action is set to "Allow", Microsoft Defender AV will not detect nor block the file from being run.
+The same list of indicators is honored by the prevention agent. Meaning, if Microsoft Defender Antivirus is the primary Antivirus configured, the matched indicators will be treated according to the settings. For example, if the action is "Alert and Block", Microsoft Defender Antivirus will prevent file executions (block and remediate) and a corresponding alert will be raised. On the other hand, if the Action is set to "Allow", Microsoft Defender Antivirus will not detect nor block the file from being run.
 
 ## Automated investigation and remediation engine
 
@@ -54,7 +58,7 @@ When creating a new indicator (IoC), one or more of the following actions are av
 
 - Allow – the IoC will be allowed to run on your devices.
 - Audit – an alert will be triggered when the IoC runs.
-- Warn – the IoC will prompt a warning that the user can bypass (Defender for Cloud Apps only)
+- Warn – the IoC will prompt a warning that the user can bypass 
 - Block execution - the IoC will not be allowed to run.
 - Block and remediate - the IoC will not be allowed to run and a remediation action will be applied to the IoC.
 
@@ -72,16 +76,16 @@ The table below shows exactly which actions are available per indicator (IoC) ty
 | IoC type | Available actions |
 |:---|:---|
 | [Files](indicator-file.md) | Allow <br> Audit <br> Block and remediate |
-| [IP addresses](indicator-ip-domain.md) | Allow <br> Audit <br> Block execution |
-| [URLs and domains](indicator-ip-domain.md) | Allow <br> Audit <br> Block execution |
+| [IP addresses](indicator-ip-domain.md) | Allow <br> Audit <br> Block execution <br> Warn |
+| [URLs and domains](indicator-ip-domain.md) | Allow <br> Audit <br> Block execution<br> Warn |
 | [Certificates](indicator-certificates.md) | Allow <br> Block and remediate |
 
 The functionality of pre-existing IoCs will not change. However, the indicators were renamed to match the current supported response actions:
 
-- The “alert only” response action was renamed to “audit” with the generate alert setting enabled.
-- The “alert and block” response was renamed to “block and remediate” with the optional generate alert setting.
+- The "alert only" response action was renamed to "audit" with the generate alert setting enabled.
+- The "alert and block" response was renamed to "block and remediate" with the optional generate alert setting.
 
-The IoC API schema and the threat ids in advance hunting have been updated to align with the renaming of the IoC response actions. The API scheme changes applies to all IoC Types.
+The IoC API schema and the threat ids in advance hunting have been updated to align with the renaming of the IoC response actions. The API scheme changes apply to all IoC Types.
 
 > [!Note]
 > There is a limit of 15,000 indicators per tenant. File and certificate indicators do not block [exclusions defined for Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Indicators are not supported in Microsoft Defender Antivirus when it is in passive mode.
