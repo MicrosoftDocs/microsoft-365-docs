@@ -8,7 +8,7 @@ metadata:
   ms.service: microsoft-365-security
   ms.subservice: mdb
   ms.topic: landing-page
-  ms.date: 07/19/2022
+  ms.date: 10/12/2022
   ms.collection: 
   - SMB
   - m365-security
@@ -52,14 +52,14 @@ landingContent:
             url: https://aka.ms/MDB-GetStartedGuide
           - text: Get Defender for Business
             url: get-defender-business.md
+          - text: Get Microsoft Defender for Business servers
+            url: get-defender-business-servers.md
           - text: See the trial user guide
             url: trial-playbook-defender-business.md
           - text: Use the setup wizard
             url: mdb-use-wizard.md
           - text: Turn on preview features
             url: mdb-preview.md
-          - text: Get Microsoft Defender for Business servers
-            url: get-defender-business-servers.md
 
   # Card
   - title: Help and more resources
