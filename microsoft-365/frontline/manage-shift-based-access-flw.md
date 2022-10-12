@@ -23,7 +23,8 @@ appliesto:
 
 ## Overview
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
+> [!IMPORTANT]
+> This feature has been deprecated.
 
 Presence in Microsoft Teams indicates a user's current availability and status to other users. The presence of frontline workers is often less predictable than other staff as their working hours are typically not the same each day. As an admin, you can configure Teams to show a set of shift-based presence states for the frontline workers in your organization to indicate when they are on and off shift.
 
