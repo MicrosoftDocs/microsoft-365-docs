@@ -1,23 +1,27 @@
 ---
-title: "Support contacts by country or regions"
+title: "Microsoft 365 for business support contacts by country or regions"
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Priority
+ms.service: microsoft-365-business
+ms.localizationpriority: high
 ms.collection: 
+- scotvorg
+- highpri
 - Adm_O365
-ms.custom: 
+ms.custom: VSBFY23
 search.appverid:
+- BCS160
 - MET150
+- MOE150
 description: "Learn how to get phone support for your Microsoft 365 for business subscription. You must be an admin for a business subscription to get support."
 ---
 
-# Support contacts by country or region
+# Microsoft 366 for business support contacts by country or region
 
-Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday through Friday.\
+Billing support for Microsoft 365 for business products and services is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday through Friday.\
 Technical support is provided in English 24 hours a day, 7 days a week.
 
 Admins, have your account details ready when you call.
