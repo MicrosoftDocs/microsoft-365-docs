@@ -1,5 +1,5 @@
 ---
-title: "Azure COSMOS DB account access key entity definition (preview)"
+title: "Azure Cosmos DB account access key entity definition (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: "Azure COSMOS DB account access key sensitive information type entity definition."
+description: "Azure Cosmos DB account access key sensitive information type entity definition."
 ---
 
-# Azure COSMOS DB account access key (preview)
+# Azure Cosmos DB account access key (preview)
 
 ## Format
 
@@ -47,7 +47,7 @@ No
 
 ## Definition
 
-This SIT is designed to match the security information that's used to provide access to administrative resources for [Azure COSMOS Database](/azure/cosmos-db/secure-access-to-data) accounts .
+This SIT is designed to match the security information that's used to provide access to administrative resources for [Azure Cosmos DB Database](/azure/cosmos-db/secure-access-to-data) accounts .
 
 It uses several primary resources:
 

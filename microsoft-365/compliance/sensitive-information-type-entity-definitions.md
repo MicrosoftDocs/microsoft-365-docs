@@ -66,7 +66,7 @@ This article is a list of all sensitive information type (SIT) entity definition
 - [Azure Cognitive Search API key (preview)](sit-defn-azure-cognitive-search-api-key.md)
 - [Azure Cognitive Service key (preview)](sit-defn-azure-cognitive-service-key.md)
 - [Azure Container Registry access key (preview)](sit-defn-azure-container-registry-access-key.md)
-- [Azure COSMOS DB account access key (preview)](sit-defn-azure-cosmos-db-account-access-key.md) 
+- [Azure Cosmos DB account access key (preview)](sit-defn-azure-cosmos-db-account-access-key.md) 
 - [Azure Databricks personal access token (preview)](sit-defn-azure-databricks-personal-access-token.md)
 - [Azure DevOps app secret (preview)](sit-defn-azure-devops-app-secret.md)
 - [Azure DevOps personal access token (preview)](sit-defn-azure-devops-personal-access-token.md)
@@ -337,4 +337,3 @@ This article is a list of all sensitive information type (SIT) entity definition
 - [Ukraine passport international](sit-defn-ukraine-passport-international.md)
 - [User login credentials (preview)](sit-defn-user-login-credentials.md)
 - [X.509 certificate private key (preview)](sit-defn-x-509-certificate-private-key.md)
-
