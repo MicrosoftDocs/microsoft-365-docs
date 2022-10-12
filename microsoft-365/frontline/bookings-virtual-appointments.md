@@ -83,9 +83,22 @@ The Bookings app integrates with Outlook. After you add staff, you’ll be able 
 
 Create specific appointment types to represent the services offered by your organization and to tailor the booking experience. Schedulers can then use the appointment type to schedule an appointment.
 
-In the booking calendar, go to **More options** (...) > **Settings**, select **Appointment types**, and then select **Add appointment type**. Enter a name&mdash;for example, Account opening, Prescription renewal, Loan consultation, Tax preparation&mdash;and any other information and settings you want.
+In the booking calendar, go to **More options** (...) > **Settings**, select **Appointment types**, and then select **Add appointment type**. Enter a name&mdash;for example, Account opening, Prescription renewal, Loan consultation, Tax preparation&mdash;and any other information and settings you want. The information that you add is included in the email confirmation that's sent to attendees every time this type of appointment is booked.
 
-The information that you add is included in the email confirmation that's sent to attendees every time this type of appointment is booked. You can set email reminders and other options such as whether attendees can [join from a a desktop or mobile browser](browser-join.md) without having to download Teams.
+You can set options for the appointment type such as whether attendees can [join from a a desktop or mobile browser](browser-join.md) without having to download Teams, add an email reminder, enable [SMS text notifications](#enable-sms-text-notifications), and [link forms](#using-forms).
+
+#### Enable SMS text notifications
+
+> [!NOTE]
+> We'll be providing unlimited SMS notifications through to November 30, 2022 for customers who have Bookings licenses. As we get closer to the end of the promotion period, we'll provide more details on licensing requirements. Contact your account team or support to get pricing details after the promotion period.
+
+Attendees need a valid United States, Canada, or United Kingdom phone number before they can receive SMS notifications.
+
+To send SMS notifications to attendees, turn on **Send them text messages**. Attendees will receive confirmation and reminder text messages that include the Teams meeting link for the appointment.
+
+To learn more, see [Send text message notifications](https://support.microsoft.com/office/send-text-message-notifications-f4e6aa74-2ee9-4b12-9105-0e9271d4b244)
+
+#### Using forms
 
 If you're a Bookings admin, you can link up to four forms for attendees to fill out each time this appointment type is booked. For example, you may require attendees to complete a registration form before they join an appointment. To link a form, choose **Link a form**. Enter the URL of the form, and then choose **Link**. (If this is the first time that you're linking a form, you'll be prompted to create a Microsoft 365 group to store forms. Choose **Create group** to create the group. You only have to do this one time for the booking calendar.)
 
@@ -117,11 +130,14 @@ In your Teams or Outlook calendar, go to the booking, and then select **Join** o
 
 ## Monitor appointments and get real-time status updates
 
-The [queue view](https://support.microsoft.com/office/queue-view-in-bookings-3eea2840-a1e0-4bcd-8e09-d3cf51c184d6) in Bookings provides your staff with a dashboard to monitor all virtual appointments for the day, with updates in real time. To see the queue, go to the **Queue** tab in Bookings.
+The [queue view](https://support.microsoft.com/office/queue-view-in-bookings-3eea2840-a1e0-4bcd-8e09-d3cf51c184d6) in Bookings provides your staff with a dashboard to monitor all scheduled and walk-in virtual appointments for the day, with updates in real time. To see the queue, go to the **Queue** tab in Bookings.
 
+[NEED NEW SCREENSHOT]<br>
 :::image type="content" source="media/bookings-virtual-visits-queue.png" alt-text="Screenshot of the queue view in the Bookings app in Teams" lightbox="media/bookings-virtual-visits-queue.png":::
 
-From the queue, schedulers can add a new booking, view relevant appointment details, and see appointment statuses throughout the day. When a patient joins the waiting room, the status changes, and their wait time is displayed and tracked. The view automatically refreshes with color-coded updates so that changes can easily be identified.
+From the queue, schedulers can add a new booking, view relevant appointment details, see appointment statuses throughout the day, send email reminders to assigned staff and attendees, and send SMS text notifications to attendees.
+
+When an attendee joins the waiting room, the status changes, and their wait time is displayed and tracked. The view automatically refreshes with color-coded updates so that changes can easily be identified.
 
 Staff can even join and manage appointments directly from the queue.
 

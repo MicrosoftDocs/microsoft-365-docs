@@ -112,7 +112,7 @@ Watch the following video to see an example of virtual appointments in healthcar
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
 
 
-More information: [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-visits.md)
+More information: [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-appointments.md)
 
 ## Help your team, clients, and customers
 

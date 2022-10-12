@@ -47,7 +47,7 @@ Each virtual appointment contains a Teams meeting link that’s sent to attendee
 To learn more, see:
 
 - [Manage the Bookings app](/microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
-- [Virtual appointments with Teams and the Bookings app](bookings-virtual-visits.md)
+- [Virtual appointments with Teams and the Bookings app](bookings-virtual-appointments.md)
 - [Help your clients and customers use virtual appointments](virtual-appointments-toolkit.md)
 
 ## Teams Electronic Health Record (EHR) connector

@@ -23,7 +23,7 @@ ms.custom: seo-marvel-apr2020
 ---
 # Microsoft Teams Virtual Visits usage report
 
-The Virtual Visits usage report in the Microsoft Teams admin center gives you an overview of Teams virtual appointment activity in your organization. You can view detailed activity for virtual appointments scheduled through the [Bookings app](bookings-virtual-visits.md) and the [Microsoft Teams Electronic Health Record (EHR) connector](teams-in-hc.md#virtual-appointments-and-electronic-healthcare-record-ehr-integration).
+The Virtual Visits usage report in the Microsoft Teams admin center gives you an overview of Teams virtual appointment activity in your organization. You can view detailed activity for virtual appointments scheduled through the [Bookings app](bookings-virtual-appointments.md) and the [Microsoft Teams Electronic Health Record (EHR) connector](teams-in-hc.md#virtual-appointments-and-electronic-healthcare-record-ehr-integration).
 
 To view the report, you must be a global admin or Teams admin.
 
@@ -109,6 +109,6 @@ You'll see this tab if you have a license that includes the Teams EHR connector.
 
 ## Related articles
 
-- [Virtual appointments with Teams and the Bookings app](bookings-virtual-visits.md)
+- [Virtual appointments with Teams and the Bookings app](bookings-virtual-appointments.md)
 - [Virtual appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
 - [Virtual appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)

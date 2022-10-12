@@ -98,7 +98,7 @@ Make the most of virtual appointments by making sure your staff members know how
 
 - [Learn how to use the Bookings app in Teams](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5).
 - [Learn how to join a Bookings appointment](https://support.microsoft.com/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0).
-- [Conduct an appointment](bookings-virtual-visits.md#conduct-an-appointment).
+- [Conduct an appointment](bookings-virtual-appointments.md#conduct-an-appointment).
 - [Watch a video about virtual appointments](#help-your-clients-and-customers-use-virtual-appointments).
 - [Watch a video about how to manage the queue in virtual appointments](https://go.microsoft.com/fwlink/?linkid=2202615).
 - [Watch a video about waiting room features in virtual appointments](https://go.microsoft.com/fwlink/?linkid=2202614).

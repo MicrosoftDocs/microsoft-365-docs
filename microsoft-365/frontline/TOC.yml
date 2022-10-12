@@ -116,7 +116,7 @@
     - name: Overview
       href: virtual-appointments.md
     - name: Virtual appointments with Teams and Bookings
-      href: bookings-virtual-visits.md
+      href: bookings-virtual-appointments.md
     - name: Virtual appointments with Teams and Cerner EHR 
       href: ehr-admin-cerner.md
     - name: Virtual appointments with Teams and Epic EHR 

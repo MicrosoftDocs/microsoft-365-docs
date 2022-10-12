@@ -92,7 +92,7 @@ The staff member who conducts the appointment can share their screen from their 
 
 ## Related articles
 
-- [Virtual appointments with Teams and the Bookings app](bookings-virtual-visits.md)
+- [Virtual appointments with Teams and the Bookings app](bookings-virtual-appointments.md)
 - [Create an Bookings appointment type](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887)
 - [Join a Bookings appointment as an attendee](https://support.microsoft.com/office/join-a-bookings-appointment-as-an-attendee-95cea12d-2220-421f-a663-6efb20913c7f)
 - [Virtual appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
