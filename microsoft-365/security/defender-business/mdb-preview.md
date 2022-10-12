@@ -54,4 +54,4 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 
 ## See also
 
-[How to get Microsoft Defender for Business servers (preview)](get-defender-business-servers.md)
+[How to get Microsoft Defender for Business servers](get-defender-business-servers.md)
