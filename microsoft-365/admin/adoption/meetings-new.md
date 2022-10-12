@@ -52,7 +52,7 @@ For each meeting:
 1. We compute the weight of each meeting based on the meeting duration and meeting size. The longer or bigger a meeting, the more impact it has in the final score.
 1. We then perform a weighted sum average on scores from all meetings of the tenant based on meeting weights to compute the final meeting score for the tenant.
 
-:::image type="content" source="../../media/adoption-score-meetings.jpg" alt-text="Screenshot: Meeting score for Microsoft Teams meetings" lightbox=":::
+:::image type="content" source="../../media/adoption-score-meetings.jpg" alt-text="Screenshot: Meeting score for Microsoft Teams meetings":::
 
 1. **Header**: Shows the score, out of 100, based on the average of Set Up, Meet Up and Follow Up phases for online meetings on Microsoft Teams held in the past 28 days.
 1. **Body**: Provides more information on how using online meeting tools effectively can make meetings more effective.
@@ -62,7 +62,7 @@ For each meeting:
 
 The following chart shows the trend-line of score over the selected period. Each data point on the line chart is an aggregate of activity for the last 28 days.
 
-:::image type="content" source="../../media/meetings-time-trend.jpg" alt-text="Screenshot: Time trend chart for meeting score" lightbox=":::
+:::image type="content" source="../../media/meetings-time-trend.jpg" alt-text="Screenshot: Time trend chart for meeting score":::
 
 ## What makes up my score?
 
@@ -72,7 +72,7 @@ We provide you with supporting data on each of the Set Up, Meet up and Follow Up
 
 This represents the phase that involves scheduling and sharing the details of the meeting and participants joining the meeting.
 
-:::image type="content" source="../../media/meetings-set-up.jpg" alt-text="Screenshot: Set up phase section for meeting score" lightbox=":::
+:::image type="content" source="../../media/meetings-set-up.jpg" alt-text="Screenshot: Set up phase section for meeting score":::
 
 - **Communication shared ahead of time**: This represents the score for Microsoft Teams meetings that had a Teams conversation meeting chat started before conducting the meeting. For this to be tracked, a user must go to the meeting chat with the participants and send a message to the participants, before the scheduled meeting time.
 - **Scheduled with at least 24 hours notice**: This represents the score for Microsoft Teams meetings that were scheduled at least 24 hours earlier than their start time.
@@ -83,7 +83,7 @@ This represents the phase that involves scheduling and sharing the details of th
 
 This represents the phase of when attendees are in the meeting.
 
-:::image type="content" source="../../media/meetings-meet-up.jpg" alt-text="Screenshot: Meet up phase section for meeting score" lightbox=":::
+:::image type="content" source="../../media/meetings-meet-up.jpg" alt-text="Screenshot: Meet up phase section for meeting score":::
 
 - **Used at least one interactive feature**: This represents the score for Microsoft Teams meetings that had attendees use at least one interactive feature. These interactive features include raising hand, sending a meeting chat message, or sending a reaction in the meeting. The score is calculated out of 100.
 - **Participated with audio or chat at a high rate (>33%)**: This represents the score for Microsoft Teams meetings that had more than 33% of the participants either speak in a meeting, send a meeting chat, or both. The score is calculated out of 100.
@@ -91,7 +91,7 @@ This represents the phase of when attendees are in the meeting.
 
 ## Follow up
 
-:::image type="content" source="../../media/meetings-follow-up.jpg" alt-text="Screenshot: Follow up phase section for meeting score" lightbox=":::
+:::image type="content" source="../../media/meetings-follow-up.jpg" alt-text="Screenshot: Follow up phase section for meeting score":::
 
 - **Created recording**: This represents the score for Microsoft Teams meetings that had the meeting recorded. The score is calculated out of 100.
 - **Sent out post-meeting communication**: This represents the score for Microsoft Teams meetings that had attendee(s) share any chat messages on the meeting chat thread after the conclusion of that meeting. The score is calculated out of 100.
