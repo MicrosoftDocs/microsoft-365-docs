@@ -106,7 +106,16 @@ Choose the operating system for your server:
 
 7. Type `python MicrosoftDefenderATPOffboardingLinuxServer_valid_until_YYYY-MM-DD.py` in the terminal.
 
-For more information, see [Uninstall](../defender-endpoint/linux-resources.md) in the Microsoft Defender for Endpoint on Linux guidance.
+> [!TIP]
+> For more information, see [Uninstall](../defender-endpoint/linux-resources.md) in the Microsoft Defender for Endpoint on Linux guidance.
+
+## [**Mobile devices**](#tab/mobiles)
+
+## Mobile devices
+
+You can use Microsoft Intune to manage mobile devices, such as iOS, iPadOS, and Android devices.
+
+See [Microsoft Intune device management](/mem/intune/remote-actions/device-management).
 
 ## Next steps
 
