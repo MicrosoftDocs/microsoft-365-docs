@@ -40,5 +40,5 @@ Use one of the following procedures to get Microsoft Defender for Business serve
 
 - If you've started a trial of Defender for Business, see [Trial user guide: Microsoft Defender for Business](trial-playbook-defender-business.md).
 - If you've started a trial of Microsoft 365 Business Premium, see [Trial user guide: Microsoft 365 Business Premium](../../business-premium/m365bp-trial-playbook-microsoft-business-premium.md).
-- If you're ready to onboard one or more servers, see [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
+- If you're ready to onboard one or more devices, see [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
