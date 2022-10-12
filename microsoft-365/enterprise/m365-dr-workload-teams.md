@@ -39,7 +39,7 @@ Required Conditions:
 **Commitment:**
 Customers can assign users of Microsoft Teams to any _Satellite Geography_ supported by [Multi-Geo](microsoft-365-multi-geo.md). The following customer data will be stored in the relevant _Satellite Geography_: Teams chat data that consists of chat messages, including private messages, channel messages, and images used in chats.
 
-###Option 3: Advanced Data Residency add-on
+### Option 3: Advanced Data Residency add-on
 
 Required Conditions:
 1.	Tenant has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
