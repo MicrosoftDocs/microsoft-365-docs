@@ -23,7 +23,7 @@ ms.collection:
 
 # Onboard devices to Microsoft Defender for Business
 
-With Defender for Business, you have several options to choose from for onboarding your company's devices. This article walks you through these options and provides an overview of how onboarding works.
+Onboard your business devices to protect them right away. You can choose from several options to onboard your company's devices. This article walks you through your options and describes how onboarding works.
 
 ## What to do
 
@@ -237,9 +237,6 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 ## [**Servers**](#tab/Servers)
 
 ## Servers
-
-> [!NOTE]
-> **The ability to onboard a server is currently in preview**.
 
 Choose the operating system for your server:
 

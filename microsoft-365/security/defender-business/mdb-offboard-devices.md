@@ -22,12 +22,23 @@ ms.collection:
 
 # Offboard a device from Microsoft Defender for Business
 
-If you want to offboard a device, use one of the following procedures:
+As devices are replaced or retired, or your business needs change, you can offboard devices from Defender for Business. Offboarding a device causes the device to stop sending data to Defender for Business. However, data received prior to offboarding is retained for up to six (6) months.
 
-- [Offboard a Windows device](#offboard-a-windows-device)
-- [Offboard a Mac](#offboard-a-mac)
+## What to do
 
-## Offboard a Windows device
+1. Select a tab:
+
+   - **Windows 10 or 11**
+   - **Mac**
+   - **Servers** (Windows Server or Linux Server)
+   - **Mobile** (for iOS/iPadOS or Android devices)
+
+2. Follow the guidance on the selected tab.
+3. Proceed to your next steps. 
+
+## [**Windows 10 or 11**](#tab/Windows1011)
+
+## Windows 10 or 11
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -43,14 +54,27 @@ If you want to offboard a device, use one of the following procedures:
 
 7. Run the script on each device that you want to offboard.
 
+## [**Mac**](#tab/mac)
+
 ## Offboard a Mac
 
 1. Go to **Finder** > **Applications**. 
 
 2. Right click on **Microsoft Defender for Business**, and then choose **Move to Trash**. <br/>--- or --- <br/> Use the following command: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
 
-> [!IMPORTANT]
-> Offboarding a device causes the devices to stop sending data to Defender for Business. However, data received prior to offboarding is retained for up to six (6) months.
+## [**Servers**](#tab/Servers)
+
+## Servers
+
+Choose the operating system for your server:
+
+- [Windows Server](#windows-server)
+- [Linux Server](#linux-server)
+
+### Windows Server
+
+### Linux Server
+
 
 ## Next steps
 
