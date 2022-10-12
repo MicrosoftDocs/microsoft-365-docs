@@ -57,11 +57,12 @@ Follow the below steps to test and validate the Audit New Search experience:
 1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com)
 2. Select the **Audit** tab on the left panel of the homepage to navigate to the Audit tool
 3. Select **New Search (Preview)** tab at the top of the **Audit** page
- 
+
       ![Audit New Search overview in Microsoft Purview.](../media/audit-search/audit-new-search.png)
 
-1. Test different search jobs in the Audit New Search tool using various search criteria.
+4. Test different search jobs in the Audit New Search tool using various search criteria.
 Some examples of different searches include the following criteria. Explore these different search methods while performing searches on the audit log.
+
     - Search across different time frames.
       - One day
       - Week
@@ -73,12 +74,13 @@ Some examples of different searches include the following criteria. Explore thes
 
   ![Create a Audit New Search overview in Microsoft Purview.](../media/audit-search/audit-new-search-create.png)
 
-1. Initiate another 2-9 searches in the compliance portal. A maximum of 10 search jobs can be run in parallel in one account.
-1. Explore the search job history and select different search jobs to get their corresponding data from the search job results. Results can be sorted by their creation time by selecting the corresponding button at the top of the table.
- 
+5. Initiate another 2-9 searches in the compliance portal. A maximum of 10 search jobs can be run in parallel in one account.
+6. Explore the search job history and select different search jobs to get their corresponding data from the search job results. Results can be sorted by their creation time by selecting the corresponding button at the top of the table.
+
   ![Results of a Audit New Search overview in Microsoft Purview.](../media/audit-search/audit-new-search-columns.png)
- 
-1. Select a search job to see the results of the job displayed in a line-item format. Explore the various functionalities in the UI, including:
+
+7. Select a search job to see the results of the job displayed in a line-item format. Explore the various functionalities in the UI, including:
+
     - Referencing the complete search query at the top of the page, which includes all search criteria entered when completing the original search
     - Selecting various results for more information in the fly-out window
     - Filtering across the search job using IP address, User, Activity, Date, Item, and Details.
@@ -97,8 +99,6 @@ Some examples of different searches include the following criteria. Explore thes
 - Full search names for jobs can be seen by hovering the cursor over the search job
 - Search jobs will display the Search Name, Status, Progress %, Number of results, creation time, and searched by
 
-Figure 1.1 Audit Search Tool & Search Job Summaries
-
 ## Audit search results overview
 
 - Search results are displayed in a line-item once a search job is selected
@@ -109,9 +109,6 @@ Figure 1.1 Audit Search Tool & Search Job Summaries
 - Select an activity to see a fly-out window with more details about the activity
 - The filtering feature for search job results can help to parse through results.
 - Export is fully functional and exports all search job items to a .csv file. Export supports results up to 50KB.
-Figure 2.1 – Search Job Results
-Figure 2.2 – Search Job Filtering Panel
-Figure 2.3 – Export Button
 
 ## Frequently asked questions
 
