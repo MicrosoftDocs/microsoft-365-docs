@@ -5,13 +5,13 @@ author: JoanneHendrickson
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
-description: "Exchange 2013 will reach its end of support in April 2023. Use this planning roadmap to prepare to upgrade to Exchange Online or a newer version of Exchange Server on-premises."
+description: "Exchange 2013 will reach its end of support in April 2023. Use this planning roadmap to prepare to upgrade to Exchange Online or to a later version of Exchange Server on-premises."
 ---
 
 # Exchange 2013 end of support roadmap
@@ -22,59 +22,57 @@ Exchange Server 2013 will reach its end of support on **April 11, 2023**. If you
 
 ## What does *end of support* mean?
 
-Most Microsoft products have a support lifecycle during which they get new features, bug fixes, security fixes, and so on. This lifecycle typically lasts for 10 years from the product's initial release. The end of this lifecycle is known as the product's end of support. Because Exchange 2013 reaches its end of support on April 11, 2023, Microsoft will longer provide:
+Most Microsoft products have a support lifecycle during which they get new features, bug fixes, security fixes, and so on. This lifecycle typically lasts for 10 years from the product's initial release. The end of this lifecycle is known as the product's end of support. Because Exchange 2013 reaches its end of support on April 11, 2023, Microsoft will no longer provide the following after this date:
 
 - Technical support for problems that may occur.
 - Bug fixes for issues that may impact the stability and usability of the server.
 - Security fixes for vulnerabilities that may make the server vulnerable to security breaches.
 - Time zone updates.
 
-Your installation of Exchange 2013 will continue to run after this date. But because of the changes listed above, we strongly recommend that you migrate from Exchange 2019 as soon as possible.
+Your installation of Exchange 2013 will continue to run after this date. But because of the changes listed above, we strongly recommend that you migrate from Exchange 2013 to Exchange 2019 as soon as possible.
 
 
 ## What are my options?
 
 It's a great time to explore your options and prepare a migration plan. You can:
 
-- Migrate fully to Microsoft 365. Migrate mailboxes using cutover, minimal hybrid, or full hybrid migration. Then remove on-premises Exchange servers and Active Directory.
-- Migrate your Exchange 2013 servers to Exchange 2019 on your on-premises servers.
+- Migrate to Microsoft 365. Migrate mailboxes, public folders, and other data using cutover, minimal hybrid, or full hybrid migration. Then, remove on-premises Exchange servers and Active Directory.
+- Upgrade Exchange 2013. Move to Exchange 2019 for your on-premises servers.
 
 > [!IMPORTANT]
-> If your organization chooses to migrate mailboxes to Microsoft 365 but plans to keep DirSync or Azure AD Connect in place to continue managing user accounts from on-premises Active Directory, you need to keep at least one Microsoft Exchange server on-premises. If you remove all Exchange servers, you won't be able to make changes to Exchange recipients in Exchange Online because the source of authority remains in your on-premises Active Directory. Changes need to be made there. In this scenario, you have the following options:
+> If your organization chooses to migrate mailboxes to Microsoft 365 but plans to keep using Azure AD Connect to manage user accounts in Active Directory, you need to keep at least one Microsoft Exchange server on-premises. If you remove all Exchange servers, you won't be able to make changes to Exchange recipients in Exchange Online because the source of authority is your on-premises Active Directory. In this scenario, you have the following options:
 >
->- *Recommended:* If you migrate your mailboxes to Microsoft 365 and upgrade your servers by April 11, 2023, use Exchange 2013 to connect to Microsoft 365 and migrate mailboxes. Next, migrate Exchange 2013 to Exchange 2019, and decommission any remaining Exchange 2013 servers.
->- If you don't complete the mailbox migration and on-premises server upgrade by April 11, 2023, upgrade your on-premises Exchange 2013 servers to Exchange 2019 first. Then use Exchange 2019 to connect to Microsoft 365 and migrate mailboxes.
+>- *Recommended:* Migrate your mailboxes to Microsoft 365 and upgrade your environment to Exchange 2019 by April 11, 2023. Use Exchange 2013 to connect to Microsoft 365 and migrate mailboxes. Next, upgrade from Exchange 2013 to Exchange 2019, and decommission servers running Exchange 2013.
+>- If you can't complete a migration to Exchange Online and upgrade your on-premises servers by April 11, 2023, upgrade from Exchange 2013 to Exchange 2019 first and then use  Exchange 2019 to migrate mailboxes to Microsoft 365.
 
-> [!NOTE]
-> It's a little more complicated, but you can also migrate mailboxes to Microsoft 365 while migrating your on-premises Exchange 2013 servers to Exchange 2016.
-
-Here are the three paths you can take to avoid the end of support for Exchange Server 2010.
+Here are the three paths you can take to avoid the end of support for Exchange Server 2013.
 
 ## Migrate to Microsoft 365
 
-Migrating your email to Microsoft 365 is the best and simplest option to help you retire your Exchange 2013 deployment. With a migration to Microsoft 365, you can make a single hop from old technology to current features, including:
+Migrating to Microsoft 365 is the best and simplest option to help you retire your Exchange 2013 deployment. With a migration to Microsoft 365, you can make a single hop from old technology to current features, including:
 
-- Compliance capabilities such as Retention Policies, In-Place and Litigation Hold, in-place eDiscovery, and more.
-- Microsoft Teams.
-- Power BI.
-- Focused Inbox.
-- MyAnalytics.
+- Larger mailboxes with greater data resilience;
+- Security capabilities such as anti-spam and antimalware protection, 
+- Compliance capabilities such as Data Loss Prevention, Retention Policies, In-Place and Litigation Hold, in-place eDiscovery, and more;
+- Integration with SharePoint Online, OneDrive, Teams, Power BI, and other Microsoft 365 services;
+- Focused Inbox; and
+- Advanced analytics and Viva Insights.
 
 Microsoft 365 also gets new features and experiences first, so your organization can start using them right away. Also, you won't have to worry about:
 
-- Purchasing and maintaining hardware.
-- Paying to heat and cool your servers.
-- Keeping up to date on security, product, and time-zone fixes.
-- Maintaining storage and software to support compliance requirements.
-- Upgrading to a new version of Exchange. You're always on the latest version of Exchange in Microsoft 365.
+- Purchasing and maintaining hardware;
+- Paying to run and cool your servers;
+- Keeping servers up to date on security, product, and time-zone fixes;
+- Maintaining server storage and software to support compliance requirements; or
+- Upgrading to a new version of Exchange; you're always on the latest version with Microsoft 365.
 
 ### How should I migrate to Microsoft 365?
 
 Depending on your organization, you have a few options to get to Microsoft 365. First, you need to consider a few things, such as:
 
-- The number of seats or mailboxes you need to move.
-- How long you want the migration to last.
-- Whether you need a seamless integration between your on-premises installation and Microsoft 365 during the migration.
+- The number of mailboxes you need to move;
+- How long you want the migration to last; and
+- Whether you need a seamless integration between your on-premises environment and Microsoft 365 during the migration.
 
 This table shows your migration options and the most important factors that determine which method to use.
 
@@ -84,9 +82,9 @@ This table shows your migration options and the most important factors that dete
 
 |Migration option|Organization size|Duration|
 |---|---|---|
-|Cutover migration|Fewer than 150 seats|A week or less|
-|Minimal hybrid migration|Fewer than 150 seats|A few weeks or less|
-|Full hybrid migration|More than 150 seats|A few weeks or more|
+|Cutover migration|Fewer than 150 mailboxes|A week or less|
+|Minimal hybrid migration|Fewer than 150 mailboxes|A few weeks or less|
+|Full hybrid migration|More than 150 mailboxes|A few weeks or more|
 |
 
 The following sections give you an overview of these methods. For more information, see [Decide on a migration path](https://support.office.com/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27).
@@ -151,7 +149,7 @@ Things to consider about full-hybrid migration:
 - Users don't need to set up a new Outlook profile on most of their devices, although some older Android phones might need a new profile. Users won't need to redownload their email.
 
 > [!IMPORTANT]
-> If your organization chooses to migrate mailboxes to Microsoft 365 but plans to keep DirSync or Azure AD Connect in place to continue managing user accounts from on-premises Active Directory, you need to keep at least one Exchange server on-premises. If all Exchange servers are removed, you won't be able to make changes to Exchange recipients in Exchange Online. This is because the source of authority remains in your on-premises Active Directory and changes need to be made there.
+> If your organization chooses to migrate mailboxes to Microsoft 365 but plans to keep Azure AD Connect to manage user accounts in Active Directory, you need to keep at least one Exchange server on-premises. If all Exchange servers are removed, you won't be able to make changes to Exchange recipients. This is because the source of authority is  Active Directory and changes need to be made there.
 
 If a full hybrid migration sounds right for you, see the following helpful resources:
 
@@ -163,33 +161,30 @@ If a full hybrid migration sounds right for you, see the following helpful resou
 
 ## Upgrade to a newer version of Exchange Server on-premises
 
-We strongly believe that you get the best value and user experience by migrating fully to Microsoft 365. But we understand that some organizations need to keep some Exchange Servers on-premises. This might be because of regulatory requirements, to guarantee data isn't stored in a foreign datacenter, because you have unique settings or requirements that can't be met in the cloud, or because you need Exchange to manage cloud mailboxes because you still use Active Directory on-premises. In any case, if you keep Exchange on-premises, you should ensure your Exchange 2013 environment is upgraded to at least Exchange 2016 or Exchange 2019.
+We strongly believe that you get the best value and user experience by migrating fully to Microsoft 365. But we understand that some organizations need to keep some Exchange servers on-premises. This might be because of regulatory requirements, to guarantee data isn't stored in a foreign datacenter, because you have unique settings or requirements that can't be met in the cloud, or because you need Exchange to manage cloud mailboxes because you still use Active Directory on-premises. In any case, if you keep Exchange on-premises, you should ensure your Exchange 2013 environment is upgraded.
 
-For the best experience, we recommend that you upgrade your remaining on-premises environment to Exchange 2019. You don't need to install Exchange Server 2016 if you want to go straight from Exchange Server 2013 to Exchange Server 2019.
-
-Exchange 2019 includes all the features of previous releases of Exchange. It most closely matches the experience available with Microsoft 365, although some features are available only in Microsoft 365. Check out just a few of the things you've been missing:
+For the best experience, we recommend that you upgrade your remaining on-premises environment to Exchange 2019. You don't need to install Exchange Server 2016 because you can go directly from Exchange Server 2013 to Exchange Server 2019. Exchange 2019 most closely matches the experience available with Microsoft 365, although some features are available only in Microsoft 365.
 
 
 
 ****
+Below are important things to know about upgrading Exchange 2013:
 
 |Item|More information|
 |---|---|
-|End of support dates|Like Exchange 2013, each version of Exchange has its own end-of-support date: <p> Exchange 2013 - April 2023 <p> Exchange 2016 - October 2025 <p> The earlier the end-of-support date, the sooner you'll need to perform another migration. April 2023 is a lot closer than you think!|
-|Migration path to Exchange 2016 or 2019|The migration path from Exchange 2013 to a newer version is the same whether you choose Exchange 2016 or Exchange 2019: <p> Install Exchange 2016 or 2019 into your existing Exchange 2013 organization. <p> Move services and other infrastructure to Exchange 2016 or 2019. <p> Move mailboxes and public folders to Exchange 2013 or 2016 Decommission remaining Exchange 2013 servers.|
-|Version coexistence|When migrating to Exchange 2016 or Exchange 2019, you can install either version into an existing Exchange 2013 organization. This enables you to install one or more Exchange 2016 or Exchange 2019 servers and do your migration.|
-|Server hardware|Server hardware requirements have changed from Exchange 2013. Make sure your hardware is compatible. Find out more about hardware requirements for each version here: <p> - [Exchange 2016 system requirements](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true) </br> - [Exchange 2019 system requirements](/exchange/plan-and-deploy/system-requirements?view=exchserver-2019) <p>With the significant improvements in Exchange performance and the increased computing power and storage capacity in newer servers, you'll likely need fewer servers to support the same number of mailboxes.|
-|Operating system version|The minimum supported operating system versions for each version are: <p>- Exchange 2016 - Windows Server 2012 </br>- Exchange 2019 - Windows Server 2019 <p> You can find more information about operating system support at [Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix).|
-|Active Directory forest functional level|The minimum supported Active Directory forest functional levels for each version are: <p>- Exchange 2016 - Windows Server 2008 R2 SP1 </br>- Exchange 2019 - Windows Server 2012 R2 Active Directory servers <p> You can find more information about forest functional level support at [Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix).|
-|Office client versions|The minimum supported Office client versions for each version are: <p> Exchange 2016 - Office 2010 (with the latest updates) <p> Find more information about Office client support at [Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix).|
+|End of support dates|Like Exchange 2013, each version of Exchange has its own end-of-support date: <p> Exchange 2013 - April 2023 <p> April 2023 is a lot closer than you think!|
+|Migration path to Exchange 2019|The migration path from Exchange 2013 to a newer version is simple: <p> Install Exchange 2019 into your existing Exchange 2013 organization. <p> Move services and data from Exchange 2013 to Exchange 2019 and decommission Exchange 2013 servers.|
+|Server hardware|Server hardware requirements have changed from Exchange 2013. Make sure your hardware is compatible. Find out more about hardware requirements here: <p> [Exchange 2019 system requirements](/exchange/plan-and-deploy/system-requirements?view=exchserver-2019&preserve-view=true) <p>With the significant improvements in Exchange performance and the increased computing power and storage capacity in newer servers, you'll likely need fewer servers to support the same number of mailboxes.|
+|Operating system version|The minimum supported operating system version for Exchange 2019 is Windows Server 2019. Windows Server 2022 support is coming soon <p> You can find more information about operating system support at [Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix).|
+|Active Directory forest functional level|The minimum supported Active Directory forest functional level is Windows Server 2012 R2. You can find more information about forest functional level support at [Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix).|
+|Office client versions|The minimum supported Office client version is also documented in the [Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix?view=exchserver-2019#clients&preserve-view=true).|
 |
 
 Use the following resources to help with your migration:
 
 - [Exchange Deployment Assistant](/exchange/exchange-deployment-assistant)
-- Active Directory schema changes for Exchange [2016](/exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2016&preserve-view=true), [2013](/Exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help)
-- System requirements for Exchange [2016](/exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true), [2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help)
-
+- Active Directory [schema changes for Exchange 2019](/exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2019&preserve-view=true)
+- System [requirements for Exchange 2019](/exchange/plan-and-deploy/system-requirements?view=exchserver-2019&preserve-view=true)
 
 
 ## What if I need help?

@@ -2,10 +2,10 @@
 title: "Microsoft 365 integration with on-premises environments"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -13,6 +13,7 @@ ms.custom:
  - Adm_O365
  - seo-marvel-apr2020
 ms.collection:
+- scotvorg
 - Ent_O365
 search.appverid:
 - MET150
@@ -41,7 +42,7 @@ You can also use the Azure Active Directory (Azure AD) advisors for customized s
    
 ## Before you begin
 
-Before you integrate Microsoft 365 and an on-premises environment, you also need to do [network planning and performance tuning](network-planning-and-performance.md). You will also want to understand the available [identity models](about-microsoft-365-identity.md). 
+Before you integrate Microsoft 365 and an on-premises environment, you also need to do [network planning and performance tuning](network-planning-and-performance.md). You will also want to understand the available [identity models](deploy-identity-solution-identity-model.md). 
 
 See [manage Microsoft 365 accounts](manage-microsoft-365-accounts.md) for a list of tools you can use to manage Microsoft 365 user accounts. 
   

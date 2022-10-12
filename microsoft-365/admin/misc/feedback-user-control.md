@@ -7,12 +7,12 @@ author: Kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
-
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -27,9 +27,6 @@ User feedback is a critical signal for Microsoft to understand user experiences 
 In this topic, you'll find information on what types of feedback exist, how we collect it, what we collect and how we handle the data.
 
 As an admin, you can manage the feedback signal for your organization. We’re introducing a new set of policy settings to help you manage user feedback collection within the Microsoft 365 applications for your organization. These policy settings will help you target Azure Active Directory groups and configure the feedback collection experience for your organization. User feedback goes directly to our engineers and helps us shape the future of Microsoft products and services for all our users. You can learn more about these policy settings, which applications they apply to, and best practices at [Manage Microsoft feedback for your organization](../manage/manage-feedback-ms-org.md).
-
-<!--> [!IMPORTANT]
-> We recommend that you confirm feedback is submitted from a source you trust. Make sure user names or user IDs match actual users in your organization.-->
 
 ## Feedback types
 
@@ -87,10 +84,11 @@ When a user submits feedback, app information is usually collected along with ap
 - **App Language**   Language of Microsoft product that was captured on submission.
 - **Attachments**   Were any attachments (i.e screenshots, files) collected as part of the feedback? (Yes/No).
 - **TenantId**   If feedback is submitted from an Azure Active Directory account, which TenantId was associated.
+- **App module** Information about app modules that may have caused a recent crash, where applicable.
 
 ## How can I see my user's feedback?
 
-To meet Microsoft’s legal obligations to customers, we're working on a new experience in the Microsoft 365 admin center that lets administrators view, delete, and export the feedback data for their organizations. As part of their data controller responsibility, customers own all user feedback data and this functionality will assist administrators to provide direct transparency into their users’ experiences with Microsoft 365 products and enable user feedback data to be provided as part of any Data Subject Request. Global admins and compliance data administrators will have the ability to view, export and delete user feedback. All other administrators, as well as readers, will be able to view and export feedback data but can't perform compliance related tasks or see information about who posted the feedback (such as user name, email, or device name). To access your organization's feedback data, sign in to the Microsoft 365 admin center and customize navigation to show the health node. Access this experience by selecting **Product Feedback** under the Health node.
+To meet Microsoft’s legal obligations to customers, we've added a new experience in the Microsoft 365 admin center that lets administrators view, delete, and export the feedback data for their organizations. As part of their data controller responsibility, customers own all user feedback data and this functionality will assist administrators to provide direct transparency into their users’ experiences with Microsoft 365 products and enable user feedback data to be provided as part of any Data Subject Request. Global admins and compliance data administrators now have the ability to view, export and delete user feedback. All other administrators, as well as readers, are able to view and export feedback data but can't perform compliance related tasks or see information about who posted the feedback (such as user name, email, or device name). To access your organization's feedback data, sign in to the Microsoft 365 admin center and customize navigation to show the health node. Access this experience by selecting **Product Feedback** under the Health node.
 
 ## Data handling and privacy
 

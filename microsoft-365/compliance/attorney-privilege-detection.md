@@ -1,26 +1,30 @@
 ---
-title: "Set up attorney-client privilege detection in Advanced eDiscovery"
+title: "Set up attorney-client privilege detection in eDiscovery (Premium)"
+description: "Use the attorney-client privilege detection model to use the machine learning-based detection of privileged content when reviewing content in a Microsoft Purview eDiscovery (Premium) case."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: "Use the attorney-client privilege detection model to use the machine learning-based detection of privileged content when reviewing content in an Advanced eDiscovery case."
 ---
 
-# Set up attorney-client privilege detection in Advanced eDiscovery
+# Set up attorney-client privilege detection in eDiscovery (Premium)
 
-A major and costly aspect of the review phase of any eDiscovery process is reviewing documents for privileged content. Advanced eDiscovery provides machine learning-based detection of privileged content to make this process more efficient. This feature is called *attorney-client privilege detection*.
+A major and costly aspect of the review phase of any eDiscovery process is reviewing documents for privileged content. Microsoft Purview eDiscovery (Premium) provides machine learning-based detection of privileged content to make this process more efficient. This feature is called *attorney-client privilege detection*.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How does it work?
 
@@ -50,11 +54,11 @@ To enable the attorney-client privilege detection model, your organization has t
 
 ### Step 1: Turn on attorney-client privilege detection
 
-A person who is an eDiscovery Administrator in your organization (a member of the eDiscovery Administrator subgroup in the eDiscovery Manager role group) must make the model available in your Advanced eDiscovery cases.
+A person who is an eDiscovery Administrator in your organization (a member of the eDiscovery Administrator subgroup in the eDiscovery Manager role group) must make the model available in your eDiscovery (Premium) cases.
 
-1. In the Microsoft 365 compliance center, go to [Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **Advanced eDiscovery settings**.
+1. In the Microsoft Purview compliance portal, go to [eDiscovery (Premium)](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **eDiscovery (Premium) settings**.
 
-   ![Select Advanced eDiscovery settings](..\media\HistoricalVersions1.png)
+   ![Select eDiscovery (Premium) settings](..\media\HistoricalVersions1.png)
 
 2. On the **Settings** page, select the **Analytics** tab, and then switch the **Attorney-client privilege detection** toggle to on.
 
@@ -70,7 +74,7 @@ To upload an attorney list for use by the attorney-client privilege detection mo
 
 1. Create a .csv file (without a header row) and add the email address for each appropriate person on a separate line. Save this file to your local computer.
 
-2. On the Advanced eDiscovery **Settings** page, select the **Analytics** tab.
+2. On the eDiscovery (Premium) **Settings** page, select the **Analytics** tab.
 
    The **Attorney-client privilege** page is displayed, and the **Attorney-client privilege detection** toggle is turned on.
 
@@ -86,7 +90,7 @@ Follow the steps in this section to use attorney-client privilege detection for 
 
 ### Step 1: Create a smart tag group with attorney-client privilege detection model
 
-One of the primary ways to see the results of attorney-client privilege detection in your review process is by using a smart tag group. A smart tag group indicates the results of the attorney-client privilege detection and shows the results in-line next to the tags in a smart tag group. This lets you quickly identify potentially privileged documents during document review. Additionally, you can also use the tags in the smart tag group to tag documents as privileged or non-privileged. For more information about smart tags, see [Set up smart tags in Advanced eDiscovery](smart-tags.md).
+One of the primary ways to see the results of attorney-client privilege detection in your review process is by using a smart tag group. A smart tag group indicates the results of the attorney-client privilege detection and shows the results in-line next to the tags in a smart tag group. This lets you quickly identify potentially privileged documents during document review. Additionally, you can also use the tags in the smart tag group to tag documents as privileged or non-privileged. For more information about smart tags, see [Set up smart tags in eDiscovery (Premium)](smart-tags.md).
 
 1. In the review set that contains the documents that you analyzed in Step 1, select **Manage review set** and then select **Manage tags**.
 
@@ -104,7 +108,7 @@ One of the primary ways to see the results of attorney-client privilege detectio
 
 ### Step 2: Analyze a review set
 
-When you analyze the documents in a review set, the attorney-client privilege detection model will also run and the corresponding properties (described in [How does it work?](#how-does-it-work)) will be added to every document in the review set. For more information about analyzing data in review set, see [Analyze data in a review set in Advanced eDiscovery](analyzing-data-in-review-set.md).
+When you analyze the documents in a review set, the attorney-client privilege detection model will also run and the corresponding properties (described in [How does it work?](#how-does-it-work)) will be added to every document in the review set. For more information about analyzing data in review set, see [Analyze data in a review set in eDiscovery (Premium)](analyzing-data-in-review-set.md).
 
 ### Step 3: Use the smart tag group for review of privileged content
 

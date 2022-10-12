@@ -4,14 +4,18 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 02/01/2021
+manager: scotv
+ms.date: 08/08/2022
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
-ms.collection: M365-subscription-management
-ms.custom: it-pro
+ms.collection: 
+- scotvorg
+- M365-subscription-management
+ms.custom: 
+- it-pro
+- intro-overview
 description: Provides an introduction to the components, plans, and deployment paths for Microsoft 365 for enterprise.
 ---
 
@@ -30,7 +34,6 @@ Microsoft 365 for enterprise consists of:
 |Local apps and cloud-based apps and productivity services|Includes both Microsoft 365 Apps for enterprise, the latest Office apps for your PC and Mac (such as Word, Excel, PowerPoint, Outlook, and others), and a full suite of online services for email, file storage and collaboration, meetings, and more.|
 |Windows 10 Enterprise|Meets the needs of both large and midsize organizations. It's the most productive and secure version of Windows for users. For IT professionals, it also provides comprehensive deployment, device, and app management.|
 |Device management and advanced security services|Includes Microsoft Intune, which is a cloud-based enterprise mobility management service that helps enable your workforce to be productive while protecting your organization data.|
-|||
 
 ## Plans
 
@@ -41,7 +44,6 @@ Microsoft 365 for enterprise is available in three plans.
 |E3|Access the Microsoft 365 core products and features to securely enhance workplace productivity and drive innovation.|
 |E5|Access the Microsoft 365 latest products and features. These include Defender for Office 365, security tools, and collaboration tools. This plan includes all E3 capabilities, plus advanced security, voice, and data analysis tools.|
 |F3|Connect with your first-line workers through purpose-built tools and resources that they can use to help them do their best work.|
-|||
 
 If you have Microsoft 365 E3, you can also get these add-ons:
 
@@ -115,7 +117,7 @@ For an example of how a fictional but representative multinational organization 
 
 ## Additional Microsoft 365 products
 
-- [Microsoft 365 Business Premium](../admin/index.yml)
+- [Microsoft 365 Business Premium](/microsoft-365/business/)
 
   Bring together the best-in-class productivity and collaboration capabilities with device management and security solutions to safeguard business data for small and midsize businesses.
 
@@ -149,7 +151,7 @@ For more information and configuration examples for a small and medium business 
 
 ![Microsoft 365 Fundamentals training.](../media/microsoft-365-overview/m365-fundamentals.svg)
 
-To learn more about Microsoft 365 and work toward a Microsoft 365 certification, you can start with [Microsoft 365 Certified: Fundamentals](/learn/paths/m365-fundamentals/).
+To learn more about Microsoft 365 and work toward a Microsoft 365 certification, you can start with [Microsoft 365 Certified: Fundamentals](/training/paths/m365-fundamentals/).
 
 ## See also
 

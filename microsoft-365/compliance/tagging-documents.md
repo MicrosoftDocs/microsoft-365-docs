@@ -1,25 +1,26 @@
 ---
 title: "Tag documents in a review set"
+description: "Tagging documents in a review set helps remove unnecessary content and identify relevant content in an eDiscovery (Premium) case."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: "Tagging documents in a review set helps remove unnecessary content and identify relevant content in an Advanced eDiscovery case."
 ms.custom: seo-marvel-mar2020
 ---
 
-# Tag documents in a review set in Advanced eDiscovery
+# Tag documents in a review set in eDiscovery (Premium)
 
 Organizing content in a review set is important to complete various workflows in the eDiscovery process. This includes:
 
@@ -32,11 +33,13 @@ Organizing content in a review set is important to complete various workflows in
 When experts, attorneys, or other users review content in a review set, their opinions related to the content can be captured by using tags. For example, if the intent is to cull unnecessary content, a user can tag documents with a tag such as "non-responsive". After content has been reviewed and tagged, a review set search can be created to exclude any content tagged as "non-responsive". This process eliminates the non-responsive content from the next steps in the eDiscovery workflow. The tagging panel in a review set can be customized for every case so that the tags support the intended review workflow for the case.
 
 > [!NOTE]
-> The scope of tags is an Advanced eDiscovery case. That means a case can only have one set of tags that reviewers can use to tag review set documents. You can't set up a different set of tags for use in different review sets in the same case.
+> The scope of tags is an eDiscovery (Premium) case. That means a case can only have one set of tags that reviewers can use to tag review set documents. You can't set up a different set of tags for use in different review sets in the same case.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Tag types
 
-Advanced eDiscovery provides two types of tags:
+eDiscovery (Premium) provides two types of tags:
 
 - **Single choice tags**: Restricts reviewers to selecting a single tag within a group. These types of tags can be useful to ensure that reviewers don't select conflicting tags such as "responsive" and "non-responsive". Single choice tags appear as radio buttons.
 
@@ -54,7 +57,7 @@ You can further organize tags by nesting them within a section. For example, if 
 
 ## Creating and applying tags
 
-Tagging items in review sets is a two-step process. The first step is to create the tags that are then applied to review set items. After you create tags, you and other reviewers can apply them to items in a review set. As previously explained, an Advanced eDiscovery case can only have one set of tags that reviewers can use to tag review set items.
+Tagging items in review sets is a two-step process. The first step is to create the tags that are then applied to review set items. After you create tags, you and other reviewers can apply them to items in a review set. As previously explained, an eDiscovery (Premium) case can only have one set of tags that reviewers can use to tag review set items.
 
 ### Create tags
 
@@ -98,7 +101,7 @@ With the tag structure in place, reviewers can apply tags to items in a review s
 
       - **Include associated family items**: This option applies the same tag to the associated family items of items that are tagged.  *Family items* are items that share the same **FamilyId** metadata property value. For example, a document that's attached to an email message shares the same **FamilyId** as the email message. So if this option is selected for this example, the email message and the document are tagged, even though the document might not be included in the list of review set items.
 
-      - **Include associated conversation items**: This option applies the same tag to all items that are in the same Teams or Yammer conversation as the items that are tagged. *Conversation items* are items that share the same **ConversationId** metadata property value. All messages, posts, and corresponding transcript file of a conversation share the same **ConversationId**. If this option is selected, then all items in the same conversation (and transcript file) are tagged, even though some of those conversation items might not be included in the list of review set items. For more information about conversation items, see the "Grouping" section in [Advanced eDiscovery workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#grouping).
+      - **Include associated conversation items**: This option applies the same tag to all items that are in the same Teams or Yammer conversation as the items that are tagged. *Conversation items* are items that share the same **ConversationId** metadata property value. All messages, posts, and corresponding transcript file of a conversation share the same **ConversationId**. If this option is selected, then all items in the same conversation (and transcript file) are tagged, even though some of those conversation items might not be included in the list of review set items. For more information about conversation items, see the "Grouping" section in [eDiscovery (Premium) workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#grouping).
 
       - **None**: This option doesn't apply tags to family items or conversation items. It only applies tags to the items that are selected or to all items in the review set list.
 

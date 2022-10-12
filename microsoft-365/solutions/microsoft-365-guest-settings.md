@@ -5,8 +5,9 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection: 
+- highpri
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection
@@ -16,6 +17,7 @@ f1.keywords: NOCSH
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 ms.localizationpriority: high
 recommendations: false
 description: "Learn about the guest sharing settings available in Microsoft 365 that can affect sharing with people outside your organization."
@@ -44,10 +46,41 @@ Azure Active Directory is the directory service used by Microsoft 365. The Azure
 |:-----|:-----|:-----|
 |Guest user access|Guest users have limited access to properties and memberships of directory objects|Determines the [permissions that guests have in Azure Active Directory](/azure/active-directory/fundamentals/users-default-permissions).|
 |Guest invite settings|Anyone in the organization can invite guest users including guests and non-admins|Determines whether guests, members, and admins can invite guests to the organization. <p> This setting affects  Microsoft 365 sharing experiences such as Teams and SharePoint.|
-|Enable guest self-service sign up via user flows|No|Determines if you can create user flows that allow someone to sign up for an app that you created and create a new guest account.|
+|Enable guest self-service sign-up via user flows|No|Determines if you can create user flows that allow someone to sign up for an app that you created and create a new guest account.|
 |Collaboration restrictions|Allow invitations to be sent to any domain|This setting allows you to specify a list of allowed or blocked domains for sharing. When allowed domains are specified, then sharing invitations can only be sent to those domains. When denied domains are specified, then sharing invitations cannot be sent to those domains. <p> This setting affects  Microsoft 365 sharing experiences such as Teams and SharePoint. You can allow or block domains at a more granular level by using domain filtering in SharePoint or Teams.|
 
 These settings affect how users are invited to the directory. They do not affect sharing with guests who are already in the directory.
+
+### Cross-tenant access settings
+
+**Navigation:** [Azure Active Directory admin center](https://aad.portal.azure.com) > Azure Active Directory > External Identities > Cross-tenant access settings > Default settings tab
+
+The default settings apply to all external Azure AD organizations except those with organization-specific settings. Settings for a specific organization can be configured on the **Organizational settings** tab. There are separate settings for guests (B2B collaboration) and [Azure AD B2B direct connect](/azure/active-directory/external-identities/b2b-direct-connect-overview) users.
+
+![Screenshot of Azure Active Directory Cross-tenant access settings page.](../media/azure-ad-cross-tenant-default-settings.png)
+
+**Inbound access settings**
+
+Inbound access settings control whether users from external Azure AD organizations can access resources in your organization.
+
+| Setting | Default | Description |
+|:-----|:-----|:-----|
+|B2B collaboration - external users and groups|All Allowed|Determines what people in other Azure AD organizations can be granted access to resources in your organization as guests.|
+|B2B collaboration - applications|All allowed|Determines what apps in your organization guests can be granted access to.|
+|B2B direct connect - external users and groups|All blocked|Determines if people in other Azure AD organizations can be granted access to resources in your organization through B2B direct connect.|
+|B2B direct connect - applications|All blocked|Determines what apps in your organization B2B direct connect users can be granted access to.|
+|Trust settings|Disabled|Determines if your conditional access policies will accept claims from other Azure AD organizations when people from those organizations access your resources.|
+
+**Outbound access settings**
+
+Outbound access settings control whether your users can access resources in an external organization.
+
+| Setting | Default | Description |
+|:-----|:-----|:-----|
+|B2B collaboration - external users and groups|All Allowed|Determines which users in your organization can be granted access to resources in other Azure AD organizations as guests.|
+|B2B collaboration - applications|All allowed|Determines what apps in other Azure AD organizations your users can be granted access to as guests.|
+|B2B direct connect - external users and groups|All blocked|Determines which users in your organization can be granted access to resources in other Azure AD organizations through B2B direct connect.|
+|B2B direct connect - applications|All blocked|Determines what apps in other Azure AD organizations your users can be granted access to through B2B direct connect.|
 
 ## Microsoft 365
 
@@ -63,7 +96,7 @@ The Microsoft 365 admin center has organization-level settings for sharing and f
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
-|Let users add new guests to the organization|On|When set to **Yes**, Azure AD members can invite guests via Azure AD; when set to **No**, they cannot. When set to **Yes**, Microsoft 365 Group members can invite guests with owner approval; when set to **No**, Microsoft 365 Group members can invite guests with owner approval but owners must be global administrators to approve. <p> Note that **Members can invite** refers to members in Azure AD (as opposed to guests) and not to site or group members in  Microsoft 365. <p> This is identical to the **Members can invite** setting in Azure Active Directory Organizational relationships settings.|
+|Let users add new guests to the organization|On|When set to **Yes**, Azure AD members can invite guests via Azure AD; when set to **No**, they cannot. When set to **Yes**, Microsoft 365 group members can invite guests with owner approval; when set to **No**, Microsoft 365 group members can invite guests with owner approval but owners must be global administrators to approve. <p> Note that **Members can invite** refers to members in Azure AD (as opposed to guests) and not to site or group members in  Microsoft 365. <p> This is identical to the **Members can invite** setting in Azure Active Directory Organizational relationships settings.|
 
 ### Microsoft 365 Groups
 
@@ -74,13 +107,13 @@ The Microsoft 365 admin center has organization-level settings for sharing and f
 | Setting | Default | Description |
 |:-----|:-----|:-----|
 |Let group members outside your organization access group content|On|When set to **On**, guests can access groups content; when set to **Off**, they can't. This setting should be **On** for any scenario where guests are interacting with Microsoft 365 Groups or Teams.|
-|Let group owners add people outside your organization to groups|On|When **On**, Owners of Microsoft 365 Groups or Teams can invite new guests to the group. When **Off**, owners can only invite guests who are already in the directory.|
+|Let group owners add people outside your organization to groups|On|When **On**, owners of Microsoft 365 Groups or Teams can invite new guests to the group. When **Off**, they can't. This setting should be **On** for any scenario where guests are to be added to groups.|
 
 These settings are at the organization level. See [Create settings for a specific group](/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group) for information about how to change these settings at the group level by using PowerShell.
 
 ## Teams
 
-The Teams master guest access switch, **Allow guest access in Teams**, must be **On** for the other guest settings to be available.
+The Teams guest access switch, **Allow guest access in Teams**, must be **On** for the other guest settings to be available.
 
 **Admin role:** Teams service administrator
 
@@ -92,7 +125,7 @@ The Teams master guest access switch, **Allow guest access in Teams**, must be *
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
-|Allow guest access in Teams|Off|Turns guest access on or off for Teams overall. This setting can take 24 hours to take effect once changed.|
+|Allow guest access in Teams|On|Turns guest access on or off for Teams overall. This setting can take 24 hours to take effect once changed.|
 
 ### Guest calling
 
@@ -128,7 +161,7 @@ The Teams master guest access switch, **Allow guest access in Teams**, must be *
 |Delete sent messages|On|When **On**, guests can delete messages they previously sent; when **Off**, they can't.|
 |Chat|On|When **On**, guests can use chat in Teams; when **Off**, they can't.|
 |Use Giphys in conversations|On|When **On**, guests can use Giphys in conversations; when **Off**, they can't.|
-|Giphy content rating|Moderate|When set to **Allow all content**, guests will can insert all Giphys in chats, regardless of the content rating. When set to **Moderate** guests can insert Giphys in chats, but will be moderately restricted from adult content. When set to **Strict** guests can insert Giphys in chats, but will be restricted from inserting adult content.|
+|Giphy content rating|Moderate|When set to **Allow all content**, guests can insert all Giphys in chats, regardless of the content rating. When set to **Moderate** guests can insert Giphys in chats, but will be moderately restricted from adult content. When set to **Strict** guests can insert Giphys in chats, but will be restricted from inserting adult content.|
 |Use Memes in conversations|On|When **On**, guests can use memes in conversations; when **Off**, they can't.|
 |User stickers in conversations|On|When **On**, guests can use stickers in conversations; when **Off**, they can't.|
 |Allow immersive reader for viewing messages|On|When **On**, guests can view messages in Immersive Reader; when **Off**, they can't.|
@@ -143,9 +176,9 @@ These settings affect all of the sites in the organization. They do not affect M
 
 Because OneDrive is a hierarchy of sites within SharePoint, the organization-level sharing settings directly affect OneDrive just as they do other SharePoint sites.
 
-**Navigation:** SharePoint admin center > Sharing
+**Navigation:** SharePoint admin center > **Policies** > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>
 
-![Screenshot of SharePoint organization-level sharing settings.](../media/external-sharing.png)
+![Screenshot of SharePoint organization-level sharing settings.](../media/sharepoint-organization-external-sharing-controls.png)
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
@@ -154,7 +187,7 @@ Because OneDrive is a hierarchy of sites within SharePoint, the organization-lev
 
 ### SharePoint and OneDrive advanced sharing settings
 
-**Navigation:** SharePoint admin center > Sharing
+**Navigation:** SharePoint admin center > **Policies** > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>
 
 ![Screenshot of SharePoint organization-level additional sharing settings.](../media/external-sharing.png)
 
@@ -171,7 +204,7 @@ Because OneDrive is a hierarchy of sites within SharePoint, the organization-lev
 
 When files and folders are shared in SharePoint and OneDrive, sharing recipients are sent a link with permissions to the file or folder rather than being granted direct access to the file or folder themselves. Several types of links are available, and you can choose the default link type presented to users when they share a file or folder. You can also set permissions and expiration options for *Anyone* links.
 
-**Navigation:** SharePoint admin center > Sharing
+**Navigation:** SharePoint admin center > **Policies** > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>
 
 ![Screenshot of SharePoint organization-level files and folders sharing settings.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
@@ -194,7 +227,10 @@ You can set guest sharing permissions for each site in SharePoint. This setting 
 
 If the site has a sensitivity label applied, that label may control the external sharing settings. For more information, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md).
 
-**Navigation:** SharePoint admin center > Active sites > select the site > Policies tab > Edit External sharing
+> [!NOTE]
+> Sharing settings for channel sites can only be changed by using the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) PowerShell cmdlet.
+
+**Navigation:** SharePoint admin center > <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> > select the site > **Policies** tab > **Edit External sharing**
 
 ![Screenshot of SharePoint site external sharing settings.](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -206,7 +242,7 @@ If the site has a sensitivity label applied, that label may control the external
 
 You can set defaults for link type and permissions, and expiration settings for *Anyone* links for each site. When set at the site level, these settings override the organization-level settings. Note that if *Anyone* links are disabled at the organization level, *Anyone* will not be an available link type at the site level.
 
-**Navigation:** SharePoint admin center > Active sites > select the site > Policies tab > Edit External sharing
+**Navigation:** SharePoint admin center > <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> > select the site > **Policies** tab > **Edit External sharing**
 
 ![Screenshot of SharePoint site-level link sharing settings.](../media/sharepoint-site-link-sharing-settings.png)
 

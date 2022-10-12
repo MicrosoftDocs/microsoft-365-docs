@@ -2,7 +2,7 @@
 title: Fetch alerts from MSSP customer tenant
 description: Learn how to fetch alerts from a customer tenant
 keywords: managed security service provider, mssp, configure, integration
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Fetch alerts from MSSP customer tenant
@@ -173,7 +176,7 @@ You can now download the relevant configuration file for your SIEM and connect t
 
 ## Fetch alerts from MSSP customer's tenant using APIs
 
-For information on how to fetch alerts using REST API, see [Pull alerts using REST API](pull-alerts-using-rest-api.md).
+For information on how to fetch alerts using REST API, see [Fetch alerts from MSSP customer tenant](fetch-alerts-mssp.md).
 
 ## See also
 

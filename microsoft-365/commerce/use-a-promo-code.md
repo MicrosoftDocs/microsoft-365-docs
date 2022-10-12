@@ -2,27 +2,28 @@
 title: "Use your promo code to reduce price"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
+- commerce_purchase
 - AdminSurgePortfolio
 - okr_SMB
-- commerce_purchase
-search.appverid: MET150 S
+search.appverid: MET150
 description: "Learn how to apply a promotional code to your Microsoft 365 subscription to reduce price, and how to troubleshoot promo code in case of an error."
 ms.date: 03/17/2021
 ---
 
-# Use your promo code to reduce price
+# Use your Microsoft 365 for business promo code to reduce the price
 
 When you purchase a subscription, you can use a promotional code to reduce the price. Read this article to learn how to apply a promo code to your subscription, to learn about the [Promo code terms](#promo-code-terms), and to [Troubleshoot promo codes](#troubleshooting-promo-codes).
   

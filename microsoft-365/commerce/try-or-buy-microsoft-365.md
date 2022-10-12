@@ -2,21 +2,24 @@
 title: "Try or buy a Microsoft 365 for business subscription"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_purchase
+- VSBFY23
+- AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
 - adminvideo
@@ -26,6 +29,8 @@ ms.date: 08/07/2020
 ---
 
 # Try or buy a Microsoft 365 for business subscription
+
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 Microsoft 365 for business is a subscription service that lets you run your organization in the cloud while Microsoft takes care of the IT for you. Microsoft manages devices, protects against real-world threats, and provides your organization with the latest in business software. You can sign up for a free trial subscription for Microsoft 365 Business Standard, Microsoft 365 Business Premium, or Microsoft 365 Apps for business and try it out for 30 days.
 
@@ -46,16 +51,16 @@ Microsoft 365 for business is a subscription service that lets you run your orga
 
 ## Before you begin
 
-You don't need an existing Microsoft account to sign up for a free trial. For all other procedures in this article, you must be a Global or Billing admin for your organization. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
+You don't need an existing Microsoft account to sign up for a free trial. For all other procedures in this article, you must be a Global or Billing admin for your organization. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 
 ## Try a free trial subscription
 
 Are you a new customer, and you don't already have an account with Microsoft? Use these steps to create an account and sign up for a free trial subscription of Microsoft 365 Business Standard, Microsoft 365 Business Premium, or Microsoft 365 Apps for business.
 
-1. Go to the <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365 Products site</a>.
-2. Select the plan that you want to sign up for, such as **Microsoft 365 Business Standard**, scroll down the page, and select **Try free for 1 month**.
+1. Go to the <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365 Products site</a>.
+2. Select the plan that you want to sign up for, such as **Microsoft 365 Business Standard**, scroll down the page, and select **Try free for 1 month**.
 3. On the next page, follow the steps to set up your account.
-4. The sign up process may take several minutes to complete. After it\'s complete, you're ready to start the setup wizard for your subscription. For more information about setting up your subscription, see [Next steps](#next-steps).
+4. The sign-up process may take several minutes to complete. After it's complete, you're ready to start the setup wizard for your subscription. For more information about setting up your subscription, see [Next steps](#next-steps).
 
 ## Buy a subscription from your free trial
 
@@ -63,13 +68,13 @@ At the end of your free trial period, your trial subscription automatically conv
 
 If you want to buy your subscription before your trial is over, use these steps:
 
-1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. On the **Your products** page, find the subscription that you want to buy.
-3. In the **Licenses** section, select **Purchase subscription**.
-4. Choose either a monthly or annual commitment for your subscription, then select **Checkout**.
-5. On the next page, verify the subscription, and select **Checkout**.
-6. On the next page, verify the **Sold to** address, the **Billed to** information, and **Items in this order**. If you need to make any changes, select **Change** next to the applicable section.
-7. When you\'re finished, select **Accept agreement & place order**.
+1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+2. On the **Your products** page, find the subscription that you want to buy.
+3. In the **Licenses** section, select **Purchase subscription**.
+4. Choose a billing frequency for your subscription, then select **Checkout**.
+5. On the next page, verify the subscription, and select **Checkout**.
+6. On the next page, verify the **Sold to** address, the **Billed to** information, and **Items in this order**. If you need to make any changes, select **Change** next to the applicable section.
+7. When you\'re finished, select **Accept agreement & place order**.
 
 ## Extend your trial
 
@@ -84,7 +89,7 @@ When you're ready to buy, see [Buy your trial version](#buy-a-subscription-from-
 
 ## Cancel your free trial subscription
 
-If you decide to cancel your trial subscription before the free trial period ends, go to the Microsoft 365 admin center and [turn off Recurring billing](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on). The trial will automatically expire when your month ends, and your credit card won't be charged.
+If you decide to cancel your trial subscription before the free trial period ends, go to the Microsoft 365 admin center and [turn off Recurring billing](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on). The trial will automatically expire when your month ends, and your credit card won't be charged.
 
 ## Try a different subscription
 
@@ -92,19 +97,21 @@ If you already have a Microsoft 365 for business subscription, you can use the M
 
 When you add a subscription through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>], the new subscription is associated with the same organization (domain namespace) as your existing subscription. This association makes it easier to move users in your organization between subscriptions, or to assign them a license for the additional products they need.
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-2. On the **Purchase services** page, you see the plans that are available to your organization. Choose the Microsoft 365 plan that you want to try.
-3. On the next page, select **Get free trial**. The trial gives you 25 user licenses for a one-month term.
-4. Choose to receive a text or a call, enter your phone number, then choose **Text me** or **Call me**.
-5. Enter the verification code, then select **Start your free trial**.
-6. On the **Check out** page, select **Try now**.
-7. On the **order receipt** page, select **Continue**.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
+2. On the **Purchase services** page, you see the plans that are available to your organization. Choose the Microsoft 365 plan that you want to try.
+3. On the next page, select **Get free trial**. The trial gives you 25 user licenses for a one-month term.
+4. Choose to receive a text or a call, enter your phone number, then choose **Text me** or **Call me**.
+5. Enter the verification code, then select **Start your free trial**.
+6. On the **Check out** page, select **Try now**.
+7. On the **order receipt** page, select **Continue**.
 
 ## Buy a different subscription
 
 If you already have a Microsoft 365 for business subscription, you can go through the Microsoft 365 admin center to buy a different subscription for your organization.
 
 ### Watch: Move users to a different subscription
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198013).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 
@@ -115,11 +122,11 @@ As your users change roles, they may need features that aren't available in thei
 
 When you buy another subscription through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, the new subscription is associated with the same organization (domain name space) as your existing subscription. This makes it easier to move users in your organization between subscriptions or assign them a license for the additional subscription they need.
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-2. On the **Purchase services** page, select the plan that you want to buy, select **Details**, then select **Buy**.
-3. Enter the number of licenses that you need and choose whether to pay each month or for the whole year. Choose whether you want to automatically assign licenses to everyone who does not currently have a license. Then select **Check out now**.
-4. Review the pricing information and select **Next**.
-5. Provide your payment information, and then select **Place order** \> **Go to Admin Home**.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
+2. On the **Purchase services** page, select the plan that you want to buy, select **Details**, then select **Buy**.
+3. Enter the number of licenses that you need and choose whether to pay each month or for the whole year. Choose whether you want to automatically assign licenses to everyone who does not currently have a license. Then select **Check out now**.
+4. Review the pricing information and select **Next**.
+5. Provide your payment information, and then select **Place order** \> **Go to Admin Home**.
 
 > [!NOTE]
 > You must move users from your free trial subscription to the new subscription before your 90-day grace period ends after your trial subscription expires. By doing this, you keep your data, accounts, and configuration. Otherwise, that information is deleted.

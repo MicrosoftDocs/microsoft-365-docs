@@ -1,15 +1,16 @@
 ---
 title: "Step 3. Protect identities"
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - ransomware
@@ -37,7 +38,7 @@ Next, implement the [Common identity and device access policies](/microsoft-365/
 
 For user sign-ins, these policies include:
 
-- Requiring MFA for priority accounts (immediately) and eventually all user accounts.
+- Requiring multi-factor authentication (MFA) for [priority accounts](/microsoft-365/admin/setup/priority-accounts) (immediately) and eventually all user accounts.
 - Requiring high-risk sign-ins to use MFA.
 - Requiring high-risk users with high-risk sign-ins to change their passwords.
 
@@ -45,7 +46,7 @@ For user sign-ins, these policies include:
 
 Use these best practices:
 
-- Implement the principle of [least-privilege](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) and use password protection as described in [Increase sign-in security](#increase-sign-in-security) for those user accounts that still use passwords for their sign-ins. 
+- Implement the principle of [least privilege](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) and use password protection as described in [Increase sign-in security](#increase-sign-in-security) for those user accounts that still use passwords for their sign-ins. 
 - Avoid the use of domain-wide, admin-level service accounts. 
 - Restrict local administrative privileges to limit installation of Remote Access Trojans (RATs) and other unwanted applications.
 - Use Azure AD Conditional Access to explicitly validate the trust of users and workstations before allowing access to administrative portals. See [this example](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management) for the Azure portal.
@@ -64,7 +65,7 @@ You must make the users in your organization aware of:
 
 ## Resulting configuration
 
-Here is the ransomware protection for your tenant for steps 1-3.
+Here's the ransomware protection for your tenant for steps 1-3.
 
 ![Ransomware protection for your Microsoft 365 tenant after Step 3](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step3.png)
 

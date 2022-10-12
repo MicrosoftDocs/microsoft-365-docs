@@ -2,24 +2,25 @@
 title: "Problems with your Microsoft 365 for business product key?"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 search.appverid: MET150
 ROBOTS: NOINDEX
 description: "Learn how to resolve the issues that you face when you enter your product key for Microsoft 365 for business. "
 ms.custom: 
+- commerce_purchase
 - okr_smb
 - AdminSurgePortfolio
-- commerce_purchase
 ms.date: 05/01/2021
 ---
 
@@ -29,13 +30,13 @@ If there's an error message when you try to redeem a product key for **Microsoft
   
  **Need help immediately?** [Call Microsoft Support](../admin/get-help-support.md).
   
- **For help with a Microsoft 365 Family or Microsoft 365 Personal product key**, see [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).
+ **For help with a Microsoft 365 Family or Microsoft 365 Personal product key**, see [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).
   
 ## Product key error help with Microsoft 365 for business
 
 | Error message when you enter your product key... | Try this... |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| "Sorry, this is an invalid product key. Try entering it again. If your product key is for Microsoft 365 Personal or Microsoft 365 Family, redeem it at office.com/setup." <br/><br/>If you're using Office 365 Solo in Japan: "Sorry, this is an invalid product key. Try entering it again. If your product key is for Office 365 Solo, redeem it at office.com/setup." | If you're setting up [Microsoft 365 Family or Personal](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx), you need to redeem your product key at [https://www.office.com/setup](https://www.office.com/setup). Otherwise, for business customers, carefully check the numbers and characters you're entering. |
+| "Sorry, this is an invalid product key. Try entering it again. If your product key is for Microsoft 365 Personal or Microsoft 365 Family, redeem it at office.com/setup." <br/><br/>If you're using Office 365 Solo in Japan: "Sorry, this is an invalid product key. Try entering it again. If your product key is for Office 365 Solo, redeem it at office.com/setup." | If you're setting up [Microsoft 365 Family or Personal](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e), you need to redeem your product key at [https://www.office.com/setup](https://www.office.com/setup). Otherwise, for business customers, carefully check the numbers and characters you're entering. |
 | "The product key you entered isn't valid. Try entering it again." Or "This product key isn't valid. Please enter a different product key." | Carefully check the numbers and characters you are entering. Mistakes can be made with 0 and o, 5 and S, l and I, and so on. If the issue persists, please contact the reseller where you bought your product key. |
 | "You have already entered this product key. Enter a different key." | Check the product keys you already entered to see if the key has already been added. If you are renewing a subscription using a product key, you must use a new and unused product key. <br/><br/>Need to buy a new key? Visit the [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=529160) or a third-party reseller, or—if you're working with a partner—contact your partner. <br/><br/>If the issue persists, please [contact support](../admin/get-help-support.md). If you're working with a partner, contact your partner for product key support. |
 | "The product key you entered has expired. Enter a different key." | You must use a new and unused product key to renew a current subscription or activate a new subscription.<br/><br/>Need to buy a new key? Visit the [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=529160) or a third-party reseller, or—if you're working with a partner—contact your partner. |

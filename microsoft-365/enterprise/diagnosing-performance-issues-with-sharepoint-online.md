@@ -2,13 +2,14 @@
 title: "Diagnosing performance issues with SharePoint Online"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/19/2021
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Ent_O365
 - SPO_Content
 f1.keywords:
@@ -43,6 +44,9 @@ This topic describes how to use each of these methods to diagnose performance is
 > If you're an administrator, and you're having trouble with performance in SharePoint, select **Run Tests** below, which will populate the Site and Page Performance diagnostic in the Microsoft 365 Admin Center. These tests will check your configuration and quickly recommend next steps to help improve SharePoint performance for your tenant.
 >> [!div class="nextstepaction"]
 >> [Run Tests: Check SharePoint Performance](https://aka.ms/PillarSiteandPagePerf)
+
+> [!NOTE] 
+> This feature is not available for Microsoft 365 Government, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
   
 ## Using the F12 tool bar to diagnose performance in SharePoint Online
 <a name="F12ToolInfo"> </a>
@@ -57,11 +61,11 @@ To bring up the developer tools press **F12** and then click the Wi-Fi icon:
   
 ![Screenshot of F12 developer tools wifi icon.](../media/27acacbb-5688-459a-aa2f-5c8c5f17b76e.png)
   
-On the **Network** tab, press the green play button to load a page. The tool returns all of the files that the browser requests in order to get the page you asked for. The following screen shot shows one such list.
+On the **Network** tab, press the green play button to load a page. The tool returns all of the files that the browser requests in order to get the page you asked for. The following screenshot shows one such list.
   
 ![Screenshot of the list of files returned with a page request.](../media/247a9422-76da-4b0c-bed3-ce77b05e4560.png)
   
-You can also see the download times of the files on the right side as shown in this screen shot.
+You can also see the download times of the files on the right side as shown in this screenshot.
   
 ![Diagram showing the time it takes to load the requested pages from SharePoint.](../media/d71ad1fa-9018-4fae-82eb-c1838e7db0ff.png)
   
@@ -75,7 +79,7 @@ The best way to determine your site's performance weak points is to set up a com
 ## Viewing SharePoint response header information
 <a name="F12ToolInfo"> </a>
 
-In SharePoint Online, you can access the information that is sent back to the browser in the response header for each file. The most useful value for diagnosing performance issues is **SPRequestDuration**, which displays the amount of time that the request took on the server to be processed. This can help determine if the request is very heavy and resource intensive. This is the best insight you have into how much work the server is doing to serve the page.
+In SharePoint Online, you can access the information that is sent back to the browser in the response header for each file. The most useful value for diagnosing performance issues is **SPRequestDuration**, which displays the amount of time that the request took on the server to be processed. This can help determine if the request is heavy and resource intensive. This is the best insight you have into how much work the server is doing to serve the page.
 
 ### To view SharePoint response header information
   
@@ -94,8 +98,8 @@ In SharePoint Online, you can access the information that is sent back to the br
 ## What's causing performance issues in SharePoint Online?
 <a name="F12ToolInfo"> </a>
 
-The article [Navigation options for SharePoint Online](navigation-options-for-sharepoint-online.md) shows an example of using the SPRequestDuration value to determine that the complicated structural navigation was causing the page to take a long time to process on the server. By taking a value for a baseline site (without customization), it is possible to determine if any given file is taking a long time to load. The example used in [Navigation options for SharePoint Online](navigation-options-for-sharepoint-online.md) is the main .aspx file. That file contains most of the ASP.NET code that runs for your page load. Depending on the site template you use, this could be start.aspx, home.aspx, default.aspx, or another name if you customize the home page. If this number is considerably higher than your baseline site, then it's a good indication that there is something complex going on in your page that is causing performance issues.
+The article [Navigation options for SharePoint Online](navigation-options-for-sharepoint-online.md) shows an example of using the SPRequestDuration value to determine that the complicated structural navigation was causing the page to take a long time to process on the server. By taking a value for a baseline site (without customization), it's possible to determine if any given file is taking a long time to load. The example used in [Navigation options for SharePoint Online](navigation-options-for-sharepoint-online.md) is the main .aspx file. That file contains most of the ASP.NET code that runs for your page load. Depending on the site template you use, this could be start.aspx, home.aspx, default.aspx, or another name if you customize the home page. If this number is considerably higher than your baseline site, then it's a good indication that there's something complex going on in your page that is causing performance issues.
   
-Once you have identified that an issue specific to your site, the recommended way to figure out what is causing poor performance is to eliminate all of the possible causes, like page customizations, and then add them back to the site one by one. Once you have removed enough customizations that the page is performing well, you can then add back specific customizations one by one.
+Once you've identified that an issue specific to your site, the recommended way to figure out what is causing poor performance is to eliminate all of the possible causes, like page customizations, and then add them back to the site one by one. Once you have removed enough customizations that the page is performing well, you can then add back specific customizations one by one.
   
-For example, if you have a very complex navigation try changing the navigation to not show sub-sites then check the developer tools to see if this makes a difference. Or if you have a large amount of content roll-ups try removing them from your page and see if this improves things. If you eliminate all of the possible causes and add them back in one at a time, you can easily identify which features are the biggest problem and then work towards a solution.
+For example, if you have a complex navigation try changing the navigation to not show sub-sites then check the developer tools to see if this makes a difference. Or if you have a large amount of content roll-ups try removing them from your page and see if this improves things. If you eliminate all of the possible causes and add them back in one at a time, you can easily identify which features are the biggest problem and then work towards a solution.

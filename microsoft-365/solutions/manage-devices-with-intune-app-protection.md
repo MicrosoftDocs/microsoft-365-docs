@@ -3,19 +3,25 @@ title: "Step 1. Implement App Protection Policies"
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- Intune App Protection policies
+- APP
+- mobile application management
+- MAM
+- set up mobile ap protection
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+description: Configure mobile app protection with App Protection policies (APP) to prevent specified corporate data from being copied and pasted to other apps. 
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: 
 keywords: 
-description: 
 ---
 
 # Step 1. Implement App Protection Policies
@@ -52,4 +58,4 @@ To configure these policies, use the recommended guidance and settings prescribe
 
 ## Next steps
 
-Go to [Step 2. Enroll devices into management with Intune](manage-devices-with-intune-enroll.md). 
+Go to [Step 2. Enroll devices to Intune](manage-devices-with-intune-enroll.md). 

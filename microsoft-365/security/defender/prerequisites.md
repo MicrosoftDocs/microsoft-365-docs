@@ -3,7 +3,8 @@ title: Microsoft 365 Defender prerequisites
 description: Learn about the licensing, hardware and software requirements, and other configuration settings for Microsoft 365 Defender
 keywords: requirements, prerequisites, hardware, software, browser, Microsoft 365 Defender, M365, license, E5, A5, EMS, purchase
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,12 +15,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier1
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 
 # Microsoft 365 Defender prerequisites
@@ -37,6 +39,7 @@ Any of these licenses gives you access to Microsoft 365 Defender features via th
 
 - Microsoft 365 E5 or A5
 - Microsoft 365 E3 with the Microsoft 365 E5 Security add-on
+- Microsoft 365 E3 with the Enterprise Mobility + Security E5 add-on
 - Microsoft 365 A3 with the Microsoft 365 A5 Security add-on
 - Windows 10 Enterprise E5 or A5
 - Windows 11 Enterprise E5 or A5
@@ -69,13 +72,11 @@ For information related to US Government customers, see [Microsoft 365 Defender 
 
 Currently, the Microsoft Defender for Office 365 integration into the unified Microsoft 365 Defender features are not available to customers in the following Office 365 datacenter locations:
 
-- Brazil 
-- Germany 
 - Norway 
-- Singapore 
-- South Africa
-- Switzerland 
+- South Africa 
 - United Arab Emirates 
+- Sweden 
+- Singapore 
 
 
 ## Related topics
