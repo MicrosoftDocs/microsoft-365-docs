@@ -22,7 +22,7 @@ In this pilot program, we want to proactively provide metadata for new and updat
 
 For example, if for a feature the metadata has the following values, feature adoption decision should be quick.  
 
-- Customer data is stored? **Yes/No**
+- Customer data is stored? **No**
 
 - Change to customer data storage? **No**
 
@@ -47,9 +47,9 @@ For features where the metadata is different from the list above, the Message ce
 
 ## Join the pilot program
 
-You can join by completing this questionnaire.
+You can join by completing this [questionnaire](https://go.microsoft.com/fwlink/p/?linkid=2211581).
 
-When a Message center post is delivered, you'll receive an additional Message Center post that says, “Additional Conformance Information for MC######”. This post contains additional conformance metadata. You can provide feedback directly on the additional post or you can email: MCSHDPMS@Microsoft.com. You can also send feedback on Teams channel.
+When a Message center post is delivered, you'll receive an additional Message Center post that says, “Additional Conformance Information for MC######”. This post contains additional conformance metadata. You can provide feedback directly on the additional post or you can email: MCSHDPMS@Microsoft.com. You can also send feedback on the [Teams channel](https://go.microsoft.com/fwlink/p/?linkid=2211676).
 
 > [!NOTE]
 > We’ll start with features from Microsoft Teams, OneDrive for Business and SharePoint Online.
