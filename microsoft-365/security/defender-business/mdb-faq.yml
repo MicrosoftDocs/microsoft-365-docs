@@ -26,11 +26,11 @@ summary: |
 sections:
   - name: General
     questions:
-      - question: Can I extend my preview trial of Defender for Business?
+      - question: Can I extend my preview trial of Defender for Business or Microsoft Defender for Business servers?
         answer: |
-          As Defender for Business is now generally available, the preview program has ended and can't be extended. 
+          As Defender for Business and Microsoft Defender for Busines servers are both now generally available, the preview program for each has ended and can't be extended.   
           
-          See [Get Defender for Business](get-defender-business.md).
+          See [Get Defender for Business](get-defender-business.md) or [Get Microsoft Defender for Business servers](get-defender-business-servers.md).
 
       - question: How do I try or buy Defender for Business?
         answer: |
@@ -71,9 +71,9 @@ sections:
 
       - question: What is the difference between Microsoft Defender for Business servers and Microsoft Defender for Servers Plan 1 and Plan 2?
         answer: |
-          Defender for Business servers is an add-on to Defender for Business and Microsoft 365 Business Premium only. It provides a single endpoint security experience for both clients and servers within the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for businesses with up to 300 employees. With a simplified configuration process and device onboarding options, Defender for Business enables customers who don't necessarily have a security background to set up, configure, and use Defender for Servers or Defender for Cloud to protect company devices. 
+          Defender for Business servers is an add-on to Defender for Business and Microsoft 365 Business Premium only. It provides a single endpoint security experience for both clients and servers within the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and is designed for businesses with up to 300 employees. With a simplified configuration process and device onboarding options, Defender for Business enables customers who don't necessarily have a security background to protect client and server devices. 
           
-          Defender for Servers Plan 1/Plan 2 is an enterprise-focused offering that can be purchased with any other Microsoft cloud plan. Defender for Servers Plan 1 and Plan 2 are part of [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction). Advanced threat hunting with six months of data retention and the Microsoft Threat Experts service are available with Defender for Servers Plan 1 or Plan 2.
+          Defender for Servers Plan 1/Plan 2 is an enterprise-focused offering that can be purchased with any other Microsoft cloud plan (including Defender for Business and Microsoft 365 Business Premium). Defender for Servers Plan 1 and Plan 2 are part of [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) and feature advanced threat hunting with six months of data retention, and the Microsoft Threat Experts service.
 
           Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection Platform (CWPP) for all of your Azure, on-premises, and multicloud (Amazon AWS and Google GCP) resources. The admin experience for Defender for Cloud resides within the Azure portal ([https://portal.azure.com](https://portal.azure.com)).
 
