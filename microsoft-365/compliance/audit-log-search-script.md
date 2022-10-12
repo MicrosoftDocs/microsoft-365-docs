@@ -116,8 +116,8 @@ After you've connected to Exchange Online PowerShell, the next step is to create
                $results | export-csv -Path $outputFile -Append -NoTypeInformation
    
                $currentTotal = $results[0].ResultCount
-               $totalCount += $results.Count
-               $currentCount += $results.Count
+               $totalCount += ($results | Measure-Object).Count
+               $currentCount += ($results | Measure-Object).Count
                Write-LogFile "INFO: Retrieved $($currentCount) audit records out of the total $($currentTotal)"
    
                if ($currentTotal -eq $results[$results.Count - 1].ResultIndex)
