@@ -1,5 +1,5 @@
 ---
-title: Create a modern template in Microsoft SharePoint Syntex
+title: Create a modern template in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,10 +12,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create a modern template in Microsoft SharePoint Syntex.
+description: Learn how to create a modern template in Microsoft Syntex.
 ---
 
-# Create a modern template in Microsoft SharePoint Syntex
+# Create a modern template in Microsoft Syntex
 
 ## Upload a document to create a modern template
 
