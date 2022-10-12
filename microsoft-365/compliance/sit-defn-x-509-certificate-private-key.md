@@ -1,5 +1,5 @@
 ---
-title: "X.509 certificate private key entity definition (preview)"
+title: "X.509 certificate private key entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
