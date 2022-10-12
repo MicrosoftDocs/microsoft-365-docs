@@ -57,6 +57,12 @@ As devices are replaced or retired, or your business needs change, you can offbo
 
 7. Run the script on each device that you want to offboard.
 
+## Next steps
+
+- [Use your Microsoft Defender Vulnerability Management dashboard in Microsoft Defender for Business](mdb-view-tvm-dashboard.md)
+- [View or edit policies in Microsoft Defender for Business](mdb-view-edit-create-policies.md)
+- [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
+
 ## [**Mac**](#tab/mac)
 
 ## Offboard a Mac
@@ -64,6 +70,13 @@ As devices are replaced or retired, or your business needs change, you can offbo
 1. Go to **Finder** > **Applications**. 
 
 2. Right click on **Microsoft Defender for Business**, and then choose **Move to Trash**. <br/>--- or --- <br/> Use the following command: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
+
+## Next steps
+
+- [Use your Microsoft Defender Vulnerability Management dashboard in Microsoft Defender for Business](mdb-view-tvm-dashboard.md)
+- [View or edit policies in Microsoft Defender for Business](mdb-view-edit-create-policies.md)
+- [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
+
 
 ## [**Servers**](#tab/Servers)
 
@@ -108,6 +121,12 @@ Choose the operating system for your server:
 
 > [!TIP]
 > For more information, see [Uninstall](../defender-endpoint/linux-resources.md) in the Microsoft Defender for Endpoint on Linux guidance.
+
+## Next steps
+
+- [Use your Microsoft Defender Vulnerability Management dashboard in Microsoft Defender for Business](mdb-view-tvm-dashboard.md)
+- [View or edit policies in Microsoft Defender for Business](mdb-view-edit-create-policies.md)
+- [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
 
 ## [**Mobile devices**](#tab/mobiles)
 
