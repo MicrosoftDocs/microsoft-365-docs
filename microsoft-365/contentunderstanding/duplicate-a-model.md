@@ -1,21 +1,21 @@
 ---
-title: Duplicate a model in Microsoft SharePoint Syntex
+title: Duplicate a model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how and why to duplicate a document understanding model in Microsoft SharePoint Syntex.
+description: Learn how and why to duplicate a document understanding model in Microsoft Syntex.
 ---
 
-# Duplicate a model in Microsoft SharePoint Syntex
+# Duplicate a model in Microsoft Syntex
 
 Duplicating a document understanding model can save you time and effort if you need to create a new model, and know that an existing model is very similar to what you need.
 
@@ -61,4 +61,4 @@ Follow these steps to duplicate a document understanding model.
 
 [Apply a model](apply-a-model.md) 
 
-[SharePoint Syntex Accessibility Mode](accessibility-mode.md)
+[Syntex accessibility mode](accessibility-mode.md)

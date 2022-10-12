@@ -1,5 +1,5 @@
 ---
-title: Prebuilt models overview in Microsoft SharePoint Syntex
+title: Prebuilt models overview in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -7,18 +7,18 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.customer: intro-overview
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about prebuilt models in Microsoft SharePoint Syntex.
+description: Learn about prebuilt models in Microsoft Syntex.
 ---
 
-# Prebuilt models overview in Microsoft SharePoint Syntex
+# Prebuilt models overview in Microsoft Syntex
 
-In addition to [document understanding models](document-understanding-overview.md) and [form processing models](form-processing-overview.md), SharePoint Syntex provides prebuilt models to automate the extraction of information.
+In addition to [document understanding models](document-understanding-overview.md) and [form processing models](form-processing-overview.md), Microsoft Syntex provides prebuilt models to automate the extraction of information.
 
 Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization. 
 
@@ -58,15 +58,12 @@ Note the following differences about Microsoft Office text-based files and OCR-s
 
 - If two or more prebuilt models are applied to the same library, the file is classified using the model that has the highest average confidence score. The extracted entities will be from the applied model only.
 
-- If a prebuilt model is applied to a library that has a document understanding model, the file is classified using the document understanding model and any trained extractors for that model. If there are any empty columns that match the prebuilt model, the columns  will be populated using those extracted values.
-
 - If a prebuilt model is applied to a library that has a custom form processing model, the file is classified using the prebuilt model and any detected extractors for that model. If there are any empty columns that match the form processing model, the columns will be populated using those extracted values.
 
 - Applying more than one custom form processing model to a library is not supported.
 
-
 ## See also
 
-[Use a prebuilt model to extract info from invoices or receipts](prebuilt-overview.md)
+[Use a prebuilt model to extract information from invoices or receipts](prebuilt-models.md)
  
 

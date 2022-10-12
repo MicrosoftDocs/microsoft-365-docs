@@ -2,27 +2,30 @@
 title: "About the Microsoft Purview solutions trial"
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
-ms.collection: m365-security-compliance
+ms.collection: 
+- purview-compliance
+- highpri
+- tier1
 ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn details about the Microsoft Purview solutions trial and how to sign up."
+description: "Learn how to join the Microsoft Purview solutions free trial. Try all premium capabilities of Purview solutions at the E5 level, such as Audit and Information Protection, to help your organization manage data security and compliance needs. Get details about eligibility and how to sign up today."
 ---
 
 # About the Microsoft Purview solutions trial
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Microsoft Purview solutions help protect your organization from internal threats arising from inappropriate permissions on files and emails, and helps your organization to comply with regulatory and internal business requirements.
 
 The Microsoft Purview solutions trial is the easiest way to try all the capabilities of Microsoft Purview solutions, and setting it up only takes a couple of minutes. After the trial setup is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Terms and conditions
 
@@ -42,8 +45,9 @@ Users must hold one of the following admin roles in order to sign up for or end 
 - Billing Administrator
 - Compliance Administrator
 - Global Administrator
+- Compliance Data Administrator
 
-Get details on roles at [About admin roles](../admin/add-users/about-admin-roles.md).
+Get more details about [roles for starting Microsoft 365 trials](compliance-easy-trials-roles.md).
 
 ## How to sign up for the trial
 
@@ -61,7 +65,7 @@ Your trial will be effective immediately for 90 days. It can take up to two hour
 
 You can start using Purview solutions as soon as you see them in the Microsoft Purview compliance portal. Nothing is created automatically and users won't be affected. When you navigate to each solution, you may be guided to make extra setup configurations to start using features.
 
-Use our [trial playbook](compliance-easy-trials-compliance-playbook.md) to help you get started.
+Use our [trial user guide](compliance-easy-trials-compliance-playbook.md) to help you get started.
 
 #### Finding support
 
@@ -104,7 +108,7 @@ Wondering what you can experience in your free trial? The Purview solutions tria
    When the trial ends:
 
   - Your existing policies will stay turned on unless you turn them off.
-  - If you edit DLP policies that include either the Teams or Devices locations after the trial ends, those locations will be removed from the policy.
+  - You'll no longer be able to edit or add Teams or Devices locations in existing or new policies.
 
 - **eDiscovery**
 

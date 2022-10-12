@@ -11,7 +11,8 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
@@ -22,8 +23,6 @@ description: "Learn about records to help you implement a records management sol
 # Use record versioning to update records stored in SharePoint or OneDrive
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Because regulatory records block editing, record versioning is not available for regulatory records.
@@ -58,6 +57,8 @@ While the document is unlocked, any user with standard edit permissions can edit
 :::image type="content" alt-text="Record status property on document tagged as a record." source="../media/recordversioning8.png" lightbox="../media/recordversioning8.png":::
 
 For more information about what user actions are allowed when a record is locked or unlocked, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Locking and unlocking a record
 

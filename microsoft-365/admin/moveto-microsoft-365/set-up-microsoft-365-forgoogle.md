@@ -7,9 +7,10 @@ author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
@@ -25,11 +26,15 @@ description: "Learn how to Set up Microsoft 365 so it is ready for migration fro
 
 # Set up Microsoft 365 for Google Workspace migration
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
+## Watch: Set up Microsoft 365 for Google Workspace migration
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198101).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4JD2Y?autoplay=false]
 
 To migrate email, calendar, and contacts from Google Workspace, you need to set up Microsoft 365 Business Premium with a temporary domain until your business domain is ready to be used with your subscription.
-
-## Try it! 
 
 1. Sign in to [office.com](https://office.com),  and choose **Admin**.
 1. In the Microsoft 365 admin center, choose **Go to guided setup**. 

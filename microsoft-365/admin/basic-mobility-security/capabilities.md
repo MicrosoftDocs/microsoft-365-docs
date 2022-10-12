@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -92,7 +93,7 @@ The following sections list the policy settings you can use to help secure and m
 
 |Setting name|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|Require a password|Yes|Yes|Yes|
+|Require a password|Yes|No|No|
 |Prevent simple password|Yes|No|No|
 |Require an alphanumeric password|Yes|No|No|
 |Minimum password length|Yes|Yes|Yes|
@@ -128,11 +129,13 @@ The following option can block users from accessing their Microsoft 365 email if
 |Setting name|iOS|Android|Samsung Knox|
 |---|---|---|---|
 |Require encrypted backup|Yes|No|No|
-|Block cloud backup|Yes|No|No|
-|Block document synchronization|Yes|No|No|
+|Block cloud backup<sup>1</sup>|Yes|No|No|
+|Block document synchronization<sup>1</sup>|Yes|No|No|
 |Block photo synchronization|Yes|No|No|
 |Allow Google backup|N/A|No|Yes|
 |Allow Google account auto sync|N/A|No|Yes|
+
+<sup>1</sup>To function, these settings require supervised iOS devices. 
 
 ## System settings
 
@@ -145,20 +148,22 @@ The following option can block users from accessing their Microsoft 365 email if
 
 |Setting name|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|Block video conferences on device|Yes|No|No|
-|Block access to application store|Yes|No|Yes|
-|Require password when accessing application store|No|Yes|Yes|
+|Block video conferences on device<sup>1</sup>|Yes|No|No|
+|Block access to application store<sup>1</sup>|Yes|No|Yes|
+|Require password when accessing application store|Yes|No|No|
+
+<sup>1</sup>To function, these settings require supervised iOS devices. 
 
 ## Device capabilities settings
 
 |Setting name|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|Block connection with removable storage|Yes|Yes|No|
-|Block Bluetooth connection|Yes|Yes|No|
+|Block connection with removable storage|No|No|Yes|
+|Block Bluetooth connection|No|No|Yes|
 
 ## Additional settings
 
-You can set the following additional policy settings by using Security & Compliance Center PowerShell cmdlets. For more information, see [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell).
+You can set the following additional policy settings by using Security & Compliance PowerShell cmdlets. For more information, see [Security & Compliance PowerShell](/powershell/exchange/scc-powershell).
 
 |Setting name|iOS|Android|
 |---|---|---|

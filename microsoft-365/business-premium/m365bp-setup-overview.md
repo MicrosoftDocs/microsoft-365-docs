@@ -2,41 +2,38 @@
 title: "Welcome to Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
-manager: scotv
-ms.date: 04/20/2022
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: conceptual
-ms.service: o365-administration
+ms.topic: overview
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: "Setup overview for campaigns or other businesses. How to set up cybersecurity and prevent cyberattacks."
+description: "Start the setup process of Microsoft 365 Business Premium or Microsoft 365 for Campaigns."
 ---
 
-# Fortify your organization with Microsoft 365 Business Premium
+# Fortify your environment with Microsoft 365 Business Premium
 
-For this first mission, set up your initial security defenses right away. Sign in and initiate the [setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure overall security and licenses for your teams. 
+Now that you have Microsoft 365 Business Premium, your first critical mission is to complete your initial setup process right away. Let's get you going!
 
-Your objectives are to:
+:::image type="content" source="media/mission1.png" alt-text="Sign in and set up.":::
 
-- Sign up and sign in to Microsoft 365 Business Premium
-- Set up your Microsoft 365 Business Premium environment
+Your objective is to:
 
-Once you've achieved these objectives, you can move on to the [next mission](m365bp-security-overview.md).
+- [Set up your Microsoft 365 Business Premium environment](m365bp-setup.md); or
+- [Set up Microsoft 365 Business for Campaigns](m365-campaigns-setup.md) if this is your subscription.
 
-:::image type="content" source="media/m365bp-signin-setup.jpg" alt-text="Business Premium setup":::
-
+Once you've achieved this objective, proceed to [bump up security protection](m365bp-security-overview.md).

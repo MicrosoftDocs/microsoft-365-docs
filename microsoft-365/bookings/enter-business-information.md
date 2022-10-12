@@ -7,14 +7,13 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
-description: "Follow these instructions to create your About Us page, including business name, address, phone number, website URL, logo, and business hours in Microsoft Bookings."
+description: "Follow these instructions to create your About Us page with business name, address, phone number, website URL, logo, and business hours in Microsoft Bookings."
 ---
 
-# Enter your business information
-
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
+# Enter your business information in Microsoft Bookings
 
 In Microsoft Bookings, the Business Information page within the web app contains all the details that you'd typically find on a business' "About us" page. These details include a relevant name, address, phone number, web site URL, privacy policy URL, logo, and business hours.
 
@@ -57,7 +56,7 @@ You might need to block out a portion of each day or week to have staff meetings
 
 For example, you have staff meetings every Thursday from 1 o'clock to 2:30 and want to block out that time so all of your staff members can attend. To do this:
 
-1. On the Business information page, under Business hours, select a start and end time for Thursdays. In this example we'll set 8:00 a.m. to 1:00 p.m.
+1. On the Business information page, under Business hours, select a start and end time for Thursdays. In this example, we'll set 8:00 a.m. to 1:00 p.m.
 
 1. Select **+** to create a new row for Thursday.
 

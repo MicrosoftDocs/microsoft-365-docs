@@ -4,11 +4,13 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: shcallaw, kywirpel
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -30,7 +32,7 @@ Make sure you and your customer tenants meet the requirements listed in [Require
 
 1. In the left navigation pane in Lighthouse, select **Tenants**.
 
-2. From the tenant list, select the tenant you want to view.
+2. From the list of tenants, select the tenant you want to view.
 
 3. Select the **Deployment Plan** tab.
 
@@ -44,13 +46,13 @@ Make sure you and your customer tenants meet the requirements listed in [Require
     | Category        | Whether the deployment step is associated with managing Devices, Identity, or Data. |
     | Last updated    | The date at which the deployment step was last updated.                             |
 
-4. From the list, select a deployment step you want to review.
+4. From the list of deployment steps, select the deployment step that you want to review.
 
-    The Deployment Step page provides the following information:
+    The deployment step details page provides the following information:
 
     | Column            | Description |
     |-------------------|-----------------------------------------------------------------------------------------------|
-    | Summary        | A summary of the Deployment Step's purpose.                                         |
+    | Summary        | A summary of the deployment step's purpose.                                         |
     | Baseline       | The baseline from which the deployment step is derived.                             |
     | Category       | Whether the deployment step is associated with managing Devices, Identity, or Data. |
     | Required SKU   | SKUs required to complete the deployment step.                                      |
@@ -58,27 +60,27 @@ Make sure you and your customer tenants meet the requirements listed in [Require
     | For your users | Links to resources the tenant's users may find helpful.                             |
     | Next steps     | Links and guidance around any applicable next steps.                                |
 
-    Deployment steps include one or more processes that need to be completed. The Deployment Step page includes a table that lists each process included in the deployment step and provides the following information:
+    Deployment steps include one or more processes that need to be completed. The deployment step details page includes a table that lists each process included in the deployment step and provides the following information:
 
     | Column            | Description |
     |-------------------|-------------------------------------------------------------|
-    | Process name      | The name of the process, which, when selected, will open the applicable Process tab.          |
-    | Status            | Detected status of these setting configurations included in the deployment process.           |
+    | Process name      | The name of the process, which, when selected, will open the applicable process tab.          |
+    | Status            | Detected status of the setting configurations included in the deployment process.           |
     | Management portal | The portal through which the configurations settings associated with the process are managed. |
 
 ## Deploy a deployment step
 
 1. In the left navigation page, select **Tenants**.
 
-2. From the tenant list, select the tenant you want to view.
+2. From the list of tenants, select the tenant that you want to view.
 
 3. Select the **Deployment Plan** tab.
 
-4. From the Deployment Step list, select a deployment step you want to deploy.
+4. From the list of deployment steps, select the deployment step that you want to deploy.
 
 5. Select **Review and deploy**.
 
-6. From the **Confirm Configurations** pane, select **Deploy**.
+6. In the **Confirm configuration** pane, select **Deploy**.
 
 ## Test a deployment step
 
@@ -86,21 +88,21 @@ For deployment steps deployed through Conditional Access policies, you can compa
 
 1. In the left navigation page, select **Tenants**.
 
-2. From the tenant list, select the tenant you want to view.
+2. From the list of tenants, select the tenant that you want to view.
 
 3. Select the **Deployment Plan** tab.
 
-4. From the Deployment Step list, select a deployment step you want to deploy.
+4. From the list of deployment steps, select the deployment step that you want to deploy.
 
 5. Select **Review and deploy**.
 
-6. From the **Confirm Configurations** pane, select **Test these settings without a deployment**.
+6. In the **Confirm configuration** pane, select **Test these settings without a deployment**.
 
 7. Select **Test**.
 
-The Confirm Configurations pane will close and display the policy comparison. Each policy within the existing tenant will be listed in the Detected settings table.
+The **Confirm configuration** pane closes and displays the policy comparison. Each policy within the existing tenant is listed in the Detected settings table.
 
-The Detected settings table lists each existing policy and summarizes the number of settings and, in parentheses, the number of users that are in one of the following statuses:
+The Detected settings table lists each existing policy and summarizes the number of settings and, in parentheses, the number of users that have one of the following statuses:
 
 | Status         | Description
 |-------------|------------------------------------------------------------|
@@ -108,7 +110,7 @@ The Detected settings table lists each existing policy and summarizes the number
 | Missing settings     | Total number of configuration settings in the deployment plan that are missing a value in the tenant.      |
 | Conflicting settings | Total number of configuration settings in the deployment plan that have a conflicting value in the tenant. |
 
-Detected settings can also be viewed in a modular table that provides configuration setting details for each policy at the setting and user level and can be sorted by each of the following settings statuses:
+You can also view detected settings in a modular table that provides configuration setting details for each policy at the setting and user level and you can sort the table by the following setting statuses:
 
 | Status         | Description
 |-------------|------------------------------------------------------------|
@@ -118,13 +120,13 @@ Detected settings can also be viewed in a modular table that provides configurat
 | Conflicting settings | Total number of configuration settings in the deployment plan that have a conflicting value in the tenant. |
 | Extra settings       | Total number of configuration settings with a value in the tenant but no value in the deployment plan.     |
 
-When this comparison is made, Lighthouse will automatically update the Detected status, Deployment status, and Deployment Step status.
+When this comparison is made, Lighthouse automatically updates the Detected status, Deployment status, and Deployment Step status.
 
-If there are no existing policies to compare, select Review and deploy to reopen the Confirm configurations pane and select Deploy.
+If there are no existing policies to compare, select **Review and deploy** to reopen the **Confirm configuration** pane, and then select **Deploy**.
 
 If there are existing policies with which to compare, you can either:
 
-- Edit the configuration settings of the deployment plan and retest them against the existing policies, select **Review and deploy** to reopen the Confirm configurations pane, adjust the desired configuration settings, reselect the checkbox, and select **Test** at the bottom of the pane.
+- Edit the configuration settings of the deployment plan and retest them against the existing policies, select **Review and deploy** to reopen the **Confirm configuration** pane, adjust the desired configuration settings, reselect the checkbox, and then select **Test** at the bottom of the pane.
 
 - Edit the existing policies within the applicable management portal to reconcile the differences by either:
   - Applying missing settings
@@ -136,9 +138,9 @@ For each deployment process that can be automated through Lighthouse, there's bo
 - The detected status indicates to what extent the settings in this process are currently deployed.
 - The deployment status is the status of the last deployment to the tenant.
 
-Deployment steps can be deployed regardless of existing policies but won't be considered complete until there are no conflicting settings. Failure to resolve these conflicting settings may impact the user experience. 
+You can deploy deployment steps regardless of existing policies but they won't be considered complete until there are no conflicting settings. Failure to resolve these conflicting settings may impact the user experience. 
 
-The deployment of the deployment step in instances when there are equal settings present in the tenant from an existing policy will result in duplication of the existing settings within the tenant but won't impact the user experience. 
+The deployment of the deployment step in instances when there are equal settings present in the tenant from an existing policy results in duplication of the existing settings within the tenant but won't impact the user experience. 
 
 Extra settings are provided for your awareness but don't require you to take action.
 
@@ -146,43 +148,43 @@ For more information on policy conflict management, see [Azure AD Conditional Ac
 
 ## Update deployment step status
 
-1. In the left navigation page, select **Tenants**.
+1. In the left navigation page in Lighthouse, select **Tenants**.
 
-2. From the tenant list, select the tenant you want to view.
+2. From the list of tenants, select the tenant that you want to view.
 
 3. Select the **Deployment Plan** tab.
 
-4. From the deployment step list, select a deployment step you want to update.
+4. From the list of deployment steps, select the deployment step that you want to update.
 
-5. From the **To address** drop-down list, select an action status.
+5. From the **To address** dropdown list, select an action status.
 
-    | Action status                        | Description      |
-    |---------------------------------------|----------------------------------------|
-    | To address                        | The default state of all deployment steps that do NOT include multiple deployment step processes.      |
-    | Planned                           | The deployment step has been planned but has yet to be completed.                                      |
-    | Risk accepted                     | The user has accepted the risk that would otherwise have been averted by applying the deployment step. |
-    | Risk Resolved Through Third Party | The risk has been resolved by the implementation of a third-party application or software.             |
-    | Resolved through alternate means  | The risk has been resolved through alternate means, such as the implementation of an internal tool.    |
-    | Manual configuration applied      | The configuration prescribed in the deployment plan has been manually applied.                         |
+    | Action status | Description |
+    |--|--|
+    | To address | The default state of all deployment steps that do NOT include multiple deployment step processes. |
+    | Planned | The deployment step has been planned but has yet to be completed. |
+    | Risk accepted | The user has accepted the risk that would otherwise have been averted by applying the deployment step. |
+    | Risk Resolved Through Third Party | The risk has been resolved by the implementation of a third-party application or software. |
+    | Resolved through alternate means | The risk has been resolved through alternate means, such as the implementation of an internal tool. |
+    | Manual configuration applied | The configuration prescribed in the deployment plan has been manually applied. |
 
 ## Share deployment step
 
 1. In the left navigation page, select **Tenants**.
 
-2. From the tenant list, select the tenant you want to view.
+2. From the list of tenants, select the tenant you want to view.
 
 3. Select the **Deployment Plan** tab.
 
-4. From the Deployment Step list, select a deployment step you want to share.
+4. From the list of deployment steps, select the deployment step that you want to share.
 
-5. From the **Share** drop-down list, select one of the following options.
+5. From the **Share** dropdown list, select one of the following options.
 
     | Option  | Description |
     |-----------|-------------------------------------------------------------------------|
     | Copy  | Copies a link to the deployment step into your clipboard.                                     |
     | Email | Opens your new email message on your local machine and inserts a link to the deployment step. |
 
-    The link will allow anyone with permissions in your organization to view the tenant's deployment plan.
+    The link allows anyone with permissions in your organization to view the tenant's deployment plan.
 
 
 ## Related content

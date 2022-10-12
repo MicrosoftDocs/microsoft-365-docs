@@ -10,9 +10,11 @@ ms.topic: conceptual
 f1_keywords:
 - 'O365E_understand_devices'
 - 'BCS365_understand_devices'
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: M365-subscription-management 
+ms.collection: 
+- scotvorg
+- M365-subscription-management 
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -31,7 +33,7 @@ Microsoft 365 Business Premium offers a number of ways for you to protect your b
 
 ## Mobile device management or MDM
 
-Microsoft 365 Business Premium lets you set up policies that protect data on your Windows 10 devices. When a device is under mobile device management, you control the entire device, and can wipe data from it, and also reset it to factory settings. For more information, see [Set device protection settings for Windows 10 PCs](../../business-premium/m365bp-protection-settings-for-windows-10-pcs.md).
+Microsoft 365 Business Premium lets you set up policies that protect data on your Windows 10 devices. When a device is under mobile device management, you control the entire device, and can wipe data from it, and also reset it to factory settings. For more information, see [Set device protection settings for Windows 10 PCs](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md).
 
 ## Mobile application management or MAM
 

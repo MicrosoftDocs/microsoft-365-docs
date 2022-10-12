@@ -1,28 +1,28 @@
 ---
 title: "Work with processing errors in eDiscovery (Premium)"
+description: "Overview about processing various forms of data in eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
 ms.custom:
 - seo-marvel-apr2020
-description: "Overview about processing various forms of data in eDiscovery (Premium)."
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Work with processing errors in eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 *Processing* is the process of file identification, expansion of embedded documents and attachments, text extraction, and Optical Character Recognition (OCR) of image files and the subsequent indexing of that content.  
 

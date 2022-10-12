@@ -1,27 +1,27 @@
 ---
 title: "Use Content Search to search third-party imported data"
+description: Use the Content Search eDiscovery tool to search for items imported to mailboxes in Microsoft 365 from a third-party data source by creating queries.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- content-search
 ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: Use the Content Search eDiscovery tool to search for items imported to mailboxes in Microsoft 365 from a third-party data source by creating queries.
 ms.custom: seo-marvel-apr2020
 ---
 
 # Use Content Search to search third-party data imported by a custom partner connector
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 You can use the [Content search eDiscovery tool](content-search.md) in the Microsoft Purview compliance portal to search for items imported to mailboxes in Microsoft 365 from a third-party data source. You can create a query to search all imported third-party data items or you can create a query to search specific third-party data items. Also, you can also create a query-based retention policy or a query-based eDiscovery hold to preserve third-party data.
   
@@ -30,6 +30,8 @@ For more information about working with a partner to import third-party data and
 > [!IMPORTANT]
 > The guidance in this article only applies to third-party data that was imported by a custom partner connector. This article doesn't apply to third-party data that is imported by using the [third-party data connectors](archiving-third-party-data.md#third-party-data-connectors) in the Microsoft compliance center.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Creating a query to search all third-party data
 
 To search (or place on hold) any type of third-party data that you've imported to Office 365, you can use the  `kind:externaldata` message property-value pair in the keyword box for a Content Search or when creating a query-based hold. For example, to search for items imported from any third-party data source and contain the word "contoso" in the Subject property of the imported item, you would use the following query: 

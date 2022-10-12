@@ -8,18 +8,15 @@ ms.topic: article
 ms.service: bookings
 ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: "Learn how to get access to Microsoft Bookings in Microsoft 365."
 ---
 
 # Turn Microsoft Bookings on or off
 
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
-
-This article is for admins. 
-
-Bookings can be turned on or off for your entire organization or for specific users. When you turn on Bookings for users, they can create a Bookings page, create a calendar, and allow other people to book time with them.
+Bookings can be turned on or off for your entire organization or for specific users. When you turn on Bookings for users, they can create a Bookings page, create a calendar, and allow other people to book time with them. This article is for owners and administrators who manage Bookings for their organizations.
 
 > [!NOTE]
 > The admin controls described in these sections are not available for Office 365 Operated by 21Vianet (China) customers.
@@ -87,7 +84,7 @@ You can disable Bookings for individual users.
 
 ## Allow only selected users to create Bookings calendars
 
-By using policy restrictions, you can restrict licensed users from being able to create Bookings calendars. You must first enable Bookings for your entire organization. All users in your organization will have Bookings licenses, but only those included in the policy can create Bookings calendars and have full control over who can access the calendars they create.
+By using policy restrictions, you can restrict licensed users from being able to create Bookings calendars. All users in your organization will have Bookings licenses, but only those included in the policy can create Bookings calendars and have full control over who can access the calendars they create.
 
 Users who are included in this policy can create new Bookings calendars and can be added as staff in any capacity (including the administrator role) to existing Bookings calendars. Users who aren't included in this policy won't be able to create new Bookings calendars and will receive an error message if they try to do so.
 

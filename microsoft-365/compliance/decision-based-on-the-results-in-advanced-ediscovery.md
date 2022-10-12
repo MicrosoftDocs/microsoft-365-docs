@@ -1,9 +1,10 @@
 ---
 title: "Decision based on the results in eDiscovery (Premium)"
+description: "Learn how the Decide tab in eDiscovery (Premium) provides data that can help you determine the correct size of the review set of case files."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -13,18 +14,20 @@ ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: "Learn how the Decide tab in eDiscovery (Premium) provides data that can help you determine the correct size of the review set of case files."
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Decisions based on Relevance results in eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 In the Relevance module in eDiscovery (Premium), the Decide tab provides additional information for viewing and using decision-support statistics for determining the size of the review set of case files.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Using the Decide tab
 
 ![Relevance Decide.](../media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
@@ -41,10 +44,10 @@ This tab includes the following components:
 
   - **Recall**: Percentage of relevant files in the review set.
 
-  - **Next relevant**: Cost to review and identify another relevant file that is not currently in the review set.
+  - **Next relevant**: Cost to review and identify another relevant file that isn't currently in the review set.
 
   - **Total cost**: Cost for reviewing this percentage of the case files. Cost parameter settings can be set by the Case manager.
 
   - **Distribution by relevance score**: Files in the dark gray display to the left are below the cutoff score. A tool-tip displays the Relevance score and the related percentage of files in the review file set in relation to the total files.
 
-The expanded **Details** pane displays more details. Files in collection figures do not include empty or nebulous files. Family files figures represent files that are not loaded in Relevance, yet still counted as part of the family.
+The expanded **Details** pane displays more details. Files in collection figures don't include empty or nebulous files. Family files figures represent files that aren't loaded in Relevance, yet still counted as part of the family.

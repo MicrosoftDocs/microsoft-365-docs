@@ -10,16 +10,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 description: "Learn how to roll the customer root keys stored in Azure Key Vault that are used with the Customer Key. Services include Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams files."
 ---
 
 # Roll or rotate a Customer Key or an availability key
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 > [!CAUTION]
 > Only roll an encryption key that you use with Customer Key when your security or compliance requirements dictate that you must roll the key. In addition, do not delete any keys that are or were associated with policies. When you roll your keys, there will be content encrypted with the previous keys. For example, while active mailboxes will be re-encrypted frequently, inactive, disconnected, and disabled mailboxes may still be encrypted with the previous keys. SharePoint Online performs backup of content for restore and recovery purposes, so there may still be archived content using older keys.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## About rolling the availability key
 
@@ -50,7 +50,7 @@ When you roll either of the Azure Key Vault keys associated with a DEP used with
 
 To instruct Customer Key to use the new key to encrypt multiple workloads, complete these steps:
 
-1. On your local computer, using a work or school account that has global administrator or compliance admin permissions in your organization, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) in a Windows PowerShell window.
+1. On your local computer, using a work or school account that has global administrator or compliance admin permissions in your organization, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the Set-M365DataAtRestEncryptionPolicy cmdlet.
   

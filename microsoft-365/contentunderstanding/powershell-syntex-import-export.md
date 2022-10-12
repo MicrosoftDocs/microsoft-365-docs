@@ -6,21 +6,21 @@ ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: "Learn about how to export and import document understanding models with PowerShell in SharePoint Syntex."
+description: Learn about how to export and import document understanding models with PowerShell in Microsoft Syntex.
 ---
 
 # Export and import document understanding models with PowerShell
 
 > [!IMPORTANT]
-> The SharePoint Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
+> The Microsoft Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
 
-SharePoint Syntex models can be exported as PnP templates, enabling reuse across content centers or tenants.
+Syntex models can be exported as PnP templates, enabling reuse across content centers or tenants.
 
 ## Export all models in a content center
 

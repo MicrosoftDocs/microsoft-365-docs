@@ -4,32 +4,25 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
-- M365-identity-device-management
-- Adm_TOC
+- tier1
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
-- seo-marvel-mar
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: "Learn about the various device states in the Device actions list in Admin home in Microsoft 365 for business."
 ---
 
-# Device states
+# Device states in Microsoft 365 for business
 
 This article applies to Microsoft 365 Business Premium.
 

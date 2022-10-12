@@ -1,19 +1,23 @@
 ---
-title: "How to get Microsoft 365 for Campaigns"
+title: "Get Microsoft 365 for Campaigns"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: how-to
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -72,4 +76,4 @@ There's no minimum time commitment when you sign up for Microsoft 365 for Campai
 
 ## Next steps
 
-When you receive your invitation, [Sign up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md).
+When you receive your invitation, [Set up Microsoft 365 for Campaigns](m365-campaigns-setup.md).

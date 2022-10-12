@@ -1,28 +1,28 @@
 ---
-title: Manage SharePoint Syntex with PowerShell
+title: Manage Microsoft Syntex by using PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: "Learn how to manage SharePoint Syntex with PowerShell."
+description: Learn how to manage Microsoft Syntex with PowerShell.
 ---
 
-# Manage SharePoint Syntex with PowerShell
+# Manage Microsoft Syntex by using PowerShell
 
 > [!IMPORTANT]
-> The SharePoint Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
+> The Microsoft Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
 
-For these scenarios, the SharePoint Syntex cmdlets in the PnP PowerShell module can be used to interact with models and explanations. To learn more about how to install this module, see [PnP PowerShell overview](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets).
+For these scenarios, the Syntex cmdlets in the PnP PowerShell module can be used to interact with models and explanations. To learn more about how to install this module, see [PnP PowerShell overview](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets).
 
-Select from the following scenarios to learn how to use PowerShell to manage SharePoint Syntex:
+Select from the following scenarios to learn how to use PowerShell to manage Syntex:
 
 - [**Import and Export Models**](powershell-syntex-import-export.md)
 

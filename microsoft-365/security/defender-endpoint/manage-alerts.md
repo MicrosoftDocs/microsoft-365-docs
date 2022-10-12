@@ -2,7 +2,7 @@
 title: Manage Microsoft Defender for Endpoint alerts
 description: Change the status of alerts, create suppression rules to hide alerts, submit comments, and review change history for individual alerts with the Manage Alert menu.
 keywords: manage alerts, manage, alerts, status, new, in progress, resolved, resolve alerts, suppress, supression, rules, context, history, comments, changes
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Manage Microsoft Defender for Endpoint alerts
@@ -28,13 +31,16 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
 
-Defender for Endpoint notifies you of possible malicious events, attributes, and contextual information through alerts. A summary of new alerts is displayed in the **Security operations dashboard**, and you can access all alerts in the **Alerts queue**.
+Defender for Endpoint notifies you of possible malicious events, attributes, and contextual information through alerts. A summary of new alerts is displayed and you can access all alerts in the **Alerts queue**.
 
 You can manage alerts by selecting an alert in the **Alerts queue**, or the **Alerts** tab of the Device page for an individual device.
 
 Selecting an alert in either of those places brings up the **Alert management pane**.
 
 :::image type="content" source="images/atp-alerts-selected.png" alt-text="The Alert management pane and the Alerts queue" lightbox="images/atp-alerts-selected.png":::
+
+Watch this video to learn how to use the new Microsoft Defender for Endpoint alert page.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4yiO5]
 
 ## Link to another incident
 
@@ -97,7 +103,7 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 
 #### View the list of suppression rules
 
-1. In the navigation pane, select **Settings** \> **Alert suppression**.
+1. In the navigation pane, select **Settings** \> **Endpoints** \> **Rules** \> **Alert suppression**.
 
 2. The list of suppression rules shows all the rules that users in your organization have created.
 

@@ -7,14 +7,16 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - SPO_Content
 ms.custom:
+- adminvideo
 - MSStore_Link
 - TRN_M365B
 - OKR_SMB_Videos
@@ -30,6 +32,8 @@ description: "Block access to Microsoft 365 so a former employee can't sign in, 
 ---
 
 # Overview: Remove a former employee and secure data
+
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 A question we often get is, "What should I do to secure data and protect access when an employee leaves my organization?" This article series explains how to block access to Microsoft 365 so these users can't sign in to Microsoft 365, the steps you should take to secure organization data, and how to allow other employees to access email and OneDrive data.
 
@@ -72,7 +76,9 @@ To complete the steps in this series, you use these Microsoft 365 capabilities a
 |[Step 6 - Remove and delete the Microsoft 365 license from a former employee](remove-former-employee-step-6.md)|When you remove a license, you can assign it to someone else. Or, you can delete the license so you don't pay for it until you hire another person. <p> When you remove or delete a license, the user's old email, contacts, and calendar are retained for **30 days**, then permanently deleted. If you remove or delete a license but don't delete the account, the content in the user's OneDrive will remain accessible to you even after 30 days.|
 |[Step 7 - Delete a former employee's user account](remove-former-employee-step-7.md)|This removes the account from your admin center. Keeps things clean.|
 
- ## Watch: Delete a user
+## Watch: Delete a user
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198203).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
 
@@ -93,4 +99,5 @@ After you remove a user, you have up to 30 days to restore their account.
 [Restore a user](restore-user.md) (article)\
 [Add a new employee to Microsoft 365](add-new-employee.md) (article)\
 [Assign licenses to users](../manage/assign-licenses-to-users.md) (article)\
+[Remove-CalendarEvents](/powershell/module/exchange/remove-calendarevents)\
 [Unassign licenses from users](../manage/remove-licenses-from-users.md) (article)

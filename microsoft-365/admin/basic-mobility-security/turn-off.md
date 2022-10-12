@@ -6,9 +6,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -31,7 +32,7 @@ These options remove Basic Mobility and Security enforcement for devices in your
 
 ## Remove user security groups from Basic Mobility and Security device policies
 
-1. In your browser type: [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
+1. In your browser type: [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
 
 2. Select a device policy, and select **Edit policy**.
 
@@ -43,7 +44,7 @@ These options remove Basic Mobility and Security enforcement for devices in your
 
 ## Remove Basic Mobility and Security device policies
 
-1. In your browser type: [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
+1. In your browser type: [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
 
 2. Select a device policy, and then select **Delete policy**.
 
