@@ -9,6 +9,8 @@
     href: flw-scenario-posters.md
   - name: Try Microsoft 365 for frontline workers
     href: flw-trial.md
+  - name: Frontline deployment white paper
+    href: flw-technical-planning-guide-deployment.md
   - name: Set up and configure
     items:
     - name: Overview
