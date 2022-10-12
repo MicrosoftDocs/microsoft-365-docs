@@ -104,11 +104,11 @@ This experience includes a default dashboard with relevant frontline cards such 
 
 **Teams mobile**
 
-:::image type="content" source="media/tailored-teams-apps-viva-connections-mobile.png" alt-text="Viva Connections in the tailored frontline app experience on Teams mobile" lightbox="media/tailored-teams-apps-viva-connections-mobile.png":::
+:::image type="content" source="media/tailored-teams-apps-viva-connections-mobile.png" alt-text="Screenshot that shows Viva Connections in the tailored frontline app experience on Teams mobile." lightbox="media/tailored-teams-apps-viva-connections-mobile.png":::
 
 **Teams desktop**
 
-:::image type="content" source="media/tailored-teams-apps-viva-connections-desktop.png" alt-text="Viva Connections in the tailored frontline app experience on Teams desktop" lightbox="media/tailored-teams-apps-viva-connections-desktop.png":::
+:::image type="content" source="media/tailored-teams-apps-viva-connections-desktop.png" alt-text="Screenshot that shows Viva Connections in the tailored frontline app experience on Teams desktop." lightbox="media/tailored-teams-apps-viva-connections-desktop.png":::
 
 ## Related articles
 
