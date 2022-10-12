@@ -2,28 +2,27 @@
 title: "Change Microsoft 365 for business plans manually"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
+ms.reviewer: nalinkla, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
-- commerce
-- Adm_NonTOC
-ms.custom: AdminSurgePortfolio
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- BEA160
-ROBOTS: NOINDEX
+ms.custom: 
+- commerce_subscriptions
+- AdminSurgePortfolio
+search.appverid: MET150
 description: "Change subscriptions manually by buying a new subscription and ensuring that both the subscriptions are listed and active."
+ROBOTS: NOINDEX
+ms.date: 03/17/2021
 ---
-# Change plans manually
+# Manually change Microsoft plans
 
 ## Step 1: Decide how to change plans
 
@@ -38,7 +37,7 @@ The best way to change all your users from one plan to another is to [use the Up
 To continue with a manual change, read [Step 2: Buy a new subscription](#step-2-buy-a-new-subscription) in this topic.
 
 > [!IMPORTANT]
-> If you are changing to a plan with fewer data-related services than your current plan (downgrading), you need to manually back up any data you wish to keep. For more information, see [Back up data before changing plans](back-up-data-before-switching-plans.md).
+> If you are changing to a plan with fewer data-related services than your current plan (downgrading), you need to manually back up any data you wish to keep. For more information, see [Back up data before changing plans](move-users-different-subscription.md).
 
 ## Step 2: Buy a new subscription
 
@@ -46,7 +45,7 @@ To continue with a manual change, read [Step 2: Buy a new subscription](#step-2-
 
 OR
 
-**Purchase a new subscription and licenses:** Follow the steps in [Buy another Microsoft 365 for business subscription](../buy-another-subscription.md) to buy a new subscription.
+**Purchase a new subscription and licenses:** Follow the steps in [Buy another Microsoft 365 for business subscription](../try-or-buy-microsoft-365.md) to buy a new subscription.
 
 Make sure you purchase a subscription for the same organization that the users are in now. For example, check the email addresses for the users you want to move. If their email addresses include \@contoso.com, you must purchase a new subscription for contoso.com.
 Include a license for each user that you want to move.
@@ -72,13 +71,15 @@ Include a license for each user that you want to move.
 - **If you purchased two subscriptions and they are not both listed here**, they may have been purchased for different organizations
     (for different domains). Subscriptions can't cross organization boundaries.
 
-- **If you know you have an additional subscription**, and it's not listed here, or is not active, [call Microsoft support](../../admin/contact-support-for-business-products.md).
+- **If you know you have an additional subscription**, and it's not listed here, or is not active, [call Microsoft support](../../admin/get-help-support.md).
 
 ### What about the old licenses?
 
 The licenses for the current subscription will be removed later; you'll only pay for the new user licenses from then on.
 
 ## Step 4: Reassign licenses
+
+When you upgrade from an Office 365 plan to a Microsoft 365 plan, you must change the license assignments for all users. Licenses aren't automatically assigned when you change plans manually.
 
 ### Reassign a license for one user
 
@@ -95,7 +96,7 @@ The licenses for the current subscription will be removed later; you'll only pay
 
 2. Select the circles next to the names of the users for whom you want to replace existing licenses.
 
-3. At the top, select **More options** (**...**), and then choose **Manage product licenses**.
+3. At the top, select the three dots (more actions), and then choose **Manage product licenses**.
 
 4. Select **Replace existing product license assignments** \> **Next**.
 
@@ -111,7 +112,8 @@ The licenses for the current subscription will be removed later; you'll only pay
 
 If you moved all users from one subscription to another, and you no longer need the original subscription, you can [cancel the subscription](cancel-your-subscription.md).
 
-If you moved only some users to a different subscription, [remove licenses](../licenses/remove-licenses-from-subscription.md) that you no longer need.
+If you moved only some users to a different subscription, [remove licenses](../licenses/buy-licenses.md) that you no longer need.
 
 ## Call support to help you change plans
-[Call Microsoft support](../../admin/contact-support-for-business-products.md)
+
+[Call Microsoft support](../../admin/get-help-support.md).

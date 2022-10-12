@@ -1,15 +1,16 @@
 ---
 title: "Networking for the Contoso Corporation"
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
-manager: laurawi
+ms.author: kvice
+manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: 
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection:
+- scotvorg 
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
@@ -39,7 +40,7 @@ These are the network elements that link Contoso offices across the globe:
 
 Figure 1 shows the Contoso networking infrastructure and its connections to the internet.
 
-![The Contoso network](../media/contoso-networking/contoso-networking-fig1.png)
+![The Contoso network.](../media/contoso-networking/contoso-networking-fig1.png)
  
 **Figure 1: The Contoso network**
 
@@ -72,7 +73,7 @@ Contoso architected its line-of-business application and server intranet infrast
 
 Figure 2 shows the percentage of network traffic capacity used when accessing servers across the Contoso intranet.
 
-![The Contoso infrastructure for internal applications](../media/contoso-networking/contoso-networking-fig2.png)
+![The Contoso infrastructure for internal applications.](../media/contoso-networking/contoso-networking-fig2.png)
  
 **Figure 2: The Contoso infrastructure for internal applications**
 

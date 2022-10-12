@@ -8,24 +8,27 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150
 ms.assetid:
-ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+ms.collection: m365-security
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about deployment considerations and frequently asked questions regarding Attack simulation and training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Attack simulation training deployment considerations and FAQ
 
-Attack simulation training is now [generally available](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291). Attack simulation training enables Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations to measure and manage social engineering risk by allowing the creation and management of phishing simulations that are powered by real-world, de-weaponized phishing payloads. Hyper-targeted training, delivered in partnership with Terranova security, helps improve knowledge and change employee behavior.
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Applies to**
+- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
+
+Attack simulation training enables Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations to measure and manage social engineering risk by allowing the creation and management of phishing simulations that are powered by real-world, de-weaponized phishing payloads. Hyper-targeted training, delivered in partnership with Terranova security, helps improve knowledge and change employee behavior.
 
 For more information about getting started with Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
@@ -37,7 +40,7 @@ While the whole simulation creation and scheduling experience has been designed 
 
 A URL reputation service might identify one or more of the URLs that are used by Attack simulation training as unsafe. Google Safe Browsing in Google Chrome blocks some of the simulated phishing URLs with a **Deceptive site ahead** message. While we work with many URL reputation vendors to always allow our simulation URLs, we don't always have full coverage.
 
-![Deceptive site ahead warning in Google Chrome](../../media/attack-sim-chrome-deceptive-site-message.png)
+:::image type="content" source="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png" alt-text="The Deceptive site ahead warning in Google Chrome" lightbox="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png":::
 
 Note that this issue does not affect Microsoft Edge.
 
@@ -68,7 +71,7 @@ It's possible that the number of users who actually receive the simulation email
 - Guest users.
 - Users that are no longer active in Azure Active Directory (Azure AD).
 
-Only valid, non-guest users with a valid mailbox will be included in simulations. If you use distribution groups or mail-enabled security groups to target users, you can use the [Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroupmember) cmdlet in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) to view and validate distribution group members.
+Only valid, non-guest users with a valid mailbox will be included in simulations. If you use distribution groups or mail-enabled security groups to target users, you can use the [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to view and validate distribution group members.
 
 ## Issues with Attack simulation training reporting
 
@@ -94,11 +97,11 @@ Every simulation campaign has a lifecycle. When first created, the simulation is
 
 While a simulation is in the **Scheduled** state, the simulation reports will be mostly empty. During this stage, the simulation engine is resolving the target user email addresses, expanding distribution groups, removing guest users from the list, etc.:
 
-![Reporting in the Scheduled state](../../media/attack-sim-empty-reporting.png)
+:::image type="content" source="../../media/attack-sim-training-faq-scheduled-state.png" alt-text="Simulation details showing the simulation in the Scheduled state" lightbox="../../media/attack-sim-training-faq-scheduled-state.png":::
 
 Once the simulation enters the **In progress** stage, you will notice information starting to trickle into the reporting:
 
-![Reporting in the In progress state](../../media/attack-sim-in-progress.png)
+:::image type="content" source="../../media/attack-sim-training-faq-in-progress-state.png" alt-text="Simulation details showing the simulation in the In progress state" lightbox="../../media/attack-sim-training-faq-in-progress-state.png":::
 
 It can take up to 30 minutes for the individual simulation reports to update after the transition to the **In progress** state. The report data continues to build until the simulation reaches the **Completed** state. Reporting updates occur at the following intervals:
 
@@ -127,6 +130,12 @@ If messages that users reported as phishing aren't captured in Attack simulation
 - phish@office365.microsoft.com
 - not\_junk@office365.microsoft.com
 
+### Users are assigned training after they report a simulated message
+
+If users are assigned training after they report a phishing simulation message, check to see if your organization has a **custom mailbox** configured in your **user submission policy**. When configuring a **custom mailbox**, this mailbox needs to be excluded from Safe Links and Safe Attachments policies as per the [Custom mailbox prerequisites](user-submission.md).
+
+If your organization has a **custom mailbox** configured and has not set up the required exclusions, these messages may be detonated, causing training assignments.
+
 ## Other frequently asked questions
 
 ### Q: What is the recommended method to target users for simulation campaigns?
@@ -135,7 +144,7 @@ A: Several options are available to target users:
 
 - Include all users (currently available to organizations with less than 40,000 users).
 - Choose specific users.
-- Select users from a CSV file.
+- Select users from a CSV file (one email address per line).
 - Azure AD group-based targeting.
 
 We've found that campaigns where the targeted users are identified by Azure AD groups are generally easier to manage.
@@ -150,7 +159,7 @@ Managing a large CSV file or adding many individual recipients can be cumbersome
 
 ### Q: Does Microsoft provide payloads in other languages?
 
-A: Currently, there are 5 localized payloads available. We've noticed than any direct or machine translations of existing payloads to other languages will lead to inaccuracies and decreased relevance.
+A: Currently, there are 40+ localized payloads available in 10+ languages: Chinese (Simplified), Chinese (Traditional), English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Spanish and Dutch. We've noticed that any direct or machine translations of existing payloads to other languages will lead to inaccuracies and decreased relevance.
 
 That being said, you can create your own payload in the language of your choice using the custom payload authoring experience. We also strongly recommend that you harvest existing payloads that were used to target users in a specific geography. In other words, let the attackers localize the content for you.
 
@@ -164,7 +173,7 @@ Note that the configuration change might take up to 30 minutes to synchronize ac
 
 A: Yes you can! On the very last **Review Simulation** page in the wizard to create a new simulation, there's an option to **Send a test**. This option will send a sample phishing simulation message to the currently logged in user. After you validate the phishing message in your Inbox, you can submit the simulation.
 
-![Send a test button on the Review simulation page](../../media/attack-sim-review-simulation-page.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="The Send a test button on the Review simulation page" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::
 
 ### Q: Can I target users that belong to a different tenant as part of the same simulation campaign?
 
@@ -181,3 +190,8 @@ A: Region aware delivery uses the TimeZone attribute of the targeted user's mail
 At 9:00 AM on the same day, the simulation message is sent to UserB. With region-aware delivery, the message is not sent to UserA on the same day, because 9:00 AM Pacific time is 12:00 PM Eastern time. Instead, the message is sent to UserA at 9:00 AM Eastern time on the following day.
 
 So, on the initial run of a campaign with region aware delivery enabled, it might appear that the simulation message was sent only to users in a specific time zone. But, as time passes and more users come into scope, the targeted users will increase.
+
+
+### Q: Does Microsoft collect or store any information that users enter at the Credential Harvest sign-in page, used in the Credential Harvest simulation technique?
+
+A: No. Any information entered at the credential harvest login page is discarded silently. Only the 'click' is recorded to capture the compromise event. Microsoft does not collect, log or store any details that users enter at this step.

@@ -3,6 +3,7 @@
 |:----------------------------|:-------|:---------------------------------|
 |Asia-Pacific                 |APC     |Southeast or East Asia datacenters|
 |Australia                    |AUS     |Southeast or East Asia datacenters|
+|Brazil                       |BRA     |(eDiscovery data location coming soon)|
 |Canada                       |CAN     |US datacenters                    |
 |Europe / Middle East / Africa|EUR     |Europe datacenters                |
 |France                       |FRA     |Europe datacenters                |
@@ -12,7 +13,9 @@
 |Korea                        |KOR     |Southeast or East Asia datacenters|
 |North America                |NAM     |US datacenters                    |
 |Norway                       |NOR     |(eDiscovery data location coming soon)|
-|South Africa                 |ZAF     |Southeast or East Asia datacenters|
+|Qatar                        |QAT     |(eDiscovery data location coming soon)|
+|South Africa                 |ZAF     |Europe datacenters                |
+|Sweden                       |SWE     |Europe datacenters                |
 |Switzerland                  |CHE     |Europe datacenters                |
 |United Arab Emirates         |ARE     |Southeast or East Asia datacenters|
 |United Kingdom               |GBR     |Europe datacenters                |

@@ -1,20 +1,19 @@
 ### YamlMime:Landing
 
 title: Microsoft 365 security documentation # < 60 chars
-summary: Learn about the robust security solutions and services in Microsoft 365 Security so that you can better protect your enterprise across attack surfaces.  # < 160 chars
+summary: Microsoft 365 Defender portal unites multiple security technologies in one comprehensive administration console, with enhancements to protect your enterprise.  # < 160 chars
 
 metadata:
   title: Microsoft 365 security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about the robust security solutions and services in Microsoft 365 Security so that you can better protect your enterprise across attack surfaces # Required; article description that is displayed in search results. < 160 chars.
+  description: Learn about Microsoft Defender for Endpoint - how it protects endpoints from cyber threats and provides security operation teams with capabilities to remediate threats. # Required; article description that is displayed in search results. < 160 chars.
   services: office-365-security-compliance
-  ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice
+  ms.service: microsoft-365-security
   ms.topic: landing-page # Required
-  ms.collection: m365-security-compliance
+  ms.collection: m365-security
   author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
   ms.author: macapara #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/13/2019 #Required; mm/dd/yyyy format.
-  localization_priority: Priority
+  ms.date: 02/05/2021 #Required; mm/dd/yyyy format.
+  ms.localizationpriority: high
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -26,26 +25,25 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Microsoft 365 Defender?
-            url:  mtp/microsoft-threat-protection.md
-          - text: Microsoft 365 security center
-            url: mtp/overview-security-center.md
+        - text: Introduction to Microsoft 365 Defender
+          url:  defender/microsoft-365-defender.md
   # Card
   - title: Start with free trials
     linkLists:
-      - linkListType: overview
+      - linkListType: get-started
         links:
           - text: Evaluate Microsoft 365 Defender
-            url: mtp/mtp-evaluation.md
+            url: defender/eval-overview.md
           - text: Microsoft 365 Defender pilot playbook
-            url: mtp/mtp-pilot.md
+            url: defender/eval-overview.md
+  
   # Card
   - title: Secure your remote workforce
     linkLists:
-      - linkListType: get-started
+      - linkListType: how-to-guide
         links:
         - text: Secure your remote workforce
-          url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/     
+          url: /enterprise-mobility-security/remote-work/
 
   # Card
   - title: Microsoft Defender for Identity
@@ -53,9 +51,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Microsoft Defender for Identity?
-            url: https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp
+            url: /azure-advanced-threat-protection/what-is-atp
           - text: Microsoft Defender for Identity architecture
-            url: https://docs.microsoft.com/azure-advanced-threat-protection/atp-architecture
+            url: /azure-advanced-threat-protection/atp-architecture
 
    # Card
   - title: Defender for Office 365
@@ -63,57 +61,55 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Defender for Office 365?
-            url: office-365-security/office-365-atp.md
+            url: office-365-security/defender-for-office-365.md
           - text: Defender for Office 365 service description
-            url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
+            url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
             
   # Card
-  - title: Defender for Endpoint
+  - title: Microsoft Defender for Endpoint
     linkLists:
       - linkListType: overview
         links:
           - text: What is Microsoft Defender for Endpoint?
-            url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
-          - text: Overview of capabilities
-            url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
+            url: defender-endpoint/microsoft-defender-endpoint.md
+          - text: Microsoft Defender Security Center portal overview
+            url: defender-endpoint/portal-overview.md
              
   # Card (optional)
-  - title: Azure Defender
+  - title: Microsoft Defender for Cloud
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Azure Defender?
-            url: https://docs.microsoft.com/azure/security-center/security-center-intro
+          - text: What is Microsoft Defender for Cloud?
+            url: /azure/security-center/security-center-intro
           - text: Supported features
-            url: https://docs.microsoft.com/azure/security-center/security-center-services
+            url: /azure/security-center/security-center-services
   # Card
-  - title: Microsoft Cloud App Security
+  - title: Microsoft Defender for Cloud Apps
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Microsoft Cloud App Security?
-            url: https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
-          - text: Get started with Microsoft Cloud App Security
-            url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
+          - text: What is Microsoft Defender for Cloud Apps?
+            url: /cloud-app-security/what-is-cloud-app-security
+          - text: Get started with Microsoft Defender for Cloud Apps
+            url: /cloud-app-security/getting-started-with-cloud-app-security
   # Card
   - title: Security management 
     linkLists:
       - linkListType: overview
         links:
           - text: Secure score
-            url: mtp/microsoft-secure-score.md
+            url: defender/microsoft-secure-score.md
 
   # Card
-  - title: Azure Sentinel 
+  - title: Microsoft Sentinel 
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Azure Sentinel? 
-            url: https://docs.microsoft.com/azure/sentinel/overview
+          - text: What is Microsoft Sentinel? 
+            url: /azure/sentinel/overview
 
 
 
   
               
- 
-

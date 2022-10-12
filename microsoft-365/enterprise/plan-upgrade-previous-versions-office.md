@@ -1,15 +1,17 @@
 ---
 title: "Plan your upgrade from Office 2007 or 2010 servers and clients"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: ITPro
 ms.topic: overview
-ms.service: o365-solutions
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection: 
+- scotvorg
+- Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
@@ -42,9 +44,9 @@ Microsoft 365 is the way to digitally transform your business with constantly im
 |Resource|Description|
 |---|---|
 |[Microsoft 365](https://www.microsoft.com/microsoft-365)|Get information about the versions of Microsoft 365.|
-|[Microsoft 365 for Business documentation](https://docs.microsoft.com/microsoft-365/business/)|Get detailed information about the version of Microsoft 365 for small and medium businesses.|
-|[Microsoft 365 for Education documentation](https://docs.microsoft.com/microsoft-365/education/)|Get detailed information about the version of Microsoft 365 for educational organizations.|
-|[Microsoft 365 for Enterprise documentation](https://docs.microsoft.com/microsoft-365/enterprise/)|Get detailed information about the version of Microsoft 365 for enterprise organizations.|
+|[Microsoft 365 for Business documentation](../admin/index.yml)|Get detailed information about the version of Microsoft 365 for small and medium businesses.|
+|[Microsoft 365 for Education documentation](/microsoft-365/education/)|Get detailed information about the version of Microsoft 365 for educational organizations.|
+|[Microsoft 365 for Enterprise documentation](./index.yml)|Get detailed information about the version of Microsoft 365 for enterprise organizations.|
 |||
 
 ## What happens if I don't upgrade?
@@ -59,10 +61,10 @@ Organizations should consider several upgrade options:
 
   |Office 2007 products and services|Office 2010 products and services|
   |---|---|
-  |[Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) (Desktop)|[Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) (Desktop)|
+  |[Office 2007](/DeployOffice/office-2007-end-support-roadmap) (Desktop)|[Office 2010](/DeployOffice/office-2010-end-support-roadmap) (Desktop)|
   |[Exchange 2007](exchange-2007-end-of-support.md)|[Exchange 2010](exchange-2010-end-of-support.md)|
   |[SharePoint 2007](sharepoint-2007-end-of-support.md)|[SharePoint 2010](upgrade-from-sharepoint-2010.md)|
-  |[Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)|[Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)|
+  |[Office Communications Server](/skypeforbusiness/plan-your-deployment/upgrade)|[Lync Server 2010](/skypeforbusiness/plan-your-deployment/upgrade)|
   |[Project Server 2007](project-server-2007-end-of-support.md)|[Project Server 2010](project-server-2010-end-of-support.md)|
   |[PerformancePoint Server 2007](pps-2007-end-of-support.md)||
  
@@ -78,7 +80,7 @@ If you want help with planning your upgrade, consider one or more of the followi
 
 - If your organization purchases a qualifying number of Microsoft 365 licenses, our FastTrack team can help you through the setup process. For more information, see [FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365).
 
-- If you're part of a small organization, or if you prefer to handle your organization's Office upgrade yourself, see [Upgrade your Microsoft 365 Business users to the latest Office client](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client). 
+- If you're part of a small organization, or if you prefer to handle your organization's Office upgrade yourself, see [Upgrade your Microsoft 365 Business users to the latest Office client](/office365/admin/setup/upgrade-users-to-latest-office-client). 
   
 ## I'm a home user. What do I do?
 
@@ -109,4 +111,4 @@ If you choose not to upgrade now, your Office apps will continue to run accordin
    
 ## Related topics
   
-[Microsoft Lifecycle Policy](https://go.microsoft.com/fwlink/?linkid=865200)
+[Microsoft Lifecycle Policy](/lifecycle/)

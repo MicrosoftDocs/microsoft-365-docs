@@ -1,33 +1,36 @@
 ---
 title: "Manage hold notifications"
+description: "Use the communications workflow in eDiscovery (Premium) to track the status of your legal hold notifications and if necessary update and resend them."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance 
+ms.localizationpriority: medium
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: "Use the communications workflow in Advanced eDiscovery to track the status of your legal hold notifications and if necessary update and resend them."
 ---
 
 # Manage hold notifications
 
-After you have initiated your legal hold notification workflow, you can use the communications workflow in Advanced eDiscovery to track the status of your communications. The Communications tab contains a list of all notifications within your Advanced eDiscovery case. You can see details such as the number of custodians that have been assigned or have acknowledged the notice.
+After you have initiated your legal hold notification workflow, you can use the communications workflow in Microsoft Purview eDiscovery (Premium) to track the status of your communications. The Communications tab contains a list of all notifications within your eDiscovery (Premium) case. You can see details such as the number of custodians that have been assigned or have acknowledged the notice.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Monitor acknowledgments
 
 After you select a communication from the **Communications** tab, you can view a list of custodians that have acknowledged a hold notice. 
 
-1. In the compliance center, go to **eDiscovery > Advanced eDiscovery**.
+1. In the compliance center, go to **eDiscovery > eDiscovery (Premium)**.
 
 2. Select a case and then click the **Communications** tab.
 
@@ -41,7 +44,7 @@ Occasionally, custodians lose track of email messages in their day-to-day work. 
 
 To re-send a hold notice to a custodian:
 
-1. In Advanced eDiscovery, select a case and then click the **Communications** tab.
+1. In eDiscovery (Premium), select a case and then click the **Communications** tab.
 
 2. Select a communication to display the **Custodian communication** flyout page.
 
@@ -62,7 +65,7 @@ As the case progresses, custodians may be required to preserve additional or les
 
 To update the contents of the initial hold notice:
 
-1. In Advanced eDiscovery, select a case and then click the **Communications** tab.
+1. In eDiscovery (Premium), select a case and then click the **Communications** tab.
 
 2. Select the hold notice that you want to update and click **Edit** on the **Custodian communication** flyout page.
 

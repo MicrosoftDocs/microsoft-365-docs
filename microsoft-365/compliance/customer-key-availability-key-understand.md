@@ -3,11 +3,10 @@ title: "Learn about the availability key for Customer Key"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 02/05/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 description: "Learn about the availability key used to recover lost Customer Keys."
@@ -23,12 +22,14 @@ Storage and control of the availability key are deliberately different from Azur
 
 - The availability key provides a recovery, "break-glass" capability if control over both Azure Key Vault keys is lost.
 - The separation of logical controls and secure storage locations provides defense-in-depth and protects against the loss of all keys, and your data, from a single attack or point of failure.
-- The availability key provides a high-availability capability if Microsoft 365 services are unable to reach keys hosted in Azure Key Vault due to transient errors. This rule only applies to Exchange Online and Skype for Business service encryption. SharePoint Online, OneDrive for Business, and Teams files never use the availability key unless you explicitly instruct Microsoft to initiate the recovery process.
+- The availability key provides a high-availability capability if Microsoft 365 services are unable to reach keys hosted in Azure Key Vault due to transient errors. This rule only applies to Exchange Online and Skype for Business service encryption. SharePoint Online, OneDrive for Business, and Teams files never use the availability key unless you explicitly instruct Microsoft to initiate the recovery process.
 
-Sharing the responsibility to protect your data, using a variety of protections and processes for key management, ultimately reduces the risk that all keys (and therefore your data) will be permanently lost or destroyed. Microsoft provides you with sole authority over the disablement or destruction of the availability key when you leave the service. By design, no one at Microsoft has access to the availability key: it is only accessible by Microsoft 365 service code.
+Sharing the responsibility to protect your data, using various protections and processes for key management, ultimately reduces the risk that all keys (and therefore your data) will be permanently lost or destroyed. Microsoft provides you with sole authority over the disablement or destruction of the availability key when you leave the service. By design, no one at Microsoft has access to the availability key: it is only accessible by Microsoft 365 service code.
 
 See the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data) for more information about how we secure keys.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Availability key uses
 
 The availability key provides recovery capability for scenarios in which an external malefactor or malicious insider steals control of your key vault, or when inadvertent mismanagement results in loss of root keys. This recovery capability applies to all Microsoft 365 services compatible with Customer Key. Individual services use the availability key differently. Microsoft 365 only uses the availability key in the ways described below.
@@ -37,11 +38,11 @@ The availability key provides recovery capability for scenarios in which an exte
 
 In addition to the recovery capability, Exchange Online and Skype for Business use the availability key to ensure data availability during transient, or intermittent operational issues, related to the service accessing root keys. When the service cannot reach either of your Customer Keys in Azure Key Vault due to transient errors, the service automatically uses the availability key. The service NEVER goes directly to the availability key.
 
-Automated systems in Exchange Online and Skype for Business may use the availability key during transient errors to support automated back-end services such as anti-virus, e-discovery, data loss prevention, mailbox moves, and data indexing.
+Automated systems in Exchange Online and Skype for Business may use the availability key during transient errors to support automated back-end services such as anti-virus, e-discovery, Microsoft Purview Data Loss Prevention, mailbox moves, and data indexing.
 
-### SharePoint Online, OneDrive for Business, and Teams files uses
+### SharePoint Online, OneDrive for Business, and Teams files uses
 
-For SharePoint Online, OneDrive for Business, and Teams files, the availability key is NEVER used outside of the recovery capability and customers must explicitly instruct Microsoft to initiate use of the availability key during a recovery scenario. Automated service operations solely rely on your Customer Keys in Azure Key vault. For in-depth information about how the key hierarchy works for these services, see [How SharePoint Online, OneDrive for Business, and Teams files use the availability key](#how-sharepoint-online-onedrive-for-business-and-teams-files-use-the-availability-key).
+For SharePoint Online, OneDrive for Business, and Teams files, the availability key is NEVER used outside of the recovery capability and customers must explicitly instruct Microsoft to initiate use of the availability key during a recovery scenario. Automated service operations solely rely on your Customer Keys in Azure Key vault. For in-depth information about how the key hierarchy works for these services, see [How SharePoint Online, OneDrive for Business, and Teams files use the availability key](#how-sharepoint-online-onedrive-for-business-and-teams-files-use-the-availability-key).
 
 ## Availability key security
 
@@ -51,9 +52,9 @@ Microsoft shares the responsibility of data protection with you by instantiating
 
 Microsoft protects availability keys in access-controlled, internal secret stores like the customer-facing Azure Key Vault. We implement access controls to prevent Microsoft administrators from directly accessing the secrets contained within. Secret Store operations, including key rotation and deletion, occur through automated commands that never involve direct access to the availability key. Secret store management operations are limited to specific engineers and require privilege escalation through an internal tool, Lockbox. Privilege escalation requires manager approval and justification prior to being granted. Lockbox ensures access is time bound with automatic access revocation upon time expiration or engineer log out.
 
-**Exchange Online and Skype for Business** availability keys are stored in an Exchange Online Active Directory secret store. Availability keys are securely stored inside tenant specific containers within the Active Directory Domain Controller. This secure storage location is separate and isolated from the SharePoint Online, OneDrive for Business, and Teams files secret store.
+**Exchange Online and Skype for Business** availability keys are stored in an Exchange Online Active Directory secret store. Availability keys are securely stored inside tenant specific containers within the Active Directory Domain Controller. This secure storage location is separate and isolated from the SharePoint Online, OneDrive for Business, and Teams files secret store.
 
-**SharePoint Online, OneDrive for Business, and Teams files** availability keys are stored in an internal secret store managed by the service team. This secured, secrets storage service has front-end servers with application endpoints and a SQL Database as the back end. Availability keys are stored in the SQL Database and are wrapped (encrypted) by secret store encryption keys that use a combination of AES-256 and HMAC to encrypt the availability key at rest. The secret store encryption keys are stored in a logically isolated component of the same SQL Database and are further encrypted with RSA-2048 keys contained in certificates managed by the Microsoft certificate authority (CA). These certificates are stored in the secret store front-end servers that perform operations against the database.
+**SharePoint Online, OneDrive for Business, and Teams files** availability keys are stored in an internal secret store managed by the service team. This secured, secrets storage service has front-end servers with application endpoints and a SQL Database as the back end. Availability keys are stored in the SQL Database and are wrapped (encrypted) by secret store encryption keys that use a combination of AES-256 and HMAC to encrypt the availability key at rest. The secret store encryption keys are stored in a logically isolated component of the same SQL Database and are further encrypted with RSA-2048 keys contained in certificates managed by the Microsoft certificate authority (CA). These certificates are stored in the secret store front-end servers that perform operations against the database.
 
 ### Defense-in-depth
 
@@ -61,7 +62,7 @@ Microsoft employs a defense-in-depth strategy to prevent malicious actors from i
 
 Microsoft 365 is built to prevent misuse of the availability key. The application layer is the only method through which keys, including the availability key, can be used to encrypt and decrypt data. Only Microsoft 365 service code has the ability to interpret and traverse the key hierarchy for encryption and decryption activities. Logical isolation exists between the storage locations of Customer Keys, availability keys, other hierarchical keys, and customer data. This isolation mitigates the risk of data exposure in the event one or more locations are compromised. Each layer in the hierarchy has built in 24x7 intrusion detection capabilities to protect data and secrets stored.
 
-Access controls are implemented to prevent unauthorized access to internal systems, including availability key secret stores. Microsoft engineers don't have direct access to the availability key secret stores. For additional detail on access controls, review [Administrative Access Controls in Microsoft 365](https://docs.microsoft.com/Office365/securitycompliance/office-365-administrative-access-controls-overview).
+Access controls are implemented to prevent unauthorized access to internal systems, including availability key secret stores. Microsoft engineers don't have direct access to the availability key secret stores. For additional detail on access controls, review [Administrative Access Controls in Microsoft 365](/compliance/assurance/assurance-administrative-access-controls-overview).
 
 Technical controls prevent Microsoft personnel from logging into highly-privileged service accounts, which might otherwise be used by attackers to impersonate Microsoft services. For example, these controls prevent interactive logon.
 
@@ -81,9 +82,9 @@ To encrypt your data with new Customer Keys, create new keys in Azure Key Vault,
 
 This re-encryption process can take up to 72 hours. This is the standard duration when you change a DEP.
   
-### Recovery procedure for SharePoint Online, OneDrive for Business, and Teams files
+### Recovery procedure for SharePoint Online, OneDrive for Business, and Teams files
 
-For SharePoint Online, OneDrive for Business, and Teams files, the availability key is NEVER used outside of the recovery capability. You must explicitly instruct Microsoft to initiate use of the availability key during a recovery scenario. To initiate the recovery process, contact Microsoft to activate the availability key. Once activated, the availability key is automatically used to decrypt your data allowing you to encrypt the data with a newly-created DEP associated to new Customer Keys.  
+For SharePoint Online, OneDrive for Business, and Teams files, the availability key is NEVER used outside of the recovery capability. You must explicitly instruct Microsoft to initiate use of the availability key during a recovery scenario. To initiate the recovery process, contact Microsoft to activate the availability key. Once activated, the availability key is automatically used to decrypt your data allowing you to encrypt the data with a newly-created DEP associated to new Customer Keys.  
 
 This operation is proportional to the number of sites in your organization. Once you call Microsoft to use the availability key, you should be fully online within about four hours.
 
@@ -121,7 +122,7 @@ In case you lose access to your customer keys, Microsoft 365 also encrypts the T
   
 For availability and scale reasons, decrypted TIKs are cached in a time-limited memory cache. Two hours before a TIK cache is set to expire, Microsoft 365 attempts to decrypt each TIK. Decrypting the TIKs extends the lifetime of the cache. If TIK decryption fails for a significant amount of time, Microsoft 365 generates an alert to notify engineering prior to the cache expiration. Only if the customer calls Microsoft will Microsoft 365 initiate the recovery operation, which involves decrypting the TIK with the availability key stored in Microsoft's secret store and onboarding the tenant again using the decrypted TIK and a new set of customer-supplied Azure Key Vault keys.
   
-As of today, Customer Key is involved in the encryption and decryption chain of SharePoint Online file data stored in the Azure blob store, but not SharePoint Online list items or metadata stored in the SQL Database. Microsoft 365 does not use the availability key for Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams files other than the case described above, which is customer-initiated. Human access to customer data is protected by Customer Lockbox.
+As of today, Customer Key is involved in the encryption and decryption chain of SharePoint Online file data stored in the Azure blob store, but not SharePoint Online list items or metadata stored in the SQL Database. Microsoft 365 does not use the availability key for Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams files other than the case described above, which is customer-initiated. Human access to customer data is protected by Customer Lockbox.
 
 ## Availability key triggers
 
@@ -151,12 +152,12 @@ Microsoft 365 triggers the availability key only in specific circumstances. Thes
 
        - In this case, the availability key will be used only for system actions and not for user actions, the user request fails, and the user receives an error message.
 
->[!IMPORTANT]
->Microsoft 365 service code always has a valid login token for reasoning over customer data to provide value-adding cloud services. Therefore, until the availability key has been deleted, it can be used as a fallback for actions initiated by, or internal to, Exchange Online and Skype for Business such as search index creation or moving mailboxes. This applies to both transient ERRORS and ACCESS DENIED requests to Azure Key Vault.
+> [!IMPORTANT]
+> Microsoft 365 service code always has a valid login token for reasoning over customer data to provide value-adding cloud services. Therefore, until the availability key has been deleted, it can be used as a fallback for actions initiated by, or internal to, Exchange Online and Skype for Business such as search index creation or moving mailboxes. This applies to both transient ERRORS and ACCESS DENIED requests to Azure Key Vault.
 
 ### Triggers for SharePoint Online, OneDrive for Business, and Teams files
 
-For SharePoint Online, OneDrive for Business, and Teams files, the availability key is NEVER used outside of the recovery capability and customers must explicitly instruct Microsoft to initiate use of the availability key during a recovery scenario.
+For SharePoint Online, OneDrive for Business, and Teams files, the availability key is NEVER used outside of the recovery capability and customers must explicitly instruct Microsoft to initiate use of the availability key during a recovery scenario.
 
 ## Audit logs and the availability key
 
@@ -164,13 +165,13 @@ Automated systems in Microsoft 365 process all data as it flows through the syst
 
 ### Exchange Online and Skype for Business availability key logging
 
-When Exchange Online and Skype for Business accesses availability key to provide service, Microsoft 365 publishes customer-visible logs accessible from the Security and Compliance Center. An audit log record for the availability key operation is generated each time the service uses the availability key. A new record type called "Customer Key Service Encryption" with activity type "Fallback to Availability Key" allows admins to filter [Unified Audit Log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) search results to view availability key records.
+When Exchange Online and Skype for Business accesses availability key to provide service, Microsoft 365 publishes customer-visible logs accessible from the Security and Compliance Center. An audit log record for the availability key operation is generated each time the service uses the availability key. A new record type called "Customer Key Service Encryption" with activity type "Fallback to Availability Key" allows admins to filter [Unified Audit Log](./search-the-audit-log-in-security-and-compliance.md) search results to view availability key records.
 
 Log records include attributes such as date, time, activity, organization ID, and data encryption policy ID. The record is available as part of Unified Audit Logs and is accessible from the Security & Compliance Center Audit Log Search tab.
 
 ![Audit log search for availability key events](../media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
 
-Exchange Online and Skype for Business availability key records use the Office 365 Management Activity [common schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) with added custom parameters: Policy Id, Scope Key Version Id, and Request Id.
+Exchange Online and Skype for Business availability key records use the Office 365 Management Activity [common schema](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) with added custom parameters: Policy Id, Scope Key Version Id, and Request Id.
 
 ![Availability key custom parameters](../media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
 
@@ -188,18 +189,18 @@ Microsoft 365 uses the availability key to wrap the tier of keys lower in the ke
 
 ### Encryption ciphers used to encrypt keys for Exchange Online and Skype for Business
 
-![Encryption ciphers for Exchange Online Customer Key](../media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Encryption ciphers for Exchange Online in Customer Key](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
 ### Encryption ciphers used to encrypt keys for SharePoint Online and OneDrive for Business
 
-![Encryption ciphers for SharePoint Online Customer Key](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![Encryption ciphers for SharePoint Online in Customer Key](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## Related articles
 
-- [Service encryption with Customer Key](customer-key-overview.md)
+- [Service encryption with Customer Key](customer-key-overview.md)
 
-- [Set up Customer Key](customer-key-set-up.md)
+- [Set up Customer Key](customer-key-set-up.md)
 
-- [Manage Customer Key](customer-key-manage.md)
+- [Manage Customer Key](customer-key-manage.md)
 
-- [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)
+- [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)

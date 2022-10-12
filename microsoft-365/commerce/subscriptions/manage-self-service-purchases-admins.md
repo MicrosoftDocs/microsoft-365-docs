@@ -2,30 +2,29 @@
 title: Manage self-service purchases (Admins)
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
+ms.reviewer: prlachhw, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration 
-localization_priority: Normal
+ms.service: microsoft-365-business 
+ms.localizationpriority: medium
 ms.collection:
-- commerce 
-ms.custom: AdminSurgePortfolio
+- scotvorg
+- M365-subscription-management
+- Adm_O365
+ms.custom: 
+- commerce_ssp
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - MET150
 description: "Admins can learn how to manage self-service purchases made by users in their organization."
+ms.date: 05/24/2022
 ---
 
 # Manage self-service purchases (Admin)
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
-
-::: moniker-end
 
 As an admin, you can see self-service purchases made by people in your organization. You see the product name, purchaser name, subscriptions purchased, expiration date, purchase price, and assigned users for each self-service purchase. If required by your organization, you can turn off self-service purchasing on a per product basis via PowerShell. You have the same data management and access policies over products bought through self-service purchase or centrally.
 
@@ -33,13 +32,37 @@ You can also control whether users in your organization can make self-service pu
 
 ## View self-service subscriptions
 
+::: moniker range="o365-worldwide"
+
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+::: moniker-end
+
 2. On the **Products** tab, select the filter icon, then select **Self-service**.
 3. To view more details about a subscription, choose one from the list.
 
 ## View who has licenses for a self-service purchase subscription
 
+> [!NOTE]
+> As an admin, you can't assign or unassign licenses for a self-service purchase subscription bought by a user in your organization. You can [take over a self-service purchase subscription](#take-over-a-self-service-purchase-subscription), and then assign or unassign licenses.
+
+::: moniker range="o365-worldwide"
+
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page.
+
+::: moniker-end
+
 2. Select the filter icon, then choose **Self-service**.
 3. Select a product to see licenses assigned to people.
     > [!NOTE]
@@ -57,13 +80,27 @@ You can use the **MSCommerce** PowerShell module to:
 - View a list of applicable products and whether self-service purchase is enabled or disabled
 - View or modify the current setting for a specific product to either enable or disable it
 
+> [!IMPORTANT]
+> When you use the **AllowSelfServicePurchase** policy, it enables or disables both self-service purchases and self-service trials. For a list of the products available for self-service purchase, see [View a list of self-service purchase products and their status](allowselfservicepurchase-powershell.md#view-a-list-of-self-service-purchase-products-and-their-status). Only Project and Visio are available for trial subscriptions.
+
 For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
 
 ## Centralize licenses under a single subscription
 
 You can assign existing licenses or purchase additional subscriptions through existing agreements for users assigned to self-service purchases. After you assign these centrally purchased licenses, you can request that purchasers cancel their existing subscriptions.
 
-1. In the admin center go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
+::: moniker range="o365-worldwide"
+
+1. In the admin center go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Purchase services** page.
+
+::: moniker-end
+
 2. Find and choose the product that you want to buy, then choose **Buy**.
 3. Complete the remaining steps to complete your purchase.
 4. Follow the steps in [View who has licenses for a self-service purchased subscription](#view-who-has-licenses-for-a-self-service-purchase-subscription) to export a list of users to reference in the next step.
@@ -84,7 +121,18 @@ When you move users to a different subscription, the old subscription is automat
 > [!NOTE]
 > You must have an available license for each user you’re moving in the subscription that you’re moving users to.
 
+::: moniker range="o365-worldwide"
+
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.
+
+::: moniker-end
+
 2. On the **Products** tab, select the filter icon, then select **Self-service**.
 3. Select the subscription that you want to take over.
 4. On the subscription details page, in the **Subscriptions and settings** section, select **Take control of this subscription**.
@@ -98,7 +146,18 @@ When you move users to a different subscription, the old subscription is automat
 
 When you choose to cancel a self-service purchase subscription, users with licenses lose access to the product. The user who originally bought the self-service purchase subscription receives an email that says the subscription was canceled.
 
+::: moniker range="o365-worldwide"
+
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.
+
+::: moniker-end
+
 2. On the **Products** tab, select the filter icon, then select **Self-service**.
 3. Select the subscription that you want to cancel.
 4. On the subscription details page, in the **Subscriptions and settings** section, select **Take control of this subscription**.
@@ -110,6 +169,6 @@ When you choose to cancel a self-service purchase subscription, users with licen
 
 ## Need help? Contact us.
 
-For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.md).
+For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.yml).
 
-If you have questions or need help with self-service purchases, [contact support](../../admin/contact-support-for-business-products.md).
+If you have questions or need help with self-service purchases, [contact support](../../admin/get-help-support.md).

@@ -1,16 +1,18 @@
 ---
 title: "View Microsoft 365 licenses and services with PowerShell"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: 
@@ -35,8 +37,73 @@ Every Microsoft 365 subscription consists of the following elements:
     
 - **Licenses** Each licensing plan contains the number of licenses that you purchased. You assign licenses to users so they can use the Microsoft 365 services that are defined by the licensing plan. Every user account requires at least one license from one licensing plan so they can log on to Microsoft 365 and use the services.
     
-You can use PowerShell for Microsoft 365 to view details about the available licensing plans, licenses, and services in your Microsoft 365 organization. For more information about the products, features, and services that are available in different Office 365 subscriptions, see [Office 365 Plan Options](https://go.microsoft.com/fwlink/p/?LinkId=691147).
+You can use PowerShell for Microsoft 365 to view details about the available licensing plans, licenses, and services in your Microsoft 365 organization. For more information about the products, features, and services that are available in different Office 365 subscriptions, see [Office 365 Plan Options](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
 
+
+## Use the Microsoft Graph PowerShell SDK
+
+First, [connect to your Microsoft 365 tenant](/graph/powershell/get-started#authentication).
+
+Reading subscription license plans requires the Organization.Read.All permission scope or one of the other permissions listed in the ['List subscribedSkus' Graph API reference page](/graph/api/subscribedsku-list).
+
+```powershell
+Connect-Graph -Scopes Organization.Read.All
+```
+
+To view summary information about your current licensing plans and the available licenses for each plan, run this command:
+  
+```powershell
+Get-MgSubscribedSku | Select -Property Sku*, ConsumedUnits -ExpandProperty PrepaidUnits | Format-List
+```
+
+The results contain:
+  
+- **SkuPartNumber:** Shows the available licensing plans for your organization. For example, `ENTERPRISEPACK` is the license plan name for Office 365 Enterprise E3.
+    
+- **Enabled:** Number of licenses that you've purchased for a specific licensing plan.
+    
+- **ConsumedUnits:** Number of licenses that you've assigned to users from a specific licensing plan.
+    
+To view details about the Microsoft 365 services that are available in all of your license plans, first display a list of your license plans.
+
+```powershell
+Get-MgSubscribedSku
+```
+
+Next, store the license plans information in a variable.
+
+```powershell
+$licenses = Get-MgSubscribedSku
+```
+
+Next, display the services in a specific license plan.
+
+```powershell
+$licenses[<index>].ServicePlans
+```
+
+\<index> is an integer that specifies the row number of the license plan from the display of the `Get-MgSubscribedSku | Select SkuPartNumber` command, minus 1.
+
+For example, if the display of the `Get-MgSubscribedSku | Select SkuPartNumber` command is this:
+
+```powershell
+SkuPartNumber
+-------------
+WIN10_VDA_E5
+EMSPREMIUM
+ENTERPRISEPREMIUM
+FLOW_FREE
+```
+
+Then the command to display the services for the ENTERPRISEPREMIUM license plan is this:
+
+```powershell
+$licenses[2].ServicePlans
+```
+
+ENTERPRISEPREMIUM is the third row. Therefore, the index value is (3 - 1), or 2.
+
+For a complete list of license plans (also known as product names), their included service plans, and their corresponding friendly names, see [Product names and service plan identifiers for licensing](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
 
 ## Use the Azure Active Directory PowerShell for Graph module
 
@@ -95,7 +162,7 @@ $licenses[2].ServicePlans
 
 ENTERPRISEPREMIUM is the third row. Therefore, the index value is (3 - 1), or 2.
 
-For a complete list of license plans (also known as product names), their included service plans, and their corresponding friendly names, see [Product names and service plan identifiers for licensing](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+For a complete list of license plans (also known as product names), their included service plans, and their corresponding friendly names, see [Product names and service plan identifiers for licensing](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
 
 ## Use the Microsoft Azure Active Directory Module for Windows PowerShell
 
@@ -145,7 +212,7 @@ The following table shows the Microsoft 365 service plans and their friendly nam
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online Plan 2  <br/> |
    
-For a complete list of license plans (also known as product names), their included service plans, and their corresponding friendly names, see [Product names and service plan identifiers for licensing](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+For a complete list of license plans (also known as product names), their included service plans, and their corresponding friendly names, see [Product names and service plan identifiers for licensing](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
 
 To view details about the Microsoft 365 services that are available in a specific licensing plan, use the following syntax.
   

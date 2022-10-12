@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: End User
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
@@ -31,7 +32,7 @@ The Outlook for Android and Outlook for iOS mobile apps are designed for your wo
 
 Your organization requires that you use the Outlook for Android or Outlook for iOS mobile apps to access company email, calendar, and contacts. Your data will start syncing once you download and install Outlook for Android or Outlook for iOS.
 
-![Example email to use Outlook to sync email](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
+![Example email to use Outlook to sync email.](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
 
 Check out [Optimize the Outlook mobile app for your iOS or Android phone](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890) for more Outlook features. And go to [Outlook for iOS and Android Help Center](https://support.microsoft.com/office/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6) if you run into any issues.
 

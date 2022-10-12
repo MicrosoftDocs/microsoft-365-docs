@@ -1,5 +1,5 @@
 ---
-title: "Message Encryption"
+title: "Office 365 Message Encryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -8,13 +8,13 @@ manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.date: 02/07/2020
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
@@ -27,55 +27,57 @@ People often use email to exchange sensitive information, such as financial data
 
 With Office 365 Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Office 365 Message Encryption works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps ensure that only intended recipients can view message content.
 
-## How Office 365 Message Encryption works
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-The rest of this article applies to the new OME capabilities.
+## How Message Encryption works
 
-Office 365 Message Encryption is an online service that's built on Microsoft Azure Rights Management (Azure RMS) which is part of Azure Information Protection. This service includes encryption, identity, and authorization policies to help secure your email. You can encrypt messages by using rights management templates, the [Do Not Forward option](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails), and the [encrypt-only option](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+The rest of this article applies to the Microsoft Purview Message Encryption.
 
-Users can then encrypt email messages and various attachments by using these options. For a full list of supported attachment types, see ["File types covered by IRM policies when they are attached to messages" in Introduction to IRM for email messages](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM).
+Microsoft Purview Message Encryption is an online service that's built on Microsoft Azure Rights Management (Azure RMS) which is part of Azure Information Protection. This service includes encryption, identity, and authorization policies to help secure your email. You can encrypt messages by using rights management templates, the [Do Not Forward option](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails), and the [encrypt-only option](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+
+Users can then encrypt email messages and various attachments by using these options. For a full list of supported attachment types, see ["File types covered by IRM policies when they're attached to messages" in Introduction to IRM for email messages](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM).
 
 As an administrator, you can also define mail flow rules to apply this protection. For example, you can create a rule that requires the encryption of all messages addressed to a specific recipient, or that contains specific words in the subject line, and also specify that recipients can't copy or print the contents of the message.
 
 Unlike the previous version of OME, the new capabilities provide a unified sender experience whether you're sending mail inside your organization or to recipients outside of Microsoft 365. In addition, recipients who receive a protected email message sent to a Microsoft 365 account in Outlook 2016 or Outlook on the web, don't have to take any other action to view the message. It works seamlessly. Recipients using other email clients and email service providers also have an improved experience. For information, see [Learn about protected messages in Office 365](https://support.office.com/article/Learn-about-protected-messages-in-Office-365-2baf3ac7-12db-40a4-8af7-1852204b4b67) and [How do I open a protected message](https://support.office.com/article/How-do-I-open-a-protected-message-1157a286-8ecc-4b1e-ac43-2a608fbf3098).
 
-For a detailed list of the differences between the previous version of OME and the new OME capabilities, see [Compare versions of OME](ome-version-comparison.md).
+For a detailed list of the differences between the previous version of OME and Microsoft Purview Message Encryption, see [Compare versions of message encryption](ome-version-comparison.md).
 
 When someone sends an email message that matches an encryption mail flow rule, the message is encrypted before it's sent. All Microsoft 365 end users that use Outlook clients to read mail receive native, first-class reading experiences for encrypted and rights-protected mail even if they're not in the same organization as the sender. Supported Outlook clients include Outlook desktop, Outlook Mac, Outlook mobile on iOS and Android, and Outlook on the web (formerly known as Outlook Web App).
 
-Recipients of encrypted messages who receive encrypted or rights-protected mail sent to their Outlook.com, Gmail, and Yahoo accounts receive a wrapper mail that directs them to the OME Portal where they can easily authenticate using a Microsoft account, Gmail, or Yahoo credentials.
+Recipients of encrypted messages who receive encrypted or rights-protected mail sent to their Gmail and Yahoo accounts receive a wrapper mail that directs them to the OME Portal where they can easily authenticate using a Microsoft account, Gmail, or Yahoo credentials.
 
-End users that read encrypted or rights-protected mail on clients other than Outlook also use the OME portal to view encrypted and rights-protected messages that they receive.
+End users that read encrypted or rights-protected mail on clients other than Outlook also use the encrypted message portal to view encrypted and rights-protected messages that they receive.
 
-If the sender of the protected mail is in GCC High and the recipient is outside of GCC High, including commercial users, Outlook.com users, and users of other email providers such as Gmail, the recipient receives a wrapper mail. The wrapper mail directs the recipient to the OME Portal where the recipient is able to read and reply to the message. Otherwise, if the sender and recipient are both in the GCC High environment, even if they're not in the same organization, then recipients that use Outlook clients to read mail receive native, first-class reading experiences for encrypted and rights-protected mail. For more information about the different experience in GCC High, see [Compare versions of OME](ome-version-comparison.md).
+If the sender of the protected mail is in GCC High and the recipient is outside of GCC High, including commercial users, Outlook.com users, and users of other email providers such as Gmail, the recipient receives a wrapper mail. The wrapper mail directs the recipient to the encrypted message portal where the recipient is able to read and reply to the message. Otherwise, if the sender and recipient are both in the GCC High environment, even if they're not in the same organization, then recipients that use Outlook clients to read mail receive native, first-class reading experiences for encrypted and rights-protected mail. For more information about the different experience in GCC High, see [Compare versions of OME](ome-version-comparison.md).
 
-For more information about size limits for messages and attachments that you can encrypt using OME, see [Exchange Online Limits](https://technet.microsoft.com/library/exchange-online-limits.aspx).
+For more information about size limits for messages and attachments that you can encrypt using OME, see [Exchange Online Limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
-## How Office 365 Advanced Message Encryption works on top of OME
+## How Microsoft Purview Advanced Message Encryption works on top of Microsoft Purview Message Encryption
 
-Office 365 Advanced Message Encryption lets you create multiple branding templates so you can fine-tune control over recipient mail and create custom branding experiences to support a diverse organizational structure.
+Microsoft Purview Advanced Message Encryption lets you create multiple branding templates so you can fine-tune control over recipient mail and create custom branding experiences to support a diverse organizational structure.
 
-Advanced Message Encryption in Microsoft 365 helps you meet compliance obligations that require more flexible control over external recipient's access to encrypted emails. With Advanced Message Encryption in Office 365, as an administrator, you can control sensitive emails shared outside the organization with automatic policies that detect sensitive information types (for example, PII, Financial or Health IDs) or keywords to enhance protection by expiring access through a secure web portal to encrypted emails. As an admin you can further control encrypted emails accessed through a Microsoft 365 web portal by revoking access to an email anytime.
+Advanced Message Encryption in Microsoft 365 helps you meet compliance obligations that require more flexible control over external recipient's access to encrypted emails. With Advanced Message Encryption, as an administrator, you can control sensitive emails shared outside the organization with automatic policies that detect sensitive information types (for example, PII, Financial or Health IDs) or keywords to enhance protection by expiring access through a secure web portal to encrypted emails. As an admin you can further control encrypted emails accessed through a web portal by revoking access to an email anytime.
 
-Message revocation and expiration only work for emails that your users send to recipients outside your organization. In addition, the recipients must access the email through the web portal. To ensure the recipient uses the portal to receive email, you set up a custom branding template that applies the wrapper. Then, you apply the branding template in a mail flow rule. For more information about Advanced Message Encryption, see [Office 365 Advanced Message Encryption](ome-advanced-message-encryption.md).
+Message revocation and expiration only work for emails that your users send to recipients outside your organization. In addition, the recipients must access the email through the web portal. To ensure the recipient uses the portal to receive email, you set up a custom branding template that applies the wrapper. Then, you apply the branding template in a mail flow rule. For more information about Advanced Message Encryption, see [Advanced Message Encryption](ome-advanced-message-encryption.md).
 
-## Defining rules for Office 365 Message Encryption
+## Defining rules for Microsoft Purview Message Encryption
 
-One way to enable the new capabilities for Office 365 Message Encryption is for Exchange Online and Exchange Online Protection administrators to define mail flow rules. These rules determine under what conditions email messages should be encrypted. When an encryption action is set for a rule, any messages that match the rule conditions are encrypted before they're sent.
+One way to enable Microsoft Purview Message Encryption is for Exchange Online and Exchange Online Protection administrators to define mail flow rules. These rules determine under what conditions email messages should be encrypted. When an encryption action is set for a rule, any messages that match the rule conditions are encrypted before they're sent.
 
-Mail flow rules are flexible, letting you combine conditions so you can meet specific security requirements in a single rule. For example, you can create a rule to encrypt all messages that contain specified keywords and are addressed to external recipients. The new capabilities for Office 365 Message Encryption also encrypt replies from recipients of encrypted email.
+Mail flow rules are flexible, letting you combine conditions so you can meet specific security requirements in a single rule. For example, you can create a rule to encrypt all messages that contain specified keywords and are addressed to external recipients. Microsoft Purview Message Encryption also encrypts replies from recipients of encrypted email.
 
-For more information about how to create mail flow rules to take advantage of the new OME capabilities, see [Define Rules for Office 365 Message Encryption](define-mail-flow-rules-to-encrypt-email.md).
+For more information about how to create mail flow rules to take advantage of Microsoft Purview Message Encryption, see [Define mail flow rules to encrypt email messages](define-mail-flow-rules-to-encrypt-email.md).
 
-## Get started with the new OME capabilities
+## Get started with the Microsoft Purview Message Encryption
 
-If you're ready to get started using the new OME capabilities within your organization, see [Set up new Office 365 Message Encryption capabilities](set-up-new-message-encryption-capabilities.md).
+If you're ready to get started using Microsoft Purview Message Encryption within your organization, see [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md).
 
 ## Sending, viewing, and replying to encrypted email messages
 
-With Office 365 Message Encryption, users can send encrypted email from Outlook and Outlook on the web. Additionally, admins can set up mail flow rules in Microsoft 365 to automatically encrypt emails based on keyword matching or other conditions.
+With Microsoft Purview Message Encryption, users can send encrypted email from Outlook and Outlook on the web. Additionally, admins can set up mail flow rules in Microsoft 365 to automatically encrypt emails based on keyword matching or other conditions.
 
-Recipients of encrypted messages who are in organizations will be able to read those messages seamlessly in any version Outlook, including Outlook for PC, Outlook for Mac, Outlook on the web, Outlook for iOS, and Outlook for Android. Users that receive encrypted messages on other email clients can view the messages in the OME portal.
+Recipients of encrypted messages who are in organizations will be able to read those messages seamlessly in any version Outlook, including Outlook for PC, Outlook for Mac, Outlook on the web, Outlook for iOS, and Outlook for Android. Users that receive encrypted messages on other email clients can view the messages in the encrypted message portal.
 
 For detailed guidance about how to send and view encrypted messages, take a look at these articles.
 

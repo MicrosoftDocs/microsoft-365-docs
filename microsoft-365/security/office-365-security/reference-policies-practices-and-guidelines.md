@@ -9,25 +9,25 @@ ms.date:
 audience: ITPro
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Microsoft has developed various policies, procedures, and adopted several industry best practices to help protect our users from abusive, unwanted, or malicious email.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Reference: Policies, practices, and guidelines
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Microsoft is dedicated to helping provide the most trusted user experience on the web. Therefore, Microsoft has developed various policies, procedures, and adopted several industry best practices to help protect our users from abusive, unwanted, or malicious email. Senders attempting to send email to users should ensure they fully understand and are following the guidance in this article to help in this effort and to help avoid potential delivery issues.
 
@@ -79,7 +79,7 @@ Senders, ISP's, and other service providers should actively manage the reputatio
 
 ## Microsoft 365 limits
 
-Senders must adhere to Microsoft 365 limits listed in [Exchange Online Protection Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
+Senders must adhere to Microsoft 365 limits listed in [Exchange Online Protection Limits](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
 
 ## Email delivery resources and organizations
 

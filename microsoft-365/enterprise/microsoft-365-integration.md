@@ -1,18 +1,19 @@
 ---
 title: "Microsoft 365 integration with on-premises environments"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: 
  - Adm_O365
  - seo-marvel-apr2020
 ms.collection:
+- scotvorg
 - Ent_O365
 search.appverid:
 - MET150
@@ -41,7 +42,7 @@ You can also use the Azure Active Directory (Azure AD) advisors for customized s
    
 ## Before you begin
 
-Before you integrate Microsoft 365 and an on-premises environment, you also need to do [network planning and performance tuning](network-planning-and-performance.md). You will also want to understand the available [identity models](about-microsoft-365-identity.md). 
+Before you integrate Microsoft 365 and an on-premises environment, you also need to do [network planning and performance tuning](network-planning-and-performance.md). You will also want to understand the available [identity models](deploy-identity-solution-identity-model.md). 
 
 See [manage Microsoft 365 accounts](manage-microsoft-365-accounts.md) for a list of tools you can use to manage Microsoft 365 user accounts. 
   
@@ -49,17 +50,17 @@ See [manage Microsoft 365 accounts](manage-microsoft-365-accounts.md) for a list
 
 If you have existing user accounts in AD DS, you don't want to re-create all of those accounts in Microsoft 365 and risk introducing differences or errors between the environments. Directory synchronization helps you mirror those accounts between your on-premises and online environments. With directory synchronization, your users don't have to remember new information for each environment, and you don't have to create or update accounts twice. You will need to [prepare your on-premises directory](prepare-for-directory-synchronization.md) for directory synchronization.
   
-![Use directory synchronization to keep on-premises and online user account information synchronized](../media/microsoft-365-integration/directory-synchronization.png)
+![Use directory synchronization to keep on-premises and online user account information synchronized.](../media/microsoft-365-integration/directory-synchronization.png)
   
 If you want users to be able to log on to Microsoft 365 with their on-premises credentials, you can also configure SSO. With SSO, Microsoft 365 is configured to trust the on-premises environment for user authentication.
   
-![With single sign-on, the same account is available in both the on-premises and online environments](../media/microsoft-365-integration/single-sign-on.png)
+![With single sign-on, the same account is available in both the on-premises and online environments.](../media/microsoft-365-integration/single-sign-on.png)
 
 ### Directory synchronization with or without password hash synchronization or pass-through authentication (PTA)
 
 A user logs on to their on-premises environment with their user account (domain\username). When they go to Microsoft 365, they must log on again with their work or school account (user@domain.com). The user name is the same in both environments. When you add PHS or PTA, the user has the same password for both environments, but will have to provide those credentials again when logging on to Microsoft 365. Directory synchronization with PHS is the most commonly used directory synchronization .
 
-To set up directory synchronization, use Azure AD Connect. For instructions, see [Set up directory synchronization for Microsoft 365](set-up-directory-synchronization.md) and [Azure AD Connect with express settings](https://go.microsoft.com/fwlink/p/?LinkId=698537).
+To set up directory synchronization, use Azure AD Connect. For instructions, see [Set up directory synchronization for Microsoft 365](set-up-directory-synchronization.md) and [Azure AD Connect with express settings](/azure/active-directory/hybrid/how-to-connect-install-express).
 
 Learn more about [preparing for directory synchronization to Microsoft 365](prepare-for-directory-synchronization.md).
 
@@ -67,13 +68,13 @@ Learn more about [preparing for directory synchronization to Microsoft 365](prep
 
 A user logs on to their on-premises environment with their user account. When they go to Microsoft 365, they are either logged on automatically, or they log on using the same credentials they use for their on-premises environment (domain\username).
 
-To set up SSO you also use Azure AD Connect. For instructions, see [Custom installation of Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkID=698430).
+To set up SSO you also use Azure AD Connect. For instructions, see [Custom installation of Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-custom).
 
-For more information, see [single sign-on](https://go.microsoft.com/fwlink/p/?LinkId=698604).
+For more information, see [single sign-on](/azure/active-directory/manage-apps/what-is-single-sign-on).
 
 ## Azure AD Connect
 
-Azure AD Connect replaces older versions of identity integration tools such as DirSync and Azure AD Sync. If you want to update from Azure Active Directory Sync to Azure AD Connect, see [the upgrade instructions](https://go.microsoft.com/fwlink/p/?LinkId=733240). 
+Azure AD Connect replaces older versions of identity integration tools such as DirSync and Azure AD Sync. If you want to update from Azure Active Directory Sync to Azure AD Connect, see [the upgrade instructions](/azure/active-directory/hybrid/how-to-dirsync-upgrade-get-started). 
 
 ## See also
 

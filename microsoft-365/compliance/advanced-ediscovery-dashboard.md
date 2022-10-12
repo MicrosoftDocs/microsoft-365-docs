@@ -1,30 +1,34 @@
 ---
-title: "Advanced eDiscovery dashboard for review sets"
+title: "eDiscovery (Premium) dashboard for review sets"
+description: "Use the Microsoft Purview eDiscovery (Premium) dashboard for review sets to quickly analyze your corpus to identify trends or key statistics that will help you develop your review strategy."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 04/05/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance 
+ms.localizationpriority: medium
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid:  
-description: "Use the Advanced eDiscovery dashboard for review sets to quickly analyze your corpus to identify trends or key statistics that will help you develop your review strategy."
 ---
 
-# Advanced eDiscovery dashboard for review sets
+# eDiscovery (Premium) dashboard for review sets
 
-For some cases in Advanced eDiscovery, you may have a large volume of documents and email messages that need to be reviewed. Before you start the review process, you may want to quickly analyze your corpus to identify trends or key statistics that will help you develop your review strategy. To do this, you can use the Advanced eDiscovery dashboard for review sets to quickly analyze your corpus.
+For some cases in Microsoft Purview eDiscovery (Premium), you may have a large volume of documents and email messages that need to be reviewed. Before you start the review process, you may want to quickly analyze your corpus to identify trends or key statistics that will help you develop your review strategy. To do this, you can use the eDiscovery (Premium) dashboard for review sets to quickly analyze your corpus.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Create a widget on the review set dashboard
 
-1. In the Security & Compliance Center, go to **eDiscovery > Advanced eDiscovery** to display the list of cases in your organization.
+1. In the Microsoft Purview compliance portal, go to **eDiscovery > eDiscovery (Premium)** to display the list of cases in your organization.
   
 2. Select an existing case.
   
@@ -32,15 +36,15 @@ For some cases in Advanced eDiscovery, you may have a large volume of documents 
   
 4. In the **Individual results** dropdown list, click **Search profile view**. 
 
-   ![DashbordPivot](../media/dashboardpivot.png)
+   ![DashboardPivot.](../media/dashboardpivot.png)
 
    The **Search profile view** page is displayed; the first time you display this page, three default widgets are displayed.
 
-   ![Dashboard](../media/dashboardonly.png)
+   ![Dashboard.](../media/dashboardonly.png)
   
 5. Click the **New  widget** and then select one of the following items:
 
-   ![New widget dropdown list](../media/NewWidgetDropdownBox.png)
+   ![New widget dropdown list.](../media/NewWidgetDropdownBox.png)
 
    - **Choose from library:** Displays a default library of widgets. You click a widget and then click **Add** to add it to the widgets on the **Search profile view** page.
   
@@ -48,11 +52,11 @@ For some cases in Advanced eDiscovery, you may have a large volume of documents 
 
 6. To create a custom widget, do the following on the **Add widget** flyout page:
 
-   ![Create Widget](../media/addwidget.png)
+   ![Create Widget.](../media/addwidget.png)
 
     a. Type a name for the widget, which is displayed in the widget title bar. Naming a widget is required, but it's helpful to identify the widget data.
 
-    b. Select a property in the **Choose pivot** dropdown list that will be used for the widget data. The items in this list are the searchable properties for the items in the review set. For a description of these properties, see [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md). The pivot options for the widget are listed in the **Searchable field name** column in this topic.
+    b. Select a property in the **Choose pivot** dropdown list that will be used for the widget data. The items in this list are the searchable properties for the items in the review set. For a description of these properties, see [Document metadata fields in eDiscovery (Premium)](document-metadata-fields-in-Advanced-eDiscovery.md). The pivot options for the widget are listed in the **Searchable field name** column in this topic.
 
     c. Select a chart type to display the data from the selected pivot property.
 
@@ -62,17 +66,17 @@ For some cases in Advanced eDiscovery, you may have a large volume of documents 
 
 1. Click **...** in the widget title bar, and then click **Apply condition**.
 
-   ![Dashboard](../media/searchprofilehome.png)
+   ![Dashboard home.](../media/searchprofilehome.png)
 
 2. On the flyout page, click an element on the widget key or widget chart to create a filter.
 
-   ![CreateFilter](../media/applyconditionfilter.png)
+   ![CreateFilter.](../media/applyconditionfilter.png)
 
 3. Repeat steps 1-2 for other widgets multiple widgets. 
 
 4. When you're done, click **Save as query** to save your conditions as a new search query for the review set.
 
-   ![Query](../media/savequery.png)
+   ![Query.](../media/savequery.png)
 
 5. Close the **Search profile view** to return to the search results view.
 

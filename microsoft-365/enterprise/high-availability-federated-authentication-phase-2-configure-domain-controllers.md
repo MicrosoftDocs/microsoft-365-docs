@@ -1,14 +1,16 @@
 ---
-title: "High availability federated authentication Phase 2 Configure domain controllers"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+title: High availability federated authentication Phase 2 Configure domain controllers
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
@@ -31,17 +33,17 @@ First, you need to fill out the **Virtual machine name** column of Table M and m
   
 |**Item**|**Virtual machine name**|**Gallery image**|**Storage type**|**Minimum size**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |![line](../media/Common-Images/TableLine.png) (first domain controller, example DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |![line](../media/Common-Images/TableLine.png) (second domain controller, example DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![line](../media/Common-Images/TableLine.png) (directory synchronization server, example DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![line](../media/Common-Images/TableLine.png) (first AD FS server, example ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![line](../media/Common-Images/TableLine.png) (second AD FS server, example ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![line](../media/Common-Images/TableLine.png) (first web application proxy server, example WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![line](../media/Common-Images/TableLine.png) (second web application proxy server, example WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![line.](../media/Common-Images/TableLine.png) (first domain controller, example DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![line.](../media/Common-Images/TableLine.png) (second domain controller, example DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![line.](../media/Common-Images/TableLine.png) (directory synchronization server, example DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![line.](../media/Common-Images/TableLine.png) (first AD FS server, example ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![line.](../media/Common-Images/TableLine.png) (second AD FS server, example ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![line.](../media/Common-Images/TableLine.png) (first web application proxy server, example WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![line.](../media/Common-Images/TableLine.png) (second web application proxy server, example WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
  **Table M - Virtual machines for the high availability federated authentication for Microsoft 365 in Azure**
   
-For the complete list of virtual machine sizes, see [Sizes for virtual machines](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes).
+For the complete list of virtual machine sizes, see [Sizes for virtual machines](/azure/virtual-machines/sizes).
   
 The following Azure PowerShell command block creates the virtual machines for the two domain controllers. Specify the values for the variables, removing the \< and > characters. Note that this Azure PowerShell command block uses values from the following tables:
   
@@ -60,7 +62,7 @@ The following Azure PowerShell command block creates the virtual machines for th
 Recall that you defined Tables R, V, S, I, and A in [Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
+> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell](/powershell/azure/get-started-azureps). 
   
 When you have supplied all the correct values, run the resulting block at the Azure PowerShell prompt or in the PowerShell Integrated Script Environment (ISE) on your local computer.
   
@@ -240,7 +242,7 @@ Here is the configuration resulting from the successful completion of this phase
   
 **Phase 2: The domain controllers and directory synchronization server for your high availability federated authentication infrastructure in Azure**
 
-![Phase 2 of the high availability Microsoft 365 federated authentication infrastructure in Azure with domain controllers](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
+![Phase 2 of the high availability Microsoft 365 federated authentication infrastructure in Azure with domain controllers.](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## Next step
 
@@ -252,6 +254,4 @@ Use [Phase 3: Configure AD FS servers](high-availability-federated-authenticatio
   
 [Federated identity for your Microsoft 365 dev/test environment](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Microsoft 365 solution and architecture center](../solutions/solution-architecture-center.md)
-
-
+[Microsoft 365 solution and architecture center](../solutions/index.yml)

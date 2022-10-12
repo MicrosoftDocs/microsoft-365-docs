@@ -2,54 +2,40 @@
 title: "Manage auto-claim policies"
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
+ms.reviewer: yinggiy, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
-description: "Learn how to create and manage auto-claim policies that automatically assign licenses to users for certain apps."
 ms.custom: 
+- commerce_licensing
 - AdminSurgePortfolio
-- commerce
-search.appverid:
-- MET150
+description: "Learn how to create and manage auto-claim policies that automatically assign licenses to users for certain apps."
+search.appverid: MET150
+ms.date: 04/06/2021
 ---
 
-# Manage auto-claim policies
+# Manage Microsoft Teams auto-claim policies
 
-An auto-claim policy lets users automatically claim a license for a
-product the first time that they sign into an app. As an admin, you
-typically assign licenses to users either manually, or by using
-group-based licensing. By using auto-claim policies, you manage the
-products for which users can automatically claim licenses. You can also
-control which products those licenses come from.
-
-After you create an auto-claim policy, you can do the following tasks to
-manage the policy:
-
-- [Turn the policy on or off](#turn-a-policy-on-or-off)
-- [Edit the policy friendly name](#edit-the-policy-friendly-name)
-- [Add or remove backup products](#add-or-remove-backup-products)
-- [Manage the assigning apps and services](#change-the-assigning-apps-and-services)
-- [Change the assigning order](#change-the-assigning-order-for-backup-products)
-- [View a policy report](#view-an-auto-claim-policy-report)
+An auto-claim policy lets users automatically claim a license for a product the first time that they sign into an app. As an admin, you typically assign licenses to users either manually, or by using group-based licensing. By using auto-claim policies, you manage the products for which users can automatically claim licenses. You can also control which products those licenses come from.
 
 > [!IMPORTANT]
 > Auto-claim policies are currently only available for Microsoft Teams. More products will be available to use in the future.
 
 ## Before you begin
 
-You must be a Global, Billing, or User admin to create and manage auto-claim policies. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
+You must be a Global admin to create and manage auto-claim policies. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## Turn the auto-claim policy feature on or off
 
-By default, the auto-claim policy feature is turned off. Before you can use the feature, you must first turn it on. After you turn on the feature, you
-can create an auto-claim policy.
+By default, the auto-claim policy feature is turned off. Before you can use the feature, you must first turn it on. After you turn on the feature, you can create an auto-claim policy.
 
 ### Turn on auto-claim policies
 
@@ -57,6 +43,8 @@ can create an auto-claim policy.
 2. In the center of the page, select the **Turn on setting** button.
 
 ### Turn off auto-claim policies
+
+Only a Global admin can turn off an auto-claim policy setting.
 
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Org settings</a> page.
 2. Near the bottom of the table, select **User owned apps and services**.
@@ -66,16 +54,9 @@ If you already have an active policy, but you don't want any more users to claim
 
 ## Create an auto-claim policy
 
-The <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab lists the policies that you create. On
-this tab, you can see: the name of the policy, the app that is
-associated with the policy, the product that's assigned to the policy,
-the number of available licenses, and the status of the policy.
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab lists the policies that you create. On this tab, you can see: the name of the policy, the app that is associated with the policy, the product that's assigned to the policy, the number of available licenses, and the status of the policy.
 
-When you create an auto-claim policy, you can add a backup product to
-it. If the primary product is out of licenses, the backup
-product is used to assign licenses to users. You can add up to four backup
-products and [change the order in which they're used](#change-the-assigning-order-for-backup-products). To learn more,
-see [Add or remove backup products](#add-or-remove-backup-products).
+When you create an auto-claim policy, you can add a backup product to it. If the primary product is out of licenses, the backup product is used to assign licenses to users. You can add up to four backup products and [change the order in which they're used](#change-the-assigning-order-for-backup-products). To learn more, see [Add or remove backup products](#add-or-remove-backup-products).
 
 > [!NOTE]
 > Currently, you can only create one auto-claim policy. The number of policies you can create will increase as more products are able to use this feature.
@@ -93,9 +74,7 @@ see [Add or remove backup products](#add-or-remove-backup-products).
 
 ## Turn a policy on or off
 
-When you turn off a policy, no more users can claim licenses under that
-policy. The change doesn't affect users who already claimed licenses
-under that policy.
+When you turn off a policy, no more users can claim licenses under that policy. The change doesn't affect users who already claimed licenses under that policy.
 
 1. In the admin center, go to the **Billing** \> **Licenses** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab.
 2. Select the policy that you want to edit.
@@ -112,17 +91,9 @@ under that policy.
 
 ## Add or remove backup products
 
-When you create a policy, you add a product to it. Licenses are then
-automatically assigned to users from that pool of licenses. You can add
-or remove products for an auto-claim policy at any time. If you already
-have one product associated with the policy, any products that you add
-are considered backup products. When the available number of licenses
-from the first product are used up, the policy uses the next backup
-product on the list to assign licenses from. You [can reorder the list of products](#change-the-assigning-apps-and-services) as you like.
+When you create a policy, you add a product to it. Licenses are then automatically assigned to users from that pool of licenses. You can add or remove products for an auto-claim policy at any time. If you already have one product associated with the policy, any products that you add are considered backup products. When the available number of licenses from the first product are used up, the policy uses the next backup product on the list to assign licenses from. You [can reorder the list of products](#change-the-assigning-apps-and-services) as you like.
 
-When you remove a backup product, it's no longer used to assign
-licenses. Users with an existing license still have that license, but no
-new users can receive licenses for that product.
+When you remove a backup product, it's no longer used to assign licenses. Users with an existing license still have that license, but no new users can receive licenses for that product.
 
 > [!NOTE]
 > An auto-claim policy must contain at least one product. You can't remove all products from a policy. If you don't want to assign licenses from a specific auto-claim policy anymore, [turn off the policy](#view-an-auto-claim-policy-report).
@@ -147,10 +118,7 @@ new users can receive licenses for that product.
 
 ## Change the assigning apps and services
 
-Each product has a collection of apps and services associated with it.
-For each product in your auto-claim policy, you can specify which apps
-and services to include when a user is automatically assigned a
-license to that product.
+Each product has a collection of apps and services associated with it. For each product in your auto-claim policy, you can specify which apps and services to include when a user is automatically assigned a license to that product.
 
 1. In the admin center, go to the **Billing** \> **Licenses** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab.
 2. Select the policy that you want to edit.
@@ -161,9 +129,7 @@ license to that product.
 
 ## Change the assigning order for backup products
 
-If you have backup products assigned to the policy, you can change the
-order in which they're used to assign licenses when users sign in
-to the app.
+If you have backup products assigned to the policy, you can change the order in which they're used to assign licenses when users sign in to the app.
 
 1. In the admin center, go to the **Billing** \> **Licenses** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab.
 2. Select the policy that you want to edit.

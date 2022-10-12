@@ -1,15 +1,16 @@
 ---
 title: "Microsoft 365 for enterprise for the Contoso Corporation"
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
-manager: laurawi
+ms.author: kvice
+manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: 
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection:
+- scotvorg 
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom:
@@ -73,7 +74,7 @@ See these additional IT scenarios and configurations:
 
   To create a secure collaboration environment for a top-secret project, Contoso used a team with security isolation.
 
-- [Teams voice migration](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+- [Teams voice migration](/MicrosoftTeams/voice-case-study-overview)
 
   Learn how Contoso migrated their on-premises users to Microsoft Teams for unified communication, collaboration, and voice.
 

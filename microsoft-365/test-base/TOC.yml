@@ -1,0 +1,55 @@
+- name: Test Base documentation
+  href: index.yml
+- name: Overview
+  items:
+  - name: What is Test Base?
+    href: overview.md 
+- name: Quickstarts
+  items:  
+    - name: Creating a Test Base Account
+      href: createaccount.md
+    - name: Test your application on Test Base
+      items:
+      - name: Overview
+        href: testoverview.md
+      - name: Creating and Testing Binary Files on Test Base
+        href: testapplication.md
+      - name: Test your Intune app on Test Base
+        href: testintuneapplication.md
+      - name: Uploading a pre-built zip package
+        href: uploadapplication.md
+    - name: Build a Package
+      href: buildpackage.md
+    - name: Clone an existing package
+      href: clonepackage.md
+    - name: Package guideline
+      href: contentguideline.md
+    - name: Understand your usage cost
+      href: usagecost.md
+    - name: Run your test on-demand
+      href: ondemandrun.md
+    - name: Application/Test rules
+      href: rules.md
+- name: How-to guides
+  items:
+  - name: Server application testing
+    href: server.md
+  - name: Functional testing
+    href: functional.md
+  - name: Feature update validation
+    href: feature.md  
+  - name: Memory Regression Analysis
+    href: memory.md
+  - name: CPU Regression Analysis
+    href: cpu.md 
+  - name: Request to change access level
+    href: accesslevel.md
+  - name: SDK & API
+    href: sdkapi.md
+- name: Reference
+  items:
+  - name: Frequently Asked Questions
+    href: faq.md
+
+
+

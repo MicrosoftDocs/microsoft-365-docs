@@ -1,14 +1,16 @@
 ---
 title: "Assign per-user Skype for Business Online policies with PowerShell for Microsoft 365"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 07/16/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Ent_O365
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
@@ -29,7 +31,7 @@ Use these instructions to get set up to run the commands (skip the steps you hav
   > [!Note]
    > Skype for Business Online Connector is currently part of the latest Teams PowerShell module. If you're using the latest Teams PowerShell public release, you don't need to install the Skype for Business Online Connector.
 
-1. Install the [Teams PowerShell module](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
+1. Install the [Teams PowerShell module](/microsoftteams/teams-powershell-install).
     
 2. Open a Windows PowerShell command prompt and run the following commands: 
     
@@ -66,7 +68,7 @@ EnablePublicCloudAudioVideoAccess : False
 EnableOutsideAccess               : True
 ```
 
-Now that you know which policy to assign to Alex, we can assign that policy by using the [Grant-CsExternalAccessPolicy](https://go.microsoft.com/fwlink/?LinkId=523974) cmdlet. Here is an example:
+Now that you know which policy to assign to Alex, we can assign that policy by using the [Grant-CsExternalAccessPolicy](/powershell/module/skype/Get-CsExternalAccessPolicy) cmdlet. Here is an example:
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly"
@@ -97,13 +99,14 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 ```
 
 This command sets the name of the external access policy assigned to Alex to a null value ($Null). Null means "nothing". In other words, no external access policy is assigned to Alex. When no external access policy is assigned to a user, that user then gets managed by the global policy.
-  
 
 ## Managing large numbers of users
 
-To manage large numbers of users (1000 or more), you need to batch the commands via a script block using the [Invoke-Command](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) cmdlet.  In previous examples, each time a cmdlet is executed, it must set up the call and then wait for the result before sending it back.  When using a script block, this allows the cmdlets to be executed remotely, and once completed, send the data back. 
+To manage large numbers of users (1000 or more), you need to batch the commands via a script block using the [Invoke-Command](/powershell/module/microsoft.powershell.core/invoke-command) cmdlet.  In previous examples, each time a cmdlet is executed, it must set up the call and then wait for the result before sending it back.  When using a script block, this allows the cmdlets to be executed remotely, and once completed, send the data back.
 
 ```powershell
+$s = Get-PSSession | Where-Object { ($.ComputerName -like '*.online.lync.com' -or $.Computername -eq 'api.interfaces.records.teams.microsoft.com') -and $.State -eq 'Opened' -and $.Availability -eq 'Available' }
+
 $users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500
 
 $batch = 50

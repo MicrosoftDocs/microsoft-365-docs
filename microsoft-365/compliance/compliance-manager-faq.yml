@@ -1,0 +1,39 @@
+### YamlMime:FAQ
+metadata:
+  title: "Microsoft Purview Compliance Manager FAQ"
+  f1.keywords:
+  - NOCSH
+  ms.author: chvukosw
+  author: chvukosw
+  manager: laurawi
+  audience: Admin
+  ms.topic: faq
+  ms.service: O365-seccomp
+  ms.localizationpriority: medium
+  ms.collection: M365-security-compliance
+  search.appverid: 
+  - MOE150
+  - MET150
+  description: "Find answers to frequently asked questions about Microsoft Purview Compliance Manager, which helps organizations simplify and automate risk assessments."
+    
+title: Compliance Manager frequently asked questions
+summary: |
+
+sections:
+  - name: Ignored
+    questions:
+      - question: |
+          Are there licensing requirements for using Compliance Manager?
+        answer: |
+          Yes. Organizations with Office 365 and Microsoft 365 licenses, and US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers, have access to Compliance Manager. However, the assessments available to your organization and how you manage assessment templates depends on your licensing agreement. Visit the [Microsoft 365 licensing guidance for security and compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager) for details.
+          
+      - question: |
+          If I have a high score, does it mean I’m fully compliant?
+        answer: |
+          No. Your compliance score measures your progress in completing recommended actions that help reduce risks around data protection and regulatory standards. It does not express an absolute measure of organizational compliance with regard to a particular standard or regulation. Compliance Manager, and your compliance score, should not be interpreted as a guarantee in any way.
+
+      - question: |
+          Can I use Compliance Manager for non-Microsoft products?
+        answer: |
+          Yes. Get details about [Microsoft and universal templates](compliance-manager-templates.md#template-versions-microsoft-and-universal) for building assessments. You can also add custom assessments in Compliance Manager to help you manage all the controls across your digital assets.
+

@@ -9,7 +9,7 @@ ms.date: 5/16/2014
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - WSU150
 - SPO160
@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Learn how to use information management policies to control and track things like how long content is retained or what actions users can take with that content.
@@ -31,12 +31,14 @@ For example, an organization that must follow government regulations requiring t
   
 For how-to information, see [Create and apply information management policies](create-info-mgmt-policies.md).
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Features of information management policies
 <a name="__top"> </a>
 
 There are four basic categories of predefined policy features that organizations can use individually or in combination to manage content and processes. 
   
-![Types of content policies](../media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
+![Types of content policies.](../media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
   
 The Auditing policy feature helps organizations analyze how their content management systems are used by logging events and operations that are performed on documents and list items. You can configure the Auditing policy feature to log events such as when a document or item is edited, viewed, checked in, checked out, deleted, or has its permissions changed. All of the audit information is stored in a single audit log on the server, and site administrators can run reports on it. 
   
@@ -53,19 +55,19 @@ To implement an information management policy, you must add it to a list, librar
   
 When you add a site collection policy to a site content type, and an instance of that site content type is added to a list or library, the owner of that list or library cannot modify the site collection policy for the list or library. Adding a site collection policy to a site content type is a good way to ensure that site collection policies are enforced at each level of your site hierarchy.
   
-![Content Type Policy Template link on Site Settings page](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+![Content Type Policy Template link on Site Settings page.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
  **Create an information management policy for a site content type in the top-level site's Site Content Type Gallery, and then add that content type to one or more lists or libraries** You can also create an information management policy directly for a site content type and then associate an instance of that site content type with multiple lists or libraries. If you create an information management policy this way, every item in the site collection of that content type or a content type that inherits from that content type has the policy. However, if you create an information management policy directly for a site content type, it is more difficult to reuse this information management policy in other site collections, because policies that are created this way cannot be exported. 
   
-![Site content types link on Site Settings page](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
+![Site content types link on Site Settings page.](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
   
-![Information management policy link on settings page for a site content type](../media/15d83a34-6c8f-4b6e-b6ee-e9b0a70cbb4b.png)
+![Information management policy link on settings page for a site content type.](../media/15d83a34-6c8f-4b6e-b6ee-e9b0a70cbb4b.png)
   
 Note To control which policies are used in a site collection, site collection administrators can disable the ability to set policy features directly on a content type. When this restriction is in effect, users who create content types are limited to selecting policies from the site collection Policies list.
   
  **Create an information management policy for a list or library** If your organization needs to apply a specific information management policy to a very limited set of content, you can create an information management policy that applies only to an individual list or library. This method of creating an information management policy is the least flexible, because the policy applies only to one location, and it cannot be exported or reused for other locations. However, sometimes you may need to create unique information management policies with limited applicability to address specific situations. 
   
-![Information management policies link on settings page for document library](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+![Information management policies link on settings page for document library.](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
 Notes 
   

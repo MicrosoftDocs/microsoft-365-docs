@@ -1,13 +1,15 @@
 ---
-title: "Managing Office 365 endpoints"
+title: Managing Office 365 endpoints
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
+ms.date: 05/18/2022
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 f1.keywords:
@@ -22,7 +24,7 @@ description: Learn how to manage Office 365 endpoints so that they work with you
 
 # Managing Office 365 endpoints
 
-Most enterprise organizations that have multiple office locations and a connecting WAN will need configuration for Office 365 network connectivity. You can optimize your network by sending all trusted Office 365 network requests directly through your firewall, bypassing all additional packet level inspection or processing. This reduces latency and your perimeter capacity requirements. Identifying Office 365 network traffic is the first step in providing optimal performance for your users. For more information, see [Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
+Most enterprise organizations that have multiple office locations and a connecting WAN will need configuration for Office 365 network connectivity. You can optimize your network by sending all trusted Office 365 network requests directly through your firewall, bypassing all extra packet level inspection or processing. This reduces latency and your perimeter capacity requirements. Identifying Office 365 network traffic is the first step in providing optimal performance for your users. For more information, see [Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
 
 Microsoft recommends you access the Office 365 network endpoints and ongoing changes to them using the [Office 365 IP Address and URL Web Service](microsoft-365-ip-web-service.md).
 
@@ -42,6 +44,9 @@ Microsoft is working with SD-WAN providers to enable automated configuration. Fo
 Use PAC or WPAD files to manage network requests that are associated with Office 365 but don't have an IP address. Typical network requests that are sent through a proxy or perimeter device increase latency. While SSL Break and Inspect creates the largest latency, other services such as proxy authentication and reputation lookup can cause poor performance and a bad user experience. Additionally, these perimeter network devices need enough capacity to process all of the network connection requests. We recommend bypassing your proxy or inspection devices for direct Office 365 network requests.
   
 [PowerShell Gallery Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) is a PowerShell script that reads the latest network endpoints from the Office 365 IP Address and URL Web service and creates a sample PAC file. You can modify the script so that it integrates with your existing PAC file management.
+
+> [!NOTE]
+> For more information about the security and performance considerations of direct connectivity to Office 365 endpoints, see [Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
 
 ![Connecting to Office 365 through firewalls and proxies.](../media/34d402f3-f502-42a0-8156-24a7c4273fa5.png)
 
@@ -83,22 +88,22 @@ Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10
 
 ## Proxy server bypass processing of Office 365 network traffic
 
-Where PAC files are not used for direct outbound traffic, you still want to bypass processing on your network perimeter by configuring your proxy server. Some proxy server vendors have enabled automated configuration of this as described in the [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md).
+Where PAC files aren't used for direct outbound traffic, you still want to bypass processing on your network perimeter by configuring your proxy server. Some proxy server vendors have enabled automated configuration of this as described in the [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md).
 
-If you are doing this manually, you will need to get the Optimize and Allow endpoint category data from the Office 365 IP Address and URL Web Service and configure your proxy server to bypass processing for these. It is important to avoid SSL Break and Inspect and Proxy Authentication for the Optimize and Allow category endpoints.
+If you're doing this manually, you'll need to get the Optimize and Allow endpoint category data from the Office 365 IP Address and URL Web Service and configure your proxy server to bypass processing for these. It is important to avoid SSL Break and Inspect and Proxy Authentication for the Optimize and Allow category endpoints.
   
 <a name="bkmk_changes"> </a>
 ## Change management for Office 365 IP addresses and URLs
 
-In addition to selecting appropriate configuration for your network perimeter, it is critical that you adopt a change management process for Office 365 endpoints. These endpoints change regularly and if you do not manage the changes, you can end up with users blocked or with poor performance after a new IP address or URL is added.
+In addition to selecting appropriate configuration for your network perimeter, it's critical that you adopt a change management process for Office 365 endpoints. These endpoints change regularly and if you don't manage the changes, you can end up with users blocked or with poor performance after a new IP address or URL is added.
 
 Changes to the Office 365 IP addresses and URLs are usually published near the last day of each month. Sometimes a change will be published outside of that schedule due to operational, support, or security requirements.
 
-When a change is published that requires you to act because an IP address or URL was added, you should expect to receive 30 days notice from the time we publish the change until there is an Office 365 service on that endpoint. Although we aim for this notification period, it may not always be possible due to operational, support, or security requirements. Changes that do not require immediate action to maintain connectivity, such as removed IP addresses or URLs or less significant changes, do not include advance notification. Regardless of what notification is provided, we list the expected service active date for each change.
+When a change is published that requires you to act because an IP address or URL was added, you should expect to receive 30 days notice from the time we publish the change until there's an Office 365 service on that endpoint. This is reflected as the Effective Date. Although we aim for this notification period, it may not always be possible due to operational, support, or security requirements. Changes that don't require immediate action to maintain connectivity, such as removed IP addresses or URLs or less significant changes, don't include advance notification. In these instances, no Effective Date will be provided. Regardless of what notification is provided, we list the expected service active date for each change.
 
 ### Change notification using the Web Service
 
-You can use the Office 365 IP Address and URL Web Service to get change notification. We recommend you call the **/version** web method once an hour to check the version of the endpoints that you are using to connect to Office 365. If this version changes when compared to the version that you have in use, then you should get the latest endpoint data from the **/endpoints** web method and optionally get the differences from the **/changes** web method. It is not necessary to call the **/endpoints** or **/changes** web methods if there has not been any change to the version you found.
+You can use the Office 365 IP Address and URL Web Service to get change notification. We recommend you call the **/version** web method once an hour to check the version of the endpoints that you're using to connect to Office 365. If this version changes when compared to the version that you have in use, then you should get the latest endpoint data from the **/endpoints** web method and optionally get the differences from the **/changes** web method. It isn't necessary to call the **/endpoints** or **/changes** web methods if there hasn't been any change to the version you found.
 
 For more information, see [Office 365 IP Address and URL Web Service](microsoft-365-ip-web-service.md).
 
@@ -106,11 +111,11 @@ For more information, see [Office 365 IP Address and URL Web Service](microsoft-
 
 The Office 365 IP Address and URL Web Service provides an RSS feed that you can subscribe to in Outlook. There are links to the RSS URLs on each of the Office 365 service instance-specific pages for the IP addresses and URLs. For more information, see [Office 365 IP Address and URL Web Service](microsoft-365-ip-web-service.md).
 
-### Change notification and approval review using Microsoft Flow
+### Change notification and approval review using Power Automate
 
-We understand that you might still require manual processing for network endpoint changes that come through each month. You can use Microsoft Flow to create a flow that notifies you by email and optionally runs an approval process for changes when Office 365 network endpoints have changes. Once review is completed, you can have the flow automatically email the changes to your firewall and proxy server management team.
+We understand that you might still require manual processing for network endpoint changes that come through each month. You can use Power Automate to create a flow that notifies you by email and optionally runs an approval process for changes when Office 365 network endpoints have changes. Once review is completed, you can have the flow automatically email the changes to your firewall and proxy server management team.
 
-For information about a Microsoft Flow sample and template, see [Use Microsoft Flow to receive an email for changes to Office 365 IP addresses and URLs](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651).
+For information about a Power Automate sample and template, see [Use Power Automate to receive an email for changes to Office 365 IP addresses and URLs](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651).
   
 <a name="FAQ"> </a>
 ## Office 365 network endpoints FAQ
@@ -123,40 +128,40 @@ Click the link at the bottom to indicate if the article was helpful or not and s
   
 ### How do I determine the location of my tenant?
 
- **Tenant location** is best determined using our [datacenter map](https://aka.ms/datamaps).
+ **Tenant location** is best determined using our [datacenter map](./o365-data-locations.md).
   
 ### Am I peering appropriately with Microsoft?
 
  **Peering locations** are described in more detail in [peering with Microsoft](https://www.microsoft.com/peering).
   
-With over 2500 ISP peering relationships globally and 70 points of presence, getting from your network to ours should be seamless. It can't hurt to spend a few minutes making sure your ISP's peering relationship is the most optimal, [here's a few examples](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/) of good and not so good peering hand-offs to our network.
+With over 2500 ISP peering relationships globally and 70 points of presence, getting from your network to ours should be seamless. It can't hurt to spend a few minutes making sure your ISP's peering relationship is the most optimal, [here's a few examples](/archive/blogs/onthewire/__guidance) of good and not so good peering hand-offs to our network.
   
 <a name="bkmk_MissingIP"> </a>
 ### I see network requests to IP addresses not on the published list, do I need to provide access to them?
 
-We only provide IP addresses for the Office 365 servers you should route directly to. This isn't a comprehensive list of all IP addresses you'll see network requests for. You will see network requests to Microsoft and third-party owned, unpublished, IP addresses. These IP addresses are dynamically generated or managed in a way that prevents timely notice when they change. If your firewall can't allow access based on the FQDNs for these network requests, use a PAC or WPAD file to manage the requests.
+We only provide IP addresses for the Office 365 servers you should route directly to. This isn't a comprehensive list of all IP addresses you'll see network requests for. You'll see network requests to Microsoft and third-party owned, unpublished, IP addresses. These IP addresses are dynamically generated or managed in a way that prevents timely notice when they change. If your firewall can't allow access based on the FQDNs for these network requests, use a PAC or WPAD file to manage the requests.
   
 See an IP associated with Office 365 that you want more information on?
   
 1. Check if the IP address is included in a larger published range using a CIDR calculator, such as these for [IPv4](https://www.ipaddressguide.com/cidr) or [IPv6](https://www.ipaddressguide.com/ipv6-cidr). For example, 40.96.0.0/13 includes the IP Address 40.103.0.1 despite 40.96 not matching 40.103.
-2. See if a partner owns the IP with a [whois query](https://dnsquery.org/). If it's Microsoft owned, it may be an internal partner. Many partner network endpoints are listed as belonging to the _default_ category, for which IP addresses are not published.
-3. The IP address may not be part of Office 365 or a dependency. Office 365 network endpoint publishing does not include all of Microsoft network endpoints.
+2. See if a partner owns the IP with a [whois query](https://dnsquery.org/). If it's Microsoft owned, it may be an internal partner. Many partner network endpoints are listed as belonging to the _default_ category, for which IP addresses aren't published.
+3. The IP address may not be part of Office 365 or a dependency. Office 365 network endpoint publishing doesn't include all of Microsoft network endpoints.
 4. Check the certificate. With a browser, connect to the IP address using  *HTTPS://\<IP_ADDRESS\>* and check the domains listed on the certificate to understand what domains are associated with the IP address. If it's a Microsoft-owned IP address and not on the list of Office 365 IP addresses, it's likely the IP address is associated with a Microsoft CDN such as  *MSOCDN.NET*  or another Microsoft domain without published IP information. If you do find the domain on the certificate is one where we claim to list the IP address, please let us know.
 
 <a name="bkmk_cname"> </a>
 ### Some Office 365 URLs point to CNAME records instead of A records in the DNS. What do I have to do with the CNAME records?
 
-Client computers need a DNS A or AAAA record t)hat includes one or more IP address(es) to connect to a cloud service. Some URLs included in Office 365 show CNAME records instead of A or AAAA records. These CNAME records are intermediary and there may be several in a chain. They will always eventually resolve to an A or AAAA record for an IP Address. For example, consider the following series of DNS records, which ultimately resolves to the IP address _IP_1_:
+Client computers need a DNS A or AAAA record that includes one or more IP address(es) to connect to a cloud service. Some URLs included in Office 365 show CNAME records instead of A or AAAA records. These CNAME records are intermediary and there may be several in a chain. They will always eventually resolve to an A or AAAA record for an IP Address. For example, consider the following series of DNS records, which ultimately resolves to the IP address _IP_1_:
 
 ```console
 serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.com -> A: IP_1
 ```
 
-These CNAME redirects are a normal part of the DNS and are transparent to the client computer and transparent to proxy servers. They are used for load balancing, content delivery networks, high availability, and service incident mitigation. Microsoft does not publish the intermediary CNAME records, they are subject to change at any time, and you should not need to configure them as allowed in your proxy server.
+These CNAME redirects are a normal part of the DNS and are transparent to the client computer and transparent to proxy servers. They are used for load balancing, content delivery networks, high availability, and service incident mitigation. Microsoft doesn't publish the intermediary CNAME records, they are subject to change at any time, and you shouldn't need to configure them as allowed in your proxy server.
 
-A proxy server validates the initial URL, which in the above example is serviceA.office.com, and this URL would be included in Office 365 publishing. The proxy server requests DNS resolution of that URL to an IP Address and will receive back IP_1. It does not validate the intermediary CNAME redirection records.
+A proxy server validates the initial URL, which in the above example is serviceA.office.com, and this URL would be included in Office 365 publishing. The proxy server requests DNS resolution of that URL to an IP Address and will receive back IP_1. It doesn't validate the intermediary CNAME redirection records.
 
-Hard-coded configurations or whitelisting based on indirect Office 365 FQDNs are not recommended, not supported by Microsoft, and are known to cause customer connectivity issues. DNS solutions that block on CNAME redirection, or that otherwise incorrectly resolve Office 365 DNS entries, can be solved via DNS forwarders with DNS recursion enabled or by using DNS root hints. Many third-party network perimeter products natively integrate recommended Office 365 endpoint whitelisting in their configuration using the [Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md).
+Hard-coded configurations or using an allowlist based on indirect Office 365 FQDNs aren't recommended, not supported by Microsoft, and are known to cause customer connectivity issues. DNS solutions that block on CNAME redirection, or that otherwise incorrectly resolve Office 365 DNS entries, can be solved via DNS forwarders with DNS recursion enabled or by using DNS root hints. Many third-party network perimeter products natively integrate recommended Office 365 endpoint to include an allowlist in their configuration using the [Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md).
 
 <a name="bkmk_akamai"> </a>
 ### Why do I see names such as nsatc.net or akadns.net in the Microsoft domain names?
@@ -186,7 +191,7 @@ Office 365 and other Microsoft services use several third-party services such as
 
 As Office 365 is a suite of services built to function over the internet, the reliability and availability promises are based on many standard internet services being available. For example, standard internet services such as DNS, CRL, and CDNs must be reachable to use Office 365 just as they must be reachable to use most modern internet services.
 
-The Office 365 suite is broken down into major service areas. These can be selectively enabled for connectivity and there is a Common area, which is a dependency for all and is always required.
+The Office 365 suite is broken down into major service areas. These can be selectively enabled for connectivity and there's a Common area, which is a dependency for all and is always required.
 
 | Service Area | Description |
 |:-----|:-----|
@@ -202,14 +207,13 @@ If you're trying to use Office 365 and are finding third-party services aren't a
 <a name="bkmk_consumer"> </a>
 ### How do I block access to Microsoft's consumer services?
 
-Restricting access to our consumer services should be done at your own risk. The only reliable way to block consumer services is to restrict access to the  *login.live.com*  FQDN. This FQDN is used by a broad set of services including non-consumer services such as MSDN, TechNet, and others. This FQDN is also used by Microsoft Support's Secure File Exchange program and is necessary to transfer files to facilitate troubleshooting for Microsoft products.  Restricting access to this FQDN may result in the need to also include exceptions to the rule for network requests associated with these services.
-  
-Keep in mind that blocking access to the Microsoft consumer services alone won't prevent the ability for someone on your network to exfiltrate information using an Office 365 tenant or other service.
+The tenant restrictions feature now supports blocking the use of all Microsoft consumer applications (MSA apps) such as OneDrive, Hotmail, and Xbox.com. This uses a separate header to the login.live.com endpoint. For more information, see [Use tenant restrictions to manage access to SaaS cloud applications](/azure/active-directory/manage-apps/tenant-restrictions#blocking-consumer-applications).
 
 <a name="bkmk_IPOnlyFirewall"> </a>
+
 ### My firewall requires IP Addresses and cannot process URLs. How do I configure it for Office 365?
 
-Office 365 does not provide IP addresses of all required network endpoints. Some are provided as URLs only and are categorized as default. URLs in the default category that are required should be allowed through a proxy server. If you don't have a proxy server, look at how you have configured web requests for URLs that users type into the address bar of a web browser; the user doesn’t provide an IP address either. The Office 365 default category URLs that do not provide IP addresses should be configured in the same way.
+Office 365 doesn't provide IP addresses of all required network endpoints. Some are provided as URLs only and are categorized as default. URLs in the default category that are required should be allowed through a proxy server. If you don't have a proxy server, look at how you have configured web requests for URLs that users type into the address bar of a web browser; the user doesn't provide an IP address either. The Office 365 default category URLs that do not provide IP addresses should be configured in the same way.
 
 ## Related topics
 
@@ -219,7 +223,7 @@ Office 365 does not provide IP addresses of all required network endpoints. Some
   
 [Microsoft Public IP Space](https://www.microsoft.com/download/details.aspx?id=53602)
   
-[Network infrastructure requirements for Microsoft Intune](https://docs.microsoft.com/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
+[Network infrastructure requirements for Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)
   
 [ExpressRoute and Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/)
   

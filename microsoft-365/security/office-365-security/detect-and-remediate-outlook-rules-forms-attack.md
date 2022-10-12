@@ -1,6 +1,6 @@
 ---
 title: Detect and remediate the Outlook rules and custom forms injections attacks.
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyp
@@ -8,22 +8,21 @@ manager: dansimp
 ms.date: 04/23/2018
 audience: ITPro
 ms.topic: article
-ms.collection: 
+ms.collection:
   - o365_security_incident_response
-  - M365-security-compliance
+  - m365-security
 
-localization_priority: Normal
-search.appverid: 
+ms.localizationpriority: medium
+search.appverid:
   - MET150
 description: Learn how to recognize and remediate the Outlook rules and custom forms injections attacks in Office 365
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 # Detect and Remediate Outlook Rules and Custom Forms Injections Attacks
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Summary** Learn how to recognize and remediate the Outlook rules and custom Forms injections attacks in Office 365.
 
@@ -105,7 +104,7 @@ You can use either of the following methods to confirm the attack:
 
 4. Look in the rule description for rule actions that start and application or refer to an .EXE, .ZIP file or to launching a URL.
 
-5. Look for any new processes that start using the Outlook process ID. Refer to [Find the Process ID](https://docs.microsoft.com/windows-hardware/drivers/debugger/finding-the-process-id).
+5. Look for any new processes that start using the Outlook process ID. Refer to [Find the Process ID](/windows-hardware/drivers/debugger/finding-the-process-id).
 
 ### Steps to confirm the Forms attack using the Outlook client
 
@@ -151,7 +150,7 @@ You will need to have global administrator rights to run the script because the 
 
 ## How to stop and remediate the Outlook Rules and Forms attack
 
-If you find any evidence of either of these attacks, remediation is simple, just delete the rule or form from the mailbox. You can do this with the Outlook client or using remote PowerShell to remove rules.
+If you find any evidence of either of these attacks, remediation is simple, just delete the rule or form from the mailbox. You can do this with the Outlook client or using Exchange PowerShell to remove rules.
 
 ### Using Outlook
 
@@ -167,23 +166,23 @@ If you find any evidence of either of these attacks, remediation is simple, just
 
 ### Using PowerShell
 
-There are two remote PowerShell cmdlets you can use to remove or disable dangerous rules. Just follow the steps.
+There are two Exchange PowerShell cmdlets you can use to remove or disable dangerous rules. Just follow the steps.
 
 #### Steps for mailboxes that are on an Exchange server
 
-1. Connect to the Exchange server using remote PowerShell. Follow the steps in [Connect to Exchange servers using remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-servers-using-remote-powershell).
+1. Connect to the Exchange server using remote PowerShell or the Exchange Management Shell. Follow the steps in [Connect to Exchange servers using remote PowerShell](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell) or [Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
-2. If you want to completely remove a single rule, multiple rules, or all rules from a mailbox use the [Remove-InboxRule](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) cmdlet.
+2. If you want to completely remove a single rule, multiple rules, or all rules from a mailbox use the [Remove-InboxRule](/powershell/module/exchange/Remove-InboxRule) cmdlet.
 
-3. If you want to retain the rule and its contents for further investigation use the [Disable-InboxRule](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule) cmdlet.
+3. If you want to retain the rule and its contents for further investigation use the [Disable-InboxRule](/powershell/module/exchange/disable-inboxrule) cmdlet.
 
 #### Steps for mailboxes in Exchange Online
 
-1. Follow the steps in [Connect to Exchange Online using PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. Follow the steps in [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. If you want to completely remove a single rule, multiple rules, or all rules from a mailbox use the [Remove-Inbox Rule](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) cmdlet.
+2. If you want to completely remove a single rule, multiple rules, or all rules from a mailbox use the [Remove-Inbox Rule](/powershell/module/exchange/Remove-InboxRule) cmdlet.
 
-3. If you want to retain the rule and its contents for further investigation use the [Disable-InboxRule](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule) cmdlet.
+3. If you want to retain the rule and its contents for further investigation use the [Disable-InboxRule](/powershell/module/exchange/disable-inboxrule) cmdlet.
 
 ## How to minimize future attacks
 
@@ -193,7 +192,7 @@ The Rules and Forms exploits are only used by an attacker after they have stolen
 
 The best way to protect your user accounts, and especially your administrator accounts, is to [set up multi-factor authentication for users](../../admin/security-and-compliance/set-up-multi-factor-authentication.md). You should also:
 
-- Monitor how your user accounts are [accessed and used](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports). You may not prevent the initial breach, but you will shorten the duration and the impact of the breach by detecting it sooner. You can use these [Office 365 Cloud App Security policies](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) to monitor you accounts and alert on unusual activity:
+- Monitor how your user accounts are [accessed and used](/azure/active-directory/active-directory-view-access-usage-reports). You may not prevent the initial breach, but you will shorten the duration and the impact of the breach by detecting it sooner. You can use these [Office 365 Cloud App Security policies](/cloud-app-security/what-is-cloud-app-security) to monitor you accounts and alert on unusual activity:
 
   - **Multiple failed login attempts**: This policy profiles your environment and triggers alerts when users perform multiple failed login activities in a single session with respect to the learned baseline, which could indicate an attempted breach.
 
@@ -201,7 +200,7 @@ The best way to protect your user accounts, and especially your administrator ac
 
   - **Unusual impersonated activity (by user)**: This policy profiles your environment and triggers alerts when users perform multiple impersonated activities in a single session with respect to the baseline learned, which could indicate an attempted breach.
 
-- Use a tool like [Office 365 Secure Score](https://securescore.office.com/) to manage account security configurations and behaviors.
+- Use a tool like [Office 365 Secure Score](/microsoft-365/security/defender/microsoft-secure-score) to manage account security configurations and behaviors.
 
 ### Second: Keep your Outlook clients current
 
@@ -221,7 +220,7 @@ For more information on the individual security patches, see:
 
 ### Third: Monitor your Outlook clients
 
-Note that even with the patches and updates installed, it is possible for an attacker to change the local machine configuration to re-enable the "Start Application" behavior. You can use [Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) to monitor and enforce local machine policies on your clients.
+Note that even with the patches and updates installed, it is possible for an attacker to change the local machine configuration to re-enable the "Start Application" behavior. You can use [Advanced Group Policy Management](/microsoft-desktop-optimization-pack/agpm/) to monitor and enforce local machine policies on your clients.
 
 You can see if "Start Application" has been re-enabled through an override in the registry by using the information in [How to view the system registry by using 64-bit versions of Windows](https://support.microsoft.com/help/305097). Check these subkeys:
 
@@ -231,17 +230,7 @@ You can see if "Start Application" has been re-enabled through an override in th
 
 Look for the key EnableUnsafeClientMailRules. If it is there and is set to 1, the Outlook security patch has been overridden and the computer is vulnerable to the Form/Rules attack. If the value is 0, the "Start Application" action is disabled. If the updated and patched version of Outlook is installed and this registry key is not present, then a system is not vulnerable to these attacks.
 
-Customers with on-premises Exchange installations should consider blocking older versions of Outlook that do not have patches available. Details on this process can be found in the article [Configure Outlook client blocking](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help).
-
-## Secure Microsoft 365 like a cybersecurity pro
-
-Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users. Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Microsoft 365 tenant.
-
-- Tasks to accomplish in the first 30 days. These have immediate effect and are low-impact to your users.
-
-- Tasks to accomplish in 90 days. These take a bit more time to plan and implement but greatly improve your security posture.
-
-- Beyond 90 days. These enhancements build in your first 90 days work.
+Customers with on-premises Exchange installations should consider blocking older versions of Outlook that do not have patches available. Details on this process can be found in the article [Configure Outlook client blocking](/exchange/configure-outlook-client-blocking-exchange-2013-help).
 
 ## See also:
 

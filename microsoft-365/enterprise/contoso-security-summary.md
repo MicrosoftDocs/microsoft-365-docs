@@ -1,16 +1,17 @@
 ---
 title: "Summary of Microsoft 365 for enterprise security for the Contoso Corporation"
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
-manager: laurawi
+ms.author: kvice
+manager: scotv
 ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom:
@@ -54,17 +55,17 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
   Rather than assign the global admin role to everyday user accounts, Contoso created three dedicated global administrator accounts with strong passwords. The accounts are protected by Azure AD Multi-Factor Authentication (MFA) and Azure Active Directory (Azure AD) Privileged Identity Management (PIM). *PIM is only available with Microsoft 365 E5.*
 
-  Signing in with a global administrator account is only done for specific administrative tasks. The passwords are only known to designated staff and can only be used within a time period that's configured in Azure AD PIM.
+  Signing in with a **Azure AD DC admin**, or **Global admin** account is only done for specific administrative tasks. The passwords are only known to designated staff and can only be used within a time period that's configured in Azure AD PIM.
 
   Contoso security administrators assigned lesser admin roles to accounts that are appropriate to that IT worker's job function.
 
-  For more information, see [About Microsoft 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+  For more information, see [About Microsoft 365 admin roles](/office365/admin/add-users/about-admin-roles).
 
 - MFA for all user accounts
 
   MFA adds an additional layer of protection to the sign-in process. It requires users to acknowledge a phone call, text message, or app notification on their smart phone after correctly entering their password. With MFA, Azure AD user accounts are protected against unauthorized sign-in, even if an account password is compromised.
 
-   - To protect against compromise of the Microsoft 365 subscription, Contoso requires MFA on all global administrator accounts.
+   - To protect against compromise of the Microsoft 365 subscription, Contoso requires MFA on all **Azure AD DC admin**, or **Global admin** accounts.
    - To protect against phishing attacks, in which an attacker compromises the credentials of a trusted person in the organization and sends malicious emails, Contoso enabled MFA on all user accounts, including managers and executives.
 
 - Safer device and application access with Conditional Access policies
@@ -73,60 +74,60 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
 - Windows Hello for Business
 
-  Contoso deployed [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) to eventually eliminate the need for passwords through strong two-factor authentication on PCs and mobile devices running Windows 10 Enterprise.
+  Contoso deployed [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification) to eventually eliminate the need for passwords through strong two-factor authentication on PCs and mobile devices running Windows 10 Enterprise.
 
 - Windows Defender Credential Guard
 
-  To block targeted attacks and malware running in the operating system with administrative privileges, Contoso enabled [Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) through AD DS group policy.
+  To block targeted attacks and malware running in the operating system with administrative privileges, Contoso enabled [Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard) through AD DS group policy.
 
 ## Threat protection
 
-- Protection from malware with Windows Defender Antivirus
+- Protection from malware with Microsoft Defender Antivirus
 
-  Contoso is using [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) for malware protection and anti-malware management for PCs and devices running Windows 10 Enterprise.
+  Contoso is using [Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) for malware protection and anti-malware management for PCs and devices running Windows 10 Enterprise.
 
 - Secure email flow and mailbox audit logging with Microsoft Defender for Office 365 
 
-  Contoso is using Exchange Online Protection and [Defender for Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) to protect against unknown malware, viruses, and malicious URLs transmitted through emails.
+  Contoso is using Exchange Online Protection and [Defender for Office 365](/office365/securitycompliance/office-365-atp) to protect against unknown malware, viruses, and malicious URLs transmitted through emails.
 
   Contoso also enabled mailbox audit logging to identify who logs in to user mailboxes, sends messages, and does other activities performed by the mailbox owner, a delegated user, or an administrator.
 
 - Attack monitoring and prevention with Office 365 threat investigation and response
 
-  Contoso uses [Office 365 threat investigation and response](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) to protect users by making it easy to identify and address attacks, and to prevent future attacks.
+  Contoso uses [Office 365 threat investigation and response](/office365/securitycompliance/office-365-ti) to protect users by making it easy to identify and address attacks, and to prevent future attacks.
 
 - Protection from sophisticated attacks with Advanced Threat Analytics
 
-  Contoso is using [Advanced Threat Analytics (ATA)](https://docs.microsoft.com/advanced-threat-analytics/what-is-ata) to protect itself from advanced targeted attacks.  ATA automatically analyzes, learns, and identifies normal and abnormal entity (user, devices, and resources) behavior.
+  Contoso is using [Advanced Threat Analytics (ATA)](/advanced-threat-analytics/what-is-ata) to protect itself from advanced targeted attacks.  ATA automatically analyzes, learns, and identifies normal and abnormal entity (user, devices, and resources) behavior.
 
 ## Information protection
 
 - Protect sensitive and highly regulated digital assets with Azure Information Protection labels
 
-  Contoso determined three levels of data protection and deployed [Microsoft 365 sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) that users apply to digital assets. For its trade secrets and other intellectual property, Contoso uses sensitivity sublabels for highly regulated data. This process encrypts content and restricts access to specific user accounts and groups.
+  Contoso determined three levels of data protection and deployed [Microsoft 365 sensitivity labels](../compliance/sensitivity-labels.md) that users apply to digital assets. For its trade secrets and other intellectual property, Contoso uses sensitivity sublabels for highly regulated data. This process encrypts content and restricts access to specific user accounts and groups.
 
 - Prevent intranet data leaks with Data Loss Prevention
 
-  Contoso configured [Data Loss Prevention](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) policies for Exchange Online, SharePoint, and OneDrive for Business to prevent users from accidentally or intentionally sharing sensitive data.
+  Contoso configured [Microsoft Purview Data Loss Prevention](../compliance/dlp-learn-about-dlp.md) policies for Exchange Online, SharePoint, and OneDrive for Business to prevent users from accidentally or intentionally sharing sensitive data.
 
 - Prevent device data leaks Windows Information Protection
 
-  Contoso is using [Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) to protect against data leakage through internet-based apps and services and enterprise apps and data on enterprise-owned devices and personal devices that employees bring to work.
+  Contoso is using [Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) to protect against data leakage through internet-based apps and services and enterprise apps and data on enterprise-owned devices and personal devices that employees bring to work.
 
-- Cloud monitoring with Microsoft Cloud App Security
+- Cloud monitoring with Microsoft Defender for Cloud Apps
 
-  Contoso is using [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) to map their cloud environment, monitor its usage, and detect security events and incidents. *Microsoft Cloud App Security is only available with Microsoft 365 E5.*
+  Contoso is using [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) to map their cloud environment, monitor its usage, and detect security events and incidents. *Microsoft Defender for Cloud Apps is only available with Microsoft 365 E5.*
 
 - Device management with Microsoft Intune
 
-  Contoso uses [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) to enroll, manage, and configure access to mobile devices and the apps that run on them. Device-based Conditional Access policies also require approved apps and compliant PCs and mobile devices.
+  Contoso uses [Microsoft Intune](/intune/introduction-intune) to enroll, manage, and configure access to mobile devices and the apps that run on them. Device-based Conditional Access policies also require approved apps and compliant PCs and mobile devices.
 
 ## Security management
 
-- Central security dashboard for IT with Azure Defender
+- Central security dashboard for IT with Microsoft Defender for Cloud
 
-  Contoso uses the [Azure Defender](https://azure.microsoft.com/services/security-center/) to present a unified view of security and threat protection, to manage security policies across its workloads, and to respond to cyberattacks.
+  Contoso uses the [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center/) to present a unified view of security and threat protection, to manage security policies across its workloads, and to respond to cyberattacks.
 
 - Central security dashboard for users with Windows Defender Security Center
 
-  Contoso deployed the [Windows Security app](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) to its PCs and devices running Windows 10 Enterprise so that users can see their security posture at a glance and take action.
+  Contoso deployed the [Windows Security app](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) to its PCs and devices running Windows 10 Enterprise so that users can see their security posture at a glance and take action.

@@ -2,23 +2,26 @@
 title: "Manage billing notifications and invoice attachments"
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
+ms.reviewer: prkalid, vijayav
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
 search.appverid:
 - MET150
 description: "Learn how to manage who receives billing notification emails and invoice attachments."
+ms.date: 03/17/2021
 ---
 
 # Manage billing notifications and invoice attachments
@@ -30,9 +33,6 @@ The **Billing notifications** page lets you manage who receives billing notifica
 You must be a Global admin to do the steps described in this article. Billing admins can make some of these changes, as noted in the sections below. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## Change the language you receive email in
-
-> [!NOTE]
-> Billing admins can also do the steps in this section.
 
 Billing notification emails are sent in your organization’s preferred language. To change the preferred language, use the following steps.
 
@@ -104,7 +104,7 @@ Billing notification emails are sent to the primary and alternate email addresse
 - Billing profile contributor
 - Invoice manager
 
-To learn more about billing profile roles and how to manage them, see [Understand Microsoft Customer Agreement administrative roles in Azure](https://docs.microsoft.com/azure/cost-management-billing/manage/understand-mca-roles).
+To learn more about billing profile roles and how to manage them, see [Understand Microsoft Customer Agreement administrative roles in Azure](/azure/cost-management-billing/manage/understand-mca-roles).
 
 To change who receives your organization’s billing notifications, use the following steps to change the roles assigned to users.
 
@@ -123,5 +123,6 @@ To receive your invoices as attachments to your invoice notifications, use the f
 ## Related content
 
 [View your bill or invoice](view-your-bill-or-invoice.md) (article)\
+[Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article) \
 [Understand your bill or invoice for Microsoft 365 for business](understand-your-invoice2.md) (article)\
 [Add users and assign licenses at the same time](../../admin/add-users/add-users.md) (article)

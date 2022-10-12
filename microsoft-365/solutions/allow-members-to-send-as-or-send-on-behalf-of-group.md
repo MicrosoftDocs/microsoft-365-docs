@@ -6,16 +6,19 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
-ms.topic: get-started-article
-ms.service: o365-administration
-localization_priority: Normal
+ms.topic: article
+ms.service: o365-solutions
+ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-subscription-management 
 - Adm_O365
 - m365solution-collabgovernance
+ms.custom: admindeeplinkEXCHANGE
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
+recommendations: false
 description: "Learn how to allow group members to send email as a Microsoft 365 group or send email on behalf of a Microsoft 365 group."
 ---
 
@@ -32,53 +35,52 @@ The **Send on Behalf** permission lets a user send email on behalf of a Microsof
 > [!IMPORTANT]
 > You can configure **Send as** or **Send on behalf** for a given user, but not both. If you configure both, it will default to **Send as**.
 
-> [!TIP]
-> See [Send email from or on behalf of a Microsoft 365 group](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) to learn how to use Outlook and Outlook on the Web to send email from a group.
+> [!NOTE]
+> **Send as** and **Send on behalf** are not supported on Outlook for Mac in hybrid Exchange configurations.
     
 ## Allow members to send email as a group
 
-This section explains how to allow users to send email as a group in the [Exchange admin center](https://go.microsoft.com/fwlink/p/?linkid=2059104) (EAC) in Exchange Online.
+This section explains how to allow users to send email as a group in the<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> in Exchange Online.
   
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients** \> **Groups**.
+1. In the Exchange admin center, go to **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.
     
-2. Select **Edit**  ![Edit group icon](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) on the group that you want to allow users to send as. 
+2. Select the group that you want to allow users to send as. 
     
-3. Select **group delegation**.
+3. Select **Settings** > **Edit manage delegates**.
     
-4. In the **Send As** section, select the **+** sign to add the users that you want to send as the Group. 
-    
-    ![Screenshot of send as dialog box](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+4. In the **Add a delegate** section, enter the email address of the user that you would like to have **Send as** access.
   
-5. Type to search or pick a user from the list. Select **OK** and **Save**.
+5. Select **Permission Type** as **Send as** from the drop-down.
+
+6.  Select **Save changes**.
     
-    ![Type to search or pick a user from the list](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
-  
+    
 ## Allow members to send email on behalf of a group
 
-This section explains how to allow users to send email on behalf of a group in the Exchange admin center (EAC) in Exchange Online.
+This section explains how to allow users to send email on behalf of a group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> in Exchange Online.
   
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients** \> **Groups**.
+1. In the Exchange admin center, go to **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.
     
-2. Select **Edit** ![Edit group icon](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) on the group that you want to allow users to send as. 
+2. Select the group that you want to allow users to send on behalf of. 
     
-3. Select **group delegation**.
+3. Select **Settings** > **Edit manage delegates**.
     
-4. In the Send on Behalf section, select the **+** sign to add the users that you want to send as the Group. 
-    
-    ![Screenshot of send on behalf of dialog](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+4. In the **Add a delegate** section, enter the email address of the user that you would like to have **Send as** access.
   
-5. Type to search or pick a user from the list. Select **OK** and **Save**.
-    
-    ![Type to search or pick a user from the list](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+5. Select **Permission Type** as **Send on behalf** from the drop-down.
+
+6.  Select **Save changes**.
 
 ## Related articles
 
-[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Send email from or on behalf of a Microsoft 365 group](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)
+
+[Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Create your collaboration governance plan](collaboration-governance-first.md)
 
 [Learn more about Microsoft 365 groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-[Add-RecipientPermission](https://go.microsoft.com/fwlink/p/?LinkId=723960)
+[Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission)
 
-[Set-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616189)
+[Set-UnifiedGroup](/powershell/module/exchange/set-unifiedgroup)

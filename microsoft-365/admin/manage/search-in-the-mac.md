@@ -7,10 +7,12 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -39,7 +41,7 @@ Users can be found by display name, last name, first name, username, primary ema
 
 :::image type="content" source="../../media/User-search-stock-picture-domain-blanked.png" alt-text="Screenshot: Search for a user Felix Henderson":::
 
-If you select the "More actions" menu next to their name, you can reset their password.
+If you select the three dots (more actions) menu next to their name, you can reset their password.
 
 :::image type="content" source="../../media/User-search-stock-picture-reset-password-domain-blanked.png" alt-text="Screenshot: User search with the option to reset password from search result":::
 
@@ -80,7 +82,7 @@ Search for supported app level settings related to your organization, the servic
 
 You can find quick links to your domains, and then the link will take you to that domain's overview page.
 
-:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="Search results showing domains owned in the admin center":::
+:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="Search results showing domains owned in the admin center.":::
 
 ## Documentation
 

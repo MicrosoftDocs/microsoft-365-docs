@@ -2,20 +2,23 @@
 title: "Set up Microsoft 365 Apps for business"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Priority
+ms.service: microsoft-365-business
+ms.localizationpriority: high
 ms.collection: 
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
 - TRN_SMB
 ms.custom:
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
@@ -38,15 +41,9 @@ You can add users in the wizard, but you can also [add users later](../add-users
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. If you're using Office 365 Germany, go to [this admin center](https://go.microsoft.com/fwlink/p/?linkid=848041).
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
-1. If you're using Office 365 operated by 21Vianet, go to [this admin center.](https://go.microsoft.com/fwlink/p/?linkid=850627).
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
 ::: moniker-end 
 
@@ -65,12 +62,6 @@ Once you've created accounts for other people in your business, you and your tea
 ::: moniker range="o365-worldwide"
 
 Go to [https://admin.microsoft.com/OLS/MySoftware.aspx](https://admin.microsoft.com/OLS/MySoftware.aspx).
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-If you're using Office 365 Germany, go to [https://portal.office.de/OLS/MySoftware.aspx](https://portal.office.de/OLS/MySoftware.aspx).
 
 ::: moniker-end
 
@@ -94,7 +85,7 @@ Get the steps for your device: [Android](https://support.microsoft.com/office/6e
   
 ## Store files online
 
-Microsoft makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+Microsoft makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e).
   
 Everyone gets a **OneDrive** cloud storage location automatically when you create Microsoft accounts for them. With OneDrive, you can access files across your computers, phones, and tablets.
   
@@ -110,4 +101,55 @@ To take a tour of Microsoft 365 and learn how to use all the Office mobile apps,
 
 ## Add a custom domain
 
-During the sign-up you chose an .onmicrosoft domain. You can also add a custom domain, like *contoso.com*, to your account to personalize the emails. For more information, see [add a domain](add-domain.md).
+You can also add a custom domain, like *contoso.com*, to your account to personalize the emails if you haven't already done so. For more information, see [add a domain](add-domain.md).
+
+## Finish setting up
+
+Follow the steps below to set up Outlook and OneDrive.
+
+### Step: Set up Outlook for email
+
+1. On the Windows Start menu, search for Outlook, and select it.
+
+    (If you're using a Mac, open Outlook from the toolbar or locate it using the Finder.)
+
+    If you've just installed Outlook, on the Welcome page, select **Next**.
+
+2. Choose **File** \> **Info** \> **Add Account**.
+
+3. Enter your Microsoft email address and select **Connect**.
+
+## Watch: Set up Outlook for email
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
+  
+More at [Set up Outlook for email](https://support.microsoft.com/office/f5bf0cd1-e1f3-4b0d-a022-ecab17efe86f).
+  
+### Import email
+
+If you were using Outlook with another email account, you can import your previous email, calendar, and contacts into your new Microsoft account.
+  
+1. **Export your old email**
+
+    In Outlook, choose **File** \> **Open &amp; Export** \> **Import/Export**.
+
+    Select **Export to a File** and then follow the steps to export your Outlook Data File (.pst) and any subfolders.
+
+2. **Import your old email**
+
+    In Outlook, choose **File** \> **Open &amp; Export** \> **Import/Export** again.
+
+    This time, select **Import from another program or file** and follow the steps to import the backup file you created when you exported your old email.
+
+## Watch: Import and redirect email
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
+  
+More at [Import email with Outlook](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de).
+
+You can also use Exchange admin center to import everyone's email. For more information, see [migrate multiple email accounts](/Exchange/mailbox-migration/mailbox-migration).
+
+## Set up OneDrive for business
+
+Select the OneDrive cloud icon from your taskbar and follow the steps to move your files to your new OneDrive for Business folder. Select **Next** to set up Microsoft Teams.
+

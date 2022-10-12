@@ -6,14 +6,14 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.collection: 
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about SharePoint storage quotas in multi-geo environments and how quotas can be managed by the SharePoint Online admin.
 ---
 
@@ -27,22 +27,30 @@ The SharePoint storage quota for any geo location can be allocated by the ShareP
 
 ## Configure a storage quota for a geo location
 
-Use the [Microsoft SharePoint Online Module](https://www.microsoft.com/download/details.aspx?id=35588 ) and connect to the central location to allocate the storage quota for a geo location. 
+Use the [Microsoft SharePoint Online Module](https://www.microsoft.com/download/details.aspx?id=35588) and connect to the central location to allocate the storage quota for a geo location.
 
 To allocate Storage Quota for a location, run cmdlet:
 
-`Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB <value>`
+```powershell
+Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB <value>
+```
 
 To view Storage Quota for the current geo location, run:
 
-`Get-SPOGeoStorageQuota`
+```powershell
+Get-SPOGeoStorageQuota
+```
 
-![Screenshot of PowerShell window showing Get-SPOGeoStorageQuota cmdlet](../media/multi-geo-storage-quota.png)
+![Screenshot of PowerShell window showing Get-SPOGeoStorageQuota cmdlet.](../media/multi-geo-storage-quota.png)
 
 To view Storage Quota for all geo locations, run:
 
-`Get-SPOGeoStorageQuota -AllLocations`
+```powershell
+Get-SPOGeoStorageQuota -AllLocations
+```
 
 To remove the allocated storage quota for a geo location, set `StorageQuota value = 0`:
 
-`Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB 0`
+```powershell
+Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB 0
+```

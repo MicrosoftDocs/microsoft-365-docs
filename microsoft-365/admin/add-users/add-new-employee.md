@@ -2,14 +2,15 @@
 title: "Add a new employee to Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -17,11 +18,12 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
-description: "Add new employees to Microsoft 365 for business for email, Skype, and Office apps."
+description: "Admins can learn how to add new employees to Microsoft 365 for business and give them access to email, Skype, and Office apps."
 ---
 
 # Add a new employee to Microsoft 365
@@ -67,7 +69,7 @@ Just like Facebook, Amazon, or Gmail, your employee signs in to use Microsoft 36
 ## Step 4: Help your employee get started
 
 
-Share with them the [Employee quick setup for Microsoft 365](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f) to sign in, install software, set up email, and more. 
+Share with them the [Employee quick setup for Microsoft 365](../setup/employee-quick-setup.md) to sign in, install software, set up email, and more. 
   
 And here's a quick reference to help get them started:
   
@@ -81,8 +83,7 @@ And here's a quick reference to help get them started:
 |Complete the OneDrive for Business training to help you learn how to store and organize your documents, presentations, and spreadsheets in the cloud.  <br/> |Keep your business-related documents in the cloud by using OneDrive for Business. You can always get to your content, even if you're signed in to Microsoft 365 on a different computer. [Watch a video to learn how to use your OneDrive for Business](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **Training:** [OneDrive for Business training](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132) (Select OneDrive for Business).  <br/> |
 |Complete the SharePoint Online training to help you collaborate with coworkers and share content.  <br/> |The best place to keep documents that your coworkers will also access is in SharePoint Online.  <br/> <br/>**Training:** [Video: Collaborate with team content using SharePoint Online](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **Find out:** How is your organization using SharePoint Online, and what type of documents get stored there. Also, which documents are stored in OneDrive for Business.  <br/> |
 
-## Related articles
+## Related content
 
-[Remove a former employee from Microsoft 365](remove-former-employee.md)
-  
-[Add users  and assign licenses at the same time65](add-users.md)
+[Remove a former employee from Microsoft 365](remove-former-employee.md) (article)\
+[Add users  and assign licenses at the same time65](add-users.md) (article)

@@ -8,13 +8,15 @@ manager: laurawi
 ms.date: 06/09/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.service: o365-solutions
+ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: 
 description: Prevent personal data breaches with identity, device, and threat protection services of Microsoft 365.
 ---
@@ -25,7 +27,7 @@ Microsoft 365 provides a number of identity, device, and threat protection capab
 
 ## How identity, device, and threat protection relate to data privacy regulation
 
-While the data privacy regulations vary in their specificity, the essence of what they call for is embodied in the GDPR’s Article 5(1)(f), which states that: 
+While the data privacy regulations vary in their specificity, the essence of what they call for is embodied in the GDPR’s Article 5(1)(f), which states that:
 
 - Personal data shall be processed in a manner that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organizational measures ('integrity and confidentiality').
 
@@ -65,7 +67,7 @@ Use [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microso
 - Require mobile devices to lock upon inactivity.
 - Require mobile devices to wipe on multiple sign-in failures.
 
-Use [Exchange Online Protection and Microsoft Defender for Office 365](../security/office-365-security/office-365-atp.md) for the **Protect Against Threats** category, with which you can:
+Use [Exchange Online Protection and Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md) for the **Protect Against Threats** category, with which you can:
 
 - Enable sender authentication (SPF, DMARC and DKIM).
 - Set up Microsoft Defender for Office 365 anti-phishing policies.
@@ -78,6 +80,6 @@ Use [Exchange Online Protection and Microsoft Defender for Office 365](../securi
 
 - [Common identity and device access policies](../security/office-365-security/identity-access-policies.md)
 - [Protect against threats in Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
-- [Safe Attachments](../security/office-365-security/atp-safe-attachments.md)
-- [Safe Links](../security/office-365-security/atp-safe-links.md)
+- [Safe Attachments](../security/office-365-security/safe-attachments.md)
+- [Safe Links](../security/office-365-security/safe-links.md)
 - [Safe Documents](../security/office-365-security/safe-docs.md)

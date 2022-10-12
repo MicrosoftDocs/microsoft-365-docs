@@ -1,18 +1,19 @@
 ---
 title: "View directory synchronization status in Microsoft 365"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: 
  - Adm_O365
  - seo-marvel-apr2020
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:
@@ -30,7 +31,7 @@ If you have integrated your on-premises Active Directory Domain Services (AD DS)
 ## View directory synchronization status
 
 - Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and choose **DirSync Status** on the home page.
-- Alternately, you can go to **Users** \> **Active users**, and on the **Active users** page, choose **More** \> **Directory synchronization**. On the **Directory Synchronization** pane, choose **Go to DirSync management**.
+- Alternately, you can go to **Users** \> **Active users**, and on the **Active users** page, select the **Elipse** \> **Directory synchronization**. On the **Directory Synchronization** pane, choose **Go to DirSync management**.
 
 ## Information on the Manage directory synchronization page
 
@@ -56,11 +57,10 @@ In this section, you'll install an Azure AD Connect Health agent on each of your
 
 The key design decision of how to use Azure AD Connect Health is based on how you are using Azure AD Connect:
 
-- If you’re using the **managed authentication** option, start with [Using Azure AD Connect Health with sync](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-sync) to understand and configure Azure AD Connect Health.
-- If you're synchronizing just the names of the accounts and groups using **federated authentication** with Active Directory Federation Services (AD FS), start with [Using Azure AD Connect Health with AD FS](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-adfs) to understand and configure Azure AD Connect Health.
+- If you’re using the **managed authentication** option, start with [Using Azure AD Connect Health with sync](/azure/active-directory/connect-health/active-directory-aadconnect-health-sync) to understand and configure Azure AD Connect Health.
+- If you're synchronizing just the names of the accounts and groups using **federated authentication** with Active Directory Federation Services (AD FS), start with [Using Azure AD Connect Health with AD FS](/azure/active-directory/connect-health/active-directory-aadconnect-health-adfs) to understand and configure Azure AD Connect Health.
 
 When complete, you’ll have:
 
 - The Azure AD Connect Health agent installed on your on-premises identity provider servers.
 - The Azure AD Connect Health portal displaying the current state of your on-premises infrastructure and synchronization activities with the Azure AD tenant for your Microsoft 365 subscription.
-

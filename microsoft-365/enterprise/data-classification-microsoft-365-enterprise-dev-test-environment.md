@@ -2,16 +2,21 @@
 title: "Data classification for your Microsoft 365 for enterprise test environment"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: M365-security-compliance
-ms.custom: Ent_TLGs
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
+- M365-security-compliance
+ms.custom: 
+- Ent_TLGs
+- admindeeplinkMAC
+- admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use this Test Lab Guide to create and use retention labels on documents in your Microsoft 365 for enterprise test environment.
 ---
@@ -27,7 +32,7 @@ Classifying data in your test environment involves three phases:
 - [Phase 2: Create retention labels](#phase-2-create-retention-labels)
 - [Phase 3: Apply retention labels to documents](#phase-3-apply-retention-labels-to-documents)
 
-![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
@@ -45,7 +50,7 @@ If you want to configure retention labels in a simulated enterprise, follow the 
 
 In this phase, create the retention labels for the different levels of retention for SharePoint Online documents folders:
 
-1. Sign in to the [Microsoft 365 security center](https://security.microsoft.com/homepage) with your global admin account.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> with your global admin account.
 1. From the **Home - Microsoft 365 security** tab of your browser, select **Classification** > **Retention labels**.
 1. Select **Create a label**.
 1. In the **Name your label** pane, enter **Internal Public** in **Name your label**, and then select **Next**.
@@ -73,7 +78,7 @@ In this phase, you discover the default retention label behavior for files in th
 
 First, create a sensitive-level SharePoint Online team site:
   
-1. Using a private instance of your browser, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) using your global admin account.
+1. Using a private instance of your browser, sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> using your global admin account.
 1. In the list of tiles, select **SharePoint**.
 1. On the new **SharePoint** tab in your browser, select **Create site**.
 1. On the **Create a site** page, select **Team site**.
@@ -109,4 +114,4 @@ Explore additional [information protection](m365-enterprise-test-lab-guides.md#i
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](/microsoft-365-enterprise/)

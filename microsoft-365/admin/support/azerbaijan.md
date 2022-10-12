@@ -7,23 +7,25 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.collection: 
+- scotvorg
+- Adm_Support
+ms.localizationpriority: medium
 description: Learn how to contact support for your country or region.
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Contact support for Azerbaijan
 
-[Find another country or region](../contact-support-for-business-products.md).
+[Find another country or region](../get-help-support.md).
 
 ## Phone number
 01 24 37 35 55
 
-Select option 9
+Press 2 for business
 
-Enter code 7706
+Press 1 for Microsoft 365
 
 ## Hours
 ### Billing Support:

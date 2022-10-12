@@ -1,25 +1,25 @@
 ---
 title: "Use sharing auditing in the audit log"
+description: Admin can learn how to use sharing auditing in the Microsoft 365 audit log to identify resources shared with users outside of their organization.
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
 - BCS160
 - MET150
-ms.collection: 
-- M365-security-compliance
-- SPO_Content
-ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: Admin can learn how to use sharing auditing in the Microsoft 365 audit log to identify resources shared with users outside of their organization.
+ms.collection:
+- tier1
+- purview-compliance
+- audit
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -27,6 +27,8 @@ ms.custom: seo-marvel-apr2020
 
 Sharing is a key activity in SharePoint Online and OneDrive for Business, and it's widely used in organizations. Administrators can use sharing auditing in the audit log to determine how sharing is used in their organization. 
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## The SharePoint Sharing schema
 
 Sharing events (not including events related to sharing policy and sharing links) are different from file- and folder-related events in one primary way: one user is performing an action that has an effect on another user. For example, when a resource User A gives User B access to a file. In this example, User A is the  *acting user*  and User B is the  *target user*. In the SharePoint File schema, the acting user's action only affects the file itself. When User A opens a file, the only information needed in the **FileAccessed** event is the acting user. To address this difference, there is a separate schema, called the  *SharePoint Sharing schema*, that captures more information about sharing events. This ensures that administrators have visibility into who shared a resource and the user the resource was shared with. 
@@ -89,28 +91,28 @@ A common requirement for administrators is creating a list of all resources that
   
 ### Step 1: Search for sharing events and export the results to a CSV file
 
-The first step is to search the audit log for sharing events. For more information (including the required permissions) about searching the audit log, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+The first step is to search the audit log for sharing events. For more information (including the required permissions) about searching the audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
   
-1. Go to [https://protection.office.com](https://protection.office.com).
-    
+1. Go to <https://compliance.microsoft.com>.
+
 2. Sign in using your work or school account.
-    
-3. In the left pane of the Security & Compliance Center, click **Search**  > **Audit log search**.
-    
-    The **Audit log search** page is displayed. 
-    
+
+3. In the left pane of the Microsoft Purview compliance portal, click **Audit**.
+
+    The **Audit** page is displayed.
+
 4. Under **Activities**, click **Sharing and access request activities** to search for sharing-related events. 
-    
-    ![Under Activities, select Sharing and access request activities](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
+
+    ![Under Activities, select Sharing and access request activities.](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
-5.  Select a date and time range to find the sharing events that occurred within that period. 
-    
+5. Select a date and time range to find the sharing events that occurred within that period. 
+
 6. Click **Search** to run the search. 
-    
+
 7. When the search is finished running and the results are displayed, click **Export results** \> **Download all results**.
-    
+
     After you select the export option, a message at the bottom of the window prompts you to open or save the CSV file.
-    
+
 8. Click **Save** \> **Save as** and save the CSV file to a folder on your local computer. 
 
 ### Step 2: Use the PowerQuery Editor to format the exported audit log

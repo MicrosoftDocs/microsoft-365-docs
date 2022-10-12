@@ -1,16 +1,18 @@
 ---
 title: "View Microsoft 365 user accounts with PowerShell"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg 
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: 
@@ -102,19 +104,19 @@ User accounts have two sources:
 
 - Windows Server Active Directory (AD), which are accounts that sync from on-premises AD to the cloud.
 
-- Azure Active Directory (Azure AD) AD accounts, which are created directly in the cloud.
+- Azure Active Directory (Azure AD) accounts, which are created directly in the cloud.
 
-
-The following command instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *True*. You can use it to find accounts that are synchronizing from on-premise AD.
+You can use the following command to find accounts that are synchronizing from **on-premise** AD. It instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *True*. 
 
 ```powershell
 Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
 ```
 
-The following command instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *False*. You can use it to find cloud-only accounts.
+You can use the following command to find **cloud-only** accounts. It instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *False* or not set (*Null*).
+An account that was never synced from on-premise AD has *DirSyncEnabled* set to *Null*. An account that was synced initially from on-premise AD but is no longer being synced has *DirSyncEnabled* set to *False*. 
 
 ```powershell
-Get-AzureADUser | Where {$_.DirSyncEnabled -ne $false}
+Get-AzureADUser | Where {$_.DirSyncEnabled -ne $true}
 ```
 
 ### View accounts based on a common property
@@ -144,8 +146,7 @@ Get-AzureADUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  The syntax for the **Where** cmdlet in these examples is **Where {$\_.** [user account property name] [comparison operator] [value] **}**.> [comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified. For more information, see [Where](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/where-object?view=powershell-7).
-  
+> The syntax for the **Where** cmdlet in these examples is **Where {$\_.** [user account property name] [comparison operator] [value] **}**.> [comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified. For more information, see [Where](/powershell/module/microsoft.powershell.core/where-object).
 
 ## Use the Microsoft Azure Active Directory Module for Windows PowerShell
 
@@ -190,7 +191,7 @@ BrianJ@litwareinc.onmicrosoft.com     Brian Johnson         False
 ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 ```
 
-For information about additional parameters to filter the set of user accounts that are displayed, see [Get-MsolUser](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100)).
+For information about additional parameters to filter the set of user accounts that are displayed, see [Get-MsolUser](/previous-versions/azure/dn194133(v=azure.100)).
   
 ### View a specific account
 
@@ -237,7 +238,7 @@ Get-MsolUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  The syntax for the **Where** cmdlet in these examples is **Where {$\_.** [user account property name] [comparison operator] [value] **}**.  [comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified. For more information, see [Where](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/where-object?view=powershell-7).
+> The syntax for the **Where** cmdlet in these examples is **Where {$\_.** [user account property name] [comparison operator] [value] **}**.  [comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified. For more information, see [Where](/powershell/module/microsoft.powershell.core/where-object).
   
 To check the blocked status of a user account, use the following command:
   
@@ -250,11 +251,11 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,Block
 By default, the **Get-MsolUser** cmdlet displays these three properties of user accounts:
   
 - UserPrincipalName
-    
+
 - DisplayName
-    
+
 - isLicensed
-    
+
 If you need additional properties, such as the department where the user works and the country/region where they use Microsoft 365 services, you can run **Get-MsolUser** in combination with the **Select** cmdlet to specify the list of user account properties. Here's an example:
   
 ```powershell
@@ -311,7 +312,7 @@ Scott Wallace            Operations
 
 If you're using directory synchronization to create and manage your Microsoft 365 users, you can display the local account from which a Microsoft 365 user has been projected. The following example assumes that:
 
-- Azure AD Connect is configured to use the default source anchor of ObjectGUID. (For more information about configuring a source anchor, see [Azure AD Connect: Design concepts](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts)).
+- Azure AD Connect is configured to use the default source anchor of ObjectGUID. (For more information about configuring a source anchor, see [Azure AD Connect: Design concepts](/azure/active-directory/hybrid/plan-connect-design-concepts)).
 - The Active Directory Domain Services module for PowerShell has been installed (see [RSAT tools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)).
 
 ```powershell

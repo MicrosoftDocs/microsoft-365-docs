@@ -2,15 +2,17 @@
 title: "Automate licensing and group membership for your Microsoft 365 for enterprise test environment"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: M365-identity-device-management
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
+- M365-identity-device-management
 ms.custom: 
 - TLG
 - Ent_TLGs
@@ -28,7 +30,7 @@ Setting up auto-licensing and dynamic group membership in your Microsoft 365 for
 - [Phase 1: Build out your Microsoft 365 for enterprise test environment](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Phase 2: Configure and test dynamic group membership and automatic licensing](#phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing)
 
-![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
@@ -87,8 +89,8 @@ In time, you should see the:
 
 See these articles to deploy dynamic group membership and automatic licensing in production:
 
-- [Group-based licensing in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
-- [Dynamic groups in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)
+- [Group-based licensing in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
+- [Dynamic groups in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)
 
 ## Next step
 
@@ -96,10 +98,10 @@ Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) featu
 
 ## See also
 
-[Identity roadmap](identity-roadmap-microsoft-365.md)
+[Deploy identity](deploy-identity-solution-overview.md)
 
 [Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](/microsoft-365-enterprise/)

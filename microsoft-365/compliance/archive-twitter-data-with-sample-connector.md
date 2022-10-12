@@ -1,33 +1,40 @@
 ---
 title: "Set up a connector to archive Twitter data"
+description: "Learn how administrators can set up and use a native connector to import Twitter data into Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 04/08/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ms.custom: seo-marvel-apr2020
-description: "Learn how administrators can set up and use a native connector to import Twitter data into Microsoft 365."
 ---
 
-# Set up a connector to archive Twitter data (preview)
+# Set up a Microsoft connector to archive Twitter data (preview)
 
-Use a connector in the Microsoft 365 compliance center to import and archive data from Twitter to Microsoft 365. After you set up and configure the connector, it connects to your organization's Twitter account (on a scheduled basis), converts the content of an item to an email message format, and then imports those items to a mailbox in Microsoft 365.
+Use a connector in the Microsoft Purview compliance portal to import and archive data from Twitter to Microsoft 365. After you set up and configure the connector, it connects to your organization's Twitter account (on a scheduled basis), converts the content of an item to an email message format, and then imports those items to a mailbox in Microsoft 365.
 
-After the Twitter data is imported, you can apply Microsoft 365 compliance features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, and Microsoft 365 retention policies to the Twitter data. For example, when a mailbox is placed on Litigation Hold or assigned to a retention policy, the Twitter data is preserved. You can search third-party data using Content Search or associate the mailbox where the Twitter data is stored with a custodian in an Advanced eDiscovery case. Using a connector to import and archive Twitter data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+After the Twitter data is imported, you can apply Microsoft Purview features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, and Microsoft 365 retention policies to the Twitter data. For example, when a mailbox is placed on Litigation Hold or assigned to a retention policy, the Twitter data is preserved. You can search third-party data using Content Search or associate the mailbox where the Twitter data is stored with a custodian in a Microsoft Purview eDiscovery (Premium) case. Using a connector to import and archive Twitter data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
-After Twitter data is imported, you can apply Microsoft 365 compliance features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, Communication compliance, and Microsoft 365 retention policies to the data stored in the mailbox. For example, you can search Twitter data using Content Search or associate the mailbox where the data is stored with a custodian in an Advanced eDiscovery case. Using a connector to import and archive Twitter data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+After Twitter data is imported, you can apply Microsoft Purview features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, Communication compliance, and Microsoft 365 retention policies to the data stored in the mailbox. For example, you can search Twitter data using Content Search or associate the mailbox where the data is stored with a custodian in an eDiscovery (Premium) case. Using a connector to import and archive Twitter data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+
+If you’d like to participate in the preview, please reach out to the team at dcfeedback@microsoft.com.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you set up a connector
 
-Complete the following prerequisites before you can set up and configure a connector in the Microsoft 365 compliance center to import and archive data from your organization's Twitter account.
+Complete the following prerequisites before you can set up and configure a connector in the compliance portal to import and archive data from your organization's Twitter account.
 
 - You need a Twitter account for your organization; you need to sign in to this account when setting up the connector.
 
@@ -38,11 +45,11 @@ Complete the following prerequisites before you can set up and configure a conne
     - [Sign up for a Pay-As-You-Go Azure subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > The [free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md) that's included with your Microsoft 365 subscription doesn't support the connectors in the Security & Compliance Center.
+    > The [free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md) that's included with your Microsoft 365 subscription doesn't support the connectors in the compliance portal.
 
 - The Twitter connector can import a total of 200,000 items in a single day. If there are more than 200,000 Twitter items in a day, none of those items will be imported to Microsoft 365.
 
-- The user who sets up the Twitter connector in the Microsoft 365 compliance center (in Step 5) must be assigned the Mailbox Import Export role in Exchange Online. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the  [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
+- The user who sets up the Twitter connector in the compliance portal (in Step 5) must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## Step 1: Create an app in Azure Active Directory
 
@@ -60,13 +67,13 @@ During the completion of this step (by following the step-by-step instructions),
 
 ## Step 2: Deploy connector web service from GitHub repository to your Azure account
 
-The next step is to deploy the source code for the Twitter connector app that will use Twitter API to connect to your Twitter account and extract data so you can import it to Microsoft 365. The Twitter connector that you deploy for your organization will upload the items from your organization's Twitter account to the Azure Storage location that is created in this step. After you create a Twitter connector in the Microsoft 365 compliance center (in Step 5), the Microsoft 365 Import service will copy the Twitter data from the Azure Storage location to a mailbox in Microsoft 365. As previous explained in the [Before you set up a connector](#before-you-set-up-a-connector) section, you must have a valid Azure subscription to create an Azure Storage account.
+The next step is to deploy the source code for the Twitter connector app that will use Twitter API to connect to your Twitter account and extract data so you can import it to Microsoft 365. The Twitter connector that you deploy for your organization will upload the items from your organization's Twitter account to the Azure Storage location that is created in this step. After you create a Twitter connector in the compliance portal (in Step 5), the Microsoft 365 Import service will copy the Twitter data from the Azure Storage location to a mailbox in Microsoft 365. As previous explained in the [Before you set up a connector](#before-you-set-up-a-connector) section, you must have a valid Azure subscription to create an Azure Storage account.
 
 To deploy the source code for the Twitter connector app:
 
 1. Go to [this GitHub site](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet).
 
-2. Click **Deploy to Azure**.
+2. Select **Deploy to Azure**.
 
 For step-by-step instructions, see [Deploy the connector web service from GitHub to your Azure account](deploy-twitter-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
 
@@ -114,11 +121,11 @@ During the completion of this step (by following the step-by-step instructions),
 
 - Azure Active Directory application secret (the AAD application secret obtained in Step 1)
 
-## Step 5: Set up a Twitter connector in the Microsoft 365 compliance center
+## Step 5: Set up a Twitter connector in the compliance portal
 
-The final step is to set up the Twitter connector in the Microsoft 365 compliance center that will import data from your organization's Twitter account to a specified mailbox in Microsoft 365. After you complete this step, the Microsoft 365 Import service will start importing data from your organization's Twitter account to Microsoft 365.
+The final step is to set up the Twitter connector in the compliance portal that will import data from your organization's Twitter account to a specified mailbox in Microsoft 365. After you complete this step, the Microsoft 365 Import service will start importing data from your organization's Twitter account to Microsoft 365.
 
-For step-by-step instructions, see [Set up a Twitter connector in the Microsoft 365 compliance center](deploy-twitter-connector.md#step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center). 
+For step-by-step instructions, see [Set up a Twitter connector in the Microsoft Purview compliance portal](deploy-twitter-connector.md#step-5-set-up-a-twitter-connector-in-the-compliance-portal).
 
 During the completion of this step (by following the step-by-step instructions), you'll provide the following information (that you've copied to a text file after completing the steps).
 
