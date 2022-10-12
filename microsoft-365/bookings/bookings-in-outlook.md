@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ROBOTS: NO INDEX, NO FOLLOW
 description: "Use Bookings with me to let others schedule meetings with you in Outlook."
 ---
@@ -216,6 +218,12 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
     ```PowerShell
    Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
+
+### Create Bookings with me
+
+1. Open [Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+2. Select **Calendar**.
+3. Select the **Create bookings page** link that appears in your calendar to create Bookings with me.
 
 ## Frequently asked questions
 

@@ -1,5 +1,6 @@
 ---
 title: "Set up Audit (Premium) in Microsoft 365"
+description: "This article describes how to set up Audit (Premium) so you can perform forensic investigations when user accounts are compromised or to investigation other security-related incidents."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,15 +12,15 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-audit
-- m365initiative-compliance
 - m365solution-scenario
+- highpri
 ms.custom: admindeeplinkMAC
 search.appverid: 
 - MOE150
 - MET150
-description: "This article describes how to set up Audit (Premium) so you can perform forensic investigations when user accounts are compromised or to investigation other security-related incidents."
 ---
 
 # Set up Microsoft Purview Audit (Premium)
@@ -27,6 +28,8 @@ description: "This article describes how to set up Audit (Premium) so you can pe
 If your organization has a subscription and end-user licensing that supports Audit (Premium), perform the following steps to set up and use the additional capabilities in Audit (Premium).
 
 ![Workflow to set up Audit (Premium).](../media/AdvancedAuditWorkflow.png)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Set up Audit (Premium) for users
 

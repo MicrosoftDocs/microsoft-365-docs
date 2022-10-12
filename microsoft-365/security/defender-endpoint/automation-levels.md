@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 ms.date: 08/22/2022
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
@@ -38,6 +38,9 @@ Automated investigation and remediation (AIR) capabilities in Microsoft Defender
 
 > [!TIP]
 > For best results, we recommend using full automation when you [configure AIR](configure-automated-investigations-remediation.md). Data collected and analyzed over the past year shows that customers who are using full automation had 40% more high-confidence malware samples removed than customers who are using lower levels of automation. Full automation can help free up your security operations resources to focus more on your strategic initiatives.
+
+> [!NOTE]
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## Levels of automation
 

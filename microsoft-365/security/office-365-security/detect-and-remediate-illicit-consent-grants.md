@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: article
 ms.collection:
 - o365_security_incident_response
-- M365-security-compliance
+- m365-security
 ms.date: 07/28/2022
 ms.localizationpriority: medium
 search.appverid:
