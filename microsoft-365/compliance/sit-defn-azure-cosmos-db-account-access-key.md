@@ -47,7 +47,7 @@ No
 
 ## Definition
 
-This SIT is designed to match the security information that's used to provide access to administrative resources for [Azure Cosmos DB](/azure/cosmos-db/secure-access-to-data) accounts .
+This SIT is designed to match the security information that's used to provide access to administrative resources for [Azure Cosmos DB](/azure/cosmos-db/secure-access-to-data) accounts.
 
 It uses several primary resources:
 
