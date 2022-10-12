@@ -1044,7 +1044,7 @@
       items:
         - name: Learn about sensitivity labels
           href: sensitivity-labels.md
-        - name: Why choose built-in labeling for Office apps
+        - name: Migrate the AIP add-in for Office apps
           href: sensitivity-labels-aip.md
         - name: Get started with sensitivity labels
           href: get-started-with-sensitivity-labels.md

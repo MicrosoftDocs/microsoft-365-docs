@@ -1,5 +1,5 @@
 ---
-title: Create documents using content assembly in Microsoft SharePoint Syntex
+title: Create documents using content assembly in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,17 +12,17 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to automatically create documents and other content using a modern template in Microsoft SharePoint Syntex.
+description: Learn how to automatically create documents and other content using a modern template in Microsoft Syntex.
 ---
 
-# Create documents using content assembly in Microsoft SharePoint Syntex
+# Create documents using content assembly in Microsoft Syntex
 
-You can use SharePoint Syntex to help you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, sales pitches, and correspondence. You can do all this quicker, more consistently, and with fewer errors by using content assembly in SharePoint Syntex.
+You can use Microsoft Syntex to help you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, sales pitches, and correspondence. You can do all this quicker, more consistently, and with fewer errors by using content assembly in Syntex.
 
 With content assembly, you can use an existing document to create a *modern template*, and then use that template to automatically generate new content using SharePoint lists or manual entries as a data source.
 
 > [!NOTE]
-> You must be a licensed SharePoint Syntex user to access and use content assembly capabilities. You also must have permissions to manage SharePoint lists.
+> You must be a licensed Syntex user to access and use content assembly capabilities. You also must have permissions to manage SharePoint lists.
 
 ## Create a modern template
 
@@ -172,7 +172,7 @@ You can use a *published* modern template to quickly create similar documents wi
 
    ![Screenshot of document library showing the Create a document from a template panel.](../media/content-understanding/content-assembly-create-document-2b.png)
 
-   To help reduce time and effort involved in filling values for placeholders, SharePoint Syntex provides:
+   To help reduce time and effort involved in filling values for placeholders, Syntex provides:
 
       - Suggestions to help you easily pick values when selecting values from a list.
       - Autofill placeholder values if able to uniquely identify a record for placeholders associated with the same list.
