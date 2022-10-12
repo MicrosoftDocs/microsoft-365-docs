@@ -23,7 +23,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 ## Phone number
 0120 996 680 (Office 365 Enterprise)
 
-0120 628 860 (Other Plans) (Example : Microsoft 365 Business Basic, Standard, Premium etc)
+0120 628 860 (Other plans, such as Microsoft 365 Business Basic, Standard, Premium, and others)
 
 ## Hours
 ### Billing Support:
