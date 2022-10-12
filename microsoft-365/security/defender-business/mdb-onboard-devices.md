@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/14/2022
+ms.date: 10/12/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -249,9 +249,8 @@ Choose the operating system for your server:
 ## Windows Server
 
 > [!IMPORTANT]
-> **The ability to onboard Windows Server endpoints is currently in preview**. When general availability is announced, a Microsoft Defender for Business servers license must be purchased for each onboarded server, or those servers can be offboarded.
 > Make sure that you meet the following requirements before you onboard a Windows Server endpoint:
-> - The **Preview features** setting is turned on. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
+> - You have a Microsoft Defender for Business servers license. (See [How to get Microsoft Defender for Business servers](get-defender-business-servers.md).)
 > - The enforcement scope for Windows Server is turned on. Go to **Settings** > **Endpoints** > **Configuration management** > **Enforcement scope**. Select **Use MDE to enforce security configuration settings from MEM**, select  **Windows Server**, and then select **Save**.
 
 You can onboard an instance of Windows Server to Defender for Business by using a local script.
@@ -305,9 +304,8 @@ After the command runs, the Command Prompt window will close automatically. If s
 ## Linux Server
 
 > [!IMPORTANT]
-> **The ability to onboard Linux Server endpoints is currently in preview**. When general availability is announced, a Microsoft Defender for Business servers license must be purchased for each onboarded server, or those servers can be offboarded.
 > Make sure that you meet the following requirements before you onboard a Linux Server endpoint:
-> - The **Preview features** setting is turned on. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
+> - You have a Microsoft Defender for Business servers license. (See [How to get Microsoft Defender for Business servers](get-defender-business-servers.md).)
 > - You meet the [prerequisites for Microsoft Defender for Endpoint on Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).
 
 ### Onboard Linux Server endpoints
