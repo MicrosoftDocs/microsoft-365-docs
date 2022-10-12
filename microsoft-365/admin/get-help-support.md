@@ -61,7 +61,7 @@ Save time by starting your service request online. We'll help you find a solutio
 
 ## Phone support
 
-Phone numbers for Billing and Technical support hours (and languages) are listed on [Microsoft 366 for business support contacts by country or region](country-region-support-contact-info.md).
+Phone numbers for Billing and Technical support hours (and languages) are listed on [Microsoft 366 for business support contacts by country or region](support-contact-info.md).
 
 Admins, have your account details ready when you call.
 
