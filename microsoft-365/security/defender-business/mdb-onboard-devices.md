@@ -105,7 +105,7 @@ When you set up automatic enrollment, users add their work account to the device
 > [!TIP]
 > To learn more, see [Enable Windows automatic enrollment](/mem/intune/enrollment/windows-enroll).
 
-#### Ask users enroll their Windows 10 and 11 devices
+#### Ask users to enroll their Windows 10 and 11 devices
 
 1. Watch the following video to see how enrollment works:<br/><br/>
 
