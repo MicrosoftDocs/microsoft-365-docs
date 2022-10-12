@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- scotvorg 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -48,19 +49,19 @@ You must be a global administrator to perform this task.
 ## Understanding guest accounts in Microsoft 365
 
 Being able to easily share files and documents with the right people while preventing oversharing requires planning. The following resources provide more background to help you create a secure guest sharing environment in Microsoft 365.
-- Plan external collaboration
-- Create a secure guest sharing environment
-- Set up secure file and document sharing and collaboration with Teams in Microsoft 365
-- Guest access in Microsoft Teams
+- [Plan external collaboration](../../solutions/plan-external-collaboration.md)
+- [Create a secure guest sharing environment](../../solutions/create-secure-guest-sharing-environment.md)
+- [Set up secure file and document sharing and collaboration with Teams in Microsoft 365](../../solutions/setup-secure-collaboration-with-teams.md)
+- [Guest access in Microsoft Teams](/microsoftteams/guest-access)
 
 In addition to Microsoft Teams and SharePoint, Microsoft 365 also supports guest access in other applications. The following Microsoft 365 products support guest access.
 
-- Power Apps (Canvas apps) - Share a canvas app with guest users.
-- Lists - External or guest sharing in OneDrive, SharePoint, and Lists.
-- OneDrive - External or guest sharing in OneDrive, SharePoint, and Lists.
-- Planner – Applies to Web and mobile platforms. Guest access in Microsoft Planner.
-- Microsoft 365 groups - Manage guest access in Microsoft 365 groups.
-- Yammer - Work with external groups in Yammer networks not aligned to native mode.
+- Power Apps (Canvas apps) - [Share a canvas app with guest users](/power-apps/maker/canvas-apps/share-app-guests).
+- Lists - [External or guest sharing in OneDrive, SharePoint, and Lists](https://support.microsoft.com/office/external-or-guest-sharing-in-onedrive-sharepoint-and-lists-7aa070b8-d094-4921-9dd9-86392f2a79e7).
+- OneDrive - [External or guest sharing in OneDrive, SharePoint, and Lists](https://support.microsoft.com/office/external-or-guest-sharing-in-onedrive-sharepoint-and-lists-7aa070b8-d094-4921-9dd9-86392f2a79e7).
+- Planner – Applies to Web and mobile platforms. [Guest access in Microsoft Planner](https://support.microsoft.com/office/guest-access-in-microsoft-planner-cc5d7f96-dced-4da4-ab62-08c72d9759c6).
+- Microsoft 365 groups - [Manage guest access in Microsoft 365 groups](../create-groups/manage-guest-access-in-groups.md).
+- Yammer - [Work with external groups in Yammer networks not aligned to native mode](/yammer/work-with-external-users/create-and-manage-external-groups).
 
 For Microsoft Office applications like Microsoft Word and Excel, guest access is controlled by the location of the output file, for example, Microsoft SharePoint, Teams, and OneDrive.
 
@@ -74,6 +75,6 @@ See [add guests in bulk](/azure/active-directory/b2b/tutorial-bulk-invite) to in
 
 ## Related content
 
-[Manage guest access in Microsoft 365 groups](../create-groups/manage-guest-access-in-groups.md)\
-[Prevent guests from being added to a specific Microsoft 365 group or Microsoft Teams](../../solutions/per-group-guest-access.md)\
+[Manage guest access in Microsoft 365 groups](../create-groups/manage-guest-access-in-groups.md) (article)\
+[Prevent guests from being added to a specific Microsoft 365 group or Microsoft Teams](../../solutions/per-group-guest-access.md) (article)\
 [Organization switcher in the Microsoft 365 admin center](https://techcommunity.microsoft.com/t5/microsoft-365-blog/new-organization-switcher-in-the-microsoft-365-admin-center/ba-p/1165543)  (article)

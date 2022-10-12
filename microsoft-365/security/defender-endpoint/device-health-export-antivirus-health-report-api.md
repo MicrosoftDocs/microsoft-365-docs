@@ -1,20 +1,24 @@
 ---
 title: Microsoft Defender Antivirus Device Health export device antivirus health reporting
-description: Presents methods to retrieve Microsoft Defender Antivirus (MDAV) device health details. 
+description: Presents methods to retrieve Microsoft Defender Antivirus device health details. 
 keywords: apis, graph api, supported apis, get, device health api, Microsoft Defender for Endpoint report api microsoft defender reports api, microsoft defender for endpoint reporting api, windows defender reporting api, defender for endpoint reporting api, windows defender report api 
-ms.prod: m365-security 
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy 
 ms.sitesec: library 
 ms.pagetype: security 
 ms.author: v-jweston 
 author: jweston-1
-ms.localizationpriority: medium 
+ms.localizationpriority: medium
+ms.date: 09/01/2022 
 manager: dansimp 
 audience: ITPro 
-ms.collection: M365-security-compliance 
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article 
-MS.technology: mde 
+ms.subservice: mde
 ms.custom: api 
+search.appverid: met150
 ---
 
 # Export device antivirus health report
@@ -43,6 +47,12 @@ This API has two methods to retrieve Microsoft Defender Antivirus device antivir
   - Download all the files using the download URLs and process the data as you like.
 
 Data that is collected using either '_JSON response_ or _via files_' is the current snapshot of the current state. It doesn't contain historic data. To collect historic data, customers must save the data in their own data storages. See [Export device health details API methods and properties](device-health-api-methods-properties.md).
+
+> [!IMPORTANT]
+>
+> Currently, only the **Antivirus Health JSON Response** is generally available. **Antivirus Health API via files** is currently only available in public preview.
+>
+> **Advanced Hunting custom query** is currently only available in public preview, even if the queries are still visible.
 
 > [!IMPORTANT]
 >
@@ -83,9 +93,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type | Permission | Permission display name |
 |:---|:---|:---|
 | Application | Machine.Read.All | ‘Read all machine profiles’ |
-| Application | Machine.ReadWrite.All |  ‘Read and write all machine information’ |
 |Delegated (work or school account) | Machine.Read | ‘Read machine information’ |
-| Delegated (work or school account) | Machine.ReadWrite | ‘Read and write machine information’ |
 
 ### 1.3 URL (HTTP request)
 
@@ -204,6 +212,9 @@ Here's an example response:
 
 ## 2 Export health reporting (via files)
 
+> [!IMPORTANT]
+> Information in this section relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 ### 2.1 API method description
 
 This API response contains all the data of Antivirus health and status per device. Returns a table with an entry for every unique combination of:
@@ -225,8 +236,8 @@ One of the following permissions is required to call this API.
 
 | Permission type | Permission | Permission display name |
 |:---|:---|:---|
-| Application | Machine.ReadWrite.All | ' Read and write all machine information’  |
-| Delegated (work or school account) | Machine.Read | ' Read machine information ' |
+| Application | Vulnerability.Read.All | 'Read "threat and vulnerability management" vulnerability information’  |
+| Delegated (work or school account) | Vulnerability.Read | 'Read "threat and vulnerability management" vulnerability information’ |
 
 To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details](apis-intro.md).
 
@@ -282,4 +293,4 @@ Here's an example response:
 
 [Export device health methods and properties](device-health-api-methods-properties.md)
 
-[Device health and compliance reporting](machine-reports.md)
+[Device health and compliance reporting](device-health-reports.md)

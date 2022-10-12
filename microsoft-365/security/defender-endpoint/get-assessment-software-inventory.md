@@ -2,7 +2,7 @@
 title: Export software inventory assessment per device
 description: Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: jweston-1
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Export software inventory assessment per device
@@ -50,7 +53,7 @@ Data that is collected (using either _Json response_ or _via files_) is the curr
 
 This API response contains all the data of installed software that has a [Common Platform Enumeration(CPE)](https://nvd.nist.gov/products/cpe), per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 
-#### Limitations
+#### 1.1.1 Limitations
 
 - Maximum page size is 200,000.
 - Rate limitations for this API are 30 calls per minute and 1000 calls per hour.
@@ -61,8 +64,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 ---|---|---
-Application|Software.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
-Delegated (work or school account)|Software.Read|\'Read Threat and Vulnerability Management vulnerability information\'
+Application|Software.Read.All|\'Read Threat and Vulnerability Management software information\'
+Delegated (work or school account)|Software.Read|\'Read Threat and Vulnerability Management software information\'
 
 ### 1.3 URL
 
@@ -96,7 +99,7 @@ EndOfSupportDate|string|The date in which support for this software has or will 
 EndOfSupportStatus|string|End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.|Upcoming EOS
 Id|string|Unique identifier for the record.|123ABG55_573AG&mnp!
 NumberOfWeaknesses|int|Number of weaknesses on this software on this device|3
-OSPlatform|string|Platform of the operating system running on the device. These are specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See tvm supported operating systems and platforms for details.|Windows10 and Windows 11
+OSPlatform|string|Platform of the operating system running on the device. These are specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See Microsoft Defender Vulnerability Management supported operating systems and platforms for details.|Windows10 and Windows 11
 RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers
 RegistryPaths|Array[string]|Registry evidence that the product is installed in the device.|[ "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft Silverlight" ]
 SoftwareFirstSeenTimestamp|string|The first time this software was seen on the device.|2019-04-07 02:06:47
@@ -226,8 +229,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 ---|---|---
-Application|Software.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
-Delegated (work or school account)|Software.Read|\'Read Threat and Vulnerability Management vulnerability information\'
+Application|Software.Read.All|\'Read Threat and Vulnerability Management software information\'
+Delegated (work or school account)|Software.Read|\'Read Threat and Vulnerability Management software information\'
 
 ### 2.3 URL
 
@@ -288,5 +291,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 
 Other related
 
-- [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilities in your organization](tvm-weaknesses.md)

@@ -3,7 +3,7 @@ title: Supported Microsoft Defender for Endpoint APIs
 ms.reviewer: 
 description: Learn about the specific supported Microsoft Defender for Endpoint entities where you can create API calls to.
 keywords: apis, supported apis, actor, alerts, device, user, domain, ip, file, advanced queries, advanced hunting
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Supported Microsoft Defender for Endpoint APIs

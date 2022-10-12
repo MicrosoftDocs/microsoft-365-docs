@@ -8,9 +8,11 @@ manager: scotv
 ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection: 
+- scotvorg
+- highpri 
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,7 +23,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150 
 description: "Learn how to renew most Microsoft 365 for business subscriptions by turning recurring billing off or on."
-ms.date: 05/04/2021
+ms.date: 08/18/2022
 ---
 
 # Renew Microsoft 365 for business
@@ -55,8 +57,11 @@ If you prepaid for your subscription with a product key, your subscription will 
 ::: moniker-end
 
 2. Select the subscription for which you want to manage recurring billing.
+
 3. On the subscription details page, under **Subscription and payment settings**, select **Edit recurring billing**.
+
 4. In the **Edit recurring billing** pane, select **On**, **On, but renew once**, or **Turn off**.
+
 5. Select **Save**.
 
     > [!NOTE]
@@ -65,6 +70,34 @@ If you prepaid for your subscription with a product key, your subscription will 
     > - When **Recurring billing** is turned off, the subscription isn't cancelled. If you want to keep the subscription active, you must pay the bill manually.
     > - If you turn off **Recurring billing**, the subscription remains active until it expires. You can view the expiration date on the subscription details page in the **Subscription and payment settings** section.
     > - To learn how to cancel the subscription right away, see [Cancel my subscription](cancel-your-subscription.md).
+
+## Extend the expiration date of your prepaid subscription by using a Microsoft 365 product key
+
+Prepaid product licenses are issued to you as a 25-character alphanumeric code, called a product key. If you buy another pre-paid subscription for a product you already own, you can use the product key to extend the expiration date of your subscription. You can also use a product key to [add more licenses to your subscription](../licenses/buy-licenses.md#add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key).
+
+::: moniker range="o365-worldwide"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+
+::: moniker-end
+
+2. On the **Products** tab, select the subscription that you want to extend.
+
+3. On the subscription details page, in the **Subscription and payment settings** section, select **Extend end date**.
+
+4. On the **renew or add user licenses** page, select **Use a new and unused product key**, then select **Next**.
+
+5. Enter the product key, then select **Next**.
+    > [!NOTE]
+    > If you have more than one product key, you can select **Add another product key** to enter them.
+
+6. Review your order details, then select **Redeem**.
 
 ## Related content
 

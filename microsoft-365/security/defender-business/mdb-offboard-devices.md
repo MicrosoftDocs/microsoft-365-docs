@@ -7,15 +7,17 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
+- tier1
 ---
 
 # Offboard a device from Microsoft Defender for Business
@@ -52,6 +54,6 @@ If you want to offboard a device, use one of the following procedures:
 
 ## Next steps
 
-- [Use your Threat & Vulnerability Management dashboard in Microsoft Defender for Business](mdb-view-tvm-dashboard.md)
+- [Use your Microsoft Defender Vulnerability Management dashboard in Microsoft Defender for Business](mdb-view-tvm-dashboard.md)
 - [View or edit policies in Microsoft Defender for Business](mdb-view-edit-create-policies.md)
 - [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)

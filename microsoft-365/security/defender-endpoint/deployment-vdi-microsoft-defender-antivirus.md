@@ -2,7 +2,6 @@
 title: Microsoft Defender Antivirus Virtual Desktop Infrastructure deployment guide
 description: Learn how to deploy Microsoft Defender Antivirus in a virtual desktop environment for the best balance between protection and performance.
 keywords: vdi, hyper-v, vm, virtual machine, windows defender, antivirus, av, virtual desktop, rds, remote desktop
-ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,8 +11,12 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: jesquive
 manager: dansimp
-ms.technology: mde
-ms.collection: m365-security-compliance
+ms.subservice: mde
+ms.service: microsoft-365-security
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment
@@ -44,7 +47,7 @@ For Azure-based virtual machines, see [Install Endpoint Protection in Microsoft 
 
 > [!IMPORTANT]
 > Although the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.
-> There are performance and feature improvements to the way in which Microsoft Defender AV operates on virtual machines in Windows 10 Insider Preview, build 18323 (and later). We'll identify in this guide if you need to be using an Insider Preview build; if it isn't specified, then the minimum required version for the best protection and performance is Windows 10 1607.
+> There are performance and feature improvements to the way in which Microsoft Defender Antivirus operates on virtual machines in Windows 10 Insider Preview, build 18323 (and later). We'll identify in this guide if you need to be using an Insider Preview build; if it isn't specified, then the minimum required version for the best protection and performance is Windows 10 1607.
 
 ## Set up a dedicated VDI file share
 

@@ -5,15 +5,17 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-
-description: "Get a periodic report of how people in your organization are using Microsoft 365 services and drill into each chart for more insights."
+ms.collection: 
+- scotvorg
+description: "Get a periodic report about how people in your organization use Microsoft 365 services and drill into each chart for more insights."
 ---
 
 # Microsoft 365 Experience insights dashboard
 
-The Experience insights (preview) dashboard shows you data across usage and sentiment to give you a fuller view of your organization's experience with Microsoft 365. This information and data on the dashboard will help you better understand and improve your users experience with Microsoft 365. The dashboard shows you data across usage and user sentiment, and helps give you a fuller picture of your user's overall experience. You can drill down into specific information such as feature usage for certain apps, exact feedback and Net Promoter Score (NPS) comments, and top help articles viewed by users in your organization. This info can help you identify opportunities to improve user’s Microsoft 365 products and app experiences in your organization.
+The Experience insights (preview) dashboard shows you data across usage and sentiment to give you a fuller view of your organization's experience with Microsoft 365.
+Experience insights is optimized for organizations with higher volumes of data so is only available for organizations with 20,000 plus seats. We are working on bringing the experience to smaller organizations in the future. This information and data on the dashboard will help you better understand and improve your users' experience with Microsoft 365. The dashboard shows you data across usage and user sentiment and helps give you a fuller picture of your users' overall experience. You can drill down into specific information such as feature usage for certain apps, exact feedback and Net Promoter Score (NPS) comments, and top help articles viewed by users in your organization. This info can help you identify opportunities to improve users’ Microsoft 365 products and app experiences in your organization.
 
 <!--To learn more about adoption and training for users in your organization, see [Experience insights help article report](experience-insights-help-articles.md). -->
 
@@ -84,18 +86,18 @@ For the first time, you can now see what articles your users are consuming on Su
 
 <!-- :::image type="content" source="../../media/additional-resources.png" alt-text="Screenshot: Image showing additional resources you can select"::: -->
 
-### View your organization's Productivity Score
+### View your organization's Adoption Score
 
-Productivity Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours. For more information on Productivity Score, read, [Productivity Score](../productivity/productivity-score.md).
+Adoption Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours. For more information on Adoption Score, read, [Adoption Score](../adoption/adoption-score.md).
 
 ### Take training for adoption specialists
 
-In this introductory course, you'll learn the six critical elements to drive adoption of your Microsoft cloud services to deliver value to your company. This course is applicable to any size company and uses Office 365 and Microsoft Teams as the example service to create real world scenarios.
+In this introductory course, you'll learn the six critical elements to drive adoption of your Microsoft cloud services to deliver value to your company. This course is applicable to any size company and uses Office 365 and Microsoft Teams as the example service to create real-world scenarios. For more information about training for adoption specialists, read [Use the Microsoft service adoption framework to drive adoption in your enterprise](/training/paths/m365-service-adoption).
 
 ### Join the adoption community
 
-Welcome to the Driving Adoption Community! Connect and discuss the latest topics and best practices in driving cloud adoption. Meet and learn from peers and Microsoft Staff and stay up to date on upcoming trainings, events and our monthly Community calls.
+Welcome to the Driving Adoption Community! Connect and discuss the latest topics and best practices in driving cloud adoption. Meet and learn from peers and Microsoft Staff and stay up to date on upcoming training, events, and our monthly Community calls. For more information, read [Driving Adoption](https://techcommunity.microsoft.com/t5/driving-adoption/ct-p/DrivingAdoption).
 
 ### Use the Microsoft 365 adoption tools
 
-Use our resources to go from inspiration to execution with our productivity cloud. Get started, experiment with our services, and onboard employees at scale while being confident that you are improving the employee experience.
+Use our resources to go from inspiration to execution with our productivity cloud. Get started, experiment with our services, and onboard employees at scale while being confident that you are improving the employee experience. For more information, read [Drive value with Microsoft 365 adoption tools](https://adoption.microsoft.com).

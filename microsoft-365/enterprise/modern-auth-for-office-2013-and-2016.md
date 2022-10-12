@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 8/1/2017
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -23,6 +23,7 @@ search.appverid:
 - BCS160
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
+- scotvorg
 - M365-security-compliance
 description: Learn how Microsoft 365 modern authentication features work differently for Office 2013 and 2016 client apps.
 ---

@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: conceptual
 f1_keywords: 
   - 'ms.o365.cc.AdminRoleGroups'
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 search.appverid: 
   - MOE150
@@ -18,8 +18,8 @@ search.appverid:
 description: Admins can learn about the permissions that are available in the Security & Compliance Center in Microsoft 365.
 ms.custom: 
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Permissions in the Security & Compliance Center
@@ -83,12 +83,11 @@ To see how to grant access to the Security & Compliance Center, check out [Give 
 |**Information Protection Analysts**|Access and manage DLP alerts and activity explorer. View-only access to DLP policies, sensitivity labels and their policies, and all classifier types.|Data Classification List Viewer <br/><br/> Information Protection Analyst|
 |**Information Protection Investigators**|Access and manage DLP alerts, activity explorer, and content explorer. View-only access to DLP policies, sensitivity labels and their policies, and all classifier types.|Data Classification Content Viewer <br/><br/> Information Protection Analyst <br/><br/> Information Protection Investigator|
 |**Information Protection Readers**|View-only access to reports for DLP policies and sensitivity labels and their policies.|Information Protection Reader|
-|**Insider Risk Management**|Use this role group to manage insider risk management for your organization in a single group. By adding all user accounts for designated administrators, analysts, and investigators, you can configure insider risk management permissions in a single group. This role group contains all the insider risk management permission roles. This is the easiest way to quickly get started with insider risk management and is a good fit for organizations that do not need separate permissions defined for separate groups of users.|Case Management <br/><br/> Data Connector Admin <br/><br/> Insider Risk Management Admin <br/><br/> Insider Risk Management Analysis <br/><br/> Insider Risk Management Audit <br/><br/> Insider Risk Management Investigation <br/><br/> Insider Risk Management Sessions <br/><br/> View-Only Case|
+|**Insider Risk Management**|Use this role group to manage insider risk management for your organization in a single group. By adding all user accounts for designated administrators, analysts, and investigators, you can configure insider risk management permissions in a single group. This role group contains all the insider risk management permission roles. This is the easiest way to quickly get started with insider risk management and is a good fit for organizations that do not need separate permissions defined for separate groups of users.|Case Management <br/><br/> Data Connector Admin <br/><br/> Insider Risk Management Admin <br/><br/> Insider Risk Management Analysis <br/><br/> Insider Risk Management Audit <br/><br/> Insider Risk Management Investigation <br/><br/> View-Only Case|
 |**Insider Risk Management Admins**|Use this role group to initially configure insider risk management and later to segregate insider risk administrators into a defined group. Users in this role group can create, read, update, and delete insider risk management policies, global settings, and role group assignments.|Case Management <br/><br/> Data Connector Admin <br/><br/> Insider Risk Management Admin <br/><br/> View-Only Case|
 |**Insider Risk Management Analysts**|Use this group to assign permissions to users that will act as insider risk case analysts. Users in this role group can access all insider risk management alerts, cases, and notices templates. They cannot access the insider risk Content Explorer.|Case Management <br/><br/> Insider Risk Management Analysis <br/><br/> View-Only Case|
 |**Insider Risk Management Auditors**|Use this group to assign permissions to users that will audit insider risk management activities. Users in this role group can access the insider risk audit log.|Insider Risk Management Audit|
 |**Insider Risk Management Investigators**|Use this group to assign permissions to users that will act as insider risk data investigators. Users in this role group can access all insider risk management alerts, cases, notices templates, and the Content Explorer for all cases.|Case Management <br/><br/> Insider Risk Management Investigation <br/><br/> View-Only Case|
-|**Insider Risk Management Session Approvers**|Manage group modification requests for session recording.|Insider Risk Management Sessions|
 |**IRM Contributors**|This role group is visible, but is used by background services only.|Insider Risk Management Permanent contribution <br/><br/> Insider Risk Management Temporary contribution|
 |**Knowledge Administrators**|Configure knowledge, learning, assign trainings and other intelligent features.|Knowledge Admin|
 |**MailFlow Administrator**|Members can monitor and view mail flow insights and reports in the Security & Compliance Center. Global admins can add ordinary users to this group, but, if the user isn't a member of the Exchange Admin group, the user will not have access to Exchange admin-related tasks.|View-Only Recipients|
@@ -144,7 +143,6 @@ Note that the following roles aren't assigned to the Organization Management rol
 - Insider Risk Management Audit
 - Insider Risk Management Investigation
 - Insider Risk Management Permanent contribution
-- Insider Risk Management Sessions
 - Insider Risk Management Temporary contribution
 - Knowledge Admin
 - Preview
@@ -200,7 +198,6 @@ Note that the following roles aren't assigned to the Organization Management rol
 |**Insider Risk Management Audit**|Allow viewing Insider Risk audit trails.|Insider Risk Management <br/><br/> Insider Risk Management Auditors|
 |**Insider Risk Management Investigation**|Access all insider risk management alerts, cases, notices templates, and the Content Explorer for all cases.|Insider Risk Management <br/><br/> Insider Risk Management Investigators|
 |**Insider Risk Management Permanent contribution**|This role group is visible, but is used by background services only.|IRM Contributors|
-|**Insider Risk Management Sessions**|Allow managing group modification requests for session recording.|Insider Risk Management <br/><br/> Insider Risk Management Session Approvers|
 |**Insider Risk Management Temporary contribution**|This role group is visible, but is used by background services only.|IRM Contributors|
 |**Knowledge Admin**|Configure knowledge, learning, assign trainings and other intelligent features.|Knowledge Administrators|
 |**Manage Alerts**|View and edit settings and reports for alerts.|Compliance Administrator <p><p> Compliance Data Administrator <p> Organization Management <p> Security Administrator <p> Security Operator|

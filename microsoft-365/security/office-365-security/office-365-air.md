@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Get started using automated investigation and response capabilities in Microsoft Defender for Office 365.
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Automated investigation and response (AIR) in Microsoft Defender for Office 365
