@@ -7,8 +7,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: v-nsatapathy
+author: nimishasatapathy
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -52,7 +52,28 @@ The following are the listed factors you should consider before deploying MDE fo
 
 The following are the supported Linux servers:
 
-For more information on system requirements, see [https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements].
+|RHEL* version supported|Commercial|GCC-Moderate|GCC-High (aka MAG)|
+|---|---|---|---|
+|RHEL 6.8-6.10 |Design partner program|General Availability (GA)|General Availability (GA)|
+|RHEL 7.x |Design partner program|General Availability (GA)|General Availability (GA)|
+|RHEL 8.x|Design partner program|General Availability (GA)|General Availability (GA)|
+|RHEL 9.x|Design partner program|General Availability (GA)|General Availability (GA)|
+
+> [!NOTE]
+> (*): Also applies to CentOS, and Oracle Linux.
+
+|Resource|Recommendation|
+|---|---|
+|Disk space |1 GB|
+|RAM |1GB 4GB is preferred|
+|CPU |If the Linux system is running only 1 vcpu, we recommend to be increased to 2 vcpu’s 4 cores are preferred|
+
+|OS version|Kernel filter driver|Comments|
+|---|---|---|
+|RHEL 7.x and RHEL 8.x |No kernel filter driver, the fanotify kernel option must be enabled|akin to Filter Manager (fltmgr, accessible via `fltmc.exe`) in Windows| 
+|RHEL 6.x|TALPA kernel driver|
+
+For more information on system requirements, see [/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements].
 
 ## Network connectivity to MDE
 
