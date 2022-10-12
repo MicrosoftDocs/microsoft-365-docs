@@ -53,7 +53,7 @@ A standard SMTP email message consists of a _message envelope_ and message conte
 
 Frequently, the `5321.MailFrom` and `5322.From` addresses are the same (person-to-person communication). However, when email is sent on behalf of someone else, the addresses can be different.
 
-Blocked sender lists and blocked domain lists in anti-spam policies in EOP inspect both the `5321.MailFrom` and `5322.From` addresses. Outlook Blocked Senders only uses the `5322.From` address.
+Blocked sender lists and Blocked domain lists in anti-spam policies in EOP inspect only the `5322.From` addresses, this is similar to Outlook Blocked Senders that uses the `5322.From` address.
 
 ## Use Outlook Blocked Senders
 
@@ -66,7 +66,7 @@ When messages are successfully blocked due to a user's Blocked Senders list, the
 
 ## Use blocked sender lists or blocked domain lists
 
-When multiple users are affected, the scope is wider, so the next best option is blocked sender lists or blocked domain lists in anti-spam policies. Messages from senders on the lists are marked as **Spam** (not **High confidence spam**), and the action that you've configured for the **Spam** filter verdict is taken on the message. For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
+When multiple users are affected, the scope is wider, so the next best option is blocked sender lists or blocked domain lists in anti-spam policies. Messages from senders on the lists are marked as **High confidence spam**, and the action that you've configured for the **High Confidence Spam** filter verdict is taken on the message. For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
 
 The maximum limit for these lists is approximately 1000 entries.
 
