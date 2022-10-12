@@ -15,7 +15,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid:
 - SPO160
@@ -46,6 +46,8 @@ An Microsoft Purview eDiscovery search that you run from the Microsoft Purview c
   
 For legal investigations, your organization may be required to review partially indexed items. You can also specify whether to include partially indexed items when you export search results to a local computer or when you prepare the results for analysis with eDiscovery (Premium). For more information, see [Investigating partially indexed items in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md).
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## File types not indexed for search
 
 Certain types of files, such as Bitmap or MP3 files, don't contain content that can be indexed. As a result, the search indexing servers in Exchange and SharePoint don't perform full-text indexing on these types of files. These types of files are considered to be unsupported file types. There are also file types for which full-text indexing has been disabled, either by default or by an administrator. Unsupported and disabled file types are labeled as unindexed items in Content Searches. As previously stated, partially indexed items can be included in the set of search results when you run a search, export the search results to a local computer, or prepare search results for eDiscovery (Premium).

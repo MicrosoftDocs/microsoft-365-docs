@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
 - tier1
-- M365-security-compliance 
+- purview-compliance 
 search.appverid:
 - MET150 
 description: Learn about onboarding macOS devices into Compliance solutions
@@ -26,6 +26,8 @@ MacOS devices can be onboarded into Microsoft Purview solutions using either Int
 
 - [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - [Insider risk management](insider-risk-management.md)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 

@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid:
 - MOE150
@@ -38,6 +38,8 @@ You can use the Content search eDiscovery tool in the Microsoft Purview complian
 - Yammer Groups
 
 After you run a search, the number of content locations and an estimated number of search results are displayed on the search flyout page. You can quickly view statistics, such as the content locations that have the most items that match the search query. After you run a search, you can preview the results or export them to a local computer.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you run a search
 

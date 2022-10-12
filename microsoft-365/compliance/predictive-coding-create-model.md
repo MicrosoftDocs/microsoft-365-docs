@@ -15,7 +15,7 @@ search.appverid:
 - MET150
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 ---
 
@@ -24,6 +24,8 @@ ms.collection:
 The first step in using the machine learning capabilities of predictive coding in eDiscovery (Premium) is to create a predictive coding model. After you create a model, you can train it identify the relevant and non-relevant content in a review set.
 
 To review the predictive coding workflow, see [Learn about predictive coding in eDiscovery (Premium)](predictive-coding-overview.md#the-predictive-coding-workflow)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you create a model
 

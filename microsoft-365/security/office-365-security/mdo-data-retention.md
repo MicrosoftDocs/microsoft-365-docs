@@ -12,7 +12,7 @@ ms.service: microsoft-365-security
 ms.subservice: mdo
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: 
 description: Microsoft Defender for Office 365 data retention informationThreat Explorer/ Real-Time detections 
 search.appverid: met150

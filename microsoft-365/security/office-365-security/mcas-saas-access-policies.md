@@ -13,7 +13,7 @@ ms.custom:
 - goldenconfig
 ms.collection:
 - M365-identity-device-management
-- M365-security-compliance
+- m365-security
 - zerotrust-solution
 ms.subservice: mdo
 ms.service: microsoft-365-security

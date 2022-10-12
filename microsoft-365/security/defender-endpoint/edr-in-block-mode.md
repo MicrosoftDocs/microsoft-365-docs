@@ -16,7 +16,9 @@ ms.custom:
   - edr
   - admindeeplinkDEFENDER
 ms.date: 08/19/2022
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.subservice: mde
 search.appverid: met150
 ---

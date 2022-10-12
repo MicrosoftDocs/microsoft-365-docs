@@ -13,7 +13,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid:
 - MOE150
@@ -40,6 +40,8 @@ The following four cmdlets in Security & Compliance PowerShell let you configure
 - [Get-ComplianceSecurityFilter](#get-compliancesecurityfilter)
 - [Set-ComplianceSecurityFilter](#set-compliancesecurityfilter)
 - [Remove-ComplianceSecurityFilter](#remove-compliancesecurityfilter)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Requirements to configure permissions filtering
 

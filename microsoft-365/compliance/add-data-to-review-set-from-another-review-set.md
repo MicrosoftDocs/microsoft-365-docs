@@ -13,7 +13,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery 
 search.appverid: 
 - MOE150
@@ -28,6 +28,8 @@ ms.custom:
 In some cases, it may be necessary to select documents from one review set and work with them individually in another review set. This is especially useful if you've culled content in a review set and want to run analytics on the subset of data.
 
 Follow the workflow in this article to add content from one review set to another.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Create a review set
 

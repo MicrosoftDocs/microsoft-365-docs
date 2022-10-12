@@ -12,7 +12,7 @@ ms.date:
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -23,6 +23,8 @@ ms.custom: seo-marvel-apr2020
 # Create exact data match sensitive information type workflow new experience
 
 Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. They can be used in Microsoft Purview data loss prevention policies, eDiscovery and certain content governance tasks  This article outlines the workflow and links to the procedures for each of the phases
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Applies to
 

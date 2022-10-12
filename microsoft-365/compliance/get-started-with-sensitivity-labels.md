@@ -11,11 +11,13 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - tier1
 - highpri
 - SPO_Content
 - m365solution-mip
+- m365initiative-compliance
+- highpri
 search.appverid: 
 - MOE150
 - MET150
@@ -28,7 +30,7 @@ description: "Prescriptive steps for admins, licensing requirements, and common 
 
 For information about what sensitivity labels are and how they can help you protect your organization's data, see [Learn about sensitivity labels](sensitivity-labels.md).
 
-If you have [Azure Information Protection](/azure/information-protection/what-is-information-protection) and are still using Azure Information Protection labels that were managed from the Azure portal, you must migrate these labels to the [unified labeling platform](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform). For Windows computers, you can then [choose which labeling client to use](/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) for your published sensitivity labels.
+If you have [Azure Information Protection](/azure/information-protection/what-is-information-protection) and are still using Azure Information Protection labels that were managed from the Azure portal, you must migrate these labels to the [unified labeling platform](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform). We then recommend you disable the AIP add-in for Office apps, to benefit from the newer, built-in labeling experience. For more information, see [Migrate the Azure Information Protection (AIP) add-in to built-in labeling for Office apps](sensitivity-labels-aip.md).
 
 When you're ready to start protecting your organization's data by using sensitivity labels:
 
@@ -46,6 +48,8 @@ When you're ready to start protecting your organization's data by using sensitiv
 The basic flow for deploying and applying sensitivity labels:
 
 ![Diagram showing workflow for sensitivity labels.](../media/Sensitivity-label-flow.png)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Subscription and licensing requirements for sensitivity labels
 

@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 search.appverid:
   - MET150
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
 description: Admins can learn how to identify a custom mailbox (also known as a user submissions mailbox) to collect spam and phishing messages that are reported by users. Other settings complete the reporting experience for users when they report messages.
@@ -52,7 +52,7 @@ Before you get started, you need to configure Exchange Online Protection and Def
 
   - Turn off Zero-hour auto purge (ZAP) for malware (**Protection settings** section \> **Enable zero-hour auto purge for malware** is not selected or `-ZapEnabled $false` in PowerShell).
 
-  - Turn off common attachments filtering (**Protection settings** section \> **Enable the common attachments filter** is not selected or `EnableFileFilter $false` in PowerShell).
+  - Turn off common attachments filtering (**Protection settings** section \> **Enable the common attachments filter** is not selected or `-EnableFileFilter $false` in PowerShell).
   
   For instructions, see [Create an anti-malware policy](configure-anti-malware-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-malware-policies).
 
@@ -62,9 +62,11 @@ Before you get started, you need to configure Exchange Online Protection and Def
 
   - Exclude the user submissions mailbox from the **Built-in protection** preset security policy. For instructions, see [Preset security policies](preset-security-policies.md).
 
-  - Create a Safe Attachments policy for the user submissions mailbox where Safe Attachments scanning, including Dynamic Delivery, is turned off  (**Settings** \> **Safe Attachments unknown malware response** section \> **Off** or `-Enable $false` in PowerShell). For instructions, see [Set up Safe Attachments policies in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md).
+  - Create a Safe Attachments policy for the user submissions mailbox where Safe Attachments scanning, including Dynamic Delivery, is turned off (**Settings** \> **Safe Attachments unknown malware response** section \> **Off** or `-Enable $false` in PowerShell). For instructions, see [Set up Safe Attachments policies in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md).
 
   - Create a Safe Links policy for the user submissions mailbox where Safe Links scanning in email is turned off (**URL & click protection settings** \> **On: Safe Links checks a list of known, malicious links when users click links in email** is not selected or `EnableSafeLinksForEmail $false` in PowerShell). For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](set-up-safe-links-policies.md).
+
+- If you have data loss prevention (DLP), exclude the custom mailbox from it. For instructions, see [Creating exceptions in DLP](/microsoft-365/compliance/dlp-conditions-and-exceptions).
 
 After you've verified that the mailbox meets these requirements, use the rest of the instructions in this article to identify the user submissions mailbox and other user reported message settings.
 
@@ -200,10 +202,10 @@ To specify the reason why the original attached messages were reported, messages
   - 3. X-Ms-Exchange-Organization-Network-Message-Id
   - 4. X-Ms-Exchange-Crosstenant-Id
 
-> [!NOTE]
-> TenantId in `X-Ms-Exchange-Crosstenant-Id` should be the same as the tenant.
->
-> `X-Microsoft-Antispam-Message-Info` should be a valid xmi.
+   > [!NOTE]
+   > TenantId in `X-Ms-Exchange-Crosstenant-Id` should be the same as the tenant.
+   >
+   > `X-Microsoft-Antispam-Message-Info` should be a valid xmi.
 
 - The Subject line (Envelope Title) of messages sent to the user submissions mailbox must start with one of the following prefix values:
   - `1|` or `Junk:`.

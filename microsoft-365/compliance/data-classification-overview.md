@@ -13,9 +13,10 @@ ms.localizationpriority: high
 ms.collection: 
 - tier1
 - highpri
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkDEFENDER
 search.appverid: 
 - MOE150
@@ -48,6 +49,8 @@ Take a video tour of our data classification features.
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
 
 Data classification will scan your sensitive content and labeled content before you create any policies. This is called **zero change management**. This lets you see the impact that all the retention and sensitivity labels are having in your environment and empower you to start assessing your protection and governance policy needs.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Prerequisites
 

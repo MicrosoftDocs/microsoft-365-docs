@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
@@ -31,6 +31,8 @@ You can create an activity alert that will send you an email notification when u
 
 > [!NOTE]
 > Activity alerts are being deprecated. We recommend that you start using alert policies in the security and compliance center instead of creating new activity alerts. Alert policies provide additional functionality such as the ability to create an alert policy that triggers an alert when any user performs a specified activity, and displaying alerts on the **View alerts** page in the security and compliance center. For more information, see [Alert policies](alert-policies.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Confirm roles and configure audit logging
 

@@ -12,7 +12,9 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  -m365-security-compliance
+  - tier2
 ms.topic: article
 search.appverid: met150
 ---

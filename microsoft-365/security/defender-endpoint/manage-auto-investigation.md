@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 ms.date: 07/20/2022
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: 
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.subservice: mde

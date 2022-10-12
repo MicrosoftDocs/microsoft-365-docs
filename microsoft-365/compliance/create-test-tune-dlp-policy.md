@@ -13,7 +13,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1 
-- M365-security-compliance
+- purview-compliance
 search.appverid: 
 - MET150
 ms.custom:
@@ -31,6 +31,8 @@ DLP examines email messages and files for sensitive information, like a credit c
 - Log the event for auditing purposes
 - Display a warning to the end user who is sending the email or sharing the file
 - Actively block the email or file sharing from taking place
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Permissions
 

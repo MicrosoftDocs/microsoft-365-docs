@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
   - m365solution-ransomware
   - highpri
