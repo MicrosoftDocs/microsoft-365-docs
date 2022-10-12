@@ -11,7 +11,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
@@ -86,4 +88,4 @@ For example, to show data about high-severity alerts only:
 
 ## Related topic
 
-- [Device health and compliance report](machine-reports.md)
+- [Device health and compliance report](device-health-reports.md)

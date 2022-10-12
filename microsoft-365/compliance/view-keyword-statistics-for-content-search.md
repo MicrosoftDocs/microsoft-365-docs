@@ -1,21 +1,25 @@
 ---
 title: "View statistics for eDiscovery search results"
+description: "Learn how to use the search statistics feature to display statistics for Content searches and searches associated with a eDiscovery (Standard) case in the Microsoft Purview compliance portal."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.search: M365-security-compliance
+ms.search: purview-compliance
 ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to use the search statistics feature to display statistics for Content searches and searches associated with a eDiscovery (Standard) case in the Microsoft Purview compliance portal."
 ms.custom: seo-marvel-apr2020
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # View statistics for eDiscovery search results
@@ -26,6 +30,8 @@ Additionally, you can use the keywords list to configure a search to return stat
   
 You can also download search statistics to a CSV file. This lets you use the filtering and sorting features in Excel to compare results, and prepare reports for your search results.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Get statistics for searches
 
 To display statistics for a Content search or a search associated with a eDiscovery (Standard) case.:

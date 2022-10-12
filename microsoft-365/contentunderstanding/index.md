@@ -22,7 +22,7 @@ description: Learn how to find resources for Microsoft SharePoint Syntex.
 
 SharePoint Syntex is a Microsoft 365 service that helps organizations to:
 
-- Use advanced AI and machine teaching to amplify human experiences
+- Use advanced AI and machine teaching and learning to amplify human experiences
 - Automate content processing
 - Transform content into knowledge
 
@@ -49,7 +49,7 @@ The resources in this section help you learn more about the methods of data clas
 |See resources in the Microsoft Tech Community Resource Center|[SharePoint Syntex - Content services in Microsoft 365](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
 |SharePoint Syntex FAQ on the Microsoft Tech Community Resource Center |[SharePoint Syntex - FAQ](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |How to get SharePoint Syntex |[SharePoint Syntex product page](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
-|Learn to use SharePoint Syntex |[SharePoint Syntex learning path](/learn/paths/syntex-get-started)|
+|Learn to use SharePoint Syntex |[SharePoint Syntex learning path](/training/paths/syntex-get-started)|
 
 ## Adoption
 

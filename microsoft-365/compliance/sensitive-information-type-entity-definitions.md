@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier2
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -118,7 +119,6 @@ This article is a list of all sensitive information type (SIT) entity definition
 - [Chile identity card number](sit-defn-chile-identity-card-number.md)
 - [China resident identity card (PRC) number](sit-defn-china-resident-identity-card-number.md)
 - [Client secret / API key (preview)](sit-defn-client-secret-api-key.md)
-- [Credentials in URL](sit-defn-credentials-in-url.md)
 - [Credit card number](sit-defn-credit-card-number.md)
 - [Croatia driver's license number](sit-defn-croatia-drivers-license-number.md)
 - [Croatia identity card number](sit-defn-croatia-identity-card-number.md)
@@ -219,6 +219,7 @@ This article is a list of all sensitive information type (SIT) entity definition
 - [Japan My Number - Corporate](sit-defn-japan-my-number-corporate.md)
 - [Japan My Number - Personal](sit-defn-japan-my-number-personal.md)
 - [Japan passport number](sit-defn-japan-passport-number.md)
+- [Japan physical addresses](sit-defn-japan-physical-addresses.md)
 - [Japan residence card number](sit-defn-japan-residence-card-number.md)
 - [Japan resident registration number](sit-defn-japan-resident-registration-number.md)
 - [Japan social insurance number (SIN)](sit-defn-japan-social-insurance-number.md)

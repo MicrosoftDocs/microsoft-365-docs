@@ -1,17 +1,20 @@
 ---
 title: "Set up a connector to archive Cisco Jabber on Oracle data in Microsoft 365"
+description: "Learn how to set up and use a connector in the Microsoft Purview compliance portal to import and archive data from Cisco Jabber on Oracle to Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: "Learn how to set up and use a connector in the Microsoft Purview compliance portal to import and archive data from Cisco Jabber on Oracle to Microsoft 365."
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ---
 
 # Set up a connector to archive Cisco Jabber on Oracle data
@@ -19,6 +22,8 @@ description: "Learn how to set up and use a connector in the Microsoft Purview c
 Use a Veritas connector in the Microsoft Purview compliance portal to import and archive data from the Cisco Jabber on Oracle platform to user mailboxes in your Microsoft 365 organization. Veritas provides a [Cisco Jabber on Oracle](https://www.veritas.com/insights/merge1/jabber) connector that is configured to capture items from the third-party data source (on a regular basis) and import those items to Microsoft 365. The connector converts the content such as files and file operations, comments, and shared content from Cisco Jabber on Oracle to an email message format and then imports those items to the user's mailbox in Microsoft 365.
 
 After Cisco Jabber on Oracle data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, retention policies and retention labels. Using a Cisco Jabber on Oracle connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Overview of archiving Cisco Jabber on Oracle data
 

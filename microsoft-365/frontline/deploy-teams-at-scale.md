@@ -13,6 +13,7 @@ ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration
   - m365-frontline
+  - highpri
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
@@ -115,7 +116,7 @@ Follow these steps to install and connect to the latest version of the Teams Pow
     ```
 
     If you get an error message, you're already set. Go to the next step.
-1. Download and install the [latest version of the Teams PowerShell module](https://www.powershellgallery.com/packages/MicrosoftTeams). You must be running version 4.3.1 (preview) or a later version.  
+1. Download and install the [latest version of the Teams PowerShell module](https://www.powershellgallery.com/packages/MicrosoftTeams). You must be running version 4.7.0 (preview) or a later version.  
 
 1. Run the following to connect to Teams.
 

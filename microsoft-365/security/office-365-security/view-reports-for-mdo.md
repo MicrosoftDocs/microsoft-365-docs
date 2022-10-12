@@ -14,7 +14,7 @@ search.appverid:
   - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: Admins can learn how to find and use the Defender for Office 365 reports that are available in the Microsoft 365 Defender portal.
 ms.custom:
@@ -244,8 +244,3 @@ For more information, see [Permissions in the Microsoft 365 Defender portal](per
 
 If you are not seeing data in your Defender for Office 365 reports, double-check that your policies are set up correctly. Your organization must have [Safe Links policies](set-up-safe-links-policies.md) and [Safe Attachments policies](set-up-safe-attachments-policies.md) defined in order for Defender for Office 365 protection to be in place. Also see [anti-spam](anti-spam-protection.md) and [anti-malware protection](anti-malware-protection.md).
 
-## Related topics
-
-[Smart reports and insights in the Microsoft 365 Defender portal](reports-and-insights-in-security-and-compliance.md)
-
-[Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)

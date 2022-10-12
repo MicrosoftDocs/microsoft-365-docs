@@ -11,10 +11,11 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
 ---
 # Microsoft Safety Scanner Download
 

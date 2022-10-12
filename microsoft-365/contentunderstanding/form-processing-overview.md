@@ -63,4 +63,4 @@ If you use a custom environment (rather than the default environment) for Power 
 
 [Document understanding overview](document-understanding-overview.md)
 
-[Training: Improve business performance with AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Training: Improve business performance with AI Builder](/training/paths/improve-business-performance-ai-builder/?source=learn)

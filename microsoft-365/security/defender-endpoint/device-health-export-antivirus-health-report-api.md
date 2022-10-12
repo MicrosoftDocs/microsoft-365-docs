@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 ms.date: 09/01/2022 
 manager: dansimp 
 audience: ITPro 
-ms.collection: M365-security-compliance 
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article 
 ms.subservice: mde
 ms.custom: api 
@@ -291,4 +293,4 @@ Here's an example response:
 
 [Export device health methods and properties](device-health-api-methods-properties.md)
 
-[Device health and compliance reporting](machine-reports.md)
+[Device health and compliance reporting](device-health-reports.md)

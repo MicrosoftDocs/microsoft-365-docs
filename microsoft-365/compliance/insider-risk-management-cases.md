@@ -11,7 +11,9 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
@@ -27,6 +29,8 @@ After investigating the details of a case, you can take action by:
 - escalating the case for an eDiscovery (Premium) investigation
 
 Check out the [Insider Risk Management Investigation and Escalation video](https://www.youtube.com/watch?v=UONUSmkRC8s) for an overview of how cases are investigated and managed in insider risk management.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Cases dashboard
 

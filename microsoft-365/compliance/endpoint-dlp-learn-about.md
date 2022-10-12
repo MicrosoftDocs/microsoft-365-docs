@@ -13,9 +13,12 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 description: "Endpoint data loss prevention extends monitoring of file activities and protective actions for those files to endpoints. Files are made visible in the Compliance solutions "
@@ -32,6 +35,8 @@ You can use Microsoft Purview Data Loss Prevention (DLP) to monitor the actions 
 
 > [!NOTE]
 > In Microsoft Purview, DLP policy evaluation of sensitive items occurs centrally, so there is no time lag for policies and policy updates to be distributed to individual devices. When a policy is updated in compliance center, it generally takes about an hour for those updates to be synchronized across the service. Once policy updates are synchronized, items on targeted devices are automatically re-evaluated the next time they are accessed or modified.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Endpoint activities you can monitor and take action on
 

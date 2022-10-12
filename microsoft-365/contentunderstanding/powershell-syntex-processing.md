@@ -12,7 +12,7 @@ ms.collection:
     - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: "Learn how to use PowerShell to request processing by a SharePoint Syntex document understanding model."
+description: Learn how to use PowerShell to request processing by a SharePoint Syntex document understanding model.
 ---
 
 # Use PowerShell to request processing by a document understanding model
