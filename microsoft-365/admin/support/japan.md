@@ -44,7 +44,7 @@ Japanese: 24 hours a day, 7 days a week
 
 English: 24 hours a day, 7 days a week
 
-**Other Plans:** (Example : Microsoft 365 Business Basic, Standard, Premium etc):
+**Other plans** (such as Microsoft 365 Business Basic, Standard, Premium, and others):
 
 Telephone technical support is available from 9:00-17:30 on weekdays. For high severity issues, technical support is available 24 hours a day, 7 days a week.
 
