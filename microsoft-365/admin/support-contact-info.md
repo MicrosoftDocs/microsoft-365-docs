@@ -860,17 +860,17 @@ English: 24 hours a day, 7 days a week
 [Bolivia](#bolivia)\
 [Brazil](#brazil)\
 [Chile](#chile)\
-[Colombia](#colombia)
+[Colombia](#colombia)\
+[Ecuador](#ecuador)
    :::column-end:::
    :::column:::
-[Ecuador](#ecuador)\
 [Falkland Islands](#falkland-islands)\
 [French Guiana](#french-guiana)\
 [Guyana](#guyana)\
-[Paraguay](#paraguay)
+[Paraguay](#paraguay)\
+[Peru](#peru)
    :::column-end:::
    :::column:::
-[Peru](#peru)\
 [South Georgia and South Sandwich Islands](#south-georgia-and-south-sandwich-islands)\
 [Suriname](#suriname)\
 [Uruguay](#uruguay)\
