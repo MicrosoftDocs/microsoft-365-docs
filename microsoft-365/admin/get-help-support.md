@@ -61,16 +61,12 @@ Save time by starting your service request online. We'll help you find a solutio
 
 ## Phone support
 
-Use the drop-down menu below to find the number for your country or region.
-
-[!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
-
-Billing support and Technical support hours (and languages) are listed on each country's page selected from the drop-down.
+Phone numbers for Billing and Technical support hours (and languages) are listed on [Microsoft 366 for business support contacts by country or region](country-region-support-contact-info.md).
 
 Admins, have your account details ready when you call.
 
 > [!NOTE]
-> To better protect your organization, we added a PIN-based verification step to our existing phone-based verification process. If you contact us from a number that isn't registered with your organization profile, the Microsoft support representative sends a verification code to the registered email or phone number in your Microsoft 365 admin center profile. You must provide this code to the support representative to grant them access to your organization’s account.
+> To better protect your organization, we added a PIN-based verification step to our existing phone-based verification process. If you contact us from a number that isn't registered with your organization profile, the Microsoft support representative sends a verification code to the registered email or phone number in your Microsoft 365 admin center profile. You must provide this code to the support representative to grant them access to your organization's account.
 
 - **In the United States, call 1 800 865 9408.**
 
