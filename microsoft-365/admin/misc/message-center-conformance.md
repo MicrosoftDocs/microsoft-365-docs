@@ -16,7 +16,7 @@ description: "Get an overview of conformance metadata for Message center posts"
 
 # Conformance metadata for Message Center posts
 
-When planning for new features or service deployments, you need to understand and assess the changes for conformance to your industry, region and country. We've heard your feedback that if there's insufficient conformance information about a new or changing feature, you have to conduct your own research about the feature or reach out to the Compliance Program with questions.  
+When planning for new features or service deployments, you would like to understand and assess the changes for conformance to your industry, region and country. We've heard your feedback when there's insufficient conformance information about a new or changing feature, you have to conduct your own research about the feature or reach out to the Compliance Program with questions.  
 
 In this pilot program, we want to proactively provide metadata for new and updated Microsoft 365 features and services. Our goal is to help you efficiently assess your compliance requirements and help you with adoption and change management decisions.  
 
