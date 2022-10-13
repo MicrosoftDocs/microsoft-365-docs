@@ -77,7 +77,7 @@ If you prefer to use Group Policy to onboard Windows clients, follow the guidanc
 You can onboard Windows clients and other devices in Intune by using the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). There are several methods available for enrolling devices in Intune. We recommend using one of the following methods:
 
 - [Enable Windows automatic enrollment for company-owned or company-managed devices](#enable-automatic-enrollment-for-windows-10-and-11)
-- [Ask users to enroll their own Windows 10/11 devices in Intune](#ask-users-to-enroll-their-own-windows-10-and-11-devices)
+- [Ask users to enroll their own Windows 10/11 devices in Intune](#ask-users-to-enroll-their-windows-10-and-11-devices)
 
 #### Enable automatic enrollment for Windows 10 and 11
 
