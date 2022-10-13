@@ -25,15 +25,15 @@ To follow the steps in this article, you'll need a list of the _Geography_ locat
 
 Not all Multi-Geo workloads require customer driven configuration.
 
-### _Configuring Exchange Online for Multi-Geo_
+### Configuring Exchange Online for Multi-Geo
 
 There is no customer driven configuration required to prepare Exchange Online in a Multi-Geo enabled tenant. A customer may use all Geographies with Exchange Online as soon as Multi-Geo has been enabled within Exchange Online for their tenant.
 
-### _Configuring Mmicrosoft Teams for Multi-Geo_
+### Configuring Microsoft Teams for Multi-Geo
 
 There is no customer driven configuration required to prepare Microsoft Teams in a Multi-Geo enabled tenant. A customer may use all Geographies with Microsoft Teams as soon as Multi-Geo has been enabled within Microsoft Teams for their tenant.
 
-### _Configuring SharePoint Online and OneDrive for Business for Multi-Geo_
+### Configuring SharePoint Online and OneDrive for Business for Multi-Geo
 
 If you want to store data in a particular Geography, then that Geography must be configured for SharePoint Online and OneDrive ahead of time. 
 
