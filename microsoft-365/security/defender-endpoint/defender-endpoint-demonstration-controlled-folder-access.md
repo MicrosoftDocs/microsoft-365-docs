@@ -20,8 +20,6 @@ ms.topic: article
 ms.subservice: mde
 ---
 
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # Controlled folder access (CFA) demonstrations (block ransomware)
 
 Controlled Folder Access helps you protect valuable data from malicious apps and threats, such as ransomware. All apps (any executable file, including .exe, .scr, .dll files and others) are assessed by Microsoft Defender Antivirus, which then determines if the app is malicious or safe. If the app is determined to be malicious or suspicious, then it will not be allowed to make changes to any files in any protected folder.
@@ -33,26 +31,41 @@ Controlled Folder Access helps you protect valuable data from malicious apps and
 
 ## PowerShell commands
 
-- Set-MpPreference -EnableControlledFolderAccess (State)
-- Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
+```powershell
+Set-MpPreference -EnableControlledFolderAccess (State)
+```
 
-States
-- Enabled = Block mode (1)
-- AuditMode = Audit Mode (2)
-- Disabled = Off (0)
+```powershell
+Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
+```
+
+## Rule states
+
+|State | Mode| Numeric value |
+|:---|:---|:---|
+| AuditMode | = Audit Mode | 2 |
+| Enabled | = Block mode | 1 |
+| Disabled | = Off | 0 |
 
 ## Verify configuration
 
+```powershell
 Get-MpPreference
+```
 
 ## Test file
+
 [CFA ransomware test file](https://demo.wd.microsoft.com/Content/ransomware_testfile_unsigned.exe)
 
 ## Scenarios
 
 ### Setup
 
-Download and run this [setup script](https://demo.wd.microsoft.com/Content/CFA_SetupScript.zip). Before running the script set execution policy to Unrestricted using this PowerShell command: Set-ExecutionPolicy Unrestricted
+Download and run this [setup script](https://demo.wd.microsoft.com/Content/CFA_SetupScript.zip). Before running the script set execution policy to Unrestricted using this PowerShell command: 
+
+```powershell
+Set-ExecutionPolicy Unrestricted
+```
 
 You can perform these manual steps instead:
 
@@ -62,18 +75,33 @@ You can perform these manual steps instead:
 
 ### Scenario 1: CFA blocks ransomware test file
 
-1. Turn on CFA using PowerShell command: Set-MpPreference -EnableControlledFolderAccess Enabled
-2. Add the demo folder to protected folders list using PowerShell command: Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
+1. Turn on CFA using PowerShell command: 
+  
+```powershell
+Set-MpPreference -EnableControlledFolderAccess Enabled
+```
+
+2. Add the demo folder to protected folders list using PowerShell command:
+
+```powershell
+Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
+```
+
 3. Download the ransomware [test file](https://demo.wd.microsoft.com/Content/ransomware_testfile_unsigned.exe)
 4. Execute the ransomware test file *this isn't ransomware, it simple tries to encrypt c:\demo
 
 #### Scenario 1 expected results
 
-5 seconds after executing the ransomware test file you should see a notification CFA blocked it
+5 seconds after executing the ransomware test file you should see a notification CFA blocked the encryption attempt.
 
 ### Scenario 2: What would happen without CFA
 
-1. Turn off CFA using this PowerShell command: Set-MpPreference -EnableControlledFolderAccess Disabled
+1. Turn off CFA using this PowerShell command: 
+
+```powershell
+Set-MpPreference -EnableControlledFolderAccess Disabled
+```
+
 2. Execute the ransomware [test file](https://demo.wd.microsoft.com/Content/ransomware_testfile_unsigned.exe)
 
 #### Scenario 2 expected results
@@ -85,8 +113,11 @@ You can perform these manual steps instead:
 
 Download and run this [cleanup script](https://demo.wd.microsoft.com/Content/ASR_CFA_CleanupScript.zip). You can perform these manual steps instead:
 
-- Set-MpPreference -EnableControlledFolderAccess Disabled
-- Cleanup c:\demo encryption run the [encrypt/decrypt file](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe)
+```powershell
+Set-MpPreference -EnableControlledFolderAccess Disabled
+```
+
+Cleanup c:\demo encryption run the [encrypt/decrypt file](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe)
 
 ## See also
 [Controlled folder access](/windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard?ocid=wd-av-demo-cfa-bottom)
