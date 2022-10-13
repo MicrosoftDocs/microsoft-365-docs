@@ -39,9 +39,12 @@ Admins of Microsoft Defender for Office 365 E5, and Defender for Office P1 and P
 
 The email entity page is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
-In **Explorer**, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select to view the new page.
+1. In **Explorer**, select the subject of an email you're investigating.
+1. The email fly-out for that mail will open.
+1. You'll see **Open email entity**.
+1. Select it for your email deep dive.
 
-:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="The gold banner with the words *Try out our new email entity page with enriched data* to navigate to the new experience" lightbox="../../media/email-entities-1-navigation-to-ee.png":::
+:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="With the email selected, you'll get a fly out with details, and Open entity page for the email at the top." lightbox="../../media/email-entities-1-navigation-to-ee.png":::
 
 :::image type="content" source="../../media/email-entities-2-eep.png" alt-text="The graphic of the email entity page that focuses on headings that you'll see" lightbox="../../media/email-entities-2-eep.png":::
 
