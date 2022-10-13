@@ -120,7 +120,7 @@ To learn more, see [Create an appointment type](https://support.microsoft.com/of
 
 In the booking calendar, select **New booking**. Select an appointment type, and then fill out the relevant information.
 
-This includes attendee contact information, the staff member who will be providing the service, internal notes that only staff can see, email reminders, and whether the attendee can join from a mobile browser. If a form is linked to the appointment type, you can choose to include it, remove it, or add any other linked forms.
+This includes attendee contact information, the staff member who will be providing the service, internal notes that only staff can see, whether the attendee can join from a browser, email reminders, and whether to send SMS notifications. If a form is linked to the appointment type, you can choose to include it, remove it, or add any other linked forms.
 
 The email confirmation sent to the attendee includes the meeting link and an attachment so that they can add the virtual appointment to their calendar. Staff also receive an email confirmation and meeting invite. If a form was included in the appointment, Bookings admins and schedulers can see whether the form was completed by the attendee before the appointment and can view the attendee's response.
 
