@@ -211,9 +211,9 @@ When you modify allow or block entries for domains and email addresses in the Te
 
    When you're finished, click **Save**.
 
-Note that with **allow expiry management** (currently in private preview), Microsoft will automatically extend the expiry time of legitimate emails that are sent to junk or quarantine. If Microsoft has not learned from the allow and the allow is going to expire soon (and within 90 days from the date of creation), Microsoft will extend the removal date by 30 days.
+Note that with **allow expiry management** (currently in private preview), if Microsoft has not learned from the allow, Microsoft will automatically extend the expiry time of allows, which are going to expire soon, by 30 days to prevent legitimate email from going to junk or quarantine again. If Microsoft does not learn within 90 calendar days from date of creation, Microsoft will remove the allow.
 
-If Microsoft has learned from the allow, the allow is removed and you get an alert informing you about it.
+If Microsoft has learned from the allow, the allow will be removed and you will get an alert informing you about it.
 
 > [!NOTE]
 > For allow entries only, if you select the entry by clicking anywhere in the row other than the check box, you can select ![View submission icon.](../../media/m365-cc-sc-view-submission-icon.png) **View submission** in the details flyout that appears to go to the **Submissions** page at <https://security.microsoft.com/reportsubmission>.
