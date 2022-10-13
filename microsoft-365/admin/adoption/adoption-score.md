@@ -42,16 +42,29 @@ We provide metrics, insights, and recommendations in two areas:
 
     For each of the mentioned categories, we look at public research to identify some best practices and associated benefits in the form of organizational effectiveness. For example, Forrester research has shown that when people collaborate and share content in the cloud (instead of emailing attachments), they can save up to 100 minutes a week. Furthermore, we quantify the use of these best practices in your organization to help you see where you are on your digital transformation journey. 
 
-- **Technology experiences:** Your organization depends on reliable and well-performing technology, as well as the efficient use of Microsoft 365. [Endpoint analytics](https://aka.ms/endpointanalytics) helps you understand how your organization can be impacted by performance and health issues with your hardware and software. Microsoft  365 apps health helps you understand whether the devices in your organization are running Microsoft 365 apps on recommended channels.
-
-## Before you begin
-
-See [What is Endpoint Analytics](/mem/analytics/overview) for an overview and prerequisite details. To learn more about Microsoft 365 network connectivity insights, read [the network connectivity overview](../../enterprise/microsoft-365-networking-overview.md).
-
-For people experiences data, you need a Microsoft 365 for business or Office 365 for enterprise subscription. For endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps protect your organization's data by managing devices and apps. Once you have Intune, you can turn on endpoint analytics within the Intune experience. To learn more about Microsoft Intune, see the [Microsoft Intune documentation](/mem/intune/). 
+- **Technology experiences:** Your organization depends on reliable and well-performing technology, as well as the efficient use of Microsoft 365. [Endpoint analytics](https://aka.ms/endpointanalytics) helps you understand how your organization can be impacted by performance and health issues with your hardware and software. [Network connectivity](../../enterprise/microsoft-365-networking-overview.md) helps you understand Exchange, SharePoint, and Microsoft Teams performance on your network architecture. You can review and update network settings to improve connectivity. Microsoft  365 apps health helps you understand whether the devices in your organization are running Microsoft 365 apps on recommended channels.
 
 > [!NOTE]
-> A license to Workplace Analytics is not required to get the Adoption Score features.
+> All insights are calculated using data at the organizational level, not the individual level.
+
+## How to turn on Adoption Score
+
+To enable Adoption Score:
+
+1. Login to the Microsoft 365 admin center as a Global Administrator and go to **Reports** > **Adoption Score**
+2. Select **Enable Adoption Score**. It can take up to 24 hours for insights to become available.
+
+> [!NOTE]
+> Only an IT professional with the Global Administrator role can opt-in for Adoption Score.
+
+Visit [privacy controls for Adoption Score](privacy.md) to understand more about options to configure people experiences for your organization.
+
+## Adoption Score Prerequisites
+
+For people experiences data, you need a Microsoft 365 for business or Office 365 for enterprise subscription. For endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps protect your organization's data by managing devices and apps. Once you have Intune, you can turn on endpoint analytics within the Intune experience. To learn more about Microsoft Intune, see the [Microsoft Intune documentation](/mem/intune/).
+
+> [!NOTE]
+> A license to Viva Insights is not required to get the Adoption Score features.
 
 Adoption Score is only available in the Microsoft 365 admin center and can only be accessed by IT professionals who have one of the following roles:  
 
@@ -63,9 +76,7 @@ Adoption Score is only available in the Microsoft 365 admin center and can only 
 - Global Reader
 - Reports Reader
 - Usage Summary Reports Reader
-
-> [!NOTE]
-> Only an IT professional with the Global Administrator role can sign up or opt in a tenant for Adoption Score.
+- User Experience Success Manager
 
 The role-based access control model for Adoption Score helps organizations further digital transformation efforts with Microsoft 365 by providing the flexibility to assign roles to IT professionals within an organization.
 
@@ -77,7 +88,7 @@ You can access the experience from Microsoft 365 Admin home under **Reports** > 
 
 Your Adoption Score is based on the combined scores of your people and technology experiences categories. Each category is weighted equally, with a total of 100 points. The highest possible Adoption Score is 800.
 
-### Score categories 
+### Score categories
 
 - Communication (100 points)
 - Meetings (100 points)
