@@ -85,7 +85,7 @@ Create specific appointment types to represent the services offered by your orga
 
 In the booking calendar, go to **More options** (...) > **Settings**, select **Appointment types**, and then select **Add appointment type**. Enter a name&mdash;for example, Account opening, Prescription renewal, Loan consultation, Tax preparation&mdash;and any other information and settings you want. The information that you add is included in the email confirmation that's sent to attendees every time this type of appointment is booked.
 
-You can configure options for the appointment type such as whether attendees can [join from a a desktop or mobile browser](browser-join.md) without having to download Teams, add an email reminder, enable [SMS text notifications](#enable-sms-text-notifications), and [link forms](#using-forms).
+You can configure options for the appointment type such as whether attendees can [join from a a desktop or mobile browser](browser-join.md) without having to download Teams, add an email reminder, enable SMS text notifications, and link forms.
 
 #### Enable SMS text notifications
 
