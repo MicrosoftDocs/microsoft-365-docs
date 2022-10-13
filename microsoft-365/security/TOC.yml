@@ -30,10 +30,8 @@
           href: ./office-365-security/microsoft-365-continuous-access-evaluation.md
     - name: Strengthen your security posture with Microsoft 365 Defender
       items: 
-        - name: Overview
-          href: ./office-365-security/security-posture-solution-overview.md
-        - name: Prerequisite work
-          href: ./office-365-security/security-posture-prerequisites.md
+        - name: Strengthen your security posture
+          href: security-posture-solution-overview.md
     - name: Microsoft 365 Defender docs
       items: 
        - name: Microsoft 365 Defender
