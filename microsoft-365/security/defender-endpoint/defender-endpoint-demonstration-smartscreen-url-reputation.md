@@ -20,8 +20,6 @@ ms.topic: article
 ms.subservice: mde
 ---
 
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # URL reputation demonstrations
 
 Test how Microsoft Defender SmartScreen helps you identify phishing and malware websites based on URL reputation.
