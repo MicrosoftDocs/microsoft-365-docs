@@ -133,7 +133,7 @@ You can't create allow entries for domains and email addresses directly in the T
 For instructions, see [Report good email to Microsoft](admin-submission.md#report-good-email-to-microsoft).
 
 > [!NOTE]
-> Because Microsoft manages allow entries for you, unneeded allow entries for domains and email addresses will be removed. This behavior protects your organization and helps prevent misconfigured allow entries. If you disagree with the verdict, you might need to open a support case to help determine why a message is still considered bad.
+> Microsoft will remove allow entries that are not needed for **domains and email addresses**, **URLs**, or **files**. This behavior protects your organization and helps prevent misconfigured allow entries. If you disagree with the verdict, you might need to open a support case to help determine why a message is still considered bad.
 >
 > If the domain or email address has not already been blocked, an allow entry for the domain or email address won't be created.
 >
@@ -210,6 +210,10 @@ When you modify allow or block entries for domains and email addresses in the Te
    - **Optional note**
 
    When you're finished, click **Save**.
+
+Note that with **allow expiry management** (currently in private preview), Microsoft will automatically extend the expiry time of legitimate emails that are sent to junk or quarantine. If Microsoft has not learned from the allow and the allow is going to expire soon (and within 90 days from the date of creation), Microsoft is going to go ahead and extend the removal date by 30 days.
+
+If Microsoft has learned from the allow, the allow is removed and you get an alert informing you about it.
 
 > [!NOTE]
 > For allow entries only, if you select the entry by clicking anywhere in the row other than the check box, you can select ![View submission icon.](../../media/m365-cc-sc-view-submission-icon.png) **View submission** in the details flyout that appears to go to the **Submissions** page at <https://security.microsoft.com/reportsubmission>.

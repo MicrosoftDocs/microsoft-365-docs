@@ -89,9 +89,9 @@ The following list describes what happens in the Tenant Allow/Block List when yo
 By default, allow entries for **domains and email addresses**, **files** and **URLs** expire after 30 days, which is also the maximum. Allow entries for **spoofed senders** never expire.
 
 > [!NOTE]
-> Because Microsoft manages allow entries for you, unneeded allow entries for **domains and email addresses**, **URLs**, or **files** will be removed. This behavior protects your organization and helps prevent misconfigured allow entries. If you disagree with the verdict, you might need to open a support case to help determine why a message is still considered bad.
+> Microsoft will remove allow entries that are not needed for **domains and email addresses**, **URLs**, or **files**. This behavior protects your organization and helps prevent misconfigured allow entries. If you disagree with the verdict, you might need to open a support case to help determine why a message is still considered bad.
 >
-> Allows are added during mail flow, based on which filters determined the message to be malicious. For example, if the sender and a URL in the message were determined to be bad, an allow entry is created for the sender, and an allow entry is created for the URL.
+> Allows are added during mail flow, based on which the message is determined to be malicious. For example, if the sender and a URL in the message were determined to be bad, an allow entry is created for the sender, and an allow entry is created for the URL.
 >
 > When that entity (domain or email address, URL, file) is encountered again, all filters associated with that entity are skipped.
 >
@@ -102,3 +102,7 @@ By default, allow entries for **domains and email addresses**, **files** and **U
 After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately 99.999% of the time. For the rest, it could take up to 24 hours.
 
 We recommend letting entries automatically expire after 30 days to see if the system has learned about the allow or block. If not, you should make another entry to give the system another 30 days to learn.
+
+Note that with **allow expiry management** (currently in private preview), Microsoft will automatically extend the expiry time of legitimate emails that are sent to junk or quarantine. If Microsoft has not learned from the allow and the allow is going to expire soon (and within 90 days from the date of creation), Microsoft is going to go ahead and extend the removal date by 30 days.
+
+If Microsoft has learned from the allow, the allow is removed and you get an alert informing you about it.  
