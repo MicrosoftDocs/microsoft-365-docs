@@ -62,7 +62,20 @@ To automate your setup of Microsoft Defender for Office 365 visit the Standard a
 
 ## View dashboards and reports in the Microsoft 365 Defender portal
 
-Visit these reports and dashboards to learn more about the health of your environment. The data in these reports will become richer as your organization uses Office 365 services. For now, be familiar with what you can monitor and take action on.
+Browse to [security.microsoft.com](https://security.microsoft.com). The menu of Microsoft 365 Defender is divided into sections that begin, in order, Home, Email & Collaboration, Cloud Apps, and Reports (you may see *some* or *all* of these depending on your Plan). You're looking for Reports.
+
+1. Browse to [security.microsoft.com](https://security.microsoft.com).
+2. Click **Reports** on the menu.
+    1. Here you can view information about security trends and track the protection status of your identities, data, devices, apps, and infrastructure.
+
+The data in these reports will become richer as your organization uses Office 365 services, keep that in mind if you are in pilot or testing. For now, be familiar with what you can monitor and take action on.
+
+Inside each report, you'll see cards for the specific areas monitored.
+
+1. Click the **Email & Collaboration reports**.
+1. Take note of the report cards available.
+    1. Everything from *Malware detected in email*, to *Spam detections*, *Compromised users*, to *User reported messages* and *Submissions* the final two, with a button that links to Submissions.
+1. Click a report, such as *Mailflow status summary* and the click the **View details** button to dig into the data (which even includes a funnel view for easier interpretation of total mail flow vs. blocked, spam, and phishing emails, for example).
 
 |Dashboard|Description|
 |---|---|
