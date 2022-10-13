@@ -43,7 +43,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 **What's new**
 
-- Mac TP in Block mode causing device hang on shutdown/ crashes on reboot
+- Bug fix - Mac TP in Block mode causing device hang on shutdown/crashes on reboot
 - Add a mdatp command-line switch to view the on-demand scan history
 - Improve Performance of Device Owner on MacOs
 - Ready for macOS Ventura (13.0)
