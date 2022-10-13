@@ -84,3 +84,6 @@ sudo systemctl daemon-reload; sudo systemctl restart mdatp
 ```
 > [!NOTE]
 > To remove any additions you might have made before uninstalling `mdatp`, delete the custom file from `/etc/systemd/system`.
+
+> [!NOTE]
+> Red Hat Enterprise Linux 6.X and CentOS 6.X don't support **systemctl**. To configure statuc proxy for MDE, use  **mdatp config proxy set --value http://address:port**. This method works for all other Linux distributions as well.

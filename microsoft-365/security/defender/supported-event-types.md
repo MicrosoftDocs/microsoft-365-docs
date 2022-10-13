@@ -31,7 +31,8 @@ ms.topic: article
 
 
 The Event Streaming API is constantly being expanded to support more event types. Learn which Hunting tables are generally available, currently in public preview, or not yet supported. 
-**New - Email event types/tables are now GA**
+
+**New - Identity and CloudApp event types/tables are now GA**.
 
 ## Hunting tables support status in Event Streaming API
 
