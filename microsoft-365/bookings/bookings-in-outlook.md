@@ -17,9 +17,6 @@ description: "Use Bookings with me to let others schedule meetings with you in O
 
 **Bookings with me** in Outlook is a web-based personal scheduling page that integrates with the free/busy information from your Outlook calendar. Bookings with me lets people schedule a meeting or appointment with you. You can create custom meeting types to share with others so they can easily schedule time with you based on your availability and preferences. You both get an email confirmation and attendees can update or cancel scheduled meetings with you from your Bookings with me page.
 
-> [!NOTE]
-> Bookings with me is available worldwide in preview. Features included in preview might not be complete and could undergo changes before becoming available in the public release.
-
 Bookings with me has two different views:
 
 - [Bookings with me: setup and sharing](https://support.microsoft.com/office/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2) A personal booking page where you can create meeting types that others can book with you. Custom meeting types give you the ability to customize when you want to meet and how that meeting type is shared with others. You control whether each meeting type is public to your scheduling page or is private and can only be accessed by a select group of people. You can also choose to add a Teams meeting to all meetings booked through your Bookings with me page. You can access your Bookings with me page through Outlook on the web. After you set up your page and publish it, you can share it with others. For example, you can add it to your Outlook signature.
