@@ -162,16 +162,12 @@ To learn more, see [Microsoft Bookings](/microsoft-365/bookings/bookings-overvie
 > [!NOTE]
 > Update and add take-back and Premium messaging, as needed
 
-The [Virtual Visits usage report](virtual-visits-usage-report.md) in the Microsoft Teams admin center gives admins an overview of Teams virtual appointment activity in your organization. The report shows detailed analytics for virtual appointments including Bookings appointments.
+The [Virtual Appointments usage report](virtual-visits-usage-report.md) in the Microsoft Teams admin center gives admins an overview of Teams virtual appointment activity in your organization. The report shows detailed analytics for virtual appointments including Bookings appointments.
 
 You can view key metrics such as lobby wait time and appointment duration. Use this information to gain insight into usage trends to help you optimize virtual appointments to deliver better business outcomes.
 
 ## Related articles
 
 - [Manage the join experience for Teams virtual appointments on browsers](browser-join.md)
-
-- [Teams Virtual Visits usage report](virtual-visits-usage-report.md)
-
 - [Get started with Teams for healthcare organizations](teams-in-hc.md)
-
 - [Bookings app in Teams help documentation](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5)
