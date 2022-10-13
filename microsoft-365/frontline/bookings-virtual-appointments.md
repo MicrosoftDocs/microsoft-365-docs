@@ -85,18 +85,18 @@ Create specific appointment types to represent the services offered by your orga
 
 In the booking calendar, go to **More options** (...) > **Settings**, select **Appointment types**, and then select **Add appointment type**. Enter a name&mdash;for example, Account opening, Prescription renewal, Loan consultation, Tax preparation&mdash;and any other information and settings you want. The information that you add is included in the email confirmation that's sent to attendees every time this type of appointment is booked.
 
-You can configure options for the appointment type such as whether attendees can [join from a a desktop or mobile browser](browser-join.md) without having to download Teams, add an email reminder, enable SMS text notifications, and link forms.
+You can configure options for the appointment type such as whether attendees can [join from a a desktop or mobile browser](browser-join.md) without having to download Teams, add an email reminder, show the waiting room chat, enable SMS text notifications, and link forms.
 
 #### Enable SMS text notifications
 
 > [!NOTE]
-> We'll be providing unlimited SMS notifications through to November 30, 2022 for customers who have Bookings licenses. As we get closer to the end of the promotion period, we'll provide more details on licensing requirements. Contact your account team or support to get pricing details after the promotion period.
+> ADD take-back and Premium messaging
 
 Attendees need a valid United States, Canada, or United Kingdom phone number before they can receive SMS notifications.
 
-To send SMS notifications to attendees by default, turn on **Send them text messages**. Attendees will receive confirmation and reminder text messages that include the Teams meeting link for the appointment. They can opt out of receiving SMS notifications by replying STOP, or resume receiving them by replying START.
+To send SMS notifications to attendees by default, turn on **Send them text messages**. Attendees will receive confirmation and reminder text messages that include the Teams meeting link for the appointment. They can opt out of receiving the messages by replying STOP, or resume receiving them by replying START.
 
-Keep in mind that schedulers can later turn off the setting on an as-needed basis when using the appointment type to schedule an appointment.
+Keep in mind that schedulers can later turn off the setting on an as-needed basis when they use the appointment type to schedule an appointment.
 
 To learn more, see [Send text message notifications](https://support.microsoft.com/office/send-text-message-notifications-f4e6aa74-2ee9-4b12-9105-0e9271d4b244)
 
@@ -132,7 +132,10 @@ In your Teams or Outlook calendar, go to the booking, and then select **Join** o
 
 ## Monitor appointments and get real-time status updates in the queue view
 
-The queue view provides your staff with a dashboard to monitor all scheduled and walk-in virtual appointments for the day, with updates in real time. To see the queue, go to the **Queue** tab in Bookings.
+> [!NOTE]
+> Add take-back and Premium messaging
+
+The queue view provides your staff with a dashboard to monitor all scheduled and on-demand virtual appointments for the day, with updates in real time. To see the queue, go to the **Queue** tab in Bookings.
 
 [NEED NEW SCREENSHOT]<br>
 :::image type="content" source="media/bookings-virtual-visits-queue.png" alt-text="Screenshot of the queue view in the Bookings app in Teams" lightbox="media/bookings-virtual-visits-queue.png":::
@@ -155,6 +158,9 @@ The Bookings web app gives you additional capabilities. For example, you can pub
 To learn more, see [Microsoft Bookings](/microsoft-365/bookings/bookings-overview).
 
 ## Get insight into virtual appointments usage
+
+> [!NOTE]
+> Update and add take-back and Premium messaging, as needed
 
 The [Virtual Visits usage report](virtual-visits-usage-report.md) in the Microsoft Teams admin center gives admins an overview of Teams virtual appointment activity in your organization. The report shows detailed analytics for virtual appointments including Bookings appointments.
 
