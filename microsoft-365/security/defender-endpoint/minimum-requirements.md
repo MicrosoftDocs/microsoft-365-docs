@@ -138,6 +138,8 @@ When you run the onboarding wizard for the first time, you must choose where you
 Make sure that the diagnostic data service is enabled on all the devices in your organization.
 By default, this service is enabled. It's good practice to check to ensure that you'll get sensor data from them.
 
+The display name of this service is Connected User Experiences and Telemetry
+
 #### Use the command line to check the Windows diagnostic data service startup type
 
 1. Open an elevated command-line prompt on the device:
