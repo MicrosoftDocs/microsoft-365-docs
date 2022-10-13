@@ -85,7 +85,7 @@ Create specific appointment types to represent the services offered by your orga
 
 In the booking calendar, go to **More options** (...) > **Settings**, select **Appointment types**, and then select **Add appointment type**. Enter a name&mdash;for example, Account opening, Prescription renewal, Loan consultation, Tax preparation&mdash;and any other information and settings you want. The information that you add is included in the email confirmation that's sent to attendees every time this type of appointment is booked.
 
-You can set options for the appointment type such as whether attendees can [join from a a desktop or mobile browser](browser-join.md) without having to download Teams, add an email reminder, enable [SMS text notifications](#enable-sms-text-notifications), and [link forms](#using-forms).
+You can configure options for the appointment type such as whether attendees can [join from a a desktop or mobile browser](browser-join.md) without having to download Teams, add an email reminder, enable [SMS text notifications](#enable-sms-text-notifications), and [link forms](#using-forms).
 
 #### Enable SMS text notifications
 
@@ -94,7 +94,7 @@ You can set options for the appointment type such as whether attendees can [join
 
 Attendees need a valid United States, Canada, or United Kingdom phone number before they can receive SMS notifications.
 
-To send SMS notifications to attendees, turn on **Send them text messages**. Attendees will receive confirmation and reminder text messages that include the Teams meeting link for the appointment.
+To send SMS notifications to attendees, turn on **Send them text messages**. Attendees will receive confirmation and reminder text messages that include the Teams meeting link for the appointment. They can opt out of receiving SMS notifications by replying STOP, or resume receiving them by replying START.
 
 To learn more, see [Send text message notifications](https://support.microsoft.com/office/send-text-message-notifications-f4e6aa74-2ee9-4b12-9105-0e9271d4b244)
 
@@ -128,18 +128,20 @@ To learn more, see [Schedule a booking in the Teams Bookings app](https://suppor
 
 In your Teams or Outlook calendar, go to the booking, and then select **Join** or the Teams meeting link. Check your audio and video settings, and then select **Join now**. To learn more, see [Conduct a Bookings appointment](https://support.microsoft.com/office/conduct-a-bookings-appointment-a86a4007-e26c-4909-9893-f7036e2747cd).
 
-## Monitor appointments and get real-time status updates
+## Monitor appointments and get real-time status updates in the queue view
 
-The [queue view](https://support.microsoft.com/office/queue-view-in-bookings-3eea2840-a1e0-4bcd-8e09-d3cf51c184d6) in Bookings provides your staff with a dashboard to monitor all scheduled and walk-in virtual appointments for the day, with updates in real time. To see the queue, go to the **Queue** tab in Bookings.
+The queue view provides your staff with a dashboard to monitor all scheduled and walk-in virtual appointments for the day, with updates in real time. To see the queue, go to the **Queue** tab in Bookings.
 
 [NEED NEW SCREENSHOT]<br>
 :::image type="content" source="media/bookings-virtual-visits-queue.png" alt-text="Screenshot of the queue view in the Bookings app in Teams" lightbox="media/bookings-virtual-visits-queue.png":::
 
-From the queue, schedulers can add a new booking, view relevant appointment details, see appointment statuses throughout the day, send email reminders to assigned staff and attendees, and send SMS text notifications to attendees.
+From the queue, schedulers can add a new booking, view relevant appointment details, see appointment statuses throughout the day, send email reminders to assigned staff and attendees, and send SMS notifications to attendees.
 
 When an attendee joins the waiting room, the status changes, and their wait time is displayed and tracked. The view automatically refreshes with color-coded updates so that changes can easily be identified.
 
 Staff can even join and manage appointments directly from the queue.
+
+To learn more, see [Queue view in Bookings](https://support.microsoft.com/office/queue-view-in-bookings-3eea2840-a1e0-4bcd-8e09-d3cf51c184d6)
 
 > [!NOTE]
 > Currently, the Bookings app supports adding up to 100 staff per booking calendar. If you used Graph APIs to set up and add staff to a booking calendar, this limit may not be enforced. In this scenario, the **Queue** tab won't be able to render content for calendars that have more than 100 staff. For an optimal experience, we recommend that you add no more than 100 staff to a booking calendar. We're working to resolve this limitation in future releases.
