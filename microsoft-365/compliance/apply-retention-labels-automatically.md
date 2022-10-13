@@ -1,5 +1,5 @@
 ---
-title: "Automatically apply a retention label"
+title: "Automatically apply a retention label to Microsoft 365 items"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -330,7 +330,7 @@ To consider when auto-applying retention labels to cloud attachments:
 
 - The following items aren't supported as cloud attachments that can be retained:
   - SharePoint sites, pages, lists, forms, folders, document sets, and OneNote pages.
-  - Files shared by users who don't have access to those files.
+  - Files shared by users who don't have access to those files at the time of sharing.
   - Files that are deleted or moved before the cloud attachment is sent. For example, a user copies and pastes a previously shared attachment from another message, without first confirming that the file is still available. Or, somebody forwards an old message when the file is now deleted.
   - Files that are shared by guests or users outside your organization.
   - Files in draft emails and messages that aren't sent.

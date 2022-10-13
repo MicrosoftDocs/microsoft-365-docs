@@ -74,6 +74,10 @@ You must be an administrator in a Microsoft 365 organization to use the admin mo
 
 [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
 
+## Watch: Install and use the admin mobile app
+
+[!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
+
 ## Frequently asked questions
 
 Below are answers to frequently asked questions.
