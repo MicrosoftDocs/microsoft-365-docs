@@ -94,7 +94,9 @@ You can configure options for the appointment type such as whether attendees can
 
 Attendees need a valid United States, Canada, or United Kingdom phone number before they can receive SMS notifications.
 
-To send SMS notifications to attendees, turn on **Send them text messages**. Attendees will receive confirmation and reminder text messages that include the Teams meeting link for the appointment. They can opt out of receiving SMS notifications by replying STOP, or resume receiving them by replying START.
+To send SMS notifications to attendees by default, turn on **Send them text messages**. Attendees will receive confirmation and reminder text messages that include the Teams meeting link for the appointment. They can opt out of receiving SMS notifications by replying STOP, or resume receiving them by replying START.
+
+Keep in mind that schedulers can later turn off the setting on an as-needed basis when using the appointment type to schedule an appointment.
 
 To learn more, see [Send text message notifications](https://support.microsoft.com/office/send-text-message-notifications-f4e6aa74-2ee9-4b12-9105-0e9271d4b244)
 
