@@ -44,7 +44,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## October 2022
 
-- [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md): With **allow expiry management** (currently in private preview), Microsoft will automatically extend the expiry time of legitimate emails you’ve identified that are sent to junk or quarantine.
+- [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md): With **allow expiry management** (currently in private preview), if Microsoft has not learned from the allow, Microsoft will automatically extend the expiry time of allows, which are going to expire soon, by 30 days to prevent legitimate email from going to junk or quarantine again.
 
 ## September 2022
 
