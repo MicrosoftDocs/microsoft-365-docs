@@ -19,7 +19,6 @@ ms.collection:
 ms.topic: article
 ms.subservice: mde
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
 
 # SmartScreen app reputation demonstration
 
