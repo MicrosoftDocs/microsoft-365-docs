@@ -156,9 +156,11 @@ A new feature in Defender for Endpoint indicators enables administrators to allo
 
 :::image type="content" source="images/network-protection-smart-screen-block-notification.png" alt-text="Windows Security notification for network protection.":::
 
-Microsoft Defender for Endpoint Administrators can configure SmartScreen Unblock functionality at [Microsoft 365 Defender](https://security.microsoft.com/), using the following configuration tool. From the Microsoft 365 Defender portal, navigate to the path to the ConfigToolName.
+Microsoft Defender for Endpoint administrators can configure SmartScreen Unblock functionality in the [Microsoft 365 Defender portal](https://security.microsoft.com) using an "allow" indicator for IPs, URLs, and domains. 
 
 :::image type="content" source="images/network-protection-smart-screen-block-configuration.png" alt-text="Network protection SmartScreen block configuration ULR and IP form.":::
+
+See [Create indicators for IPs and URLs/domains](indicator-ip-domain.md).
 
 ## Using network protection
 
