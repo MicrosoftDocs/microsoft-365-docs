@@ -211,7 +211,7 @@ When you modify allow or block entries for domains and email addresses in the Te
 
    When you're finished, click **Save**.
 
-Note that with **allow expiry management** (currently in private preview), Microsoft will automatically extend the expiry time of legitimate emails that are sent to junk or quarantine. If Microsoft has not learned from the allow and the allow is going to expire soon (and within 90 days from the date of creation), Microsoft is going to go ahead and extend the removal date by 30 days.
+Note that with **allow expiry management** (currently in private preview), Microsoft will automatically extend the expiry time of legitimate emails that are sent to junk or quarantine. If Microsoft has not learned from the allow and the allow is going to expire soon (and within 90 days from the date of creation), Microsoft will extend the removal date by 30 days.
 
 If Microsoft has learned from the allow, the allow is removed and you get an alert informing you about it.
 
