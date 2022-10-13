@@ -65,8 +65,8 @@ Let's break the example draft statement down and map it to DLP policy configurat
 
 |Statement|Configuration question answered and configuration mapping|
 |---|---|
-|"We are a U.S. based organization, and we need  to detect Office documents that contain sensitive health care information covered by HIPPA...|- **What to monitor**: Office docs, use the [U.S. Health Insurance Act (HIPAA)](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) template </br>- **Conditions for a match**: (preconfigured but editable) - item contains U.S. SSN and Drug Enforcement Agency (DEA) number, International Classification of Diseases (ICD-9-CM), International Classification of Diseases (ICD-10-CM), content is shared with people outside my organization  </br> - drives conversations to clarify the triggering threshold for detection like [confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels), and [instance count](dlp-policy-reference.md#content-contains) (called leakage tolerance).|
-|...that are stored in OneDrive/SharePoint and protect against that information being shared Teams chat and channel messages...|- **Where to monitor**:  [Location scoping](dlp-policy-reference.md#locations) by including or excluding OneDrive and SharePoint sites and Teams chat/channel accounts or distribution groups.|
+|"We are a U.S. based organization, and we need  to detect Office documents that contain sensitive health care information covered by HIPAA...|- **What to monitor**: Office docs, use the [U.S. Health Insurance Act (HIPAA)](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) template </br>- **Conditions for a match**: (preconfigured but editable) - item contains U.S. SSN and Drug Enforcement Agency (DEA) number, International Classification of Diseases (ICD-9-CM), International Classification of Diseases (ICD-10-CM), content is shared with people outside my organization  </br> - drives conversations to clarify the triggering threshold for detection like [confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels), and [instance count](dlp-policy-reference.md#content-contains) (called leakage tolerance).|
+|...that are stored in OneDrive/SharePoint and protect against that information being shared in Teams chat and channel messages...|- **Where to monitor**:  [Location scoping](dlp-policy-reference.md#locations) by including or excluding OneDrive and SharePoint sites and Teams chat/channel accounts or distribution groups.|
 |...and restrict everyone from sharing those items with unauthorized third parties."|- **Actions to take**: [You add](dlp-policy-reference.md#actions) *Restrict access or encrypt the content in Microsoft 365 locations* </br> - drives conversation on what actions to take when a policy is triggered including protective actions like sharing restrictions, awareness actions like notifications and alerts, and user empowerment actions like allow user overrides of a blocking action|
 
 This example doesn't cover all the configuration points of a DLP policy, it would need to be expanded. But it should get you thinking in the right direction as you develop your own DLP policy intent statements.
@@ -76,7 +76,7 @@ This example doesn't cover all the configuration points of a DLP policy, it woul
 
 ### Complex rule design (preview)
 
-The above HIPPA content in SharePoint and OneDrive is a simple example of a DLP policy. The DLP rule builder supports boolean logic (AND, OR, NOT) and nested groups. Here's a video that shows how you'd map two complex policy intent statements to policies in the rule builder.
+The above HIPAA content in SharePoint and OneDrive is a simple example of a DLP policy. The DLP rule builder supports boolean logic (AND, OR, NOT) and nested groups. Here's a video that shows how you'd map two complex policy intent statements to policies in the rule builder.
 
 - *Example 1 We need to block emails to all recipients that contain credit card numbers, OR that have the 'highly confidential' sensitivity label applied, but do NOT block the email if it is sent from someone on the finance team to adele.vance@contoso.com*
 
@@ -88,7 +88,6 @@ The above HIPPA content in SharePoint and OneDrive is a simple example of a DLP 
 > [!IMPORTANT]
 > - The use of the NOT condition in a nested group replaces the **Exceptions** functionality.
 > - You need to create groups in order to use multiple operators as shown in the video.
-
 
 > [!IMPORTANT]
 > When an action in Office desktop client apps, (Word, Outlook, Excel, and PowerPoint) matches a policy that uses complex conditions, the user will only see policy tips for rules that use the **Content contains sensitive information** condition.
