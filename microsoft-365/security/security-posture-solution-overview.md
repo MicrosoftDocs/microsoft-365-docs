@@ -40,10 +40,10 @@ This security posture solution guidance flow
 
 includes four stages:
 
-- **Prepare**: 
-- **Assess**:
-- **Improve**:
-- **Maintain**:
+- **Prepare and Configure**: 
+- **Assess and Protect**:
+- **Investigate and Improve**:
+- **Track and Maintain**:
 
 To complete the steps in this flow you use these M365D capabilities and features. These Microsoft 365 Defender capabilities and features help you strengthen your security posture.
 
