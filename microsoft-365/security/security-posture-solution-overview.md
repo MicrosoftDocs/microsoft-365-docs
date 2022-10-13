@@ -22,7 +22,7 @@ ms.collection:
 - tier1
 ---
 
-# Strengthen your security posture with Microsoft 365 Defender (business framing)
+# Strengthen your security posture with Microsoft 365 Defender
 
 This article describes how to strengthen your organization's security posture using capabilities available in Microsoft Defender 365.
 
@@ -30,17 +30,17 @@ It provides you with a framework that helps you plan and implement a solution th
 
 This solution provides guidance on how you can assess, improve and maintain your security posture.
 
-## Overview of the solution (overview visual)
+## Overview of the solution 
 
 This illustration provides a representation of the high level flow you can follow to improve your security posture.
 
-:::image type="content" source="../media/content-understanding/syntex-solution-manage-contracts-overview.png" alt-text="The Zero Trust security architecture" lightbox="../media/content-understanding/syntex-solution-manage-contracts-overview.png":::
+:::image type="content" source="../media/content-understanding/security-posture-overview.png" alt-text="The Zero Trust security architecture" lightbox="../media/content-understanding/security-posture-overview.png":::
 
 This security posture solution guidance flow
 
 includes four stages:
 
-- **Prepare**: adfs
+- **Prepare**: 
 - **Assess**:
 - **Improve**:
 - **Maintain**:
