@@ -78,11 +78,11 @@ The following list describes what happens in the Tenant Allow/Block List when yo
 
 - **Email**: If a message was blocked by the Microsoft 365 filtering stack, an allow entry might be created in the Tenant Allow/Block List:
 
-  - If the message was blocked by [spoof intelligence](learn-about-spoof-intelligence.md), an allow entry for the sender is created and it appears on the **Spoofed senders** tab in the Tenant Allow Block List.
+  - If the message was blocked by [spoof intelligence](learn-about-spoof-intelligence.md), an allow entry for the sender is created, and it appears on the **Spoofed senders** tab in the Tenant Allow Block List.
 
   - If the message was blocked by [domain or user impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in Defender for Office 365, an allow entry is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains section** in the [anti-phishing policy](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
 
-  - If the message was blocked for other reasons, an allow entry for the sender is created and it appears on the **Domains & addresses** tab in the Tenant Allow Block List.
+  - If the message was blocked for other reasons, an allow entry for the sender is created, and it appears on the **Domains & addresses** tab in the Tenant Allow Block List.
 
   - If the message was not blocked, and allow entry for the sender is not created, it won't on the **Spoofed senders** tab or the **Domains & addresses** tab.
 
