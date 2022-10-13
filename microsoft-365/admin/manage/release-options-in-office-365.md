@@ -36,7 +36,7 @@ With Microsoft 365, you receive new product updates and features as they become 
 
 ## How it works - release validation
 
-Any new release is first tested and validated by the feature team, then by the entire Microsoft 365 feature team, followed by all of Microsoft. After internal testing and validation, the next step is a **Targeted release** (formerly known as First release) to customers who opt in. At each release ring, Microsoft collects feedback and further validates quality by monitoring key usage metrics. This series of progressive validation is in place to make sure the worldwide-release is as robust as possible. The releases are pictured in the following figure. 
+Any new release is first tested and validated by the feature team, then by the entire Microsoft 365 feature team, followed by all of Microsoft. After internal testing and validation, the next step is a **Targeted release** (formerly known as First release) to customers who opt in. At each release ring, Microsoft collects feedback and further validates quality by monitoring key usage metrics. This series of progressive validation is in place to make sure the worldwide-release is as robust as possible. The releases are pictured in the following figure.
   
 ![Release validation rings for Microsoft 365.](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
@@ -49,22 +49,21 @@ For significant updates, customers are initially notified by the [Microsoft 365 
 
 This is the default option where you and your users receive the latest updates when they're released broadly to all customers.
   
-A good practice is to leave the majority of users in **Standard release** and IT Pros and power users in **Targeted release** to evaluate new features and prepare teams to support business users and executives. 
+A good practice is to leave the majority of users in **Standard release** and IT Pros and power users in **Targeted release** to evaluate new features and prepare teams to support business users and executives.
   
 > [!NOTE]
-> If you switch from targeted release back to standard release track, your users may lose access to features that haven't reached standard release yet. 
+> If you switch from targeted release back to standard release track, your users may lose access to features that haven't reached standard release yet.
   
 ## Targeted release
 
 With this option, you and your users can be the first to see the latest updates and help shape the product by providing early feedback. You can choose to have individuals or the entire organization receive updates early.
   
 > [!IMPORTANT]
-> - Large or complex updates may take longer than others so that no users are adversely affected. There is no guarantee on the exact timeline of a release.
-> - Targeted release is not currently available for customers with either the Office 365 GCC plan or the Office 365 GCC High and DoD plan.
+> Large or complex updates may take longer than others so that no users are adversely affected. There is no guarantee on the exact timeline of a release. Targeted release is not currently available for customers with either the Office 365 GCC plan or the Office 365 GCC High and DoD plan.
   
 ### Targeted release for entire organization
 
-If you [Set up the release option in the admin center](#set-up-the-release-option-in-the-admin-center) for this option, all your users will get the Targeted release experience. For organizations with more than 300 users, we recommend using a test subscription for this option. For test subscription information, please reach out to your Microsoft contact. 
+If you [Set up the release option in the admin center](#set-up-the-release-option-in-the-admin-center) for this option, all your users will get the Targeted release experience. For organizations with more than 300 users, we recommend using a test subscription for this option. For test subscription information, please reach out to your Microsoft contact.
   
 ### Targeted release for selected users
 
@@ -78,32 +77,32 @@ If you [Set up the release option in the admin center](#set-up-the-release-optio
 Targeted release allows admins, change managers, or anyone else responsible for Microsoft 365 updates to prepare for the upcoming changes by letting them:
   
 - Test and validate new updates before they are released to all the users in the organization.
-    
+
 - Prepare user notification and documentation before updates are released worldwide.
-    
+
 - Prepare internal help-desk for upcoming changes.
-    
+
 - Go through compliance and security reviews.
-    
+
 - Use feature controls, where applicable, to control the release of updates to end users.
-    
+
 ## Set up the release option in the admin center
 
 You can change how your organization receives Microsoft 365 updates by following these steps. You have to be a global admin in Microsoft 365 to opt in.
   
 > [!IMPORTANT]
-> It can take up to 24 hours for the below changes to take effect in Microsoft 365. If you opt out of targeted release after enabling it, your users may lose access to features that haven't reached the scheduled release yet. 
+> It can take up to 24 hours for the below changes to take effect in Microsoft 365. If you opt out of targeted release after enabling it, your users may lose access to features that haven't reached the scheduled release yet.
   
 1. In the admin center, go to the **Settings** > **Org Setting**, and under the <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a>, choose **Release preferences**.
 
-5. To disable targeted release, select **Standard release**, then select **Save changes**. 
+5. To disable targeted release, select **Standard release**, then select **Save changes**.
     
-6. To enable targeted release for all users in your organization, select **Targeted release for everyone**, then select **Save changes**. 
+6. To enable targeted release for all users in your organization, select **Targeted release for everyone**, then select **Save changes**.
     
-7. To enable targeted release for some people in your organization, select **Targeted release for selected users**, then select **Save changes**. 
-    
+7. To enable targeted release for some people in your organization, select **Targeted release for selected users**, then select **Save changes**.
+
 8. Choose **Select users** to add users one at a time, or **Upload users** to add them in bulk.
-    
+
 9. When you're done adding users, select **Save changes**.
   
 ## Next steps
