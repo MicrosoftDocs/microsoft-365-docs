@@ -11,7 +11,7 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 
-description: "Get an overview of...."
+description: "Get an overview of conformance metadata for Message center posts"
 ---
 
 # Conformance metadata for Message Center posts
