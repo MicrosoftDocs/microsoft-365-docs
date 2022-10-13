@@ -26,7 +26,7 @@ Attack Surface Reduction (ASR) rules target specific behaviors that are typicall
 
 - Executable files and scripts used in Office apps or web mail that attempt to download or run files
 - Scripts that are obfuscated or otherwise suspicious
-- Behaviors that apps undertake that aren't inititated during normal day-to-day work
+- Behaviors that apps undertake that aren't initiated during normal day-to-day work
 
 ## Scenario requirements and setup
 
