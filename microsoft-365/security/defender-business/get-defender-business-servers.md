@@ -36,7 +36,7 @@ Use one of the following procedures to get Microsoft Defender for Business serve
 |---------|---------|
 | You currently have [Defender for Business](mdb-overview.md) or [Microsoft 365 Business Premium](../../business-premium/index.md), and you want to add on Microsoft Defender for Business servers.     | <ol><li>Go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)) and sign in.</li><li>In the navigation pane, choose **Billing** > **Purchase services**.</li><li>In the list of results, select the **Details** box for **Microsoft Defender for Business servers**.</li><li>Review the information, and complete the purchase process. </li></ol>*You'll need one Microsoft Defender for Business servers license for each instance of Windows Server or Linux.*        |
 | You do not have Defender for Business or Microsoft 365 Business Premium yet.     | <ol><li>Go to one of the following product pages: <ul><li>[Microsoft Defender for Business](https://aka.ms/DefenderforBusiness)</li><li>[Microsoft 365 for business](https://www.microsoft.com/en-us/microsoft-365/business-h)</li></ul></li><li>Review the information, and start your trial or paid subscription today.</li></ol> |
-| You were using Microsoft Defender for Business servers (preview), and now you want to offboard one or more servers. | See [Offboard a device from Microsoft Defender for Business](mdb-offboard-devices.md). |
+| You want to offboard one or more devices, such as servers. | See [Offboard a device from Microsoft Defender for Business](mdb-offboard-devices.md). |
 
 ## Next steps
 
