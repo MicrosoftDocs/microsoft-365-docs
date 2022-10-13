@@ -39,6 +39,7 @@ This topic describes how to deploy Microsoft Defender for Endpoint on macOS thro
 
 ## Prerequisites and system requirements
 
+
 Before you get started, see [the main Microsoft Defender for Endpoint on macOS page](microsoft-defender-endpoint-mac.md) for a description of prerequisites and system requirements for the current software version.
 
 ## Overview
@@ -94,7 +95,7 @@ In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/
 
 ### Onboarding blob
 
-This profile contains license information for Microsoft Defender for Endpoint. Without this profile, Microsoft Defender for Endpoint will report that it isn't licensed.
+This profile contains a license information for Microsoft Defender for Endpoint. Without license information, Microsoft Defender for Endpoint will report that it is not licensed.
 
 1. Select **Create Profile** under **Configuration Profiles**.
 1. Select **Platform**=**macOS**, **Profile type**=**Templates**. **Template name**=**Custom**. Click **Create**.
