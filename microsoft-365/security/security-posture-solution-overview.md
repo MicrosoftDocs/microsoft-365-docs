@@ -40,7 +40,7 @@ This security posture solution guidance flow
 
 includes four stages:
 
-- **Prepare**:
+- **Prepare**: adfs
 - **Assess**:
 - **Improve**:
 - **Maintain**:
