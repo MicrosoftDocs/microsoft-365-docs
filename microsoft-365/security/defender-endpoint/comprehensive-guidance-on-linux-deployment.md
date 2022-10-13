@@ -28,22 +28,22 @@ This topic describes the deployment of Microsoft Defender for Endpoint (MDE) on 
 
 The following are the listed factors you should consider before deploying MDE for Linux in your environment:
 
-- Work with your Firewall, Proxy, and Networking admin to add the MDE URL’s to the allowed list, and prevent it from being SSL inspected.
+- Work with your Firewall, Proxy, and Networking admin to add the Microsoft Defender for Endpoint URL’s to the allowed list, and prevent it from being SSL inspected.
 - Run a centralized scan to capture current resource utilization across the environment, such as, check available disk space in all mounted partitions, capture memory usage, capture a process listing that includes availability, and used CPU percentages.
-- Exclude MDE for Linux from your third party AV for Linux product.
+- Exclude Microsoft Defender for Endpoint for Linux from your third party AV for Linux product.
 - Download the onboarding script from the MDE portal.
-- Setup the MDE for Linux configuration settings.
-- Add your third party AV for Linux processes and paths to the exclusion list above (Setup the MDE for Linux AV settings).
+- Setup the Microsoft Defender for Endpoint for Linux configuration settings.
+- Add your third party AV for Linux processes and paths to the exclusion list above (Setup the Microsoft Defender for Endpoint for Linux AV settings).
 - Ensure to add your current exclusions from your third party AV for Linux to the step above (Setup the MDE for Linux configuration settings).
 - Add Microsoft repository.
 - Deliver the onboarding file.
 - Deliver the AV setting.
 - Deliver the scheduled scans cronjob setting.
-- Deliver the MDE for Linux agent cronjob settings.
-- Install the MDE for Linux package.
-- Install the MDE for Linux configuration file.
+- Deliver the Microsoft Defender for Endpoint for Linux agent cronjob settings.
+- Install the Microsoft Defender for Endpoint for Linux package.
+- Install the Microsoft Defender for Endpoint for Linux configuration file.
 - Re-run resource utilization statistics an report on pre-deployment utilization compared to post-deployment.
-- Testing that you are able to communicate with MDE’s backend.
+- Testing that you are able to communicate with Microsoft Defender for Endpoint backend.
 - Testing that you are able to get “Platform Updates” (aka agent updates).
 - Testing that you are able to get “Security Intelligence Updates” (aka signatures/definition updates).
 - Testing detections.
@@ -66,7 +66,7 @@ The following are the supported Linux servers:
 |---|---|
 |Disk space |1 GB|
 |RAM |1GB 4GB is preferred|
-|CPU |If the Linux system is running only 1 vcpu, we recommend to be increased to 2 vcpu’s 4 cores are preferred|
+|CPU |If the Linux system just has one CPU, we advise upgrading to two, with four cores being recommended.|
 
 |OS version|Kernel filter driver|Comments|
 |---|---|---|
@@ -77,16 +77,27 @@ For more information on system requirements, see [/windows/security/threat-prote
 
 ## Network connectivity to MDE
 
-Here's how to check the network connectivity for the MDE:
+The following is a list of people who need to be engaged:
 
-### Allow the URL's for the MDE traffic
+- Firewall admin
+- Proxy admin
+- Network admin
+
+Here's how to check the network connectivity for the Microsoft Defender for Endpoint:
+
+1. The URLs that are allowed for the MDE traffic. For more information, see [Allow the URL for the Microsoft Defender for Endpoint traffic](#allow-the-url-for-the-microsoft-defender-for-endpoint-traffic)
+2. If the Linux servers are behind a proxy then set the proxy settings. For more information, see [Setup the proxy settings](#setup-the-proxy-settings)
+3. Verify that the traffic is not being inspected by SSL inspection (TLS inspection). When setting up Microsoft Defender for Endpoint, the most frequent network-related problem. For more information, see [Verify that SSL inspection is not being performed on the network traffic](#verify-that-ssl-inspection-is-not-being-performed-on-the-network-traffic)
+
+
+### Allow the URL for the Microsoft Defender for Endpoint traffic
 
 1. Download the “Microsoft Defender for Endpoint URL list for commercial customers” spreadsheet (mde-urls-commercial.xlsx) from Network connections that lists the services and their associated URLs that your network must be able to connect.
 2. Under Geography column, select US, WW, Blanks checkboxes.
 
 ### Setup the proxy settings
 
-The table shows the supported proxies:
+The table below shows the supported proxies:
 
 |Supported|Not supported|
 |---|---|
@@ -114,7 +125,7 @@ For more information on on troubleshooting connectivity issues in static proxy s
 To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, firewall systems like Palo Alto, Zscaler, Cisco, and others are not permitted to monitor SSL. 
 
 > [!NOTE]
-> For our (MDE) URLs, you must avoid SSL checking.
+> For the MDE URLs, you must avoid SSL checking.
 
 #### Troubleshoot cloud connectivity issues
 
@@ -122,16 +133,81 @@ For more information on troubleshooting cloud connectivity issues for MDE on Lin
 
 ## Configure MDE for Linux Antivirus (AV)
 
-**Preface**
+**Before you begin**
 - If you are already using a third party AV for your Linux servers:
     - Move the existing exclusions to MDE for Linux.
 - If you are not using a third party AV for your Linux servers:
     - Move the existing exclusions to MDE for Linux.
-- If you are running McAfee AV for Linux: 
+- If you are running McAfee antivirus for Linux then binary name and installation path changes with Endpoint Security for Linux 10.6.6. For more information see, https://kc.mcafee.com/corporate/index?page=content&id=KB92028.  
 - If you are testing on one machine, you can use a command line to set up the exclusions
-- If you are ready to set on multiple machines, you want to use the `mdatp_managed.json file`:
-- 
+- If you are testing on multiple machines, then use the `mdatp_managed.json` file:
 
+```powershell
+{
+   "antivirusEngine":{
+      "enforcementLevel":"real_time",
+      "scanAfterDefinitionUpdate":true,
+      "scanArchives":true,
+      "maximumOnDemandScanThreads":2,
+      "exclusionsMergePolicy":"merge",
+      "exclusions":[
+         {
+            "$type":"excludedPath",
+            "isDirectory":false,
+            "path":"/var/log/system.log"
+         },
+         {
+            "$type":"excludedPath",
+            "isDirectory":true,
+            "path":"/home"
+         },
+         {
+            "$type":"excludedFileExtension",
+            "extension":"pdf"
+         },
+         {
+            "$type":"excludedFileName",
+            "name":"cat"
+         }
+      ],
+      "allowedThreats":[
+         "<EXAMPLE DO NOT USE>EICAR-Test-File (not a virus)"
+      ],
+      "disallowedThreatActions":[
+         "allow",
+         "restore"
+      ],
+      "threatTypeSettingsMergePolicy":"merge",
+      "threatTypeSettings":[
+         {
+            "key":"potentially_unwanted_application",
+            "value":"block"
+         },
+         {
+            "key":"archive_bomb",
+            "value":"audit"
+         }
+      ]
+   },
+   "cloudService":{
+      "enabled":true,
+      "diagnosticLevel":"optional",
+      "automaticSampleSubmissionConsent":"safe",
+      "automaticDefinitionUpdateEnabled":true
+      "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
+   }
+}
 
+```
+
+## Download the MDE for Linux onboarding package
+
+To download the onboarding package from Microsoft 365 Defender portal, see https://docs.microsoft.com/en-us/winzXsQ2e3dows/security/threat-protection/microsoft-defender-atp/linux-install-with-ansible#download-the-onboarding-package.
+    
+> [!NOTE]
+> (*): This download registers Microsoft Defender for Endpoint for Linux to send the data to your Microsoft Defender for Endpoint instance.
 
   
+## Use ansible to manage MDE for Linux
+
+To deploy Defender for Endpoint on Linux using Ansible
