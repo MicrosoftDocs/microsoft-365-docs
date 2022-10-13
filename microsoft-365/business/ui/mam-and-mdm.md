@@ -28,8 +28,7 @@ description: "Learn the differences between mobile device management and mobile 
 
 # Difference between MDM and MAM
 
-Microsoft 365 Business Premium offers a number of ways for you to protect your business data. See [Overview of Microsoft 365 Business Premium](../../admin/admin-overview/what-is-microsoft-365.md) for more about the various protections that are automatically set up, and what you can set up yourself to further protect your business. You can also onboard devices to Microsoft Defender for Business to protect your Windows devices and the data in your mobile devices. See 
-[Onboard enrolled devices to Microsoft Defender for Business](/microsoft-365/business-premium/m365bp-onboard-devices-mdb).
+Microsoft 365 Business Premium offers a number of ways for you to protect your business data. See [Overview of Microsoft 365 Business Premium](../../admin/admin-overview/what-is-microsoft-365.md) for more about the various protections that are automatically set up, and what you can set up yourself to further protect your business. You can also onboard devices to Microsoft Defender for Business to protect your Windows devices and the data in your mobile devices. For more information, see [Onboard enrolled devices to Microsoft Defender for Business](/microsoft-365/business-premium/m365bp-onboard-devices-mdb). 
 
 ## Mobile device management or MDM
 
