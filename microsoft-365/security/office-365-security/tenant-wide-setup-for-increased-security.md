@@ -19,7 +19,7 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom: 
   - seo-marvel-apr2020
   - admindeeplinkSPO
-description: Manual configurations for Exchange Online Protection, Microsoft Defender for Office 365, Plan 1 and 2, and Microsoft 365 Defender.
+description: Manual configurations for Exchange Online Protection, Microsoft Defender for Office 365, Plan 1 and 2, and Microsoft 365 Defender, for complete protection of your Office 365 subscription.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ---
@@ -33,15 +33,21 @@ ms.service: microsoft-365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-The *recommended* setup of Microsoft Defender for Office 365 (plan 1 and plan 2) is described by this handy step-by-step guide, right here: '[Ensuring you always have the optimal security'](step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md), but many admins opt for a more hands-on approach to these products.
+Your organizational needs require security.
 
-Your organizational needs might require more or less security. Specifics are up to your business.
+Specifics are up to your business.
 
 This topic will walk you through the manual configuration of tenant-wide settings that affect the security of your Microsoft 365 environment. Use these recommendations as a starting point.
 
 ## Tune threat management policies in the Microsoft 365 Defender portal
 
-The Microsoft 365 Defender portal includes capabilities that protect your environment. It also includes reports and dashboards you can use to monitor and take action. Some areas come with default policy configurations. Some areas do not include default policies or rules. Visit these policies under **Email & collaboration** \> **Policies & rules** \> **Threat policies** to tune threat management settings for a more secure environment.
+The Microsoft 365 Defender portal has capabilities for both protection and reporting. It has dashboards you can use to monitor and take action when threats arise.
+
+Keep in mind that some areas come with *default policy configurations*. Some areas do not include default policies or rules.
+
+For example, the *recommended* setup of Microsoft Defender for Office 365 (plan 1 and plan 2) is described by this handy step-by-step guide, right here: '[Ensuring you always have the optimal security'](step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md). But, even so, some admins opt for a more hands-on approach to this product.
+
+To automate your setup of Microsoft Defender for Office 365 visit the Standard and Strict policies under **Email & collaboration** \> **Policies & rules** \> **Threat policies** to tune threat management settings for a more secure environment.
 
 |Area|Default policy?|Recommendation|
 |---|---|---|
