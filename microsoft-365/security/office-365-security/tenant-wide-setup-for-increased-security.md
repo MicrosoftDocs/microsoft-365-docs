@@ -19,7 +19,7 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom: 
   - seo-marvel-apr2020
   - admindeeplinkSPO
-description: This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment.
+description: Manual configurations for Exchange Online Protection, Microsoft Defender for Office 365, Plan 1 and 2, and Microsoft 365 Defender.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ---
@@ -33,8 +33,11 @@ ms.service: microsoft-365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment. Your security needs might require more or less security. Use these recommendations as a starting point.
+The *recommended* setup of Microsoft Defender for Office 365 (plan 1 and plan 2) is described by this handy step-by-step guide, right here: '[Ensuring you always have the optimal security'](step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md), but many admins opt for a more hands-on approach to these products.
 
+Your organizational needs might require more or less security. Specifics are up to your business.
+
+This topic will walk you through the manual configuration of tenant-wide settings that affect the security of your Microsoft 365 environment. Use these recommendations as a starting point.
 
 ## Tune threat management policies in the Microsoft 365 Defender portal
 
