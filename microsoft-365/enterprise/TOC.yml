@@ -183,7 +183,7 @@
         - name: Product Terms Data Residency
           href: m365-dr-product-terms-dr.md
         - name: Advanced Data Residency
-          href: advanced-data-residency
+          href: advanced-data-residency.md
         - name: Multi-geo Data Residency
           items: 
             - name: Microsoft 365 Multi-Geo
