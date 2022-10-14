@@ -1,4 +1,4 @@
-    - name: Microsoft SharePoint Syntex
+    - name: Microsoft Syntex
       href: index.md
  
     - name: Custom models
@@ -71,8 +71,12 @@
 
     - name: Content assembly
       items: 
-        - name: Create documents using content assembly 
+        - name: Overview 
           href: content-assembly.md
+        - name: Create a modern template
+          href: content-assembly-modern-template.md
+        - name: Create a document from a modern template 
+          href: content-assembly-create-document.md
         - name: Generate documents using Power Automate 
           href: automate-document-generation.md
      
@@ -94,13 +98,13 @@
 
     - name: Setup and administration
       items:
-        - name: Licensing for SharePoint Syntex
+        - name: Licensing for Syntex
           href: syntex-licensing.md
-        - name: Set up SharePoint Syntex
+        - name: Set up Syntex
           href: set-up-content-understanding.md
         - name: Create a content center 
           href: create-a-content-center.md
-        - name: Manage SharePoint Syntex with PowerShell
+        - name: Manage Syntex with PowerShell
           items:
             - name: Overview
               href: powershell-syntex-intro.md
@@ -127,7 +131,7 @@
           items:
             - name: Overview
               href: solution-manage-contracts-in-microsoft-365.md 
-            - name: Step 1. Use SharePoint Syntex
+            - name: Step 1. Use Microsoft Syntex
               href: solution-manage-contracts-step1.md
             - name: Step 2. Use Microsoft Teams
               href: solution-manage-contracts-step2.md
