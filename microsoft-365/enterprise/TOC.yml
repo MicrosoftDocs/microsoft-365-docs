@@ -158,6 +158,8 @@
               items:
                 - name: Service advisories for Mailbox utilization
                   href: microsoft-365-mailbox-utilization-service-alerts.md
+                - name: Service advisories for eDiscovery throttling
+                  href: microsoft-365-ediscovery-throttling-service-advisory.md
                 - name: Service advisories for MRS source delays
                   href: microsoft-365-mrs-source-delays-service-alerts.md
             - name: Microsoft 365 Apps monitoring
