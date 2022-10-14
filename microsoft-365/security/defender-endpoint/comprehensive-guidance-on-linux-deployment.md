@@ -30,11 +30,11 @@ The following are the listed factors you should consider while deploying Microso
 
 - Work with your Firewall, Proxy, and Networking admin to add the Microsoft Defender for Endpoint URLs to the allowed list, and prevent it from being SSL inspected.
 - Run a centralized scan to capture current resource utilization across the environment, such as, check available disk space in all mounted partitions, capture memory usage, capture a process listing that includes availability, and used CPU percentages.
-- Exclude Microsoft Defender for Endpoint on RHEL Linux from your third party antivirus for Linux product.
+- Exclude Microsoft Defender for Endpoint on RHEL Linux from your third-party antivirus for Linux product.
 - Download the onboarding script from the Microsoft Defender for Endpoint portal.
 - Set up the Microsoft Defender for Endpoint on Linux configuration settings.
-- Add your third party antivirus on RHEL Linux processes and paths to the exclusion list above (Setup the Microsoft Defender for Endpoint for RHEL Linux antivirus settings).
-- Ensure to add your current exclusions from your third party antivirus for Linux to the step above (Set up the Microsoft Defender for Endpoint on Linux configuration settings).
+- Add your third-party antivirus on RHEL Linux processes and paths to the exclusion list above (Setup the Microsoft Defender for Endpoint for RHEL Linux antivirus settings).
+- Ensure to add your current exclusions from your third-party antivirus for Linux to the step above (Set up the Microsoft Defender for Endpoint on Linux configuration settings).
 - Add Microsoft repository.
 - Deliver the onboarding file.
 - Deliver the antivirus setting.
@@ -142,10 +142,10 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
 
 **Before you begin**
 
-- If you're already using a third party antivirus for your Linux servers:
+- If you're already using a third-party antivirus for your Linux servers:
    - Move the existing exclusions to Microsoft Defender for Endpoint for Linux.
 
-- If you're not using a third party antivirus for your Linux servers:
+- If you're not using a third-party antivirus for your Linux servers:
    
 - If you're running McAfee antivirus for Linux, then add the processes/paths to the exclusion. For more information, see [Binary name and installation path changes with Endpoint Security for Linux 10.6.6](https://kcm.trellix.com/corporate/index?page=content&id=KB92028).
   
@@ -298,7 +298,7 @@ The table below describes the settings that are recommended as part of mdatp_man
 - Save the setting as `mdatp_managed.json` file.
 - Copy the setting to this path `/etc/opt/microsoft/mdatp/managed/`. For more information, see [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).
 
-## Significance of CPU utilisation when using scripts generated from a third party ISV
+## Significance of CPU utilisation when using scripts generated from a third-party ISV
 
 Perform the following steps:
 
@@ -469,19 +469,19 @@ To ensure that the device is correctly onboarded and reported to the service, ru
 
 ## FAQs
 
-**I already have a third party antivirus running on my Linux servers. Can I run Microsoft Defender for Endpoint on RHEL Linux?**<br> 
-It depends. If the third party antivirus runs FANotify, it needs to be uninstalled.
+**I already have a third-party antivirus running on my Linux servers. Can I run Microsoft Defender for Endpoint on RHEL Linux?**<br> 
+It depends. If the third-party antivirus runs FANotify, it needs to be uninstalled.
  
-**How can I find out if there is a third party antivirus that is running FANotify?**<br>
-When you run `mdatp` health, then in the conficting_applications row, you'll need to uninstall the third party antivirus.
+**How can I find out if there is a third-party antivirus that is running FANotify?**<br>
+When you run `mdatp` health, then in the conficting_applications row, you'll need to uninstall the third-party antivirus.
 
-**What happens if I don’t uninstall the third party antivirus that uses FANotify**<br>
+**What happens if I don’t uninstall the third-party antivirus that uses FANotify**<br>
 You can experience unexpected behaviors such as performance issues, and/or stability issues, for example, systems hanging, and/or kernel panics (akin to a blue screen in Windows).
 
-**What are the processes and paths for Microsoft Defender for Endpoint on Linux that you should exclude in the third party antivirus?**<br>
+**What are the processes and paths for Microsoft Defender for Endpoint on Linux that you should exclude in the third-party antivirus?**<br>
 Running `systemctl status -l mdatp` shows the processes and paths.
 
-The following are the processes to exclude from the third party antivirus: 
+The following are the processes to exclude from the third-party antivirus: 
 
 `wdavdaemon`<br>
 `crashpad_handler`<br>
@@ -491,7 +491,7 @@ The following are the processes to exclude from the third party antivirus:
 > [!NOTE]
 > (*): The processes are in /opt/microsoft/mdatp/sbin/.
 
-The following are the paths to exclude from the third party antivirus:
+The following are the paths to exclude from the third-party antivirus:
 
 `/opt/microsoft/mdatp/`<br>
 `/var/opt/microsoft/mdatp/`<br>
