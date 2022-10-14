@@ -193,7 +193,7 @@ These steps are required to set up the integration between your ServiceNow insta
     1. After completing the instructions in the prerequisites section, click Done to go to the next step. Otherwise, follow the instructions to create the AAD App Registration for inbound REST user (integration user).
     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-8.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-8.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
     1. Configure the Integration User.
-    1. After completing the instructions in the prerequisites section, select the newly created entity and click Next. Otherwise follow the instructions to create the integration user in ServiceNow then select the entity.
+    1. After completing the instructions in the prerequisites section, select the newly created entity and click Next. Otherwise follow the instructions to create the integration user in ServiceNow, and then select the entity.
     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-9.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-9.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 1. \[Microsoft 365 Tenant Admin\] Complete the integration.
