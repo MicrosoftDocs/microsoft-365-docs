@@ -87,7 +87,7 @@ Here's how to check the network connectivity of Microsoft Defender for Endpoint:
 
 1. The URLs that are allowed for the Microsoft Defender for Endpoint traffic. For more information, see [Allow URL for the Microsoft Defender for Endpoint traffic](#allow-url-for-the-microsoft-defender-for-endpoint-traffic).
 2. If the Linux servers are behind a proxy, then set the proxy settings. For more information, see [Set up proxy settings](#set-up-proxy-settings).
-3. Verify that the traffic isn't being inspected by SSL inspection (TLS inspection). When setting up Microsoft Defender for Endpoint, the most frequent network-related problem. For more information, see [Verify that SSL inspection is not being performed on the network traffic](#verify-that-ssl-inspection-is-not-being-performed-on-the-network-traffic).
+3. Verify that the traffic isn't being inspected by SSL inspection (TLS inspection). When setting up Microsoft Defender for Endpoint, the most frequent network-related problem. For more information, see [Verify SSL inspection is not being performed on the network traffic](#verify-ssl-inspection-is-not-being-performed-on-the-network-traffic).
 
 
 ### Allow URL for the Microsoft Defender for Endpoint traffic
