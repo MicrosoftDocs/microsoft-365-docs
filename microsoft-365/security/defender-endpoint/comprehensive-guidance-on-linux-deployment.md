@@ -1,5 +1,5 @@
 ---
-title: Deployment of MDE on RHEL Linux
+title: Deployment of Microsoft Defernder for Endpoint on RHEL Linux
 ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on RHEL Linux
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, app, installation, deploy, uninstallation, intune
@@ -20,7 +20,7 @@ ms.subservice: mde
 search.appverid: met150
 ---
 
-# Deployment of MDE on RHEL Linux
+# Deployment of Microsoft Defernder for Endpoint on RHEL Linux
 
 This article explains how to deploy Microsoft Defender for Endpoint (MDE) on a Red Hat Enterprise Linux (RHEL) system. 
 
@@ -32,9 +32,9 @@ The following are the listed factors you should consider while deploying Microso
 - Run a centralized scan to capture current resource utilization across the environment, such as, check available disk space in all mounted partitions, capture memory usage, capture a process listing that includes availability, and used CPU percentages.
 - Exclude Microsoft Defender for Endpoint on RHEL Linux from your third party antivirus for Linux product.
 - Download the onboarding script from the Microsoft Defender for Endpoint portal.
-- Set up the Microsoft Defender for Endpoint for Linux configuration settings.
-- Add your third party antivirus for RHEL Linux processes and paths to the exclusion list above (Setup the Microsoft Defender for Endpoint for RHEL Linux antivirus settings).
-- Ensure to add your current exclusions from your third party antivirus for Linux to the step above (Set up the MDE for Linux configuration settings).
+- Set up the Microsoft Defender for Endpoint on Linux configuration settings.
+- Add your third party antivirus on RHEL Linux processes and paths to the exclusion list above (Setup the Microsoft Defender for Endpoint for RHEL Linux antivirus settings).
+- Ensure to add your current exclusions from your third party antivirus for Linux to the step above (Set up the Microsoft Defender for Endpoint on Linux configuration settings).
 - Add Microsoft repository.
 - Deliver the onboarding file.
 - Deliver the antivirus setting.
@@ -75,7 +75,7 @@ The following are the supported RHEL Linux servers:
 
 For more information, see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements).
 
-## Network connectivity to MDE
+## Network connectivity to Microsoft Defender for Endpoint
 
 The following is a list of people who need to be engaged:
 
@@ -85,7 +85,7 @@ The following is a list of people who need to be engaged:
 
 Here's how to check the network connectivity for the Microsoft Defender for Endpoint:
 
-1. The URLs that are allowed for the MDE traffic. For more information, see [Allow the URL for the Microsoft Defender for Endpoint traffic](#allow-the-url-for-the-microsoft-defender-for-endpoint-traffic).
+1. The URLs that are allowed for the Microsoft Defender for Endpoint traffic. For more information, see [Allow the URL for the Microsoft Defender for Endpoint traffic](#allow-the-url-for-the-microsoft-defender-for-endpoint-traffic).
 2. If the Linux servers are behind a proxy, then set the proxy settings. For more information, see [Set up the proxy settings](#set-up-the-proxy-settings).
 3. Verify that the traffic isn't being inspected by SSL inspection (TLS inspection). When setting up Microsoft Defender for Endpoint, the most frequent network-related problem. For more information, see [Verify that SSL inspection is not being performed on the network traffic](#verify-that-ssl-inspection-is-not-being-performed-on-the-network-traffic).
 
@@ -136,19 +136,26 @@ To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses ce
 
 #### Troubleshoot cloud connectivity issues
 
-For more information, see [Troubleshooting cloud connectivity issues for MDE on Linux](linux-support-connectivity.md).
+For more information, see [Troubleshooting cloud connectivity issues for Microsoft Defender for Endpoint on RHEL Linux](linux-support-connectivity.md).
 
 
-## Configure MDE on RHEL Linux Antivirus (AV)
+## Configure Microsoft Defender for Endpoint on RHEL Linux antivirus
 
 **Before you begin**
-- If you're already using a third party AV for your Linux servers:
-    - Move the existing exclusions to MDE for Linux.
-- If you're not using a third party AV for your Linux servers:
-    - Move the existing exclusions to MDE for Linux.
-- If you're running McAfee antivirus for Linux, then binary name and installation path changes with Endpoint Security for Linux 10.6.6. For more information see, https://kc.mcafee.com/corporate/index?page=content&id=KB92028.  
-- If you are testing on one machine, you can use a command line to set up the exclusions
-- If you're testing on multiple machines, then use the `mdatp_managed.json` file:
+- If you're already using a third party antivirus for your Linux servers:
+   - Move the existing exclusions to Microsoft Defender for Endpoint for Linux.
+
+- If you're not using a third party antivirus for your Linux servers:
+   
+- If you're running McAfee antivirus for Linux, then add the processes/paths to the exclusion. For more information, see [Binary name and installation path changes with Endpoint Security for Linux 10.6.6](https://kcm.trellix.com/corporate/index?page=content&id=KB92028).
+  
+- If you are testing on one machine, you can use a command line to set up the exclusions:
+  - [Configure from the command line](linux-resources.md#configure-from-the-command-line).
+  - [Configure and validate exclusions for Microsoft Defender for Endpoint on RHEL Linux](linux-exclusions.md).
+
+- If you're testing on multiple machines, then use the `mdatp_managed.json` file.
+
+The following command should be considered based on your requirements:
 
 ```powershell
 {
@@ -208,7 +215,132 @@ For more information, see [Troubleshooting cloud connectivity issues for MDE on 
 
 ```
 
-## Download MDE on RHEL onboarding package
+**Recommendations**
+
+```powershell
+{
+   "antivirusEngine":{
+      "enforcementLevel":"real_time",
+      "scanAfterDefinitionUpdate":true,
+      "scanArchives":true,
+      "maximumOnDemandScanThreads":2,
+      "exclusionsMergePolicy":"merge",
+      "exclusions":[
+         {
+            "$type":"excludedPath",
+            "isDirectory":false,
+            "path":"/var/log/system.log"
+         },
+         {
+            "$type":"excludedPath",
+            "isDirectory":true,
+            "path":"/proc"
+         },
+         {
+            "$type":"excludedPath",
+            "isDirectory":true,
+            "path":"/sys"
+         },
+         {
+            "$type":"excludedPath",
+            "isDirectory":true,
+            "path":"/dev"
+         },
+         {
+            "$type":"excludedFileExtension",
+            "extension":""
+         },
+         {
+            "$type":"excludedFileName",
+            "name":""
+         }
+      ],
+      "allowedThreats":[
+         ""
+      ],
+      "disallowedThreatActions":[
+         "allow",
+         "restore"
+      ],
+      "threatTypeSettingsMergePolicy":"merge",
+      "threatTypeSettings":[
+         {
+            "key":"potentially_unwanted_application",
+            "value":"block"
+         },
+         {
+            "key":"archive_bomb",
+            "value":"audit"
+         }
+      ]
+   },
+   "cloudService":{
+      "enabled":true,
+      "diagnosticLevel":"optional",
+      "automaticSampleSubmissionConsent":"safe",
+      "automaticDefinitionUpdateEnabled":true
+      "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
+   }
+}
+```
+
+> [!NOTE]
+> (*): In Linux (and macOS) we support paths where it starts with a wildcard.
+
+The table below describes some settings, which are recommended as part of mdatp_managed.json file:
+
+|Settings|Comments|
+|---|---|
+|`exclusionsMergePolicy` being set to `admin_only` |Prevents the local admin from being able to add the local exclusions (via bash (the command prompt)).|
+|`disallowedThreatActions` being set to `allow and restore`|Prevents the local admin from being able to restore a quarantined item (via bash (the command prompt)).|
+|`threatTypeSettingsMergePolicy` being set to `admin_only`|Prevents the local admin from being able to add False Positives or True Positives that are benign to the threat types (via bash (the command prompt)).|
+
+- Save the setting as `mdatp_managed.json` file.
+- Copy the setting to this path `/etc/opt/microsoft/mdatp/managed/`. For more information, see [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).
+
+## Significance of CPU utilisation when using scripts generated from a third party ISV
+
+Following are the steps:
+
+- Identify Microsoft Defender for Endpoint for on RHEL linux causing the symptom
+- wdavdaemon (FANotify) plugin
+- wdavdaemon edr (EDR Engine) plugin
+- mdatp_audisp_plugin  
+
+### Identifying Microsoft Defender for Endpoint on RHEL Linux causing the symptom
+
+The following syntaxes helps to identify the root cause of the CPU overhead:
+
+- To get the Microsoft Defender for Endpoint process ID, run `o	sudo top -c`.
+- To get more details of the Microsoft Defender for Endpoint process, run `o	sudo ps ax --no-headings -T -o user,pid,thcount,%cpu,sched,%mem,vsz,rss,tname,stat,start_time,time,ucmd,command |sort -nrk 3|grep`.
+- To identify specific Microsoft Defender for Endpoint thread ID causing the highest CPU utilization within the process, run `o	sudo ps -T -p <PID> >> Thread_with_highest_cpu_usage.log`.
+
+### wdavdaemon (FANotify) plugin
+
+Follow the steps for wdavdaemon (FANotify) plugin:
+
+- Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md).
+- Collect diagnostic data
+- Open a CSS support case with Microsoft. For more information, see [CSS security support case](/mem/get-support).
+
+### wdavdaemon edr (EDR Engine) plugin
+
+Follow the steps for wdavdaemon edr (EDR Engine) plugin:
+
+- Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md).
+- Collect diagnostic data
+- Open a CSS support case with Microsoft. For more information, see [CSS security support case](/mem/get-support).
+
+### mdatp_audisp_plugin  
+
+For troubleshooting high CPU utilization when mdatp_audisp_plugin is the root cause of the overhead, see [Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux](troubleshoot-auditd-performance-issues.md).
+
+- Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md).
+- Collect diagnostic data
+- Open a CSS support case with Microsoft. For more information, see [CSS security support case](/mem/get-support).
+
+
+## Download Microsoft Defender for Endpoint on RHEL onboarding package
 
 For more information, see [download the onboarding package from Microsoft 365 Defender portal](linux-install-with-ansible.md).
     
@@ -216,7 +348,7 @@ For more information, see [download the onboarding package from Microsoft 365 De
 > (*): This download registers Microsoft Defender for Endpoint for Linux to send the data to your Microsoft Defender for Endpoint instance.
 
   
-## Use Ansible to manage MDE on RHEL Linux
+## Use Ansible to manage Microsoft Defender for Endpoint on RHEL Linux
 
 To deploy Microsoft Defender for Endpoint on RHEL Linux using Ansible, see [Deploy Microsoft Defender for Endpoint on Linux with Ansible | Microsoft Docs](../defender-endpoint/linux-install-with-ansible.md#download-the-onboarding-package)
 
@@ -281,7 +413,7 @@ To deploy Microsoft Defender for Endpoint on RHEL Linux using Ansible, see [Depl
       enablerepo: packages-microsoft-[channel] 
 ```
 
-## Verify to communicate with MDE backend
+## Verify to communicate with Microsoft Defender for Endpoint backend
 
 To verify if Microsoft Defender for Endpoint on RHEL Linux can communicate to the cloud with the current network settings, run the following connectivity test from the command line:
 `mdatp connectivity test`
@@ -314,13 +446,13 @@ For more information, see [New device health reporting for Microsoft Defender An
 
 To ensure that the device is correctly onboarded and reported to the service, run the following detection test:
 
-- AV detections:
-- EDR detections:
+- Antivirus detections:
+- Endpoint detection and response (EDR) detections:
   For more information, see Experience Microsoft Defender for Endpoint through simulated attacks.
   If the detection doesn’t show up, then it could be that we're missing event or alerts in portal. For more information, see 
 - For more information about unified submissions in M365D and the ability of submitting **False Positives** and **False Negatives** through the portal, see [Unified submissions in Microsoft 365 Defender now Generally Available! - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770).
 
-## Troubleshoot MDE for Linux installation issues
+## Troubleshoot Microsoft Defender for Endpoint on Linux installation issues
 
 The links below helps to troubleshoot the following RHEL Linux installation issues:
 
@@ -341,7 +473,7 @@ The following links help you with troubleshooting issues:
 
 ## FAQs
 
-**I already have a third party antivirus running on my Linux servers. Can I run MDE for Linux?**<br> 
+**I already have a third party antivirus running on my Linux servers. Can I run Microsoft Defender for Endpoint on RHEL Linux?**<br> 
 It depends. If the third party antivirus runs FANotify, it needs to be uninstalled.
  
 **How can I find out if there is a third party antivirus that is running FANotify?**<br>
@@ -350,7 +482,7 @@ When you run `mdatp` health, then in the conficting_applications row, you'll nee
 **What happens if I don’t uninstall the third party antivirus that uses FANotify**<br>
 You can experience unexpected behaviors such as performance issues, and/or stability issues, for example, systems hanging, and/or kernel panics (akin to a blue screen in Windows).
 
-**What are the processes and paths for MDE for Linux that you should exclude in the third party antivirus?**<br>
+**What are the processes and paths for Microsoft Defender for Endpoint on Linux that you should exclude in the third party antivirus?**<br>
 Running `systemctl status -l mdatp` shows the processes and paths.
 
 The following are the processes to exclude from the third party antivirus: 
