@@ -25,7 +25,7 @@ search.appverid:
 # Investigate and remediate communication compliance alerts
 
 >[!IMPORTANT]
->Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy.
+>Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
 
 After you've configured your [communication compliance policies](/microsoft-365/compliance/communication-compliance-policies), you'll begin receiving alerts in the [Microsoft Purview compliance portal](https://compliance.microsoft.com) for message issues that match your policy conditions. To view and act on alerts, users must be assigned to the following permissions:
 
