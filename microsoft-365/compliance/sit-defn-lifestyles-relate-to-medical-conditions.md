@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -24,6 +25,8 @@ description: "Lifestyles that relate to medical conditions sensitive information
 # Lifestyles that relate to medical conditions
 
 This unbundled named entity detects terms related to lifestyles that might result in a medical condition, such as *smoking*. It supports English terms only. It's also included in the [All medical terms and conditions](sit-defn-all-medical-terms-conditions.md) bundled named entity SIT.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Confidence level
 

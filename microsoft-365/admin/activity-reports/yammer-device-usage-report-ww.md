@@ -2,14 +2,15 @@
 title: "Microsoft 365 admin center Yammer device usage reports"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -60,5 +61,5 @@ The **Yammer device usage** report can be viewed for trends over the last 7 days
 |Android phone  <br/> |Indicates if the user has used Yammer on an Android phone. <br/>|
 |iphone <br/> | Indicates if the user has used Yammer on an iPhone.  <br/> |
 |ipad  <br/> |Indicates if the user has used Yammer on an iPad. <br/>|
-|other  <br/> |Indicates if the user has used Yammer on another device, not listed previously. <br/>|
+|other  <br/> |Indicates if the user has used Yammer on another client, not listed previously. This includes Yammer Embed, SharePoint Web Part, Viva Engage, and select Outlook emails.  <br/>|
 |||

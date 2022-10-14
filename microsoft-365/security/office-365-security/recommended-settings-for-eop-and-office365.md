@@ -14,7 +14,7 @@ search.appverid:
   - MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: What are best practices for Exchange Online Protection (EOP) and Defender for Office 365 security settings? What's the current recommendations for standard protection? What should be used if you want to be more strict? And what extras do you get if you also use Defender for Office 365?
 ms.subservice: mdo
@@ -190,7 +190,7 @@ For more information about this setting, see [Advanced phishing thresholds in an
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|**Phishing email threshold** <br><br> _PhishThresholdLevel_|**1 - Standard** <br><br> `1`|**2 - Aggressive** <br><br> `2`|**3 - More aggressive** <br><br> `3`||
+|**Phishing email threshold** <br><br> _PhishThresholdLevel_|**1 - Standard** <br><br> `1`|**3 - More aggressive** <br><br> `3`|**4 - Most aggressive** <br><br> `4`||
 
 #### Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365
 

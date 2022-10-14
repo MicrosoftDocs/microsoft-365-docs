@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.assetid: 989ba10c-f73f-4efb-ad1b-af3322e5f376
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 description: "In addition to the Office 365 Trust Center that provides Security, Privacy, and Compliance Information for Microsoft 365, you might want to know how Microsoft helps protect secrets you store in its datacenters. We use a technology called Distributed Key Manager (DKM)."
 ---
 
@@ -22,6 +22,8 @@ description: "In addition to the Office 365 Trust Center that provides Security,
 
 This article describes how Microsoft secures your email secrets in its datacenters.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How do we secure secret information provided by you?
 
 In addition to the Office 365 Trust Center that provides [Security, Privacy, and Compliance Information for Office 365](./get-started-with-service-trust-portal.md), you might want to know how Microsoft helps protects secrets you provide in its datacenters. We use a technology called Distributed Key Manager (DKM).

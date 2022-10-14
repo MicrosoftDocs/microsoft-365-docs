@@ -12,6 +12,7 @@ description: Learn how to start with a deployment of Microsoft 365 for frontline
 ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
+  - highpri
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
