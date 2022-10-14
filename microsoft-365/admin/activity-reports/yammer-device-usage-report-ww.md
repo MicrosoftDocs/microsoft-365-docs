@@ -38,11 +38,11 @@ The Yammer device usage reports give you information about which devices your us
 
 You can view the usage in the OneDrive report by choosing the **Device usage** tab.
 
-![Microsoft 365 reports - Microsoft Yammer device usage report.](../../media/e21af4c0-0ad2-4485-8ab1-2f82d7dfa90e.png)
+:::image type="content" source="../../media/e21af4c0-0ad2-4485-8ab1-2f82d7dfa90e.png" alt-text="Microsoft 365 reports - Microsoft Yammer device usage report.":::
 
 Select **Choose columns** to add or remove columns from the report.  
 
-![Yammer device usage report - choose columns.](../../media/fc1fc8db-e197-4878-85c7-7ba0d67b9379.png)
+:::image type="content" source="../../media/fc1fc8db-e197-4878-85c7-7ba0d67b9379.png" alt-text="Yammer device usage report - choose columns.":::
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. 
 
