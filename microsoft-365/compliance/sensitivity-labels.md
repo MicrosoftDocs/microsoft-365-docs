@@ -152,7 +152,7 @@ When you create your sensitivity labels in the Microsoft Purview compliance port
 
 You can apply just one sensitivity label to an item such as a document, email, or container. If you set an option that requires your users to provide a justification for changing a label to a lower classification, the order of this list identifies the lower classifications. However, this option does not apply to sublabels that share the priority of their parent label.
 
-The ordering of sublabels is used with [automatic labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange), though. When you configure sublabels to be applied automatically with auto-labeling policies, multiple matches can result for more than one label. To determine the label to automatically apply for these policies, the label ordering is used: The last sensitive label is selected, and then if applicable, the last sublabel.
+The ordering of sublabels is used with [auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange), though. When you configure more than one auto-labeling policy for the same location, multiple matches can result for more than one label. To determine the label to automatically apply for these policies, the label ordering is used even with sublabels: The last sensitive label is selected, and then if applicable, the last sublabel.
 
 ![Option to create a sublabel.](../media/Sensitivity-label-sublabel-options.png)
 
