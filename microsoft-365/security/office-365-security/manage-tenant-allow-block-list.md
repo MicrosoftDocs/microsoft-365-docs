@@ -84,7 +84,7 @@ The following list describes what happens in the Tenant Allow/Block List when yo
 
   - If the message was blocked for other reasons, an allow entry for the sender is created, and it appears on the **Domains & addresses** tab in the Tenant Allow Block List.
 
-  - If the message was not blocked, and allow entry for the sender is not created, it won't on the **Spoofed senders** tab or the **Domains & addresses** tab.
+  - If the message was not blocked, and an allow entry for the sender is not created, it won't on the **Spoofed senders** tab or the **Domains & addresses** tab.
 
 By default, allow entries for **domains and email addresses**, **files** and **URLs** expire after 30 days, which is also the maximum. Allow entries for **spoofed senders** never expire.
 
