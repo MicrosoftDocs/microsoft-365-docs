@@ -33,8 +33,19 @@ With virtual appointments in Microsoft Teams, you have a complete meeting platfo
 
 This article gives you an overview of the capabilities available in Teams for scheduling and managing virtual appointments.
 
+- [The Virtual appointments app](#the-virtual-appointments-app), for every organization
 - [The Bookings app](#the-bookings-app), for every organization.
 - [The Teams Electronic Health Record (EHR) connector](#teams-electronic-health-record-ehr-connector), for healthcare organizations who use an EHR system.
+
+## The Virtual appointments app
+
+The Virtual appointments app provides a central hub for all your virtual appointment needs. The app brings a cohesive schedule management experience to Teams, integrating virtual appointments from the Bookings app, analytics, and management options, all in one place.
+
+You can view and manage virtual appointments from Bookings, Teams, and Outlook, view reports to gain insight into virtual appointment activity, get real-time status updates in a queue view, send appointment reminders, and configure calendar and staff settings.
+
+To learn more, see:
+
+- [Manage the Virtual appointments app]()
 
 ## The Bookings app
 
@@ -64,6 +75,3 @@ Currently, the Teams EHR connector supports integration with the Cerner EHR syst
 ## Related articles
 
 - [Manage the join experience for Teams virtual appointments on browsers](browser-join.md)
-- [Virtual Visits usage report](virtual-visits-usage-report.md)
-- [Teams EHR connector Virtual Appointments report](ehr-connector-report.md)
-- [Get started with Teams for healthcare organizations](teams-in-hc.md)
