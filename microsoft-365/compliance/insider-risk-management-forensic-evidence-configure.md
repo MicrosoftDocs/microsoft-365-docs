@@ -85,7 +85,7 @@ Forensic evidence policies define the scope of security-related user activity to
 2. Select **Create forensic evidence policy**.
 3. On the **Scope** page, you'll choose the scope of security-related user activity to capture. Select one of the following options:
 
-    - **Specific activities**: This option only captures activities detected by policies that users are included in. These activities are defined by the indicators selected in forensic evidence policies. Captures for this option will be available for review on the **Forensic evidence (preview)** tab on the **Alerts** dashboard.
+    - **Specific activities**: This option only captures activities detected by policies that users are included in. These activities are defined by the indicators selected in forensic evidence policies. Captures for this option will be available for review on the **Forensic evidence (preview)** tab on the **Alerts** or **Cases** dashboard.
     - **All activities**: This option captures any activity performed by users. This includes mouse movement, keystrokes, and all activities defined by insider risk indicators. Captures for this option will be available for review on the **Forensic evidence (preview)** tab on the **User activity reports (preview)** dashboard.
 4. Select **Next**.
 5. On the **Name and description** page, complete the following fields:
