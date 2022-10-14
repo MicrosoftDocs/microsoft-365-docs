@@ -44,7 +44,7 @@ Select **Choose columns** to add or remove columns from the report.
 
 :::image type="content" source="../../media/fc1fc8db-e197-4878-85c7-7ba0d67b9379.png" alt-text="Yammer device usage report - choose columns.":::
 
-You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. 
+You also can export the report data into an Excel .csv file by selecting the Export link. This link exports data of all users and enables you to do simple sorting and filtering for further analysis.
 
 The **Yammer device usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
   
