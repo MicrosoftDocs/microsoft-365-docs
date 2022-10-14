@@ -25,18 +25,18 @@ description: "Get the Yammer device usage report to learn more about which devic
 
 # Microsoft 365 Reports in the admin center - Yammer device usage report
 
-The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
+The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out the [Reports overview topic](activity-reports.md).
   
 The Yammer device usage reports give you information about which devices your users are using Yammer on. You can view the number of daily users by device type, and number of users by device type. You can view both over a selected time period. You can also view details per user.
  
 ## How do I get to the Yammer device usage report?
 
 1. In the admin center, go to the **Reports**, and then select **Usage**. 
-2. From the dashboard homepage, click on the **View more** button on the Yammer card.
+2. From the dashboard homepage, select **View more** on the Yammer card.
   
 ## Interpret the Yammer device usage report
 
-You can view the usage in the OneDrive report by choosing the **Device usage** tab.
+Select the **Device usage** tab to view the usage in the OneDrive report.
 
 :::image type="content" source="../../media/e21af4c0-0ad2-4485-8ab1-2f82d7dfa90e.png" alt-text="Microsoft 365 reports - Microsoft Yammer device usage report.":::
 
@@ -50,14 +50,14 @@ The **Yammer device usage** report can be viewed for trends over the last 7 days
   
 |Metric|Definition|
 |:-----|:-----|
-|Username  <br/> |The email address of the user. You can display the actual email address or make this field anonymous. This grid shows users who logged into Yammer using the Microsoft 365 account or who logged into the network using single sign-on. <br/> |
-|Display name  <br/> |The full name of the user. You can display the actual email address or make this field anonymous.  <br/> |
-|User state  <br/> |One of three values: Active, Deleted, or Suspended. These reports show data for active, suspended, and deleted users. They do not reflect pending users, because pending users cannot post, read, or like a message.   <br/> |
-|State change date (UTC)  <br/> |The date on which the user's state was changed in Yammer.  <br/> |
-|Last activity date (UTC)  <br/> |The last date (UTC) that the user participated in a Yammer activity.  <br/> |
-|Web  <br/> |Indicates if the user has used Yammer on the web.  <br/> |
-|Windows phone  <br/> | Indicates if the user has used Yammer on a Windows phone.  <br/> |
-|Android phone  <br/> |Indicates if the user has used Yammer on an Android phone. <br/>|
-|iphone <br/> | Indicates if the user has used Yammer on an iPhone.  <br/> |
-|ipad  <br/> |Indicates if the user has used Yammer on an iPad. <br/>|
-|other  <br/> |Indicates if the user has used Yammer on another client, not listed previously. This includes Yammer Embed, SharePoint Web Part, Viva Engage, and select Outlook emails.  <br/>|
+|Username  |The email address of the user. You can display the actual email address or make this field anonymous. This grid shows users who logged in to Yammer using the Microsoft 365 account or who logged in to the network using single sign-on.  |
+|Display name |The full name of the user. You can display the actual email address or make this field anonymous. |
+|User state |One of three values: Active, Deleted, or Suspended. These reports show data for active, suspended, and deleted users. They don't reflect pending users, because pending users can't post, read, or like a message.   |
+|State change date (UTC)  |The date on which the user's state was changed in Yammer.  |
+|Last activity date (UTC) |The last date (UTC) that the user participated in a Yammer activity. |
+|Web  |Indicates if the user has used Yammer on the web.   |
+|Windows phone   | Indicates if the user has used Yammer on a Windows phone.  |
+|Android phone  |Indicates if the user has used Yammer on an Android phone. |
+|iPhone  | Indicates if the user has used Yammer on an iPhone.  |
+|iPad   |Indicates if the user has used Yammer on an iPad. |
+|other  |Indicates if the user has used Yammer on another client, not listed previously. This includes Yammer Embed, SharePoint Web Part, Viva Engage, and select Outlook emails.  |
