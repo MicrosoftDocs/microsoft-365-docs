@@ -141,7 +141,7 @@ To remove a custom branding template:
 
    For more information, see [Remove-OMEConfiguration](/powershell/module/exchange/remove-omeconfiguration).
 
-## Create an Exchange mail flow rule that applies your custom branding to encrypted emails sent from your online organization
+## Create an Exchange mail flow rule that applies your custom branding to encrypted emails sent from your online organization to external recipients
 
 > [!IMPORTANT]
 > Third-party applications that scan and modify mail can prevent branding from being applied correctly.
