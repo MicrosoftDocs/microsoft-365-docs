@@ -4,7 +4,8 @@ description: Create your first threat hunting query and learn about common opera
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, language, learn, first query, telemetry, events, telemetry, custom detections, schema, kusto, operators, data types, powershell download, query example
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,10 +17,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-m365-defender
+  - tier1
 ms.topic: article
-ms.technology: m365d
 ---
 
 # Learn the advanced hunting query language
@@ -128,7 +129,7 @@ Select **Run query** to see the results.
 >[!TIP]
 >You can view query results as charts and quickly adjust filters. For guidance, [read about working with query results](advanced-hunting-query-results.md)
 
-Watch this [short video](https://www.youtube.com/watch?v=8qZx7Pp5XgM) to learn how you can use Kusto Query Language to join tables.
+
 
 ## Learn common query operators
 
@@ -138,7 +139,7 @@ You've just run your first query and have a general idea of its components. It's
 |--|--|
 | `where` | Filter a table to the subset of rows that satisfy a predicate. |
 | `summarize` | Produce a table that aggregates the content of the input table. |
-| `join` | Merge the rows of two tables to form a new table by matching values of the specified column(s) from each table. |
+| `join` | Merge the rows of two tables to form a new table by matching values of the specified column(s) from each table. Watch [Joining tables in KQL](https://www.youtube.com/watch?v=8qZx7Pp5XgM) to learn how.|
 | `count` | Return the number of records in the input record set. |
 | `top` | Return the first N records sorted by the specified columns. |
 | `limit` | Return up to the specified number of rows. |

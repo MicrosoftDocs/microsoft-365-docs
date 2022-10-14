@@ -4,7 +4,7 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 audience: admin
 f1.keywords: 
   - NOCSH
@@ -12,8 +12,8 @@ ms.localizationpriority: medium
 MS.collection: 
 search.appverid: MET150
 description: Threat remediation
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Remediate malicious email delivered in Office 365
@@ -31,6 +31,8 @@ Remediation means taking a prescribed action against a threat. Malicious email s
 ## What you need to know before you begin
 
 Admins can take required action on emails, but to get those actions approved, they must have the *Search and Purge* role assigned to them in the **Email & collaboration** permissions in the Microsoft 365 Defender portal. Without the *Search and purge"*role added to one of the role-groups, they won't be able to execute the action.
+
+Because email actions create automated investigations in the backend, you need to enable *Automated Investigation*. Go to **Settings** \> **Endpoints** \> **Advanced features** and turn on **Automated Investigation**.
 
 ## Manual and automated remediation
 

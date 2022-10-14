@@ -12,15 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
-- m365initiative-compliance
 - m365solution-overview
+- highpri
 ---
 
 # Microsoft Purview insider risk solutions
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Insider risks are one of the top concerns of security and compliance professionals in the modern workplace. Industry studies have shown that insider risks are often associated with specific user events or activities. Protecting your organization against these risks can be challenging to identify and difficult to mitigate. Insider risks include vulnerabilities in a variety of areas and can cause major problems for your organization, ranging from the loss of intellectual property to workplace harassment, and more. The following figure outlines common insider risks:
 
@@ -42,6 +41,8 @@ Microsoft 365 risk prevention features are designed and built-in to our insider 
 | ![Workplace harassment/people icon.](../media/ir-risk-workplace-harassment.png)| Workplace harassment | ![Supported](../media/check-mark.png) |  |  |  |
 | ![Security violations icon.](../media/ir-risk-security-violations.png)| Security violations |  | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |
 | ![Regulatory compliance violations icon.](../media/ir-risk-regulatory-compliance-violations.png)| Regulatory compliance violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Insider risk solutions
 
@@ -85,7 +86,7 @@ Information barriers are available in the following subscriptions:
 
 ### Privileged access management
 
-[Microsoft Purview Privileged Access Management](privileged-access-management-overview.md) allows granular access control over privileged Exchange Online admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
+[Microsoft Purview Privileged Access Management](privileged-access-management.md) allows granular access control over privileged Exchange Online admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
 
 Privileged access management is available in the following subscriptions:
 
@@ -125,8 +126,8 @@ Microsoft provides the following resources to help inform and train these users 
 
 | Solution/Area | Resources |
 |:------------------|:--------------|
-| Manage insider risk in Microsoft 365 |[Complete learning path](/learn/paths/m365-compliance-insider) <br> This learning path includes all the individual solution modules for communication compliance, insider risk management, information barriers, and privileged access management. Select this learning path to complete all the modules. |
-| Communication compliance | [Learning module: Prepare communication compliance](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> This module helps you learn the basics on how to identify and remediate code-of-conduct policy violations with communication compliance, cover the prerequisites needed before creating communication compliance policies, and learn about the types of built-in, pre-defined policy templates in communication compliance. |
-| Insider risk management | [Learning module: Insider risk management](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> This module helps you learn how insider risk management can help prevent, detect, and contain internal risks in an organization, learn about the types of built-in, pre-defined policy templates, understand the basic prerequisites needed before creating insider risk policies, and explains the types of actions you can take on insider risk management cases. |
-| Information barriers | [Learning module: Plan for information barriers](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> This module helps you learn how information barrier policies can help your organization maintain compliance with relevant industry standards and regulations, lists the types of situations when information barriers would be applicable, helps explain the process of creating an information barrier policy, and helps explain how to troubleshoot unexpected issues after information barriers are in place. |
-| Privileged access management | [Learning module: Implement privileged access management](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> This module helps you understand the difference between privileged access management and privileged identity management, understand the privileged access management process flow, and understand the basics of how to configure and enable privileged access management. |
+| Manage insider risk in Microsoft 365 |[Complete learning path](/training/paths/m365-compliance-insider) <br> This learning path includes all the individual solution modules for communication compliance, insider risk management, information barriers, and privileged access management. Select this learning path to complete all the modules. |
+| Communication compliance | [Learning module: Prepare communication compliance](/training/modules/m365-compliance-insider-prepare-communication-compliance) <br> This module helps you learn the basics on how to identify and remediate code-of-conduct policy violations with communication compliance, cover the prerequisites needed before creating communication compliance policies, and learn about the types of built-in, pre-defined policy templates in communication compliance. |
+| Insider risk management | [Learning module: Insider risk management](/training/modules/m365-compliance-insider-manage-insider-risk) <br> This module helps you learn how insider risk management can help prevent, detect, and contain internal risks in an organization, learn about the types of built-in, pre-defined policy templates, understand the basic prerequisites needed before creating insider risk policies, and explains the types of actions you can take on insider risk management cases. |
+| Information barriers | [Learning module: Plan for information barriers](/training/modules/m365-compliance-insider-plan-information-barriers) <br> This module helps you learn how information barrier policies can help your organization maintain compliance with relevant industry standards and regulations, lists the types of situations when information barriers would be applicable, helps explain the process of creating an information barrier policy, and helps explain how to troubleshoot unexpected issues after information barriers are in place. |
+| Privileged access management | [Learning module: Implement privileged access management](/training/modules/m365-compliance-insider-implement-privileged-access-management) <br> This module helps you understand the difference between privileged access management and privileged identity management, understand the privileged access management process flow, and understand the basics of how to configure and enable privileged access management. |

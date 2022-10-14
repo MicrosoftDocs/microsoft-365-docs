@@ -16,12 +16,12 @@ search.appverid:
   - MET150
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about end-user spam notifications for quarantined messages in Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Use quarantine notifications to release and report quarantined messages
@@ -48,7 +48,9 @@ For shared mailboxes, quarantine notifications are supported only for users who 
 > [!NOTE]
 > By default, messages that are quarantined as high confidence phishing, malware, by mail flow rules (also known as transport rules), or Safe Attachments policies in Defender for Office 365 are only available to admins (by default, the AdminOnlyAccessPolicy quarantine policy is used). For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md).
 >
-> Currently, quarantine notifications are not supported for groups.
+> Quarantine notifications for messages sent to distribution groups or mail-enabled security groups are sent to all group members.
+>
+> Quarantine notifications for messages sent to Microsoft 365 Groups are sent to all group members only if the **Send copies of group conversations and events to group members** setting is turned on.
 
 When you receive a quarantine notification, the following information is always available for each quarantined message:
 

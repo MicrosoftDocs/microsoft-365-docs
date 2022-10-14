@@ -7,13 +7,16 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -55,9 +58,7 @@ To manage iOS devices like iPad and iPhones, you need to create an APNs certific
 
 1. Sign in to Microsoft 365 with your global admin account.
 
-2. In your browser type: [https://protection.office.com](https://protection.office.com/).
-
-3. Select **Data loss prevention** > **Device management**, and choose **APNs Certificate for iOS devices**.
+2. Go to the [Microsoft 365 admin center](https://portal.office.com/adminportal/home?#/MifoDevices), and choose **APNs Certificate for iOS**.
 
 4. On the Apple Push Notification Certificate Settings page, choose **Next**.
 
@@ -102,7 +103,7 @@ The next step is to create and deploy device security policies to help protect y
 
 3. Go to **Device policies**.
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Basic Security and Mobility policy settings.":::
+   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="Basic Security and Mobility policy settings.":::
 
 4. Create and deploy device security policies appropriate for your organization following the steps in [Create device security policies in Basic Mobility and Security](create-device-security-policies.md).
 

@@ -11,19 +11,18 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn about retention policies that apply to Yammer."
+description: "Learn about Microsoft 365 retention policies that apply to Yammer so you can manage automatic retention or deletion of Yammer messages for your organization."
 ---
 
 # Learn about retention for Yammer
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Yammer.
 
@@ -33,12 +32,16 @@ For other workloads, see:
 - [Learn about retention for Microsoft Teams](retention-policies-teams.md)
 - [Learn about retention for Exchange](retention-policies-exchange.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## What's included for retention and deletion
 
 Yammer user messages and community messages can be deleted by using retention policies for Yammer, and in addition to the text in these messages, the following items can be retained for compliance reasons: Hypertext links and links to other Yammer messages.
 
 > [!NOTE]
 > As explained in the following section, user messages include private messages for an individual user, and any community messages associated with that user.
+> 
+> User messages also include [storyline posts](https://support.microsoft.com/office/overview-of-storyline-for-yammer-and-viva-engage-530e4e66-9f1c-4be1-b371-08ea40dc4b69), which are supported by retention policies.
 
 User messages include all the names of the people in the conversation, and community messages include the community name and the message title (if supplied).
 

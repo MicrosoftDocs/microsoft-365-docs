@@ -7,10 +7,14 @@
         href: mdb-overview.md
       - name: Simplified configuration
         href: mdb-simplified-configuration.md
-      - name: Trial playbook - Defender for Business
+      - name: Trial user guide - Defender for Business
         href: trial-playbook-defender-business.md
       - name: Compare plans for small and medium-sized businesses
         href: compare-mdb-m365-plans.md
+      - name: Preview features
+        href: mdb-preview.md
+      - name: Resources for partners
+        href: mdb-partners.md
       - name: Integration with Microsoft 365 Lighthouse
         href: mdb-lighthouse-integration.md
     - name: Get started
@@ -73,6 +77,10 @@
         href: mdb-offboard-devices.md
     - name: Reference information
       items: 
+      - name: How to get Microsoft Defender for Business servers (preview)
+        href: get-defender-business-servers.md
+      - name: Glossary of security terms
+        href: ../../business-premium/m365bp-glossary.yml?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
       - name: How to get help or contact support
         href: mdb-get-help.md
       - name: Frequently asked questions

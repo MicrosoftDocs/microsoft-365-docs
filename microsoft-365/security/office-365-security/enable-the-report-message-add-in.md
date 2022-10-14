@@ -14,10 +14,10 @@ search.appverid:
   - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 description: Learn how to enable the Report Message or the Report Phishing add-ins for Outlook and Outlook on the web, for individual users, or for your entire organization.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Enable the Report Message or the Report Phishing add-ins
@@ -55,7 +55,7 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
   - Outlook included with Microsoft 365 apps for Enterprise
   - Outlook app for iOS and Android
 
-- Both add-ins are not available for shared mailboxes.
+- Both add-ins are not available for shared, group, or delegated mailboxes (the add-ins will be greyed out).
 
 - Both add-ins are not available for on-premises Exchange mailboxes.
 
@@ -68,6 +68,9 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 - For more information on how to report a message using the Report Message feature, see [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
 
 - Organizations that have a URL filtering or security solution (such as a proxy and/or firewall) in place, must have ipagave.azurewebsites.net and outlook.office.com endpoints allowed to be reached on HTTPS protocol.
+
+> [!IMPORTANT]
+> To view messages reported to Microsoft on the **User reported messages** tab at <https://security.microsoft.com/reportsubmission>, don't turn off the built-in reporting experience.
 
 ## Get the Report Message add-in
 
@@ -198,3 +201,24 @@ After the add-in is installed and enabled, you'll see the following icons:
     > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="The Report Phishing flyout." lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
 
 3. To remove the add-in, select **Remove app** under **Actions** in the same flyout.
+
+## Get the Report Message or the Report Phishing add-ins for the GCC and GCCH users
+
+If you're a Government Community Cloud High (GCCH) or a Government Community Cloud (GCC) admin, use the following steps to get the Report Message or the Report Phishing add-ins for your organization. Note that if you're an individual user, you can't get the add-in using Microsoft AppSource.
+
+> [!NOTE]
+> It could take up to 24 hours for the add-in to appear in your organization. 
+
+1. In the Microsoft 365 admin center, go to **Settings** \> **Add-ins**, and select **Deploy Add-In**. 
+
+2. The **Deploy a new add-in** flyout opens. Click **Next**, and then select **Upload custom apps**.  
+
+3. Select **I have a URL for the manifest file**. Use the following URLs to get the [Report Message](https://ipagave.azurewebsites.net/ReportMessageManifest/ReportMessageAzure.xml) and the [Report Phishing](https://ipagave.azurewebsites.net/ReportMessageManifest/ReportPhishingAzure.xml) add-ins. 
+
+4. Choose which users will have access to the add-in and select a deployment method, and then select **Deploy**. 
+
+5. To fully configure the settings, see [User reported message settings](user-submission.md). 
+
+## Use the Report Message or the Report Phishing add-ins
+
+You can use the Report Message or the Report Phishing add-ins to submit false positives (good email that was blocked or sent to junk folder) and false negatives (unwanted email or phish that was delivered to the inbox) in Outlook. For more information, see [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).

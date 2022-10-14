@@ -1,21 +1,22 @@
 ---
-title: Payloads for Attack simulation training
+title: Payloads in Attack simulation training
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
 description: Admins can learn how to create and manage payloads for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
-ms.technology: mdo
+ms.subservice: mdo
+search.appverid: met150
 ---
 
-# Payloads for Attack simulation training in Defender for Office 365
+# Payloads in Attack simulation training in Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -47,6 +48,7 @@ The following information is shown for each payload:
   - **Link in attachment**
   - **Link to malware**
   - **Drive-by URL**
+  - **OAuth consent grant**
 - **Status**: The value is **Ready** or **Draft**. On the **Global payloads** tab, the value is always **Ready**.
 
 To find a payload in the list, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find the name of the payload.
@@ -97,7 +99,7 @@ When you select a payload from the list, a details flyout appears with the follo
    ![Create a payload on the Tenant payloads tab in Payloads in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-payload-create.png)
 
    > [!NOTE]
-   > ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload** is also available on the **Select payload** page of the simulation creation wizard. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training.md).
+   > ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload** is also available on the **Select payload and login page** step of the simulation creation wizard. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training.md#select-a-payload-and-login-page).
    >
    > At any point during the creation wizard, you can click **Save and close** to save your progress and continue configuring the payload later. You can pick up where you left off by selecting the notification on the **Tenant payloads** tab in **Payloads**, and then clicking ![Edit payload icon.](../../media/m365-cc-sc-edit-icon.png) **Edit payload**. The partially-completed payload will have the **Status** value **Draft**.
 
@@ -112,6 +114,7 @@ When you select a payload from the list, a details flyout appears with the follo
    - **Link in attachment**
    - **Link to malware**
    - **Drive-by URL**
+   - **OAuth Consent Grant**
 
    For more information, see [Simulate a phishing attack with Attack simulation training in Defender for Office 365](attack-simulation-training.md).
 
@@ -131,6 +134,7 @@ When you select a payload from the list, a details flyout appears with the follo
      - **Use first name as display name**: By default, this setting is not selected.
      - **From email**: If you choose an internal email address for your payload's sender, the payload will appear to come from a fellow employee. This sender email address will increase a user's susceptibility to the payload, and will help educate employees on the risk of internal threats.
      - **Email subject**
+     - **Add External tag to email**: By default, this setting is not selected.
 
    - **Attachment details** section: This section is available only if you selected **Malware attachment**, **Link in attachment**, or **Link to malware** on the **Select technique** page. Configure the following settings:
      - **Name your attachment**
@@ -140,9 +144,9 @@ When you select a payload from the list, a details flyout appears with the follo
 
      Later, you'll embed the URL in the body of the message.
 
-   - **Phishing link** section: This section is available only if you selected **Credential harvest**, **Link in attachment**, or **Drive-by URL** on the **Select technique** page.
+   - **Phishing link** section: This section is available only if you selected **Credential harvest**, **Link in attachment**, **Drive-by URL**, or **OAuth Consent Grant** on the **Select technique** page.
 
-     For **Credential harvest** or **Drive-by URL**, the name of the box is **Select a URL you want to be your phishing link**. Later, you'll embed the URL in the body of the message.
+     For **Credential harvest**, **Drive-by URL**, or **OAuth Consent Grant**, the name of the box is **Select a URL you want to be your phishing link**. Later, you'll embed the URL in the body of the message.
 
      For **Link in attachment**, the name of the box is **Select a URL in this attachment that you want to be your phishing link**. Later, you'll embed the URL in the attachment.
 
@@ -218,7 +222,7 @@ When you select a payload from the list, a details flyout appears with the follo
 
          :::image type="content" source="../../media/attack-sim-training-payloads-configure-payload-email-message.png" alt-text="The Email message section on the Configure payload page in the payload creation wizard in Attack simulation training in Microsoft Defender for Office 365" lightbox="../../media/attack-sim-training-payloads-configure-payload-email-message.png":::
 
-       - **Phishing link** control: This control is available only if you selected **Credential harvest**, **Link in attachment**, or **Drive-by URL** on the **Select technique** page. Use this control to name and insert the URL that you previously selected in the **Phishing link** section.
+       - **Phishing link** control: This control is available only if you selected **Credential harvest**, **Link in attachment**, **Drive-by URL**, or **OAuth Consent Grant** on the **Select technique** page. Use this control to name and insert the URL that you previously selected in the **Phishing link** section.
 
        - **Malware attachment link** control: This control is available only if you selected **Link to malware** on the **Select technique** page. Use this control to name and insert the URL that you previously selected in the **Link for attachment** section.
 
@@ -228,11 +232,11 @@ When you select a payload from the list, a details flyout appears with the follo
 
      - On the **Code** tab, you can view and modify the HTML code directly. Formatting and other controls like **Dynamic tag** and **Phishing link** or **Malware attachment link** aren't available.
 
-     - The **Replace all links in the email message with the phishing link** toggle is available only if you selected **Credential harvest**, **Link to malware**, or **Drive-by URL** on the **Select technique** page. This toggle can save time by replacing all links in the message with the previously selected **Phishing link** or **Link for attachment** URL. To do this, toggle the setting to on ![Toggle on icon.](../../media/scc-toggle-on.png).
+     - The **Replace all links in the email message with the phishing link** toggle is available only if you selected **Credential harvest**, **Link to malware**, **Drive-by URL**, or **OAuth Consent Grant** on the **Select technique** page. This toggle can save time by replacing all links in the message with the previously selected **Phishing link** or **Link for attachment** URL. To do this, toggle the setting to on ![Toggle on icon.](../../media/scc-toggle-on.png).
 
    When you're finished, click **Next**.
 
-6. The **Add indicators** page is available only if you selected **Credential harvest**, **Link in attachment**, or **Drive-by URL** on the **Select technique** page.
+6. The **Add indicators** page is available only if you selected **Credential harvest**, **Link in attachment**, **Drive-by URL**, or **OAuth Consent Grant** on the **Select technique** page.
 
    Indicators help employees identify the tell-tale signs of phishing messages.
 
@@ -246,7 +250,7 @@ When you select a payload from the list, a details flyout appears with the follo
      |---|---|
      |**Attachment type**|Message body|
      |**Distracting detail**|Message body|
-     |**Domain spoofing**|Message body <p> From email address|
+     |**Domain spoofing**|Message body <br/><br/> From email address|
      |**Generic greeting**|Message body|
      |**Humanitarian appeals**|Message body|
      |**Inconsistency**|Message body|
@@ -258,11 +262,11 @@ When you select a payload from the list, a details flyout appears with the follo
      |**No/minimal branding**|Message body|
      |**Poses as friend, colleague, supervisor, or authority figure**|Message body|
      |**Request for sensitive information**|Message body|
-     |**Security indicators and icons**|Message body <p> Message subject|
-     |**Sender display name and email address**|From name <p> From email address|
-     |**Sense of urgency**|Message body <p> Message subject|
-     |**Spelling and grammar irregularities**|Message body <p> Message subject|
-     |**Threatening language**|Message body <p> Message subject|
+     |**Security indicators and icons**|Message body <br/><br/> Message subject|
+     |**Sender display name and email address**|From name <br/><br/> From email address|
+     |**Sense of urgency**|Message body <br/><br/> Message subject|
+     |**Spelling and grammar irregularities**|Message body <br/><br/> Message subject|
+     |**Threatening language**|Message body <br/><br/> Message subject|
      |**Too good to be true offers**|Message body|
      |**Unprofessional looking design or formatting**|Message body|
      |**URL hyperlinking**|Message body|

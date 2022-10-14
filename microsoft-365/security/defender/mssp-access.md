@@ -2,7 +2,8 @@
 title: Provide managed security service provider (MSSP) access
 description: Learn about changes from the Microsoft Defender Security Center to the Microsoft 365 Defender portal
 keywords: Getting started with the Microsoft 365 Defender portal, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, single pane of glass, converged portal, security portal, defender security portal
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -16,7 +17,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.collection: 
-- M365-security-compliance 
+- m365-security
+- tier2 
 ---
 
 # Provide managed security service provider (MSSP) access 
@@ -123,6 +125,3 @@ To implement a multi-tenant delegated access solution, take the following steps:
      At this point, analyst access has been provisioned, and each analyst should be able to access the customer's Microsoft 365 Defender portal:
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` with the permissions and roles they were assigned.
-
-> [!IMPORTANT]
-> Delegated access to Microsoft Defender for Endpoint in the Microsoft 365 Defender portal currently allows access to a single tenant per browser window.

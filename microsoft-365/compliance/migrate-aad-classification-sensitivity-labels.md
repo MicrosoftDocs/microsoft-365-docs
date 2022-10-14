@@ -14,8 +14,6 @@ description: "This article discusses classic Azure Active Directory classificati
 
 # Azure Active Directory classification and sensitivity labels for Microsoft 365 groups
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 This article discusses classic Azure Active Directory classification and sensitivity labels.
 
 Sensitivity labels are supported by [these services](./sensitivity-labels-teams-groups-sites.md).
@@ -25,6 +23,8 @@ For complete info about sensitivity labels, see [Learn about sensitivity labels]
 To learn more about sensitivity labels and their behavior for sites and Microsoft 365 groups, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md).
 
 See the following scenarios for best practices when migrating from classic AAD classification to the sensitivity labels.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Scenario 1: Tenant never used classic AAD classifications or sensitivity labels for documents and emails
 

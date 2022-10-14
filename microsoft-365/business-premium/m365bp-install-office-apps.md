@@ -2,23 +2,22 @@
 title: "Install Office apps on all devices in Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: conceptual
-ms.service: o365-administration
+ms.topic: how-to
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -38,18 +37,17 @@ For all members of the organization, the Microsoft Office apps can be found on t
 
 Have them perform the following:
 
-1. Go to office.com. You might need to sign in with your work account.
+1. Go to [https://office.com](https://office.com), and sign in using your work account.
 2. Select  **Install Office**  >  **Microsoft 365 apps**  >  **Run** , and then select  **Yes**.
-3. The Office apps are installed. The process may take several minutes. When it completes, select  **Close**.
-4. To install Microsoft Teams, go to the office.com page, and choose  **Teams**.
+3. The Office apps are installed. The process might take several minutes. When it completes, select  **Close**.
+4. To install Microsoft Teams, go to the [office.com page](https://office.com), and then choose  **Teams**.
 5. Get the Windows app, and then select  **Run**. Teams displays a prompt when installation is complete.
-
 
 ## Set up mobile devices for Microsoft 365 Business Premium users
 
 Use the following instructions to install Office on an iPhone or an Android phone. After you follow these steps, your work files created in Office apps will be protected by Microsoft 365 for business.
 
-The example is for Outlook, but applies tp any other Office apps you want to install.
+The example is for Outlook, but applies to any other Office apps you want to install.
 
 ## [iPhone](#tab/iPhone)
   

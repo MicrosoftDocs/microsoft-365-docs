@@ -1,14 +1,15 @@
 ---
-title: "Managing Office 365 endpoints"
+title: Managing Office 365 endpoints
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 05/18/2022
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 f1.keywords:
@@ -222,7 +223,7 @@ Office 365 doesn't provide IP addresses of all required network endpoints. Some 
   
 [Microsoft Public IP Space](https://www.microsoft.com/download/details.aspx?id=53602)
   
-[Network infrastructure requirements for Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
+[Network infrastructure requirements for Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)
   
 [ExpressRoute and Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/)
   

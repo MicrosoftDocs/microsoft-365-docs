@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: "Instructions for entering service offerings information, including service name, description, location, duration, and pricing. You can also tag the employees who are qualified to provide the service."
 ---
@@ -17,7 +19,11 @@ When you define your service offerings in Microsoft Bookings, you set a service 
 
 You can also add customized information and URLs to the email confirmation and reminders that you send when someone books a service through your booking page.
 
-## Create the service details
+## Watch: Create a new service
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuKXH]
+
+## Steps
 
 1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 

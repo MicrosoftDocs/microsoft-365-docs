@@ -1,38 +1,41 @@
 ---
 title: "Collect eDiscovery diagnostic information"
+description: "Learn about how to collect eDiscovery diagnostic information for a Microsoft Support case."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-description: "Learn about how to collect eDiscovery diagnostic information for a Microsoft Support case."
 ---
 
 # Collect eDiscovery diagnostic information
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Occasionally Microsoft Support engineers require specific information about your issue when you open a support case related to Microsoft Purview eDiscovery (Standard) or Microsoft Purview eDiscovery (Premium). This article provides guidance on how to collect diagnostic information to help support engineers investigate and resolve issues. Typically, you don't need to collect this information until asked to do so by a Microsoft Support engineer.
 
 > [!IMPORTANT]
 > The output from the cmdlets and diagnostic information described in this article may include sensitive information about litigation or internal investigations in your organization. Before sending the raw diagnostic information to Microsoft Support, you should review the information and redact any sensitive information (such as names or other information about parties to litigation or investigation) by replacing it with `XXXXXXX`. Using this method will also indicate to the Microsoft Support engineer that information was redacted.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Collect diagnostic information for eDiscovery (Standard)
 
-Collecting diagnostic information for eDiscovery (Standard) is cmdlet-based, so you'll have to use Security & Compliance Center PowerShell. The following PowerShell examples will run cmdlets and then save the output to a specified text file. In most support cases, you should only have to run one of these commands.
+Collecting diagnostic information for eDiscovery (Standard) is cmdlet-based, so you'll have to use Security & Compliance PowerShell. The following PowerShell examples will run cmdlets and then save the output to a specified text file. In most support cases, you should only have to run one of these commands.
 
-To run the following cmdlets, [connect to Security & Compliance Center PowerShell</span>](/powershell/exchange/connect-to-scc-powershell). After you're connected, run one or more of the following commands and be sure to replace placeholders with the actual object names.
+To run the following cmdlets, [connect to Security & Compliance PowerShell</span>](/powershell/exchange/connect-to-scc-powershell). After you're connected, run one or more of the following commands and be sure to replace placeholders with the actual object names.
 
 After reviewing the generated text file and redacting sensitive information, send it to the Microsoft Support engineer working on your case.
 

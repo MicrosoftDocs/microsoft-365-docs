@@ -3,14 +3,16 @@ title: "Network connectivity in the Microsoft 365 Admin Center"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/06/2021
+ms.date: 06/15/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
+ms.reviewer: pandrew1
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
@@ -29,8 +31,8 @@ The Microsoft 365 Admin Center now includes aggregated network connectivity metr
 > [!div class="mx-imgBorder"]
 > ![Network performance page.](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
->[!NOTE]
->Network connectivity in the Admin Center supports tenants in WW Commercial and Germany but not GCC Moderate, GCC High, DoD or China.
+> [!NOTE]
+> Network connectivity in the Admin Center supports tenants in WW Commercial and Germany but not GCC Moderate, GCC High, DoD or China.
 
 When you first navigate to the network performance page, you'll have to configure your locations in order to see the map of global network performance, a network assessment scoped to the entire tenant, percentage of your users working remotely vs onsite, and a list of current issues to take action on and/or to research further. From the overview pane, you can drill down to view specific network performance metrics and issues by location. For more information, see [Network performance overview in the Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
@@ -42,19 +44,22 @@ To get started, turn on your location opt-in setting to automatically collect da
 
 ### 1. Enable Windows Location Services
 
-For this option, you must have at least two computers running at each office location that support the pre-requisites. OneDrive for Windows version must be up-to-date and installed on each computer. For more information on OneDrive versions, see the [OneDrive release notes](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Network measurements are planned to be added to other Office 365 client applications soon.
+For this option, you must have at least two computers running at each office location that support the pre-requisites. OneDrive for Windows version must be up-to-date and installed on each computer. Network tests are only run no more than once a day at a random time. Network measurements are planned to be added to other Office 365 client applications soon.
 
 Windows Location Service must be consented on the machines. You can test this by running the **Maps** app and locating yourself. It can be enabled on a single machine with **Settings | Privacy | Location** where the setting _Allow apps to access your location_ must be enabled. Windows Location Services consent can be deployed to PCs using MDM or Group Policy with the setting _LetAppsAccessLocation_.
 
-You don't need to add locations in the Admin Center with this method as they're automatically identified at the city resolution. Multiple office locations within the same city won't be shown when using Windows Location Services. Location information is rounded to the nearest 300 meters by 300 meters so that more precise location information isn't accessed.
+You don't need to add locations in the Admin Center with this method as they're automatically identified at the city resolution. Multiple office locations within the same city won't be shown when using Windows Location Services. Location information is rounded to the nearest 300 meters by 300 meters so that more precise location information isn't accessed. Use of Windows Location Services for network measurements is off by default for customers. You must enable it in the Network Connectivity Settings Location flyout.
+
+   > [!div class="mx-imgBorder"]
+   > ![Enable location](../media/m365-mac-perf/m365-mac-perf-location-enable.png)
 
 The machines should have Wi-Fi networking rather than an ethernet cable. Machines with an ethernet cable don't have accurate location information.
 
-Measurement samples and office locations should start to appear 24 hours after these pre-requisites have been met.
+Measurement samples and office locations should start to appear 24 hours after these pre-requisites have been met. Office locations discovered from Windows Location Services are aggregated per City and are retained in your view for 90 days after samples are no longer received. If you choose to switch to office locations added by the Administrator with LAN subnet information you can disable Windows Location Services and hide all of the discovered locations. They will be removed after the 90 day period.
 
 ### 2. Add locations and provide LAN subnet information
 
-For this option, neither Windows Location Services nor Wi-Fi is required. Your OneDrive for Windows version must be up-to-date and installed on at least one computer at the location.
+For this option, neither Windows Location Services nor Wi-Fi is required. Your OneDrive for Windows version must be up-to-date and installed on at least one computer at the location and you must know your LAN subnet information for each of your offices. This option allows multiple office locations per city and you can name your office locations. You can also upload them from other sources.
 
 Make sure that you also add locations in the **locations page** or import those from a CSV file. The locations added must include your office LAN subnet information. In the dialog for adding or editing a location, you can specify a number of LAN subnets and a number of public egress IP subnets. The LAN subnets are required and one of them must match the LAN subnet attribute on a received network assessment for results to show up. Super nets aren't supported so the LAN subnet must match exactly.
 
@@ -70,7 +75,7 @@ All test measurements from client machines include the LAN subnet information, w
 
 For this option, you need to identify a person at each location. Ask them to browse to [Microsoft 365 network connectivity test](https://connectivity.office.com) on a Windows machine on which they have administrative permissions. On the web site, they need to sign in to their Office 365 account for the same organization that you want to see the results. Then they should click **Run test**. During the test there's a downloaded Connectivity test EXE. They need to open and execute that. Once the tests are completed, the test result is uploaded to the Admin Center.
 
-Test reports are linked to a location if it was added with LAN subnet information, otherwise they are shown at the city location only.
+Test reports are linked to a location if it was added with LAN subnet information, otherwise they are shown at the discovered City location only.
 
 Measurement samples and office locations should start to appear 2-3 minutes after a test report is completed. For more information, see [Microsoft 365 network connectivity test](office-365-network-mac-perf-onboarding-tool.md).
 
@@ -121,7 +126,7 @@ You can view a table view of the locations where they can be filtered, sorted, a
 
 ## Remote worker assessment and user connection metrics
 
-We classify network traffic logs as remote or onsite users and show their percentages in the user connection metrics section of the overview pane. For cities where you have remote users, you'll find the location specific remote network assessment score when you open that location’s page. The locations list will have both office locations and remote worker cities, which can be filtered and sorted. We provide the remote worker assessment score, with points breakdown for Exchange, SharePoint and Teams.
+We classify network traffic logs as remote or onsite users and show their percentages in the user connection metrics section of the overview pane. For cities where you have remote users, you'll find the location specific remote network assessment score when you open that location's page. The locations list will have both office locations and remote worker cities, which can be filtered and sorted. We provide the remote worker assessment score, with points breakdown for Exchange, SharePoint and Teams.
 
 Home user networking insights are aggregated and reported at a city level and limited to cities with a minimum of 5 remote employees. We are not identifying individual employees working from home.
 
@@ -197,14 +202,46 @@ In the CSV file, a discovered city location shows in the userEntered column as b
    > [!div class="mx-imgBorder"]
    > ![CSV import ready message.](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
+## CQD TSV Import for LAN subnet office locations
+
+If you've uploaded building data to your Call Quality Dashboard, you can add those locations here to start assessing their network connectivity. This won't affect your existing locations.
+
+[Go to Tenant Data Upload](https://cqd.teams.microsoft.com/spd/#/TenantDataUpload) in Call Quality Dashboard. If you've uploaded your building data, you'll see an option to download it to a .tsv file. Download the .tsv file from Call Quality Dashboard, then upload it in the CQD flyout following the steps below. If you want to create the .tsv file manually, please align the schema with that in Upload building data file, or try the CSV Import for LAN subnet office locations instead.
+
+1. In the main Connectivity to Microsoft 365 window, click the **Locations** tab.
+
+2. Click the **Manage multiple locations** button just above the locations list.
+
+   > [!div class="mx-imgBorder"]
+   > ![Manage multiple locations menu.](../media/m365-mac-perf/m365-mac-perf-import-cqd-manage-multiple.png)
+
+3. Click the **Add locations from Call Quality Dashboard**, the **Add locations from Call Quality Dashboard** flyout will appear.
+
+   > [!div class="mx-imgBorder"]
+   > ![Add locations from Call Quality Dashboard flyout.](../media/m365-mac-perf/m365-mac-perf-import-cqd-add-locations.png)
+
+4. Click the **Browse** button next to the **Select a .tsv file to upload** field and select the saved TSV file. Please make sure the value in the file is tab separated.
+
+5. The file will be automatically validated and parsed to the list of office locations. If there are validation errors, the **We couldn't upload your file** flyout appears to list the errors.
+
+   > [!div class="mx-imgBorder"]
+   > ![We couldnt upload your file flyout.](../media/m365-mac-perf/m365-mac-perf-import-cqd-couldnt-upload.png)
+
+6. If there are no errors in the file, you will see the message: _Your file test.tsv is uploaded and ready. Select Import to upload your information._
+
+   > [!div class="mx-imgBorder"]
+   > ![Select a .tsc file to upload.](../media/m365-mac-perf/m365-mac-perf-import-cqd-select-tsv.png)
+
+7. Click **Upload** button at the bottom of the panel to upload the office locations.
+
 ## FAQ
 
 ### What is a Microsoft 365 service front door?
 
 The Microsoft 365 service front door is an entry point on Microsoft's global network where Office clients and services terminate their network connection. For an optimal network connection to Microsoft 365, it is recommended that your network connection is terminated into the closest Microsoft 365 front door.
 
->[!NOTE]
->Microsoft 365 service front door has no direct relationship to the Azure Front Door Service product available in the Azure marketplace.
+> [!NOTE]
+> Microsoft 365 service front door has no direct relationship to the Azure Front Door Service product available in the Azure marketplace.
 
 ### What is an optimal Microsoft 365 service front door?
 

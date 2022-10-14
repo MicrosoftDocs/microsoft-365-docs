@@ -6,19 +6,19 @@ ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: "Learn how to use PowerShell to request processing by a SharePoint Syntex document understanding model."
+description: Learn how to use PowerShell to request processing by a Microsoft Syntex document understanding model.
 ---
 
 # Use PowerShell to request processing by a document understanding model
 
 > [!IMPORTANT]
-> The SharePoint Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
+> The Microsoft Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
 
 Document understanding models will process newly uploaded files to a library. It is also possible to manually request processing in the UI. However there might be scenarios where it is more efficient to trigger processing through PowerShell.
 

@@ -2,12 +2,16 @@
   items: 
     - name: Overview
       href: index.md
-    - name: How Microsoft 365 helps your business
+    - name: Productivity and security 
       href: m365bp-secure-users.md
+    - name: Trial user guide - Microsoft 365 Business Premium
+      href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: Get Microsoft 365 Business Premium
       href: get-microsoft-365-business-premium.md
     - name: Get Microsoft 365 for Campaigns
       href: get-microsoft-365-campaigns.md
+    - name: Resources for partners
+      href: ../security/defender-business/mdb-partners.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Fortify your environment
   items: 
   - name: Sign in and set up
@@ -16,22 +20,16 @@
         href: m365bp-setup-overview.md
       - name: Set up Microsoft 365 Business Premium
         href: m365bp-setup.md
-      - name: Set up Microsoft 365 for Campaigns
-        items:
-          - name: Sign up
-            href: m365-campaigns-sign-up.md
-          - name: Sign in
-            href: m365-campaigns-sign-in.md
-          - name: Customize sign-in page
-            href: m365-customize-sign-in.md
+      - name: Set up Microsoft 365 Business for Campaigns
+        href: m365-campaigns-setup.md
   - name: Bump up security protection
     items: 
       - name: Overview
         href: m365bp-security-overview.md
-      - name: Protect admin accounts
-        href: m365bp-protect-admin-accounts.md
-      - name: Turn on security defaults
+      - name: Turn on security defaults (MFA)
         href: m365bp-conditional-access.md
+      - name: Protect your admin accounts
+        href: m365bp-protect-admin-accounts.md
       - name: Protect against malware and other threats
         href: m365bp-increase-protection.md
 - name: Train your team
@@ -51,7 +49,7 @@
       - name: Overview
         href: m365bp-protect-email-overview.md
       - name: Protect against phishing and other attacks
-        href: avoid-phishing-and-attacks.md
+        href: m365bp-avoid-phishing-and-attacks.md
       - name: Send encrypted email
         href: send-encrypted-email.md
   - name: Collaborate and share securely
@@ -72,20 +70,16 @@
     items:
       - name: Overview
         href: m365bp-protect-devices.md
-      - name: Set up managed devices
-        href: m365bp-managed-devices-setup.md
+      - name: Upgrade to Windows 10 Pro (if needed)
+        href: m365bp-upgrade-windows-10-pro.md    
       - name: Onboard enrolled devices and apply policies
         href: m365bp-onboard-devices-mdb.md
-      - name: Protect Windows devices
-        items: 
-          - name: Protection settings for Windows devices
-            href: m365bp-protection-settings-for-windows-10-devices.md
-          - name: Secure Windows devices
-            href: m365bp-secure-windows-devices.md
-          - name: Manage Windows devices
-            href: m365bp-manage-windows-devices.md
-          - name: Prepare for Office client deployment
-            href: m365bp-prepare-for-office-client-deployment.md
+      - name: Use Windows Autopilot to set up or reset devices
+        href: /mem/autopilot/windows-autopilot?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      - name: Install Microsoft 365 Apps on devices
+        href: ../admin/setup/install-applications.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+  - name: Monitor onboarded devices
+    items: 
       - name: Review and edit device policies
         href: m365bp-view-edit-create-mdb-policies.md
       - name: Manage device groups
@@ -106,7 +100,13 @@
   items: 
     - name: Overview
       href: m365bp-maintain-environment.md
-    - name: Remove users
+    - name: Security operations guide
+      href: m365bp-security-incident-quick-start.md
+    - name: Add users
+      href: m365bp-add-users.md
+    - name: Reset passwords
+      href: m365bp-reset-passwords.md
+    - name: Remove users who have left
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Remove data from devices
       href: m365bp-remove-company-data.md
@@ -114,32 +114,30 @@
       href: m365bp-reset-devices-to-factory-settings.md
 - name: Reference
   items:
-    - name: Glossary of terms
-      href: m365bp-glossary.md
+    - name: Top 10 ways to secure a business
+      href: ../admin/security-and-compliance/secure-your-business-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Glossary of security terms
+      href: m365bp-glossary.yml
     - name: Microsoft 365 Business Premium FAQ
       href: microsoft-365-business-faqs.yml
     - name: Microsoft 365 admin content
       href: /microsoft-365/admin/
-    - name: Set up AutoPilot
-      items:
-        - name: Add AutoPilot devices and profile
-          href: m365bp-add-autopilot-devices-and-profile.md
-        - name: AutoPilot profile settings
-          href: m365bp-autopilot-profile-settings.md
-        - name: Create and edit AutoPilot profiles
-          href: m365bp-create-and-edit-autopilot-devices.md
-    - name: App protection settings for Android and iOS
-      href: m365bp-app-protection-settings-for-android-and-ios.md
-    - name: Map protection features to Intune settings
-      href: m365bp-map-protection-features-to-intune-settings.md
-    - name: Set up Compliance Manager
-      href: m365bp-set-up-compliance.md
     - name: Microsoft Defender for Business
       href: ../security/defender-business/index.yml
     - name: Microsoft Defender for Office 365
-      href: ../security/office-365-security/overview.md
+      href: /microsoft-365/security/office-365-security/overview
     - name: Microsoft 365 Lighthouse
       href: ../lighthouse/m365-lighthouse-overview.md
+    - name: Threat protection by Microsoft Defender Antivirus
+      href: m365bp-threats-detected-defender-av.md
+    - name: Intune admin roles
+      href: m365bp-intune-admin-roles-in-the-mac.md
+    - name: Map protection features to Intune settings
+      href: m365bp-map-protection-features-to-intune-settings.md
+    - name: Compliance Manager
+      href: m365bp-set-up-compliance.md
+    - name: Windows Autopilot scenarios and capabilities
+      href: /mem/autopilot/windows-autopilot-scenarios
 
       
 

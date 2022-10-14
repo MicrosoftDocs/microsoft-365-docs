@@ -10,13 +10,14 @@ ms.topic: article
 ms.date: 05/05/2021
 ms.localizationpriority: medium
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: Use Explorer or Real-time detections to investigate and respond to threats efficiently.
 ms.custom: 
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Explorer and Real-time detections
@@ -165,7 +166,7 @@ To view and use Explorer *or* Real-time detections, you need the following permi
 To learn more about roles and permissions, see the following articles:
 
 - [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md)
-- [Permissions in Exchange Online](/e/exchange/permissions-exo/permissions-exo)
+- [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)
 
 ## More information
 

@@ -13,15 +13,13 @@ search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_Enterprise
-- M365-security-compliance
+- purview-compliance
 - Strat_O365_Enterprise
 description: Learn about how Office 365 uses BitLocker encryption, reducing the potential for data theft due to lost or stolen computers and disks.
 ms.custom: seo-marvel-apr2020
 ---
 
 # BitLocker and Distributed Key Manager (DKM) for Encryption
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft servers use BitLocker to encrypt the disk drives containing customer data at rest at the volume-level. BitLocker encryption is a data protection feature that is built into Windows. BitLocker is one of the technologies used to safeguard against threats in case there are lapses in other processes or controls (e.g., access control or recycling of hardware) that could lead to someone gaining physical access to disks containing customer data. In this case, BitLocker eliminates the potential for data theft or exposure because of lost, stolen, or inappropriately decommissioned computers and disks.
 

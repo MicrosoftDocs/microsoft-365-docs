@@ -7,16 +7,20 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
 - Adm_TOC
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - okr_smb
+- adminvideo
 search.appverid:
 - MET150
 - MOE150
@@ -26,11 +30,15 @@ description: Learn about the requirements and considerations for making the move
 
 # Plan your setup of Microsoft 365 for business
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 This article is for people who have subscribed to a Microsoft 365 for business plan.
   
 Before moving your organization to Microsoft 365, there are requirements you need to meet, info you need to have on hand, and decisions you have to make.
 
 ## Overview of Microsoft 365 for business setup
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197910).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Vjso?autoplay=false]
 

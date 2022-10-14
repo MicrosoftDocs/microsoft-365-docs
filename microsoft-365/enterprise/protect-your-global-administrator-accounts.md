@@ -6,11 +6,16 @@ manager: scotv
 ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Strat_O365_IP
 - m365initiative-coredeploy
+- m365solution-m365-identity
+- m365solution-scenario
+- zerotrust-solution
+- highpri
 search.appverid:
 - MET150
 - MOE150
@@ -42,6 +47,9 @@ Microsoft provides capabilities to help protect your organization, but they're e
 
 3. Protect privileged accounts with Zero Trust identity and device access recommendations.
 
+> [!NOTE]
+> To secure your privileged roles, check out [Best practices for Azure AD roles](/azure/active-directory/roles/best-practices) to secure privileged access to your tenant.
+
 ## 1. Create dedicated, privileged, cloud-based user accounts and use them only when necessary
 
 Instead of using everyday user accounts that have been assigned administrator roles, create dedicated user accounts that have the admin roles in Azure AD. 
@@ -65,7 +73,6 @@ Multi-factor authentication (MFA) requires additional information beyond the acc
 - A smart card (virtual or physical) (requires federated authentication)
 - A biometric device
 - Oauth token
-- 
     
 >[!Note]
 >For organizations that must adhere to National Institute of Standards and Technology (NIST) standards, the use of a phone call or text message-based additional verification methods are restricted. Click [here](https://pages.nist.gov/800-63-FAQ/#q-b01) for the details.

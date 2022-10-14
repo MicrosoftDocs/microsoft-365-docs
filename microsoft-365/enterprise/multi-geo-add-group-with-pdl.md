@@ -1,33 +1,33 @@
 ---
-title: "Create a Microsoft 365 Group with a specific preferred data location"
+title: Create a Microsoft 365 Group with a specific preferred data location
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
-description: "Learn how to create a Microsoft 365 group with a specified preferred data location in a multi-geo environment."
+description: Learn how to create a Microsoft 365 group with a specified preferred data location in a multi-geo environment.
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkSPO
 ---
 
-# Create a Microsoft 365 Group with a specific preferred data location
+# Create a Microsoft 365 group with a specific preferred data location
 
-When users in a multi-geo environment create a Microsoft 365 Group, the group preferred data location (PDL) is automatically set to that of the user. Global, SharePoint, and Exchange Administrators can create groups in any region they select. 
+When users in a multi-geo environment create a Microsoft 365 group, the group preferred data location (PDL) is automatically set to that of the user. Global, SharePoint, and Exchange Administrators can create groups in any region they select. 
 
 If you need to create a group with a specific PDL, you can do that using from the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a> or through the Exchange Online New-UnifiedGroup Microsoft PowerShell cmdlet. When you do this, both the group mailbox and SharePoint site associated with the group will be provisioned in the specified PDL.
 
-To create a Microsoft 365 Group with the PDL that you specify, go to the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a> in the geo location where you want to create the group site.
+To create a Microsoft 365 group with the PDL that you specify, go to the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a> in the geo location where you want to create the group site.
 
 For example:
 
-If you want to create a group site in your Australia location, you can go to https://ContosoAUS-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement
+If you want to create a group site in your Australia location, you can go to `https://ContosoAUS-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement`
 
 1. Select **+ Create**.
 2. Follow the process to create a group site.

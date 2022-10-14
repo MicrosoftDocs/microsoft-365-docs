@@ -8,9 +8,12 @@ manager:                   dolmont
 audience:                  ITPro
 ms.topic:                  article
 ms.date:                   05/30/2022 
-ms.prod:                   m365-security
+ms.service:                microsoft-365-security
+ms.subservice:             m365d
 ms.localizationpriority:   medium
-ms.collection:             M365-security-compliance.
+ms.collection: 
+- m365-security
+- tier1
 f1.keywords:               NOCSH
 ---
 
@@ -47,7 +50,7 @@ If pre-ransom activities are detected quickly, the likelihood of a severe attack
 
 Business operation disruptions are likely when responding to a ransomware attack. The end stage of a ransomware attack is often a choice between downtime caused by attackers with major risks, or a controlled downtime to ensure network safety and give you time to fully investigate. We never recommend paying a ransom. Paying cybercriminals to get a ransomware decryption key provides no guarantee that your encrypted data will be restored. See, [Ransomware response - Microsoft Security Blog](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/).
 
-Here’s the qualitative relationship of the impact of a ransomware attack and your time to respond for no detection vs. proactive detection and response.
+Here's the qualitative relationship of the impact of a ransomware attack and your time to respond for no detection vs. proactive detection and response.
 
 ![The qualitative relationship of the impact of a ransomware attack and your time to respond for no detection vs. proactive detection and response, showing the impact to your business reduces, the quicker you respond.](../../media/defender/playbook-detecting-ransomware-m365-defender-qualitative-diagram.png)
 
@@ -64,7 +67,7 @@ Being familiar with pre-ransom malware, payloads, and activities helps your anal
 
 ## Human-operated ransomware attack tactics
 
-Because human-operated ransomware can use known attack techniques and tools, your analysts’ understanding and experience with existing attack techniques and tools will be a valuable asset when preparing your SecOps team for focused ransomware detection practices.
+Because human-operated ransomware can use known attack techniques and tools, your analysts' understanding and experience with existing attack techniques and tools will be a valuable asset when preparing your SecOps team for focused ransomware detection practices.
 
 ### Attack tactics and methods
 
@@ -216,7 +219,7 @@ You can easily filter the incidents queue for incidents that have been categoriz
 
 Each filter setting for the incidents queue creates a URL that you can save and access later as a link. These URLs can be bookmarked or otherwise saved and used when needed at a single click. For example, you can create bookmarks for:
 
-* Incidents containing the “ransomware” category. Here is the corresponding [link](https://security.microsoft.com/incidents?filters=AlertStatus%3DNew%257CInProgress,category%3Dransomware&page_size=30&fields=expand,name,tags,severity,investigationStates,category,impactedEntities,alertCount,serviceSource,detectionSource,firstEventTime,lastEventTime,sensitivity,status,incidentAssignment,classification,determination,rbacGroup).
+* Incidents containing the "ransomware" category. Here is the corresponding [link](https://security.microsoft.com/incidents?filters=AlertStatus%3DNew%257CInProgress,category%3Dransomware&page_size=30&fields=expand,name,tags,severity,investigationStates,category,impactedEntities,alertCount,serviceSource,detectionSource,firstEventTime,lastEventTime,sensitivity,status,incidentAssignment,classification,determination,rbacGroup).
 * Incidents with a specified **Actor** name known to be performing ransomware attacks.
 * Incidents with a specified **Associated threat** name known to be used in ransomware attacks.
 * Incidents containing a custom tag that your SecOps team uses for incidents that are known to be part of a larger, coordinated ransomware attack.
@@ -306,7 +309,7 @@ As needed, you can provide your security analysts with internal training for:
 
 ### Ongoing work based on operational learning and new threats
 
-As part of your SecOps team’s ongoing tool and process best practices and security analysts’ experiences, you should:
+As part of your SecOps team's ongoing tool and process best practices and security analysts' experiences, you should:
 
 * Update your catalog of advanced hunting queries with:
   * New queries based on the latest threat analytics reports in the Microsoft 365 Defender portal or the [Advanced Hunting GitHub repository](<https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Ransomware>).

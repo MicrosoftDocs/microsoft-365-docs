@@ -7,13 +7,16 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -29,7 +32,7 @@ You can manage and secure mobile devices when they're connected to your Microsof
 
 ## What types of devices can you manage?
 
-You can use Basic Mobility and Security to manage many types of mobile devices like Windows Phone, Android, iPhone, and iPad. To manage mobile devices used by people in your organization, each person must have an applicable Microsoft 365 license and their device must be enrolled in Basic Mobility and Security.
+You can use Basic Mobility and Security to manage many types of mobile devices like Android, iPhone, and iPad. To manage mobile devices used by people in your organization, each person must have an applicable Microsoft 365 license and their device must be enrolled in Basic Mobility and Security.
 
 To see what Basic Mobility and Security supports for each type of device, see [Capabilities of Basic Mobility and Security](capabilities.md).
 
@@ -41,11 +44,11 @@ Here's a summary of the steps:
 
 **Step 1:** Activate Basic Mobility and Security by following steps in the [Set up Basic Mobility and Security](set-up.md).
 
-**Step 2:** Set up Basic Mobility and Security by, for example, creating an APNs certificate to manage iOS devices and adding a Domain Name System (DNS) record for your domain to support Windows phones.
+**Step 2:** Set up Basic Mobility and Security by, for example, creating an APNs certificate to manage iOS devices and adding a Domain Name System (DNS) record for your domain.
 
 **Step 3:** Create device policies and apply them to groups of users. When you do this, your users get an enrollment message on their device, and when they've completed enrollment, their devices are restricted by the policies you've set up for them. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md). 
 
-:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Basic Security and Mobility policy settings.":::
+:::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="Basic Security and Mobility policy settings.":::
 
 ## Device management tasks
 
@@ -60,4 +63,3 @@ If you just need mobile app management (MAM), perhaps for people updating work p
 [Set up Basic Mobility and Security](set-up.md) (article)\
 [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md) (article)\
 [Manage devices enrolled in Mobile Device Management for Microsoft 365](manage-enrolled-devices.md) (article)\
-[Get details about devices managed by Basic Mobility and Security](get-details-about-managed-devices.md) (article)

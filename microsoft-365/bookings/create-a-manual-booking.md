@@ -7,13 +7,21 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
-description: "Follow these instructions to create an appointment and assign an employee through the Microsoft Bookings app."
+description: "Follow these instructions to create an appointment and assign an employee."
 ---
 
 # Create a manual booking
 
 Bookings can be scheduled and staffed in two different ways. The first way is by the customer using a standalone booking page or an embedded booking page that you add to your website. The other way is for you or one of your employees to enter the bookings manually, such as when a customer calls for an appointment. This article covers the manual scenario.
+
+## Watch: Create a manual booking
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Zd77]
+
+## Steps
 
 1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 

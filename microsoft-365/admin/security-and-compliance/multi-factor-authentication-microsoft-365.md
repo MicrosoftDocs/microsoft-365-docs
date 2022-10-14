@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -165,7 +166,7 @@ In the Azure portal, you can:
 - Enable and disable security defaults
 - Configure Conditional Access policies
 
-In the Microsoft 365 admin center, you can configure per-user and service <a href="https://go.microsoft.com/fwlink/p/?linkid=2169174" target="_blank">MFA settings</a>.
+In the Microsoft 365 admin center, you can configure per-user and service <a href="https://go.microsoft.com/fwlink/?LinkId=279980" target="_blank">MFA settings</a>.
 
 ## Next steps
 

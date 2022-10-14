@@ -1,25 +1,26 @@
 ---
 title: View documents in a review set in eDiscovery (Premium)
+description: "Choose how you view content in eDiscovery (Premium), such as text, annotate, converted, or native view."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-description: "Choose how you view content in eDiscovery (Premium), such as text, annotate, converted, or native view."
 ms.custom: seo-marvel-mar2020
 ---
 
 # View documents in a review set in eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 eDiscovery (Premium) displays content via several viewers each with different purposes. The various viewers can be used by clicking on any document within a review set. The viewers currently provided are:
 
@@ -27,6 +28,8 @@ eDiscovery (Premium) displays content via several viewers each with different pu
 - Native view
 - Text view
 - Annotate view
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## File metadata
 

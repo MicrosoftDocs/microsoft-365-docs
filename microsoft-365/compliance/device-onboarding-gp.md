@@ -11,8 +11,9 @@ audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- M365-security-compliance 
+ms.collection:
+- tier1 
+- purview-compliance 
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150 
@@ -20,8 +21,6 @@ description: Use Group Policy to deploy the configuration package on Windows 10 
 ---
 
 # Onboard Windows 10 devices and Windows 11 using Group Policy 
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Applies to:**
 
@@ -33,6 +32,8 @@ description: Use Group Policy to deploy the configuration package on Windows 10 
 > To use Group Policy (GP) updates to deploy the package, you must be on Windows Server 2008 R2 or later.
 
 > For Windows Server 2019, you may need to replace NT AUTHORITY\Well-Known-System-Account with NT AUTHORITY\SYSTEM of the XML file that the Group Policy preference creates.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Onboard devices using Group Policy
 

@@ -1,14 +1,15 @@
 ---
 title: "Microsoft 365 admin center Teams usage activity reports"
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -31,7 +32,7 @@ The brand-new **Teams usage report** gives you an overview of the usage activity
 
 ## How to get to the Microsoft Teams usage activity report
 
-1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
+1. In the admin center, go to the **Reports**, then select **Usage**.
 2. From the dashboard homepage, click on the **View more** button on the **Microsoft Teams activity** card.
 
    ![Microsoft 365 reports - Microsoft Teams activity card.](../../media/teams-usage-card.png)<br/>
@@ -58,7 +59,7 @@ In the table, select **Choose columns** to add or remove columns from the report
 
 ![Teams usage activity report - choose columns.](../../media/teams-usage-columns.png)
 
-You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. The exported format for **audio time**, **video time**, and **screen share time** follows ISO8601 duration format.
+You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis.  The exported format for **audio time**, **video time**, and **screen share time** follows ISO8601 duration format.
 
 The **Microsoft Teams usage activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
 

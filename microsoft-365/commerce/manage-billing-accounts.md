@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration 
+ms.service: microsoft-365-business 
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
@@ -23,7 +24,7 @@ description: "Learn about billing accounts and how they're used to manage accoun
 ms.date: 05/24/2022
 ---
 
-# Understand billing accounts
+# Understand your Microsoft billing accounts
 
 A billing account is created when you sign up to try or buy Microsoft products. You use your billing account to manage your account settings, invoices, payment methods, and purchases. You can have access to multiple billing accounts. For example, you signed up for Microsoft 365 directly, or you have access to your organization's Enterprise Agreement, Microsoft Product & Services Agreement or Microsoft Customer Agreement. For each of these scenarios, you would have a separate billing account.
 

@@ -7,9 +7,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: Adm_TOC
+ms.collection: 
+- scotvorg
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
@@ -24,7 +26,7 @@ For additional information about purchasing and licensing Microsoft 365 apps fro
 
 For more info on how partners create these apps, see [How to plan a SaaS offer for the commercial marketplace](https://go.microsoft.com/fwlink/?linkid=2158277)
 
-The Integrated apps portal is only accessible to global admins and available to world-wide customers only. This feature is not available in sovereign and government clouds.
+The Integrated apps portal is available to world-wide customers only and can be accessed by global admins, global readers, and Exchange admins. This feature is not available in sovereign and government clouds.
 
 The Integrated apps portal displays a list of apps, which includes single apps and Microsoft 365 apps from partners which are deployed your organization. Only web apps, SPFx apps, Office Add-ins, and Teams apps are listed. For web apps, you can see two kinds of apps.
 
@@ -51,11 +53,15 @@ You can manage testing and deployment of purchased and licensed Microsoft 365 Ap
 
 8. If the app has a status of **Update pending**, you can click on the app to open the Manage pane and update the app.
 
+
+> [!NOTE]
+> _Is this a test deployment_ is an administrative tag to determine if the app is still in testing phase. It has no technical impact.
+
 ## Find published apps for testing and full deployment
 
 You can find, test, and fully deploy published apps that don't already appear in the list on the Integrated apps page. By purchasing and licensing the apps from the admin center, you can add Microsoft and Microsoft partner apps to your list from a single location.
 
-1. In the admin center, in the left nav, choose **Settings**, and then choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">**Integrated apps**</a>.
+1. In the admin center, in the left nav, choose **Settings**, and then choose <a href="https://admin.microsoft.com/adminportal/home?#/Settings/IntegratedApps" target="_blank">**Integrated apps**</a>.
 
 2. Select **Get apps** to get a view of the apps.
 
@@ -88,7 +94,7 @@ You won't be able to deploy a single store app or Microsoft 365 Apps by partner 
 
 1. In the admin center, in the left nav, choose **Settings** and then **Integrated apps**.
 
-2. Select **Upload custom apps**. Only a custom line of apps for Word, PowerPoint, Excel and Outlook  is supported.
+2. Select **Upload custom apps**. Only a custom line of apps for Word, PowerPoint, Excel, and Outlook  is supported.
 
 3. Upload the manifest file from your device or add a URL link. Some apps require you to add users before you can select Deploy.
 
@@ -237,7 +243,7 @@ Updates for add-ins happen as follows:
 - **Office Store add-in**: When an admin selected an add-in from the Office Store, if an add-in updates in the Office Store, the next time the relevant Office applications start, the add-in will update. The web application can change at any time. 
 
 > [!NOTE]
-> For Word, Excel and PowerPoint use a [SharePoint App Catalog](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) to deploy add-ins to users in an on-premises environment with no connection to Microsoft 365 and/or support for SharePoint add-ins required. For Outlook use Exchange control panel to deploy in an on-premises environment without a connection to Microsoft 365.  
+> For Word, Excel, and PowerPoint use a [SharePoint App Catalog](/sharepoint/dev/sp-add-ins/publish-sharepoint-add-ins) to deploy add-ins to users in an on-premises environment with no connection to Microsoft 365 and/or support for SharePoint add-ins required. For Outlook use Exchange control panel to deploy in an on-premises environment without a connection to Microsoft 365.  
 
 ## Add-in states
 An add-in can be in either the **On** or **Off** state. 
@@ -265,6 +271,9 @@ Post deployment, admins can also manage user access to add-ins.
 9. If the app has a status of **Update pending**, you can click on the app to open the **Manage** pane and update the app. 
 10. To just update users, select the **Users** tab and make the appropriate change. Select **Update** after making your changes.  
 
+> [!NOTE]
+> Only the admin who deployed the add-in or a global admin can manage that add-in.
+
 ## Delete an add-in
 
 You can also delete an add-in that was deployed.
@@ -280,6 +289,7 @@ You can also delete an add-in that was deployed.
 ## Scenarios where Exchange admin cannot deploy an add-in 
 
 There are two cases in which an Exchange Admin won't be able to deploy an add-in:
+
 - If an add-in needs permission to MS Graph APIs and needs consent from a global admin.
 - If an add-in is linked to two or more add-ins and webapps, and at least one of these add-ins is deployed by another admin (exchange/global) and the user assignment is not uniform. We only allow deployment of add-ins when the user assignment is the same for all the already deployed apps.  
 
@@ -288,7 +298,7 @@ There are two cases in which an Exchange Admin won't be able to deploy an add-in
 
 ### Which administrator role do I need to access Integrated apps?
 
-Only global administrators can access Integrated Apps. Integrated apps won't show up in the left nav for other administrators.
+Only global admins and Exchange admins can access Integrated Apps. Integrated apps won't show up in the left nav for other administrators.
 
 ### Why do I see Add-in in the left nav under Setting but not Integrated apps?
 
@@ -303,7 +313,7 @@ Integrated apps allow deployment of Web Apps, Teams app, Excel, PowerPoint, Word
 
 ### Can administrators delete or remove apps?
 
-Yes. Global administrators can delete or remove apps.
+Only the admin who deployed the app or add-in or a global admin can delete or remove it.
 
 - Select an app from the list view. On the **Configuration** tab, select which apps to remove.  
 

@@ -8,13 +8,16 @@ manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri 
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - commerce_billing
+- VSBFY23
 - TopSMBIssues
 - okr_smb
 - AdminSurgePortfolio
@@ -31,9 +34,15 @@ Your bill or invoice provides a summary of charges for your subscription and inc
 > [!NOTE]
 > If you have other subscriptions instead of or in addition to Microsoft 365, see [Understand your bill or invoice](understand-your-invoice.md).
 
+## Watch: Understand your bill or invoice
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2209539).
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53wxS?autoplay=false]
+
 ## How often and when am I billed?
 
-Depending on the billing frequency you chose when you bought your subscription, you receive an invoice either monthly, quarterly, semi-annually, or annually. The amount of time since the last invoice date is called the *Billing Period* and is on page one of the invoice. This time represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
+Depending on the billing frequency you chose when you bought your subscription, you receive an invoice either monthly or annually. The amount of time since the last invoice date is called the *Billing Period* and is on page one of the invoice. This time represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
 
 Starting on page two of the invoice, you see the charges grouped by their *Service Period*. The service period is the date range during which you're charged to use the service.
 
@@ -85,9 +94,9 @@ To update the **Sold-To** address, see [Change your organization's address, tech
 
 #### Order Details
 
-On page one of your invoice, the **Product** is "Online Services,” the generic term we use to describe your subscription. Page two lists the individual products in your order.
+On page one of your invoice, the **Product** is "Online Services," the generic term we use to describe your subscription. Page two lists the individual products in your order.
 
-**Customer PO Number** is the purchase order (PO) number that you specify. You can't add a PO number to an existing invoice. If you update the PO number, it’s included in future invoices. To change the PO number, see [Change your purchase order number](#change-your-purchase-order-number).
+**Customer PO Number** is the purchase order (PO) number that you specify. You can't add a PO number to an existing invoice. If you update the PO number, it's included in future invoices. To change the PO number, see [Change your purchase order number](#change-your-purchase-order-number).
 
 **Order Number** is the globally unique identifier (GUID) that identifies your order. Every time you buy a new subscription, a new order with a new order number is created. You receive an invoice for each order every billing period.
 
@@ -113,7 +122,7 @@ If you pay by credit card, you see "Please DO NOT PAY. You will be charged the a
 
 ### Electronic Fund Transfer (EFT) and check
 
-If you chose “invoice” as your subscription payment method, page one contains the **Electronic Funds Transfer** section that shows the Microsoft bank account information for electronic payments (wire, ACH, SEPA, and so on). Usually, your bank has a reference field you complete when you send a payment. Make sure you reference the invoice number in that field.
+If you chose "invoice" as your subscription payment method, page one contains the **Electronic Funds Transfer** section that shows the Microsoft bank account information for electronic payments (wire, ACH, SEPA, and so on). Usually, your bank has a reference field you complete when you send a payment. Make sure you reference the invoice number in that field.
 
 If we accept payments by check for your country or region, you also see a **Check** section that contains the payee name and mailing address. Make sure you reference your invoice number on the check.
 

@@ -8,9 +8,10 @@ metadata:
   manager: scotv
   audience: Admin
   ms.topic: faq
-  ms.service: o365-administration
+  ms.service: microsoft-365-business
   ms.localizationpriority: medium
   ms.collection: 
+  - scotvorg
   - M365-subscription-management
   - Adm_O365
   - Adm_TOC
@@ -18,6 +19,7 @@ metadata:
   - AdminSurgePortfolio
   - okr_smb
   - seo-marvel-may2020
+  - adminvideo
   search.appverid:
   - BCS160
   - MET150
@@ -31,6 +33,8 @@ summary: |
 
   
   This article contains answers to frequently asked questions about domains in Microsoft 365.
+
+  Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
   
   If you can't find an answer to your question, let us know by leaving a comment and we'll add it to the list.
 
@@ -189,22 +193,8 @@ sections:
           - **You can't remove your onmicrosoft domain.** Microsoft 365 needs to keep it around because it's used behind the scenes for your subscription. But you don't have to use the domain yourself after you've added a custom domain. If you choose to create a new onmicrosoft.com domain, it cannot be removed. You are limited to five onmicrosoft.com domains in your Microsoft 365 environment, so make sure to check for spelling and to assess your need if you choose to create a new one. 
               
           You can keep using the initial onmicrosoft.com domain even after you add your domain. It still works for email and other services, so it's your choice.
-            
-          
-      - question: Why do I have an "onmicrosoft.de" domain?
-        answer: |
-          Microsoft 365 creates a domain for you, like *contoso.onmicrosoft.de*, when you sign up with the service. The user ID that you create when you sign up includes the domain, like *alan@contoso.onmicrosoft.de*. 
-            
-           **If you want to have your email look like *alan@contoso.de*:** [buy the domain](../get-help-with-domains/buy-a-domain-name.md) or just follow the steps in [Add your users and domain to Microsoft 365](add-domain.md) if you own it already. 
-            
-          - **You can't rename the onmicrosoft domain after sign-up.** For example, if the initial domain you chose was fourthcoffee.onmicrosoft.de, you can't change it to be fabrikam.onmicrosoft.de. To use a different onmicrosoft.de domain, you'd have to start a new subscription with Microsoft 365. 
-              
-          - **You can't rename your team site URL.** Your team site URL is based on your onmicrosoft.de domain name. Unfortunately, because of the way SharePoint Online architecture works, you can't rename the team site. 
-              
-          - **You can't remove your onmicrosoft domain.** Microsoft 365 needs to keep it around because it's used behind the scenes for your subscription. But you don't have to use the domain yourself after you've added a custom domain. 
-              
-          You can keep using the initial onmicrosoft.de domain even after you add your domain. It still works for email and other services, so it's your choice.
-            
+           
+                        
           
       - question: How do I verify my nonprofit or education status?
         answer: |

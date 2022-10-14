@@ -1,31 +1,31 @@
 ---
 title: "Limits for Content search and eDiscovery (Standard) in the compliance center"
+description: "Learn about the limits in effect for the Content search and eDiscovery (Standard) features in the Microsoft Purview compliance portal."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: "Learn about the limits in effect for the Content search and eDiscovery (Standard) features in the Microsoft Purview compliance portal."
 ---
 
 # Limits for eDiscovery search
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Various limits are applied to eDiscovery search tools in the Microsoft Purview compliance portal. This includes searches run on the **Content search** page and searches that are associated with an eDiscovery case on the **eDiscovery (Standard)** page. These limits help to maintain the health and quality of services provided to organizations. There are also limits related to the indexing of email messages in Exchange Online for search. You can't modify the limits for eDiscovery searches or email indexing, but you should be aware of them so that you can take these limits into consideration when planning, running, and troubleshooting eDiscovery searches.
 
 For limits related to the Microsoft Purview eDiscovery (Premium) tool, see [Limits in eDiscovery (Premium)](limits-ediscovery20.md)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Search limits
 
@@ -38,10 +38,6 @@ The following table lists the search limits when using the content search tool i
 |Description of limit|Limit|
 |---|---|
 |The maximum number of mailboxes or sites that can be searched in a single search|No limit <sup>1</sup>|
-|The maximum number of searches that can run at the same time in your organization.|30|
-|The maximum number of organization-wide searches that can be run at the same time.|3|
-|The maximum number of searches that a single user can start at the same time. This limit is most likely hit when the user tries to start multiple searches by using the **Get-ComplianceSearch \|Start-ComplianceSearch** command in Security & Compliance Center PowerShell.|10|
-|The maximum number of items per user mailbox that are displayed on the preview page when previewing Content Search results.|100|
 |The maximum number of items found in all user mailboxes that can possibly be displayed on the preview page when previewing search results. The newest items are displayed.|1,000 <sup>2</sup>|
 |The maximum number of user mailboxes that can be previewed for search results. If there are more than 1000 mailboxes that contain content that matches the search query, at most, only the top 1000 mailboxes with the most search results will be available for preview.|1,000|
 |The maximum number of items found in SharePoint and OneDrive for Business sites that are displayed on the preview page when previewing search results. The newest items are displayed.|200|
@@ -84,7 +80,7 @@ Microsoft collects performance information for searches run by all organizations
 
 ## Export limits
 
-The following table lists the limits when exporting the results of a content search. These limits also apply when you export content from a eDiscovery (Standard) case.
+The following table lists the limits when exporting the results of a content search. These limits also apply when you export content from an eDiscovery (Standard) case.
 
 <br>
 
@@ -94,8 +90,6 @@ The following table lists the limits when exporting the results of a content sea
 |---|---|
 |Maximum amount of exportable data from a single search  <p> **Note:** If the search results are larger than 2 TB, consider using date ranges or other types of filters to decrease the total size of the search results.|2 TB|
 |Maximum an organization can export in a single day <p> **Note:** This limit is reset daily at 12:00AM UTC|2 TB|
-|Maximum concurrent exports that can be ran at same time within your organization <p> **Note:** Running a **Report Only** export counts against total concurrent exports for your organization. If three users are performing 3 exports each, then only one other export can be performed. Whether it is exporting a report or search results, no other exports can be performed until one has completed.|10|
-|Maximum exports a single user can run at any one time|3|
 |Maximum number of mailboxes for search results that can be downloaded using the eDiscovery Export Tool|100,000|
 |Maximum size of PST file that can be exported <p> **Note:** If the search results from a user's mailbox are larger than 10 GB, the search results for the mailbox will be exported in two (or more) separate PST files. If you choose to export all search results in a single PST file, the PST file will be spilt into additional PST files if the total size of the search results is larger than 10 GB. If you want to change this default size, you can edit the Windows Registry on the computer that you use to export the search results. See [Change the size of PST files when exporting eDiscovery search results](change-the-size-of-pst-files-when-exporting-results.md). The search results from a specific mailbox won't be divided among multiple PST files unless the content from a single mailbox is more than 10 GB. If you chose to export the search results in one PST file for that contains all messages in a single folder and the search results are larger than 10 GB, the items are still organized in chronological order, so they will be spilt into additional PST files based on the sent date.|10 GB|
 |Rate at which search results from mailboxes and sites are uploaded to a Microsoft-provided Azure Storage location.|Maximum of 2 GB per hour|
@@ -120,6 +114,16 @@ The following table describes the indexing limits that might result in an email 
 |Maximum body size in index|67 million characters|The total number of characters in the body of an email message and all its attachments. When an email message is indexed, all text in the body of the message and in all attachments is concatenated into a single string. The maximum size of this string that is indexed is 67 million characters.|
 |Maximum unique tokens in body|1 million|As previously explained, tokens are the result of extracting text from content, removing punctuation and spaces, and then dividing it into words (called tokens) that are stored in the index. For example, the phrase `"cat, mouse, bird, dog, dog"` contains 5 tokens. But only 4 of these are unique tokens. There is a limit of 1 million unique tokens per email message, which helps prevent the index from getting too large with random tokens.|
 |||
+
+## Jobs limits
+
+|Description|Limit|
+|---|---|
+|Maximum number of concurrent jobs in your organization.|50|
+|Maximum number of concurrent jobs that a single user can start at the same time.|25|
+|Maximum number of concurrent tenant-wide jobs(for example, tenant-wide searches) in your organization.|5|
+|Maximum number of concurrent tenant-wide jobs(for example, tenant-wide searches) that a single user can start at one time.|5|
+|Maximum number of jobs per day in your organization. <p> **Note:** This limit is reset daily at 12:00AM UTC|500|
 
 ## More information
 

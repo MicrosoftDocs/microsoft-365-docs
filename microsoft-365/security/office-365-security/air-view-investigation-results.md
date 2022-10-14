@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: During and after an automated investigation in Microsoft 365, you can view the results and key findings.
 ms.date: 01/29/2021
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Details and results of an automated investigation in Microsoft 365
@@ -42,12 +42,12 @@ The investigation status indicates the progress of the analysis and actions. As 
 |**Starting**|The investigation has been triggered and waiting to start running.|
 |**Running**|The investigation process has started and is underway. This state also occurs when [pending actions](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) are approved.|
 |**No Threats Found**|The investigation has finished and no threats (user account, email message, URL, or file) were identified. <p> **TIP**: If you suspect something was missed (such as a false negative), you can take action using [Threat Explorer](threat-explorer.md).|
-|**Threats Found**|The automated investigation found issues, but there are no specific remediation actions to resolve those issues. <p> The **Threats Found** status can occur when some type of user activity was identified but no cleanup actions are available. Examples include any of the following user activities: <ul><li>A [data loss prevention](../../compliance/dlp-learn-about-dlp.md) event</li><li>An email sending anomaly</li><li>Sent malware</li><li>Sent phish</li></ul> <p> The investigation found no malicious URLs, files, or email messages to remediate, and no mailbox activity to fix, such as turning off forwarding rules or delegation. <p> **TIP**: If you suspect something was missed (such as a false negative), you can investigate and take action using [Threat Explorer](threat-explorer.md)|
+|**Partially Investigated**|The automated investigation found issues, but there are no specific remediation actions to resolve those issues. <p> The **Partially Investigated** status can occur when some type of user activity was identified but no cleanup actions are available. Examples include any of the following user activities: <ul><li>A [data loss prevention](../../compliance/dlp-learn-about-dlp.md) event</li><li>An email sending anomaly</li><li>Sent malware</li><li>Sent phish</li></ul> <p> **Note**: This **Partially Investigated** status used to be labeled as **Threats Found**. <p> The investigation found no malicious URLs, files, or email messages to remediate, and no mailbox activity to fix, such as turning off forwarding rules or delegation. <p> **TIP**: If you suspect something was missed (such as a false negative), you can investigate and take action using [Threat Explorer](threat-explorer.md)|
 |**Terminated By System**|The investigation stopped. An investigation can stop for several reasons: <ul><li>The investigation's pending actions expired. Pending actions time out after awaiting approval for one week</li><li>There are too many actions. For example, if there are too many users clicking on malicious URLs, it can exceed the investigation's ability to run all the analyzers, so the investigation halts</li></ul> <p> **TIP**: If an investigation halts before actions were taken, try using [Threat Explorer](threat-explorer.md) to find and address threats.|
 |**Pending Action**|The investigation has found a threat, such as a malicious email, a malicious URL, or a risky mailbox setting, and an action to remediate that threat is [awaiting approval](air-review-approve-pending-completed-actions.md). <p> The **Pending Action** state is triggered when any threat with a corresponding action is found. However, the list of pending actions can increase as an investigation runs. View investigation details to see if other items are still pending completion.|
-|**Remediated**|The investigation finished and all remediation actions were approved (noted as fully remediated). <p> **NOTE**: Approved remediation actions can have errors that prevent the actions from being taken. Regardless of whether remediation actions are successfully completed, the investigation status does not change. View investigation details.|
+|**Remediated**|The investigation finished and all remediation actions were approved (noted as fully remediated). <p> **NOTE**: Approved remediation actions can have errors that prevent the actions from being taken. Regardless of whether remediation actions are successfully completed, the investigation status doesn't change. View investigation details.|
 |**Partially Remediated**|The investigation resulted in remediation actions, and some were approved and completed. Other actions are still [pending](air-review-approve-pending-completed-actions.md).|
-|**Failed**|At least one investigation analyzer ran into a problem where it could not complete properly. <p> **NOTE** If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded. View the investigation details.|
+|**Failed**|At least one investigation analyzer ran into a problem where it couldn't complete properly. <p> **NOTE** If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded. View the investigation details.|
 |**Queued By Throttling**|An investigation is being held in a queue. When other investigations complete, queued investigations begin. Throttling helps avoid poor service performance.  <p> **TIP**: Pending actions can limit how many new investigations can run. Make sure to [approve (or reject) pending actions](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions).|
 |**Terminated By Throttling**|If an investigation is held in the queue too long, it stops. <p> **TIP**: You can [start an investigation from Threat Explorer](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
 
@@ -74,7 +74,7 @@ Certain kinds of alerts trigger automated investigation in Microsoft 365. To lea
 
 - Email counts are calculated at the time of the investigation, and some counts are recalculated when you open investigation flyouts (based on an underlying query).
 
-- The email counts shown for the email clusters on the **Email** tab and the email quantity value shown on cluster flyout are calculated at the time of investigation, and do not change.
+- The email counts shown for the email clusters on the **Email** tab and the email quantity value shown on cluster flyout are calculated at the time of investigation, and don't change.
 
 - The email count shown at the bottom of the **Email** tab of the email cluster flyout and the count of email messages shown in Explorer reflect email messages received after the investigation's initial analysis.
 
@@ -86,7 +86,7 @@ Certain kinds of alerts trigger automated investigation in Microsoft 365. To lea
 
 - Volume anomalies represent a potential threat, and accordingly could be less severe compared to malware or phish threats that are identified using anti-virus engines, detonation, or malicious reputation.
 
-- You do not have to approve every action. If you do not agree with the recommended action or your organization does not choose certain types of actions, then you can choose to **Reject** the actions or simply ignore them and take no action.
+- You don't have to approve every action. If you don't agree with the recommended action or your organization doesn't choose certain types of actions, then you can choose to **Reject** the actions or simply ignore them and take no action.
 
 - Approving and/or rejecting all actions lets the investigation fully close (status becomes remediated), while leaving some actions incomplete results in the investigation status changing to a partially remediated state.
 
