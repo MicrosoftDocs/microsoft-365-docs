@@ -12,7 +12,9 @@ description: Learn how to set up Microsoft 365 with the services and features yo
 ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
+  - highpri
   - m365solution-frontline
+  - highpri
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

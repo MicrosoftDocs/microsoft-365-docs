@@ -11,7 +11,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
@@ -34,7 +36,7 @@ Depending on the Microsoft security products that you use, some advanced feature
 
 1. In the navigation pane, select **Settings** \> **Endpoints** \> **Advanced features**.
 2. Select the advanced feature you want to configure and toggle the setting between **On** and **Off**.
-3. Click **Save preferences**.
+3. Select **Save preferences**.
 
 Use the following advanced features to get better protected from potentially malicious files and gain better insight during security investigations.
 
@@ -65,14 +67,16 @@ Enabling this feature allows you to run unsigned scripts in a live response sess
 
 Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software, which might be unexpected or unwanted.
 
-Turn on this feature so that potentially unwanted applications (PUA) are remediated on all devices in your tenant even if PUA protection is not configured on the devices. This activation of the feature helps to protect users from inadvertently installing unwanted applications on their device. When turned off, remediation is dependent on the device configuration.
+Turn on this feature so that potentially unwanted applications (PUA) are remediated on all devices in your tenant even if PUA protection isn't configured on the devices. This activation of the feature helps to protect users from inadvertently installing unwanted applications on their device. When turned off, remediation is dependent on the device configuration.
 
 ## Restrict correlation to within scoped device groups
 
 This configuration can be used for scenarios where local SOC operations would like to limit alert correlations only to device groups that they can access. By turning on this setting, an incident composed of alerts that cross-device groups will no longer be considered a single incident. The local SOC can then take action on the incident because they have access to one of the device groups involved. However, global SOC will see several different incidents by device group instead of one incident. We don't recommend turning on this setting unless doing so outweighs the benefits of incident correlation across the entire organization.
 
 > [!NOTE]
-> Changing this setting impacts future alert correlations only.
+> - Changing this setting impacts future alert correlations only.
+>
+> - Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## Enable EDR in block mode
 
@@ -165,12 +169,11 @@ When you turn on this feature, you'll be able to incorporate data from Microsoft
 
 To receive contextual device integration in Office 365 Threat Intelligence, you'll need to enable the Defender for Endpoint settings in the Security & Compliance dashboard. For more information, see [Threat investigation and response](/microsoft-365/security/office-365-security/office-365-ti).
 
-## Microsoft Threat Experts - Targeted Attack Notifications
+## Endpoint Attack Notifications
 
-Out of the two Microsoft Threat Expert components, targeted attack notification is in general availability. Experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you've applied for preview and your application has been approved. You can receive targeted attack notifications from Microsoft Threat Experts through your Defender for Endpoint portal's alerts dashboard and via email if you configure it.
+Endpoint Attack Notifications enable Microsoft to actively hunt for critical threats to be prioritized based on urgency and impact over your endpoint data. 
 
-> [!NOTE]
-> The Microsoft Threat Experts capability in Defender for Endpoint is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
+For proactive hunting across the full scope of Microsoft 365 Defender—including threats that span email, collaboration, identity, cloud applications, as and endpoints—[learn more](https://aka.ms/DefenderExpertsForHuntingGetStarted) about Microsoft Defender Experts.
 
 ## Microsoft Defender for Cloud Apps
 
@@ -183,11 +186,11 @@ Enabling this setting forwards Defender for Endpoint signals to Microsoft Defend
 
 To receive contextual device integration in Microsoft Defender for Identity, you'll also need to enable the feature in the Microsoft Defender for Identity portal.
 
-1. Log in to the [Microsoft Defender for Identity portal](https://portal.atp.azure.com/) with a Global Administrator or Security Administrator role.
+1. Sign in to the [Microsoft Defender for Identity portal](https://portal.atp.azure.com/) with a Global Administrator or Security Administrator role.
 
-2. Click **Create your instance**.
+2. Select **Create your instance**.
 
-3. Toggle the Integration setting to **On** and click **Save**.
+3. Toggle the Integration setting to **On** and select **Save**.
 
 After completing the integration steps on both portals, you'll be able to see relevant alerts in the device details or user details page.
 

@@ -1,5 +1,6 @@
 ---
 title: "Create eDiscovery holds in a eDiscovery (Standard) case"
+description: "You can create a hold that's associated with a eDiscovery (Standard) case in Microsoft 365 to preserve content relevant to an investigation or legal case."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,15 +10,14 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ms.custom: admindeeplinkMAC
 search.appverid: 
 - MOE150
 - MET150
-description: "You can create a hold that's associated with a eDiscovery (Standard) case in Microsoft 365 to preserve content relevant to an investigation or legal case."
 ---
 
 # Create an eDiscovery hold
@@ -32,6 +32,8 @@ When you create a hold, you have the following options to scope the content that
 
 - Specify a date range to preserve only the content that was sent, received, or created within that date range. Alternatively, you can hold all content in specified locations regardless of when it was sent, received, or created.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How to create an eDiscovery hold
 
 To create an eDiscovery hold that's associated with a eDiscovery (Standard) case:

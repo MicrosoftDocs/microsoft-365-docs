@@ -1,5 +1,6 @@
 ---
 title: "Add data from one review set to another"
+description: "Learn how to select documents from one review set and work with them individually in another set in an Microsoft Purview eDiscovery (Premium) case."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,12 +11,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: "Learn how to select documents from one review set and work with them individually in another set in an Microsoft Purview eDiscovery (Premium) case."
 ms.custom: 
 - seo-marvel-mar2020
 - seo-marvel-apr2020
@@ -26,6 +28,8 @@ ms.custom:
 In some cases, it may be necessary to select documents from one review set and work with them individually in another review set. This is especially useful if you've culled content in a review set and want to run analytics on the subset of data.
 
 Follow the workflow in this article to add content from one review set to another.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Create a review set
 

@@ -12,7 +12,7 @@ ms.date: 08/11/2022
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 description: Learn how to manage allows and blocks in the Tenant Allow/Block List in the Security portal.
 ms.subservice: mdo
@@ -32,7 +32,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way to manually override the Microsoft 365 filtering verdicts. The Tenant Allow/Block List is used during mail flow for incoming messages form external senders (does not apply to intra-org messages) and at the time of user clicks.
 
-The Tenant Allow/Block list is available in the the Microsoft 365 Defender portal at <https://security.microsoft.com> \> **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+The Tenant Allow/Block list is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> \> **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 For entry creation and configuration instructions, see the following topics:
 
@@ -48,11 +48,11 @@ Use the Submissions portal (also known as *admin submission*) at <https://securi
 
 - **Domains and email addresses**:
   - Email messages from these senders are marked as *high confidence spam* (SCL = 9). What happens to the messages is determined by the [anti-spam policy](configure-your-spam-filter-policies.md) that detected the message for the recipient. In the default anti-spam policy and new custom policies, messages that are marked as high confidence spam are delivered to the Junk Email folder by default. In Standard and Strict [preset security policies](preset-security-policies.md), high confidence spam messages are quarantined.
-  - Users in the organization can't send email to these blocked domains and addresses. They'll receive the following non-delivery report (also known as an NDR or bounce message): `5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy.`
+  - Users in the organization can't send email to these blocked domains and addresses. They'll receive the following non-delivery report (also known as an NDR or bounce message): `5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy.` The entire message is blocked to all recipients if email is sent to any of the entries in the list.
 
 - **Files**: Email messages that contain these blocked files are blocked as *malware*.
 
-- **URLs**: Email messages that contain these blocked URLs are blocked as *high confidence phishing*.
+- **URLs**: Email messages that contain these blocked URLs are blocked as *high confidence phishing*. Messages containing the blocked URLs are quarantined.
 
 In the Tenant Allow/Block List, you can also directly create block entries for the following types of items:
 
@@ -80,11 +80,11 @@ The following list describes what happens in the Tenant Allow/Block List when yo
 
   - If the message was blocked by [spoof intelligence](learn-about-spoof-intelligence.md), an allow entry for the sender is created and it appears on the **Spoofed senders** tab in the Tenant Allow Block List.
 
-  - If the message was blocked by by [domain or user impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in Defender for Office 365, an allow entry is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains section** in the [anti-phishing policy](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
+  - If the message was blocked by [domain or user impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in Defender for Office 365, an allow entry is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains section** in the [anti-phishing policy](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
 
   - If the message was blocked for other reasons, an allow entry for the sender is created and it appears on the **Domains & addresses** tab in the Tenant Allow Block List.
 
-  - If the message was not blocked, and allow entry for the sender is not created, so it won't on the **Spoofed senders** tab or the **Domains & addresses** tab.
+  - If the message was not blocked, and allow entry for the sender is not created, it won't on the **Spoofed senders** tab or the **Domains & addresses** tab.
 
 By default, allow entries for **domains and email addresses**, **files** and **URLs** expire after 30 days, which is also the maximum. Allow entries for **spoofed senders** never expire.
 
@@ -99,6 +99,6 @@ By default, allow entries for **domains and email addresses**, **files** and **U
 
 ## What to expect after you add an allow or block entry
 
-After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately.
+After you add an allow entry through the Submissions portal or a block entry in the Tenant Allow/Block List, the entry should start working immediately 99.999% of the time. For the rest, it could take up to 24 hours.
 
 We recommend letting entries automatically expire after 30 days to see if the system has learned about the allow or block. If not, you should make another entry to give the system another 30 days to learn.

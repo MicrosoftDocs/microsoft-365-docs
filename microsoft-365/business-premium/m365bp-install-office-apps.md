@@ -14,6 +14,8 @@ ms.localizationpriority: high
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -45,7 +47,7 @@ Have them perform the following:
 
 Use the following instructions to install Office on an iPhone or an Android phone. After you follow these steps, your work files created in Office apps will be protected by Microsoft 365 for business.
 
-The example is for Outlook, but applies tp any other Office apps you want to install.
+The example is for Outlook, but applies to any other Office apps you want to install.
 
 ## [iPhone](#tab/iPhone)
   

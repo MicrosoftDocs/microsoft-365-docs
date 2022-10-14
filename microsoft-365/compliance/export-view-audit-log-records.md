@@ -1,5 +1,6 @@
 ---
 title: "Export, configure, and view audit log records"
+description: "In this article, you will learn how to export, configure, and view Microsoft 365 audit log records."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,20 +10,21 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- audit
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
-description: "In this article, you will learn how to export, configure, and view Microsoft 365 audit log records."
 ---
 
 # Export, configure, and view audit log records
 
 After you search the audit log and download the search results to a CSV file, the file contains a column named **AuditData**, which contains additional information about each event. The data in this column is formatted as a JSON object, which contains multiple properties that are configured as *property:value* pairs separated by commas. You can use the JSON transform feature in the Power Query Editor in Excel to split each property in the JSON object in the **AuditData** column into multiple columns so that each property has its own column. This lets you sort and filter on one or more of these properties, which can help you quickly locate the specific auditing data you're looking for.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Export audit log search results
 

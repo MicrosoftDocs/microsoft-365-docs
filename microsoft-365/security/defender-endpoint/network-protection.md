@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 08/12/2022
+ms.date: 10/13/2022
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -17,8 +17,8 @@ ms.custom: asr
 ms.subservice: mde
 ms.topic: overview
 ms.collection: 
-- m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
+- tier2
 search.appverid: met150
 ---
 
@@ -152,13 +152,15 @@ Support for Command and Control servers (C2) is a key part of this ransomware ev
 
 ## SmartScreen Unblock
 
-A new feature in Defender for Endpoint indicators enables administrators to allow end users to bypass warnings that are generated for some URLs and IPs. Depending on why the URL was blocked, when a SmartScreen block is encountered it may offer administrators the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
+With indicators in Defender for Endpoint, administrators can allow end users to bypass warnings that are generated for some URLs and IPs. Depending on why the URL was blocked, when a SmartScreen block is encountered it may offer administrators the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
 
 :::image type="content" source="images/network-protection-smart-screen-block-notification.png" alt-text="Windows Security notification for network protection.":::
 
-Microsoft Defender for Endpoint Administrators can configure SmartScreen Unblock functionality at [Microsoft 365 Defender](https://security.microsoft.com/), using the following configuration tool. From the Microsoft 365 Defender portal, navigate to the path to the ConfigToolName.
+Microsoft Defender for Endpoint administrators can configure SmartScreen Unblock functionality in the [Microsoft 365 Defender portal](https://security.microsoft.com) using an "allow" indicator for IPs, URLs, and domains. 
 
 :::image type="content" source="images/network-protection-smart-screen-block-configuration.png" alt-text="Network protection SmartScreen block configuration ULR and IP form.":::
+
+See [Create indicators for IPs and URLs/domains](indicator-ip-domain.md).
 
 ## Using network protection
 
@@ -167,9 +169,9 @@ Network protection is enabled per device, which is typically done using your man
 > [!NOTE]
 > Microsoft Defender Antivirus must be active to enable network protection.
 
-You can enable network protection in **Audit** mode or **Block** mode. If you want to evaluate the impact of enabling network protection before actually blocking IP addresses or URLs, you can enable network protection in Audit mode for a period of time to gather data on what would be blocked. Audit mode logs when end users have connected to an address or site that would otherwise have been blocked by network protection.
+You can enable network protection in **Audit** mode or **Block** mode. If you want to evaluate the impact of enabling network protection before actually blocking IP addresses or URLs, you can enable network protection in Audit mode for time to gather data on what would be blocked. Audit mode logs when end users have connected to an address or site that would otherwise have been blocked by network protection.
 
-For information about Network protection for Linux and macOS see: [Network protection for Linux](network-protection-linux.md) and [Network protection for MacOS](network-protection-macos.md).
+For information about network protection for Linux and macOS see: [Network protection for Linux](network-protection-linux.md) and [Network protection for macOS](network-protection-macos.md).
 
 ## Advanced hunting
 
@@ -337,4 +339,4 @@ Network protection now has a performance optimization that allows Block mode to 
 - [Enable network protection](enable-network-protection.md) | Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
 - [Configuring attack surface reduction capabilities in Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)
 - [Network protection for Linux](network-protection-linux.md) | To learn about using Microsoft Network protection for Linux devices.
-- [Network protection for MacOS](network-protection-macos.md) | To learn more about Microsoft Network protection for MacOS
+- [Network protection for macOS](network-protection-macos.md) | To learn more about Microsoft Network protection for macOS

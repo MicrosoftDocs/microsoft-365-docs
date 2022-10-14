@@ -7,11 +7,13 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 09/20/2022
+ms.date: 10/07/2022
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
 ms.collection: 
+- m365-security
+- tier2
 ms.custom: 
 ms.reviewer: joshbregman
 f1.keywords: NOCSH 
@@ -25,7 +27,7 @@ f1.keywords: NOCSH
 > **You don't have to wait for built-in protection to come to you**! You can protect your organization's devices now by configuring these capabilities:
 > - [Enable cloud protection](why-cloud-protection-should-be-on-mdav.md)
 > - [Turn tamper protection on](prevent-changes-to-security-settings-with-tamper-protection.md)
-> - [Set attack surface reduction rules to block mode](attack-surface-reduction-rules-deployment.md)
+> - [Set standard attack surface reduction rules to block mode](attack-surface-reduction-rules-deployment.md)
 > - [Enable network protection in block mode](enable-network-protection.md)
 
 ## What is built-in protection, and how does it work?

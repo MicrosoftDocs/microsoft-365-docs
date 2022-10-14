@@ -13,6 +13,7 @@ ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration
   - m365-frontline
+  - highpri
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
@@ -40,8 +41,8 @@ This article walks you through how to deploy Teams at scale.
 
 ## Set up and deploy your teams
 
-> [!NOTE]
-> Before you deploy your teams, make sure that all teams owners have a Teams license.
+> [!IMPORTANT]
+> Team owners must have a Teams license. Before you use these steps to deploy your teams, make sure that all teams owners have a license.
 
 Follow these steps to deploy up to 500 teams at a time.
 
