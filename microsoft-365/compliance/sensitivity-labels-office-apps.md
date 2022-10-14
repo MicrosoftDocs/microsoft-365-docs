@@ -38,10 +38,10 @@ The [Azure Information Protection (AIP) unified labeling client](/azure/informat
 
 ## Support for sensitivity label capabilities in apps
 
-The following tables list the minimum Office version that introduced specific capabilities for sensitivity labels that are built in to Office apps. Or, if the label capability is in public preview or under review for a future release:
+The following tables list the minimum Office version that introduced specific capabilities for sensitivity labels built in to Office apps. Or, if the label capability is in public preview or under review for a future release:
 
-- Table: [Sensitivity label capabilities in Word, Excel, and PowerPoint](#sensitivity-label-capabilities-in-word-excel-and-powerpoint)
-- Table: [Sensitivity label capabilities in Outlook](#sensitivity-label-capabilities-in-outlook)
+- Capabilities table: [Word, Excel, and PowerPoint](#sensitivity-label-capabilities-in-word-excel-and-powerpoint)
+- Capabilities table: [Outlook](#sensitivity-label-capabilities-in-outlook)
 
 Use the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) for details about new capabilities that are planned for future releases.
 
