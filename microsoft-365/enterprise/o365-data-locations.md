@@ -3,7 +3,7 @@ title: "Microsoft 365 data locations"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/30/2022
+ms.date: 10/14/2022
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -37,37 +37,35 @@ For Azure Active Directory data locations, see [Data residency in Azure](https:/
 
 If your billing address is outside Europe and you have an Office 365 Education subscription, then notwithstanding the "Location of Customer Data at Rest for Core Online Services" section of the OST, Microsoft may provision your Office 365 tenant in, transfer your data to, and store your data at rest anywhere within Europe or North America.  If your billing address is in Europe and you have an Office 365 Education subscription, then notwithstanding the "Location of Customer Data at Rest for Core Online Services" section of the OST, Microsoft may provision your Office 365 tenant in, transfer your data to, and store your data at rest anywhere within the European Union.
 
-
 ## Data Center Locations
 
 See the following links to understand workload data location.
 
--	Exchange Online (EXO)  [Exchange Online Data Location](m365-dr-workload-exo.md#how-can-i-determine-customer-data-location)
--	SharePoint Online (ODSP) and OneDrive for Business [Data Location](m365-dr-workload-spo.md#how-can-i-determine-customer-data-location)
--	Microsoft Teams [Data Location](m365-dr-workload-teams.md#how-can-i-determine-customer-data-location)
--	Microsoft Defender for Office (MDO P1)  [Data Location](m365-dr-workload-mdo-p1.md#how-can-i-determine-customer-data-location)
--	Office for the Web (Office Online)  [Data Location](m365-dr-workload-office-for-web.md#how-can-i-determine-customer-data-location)
--	Viva Connections [Data Location](m365-dr-workload-viva-connections.md#how-can-i-determine-customer-data-location)
--	Viva Topics [Data Location](m365-dr-workload-viva-topics.md#how-can-i-determine-customer-data-location)
--	Microsoft Purview (select services)  [Data Location](m365-dr-workload-purview.md#how-can-i-determine-customer-data-location)
-  -	Audit (Standard) 
-  -	Audit (Premium) 
-  -	Data Retention
-  -	Records Management
-  -	Sensitivity labels
-  -	Data Loss Prevention
-  -	Office Message Encryption
-  -	Information Barriers
--	Whiteboard [Data Location](m365-dr-workload-exo.md#how-can-i-determine-customer-data-location)
--	Forms [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
--	Intune [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
--	Planner [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
--	Viva Insights – Advanced, Mgr, Leader [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
--	Viva Insights – Personal [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
--	Viva Learning [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
--	Yammer [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
--	Office for mobile [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
--	OneNote Services [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
--	Power Apps for Microsoft 365 [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
--	Stream [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
-
+- Exchange Online (EXO)  [Exchange Online Data Location](m365-dr-workload-exo.md#how-can-i-determine-customer-data-location)
+- SharePoint Online (ODSP) and OneDrive for Business [Data Location](m365-dr-workload-spo.md#how-can-i-determine-customer-data-location)
+- Microsoft Teams [Data Location](m365-dr-workload-teams.md#how-can-i-determine-customer-data-location)
+- Microsoft Defender for Office (MDO P1)  [Data Location](m365-dr-workload-mdo-p1.md#how-can-i-determine-customer-data-location)
+- Office for the Web (Office Online)  [Data Location](m365-dr-workload-office-for-web.md#how-can-i-determine-customer-data-location)
+- Viva Connections [Data Location](m365-dr-workload-viva-connections.md#how-can-i-determine-customer-data-location)
+- Viva Topics [Data Location](m365-dr-workload-viva-topics.md#how-can-i-determine-customer-data-location)
+- Microsoft Purview (select services)  [Data Location](m365-dr-workload-purview.md#how-can-i-determine-customer-data-location)
+  - Audit (Standard) 
+  - Audit (Premium) 
+  - Data Retention
+  - Records Management
+  - Sensitivity labels
+  - Data Loss Prevention
+  - Office Message Encryption
+  - Information Barriers
+- Whiteboard [Data Location](m365-dr-workload-exo.md#how-can-i-determine-customer-data-location)
+- Forms [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
+- Intune [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
+- Planner [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
+- Viva Insights – Advanced, Mgr, Leader [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
+- Viva Insights – Personal [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
+- Viva Learning [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
+- Yammer [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
+- Office for mobile [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
+- OneNote Services [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
+- Power Apps for Microsoft 365 [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
+- Stream [Data Location](m365-dr-workload-other.md#data-residency-commitments-available)
