@@ -26,7 +26,7 @@ description: "Learn about service advisories for eDiscovery throttling in Exchan
 
 We've released a new Exchange Online service advisory that informs you of eDiscovery being throttled. These service advisories provide visibility into the instances when the user is unable to submit Search and Export because of throttling. These service advisories are displayed in the Microsoft 365 admin center. To view these service advisories, go to  **Health**  | **[Service health](https://go.microsoft.com/fwlink/p/?linkid=842900)** | **Exchange Online**. Here's an example of eDiscovery service advisory.
 
-![eDiscovery service health screenshot](/media/ediscovery-service-health.jpg)
+![eDiscovery service health screenshot](../media/ediscovery-service-health.jpg)
 
 ## What does this service advisory indicate?
 
