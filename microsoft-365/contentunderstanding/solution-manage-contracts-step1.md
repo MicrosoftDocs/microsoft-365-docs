@@ -16,7 +16,7 @@ description: Learn how to use Microsoft Syntex to identify contract files and ex
 
 # Step 1. Use Microsoft Syntex to identify contract files and extract data
 
-Your organization needs a way to identify and classify all contract documents from the many files you receive. You also want to be able to quickly view several key elements in each of the contract files identified (for example, *Client*, *Contractor*, and *Fee amount*). You can do this by using [Syntex](index.md) to create an unstructured document processing model and applying it to a document library.
+Your organization needs a way to identify and classify all contract documents from the many files you receive. You also want to be able to quickly view several key elements in each of the contract files identified (for example, *Client*, *Contractor*, and *Fee amount*). You can do this by using Syntex] to create an unstructured document processing model and applying it to a document library.
 
 ## Overview of the process
 

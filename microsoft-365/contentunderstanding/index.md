@@ -1,5 +1,5 @@
 ---
-title: Introduction to Microsoft SharePoint Syntex
+title: Introduction to Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,18 +15,18 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to find resources for Microsoft SharePoint Syntex.
+description: Learn how to find resources for Microsoft Syntex.
 ---
 
-# Introduction to Microsoft SharePoint Syntex
+# Introduction to Microsoft Syntex
 
-SharePoint Syntex is a Microsoft 365 service that provides an end-to-end intelligent document processing solution for your organization. With SharePoint Syntex, you can:
+Microsoft Syntex is a Microsoft 365 service that provides an end-to-end intelligent document processing solution for your organization. With SharePoint Syntex, you can:
 
 - Use advanced AI and machine teaching and learning to amplify human experiences
 - Automate content processing
 - Transform content into knowledge
 
-The resources on this page are designed to get you started with learning about and using SharePoint Syntex in your organization.
+The resources on this page are designed to get you started with learning about and using Syntex in your organization.
 
 <!---
 </br>
@@ -38,10 +38,10 @@ The resources on this page are designed to get you started with learning about a
 
 ## Get started
 
-The resources in this section help you learn more about the models of data classification and extraction used by SharePoint Syntex.
+The resources in this section help you learn more about the methods of data classification and extraction used by Syntex. There are two custom model types—[document understanding](document-understanding-overview.md) and [form processing](form-processing-overview.md)—and a [prebuilt](prebuilt-overview.md) model type.
 
 > [!NOTE]
-> You can get started with SharePoint Syntex without buying licenses by [creating a content center from the SharePoint admin center](create-a-content-center.md). Unlicensed users can create document understanding models but can't apply them to a document library.
+> You can get started with Syntex without buying licenses by [creating a content center from the SharePoint admin center](create-a-content-center.md). Unlicensed users can create document understanding models but can't apply them to a document library.
 
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
@@ -54,7 +54,7 @@ The resources in this section help you learn more about the models of data class
 
 ## Adoption
 
-Learn more about how to use and implement SharePoint Syntex in your organization to help you solve your business problems.
+Learn more about how to use and implement Syntex in your organization to help you solve your business problems.
 
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
@@ -65,16 +65,16 @@ Learn more about how to use and implement SharePoint Syntex in your organization
 |Try out a customizable SharePoint site template to help manage contracts |[Use the Contracts Management site template](./use-contracts-management-site.md)| 
 |Try out an instructional Content Center site template to learn more about models |[Use the Content Center site template](./use-content-center-site.md)| 
 
-## Set up SharePoint Syntex
+## Set up Syntex
 
 The resources in this section help the admin in your organization to set up and configure Microsoft SharePoint Syntex in your Microsoft 365 environment.
 
 | If you're looking for this information | Go to this resource |
 |:-----|:-----|
-|Set up and configure SharePoint Syntex|[Set up SharePoint Syntex](./set-up-content-understanding.md)|
-|Learn about licensing for SharePoint Syntex|[Licensing for SharePoint Syntex](./syntex-licensing.md)|
-|Learn about image tagging and how to disable|[Image tagging in SharePoint Syntex](./image-tagging.md)|
-|Use PowerShell to manage SharePoint Syntex|[Manage SharePoint Syntex with PowerShell](./powershell-syntex-intro.md)|
+|Set up and configure Syntex|[Set up Syntex](./set-up-content-understanding.md)|
+|Learn about licensing for Syntex|[Licensing for Syntex](./syntex-licensing.md)|
+|Learn about image tagging and how to disable|[Image tagging in Syntex](./image-tagging.md)|
+|Use PowerShell to manage Syntex|[Manage Syntex with PowerShell](./powershell-syntex-intro.md)|
 
 ## Learn about model types
 
@@ -95,7 +95,7 @@ The resources in this section help you learn how to choose, create, and configur
 |Use trained models in other content centers |[Publish and discover document understanding models](./model-discovery.md)|
 |Use Managed Metadata services term store taxonomy when creating an extractor|[Leverage term store taxonomy when creating an extractor](./leverage-term-store-taxonomy.md)|
 |Learn how to see data about your models|[Model usage analytics](./model-usage-analytics.md)|
-|Learn how to use accessibility mode when training a model|[SharePoint Syntex accessibility mode](./accessibility-mode.md)|
+|Learn how to use accessibility mode when training a model|[Syntex accessibility mode](./accessibility-mode.md)|
 
 ### Use a trained model
 

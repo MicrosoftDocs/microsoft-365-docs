@@ -32,7 +32,7 @@ The trial of Syntex gives access to 300 users for 30 days.
 
 You can get the trial version from one of the following sources:
 
-- The [Microsoft Syntex product page](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:overviewtab)
+- The [Syntex product page](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:overviewtab)
 
 - The [Microsoft 365 admin center](https://admin.microsoft.com)
     1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).

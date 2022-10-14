@@ -13,7 +13,6 @@ ms.collection:
     - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-
 ---
 
 # Term store reports

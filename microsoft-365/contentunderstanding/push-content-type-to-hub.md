@@ -14,8 +14,8 @@ ms.collection:
     - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-
 ---
+
 # Push content types to a hub
 
 </br>
@@ -25,7 +25,7 @@ ms.localizationpriority: high
 </br>
 
 
-To make important content types more consistently available to SharePoint libraries and lists, you can push them to the hubs that you choose. Pushing the content types automatically adds them to any new lists and libraries created on the sites associated with the hub, and to any new sites added to the hub. This feature requires a [Microsoft Syntex](syntex-licensing.md) license.
+To make important content types more consistently available to SharePoint libraries and lists, you can push them to the hubs that you choose. Pushing the content types automatically adds them to any new lists and libraries created on the sites associated with the hub, and to any new sites added to the hub. This feature requires a [Microsoft Syntex license](syntex-licensing.md).
 
 For this feature to work, the content types being pushed must already be published.
 
@@ -42,4 +42,4 @@ When you push a content type to an existing hub & its existing associated sites 
 
 After the settings are updated, the content type with these settings will be available in any newly associated site with the hub in a few minutes. The default library view will be changed to one of these automatically created views. If there are multiple content types pushed to the same library, then the latest one (based on the order of the action of pushing those content types to the hub this library belongs to) is what will be set as the default view. Then, any new list or library created will have the content type automatically added to it within a few minutes of creation. A pushed content type will be added to a document library only if it derives directly or indirectly from the Document content type, and a content type will be added to a list only if it does not derive from the Document content type directly or indirectly.
 
-## See also
+

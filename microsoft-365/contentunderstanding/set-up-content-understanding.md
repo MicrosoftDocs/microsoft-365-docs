@@ -19,7 +19,7 @@ description: Set up Microsoft Syntex.
 
 # Set up Microsoft Syntex
 
-Admins can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> to set up [Microsoft Syntex](index.md). 
+Admins can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> to set up Microsoft Syntex. 
 
 Consider the following before you start:
 

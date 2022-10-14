@@ -182,4 +182,4 @@ If you have duplicate entities and want to extract only one value or a certain n
 
 [Leverage term store taxonomy when creating an extractor](leverage-term-store-taxonomy.md)
 
-[Syntex Accessibility Mode](accessibility-mode.md)
+[Syntex accessibility mode](accessibility-mode.md)
