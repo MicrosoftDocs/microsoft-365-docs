@@ -83,14 +83,14 @@ The following is a list of people who need to be engaged:
 - Proxy admin
 - Network admin
 
-Here's how to check the network connectivity for the Microsoft Defender for Endpoint:
+Here's how to check the network connectivity of Microsoft Defender for Endpoint:
 
 1. The URLs that are allowed for the Microsoft Defender for Endpoint traffic. For more information, see [Allow the URL for the Microsoft Defender for Endpoint traffic](#allow-the-url-for-the-microsoft-defender-for-endpoint-traffic).
 2. If the Linux servers are behind a proxy, then set the proxy settings. For more information, see [Set up the proxy settings](#set-up-the-proxy-settings).
 3. Verify that the traffic isn't being inspected by SSL inspection (TLS inspection). When setting up Microsoft Defender for Endpoint, the most frequent network-related problem. For more information, see [Verify that SSL inspection is not being performed on the network traffic](#verify-that-ssl-inspection-is-not-being-performed-on-the-network-traffic).
 
 
-### Allow the URL for the Microsoft Defender for Endpoint traffic
+### Allow URL for the Microsoft Defender for Endpoint traffic
 
 1. Download [Microsoft Defender for Endpoint URL list for commercial customers](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) or [Microsoft Defender for Endpoint URL list for Gov/GCC/DoD](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) that lists the services and their associated URLs that your network must be able to connect.
 
@@ -102,9 +102,9 @@ Here's how to check the network connectivity for the Microsoft Defender for Endp
 > [!NOTE]
 > Work with the Firewall/Proxy/Networking admins to allow the URL’s.
 
-### Set up the proxy settings
+### Set up proxy settings
 
-The table below shows the supported proxies:
+The table below shows the supported proxy settings:
 
 |Supported|Not supported|
 |---|---|
@@ -138,10 +138,10 @@ To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses ce
 
 For more information, see [Troubleshooting cloud connectivity issues for Microsoft Defender for Endpoint on RHEL Linux](linux-support-connectivity.md).
 
-
 ## Configure Microsoft Defender for Endpoint on RHEL Linux antivirus
 
 **Before you begin**
+
 - If you're already using a third party antivirus for your Linux servers:
    - Move the existing exclusions to Microsoft Defender for Endpoint for Linux.
 
@@ -287,7 +287,7 @@ The following command should be considered based on your requirements:
 > [!NOTE]
 > (*): In Linux (and macOS) we support paths where it starts with a wildcard.
 
-The table below describes some settings, which are recommended as part of mdatp_managed.json file:
+The table below describes the settings that are recommended as part of mdatp_managed.json file:
 
 |Settings|Comments|
 |---|---|
@@ -300,24 +300,24 @@ The table below describes some settings, which are recommended as part of mdatp_
 
 ## Significance of CPU utilisation when using scripts generated from a third party ISV
 
-Following are the steps:
+Perform the following steps:
 
 - Identify Microsoft Defender for Endpoint for on RHEL linux causing the symptom
 - wdavdaemon (FANotify) plugin
 - wdavdaemon edr (EDR Engine) plugin
 - mdatp_audisp_plugin  
 
-### Identifying Microsoft Defender for Endpoint on RHEL Linux causing the symptom
+### Identify Microsoft Defender for Endpoint on RHEL Linux causing the symptom
 
 The following syntaxes helps to identify the root cause of the CPU overhead:
 
-- To get the Microsoft Defender for Endpoint process ID, run `o	sudo top -c`.
-- To get more details of the Microsoft Defender for Endpoint process, run `o	sudo ps ax --no-headings -T -o user,pid,thcount,%cpu,sched,%mem,vsz,rss,tname,stat,start_time,time,ucmd,command |sort -nrk 3|grep`.
+- To get Microsoft Defender for Endpoint process ID, run `o	sudo top -c`.
+- To get more details on Microsoft Defender for Endpoint process, run `o	sudo ps ax --no-headings -T -o user,pid,thcount,%cpu,sched,%mem,vsz,rss,tname,stat,start_time,time,ucmd,command |sort -nrk 3|grep`.
 - To identify specific Microsoft Defender for Endpoint thread ID causing the highest CPU utilization within the process, run `o	sudo ps -T -p <PID> >> Thread_with_highest_cpu_usage.log`.
 
 ### wdavdaemon (FANotify) plugin
 
-Follow the steps for wdavdaemon (FANotify) plugin:
+Follow these steps to install wdavdaemon (FANotify) plugin:
 
 - Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md).
 - Collect diagnostic data
@@ -325,7 +325,7 @@ Follow the steps for wdavdaemon (FANotify) plugin:
 
 ### wdavdaemon edr (EDR Engine) plugin
 
-Follow the steps for wdavdaemon edr (EDR Engine) plugin:
+Follow these steps to install wdavdaemon edr (EDR Engine) plugin:
 
 - Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md).
 - Collect diagnostic data
@@ -333,7 +333,7 @@ Follow the steps for wdavdaemon edr (EDR Engine) plugin:
 
 ### mdatp_audisp_plugin  
 
-For troubleshooting high CPU utilization when mdatp_audisp_plugin is the root cause of the overhead, see [Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux](troubleshoot-auditd-performance-issues.md).
+For troubleshooting high CPU utilization overhead caused by mdatp_audisp_plugin, see [Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux](troubleshoot-auditd-performance-issues.md).
 
 - Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md).
 - Collect diagnostic data
@@ -413,9 +413,9 @@ To deploy Microsoft Defender for Endpoint on RHEL Linux using Ansible, see [Depl
       enablerepo: packages-microsoft-[channel] 
 ```
 
-## Verify to communicate with Microsoft Defender for Endpoint backend
+## Verify communication with Microsoft Defender for Endpoint backend
 
-To verify if Microsoft Defender for Endpoint on RHEL Linux can communicate to the cloud with the current network settings, run the following connectivity test from the command line:
+To verify Microsoft Defender for Endpoint on RHEL Linux communication to the cloud with the current network settings, run the following connectivity test from the command line:
 `mdatp connectivity test`
 
 For more information, see [Connectivity validation](linux-support-connectivity.md#run-the-connectivity-test).
@@ -423,7 +423,7 @@ For more information, see [Connectivity validation](linux-support-connectivity.m
 
 ## Verify platform updates
 
-To verify if Microsoft Defender for Endpoint on RHEL Linux can get the platform updates, run the following command line:
+To verify Microsoft Defender for Endpoint on RHEL Linux platform updates, run the following command line:
 `sudo yum update mdatp`
 
 For more information, see [Device health and Microsoft Defender Antivirus health report](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-device-health-reporting-for-microsoft-defender-for-endpoint/bc-p/3616205#M1963).
@@ -437,7 +437,7 @@ For more information, see [schedule an update of the Microsoft Defender for Endp
 
 ## Verify security intelligence updates
 
-To verify if Microsoft Defender for Endpoint on RHEL Linux can get the signatures/definition updates, run the following command line:
+To verify Microsoft Defender for Endpoint on RHEL Linux signatures/definition updates, run the following command line:
 `mdatp definitions update`
 
 For more information, see [New device health reporting for Microsoft Defender Antivirus](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-device-health-reporting-for-microsoft-defender-for-endpoint/bc-p/3616205).
@@ -446,15 +446,13 @@ For more information, see [New device health reporting for Microsoft Defender An
 
 To ensure that the device is correctly onboarded and reported to the service, run the following detection test:
 
-- Antivirus detections:
+- Antivirus detections
 - Endpoint detection and response (EDR) detections:
-  For more information, see Experience Microsoft Defender for Endpoint through simulated attacks.
-  If the detection doesn’t show up, then it could be that we're missing event or alerts in portal. For more information, see 
+  For more information, see [Experience Microsoft Defender for Endpoint through simulated attacks](attack-simulations.md).
+  If the detection doesn’t show up, then it could be that we're missing event or alerts in portal. For more information, see [Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux](linux-support-events.md).
 - For more information about unified submissions in M365D and the ability of submitting **False Positives** and **False Negatives** through the portal, see [Unified submissions in Microsoft 365 Defender now Generally Available! - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770).
 
 ## Troubleshoot Microsoft Defender for Endpoint on Linux installation issues
-
-The links below helps to troubleshoot the following RHEL Linux installation issues:
 
 - For more information, see [Installation issues of Microsoft Defender for Endpoint on RHEL Linux](linux-support-install.md).
 - For more information, see [Troubleshooting log installation issues](linux-resources.md#log-installation-issues).
@@ -462,8 +460,6 @@ The links below helps to troubleshoot the following RHEL Linux installation issu
 - For more information, see [Troubleshooting steps for environments with static proxy](linux-support-connectivity.md#troubleshooting-steps-for-environments-with-static-proxy).
 
 ## Troubleshoot
-
-The following links help you with troubleshooting issues:
 
 - For more information, see [Known issues](linux-resources.md).
 
