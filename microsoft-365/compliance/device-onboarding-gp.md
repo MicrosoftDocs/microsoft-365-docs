@@ -33,6 +33,8 @@ description: Use Group Policy to deploy the configuration package on Windows 10 
 
 > For Windows Server 2019, you may need to replace NT AUTHORITY\Well-Known-System-Account with NT AUTHORITY\SYSTEM of the XML file that the Group Policy preference creates.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Onboard devices using Group Policy
 
 1. Open the [Compliance center](https://compliance.microsoft.com).

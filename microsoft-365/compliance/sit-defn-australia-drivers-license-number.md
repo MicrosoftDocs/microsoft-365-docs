@@ -24,6 +24,8 @@ description: "Australia driver's license number sensitive information type entit
 
 # Australia drivers license number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 nine letters and digits

@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 09/27/2022
+ms.date: 10/13/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -84,6 +84,37 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>September-2022 (Platform: 4.18.2209.7 | Engine: 1.1.19700.3)</summary>
+
+&ensp;Security intelligence update version: **1.377.8.0**<br/>
+&ensp;Release date: **October 10, 2022**<br/>
+&ensp;Platform: **4.18.2209.7**<br/>
+&ensp;Engine: **1.1.19700.3**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.19700.3<br/>
+Security intelligence update version: 1.377.8.0<br/>
+
+### What's new
+
+- Improved processing of Defender fallback order on Server SKU
+- Fixed Defender updates during OOBE process
+- Fixed Trusted Installer security descriptor vulnerability
+- Fixed [Microsoft Defender Antivirus exclusions](configure-exclusions-microsoft-defender-antivirus.md) visibility
+- Fixed output of fallback order of the PowerShell cmdlet
+- Fixed Defender Platform update failure on Server Core 2019 SKUs
+- Improved hardening support for Defender disablement configurations on Server SKUs
+- Improved Defender configuration logics for [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) on servers
+- Improved WARN mode for [ASR rule](attack-surface-reduction-rules-reference.md)
+- Improved certificate handling of OSX  
+- Improved logging for scanning FilesStash location
+- Beginning with platform version 4.18.2208.0 and later: If a server has been [onboarded to Microsoft Defender for Endpoint](onboard-configure.md#onboard-devices-to-the-service), the "Turn off Windows Defender" [group policy setting](configure-endpoints-gp.md#update-endpoint-protection-configuration) will no longer completely disable Windows Defender Antivirus on Windows Server 2012 R2 and later operating systems. Instead, it will be either ignored (if [ForceDefenderPassiveMode](switch-to-mde-phase-2.md#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) is configured explicitly) or it will place Microsoft Defender Antivirus into [passive mode](microsoft-defender-antivirus-windows.md#comparing-active-mode-passive-mode-and-disabled-mode) (if `ForceDefenderPassiveMode` isn't configured). Moreover, [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) will allow a switch to active mode via changing `ForceDefenderPassiveMode` to `0`, but not to passive mode. These changes apply only to servers onboarded to Microsoft Defender for Endpoint. For more information, please refer to [Microsoft Defender Antivirus compatibility with other security products](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)
+
+### Known Issues
+
+- Some customers might have received platform updates 4.18.2209.2 from preview. It can cause the service to get stuck at the start state after the update.  
+<br/><br/>
+</details><details>
 <summary>August-2022 (Platform: 4.18.2207.7 | Engine: 1.1.19600.3)</summary>
 
 &ensp;Security intelligence update version: **1.373.1647.0**<br/>
@@ -127,7 +158,7 @@ Security intelligence update version: 1.373.219.0 <br/>
 - Performance improvement for [AntiMalware Scan Interface (AMSI)](/windows/win32/amsi/antimalware-scan-interface-portal) caching 
 - Improved detection and remediation for [Microsoft Visual Basic for Applications](/office/vba/language/concepts/getting-started/64-bit-visual-basic-for-applications-overview) (VBA) related macros 
 - Improved processing of AMSI exclusions 
-- Fixed deadlock detection in Host Intrusion Prevention System (HIPS) rule processing. (For additional information about HIPS and Defender for Endpoint, see [Migrating from a third-party HIPS to ASR rules](migrating-asr-rules.md).) 
+- Fixed deadlock detection in Host Intrusion Prevention System (HIPS) rule processing. (For more information about HIPS and Defender for Endpoint, see [Migrating from a third-party HIPS to ASR rules](migrating-asr-rules.md).) 
 - Fixed memory leak where `MsMpEng.exe` was consuming private bytes. (If high CPU usage is also an issue, see [High CPU usage due to Microsoft Defender Antivirus](troubleshooting-mode-scenarios.md)) 
 - Fixed deadlock with [behavior monitoring](configure-real-time-protection-microsoft-defender-antivirus.md) 
 - Improved trust validation 
@@ -146,14 +177,21 @@ Security intelligence update version: 1.373.219.0 <br/>
 - Customers deploying platform update 4.18.2207.5 might experience lagging network performance that could impact applications.
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
+
+<details>
 <summary>May-2022 (Platform: 4.18.2205.7 | Engine: 1.1.19300.2)</summary>
 
 &ensp;Security intelligence update version: **1.369.88.0**<br/>
 &ensp;Released: **June 22, 2022**<br/>
 &ensp;Platform: **4.18.2205.7**<br/>
 &ensp;Engine: **1.1.19300.2**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.19300.2<br/>
 Security intelligence update version: 1.369.88.0<br/>
@@ -173,14 +211,7 @@ Security intelligence update version: 1.369.88.0<br/>
 No known issues
 
 <br/><br/>
-</details>
-
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
-
-<details>
+</details><details>
 <summary>March-2022 *UPDATE* (Platform: 4.18.2203.5 | Engine:  1.1.19200.5)</summary>
 
 *Customers who applied the March 2022 Microsoft Defender engine update (**1.1.19100.5**) might have encountered high resource utilization (CPU and/or memory). Microsoft has released an update (**1.1.19200.5**) that resolves the bugs introduced in the earlier version. Customers are recommended to update to at least this new engine build of Antivirus Engine (**1.1.19200.5**). To ensure any performance issues are fully fixed, it's recommended to reboot machines after applying update.*
@@ -405,7 +436,7 @@ No known issues
 - New controls for managing the gradual rollout process of Microsoft Defender updates. See [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
 - Improvement to the behavior monitoring engine
 - Improvements to the rollout of antimalware definitions
-- Extended Edge network event inspections
+- Extended Microsoft Edge network event inspections
 
 ### Known Issues
 No known issues
@@ -808,6 +839,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220929.1</summary>
+
+&ensp;Package version: **20220929.1**<br/>
+&ensp;Platform version: **4.18.2207.7**<br/>
+&ensp;Engine version: **1.1.19600.3**<br/>
+&ensp;Signature version: **1.373.1243.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
 <summary>20220925.2</summary>
 
 &ensp;Package version: **20220925.2**<br/>

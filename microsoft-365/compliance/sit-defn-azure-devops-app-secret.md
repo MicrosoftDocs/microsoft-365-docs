@@ -1,5 +1,5 @@
 ---
-title: "Azure DevOps app secret entity definition (preview)"
+title: "Azure DevOps app secret entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,9 +22,13 @@ recommendations: false
 description: "Azure DevOps app secret sensitive information type entity definition."
 ---
 
-# Azure DevOps app secret (preview)
+# Azure DevOps app secret
 
-## Format
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+This SIT is also included in the [All credentials](sit-defn-all-creds.md) bundled SIT.
+
+ ## Format
 
 A combination of 52 characters consisting of letters, digits, and special characters.
 
@@ -40,9 +44,18 @@ for example:
 `abcdefghijklmnopqrstuvwxyz234567abcdefghijklmnopqrst`
 
 
+## Credential example 
+
+`AdoAppId=...;AdoAppSecret=abcdefghijklmnopqrstuvwxyz234567abcdefghijklmnopqrst;`
+
+> [!IMPORTANT]
+> This example has been invalidated. It’s not a detectable example of this SIT.
+
 ## Checksum
 
 Yes
+
+SITs that have checksums use a unique calculation to check if the information is valid. This means when the **Checksum** value is **Yes**, the service can make a positive detection based on the sensitive data alone. When the **Checksum** value is **No**, other (secondary) elements must also be detected for the service to make a positive detection.
 
 ## Definition
 

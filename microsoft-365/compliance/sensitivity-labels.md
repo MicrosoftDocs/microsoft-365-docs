@@ -73,6 +73,8 @@ In all these cases, sensitivity labels from Microsoft Purview can help you take 
 
 For more information about these and other scenarios that are supported by sensitivity labels, see [Common scenarios for sensitivity labels](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). New features are being developed all the time that support sensitivity labels, so you might also find it useful to check the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## What a sensitivity label is
 
 When you assign a sensitivity label to content, it's like a stamp that's applied and is:
@@ -243,9 +245,9 @@ Similarly for users in the legal department, who are assigned the third policy w
 
 ## Sensitivity labels and Azure Information Protection
 
-The sensitivity labels that are built into Microsoft 365 Apps on Windows, macOS, iOS, and Android look and behave very similarly across these devices to provide users with a consistent labeling experience. However, on Windows computers, you can also use the [Azure Information Protection (AIP) client](/azure/information-protection/rms-client/aip-clientv2). This client is now in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613).
+The sensitivity labels that are built into Microsoft 365 Apps on Windows, macOS, iOS, and Android look and behave very similarly across these devices to provide users with a consistent labeling experience. However, on Windows computers, you can also use the [Azure Information Protection (AIP) client](/azure/information-protection/rms-client/aip-clientv2). This client is now in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613) and when installed, is no longer the default labeling client for the latest Office apps.
 
-If you're using the AIP client, see [Why choose built-in labeling over the AIP add-in for Office apps](sensitivity-labels-aip.md) to understand and manage your labeling choices for Windows computers.
+If you're using the AIP client for labeling in Office apps, we recommend you move to built-in labeling. For more information, see [Migrate the Azure Information Protection (AIP) add-in to built-in labeling for Office apps](sensitivity-labels-aip.md).
 
 ### Azure Information Protection labels
 

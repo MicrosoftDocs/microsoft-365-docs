@@ -49,6 +49,8 @@ Ready to start managing the lifecycle of your organization's data by retaining t
 
 5. If you have PST files that contain data you want to govern: **Import PST files to online mailboxes** by using network upload or drive shipping: [Learn about importing your organization's PST files](importing-pst-files-to-office-365.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Subscription and licensing requirements
 
 A number of different subscriptions support data lifecycle management capabilities.

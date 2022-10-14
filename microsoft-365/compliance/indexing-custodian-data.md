@@ -34,6 +34,8 @@ To learn more about processing support and partially indexed items, see:
 
 - [Default crawled file name extensions and parsed file types in SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Viewing Advanced indexing results
 
 After the Advanced indexing process is completed, you can get an understanding of the effectiveness of reprocessing.  In the Advanced indexing results view on the **Processing** tab for a case, the graph lists the number of items added to the *hybrid index*.  The hybrid index is where eDiscovery (Premium) stores the reprocessed content.

@@ -48,6 +48,8 @@ If you'd like more control, use Microsoft Purview Advanced Message Encryption to
 
 Once you've created the templates, you can apply them to encrypted emails by using Exchange mail flow rules. If you have Microsoft Purview Advanced Message Encryption, you can revoke any email that you've branded by using these templates.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Work with OME branding templates
 
 You can modify several features within a branding template. You can modify, but not remove, the default template. If you have Advanced Message Encryption, you can also create, modify, and remove custom templates. Use Exchange Online PowerShell to work with one branding template at a time.

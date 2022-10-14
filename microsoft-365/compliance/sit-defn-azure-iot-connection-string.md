@@ -1,5 +1,5 @@
 ---
-title: "Azure IoT connection string entity definition (preview)"
+title: "Azure IoT connection string entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,11 +22,15 @@ recommendations: false
 description: "Azure IoT connection string sensitive information type entity definition."
 ---
 
-# Azure IoT connection string (preview)
+# Azure IoT connection string
 
-### Format
+#This SIT is also included in the [All credentials](sit-defn-all-creds.md) bundled SIT.
+
+ ## Format
 
 The string `HostName` followed by the characters and strings outlined in the pattern below, including the strings `azure-devices.net` and `SharedAccessKey`.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Pattern
 
@@ -44,9 +48,15 @@ The string `HostName` followed by the characters and strings outlined in the pat
 - any combination of 43 lower- or uppercase letters, digits, forward slash (/), or plus sign (+)
 - an equal sign (=)
 
+## Credential example 
+
+`HostName=account.azure-devices.net;SharedAccessKeyName=key;SharedAccessKey=abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=`
+
 ## Checksum
 
 No
+
+SITs that have checksums use a unique calculation to check if the information is valid. This means when the **Checksum** value is **Yes**, the service can make a positive detection based on the sensitive data alone. When the **Checksum** value is **No** additional (secondary) elements must also be detected  for the service to make a positive detection.
 
 ### Definition
 

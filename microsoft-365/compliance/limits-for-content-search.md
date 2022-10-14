@@ -25,6 +25,8 @@ Various limits are applied to eDiscovery search tools in the Microsoft Purview c
 
 For limits related to the Microsoft Purview eDiscovery (Premium) tool, see [Limits in eDiscovery (Premium)](limits-ediscovery20.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Search limits
 
 The following table lists the search limits when using the content search tool in the compliance portal and for searches that are associated with a Microsoft Purview eDiscovery (Standard) case.
@@ -114,9 +116,6 @@ The following table describes the indexing limits that might result in an email 
 |||
 
 ## Jobs limits
-
-> [!NOTE]
-> eDiscovery (Premium) jobs are counted toward the eDiscovery (Standard) limits. For example, if you have 50 jobs running in eDiscovery (Premium) you will be unable to start jobs in eDiscovery (Standard). eDiscovery (Standard) jobs do not count toward eDiscovery (Premium) limits.
 
 |Description|Limit|
 |---|---|

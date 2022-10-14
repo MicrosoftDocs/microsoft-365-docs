@@ -49,6 +49,8 @@ This setting applies only to whiteboards and replaces the previously shared sett
 
 > [!NOTE]
 > By default, the Teams meeting setting **Anonymous users can interact with apps in meetings** is enabled. If you have disabled it, any anonymous users (as opposed to guests or federated users) won't have access to the whiteboard during the meeting.
+>
+> If you would like shared device accounts to have access to Whiteboard in Teams meetings but not anonymous users, you can disable **Anonymous users can interact with apps in meetings** while having **AllowAnonymousMeetingParticipantsToAccessWhiteboards** enabled
 
 These changes should take approximately 60 minutes to apply across your tenancy.
 
@@ -59,9 +61,7 @@ These changes should take approximately 60 minutes to apply across your tenancy.
 |Start the whiteboard from a Surface Hub or Microsoft Teams Rooms|Storage: Azure (Whiteboard files will be moved to OneDrive for Business in the future)<br><br>Owner: Meeting participant|Not applicable|In-tenant users: Can initiate, view, and collaborate<br><br>External users: Can view and collaborate during the meeting only<br><br> Shared device accounts: Can view and collaborate during the meeting only|
 
 > [!NOTE]
->If a Whiteboard is stored in OneDrive and already attached to a meeting, it cannot be initiated on a Surface Hub or Microsoft Teams Rooms device. An authenticated user on another device will need to do so. We plan to enable this functionality in a future release.
-
-
+> If a Whiteboard is stored in OneDrive and already attached to a meeting, it cannot be initiated on a Surface Hub or Microsoft Teams Rooms device. An authenticated user on another device will need to do so. We plan to enable this functionality in a future release.
 
 ## Add as a tab in Teams channels and chats
 
@@ -90,6 +90,6 @@ When you share whiteboards from the web, desktop, or mobile clients, you can cho
 
 [Manage data for Whiteboard](manage-data-organizations.md)
 
-[Network requirements for Microsoft Defender of Cloud Apps](https://learn.microsoft.com/defender-cloud-apps/network-requirements)
+[Network requirements for Microsoft Defender of Cloud Apps](/defender-cloud-apps/network-requirements)
 
 [Deploy Whiteboard on Windows](deploy-on-windows-organizations.md)

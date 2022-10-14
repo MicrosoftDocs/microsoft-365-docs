@@ -24,6 +24,8 @@ description: "Austria social security number sensitive information type entity d
 
 # Austria social security number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 10 digits in the specified format

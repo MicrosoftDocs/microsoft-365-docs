@@ -27,6 +27,8 @@ To create your own new template for custom assessments in Compliance Manager, yo
 
 To learn about formatting your spreadsheet, see [Format assessment template data with Excel](compliance-manager-templates-format-excel.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Required roles
 
 Only users who hold a Global Administrator or Compliance Manager Administration role can create and modify templates. Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).

@@ -24,6 +24,8 @@ description: "Argentina national identity (DNI) number sensitive information typ
 
 # Argentina national identity (DNI) number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 Eight digits with or without periods

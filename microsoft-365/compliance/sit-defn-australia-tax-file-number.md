@@ -24,6 +24,8 @@ description: "Australia tax file number sensitive information type entity defini
 
 # Australia tax file number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 eight to nine digits

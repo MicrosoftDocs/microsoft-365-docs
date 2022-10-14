@@ -30,6 +30,8 @@ After Twitter data is imported, you can apply Microsoft Purview features such as
 
 If you’d like to participate in the preview, please reach out to the team at dcfeedback@microsoft.com.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you set up a connector
 
 Complete the following prerequisites before you can set up and configure a connector in the compliance portal to import and archive data from your organization's Twitter account.
@@ -71,7 +73,7 @@ To deploy the source code for the Twitter connector app:
 
 1. Go to [this GitHub site](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet).
 
-2. Click **Deploy to Azure**.
+2. Select **Deploy to Azure**.
 
 For step-by-step instructions, see [Deploy the connector web service from GitHub to your Azure account](deploy-twitter-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
 

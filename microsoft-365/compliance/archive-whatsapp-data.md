@@ -23,6 +23,8 @@ Use the TeleMessage connector in the Microsoft Purview compliance portal to impo
 
 After WhatsApp data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation Hold, Content search, and Microsoft 365 retention policies to WhatsApp data. For example, you can search WhatsApp messages using Content search or associate the mailbox that contains WhatsApp messages with a custodian in an eDiscovery (Premium) case. Using a WhatsApp connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Overview of archiving WhatsApp data
 
 The following overview explains the process of using a connector to archive WhatsApp data in Microsoft 365.
@@ -51,19 +53,19 @@ Some of the implementation steps required to archive WhatsApp communication data
 
 - The user who creates a Verizon Network connector must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- This TeleMessage data connector is available in GCC environments in the Microsoft 365 US Government cloud. Third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Microsoft 365 infrastructure and therefore are not covered by the Microsoft Purview and data protection commitments. Microsoft makes no representation that use of this product to connect to third-party applications implies that those third-party applications are FEDRAMP compliant.
+- This TeleMessage data connector is available in GCC environments in the Microsoft 365 US Government cloud. Third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Microsoft 365 infrastructure and therefore aren't covered by the Microsoft Purview and data protection commitments. Microsoft makes no representation that use of this product to connect to third-party applications implies that those third-party applications are FEDRAMP compliant.
 
 ## Create a WhatsApp Archiver connector
 
 After you've completed the prerequisites described in the previous section, you can create the WhatsApp connector in the compliance portal. The connector uses the information you provide to connect to the TeleMessage site and transfer the WhatsApp data to the corresponding user mailbox boxes in Microsoft 365.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** > **WhatsApp Archiver**.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then select **Data connectors** > **WhatsApp Archiver**.
 
-2. On the **WhatsApp Archiver** product description page, click **Add connector**
+2. On the **WhatsApp Archiver** product description page, select **Add connector**
 
-3. On the **Terms of service** page, click **Accept**.
+3. On the **Terms of service** page, select **Accept**.
 
-4. On the **Login to TeleMessage** page, under Step 3, enter the required information in the following boxes and then click **Next**.
+4. On the **Login to TeleMessage** page, under Step 3, enter the required information in the following boxes and then select **Next**.
 
    - **Username:** Your TeleMessage username.
 
@@ -71,9 +73,9 @@ After you've completed the prerequisites described in the previous section, you 
 
 5. After the connector is created, you can close the pop-up window and go to the next page.
 
-6. On the **User mapping** page, enable automatic user mapping and click **Next**. In case you need custom mapping upload a CSV file, and click **Next**.
+6. On the **User mapping** page, enable automatic user mapping and select **Next**. In case you need custom mapping upload a CSV file, and select **Next**.
 
-7. Review your settings, and then click **Finish** to create the connector.
+7. Review your settings, and then select **Finish** to create the connector.
 
 8. Go to the Connectors tab in **Data connectors** page to see the progress of the import process for the new connector.
 

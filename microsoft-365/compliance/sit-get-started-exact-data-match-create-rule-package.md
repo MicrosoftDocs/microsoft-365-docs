@@ -22,6 +22,8 @@ ms.custom: seo-marvel-apr2020
 
 # Create exact data match sensitive information type/rule package
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Applies to
 
 - [Classic experience](sit-create-edm-sit-classic-ux-workflow.md)
