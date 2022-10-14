@@ -75,7 +75,7 @@ Inside each report, you'll see cards for the specific areas monitored.
 1. Click the **Email & Collaboration reports**.
 1. Take note of the report cards available.
     1. Everything from *Malware detected in email*, to *Spam detections*, *Compromised users*, to *User reported messages* and *Submissions* the final two, with a button that links to Submissions.
-1. Click a report, such as *Mailflow status summary* and the click the **View details** button to dig into the data (which even includes a funnel view for easier interpretation of total mail flow vs. blocked, spam, and phishing emails, and more).
+1. Click a report, for example *Mailflow status summary* and the click the **View details** button to dig into the data (which even includes a funnel view for easier interpretation of total mail flow vs. blocked, spam, and phishing emails, and more).
 
 |Dashboard|Description|
 |---|---|
