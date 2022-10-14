@@ -1,30 +1,28 @@
 ---
 title: "Turn auditing on or off"
+description: How to turn on or off the Audit log search feature in the Microsoft Purview compliance portal to enable or disable the ability of admins to search the audit log.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- audit
 search.appverid:
 - MOE150
 - MED150
 - MET150
-ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
-description: How to turn on or off the Audit log search feature in the Microsoft Purview compliance portal to enable or disable the ability of admins to search the audit log.
 ---
 
 # Turn auditing on or off
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Audit logging will be turned on by default for Microsoft 365 and Office 365 enterprise organizations. However, when setting up a new Microsoft 365 or Office 365 organization, you should verify the auditing status for your organization. For instructions, see the [Verify the auditing status for your organization](#verify-the-auditing-status-for-your-organization) section in this article. 
 
@@ -33,6 +31,8 @@ When auditing in the Microsoft Purview compliance portal is turned on, user and 
 > [!IMPORTANT]
 > If you turn off auditing in Microsoft 365, you can't use the Office 365 Management Activity API or Microsoft Sentinel to access auditing data for your organization. Turning off auditing by following the steps in this article means that no results will be returned when you search the audit log using the compliance portal or when you run the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell. This also means that audit logs won't be available through the Office 365 Management Activity API or Microsoft Sentinel.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you turn auditing on or off
 
 - You have to be assigned the Audit Logs role in Exchange Online to turn auditing on or off in your Microsoft 365 organization. By default, this role is assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Global admins in Microsoft 365 are members of the Organization Management role group in Exchange Online.

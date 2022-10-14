@@ -11,7 +11,8 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -21,7 +22,11 @@ ms.custom: seo-marvel-apr2020
 
 # Create exact data match sensitive information type/rule package
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## Applies to
+
+- [Classic experience](sit-create-edm-sit-classic-ux-workflow.md)
 
 You can create an exact data match (EDM) sensitive information type (SIT) by using the [the EDM schema and SIT wizard](#use-the-edm-schema-and-sit-wizard) in the Compliance center or create the rule package XML file [manually](#create-a-rule-package-manually). You can also combine both by using one method to create the schema and later edit it using the other method.
 
@@ -133,7 +138,7 @@ In some cases, you might have to identify certain account or record identificati
 
 ## Create a rule package manually
 
-This procedure shows you how to create a file in XML format called a rule package (with Unicode encoding), and then upload it into Microsoft Purview using Compliance center PowerShell cmdlets.
+This procedure shows you how to create a file in XML format called a rule package (with Unicode encoding), and then upload it into Microsoft Purview using Security & Compliance PowerShell cmdlets.
 
 > [!NOTE]
 > If the SIT that you map to can detect multi-word corroborative evidence, the secondary elements you define in a manually created rule package can be mapped to the SIT. For example, the name `John Smith` would not match as a secondary element because we'd compare `John` and `Smith` found in the content separately to the term `John Smith` uploaded in one of the fields, if that corroborative evidence field wasn't mapped to a SIT that can detect that pattern.
@@ -212,4 +217,4 @@ This procedure shows you how to create a file in XML format called a rule packag
 
 ## Next step
 
-- [Test an exact data match sensitive information type](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)
+- **For classic experience**: [Test an exact data match sensitive information type](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)

@@ -1,27 +1,25 @@
 ---
 title: "Search for content in a eDiscovery (Standard) case"
+description: "Search for content that may be relevant to a eDiscovery (Standard) case."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "Search for content that may be relevant to a eDiscovery (Standard) case."
 ---
 
 # Search for content in a eDiscovery (Standard) case
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 After a Microsoft Purview eDiscovery (Standard) case is created and people of interest in the case are placed on hold, you can create and run one or more searches for content relevant to the case. Searches associated with a eDiscovery (Standard) case aren't listed on the **Content search** page in the Microsoft Purview compliance portal. These searches are listed on the **Searches** page of the eDiscovery (Standard) case the searches are associated with. This also means that searches associated with a case can only be accessed by case members.
 
@@ -69,6 +67,8 @@ To create a eDiscovery (Standard) search:
 8. Review the search settings (and edit if necessary), and then submit the search to start it.
 
 After the search is completed, you can preview the search results. If necessary, click **Refresh** on the **Searches** page to display the search you created.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## More information about searching content locations
 

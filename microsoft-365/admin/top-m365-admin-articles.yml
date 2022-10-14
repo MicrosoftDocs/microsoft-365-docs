@@ -1,18 +1,24 @@
 ### YamlMime:Landing
 
 title: Top 20 most-viewed admin help articles this month # < 60 chars
-summary: Last updated 3/23/2022. Curious which help articles are most popular with admins? Check out this collection of the 20 most-viewed help articles, updated monthly. # < 160 chars
+summary: Last updated October 7, 2022. Curious which help articles are most popular with admins? Check out this collection of the 20 most-viewed help articles, updated monthly. # < 160 chars
 metadata:
   title: Top 20 most-viewed admin help articles this month # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Check out this collection of top 20 help articles that are most popular with admins, updated monthly. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   author: SKjerland #Required; your GitHub user alias, with correct capitalization.
   ms.author: sharik #Required; microsoft alias of author; optional team alias.
-  ms.date: 03/22/2022 #Required; mm/dd/yyyy format.
+  manager: scotv
+  ms.date: 06/09/2022 #Required; mm/dd/yyyy format.
   ms.localizationpriority: high
-  ms.custom: AdminSurgePortfolio
-  ms.collection: Adm_TOC
+  ms.custom: 
+  - VSBFY23
+  - AdminSurgePortfolio
+  ms.collection: 
+  - scotvorg
+  - highpri
+  - Adm_TOC
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -26,12 +32,15 @@ landingContent:
         links:
           - text: About admin roles
             url: add-users/about-admin-roles.md
-          - text: Microsoft 365 usage reports
-            url: activity-reports/activity-reports.md
-      - linkListType: video
+          - text: Overview of the Microsoft 365 admin center
+            url: admin-overview/admin-center-overview.md
+      - linkListType: how-to-guide
         links:
-          - text: Get help or support
+          - text: Get support for Microsoft 365 for business
             url: get-help-support.md
+          - text: Microsoft 365 activity reports
+            url: activity-reports/activity-reports.md
+
   # Card (optional)
   - title: Domains
     linkLists:
@@ -41,23 +50,23 @@ landingContent:
             url: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
           - text: Add a domain to Microsoft 365
             url: setup/add-domain.md
+
   # Card (optional)
   - title: Security
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Set up multifactor authentication
+          - text: Set up multifactor authentication for Microsoft 365
             url: security-and-compliance/set-up-multi-factor-authentication.md
+
   # Card (optional)
   - title: Bills and subscriptions
     linkLists:
-      - linkListType: overview
-        links:
-          - text: About registration numbers and under-review notifications
-            url: ../commerce/about-registration-numbers.md
       - linkListType: how-to-guide
         links:
-          - text: Cancel your subscription
+          - text: Accept an email invitation to a Microsoft 365 for business subscription
+            url: simplified-signup/user-invite-business-standard.md
+          - text: Cancel your business subscription
             url: ../commerce/subscriptions/cancel-your-subscription.md
           - text: Pay for your subscription
             url: ../commerce/billing-and-payments/pay-for-your-subscription.md
@@ -65,6 +74,9 @@ landingContent:
             url: ../commerce/billing-and-payments/manage-payment-methods.md
           - text: View your bill or invoice
             url: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
+          - text: About registration numbers and under review notifications
+            url: ../commerce/about-registration-numbers.md
+
   # Card (optional)
   - title: Email
     linkLists:
@@ -78,27 +90,17 @@ landingContent:
             url: email/configure-email-forwarding.md
           - text: Create a shared mailbox
             url: email/create-a-shared-mailbox.md
-          - text: Give mailbox permissions to another user
+          - text: Give mailbox permissions to another Microsoft 365 user
             url: add-users/give-mailbox-permissions-to-another-user.md
-          - text: Change a user name and email address
-            url: add-users/change-a-user-name-and-email-address.md
-          - text: Convert a user mailbox to a shared mailbox
-            url: email/convert-user-mailbox-to-shared-mailbox.md
 
   # Card (optional)
   - title: Users, groups, and passwords
     linkLists:
-      - linkListType: overview
-        links:
-        - text: Compare groups
-          url: create-groups/compare-groups.md
       - linkListType: how-to-guide
         links:
           - text: Add users and assign licenses at the same time
             url: add-users/add-users.md
-          - text: Assign licenses to users
+          - text: Assign Microsoft 365 licenses to users
             url: manage/assign-licenses-to-users.md
-          - text: Set the password expiration policy for your organization
-            url: manage/set-password-expiration-policy.md
           - text: Allow users to sign in to Outlook mobile apps with a QR code
             url: manage/use-qr-code-download-outlook.md

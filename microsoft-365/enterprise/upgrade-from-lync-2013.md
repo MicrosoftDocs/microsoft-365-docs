@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 11/10/2021
 audience: ITPro
 ms.topic: conceptual
-ms.prod: skype-for-business-itpro
+ms.service: microsoft-365-enterprise
 ms.collection:
 - Ent_O365
 search.appverid:
@@ -36,7 +36,7 @@ That means there will be no further updates, patches, or fixes for the product (
 
 ## Plan ahead
 
-Check the dates that support ends on the [Product Lifecycle site](/lifecycle/products/lync-server-2013). Plan your upgrades or migrations with these dates in mind. Remember that your product *won't stop working* at the date listed. But because your installation will no longer be patched after that date, you'll want to plan a smooth transition to the next version of the product. The table below lists the options available to you.
+Check the dates that support ends on the [Product Lifecycle site](/lifecycle/products/microsoft-lync-server-2013). Plan your upgrades or migrations with these dates in mind. Remember that your product *won't stop working* at the date listed. But because your installation will no longer be patched after that date, you'll want to plan a smooth transition to the next version of the product. The table below lists the options available to you.
 
 |End of support product|Supported|Recommended|
 |---|---|---|

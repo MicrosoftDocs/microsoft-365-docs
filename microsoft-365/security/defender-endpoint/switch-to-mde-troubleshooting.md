@@ -2,7 +2,7 @@
 title: Troubleshooting issues when switching to Microsoft Defender for Endpoint
 description: Learn how to troubleshoot issues when you make the switch to Microsoft Defender for Endpoint.
 keywords: migration, windows defender, advanced endpoint protection, antivirus, antimalware, passive mode, active mode, troubleshooting
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,12 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365solution-scenario
-- M365-security-compliance
+- m365-security
+- highpri
+- tier1
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 04/01/2022
+ms.date: 05/20/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Troubleshooting issues when switching to Microsoft Defender for Endpoint
@@ -70,7 +73,7 @@ Value: `1`
 > [!NOTE]
 > For passive mode to work on endpoints running Windows Server 2016 and Windows Server 2012 R2, those endpoints must be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
 
-For more information, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).
+For more information, see [Microsoft Defender Antivirus in Windows](microsoft-defender-antivirus-windows.md).
 
 ## Microsoft Defender Antivirus seems to be stuck in passive mode
 

@@ -7,12 +7,12 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
-
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -163,6 +163,8 @@ There are a few different ways you can access a mailbox once you've been given a
 
 ::: moniker-end
 
+> [!NOTE]
+> The **Send As** and **Send on Behalf** permissions do not work in Outlook Desktop client with the *HiddenFromAddressListsEnabled* parameter on the mailbox set to **True**, since they require the mailbox to be visible in Outlook via the Global Address List.
 
 ## Related content
   

@@ -15,20 +15,20 @@ search.appverid:
   - MOE150
 ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - SPO_Content
   - m365initiative-defender-office365
 ms.custom: 
   - seo-marvel-apr2020
   - seo-marvel-jun2020
 description: Learn about Microsoft Defender for Office 365 for files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)

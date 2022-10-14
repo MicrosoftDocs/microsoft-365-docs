@@ -7,20 +7,23 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: "Instructions for entering service offerings information, including service name, description, location, duration, and pricing. You can also tag the employees who are qualified to provide the service."
 ---
 
 # Define your service offerings in Bookings
 
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
-
 When you define your service offerings in Microsoft Bookings, you set a service name, description, location (choose whether you want to meet in person or have an online meeting), duration, default reminders to customers and staff, internal notes about the service, and pricing. You can also tag the employees who are qualified to provide the service. Then, when customers come to your business web site to book an appointment, they can see exactly what types of appointments are available, choose the person they want to provide the service, and how much their service will cost.
 
 You can also add customized information and URLs to the email confirmation and reminders that you send when someone books a service through your booking page.
 
-## Create the service details
+## Watch: Create a new service
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuKXH]
+
+## Steps
 
 1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 

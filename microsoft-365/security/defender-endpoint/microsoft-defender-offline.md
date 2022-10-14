@@ -1,26 +1,27 @@
 ---
 title: Microsoft Defender Offline in Windows
-description: You can use Microsoft Defender Offline straight from the Windows Defender Antivirus app. You can also manage how it is deployed in your network.
+description: You can use Microsoft Defender Offline straight from the Microsoft Defender Antivirus app. You can also manage how it is deployed in your network.
 keywords: scan, defender, offline
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 08/30/2022
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Run and review the results of a Microsoft Defender Offline scan
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -43,7 +44,6 @@ Microsoft Defender Offline in Windows 10 and Windows 11 has the same hardware re
 For more information about Windows 10 and Windows 11 requirements, see the following topics:
 
 - [Minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
-
 - [Hardware component guidelines](/windows-hardware/design/component-guidelines/components)
 
 > [!NOTE]
@@ -53,10 +53,10 @@ To run Microsoft Defender Offline from the endpoint, the user must be logged in 
 
 ## Microsoft Defender Offline updates
 
-Microsoft Defender Offline uses the most recent protection updates available on the endpoint; it's updated whenever Windows Defender Antivirus is updated.
+Microsoft Defender Offline uses the most recent protection updates available on the endpoint; it's updated whenever Microsoft Defender Antivirus is updated.
 
 > [!NOTE]
-> Before running an offline scan, you should attempt to update Microsoft Defender AV protection. You can either force an update with Group Policy or however you normally deploy updates to endpoints, or you can manually download and install the latest protection updates from the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx).
+> Before running an offline scan, you should attempt to update Microsoft Defender Antivirus protection. You can either force an update with Group Policy or however you normally deploy updates to endpoints, or you can manually download and install the latest protection updates from the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx).
 
 See the [Manage Microsoft Defender Antivirus Security intelligence  updates](manage-protection-updates-microsoft-defender-antivirus.md) topic for more information.
 
@@ -80,7 +80,7 @@ Microsoft Defender Offline scans are indicated under **Malware remediation statu
 
 ## Configure notifications
 
-Microsoft Defender Offline notifications are configured in the same policy setting as other Microsoft Defender AV notifications.
+Microsoft Defender Offline notifications are configured in the same policy setting as other Microsoft Defender Antivirus notifications.
 
 For more information about notifications in Windows Defender, see the [Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md) topic.
 
@@ -94,8 +94,6 @@ You can run a Microsoft Defender Offline scan with the following:
 - PowerShell
 - Windows Management Instrumentation (WMI)
 - The Windows Security app
-
-
 
 ### Use PowerShell cmdlets to run an offline scan
 
@@ -132,10 +130,6 @@ See the following for more information:
     > [!NOTE]
     > In Windows 10, version 1607, the offline scan could be run from under **Windows Settings** \> **Update & security** \> **Windows Defender** or from the Windows Defender client.
 
-## Review scan results
-
-Microsoft Defender Offline scan results will be listed in the [Scan history section of the Windows Security app](microsoft-defender-security-center-antivirus.md).
-
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
@@ -145,6 +139,14 @@ Microsoft Defender Offline scan results will be listed in the [Scan history sect
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
+### Where can I find the scan results?
+
+To see the Microsoft Defender Offline scan results:
+
+1. Select **Start**, and then select **Settings**  > **Update & Security**  > **Windows Security**  > **Virus & threat protection**.
+
+2. On the **Virus & threat protection** screen, under **Current threats**, select **Scan options**, and then select **Protection history**.
 
 ## Related articles
 

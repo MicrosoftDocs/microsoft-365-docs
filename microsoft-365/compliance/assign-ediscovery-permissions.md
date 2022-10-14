@@ -1,30 +1,28 @@
 ---
 title: "Assign eDiscovery permissions in the Microsoft Purview compliance portal"
+description: "Assign the permissions required to perform eDiscovery-related tasks using the Microsoft Purview compliance portal."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: "Assign the permissions required to perform eDiscovery-related tasks using the Microsoft Purview compliance portal."
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 ---
 
 # Assign eDiscovery permissions in the compliance portal
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 If you want people to use any of the [eDiscovery-related tools](ediscovery.md) in the Microsoft Purview compliance portal, you have to assign them the appropriate permissions. The easiest way to do this is to add the person the appropriate role group on the **Permissions** page in the compliance portal. This topic describes the permissions required to perform eDiscovery tasks.
 
@@ -50,11 +48,13 @@ The primary eDiscovery-related role group in compliance portal is called **eDisc
 > [!NOTE]
 > To analyze a user's data using eDiscovery (Premium), the user (the custodian of the data) must be assigned an Office 365 E5 or Microsoft 365 E5 license. Alternatively, users with an Office 365 E1 or a Office 365 or Microsoft 365 E3 license can be assigned a Microsoft 365 E5 Compliance or Microsoft 365 eDiscovery and Audit add-on license. Administrators, compliance officers, or legal personnel who are assigned to cases as members and use eDiscovery (Premium) to collect, view, and analyze data don't need an E5 license. For more information about eDiscovery (Premium) licensing, see [Subscriptions and licensing in eDiscovery (Premium)](overview-ediscovery-20.md#subscriptions-and-licensing).
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you assign permissions
 
 - You have to be a member of the Organization Management role group or be assigned the Role Management role to assign eDiscovery permissions in the compliance portal.
 
-- You can use the [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) cmdlet in Security & Compliance Center PowerShell to add a mail-enabled security group as a member of the eDiscovery Managers subgroup in the eDiscovery Manager role group. However, you can't add a mail-enabled security group to the eDiscovery Administrators subgroup. For details, see [More information](#more-information).
+- You can use the [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) cmdlet in Security & Compliance PowerShell to add a mail-enabled security group as a member of the eDiscovery Managers subgroup in the eDiscovery Manager role group. However, you can't add a mail-enabled security group to the eDiscovery Administrators subgroup. For details, see [More information](#more-information).
   
 ## Assign eDiscovery permissions
 
@@ -62,9 +62,11 @@ The primary eDiscovery-related role group in compliance portal is called **eDisc
   
 2. In the left pane, select **Permissions**.
 
-3. On the **Permissions & Roles** page, under **Compliance center**, click **Roles**.
+3. On the **Permissions & Roles** page, under **Microsoft Purview solutions**, click **Roles**.
 
-4. On the **Compliance center roles** page, select **eDiscovery Manager**.
+   To go directly to this page, use <https://compliance.microsoft.com/compliancecenterpermissions>.
+
+4. On the **Role groups for Microsoft Purview solutions** page, select **eDiscovery Manager**.
   
 5. On the **eDiscovery Manager** flyout page, do one of the following based on the eDiscovery permissions that you want to assign.
   
@@ -83,17 +85,16 @@ The following table lists the eDiscovery-related RBAC roles in the compliance po
   
 | Role | Compliance Administrator | eDiscovery Manager & Administrator | Organization Management | Reviewer |
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Case Management <br/> |![Check mark.](../media/checkmark.png) <br/> |![Check mark.](../media/checkmark.png) <br/> |![Check mark.](../media/checkmark.png) <br/> | <br/> |
-|Communication <br/> | <br/> |![Check mark.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Compliance Search <br/> |![Check mark.](../media/checkmark.png) <br/> |![Check mark.](../media/checkmark.png) <br/> |![Check mark.](../media/checkmark.png) <br/> | <br/> |
-|Custodian <br/> | <br/> |![Check mark.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Export <br/> | <br/> |![Check mark.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Hold <br/>  |![Check mark.](../media/checkmark.png) <br/> |![Check mark.](../media/checkmark.png) <br/> |![Check mark.](../media/checkmark.png) <br/> | <br/> |
-|Preview <br/>  | <br/> |![Check mark.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Review <br/>  | <br/> |![Check mark.](../media/checkmark.png) <br/> | <br/> |![Check mark](../media/checkmark.png) <br/> |
-|RMS Decrypt <br/>  ||![Check mark](../media/checkmark.png) <br/> |||
-|Search And Purge <br/> | <br/> | <br/> |![Check mark](../media/checkmark.png)<br/> | <br/> |
-||||||
+|Case Management|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)||
+|Communication||![Check mark.](../media/checkmark.png)|||
+|Compliance Search|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)||
+|Custodian||![Check mark.](../media/checkmark.png)|||
+|Export||![Check mark.](../media/checkmark.png)|||
+|Hold|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)||
+|Preview||![Check mark.](../media/checkmark.png)|||
+|Review||![Check mark.](../media/checkmark.png)||![Check mark](../media/checkmark.png)|
+|RMS Decrypt||![Check mark](../media/checkmark.png)|||
+|Search And Purge|||![Check mark](../media/checkmark.png)||
   
 The following sections describe each of the eDiscovery-related RBAC roles listed in the previous table.
 
@@ -193,7 +194,7 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
 
   - Because an eDiscovery Administrator can view and access all eDiscovery (Standard) and eDiscovery (Premium) cases, they can audit and oversee all cases and associated compliance searches. This can help to prevent any misuse of compliance searches or eDiscovery cases. And because eDiscovery Administrators can access potentially sensitive information in the results of a compliance search, you should limit the number of people who are eDiscovery Administrators.
 
-- **Can I add a group as a member of the eDiscovery Manager role group?** As previously explained, you can add a mail-enabled security group as a member of the eDiscovery Managers subgroup in the eDiscovery Manager role group by using the **Add-RoleGroupMember** cmdlet in Security & Compliance Center PowerShell. For example, you can run the following command to add a mail-enabled security group to the eDiscovery Manager role group. 
+- **Can I add a group as a member of the eDiscovery Manager role group?** As previously explained, you can add a mail-enabled security group as a member of the eDiscovery Managers subgroup in the eDiscovery Manager role group by using the **Add-RoleGroupMember** cmdlet in Security & Compliance PowerShell. For example, you can run the following command to add a mail-enabled security group to the eDiscovery Manager role group. 
 
   ```powershell
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
@@ -201,6 +202,6 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
 
     Exchange distribution groups and Microsoft 365 Groups aren't supported. You must use a mail-enabled security group, which you can create in Exchange Online PowerShell by running `New-DistributionGroup -Type Security`. You can also create a mail-enabled security group (and add members) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> or in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). It might take up to 60 minutes after you create it for a new mail-enabled security group to be available to add to the eDiscovery Managers role group.
 
-    Also as previously stated, you can't make a mail-enabled security group an eDiscovery Administrator by using the **Add-eDiscoveryCaseAdmin** cmdlet in Security & Compliance Center PowerShell. You can only add individual users as eDiscovery Administrators.
+    Also as previously stated, you can't make a mail-enabled security group an eDiscovery Administrator by using the **Add-eDiscoveryCaseAdmin** cmdlet in Security & Compliance PowerShell. You can only add individual users as eDiscovery Administrators.
 
     You also can't add a mail-enabled security group as a member of a case.

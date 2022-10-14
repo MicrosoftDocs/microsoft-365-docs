@@ -1,22 +1,22 @@
 ---
-title: Create a form processing model in Microsoft SharePoint Syntex
+title: Create a form processing model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
-description: Learn how to create a form processing model in SharePoint Syntex.
+description: Learn how to create a form processing model in Microsoft Syntex.
 ---
 
-# Create a form processing model in Microsoft SharePoint Syntex
+# Create a form processing model in Microsoft Syntex
 
 </br>
 
@@ -24,7 +24,7 @@ description: Learn how to create a form processing model in SharePoint Syntex.
 
 </br>
 
-Using [AI Builder](/ai-builder/overview) - a feature in Microsoft Power Apps - SharePoint Syntex users can create a [form processing model](form-processing-overview.md) directly from a SharePoint document library. 
+Using [AI Builder](/ai-builder/overview) - a feature in Microsoft Power Apps - Microsoft Syntex users can create a [form processing model](form-processing-overview.md) directly from a SharePoint document library. 
 
 Creating a form processing model involves the following steps:
 
@@ -148,18 +148,21 @@ Two flows are available to process a selected file or batch of files in a librar
     - Specify how you want the order sorted (ascending or descending order).
 
     ![Screenshot showing the Run flow panel with parameter options highlighted.](../media/content-understanding/run-flow-panel.png)  
+    
+> [!NOTE]
+> The **Extract info from an image or PDF file with a form processing model** flow is automatically available for a library with a form processing model associated. The **Extract info from files with a form processing model** flow is a template that must be added to the library if required.
 
 ### Classification Date field
 
-When a SharePoint Syntex form processing model (or a document understanding model) is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
+When a Syntex form processing model (or a document understanding model) is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
 
-When a model is stamped with the **Classification Date**, you can use the **Send an email after SharePoint Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in the SharePoint document library.
+When a model is stamped with the **Classification Date**, you can use the **Send an email after Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in the SharePoint document library.
 
 To run the flow:
 
 1. Select a file, and then select **Integrate** > **Power Automate** > **Create a flow**.
 
-2. On the **Create a flow** panel, select **Send an email after SharePoint Syntex processes a file**.
+2. On the **Create a flow** panel, select **Send an email after Syntex processes a file**.
 
     ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
 
@@ -167,4 +170,4 @@ To run the flow:
   
 [Power Automate documentation](/power-automate/)
 
-[Training: Improve business performance with AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Training: Improve business performance with AI Builder](/training/paths/improve-business-performance-ai-builder/?source=learn)

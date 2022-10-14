@@ -10,13 +10,11 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
-description: "Learn how to set up Customer Key."
+- purview-compliance
+description: "This article describes the steps to create and configure the required Azure resources and then provides the steps for setting up Customer Key."
 ---
 
 # Set up Customer Key
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 With Customer Key, you control your organization's encryption keys and then configure Microsoft 365 to use them to encrypt your data at rest in Microsoft's data centers. In other words, Customer Key allows customers to add a layer of encryption that belongs to them, with their keys.
 
@@ -25,6 +23,8 @@ Set up Azure before you can use Customer Key. This article describes the steps y
 > [!IMPORTANT]
 > We strongly recommend that you follow the best practices in this article. These are called out as **TIP** and **IMPORTANT**. Customer Key gives you control over root encryption keys whose scope can be as large as your entire organization. This means that mistakes made with these keys can have a broad impact and may result in service interruptions or irrevocable loss of your data.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you set up Customer Key
 
 Before you get started, ensure that you have the appropriate Azure subscriptions and M365/O365 licensing for your organization. You must use paid Azure Subscriptions. Subscriptions you got through Free, Trial, Sponsorships, MSDN Subscriptions, and those under Legacy Support are not eligible.
@@ -102,7 +102,7 @@ To submit an offer to activate Customer Key, complete these steps:
 
 2. Once you're logged in, select the appropriate domain.
 
-3. For the selected domain, choose **Request services** from the top navigation bar, and review the list of available offers.
+3. For the selected domain, choose **Deploy** from the top navigation bar, and review the list of available offers.
 
 4. Choose the information card for the offer that applies to you:
 
@@ -118,14 +118,14 @@ To submit an offer to activate Customer Key, complete these steps:
 
 ### Register Azure subscriptions to use a mandatory retention period
 
-The temporary or permanent loss of root encryption keys can be disruptive or even catastrophic to service operation and can result in data loss. For this reason, the resources used with Customer Key require strong protection. All the Azure resources that are used with Customer Key offer protection mechanisms beyond the default configuration. You can tag or register Azure subscriptions for a *mandatory retention period*. A mandatory retention period prevents immediate and irrevocable cancellation of your Azure subscription. The steps required to register Azure subscriptions for a mandatory retention period require collaboration with the Microsoft 365 team. This process will take five business days to complete. Previously, mandatory retention period was sometimes referred to as "Do Not Cancel".
+The temporary or permanent loss of root encryption keys can be disruptive or even catastrophic to service operation and can result in data loss. For this reason, the resources used with Customer Key require strong protection. All the Azure resources that are used with Customer Key offer protection mechanisms beyond the default configuration. You can tag or register Azure subscriptions for a *mandatory retention period*. A mandatory retention period prevents immediate and irrevocable cancellation of your Azure subscription. The steps required to register Azure subscriptions for a mandatory retention period require collaboration with the Microsoft 365 team. Previously, mandatory retention period was sometimes referred to as "Do Not Cancel". This process will take five business days to complete.
   
 > [!IMPORTANT]
 > Before contacting the Microsoft 365 team, you must do the following steps for **each** Azure subscription that you use with Customer Key. Ensure that you have the [Azure PowerShell Az](/powershell/azure/new-azureps-module-az) module installed before you start.
 
 1. Sign in with Azure PowerShell. For instructions, see [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
 
-2. Run the Register-AzProviderFeature cmdlet to register your subscriptions to use a mandatory retention period. Complete this action for each subscription.
+2. Run the Register-AzProviderFeature cmdlet to register your subscriptions to use a mandatory retention period. Complete this action for **each** subscription.
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
@@ -157,18 +157,7 @@ The Service Level Agreement (SLA) for completion of this process is five busines
 Once you receive notification from Microsoft that registration is complete, verify the status of your registration by running the Get-AzProviderFeature command as follows. If verified, the Get-AzProviderFeature command returns a value of **Registered** for the **Registration State** property. Complete this step for **each** subscription.
 
    ```powershell
-   Set-AzContext -SubscriptionId <SubscriptionId>
    Get-AzProviderFeature -ProviderNamespace Microsoft.Resources -FeatureName mandatoryRetentionPeriodEnabled
-   ```
-
-To complete the process, run the Register-AzResourceProvider command. Complete this step for **each** subscription.
-
-   ```powershell
-   Set-AzContext -SubscriptionId <SubscriptionId>
-   ```
-
-   ```powershell
-   Register-AzResourceProvider -ProviderNamespace Microsoft.KeyVault
    ```
 
 > [!TIP]

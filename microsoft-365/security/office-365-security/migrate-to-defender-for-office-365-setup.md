@@ -13,12 +13,13 @@ search.appverid:
   - MET150
   - MOE150
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-defender-office365
+  - m365-security
+  - m365solution-mdo-migration
+  - highpri
 ms.custom: migrationguides
 description: "Take the steps to begin migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Migrate to Microsoft Defender for Office 365 - Phase 2: Setup
@@ -60,7 +61,7 @@ When you're ready to begin testing, add these groups as exceptions to [the SCL=-
 
 **Notes**:
 
-- The terms Standard and Strict come from our [recommended security settings](recommended-settings-for-eop-and-office365.md), which are also used in [preset security policies](preset-security-policies.md). Ideally, we would tell you to define your pilot users in the Standard and Strict preset security policies, but we can't do that. Why? Because you can't customize the settings in preset security policies (in particular, actions that are taken on messages, or adjustment of impersonation protection settings). During your migration testing, you'll want to see what Defender for Office 365 would do to messages, verify that's what you want to happen, and possibly adjust the policy configurations to allow or prevent those results.
+- The terms Standard and Strict come from our [recommended security settings](recommended-settings-for-eop-and-office365.md), which are also used in [preset security policies](preset-security-policies.md). Ideally, we would tell you to define your pilot users in the Standard and Strict preset security policies, but we can't do that. Why? Because you can't customize the settings in preset security policies (in particular, actions that are taken on messages). During your migration testing, you'll want to see what Defender for Office 365 would do to messages, verify that's what you want to happen, and possibly adjust the policy configurations to allow or prevent those results.
 
   So, instead of using preset security policies, you're going to manually create custom policies with settings that are very similar to, but in some cases are different than, the settings of Standard and Strict preset security policies.
 
@@ -80,7 +81,7 @@ You should also confirm that all users in the pilot have a supported message rep
 
 - [The Report Message add-in](enable-the-report-message-add-in.md)
 - [The Report Phishing add-in](enable-the-report-phish-add-in.md)
-- Supported third party reporting tools as described [here](user-submission.md#third-party-reporting-tools).
+- Supported third party reporting tools as described [here](user-submission.md#third-party-reporting-tools-options).
 
 Don't underestimate the importance of this step. Data from user submissions will give you the feedback loop that you need to verify a good, consistent end-user experience before and after the migration. This feedback helps you to make informed policy configuration decisions, as well as provide data-backed reports to your management that the migration went smoothly.
 
@@ -144,22 +145,20 @@ Create a Safe Attachments policy for your pilot users.
 
 For the recommended settings, see [Recommended Safe Attachments policy settings](recommended-settings-for-eop-and-office365.md#safe-attachments-policy-settings). Note that the Standard and Strict recommendations are the same. To create the policy, see [Set up Safe Attachments policies](set-up-safe-attachments-policies.md). Be sure to use the group **MDOPilot\_SafeAttachments** as the condition of the policy (who the policy applies to).
 
-> [!IMPORTANT]
-> Today, there is no default Safe Attachments policy. Prior to switching any MX records, we recommend that you have a Safe Attachments policy that protects the entire organization.
+> [!NOTE]
+> The **Built-in protection** preset security policy gives Safe Attachments protection to all recipients that aren't defined in any Safe Attachments policies. For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
 ### Create pilot Safe Links policies
 
 > [!NOTE]
 > We do not support wrapping or rewriting already wrapped or rewritten links. If your current protection service already wraps or rewrites links in email messages, you need to turn off this feature for your pilot users. One way to ensure this doesn't happen is to exclude the URL domain of the other service in the Safe Links policy.
->
-> Safe Links protection for supported Office apps is a global setting that applies to all licensed users. You can turn it on or turn it off globally, not for specific users. For more information, see [Configure Safe Links protection for Office 365 apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
 
 Create a Safe Links policy for your pilot users. Chances for false positives in Safe Links are also pretty low, but you should consider testing the feature on a smaller number of pilot users than Safe Attachments. Because the feature impacts the user experience, you should consider a plan to educate users.
 
 For the recommended settings, see [Recommended Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-settings). Note that the Standard and Strict recommendations are the same. To create the policy, see [Set up Safe Links policies](set-up-safe-links-policies.md). Be sure to use the group **MDOPilot\_SafeLinks** as the condition of the policy (who the policy applies to).
 
-> [!IMPORTANT]
-> Today, there is no default Safe Links policy. Prior to switching any MX records, we recommend that you have a Safe Links policy that protects the entire organization.
+> [!NOTE]
+> The **Built-in protection** preset security policy gives Safe Links protection to all recipients that aren't defined in any Safe Links policies. For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
 ### Create pilot anti-spam policies
 

@@ -1,9 +1,10 @@
 ---
 title: "Create activity alerts"
+description: Add and manage activity alerts in the Microsoft Purview compliance portal so that Microsoft 365 will send you email notifications when users perform specific activities.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 11/7/2017
 audience: Admin
@@ -16,14 +17,13 @@ search.appverid:
 - MED150
 - BCS160
 - MET150
-ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
+ms.collection:
+- tier1
+- purview-compliance
 ROBOTS: NOINDEX, NOFOLLOW
-description: Add and manage activity alerts in the Microsoft Purview compliance portal so that Microsoft 365 will send you email notifications when users perform specific activities
 ---
 
 # Create activity alerts
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 You can create an activity alert that will send you an email notification when users perform specific activities in Office 365. Activity alerts are similar to searching for events in the audit log, except that you'll be sent an email message when an event for an activity that you've created an alert for happens.
 
@@ -31,6 +31,8 @@ You can create an activity alert that will send you an email notification when u
 
 > [!NOTE]
 > Activity alerts are being deprecated. We recommend that you start using alert policies in the security and compliance center instead of creating new activity alerts. Alert policies provide additional functionality such as the ability to create an alert policy that triggers an alert when any user performs a specified activity, and displaying alerts on the **View alerts** page in the security and compliance center. For more information, see [Alert policies](alert-policies.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Confirm roles and configure audit logging
 
@@ -123,7 +125,7 @@ To turn an activity alert back on, just repeat these steps and click the **Off**
     |Permanently deletes (purges) an email message from their mailbox.  |Purged messages from mailbox  | Exchange mailbox activities  |
     |Sends an email message from a shared mailbox.  |Sent message using Send As permissions  <br/> And  <br/> Sent message using Send On Behalf permissions  | Exchange mailbox activities  |
 
-- You can also use the **New-ActivityAlert** and **Set-ActivityAlert** cmdlets in Security & Compliance Center PowerShell to create and edit activity alerts. Keep the following things in mind if you use these cmdlets to create or edit activity alerts:
+- You can also use the **New-ActivityAlert** and **Set-ActivityAlert** cmdlets in Security & Compliance PowerShell to create and edit activity alerts. Keep the following things in mind if you use these cmdlets to create or edit activity alerts:
 
   - If you use a cmdlet to add an activity to the alert that isn't listed in the **Activities** drop-down list, a message is displayed in on the property page for the alert that says, "This alert has custom operations not listed in the picker."
 

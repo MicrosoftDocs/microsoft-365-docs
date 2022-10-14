@@ -11,15 +11,15 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 search.appverid:
 - MET150
 description: "Learn how to protect your sensitive information using Microsoft Purview data loss prevention policies and tools and take a tour through the DLP lifecycle."
 ---
 
 # Learn about data loss prevention
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Organizations have sensitive information under their control such as financial data, proprietary data, credit card numbers, health records, or social security numbers. To help protect this sensitive data and reduce risk, they need a way to prevent their users from inappropriately sharing it with people who shouldn't have it. This practice is called data loss prevention (DLP).
 
@@ -32,6 +32,8 @@ In Microsoft Purview, you implement data loss prevention by defining and applyin
 - on-premises file shares and on-premises SharePoint.
 
 DLP detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches to keywords, by the evaluation of regular expressions, by internal function validation, and by secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## DLP is part of the larger Microsoft Purview offering
 
@@ -57,8 +59,6 @@ A DLP implementation typically follows these major phases.
 - [Prepare for DLP](#prepare-for-dlp)
 - [Deploy your policies in production](#deploy-your-policies-in-production)
 
-
-<!--ADD DIAGRAM OF THE DLP LIFECYCLE WORK ON WITH MAS-->
 
 ### Plan for DLP
 
@@ -86,7 +86,7 @@ You can apply DLP policies to data at rest, data in use, and data in motion in l
 - SharePoint Online sites
 - OneDrive accounts
 - Teams chat and channel messages
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices
 - On-premises repositories
 - PowerBI sites
@@ -116,6 +116,9 @@ While in test mode, monitor the outcomes of the policy and fine-tune it so that 
 - add new people
 - add new restricted apps
 - add new restricted sites
+
+> [!NOTE]
+> _Stop processing more rules_ doesn't work in test mode, even when it's turned on.
 
 #### Enable the control and tune your policies
 

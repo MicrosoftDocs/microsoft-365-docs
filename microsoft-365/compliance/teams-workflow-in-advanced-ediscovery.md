@@ -1,9 +1,10 @@
 ---
 title: "Teams workflow in eDiscovery (Premium)"
+description: "Learn how to preserve, collect, review, and export content from Microsoft Teams in eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -12,21 +13,23 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "Learn how to preserve, collect, review, and export content from Microsoft Teams in eDiscovery (Premium)."
+ms.collection:
+- highpri 
+- tier1
+- purview-compliance
 ---
 
 # eDiscovery (Premium) workflow for content in Microsoft Teams
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 This article provides a comprehensive set of procedures, guidelines, and best practices for using Microsoft Purview eDiscovery (Premium) to preserve, collect, review, and export content from Microsoft Teams. The goal of this article is to help you optimize your eDiscovery workflow for Teams content.
 
-There are five categories of Teams content that you can collect and process using eDiscovery (Premium):
+There are six categories of Teams content that you can collect and process using eDiscovery (Premium):
 
 - **Teams 1:1 chats**. Chat messages, posts, and attachments shared in a Teams conversation between two people.  Teams 1:1 chats are also called *conversations*.
 
 - **Teams group chats**. Chat messages, posts, and attachments shared in a Teams conversation between three or more people. Also called *1:N* chats or *group conversations*.
+
+- **Teams reactions**. Reactions applied to chat messages, posts, and attachments in a Teams conversation.
 
 - **Teams channels**. Chat messages, posts, replies, and attachments shared in a standard Teams channel.
 
@@ -34,14 +37,21 @@ There are five categories of Teams content that you can collect and process usin
 
 - **Shared channels**. Message posts, replies, and attachments shared in a shared Teams channel.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Where Teams content is stored
 
-A prerequisite to managing Teams content in eDiscovery (Premium) is to understand the type of Teams content that you can collect, process, and review in eDiscovery (Premium) and where that content is stored in Microsoft 365. The following table lists Teams content type and where each is stored.
+A prerequisite to managing Teams content in eDiscovery (Premium) is to understand the type of Teams content that you can collect, process, and review in eDiscovery (Premium) and where that content is stored in Microsoft 365.
+
+Teams data is stored in Azure Cosmos DB. Teams compliance records captured by the substrate are in Exchange Online and are available for ediscovery. 
+
+The following table lists Teams content type and where each is stored for complaince purpose. The data stored in Exchange online is hidden from clients. eDiscovery never operates against the real Teams message data, which remains in Azure Cosmos DB.
 
 |&nbsp;|Location of chat messages and posts|Location of files and attachments|
 |---|---|---|
 |Teams 1:1 chats|Messages in 1:1 chats are stored in the Exchange Online mailbox of all chat participants.|Files shared in a 1:1 chat are stored in the OneDrive for Business account of the person who shared the file.|
 |Teams group chats|Messages in group chats are stored in the Exchange Online mailbox of all chat participants.|Files shared in group chats are stored in the OneDrive for Business account of the person who shared the file.|
+|Teams reactions|Messages in group chats are stored in the Exchange Online mailbox of all chat participants.|Files shared in group chats are stored in the OneDrive for Business account of the person who shared the file.|
 |Teams channels|All channel messages and posts are stored in the Exchange Online mailbox associated with the team.|Files shared in a channel are stored in the SharePoint Online site associated with the team.|
 |Private channels|Messages sent in a private channel are stored in the Exchange Online mailboxes of all members of the private channel.|Files shared in a private channel are stored in a dedicated SharePoint Online site associated with the private channel.|
 |Shared channels|Messages sent in a shared channel are stored in a system mailbox associated with the shared channel.<sup>1</sup>|Files shared in a shared channel are stored in a dedicated SharePoint Online site associated with the shared channel.|

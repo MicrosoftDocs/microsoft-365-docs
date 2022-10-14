@@ -4,7 +4,8 @@ description: Free training and guidance from advanced hunting experts
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, language, training, scenarios, basic to advanced, videos, step-by-step
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,11 +16,10 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-ms.technology: m365d
 ---
 
 # Get expert training on advanced hunting
@@ -84,6 +84,14 @@ CloudAppEvents
 | take 100
 | sort by Timestamp desc
 ```
+
+
+## Other resources
+
+| Title | Description | Watch |
+|---|---|---|
+|Joining tables in KQL | Learn the power of joining tables in creating meaningful results. | [YouTube](https://www.youtube.com/watch?v=8qZx7Pp5XgM) (4:17) |
+| Optimizing tables in KQL | Learn how to avoid timeouts when running complex queries by optimizing your queries. | [YouTube](https://www.youtube.com/watch?v=ceYvRuPp5D8) (5:38)  | 
 
 ## Related topics
 

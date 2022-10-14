@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -31,13 +32,9 @@ After you've set it up, the people in your organization must enroll their device
 
 To get to the device management panel, follow these steps:
 
-1. Go to the [Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
+1. Sign in to the Microsoft 365 admin center, and go to the [Mobile Device Management page](https://portal.office.com/adminportal/home?#/MifoDevices).
 
-2. Type Mobile Device Management into the search field, and select **Mobile Device Management** from the list of results.
-
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Mobile device management option.":::
-
-3. Select **Let's get started**.
+1. Select **Let's get started**.
 
 ## Manage mobile devices
 

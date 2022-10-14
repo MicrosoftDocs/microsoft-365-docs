@@ -1,42 +1,39 @@
 ---
-title: "Protect email Overview"
+title: "Use email securely"
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
-manager: scotv
-ms.date: 03/14/2022
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: "An overview on how to train your team to protect your email from malware, phishing, and other malicious cyberattacks, using the cybersecurity tools included with Microsoft 365 Business Premium."
+description: "Know what to watch for in email. Train your team to guard against  malware, phishing, and other malicious cyberattacks, using the cybersecurity tools included with Microsoft 365 Business Premium."
 ---
 
 # Protect all email
 
-As you know, emails are full of malicious attacks cloaked as harmless communications. Additionally, email systems are especially vulnerable because email is handled by everyone in the organization, and it relies upon humans making consistently safe decisions with those communications. In this mission you are ensuring email systems are safe from attackers. 
+:::image type="content" source="media/mission4.png" alt-text="Use email securely and watch for threats.":::
 
-The mission objectives are to:
+As you probably already know, email can contain malicious attacks cloaked as harmless communications. Additionally, email systems are especially vulnerable, because email is handled by everyone in the organization, and safety relies on humans making consistently good decisions with those communications. In this mission, learn how members of the organizations can all help to keep the system safe from attackers.
 
-- [Protect against phishing and other attacks](avoid-phishing-and-attacks.md)
-- [Set up encrypted email](send-encrypted-email.md)
+Your objectives are to:
 
-Accomplish these objectives before you move on to the [next mission](m365bp-collaborate-share-securely.md).
+- [Protect against phishing and other attacks](m365bp-avoid-phishing-and-attacks.md).
+- [Set up encrypted email](send-encrypted-email.md).
 
-:::image type="content" source="media/m365bp-use-email-securely.jpg" alt-text="Protect your email.":::
-   
+Once you've achieved these objectives, proceed to [Collaborate and share securely](m365bp-collaborate-share-securely.md).

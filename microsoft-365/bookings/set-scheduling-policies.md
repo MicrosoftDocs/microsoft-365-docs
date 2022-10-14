@@ -7,18 +7,17 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
 description: "Learn how to set scheduling policies for your business. Scheduling policies include the length of appointments, as well as acceptable lead and cancellation times."
 ---
 
 # Set your Microsoft Bookings scheduling policies
 
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
-
 Not all appointments are the same. Some take only a few minutes, while others can take hours or more. In Microsoft Bookings, the booking page is where you set the scheduling policies for your business. Scheduling policies include the length of appointments, acceptable lead and cancellation times, and automatic notifications of booking changes. Additional customization can be added for each service within the Services page, with additional duration settings and policies that apply only to that service.
 
-The policies you set here are the top-level policies. They are automatically applied to all the services you offer unless you choose to modify them on a per-service basis. For example, let's say that for most services, such as initial consultations, one-day notice for cancellations is acceptable. But for those services that require facility reservations or fees, such as golf lessons, you might require three days' notice. You can set this service-level policy on the Services page. See [Define your service offerings](define-service-offerings.md) for instructions.
+The policies you set here are the top-level policies. They're automatically applied to all the services you offer unless you choose to modify them on a per-service basis. For example, let's say that for most services, such as initial consultations, one-day notice for cancellations is acceptable. But for those services that require facility reservations or fees, such as golf lessons, you might require three days' notice. You can set this service-level policy on the Services page. See [Define your service offerings](define-service-offerings.md) for instructions.
 
 ## Types of scheduling policies
 

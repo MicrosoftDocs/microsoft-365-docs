@@ -4,7 +4,7 @@ description: Turn on definition retirement for Microsoft Defender Antivirus.
 keywords: Microsoft Defender Antivirus, antimalware, security, defender, definition retirement
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,9 +14,12 @@ ms.date: 06/10/2021
 ms.reviewer:
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
+search.appverid: met150
 ---
 
 # Turn on definition retirement

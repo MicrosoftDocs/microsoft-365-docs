@@ -7,13 +7,11 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection: scotvorg
 description: "Use this page to create your staff list and to manage staff member details such as name, phone number, and email address."
 ---
 
 # Add staff to Bookings
-
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
 
 The Staff page in Bookings is where you create your staffing list and manage staff member details such as name, phone number, and email address. You can also set working hours for each staff member from here.
 
@@ -27,7 +25,7 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 
 ## Steps
 
-1. Choose your calendar from the homepage. 
+1. Choose your calendar from the homepage.
 
 2. Go to staff option in left pane and select **Add new staff**.
 

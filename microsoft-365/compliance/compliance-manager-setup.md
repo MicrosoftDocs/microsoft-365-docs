@@ -10,9 +10,11 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- highpri
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
@@ -22,9 +24,9 @@ description: "Set Microsoft Purview Compliance Manager user permissions and role
 
 # Get started with Compliance Manager
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 **In this article:** This article helps you set up Compliance Manager. Learn how to **access** Compliance Manager, **set roles and permissions**, and configure **automatic testing of improvement actions**. Walk through **your Compliance Manager dashboard** and understand the main pages: the improvement actions page, the solutions page, the assessments page, and the assessment templates page.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Who can access Compliance Manager
 
@@ -85,8 +87,7 @@ The table below shows the functions allowed by each role in Compliance Manager. 
 | **Read but not edit data**| Compliance Manager Reader  | Azure AD Global reader, Security reader |
 | **Edit data**| Compliance Manager Contribution | Compliance Administrator |
 | **Edit test results**| Compliance Manager Assessor | Compliance Administrator |
-| **Manage assessments, and template and tenant data**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  |
-| **Assign users**| Global Administrator | Global Administrator |
+| **Manage assessments, templates, and tenant data; assign improvement actions**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  |
 
 ## Start a premium assessments trial
 
@@ -118,11 +119,19 @@ The Compliance Manager settings in the Microsoft Purview compliance portal allow
 
 ### Set up automated testing
 
-Compliance Manager detects signals from other Microsoft Purview solutions that your organization subscribes to, including data lifecycle management, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. In each improvement action's details page, the **Testing logic** field on the **Testing** tab will show what's required in the other solution in order for the action to pass and earn points toward your compliance score.
+Compliance Manager detects signals from other Microsoft Purview solutions that your organization may subscribe to, including data lifecycle management, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. Compliance Manager also detects signals from complementary improvement actions that are monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
-Compliance Manager also detects signals from complementary improvement actions that are also monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). Using these signals, Compliance Manager can automatically test certain improvement actions for you, which helps maximize efficiency in your compliance activities. When an improvement action is successfully tested and implemented, you receive the full amount of points, which gets credited to your overall compliance score.
+Using these signals, Compliance Manager can automatically test certain improvement actions for you, which helps maximize efficiency in your compliance activities. When an improvement action is successfully tested and implemented, you receive the full amount of points, which gets [credited to your overall compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 
-Automatic testing is turned on by default for organizations new to Compliance Manager. When you first deploy Microsoft 365 or Office 365, it takes approximately seven days to fully collect data and factor it into your compliance score. When automated testing is turned on, the action’s test date won’t be updated, but its test status will update. When new assessments are created, scores automatically include Microsoft control scores and Secure Score integration.
+**Automatic testing is turned on by default for organizations new to Compliance Manager.** When you first deploy Microsoft 365 or Office 365, it takes approximately seven days to fully collect data and factor it into your compliance score. When automated testing is turned on, the action’s test date won’t be updated, but its test status will update. When new assessments are created, scores automatically include Microsoft control scores and Secure Score integration. See [Manage automated testing settings](#manage-automated-testing-settings) below to edit or turn off this setting.
+
+#### How to tell which actions are tested automatically
+
+On your **Improvement actions** page, find the **Testing source** column. If the value is listed as **Automatic**, then the action is automatically tested by Compliance Manager.  If the value is **Manual**, then the action is tested by your organization. If the value is **Parent**, then the action inherits the testing status of another action to which it's linked. Get details about [improvement action testing source](compliance-manager-improvement-actions.md#update-testing-source).
+
+#### Which actions can't be tested automatically
+
+Improvement actions in templates not scoped to Microsoft 365 are currently not eligible for automatic testing. For example, universal templates, or a template for Microsoft Azure or Microsoft Dynamics, won't have actions that can be tested automatically. Learn more about [assessment templates](compliance-manager-templates.md).
 
 #### Manage automated testing settings
 
@@ -140,15 +149,12 @@ The global administrator for your organization can change the settings for autom
 
 6. Select **Save** to save your settings. You’ll receive a confirmation message at the top of your screen that your selection was saved. If you receive a failure notice, try again.
 
-**Note:** Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager Administrator can turn on automatic updates for individual actions, but not for all actions globally.
-
-**Learn more**
-- [Learn more about how continuous monitoring contributes to your compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
-- [Learn more about designating a testing source for an improvement action](compliance-manager-improvement-actions.md#update-testing-source).
+> [!NOTE]
+> Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager Administrator can turn on automatic updates for individual actions, but not for all actions globally.
 
 ### Manage user history
 
-The **Manage user history** settings help you quickly identify which users have worked with improvement actions in Compliance Manager. The identifiable user data associated with improvement actions includes any implementation and testing work done, documents they uploaded, and any notes they entered. Understanding and retrieving this type of data may be necessary for your organization’s own compliance needs.
+The **Manage user history** settings help you quickly identify which users have worked with improvement actions in Compliance Manager. The identifiable user data associated with improvement actions includes the status of the improvement actions and  documents they uploaded. Understanding and retrieving this type of data may be necessary for your organization’s own compliance needs.
 
 The user history settings also allow you to reassign all improvement actions from one user to another.
 

@@ -1,10 +1,10 @@
 ---
-title: Troubleshooting mode scenarios in Microsoft Defender for Endpoint
+title: Troubleshooting mode scenarios in Microsoft Defender for Endpoint 
 description: Use the Microsoft Defender for Endpoint troubleshooting mode to address various antivirus issues.
 keywords: antivirus, troubleshoot, troubleshooting mode, tamper protection, compatibility
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,12 +14,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
+- m365-security
+- tier3
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 
-# Troubleshooting mode scenarios in Microsoft Defender for Endpoint
+# Troubleshooting mode scenarios in Microsoft Defender for Endpoint 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -28,14 +29,13 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-
-Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot various Microsoft Defender antivirus features by enabling them from the device and testing different scenarios, even if they're controlled by the organization policy. The troubleshooting mode is disabled by default and requires you to turn it on for a device (and/or group of devices) for a limited time. Note that this is exclusively an Enterprise-only feature, and requires Microsoft 365 Defender access.
+Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot various Microsoft Defender Antivirus features by enabling them from the device and testing different scenarios, even if they're controlled by the organization policy. The troubleshooting mode is disabled by default and requires you to turn it on for a device (and/or group of devices) for a limited time. Note that this is exclusively an enterprise-only feature, and requires Microsoft 365 Defender access.
 
 ## Scenario 1: Unable to install application
 
 If you want to install an application but receive an error message that Microsoft Defender Antivirus and tamper protection is on, follow the steps below to troubleshoot the issue.
 
-1. Request the SOC admin to turn on troubleshooting mode. You'll get a Windows Security notification once the troubleshooting mode starts.  
+1. Request the security admin to turn on troubleshooting mode. You'll get a Windows Security notification once the troubleshooting mode starts.  
 
 2. Connect to the device (using Terminal Services for example) with local admin permissions.  
 
@@ -45,8 +45,9 @@ If you want to install an application but receive an error message that Microsof
 
 5. Launch an elevated PowerShell command prompt, and toggle off RTP. 
 
-    - Run `get-mppreference` to check RTP status.
-    - Run `set–mppreference` to turn off RTP Run. 
+    - Run `Get-MpComputerStatus` to check the RealTimeProtection status.
+    - Run `Set-mppreference -DisableRealtimeMonitoring $true` to turn off RTP.
+    - Run `Get-MpComputerStatus` again to verify to RealTimeProtection status.
 
 6. Try installing the application.
 
@@ -64,11 +65,11 @@ Sometimes during a scheduled scan, MsMpEng.exe can consume high CPU.
 
 5. Add process/file/folder/extension exclusions based on ProcMon findings using one of the following commands (the path, extension, and process exclusions mentioned below are examples only): 
 
-    - Set-mppreference -ExclusionPath (for example, C:\DB\DataFiles) 
+    - `Set-mppreference -ExclusionPath` (for example, C:\DB\DataFiles) 
     
-    - Set-mppreference –ExclusionExtension (for example, .dbx) 
+    - `Set-mppreference –ExclusionExtension` (for example, .dbx) 
     
-    - Set-mppreference –ExclusionProcess (for example, C:\DB\Bin\Convertdb.exe) 
+    - `Set-mppreference –ExclusionProcess` (for example, C:\DB\Bin\Convertdb.exe) 
 
 6. After adding the exclusion, check to see if the CPU usage has dropped. 
 
@@ -78,7 +79,7 @@ For more information on Set-MpPreference cmdlet configuration preferences for Wi
 
 When Microsoft Defender Antivirus real-time protection is turned on, application takes a long time to perform basic tasks. To turn off real-time protection and troubleshoot the issue, follow the steps below. 
 
-1. Request SOC admin to turn on troubleshooting mode on the device. 
+1. Request security admin to turn on troubleshooting mode on the device. 
 
 2. To disable RTP for this scenario, first turn off tamper protection. For more information, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md). 
 
@@ -86,7 +87,7 @@ When Microsoft Defender Antivirus real-time protection is turned on, application
 
 4. Launch an elevated PowerShell command prompt. 
 
-    - Set-mppreference -DisableRealtimeMonitoring $true 
+    - `Set-mppreference -DisableRealtimeMonitoring $true` 
 
 5. After disabling RTP, check to see if the application is slow. 
 
@@ -98,7 +99,7 @@ Attack Surface Reduction (ASR) is not allowing Microsoft Office plugin to work p
 
 2. Launch an elevated PowerShell command prompt. 
 
-    - Set-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EFC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Disabled 
+    - `Set-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EFC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Disabled` 
 
 3. After disabling the ASR Rule, confirm that the Microsoft Office plugin now works.
 
@@ -112,7 +113,7 @@ Network Protection is blocking Microsoft domain, preventing users from accessing
 
 2. Launch an elevated PowerShell command prompt. 
 
-    - Set-MpPreference -EnableNetworkProtection Disabled 
+    - `Set-MpPreference -EnableNetworkProtection Disabled` 
 
 3. After disabling Network Protection, check to see if the domain is now allowed. 
 

@@ -13,8 +13,11 @@ ms.custom:
 - goldenconfig
 ms.collection:
 - M365-identity-device-management
-- M365-security-compliance
-ms.prod: m365-security
+- m365-security
+- zerotrust-solution
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Recommended Microsoft Defender for Cloud Apps policies for SaaS apps
@@ -102,4 +105,4 @@ The following illustration and table provide several examples of policies that c
 
 ## Next steps
 
-For more information about using Defender for Cloud Apps, see [Microsoft Defender for Cloud Apps documentation](//cloud-app-security/).
+For more information about using Defender for Cloud Apps, see [Microsoft Defender for Cloud Apps documentation](/defender-cloud-apps/).

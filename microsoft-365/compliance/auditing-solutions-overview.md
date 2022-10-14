@@ -1,31 +1,36 @@
 ---
 title: "Microsoft Purview auditing solutions"
+description: "Learn how to audit the activities of users and administrators in your Microsoft 365 organization." 
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- m365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-audit
-- m365initiative-compliance
 - m365solution-overview
+- highpri
+- audit
 search.appverid:
 - MOE150
 - MET150
-description: "Learn how to audit the activities of users and administrators in your Microsoft 365 organization." 
 ms.custom: seo-marvel-apr2020
 ---
 
 # Auditing solutions in Microsoft Purview
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Microsoft Purview auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Audit records for these events are searchable by security ops, IT admins, insider risk teams, and compliance and legal investigators in your organization. This capability provides visibility into the activities performed across your Microsoft 365 organization.
+
+> [!NOTE]
+> Microsoft Purview auditing is the new name for the unified audit log.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Microsoft Purview auditing solutions
 
@@ -95,14 +100,15 @@ The following sections identify the licensing requirements for Audit (Standard) 
 
 ### Audit (Standard)
 
-- Microsoft Purview Business Basic subscription
-- Microsoft Purview Apps for Business subscription
-- Microsoft Purview Enterprise E3 subscription
-- Microsoft Purview Business Premium
-- Microsoft Purview Education A3 subscription
-- Microsoft Purview Government G3 subscription
-- Microsoft Purview Government G1 subscription
-- Microsoft Purview Frontline F1 or F3 subscription, or F5 Security add-on
+- Microsoft Business Basic subscription
+- Microsoft Business Standard subscription
+- Microsoft 365 Apps for Business subscription
+- Microsoft 365 Enterprise E3 subscription
+- Microsoft 365 Business Premium
+- Microsoft 365 Education A3 subscription
+- Microsoft 365 Government G3 subscription
+- Microsoft 365 Government G1 subscription
+- Microsoft 365 Frontline F1 or F3 subscription, or F5 Security add-on
 - Office 365 Enterprise E3 subscription
 - Office 365 Enterprise E1 subscription
 - Office 365 Education A1 subscription
@@ -153,7 +159,7 @@ If your organization has a subscription that supports Audit (Premium), perform t
   
    - Turning on the Audit (Premium) app/service plan must be for those users.
   
-   - Enabling the auditing of crucial events and then turning on the Audit (Premium)ing app/service plan for those users.
+   - Enabling the auditing of crucial events and then turning on the Audit (Premium) app/service plan for those users.
 
 2. Enable Audit (Premium) events to be logged when users perform searches in Exchange Online and SharePoint Online.
 
@@ -176,4 +182,4 @@ To implement Customer Key for auditing, you have to create a multi-workload Data
 
 ## Training
 
-Training your security operations team, IT administrators, and compliance investigators team in the fundamentals for Audit (Standard) and Audit (Premium) can help your organization get started more quickly using auditing to help with your investigations. Microsoft Purview provides the following resource to help these users in your organization getting started with auditing: [Describe the eDiscovery and audit capabilities of Microsoft Purview](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+Training your security operations team, IT administrators, and compliance investigators team in the fundamentals for Audit (Standard) and Audit (Premium) can help your organization get started more quickly using auditing to help with your investigations. Microsoft Purview provides the following resource to help these users in your organization getting started with auditing: [Describe the eDiscovery and audit capabilities of Microsoft Purview](/training/modules/describe-ediscovery-capabilities-of-microsoft-365).

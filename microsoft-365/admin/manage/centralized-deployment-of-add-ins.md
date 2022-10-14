@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -119,12 +120,14 @@ When the tool finishes running, it produces an output file in comma-separated (.
 - Office Activated - If they have activated Office
 - Supported Mailbox - If they are on an OAuth-enabled mailbox
 
+Should your Microsoft 365 reports show anonymous user names instead of actual user names, fix this issue by changing the reports setting in Microsoft 365 admin center. For detailed steps, see [Microsoft 365 reports show anonymous user names instead of actual user names](/office365/troubleshoot/miscellaneous/reports-show-anonymous-user-name).
+
 > [!NOTE]
 > Multifactor authentication is not supported when using the Central Deployment PowerShell module. The module only works with Basic authentication.
 
 ## User and group assignments
 
-The Centralized Deployment feature currently supports the majority of groups supported by Azure Active Directory, including Microsoft 365 groups, distribution lists, and security groups.
+The Centralized Deployment feature currently supports the majority of groups supported by Azure Active Directory, including Microsoft 365 groups, distribution lists, dynamic groups, and security groups.
 
 > [!NOTE]
 > Non-mail enabled security groups are not currently supported.

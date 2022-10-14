@@ -7,13 +7,16 @@ author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
+- highpri
 - M365-subscription-management
 - M365-identity-device-management
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
@@ -27,13 +30,15 @@ description: "Set up Microsoft Defender for Office 365 and safeguard sensitive d
 ---
 # Increase threat protection for Microsoft 365 for business
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 This article helps you increase the protection in your Microsoft 365 subscription to protect against phishing, malware, and other threats. These recommendations are appropriate for organizations with an increased need for security, like law offices and health care clinics.
 
 Before you begin, check your Office 365 Secure Score. Office 365 Secure Score analyzes your organization's security based on your regular activities and security settings, and assigns a score. Begin by taking note of your current score. To increase your score, complete the actions recommended in this article. The goal isn't to achieve the maximum score, but to be aware of opportunities to protect your environment that don't negatively affect productivity for your users.
 
 For more information, see [Microsoft Secure Score](../../security/defender/microsoft-secure-score.md).
 
-## Raise the level of protection against malware in mail
+## Watch: Raise the level of protection against malware in mail
 
 Your Office 365 or Microsoft 365 environment includes protection against malware. You can increase this protection by blocking attachments with file types that are commonly used for malware. 
 
@@ -49,25 +54,27 @@ To increase malware protection in email:
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-malware** in the **Policies** section.
 
-2. On the **Anti-malware** page, double-click on **Default (Default)**. A flyout appears. 
+1. On the **Anti-malware** page, double-click on **Default (Default)**. A flyout appears. 
 
-3. Select **Edit protection settings** at the bottom of the flyout. 
+1. Select **Edit protection settings** at the bottom of the flyout. 
 
-4. under **Protection settings**, select the checkbox next to **Enable the common attachments filter**. The file types that are blocked are listed directly below this control. Make sure that you add these file types:
+1. under **Protection settings**, select the checkbox next to **Enable the common attachments filter**. The file types that are blocked are listed directly below this control. Make sure that you add these file types:
 
    `ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif`
 
    To add or delete file types, select **Customize file types** at the end of the list.
 
-6. Select **Save.**
+1. Select **Save.**
 
 For more information, see [Anti-malware protection in EOP](../../security/office-365-security/anti-malware-protection.md).
 
-## Protect against ransomware
+## Watch: Protect against ransomware
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198018).
 
 Ransomware restricts access to data by encrypting files or locking computer screens. It then attempts to extort money from victims by asking for "ransom," usually in the form of cryptocurrencies like Bitcoin, in exchange for access to data.
 
-To protect against ransomware, create one or more mail flow rules to block file extensions that are commonly used for ransomware. (You added these rules in the [raise the level of protection against malware in mail](#raise-the-level-of-protection-against-malware-in-mail) step.) You can also warn users who receive these attachments in email.
+To protect against ransomware, create one or more mail flow rules to block file extensions that are commonly used for ransomware. (You added these rules in the [Watch: Raise the level of protection against malware in mail](#watch-raise-the-level-of-protection-against-malware-in-mail) step.) You can also warn users who receive these attachments in email.
 
 In addition to the files that you blocked in the previous step, it's a good practice to create a rule to warn users before opening Office file attachments that include macros. Ransomware can be hidden inside macros, so warn users not to open these files from people they don't know.
 
@@ -135,7 +142,9 @@ To create a mail transport rule, follow these steps:
 |Do the following ...|Block the message . . . reject the message and include an explanation.|
 |Provide message text|Auto-forwarding email outside this organization is prevented for security reasons.|
 
-## Protect your email from phishing attacks
+## Watch: Protect your email from phishing attacks
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198014).
 
 If you've configured one or more custom domains for your Office 365 or Microsoft 365 environment, you can configure targeted anti-phishing protection. Anti-phishing protection, part of Microsoft Defender for Office 365, can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you haven't configured a custom domain, you don't need to do this.
 
@@ -165,6 +174,8 @@ We recommend that you get started with this protection by creating a policy to p
 |Applied to|Select **The recipient domain is**. Under **Any of these**, select **Choose**. Select **+ Add**. Select the check box next to the name of the domain, for example, *contoso.<span><span>com*, in the list, and then select **Add**. Select **Done**.|
 
 ## Watch: Protect against malicious attachments and files with Safe Attachments
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198019).
 
 People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365, formerly called Microsoft 365 ATP, or Advanced Threat Protection, includes Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
 
@@ -203,7 +214,9 @@ After your policy has been in place for a while, visit the Reports page to see w
 
 For more information, see [Set up anti-phishing policies in Microsoft Defender for Office 365](../../security/office-365-security/set-up-anti-phishing-policies.md).
 
-## Protect against phishing attacks with Safe Links
+## Watch: Protect against phishing attacks with Safe Links
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198201).
 
 Hackers sometimes hide malicious websites in links in email or other files. Safe Links, part of Microsoft Defender for Office 365, can help protect your organization by providing time-of-click verification of web addresses (URLs) in email messages and Office documents. Protection is defined through Safe Links policies.
 

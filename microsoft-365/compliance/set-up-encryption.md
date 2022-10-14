@@ -19,8 +19,6 @@ description: "With Office 365, some encryption capabilities are turned on by def
 
 # Set up encryption in Office 365 Enterprise
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Encryption can protect your content from being read by unauthorized users. Because [encryption in Office 365](encryption.md) can be done using various technologies and methods, there isn't one single place where you turn on or set up encryption. This article provides information about various ways you can set up or configure encryption as part of your information protection strategy.
 
 > [!TIP]
@@ -42,6 +40,8 @@ With Office 365, several encryption capabilities are available by default. Addit
 |Files are shared in online meetings and IM conversations (Skype for Business Online)|When people are working with files using Skype for Business Online, TLS is used for the connection. This is built into Office 365 automatically. See [Security and Archiving (Skype for Business Online)](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features).|
 |Files are shared in online meetings and IM conversations (Microsoft Teams)|When people are working with files using Microsoft Teams, TLS is used for the connection. This is built into Office 365 automatically. Microsoft Teams does not currently support inline rendering of encrypted email. To prevent encrypted email from landing in Microsoft Teams as encrypted, see [Message Encryption FAQ](./ome-faq.yml#can-i-automatically-remove-encryption-on-incoming-and-outgoing-mail-).|
 |
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Additional information
 

@@ -1,12 +1,13 @@
 ---
-title: "Create a secure guest sharing environment"
+title: "Create a more secure guest sharing environment"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection: 
+- highpri
 - SPO_Content
 - M365-security-compliance
 - m365solution-3tiersprotection
@@ -18,12 +19,12 @@ ms.custom:
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
-description: Learn about available options to create a secure guest sharing environment in Microsoft 365, providing guest access for improved collaboration.
+description: Learn about available options to create a more secure guest sharing environment in Microsoft 365, providing guest access for improved collaboration.
 ---
 
-# Create a secure guest sharing environment
+# Create a more secure guest sharing environment
 
-In this article, we'll walk through a variety of options for creating a secure guest sharing environment in Microsoft 365. These are examples to give you an idea of the options available. You can use these procedures in different combinations to meet the security and compliance needs of your organization.
+In this article, we'll walk through a variety of options for creating a more secure guest sharing environment in Microsoft 365. These are examples to give you an idea of the options available. You can use these procedures in different combinations to meet the security and compliance needs of your organization.
 
 This article includes:
 
@@ -148,7 +149,7 @@ It's important to note that for SharePoint and OneDrive locations, documents wil
 
 ## Set up web-only access for guests
 
-You can reduce your attack surface and ease administration by requiring guests to access your teams, sites, and files by using a web browser only.
+You can require guests to access your teams, sites, and files by using a web browser only. This reduces the chance that they might download sensitive files and leave them on an unmanaged device. This is also useful when sharing with environments that use shared devices.
 
 For Microsoft 365 Groups and Teams, this is done with an Azure AD conditional access policy. For SharePoint, this is configured in the SharePoint admin center. (You can also [use sensitivity labels to restrict guests to web-only access](../compliance/sensitivity-labels-teams-groups-sites.md).)
 
@@ -253,7 +254,7 @@ With the policy in place, when a user types "Project Saturn" into a document, th
 
 ## Create a DLP policy to remove guest access to highly sensitive files
 
-You can use [Microsoft Purview data loss prevention (DLP)](../compliance/dlp-learn-about-dlp.md) to prevent unwanted guest sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label and remove guest access.
+You can use [Microsoft Purview Data Loss Prevention (DLP)](../compliance/dlp-learn-about-dlp.md) to prevent unwanted guest sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label and remove guest access.
 
 To create a DLP rule
 

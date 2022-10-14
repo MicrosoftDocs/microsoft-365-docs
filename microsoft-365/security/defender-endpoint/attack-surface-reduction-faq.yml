@@ -4,20 +4,20 @@ metadata:
   description: Find answers to frequently asked questions about Microsoft Defender for Endpoint's attack surface reduction rules.
   keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
   ms.pagetype: security
-  ms.prod: m365-security
+  ms.service: microsoft-365-security
+  ms.subservice: mde
   ms.mktglfcycl: manage
   ms.sitesec: library
   ms.localizationpriority: medium
   audience: ITPro
-  author: martyav
+  author: dansimp
   ms.author: dansimp
   ms.reviewer: oogunrinde, sugamar 
   manager: dansimp
   ms.custom: asr
   ms.topic: faq
-  ms.technology: mde
-  ms.collection: m365-security-compliance
-  ms.date: 1/18/2022
+  ms.collection: m365-security
+  ms.date: 09/13/2022
 
 title: Attack surface reduction frequently asked questions (FAQ)
 summary: |
@@ -64,7 +64,7 @@ sections:
       - question: |
           What rules to enable? All, or can I turn on individual rules?
         answer: |
-          To help you figure out what's best for your environment, we recommended that you enable ASR rules in [audit mode](audit-windows-defender.md). With this approach, you'll determine the possible affect to your organization. For example, your line-of-business applications.
+          To help you figure out what's best for your environment, we recommended that you enable ASR rules in [audit mode](audit-windows-defender.md). With this approach, you'll determine the possible effect to your organization. For example, your line-of-business applications.
 
       - question: |
           How do ASR rules exclusions work?
@@ -75,12 +75,12 @@ sections:
 
           Be aware of the following items about ASR rules exclusions (including wildcards and env. variables):
 
-          - ASR rules exclusions are independent from Microsoft Defender Antivirus exclusions
-          - Wildcards cannot be used to define a drive letter
-          - If you want to exclude more than one folder, in a path, use multiple instances of \*\ to indicate multiple nested folders (for example, c:\Folder\*\*\Test)
-          - Microsoft Endpoint Configuration Manager *does not* support wildcards (* or ?)
-          - If you want to exclude a file, that contains random characters (automated file generation), you can use the '?' symbol (for example, C:\Folder\fileversion?.docx)
-          - ASR exclusions in Group Policy don't support quotes (the engine will natively handle long path, spaces, etc., so there's no need to use quotes)
+          - ASR rules exclusions are independent from Microsoft Defender Antivirus exclusions.
+          - Wildcards cannot be used to define a drive letter.
+          - If you want to exclude more than one folder, in a path, use multiple instances of ```\*\``` to indicate multiple nested folders (for example, ```c:\Folder\*\*\Test```)
+          - Microsoft Endpoint Configuration Manager supports wildcards (* or ?).
+          - If you want to exclude a file, that contains random characters (automated file generation), you can use the '?' symbol (for example, ```C:\Folder\fileversion?.docx```)
+          - ASR exclusions in Group Policy don't support quotes (the engine will natively handle long path, spaces, etc., so there's no need to use quotes).
           - ASR rules run under NT AUTHORITY\SYSTEM account, so environmental variables are limited to machine variables.
 
       - question: |
