@@ -15,7 +15,7 @@ search.appverid:
   - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
   - seo-marvel-apr2020
 description: Admins can learn about the Safe Attachments feature in Microsoft Defender for Office 365.
@@ -34,8 +34,6 @@ ms.service: microsoft-365-security
 Safe Attachments in [Microsoft Defender for Office 365](defender-for-office-365.md) provides an additional layer of protection for email attachments that have already been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection.md). Specifically, Safe Attachments uses a virtual environment to check attachments in email messages before they're delivered to recipients (a process known as _detonation_).
 
 Safe Attachments protection for email messages is controlled by Safe Attachments policies. Although there's no default Safe Attachments policy, the **Built-in protection** preset security policy provides Safe Attachments protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Attachments policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). You can also create Safe Attachments policies that apply to specific users, group, or domains. For instructions, see [Set up Safe Attachments policies in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md).
-
-If a file attachment is encrypted or password protected, it can't be examined by Safe Attachments. The message with the attachment will be delivered, and the recipient receives no warning that the file hasn't been scanned by Safe Attachments.
 
 The following table describes scenarios for Safe Attachments in Microsoft 365 and Office 365 organizations that include Microsoft Defender for Office 365 (in other words, lack of licensing is never an issue in the examples).
 

@@ -16,7 +16,9 @@ ms.reviewer:
 manager: dansimp
 ms.subservice: mde
 ms.collection: 
-- M365-security-compliance
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Deploy, manage, and report on Microsoft Defender Antivirus

@@ -11,10 +11,13 @@ author: jweston-1
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # List all remediation activities
@@ -98,14 +101,14 @@ vendorId|String|Related vendor name|Microsoft
 ### Request example
 
 ```http
-GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
+GET https://api.securitycenter.windows.com/api/remediationtasks/
 ```
 
 ### Response example
 
 ```json
 {
-    "@odata.context": "https://wpatdadi-luna-stg.cloudapp.net/api/$metadata#RemediationTasks",
+    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#RemediationTasks",
     "value": [
         {
             "id": "03942ef5-aewb-4w6e-b555-d6a97013844w",

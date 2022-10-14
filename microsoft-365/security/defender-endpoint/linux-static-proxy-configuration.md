@@ -12,10 +12,12 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Configure Microsoft Defender for Endpoint on Linux for static proxy discovery
@@ -80,3 +82,8 @@ After modifying `mdatp.service`, save the file and restart the service so the ch
 ```bash
 sudo systemctl daemon-reload; sudo systemctl restart mdatp
 ```
+> [!NOTE]
+> To remove any additions you might have made before uninstalling `mdatp`, delete the custom file from `/etc/systemd/system`.
+
+> [!NOTE]
+> Red Hat Enterprise Linux 6.X and CentOS 6.X don't support **systemctl**. To configure statuc proxy for MDE, use  **mdatp config proxy set --value http://address:port**. This method works for all other Linux distributions as well.

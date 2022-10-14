@@ -1,5 +1,5 @@
 ---
-title: Prebuilt models overview in Microsoft SharePoint Syntex
+title: Prebuilt models overview in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,12 +13,12 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about prebuilt models in Microsoft SharePoint Syntex.
+description: Learn about prebuilt models in Microsoft Syntex.
 ---
 
-# Prebuilt models overview in Microsoft SharePoint Syntex
+# Prebuilt models overview in Microsoft Syntex
 
-In addition to [document understanding models](document-understanding-overview.md) and [form processing models](form-processing-overview.md), SharePoint Syntex provides prebuilt models to automate the extraction of information.
+In addition to [document understanding models](document-understanding-overview.md) and [form processing models](form-processing-overview.md), Microsoft Syntex provides prebuilt models to automate the extraction of information.
 
 Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization. 
 

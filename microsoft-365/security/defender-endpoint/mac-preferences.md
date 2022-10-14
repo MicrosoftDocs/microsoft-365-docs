@@ -11,10 +11,12 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Set preferences for Microsoft Defender for Endpoint on macOS
@@ -95,8 +97,8 @@ Enables or disables file hash computation feature. When this feature is enabled,
 |---|---|
 |**Domain**|`com.microsoft.wdav`|
 |**Key**|enableFileHashComputation|
-|**Data type**|String|
-|**Possible values**|disabled (default) <p> enabled|
+|**Data type**|Boolean|
+|**Possible values**|false (default) <p> true|
 |**Comments**|Available in Defender for Endpoint version 101.73.77 or higher.|
 
 #### Run a scan after definitions are updated

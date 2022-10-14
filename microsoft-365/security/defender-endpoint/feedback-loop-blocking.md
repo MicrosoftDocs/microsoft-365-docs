@@ -15,7 +15,10 @@ ms.custom:
   - next-gen
   - edr
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Feedback-loop blocking
