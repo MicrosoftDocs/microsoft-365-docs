@@ -26,6 +26,8 @@ Syntex uses [custom models](#custom-models) and [prebuilt models](#prebuilt-mode
 
 ![Diagram showing the types of Syntex custom and prebuilt models.](../media/content-understanding/syntex-model-types-diagram.png)
 
+Models can be either *enterprise models*, which are created in a [content center](create-a-content-center.md), or *local models*, which are created on your [local SharePoint site](create-local-model.md).
+
 <!---
 </br>
 
