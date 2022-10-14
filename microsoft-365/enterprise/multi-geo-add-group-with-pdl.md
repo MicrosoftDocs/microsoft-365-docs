@@ -55,6 +55,6 @@ New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Publi
 
 ## Related topics
 
-[Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+[Connect to Exchange Online PowerShell](https://learn.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
 
-[Create groups with a specific preferred data location using Graph API](/graph/api/group-post-groups)
+[Create groups with a specific preferred data location using Graph API](https://learn.microsoft.com/graph/api/group-post-groups)
