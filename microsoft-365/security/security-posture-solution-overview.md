@@ -26,7 +26,7 @@ ms.collection:
 
 It has never been more important to be able to detect and defend your organization against cyber security threats.  Knowing your assets, using the built-in configurations available to you, and taking recommended actions will not only help you build great security posture and resilience it will also help prepare you to deal with new and evolving threats.
 
-As an organization’s security posture is constantly changing alongside the cybersecurity landscape, making security posture improvements should be a continuous process. This article describes how you can build a process to strengthen your organization's security posture using capabilities available in Microsoft Defender 365.
+As an organization’s security posture is constantly changing alongside the cybersecurity landscape, making security posture improvements should be a continuous process. This article describes how you can strengthen your organization's security posture using capabilities available in Microsoft Defender 365.
 
 It will help you better understand your overall security posture and provide a framework to help you assess, improve, and maintain your security posture to fit your organization's security needs.
 
