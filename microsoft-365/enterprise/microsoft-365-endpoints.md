@@ -2,14 +2,15 @@
 title: "Microsoft 365 endpoints"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: landing-page
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: 
+ms.collection:
+- scotvorg 
 - M365-subscription-management
 - Strat_O365_Enterprise
 f1.keywords:

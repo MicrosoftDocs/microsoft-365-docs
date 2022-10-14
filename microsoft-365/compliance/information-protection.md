@@ -16,16 +16,13 @@ search.appverid:
 ms.collection:
 - m365solution-mip
 - m365initiative-compliance
+- highpri
+- tier1
 recommendations: false
 description: "Implement Microsoft Purview Information Protection capabilities to help you protect sensitive information wherever it lives or travels."
 ---
 
 # Protect your sensitive data with Microsoft Purview
-
-> [!TIP]
-> *Did you know you can try the premium versions of all nine Microsoft Purview solutions for free?* Use the 90-day Purview solutions trial to explore how robust Purview capabilities can help your organization meet its compliance needs. Microsoft 365 E3 and Office 365 E3 customers can start now at the [Microsoft Purview compliance portal trials hub](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Learn details about [who can sign up and trial terms](compliance-easy-trials.md).
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Licensing for Microsoft 365 Security & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
@@ -35,9 +32,11 @@ These information protection capabilities give you the tools to [know your data]
 
 ![Image of how Microsoft Purview Information Protection helps you discover, classify, and protect sensitive data.](../media/powered-by-intelligent-platform.png)
 
-For prescriptive guidance to deploy a Microsoft Purview Information Protection solution for your organization, see [Deploy an information protection solution with Microsoft Purview](information-protection-solution.md).
+Use the following sections to learn more about the available capabilities and how to get started with each one. However, if you're looking for a guided deployment, see [Deploy an information protection solution with Microsoft Purview](information-protection-solution.md).
 
-For information about governing your data, see [Govern your data with Microsoft Purview](manage-Information-governance.md).
+For information about governing your data for compliance or regulatory requirements, see [Govern your data with Microsoft Purview](manage-data-governance.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Know your data
 
@@ -55,7 +54,7 @@ To apply flexible protection actions that include encryption, access restriction
 
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|---------------------|
-|[Sensitivity labels](sensitivity-labels.md)| A single solution across apps, services, and devices to label and protect your data as it travels inside and outside your organization. <br /><br /> Example scenarios: <br />- [Manage sensitivity labels for Office apps](sensitivity-labels-office-apps.md) <br />- [Encrypt documents and emails](encryption-sensitivity-labels.md) <br />-  [Apply and view labels in Power BI](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> For a comprehensive list of scenarios for sensitivity labels, see the Get started documentation.|[Get started with sensitivity labels](get-started-with-sensitivity-labels.md) |
+|[Sensitivity labels](sensitivity-labels.md)| A single labeling solution across apps, services, and devices to protect your data as it travels inside and outside your organization. <br /><br /> Example scenarios: <br />- [Manage sensitivity labels for Office apps](sensitivity-labels-office-apps.md) <br />- [Encrypt documents and emails](encryption-sensitivity-labels.md) <br />-  [Apply and view labels in Power BI](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> For a comprehensive list of supported scenarios for sensitivity labels, see the Get started documentation.|[Get started with sensitivity labels](get-started-with-sensitivity-labels.md) |
 |[Azure Information Protection unified labeling client](/azure/information-protection/rms-client/aip-clientv2)| For Windows computers, extends labeling to File Explorer and PowerShell, with additional features for Office apps if needed| [Azure Information Protection unified labeling client administrator guide](/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[Double Key Encryption](double-key-encryption.md)| Under all circumstances, only your organization can ever decrypt protected content or for regulatory requirements, you must hold encryption keys within a geographical boundary. | [Deploy Double Key Encryption](double-key-encryption.md#deploy-dke)|
 |[Office 365 Message Encryption (OME)](ome.md)| Encrypts email messages and attached documents that are sent to any user on any device, so only authorized recipients can read emailed information. <br /><br />  Example scenario: [Revoke email encrypted by Advanced Message Encryption](revoke-ome-encrypted-mail.md) | [Set up new Message Encryption capabilities](set-up-new-message-encryption-capabilities.md)|

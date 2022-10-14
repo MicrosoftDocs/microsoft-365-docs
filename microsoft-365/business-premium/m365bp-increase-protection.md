@@ -1,44 +1,44 @@
 ---
-title: "Increase threat protection for Microsoft 365 Business Premium"
+title: "Protect against malware and other threats with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: how-to
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 10/05/2022
 ms.localizationpriority: high
 ms.collection:
-- Adm_O365
-- M365-subscription-management
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
-- admindeeplinkMAC
-- admindeeplinkEXCHANGE
-- admindeeplinkSPO
 search.appverid:
 - BCS160
 - MET150
 description: "Get help with increasing the level of protection in Microsoft 365 Business Premium"
 ---
 
-# Increase threat protection for Microsoft 365 Business Premium
+# Protect against malware and other cyberthreats with Microsoft 365 Business Premium
 
-In this objective, you increase your threat protection with Microsoft 365 Business Premium. It's critical to protect your business against phishing, malware, and other threats. This objective includes information about:
+In this objective, you increase your threat protection with Microsoft 365 Business Premium. It's critical to protect your business against phishing, malware, and other threats. This article includes information about:
 
-- [Preset security policies](#review-and-apply-preset-security-policies) that can save a lot of time in setup and configuration
-- [Custom security policies](#create-custom-security-policies) that you can define to suit your business needs
-- [How to adjust your sharing settings for SharePoint and OneDrive files and folders](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
-- [Alert policies](#review-your-alert-policies) that monitor specific files and how they are used. 
+- [Preset security policies](#review-and-apply-preset-security-policies) that can save a lot of time in setup and configuration.
+- [Custom security policies](#create-custom-security-policies) that you can define to suit your business needs.
+- [How to adjust your sharing settings for SharePoint and OneDrive files and folders](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
+- [Alert policies](#review-your-alert-policies) that monitor specific files and how they are used.
+- [Manage calendar sharing](#manage-calendar-sharing) to enable people to schedule meetings appropriately.
+- [Your next objectives](#next-objectives).
 
 ## Review and apply preset security policies
 
-Your subscription includes [preset security policies](../security/office-365-security/preset-security-policies.md) that use recommended settings for anti-spam, anti-malware, and anti-phishing protection. By default, built-in protection is enabled; however, consider applying standard or strict protection for increased security. 
+Your subscription includes [preset security policies](../security/office-365-security/preset-security-policies.md) that use recommended settings for anti-spam, anti-malware, and anti-phishing protection. By default, built-in protection is enabled; however, consider applying standard or strict protection for increased security.
 
 :::image type="content" source="media/m365bp-presetsecuritypolicies.png" alt-text="Screenshot of preset security policies.":::
 
@@ -97,9 +97,9 @@ To assign preset security policies, follow these steps:
 
 2. Go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. (To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.)
 
-2. On the **Preset security policies** page, in either the **Standard protection** or **Strict protection** section, change the toggle from **Disabled** to **Enabled**, and then select **Manage**.
+3. On the **Preset security policies** page, in either the **Standard protection** or **Strict protection** section, select **Manage Protection Settings**.
 
-3. The **Apply Standard protection** or **Apply Strict protection** wizard starts in a flyout. On the **EOP protections apply to** page, identify the internal recipients that the policies apply to (recipient conditions):
+4. The **Apply Standard protection** or **Apply Strict protection** wizard starts in a flyout. On the **EOP protections apply to** page, identify the internal recipients that the policies apply to (recipient conditions):
    - **Users**
    - **Groups**
    - **Domains**
@@ -112,11 +112,11 @@ To assign preset security policies, follow these steps:
 
    When you're finished, select **Next**.
 
-4. On the **Defender for Office 365 protections apply to** page to identify the internal recipients that the policies apply to (recipient conditions). Specify users, groups, and domains just like what you did in the previous step.
+5. On the **Defender for Office 365 protections apply to** page to identify the internal recipients that the policies apply to (recipient conditions). Specify users, groups, and domains just like what you did in the previous step.
 
    When you're finished, click **Next**.
 
-5. On the **Review and confirm your changes** page, verify your selections, and then select **Confirm**.
+6. On the **Review and confirm your changes** page, verify your selections, and then select **Confirm**.
 
 > [!TIP]
 > To learn more about assigning preset security policies, see the following articles:
@@ -139,7 +139,7 @@ Use our quick-start guide, [Protect against threats](../security/office-365-secu
 By default, sharing levels are set to the most permissive level for both SharePoint and OneDrive. We recommend changing the default settings to better protect your business.
 
 1. Go to <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing** in the SharePoint admin center</a>, and sign in with an account that has [admin permissions for your organization](/sharepoint/sharepoint-admin-role).
- 
+
 2. Under **External sharing**, specify the level of sharing. (We recommend using **Least permissive** to prevent external sharing.)
 
 3. Under **File and folder links**, select an option (such as **Specific people**). Then choose whether to grant View or Edit permissions by default for shared links (such as **View**).
@@ -161,7 +161,7 @@ The following image shows some of the default policies that are included with Mi
 
 ### View your alert policies
 
-1. Go to the Microsoft 365 Compliance center at [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.
+1. Go to the Microsoft Purview compliance portal at [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.
 
 2. In the navigation pane, choose **Policies**, and then choose **Alert policies**.
 
@@ -174,26 +174,22 @@ The following image shows some of the default policies that are included with Mi
 
 ### How to view alerts
 
-Depending on the specific alert, you can view your alerts in either the Microsoft 365 Defender portal or the Microsoft 365 Compliance center.
+You can view your alerts in either the Microsoft 365 Defender portal or the Microsoft Purview compliance portal.
 
 | Type of alert  | What to do  |
 |---------|---------|
 | Security alert, such as when a user clicks a malicious link, an email is reported as malware or phish, or a device is detected as containing malware     | Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and under **Email & collaboration** select **Policies & rules** > **Alert policy**. Alternatively, you can go directly to <https://security.microsoft.com/alertpolicies>. |
-| Compliance alert, such as when a user shares sensitive or confidential information (data loss prevention alert) or there's an unusual volume of external file sharing (information governance alert)    | Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, and then select **Policies** > **Alert** > **Alert policies**.  |
+| Compliance alert, such as when a user shares sensitive or confidential information (data loss prevention alert) or there's an unusual volume of external file sharing (information governance alert)    | Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, and then select **Policies** > **Alert** > **Alert policies**.  |
 
 For more information, see [View alerts](../compliance/alert-policies.md#view-alerts).
 
-## Disable or manage calendar sharing
+## Manage calendar sharing
 
-You can prevent people in your organization from sharing their calendars. You can also manage what level of detail they can share. For example, you can restrict the sharing to free/busy times only.
+You can help people in your organization share their calendars appropriately for better collaboration. You can manage what level of detail they can share, such as by limiting the details that are shared to free/busy times only.
 
 1. Go [Org settings in the Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2053743) and sign in.
 
-2. Choose **Calendar**, and choose whether people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone.
-
-   We recommend clearing the **External sharing** option.
-
-   If you choose the share with anyone option, you can decide to also only share free/busy information.
+2. Choose **Calendar**, and choose whether people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone. We recommend clearing the **External sharing** option. If you choose to share calendars with anyone option, you can choose to also share free/busy information only.
 
 3. Choose **Save changes** on the bottom of the page.
 
@@ -207,4 +203,11 @@ You can prevent people in your organization from sharing their calendars. You ca
 
 If your users are allowed to share their calendars, see [these instructions](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for how to share from Outlook on the web.
 
-Okay, now it's time to start your mission to [**set up BYOD devices**](m365bp-devices-overview.md).
+## Next objectives
+
+Proceed to:
+
+- [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md)
+- [Protect all email](m365bp-protect-email-overview.md)
+- [Collaborate and share securely](m365bp-collaborate-share-securely.md)
+- [Set up and secure managed devices](m365bp-protect-devices.md)

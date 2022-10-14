@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -152,15 +152,21 @@ Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 
 Microsoft 365 Groups in Outlook are created as Private by default. If your organization wants Microsoft 365 Groups to be created as Public by default (or back to Private), use this PowerShell cmdlet syntax:
 
- `Set-OrganizationConfig -DefaultGroupAccessType Public`
+ ```powershell
+ Set-OrganizationConfig -DefaultGroupAccessType Public
+ ```
 
 To set to Private:
 
- `Set-OrganizationConfig -DefaultGroupAccessType Private`
+ ```powershell
+ Set-OrganizationConfig -DefaultGroupAccessType Private
+ ```
 
 To verify the setting:
 
- `Get-OrganizationConfig | ft DefaultGroupAccessType`
+ ```powershell
+ Get-OrganizationConfig | ft DefaultGroupAccessType
+ ```
 
 To learn more, see [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) and [Get-OrganizationConfig](/powershell/module/exchange/get-organizationconfig).
 

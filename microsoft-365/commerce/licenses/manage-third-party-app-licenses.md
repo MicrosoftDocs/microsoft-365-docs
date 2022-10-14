@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
@@ -19,7 +20,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Learn how to manage licenses for independent software vendor (ISV) apps in the Microsoft 365 admin center."
-ms.date: 06/15/2021
+ms.date: 06/08/2022
 ---
 
 # Manage ISV app licenses in the Microsoft 365 admin center
@@ -47,7 +48,9 @@ You must be a Global, License, or User admin to assign licenses. For more inform
 
 ## Add or remove ISV app licenses for your account
 
-ISV app licenses are managed by the app vendor. Contact the vendor to add or remove licenses for your account.
+If you bought your app through Microsoft at https://appsource.microsoft.com, you can [add or remove licenses](buy-licenses.md) in the Microsoft 365 admin center.
+
+If you bought an ISV app through an app vendor, contact the vendor to add or remove licenses from your account.
 
 ## Next steps
 

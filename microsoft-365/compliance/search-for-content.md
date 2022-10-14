@@ -1,24 +1,29 @@
 ---
 title: "Search for content"
+description: "Use the Content search eDiscovery tool in the Microsoft Purview compliance portal to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-description: "Use the Content search eDiscovery tool in the Microsoft Purview compliance portal to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business."
+ms.collection:
+- highpri 
+- tier1
+- purview-compliance
+- content-search
 ---
 
 # Search for content using the Content search tool
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Use the Content search tool in the Microsoft Purview compliance portal to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business. You can use the content search tool to search for email, documents, and instant messaging conversations in collaboration tools such as Microsoft Teams and Microsoft 365 Groups.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Search for content
 
 The first step is to starting using the Content search tool to choose content locations to search and configure a keyword query to search for specific items. Or, you can just leave the query blank and return all items in the target locations.
@@ -65,7 +70,7 @@ Content search is easy to use, but it's also a powerful tool. Behind-the-scenes,
 
 ## Use scripts for advanced scenarios
 
-Sometimes you have to perform more advanced, complex, and repetitive content search tasks. In these cases, it's easier and faster to use commands in Security & Compliance Center PowerShell. To help make this easier, we've created a number of Security & Compliance Center PowerShell scripts to help you complete complex content search-related tasks.
+Sometimes you have to perform more advanced, complex, and repetitive content search tasks. In these cases, it's easier and faster to use commands in Security & Compliance PowerShell. To help make this easier, we've created a number of Security & Compliance PowerShell scripts to help you complete complex content search-related tasks.
 
 - [Search specific mailbox and site folders](use-content-search-for-targeted-collections.md) (called a  *targeted* collection) when you're confident that items responsive to a case are located in that folder
 

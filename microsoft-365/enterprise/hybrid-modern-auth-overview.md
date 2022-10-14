@@ -3,14 +3,15 @@ title: "Hybrid Modern Authentication overview and prerequisites for use with on-
 ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/03/2021
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
+- scotvorg
 - M365-security-compliance
 f1.keywords:
 - NOCSH

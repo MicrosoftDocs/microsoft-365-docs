@@ -2,37 +2,27 @@
 title: "Remove company data from devices"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: how-to
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
-- M365-subscription-management
-- M365-identity-device-management 
-- Adm_TOC
+- m365-security
+- tier1
 ms.custom:
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
-- OKR_SMB_M365
-- seo-marvel-mar
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: "Discover how to use Microsoft 365 for business to remove company data that your users have on their devices or Windows PCs."
 ---
 
 # Remove company data from devices
-
-This article applies to Microsoft 365 Business Premium.
-
-> [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
 
 ## Remove company data
 
@@ -53,4 +43,4 @@ You can use Microsoft 365 for business to remove company data that your users ha
 
 ## See also
 
-[Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
+[Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)

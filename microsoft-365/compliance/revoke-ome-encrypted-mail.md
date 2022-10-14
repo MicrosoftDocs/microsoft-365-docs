@@ -9,10 +9,10 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 03/04/2022
+ms.date: 05/02/2022
 ms.collection: 
 - Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MET150
 description: "As an administrator and as a message sender, you can revoke certain emails that were encrypted with Microsoft Purview Advanced Message Encryption."
@@ -20,9 +20,9 @@ description: "As an administrator and as a message sender, you can revoke certai
 
 # Revoke email encrypted by Advanced Message Encryption
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Email revocation is offered as part of Microsoft Purview Advanced Message Encryption. Microsoft Purview Advanced Message Encryption is included in [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (Nonprofit Staff Pricing), Office 365 Enterprise E5 (Nonprofit Staff Pricing), and Office 365 Education A5. To use the Advanced Message Encryption revocation and expiration functions, enable the **Premium Encryption in Office 365** option in your E5 license.
 
-Email revocation is offered as part of Microsoft Purview Advanced Message Encryption. Microsoft Purview Advanced Message Encryption is included in [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (Nonprofit Staff Pricing), Office 365 Enterprise E5 (Nonprofit Staff Pricing), and Office 365 Education A5. If your organization has a subscription that does not include Microsoft Purview Advanced Message Encryption, you can purchase it with the Microsoft 365 E5 Compliance SKU add-on for Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing), or the Office 365 Advanced Compliance SKU add-on for Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing), or Office 365 SKUs.
+If your organization has a subscription that does not include Microsoft Purview Advanced Message Encryption, you can purchase it with the Microsoft 365 E5 Compliance SKU add-on for Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing), or the Office 365 Advanced Compliance SKU add-on for Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing), or Office 365 SKUs.
 
 This article is part of a larger series of articles about [Office 365 Message Encryption](ome.md).
 
@@ -31,6 +31,8 @@ If a message was encrypted using Microsoft Purview Advanced Message Encryption, 
 > [!NOTE]
 > To guarantee that the ability to track and revoke OME messages is available, you must add a custom branding template. See [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md)
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Encrypted emails that you can revoke
 
 Admins and message senders can revoke encrypted emails if the recipient received a link-based, branded encrypted email. If the recipient received a native inline experience in a supported Outlook client, then you can't revoke the message.

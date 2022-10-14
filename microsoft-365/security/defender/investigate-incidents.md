@@ -2,7 +2,8 @@
 title: Investigate incidents in Microsoft 365 Defender
 description: Investigate incidents related to devices, users, and mailboxes.
 keywords: incident, incidents, analyze, response, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +15,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
-  - incidentresponse
-  - m365solution-incidentresponse
-  - m365solution-overview
+  - m365-security
+  - tier1
 ms.topic: conceptual
 search.appverid: 
   - MOE150
-ms.technology: m365d
+  - MET150
 ---
 
 # Investigate incidents in Microsoft 365 Defender
@@ -121,7 +119,7 @@ You can select the check mark for a device to see details of the device, directo
 From the device page, you can gather additional information about the device, such as all of its alerts, a timeline, and security recommendations. For example, from the **Timeline** tab, you can scroll through the machine timeline and view all events and behaviors observed on the machine in chronological order, interspersed with the alerts raised.
 
 > [!TIP]
-> You can do on-demand scans on a device page. In the Microsoft 365 Defender portal, choose **Endpoints > Device inventory**. Select a device that has alerts, and then run an antivirus scan. Actions, such as antivirus scans, are tracked and are visible on the **Device inventory** page. To learn more, see [Run Defender Antivirus scan on devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
+> You can do on-demand scans on a device page. In the Microsoft 365 Defender portal, choose **Endpoints > Device inventory**. Select a device that has alerts, and then run an antivirus scan. Actions, such as antivirus scans, are tracked and are visible on the **Device inventory** page. To learn more, see [Run Microsoft Defender Antivirus scan on devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
 
 ## Users
 

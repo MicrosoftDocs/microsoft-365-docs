@@ -9,14 +9,17 @@ manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 ms.custom:
   - next-gen
   - edr
   - admindeeplinkDEFENDER
-ms.collection: m365-security-compliance
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Behavioral blocking and containment
@@ -115,7 +118,7 @@ A few minutes after the artifact was blocked, multiple instances of the same fil
 This example shows that with behavioral blocking and containment capabilities, threats are detected, contained, and blocked automatically.
 
 > [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
+> If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

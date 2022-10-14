@@ -2,8 +2,8 @@
 title: Enable and configure Microsoft Defender Antivirus protection capabilities
 description: Enable and configure Microsoft Defender Antivirus real-time protection features such as behavior monitoring, heuristics, and machine learning
 keywords: antivirus, real-time protection, rtp, machine learning, behavior monitoring, heuristics
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,10 @@ ms.topic: article
 ms.date: 10/22/2021
 manager: dansimp
 ms.custom: nextgen
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy
@@ -116,7 +119,7 @@ The main real-time protection capability is enabled by default, but you can disa
 6. Close **Local Group Policy Editor**.
 
 > [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
+> If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

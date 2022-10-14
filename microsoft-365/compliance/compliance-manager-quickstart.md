@@ -10,9 +10,10 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
@@ -22,13 +23,13 @@ description: "Use the Compliance Manager quickstart guide to help you along your
 
 # Compliance Manager quickstart
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 **In this article:** Use this quickstart guide to help you along your journey of using Microsoft Purview Compliance Manager to manage your organization’s compliance with regulations, policies, and standards.
 
 Compliance Manager provides intelligent and actionable data upon your first visit. Compliance Manager also has advanced capabilities for scaling your compliance when you’re ready. Available assessments depend on your licensing agreement; [learn more](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 Whether you’re coming to Compliance Manager for the first time, or are ready to use some of the advanced features, this guide can support you along your journey.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## First visit: get to know Compliance Manager
 
@@ -44,7 +45,7 @@ Our [Compliance Manager overview page](compliance-manager.md) is the best first 
 - [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
 - [Understand assessments](compliance-manager.md#assessments)
-- [Do a quick scan of your environment using the Microsoft Compliance Configuration Manager](compliance-manager-mcca.md)
+- [Do a quick scan of your environment using the Configuration Analyzer for Microsoft Purview](compliance-manager-mcca.md)
 
 ## Ramping up: configure Compliance Manager to manage your compliance activities
 

@@ -1,13 +1,14 @@
 ---
 title: "Microsoft 365 admin center Viva Learning activity reports"
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -17,7 +18,7 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: "Learn how to get a Microsoft 365 Viva Learning activity report using the Microsoft 365 Reports dashboard in the Microsoft 365 admin center."
+description: "Get a Microsoft 365 Viva Learning activity report to understand Viva Learning licensed user activity such as user interactions and features being used."
 ---
 
 # Microsoft 365 Reports in the admin center - Viva Learning activity

@@ -2,7 +2,7 @@
 title: Exclude devices in Microsoft Defender for Endpoint
 description: Exclude devices from the device inventory list
 keywords: exclude
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Exclude devices
@@ -28,11 +31,11 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
-## Exclude devices from threat and vulnerability management
+## Exclude devices from vulnerability management
 
-Excluding devices that are inactive, duplicate, or out of scope allows you to focus on discovering and prioritizing the risks on your active devices. This action can also help reflect a more accurate threat and vulnerability management exposure score, as the excluded devices won't be visible in your threat and vulnerability management reports.
+Excluding devices that are inactive, duplicate, or out of scope allows you to focus on discovering and prioritizing the risks on your active devices. This action can also help reflect a more accurate vulnerability management exposure score, as the excluded devices won't be visible in your vulnerability management reports.
 
-Once devices are excluded, you won't be able to view updated or relevant information about vulnerabilities and installed software on these devices. It affects all threat and vulnerability management pages, reports, and related tables in advanced hunting.
+Once devices are excluded, you won't be able to view updated or relevant information about vulnerabilities and installed software on these devices. It affects all vulnerability management pages, reports, and related tables in advanced hunting.
 
 Even though the device exclusion feature removes the device data from vulnerability management pages and reports, the devices remain connected to the network and can still be a risk to the organization. You'll be able to cancel the device exclusion at any time.
 

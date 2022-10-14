@@ -2,13 +2,15 @@
 title: "Managing ExpressRoute for Office 365 connectivity"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 7/13/2017
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: 
@@ -18,7 +20,7 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
-description: Learn how manage ExpressRoute for Office 365, including common areas to configure like prefix filtering, security, and compliance.
+description: Learn how to manage ExpressRoute for Office 365, including common areas to configure like prefix filtering, security, and compliance.
 ---
 
 # Managing ExpressRoute for Office 365 connectivity
@@ -32,15 +34,15 @@ ExpressRoute for Office 365 offers an alternative routing path to reach many Off
 
 Microsoft recommends that customers accept all BGP routes as advertised from Microsoft, the routes provided undergo a rigorous review and validation process removing any benefits to added scrutiny. ExpressRoute natively offers the recommended controls such as IP prefix ownership, integrity, and scale - with no inbound route filtering on the customer side.
   
-If you require additional validation of route ownership across ExpressRoute public peering, you can check the advertised routes against the list of all IPv4 and IPv6 IP prefixes that represent [Microsoft's public IP ranges](https://www.microsoft.com/download/details.aspx?id=53602). These ranges cover the full Microsoft address space and change infrequently, providing a reliable set of ranges to filter against that also provides additional protection to customers who are concerned about non-Microsoft owned routes leaking into their environment. In the event there is a change, it will be made on the 1st of the month and the version number in the **details** section of the page will change every time the file is updated.
+If you require additional validation of route ownership across ExpressRoute public peering, you can check the advertised routes against the list of all IPv4 and IPv6 IP prefixes that represent [Microsoft's public IP ranges](https://www.microsoft.com/download/details.aspx?id=53602). These ranges cover the full Microsoft address space and change infrequently, providing a reliable set of ranges to filter against that also provides additional protection to customers who are concerned about non-Microsoft owned routes leaking into their environment. In the event there's a change, it will be made on the 1st of the month and the version number in the **details** section of the page will change every time the file is updated.
   
-There are a number of reasons to avoid the use of the [Office 365 URLs and IP address ranges](./urls-and-ip-address-ranges.md) for generating prefix filter lists. Including the following:
+There are many reasons to avoid the use of the [Office 365 URLs and IP address ranges](./urls-and-ip-address-ranges.md) for generating prefix filter lists. Including the following:
   
 - The Office 365 IP prefixes undergo lots of changes on a frequent basis.
 
 - The Office 365 URLs and IP address ranges are designed for managing firewall allow lists and Proxy infrastructure, not routing.
 
-- The Office 365 URLs and IP address ranges do not cover other Microsoft services that may be in scope for your ExpressRoute connections.
+- The Office 365 URLs and IP address ranges don't cover other Microsoft services that may be in scope for your ExpressRoute connections.
 
 |**Option**|**Complexity**|**Change Control**|
 |:-----|:-----|:-----|
@@ -54,7 +56,7 @@ Regardless of how you manage the BGP route advertisements coming from Microsoft,
   
 ### Security
 
-Microsoft recommends that you maintain your own network and security perimeter controls for connections going to and from ExpressRoute public and Microsoft peering, which includes connections to and from Office 365 services. Security controls should be in place for network requests that travel outbound from your network to Microsoft's network as well as inbound from Microsoft's network to your network.
+Microsoft recommends that you maintain your own network and security perimeter controls for connections going to and from ExpressRoute public and Microsoft peering, which includes connections to and from Office 365 services. Security controls should be in place for network requests that travel outbound from your network to Microsoft's network and inbound from Microsoft's network to your network.
   
 #### Outbound from Customer to Microsoft
   
@@ -75,13 +77,13 @@ For added controls, you can use FQDN level filtering within your proxy infrastru
   
 There are several optional scenarios that require Microsoft to initiate connections to your network.
   
-- ADFS during password validation for sign-in.
+- ADFS during password validation for sign in.
 
 - [Exchange Server Hybrid deployments](/exchange/exchange-hybrid).
 
 - Mail from an Exchange Online tenant to an on-premises host.
 
-- SharePoint Online Mail send from SharePoint Online to an on-premises host.
+- SharePoint Online Mail sent from SharePoint Online to an on-premises host.
 
 - [SharePoint federated hybrid search](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online).
 

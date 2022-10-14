@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
@@ -18,14 +19,18 @@ ms.custom:
 - intro-overview
 search.appverid:
 - MET150
-description: "Learn about Microsoft 365 Business Premium, a subscription service that takes care of IT part for you."
+description: "Learn about Microsoft 365 Business Premium, a subscription service that takes care of the IT part for you."
 feedback_system: None
 ms.date: 10/20/2021
 ---
 
 # Microsoft 365 Business Premium
 
-## Watch: What is Microsoft 365 Business Premium
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
+## Watch: What is Microsoft 365 Business Premium?
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198029).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
 

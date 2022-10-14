@@ -10,7 +10,9 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection: 
+- purview-compliance
+- tier2
 search.appverid: 
 - MOE150
 - MET150
@@ -22,7 +24,7 @@ description: When you no longer need to preserve the contents of a Microsoft 365
 
 # Delete an inactive mailbox
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 An inactive mailbox is used to preserve a former employee's email after they leave your organization. When you no longer need to preserve the contents of an inactive mailbox, you can permanently delete the inactive mailbox by removing the hold. Also, it's possible that multiple holds might be placed on an inactive mailbox. For example, an inactive mailbox might be placed on Litigation Hold and on one or more In-Place Holds. Additionally, Microsoft 365 retention might be applied to the inactive mailbox. You have to remove all holds and retention policies from an inactive mailbox to delete it. After you remove the holds and retention policies, the inactive mailbox is marked for deletion and is permanently deleted after it's processed.
   
@@ -31,9 +33,11 @@ An inactive mailbox is used to preserve a former employee's email after they lea
   
 See the [More information](#more-information) section for a description of what happens after holds are removed from an inactive mailbox.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you delete an inactive mailbox
 
-- You have to use Exchange Online PowerShell to remove a Litigation Hold from an inactive mailbox. You can't use the Exchange admin center (EAC). For step-by-step instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- You must use Exchange Online PowerShell to remove holds from an inactive mailbox. You can't use the Exchange admin center (EAC) or the Microsoft Purview compliance portal for these procedures. For step-by-step instructions to use Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You can copy the contents of an inactive mailbox to another mailbox before you remove the hold and delete an inactive mailbox. For details, see [Restore an inactive mailbox in Office 365](restore-an-inactive-mailbox.md).
 
@@ -45,7 +49,7 @@ See the [More information](#more-information) section for a description of what 
 
 As previously stated, a Litigation Hold, In-Place Hold, or retention policy might be placed on an inactive mailbox. The first step is to identify the holds on an inactive mailbox.
   
-Run the following command to display the hold information for all inactive mailboxes in your organization.
+[Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)and then run the following command to display the hold information for all inactive mailboxes in your organization.
   
 ```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,InPlaceHolds
@@ -78,7 +82,7 @@ After you identify what type of hold is placed on the inactive mailbox (and whet
   
 ### Remove a Litigation Hold
 
-As previously stated, you have to use Windows PowerShell to remove a Litigation Hold from an inactive mailbox. You can't use the EAC. Run the following command to remove a Litigation Hold.
+Run the following PowerShell command to remove a Litigation Hold.
   
 ```powershell
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldEnabled $false
@@ -89,7 +93,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   
 ### Remove an inactive mailbox from a retention policy
 
-The procedure to remove an inactive mailbox from a Microsoft 365 retention policy depends whether the retention policy assigned to the inactive mailbox is organization-wide or explicit. on the type of retention policy that's assigned to the inactive mailbox.
+The procedure to remove an inactive mailbox from a Microsoft 365 retention policy depends whether the retention policy assigned to the inactive mailbox is organization-wide or explicit:
 
 - Organization-wide retention policies assigned to all mailboxes in the organization. Use the **Get-OrganizationConfig** cmdlet in Exchange Online PowerShell to get information about organization-wide retention policies.
 
@@ -97,7 +101,7 @@ The procedure to remove an inactive mailbox from a Microsoft 365 retention polic
 
 #### Remove an inactive mailbox from an organization-wide retention policy
 
-Run the following command in Exchange Online PowerShell to exclude an inactive mailbox from an organization-wide retention policy.
+Run the following PowerShell command to exclude an inactive mailbox from an organization-wide retention policy.
 
 ```powershell
 Set-Mailbox <identity of inactive mailbox> -ExcludeFromOrgHolds <retention policy GUID without prefix or suffix>
@@ -105,7 +109,7 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromOrgHolds <retention polic
 
 For more information identifying organization-wide retention policies applied to an inactive mailbox and obtaining the GUID for a retention policy, see the "Get-OrganizationConfig" section in [How to identify the type of hold placed on a mailbox](identify-a-hold-on-an-exchange-online-mailbox.md#get-organizationconfig).
 
-Alternatively, you can run the following command to remove the inactive mailbox from all organization-wide policies:
+Alternatively, you can run the following PowerShell command to remove the inactive mailbox from all organization-wide policies:
 
 ```powershell
 Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
@@ -113,13 +117,13 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
 
 #### Remove an inactive mailbox from a specific location retention policy
 
-Run the following command in [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) to remove an inactive mailbox from an explicit retention policy.
+Use [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) to remove an inactive mailbox from an explicit retention policy:
 
 ```powershell
-Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or suffix> -AddExchangeLocationException <identity of inactive mailbox>
+Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or suffix> -RemoveExchangeLocation <identity of inactive mailbox>
 ```
 
-For more information identifying specific location retention policies applied to an inactive mailbox and obtaining the GUID for a retention policy, see the "Get-Mailbox" section in [How to identify the type of hold placed on a mailbox](identify-a-hold-on-an-exchange-online-mailbox.md#get-mailbox).
+For more information about identifying specific location retention policies that are applied to an inactive mailbox, and obtaining the GUID for a retention policy, see the "Get-Mailbox" section in [How to identify the type of hold placed on a mailbox](identify-a-hold-on-an-exchange-online-mailbox.md#get-mailbox).
 
 ### Remove In-Place Holds
 

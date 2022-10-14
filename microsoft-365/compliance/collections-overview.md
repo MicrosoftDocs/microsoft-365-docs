@@ -1,38 +1,42 @@
 ---
 title: "Overview of collections in eDiscovery (Premium)"
+description: "Use collections in eDiscovery (Premium) to search for and collect content that's relative to your case or investigation." 
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: nickrob
 manager: laurawi
-ms.date: 
+ms.date: 05/31/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "Use collections in eDiscovery (Premium) to search for and collect content that's relative to your case or investigation." 
+
 ---
 
 # Learn about collections in eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 When organizations are faced with gathering the communications and content that may be relevant to an investigation or potential litigation, they face a significant challenge under the best of circumstances. In today’s modern workplace, the volume, variety, and velocity of content is enabling innovation and remote work, while also expanding the requirements and process for managing collections for eDiscovery investigations.
 
 The collection workflow poses significant technical challenges around extracting content from native locations and sources. It's also a critical point in the assessment and strategy for common litigation or investigations scenarios. As organizations begin to assess an investigation, the first questions asked are who was involved? After identifying who was involved, these custodians can quickly be placed on hold to preserve relevant content. The next question is what took place? To answer this second fundamental question of any investigation, managers must turn to the data. To quickly assess the most relevant content to the question of what took place, managers start to refine the target of the question to ensure that the collection results are comprehensive without being too broad.
 
-Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case. This allows managers to make quick, informed decisions about the size and scope of content relevant to a case. eDiscovery managers can create a collection to search custodial data sources (such as mailboxes and SharePoint sites) and by using specific search criteria (such as keywords and date ranges) to quickly define the scope of their collection.
+Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, Teams reactions, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case. This allows managers to make quick, informed decisions about the size and scope of content relevant to a case. eDiscovery managers can create a collection to search custodial data sources (such as mailboxes and SharePoint sites) and by using specific search criteria (such as keywords and date ranges) to quickly define the scope of their collection.
 
 After the collection is defined, eDiscovery managers can save the collection as a draft and get estimates, including estimates for data volume, the content locations that contain results, and the number of hits for search query condition. These insights can help to inform if the collection should be revised to narrow or expand the scope of the collection before moving on the review and analyze stages in the eDiscovery workflow.
 
 When the manager is satisfied with the scope of the collection and the estimated amount of content that's likely to be responsive, the manager can add or *commit* the content to a review set. When committing a collection to a review set, that manager also has the options to include chat conversations, cloud attachments, and document versions. The content in the collection also goes through another level of processing during ingestion into the review set. and the collection will be updated with the final collection summary. After content is added to the review set, eDiscovery managers can continue to query, group, and refine the content in to help with minimization and review. Additionally, the collection is updated with information and statistics about the content committed to the review set. This provides a historical reference about the content in the collection.
 
 With the release of collections in an eDiscovery (Premium), the **Searches** tab has been renamed to **Collections** in an eDiscovery (Premium) case in the Microsoft Purview compliance portal. The steps to define the scope and size of the collection follow the same process as search to define locations and conditions. Save as draft and get preview estimates enables quick validation of targeted scope of collections prior to committing a full search and collection into the review set. This enables improved job management, and targeted iterations for starting to minimize content during the search and collection process.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Collections workflow
 

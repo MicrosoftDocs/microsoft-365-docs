@@ -11,9 +11,10 @@ ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- tier1
 search.appverid: 
 - MOE150
 - MET150
@@ -22,11 +23,11 @@ description: "Understand how to create templates for assessments in Microsoft Pu
 
 # Create an assessment template in Microsoft Purview Compliance Manager
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 To create your own new template for custom assessments in Compliance Manager, you'll use a specially formatted Excel spreadsheet to assemble the necessary control data. After completing the spreadsheet, you will import it into Compliance Manager.
 
 To learn about formatting your spreadsheet, see [Format assessment template data with Excel](compliance-manager-templates-format-excel.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Required roles
 

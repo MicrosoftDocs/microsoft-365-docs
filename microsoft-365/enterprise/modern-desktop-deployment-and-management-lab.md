@@ -2,13 +2,14 @@
 title: Windows and Office 365 deployment lab kit
 f1.keywords:
 - NOCSH
-ms.author: greglin
-author: greg-lindsay
+ms.author: aaroncz
+author: cdmm12
 manager: dougeby
-ms.date: 11/18/2021
+ms.reviewer: alainme
+ms.date: 05/11/2022
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -21,10 +22,12 @@ description: Learn about where to access the Windows and Office Deployment Lab K
 
 The Windows and Office 365 deployment lab kit is designed to help you plan, test, and validate your deployment and management of desktops running Windows 10 Enterprise or Windows 11 Enterprise and Microsoft 365 Apps for enterprise. The labs in the kit cover using Microsoft Endpoint Configuration Manager, OneDrive, Windows Autopilot, and more. This kit is highly recommended for organizations preparing for desktop upgrades. As an isolated environment, the lab is also ideal for exploring deployment tool updates and testing your deployment-related automation.
 
-**Windows 10 and Windows 11 versions of the deployment lab kit are now available for free download in the Microsoft Evaluation Center.**
+There are two versions of the lab available for free download:  
 
-[Download Windows 11 with Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)<br>
-[Download Windows 10 with Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+|Windows 10 Lab|Windows 11 Lab|
+|---|---|
+|[Windows 10 lab environment](https://download.microsoft.com/download/8/5/e/85e007b0-1f3e-460c-bd0a-5a8c6ec490b5/Win10_21H2_lab.zip)|[Windows 11 lab environment](https://download.microsoft.com/download/5/0/b/50bbe36a-9291-4339-9dcc-2a444fcd1659/Microsoft365DeviceLabKit.zip)|
+|[Windows 10 lab guides](https://download.microsoft.com/download/b/d/4/bd4f430b-8cd1-4a07-97b1-c32100fce7ae/Win_10_21H2_lab_guides.zip)|[Windows 11 lab guides](https://download.microsoft.com/download/5/0/b/50bbe36a-9291-4339-9dcc-2a444fcd1659/Win11_SetUp_Guide_08.05.zip)|
 
 ## A complete lab environment
 
@@ -32,8 +35,8 @@ The lab provides you with an automatically provisioned virtual lab environment, 
 
 |Windows 10 Lab|Windows 11 Lab|
 |---|---|
-|Windows 10 Enterprise, Version 21H1|Windows 11 Enterprise|
-|Microsoft Endpoint Configuration Manager, Version 2103|Microsoft Endpoint Configuration Manager, Version 2111|
+|Windows 10 Enterprise, Version 21H2|Windows 11 Enterprise|
+|Microsoft Endpoint Configuration Manager, Version 2103|Microsoft Endpoint Configuration Manager, Version 2203|
 |Windows Assessment and Deployment Kit for Windows 10|Windows Assessment and Deployment Kit for Windows 11|
 |Windows Server 2019|Windows Server 2022|
 
@@ -89,9 +92,15 @@ Detailed lab guides take you through multiple deployment and management scenario
 - BitLocker
 - Microsoft Defender Antivirus
 - Windows Hello for Business
+- Windows Defender Credential Guard       
+- Microsoft Defender Application Guard     
+- Windows Defender Exploit Guard             
+- Windows Defender Application Control   
+- Microsoft Defender for Endpoint 
+
 
 > [!NOTE]
-> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows 10 lab expires May 16, 2022. The Windows 11 lab expires May 6, 2022. New versions will be published prior to expiration.
+> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows client virtual machines expire 90 days after activation of the lab. New versions of the labs will be published on or before November 5, 2022. 
 
 ## Additional guidance
 
@@ -106,4 +115,4 @@ Detailed lab guides take you through multiple deployment and management scenario
 - [Introducing Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
 - [Microsoft 365 for business](https://products.office.com/business/office)
 - [Introducing Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-- [Windows 11 for business](https://www.microsoft.com/windows/business)
+- [Windows for business](https://www.microsoft.com/windows/business)

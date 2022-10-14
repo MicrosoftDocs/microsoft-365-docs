@@ -1,32 +1,29 @@
 ---
 title: Manage custom rules for firewall policies in Microsoft Defender for Business
-description: Custom rules provide exceptions to firewall policies. You can use custom rules to block or allow specific connections in Microsoft Defender for Business
+description: Custom rules provide exceptions to firewall policies. You can use custom rules to block or allow specific connections in Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
+ms.date: 07/19/2022
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
+- tier1
 ---
 
 # Manage your custom rules for firewall policies in Microsoft Defender for Business
 
-> [!NOTE]
-> Microsoft Defender for Business is now included in [Microsoft 365 Business Premium](../../business-premium/index.md). 
+Defender for Business includes firewall policies that help protect your devices from unwanted network traffic. You can use custom rules to define exceptions for your firewall policies. That is, you can use custom rules to block or allow specific connections.
 
-
-Microsoft Defender for Business includes firewall policies that help protect your devices from unwanted network traffic. You can use custom rules to define exceptions for your firewall policies. That is, you can use custom rules to block or allow specific connections.
-
-To learn more about firewall policies and settings, see [Firewall in Microsoft Defender for Business](mdb-firewall.md).
+To learn more about firewall policies and settings, see [Firewall in Defender for Business](mdb-firewall.md).
 
 **This article describes how to**:
 
@@ -34,10 +31,6 @@ To learn more about firewall policies and settings, see [Firewall in Microsoft D
 - [Edit a custom rule for a firewall policy](#edit-a-custom-rule-for-a-firewall-policy)
 - [Delete a custom rule](#delete-a-custom-rule)
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## Create a custom rule for a firewall policy
 
@@ -103,6 +96,6 @@ To learn more about firewall policies and settings, see [Firewall in Microsoft D
 
 ## Next steps
 
-- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
+- [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)
+- [Respond to and mitigate threats in Defender for Business](mdb-respond-mitigate-threats.md)
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)

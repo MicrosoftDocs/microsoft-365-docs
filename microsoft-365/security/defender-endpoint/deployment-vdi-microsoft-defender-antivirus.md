@@ -2,7 +2,6 @@
 title: Microsoft Defender Antivirus Virtual Desktop Infrastructure deployment guide
 description: Learn how to deploy Microsoft Defender Antivirus in a virtual desktop environment for the best balance between protection and performance.
 keywords: vdi, hyper-v, vm, virtual machine, windows defender, antivirus, av, virtual desktop, rds, remote desktop
-ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -10,11 +9,14 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/18/2022
 ms.reviewer: jesquive
 manager: dansimp
-ms.technology: mde
-ms.collection: m365-security-compliance
+ms.subservice: mde
+ms.service: microsoft-365-security
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment
@@ -27,13 +29,7 @@ ms.collection: m365-security-compliance
 **Platforms**
 - Windows
 
-In addition to standard on-premises or hardware configurations, you can also use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment.
-
-For more information on Microsoft Remote Desktop Services and VDI support, see [Azure Virtual Desktop Documentation](/azure/virtual-desktop).
-
-For Azure-based virtual machines, see [Install Endpoint Protection in Microsoft Defender for Cloud](/azure/security-center/security-center-install-endpoint-protection).
-
-With the ability to easily deploy updates to VMs running in VDIs, we've shortened this guide to focus on how you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
+In addition to standard on-premises or hardware configurations, you can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. With the ability to easily deploy updates to VMs running in VDIs, you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
 This guide describes how to configure your VMs for optimal protection and performance, including how to:
 
@@ -45,15 +41,13 @@ This guide describes how to configure your VMs for optimal protection and perfor
 - [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
 - [Apply exclusions](#exclusions)
 
-You can also download the whitepaper [Microsoft Defender Antivirus on Virtual Desktop Infrastructure](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf), which looks at the new shared security intelligence update feature, alongside performance testing and guidance on how you can test antivirus performance on your own VDI.
+For more information on Microsoft Remote Desktop Services and VDI support, see [Azure Virtual Desktop Documentation](/azure/virtual-desktop).
 
-> [!NOTE]
-> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
+For Azure-based virtual machines, see [Install Endpoint Protection in Microsoft Defender for Cloud](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
 
 > [!IMPORTANT]
 > Although the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.
->
-> There are performance and feature improvements to the way in which Microsoft Defender AV operates on virtual machines in Windows 10 Insider Preview, build 18323 (and later). We'll identify in this guide if you need to be using an Insider Preview build; if it isn't specified, then the minimum required version for the best protection and performance is Windows 10 1607.
+> There are performance and feature improvements to the way in which Microsoft Defender Antivirus operates on virtual machines in Windows 10 Insider Preview, build 18323 (and later). We'll identify in this guide if you need to be using an Insider Preview build; if it isn't specified, then the minimum required version for the best protection and performance is Windows 10 1607.
 
 ## Set up a dedicated VDI file share
 
@@ -110,9 +104,8 @@ We suggest starting with once a day, but you should experiment with increasing o
 Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn't advised because it will increase the network overhead on your management machine for no benefit.
 
 You can also set up your single server or machine to fetch the updates on behalf of the VMs at an interval and place them in the file share for consumption.
-This is possible when the devices have the share and NTFS permissions for the read access to the share so they can grab the updates.
+This is possible when the devices have the share and NTFS permissions for the read access to the share so they can grab the updates. To do this:
 
-To do this:
  1. Create an SMB/CIFS file share. 
  
  2. Use the following example to create a file share with the following share permissions.
@@ -130,7 +123,7 @@ To do this:
 
     For this example, the file share is:
 
-    \\\fileserver.fqdn\mdatp$\wdav-update
+    `\\fileserver.fqdn\mdatp$\wdav-update`
 
 ### Set a scheduled task to run the PowerShell script
 
@@ -204,7 +197,6 @@ Suppressing notifications prevents notifications from Microsoft Defender Antivir
 
 > [!TIP]
 > To open the Action Center on Windows 10 or Windows 11, take one of the following steps:
->
 > - On the right end of the taskbar, select the Action Center icon.
 > - Press the Windows logo key button + A.
 > - On a touchscreen device, swipe in from the right edge of the screen.
@@ -227,6 +219,18 @@ Disabling a scan after an update will prevent a scan from occurring after receiv
 5. Deploy your Group Policy object as you usually do.
 
 This policy prevents a scan from running immediately after an update.
+
+## Disable the `ScanOnlyIfIdle` option
+
+Use the following cmdlet, to stop a quick or scheduled scan whenever the device goes idle if it is in passive mode.
+
+```PowerShell
+Set-MpPreference -ScanOnlyIfIdleEnabled $false
+```
+
+You can also disable the `ScanOnlyIfIdle` option in Microsoft Defender Antivirus by configuration via local or domain group policy. This prevents the significant CPU contention in high density environments.
+
+For more information, see [Start the scheduled scan only when computer is on but not in use](https://admx.help/?Category=SystemCenterEndpointProtection&Policy=Microsoft.Policies.Antimalware::scan_scanonlyifidle).
 
 ## Scan VMs that have been offline
 
@@ -263,7 +267,7 @@ Exclusions can be added, removed, or customized to suit your needs.
 For more information, see [Configure Microsoft Defender Antivirus exclusions on Windows Server](configure-exclusions-microsoft-defender-antivirus.md).
 
 > [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
+> If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

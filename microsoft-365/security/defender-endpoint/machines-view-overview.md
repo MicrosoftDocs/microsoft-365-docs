@@ -2,7 +2,7 @@
 title: Device inventory
 description: Learn about the available features that you can use from the Devices list such as sorting, filtering, and exporting the list to enhance investigations.
 keywords: sort, filter, export, csv, device name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Device inventory
@@ -25,13 +28,17 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
-The **Devices list** shows a list of the devices in your network where alerts were generated. By default, the queue displays devices seen in the last 30 days.
+The **Device inventory** shows a list of the devices in your network where alerts were generated. By default, the queue displays devices seen in the last 30 days.
 
 At a glance you'll see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
+
+> [!NOTE]
+> The device inventory is available in different Microsoft 365 Defender services. The information available to you will differ depending on your license. You'll get the most complete set of capabilities when using [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037).
 
 There are several options you can choose from to customize the devices list view. On the top navigation you can:
 
@@ -61,7 +68,7 @@ During the Microsoft Defender for Endpoint onboarding process, devices onboarded
 
 ## Navigate to the Device inventory page
 
-Access the device inventory page by selecting **Device inventory** from the **Endpoints** navigation menu in the [Microsoft 365 Defender portal](/defender/microsoft-365-security-center-mde).
+Access the device inventory page by selecting **Device inventory** from the **Endpoints** navigation menu in the [Microsoft 365 Defender portal](/microsoft-365/security/defender-business/mdb-get-started).
 
 ## Device inventory overview
 
@@ -74,6 +81,11 @@ Use the **Onboarding Status** column to sort and filter by discovered devices, a
 From the **Network devices** and **IoT devices** tabs, you'll also see information such as vendor, model and device type:
 
 ![Image of network devices list.](images/device-inventory-networkdevices.png)
+
+> [!NOTE]
+> Device discovery Integrations with [Microsoft Defender for IoT](/azure/defender-for-iot/organizations/) and [Corelight](https://corelight.com/integrations/iot-security) are available to help locate, identify, and secure your complete OT/IOT asset inventory. Devices discovered with these integrations will appear on the **IoT devices** tab. For more information, see [Device discovery integrations](device-discovery.md#device-discovery-integrations).
+>
+> When Defender for IoT is configured, you also can view the devices there. See [Manage your IoT devices with the device inventory for organizations](/azure/defender-for-iot/organizations/how-to-manage-device-inventory-for-organizations).
 
 At the top of each device inventory tab, you can see the total number of devices, the number of devices that are not yet onboarded, and the number of devices that have been identified as a higher risk to your organization. You can use this information to help you prioritize devices for security posture improvements.
 
@@ -115,7 +127,7 @@ Filter | Description
 **Onboarding status** </br> | Onboarding status indicates whether the device is currently onboarded to Microsoft Defender for Endpoint or not. You can filter by the following states: </br> - **Onboarded**: The endpoint is onboarded to Microsoft Defender for Endpoint.  </br> - **Can be onboarded**: The endpoint was discovered in the network as a supported device, but it's not currently onboarded. Microsoft highly recommends onboarding these devices. </br> - **Unsupported**: The endpoint was discovered in the network, but is not supported by Microsoft Defender for Endpoint. </br> - **Insufficient info**: The system couldn't determine the supportability of the device.</br></br> (_Computers and mobile only_)
 **Antivirus status** </br> | Filter the view based on whether the antivirus status is disabled, not updated or unknown.</br></br> (_Computers and mobile only_)
 **Group** </br> | Filter the list based on the group you're interested in investigating. </br></br> (_Computers and mobile only_)
-**Managed by** </br> | Managed by indicates how the device is being managed. You can filter by:</br>- Microsoft Defender for Endpoint </br> - Mobile device management (MDM) </br>- Unknown: This could be due the running an outdated Windows version, SCCM being in place, or another third party MDM.</br></br> (_Computers and mobile only_)
+**Managed by** </br> | Managed by indicates how the device is being managed. You can filter by:</br> - Microsoft Defender for Endpoint</br> - Microsoft Endpoint Manager (MEM), including co-management with Microsoft Configuration Manager via tenant attach</br>- Microsoft Configuration manager (ConfigMgr)</br> - Unknown: This could be due the running an outdated Windows version, GPO management, or another third party MDM.</br></br> (_Computers and mobile only_)
 **Device Type** </br> | Filter by the device type you're interested in investigating.</br></br> (_IoT devices only_)
 
 ## Use columns to customize the device inventory views

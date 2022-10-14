@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
@@ -33,7 +34,7 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
         :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image3.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image3.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-1. Go to **Authentication** and select **Add a platform**. Select the **Web** option and enter the redirect URL: `https://{your-servicenow-instance``}.service-now.com/auth_redirect.do`
+1. Go to **Authentication** and select **Add a platform**. Select the **Web** option and enter the redirect URL: `https://{your-servicenow-instance``}.service-now.com/oauth_redirect.do`
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image4.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image4.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -77,7 +78,7 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
     - Token URL: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
-    - Redirect URL: `https://{service-now-instance-name``}.service-now.com/auth_redirect.do`
+    - Redirect URL: `https://{service-now-instance-name``}.service-now.com/oauth_redirect.do`
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image6.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image6.png" alt-text="Graphical user interface, application Description automatically generated":::
 
@@ -107,9 +108,9 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
     - Name: **{Tenant\_Name}\_application\_inbound\_api** (example: contoso\_applicaiton\_inbound\_api)
 
-    - Client ID: The Client ID of the application created in Prerequisites (Azure AD Auth Token) step \#2.
+    - Client ID: The Client ID of the application created in Prerequisites (Azure AD Auth Token) step \#3.
 
-    - Client Secret: The App Secret of the application created in Prerequisites (Azure AD Auth Token) step \#2.
+    - Client Secret: The App Secret of the application created in Prerequisites (Azure AD Auth Token) step \#3.
 
     - OAuth OIDC Provider Configuration: The OIDC provider created in the previous step
 

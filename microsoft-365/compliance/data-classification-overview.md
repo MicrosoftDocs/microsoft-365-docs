@@ -1,5 +1,5 @@
 ---
-title: "Learn about data classification"
+title: "How to use the Microsoft data classification dashboard"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -11,21 +11,22 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkDEFENDER
 search.appverid: 
 - MOE150
 - MET150
-description: "The data classification dashboard gives you visibility into how much sensitive data has been found and classified in your organization."
+description: "The data Microsoft Purview compliance classification dashboard provides visibility into how much sensitive data has been found and classified in your organization."
 ---
 
-# Learn about data classification
+# How to use the Microsoft data classification dashboard
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-As a Microsoft 365 administrator or compliance administrator, you can evaluate and then tag content in your organization in order to control where it goes, protect it no matter where it is and to ensure that it is preserved and deleted according to your organizations needs. You do this through the application of [sensitivity labels](sensitivity-labels.md), [retention labels](retention.md#retention-labels), and sensitive information type classification. There are various ways to do the discovery, evaluation and tagging, but the end result is that you may have very large number of documents and emails that are tagged and classified with one or both of these labels. After you apply your retention labels and sensitivity labels, you'll want to see how the labels are being used across your tenant and what is being done with those items. The data classification page provides visibility into that body of content, specifically:
+As a Microsoft 365 administrator or compliance administrator, you can evaluate and then tag content in your organization in order to control where it goes, protect it no matter where it is, and ensure that it is preserved and deleted according to your organization's needs. You do this through the application of [sensitivity labels](sensitivity-labels.md), [retention labels](retention.md#retention-labels), and sensitive information type classification. There are various ways to do the discovery, evaluation, and tagging, but the end result is that you may have very large numbers of documents and emails that are tagged and classified with one or both of these labels. After you apply your retention labels and sensitivity labels, you'll want to see how the labels are being used across your tenant and what is being done with those items. The data classification page provides visibility into that body of content, specifically:
 
 - the number items that have been classified as a sensitive information type and what those classifications are
 - the top applied sensitivity labels in both Microsoft 365 and Azure Information Protection
@@ -48,6 +49,8 @@ Take a video tour of our data classification features.
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
 
 Data classification will scan your sensitive content and labeled content before you create any policies. This is called **zero change management**. This lets you see the impact that all the retention and sensitivity labels are having in your environment and empower you to start assessing your protection and governance policy needs.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Prerequisites
 

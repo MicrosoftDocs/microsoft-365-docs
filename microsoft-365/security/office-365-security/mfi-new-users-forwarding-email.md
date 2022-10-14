@@ -10,14 +10,15 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.assetid: 
 description: Admins can learn how to use the New users forwarding email insight in the Security & Compliance Center to investigate when users in their organization are forwarding messages to new domains.
-ms.technology: mdo
-ms.prod: m365-security
-ms.collection: M365-security-compliance
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # New users forwarding email insight in the Security & Compliance Center
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -26,7 +27,7 @@ ms.collection: M365-security-compliance
 
 It's suspicious when new user accounts in your organization suddenly start forwarding email messages to external domains.
 
-The **New domains being forwarded email** insight in the [Security & Compliance Center](https://protection.office.com) notifies you when newly-created users in your organization are forwarding messages to external domains. This condition could indicate compromised admin accounts were used to create the new users. If you suspect the accounts have been compromised, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
+The **New users forwarding email** insight in the [Security & Compliance Center](https://protection.office.com) notifies you when newly-created users in your organization are forwarding messages to external domains. This condition could indicate compromised admin accounts were used to create the new users. If you suspect the accounts have been compromised, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
 
 This insight appears only when the issue is detected, and it appears on the [Forwarding report](view-mail-flow-reports.md#forwarding-report) page.
 

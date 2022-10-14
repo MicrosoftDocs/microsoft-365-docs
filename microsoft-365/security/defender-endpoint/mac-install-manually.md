@@ -2,7 +2,7 @@
 title: Manual deployment for Microsoft Defender for Endpoint on macOS
 description: Install Microsoft Defender for Endpoint on macOS manually, from the command line.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,11 +11,13 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Manual deployment for Microsoft Defender for Endpoint on macOS
@@ -112,7 +114,7 @@ To complete this process, you must have admin privileges on the device.
 
 ## Client configuration
 
-1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.py to the device where you deploy Microsoft Defender for Endpoint on macOS.
+1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.sh to the device where you deploy Microsoft Defender for Endpoint on macOS.
 
     The client device isn't associated with org_id. Note that the *org_id* attribute is blank.
 
@@ -120,10 +122,10 @@ To complete this process, you must have admin privileges on the device.
     mdatp health --field org_id
     ```
 
-2. Run the Python script to install the configuration file:
+2. Run the Bash script to install the configuration file:
 
     ```bash
-    /usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py
+    Sudo bash -x MicrosoftDefenderATPOnboardingMacOs.sh
     ```
 
 3. Verify that the device is now associated with your organization and reports a valid org ID:

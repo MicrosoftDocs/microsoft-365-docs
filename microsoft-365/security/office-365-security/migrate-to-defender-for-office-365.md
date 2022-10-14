@@ -13,12 +13,13 @@ search.appverid:
   - MET150
   - MOE150
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-defender-office365
+  - m365-security
+  - m365solution-mdo-migration
+  - highpri
 ms.custom:
 description: Learn the right way to migrate from third-party protection services or devices like Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort to Microsoft Defender for Office 365 protection.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Migrate from a third-party protection service or device to Microsoft Defender for Office 365
@@ -27,6 +28,9 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
 If you already have an existing third-party protection service or device that sits in front of Microsoft 365, you can use this guide to migrate your protection to Microsoft Defender for Office 365 to get the benefits of a consolidated management experience, potentially reduced cost (using products that you already pay for), and a mature product with integrated security protection. For more information, see [Microsoft Defender for Office 365](https://www.microsoft.com/security/business/threat-protection/office-365-defender).
+
+Watch this short video to learn more about migrating to Defender for Office 365.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfH]
 
 This guide provides specific and actionable steps for your migration, and assumes the following facts:
 

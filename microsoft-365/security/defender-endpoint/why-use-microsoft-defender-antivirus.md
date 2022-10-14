@@ -2,7 +2,7 @@
 title: Why you should use Microsoft Defender Antivirus together with Microsoft Defender for Endpoint
 description: For best results, use Microsoft Defender Antivirus together with your other Microsoft offerings.
 keywords: windows defender, antivirus, third party av
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,8 +13,11 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.technology: mde
-ms.collection: m365-security-compliance
+ms.subservice: mde
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint
@@ -52,7 +55,7 @@ Although you can use a non-Microsoft antivirus solution with Microsoft Defender 
 |11|Technical support|By using Microsoft Defender for Endpoint together with Microsoft Defender Antivirus, you have one company to call for technical support. [Troubleshoot service issues](/microsoft-365/security/defender-endpoint/troubleshoot-mdatp)and [review event logs and error codes with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md).|
 
 > [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
+> If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
@@ -65,4 +68,4 @@ Although you can use a non-Microsoft antivirus solution with Microsoft Defender 
 
 [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 
-[Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+[Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)

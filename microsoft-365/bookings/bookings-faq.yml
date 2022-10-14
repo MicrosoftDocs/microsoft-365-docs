@@ -8,6 +8,8 @@ metadata:
   ms.topic: faq
   ms.service: bookings
   ms.localizationpriority: medium
+  ms.collection: 
+  - scotvorg
   description: "Microsoft Bookings frequently asked questions."
 title: Microsoft Bookings Frequently Asked Questions
 summary: |
@@ -21,19 +23,24 @@ sections:
           Microsoft Bookings is a Microsoft 365 app that makes scheduling and managing appointments easy. Bookings includes a Web-based booking calendar and integrates with Outlook to optimize your staff's calendar, giving your customers' flexibility to book a time that works best for them. Automated notification emails reduce no-shows, and organizations save time with a reduction in repetitive scheduling tasks. Bookings helps you easily conduct virtual appointments via Skype or Microsoft Teams, and helps you manage day-to-day scheduling via the Bookings app in Teams. With built-in ability to customize, Bookings is designed to meet the needs of multiple parts of any organization.
 
       - question: |
+          Is Bookings available for my subscription?
+        answer: |
+          Bookings is available with the following subscriptions: 
+          - Office 365: A3, A5, E1, E3, E5, F1, F3, Office 365 operated by 21Vianet.
+          - Microsoft 365: A3, A5, E3, E5, F1, F3, Business Basic, Business Standard, Business Premium. 
+          You can use Bookings with an iOS and Android companion app. Bookings isn't available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook.
+          
+          A Bookings license provides full functionality, including creating and managing calendars. Users can view and edit existing calendars, when those users are added as staff in an Administrator or Viewer role.
+
+      - question: |
           How do I use Microsoft Bookings?
         answer: |
           Bookings is an online service, so you don't need to download anything. Just go to the app chooser within the Microsoft 365 Web experience. Administrators can also use the Bookings companion app to stay current with the latest information about customers and their appointments.
 
       - question: |
-          Who has access to Microsoft Bookings?
-        answer: |
-          Bookings is available and active by default for Microsoft 365 Business Premium, Microsoft 365 Business Standard, F1, F3, A3, A5, E3, and E5 customers worldwide. Bookings is also available in Office 365 operated by 21Vianet.
-
-      - question: |
           Will my customers see my personal or business calendar?
         answer: |
-          Your customers will only see the Bookings calendar that you publish online for the services, times, and staff that you choose to register.
+          Your customers will only see the Bookings calendar that you publish online for the services, times, and staff that you choose.
 
       - question: |
           How do I change a bookable attribute under Manage staff?
@@ -43,7 +50,7 @@ sections:
       - question: |
           How do end users access the Bookings app?
         answer: |
-          Anyone who is licensed for Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, E5, F1, F3, or is added as a staff member in either the Administrator or Viewer roles can access Bookings in the app chooser within the Microsoft 365 Web experience. There's also a companion app available for iOS and Android.
+          Anyone who is licensed for a supported subscription, or is added as a staff member in either the Administrator or Viewer roles can access Bookings in the app chooser within the Microsoft 365 Web experience. There’s also a companion app available for iOS and Android.
 
       - question: |
           Can I use Bookings in my own Web site?
@@ -58,12 +65,17 @@ sections:
       - question: |
           Can our IT department control whether end users can access Bookings?
         answer: |
-          Bookings is available in Microsoft 365 Business Premium, Microsoft 365 Business Standard, M365 A3/A5 and E3/E5 tenants by default, but administrators can turn it off in the Microsoft 365 admin center if they choose. To do so, [follow these instructions](turn-bookings-on-or-off.md).
+          Administrators can turn Bookings off in the Microsoft 365 admin center if they choose. To do so, [follow these instructions](turn-bookings-on-or-off.md).
           
           If a customer wants to disable access to Bookings for certain eligible licenses in their tenant, they can either use a group policy to restrict licenses or implement an OWA Mailbox policy that will restrict who is able to create new Bookings calendars.
           
           If you use an OWA Mailbox policy to disable access to Bookings, all users will have a Bookings license, however when they attempt to access the app, they'll only be successful if they're part of the policy or if they've been added to an existing Bookings calendar as staff. Details [here](turn-bookings-on-or-off.md) in the "Allow only selected users to create Bookings calendars" section.
-          
+      
+      - question: |
+           Can I link a payment option to my Bookings?
+        answer: |
+           No. The Microsoft-owned payment system is retired.
+           
       - question: |
           Is Bookings customizable?
         answer: |
@@ -122,18 +134,8 @@ sections:
               - legal reviews
               - facilities
           
-  - name: Pricing and licensing
+  - name: Account information
     questions:
-      - question: |
-          How do I get Microsoft Bookings?
-        answer: |
-          Bookings is available with the following subscriptions: 
-          - Office 365: A3, A5, E3, E5, F1, F3
-          - Microsoft 365: A3, A5, E3, E5, F1, F3, Business Standard, Business Premium. 
-          You can use Bookings with an iOS and Android companion app. Bookings isn't available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook.
-          
-          A Bookings license provides full functionality to the product, including creating and managing calendars. It also enables the ability for users to view and edit existing calendars, when those users are added as staff in an Administrator or Viewer role.
-          
       - question: |
           Do I need to migrate my email account from my current provider to Microsoft 365?
         answer: |
@@ -325,9 +327,6 @@ sections:
           This staff member's calendar can't be synced
         answer: |
           If you receive the error, "This staff member's calendar can't be synced", this section contains several troubleshooting procedures to help you resolve the error.
-          
-          > [!NOTE]
-          > Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, or Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it's turned off by default. To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
           
           If you're looking for information on syncing your staff's calendar, see [Add staff to Bookings](add-staff.md). Make sure on the **Staff details** page, **Events on calendar affect availability** is checked.
           

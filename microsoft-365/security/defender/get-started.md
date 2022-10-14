@@ -5,7 +5,8 @@ description: Learn what steps you need to take to get started with Microsoft 365
 keywords: get started, microsoft 365 defender, turn on, onboard, deploy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,11 +16,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - m365solution-getstarted
+  - highpri
+  - tier1
 ms.custom: intro-get-started
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Get started with Microsoft 365 Defender
@@ -30,6 +32,9 @@ ms.technology: m365d
 - Microsoft 365 Defender
 
 Microsoft 365 Defender is a unified experience where you can monitor and manage security across your enterprise. With the integrated alerts across identities, endpoints, data, apps, email, and collaboration tools - investigating and responding to threats now happen in a central location. 
+
+Watch this short video to learn how Microsoft 365 Defender helps to prevent, detect, investigate, and remediate threats across Microsoft 365.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4FTDg]
 
 Whether you're new to the Microsoft suite of security products or familiar with individual workflows, this topic will guide you in the simple steps you need to take to get started with Microsoft 365 Defender.
 
@@ -47,6 +52,7 @@ In general, you'll need to take the following steps to get started:
 
 
 ## Key capabilities
+
 Turning on Microsoft 365 Defender and deploying services will give you access to the following key capabilities:
 
 

@@ -7,9 +7,10 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - ransomware
@@ -68,7 +69,7 @@ Apply [security baselines](https://techcommunity.microsoft.com/t5/microsoft-secu
 
 ## Impact on users and change management
 
-As a best practice for an attack surface reduction rule, assess how a rule might impact your network by opening the security recommendation for that rule in threat and vulnerability management. The recommendation details pane describes the user impact, which you can use to determine what percentage of your devices can accept a new policy enabling the rule in blocking mode without adverse impact to user productivity.
+As a best practice for an attack surface reduction rule, assess how a rule might impact your network by opening the security recommendation for that rule in Defender Vulnerability Management. The recommendation details pane describes the user impact, which you can use to determine what percentage of your devices can accept a new policy enabling the rule in blocking mode without adverse impact to user productivity.
 
 Additionally, Exchange email baseline settings can block incoming email and prevent the sending of email or the clicking of links within email. Educate your workers on this behavior and the reason these precautions are being taken.
 

@@ -2,7 +2,7 @@
 title: Troubleshoot problems with reporting tools for Microsoft Defender Antivirus
 description: Identify and solve common problems when attempting to report in Microsoft Defender Antivirus protection status in Update Compliance
 keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender Antivirus
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,11 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.technology: mde
-ms.collection: m365-security-compliance
+ms.subservice: mde
+ms.collection: 
+- m365-security
+- tier3
+search.appverid: met150
 ---
 
 # Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance
@@ -74,7 +77,7 @@ If the above prerequisites have all been met, you might need to proceed to the n
 > [Collect diagnostic data for Update Compliance troubleshooting](collect-diagnostic-data.md)
 
 > [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
+> If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

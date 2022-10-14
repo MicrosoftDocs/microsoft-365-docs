@@ -4,7 +4,8 @@ description: Make the most of the query results returned by advanced hunting in 
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto, visualization, chart, filters, drill-down
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,10 +17,9 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - tier1
 ms.topic: article
-ms.technology: m365d
 ---
 
 # Work with advanced hunting query results
@@ -37,7 +37,7 @@ While you can construct your [advanced hunting](advanced-hunting-overview.md) qu
 - View results as a table or chart
 - Export tables and charts
 - Drill down to detailed entity information
-- Tweak your queries directly from the results or apply filters
+- Tweak your queries directly from the results
 
 ## View query results as a table or chart
 
@@ -47,12 +47,12 @@ By default, advanced hunting displays query results as tabular data. You can als
 |--|--|
 | **Table** | Displays the query results in tabular format |
 | **Column chart** | Renders a series of unique items on the x-axis as vertical bars whose heights represent numeric values from another field |
-| **Stacked column chart** | Renders a series of unique items on the x-axis as stacked vertical bars whose heights represent numeric values from one or more other fields |
 | **Pie chart** | Renders sectional pies representing unique items. The size of each pie represents numeric values from another field. |
-| **Donut chart** | Renders sectional arcs representing unique items. The length of each arc represents numeric values from another field. |
 | **Line chart** | Plots numeric values for a series of unique items and connects the plotted values |
 | **Scatter chart** | Plots numeric values for a series of unique items |
 | **Area chart** | Plots numeric values for a series of unique items and fills the sections below the plotted values |
+| **Stacked area chart** | Plots numeric values for a series of unique items and stacks the filled sections below the plotted values  |
+| **Time chart** | Plots values by count on a linear time scale |
 
 ### Construct queries for effective charts
 

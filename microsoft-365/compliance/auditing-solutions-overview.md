@@ -1,31 +1,36 @@
 ---
 title: "Microsoft Purview auditing solutions"
+description: "Learn how to audit the activities of users and administrators in your Microsoft 365 organization." 
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- m365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-audit
-- m365initiative-compliance
 - m365solution-overview
+- highpri
+- audit
 search.appverid:
 - MOE150
 - MET150
-description: "Learn how to audit the activities of users and administrators in your Microsoft 365 organization." 
 ms.custom: seo-marvel-apr2020
 ---
 
 # Auditing solutions in Microsoft Purview
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Microsoft Purview auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Audit records for these events are searchable by security ops, IT admins, insider risk teams, and compliance and legal investigators in your organization. This capability provides visibility into the activities performed across your Microsoft 365 organization.
+
+> [!NOTE]
+> Microsoft Purview auditing is the new name for the unified audit log.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Microsoft Purview auditing solutions
 
@@ -48,7 +53,7 @@ Microsoft Purview Audit (Standard) provides with you with the ability to log and
   - [Search-UnifiedAuditLog cmdlet reference](/powershell/module/exchange/search-unifiedauditlog)
   - [Use a PowerShell script to search the audit log](audit-log-search-script.md)
 
-- **Export audit records to a CSV file**. After running the Audit log search tool in the compliance center, you can export the audit records returned by the search to a CSV file. This lets you use Microsoft Excel sort and filter on different audit record properties. You can also use Excel Power Query transform functionality to split each property in the AuditData JSON object into its own column. This lets you effectively view and compare similar data for different events. For more information, see [Export, configure, and view audit log records](export-view-audit-log-records.md).
+- **Export audit records to a CSV file**. After running the Audit log search tool in the compliance portal, you can export the audit records returned by the search to a CSV file. This lets you use Microsoft Excel sort and filter on different audit record properties. You can also use Excel Power Query transform functionality to split each property in the AuditData JSON object into its own column. This lets you effectively view and compare similar data for different events. For more information, see [Export, configure, and view audit log records](export-view-audit-log-records.md).
 
 - **Access to audit logs via Office 365 Management Activity API**. A third method for accessing and retrieving audit records is to use the Office 365 Management Activity API. This lets organizations retain auditing data for longer periods than the default 90 days and lets them import their auditing data to a SIEM solution. For more information, see [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference).
 
@@ -85,7 +90,7 @@ The following table compares the key capabilities available in Audit (Standard) 
 |10-year audit log retention <sup>2</sup>||![Supported](../media/check-mark.png)|
 |Audit log retention policies||![Supported](../media/check-mark.png)|
 |High-value, crucial events||![Supported](../media/check-mark.png)|
-||||
+
 > [!NOTE]
 > <sup>1</sup> Audit (Premium) includes higher bandwidth access to the Office 365 Management Activity API, which provides faster access to audit data.<br/><sup>2</sup> In addition to the required licensing for Audit (Premium) (described in the next section), a user must be assigned a 10-Year Audit Log Retention add on license to retain their audit records for 10 years.
 
@@ -95,7 +100,8 @@ The following sections identify the licensing requirements for Audit (Standard) 
 
 ### Audit (Standard)
 
-- Microsoft 365 Business Basic subscription
+- Microsoft Business Basic subscription
+- Microsoft Business Standard subscription
 - Microsoft 365 Apps for Business subscription
 - Microsoft 365 Enterprise E3 subscription
 - Microsoft 365 Business Premium
@@ -153,16 +159,27 @@ If your organization has a subscription that supports Audit (Premium), perform t
   
    - Turning on the Audit (Premium) app/service plan must be for those users.
   
-   - Enabling the auditing of crucial events and then turning on the Advanced Auditing app/service plan for those users.
+   - Enabling the auditing of crucial events and then turning on the Audit (Premium) app/service plan for those users.
 
 2. Enable Audit (Premium) events to be logged when users perform searches in Exchange Online and SharePoint Online.
 
-3. Set up audit log retention policies. In additional to the default policy that retains Exchange, SharePoint, and Azure AD audit records for one year, you can create additional audit log retention policies to meet the requirements of your organization's security operations, IT, and compliance teams.
+3. Set up audit log retention policies. In addition to the default policy that retains Exchange, SharePoint, and Azure AD audit records for one year, you can create additional audit log retention policies to meet the requirements of your organization's security operations, IT, and compliance teams.
 
 4. Search for crucial Audit (Premium) events and other activities when conducting forensic investigations. After completing step 1 and step 2, you can search the audit log for Audit (Premium) events and other activities during forensic investigations of compromised accounts and other types of security or compliance investigations.
 
 For more detailed instructions, see [Set up Audit (Premium)](set-up-advanced-audit.md).
 
+<!--
+## Encrypt audit records using Customer Key
+
+You can enable Customer Key encryption for audit records. Auditing builds on the [Service encryption with Customer Key](customer-key-overview.md) to encrypt sensitive information in your organization's auditing data. Implementing Customer Key provides extra protection by preventing unauthorized systems or Microsoft data center personnel from viewing your auditing data in the auditing pipeline and at rest. Using Customer Key to encrypt your auditing data also helps you meet regulatory or compliance obligations because your organization provides and controls the encryption keys.
+
+To implement Customer Key for auditing, you have to create a multi-workload Data Encryption Policy (DEP), which defines the encryption hierarchy. For detailed step-by-step instructions, see [Set up Customer Key](customer-key-set-up.md).
+
+> [!NOTE]
+> Not all audit records in your organization are encrypted. The Microsoft Purview service that generates specific audit records for activity in that service defines whether the audit record is encrypted or not.
+-->
+
 ## Training
 
-Training your security operations team, IT administrators, and compliance investigators team in the fundamentals for Audit (Standard) and Audit (Premium) can help your organization get started more quickly using auditing to help with your investigations. Microsoft 365 provides the following resource to help these users in your organization getting started with auditing: [Describe the eDiscovery and audit capabilities of Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+Training your security operations team, IT administrators, and compliance investigators team in the fundamentals for Audit (Standard) and Audit (Premium) can help your organization get started more quickly using auditing to help with your investigations. Microsoft Purview provides the following resource to help these users in your organization getting started with auditing: [Describe the eDiscovery and audit capabilities of Microsoft Purview](/training/modules/describe-ediscovery-capabilities-of-microsoft-365).

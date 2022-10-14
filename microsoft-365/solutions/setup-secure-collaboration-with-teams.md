@@ -5,9 +5,10 @@ author: MikePlumleyMSFT
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-collaboration
 - m365solution-securecollab
 - m365solution-overview
@@ -135,7 +136,7 @@ These training modules from Microsoft Learn can help you learn the collaboration
 |![Teams collaboration training icon.](../media/manage-team-collaboration-with-microsoft-teams.svg)|Manage team collaboration with Microsoft Teams introduces you to the features and capabilities of Microsoft Teams, the central hub for team collaboration in Microsoft 365. You’ll learn how you can use Teams to facilitate teamwork and communication within your organization, both on and off premises, on a wide range of devices—from desktops to tablets to phones—while taking advantage of all the rich functionality of Office 365 applications. You’ll gain an understanding of how Teams provides a comprehensive and flexible environment for collaboration across applications and devices. This learning path can help you prepare for the Microsoft 365 Certified: Teams Administrator Associate certification.<p>2 hr 17 min - Learning Path - 5 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
+> [Start >](/training/modules/m365-teams-collab-prepare-deployment/introduction/)
 
 ### SharePoint
 
@@ -144,7 +145,7 @@ These training modules from Microsoft Learn can help you learn the collaboration
 |![SharePoint training icon.](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|Manage shared content with Microsoft SharePoint introduces you to the features and capabilities of SharePoint, and how it works with Microsoft 365. You'll learn about the different types of SharePoint sites, including hub sites, as well as information protection, reporting, and monitoring. You'll also learn how to use SharePoint file and folder sharing to optimize collaboration, how to share files externally, and how to manage SharePoint sites in the SharePoint admin center. This learning path can help you prepare for the Microsoft 365 Certified: Teamwork Administrator Associate certification.<p>1 hr 14 min - Learning Path - 4 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
+> [Start >](/training/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
 
 ### Information protection
 
@@ -153,7 +154,7 @@ These training modules from Microsoft Learn can help you learn the collaboration
 |![Teams info protection training icon.](../media/protect-enterprise-information-microsoft-365.svg)|Protecting and securing your organization's information is more challenging than ever. The Protect enterprise information with Microsoft 365 learning path discusses how to protect your sensitive information from accidental oversharing or misuse, how to discover and classify data, how to protect it with sensitivity labels, and how to both monitor and analyze your sensitive information to protect against its loss. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<p>1 hr - Learning Path - 5 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/m365-security-info-overview/introduction/)
+> [Start >](/training/modules/m365-security-info-overview/introduction/)
 
 ### Identity and access
 
@@ -162,7 +163,7 @@ These training modules from Microsoft Learn can help you learn the collaboration
 |![Identity and access training icon.](../media/protect-identity-and-access-with-microsoft-365.svg)|The Identity and Access learning path covers the latest identity and access technologies, tools for strengthening authentication, and guidance on identity protection within your organization. Microsoft access and identity technologies enable you to secure your organization’s identity, whether it is on-premises or in the cloud, and empower your users to work securely from any location. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<p>2 hr 52 min - Learning Path - 6 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/m365-identity-overview/introduction/)
+> [Start >](/training/modules/m365-identity-overview/introduction/)
 
 ## Training for end users
 
@@ -184,7 +185,7 @@ What IT architects need to know about groups in Microsoft 365
 
 |**Item**|**Description**|
 |---|---|
-|[![Thumb image for groups infographic.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \|[Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Updated June 2019|These illustrations detail the different types of groups, how these are created and managed, and a few governance recommendations.|
+|[![Thumb image for groups infographic.](../downloads/msft-m365-groups-architecture-thumb.png)](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) <br/> [PDF](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) \|[Visio](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.vsdx) <br> Updated May 2022|These illustrations detail the different types of groups, how these are created and managed, and a few governance recommendations.|
 
 ### Microsoft Teams and related productivity services in Microsoft 365 for IT architects
 

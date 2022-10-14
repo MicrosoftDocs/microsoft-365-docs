@@ -1,41 +1,36 @@
 ---
-title: "Share files and videos"
+title: "Share files and videos in Microsoft Teams and SharePoint"
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twerner
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: conceptual
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Share files and videos inside your campaign with Microsoft Teams and SharePoint."
+description: "Share files and videos inside your campaign with Microsoft Teams and SharePoint. Microsoft 365 Business premium includes Teams which is a great way to safely share files and videos."
 ---
 
-# Share files and videos
+# Share files and videos in a safe environment
 
-Another thing to pay attention to is ensuring all members of the organization control who can view and edit files, and that they are stored in a secure location with the proper permissions applied. Users can use Microsoft Teams to store files, and then share the files either inside or outside of the firm, practice, or campaign by using Microsoft Teams or by sending SharePoint links. Sending a link rather than an email attachment means you know who is viewing and modifying the files, and they can't be viewed or modified without permission.
+Another thing to pay attention to is ensuring all members of the organization control who can view and edit files, and that they are stored in a secure location with the proper permissions applied. Microsoft 365 Business Premium users can use Microsoft Teams to store files, and then share the files either inside or outside of the firm, practice or campaign. You can also send a SharePoint link. Sending a link rather than an email attachment means you know who is viewing and modifying the files, and they can't be viewed or modified without permission.
 
 ![Diagram of a Microsoft Teams window, showing Files tab and Get link on the menu.](../media/m365-democracy-teams-sharefiles.png)
 
 With files in Microsoft Teams and SharePoint, files can also be worked on and reviewed together, even tracking changes as needed. In Teams, files are shared inside of a firm, practice, or campaign. If you need to share them externally with people outside your organization, you can add them as guests to a team or send them a secure SharePoint link.
-
-You can also use Microsoft Stream to store and share videos internally. These videos are not viewable to the public so they are ideal for internal company or campaign messaging.
 
 ## Best practices
 

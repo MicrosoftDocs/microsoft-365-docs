@@ -8,13 +8,15 @@ manager: laurawi
 ms.date: 09/29/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
 description: Learn how to use Compliance Score and Compliance Manager to improve your level of protection for personal data.
 ---

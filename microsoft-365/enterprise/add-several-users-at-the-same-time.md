@@ -5,7 +5,7 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -15,6 +15,8 @@ ms.custom:
 - 'O365M_AddUsersCSV'
 - 'O365E_AddUsersCSV'
 - admindeeplinkMAC
+ms.collection: 
+- scotvorg
 search.appverid:
 - MET150
 - MOP150

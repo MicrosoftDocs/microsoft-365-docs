@@ -1,15 +1,16 @@
-﻿---
+---
 title: "Data locations for the European Union"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
@@ -89,7 +90,7 @@ Only in rare cases does a Microsoft engineer need access to customer data. Typic
 
 Customers can use customer-managed keys to further prevent their data from being readable in case of unauthorized access. Both server-side and client-side encryption can rely on customer-managed keys or customer-provided keys. In either case, Microsoft would not have access to encryption keys and cannot decrypt the data. A SOC audit by an AICPA-accredited auditor twice a year to verifies the effectiveness of our security controls in audit scope. The SOC 2 Type 2 attestation report published by the auditor explains under what circumstances access to customer data can occur and how.
 
-In addition to storing and processing your data when you use the online services, Microsoft generates service data to monitor system health and to perform service operations such as troubleshooting. As a privacy protective measure, Microsoft generates and relies upon pseudonymous identifiers in this service generated data to be able to distinguish one user from another without identifying the actual users. Pseudonymous identifiers do not directly identify a person, and the information that enables mapping pseudonymous identifiers to actual users is protected as part of your data.
+In addition to storing and processing your data when you use the online services, Microsoft generates service data to monitor system health and to perform service operations such as troubleshooting. As a privacy protective measure, Microsoft generates and relies upon pseudonymous identifiers in this service generated data to be able to distinguish one user from another without identifying the actual users. Pseudonymous identifiers don't directly identify a person, and the information that enables mapping pseudonymous identifiers to actual users is protected as part of your data.
 
 To learn more, see [Who can access your data](https://www.microsoft.com/trust-center/privacy/data-access) and on what terms and [Subprocessors and Data Privacy](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4qVL2).
 
@@ -113,5 +114,5 @@ To learn more, see [Frequently Asked Questions](https://blogs.microsoft.com/data
 - [Trusted data protection](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FhZn) provides an overview of how Microsoft protects your data when you use Microsoft Online Services and Professional Services. It's also suggested that you consult the [Microsoft Online Services Terms (OST) and Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/product-licensing/products) that govern your use of these services.
 - [Office 365 Data Subject Requests for the GDPR](/compliance/regulatory/gdpr-dsr-Office365) helps you find and act on personal data or personal information to respond to DSRs using Microsoft 365 products, services, and administrative tools.
 - [Data Protection Impact Assessments: Guidance for Data Controllers Using Microsoft Office 365](/compliance/regulatory/gdpr-dpia-office365) helps you determine whether your organization needs to draft a DPIA, provides "how to" guidance, includes a customizable DPIA template document, and provides a DPIA Service Elements Matrix for many Microsoft 365 services.
-- [Learn how modules](/learn/paths/audit-safeguard-customer-data/) are designed for people in audit, compliance, risk, and legal roles who seek an overall understanding provide an in-depth review of how Microsoft 365's fundamental security and privacy practices to safeguard customer data.
+- [Learn how modules](/training/paths/audit-safeguard-customer-data/) are designed for people in audit, compliance, risk, and legal roles who seek an overall understanding provide an in-depth review of how Microsoft 365's fundamental security and privacy practices to safeguard customer data.
 - [Microsoft Compliance Offerings](/compliance/regulatory/offering-home) shows how Microsoft 365 services help your organization meet regulatory compliance standards.

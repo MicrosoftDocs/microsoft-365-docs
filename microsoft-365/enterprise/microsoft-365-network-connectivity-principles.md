@@ -1,14 +1,15 @@
 ---
-title: "Microsoft 365 network connectivity principles"
+title: Microsoft 365 network connectivity principles
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 6/23/2020
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 search.appverid: MET150
@@ -184,7 +185,7 @@ In the new model, endpoints are segregated into three categories, **Optimize**, 
   - Ensure that IP addresses returned by DNS name resolution match the routing egress path for these endpoints.
   - Prioritize these endpoints for SD-WAN integration for direct, minimal latency routing into the nearest Internet peering point of the Microsoft global network.
 
-- **Default** endpoints represent Office 365 services and dependencies that do not require any optimization, and can be treated by customer networks as normal Internet bound traffic. Some endpoints in this category may not be hosted in Microsoft datacenters. Examples include  *https://odc.officeapps.live.com*  and  *https://appexsin.stb.s-msn.com*.
+- **Default** endpoints represent Office 365 services and dependencies that do not require any optimization, and can be treated by customer networks as normal Internet bound traffic. Some endpoints in this category may not be hosted in Microsoft datacenters. Examples include  *https://odc.officeapps.live.com*  and  *`https://appexsin.stb.s-msn.com`*.
 
 For more information about Office 365 network optimization techniques, see the article [Managing Office 365 endpoints](managing-office-365-endpoints.md).
   

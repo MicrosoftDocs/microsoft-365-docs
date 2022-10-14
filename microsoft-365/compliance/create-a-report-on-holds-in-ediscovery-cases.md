@@ -1,34 +1,34 @@
 ---
 title: "Use a script to create an eDiscovery holds report"
+description: Learn how to generate a report that contains information about all the holds that are associated with eDiscovery cases.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 9/11/2017
+ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
-description: Learn how to generate a report that contains information about all the holds that are associated with eDiscovery cases.
 ---
 
 # Use a script to create a report on holds in eDiscovery cases
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with Core and eDiscovery (Premium) cases in the Microsoft Purview compliance portal. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. If there are cases that don't have any holds, the script will create an additional report with a list of cases without holds.
+The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with eDiscovery (Standard) and eDiscovery (Premium) cases in the Microsoft Purview compliance portal. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. If there are cases that don't have any holds, the script will create an additional report with a list of cases without holds.
 
 See the [More information](#more-information) section for a detailed description of the information included in the report.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Admin requirements and script information
 
@@ -38,13 +38,13 @@ See the [More information](#more-information) section for a detailed description
 
 - The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
 
-## Step 1: Connect to Security & Compliance Center PowerShell
+## Step 1: Connect to Security & Compliance PowerShell
 
-The first step is to connect to Security & Compliance Center PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+The first step is to connect to Security & Compliance PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## Step 2: Run the script to report on holds associated with eDiscovery cases
 
-After you've connected to Security & Compliance Center PowerShell, the next step is to create and run the script that collects information about the eDiscovery cases in your organization.
+After you've connected to Security & Compliance PowerShell, the next step is to create and run the script that collects information about the eDiscovery cases in your organization.
 
 1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, CaseHoldsReport.ps1.
 
@@ -125,7 +125,7 @@ After you've connected to Security & Compliance Center PowerShell, the next step
    }
    }
    else{
-   write-host "No hold policies found in case:" $cc.name -foregroundColor 'Yellow'
+    "No hold policies found in case:" $cc.name -foregroundColor 'Yellow'
    " "
    [string]$cc.name | out-file -filepath $noholdsfilepath -append
    }
@@ -142,7 +142,7 @@ After you've connected to Security & Compliance Center PowerShell, the next step
    if($cc.status -eq 'Closed')
    {
    $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'
-   add-tocasereport -casename $cc.name -casestatus -casetype $cc.casetype $cc.Status -caseclosedby $cc.closedby -caseClosedDateTime $cc.ClosedDateTime -casemembers $cmembers
+   add-tocasereport -casename $cc.name -casestatus $cc.Status -casetype $cc.casetype -caseclosedby $cc.closedby -caseClosedDateTime $cc.ClosedDateTime -casemembers $cmembers
    }
    else{
    $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'
@@ -198,7 +198,7 @@ The case holds report that's created when you run the script in this article con
 
 - The name of the hold and the name of the eDiscovery case that the hold is associated with.
 
-- Whether the hold is associated with a Core or eDiscovery (Premium) case.
+- Whether the hold is associated with a eDiscovery (Standard) or eDiscovery (Premium) case.
 
 - Whether or not the eDiscovery case is active or closed.
 
