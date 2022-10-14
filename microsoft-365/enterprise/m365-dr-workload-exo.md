@@ -218,7 +218,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
   
 You can't move inactive mailboxes that are preserved for compliance purposes (for example, mailboxes on Litigation Hold) by changing their **PreferredDataLocation** value. To move an inactive mailbox to a different _Geography_, do the following steps:
 
-1. Recover the inactive mailbox. For instructions, see [Recover an inactive mailbox](https://learn.microsoft.com/compliance/recover-an-inactive-mailbox).
+1. Recover the inactive mailbox. For instructions, see [Recover an inactive mailbox](https://learn.microsoft.com/microsoft-365/compliance/recover-an-inactive-mailbox).
 
 1. Prevent the Managed Folder Assistant from processing the recovered mailbox by replacing \<MailboxIdentity\> with the name, alias, account, or email address of the mailbox and running the following command in [Exchange Online PowerShell](https://learn.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
 
@@ -226,11 +226,11 @@ You can't move inactive mailboxes that are preserved for compliance purposes (fo
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
     ```
 
-1. Assign an **Exchange Online Plan 2** license to the recovered mailbox. This step is required to place the mailbox back on Litigation Hold. For instructions, see [Assign licenses to users](https://learn.microsoft.com/admin/manage/assign-licenses-to-users).
+1. Assign an **Exchange Online Plan 2** license to the recovered mailbox. This step is required to place the mailbox back on Litigation Hold. For instructions, see [Assign licenses to users](https://learn.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
 
 1. Configure the **PreferredDataLocation** value on the mailbox as described in the previous section.
 
-1. After you've confirmed that the mailbox has moved to the new geo location, place the recovered mailbox back on Litigation Hold. For instructions, see [Place a mailbox on Litigation Hold](https://learn.microsoft.com/compliance/create-a-litigation-hold#place-a-mailbox-on-litigation-hold).
+1. After you've confirmed that the mailbox has moved to the new geo location, place the recovered mailbox back on Litigation Hold. For instructions, see [Place a mailbox on Litigation Hold](https://learn.microsoft.com/microsoft-365/compliance/create-a-litigation-hold#place-a-mailbox-on-litigation-hold).
 
 1. After verifying that the Litigation Hold is in place, allow the Managed Folder Assistant to process the mailbox again by replacing \<MailboxIdentity\> with the name, alias, account, or email address of the mailbox and running the following command in [Exchange Online PowerShell](https://learn.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
 
@@ -240,7 +240,7 @@ You can't move inactive mailboxes that are preserved for compliance purposes (fo
 
 1. Make the mailbox inactive again by removing the user account that's associated with the mailbox. For instructions, see [Delete a user from your organization](https://learn.microsoft.com/admin/add-users/delete-a-user). This step also releases the Exchange Online Plan 2 license for other uses.
 
-**Note**: When you move an inactive mailbox to a different geo location, you might affect content search results or the ability to search the mailbox from the former geo location. For more information, see [Searching and exporting content in Multi-Geo environments](https://learn.microsoft.com/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments).
+**Note**: When you move an inactive mailbox to a different geo location, you might affect content search results or the ability to search the mailbox from the former geo location. For more information, see [Searching and exporting content in Multi-Geo environments](https://learn.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments).
   
 #### Create new cloud mailboxes in a specific Geography location
 
