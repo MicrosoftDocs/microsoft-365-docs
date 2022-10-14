@@ -333,7 +333,7 @@ The links below helps to troubleshoot the following RHEL Linux installation issu
 
 The following links help you with troubleshooting issues:
 
-- For more information, see [Known issues](linux-resources.md#known-issues).
+- For more information, see [Known issues](linux-resources.md).
 
 - For more information, see [Collect diagnostic information](linux-resources.md#collect-diagnostic-information).
 

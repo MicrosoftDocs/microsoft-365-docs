@@ -134,6 +134,8 @@
 ###### [Puppet based deployment](linux-install-with-puppet.md)
 ###### [Ansible based deployment](linux-install-with-ansible.md)
 ###### [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+##### [Advanced guidance]()
+###### [Deployment of MDE on RHEL Linux](comprehensive-guidance-on-linux-deployment.md)
 
 ##### [Update](linux-updates.md)
 
