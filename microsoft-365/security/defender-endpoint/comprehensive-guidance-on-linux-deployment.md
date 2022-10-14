@@ -1,5 +1,5 @@
 ---
-title: Deployment of Microsoft Defernder for Endpoint on RHEL Linux
+title: Deployment of Microsoft Defender for Endpoint on RHEL Linux
 ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on RHEL Linux
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, app, installation, deploy, uninstallation, intune
@@ -20,7 +20,7 @@ ms.subservice: mde
 search.appverid: met150
 ---
 
-# Deployment of Microsoft Defernder for Endpoint on RHEL Linux
+# Deployment of Microsoft Defender for Endpoint on RHEL Linux
 
 This article explains how to deploy Microsoft Defender for Endpoint (MDE) on a Red Hat Enterprise Linux (RHEL) system. 
 
@@ -75,7 +75,7 @@ The following are the supported RHEL Linux servers:
 
 For more information, see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements).
 
-## Network connectivity to Microsoft Defender for Endpoint
+## Network connectivity of Microsoft Defender for Endpoint
 
 The following is a list of people who need to be engaged:
 
