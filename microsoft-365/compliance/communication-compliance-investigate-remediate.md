@@ -247,7 +247,7 @@ When messages are resolved, they're removed from the **Pending** tab view and di
 
 Follow these steps to unresolve messages:
 
-1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for a user assigned to the *Communication Compliance Analyst* or *Communication Compliance Investigator* role groups in your Microsoft 365 organization.
+1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for a user assigned to the *Communication Compliance Analysts* or *Communication Compliance Investigators* role groups in your Microsoft 365 organization.
 2. In the Microsoft Purview compliance portal, go to **Communication compliance**.
 3. Select the **Policies** tab and then select a policy that contains the resolved alert message, double-click to open the **Policy** page.
 4. On the **Policy** page, select the **Resolved** tab.
