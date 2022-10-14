@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Top 20 most-viewed admin help articles this month # < 60 chars
-summary: Last updated August 3, 2022. Curious which help articles are most popular with admins? Check out this collection of the 20 most-viewed help articles, updated monthly. # < 160 chars
+summary: Last updated October 7, 2022. Curious which help articles are most popular with admins? Check out this collection of the 20 most-viewed help articles, updated monthly. # < 160 chars
 metadata:
   title: Top 20 most-viewed admin help articles this month # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Check out this collection of top 20 help articles that are most popular with admins, updated monthly. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   author: SKjerland #Required; your GitHub user alias, with correct capitalization.
   ms.author: sharik #Required; microsoft alias of author; optional team alias.
@@ -15,7 +15,10 @@ metadata:
   ms.custom: 
   - VSBFY23
   - AdminSurgePortfolio
-  ms.collection: Adm_TOC
+  ms.collection: 
+  - scotvorg
+  - highpri
+  - Adm_TOC
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -31,9 +34,13 @@ landingContent:
             url: add-users/about-admin-roles.md
           - text: Overview of the Microsoft 365 admin center
             url: admin-overview/admin-center-overview.md
+      - linkListType: how-to-guide
+        links:
           - text: Get support for Microsoft 365 for business
             url: get-help-support.md
- 
+          - text: Microsoft 365 activity reports
+            url: activity-reports/activity-reports.md
+
   # Card (optional)
   - title: Domains
     linkLists:
@@ -57,6 +64,8 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: Accept an email invitation to a Microsoft 365 for business subscription
+            url: simplified-signup/user-invite-business-standard.md
           - text: Cancel your business subscription
             url: ../commerce/subscriptions/cancel-your-subscription.md
           - text: Pay for your subscription
@@ -65,8 +74,6 @@ landingContent:
             url: ../commerce/billing-and-payments/manage-payment-methods.md
           - text: View your bill or invoice
             url: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
-          - text: Try or buy Microsoft 365 for business
-            url: ../commerce/try-or-buy-microsoft-365.md
           - text: About registration numbers and under review notifications
             url: ../commerce/about-registration-numbers.md
 
@@ -85,8 +92,6 @@ landingContent:
             url: email/create-a-shared-mailbox.md
           - text: Give mailbox permissions to another Microsoft 365 user
             url: add-users/give-mailbox-permissions-to-another-user.md
-          - text: Change a user name and email address
-            url: add-users/change-a-user-name-and-email-address.md
 
   # Card (optional)
   - title: Users, groups, and passwords

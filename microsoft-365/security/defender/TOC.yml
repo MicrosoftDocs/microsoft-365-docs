@@ -190,6 +190,10 @@
                       href: alert-grading-playbook-inbox-forwarding-rules.md
                     - name: Suspicious inbox manipulation rules
                       href: alert-grading-playbook-inbox-manipulation-rules.md
+                    - name: Suspicious password-spray-related IP address
+                      href: alert-grading-password-spray.md                      
+                    - name: Malicious exchange connectors
+                      href: alert-grading-for-malicious-exchange-connectors.md
                  - name: Users 
                    href: investigate-users.md                  
               - name: Incident response playbooks
@@ -214,40 +218,54 @@
          items: 
              - name: Overview
                href: advanced-hunting-overview.md
-             - name: Learn, train, & get examples
+             - name: Guided and advanced modes
+               href: advanced-hunting-modes.md               
+             - name: Build queries using guided mode 
                items: 
-                 - name: Learn the query language
-                   href: advanced-hunting-query-language.md
-                 - name: Get expert training
-                   href: advanced-hunting-expert-training.md
-                 - name: Use shared queries
-                   href: advanced-hunting-shared-queries.md
-                 - name: Hunt across devices, emails, apps, and identities
-                   href: advanced-hunting-query-emails-devices.md
-                 - name: Hunt for ransomware
-                   href: advanced-hunting-find-ransomware.md
-                 - name: Advanced hunting example
-                   href: advanced-hunting-example.md
-                 - name: Transition from Defender for Endpoint 
-                   href: advanced-hunting-migrate-from-mde.md
-             - name: Work with query results
-               href: advanced-hunting-query-results.md
-             - name: Take action on query results
-               href: advanced-hunting-take-action.md
-             - name: Quickly investigate with go hunt
-               href: advanced-hunting-go-hunt.md
-             - name: Link query results to an incident
-               href: advanced-hunting-link-to-incident.md
-             - name: Optimize & handle errors
-               items: 
-                - name: Apply query best practices
-                  href: advanced-hunting-best-practices.md
-                - name: Handle errors
-                  href: advanced-hunting-errors.md
-                - name: Quotas and usage parameters
-                  href: advanced-hunting-limits.md
-                - name: Extend data coverage
-                  href: advanced-hunting-extend-data.md
+                 - name: Get started with query builder
+                   href: advanced-hunting-query-builder.md
+                 - name: Refine your query in guided mode
+                   href: advanced-hunting-query-builder-details.md
+                 - name: Work with query results in guided mode
+                   href: advanced-hunting-query-builder-results.md                   
+             - name: Create queries using advanced mode
+               items:
+                 - name: Learn, train, & get examples
+                   items: 
+                     - name: Learn the query language
+                       href: advanced-hunting-query-language.md
+                     - name: Get expert training
+                       href: advanced-hunting-expert-training.md
+                     - name: Use shared queries
+                       href: advanced-hunting-shared-queries.md
+                     - name: Hunt across devices, emails, apps, and identities
+                       href: advanced-hunting-query-emails-devices.md
+                     - name: Hunt for ransomware
+                       href: advanced-hunting-find-ransomware.md
+                     - name: Advanced hunting example
+                       href: advanced-hunting-example.md
+                     - name: Transition from Defender for Endpoint 
+                       href: advanced-hunting-migrate-from-mde.md                
+                 - name: Work with query results
+                   href: advanced-hunting-query-results.md
+                 - name: Quickly investigate with go hunt
+                   href: advanced-hunting-go-hunt.md
+                 - name: Functions
+                   items: 
+                    - name: AssignedIPAddresses()
+                      href: advanced-hunting-assignedipaddresses-function.md                    
+                    - name: DeviceFromIP()
+                      href: advanced-hunting-devicefromip-function.md
+                    - name: FileProfile()
+                      href: advanced-hunting-fileprofile-function.md
+                    - name: SeenBy()
+                      href: advanced-hunting-seenby-function.md                   
+                 - name: Optimize & handle errors
+                   items: 
+                    - name: Apply query best practices
+                      href: advanced-hunting-best-practices.md
+                    - name: Handle errors
+                      href: advanced-hunting-errors.md
              - name: Data schema
                items: 
                 - name: Understand the schema
@@ -318,34 +336,32 @@
                   href: advanced-hunting-identityqueryevents-table.md
                 - name: UrlClickEvents
                   href: advanced-hunting-urlclickevents-table.md
-             - name: Functions
-               items: 
-                - name: AssignedIPAddresses()
-                  href: advanced-hunting-assignedipaddresses-function.md                    
-                - name: DeviceFromIP()
-                  href: advanced-hunting-devicefromip-function.md
-                - name: FileProfile()
-                  href: advanced-hunting-fileprofile-function.md
-                - name: SeenBy()
-                  href: advanced-hunting-seenby-function.md
              - name: Custom detections
                items: 
                 - name: Custom detections overview
                   href: custom-detections-overview.md
                 - name: Create & manage detection rules
                   href: custom-detection-rules.md
+             - name: Take action on query results
+               href: advanced-hunting-take-action.md
+             - name: Link query results to an incident
+               href: advanced-hunting-link-to-incident.md
+             - name: Quotas and usage parameters
+               href: advanced-hunting-limits.md
+             - name: Extend data coverage
+               href: advanced-hunting-extend-data.md                                                    
        - name: Track and respond to emerging threats
          items:
               - name: Threat analytics overview
                 href: threat-analytics.md
               - name: Understand the analyst report
                 href: threat-analytics-analyst-reports.md
-       - name: Collaborate with Microsoft Threat Experts
+       - name: Endpoint Attack Notifications
          items:
-              - name: Overview
-                href: microsoft-threat-experts.md
-              - name: Configure and manage Microsoft Threat Experts capabilities
-                href: configure-microsoft-threat-experts.md
+              - name: Endpoint Attack Notifications
+                href: ../defender-endpoint/endpoint-attack-notifications.md
+              - name: Experts on Demand
+                href: ../defender-endpoint/experts-on-demand.md
        - name: Collaborate with Microsoft Defender Experts for Hunting
          items:
               - name: Overview
@@ -458,6 +474,12 @@
                  href: configure-siem-defender.md
                - name: Troubleshoot issues with integrating SIEM tools
                  href: ../defender-endpoint/troubleshoot-siem.md
+            - name: Partner catalog
+              items:
+               - name: Technological partners of Microsoft 365 Defender
+                 href: ../defender-endpoint/technological-partners.md 
+               - name: Professional services supported by Microsoft 365 Defender
+                 href: ../defender-endpoint/professional-services.md           
             - name: Understand threat intelligence concepts
               href: ../defender-endpoint/threat-indicator-concepts.md 
         - name: Security intelligence

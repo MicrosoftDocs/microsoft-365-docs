@@ -6,19 +6,19 @@ ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: "Learn about work with SharePoint Syntex document understanding model explanations in PowerShell."
+description: Learn about work with Microsoft Syntex document understanding model explanations in PowerShell.
 ---
 
 # Work with document understanding model explanations in PowerShell
 
 > [!IMPORTANT]
-> The SharePoint Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
+> The Microsoft Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
 
 Custom explanation templates are stored in a list within a content center. Because these explanations are stored as list items, PowerShell can be used to interact with them.
 

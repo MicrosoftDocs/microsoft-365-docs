@@ -7,7 +7,7 @@ ms.reviewer:
 audience: admin
 ms.topic: article
 ms.custom: 
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
@@ -20,6 +20,8 @@ description: Learn how to export, transfer, or delete personal information from 
 The General Data Protection Regulation (GDPR) gives rights to users to manage personal data collected by an organization. These rights can be exercised through a data subject request (DSR).
 
 This article provides information about how to export, transfer, or delete personal information from Microsoft Whiteboard.
+
+In order to manage personal information, you must first ensure that Whiteboard is enabled for your organization. For more information, see [Manage access to Whiteboard](manage-whiteboard-access-organizations.md).
 
 ## Export a whiteboard
 
@@ -41,7 +43,7 @@ On iOS or the web, do the following steps:
 
 2. Select the **Settings** icon.
 
-3. Do one of the following:
+3. Do one of the following steps:
 
    - In Whiteboard for iOS, select **Export image (png)**.
 

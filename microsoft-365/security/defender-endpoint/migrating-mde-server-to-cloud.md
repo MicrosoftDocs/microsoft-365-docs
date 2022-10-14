@@ -7,13 +7,15 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+- m365-security
+- tier2
 ms.custom: migrationguides
 ms.date: 07/19/2022
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Migrating servers from Microsoft Defender for Endpoint to Microsoft Defender for Cloud
@@ -49,7 +51,7 @@ To enable Defender for Servers for Azure VMs and non-Azure machines connected th
 
      :::image type="content" source="images/mde-integration.png" alt-text="Screenshot that shows how to enable MDE integration." lightbox="images/mde-integration.png":::
 
-   If you have any of these buttons in your environment, make sure to enable integration for both. On new subscriptions, both options will be enabled by default.
+   If you have any of these buttons in your environment, make sure to enable integration for both. On new subscriptions, both options will be enabled by default. In this case, you will not see these buttons in your environment.
 
 5. Make sure the connectivity requirements for Azure Arc are met. Microsoft Defender for Cloud requires all on-premises and non-Azure machines to be connected via the Azure Arc agent. In addition, Azure Arc doesn't support all MDE supported operating systems. So, learn how to plan for [Azure Arc deployments here](/azure/azure-arc/servers/plan-at-scale-deployment).
 
@@ -63,7 +65,7 @@ For Azure VMs, no extra steps are required, these are automatically onboarded to
 
 ## How do I migrate on-premises machines to Microsoft Defender for Servers?
 
-[Connect](/azure/defender-for-cloud/quickstart-onboard-machines?pivots=azure-arc) your on-premises machines via Azure Arc-connected servers.
+Once all prerequisites are met, [connect](/azure/defender-for-cloud/quickstart-onboard-machines?pivots=azure-arc) your on-premises machines via Azure Arc-connected servers.
 
 ## How do I migrate VMs from AWS or GCP environments?
 

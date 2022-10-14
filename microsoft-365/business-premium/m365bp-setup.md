@@ -7,13 +7,15 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 08/01/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
-- M365-security-compliance
+- m365-security
+- tier1
 ms.custom: intro-get-started
 ---
 
@@ -33,20 +35,23 @@ Make sure that you meet the following requirements before you begin your setup p
 | Subscription | Microsoft 365 Business Premium or Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following articles: <br/>- [Get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [Get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md) |
 | Permissions  | To complete the initial setup process, you must be a Global Admin. [Learn more about admin roles](../admin/add-users/about-admin-roles.md). |
 | Browser requirements | Microsoft Edge, Safari, Chrome or Firefox. [Learn more about browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
-| Operating system | **Windows**:  Windows 11, Windows 10, Windows 8.1<br/>**macOS**: One of the three most recent versions of macOS <br/>Currently, Microsoft 365 Business Premium and the standalone version of Microsoft Defender for Business do not support servers.  |
+| Operating systems (client) | **Windows**:  Windows 11, Windows 10, Windows 8.1<br/>**macOS**: One of the three most recent versions of macOS 
+| Operating systems (servers) | Windows Server or Linux Server <br/>- Requires Microsoft Defender for Business servers (currently in preview)<br/>- See [How to get Microsoft Defender for Business servers (preview)](../security/defender-business/get-defender-business-servers.md).  |
 
 > [!NOTE]
 > For more detailed information about Microsoft 365, Office, and system requirements, see [Microsoft 365 and Office Resources](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## Guided setup process
 
-Microsoft 365 Business Premium includes a guided process. The following video shows the guided setup process for Microsoft 365 Business Standard, which also applies to Microsoft 365 Business Premium. As soon as you've completed the guided setup process, make sure to proceed to [bump up security](m365bp-security-overview.md).<br/><br/>
+Microsoft 365 Business Premium includes a guided process. The following video shows the guided setup process for Microsoft 365 Business Standard, which also applies to Microsoft 365 Business Premium. <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
+As soon as you've completed the guided setup process, make sure to proceed to [bump up security](m365bp-security-overview.md).
+
 > [!TIP]
-> - After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guide walks them through signing in, getting Office apps, and saving, copying, and sharing files.
-> - Make sure to proceed to [Bump up security](m365bp-security-overview.md).
+> After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guide walks them through signing in, getting Office apps, and saving, copying, and sharing files.
+
 
 ## Work with a Microsoft partner
 
@@ -71,6 +76,6 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 - [Set up self-service passwords](../admin/add-users/let-users-reset-passwords.md)
 - [Set up self-service group management](/azure/active-directory/enterprise-users/groups-self-service-management)
 
-### Next objective
+## Next objective
 
-Once you've achieved these objectives, proceed to [Bump up security](m365bp-security-overview.md).
+Proceed to [Bump up security](m365bp-security-overview.md).

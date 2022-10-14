@@ -7,12 +7,15 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 07/19/2022
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -32,8 +35,8 @@ See more at [Set up multi-factor authentication in Microsoft 365 Business Premiu
 
 ## Use the Outlook app on your devices
 
-After an admin has required the front-line users to use MFA then the authenticator app serves as a second form of authentication. We recommend you have them install and use the Outlook app to access their Microsoft 365 email.
+When MFA is enforced, the authenticator app serves as a second form of authentication. We also recommend that everyone install and use the Outlook app to access their Microsoft 365 email on their devices. See [Download Microsoft Outlook for iOS and Android](https://www.microsoft.com/microsoft-365/outlook-mobile-for-android-and-ios).
 
 ## Next objective
 
-For your next objective, follow the guidance to [install Office applications](m365bp-install-office-apps.md).
+Proceed to [install Office applications](m365bp-install-office-apps.md).

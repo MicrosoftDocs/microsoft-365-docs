@@ -2,7 +2,7 @@
 title: What's new in Microsoft Defender for Endpoint on Mac
 description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on Mac.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
+- m365-security
+- tier3
 ms.topic: reference
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # What's new in Microsoft Defender for Endpoint on Mac
@@ -30,6 +32,48 @@ ms.technology: mde
 For more information on Microsoft Defender for Endpoint on other operating systems: 
 - [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md) 
 - [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)</br>
+
+<details>
+  <summary>Oct-2022 (Build: 101.82.21  | Release version: 20.122082.18221.0)</summary>
+
+&ensp;Build: **101.82.21**<br/>
+&ensp;Release version: **20.122082.18221.0**<br/>
+&ensp;Engine version: **1.1.19400.3**<br/>
+&ensp;Signature version: **1.369.962.0**<br/>
+
+**What's new**
+
+- Bug fix - Mac TP in Block mode causing device hang on shutdown/crashes on reboot
+- Add a mdatp command-line switch to view the on-demand scan history
+- Improve Performance of Device Owner on MacOs
+- Ready for macOS Ventura (13.0)
+- Bug and performance fixes
+
+<br/>
+</details>
+
+> [!IMPORTANT]
+> This is a minimal MDE version without known issues on macOS Ventura on the day of publishing the release notes. Between now and macOS Ventura GA, Apple may still release Ventura Beta's with platform changes that impact MDE experience. Visit these release notes around Ventura GA date for the final recommended Ventura-compatible MDE version number.
+
+<details>
+  <summary>Aug-2022 (Build: 101.78.13  | Release version: 20.122072.17813.0)</summary>
+
+&ensp;Build: **101.78.13**<br/>
+&ensp;Release version: **20.122072.17813.0**<br/>
+&ensp;Engine version: **1.1.19500.2**<br/>
+&ensp;Signature version: **1.373.556.0**<br/>
+
+**What's new**
+
+- Fix for uninstaller to properly delete Application Support folder
+- Fix for Network Protection not filtering Safari when Firewall or iCloud Private Relay is on
+- Fix for osqueryui zombie processes
+- Fix for UI crash on Ventura
+- Fix for definitions not getting downloaded right after install
+- Other bug fixes
+    
+<br/>
+</details>
 
 <details>
   <summary>Aug-2022 (Build: 101.75.90  | Release version: 20.122071.17590.0)</summary>
@@ -420,7 +464,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Release version: **20.121022.12750.0** <br/> 
 
 **What's new**
-- Fix to accommodate for Apple certificate expiration for macOS Catalina and earlier. This fix restores Threat & Vulnerability Management (TVM) functionality.  
+- Fix to accommodate for Apple certificate expiration for macOS Catalina and earlier. This fix restores Microsoft Defender Vulnerability Management (MDVM) functionality.  
 
 <br/>
 </details>

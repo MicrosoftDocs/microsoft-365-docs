@@ -3,6 +3,7 @@ title: 'Sorting, filtering, and downloading data using Microsoft Defender Threat
 description: 'Learn how to sort, filter and download data using Microsoft Defender Threat Intelligence (Defender TI).'
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence 
 ms.topic: how-to 
 ms.date: 08/02/2022
@@ -10,6 +11,7 @@ ms.custom: template-how-to
 ---
 
 # Sorting, filtering, and downloading data
+
 The Microsoft Defender Threat Intelligence (Defender TI) platform enables analysts to access our vast collection of crawling data in an indexed and pivot table format.  These data sets can be very large, returning expansive amounts of historic and recent data. Thus, allowing analysts to appropriately sort and filter the data provides the ability easily to surface the connections of interest.
 
 ![Sorting DataSets Chrome Screenshot](media/sortingDataSetsChromeScreenshot.png)
@@ -23,7 +25,6 @@ In this how-to article, you’ll learn how to sort and filter data for the follo
 - Trackers
 - Components
 - Host Pairs
-- Hashes
 - Cookies
 - Services
 - DNS
@@ -154,7 +155,7 @@ Data can be downloaded within the following sections:
 
 The following headers are exported as a result of downloading Resolutions, DNS, and reverse DNS data:
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **Resolve**                | A record associated with the domain searched (resolving IP Address) or domain that has resolved to an IP address when an IP address is searched |
 | **Location**               | Country the IP address is hosted in |
@@ -167,14 +168,14 @@ The following headers are exported as a result of downloading Resolutions, DNS, 
 
 The following headers are exported as a result of downloading Subdomains data:
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **hostname**               | Subdomain of the domain searched |
 | **tags**                   | Custom or system tags associated with the artifact |
 
 The following headers are exported as a result of downloading Trackers data:
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **hostname**               | Hostname that observed or is currently observing the tracker |
 | **firstSeen**              | Date / Time when Microsoft first observed the hostname was using the tracker (format: mm/dd/yyyy hh:mm) |
@@ -185,7 +186,7 @@ The following headers are exported as a result of downloading Trackers data:
 
 The following headers are exported as a result of downloading Components data:
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **hostname**               | Hostname that observed or is currently observing the component |
 | **firstSeen**              | Date / Time when Microsoft first observed the hostname was using the tracker (format: mm/dd/yyyy hh:mm |
@@ -197,7 +198,7 @@ The following headers are exported as a result of downloading Components data:
 
 The following headers are exported as a result of downloading Host Pairs data:
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **parentHostname**         | The hostname that is reaching out to the child hostname |
 | **childHostname**          | The hostname that is feeding assets they host to the parent hostname. |
@@ -206,17 +207,10 @@ The following headers are exported as a result of downloading Host Pairs data:
 | **attributeCause**         | The cause of the relationship between the parent and child hostname |
 | **Tags**                   | Custom or system tags associated with the artifact |
 
-The following headers are exported as a result of downloading Hashes data:
-
-|                    |                            |
-|--------------------|----------------------------|
-| **source**         | The source who observed the MD5 hash sample |
-| **sample**                  | The MD5 hash |
-| **collection date**         | The collection date captured by the source |
 
 The following headers are exported as a result of downloading Cookies data:
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **hostname**               | Hostname that observed the Cookie name |
 | **firstSeen**              | When the Cookie name was first observed to the hostname originating from the Cookie Domain (format: mm/dd/yyyy hh:mm) |
@@ -227,7 +221,7 @@ The following headers are exported as a result of downloading Cookies data:
 
 The following headers are exported as a result of downloading projects lists for my, team, and shared projects:
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **name**                   | Name of project |
 | **artifacts (count)**      | Count of artifacts within the project |
@@ -238,7 +232,7 @@ The following headers are exported as a result of downloading projects lists for
 
 The following headers are exported as a result of downloading project details (artifacts) from a project:
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **artifact**               | Artifact value (e.g. IP address, domain, host, WHOIS value, certificate SHA-1, etc.) |
 | **type**                   | Type of artifact (e.g. IP, domain, host, WHOIS Organization, WHOIS Phone, Certificate SHA-1, etc.) |
@@ -250,9 +244,9 @@ The following headers are exported as a result of downloading project details (a
 
 The following headers are exported as a result of downloading threat intelligence public or riskiq indicators:
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
-| **type**                | Type of indicator (e.g. ip, certificate, domain, hash_sha256) |
+| **type**                | Type of indicator (e.g. ip, certificate, domain, _sha256) |
 | **value**               | Value of the indicator (e.g. IP address, domain, hostname) |
 | **source**              | Source of indicator (RiskIQ or OSINT) |
 

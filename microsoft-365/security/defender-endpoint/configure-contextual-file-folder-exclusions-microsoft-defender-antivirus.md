@@ -1,28 +1,32 @@
 ---
 title: Contextual file and folder exclusions
-description: Describes the contextual file and folder exclusions capability for Windows Defender Antivirus. This capability allows you to be more specific when you define under which context Windows Defender Antivirus shouldn't scan a file or folder, by applying restrictions
+description: Describes the contextual file and folder exclusions capability for Microsoft Defender Antivirus on Windows. This capability allows you to be more specific when you define under which context Microsoft Defender Antivirus shouldn't scan a file or folder, by applying restrictions
 keywords: Microsoft Defender Antivirus, process, exclusion, files, scans
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jweston-1
 ms.author: v-jweston
 ms.localizationpriority: medium
+ms.date: 08/25/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Contextual file and folder exclusions
 
-This article/section describes the contextual file and folder exclusions capability for Windows Defender Antivirus. This capability allows you to be more specific when you define under which context Windows Defender Antivirus shouldn't scan a file or folder, by applying restrictions.
+This article/section describes the contextual file and folder exclusions capability for Microsoft Defender Antivirus on Windows. This capability allows you to be more specific when you define under which context Microsoft Defender Antivirus shouldn't scan a file or folder, by applying restrictions.
 
 ## Overview
 
-Exclusions are primarily intended to mitigate affects on performance. They come at the penalty of reduced protection value. These restrictions allow you to limit this protection reduction by specifying circumstances under which the exclusion should apply. Contextual exclusions aren't suitable for addressing false positives in a reliable way. If you encounter a false positive, you can Submit files for analysis through the [Microsoft 365 Defender](https://security.microsoft.com/) portal (subscription required) or through the [Microsoft Security Intelligence](https://www.microsoft.com/wdsi/filesubmission) website. For a temporary suppression method, consider creating a custom _allow_ indicator.
+Exclusions are primarily intended to mitigate affects on performance. They come at the penalty of reduced protection value. These restrictions allow you to limit this protection reduction by specifying circumstances under which the exclusion should apply. Contextual exclusions aren't suitable for addressing false positives in a reliable way. If you encounter a false positive, you can submit files for analysis through the [Microsoft 365 Defender](https://security.microsoft.com/) portal (subscription required) or through the [Microsoft Security Intelligence](https://www.microsoft.com/wdsi/filesubmission) website. For a temporary suppression method, consider creating a custom _allow_ indicator in [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/indicator-file).
 
 There are four restrictions you can apply to limit the applicability of an exclusion:
 
@@ -47,7 +51,7 @@ Restrictions are typically applied by adding the restriction type to the file or
 
 ### Requirements
 
-This capability requires Windows Defender Antivirus:
+This capability requires Microsoft Defender Antivirus:
 
 - Platform: **4.18.2205.7** or later
 - Engine: **1.1.19300.2** or later
@@ -59,6 +63,10 @@ As a starting point, you may already have exclusions in place that you wish to m
 `<PATH>\:{TypeName:value,TypeName:value}`
 
 Keep in mind that _all_ **types** and **values** are case sensitive.
+
+> [!NOTE]  
+> Conditions inside `{}` MUST be true for the restriction to match. For example, if you specify two scan triggers this cannot be true, and the exclusion will not apply. To specify two restrictions of the same type, create two separate exclusions.
+
 
 ### Examples
 
@@ -80,7 +88,7 @@ You can restrict exclusions to only apply if the target is a file or a folder by
 
 #### File/folder exclusions default behavior
 
-If you don't specify any other options, the file/folder is excluded from all types of scans _and_ the exclusion applies regardless of whether the target is a file or a folder. For more information about customizing exclusions to only apply to a specific scan type, see [Scan type restriction](#scan-type-restriction).
+If you don't specify any other options, the file/folder is excluded from all types of scans, _and_ the exclusion applies regardless of whether the target is a file or a folder. For more information about customizing exclusions to only apply to a specific scan type, see [Scan type restriction](#scan-type-restriction).
 
 #### Folders
 

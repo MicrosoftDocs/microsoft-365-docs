@@ -5,7 +5,7 @@ author: JoanneHendrickson
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
@@ -174,17 +174,17 @@ Below are important things to know about upgrading Exchange 2013:
 |---|---|
 |End of support dates|Like Exchange 2013, each version of Exchange has its own end-of-support date: <p> Exchange 2013 - April 2023 <p> April 2023 is a lot closer than you think!|
 |Migration path to Exchange 2019|The migration path from Exchange 2013 to a newer version is simple: <p> Install Exchange 2019 into your existing Exchange 2013 organization. <p> Move services and data from Exchange 2013 to Exchange 2019 and decommission Exchange 2013 servers.|
-|Server hardware|Server hardware requirements have changed from Exchange 2013. Make sure your hardware is compatible. Find out more about hardware requirements here: <p> [Exchange 2019 system requirements](/exchange/plan-and-deploy/system-requirements?view=exchserver-2019) <p>With the significant improvements in Exchange performance and the increased computing power and storage capacity in newer servers, you'll likely need fewer servers to support the same number of mailboxes.|
+|Server hardware|Server hardware requirements have changed from Exchange 2013. Make sure your hardware is compatible. Find out more about hardware requirements here: <p> [Exchange 2019 system requirements](/exchange/plan-and-deploy/system-requirements?view=exchserver-2019&preserve-view=true) <p>With the significant improvements in Exchange performance and the increased computing power and storage capacity in newer servers, you'll likely need fewer servers to support the same number of mailboxes.|
 |Operating system version|The minimum supported operating system version for Exchange 2019 is Windows Server 2019. Windows Server 2022 support is coming soon <p> You can find more information about operating system support at [Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix).|
 |Active Directory forest functional level|The minimum supported Active Directory forest functional level is Windows Server 2012 R2. You can find more information about forest functional level support at [Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix).|
-|Office client versions|The minimum supported Office client version is also documented in the [Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix?view=exchserver-2019#clients).|
+|Office client versions|The minimum supported Office client version is also documented in the [Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix?view=exchserver-2019#clients&preserve-view=true).|
 |
 
 Use the following resources to help with your migration:
 
 - [Exchange Deployment Assistant](/exchange/exchange-deployment-assistant)
-- Active Directory [schema changes for Exchange 2019](/exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2019)
-- System [requirements for Exchange 2019](/exchange/plan-and-deploy/system-requirements?view=exchserver-2019)
+- Active Directory [schema changes for Exchange 2019](/exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2019&preserve-view=true)
+- System [requirements for Exchange 2019](/exchange/plan-and-deploy/system-requirements?view=exchserver-2019&preserve-view=true)
 
 
 ## What if I need help?

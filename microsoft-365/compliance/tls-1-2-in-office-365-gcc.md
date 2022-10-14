@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 search.appverid: 
 - MET150
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: purview-compliance
 ms.service: information-protection
 ms.topic: article
 ms.reviewer: krowley
@@ -17,6 +17,8 @@ appliesto:
 ---
 
 # Disabling TLS 1.0 and 1.1 in Microsoft 365 GCC High and DoD
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Summary
 

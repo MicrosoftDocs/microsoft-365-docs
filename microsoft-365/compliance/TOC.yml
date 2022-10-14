@@ -28,33 +28,33 @@
       href: plan-for-security-and-compliance.md
     - name: Compliance extensibility
       href: compliance-extensibility.md
-- name: Cross-solution features
+- name: Onboard devices for Microsoft Purview
   items:
-    - name: Onboard Windows 10 and Windows 11 devices
+    - name: Onboard Windows devices
       items:
-        - name: Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview
+        - name: Overview
           href: device-onboarding-overview.md
-        - name: Onboard Windows 10 and Windows 11 devices via Group Policy
-          href: device-onboarding-gp.md
-        - name: Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools
+        - name: Intune
           href: device-onboarding-mdm.md
-        - name: Onboard Windows 10 Windows 11 devices using Configuration Manager
+        - name: Configuration Manager
           href: device-onboarding-sccm.md
-        - name: Onboard Windows 10 and Windows 11 devices using a local script
+        - name: Group Policy
+          href: device-onboarding-gp.md
+        - name: Local script
           href: device-onboarding-script.md
-        - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
+        - name: Non-persistent virtual desktop infrastructure (VDI)
           href: device-onboarding-vdi.md
     - name: Onboard macOS devices
       items:
-        - name: Onboard macOS devices into Microsoft 365 overview 
+        - name: Overview 
           href: device-onboarding-macos-overview.md
-        - name: Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune
+        - name: Intune
           href: device-onboarding-offboarding-macos-intune.md
-        - name: Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers
+        - name: Intune for Microsoft Defender for Endpoint
           href: device-onboarding-offboarding-macos-intune-mde.md
-        - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro
+        - name: JAMF Pro
           href: device-onboarding-offboarding-macos-jamfpro.md
-        - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers
+        - name: JAMF Pro for Microsoft Defender for Endpoint customers
           href: device-onboarding-offboarding-macos-jamfpro-mde.md
 - name: Manage connectors for third-party data
   items: 
@@ -98,8 +98,6 @@
          href: archive-eml-data.md
        - name: FX Connect
          href: archive-fxconnect-data.md
-       - name: Jive
-         href: archive-jive-data.md
        - name: MS SQL Database
          href: archive-mssqldatabaseimporter-data.md
        - name: Pivot
@@ -328,18 +326,38 @@
           items:
           - name: Create a custom sensitive information type - Compliance Center
             href: create-a-custom-sensitive-information-type.md
-          - name: Get started with exact data match based sensitive information types
-            href: sit-get-started-exact-data-match-based-sits-overview.md
-          - name: Export source data for exact data match based sensitive information type
-            href: sit-get-started-exact-data-match-export-data.md
-          - name: Create the schema for exact data match based sensitive information types
-            href: sit-get-started-exact-data-match-create-schema.md
-          - name: Hash and upload the sensitive information source table for exact data match sensitive information types
-            href: sit-get-started-exact-data-match-hash-upload.md
-          - name: Create exact data match sensitive information type/rule package
-            href: sit-get-started-exact-data-match-create-rule-package.md
-          - name: Test an exact data match sensitive information type
-            href: sit-get-started-exact-data-match-test.md  
+          - name: Creating EDM SITS
+            items:
+            - name: Get started with EDM SITS
+              href: sit-get-started-exact-data-match-based-sits-overview.md
+            - name: Create EDM SIT new experience
+              items: 
+              - name: Create EDM SIT workflow new experience
+                href: sit-create-edm-sit-unified-ux-workflow.md
+              - name: Export source data
+                href: sit-get-started-exact-data-match-export-data.md 
+              - name: Create EDM SIT sample file for the new experience
+                href: sit-create-edm-sit-unified-ux-sample-file.md
+              - name: Create EDM SIT schema and rule package new experience
+                href: sit-create-edm-sit-unified-ux-schema-rule-package.md
+              - name: Hash and upload the sensitive information source table for EDM classic experience
+                href: sit-get-started-exact-data-match-hash-upload.md
+              - name: Test an EDM sensitive information type
+                href: sit-get-started-exact-data-match-test.md
+            - name: Create EDM SIT classic experience
+              items:
+              - name: Create exact EDM SIT workflow classic experience
+                href: sit-create-edm-sit-classic-ux-workflow.md
+              - name: Export source data
+                href: sit-get-started-exact-data-match-export-data.md
+              - name: Create the schema for EDM classic experience
+                href: sit-get-started-exact-data-match-create-schema.md
+              - name: Hash and upload the sensitive information source table for EDM classic experience
+                href: sit-get-started-exact-data-match-hash-upload.md
+              - name: Create exact data match sensitive information type/rule package
+                href: sit-get-started-exact-data-match-create-rule-package.md
+              - name: Test an EDM sensitive information type
+                href: sit-get-started-exact-data-match-test.md
         - name: Use sensitive information types
           items:
           - name: Customize a built-in sensitive information type
@@ -378,6 +396,8 @@
                 href: sensitive-information-type-entity-definitions.md
               - name: ABA routing number
                 href: sit-defn-aba-routing.md
+              - name: All credentials
+                href: sit-defn-all-creds.md
               - name: All full names
                 href: sit-defn-all-full-names.md
               - name: All medical terms and conditions
@@ -548,8 +568,6 @@
                 href: sit-defn-china-resident-identity-card-number.md
               - name: Client secret / API key
                 href: sit-defn-client-secret-api-key.md
-              - name: Credentials in URL
-                href: sit-defn-credentials-in-url.md
               - name: Credit card number
                 href: sit-defn-credit-card-number.md
               - name: Croatia drivers license number
@@ -750,6 +768,8 @@
                 href: sit-defn-japan-my-number-personal.md
               - name: Japan passport number
                 href: sit-defn-japan-passport-number.md
+              - name: Japan physical addresses
+                href: sit-defn-japan-physical-addresses.md
               - name: Japan residence card number
                 href: sit-defn-japan-residence-card-number.md
               - name: Japan resident registration number
@@ -836,6 +856,8 @@
                 href: sit-defn-norway-identification-number.md
               - name: Norway physical addresses
                 href: sit-defn-norway-physical-addresses.md
+              - name: Philippines passport number
+                href: sit-defn-philippines-passport-number.md
               - name: Philippines unified multi-purpose identification number
                 href: sit-defn-philippines-unified-multi-purpose-identification-number.md
               - name: Poland drivers license number
@@ -862,6 +884,8 @@
                 href: sit-defn-portugal-physical-addresses.md
               - name: Portugal tax identification number
                 href: sit-defn-portugal-tax-identification-number.md
+              - name: Qatari identification card number
+                href: sit-defn-qatari-id-card-number.md
               - name: Romania drivers license number
                 href: sit-defn-romania-drivers-license-number.md
               - name: Romania passport number
@@ -984,6 +1008,8 @@
             href: sit-functions.md
           - name: Custom sensitive information type filters reference
             href: sit-custom-sit-filters.md
+          - name: Sensitive information type limits
+            href: sit-limits.md
     - name: Trainable classifiers
       items: 
         - name: Learn about trainable classifiers
@@ -992,6 +1018,8 @@
           href: classifier-get-started-with.md
         - name: How to retrain a classifier in content explorer
           href: classifier-how-to-retrain-content-explorer.md
+        - name: Trainable classifier definitions
+          href: classifier-tc-definitions.md
     - name: Data classification
       items: 
         - name: Learn about data classification
@@ -1002,11 +1030,13 @@
           href: data-classification-activity-explorer.md
         - name: Labeling actions reported in Activity explorer
           href: data-classification-activity-explorer-available-events.md
+        - name: Increase classifier accuracy
+          href: data-classification-increase-accuracy.md
     - name: Sensitivity labels
       items:
         - name: Learn about sensitivity labels
           href: sensitivity-labels.md
-        - name: Why choose built-in labeling for Office apps
+        - name: Migrate the AIP add-in for Office apps
           href: sensitivity-labels-aip.md
         - name: Get started with sensitivity labels
           href: get-started-with-sensitivity-labels.md
@@ -1032,6 +1062,8 @@
       items: 
         - name: Understand encryption
           href: encryption.md
+        - name: Azure AD configurations
+          href: encryption-azure-ad-configuration.md
         - name: Double Key Encryption (DKE)
           href: double-key-encryption.md
         - name: Double Key Encryption FAQ
@@ -1185,6 +1217,8 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference
               href: dlp-policy-tips-reference.md
+            - name: Share DLP Alerts (preview)
+              href: dlp-share-alerts.md
 - name: Manage data lifecycle & records
   items: 
     - name: Govern your data
@@ -1201,7 +1235,7 @@
           items: 
             - name: SharePoint and OneDrive
               href: retention-policies-sharepoint.md
-            - name: Microsoft Teams
+            - name: Teams
               href: retention-policies-teams.md
             - name: Yammer
               href: retention-policies-yammer.md
@@ -1279,6 +1313,8 @@
           href: file-plan-manager.md
         - name: Start retention when an event occurs
           href: event-driven-retention.md
+        - name: Customization for the end of the retention period
+          href: retention-label-flow.md
         - name: Publish & apply retention labels in apps
           href: create-apply-retention-labels.md
         - name: Automatically apply retention labels to content
@@ -1679,6 +1715,8 @@
           href: compliance-manager-templates-list.md
         - name: Working with improvement actions
           href: compliance-manager-improvement-actions.md
+        - name: Updating improvement actions
+          href: compliance-manager-update-actions.md
         - name: Create and manage alert policies
           href: compliance-manager-alert-policies.md
         - name: How your compliance score is calculated

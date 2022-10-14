@@ -1,14 +1,16 @@
 ---
 title: Project Server 2007 end of support roadmap
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: IT_ProjectAdmin
