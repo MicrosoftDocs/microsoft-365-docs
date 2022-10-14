@@ -29,19 +29,7 @@ ms.collection:
 >[!NOTE]
 >If Customer provisions its tenant in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, United Arab Emirates, United Kingdom, or United States, Microsoft will store the following Customer Data at rest only within that Geo: Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments)
 
-### Option 2: Multi-Geo add-on
-
-Required Conditions:
-
-1. Tenants have a valid Multi-Geo subscription that covers all users assigned to a _Satellite Geography_.
-1. Customer must have an active Enterprise Agreement.
-1. Total purchased Multi-Geo units must be greater than 5% of the total eligible seats in the tenant.
-
-**Commitment:**
-
-Customers may assign a Satellite Geography supported by Multi-Geo to a supported mailbox type. See the [Microsoft 365 Multi-Geo availability section](microsoft-365-multi-geo.md#microsoft-365-multi-geo-availability) of the Microsoft 365 Multi-Geo page for details. The Data at Rest for Office 365 Services for the mailbox as defined by the product terms shall be stored in the assigned Satellite Geography. Supported mailbox types includes Exchange Online user primary and archive mailboxes, resource mailboxes, Microsoft 365 Group mailboxes, and shared mailboxes.
-
-### Option 3: Advanced Data Residency add-on
+### Option 2: Advanced Data Residency add-on
 
 Required Conditions:
 
@@ -53,6 +41,19 @@ Required Conditions:
 
 Data at Rest for Office 365 Services as defined by the product terms, specifically Exchange Online mailbox content,  (e-mail body, calendar entries, and the content of e-mail attachments stored in the related _Local Region Geography_ or _Expanded Local Region Geography_.  
 This includes all types of mailboxes, including user mailboxes, resource mailboxes, archive mailboxes.
+
+### Option 3: Multi-Geo add-on
+
+Required Conditions:
+
+1. Tenants have a valid Multi-Geo subscription that covers all users assigned to a _Satellite Geography_.
+1. Customer must have an active Enterprise Agreement.
+1. Total purchased Multi-Geo units must be greater than 5% of the total eligible seats in the tenant.
+
+**Commitment:**
+
+Customers may assign a Satellite Geography supported by Multi-Geo to a supported mailbox type. See the [Microsoft 365 Multi-Geo availability section](microsoft-365-multi-geo.md#microsoft-365-multi-geo-availability) of the Microsoft 365 Multi-Geo page for details. The Data at Rest for Office 365 Services for the mailbox as defined by the product terms shall be stored in the assigned Satellite Geography. Supported mailbox types includes Exchange Online user primary and archive mailboxes, resource mailboxes, Microsoft 365 Group mailboxes, and shared mailboxes.
+
 
 ## Multi-Geo Capabilities in Exchange Online
 
