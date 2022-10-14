@@ -29,19 +29,7 @@ ms.collection:
 >[!NOTE]
 >Office 365 Services. If Customer provisions its tenant in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, or the United States, Microsoft will store the following Customer Data at rest only within that Geo (2) SharePoint Online site content and the files stored within that site, and (3) files uploaded to OneDrive for Business.
 
-### Option 2: Multi-Geo add-on
-
-Required Conditions:
-
-1. Tenants have a valid Multi-Geo subscription that covers all users assigned to a Satellite Geography
-1. Customer must have an active Enterprise Agreement.
-1.Total purchased Multi-Geo units must be greater than 5% of the total eligible seats in the tenant.
-
-**Commitment:**
-Customers can assign users of SharePoint Online/OneDrive for Business to any _Satellite Geography_ supported by Multi-Geo (see Section 4.1.3). The following customer data will be stored in the relevant _Satellite Geography_:
-SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business.  ***TODO: INSERT FINAL TEXT FROM ROB HERE***
-
-### Option 3: Advanced Data Residency add-on
+### Option 2: Advanced Data Residency add-on
 
 Required Conditions:
 
@@ -52,6 +40,18 @@ Required Conditions:
 **Commitment:**
 The following customer data will be stored in the related _Geography_:
 SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business.***TODO: ADD TEXT FROM ROB WHEN DONE***
+
+### Option 3: Multi-Geo add-on
+
+Required Conditions:
+
+1. Tenants have a valid Multi-Geo subscription that covers all users assigned to a Satellite Geography
+1. Customer must have an active Enterprise Agreement.
+1.Total purchased Multi-Geo units must be greater than 5% of the total eligible seats in the tenant.
+
+**Commitment:**
+Customers can assign users of SharePoint Online/OneDrive for Business to any _Satellite Geography_ supported by Multi-Geo (see Section 4.1.3). The following customer data will be stored in the relevant _Satellite Geography_:
+SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business.  ***TODO: INSERT FINAL TEXT FROM ROB HERE***
 
 ## **Multi-Geo Capabilities in SharePoint Online / OneDrive for Business**
 
