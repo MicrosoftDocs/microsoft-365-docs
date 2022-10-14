@@ -2,7 +2,7 @@
 title: Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint
 description: Troubleshoot issues that might arise during the onboarding of devices using Security Management for Microsoft Defender for Endpoint.
 keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds, sensor data and diagnostics
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: troubleshooting
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint
@@ -110,10 +113,6 @@ If you weren't able to identify the onboarded device in AAD or MEM, and did not 
 
 The following table lists errors and directions on what to try/check in order to address the error. Note that the list of errors is not complete and is based on typical/common errors encountered by customers in the past:
 
-<br>
-
-****
-
 |Error Code|Enrollment Status|Administrator Actions|
 |---|---|---|
 |`5-7`, `9`, `11-12`, `26-33`|General error|The device was successfully onboarded to Microsoft Defender for Endpoint. However, there was an error in the security configuration management flow. This could be due to the device not meeting [prerequisites for Microsoft Defender for Endpoint management channel](security-config-management.md). Running the [Client Analyzer](https://aka.ms/BetaMDEAnalyzer) on the device can help identify the root cause of the issue. If this doesn't help, please contact support.|
@@ -129,8 +128,6 @@ The following table lists errors and directions on what to try/check in order to
 |`43`|MDE and ConfigMgr|The device is managed using Configuration Manager and Microsoft Defender for Endpoint. Controlling policies through both channels may cause conflicts and undesired results. To avoid this, endpoint security policies should be isolated to a single control plane. |
 
 ## Azure Active Directory Runtime troubleshooting
-
-### Azure Active Directory Runtime
 
 The main mechanism to troubleshoot Azure Active Directory Runtime (AADRT) is to collect debug traces. Azure Active Directory Runtime on Windows uses **ETW provider with ID bd67e65c-9cc2-51d8-7399-0bb9899e75c1**. ETW traces need to be captured with the reproduction of the failure (for example if join failure occurs, the traces need to be enabled for the duration of time covering calls to AADRT APIs to perform join).
 

@@ -1,9 +1,10 @@
 ---
 title: "Create a draft collection"
+description: "A draft collection is an eDiscovery search of custodial and non-custodial data sources in an eDiscovery (Premium) case that returns a search estimate that matches the search query of the collection. You can review search statistics, preview a sampling of items, and revise and rerun the collection before you commit the results to a review set."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: nickrob  
 manager: laurawi
 ms.date: 
@@ -11,16 +12,20 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "A draft collection is an eDiscovery search of custodial and non-custodial data sources in an eDiscovery (Premium) case that returns a search estimate that matches the search query of the collection. You can review search statistics, preview a sampling of items, and revise and rerun the collection before you commit the results to a review set."
 ---
 
 # Create a draft collection in eDiscovery (Premium)
 
 After you've identified custodians and any non-custodian data sources for the case, you're ready to identify and locate a set of documents that are relevant. You do this by using the Collections tool to search data sources for relevant content. You do this by creating a collection that searches specified data sources for content that matches your search criteria. You have the option to create a *draft collection*, which is an estimate of the items are found or you can create a collection that automatically adds the items to a review set. When you create a draft collection, you can views information about the estimated results that matched the search query, such as the total number and size of items found, the different data sources where they were found, and statistics about the search query. You can also preview a sample of items that were returned by the collection. Using these statistics, you can change the search query and rerun the draft collection to narrow your results. Once you're satisfied with the collection results, you can commit the collection to a review set. When you commit a draft collection, the items returned by the collection are added to a review set for review, analysis, and export.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you create a draft collection
 

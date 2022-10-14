@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
-ms.date: 04/06/2022
 audience: ITPro
 ms.topic: article
 
@@ -13,15 +12,15 @@ ms.localizationpriority: medium
 ms.collection: 
   - Ent_O365
   - Strat_O365_IP
-  - M365-security-compliance
+  - m365-security
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom: 
   - seo-marvel-apr2020
   - admindeeplinkSPO
-description: This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment.
-ms.technology: mdo
-ms.prod: m365-security
+description: Manual configurations for Exchange Online Protection, Microsoft Defender for Office 365, Plan 1 and 2, and Microsoft 365 Defender, for complete protection of your Office 365 subscription.
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Configure your Microsoft 365 tenant for increased security
@@ -33,31 +32,50 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment. Your security needs might require more or less security. Use these recommendations as a starting point.
+Your organizational needs require security.
 
-## Check Office 365 Secure Score
+Specifics are up to your business.
 
-Office 365 Secure Score analyzes your organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Adjusting some tenant-wide settings will increase your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment that do not negatively affect productivity for your users. See [Microsoft Secure Score](../defender/microsoft-secure-score.md).
+This topic will walk you through the manual configuration of tenant-wide settings that affect the security of your Microsoft 365 environment. Use these recommendations as a starting point.
 
 ## Tune threat management policies in the Microsoft 365 Defender portal
 
-The Microsoft 365 Defender portal includes capabilities that protect your environment. It also includes reports and dashboards you can use to monitor and take action. Some areas come with default policy configurations. Some areas do not include default policies or rules. Visit these policies under **Email & collaboration** \> **Policies & rules** \> **Threat policies** to tune threat management settings for a more secure environment.
+The Microsoft 365 Defender portal has capabilities for both protection and reporting. It has dashboards you can use to monitor and take action when threats arise.
+
+Keep in mind that some areas come with *default policy configurations*. Some areas do not include default policies or rules.
+
+For example, the *recommended* setup of Microsoft Defender for Office 365 (plan 1 and plan 2) is described by this handy step-by-step guide, right here: '[Ensuring you always have the optimal security'](step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md). But, even so, some admins opt for a more hands-on approach to this product.
+
+To automate your setup of Microsoft Defender for Office 365 visit the Standard and Strict policies under **Email & collaboration** \> **Policies & rules** \> **Threat policies** to tune threat management settings for a more secure environment.
 
 |Area|Default policy?|Recommendation|
 |---|---|---|
-|**Anti-phishing**|Yes|Configure the default anti-phishing policy as described here: [Configure anti-phishing protection settings in EOP and Defender for Office 365](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365). <p> More information: <ul><li>[Anti-phishing policies in Microsoft 365](set-up-anti-phishing-policies.md)</li><li>[Recommended anti-phishing policy settings in Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [Impersonation insight](impersonation-insight.md)</li><li>[Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md)</li><li>[Manage the Tenant Allow/Block List](tenant-allow-block-list.md).</li></ul>|
+|**Anti-phishing**|Yes|Configure the default anti-phishing policy as described here: [Configure anti-phishing protection settings in EOP and Defender for Office 365](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365). <p> More information: <ul><li>[Anti-phishing policies in Microsoft 365](set-up-anti-phishing-policies.md)</li><li>[Recommended anti-phishing policy settings in Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [Impersonation insight](impersonation-insight.md)</li><li>[Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md)</li><li>[Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md).</li></ul>|
 |**Anti-Malware Engine**|Yes|Configure the default anti-malware policy as described here: [Configure anti-malware protection settings in EOP](protect-against-threats.md#part-1---anti-malware-protection-in-eop). <p> More information: <ul><li>[Anti-malware protection](anti-malware-protection.md)</li><li>[Recommended anti-malware policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)</li><li>[Configure anti-malware policies](configure-anti-malware-policies.md)</li></ul>|
 |**Safe Attachments in Defender for Office 365**|No|Configure the global settings for Safe Attachments and create a Safe Attachments policy as described here: [Configure Safe Attachments settings in Microsoft Defender for Office 365](protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365). <p> More information: <ul><li>[Recommended Safe Attachments settings](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)</li><li>[Safe Attachments in Microsoft Defender for Office 365](safe-attachments.md)</li><li>[Set up Safe Attachments policies](set-up-safe-attachments-policies.md)</li><li>[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Safe Documents in Microsoft 365 E5](safe-docs.md)</li></ul>|
-|**Safe Links in Microsoft Defender for Office 365**|No|Configure the global settings for Safe Links and create a Safe Links policy as described here: [Configure Safe Links settings in Microsoft Defender for Office 365](protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365). <p> More information: <ul><li>[Recommended Safe Links settings](recommended-settings-for-eop-and-office365.md#safe-links-settings)</li><li>[Set up Safe Links policies](set-up-safe-links-policies.md)</li><li>[Safe Links in Microsoft Defender for Office 365](safe-links.md)</li><li>[Configure global settings for Safe Links in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md)</li></ul>|
+|**Safe Links in Microsoft Defender for Office 365**|No|Create a Safe Links policy as described here: [Configure Safe Links settings in Microsoft Defender for Office 365](protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365). <p> More information: <ul><li>[Recommended Safe Links settings](recommended-settings-for-eop-and-office365.md#safe-links-settings)</li><li>[Set up Safe Links policies](set-up-safe-links-policies.md)</li><li>[Safe Links in Microsoft Defender for Office 365](safe-links.md)</li></ul>|
 |**Anti-spam (mail filtering)**|Yes|Configure the default anti-spam policy as described here: [Configure anti-spam protection settings in EOP](protect-against-threats.md#part-3---anti-spam-protection-in-eop) <p> More information: <ul><li>[Recommended anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)</li><li>[Anti-spam protection in EOP](anti-spam-protection.md)</li><li>[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)</li></ul>|
-|***Email Authentication***|Yes|Email authentication uses DNS records to add verifiable information to email messages about the message source and sender. Microsoft 365 automatically configures email authentication for its default domain (onmicrosoft.com), but Microsoft 365 admins can also configure email authentication for custom domains. Three authentication methods are used: <ul><li>Sender Policy Framework (or SPF).</li><ul><li>For setup, see [Set up SPF in Microsoft 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md).</li></ul> <li>DomainKeys Identified Mail (DKIM).</li><ul><li>See [Use DKIM to validate outbound email sent from your custom domain](use-dkim-to-validate-outbound-email.md).</li><li>After you've configured DKIM, enable it in the Microsoft 365 Defender portal.</li></ul><li>Domain-based Message Authentication, Reporting, and Conformance (DMARC).</li><ul><li>For DMARC setup [Use DMARC to validate email in Microsoft 365](use-dmarc-to-validate-email.md).</li></ul></ul>|
+|***Email Authentication***|Yes|Email authentication uses DNS records to add verifiable information to email messages about the message source and sender. Microsoft 365 automatically configures email authentication for its default domain (onmicrosoft.com), but Microsoft 365 admins can also configure email authentication for custom domains. Three authentication methods are used: <ul><li>**Sender Policy Framework (or SPF)**.</li><ul><li>For setup, see [Set up SPF in Microsoft 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md).</li></ul> <li>**DomainKeys Identified Mail (DKIM)**.</li><ul><li>See [Use DKIM to validate outbound email sent from your custom domain](use-dkim-to-validate-outbound-email.md).</li><li>After you've configured DKIM, enable it in the Microsoft 365 Defender portal.</li></ul><li>**Domain-based Message Authentication, Reporting, and Conformance (DMARC)**.</li><ul><li>For DMARC setup [Use DMARC to validate email in Microsoft 365](use-dmarc-to-validate-email.md).</li></ul><li>After you've configured DKIM, enable it in the Microsoft 365 Defender portal.</li></ul><ul><li>**Authenticated Received Chain (ARC) in Microsoft 365 Defender for Office.** <ul><li>List your [Trusted ARC sealers](use-arc-exceptions-to-mark-trusted-arc-senders.md) so *legitimate* intermediaries will be trusted even if they modify mail.</li></ul>|
 
 > [!NOTE]
 > For non-standard deployments of SPF, hybrid deployments, and troubleshooting: [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
 
 ## View dashboards and reports in the Microsoft 365 Defender portal
 
-Visit these reports and dashboards to learn more about the health of your environment. The data in these reports will become richer as your organization uses Office 365 services. For now, be familiar with what you can monitor and take action on.
+Browse to [security.microsoft.com](https://security.microsoft.com). The menu of Microsoft 365 Defender is divided into sections that begin, in order, Home, Email & Collaboration, Cloud Apps, and Reports (you may see *some* or *all* of these depending on your Plan). You're looking for Reports.
+
+1. Browse to [security.microsoft.com](https://security.microsoft.com).
+2. Click **Reports** on the menu.
+    1. Here you can view information about security trends and track the protection status of your identities, data, devices, apps, and infrastructure.
+
+The data in these reports will become richer as your organization uses Office 365 services, keep that in mind if you are in pilot or testing. For now, be familiar with what you can monitor and take action on.
+
+Inside each report, you'll see cards for the specific areas monitored.
+
+1. Click the **Email & Collaboration reports**.
+1. Take note of the report cards available.
+    1. Everything from *Malware detected in email*, to *Spam detections*, *Compromised users*, to *User reported messages* and *Submissions* the final two, with a button that links to Submissions.
+1. Click a report, such as *Mailflow status summary* and the click the **View details** button to dig into the data (which even includes a funnel view for easier interpretation of total mail flow vs. blocked, spam, and phishing emails, and more).
 
 |Dashboard|Description|
 |---|---|
@@ -130,6 +148,6 @@ More information:
 
 These articles and guides provide additional prescriptive information for securing your Microsoft 365 environment:
 
-- [Microsoft security guidance for political campaigns, nonprofits, and other agile organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) (you can use these recommendation in any environment, especially cloud-only environments)
+- [Microsoft security guidance for political campaigns, nonprofits, and other agile organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) (you can use these recommendations in any environment, especially cloud-only environments)
 
 - [Recommended security policies and configurations for identities and devices](microsoft-365-policies-configurations.md) (these recommendations include help for AD FS environments)

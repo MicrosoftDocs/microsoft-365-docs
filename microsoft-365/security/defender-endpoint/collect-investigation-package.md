@@ -2,7 +2,7 @@
 title: Collect investigation package API
 description: Use this API to create calls related to the collecting an investigation package from a device.
 keywords: apis, graph api, supported apis, collect investigation package
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Collect investigation package API
@@ -59,6 +62,8 @@ Delegated (work or school account)|Machine.CollectForensics|'Collect forensics'
 >
 > - The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles.md) for more information)
 > - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## HTTP request
 

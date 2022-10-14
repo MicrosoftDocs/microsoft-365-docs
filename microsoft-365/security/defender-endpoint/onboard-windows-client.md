@@ -2,20 +2,21 @@
 title: Defender for Endpoint onboarding Windows Client
 description: Onboard Windows Client.
 keywords: onboarding, Microsoft Defender for Endpoint onboarding, sccm, group policy, mdm, local script, detection test
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365-initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Defender for Endpoint onboarding Windows Client
@@ -39,7 +40,7 @@ In general, you'll identify the client you're onboarding, then follow the corres
 :::image type="content" source="images/onboarddevices.png" alt-text="Onboard devices" lightbox="images/onboarddevices.png":::
 
 ## Related topics
-- [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
+- [Onboard Windows devices using Microsoft Intune](configure-endpoints-mdm.md)
 - [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
 - [Onboard Windows devices using a local script](configure-endpoints-script.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)

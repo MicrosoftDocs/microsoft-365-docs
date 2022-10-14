@@ -1,30 +1,34 @@
 ---
 title: "Overview of the eDiscovery (Premium) solution in Microsoft Purview"
+description: "Learn about the eDiscovery (Premium) solution in Microsoft Purview. This article provides an overview of eDiscovery (Premium) in Microsoft Purview, a tool to help you manage internal and external investigations. It also frames the business reasons for using eDiscovery (Premium) to manage your legal investigations."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 04/08/2022
+ms.date: 07/08/2022
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 - m365solution-aed
-- m365initiative-compliance
 - m365solution-overview
-search.appverid: 
+- highpri
+- ediscovery
+search.appverid:
 - MOE150
 - MET150
-description: "Learn about the eDiscovery (Premium) solution in Microsoft Purview. This article provides an overview of eDiscovery (Premium) in Microsoft Purview, a tool to help you manage internal and external investigations. It also frames the business reasons for using eDiscovery (Premium) to manage your legal investigations."
 ms.custom: seo-marvel-apr2020
 ---
 
 # Overview of Microsoft Purview eDiscovery (Premium)
 
 The Microsoft Purview eDiscovery (Premium) solution builds on the existing Microsoft eDiscovery and analytics capabilities. eDiscovery (Premium) provides an end-to-end workflow to preserve, collect, analyze, review, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## eDiscovery (Premium) capabilities
 
@@ -78,7 +82,7 @@ At a high level, here's how eDiscovery (Premium) supports the EDRM workflow:
 
 - **Collection.** After you identified (and preserved) the data sources relevant to the investigation, you can use the built-in search tool in eDiscovery (Premium) search for and collect live data from the custodial data sources (and non-custodial data sources, if applicable) that may be relevant to the case.
 
-- **Processing.** After you've collected all data relevant to the case, the next step is process it for further review and analysis. In eDiscovery (Premium), the in-place data that you identified in the collection phase is copied to an Azure Storage location (called a *review set*), which provides you with a static view of the case data. 
+- **Processing.** After you've collected all data relevant to the case, the next step is process it for further review and analysis. In eDiscovery (Premium), the in-place data that you identified in the collection phase is copied to an Azure Storage location (called a *review set*), which provides you with a static view of the case data.
 
 - **Review.** After data has been added to a review set, you can view specific documents and run additional queries to reduce the data to what is most relevant to the case. Also, can annotate and tag specific documents.
 
@@ -88,38 +92,9 @@ At a high level, here's how eDiscovery (Premium) supports the EDRM workflow:
 
 ## Subscriptions and licensing
 
-Licensing for eDiscovery (Premium) requires the appropriate organization subscription and per-user licensing.
-
-- **Organization subscription:** To access eDiscovery (Premium) in the Microsoft Purview compliance portal, your organization must have one of the following:
-
-  - Microsoft 365 E5 or Office 365 E5 subscription
-  
-  - Microsoft 365 E3 subscription with E5 Compliance add-on
-
-  - Microsoft 365 E3 subscription with E5 eDiscovery and Audit add-on
-
-  - Microsoft 365 Education A5 or Office 365 Education A5 subscription
-
-   If you don't have an existing Microsoft 365 E5 plan and want to try eDiscovery (Premium), you can [add Microsoft 365](/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 E5.
-
-- **Per-user licensing:** To add a user as a custodian in an Advance eDiscovery case, that user must be assigned one of the following licenses, depending on your organization subscription:
-
-  - Microsoft 365: Users must be assigned one of the following:
-  
-    - Microsoft 365 E5 license, an E5 Compliance add-on license, or an E5 eDiscovery and Audit add-on
-
-    - Microsoft 365 Frontline users must be assigned an F5 Compliance or F5 Security & Compliance add-on
-
-    - Microsoft 365 Education users must be assigned an A5 license
-
-  - Office 365: Users must be assigned an Office 365 E5 or Office 365 Education A5 license.
-
-For information about licensing, download and see the "eDiscovery and auditing" section in the [Microsoft 365 Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
+For information regarding what licenses provide the rights for a user to benefit from eDiscovery (Premium) please see [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery) and see the "eDiscovery and auditing" section in the [Microsoft 365 Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
 
 For information about how to assign licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
-
-> [!NOTE]
-> Users only need an E5 or A5 license (or the appropriate add-on license) to be added as custodians to an eDiscovery (Premium) case. IT admins, eDiscovery managers, lawyers, paralegals, or investigators who use eDiscovery (Premium) to manage cases and review case data don't need an E5, A5, or add-on license.
 
 ## Get started with eDiscovery (Premium)
 
@@ -147,4 +122,4 @@ Here's an eDiscovery (Premium) architecture diagram that shows the end-to-end wo
 
 ## Training
 
-Training your IT administrators, eDiscovery managers, and compliance investigation teams in the basics for eDiscovery (Premium) can help your organization get started more quickly using Microsoft 365 eDiscovery tools. Microsoft 365 provides the following resource to help these users in your organization getting started with eDiscovery: [Describe the eDiscovery and audit capabilities of Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+Training your IT administrators, eDiscovery managers, and compliance investigation teams in the basics for eDiscovery (Premium) can help your organization get started more quickly using Microsoft 365 eDiscovery tools. Microsoft 365 provides the following resource to help these users in your organization getting started with eDiscovery: [Describe the eDiscovery and audit capabilities of Microsoft 365](/training/modules/describe-ediscovery-capabilities-of-microsoft-365).

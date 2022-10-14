@@ -12,6 +12,8 @@ ms.collection:
 - m365solution-overview
 - m365solution-mig
 - m365initiative-compliance
+- highpri
+- tier1
 ms.localizationpriority: high
 search.appverid: 
 - MOE150
@@ -31,13 +33,11 @@ For data governance that maps and manages data across your data estate, includin
 
 For a data protection solution, see [Deploy an information protection solution with Microsoft Purview](information-protection-solution.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Licensing
 
-To understand your licensing requirements and options, see the following sections from the [Microsoft 365 licensing documentation](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance): 
-- [Microsoft Purview Data Lifecycle Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management)
-- [Microsoft Purview Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-records-management)
-
-Any additional licensing requirements will be included in the documentation instructions. For example, licensing specific to managing mailboxes might require licenses from Exchange Online.
+To understand your licensing requirements and options, see the information from the Microsoft 365 guidance for security & compliance, [Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) section for feature-level licensing requirements.
 
 ## Keep what you need and delete what you don't
 
@@ -76,8 +76,8 @@ To learn more about the capabilities from this solution, see [Learn about record
 
 Learning modules for consultants and admins:
 
-- [Introduction to information protection and data lifecycle management in Microsoft Purview](/learn/modules/m365-compliance-information-governance)
-- [Manage the data lifecycle in Microsoft Purview](/learn/modules/m365-compliance-information-govern-information/)
-- [Manage records in Microsoft Purview](/learn/modules/m365-compliance-information-manage-records/)
+- [Introduction to information protection and data lifecycle management in Microsoft Purview](/training/modules/m365-compliance-information-governance)
+- [Manage the data lifecycle in Microsoft Purview](/training/modules/m365-compliance-information-govern-information/)
+- [Manage records in Microsoft Purview](/training/modules/m365-compliance-information-manage-records/)
 
 For documentation to support users when these solutions are deployed, see the end user documentation sections for [data lifecycle management](get-started-with-information-governance.md#end-user-documentation) and [records management](get-started-with-records-management.md#end-user-documentation).

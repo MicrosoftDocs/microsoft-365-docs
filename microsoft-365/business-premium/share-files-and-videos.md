@@ -7,11 +7,15 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 search.appverid:
 - BCS160
@@ -27,8 +31,6 @@ Another thing to pay attention to is ensuring all members of the organization co
 ![Diagram of a Microsoft Teams window, showing Files tab and Get link on the menu.](../media/m365-democracy-teams-sharefiles.png)
 
 With files in Microsoft Teams and SharePoint, files can also be worked on and reviewed together, even tracking changes as needed. In Teams, files are shared inside of a firm, practice, or campaign. If you need to share them externally with people outside your organization, you can add them as guests to a team or send them a secure SharePoint link.
-
-You can also use Microsoft Stream to store and share videos internally. These videos are not viewable to the public so they are ideal for internal company or campaign messaging.
 
 ## Best practices
 

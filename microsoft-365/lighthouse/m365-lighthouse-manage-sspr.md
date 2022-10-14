@@ -7,9 +7,10 @@ manager: scotv
 ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -33,35 +34,29 @@ The following conditions must be met before a tenant will appear in the list:
 
 ## View SSPR tenant status
 
-1. In the left navigation pane of Lighthouse, select **Users**.
+- In the left navigation pane in Lighthouse, select **Users** > **Password reset**.
 
-2. Select the **Password reset** tab.
-
-The Password reset tab provides an overview of the tenants that have enabled SSPR through the recommended settings, the number of users who haven't registered for SSPR, and a detailed breakdown by tenant of the SSPR deployment progress across the organizations that you manage.
+The Password reset page provides an overview of the tenants that have enabled SSPR through the recommended settings, the number of users who haven't registered for SSPR, and a detailed breakdown by tenant of the SSPR deployment progress across the organizations that you manage.
 
 ## Enable SSPR for a tenant
 
-1. In the left navigation pane in Lighthouse, select **Users**.
+1. In the left navigation pane in Lighthouse, select **Users** > **Password reset**.
 
-2. Select the **Password reset** tab.
+2. On the **Password reset** page, select a tenant from the list to open the details pane.
 
-3. From the list of tenants, select a tenant to open the details pane.
+3. Select **Edit SSPR settings in Azure Active Directory** to go to Azure Active Directory (Azure AD).
 
-4. Select **Edit SSPR settings in Azure Active Directory** to go to Azure Active Directory (Azure AD).
-
-5. In Azure AD, enable SSPR for all or selected users. To learn more, see [Tutorial: Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr).
+4. In Azure AD, enable SSPR for all or selected users. To learn more, see [Tutorial: Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr).
 
 ## Notify users to register for SSPR
 
-1. In the left navigation pane in Lighthouse, select **Users**.
+1. In the left navigation pane in Lighthouse, select **Users** > **Password reset**.
 
-2. Select the **Password reset** tab.
+2. On the **Password reset** page, select a tenant from the list to open the details pane.
 
-3. From the list of tenants, select a tenant to open the details pane.
+3. Select the users that you want to notify.
 
-4. Select the users that you want to notify.
-
-5. Select **Create email**.
+4. Select **Create email**.
 
 Lighthouse opens your default email client and prepopulates the email message with instructions to register for SSPR. All the selected users will be included on the BCC line. If you prefer to individually email users, you can select the email icon next to the username.
 

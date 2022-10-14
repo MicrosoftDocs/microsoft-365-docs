@@ -3,7 +3,8 @@ title: Run an attack simulation in a Microsoft 365 Defender pilot environment
 description: Run attack simulations for Microsoft 365 Defender to see how alerts and incidents are presented, insights are gained, and threats are quickly remediated.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +17,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365solution-scenario
   - m365solution-pilotmtpproject
+  - zerotrust-solution
+  - highpri
+  - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Run an attack simulation in a Microsoft 365 Defender pilot environment
@@ -113,7 +116,7 @@ First, you need to add an isolated AD DS domain controller and a Windows device 
 
    - Runs Windows 10 version 1903 or a later version.
    - Is joined to the AD DS domain controller domain.
-   - Has [Windows Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) enabled. If you are having trouble enabling Windows Defender Antivirus, see this [troubleshooting topic](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+   - Has [Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) enabled. If you are having trouble enabling Microsoft Defender Antivirus, see this [troubleshooting topic](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
    - Is [onboarded to Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 If you use tenant and device groups, create a dedicated device group for the test device and push it to top level.

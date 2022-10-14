@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 description: "Last Updated: May 2017"
 ---
 
@@ -24,6 +24,8 @@ Last Updated: May 2017
   
 This privacy statement governs the Office 365 the new OME capabilities Portal (the "the new OME capabilities Portal"). Previous versions were known as Office 365 Message Encryption (OME) and the "OME Portal". This privacy statement does not apply to other online or offline Microsoft sites, products, or services. Other privacy statements may also apply to the data you process through the new OME capabilities Portal, such as the privacy statement for Microsoft account (if it is used for authentication) or the privacy statement associated with your device.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Collection, Processing, and Use of Your Information
 
 The new OME capabilities Portal enables you to view email encrypted with Office 365 from various end points, such as desktop computers or mobile devices. The encrypted email arrives in your mailbox as an HTML attachment to a regular mail. If the mail is sent to your Microsoft account, work or school account, or Gmail account, you will be asked to sign in to the web-based the new OME capabilities Portal with such account. If the encrypted mail is sent to an account other than the Microsoft Account, the work or school account, or a Gmail account, you will be prompted to create a Microsoft account and associate it with the account to which the encrypted message was sent; alternatively, you can choose to request a one-time passcode for authentication, which will be sent to the same email address to which the encrypted message was sent. After successful authentication, the message will be decrypted and displayed via the new OME capabilities Portal.

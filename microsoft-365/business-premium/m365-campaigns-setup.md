@@ -7,18 +7,17 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -28,7 +27,7 @@ description: "Setup overview for Microsoft 365 Business for campaigns or other b
 
 # Setup for Microsoft 365 Business for Campaigns
 
-Now that you have [subscribed to Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md), your next step is to get everything set up.
+After you have [subscribed to Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md), your next step is to get everything set up.
 
 ## Before you begin
 
@@ -39,7 +38,8 @@ Make sure that you meet the following requirements before you begin your setup p
 | Subscription | Microsoft 365 Business Premium or Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following articles: <br/>- [Get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [Get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md) |
 | Permissions  | To complete the initial setup process, you must be a Global Admin. [Learn more about admin roles](../admin/add-users/about-admin-roles.md). |
 | Browser requirements | Microsoft Edge, Safari, Chrome or Firefox. [Learn more about browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
-| Operating system | **Windows**:  Windows 11, Windows 10, Windows 8.1, Windows Server 2019 or later, or Windows Server 2016<br/><br/>**macOS**: One of the three most recent versions of macOS |
+| Operating systems (client) | **Windows**:  Windows 11, Windows 10, Windows 8.1<br/>**macOS**: One of the three most recent versions of macOS 
+| Operating systems (servers) | Windows Server or Linux Server <br/>- Requires Microsoft Defender for Business servers (currently in preview)<br/>- See [How to get Microsoft Defender for Business servers (preview)](../security/defender-business/get-defender-business-servers.md).  |
 
 > [!TIP]
 > For more detailed information about Microsoft 365, Office, and system requirements, see [Microsoft 365 and Office Resources](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
@@ -98,4 +98,4 @@ To help your staff learn about steps to protect your campaign from cyber threats
 
 ## Next objective
 
-Once you've achieved these objectives, go [increase security protections](m365bp-security-overview.md).
+Proceed to [bump up security](m365bp-security-overview.md).

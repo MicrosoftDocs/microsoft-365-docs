@@ -11,7 +11,8 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -30,6 +31,8 @@ There are two ways to create a new sensitive information type:
 - [copy and modify an existing sensitive information type](#copy-and-modify-a-sensitive-information-type)
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
 - You should be familiar with sensitive information types and what they are composed of. See, [Learn about sensitive information types](sensitive-information-type-learn-about.md). It is critical to understand the roles of:
@@ -38,6 +41,8 @@ There are two ways to create a new sensitive information type:
   - [keyword dictionary](create-a-keyword-dictionary.md)
   - [Sensitive information type functions](sit-functions.md)
   - [confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels)
+
+- Familiarize yourself with [Sensitive information type limits](sit-limits.md).
 
 - Your organization must have a subscription, such as Office 365 Enterprise, that includes Microsoft Purview Data Loss Prevention (DLP). See [Messaging Policy and Compliance ServiceDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
 
@@ -141,47 +146,8 @@ You can test any sensitive information type in the list. We suggest that you tes
 
 4. On the **Matches results** page, review the results and choose **Finish**.
 
-## Custom sensitive information types limits
-
-To ensure high performance and lower latency, there are limitations in custom SITs configurations.
-
-|Limit|Value|
-|---|---|
-|maximum number of custom SITs created through the Compliance center| 500 |
-|maximum length of regular expression| 1024 characters|
-|maximum length for a given term in a keyword list| 50 characters|
-|maximum number of terms in keyword list| 2048|
-|maximum number of distinct regexes per sensitive information type| 20|
-|maximum size of a keyword dictionary (post compression)| 1MB (~1,000,000 characters)|
-|maximum number of keyword dictionary based SITs in a tenant|50 |
-
 > [!NOTE]
-> If you have a business need to create more than 500 custom SITs, please raise a support ticket.
-
-### Instance count supported values for SIT
-
-The SIT instance count limit applies when SITs are used in these solutions:
-
-- DLP policies
-- Information Protection
-- Data Lifecycle Management
-- Communication Compliance
-- Records Management
-- Microsoft Defender for Cloud Apps
-- Microsoft Priva
-
-For a scanned item to satisfy rule criteria, the number of unique instances of a SIT in any single item must fall between the min and max values. This is called the **Instance count**.
-
-- **Min** field: the lower limit (minimum number) of unique instances of a SIT that must be found in an item to trigger a match. The min field supports values of:
-  - 1 to 500
-- **Max** field: the upper limit on the number of unique instances of a SIT that can be found in an item and still trigger a match. The max field supports values of:
-  - 1 to 500  - Use this when you want to set a specific upper limit that is 500 or less on the number of instances of a SIT in an item.
-  - Any - Use `Any` when you want the unique instance count criteria to be satisfied when an undefined number of unique instances of a SIT are found in a scanned item and that number of unique instances meets or exceeds the minimum number of unique instances value. In other words, the unique instance count criteria are met as long as the min value is met.
-
-For example, if you want the rule to trigger a match when at least 500 unique instances of a SIT are found in a single item, set the **min** value to `500` and the **max** value to `Any`.
-
-> [!NOTE]
-> Microsoft 365 Information Protection supports double byte character set languages for:
+> Microsoft Purview information protection supports double byte character set languages for:
 >
 > - Chinese (simplified)
 > - Chinese (traditional)

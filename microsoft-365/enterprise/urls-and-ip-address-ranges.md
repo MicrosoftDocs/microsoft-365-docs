@@ -3,12 +3,13 @@ title: "Office 365 URLs and IP address ranges"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/01/2022
+ms.date: 09/29/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 f1.keywords:
@@ -34,7 +35,7 @@ Office 365 requires connectivity to the Internet. The endpoints below should be 
 
 |Notes|Download|Use|
 |---|---|---|
-|**Last updated:** 06/01/2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Change Log subscription](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Download:** all required and optional destinations in one [JSON formatted](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) list.|**Use:** our proxy [PAC files](managing-office-365-endpoints.md#pacfiles)|
+|**Last updated:** 09/29/2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Change Log subscription](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Download:** all required and optional destinations in one [JSON formatted](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) list.|**Use:** our proxy [PAC files](managing-office-365-endpoints.md#pacfiles)|
 |
 
 Start with [Managing Office 365 endpoints](managing-office-365-endpoints.md) to understand our recommendations for managing network connectivity using this data. Endpoints data is updated as needed at the beginning of each month with new IP Addresses and URLs published 30 days in advance of being active. This cadence allows for customers who don't yet have automated updates to complete their processes before new connectivity is required. Endpoints may also be updated during the month if needed to address support escalations, security incidents, or other immediate operational requirements. The data shown on this page below is all generated from the REST-based web services. If you're using a script or a network device to access this data, you should go to the [Web service](microsoft-365-ip-web-service.md) directly.

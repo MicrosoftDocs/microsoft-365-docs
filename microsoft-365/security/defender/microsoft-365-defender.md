@@ -4,7 +4,8 @@ description: Microsoft 365 Defender is a coordinated threat protection solution 
 keywords: introduction to MMicrosoft 365 Defender, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +17,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - tier1
 ms.custom: 
   - admindeeplinkDEFENDER
   - intro-overview
 ms.topic: conceptual
-ms.technology: m365d
 adobe-target: true
 ---
 

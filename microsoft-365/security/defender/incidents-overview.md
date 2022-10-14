@@ -3,7 +3,8 @@ title: Incident response with Microsoft 365 Defender
 description: Investigate incidents seen across devices, users, and mailboxes in the Microsoft 365 Defender portal.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +16,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 
 # Incident response with Microsoft 365 Defender
@@ -140,7 +140,7 @@ Consider these steps for your own incident response workflow:
    - Recall the workflow you used to resolve the incident and update your standard workflows, processes, policies, and playbooks as needed.
    - Determine whether changes in your security configuration are needed and implement them.
 
-If you are new to security analysis, see the [introduction to responding to your first incident](incidents-overview.md) for additional information and to step through an example incident.
+If you're new to security analysis, see the [introduction to responding to your first incident](incidents-overview.md) for additional information and to step through an example incident.
 
 For more information about incident response across Microsoft products, see [this article](/security/compass/incident-response-overview).
 
@@ -160,7 +160,7 @@ Daily tasks can include:
 Monthly tasks can include:
 
 - Reviewing [AIR settings](m365d-configure-auto-investigation-response.md)
-- Reviewing [Secure Score](microsoft-secure-score-improvement-actions.md) and [Threat & Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
+- Reviewing [Secure Score](microsoft-secure-score-improvement-actions.md) and [Microsoft Defender Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - Reporting to your IT security management chain
 
 Quarterly tasks can include a report and briefing of security results to the Chief Information Security Officer (CISO).
@@ -183,9 +183,18 @@ For more information about SecOps across Microsoft's products, see these resourc
 
 You can set up Microsoft 365 Defender to notify your staff with an email about new incidents or updates to existing incidents. You can choose to get notifications based on:
 
-- Incident severity.
-- Device group.
-- Only on the first update per incident.
+- Alert severity
+- Alert sources 
+- Device group
+
+**Choose to receive email notifications only for specific service source**:
+You can easily select specific service sources that you want to get email notifications for.
+ 
+**Get more granularity with specific detection sources**:
+You can get notifications only for a specific detection source. 
+
+**Set the severity per detection or service source**:
+You can choose to get email notifications only on specific severities per source. For example, you can get notified for Medium and High alerts for EDR and all severities for Microsoft Defender Experts.  
 
 The email notification contains important details about the incident like the incident name, severity, and categories, among others. You can also go directly to the incident and start your analysis right away. For more information, see [Investigate incidents](investigate-incidents.md).
 
@@ -199,17 +208,17 @@ Likewise, if your organization is using role-based access control (RBAC), you ca
 
 Follow these steps to create a new rule and customize email notification settings.
 
-1. In the navigation pane, select **Settings > Microsoft 365 Defender > Incident email notifications**.
+1. Go to [Microsoft 365 Defender](https://security.microsoft.com) in the navigation pane, select **Settings > Microsoft 365 Defender > Incident email notifications**.
 2. Select **Add item**.
 3. On the **Basics** page, type the rule name and a description, and then select **Next**.
 4. On the **Notification settings** page, configure:
     - **Alert severity** - Choose the alert severities that will trigger an incident notification. For example, if you only want to be informed about high-severity incidents, select **High**.
     - **Device group scope** - You can specify all device groups or select from the list of device groups in your tenant.
-    - **Only notify on first occurrence per incident** - Select if you want a notification only on the first alert that matches your other selections. Later updates or alerts related to the incident won't send additional notifications.
+    - **Send only one notification per incident** - Select if you want one notification per incident.
     - **Include organization name in the email** - Select if you want your organization name to appear in the email notification.
     - **Include tenant-specific portal link** - Select if you want to add a link with the tenant ID in the email notification for access to a specific Microsoft 365 tenant.
 
-    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="The Notification settings page for incident email notifications in the Microsoft 365 Defender portal." lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
+    :::image type="content" source="../../media/get-incident-notifications/incidents-email-notification-settings.png" alt-text="Screenshot of the Notification settings page for incident email notifications in the Microsoft 365 Defender portal." lightbox="../../media/get-incident-notifications/incidents-email-notification-settings.png":::
 
 5. Select **Next**. On the **Recipients** page, add the email addresses that will receive the incident notifications. Select **Add** after typing each new email address. To test notifications and ensure that the recipients receive them in the inboxes, select **Send test email**.
 6. Select **Next**. On the **Review rule** page, review the settings of the rule, and then select **Create rule**. Recipients will start receiving incident notifications through email based on the settings.
@@ -217,6 +226,8 @@ Follow these steps to create a new rule and customize email notification setting
 To edit an existing rule, select it from the list of rules. On the pane with the rule name, select **Edit rule** and make your changes on the **Basics**, **Notification settings**, and **Recipients** pages.
 
 To delete a rule, select it from the list of rules. On the pane with the rule name, select **Delete**.
+
+Once you get the notification, you can go directly to the incident and start your investigation right away. For more information on investigating incidents, see [Investigate incidents in Microsoft 365 Defender](investigate-incidents.md).
 
 ## Training for security analysts
 
@@ -227,7 +238,7 @@ Use this learning module from Microsoft Learn to understand how to use Microsoft
 |![Investigate incidents with Microsoft 365 Defender training icon.](../../media/incidents-overview/m365-defender-address-security-investigation.svg)| Microsoft 365 Defender unifies threat data from multiple services and uses AI to combine them into incidents and alerts. Learn how to minimize the time between an incident and its management for subsequent response and resolution. <p> 27 min - 6 Units |
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/defender-investigate-incidents/)
+> [Start >](/training/modules/defender-investigate-incidents/)
 
 ## Next steps
 

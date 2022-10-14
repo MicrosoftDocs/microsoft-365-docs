@@ -3,7 +3,7 @@ title: Deploy Microsoft Defender for Endpoint on Linux manually
 ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux manually from the command line.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,12 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux manually
@@ -72,8 +74,8 @@ In order to preview new features and provide early feedback, it is recommended t
 
     |Distro & version|Package|
     |---|---|
-    |For RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
-    |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2|</azure/cognitive-services/speech-service/how-to-configure-rhel-centos-7>|
+    |For RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
+    |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
     |For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
     |For Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
@@ -191,10 +193,10 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install the Microsoft GPG public key:
 
     ```bash
-    curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+    curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
     ```
 
-- Install the https driver if it's not already present:
+- Install the HTTPS driver if not already installed:
 
     ```bash
     sudo apt-get install apt-transport-https

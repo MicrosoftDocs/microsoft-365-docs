@@ -1,21 +1,21 @@
 ---
-title: Create an extractor Microsoft SharePoint Syntex
+title: Create an extractor in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid:
 ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create an extractor in Microsoft SharePoint Syntex.
+description: Learn how to create an extractor in Microsoft Syntex.
 ---
 
-# Create an extractor in Microsoft SharePoint Syntex
+# Create an extractor in Microsoft Syntex
 
 
 <br/>
@@ -42,7 +42,9 @@ You need to create an extractor for each entity in the document that you want to
     ![Screenshot of the Advanced settings portion of the New entity extractor panel showing the Column type option.](../media/content-understanding/advanced-settings-column-type.png)
 
     > [!NOTE]
-    > For extractors with the column type **Single line of text**, the maximum character limit is 255. Any characters that you select exceeding the limit get truncated. To select greater than 255 characters, choose the **Multiple Lines of Text** column type when creating the extractor.
+    > For extractors with the column type **Single line of text**, the maximum character limit is 255. Any characters that you select exceeding the limit get truncated. To select greater than 255 characters, choose the **Multiple lines of text** column type when creating the extractor.
+    >
+    >By default, **Multiple lines of text** columns are created with a limit to the amount of text that can be added. In this case, extracted text might appear truncated. If this occurs, the column setting **Allow unlimited length in document libraries** can be used to remove the limit.
 
 3. When you're done, select **Create**.
 
@@ -183,4 +185,4 @@ If you have duplicate entities and want to extract only one value or a certain n
 
 [Apply a model](apply-a-model.md)
 
-[SharePoint Syntex Accessibility Mode](accessibility-mode.md)
+[Syntex accessibility mode](accessibility-mode.md)

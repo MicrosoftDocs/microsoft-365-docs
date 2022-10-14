@@ -10,18 +10,18 @@ f1.keywords:
 - NOCSH
 author: dansimp
 ms.author: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.date: 01/29/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.topic: how-to
 ms.custom: 
 - autoir
-ms.technology: mdo
+ms.subservice: mdo
 ---
 
 # How to report false positives/negatives in automated investigation and response capabilities
