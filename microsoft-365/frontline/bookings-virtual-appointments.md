@@ -81,11 +81,16 @@ The Bookings app integrates with Outlook. After you add staff, you’ll be able 
 
 ### Create appointment types
 
+> [!NOTE]
+> Add Premium messaging for on-demand
+
 Create specific appointment types to represent the services offered by your organization and to tailor the booking experience. Schedulers can then use the appointment type to schedule an appointment.
 
-In the booking calendar, go to **More options** (...) > **Settings**, select **Appointment types**, and then select **Add appointment type**. Enter a name&mdash;for example, Account opening, Prescription renewal, Loan consultation, Tax preparation&mdash;and any other information and settings you want. The information that you add is included in the email confirmation that's sent to attendees every time this type of appointment is booked.
+In the booking calendar, go to **More options** (...) > **Settings**, select **Appointment types**, and then select **Add appointment type**. Specify whether the service is for **Scheduled** or **On-demand** appointments.
 
-You can configure options for the appointment type such as whether attendees can [join from a a desktop or mobile browser](browser-join.md) without having to download Teams, add an email reminder, set up SMS text notifications, and link forms.
+Enter a name&mdash;for example, Account opening, Prescription renewal, Loan consultation, Tax preparation&mdash;and any other information and settings you want. The information that you add is included in the email confirmation that's sent to attendees every time this type of appointment is booked.
+
+???Depending on whether it's a scheduled or on-demand appointment type, you can configure options such as whether attendees can [join from a a desktop or mobile browser](browser-join.md) without having to download Teams, add an email reminder, set up SMS text notifications, and link forms.
 
 #### Set up SMS text notifications
 
@@ -96,7 +101,7 @@ Attendees need a valid United States, Canada, or United Kingdom phone number bef
 
 To send SMS notifications to attendees by default, turn on **Send them text messages**. Attendees will receive confirmation and reminder text messages that include the Teams meeting link for the appointment. They can opt out of receiving the messages by replying STOP, or resume receiving them by replying START.
 
-Keep in mind that schedulers can later turn off the setting on an as-needed basis when they use the appointment type to schedule an appointment.
+Keep in mind that schedulers can later choose to turn off the setting on an as-needed basis when they use the appointment type to schedule an appointment.
 
 To learn more, see [Send text message notifications](https://support.microsoft.com/office/send-text-message-notifications-f4e6aa74-2ee9-4b12-9105-0e9271d4b244)
 
@@ -118,7 +123,7 @@ To learn more, see [Create an appointment type](https://support.microsoft.com/of
 
 ## Schedule an appointment
 
-In the booking calendar, select **New booking**. Select an appointment type, and then fill out the relevant information.
+In the booking calendar, select **New booking**. Select a ???scheduled appointment type, and then fill out the relevant information.
 
 This includes attendee contact information, the staff member who will be providing the service, internal notes that only staff can see, whether the attendee can join from a browser, email reminders, and whether to send SMS notifications. If a form is linked to the appointment type, you can choose to include it, remove it, or add any other linked forms.
 
