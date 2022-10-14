@@ -22,7 +22,7 @@ search.appverid: met150
 
 # Deployment of Microsoft Defender for Endpoint on RHEL Linux
 
-This article explains how to deploy Microsoft Defender for Endpoint (MDE) on a Red Hat Enterprise Linux (RHEL) system. 
+This article explains how to deploy Microsoft Defender for Endpoint on a Red Hat Enterprise Linux (RHEL) system. 
 
 ## Prerequisites
 
