@@ -22,7 +22,7 @@ ms.collection:
 
 ### Option 1: Privacy and Security Product Terms
 
-*For current language please refer to the Privacy and Security Product Terms <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank">**webpage**</a> and view the section titled “Location of Customer Data at Rest for Core Online Services”.*
+*For current language please refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled “Location of Customer Data at Rest for Core Online Services”.*
 
 **Commitment:** 
 
@@ -73,9 +73,6 @@ Microsoft 365 services other than Exchange, OneDrive, SharePoint, and Teams are 
 
 Setting up and managing your Multi-Geo environment is done through the SharePoint admin center.
 
-***TODO:insert picture***
-(Some actions, such as moving a SharePoint site or a OneDrive site require Microsoft PowerShell.)
-
 #### **SharePoint storage quotas in multi-geo environments**
 
 By default, all *Geography* locations of a multi-geo environment share the available tenant storage quota.
@@ -99,8 +96,6 @@ To view Storage Quota for the current _Geography_ location, run:
 ```powershell
 Get-SPOGeoStorageQuota
 ```
-
-***TODO:, ADD image "![Screenshot of PowerShell window showing Get-SPOGeoStorageQuota cmdlet.](../media/multi-geo-storage-quota.png)"***
 
 To view Storage Quota for all _Geography_ locations, run:
 
@@ -159,8 +154,6 @@ For example: To move OneDrive of user 'Matt@contosoenergy.onmicrosoft.com', conn
 ```powershell
 Connect-SPOService -url https://contosoenergyeur-admin.sharepoint.com
 ```
-
-***TODO: need image "![Screenshot of PowerShell window showing connect-sposervice cmdlet.](../media/move-onedrive-between-geo-locations-image1.png)"
  
 #### **Validating the environment**
   
@@ -201,8 +194,6 @@ For example, to move the OneDrive of matt@contosoenergy.onmicrosoft.com from EUR
 ```powershell
 Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS
 ```
-
-***TODO: IMAGE "![Screenshot of PowerShell window showing Start-SPOUserAndContentMove cmdlet.](../media/move-onedrive-between-geo-locations-image2.png)"
 
 To schedule a _Geography_ move for a later time, use one of the following parameters:
 
@@ -561,4 +552,4 @@ As part of the migration, the _Primary Provisioned Geography_ will change and al
 
 
   ## How can I determine customer data location?
-	You can find the actual data location in Tenant Admin Center.  As a tenant administrator you can find the actual data location, for committed data,  by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location. 
+	You can find the actual data location in Tenant Admin Center.  As a tenant administrator you can find the actual data location, for committed data,  by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location. If you do not have a tenant created, you can have a tenant created when signing up for a M365 trial.
