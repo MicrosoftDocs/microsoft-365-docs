@@ -43,7 +43,7 @@ For Teams private chat and private channels, communication compliance policies s
 | **Share a channel with an internal team** | Communication compliance policies apply to in-scope users and all messages in the shared channel |
 | **Share a channel with an external team** | Communication compliance policies apply to internal in-scope users and messages in the shared channel for the internal organization |
 
-Modern attachments are files sourced from [OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) or [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) sites that are included in Teams messages. Text is automatically extracted from these attachments for automated processing and potential matches with active communication compliance policy conditions and classifiers. There isn't any additional configuration necessary for Modern attachment detection and processing. Text is only extracted for attachments matching policy conditions at the time the message is sent. Text isn't extracted for attachments for messages with policy matches, even if the attachment also has a policy match.
+Modern attachments are files sourced from [OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) or [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) sites that are included in Teams messages. Text is automatically extracted from these attachments for automated processing and potential matches with active communication compliance policy conditions and classifiers. There isn't any additional configuration necessary for modern attachment detection and processing. Text is only extracted for attachments matching policy conditions at the time the message is sent. Text isn't extracted for attachments for messages with policy matches, even if the attachment also has a policy match.
 
 Modern attachment analysis is supported for the following file types:
 
@@ -53,7 +53,7 @@ Modern attachment analysis is supported for the following file types:
 - Text (.txt)
 - Portable Document Format (.pdf)
 
-Extracted text for Modern attachments is included with the associated message on the **Pending** tab of the policy's dashboard. The extracted text for an attachment is named as the attachment file name (and format extension) and the .txt extension. For example, the extracted text for an attachment named *ContosoBusinessPlan.docx* would appear as *ContosoBusinessPlan.docx.txt* in the **Pending** tab of the policy's dashboard.
+Extracted text for modern attachments is included with the associated message on the **Pending** tab of the policy's dashboard. The extracted text for an attachment is named as the attachment file name (and format extension) and the .txt extension. For example, the extracted text for an attachment named *ContosoBusinessPlan.docx* would appear as *ContosoBusinessPlan.docx.txt* in the **Pending** tab of the policy's dashboard.
 
 Select the extracted attachment text to view the details in the *Source* and *Plain text* views. After reviewing, you can resolve or take action on the attachment text using the command bar controls. You also have the option to download the attachment for review outside of the communication compliance review process.
 
