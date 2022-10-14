@@ -41,7 +41,7 @@ All alerts are listed on the **Alerts** tab in Compliance Manager, and all alert
 
 ### Alert policies page
 
-Select the **Alert policies** tab in Compliance Manager to view and manage your alert policies. The **Alert policies** page contains a table listing all the policies created by your organization. From this page, you can create new policies, edit existing policies, and change activation status, and delete policies.
+Select the **Alert policies** tab in Compliance Manager to view and manage your alert policies. The **Alert policies** page contains a table listing all the policies created by your organization. From this page, you can create new policies, edit existing policies, change activation status, and delete policies.
 
 In the **Status column**, **Active** means the policy is in effect and triggering alerts when conditions are met. **Inactive** means the policy exists but isn't generating alerts. The policies table also shows you the severity of the policy and the date the policy was last modified.
 
