@@ -135,7 +135,7 @@ In your Teams or Outlook calendar, go to the booking, and then select **Join** o
 > [!NOTE]
 > Add take-back and Premium messaging
 
-The queue view provides your staff with a dashboard to monitor all scheduled and on-demand virtual appointments for the day, with updates in real time. To see the queue, go to the **Queue** tab in Bookings.
+The queue view provides your staff with a dashboard to monitor all scheduled and on-demand virtual appointments for the day, with updates in real time. To see the queue, go to the **Queue** tab.
 
 [NEED NEW SCREENSHOT]<br>
 :::image type="content" source="media/bookings-virtual-visits-queue.png" alt-text="Screenshot of the queue view in the Bookings app in Teams" lightbox="media/bookings-virtual-visits-queue.png":::
