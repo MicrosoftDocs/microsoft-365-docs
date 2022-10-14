@@ -22,14 +22,13 @@ description: "Determine where your Microsoft 365 customer data is stored worldwi
 
 # Where your Microsoft 365 customer data is stored
 
-Customers should view tenant specific data location information in your Microsoft 365 admin center in **Settings** > **Org settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a> > **Data location**. 
+Customers should view tenant specific data location information in your Microsoft 365 admin center in **Settings** > **Org settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a> > **Data location**.
 
 For a detailed discussion on M365 Data residency, review the documentation on [M365 Data Residency](m365-dr-overview.md).
 
 In order to determine the data location for M365 workloads specifically, see the links below.
 
 (***TODO: need to look at removing this***)If your business is located in the European Union, see [Data locations for the European Union](EU-data-storage-locations.md) for more information.
-
 
 Find information about the contractual commitments for the storage location of customer data at rest in the [Microsoft Products and Services Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA).
 
@@ -49,8 +48,8 @@ See the following links to understand workload data location.
 - Viva Connections [Data Location](m365-dr-workload-viva-connections.md#how-can-i-determine-customer-data-location)
 - Viva Topics [Data Location](m365-dr-workload-viva-topics.md#how-can-i-determine-customer-data-location)
 - Microsoft Purview (select services)  [Data Location](m365-dr-workload-purview.md#how-can-i-determine-customer-data-location)
-  - Audit (Standard) 
-  - Audit (Premium) 
+  - Audit (Standard)
+  - Audit (Premium)
   - Data Retention
   - Records Management
   - Sensitivity labels

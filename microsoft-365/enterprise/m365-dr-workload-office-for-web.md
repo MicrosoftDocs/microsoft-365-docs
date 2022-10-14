@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/20/2022
+ms.date: 10/14/2022
 ms.reviewer: 
 ms.custom:
 - it-pro
@@ -20,7 +20,7 @@ ms.collection:
 
 ## Summary
 
-Service documentation: [Office for the web service description - Service Descriptions](/office365/servicedescriptions/office-online-service-description/office-online-service-description)
+Service documentation: [Office for the web service description - Service Descriptions](https://learn.microsoft.com/office365/servicedescriptions/office-online-service-description/office-online-service-description)
 
 Capability summary:  Office for the web (formerly Office Web Apps) opens Word, Excel, and PowerPoint documents in your web browser. Office for the web makes it easier to work and share Office files from anywhere with an internet connection, from almost any device. Microsoft 365 customers with Word, Excel, or PowerPoint can view, create, and edit files on the go.
 
@@ -40,7 +40,8 @@ The following customer data will be stored in the related _Geography_:
 
 - Cached documents that users open will be stored in the relevant _Geography_.
 
-### Migration 
+### Migration
+
 The cached for documents are not migrated to the new _Geography_, and will be reestablished as users work on documents.
 
 ### How can I determine customer data location?
