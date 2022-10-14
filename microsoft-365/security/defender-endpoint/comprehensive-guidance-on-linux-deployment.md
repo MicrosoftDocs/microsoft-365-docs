@@ -123,11 +123,11 @@ For more information, see [Full configuration profile](../defender-endpoint/linu
 
 For more information, see [static proxy configuration](/defender-endpoint/linux-static-proxy-configuration.md).
 
-#### Troubleshooting steps for environments with static proxy
+#### Troubleshoot for environments with static proxy scenarios
 
 For more information, see [Troubleshooting connectivity issues in static proxy scenario](linux-support-connectivity.md#troubleshooting-steps-for-environments-with-static-proxy).
 
-### Verify that SSL inspection is not being performed on the network traffic
+### Verify SSL inspection is not being performed on the network traffic
 
 To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, firewall systems like Palo Alto, Zscaler, Cisco, and others are not permitted to monitor SSL. 
 
