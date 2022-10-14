@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint data storage and privacy
 description: Learn about how Microsoft Defender for Endpoint handles privacy and data that it collects.
 keywords: Microsoft Defender for Endpoint, data storage and privacy, storage, privacy, licensing, geolocation, data retention, data
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint data storage and privacy
@@ -88,7 +91,7 @@ No. Customer data is isolated from other customers and is not shared. However, i
 
 ### At service onboarding
 
-By default, data is retained for 180 days; however, you can specify the data retention policy for your data. This determines how long Window Defender for Endpoint will store your data. There's a flexibility of choosing in the range of one month to six months to meet your company's regulatory compliance needs.
+By default, data is retained for 180 days; however, you can specify the data retention policy for your data. This determines how long Microsoft Defender for Endpoint will store your data. There's a flexibility of choosing in the range of one month to six months to meet your company's regulatory compliance needs.
 
 ### At contract termination or expiration
 

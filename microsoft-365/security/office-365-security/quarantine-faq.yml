@@ -15,16 +15,16 @@ metadata:
     - MET150
   ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
   ms.collection:
-    - M365-security-compliance
+    - m365-security
     - m365initiative-defender-office365
   description: Admins can view frequently asked questions and answers about quarantined messages in Exchange Online Protection (EOP).
   ms.custom: seo-marvel-apr2020
-  ms.technology: mdo
-  ms.prod: m365-security
+  ms.subservice: mdo
+  ms.service: microsoft-365-security
 
 title: Quarantined messages FAQ
 summary: |
-  [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+  [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
   **Applies to**
   - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -38,7 +38,6 @@ summary: |
   For questions and answers about anti-malware protection, see [Anti-malware protection FAQ](anti-malware-protection-faq-eop.yml).
 
   For questions and answers about anti-spoofing protection, see [Anti-spoofing protection FAQ](anti-spoofing-protection-faq.yml).
-
 
 sections:
   - name: Ignored
@@ -134,4 +133,4 @@ sections:
           ```
 
           After you release a message, you can't release it again.
-          
+

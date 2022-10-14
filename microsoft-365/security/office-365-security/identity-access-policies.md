@@ -4,22 +4,25 @@ description: Describes the recommended common Zero Trust identity and device acc
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 audience: Admin
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.reviewer: martincoetzer
-ms.custom: 
+ms.custom:
   - it-pro
   - goldenconfig
-ms.collection: 
+ms.collection:
   - M365-identity-device-management
-  - M365-security-compliance
+  - m365-security
   - remotework
   - m365solution-identitydevice
   - m365solution-scenario
-ms.technology: mdo
+  - zerotrust-solution
+  - highpri
+ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Common Zero Trust identity and device access policies
@@ -32,8 +35,7 @@ This guidance discusses how to deploy the recommended policies in a newly-provis
 
 The following diagram illustrates the recommended set of policies. It shows which tier of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices. It also indicates where you configure these policies.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png" alt-text="Common policies for configuring Zero Trust identity and device access." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png":::
-
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png" alt-text="The common policies for configuring Zero Trust identity and device access." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png":::
 
 <!--
 
@@ -41,8 +43,7 @@ Here's a one-page PDF summary:
 
 [![Thumb image for the Zero Trust identity and device protection for Microsoft 365 handout.](../../media/microsoft-365-policies-configurations/zero-trust-id-device-protection-model-handout-thumbnail.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [View as a PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
-
---> 
+-->
 
 The rest of this article describes how to configure these policies.
 
@@ -71,7 +72,7 @@ A recommended practice is to create an Azure AD group for Conditional Access exc
 
 Here's an example of group assignment and exclusions for requiring MFA.
 
-![Example group assignment and exclusions for MFA policies.](../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png" alt-text="The Example group assignment and exclusions for MFA policies" lightbox="../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png":::
 
 Here are the results:
 
@@ -89,7 +90,7 @@ Be careful when applying higher levels of protection to groups and users. For ex
 
 All Azure AD groups created as part of these recommendations must be created as Microsoft 365 groups. This is important for the deployment of sensitivity labels when securing documents in Microsoft Teams and SharePoint.
 
-![Example of creating a Microsoft 365 group.](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png" alt-text="Creating a Microsoft 365 group" lightbox="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png":::
 
 ## Require MFA based on sign-in risk
 
@@ -291,7 +292,7 @@ For supervised devices:
 
 - Basic security (Level 1) – Microsoft recommends this configuration as the minimum security configuration for supervised devices where users access work or school data. This is done by enforcing password policies, device lock characteristics, and disabling certain device functions (e.g., untrusted certificates).
 - Enhanced security (Level 2) – Microsoft recommends this configuration for devices where users access sensitive or confidential information. This configuration enacts data sharing controls and blocks access to USB devices. This configuration is applicable to most mobile users accessing work or school data on a device.
-- High security (Level 3) – Microsoft recommends this configuration for devices used by specific users or groups who are uniquely high risk (users who handle highly sensitive data where unauthorized disclosure causes considerable material loss to the organization). This configuration enacts stronger password policies, disables certain device functions, enforces additional data transfer restrictions, and requires apps to be installed through Apple’s volume purchase program.
+- High security (Level 3) – Microsoft recommends this configuration for devices used by specific users or groups who are uniquely high risk (users who handle highly sensitive data where unauthorized disclosure causes considerable material loss to the organization). This configuration enacts stronger password policies, disables certain device functions, enforces additional data transfer restrictions, and requires apps to be installed through Apple's volume purchase program.
 
 Using the principles outlined in [Zero Trust identity and device access configurations](microsoft-365-policies-configurations.md), the Starting point and Enterprise protection tiers map closely with the Level 2 enhanced security settings. The Specialized security protection tier maps closely to the Level 3 high security settings.
 
@@ -409,7 +410,7 @@ To require compliant PCs:
 > [!NOTE]
 > Make sure that your device is compliant before enabling this policy. Otherwise, you could get locked out and will be unable to change this policy until your user account has been added to the Conditional Access exclusion group.
 
---> 
+-->
 
 ## Require compliant PCs and mobile devices
 
@@ -437,6 +438,6 @@ To require compliance for all devices:
 
 ## Next step
 
-[![Step 3: Policies for guest and external users.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
+[![Step 3: Policies for guest and external users.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png#lightbox)](identity-access-policies-guest-access.md)
 
 [Learn about policy recommendations for guest and external users](identity-access-policies-guest-access.md)

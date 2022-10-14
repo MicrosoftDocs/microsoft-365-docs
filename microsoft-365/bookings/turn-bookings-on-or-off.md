@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: bookings
 ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: "Learn how to get access to Microsoft Bookings in Microsoft 365."
 ---
 
 # Turn Microsoft Bookings on or off
 
-Bookings can be turned on or off for your entire organization or for specific users. When you turn on Bookings for users, they can create a Bookings page, create a calendar, and allow other people to book time with them.
+Bookings can be turned on or off for your entire organization or for specific users. When you turn on Bookings for users, they can create a Bookings page, create a calendar, and allow other people to book time with them. This article is for owners and administrators who manage Bookings for their organizations.
 
 > [!NOTE]
 > The admin controls described in these sections are not available for Office 365 Operated by 21Vianet (China) customers.
@@ -23,7 +25,7 @@ Bookings can be turned on or off for your entire organization or for specific us
 
 1. Sign in to the Microsoft 365 admin center as a global admin.
 
-2. In the admin center, go to **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a>.
+2. In the admin center, go to **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a>.
 
 3. Select the checkbox for **Allow your organization to use Bookings** to enable or disable Bookings for your organization.
 
@@ -40,13 +42,15 @@ To turn Bookings on or off for your organization using the PowerShell cmdlet [Se
    Set-OrganizationConfig -BookingsEnabled $false
 ```
 
+### Granular controls
+
 Use the settings below to control who can use Bookings, decide on what Bookings information is shared and whether staff need approval before they can be added to a Booking calendar.
 
 :::image type="content" source="../media/control-access-sharing-bookings.png" alt-text="Screenshot: Settings that allow you to control who can use Bookings, decide what Bookings info is shared and staff approval":::
 
 ### Block bookings from outside your organization
 
-You can set up Bookings so only people in your organization can book appointments. Only users in your organization who've signed and are authenticated can book appointments.
+You can set up Bookings so only people in your organization can book appointments. Only users in your organization who've signed in and are authenticated can book appointments.
 
 ### Block social sharing options
 
@@ -80,7 +84,7 @@ You can disable Bookings for individual users.
 
 ## Allow only selected users to create Bookings calendars
 
-By using policy restrictions, you can restrict licensed users from being able to create Bookings calendars. You must first enable Bookings for your entire organization. All users in your organization will have Bookings licenses, but only those included in the policy can create Bookings calendars and have full control over who can access the calendars they create.
+By using policy restrictions, you can restrict licensed users from being able to create Bookings calendars. All users in your organization will have Bookings licenses, but only those included in the policy can create Bookings calendars and have full control over who can access the calendars they create.
 
 Users who are included in this policy can create new Bookings calendars and can be added as staff in any capacity (including the administrator role) to existing Bookings calendars. Users who aren't included in this policy won't be able to create new Bookings calendars and will receive an error message if they try to do so.
 
@@ -111,7 +115,7 @@ You'll need to run the following commands using Exchange Online PowerShell. For 
    Set-OwaMailboxPolicy "OwaMailboxPolicy-Default" -BookingsMailboxCreationEnabled:$false
    ```
 
-   For more information, see [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy).
+For more information, see [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy).
 
 For more information on OWA mailbox policies, check out the following topics:
 

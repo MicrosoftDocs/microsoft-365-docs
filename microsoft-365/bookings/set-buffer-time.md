@@ -1,5 +1,5 @@
 ---
-title: "Set buffer time in Microsoft Bookings"
+title: "Set Bookings buffer time"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: "Set buffer time before or after an appointment in Microsoft Bookings to allow time for cleaning up or resetting equipment."
 ---
@@ -21,7 +23,7 @@ You can set buffer time before appointments start, after appointments end, or bo
 
 Buffer time defaults are set on the **Service details** page in Bookings. Like all service defaults set on this page, these defaults can be edited by you for a specific booking to meet specific customer needs.
 
-The buffer time setting can be found just below the **Default duration** pickers on the **Service details** page. Before it can be set for a given service, you must enable the buffer time setting by selecting the buffer time toggle. This causes the **Before** and **After** drop-downs to appear, which are used to pick the default amount of time to hold before and after each booking, as shown here:
+The buffer time setting can be found on the **Service details** page. Before it can be set for a given service, you must enable the buffer time setting by selecting the buffer time toggle. This causes the **Before** and **After** drop-downs to appear, which are used to pick the default amount of time to hold before and after each booking, as shown here:
 
    ![Image of Bookings with buffer time enabled.](../media/bookings-buffertime.png)
 

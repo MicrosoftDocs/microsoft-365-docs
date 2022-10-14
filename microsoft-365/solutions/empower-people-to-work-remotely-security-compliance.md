@@ -7,9 +7,10 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
@@ -67,14 +68,14 @@ Comply with internal policies or regulatory requirements with these compliance f
 |Data Loss Protection (DLP)|Detect, warn, and block risky, inadvertent, or inappropriate sharing, such as sharing of data containing personal information, both internally and externally.|Microsoft 365 E3 or E5|
 |Conditional Access App Control|Prevent sensitive data from being downloaded to users' personal devices.|Microsoft 365 E3 or E5|
 |Data retention labels and policies|Implement information governance controls, such as how long to keep data and requirements on the storage of personal data on customers, to comply with your organization's policies or data regulations.|Microsoft 365 E3 or E5|
-|Office message encryption (OME)|Send and receive encrypted email messages between people inside and outside your organization that contains regulated data, such as personal data on customers.|Microsoft 365 E3 or E5|
+|Microsoft Purview Message Encryption|Send and receive encrypted email messages between people inside and outside your organization that contains regulated data, such as personal data on customers.|Microsoft 365 E3 or E5|
 |Compliance Manager|Manage regulatory compliance activities related to Microsoft cloud services with this workflow-based risk assessment tool in the Microsoft Service Trust Portal.|Microsoft 365 E3 or E5|
-|Compliance Manager|See an overall score of your current compliance configuration and recommendations for improving it in the Microsoft 365 compliance center.|Microsoft 365 E3 or E5|
+|Compliance Manager|See an overall score of your current compliance configuration and recommendations for improving it in the Microsoft Purview compliance portal.|Microsoft 365 E3 or E5|
 |Communication Compliance|Detect, capture, and take remediation actions for inappropriate messages in your organization.|Microsoft 365 E5 or Microsoft 365 E3 with the Compliance or Insider Risk Management add-ons|
 |Insider Risk Management|Detect, investigate, and act on malicious and inadvertent risks in your organization. Microsoft 365 can detect these kinds of risks even when a worker is using an unmanaged device.|Microsoft 365 E5 or Microsoft 365 E3 with the Compliance or Insider Risk Management add-ons|
 ||||
 
-See [Quick tasks for getting started with Microsoft 365 compliance](../compliance/compliance-quick-tasks.md) for more information.
+See [Quick tasks for getting started with Microsoft Purview](../compliance/compliance-quick-tasks.md) for more information.
 
 ## Results of Step 3
 

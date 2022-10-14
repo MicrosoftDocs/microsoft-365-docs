@@ -2,7 +2,8 @@
 title: Investigate incidents in Microsoft 365 Defender
 description: Investigate incidents related to devices, users, and mailboxes.
 keywords: incident, incidents, analyze, response, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +15,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
-  - incidentresponse
-  - m365solution-incidentresponse
-  - m365solution-overview
+  - m365-security
+  - tier1
 ms.topic: conceptual
 search.appverid: 
   - MOE150
-ms.technology: m365d
+  - MET150
 ---
 
 # Investigate incidents in Microsoft 365 Defender
@@ -43,11 +41,11 @@ Before diving into the details, take a look at the properties and summary of the
 
 You can start by selecting the incident from the check mark column. Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Example of selecting an incident from the check mark column." lightbox="../../media/investigate-incidents/incidents-ss-incident-select.png":::
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Selecting an incident in the Microsoft 365 Defender portal" lightbox="../../media/investigate-incidents/incidents-ss-incident-select.png":::
 
 When you do, a summary pane opens with key information about the incident, such as severity, to whom it is assigned, and the [MITRE ATT&CK&trade;](https://attack.mitre.org/) categories for the incident. Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Example of the summary pane for an incident." lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="The pane that displays the summary details for an incident in the Microsoft 365 Defender portal." lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
 
 From here, you can select **Open incident page**. This opens the main page for the incident where you'll find more summary information and tabs for alerts, devices, users, investigations, and evidence.
 
@@ -57,7 +55,7 @@ You can also open the main page for an incident by selecting the incident name f
 
 The **Summary** page gives you a snapshot glance at the top things to notice about the incident.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 Defender portal" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="The summary information for an incident in the Microsoft 365 Defender portal" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 Information is organized in these sections.
 
@@ -82,7 +80,7 @@ On the **Alerts** tab, you can view the alert queue for alerts related to the in
 
 Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Example of an Alerts page for an incident." lightbox="../../media/investigate-incidents/incident-alerts.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="The Alerts pane for an incident in the Microsoft 365 Defender portal" lightbox="../../media/investigate-incidents/incident-alerts.png":::
 
 By default, the alerts are ordered chronologically to allow you to see how the attack played out over time. When you select an alert within an incident, Microsoft 365 Defender displays the alert information specific to the context of the overall incident. 
 
@@ -90,7 +88,7 @@ You can see the events of the alert, which other triggered alerts caused the cur
 
 Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="Example of an alert details page within an incident." lightbox="../../media/investigate-incidents/incident-alert-example.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="The details of an alert within an incident in the Microsoft 365 Defender portal." lightbox="../../media/investigate-incidents/incident-alert-example.png":::
 
 The incident alert page has these sections:
 
@@ -112,22 +110,22 @@ Learn how to use the alert queue and alert pages in [investigate alerts](investi
 
 The **Devices** tab lists all the devices related to the incident. Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="Example of a Devices page for an incident." lightbox="../../media/investigate-incidents/incident-devices.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="The Devices page for an incident in the Microsoft 365 Defender portal" lightbox="../../media/investigate-incidents/incident-devices.png":::
 
 You can select the check mark for a device to see details of the device, directory data, active alerts, and logged on users. Select the name of the device to see device details in the Defender for Endpoint device inventory. Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Example of a devices page for Defender for Endpoint." lightbox="../../media/investigate-incidents/incident-devices-details.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="The Device inventory option-related page in the Microsoft Defender for Endpoint." lightbox="../../media/investigate-incidents/incident-devices-details.png":::
 
 From the device page, you can gather additional information about the device, such as all of its alerts, a timeline, and security recommendations. For example, from the **Timeline** tab, you can scroll through the machine timeline and view all events and behaviors observed on the machine in chronological order, interspersed with the alerts raised.
 
 > [!TIP]
-> You can do on-demand scans on a device page. In the Microsoft 365 Defender portal, choose **Endpoints > Device inventory**. Select a device that has alerts, and then run an antivirus scan. Actions, such as antivirus scans, are tracked and are visible on the **Device inventory** page. To learn more, see [Run Defender Antivirus scan on devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
+> You can do on-demand scans on a device page. In the Microsoft 365 Defender portal, choose **Endpoints > Device inventory**. Select a device that has alerts, and then run an antivirus scan. Actions, such as antivirus scans, are tracked and are visible on the **Device inventory** page. To learn more, see [Run Microsoft Defender Antivirus scan on devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
 
 ## Users
 
 The **Users** tab lists all the users that have been identified to be part of or related to the incident. Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Example of a Users page for an incident." lightbox="../../media/investigate-incidents/incident-users.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="The Users page in the Microsoft 365 Defender portal." lightbox="../../media/investigate-incidents/incident-users.png":::
 
 You can select the check mark for a user to see details of the user account threat, exposure, and contact information. Select the user name to see additional user account details.
 
@@ -138,7 +136,7 @@ Learn how to view additional user information and manage the users of an inciden
 
 The **Mailboxes** tab lists all the mailboxes that have been identified to be part of or related to the incident. Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="Example of a Mailboxes page for an incident." lightbox="../../media/investigate-incidents/incident-mailboxes.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="The Mailboxes page for an incident in the Microsoft 365 Defender portal." lightbox="../../media/investigate-incidents/incident-mailboxes.png":::
 
 You can select the check mark for a mailbox to see a list of active alerts. Select the mailbox name to see additional mailbox details on the Explorer page for Defender for Office 365.
 
@@ -146,7 +144,7 @@ You can select the check mark for a mailbox to see a list of active alerts. Sele
 
 The **Investigations** tab lists all the [automated investigations](m365d-autoir.md) triggered by alerts in this incident. Automated investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Defender for Endpoint and Defender for Office 365.
 
-:::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Example of an Investigations page for an incident." lightbox="../../media/investigate-incidents/incident-investigations.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="The Investigations page for an incident in the Microsoft 365 Defender portal" lightbox="../../media/investigate-incidents/incident-investigations.png":::
 
 Select an investigation to navigate to its details page for full information on the investigation and remediation status. If there are any actions pending for approval as part of the investigation, they will appear in the **Pending actions history** tab. Take action as part of incident remediation.
 
@@ -164,7 +162,7 @@ For more information, see [Automated investigation and response in Microsoft 365
 
 The **Evidence and Response** tab shows all the supported events and suspicious entities in the alerts in the incident. Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="Example of an Evidence and Response page for an incident." lightbox="../../media/investigate-incidents/incident-evidence.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="The Evidence and Response page for an incident in the Microsoft 365 Defender portal" lightbox="../../media/investigate-incidents/incident-evidence.png":::
 
 Microsoft 365 Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with information about the important emails, files, processes, services, IP Addresses, and more. This helps you quickly detect and block potential threats in the incident.
 
@@ -179,16 +177,16 @@ From the **Graph** tab, you can:
 1. Play the alerts and the nodes on the graph as they occurred over time to understand the chronology of the attack.
 
 
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="Example of playing the alerts and nodes on the Graph page":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="The playing of the alerts and nodes on the Graph page":::
  
 
 2. Open an entity pane, allowing you to review the entity details and act on remediation actions, such as deleting a file or isolating a device.
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Example of an entity pane on the Graph page" lightbox="../../media/investigate-incidents/incident-graph-entity-pane.png":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="The entity pane on the Graph page in the Microsoft 365 Defender portal" lightbox="../../media/investigate-incidents/incident-graph-entity-pane.png":::
 
 3. Highlight the alerts based on the entity to which they are related.
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Example of an alert highlight on the Graph page" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="An alert highlight on the Graph page" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
 
 ## Next steps
 

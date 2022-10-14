@@ -4,7 +4,7 @@ description: Turn on the preview experience in Microsoft Defender for Endpoint t
 keywords: advanced features, settings, block file
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ---
 # Turn on the preview experience in Microsoft Defender for Endpoint
 
@@ -33,7 +35,7 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 
 1. In the navigation pane, select **Settings** \> **Endpoints** \> **Advanced features**.
 
-    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="settings and preview experience image.":::
+    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="The settings and preview experience" lightbox="../../media/atp-preview-features-new.png":::
 
 
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.

@@ -13,17 +13,17 @@ search.appverid:
   - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
 description: Learn about Threat Trackers, including new Noteworthy Trackers, to help your organization stay on top of security concerns.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Threat Trackers - New and Noteworthy
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
@@ -38,15 +38,15 @@ ms.prod: m365-security
 
 Threat Trackers are informative widgets and views that provide you with intelligence on different cybersecurity issues that might impact your company. For example, you can view information about trending malware campaigns using Threat Trackers.
 
-![Example of Threat Tracker showing malware campaigns.](../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
+:::image type="content" source="../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png" alt-text="The example of Threat Tracker showing malware campaigns" lightbox="../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png":::
 
 Most tracker pages include trending numbers that are updated periodically, widgets to help you understand which issues are the biggest or have grown the most, and a quick link in the **Actions** column that takes you to Explorer, where you can view more detailed information.
 
-![Example of campaign information in Explorer.](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
+:::image type="content" source="../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png" alt-text="The example of campaign information in Explorer" lightbox="../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png":::
 
-Trackers are just a few of the many great features you get with [Microsoft Defender for Office 365 Plan 2](office-365-ti.md). Threat Trackers include [Noteworth trackers](#noteworthy-trackers), [Trending trackers](#trending-trackers), [Tracked queries](#tracked-queries), and [Saved queries](#saved-queries).
+Trackers are just a few of the many great features you get with [Microsoft Defender for Office 365 Plan 2](office-365-ti.md). Threat Trackers include [Noteworthy trackers](#noteworthy-trackers), [Trending trackers](#trending-trackers), [Tracked queries](#tracked-queries), and [Saved queries](#saved-queries).
 
-To view and use your Threat Trackers for your organization, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, and go to **Email & collaboration** \> **Threat tracker**. To go directly to the **Threat tracker** page, use <https://security.microsoft.com/threattracker>.
+To view and use your Threat Trackers for your organization, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, and go to **Email & collaboration** \> **Threat tracker**. To go directly to the **Threat tracker** page, use <https://security.microsoft.com/threattrackerv2>.
 
 > [!NOTE]
 > To use Threat Trackers, you must be a global administrator, security administrator, or security reader. See [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
@@ -59,9 +59,9 @@ Typically Noteworthy trackers will be posted for just a couple of weeks when we 
 
 ### Trending trackers
 
-Trending trackers (formerly called Campaigns) highlight new threats received in your organization's email in the past week.
+Trending trackers (formerly called Campaigns) highlight new threats received in your organization's email in the past week. The Trending trackers view provides dynamic assessments of email threats impacting your organization's Office 365 environment. This view shows tenant level malware trends, identifying malware families on the rise, flat, or declining, giving admins greater insight into which threats require further attention.
 
-![Example of trending malware campaigns widget.](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
+:::image type="content" source="../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png" alt-text="The example of trending malware campaigns widget" lightbox="../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png":::
 
 Trending trackers give you an idea of new threats you should review to ensure your broader corporate environment is prepared against attacks.
 
@@ -69,13 +69,13 @@ Trending trackers give you an idea of new threats you should review to ensure yo
 
 Tracked queries leverage your saved queries to periodically assess Microsoft 365 activity in your organization. This gives you event trending, with more to come in the coming months. Tracked queries run automatically, giving you up-to-date information without having to remember to re-run your queries.
 
-![Example of tracked queries with one selected.](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
+:::image type="content" source="../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png" alt-text="The example of tracked queries with one selected" lightbox="../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png":::
 
 ### Saved queries
 
 Saved queries are also found in the Trackers section. You can use Saved queries to store the common Explorer searches that you want to get back to quicker and repeatedly, without having to re-create the search every time.
 
-![Example of saved queries with one selected.](../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
+:::image type="content" source="../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png" alt-text="The list of tracked queries with one selected" lightbox="../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png":::
 
 You can always save a Noteworthy tracker query or any of your own Explorer queries using the **Save query** button at the top of the Explorer page. Anything saved there will show up in the **Saved queries** list on the Tracker page.
 
@@ -85,13 +85,13 @@ Whether you're reviewing email, content, or Office activities (coming soon), Exp
 
 And remember that you can always provide us feedback on this or other Microsoft 365 security features by clicking on the **Feedback** button in the lower-right corner.
 
-![Microsoft 365 Defender portal.](../../media/microsoft-365-defender-portal.png)
+:::image type="content" source="../../media/microsoft-365-defender-portal.png" alt-text="The Microsoft 365 Defender portal" lightbox="../../media/microsoft-365-defender-portal.png":::
 
 ## Trackers and Microsoft Defender for Office 365
 
 With our inaugural Noteworthy threat, we're highlighting advanced malware threats detected by [Safe Attachments](safe-attachments.md). If you're an Office 365 Enterprise E5 customer and you're not using [Microsoft Defender for Office 365](defender-for-office-365.md), you should be - it's included in your subscription. Defender for Office 365 provides value even if you have other security tools filtering email flow with your Office 365 services. However, anti-spam and [Safe Links](safe-links.md) features work best when your main email security solution is through Office 365.
 
-![Microsoft Defender for Office 365 in the Microsoft 365 Defender portal.](../../media/policies.png)
+:::image type="content" source="../../media/policies.png" alt-text="The Microsoft Defender for Office 365 in the Microsoft 365 Defender portal" lightbox="../../media/policies.png":::
 
 In today's threat-riddled world, running only traditional anti-malware scans means you are not protected well enough against attacks. Today's more sophisticated attackers use commonly available tools to create new, obfuscated, or delayed attacks that won't be recognized by traditional signature-based anti-malware engines. The Safe Attachments feature takes email attachments and detonates them in a virtual environment to determine whether they're safe or malicious. This detonation process opens each file in a virtual computer environment, then watches what happens after the file is opened. Whether it's a PDF, and compressed file, or an Office document, malicious code can be hidden in a file, activating only once the victim opens it on their computer. By detonating and analyzing the file in the email flow, Defender for Office 365 capabilities finds these threats based on behaviors, file reputation, and a number of heuristic rules.
 

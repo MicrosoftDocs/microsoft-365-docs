@@ -3,7 +3,8 @@ title: Step 4. Define Microsoft 365 Defender roles, responsibilities, and oversi
 description: The basics of defining roles, responsibilities, and oversight when integrating Microsoft 365 Defender into your security operations.
 keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, Microsoft 365, incident response, cyber-attack, secops, security operations, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +16,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365solution-m365dsecops
+  - tier2
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 # Step 4. Define Microsoft 365 Defender roles, responsibilities, and oversight
 
@@ -40,7 +41,7 @@ Many modern SOCs assign its team members to categories based on their skillsets 
 
 SOC team roles and responsibilities for Microsoft 365 Defender would naturally integrate into these teams.
 
-The following table breaks out each SOC team’s roles and responsibilities and how their roles integrate with Microsoft 365 Defender.
+The following table breaks out each SOC team's roles and responsibilities and how their roles integrate with Microsoft 365 Defender.
 
 | SOC team | Roles and responsibilities | Microsoft 365 Defender tasks  |
 |:-------|:-----|:-------|

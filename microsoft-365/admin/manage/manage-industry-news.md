@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_TOC 
 ms.custom: 
@@ -31,7 +32,7 @@ To provide your users with up-to-date news headlines about your industry and inf
 
 You have the option to send your users a daily Industry Updates email with headlines and links to full articles. Users can customize their email updates by following additional topics, choosing when the update is delivered, excluding articles behind paywalls, and selecting the number of articles they want to see.
 
-Signed-in users who go to the Bing homepage see your industry's news feed under the personalized info for your organization.
+Signed-in users who go to the Bing homepage see your industry's news feed under the personalized info for your organization.
 
 :::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Screenshot of image carousel with industry news from the web.":::
 

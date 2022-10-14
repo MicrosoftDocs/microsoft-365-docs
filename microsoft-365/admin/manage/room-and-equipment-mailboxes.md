@@ -7,12 +7,12 @@ author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
-
 ms.custom:
 - Lean
 - MSStore_Link
@@ -25,7 +25,7 @@ ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: "Create a room or equipment mailbox so that everyone in your organization can reserve it for meetings or events using Outlook. "
 ---
 
-# Room and equipment mailboxes
+# Create Microsoft 365 room and equipment mailboxes
 
 If you have a conference room, company car, or equipment that everyone needs to use, then you need to come up with a way to make those resources reservable to everyone. The best way to do that is to create a room or equipment mailbox in Microsoft 365 for each resource. You might create one for your first floor conference room, media equipment, or a moving truck.
   
@@ -59,7 +59,7 @@ To use room or equipment mailboxes, open Outlook from your computer or sign in t
   
 7. Type a message describing the purpose and attach any files if needed.
     
-8. To allow others to join online or call in to the meeting, select **Skype Meeting**.
+8. To allow others to join online or call in to the meeting, select **Teams Meeting**.
     
 9. To make sure the room, equipment, and people you've invited are available, select **Scheduling Assistant** at the top. Then select an available time in the calendar.
 
@@ -92,7 +92,7 @@ To set up a room or equipment mailbox, go to the <a href="https://go.microsoft.c
     
    - **Location**: the room number or location of the room in a building or region.
     
-   - **Phone number**: the number of the room itself. This is different from the meeting phone number generated when using Skype for Business.
+   - **Phone number**: the number of the room itself. This is different from the meeting phone number generated when using Microsoft Teams.
     
 4. Select **Add**.
     

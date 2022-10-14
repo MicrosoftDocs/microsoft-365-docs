@@ -2,7 +2,7 @@
 title: Collect support logs in Microsoft Defender for Endpoint using live response
 description: Learn how to collect logs using live response to troubleshoot Microsoft Defender for Endpoint issues
 keywords: support, log, collect, troubleshoot, live response, liveanalyzer, analyzer, live, response
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: troubleshooting
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Collect support logs in Microsoft Defender for Endpoint using live response
@@ -38,15 +41,15 @@ If you also require Defender Antivirus support logs (MpSupportFiles.cab), then f
 
 3. Select **Upload file to library**.
 
-    ![Image of upload file.](images/upload-file.png)
+   :::image type="content" source="images/upload-file.png" alt-text="The upload file" lightbox="images/upload-file.png":::
 
 4. Select **Choose file**.
 
-    ![Image of choose file button1.](images/choose-file.png)
+   :::image type="content" source="images/choose-file.png" alt-text="The choose file button-1" lightbox="images/choose-file.png":::
 
 5. Select the downloaded file named MDELiveAnalyzer.ps1 and then click on **Confirm**
 
-   ![Image of choose file button2.](images/analyzer-file.png)
+   :::image type="content" source="images/analyzer-file.png" alt-text="The choose file button-2" lightbox="images/analyzer-file.png":::
 
 6. While still in the LiveResponse session, use the commands below to run the analyzer and collect the result file:
 

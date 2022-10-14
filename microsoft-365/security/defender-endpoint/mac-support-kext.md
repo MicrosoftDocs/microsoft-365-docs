@@ -2,7 +2,7 @@
 title: Troubleshoot kernel extension issues in Microsoft Defender for Endpoint on macOS
 description: Troubleshoot kernel extension-related issues in Microsoft Defender for Endpoint on macOS.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, extension
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,12 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Troubleshoot kernel extension issues in Microsoft Defender for Endpoint on macOS
@@ -37,7 +39,7 @@ Starting with macOS High Sierra (10.13), macOS requires all kernel extensions to
 
 If you didn't approve the kernel extension during the deployment/installation of Microsoft Defender for Endpoint on macOS, the application displays a banner prompting you to enable it:
 
-   ![RTP disabled screenshot.](images/mdatp-32-main-app-fix.png)
+:::image type="content" source="images/mdatp-32-main-app-fix.png" alt-text="RTP disabled" lightbox="images/mdatp-32-main-app-fix.png":::
 
 You can also run ```mdatp health```. It reports if real-time protection is enabled but not available. This indicates that the kernel extension isn't approved to run on your device.
 
@@ -46,8 +48,8 @@ mdatp health
 ```
 ```Output
 ...
-real_time_protection_enabled                : false
-real_time_protection_available              : true
+real_time_protection_enabled                : true
+real_time_protection_available              : false
 ...
 ```
 
@@ -66,7 +68,7 @@ If less than 30 minutes have passed since the product was installed, navigate to
 
 If you don't see this prompt, it means that 30 or more minutes have passed, and the kernel extension still not been approved to run on your device:
 
-![Security and privacy window after prompt expired screenshot.](images/mdatp-33-securityprivacysettings-noprompt.png)
+:::image type="content" source="images/mdatp-33-securityprivacysettings-noprompt.png" alt-text="Security and privacy window after the prompt expired" lightbox="images/mdatp-33-securityprivacysettings-noprompt.png":::
 
 In this case, you need to perform the following steps to trigger the approval flow again.
 

@@ -2,7 +2,8 @@
 title: Manage incidents in Microsoft 365 Defender
 description: Learn how to assign, update the status,
 keywords: incident, incidents, analyze, response, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +15,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365-initiative-defender-endpoint
+  - m365-security
+  - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid: 
   - MOE150
-ms.technology: m365d
+  - MET150
 ---
 
 # Manage incidents in Microsoft 365 Defender
@@ -35,7 +36,7 @@ Incident management is critical to ensuring that incidents are named, assigned, 
 
 You can manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Example of the incident queue." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft 365 Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 Here are the ways you can manage your incidents:
 
@@ -48,7 +49,7 @@ Here are the ways you can manage your incidents:
 
 You can manage incidents from the **Manage incident** pane for an incident. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Example of the Manage incident pane of an incident." lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="The Manage incident pane in the Microsoft 365 Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
 
 You can display this pane from the **Manage incident** link on the:
 
@@ -100,6 +101,9 @@ From the **Classification** field, you specify whether the incident is:
 - **False positive** for types of incidents that you determine can be ignored because they are technically inaccurate or misleading.
 
 Classifying incidents and specifying their status and type helps tune Microsoft 365 Defender to provide better detection determination over time.
+
+Watch this short video to learn how to use classification to increase triage efficiency.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LHJq]
 
 ## Add comments
 

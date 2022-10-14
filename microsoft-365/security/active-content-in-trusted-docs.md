@@ -8,9 +8,10 @@ manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.localizationpriority: medium
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.collection:
 - M365-security-compliance
+- tier3
 search.appverid:
 - MET150
 ROBOTS: NOINDEX,NOFOLOW
@@ -22,7 +23,7 @@ description: "Admins can learn how to create policies to block active content in
 > [!NOTE]
 > The features that are described in this article are in Preview, aren't available to everyone, and are subject to change.
 
-Office documents can be automatically refreshed, updated, or executed when they contain _active content_. Examples of active content are macros, ActiveX controls, and Office add-ins. Active content can provide powerful and useful functionality to users, but attackers can also use active content to deliver malware.
+Office documents can be automatically refreshed, updated, or executed when they contain _active content_. Examples of active content are macros, ActiveX controls, and Office Add-ins. Active content can provide powerful and useful functionality to users, but attackers can also use active content to deliver malware.
 
 Admins can create organization policies (group policies or cloud policies) that limit the use of active content to specific sets of users, or to disable active content entirely. Users can configure their own security and privacy settings in the Office Trust Center in their Office apps at **File** \> **Options** \> **Trust Center**.
 
@@ -30,17 +31,17 @@ Previously, when users identified documents as trusted documents, their selectio
 
 The updated Trust Center logic is described in the following diagram:
 
-:::image type="content" source="../media/office-trust-center-flow.png" alt-text="An example of a flow chart describing Trust center Logic in Microsoft 365 Defender portal" lightbox="../media/office-trust-center-flow.png":::
+:::image type="content" source="../media/office-trust-center-flow.png" alt-text="A flow chart describing Trust center Logic in the Microsoft 365 Defender portal" lightbox="../media/office-trust-center-flow.png":::
 
 1. A user opens an Office document that contains active content.
 
 2. If the document is from a trusted location, the document is opened with the active content enabled. If the document is not from a trusted location, the evaluation continues.
 
-3. This is where the updated behavior takes effect:
+3. It is here the updated behavior takes effect:
    - Previously, the next evaluated setting would have been if the user had identified this document as a trusted document. If they did, the document would open with the active content enabled.
    - Now, whether or not the user identified the document as a trusted document is not considered here (now at step 8).
 
-     This is the fundamental change in behavior: cloud policies (step 4), group policies (step 6) and local settings (step 7) are checked _before_ the user designation of a trusted document is even considered. If any of those steps block access to the active content **and** none of the steps allow user overrides, then user identification of the document as a trusted document is basically irrelevant.
+     The fundamental change in behavior is described as follows: cloud policies (step 4), group policies (step 6), and local settings (step 7) are checked _before_ the user designation of a trusted document is even considered. If any of those steps block access to the active content **and** none of the steps allow user overrides, then user identification of the document as a trusted document is irrelevant.
 
 4. Cloud policies are checked to see if this type of active content is allowed or blocked. If the active content is not blocked, the evaluation continues to step 6.
 
@@ -88,7 +89,7 @@ Admins have many ways to configure Office in an organization. For example:
 
 ## Admin options for restricting active content
 
-There's a big difference in the level of trust in internally created content vs. content that users download from the internet. Consider allowing active content in internal documents and globally not allowing active content in documents from the internet.
+There's a large difference in the level of trust in internally created content vs. content that users download from the internet. Consider allowing active content in internal documents and globally not allowing active content in documents from the internet.
 
 If your users don't need specific types of active content, your most secure option is to use policies to turn off user access to that active content, and allow exceptions as needed.
 
@@ -98,7 +99,7 @@ The following policies are available:
 - **Turn off Trusted Documents**: Exceptions for groups available.
 - **Turn off all active content**: Exceptions for individuals.
 
-The tables in the following sections describe the settings that control active content. These policies, if applied to users, will be enforced on trusted documents, and the previous end user experience might not be the same. The tables also include the recommended security baselines setting, and identify other settings where the user prompt to override is available (allowing the user to enable the active content).
+The tables in the following sections describe the settings that control active content. These policies, if applied to users, will be enforced on trusted documents, and the previous end-user experience might not be the same. The tables also include the recommended security baselines setting, and identify other settings where the user prompt to override is available (allowing the user to enable the active content).
 
 ### HKEY_CURRENT_USER settings
 
@@ -139,7 +140,7 @@ The tables in the following sections describe the settings that control active c
 |Macros|Excel|Scan encrypted macros in Excel Open XML workbooks|**Scan encrypted macros (default)**|No|
 |Macros|Office|Allow VBA to load typelib references by path from untrusted intranet locations|**Disabled**|No|
 |Macros|Office|Automation Security|**Use application macro security level**|No|
-|Macros|Office|Disable additional security checks on VBA library references that may refer to unsafe locations on the local machine|**Disabled**|No|
+|Macros|Office|Disable other security checks on VBA library references that may refer to unsafe locations on the local machine|**Disabled**|No|
 |Macros|Office|Macro Runtime Scan Scope|**Enable for all documents**|No|
 |Macros|Office|Only trust VBA macros that use V3 signatures|Not a security baseline setting.|No|
 |Macros|Outlook|Outlook Security Mode|**Use Outlook Security Group Policy**|Required to enable all Outlook GPO settings. <p> Mentioned as a dependency (this policy doesn't block active content itself).|
@@ -158,7 +159,7 @@ The tables in the following sections describe the settings that control active c
 |---|---|---|---|---|
 |ActiveX|Office|Restrict ActiveX Install|excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|No|
 |Add-ins & Extensibility|Office|Add-on Management|excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|No|
-|Add-ins & Extensibility|Office|Block Flash activation in Office documents|See the Microsoft Security Guide ADMX/ADML files for a list of COM killbits to block all activation for Flash in Microsoft 365 apps. The ADMX/ADML files for enterprise Security Baselines are available in the [Security Compliance Toolkit](https://www.microsoft.com/download/details.aspx?id=55319).|No|
+|Add-ins & Extensibility|Office|Block Flash activation in Office documents|See the Microsoft Security Guide ADMX/ADML files for a list of COM killbits to block all activation for Flash at Microsoft 365 apps. The ADMX/ADML files for enterprise Security Baselines are available in the [Security Compliance Toolkit](https://www.microsoft.com/download/details.aspx?id=55319).|No|
 |Jscript & VBScript|Office|Restrict legacy JScript execution for Office|**Enabled**: <p> Access: 69632 <p> Excel: 69632 <p> OneNote: 69632 <p> Outlook: 69632 <p> PowerPoint: 69632 <p> Project: 69632 <p> Publisher: 69632 <p> Visio: 69632 <p> Word: 69632|No|
 |Jscript & VBScript|Office|Scripted Window Security Restrictions|excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|No|
 |

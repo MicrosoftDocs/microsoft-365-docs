@@ -10,9 +10,11 @@ ms.topic: conceptual
 f1_keywords:
 - 'O365E_understand_devices'
 - 'BCS365_understand_devices'
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: M365-subscription-management 
+ms.collection: 
+- scotvorg
+- M365-subscription-management 
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -26,13 +28,12 @@ description: "Learn the differences between mobile device management and mobile 
 
 # Difference between MDM and MAM
 
-Microsoft 365 Business Premium offers a number of ways for you to protect your business data. See [Overview of Microsoft 365 Business Premium](../../admin/admin-overview/what-is-microsoft-365.md) for more about the various protections that are automatically set up, and what you can set up yourself to further protect your business. You can also set up policies that protect your Windows 10 devices and the data in your mobile devices.
-[Set application protection settings for Windows 10 devices](../protection-settings-for-windows-10-devices.md).
+Microsoft 365 Business Premium offers a number of ways for you to protect your business data. See [Overview of Microsoft 365 Business Premium](../../admin/admin-overview/what-is-microsoft-365.md) for more about the various protections that are automatically set up, and what you can set up yourself to further protect your business. You can also onboard devices to Microsoft Defender for Business to protect your Windows devices and the data in your mobile devices. For more information, see [Onboard enrolled devices to Microsoft Defender for Business](/microsoft-365/business-premium/m365bp-onboard-devices-mdb). 
 
 ## Mobile device management or MDM
 
-Microsoft 365 Business Premium lets you set up policies that protect data on your Windows 10 devices. When a device is under mobile device management, you control the entire device, and can wipe data from it, and also reset it to factory settings. For more information, see [Set device protection settings for Windows 10 PCs](../protection-settings-for-windows-10-pcs.md).
+Microsoft 365 Business Premium lets you set up policies that protect data on your Windows 10 and 11 devices. When a device is under mobile device management, you control the entire device, and can wipe data from it, and also reset it to factory settings. For more information, see [Choose the device management solution that's right for you](/mem/intune/fundamentals/what-is-device-management#choose-the-device-management-solution-thats-right-for-you) and [Set up and secure managed devices](/microsoft-365/business-premium/m365bp-protect-devices).
 
 ## Mobile application management or MAM
 
-Mobile application management lets you control your business data in your users' personal devices, such as iPhones and Androids, and their personal Win 10 computers. You can use application management policies to prevent your users from copying business data from Office apps to their personal apps. You can also remove all data from the Office apps on their personal devices. For more information, see [Set app protection settings for Android or iOS devices](../app-protection-settings-for-android-and-ios.md) and [Set application protection settings for Windows 10 devices](../protection-settings-for-windows-10-devices.md).
+Mobile application management lets you control your business data in your users' personal devices, such as iPhones and Androids, and their personal Windows computers. You can use application management policies to prevent your users from copying business data from Office apps to their personal apps. You can also remove all data from the Office apps on their personal devices. For more information, see [Choose the device management solution that's right for you](/mem/intune/fundamentals/what-is-device-management#choose-the-device-management-solution-thats-right-for-you) and [Set up and secure managed devices](/microsoft-365/business-premium/m365bp-protect-devices).

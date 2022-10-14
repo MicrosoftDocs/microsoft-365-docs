@@ -1,306 +1,213 @@
 ---
-title: "Increase threat protection for Microsoft 365 Business Premium"
+title: "Protect against malware and other threats with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: Skjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
-ms.localizationpriority: medium
+ms.topic: how-to
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 10/05/2022
+ms.localizationpriority: high
 ms.collection:
-- Adm_O365
-- M365-subscription-management
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
-- admindeeplinkMAC
-- admindeeplinkEXCHANGE
-- admindeeplinkSPO
 search.appverid:
 - BCS160
 - MET150
 description: "Get help with increasing the level of protection in Microsoft 365 Business Premium"
 ---
 
-# Increase threat protection for Microsoft 365 Business Premium
+# Protect against malware and other cyberthreats with Microsoft 365 Business Premium
 
-This article helps you increase the protection in your Microsoft 365 subscription to protect against phishing, malware, and other threats. These recommendations are appropriate for organizations with an increased need for security, like political campaigns, law offices, and health care clinics.
+In this objective, you increase your threat protection with Microsoft 365 Business Premium. It's critical to protect your business against phishing, malware, and other threats. This article includes information about:
 
-Before you begin, check your Microsoft Secure Score. Microsoft Secure Score analyzes your organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Taking the actions recommended in this article increases your score. The goal isn't to achieve the max score, but to be aware of opportunities to protect your environment that don't negatively affect productivity for your users.
+- [Preset security policies](#review-and-apply-preset-security-policies) that can save a lot of time in setup and configuration.
+- [Custom security policies](#create-custom-security-policies) that you can define to suit your business needs.
+- [How to adjust your sharing settings for SharePoint and OneDrive files and folders](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
+- [Alert policies](#review-your-alert-policies) that monitor specific files and how they are used.
+- [Manage calendar sharing](#manage-calendar-sharing) to enable people to schedule meetings appropriately.
+- [Your next objectives](#next-objectives).
 
-For more information, see [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
+## Review and apply preset security policies
 
-## Raise the level of protection against malware in mail
+Your subscription includes [preset security policies](../security/office-365-security/preset-security-policies.md) that use recommended settings for anti-spam, anti-malware, and anti-phishing protection. By default, built-in protection is enabled; however, consider applying standard or strict protection for increased security.
 
-Your Office 365 or Microsoft 365 environment includes protection against malware, but you can increase this protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email:
+:::image type="content" source="media/m365bp-presetsecuritypolicies.png" alt-text="Screenshot of preset security policies.":::
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a> and sign in with your admin account credentials.
+> [!NOTE]
+> Preset security policies are not the same thing as [security defaults](m365bp-conditional-access.md#security-defaults). Typically, you'll be using *either* security defaults *or* [Conditional Access](m365bp-conditional-access.md#conditional-access) first, and then you'll add your security policies. [Preset security policies](#what-are-preset-security-policies) simplify the process of adding your security policies. You can also [add your own custom policies](#create-custom-security-policies). 
 
-2. In the left navigation pane, under **Threat management**, choose **Policy** \> **Anti-Malware**.
+### What are preset security policies?
 
-3. Double-click the default policy to edit this company-wide policy.
+Preset security policies provide protection for your email and collaboration content. These policies consist of:
 
-4. Click **Settings**.
+- *Profiles*, which determine the level of protection
+- *Policies* (such as anti-spam, anti-malware, anti-phishing, spoof settings, impersonation, Safe Attachments, and Safe Links)
+- *Policy settings* (such as groups, users, or domains to receive the policies and any exceptions)
 
-5. Under **Common Attachment Types Filter**, select **On**. The file types that are blocked are listed in the window directly below this control. Make sure you add these filetypes:
+The following table summarizes the levels of protection and preset policy types.
 
-   `ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif`
+| Level of protection | Description |
+|:---|:---|
+| **Standard protection** <br/>(*recommended for most businesses*) | Standard protection uses a baseline profile that's suitable for most users. Standard protection includes anti-spam, anti-malware, anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments policies.  |
+| **Strict protection**  | Strict protection includes the same kinds of policies as standard protection, but with more stringent settings. If your business must meet additional security requirements or regulations, consider applying strict protection to at least your priority users or high value targets. |
+| **Built-in protection** | Protects against malicious links and attachments in email. Built-in protection is enabled and applied to all users by default.  |
 
-   You can add or delete file types later, if needed.
+> [!TIP]
+> You can specify the users, groups, and domains to receive preset policies, and you can define certain exceptions, but you cannot change the preset policies themselves. If you want to use different settings for your security policies, you can create your own custom policies to suit your company's needs.
 
-6. Click **Save.**
+### Policy order of priority
 
-For more information, see [Anti-malware protection in EOP](../security/office-365-security/anti-malware-protection.md).
+If users are assigned multiple policies, an order of priority is used to apply the policies. The order of priority works as follows:
 
-## Protect against ransomware
+1. **Strict protection** receives the highest priority and overrides all other policies.
 
-Ransomware restricts access to data by encrypting files or locking computer screens. It then attempts to extort money from victims by asking for "ransom," usually in the form of cryptocurrencies like Bitcoin, in exchange for access to data.
+2. **Standard protection** 
 
-You can protect against ransomware by creating one or more mail flow rules to block file extensions that are commonly used for ransomware (these were added in the [raise the level of protection against malware in mail](#raise-the-level-of-protection-against-malware-in-mail) step), or to warn users who receive these attachments in email.
+3. **Custom security policies**
 
-In addition to the files that you blocked in the previous step, it's also good practice to create a rule to warn users before opening Office file attachments that include macros. Ransomware can be hidden inside macros, so warn users to not open these files from people they don't know.
+4. **Built-in protection** receives the lowest priority and is overridden by strict protection, standard protection, and custom policies.
 
-To create a mail transport rule:
+Strict protection overrides all other policies, and built-in protection is overridden by the other policies. 
 
-1. Go to the admin center at <https://admin.microsoft.com> and choose **Admin centers** \> **Exchange**.
+To learn more about preset security policies, see [What preset security policies are made of](../security/office-365-security/preset-security-policies.md#what-preset-security-policies-are-made-of).
 
-2. In the **mail flow** category, click **rules**.
+### How do I assign preset security policies to users?
 
-3. Click **+**, and then click **Create a new rule**.
+> [!IMPORTANT]
+> Before you begin, make sure you have one of the following roles assigned in Exchange Online (which is included in your subscription):
+> 
+> - Global Administrator
+> - Organization Management
+> - Security Administrator
+> 
+> To learn more, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo) and [About admin roles](../admin/add-users/about-admin-roles.md).
 
-4. Click **More options** at the bottom of the dialog box to see the full set of options.
+To assign preset security policies, follow these steps:
 
-5. Apply the settings in the following table for the rule. Leave the rest of the settings at the default, unless you want to change them.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-6. Click **Save**.
+2. Go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. (To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.)
 
-|Setting|Warn users before opening attachments of Office files|
-|---|---|
-|Name|Anti-ransomware rule: warn users|
-|Apply this rule if . . .|Any attachment . . . file extension matches . . .|
-|Specify words or phrases|Add these file types: <br/> `dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm`|
-|Do the following . . .|Notify the recipient with a message|
-|Provide message text|Do not open these types of files from people you do not know because they might contain macros with malicious code.|
+3. On the **Preset security policies** page, in either the **Standard protection** or **Strict protection** section, select **Manage Protection Settings**.
 
-For more information, see:
+4. The **Apply Standard protection** or **Apply Strict protection** wizard starts in a flyout. On the **EOP protections apply to** page, identify the internal recipients that the policies apply to (recipient conditions):
+   - **Users**
+   - **Groups**
+   - **Domains**
 
-- [Ransomware: how to reduce risk](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
+   Click in the appropriate box, start typing a value, and then select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, select the **Remove** icon next to the value.
 
-- [Restore your OneDrive](https://support.microsoft.com//office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
+   For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, type an asterisk (\*) by itself to see all available values.
 
-## Stop auto-forwarding for email
+   To specify an exclusion, select the **Exclude these users, groups, and domains** checkbox, and then specify users, groups, or domains to exclude.
 
-Hackers who gain access to a user's mailbox can steal your mail by setting the mailbox to automatically forward email. This can happen even without the user's awareness. You can prevent this from happening by configuring a mail flow rule.
+   When you're finished, select **Next**.
 
-To create a mail transport rule, either watch [this short video](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) or follow these steps:
+5. On the **Defender for Office 365 protections apply to** page to identify the internal recipients that the policies apply to (recipient conditions). Specify users, groups, and domains just like what you did in the previous step.
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, click **Admin centers** \> **Exchange**.
+   When you're finished, click **Next**.
 
-2. In the **mail flow** category, click **rules**.
+6. On the **Review and confirm your changes** page, verify your selections, and then select **Confirm**.
 
-3. Click **+**, and then click **Create a new rule**.
+> [!TIP]
+> To learn more about assigning preset security policies, see the following articles:
+> - [Assign preset security policies to users](../security/office-365-security/preset-security-policies.md#assign-preset-security-policies-to-users)
+> - [Recommended settings for email and collaboration content](../security/office-365-security/recommended-settings-for-eop-and-office365.md) (Microsoft 365 Business Premium includes Exchange Online Protection and Microsoft Defender for Office 365 Plan 1)
 
-4. Click **More options** at the bottom of the dialog box to see the full set of options.
+## Create custom security policies
 
-5. Apply the settings in the following table. Leave the rest of the settings at the default, unless you want to change them.
+The [preset security policies](#what-are-preset-security-policies) described earlier in this article provide strong protection for most businesses. However, you're not limited to using preset security policies only. You can define your own custom security policies to suit your company's needs. 
 
-6. Click **Save**.
+Use our quick-start guide, [Protect against threats](../security/office-365-security/protect-against-threats.md), to get started creating your own custom policies. The guidance not only walks you through how to set up your own security policies, it also provides recommended settings to use as a starting point for:
 
-|Setting|Warn users before opening attachments of Office files|
-|---|---|
-|Name|Prevent auto forwarding of email to external domains|
-|Apply this rule if ...|The sender . . . is external/internal . . . Inside the organization|
-|Add condition|The message properties . . . include the message type . . . Auto-forward|
-|Do the following ...|Block the message . . . reject the message and include an explanation.|
-|Provide message text|Auto-forwarding email outside this organization is prevented for security reasons.|
+- [Antimalware protection](../security/office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
+- [Advanced antiphishing protection](../security/office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
+- [Antispam protection](../security/office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)
+- [Safe Links and Safe Attachments](../security/office-365-security/protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 
-## Protect your email from phishing attacks
+## Set sharing settings for SharePoint and OneDrive files and folders
 
-If you've configured one or more custom domains for your Office 365 or Microsoft 365 environment, you can configure targeted anti-phishing protection. Anti-phishing protection, part of Microsoft Defender for Office 365, can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you haven't configured a custom domain, you don't need to do this.
+By default, sharing levels are set to the most permissive level for both SharePoint and OneDrive. We recommend changing the default settings to better protect your business.
 
-We recommend that you get started with this protection by creating a policy to protect your most important users and your custom domain.
+1. Go to <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing** in the SharePoint admin center</a>, and sign in with an account that has [admin permissions for your organization](/sharepoint/sharepoint-admin-role).
 
-To create an anti-phishing policy in Defender for Office 365, watch [this short training video](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c), or complete the following steps:
+2. Under **External sharing**, specify the level of sharing. (We recommend using **Least permissive** to prevent external sharing.)
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a>.
+3. Under **File and folder links**, select an option (such as **Specific people**). Then choose whether to grant View or Edit permissions by default for shared links (such as **View**).
 
-2. In the left navigation pane, under **Threat management**, choose **Policy**.
+4. Under **Other settings**, select the options you want to use.
 
-3. On the **Policy** page, choose **Anti-phishing**.
+5. Then choose **Save**.
 
-4. On the **Anti-phishing** page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
+> [!TIP]
+> To learn more about these settings, see [Manage sharing settings](/sharepoint/turn-external-sharing-on-or-off).
 
-5. Specify the name, description, and settings for your policy as recommended in the chart below. For more information, see [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../security/office-365-security/set-up-anti-phishing-policies.md).
+## Review your alert policies
 
-6. After you've reviewed your settings, choose **Create this policy** or **Save**, as appropriate.
+Alert policies are useful for tracking user and admin activities, potential malware threats, and data loss incidents in your business. Your subscription includes a set of default policies, but you can also create custom ones. For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
 
-|Setting or option|Recommended setting|
-|---|---|
-|Name|Domain and most valuable staff|
-|Description|Ensure most important staff and our domain are not being impersonated.|
-|Add users to protect|Select **+ Add a condition, The recipient is**. Type user names or enter the email address of the business owners, partners, or candidate, managers, and other important staff members. You can add up to 20 internal and external addresses that you want to protect from impersonation.|
-|Add domains to protect|Select **+ Add a condition, The recipient domain is**. Enter the custom domain associated with your Microsoft 365 subscription, if you defined one. You can enter more than one domain.|
-|Choose actions|If email is sent by an impersonated user: Choose **Redirect message to another email address**, and then type the email address of the security administrator; for example, *Alice<span><span>@contoso.com*. <br/> If email is sent by an impersonated domain: Choose **Quarantine message**.|
-|Mailbox intelligence|By default, mailbox intelligence is selected when you create a new anti-phishing policy. Leave this setting **On** for best results.|
-|Add trusted senders and domains|Here you can add your own domain, or any other trusted domains.|
-|Applied to|Select **The recipient domain is**. Under **Any of these**, select **Choose**. Select **+ Add**. Select the check box next to the name of the domain, for example, *contoso.<span><span>com*, in the list, and then select **Add**. Select **Done**.|
-
-For more information, see [Set up anti-phishing policies in Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
-
-## Protect against malicious attachments, files, and links with Defender for Office 365
-
-![Banner that point to https://aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)
-
-First, make sure, in the admin center at <https://admin.microsoft.com> that you have the new admin center preview turned on. Turn on the toggle next to the text **The new admin center**.
-
-   ![The new admin center preview on.](../media/previewon.png)
-
-If you don't see the **Setup** page with cards in your tenant yet, see how to complete these steps in Security & Compliance Center. See [Set up Safe Attachments in the Security & Compliance Center](#set-up-safe-attachments-in-the-security--compliance-center) and [Set up Safe Links in the Security & Compliance Center](#set-up-safe-links-in-the-security--compliance-center).
-
-1. In the left nav, choose **Setup**.
-2. On the **Setup** page, choose **View** on the **Increase protection from advanced threats** card.
-
-   ![Choose View on the Increase protection from advanced threats.](../media/startatp.png)
-
-3. On the **Increase protection from advanced threats** page, choose **Get started**.
-4. On the pane that opens, select the check boxes next to **Links and attachments in email**, **Scan files in SharePoint, OneDrive, and Teams**, and **Scan links in Office desktop and Office Online apps** under **Scan items for malicious content**.
-
-   Under **Links and attachments in email**, Type in All Users, or the specific users whose email you want scanned.
-
-   ![Select all check boxes in Increase protection from advanced threats.](../media/setatp.png)
-
-5. Choose **Create policies** to turn on Safe Attachments and Safe Links.
-
-### Set up Safe Attachments in the Security & Compliance Center
-
-People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365 includes Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
-
-To create a Safe Attachment policy, either watch [this short video](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), or complete the following steps:
-
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a> and sign in with your admin account.
-
-2. In the left navigation pane, under **Threat management**, choose **Policy**.
-
-3. On the Policy page, choose **Safe Attachments**.
-
-4. On the Safe attachments page, apply this protection broadly by selecting the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** check box.
-
-5. Select **+** to create a new policy.
-
-6. Apply the settings in the following table.
-
-7. After you review your settings, choose **Create this policy** or **Save**, as appropriate.
-
-|Setting or option|Recommended setting|
-|---|---|
-|Name|Block current and future emails with detected malware.|
-|Description|Block current and future emails and attachments with detected malware.|
-|Save attachments unknown malware response|Select **Block - Block the current and future emails and attachments with detected malware**.|
-|Redirect attachment on detection|Enable redirection (select this box) <br/> Enter the admin account or a mailbox setup for quarantine. <br/> Apply the above selection if malware scanning for attachments times out or error occurs (select this box).|
-|Applied to|The recipient domain is . . . select your domain.|
-
-For more information, see [Set up anti-phishing policies in Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
-
-### Set up Safe Links in the Security & Compliance Center
-
-Hackers sometimes hide malicious websites in links in email or other files. Safe Links, part of Microsoft Defender for Office 365, can help protect your organization by providing time-of-click verification of web addresses (URLs) in email messages and Office documents. Protection is defined through Safe Links policies.
-
-We recommend that you do the following:
-
-- Modify the default policy to increase protection.
-
-- Add a new policy targeted to all recipients in your domain.
-
-To set up Safe Links, watch [this short training video](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), or complete the following steps:
-
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a> and sign in with your admin account.
-
-2. In the left navigation pane, under **Threat management**, choose **Policy**.
-
-3. On the Policy page, choose **Safe Links**.
-
-To modify the default policy:
-
-1. On the Safe links page, under **Policies that apply to the entire organization**, select the **Default** policy.
-
-2. Under **Settings that apply to content except email**, select **Microsoft 365 Apps for enterprise, Office for iOS and Android**.
-
-3. Click **Save**.
-
-To create a new policy targeted to all recipients in your domain:
-
-1. On the Safe links page, under **Policies that apply to the entire organization**, click **+** to create a new policy.
-
-2. Apply the settings listed in the following table.
-
-3. Click **Save**.
-
-|Setting or option|Recommended setting|
-|---|---|
-|Name|Safe links policy for all recipients in the domain|
-|Select the action for unknown potentially malicious URLs in messages|Select **On - URLs will be rewritten and checked against a list of known malicious links when user clicks on the link**.|
-|Use Safe Attachments to scan downloadable content|Select this box.|
-|Applied to|The recipient domain is . . . select your domain.|
-
-For more information, see [Safe Links in Defender for Office 365](../security/office-365-security/safe-links.md).
-
-## Turn on the Unified Audit Log
-
-After you turn on the audit log search in the Security & Compliance Center, you can retain the admin and other user activity in the log and search it.
-
-You must be assigned the Audit Logs role in Exchange Online to turn audit log search on or off in your Microsoft 365 subscription. By default, this role is assigned to the Compliance Management and Organization Management role groups on the Permissions page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. Global admins in Microsoft 365 are members of this group by default.
-
-1. To turn on the audit log search, go to the admin center at <https://admin.microsoft.com> and then choose **Security** under **Admin centers** in the left nav.
-2. On the **Microsoft 365 Security** page, choose **More resources**, and then **Open** on the **Office 365 Security & Compliance Center** card.
-
-    ![Choose Open on the security & compliance cars.](../media/gotosecandcomp.png)
-3. On the security and compliance page, choose **Search** and then **Audit log search**.
-4. On the top of the **Audit log search** page, choose **Turn on auditing**.
-
-After the feature is turned on, you can search for files, folders, and many activities. For more information, see [search the audit log](../compliance/search-the-audit-log-in-security-and-compliance.md).
-
-## Tune-up anonymous sharing settings for SharePoint and OneDrive files and folders
-
-(change default anonymous link expiration to 14 days, change default sharing type to "Specific People")
-To change the sharing settings for OneDrive and SharePoint:
-
-1. Go to the admin center at <https://admin.microsoft.com> and then choose **SharePoint** under **Admin centers** in the left nav.
-2. In the SharePoint admin center, go to **Policies** \> <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
-3. On the **Sharing** page, under **File and folder links**, select **Specific people**, and under **Advanced settings for "Anyone" links**, select **These links must expire within this many days**, and type in 14 (or another number of days you want to restrict the link lifetime to).
-
-   ![Choose Specific people and set link expiration to 14 days.](../media/anyonelinks.png)
-
-## Activity alerts
-
-You can use activity alerts to track admin and user activities and detect malware and data loss prevention incidents in your organization. Your subscription includes a set of default policies, but you can also create custom ones. For more information, see [alert policies](../compliance/alert-policies.md). For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
-
-The following figure shows the default policies that are included with Microsoft 365.
+The following image shows some of the default policies that are included with Microsoft 365 Business Premium.
 
 ![Default alert policies included with Microsoft 365.](../media/alertpolicies.png)
 
-## Disable or manage calendar sharing
+### View your alert policies
 
-You can prevent people in your organization from sharing their calendars, or you can also manage what they can share. For example, you can restrict the sharing to free/busy times only.
+1. Go to the Microsoft Purview compliance portal at [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.
 
-1. Go to the admin center at <https://admin.microsoft.com> and choose **Settings** \> **Org Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services**</a>.
+2. In the navigation pane, choose **Policies**, and then choose **Alert policies**.
 
-1. Choose **Calendar**, and choose whether people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone.
+3. Select an individual policy to view more details or to edit the policy. The following image shows a list of alert policies with one policy selected:
 
-   If you choose the share with anyone option, you can decide to also only share free/busy information.
+   :::image type="content" source="media/selected-alert-policy.png" lightbox="media/selected-alert-policy.png" alt-text="Screenshot of a selected alert policy.":::
+
+> [!TIP]
+> For more information, see [alert policies](../compliance/alert-policies.md).
+
+### How to view alerts
+
+You can view your alerts in either the Microsoft 365 Defender portal or the Microsoft Purview compliance portal.
+
+| Type of alert  | What to do  |
+|---------|---------|
+| Security alert, such as when a user clicks a malicious link, an email is reported as malware or phish, or a device is detected as containing malware     | Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and under **Email & collaboration** select **Policies & rules** > **Alert policy**. Alternatively, you can go directly to <https://security.microsoft.com/alertpolicies>. |
+| Compliance alert, such as when a user shares sensitive or confidential information (data loss prevention alert) or there's an unusual volume of external file sharing (information governance alert)    | Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, and then select **Policies** > **Alert** > **Alert policies**.  |
+
+For more information, see [View alerts](../compliance/alert-policies.md#view-alerts).
+
+## Manage calendar sharing
+
+You can help people in your organization share their calendars appropriately for better collaboration. You can manage what level of detail they can share, such as by limiting the details that are shared to free/busy times only.
+
+1. Go [Org settings in the Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2053743) and sign in.
+
+2. Choose **Calendar**, and choose whether people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone. We recommend clearing the **External sharing** option. If you choose to share calendars with anyone option, you can choose to also share free/busy information only.
 
 3. Choose **Save changes** on the bottom of the page.
 
-   The following figure shows calendar sharing not allowed.
+   The following image shows that calendar sharing is not allowed.
 
    ![Screenshot of showing external calendar sharing as not allowed.](../media/nocalendarsharing.png)
 
-   The following figure shows the settings when calendar sharing is allowed with an email link with only free/busy information.
+   The following image shows the settings when calendar sharing is allowed with an email link with only free/busy information.
 
    ![Screenshot of calendar free/busy sharing with anyone.](../media/sharefreebusy.png)
 
 If your users are allowed to share their calendars, see [these instructions](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for how to share from Outlook on the web.
+
+## Next objectives
+
+Proceed to:
+
+- [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md)
+- [Protect all email](m365bp-protect-email-overview.md)
+- [Collaborate and share securely](m365bp-collaborate-share-securely.md)
+- [Set up and secure managed devices](m365bp-protect-devices.md)

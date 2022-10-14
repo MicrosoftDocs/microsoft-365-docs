@@ -13,16 +13,15 @@ search.appverid:
   - MET150
   - MOE150
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Learn more about the secure by default setting in Exchange Online Protection (EOP)
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Secure by default in Office 365
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -74,5 +73,5 @@ You should only consider using overrides in the following scenarios:
 
 - Phishing simulations: Simulated attacks can help you identify vulnerable users before a real attack impacts your organization. To prevent phishing simulation messages from being filtered, see [Configure third-party phishing simulations in the advanced delivery policy](/microsoft-365/security/office-365-security/configure-advanced-delivery#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
 - Security/SecOps mailboxes: Dedicated mailboxes used by security teams to get unfiltered messages (both good and bad). Teams can then review to see if they contain malicious content. For more information, see [Configure SecOps mailboxes in the advanced delivery policy](/microsoft-365/security/office-365-security/configure-advanced-delivery#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
-- Third-party filters: Secure by default only applies when the MX record for your domain is set to Exchange Online Protection (contoso.mail.protection.outlook.com). If it’s set to another service or device, it is possible to override Secure by default with a [Transport Rule](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl) to bypass all spam filtering. When Microsoft detects messages as High Confidence Phish with this rule in place, they still deliver to the Inbox. 
+- Third-party filters: Secure by default only applies when the MX record for your domain is set to Exchange Online Protection (contoso.mail.protection.outlook.com). If it's set to another service or device, it is possible to override Secure by default with a [Transport Rule](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl) to bypass all spam filtering. When Microsoft detects messages as High Confidence Phish with this rule in place, they still deliver to the Inbox. 
 - False positives: You might want to temporarily allow certain messages that are still being analyzed by Microsoft [via Admin submissions](admin-submission.md). As with all overrides, it is recommended that they are temporary.

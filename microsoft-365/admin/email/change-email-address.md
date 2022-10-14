@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- scotvorg 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -29,7 +30,9 @@ ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: "Change your email address to a friendly email address like tom@fourthcoffee.com by buying a domain name and adding it to Microsoft 365."
 ---
 
-# Change your email address to use your custom domain
+# Change your Microsoft 365 email address to use your custom domain
+
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
@@ -48,6 +51,8 @@ Your initial email address in Office 365 operated by 21Vianet includes partner.o
 When you change your domain's email to come to Microsoft 365, by updating your domain's MX record during setup, ALL email sent to that domain will start coming to Microsoft 365. Make sure you've added users and created mailboxes in Microsoft 365 for everyone who has email on your domain BEFORE you change the MX record. Don't want to move email for everyone on your domain to Microsoft 365? You can take steps to [pilot Microsoft 365 with just a few email addresses instead](../misc/pilot-microsoft-365-from-my-custom-domain.md).
   
 ## Set up business email with a new domain
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198215).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyVVA?autoplay=false]
 

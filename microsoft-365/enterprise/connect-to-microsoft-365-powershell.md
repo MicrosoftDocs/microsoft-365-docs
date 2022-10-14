@@ -2,12 +2,14 @@
 title: "Connect to Microsoft 365 with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg 
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: 
@@ -38,6 +40,8 @@ Currently, the Azure Active Directory PowerShell for Graph module doesn't comple
 
 ## What do you need to know before you begin?
 
+>[!NOTE]
+> The Azure Active Directory Module is being replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
 
 **Operating system**
 
@@ -75,7 +79,7 @@ For procedures that require the new cmdlets in the Azure Active Directory PowerS
 
 These steps are required only one time on your computer. But you'll likely need to update the software periodically.
   
-1. Open an elevated Windows PowerShell Command Prompt window (run Windows PowerShell as an administrator).
+1. Open a Windows PowerShell Command Prompt window.
     
 2. Run this command:
     
@@ -96,6 +100,12 @@ Are you sure you want to install the modules from 'PSGallery'?
 
 Answer **Yes** or **Yes to All** to continue with the installation.
 
+3.  Run this command to import the module:
+    
+    ```powershell
+    Import-Module  AzureAD
+    ```
+    
 ### Step 2: Connect to Azure AD for your Microsoft 365 subscription
 
 To connect to Azure Active Directory (Azure AD) for your Microsoft 365 subscription with an account name and password or with multi-factor authentication, run one of these commands from a Windows PowerShell command prompt. (It doesn't have to be elevated.)
@@ -193,6 +203,8 @@ To connect with and use the Azure Cloud Shell from the Microsoft 365 admin cente
 You will need an active Azure subscription for your organization that is tied to your Microsoft 365 subscription. If you don't already have one, you can create one. Once you have an Azure subscription, a PowerShell window opens from which you can run PowerShell commands and scripts.
 
 For more information, see [Azure Cloud Shell](/azure/cloud-shell/overview).
+
+
 
 ## See also
 

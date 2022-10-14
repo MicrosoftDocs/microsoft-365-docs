@@ -3,7 +3,7 @@ title: Phishing trends and techniques
 ms.reviewer: 
 description: Learn about how to spot phishing techniques
 keywords: security, malware, phishing, information, scam, social engineering, bait, lure, protection, trends, targeted attack, spear phishing, whaling
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,10 +11,11 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
 ---
 
 # Phishing trends and techniques
@@ -59,11 +60,11 @@ Whaling is a form of phishing directed at high-level or senior executives within
 
 ## Business email compromise
 
-Business email compromise (BEC) is a sophisticated scam that targets businesses who frequently work with foreign suppliers or do money wire transfers. One of the most common schemes used by BEC attackers involves gaining access to a company’s network through a spear phishing attack. The attacker creates a domain similar to the company they're targeting, or spoofs their email to scam users into releasing personal account information for money transfers.
+Business email compromise (BEC) is a sophisticated scam that targets businesses who frequently work with foreign suppliers or do money wire transfers. One of the most common schemes used by BEC attackers involves gaining access to a company's network through a spear phishing attack. The attacker creates a domain similar to the company they're targeting, or spoofs their email to scam users into releasing personal account information for money transfers.
 
 ## More information about phishing attacks
 
-For information on the latest phishing attacks, techniques, and trends, you can read these entries on the [Microsoft Security blog](https://www.microsoft.com/security/blog/product/windows/):
+For information on the latest phishing attacks, techniques, and trends, you can read these entries on the [Microsoft Security blog](https://www.microsoft.com/security/blog/):
 
 - [Phishers unleash simple but effective social engineering techniques using PDF attachments](https://cloudblogs.microsoft.com/microsoftsecure/2017/01/26/phishers-unleash-simple-but-effective-social-engineering-techniques-using-pdf-attachments/?source=mmpc)
 - [Tax themed phishing and malware attacks proliferate during the tax filing season](https://cloudblogs.microsoft.com/microsoftsecure/2017/03/20/tax-themed-phishing-and-malware-attacks-proliferate-during-the-tax-filing-season/?source=mmpc)

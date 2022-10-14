@@ -1,22 +1,22 @@
 ---
-title: Use a prebuilt model to extract info from invoices or receipts in Microsoft SharePoint Syntex
+title: Use a prebuilt model to extract info from invoices or receipts in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create and configure a prebuilt model in SharePoint Syntex.
+description: Learn how to create and configure a prebuilt model in Microsoft Syntex.
 
 ---
 
-# Use a prebuilt model to extract info from invoices or receipts in Microsoft SharePoint Syntex
+# Use a prebuilt model to extract info from invoices or receipts in Microsoft Syntex
 
 Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization. 
 
@@ -30,7 +30,7 @@ Additional prebuilt models will be available in future releases.
 
 ## Create a prebuilt model
 
-Follow these steps to create a prebuilt model to classify documents in SharePoint Syntex.
+Follow these steps to create a prebuilt model to classify documents in Syntex.
 
 1. From the **Models** page, select **Create a model**.
 
@@ -126,9 +126,7 @@ To rename an extractor from the **Extractors** panel:
 
 - If you're ready to apply the model to a library, in the document area, select **Next**. On the **Add to library** panel, choose the library to which you want to add the model, and then select **Add**.
 
-> [!TIP]
-> You can change the view in your document library to fit your needs or preferences. For more information, see [Change the view in a document library](apply-a-model.md#change-the-view-in-a-document-library).
+## Change the view in a document library
 
-## See also
+[!INCLUDE [Change the view in a document library](../includes/change-library-view.md)]
 
-[Apply a document understanding model](apply-a-model.md)

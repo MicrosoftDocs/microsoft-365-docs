@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- scotvorg 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -22,17 +23,17 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "The method you use to unassign product licenses depends on whether you unassign licenses from specific users or from a specific product."
-ms.date: 09/16/2021
+ms.date: 07/12/2022
 ---
 
-# Unassign licenses from users
+# Unassign Microsoft 365 licenses from users
 
 You can unassign licenses from users on either the **Active users** page, or on the **Licenses** page. The method you use depends on whether you want to unassign product licenses from specific users or unassign users licenses from a specific product.
 
 > [!NOTE]
-> 
+>
 > - As an admin, you can't assign or unassign licenses for a self-service purchase subscription bought by a user in your organization. You can [take over a self-service purchase subscription](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription), and then assign or unassign licenses.
-> 
+>
 > - For some subscriptions, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, turn off recurring billing to cancel the subscription at the end of its term.
 
 ## Before you begin
@@ -43,7 +44,9 @@ You can unassign licenses from users on either the **Active users** page, or on 
 
 ## Use the Licenses page to unassign licenses
 
-When you use the **Licenses** page to unassign licenses, you unassign licenses for a specific product for up to 20 users.
+The **Licenses** page lets you assign or unassign licenses for up to 20 users at a time. The page shows the products you own, the number of available licenses for each product, and the number of assigned licenses out of the total licenses available.
+
+The **Licenses** page shows an aggregate total of licenses for all subscriptions for the same product name. For example, you might have one subscription for Microsoft 365 Business Premium that has 5 licenses, and another subscription that has 8 licenses for the same product. The **Licenses** page shows that you have a total of 13 licenses for Microsoft 365 Business Premium across all your subscriptions. This is different from what you see on the **Your products** page, which displays a row for each subscription you own, even if they are for the same product.
 
 ::: moniker range="o365-worldwide"
 
@@ -57,9 +60,9 @@ When you use the **Licenses** page to unassign licenses, you unassign licenses f
 
 ::: moniker-end
 
-2. Select the product for which you want to unassign licenses.
+2. Select a product.
 
-3. Select the users for which you want to unassign licenses.
+3. Select the check boxes of the users for whom you want to unassign licenses.
 
 4. Select **Unassign licenses**.
 
@@ -113,16 +116,16 @@ When you use the **Active users** page to unassign licenses, you unassign produc
 
 ## What happens to a user's data when you remove their license?
 
-- When a license is removed from a user, Exchange online data that is associated with that account is held for 30 days. After the 30-day grace period, the data is deleted and can't be recovered.
+- When a license is removed from a user, Exchange Online data that is associated with that account is held for 30 days. After the 30-day grace period, the data is deleted and can't be recovered. However, it is linked to the retention policy, and the content that matches retention labels is retained for discovery.
 - Files saved in OneDrive for Business aren't deleted unless the user is deleted from the Microsoft 365 admin center or is removed through Active Directory synchronization. For more information, see [OneDrive retention and deletion](/onedrive/retention-and-deletion).
-- When the license is removed, the user's mailbox is no longer searchable by using an eDiscovery tool such as Content Search or Advanced eDiscovery. For more information, see "Searching disconnected or de-licensed mailboxes" in [Content Search in Microsoft 365](../../compliance/content-search.md).
+- When the license is removed, the user's mailbox is no longer searchable by using an eDiscovery tool such as Content Search or eDiscovery (Premium). For more information, see "Searching disconnected or de-licensed mailboxes" in [Content Search in Microsoft 365](../../compliance/content-search.md).
 - If you have an Enterprise subscription, like Office 365 Enterprise E3, Exchange Online lets you preserve the mailbox data of a deleted user account by using [inactive mailboxes](../../compliance/inactive-mailboxes-in-office-365.md). For more information, see [Create and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
 - To learn how to block a user's access to Microsoft 365 data after their license is removed, and how to get access to the data afterwards, see [Remove a former employee](../add-users/remove-former-employee.md).
 - If you remove a user's license and they still have Office apps installed, they see [Unlicensed Product and activation errors in Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) when they use Office apps.
 
 ## Next steps
 
-If you’re not going to [reassign the unused licenses to other users](../../managed-desktop/get-started/assign-licenses.md), consider [removing the licenses from your subscription](../../commerce/licenses/buy-licenses.md) so that you’re not paying for more licenses than you need.
+If you’re not going to [reassign the unused licenses to other users](assign-licenses-to-users.md), consider [removing the licenses from your subscription](../../commerce/licenses/buy-licenses.md) so that you’re not paying for more licenses than you need.
 
 ## Related content
 

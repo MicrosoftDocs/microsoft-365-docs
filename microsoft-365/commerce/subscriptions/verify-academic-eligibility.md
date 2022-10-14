@@ -1,5 +1,5 @@
 ---
-title: "Verify academic eligibility for Microsoft 365 Education subscriptions"
+title: "Verify eligibility for Microsoft 365 Education subscriptions"
 f1.keywords:
 - CSH
 - FWLink-2135711
@@ -9,9 +9,10 @@ manager: scotv
 ms.reviewer: pablom, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 

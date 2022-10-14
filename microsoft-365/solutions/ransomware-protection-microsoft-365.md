@@ -7,9 +7,10 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - ransomware
@@ -102,7 +103,7 @@ For additional details, see [Dealing with data corruption in Microsoft 365](/com
 
 You can prevent a ransomware attacker from copying files outside your tenant with:
 
-- [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) policies
+- [Microsoft Purview Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) policies
 
     Detect, warn, and block risky, inadvertent, or inappropriate sharing of data containing:
 
@@ -201,7 +202,7 @@ For Windows 11 or 10 devices:
 | Capability or feature | Description | Helps... | Licensing |
 |:-------|:-----|:-------|:-------|
 | Controlled folder access | Protects your data by checking apps against a list of known, trusted apps. | Prevent files from being altered or encrypted by ransomware. | Microsoft 365 E3 or Microsoft 365 E5 |
-| Microsoft Information Protection | Enables sensitivity labels to be applied to information that is ransomable | Prevent use of exfiltrated information. | Microsoft 365 E3 or Microsoft 365 E5 |
+| Microsoft Purview Information Protection | Enables sensitivity labels to be applied to information that is ransomable | Prevent use of exfiltrated information. | Microsoft 365 E3 or Microsoft 365 E5 |
 | Data loss prevention (DLP) | Protects sensitive data and reduces risk by preventing users from sharing it inappropriately. | Prevent data exfiltration. | Microsoft 365 E3 or Microsoft 365 E5 |
 | Defender for Cloud Apps | A cloud access security broker for discovery, investigation, and governance. | Detect lateral movement and prevent data exfiltration. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 |

@@ -2,13 +2,14 @@
 title: "Using BGP communities in ExpressRoute for Office 365 scenarios"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 6/26/2018
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Ent_O365
 - SPO_Content
 f1.keywords:

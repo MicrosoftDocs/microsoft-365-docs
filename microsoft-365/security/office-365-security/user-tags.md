@@ -12,14 +12,20 @@ ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 ms.custom: 
 description: Admins can learn how to identify specific groups of users with user tags in Microsoft Defender for Office 365 Plan 2. Tag filtering is available across alerts, reports, and investigations in Microsoft Defender for Office 365 to quickly identify the tagged users.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # User tags in Microsoft Defender for Office 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Applies to:**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 User tags are identifiers for specific groups of users in [Microsoft Defender for Office 365](defender-for-office-365.md). There are two types of user tags:
 
@@ -34,10 +40,13 @@ If your organization has Defender for Office 365 Plan 2 (included in your subscr
 After you apply system tags or custom tags to users, you can use those tags as filters in alerts, reports, and investigations:
 
 - [Alerts](alerts.md)
-- [Custom alert policies](../../compliance/alert-policies.md#viewing-alerts)
+- [Custom alert policies](../../compliance/alert-policies.md#view-alerts)
 - [Threat Explorer and real-time detections](threat-explorer.md)
+- [Compromised user report](view-email-security-reports.md#compromised-users-report)
 - [Email entity page](mdo-email-entity-page.md#other-innovations)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
+- [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report)
+- [Attack simulation](attack-simulation-training.md#target-users)
 - [Campaign Views](campaigns.md)
 - [Admin and user submissions](admin-submission.md)
 - [Quarantine](quarantine.md)
@@ -67,7 +76,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 - You can also manage and monitor priority accounts in the Microsoft 365 admin center. For instructions, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
 
-- For information about securing _privileged accounts_ (admin accounts), see [this topic](/azure/architecture/framework/security/critical-impact-accounts).
+- For information about securing _privileged accounts_ (admin accounts), see [this topic](/security/compass/critical-impact-accounts).
 
 ## Use the Microsoft 365 Defender portal to create user tags
 
@@ -137,3 +146,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
 2. On the **User tags** page, select the user tag from the list, and then click ![Delete tag icon.](../../media/m365-cc-sc-delete-icon.png) **Delete tag**.
 
 3. Read the warning in the confirmation dialog that appears, and then click **Yes, remove**.
+
+## More information
+
+[Configure and review priority accounts in Microsoft Defender for Office 365](configure-review-priority-account.md)

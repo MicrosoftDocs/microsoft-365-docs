@@ -1,8 +1,8 @@
----
+﻿---
 title: Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux
 description: Troubleshoot performance issues in Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, performance
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux
@@ -92,7 +93,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
     To collect current statistics, run:
 
     ```bash
-    mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
+    mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
     ```
 
     > [!NOTE]
@@ -135,15 +136,15 @@ The following steps can be used to troubleshoot and mitigate these issues:
     ```Output
     ... > python ~/repo/mdatp-xplat/linux/diagnostic/high_cpu_parser.py <~Downloads/output.json | head -n 10
     27432 None 76703
-    73467 actool     1249
+    73467 actool    1249
     73914 xcodebuild 1081
     73873 bash 1050
     27475 None 836
-    1    launchd    407
-    73468 ibtool     344
-    549  telemetryd_v1   325
+    1    launchd     407
+    73468 ibtool     344
+    549  telemetryd_v1   325
     4764 None 228
-    125  CrashPlanService 164
+    125  CrashPlanService 164
     ```
 
     To improve the performance of Defender for Endpoint on Linux, locate the one with the highest number under the `Total files scanned` row and add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint on Linux](linux-exclusions.md).
@@ -157,100 +158,20 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
 ## Troubleshoot performance issues using Microsoft Defender for Endpoint Client Analyzer
 
+
 **Applies to:**
 - Performance issues of all available Defender for Endpoint components such as AV and EDR  
 
-The Microsoft Defender for Endpoint Client Analyzer (MDECA) can collect traces, logs, and diagnostic information in order to troubleshoot performance issues on [onboarded devices](/microsoft-365/security/defender-endpoint/onboard-configure) on Linux.
+The Microsoft Defender for Endpoint Client Analyzer (MDECA) can collect traces, logs, and diagnostic information in order to troubleshoot performance issues on [onboarded devices](/microsoft-365/security/defender-endpoint/onboard-configure) on macOS.
 
 > [!NOTE]
-> The Microsoft Defender for Endpoint Client Analyzer tool is regularly used by Microsoft Customer Support Services (CSS) to collect information such as (but not limited to) IP addresses, PC names that will help troubleshoot issues you may be experiencing with Microsoft Defender for Endpoint. For more information about our privacy statement, see [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
+>- The Microsoft Defender for Endpoint Client Analyzer tool is regularly used by Microsoft Customer Support Services (CSS) to collect information such as (but not limited to) IP addresses, PC names that will help troubleshoot issues you may be experiencing with Microsoft Defender for Endpoint. For more information about our privacy statement, see [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
+>- As a general best practice, it is recommended to update the [ Microsoft Defender for Endpoint agent to latest available version](mac-whatsnew.md)  and confirming that the issue still persists before investigating further. 
 
-### Requirements
+To run the client analyzer for troubleshooting performance issues, see [Run the client analyzer on macOS and Linux](run-analyzer-macos-linux.md).
 
-- The client analyzer can run on supported distros of [Linux](microsoft-defender-endpoint-linux.md#system-requirements) either before or after onboarding to Microsoft Defender for Endpoint.
-- Download client analyzer for Linux from the latest preview edition available for download here: <https://aka.ms/XMDEClientAnalyzer>
-- If your device is behind a proxy, then you can simply pass the proxy server as an environment variable to the mde_support_tool.sh script. For example: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
-
-### Run the client analyzer on Linux
-
-Open a terminal or SSH into the relevant machine and run the following commands:
-
-1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer`
-2. `unzip -q XMDEClientAnalyzer.zip`
-3. `cd XMDEClientAnalyzer`
-4. `chmod +x mde_support_tool.sh`
-5. Run as non-root use to install required pip and lxml which components: `./mde_support_tool.sh`
-6. To collect actual diagnostic package and generate the result archive file run again as root: `./mde_support_tool.sh -d`
-   Example:
-
-   ![Image of command line example.](images/4ca188f6c457e335abe3c9ad3eddda26.png)
-
-> [!NOTE]
-> - The analyzer requires 'lxml' to produce the result output. If not installed, the analyzer will try to fetch it from the official repository for python packages below: <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
-> 
-> - In addition, the tool currently requires Python version 3 or later to be installed.
->
-> - If you are running on a machine that cannot use Python 3 or fetch the lxml component, then you can download a binary based version of the analyzer that does not have any of the requirements: [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary)
-
-### Additional syntax help:
-
-**-h** \# Help<br>
-\# Show help message
-
-**performance** \# Performance<br>
-\# Collects extensive tracing for analysis of a performance issue that can be reproduced on demand. Using `--length=<seconds>` to specify the duration of the benchmark.
-
-**-o** \# Output<br>
-\# Specify the destination path for the result file
-
-**-nz** \# No-Zip<br>
-\# If set, a directory will be created instead of a resulting archive file
-
-**-f** \# Force<br>
-\# Overwrite if output already exists in destination path
-
-### Result package contents
-
-- report.html
-
-  Description: The main HTML output file that will contain the findings and guidance that the analyzer script run on the machine can produce.
-
-- mde_diagnostic.zip
-
-  Description: Same diagnostic output that gets generated when running *mdatp diagnostic create* on [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
-
-- mde.xml
-
-  Description: XML output that is generated while running and is used to build the html report file.
-
-- Processes_information.txt
-
-  Description: contains the details of the running Microsoft Defender for Endpoint related processes on the system.
-
-- Log.txt
-
-  Description: contains the same log messages written on screen during the data collection.
-
-- Health.txt
-
-  Description: The same basic health output that is shown when running *mdatp health* command.
-
-- Events.xml
-
-  Description: Additional XML file used by the analyzer when building the HTML report.
-
-- Auditd_info.txt
-
-  Description: details on auditd service and related components for [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events) OS
-
-- perf_benchmark.tar.gz
-
-  Description: The performance test reports. You will see this only if you are using the performance parameter.
-
-> [!NOTE]
-> In case after following the above steps the performance problem persists, please contact customer support for further instructions and mitigation.
-
-
+>[!NOTE]
+>In case after following the above steps, the performance problem persists, please contact customer support for further instructions and mitigation. 
 
 ## See also
 

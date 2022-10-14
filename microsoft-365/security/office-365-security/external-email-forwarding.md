@@ -1,33 +1,35 @@
 ---
 title: Configuring and controlling external email forwarding in Microsoft 365.
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 11/17/2021
+ms.date: 08/18/2022
 audience: ITPro
 ms.topic: overview
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
-ms.assetid: 
-ms.custom: 
-  - seo-marvel-apr2020
+ms.assetid:
+ms.custom:
+- seo-marvel-apr2020
+- adminvideo
 description: This article covers topics including external email forwarding, Automatic forwarding, 5.7.520 Access Denied messages, disabling external forwarding, 'Your administrator has disabled external forwarding' messages, as well as outbound anti-spam policy.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Control automatic external email forwarding in Microsoft 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-As an admin, you might have company requirements to restrict or control automatically forwarded messages to external recipients (recipients outside of your organization). Email forwarding can be a useful, but can also pose a security risk due to the potential disclosure of information. Attackers might use this information to attack your organization or partners.
+As an admin, you might have company requirements to restrict or control automatically forwarded messages to external recipients (recipients outside of your organization). Email forwarding can be useful, but can also pose a security risk due to the potential disclosure of information. Attackers might use this information to attack your organization or partners.
 
 The following types of automatic forwarding are available in Microsoft 365:
 
@@ -39,7 +41,7 @@ The following types of automatic forwarding are available in Microsoft 365:
 
 You can use outbound spam filter policies to control automatic forwarding to external recipients. Three settings are available:
 
-- **Automatic - System-controlled**: This is the default setting. This setting is now the same as **Off**. When this setting was originally introduced, it was equivalent to **On**. Over time, thanks to the principles of [secure by default](secure-by-default.md), this setting was gradually changed to **Off** for all customers. For more information, see [this blog post](https://techcommunity.microsoft.com/t5/exchange-team-blog/all-you-need-to-know-about-automatic-email-forwarding-in/ba-p/2074888). 
+- **Automatic - System-controlled**: This is the default setting. This setting is now the same as **Off**. When this setting was originally introduced, it was equivalent to **On**. Over time, thanks to the principles of [secure by default](secure-by-default.md), this setting was gradually changed to **Off** for all customers. For more information, see [this blog post](https://techcommunity.microsoft.com/t5/exchange-team-blog/all-you-need-to-know-about-automatic-email-forwarding-in/ba-p/2074888).
 - **On**: Automatic external forwarding is allowed and not restricted.
 - **Off**: Automatic external forwarding is disabled and will result in a non-delivery report (also known as an NDR or bounce message) to the sender.
 
@@ -48,9 +50,7 @@ For instructions on how to configure these settings, see [Configure outbound spa
 > [!NOTE]
 >
 > - Disabling automatic forwarding disables any Inbox rules (users) or mailbox forwarding (admins) that redirect messages to external addresses.
->
 > - Automatic forwarding of messages between internal users isn't affected by the settings in outbound spam filter policies.
-
 
 ## How the outbound spam filter policy settings work with other automatic email forwarding controls
 
@@ -86,7 +86,7 @@ The following information is required to create the mail flow rule in the Exchan
 - (Optional) **Do the following** (action): You can configure an optional action. For example, you can use the action **Modify the message properties** \> **set a message header**, with the header name **X-Forwarded** and the value **True**. But, configuring an action is not required.
 - Set **Audit this rue with severity level** to the value **Low**, **Medium**, or **High**. This setting allows you to use the [Exchange transport rule report](view-email-security-reports.md#exchange-transport-rule-report) to get details of users that are forwarding.
 
-![Mail flow rule properties in the EAC for a rule to identify forwarded messages.](../../media/mail-flow-rule-for-forwarded-messages.png)
+:::image type="content" source="../../media/mail-flow-rule-for-forwarded-messages.png" alt-text="The Mail flow rule properties in the EAC for a rule to identify forwarded messages" lightbox="../../media/mail-flow-rule-for-forwarded-messages.png":::
 
 ## Blocked email forwarding messages
 

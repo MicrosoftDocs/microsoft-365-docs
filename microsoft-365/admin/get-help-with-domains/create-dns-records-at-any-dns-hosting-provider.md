@@ -7,9 +7,11 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -18,6 +20,7 @@ search.appverid:
 - MET150
 description: "Connect a domain at any DNS hosting provider to Microsoft 365 by verifying your domain and updating the DNS records in your registrar’s account."
 ms.custom:
+- VSBFY23
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -32,6 +35,8 @@ If you purchased a domain from a third-party hosting provider, you can connect i
 At the end of these steps, your domain will stay registered with the host that you purchased the domain from, but Microsoft 365 can use it for your email addresses (like user@yourdomain.com) and other services.
 
 If you don't add a domain, people in your organization will use the onmicrosoft.com domain for their email addresses until you do. It's important to add your domain before you add users, so you don't have to set them up twice.
+
+If you have previously created users and would like to change their domain, follow the steps described in [Change your email address to use your custom domain using the Microsoft 365 admin center](/microsoft-365/admin/email/change-email-address#change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center).
 
 [Check the Domains FAQ](../setup/domains-faq.yml) if you don't find what you're looking for below.
 
@@ -92,14 +97,16 @@ You'll be adding several different types of DNS records depending on the service
 
 You'll get the information for the MX record from the admin center domain setup wizard.
 
-On your hosting provider's website, add a new MX record.
-Make sure that the fields are set to the following values:
+On your hosting provider's website, add a new MX record. Make sure that the fields are set to the following values:
 
 - Record Type: `MX`
 - Priority: Set to the highest value available, typically `0`.
 - Host Name: `@`
 - Points to address: Copy the value from the admin center and paste it here.
-- TTL: `3600` (or your provider default)
+- TTL: `3600`
+
+> [!NOTE]
+> Exchange Online only supports TTL values less than 6 hours (21,600 seconds).
 
 Save the record, and then remove any other MX records.
 

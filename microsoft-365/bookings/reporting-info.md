@@ -1,5 +1,5 @@
 ---
-title: "Reporting information for Microsoft Bookings"
+title: "View Bookings calendar information"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: "Learn how you can see a 4 month view of your Bookings activity"
 ---
@@ -56,3 +58,4 @@ The improved report now contains the following fields.
 - **Text Notifications Enabled**   Whether customers can receive SMS text-related notifications.
 - **Custom Fields**   All the questions and answers related to a single booking are combined in this field.
 - **Booking ID**   This is helpful to identify the same bookings of a group service.
+- **Tracking data**   Track the metrics for the campaign IDs you're using in your marketing campaigns.

@@ -1,14 +1,16 @@
 ---
-title: "Microsoft 365 Lighthouse Device compliance page overview"
+title: "Overview of the Device compliance page in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -18,9 +20,9 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about the Device compliance page."
 ---
 
-# Microsoft 365 Lighthouse Device compliance page overview
+# Overview of the Device compliance page in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse lets you view insights and information related to Intune device compliance for all your customer tenants by selecting **Devices** in the left navigation pane to open the Device compliance page. From this page, you can get an overview of compliance status across tenants, view a list of devices for each tenant, and get status reports on compliance policies and settings.
+Microsoft 365 Lighthouse lets you view insights and information related to Intune device compliance for all your customer tenants by selecting **Devices** > **Device compliance** in the left navigation pane to open the Device compliance page. From this page, you can get an overview of compliance status across tenants, view a list of devices for each tenant, and get status reports on compliance policies and settings.
 
 ## Overview tab  
   
@@ -87,5 +89,5 @@ The Settings tab also includes the following options:
 
 ## Related content
 
-[Windows 365 (Cloud PCs) page overview](m365-lighthouse-win365-page-overview.md) (article)\
+[Overview of the Windows 365 (Cloud PCs) page in Microsoft 365 Lighthouse](m365-lighthouse-win365-page-overview.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

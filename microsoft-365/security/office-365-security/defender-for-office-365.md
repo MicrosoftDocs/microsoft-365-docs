@@ -1,6 +1,5 @@
 ---
 title: Microsoft Defender for Office 365
-  - CSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -14,18 +13,18 @@ search.appverid:
   - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
   - seo-marvel-apr2020
   - intro-overview
 description: Microsoft Defender for Office 365 includes Safe Attachments, Safe Links, advanced anti-phishing tools, reporting tools and threat intelligence capabilities.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 # Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -83,11 +82,15 @@ The following table summarizes what's included in each plan.
 
 - Microsoft Defender for Office 365 Plan 1 and Defender for Office 365 Plan 2 are each available as an add-on for certain subscriptions. To learn more, here's another link [Feature availability across Microsoft Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-- The [Safe Documents](safe-docs.md) feature is only available to users with the Microsoft 365 E5 or Microsoft 365 E5 Security licenses (not included in Microsoft Defender for Office 365 plans).
+- The [Safe Documents](safe-docs.md) feature is only available to users with the Microsoft 365 A5 or Microsoft 365 E5 Security licenses (not included in Microsoft Defender for Office 365 plans).
 
 - If your current subscription doesn't include Microsoft Defender for Office 365 and you want it, [contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html), and find out how Microsoft Defender for Office 365 can work for in your organization.
 
-- Microsoft Defender for Office 365 P2 customers have access to **Microsoft 365 Defender integration** to efficiently detect, review, and respond to incidents and alerts.
+- Microsoft Defender for Office 365 P2 customers have access to **Microsoft 365 Defender integration** to efficiently detect, review, and respond to incidents and alerts. 
+
+Watch this short video to learn more about Microsoft Defender for Office 365 P2 capabilities that have moved into the Microsoft 365 Defender portal.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfx]
+
 
 ## Configure Microsoft Defender for Office 365 policies
 
@@ -143,7 +146,7 @@ To access Microsoft Defender for Office 365 features, you must be assigned an ap
 |global administrator (Organization Management)|You can assign this role in Azure Active Directory or in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).|
 |Security Administrator|You can assign this role in Azure Active Directory or in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).|
 |Organization Management in Exchange Online|[Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
-|Search and Purge|This role is available only in the Microsoft 365 Defender portal or the Microsoft 365 compliance center. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md) and [Permissions in the Microsoft 365 compliance center](../../compliance/microsoft-365-compliance-center-permissions.md).|
+|Search and Purge|This role is available only in the Microsoft 365 Defender portal or the Microsoft Purview compliance portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md) and [Permissions in the Microsoft Purview compliance portal](../../compliance/microsoft-365-compliance-center-permissions.md).|
 |||
 
 ## Get Microsoft Defender for Office 365

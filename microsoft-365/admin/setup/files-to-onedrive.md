@@ -7,12 +7,15 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 search.appverid:
@@ -21,15 +24,17 @@ search.appverid:
 - MOE150
 description: "Learn how to move your files to OneDrive."
 ---
-# Move files to OneDrive
+# Move files to OneDrive for Business
+
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 ## Watch: Move your files to OneDrive for Business
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198202).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341?autoplay=false]
 
 After you sign up for Microsoft 365 Business Premium, you&#39;ll want to copy your existing work files to OneDrive for Business. OneDrive is a good place to store personal work files or sensitive business files that you want to control access to.
-
-## Try it!
 
 1. From Windows, select the  **Start** button.
 2. Search for OneDrive, and select it.

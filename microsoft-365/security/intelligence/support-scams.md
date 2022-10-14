@@ -3,7 +3,7 @@ title: Tech Support Scams
 ms.reviewer: 
 description: Microsoft security software can protect you from tech support scams that claims to scan for malware or viruses and then shows you fake detections and warnings.
 keywords: security, malware, tech support, scam, protection, trick, spoof, fake, error messages, report, rogue security software, fake, antivirus, fake software, rogue, threats, fee, removal fee, upgrade, pay for removal, install full version, trial, lots of threats, scanner, scan, clean, computer, security, program, XP home security, fake microsoft, activate, activate scan, activate antivirus, warnings, pop-ups, security warnings, security pop-ups tech support scams, fake Microsoft error notification, fake virus alert, fake product expiration, fake Windows activation, scam web pages, scam phone numbers, telephone numbers, MMPC, WDSI, Microsoft Malware Protection Center, tech support scam numbers
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,10 +11,11 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
 ---
 # Tech support scams
 
@@ -26,7 +27,7 @@ Scammers may call you directly on your phone and pretend to be representatives o
 
 Scammers might also initiate contact by displaying fake error messages on websites you visit, displaying support numbers and enticing you to call. They can also put your browser on full screen and display pop-up messages that won't go away, essentially locking your browser. These fake error messages aim to trick you into calling an indicated technical support hotline. Note that Microsoft error and warning messages never include phone numbers.
 
-When you engage with the scammers, they can offer fake solutions for your “problems” and ask for payment in the form of a one-time fee or subscription to a purported support service.
+When you engage with the scammers, they can offer fake solutions for your "problems" and ask for payment in the form of a one-time fee or subscription to a purported support service.
 
 **For more information, view [known tech support scam numbers and popular web scams](https://support.microsoft.com/help/4013405/windows-protect-from-tech-support-scams).**
 
@@ -40,9 +41,9 @@ It is also important to keep the following in mind:
 
 * Any communication with Microsoft has to be initiated by you.
 
-* Don’t call the number in the pop-ups. Microsoft’s error and warning messages never include a phone number.
+* Don't call the number in the pop-ups. Microsoft's error and warning messages never include a phone number.
 
-* Download software only from official vendor websites or the Microsoft Store. Be wary of downloading software from third-party sites, as some of them might have been modified without the author’s knowledge to bundle support scam malware and other threats.
+* Download software only from official vendor websites or the Microsoft Store. Be wary of downloading software from third-party sites, as some of them might have been modified without the author's knowledge to bundle support scam malware and other threats.
 
 * Use [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) when browsing the internet. It blocks known support scam sites using Windows Defender SmartScreen (which is also used by Internet Explorer). Furthermore, Microsoft Edge can stop pop-up dialogue loops used by these sites.
 

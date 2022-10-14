@@ -1,7 +1,7 @@
 ---
 title: Plan for insider risk management
 description: Learn how to plan for using insider risk management policies in your organization.
-keywords: Microsoft 365, insider risk, risk management, compliance
+keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -11,19 +11,30 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Plan for insider risk management
 
-Before getting started with [insider risk management](insider-risk-management.md) in your organization, there are important planning activities and considerations that should be reviewed by your information technology and compliance management teams. Thoroughly understanding and planning for deployment in the following areas will help ensure that your implementation and use of insider risk management features goes smoothly and is aligned with the best practices for the solution.
+>[!IMPORTANT]
+>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
+
+Before getting started with [insider risk management](insider-risk-management.md) in your organization, there are important planning activities and considerations that should be reviewed by your information technology and compliance management teams. Thoroughly understanding and planning for deployment in the following areas will help ensure that your implementation and use of insider risk management features goes smoothly and is aligned with the best practices for the solution. 
+
+For more information and an overview of the planning process to address risky activities in your organization, see [Starting an insider risk management program](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
 
 Watch the video below to learn how the insider risk management workflow can help your organization prevent, detect, and contain risks while prioritizing your organization values, culture, and user experience:
 <br>
 <br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
+Check out the [Microsoft Mechanics video](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) on how insider risk management and communication compliance work together to help minimize data risks from users in your organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Work with stakeholders in your organization
 
@@ -65,8 +76,8 @@ Members of the following roles can assign users to insider risk management role 
 
 - Azure Active Directory *Global Administrator*
 - Azure Active Directory *Compliance Administrator*
-- Microsoft 365 compliance center *Organization Management*
-- Microsoft 365 compliance center *Compliance Administrator*
+- Microsoft Purview compliance portal *Organization Management*
+- Microsoft Purview compliance portal *Compliance Administrator*
 
 ## Understand requirements and dependencies
 
@@ -82,7 +93,7 @@ If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try i
 **Policy template requirements:** Depending on the policy template you choose, there are requirements that you need to understand and plan for prior to configuring insider risk management in your organization:
 
 - When using the **Data theft by departing users** template, you must configure a Microsoft 365 HR connector to periodically import resignation and termination date information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization.
-- When using **Data leaks** templates, you must configure at least one Data Loss Prevention (DLP) policy to define sensitive information in your organization and to receive insider risk alerts for High Severity DLP policy alerts. See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) article for step-by-step guidance to configure DLP policies for your organization.
+- When using **Data leaks** templates, you must configure at least one Microsoft Purview Data Loss Prevention (DLP) policy to define sensitive information in your organization and to receive insider risk alerts for High Severity DLP policy alerts. See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) article for step-by-step guidance to configure DLP policies for your organization.
 - When using **Security policy violation** templates, you must enable Microsoft Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. For step-by-step guidance to enable Defender for Endpoint integration with insider risk management, see [Configure advanced features in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features).
 - When using **Disgruntled user** templates, you must configure a Microsoft 365 HR connector to periodically import performance or demotion status information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization.
 

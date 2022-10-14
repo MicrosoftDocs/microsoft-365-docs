@@ -5,12 +5,13 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: mijeffer, pablom
+ms.reviewer: prlachhw, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration 
+ms.service: microsoft-365-business 
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
@@ -20,7 +21,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Admins can learn how to manage self-service purchases made by users in their organization."
-ms.date: 03/26/2021
+ms.date: 05/24/2022
 ---
 
 # Manage self-service purchases (Admin)
@@ -78,6 +79,9 @@ You can use the **MSCommerce** PowerShell module to:
 - View the default state of the **AllowSelfServicePurchase** parameter value—whether it's enabled or disabled by product
 - View a list of applicable products and whether self-service purchase is enabled or disabled
 - View or modify the current setting for a specific product to either enable or disable it
+
+> [!IMPORTANT]
+> When you use the **AllowSelfServicePurchase** policy, it enables or disables both self-service purchases and self-service trials. For a list of the products available for self-service purchase, see [View a list of self-service purchase products and their status](allowselfservicepurchase-powershell.md#view-a-list-of-self-service-purchase-products-and-their-status). Only Project and Visio are available for trial subscriptions.
 
 For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
 

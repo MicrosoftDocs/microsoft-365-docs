@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -25,7 +26,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow the steps in this article to give another employee access to the former employee's OneDrive and Outlook data."
+description: "Follow the steps in this article to access a former employee's OneDrive and Outlook data, back it up, and choose whether to give access to another employee."
 ---
 
 # Step 5 - Give another employee access to OneDrive and Outlook data

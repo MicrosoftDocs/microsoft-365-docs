@@ -10,13 +10,15 @@ manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - commerce_subscriptions
+- empty
 search.appverid: MET150 
 description: "Learn how to upgrade from Microsoft Teams Free to a new Microsoft 365 for business subscription."
 ROBOTS: NOINDEX, NOFOLLOW
@@ -29,7 +31,7 @@ ms.date: 07/08/2020
 
 ## Before you begin
 
-You must be a Microsoft Teams Free admin to upgrade a Microsoft Teams Free organization. You're automatically an admin if you created the Microsoft Teams Free organization.
+You must be a Microsoft Teams Free admin to upgrade a Microsoft Teams Free organization. You're automatically an admin if you created the Microsoft Teams Free organization.
 
 ## Step 1: Get your work or school account ID
 

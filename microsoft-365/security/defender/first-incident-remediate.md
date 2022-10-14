@@ -3,7 +3,8 @@ title: Step 2. Remediate your first incident
 description: How to get started in remediating your first incident in Microsoft 365 Defender.
 keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +16,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - m365solution-firstincident
+  - highpri
+  - tier1
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 # Step 2. Remediate your first incident
 
@@ -37,12 +39,12 @@ Microsoft 365 Defender offers several remediation actions that analysts can manu
 ## Actions on devices
 
 - **Isolate the device** - This activity immediately blocks all network traffic (internet and internal) to minimize the spread of malware and allow analysts to continue analysis without a malicious actor being able to continue an attack. The only connection allowed is to the Microsoft Defender for Identity service cloud so Microsoft Defender for Identity can continue to monitor the device. 
-- **Restrict app execution** - To restrict an application from running, a code integrity policy is applied that only allows files to run if they are signed by a Microsoft-issued certificate. This method of restriction can help prevent an attacker from controlling compromised devices and performing further malicious activities.
+- **Restrict app execution** - To restrict an application from running, a code integrity policy is applied that only allows files to run if they're signed by a Microsoft-issued certificate. This method of restriction can help prevent an attacker from controlling compromised devices and performing further malicious activities.
 - **Run Antivirus scan** - A Microsoft Defender Antivirus scan can run alongside other antivirus solutions, whether Defender Antivirus is the active antivirus solution or not. If another antivirus vendor product is the primary endpoint protection solution, you can run Defender Antivirus in Passive mode.
 - **Initiate automated investigation** - You can start a new general purpose automated investigation on the device. While an investigation is running, any other alert generated from the device will be added to an ongoing automated investigation until that investigation is completed. In addition, if the same threat is seen on other devices, those devices are added to the investigation.
 - **Initiate live response** - Live response is a capability that gives you instantaneous access to a device by using a remote shell connection. This gives you the ability to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time. Live response is designed to enhance investigations by enabling you to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats.
 - **Collect investigation package** - As part of the investigation or response process, you can collect an investigation package from a device. By collecting the investigation package, you can identify the current state of the device and further understand the tools and techniques used by the attacker. 
-- **Consult a threat expert** (available in both Actions on devices and files) - You can consult a Microsoft threat expert for more insights regarding potentially compromised devices or devices that are already compromised. Microsoft threat experts can be engaged directly from within Microsoft 365 Defender for a timely and accurate response. 
+- **Ask Defender Experts** (available in both Actions on devices and files) - You can consult a Microsoft Defender expert for more insights regarding potentially compromised devices or devices that are already compromised. Microsoft Defender experts can be engaged directly from within Microsoft 365 Defender for a timely and accurate response.
 
 ## Actions on files
 
@@ -62,7 +64,7 @@ Continuing the example in [Detect, triage, and analyze incidents](first-incident
 7. Create a custom indicator in Microsoft Defender for Endpoint to block a Tor IP address
 8. Create a governance action in Microsoft Defender for Cloud Apps for this type of alert such as those shown in the following image:
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Example of governance actions in the Microsoft Defender for Cloud Apps portal.":::
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Governance actions in the Microsoft Defender for Cloud Apps portal" lightbox="../../media/first-incident-remediate/first-incident-mcas-governance.png":::
 
 Most of the remediation actions can be applied and tracked in Microsoft 365 Defender.
 
@@ -79,13 +81,11 @@ Playbooks use Power Automate to create custom robotic process automation flows t
 
 Here's an example.
  
-:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Example of a Power Automate custom robotic process automation flow."::: 
+:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="A Power Automate custom robotic process automation flow" lightbox="../../media/first-incident-remediate/first-incident-power-automate.png"::: 
  
 Playbooks can also be created during [post-incident review](first-incident-post.md) to create remediation actions from resolved incidents. 
 
 ## Next step
-
-[![Step 3: Learn how to perform a post-incident review of an incident.](../../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
 
 Learn how to [perform a post-incident review of an incident](first-incident-post.md).
 

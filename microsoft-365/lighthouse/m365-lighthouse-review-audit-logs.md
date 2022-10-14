@@ -1,14 +1,16 @@
 ---
-title: "Review audit logs"
+title: "Review audit logs in Microsoft 365 Lighthouse"
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: vivkuma
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -18,7 +20,7 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to review audit logs."
 ---
 
-# Review audit logs
+# Review audit logs in Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse audit logs record actions that generate a change in Lighthouse or other Microsoft 365 services. Create, edit, delete, assign, and remote actions all create audit events that you can review. By default, auditing is enabled for all customers. It can't be disabled.
 
@@ -57,7 +59,6 @@ The following table lists activities captured within Lighthouse audit logs. The 
 | **apply** or **deploy** | Tenants | Apply a deployment plan | Azure AD, Microsoft Endpoint Manager (MEM) |
 | **assignTag** | Tenants | Apply a tag from a customer | Lighthouse |
 | **changeDeploymentStatus** or **assign** | Tenants | Update action plan status for deployment plan | Lighthouse |
-| **managedTenantOperations** | Tenants | View information on a deployment plan | Azure AD |
 | **offboardTenant** | Tenants | Inactivate a customer | Lighthouse |
 | **resetTenantOnboardingStatus** | Tenants | Reactive a customer | Lighthouse |
 | **tenantTags** | Tenants | Create or delete a tag | Lighthouse |
@@ -68,31 +69,20 @@ The following table lists activities captured within Lighthouse audit logs. The 
 | **confirmUsersCompromised** | Users | Confirm a user is compromised | Azure AD |
 | **dismissUsersRisk** | Users | Dismiss user risk | Azure AD |
 | **resetUserPassword** | Users | Reset password | Azure AD |
-| **getConditionalAccessPolicies** | Users | View CA policies requiring MFA | Azure AD |
-| **getTenantIDToTenantNameMap** | Users | Search for IDs | Azure AD |
-| **getUsers** | Users | Search for users | Azure AD |
-| **getUsersWithoutMfa** | Users | View users not registered for MFA | Azure AD |
-| **getSsprEnabledButNotRegisteredUsers** | Users | View users not registered for SSPR | Azure AD |
 | **setCustomerSecurityDefaultsEnabledStatus** | Users | Enable multifactor authentication (MFA) with security defaults | Azure AD |
-|**getCompliancePolicyInfo** | Devices | View a policy | MEM
-|**getDeviceCompliancePolicyStates** | Devices | View policy states | MEM
-|**getDeviceCompliancePolicySettingStates** | Devices | View non-compliant settings | MEM
-|**getDeviceCompliancePolicySettingStateSummaries** | Devices | View non-compliant devices | MEM
-|**getTenantsDeviceCompliancePolicies** | Devices | Compare policies | MEM
 | **restartDevice** | Devices | Restart | MEM |
 | **syncDevice** | Devices | Sync | MEM |
 | **rebootNow** | Threat management | Reboot | MEM |
 | **reprovision** | Windows 365 | Retry provisioning | Windows 365 |
-| **getDeviceUserInfo** | Threat management | View managed device user information  | MEM |
-| **getManagedDevice**, **remoteActionAudits**, or **deviceActionResults** | Threat management | View managed device information  | MEM |
 | **windowsDefenderScanFull** | Threat management | Full scan | MEM |
 | **windowsDefenderScan** | Threat management | Quick scan | MEM |
 | **windowsDefenderUpdateSignatures** | Threat management | Update antivirus | MEM |
 
 ## Next steps
 
-If you need more information, use Microsoft Graph API to access more audit events. For more information, see [Overview for multi-tenant management using the Microsoft 365 Lighthouse API](/graph/managedtenants-concept-overview).
+Use Microsoft Graph API to access more audit events, if needed. For more information, see [Overview for multi-tenant management using the Microsoft 365 Lighthouse API](/graph/managedtenants-concept-overview).
 
 ## Related content
 
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
+[View your Azure Active Directory roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (article)

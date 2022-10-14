@@ -3,7 +3,7 @@ title: Microsoft Defender for Endpoint for non-Windows platforms
 description: Learn about Microsoft Defender for Endpoint capabilities  for non-Windows platforms
 keywords: non windows, mac, macos, linux, android
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,10 +13,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-evalutatemtp
+  - highpri
+  - tier1
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint for non-Windows platforms
@@ -44,8 +47,6 @@ For more details on how to get started, visit the Defender for Endpoint on macOS
 > [!NOTE]
 > The following capabilities are not currently supported on macOS endpoints:
 >
-> - Data loss prevention
-> - Live response
 > - Security Management for Microsoft Defender for Endpoint
 
 ## Microsoft Defender for Endpoint on Linux
@@ -60,7 +61,6 @@ For more details on how to get started, visit the Microsoft Defender for Endpoin
 > The following capabilities are not currently supported on Linux endpoints:
 >
 > - Data loss prevention
-> - Live response
 > - Security Management for Microsoft Defender for Endpoint
 
 ## Microsoft Defender for Endpoint on Android

@@ -1,5 +1,5 @@
 ---
-title: Import a sample document understanding model for Microsoft SharePoint Syntex
+title: Import a sample document understanding model for Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -7,7 +7,7 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.custom: intro-get-started
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
@@ -16,9 +16,9 @@ ms.localizationpriority:  medium
 description: Learn about document understanding models through the sample model.
 ---
 
-# Import a sample document understanding model for Microsoft SharePoint Syntex
+# Import a sample document understanding model for Microsoft Syntex
 
-SharePoint Syntex provides you with a sample model you can use to examine, giving you a better understanding of how to create your own models. The sample model also allows you to examine model components, such as its classifier, extractors, and explanations. You can also use the sample files to train the model.
+Microsoft Syntex provides you with a sample model you can use to examine, giving you a better understanding of how to create your own models. The sample model also allows you to examine model components, such as its classifier, extractors, and explanations. You can also use the sample files to train the model.
 
 ## Import the sample model
 
@@ -40,9 +40,9 @@ You can not only look through analyze the sample model to get a better understan
 
 ## Get sample models
 
-You can access the [SharePoint Syntex Samples repository](https://github.com/pnp/syntex-samples), which contains community samples that demonstrate different usage patterns of document understanding models. The samples in this repository contain both the document understanding model files and the files used to train the model. Once imported, you can use these models to process files and to view and edit the classifier and extractors.
+You can access the [Syntex Samples repository](https://github.com/pnp/syntex-samples), which contains community samples that demonstrate different usage patterns of document understanding models. The samples in this repository contain both the document understanding model files and the files used to train the model. Once imported, you can use these models to process files and to view and edit the classifier and extractors.
 
-## See Also
+## See also
 [Create a classifier](create-a-classifier.md)
 
 [Create an extractor](create-an-extractor.md)

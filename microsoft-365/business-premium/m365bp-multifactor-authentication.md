@@ -1,39 +1,42 @@
 ---
-title: "Set up multifactor authentication for Microsoft 365 Business Premium"
+title: "Set up multi-factor authentication for Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
-ms.localizationpriority: medium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
+ms.localizationpriority: high
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Set up multifactor authentication for mobile devices."
+description: "Set up multi-factor authentication for phones in Microsoft Business Premium. Increase your security by using Microsoft Business Premium's MFA features for your phone."
 ---
 
-# Set up multifactor authentication on your mobile device
+# Set up MFA
 
-Multi-factor authentication provides more security for your business. After your admin has required you to use MFA, you can set up the Microsoft Authenticator app to let you log into key apps securely with your phone. 
+Multi-factor authentication (MFA) provides increased security because instead of only using a password, or a code through text, a separate app on your phone is used to verify access. This makes it difficult to hack. When MFA is required, members of the organization can use the Microsoft Authenticator app to securely sign in on their devices. <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
-See more at [Set up multifactor authentication in Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+See more at [Set up multi-factor authentication in Microsoft 365 Business Premium](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
-## Use the Outlook app in your devices
+## Use the Outlook app on your devices
 
-After your admin has required you to use MFA and you've set up an authenticator app as a second form of authentication, we recommend that you install and only use the Outlook app to access your Microsoft 365 email. See [Set up mobile devices](../business/set-up-mobile-devices.md) for how to install Office apps, including Outlook, on your phone.
+When MFA is enforced, the authenticator app serves as a second form of authentication. We also recommend that everyone install and use the Outlook app to access their Microsoft 365 email on their devices. See [Download Microsoft Outlook for iOS and Android](https://www.microsoft.com/microsoft-365/outlook-mobile-for-android-and-ios).
+
+## Next objective
+
+Proceed to [install Office applications](m365bp-install-office-apps.md).

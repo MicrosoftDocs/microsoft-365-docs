@@ -1,8 +1,8 @@
 ---
-title: Deployment phases
+title: Microsoft Defender for Endpoint deployment overview
 description: Learn how to deploy Microsoft Defender for Endpoint by preparing, setting up, and onboarding endpoints to that service
 keywords: deploy, prepare, setup, onboard, phase, deployment, deploying, adoption, configuring
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,14 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-endpointprotect
   - m365solution-overview
+  - highpri
+  - tier1
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
-# Deployment phases
+# Microsoft Defender for Endpoint deployment overview
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,10 +38,10 @@ This guide helps you work across stakeholders to prepare your environment and th
 
 Each section corresponds to a separate article in this solution.
 
-![Image of deployment phases with details from table.](images/deployment-guide-phases.png)
+:::image type="content" source="images/deployment-guide-phases.png" alt-text="The deployment phases with details from the table" lightbox="images/deployment-guide-phases.png":::
 
 
-![Summary of deployment phases: prepare, setup, onboard.](images/phase-diagrams/deployment-phases.png)
+:::image type="content" source="images/phase-diagrams/deployment-phases.png" alt-text="The summary of deployment phases: prepare, setup, onboard" lightbox="images/phase-diagrams/deployment-phases.png":::
 
 <br>
 

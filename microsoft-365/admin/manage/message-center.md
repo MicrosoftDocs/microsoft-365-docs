@@ -1,5 +1,5 @@
 ---
-title: "Message center"
+title: "Message center in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -7,12 +7,12 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
-
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
@@ -25,7 +25,7 @@ ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: "Get an overview of Microsoft 365 Message center and its role in tracking new and changed features and other important announcements."
 ---
 
-# Message center
+# Track new and changed features in the Microsoft 365 Message center
 
 To keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Message center</a>.
   
@@ -195,7 +195,7 @@ Here's a quick overview of the information you'll see in each column.
 
 - Compliance administrator
 - Conditional access administrator
-- Customer LockBox access approver
+- Customer Lockbox access approver
 - Device administrators
 - Directory readers
 - Directory synchronization accounts
@@ -266,7 +266,7 @@ When you open a message in a reading pane, you can use the **Up** and **Down** :
 
 A lot of actionable information about changes to Microsoft 365 services arrives in the Microsoft 365 message center. It can be difficult to keep track of which changes require tasks to be done, when, and by whom, and to track each task to completion. You also might want to make a note of something and tag it to check on later. You can do all this and more when you sync your messages from the Microsoft 365 admin center to Microsoft Planner. For more information, see [Track your message center tasks in Planner](/office365/planner/track-message-center-tasks-planner).
 
-For an overview of Message center, see [Message center in Microsoft 365](message-center.md). Or, to learn how to set your language preferences to enable machine translation for Message center posts, see [Language translation for Message center posts](language-translation-for-message-center-posts.md). If you'd like to program an alternative way to get real-time service health information and Message center communications, please reference [Working with service communications API in Microsoft Graph](/graph/api/resources/service-communications-api-overview?view=graph-rest-beta).
+For an overview of Message center, see [Message center in Microsoft 365](message-center.md). Or, to learn how to set your language preferences to enable machine translation for Message center posts, see [Language translation for Message center posts](language-translation-for-message-center-posts.md). If you'd like to program an alternative way to get real-time service health information and Message center communications, see [Working with service communications API in Microsoft Graph](/graph/api/resources/service-communications-api-overview).
 
 ## Unsubscribe from Message center emails
 
@@ -280,5 +280,4 @@ For an overview of Message center, see [Message center in Microsoft 365](message
 ## Related content
 
 [Set up the Standard or Targeted release options](../manage/release-options-in-office-365.md) (article)\
-[Manage which Office features appear in What's New](../manage/show-hide-new-features.md) (article)\
 [Business subscriptions and billing documentation](../../commerce/index.yml) (link page)

@@ -3,7 +3,8 @@ title: Threat analytics in Microsoft 365 Defender
 ms.reviewer: 
 description: Learn about emerging threats and attack techniques and how to stop them. Assess their impact to your organization and evaluate your organizational resilience.
 keywords: threat analytics, risk evaluation, Microsoft 365 Defender, M365D, mitigation status, secure configuration, Microsoft Defender for Office 365, Microsoft Defender for Office 365 threat analytics, MDO threat analytics, integrated MDE and MDO threat analytics data, threat analytics data integration, integrated Microsoft 365 Defender threat analytics   
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,10 +16,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
+- m365-security 
 - m365initiative-m365-defender 
+- tier1
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+search.appverid: met150
 ---
 
 # Threat analytics in Microsoft 365 Defender
@@ -28,9 +31,6 @@ ms.custom: seo-marvel-apr2020
 **Applies to:**
 
 - Microsoft 365 Defender
-
-> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).
->
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
@@ -46,9 +46,9 @@ Watch this short video to learn more about how threat analytics can help you tra
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
 
-You can access threat analytics either from the upper left-hand side of Microsoft 365 security portal’s navigation bar, or from a dedicated dashboard card that shows the top threats to your org, both in terms of impact, and in terms of exposure.
+You can access threat analytics either from the upper left-hand side of Microsoft 365 security portal's navigation bar, or from a dedicated dashboard card that shows the top threats to your org, both in terms of impact, and in terms of exposure.
 
-![Image of the threat analytics dashboard.](../../media/threat-analytics/ta_inlandingpage_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_inlandingpage_mtp.png" alt-text="The threat analytics landing page" lightbox="../../media/threat-analytics/ta_inlandingpage_mtp.png":::
 
 High impact threats have the greatest potential to cause harm, while high exposure threats are the ones that your assets are most vulnerable to. Getting visibility on active or ongoing campaigns and knowing what to do through threat analytics can help equip your security operations team with informed decisions.
 
@@ -74,7 +74,7 @@ The threat analytics dashboard ([security.microsoft.com/threatanalytics3](https:
 
 Select a threat from the dashboard to view the report for that threat.
 
-![Screenshot of threat analytics dashboard.](../../media/threat-analytics/ta_dashboard_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_dashboard_mtp.png" alt-text="The threat analytics dashboard" lightbox="../../media/threat-analytics/ta_dashboard_mtp.png":::
 
 _Threat analytics dashboard. You can also select the Search field to key in a keyword that's related to the threat analytics report that you'd like to read._
 
@@ -93,7 +93,7 @@ Each threat analytics report provides information in several sections:
 
 The **Overview** section provides a preview of the detailed analyst report. It also provides charts that highlight the impact of the threat to your organization, and your exposure through misconfigured and unpatched devices.
 
-![Image of the overview section of a threat analytics report.](../../media/threat-analytics/ta_overview_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_overview_mtp.png" alt-text="The overview section of a threat analytics report" lightbox="../../media/threat-analytics/../../media/threat-analytics/ta_overview_mtp.png":::
 
 _Overview section of a threat analytics report_
 
@@ -134,15 +134,15 @@ The Microsoft Threat Intelligence team has added threat tags to each threat repo
   - Activity group
 - Threat tags are presented at the top of the threat analytics page. There are counters for the number of available reports under each tag.
 
-  ![threat tags.](../../media/threat-analytics/ta-threattags-mtp.png)
+  :::image type="content" source="../../media/threat-analytics/ta-threattags-mtp.png" alt-text="The threat tags" lightbox="../../media/threat-analytics/ta-threattags-mtp.png":::
 
 - The list can also be sorted by threat tags:
 
-  ![lists.](../../media/threat-analytics//ta-taglist-mtp.png)
+  :::image type="content" source="../../media/threat-analytics//ta-taglist-mtp.png" alt-text="The Threat tags section" lightbox="../../media/threat-analytics//ta-taglist-mtp.png":::
 
 - Filters are available per threat tag and report type:
 
-  ![filters.](../../media/threat-analytics/ta-threattag-filters-mtp.png)
+  :::image type="content" source="../../media/threat-analytics/ta-threattag-filters-mtp.png" alt-text="The Filters page" lightbox="../../media/threat-analytics/ta-threattag-filters-mtp.png":::
 
 ### Analyst report: Get expert insight from Microsoft security researchers
 
@@ -152,9 +152,9 @@ In the **Analyst report** section, read through the detailed expert write-up. Mo
 
 ### Related incidents: View and manage related incidents
 
-The **Related incidents** tab provides the list of all incidents related to the tracked threat. You can assign incidents or manage alerts linked to each incident.
+The **Related incidents** tab provides the list of all incidents related to the tracked threat. You can assign incidents or manage alerts linked to each incident. 
 
-![Image of the related incidents section of a threat analytics report.](../../media/threat-analytics/ta_related_incidents_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_related_incidents_mtp.png" alt-text="The related incidents section of a threat analytics report" lightbox="../../media/threat-analytics/ta_related_incidents_mtp.png":::
 
 _Related incidents section of a threat analytics report_
 
@@ -165,7 +165,7 @@ An asset is considered impacted if it's affected by an active, unresolved alert.
 - **Impacted devices**—endpoints that have unresolved Microsoft Defender for Endpoint alerts. These alerts typically fire on sightings of known threat indicators and activities.
 - **Impacted mailboxes**—mailboxes that have received email messages that have triggered Microsoft Defender for Office 365 alerts. While most messages that trigger alerts are typically blocked, user- or org-level policies can override filters.
 
-![Image of the impacted assets section of a threat analytics report.](../../media/threat-analytics/ta_impacted_assets_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_impacted_assets_mtp.png" alt-text="The impacted assets section of a threat analytics report" lightbox="../../media/threat-analytics/ta_impacted_assets_mtp.png":::
 
 _Impacted assets section of a threat analytics report_
 
@@ -175,7 +175,7 @@ Microsoft Defender for Office 365 typically blocks emails with known threat indi
 
 The **Prevented email attempts** tab lists all the emails that have either been blocked before delivery or sent to the junk mail folder by Microsoft Defender for Office 365.
 
-![Image of the prevented email attempts section of a threat analytics report.](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png" alt-text="The prevented email attempts section of a threat analytics report" lightbox="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png":::
 
 _Prevented email attempts section of a threat analytics report_
 
@@ -189,11 +189,11 @@ In the **Exposure & mitigations** section, review the list of specific actionabl
   - Potentially unwanted application (PUA) protection
   - Real-time protection
 
-Mitigation information in this section incorporates data from [threat and vulnerability management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), which also provides detailed drill-down information from various links in the report.
+Mitigation information in this section incorporates data from [Microsoft Defender Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), which also provides detailed drill-down information from various links in the report.
 
-![Image of the mitigations section of a threat analytics report showing secure configuration details.](../../media/threat-analytics/ta_mitigations_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_mitigations_mtp.png" alt-text="The mitigations section of a threat analytics report showing secure configuration details" lightbox="../../media/threat-analytics/ta_mitigations_mtp.png":::
 
-![Image of the mitigations section of a threat analytics report showing vulnerability details.](../../media/threat-analytics/ta_mitigations_mtp2.png)
+:::image type="content" source="../../media/threat-analytics/ta_mitigations_mtp2.png" alt-text="The mitigations section of a threat analytics report showing vulnerability details" lightbox="../../media/threat-analytics/ta_mitigations_mtp2.png":::
 
 _Exposure & mitigations section of a threat analytics report_
 
@@ -249,7 +249,7 @@ To access threat analytics reports, you need certain roles and permissions. See 
 
 - To view alerts, incidents, or impacted assets data, you need to have permissions to Microsoft Defender for Office or Microsoft Defender for Endpoint alerts data, or both.
 - To view prevented email attempts, you need to have permissions to Microsoft Defender for Office hunting data.
-- To view mitigations, you need to have permissions to threat and vulnerability management data in Microsoft Defender for Endpoint.
+- To view mitigations, you need to have permissions to Defender Vulnerability Management data in Microsoft Defender for Endpoint.
 
 When looking at the threat analytics data, remember the following factors:
 

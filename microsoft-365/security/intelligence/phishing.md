@@ -3,7 +3,7 @@ title: How to protect against phishing attacks
 ms.reviewer: 
 description: Learn about how phishing work, deliver malware do your devices, and  what you can do to protect yourself
 keywords: security, malware, phishing, information, scam, social engineering, bait, lure, protection, trends, targeted attack
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,10 +11,11 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
 ---
 
 # How to protect against phishing attacks
@@ -27,9 +28,9 @@ Social engineering attacks are designed to take advantage of a user's possible l
 
 ## Learn the signs of a phishing scam
 
-The best protection is awareness and education. Don’t open attachments or links in unsolicited emails, even if the emails came from a recognized source. If the email is unexpected, be wary about opening the attachment and verify the URL.
+The best protection is awareness and education. Don't open attachments or links in unsolicited emails, even if the emails came from a recognized source. If the email is unexpected, be wary about opening the attachment and verify the URL.
 
-Enterprises should educate and train their employees to be wary of any communication that requests personal or financial information. They should also instruct employees to report the threat to the company’s security operations team immediately.
+Enterprises should educate and train their employees to be wary of any communication that requests personal or financial information. They should also instruct employees to report the threat to the company's security operations team immediately.
 
 Here are several telltale signs of a phishing scam:
 
@@ -49,7 +50,7 @@ Here are several telltale signs of a phishing scam:
 
 * The **sender address doesn't match the signature** on the message itself. For example, an email is purported to be from Mary of Contoso Corp, but the sender address is john<span></span>@example.com.
 
-* There are **multiple recipients** in the “To” field and they appear to be random addresses. Corporate messages are normally sent directly to individual recipients.
+* There are **multiple recipients** in the "To" field and they appear to be random addresses. Corporate messages are normally sent directly to individual recipients.
 
 * The greeting on the message itself **doesn't personally address you**. Apart from messages that mistakenly address a different person, greetings that misuse your name or pull your name directly from your email address tend to be malicious.
 
@@ -85,11 +86,11 @@ If you feel you've been a victim of a phishing attack:
 
 - **Anti-Phishing Working Group**: phishing-report@us-cert.gov. The group uses reports generated from emails sent to fight phishing scams and hackers. ISPs, security vendors, financial institutions, and law enforcement agencies are involved.
 
-### If you’re on a suspicious website
+### If you're on a suspicious website
 
-- **Microsoft Edge**: While you’re on a suspicious site, select the **More (…) icon** > **Help and feedback** > **Report Unsafe site**. Follow the instructions on the webpage that displays to report the website.
+- **Microsoft Edge**: While you're on a suspicious site, select the **More (...) icon** > **Help and feedback** > **Report Unsafe site**. Follow the instructions on the webpage that displays to report the website.
 
-- **Internet Explorer**: While you’re on a suspicious site, select the gear icon, point to **Safety**, and then select **Report Unsafe Website**. Follow the instructions on the webpage that displays to report the website.
+- **Internet Explorer**: While you're on a suspicious site, select the gear icon, point to **Safety**, and then select **Report Unsafe Website**. Follow the instructions on the webpage that displays to report the website.
 
 ## More information about phishing attacks
 

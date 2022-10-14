@@ -3,7 +3,8 @@ title: Prioritize incidents in Microsoft 365 Defender
 description: Learn how to filter incidents from the incident queue in Microsoft 365 Defender
 keywords: incident, queue, overview, devices, identities, users, mailbox, email, incidents, analyze, response, triage
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +16,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 
 # Prioritize incidents in Microsoft 365 Defender
@@ -32,13 +32,13 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender applies correlation analytics and aggregates related alerts and automated investigations from different products into an incident. Microsoft 365 Defender also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility that Microsoft 365 Defender has across the entire suite of products. This view gives your security analysts the broader attack story, which helps them better understand and deal with complex threats across your organization.
+Microsoft 365 Defender applies correlation analytics and aggregates related alerts and automated investigations from different products into an incident. Microsoft 365 Defender also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility in Microsoft 365 Defender has across the entire suite of products. This view gives your security analysts the broader attack story, which helps them better understand and deal with complex threats across your organization.
 
 The **Incident queue** shows a collection of incidents that were created across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision, a process known as incident triage.
 
 You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Example of the incident queue." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incident section showing the incident queue in the Microsoft 365 Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 The **Most recent incidents and alerts** section shows a graph of the number of alerts received and incidents created in the last 24 hours.
 
@@ -61,7 +61,7 @@ The **Filters** list above the list of incidents shows the currently applied fil
 
 From the default incident queue, you can select **Filter** to see a **Filter** pane, from which you specify a filtered set of incidents. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Example of the filters pane for the incident queue." lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="The Filters pane for the incident queue in the Microsoft 365 Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
 You can also see the **Filter** pane by selecting any of the filters in the **Filters** list above the list of incidents.
 
@@ -78,7 +78,7 @@ This table lists the filter names that are available.
 | Multiple categories  | Specify whether the filter is for more than one category. |
 | Categories | Choose categories to focus on specific tactics, techniques, or attack components seen. |
 | Entities | Specify the name of an asset such as a user, device, mailbox, or application name. |
-| Data sensitivity | Some attacks focus on targeting to exfiltrate sensitive or valuable data. By applying a filter for specific sensitivity labels, you can quickly determine if sensitive information has potentially been compromised and prioritize addressing those incidents. <br><br> This filter is only available if Microsoft Information Protection is turned on. |
+| Data sensitivity | Some attacks focus on targeting to exfiltrate sensitive or valuable data. By applying a filter for specific sensitivity labels, you can quickly determine if sensitive information has potentially been compromised and prioritize addressing those incidents. <br><br> This filter displays information only when you've applied [sensitivity labels from Microsoft Purview Information Protection](../../compliance/sensitivity-labels.md). |
 | Device groups | Specify a [device group](/windows/security/threat-protection/microsoft-defender-atp/machine-groups) name. |
 | OS platform | Specify device operating systems. |
 | Classification | Specify the set of classifications of the related alerts. |

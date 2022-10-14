@@ -3,7 +3,8 @@ title: Automated investigation and response in Microsoft 365 Defender
 description: Get an overview of automated investigation and response capabilities, also called self-healing, in Microsoft 365 Defender
 keywords: automated, investigation, alert, trigger, action, remediation, self-healing
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +13,15 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/19/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.technology: m365d
 ---
 
 # Automated investigation and response in Microsoft 365 Defender
@@ -33,9 +34,6 @@ ms.technology: m365d
 If your organization is using [Microsoft 365 Defender](microsoft-365-defender.md), your security operations team receives an alert within the Microsoft 365 Defender portal whenever a malicious or suspicious activity or artifact is detected. Given the seemingly never-ending flow of threats that can come in, security teams often face the challenge of addressing the high volume of alerts. Fortunately, Microsoft 365 Defender includes automated investigation and response (AIR) capabilities that can help your security operations team address threats more efficiently and effectively.
 
 This article provides an overview of AIR and includes links to next steps and additional resources.
-
-> [!TIP]
-> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).
 
 ## How automated investigation and self-healing works
 
@@ -97,6 +95,15 @@ In Microsoft 365 Defender, each automated investigation correlates signals acros
 
 To view investigations, go to the **Incidents** page. Select an incident, and then select the **Investigations** tab. To learn more, see [Details and results of an automated investigation](m365d-autoir-results.md).
 
+## Automated investigation & response card 
+
+The new Automated investigation & response card is available in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This new card visibility to the total number of available remediation actions. The card also gives an overview of all the alerts and required approval time for each alert.
+
+:::image type="content" source="../../media/automated-investigation-response-card.png" alt-text="Screenshot that shows the automated investigation & response card.":::
+
+Using the Automated investigation & response card, your security operations team can quickly navigate to the Action center by selecting the **Approve in Action Center** link, and then taking appropriate actions. The card enables your security operations team to more effectively manage actions that are pending approval. 
+
+
 ## Training for security analysts
 
 Use this learning module from Microsoft Learn to understand how Microsoft 365 Defender uses automated self-healing for incident investigation and response.
@@ -106,7 +113,7 @@ Use this learning module from Microsoft Learn to understand how Microsoft 365 De
 |![Automate self-healing with Microsoft 365 Defender training icon.](../../media/m365d-autoir/m365-defender-auto-self-healing.svg)| Microsoft 365 Defender uses AI to automate remediation for incidents, helping your security operations team address threats more efficiently and effectively. <p> 11 min - 5 Units |
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/defender-self-healing/)
+> [Start >](/training/modules/defender-self-healing/)
 
 ## Next steps
 

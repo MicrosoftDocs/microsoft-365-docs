@@ -1,5 +1,5 @@
 ---
-title: "Comparison chart: Bookings web app vs. Bookings Teams app"
+title: "Comparison: Bookings web app vs. Bookings Teams app"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: d586eb28-b752-4c46-bf92-00a0c5ad781d
 description: "A comparison chart that shows the feature differences between the Bookings web app and the Bookings Teams app."
 ---

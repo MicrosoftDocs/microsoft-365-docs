@@ -1,38 +1,43 @@
 ---
 title: "Load non-Microsoft 365 data into a review set"
+description: "Learn how to import non-Microsoft 365 data to a review set for analysis in an eDiscovery (Premium) case."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to import non-Microsoft 365 data to a review set for analysis in an Advanced eDiscovery case."
 ms.custom: seo-marvel-apr2020
 ---
 
 # Load non-Microsoft 365 data into a review set
 
-Not all documents that you need to analyze in Advanced eDiscovery are located in Microsoft 365. With the non-Microsoft 365 data import feature in Advanced eDiscovery, you can upload documents that aren't located in Microsoft 365 to a review set. This article shows you how to bring your non-Microsoft 365 documents into Advanced eDiscovery for analysis.
+Not all documents that you need to analyze in Microsoft Purview eDiscovery (Premium) are located in Microsoft 365. With the non-Microsoft 365 data import feature in eDiscovery (Premium), you can upload documents that aren't located in Microsoft 365 to a review set. This article shows you how to bring your non-Microsoft 365 documents into eDiscovery (Premium) for analysis.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Requirements to upload non-Office 365 content
 
 Using the upload non-Microsoft 365 feature described in this article requires that you have the following:
 
-- All custodians that you want to associate non-Microsoft 365 content to must be assigned the appropriate license. For more information, see [Get started with Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
+- All custodians that you want to associate non-Microsoft 365 content to must be assigned the appropriate license. For more information, see [Get started with eDiscovery (Premium)](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
-- An existing Advanced eDiscovery case.
+- An existing eDiscovery (Premium) case.
 
 - Custodians must be added to the case before you can upload and associate the non-Microsoft 365 data to them.
 
-- Non-Microsoft 365 data must be a file type that's supported by Advanced eDiscovery. For more information, see [Supported file types in Advanced eDiscovery](supported-filetypes-ediscovery20.md).
+- Non-Microsoft 365 data must be a file type that's supported by eDiscovery (Premium). For more information, see [Supported file types in eDiscovery (Premium)](supported-filetypes-ediscovery20.md).
 
 - All files that are uploaded to a review set must be located in folders, where each folder is associated with a specific custodian. The names for these folders must use the following naming format: *alias@domainname*. The alias@domainname must be the user's Microsoft 365 alias and domain. You can collect all the alias@domainname folders in a root folder. The root folder can only contain the alias@domainname folders. Loose files in the root folder aren't supported.
 
@@ -48,12 +53,12 @@ Using the upload non-Microsoft 365 feature described in this article requires th
 
 - An account that is assigned to the eDiscovery Manager role group (and added as eDiscovery Administrator).
 
-- The AzCopy v8.1 tool installed on a computer that has access to the non-Microsoft 365 content folder structure. To install AzCopy, see [Transfer data with the AzCopy v8.1 on Windows](/previous-versions/azure/storage/storage-use-azcopy). Be sure to install AzCopy in the default location, which is **%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy**. You must use AzCopy v8.1. Other versions of AzCopy may not work when loading non-Microsoft 365 data in Advanced eDiscovery.
+- The AzCopy v8.1 tool installed on a computer that has access to the non-Microsoft 365 content folder structure. To install AzCopy, see [Transfer data with the AzCopy v8.1 on Windows](/previous-versions/azure/storage/storage-use-azcopy). Be sure to install AzCopy in the default location, which is **%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy**. You must use AzCopy v8.1. Other versions of AzCopy may not work when loading non-Microsoft 365 data in eDiscovery (Premium).
 
 
-## Upload non-Microsoft 365 content into Advanced eDiscovery
+## Upload non-Microsoft 365 content into eDiscovery (Premium)
 
-1. As an eDiscovery Manager or eDiscovery Administrator, open Advanced eDiscovery, and go to the case that the non-Microsoft 365 data will be uploaded to.  
+1. As an eDiscovery Manager or eDiscovery Administrator, open eDiscovery (Premium), and go to the case that the non-Microsoft 365 data will be uploaded to.  
 
 2. Click **Review sets**, and then select the review set to upload the non-Microsoft 365 data to.  If you don't have a review set, you can create one. 
  
@@ -84,9 +89,9 @@ Using the upload non-Microsoft 365 feature described in this article requires th
    ![Non-Microsoft 365 Import: AzCopy.](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
-   > As previously stated, you must use AzCopy v8.1 to successfully use the command that's provided on the **Upload files** page. If the supplied AzCopy command fails, please see [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
+   > As previously stated, you must use AzCopy v8.1 to successfully use the command that's provided on the **Upload files** page. If the supplied AzCopy command fails, please see [Troubleshoot AzCopy in eDiscovery (Premium)](troubleshooting-azcopy.md).
 
-8. Go back to the Microsoft 365 compliance center, and click **Next: Process files** in the wizard.  This initiates processing, text extraction, and indexing of the non-Microsoft 365 files that were uploaded to the Azure Storage location.  
+8. Go back to the Microsoft Purview compliance portal, and click **Next: Process files** in the wizard.  This initiates processing, text extraction, and indexing of the non-Microsoft 365 files that were uploaded to the Azure Storage location.  
 
 9. Track the progress of processing the files on the **Process files** page or on the **Jobs** tab by viewing a job named **Adding non-Microsoft 365 data to a review set**.  After the job is finished, the new files will be available in the review set.
 

@@ -8,7 +8,8 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.collection: M365-security-compliance
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Microsoft Defender for Identity sensor health and settings in Microsoft 365 Defender
@@ -27,7 +28,7 @@ This article explains how to configure and monitor [Microsoft Defender for Ident
 
 1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Settings** and then **Identities**.
 
-    ![Go to Settings, then Identities.](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="The option of Identities on the Settings page" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. Select the **Sensors** page, which displays all of your Defender for Identity sensors. For each sensor, you'll see its name, its domain membership, the version number, if updates should be delayed, the service status, update status, health status, the number of health issues, and when the sensor was created.
 
@@ -40,7 +41,7 @@ This article explains how to configure and monitor [Microsoft Defender for Ident
 
     [![Sensor filters.](../../media/defender-identity/sensor-filters.png)](../../media/defender-identity/sensor-filters.png#lightbox)
 
-    ![Filtered sensor.](../../media/defender-identity/filtered-sensor.png)
+    :::image type="content" source="../../media/defender-identity/filtered-sensor.png" alt-text="The Filtered sensor" lightbox="../../media/defender-identity/filtered-sensor.png":::
 
 1. If you select one of the sensors, a pane will display with information about the sensor and its health status.
 
@@ -48,17 +49,18 @@ This article explains how to configure and monitor [Microsoft Defender for Ident
 
 1. If you select any of the health issues, you'll get a pane with more details about them. If you choose a closed issue, you can reopen it from here.
 
-    ![Issue details.](../../media/defender-identity/issue-details.png)
+   :::image type="content" source="../../media/defender-identity/issue-details.png" alt-text="The Issue details" lightbox="../../media/defender-identity/issue-details.png":::
+    
 
 1. If you select **Manage sensor**, a pane will open where you can configure the sensor details.
 
-    ![Manage sensor.](../../media/defender-identity/manage-sensor.png)
+   :::image type="content" source="../../media/defender-identity/manage-sensor.png" alt-text="The Manage sensor option" lightbox="../../media/defender-identity/manage-sensor.png":::
 
-    ![Configure sensor details.](../../media/defender-identity/configure-sensor-details.png)
+   :::image type="content" source="../../media/defender-identity/configure-sensor-details.png" alt-text="The page on which you configure settings for the sensor" lightbox="../../media/defender-identity/configure-sensor-details.png":::
 
 1. In the **Sensors** page, you can export your list of sensors to a .csv file by selecting **Export**.
 
-    ![Export list of sensors.](../../media/defender-identity/export-sensors.png)
+   :::image type="content" source="../../media/defender-identity/export-sensors.png" alt-text="The Export list of sensors" lightbox="../../media/defender-identity/export-sensors.png":::
 
 ## Add a sensor
 
@@ -66,11 +68,11 @@ From the **Sensors** page, you can add a new sensor.
 
 1. Select **Add sensor**.
 
-    ![Add sensor.](../../media/defender-identity/add-sensor.png)
+   :::image type="content" source="../../media/defender-identity/add-sensor.png" alt-text="The Add sensor option" lightbox="../../media/defender-identity/add-sensor.png":::
 
 1. A pane will open, providing you with a button to download the sensor installer and a generated access key.
 
-    ![Download installer and access key.](../../media/defender-identity/installer-access-key.png)
+   :::image type="content" source="../../media/defender-identity/installer-access-key.png" alt-text="The options to download the installer and regenerate the key" lightbox="../../media/defender-identity/installer-access-key.png":::
 
 1. Select **Download installer** to save the package locally. The zip file includes the following files:
 

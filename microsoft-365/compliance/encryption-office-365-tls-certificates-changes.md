@@ -1,5 +1,5 @@
 ---
-title: Office TLS Certificate Changes
+title: Office TLS certificate changes
 description: How to prepare for upcoming changes to Office TLS certificates.
 author: pshelton-skype
 ms.author: pshelton
@@ -44,6 +44,8 @@ Additionally, Teams and Skype for Business Online endpoints in US Government nat
 This change will not affect certificates, domains, or services used in the China or Germany national cloud instances of Microsoft 365.
 
 All certificate information in this article was previously provided in [Microsoft 365 encryption chains](./encryption-office-365-certificate-chains.md) no later than October 2020.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## When will this change happen?
 
@@ -129,6 +131,68 @@ Here are some ways to detect if your application may be impacted:
    The root of the certificate chain is not a trusted root authority.
    ```
 
+- If you use a Session Border Controller, Microsoft has prepared a testing endpoint that can be used to verify that SBC appliances trust certificates issued from the new Root CA. This endpoint should be used only for SIP OPTIONS ping messages and not for voice traffic.
+   ```
+   Global FQDN: sip.mspki.pstnhub.microsoft.com 
+   Port: 5061
+   ```
+   If this does not operate normally, please contact your device manufacturer to determine if updates are available to support the new Root CA. 
+
 ## When can I retire the old CA information?
 
 The current Root CA, Intermediate CA, and leaf certificates will not be revoked. The existing CA Common Names and/or thumbprints will be required through at least October 2023 based on the lifetime of existing certificates.
+
+## Known Issues
+
+Under very rare circumstances, enterprise users may see certificate validation errors where the Root CA "DigiCert Global Root G2" appears as revoked. This is due to a known Windows bug under both of the following conditions:
+
+- The Root CA is in the [CurrentUser\Root certificate store](/windows/win32/seccrypto/system-store-locations#cert_system_store_current_user) and is missing the `NotBeforeFileTime` and `NotBeforeEKU` properties
+- The Root CA is in the [LocalMachine\AuthRoot certificate store](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine) but has both the `NotBeforeFileTime` and `NotBeforeEKU` properties
+- The Root CA is NOT in the [LocalMachine\Root certificate store](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine)
+
+All leaf certificates issued from this Root CA after the `NotBeforeFileTime` will appear revoked. 
+
+Administrators can identify and troubleshoot the issue by inspecting the CAPI2 Log for this error:
+
+```text
+Log Name:      Microsoft-Windows-CAPI2/Operational
+Source:        Microsoft-Windows-CAPI2
+Date:          6/23/2022 8:36:39 AM
+Event ID:      11
+Task Category: Build Chain
+Level:         Error
+[...]
+        <ChainElement>
+          <Certificate fileRef="DF3C24F9BFD666761B268073FE06D1CC8D4F82A4.cer" subjectName="DigiCert Global Root G2" />
+          [...]
+          <TrustStatus>
+            <ErrorStatus value="4000024" CERT_TRUST_IS_REVOKED="true" CERT_TRUST_IS_UNTRUSTED_ROOT="true" CERT_TRUST_IS_EXPLICIT_DISTRUST="true" />
+            <InfoStatus value="10C" CERT_TRUST_HAS_NAME_MATCH_ISSUER="true" CERT_TRUST_IS_SELF_SIGNED="true" CERT_TRUST_HAS_PREFERRED_ISSUER="true" />
+          </TrustStatus>
+          [...]
+          <RevocationInfo freshnessTime="PT0S">
+            <RevocationResult value="80092010">The certificate is revoked.</RevocationResult>
+          </RevocationInfo>
+        </ChainElement>
+      </CertificateChain>
+      <EventAuxInfo ProcessName="Teams.exe" />
+      <Result value="80092010">The certificate is revoked.</Result>
+```
+Note the presence of the `CERT_TRUST_IS_EXPLICIT_DISTRUST="true"` element. 
+
+You can confirm that two copies of the Root CA with different `NotBeforeFileTime` properties are present by running the following `certutil` commands and comparing the output:
+
+```
+certutil -store -v authroot DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
+certutil -user -store -v root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
+```
+
+A user can resolve the issue by deleting the copy of the Root CA in the `CurrentUser\Root` certificate store by doing:
+```
+certutil -user -delstore root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
+```
+or 
+```
+reg delete HKCU\SOFTWARE\Microsoft\SystemCertificates\Root\Certificates\DF3C24F9BFD666761B268073FE06D1CC8D4F82A4 /f
+```
+The first approach creates a Windows dialog that a user must click through while the second approach does not. 

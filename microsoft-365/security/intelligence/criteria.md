@@ -3,7 +3,7 @@ title: How Microsoft identifies malware and potentially unwanted applications
 ms.reviewer: 
 description: Learn how Microsoft reviews software for privacy violations and other negative behavior, to determine if it's malware or a potentially unwanted application.
 keywords: security, malware, virus research threats, research malware, device protection, computer infection, virus infection, descriptions, remediation, latest threats, MMdevice, Microsoft Malware Protection Center, PUA, potentially unwanted applications
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,11 +11,12 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
 ms.date: 12/13/2021
 search.appverid: met150
-ms.technology: m365d
 ---
 
 # How Microsoft identifies malware and potentially unwanted applications
@@ -31,7 +32,7 @@ The next sections provide an overview of the classifications we use for applicat
 
 ## Unknown – Unrecognized software  
 
-No antivirus or protection technology is perfect. It takes time to identify and block malicious sites and applications, or trust newly released programs and certificates.  With almost 2 billion websites on the internet and software continuously updated and released, it's impossible to have information about every single site and program.
+No antivirus or protection technology is perfect. It takes time to identify and block malicious sites and applications, or trust newly released programs and certificates. With almost 2 billion websites on the internet and software continuously updated and released, it's impossible to have information about every single site and program.
 
 Think of Unknown/Uncommonly downloaded warnings as an early warning system for potentially undetected malware. There's generally a delay from the time new malware is released until it's identified. Not all uncommon programs are malicious, but the risk in the unknown category is much higher for the typical user. Warnings for unknown software aren't blocks. Users can choose to download and run the application normally if they wish to.
 
@@ -49,11 +50,11 @@ Microsoft classifies most malicious software into one of the following categorie
 
 * **Backdoor:** A type of malware that gives malicious hackers remote access to and control of your device.
 
-* **Command and Control:** A type of malware that infects your device and establishes communication with the hackers’ command-and-control server to receive instructions. Once communication is established, hackers can send commands that can steal data, shut down and reboot the device, and disrupt web services.
+* **Command and Control:** A type of malware that infects your device and establishes communication with the hackers' command-and-control server to receive instructions. Once communication is established, hackers can send commands that can steal data, shut down and reboot the device, and disrupt web services.
 
 * **Downloader:** A type of malware that downloads other malware onto your device. It must connect to the internet to download files.
 
-* **Dropper:** A type of malware that installs other malware files onto your device. Unlike a downloader, a dropper doesn't have to connect to the internet to drop malicious files. The dropped files are typically embedded in the dropper itself.
+* **Dropper:** A type of malware that installs other malware files onto your device. Unlike a downloader, a dropper doesn't have to connect to the internet to drop malicious files. The dropped files are typically embedded in the dropper itself.
 
 * **Exploit:** A piece of code that uses software vulnerabilities to gain access to your device and perform other tasks, such as installing malware. [See more information about exploits](exploits-malware.md).
 

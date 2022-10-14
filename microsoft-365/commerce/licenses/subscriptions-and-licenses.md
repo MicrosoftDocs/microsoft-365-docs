@@ -5,12 +5,13 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: micurn, nicholak
+ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
@@ -21,12 +22,12 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "The applications and services that you receive depend on which Microsoft 365 product you purchased, such as Microsoft 365 Apps for business."
-ms.date: 07/01/2020
+ms.date: 05/12/2022
 ---
 
 # Understand subscriptions and licenses in Microsoft 365 for business
 
-When you buy a subscription to Microsoft 365 for business, you sign up for a set of apps and services that you pay for on either a monthly or an annual basis. The applications and services that you receive as part of your subscription depend on which product you purchased, such as Microsoft 365 Apps for business or Microsoft 365 Business Standard. You can see what comes with each product on the [Microsoft 365 for small and medium-sized businesses](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) page.
+When you buy a subscription to Microsoft 365 for business, you sign up for a set of apps and services that you pay for on a recurring basis. The applications and services that you receive as part of your subscription depend on which product you purchased, such as Microsoft 365 Apps for business or Microsoft 365 Business Standard. You can see what comes with each product on the [Microsoft 365 for small and medium-sized businesses](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products) page.
 
 When you buy a subscription, you specify the number of licenses that you need, based on how many people you have in your organization. After you buy a subscription, you create accounts for people in your organization, and then assign a license to each person. As your organizational needs change, you can buy more licenses to accommodate new people, or reassign licenses to other users when someone leaves your organization.
 
@@ -60,12 +61,12 @@ If your subscription includes any of the following products, each person can ins
 
 The following table lists what automatically happens when you assign a license to someone:
   
-|**If the subscription has this service**|**This automatically happens**|
-|:-----|:-----|
-|Exchange Online  <br/> |A mailbox is created for that person. <br/> To learn about the SLA for this task to be completed, see ["Setting up..." messages in the Microsoft 365 admin center](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
-|SharePoint Online  <br/> |Edit permissions to the default SharePoint Online team site are assigned to that person.  <br/> |
-|Skype for Business Online  <br/> |The person has access to the features associated with the license.  <br/> |
-|Microsoft 365 Apps for enterprise and Microsoft 365 Apps for business  <br/> |The person can download Office apps on up to five Macs or PCs, five tablets, and five smartphones.  <br/> |
+|If the subscription has this service|This automatically happens|
+|---|---|
+|Exchange Online|A mailbox is created for that person. <br/> To learn about the SLA for this task to be completed, see ["Setting up..." messages in the Microsoft 365 admin center](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center).|
+|SharePoint Online|Edit permissions to the default SharePoint Online team site are assigned to that person.|
+|Microsoft Teams|The person has access to the features associated with the license.|
+|Microsoft 365 Apps for enterprise and Microsoft 365 Apps for business|The person can download Office apps on up to five Macs or PCs, five tablets, and five smartphones.|
 
 ## Understand licenses for non-user mailboxes
 
@@ -79,13 +80,13 @@ You don't need to assign licenses to resource mailboxes, room mailboxes, and sha
 
 Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   
-|**Admin role**|**Assign a license**|**Unassign a license**|**Buy more licenses**|**Delete an account**|
-|:-----|:-----|:-----|:-----|:-----|
-|Billing admin  <br/> |No  <br/> |No  <br/> |Yes  <br/> |No  <br/> |
-|Global admin  <br/> |Yes  <br/> |Yes  <br/> |Yes  <br/> |Yes  <br/> |
-|License admin <br/> |Yes <br/>|Yes <br/> |No <br/> |No <br/> |
-|Service Support admin  <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
-|User admin  <br/> |Yes  <br/> |Yes  <br/> |No  <br/> |Yes  <br/> |
+|Admin role|Assign a license|Unassign a license|Buy more licenses|Delete an account|
+|---|:---:|:---:|:---:|:---:|
+|Billing admin|No|No|Yes|No|
+|Global admin|Yes|Yes|Yes|Yes|
+|License admin|Yes|Yes|No|No|
+|Service Support admin|No|No|No|No|
+|User admin|Yes|Yes|No|Yes|
 
 ## Related content
 

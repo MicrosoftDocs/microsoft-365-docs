@@ -2,13 +2,14 @@
 title: "SharePoint 2007 migration options to consider"
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: scotv
 ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Ent_O365
 - SPO_Content
 search.appverid:

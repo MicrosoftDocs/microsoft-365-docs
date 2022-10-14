@@ -3,7 +3,8 @@ title: View and manage actions in the Action center
 description: Use the Action center to view and manage remediation actions
 keywords: action, center, autoair, automated, investigation, response, remediation
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,23 +13,20 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: how-to
 ms.custom: 
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.technology: m365d
 ---
 
 # View and manage actions in the Action center
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 - Microsoft 365 Defender
@@ -42,6 +40,11 @@ Threat protection features in Microsoft 365 Defender can result in certain remed
 > [!NOTE]
 > You must have [appropriate permissions](m365d-action-center.md#required-permissions-for-action-center-tasks) to approve or reject remediation actions. For more information, see the [prerequisites](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 
+To navigate to the Action center, take one of the following steps:
+
+- Go to [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center); or
+- In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the Automated investigation & response card, select **Approve in Action Center**.
+
 ## Review pending actions in the Action center
 
 It's important to approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner. 
@@ -52,7 +55,7 @@ It's important to approve (or reject) pending actions as soon as possible so tha
 
 3. In the Action center, on the **Pending** tab, select an item in the list. Its flyout pane opens. Here's an example.
 
-   :::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Example of approving or rejecting an action." lightbox="../../media/air-actioncenter-itemselected.png":::
+   :::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="The options to approve or reject an action" lightbox="../../media/air-actioncenter-itemselected.png":::
 
 4. Review the information in the flyout pane, and then take one of the following steps:
    - Select **Open investigation page** to view more details about the investigation.
@@ -62,7 +65,7 @@ It's important to approve (or reject) pending actions as soon as possible so tha
 
 ## Undo completed actions
 
-If you’ve determined that a device or a file is not a threat, you can undo remediation actions that were taken, whether those actions were taken automatically or manually. In the Action center, on the **History** tab, you can undo any of the following actions:  
+If you've determined that a device or a file is not a threat, you can undo remediation actions that were taken, whether those actions were taken automatically or manually. In the Action center, on the **History** tab, you can undo any of the following actions:  
 
 | Action source | Supported Actions |
 |:---|:---|

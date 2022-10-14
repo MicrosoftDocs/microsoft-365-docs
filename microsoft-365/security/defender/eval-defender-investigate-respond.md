@@ -1,9 +1,10 @@
 ---
-title: Step 6. Investigate and respond using Microsoft 365 Defender in a pilot environment
+title: Investigate and respond using Microsoft 365 Defender in a pilot environment
 description: Set up attack simulations in Microsoft 365 Defender trial lab or pilot environment to try out the security solution designed to teach users to protect devices, identity, data, and applications.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,11 +17,13 @@ ms.date: 07/09/2021
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365solution-scenario
   - m365solution-evalutatemtp
+  - zerotrust-solution
+  - highpri
+  - tier1
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Step 6. Investigate and respond using Microsoft 365 Defender in a pilot environment
@@ -32,7 +35,7 @@ This article outlines the process to create incidents with attack simulations an
 
 Use the following steps.
 
-![Steps for performing simulated incident response in the Microsoft 365 Defender evaluation environment.](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png)
+:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png" alt-text="The steps for performing simulated incident response in the Microsoft 365 Defender evaluation environment" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png":::
 
 The following table describes the steps in the illustration.
 

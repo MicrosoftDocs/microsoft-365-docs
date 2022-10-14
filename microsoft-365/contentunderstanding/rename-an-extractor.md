@@ -1,21 +1,21 @@
 ---
-title: Rename an extractor in Microsoft SharePoint Syntex
+title: Rename an extractor in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how and why to rename an extractor in Microsoft SharePoint Syntex.
+description: Learn how and why to rename an extractor in Microsoft Syntex.
 ---
 
-# Rename an extractor in Microsoft SharePoint Syntex
+# Rename an extractor in Microsoft Syntex
 
 At some point, you might need to rename an extractor if you want to refer to an extracted data field by a different name. For example, your organization decides to make changes to their contract documents, and refers to “customers” as “clients” in their documents. If you were extracting a “Customer” field in your model, you can choose to rename it to “Client.”
 
@@ -46,7 +46,7 @@ Follow these steps to rename an entity extractor.
 
 5. Select **Rename**.
 
-## See Also
+## See also
 [Create an extractor](create-an-extractor.md)
 
 [Create a classifier](create-a-classifier.md)

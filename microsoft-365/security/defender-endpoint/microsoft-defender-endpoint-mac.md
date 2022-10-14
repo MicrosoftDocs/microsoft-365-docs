@@ -3,7 +3,7 @@ title: Microsoft Defender for Endpoint on Mac
 ms.reviewer: 
 description: Learn how to install, configure, update, and use Microsoft Defender for Endpoint on Mac.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, monterey, big sur, catalina, mojave, mde for mac
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,10 +13,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint on Mac
@@ -109,12 +110,8 @@ The following downloadable spreadsheet lists the services and their associated U
 
 |Spreadsheet of domains list| Description|
 |---|---|
-|Microsoft Defender for Endpoint URL list for commercial customers | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
-|
-
-
-
+|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 Microsoft Defender for Endpoint can discover a proxy server by using the following discovery methods:
 
@@ -162,9 +159,10 @@ Guidance for how to configure the product in enterprise environments is availabl
 
 ## macOS kernel and system extensions
 
-In alignment with macOS evolution, we are preparing a Microsoft Defender for Endpoint on Mac update that leverages system extensions instead of kernel extensions. For relevant details, see [What's new in Microsoft Defender for Endpoint on Mac](mac-whatsnew.md).
+Starting with macOS 11 (Big Sur), Microsoft Defender for Endpoint has been fully migrated from kernel extension to system extensions. Kernel extension is still being used on macOS 10.15 (Catalina).
 
 ## Resources
 
 - For more information about logging, uninstalling, or other topics, see [Resources for Microsoft Defender for Endpoint on Mac](mac-resources.md).
 - [Privacy for Microsoft Defender for Endpoint on Mac](mac-privacy.md).
+- [Turn on Network protection for macOS](network-protection-macos.md)

@@ -2,12 +2,13 @@
 title: "Setup guides for Microsoft 365 and Office 365 services"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 - SPO_Content
@@ -86,6 +87,10 @@ Microsoft Search helps your organization find what they need to complete what th
 
 The [Microsoft Search setup guide](https://aka.ms/MicrosoftSearchSetup) helps you configure Microsoft Search whether you want to pilot it to a group of users or roll it out to everyone in your org. You'll assign Search admins and Search editors and then customize the search experience for your users with answers and more options, like adding the Bing extension to Chrome or setting Bing as your default search engine.
 
+### Block use of Internet Explorer in your organization
+
+Microsoft support for Internet Explorer 11 is ending soon for most versions of Windows 10. The [Block use of Internet Explorer in your organization guide](https://aka.ms/retireinternetexplorer) ensures that your users can still run legacy web apps that rely on Internet Explorer. This guide also helps you move those users to Microsoft Edge with IE mode.
+
 ## Guides for authentication and access
 
 ### Configure multi-factor authentication (MFA)
@@ -130,10 +135,6 @@ Give users the ability to change or reset their password independently, if their
 
 Use the [Plan your self-service password reset deployment](https://aka.ms/SSPRSetupGuide) guide to receive relevant articles and instructions for configuring the appropriate Azure portal options to help you deploy SSPR in your environment.
 
-### Active Directory Federation Services (AD FS) deployment advisor
-
-The [AD FS deployment advisor](https://aka.ms/adfsguidance) provides you with step-by-step guidance on deploying an on-premises AD FS infrastructure that authenticates users for Microsoft 365 and Office 365 services. With this guide, your organization can review AD FS components and requirements, acquire and install SSL certificates that are necessary for deployment, and install a required web application proxy server.
-
 ## Guides for security and compliance
 
 ### Security analyzer
@@ -176,17 +177,25 @@ The solutions in this guide will help you gain visibility into user activities, 
 * With the communication compliance solution, you can identify and act on communication risks for items like workplace violence, insider trading, harassment, code of conduct, and regulatory compliance violations.
 * The insider risk management solution helps you identify, investigate, and take action on risks for intellectual property theft, sensitive data leaks, security violations, data spillage, and confidentiality violations.
 
-### Microsoft information protection setup guide
+### Microsoft Purview Information Protection setup guide
 
-Get an overview of the capabilities you can apply to your Information Protection strategy so you can be confident your sensitive information is protected. Use a four-stage lifecycle approach in which you discover, classify, protect, and monitor sensitive information. The [Microsoft information protection setup guide](https://aka.ms/mipsetupguide) provides guidance for completing each of these stages.
+Get an overview of the capabilities you can apply to your information protection strategy so you can be confident your sensitive information is protected. Use a four-stage lifecycle approach in which you discover, classify, protect, and monitor sensitive information. The [Microsoft Purview Information Protection setup guide](https://aka.ms/microsoftpurviewinformationprotectionsetupguide) provides guidance for completing each of these stages.
 
-### Microsoft information governance setup guide
+### Microsoft Purview Data Lifecycle Management setup guide
 
-The [Microsoft Information governance setup guide](https://aka.ms/migsetupguide) provides you with the information you'll need to set up and manage your organization's governance strategy, to ensure that your data is classified and managed according to the specific lifecycle guidelines you set. With this guide, you'll learn how to create, auto-apply, or publish labels, label policies, and retention policies that are applied to your organization's reusable content and compliance records. You'll also get information on importing CSV files with a file plan for bulk scenarios or for applying them manually to individual documents.
+The [Microsoft Purview Data Lifecycle Management setup guide](https://aka.ms/migsetupguide) provides you with the information you'll need to set up and manage your organization's governance strategy, to ensure that your data is classified and managed according to the specific lifecycle guidelines you set. With this guide, you'll learn how to create, auto-apply, or publish retention labels, retention label policies, and retention policies that are applied to your organization's content and compliance records. You'll also get information on importing CSV files with a file plan for bulk scenarios or for applying them manually to individual documents.
 
 ### Microsoft Defender for Cloud Apps setup guide
 
 The [Microsoft Defender for Cloud Apps setup guide](https://aka.ms/cloudappsecuritysetup) provides easy to follow deployment and management guidance to set up your Cloud Discovery solution. With Cloud Discovery, you'll integrate your supported security apps, and then you'll use traffic logs to dynamically discover and analyze the cloud apps that your organization uses. You'll also set up features available through the Defender for Cloud Apps solution, including threat detection policies to identify high-risk use, information protection policies to define access, and real-time session controls to monitor activity. With these features, your environment gets enhanced visibility, control over data movement, and analytics to identify and combat cyberthreats across all your Microsoft and third party cloud services.
+
+### Audit solutions setup guide
+
+The [Microsoft 365 auditing solutions guide](https://aka.ms/auditsolutionsetup) provides an integrated solution to help organizations effectively respond to security events, forensic investigations, and compliance obligations. When you use the auditing solutions in Microsoft 365, you can search the audit log for activities performed in different Microsoft 365 services.
+
+### eDiscovery solutions setup guide
+
+eDiscovery is the process of identifying and delivering electronic information that can be used as evidence in legal cases. The eDiscovery solutions setup guide assists in the use of eDiscovery tools in Microsoft Purview that allow you to search for content in Exchange Online, OneDrive for Business, SharePoint Online, Microsoft Teams, Microsoft 365 Groups, and Yammer communities.
 
 ## Guides for collaboration
 
@@ -205,6 +214,10 @@ The [Mobile apps setup guide](https://aka.ms/officeappguidance) provides instruc
 ### Microsoft Teams setup guide
 
 The [Microsoft Teams setup guide](https://aka.ms/teamsguidance) provides your organization with guidance to set up team workspaces that host real-time conversations through messaging, calls, and audio or video meetings for both team and private communication. Use the tools in this guide to configure Guest access, set who can create teams, and add team members from a .csv file, all without the need to open a PowerShell session. You'll also get best practices for determining your organization's network requirements and ensuring a successful Teams deployment.
+
+### Teams Phone setup guide
+
+The [Teams Phone setup guide](https://aka.ms/teamsphonesetupguide) helps you stay connected with the use of modern calling solutions. Apply key capabilities with a cloud-based, call-control system that supports the telephony workload for Teams. You can choose and deploy features from the available public switched telephone network (PSTN) connectivity options. You can also find assistance for other features, such as auto attendant, call queues, Audio Conferencing, caller ID, and live events.
 
 ### SharePoint setup guide
 
@@ -241,3 +254,7 @@ For organizations using Configuration Manager, you can use the [Deploy and updat
 ### Intune Configuration Manager co-management setup guide
 
 Use the [Intune Configuration Manager co-management setup guide](https://aka.ms/comanagementsetup) to set up existing Configuration Manager client devices and new internet-based devices that your org wants to co-manage with both Microsoft Intune and Configuration Manager. Co-management allows you to manage Windows 10 devices and adds new functionality to your org's devices, while receiving the benefits of both solutions.
+
+### School Data Sync rollover setup guide
+
+The [SDS Rollover setup guide](https://aka.ms/sdsrolloversetupguide) provides the steps to help your organization sync student information data to Azure Active Directory and Office 365. This guide streamlines the term lifecycle management process by creating Office 365 Groups for Exchange Online and SharePoint Online, class teams for Microsoft Teams and OneNote, as well as Intune for Education, and rostering and single sign-on integration for third-party apps. You’ll perform end-of-year closeout, tenant cleanup and archive, new school year preparation, and new school year launch. Then you can create new profiles using the sync deployment method that suits your organization.

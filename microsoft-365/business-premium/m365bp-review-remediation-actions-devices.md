@@ -1,35 +1,37 @@
 ---
 title: Review remediation actions in Microsoft 365 Business Premium
-description: See how to view remediations that were taken automatically or that are awaiting approval in the Action center
+description: See how to view remediations that were taken automatically or that are awaiting approval in the Action center.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 02/24/2022
-ms.prod: m365-security
-ms.technology: mdb
-ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
+ms.localizationpriority: high
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
+- tier1
 ---
 
 # Review remediation actions in Microsoft 365 Business Premium
 
-As threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, remediation actions might be taken automatically or only upon approval. Examples of remediation actions include sending a file to quarantine, stopping a process from running, and removing a scheduled task. All remediation actions are tracked in the Action center, which is located at [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center).
+Okay, you've discovered a security breach, but what do you do? It depends on the nature of it.
+
+Examples of remediation actions include sending a file to quarantine, stopping a process from running, or completely removing a scheduled task. All remediation actions are tracked in the Action center, which is located at [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center).
 
 :::image type="content" source="../media/defender-business/mdb-actioncenter.png" alt-text="Screenshot of the Action Center in M365.":::
 
 **This article describes**:
 
-- [How to use the Action center](#how-to-use-your-action-center)
-
-- [Types of remediation actions](#types-of-remediation-actions)
+- [How to use the Action center](#how-to-use-your-action-center).
+- [Types of remediation actions](#types-of-remediation-actions).
 
 
 ## How to use your Action center
@@ -40,7 +42,7 @@ As threats are detected, remediation actions come into play. Depending on the pa
 
 3. Select the **Pending** tab to view and approve (or reject) any pending actions. Such actions can arise from antivirus/antimalware protection, automated investigations, manual response activities, or live response sessions.
 
-4. Select the **History** tab to view a list of completed actions. 
+4. Select the **History** tab to view a list of completed actions.
 
 ## Types of remediation actions
 

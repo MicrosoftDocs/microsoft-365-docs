@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
@@ -107,9 +108,9 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
     - Name: **{Tenant\_Name}\_application\_inbound\_api** (example: contoso\_applicaiton\_inbound\_api)
 
-    - Client ID: The Client ID of the application created in Prerequisites (Azure AD Auth Token) step \#2.
+    - Client ID: The Client ID of the application created in Prerequisites (Azure AD Auth Token) step \#3.
 
-    - Client Secret: The App Secret of the application created in Prerequisites (Azure AD Auth Token) step \#2.
+    - Client Secret: The App Secret of the application created in Prerequisites (Azure AD Auth Token) step \#3.
 
     - OAuth OIDC Provider Configuration: The OIDC provider created in the previous step
 

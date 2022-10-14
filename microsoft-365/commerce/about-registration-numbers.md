@@ -1,5 +1,5 @@
 ---
-title: "About registration numbers and under review notifications"
+title: "About registration numbers and under-review notifications"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150

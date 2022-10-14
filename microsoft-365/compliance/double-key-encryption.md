@@ -1,6 +1,5 @@
 ---
 # required metadata
-
 title: Double Key Encryption (DKE)
 description: DKE enables you to protect highly sensitive data while maintaining full control of your key.
 author: kccross
@@ -13,18 +12,17 @@ audience: Admin
 ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Double Key Encryption for Microsoft 365
+# Double Key Encryption
 
-> *Applies to: Double Key Encryption for Microsoft 365, [Microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+> *Applies to: Microsoft Purview Double Key Encryption, [Microsoft Purview](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/)*
 >
 > *Instructions for: [Azure Information Protection unified labeling client for Windows](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
-
-> *Service description for: [Microsoft 365 Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
+> *Service description for: [Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 Double Key Encryption (DKE) uses two keys together to access protected content. Microsoft stores one key in Microsoft Azure, and you hold the other key. You maintain full control of one of your keys using the Double Key Encryption service. You apply protection using The Azure Information Protection unified labeling client to your highly sensitive content.
 
@@ -32,9 +30,11 @@ Double Key Encryption supports both cloud and on-premises deployments. These dep
 
 For more information about the default, cloud-based tenant root keys, see [Planning and implementing your Azure Information Protection tenant key](/azure/information-protection/plan-implement-tenant-key).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## When your organization should adopt DKE
 
-Double Key Encryption is intended for your most sensitive data that is subject to the strictest protection requirements. DKE isn't intended for all data. In general, you'll be using Double Key Encryption to protect only a small part of your overall data. You should do due diligence in identifying the right data to cover with this solution before you deploy. In some cases, you might need to narrow your scope and use other solutions for most of your data, such as Microsoft Information Protection with Microsoft-managed keys or BYOK. These solutions are sufficient for documents that aren't subject to enhanced protections and regulatory requirements. Also, these solutions enable you to use the most powerful Office 365 services; services that you can't use with DKE encrypted content. For example:
+Double Key Encryption is intended for your most sensitive data that is subject to the strictest protection requirements. DKE isn't intended for all data. In general, you'll be using Double Key Encryption to protect only a small part of your overall data. You should do due diligence in identifying the right data to cover with this solution before you deploy. In some cases, you might need to narrow your scope and use other solutions for most of your data, such as Microsoft Purview Information Protection with Microsoft-managed keys or BYOK. These solutions are sufficient for documents that aren't subject to enhanced protections and regulatory requirements. Also, these solutions enable you to use the most powerful Office 365 services; services that you can't use with DKE encrypted content. For example:
 
 - Transport rules including anti-malware and spam that require visibility into the attachment
 - Microsoft Delve
@@ -46,7 +46,7 @@ Any external applications or services that aren't integrated with DKE through th
 
 The Microsoft Information Protection SDK 1.7+ supports Double Key Encryption. Applications that integrate with our SDK can reason over this data with sufficient permissions and integrations in place.
 
-Use Microsoft Information protection capabilities (classification and labeling) to protect most of your sensitive data and only use DKE for your mission-critical data. Double Key Encryption is relevant for sensitive data in highly regulated industries such as Financial services and Healthcare.
+Use Microsoft Purview Information Protection capabilities (classification and labeling) to protect most of your sensitive data and only use DKE for your mission-critical data. Double Key Encryption is relevant for sensitive data in highly regulated industries such as Financial services and Healthcare.
 
 If your organizations have any of the following requirements, you can use DKE to help secure your content:
 
@@ -56,21 +56,24 @@ If your organizations have any of the following requirements, you can use DKE to
 
 ## System and licensing requirements for DKE
 
-**Double Key Encryption for Microsoft 365** comes with Microsoft 365 E5. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](https://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+**Double Key Encryption** comes with Microsoft 365 E5. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](https://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Azure Information Protection**. DKE works with sensitivity labels and requires Azure Information Protection.
 
 DKE sensitivity labels are made available to end users through the sensitivity button in the AIP Unified Labeling client in Office Desktop Apps. Install these prerequisites on each client computer where you want to protect and consume protected documents.
 
-**Microsoft Office Apps for enterprise** version 2009 or later (Desktop versions of Word, PowerPoint, and Excel) on Windows.
+**Microsoft Office Apps for enterprise** version 2009 or later (Desktop versions of Word, Excel, PowerPoint and Outlook) on Windows.
 
-**Azure Information Protection Unified Labeling Client** versions 2.7.93.0 or later. Download and install the Unified Labeling client from the [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=53018).
+**Azure Information Protection Unified Labeling Client** versions 2.14.93.0 or later. Download and install the Unified Labeling client from the [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=53018).
 
 ## Supported environments for storing and viewing DKE-protected content
 
-**Supported applications**. [Microsoft 365 Apps for enterprise](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clients on Windows, including Word, Excel, and PowerPoint.
+**Supported applications**. [Microsoft 365 Apps for enterprise](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clients on Windows, including Word, Excel, PowerPoint and Outlook.
 
 **Online content support**. You can store documents and files that are protected with Double Key Encryption online in both Microsoft SharePoint and OneDrive for Business. You must label and protect documents and files with DKE by supported applications before you upload to these locations. You can share encrypted content by email, but you can't view encrypted documents and files online. Instead, you must view protected content using the supported desktop applications and clients on your local computer.
+
+**Outlook encryption only and do not forward scenarios**
+Configuring DKE for supported scenarios will create a warning in the label configuration experience. For encryption only and do not forward, these unsupported scenarios have no warning in the label configuration experience.
 
 ## Overview of deploying DKE
 
@@ -78,7 +81,7 @@ You'll follow these general steps to set up DKE. Once you've completed these ste
 
 1. Deploy the DKE service as described in this article.
 
-2. Create a label with Double Key Encryption. In the Microsoft 365 compliance center, navigate to **Information protection** and create a new label with Double Key Encryption. See [Restrict access to content by using sensitivity labels to apply encryption](./encryption-sensitivity-labels.md).
+2. Create a label with Double Key Encryption. In the Microsoft Purview compliance portal, navigate to **Information protection** and create a new label with Double Key Encryption. See [Restrict access to content by using sensitivity labels to apply encryption](./encryption-sensitivity-labels.md).
 
 3. Use Double Key Encryption labels. Protect data by selecting the Double Key Encrypted label from the Sensitivity ribbon in Microsoft Office.
 
@@ -88,7 +91,6 @@ There are several ways you can complete some of the steps to deploy Double Key E
 
 This article and the deployment video use Azure as the deployment destination for the DKE service. If you're deploying to another location, you'll need to provide your own values.
 
-Watch the [Double Key Encryption deployment video](https://youtu.be/vDWfHN_kygg) to see a step-by-step overview of the concepts in this article. The video takes about 18 minutes to complete.
 
 You'll follow these general steps to set up Double Key Encryption for your organization.
 
@@ -245,10 +247,10 @@ DKE tenant and key settings are located in the **appsettings.json** file.
 > [!NOTE]
 > If you want to enable external B2B access to your key store, you will also need to include these external tenants as part of the valid issuers' list.
 
-Locate the `JwtAudience`. Replace `<yourhostname>` with the hostname of the machine where the DKE service will run. For example:
+Locate the `JwtAudience`. Replace `<yourhostname>` with the hostname of the machine where the DKE service will run. For example: "https://dkeservice.contoso.com"
 
   > [!IMPORTANT]
-  > The value for `JwtAudience` must match the name of your host *exactly*. You may use **localhost:5001** while debugging. However, When you're done debugging, make sure to update this value to the server's hostname.
+  > The value for `JwtAudience` must match the name of your host *exactly*.  
 
 - `TestKeys:Name`. Enter a name for your key. For example: `TestKey1`
 - `TestKeys:Id`. Create a GUID and enter it as the `TestKeys:ID` value. For example, `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. You can use a site like [Online GUID Generator](https://guidgenerator.com/) to randomly generate a GUID.
@@ -357,17 +359,8 @@ Use the following instructions to build the DKE project locally:
 
    If there are red errors, check the console output. Ensure that you completed all the previous steps correctly and the correct build versions are present.
 
-4. Select **Run** \> **Start Debugging** to debug the process. If you're prompted to select an environment, select **.NET core**.
 
-   The .NET core debugger typically launches to `https://localhost:5001`. To view your test key, go to `https://localhost:5001` and append a forward slash (/) and the name of your key. For example:
-
-   ```https
-   https://localhost:5001/TestKey1
-   ```
-
-   The key should display in JSON format.
-
-Your setup is now complete. Before you publish the keystore, in appsettings.json, for the JwtAudience setting, ensure the value for hostname exactly matches your App Service host name. You may have changed it to localhost to troubleshoot the build.
+Your setup is now complete. Before you publish the keystore, in appsettings.json, for the JwtAudience setting, ensure the value for hostname exactly matches your App Service host name. 
 
 ### Deploy the DKE service and publish the key store
 
@@ -406,7 +399,7 @@ To publish the key store, you'll create an Azure App Service instance to host yo
 
 1. Go to `https://<WebAppInstanceName>.scm.azurewebsites.net/ZipDeployUI`.
 
-   For example: `https://dkeservice.scm.azurewebsites.net/ZipDeployUI`
+   For example: `https://dkeservice.contoso.scm.azurewebsites.net/ZipDeployUI`
 
 2. In the codebase for the key store, go to the **customer-key-store\src\customer-key-store** folder, and verify that this folder contains the **customerkeystore.csproj** file.
 
@@ -463,7 +456,7 @@ src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/mykey
 For example:
 
 ```powershell
-key_store_tester.ps1 https://mydkeservice.com/mykey
+key_store_tester.ps1 https://dkeservice.contoso.com/TestKey1
 ```
 
 Ensure that no errors appear in the output. When you're ready, [register your key store](#register-your-key-store).
@@ -482,9 +475,7 @@ To register the DKE service:
 
 3. Select an account type from the options displayed.
 
-   If you're using Microsoft Azure with a non-custom domain, such as **onmicrosoft.com**, select **Accounts in this organizational directory only (Microsoft only - Single tenant).**
-
-   For example:
+    For example:
 
    > [!div class="mx-imgBorder"]
    > ![New App Registration.](../media/dke-app-registration.png)
@@ -503,10 +494,9 @@ To register the DKE service:
 
    - The URL you enter must match the hostname where your DKE service is deployed.
    - The domain must be a [verified domain](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains).
-   - If you're testing locally with Visual Studio, use `https://localhost:5001`.
-   - In all cases, the scheme must be **https**.
+    - In all cases, the scheme must be **https**.
 
-   Ensure the hostname exactly matches your App Service hostname. You may have changed it to `localhost` to troubleshoot the build. In **appsettings.json**, this value is the hostname you set for `JwtAudience`.
+   Ensure the hostname exactly matches your App Service hostname.
 
 9. Under **Implicit grant**, select the **ID tokens** checkbox.
 
@@ -544,12 +534,12 @@ Your DKE service is now registered. Continue by [creating labels using DKE](#cre
 
 ## Create sensitivity labels using DKE
 
-In the Microsoft 365 compliance center, create a new sensitivity label and apply encryption as you would otherwise. Select **Use Double Key Encryption** and enter the endpoint URL for your key. You need to include the key name you've provided within the "TestKeys" section of the appsettings.json file in the URL.
+In the Microsoft Purview compliance portal, create a new sensitivity label and apply encryption as you would otherwise. Select **Use Double Key Encryption** and enter the endpoint URL for your key. You need to include the key name you've provided within the "TestKeys" section of the appsettings.json file in the URL.
 
 For example: `https://testingdke1.azurewebsites.net/KEYNAME`
 
 > [!div class="mx-imgBorder"]
-> ![Select Use Double Key Encryption in the Microsoft 365 compliance center.](../media/dke-use-dke.png)
+> ![Select Use Double Key Encryption in the Microsoft Purview compliance portal.](../media/dke-use-dke.png)
 
 Any DKE labels you add will start appearing for users in the latest versions of Microsoft 365 Apps for enterprise.
 

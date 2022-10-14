@@ -13,21 +13,24 @@ ms.custom:
 - goldenconfig
 ms.collection:
 - M365-identity-device-management
-- M365-security-compliance
-ms.prod: m365-security
+- m365-security
+- zerotrust-solution
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Recommended Microsoft Defender for Cloud Apps policies for SaaS apps
 
 Microsoft Defender for Cloud Apps builds on Azure AD conditional access policies to enable real-time monitoring and control of granular actions with SaaS apps, such as blocking downloads, uploads, copy and paste, and printing. This feature adds security to sessions that carry inherent risk, such as when corporate resources are accessed from unmanaged devices or by guest users.
 
-Defender for Cloud Apps also integrates natively with Microsoft Information Protection, providing real-time content inspection to find sensitive data based on sensitive information types and sensitivity labels and to take appropriate action.
+Defender for Cloud Apps also integrates natively with Microsoft Purview Information Protection, providing real-time content inspection to find sensitive data based on sensitive information types and sensitivity labels and to take appropriate action.
 
 This guidance includes recommendations for these scenarios:
 
 - Bring SaaS apps into IT management
 - Tune protection for specific SaaS apps
-- Configure data loss prevention (DLP) to help comply with data protection regulations
+- Configure Microsoft Purview data loss prevention (DLP) to help comply with data protection regulations
 
 ## Bring SaaS apps into IT management
 
@@ -42,7 +45,7 @@ Permissions to SaaS apps are typically based on business need for access to the 
 
 To protect data across your collection of SaaS apps, the following diagram illustrates the necessary Azure AD conditional access policy plus suggested policies you can create in Defender for Cloud Apps. In this example, the policies created in Defender for Cloud Apps apply to all SaaS apps you are managing. These are designed to apply appropriate controls based on whether devices are managed as well as sensitivity labels that are already applied to files.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="Policies for managing SaaS apps in Defender for Cloud Apps." lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="The policies for managing SaaS apps in Defender for Cloud Apps" lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
 
 The following table lists the new conditional access policy you must create in Azure AD.
 
@@ -91,7 +94,7 @@ Defender for Cloud Apps can be a valuable tool for configuring protection for co
 
 The following illustration and table provide several examples of policies that can be configured to help comply with  the General Data Protection Regulation (GDPR). In these examples, policies look for specific data. Based on the sensitivity of the data, each policy is configured to take appropriate action.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-dlp.png" alt-text="Example Defender for Cloud Apps policies for data loss prevention." lightbox="../../media/microsoft-365-policies-configurations/mcas-dlp.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-dlp.png" alt-text="The Defender for Cloud Apps policies for data loss prevention page" lightbox="../../media/microsoft-365-policies-configurations/mcas-dlp.png":::
 
 |Protection level|Example policies|
 |---|---|
@@ -102,4 +105,4 @@ The following illustration and table provide several examples of policies that c
 
 ## Next steps
 
-For more information about using Defender for Cloud Apps, see [Microsoft Defender for Cloud Apps documentation](//cloud-app-security/).
+For more information about using Defender for Cloud Apps, see [Microsoft Defender for Cloud Apps documentation](/defender-cloud-apps/).

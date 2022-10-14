@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
@@ -25,7 +26,7 @@ ROBOTS: NOINDEX
 description: "Learn how to make a CSV file for AutoPilot in Microsoft 365 for business."
 ---
 
-# Device list CSV-file
+# Windows Autopilot device list CSV-file
 
 ## Device list .csv file format
 

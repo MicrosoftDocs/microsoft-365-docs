@@ -2,7 +2,7 @@
 title: Why you should use Microsoft Defender Antivirus together with Microsoft Defender for Endpoint
 description: For best results, use Microsoft Defender Antivirus together with your other Microsoft offerings.
 keywords: windows defender, antivirus, third party av
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,8 +13,11 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.technology: mde
-ms.collection: m365-security-compliance
+ms.subservice: mde
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint
@@ -26,6 +29,10 @@ ms.collection: m365-security-compliance
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 Microsoft Defender Antivirus is the next-generation protection component of [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) (Microsoft Defender for Endpoint).
 
@@ -45,10 +52,20 @@ Although you can use a non-Microsoft antivirus solution with Microsoft Defender 
 |8|Auditing events|Auditing event signals are available in [endpoint detection and response capabilities](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response). (These signals are not available with non-Microsoft antivirus solutions.)|
 |9|Geographic data|Compliant with ISO 270001 and data retention, geographic data is provided according to your organization's selected geographic sovereignty. See [Compliance offerings: ISO/IEC 27001:2013 Information Security Management Standards](/microsoft-365/compliance/offering-iso-27001).|
 |10|File recovery via OneDrive|If you are using Microsoft Defender Antivirus together with [Office 365](/Office365/Enterprise), and your device is attacked by ransomware, your files are protected and recoverable. [OneDrive Files Restore and Windows Defender take ransomware protection one step further](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-Restore-and-Windows-Defender-takes-ransomware/ba-p/188001).|
-|11|Technical support|By using Microsoft Defender for Endpoint together with Microsoft Defender Antivirus, you have one company to call for technical support. [Troubleshoot service issues](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-mdatp)and [review event logs and error codes with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md).|
+|11|Technical support|By using Microsoft Defender for Endpoint together with Microsoft Defender Antivirus, you have one company to call for technical support. [Troubleshoot service issues](/microsoft-365/security/defender-endpoint/troubleshoot-mdatp)and [review event logs and error codes with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md).|
+
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 ## Learn More
 
 [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 
-[Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+[Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)

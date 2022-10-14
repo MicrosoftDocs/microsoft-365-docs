@@ -5,7 +5,8 @@ description: Learn about the analyst report section of each threat analytics rep
 keywords: analyst report, threat analytics, detections, advanced hunting queries, mitigations, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +18,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
+- m365-security
+- tier1
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
@@ -30,14 +32,11 @@ ms.custom: seo-marvel-apr2020
 
 - Microsoft 365 Defender
 
-> Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).
->
-
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Each [threat analytics report](threat-analytics.md) includes dynamic sections and a comprehensive written section called the _analyst report_. To access this section, open the report about the tracked threat and select the **Analyst report** tab.
 
-![Image of the analyst report section of a threat analytics report.](../../media/threat-analytics/ta_analystreport_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_analystreport_mtp.png" alt-text="The analyst report section of a threat analytics report" lightbox="../../media/threat-analytics/ta_analystreport_mtp.png":::
 
 _Analyst report section of a threat analytics report_
 
@@ -90,7 +89,7 @@ Like the list of antivirus detections, some EDR alerts are designed to generical
 
 Email-related detections and mitigations from Microsoft Defender for Office 365, are included in analyst reports in addition to the endpoint data already available from Microsoft Defender for Endpoint.
 
-Prevented email attempt information gives you insights on whether your organization were a target of the threat tackled in the analyst report even if the attack has been effectively blocked before delivery or delivered to the junk mail folder.
+Prevented email attempt information gives you insights on whether your organization was a target of the threat tackled in the analyst report even if the attack has been effectively blocked before delivery or delivered to the junk mail folder.
 
 ## Find subtle threat artifacts using advanced hunting
 
@@ -101,7 +100,7 @@ While detections allow you to identify and stop the tracked threat automatically
 Advanced hunting queries in the analyst reports have been vetted by Microsoft analysts and are ready for you to run in the [advanced hunting query editor](https://security.microsoft.com/advanced-hunting). You can also use the queries to create [custom detection rules](custom-detection-rules.md) that trigger alerts for future matches.
 
 >[!NOTE]
-> Threat analytics is also available in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics). However, it does not have the data integration between Microsoft Defender for Office and Microsoft Defender for Endpoint that Microsoft 365 Defender threat analytics has.
+> Threat analytics is also available in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics). However, it does not have the data integration between Microsoft Defender for Office and Microsoft Defender for Endpoint.
 
 ## Related topics
 

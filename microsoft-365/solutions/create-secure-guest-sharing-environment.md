@@ -1,12 +1,13 @@
 ---
-title: "Create a secure guest sharing environment"
+title: "Create a more secure guest sharing environment"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection: 
+- highpri
 - SPO_Content
 - M365-security-compliance
 - m365solution-3tiersprotection
@@ -18,12 +19,12 @@ ms.custom:
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
-description: Learn about available options to create a secure guest sharing environment in Microsoft 365, providing guest access for improved collaboration.
+description: Learn about available options to create a more secure guest sharing environment in Microsoft 365, providing guest access for improved collaboration.
 ---
 
-# Create a secure guest sharing environment
+# Create a more secure guest sharing environment
 
-In this article, we'll walk through a variety of options for creating a secure guest sharing environment in Microsoft 365. These are examples to give you an idea of the options available. You can use these procedures in different combinations to meet the security and compliance needs of your organization.
+In this article, we'll walk through a variety of options for creating a more secure guest sharing environment in Microsoft 365. These are examples to give you an idea of the options available. You can use these procedures in different combinations to meet the security and compliance needs of your organization.
 
 This article includes:
 
@@ -148,7 +149,7 @@ It's important to note that for SharePoint and OneDrive locations, documents wil
 
 ## Set up web-only access for guests
 
-You can reduce your attack surface and ease administration by requiring guests to access your teams, sites, and files by using a web browser only.
+You can require guests to access your teams, sites, and files by using a web browser only. This reduces the chance that they might download sensitive files and leave them on an unmanaged device. This is also useful when sharing with environments that use shared devices.
 
 For Microsoft 365 Groups and Teams, this is done with an Azure AD conditional access policy. For SharePoint, this is configured in the SharePoint admin center. (You can also [use sensitivity labels to restrict guests to web-only access](../compliance/sensitivity-labels-teams-groups-sites.md).)
 
@@ -203,13 +204,13 @@ To configure a guest session timeout policy
 
 ## Create a sensitive information type for a highly sensitive project
 
-Sensitive information types are predefined strings that can be used in policy workflows to enforce compliance requirements. The Microsoft 365 Compliance Center comes with over one hundred sensitive information types, including driver's license numbers, credit card numbers, bank account numbers, etc.
+Sensitive information types are predefined strings that can be used in policy workflows to enforce compliance requirements. The Microsoft Purview compliance portal comes with over one hundred sensitive information types, including driver's license numbers, credit card numbers, bank account numbers, etc.
 
 You can create custom sensitive information types to help manage content specific to your organization. In this example, we'll create a custom sensitive information type for a highly sensitive project. We can then use this sensitive information type to automatically apply a sensitivity label.
 
 To create a sensitive information type
 
-1. In the [Microsoft 365 Compliance Center](https://compliance.microsoft.com), in the left navigation, expand **Classification**, and then click **Sensitive info types**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), in the left navigation, expand **Classification**, and then click **Sensitive info types**.
 2. Click **Create**.
 3. For **Name** and **Description**, type **Project Saturn**, and then click **Next**.
 4. Click **Add an element**.
@@ -227,7 +228,7 @@ If you are using sensitivity labels in your organization, you can automatically 
 
 To create an auto-labeling policy
 
-1. Open the [Microsoft 365 compliance admin center](https://compliance.microsoft.com).
+1. Open the [Microsoft Purview admin center](https://compliance.microsoft.com).
 2. In the left navigation, click **Information protection**.
 3. On the **Auto-labeling** tab, click **Create auto-labeling policy**.
 4. On the **Choose info you want this label applied to** page, choose **Custom** and click **Next**.
@@ -253,11 +254,11 @@ With the policy in place, when a user types "Project Saturn" into a document, th
 
 ## Create a DLP policy to remove guest access to highly sensitive files
 
-You can use [data loss prevention (DLP)](../compliance/dlp-learn-about-dlp.md) to prevent unwanted guest sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label and remove guest access.
+You can use [Microsoft Purview Data Loss Prevention (DLP)](../compliance/dlp-learn-about-dlp.md) to prevent unwanted guest sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label and remove guest access.
 
 To create a DLP rule
 
-1. In the Microsoft 365 compliance admin center, go to the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention).
+1. In the Microsoft Purview admin center, go to the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention).
 2. Click **Create policy**.
 3. Choose **Custom** and click **Next**.
 4. Type a name for the policy and click **Next**.

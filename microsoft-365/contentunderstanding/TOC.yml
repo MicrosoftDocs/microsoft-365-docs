@@ -1,14 +1,14 @@
-    - name: Microsoft SharePoint Syntex
+    - name: Microsoft Syntex
       href: index.md
  
     - name: Custom models
       items:
+            - name: Differences between custom models 
+              href: difference-between-document-understanding-and-form-processing-model.md  
             - name: Document understanding
               items:
                 - name: Overview
                   href: document-understanding-overview.md
-                - name: Differences between models 
-                  href: difference-between-document-understanding-and-form-processing-model.md  
                 - name: Import a sample model 
                   href: learn-about-document-understanding-models-through-the-sample-model.md
                 - name: Create a content center 
@@ -19,6 +19,8 @@
                   href: duplicate-a-model.md
                 - name: Rename a model
                   href: rename-a-model.md
+                - name: Delete a model
+                  href: delete-a-model.md
                 - name: Create an extractor
                   href: create-an-extractor.md
                 - name: Rename an extractor
@@ -47,8 +49,6 @@
               items:
                 - name: Overview 
                   href: form-processing-overview.md
-                - name: Differences between models 
-                  href: difference-between-document-understanding-and-form-processing-model.md  
                 - name: Create a form processing model 
                   href: create-a-form-processing-model.md
                 - name: Apply a retention label 
@@ -71,8 +71,14 @@
 
     - name: Content assembly
       items: 
-        - name: Create documents using content assembly 
+        - name: Overview 
           href: content-assembly.md
+        - name: Create a modern template
+          href: content-assembly-modern-template.md
+        - name: Create a document from a modern template 
+          href: content-assembly-create-document.md
+        - name: Generate documents using Power Automate 
+          href: automate-document-generation.md
      
     - name: Metadata search
       items: 
@@ -92,13 +98,13 @@
 
     - name: Setup and administration
       items:
-        - name: Licensing for SharePoint Syntex
+        - name: Licensing for Syntex
           href: syntex-licensing.md
-        - name: Set up SharePoint Syntex
+        - name: Set up Syntex
           href: set-up-content-understanding.md
         - name: Create a content center 
           href: create-a-content-center.md
-        - name: Manage SharePoint Syntex with PowerShell
+        - name: Manage Syntex with PowerShell
           items:
             - name: Overview
               href: powershell-syntex-intro.md
@@ -117,13 +123,15 @@
           href: adoption-getstarted.md
         - name: Scenarios and use cases
           href: adoption-scenarios.md 
+        - name: Assess your environment
+          href: adoption-assessment-tool.md 
         - name: Run a trial
           href: trial-syntex.md 
         - name: Manage contracts in Microsoft 365
           items:
             - name: Overview
               href: solution-manage-contracts-in-microsoft-365.md 
-            - name: Step 1. Use SharePoint Syntex
+            - name: Step 1. Use Microsoft Syntex
               href: solution-manage-contracts-step1.md
             - name: Step 2. Use Microsoft Teams
               href: solution-manage-contracts-step2.md

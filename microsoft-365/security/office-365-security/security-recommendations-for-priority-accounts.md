@@ -15,16 +15,23 @@ search.appverid:
   - MOE150
 ms.assetid: 
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365solution-overview
   - m365solution-protecthve
+  - highpri
 ms.custom:
 description: Admins can learn how to elevate the security settings and use reports, alerts, and investigations for priority accounts in their Microsoft 365 organizations.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Security recommendations for priority accounts in Microsoft 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Applies to:**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Not all user accounts have access to the same company information. Some accounts have access to sensitive information, such as financial data, product development information, partner access to critical build systems, and more. If compromised, accounts that have access to highly confidential information pose a serious threat. We call these types of accounts _priority accounts_. Priority accounts include (but aren't limited to) CEOs, CISOs, CFOs, infrastructure admin accounts, build system accounts, and more.
 
@@ -32,7 +39,7 @@ For attackers, ordinary phishing attacks that cast a random net for ordinary or 
 
 Microsoft 365 and Microsoft Defender for Office 365 contain several key features that provide additional layers of security for your priority accounts. This article describes these capabilities and how to use them.
 
-![Summary of the security recommendations in icon form.](../../media/security-recommendations-for-priority-users.png)
+:::image type="content" source="../../media/security-recommendations-for-priority-users.png" alt-text="The summary of the security recommendations in icon form" lightbox="../../media/security-recommendations-for-priority-users.png":::
 
 |Task|All Office 365 Enterprise plans|Microsoft 365 E3|Microsoft 365 E5|
 |---|:---:|:---:|:---:|
@@ -43,7 +50,7 @@ Microsoft 365 and Microsoft Defender for Office 365 contain several key features
 |[Train users](#train-users)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 > [!NOTE]
-> For information about securing _privileged accounts_ (admin accounts), see [this topic](/azure/architecture/framework/security/critical-impact-accounts).
+> For information about securing _privileged accounts_ (admin accounts), see [this topic](/security/compass/critical-impact-accounts).
 
 ## Increase sign-in security for priority accounts
 
@@ -87,7 +94,7 @@ After you secure and tag your priority users, you can use the available reports,
 
 |Feature|Description|
 |---|---|
-|Alerts|The user tags of affected users are visible and available as filters on the **Alerts** page in the Microsoft 365 Defender portal. For more information, see [Viewing alerts](../../compliance/alert-policies.md#viewing-alerts).|
+|Alerts|The user tags of affected users are visible and available as filters on the **Alerts** page in the Microsoft 365 Defender portal. For more information, see [Viewing alerts](../../compliance/alert-policies.md#view-alerts).|
 |Explorer <p> Real-time detections|In **Explorer** (Defender for Office 365 Plan 2) or **Real-time detections** (Defender for Office 365 Plan 1), user tags are visible in the Email grid view and the Email details flyout. User tags are also available as a filterable property. For more information, see  [Tags in Explorer](threat-explorer.md#tags-in-threat-explorer).|
 |Campaign Views|User tags are one of many filterable properties in Campaign Views in Microsoft Defender for Office 365 Plan 2. For more information, see [Campaign Views](campaigns.md).|
 |Threat protection status report|In virtually all of the views and detail tables in the **Threat protection status report**, you can filter the results by **priority accounts**. For more information, see [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).|
@@ -104,7 +111,7 @@ Microsoft 365 provides the following resources to help inform users in your orga
 |Concept|Resources|Description|
 |---|---|---|
 |Microsoft 365|[Customizable learning pathways](/office365/customlearning/)|These resources can help you put together training for users in your organization.|
-|Microsoft 365 security|[Learning module: Secure your organization with built-in, intelligent security from Microsoft 365](/learn/modules/security-with-microsoft-365)|This module enables you to describe how Microsoft 365 security features work together and to articulate the benefits of these security features.|
+|Microsoft 365 security|[Learning module: Secure your organization with built-in, intelligent security from Microsoft 365](/training/modules/security-with-microsoft-365)|This module enables you to describe how Microsoft 365 security features work together and to articulate the benefits of these security features.|
 |Multi-factor authentication|[Two-step verification: What is the additional verification page?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|This article helps end users understand what multi-factor authentication is and why it's being used at your organization.|
 |Attack simulation training|[Get started using Attack simulation training](attack-simulation-training-get-started.md)|Attack simulation training in Microsoft Defender for Office 365 Plan 2 allows admin to configure, launch, and track simulated phishing attacks against specific groups of users.|
 

@@ -1,5 +1,5 @@
 ---
-title: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
+title: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -11,14 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance 
+- tier1
+- purview-compliance 
 search.appverid:
 - MET150 
-description: Learn how to onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
+description: Learn how to onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro for Microsoft Defender for Endpoint customers
 ---
-# Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
+# Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers
 
-You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solutions.
+You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions.
 
 > [!IMPORTANT]
 > Use this procedure ***if you have*** deployed Microsoft Defender for Endpoint (MDE) to your macOS devices
@@ -26,16 +27,18 @@ You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solu
 **Applies to:**
 
 - Customers who have MDE deployed to their macOS devices.
-- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Insider risk management](insider-risk-management.md)
 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 
 - Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) and are associated with an identity (Azure AD joined UPN) through JAMF Connect or Intune.
 - Install the v95+ Edge browser on your macOS devices
 
-## Onboard devices into Microsoft 365 Compliance solutions using JAMF Pro
+## Onboard devices into Microsoft Purview solutions using JAMF Pro
 
 Onboarding a macOS device into Compliance solutions is a multi phase process.
 

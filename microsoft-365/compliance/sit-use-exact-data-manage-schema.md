@@ -11,7 +11,8 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -19,6 +20,8 @@ description: Learn how to edit or remove your exact data match schema.
 ms.custom: seo-marvel-apr2020
 ---
 # Manage your exact data match schema
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Editing the schema for EDM-based classification manually
 
@@ -29,7 +32,7 @@ If you want to make changes to your EDM schema, for example the **edm.xml** file
 
 1. Edit your **edm.xml** file (this is the file discussed in the [Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types).
 
-2. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+2. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 3. To update your database schema, run the following command:
 
@@ -57,7 +60,7 @@ If you want to make changes to your EDM schema, for example the **edm.xml** file
 
 If you want to remove the schema you're using for EDM-based classification, follow these steps:
 
-1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Run the following command, substituting the data store name of "patient records" with the one you want to remove (using the patientrecords store as an example):
 

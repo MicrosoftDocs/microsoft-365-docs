@@ -1,30 +1,32 @@
 ---
 title: "Investigating partially indexed items in eDiscovery"
+description: "Learn how to manage partially indexed items (also called unindexed items) from Exchange, SharePoint, and OneDrive for Business within your organization."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 06/14/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn how to manage partially indexed items (also called unindexed items) from Exchange, SharePoint, and OneDrive for Business within your organization."
 ---
 
 # Investigating partially indexed items in eDiscovery
 
-An eDiscovery search that you run from the Microsoft 365 compliance center automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. Most email messages and site documents are successfully indexed because they fall within the [Indexing limits for email messages](limits-for-content-search.md#indexing-limits-for-email-messages). However, some items may exceed these indexing limits, and will be partially indexed. Here are other reasons why items can't be indexed for search and are returned as partially indexed items when you run an eDiscovery search:
+An eDiscovery search that you run from the Microsoft Purview compliance portal automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. Most email messages and site documents are successfully indexed because they fall within the [Indexing limits for email messages](limits-for-content-search.md#indexing-limits-for-email-messages). However, some items may exceed these indexing limits, and will be partially indexed. Here are other reasons why items can't be indexed for search and are returned as partially indexed items when you run an eDiscovery search:
   
-- Email messages have an attached file that can't be opened, such as image files; this is the most common cause of partially indexed email items.
+- Email messages have an attached file that can't be opened; this is the most common cause of partially indexed email items.
 
 - Too many files attached to an email message.
 
@@ -34,6 +36,8 @@ An eDiscovery search that you run from the Microsoft 365 compliance center autom
 
 Although it varies, most organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed. The reason for the difference between the volume versus size is that larger files have a higher probability of containing content that can't be completely indexed.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Why does the partially indexed item count change for a search?
 
 After you run an eDiscovery search, the total number and size of partially indexed items in the locations that were searched are listed in the search result statistics that are displayed in the detailed statistics for the search. Note these are called  *unindexed items*  in the search statistics. Here are a few things that will affect the number of partially indexed items that are returned in the search results:
@@ -109,7 +113,8 @@ The following is a list of indexing errors and a description of the possible cau
 | `wordbreakertruncated` <br/> |Too many words were identified in the document during indexing. Processing of the property stopped when reaching the limit, and the property is truncated.  <br/> |
 
 Error fields describe which fields are affected by the processing error listed in the Error Tags field. If you're searching a property such as  `subject` or  `participants`, errors in the body of the message won't impact the results of your search. This can be useful when determining exactly which partially indexed items you might need to further investigate.
-  
+
+<!--
 ## Using a PowerShell script to determine your organization's exposure to partially indexed email items
 
 The following steps show you how to run a PowerShell script that searches for all items in all Exchange mailboxes, and then generates a report about your organization's ratio of partially indexed email items (by count and by size) and displays the number of items (and their file type) for each indexing error that occurs. Use the error tag descriptions in the previous section to identify the indexing error.
@@ -118,7 +123,7 @@ The following steps show you how to run a PowerShell script that searches for al
 
    ```powershell
      write-host "**************************************************"
-     write-host "     Security & Compliance Center PowerShell      " -foregroundColor yellow -backgroundcolor darkgreen
+     write-host "     Security & Compliance PowerShell      " -foregroundColor yellow -backgroundcolor darkgreen
      write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
      write-host "**************************************************"
      " " 
@@ -159,9 +164,9 @@ The following steps show you how to run a PowerShell script that searches for al
      }
    ```
 
-2. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/exchange-online-powershell).
+2. [Connect to Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell).
 
-3. In Security & Compliance Center PowerShell, go to the folder where you saved the script in step 1, and then run the script; for example:
+3. In Security & Compliance PowerShell, go to the folder where you saved the script in step 1, and then run the script; for example:
 
    ```powershell
    .\PartiallyIndexedItems.ps1
@@ -177,7 +182,8 @@ Here's an example fo the output returned by the script.
 > - The total number and size of email items, and your organization's ratio of partially indexed email items (by count and by size).
 > 
 > - A list error tags and the corresponding file types for which the error occurred.
-  
+-->
+
 ## See also
 
 [Partially indexed items in eDiscovery](partially-indexed-items-in-content-search.md)
