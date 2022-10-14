@@ -48,18 +48,16 @@ You can also export the report data into an Excel .csv file by selecting the **E
 
 The **Yammer device usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
   
-|Item|Description|
+|Metric|Definition|
 |:-----|:-----|
-|**Metric**|**Definition**|
 |Username  <br/> |The email address of the user. You can display the actual email address or make this field anonymous. This grid shows users who logged into Yammer using the Microsoft 365 account or who logged into the network using single sign-on. <br/> |
 |Display name  <br/> |The full name of the user. You can display the actual email address or make this field anonymous.  <br/> |
 |User state  <br/> |One of three values: Active, Deleted, or Suspended. These reports show data for active, suspended, and deleted users. They do not reflect pending users, because pending users cannot post, read, or like a message.   <br/> |
 |State change date (UTC)  <br/> |The date on which the user's state was changed in Yammer.  <br/> |
-|Last activity date (UTC)  <br/> |The last date (UTC) that the user participated in an Yammer activity.  <br/> |
+|Last activity date (UTC)  <br/> |The last date (UTC) that the user participated in a Yammer activity.  <br/> |
 |Web  <br/> |Indicates if the user has used Yammer on the web.  <br/> |
 |Windows phone  <br/> | Indicates if the user has used Yammer on a Windows phone.  <br/> |
 |Android phone  <br/> |Indicates if the user has used Yammer on an Android phone. <br/>|
 |iphone <br/> | Indicates if the user has used Yammer on an iPhone.  <br/> |
 |ipad  <br/> |Indicates if the user has used Yammer on an iPad. <br/>|
-|other  <br/> |Indicates if the user has used Yammer on another device, not listed previously. <br/>|
-|||
+|other  <br/> |Indicates if the user has used Yammer on another client, not listed previously. This includes Yammer Embed, SharePoint Web Part, Viva Engage, and select Outlook emails.  <br/>|
