@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 10/04/2022
+ms.date: 10/14/2022
 search.appverid:
 - MET150
 - MOE150
@@ -46,7 +46,7 @@ If you'd like more control, use Microsoft Purview Advanced Message Encryption to
 - Whether you want to allow emails to be revoked
 - Whether you want emails sent to external recipients to expire after a specified number of days.
 
-Once you've created the templates, apply them to encrypted emails by using Exchange mail flow rules. If you have Microsoft Purview Advanced Message Encryption, you can revoke any email that you've branded.
+Once you've created the templates, apply them to encrypted emails sent from your online mailbox by using Exchange mail flow rules. If you have Microsoft Purview Advanced Message Encryption, you can revoke any email that you've branded.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -141,12 +141,12 @@ To remove a custom branding template:
 
    For more information, see [Remove-OMEConfiguration](/powershell/module/exchange/remove-omeconfiguration).
 
-## Create an Exchange mail flow rule that applies your custom branding to encrypted emails
+## Create an Exchange mail flow rule that applies your custom branding to encrypted emails sent from your online organization
 
 > [!IMPORTANT]
 > Third-party applications that scan and modify mail can prevent branding from being applied correctly.
 
-After you've either modified the default template or created new branding templates, you can create Exchange mail flow rules to apply your custom branding based on certain conditions. Most importantly, the email must be encrypted. Such a rule will apply custom branding in the following scenarios:
+After you've either modified the default template or created new branding templates, you can create Exchange mail flow rules to apply your custom branding based on certain conditions. Most importantly, the email must be encrypted. Such a rule will apply custom branding to mail sent from your online mailbox in the following scenarios:
 
 - If the email was manually encrypted by the end user using Outlook or Outlook on the web, formerly Outlook Web App
 - If the email was automatically encrypted by an Exchange mail flow rule or Microsoft Purview Data Loss Prevention policy
