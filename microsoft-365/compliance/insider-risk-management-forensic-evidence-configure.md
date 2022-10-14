@@ -79,13 +79,13 @@ To configure forensic evidence settings, complete the following steps:
 
 ### Step 4: Create a policy
 
-Forensic evidence policies define the scope of security-related user activity to capture on configured devices. You can have one policy that captures all activities approved users perform on their devices (all keystrokes, mouse movements, and so on) and additional policies that capture only specific activities (such as printing or deleting files). Once created, you'll include these policies in forensic evidence requests to control what activity to capture for users whose requests are approved.
+Forensic evidence policies define the scope of security-related user activity to capture on configured devices. You can have one policy that captures all activities approved users perform on their devices (all keystrokes, mouse movements, and so on) and additional policies that capture only specific activities (such as printing or exfiltrating files). Once created, you'll include these policies in forensic evidence requests to control what activity to capture for users whose requests are approved.
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Forensic evidence policies**.
 2. Select **Create forensic evidence policy**.
 3. On the **Scope** page, you'll choose the scope of security-related user activity to capture. Select one of the following options:
 
-    - **Specific activities**: This option only captures activities detected by policies that users are included in. These activities are defined by the indicators selected in forensic evidence policies. Captures for this option will be available for review on the **Forensic evidence (preview)** tab on the **Alerts** dashboard.
+    - **Specific activities**: This option only captures activities detected by policies that users are included in. These activities are defined by the indicators selected in forensic evidence policies. Captures for this option will be available for review on the **Forensic evidence (preview)** tab on the **Alerts** or **Cases** dashboard.
     - **All activities**: This option captures any activity performed by users. This includes mouse movement, keystrokes, and all activities defined by insider risk indicators. Captures for this option will be available for review on the **Forensic evidence (preview)** tab on the **User activity reports (preview)** dashboard.
 4. Select **Next**.
 5. On the **Name and description** page, complete the following fields:
