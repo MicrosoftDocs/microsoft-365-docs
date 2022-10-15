@@ -148,6 +148,9 @@ Deploy this setting by using Group Policy, or by using the [Office cloud policy 
 
 Because this setting is specific to Windows Office apps, it has no impact on other apps on Windows that support sensitivity labels (such as Power BI) or other platforms (such as macOS, mobile devices, and Office for the web). If you don't want some or all users to see and use sensitivity labels across all apps and all platforms, don't assign a sensitivity label policy to those users.
 
+> [!TIP]
+> If you want to stop displaying built-in labels for Word, Excel, and PowerPoint, and display them just for Outlook, or the other way around, see [Scope labels to just Word, Excel, and PowerPoint, or to just Outlook](#scope-labels-to-just-word-excel-and-powerpoint-or-to-just-outlook).
+
 ## Office file types supported
 
 Generally, Office apps that have built-in labeling for Word, Excel, and PowerPoint files support the Open XML format (such as .docx and .xlsx) but not the Microsoft Office 97-2003 format (such as .doc and .xls), Open Document Format (such as .odt and .ods), or other formats. When a file type is not supported for built-in labeling, the **Sensitivity** button is not available in the Office app.
@@ -396,7 +399,7 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 > 
 > Your chosen values for these PowerShell settings are reflected in the label policy configuration in the Microsoft Purview compliance portal, and they automatically work for Outlook apps that support these settings. The other PowerShell advanced settings remain supported for the Azure Information Protection unified labeling client only.
 
-## Scope labels to just Word, Excel, and PowerPoint, or to just Outlook 
+## Scope labels to just Word, Excel, and PowerPoint, or to just Outlook
 
 > [!NOTE]
 > This capability is currently rolling out for built-in labeling, and in various stages of release across the platforms. Identify the minimum versions that support this feature by using the [capabilities tables](#support-for-sensitivity-label-capabilities-in-apps) on this page, and the row **Scope labels to files or emails**.
