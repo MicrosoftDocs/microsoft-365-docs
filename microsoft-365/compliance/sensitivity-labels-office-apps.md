@@ -84,7 +84,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Support co-authoring and AutoSave](sensitivity-labels-coauthoring.md) for labeled and encrypted documents | Current Channel: 2107+ <br /><br> Monthly Enterprise Channel: 2107+ <br /><br> Semi-Annual Enterprise Channel: 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[PDF support](#pdf-support)| Current Channel: 2208+ <br /><br> Monthly Enterprise Channel: 2208+ <br /><br> Semi-Annual Enterprise Channel: Under review|  Under review | Under review | Under review | Under review |
 |[Sensitivity bar](#sensitivity-bar) and [display label color](#label-colors) | Preview: Rolling out to [Beta Channel](https://office.com/insider) | Under review | Under review | Under review | Under review |
-|[Per-workload scoping](#scope-labels-to-files-or-emails) | Under review | Under review | Under review | Under review | Under review |
+|[Per-workload scoping](#scope-labels-to-just-word-excel-and-powerpoint-or-to-just-outlook) | Under review | Under review | Under review | Under review | Under review |
 
 ### Sensitivity label capabilities in Outlook
 
@@ -114,7 +114,7 @@ The numbers listed are the minimum Office application versions required for each
 |[PDF support](#pdf-support) | Preview: Rolling out to [Beta Channel](https://office.com/insider)|  Under review | Under review | Under review | Under review |
 |[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook) | Preview: Rolling out to [Beta Channel](https://office.com/insider) | 16.61+ <sup>\*</sup>                   | 4.2226+ | 4.2203+ | Under review |
 |[Sensitivity bar](#sensitivity-bar) and [display label color](#label-colors) | Under review |  Under review | Under review | Under review | Under review |
-|[Per-workload scoping](#scope-labels-to-files-or-emails) | Preview: Rolling out to [Beta Channel](https://office.com/insider) | Under review | Under review | Under review | Under review |
+|[Per-workload scoping](##scope-labels-to-just-word-excel-and-powerpoint-or-to-just-outlook) | Preview: Rolling out to [Beta Channel](https://office.com/insider) | Under review | Under review | Under review | Under review |
 
 **Footnotes:**
 
