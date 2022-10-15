@@ -114,7 +114,7 @@ The numbers listed are the minimum Office application versions required for each
 |[PDF support](#pdf-support) | Preview: Rolling out to [Beta Channel](https://office.com/insider)|  Under review | Under review | Under review | Under review |
 |[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook) | Preview: Rolling out to [Beta Channel](https://office.com/insider) | 16.61+ <sup>\*</sup>                   | 4.2226+ | 4.2203+ | Under review |
 |[Sensitivity bar](#sensitivity-bar) and [display label color](#label-colors) | Under review |  Under review | Under review | Under review | Under review |
-|[Per-workload scoping](##scope-labels-to-just-word-excel-and-powerpoint-or-to-just-outlook) | Preview: Rolling out to [Beta Channel](https://office.com/insider) | Under review | Under review | Under review | Under review |
+|[Per-workload scoping](#scope-labels-to-just-word-excel-and-powerpoint-or-to-just-outlook) | Preview: Rolling out to [Beta Channel](https://office.com/insider) | Under review | Under review | Under review | Under review |
 
 **Footnotes:**
 
