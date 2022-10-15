@@ -401,17 +401,24 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 > [!NOTE]
 > This capability is currently rolling out for built-in labeling, and in various stages of release across the platforms. Identify the minimum versions that support this feature by using the [capabilities tables](#support-for-sensitivity-label-capabilities-in-apps) on this page, and the row **Scope labels to files or emails**.
 
-This configuration is currently unavailable in the Microsoft Purview compliance portal. You must use the [Set-Label](/powershell/module/exchange/set-label) or [New-Label](/powershell/module/exchange/new-label) cmdlet fter you've [connected to Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+This configuration is currently unavailable in the Microsoft Purview compliance portal. You must use the [Set-Label](/powershell/module/exchange/set-label) or [New-Label](/powershell/module/exchange/new-label) cmdlet after you've [connected to Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 Use the **ContentType** parameter with the value of **File** when you want a sensitivity label to only display in Word, Excel, and PowerPoint, or the value of **Email** to only display in Outlook.
 
-Example PowerShell commands, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
+Example PowerShell command, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
 
 ```PowerShell
-Set-Label -Identity "8faca7b8-8d20-48a3-8ea2-0f96310a848e" -ContentType:File
-
 Set-Label -Identity "8faca7b8-8d20-48a3-8ea2-0f96310a848e" -ContentType:Email
+
 ```
+
+To return the label's scope to files and emails, use the same parameter with the value of **File, Email**.  For example:
+
+```PowerShell
+Set-Label -Identity "8faca7b8-8d20-48a3-8ea2-0f96310a848e" -ContentType:File,Email
+
+```
+
 
 ## Configure a label to apply S/MIME protection in Outlook
 

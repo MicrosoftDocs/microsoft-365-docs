@@ -164,6 +164,7 @@ Use the following information to help you identify if the features you use with 
 |Central reporting and auditing|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#auditing-labeling-activities) |
 |Government Cloud|![Supported.](../media/yes-icon.png)|
 |Admin can disable labeling for all apps|  ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows)|
+|Admin can display labels for just files or just emails| [In preview](sensitivity-labels-office-apps.md#scope-labels-to-just-word-excel-and-powerpoint-or-to-just-outlook)|
 |**Category: User Experience** ||
 |Labeling button on the ribbon|![Supported.](../media/yes-icon.png)|
 |Multilanguage support for label names and tooltips| ![Supported.](../media/yes-icon.png) <br>[Learn more](create-sensitivity-labels.md#example-configuration-to-configure-a-sensitivity-label-for-different-languages) |
