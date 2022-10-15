@@ -84,6 +84,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Support co-authoring and AutoSave](sensitivity-labels-coauthoring.md) for labeled and encrypted documents | Current Channel: 2107+ <br /><br> Monthly Enterprise Channel: 2107+ <br /><br> Semi-Annual Enterprise Channel: 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[PDF support](#pdf-support)| Current Channel: 2208+ <br /><br> Monthly Enterprise Channel: 2208+ <br /><br> Semi-Annual Enterprise Channel: Under review|  Under review | Under review | Under review | Under review |
 |[Sensitivity bar](#sensitivity-bar) and [display label color](#label-colors) | Preview: Rolling out to [Beta Channel](https://office.com/insider) | Under review | Under review | Under review | Under review |
+|[Per-workload scoping](#scope-labels-to-files-or-emails) | Under review | Under review | Under review | Under review | Under review |
 
 ### Sensitivity label capabilities in Outlook
 
@@ -113,6 +114,7 @@ The numbers listed are the minimum Office application versions required for each
 |[PDF support](#pdf-support) | Preview: Rolling out to [Beta Channel](https://office.com/insider)|  Under review | Under review | Under review | Under review |
 |[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook) | Preview: Rolling out to [Beta Channel](https://office.com/insider) | 16.61+ <sup>\*</sup>                   | 4.2226+ | 4.2203+ | Under review |
 |[Sensitivity bar](#sensitivity-bar) and [display label color](#label-colors) | Under review |  Under review | Under review | Under review | Under review |
+|[Per-workload scoping](#scope-labels-to-files-or-emails) | Preview: Rolling out to [Beta Channel](https://office.com/insider) | Under review | Under review | Under review | Under review |
 
 **Footnotes:**
 
@@ -393,6 +395,23 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 > If you have configured the PowerShell advanced settings **OutlookDefaultLabel** and **DisableMandatoryInOutlook** by using the [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) or [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) cmdlets:
 > 
 > Your chosen values for these PowerShell settings are reflected in the label policy configuration in the Microsoft Purview compliance portal, and they automatically work for Outlook apps that support these settings. The other PowerShell advanced settings remain supported for the Azure Information Protection unified labeling client only.
+
+## Scope labels to just Word, Excel, and PowerPoint, or to just Outlook 
+
+> [!NOTE]
+> This capability is currently rolling out for built-in labeling, and in various stages of release across the platforms. Identify the minimum versions that support this feature by using the [capabilities tables](#support-for-sensitivity-label-capabilities-in-apps) on this page, and the row **Scope labels to files or emails**.
+
+This configuration is currently unavailable in the Microsoft Purview compliance portal. You must use the [Set-Label](/powershell/module/exchange/set-label) or [New-Label](/powershell/module/exchange/new-label) cmdlet fter you've [connected to Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+
+Use the **ContentType** parameter with the value of **File** when you want a sensitivity label to only display in Word, Excel, and PowerPoint, or the value of **Email** to only display in Outlook.
+
+Example PowerShell commands, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
+
+```PowerShell
+Set-Label -Identity "8faca7b8-8d20-48a3-8ea2-0f96310a848e" -ContentType:File
+
+Set-Label -Identity "8faca7b8-8d20-48a3-8ea2-0f96310a848e" -ContentType:Email
+```
 
 ## Configure a label to apply S/MIME protection in Outlook
 
