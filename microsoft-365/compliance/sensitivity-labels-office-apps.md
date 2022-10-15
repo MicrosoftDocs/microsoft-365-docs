@@ -403,7 +403,7 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 
 This configuration is currently unavailable in the Microsoft Purview compliance portal. You must use the [Set-Label](/powershell/module/exchange/set-label) or [New-Label](/powershell/module/exchange/new-label) cmdlet after you've [connected to Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-Use the **ContentType** parameter with the value of **File** when you want a sensitivity label to only display in Word, Excel, and PowerPoint, or the value of **Email** to only display in Outlook.
+Use the *ContentType* parameter with the value of **File** when you want a sensitivity label to only display in Word, Excel, and PowerPoint, or the value of **Email** to only display in Outlook.
 
 Example PowerShell command, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
 
@@ -418,7 +418,6 @@ To return the label's scope to files and emails, use the same parameter with the
 Set-Label -Identity "8faca7b8-8d20-48a3-8ea2-0f96310a848e" -ContentType:File,Email
 
 ```
-
 
 ## Configure a label to apply S/MIME protection in Outlook
 
