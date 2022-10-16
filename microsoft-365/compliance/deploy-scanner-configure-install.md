@@ -233,21 +233,27 @@ The scanner now has a token to authenticate to Azure AD. This token is valid for
 
 Continue using one of the following steps, depending on whether you're using the compliance portal to configure your scanner, or PowerShell only:
 
-### Instructions for the compliance portal
+# [Admin portal only](#tab/azure-portal-only)
 
 You're now ready to run your first scan in discovery mode. For more information, see [Run a discovery cycle and view reports for the scanner](deploy-scanner-manage.md#run-a-discovery-cycle-and-view-reports-for-the-scanner).
 
 Once you've run your initial discovery scan, continue with [Configure the scanner to apply classification and protection](#configure-the-scanner-to-apply-classification-and-protection).
 
-### Instructions for PowerShell only
+# [PowerShell only](#tab/powershell-only)
 
-If you are configuring and installing your scanner using PowerShell instead of the scanner pages in the compliance portal, continue with the next step in [Use PowerShell to configure the scanner](#use-powershell-to-configure-the-scanner).
+If you are configuring and installing your scanner using PowerShell instead of the scanner pages in the compliance portal, continue with the next step in [Use PowerShell to configure the scanner](#powershell).
 
 Then:
 
-- [Run a discovery cycle and view reports for the scanner](deploy-scanner-manage.md#run-a-discovery-cycle-and-view-reports-for-the-scanner)
+- [Run a discovery cycle and view reports for the scanner](deploy-aip-scanner-manage.md#run-a-discovery-cycle-and-view-reports-for-the-scanner)
 - [Use PowerShell to configure the scanner to apply classification and protection](#use-powershell-to-configure-the-scanner-to-apply-classification-and-protection)
 - [Use PowerShell to configure a DLP policy with the scanner](#use-powershell-to-configure-a-dlp-policy-with-the-scanner)
+
+---
+
+> [!NOTE]
+> For more information, see [How to label files non-interactively for Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection)
+
 
 
 ## Configure the scanner to apply classification and protection
