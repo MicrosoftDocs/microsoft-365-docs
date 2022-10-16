@@ -161,6 +161,8 @@ To scan SharePoint document libraries and folders, ensure that your SharePoint s
 |**Large SharePoint farms** |For large SharePoint farms, check whether you need to increase the list view threshold (by default, 5,000) for the scanner to access all files. <br><br>For more information, see [Manage large lists and libraries in SharePoint](https://support.office.com/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59#__bkmkchangelimit&ID0EAABAAA=Server). |
 |**Long file paths**  |If you have long file paths in SharePoint, ensure that your SharePoint server's [httpRuntime.maxUrlLength](/dotnet/api/system.web.configuration.httpruntimesection.maxurllength) value is larger than the default 260 characters. <br><br>For more information, see [Avoid scanner timeouts in SharePoint](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#avoid-scanner-timeouts-in-sharepoint). | 
 
+
+
 ## Microsoft Office requirements
 
 To scan Office documents, your documents must be in one of the following formats:
@@ -218,7 +220,7 @@ The scanner can discover and scan all Sharepoint sites and subsites under a spec
 
 1. Add your scanner user to the new policy and grant **Site collection** in the Permissions list.
 
-1. Add a URL of the SharePoint that hosts sites or subsites that need to be scanned. For more information, see [Configure the scanner settings](/azure/information-protection/deploy-aip-scanner-configure-install#configure-the-scanner-settings).
+1. Add a URL of the SharePoint that hosts sites or subsites that need to be scanned. For more information, see [Configure the scanner settings](/azure/information-protection/deploy-scanner-configure-install#configure-the-scanner-settings).
 
 To learn more about how to manage your SharePoint policy levels see, [manage permission policies for a web application](/sharepoint/administration/manage-permission-policies-for-a-web-application).
 

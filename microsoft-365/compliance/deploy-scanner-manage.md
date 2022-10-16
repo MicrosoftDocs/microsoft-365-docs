@@ -17,7 +17,7 @@ description: Instructions for running the scanner from Microsoft Purview Informa
 
 # Running the information protection scanner
 
-Once you've confirmed your [system requirements](deploy-aip-scanner-prereqs.md) and [configured and installed your scanner](deploy-scanner-configure-install.md), [run a discovery scan](#run-a-discovery-cycle-and-view-reports-for-the-scanner) to get started.
+Once you've confirmed your [system requirements](deploy-scanner-prereqs.md) and [configured and installed your scanner](deploy-scanner-configure-install.md), [run a discovery scan](#run-a-discovery-cycle-and-view-reports-for-the-scanner) to get started.
 
 Use other steps detailed below to manage your scans moving forward.
 
@@ -69,7 +69,7 @@ Perform these steps again as needed when your content changes.
 > The admin portal displays information about the last scan only. If you need to see the results of previous scans, return to the reports that are stored on the scanner computer, in the %*localappdata*%\Microsoft\MSIP\Scanner\Reports folder.
 >
 
-[Initial configurations](deploy-aip-scanner-configure-install.md#configure-the-scanner-settings) instruct you to set the **Info types to be discovered** to **Policy only**. This configuration means that only files that meet the conditions you've configured for automatic classification are included in the detailed reports.
+[Initial configurations](deploy-scanner-configure-install.md#configure-the-scanner-settings) instruct you to set the **Info types to be discovered** to **Policy only**. This configuration means that only files that meet the conditions you've configured for automatic classification are included in the detailed reports.
 
 If you don't see any labels applied, check that your label configuration includes automatic rather than recommended classification, or enable **Treat recommended labeling as automatic** (available in scanner version 2.7.x.x and above).
 
@@ -83,7 +83,7 @@ The report folder location or name can't be changed. If you want to store report
 
 For example, use the [Mklink](/windows-server/administration/windows-commands/mklink) command: `mklink /j D:\Scanner_reports C:\Users\aipscannersvc\AppData\Local\Microsoft\MSIP\Scanner\Reports`
 
-If you've performed these steps after an initial configuration and installation, continue with [Configure the scanner to apply classification and protection](deploy-aip-scanner-configure-install.md#configure-the-scanner-to-apply-classification-and-protection).
+If you've performed these steps after an initial configuration and installation, continue with [Configure the scanner to apply classification and protection](deploy-scanner-configure-install.md#configure-the-scanner-to-apply-classification-and-protection).
 
 ## Stopping a scan
 

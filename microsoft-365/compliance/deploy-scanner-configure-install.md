@@ -46,7 +46,7 @@ Then, perform the following configuration procedures as needed for your system:
 
 |Procedure  |Description  |
 |---------|---------|
-|[Change which file types to protect](#change-which-file-types-to-protect) |You may want to scan, classify, or protect different file types than the default. For more information, see [AIP scanning process](deploy-aip-scanner.md#aip-scanning-process). |
+|[Change which file types to protect](#change-which-file-types-to-protect) |You may want to scan, classify, or protect different file types than the default. For more information, see [AIP scanning process](deploy-scanner.md#aip-scanning-process). |
 |[Upgrading your scanner](#upgrade-your-scanner) | Upgrade your scanner to use the latest features and improvements.|
 |[Editing data repository settings in bulk](#edit-data-repository-settings-in-bulk)| Use import and export options to make changes in bulk for multiple data repositories.|
 |[Use the scanner with alternative configurations](#use-the-scanner-with-alternative-configurations)| Use the scanner without configuring labels with any conditions |
@@ -99,7 +99,7 @@ Before you install the scanner, or upgrade it from an older general availability
 
 1. From the tabs on the **Information protection scanner** page, select **Clusters**.
 
-1. On the **Clusters** tab, select **Add** ![add icon](media/i-add.png "add icon").
+1. On the **Clusters** tab, select **Add** ![add icon](../media/i-add.png "add icon").
 
 1. On the **New cluster** pane, enter a meaningful name for the scanner, and an optional description.
 
@@ -117,7 +117,7 @@ Deep dive into your content to scan specific repositories for sensitive content.
 
 1. From the tabs on the **Information protection scanner** page, select **Content scan jobs**.
 
-1. On the **Content scan jobs** pane, select **Add** ![add icon](media/i-add.png "save icon").
+1. On the **Content scan jobs** pane, select **Add** ![add icon](../media/i-add.png "save icon").
 
 1. For this initial configuration, configure the following settings, and then select **Save**.
 
@@ -158,7 +158,7 @@ Deep dive into your content to scan specific repositories for sensitive content.
     For example: `http://sp2013/SharedDocuments`
     - Specify **Documents** in the path when you want to scan all documents and all folders from a subfolder under Shared Documents.
     For example: `http://sp2013/Documents/SalesReports`
-    - Or, specify only the **FQDN** of your Sharepoint, for example `http://sp2013` to [discover and scan all SharePoint sites and subsites under a specific URL](deploy-aip-scanner-prereqs.md#discover-and-scan-all-sharepoint-sites-and-subsites-under-a-specific-url) and subtitles under this URL. Grant scanner **Site Collector Auditor** rights to enable this.
+    - Or, specify only the **FQDN** of your Sharepoint, for example `http://sp2013` to [discover and scan all SharePoint sites and subsites under a specific URL](deploy-scanner-prereqs.md#discover-and-scan-all-sharepoint-sites-and-subsites-under-a-specific-url) and subtitles under this URL. Grant scanner **Site Collector Auditor** rights to enable this.
     >
 
 
@@ -188,7 +188,7 @@ After you've [configured the scanner](#configure-the-scanner-settings), perform 
     > [!IMPORTANT]
     > You must have the AIP unified labeling client installed on your machine before installing the scanner.
     >
-    > For more information, see [Prerequisites for installing and deploying the information protection scanner](deploy-aip-scanner-prereqs.md).
+    > For more information, see [Prerequisites for installing and deploying the information protection scanner](deploy-scanner-prereqs.md).
     >
 
 1. Open a Windows PowerShell session with the **Run as an administrator** option.
@@ -263,7 +263,7 @@ If you are configuring and installing your scanner using PowerShell instead of t
 
 Then:
 
-- [Run a discovery cycle and view reports for the scanner](deploy-aip-scanner-manage.md#run-a-discovery-cycle-and-view-reports-for-the-scanner)
+- [Run a discovery cycle and view reports for the scanner](deploy-scanner-manage.md#run-a-discovery-cycle-and-view-reports-for-the-scanner)
 - [Use PowerShell to configure the scanner to apply classification and protection](#use-powershell-to-configure-the-scanner-to-apply-classification-and-protection)
 - [Use PowerShell to configure a DLP policy with the scanner](#use-powershell-to-configure-a-dlp-policy-with-the-scanner)
 
@@ -300,7 +300,8 @@ Using a data loss prevention policy enables the scanner to detect potential data
 
 - **Enable DLP rules in your content scan job** to reduce the exposure of any files that match your DLP policies. When your DLP rules are enabled, the scanner may reduce file access to data owners only, or reduce exposure to network-wide groups, such as **Everyone**, **Authenticated Users**, or **Domain Users**.
 
-- **In the Microsoft Purview compliance portal**, determine whether you are just testing your DLP policy or whether you want your rules enforced and your file permissions changed according to those rules. For more information, see [Turn on a DLP policy](create-test-tune-dlp-policy#turn-on-a-dlp-policy.md).
+- **In the Microsoft Purview compliance portal**, determine whether you are just testing your DLP policy or whether you want your rules enforced and your file permissions changed according to those rules. For more information, see [Turn on a DLP policy](create-test-tune-dlp-policy.md
+- #turn-on-a-dlp-policy.md).
 
 DLP policies are configured in the Microsoft Purview compliance portal. For more information about DLP licensing, see [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md).
 
@@ -522,7 +523,8 @@ For more information, see [Supported PowerShell cmdlets](#supported-powershell-c
     For example: `http://sp2013/SharedDocuments`
     - Specify **Documents** in the path when you want to scan all documents and all folders from a subfolder under Shared Documents.
     For example: `http://sp2013/Documents/SalesReports`
-    - Or, specify only the **FQDN** of your Sharepoint, for example `http://sp2013` to [discover and scan all SharePoint sites and subsites under a specific URL](deploy-aip-scanner-prereqs.md#discover-and-scan-all-sharepoint-sites-and-subsites-under-a-specific-url) and subtitles under this URL. Grant scanner **Site Collector Auditor** rights to enable this.
+    - Or, specify only the **FQDN** of your Sharepoint, for example `http://sp2013` to [discover and scan all SharePoint sites and subsites under a specific URL](deploy-
+    - scanner-prereqs.md#discover-and-scan-all-sharepoint-sites-and-subsites-under-a-specific-url) and subtitles under this URL. Grant scanner **Site Collector Auditor** rights to enable this.
 
 
     Use the following syntax when adding SharePoint paths:
@@ -537,7 +539,7 @@ For more information, see [Supported PowerShell cmdlets](#supported-powershell-c
 Continue with the following steps as needed:
 
 - [Configuration for customers in China](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection)
-- [Run a discovery cycle and view reports for the scanner](deploy-aip-scanner-manage.md#run-a-discovery-cycle-and-view-reports-for-the-scanner)
+- [Run a discovery cycle and view reports for the scanner](deploy-scanner-manage.md#run-a-discovery-cycle-and-view-reports-for-the-scanner)
 - [Use PowerShell to configure the scanner to apply classification and protection](#use-powershell-to-configure-the-scanner-to-apply-classification-and-protection)
 - [Use PowerShell to configure a DLP policy with the scanner](#use-powershell-to-configure-a-dlp-policy-with-the-scanner)
 ### Use PowerShell to configure the scanner to apply classification and protection
