@@ -125,28 +125,6 @@ For multiple scanners:
     - 8 core processes
     - 16-GB RAM recommended
 
-### Permissions to scan SharePoint repositories
-
-To use the scanner across SharePoint repositories, specify the site URL for the scanner to discover all sites under that URL and scan them.
-
-To enable scans across repositories, add the following SharePoint permissions for the scanner account:
-
-1. Open SharePoint, and select **Permission Policy** and select **Add Permission Policy Level**.
-
-    ![Create new permissions policy level for a specific user](../media/aip-quick-set-sp-permissions.png)
-
-1. Under **Site Collection Permissions**, select the **Site Collector Auditor** option.
-
-1. Under **Permissions**, select **Grant** for the **View Application Pages** option and **Save** your changes.  
-
-    ![Select Site Collector Auditor and permissions options for a specific user](../media/aip-quick-set-site-permissions.png)
-
-1. After confirming your changes, click **OK** in the **Policy for Web Application** message that opens.
-
-1. In the **Add Users** page, add the scanner account you intend to use for scanning in the **Choose users** field. Under **Choose Permissions**, select the **site collection** option and then click **Finish** to apply the permissions you created for the scanner account.
-
-    ![Add user to new permissions options](../media/aip-quick-set-user-permissions.png)
-
 ## Azure Information Protection client requirements
 
 You must have either the [current general availability version](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history) of the Azure Information Protection client installed on the Windows Server computer.
@@ -183,7 +161,27 @@ To scan SharePoint document libraries and folders, ensure that your SharePoint s
 |**Large SharePoint farms** |For large SharePoint farms, check whether you need to increase the list view threshold (by default, 5,000) for the scanner to access all files. <br><br>For more information, see [Manage large lists and libraries in SharePoint](https://support.office.com/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59#__bkmkchangelimit&ID0EAABAAA=Server). |
 |**Long file paths**  |If you have long file paths in SharePoint, ensure that your SharePoint server's [httpRuntime.maxUrlLength](/dotnet/api/system.web.configuration.httpruntimesection.maxurllength) value is larger than the default 260 characters. <br><br>For more information, see [Avoid scanner timeouts in SharePoint](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#avoid-scanner-timeouts-in-sharepoint). | 
 
+### Permissions to scan SharePoint repositories
 
+To use the scanner across SharePoint repositories, specify the site URL for the scanner to discover all sites under that URL and scan them.
+
+To enable scans across repositories, add the following SharePoint permissions for the scanner account:
+
+1. Open SharePoint, and select **Permission Policy** and select **Add Permission Policy Level**.
+
+    ![Create new permissions policy level for a specific user](../media/aip-quick-set-sp-permissions.png)
+
+1. Under **Site Collection Permissions**, select the **Site Collector Auditor** option.
+
+1. Under **Permissions**, select **Grant** for the **View Application Pages** option and **Save** your changes.  
+
+    ![Select Site Collector Auditor and permissions options for a specific user](../media/aip-quick-set-site-permissions.png)
+
+1. After confirming your changes, click **OK** in the **Policy for Web Application** message that opens.
+
+1. In the **Add Users** page, add the scanner account you intend to use for scanning in the **Choose users** field. Under **Choose Permissions**, select the **site collection** option and then click **Finish** to apply the permissions you created for the scanner account.
+
+    ![Add user to new permissions options](../media/aip-quick-set-user-permissions.png)
 
 ## Microsoft Office requirements
 
