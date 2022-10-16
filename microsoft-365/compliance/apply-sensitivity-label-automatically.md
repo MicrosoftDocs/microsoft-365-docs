@@ -109,11 +109,11 @@ Use the following table to help you identify the differences in behavior for the
 
 The labels are ordered for evaluation according to their position that you specify in the policy: The label positioned first has the lowest position (least sensitive, so lowest priority) and the label positioned last has the highest position (most sensitive, so highest priority). The label with the highest order number (highest priority) is selected.
 
-Sublabels that share the same parent label are an exception:
+However, for sublabels that share the same parent label, auto-labeling isn't supported for client-side labeling, but is for service-side labeling:
 
-- Client-side auto-labeling doesn't support sublabels that share the same parent label. If, after evaluation and ordering, more than one sublabel from the same parent label meets the auto-labeling conditions, no label is selected. In this scenario, the content isn't automatically labeled and users don't see a label recommendation.
+- Client-side auto-labeling: If, after evaluation and ordering, more than one sublabel from the same parent label meets the auto-labeling conditions, no label is selected. In this scenario, the content isn't automatically labeled and users don't see a label recommendation.
 
-- Service-side auto-labeling does support sublabels that share the same parent label. If, after evaluation and ordering, more than one sublabel from the same parent label meets the auto-labeling conditions, the sublabel with the highest order number (highest priority) is selected and applied.
+- Service-side auto-labeling: If, after evaluation and ordering, more than one sublabel from the same parent label meets the auto-labeling conditions, the sublabel with the highest order number (highest priority) is selected and applied.
 
 For more information about label priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).
 
