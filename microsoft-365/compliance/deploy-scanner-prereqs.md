@@ -15,7 +15,7 @@ ms.collection:
 description: Lists prerequisites for installing and deploying the Microsoft Purview Information Protection scanner.
 ---
 
-# Get started with the the Microsoft Purview Information Protection scanner
+# Get started with the information protection scanner
 
 Before installing the scanner from Microsoft Purview Information Protection, make sure that your system complies with basic [Azure Information Protection requirements](/azure/information-protection/requirements).
 
