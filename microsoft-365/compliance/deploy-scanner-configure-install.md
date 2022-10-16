@@ -18,7 +18,7 @@ description: Learn how to install and configure the Microsoft Purview Informatio
 # Configuring and installing the information protection scanner
 
 > [!NOTE]
-> the Microsoft Purview Information Protection scanner was formerly named Azure Information Protection unified labeling scanner, or the on-premises scanner. Configuration has moved from the Azure portal to the Microsoft Purview compliance portal.
+> The Microsoft Purview Information Protection scanner was formerly named Azure Information Protection unified labeling scanner, or the on-premises scanner. Configuration has moved from the Azure portal to the Microsoft Purview compliance portal.
 
 This article describes how to configure and install the Microsoft Purview Information Protection scanner, formerly named Azure Information Protection unified labeling scanner, or the on-premises scanner.
 
