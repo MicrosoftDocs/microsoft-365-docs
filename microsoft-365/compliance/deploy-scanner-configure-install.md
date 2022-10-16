@@ -241,11 +241,11 @@ Once you've run your initial discovery scan, continue with [Configure the scanne
 
 # [PowerShell only](#tab/powershell-only)
 
-If you are configuring and installing your scanner using PowerShell instead of the scanner pages in the compliance portal, continue with the next step in [Use PowerShell to configure the scanner](#powershell).
+If you are configuring and installing your scanner using PowerShell instead of the scanner pages in the compliance portal, continue with step 5 in [Use PowerShell to configure the scanner](#powershell).
 
 Then:
 
-- [Run a discovery cycle and view reports for the scanner](deploy-aip-scanner-manage.md#run-a-discovery-cycle-and-view-reports-for-the-scanner)
+- [Run a discovery cycle and view reports for the scanner](deploy-scanner-manage.md#run-a-discovery-cycle-and-view-reports-for-the-scanner)
 - [Use PowerShell to configure the scanner to apply classification and protection](#use-powershell-to-configure-the-scanner-to-apply-classification-and-protection)
 - [Use PowerShell to configure a DLP policy with the scanner](#use-powershell-to-configure-a-dlp-policy-with-the-scanner)
 
@@ -456,7 +456,7 @@ For more information, see [Supported PowerShell cmdlets](#supported-powershell-c
 
     This step is identical whether or not you're able to access the scanner pages in the compliance portal. For more information, see the earlier instructions in this article: [Get an Azure AD token for the scanner](#get-an-azure-ad-token-for-the-scanner).
 
-5. Run the [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) cmdlet to set the scanner to function in offline mode. Run:
+5. <a name="powershell"></a>Run the [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) cmdlet to set the scanner to function in offline mode. Run:
 
     ```powershell
     Set-AIPScannerConfiguration -OnlineConfiguration Off
