@@ -163,9 +163,7 @@ To scan SharePoint document libraries and folders, ensure that your SharePoint s
 
 ### Permissions to scan SharePoint repositories
 
-To use the scanner across SharePoint repositories, specify the site URL for the scanner to discover all sites under that URL and scan them.
-
-To enable scans across repositories, add the following SharePoint permissions for the scanner account:
+To enable scans across SharePoint repositories, add the following SharePoint permissions for the scanner account:
 
 1. Open SharePoint, and select **Permission Policy** and select **Add Permission Policy Level**.
 
