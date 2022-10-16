@@ -151,8 +151,8 @@ Deep dive into your content to scan specific repositories for sensitive content.
 
     |Path  |Syntax  |
     |---------|---------|
-    |**Root path**     | `http://<SharePoint server name>` <br /><br />Scans all sites, including any site collections allowed for the scanner user. <br />Requires [additional permissions](deploy-scanner-prereqs.md#permission-to-scan-sharepoint-repositories) to automatically discover root content        |
-    |**Specific SharePoint subsite or collection**     | One of the following: <br />- `http://<SharePoint server name>/<subsite name>` <br />- `http://SharePoint server name>/<site collection name>/<site name>` <br /><br />Requires [additional permissions](deploy-scanner-prereqs.md#permission-to-scan-sharepoint-repositories) to automatically discover site collection content         |
+    |**Root path**     | `http://<SharePoint server name>` <br /><br />Scans all sites, including any site collections allowed for the scanner user. <br />Requires [additional permissions](deploy-scanner-prereqs.md#permissions-to-scan-sharepoint-repositories) to automatically discover root content        |
+    |**Specific SharePoint subsite or collection**     | One of the following: <br />- `http://<SharePoint server name>/<subsite name>` <br />- `http://SharePoint server name>/<site collection name>/<site name>` <br /><br />Requires [additional permissions](deploy-scanner-prereqs.md#permissions-to-scan-sharepoint-repositories) to automatically discover site collection content         |
     |**Specific SharePoint library**     | One of the following: <br />- `http://<SharePoint server name>/<library name>` <br />- `http://SharePoint server name>/.../<library name>`       |
     |**Specific SharePoint folder**     | `http://<SharePoint server name>/.../<folder name>`        |
     | | |
@@ -241,16 +241,13 @@ Once you've run your initial discovery scan, continue with [Configure the scanne
 
 ### Instructions for PowerShell only
 
-If you are configuring and installing your scanner using PowerShell instead of the scanner pages in the compliance portal, continue with the next step in [Use PowerShell to configure the scanner](#powershell).
+If you are configuring and installing your scanner using PowerShell instead of the scanner pages in the compliance portal, continue with the next step in [Use PowerShell to configure the scanner](#use-powershell-to-configure-the-scanner).
 
 Then:
 
 - [Run a discovery cycle and view reports for the scanner](deploy-scanner-manage.md#run-a-discovery-cycle-and-view-reports-for-the-scanner)
 - [Use PowerShell to configure the scanner to apply classification and protection](#use-powershell-to-configure-the-scanner-to-apply-classification-and-protection)
 - [Use PowerShell to configure a DLP policy with the scanner](#use-powershell-to-configure-a-dlp-policy-with-the-scanner)
-
-> [!NOTE]
-> For more information, see [How to label files non-interactively for Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection)
 
 
 ## Configure the scanner to apply classification and protection
@@ -280,7 +277,7 @@ Using a data loss prevention policy enables the scanner to detect potential data
 
 - **Enable DLP rules in your content scan job** to reduce the exposure of any files that match your DLP policies. When your DLP rules are enabled, the scanner may reduce file access to data owners only, or reduce exposure to network-wide groups, such as **Everyone**, **Authenticated Users**, or **Domain Users**.
 
-- **In the Microsoft Purview compliance portal**, determine whether you are just testing your DLP policy or whether you want your rules enforced and your file permissions changed according to those rules. For more information, see [Turn on a DLP policy](create-test-tune-dlp-policy.md#turn-on-a-dlp-policy.md).
+- **In the Microsoft Purview compliance portal**, determine whether you are just testing your DLP policy or whether you want your rules enforced and your file permissions changed according to those rules. For more information, see [Turn on a DLP policy](create-test-tune-dlp-policy.md#turn-on-a-dlp-policy).
 
 DLP policies are configured in the Microsoft Purview compliance portal. For more information about DLP licensing, see [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md).
 
