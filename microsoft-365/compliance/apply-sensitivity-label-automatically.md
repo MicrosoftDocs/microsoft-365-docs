@@ -74,7 +74,7 @@ There are two different methods for automatically applying a sensitivity label t
     - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the person who sends the email when the sender is from your own organization. When the sender is outside your organization, you can specify a Rights Management owner for incoming email that's labeled and encrypted by your policy.
     - If the label is configured to apply [dynamic markings](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), be aware that for incoming email, this configuration can result in displaying the names of people outside your organization.
 
-> [!TIP]
+> [!NOTE]
 > For some new customers, we're offering the automatic configuration of default auto-labeling settings for both client-side labeling and service-side labeling. Even if you're not eligible for this automatic configuration, you might find it useful to reference their configuration. For example, you can manually configure existing labels and create your own auto-labeling policies with the same settings to help accelerate your labeling deployment.
 > 
 > For more information, see [Default labels and policies for Microsoft Purview Information Protection](mip-easy-trials.md).
@@ -93,6 +93,7 @@ Use the following table to help you identify the differences in behavior for the
 |Conditions: Trainable classifiers|Yes |In preview |
 |Conditions: Sharing options and additional options for email|No |Yes |
 |Conditions: Exceptions|No |Yes (email only) |
+|Support sublabel priority from the same parent label |No |Yes |
 |Recommendations, policy tooltip, and user overrides|Yes |No |
 |Simulation mode|No |Yes |
 |Exchange attachments checked for conditions|No | Yes|
@@ -106,7 +107,15 @@ Use the following table to help you identify the differences in behavior for the
 
 ## How multiple conditions are evaluated when they apply to more than one label
 
-The labels are ordered for evaluation according to their position that you specify in the policy: The label positioned first has the lowest position (least sensitive) and the label positioned last has the highest position (most sensitive). For more information on priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).
+The labels are ordered for evaluation according to their position that you specify in the policy: The label positioned first has the lowest position (least sensitive, so lowest priority) and the label positioned last has the highest position (most sensitive, so highest priority). The label with the highest order number (highest priority) is selected.
+
+Sublabels that share the same parent label are an exception:
+
+- Client-side auto-labeling doesn't support sublabels that share the same parent label. If, after evaluation and ordering, more than one sublabel from the same parent label meets the auto-labeling conditions, no label is selected. In this scenario, the content isn't automatically labeled and users don't see a label recommendation.
+
+- Service-side auto-labeling does support sublabels that share the same parent label. If, after evaluation and ordering, more than one sublabel from the same parent label meets the auto-labeling conditions, the sublabel with the highest order number (highest priority) is selected and applied.
+
+For more information about label priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).
 
 ## Don't configure a parent label to be applied automatically or recommended
 
