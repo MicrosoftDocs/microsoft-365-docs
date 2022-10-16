@@ -64,7 +64,7 @@ Perform these steps again as needed when your content changes.
         When a scan is completed, a `Summary_<x>.txt` file is created with the scan summary.
 
 > [!NOTE]
-> Scanners send collected data information to Microsoft Purview Information Protection every five minutes, so that you can view the results in near real time from the admin portal. For more information, see [Reporting for Azure Information Protection](reports-aip.md).
+> Scanners send collected data information to Microsoft Purview Information Protection every five minutes, so that you can view the results in near real time from the admin portal. For more information, see [Analytics and central reporting for Azure Information Protection](/azure/information-protection/reports-aip).
 >
 > The admin portal displays information about the last scan only. If you need to see the results of previous scans, return to the reports that are stored on the scanner computer, in the %*localappdata*%\Microsoft\MSIP\Scanner\Reports folder.
 >
@@ -131,4 +131,4 @@ For example, if you’ve changed **Sensitivity policy** settings from **Enforce 
 
 ## Next steps
 
-You can also use PowerShell to interactively classify and protect files from your desktop computer. For more information about this and other scenarios that use PowerShell, see [Using PowerShell with the Azure Information Protection unified labeling client](./rms-client/clientv2-admin-guide-powershell.md).
+You can also use PowerShell to interactively classify and protect files from your desktop computer. For more information about this and other scenarios that use PowerShell, see [Using PowerShell with the Azure Information Protection unified labeling client](/azure/information-protection/rms-client/clientv2-admin-guide-powershell).

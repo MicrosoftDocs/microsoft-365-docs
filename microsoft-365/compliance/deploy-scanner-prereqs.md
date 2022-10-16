@@ -65,7 +65,7 @@ This service account has the following requirements:
 |**Log on locally** user right assignment     |Required to install and configure the scanner, but not required to run scans.  </br></br>Once you've confirmed that the scanner can discover, classify, and protect files, you can remove this right from the service account.  </br></br>If granting this right even for a short period of time is not possible because of your organization policies, see [Deploying the scanner with alternative configurations](#deploying-the-scanner-with-alternative-configurations).         |
 |**Log on as a service** user right assignment.     |  This right is automatically granted to the service account during the scanner installation and this right is required for the installation, configuration, and operation of the scanner.        |
 |**Permissions to the data repositories**     |- **File shares or local files**: Grant **Read**, **Write**, and **Modify** permissions for scanning the files and then applying classification and protection as configured.  <br /><br />- **SharePoint**: You must grant **Full Control** permissions for scanning the files and then applying classification and protection to the files that meet the conditions in the Azure Information Protection policy.  <br /><br />- **Discovery mode**: To run the scanner in discovery mode only, **Read** permission is sufficient.         |
-|**For labels that reprotect or remove protection**     | To ensure that the scanner always has access to encrypted files, make this account a [super user](configure-super-users.md) for Azure Information Protection, and ensure that the super user feature is enabled. </br></br>Additionally, if you've implemented [onboarding controls](/azure/information-protection/activate-service#configuring-onboarding-controls-for-a-phased-deployment) for a phased deployment, make sure that the service account is included in the onboarding controls you've configured.|
+|**For labels that reprotect or remove protection**     | To ensure that the scanner always has access to encrypted files, make this account a [super user](/azure/information-protection/configure-super-users) for Azure Information Protection, and ensure that the super user feature is enabled. </br></br>Additionally, if you've implemented [onboarding controls](/azure/information-protection/activate-service#configuring-onboarding-controls-for-a-phased-deployment) for a phased deployment, make sure that the service account is included in the onboarding controls you've configured.|
 |**Specific URL level scanning** |To scan and discover sites and subsites [under a specific URL](#deploying-the-scanner-with-alternative-configurations), grant **Site Collector Auditor** rights to the scanner account on the farm level.|
 |**License for information protection** | Required to provide file classification, labeling, or protection capabilities to the scanner service account. <br><br>For more information, see the [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-sensitivity-labeling). |
 
@@ -238,7 +238,7 @@ To support a disconnected computer, use one of the following methods:
 
 To support a disconnected computer from the Azure portal, perform the following steps:
 
-1.	Configure labels in your policy, and then use the [procedure to support disconnected computers](rms-client/clientv2-admin-guide-customizations.md#support-for-disconnected-computers) to enable offline classification and labeling.
+1.	Configure labels in your policy, and then use the [procedure to support disconnected computers](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#support-for-disconnected-computers) to enable offline classification and labeling.
 
 1. Enable offline management for content jobs as follows:
 
@@ -355,7 +355,7 @@ You can have one account to run the scanner service and use another account to a
 
     If you are running the scan under any user other than the scanner account, make sure to specify the scanner account in *OnBehalfOf* parameter as well. 
 
-    For more information, see [How to label files non-interactively for Azure Information Protection](./rms-client//clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection).
+    For more information, see [How to label files non-interactively for Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection).
 
 ### Restriction: Your labels do not have auto-labeling conditions
 
