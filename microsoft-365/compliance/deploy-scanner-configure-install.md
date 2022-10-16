@@ -46,7 +46,7 @@ Then, perform the following configuration procedures as needed for your system:
 
 |Procedure  |Description  |
 |---------|---------|
-|[Change which file types to protect](#change-which-file-types-to-protect) |You may want to scan, classify, or protect different file types than the default. For more information, see [AIP scanning process](deploy-scanner.md#aip-scanning-process). |
+|[Change which file types to protect](#change-which-file-types-to-protect) |You may want to scan, classify, or protect different file types than the default. For more information, see [AIP scanning process](deploy-scanner.md#the-scanning-process). |
 |[Upgrading your scanner](#upgrade-your-scanner) | Upgrade your scanner to use the latest features and improvements.|
 |[Editing data repository settings in bulk](#edit-data-repository-settings-in-bulk)| Use import and export options to make changes in bulk for multiple data repositories.|
 |[Use the scanner with alternative configurations](#use-the-scanner-with-alternative-configurations)| Use the scanner without configuring labels with any conditions |
