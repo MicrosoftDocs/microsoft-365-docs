@@ -1,5 +1,5 @@
 ---
-title: "Audit new search"
+title: "Audit New Search"
 description: "The Audit New Search validates the performance improvements, completeness, and consistency of results."
 f1.keywords:
 - NOCSH
@@ -22,7 +22,7 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ---
 
-# Audit New Search (preview)
+# Audit New Search
 
 Your organization requires access to critical audit log event data to gain insight and further investigate user activities. Previously, your search jobs in the Microsoft Purview compliance portal UI were limited in their ability to create concurrent audit search jobs and review historical search jobs. These critical audit search jobs also had a dependency on the browser window remaining open in order to complete.
 
@@ -48,7 +48,6 @@ Additional information:
 - Search jobs can take in the following criteria: Date Range, Time Range, Search Job Name, Activities, Users, Files, Folders, and Sites.
 - Searching and filtering using date, time, search name, activities, and users are all fully functional
 - Audit Log data will be stored for the defined retention period, regardless of a search job being deleted
-- Searches created during the Private Preview period may not be retained for future reference once the New Search feature moves into Public Preview.
 
 ## Get started with audit new search
 
