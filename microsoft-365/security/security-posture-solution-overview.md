@@ -34,15 +34,15 @@ It will help you better understand your overall security posture and provide a f
 
 This solution guide provides specific and actionable steps to strengthen your security posture, and assumes the following facts:
 
-- you are a global admin
-- you have successfully deployed Microsoft Defender for Endpoint
-- you're beyond the initial stage of onboarding devices and have a management tool in place to support future device onboarding
+- You are a global admin
+- You have successfully deployed Microsoft Defender for Endpoint
+- You're beyond the initial stage of onboarding devices and have a management tool in place to support future device onboarding
 
 ## Overview of the solution
 
 This illustration provides a representation of the high level flow you can follow to improve your security posture.
 
-:::image type="content" source="../media/content-understanding/security-posture-overview-flow.png" alt-text="Stages in the improve your security posture flow" lightbox="../media/content-understanding/security-posture-overview-flow.png":::
+:::image type="content" source="../media/content-understanding/security-posture-overview.png" alt-text="Stages in the improve your security posture flow" lightbox="../media/content-understanding/security-posture-overview.png":::
 
 ## Get started
 
@@ -60,6 +60,7 @@ Each stage is described below in the following table with links to bring you to 
 ### Configure a secure environment
 
 [Configure device discovery](../security/defender-endpoint/configure-device-discovery.md)
+
 Configure ASR in audit mode
 
 **Configure Microsoft Defender for Identity**
