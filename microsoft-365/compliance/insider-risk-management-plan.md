@@ -120,3 +120,4 @@ Ready to configure insider risk management for your organization? We recommend t
 
 - [Get started with insider risk management settings](insider-risk-management-settings.md) to configure global policy settings.
 - [Get started with insider risk management](insider-risk-management-configure.md) to configure prerequisites, create policies, and start receiving alerts.
+- [Get started with insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) for step-by-step guidance to configure forensic evidence capturing in your organization.

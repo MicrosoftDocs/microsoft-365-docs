@@ -71,8 +71,12 @@
 
     - name: Content assembly
       items: 
-        - name: Create documents using content assembly 
+        - name: Overview 
           href: content-assembly.md
+        - name: Create a modern template
+          href: content-assembly-modern-template.md
+        - name: Create a document from a modern template 
+          href: content-assembly-create-document.md
         - name: Generate documents using Power Automate 
           href: automate-document-generation.md
      
