@@ -110,7 +110,7 @@ Keep in mind that schedulers can later choose to turn off the setting on an as-n
 
 To learn more, see [Send text message notifications](https://support.microsoft.com/office/send-text-message-notifications-f4e6aa74-2ee9-4b12-9105-0e9271d4b244).
 
-##### Using forms
+##### Link forms
 
 If you're a Bookings admin, you can link up to four forms for attendees to fill out each time this appointment type is booked. For example, you may require attendees to complete a registration form before they join an appointment. To link a form, choose **Link a form**. Enter the URL of the form, and then choose **Link**. (If this is the first time that you're linking a form, you'll be prompted to create a Microsoft 365 group to store forms. Choose **Create group** to create the group. You only have to do this one time for the booking calendar.)
 
