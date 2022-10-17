@@ -38,29 +38,29 @@ After the LinkedIn Company page data is stored in a mailbox, you can apply Micro
 
 ## Create a LinkedIn connector
 
-1. Go to <https://compliance.microsoft.com> and then click **Data connectors** > **LinkedIn Company pages**.
+1. Go to <https://compliance.microsoft.com> and then select **Data connectors** > **LinkedIn Company pages**.
 
-2. On the **LinkedIn company pages** product page, click **Add connector**.
+2. On the **LinkedIn company pages** product page, select **Add connector**.
 
 3. On the **Terms of service** page, select **Accept**.
 
-4. On the **Sign in with LinkedIn** page, click **Sign in with LinkedIn**.
+4. On the **Sign in with LinkedIn** page, select **Sign in with LinkedIn**.
 
    The LinkedIn sign-in page is displayed.
 
    ![LinkedIn sign-in page.](../media/LinkedInSigninPage.png)
 
-5. On the LinkedIn sign in page, enter the email address (or phone number) and password for the LinkedIn account associated with the company page that you want to archive, and then click **Sign in**.
+5. On the LinkedIn sign in page, enter the email address (or phone number) and password for the LinkedIn account associated with the company page that you want to archive, and then select **Sign in**.
 
    A wizard page is displayed with a list of all LinkedIn Company Pages associated with the account that you signed in to. A connector can only be configured for one company page. If your organization has multiple LinkedIn Company Pages, you have to create a connector for each one.
 
    ![A page with a list of LinkedIn Company Pages is displayed.](../media/LinkedInSelectCompanyPage.png)
 
-6. Select the company page that you want to archive items from, and then click **Next**.
+6. Select the company page that you want to archive items from, and then select **Next**.
 
-7. On the **Choose storage location** page, click in the box, select the email address of a Microsoft 365 mailbox that the LinkedIn items will be imported to, and then click **Next**. Items are imported to the inbox folder in this mailbox. The mailbox used must have an Exchange Online Plan 1 or Plan 2 license.
+7. On the **Choose storage location** page, select in the box, select the email address of a Microsoft 365 mailbox that the LinkedIn items will be imported to, and then select **Next**. Items are imported to the inbox folder in this mailbox. The mailbox used must have an Exchange Online Plan 1 or Plan 2 license.
 
-8. Click **Next** to review the connector settings and then click **Finish** to complete the connector setup.
+8. Select **Next** to review the connector settings and then select **Finish** to complete the connector setup.
 
 After you create the connector, you can go back to the **Data connectors** page to see the progress of the import process for the new connector (select **Refresh** if necessary to update the list of connectors). The value in the **Status** column is **Waiting to start**. It takes up to 24 hours for the initial import process to be started. After the first time the connector runs and imports the LinkedIn items, the connector will run once every 24 hours and import any new items that are created on the LinkedIn Company Page in the previous 24 hours.
 

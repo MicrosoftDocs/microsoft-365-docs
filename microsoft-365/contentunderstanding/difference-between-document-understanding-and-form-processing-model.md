@@ -1,5 +1,5 @@
 ---
-title: Differences between custom models in Microsoft SharePoint Syntex
+title: Differences between custom models in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,12 +12,12 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about key differences between a document understanding model and a form processing model.
+description: Learn about key differences between a document understanding model and a form processing model in Microsoft Syntex.
 ---
 
-# Differences between custom models in Microsoft SharePoint Syntex 
+# Differences between custom models in Microsoft Syntex 
 
-Content understanding in Microsoft SharePoint Syntex allows you to identify and classify documents that are uploaded to SharePoint document libraries, and then to extract relevant information from each file. For example, as files are uploaded to a SharePoint document library, all files that are identified as *Purchase Orders* are classified as such, and then displayed in a custom document library view. Additionally, you can pull specific information from each file (for example, *PO Number* and *Total*) and display it as a column in your document library view. 
+Content understanding in Microsoft Syntex allows you to identify and classify documents that are uploaded to SharePoint document libraries, and then to extract relevant information from each file. For example, as files are uploaded to a SharePoint document library, all files that are identified as *Purchase Orders* are classified as such, and then displayed in a custom document library view. Additionally, you can pull specific information from each file (for example, *PO Number* and *Total*) and display it as a column in your document library view. 
 
 Content understanding lets you create *models* to identify and extract the information you need. Models have value in helping to resolve business issues for search, business processes, compliance, and many others.
 
@@ -29,7 +29,7 @@ There are two custom model types that you can use:
 While both models are generally used for the same purpose, the key differences listed below affect which ones you can use.
 
 > [!NOTE]
-> See the [Get started driving adoption of SharePoint Syntex](./adoption-getstarted.md) for more information about form processing and document understanding scenario examples.
+> See the [Get started driving adoption of Syntex](./adoption-getstarted.md) for more information about form processing and document understanding scenario examples.
 
 ## Structured versus unstructured and semi-structured content
 
@@ -77,7 +77,7 @@ Use the following table to understand when to use form processing and when to us
 | Integrate with Managed Metadata | No | Yes, by training entity extractor referencing a configured managed metadata field.|
 | Compliance feature integration with Microsoft Purview Information Protection | Set published retention labels.<br>Set sensitivity labels is coming. | Set published retention labels.<br>Set published sensitivity labels. |
 | Supported regions| Form processing relies on Power Platform. For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). | Available in all regions.|
-| Transactional cost | Uses AI Builder credits.<br>3.5K credits are included for each SharePoint Syntex license per month.<br>1M credits will allow processing of 2,000 file pages.<br>| Not applicable |
+| Transactional cost | Uses AI Builder credits.<br>3.5K credits are included for each Syntex license per month.<br>1M credits will allow processing of 2,000 file pages.<br>| Not applicable |
 | Capacity | Uses the default Power Platform environment (custom environments with Dataverse database supported). | Does not have capacity restrictions.|
 | Supported languages| Language support for more than [73 languages](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support). | Models work on all Latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese.|
 
@@ -90,4 +90,4 @@ Use the following table to understand when to use form processing and when to us
 
 [Form processing overview](form-processing-overview.md)
 
-[Introduction to SharePoint Syntex](index.md)
+[Introduction to Microsoft Syntex](index.md)

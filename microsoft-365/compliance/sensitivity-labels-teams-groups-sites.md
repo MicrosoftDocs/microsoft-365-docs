@@ -31,9 +31,9 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to protect docu
 - External user access
 - External sharing from SharePoint sites
 - Access from unmanaged devices
-- Authentication contexts (in preview)
+- Authentication contexts
 - Default sharing link for a SharePoint site (PowerShell-only configuration)
-- In preview: Site sharing settings (PowerShell-only configuration)
+- Site sharing settings (PowerShell-only configuration)
 
 > [!IMPORTANT]
 > The settings for unmanaged devices and authentication contexts work in conjunction with Azure Active Directory Conditional Access. You must configure this dependent feature if you want to use a sensitivity label for these settings. Additional information is included in the instructions that follow.
@@ -116,7 +116,7 @@ After sensitivity labels are enabled for containers as described in the previous
             
             For additional configuration information, see [More information about the dependencies for the unmanaged devices option](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) at the end of this section.
             
-        - **Choose an existing authentication context**: Currently in preview, this option lets you enforce more stringent access conditions when users access SharePoint sites that have this label applied. These conditions are enforced when you select an existing authentication context that has been created and published for your organization's Conditional Access deployment. If users don't meet the configured conditions or if they use apps that don't support authentication contexts, they are denied access.
+        - **Choose an existing authentication context**: This option lets you enforce more stringent access conditions when users access SharePoint sites that have this label applied. These conditions are enforced when you select an existing authentication context that has been created and published for your organization's Conditional Access deployment. If users don't meet the configured conditions or if they use apps that don't support authentication contexts, they are denied access.
             
             For additional configuration information, see [More information about the dependencies for the authentication context option](#more-information-about-the-dependencies-for-the-authentication-context-option) at the end of this section.
             
@@ -169,7 +169,7 @@ Not all apps support authentication contexts. If a user with an unsupported app 
     - iOS: Rolling out in 12.30
     - Android: Not yet supported
 
-Known limitations for this preview:
+Known limitations:
 
 - For the OneDrive sync app, supported for OneDrive only and not for other sites.
 
@@ -185,9 +185,6 @@ In addition to the label settings for sites and groups that you can configure fr
 For more information and instructions, see [Use sensitivity labels to configure the default sharing link type for sites and documents in SharePoint and OneDrive](sensitivity-labels-default-sharing-link.md).
 
 ### Configure site sharing permissions by using PowerShell advanced settings
-
-> [!NOTE]
-> This label setting is currently in preview.
 
 Another PowerShell advanced setting that you can configure for the sensitivity label to be applied to a SharePoint site is **MembersCanShare**. This setting is the equivalent configuration that you can set from the SharePoint admin center > **Site permissions** > **Site Sharing** > **Change how members can share** > **Sharing permissions**. 
 

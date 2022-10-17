@@ -21,9 +21,10 @@ appliesto:
 
 # Manage shift-based access for frontline workers in Teams
 
-## Overview
+> [!IMPORTANT]
+> This feature has been deprecated.
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
+## Overview
 
 Presence in Microsoft Teams indicates a user's current availability and status to other users. The presence of frontline workers is often less predictable than other staff as their working hours are typically not the same each day. As an admin, you can configure Teams to show a set of shift-based presence states for the frontline workers in your organization to indicate when they are on and off shift.
 
@@ -118,7 +119,7 @@ In this example, we assign a policy named Off Shift Teams Access Custom Message 
 Grant-CsTeamsShiftsPolicy -Identity remy@contoso.com -PolicyName "Off Shift Teams Access Custom Message"
 ```
 
-## Related topics
+## Related articles
 
 - [Manage the Shifts app for your organization in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Teams PowerShell overview](/microsoftteams/teams-powershell-overview)
