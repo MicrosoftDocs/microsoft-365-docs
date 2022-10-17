@@ -142,10 +142,7 @@ Identify the columns in your query results where you expect to find the main aff
 You can select only one column for each entity type (mailbox, user, or device). Columns that are not returned by your query can't be selected.
 
 ### 4. Specify actions.
-Your custom detection rule can automatically take actions on devices, files, or users that are returned by the query.
-
-
-
+Your custom detection rule can automatically take actions on devices, files, users, or emails that are returned by the query.
 
 
 :::image type="content" source="../../media/ah-custom-actions.png" alt-text="Actions for custom detections in the Microsoft 365 Defender portal" lightbox="../../media/ah-custom-actions.png":::
@@ -160,13 +157,19 @@ These actions are applied to devices in the `DeviceId` column of the query resul
 - **Restrict app execution**—sets restrictions on device to allow only files that are signed with a Microsoft-issued certificate to run. [Learn more about app restrictions with Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
 
 #### Actions on files
+
+When selected, you can choose to **Allow/Block** the file. Blocking files are only allowed if you have *Remediate* permissions for files and if the query results have identified a file ID, such as a SHA1. Once a file is blocked, other instances of the same file in all devices are also blocked. You can control which device group the blocking is applied to, but not specific devices. 
+
 When selected, you can choose to apply the **Quarantine file** action on files in the `SHA1`, `InitiatingProcessSHA1`, `SHA256`, or `InitiatingProcessSHA256` column of the query results. This action deletes the file from its current location and places a copy in quarantine.
+
+
 
 #### Actions on users
 When selected, the **Mark user as compromised** action is taken on users in the `AccountObjectId`, `InitiatingProcessAccountObjectId`, or `RecipientObjectId` column of the query results. This action sets the users risk level to "high" in Azure Active Directory, triggering corresponding [identity protection policies](/azure/active-directory/identity-protection/overview-identity-protection).
 
-> [!NOTE]
-> The allow or block action for custom detection rules is currently not supported on Microsoft 365 Defender.
+#### Actions on emails
+If the custom detection yields email messages, you can select either **Move to mailbox folder** to move the email to a specific folder, or **Delete email** to delete the email.
+
 
 ### 5. Set the rule scope.
 Set the scope to specify which devices are covered by the rule. The scope influences rules that check devices and doesn't affect rules that check only mailboxes and user accounts or identities.
