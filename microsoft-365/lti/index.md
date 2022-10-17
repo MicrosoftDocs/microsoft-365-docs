@@ -97,6 +97,5 @@ For configuration steps, see:
 
 ### OneNote Class Notebook LTI
 
-
-OneNote Class Notebook LTI can work with your Learning Management System.Use OneNote Class Notebook with your LMS to create a shared notebook and link it to your course. Students enrolled in your LMS course can access the notebook automatically without you having to add their names. For configuation steps, See [Microsoft OneNote Class Notebook LTI](https://www.onenote.com/lti/integratelti)
+OneNote Class Notebook LTI can be used with your Learning Management System (LMS) to create a shared notebook and link it to your course. Students enrolled in your LMS course can access the notebook automatically without you having to add their names. For configuration steps, see [Microsoft OneNote Class Notebook LTI](https://www.onenote.com/lti/integratelti).
 
