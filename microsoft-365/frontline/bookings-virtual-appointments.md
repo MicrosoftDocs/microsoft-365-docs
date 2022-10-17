@@ -79,58 +79,11 @@ In the booking calendar, go to **More options** (...) > **Settings**, and then s
 
 The Bookings app integrates with Outlook. After you add staff, you’ll be able to view their calendar availability and schedule bookings for them. To learn more, see [Add staff and view a Bookings calendar](https://support.microsoft.com/office/add-staff-and-view-a-bookings-calendar-6c579f61-8adb-4514-9458-021de2023fa0).  
 
-+++++++++++++++++++++++++++++++++++++++++++<br>
-OPTION 1
-### Create appointment types
-
-> [!NOTE]
-> Add Premium messaging (on-demand)
-
-Create specific appointment types to represent the services offered by your organization and to tailor the booking experience. The appointment type can then be used to schedule appointments.
-
-In the booking calendar, go to **More options** (...) > **Settings**, select **Appointment types**, and then select **Add appointment type**. Specify whether the service is for **Scheduled** or **On-demand** appointments.
-
-Enter a name for the service. For example, Account opening, Prescription renewal, Loan consultation, Tax preparation.
-
-For scheduled appointment types, specify any other information and settings you want. The information that you add is included in the email confirmation that's sent to attendees every time this type of appointment is booked. You can configure options such as whether attendees can [join from a a desktop or mobile browser](browser-join.md) without having to download Teams, add an email reminder, set up SMS text notifications, and link forms.
-
-#### Set up SMS text notifications
-
-> [!NOTE]
-> ADD promo and Premium messaging
-
-Attendees need a valid United States, Canada, or United Kingdom phone number before they can receive SMS notifications.
-
-To send SMS notifications to attendees by default, turn on **Send them text messages**. Attendees will receive confirmation and reminder text messages that include the Teams meeting link for the appointment. They can opt out of receiving the messages by replying STOP, or resume receiving them by replying START.
-
-Keep in mind that schedulers can later choose to turn off the setting on an as-needed basis when they use the appointment type to schedule an appointment.
-
-To learn more, see [Send text message notifications](https://support.microsoft.com/office/send-text-message-notifications-f4e6aa74-2ee9-4b12-9105-0e9271d4b244).
-
-#### Using forms
-
-If you're a Bookings admin, you can link up to four forms for attendees to fill out each time this appointment type is booked. For example, you may require attendees to complete a registration form before they join an appointment. To link a form, choose **Link a form**. Enter the URL of the form, and then choose **Link**. (If this is the first time that you're linking a form, you'll be prompted to create a Microsoft 365 group to store forms. Choose **Create group** to create the group. You only have to do this one time for the booking calendar.)
-
-When working with forms, keep in mind that:
-
-- To make changes to a form that's already linked to an appointment type, select the form in the appointment type or from within the Microsoft 365 group at [https://forms.office.com](https://forms.office.com).
-- Uploading files to forms that contain a [file upload question](https://support.microsoft.com/office/add-questions-that-allow-for-file-uploads-6a75a658-c02b-450e-b119-d068f3cba4cf) is supported when all attendees are from the same organization.
-
-When a scheduler uses the appointment type to schedule an appointment, they can then choose to include the form, remove it, or add any other forms that you linked to the appointment type. Attendees must fill out the form before they join the appointment.
-
-> [!NOTE]
-> If you're a healthcare provider, any information provided by you or patients in Teams (including the Forms app, Bookings app, meeting recordings if enabled by you, or any other Teams virtual appointments services) that's necessary for medical records continuity or retention purposes should be downloaded, copied, and/or notated directly in such records by you. This service does not maintain legal medical records or a designated record set.
-
-To learn more, see [Create an appointment type](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887).
-
-++++++++++++++++++++++++++++++++<br>
-OPTION 2
-
 ### Create appointment types
 
 Create specific appointment types to represent the services offered by your organization and to tailor the booking experience. The appointment type can then be used to schedule appointments.
 
-In the booking calendar, go to **More options** (...) > **Settings**, select **Appointment types**, and then select **Add appointment type**. Specify whether the service is for [**Scheduled**](#scheduled-appointment-types) or [**On-demand**](#on-demand-appointment-types) appointments. 
+In the booking calendar, go to **More options** (...) > **Settings**, select **Appointment types**, and then select **Add appointment type**. Specify whether the service is for [**Scheduled**](#scheduled-appointment-types) or [**On-demand**](#on-demand-appointment-types) appointments.
 
 To learn more, see [Create an appointment type](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887).
 
@@ -138,7 +91,7 @@ To learn more, see [Create an appointment type](https://support.microsoft.com/of
 
 Enter a name for the service. For example, Account opening, Prescription renewal, Loan consultation, Tax preparation.
 
-Then, specify any other information and settings you want. Schedulers can then use the appointment type to schedule an appointment. The information that you add is included in the email confirmation that's sent to attendees every time this type of appointment is booked. 
+Then, specify any other information and settings you want. Schedulers can use the appointment type to schedule an appointment. The information that you add is included in the email confirmation that's sent to attendees every time this type of appointment is booked.
 
 You can configure options such as whether attendees can [join from a a desktop or mobile browser](browser-join.md) without having to download Teams, add an email reminder, set up SMS text notifications, and link forms.
 
@@ -176,7 +129,7 @@ When a scheduler uses the appointment type to schedule an appointment, they can 
 
 Enter a name for the service. For example, Drop-in appointment, Account opening, Prescription renewal, Loan consultation, Tax preparation.
 
-Your customers and clients can choose this appointment type on the booking page to request an on-demand appointment with your staff.
+Your customers and clients can choose this appointment type on your booking page to request an on-demand appointment with your staff.
 
 +++++++++++++++++++++++++++++++++
 
