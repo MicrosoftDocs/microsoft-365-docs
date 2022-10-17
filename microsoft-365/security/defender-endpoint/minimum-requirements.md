@@ -83,7 +83,8 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server, version 1803 or later
-  - Windows Server 2019
+  - Windows Server 2019 and later
+  - Windows Server 2019 core edition
   - Windows Server 2022
 - Windows Virtual Desktop
 - Windows 365
