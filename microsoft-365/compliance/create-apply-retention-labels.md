@@ -146,7 +146,7 @@ After content is labeled, see the following information to understand when the a
 
 ### Manually apply retention labels 
 
-End users, as well as administrators, can manually apply retention labels from the following locations:  
+End users, as well as administrators, can manually apply retention labels from the following locations:
 
 - Outlook and Outlook on the web
     
@@ -218,6 +218,10 @@ For SharePoint, but not OneDrive, you can create a view of the library that cont
 #### Applying retention labels using Microsoft 365 groups
 
 When you publish retention labels to the **Microsoft 365 Groups** location, the retention labels appear in the SharePoint teams site but aren't supported by any email client for group mailboxes. The experience of applying a retention label in the site is identical to that for documents in SharePoint.
+
+Users can also apply the retention labels directly in Teams, from the **Files** tab:
+
+![Applying a retention label in a Teams channel, Files tab.](../media/retention-label-teams-files.gif)
 
 ### Applying a default retention label to all content in a SharePoint library, folder, or document set
 
