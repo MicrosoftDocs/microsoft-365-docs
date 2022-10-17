@@ -37,13 +37,13 @@ Signals for these events are detected in Microsoft Edge using built-in browser c
 
 The following table summarizes detected risk management activities and extension support for each browser:
 
-| **Detected activities**                        | **Microsoft Edge** | **Google Chrome** |
-| ---------------------------------------------- | ------------------ | ----------------- |
-| Files copied to personal cloud storage         | Native             | Extension         |
-| Files printed to local or network devices      | Native             | Extension         |
-| Files transferred or copied to a network share | Extension          | Extension         |
-| Files copied to USB devices                    | Extension          | Extension         |
-| Browsing risky websites                        | Extension          | Extension         |       |
+| **Detected activities** | **Microsoft Edge** | **Google Chrome** |
+| ----------------------- | ------------------ | ----------------- |
+| Files copied to personal cloud storage | Native  | Extension  |
+| Files printed to local or network devices | Native | Extension |
+| Files transferred or copied to a network share | Extension  | Extension  |
+| Files copied to USB devices | Extension   | Extension    |
+| Browsing risky websites     | Extension   | Extension    |
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
