@@ -59,15 +59,19 @@ Depending on how you wish to manage insider risk management policies and alerts,
 
 You'll choose from these role group options and solution actions when working with insider risk management:
 
-|**Actions**|**Insider Risk Management**|**Insider Risk Management Admin**|**Insider Risk Management Analysts**|**Insider Risk Management Investigators**|**Insider Risk Management Auditors**|
-|:----------|:--------------------------|:--------------------------------|:-----------------------------------|:----------------------------------------|:-----------------------------------|
-| Configure policies and settings | Yes | Yes | No | No | No |
-| Access analytics insights | Yes | Yes | Yes | No | No |
-| Access & investigate alerts | Yes | No | Yes | Yes | No |
-| Access & investigate cases | Yes | No | Yes | Yes | No |
-| Access & view the Content Explorer | Yes | No | No | Yes | No |
-| Configure notice templates | Yes | No | Yes | Yes | No |
-| View & export audit logs | Yes | No | No | No | Yes |
+|**Actions**|**Insider Risk Management**|**Insider Risk Management Admin**|**Insider Risk Management Analysts**|**Insider Risk Management Investigators**|**Insider Risk Management Auditors**|**Insider Risk Management Approvers**|
+|---|---|---|---|---|---|---|
+|Configure policies and settings|Yes|Yes|No|No|No|No|
+|Access analytics insights|Yes|Yes|Yes|No|No|No|
+|Access & investigate alerts|Yes|No|Yes|Yes|No|No|
+|Access & investigate cases|Yes|No|Yes|Yes|No|No|
+|Access & view the Content Explorer|Yes|No|No|Yes|No|No|
+|Configure notice templates|Yes|No|Yes|Yes|No|No|
+|View & export audit logs|Yes|No|No|No|Yes|No|
+|Access & view forensic evidence captures|Yes|No|No|Yes|No|No|
+|Create forensic evidence capturing request|Yes|Yes|No|No|No|No|
+|Approve forensic evidence capturing requests|Yes|No|No|No|No|Yes|
+|View device health report|Yes|Yes|No|No|No|No|
 
 >[!IMPORTANT]
 >Make sure you always have at least one user in the *Insider Risk Management* or *Insider Risk Management Admin* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.
@@ -121,3 +125,4 @@ Ready to configure insider risk management for your organization? Review the fol
 
 - [Get started with insider risk management settings](insider-risk-management-settings.md) to configure global policy settings.
 - [Get started with insider risk management](insider-risk-management-configure.md) to configure prerequisites, create policies, and start receiving alerts.
+- [Get started with insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) for step-by-step guidance to configure forensic evidence capturing in your organization.

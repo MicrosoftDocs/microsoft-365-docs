@@ -290,6 +290,7 @@ Use the following table to determine the maximum number of in-scope users suppor
 |Security policy violation by priority users|1,000|
 |Security policy violations by departing users|15,000|
 |Security policy violations by disgruntled users|7,500|
+|Forensic evidence|5 users for preview release|
 
 ## Create a new policy
 
