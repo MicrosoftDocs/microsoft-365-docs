@@ -318,3 +318,4 @@ If you'd like to change the severity level assigned in an alert policy for a spe
 6. Select **Save** to apply the new severity level to the policy.
 
 7. Select **Close** to exit the alert policy details page.
+
