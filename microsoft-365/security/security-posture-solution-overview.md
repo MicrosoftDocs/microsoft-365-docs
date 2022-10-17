@@ -42,11 +42,13 @@ This solution guide provides specific and actionable steps to strengthen your se
 
 This illustration provides a representation of the high level flow you can follow to improve your security posture.
 
-:::image type="content" source="../media/content-understanding/security-posture-overview.png" alt-text="The Zero Trust security architecture" lightbox="../media/content-understanding/security-posture-overview.png":::
+:::image type="content" source="../media/content-understanding/security-posture-overview-flow.png" alt-text="Stages in the improve your security posture flow" lightbox="../media/content-understanding/security-posture-overview-flow.png":::
 
 ## Get started
 
-The guidance is organized into 4 different stages, that follow a suggested flow, to help you strengthen your security posture. Each stage and its corresponding tasks are outlined in the following table:
+The guidance is organized into 4 different stages, that follow a suggested flow, to help you strengthen your security posture.
+
+Each stage is described below in the following table with links to bring you to more detailed information for each step.
 
 |Phase|Description|
 |---|---|
