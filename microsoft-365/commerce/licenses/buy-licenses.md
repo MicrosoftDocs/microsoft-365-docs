@@ -23,7 +23,7 @@ ms.custom:
 - adminvideo
 search.appverid: MET150
 description: "Use these steps to buy more licenses or reduce the number of licenses for your Microsoft 365 for business subscription."
-ms.date: 09/29/2022
+ms.date: 10/17/2022
 ---
 
 # Buy or remove Microsoft 365 licenses for a subscription
@@ -39,6 +39,7 @@ You can buy more licenses or reduce the number of licenses for your subscription
 
 - You must be either a Global or Billing admin to do the tasks described in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 - You can [add users and assign licenses at the same time](../../admin/add-users/add-users.md).
+- If you bought your subscription through a Microsoft Representative, contact them directly for help with reducing your license count.
 - If you bought your Microsoft 365 for business or Office 365 Enterprise plan through a third-party partner, you must buy additional licenses through that partner.
 
 ## Watch: Buy new licenses
