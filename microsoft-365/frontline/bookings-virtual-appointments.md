@@ -85,11 +85,11 @@ The Bookings app integrates with Outlook. After you add staff, you’ll be able 
 
 Create specific appointment types to represent the services offered by your organization and to tailor the booking experience. The appointment type can then be used to book appointments.
 
-In the booking calendar, go to **More options** (...) > **Settings**, select **Appointment types**, and then select **Add appointment type**. Specify whether the service is for [**Scheduled**](#scheduled-appointment-types) or [**On-demand**](#on-demand-appointment-types) appointments.
+In the booking calendar, go to **More options** (...) > **Settings**, select **Appointment types**, and then select **Add appointment type**. Specify whether the service is for [**Scheduled**](#scheduled-appointment-type) or [**On-demand**](#on-demand-appointment-type) appointments.
 
 To learn more, see [Create an appointment type](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887).
 
-#### Scheduled appointment types
+#### Scheduled appointment type
 
 Enter a name for the service. For example, Account opening, Prescription renewal, Loan consultation, Tax preparation.
 
@@ -124,7 +124,7 @@ When a scheduler uses the appointment type to schedule an appointment, they can 
 > [!NOTE]
 > If you're a healthcare provider, any information provided by you or patients in Teams (including the Forms app, Bookings app, meeting recordings if enabled by you, or any other Teams virtual appointments services) that's necessary for medical records continuity or retention purposes should be downloaded, copied, and/or notated directly in such records by you. This service does not maintain legal medical records or a designated record set.
 
-#### On-demand appointment types
+#### On-demand appointment type
 
 > [!NOTE]
 > This feature requires a Teams Premium license. [Learn more about Teams Premium]().
