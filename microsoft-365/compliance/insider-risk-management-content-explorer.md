@@ -1,4 +1,4 @@
- ---
+---
 title: Insider risk management Content explorer
 description: Learn about insider risk management Content explorer in Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance

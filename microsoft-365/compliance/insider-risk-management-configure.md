@@ -1,4 +1,4 @@
---
+---
 title: Get started with insider risk management
 description: Configure insider risk management in your organization.
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
