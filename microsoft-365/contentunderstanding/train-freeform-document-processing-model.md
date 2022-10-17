@@ -29,7 +29,7 @@ To train a freeform document processing model, follow these steps:
 
 ## Step 1: Add and analyze documents
 
-After you create your new model, your browser opens a new Power Apps AI Builder document processing model page. On this page, you can add and analyze your example documents. 
+After you create your structured document processing model, the **Choose information to extract** page opens. Here you list all pieces of information that you want the AI model to extract from your documents, such as Name, Address, or Amount.  
 
 > [!NOTE]
 > When you look for example files to use, see the [document processing model input document requirements and optimization tips](/ai-builder/form-processing-model-requirements). 
