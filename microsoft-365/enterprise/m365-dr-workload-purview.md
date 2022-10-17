@@ -18,17 +18,17 @@ ms.collection:
 
 # Data Residency for Microsoft Purview
 
-Data residency commitments for the Purview set of services are available with the Advanced Data Residency add-on.
+Data residency commitments for the Purview set of services, as described below, are available with the Advanced Data Residency add-on.
 The required conditions for the related commitments for the services described below are:
 1.    Tenant has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
 2.    Tenant has a valid Advanced Data Residency subscription for all users in the tenant
-3.    The Purview service customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
+3.    Customer Data supporting the Purview services is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
 ## Migration
 
-The customer data for Purview services are closely aligned with the Exchange Online and SharePoint Online services, and the bulk of the data migrated will be handled by those services.  In the cases where supporting customer data is maintained in an Azure Service, for example, the migration of that data is tied to the migration of the underlying Exchange Online/Sharepoint Online data.
+Customer Data supporting Purview services is closely aligned with the Exchange Online and SharePoint Online services, and the bulk of the data migrated, if required to fulfill the data residency commitments for the Purview services, will be handled by those services. In the cases where supporting Customer Data is maintained in an Azure Service, for example, the migration of that data is tied to the migration of the underlying Exchange Online/SharePoint Online data.
 
-## How can I determine customer data location?
+## How can I determine Customer Data location?
 
 We are in the process of updating the actual data location in Tenant Admin Center.  When this change is complete you will be able to see the actual data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Until that change is visible, you can view the Exchange Online data location information in order to understand where your committed data is stored for this service.
 
@@ -38,13 +38,13 @@ We are in the process of updating the actual data location in Tenant Admin Cente
 
 Service documentation: [Microsoft Purview auditing solutions](https://learn.microsoft.com/microsoft-365/compliance/auditing-solutions-overview)
 
-Capability summary: Microsoft Purview Audit (Standard) provides with you with the ability to log and search for audited activities and power your forensic, IT, compliance, and legal investigations.
+Capability summary: Microsoft Purview Audit (Standard) provides you with the ability to log and search your data for audit activities and power your forensics, IT, and compliance efforts and legal investigations.
 
 #### Data Residency commitments available
 
 Commitment:
 
-The following customer data will be stored in the related _Geography_:
+The following Customer Data will be stored in the related _Geography_:
 
 - Service configuration data
 - Audited Activities
@@ -57,15 +57,15 @@ The following customer data will be stored in the related _Geography_:
 
 Service documentation: [Microsoft Purview auditing solutions](https://learn.microsoft.com/microsoft-365/compliance/auditing-solutions-overview)
 
-Capability summary: Audit (Premium) builds on the capabilities of Audit (Standard) by providing audit log retention policies, longer retention of audit records, high-value crucial events, and higher bandwidth access to the Office 365 Management Activity API.
+Capability summary: Microsoft Purview Audit (Premium) builds on the capabilities of Audit (Standard) by providing audit log retention policies, longer retention of audit records, capability to identify high-value crucial events, and higher bandwidth access to the Office 365 Management Activity API.
 
 #### Data Residency commitments available
 
 Commitment:
 
-The following customer data will be stored in the related _Geography_:
+The following Customer Data will be stored in the related _Geography_:
 
-In addition to the data stored as part of Purview Audit (Standard), configuration and customer data related to high-value events are stored in the relevant _Geography_.
+In addition to the data stored as part of Purview Audit (Standard), configuration and Customer Data related to high-value crucial events are stored in the relevant _Geography_.
 
 ### Data lifecycle management - Data Retention
 
@@ -93,7 +93,7 @@ Capability summary: Lets you retain or delete content with policy management for
 
 Commitment:
 
-The following customer data will be stored in the related _Geography_:
+The following Customer Data will be stored in the related _Geography_:
 
 - Retention policy settings
 - Retention label definitions
@@ -125,7 +125,7 @@ Capability summary: Organizations of all types require a records-management solu
 
 Commitment:
 
-The following customer data will be stored in the related _Geography_:
+The following Customer Data will be stored in the related _Geography_:
 
 - Record retention label definitions.
 - File plan definitions
@@ -156,12 +156,12 @@ Capability summary: Sensitivity labels from Microsoft Purview Information Protec
 
 Commitment:
 
-The following customer data will be stored in the related _Geography_:
+The following Customer Data will be stored in the related _Geography_:
 
 - Label configuration
 - Labels definition
 - Label policies
-- Custom Help page
+- Custom help page
 - Activity Explorer and Microsoft 365 unified audit logs
 - Label change justification records.
 
@@ -194,7 +194,7 @@ DLP detects sensitive items by using deep content analysis, not by just a simple
 
 Commitment:
 
-The following customer data will be stored in the related _Geography_:
+The following Customer Data will be stored in the related _Geography_:
 
 - DLP admin configuration
 - DLP policies in Compliance Center
@@ -214,15 +214,17 @@ Applies to the following services:
 
 Service documentation: [Office 365 Message Encryption - Microsoft Purview](https://learn.microsoft.com/microsoft-365/compliance/ome)
 
-Capability summary: With Office 365 Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Office 365 Message Encryption works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps ensure that only intended recipients can view message content.
+Capability summary: With Office 365 Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Office 365 Message Encryption works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps to ensure that only intended recipients can view message content.
 
 #### Data Residency commitments available
 
 Commitment:
 
-The following customer data will be stored in the related _Geography_:
+The following Customer Data will be stored in the related _Geography_:
 
-***TODO: need commitment text***
+- Encryption policies 
+- Admin settings 
+- Encrypted messages 
 
 ### Insider Risk Management - Information Barriers
 
@@ -236,7 +238,7 @@ Capability summary: Microsoft Purview Information Barriers (IB) is a compliance 
 
 Commitment:
 
-The following customer data will be stored in the related _Geography_:
+The following Customer Data will be stored in the related _Geography_:
 
 - Policy settings and risk indicators
 - Admin settings
