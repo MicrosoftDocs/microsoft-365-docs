@@ -93,15 +93,19 @@ Depending on how you wish to manage insider risk management policies and alerts,
 
 You'll choose from these role group options and solution actions when working with insider risk management:
 
-|Actions|Insider Risk Management|Insider Risk Management Admin|Insider Risk Management Analysts|Insider Risk Management Investigators|Insider Risk Management Auditors|
-|---|---|---|---|---|---|
-|Configure policies and settings|Yes|Yes|No|No|No|
-|Access analytics insights|Yes|Yes|Yes|No|No|
-|Access & investigate alerts|Yes|No|Yes|Yes|No|
-|Access & investigate cases|Yes|No|Yes|Yes|No|
-|Access & view the Content Explorer|Yes|No|No|Yes|No|
-|Configure notice templates|Yes|No|Yes|Yes|No|
-|View & export audit logs|Yes|No|No|No|Yes|
+|**Actions**|**Insider Risk Management**|**Insider Risk Management Admin**|**Insider Risk Management Analysts**|**Insider Risk Management Investigators**|**Insider Risk Management Auditors**|**Insider Risk Management Approvers**|
+|---|---|---|---|---|---|---|
+|Configure policies and settings|Yes|Yes|No|No|No|No|
+|Access analytics insights|Yes|Yes|Yes|No|No|No|
+|Access & investigate alerts|Yes|No|Yes|Yes|No|No|
+|Access & investigate cases|Yes|No|Yes|Yes|No|No|
+|Access & view the Content Explorer|Yes|No|No|Yes|No|No|
+|Configure notice templates|Yes|No|Yes|Yes|No|No|
+|View & export audit logs|Yes|No|No|No|Yes|No|
+|Access & view forensic evidence captures|Yes|No|No|Yes|No|No|
+|Create forensic evidence capturing request|Yes|Yes|No|No|No|No|
+|Approve forensic evidence capturing requests|Yes|No|No|No|No|Yes|
+|View device health report|Yes|Yes|No|No|No|No|
 
 > [!IMPORTANT]
 > Make sure you always have at least one user in the built-in *Insider Risk Management* or *Insider Risk Management Admin* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get into a 'zero administrator' scenario if specific users leave your organization.
@@ -232,6 +236,12 @@ If you create security violation policies, you'll need to have Microsoft Defende
 
 See the [Configure advanced features in Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) article for step-by-step guidance to configure Defender for Endpoint for insider risk management integration. After you've configured the Microsoft Defender for Endpoint, return to these configuration steps.
 
+#### Configure forensic evidence (optional)
+
+Having visual context is crucial for security teams during forensic investigations to get better insights into risky user activities that may lead to a security incident. With customizable event triggers and built-in user privacy protection controls, forensic evidence enables customizable capturing across devices to help your organization better mitigate, understand, and respond to potential data risks like unauthorized data exfiltration of sensitive data.
+
+See the [Get started with insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) article for step-by-step guidance to configure forensic evidence for your organization. 
+
 ## Step 5 (required): Configure insider risk settings
 
 [Insider risk settings](insider-risk-management-settings.md) apply to all insider risk management policies, regardless of the template you chose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management tabs. These settings control privacy, indicators, intelligent detections, and more.
@@ -257,7 +267,7 @@ Before configuring a policy, define the following insider risk settings:
 8. On the **Power Automate flows** page, configure a flow from insider risk flow templates or create a new flow. See the [Getting started with insider risk management settings](insider-risk-management-settings.md#power-automate-flows-preview) article for step-by-step guidance.
 9. On the **Priority assets page**, configure priority assets to use data from your physical control and access platform imported by the Physical badging connector. See the [Getting started with insider risk management settings](insider-risk-management-settings.md#priority-physical-assets-preview) article for step-by-step guidance.
 10. On the **Microsoft Teams** page, enable Microsoft Teams integration with insider risk management to automatically create a team for case or user collaboration. See the [Getting started with insider risk management settings](insider-risk-management-settings.md#microsoft-teams-preview) article for step-by-step guidance.
-11. Select **Save** to enable these settings for your insider risk policies.
+12. Select **Save** to enable these settings for your insider risk policies.
 
 ## Step 6 (required): Create an insider risk management policy
 
