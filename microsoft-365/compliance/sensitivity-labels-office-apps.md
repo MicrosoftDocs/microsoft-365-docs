@@ -38,12 +38,12 @@ The [Azure Information Protection (AIP) unified labeling client](/azure/informat
 
 ## Support for sensitivity label capabilities in apps
 
-The following tables list the minimum Office version that introduced specific capabilities for sensitivity labels that are built in to Office apps. Or, if the label capability is in public preview or under review for a future release:
+The following tables list the minimum Office version that introduced specific capabilities for sensitivity labels built in to Office apps. Or, if the label capability is in public preview or under review for a future release:
 
-- Table: [Sensitivity label capabilities in Word, Excel, and PowerPoint](#sensitivity-label-capabilities-in-word-excel-and-powerpoint)
-- Table: [Sensitivity label capabilities in Outlook](#sensitivity-label-capabilities-in-outlook)
+- [Capabilities table for Word, Excel, and PowerPoint](#sensitivity-label-capabilities-in-word-excel-and-powerpoint)
+- [Capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook)
 
-Use the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) for details about new capabilities that are planned for future releases.
+Use the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) for details about new labeling capabilities that are planned for future releases.
 
 New versions of Office apps are made available at different times for different update channels. For Windows, you'll get the new capabilities earlier when you are on the Current Channel or Monthly Enterprise Channel, rather than Semi-Annual Enterprise Channel. The minimum version numbers can also be different from one update channel to the next. For more information, see [Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels) and [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
