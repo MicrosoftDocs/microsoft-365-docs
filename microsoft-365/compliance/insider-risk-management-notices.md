@@ -19,6 +19,9 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 # Insider risk management notice templates
 
+>[!IMPORTANT]
+>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
+
 Insider risk management notice templates allow you to automatically send email messages to users when a case is created for activities that have generated a policy match and confirmed alert. For most alerts that generate cases, user actions are the result of mistakes or inadvertent activities without ill intent. Notices serve as simple reminders to users to be more careful, to provide links to information for refresher training, or to corporate policy resources. Notices can be an important part of your internal compliance training program and can help create a documented audit trail for users with recurring risk activities.
 
 Create notice templates if you want to send users an email reminder notice for policy matches as part of the case resolution process. Notices can only be sent to the user email address associated with the specific case being reviewed. When selecting a notice template to apply to a policy match, you can choose to accept the field values defined in the template or overwrite the fields as needed

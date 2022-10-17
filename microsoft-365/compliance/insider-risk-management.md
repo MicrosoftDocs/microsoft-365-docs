@@ -22,6 +22,9 @@ ms.collection:
 
 # Learn about insider risk management
 
+>[!IMPORTANT]
+>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
+
 Microsoft Purview Insider Risk Management is a compliance solution that helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization. Insider risk policies allow you to define the types of risks to identify and detect in your organization, including acting on cases and escalating cases to Microsoft eDiscovery (Premium) if needed. Risk analysts in your organization can quickly take appropriate actions to make sure users are compliant with your organization's compliance standards.
 
 For more information and an overview of the planning process to address risky activities in your organization, see [Starting an insider risk management program](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
@@ -190,7 +193,7 @@ For organizations in the healthcare industry, recent studies have found a very h
 
 ### Actions and behaviors by disgruntled users (preview)
 
-Employment stresses events can impact user behavior in several ways that relate to insider risks. These stressors may be a poor performance review, a position demotion, or the user being placement on a performance review plan. Though most users don't respond maliciously to these events, the stress of these actions may result in some users to behave in ways they may not normally consider during normal circumstances. To help identify these types of risky activities, the following insider risk management policy templates use the Microsoft 365 HR connector and starts scoring risk indicators relating to behaviors that may occur near employment stressor events:
+Employment stressor events can impact user behavior in several ways that relate to insider risks. These stressors may be a poor performance review, a position demotion, or the user being placement on a performance review plan. Stressors may also result in potentially inappropriate behavior such as users sending potentially threatening, harassing, or discriminatory language in email and other messages. Though most users don't respond maliciously to these events, the stress of these actions may result in some users to behave in ways they may not normally consider during normal circumstances. To help identify these types of risky activities, the following insider risk management policy templates can use the HR connector and/or integration with a [dedicated communication compliance policy](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) to bring users into scope for insider risk management policies and start scoring risk indicators relating to behaviors that may occur near employment stressor events:
 
 - [Data leaks by disgruntled users (preview)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Security policy violations by disgruntled users (preview)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)

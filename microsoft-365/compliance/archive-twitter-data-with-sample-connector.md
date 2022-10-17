@@ -73,7 +73,7 @@ To deploy the source code for the Twitter connector app:
 
 1. Go to [this GitHub site](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet).
 
-2. Click **Deploy to Azure**.
+2. Select **Deploy to Azure**.
 
 For step-by-step instructions, see [Deploy the connector web service from GitHub to your Azure account](deploy-twitter-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
 
