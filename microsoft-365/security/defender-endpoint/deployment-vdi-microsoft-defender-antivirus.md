@@ -16,6 +16,7 @@ ms.service: microsoft-365-security
 ms.collection: 
 - m365-security
 - tier2
+- EngageScoreSep2022
 search.appverid: met150
 ---
 
