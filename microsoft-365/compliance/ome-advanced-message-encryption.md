@@ -26,6 +26,8 @@ Advanced Message Encryption helps customers meet compliance obligations that req
 
 You can only revoke and set an expiration date for emails sent to external recipients.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Get started with Microsoft Purview Advanced Message Encryption
 
 The following articles describe how you set up and use Advanced Message Encryption.

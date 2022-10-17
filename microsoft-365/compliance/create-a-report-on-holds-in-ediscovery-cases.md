@@ -28,6 +28,8 @@ The script in this article lets eDiscovery administrators and eDiscovery manager
 
 See the [More information](#more-information) section for a detailed description of the information included in the report.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Admin requirements and script information
 
 - To generate a report on all eDiscovery cases in your organization, you have to be an eDiscovery Administrator in your organization. If you are an eDiscovery Manager, the report will only include information about the cases that you can access. For more information about eDiscovery permissions, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).

@@ -25,6 +25,8 @@ search.appverid:
 
 When you're satisfied with the items you've collected in a draft collection and are ready to analyze, tag, and review them, you can add a collection to a review set in the case. When you commit a draft collection to a review set, collected items are copied from their original content location in Microsoft 365 to a review set. A review set is a secure, Microsoft-provided Azure Storage location in the Microsoft cloud.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Commit a draft collection to a review set
 
 1. In the Microsoft Purview compliance portal, open the Microsoft Purview eDiscovery (Premium) case, and then select the **Collections** tab to display a list of the collections in the case.

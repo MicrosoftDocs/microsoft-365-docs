@@ -12,8 +12,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -99,7 +100,7 @@ Configure the supervised mode for Defender for Endpoint app through an App confi
 1. In the next screen, select **Use configuration designer** as the format. Specify the following property:
     - Configuration Key: `issupervised`
     - Value type: String
-    - Configuration Value: `issupervised`
+    - Configuration Value: `{{issupervised}}`
 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager Admin Center6.](images/ios-deploy-6.png)

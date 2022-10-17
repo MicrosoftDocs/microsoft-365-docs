@@ -13,7 +13,6 @@ ms.collection:
 - purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
-- highpri
 - tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
@@ -29,6 +28,8 @@ description: "Use the Compliance Manager quickstart guide to help you along your
 Compliance Manager provides intelligent and actionable data upon your first visit. Compliance Manager also has advanced capabilities for scaling your compliance when you’re ready. Available assessments depend on your licensing agreement; [learn more](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 Whether you’re coming to Compliance Manager for the first time, or are ready to use some of the advanced features, this guide can support you along your journey.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## First visit: get to know Compliance Manager
 

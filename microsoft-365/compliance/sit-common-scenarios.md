@@ -24,6 +24,8 @@ ms.custom: seo-marvel-apr2020
 
 This article describes how to implement some common sensitive information type (SIT) use case scenarios. You can use these procedures as examples and adapt them to your specific needs.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Protect credit card numbers
 
 Contoso Bank needs to classify the credit card numbers that they issue as sensitive. Their credit cards start with a set of six-digit patterns. They would like to customize the out of the box credit card definition to only detect the credit card numbers starting with their six-digit patterns.

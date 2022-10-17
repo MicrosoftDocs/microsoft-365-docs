@@ -23,6 +23,8 @@ search.appverid:
 
 Access logs are available for encrypted messages through the encrypted message portal that lets your organization determine when messages are read, and forwarded by your external recipients. To ensure logs are available for any external recipients, you should apply a custom branding template to protected emails sent by your organization to external recipients that enforces a portal experience. See [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Enabling message access audit logs in PowerShell
 
 Access log can be enabled using [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). The *EnablePortalTrackingLogs* parameter of the **[Set-IrmConfiguration](/powershell/module/exchange/set-irmconfiguration)** cmdlet specifies whether to enable the audit logs of accessing the encrypted message portal. Valid values are:

@@ -32,6 +32,8 @@ For example:
 
 To ensure access to the encryption service isn't inadvertently blocked, use the following sections to help configure your organization's Azure AD, or relay the information to an Azure AD administrator in another organization. Without access to this service, users can't be authenticated and authorized to open encrypted content.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Cross-tenant access settings and encrypted content
 
 > [!IMPORTANT]

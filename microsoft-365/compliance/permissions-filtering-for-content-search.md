@@ -41,6 +41,8 @@ The following four cmdlets in Security & Compliance PowerShell let you configure
 - [Set-ComplianceSecurityFilter](#set-compliancesecurityfilter)
 - [Remove-ComplianceSecurityFilter](#remove-compliancesecurityfilter)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Requirements to configure permissions filtering
 
 - To run the compliance security filter cmdlets, you have to be a member of the Organization Management role group in the compliance portal. For more information, see [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).

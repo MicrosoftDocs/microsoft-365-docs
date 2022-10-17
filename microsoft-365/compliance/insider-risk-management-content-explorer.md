@@ -18,6 +18,9 @@ ms.collection:
 
 # Insider risk management Content explorer
 
+>[!IMPORTANT]
+>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
+
 The insider risk management **Content explorer** allows users assigned the *Insider Risk Management Investigators* role to examine the context and details of content associated with activity in alerts. The case data in Content explorer is refreshed daily to include new activity. For all alerts that are confirmed to a case, copies of data and message files are archived as a snapshot in time of the items, while maintaining the original files and messages in the storage sources. If needed, case data files may be exported as a portable document file (PDF) or in the original file format.
 
 For new cases, it usually takes about an hour for content to populate in Content explorer. For cases with large amounts of content, it may take longer to create a snapshot. If content is still loading in Content explorer, you will see a progress indicator that displays the completion percentage.
@@ -28,6 +31,8 @@ If the content includes Information Rights Management permissions, these permiss
 
 > [!NOTE]
 > Content explorer includes user activities related to Microsoft 365 service files, such as user activity on SharePoint, Exchange, Microsoft Teams, and OneDrive for Business.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Column options
 

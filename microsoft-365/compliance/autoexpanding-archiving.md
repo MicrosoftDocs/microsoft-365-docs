@@ -32,6 +32,8 @@ For step-by-step instructions for turning on auto-expanding archiving, see [Enab
 > [!NOTE]
 > Auto-expanding archiving also supports shared mailboxes.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How auto-expanding archiving works
 
 As explained in the introduction, additional mailbox storage space is created when a user's archive mailbox is enabled. When auto-expanding archiving is enabled, Microsoft Purview periodically checks the size of the archive mailbox. When an archive mailbox gets close to its storage limit, additional storage space is automatically created for the archive. If the user runs out of this additional storage space, more storage space is automatically added to the user's archive. This process continues until the user's archive reaches a size 1.5 TB. This process happens automatically, which means administrators don't have to request additional archive storage or manage auto-expanding archiving.
@@ -53,7 +55,9 @@ Here's a quick overview of the process.
 
 ## What gets moved to the additional archive storage space?
 
-To make efficient use of auto-expanding archive storage, folders may get moved. Microsoft Purview determines which folders get moved when additional storage is added to the archive. Sometimes when a folder is moved, one or more subfolders are automatically created and items from the original folder are distributed to these folders to facilitate the moving process. When viewing the archive portion of the folder list in Outlook, these subfolders are displayed under the original folder. The naming convention that Microsoft 365 uses to name these subfolders is **\<folder name\>_yyyy (Created on mmm dd, yyyy h_mm)**, where:
+To make efficient use of auto-expanding archive storage, folders may get moved. Microsoft Purview determines which folders get moved when additional storage is added to the archive. Sometimes when a folder is moved, one or more subfolders are automatically created and items from the original folder are distributed to these folders to facilitate the moving process. You might need to communicate this behavior to end users after enabling their mailbox for auto-expanding archives, to help set expectations.
+
+When viewing the archive portion of the folder list in Outlook, these subfolders are displayed under the original folder. The naming convention that Microsoft 365 uses to name these subfolders is **\<folder name\>_yyyy (Created on mmm dd, yyyy h_mm)**, where:
 
 - **yyyy** is the year the messages in the folder were received.
 
@@ -86,17 +90,19 @@ To access messages that are stored in an auto-expanded archive, users have to us
 
 - Outlook 2016 or Outlook 2019 for Mac
 
-Here are some things to consider when using Outlook or Outlook on the web to access messages stored in an auto-expanded archive.
+Here are some things to consider before you enable a mailbox for auto-expanding archives:
 
-- You can access any folder in your archive mailbox, including ones that were moved to the auto-expanded storage area.
+- Users can access any folder in their archive mailbox, including ones that were moved to the auto-expanded storage area.
 
-- If an archive mailbox has at least one auto-expanded storage area, you can't delete a folder from the archive mailbox or from the auxiliary archive. In other words, after an auto-expanded storage area has been provisioned, you can't delete any folders in the archive.
+- If an archive mailbox has at least one auto-expanded storage area, users can't delete a folder from the archive mailbox or from the auxiliary archive. In other words, after an auto-expanded storage area has been provisioned, they can't delete any folders in the archive.
 
-- You can delete items in an auto-expanded storage area. However, you can't use the Recover Deleted Items feature to recover an item after auto-expanding archiving is enabled for a mailbox.
+- Users can delete items in an auto-expanded storage area. However, they can't use the [Recover Deleted Items feature](https://support.microsoft.com/office/recover-deleted-items-in-outlook-for-windows-49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) to recover an item after auto-expanding archiving is enabled for their mailbox.
 
-- Search for auto-expanded archiving is available in Outlook for the web (OWA). Similar to Online Archive, you can search for items that were moved to an additional storage area. When archive is selected as the search scope in OWA, all archives (including auto-expanded archives) and their corresponding subfolders will be searched.
+- Search for auto-expanded archiving is available in Outlook for the web (OWA). Similar to Online Archive, users can search for items that were moved to an additional storage area. When archive is selected as the search scope in OWA, all archives (including auto-expanded archives) and their corresponding subfolders will be searched.
 
-- Auto-expanded archive search is available in Outlook for Windows in Monthly Enterprise Channel. With this update the Current Mailbox scope is available, thus allowing you to search the auto-expanded archive. Note that search is not supported for the auto-expanded archive feature in a cloud-only archive situation (primary mailbox still on-premises). For more information about this and other Microsoft Search support features, see [How Outlook for Windows connected to Exchange Online utilizes Microsoft Search](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
+- Auto-expanded archive search is available when you use Outlook for Windows from the Monthly Enterprise Channel, build 16.0.13519+. With this update the Current Mailbox scope is available, so users can search the auto-expanded archive. However, search isn't recursive for nested subfolders within each archive folder.
+
+- Search is not supported for the auto-expanded archive feature in a cloud-only archive situation (primary mailbox still on-premises). For more information about this and other Microsoft Search support features, see [How Outlook for Windows connected to Exchange Online utilizes Microsoft Search](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
 
 - Item counts in Outlook and Read/Unread counts (in Outlook and Outlook on the web) in an auto-expanded archive might not be accurate.
 
