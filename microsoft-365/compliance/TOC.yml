@@ -1152,7 +1152,7 @@
         - name: Understand the scanner
           href: deploy-scanner.md
         - name: Get started with the scanner
-          href: deploy-scanner-prereq.md
+          href: deploy-scanner-prereqs.md
         - name: Configure & install the scanner
           href: deploy-scanner-configure-install.md
         - name: Run the scanner
