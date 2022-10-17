@@ -1,5 +1,5 @@
 ---
-title: Document understanding overview in Microsoft SharePoint Syntex
+title: Document understanding overview in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,10 +13,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about document understanding in Microsoft SharePoint Syntex.
+description: Learn about document understanding in Microsoft Syntex.
 ---
 
-# Document understanding overview in Microsoft SharePoint Syntex
+# Document understanding overview in Microsoft Syntex
 
 
 </br>
@@ -28,7 +28,7 @@ description: Learn about document understanding in Microsoft SharePoint Syntex.
 Document understanding uses artificial intelligence (AI) models to automate classification of files and extraction of information. It works best with unstructured documents, such as letters or contracts. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
 
 > [!NOTE]
-> See the [SharePoint Syntex adoption: Get started guide](./adoption-getstarted.md) for more information about document understanding scenario examples.
+> See the [Syntex adoption: Get started guide](./adoption-getstarted.md) for more information about document understanding scenario examples.
 
 Document understanding models are created and managed in a type of SharePoint site called a *content center*. When applied to a SharePoint document library, the model is associated with a content type has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
 
@@ -129,4 +129,4 @@ Document understanding models support *all* of the Latin-based languages, includ
   
 [Form processing overview](form-processing-overview.md)
 
-[SharePoint Syntex Accessibility Mode](accessibility-mode.md)
+[Syntex accessibility mode](accessibility-mode.md)

@@ -117,9 +117,6 @@ The following table describes the indexing limits that might result in an email 
 
 ## Jobs limits
 
-> [!NOTE]
-> eDiscovery (Premium) jobs are counted toward the eDiscovery (Standard) limits. For example, if you have 50 jobs running in eDiscovery (Premium) you will be unable to start jobs in eDiscovery (Standard). eDiscovery (Standard) jobs do not count toward eDiscovery (Premium) limits.
-
 |Description|Limit|
 |---|---|
 |Maximum number of concurrent jobs in your organization.|50|
