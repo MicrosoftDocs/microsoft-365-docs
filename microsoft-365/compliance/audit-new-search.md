@@ -26,7 +26,7 @@ ms.custom:
 
 Your organization requires access to critical audit log event data to gain insight and further investigate user activities. Previously, your search jobs in the Microsoft Purview compliance portal UI were limited in their ability to create concurrent audit search jobs and review historical search jobs. These critical audit search jobs also had a dependency on the browser window remaining open in order to complete.
 
-The Audit New Search (preview) builds upon the existing search functionalities and includes the following key improvements:
+The Audit New Search builds upon the existing search functionalities and includes the following key improvements:
 
 - Search jobs initiated via the compliance portal UI no longer require the web browser window to remain open in order to complete. These jobs will continue to run even after the browser window is closed.
 - Completed search jobs are now stored for 30 days, giving customers the ability to reference historical audit searches. These search jobs are presented in the UI, listing the search name, search job status, progress %, Number of results, Creation Time, and Searched by.
@@ -56,7 +56,7 @@ Follow the below steps to test and validate the Audit New Search experience:
 
 1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com)
 2. Select the **Audit** tab on the left panel of the homepage to navigate to the Audit tool
-3. Select **New Search (Preview)** tab at the top of the **Audit** page
+3. Select **New Search** tab at the top of the **Audit** page
 
       ![Audit New Search overview in Microsoft Purview.](../media/audit-search/audit-new-search.png)
 
