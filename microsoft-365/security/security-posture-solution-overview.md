@@ -24,24 +24,11 @@ ms.collection:
 
 # Strengthen your security posture with Microsoft 365 Defender
 
-It has never been more important to be able to detect and defend your organization against cyber security threats. Knowing your assets, using the built-in configurations available to you, and taking recommended actions will not only help you build great security posture and resilience it will also empower you to respond rapidly to new and evolving threats.
+It has never been more important to be able to detect and defend your organization against cyber security threats. Knowing your assets, using the built-in configurations available to you, and taking recommended actions will help you build great security posture and resilience while also empowering you to respond rapidly to new and evolving threats.
 
 As an organization’s security posture is constantly changing alongside the cybersecurity landscape, making security posture improvements should be a continuous process. This article describes how you can strengthen your organization's security posture using capabilities available in Microsoft Defender 365.
 
 It will help you better understand your overall security posture and provide a framework to help you continually assess, improve, and maintain your security posture to fit your organization's security needs.
-
-## Overview of the solution
-
-This illustration provides a representation of the high level flow you can follow to improve your security posture.
-
-:::image type="content" source="../media/content-understanding/security-posture-overview.png" alt-text="The Zero Trust security architecture" lightbox="../media/content-understanding/security-posture-overview.png":::
-
-This security posture solution guidance flow includes four stages:
-
-- **Configure a secure environment**:
-- **Assess and Protect**: Know your assets.
-- **Investigate and Improve**: Discover vulnerable asset and configurations.
-- **Track and Maintain**:
 
 ## Before you begin
 
@@ -51,14 +38,20 @@ This solution guide provides specific and actionable steps to strengthen your se
 - you have successfully deployed Microsoft Defender for Endpoint
 - you're beyond the initial stage of onboarding devices and have a management tool in place to support future device onboarding
 
+## Overview of the solution
+
+This illustration provides a representation of the high level flow you can follow to improve your security posture.
+
+:::image type="content" source="../media/content-understanding/security-posture-overview.png" alt-text="The Zero Trust security architecture" lightbox="../media/content-understanding/security-posture-overview.png":::
+
 ## Get started
 
-The different stages along with the steps in stage to strengthen your security posture are described in the following section:
+The guidance is organized into 4 different stages, that follow a suggested flow, to help you strengthen your security posture. Each stage and its corresponding tasks are outlined in the following table:
 
 |Phase|Description|
 |---|---|
-|[Configure a secure environment](#configure-a-secure-environment)|<ol><li> Configure device discovery]</li><li> Configure ASR in audit mode</li></ol>|
-|[Assess and Protect](#assess-and-protect)|<ol><li>Assess your devices</li><li> Assign device value]</li><li> Onboard newly discovered endpoints</li></ol>|
+|[Configure](#configure-a-secure-environment)|<ol><li> Configure device discovery</li><li>Configure Microsoft Defender for Identity Configure </li><li> ASR in audit mode</li></ol>|
+|[Assess and Protect](#assess-and-protect)|<ol><li>Assess your devices</li><li> Assign device value</li><li> Onboard newly discovered endpoints</li></ol>|
 |[Investigate and Improve](#investigate-and-improve)|<ol><li> Review Secure Score</li></ol>|
 |[Track and Maintain](#track-and-maintain)|<ol><li> Enable email notifications for new vulnerabilities</li><li> Hunt for threats with advanced hunting </li><li>Understand your exposure to zero days threats]</li></ol>|
 
@@ -66,6 +59,15 @@ The different stages along with the steps in stage to strengthen your security p
 
 [Configure device discovery](../security/defender-endpoint/configure-device-discovery.md)
 Configure ASR in audit mode
+
+**Configure Microsoft Defender for Identity**
+[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on this next because it protects your on-prem and your cloud infrastructure, has no dependencies or prerequisites, and can provide immediate benefit.
+
+- See [Microsoft Defender for Identity Quickstarts](/azure-advanced-threat-protection/install-atp-step1) to get setup quickly
+- Watch [Video: Introduction to Microsoft Defender for Identity](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
+- Review the [three phases of Microsoft Defender for Identity deployment](/azure-advanced-threat-protection/what-is-atp#whats-next)
+
+
 
 ### Assess and Protect
 
