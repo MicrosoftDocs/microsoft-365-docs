@@ -87,7 +87,7 @@ You need to tag the documents to teach the model to understand the fields and ta
 ### Use flows to extract information
 
 > [!IMPORTANT]
-> The information in this section doesn't apply to the current release of Syntex. It applies only to the form processing models created in previous releases. You no longer need to configure the flows to process existing files.
+> The information in this section doesn't apply to the latest release of Syntex. It applies only to the form processing models that were created in previous releases. In the latest release, you no longer need to configure the flows to process existing files.
 
 Two flows are available to process a selected file or batch of files in a library where a structured document processing model has been applied.
 
