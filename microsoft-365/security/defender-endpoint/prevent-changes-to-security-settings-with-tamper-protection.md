@@ -9,7 +9,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 09/23/2022
+ms.date: 10/17/2022
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -34,6 +34,7 @@ search.appverid: met150
 
 **Platforms**
 - Windows
+- macOS
 
 Tamper protection is available for devices that are running one of the following versions of Windows:
 
@@ -50,6 +51,12 @@ Tamper protection is available for devices that are running one of the following
 > [!NOTE]
 > Tamper protection in Windows Server 2012 R2 is available for devices onboarded using the modern unified solution package. For more information, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
 
+Tamper protection is available for devices that are running one of the following versions of macOS:
+
+- Monterey (12)
+- Big Sur (11)
+- Catalina (10.15+)
+
 ## Overview
 
 During some kinds of cyber attacks, bad actors try to disable security features, such as antivirus protection, on your machines. Bad actors like to disable your security features to get easier access to your data, to install malware, or to otherwise exploit your data, identity, and devices. Tamper protection helps prevent these kinds of things from occurring. With tamper protection, malicious apps are prevented from taking actions such as:
@@ -65,7 +72,7 @@ During some kinds of cyber attacks, bad actors try to disable security features,
 - Disabling scanning of archives and network files
 
 > [!IMPORTANT]
-> Built-in protection (preview) includes turning tamper protection on by default. To learn more about built-in protection, see:
+> Built-in protection includes turning tamper protection on by default. To learn more about built-in protection, see:
 > - [Built-in protection helps guard against ransomware](built-in-protection.md) (article)
 > - [Tamper protection will be turned on for all enterprise customers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478) (Tech Community blog post)
 
