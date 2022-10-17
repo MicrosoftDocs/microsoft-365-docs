@@ -75,7 +75,7 @@ To ensure that all geo locations are compatible, run:
 Get-SPOGeoMoveCrossCompatibilityStatus
 ```
 
-You will see a list of your geo locations and whether content can be moved between will be denoted as "Compatible". If the command returns "Incompatible" please retry validating the status at a later date.
+This will display all your geo locations and whether the environment is compatible with the destination geo location. If a geo location is incompatible, that means an update is in progress in that location. Try again in a few days.
 
 If a OneDrive contains a subsite, for example, it cannot be moved. You can use the Start-SPOUserAndContentMove cmdlet with the -ValidationOnly parameter to validate if the OneDrive is able to be moved:
 

@@ -43,7 +43,10 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
 ## October 2022
-- [Automated Investigations email cluster action de-duplication](air-review-approve-pending-completed-actions.md): We have added additional checks. If the same investigation cluster is already approved during the past hour, new duplicate remediation will not be processed again. 
+- **[Automated Investigations email cluster action de-duplication](air-review-approve-pending-completed-actions.md)**: We have added additional checks. If the same investigation cluster is already approved during the past hour, new duplicate remediation will not be processed again. 
+- **[Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md):**
+  - With **allow expiry management** (currently in private preview), if Microsoft has not learned from the allow, Microsoft will automatically extend the expiry time of allows, which are going to expire soon, by 30 days to prevent legitimate email from going to junk or quarantine again.
+  - Customers in the government cloud environments will now be able to create allow and block entries for URLs and attachments in the Tenant Allow/Block List using the admin URL and email attachment submissions. The data submitted through the submissions experience will not leave the customer tenant, thus satisfying the data residency commitments for government cloud clients.
 
 ## September 2022
 **Automatic redirection from Office action center to unified action center:** The action center in the Email & collaboration blade - **Email & Collaboration** > **Review** > **Action center**(https://security.microsoft.com/threatincidents) is automatically redirected to **Actions & Submissions** > **Action center** > **History** (https://security.microsoft.com/action-center/history).
