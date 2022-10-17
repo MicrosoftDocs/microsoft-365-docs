@@ -214,7 +214,7 @@ Communication compliance uses built-in trainable and global classifiers to scan 
 - **Threat**: Scans for threats to commit violence or physical harm to a person or property.
 
 > [!NOTE]
-> Policies using classifiers will inspect and evaluate messages with a word count of three or greater. Messages containing less than three words aren't evaluated in policies using classifiers. To identify and take action on shorter messages containing inappropriate content, we recommend including a custom keyword dictionary to communication compliance policies detecting this type of content.
+> Policies using Threat, Harassment, and Profanity classifiers in the English language will inspect and evaluate messages with a word count of three or greater. Messages containing less than three words aren't evaluated in policies using these types of classifiers. To identify and take action on shorter messages containing inappropriate content, we recommend including a custom keyword dictionary to communication compliance policies detecting this type of content.
 
 ### Optical character recognition (OCR)
 
