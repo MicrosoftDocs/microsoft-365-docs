@@ -157,7 +157,7 @@ The queue view provides your staff with a dashboard to monitor all scheduled and
 [NEED NEW SCREENSHOT]<br>
 :::image type="content" source="media/bookings-virtual-visits-queue.png" alt-text="Screenshot of the queue view in the Bookings app in Teams" lightbox="media/bookings-virtual-visits-queue.png":::
 
-From the queue, schedulers can add a new booking, view relevant appointment details, see appointment statuses throughout the day, send email reminders to assigned staff and attendees, and send SMS notifications to attendees.
+From the queue, schedulers can add a new booking, view relevant appointment details, and see appointment statuses throughout the day. They can also send email reminders to assigned staff and attendees and send SMS notifications to attendees for scheduled appointments.
 
 When an attendee joins the waiting room, the status changes, and their wait time is displayed and tracked. The view automatically refreshes with color-coded updates so that changes can easily be identified.
 
