@@ -1,4 +1,4 @@
- ---
+---
 title: Learn about and configure insider risk management browser signal detection
 description: Learn about insider risk management browser signal detection in Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance

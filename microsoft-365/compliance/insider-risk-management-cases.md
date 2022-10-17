@@ -1,4 +1,4 @@
---
+---
 title: Insider risk management cases
 description: Learn about insider risk management cases in Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance

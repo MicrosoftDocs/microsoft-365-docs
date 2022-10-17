@@ -1,4 +1,4 @@
- ---
+---
 title: Investigate insider risk management activities
 description: Learn about investigating insider risk management activities in Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
