@@ -1,5 +1,5 @@
 ---
-title: "Strengthen your security posture with Microsoft 365 Defender"
+title: "Strengthen your security posture"
 f1.keywords:
 - deploy zero trust
 - zero trust strategy
@@ -7,7 +7,7 @@ ms.author: siosulli
 author: siosulli
 manager: dansimp
 audience: Admin
-description: Learn how to strengthen your organization's security posture with the capabilities available in Microsoft 365 Defender.
+description: Learn how to strengthen your organization's security posture.
 ms.topic: tutorial
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
@@ -22,11 +22,11 @@ ms.collection:
 - tier1
 ---
 
-# Strengthen your security posture with Microsoft 365 Defender
+# Strengthen your security posture
 
 It has never been more important to be able to detect and defend your organization against cyber security threats. Knowing your assets, using the built-in configurations available to you, and taking recommended actions will help you build great security posture and resilience while also empowering you to respond rapidly to new and evolving threats.
 
-As an organization’s security posture is constantly changing alongside the cybersecurity landscape, making security posture improvements should be a continuous process. This article describes how you can strengthen your organization's security posture using capabilities available in Microsoft Defender 365.
+As an organization’s security posture is constantly changing alongside the cybersecurity landscape, making security posture improvements should be a continuous process. This article describes how you can strengthen your organization's security posture using capabilities available in Microsoft 365 Defender and other related Microsoft security products.
 
 It will help you better understand your overall security posture and provide a framework to help you continually assess, improve, and maintain your security posture to fit your organization's security needs.
 
@@ -34,7 +34,7 @@ It will help you better understand your overall security posture and provide a f
 
 This solution guide provides specific and actionable steps to strengthen your security posture, and assumes the following facts:
 
-- You are a global admin
+- You're a global admin
 - You have successfully deployed Microsoft Defender for Endpoint
 - You're beyond the initial stage of onboarding devices and have a management tool in place to support future device onboarding
 
