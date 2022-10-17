@@ -310,7 +310,7 @@ The available context options change depending on which location you choose. If 
 ##### Conditions Devices supports
 
 - Content contains
-- (preview) Document or attachment is password protected (.pdf, Office files and Symantec PGP encrypted files are fully supported).This predicate doesn’t detect digital rights managed (DRM) encrypted or permission protected files.
+- Document or attachment is password protected (.pdf, Office files and Symantec PGP encrypted files are fully supported).This predicate doesn’t detect digital rights managed (DRM) encrypted or permission protected files.
 - (preview) Content is not labeled (.pdf, Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
 - (preview) The user accessed a sensitive website from Edge. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
 - File extension is
