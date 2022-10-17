@@ -14,6 +14,7 @@ ms.custom:
  - seo-marvel-apr2020
  - admindeeplinkMAC
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:

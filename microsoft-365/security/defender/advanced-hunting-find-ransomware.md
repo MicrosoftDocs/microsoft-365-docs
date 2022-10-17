@@ -17,10 +17,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
   - m365solution-ransomware
   - highpri
+  - tier1
 ms.topic: article
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Publish and discover models in Microsoft SharePoint Syntex
+title: Publish and discover models in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,10 +12,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to make trained models available to other users and how to apply other trained models in Microsoft SharePoint Syntex.
+description: Learn how to make trained models available to other users and how to apply other trained models in Microsoft Syntex.
 ---
 
-# Publish and discover models in Microsoft SharePoint Syntex
+# Publish and discover models in Microsoft Syntex
 
 You can make your trained document understanding models available for others to view and use directly from the SharePoint document library. 
 

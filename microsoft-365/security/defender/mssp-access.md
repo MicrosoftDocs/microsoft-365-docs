@@ -17,7 +17,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.collection: 
-- M365-security-compliance 
+- m365-security
+- tier2 
 ---
 
 # Provide managed security service provider (MSSP) access 

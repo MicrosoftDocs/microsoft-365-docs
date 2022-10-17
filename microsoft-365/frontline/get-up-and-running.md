@@ -12,7 +12,8 @@ description: Learn how frontline managers can get their teams up and running wit
 ms.localizationpriority: high
 ms.collection: 
   - Teams_ITAdmin_FLW
-  -  m365-frontline
+  - m365-frontline
+  - highpri
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
