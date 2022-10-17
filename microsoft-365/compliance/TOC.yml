@@ -1149,7 +1149,7 @@
           href: encryption-office-365-tls-certificates-changes.md 
     - name: On-premises scanner
       items: 
-        - name: Understand the scanner
+        - name: Learn about the scanner
           href: deploy-scanner.md
         - name: Get started with the scanner
           href: deploy-scanner-prereqs.md
