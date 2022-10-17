@@ -86,6 +86,9 @@ You need to tag the documents to teach the model to understand the fields and ta
 
 ### Use flows to extract information
 
+> [!IMPORTANT]
+> The information in this section doesn't apply to the current release of Syntex. It applies only to the form processing models created in previous releases. You no longer need to configure the flows to process existing files.
+
 Two flows are available to process a selected file or batch of files in a library where a structured document processing model has been applied.
 
 - **Extract info from an image or PDF file with a document processing model** — Use to extract text from a selected image or PDF file by running a document processing model. Supports a single selected file at a time, and supports only PDF files and image files (.png, .jpg, and .jpeg). To run the flow, select a file, and then select **Automate** > **Extract info**.

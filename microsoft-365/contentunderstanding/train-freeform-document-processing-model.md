@@ -72,7 +72,7 @@ You need to tag the documents to teach the model to understand the fields and ta
 
 > [!NOTE]
 > If a freeform or structured document processing model and an unstructured document processing model are applied to the same library, the file is classified using the unstructured document processing model and any trained extractors for that model. If there are any empty columns that match the freeform or structured document processing model, the columns will be populated using those extracted values.
-
+<!---
 ### Use flows to extract information
 
 Two flows are available to process a selected file or batch of files in a library where a freeform document processing model has been applied.
@@ -92,7 +92,7 @@ Two flows are available to process a selected file or batch of files in a librar
     
 > [!NOTE]
 > The **Extract info from an image or PDF file with a document processing model** flow is automatically available for a library with a document processing model associated. The **Extract info from files with a document processing model** flow is a template that must be added to the library if required.
-
+--->
 ### Classification Date field
 
 When a Syntex custom model is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
