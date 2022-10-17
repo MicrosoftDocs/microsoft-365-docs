@@ -1,5 +1,5 @@
 ---
-title: Create a classifier in Microsoft SharePoint Syntex
+title: Create a classifier in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,10 +13,10 @@ ms.collection:
     - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
-description: Learn how to create a classifier in Microsoft SharePoint Syntex.
+description: Learn how to create a classifier in Microsoft Syntex.
 ---
 
-# Create a classifier in Microsoft SharePoint Syntex
+# Create a classifier in Microsoft Syntex
 
 
 </br>
@@ -151,4 +151,4 @@ If you received a match on your labeled sample files, you can now  test your mod
 
 [Apply a model](apply-a-model.md) 
 
-[SharePoint Syntex Accessibility Mode](accessibility-mode.md)
+[Syntex accessibility mode](accessibility-mode.md)

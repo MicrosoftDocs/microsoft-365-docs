@@ -13,7 +13,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid:
 - MOE150
@@ -28,6 +28,8 @@ Using eDiscovery (Premium) custodian communications, organizations can manage th
 ![Communications Page.](../media/CommunicationPage.PNG)
 
 The article outlines the steps in the hold notification workflow.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Specify communication details
 

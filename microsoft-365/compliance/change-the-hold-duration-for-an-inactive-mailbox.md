@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - tier2
 search.appverid: 
 - MOE150
@@ -55,6 +55,8 @@ However, if the hold is time-based, the mailbox content will be retained until t
 > For inactive mailboxes, we recommend using a retain and delete setting for your Microsoft 365 retention policy or labels.  If you choose a retain only setting, the Recoverable Items folder will purge at the end of the hold duration, however any other non-deleted items will remain within the inactive mailbox indefinitely.
 
 As regulations and policies evolve, there may be some situations in which you need to change the duration of the hold assigned to the inactive mailbox.  The following steps outline how to do this.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Connect to PowerShell
 

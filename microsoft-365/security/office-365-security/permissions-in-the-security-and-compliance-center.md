@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: conceptual
 f1_keywords: 
   - 'ms.o365.cc.AdminRoleGroups'
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 search.appverid: 
   - MOE150

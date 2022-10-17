@@ -13,7 +13,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid: 
 - MOE150
@@ -23,6 +23,8 @@ search.appverid:
 # Work with communications in eDiscovery (Premium)
 
 Microsoft Purview eDiscovery (Premium) allows legal departments to simplify their processes around tracking and distributing legal hold notifications. The custodian communications tool enables legal departments to manage and automate the entire legal hold process, from initial notifications, to reminders, and to escalations, all in one location.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## What is a legal hold notification?
 

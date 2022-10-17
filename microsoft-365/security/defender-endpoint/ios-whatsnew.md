@@ -12,7 +12,8 @@ ms.localizationpriority: medium
 manager: sunasing
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
+- m365-security
+- tier3
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150

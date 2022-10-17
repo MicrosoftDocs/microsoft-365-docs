@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: how-to
 ms.collection: 
   - o365_security_incident_response
-  - M365-security-compliance
+  - m365-security
   - m365solution-smb
   - highpri
 ms.custom: 

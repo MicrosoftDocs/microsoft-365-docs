@@ -13,9 +13,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
 - tier1
-- M365-security-compliance
+- purview-compliance
 - m365solution-aed
 - m365solution-scenario
+- highpri
 - ediscovery
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
@@ -28,6 +29,8 @@ search.appverid:
 After setting up Microsoft Purview eDiscovery (Premium) and [assigning permissions to eDiscovery managers](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) in your organization that will manage cases, the next step is to create and manage a case.
 
 This article also provides a high-level overview of using cases to manage the eDiscovery (Premium) workflow for a legal case or other types of investigations.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Create a case
 

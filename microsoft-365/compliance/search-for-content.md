@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ms.collection:
 - highpri 
 - tier1
-- M365-security-compliance
+- purview-compliance
 - content-search
 ---
 
@@ -22,6 +22,8 @@ ms.collection:
 
 Use the Content search tool in the Microsoft Purview compliance portal to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business. You can use the content search tool to search for email, documents, and instant messaging conversations in collaboration tools such as Microsoft Teams and Microsoft 365 Groups.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Search for content
 
 The first step is to starting using the Content search tool to choose content locations to search and configure a keyword query to search for specific items. Or, you can just leave the query blank and return all items in the target locations.

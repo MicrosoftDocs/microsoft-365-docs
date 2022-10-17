@@ -14,12 +14,17 @@ audience: itpro
 ms.collection:
 - highpri 
 - tier1
-- M365-security-compliance
+- purview-compliance
 - m365solution-insiderrisk
+- m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Get started with insider risk management settings
+
+>[!IMPORTANT]
+>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
 
 Insider risk management settings apply to all insider risk management policies, regardless of the template you choose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management pages. These settings control policy components for the following areas:
 
@@ -36,6 +41,8 @@ Insider risk management settings apply to all insider risk management policies, 
 - [Admin notifications](#admin-notifications)
 
 Before you get started and create insider risk management policies, it's important to understand these settings and choose setting levels best for the compliance needs for your organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Privacy
 
@@ -60,7 +67,7 @@ Signals are collected and alerts are triggered by policies when users perform ac
 - **Global settings indicators**: Indicators enabled in global settings for insider risk management define both the indicators available for configuration in policies and the types of user activity signals collected by insider risk management. For example, if a user copies data to personal cloud storage services or portable storage devices and these indicators are selected only in global settings, this activity will be available for review in the Activity explorer. However, since this activity wasn't defined in an insider risk management policy, the activity won't be assigned a risk score or generate an alert.
 - **Policy indicators**: Indicators included in insider risk management policies are used to determine a risk score for an in-scope user. Policy indicators are enabled from indicators defined in global settings and are only activated after a triggering event occurs for a user.  Some examples of policy indicators are when a user copies data to personal cloud storage services or portable storage devices, if a user account is removed from Azure Active Directory, or if a user shares internal files and folders with unauthorized external parties.
 
-Certain policy indicators may also be used for customizing triggering events for specific policy templates. When configured in the policy wizard for the *General data leaks* or *Data leaks by priority users* templates, these indicators allow you more flexibility and customization for your policies and when users are in-scope for a policy. Additionally, you can define individual activity thresholds for these triggering indicators for more fine-grained control in a policy.
+Certain policy indicators and sequences may also be used for customizing triggering events for specific policy templates. When configured in the policy wizard for the *General data leaks* or *Data leaks by priority users* templates, these indicators or sequences allow you more flexibility and customization for your policies and when users are in-scope for a policy. Additionally, you can define individual activity thresholds for these triggering indicators for more fine-grained control in a policy.
 
 Policy indicators are segmented into the following areas. You can choose the indicators to activate and customize indicator event limits for each indicator level when creating an insider risk policy:
 
@@ -660,3 +667,32 @@ If you prefer to disable admin and analytics notifications, complete the followi
     - **Send an email notification when Analytics is turned off**
 
 4. Select **Save** to configure and exit.
+
+## Inline alert customization (preview)
+
+Inline alert customization allows you to quickly tune an insider risk management policy directly from the **Alert dashboard** while reviewing the alert. Alerts are generated when an activity meets the thresholds configured in the related policy. To reduce the number of alerts you get from this activity, you can change the activity's thresholds or remove the activity from the policy altogether.
+
+You can enable inline alert customization to allow users assigned to the *Insider Risk Management Analysts* and *Insider Risk Management Investigators* role groups to edit policy thresholds and to disable specific indicators. If inline alert customization isn't enabled, only users assigned to the *Insider Risk Management Admin* or *Insider Risk Management* role groups can edit these policy conditions. Inline alert customization is supported for alerts regardless of the current alert status, allowing analysts and investigators to update policies for *Dismissed* and *Resolved* alerts if needed.
+
+Complete the following steps to enable inline alert customization:
+
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** > **Insider risk settings**.
+2. Select the **Inline alert customization (preview)** page.
+3. Enable inline alert customization for insider risk management.
+4. Select **Save** to configure and exit.
+
+> [!NOTE]
+> Enabling inline alert customization will take approximately one hour before being available in new and existing policy alerts.
+
+When enabled, analysts and investigators can select **Reduce alerts for this activity** for an alert on the **Alert dashboard** and can view details about the activity and indicators associated with the alert. Additionally, the current policy thresholds are displayed for the number of events used to create low, medium, and high severity alerts. If **Reduce alerts for this activity** is selected and a previous policy edit has been made that changes the threshold or has removed the associated indicator, you'll see a notification message detailing previous changes to the policy.
+
+Analysts and investigators can choose from the following options on the **Reduce alerts for this activity** pane to quickly edit the policy that created the alert:
+
+- **Reduce alerts using Microsoft's recommended thresholds**: We'll automatically increase the thresholds in the policy for you. You'll be able to review the new recommended threshold settings before changing the policy.
+- **Reduce alerts by choosing your own thresholds**: You can manually increase the thresholds for this type of activity for the current and future alerts. You'll be able to review the current threshold settings and configure the new threshold settings before changing the policy.
+- **Stop getting alerts for this activity**: This removes this indicator from the policy and this activity will no longer be detected by the policy. This applies to all indicators, regardless of if the indicator is threshold-based.
+
+After choosing an option, analysts and investigators can choose two options to update the policy:
+
+- **Save and dismiss alert**: Saves the changes to the policy and updates the alert status to *Resolved*.
+- **Save only**: Saves the changes to the policy, but the alert status remains the same.

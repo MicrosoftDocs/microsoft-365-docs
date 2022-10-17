@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
 - tier2
-- M365-security-compliance
+- purview-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -26,6 +26,8 @@ ms.custom: seo-marvel-apr2020
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 You can use the Exchange Online auto-expanding archiving feature to enable additional storage space for archive mailboxes. When auto-expanding archiving is turned on, additional storage space is automatically added to a user's archive mailbox until it reaches the storage limit of 1.5 TB. You can turn on auto-expanding archiving for everyone in your organization or just for specific users. For more information about auto-expanding archiving, see [Learn about auto-expanding archiving](autoexpanding-archiving.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you enable auto-expanding archiving
 
@@ -132,3 +134,7 @@ Keep the following things in mind after you enable auto-expanding archiving:
 
 > [!IMPORTANT]
 > Auto-expanding archiving is supported only for mailboxes used by individual users or for shared mailboxes with a growth rate that doesn't exceed 1 GB per day. Using journaling, transport rules, or auto-forwarding rules to copy messages to an archive mailbox for the purposes of archiving is not permitted. A user's archive mailbox is intended for just that user. Microsoft reserves the right to deny additional archiving in instances where a user's archive mailbox is used to store archive data for other users or in other cases of inappropriate use.
+
+## Next steps
+
+Make sure you prepare end users for the changes they can expect after enabling their mailbox for auto-expanding archives.

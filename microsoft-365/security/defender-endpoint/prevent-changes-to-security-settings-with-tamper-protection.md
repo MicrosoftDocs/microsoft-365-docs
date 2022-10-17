@@ -19,8 +19,8 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.subservice: mde
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 search.appverid: met150
 ---
 
@@ -34,6 +34,7 @@ search.appverid: met150
 
 **Platforms**
 - Windows
+- macOS
 
 Tamper protection is available for devices that are running one of the following versions of Windows:
 
@@ -49,6 +50,12 @@ Tamper protection is available for devices that are running one of the following
 
 > [!NOTE]
 > Tamper protection in Windows Server 2012 R2 is available for devices onboarded using the modern unified solution package. For more information, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
+
+Tamper protection is available for devices that are running one of the following versions of macOS:
+
+- Monterey (12)
+- Big Sur (11)
+- Catalina (10.15+)
 
 ## Overview
 

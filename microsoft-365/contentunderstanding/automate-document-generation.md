@@ -1,5 +1,5 @@
 ---
-title: Automate document generation with SharePoint Syntex and Power Automate (preview)
+title: Automate document generation with Microsoft Syntex and Power Automate (preview)
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,14 +12,14 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to automatically create documents and other content using SharePoint Syntex and Power Automate.
+description: Learn how to automatically create documents and other content using Microsoft Syntex and Power Automate.
 ---
 
-# Automate document generation with SharePoint Syntex and Power Automate (preview)
+# Automate document generation with Microsoft Syntex and Power Automate (preview)
 
-Using content assembly in SharePoint Syntex together with Power Automate, you can automate the generation of documents using modern templates. 
+Using content assembly in Microsoft Syntex together with Power Automate, you can automate the generation of documents using modern templates. 
 
-This preview version is a Power Automate action in a SharePoint connector. The action is named “Generate document using SharePoint Syntex (preview)” and has limited capabilities for preview. 
+This preview version is a Power Automate action in a SharePoint connector. The action is named “Generate document using Syntex (preview)” and has limited capabilities for preview. 
 
 ## Scope of the preview 
 
@@ -55,9 +55,9 @@ Follow these steps to automatically generate documents using a modern template a
 
    ![Screenshot of the When a document is created or modified trigger showing a sample site address and site name.](../media/content-understanding/document-generation-trigger.png)
 
-5. Select the SharePoint connector again. In the search box, search for and select the action **Generate document using SharePoint Syntex (preview)**.
+5. Select the SharePoint connector again. In the search box, search for and select the action **Generate document using Syntex (preview)**.
 
-   ![Screenshot of the SharePoint connector Actions tab showing Generate document using SharePoint Syntex (preview) action.](../media/content-understanding/document-generation-action.png) 
+   ![Screenshot of the SharePoint connector Actions tab showing Generate document using Syntex (preview) action.](../media/content-understanding/document-generation-action.png) 
 
 6. Enter the site information and select the document library that contains the modern template. 
 
@@ -74,4 +74,4 @@ Follow these steps to automatically generate documents using a modern template a
 
 ## See also
 
- [Create documents using content assembly in SharePoint Syntex](content-assembly.md)
+ [Create documents using content assembly in Microsoft Syntex](content-assembly.md)

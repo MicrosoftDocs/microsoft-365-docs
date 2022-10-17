@@ -13,7 +13,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid: 
 - MOE150
@@ -30,6 +30,8 @@ When loading non-Microsoft 365 data or documents for error remediation in Micros
 ![Upload non-Microsoft 365 files.](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 
 Usually the command that's provided works when you run it. However, there may be cases when the command that's displayed will not run successfully. Here's a few possible reasons.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## The supported version of AzCopy isn't installed on the local computer
 
