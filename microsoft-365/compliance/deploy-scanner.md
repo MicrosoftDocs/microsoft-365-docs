@@ -1,8 +1,8 @@
 ---
 title: "Learn about the Microsoft Purview Information Protection scanner"
 f1.keywords:
-ms.author: aashishr
-author: aashishr
+ms.author: libarson
+author: libarson
 manager: aashishr
 ms.date: 
 audience: Admin
