@@ -44,7 +44,7 @@ Capability summary: Microsoft Purview Audit (Standard) provides with you with th
 
 Commitment:
 
-The following customer data will be stored in the related Geography:
+The following customer data will be stored in the related _Geography_:
 
 - Service configuration data
 - Audited Activities
@@ -63,9 +63,9 @@ Capability summary: Audit (Premium) builds on the capabilities of Audit (Standar
 
 Commitment:
 
-The following customer data will be stored in the related Geography:
+The following customer data will be stored in the related _Geography_:
 
-In addition to the data stored as part of Purview Audit (Standard), configuration and customer data related to high-value events are stored in the relevant Geography.
+In addition to the data stored as part of Purview Audit (Standard), configuration and customer data related to high-value events are stored in the relevant _Geography_.
 
 ### Data lifecycle management - Data Retention
 
@@ -93,7 +93,7 @@ Capability summary: Lets you retain or delete content with policy management for
 
 Commitment:
 
-The following customer data will be stored in the related *Geography*:
+The following customer data will be stored in the related _Geography_:
 
 - Retention policy settings
 - Retention label definitions
@@ -108,7 +108,7 @@ The following customer data will be stored in the related *Geography*:
   - Teams channel messages
   - Teams chats
   - Teams private channel messages
-  - SharePoint Online, OneDrive for Business, Exchange Online and Microsoft Teams follow the data residency commitments for those services.  Please refer to sections ***TODO: UPDATE LINKS***5.1,5.2, and 5.3
+  - SharePoint Online, OneDrive for Business, Exchange Online and Microsoft Teams follow the data residency commitments for those services.  Please refer to [Exchange Online](m365-dr-workload-exo.md), [SharePoint Online](m365-dr-workload-spo.md), and [Microsoft Teams](m365-dr-workload-teams.md).
 - Training classifiers
 - Disposition data
 - Mappings between retention labels and Data Loss Prevention (DLP) policies.
@@ -125,7 +125,7 @@ Capability summary: Organizations of all types require a records-management solu
 
 Commitment:
 
-The following customer data will be stored in the related *Geography*:
+The following customer data will be stored in the related _Geography_:
 
 - Record retention label definitions.
 - File plan definitions
@@ -156,7 +156,7 @@ Capability summary: Sensitivity labels from Microsoft Purview Information Protec
 
 Commitment:
 
-The following customer data will be stored in the related *Geography*:
+The following customer data will be stored in the related _Geography_:
 
 - Label configuration
 - Labels definition
@@ -194,7 +194,7 @@ DLP detects sensitive items by using deep content analysis, not by just a simple
 
 Commitment:
 
-The following customer data will be stored in the related *Geography*:
+The following customer data will be stored in the related _Geography_:
 
 - DLP admin configuration
 - DLP policies in Compliance Center
@@ -220,7 +220,7 @@ Capability summary: With Office 365 Message Encryption, your organization can se
 
 Commitment:
 
-The following customer data will be stored in the related *Geography*:
+The following customer data will be stored in the related _Geography_:
 
 ***TODO: need commitment text***
 
@@ -236,7 +236,7 @@ Capability summary: Microsoft Purview Information Barriers (IB) is a compliance 
 
 Commitment:
 
-The following customer data will be stored in the related *Geography*:
+The following customer data will be stored in the related _Geography_:
 
 - Policy settings and risk indicators
 - Admin settings
