@@ -34,8 +34,8 @@ Cross-tenant Exchange mailbox migrations are supported for tenants in hybrid or 
 This article describes the process for cross-tenant mailbox moves and provides guidance on how to prepare source and target tenants for the Exchange Online mailbox content moves.
 
 > [!IMPORTANT]
-> When a mailbox is migrated Cross-Tenant with this feature, all email, including email held for litigation, is migrated. After successful migration, the source mailbox is deleted. This means that after the migration, under no circumstances (including mailboxes on litigation or retention hold), is the source mailbox available, discoverable, or accessible in the source tenant.  
-> Currently we are investigating an issue where in some scenarios, Teams chat data is also held in the mailbox, but the Teams chat data is not migrated. If Teams chat data must be preserved, do not use this feature to migrate the mailbox.
+> Do not use this feature to migrate mailboxes on any type of hold. Migrating source mailboxes for users on hold is not supported.  
+> When a mailbox is migrated cross-tenant with this feature, all email is migrated to the target (destination tenant). After successful migration, the source mailbox is deleted. This means that after the migration, under no circumstances, is the source mailbox available, discoverable, or accessible in the source tenant.
 
 > [!NOTE]
 > If you are interested in previewing our new feature Domain Sharing for email alongside your cross-tenant mailbox migrations, please complete the form at [aka.ms/domainsharingpreview](https://aka.ms/domainsharingpreview). Domain sharing for email enables users in separate Microsoft 365 tenants to send and receive email using addresses from the same custom domain. The feature is intended to solve scenarios where users in separate tenants need to represent a common corporate brand in their email addresses. The current preview supports sharing domains indefinitely and shared domains during cross-tenant mailbox migration coexistence.
@@ -280,7 +280,9 @@ Ensure the following objects and attributes are set in the target organization.
    - msExchSafeRecipientsHash – Writes back online safe and blocked sender data from clients to on-premises Active Directory.
    - msExchSafeSendersHash – Writes back online safe and blocked sender data from clients to on-premises Active Directory.
 
-2. If the source mailbox is on LitigationHold and the source mailbox Recoverable Items size is greater than our database default (30 GB), moves will not proceed since the target quota is less than the source mailbox size. You can update the target MailUser object to transition the ELC mailbox flags from the source environment to the target, which triggers the target system to expand the quota of the MailUser to 100 GB, thus allowing the move to the target. These instructions will work only for hybrid identity running Azure AD Connect, as the commands to stamp the ELC flags are not exposed to tenant administrators.
+2. If the source mailbox Recoverable Items size is greater than our database default (30 GB), moves will not proceed since the target quota is less than the source mailbox size. You can update the target MailUser object to transition the ELC mailbox flags from the source environment to the target, which triggers the target system to expand the quota of the MailUser to 100 GB, thus allowing the move to the target. These instructions will work only for hybrid identity running Azure AD Connect, as the commands to stamp the ELC flags are not exposed to tenant administrators.
+
+// TODO: Need to rework script query since we are removing the support of LitHold
 
    > [!NOTE]
    > SAMPLE – AS IS, NO WARRANTY
@@ -292,7 +294,7 @@ Ensure the following objects and attributes are set in the target organization.
    if ($source.LitigationHoldEnabled) {$ELCValue = $ELCValue + 8} if ($source.SingleItemRecoveryEnabled) {$ELCValue = $ELCValue + 16} if ($ELCValue -gt 0) {Set-ADUser -Server $domainController -Identity $destination.SamAccountName -Replace @{msExchELCMailboxFlags=$ELCValue}}
    ```
 
-3. Non-hybrid target tenants can modify the quota on the Recoverable Items folder for the MailUsers prior to migration by running the following command to enable Litigation Hold on the MailUser object and increasing the quota to 100 GB:
+1. Non-hybrid target tenants can modify the quota on the Recoverable Items folder for the MailUsers prior to migration by running the following command to enable Litigation Hold on the target MailUser object and increasing the quota to 100 GB:
 
    ```powershell
    Set-MailUser -Identity <MailUserIdentity> -EnableLitigationHoldForMigration
@@ -300,12 +302,12 @@ Ensure the following objects and attributes are set in the target organization.
 
    Note this will not work for tenants in hybrid.
 
-4. Users in the target organization must be licensed with appropriate Exchange Online subscriptions applicable for the organization. You may apply a license in advance of a mailbox move but ONLY once the target MailUser is properly set up with ExchangeGUID and proxy addresses. Applying a license before the ExchangeGUID is applied will result in a new mailbox provisioned in target organization.
+2. Users in the target organization must be licensed with appropriate Exchange Online subscriptions applicable for the organization. You may apply a license in advance of a mailbox move but ONLY once the target MailUser is properly set up with ExchangeGUID and proxy addresses. Applying a license before the ExchangeGUID is applied will result in a new mailbox provisioned in target organization.
 
    > [!NOTE]
    > When you apply a license on a Mailbox or MailUser object, all SMTP type proxyAddresses are scrubbed to ensure only verified domains are included in the Exchange EmailAddresses array.
 
-5. You must ensure that the target MailUser has no previous ExchangeGuid that does not match the Source ExchangeGuid. This might occur if the target MEU was previously licensed for Exchange Online and provisioned a mailbox. If the target MailUser was previously licensed for or had an ExchangeGuid that does not match the Source ExchangeGuid, you need to perform a cleanup of the cloud MEU. For these cloud MEUs, you can run `Set-User <identity> -PermanentlyClearPreviousMailboxInfo`.
+3. You must ensure that the target MailUser has no previous ExchangeGuid that does not match the Source ExchangeGuid. This might occur if the target MEU was previously licensed for Exchange Online and provisioned a mailbox. If the target MailUser was previously licensed for or had an ExchangeGuid that does not match the Source ExchangeGuid, you need to perform a cleanup of the cloud MEU. For these cloud MEUs, you can run `Set-User <identity> -PermanentlyClearPreviousMailboxInfo`.
 
    > [!CAUTION]
    > This process is irreversible. If the object has a softDeleted mailbox, it cannot be restored after this point. Once cleared, however, you can synchronize the correct ExchangeGuid to the target object and MRS will connect the source mailbox to the newly created target mailbox. (Reference EHLO blog on the new parameter.)
@@ -393,7 +395,7 @@ The meetings will move, however the Teams meeting URL does not update when items
 
 ### Does the Teams chat folder content migrate cross-tenant?
 
-No, the Teams chat folder content does not migrate cross-tenant. When a mailbox is migrated Cross-Tenant with this feature, all email, including email held for litigation, is migrated. After successful migration, the source mailbox is deleted. This means that after the migration, under no circumstances (including mailboxes on litigation or retention hold), is the source mailbox available, discoverable, or accessible in the source tenant. Currently we are investigating an issue where in some scenarios, Teams chat data is also held in the mailbox, but the Teams chat data is not migrated. If Teams chat data must be preserved, do not use this feature to migrate the mailbox.
+No, the Teams chat folder content does not migrate cross-tenant. When a mailbox is migrated cross-tenant with this feature, all email is migrated. After successful migration, the source mailbox is deleted, but Teams chat data is preserved for the source user identity in the source tenant. This preserved Teams chat data is discoverable post mailbox migration.
 
 ### How can I see just moves that are cross-tenant moves, not my onboarding and off-boarding moves?
 
@@ -407,7 +409,7 @@ Get-MoveRequest -Flags "CrossTenant"
 
 > [!NOTE]
 > SAMPLE – AS IS, NO WARRANTY
-> This script assumes a connection to both source mailbox (to get source values) and the target on-premises Active Directory Domain Services (to stamp the ADUser object). If source has litigation or single item recovery enabled, set this on the destination account. This will increase the dumpster size of destination account to 100 GB.
+> This script assumes a connection to both source mailbox (to get source values) and the target on-premises Active Directory Domain Services (to stamp the ADUser object).
 
 ```powershell
 # This will export users from the source tenant with the CustomAttribute1 = "Cross-Tenant-Project"
