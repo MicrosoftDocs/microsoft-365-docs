@@ -144,6 +144,13 @@ You can select only one column for each entity type (mailbox, user, or device). 
 ### 4. Specify actions.
 Your custom detection rule can automatically take actions on devices, files, or users that are returned by the query.
 
+
+
+
+
+:::image type="content" source="../../media/ah-custom-actions.png" alt-text="Actions for custom detections in the Microsoft 365 Defender portal" lightbox="../../media/ah-custom-actions.png":::
+
+
 #### Actions on devices
 These actions are applied to devices in the `DeviceId` column of the query results:
 - **Isolate device**—uses Microsoft Defender for Endpoint to apply full network isolation, preventing the device from connecting to any application or service. [Learn more about Microsoft Defender for Endpoint machine isolation](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
