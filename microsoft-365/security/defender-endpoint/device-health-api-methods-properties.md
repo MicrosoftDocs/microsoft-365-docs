@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy 
 ms.sitesec: library 
 ms.pagetype: security 
-ms.author: v-jweston 
-author: jweston-1
+ms.author: dansimp 
+author: dansimp
 ms.localizationpriority: medium 
 ms.date: 09/01/2022
 manager: dansimp 
