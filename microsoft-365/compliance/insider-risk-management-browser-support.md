@@ -1,4 +1,4 @@
----
+ ---
 title: Learn about and configure insider risk management browser signal detection
 description: Learn about insider risk management browser signal detection in Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
@@ -24,17 +24,18 @@ ms.collection:
 >[!IMPORTANT]
 >Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
 
-Web browsers are often used by users to access both sensitive and non-sensitive files within an organization. Insider risk management allows your organization to detect and act on browser exfiltration signals for all non-executable files viewed in [Microsoft Edge](https://www.microsoft.com/edge) and [Google Chrome](https://www.google.com/chrome) browsers. With these signals, analysts and investigators can quickly act when any of the following activities are performed by in-scope policy users when using these browsers:
+Web browsers are often used by users to access both sensitive and non-sensitive files within an organization. Insider risk management allows your organization to detect and act on browser exfiltration signals for all non-executable files viewed in [Microsoft Edge](https://www.microsoft.com/edge) and [Google Chrome](https://www.google.com/chrome) browsers. With these signals, analysts and investigators can quickly act when any of the following risk management activities are performed by in-scope policy users when using these browsers:
 
 - Files copied to personal cloud storage
 - Files printed to local or network devices
 - Files transferred or copied to a network share
 - Files copied to USB devices
 - Browsing risky websites
+- Browsing potentially risky websites
 
 Signals for these events are detected in Microsoft Edge using built-in browser capabilities and using the *Microsoft Compliance Extension* add-on. In Google Chrome, customers use the *Microsoft Compliance Extension* for signal detection.
 
-The following table summarizes detected activities and extension support for each browser:
+The following table summarizes detected risk management activities and extension support for each browser:
 
 | **Detected activities**                        | **Microsoft Edge** | **Google Chrome** |
 | ---------------------------------------------- | ------------------ | ----------------- |
@@ -42,7 +43,7 @@ The following table summarizes detected activities and extension support for eac
 | Files printed to local or network devices      | Native             | Extension         |
 | Files transferred or copied to a network share | Extension          | Extension         |
 | Files copied to USB devices                    | Extension          | Extension         |
-| Browsing risky websites                        | Extension          | Extension         |
+| Browsing risky websites                        | Extension          | Extension         |       |
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -71,7 +72,7 @@ If you're using policies based on the *Risky browser usage* template, at least o
 
 ### Option 1: Basic setup (recommended for testing with Edge)
 
-Use this option to configure a single machine selfhost for each device in your organization when testing browser signal detection.
+Use this option to configure a single machine self-host for each device in your organization when testing browser signal detection.
 
 For the basic setup option, complete the following steps:
 
@@ -133,7 +134,7 @@ Insider risk management browser signal detection support for Google Chrome is en
 
 ### Option 1: Basic setup (recommended for testing with Chrome)
 
-Use this option to configure single machine selfhost for each device in your organization when testing browser signal detection.
+Use this option to configure single machine self-host for each device in your organization when testing browser signal detection.
 
 For the basic setup option, complete the following steps:
 
@@ -143,8 +144,8 @@ For the basic setup option, complete the following steps:
 Get-Item -path "HKLM:\\SOFTWARE\\Microsoft\\Windows Defender\\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
 ```
 
->[!Important]
->These registry keys are required to ensure proper functionality of the extension. You must enable these registry keys before testing any signals.*
+> [!Important]
+> These registry keys are required to ensure proper functionality of the extension. You must enable these registry keys before testing any signals.*
 
 **Step 2: Install the *Microsoft Compliance Extension***
 
@@ -156,50 +157,6 @@ Get-Item -path "HKLM:\\SOFTWARE\\Microsoft\\Windows Defender\\Miscellaneous Conf
 User this option to configure the extension and requirements for your organization using Intune.
 
 For the Intune setup option, complete the following steps:
-
-**Step 1: Enable required Registry key with Intune**
-
-1. Run the following PowerShell script:
-
-```PowerShell
-Get-Item -path "HKLM:\\SOFTWARE\\Microsoft\\Windows Defender\\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-```
-
-2. Sign-in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com).
-3. Navigate to **Devices** \> **Scripts** and select **Add.**
-4. Browse to the location of the script created when prompted.
-5. Select the following settings:
-
-    - Run this script using the logged-on credentials: *Yes*
-    - Enforce script signature check: *No*
-    - Run script in 64-bit PowerShell Host: *Yes*
-
-6. Select the appropriate device groups and apply the policy.
-
-**Step 2: Configure Intune Force Install**
-
-Before adding the Microsoft DLP Chrome extension to the list of force installed extensions, you must install the Chrome Administrative Template (.admx) file for Intune management. For step-by-step guidance, see [Manage Chrome Browser with Microsoft Intune](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune). After installing the Administrative Template file, complete the following steps:
-
-1. Sign-in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com).
-2. Navigate to **Configuration Profiles**.
-3. Select **Create Profile**.
-4. Choose **Windows 10** as the *Platform*.
-5. Choose **Custom** as the *Profile* type.
-6. Select the **Settings** tab.
-7. Select **Add.**
-8. Enter the following policy information:
-
-    - OMA-URI: *./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist*
-    - Data type: *String*
-    - Value: *\<enabled/\>\<data id="ExtensionInstallForcelistDesc" value="1&\#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/\>*
-
-9. Select **Create**.
-
-### Option 3: Group Policy setup for Chrome
-
-Use this option to configure the extension and requirements organization-wide using Group Policy.
-
-For the Group Policy setup option, complete the following steps:
 
 **Step 1: Import the Chrome Administrative Template file**
 
