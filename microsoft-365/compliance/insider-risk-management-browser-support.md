@@ -158,6 +158,50 @@ User this option to configure the extension and requirements for your organizati
 
 For the Intune setup option, complete the following steps:
 
+**Step 1: Enable required Registry key with Intune**
+
+1. Run the following PowerShell script:
+
+```PowerShell
+Get-Item -path "HKLM:\\SOFTWARE\\Microsoft\\Windows Defender\\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+```
+
+2. Sign-in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com).
+3. Navigate to **Devices** \> **Scripts** and select **Add.**
+4. Browse to the location of the script created when prompted.
+5. Select the following settings:
+
+    - Run this script using the logged-on credentials: *Yes*
+    - Enforce script signature check: *No*
+    - Run script in 64-bit PowerShell Host: *Yes*
+
+6. Select the appropriate device groups and apply the policy.
+
+**Step 2: Configure Intune Force Install**
+
+Before adding the Microsoft DLP Chrome extension to the list of force installed extensions, you must install the Chrome Administrative Template (.admx) file for Intune management. For step-by-step guidance, see [Manage Chrome Browser with Microsoft Intune](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune). After installing the Administrative Template file, complete the following steps:
+
+1. Sign-in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com).
+2. Navigate to **Configuration Profiles**.
+3. Select **Create Profile**.
+4. Choose **Windows 10** as the *Platform*.
+5. Choose **Custom** as the *Profile* type.
+6. Select the **Settings** tab.
+7. Select **Add.**
+8. Enter the following policy information:
+
+    - OMA-URI: *./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist*
+    - Data type: *String*
+    - Value: *\<enabled/\>\<data id="ExtensionInstallForcelistDesc" value="1&\#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/\>*
+
+9. Select **Create**.
+
+### Option 3: Group Policy setup for Chrome
+
+Use this option to configure the extension and requirements organization-wide using Group Policy.
+
+For the Group Policy setup option, complete the following steps:
+
 **Step 1: Import the Chrome Administrative Template file**
 
 Your devices must be manageable using Group Policy and all [Chrome Administrative Templates](https://chromeenterprise.google/browser/download/) need to be imported into the Group Policy Central Store. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).

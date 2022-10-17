@@ -115,7 +115,6 @@ You can use one or more filters to narrow the scope of a search and return a mor
 
 | **Filters** | **Description** |
 |:---------------------|:----------------|
-| **Compliance labels** | Compliance labels applied in Office 365. |
 | **Compliance labels** | Compliance labels applied in Microsoft 365. |
 | **Created time (UTC)** | The date and time the file or email message was created. The date and time are in Coordinated Universal Time (UTC). |
 | **Last modified date (UTC)** | The date that a document was last changed. The date and time are in Coordinated Universal Time (UTC). |

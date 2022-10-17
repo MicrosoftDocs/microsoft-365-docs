@@ -77,6 +77,18 @@ Selecting a case opens the case management tools and allows analysts and investi
 
 ### Case overview
 
+The **Case overview** tab summarizes the case details for risk analysts and investigators. It includes the following information in the **About this case** area
+
+- **Status**: The current status of the case, either Active or Closed.
+- **Case created on**: The date and time the case was created.
+- **User's risk score**: The current calculated risk level of the user for the case. This score is calculated every 24 hours and uses alert risk scores from all active alerts associated to the user.
+- **Email**: The email alias of the user for the case.
+- **Organization or department**: The organization or department that the user is assigned to.
+- **Manager name**: The name of the user's manager.
+- **Manager email**: The email alias of the user's manager.
+
+![Insider risk management case details](../media/insider-risk-case-details.png)
+
 The **Case overview** tab also includes an **Alerts** section that includes the following information about policy match alerts associated with the case:
 
 - **Policy matches**: The name of the insider risk management policy associated with the match alerts for potentially risky user activity.
