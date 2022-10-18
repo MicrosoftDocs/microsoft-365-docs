@@ -27,6 +27,8 @@ Litigation holds, eDiscovery holds, and [Microsoft 365 retention policies](./ret
     
 Exchange Online and Exchange Server 2013 (Cumulative Update 7 and later versions) retain information about Bcc and expanded distribution group recipients. You can search for this information by using an eDiscovery tool in the compliance portal.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How Bcc recipients and expanded distribution group recipients are preserved
 
 As stated earlier, information about Bcc'ed recipients is stored with the message in the sender's mailbox. This information is indexed and available to eDiscovery searches and holds.

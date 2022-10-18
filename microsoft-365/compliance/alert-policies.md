@@ -34,6 +34,8 @@ Alert policies let you categorize the alerts that are triggered by a policy, app
 > [!NOTE]
 > Alert policies are available for organizations with a Microsoft 365 Enterprise, Office 365 Enterprise, or Office 365 US Government E1/F1/G1, E3/F3/G3, or E5/G5 subscription. Advanced functionality is only available for organizations with an E5/G5 subscription, or for organizations that have an E1/F1/G1 or E3/F3/G3 subscription and a Microsoft Defender for Office 365 P2 or a Microsoft 365 E5 Compliance or an E5 eDiscovery and Audit add-on subscription. The functionality that requires an E5/G5 or add-on subscription is highlighted in this topic. Also note that alert policies are available in Office 365 GCC, GCC High, and DoD US government environments.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How alert policies work
 
 Here's a quick overview of how alert policies work and the alerts that are triggers when user or admin activity matches the conditions of an alert policy.
@@ -276,7 +278,7 @@ To see which category a default alert policy is assigned to, see the tables in [
 |Role|Information<br>governance|Data loss<br>prevention|Mail<br>flow|Permissions|Threat<br>management|Others|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |Compliance Administrator|✔|✔||✔||✔|
-|<!---X--->DLP Compliance Management||✔|||||
+|DLP Compliance Management||✔|||||
 |Information Protection Admin||✔|||||
 |Information Protection Analyst||✔|||||
 |Information Protection Investigator||✔|||||
@@ -284,24 +286,25 @@ To see which category a default alert policy is assigned to, see the tables in [
 |Organization Configuration||||||✔|
 |Privacy Management|||||||
 |Quarantine|||||||
-|<!---X--->Record Management|✔||||||
+|Record Management|✔||||||
 |Retention Management|✔||||||
 |Role Management||||✔|||
 |Security Administrator||✔||✔|✔|✔|
 |Security Reader||✔||✔|✔|✔|
 |Transport Hygiene|||||||
-|<!---X--->View-Only DLP Compliance Management||✔|||||
+|View-Only DLP Compliance Management||✔|||||
 |View-Only Configuration|||||||
 |View-Only Manage Alerts||||||✔|
 |View-Only Recipients|||✔||||
-|<!---X--->View-Only Record Management|✔||||||
-|<!---X--->View-Only Retention Management|✔||||||
+|View-Only Record Management|✔||||||
+|View-Only Retention Management|✔||||||
 
 > [!TIP]
 > To view the roles that are assigned to each of the default role groups, run the following commands in Security & Compliance PowerShell:
 >
 > ```powershell
 > $RoleGroups = Get-RoleGroup
+>
 > $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,("-"*25); Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
 > ```
 >

@@ -36,6 +36,8 @@ With conversation reconstruction, you can use built-in capabilities to reconstru
 
 - Export individual messages or threaded conversations
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Terminology
 
 Here are few definitions to help you get start using conversation reconstruction.

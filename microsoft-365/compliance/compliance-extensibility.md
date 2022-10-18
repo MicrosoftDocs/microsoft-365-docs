@@ -32,6 +32,8 @@ There are two key building blocks for compliance extensibility:
 
 - **APIs**. Enables programmatic access to Microsoft Purview capabilities.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Data connectors
 
 Microsoft provides third-party data connectors that can be configured in the Microsoft Purview compliance portal. For a list of data connectors provided by Microsoft, see the [Third-party data connectors](archiving-third-party-data.md#third-party-data-connectors) table. The table of third-party data connectors also summarizes the compliance solutions that you can apply to third-party data after you import and archive data in Microsoft 365, and links to the step-by-step instructions for each connector.

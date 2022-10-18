@@ -25,6 +25,8 @@ description: "Understand how to work with Excel data for assessment templates in
 
 When [creating](compliance-manager-templates-create.md), [modifying](compliance-manager-templates-modify.md), or [extending](compliance-manager-templates-extend.md) assessment templates in Compliance Manager, you will work with Excel spreadsheets that use a specific format and schema. These specifications must be followed for the files to import correctly.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Download example spreadsheet
 
 To view a sample spreadsheet, [download an example file](https://go.microsoft.com/fwlink/?linkid=2124865). You can use this for reference to create your own file.

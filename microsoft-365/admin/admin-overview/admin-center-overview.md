@@ -226,5 +226,6 @@ The Microsoft 365 admin center is fully localized in 40 languages.
 ## Related content
 
 [What is a Microsoft 365 admin?](../add-users/about-admin-roles.md) (video)\
+[Manage teams in the Microsoft Teams admin center](/microsoftteams/manage-teams-in-modern-portal)\
 [Assign admin roles](../add-users/assign-admin-roles.md) (video)\
 [Customize the Microsoft 365 theme for your organization](../setup/customize-your-organization-theme.md) (article)

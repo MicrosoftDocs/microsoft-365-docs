@@ -29,6 +29,8 @@ eDiscovery (Premium) displays content via several viewers each with different pu
 - Text view
 - Annotate view
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## File metadata
 
 This panel can be toggled on/off to display various metadata associated with the document. Although the search results grid can be customized to display specific metadata, there are instances where scrolling horizontally can be difficult while reviewing data. The File metadata panel allows a user to toggle on a view within the viewer.

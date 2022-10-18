@@ -39,6 +39,8 @@ Here are the steps to make this happen:
 
 [Step 3: Run the script to create a hold and add users](#step-3-run-the-script-to-create-a-hold-and-add-users)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you add users to a hold
 
 - You have to be a member of the eDiscovery Manager role group in the compliance portal and a SharePoint Online administrator to run the script in Step 3. For more information, see [Assign eDiscovery permissions in the Office 365 Security & Compliance Center](assign-ediscovery-permissions.md).

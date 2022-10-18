@@ -44,6 +44,8 @@ Ready to start managing your organization's high-value content for legal, busine
 > [!TIP]
 > If you're migrating records to Microsoft 365 and need to validate that they haven't been altered, see [Validating migrated records](records-management.md#validating-migrated-records).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Subscription and licensing requirements
 
 A number of different subscriptions support records management and the licensing requirements for users depends on the features you use.

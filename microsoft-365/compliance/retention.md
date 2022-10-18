@@ -59,6 +59,8 @@ These retention settings work with content in place that saves you the additiona
 
 Use the following sections to learn more about how retention policies and retention labels work, when to use them, and how they supplement each other. But if you're ready to get started and deploy retention settings for some common scenarios, see [Get started with data lifecycle management](get-started-with-data-lifecycle-management.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How retention settings work with content in place
 
 When content has retention settings assigned to it, that content remains in its original location. Most of the time, people continue to work with their documents or mail as if nothing's changed. But if they edit or delete content that's included in the retention policy, a copy of the content is automatically retained.
