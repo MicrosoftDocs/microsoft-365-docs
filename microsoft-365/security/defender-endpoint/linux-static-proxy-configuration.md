@@ -72,7 +72,7 @@ After installation, configure Defender for Endpoint with static proxy using one 
 mdatp config proxy set --value http://address:port
 ```
 > [!NOTE]
-> This method works for every distribution of Defender for Endpoint Linux and is **Recommended**.
+> This method works for every distribution of Defender for Endpoint on Linux and is **Recommended**.
 
 
 The `HTTPS_PROXY` environment variable must be defined in the Defender for Endpoint service file. To do this, run `sudo systemctl edit --full mdatp.service`.
