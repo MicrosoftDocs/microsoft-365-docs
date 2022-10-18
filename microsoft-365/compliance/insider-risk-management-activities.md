@@ -26,7 +26,7 @@ Investigating potentially risky user activities is an important first step in mi
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## User activity reports (preview)
+## User activity reports
 
 User activity reports allow you to examine potentially risky activities (for specific users and for a defined time period) without having to assign these activities, temporarily or explicitly, to an insider risk management policy. In most insider risk management scenarios, users are explicitly defined in policies, and they may have policy alerts (depending on triggering events) and risk scores associated with the activities. But in some scenarios, you may want to examine the activities for users that aren't explicitly defined in a policy. These activities may be for users that you've received a tip about the user and potentially risky activities, or users that typically don't need to be assigned to an insider risk management policy.
 
