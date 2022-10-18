@@ -236,19 +236,54 @@ For macOS devices, you must add the full file path. To find the full path of Mac
 > [!NOTE]
 > The **Service domains** setting only applies to files uploaded using Microsoft Edge or Google Chrome with the [Microsoft Purview Extension](dlp-chrome-learn-about.md#learn-about-the-microsoft-purview-extension) installed.
 
-You can control whether sensitive files protected by your policies can be uploaded to specific service domains from Microsoft Edge.
+You can control whether sensitive files that are protected by your policies can be uploaded to specific service domains from Microsoft Edge.
 
-If the list mode is set to **Block**, then user won't be able to upload sensitive items to those domains. When an upload action is blocked because an item matches a DLP policy, DLP will either generate a warning or block the upload of the sensitive item.
+##### Allow
 
-If the list mode is set to **Allow**, then users will be able to upload sensitive items ***only*** to those domains, and upload access to all other domains isn't allowed.
+If the list mode is set to **Allow**, any user activity involving a sensitive item and a domain that's on the list will be audited. The activity is allowed. When a user attempts an activity involving a sensitive item and a domain that *isn't* on the list then DLP policies, and the actions defined in the polices, are applied.
+
+For example, with this configuration:
+
+- **Service domains** list mode is set to **Allow**.
+    - Contoso.com is on the list.
+-  A DLP policy is set to **Block** upload of sensitive items that contain credit card numbers.
+ 
+User attempts to:
+
+- Upload a sensitive file with credit card numbers to contoso.com.
+    - The user activity is allowed, audited, an event is generated and an alert is triggered.
+
+but if a user attempts to: 
+
+- Upload a sensitive file with credit card numbers to wingtiptoys.com (which is not on the list).
+    - The policy is applied and the user activity is blocked. An event is generated, but it won't list the policy name or the triggering rule name in the event details, and no alert is generated. 
+ 
+##### Block
+ 
+If the list mode is set to **Block**, when a user attempts an activity involving a sensitive item and a domain that is on the list then DLP policies, and the actions defined in the polices, are applied. Any activity involving a sensitive item and a domain that is not on the list will be audited and the  user activity is allowed.
+
+For example, with this configuration:
+
+- **Service domains** list mode is set to **Block**.
+    - Contoso.com is on the list.
+-  A DLP policy is set to **Block** upload of sensitive items that contain credit card numbers.
+ 
+User attempts to:
+
+- Upload a sensitive file with credit card numbers to contoso.com.
+    - The user activity is blocked, an event is generated and an alert is triggered.
+
+but if a user attempts to: 
+
+- Upload a sensitive file with credit card numbers to wingtiptoys.com (which is not on the list).
+    - The policy *isn't* applied and the user activity is audited. An event is generated, but it won't list the policy name or the triggering rule name in the event details, and no alert is generated. 
 
 > [!IMPORTANT]
 > When the service restriction mode is set to "Allow", you must have at least one service domain configured before restrictions are enforced.
 
-Use the FQDN format of the service domain without the ending `.` 
+Use the FQDN format of the service domain without the ending `.` when you add a domain to the list.
 
 For example:
-
 
 | Input | URL matching behavior |
 |---|---|
