@@ -80,6 +80,8 @@
         href: ../admin/setup/install-applications.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
   - name: Monitor onboarded devices
     items: 
+      - name: View device status
+        href: m365bp-device-states.md
       - name: Review and edit device policies
         href: m365bp-view-edit-create-mdb-policies.md
       - name: Manage device groups
