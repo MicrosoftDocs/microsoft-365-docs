@@ -93,16 +93,16 @@ Depending on how you wish to manage insider risk management policies and alerts,
 
 You'll choose from these role group options and solution actions when working with insider risk management:
 
-|Actions|Insider Risk Management|Insider Risk Management Admin|Insider Risk Management Analysts|Insider Risk Management Investigators|Insider Risk Management Auditors|
-|---|---|---|---|---|---|
-|Configure policies and settings|Yes|Yes|No|No|No|
-|Access analytics insights|Yes|Yes|Yes|No|No|
-|Access and investigate alerts|Yes|No|Yes|Yes|No|
-|Access and investigate cases|Yes|No|Yes|Yes|No|
-|Access and view the Content Explorer|Yes|No|No|Yes|No|
-|Configure notice templates|Yes|No|Yes|Yes|No|
-|View and export audit logs|Yes|No|No|No|Yes|
-|Access and view forensic evidence captures|Yes|No|No|Yes|No|No|
+|**Actions**|**Insider Risk Management**|**Insider Risk Management Admin**|**Insider Risk Management Analysts**|**Insider Risk Management Investigators**|**Insider Risk Management Auditors**|**Insider Risk Management Approvers**|
+|---|---|---|---|---|---|---|
+|Configure policies and settings|Yes|Yes|No|No|No|No|
+|Access analytics insights|Yes|Yes|Yes|No|No|No|
+|Access & investigate alerts|Yes|No|Yes|Yes|No|No|
+|Access & investigate cases|Yes|No|Yes|Yes|No|No|
+|Access & view the Content Explorer|Yes|No|No|Yes|No|No|
+|Configure notice templates|Yes|No|Yes|Yes|No|No|
+|View & export audit logs|Yes|No|No|No|Yes|No|
+|Access & view forensic evidence captures|Yes|No|No|Yes|No|No|
 |Create forensic evidence capturing request|Yes|Yes|No|No|No|No|
 |Approve forensic evidence capturing requests|Yes|No|No|No|No|Yes|
 |View device health report|Yes|Yes|No|No|No|No|
