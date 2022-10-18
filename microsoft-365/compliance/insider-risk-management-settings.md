@@ -55,7 +55,7 @@ Protecting the privacy of users that have policy matches is important and can he
 
 - **Do not show anonymized versions of usernames**: Usernames are displayed for all current and past policy matches for alerts and cases. User profile information (the name, title, alias, and organization or department) is displayed for the user for all insider risk management alerts and cases.
 
-![Insider risk management privacy settings](../media/insider-risk-settings-privacy.png)
+![Insider risk management privacy settings.](../media/insider-risk-settings-privacy.png)
 
 ## Indicators
 

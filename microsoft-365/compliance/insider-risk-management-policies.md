@@ -83,7 +83,7 @@ When creating or modifying data loss prevention policies for use with insider ri
 
 - Make sure the **Incident reports** rule setting in the DLP policy used for this insider risk management template is configured for *High* severity level alerts. The *High* severity level is the triggering events and insider risk management alerts won't be generated from rules in DLP policies with the **Incident reports** field set at *Low* or *Medium*.
 
-    ![DLP policy alert setting](../media/insider-risk-DLP-policy-high-severity.png)
+    ![DLP policy alert setting.](../media/insider-risk-DLP-policy-high-severity.png)
 
      > [!NOTE]
      > When creating a new DLP policy using the built-in templates, you'll need to select the **Create or customize advanced DLP rules** option to configure the **Incident reports** setting for the *High* severity level.
@@ -248,7 +248,7 @@ To quickly view the health status for a policy, navigate the **Policy** tab and 
 
 For more details about any recommendations or warnings, select a policy on the **Policy** tab to open the policy details card. More information about the recommendations and warnings, including guidance on how to address these issues, is displayed in the **Notifications** section of the details card.
 
-![Insider risk management policy health](../media/insider-risk-policy-health.png)
+![Insider risk management policy health.](../media/insider-risk-policy-health.png)
 
 ### Notification messages
 
