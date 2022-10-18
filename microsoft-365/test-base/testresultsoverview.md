@@ -18,26 +18,17 @@ f1.keywords: NOCSH
 
 # Viewing Test Results
 
-> [!NOTE]
-> Test Base now provides the option to kickoff a test with an on-demand approach.
+You can see application test results at scheduled intervals against selected updates from the Overview page of your Test Base account by logging into the Azure portal, clicking your Test Base account name, and then clicking links under the Insights category in the left-hand sector of the page, as follows:
 
-## Run as request under Manage packages
+- Test Summary — general overview of test results and status
+-	Security Update Results — overview and details of security update-related application test results
+-	Feature Update Results — overview and details of feature update-related application test results 
 
-For an active package, you can access the run-on-request feature from the Manage packages page.
+From the latter two pages, you will have detailed views of test results that focus on the following areas: 
+-	Script executions 
+-	Reliability data
+-	Memory utilization
+-	CPU utilization
+The sections that follow describe how to access and review the results of the previously specified testing areas.
 
-> [!div class="mx-imgBorder"]
-> [ ![Manage packages](Media/runondemand01-managepackages.png) ](Media/runondemand01-managepackages.png#lightbox)
 
-By specifying the OS update type and Windows product which are pre-defined with the package, you can kick off the test on demand which immediately gets scheduled for the current monthly churn of Windows updates.
-
-
-> [!div class="mx-imgBorder"]
-> [ ![Run on request](Media/runondemand02-runonrequest.png) ](Media/runondemand02-runonrequest.png#lightbox)
-
-You don’t need the test to be executed with its automatic cadence before you can use the feature. You can now decide which product and when to be tested.
-
-> [!div class="mx-imgBorder"]
-> [ ![Testsummary](Media/runondemand03-testsummary.png) ](Media/runondemand03-testsummary.png#lightbox)
-
-> [!NOTE]
-> Please be remind that only active packages will have Run on request button enabled. Make sure you Enable the package for future tests if you would like to opt-in the package for this feature.
