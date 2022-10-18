@@ -1,5 +1,5 @@
 ---
-title: Allow or block emails using the Tenant Allow/Block List
+title: Allow or block email using the Tenant Allow/Block List
 f1.keywords:
   - NOCSH
 ms.author: chrisda
@@ -13,12 +13,12 @@ search.appverid:
   - MET150
 ms.collection:
   - m365-security
-description: Admins can learn how to allow or block emails and spoofed sender entries in the Tenant Allow/Block List in the Security portal.
+description: Admins can learn how to allow or block email and spoofed sender entries in the Tenant Allow/Block List in the Security portal.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ---
 
-# Allow or block emails using the Tenant Allow/Block List
+# Allow or block email using the Tenant Allow/Block List
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -133,7 +133,7 @@ You can't create allow entries for domains and email addresses directly in the T
 For instructions, see [Report good email to Microsoft](admin-submission.md#report-good-email-to-microsoft).
 
 > [!NOTE]
-> Microsoft does not allow you to create allow entries directly as it leads to creation of allows that are not needed, thus exposing the customer's tenant to malicious emails which might otherwise have been filtered by the system.
+> Microsoft does not allow you to create allow entries directly as it leads to creation of allows that are not needed, thus exposing your organization to malicious email which might otherwise have been filtered by the system.
 >
 > Microsoft manages the allow creation process from Submission by creating allows for those entities (domains or email addresses, spoofed senders, URLs, files) which were determined to be malicious by filters during mail flow. For example, if the sender and a URL in the message were determined to be bad, an allow entry is created for the sender, and an allow entry is created for the URL.
 >

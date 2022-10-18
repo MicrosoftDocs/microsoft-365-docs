@@ -101,9 +101,9 @@ To delete an existing notification template, select a template and select **Dele
 
 ## Viewing capture clips
 
-If you've selected the settings option to only capture activities detected by policies that users are included in, capture clips are available as part of the alert and are accessible on the **Forensic evidence (preview)** tab on the **Alerts dashboard**. If alerts are later escalated to cases, the associated clips are accessible on the **Forensic evidence (preview)** tab on the **Cases** dashboard.
+If you've selected the option to only capture activities defined by the indicators selected in forensic evidence policies, capture clips are available as part of the alert and are accessible on the **Forensic evidence (preview)** tab on the **Alerts dashboard**. If alerts are later escalated to cases, the associated clips are accessible on the **Forensic evidence (preview)** tab on the **Cases** dashboard.
 
-If you've selected the settings option to capture any security-related activity performed by users, regardless of whether they're included in a forensic evidence policy, you'll view the clips for individual users on the **User activity report** dashboard.
+If you've selected the option to capture any security-related activity performed by users included in forensic evidence policies, you'll view the clips for individual users on the **User activity report** dashboard.
 
 >[!IMPORTANT]
 >Forensic evidence clips are deleted 120 days after they're captured or at the end of the preview period, whichever is sooner. You can download or transfer forensic evidence clips before they're deleted.
