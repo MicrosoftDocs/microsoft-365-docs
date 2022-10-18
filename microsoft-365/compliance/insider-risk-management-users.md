@@ -81,7 +81,7 @@ To quickly locate a specific user, use **Search** at the top right of the Users 
 
 ## View user details
 
-To view more details about risk management activity for a user, open the user details pane by double-clicking a user in the **Users dashboard**. On the details pane, you can view the following information:
+To view more details about risk activity for a user, open the user details pane by double-clicking a user in the **Users dashboard**. On the details pane, you can view the following information:
 
 - **User profile** tab
   - **Name and title**: Name and position title for the user from Azure Active Directory. These user fields will be anonymized or empty if the global anonymization setting for insider risk management is enabled.
