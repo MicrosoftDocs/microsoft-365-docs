@@ -42,7 +42,5 @@ You can view and monitor device health state by using Defender for Business capa
 ## See also
 
 - [View and edit device protection policies](m365bp-view-edit-create-mdb-policies.md)
-
 - [What is Microsoft Defender for Business?](../security/defender-business/mdb-overview.md)
-
 - [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
