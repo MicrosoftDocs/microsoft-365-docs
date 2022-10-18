@@ -35,7 +35,7 @@ In some cases, you may have a set of custodians that you have identified and hav
 
 To view the custodian hold policy:
 
-1. In the Microsoft Purview compliance portal, click **eDiscovery > Advanced** to display the list of cases in your organization.
+1. In the Microsoft Purview compliance portal, click **eDiscovery > Premium** to display the list of cases in your organization.
 
 2. Go to the **Sources** tab to add custodians within your case. To learn how you can add and place custodians on hold within an eDiscovery (Premium) case, see [Add Custodians to a case](add-custodians-to-case.md). If you have already added custodians and placed them on hold, go to step 3.
 
@@ -53,7 +53,7 @@ When you create a hold, you have the following options to scope the content that
 
 To create a non-custodial hold for an eDiscovery (Premium) case:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a>, click **eDiscovery > Advanced** to display the list of cases in your organization.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a>, click **eDiscovery > Premium** to display the list of cases in your organization.
   
 2. Click **Open** next to the case that you want to create the holds in.
   
