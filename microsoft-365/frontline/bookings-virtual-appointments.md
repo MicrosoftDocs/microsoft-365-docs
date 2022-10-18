@@ -131,7 +131,7 @@ When a scheduler uses the appointment type to schedule an appointment, they can 
 
 Enter a name for the service. For example, Drop-in appointment, Account opening, Prescription renewal, Loan consultation, Tax preparation.
 
-Your customers and clients can then choose the appointment type on your booking page to request an on-demand appointment with your staff.
+Your customers and clients can then choose the appointment type on your booking page to book an on-demand appointment with your staff.
 
 ## Schedule an appointment
 
@@ -170,7 +170,7 @@ To learn more, see [Queue view in Bookings](https://support.microsoft.com/office
 
 ## Additional capabilities with the Bookings web app
 
-The Bookings web app gives you additional capabilities. For example, you can publish a self-serve online booking page where people can schedule appointments with your staff. To access the Bookings web app, go to **More options** (...) > **Open Bookings web app**.
+The Bookings web app gives you additional capabilities. For example, you can publish a self-serve online booking page where people can book appointments with your staff. To access the Bookings web app, go to **More options** (...) > **Open Bookings web app**.
 
 To learn more, see [Microsoft Bookings](/microsoft-365/bookings/bookings-overview).
 
