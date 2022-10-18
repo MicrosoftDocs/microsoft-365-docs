@@ -122,7 +122,7 @@ Use the filter control to filter alerts by several attributes, including:
 
 ### User activity
 
-The **User activity** tab allows risk analysts and investigators to review user activity details and use a visual representation of all the potentially risky activities associated with risk alerts and cases. For example, as part of the alert triage process, analysts may need to review all the risk management activities associated with the case for more details. In cases, risk investigators can review user activity details and the bubble chart to help understand the overall scope of the risk management activities associated with the case. For more information about the User activity chart, see the [Insider risk management activities](insider-risk-management-activities.md#user-activity) article.
+The **User activity** tab allows risk analysts and investigators to review user activity details and use a visual representation of all the potentially risky activities associated with risk alerts and cases. For example, as part of the alert triage process, analysts may need to review all the risk activities associated with the case for more details. In cases, risk investigators can review user activity details and the bubble chart to help understand the overall scope of the risk activities associated with the case. For more information about the User activity chart, see the [Insider risk management activities](insider-risk-management-activities.md#user-activity) article.
 
 ### Activity explorer (preview)
 
