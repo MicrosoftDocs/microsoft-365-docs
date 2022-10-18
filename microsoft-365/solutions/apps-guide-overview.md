@@ -63,7 +63,7 @@ Intune supports a wide range of app types. The available options differ for each
 | Apps written in-house or as a custom app (line-of-business) | Intune installs the app on the device (you supply the installation file). | You must update the app. |
 | Apps that are built-in (built-in apps) | Intune installs the app on the device.  | App updates are automatic. |
 | Apps on the web (web link) | Intune creates a shortcut to the web app on the device home screen. | App updates are automatic. |
-| Apps from other Microsoft services  | Intune creates a shortcut to the app in the Company Portal. For more information, see [App source setting options](../apps/company-portal-app.md#app-source-setting-options). | App updates are automatic. |
+| Apps from other Microsoft services  | Intune creates a shortcut to the app in the Company Portal. | App updates are automatic. |
 
 ## Purchase apps
 
