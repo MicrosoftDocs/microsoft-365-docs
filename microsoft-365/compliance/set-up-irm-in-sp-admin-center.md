@@ -9,8 +9,6 @@ ms.date: 6/29/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection:
-- SPO_Content
 ms.localizationpriority: medium
 search.appverid: 
 - SPO160
@@ -20,6 +18,7 @@ description: "Learn how to use SharePoint Online IRM through Microsoft Azure Act
 ms.collection: 
 - tier3
 - purview-compliance
+- SPO_Content
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkSPO
