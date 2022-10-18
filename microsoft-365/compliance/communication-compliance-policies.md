@@ -23,8 +23,8 @@ search.appverid:
 
 # Create and manage communication compliance policies
 
->[!IMPORTANT]
->Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy.
+> [!IMPORTANT]
+> Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -58,13 +58,13 @@ As part of a layered defense to detect and remediate inappropriate messages in y
 
 Enabled by default in the [Teams admin center](/microsoftteams/manage-teams-in-modern-portal), the *Report a concern* option in Teams messages allows users in your organization to submit inappropriate internal personal and group chat messages for review by communication compliance reviewers for the policy. These messages are supported by a default system policy that supports reporting messages in Teams group and private chats.
 
-![Communication compliance Report a concern.](../media/communication-compliance-report-a-concern-full-menu.png)
+![Communication compliance report a concern](../media/communication-compliance-report-a-concern-full-menu.png)
 
 When a user submits a Teams chat message for review, the message is copied to the User-reported message policy. Reported messages initially remain visible to all chat members and there isn't any notification to chat members or the submitter that a message has been reported in channel, private, or group chats. A user can't report the same message more than once and the message remains visible to all users included in the chat session during the policy review process.
 
 During the review process, communication compliance reviewers can perform all the standard [remediation actions](/microsoft-365/compliance/communication-compliance-investigate-remediate#step-3-decide-on-a-remediation-action) on the message, including removing the message from the Teams chat. Depending on how the messages are remediated, the message sender and recipients will see different [notification messages](/microsoftteams/communication-compliance#act-on-inappropriate-messages-in-microsoft-teams) in Teams chats after the review.
 
-![Communication compliance user-reported messages policy.](../media/communication-compliance-user-reported-messages-policy.png)
+![Communication compliance user-reported messages policy](../media/communication-compliance-user-reported-messages-policy.png)
 
 User reported messages from Teams chats are the only messages processed by the User-reported message policy and only the assigned reviewers for the policy can be modified. All other policy properties aren't editable. When the policy is created, the initial reviewers assigned to the policy are all members of the *Communication Compliance Admins* role group (if populated with at least one user) or all members of your organization's *Global Admin* role group. The policy creator is a randomly selected user from the *Communication Compliance Admins* role group (if populated with at least one user) or a randomly selected user from your organization's *Global Admin* role group.  
 
@@ -157,8 +157,8 @@ To identify an older policy, review *Last policy scan* column on the **Policy** 
 
 Each communication compliance policy has a storage limit size of 100 GB or 1 million messages, whichever is reached first. As the policy approaches these limits, notification emails are automatically sent to users assigned to the *Communication Compliance* or *Communication Compliance Admins* role groups. Notifications messages are sent when the storage size or message count reach 80, 90, and 95 percent of the limit. When the policy limit is reached, the policy is automatically deactivated, and the policy stops processing messages for alerts.
 
->[!IMPORTANT]
->If a policy is deactivated due to reaching the storage and message limits, be sure to evaluate how to manage the deactivated policy. If you delete the policy, all messages, associated attachments, and message alerts will be permanently deleted. If you need to maintain these items for future use, do not delete the deactivated policy.
+> [!IMPORTANT]
+> If a policy is deactivated due to reaching the storage and message limits, be sure to evaluate how to manage the deactivated policy. If you delete the policy, all messages, associated attachments, and message alerts will be permanently deleted. If you need to maintain these items for future use, do not delete the deactivated policy.
 
 To manage policies approaching the storage and message limits, consider making a copy of the policy to maintain coverage continuity or take the following actions to help minimize current policy storage size and message counts:
 
@@ -214,7 +214,7 @@ Communication compliance uses built-in trainable and global classifiers to scan 
 - **Threat**: Scans for threats to commit violence or physical harm to a person or property.
 
 > [!NOTE]
-> Policies using classifiers will inspect and evaluate messages with a word count of six or greater. Messages containing less than six words aren't evaluated in policies using classifiers. To identify and take action on shorter messages containing inappropriate content, we recommend including a custom keyword dictionary to communication compliance policies detecting this type of content.
+> Policies using Threat, Harassment, and Profanity classifiers in the English language will inspect and evaluate messages with a word count of three or greater. Messages containing less than three words aren't evaluated in policies using these types of classifiers. To identify and take action on shorter messages containing inappropriate content, we recommend including a custom keyword dictionary to communication compliance policies detecting this type of content.
 
 ### Optical character recognition (OCR)
 
