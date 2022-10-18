@@ -48,22 +48,22 @@ conceptualContent:
           - url: /microsoft-365/security/defender/
             itemType: overview
             text: Microsoft 365 Defender
-          - url: /microsoft-365/security/microsoft-defender-endpoint.md
+          - url: /microsoft-365/security/microsoft-defender-endpoint
             itemType: overview
             text: Microsoft Defender for Endpoint
-          - url: /microsoft-365/security/office-365-security/defender-for-office-365.md
+          - url: /microsoft-365/security/office-365-security/defender-for-office-365
             itemType: overview
             text: Microsoft Defender for Office 365
           - url: /defender-for-identity/
             itemType: overview
             text: Microsoft Defender for Identity
-          - url: /defender-cloud-apps/what-is-defender-for-cloud-apps.md
+          - url: /defender-cloud-apps/what-is-defender-for-cloud-apps
             itemType: overview
             text: Microsoft Defender for Cloud Apps
           - url: /microsoft-365/security/defender-business/mdb-overview
             itemType: overview
             text: Microsoft 365 Defender for Businesses
-          - url: /microsoft-365/security/defender-vulnerability-management.md
+          - url: /microsoft-365/security/defender-vulnerability-management
             itemType: overview
             text: Microsoft Defender Vulnerability Management
     # Card
