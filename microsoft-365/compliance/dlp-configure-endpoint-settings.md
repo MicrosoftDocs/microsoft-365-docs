@@ -240,6 +240,8 @@ You can control whether sensitive files that are protected by your policies can 
 
 ##### Allow
 
+When the **Service domains** list is set to **Allow**, DLP policies won't be applied when a user attempts to upload a sensitive file to any of the domains on the list.
+
 If the list mode is set to **Allow**, any user activity involving a sensitive item and a domain that's on the list will be audited. The activity is allowed. When a user attempts an activity involving a sensitive item and a domain that *isn't* on the list then DLP policies, and the actions defined in the polices, are applied.
 
 For example, with this configuration:
@@ -260,18 +262,20 @@ but if a user attempts to:
  
 ##### Block
  
+When the **Service domains** list is set to **Block**, DLP policies will be applied when a user attempts to upload a sensitive file to any of the domains on the list.
+
 If the list mode is set to **Block**, when a user attempts an activity involving a sensitive item and a domain that is on the list then DLP policies, and the actions defined in the polices, are applied. Any activity involving a sensitive item and a domain that is not on the list will be audited and the  user activity is allowed.
 
 For example, with this configuration:
 
 - **Service domains** list mode is set to **Block**.
     - Contoso.com is on the list.
--  A DLP policy is set to **Block** upload of sensitive items that contain credit card numbers.
+-  A DLP policy is set to **Block with override** upload of sensitive items that contain credit card numbers.
  
 User attempts to:
 
 - Upload a sensitive file with credit card numbers to contoso.com.
-    - The user activity is blocked, an event is generated and an alert is triggered.
+    - The user activity is blocked, but the user can override the block, an event is generated and an alert is triggered.
 
 but if a user attempts to: 
 
