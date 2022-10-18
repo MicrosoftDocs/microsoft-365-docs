@@ -108,7 +108,7 @@ In many organizations, users have permission to install software on their device
 
 You'll need to have Microsoft Defender for Endpoint configured in your organization and enable Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
 
-### General patient data misuse (preview)
+### Patient data misuse (preview)
 
 Protecting healthcare record data and preventing the misuse of patient personal data is a significant concern for organizations in the healthcare industry. This misuse may include confidential data leaks to unauthorized persons, fraudulent modification of patient records, or the theft of patient healthcare records. Preventing this misuse of patient data, either by lack of awareness, negligence, or fraud by users is also key component in meeting the regulatory requirements of the Health Insurance Portability and Accountability Act (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act. Both of these acts establish the requirements for safeguarding patient protected health information (PHI).
 
@@ -157,7 +157,7 @@ The following table lists the triggering events and prerequisites for policies c
 | **Data leaks by priority users** | Data leak policy activity that creates a *High severity* alert or built-in exfiltration event triggers | DLP policy configured for *High severity* alerts <br><br> OR <br><br> Customized triggering indicators <br><br> Priority user groups configured in insider risk settings |
 | **Data leaks by risky users** | - Performance improvement, poor performance, or job level change indicators from HR connector. <br> - Messages containing potentially threatening, harassing, or discriminatory language | Microsoft 365 HR connector configured for disgruntlement indicators <br><br> AND/OR <br><br> Communication Compliance integration and dedicated disgruntlement policy |
 | **Security policy violations** | Defense evasion of security controls or unwanted software detected by Microsoft Defender for Endpoint | Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft Purview compliance portal configured |
-| **General patient data misuse** | Defense evasion of security controls from EMR systems <br><br> User and patient address matching indicators from HR systems | Healthcare access indicators selected in policy or insider risk settings <br><br> Microsoft 365 HR connector configured for address matching <br><br> Microsoft Healthcare or Epic connector configured |
+| **Patient data misuse** | Defense evasion of security controls from EMR systems <br><br> User and patient address matching indicators from HR systems | Healthcare access indicators selected in policy or insider risk settings <br><br> Microsoft 365 HR connector configured for address matching <br><br> Microsoft Healthcare or Epic connector configured |
 | **Risky browser usage** | User browsing activity related to security that matches at least one selected *Browsing indicator* | See the complete list of prerequisites in the [browser signal detection article](/microsoft-365/compliance/insider-risk-management-browser-support) |
 | **Security policy violations by departing users** | Resignation or termination date indicators from HR connector or Azure Active Directory account deletion | (optional) Microsoft 365 HR connector configured for termination and resignation date indicators <br><br> Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft Purview compliance portal configured |
 | **Security policy violations by priority users** | Defense evasion of security controls or unwanted software detected by Microsoft Defender for Endpoint | Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft Purview compliance portal configured <br><br> Priority user groups configured in insider risk settings |
@@ -285,7 +285,7 @@ Use the following table to determine the maximum number of in-scope users suppor
 |Data leak by priority users|1,000|
 |Data theft by departing users|20,000|
 |Security policy violations|1,000|
-|General patient data misuse|5,000|
+|Patient data misuse|5,000|
 |Risky browser usage|7,000|
 |Security policy violation by priority users|1,000|
 |Security policy violations by departing users|15,000|

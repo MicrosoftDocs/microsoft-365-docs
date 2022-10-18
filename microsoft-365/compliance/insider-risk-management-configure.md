@@ -172,7 +172,7 @@ The Microsoft 365 HR connector is required when using the following policy templ
 
 - Data leaks by risky users
 - Departing user data theft
-- General patient data misuse
+- Patient data misuse
 - Security policy violations by departing users
 - Security policy violations by risky users
 
@@ -185,7 +185,7 @@ Insider risk management supports importing user and log data imported from 3rd-p
 If you configure more than one Healthcare or Epic connector for your organization, insider risk management automatically supports event and activities signals from all Healthcare and Epic connectors.
 The Microsoft 365 Healthcare or Epic connector is required when using the following policy templates:
 
-- General patient data misuse
+- Patient data misuse
 
 See the [Set up a connector to import healthcare data](import-healthcare-data.md) or [Set up a connector to import Epic EHR data](import-epic-data.md) article for step-by-step guidance to configure a healthcare-specific connector for your organization. After you've configured a connector, return to these configuration steps.
 
@@ -193,7 +193,7 @@ See the [Set up a connector to import healthcare data](import-healthcare-data.md
 
 Insider risk management supports using DLP policies to help identify the intentional or accidental exposure of sensitive information to unwanted parties for High severity level DLP alerts. When configuring an insider risk management policy with any of the **Data leaks** templates, you have the option to assign a specific DLP policy to the policy for these types of alerts.
 
-DLP policies help identify users to activate risk scoring in insider risk management for high severity DLP alerts for sensitive information and are an important part of configuring full risk management coverage in your organization. For more information about insider risk management and DLP policy integration and planning considerations, see [Insider risk management policies](insider-risk-management-policies.md#general-data-leaks).
+DLP policies help identify users to activate risk scoring in insider risk management for high severity DLP alerts for sensitive information and are an important part of configuring full risk management coverage in your organization. For more information about insider risk management and DLP policy integration and planning considerations, see [Insider risk management policies](insider-risk-management-policies.md#data-leaks).
 
 > [!IMPORTANT]
 >Make sure you've completed the following:
