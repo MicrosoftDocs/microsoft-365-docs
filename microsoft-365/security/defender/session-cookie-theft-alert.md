@@ -1,7 +1,7 @@
 ---
 title: Alert grading for Session Cookie theft alert 
 description: Review, manage and grade the Session Cookie theft alert as True Positive (TP) or False Positive (FP), and if there is TP, take recommended actions to remediate the attack and mitigate the security risks arising because of it.
-keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
+keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, cookie theft, AiTM, Attacker-in-the-middle, Adversary-in-the-middle, session theft, aitm cookie theft, aitm session theft.
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.subservice: m365d
