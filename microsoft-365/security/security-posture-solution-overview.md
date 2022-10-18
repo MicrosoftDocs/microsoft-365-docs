@@ -48,7 +48,7 @@ The 4 phases are described in the following table with the steps for each phase 
 
 |Phase|Steps|
 |---|---|
-|[Configure capabilities](#1-configure-device-discovery)|<ol><li>[Configure ASR in audit mode](#2-configure-asr-in-audit-mode)</li><li> [Configure Microsoft Defender for Identity](#3-configure-microsoft-defender-for-identity)</li></ol>|
+|[Configure capabilities](#configure-capabilities)|<ol><li>[Configure device discovery](#1-configure-device-discovery)</li><li>[Configure ASR in audit mode](#2-configure-asr-in-audit-mode)</li><li> [Configure Microsoft Defender for Identity](#3-configure-microsoft-defender-for-identity)</li></ol>|
 |[Assess and protect your assets](#assess-and-protect)|<ol><li>Assess your devices</li><li> Assign device value</li><li> Onboard newly discovered endpoints</li></ol>|
 |[Improve your security posture](#investigate-and-improve)|<ol><li> Review Secure Score</li></ol>|
 |[Maintain a secure posture ](#track-and-maintain)|<ol><li> Enable email notifications for new vulnerabilities</li><li> Hunt for threats with advanced hunting </li><li>Understand your exposure to zero days threats]</li></ol>|
