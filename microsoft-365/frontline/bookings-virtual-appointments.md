@@ -93,9 +93,9 @@ To learn more, see [Create an appointment type](https://support.microsoft.com/of
 
 Enter a name for the service. For example, Account opening, Prescription renewal, Loan consultation, Tax preparation.
 
-Then, specify any other information and settings you want. Schedulers can use the appointment type to schedule an appointment. The information that you add is included in the email confirmation that's sent to attendees every time this type of appointment is booked.
+Specify any other information and settings you want. Schedulers can then use the appointment type to schedule an appointment. The information that you add is included in the email confirmation that's sent to attendees every time this type of appointment is booked.
 
-You can configure options such as whether attendees can [join from a a desktop or mobile browser](browser-join.md) without having to download Teams, add an email reminder, set up SMS text notifications, and link forms.
+You can configure options such as whether attendees can [join from a a desktop or mobile browser](browser-join.md) without having to download Teams, add an email reminder, [set up SMS text notifications](#set-up-sms-text-notifications), and [link forms](#link-forms).
 
 ##### Set up SMS text notifications
 
@@ -131,7 +131,7 @@ When a scheduler uses the appointment type to schedule an appointment, they can 
 
 Enter a name for the service. For example, Drop-in appointment, Account opening, Prescription renewal, Loan consultation, Tax preparation.
 
-Your customers and clients can choose the appointment type on your booking page to request an on-demand appointment with your staff.
+Your customers and clients can then choose the appointment type on your booking page to request an on-demand appointment with your staff.
 
 ## Schedule an appointment
 
@@ -150,7 +150,7 @@ In your Teams or Outlook calendar, go to the booking, and then select **Join** o
 ## Monitor appointments and get real-time status updates in the queue view
 
 > [!NOTE]
-> Add take-back/Premium (scheduled queue) and Premium (on-demand) messaging<br>The queue view for on-demand appointments requires a Teams Premium license. Scheduled appointments in the queue view will soon require a Teams Premium license. [Learn more about Teams Premium]().
+> Add take-back/Premium (scheduled queue) and Premium (on-demand) messaging<br>Access to scheduled appointments in the queue view will soon require a Teams Premium license. A Teams Premium license is required to see on-demand appointments in the queue view. [Learn more about Teams Premium]().
 
 The queue view provides your staff with a dashboard to monitor all scheduled and on-demand virtual appointments for the day, with updates in real time. To see the queue, go to the **Queue** tab.
 
