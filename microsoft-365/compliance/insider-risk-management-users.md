@@ -90,7 +90,7 @@ To view more details about risk activity for a user, open the user details pane 
   - **Organization or department**: Organization or department for the user.
 
 - **User activity** tab
-  - **History of recent user activity**: Lists both triggering indicators and insider risk indicators for risk management activities up to the last 180 days. All risk management activities pertinent to insider risk indicators are also scored, though the activities may or may not have generated an insider risk alert. Triggering indicator examples may be a resignation date or the last scheduled date of work for the user. Insider risk indicators are activities determined to have an element of risk and are defined in policies that the user is included in. Event and risk activities are listed with the most recent item listed first.
+  - **History of recent user activity**: Lists both triggering indicators and insider risk indicators for risk activities up to the last 180 days. All risk activities pertinent to insider risk indicators are also scored, though the activities may or may not have generated an insider risk alert. Triggering indicator examples may be a resignation date or the last scheduled date of work for the user. Insider risk indicators are activities determined to have an element of risk, which may potentially lead to a security incident, and are defined in policies that the user is included in. Event and risk activities are listed with the most recent item listed first.
 
 ## Remove users from in-scope assignment to policies
 
