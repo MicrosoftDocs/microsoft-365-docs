@@ -69,6 +69,22 @@ These new capabilities work with [sensitivity labels](sensitivity-labels.md) onl
 
 Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and version 19.002.0107.0008 or later on Mac. Both these versions were released January 28, 2019, and are currently released to all rings. For more information, see the [OneDrive release notes](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0). After you enable sensitivity labels for Office files in SharePoint and OneDrive, users who run an older version of the sync app are prompted to update it.
 
+## Supported file types
+
+After you've enabled sensitivity labels for SharePoint and OneDrive, the following file types are supported for sensitivity labeling scenarios.
+
+Applying a sensitivity label in Office on the web or in SharePoint:
+
+- **Word**: .docx, .docm
+- **Excel**: .xlsx, .xlsm, .xlsb
+- **PowerPoint**: .pptx, .ppsx
+
+Uploading a labeled document, and then extracting and displaying that sensitivity label:
+
+- **Word**: doc, .docx, .docm, .dot, .dotx, .dotm
+- **Excel**: .xls, .xlt, .xla, .xlc, .xlm, .xlw, .xlsx, .xltx, .xlsm, .xltm, .xlam, .xlsb
+- **PowerPoint**: .ppt, .pot, .pps, .ppa, .pptx, .ppsx, .ppsxm, .potx, .ppam, .pptm, .potm, .ppsm
+
 ## Limitations
 
 - SharePoint and OneDrive can't process some files that are labeled and encrypted from Office desktop apps when these files contain PowerQuery data, data stored by custom add-ins, or custom XML parts such as Cover Page Properties, content type schemas, custom Document Information Panel, and Custom XSN. This limitation also applies to files that include a [bibliography](https://support.microsoft.com/en-us/office/create-a-bibliography-citations-and-references-17686589-4824-4940-9c69-342c289fa2a5), and to files that have a [Document ID](https://support.microsoft.com/office/enable-and-configure-unique-document-ids-ea7fee86-bd6f-4cc8-9365-8086e794c984) added when they are uploaded.
