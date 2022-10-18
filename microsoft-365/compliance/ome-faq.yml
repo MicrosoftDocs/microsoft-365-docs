@@ -13,9 +13,11 @@ metadata:
   ms.localizationpriority: medium
   search.appverid:
   - MET150
-  ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: "Have a question about how Microsoft Purview Message Encryption works? Check for an answer here."
   ms.custom: seo-marvel-apr2020
+  ms.collection: 
+  - tier1
+  - purview-compliance
 title: Message Encryption FAQ
 summary: |
 
