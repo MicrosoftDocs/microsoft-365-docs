@@ -253,24 +253,24 @@ For example, with this configuration:
 User attempts to:
 
 - Upload a sensitive file with credit card numbers to contoso.com.
-    - The user activity is allowed, audited, an event is generated and an alert is triggered.
+    - The user activity is allowed, audited, an event is generated, but it won't list the policy name or the triggering rule name in the event details, and no alert is generated. 
 
 but if a user attempts to: 
 
 - Upload a sensitive file with credit card numbers to wingtiptoys.com (which is not on the list).
-    - The policy is applied and the user activity is blocked. An event is generated, but it won't list the policy name or the triggering rule name in the event details, and no alert is generated. 
+    - The policy is applied and the user activity is blocked. An event is generated, and an alert is generated. 
  
 ##### Block
  
 When the **Service domains** list is set to **Block**, DLP policies will be applied when a user attempts to upload a sensitive file to any of the domains on the list.
 
-If the list mode is set to **Block**, when a user attempts an activity involving a sensitive item and a domain that is on the list then DLP policies, and the actions defined in the polices, are applied. Any activity involving a sensitive item and a domain that is not on the list will be audited and the  user activity is allowed.
+If the list mode is set to **Block**, when a user attempts an activity involving a sensitive item and a domain that is on the list then DLP policies, and the actions defined in the polices, are applied. Any activity involving a sensitive item and a domain that is not on the list will be audited and the user activity is allowed.
 
 For example, with this configuration:
 
 - **Service domains** list mode is set to **Block**.
     - Contoso.com is on the list.
--  A DLP policy is set to **Block with override** upload of sensitive items that contain credit card numbers.
+-  A DLP policy is set to **Block with override** for the upload of sensitive items that contain credit card numbers.
  
 User attempts to:
 
