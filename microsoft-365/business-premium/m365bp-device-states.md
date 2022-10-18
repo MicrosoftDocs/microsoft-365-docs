@@ -1,5 +1,5 @@
 ---
-title: "Device states"
+title: "View device status with Microsoft Defender for Business"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 ms.collection: 
 - tier1
@@ -19,36 +19,32 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn about the various device states in the Device actions list in Admin home in Microsoft 365 for business."
+description: "View device health with Defender for Business in Microsoft 365 Business Premium."
 ---
 
-# Device states in Microsoft 365 for business
+# View device status in Microsoft Defender for Business
 
-This article applies to Microsoft 365 Business Premium.
+Microsoft Defender for Business is included with Microsoft 365 Business Premium, as of March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
 
-> [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../security/defender-business/mdb-overview.md).
+You can view and monitor device health state by using Defender for Business capabilities.
 
-Devices in the **Device actions** list (Admin home \> **Device actions**) can have the following states.
+:::image type="content" source="../media/defender-business/mdb-deviceinventory.png" alt-text="Screenshot of device inventory in Defender for Business":::
+
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+
+2. In the navigation pane, go to **Assets** > **Devices**. A list of devices that were onboarded to Defender for Business displays.
+
+3. Select a device to view more information and available actions.
+
+   :::image type="content" source="../media/defender-business/mdb-selected-device.png" alt-text="Screenshot showing a selected device with details and actions available":::
   
-![In the Device actions list, you can see the Devices states.](./../media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
-  
-|**Status**|**Description**|
-|:-----|:-----|
-|Managed by Intune  |Managed by Microsoft 365 Business Premium.  |
-|Retire pending  |Microsoft 365 Business Premium is getting ready to remove company data from the device.  |
-|Retire in progress  |Microsoft 365 Business Premium is currently removing company data from the device.  |
-|Retire failed  | Remove company data action failed.  |
-|Retire canceled  |Retire action was canceled.  |
-|Wipe pending  |Waiting for factory reset to start.  |
-|Wipe in progress  |Factory reset has been issued.  |
-|Wipe failed  |Couldn't do factory reset.  |
-|Wipe canceled  |Factory wipe was canceled.  |
-|Unhealthy  |An action is pending (or in progress), but the device hasn't checked in for 30+ days.  |
-|Delete pending  |Delete action is pending.  |
-|Discovered  |Microsoft 365 Business Premium has detected the device.  |
-   
 
 ## See also
+
+[View and edit device protection policies](m365bp-view-edit-create-mdb-policies.md)
+
+[Device groups and categories in Microsoft 365 Business Premium](m365bp-device-groups-mdb.md)
+
+[What is Microsoft Defender for Business?](../security/defender-business/mdb-overview.md)
 
 [Best practices for securing Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
