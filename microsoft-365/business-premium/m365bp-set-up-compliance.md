@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 ms.collection:
 - m365-security
@@ -70,7 +70,7 @@ For more information about compliance features in Microsoft 365 for business, se
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198022).
 
-Sensitivity labels are available in Office apps (such as Outlook, Word, Excel, and PowerPoint). Examples of labels include:
+Sensitivity labels are available in Microsoft 365 apps (such as Outlook, Word, Excel, and PowerPoint). Examples of labels include:
 
 - Normal
 - Personal
