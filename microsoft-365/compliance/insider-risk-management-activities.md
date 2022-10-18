@@ -34,7 +34,7 @@ After you've configured indicators on the insider risk management **Settings** p
 
 After examining potentially risky activities, investigators can dismiss individual user's activities as benign. They can also share or email a link to the report with other investigators, or choose to assign users (temporarily or explicitly) to an insider risk management policy. Users must be assigned to the *Insider Risk Management Investigators* role group to view the **User activity reports** page.  
 
-![Insider risk management user activity report overview](../media/insider-risk-user-activity-report-overview.png)
+![Insider risk management user activity report overview.](../media/insider-risk-user-activity-report-overview.png)
 
 To get started, select **Manage reports** in the **Investigate user activity** section on the insider risk management **Overview** page. 
 
