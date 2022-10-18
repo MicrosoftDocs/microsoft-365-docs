@@ -24,15 +24,15 @@
 ## [Evaluate capabilities](evaluation-lab.md)
 ### [Microsoft defender for endpoint demonstrations]()
 #### [Microsoft Defender for Endpoint demonstration scenarios](defender-endpoint-demonstrations.md)
-#### [App reputation demonstrations](defender-endpoint-demonstration-app-reputation.md)
+#### [App reputation demonstration](defender-endpoint-demonstration-app-reputation.md)
 #### [Attack surface reduction rules demonstrations](defender-endpoint-demonstration-attack-surface-reduction-rules.md)
-#### [Block at First Sight \(BAFS\) demonstration)](defender-endpoint-demonstration-block-at-first-sight-bafs.md)
+#### [Block at First Sight (BAFS) demonstration](defender-endpoint-demonstration-block-at-first-sight-bafs.md)
 #### [Cloud-delivered protection demonstration](defender-endpoint-demonstration-cloud-delivered-protection.md)
-#### [Controlled folder access \(CFA\) demonstration test tool](defender-endpoint-demonstration-controlled-folder-access-test-tool.md)
-#### [Controlled folder access \(CFA\) demonstration](defender-endpoint-demonstration-controlled-folder-access.md)
-#### [Exploit protection \(EP\) demonstrations](defender-endpoint-demonstration-exploit-protection.md)
-#### [Network protection demonstration](defender-endpoint-demonstration-network-protection.md)
-#### [Potentially unwanted applications \(PUA\) demonstration](defender-endpoint-demonstration-potentially-unwanted-applications.md)
+#### [Controlled folder access (CFA) demonstration (block script)](defender-endpoint-demonstration-controlled-folder-access-test-tool.md)
+#### [Controlled folder access (CFA) demonstrations (block ransomware)](defender-endpoint-demonstration-controlled-folder-access.md)
+#### [Exploit protection (EP) demonstrations](defender-endpoint-demonstration-exploit-protection.md)
+#### [Network protection demonstrations](defender-endpoint-demonstration-network-protection.md)
+#### [Potentially unwanted applications (PUA) demonstration](defender-endpoint-demonstration-potentially-unwanted-applications.md)
 #### [URL reputation demonstrations](defender-endpoint-demonstration-smartscreen-url-reputation.md)
 
 ## [Plan deployment](deployment-strategy.md)
@@ -317,6 +317,7 @@
 ### Next-generation protection
 #### [Next-generation protection overview](next-generation-protection.md)
 ##### [Overview of Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
+##### [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 ##### [Enable and update Microsoft Defender Antivirus on Windows Server](enable-update-mdav-to-latest-ws.md)
 ##### [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
 ##### [Better together: Microsoft Defender Antivirus and Office 365](office-365-microsoft-defender-antivirus.md)
@@ -332,7 +333,7 @@
 #### [Tamper protection]()
 ##### [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
 ##### [Manage tamper protection using Microsoft 365 Defender](manage-tamper-protection-microsoft-365-defender.md)
-##### [Manage tamper protection using Microsoft Endpoint Manager](manage-tamper-protection-microsoft-endpoint-manager.md)
+##### [Manage tamper protection using Microsoft Intune](manage-tamper-protection-microsoft-endpoint-manager.md)
 ##### [Manage tamper protection with Configuration Manager](manage-tamper-protection-configuration-manager.md)
 ##### [Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md)
 ##### [FAQs on tamper protection](faqs-tamper-protection.md)
@@ -477,10 +478,7 @@
 ##### [Power BI - How to use API - Samples](api-power-bi.md)
 ##### [Threat protection reports](threat-protection-reports.md)
 
-### [Advanced hunting]()
-#### [Advanced hunting overview](advanced-hunting-overview.md)
-#### [Understand the schema](advanced-hunting-schema-reference.md)
-#### [DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)
+### [Advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview)
 
 ### [Threat analytics overview](threat-analytics.md)
 #### [Read the analyst report](threat-analytics-analyst-reports.md)
@@ -493,12 +491,12 @@
 #### [Configure AIR capabilities](configure-automated-investigations-remediation.md)
 #### [View the details and results of an automated investigation](autoir-investigation-results.md)
 
-### [Microsoft Threat Experts]()
-#### [Microsoft Threat Experts overview](microsoft-threat-experts.md)
-#### [Configure and manage Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md)
-
 ### [Next generation protection]()
 #### [Run and customize scheduled and on-demand scans](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+
+## [Endpoint Attack Notifications](endpoint-attack-notifications.md)
+
+### [Experts on Demand](experts-on-demand.md)
 
 ## Reference
 ### [Understand threat intelligence concepts](threat-indicator-concepts.md)
@@ -711,7 +709,6 @@
 
 ### [Managed security service provider (MSSP) integration]()
 #### [Configure managed security service provider integration](configure-mssp-support.md)
-#### [Supported managed security service providers](mssp-list.md)
 #### [Grant MSSP access to the portal](grant-mssp-access.md)
 #### [Access the MSSP customer portal](access-mssp-portal.md)
 #### [Configure alert notifications](configure-mssp-notifications.md)

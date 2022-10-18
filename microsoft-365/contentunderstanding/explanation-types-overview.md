@@ -1,5 +1,5 @@
 ---
-title: Explanation types in Microsoft SharePoint Syntex
+title: Explanation types in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,12 +12,12 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn more about phrase list, regular expression, and proximity explanation types in Microsoft SharePoint Syntex.
+description: Learn more about phrase list, regular expression, and proximity explanation types in Microsoft Syntex.
 ---
 
-# Explanation types in Microsoft SharePoint Syntex
+# Explanation types in Microsoft Syntex
 
-Explanations are used to help to define the information you want to label and extract in your document understanding models in Microsoft SharePoint Syntex. When you create an explanation, you need to select an explanation type. This article helps you understand the different explanation types and how they're used.
+Explanations are used to help to define the information you want to label and extract in your document understanding models in Microsoft Syntex. When you create an explanation, you need to select an explanation type. This article helps you understand the different explanation types and how they're used.
 
 ![Screenshot of the Create an explanation panel showing the three explanation types.](../media/content-understanding/explanation-types.png)
 
@@ -221,4 +221,4 @@ When training a classifier there a few things to keep in mind that will produce 
 
 ### See also
 
-[Use explanation templates in SharePoint Syntex](explanation-templates.md)
+[Use explanation templates in Microsoft Syntex](explanation-templates.md)
