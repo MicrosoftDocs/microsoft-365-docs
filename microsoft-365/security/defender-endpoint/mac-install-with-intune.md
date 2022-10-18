@@ -47,6 +47,7 @@ Before you get started, see [the main Microsoft Defender for Endpoint on macOS p
 The following table summarizes the steps you would need to take to deploy and manage Microsoft Defender for Endpoint on Macs, via Intune. More detailed steps are available below.
 
 <br>
+[]: # (This needs reviewing to see if this is still valid.  This article is around Intune deployment.  The Defender configurations and update management can be handled using Settings catalog in Device Configuration profiles or Endpoint Security profiles now, rather than custom templates with XML.)
 
 ****
 
