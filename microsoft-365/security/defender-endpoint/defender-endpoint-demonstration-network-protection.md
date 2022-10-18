@@ -37,11 +37,11 @@ Set-MpPreference -EnableNetworkProtection Enabled
 
 ## Rule states
 
-|State | Mode| Numeric value |
-|:---|:---|:---|
-| AuditMode | = Audit Mode | 2 |
-| Enabled | = Block mode | 1 |
-| Disabled | = Off | 0 |d
+|State|Mode|Numeric value|
+|---|---|---|
+|AuditMode|= Audit Mode|2|
+|Enabled|= Block mode|1|
+|Disabled|= Off|0|
 
 ## Verify configuration
 
@@ -53,10 +53,9 @@ Get-MpPreference
 
 1. Turn on Network Protection using powershell command:
 
-```powershell
-Set-MpPreference -EnableNetworkProtection Enabled
-
-```
+   ```powershell
+   Set-MpPreference -EnableNetworkProtection Enabled
+   ```
 
 2. Using the browser of your choice (not Microsoft Edge*), navigate to the [Network Protection website test](https://smartscreentestratings2.net/). Microsoft Edge has other security measures in place to protect from this vulnerability (SmartScreen).
 
