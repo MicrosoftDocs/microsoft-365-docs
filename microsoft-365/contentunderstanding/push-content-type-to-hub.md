@@ -7,7 +7,7 @@ ms.reviewer: shrganguly
 manager: serdars
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
