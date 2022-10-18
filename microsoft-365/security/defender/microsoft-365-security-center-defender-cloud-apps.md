@@ -41,17 +41,21 @@ Learn more about the benefits: [Overview of Microsoft 365 Defender](microsoft-36
 
 ## Quick reference
 
-The image and the table below lists the changes in navigation between Microsoft Defender for Cloud Apps and Microsoft 365 Defender.
+The images and the tables below list the changes in navigation between Microsoft Defender for Cloud Apps and Microsoft 365 Defender.
 
 > [!NOTE]
-> Some pages have not yet been migrated and should be accessed from the Defender for Cloud Apps portal.
+>
+> - Some features have not yet been migrated and will be accessed from the Defender for Cloud Apps portal.
+> - The new experience is currently available for full Microsoft Defender for Cloud Apps licenses only.
+> - New customers need to first sign in to the Microsoft Defender for Cloud Apps portal.
+
+### Discover
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/defender-cloud-apps-m365-defender.png" alt-text="The new locations in the Microsoft 365 Defender portal" lightbox="../../media/defender-cloud-apps-m365-defender.png":::
+> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-discover.png" alt-text="The new locations for Cloud Discovery features in the Microsoft 365 Defender portal" lightbox="../../media/defender-cloud-apps-m365-defender-discover.png":::
 
 | Defender for Cloud Apps | Microsoft 365 Defender |
 |---------|---------|
-| **Discover** |  |
 | Cloud Discover dashboard | Cloud apps -> Cloud discovery |
 | Discovered Apps | tab on Cloud Discovery page |
 | Discovered resources | tab on Cloud Discovery page |
@@ -60,7 +64,14 @@ The image and the table below lists the changes in navigation between Microsoft 
 | Devices | tab on Cloud Discovery page |
 | Cloud app catalog |  Cloud apps -> Cloud app catalog |
 | Create Cloud Discovery snapshot report | On the Cloud Discovery page, under Actions |
-| **Investigate** |  |
+
+### Investigate
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-investigate.png" alt-text="The new locations for Investigation features in the Microsoft 365 Defender portal" lightbox="../../media/defender-cloud-apps-m365-defender-investigate.png":::
+
+| Defender for Cloud Apps | Microsoft 365 Defender |
+|---------|---------|
 | Activity log | Cloud apps -> Activity log |
 | Files | Cloud apps -> Files |
 | Users and accounts | Assets -> Identities |
@@ -68,10 +79,24 @@ The image and the table below lists the changes in navigation between Microsoft 
 | Identity security posture | [Microsoft Defender for Identity's identity security posture assessments](/defender-for-identity/isp-overview) |
 | OAuth apps | Cloud apps -> OAuth apps |
 | Connected apps | Settings -> Cloud apps -> Connected apps |
-| **Control** |  |
+
+### Control
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-control.png" alt-text="The new locations for Control features in the Microsoft 365 Defender portal" lightbox="../../media/defender-cloud-apps-m365-defender-control.png":::
+
+| Defender for Cloud Apps | Microsoft 365 Defender |
+|---------|---------|
 | Policies | Cloud apps -> Policy management |
 | Templates | Cloud apps -> Policy templates |
-| **Settings** |  |
+
+### Settings
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-settings.png" alt-text="The new locations for Settings in the Microsoft 365 Defender portal" lightbox="../../media/defender-cloud-apps-m365-defender-settings.png":::
+
+| Defender for Cloud Apps | Microsoft 365 Defender |
+|---------|---------|
 | Settings | Settings -> Cloud apps |
 | System  settings | Settings -> Cloud apps |
 | Settings/Governance log | Cloud apps -> Governance log |
@@ -107,6 +132,10 @@ Global search in Microsoft 365 Defender (using the search bar at the top of the 
 ### Assets and identities
 
 As part of the creation of a dedicated **Assets** section that spans the entire Microsoft 365 Defender experience, the **Users and Accounts** section of Defender for Cloud Apps is rebranded as the **Identities** section. No changes to functionality are expected.
+
+## Related videos
+
+- [Protecting cloud apps in Microsoft 365 Defender](https://www.microsoft.com/videoplayer/embed/RE59yVU)
 
 ## Related information
 
