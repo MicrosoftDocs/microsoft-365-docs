@@ -9,6 +9,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
+ms.date: 10/17/2022
 audience: ITPro
 ms.topic: article
 author: denisebmsft
@@ -62,11 +63,11 @@ If you're an organization using [Microsoft Defender for Endpoint](/microsoft-365
 
 ## How does configuring tamper protection in Intune affect how I manage Microsoft Defender Antivirus with Group Policy?
 
-If you're currently using Intune to configure and manage 'tamper protection', you should continue using Intune. 
+If you're currently using Intune to configure and manage tamper protection, you should continue using Intune. 
 
-Group policy doesn't apply to tamper protection. Changes made to Microsoft Defender Antivirus settings using Group Policy are ignored when tamper protection is turned on, or when tamper protection is configured with Intune.
+When tamper protection is turned on and you use Group Policy to make changes to Microsoft Defender Antivirus settings, the settings that are tamper protected will be ignored. 
 
-## If we use Microsoft Intune to configure 'tamper protection', does it apply only to the entire organization?
+## If we use Microsoft Intune to configure tamper protection, does it apply only to the entire organization?
 
 You have flexibility in configuring tamper protection with Intune. You can target your entire organization, or select specific devices and user groups.
 
@@ -83,7 +84,7 @@ Currently, configuring tamper protection in Intune is only available for custome
 
 ## I'm an enterprise customer. Can local admins change tamper protection on their devices?
 
-No. Local admins can't change or modify 'tamper protection' settings.
+No. Local admins can't change or modify tamper protection settings.
 
 ## What happens if my device is onboarded with Microsoft Defender for Endpoint and then goes into an off-boarded state?
 

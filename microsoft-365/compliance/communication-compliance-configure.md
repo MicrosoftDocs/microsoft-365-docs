@@ -275,7 +275,7 @@ For more information about configuring Yammer in Native Mode, see:
 
     - Choose if you'd like to include sensitive information types. This step is where you can select default and custom sensitive info types. Pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard. You can create these items before running the wizard if needed. You can also create new sensitive information types from within the communication compliance policy wizard.
 
-    - Choose if you'd like to enable classifiers. Classifiers can detect inappropriate language and images sent or received in the body of email messages or other types of text. You can choose the following built-in classifiers: *Threat*, *Profanity*, *Targeted harassment*, *Adult images*, *Racy images*, and *Gory images*.
+    - Choose if you'd like to enable classifiers. Classifiers can detect potentially inappropriate language and images sent or received in the body of email messages or other types of text. You can choose [built-in classifiers specific to communication compliance policies](/microsoft-365/compliance/communication-compliance-policies#classifiers).
 
     - Enable [optical character recognition (OCR)](/microsoft-365/compliance/communication-compliance-policies#optical-character-recognition-ocr) to scan embedded or attached images in messages for printed or handwritten text that match policy conditions. For custom policies, one or more conditional settings associated with text, keywords, classifiers, or sensitive info types must be configured in the policy to enable the selection of optical character recognition scanning.
 
