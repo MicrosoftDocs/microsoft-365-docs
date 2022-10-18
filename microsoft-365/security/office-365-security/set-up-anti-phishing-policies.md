@@ -243,7 +243,7 @@ The following impersonation settings are only available in anti-phishing policie
 
     > This sender might be impersonating a domain that's associated with your organization.
 
-  - **Show tip for unusual characters**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in an **Enable users to protect** sender or an **Enable domains to protect** sender domain.  Available only if **Enable users to protect** _or_ **Enable domains to protect** is turned on and configured.
+  - **Show tip for unusual characters**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in an **Enable users to protect** sender or an **Enable domains to protect** sender domain. Available only if **Enable users to protect** _or_ **Enable domains to protect** is turned on and configured.
 
 - **Enable mailbox intelligence**: Enables or disables artificial intelligence (AI) that determines user email patterns with their frequent contacts. This setting helps the AI distinguish between messages from legitimate and impersonated senders.
 
