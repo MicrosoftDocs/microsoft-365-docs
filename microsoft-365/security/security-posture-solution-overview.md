@@ -45,14 +45,11 @@ This illustration provides a representation of the high level flow you can follo
 
 :::image type="content" source="../media/content-understanding/security-posture-overview.png" alt-text="Stages in the improve your security posture flow" lightbox="../media/content-understanding/security-posture-overview.png":::
 
-The 4 phases are described in the following table with the steps for each phase detailed in the corresponding section later in this article.
-
-|Phase|Description|
-|---|---|
-|Configure capabilities|Configure the capabilities available to you, for example, configure the device discovery capability to help you find unmanaged devices connected your network and test attack surface reduction rules to see how they might impact your environment.
-For more information, see [Configure capabilities](#configure-capabilities)|
+The 4 phases are described in detail in next section.
 
 ## Configure capabilities
+
+Configure the capabilities available to you, for example, configure the device discovery capability to help you find unmanaged devices connected your network and test attack surface reduction rules to see how they might impact your environment.
 
 ### 1. Configure device discovery
 
