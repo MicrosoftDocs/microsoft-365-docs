@@ -66,7 +66,7 @@ Note that installation and uninstallation will not necessarily fail if a proxy i
 
 ## Post installation configuration
 
-After installation, configure Defender for Endpoint with static proxy in one of the following methods:
+After installation, configure Defender for Endpoint with static proxy using one of the following methods:
 
 ```bash
 mdatp config proxy set --value http://address:port
