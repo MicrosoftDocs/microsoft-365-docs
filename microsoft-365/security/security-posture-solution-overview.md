@@ -38,14 +38,20 @@ This solution guide provides specific and actionable steps to strengthen your se
 - You have successfully deployed Microsoft Defender for Endpoint
 - You're beyond the initial stage of onboarding devices and have a management tool in place to support future device onboarding. For more information on Onboarding devices, see [Onboarding and configuration tool options](onboard-configure.md#onboarding-and-configuration-tool-options)
 
-
 ## Overview of the solution
 
 This illustration provides a representation of the high level flow you can follow to improve your security posture.
 
 :::image type="content" source="../media/content-understanding/security-posture-overview.png" alt-text="Stages in the improve your security posture flow" lightbox="../media/content-understanding/security-posture-overview.png":::
 
-The 4 phases are described in detail in next section.
+The 4 phases are described in the following table with the steps for each phase detailed in the corresponding section later in this article.
+
+|Phase|Steps|
+|---|---|
+|[Configure capabilities](#1-configure-device-discovery)|<ol><li>[Configure ASR in audit mode](#2-configure-asr-in-audit-mode)</li><li> [Configure Microsoft Defender for Identity](#3-configure-microsoft-defender-for-identity)</li></ol>|
+|[Assess and protect your assets](#assess-and-protect)|<ol><li>Assess your devices</li><li> Assign device value</li><li> Onboard newly discovered endpoints</li></ol>|
+|[Improve your security posture](#investigate-and-improve)|<ol><li> Review Secure Score</li></ol>|
+|[Maintain a secure posture ](#track-and-maintain)|<ol><li> Enable email notifications for new vulnerabilities</li><li> Hunt for threats with advanced hunting </li><li>Understand your exposure to zero days threats]</li></ol>|
 
 ## Configure capabilities
 
