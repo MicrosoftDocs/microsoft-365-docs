@@ -48,7 +48,7 @@ conceptualContent:
           - url: /microsoft-365/security/defender/
             itemType: overview
             text: Microsoft 365 Defender
-          - url: /microsoft-365/security/microsoft-defender-endpoint
+          - url: /microsoft-365/security/defender-endpoint
             itemType: overview
             text: Microsoft Defender for Endpoint
           - url: /microsoft-365/security/office-365-security/defender-for-office-365
