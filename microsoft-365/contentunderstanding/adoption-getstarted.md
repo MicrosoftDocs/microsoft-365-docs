@@ -6,7 +6,7 @@ manager: pamgreen
 ms.date: 
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection: 
 - enabler-strategic
 - m365initiative-syntex
