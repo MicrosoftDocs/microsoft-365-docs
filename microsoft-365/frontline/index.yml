@@ -32,10 +32,10 @@ highlightedContent:
     - title: Choose your scenarios for Microsoft 365 for frontline workers
       itemType: get-started
       url: flw-choose-scenarios.md
-#    # Card
-#    - title: Try Microsoft 365 for frontline workers (start a free trial)
-#      itemType: whats-new
-#      url: flw-trial.md
+    # Card
+    - title: Technical planning guide for deploying frontline solutions
+      itemType: whats-new
+      url: flw-technical-planning-guide-deployment.md
 
 # productDirectory section (optional)
 productDirectory:

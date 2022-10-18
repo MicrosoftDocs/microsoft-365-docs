@@ -80,7 +80,7 @@ This action takes effect on devices with Windows 10, version 1703 or later, and 
 
 1. Select the file you want to stop and quarantine. You can select a file from any of the following views or use the Search box:
 
-   - **Alerts** - click the corresponding links from the Description or Details in the Alert Story timeline
+   - **Alerts** - select the corresponding links from the Description or Details in the Alert Story timeline
    - **Search box** - select **File** from the drop-down menu and enter the file name
 
    > [!NOTE]
@@ -212,9 +212,9 @@ You can also edit indicators from  the **Settings** page, under **Rules** \> **I
 
 ## Consult a threat expert
 
-Consult a Microsoft threat expert for more insights on a potentially compromised device, or already compromised devices. Microsoft Defender Experts are engaged directly from within the Microsoft 365 Defender portal for timely and accurate response. Experts provide insights on a potentially compromised device and help you understand complex threats and targeted attack notifications. They can also provide information about the alerts or a threat intelligence context that you see on your portal dashboard.
+Select Ask Defender Experts to get more insights from Microsoft experts on a potentially compromised device, or already compromised devices. Microsoft Defender Experts are engaged directly from within the Microsoft 365 Defender portal for timely and accurate response. Experts provide insights on a potentially compromised device and help you understand complex threats and targeted attack notifications. They can also provide information about the alerts or a threat intelligence context that you see on your portal dashboard.
 
-See [Ask Defender Experts](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#ask-defender-experts-about-suspicious-cybersecurity-activities-in-your-organization) for details.
+See [Ask Defender Experts](experts-on-demand.md) for details.
 
 ## Check activity details in Action center
 
