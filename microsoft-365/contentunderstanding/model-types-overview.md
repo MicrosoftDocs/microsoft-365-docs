@@ -65,7 +65,7 @@ Use the freeform document processing model to automatically extract information 
 Freeform document processing models use Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) to create and train models within Syntex. 
 
 > [!NOTE]
-> The freeform document processing model is not yet available in some regions. For more information, see [Feature availability by region](https://learn.microsoft.com/en-us/ai-builder/availability-region).
+> The freeform document processing model is not yet available in some regions. For more information, see [Feature availability by region](/ai-builder/availability-region).
 
 Because your organization receives letters and documents in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text and other information from these documents, this model automates this process.
 
