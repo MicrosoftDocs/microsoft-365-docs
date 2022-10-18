@@ -49,7 +49,7 @@ This article is updated frequently to let you know what's new in the latest rele
 	
 **Known issues**
 
-- When upgrading from mdatp version 101.75.43 or 101.78.13, you might encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.80.97. This should prevent the hang from occurring.
+- When upgrading from mdatp version 101.75.43 or 101.78.13, you might encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.80.97. This should prevent the issue from occurring.
 
 ```
 sudo mdatp config real-time-protection --value=disabled
