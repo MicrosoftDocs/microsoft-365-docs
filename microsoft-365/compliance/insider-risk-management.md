@@ -101,7 +101,7 @@ You can select from the following policy templates to quickly get started with i
 - [Patient data misuse (preview)](insider-risk-management-policies.md#patient-data-misuse-preview)
 - [Security policy violations by departing users (preview)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Security policy violations by priority users (preview)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
-- [Security policy violations by risky users (preview)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+- [Security policy violations by risky users (preview)](insider-risk-management-policies.md#security-policy-violations-by-risky-users-preview)
 
 ![Insider risk management policy dashboard.](../media/insider-risk-policy-dashboard.png)
 
@@ -191,7 +191,7 @@ For organizations in the healthcare industry, recent studies have found a very h
 
 - [Patient data misuse (preview)](insider-risk-management-policies.md#patient-data-misuse-preview)
 
-### Actions and behaviors by disgruntled users (preview)
+### Actions and behaviors by risky users (preview)
 
 Employment stressor events can impact user behavior in several ways that relate to insider risks. These stressors may be a poor performance review, a position demotion, or the user being placement on a performance review plan. Stressors may also result in potentially inappropriate behavior such as users sending potentially threatening, harassing, or discriminatory language in email and other messages. Though most users don't respond maliciously to these events, the stress of these actions may result in some users to behave in ways they may not normally consider during normal circumstances. To help identify these types of risky activities, the following insider risk management policy templates can use the HR connector and/or integration with a [dedicated communication compliance policy](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) to bring users into scope for insider risk management policies and start scoring risk indicators relating to behaviors that may occur near employment stressor events:
 
