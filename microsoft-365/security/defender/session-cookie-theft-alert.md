@@ -27,7 +27,7 @@ ms.reviewer: evaldm, isco
 
 # Alert grading for Session Cookie theft alert
 
-`("Stolen session cookie was used”, “Authentication request from AiTM-related phishing page”)`
+**("Stolen session cookie was used”, “Authentication request from AiTM-related phishing page”)**
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
