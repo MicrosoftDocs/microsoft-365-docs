@@ -76,7 +76,7 @@ The results of using this playbook are:
     - Examine device events for Url events that match click events `[DeviceEvents on AccountName|AccountUpn]` for Office365 emails. 
         - Matching the events for click sources (for example, different IP addresses for the same Url) could be an indication of malicious behavior. 
 
-## Advanced Hunting Queries 
+## Advanced hunting queries 
 
 [Advanced hunting](advanced-hunting-overview.md) is a query-based threat hunting tool that lets you inspect events in your network and locate threat indicators. 
 Use these queries to gather more information related to the alert and determine whether the activity is suspicious.
