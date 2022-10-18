@@ -177,7 +177,7 @@ To learn more, see [Microsoft Bookings](/microsoft-365/bookings/bookings-overvie
 ## Get insight into virtual appointments usage
 
 > [!NOTE]
-> Update and add take-back and Premium messaging<br>This feature will soon require a Team Premium license. [Learn more about Teams Premium]().
+> Find out which reports to include here, add take-back/Premium messaging, as needed.<br>This feature will soon require a Team Premium license. [Learn more about Teams Premium]().
 
 The [Virtual Appointments usage report](virtual-visits-usage-report.md) in the Microsoft Teams admin center gives admins an overview of Teams virtual appointment activity in your organization. The report shows detailed analytics for virtual appointments including Bookings appointments.
 
