@@ -13,14 +13,13 @@ search.appverid:
   - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
   - seo-marvel-apr2020
-  - admindeeplinkDEFENDER
 description: Learn to integrate Azure PIM in order to grant just-in-time, time limited access to users to do elevated privilege tasks in Microsoft Defender for Office 365, lowering risk to your data.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 <!--A-->
 # Privileged Identity Management (PIM) and why to use it with Microsoft Defender for Office 365
@@ -34,26 +33,26 @@ Privileged Identity Management (PIM) is an Azure feature that, once set up, give
 
 By setting up PIM to work with Defender for Office 365, admins create a process for a user to request access to take the actions they need. The user must *justify* the need for the elevation of their privileges.
 
-In this example we will configure "Alex", a member of our security team who will have zero standing access within Office 365, but can elevate to both a role required for normal day to day operations, such as [Threat Hunting](threat-hunting-in-threat-explorer.md) and then also to a higher level of privilege when less frequent but sensitive operations, such as [remediating malicious delivered email](remediate-malicious-email-delivered-office-365.md) is required.
+In this example we will configure "Alex", a member of our security team who will have zero-standing access within Office 365, but can elevate to both a role required for normal day-to-day operations, such as [Threat Hunting](threat-hunting-in-threat-explorer.md) and then also to a higher level of privilege when less frequent but sensitive operations, such as [remediating malicious delivered email](remediate-malicious-email-delivered-office-365.md) is required.
 
 > [!NOTE]
-> This will walk you through the steps required to setup PIM for a Security Analyst who requires the ability to purge emails using Threat Explorer in Microsoft Defender for Office 365, but the same steps can be used for other RBAC roles within the Security, and Compliance portal. For example this process could be used for a information worker who requires day to day access in eDiscovery to perform searches and case work, but only occasionally needs the elevated right to export data from the tenant.
+> This will walk you through the steps required to setup PIM for a Security Analyst who requires the ability to purge emails using Threat Explorer in Microsoft Defender for Office 365, but the same steps can be used for other RBAC roles within the Security, and Compliance portal. For example this process could be used for a information worker who requires day-to-day access in eDiscovery to perform searches and case work, but only occasionally needs the elevated right to export data from the tenant.
 
 ***Step 1***. In the Azure PIM console for your subscription, add the user (Alex) to the Azure Security Reader role and configure the security settings related to activation.
 
 1. Sign into the [Azure AD Admin Center](https://aad.portal.azure.com/) and select  **Azure Active Directory** > **Roles and administrators**.
 2. Select **Security Reader** in the list of roles and then **Settings** > **Edit**
 3. Set the '**Activation maximum duration (hours)**' to a normal working day and 'On activation' to require **Azure MFA**.
-4. As this is Alex's normal privilege level for day to day operations, we will Uncheck **Require justification on activation**' > **Update**.
+4. As this is Alex's normal privilege level for day-to-day operations, we will Uncheck **Require justification on activation**' > **Update**.
 5. Select **Add Assignments** > **No member selected** > select or type the name to search for the correct member.
-6. Click the **Select** button to choose the member you need to add for PIM privileges > click **Next** > make no changes on the Add Assignment page (both assignment type *Eligible* and duration *Permenantly Eligible* will be defaults ) and **Assign**.
+6. Click the **Select** button to choose the member you need to add for PIM privileges > click **Next** > make no changes on the Add Assignment page (both assignment type *Eligible* and duration *Permanently Eligible* will be defaults ) and **Assign**.
 
 The name of your user (here 'Alex') will appear under Eligible assignments on the next page, this means they are able to PIM into the role with the settings configured earlier.
 
 > [!NOTE]
 > For a quick review of Privileged Identity Management see [this video](https://www.youtube.com/watch?v=VQMAg0sa_lE).
 
-:::image type="content" source="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png" alt-text="Be sure you scan the settings for the Security Reader role in Privileged Access Management. Here you'll see the PIM activation's max duration is 8 hours.":::
+:::image type="content" source="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png" alt-text="The Role setting details - Security Reader page" lightbox="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png":::
 
 ***Step 2***. Create the required second (elevated) permission group for additional tasks and assign eligibility.
 
@@ -61,37 +60,40 @@ Using [Privileged Access groups](/azure/active-directory/privileged-identity-man
 
 ### Create a role group requiring the permissions we need
 
-In the Security Portal, create a custom role group that contains the permissions that we want.
+In the Microsoft 365 Defender portal, create a custom role group that contains the permissions that we want.
 
-1. Browse to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> > **Permissions & Roles** > select **Roles** under Email and Collaboration > **Create**.
-2. Name your group to reflect its purpose such as 'Search and Purge PIM'.
-3. Don't add members, simply save the group and move on to the next part!
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Permissions & Roles**, and then select **Roles** under **Email and Collaboration**. To go directly to the **Permissions** page, use <https://security.microsoft.com/emailandcollabpermissions>.
+2. On the **Permissions** page, click ![Create icon.](../../media/m365-cc-sc-create-icon.png) **Create**.
+3. Name your group to reflect its purpose such as 'Search and Purge PIM'.
+4. Don't add members, simply save the group and move on to the next part!
 
 ### Create the security group in Azure AD for elevated permissions
 
 1. Browse back to the [Azure AD Admin Center](https://aad.portal.azure.com/) and navigate to **Azure AD** > **Groups** > **New Group**.
-2. Name your AAD group to reflect its purpose, **no owners or members are required** right now.
+2. Name your Azure AD group to reflect its purpose, **no owners or members are required** right now.
 3. Turn **Azure AD roles can be assigned to the group** to **Yes**.
 4. Don't add any roles, members or owners, create the group.
 5. Go back into the group you've just created, and select **Privileged Access** > **Enable Privileged Access**.
-6. Within the group select **Eligible assignments** > **Add assignments** > Add the user who needs Search & Purge as a role of **Member**.
+6. Within the group, select **Eligible assignments** > **Add assignments** > Add the user who needs Search & Purge as a role of **Member**.
 7. Configure the **Settings** within the group's Privileged Access pane. Choose to **Edit** the settings for the role of **Member**.
 8. Change the activation time to suit your organization. In this example require *Azure MFA*, *justification*, and *ticket information* before selecting **Update**.
 
-### Nest the newly created security group into the role group.
+### Nest the newly created security group into the role group
 
-1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the following:
+1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the following command:
 
-    `Add-RoleGroupMember "<<Role Group Name>>" -Member "<<Azure Security Group>>"`
+   ```powershell
+   Add-RoleGroupMember "<<Role Group Name>>" -Member "<<Azure Security Group>>"`
+   ```
 
 ## Test your configuration of PIM with Defender for Office 365
 
-1. Login with the test user (Alex), who will should have no administrative access within the [Microsoft 365 Defender portal](/microsoft-365/security/defender/overview-security-center) at this point.
-2. Navigate to PIM, where the user can activate their day to day security reader role.
+1. Login with the test user (Alex), who should have no administrative access within the [Microsoft 365 Defender portal](/microsoft-365/security/defender/overview-security-center) at this point.
+2. Navigate to PIM, where the user can activate their day-to-day security reader role.
 3. If you try to purge an email using Threat Explorer, you get an error stating you need additional permissions.
 4. PIM a second time into the more elevated role, after a short delay you should now be able to purge emails without issue.
 
-   :::image type="content" source="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG" alt-text="If the user we added (Alex) through the Security Reader PIM role tries to delete a suspicious email he'll get a message saying 'You need the Search and Purge role to take action on this email. Contact your administrator to get the role assignment or add the email to an incident.":::
+   :::image type="content" source="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG" alt-text="The Actions pane under the Email tab" lightbox="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG":::
 
 Permanent assignment of administrative roles and permissions such as Search and Purge Role doesn't hold with the Zero Trust security initiative, but as you can see, PIM can be used to grant just-in-time access to the toolset required.
 

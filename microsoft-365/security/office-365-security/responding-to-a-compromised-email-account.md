@@ -9,24 +9,22 @@ audience: ITPro
 ms.topic: how-to
 ms.collection: 
   - o365_security_incident_response
-  - M365-security-compliance
+  - m365-security
   - m365solution-smb
+  - highpri
 ms.custom: 
   - TopSMBIssues
   - seo-marvel-apr2020
-  - admindeeplinkMAC
-  - admindeeplinkDEFENDER
-  - admindeeplinkEXCHANGE
 ms.localizationpriority: high
 search.appverid: 
   - MET150
 description: Learn how to recognize and respond to a compromised email account using tools available in Microsoft 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 # Responding to a Compromised Email Account
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -56,11 +54,9 @@ Users might notice and report unusual activity in their Microsoft 365 mailboxes.
 - Mail forwarding was recently added.
 - An unusual signature was recently added, such as a fake banking signature or a prescription drug signature.
 
-If a user reports any of the above symptoms, you should perform further investigation. The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and the Azure portal offer tools to help you investigate the activity of a user account that you suspect may be compromised.
+If a user reports any of the above symptoms, you should perform further investigation. The Microsoft 365 Defender portal and the Azure portal offer tools to help you investigate the activity of a user account that you suspect may be compromised.
 
-- **Unified audit logs in the Microsoft 365 Defender portal**: Review all the activities for the suspected account by filtering the results for the date range spanning from immediately before the suspicious activity occurred to the current date. Do not filter on the activities during the search.
-
-- **Admin Audit logs in the EAC**: In Exchange Online, you can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC) </a> to search for and view entries in the administrator audit log. The administrator audit log records specific actions, based on Exchange Online PowerShell cmdlets, performed by administrators, and users who have been assigned administrative privileges. Entries in the administrator audit log provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected.
+- **Unified audit logs in the Microsoft 365 Defender portal**: Review all the activities for the suspected account by filtering the results for the date range spanning from immediately before the suspicious activity occurred to the current date. Do not filter on the activities during the search. For more information, see [Search the audit log in the compliance center](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 
 - **Azure AD Sign-in logs and other risk reports in the Azure AD portal**: Examine the values in these columns:
   - Review IP address
@@ -96,9 +92,9 @@ Follow the procedures in [Reset a business password for someone](../../admin/add
 
 ### Step 2 Remove suspicious email forwarding addresses
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, go to **Users** \> **Active users**. To go directly to the **Active users** page, use <https://admin.microsoft.com/Adminportal/Home#/users>.
 
-2. Go to **Users** \> **Active users**. Find the user account in question, and select the user (row) without selecting the checkbox.
+2. On the **Active users** page, find the user account in question, and select the user (row) without selecting the checkbox.
 
 3. In the details flyout that appears, select the **Mail** tab.
 
@@ -125,16 +121,16 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 > [!IMPORTANT]
 > You can block the suspected compromised account from signing-in until you believe it is safe to re-enable access.
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and go to **Users** \> **Active users**.
+1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, go to **Users** \> **Active users**. To go directly to the **Active users** page, use <https://admin.microsoft.com/Adminportal/Home#/users>.
 
-2. Find and select the user account, click ![More icon.](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Edit sign-in status**.
+2. On the **Active users** page, find and select the user account, click ![More icon.](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Edit sign-in status**.
 
 3. On the **Block sign-in** pane that appears, select **Block this user from signing in**, and then click **Save changes**.
 
-4. Open the Exchange admin center (EAC), and go to **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">**Mailboxes**</a>.
+4. In the Exchange admin center (EAC) at <https://admin.exchange.microsoft.com>, go to **Recipients** \> **Mailboxes**. To go directly to the **Mailboxes** page, use <https://admin.exchange.microsoft.com/#/mailboxes>.
 
-5. Find and select the user. In the mailbox details flyout that opens, do the following steps:
-   - In the **Email apps** section, block all of the available settings by moving the toggle to the right ![Disable.](../../media/scc-toggle-on.png):
+5. On the **Mailboxes** page, find and select the user. In the mailbox details flyout that opens, do the following steps:
+   - In the **Email apps** section, select **Manage email apps settings**. In the **Manage settings for email apps** flyout that appears, block all of the available settings by moving the toggle to the right ![Disable.](../../media/scc-toggle-on.png):
      - **Outlook on the web**
      - **Outlook desktop (MAPI)**
      - **Exchange Web Services**
@@ -149,13 +145,13 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 > [!NOTE]
 > Administrative role group membership can be restored after the account has been secured.
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> with a global administrator account and do the following steps:
-   1. Go to **Users** \> **Active users**.
-   2. Find and select the user account, click ![More icon.](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Manage roles**.
+1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, do the following steps:
+   1. Go to **Users** \> **Active users**. To go directly to the **Active users** page, use <https://admin.microsoft.com/Adminportal/Home#/users>.
+   2. On the **Active users** page, find and select the user account, click ![More icon.](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Manage roles**.
    3. Remove any administrative roles that are assigned to the account. When you're finished, click **Save changes**.
 
-2. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and do the following steps:
-   1. Go to **Permissions & roles** \> **Email & collaboration roles** \> **Roles**.
+2. in the Microsoft 365 Defender portal at <https://security.microsoft.com>, do the following steps:
+   1. Go to **Permissions & roles** \> **Email & collaboration roles** \> **Roles**. To go directly to the **Permissions** page, use <https://security.microsoft.com/emailandcollabpermissions>.
    2. On the **Permissions** page, select each role group in the list and look for the user account in the **Members** section of the details flyout that appears. If the role group contains the user account, do the following steps:
       1. In the **Members** section, click **Edit**.
       2. On the **Editing Choose members** flyout that appears, click **Edit**.
@@ -164,8 +160,8 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 
          When you're finished, click **Done**, **Save**, and then **Close**.
 
-3. Open the EAC and do the following steps:
-   1. Select **Roles** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183234" target="_blank">**Admin roles**</a>.
+3. In the Exchange admin center at <https://admin.exchange.microsoft.com/>, do the following steps:
+   1. Select **Roles** \> **Admin roles**. To go directly to the **Admin roles** page, use <https://admin.exchange.microsoft.com/#/adminRoles>.
    2. On the **Admin roles** page, manually select each role group, and in the details pane, select the **Assigned** tab to verify the user accounts. If the role group contains the user account, do the following steps:
       1. Select the user account.
       2. Click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png).
@@ -179,14 +175,6 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 2. Any other service that used this Exchange account as its alternative email account may have been compromised. First, do these steps for your Microsoft 365 subscription, and then do these steps for your other accounts.
 
 3. Make sure that your contact information, such as telephone numbers and addresses, is correct.
-
-## Secure Microsoft 365 like a cybersecurity pro
-
-Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.  Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Microsoft 365 tenant.
-
-- Tasks to accomplish in the first 30 days. These have immediate affect and are low-impact to your users.
-- Tasks to accomplish in 90 days. These take a bit more time to plan and implement but greatly improve your security posture.
-- Beyond 90 days. These enhancements build in your first 90 days work.
 
 ## See also
 

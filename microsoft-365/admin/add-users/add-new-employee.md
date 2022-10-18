@@ -2,14 +2,15 @@
 title: "Add a new employee to Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -22,7 +23,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
-description: "Add new employees to Microsoft 365 for business for email, Skype, and Office apps."
+description: "Admins can learn how to add new employees to Microsoft 365 for business and give them access to email, Skype, and Office apps."
 ---
 
 # Add a new employee to Microsoft 365

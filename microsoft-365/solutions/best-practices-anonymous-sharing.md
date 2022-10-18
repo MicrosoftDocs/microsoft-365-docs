@@ -5,8 +5,9 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection: 
+- highpri
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection
@@ -14,6 +15,7 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
@@ -37,25 +39,29 @@ Once an *Anyone* link expires, it can no longer be used to access content.
 
 To set an expiration date for Anyone links across the organization
 
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. In the left navigation, expand **Policies**, and then click **Sharing**.
-3. Under **Choose expiration and permissions options for Anyone links**, select the **These links must expire within this many days** check box.</br>
+1. Open the SharePoint admin center, expand **Policies**, and then select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
+1. Under **Choose expiration and permissions options for Anyone links**, select the **These links must expire within this many days** check box.</br>
    ![Screenshot of SharePoint organization-level Anyone link expiration settings.](../media/sharepoint-organization-anyone-link-expiration.png)
-4. Type a number of days in the box, and then click **Save**.
+1. Type a number of days in the box, and then click **Save**.
+
+If you change the expiration time, existing links will keep their current expiration time if the new setting is longer, or be updated to the new setting if the new setting is shorter.
 
 To set an expiration date for Anyone links on a specific site
 
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. In the left navigation, expand **Sites**, and then click **Active sites**.
-3. Select the site you want to change, and then click **Sharing**.
-4. Under **Advanced settings for Anyone links**, under **Expiration of Anyone links**, clear the **Same as organization-level setting** check box.</br>
+1. Open the SharePoint admin center, expand **Sites**, and then select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
+1. Select the site you want to change, and then select **Sharing**.
+1. Under **Advanced settings for Anyone links**, under **Expiration of Anyone links**, clear the **Same as organization-level setting** check box.</br>
    ![Screenshot of SharePoint site-level Anyone link expiration settings.](../media/sharepoint-organization-anyone-link-expiration-site.png)
-5. Select the **These links must expire within this many days** option, and type a number of days in the box.
-6. Click **Save**.
+1. Select the **These links must expire within this many days** option, and type a number of days in the box.
+1. Select **Save**.
 
 Note that once an *Anyone* link expires, the file or folder can be re-shared with a new *Anyone* link.
 
-You can set *Anyone* link expiration for a specific OneDrive by using [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite).
+You can set *Anyone* link expiration for a specific site by using [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite). 
+
+```powershell
+Set-SPOSite -Identity https://contoso.sharepoint.com/sites/marketing -OverrideTenantAnonymousLinkExpirationPolicy $true -AnonymousLinkExpirationInDays 15
+```
 
 ## Set link permissions
 
@@ -65,9 +71,8 @@ If you want to allow unauthenticated sharing, but are concerned about unauthenti
 
 To set permissions for Anyone links across the organization
 
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. In the left navigation, click **Sharing**.
-3. Under **Advanced settings for "Anyone" links**, select the file and folder permissions that you want to use.</br>
+1. Open the SharePoint admin center, and select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
+1. Under **Advanced settings for "Anyone" links**, select the file and folder permissions that you want to use.</br>
    ![Screenshot of SharePoint organization-level Anyone link permissions settings.](../media/sharepoint-organization-anyone-link-permissions.png)
 
 With *Anyone* links set to **View**, users can still share files and folders with guests and give them edit permissions by using *Specific people* links. These links require people outside your organization to authenticate as guests, and you can track and audit guest activity on files and folders shared with these links.
@@ -78,31 +83,32 @@ When *Anyone* sharing is enabled for your organization, the default sharing link
 
 You can mitigate this risk by changing the default link setting to a link that only works for people inside your organization. Users who want to share with unauthenticated people would then have to specifically select that option.
 
-To set the default file and folder sharing link for the organization
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. In the left navigation, click **Sharing**.
-3. Under **File and folder links**, select **Only people in your organization**.
+To set the default file and folder sharing link for the organization:
+
+1. Open the SharePoint admin center, and select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
+1. Under **File and folder links**, select **Only people in your organization**.
 
    ![Screenshot of SharePoint default link type setting.](../media/sharepoint-default-sharing-link-company-link.png)
 
-4. Click **Save**
+1. Select **Save**
 
-To set the default file and folder sharing link for a specific site
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. In the left navigation, expand **Sites**, and then click **Active sites**.
-3. Select the site you want to change, and then click **Sharing**.
-4. Under **Default sharing link type**,  clear the **Same as organization-level setting** check box.
+To set the default file and folder sharing link for a specific site:
+
+1. Open the SharePoint admin center, expand **Sites**, and then select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
+1. Select the site you want to change, and then select **Sharing**.
+1. Under **Default sharing link type**,  clear the **Same as organization-level setting** check box.
 
    ![Screenshot of SharePoint site-level default link type settings.](../media/sharepoint-organization-anyone-link-permissions-site.png)
 
-5. Select the **Only people in your organization** option and click **Save**.
+1. Select the **Only people in your organization** option, and then select **Save**.
 
 ## Prevent unauthenticated sharing of sensitive content
 
-You can use [data loss prevention (DLP)](../compliance/dlp-learn-about-dlp.md) to prevent unauthenticated sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label, retention label, or sensitive information in the file itself.
+You can use [Microsoft Purview Data Loss Prevention (DLP)](../compliance/dlp-learn-about-dlp.md) to prevent unauthenticated sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label, retention label, or sensitive information in the file itself.
 
-To create a DLP rule
-1. In the Microsoft 365 compliance admin center, go to the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention).
+To create a DLP rule:
+
+1. In the Microsoft Purview admin center, go to the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention).
 2. Click **Create policy**.
 3. Choose **Custom** and click **Next**.
 4. Type a name for the policy and click **Next**.
@@ -115,7 +121,7 @@ To create a DLP rule
    ![Screenshot of conditions options, sensitive info types, sensitivity labels, and retention labels.](../media/limit-accidental-exposure-dlp-conditions.png)
 
 10. Under **Actions** click **Add an action** and choose **Restrict access or encrypt the content in Microsoft 365 locations**.
-11. Select the **Restrict access or encrypt the content in Microsoft 365 locations** check box and then choose the **Only people who were given access to the content through the "Anyone withe the link" options** option.
+11. Select the **Restrict access or encrypt the content in Microsoft 365 locations** check box and then choose the **Only people who were given access to the content through the "Anyone with the link" options** option.
 
       ![Screenshot of DLP rule action options.](../media/limit-accidental-exposure-dlp-anyone-links.png)
 
@@ -125,26 +131,19 @@ To create a DLP rule
 
 ## Protect against malicious files
 
-When you allow anonymous users to upload files, you're at an increased risk of someone uploading a malicious file. In Microsoft 365, you can use the *Safe Attachments* feature in Defender for Office 365 to automatically scan uploaded files and quarantine files that are found to be unsafe.
+When you allow anonymous users to upload files, you're at an increased risk of someone uploading a malicious file. In organizations with Microsoft Defender for Office 365 Plan 1 or Plan 2 licenses (for example, in Microsoft 365 E5 or as an add-on), you can use the *Safe Attachments* feature to detonate uploaded files in a sandboxed virtual environment, and quarantine files that are found to be unsafe.
 
-To turn on safe attachments
-1. Open the [ATP Safe Attachments page](https://protection.office.com/safeattachmentv2) in the Security and Compliance admin center.
-2. Click **Global settings**.
-3. Turn on ATP for SharePoint, OneDrive, and Microsoft Teams.
+For instructions, see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md).
 
-   ![Screenshot of the safe attachments setting in the Security and Compliance center.](../media/safe-attachments-setting.png)
-
-4. Optionally turn on Safe Documents as well, and then click **Save**
-
-See [ATP for SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md) and [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md) for additional guidance.
+If you have Microsoft 365 A5 or E5 Security licenses, you can also turn on (and use) the *Safe Documents* feature. For more information, see [Safe Documents in Microsoft 365 A5 or E5 Security](../security/office-365-security/safe-docs.md).
 
 ## Add copyright information to your files
 
-If you use sensitivity labels in the Microsoft 365 Compliance admin center, you can configure your labels to add a watermark or a header or footer automatically to your organization's Office documents. In this way, you can make sure that shared files contain copyright or other ownership information.
+If you use sensitivity labels in the Microsoft Purview admin center, you can configure your labels to add a watermark or a header or footer automatically to your organization's Office documents. In this way, you can make sure that shared files contain copyright or other ownership information.
 
 To add a footer to a labeled file
 
-1. Open the [Microsoft 365 compliance admin center](https://compliance.microsoft.com).
+1. Open the [Microsoft Purview admin center](https://compliance.microsoft.com).
 2. In the left navigation, under **Solutions**, click **Information protection**.
 3. Click the label that you want to have add a footer, and then click **Edit label**.
 4. Click **Next** to reach the **Content marking** tab, and then turn **On** content marking.

@@ -3,7 +3,8 @@ title: Turn on Microsoft 365 Defender
 description: Learn how to enable Microsoft 365 Defender and start integrating your security incident and response.
 keywords: get started, enable Microsoft 365 Defender, Microsoft 365 Defender, M365, security, data location, required permissions, license eligibility, settings page
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,12 +15,15 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+    - m365-security
+    - m365solution-getstarted
+    - highpri
+    - tier1
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 
 # Turn on Microsoft 365 Defender
@@ -84,11 +88,11 @@ Once the service is provisioned, it adds:
 - [Advanced hunting](advanced-hunting-overview.md) capabilities
 - Threat analytics
 
-![Image of Microsoft 365 Defender portal navigation pane with Microsoft 365 Defender features.](../../media/overview-incident.png)
+:::image type="content" source="../../media/overview-incident.png" alt-text="The navigation pane in the Microsoft 365 Defender portal with Microsoft 365 Defender features" lightbox="../../media/overview-incident.png":::
 *Microsoft 365 Defender portal with incidents management and other capabilities*
 
 ### Getting Microsoft Defender for Identity data 
-To enable the integration with Microsoft Defender for Cloud Apps, you'll need to login to the Microsoft Defender for Cloud Apps at least once.
+To enable the integration with Microsoft Defender for Cloud Apps, you'll need to log in to the Microsoft Defender for Cloud Apps at least once.
 
 ## Get assistance
 

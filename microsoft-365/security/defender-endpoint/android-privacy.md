@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint on Android - Privacy information
 description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender for Endpoint on Android.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, android, privacy, diagnostic
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint on Android - Privacy information
@@ -45,9 +48,24 @@ Information about **malicious** Android application packages (APKs) on the devic
 - Storage location (file path) of the APK
 - Time of install, size of APK and permissions
 
+For Android Enterprise Fully managed devices - Information about Android application packages (APKs) installed on the device including
+
+- Name and package name of the app
+- Version number of the app
+- Vendor name
+
+For Android Enterprise with a work profile - Information about Android application packages (APKs) installed on the Work profile of the device including
+
+- Name and package name of the app
+- Version number of the app
+- Vendor name
+
+*Your organization can also choose to configure Defender for Endpoint to send information about all apps installed on the device. By default, this information is not sent to your organization.*
+
+
 ### Web page / Network information
 
-- Full URL of the website only when a malicious connection or web page is detected.
+- Full URL of the website only when a malicious connection or web page is detected and blocked.
 - Connection information
 - Protocol type (such as HTTP, HTTPS, etc.)
 

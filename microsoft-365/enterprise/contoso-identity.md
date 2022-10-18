@@ -4,12 +4,13 @@ author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- scotvorg 
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
@@ -76,7 +77,7 @@ Learn how Contoso uses its Microsoft Endpoint Configuration Manager infrastructu
 
 ## See also
 
-[Identity roadmap for Microsoft 365](identity-roadmap-microsoft-365.md)
+[Deploy identity for Microsoft 365](deploy-identity-solution-overview.md)
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 

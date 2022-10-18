@@ -7,9 +7,10 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -96,7 +97,7 @@ description: "Learn how to manage Office Scripts settings for users in your orga
 
 ## Next steps
 
-Because Office Scripts works with Power Automate, we recommend that you review your existing data loss prevention (DLP) policies to ensure your organization's data remains protected while users use Office Scripts. For more information, see [Data loss prevention (DLP) policies](/power-automate/prevent-data-loss).
+Because Office Scripts works with Power Automate, we recommend that you review your existing Microsoft Purview Data Loss Prevention (DLP) policies to ensure your organization's data remains protected while users use Office Scripts. For more information, see [Data loss prevention (DLP) policies](/power-automate/prevent-data-loss).
 
 ## Related content
 

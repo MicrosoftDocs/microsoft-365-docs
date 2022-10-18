@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 11/10/2021
 audience: ITPro
 ms.topic: conceptual
-ms.prod: skype-for-business-itpro
+ms.service: microsoft-365-enterprise
 ms.collection:
 - Ent_O365
 search.appverid:
@@ -36,7 +36,7 @@ That means there will be no further updates, patches, or fixes for the product (
 
 ## Plan ahead
 
-Check the dates that support ends on the [Product Lifecycle site](/lifecycle/products/lync-server-2013). Plan your upgrades or migrations with these dates in mind. Remember that your product *won't stop working* at the date listed. But because your installation will no longer be patched after that date, you'll want to plan a smooth transition to the next version of the product. The table below lists the options available to you.
+Check the dates that support ends on the [Product Lifecycle site](/lifecycle/products/microsoft-lync-server-2013). Plan your upgrades or migrations with these dates in mind. Remember that your product *won't stop working* at the date listed. But because your installation will no longer be patched after that date, you'll want to plan a smooth transition to the next version of the product. The table below lists the options available to you.
 
 |End of support product|Supported|Recommended|
 |---|---|---|
@@ -53,13 +53,13 @@ If you can't upgrade to Microsoft Teams, you can upgrade to Skype for Business S
 
 ### Upgrade to Microsoft Teams
 
-We have detailed guidance on upgrading to Microsoft Teams from your on-premises deployment. First, let's cover some key technical requirements. You will need to establish hybrid connectivity which will enable you to move your users to Teams. [Plan hybrid connectivity](/SkypeForBusiness/hybrid/plan-hybrid-connectivity) gives an overview of setting up hybrid. Even though the article is focused on Skype for Business, all the concepts apply to Lync Server 2013 as well. See the [server version requirements](/SkypeForBusiness/hybrid/plan-hybrid-connectivity#server-version-requirements) section for Lync Server 2013-specific details.
+We have detailed guidance on upgrading to Microsoft Teams from your on-premises deployment. First, let's cover some key technical requirements. You will need to establish hybrid connectivity, which will enable you to move your users to Teams. [Plan hybrid connectivity](/SkypeForBusiness/hybrid/plan-hybrid-connectivity) gives an overview of setting up a hybrid environment. Even though the article is focused on Skype for Business, all the concepts apply to Lync Server 2013 as well. See the [server version requirements](/SkypeForBusiness/hybrid/plan-hybrid-connectivity#server-version-requirements) section for Lync Server 2013-specific details.
 
-You also need to ensure that you Lync Server 2013 deployment fully up to date. We publish a [list of all the latest updates for Lync Server 2013](https://support.microsoft.com/topic/updates-for-lync-server-2013-a2a042ac-79f0-2665-7453-0a541fb25164) However, the following update is a pre-requisite for an upgrade to Microsoft Teams:
+You also need to ensure that your Lync Server 2013 deployment is fully up to date. We publish a [list of all the latest updates for Lync Server 2013](https://support.microsoft.com/topic/updates-for-lync-server-2013-a2a042ac-79f0-2665-7453-0a541fb25164) However, the following update is a pre-requisite for an upgrade to Microsoft Teams:
 
 - [September 2021 cumulative update 5.0.8308.1149 for Lync Server 2013, Core Components](https://support.microsoft.com/topic/september-2021-cumulative-update-5-0-8308-1149-for-lync-server-2013-core-components-6755903a-fc9a-44d2-b835-2a6d01f14043): This update replaces the Live ID authentication with OAuth authentication protocol for the `Move-CSUser` cmdlet, which is used for moving on-premises users to Microsoft Teams.
 
-Even though the user experience in Microsoft Teams is far richer and superior to Lync, it is also dramatically different. Therefore, you will also need to prepare your organization and your users to ensure a rapid adoption of Microsoft Teams. We have a wealth of information available on how to prepare your organization, plan your upgrade to Teams, and ensure a successful rollout. 
+Even though the user experience in Microsoft Teams is far richer and superior to Lync, it is also dramatically different. Therefore, you'll also need to prepare your organization and your users to ensure a rapid adoption of Microsoft Teams. We have a wealth of information available on how to prepare your organization, plan your upgrade to Teams, and ensure a successful rollout.
 
 **We recommend that you start at our [Teams upgrade portal](/MicrosoftTeams/upgrade-skype-teams)** where you can find technical information, training resources, links to Ignite sessions, available help resources, case studies and more.
 
@@ -67,7 +67,7 @@ Even though the user experience in Microsoft Teams is far richer and superior to
 
 ### Upgrade to Skype for Business Server
 
-The path to Skype for Business Server is going to be different depending on the version you choose to upgrade to. Skype for Business Server 2015 supports an in-place upgrade from Lync Server 2013. On the other hand, in order to upgrade to Skype for Business Server 2019, you first will need to introduce Skype for Business Server 2019 to your Lync Server 2013 organization, and then transfer operations to the new server. 
+The path to Skype for Business Server is going to be different depending on the version you choose to upgrade to. Skype for Business Server 2015 supports an in-place upgrade from Lync Server 2013. On the other hand, in order to upgrade to Skype for Business Server 2019, you first will need to introduce Skype for Business Server 2019 to your Lync Server 2013 installation via adding one or more new servers, and then transfer operations to the new 2019 servers you've added.
 
 One important point to consider is that the current support phase for each product: Skype for Business 2019 is in mainstream support and Skype for Business 2015 is currently in extended support.  Therefore, we recommend upgrading to Skype for Business Server 2019. To learn more about the difference between mainstream and extended support, see [Fixed Lifecycle Policy](/lifecycle/policies/fixed).
 

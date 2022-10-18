@@ -1,16 +1,17 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 documentation # < 60 chars
-summary: Find the solutions, scenarios, and resources you need to get started with Microsoft 365 for your business or organization.
+summary: Find the solutions, scenarios, and resources you need to get started with Microsoft 365 for your business or organization. Microsoft 365 includes services such as Teams and SharePoint, and Microsoft 365 Apps such as Outlook, Word, Excel, and PowerPoint.
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
 metadata:
   title: Microsoft 365 documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Find the solutions, scenarios, and resources you need to get started with Microsoft 365 for your business or organization. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: o365-solutions #Required; service per approved list. service slug assigned to your service by ACOM.
+  description: Find the solutions, scenarios, and resources you need to get started with Microsoft 365, including Office, for your business or organization. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: microsoft-365-enterprise #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   ms.collection: m365-security-compliance
+  ms.custom: intro-hub-or-landing
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
   ms.date: 06/08/2021 #Required; mm/dd/yyyy format.
@@ -29,9 +30,9 @@ highlightedContent:
       itemType: get-started
       url: /MicrosoftTeams/remote-learning-edu
     # Card
-    - title: Build your skills with Microsoft Learn
+    - title: Build your skills with Microsoft Learn training
       itemType: learn
-      url: /learn/m365/
+      url: /training/m365/
     - title: Get your small business started with Microsoft 365
       itemType: quickstart
       url: business-video/index.yml
@@ -43,7 +44,7 @@ productDirectory:
     # Card
     - title: Microsoft 365 solutions
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://docs.microsoft.com/office/media/icons/secure-document-blue.svg
+      imageSrc: /office/media/icons/secure-document-blue.svg
       links:
         - url: solutions/empower-people-to-work-remotely.md
           text: Set up your infrastructure for hybrid work
@@ -53,12 +54,12 @@ productDirectory:
           text: Deploy threat protection
         - url: solutions/information-protection-deploy.md
           text: Deploy information protection for data privacy regulations
-        - url: campaigns/index.md
+        - url: business-premium/index.md
           text: Microsoft 365 for smaller businesses and campaigns
     # Card
     - title: Meet and communicate
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
+      imageSrc: /office/media/icons/call-phone-blue.svg
       links:
         - url: /sharepoint/corporate-communications-overview
           text: Organizational communications 
@@ -73,7 +74,7 @@ productDirectory:
     # Card
     - title: Collaborate with your team
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://docs.microsoft.com/office/media/icons/users-people.svg
+      imageSrc: /office/media/icons/users-people.svg
       links:
         - url: solutions/collaborate-with-people-outside-your-organization.md
           text: Configure external sharing
@@ -88,7 +89,7 @@ productDirectory:
     # Card
     - title: Architecture resources
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
+      imageSrc: /office/media/icons/cloud-architecture2.svg
       links:
         - url: solutions/productivity-illustrations.md
           text: Microsoft 365 productivity illustrations
@@ -103,7 +104,7 @@ productDirectory:
     # Card
     - title: Secure your organization
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
+      imageSrc: /office/media/icons/security-blue.svg
       links:
         - url: security/top-security-tasks-for-remote-work.md
           text: Top tasks for security teams to support working from home
@@ -120,24 +121,24 @@ productDirectory:
     # Card
     - title: Protect your information and comply with regulations
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
+      imageSrc: /office/media/icons/certificate-blue.svg
       links:
-        - url: compliance/insider-risk-solution-overview.md
-          text: Insider risk solutions in Microsoft 365
-        - url: compliance/compliance-quick-tasks.md
-          text: Quick tasks for getting started with Microsoft 365 compliance
-        - url: compliance/information-protection.md
-          text: Manage information protection
-        - url: compliance/manage-information-governance.md
-          text: Manage information governance
-        - url: compliance/auditing-solutions-overview.md
+        - url: /microsoft-365/compliance/purview-compliance
+          text: Microsoft Purview risk and compliance solutions
+        - url: /microsoft-365/compliance/insider-risk-solution-overview
+          text: Insider risk solutions
+        - url: /microsoft-365/compliance/information-protection-solution
+          text: Information protection solutions
+        - url: /microsoft-365/compliance/data-governance-solution
+          text: Data lifecycle management solutions
+        - url: /microsoft-365/compliance/ediscovery
+          text: eDiscovery solutions
+        - url: /microsoft-365/compliance/auditing-solutions-overview
           text: Auditing solutions
-        - url: compliance/overview-ediscovery-20.md
-          text: Microsoft 365 Advanced eDiscovery
     # Card
     - title: Deploy and manage your desktops and devices
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
+      imageSrc: /office/media/icons/deploy-blue.svg
       links:
         - url: /DeployOffice/plan-microsoft-365-apps
           text: Deploy Microsoft 365 Apps
@@ -150,7 +151,7 @@ productDirectory:
     # Card
     - title: Migrate to Microsoft 365
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
+      imageSrc: /office/media/icons/migration-blue.svg
       links:
         - url: /MicrosoftTeams/journey-skypeforbusiness-teams
           text: Migrate to Microsoft Teams
@@ -161,14 +162,14 @@ productDirectory:
     # Card
     - title: Industry-specific solutions and scenarios
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://docs.microsoft.com/office/media/icons/on-premises-blue.svg
+      imageSrc: /office/media/icons/on-premises-blue.svg
       links:
+        - url: frontline/index.yml 
+          text: Microsoft 365 for frontline organizations
         - url: solutions/financial-services-secure-collaboration.md
           text: Security and compliance for financial services
         - url: solutions/energy-secure-collaboration.md
           text: Security and compliance for energy and utility services
-        - url: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
-          text: Teams for Healthcare organizations
         - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page
           text: Teams for Education
         - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page
@@ -194,7 +195,9 @@ additionalContent:
               url: business/index.yml
             - text: Microsoft 365 for enterprise
               url: enterprise/index.yml
-            - text: Microsoft 365 compliance
+            - text: Microsoft 365 for frontline workers
+              url: frontline/index.yml
+            - text: Microsoft Purview
               url: compliance/index.yml
             - text: Microsoft 365 security
               url: security/index.yml
@@ -220,12 +223,12 @@ additionalContent:
               url: /DeployOffice/plan-microsoft-365-apps
             - text: Office for Mac
               url: /DeployOffice/mac
-            - text: Office 2019
-              url: /DeployOffice/office2019
+            - text: Office LTSC 2021
+              url: /DeployOffice/ltsc2021/overview
             - text: More >
               url: /DeployOffice
         # Card
-        - title: SharePoint
+        - title: SharePoint and OneDrive
           links:
             - text: SharePoint in Microsoft 365
               url: /sharepoint/sharepoint-online
@@ -240,12 +243,18 @@ additionalContent:
             - text: More >
               url: /sharepoint
         # Card
-        - title: OneDrive
+        - title: Microsoft Viva
           links:
-            - text: Plan, deploy, and manage
-              url: /onedrive/onedrive
-            - text: More OneDrive >
-              url: /onedrive              
+            - text: Microsoft Viva Topics
+              url: /viva/topics/
+            - text: Microsoft Viva Insights
+              url: /insights/viva-teams-app
+            - text: Microsoft Viva Connections
+              url: /viva/connections/viva-connections-overview
+            - text: Microsoft Viva Learning
+              url: /viva/learning/
+            - text: More >
+              url: /viva/
         # Card
         - title: Outlook and Exchange
           links:
@@ -253,7 +262,7 @@ additionalContent:
               url: https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/
             - text: Exchange Online
               url: /Exchange/exchange-online
-            - text: More Exchange > 
+            - text: More > 
               url: /Exchange
         # Card
         - title: Planner and Project
@@ -264,19 +273,6 @@ additionalContent:
               url: /project-for-the-web/projectforweb-admin-home
             - text: More Project >
               url: /Project
-        # Card
-        - title: Microsoft Viva
-          links:
-            - text: Microsoft Viva Topics
-              url: /microsoft-365/knowledge/
-            - text: Microsoft Viva Insights
-              url: /insights/viva-teams-app
-            - text: Microsoft Viva Connections
-              url: /sharepoint/viva-connections
-            - text: Microsoft Viva Learning
-              url: /microsoft-365/learning/
-            - text: More Microsoft Viva >
-              url: /microsoft-365/viva/
         # Card
         - title: More apps and services
           links:
@@ -296,8 +292,8 @@ additionalContent:
       items:
         # Card
         - title: Developers
-          summary: Find tutorials, references, and other resources for developers in the Microsoft 365 Dev Center.
-          url: https://developer.microsoft.com/microsoft-365
+          summary: Find documentation and resources to help you build or extend collaborative apps for Microsoft 365 and Teams.
+          url: /microsoft-365/developer/?view=o365-worldwide
         - title: End users
           summary: Find training, how-to, and help content for users of Microsoft 365 on support.microsoft.com.
           url: https://support.microsoft.com/microsoft-365

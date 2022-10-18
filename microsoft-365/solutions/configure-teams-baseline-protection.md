@@ -6,11 +6,12 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+ms.service: o365-solutions
 ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection: 
+- highpri
 - Ent_O365
 - Strat_O365_Enterprise
 - m365solution-3tiersprotection
@@ -18,6 +19,7 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 recommendations: false
 description: "Learn how to deploy teams with a baseline level of protection."
 ---
@@ -63,10 +65,10 @@ Guest sharing is turned on by default for Office 365 groups and SharePoint, howe
 To reduce the risk of accidentally sharing files or folders with people outside your organization, we recommend changing the default sharing link for SharePoint to *Only people in your organization*. (If users need to share externally, and you have enabled guest sharing, they can still change the link type when they share.)
 
 To change the default sharing link
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. Under **Policies**, click **Sharing**.
-3. Under **File and folder links**, select **Only people in your organization**.
-4. Click **Save**.
+
+1. Open the SharePoint admin center, under **Policies**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
+1. Under **File and folder links**, select **Only people in your organization**.
+1. Select **Save**.
 
 For the best guest sharing experience, we also recommend that you enable [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
 

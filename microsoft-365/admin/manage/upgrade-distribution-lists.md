@@ -1,5 +1,5 @@
 ---
-title: "Upgrade distribution lists to Microsoft 365 Groups in Outlook"
+title: "Upgrade distribution lists to Microsoft 365 Groups in Exchange Online"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -7,12 +7,12 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
-
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,113 +22,118 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
-description: "Learn how to upgrade one or many distribution lists to Microsoft 365 Groups in Outlook, and how to use PowerShell to upgrade several distribution lists simultaneously."
+description: "Learn how to upgrade one or many distribution lists to Microsoft 365 Groups in Exchange Online, and how to use PowerShell to upgrade several distribution lists simultaneously."
 ---
 
-# Upgrade distribution lists to Microsoft 365 Groups in Outlook
+# Upgrade distribution lists to Microsoft 365 Groups in Exchange Online
 
-You can upgrade distribution lists to Microsoft 365 Groups in Outlook. This is a great way to give your organization's distribution lists all the features and functionality of Microsoft 365 Groups. [Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
+Upgrading a distribution list to a Microsoft 365 Group is a great way to improve the features and capabilities of groups in your organization. For more information, see [Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
-You can upgrade DLs one at a time, or several at the same time.
+You can upgrade distribution lists one at a time, or several at the same time. You can use the Exchange admin center (EAC) or Exchange Online PowerShell.
 
-## Upgrade one or many distribution list groups to Microsoft 365 Groups in Outlook
+## Upgrade one or many distribution list groups to Microsoft 365 Groups
 
-You must be a global admin or Exchange admin to upgrade a distribution list group. To upgrade to Microsoft 365 Groups, the distribution list group must have an owner with a mailbox.
-
-### Use the new EAC to upgrade one or many distribution list groups to Microsoft 365 Groups in Outlook
-
-1. Go to the new Exchange admin center > **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">Groups</a>.
-
-2. Select the distribution list group (also called a **distribution group**) that you want to upgrade to Microsoft 365 group from the **Groups** page.
-
-3. Select the **Upgrade distribution group** from the tool bar.
-
-4. In the dialog box **Ready to upgrade?**, click **Upgrade**. The process begins immediately. Depending on the size and number of distribution list groups you're upgrading, the process can take minutes or hours.
-
-> [!NOTE]
-> A banner at the top indicates the upgrade, for example, *Distribution group(s) has been upgraded. It will take 5 minutes to reflect the changes. Filter by Microsoft 365 groups to see the upgraded distribution groups(s)*.
+You must be a global admin or Exchange admin to upgrade a distribution list. To upgrade to Microsoft 365 Groups, the distribution list must have a designated owner, and that owner must be a mailbox.
 
 ### Use the Classic EAC to upgrade one or many distribution list groups to Microsoft 365 Groups in Outlook
 
-1. Go to the Exchange admin center > **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.<br/>You'll see a notice indicating you have distribution lists (also called **distribution groups**) that are eligible to be upgraded to Microsoft 365 Groups.<br/> ![Select the Get started button.](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
-
-1. Select one or more distribution lists (also called a **distribution group**) from the **groups** page.<br/>![Select a distribution group.](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
-
-1. Select the upgrade icon.<br/>![Upgrade to Microsoft 365 Groups icon.](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
-
-1. On the information dialog, select **Yes** to confirm the upgrade. The process begins immediately. Depending on the size and number of DLs you're upgrading, the process can take minutes or hours.<br/>If the distribution list can't be upgraded, a dialog appears saying so. See [Which distribution lists cannot be upgraded?](#which-distribution-lists-cant-be-upgraded).
-
-1. If you're upgrading multiple distribution lists, use the drop-down list to filter which distribution lists have been upgraded. If the list isn't complete, wait a while longer and then select **Refresh** to see what's been successfully upgraded.<br/>There's no notice that tells you when the upgrade process has completed for all DLs you selected. You can figure this out by looking to see what's listed under **Available for upgrade** or **Upgraded DLs**.
-
-1. If you selected a DL for upgrade, but it's still appeared on the page as Available to upgrade, then it failed to upgrade. See [What to do if the upgrade doesn't work](#what-to-do-if-the-upgrade-doesnt-work).
-
 > [!NOTE]
-> If you're getting the groups digest emails you may notice at the bottom that it will sometimes offer to let you upgrade any eligible distribution lists that you're the owner of. See [Have a group conversation in Outlook](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22) for more information about digest emails.
+> The procedures in this section are not available in the new EAC.
+
+1. Go to the Exchange admin center > **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.
+
+   You'll see a notice indicating you have distribution lists (also called **distribution groups**) that are eligible to be upgraded to Microsoft 365 Groups.
+   
+   ![Select the Get started button.](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+
+1. Select one or more distribution lists (also called **distribution groups**) from the **groups** page.
+
+   ![Select a distribution group.](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
+
+1. Select the upgrade icon.
+
+   ![Upgrade to Microsoft 365 Groups icon.](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+
+1. On the information dialog, select **Yes** to confirm the upgrade. The process begins immediately. Depending on the size and number of distribution lits you're upgrading, the process can take minutes or hours.
+
+   If the distribution list can't be upgraded, a dialog appears saying so. See [Which distribution lists cannot be upgraded?](#which-distribution-lists-cant-be-upgraded).
+
+1. If you're upgrading multiple distribution lists, use the drop-down list to filter which distribution lists have been upgraded. If the list isn't complete, wait a while longer and then select **Refresh** to see what's been successfully upgraded.
+
+**Notes**:
+
+- You won't get a notification when the upgrades are complete. Instead, see what's listed under **Available for upgrade** or **Upgraded DLs**.
+
+- If you selected a distribution list for upgrade, but it's still appeared on the page as **Available to upgrade**, then it failed to upgrade. See [What to do if the upgrade doesn't work](#what-to-do-if-the-upgrade-doesnt-work).
+
+- The digest email of a group might offer to let you upgrade any eligible distribution lists that you're the owner of. For more information about digest email, see [Have a group conversation in Outlook](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
 ## What to do if the upgrade doesn't work
 
 Distribution lists that fail to upgrade remain unchanged.
 
-If one or more **eligible** distribution lists fail to be upgraded, open a [Support ticket](../../business-video/get-help-support.md). The issue will need to be escalated to the Groups Engineering team for them to figure out the problem.
+If one or more **eligible** distribution lists fail to be upgraded, do the following steps:
 
-It's possible that the distribution list didn't get upgraded because of a service outage, but unlikely. If you want, wait a while and then try to upgrade the DL again.
+1. Use [this script](https://aka.ms/DLToM365Group) to scan for possible issues. Fix any issues reported by the script and try upgrading the distribution list one more time. 
 
-## How to use PowerShell to upgrade several distribution lists at the same time
+2. If the script doesn't help, open a [Support ticket](../../business-video/get-help-support.md). The issue will need to be escalated to the Groups Engineering team.
 
-If you're experienced at using PowerShell, you might want to go this route instead of using the UI. We have a set of cmdlets that will help you upgrade distribution lists. See below.
+## How to use Exchange Online PowerShell to upgrade several distribution lists at the same time
 
-### Upgrade a single DL
+To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-To upgrade a single DL, run the following command:
+### Upgrade a single distribution list
 
-```PowerShell
-Upgrade-DistributionGroup -DlIdentities <Dl SMTP address>
-```
-
-For example, if you want to upgrade a DL with SMTP address dl1@contoso.com, run the following command:
+To upgrade a single distribution list, use the following syntax:
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities dl1@contoso.com
+Upgrade-DistributionGroup -DLIdentities <EmailAddress>
 ```
+
+This example upgrade the distribution list marketing@contoso.com:
+
+```PowerShell
+Upgrade-DistributionGroup -DLIdentities marketing@contoso.com
+```
+
+For detailed syntax and parameter information, see [Upgrade-DistributionGroup](/powershell/module/exchange/upgrade-distributiongroup).
 
 > [!NOTE]
-> You can also upgrade a single distribution list to a Microsoft 365 group using the [New-UnifiedGroup](/powershell/module/exchange/new-unifiedgroup) PowerShell cmdlet
+> You can also upgrade a single distribution list to a Microsoft 365 group using the [New-UnifiedGroup](/powershell/module/exchange/new-unifiedgroup) cmdlet.
 
-### Upgrade multiple DLs in a batch
+### Upgrade multiple distribution lists at the same time
 
-You can also pass multiple DLs as a batch and upgrade them together:
-
-```PowerShell
-Upgrade-DistributionGroup -DlIdentities <DL SMTP address1>, <DL SMTP address2>,
-<DL SMTP address3>, <DL SMTP address4>
-```
-
-For example, if you want to upgrade five DLs with SMTP address `dl1@contoso.com` and `dl2@contoso.com`, `dl3@contoso.com`, `dl4@contoso.com` and `dl5@contoso.com`, run the following command:
-
-`Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com`
-
-### Upgrade all eligible DLs
-
-There are two ways in which you can upgrade all the eligible DLs.
-
-> [!NOTE]
-> The Upgrade-DistributionGroup cmdlet doesn't receive data from the pipeline, for this reason it's required to use "foreach-object{}" operator to run successfully.
-
-1. Get the eligible DLs in the tenant and upgrade them using the upgrade command:
+To upgrade multiple distribution lists at the same time, use the following syntax:
 
 ```PowerShell
-Get-EligibleDistributionGroupForMigration | Foreach-Object{
-    Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
-}
+Upgrade-DistributionGroup -DLIdentities <EmailAddress1>,<EmailAddress2>,...
 ```
 
-2. Get the list of all DLs and upgrade only the eligible DLs:
+This example upgrades the specified distribution lists to Microsoft 365 Groups.
 
-```PowerShell
-Get-DistributionGroup| Foreach-Object{
-    Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
-}
+```powershell
+Upgrade-DistributionGroup -DLIdentities marketing@contoso.com,finanace@contoso.com,hr@contoso.com
 ```
+
+For detailed syntax and parameter information, see [Upgrade-DistributionGroup](/powershell/module/exchange/upgrade-distributiongroup).
+
+### Upgrade all eligible distribution lists
+
+Use either of the following methods to upgrade all eligible distribution lists to Microsoft 365 Groups:
+
+- Upgrade all eligible distribution lists:
+
+   ```PowerShell
+   $All = Get-EligibleDistributionGroupForMigration -ResultSize unlimited
+   $All | Foreach-Object {Upgrade-DistributionGroup -DLIdentities $_.PrimarySMTPAddress}
+   ```
+
+- Try to upgrade all distribution lists whether they're eligible or not:
+
+   ```PowerShell
+   $All Get-DistributionGroup -RecipientTypeDetails MailUniversalDistributionGroup -ResultSize unlimited
+   $All | Foreach-Object {Upgrade-DistributionGroup -DLIdentities $_.PrimarySMTPAddress}
+   ```
 
 ## FAQ about upgrading distribution lists to Microsoft 365 Groups in Outlook
 
@@ -136,29 +141,33 @@ Get-DistributionGroup| Foreach-Object{
 
 You can only upgrade cloud-managed, simple, non-nested distribution lists. The table below lists distribution lists that **CANNOT** be upgraded.
 
-|**Property**|**Eligible?**|
-|:-----|:-----|
-|On-premises managed distribution list.  <br/> |No  <br/> |
-|Nested distribution lists. Distribution list either has child groups or is a member of another group.  <br/> |No  <br/> |
-|Distribution lists with member **RecipientTypeDetails** other than **UserMailbox**, **SharedMailbox**, **TeamMailbox**, **MailUser**  <br/> |No  <br/> |
-|Distribution list that has more than 100 owners  <br/> |No  <br/> |
-|Distribution list that only has members but no owner  <br/> |No  <br/> |
-|Distribution list that has alias containing special characters  <br/> |No  <br/> |
-|If the distribution list is configured to be a forwarding address for Shared Mailbox  <br/> |No  <br/> |
-|If the DL is part of **Sender Restriction** in another DL.  <br/> |No  <br/> |
-|Security groups  <br/> |No  <br/> |
-|Dynamic Distribution lists  <br/> |No  <br/> |
-|Distribution lists that were converted to **RoomLists**  <br/> |No  <br/> |
+|Property|Eligible?|
+|---|:---:|
+|On-premises managed distribution list.|No|
+|Nested distribution lists. Distribution list either has child groups or is a member of another group.|No|
+|Distribution lists where one or more members are something other than a user mailbox, shared mailbox, team mailbox, or mail user. In other words, the **RecipientTypeDetails** value of any member of the distribution list is not **UserMailbox**, **SharedMailbox**, **TeamMailbox**, or **MailUser**.|No|
+|Distribution list that has more than 100 owners.|No|
+|Distribution list that only has members but no owner.|No|
+|Distribution list that has alias containing special characters.|No|
+|The distribution list is configured to be a forwarding address for a Shared mailbox.|No|
+|The distribution list is part of **Sender Restriction** in another distribution list.|No|
+|Mail-enabled security groups.|No|
+|Dynamic distribution groups.|No|
+|Distribution lists that were converted to **RoomLists**.|No|
 
-### Check which DLs are eligible for upgrade
+### Check which distribution lists are eligible for upgrade
 
-If you want to check whether a DL is eligible or not, you can run the below command:
+To check whether a specific distribution list is eligible for upgrade, run the following command:
 
-`Get-DistributionGroup <DL SMTP address> | Get-EligibleDistributionGroupForMigration`
+```PowerShell
+Get-DistributionGroup <EmailAddress> | Get-EligibleDistributionGroupForMigration
+```
 
-If you want to check which DLs are eligible for upgrade just run the following command:
+To see all distribution groups that are eligible for upgrade, run the following command:
 
-`Get-EligibleDistributionGroupForMigration`
+```PowerShell
+Get-EligibleDistributionGroupForMigration
+```
 
 ### Who can run the upgrade scripts?
 
@@ -166,25 +175,42 @@ People with global admin or Exchange admin rights.
 
 ### Why is the contact card still showing a distribution list? What should I do to prevent an upgraded distribution list from showing up in my auto suggest list?
 
-- For Outlook: When someone tries to send an email in Outlook by typing the Microsoft 365 group name after migration, the recipient will be resolved as the distribution list instead of the group. The contact card of the recipient will be the distribution lists contact card. This is because of the recipient cache or nick name cache in Outlook. The email will be sent successfully to the group, but might cause confusion to the sender.<br/>You can perform the steps in this article, [Information about the Outlook AutoComplete list](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list) to reset the cache, which will fix this issue.
+- **Outlook**: After you upgrade a ditribution list to a Microsoft 365 group, the user's local recipient cache (also known as the nick name cache) is not aware of the change. Do the steps in the following article to reset the user's local recipient cache: [Information about the Outlook AutoComplete list](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list). 
 
-- For Outlook on the web: In case of Outlook on the web, the distribution list recipient will still remain in the cache. You can follow the steps in [Remove suggested name or email address from the Auto-Complete List](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) to refresh the cache to see the group contact card.
+  If you don't update the recipient cache, any email sent to the Microsoft 365 Group will be delivered successfully, but the following issues will remain:
+  
+  - The Group recipient will resolve as the distribution list instead of the Microsoft 365 Group.
+  - The contact card will be the distribution list's contact instead of the Microsoft 365 Group's.
+
+- **Outlook on the web**: Like Outlook, the distribution list will remain in the recipient cache. Follow the steps in this article to refresh the cache to see the Group's contact card: [Remove suggested name or email address from the Auto-Complete List](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58).
 
 ### Do new group members get a welcome email in their inbox?
 
-No. The setting to enable welcome messages is set to false by default. This setting affects both existing and new group members who may join after the migration is complete. If the group owner later allows guest users, guest users won't receive a welcome email in their inbox. Guest members can continue working with the group.
+No. The setting to enable welcome messages is set to false by default. This setting affects both existing and new group members who may join after the migration is complete. If the group owner later allows guest users, guest users won't receive a welcome email in their Inbox. Guest members can continue working with the group.
 
 ### What if one or some of the DLs are not upgraded?
 
-There are some cases in which though DL is eligible but could not be upgraded. The DL does not get upgraded and remains as a DL.
+There are some cases in where eligible distribution lists can't be upgraded. For example:
 
-- Where admin has applied **Group Email Address Policy** for the groups in an organization and they try to upgrade DLs that doesn't fulfill the criteria, the DL does not get upgraded
+- An admin has applied a **Group Email Address Policy**, and the distribution list doesn't meet the requirements of the policy.
 
-- DLs with **MemberJoinRestriction** or **MemberDepartRestriction** set to **Closed**, could not be upgraded
+- A distribution list has the **MemberJoinRestriction** or **MemberDepartRestriction** set to the value **Closed**.
+
+- The creation of Microsoft 365 Group creation is limited as described in this article: [this article](/microsoft-365/solutions/manage-creation-of-groups).
+
+  Use one of the following workarounds for this specific issue:
+
+  - Ensure all owners of the distribution list are allowed to create Microsoft 365 Groups (i.e., the owners are member of the security group that is allowed to create Microsoft 365 Groups).
+
+  - Temporarily replace the owner of the distribution list with a user who's allowed to create Microsoft 365 Groups.
 
 ### What happens to the DL if the upgrade from EAC fails?
 
-The upgrade will happen only when the call is submitted to the server. If the upgrade fails, your DLs will be intact. They will work like they used to.
+The upgrade will happen only when the call is submitted to the server. If the upgrade fails, your distribution lists will remain and function as they used to.
+
+### What happens to message approval (moderation) settings on distribution groups after upgrading?
+
+The message approval (moderation) settings are preserved and continue to work fine after the distribution group is upgraded to a Microsoft 365 Group.
 
 ## Related content
 

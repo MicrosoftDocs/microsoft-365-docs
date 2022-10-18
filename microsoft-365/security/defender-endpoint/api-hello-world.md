@@ -3,7 +3,7 @@ title: Hello World for Microsoft Defender for Endpoint API
 ms.reviewer:
 description: Create a practice 'Hello world'-style API call to the Microsoft Defender for Endpoint API.
 keywords: apis, supported apis, advanced hunting, query, microsoft defender atp, microsoft defender for endpoint
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint API - Hello World
@@ -54,7 +57,7 @@ For the Application registration stage, you must have a **Global administrator**
 
 2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**.
 
-   :::image type="content" alt-text="Image of Microsoft Azure and navigation to application registration." source="images/atp-azure-new-app2.png" lightbox="images/atp-azure-new-app2.png":::
+   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="The App registrations option under the Manage pane in the Azure Active Directory portal"  lightbox="images/atp-azure-new-app2.png":::
 
 3. In the registration form, choose a name for your application and then click **Register**.
 
@@ -65,11 +68,11 @@ For the Application registration stage, you must have a **Global administrator**
      > [!NOTE]
      > WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-     :::image type="content" alt-text="Image of API access and API selection1." source="images/add-permission.png" lightbox="images/add-permission.png":::
+     :::image type="content" source="images/add-permission.png" alt-text="The API permissions option under the Manage pane in the Azure Active Directory portal" lightbox="images/add-permission.png":::
 
    - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**.
 
-     :::image type="content" alt-text="Image of API access and API selection2." source="images/application-permissions.png" lightbox="images/application-permissions.png":::
+     :::image type="content" source="images/application-permissions.png" alt-text="The permission type and settings panes in the Request API permissions page" lightbox="images/application-permissions.png":::
 
      > [!IMPORTANT]
      > You need to select the relevant permissions. 'Read All Alerts' is only an example!
@@ -85,7 +88,7 @@ For the Application registration stage, you must have a **Global administrator**
    > [!NOTE]
    > Every time you add permission, you must click on **Grant consent** for the new permission to take effect.
 
-   ![Image of Grant permissions.](images/grant-consent.png)
+   :::image type="content" source="images/grant-consent.png" alt-text="The grant permission consent option in the Azure Active Directory portal" lightbox="images/grant-consent.png":::
 
 6. Add a secret to the application.
 
@@ -94,13 +97,13 @@ For the Application registration stage, you must have a **Global administrator**
     > [!IMPORTANT]
     > After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
 
-    ![Image of create app key.](images/webapp-create-key2.png)
+    :::image type="content" source="images/webapp-create-key2.png" alt-text="The Certificates & secrets menu item in the Manage pane in the Azure Active Directory portal" lightbox="images/webapp-create-key2.png":::
 
 7. Write down your application ID and your tenant ID.
 
    On your application page, go to **Overview** and copy the following:
 
-   ![Image of created app id.](images/app-and-tenant-ids.png)
+   :::image type="content" source="images/app-and-tenant-ids.png" alt-text="The application details pane under the Overview menu item in the Azure Active Directory portal" lightbox="images/app-and-tenant-ids.png":::
 
 Done! You have successfully registered an application!
 
@@ -138,7 +141,7 @@ Done! You have successfully registered an application!
   - Paste in the top box.
   - Look for the "roles" section. Find the _Alert.Read.All_ role.
 
-  :::image type="content" alt-text="Image jwt.ms." source="images/api-jwt-ms.png" lightbox="images/api-jwt-ms.png":::
+  :::image type="content" source="images/api-jwt-ms.png" alt-text="The Decoded Token pane for jwt.ms" lightbox="images/api-jwt-ms.png":::
 
 ### Lets get the Alerts!
 

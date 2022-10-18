@@ -2,16 +2,17 @@
 title: "What's the purpose of the Office 365 CNAME record for MSOID?"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.collection:
+- scotvorg
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 search.appverid:
 - BCS160

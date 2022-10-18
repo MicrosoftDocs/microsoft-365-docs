@@ -61,13 +61,15 @@
           href: configure-teams-sensitive-protection.md
         - name: Configure highly sensitive protection
           href: configure-teams-highly-sensitive-protection.md
-        - name: Configure a team with security isolation
+        - name: Configure a team with a unique sensitivity label
           href: secure-teams-security-isolation.md
       - name: Configure external sharing
         items:
         - name: External sharing overview
           href: collaborate-with-people-outside-your-organization.md
-        - name: Configuration scenarios
+        - name: Plan external collaboration
+          href: plan-external-collaboration.md
+        - name: Configuration
           items:
           - name: Collaborate on documents
             href: collaborate-on-documents.md
@@ -75,18 +77,32 @@
             href: collaborate-in-site.md
           - name: Collaborate as a team
             href: collaborate-as-team.md
+          - name: Collaborate in a channel
+            href: collaborate-teams-direct-connect.md
+          - name: Enable shared channels with all organizations
+            href: allow-direct-connect-with-all-organizations.md
           - name: Create a B2B extranet
             href: b2b-extranet.md
-          - name: Limit sharing
-            href: microsoft-365-limit-sharing.md
-        - name: Security scenarios
+          - name: Trust conditional access from other organizations
+            href: trust-conditional-access-from-other-organizations.md
+        - name: Limit sharing
           items:
-          - name: Unauthenticated sharing
-            href: best-practices-anonymous-sharing.md
+          - name: Limit who can invite guests
+            href: limit-who-can-invite-guests.md
+          - name: Limit who can be invited by an organization
+            href: limit-invitations-from-specific-organization.md
+          - name: Limit guest sharing to specific organizations
+            href: limit-guest-sharing-to-specific-organization.md
+          - name: Limit organizations where users can be guests
+            href: limit-organizations-where-users-have-guest-accounts.md
           - name: Limit accidental exposure
             href: share-limit-accidental-exposure.md
-          - name: Secure guest sharing environment
-            href: create-secure-guest-sharing-environment.md
+          - name: Limit sharing
+            href: microsoft-365-limit-sharing.md
+        - name: Secure guest sharing environment
+          href: create-secure-guest-sharing-environment.md
+        - name: Unauthenticated sharing
+          href: best-practices-anonymous-sharing.md
         - name: External sharing reference
           href: microsoft-365-guest-settings.md    
     - name: Deploy ransomware protection for your Microsoft 365 tenant
@@ -148,11 +164,11 @@
              href: ../admin/add-users/remove-former-employee-step-1.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
            - name: Step 2. Save the contents of a former employee's mailbox
              href: ../admin/add-users/remove-former-employee-step-2.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-           - name: Step 3. Forward a former employee's email to another employee or convert to a shared mailbox
+           - name: Step 3. Wipe and block a former employee's mobile device
              href: ../admin/add-users/remove-former-employee-step-3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-           - name: Step 4. Give another employee access to OneDrive and Outlook data
+           - name: Step 4. Forward a former employee's email to another employee or convert to a shared mailbox
              href: ../admin/add-users/remove-former-employee-step-4.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-           - name: Step 5. Wipe and block a former employee's mobile device
+           - name: Step 5. Give another employee access to OneDrive and Outlook data
              href: ../admin/add-users/remove-former-employee-step-5.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
            - name: Step 6. Remove the Microsoft 365 license from a former employee
              href: ../admin/add-users/remove-former-employee-step-6.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
@@ -291,25 +307,19 @@
             href: end-life-cycle-groups-teams-sites-yammer.md
       - name: File collaboration in SharePoint with Microsoft 365
         href: /sharepoint/deploy-file-collaboration
-      - name: OneDrive Guide for enterprises
-        href: /onedrive/plan-onedrive-enterprise
 
     - name: Compliance
       items:
-      - name: Insider risk solutions in Microsoft 365
+      - name: Insider risk solutions in Microsoft Purview
         href: ../compliance/insider-risk-solution-overview.md
       - name: Auditing solutions
         href: ../compliance/auditing-solutions-overview.md
       - name: eDiscovery solutions in Microsoft 365
         href: ../compliance/ediscovery.md
-      - name: Microsoft 365 Advanced eDiscovery
+      - name: Microsoft Purview eDiscovery (Premium)
         href: ../compliance/overview-ediscovery-20.md
-      - name: Regulatory compliance action plans
+      - name: Regulatory compliance FAQs and action plans
         items: 
-        - name: ISO - Recommended action plan
-          href: /compliance/regulatory/iso-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-        - name: NIST - Recommended action plan
-          href: /compliance/regulatory/nist-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: CCPA - Frequently asked questions
           href: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: GDPR - Recommended action plan
@@ -360,8 +370,18 @@
     
 - name: Industry-specific guidance
   items: 
+    - name: Microsoft 365 for frontline workers
+      items: 
+      - name: Overview
+        href: /microsoft-365/frontline/flw-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+      - name: Step 1. Choose your scenarios
+        href: /microsoft-365/frontline/flw-choose-scenarios?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+      - name: Step 2. Set up Microsoft 365 for frontline workers
+        href: /microsoft-365/frontline/flw-deploy-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Financial services
       items:
+      - name: Overview
+        href: financial-services-overview.md
       - name: Security and compliance for financial services
         href: financial-services-secure-collaboration.md
     - name: Energy and utility services
@@ -373,7 +393,7 @@
       - name: Overview
         href: healthcare-overview.md
       - name: Teams for Healthcare
-        href: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
+        href: /microsoft-365/frontline/teams-in-hc
     - name: Education
       items: 
       - name: Teams for Education
@@ -384,6 +404,12 @@
         href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page
       - name: Support remote government workers using Teams
         href: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams
+    - name: Retail
+      items: 
+      - name: Overview
+        href: retail-overview.md
+      - name: Teams for Retail
+        href: /microsoft-365/frontline/teams-for-retail-landing-page
 - name: Enterprise architecture design principles
   items: 
     - name: Overview

@@ -7,13 +7,16 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
@@ -39,11 +42,11 @@ You can add or update a default theme that applies to everyone within your org. 
 
 All organization themes can be customized using the following tabs.
 
-|**Tab**|**What can you do?**|
-|:-----|:-----|
-|[General](#general-modify-a-theme) <br/> |Modify a theme name and assign to up to five groups (if applicable).  <br/> |
-|[Logos](#logos-specify-your-theme-logos) <br/> |Add your organization logo, including alternate logo for dark theme.  <br/> |
-|[Colors](#colors-choose-theme-colors) <br/> |Customize a color scheme by specifying navigation bar, accent, text and icon colors. <br/> |
+|Tab|What can you do?|
+|---|---|
+|[General](#general-modify-a-theme)|Modify a theme name and assign to up to five groups (if applicable).|
+|[Logos](#logos-specify-your-theme-logos)|Add your organization logo, including alternate logo for dark theme.|
+|[Colors](#colors-choose-theme-colors)|Customize a color scheme by specifying navigation bar, accent, text and icon colors.|
 
 ## General: Modify a theme
 
@@ -76,7 +79,7 @@ You can create up to four additional group themes.
 
 ## Logos: Specify your theme logos
 
-On the **Logos** page, you can you can add your logos, and specify the URL where users will navigate to, when they select the logo.
+On the **Logos** page, you can add your logos, and specify the URL where users will navigate to when they select the logo.
 
 - **Default logo**: Add a URL location that points to your logo. Make sure that the URL uses HTTPS. Add a HTTPS image url that allows anonymous access and doesn't require authentication. For default theme, you also have an option to upload a logo image that is less than 10kb. Your default logo can be in the JPG, PNG, GIF, or SVG format. For SVG images, they will be resized to fit 24 pixels vertically. JPG, PNG, GIF images will be scaled to fit 200 x 48 pixels. Logo aspect ratio will always be preserved.
 - **Alternate logo**: Add a URL location that points to your logo. Your alternate logo should be optimized for use in Office dark themes. Same requirements as the default logo.
@@ -103,11 +106,11 @@ On the **Colors** page, you can set the default colors and choose which logo sho
 
 ### My organization already has a theme for all employees. How will this change?
 
-The default theme will continue to be shown to all employees. Adding a new group theme will only be made available to the Microsoft 365 groups associated with that theme.
+The default theme will continue to be shown to all employees. Adding a new group theme will only be made available to the Microsoft 365 groups associated with that theme.
 
-### Why don’t I see group themes in the Admin Center?
+### Why don’t I see group themes in the Admin Center?
 
-Only global admins can customize company themes. Global readers have read-only access.
+Only global admins can customize company themes. Global readers have read-only access.
 
 ### How many different themes can I set up for my organization?  
 
@@ -115,28 +118,28 @@ Up to five themes can be created. A default theme and four group themes.
 
 ### Can I use security groups or distribution groups instead of Microsoft 365 Groups?
 
-No, new group themes must be mapped to one or more Microsoft 365 groups and not security groups or distribution groups.
+No, new group themes must be mapped to one or more Microsoft 365 groups and not security groups or distribution groups.
 
 > [!NOTE]
 > You can convert [distribution groups to Microsoft 365 groups](../manage/upgrade-distribution-lists.md) in Outlook.
 
-### Can I manually assign a theme independent of Microsoft 365 Groups?  
+### Can I manually assign a theme independent of Microsoft 365 Groups?  
 
-No, new group themes must be mapped to one or more Microsoft 365 groups. Users who are members of the Microsoft 365 group will get the theme applied to their group. You can [create and add new members to a Microsoft 365 Group](../create-groups/create-groups.md) by going to the **Settings** > **Groups** in the admin center.
+No, new group themes must be mapped to one or more Microsoft 365 groups. Users who are members of the Microsoft 365 group will get the theme applied to their group. You can [create and add new members to a Microsoft 365 Group](../create-groups/create-groups.md) by going to the **Settings** > **Groups** in the admin center.
 
 ### What happens if a user is assigned to multiple group themes?  
 
 Users who are assigned to multiple group themes will be shown the default theme.  
 
-### Why can’t I delete the default theme?  
+### Why can’t I delete the default theme?  
 
 The default theme can only be deleted once all group themes are deleted. Make sure you delete all group themes before you try to delete the group theme.
 
-### Why am I receiving an error message every time I upload a logo URL.  
+### Why am I receiving an error message every time I upload a logo URL.  
 
-Make sure the logo you’re using is specified as a publicly addressable URL. Follow these steps for [uploading logos to Azure Blob Storage](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) or the [Office 365 Content Delivery Network with SharePoint Online](../../enterprise/use-microsoft-365-cdn-with-spo.md).
+Make sure the logo you’re using is specified as a publicly addressable URL. Follow these steps for [uploading logos to Azure Blob Storage](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) or the [Office 365 Content Delivery Network with SharePoint Online](../../enterprise/use-microsoft-365-cdn-with-spo.md).
 
-### Why am I receiving the message “Doesn’t meet minimum color contrast ratio of 4.5:1”?
+### Why am I receiving the message “Doesn’t meet minimum color contrast ratio of 4.5:1”?
 
 The recommended contrast ratio between text, icon or button color and background color is 4.5:1. You can override this recommendation and still save your theme as this is not a requirement.
 

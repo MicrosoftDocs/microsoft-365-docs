@@ -1,5 +1,5 @@
 ---
-title: "Step 3 - Forward a former employee's email to another employee or convert to a shared mailbox"
+title: "Step 3 - Wipe and block a former employee's mobile device"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -20,45 +21,27 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - m365solution-removeemployee
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow these steps to forward a former employee's email to another employee or convert to a shared mailbox."
+description: "Use the Exchange admin center to wipe and block a former employee's device so that all organization data is removed and it no longer connects to Microsoft 365."
 ---
 
-# Step 3 - Forward a former employee's email to another employee or convert to a shared mailbox
+# Step 3 - Wipe and block a former employee's mobile device
 
-In this step, you assign the former employee's email address to another employee, or convert the user's mailbox to a shared mailbox.
+If your former employee had an organization phone, you can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> to wipe and block that device so that all organization data is removed from the device and it can no longer connect to Office 365. If your organization uses Basic Mobility and Security to manage mobile devices, you can wipe and block those devices using Basic Mobility and Security.
 
-## Convert former employee's mailbox to a shared mailbox
+## Wipe mobile device using the Exchange admin center
 
-When you convert a user's mailbox to a shared mailbox, all of the existing email and calendar is retained. Only now it's in a shared mailbox where several people will be able to access it instead of one person. You can convert a shared mailbox back to a user (private) mailbox at a later date if you want.
-
-- Creating a shared mailbox is the less expensive way to go because you won't have to pay for a license **as long as the mailbox is smaller than 50GB**. Over 50GB and you'll need to assign a license to it.
-- If you convert the mailbox to a shared mailbox, all the old email will be available, too. This can take up a lot of space.
-- If you set up email forwarding, only *new* emails sent to the former employee will now be sent to the current employee.
-
-Follow these steps on how to [convert the user's mailbox to a shared mailbox](../email/convert-user-mailbox-to-shared-mailbox.md).
-
-## Forward a former employee's email to another employee
-
- > [!IMPORTANT]
- > If you're setting up email forwarding or a shared mailbox, at the end, don't delete the former employee's account. The account needs to be there to anchor the email forwarding or shared mailbox.
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-2. Select the name of the employee that you want to block, and then select the **Mail** tab.
-3. Under **Email Forwarding**, select **Manage email forwarding**.
-4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee who's going to get the email.
-5. Select **Save**.
-6. Remember, don't delete the former employee's account.
+1. Go to the Exchange admin center > **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">Mailboxes</a>.
+1. Select the user, and under **Mobile Devices**, select **View details**.
+1. On the **Mobile Device Details** page, under **Mobile devices**, select the mobile device, select **Wipe Data**![Wipe Device.](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png), and then select **Block**.
+1. Select **Save**.
+   > [!TIP]
+   > Be sure you remove or disable the user from your on-premises Blackberry Enterprise Service. You should also disable any Blackberry devices for the user. Refer to the Blackberry Business Cloud Services Administration Guide if you need specific steps on how to disable the user.
 
 ## Related content
 
-[Open and use a shared mailbox in Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd)
-
-[Access another person's mailbox](https://support.microsoft.com/office/access-another-person-s-mailbox-a909ad30-e413-40b5-a487-0ea70b763081)
-
 [Exchange admin center in Exchange Online](/exchange/exchange-admin-center)
-
-[Manager another person's mail and calendar items](https://support.microsoft.com/office/manage-another-person-s-mail-and-calendar-items-afb79d6b-2967-43b9-a944-a6b953190af5)

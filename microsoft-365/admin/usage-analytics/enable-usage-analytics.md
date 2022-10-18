@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -57,7 +58,10 @@ See [about admin roles](../add-users/about-admin-roles.md) for more information.
 
 3. On the Reports panel that opens, set **Make report data available to Microsoft 365 usage analytics for Power BI** to **On** \> **Save**.
 
-The data collection process will complete in two to 48 hours depending on the size of your tenant. The **Go to Power BI** button will be enabled (no longer gray) when data collection is complete.
+The data collection process will complete in two to 48 hours depending on the size of your tenant. The **Go to Power BI** button will be enabled (no longer gray) when data collection is complete. Once it's done, the app provides historical usage data at your organization level. 
+
+> [!NOTE]
+> The data for the **"User Activity"** tab is only refreshed after the fifteenth day of the current month and the first day of the next month, so it will remain empty initially until the first refresh is completed.
 
 ## Start the template app
 
@@ -97,7 +101,7 @@ Global administrators can revert this change for their tenant and show identifia
   
 3. Uncheck the statement **In all reports, display de-identified names for users, groups, and sites**, and then save your changes.  
   
-It'll take a few minutes for these changes to take effect. Showing identifiable user information is a logged event in the Microsoft 365 compliance center audit log.   
+It'll take a few minutes for these changes to take effect. Showing identifiable user information is a logged event in the Microsoft Purview compliance portal audit log.   
 
 ## Related content
 
