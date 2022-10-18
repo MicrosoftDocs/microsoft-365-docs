@@ -14,7 +14,8 @@ manager: dansimp
 ms.topic: article
 ms.date: 10/10/2022
 ms.collection: 
-- M365-security-compliance
+- m365-security
+- tier2
 - m365initiative-defender-endpoint
 ---
 
