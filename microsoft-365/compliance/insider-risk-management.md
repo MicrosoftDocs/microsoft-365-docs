@@ -135,7 +135,7 @@ Selecting a case on the case dashboard opens the case for investigation and revi
 - **Content explorer**: All data files and email messages associated with alert activities are automatically captured and displayed in the Content explorer. Reviewers can filter and view files and messages by data source, file type, tags, conversation, and many more attributes.
 - **Case notes**: Reviewers can provide notes for a case in the Case Notes section. This list consolidates all notes in a central view and includes reviewer and date submitted information.
 
-![Insider risk management investigation](../media/insider-risk-investigate.png)
+![Insider risk management investigation.](../media/insider-risk-investigate.png)
 
 Additionally, the new [Audit log (preview)](insider-risk-management-audit-log.md) enables you to stay informed of the actions that were taken on insider risk management features. This resource allows an independent review of the actions taken by users assigned to one or more insider risk management role groups.
 
