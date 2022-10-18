@@ -367,7 +367,30 @@
         href: test-lab-guides-overview-solutions.md
       - name: Team with security isolation
         href: team-security-isolation-dev-test.md
-    
+
+- name: Microsoft app guidance and scenarios
+  items: 
+    - name: Purchase and add apps to Microsoft Endpoint Manager
+      items: 
+      - name: Overview
+        href: apps-guide-overview.md
+      - name: Understand app types
+        items:
+        - name: App types overview        
+          href: apps-type-overview.md
+        - name: Understand store apps        
+          href: apps-type-store.md
+        - name: Understand line-of-business apps        
+          href: apps-type-lob.md
+        - name: Understand built-in apps        
+          href: apps-type-built-in.md          
+        - name: Understand web apps
+          href: apps-type-web.md
+        - name: Understand Microsoft apps
+          href: apps-type-microsoft.md          
+        - name: Understand other app types        
+          href: apps-type-other.md
+
 - name: Industry-specific guidance
   items: 
     - name: Microsoft 365 for frontline workers
