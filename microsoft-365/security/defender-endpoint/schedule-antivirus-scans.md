@@ -46,6 +46,8 @@ In addition to always-on, real-time protection and [on-demand antivirus](run-sca
 
 - If a device is unplugged and running on battery during a scheduled full scan, the scheduled scan will stop with event 1002, which states that the scan stopped before completion. Microsoft Defender Antivirus will run a full scan at the next scheduled time.
 
+- The scheduled scans execute during the local time zone of machine.
+
 ## Quick scan, full scan, and custom scan
 
 When you set up scheduled scans, you can specify whether the scan should be a full or quick scan. In most cases, a quick scan is recommended; however, we also recommend that you run at least one full scan after installing or enabling Defender Antivirus. This scan provides an opportunity to find existing threats and helps populate the cache for future scans.
