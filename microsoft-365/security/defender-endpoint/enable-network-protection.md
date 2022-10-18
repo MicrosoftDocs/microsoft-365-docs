@@ -149,7 +149,7 @@ Use the following procedure to enable network protection on domain-joined comput
 
 2. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 
-3. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Windows Defender Exploit Guard** \> **Network protection**.
+3. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Microsoft Defender Exploit Guard** \> **Network protection**.
 
    > [!NOTE]
    > On older versions of Windows, the group policy path may say "Windows Defender Antivirus" instead of "Microsoft Defender Antivirus."
