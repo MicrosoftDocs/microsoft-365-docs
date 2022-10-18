@@ -65,7 +65,7 @@ The results of using this playbook are:
     - Inspect operations observed in multiple platforms (EXO, SPO, Azure, etc.) within a short time span for the affected user.
         - For example, timelines for audit events of mail read/send operations and Azure resource allocation/modifications (new machine provisioning or adding to AAD) shouldn't coincide with each other.
              
-3. Investigate possible follow-on attacks. AiTM attacks are usually a means to an end and not the endgame, so inspect your environment for other attacks that follow for the affected accounts.
+3. Investigate possible follow-on attacks. AiTM attacks are usually a means-to-an-end and not the endgame, so inspect your environment for other attacks that follow for the affected accounts.
     - An example would be looking into BEC cases 
         - Look for search activities seen on the alerted user account mailbox `[CloudAppEvents]`.
             - Search activities in the mailbox could have keywords observed in financial fraud (for example, invoices, payments, etc.), which are suspicious. 
