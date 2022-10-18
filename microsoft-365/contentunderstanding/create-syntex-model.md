@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-syntex
+ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
