@@ -121,7 +121,7 @@ New user activities that need investigation automatically generate alerts that a
 
 Alerts are resolved by opening a new case, assigning the alert to an existing case, or dismissing the alert. Using alert filters, it's easy to quickly identify alerts by status, severity, or time detected. As part of the triage process, reviewers can view alert details for the activities identified by the policy, view user activity associated with the policy match, see the severity of the alert, and review user profile information.
 
-![Insider risk management triage](../media/insider-risk-triage.png)
+![Insider risk management triage.](../media/insider-risk-triage.png)
 
 ### Investigate
 
