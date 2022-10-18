@@ -66,7 +66,16 @@ Note that installation and uninstallation will not necessarily fail if a proxy i
 
 ## Post installation configuration
 
-After installation, the `HTTPS_PROXY` environment variable must be defined in the Defender for Endpoint service file. To do this, run `sudo systemctl edit --full mdatp.service`.
+After installation, configure Defender for Endpoint with static proxy in one of the following methods:
+
+```bash
+mdatp config proxy set --value http://address:port
+```
+> [!NOTE]
+> This method works for every distribution of Defender for Endpoint Linux and is **Recommended**.
+
+
+The `HTTPS_PROXY` environment variable must be defined in the Defender for Endpoint service file. To do this, run `sudo systemctl edit --full mdatp.service`.
 You can then propagate the variable to the service in one of two ways:
 
 - Uncomment the line `#Environment="HTTPS_PROXY=http://address:port"` and specify your static proxy address.
@@ -86,4 +95,4 @@ sudo systemctl daemon-reload; sudo systemctl restart mdatp
 > To remove any additions you might have made before uninstalling `mdatp`, delete the custom file from `/etc/systemd/system`.
 
 > [!NOTE]
-> Red Hat Enterprise Linux 6.X and CentOS 6.X don't support **systemctl**. To configure statuc proxy for MDE, use  **mdatp config proxy set --value http://address:port**. This method works for all other Linux distributions as well.
+> Red Hat Enterprise Linux 6.X and CentOS 6.X don't support **systemctl** and **/etc/environment** methods. To configure static proxy for MDE on these distributions, use the Recommended **mdatp config proxy set** method.
