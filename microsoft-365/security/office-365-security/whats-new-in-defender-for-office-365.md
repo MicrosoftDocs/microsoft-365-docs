@@ -47,6 +47,8 @@ For more information on what's new with other Microsoft Defender security produc
 - **[Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md):**
   - With **allow expiry management** (currently in private preview), if Microsoft has not learned from the allow, Microsoft will automatically extend the expiry time of allows, which are going to expire soon, by 30 days to prevent legitimate email from going to junk or quarantine again.
   - Customers in the government cloud environments will now be able to create allow and block entries for URLs and attachments in the Tenant Allow/Block List using the admin URL and email attachment submissions. The data submitted through the submissions experience will not leave the customer tenant, thus satisfying the data residency commitments for government cloud clients.
+- **[Enhancement in URL click alerts]**
+  - With the new lookback scenario, "A potentially malicious URL click was detected" alert will now include any clicks in the **past 48 hours** (for emails) from the time the malicious URL verdict is identified. 
 
 ## September 2022
 
