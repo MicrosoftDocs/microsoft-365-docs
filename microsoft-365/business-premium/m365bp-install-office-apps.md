@@ -27,7 +27,7 @@ description: "How to install Office on all devices in Microsoft 365 Business Pre
 
 # Install Microsoft 365 apps on all devices
 
-Okay, you've set up Microsoft 365 Business Premium, and now you can require users to install individual Office applications on their Mac, PC, or mobile devices. This is something your users should do to be part of the front lines and help protect the org against attack.
+Okay, you've set up Microsoft 365 Business Premium, and now you can require users to install individual Microsoft 365 apps on their Mac, PC, or mobile devices. This is something your users should do to be part of the front lines and help protect the org against attack.
   
 ## Watch: Install Microsoft 365 apps
 
@@ -83,7 +83,7 @@ Locate Outlook on the iPhone, and restart it. When prompted, enter a PIN and ver
 
 Follow these links for additional information on how to:
   
-- Install Office applications:  [Install Office on your PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
+- Install Microsoft 365 apps:  [Install Office on your PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 
 - Install other apps: [Project](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281), [Visio](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710), or [Skype for Business](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb) 
 
@@ -141,7 +141,7 @@ For additional details and information:
 
 Follow these links for additional information on how to:
   
-- Install Office applications:  [Install Office on your PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
+- Install Microsoft 365 apps:  [Install Office on your PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 
 - Install other apps: [Project](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281), [Visio](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710), or [Skype for Business](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
 
