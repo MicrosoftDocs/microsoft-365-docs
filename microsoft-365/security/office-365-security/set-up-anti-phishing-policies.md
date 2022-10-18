@@ -233,21 +233,17 @@ The following impersonation settings are only available in anti-phishing policie
 
   - **Show tip for impersonated users**: The From address contains an **Enable users to protect** user. Available only if **Enable users to protect** is turned on and configured.
 
-    This safety tip is controlled by the value 9.20 of the `SFTY` field in the **X-Forefront-Antispam-Report** header of the message. This safety tip is presented just like the [First contact safety tip](#first-contact-safety-tip), but the text says:
+    This safety tip is controlled by the value 9.20 of the `SFTY` field in the **X-Forefront-Antispam-Report** header of the message. The text says:
 
     > This sender appears similar to someone who previously sent you email, but may not be that person.
 
   - **Show tip for impersonated domains**: The From address contains an **Enable domains to protect** domain. Available only if **Enable domains to protect** is turned on and configured.
 
-    This safety tip is controlled by the value 9.19 of the `SFTY` field in the **X-Forefront-Antispam-Report** header of the message. This safety tip is presented just like the [First contact safety tip](#first-contact-safety-tip), but the text says:
+    This safety tip is controlled by the value 9.19 of the `SFTY` field in the **X-Forefront-Antispam-Report** header of the message. The text says:
 
     > This sender might be impersonating a domain that's associated with your organization.
 
   - **Show tip for unusual characters**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in an **Enable users to protect** sender or an **Enable domains to protect** sender domain.  Available only if **Enable users to protect** _or_ **Enable domains to protect** is turned on and configured.
-
-    This safety tip is presented just like the [First contact safety tip](#first-contact-safety-tip), but the text says:
-
-    > The email address \<email address\> includes unexpected letters or numbers. We recommend you don't interact with this message.
 
 - **Enable mailbox intelligence**: Enables or disables artificial intelligence (AI) that determines user email patterns with their frequent contacts. This setting helps the AI distinguish between messages from legitimate and impersonated senders.
 
