@@ -102,6 +102,10 @@ You'll choose from these role group options and solution actions when working wi
 |Access and view the Content Explorer|Yes|No|No|Yes|No|
 |Configure notice templates|Yes|No|Yes|Yes|No|
 |View and export audit logs|Yes|No|No|No|Yes|
+|Access and view forensic evidence captures|Yes|No|No|Yes|No|No|
+|Create forensic evidence capturing request|Yes|Yes|No|No|No|No|
+|Approve forensic evidence capturing requests|Yes|No|No|No|No|Yes|
+|View device health report|Yes|Yes|No|No|No|No|
 
 > [!IMPORTANT]
 > Make sure you always have at least one user in the built-in *Insider Risk Management* or *Insider Risk Management Admin* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get into a 'zero administrator' scenario if specific users leave your organization.
