@@ -41,17 +41,17 @@ Examples of Microsoft Defender for Office 365 organizations include:
 
 The high-level differences between anti-phishing policies in EOP and anti-phishing policies in Defender for Office 365 are described in the following table:
 
-|Feature|Anti-phishing policies in EOP|Anti-phishing policies in Defender for Office 365|
+|Feature|Anti-phishing policies<br>in EOP|Anti-phishing policies<br>in Defender for Office 365|
 |---|:---:|:---:|
-|Automatically created default policy|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|Create custom policies|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|Common policy settings<sup>\*</sup>|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|Spoof settings|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
-|First contact safety tip|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
-|Impersonation settings||![Check mark](../../media/checkmark.png)|
-|Advanced phishing thresholds||![Check mark](../../media/checkmark.png)|
+|Automatically created default policy|✔|✔|
+|Create custom policies|✔|✔|
+|Common policy settings<sup>\*</sup>|✔|✔|
+|Spoof settings|✔|✔|
+|First contact safety tip|✔|✔|
+|Impersonation settings||✔|
+|Advanced phishing thresholds||✔|
 
-<sup>\*</sup> In the default policy, the policy name, and description are read-only (the description is blank), and you can't specify who the policy applies to (the default policy applies to all recipients).
+<sup>\*</sup> In the default policy, the policy name and description are read-only (the description is blank), and you can't specify who the policy applies to (the default policy applies to all recipients).
 
 To configure anti-phishing policies, see the following articles:
 
