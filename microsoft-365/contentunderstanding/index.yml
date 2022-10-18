@@ -6,7 +6,7 @@ metadata:
   title: Microsoft Syntex documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: This page contains links to some important topics related to Microsoft Syntex features. Start here to learn about compliance for Syntex. # Required; article description that is displayed in search results. < 160 chars.
   services: 
-  ms.service: microsoft-365-enterprise #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: microsoft-syntex #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
   ms.topic: landing-page # Required
   ms.collection: enabler-strategic, m365initiative-syntex

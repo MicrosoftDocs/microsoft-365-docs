@@ -7,7 +7,7 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.customer: intro-overview
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic

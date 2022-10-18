@@ -5,7 +5,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.topic: article
 ms.collection:
 - enabler-strategic
