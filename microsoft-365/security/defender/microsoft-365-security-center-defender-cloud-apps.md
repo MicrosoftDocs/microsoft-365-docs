@@ -43,12 +43,6 @@ Learn more about the benefits: [Overview of Microsoft 365 Defender](microsoft-36
 
 The images and the tables below list the changes in navigation between Microsoft Defender for Cloud Apps and Microsoft 365 Defender.
 
-> [!NOTE]
->
-> - Some features have not yet been migrated and will be accessed from the Defender for Cloud Apps portal.
-> - The new experience is currently available for full Microsoft Defender for Cloud Apps licenses only.
-> - New customers need to first sign in to the Microsoft Defender for Cloud Apps portal.
-
 ### Discover
 
 > [!div class="mx-imgBorder"]
@@ -113,11 +107,15 @@ The images and the tables below list the changes in navigation between Microsoft
 | IP  address ranges              | Settings -> Cloud apps                                      |
 | User  groups                    | Settings -> Cloud apps                                      |
 
-> [!NOTE]
-> The new Defender for Cloud Apps experience in the Microsoft 365 Defender portal is currently available for all users detailed in [Manage admin access](/defender-cloud-apps/manage-admins), except for:
->
-> - **App/Instance admin**, **User group admin**, **Cloud Discovery global admin**, and **Cloud Discovery report admin**, as defined in [Built-in admin roles in Defender for Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
-> - User privacy groups as defined in [Activity privacy](/defender-cloud-apps/activity-privacy)
+## Limitations
+
+- The new Defender for Cloud Apps experience in the Microsoft 365 Defender portal is currently available for all users detailed in [Manage admin access](/defender-cloud-apps/manage-admins), except for:
+  - **App/Instance admin**, **User group admin**, **Cloud Discovery global admin**, and **Cloud Discovery report admin**, as defined in [Built-in admin roles in Defender for Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
+  - User privacy groups as defined in [Activity privacy](/defender-cloud-apps/activity-privacy)
+
+- The new experience is currently available for full Microsoft Defender for Cloud Apps licenses only.
+- New customers need to first sign in to the Microsoft Defender for Cloud Apps portal.
+- Some links may redirect you to the Defender for Cloud Apps portal.
 
 ## What's changed
 
