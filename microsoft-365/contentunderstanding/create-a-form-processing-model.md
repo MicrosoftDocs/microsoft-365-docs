@@ -29,7 +29,7 @@ description: Learn how to train a structured document processing model in Micros
 Using [AI Builder](/ai-builder/overview)—a feature in Microsoft Power Apps—Syntex users can create a [structured document processing](form-processing-overview.md) model directly from a SharePoint document library. 
 --->
 
-Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a structured document processing model in a content center. Follow the instructions in [Create a model on a local SharePoint site](create-local-model.md) to create the model on a local site. Then use this article to train your model.
+Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a structured document processing model in a content center. Or, follow the instructions in [Create a model on a local SharePoint site](create-local-model.md) to create the model on a local site. Then use this article to train your model.
 
 To train a structured document processing model, follow these steps:
 
@@ -57,15 +57,13 @@ You need to tag the documents to teach the model to understand the fields and ta
 
 ## Step 3: Train and publish your model
 
-1. After you create and train your model, you're ready to publish it and use it in SharePoint. For detailed steps, see [Train and publish your document processing model](/ai-builder/form-processing-train). 
+1. After you create and train your model, you're ready to publish it and use it in SharePoint. To publish the model, select **Publish**. For detailed steps, see [Train and publish your document processing model](/ai-builder/form-processing-train). 
 
-2. After the model is published, select **Use model**, and then select **Create flow**. This process creates a Power Automate flow that can run in your SharePoint document library and that extracts the fields that have been identified in the model.
+    ![Screenshot in showing the model details on the model home page.](../media/content-understanding/ai-builder-create-a-flow-1.png)
 
-    ![Screenshot in AI Builder showing the Create a flow panel.](../media/content-understanding/ai-builder-create-a-flow-1.png)
- 
-3. When completed, you'll see the message: *Your flow was successfully created*.
+2. After the model is published, you will go to the model home page. You'll then have the option to apply the model to a document library.
 
-4. Select the **Go to SharePoint** button to see the document library updated with your model.
+    ![Screenshot of the model home page to apply the model a library.](../media/content-understanding/ai-builder-create-a-flow-1.png)
 
 ## Step 4: Use your model
 
@@ -74,9 +72,9 @@ You need to tag the documents to teach the model to understand the fields and ta
     ![Document library model applied.](../media/content-understanding/doc-lib-view.png)
 
 2. Notice that the information link next to **Documents** notes that a forms processing model is applied to this document library.
-
+<!---
     ![Info button.](../media/content-understanding/info-button.png)  
-
+--->
 3. Upload files to your document library. Any files that the model identifies as its content type lists the files in your view and displays the extracted data in the columns.
 
     ![Done.](../media/content-understanding/doc-lib-done.png) 
@@ -84,10 +82,24 @@ You need to tag the documents to teach the model to understand the fields and ta
 > [!NOTE]
 > If a structured or freeform document processing model and an unstructured document processing model are applied to the same library, the file is classified using the unstructured document processing model and any trained extractors for that model. If there are any empty columns that match the document processing model, the columns will be populated using those extracted values.
 
+### Classification Date field
+
+When any custom model is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
+
+When a model is stamped with the **Classification Date**, you can use the **Send an email after Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in the SharePoint document library.
+
+To run the flow:
+
+1. Select a file, and then select **Integrate** > **Power Automate** > **Create a flow**.
+
+2. On the **Create a flow** panel, select **Send an email after Syntex processes a file**.
+
+    ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
+
 ### Use flows to extract information
 
 > [!IMPORTANT]
-> The information in this section doesn't apply to the latest release of Syntex. It applies only to the form processing models that were created in previous releases. In the latest release, you no longer need to configure the flows to process existing files.
+> The information in this section doesn't apply to the latest release of Syntex. It is left as reference only for the form processing models that were created in previous releases. In the latest release, you no longer need to configure the flows to process existing files.
 
 Two flows are available to process a selected file or batch of files in a library where a structured document processing model has been applied.
 
@@ -106,20 +118,6 @@ Two flows are available to process a selected file or batch of files in a librar
     
 > [!NOTE]
 > The **Extract info from an image or PDF file with a document processing model** flow is automatically available for a library with a document processing model associated. The **Extract info from files with a document processing model** flow is a template that must be added to the library if required.
-
-### Classification Date field
-
-When any custom model is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
-
-When a model is stamped with the **Classification Date**, you can use the **Send an email after Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in the SharePoint document library.
-
-To run the flow:
-
-1. Select a file, and then select **Integrate** > **Power Automate** > **Create a flow**.
-
-2. On the **Create a flow** panel, select **Send an email after Syntex processes a file**.
-
-    ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
 
 ## See also
 
