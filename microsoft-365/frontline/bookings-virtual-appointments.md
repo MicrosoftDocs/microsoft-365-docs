@@ -53,6 +53,8 @@ With Bookings, you get an experience that's tailored to your industry. Here's a 
 |Retail   | Virtual fittings and consultations <br/>Schedule and manage appointments for your sales associates, product experts, and design consultants to conduct virtual fittings and consultations with customers.   |
 |Healthcare   |  Virtual appointments for patient care <br/>Schedule and manage appointments for your care team members to meet with patients or other healthcare providers to discuss medical care.   |
 
+With any Microsoft 365 or Office 365 license, you can use Virtual Appointments basic capabilities that make it easy to schedule and join business-to-customer meetings. With Teams Premium, your organization gets advanced Virtual Appointments capabilities to drive operational excellence and personalize customer experiences. [Learn more about Teams Premium]().
+
 This article gives you an overview of how to schedule, manage, and conduct virtual appointments using the Bookings app in Teams.
 
 ## Before you get started
@@ -100,7 +102,7 @@ You can configure options such as whether attendees can [join from a a desktop o
 ##### Set up SMS text notifications
 
 > [!NOTE]
-> ADD promo and Premium messaging<br>Unlimited SMS notifications are available through to November 30, 2022. As we get closer to the end of the promotion period, we'll provide additional details on licensing requirements. Contact your account team or support to receive pricing details after the promotion period.<br>Unlimited SMS notifications are available through to November 30, 2022. After this promotion period, a Teams Premium license is required. [Learn more about advanced Virtual Appointments in Teams Premium]().
+> ADD promo and Premium messaging<br>Unlimited SMS notifications are available through to November 30, 2022. As we get closer to the end of the promotion period, we'll provide additional details on licensing requirements. Contact your account team or support to receive pricing details after the promotion period.<br>Unlimited SMS notifications are available through to November 30, 2022. After this promotion period, a Teams Premium license is required. [Learn more about Teams Premium]().
 
 Attendees need a valid United States, Canada, or United Kingdom phone number before they can receive SMS notifications.
 
@@ -127,7 +129,7 @@ When a scheduler uses the appointment type to schedule an appointment, they can 
 #### On-demand appointment type
 
 > [!NOTE]
-> This feature requires a Teams Premium license. [Learn more about advanced Virtual Appointments in Teams Premium]().
+> This feature requires a Teams Premium license. [Learn more about Teams Premium]().
 
 Enter a name for the service. For example, Drop-in appointment, Account opening, Prescription renewal, Loan consultation, Tax preparation.
 
@@ -174,14 +176,14 @@ The Bookings web app gives you additional capabilities. For example, you can pub
 
 To learn more, see [Microsoft Bookings](/microsoft-365/bookings/bookings-overview).
 
-## Get insight into virtual appointments usage
+## Get insight into Virtual Appointments usage
 
 > [!NOTE]
-> Find out which reports to include here, add take-back/Premium messaging, as needed.<br>This feature will soon require a Team Premium license. [Learn more about advanced Virtual Appointments in Teams Premium]().
+> Find out which reports to include here, add take-back/Premium messaging, as needed.<br>This feature will soon require a Team Premium license. [Learn more about Teams Premium]().
 
-The [Virtual Appointments usage report](virtual-visits-usage-report.md) in the Microsoft Teams admin center gives admins an overview of Teams virtual appointment activity in your organization. The report shows detailed analytics for virtual appointments including Bookings appointments.
+The [Virtual Appointments usage report](virtual-visits-usage-report.md) in the Microsoft Teams admin center gives admins an overview of Teams Virtual Appointment activity in your organization. The report shows detailed analytics for virtual appointments including Bookings appointments.
 
-You can view key metrics such as lobby wait time and appointment duration. Use this information to gain insight into usage trends to help you optimize virtual appointments to deliver better business outcomes.
+You can view key metrics such as lobby wait time and appointment duration. Use this information to gain insight into usage trends to help you optimize Virtual Appointments to deliver better business outcomes.
 
 ## Related articles
 
