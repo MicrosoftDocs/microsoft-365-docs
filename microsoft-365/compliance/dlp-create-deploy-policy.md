@@ -82,13 +82,14 @@ Here's a list of applicable role groups that are in preview. To learn more about
 - Information Protection Investigators
 - Information Protection Readers
 
-## Workflow overview
-
-Add a diagram here for creation and deployment
-
 ## Policy creation scenarios
 
-### Scenario 1
+
+
+### Scenario 1 Exchange and SharePoint online
+
+
+policy intent statement
 4)	Scenario 1 email (SPO) - “We need to block emails to all recipients that contain credit card numbers or that have the  ‘highly confidential’ sensitivity label applied except if the email is sent from someone on the finance team to adele.vance@fabrikam.com” - introduces NOT
 a.	Mapping
 b.	Creation - can include template/custom
