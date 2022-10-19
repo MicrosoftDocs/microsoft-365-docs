@@ -21,9 +21,9 @@ f1.keywords: NOCSH
 Logging into the Azure portal, you can see application test results at scheduled intervals against selected updates from the Overview page of your Test Base account.  
 Clicking your Test Base account name, and then clicking links under the Insights category in the left-hand sector of the page, as follows:
 
-- Test Summary — general overview of test results and status
--	Security Update Results — overview and details of security update-related application test results
--	Feature Update Results — overview and details of feature update-related application test results 
+- Test Summary—general overview of test results and status
+-	Security Update Results—overview and details of security update-related application test results
+-	Feature Update Results—overview and details of feature update-related application test results 
 
 From the latter two pages, you will have detailed views of test results that focus on the following areas: 
 -	Script executions 
