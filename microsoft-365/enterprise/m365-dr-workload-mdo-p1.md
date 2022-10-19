@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 10/11/2022
+ms.date: 
 ms.reviewer: 
 ms.custom:
 - it-pro
@@ -20,10 +20,7 @@ ms.collection:
 
 ## Summary
 
-Service documentation:  
-
-- [Office 365 Security including Microsoft Defender for Office 365 and Exchange Online Protection](/security/office-365-security/defender-for-office-365)
-
+Service documentation: [Office 365 Security including Microsoft Defender for Office 365 and Exchange Online Protection](https://learn.microsoft.com/microsoft-365/security/office-365-security/defender-for-office-365)
 
 Capability Summary: Protects email and collaboration from zero-day malware, phish, and business email compromise.  MDO P1 builds on Exchange Online Protection (EOP).  
 
@@ -39,15 +36,15 @@ Required Conditions:
 
 **Commitment:**
 
-The following customer data will be stored in the related *Geography*:
+The following customer data will be stored in the related _Geography_:
 
-- MDO P1 does not store any customer data within its service.  In addition, all processing of data that is required to analyze threats and inspect suspicious emails, documents, messages, links, etc. is done in a sandbox environment and performed within the *Local Geography* or *Expanded Local Geography*.
+- MDO P1 does not store any customer data within its service.  In addition, all processing of data that is required to analyze threats and inspect suspicious emails, documents, messages, links, etc. is done in a sandbox environment and performed within the _Local Region Geography_ or _Expanded Local Region Geography_.
 
 ## Exchange Online Protection
 
 ### Summary
 
-Service documentation: [Exchange Online Protection (EOP) overview](/security/office-365-security/exchange-online-protection-overview)
+Service documentation: [Exchange Online Protection (EOP) overview](https://learn.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview)
 
 Capability summary: Exchange Online Protection (EOP) is the cloud-based filtering service that protects your organization against spam, malware, and other email threats.
 

@@ -24,7 +24,13 @@ ms.collection:
 ## How to Request your Data Move - FINAL OPPORTUNITY
 
 > [!NOTE]
-> Due to the release of Advanced Data Residency, *we are opening the opt-in period for all previously released in-country data centers* (minus Qatar) to allow all remaining region-based tenants to opt in for a final free move to their respective signup countries.  This move effort will have an SLO (Service Level Objective) of 24 months, starting from the request deadline date. See the table below for a list of eligible countries and related dates.
+> Due to the release of Advanced Data Residency, *we are opening the opt-in period for all previously released in-country data centers* (minus Qatar) to allow all remaining region-based tenants to opt in for a final free move to their respective signup countries.  This move effort will have a migration commitment timeline of 24 months, starting from the request deadline date. See the table below for a list of eligible countries and related dates.
+
+Eligible customers will see a page in the Microsoft 365 admin center which will allow them to request to have their core customer data moved to their new datacenter region.
+
+To access the page in the Microsoft 365 admin center, in the navigation pane on the left, expand **Settings**, and then click **Org Settings**. Select the tab **Organization profile**, then select the option **Data residency**.
+
+You will not see this section if your tenant is not eligible for the Microsoft 365 Move Program. If your organization has data residency requirements and you need to request migration, mark the checkbox and then Save.
 
 ## When Can I Request a Move (final opt-in opportunity)
 
@@ -48,7 +54,7 @@ ms.collection:
 ## Remaining Countries in the Move Program
 
 > [!NOTE]
-> Even though the Move Program is officially ending, we still have some in-flight geographies that we will see through to completion, based on the original 24-month SLO. Please refer to the table below for the remaining countries and their migration deadlines. 
+> Even though the Move Program is officially ending, we still have some in-flight geographies that we will see through to completion, based on the original 24-month migration commitment. Please refer to the table below for the remaining countries and their migration deadlines. 
 
 |**Customers with signup country in**|**All moves completed by**|
 |:-----|:-----|
@@ -56,6 +62,18 @@ ms.collection:
 | Brazil <br/> | June 1, 2023  <br/> |
 | Sweden <br/> | June 1, 2024  <br/> |
 | Qatar <br/> | March 1, 2025  <br/> |
+
+### Data Residency Option Moving Forward
+
+With the release of Advanced Data Residency, we are only providing a data residency option to eligible Microsoft 365 customers who are covered by the data centers listed in the _Local Region Geography_ on the [Overview and Definitions page](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-overview?view=o365-worldwide&branch=kvice-ADR-new).
+
+### Migration Expectations
+
+The complexity, precision and scale at which we need to perform data moves within a globally operated and automated environment prohibit us from sharing when a data move is expected to complete for your tenant or any other single tenant. Customers will receive one confirmation in Message Center per participating service when its data move has completed.
+
+Data moves are a back-end service operation with minimal impact to end-users. We adhere to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for availability so there is nothing that customers need to prepare for or to monitor during the move. Notification of any service maintenance is done if needed.
+
+During the migration process, Microsoft temporarily copies your address book data into Microsoft global resources where it is encrypted and only used to support business continuity and disaster recovery operations (BCDR). After Microsoft has completed the mailbox data moves, Microsoft deletes that temporary data from the global resources. Microsoft continues to invest in global and regional resources on a regular basis. In calendar year 2023, Microsoft plans to utilize regional resources for BCDR purposes during the migration process.
 
 ## Data move general FAQ
 
