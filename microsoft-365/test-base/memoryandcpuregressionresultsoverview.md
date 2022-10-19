@@ -24,6 +24,3 @@ Other viewable data includes Memory Utilization Charts that measure utilization 
 
 Increases in Memory or CPU utilization can be an indication that an application was affected by an operating system update. **Test Base for Microsoft 365** provides software developers and others with insights into Memory and CPU performance regressions. Such changes in performance may occur when an application is running on different pre-release versions of an upcoming Windows operating system update.
 In the sections that follow, more is described about Memory and CPU regression analysis.
-
-
-
