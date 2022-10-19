@@ -183,7 +183,7 @@
         - name: Product Terms Data Residency
           href: m365-dr-product-terms-dr.md
         - name: Advanced Data Residency
-          href: advanced-data-residency
+          href: advanced-data-residency.md
         - name: Multi-geo Data Residency
           items: 
             - name: Microsoft 365 Multi-Geo
@@ -208,8 +208,6 @@
                   href: m365-multi-geo-user-testing.md
             - name: Manage
               items: 
-                - name: Administering a multi-geo environment
-                  href: administering-a-multi-geo-environment.md
                 - name: Add or remove a geo administrator
                   href: add-a-sharepoint-geo-admin.md
                 - name: Restrict content to a geo location
@@ -220,8 +218,6 @@
                   href: multi-geo-add-group-with-pdl.md
                 - name: Delete a geo location
                   href: delete-a-geo-location.md
-                - name: Multi-geo FAQ
-                  href: m365-dr-faq.md
         - name: Workload Data Residency Capabilities
           items:
             - name: Exchange Online
@@ -244,7 +240,7 @@
               href: m365-dr-workload-other.md
         - name: Legacy Move Program
           href: m365-dr-legacy-move-program.md
-        - name: Data Maps Page 
+        - name: Where is my data stored? 
           href: o365-data-locations.md
         - name: EU Page 
           href: eu-data-storage-locations.md 

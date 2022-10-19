@@ -69,7 +69,8 @@ Follow these steps to get started with Multi-Geo:
 6. [Set up search](configure-search-for-multi-geo.md).
   
 > [!NOTE]
-> For more information on the Microsoft 365 services that support Multi-Geo please see ***sections 6.1, 6.2 and 6.3 [NEEDS CORRECT SECTION / PAGE REFERENCING]***
+> For more information on the Microsoft 365 services that support Multi-Geo please see the [EXO](m365-dr-workload-exo.md), [ODSP](m365-dr-workload-spo.md) and [Teams](m365-dr-workload-teams.md) workload data residency pages for more details.
+
 
 ## See also
 
@@ -79,4 +80,4 @@ Follow these steps to get started with Multi-Geo:
 
 [Multi-Geo Capabilities in Exchange Online](multi-geo-capabilities-in-exchange-online.md)
 
-[Teams experience in a multi-geo environment](/microsoftteams/teams-experience-o365odb-spo-multi-geo)
+[Teams experience in a multi-geo environment](https://learn.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo)
