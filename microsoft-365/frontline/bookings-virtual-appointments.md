@@ -131,7 +131,7 @@ When a scheduler uses the appointment type to schedule an appointment, they can 
 #### On-demand appointment type
 
 > [!NOTE]
-> This feature requires a [Teams Premium](https://review.learn.microsoft.com/MicrosoftTeams/enhanced-teams-experience?branch=danismith-t-pre-licensing) license.
+> ADD Premium messaging<br>This feature requires a [Teams Premium](https://review.learn.microsoft.com/MicrosoftTeams/enhanced-teams-experience?branch=danismith-t-pre-licensing) license.
 
 Enter a name for the service. For example, Drop-in appointment, Account opening, Prescription renewal, Loan consultation, Tax preparation.
 
@@ -154,7 +154,7 @@ In your Teams or Outlook calendar, go to the booking, and then select **Join** o
 ## Monitor appointments and get real-time status updates in the queue view
 
 > [!NOTE]
-> Add take-back/Premium (scheduled queue) and Premium (on-demand) messaging<br>Access to scheduled appointments in the queue view will soon require a [Teams Premium](https://review.learn.microsoft.com/MicrosoftTeams/enhanced-teams-experience?branch=danismith-t-pre-licensing) license. A [Teams Premium](https://review.learn.microsoft.com/MicrosoftTeams/enhanced-teams-experience?branch=danismith-t-pre-licensing) license is required to see on-demand appointments in the queue view.
+> Add take-back/Premium (scheduled queue) and Premium (on-demand) messaging<br>Access to scheduled appointments in the queue view will soon require a [Teams Premium](https://review.learn.microsoft.com/MicrosoftTeams/enhanced-teams-experience?branch=danismith-t-pre-licensing) license. A [Teams Premium](https://review.learn.microsoft.com/MicrosoftTeams/enhanced-teams-experience?branch=danismith-t-pre-licensing) license is needed to access on-demand appointments.
 
 The queue view provides your staff with a dashboard to monitor all scheduled and on-demand virtual appointments for the day, with updates in real time. To see the queue, go to the **Queue** tab.
 
@@ -183,7 +183,7 @@ To learn more, see [Microsoft Bookings](/microsoft-365/bookings/bookings-overvie
 > [!NOTE]
 > Find out which reports to include here, add take-back/Premium messaging, as needed.<br>This feature will soon require a [Teams Premium](https://review.learn.microsoft.com/MicrosoftTeams/enhanced-teams-experience?branch=danismith-t-pre-licensing) license.
 
-The [Virtual Appointments usage report](virtual-visits-usage-report.md) in the Microsoft Teams admin center gives admins an overview of Teams Virtual Appointment activity in your organization. The report shows detailed analytics for virtual appointments including Bookings appointments.
+The [Virtual Appointments usage report](virtual-visits-usage-report.md) in the Microsoft Teams admin center gives admins an overview of Teams Virtual Appointments activity in your organization. The report shows detailed analytics for virtual appointments including Bookings appointments.
 
 You can view key metrics such as lobby wait time and appointment duration. Use this information to gain insight into usage trends to help you optimize Virtual Appointments to deliver better business outcomes.
 
