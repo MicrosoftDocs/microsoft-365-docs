@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.topic: article
+ms.topic: conceptualual
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
