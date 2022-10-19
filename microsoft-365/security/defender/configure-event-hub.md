@@ -20,7 +20,7 @@ ms.collection:
 - m365-security
 - tier2
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Configure your Event Hubs
