@@ -7,11 +7,11 @@ author: chrisda
 manager: dansimp
 ms.date: 
 ms.audience: Admin
-ms.topic: article
+ms.topic: conceptual
 audience: Admin
 ms.localizationpriority: high
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 search.appverid: 
   - MOE150
   - MET150

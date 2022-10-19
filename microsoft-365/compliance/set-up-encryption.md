@@ -13,6 +13,9 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
+ms.collection: 
+- tier1
+- purview-compliance
 ms.assetid: e86fc991-0161-4f01-9c1c-d25e87733d06
 description: "With Office 365, some encryption capabilities are turned on by default; other capabilities can be configured to meet certain compliance or legal requirements."
 ---
@@ -40,6 +43,8 @@ With Office 365, several encryption capabilities are available by default. Addit
 |Files are shared in online meetings and IM conversations (Skype for Business Online)|When people are working with files using Skype for Business Online, TLS is used for the connection. This is built into Office 365 automatically. See [Security and Archiving (Skype for Business Online)](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features).|
 |Files are shared in online meetings and IM conversations (Microsoft Teams)|When people are working with files using Microsoft Teams, TLS is used for the connection. This is built into Office 365 automatically. Microsoft Teams does not currently support inline rendering of encrypted email. To prevent encrypted email from landing in Microsoft Teams as encrypted, see [Message Encryption FAQ](./ome-faq.yml#can-i-automatically-remove-encryption-on-incoming-and-outgoing-mail-).|
 |
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Additional information
 

@@ -260,6 +260,14 @@
           href: insider-risk-management-activities.md
         - name: Take action on insider risk cases
           href: insider-risk-management-cases.md
+        - name: Capture clips with forensic evidence (preview)
+          items:
+          - name: Learn about forensic evidence (preview)
+            href: insider-risk-management-forensic-evidence.md
+          - name: Get started with forensic evidence (preview)
+            href: insider-risk-management-forensic-evidence-configure.md
+          - name: Manage forensic evidence (preview)
+            href: insider-risk-management-forensic-evidence-manage.md
         - name: Learn about and configure browser signal detection
           href: insider-risk-management-browser-support.md
         - name: Review activities with the insider risk audit log
@@ -396,6 +404,8 @@
                 href: sensitive-information-type-entity-definitions.md
               - name: ABA routing number
                 href: sit-defn-aba-routing.md
+              - name: All credentials
+                href: sit-defn-all-creds.md
               - name: All full names
                 href: sit-defn-all-full-names.md
               - name: All medical terms and conditions
@@ -566,8 +576,6 @@
                 href: sit-defn-china-resident-identity-card-number.md
               - name: Client secret / API key
                 href: sit-defn-client-secret-api-key.md
-              - name: Credentials in URL
-                href: sit-defn-credentials-in-url.md
               - name: Credit card number
                 href: sit-defn-credit-card-number.md
               - name: Croatia drivers license number
@@ -768,6 +776,8 @@
                 href: sit-defn-japan-my-number-personal.md
               - name: Japan passport number
                 href: sit-defn-japan-passport-number.md
+              - name: Japan physical addresses
+                href: sit-defn-japan-physical-addresses.md
               - name: Japan residence card number
                 href: sit-defn-japan-residence-card-number.md
               - name: Japan resident registration number
@@ -1016,6 +1026,8 @@
           href: classifier-get-started-with.md
         - name: How to retrain a classifier in content explorer
           href: classifier-how-to-retrain-content-explorer.md
+        - name: Trainable classifier definitions
+          href: classifier-tc-definitions.md
     - name: Data classification
       items: 
         - name: Learn about data classification
@@ -1032,7 +1044,7 @@
       items:
         - name: Learn about sensitivity labels
           href: sensitivity-labels.md
-        - name: Why choose built-in labeling for Office apps
+        - name: Migrate the AIP add-in for Office apps
           href: sensitivity-labels-aip.md
         - name: Get started with sensitivity labels
           href: get-started-with-sensitivity-labels.md
@@ -1309,6 +1321,8 @@
           href: file-plan-manager.md
         - name: Start retention when an event occurs
           href: event-driven-retention.md
+        - name: Customization for the end of the retention period
+          href: retention-label-flow.md
         - name: Publish & apply retention labels in apps
           href: create-apply-retention-labels.md
         - name: Automatically apply retention labels to content

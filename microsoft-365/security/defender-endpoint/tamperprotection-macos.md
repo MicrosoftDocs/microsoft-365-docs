@@ -12,8 +12,9 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-ms.topic: article
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---
@@ -74,7 +75,6 @@ You can configure the tamper protection mode by providing the mode name as enfor
 
 - Supported macOS versions: Monterey (12), Big Sur (11), Catalina (10.15+).
 - Minimum required version for Defender for Endpoint: 101.70.19.
-- You must be on a non-Production update channel ([either Preview or Beta](/deployoffice/office-insider/deploy/microsoft-autoupdate)), while the Tamper Protection feature is in preview. If you are on Production channel, configured tamper protection mode will ignored.
 
 **Highly recommended settings:**
 

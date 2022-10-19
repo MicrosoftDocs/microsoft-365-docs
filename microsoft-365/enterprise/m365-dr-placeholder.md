@@ -16,3 +16,7 @@ ms.collection:
 ---
 
 # Advanced Data Residency for Microsoft 365
+
+Thank you for your interest in Microsoft 365 Advanced Data Residency. You've reached a temporary, pre-launch landing page. The production page for Microsoft 365 Advanced Data Residency will be published on October 31, 2022.
+
+General availability of this offering is scheduled for November 1, 2022. Please visit this page again then for details on this offering.

@@ -1,5 +1,6 @@
 ---
 title: "Assign eDiscovery permissions in the Microsoft Purview compliance portal"
+description: "Assign the permissions required to perform eDiscovery-related tasks using the Microsoft Purview compliance portal."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,14 +10,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: "Assign the permissions required to perform eDiscovery-related tasks using the Microsoft Purview compliance portal."
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
@@ -48,6 +48,8 @@ The primary eDiscovery-related role group in compliance portal is called **eDisc
 > [!NOTE]
 > To analyze a user's data using eDiscovery (Premium), the user (the custodian of the data) must be assigned an Office 365 E5 or Microsoft 365 E5 license. Alternatively, users with an Office 365 E1 or a Office 365 or Microsoft 365 E3 license can be assigned a Microsoft 365 E5 Compliance or Microsoft 365 eDiscovery and Audit add-on license. Administrators, compliance officers, or legal personnel who are assigned to cases as members and use eDiscovery (Premium) to collect, view, and analyze data don't need an E5 license. For more information about eDiscovery (Premium) licensing, see [Subscriptions and licensing in eDiscovery (Premium)](overview-ediscovery-20.md#subscriptions-and-licensing).
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you assign permissions
 
 - You have to be a member of the Organization Management role group or be assigned the Role Management role to assign eDiscovery permissions in the compliance portal.

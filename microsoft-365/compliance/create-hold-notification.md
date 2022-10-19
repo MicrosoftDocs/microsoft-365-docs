@@ -1,5 +1,6 @@
 ---
 title: "Create a legal hold notice"
+description: Use the Communications tool in an eDiscovery (Premium) case to send, collect, and track legal hold notifications.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,13 +11,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid:
-
-description: Use the Communications tool in an eDiscovery (Premium) case to send, collect, and track legal hold notifications.
 ms.custom: seo-marvel-mar2020
 ---
 
@@ -27,6 +28,8 @@ Using eDiscovery (Premium) custodian communications, organizations can manage th
 ![Communications Page.](../media/CommunicationPage.PNG)
 
 The article outlines the steps in the hold notification workflow.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Specify communication details
 

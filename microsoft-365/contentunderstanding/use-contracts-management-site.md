@@ -1,5 +1,5 @@
 ---
-title: Use the Contracts Management site template for Microsoft SharePoint Syntex
+title: Use the Contracts Management site template for Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,12 +12,12 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to provision, use, and customize the Contracts Management site template in Microsoft SharePoint Syntex.
+description: Learn how to provision, use, and customize the Contracts Management site template in Microsoft Syntex.
 ---
 
-# Use the Contracts Management site template for Microsoft SharePoint Syntex
+# Use the Contracts Management site template for Microsoft Syntex
 
-The Contracts Management site is a ready-to-deploy and customizable SharePoint site template that helps your organization maximize the value of SharePoint Syntex. The site is designed to let you create a professional site to manage, process, and track the status of contracts in your organization.
+The Contracts Management site is a ready-to-deploy and customizable SharePoint site template that helps your organization maximize the value of Microsoft Syntex. The site is designed to let you create a professional site to manage, process, and track the status of contracts in your organization.
 
 ## Features of the site
 
@@ -25,7 +25,7 @@ The Contracts Management site is a ready-to-deploy and customizable SharePoint s
 
 The Contract Management site includes pre-populated pages, web parts, and site navigation. The site can be customized to incorporate your organization's own branding, employee information, policy and planning information, workflow, contacts, and resources.
 
-The site uses the power of a SharePoint Syntex model running on a SharePoint document library to classify documents and extract metadata. The site provides prebuilt document libraries to get you started quickly, but you can also create your own as needed. The site includes the following featured libraries:
+The site uses the power of a Syntex model running on a SharePoint document library to classify documents and extract metadata. The site provides prebuilt document libraries to get you started quickly, but you can also create your own as needed. The site includes the following featured libraries:
 
 - **Regions** – Classify contract documents by geographical area, country, or region.
 
@@ -37,7 +37,7 @@ The site uses the power of a SharePoint Syntex model running on a SharePoint doc
 
 - **Models** – Use the model in this library to classify documents and extract metadata. Users can create their own models to fit their needs and add them to this library.
 
-- **Sample contracts library** – Find files that were classified and have had metadata extracted using the SharePoint Syntex model. 
+- **Sample contracts library** – Find files that were classified and have had metadata extracted using the Syntex model. 
 
 There is a separate view in the library where you can track other metadata such as status, and that uses document library formatting to show it in a more visual way.
 
@@ -48,9 +48,9 @@ The Contracts Management site can be provisioned from the [SharePoint look book 
 ![Screenshot of the Contracts Management site template provisioning page.](../media/content-understanding/contracts-management-site-provisioning-page.png)
 
 > [!NOTE]
-> You must be a global administrator or SharePoint administrator in Microsoft 365 to provision the site. You also must have a SharePoint Syntex license to add this site template to your organization.
+> You must be a global administrator or SharePoint administrator in Microsoft 365 to provision the site. You also must have a Syntex license to add this site template to your organization.
 
-1. From the main page of the [SharePoint look book](https://lookbook.microsoft.com/), on the **View the designs** menu, select **SharePoint Syntex** > **SharePoint Syntex Contracts Management**.
+1. From the main page of the [SharePoint look book](https://lookbook.microsoft.com/), on the **View the designs** menu, select **Syntex** > **Syntex Contracts Management**.
 
 2. On the **Contracts Management** page, select **Add to your tenant**.
 
@@ -99,9 +99,9 @@ You have control of the site navigation for the Contracts Management site. Use t
 The Contracts Management site contains the components you need to get started, but you can also include additional components, such as:
 
 - Use a [Power Automate flow](/power-automate/getting-started) to trigger a workflow when a new contract is added to the **Contract requests** library.
-- Build additional [SharePoint Syntex models](/microsoft-365/contentunderstanding/#models).
+- Build additional [Syntex models](/microsoft-365/contentunderstanding/#models).
 - Use the [content assembly](content-assembly.md) feature on the **Templates** library.
-- Create a [contracts management solution](solution-manage-contracts-in-microsoft-365.md) by using SharePoint Syntex together with other components of Microsoft 365.
+- Create a [contracts management solution](solution-manage-contracts-in-microsoft-365.md) by using Syntex together with other components of Microsoft 365.
 
 ## Share the site with others
 

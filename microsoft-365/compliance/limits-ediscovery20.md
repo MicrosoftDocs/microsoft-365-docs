@@ -1,5 +1,6 @@
 ---
 title: "eDiscovery (Premium) limits"
+description: "Learn about the case limits, indexing limits, and search limits in effect for the eDiscovery (Premium) solution in Microsoft 365."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,18 +10,22 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn about the case limits, indexing limits, and search limits in effect for the eDiscovery (Premium) solution in Microsoft 365."
 ---
 
 # Limits in eDiscovery (Premium)
 
 This article describes the limits in the Microsoft Purview eDiscovery (Premium) solution in Microsoft 365.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Case and review set limits
 

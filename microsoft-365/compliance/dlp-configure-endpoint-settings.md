@@ -13,7 +13,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - SPO_Content
 search.appverid: 
 - MET150
@@ -35,13 +36,15 @@ You must configure these settings if you intend to control:
 - How business justifications for overriding policies appear in policy tips.
 - If activities on Office, PDF, and CSV files are automatically audited.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## DLP settings
 
 Before you get started, you should set up your DLP settings. 
 
 ### Endpoint DLP Windows 10/11 and macOS settings
 
-|Setting |Windows 10, 1809 and later, Windows 11  |macOS Catalina 10.15 or later |Notes  |
+|Setting |Windows 10, 1809 and later, Windows 11  |macOS (three latest released versions) |Notes  |
 |---------|---------|---------|---------|
 |File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
 |Restricted apps     |Supported         |Supported         |         |
@@ -86,7 +89,7 @@ You can use this logic to construct your exclusion paths for Windows 10 devices:
 
 - Valid file path that ends with `\`, which means only files directly under folder. <br/>For example: `C:\Temp\`
 
-- Valid file path that ends with `\*`, which means only files under subfolders. Files directly under the folder are not excluded. <br/>For example: `C:\Temp\*`
+- Valid file path that ends with `\*`, which means only files under subfolders. Files directly under the folder aren't excluded. <br/>For example: `C:\Temp\*`
 
 - Valid file path that ends without `\` or `\*`, which means all files directly under folder and all subfolders. <br/>For example: `C:\Temp`
 
@@ -106,7 +109,7 @@ Similar to Windows 10 devices you can add your own exclusions for macOS devices.
 
 - Wildcard values are supported. So a path definition can contain a `*` in the middle of the path or at the end of the path. For example: `/Users/*/Library/Application Support/Microsoft/Teams/*`
 
-#####  Recommended file path exclusions (preview)
+##### Recommended file path exclusions (preview)
 
 For performance reasons, Endpoint DLP includes a list of recommended file path exclusions for macOS devices. These exclusions are turned on by default. You can disable them if you want by toggling the **Include recommended file path exclusions for Mac** toggle. The list includes:
 
@@ -134,7 +137,7 @@ When **Access by restricted apps** is selected in a policy and a user uses an ap
 
 #### File activities for apps in restricted app groups
 
-Restricted app groups are collections of apps that you create in DLP settings and then add to a rule in a policy. When you add a restricted app group to a policy you can take the actions defined in this table.
+Restricted app groups are collections of apps that you create in DLP settings and then add to a rule in a policy. When you add a restricted app group to a policy, you can take the actions defined in this table.
 
 |Restricted App group option  |What it allows you to do  |
 |---------|---------|
@@ -159,7 +162,7 @@ The configurations of **Restricted app activities** and **File activities for al
 
 Here's an example:
 
-If Notepad.exe is added to **Restricted appss** and **File activities for all apps** is configured to **Apply restrictions to specific activity** and both are configure like this:
+If Notepad.exe is added to **Restricted apps** and **File activities for all apps** is configured to **Apply restrictions to specific activity** and both are configured like this:
 
 |Setting in policy  |App name  |User activity  |DLP action to take  |
 |---------|---------|---------|---------|
@@ -178,7 +181,7 @@ User A opens a DLP protected file using Notepad. DLP allows the access and audit
    
 ##### File activities for all apps only
 
-If an app is not in **File activities for apps in restricted app groups** or is not in the **Restricted app activities** list or is in the **Restricted app activities** list with an action of `Audit only`, or 'Block with override`, any restrictions defined in the **File activities for all apps** are applied in the same rule.  
+If an app isn't in **File activities for apps in restricted app groups** or isn't in the **Restricted app activities** list or is in the **Restricted app activities** list with an action of `Audit only`, or 'Block with override`, any restrictions defined in the **File activities for all apps** are applied in the same rule.  
 
 #### macOS devices
 
@@ -218,7 +221,7 @@ Restrict sensitive files that match your policies from being shared with unrestr
 
 #### Unallowed browsers
 
-For Windows devices you add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Microsoft Edge.
+For Windows devices, you add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Microsoft Edge.
 
 For macOS devices, you must add the full file path. To find the full path of Mac apps:
 
@@ -233,24 +236,63 @@ For macOS devices, you must add the full file path. To find the full path of Mac
 > [!NOTE]
 > The **Service domains** setting only applies to files uploaded using Microsoft Edge or Google Chrome with the [Microsoft Purview Extension](dlp-chrome-learn-about.md#learn-about-the-microsoft-purview-extension) installed.
 
-You can control whether sensitive files protected by your policies can be uploaded to specific service domains from Microsoft Edge.
+You can control whether sensitive files that are protected by your policies can be uploaded to specific service domains from Microsoft Edge.
 
-If the list mode is set to **Block**, then user will not be able to upload sensitive items to those domains. When an upload action is blocked because an item matches a DLP policy, DLP will either generate a warning or block the upload of the sensitive item.
+##### Allow
 
-If the list mode is set to **Allow**, then users will be able to upload sensitive items ***only*** to those domains, and upload access to all other domains isn't allowed.
+When the **Service domains** list is set to **Allow**, DLP policies won't be applied when a user attempts to upload a sensitive file to any of the domains on the list.
+
+If the list mode is set to **Allow**, any user activity involving a sensitive item and a domain that's on the list will be audited. The activity is allowed. When a user attempts an activity involving a sensitive item and a domain that *isn't* on the list then DLP policies, and the actions defined in the polices, are applied.
+
+For example, with this configuration:
+
+- **Service domains** list mode is set to **Allow**.
+    - Contoso.com is on the list.
+-  A DLP policy is set to **Block** upload of sensitive items that contain credit card numbers.
+ 
+User attempts to:
+
+- Upload a sensitive file with credit card numbers to contoso.com.
+    - The user activity is allowed, audited, an event is generated, but it won't list the policy name or the triggering rule name in the event details, and no alert is generated. 
+
+but if a user attempts to: 
+
+- Upload a sensitive file with credit card numbers to wingtiptoys.com (which is not on the list).
+    - The policy is applied and the user activity is blocked. An event is generated, and an alert is generated. 
+ 
+##### Block
+ 
+When the **Service domains** list is set to **Block**, DLP policies will be applied when a user attempts to upload a sensitive file to any of the domains on the list.
+
+If the list mode is set to **Block**, when a user attempts an activity involving a sensitive item and a domain that is on the list then DLP policies, and the actions defined in the polices, are applied. Any activity involving a sensitive item and a domain that is not on the list will be audited and the user activity is allowed.
+
+For example, with this configuration:
+
+- **Service domains** list mode is set to **Block**.
+    - Contoso.com is on the list.
+-  A DLP policy is set to **Block with override** for the upload of sensitive items that contain credit card numbers.
+ 
+User attempts to:
+
+- Upload a sensitive file with credit card numbers to contoso.com.
+    - The user activity is blocked, but the user can override the block, an event is generated and an alert is triggered.
+
+but if a user attempts to: 
+
+- Upload a sensitive file with credit card numbers to wingtiptoys.com (which is not on the list).
+    - The policy *isn't* applied and the user activity is audited. An event is generated, but it won't list the policy name or the triggering rule name in the event details, and no alert is generated. 
 
 > [!IMPORTANT]
 > When the service restriction mode is set to "Allow", you must have at least one service domain configured before restrictions are enforced.
 
-Use the FQDN format of the service domain without the ending `.` 
+Use the FQDN format of the service domain without the ending `.` when you add a domain to the list.
 
 For example:
 
-
 | Input | URL matching behavior |
 |---|---|
-| **CONTOSO.COM** |**Matches the specified domain name, and any subsite**: <p>*://contoso.com<p>*://contoso.com/ <p>*://contoso.com/anysubsite1 <p>*://contoso.com/anysubsite1/anysubsite2 (etc) <p>**Does not match sub-domains or unspecified domains**: <p>*://anysubdomain.contoso.com <p>*://anysubdomain.contoso.com.AU |
-| ***.CONTOSO.COM** |**Matches the specified domain name, any subdomain, and any site**: <p>*://contoso.com <p>*://contoso.com/anysubsite <p>*://contoso.com/anysubsite1/anysubsite2 <p>*://anysubdomain.contoso.com/ <p>*://anysubdomain.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite1/anysubsite2 (etc) <p>**Does not match unspecified domains** <p>*://anysubdomain.contoso.com.AU/ |
+| **CONTOSO.COM** |**Matches the specified domain name, and any subsite**: <p>*://contoso.com<p>*://contoso.com/ <p>*://contoso.com/anysubsite1 <p>*://contoso.com/anysubsite1/anysubsite2 (etc.) <p>**Does not match sub-domains or unspecified domains**: <p>*://anysubdomain.contoso.com <p>*://anysubdomain.contoso.com.AU |
+| ***.CONTOSO.COM** |**Matches the specified domain name, any subdomain, and any site**: <p>*://contoso.com <p>*://contoso.com/anysubsite <p>*://contoso.com/anysubsite1/anysubsite2 <p>*://anysubdomain.contoso.com/ <p>*://anysubdomain.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite1/anysubsite2 (etc.) <p>**Does not match unspecified domains** <p>*://anysubdomain.contoso.com.AU/ |
 | **`www.contoso.com`** |**Matches the specified domain name**: <p>`www.contoso.com` <p>**Does not match unspecified domains or subdomains** <p>*://anysubdomain.contoso.com/, in this case, you have to put the FQDN domain name itself `www.contoso.com`|
 
 #### Sensitive service domains
@@ -260,8 +302,9 @@ When you list a website in Sensitive services domains you can audit, block with 
 - print from a website
 - copy data from a website
 - save a website as local files
+- upload a sensitive file to an excluded website (this is configured in the policy)
 
-Each website must be listed in a website group and the user must be accessing the website through Microsoft Edge. Sensitive service domains is used in conjunction with a DLP policy for Devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
+For the print, copy data and save actions, each website must be listed in a website group and the user must be accessing the website through Microsoft Edge. For the upload action, the user can be using Microsoft Edge or Google Chrome with the Purview extension. Sensitive service domains is used in conjunction with a DLP policy for Devices. You can also define website groups that you want to assign policy actions to that are different from the global website group actions. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
 
 
 ### Additional settings for endpoint DLP
@@ -292,6 +335,200 @@ You can create up to five customized options that will appear when users interac
 By default, when devices are onboarded, activity for Office, PDF, and CSV files is automatically audited and available for review in activity explorer. Turn this feature off if you want this activity to be audited only when onboarded devices are included in an active policy.
 
 File activity will always be audited for onboarded devices, regardless of whether they're included in an active policy.
+
+> [!IMPORTANT]
+> Before you can use [Printer groups (preview)](#printer-groups-preview), [Removable storage device groups](#removable-storage-device-groups-preview), [Network share groups](#network-share-groups-preview), and [VPN settings](#vpn-settings-preview) you must register [here](https://forms.office.com/r/GNVTFvxuZv).
+
+### Printer groups (preview)
+
+Use this setting to define groups of printers that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block printing of contracts to all printers, except for printers that are in the legal department.
+
+This feature is available for devices running any of the following Windows versions :  
+
+- Windows 10 and later (20H2, 21H1, 21H2) 
+- Win 11 21H2, 22H2
+- Windows Server 2022
+
+You define a printer by these parameters:
+
+- Friendly printer name - Get the Friendly printer name value from the printer device property details in device manager.
+- USB product ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+- USB vendor ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+- IP range
+- Print to file - For example Microsoft Print to PDF or Microsoft XPS Document Writer.
+- Universal print deployed on a printer - See, [Set up Universal Print](/universal-print/fundamentals/universal-print-getting-started.md) for more information on universal printers
+- Corporate printer - is a print queue shared through on-premises Windows print server in your domain. Its path might look like  \\print-server\contoso.com\legal_printer_001
+- Print to local
+
+You assign each printer in the group a **Display name**. The name only appears in the Purview console. So, continuing with the example, you would create a printer group named **Legal printers** and add individual printers (with an alias) by their friendly name, like `legal_printer_001`, `legal_printer_002` and `legal_color_printer`.
+
+You can multi-select the parameters to help you unambiguously identify a specific printer.
+
+You can assign these policy actions to the group in a DLP policy:
+
+- Allow (audit with no user notifications or alerts)
+- Audit only (you can add notifications and alerts)
+- Block with override (blocks the action, but the user can override)
+- Block (blocks no matter what)
+
+#### Create a Printer group
+
+1. Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **Printer groups**.
+1. Select **Create printer group**.
+1. Give the group a name.
+1. Select **Add printer**.
+1. Give the printer an **Alias that will only appear here.
+1. Select the parameters and provide the values to unambiguously identify the specific printer.
+1. Select **Add**.
+1. Add other printers as needed.
+1. Select **Close**.
+
+The most common use case is to use printers groups as an allowlist as in the above example for allowing the printing of contracts only to printers that are in the legal department. After you define a printer group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) for more information on configuring policy actions to use authorization groups.
+
+### Removable storage device groups (preview)
+
+Use this setting to define groups of removable storage devices, like USB thumb drives, that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block copying of items with engineering specifications to all removeable storage devices, except for USB connected hard drives that are used to back up data and are then sent offsite.
+
+This feature is available for devices running any of the following Windows versions :  
+
+- Windows 10 and later (20H2, 21H1, 21H2) 
+- Win 11 21H2, 22H2
+- Windows 10 RS5 (KB 5006744) and Windows Server 2022 
+
+You can define removeable storage devices by these parameters:
+
+- Storage device friendly name - Get the Friendly name value from the storage device property details in device manager.
+- USB product ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+- USB vendor ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+- Serial number ID - Get the serial number ID value from the storage device property details in device manager.
+- Device ID - Get the device ID value from the storage device property details in device manager.
+- Instance path ID - Get the device ID value from the storage device property details in device manager.
+- Hardware ID - Get the hardware ID value from the storage device property details in device manager.
+
+You assign each removable storage device in the group an **Alias**. The alias is a name that only appears in the Purview console. So, continuing with the example, you would create a removable storage device group named **Backup** and add individual devices  (with an alias) by their friendly name, like `backup_drive_001`, and `backup_drive_002`.
+
+You can multi-select the parameters and the printer group will include all devices that satisfy those parameters.
+
+You can assign these policy actions to the group in a DLP policy:
+
+- Allow (audit with no user notifications or alerts)
+- Audit only (you can add notifications and alerts)
+- Block with override (blocks the action, but the user can override)
+- Block (blocks no matter what)
+
+#### Create a Removable storage device group
+
+1. Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **Removable storage device groups**.
+1. Select **Create removable storage device group**.
+1. Provide a **Group name**.
+1. Select **Add removable storage device**.
+1. Provide an **Alias**.
+1. Select the parameters and provide the values to unambiguously identify the specific device.
+1. Select **Add**.
+1. Add other devices to the group as needed.
+1. Select **Close**.
+
+The most common use case is to use removable storage devices groups as an allowlist as in the above example for allowing the copying of files only to devices that are in the **Backup** group. After you define a removable storage device group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) for more information on configuring policy actions to use authorization groups. While scenario 7 uses printer authorization groups as an example, the principles are identical. The only thing that changes are the names of the groups and the actions you select.
+
+### Network share groups (preview)
+
+Use this setting to define groups of network share paths that you want to assign policy actions to that are different from the global network share path actions. For example, say you want your DLP policy to block when users attempt to save or copy protected files to network shares except the network shares in this group.
+
+
+This feature is available for devices running any of the following Windows versions:  
+
+- Windows 10 and later (20H2, 21H1, 21H2) 
+- Win 11 21H2, 22H2
+- Windows 10 RS5 (KB 5006744)  and Windows Server 2022 
+
+
+You include network share paths by defining the prefix that they all start with. For example:
+
+- '\\Library' will match:
+    -  \Library folder and all its subfolders.
+
+- You can use Wildcards, for example '\\Users\*\Desktop' will match:
+    - '\\USers\user1\Desktop'
+    - '\\USers\user1\user2\Desktop'
+    - '\\Users\*\Desktop'
+
+- You can use Environmental variables, for example:
+    - %AppData%\app123
+
+You can assign these policy actions to the group in a DLP policy:
+
+- Allow (audit with no user notifications or alerts)
+- Audit only (you can add notifications and alerts)
+- Block with override (blocks the action, but the user can override)
+- Block (blocks no matter what)
+
+#### Create a Network Share group
+
+1. Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **Network share groups**.
+1.Select **Create network share group**.
+1. Provide a **Group name**.
+1. Add the file path to the share.
+1. Select **Add**.
+1. Add other share paths to the group as needed.
+1. Select **Close**.
+
+
+The most common use case is to use network share group as an allowlist as in the above example for allowing users to save or copy protected files only to the network shares that are defined in the group. After you define a networks share group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 7 Authorization groups](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) for more information on configuring policy actions to use authorization groups.
+
+### VPN settings (preview)
+
+Use the VPN list to control only those actions that are being carried out over that VPN.
+
+This feature is available for devices running any of these versions of Windows:  
+	
+- Windows 10 and later (20H2, 21H1, 21H2) 
+- Windows 11 21H2, 22H2
+- Windows 10 RS5 (KB 5006744)
+
+When you list a VPN in **VPN Settings** you can assign these policy actions to them:
+
+- Allow (audit with no user notifications or alerts)
+- Audit only (you can add notifications and alerts)
+- Block with override (blocks the action, but the user can override)
+- Block (blocks no matter what)
+
+These actions can be applied individually or collectively to these user activities:
+
+- Copy to clipboard
+- Copy to a USB removable device
+- Copy to a network share
+- Print
+- Copy or move using unallowed Bluetooth app
+- Copy or move using RDP
+
+When configuring a DLP policy to restrict activity on devices, you can control what happens to each activity performed when users are connected to your organization within any of the VPNs listed.
+
+You define VPN by these parameters **Server address** or **Network address**. 
+
+#### Get the Server address or Network address
+
+1. On a DLP monitored Windows device, open a **Windows PowerShell** window as an administrator.
+1. Run this cmdlet
+
+```powershell-interactive
+Get-VpnConnection
+```
+3. Running this cmdlet returns multiple fields and values.
+1. Find the **ServerAddress** field and record that value. You'll use this when you create a VPN entry in the VPN list.
+1. Find the **Name** field and record that value. The **Name** field maps to the **Network address** field when you create a VPN entry in the VPN list.
+
+#### Add a VPN
+
+1. Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **VPN settings**.
+1. Select **Add or edit VPN addresses**.
+1. Provide either the **Server address** or **Network address** from running Get-VpnConnection.
+1. Select **Save**.
+1. Close the item.
+
+> [!IMPORTANT]
+> When you use the VPN list in defining the actions of a policy, you will also see **Corporate network** as an option. **Corporate network** connections are are all connections to your organizations resources.These connections can include VPNs. 
+
+See, [Scenario 8 Network exceptions](endpoint-dlp-using.md#scenario-8-network-exceptions-preview)for more information on configuring policy actions to use network exceptions.
 
 ## See also
 

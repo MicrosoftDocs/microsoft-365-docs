@@ -1,5 +1,6 @@
 ---
 title: "Export documents from a review set"
+description: "Learn how to select and export content from an eDiscovery (Premium) review set for presentations or external reviews."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,12 +11,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 
-description: "Learn how to select and export content from an eDiscovery (Premium) review set for presentations or external reviews."
 ms.custom: seo-marvel-mar2020
 ---
 
@@ -37,6 +39,8 @@ To export documents from a review set:
 
 > [!NOTE]
 > Export jobs are retained for the life of the case. However, you must download the content from an export job within 30 days after the export job is complete.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Export options
 

@@ -7,11 +7,13 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 09/19/2022
+ms.date: 10/07/2022
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
 ms.collection: 
+- m365-security
+- tier2
 ms.custom: 
 ms.reviewer: joshbregman
 f1.keywords: NOCSH 
@@ -25,16 +27,16 @@ f1.keywords: NOCSH
 > **You don't have to wait for built-in protection to come to you**! You can protect your organization's devices now by configuring these capabilities:
 > - [Enable cloud protection](why-cloud-protection-should-be-on-mdav.md)
 > - [Turn tamper protection on](prevent-changes-to-security-settings-with-tamper-protection.md)
-> - [Set attack surface reduction rules to block mode](attack-surface-reduction-rules-deployment.md)
+> - [Set standard attack surface reduction rules to block mode](attack-surface-reduction-rules-deployment.md)
 > - [Enable network protection in block mode](enable-network-protection.md)
 
 ## What is built-in protection, and how does it work?
 
-Built-in protection is a set of default settings that are rolling out to help ensure your devices are protected. These default settings are designed to protect devices from ransomware and other threats. Initially, built-in protection will include turning [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) on for your tenant, with other default settings coming soon. 
+Built-in protection is a set of default settings that are rolling out to help ensure your devices are protected. These default settings are designed to protect devices from ransomware and other threats. Initially, built-in protection will include turning [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) on for your tenant, with other default settings coming soon. For more information, see the Tech Community blog post, [Tamper protection will be turned on for all enterprise customers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478).
 
 | Phase | What happens |
 |:---|:---|
-| Built-in protection is rolling out in [preview](preview.md) | Customers who have opted to receive preview features are receiving [notification](#what-does-the-notification-look-like) that built-in protection is coming. If it's not already configured, tamper protection will be turned on for customers who have Defender for Endpoint Plan 2 or Microsoft 365 E5. |
+| Built-in protection (preview) is rolling out | Customers who have opted to receive preview features are receiving [notification](#what-does-the-notification-look-like) that built-in protection is coming. If it's not already configured, tamper protection will be turned on for customers who have Defender for Endpoint Plan 2 or Microsoft 365 E5. |
 | Built-in protection becomes available for your tenant | You'll be [notified](#what-does-the-notification-look-like) that your tenant is about to receive built-in protection and when tamper protection will be turned on (if it's not already configured). |
 | Built-in protection arrives | Tamper protection will be turned on for your tenant, and will be applied to your organization's Windows devices. You can [opt out](#can-i-opt-out) or [change your built-in protection settings](#can-i-change-built-in-protection-settings). |
 | After built-in protection has arrived | Whenever new devices are onboarded to Defender for Endpoint, built-in protection settings will be applied to any new devices running Windows. You can always [change your built-in protection settings](#can-i-change-built-in-protection-settings). |
@@ -83,6 +85,7 @@ Built-in protection is a set of default settings. You aren't required to keep th
 
 ## See also
 
+- [Tech Community blog: Tamper protection will be turned on for all enterprise customers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478)
 - [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
 - [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security)
 - [Configure Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure)

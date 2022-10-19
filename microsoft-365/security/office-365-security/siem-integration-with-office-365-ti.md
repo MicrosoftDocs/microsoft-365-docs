@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: null
 search.appverid:
   - MET150
@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
 ms.date: 08/21/2020
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 description: Integrate your organization's SIEM server with Microsoft Defender for Office 365 and related threat events in the Office 365 Activity Management API.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo

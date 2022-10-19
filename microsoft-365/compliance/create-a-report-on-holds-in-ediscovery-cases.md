@@ -1,5 +1,6 @@
 ---
 title: "Use a script to create an eDiscovery holds report"
+description: Learn how to generate a report that contains information about all the holds that are associated with eDiscovery cases.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,15 +12,14 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
-description: Learn how to generate a report that contains information about all the holds that are associated with eDiscovery cases.
 ---
 
 # Use a script to create a report on holds in eDiscovery cases
@@ -27,6 +27,8 @@ description: Learn how to generate a report that contains information about all 
 The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with eDiscovery (Standard) and eDiscovery (Premium) cases in the Microsoft Purview compliance portal. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. If there are cases that don't have any holds, the script will create an additional report with a list of cases without holds.
 
 See the [More information](#more-information) section for a detailed description of the information included in the report.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Admin requirements and script information
 
