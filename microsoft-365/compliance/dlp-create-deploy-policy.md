@@ -32,19 +32,20 @@ There are many configuration options in a Microsoft Purview data loss prevention
 
 How you deploy a policy is as important policy design. You have multiple options to control policy deployment. This article show you how to use these options so that the policy achieves your intent while avoiding costly business disruptions.  
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
-> [!WARNING]
-> Before you attempt to create and deploy a DLP policy make sure you have read through and done the work in the preceding core steps of the DLP adoption process. 
->
-> 1. [Learn about data loss prevention](dlp-learn-about-dlp.md)
-> 1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md)
-> 1. [Data loss prevention policy reference](dlp-policy-reference.md)
-> 1. [Design a data loss prevention policy](dlp-policy-design.md)
->
-> This article is the fifth in the series of core steps in the DLP adoption process.
->
-> There are additional articles that help you learn about and get started with many of the locations that DLP can monitor. You should be familiar with the ones that apply to the locations you want to monitor. 
+If you are new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
+
+1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - the article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
+1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article you will:
+    1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
+    1. [Describe the categories of sensitive information to protect](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
+    1. [Set goals and strategy](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
+1. [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference) - this article introduces all the components of a DLP policy and how each one influences the behavior of a policy
+1. [Design a DLP policy](dlp-policy-design.md) - this article walks you through creating a policy intent statement and mapping it to a specific policy configuration. 
+1. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) - This article that you're reading now presents some common policy intent scenarios that you'll map to configuration options, then it walks you through configuring those options.
 
 ### SKU/subscriptions licensing
 
