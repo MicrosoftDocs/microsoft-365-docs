@@ -43,7 +43,7 @@ The Virtual Appointments app provides a central hub for all your virtual appoint
 
 You can schedule, view, and manage virtual appointments from Bookings, Teams, and Outlook, get real-time status updates in a queue view, send appointment reminders, view reports to gain insight into virtual appointments activity, and configure calendar and staff settings.
 
-With any Microsoft 365 or Office 365 license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. With [Teams Premium](https://review.learn.microsoft.com/MicrosoftTeams/enhanced-teams-experience?branch=danismith-t-pre-licensing), your organization gets advanced Virtual Appointments capabilities to drive operational excellence and personalize customer experiences. These include a queue view of scheduled and on-demand appointments, SMS notifications, custom waiting rooms with branding, waiting room chat, and departmental and organizational analytics.
+With any Microsoft 365 or Office 365 license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. With [Teams Premium](https://review.learn.microsoft.com/MicrosoftTeams/enhanced-teams-experience?branch=danismith-t-pre-licensing), your organization gets advanced Virtual Appointments capabilities to help drive operational excellence and personalize customer experiences. These include a queue view of scheduled and on-demand appointments, SMS notifications, custom waiting rooms, waiting room chat, and departmental and organizational analytics.
 
 To learn more, see:
 
@@ -56,11 +56,9 @@ The [Bookings app](https://support.microsoft.com/office/what-is-bookings-42d4e85
 
 Schedulers can manage multiple department and staff calendars, as well as communications with internal and external attendees.
 
-Each virtual appointment contains a Teams meeting link that’s sent to attendees in email where they can easily join from a web browser or in Teams on any device.
+Each scheduled virtual appointment contains a Teams meeting link that’s sent to attendees in email where they can easily join from a web browser or in Teams on any device.
 
-With any Microsoft 365 or Office 365 license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. With [Teams Premium](https://review.learn.microsoft.com/MicrosoftTeams/enhanced-teams-experience?branch=danismith-t-pre-licensing), your organization gets advanced Virtual Appointments capabilities. These include a queue view of scheduled and on-demand appointments, SMS notifications, custom waiting rooms with branding, and waiting room chat.
-
- on-demand queues, SMS notifications, branded waiting rooms, lobby chat, and advanced analytics.
+With any Microsoft 365 or Office 365 license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. With [Teams Premium](https://review.learn.microsoft.com/MicrosoftTeams/enhanced-teams-experience?branch=danismith-t-pre-licensing), your organization gets advanced Virtual Appointments capabilities. These include a queue view of scheduled and on-demand appointments, SMS notifications, custom waiting rooms, and waiting room chat.
 
 To learn more, see:
 
