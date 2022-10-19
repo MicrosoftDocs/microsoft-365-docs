@@ -146,8 +146,8 @@ The first step is to purchase the ADR SKU; check with your Microsoft representat
 
 [Data move general FAQ](data-move-faq.md)
   
-[New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
+[New datacenter geos for Microsoft Dynamics CRM Online](https://learn.microsoft.com/power-platform/admin/new-datacenter-regions)
   
 [Azure services by region](https://azure.microsoft.com/regions/)
 
-[Teams experience in a Microsoft 365 Multi-Geo-enabled tenancy](/microsoftteams/teams-experience-o365odb-spo-multi-geo)
+[Teams experience in a Microsoft 365 Multi-Geo-enabled tenancy](https://learn.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo)
