@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 10/14/2022
+ms.date: 
 ms.reviewer: 
 ms.custom:
 - it-pro
@@ -21,7 +21,7 @@ ms.collection:
 ## Data Residency commitments available
 
 >[!NOTE]
->The following M365 services do not have specific commitments for data residency, unless otherwise stated in the Privacy & Security Product Terms <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank">**webpage**</a> and view the section titled "Location of Customer Data at Rest for Core Online Services".  You can find methods for determining the customer data location for these services below.
+>For data location information for the following services, please refer to the data location information on the [Data Maps page](o365-data-locations.md).
 
 Use the following guidance to determine where your data is located. Please reference your _tenant_ _Default Geography_.
 
