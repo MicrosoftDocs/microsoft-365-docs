@@ -38,7 +38,3 @@ To display the **Reliability** tab, perform the steps of the procedure that foll
 From the **Reliability** tab you can also sort the **Crash** and **Unresponding** data to ensure quick visibility into prominent information of interest. For example, you could sort processes by the highest failure rate, by the number of crashes, or by the number of times a process became unresponsive.
 
 **For more information** about how relevant processes are identified, see [Determining Relevant Process for Regression Detection](determiningrelevantprocessesforregressiondetection.md).
-
-
-
-
