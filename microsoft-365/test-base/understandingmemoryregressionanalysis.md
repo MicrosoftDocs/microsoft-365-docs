@@ -35,5 +35,3 @@ In the former example, the process “USLTestCrash.exe” consumed an average of
 - The consumption of more memory is not necessarily an indication of a failure. 
 
 The regression on the relevant process was determined to be statistically significant, so the **Test Base** service exposed this difference to the user in the **Processes** table. At times, memory utilization can be somewhat noisy, so in some cases, **Test Base** uses statistical methods to distinguish across builds and releases as to whether there are meaningful differences.
-
-
