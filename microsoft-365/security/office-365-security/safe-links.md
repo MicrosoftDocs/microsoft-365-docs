@@ -251,8 +251,6 @@ These settings apply to Safe Links in email, Teams, and Office apps:
 
   In Safe Links for Office apps, this setting applies to the desktop versions Word, Excel, PowerPoint, and Visio.
 
-  URL click tracking for links in email messages sent between internal senders and internal recipients is currently not supported.
-
   If you select this setting, the following settings are available:
 
   - **Let users click through to the original URL**: Controls whether users can clicking through the [warning page](#warning-pages-from-safe-links) to the original URL. The recommend value is not selected (off).
