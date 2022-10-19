@@ -18,7 +18,7 @@ description: Learn how to use AI Builder to create structured document processin
 # Overview of structured document processing in Microsoft Syntex
 
 > [!NOTE]
-> *Structured document processing* was called *form processing* in previous releases.
+> *Structured document processing* was known as *form processing* in previous releases.
 
 Use the structured document processing model ([layout method](create-syntex-model.md#train-a-custom-model)) to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices.
 
@@ -35,7 +35,7 @@ Organizations often receive invoices in large quantities from various sources, s
 
 For example, you can create an structured document processing model that identifies all purchase order documents that are uploaded to the document library. From each purchase order, you can then extract and display specific data that is important to you, such as *PO Number*, *Date*, or *Total Cost*.
 
-![Doc library view.](../media/content-understanding/doc-lib-done.png)  
+![Screenshot showing the document library view.](../media/content-understanding/doc-lib-done.png)  
 
 You use example files to train your model and define the information to be extracted from your form. The layout of your document is learned by training your model. You only need five form documents to get started. Syntex will analyze your example files for key-value pairs, and you can also manually identify ones that might not have been detected.  AI builder lets you test the accuracy of your model on your example files.
 
