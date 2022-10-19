@@ -71,6 +71,7 @@ Follow these steps to get started with Multi-Geo:
 > [!NOTE]
 > For more information on the Microsoft 365 services that support Multi-Geo please see the [EXO](m365-dr-workload-exo.md), [ODSP](m365-dr-workload-spo.md) and [Teams](m365-dr-workload-teams.md) workload data residency pages for more details.
 
+
 ## See also
 
 [Multi-Geo in Exchange Online and OneDrive](https://Aka.ms/GoMultiGeo)
