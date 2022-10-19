@@ -1,4 +1,3 @@
-
 ---
 title: 'Viewing Script Execution Results'
 description: How to Viewing Script Execution Results
