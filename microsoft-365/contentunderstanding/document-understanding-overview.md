@@ -19,7 +19,7 @@ description: Learn about the unstructured document processing model in Microsoft
 # Overview of unstructured document processing in Microsoft Syntex
 
 > [!NOTE]
-> *Unstructured document processing* was called *document understanding* in previous releases.
+> *Unstructured document processing* was known as *document understanding* in previous releases.
 
 <!---
 </br>
