@@ -28,7 +28,7 @@ It has never been more important to be able to detect and defend your organizati
 
 As an organization’s security posture is constantly changing alongside the cybersecurity landscape, making security posture improvements should be a continuous process. This article describes how you can strengthen your organization's security posture using capabilities available in Microsoft 365 Defender and other related Microsoft security products.
 
-It will help you better understand your overall security posture and provide a framework to help you continually assess, improve, and maintain security posture to fit your organization's security needs.
+It will help you better understand your overall security posture and provide a framework to help you continually assess, improve, and maintain a security posture to fit your organization's security needs.
 
 ## Before you begin
 
@@ -36,7 +36,7 @@ This solution guide provides specific and actionable steps to strengthen your se
 
 - You're a global admin
 - You have successfully deployed Microsoft Defender for Endpoint
-- You're beyond the initial stage of onboarding devices and have a management tool in place to support future device onboarding. For more information on Onboarding devices, see [Onboarding and configuration tool options](onboard-configure.md#onboarding-and-configuration-tool-options)
+- You're beyond the initial stage of onboarding devices and have a management tool in place to support future device onboarding. For more information on Onboarding devices, see [Onboarding and configuration tool options](onboard-configure.md#onboarding-and-configuration-tool-options).
 
 ## Overview of the solution
 
