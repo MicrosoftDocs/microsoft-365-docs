@@ -12,7 +12,10 @@ ms.date: 10/3/2019
 ms.localizationpriority: null
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection: 
+- Strat_O365_Enterprise
+- tier2
+- purview-compliance
 description: "Summary: Understand data resiliency in Microsoft Office 365."
 ---
 
