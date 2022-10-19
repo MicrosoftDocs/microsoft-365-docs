@@ -20,9 +20,10 @@ ms.collection:
 
 Data residency commitments for the Purview set of services, as described below, are available with the Advanced Data Residency add-on.
 The required conditions for the related commitments for the services described below are:
-1.    Tenant has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
-2.    Tenant has a valid Advanced Data Residency subscription for all users in the tenant
-3.    Customer Data supporting the Purview services is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
+
+1. Tenant has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. Tenant has a valid Advanced Data Residency subscription for all users in the tenant.
+1. The Purview service customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
 ## Migration
 
@@ -93,7 +94,7 @@ Capability summary: Lets you retain or delete content with policy management for
 
 Commitment:
 
-The following Customer Data will be stored in the related _Geography_:
+The following customer data will be stored in the related _Geography_:
 
 - Retention policy settings
 - Retention label definitions
@@ -108,7 +109,7 @@ The following Customer Data will be stored in the related _Geography_:
   - Teams channel messages
   - Teams chats
   - Teams private channel messages
-  - SharePoint Online, OneDrive for Business, Exchange Online and Microsoft Teams follow the data residency commitments for those services.  Please refer to [Exchange Online](m365-dr-workload-exo.md), [SharePoint Online](m365-dr-workload-spo.md), and [Microsoft Teams](m365-dr-workload-teams.md).
+  - SharePoint Online, OneDrive for Business, Exchange Online and Microsoft Teams follow the data residency commitments for those services.  Please refer to [Exchange Online](m365-dr-workload-exo.md), [SharePoint Online](m365-dr-workload-spo.md) and [Microsoft Teams](m365-dr-workload-teams.md) workload data residency pages for more details.
 - Training classifiers
 - Disposition data
 - Mappings between retention labels and Data Loss Prevention (DLP) policies.
@@ -125,7 +126,7 @@ Capability summary: Organizations of all types require a records-management solu
 
 Commitment:
 
-The following Customer Data will be stored in the related _Geography_:
+The following customer data will be stored in the related _Geography_:
 
 - Record retention label definitions.
 - File plan definitions
@@ -156,7 +157,7 @@ Capability summary: Sensitivity labels from Microsoft Purview Information Protec
 
 Commitment:
 
-The following Customer Data will be stored in the related _Geography_:
+The following customer data will be stored in the related _Geography_:
 
 - Label configuration
 - Labels definition
@@ -194,7 +195,7 @@ DLP detects sensitive items by using deep content analysis, not by just a simple
 
 Commitment:
 
-The following Customer Data will be stored in the related _Geography_:
+The following customer data will be stored in the related _Geography_:
 
 - DLP admin configuration
 - DLP policies in Compliance Center
@@ -220,11 +221,8 @@ Capability summary: With Office 365 Message Encryption, your organization can se
 
 Commitment:
 
-The following Customer Data will be stored in the related _Geography_:
-
-- Encryption policies 
-- Admin settings 
-- Encrypted messages 
+The following customer data will be stored in the related _Geography_:
+***TODO: need commitment text***
 
 ### Insider Risk Management - Information Barriers
 
@@ -238,7 +236,7 @@ Capability summary: Microsoft Purview Information Barriers (IB) is a compliance 
 
 Commitment:
 
-The following Customer Data will be stored in the related _Geography_:
+The following customer data will be stored in the related _Geography_:
 
 - Policy settings and risk indicators
 - Admin settings
