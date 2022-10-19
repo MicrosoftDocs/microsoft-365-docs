@@ -11,7 +11,8 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid: 
 - MOE150
@@ -30,6 +31,8 @@ For other workloads, see:
 - [Learn about retention for Microsoft Teams](retention-policies-teams.md)
 - [Learn about retention for Yammer](retention-policies-yammer.md)
 - [Learn about retention for Exchange](retention-policies-exchange.md)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## What's included for retention and deletion
 
@@ -61,13 +64,13 @@ For retention policies and auto-apply label policies: SharePoint sites must be i
 
 To store content that needs to be retained, SharePoint and OneDrive create a Preservation Hold library if one doesn't exist for the site. The Preservation Hold library isn't designed to be used interactively but instead, automatically stores files when this is needed for compliance reasons. It works in the following way:
 
-When a user changes or deletes an item that's subject to retention, a check is made whether the content has been changed since the retention settings were applied. If this is the first change since the retention settings were applied, the content is copied to the Preservation Hold library, which allows the user to change or delete the original content.
+When a user changes an item that's subject to retention from a retention policy or a retention label that marks items as a record, or deletes any item subject to retention, the original content is copied to the Preservation Hold library. This behavior lets the user to change or delete the  content in their app, while keeping a copy of the original for compliance reasons.
 
 A timer job periodically runs on the Preservation Hold library. For content that has been in the Preservation Hold library for more than 30 days, this job compares the content to all queries used by the retention settings for that content. Content that is older than their configured retention period is then deleted from the Preservation Hold library, and from the original location if it is still there. This timer job runs every seven days, which means that together with the minimal 30 days, it can take up to 37 days for content to be deleted from the Preservation Hold library.
 
 This behavior for copying files into the Preservation Hold library applies to content that exists when the retention settings were applied. In addition, for retention policies, any new content that's created or added to the site after it was included in the policy will be retained in the Preservation Hold library. However, new content isn't copied to the Preservation Hold library the first time it's edited, only when it's deleted. To retain all versions of a file, [versioning](#how-retention-works-with-document-versions) must be turned on for the original site.
   
-Users see an error message if they try to delete a library, list, folder, or site that's subject to retention. They can delete a folder if they first move or delete any files in the folder that are subject to retention.
+Users see an error message if they try to delete a library, list, folder, or site that's subject to retention. They can delete an unlabeled folder if they first move or delete any files in the folder that are subject to retention.
 
 Users also see an error message if they try to delete a labeled item in any of the following circumstances. The item isn't copied to the Preservation Hold library but remains in the original location:
 
@@ -83,7 +86,7 @@ Users also see an error message if they try to delete a labeled item in any of t
 
 - The retention label marks items as a [regulatory record](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked), which always prevents the item from being edited or deleted.
 
-After retention settings are assigned to content in a OneDrive account or SharePoint site, the paths the content takes depend on whether the retention settings are to retain and delete, to retain only, or delete only.
+After retention settings are assigned to content in a OneDrive account or SharePoint site, the paths the content takes depend on whether the retention settings are to retain and delete, to retain only, or delete only. In the explanations that follow, modified content is moved to the Preservation Hold library for retention policies, and retention labels that mark items as records (and the content is unlocked). Items that are modified with retention labels that don't mark items as records don't create copies in the Preservation Hold library, but do when items are deleted.
 
 When the retention settings are to retain and delete:
 
@@ -129,6 +132,8 @@ Because the retention label is not applied to the original file, the labeled fil
 
 The copy that's stored in the Preservation Hold library is typically created within an hour from the cloud attachment being shared.
 
+To safeguard against the original file being deleted by users before the copy can be created and labeled, files in locations included in the auto-labeling policy are automatically copied into the Preservation Hold library if they are deleted. These files have a temporary retention period of one day and then follow the standard cleanup process described on this page. When the original file has been deleted, the copy for retaining cloud attachments uses this version of the file. The automatic and temporary retention of deleted files in the Preservation Hold library is unique to auto-labeling policies for cloud attachments.
+
 ## How retention works with OneNote content
 
 When you apply a retention policy to a location that includes OneNote content, or a retention label to a OneNote folder, behind the scenes, the different OneNote pages and sections are individual files that inherit the retention settings. This means that each section within a page will be individually retained and deleted, according to the retention settings you specify.
@@ -139,7 +144,7 @@ Only pages and sections are impacted by the retention settings that you specify.
 
 Versioning is a feature of all document lists and libraries in SharePoint and OneDrive. By default, versioning retains a minimum of 500 major versions, although you can increase this limit. For more information, see [Enable and configure versioning for a list or library](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) and [How versioning works in lists and libraries](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
-When a document with versions is subject to retention settings to retain that content, how the versions are stored in the Preservation Hold library changed in July 2022 to improve performance. Currently rolling out to tenants, all versions of the file are retained in a single file in the Preservation Hold library. Before the change, versions were copied to the Preservation Hold library as separate files, and after the change, remain as separate files.
+When a document with versions is subject to retention settings to retain that content, how the versions are stored in the Preservation Hold library changed in July 2022 to improve performance. Now, all versions of the file are retained in a single file in the Preservation Hold library. Before the change, versions were copied to the Preservation Hold library as separate files, and after the change, remain as separate files.
 
 If the retention settings are configured to delete at the end of the retention period:
 

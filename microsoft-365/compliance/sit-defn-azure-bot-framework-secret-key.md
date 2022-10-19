@@ -1,5 +1,5 @@
 ---
-title: "Azure Bot Framework secret key entity definition (preview)"
+title: "Azure Bot Framework secret key entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,16 +14,21 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: "Azure Bot Framework secret key sensitive information type entity definition."
 ---
 
-# Azure Bot Framework secret key (preview)
+# Azure Bot Framework secret key
 
-## Format
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+This SIT is also included in the [All credentials](sit-defn-all-creds.md) bundled SIT.
+
+ ## Format
 
 A combination of 55 characters consisting of letters, digits, and special characters.
 
@@ -53,7 +58,7 @@ A combination of 11 characters:
 - or underlines (_)
 - a dot
 
-A combination of 3 characters:
+A combination of three characters:
 
 - a-z (not case-sensitive)
 - 0-9
@@ -61,7 +66,7 @@ A combination of 3 characters:
 - or underlines (_)
 - a dot
 
-A combination of 3 characters:
+A combination of three characters:
 
 - a-z (not case-sensitive)
 - 0-9
@@ -81,9 +86,15 @@ for example:
 `abcdefghijk.lmn.opq.rstuvwxyz0123456789-_ABCDEFGHIJKLMNOPQRSTUV`
 
 
+## Credential example 
+
+`host: webchat.botframework.com/?s=abcdefghijklmnopqrstuvwxyz.0123456789_ABCDEabcdefghijkl&`
+
 ## Checksum
 
 No
+
+SITs that have checksums use a unique calculation to check if the information is valid. This means when the **Checksum** value is **Yes**, the service can make a positive detection based on the sensitive data alone. When the **Checksum** value is **No** additional (secondary) elements must also be detected  for the service to make a positive detection.
 
 ## Definition
 
@@ -91,13 +102,13 @@ This SIT is designed to match the security information that's used to connect to
 
 It uses several primary resources:
 
-- Patterns of Base64 URL encoded 328 bits symmetric key.
-- Patterns of Base64 URL encoded 360 bits symmetric key.
+- Patterns of Base64 URL encoded 328-bits symmetric key.
+- Patterns of Base64 URL encoded 360-bits symmetric key.
 - Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName.
 - Patterns of mockup values, redactions, and placeholders.
 - A dictionary of vocabulary.
 
-The patterns are designed to match actual credentials with reasonable confidence. The patterns do not match credentials formatted as examples. Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present will not be matched.
+The patterns are designed to match actual credentials with reasonable confidence. The patterns don't match credentials formatted as examples. Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present won't be matched.
 
 ## Keywords
 

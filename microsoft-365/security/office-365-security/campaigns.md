@@ -15,12 +15,12 @@ search.appverid:
   - MET150
 ms.assetid: 
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
 description: Learn about Campaign Views in Microsoft Defender for Office 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Campaign Views in Microsoft Defender for Office 365

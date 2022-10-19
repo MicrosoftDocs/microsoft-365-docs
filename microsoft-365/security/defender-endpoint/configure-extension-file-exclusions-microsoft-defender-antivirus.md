@@ -2,19 +2,22 @@
 title: Configure and validate exclusions based on extension, name, or location
 description: Exclude files from Microsoft Defender Antivirus scans based on their file extension, file name, or location.
 keywords: exclusions, files, extension, file type, folder name, file name, scans
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 07/25/2022
+ms.date: 09/19/2022
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.reviewer: thdoucet
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Configure and validate exclusions based on file extension and folder location
@@ -102,7 +105,7 @@ See [How to create and deploy antimalware policies: Exclusion settings](/configm
 
 2. In the **Group Policy Management Editor** go to **Computer configuration**, and select **Administrative templates**.
 
-3. Expand the tree to **Windows components** \> **Windows Defender Antivirus** \> **Exclusions**.
+3. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Exclusions**.
 
 4. Open the **Path Exclusions** setting for editing, and add your exclusions.
 
@@ -220,7 +223,7 @@ The following table lists and describes the system account environment variables
 |`%APPDATA%\Microsoft\Internet Explorer\Quick Launch`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch`|
 |`%APPDATA%\Microsoft\Windows\Start Menu`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu`|
 |`%APPDATA%\Microsoft\Windows\Start Menu\Programs`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs`|
-|`%LOCALAPPDATA%`|`C:\Windows\System32\config\systemprofile\AppData\Local`|
+|`%LOCALAPPDATA%`|`C:\Users\USERNAME\AppData\Local`|
 |`%ProgramData%`|`C:\ProgramData`|
 |`%ProgramFiles%`|`C:\Program Files`|
 |`%ProgramFiles%\Common Files`|`C:\Program Files\Common Files`|

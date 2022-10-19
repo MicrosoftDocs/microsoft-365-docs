@@ -7,16 +7,19 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri
 - Adm_TOC
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 description: "Migrate your Outlook, OneDrive and Teams data to Microsoft 365 Business Standard"
 ---
 
-# Migrate data to my Microsoft 365 Business Standard subscription
+# Migrate data to my Microsoft 365 for business subscription
 
 Follow the steps in this article to move your OneDrive, Outlook and Teams data to your Microsoft 365 Business Standard subscription.
 

@@ -1,21 +1,21 @@
 ---
-title: Rename a model in Microsoft SharePoint Syntex
+title: Rename a model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how and why to rename a document understanding model in Microsoft SharePoint Syntex.
+description: Learn how and why to rename a document understanding model in Microsoft Syntex.
 ---
 
-# Rename a model in Microsoft SharePoint Syntex
+# Rename a model in Microsoft Syntex
 
 At some point, you might want to rename a document understanding model. A common example is when you create an initial draft of a model, you might not have given a lot of thought as to the final name (for example, you might have named it “AlexWilburModel1”). As you come closer to finalizing the model and putting it to use, you realize that a more proper name would be “Contract Renewals,” and you want to rename it.  
 

@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -23,6 +24,8 @@ description: "Cyprus driver's license number sensitive information type entity d
 
 
 # Cyprus drivers license number
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 

@@ -2,14 +2,15 @@
 title: "Microsoft 365 admin center activity reports"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -33,9 +34,9 @@ You can easily see how people in your business are using Microsoft 365 services.
   
 Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
 
-## Watch: Act on a usage report in Office 365
+## Watch: Act on a usage report in Microsoft 365
   
-Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198103).
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198103).<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
 
@@ -142,7 +143,7 @@ Your user list will look like this:
 
 If you want to unhide user-level information when you're generating your reports, a **global administrator** can quickly make that change in the admin center.
 
-Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
+Reports provide information about your organization's usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
 
 Global administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
 
@@ -165,9 +166,9 @@ The report will only contain a Privacy Setting property. For more information on
 
 It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the Microsoft 365 usage reports in [Microsoft Graph](/graph/api/resources/report) and [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) and [the usage reports in Microsoft Teams Admin center](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Showing identifiable user information is a logged event in the Microsoft Purview compliance portal audit log.
 
-## What happens to usage data when a user account is closed?
+## What happens to usage data when a user account is deleted?
 
-Whenever you close a user's account, Microsoft will delete that user's usage data within 30 days. That user will still be included in the Activity chart totals for the periods she was active in, but will not appear in the User Details table.
+Whenever you delete a user's account, Microsoft will delete that user's usage data within 30 days. Deleted users will still be included in the Activity chart totals for the periods they were active in, but will not appear in the User Details table.
 
 However, when you select a particular day, up to 28 days from the current date, the report show the user's usage for that day in the User Details table.
 

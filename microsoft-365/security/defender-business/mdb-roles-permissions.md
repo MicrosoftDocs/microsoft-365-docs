@@ -7,15 +7,18 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
+ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
- - SMB
- - M365-security-compliance
- - m365solution-mdb-setup
+- SMB
+- m365-security
+- m365solution-mdb-setup
+- highpri
+- tier1
 ---
 
 # Assign roles and permissions in Microsoft Defender for Business

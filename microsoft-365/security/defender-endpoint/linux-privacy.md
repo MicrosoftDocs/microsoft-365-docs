@@ -2,7 +2,7 @@
 title: Privacy for Microsoft Defender for Endpoint on Linux
 description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data that is collected in Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, privacy, diagnostic
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Privacy for Microsoft Defender for Endpoint on Linux
@@ -173,7 +176,7 @@ Diagnostic logs are collected only with the consent of the user as part of the f
 
 - All files under */var/log/microsoft/mdatp*
 - Subset of files under */etc/opt/microsoft/mdatp* that are created and used by Defender for Endpoint on Linux
-- Product installation and uninstallation logs under */var/log/microsoft_mdatp_\*.log*
+- Product installation and uninstallation logs under /var/log/microsoft/mdatp/*.log
 
 ### Optional diagnostic data
 

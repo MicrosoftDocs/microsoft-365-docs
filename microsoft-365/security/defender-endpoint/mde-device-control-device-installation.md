@@ -1,19 +1,22 @@
 ---
 title: Microsoft Defender for Endpoint Device Control Device Installation
 description: This topic provides a walk through about Microsoft Defender for Endpoint Device Control Device Installation
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/21/2022
+ms.date: 10/18/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint Device Control Device Installation
@@ -21,6 +24,10 @@ ms.technology: mde
 **Applies to**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+
+> [!NOTE]
+> If you want to manage removable storage, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control).
 
 Microsoft Defender for Endpoint Device Control Device Installation enables you to do the following task:
 
@@ -31,7 +38,7 @@ Microsoft Defender for Endpoint Device Control Device Installation enables you t
 > To find the difference between Device Installation and Removable storage access control, see [Microsoft Defender for Endpoint Device Control Removable Storage Protection](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true).
 
 |Privilege|Permission|
-|---|---|
+|:---|:---|
 |Access|Device installation |
 |Action Mode|Allow, Prevent |
 |CSP Support|Yes|
@@ -51,7 +58,7 @@ The following device properties are supported by Device Installation support:
 - Hardware ID
 - Compatible ID
 - Device Class
-- 'Removable Device' Device type: Some devices could be classified as Removable Device. A device is considered removable when the driver for the device to which it's connected indicates that the device is removable. For example, a USB device is reported to be removable by the drivers for the USB hub to which the device is connected.
+- Removable device type: Some devices could be classified as a removable device. A device is considered removable when the driver for the device to which it's connected indicates that the device is removable. For example, a USB device is reported to be removable by the drivers for the USB hub to which the device is connected.
 
 For more information, see [Device Installation in Windows](/windows/client-management/manage-device-installation-with-group-policy).
 
@@ -69,7 +76,7 @@ When this policy setting is enabled together with the **Apply layered order of e
 If the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting is not enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
 
 > [!NOTE]
-> The **Prevent installation of devices not described by other policy settings** policy setting has been replaced by the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting for supported target Windows 10 versions and Windows 11. It is recommended that you use the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting when possible.
+> The **Prevent installation of devices not described by other policy settings** policy setting has been replaced by the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting for supported target Windows 10 versions and Windows 11. Use the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting when possible.
 
 ### Allow installation of devices that match any of these device instance IDs
 
@@ -126,7 +133,7 @@ Prevent installation of removable devices
 This policy setting allows you to specify a list of Plug and Play hardware IDs and compatible IDs for devices that Windows is prevented from installing. By default, this policy setting takes precedence over any other policy setting that allows Windows to install a device.
 
 > [!NOTE]
-> To enable the **Allow installation of devices that match any of these device instance IDs** policy setting to supersede this policy setting for applicable devices, enable the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting.
+> To enable the **Allow installation of devices that match any of these device instance IDs** policy setting to supersede this policy setting for applicable devices, enable the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting. Also, the allow policy won’t take precedence if the **Block Removable Storage** option is selected in Device Control.
 
 If you enable this policy setting, Windows is prevented from installing a device whose hardware ID or compatible ID appears in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
@@ -216,7 +223,7 @@ In Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint
 
       :::image type="content" source="../../media/devicepolicy-devicecontrol.png" alt-text="An identifier in the Device Control page" lightbox="../../media/devicepolicy-devicecontrol.png":::
 
-    Adding `PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; USB\USB20_HUB` as shown in the preceding image is because it's not enough to enable only a single hardware ID to enable a single USB thumb-drive. You must ensure all the USB devices that preceding the target one aren't blocked (allowed) as well. You can open Device Manager and change the view to **Devices by connections** to see the way devices are installed in the PnP tree. In this case, the following devices must allowed so the target USB thumb-drive could be allowed as well:
+    We added `PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; USB\USB20_HUB` as shown in the preceding image because it's not enough to enable only a single hardware ID to enable a single USB thumb-drive. You must ensure all the USB devices that preceding the target one aren't blocked (allowed) as well. You can open Device Manager and change the view to **Devices by connections** to see the way devices are installed in the PnP tree. In this case, the following devices must allowed so the target USB thumb-drive could be allowed as well:
 
     - "Intel(R) USB 3.0 eXtensible Host Controller – 1.0 (Microsoft)" -> PCI\CC_0C03
     - "USB Root Hub (USB 3.0)" -> USB\ROOT_HUB30

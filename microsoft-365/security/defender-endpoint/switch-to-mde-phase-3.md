@@ -2,8 +2,8 @@
 title: Switch to Microsoft Defender for Endpoint - Onboard
 description: Make the switch to Microsoft Defender for Endpoint. Onboard devices and then uninstall your non-Microsoft solution.
 keywords: migration, Microsoft Defender for Endpoint, edr
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,16 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-migratetomdatp
-  - m365solution-mcafeemigrate
-  - m365solution-symantecmigrate
+  - highpri
+  - tier1
 ms.custom: 
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 04/01/2022
+ms.date: 09/22/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
+search.appverid: met150
 ---
 
 # Switch to Microsoft Defender for Endpoint - Phase 3: Onboard
@@ -59,9 +60,6 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 > If something goes wrong while onboarding, see [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md). That article describes how to resolve onboarding issues and common errors on endpoints.
 
 ### Onboarding methods
-
-> [!IMPORTANT]
-> If you are using Microsoft Defender for Cloud, see [Integration with Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud).
 
 Deployment methods vary, depending on operating system and preferred methods. The following table lists resources to help you onboard to Defender for Endpoint:
 
@@ -166,6 +164,5 @@ To learn more, see [Device inventory](machines-view-overview.md).
 
 **Congratulations**! You have completed your [migration to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
 
-- [Visit your security operations dashboard](security-operations-dashboard.md) in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
 - [Manage Defender for Endpoint, post migration](manage-mde-post-migration.md).

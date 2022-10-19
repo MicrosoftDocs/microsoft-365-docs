@@ -7,9 +7,10 @@ manager: scotv
 ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,7 +22,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Overview of the Device compliance page in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse lets you view insights and information related to Intune device compliance for all your customer tenants by selecting **Devices** in the left navigation pane to open the Device compliance page. From this page, you can get an overview of compliance status across tenants, view a list of devices for each tenant, and get status reports on compliance policies and settings.
+Microsoft 365 Lighthouse lets you view insights and information related to Intune device compliance for all your customer tenants by selecting **Devices** > **Device compliance** in the left navigation pane to open the Device compliance page. From this page, you can get an overview of compliance status across tenants, view a list of devices for each tenant, and get status reports on compliance policies and settings.
 
 ## Overview tab  
   
