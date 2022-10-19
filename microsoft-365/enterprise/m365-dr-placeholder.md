@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 ADR
+title: Microsoft 365 Advanced Data Residency
 description: Learn about Advanced Data Residency for Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
@@ -15,4 +15,4 @@ ms.collection:
 - M365-subscription-management
 ---
 
-# Microsoft 365 Advanced Data Residency for Microsoft 365
+# Advanced Data Residency for Microsoft 365
