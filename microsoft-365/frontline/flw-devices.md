@@ -89,14 +89,6 @@ In some cases, users may be reluctant to enroll their personal devices into mana
 
 To learn more, see ["Personal devices vs Organization-owned devices" in the Intune planning guide](/mem/intune/fundamentals/intune-planning-guide#personal-devices-vs-organization-owned-devices) and [Deployment guidance: Enroll devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment).
 
-### Off-shift access controls in Teams
-
-Off-shift access controls help you limit access to Teams when employees are off shift. With this feature, you can set Teams to display a message when employees access the app outside working hours. They must accept the message before they can use Teams.
-
-The default message notifies the employee that they won’t be paid for time spent on Teams outside working hours. You can use the default message, choose a pre-defined message, or display your own. This feature helps ensure employees aren’t involuntarily working when not on shift and helps to comply with labor regulations.
-
-To learn more, see [Off shift access to Teams](manage-shift-based-access-flw.md#off-shift-access-to-teams).
-
 ## Related articles
 
 - [Frontline worker management](/azure/active-directory/fundamentals/frontline-worker-management)

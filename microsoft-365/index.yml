@@ -228,7 +228,7 @@ additionalContent:
             - text: More >
               url: /DeployOffice
         # Card
-        - title: SharePoint
+        - title: SharePoint and OneDrive
           links:
             - text: SharePoint in Microsoft 365
               url: /sharepoint/sharepoint-online
@@ -243,12 +243,18 @@ additionalContent:
             - text: More >
               url: /sharepoint
         # Card
-        - title: OneDrive
+        - title: Microsoft Viva
           links:
-            - text: Plan, deploy, and manage
-              url: /onedrive/onedrive
+            - text: Microsoft Viva Topics
+              url: /viva/topics/
+            - text: Microsoft Viva Insights
+              url: /insights/viva-teams-app
+            - text: Microsoft Viva Connections
+              url: /viva/connections/viva-connections-overview
+            - text: Microsoft Viva Learning
+              url: /viva/learning/
             - text: More >
-              url: /onedrive              
+              url: /viva/
         # Card
         - title: Outlook and Exchange
           links:
@@ -267,19 +273,6 @@ additionalContent:
               url: /project-for-the-web/projectforweb-admin-home
             - text: More Project >
               url: /Project
-        # Card
-        - title: Microsoft Viva
-          links:
-            - text: Microsoft Viva Topics
-              url: /viva/topics/
-            - text: Microsoft Viva Insights
-              url: /insights/viva-teams-app
-            - text: Microsoft Viva Connections
-              url: /viva/connections/viva-connections-overview
-            - text: Microsoft Viva Learning
-              url: /viva/learning/
-            - text: More >
-              url: /viva/
         # Card
         - title: More apps and services
           links:

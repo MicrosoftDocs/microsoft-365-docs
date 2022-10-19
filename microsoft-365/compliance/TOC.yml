@@ -260,6 +260,14 @@
           href: insider-risk-management-activities.md
         - name: Take action on insider risk cases
           href: insider-risk-management-cases.md
+        - name: Capture clips with forensic evidence (preview)
+          items:
+          - name: Learn about forensic evidence (preview)
+            href: insider-risk-management-forensic-evidence.md
+          - name: Get started with forensic evidence (preview)
+            href: insider-risk-management-forensic-evidence-configure.md
+          - name: Manage forensic evidence (preview)
+            href: insider-risk-management-forensic-evidence-manage.md
         - name: Learn about and configure browser signal detection
           href: insider-risk-management-browser-support.md
         - name: Review activities with the insider risk audit log
@@ -1036,7 +1044,7 @@
       items:
         - name: Learn about sensitivity labels
           href: sensitivity-labels.md
-        - name: Why choose built-in labeling for Office apps
+        - name: Migrate the AIP add-in for Office apps
           href: sensitivity-labels-aip.md
         - name: Get started with sensitivity labels
           href: get-started-with-sensitivity-labels.md
