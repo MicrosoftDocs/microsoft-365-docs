@@ -28,6 +28,16 @@ Microsoft Purview Data Loss Prevention (DLP) policies have many components to co
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## DLP content roadmap
+
+This is the third in a series of articles that take you through the core concepts and implementation steps for DLP in order. When you move into designing a DLP policy, you'll probably find yourself going back and forth between this article and the Design a DLP policy article.
+
+1. [Learn about data loss prevention](#learn-about-data-loss-prevention)
+1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md)
+1. [Data Loss Prevention policy reference](dlp-policy-reference.md)
+1. [Design a DLP policy](dlp-policy-design.md)
+1. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
+
 ## Policy templates
 
 DLP policy templates are pre-sorted into four categories:

@@ -35,6 +35,16 @@ DLP detects sensitive items by using deep content analysis, not by just a simple
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## DLP content roadmap
+
+This is the first in a series of articles that take you through the core concepts and implementation steps for DLP in order. When you move into designing a DLP policy, you'll probably find yourself going back and forth between the DLP policy reference and Design a DLP policy articles.
+
+1. [Learn about data loss prevention](#learn-about-data-loss-prevention)
+1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md)
+1. [Data Loss Prevention policy reference](dlp-policy-reference.md)
+1. [Design a DLP policy](dlp-policy-design.md)
+1. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
+
 ## DLP is part of the larger Microsoft Purview offering
 
 DLP is just one of the Microsoft Purview tools that you will use to help protect your sensitive items wherever they live or travel. You should understand the other tools in the Microsoft Purview tools set, how they interrelate, and work better together.  See, [Microsoft Purview tools](protect-information.md) to learn more about the information protection process.
@@ -144,9 +154,10 @@ location | include/exclude by|
 |SharePoint sites |sites |
 |OneDrive accounts |accounts or distribution groups |
 |Teams chat and channel messages |account or distribution group |
-|Windows 10, Windows 11, and macOS (Catalina 10.15 and higher)  devices |user or group |
+|Devices |user or group |
 |Microsoft Cloud App Security |instance |
 |On-premises repositories| repository file path|
+|PowerBI (preview)| workspaces|
 
 3. **Choose the conditions that must be matched for a policy to be applied to an item** - You can accept pre-configured conditions or define custom conditions. Some examples are:
 

@@ -25,6 +25,17 @@ Every organization will plan for and implement data loss prevention (DLP) differ
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## Before you begin
+
+> [!WARNING]
+> Before you start your DLP planning make sure you have read through and done the work in the preceding core steps of the DLP adoption process. 
+>
+> 1. [Learn about data loss prevention](dlp-learn-about-dlp.md)
+>
+> This article is the second in the series of core steps in the DLP adoption process.
+>
+> There are additional articles that help you learn about and get started with many of the locations that DLP can monitor. You should be familiar with the ones that apply to the locations you want to monitor. 
+
 ## Multiple starting points
 
 Many organizations choose to implement DLP to comply with various governmental or industry regulations. For example, the European Union's General Data Protection Regulation (GDPR), or the Health Insurance Portability and Accountability Act (HIPAA), or the California Consumer Privacy Act (CCPA). They also implement data loss prevention to protect their intellectual property. But the starting place and ultimate destination in the DLP journey vary. 
