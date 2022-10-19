@@ -52,7 +52,7 @@ To determine whether your Office installation is Click-to-run or MSI-based:
 2.	From the **File** menu, select **Office Account**.
 3.	For Outlook 2013 Click-to-Run installations, an **Update Options** item displays. For MSI-based installations, an **Update Options** item does not display.
 
-   :::image type="content" source="../../security/defender-endpoint/images/office-2013-run-installation.png" alt-text="Screenshot of office 2013":::
+      :::image type="content" source="../../security/defender-endpoint/images/office-2013-run-installation.png" alt-text="Screenshot of office 2013":::
 
 ### Click-to-run installations
 
