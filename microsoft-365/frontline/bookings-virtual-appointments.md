@@ -1,5 +1,5 @@
 ---
-title: Virtual appointments with Microsoft Teams and the Bookings app
+title: Virtual Appointments with Microsoft Teams and the Bookings app
 author: lanachin
 ms.author: v-lanachin
 manager: samanro
@@ -29,7 +29,7 @@ appliesto:
   - Microsoft 365 for frontline workers
 ---
 
-# Virtual appointments with Microsoft Teams and the Bookings app
+# Virtual Appointments with Microsoft Teams and the Bookings app
 
 ADD LOBBY CHAT WHEN INFO AVAILABLE
 
@@ -100,7 +100,7 @@ You can configure options such as whether attendees can [join from a a desktop o
 ##### Set up SMS text notifications
 
 > [!NOTE]
-> ADD promo and Premium messaging<br>Unlimited SMS notifications are available through to November 30, 2022. As we get closer to the end of the promotion period, we'll provide additional details on licensing requirements. Contact your account team or support to receive pricing details after the promotion period.<br>Unlimited SMS notifications are available through to November 30, 2022. After this promotion period, a Teams Premium license is required. [Learn more about Teams Premium]().
+> ADD promo and Premium messaging<br>Unlimited SMS notifications are available through to November 30, 2022. As we get closer to the end of the promotion period, we'll provide additional details on licensing requirements. Contact your account team or support to receive pricing details after the promotion period.<br>Unlimited SMS notifications are available through to November 30, 2022. After this promotion period, a Teams Premium license is required. [Learn more about advanced Virtual Appointments in Teams Premium]().
 
 Attendees need a valid United States, Canada, or United Kingdom phone number before they can receive SMS notifications.
 
@@ -127,7 +127,7 @@ When a scheduler uses the appointment type to schedule an appointment, they can 
 #### On-demand appointment type
 
 > [!NOTE]
-> This feature requires a Teams Premium license. [Learn more about Teams Premium]().
+> This feature requires a Teams Premium license. [Learn more about advanced Virtual Appointments in Teams Premium]().
 
 Enter a name for the service. For example, Drop-in appointment, Account opening, Prescription renewal, Loan consultation, Tax preparation.
 
@@ -150,7 +150,7 @@ In your Teams or Outlook calendar, go to the booking, and then select **Join** o
 ## Monitor appointments and get real-time status updates in the queue view
 
 > [!NOTE]
-> Add take-back/Premium (scheduled queue) and Premium (on-demand) messaging<br>Access to scheduled appointments in the queue view will soon require a Teams Premium license. A Teams Premium license is required to see on-demand appointments in the queue view. [Learn more about Teams Premium]().
+> Add take-back/Premium (scheduled queue) and Premium (on-demand) messaging<br>Access to scheduled appointments in the queue view will soon require a Teams Premium license. A Teams Premium license is required to see on-demand appointments in the queue view. [Learn more about advanced Virtual Appointments in Teams Premium]().
 
 The queue view provides your staff with a dashboard to monitor all scheduled and on-demand virtual appointments for the day, with updates in real time. To see the queue, go to the **Queue** tab.
 
@@ -177,7 +177,7 @@ To learn more, see [Microsoft Bookings](/microsoft-365/bookings/bookings-overvie
 ## Get insight into virtual appointments usage
 
 > [!NOTE]
-> Find out which reports to include here, add take-back/Premium messaging, as needed.<br>This feature will soon require a Team Premium license. [Learn more about Teams Premium]().
+> Find out which reports to include here, add take-back/Premium messaging, as needed.<br>This feature will soon require a Team Premium license. [Learn more about advanced Virtual Appointments in Teams Premium]().
 
 The [Virtual Appointments usage report](virtual-visits-usage-report.md) in the Microsoft Teams admin center gives admins an overview of Teams virtual appointment activity in your organization. The report shows detailed analytics for virtual appointments including Bookings appointments.
 
