@@ -112,6 +112,8 @@ Microsoft 365 Defender alerts may come from solutions like Microsoft Defender fo
 | App Governance | `ma` |
 | Microsoft Data Loss Prevention | `dl` |
 
+By default, only the most relevant alerts for the security operation center are enabled. If you want to get all AAD IP risk detections, you can change it in Microsoft 365 Defender setting page under **Alert service setting** section. 
+
 ### Analyze affected assets
 
 The **Actions taken** section has a list of impacted assets, such as mailboxes, devices, and users affected by this alert.
