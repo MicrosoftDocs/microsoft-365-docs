@@ -27,6 +27,8 @@ An enterprise model is created and trained in the [content center](create-a-cont
 
 For this article, we start in the **Models** library. For information about the different model types, see [Overview of model types in Syntex](model-types-overview.md).
 
+If you want to create a local model, see [Create a model on a local SharePoint site](create-local-model.md).
+
 ## Create a model
 
 From the **Models** library, select **Create a model**.
