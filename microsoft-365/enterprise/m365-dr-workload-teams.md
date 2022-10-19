@@ -1,6 +1,6 @@
 ---
 title: Data Residency for Microsoft Teams
-description: 
+description: Learn about data residency for Microsoft Teams
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/20/2022
+ms.date: 
 ms.reviewer: 
 ms.custom:
 - it-pro
@@ -18,17 +18,16 @@ ms.collection:
 
 # Data Residency for Microsoft Teams
 
-
 ## Data Residency commitments available
 
 ### Option 1: Privacy and Security Product Terms
 
-*For current language please refer to the Privacy and Security Product Terms <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank">**webpage**</a> and view the section titled "Location of Customer Data at Rest for Core Online Services".*
+For current language please refer to the Privacy & Security Product Terms <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank">**webpage**</a> and view the section titled "Location of Customer Data at Rest for Core Online Services".
 
 >[!NOTE]
->If Customer provisions its tenant in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, United Arab Emirates, United Kingdom, or United States, Microsoft will store the following Customer Data at rest only within that *Geography*: Microsoft Teams chat, channel, and meeting conversations, and, for customers using Microsoft Stream (based on SharePoint), meeting recordings.
+>If Customer provisions its tenant in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, United Arab Emirates, United Kingdom, or United States, Microsoft will store the following Customer Data at rest only within that _Geography_: Microsoft Teams chat messages (including private messages, channel messages, meeting messages and images used in chats), and for customers using Microsoft Stream (on SharePoint), meeting recordings.
 
-### Option 2: Multi-Geo add-on
+### Option 2: Advanced Data Residency add-on
 
 Required Conditions:
 
@@ -42,18 +41,30 @@ Customers can assign users of Microsoft Teams to any Satellite Geography support
 ### Option 3: Advanced Data Residency add-on
 
 Required Conditions:
-1.	Tenant has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
-2.	Tenant has a valid Advanced Data Residency subscription for all users in the tenant.
-3.	The Microsoft Teams subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
-**Commitment:**
+1. Tenant has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. Tenant has a valid Advanced Data Residency subscription for all users in the tenant
+1. The Microsoft Teams subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
+
+***Commitment:***
+
 The following customer data will be stored in the related _Geography_:
 Microsoft Teams Core customer data consists of chat and channel messages, associated media and all the teams and channels present in the tenant.
 
 - Chat/ channel messages & team structure: Every team in Microsoft Teams is backed by an Office 365 Modern Group and its SharePoint site and Exchange mailbox. Private chats (including group chats), messages sent as part of a conversation in a channel, and the structure of teams and channels are stored in an Azure powered chat service. The data is also stored in a hidden folder in the user and group mailboxes to enable information protection features.  
+- Images and Media: Media used in chats (except for Giphy GIFs which are not stored but are a reference link to the original Giphy URL) are stored in an Azure based Media Service deployed to the same locations as the chat service.
+- Meeting Recordings: For users of Microsoft Stream (on SharePoint) Meeting Recordings are stored in the OneDrive storage of the user that initiates the recording. 
 
-- Images and Media: Meeting recordings, Media used in chats (except for Giphy GIFs which are not stored but are a reference link to the original Giphy URL) is stored in an Azure based Media Service that are deployed to the same locations as the chat service.
+### Option 3: Multi-Geo add-on
 
+Required Conditions:
+
+1. Tenants have a valid Multi-Geo subscription that covers all users assigned to a _Satellite Geography_
+1. Customer must have an active Enterprise Agreement.
+1. Total purchased Multi-Geo units must be greater than 5% of the total eligible seats in the tenant.
+
+**Commitment:**
+Customers can assign users of Microsoft Teams to any _Satellite Geography_ supported by Multi-Geo. The following customer data will be stored in the relevant _Satellite Geography_: Teams chat data that consists of chat messages, including private messages, channel messages, and images used in chats.
 
 ## Multi-Geo Capabilities in Microsoft Teams
 
@@ -111,7 +122,9 @@ Teams chat services moves each thread individually. The thread is locked in a re
 In addition to Exchange Online, SharePoint Online, and OneDrive for Business; Microsoft will migrate Teams data to the local datacenter.
 
 - Teams chat messages, including private messages and channel messages.
-
 - Teams images used in chats.
 
 Teams files are stored in SharePoint Online and Teams chat files are stored in OneDrive for Business. Voicemail, calendar, and contacts are stored in Exchange Online. In many cases, Exchange Online, SharePoint Online, and OneDrive for Business are already used by the customer in the local datacenter _Geography_ and are also part of the Microsoft 365 migration program for eligible customer countries.
+
+### How can I determine customer data location?
+You can find the actual data location in Tenant Admin Center.  As a tenant administrator you can find the actual data location, for committed data,  by navigating to Admin|Settings|Org Settings|Organization Profile|Data Location.

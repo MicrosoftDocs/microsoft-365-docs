@@ -27,7 +27,7 @@ Global administrators and SharePoint Online administrators continue to have acce
 
 Configuring _Geography_ admins requires SharePoint Online PowerShell module.
 
-Use [Connect-SPOService](/powershell/module/sharepoint-online/Connect-SPOService) to connect to the admin center of the _Geography_ location where you want to add the _Geography_ admin. (For example, Connect-SPOService  https://ContosoEUR-admin.sharepoint.com.)
+Use [Connect-SPOService](https://learn.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService) to connect to the admin center of the _Geography_ location where you want to add the _Geography_ admin. (For example, Connect-SPOService  https://ContosoEUR-admin.sharepoint.com.)
 
 To view the existing _Geography_ admins of a location, run `Get-SPOGeoAdministrator`
 
@@ -45,7 +45,7 @@ To add a group as a _Geography_ administrator, run `Add-SPOGeoAdministrator -Gro
 
 To remove a group as a _Geography_ administrator, run `Remove-SPOGeoAdministrator -GroupAlias <alias>`
 
-Note that not all security groups have a group alias. If you want to add a security group that does not have an alias, run [Get-MsolGroup](/powershell/module/msonline/get-msolgroup) to retrieve a list of groups, find your security group's ObjectID, and then run:
+Note that not all security groups have a group alias. If you want to add a security group that does not have an alias, run [Get-MsolGroup](https://learn.microsoft.com/powershell/module/msonline/get-msolgroup) to retrieve a list of groups, find your security group's ObjectID, and then run:
 
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
@@ -53,10 +53,10 @@ To remove a group by using the ObjectID, run `Remove-SPOGeoAdministrator -Object
 
 ## Related topics
 
-[Add-SPOGeoAdministrator](/powershell/module/sharepoint-online/add-spogeoadministrator)
+[Add-SPOGeoAdministrator](https://learn.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
 
-[Get-SPOGeoAdministrator](/powershell/module/sharepoint-online/get-spogeoadministrator)
+[Get-SPOGeoAdministrator](https://learn.microsoft.com/powershell/module/sharepoint-online/get-spogeoadministrator)
 
-[Remove-SPOGeoAdministrator](/powershell/module/sharepoint-online/remove-spogeoadministrator)
+[Remove-SPOGeoAdministrator](https://learn.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-[Set an alias (MailNickName) for a security group](/powershell/module/azuread/set-azureadgroup)
+[Set an alias (MailNickName) for a security group](https://learn.microsoft.com/powershell/module/azuread/set-azureadgroup)
