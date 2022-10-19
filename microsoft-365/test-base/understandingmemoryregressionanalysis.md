@@ -24,8 +24,7 @@ For all test runs in the **Test Base** service, memory signals are captured in t
 
  > [!div class="mx-imgBorder"]  
  > ![Screenshot shows Memory Regression](Media/understandingmemoryregressionanalysis01.png)  
- 
-**Figure 4. Memory utilization data graph**
+ > **Figure 4. Memory utilization data graph**
 
 &nbsp;&nbsp;&nbsp;**Note:**
 - In the previous graph, process utilization may not have lined up exactly, due to different factors in the execution of a test.
