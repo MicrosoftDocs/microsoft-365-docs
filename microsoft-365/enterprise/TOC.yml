@@ -530,6 +530,8 @@
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Manage Microsoft 365 groups
               href: manage-microsoft-365-groups-with-powershell.md
+            - name: Manage Folders and Rules feature in Microsoft 365 Groups
+              href: manage-folders-and-rules-feature.md 
     - name: Manage SharePoint
       href: manage-sharepoint-online-with-microsoft-365-powershell.md
       items: 
