@@ -7,7 +7,7 @@ author: MSFTTracyP
 manager: dansimp
 ms.date: 04/05/2021
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 
 ms.localizationpriority: high
 search.appverid:
