@@ -50,7 +50,7 @@ Once the feature is enabled, by default only owner of the group has the permissi
   
 ## Enable member permission option
 
-If there is a need for members in the group to create folders and triage messages in groups mailbox, then member permission to edit groups content has to be enabled by the admin at tenant level and group owner at group level respectively.
+If there's a need for members in the group to create folders and triage messages in groups mailbox, then member permission to edit groups content has to be enabled by the admin at tenant level and group owner at group level respectively.
 
 By default, this setting is set **off** at tenant level and group level
   
