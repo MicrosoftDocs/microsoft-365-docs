@@ -30,4 +30,3 @@ From the latter two pages, you will have detailed views of test results that foc
 -	Memory utilization
 -	CPU utilization
 The sections that follow describe how to access and review the results of the previously specified testing areas.
-
