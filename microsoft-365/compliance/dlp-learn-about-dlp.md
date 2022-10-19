@@ -27,7 +27,7 @@ In Microsoft Purview, you implement data loss prevention by defining and applyin
 
 - Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive
 - Office applications such as Word, Excel, and PowerPoint
-- Windows 10, Windows 11 and macOS (Catalina 10.15 and higher) endpoints
+- Windows 10, Windows 11 and macOS (three latest released versions) endpoints
 - non-Microsoft cloud apps
 - on-premises file shares and on-premises SharePoint.
 
@@ -76,7 +76,7 @@ DLP monitoring and protection are native to the applications that users use ever
 
 **Technology planning for DLP**
 
-Keep in mind that DLP as a technology can monitor and protect your data at rest, data in use and data in motion across Microsoft 365 services, Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices, on-premises file shares, and on-premises SharePoint. There are planning implications for the different locations, the type of data you want to monitor and protect, and the actions to be taken when a policy match occurs.
+Keep in mind that DLP as a technology can monitor and protect your data at rest, data in use and data in motion across Microsoft 365 services, Windows 10, Windows 11, and macOS (three latest released versions) devices, on-premises file shares, and on-premises SharePoint. There are planning implications for the different locations, the type of data you want to monitor and protect, and the actions to be taken when a policy match occurs.
 
 **Business processes planning for DLP**
 
@@ -97,7 +97,7 @@ You can apply DLP policies to data at rest, data in use, and data in motion in l
 - OneDrive accounts
 - Teams chat and channel messages
 - Microsoft Defender for Cloud Apps
-- Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices
+- Windows 10, Windows 11, and macOS (three latest released versions) devices
 - On-premises repositories
 - PowerBI sites
 
@@ -154,7 +154,7 @@ location | include/exclude by|
 |SharePoint sites |sites |
 |OneDrive accounts |accounts or distribution groups |
 |Teams chat and channel messages |account or distribution group |
-|Devices |user or group |
+|Windows 10, Windows 11, and macOS (three latest released versions)  devices |user or group |
 |Microsoft Cloud App Security |instance |
 |On-premises repositories| repository file path|
 |PowerBI (preview)| workspaces|
@@ -169,7 +169,7 @@ location | include/exclude by|
 
 - SharePoint/Exchange/OneDrive: Block people who are outside your organization form accessing the content. Show the user a tip and send them an email notification that they are taking an action that is prohibited by the DLP policy.
 - Teams Chat and Channel: Block sensitive information from being shared in the chat or channel
-- Windows 10, Windows 11, and macOS (Catalina 10.15 and higher)  Devices: Audit or restrict copying a sensitive item to a removeable USB device
+- Windows 10, Windows 11, and macOS (three latest released versions)  Devices: Audit or restrict copying a sensitive item to a removeable USB device
 - Office Apps: Show a popup notifying the user that they are engaging in a risky behavior and block or block but allow override.
 - On-premises file shares: move the file from where it is stored to a quarantine folder
 

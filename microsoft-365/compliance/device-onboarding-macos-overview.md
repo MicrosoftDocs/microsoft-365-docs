@@ -55,7 +55,7 @@ Your macOS devices must already be managed through Intune or JAMF Pro.
 
 ### Supported browsers
 
-Endpoint DLP supports these browsers on macOS Catalina 10.15 or higher:
+Endpoint DLP supports these browsers on macOS (three latest released versions):
 
 - Microsoft Edge (latest version)
 - Safari (latest version, macOS only)
