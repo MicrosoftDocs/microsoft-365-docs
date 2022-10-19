@@ -24,7 +24,7 @@ CPU utilization is not likely to be a direct comparitive match by operating syst
 
 In the figure that follows, there are two OS release versions against which CPU utilizations are compared for the same application. The list of processes should expose any significant regressions. The graphs show CPU % utilization over time along with the average % utilization per operating system version release. 
 
-**Note**  
+&nbsp;&nbsp;&nbsp;**Note**  
 - Memory or CPU utilization might also improve as a result of an operating system update, rather than simply deteriorate.
 
  > [!div class="mx-imgBorder"]  
