@@ -75,17 +75,20 @@ To get started, see [Test attack surface reduction (ASR) rules](../security/defe
 
 Use [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) with Microsoft Defender for Endpoint to further improve you device discovery capabilities, to learn more see: [improving-device-discoverability-and-classification-within-mde](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/improving-device-discoverability-and-classification-within-mde/ba-p/3625559).
 
-### Assess and Protect
+## Assess and Protect
+
+
 
 [Assess your devices](../security/defender-endpoint/machine.md)
+
 [Assign device value](../security/defender-vulnerability-management/tvm-assign-device-value.md)
 Onboard newly discovered endpoints
 
-### Investigate and Improve
+## Investigate and Improve
 
 [Review Secure Score](../security/defender/microsoft-secure-score.md)
 
-### Track and Maintain
+## Track and Maintain
 
 Enable email notifications for new vulnerabilities](../security/defender-endpoint/configure-email-notifications.md)
 [Hunt for threats with advanced hunting](../security/defender/advanced-hunting-overview.md)
