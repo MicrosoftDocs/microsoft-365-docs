@@ -29,7 +29,7 @@ description: Learn how to train a structured document processing model in Micros
 Using [AI Builder](/ai-builder/overview)—a feature in Microsoft Power Apps—Syntex users can create a [structured document processing](form-processing-overview.md) model directly from a SharePoint document library. 
 --->
 
-Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a structured document processing model. Then use this article to train your model.
+Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a structured document processing model in a content center. Follow the instructions in [Create a model on a local SharePoint site](create-local-model.md) to create the model on a local site. Then use this article to train your model.
 
 To train a structured document processing model, follow these steps:
 
@@ -40,7 +40,7 @@ To train a structured document processing model, follow these steps:
 
 ## Step 1: Add and analyze documents
 
-After you create your structured document processing model, the **Choose information to extract** page opens. Here you list all pieces of information that you want the AI model to extract from your documents, such as Name, Address, or Amount. 
+After you create your structured document processing model, the **Choose information to extract** page opens. Here you list all pieces of information that you want the AI model to extract from your documents, such as *Name*, *Address*, or *Amount*. 
 
 > [!NOTE]
 > When you look for example files to use, see the [document processing model input document requirements and optimization tips](/ai-builder/form-processing-model-requirements). 
@@ -49,7 +49,7 @@ After you create your structured document processing model, the **Choose informa
 
 2.  You can create as many collections of document layouts you want your model to process. For detailed steps, see [Group documents by collections](/ai-builder/create-form-processing-model#group-documents-by-collections). 
 
-3. After you create your collections and add the example files for each, AI Builder will examine the uploaded documents to detect the fields and tables. This process usually takes a few minutes. When the analysis is complete, you can proceed with tagging the documents.
+3. After you create your collections and add at least five example files for each, AI Builder on Syntex will examine the uploaded documents to detect the fields and tables. This process usually takes a few seconds. When the analysis is complete, you can proceed with tagging the documents.
 
 ## Step 2: Tag fields and tables
 
