@@ -40,5 +40,3 @@ An Execution request ID for tests related to each release is provided, as are KB
 On the **Script Execution** tab, the **Summary** that is presented specifies the results of test execution for each script you uploaded when creating and configuring your application package. This will include Out-of-box test scripts and any Functional test scripts you may have provided. As a result of script execution, various forms of output information are generated and stored in a folder named **logs.zip**. This folder contains subfolders in which additional information is accessible, as described in the table of [Downloading and Analyzing Test Result Files](downloadingandanalyzingtestresultfiles.md).
 
 If you want to view the logged output of individual script execution only, select script names one at a time on the **Script execution** tab to display the **Log Output** pane, from where you can view script output results that include the **Script name, Start datetime, End datetime**, and the output text. Note that you can also filter the content to display **sdout** or **stderr** output, as shown in the previous figure.
-
-
