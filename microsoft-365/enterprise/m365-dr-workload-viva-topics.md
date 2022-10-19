@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 10/14/2022
+ms.date: 
 ms.reviewer: 
 ms.custom:
 - it-pro
@@ -31,13 +31,13 @@ Capability summary: Viva Topics uses Microsoft AI technology, Microsoft 365, Mic
 Required Conditions:
 
 1. Tenant has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
-2. Tenant has a valid Advanced Data Residency subscription for all users in the tenant.
-3. The Viva Topics subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. Tenant has a valid Advanced Data Residency subscription for all users in the tenant.
+1. The Viva Topics subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
 **Commitment:**
 The following customer data will be stored in the related _Geography_:
 
-- All the topics and customer data snippets discovered are stored within the relevant _Geographies_ in Exchange Online Substrate (site or arbitration mailboxes, and Substrate).  All topic customer data is partitioned based on which _Macro Region Geography_ or _Local Region Geography_ the data came from within your tenant.
+- All the topics and customer data snippets discovered are stored within the relevant _Geographies_ in Exchange Online Substrate (site or arbitration mailboxes, and Substrate).  All topic customer data is partitioned based on which _Local Region Geography_ or _Expanded Local Region Geography_ the data came from within your tenant.
 
 - ML models are trained on public web data, and as such do not contain any customer data from your tenant. In the future it's possible we will use customer data to improve accuracy of the ML models, in which case the data handling of ML models will follow the same policies as any other customer content (including data residency, retention, access control, sensitivity)
 
