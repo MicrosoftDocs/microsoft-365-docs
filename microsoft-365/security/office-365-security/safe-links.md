@@ -253,7 +253,7 @@ These settings apply to Safe Links in email, Teams, and Office apps:
 
   If you select this setting, the following settings are available:
 
-  - **Let users click through to the original URL**: Controls whether users can clicking through the [warning page](#warning-pages-from-safe-links) to the original URL. The recommend value is not selected (off).
+  - **Let users click through to the original URL**: Controls whether users can click through the [warning page](#warning-pages-from-safe-links) to the original URL. The recommend value is not selected (off).
 
     In Safe Links for Office apps, this setting applies to the original URL in the desktop versions Word, Excel, PowerPoint, and Visio.
 
