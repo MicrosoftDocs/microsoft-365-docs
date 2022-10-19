@@ -6,15 +6,15 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy 
 ms.sitesec: library 
 ms.pagetype: security 
-ms.author: v-jweston 
-author: jweston-1
+ms.author: dansimp 
+author: dansimp
 ms.localizationpriority: medium 
 ms.date: 09/01/2022
 manager: dansimp 
 audience: ITPro 
 ms.collection:
  - m365-security
- - EngageScoreSep2022
+ - ContentEngagementFY23
  - tier3
 ms.topic: article 
 ms.subservice: mde 
