@@ -30,7 +30,7 @@ Organizations often receive documents that have no structure in large quantities
 > [!NOTE]
 > For more ideas about how to use these models in your organization, see [Get started driving adoption](adoption-getstarted.md) and [Scenarios and use cases](adoption-scenarios.md).
 
-For example, you can create a freeform document processing model that identifies all purchase order documents that are uploaded to the document library. From each purchase order, you can then extract and display specific data that is important to you, such as *PO Number*, *Date*, or *Total Cost*.
+For example, you can create a structured document processing model that identifies all documents that are uploaded to the document library. From each document, you can then extract and display specific data that is important to you, such as *Name*, and other relevant information.
 
 ![Screenshot showing the document library view.](../media/content-understanding/doc-lib-done.png) 
 
