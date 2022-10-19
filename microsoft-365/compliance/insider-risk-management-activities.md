@@ -11,15 +11,22 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Investigate insider risk management activities
 
-Investigating risky user activities is an important first step in minimizing insider risks for your organization. These risks may be activities that generate alerts from insider risk management policies, or risks from activities that are detected by policies but don't immediately create an insider risk management alert for users. You can investigate these types of activities by using the **User activity reports (preview)** or with the **Alert dashboard**.
+>[!IMPORTANT]
+>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
 
-## User activity reports (preview)
+Investigating risky user activities is an important first step in minimizing insider risks for your organization. These risks may be activities that generate alerts from insider risk management policies, or risks from activities that are detected by policies but don't immediately create an insider risk management alert for users. You can investigate these types of activities by using the **User activity reports** or with the **Alert dashboard**.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## User activity reports
 
 User activity reports allow you to examine activities for specific users for a defined time period without having to assign them temporarily or explicitly to an insider risk management policy. In most insider risk management scenarios, users are explicitly defined in policies, and they may have policy alerts (depending on triggering events) and risk scores associated with the activities. But in some scenarios, you may want to examine the activities for users that aren't explicitly defined in a policy. These activities may be for users that you've received a tip about the user and potentially risky activities, or users that typically don't need to be assigned to an insider risk management policy.
 
@@ -38,10 +45,11 @@ New reports typically take up to 10 hours before they're ready for review. When 
 
 ![Insider risk management user activity report.](../media/insider-risk-user-activity-report.png)
 
-The **User activity report** for the selected user contains the **User activity** and **Activity explorer** tabs:
+The **User activity report** for the selected user contains the **User activity**, **Activity explorer**, and **Forensic evidence (preview)** tabs:
 
 - **User activity**: Use this chart view to investigate activities and view potential activities that occur in sequences. This tab is structured to enable quick review of a case, including a historical timeline of all activities, activity details, the current risk score for the user in the case, the sequence of risk events, and filtering controls to help with investigative efforts.
 - **Activity explorer**: The **Activity explorer** tab provides risk investigators with a comprehensive analytic tool that provides detailed information about activities. With the Activity explorer, reviewers can quickly review a timeline of detected risky activity and identify and filter all risk activities associated with alerts. To learn more about using the Activity explorer, see the *Activity explorer* section later in this article.
+- **Forensic evidence (preview)**: The **Forensic evidence (preview)** tab provides access to forensic evidence captures associated with activities that may result in security incidents for users. Forensic evidence enables customizable visual capturing across devices to help your organization better mitigate, understand, and respond to potential data risks like unauthorized data exfiltration of sensitive data. To learn more about using forensic evidence, see [Learn about insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence).
 
 ## Alert dashboard
 
@@ -121,9 +129,11 @@ Use the following sections and tabs on the Alert detail page for more informatio
 This section contains general information about the user and alert. This  information is available for context while reviewing detailed information about the detected activity included in the alert for the user:
 
 - **Activity that generated this alert**: Displays the top risk activity and policy match during the activity evaluation period that led to the alert being generated.
-- **Triggering event**: Displays the most recent triggering event that prompted the policy to start assigning risk scores to the user's activity.
+- **Triggering event**: Displays the most recent triggering event that prompted the policy to start assigning risk scores to the user's activity. If you've configured [integration with communication compliance](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) for *Data leaks by disgruntled users* or *Security policy violations by disgruntled users* policies, the triggering event for these alerts will be scoped to communication compliance activity.
 - **User profile**: Displays general information about the user assigned to the alert. If anonymization is enabled, the username, email address, alias, and organization fields are anonymized.
 - **User alert history**: Displays a list of alerts for the user for the last 30 days. Includes a link to view the complete alert history for the user.
+
+Alerts generated from policies scoped to only activities that include [priority content](/microsoft-365/compliance/insider-risk-management-policies#prioritize-content-in-policies) include the *Only activity with priority content was scored for this alert* notification in this section.
 
 ### All risk factors
 
@@ -164,7 +174,7 @@ The **User activity** chart is one of the most powerful tools for internal risk 
     - **Risk category**: Filter activities by the following risk categories: *Activities with risk scores > 15 (unless in a sequence)* and *Sequence activities*.
     - **Activity Type**: Filter activities by the following types: *Access*, *Deletion*, *Collection*, *Exfiltration*, *Infiltration*, *Obfuscation*, and *Security*.
     - **Sort by**: List the timeline activities by *Date occurred* or *Risk score*.
-4. **Risk sequence**: The chronological order of risky activities is an important aspect of risk investigation and identifying these related activities is an important part of evaluating overall risk for your organization. Alert activities that are related are displayed with connecting lines to highlight that these activities are associated with a larger risk area. This view of activities can help investigators literally 'connect the dots' for risk activities that could have been viewed as isolated or one-off events. Select any bubble in the sequence to display details for all the associated risk activities. Details include:
+4. **Risk sequence**: The chronological order of risky activities is an important aspect of risk investigation and identifying these related activities is an important part of evaluating overall risk for your organization. Alert activities that are related are displayed with connecting lines to highlight that these activities are associated with a larger risk area. Sequences are also identified in this view by an icon positioned above the sequence activities relative to the risk score for the sequence. Hover over the icon to see the date and time of the risky activity associated with this sequence. This view of activities can help investigators literally 'connect the dots' for risk activities that could have been viewed as isolated or one-off events. Select the icon or any bubble in the sequence to display details for all the associated risk activities. Details include:
 
     - **Name** of the sequence.
     - **Date** or **Date range** of the sequence.
@@ -181,11 +191,11 @@ The **User activity** chart is one of the most powerful tools for internal risk 
 > [!NOTE]
 > Activity explorer is available in the alert management area for users with triggering events after this feature is available in your organization.
 
-The Activity explorer provides risk investigators and analysts with a comprehensive analytic tool that provides detailed information about alerts. With the Activity explorer, reviewers can quickly review a timeline of detected risky activity and identify and filter all risk activities associated with alerts. 
+The Activity explorer provides risk investigators and analysts with a comprehensive analytic tool that provides detailed information about alerts. With the Activity explorer, reviewers can quickly review a timeline of detected risky activity and identify and filter all risk activities associated with alerts.
 
 To filter alerts on the Activity explorer for column information, select the Filter control. You can filter alerts by one or more attributes listed in the details pane for the alert. Activity explorer also supports customizable columns to help investigators and analysts focus the dashboard on the information most important to them.
 
-Use the Activity scope and Risk insight filters to display and sort activities and insights for the following areas.
+Use the *Activity scope* and *Risk insight* filters to display and sort activities and insights for the following areas.
 
 - **Activity scope filters**: Filters all scored activities for the user.
   - All scored activity for this user
@@ -236,8 +246,8 @@ As insider risk management alerts age, their value to minimize risky activity di
 
 To help minimize the number of older items that provide limited current value, the following retention and limits apply for insider risk management alerts, cases, and user activity reports:
 
-|Item|Retention/Limit|
-|---|---|
+|**Item**|**Retention/Limit**|
+|:-------|:------------------|
 |Alerts with Needs review status|120 days from alert creation, then automatically deleted|
 |Active cases (and associated artifacts)|Indefinite retention, never expire|
 |Resolved cases (and associated artifacts)|120 days from case resolution, then automatically deleted|
@@ -254,6 +264,7 @@ Becoming overwhelmed with the number of alerts produced by your insider risk man
 
 - **Adjust your insider risk policies**: Selecting and configuring the correct insider risk policy is the most basic method to address the type and volume of alerts. Starting with the appropriate [policy template](insider-risk-management-policies.md#policy-templates) helps focus the types of risk activities and alerts you'll see. Other factors that may impact alert volume are the size of the in-scope user and groups and the content and [channels that are prioritized](insider-risk-management-policies.md#prioritize-content-in-policies). Consider adjusting policies to refine these areas to what is most important for your organization.
 - **Modify your insider risk settings**: Insider risk settings include a wide variety of configuration options that can impact the volume and types of alerts you'll receive. These include settings for [policy indicators](insider-risk-management-settings.md#indicators), [indicator thresholds](insider-risk-management-settings.md#indicator-level-settings-preview), and [policy timeframes](insider-risk-management-settings.md#policy-timeframes). Consider configuring [intelligent detections](insider-risk-management-settings.md#intelligent-detections) options to exclude specific file types, define minimum thresholds before activity alerts are reported by your policies, and changing the alert volume configuration to a lower setting.
+- **Enable inline alert customization (preview)**: Enabling [inline alert customization](/microsoft-365/compliance/insider-risk-management-settings#inline-alert-customization-preview) allows analysts and investigators to quickly edit policies when reviewing alerts. They can update thresholds for activity detection with Microsoft recommendations, configure custom thresholds, or choose to ignore the type of activity that created the alert. If this is not enabled, then only users assigned to the *Insider Risk Management* role group can use inline alert customization.
 - **Bulk deletion of alerts where applicable**: It may help save triage time for your analysts and investigators to immediately [dismiss multiple alerts](insider-risk-management-activities.md#dismiss-multiple-alerts-preview) at once. You can select up to 400 alerts to dismiss at one time.
 
 ### Not familiar with the alert triage process

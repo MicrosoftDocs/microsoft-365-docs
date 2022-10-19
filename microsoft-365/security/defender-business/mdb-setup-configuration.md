@@ -14,10 +14,11 @@ ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
- - SMB
- - M365-security-compliance
- - m365solution-mdb-setup
- - highpri
+- SMB
+- m365-security
+- m365solution-mdb-setup
+- highpri
+- tier1
 ---
 
 # Set up and configure Microsoft Defender for Business

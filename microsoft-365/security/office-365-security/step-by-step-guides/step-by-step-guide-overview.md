@@ -2,7 +2,7 @@
 title: Microsoft Defender for Office 365 step-by-step guides and how to use them 
 description: What are the step-by-step-guides for Microsoft 365 Defender for Office 365? See *only the steps needed to complete a task* and set up features. Information for use in trial subscriptions and production. Guidance designed to minimise information overload and speed up your configuration and use.
 search.product: 
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,12 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection: 
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: overview
-ms.technology: mdo
+ms.subservice: mdo
 search.appverid: met150
 ---
 

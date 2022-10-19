@@ -2,7 +2,8 @@
 title: Getting started with defense in-depth configuration for email security
 description: Step-by-step configuration guidance on how to get security value from Microsoft Defender for Office 365 when you have third party email filtering.
 search.product: 
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +14,11 @@ author: MSFTBen
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection: 
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
-ms.technology: mdo
 search.appverid: met150
 ---
 
@@ -29,18 +32,18 @@ This guide is for you if:
 The information below will detail how to get the most out of your investment, broken down into easy to follow steps.
 
 ## What you will need
--	Mailboxes hosted in Office 365
+- Mailboxes hosted in Office 365
 - One or more of:
-  -	Microsoft Defender for Office 365 Plan 1 for protection features
-  -	Microsoft Defender for Office 365 Plan 2 for most other features (included in E5 plans)
-  -	Microsoft Defender for Office 365 Trial (available to all customers at aka.ms/tryMDO)
--	Sufficient permissions to configure the features discussed below
+  - Microsoft Defender for Office 365 Plan 1 for protection features
+  - Microsoft Defender for Office 365 Plan 2 for most other features (included in E5 plans)
+  - Microsoft Defender for Office 365 Trial (available to all customers at aka.ms/tryMDO)
+- Sufficient permissions to configure the features discussed below
 
 ## Step 1 – Understand the value you already have
 
 ### Protection features
 
--	Built-in protection offers a base level of unobtrusive protection, and includes malware, zero day (Safe Attachments), and URL protection (Safe Links) in email (including internal email), SharePoint Online, OneDrive, and Teams. Note that URL protection provided in this state is via API call only. It doesn't wrap or rewrite URLs but does require a supported Outlook client. You can create your own custom policies to expand your protection.
+- Built-in protection offers a base level of unobtrusive protection, and includes malware, zero day (Safe Attachments), and URL protection (Safe Links) in email (including internal email), SharePoint Online, OneDrive, and Teams. Note that URL protection provided in this state is via API call only. It doesn't wrap or rewrite URLs but does require a supported Outlook client. You can create your own custom policies to expand your protection.
 
 **Read more & watch an overview video of Safe Links here :** [Complete Safe Links overview](../safe-links.md)
 
@@ -48,15 +51,15 @@ The information below will detail how to get the most out of your investment, br
 
 ### Detection, investigation, response and hunting features
 
--	When alerts fire in Microsoft Defender for Office 365, they're automatically correlated, and combined into Incidents to help reduce the alert fatigue on security staff. Automated Investigation and Response (AIR) will trigger investigations to help remediate and contain threats.
+- When alerts fire in Microsoft Defender for Office 365, they're automatically correlated, and combined into Incidents to help reduce the alert fatigue on security staff. Automated Investigation and Response (AIR) will trigger investigations to help remediate and contain threats.
 
 **Read more, watch an overview video and get started here :** [Incident response with Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview)
 
--	Threat Analytics is our in-product detailed threat intelligence solution from expert Microsoft security researchers, detailed reports designed to get you up to speed on the latest threat groups, attack techniques, how to protect your organization with Indicators of Compromise (IOC) and much more.
+- Threat Analytics is our in-product detailed threat intelligence solution from expert Microsoft security researchers, detailed reports designed to get you up to speed on the latest threat groups, attack techniques, how to protect your organization with Indicators of Compromise (IOC) and much more.
 
 **Read more, watch an overview video and get started here :** [Threat analytics in Microsoft 365 Defender](../../defender/threat-analytics.md)
 
--	Explorer can be used to hunt threats, visualize mail flow patterns, spot trends, and identify the impact of changes you make during tuning Defender for Office 365. You can also quickly delete messages from your organization with a few simple clicks.
+- Explorer can be used to hunt threats, visualize mail flow patterns, spot trends, and identify the impact of changes you make during tuning Defender for Office 365. You can also quickly delete messages from your organization with a few simple clicks.
 
 **Read more, and get started here:** [Threat Explorer and Real-time detections](../threat-explorer.md)
 
@@ -64,33 +67,33 @@ The information below will detail how to get the most out of your investment, br
 
 ### Protection features
 
--	Consider enabling policies beyond the built-in Protection. Enabling time-of-click protection, or impersonation protection, for example, to add extra layers or fill gaps missing from your third party protection. Be aware that if you have a transport rule or connection filter that is overriding verdicts (this also can be known as SCL-1) you'll need to address this before turning on other protection features.
+- Consider enabling policies beyond the built-in Protection. Enabling time-of-click protection, or impersonation protection, for example, to add extra layers or fill gaps missing from your third party protection. Be aware that if you have a transport rule or connection filter that is overriding verdicts (this also can be known as SCL-1) you'll need to address this before turning on other protection features.
 
 **Read more here:** [Anti-phishing policies](../set-up-anti-phishing-policies.md)
 
--	If your current security provider is configured to modify messages *in any way*, it’s important to note that authentication signals can impact the ability for Defender for Office to protect you against attacks such as spoofing. If your third party supports Authenticated Received Chain (ARC), then enabling this is a highly recommended step in your journey to advanced dual filtering. Moving any message modification configuration to Defender for Office 365 is also an alternative.
+- If your current security provider is configured to modify messages *in any way*, it’s important to note that authentication signals can impact the ability for Defender for Office to protect you against attacks such as spoofing. If your third party supports Authenticated Received Chain (ARC), then enabling this is a highly recommended step in your journey to advanced dual filtering. Moving any message modification configuration to Defender for Office 365 is also an alternative.
 
 **Read more here:** [Use Trusted ARC senders for legitimate devices and services between the sender and receiver](../use-arc-exceptions-to-mark-trusted-arc-senders.md)
 
--	Enhanced Filtering for connectors allows IP address and sender information to be preserved through the third party. This improves accuracy for the filtering (protection) stack, post breach capabilities & authentication improvements.
+- Enhanced Filtering for connectors allows IP address and sender information to be preserved through the third party. This improves accuracy for the filtering (protection) stack, post breach capabilities & authentication improvements.
 
 **Read more here:** [Enhanced filtering for connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
 
--	Priority account protection will offer enhanced visibility for accounts in tooling, along with additional protection when in an advanced defense in-depth configuration state.
+- Priority account protection will offer enhanced visibility for accounts in tooling, along with additional protection when in an advanced defense in-depth configuration state.
 
 **Read more here:** [Priority account protection](protect-your-c-suite-with-priority-account-protection.md)
 
--	Advanced Delivery should be configured to deliver any third party phish simulations correctly, and if you have a Security Operations mailbox, consider defining it as a SecOps mailbox to ensure emails *do not* get removed from the mailbox due to threats.
+- Advanced Delivery should be configured to deliver any third party phish simulations correctly, and if you have a Security Operations mailbox, consider defining it as a SecOps mailbox to ensure emails *do not* get removed from the mailbox due to threats.
 
 **Read more here:** [Advanced delivery](../configure-advanced-delivery.md)
 
--	User-reported email settings can be configured to allow users to report messages, directly to Microsoft, or to your custom mailbox (to integrate with current security workflows) or both, the submissions portal can also be accessed to triage false positives and false negatives.
+- User-reported email settings can be configured to allow users to report messages, directly to Microsoft, or to your custom mailbox (to integrate with current security workflows) or both, the submissions portal can also be accessed to triage false positives and false negatives.
 
 **Read more here:** [Deploy and configure the report message add-in to users](deploy-and-configure-the-report-message-add-in.md)
 
 ### Detection, investigation, response, and hunting features
 
--	Advanced hunting can be used to proactively hunt for threats in your organization, using shared queries from the community to help you get started. You can also use custom detections to set up alerts when personalized criteria are met.
+- Advanced hunting can be used to proactively hunt for threats in your organization, using shared queries from the community to help you get started. You can also use custom detections to set up alerts when personalized criteria are met.
 
 **Read more, watch an overview video and get started here:** [Overview - Advanced hunting](../../defender/advanced-hunting-overview.md)
 

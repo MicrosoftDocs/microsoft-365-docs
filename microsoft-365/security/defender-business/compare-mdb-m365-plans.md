@@ -10,12 +10,14 @@ ms.topic: reference
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/30/2022
+ms.date: 09/26/2022
 ms.reviewer: shlomiakirav
 ms.collection: 
 - SMB
 - m365-initiative-defender-business
-- m365-security-compliance
+- m365-security
+- tier1
+
 f1.keywords: NOCSH
 ---
 
@@ -34,13 +36,16 @@ Microsoft offers a wide variety of cloud solutions and services, including plans
 
 ## Compare Microsoft Defender for Business to Microsoft 365 Business Premium
 
-> [!NOTE]
-> This article provides a high-level overview of features and capabilities that are included in Microsoft Defender for Business (as a standalone plan) and Microsoft 365 Business Premium (which includes Defender for Business). It's not intended to be a service description or licensing contract document. For more detailed information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> [!IMPORTANT]
+> This article provides a high-level overview of features and capabilities that are included in Microsoft Defender for Business (as a standalone plan) and Microsoft 365 Business Premium (which includes Defender for Business). It's not intended to be a service description or licensing contract document. For more detailed information, see the following resources:
+> - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+> - [Microsoft 365 Education](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-education)
+
 
 | Plan | Description |
 |:---|:---|
 | **[Defender for Business](mdb-overview.md)** (standalone) | **Antivirus, antimalware, and ransomware protection for devices**<ul><li>[Next-generation protection](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) (antivirus/antimalware protection on devices together with cloud protection)</li><li>[Attack surface reduction](../defender-endpoint/overview-attack-surface-reduction.md) (network protection, firewall, and attack surface reduction rules) <sup>[[a](#fna)]</sup></li><li>[Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md) (behavior-based detection and manual response actions)</li><li>[Automated investigation and response](../defender/m365d-autoir.md) (with self-healing for detected threats)</li><li>[Microsoft Defender Vulnerability Management](mdb-view-tvm-dashboard.md) (view exposed devices and recommendations)</li><li>[Cross-platform support for devices](mdb-onboard-devices.md) (Windows, Mac, iOS, and Android) <sup>[[b](#fnb)]</sup></li><li>[Centralized management and reporting](mdb-get-started.md) (Microsoft 365 Defender portal)</li><li>[APIs for integration](../defender-endpoint/management-apis.md) (for Microsoft partners or your custom tools and apps)</li></ul> |
-| **[Microsoft 365 Business Premium](../../business-premium/index.md)** | **Defender for Business capabilities, together with productivity and additional security capabilities**<ul><li>[Microsoft 365 Business Standard](../../admin/admin-overview/what-is-microsoft-365-for-business.md) (Office apps and services, and Microsoft Teams)</li><li>[Shared computer activation](/deployoffice/overview-shared-computer-activation) (for deploying Microsoft 365 Apps)</li><li>[Windows 10/11 Business](../../business-premium/m365bp-upgrade-windows-10-pro.md) (upgrade from previous versions of Windows Pro)</li><li>[Windows Autopilot](/mem/autopilot/windows-autopilot) (for setting up and configuring Windows devices)</li><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) (antiphishing, antispam, antimalware, and spoof intelligence for email)</li><li>[Microsoft Defender for Office 365 Plan 1](../office-365-security/overview.md) (advanced antiphishing, real-time detections, Safe Attachments, Safe Links)</li><li>[Auto-expanding archiving](../../compliance/autoexpanding-archiving.md) (for email)</li><li>[Azure Active Directory Premium Plan 1](/azure/active-directory/fundamentals/active-directory-whatis) (identity management)</li><li>[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (device onboarding and management)</li><li>[Azure Information Protection Premium Plan 1](/azure/information-protection/what-is-information-protection) (protection for sensitive information)</li><li>[Azure Virtual Desktop](/azure/virtual-desktop/overview) (centrally managed, secure virtual machines in the cloud)</li></ul> |
+| **[Microsoft 365 Business Premium](../../business-premium/index.md)** | **Defender for Business capabilities, together with productivity and additional security capabilities**<ul><li>[Microsoft 365 Business Standard](../../admin/admin-overview/what-is-microsoft-365-for-business.md) (Office apps and services, and Microsoft Teams)</li><li>[Shared computer activation](/deployoffice/overview-shared-computer-activation) (for deploying Microsoft 365 Apps)</li><li>[Windows 10/11 Business](../../business-premium/m365bp-upgrade-windows-10-pro.md) (upgrade from previous versions of Windows Pro)</li><li>[Windows Autopilot](/mem/autopilot/windows-autopilot) (for setting up and configuring Windows devices)</li><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) (antiphishing, antispam, antimalware, and spoof intelligence for email)</li><li>[Microsoft Defender for Office 365 Plan 1](/microsoft-365/office-365-security/overview) (advanced antiphishing, real-time detections, Safe Attachments, Safe Links)</li><li>[Auto-expanding archiving](../../compliance/autoexpanding-archiving.md) (for email)</li><li>[Azure Active Directory Premium Plan 1](/azure/active-directory/fundamentals/active-directory-whatis) (identity management)</li><li>[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (device onboarding and management)</li><li>[Azure Information Protection Premium Plan 1](/azure/information-protection/what-is-information-protection) (protection for sensitive information)</li><li>[Azure Virtual Desktop](/azure/virtual-desktop/overview) (centrally managed, secure virtual machines in the cloud)</li></ul> |
 
   
 (<a id="fna">a</a>) Microsoft Intune is required to modify or customize attack surface reduction rules. Intune can be added on to the standalone version of Defender for Business. Intune is included in Microsoft 365 Business Premium.
@@ -88,7 +93,7 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 (<a id="fn8">8</a>) The ability to view incidents across tenants using Defender for Endpoint is new!
 
 > [!TIP]
-> Also see [Compare Microsoft endpoint security plans](../defender-endpoint/defender-endpoint-plan-1-2.md).
+> Also see [Compare Microsoft endpoint security plans](../defender-endpoint/defender-endpoint-plan-1-2.md) and [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## Next steps
 

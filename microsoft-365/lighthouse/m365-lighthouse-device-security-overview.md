@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -27,7 +28,7 @@ You can access the Device security page in Microsoft 365 Lighthouse from the **S
 
 ## Incidents and alerts tab
 
-The Incidents and alerts tab provides a multi-tenant view of incidents and alerts that were flagged from devices in your customers' network. By default, the tab displays any active incidents seen in the last 30 days. You can select any incident or alert to open the details pane to view more information. From the details pane, you can also resolve the incident or alert or assign it to yourself.
+The Incidents and alerts tab provides a multi-tenant view of incidents and alerts that were flagged from devices in your customers' network. By default, the tab displays any active incidents seen in the last 30 days. You can select any incident or alert to open the details pane to view more information. From the details pane, you can also resolve the incident or alert, or assign it to yourself.
 
 :::image type="content" source="../media/m365-lighthouse-device-security-overview/device-security-incidents-and-alerts-tab.png" alt-text="Incidents and alerts tab on the Device security page.":::
 

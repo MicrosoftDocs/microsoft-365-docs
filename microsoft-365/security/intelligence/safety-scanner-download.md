@@ -3,7 +3,7 @@ title: Microsoft Safety Scanner Download
 ms.reviewer: 
 description: Get the Microsoft Safety Scanner tool to find and remove malware from Windows computers.
 keywords: security, malware
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,10 +11,11 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
 ---
 # Microsoft Safety Scanner Download
 
@@ -39,7 +40,7 @@ Microsoft Safety Scanner is a scan tool designed to find and remove malware from
 
 ## System requirements
 
-Safety Scanner helps remove malicious software from computers running Windows 11, Windows 10, Windows 10 Tech Preview, Windows 8.1, Windows 8, Windows 7, Windows Server 2019, Windows Server 2016, Windows Server Tech Preview, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, or Windows Server 2008. For details, refer to the [Microsoft Lifecycle Policy](/lifecycle/).
+Safety Scanner helps remove malicious software from computers running Windows 11, Windows 10, Windows 10 Tech Preview, Windows 8.1, Windows 8, Windows 7, Windows Server 2019, Windows Server 2016, Windows Server Tech Preview, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2. For details, refer to the [Microsoft Lifecycle Policy](/lifecycle/).
 
 ## How to run a scan
 

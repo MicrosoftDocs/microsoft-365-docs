@@ -3,6 +3,7 @@ title: 'What is Microsoft Defender Threat Intelligence (Defender TI)?'
 description: 'In this overview article, learn about the main features that come with Microsoft Defender Threat Intelligence (Defender TI).'
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence 
 ms.topic: overview
 ms.date: 08/02/2022
@@ -11,7 +12,7 @@ ms.custom: template-overview
 
 # What is Microsoft Defender Threat Intelligence (Defender TI)?
 
-Microsoft Defender Threat Intelligence (Defender TI) is a platform that streamlines triage, incident response, threat hunting, vulnerability management, and cyber threat intelligence analyst workflows when conducting threat infrastructure analysis and gathering threat intelligence. Analysts spend a significant amount of time on data discovery, collection, and parsing, instead of focusing on what actually helps their organization defend themselves--deriving insights about the actors through analysis and correlation.?
+Microsoft Defender Threat Intelligence (Defender TI) is a platform that streamlines triage, incident response, threat hunting, vulnerability management, and cyber threat intelligence analyst workflows when conducting threat infrastructure analysis and gathering threat intelligence. Analysts spend a significant amount of time on data discovery, collection, and parsing, instead of focusing on what actually helps their organization defend themselves--deriving insights about the actors through analysis and correlation.
 
 Often, analysts must go to multiple repositories to obtain the critical data sets they need to assess a suspicious domain, host, or IP address. DNS data, WHOIS information, malware, and SSL certificates provide important context to indicators of compromise (IOCs), but these repositories are widely distributed and don’t always share a common data structure, making it difficult to ensure analysts have all relevant data needed to make a proper and timely assessment of suspicious infrastructure.
 

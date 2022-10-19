@@ -7,13 +7,16 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 08/05/2022
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -31,7 +34,7 @@ Every device is a possible attack avenue into your network and must be monitored
 Your objectives are to:
 
 - [Get everyone to set up MFA](m365bp-multifactor-authentication.md).
-- [Get Office apps installed on devices](m365bp-install-office-apps.md).
+- [Get Microsoft 365 apps installed on devices](m365bp-install-office-apps.md).
 - [Protected unmanaged Windows and Mac devices](m365bp-protect-pcs-macs.md).
 
 Once you've achieved these objectives, proceed to [Use email securely](m365bp-protect-email-overview.md).
