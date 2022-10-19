@@ -63,7 +63,7 @@ You need to tag the documents to teach the model to understand the fields and ta
 
 2. After the model is published, you will go to the model home page. You'll then have the option to apply the model to a document library.
 
-    ![Screenshot of the model home page to apply the model a library.](../media/content-understanding/ai-builder-create-a-flow-1.png)
+    ![Screenshot of the model home page to apply the model a library.](../media/content-understanding/ai-builder-apply-model.png)
 
 ## Step 4: Use your model
 
