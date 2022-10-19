@@ -22,7 +22,7 @@ ms.collection:
 
 Service documentation: [Office for the web service description - Service Descriptions](https://learn.microsoft.com/office365/servicedescriptions/office-online-service-description/office-online-service-description)
 
-Capability summary:  Office for the web (formerly Office Web Apps) opens Word, Excel, and PowerPoint documents in your web browser. Office for the web makes it easier to work and share Office files from anywhere with an internet connection, from almost any device. Microsoft 365 customers with Word, Excel, or PowerPoint can view, create, and edit files on the go.
+Capability summary: Office for the web (formerly Office Web Apps) opens Word, Excel, and PowerPoint documents in your web browser. Office for the web makes it easier to work and share Office files from anywhere with an internet connection, from almost any device. Microsoft 365 customers with Word, Excel, or PowerPoint can view, create, and edit files on the go.
 
 ## Data Residency commitments available
 
@@ -30,9 +30,10 @@ Capability summary:  Office for the web (formerly Office Web Apps) opens Word, E
 
 Required Conditions:
 
+
 1. Tenant has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
-1. Tenant has a valid _Advanced Data Residency_ subscription for all users in the tenant
-1. The Office for the Web subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. Tenant has a valid _Advanced Data Residency_ subscription for all users in the tenant.
+1. The MDO P1 subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
 **Commitment:**
 
