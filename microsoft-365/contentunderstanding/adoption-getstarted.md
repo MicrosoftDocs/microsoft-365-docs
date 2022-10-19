@@ -143,7 +143,7 @@ To get ready for implementing Syntex, you need to:
 
 ## See also
 
-[Microsoft Syntex adoption center](https://adoption.microsoft.com/en-us/sharepoint-syntex/adoption/)
+[Microsoft Syntex adoption center](https://adoption.microsoft.com/sharepoint-syntex/adoption/)
 
 [Scenarios and use cases for Microsoft Syntex](adoption-scenarios.md)
 
