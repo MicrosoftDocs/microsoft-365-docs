@@ -42,16 +42,6 @@ If you are new to Microsoft Purview DLP, here's a list of the core articles you'
 1. [Design a DLP policy](dlp-policy-design.md) - this article that you're reading now walks you through creating a policy intent statement and mapping it to a specific policy configuration. 
 1. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) - This article presents some common policy intent scenarios that you'll map to configuration options, then it walks you through configuring those options.
 
-## DLP content roadmap
-
-This is the fourth in a series of articles that take you through the core concepts and implementation steps for DLP in order. When you move into designing a DLP policy, you'll probably find yourself going back and forth between the DLP policy reference and Design a DLP policy articles.
-
-1. [Learn about data loss prevention](#learn-about-data-loss-prevention)
-1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md)
-1. [Data Loss Prevention policy reference](dlp-policy-reference.md)
-1. [Design a DLP policy](dlp-policy-design.md)
-1. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
-
 ## Policy design overview
 
 [Designing a policy](#policy-design-process) is mostly about clearly [defining your business needs, documenting them in a policy intent statement](#define-intent-for-the-policy) and then [mapping those needs to policy configuration](#map-business-needs-to-policy-configuration). You'll use the decisions you made in your planning phase to inform some of your policy design decisions.

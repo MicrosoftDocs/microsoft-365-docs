@@ -36,7 +36,7 @@ How you deploy a policy is as important policy design. You have multiple options
 
 ## Before you begin
 
-If you are new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
+If you're new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
 
 1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - the article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
 1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article you will:
@@ -51,7 +51,7 @@ If you are new to Microsoft Purview DLP, here's a list of the core articles you'
 
 Before you get started with DLP policies, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) and any add-ons. 
 
-For full licensing details see: [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+For full licensing details, see: [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 
 ### Permissions <!--check these-->
@@ -84,18 +84,29 @@ Here's a list of applicable role groups that are in preview. To learn more about
 
 ## Policy creation scenarios
 
+The previous article [Design a DLP policy](dlp-policy-design.md) introduced you to the methodology of creating a policy intent statement and then mapping that to policy configuration options. This section takes those examples, plus a few more and walks you through the actual policy creation process. You should work through these in your test environment to familiarize yourself with the policy creation UI.
+
+There are so many configuration options in the policy creation flow that it's not possible to cover every, or even most configurations, so we present several of the most common DLP policy scenarios that will give you hands on experience across a broad range of configurations.
+
+### Scenario 1 Exchange
+
+*We need to block emails to all recipients that contain credit card numbers or that have the  ‘highly confidential’ sensitivity label applied except if the email is sent from someone on the finance team to adele.vance@fabrikam.com. We want to notify the compliance admin every time an email is blocked and notify the user who sent the item and no one can be allowed to override the block. Track all occurrences of this high risk event in the log.*
 
 
-### Scenario 1 Exchange and SharePoint online
+|Statement|Configuration question answered and configuration mapping|
+|---|---|
+|"We need to block emails to all recipients..."|- **Where to monitor**: Exchange </br> - **Action**: Restrict access or encrypt the content in Microsoft 365 locations > Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files > Block everyone |
+|"...that contain credit card numbers or have the 'highly confidential' sensitivity label applied..."| - **What to monitor** use the Custom template template </br> - **Conditions for a match** edit it to add the *highly confidential* sensitivity label|
+|"...except if..."| **Condition group configuration** - Create a nested boolean NOT condition group joined to the first conditions using a boolean AND|
+|"...the email is sent from someone on the finance team..."| **Condition for match**: Sender is a member of|
+|"...and..."| **Condition for match**: add a second second condition to the NOT group|
+|"...to adele.vance@fabrikam.com..." | **Condition for match**:  Sender is|
+|"...Notify..."|**User notifications**: enabled|
+|"...the compliance admin every time an email is blocked and notify the user who sent the item..."| **Notify users in Office 365 service with a policy tip**: selected </br> - **Notify these people**: selected </br> **The person who sent, shared, or modified the content**: selected </br> - **Send the email tto these additional people**: add the email address of the compliance administrator|
+|"...and no one can be allowed to override the block...| **Allow overrides from M365 Services**: not selected|
+|"...Track all occurrences of this high risk event in the log."| - **Use this severity level in admin alerts and reports**: high </br> - **Send an alert to admins when a rule match occurs**: selected </br> - **Send alert every time an activity matches the rule**: selected |
 
 
-policy intent statement
-4)	Scenario 1 email (SPO) - “We need to block emails to all recipients that contain credit card numbers or that have the  ‘highly confidential’ sensitivity label applied except if the email is sent from someone on the finance team to adele.vance@fabrikam.com” - introduces NOT
-a.	Mapping
-b.	Creation - can include template/custom
-c.	Deployment
-i.	testing/tuning
-ii.	move fully into production
 
 ### Scenario 2
 
@@ -122,7 +133,7 @@ Endpoint + Teams
 There are three aspects to keep in mind when you plan the deployment of a policy.
 
 
-three axis to deployment
+three axes to deployment
 
 1. scoping the policy by location and includes/excludes
 2. state
