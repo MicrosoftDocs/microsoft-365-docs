@@ -22,10 +22,10 @@ ms.collection:
 
 ### Option 1: Privacy and Security Product Terms
 
-For current language please refer to the Privacy & Security Product Terms <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank">**webpage**</a> and view the section titled "Location of Customer Data at Rest for Core Online Services".
+*For current language please refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled "Location of Customer Data at Rest for Core Online Services".*
 
 >[!NOTE]
->If Customer provisions its tenant in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, United Arab Emirates, United Kingdom, or United States, Microsoft will store the following Customer Data at rest only within that _Geography_: Microsoft Teams chat messages (including private messages, channel messages, meeting messages and images used in chats), and for customers using Microsoft Stream (on SharePoint), meeting recordings.
+>If Customer provisions its tenant in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, United Arab Emirates, United Kingdom, or United States, Microsoft will store the following Customer Data at rest only within that _Geography_: Microsoft Teams chat, channel, and meeting conversations, and, for customers using Microsoft Stream (based on SharePoint), meeting recordings.
 
 ### Option 2: Advanced Data Residency add-on
 
@@ -36,7 +36,7 @@ Required Conditions:
 3.	Total purchased Multi-Geo units must be greater than 5% of the total eligible seats in the tenant.
 
 **Commitment:**
-Customers can assign users of Microsoft Teams to any Satellite Geography supported by Multi-Geo. See the [Microsoft 365 Multi-Geo availability section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide&branch=kvice-ADR-new#microsoft-365-multi-geo-availability) of the Microsoft 365 Multi-Geo page for details.. The following customer data will be stored in the relevant Satellite Geography: Teams chat data that consists of chat messages, including private messages, channel messages, and images used in chats.
+Customers can assign users of Microsoft Teams to any _Satellite Geography_ supported by [Multi-Geo](microsoft-365-multi-geo.md). The following customer data will be stored in the relevant _Satellite Geography_: Teams chat data that consists of chat messages, including private messages, channel messages, and images used in chats.
 
 ### Option 3: Advanced Data Residency add-on
 
@@ -127,4 +127,4 @@ In addition to Exchange Online, SharePoint Online, and OneDrive for Business; Mi
 Teams files are stored in SharePoint Online and Teams chat files are stored in OneDrive for Business. Voicemail, calendar, and contacts are stored in Exchange Online. In many cases, Exchange Online, SharePoint Online, and OneDrive for Business are already used by the customer in the local datacenter _Geography_ and are also part of the Microsoft 365 migration program for eligible customer countries.
 
 ### How can I determine customer data location?
-You can find the actual data location in Tenant Admin Center.  As a tenant administrator you can find the actual data location, for committed data,  by navigating to Admin|Settings|Org Settings|Organization Profile|Data Location.
+You can find the actual data location in Tenant Admin Center. As a tenant administrator you can find the actual data location, for committed data, by navigating to Admin|Settings|Org Settings|Organization Profile|Data Location.
