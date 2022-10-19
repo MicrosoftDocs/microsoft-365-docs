@@ -12,6 +12,7 @@ ms.collection:
 - highpri
 - Adm_O365
 ms.custom: VSBFY23
+ROBOTS: NOINDEX, NOFOLLOW 
 search.appverid:
 - MET150
 description: "Learn how to get phone support for your Microsoft 365 for business subscription. You must be an admin for a business subscription to get support."
