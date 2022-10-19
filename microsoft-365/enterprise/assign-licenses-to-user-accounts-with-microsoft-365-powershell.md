@@ -48,12 +48,12 @@ Accounts synchronized from your on-premises Active Directory Domain Services do 
 
 First, [connect to your Microsoft 365 tenant](/graph/powershell/get-started#authentication).
 
-Assigning and removing licenses for a user requires the User.ReadWrite.All permission scope or one of the other permissions listed in the ['Assign license' Graph API reference page](/graph/api/user-assignlicense).
+Assigning and removing licenses for a user requires the User.ReadWrite.All permission scope or one of the other permissions listed in the ['Assign license' Microsoft Graph API reference page](/graph/api/user-assignlicense).
 
 The Organization.Read.All permission scope is required to read the licenses available in the tenant.
 
 ```powershell
-Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+Connect-MgGraph -Scopes User.ReadWrite.All, Organization.Read.All
 ```
 
 Run the `Get-MgSubscribedSku` command to view the available licensing plans and the number of available licenses in each plan in your organization. The number of available licenses in each plan is **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. For more information about licensing plans, licenses, and services, see [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
@@ -370,3 +370,5 @@ $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+
+Use the Microsoft Graph [user: assignLicense](/graph/api/user-assignlicense) and [subscribedSku](/graph/api/resources/subscribedsku) APIs
