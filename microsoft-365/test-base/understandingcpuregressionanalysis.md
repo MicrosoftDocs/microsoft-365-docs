@@ -30,4 +30,3 @@ In the figure that follows, there are two OS release versions against which CPU 
  > [!div class="mx-imgBorder"]  
  > ![Screenshot shows CPU Regression](Media/understandingcpuregressionanalysis01.png)  
  >  **Figure 5. CPU utilization data graph**
-
