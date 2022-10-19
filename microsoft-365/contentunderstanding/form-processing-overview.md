@@ -17,6 +17,9 @@ description: Learn how to use AI Builder to create structured document processin
 
 # Overview of structured document processing in Microsoft Syntex
 
+> [!NOTE]
+> *Structured document processing* was called *form processing* in previous releases.
+
 Use the structured document processing model ([layout method](create-syntex-model.md#train-a-custom-model)) to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices.
 
 Microsoft Syntex uses Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) document processing (formerly known as form processing) to create structured document processing models within SharePoint document libraries.
