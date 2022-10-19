@@ -67,19 +67,13 @@ See [Configure device discovery](../security/defender-endpoint/configure-device-
 ### 2. Configure ASR in audit mode
 
 Attack surface reduction rules help reduce your attack surface by minimizing the places where your organization might be vulnerable to cyber attacks.
-You can test attack surface reduction (ASR) rules to determine if the rules would affect your organization if enabled. Th first step in this process is to turn on the ASR rules with the rules set to Audit.
+You can test attack surface reduction (ASR) rules to determine if the rules would affect your organization if enabled. The first step in this process is to turn on the ASR rules with the rules set to Audit.
 
-To get started, see [Test attack surface reduction (ASR) rules](../security/defender-endpoint/attack-surface-reduction-rules-deployment-test.md)
+To get started, see [Test attack surface reduction (ASR) rules](../security/defender-endpoint/attack-surface-reduction-rules-deployment-test.md).
 
 ### 3. Configure Microsoft Defender for Identity
 
-Using Microsoft Defender for Identity with Defender for Endpoint can further improve you device discovery capabilities, to learn more see: [improving-device-discoverability-and-classification-within-mde](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/improving-device-discoverability-and-classification-within-mde/ba-p/3625559)
-
-[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on this next because it protects your on-prem and your cloud infrastructure, has no dependencies or prerequisites, and can provide immediate benefit.
-
-- See [Microsoft Defender for Identity Quickstarts](/azure-advanced-threat-protection/install-atp-step1) to get setup quickly
-- Watch [Video: Introduction to Microsoft Defender for Identity](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
-- Review the [three phases of Microsoft Defender for Identity deployment](/azure-advanced-threat-protection/what-is-atp#whats-next)
+Use [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) with Microsoft Defender for Endpoint to further improve you device discovery capabilities, to learn more see: [improving-device-discoverability-and-classification-within-mde](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/improving-device-discoverability-and-classification-within-mde/ba-p/3625559).
 
 ### Assess and Protect
 
