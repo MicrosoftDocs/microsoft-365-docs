@@ -40,7 +40,7 @@
         href: m365bp-devices-overview.md
       - name: Set up multifactor authentication
         href: m365bp-multifactor-authentication.md
-      - name: Install Office apps on devices
+      - name: Install Microsoft 365 apps on devices
         href: m365bp-install-office-apps.md
       - name: Protect unmanaged devices
         href: m365bp-protect-pcs-macs.md
@@ -80,6 +80,8 @@
         href: ../admin/setup/install-applications.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
   - name: Monitor onboarded devices
     items: 
+      - name: View device status
+        href: m365bp-device-states.md
       - name: Review and edit device policies
         href: m365bp-view-edit-create-mdb-policies.md
       - name: Manage device groups
