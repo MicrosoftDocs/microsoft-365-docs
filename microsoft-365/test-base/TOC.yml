@@ -46,30 +46,30 @@
     items:
     - name: Overview
       href: viewingtestresults.md
-	- name: Viewing Script Execution Results
+    - name: Viewing Script Execution Results
       href: viewingscriptexecutionresults.md
-	- name: Viewing Application Reliability Results
+    - name: Viewing Application Reliability Results
       href: viewingapplicationreliabilityresults.md
-	- name: Memory and CPU Regression Results Overview
-	  items:
-	  - name: Overview
-	    href: memoryandcpuregressionresultsoverview.md
-	  - name: Understanding Memory Regression Analysis
-	    href: understandingmemoryregressionanalysis.md
-	  - name: Understanding CPU Regression Analysis
-	  - href: understandingcpuregressionanalysis.md
-	- name: Analyzing the Causes of Regressions
-	  href: analyzingthecausesofregressions.md
-	- name: Determining Relevant Processes for Regression Detection
-	  href: determiningrelevantprocessesforregressiondetection.md
-	- name: Downloading and Analyzing Test Result Files
-	  items:
-	  - name: Overview
-	  - href: downloadingandanalyzingtestresultfiles.md
-	  - name: Viewing Log Files
-	  - href: viewinglogfiles.md
-	- name: Monitoring Test Status
-	- href: monitoringteststatus.md
+    - name: Memory and CPU Regression Results Overview
+      items:
+      - name: Overview
+        href: memoryandcpuregressionresultsoverview.md
+      - name: Understanding Memory Regression Analysis
+        href: understandingmemoryregressionanalysis.md
+      - name: Understanding CPU Regression Analysis
+        href: understandingcpuregressionanalysis.md
+    - name: Analyzing the Causes of Regressions
+      href: analyzingthecausesofregressions.md
+    - name: Determining Relevant Processes for Regression Detection
+      href: determiningrelevantprocessesforregressiondetection.md
+    - name: Downloading and Analyzing Test Result Files
+      items:
+      - name: Overview
+        href: downloadingandanalyzingtestresultfiles.md
+      - name: Viewing Log Files
+        href: viewinglogfiles.md
+    - name: Monitoring Test Status
+      href: monitoringteststatus.md
   - name: Request to change access level
     href: accesslevel.md
   - name: SDK & API
