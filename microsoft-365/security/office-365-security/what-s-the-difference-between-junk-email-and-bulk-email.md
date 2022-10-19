@@ -1,42 +1,80 @@
 ---
-title: "What's the difference between junk email and bulk email?"
-ms.author: tracyp
-author: MSFTTracyP
+title: What's the difference between junk email and bulk email?
+f1.keywords: 
+  - NOCSH
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 1/7/2015
+ms.date: 
 audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-localization_priority: Normal
-search.appverid:
-- MET150
+ms.topic: conceptual
+
+ms.localizationpriority: medium
+search.appverid: 
+  - MET150
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
-ms.collection:
-- M365-security-compliance
-description: "Customers sometimes askwhat's the difference between junk email and bulk email messages?The purpose of this topic is to explain the difference and to provide information about the different options that are available for both in Exchange Online and Exchange Online Protection (EOP)."
+ms.collection: 
+  - m365-security
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn about the differences between junk email (spam) and bulk email (gray mail) in Exchange Online Protection (EOP).
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
-# What's the difference between junk email and bulk email?
+# What's the difference between junk email and bulk email in EOP?
 
-Customers sometimes ask "what's the difference between junk email and bulk email messages?" The purpose of this topic is to explain the difference and to provide information about the different options that are available for both in Exchange Online and Exchange Online Protection (EOP).
-  
- **What's junk email?**
-  
-Junk email messages are "spam" messages, which are unsolicited (and typically unwanted) email messages that are filtered by the service. By default, the service rejects the spam message based on the reputation of the sending IP address. However, if it passes IP inspection but is classified as spam by the content filters, the message is sent to the Junk Email folder of the intended recipients. 
-  
-> [!NOTE]
-> The action performed on content-filtered messages is configurable via content filter policies in the Exchange admin center (EAC), as described in [Configure your spam filter policies](configure-your-spam-filter-policies.md). Also, if you disagree with the spam classification, you can report messages that you consider to be spam or non-spam to Microsoft in several ways, as described in [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
-  
- **What's bulk email?**
-  
-Bulk email, also referred to as gray mail, is a type of email message that's more difficult to classify. Whereas junk email is a constant threat, bulk email is typically comprised of an advertisement or marketing message that's not likely to get sent repeatedly. Bulk email is wanted by some users, and in fact they may have deliberately signed up to receive these messages, while other users may consider these types of messages to be spam. For example, some users want to receive advertising emails from the Contoso Corporation or invitations to an upcoming conference on cyber security, while other users consider such emails to be spam.
-  
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, customers sometimes ask: "what's the difference between junk email and bulk email?" This topic explains the difference and describes the controls that are available in EOP.
+
+- **Junk email** is spam, which are unsolicited and universally unwanted messages (when identified correctly). By default, the EOP rejects spam based on the reputation of the source email server. If a message passes source IP inspection, it's sent to spam filtering. If the message is classified as spam by spam filtering, the message is (by default) delivered to the intended recipients and moved to their Junk Email folder.
+
+  - You can configure the actions to take on spam filtering verdicts. For instructions, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+
+  - If you disagree with the spam filtering verdict, you can report messages that you consider to be spam or non-spam to Microsoft in several ways, as described in [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+
+- **Bulk email** (also known as _gray mail_), is more difficult to classify. Whereas spam is a constant threat, bulk email is often one-time advertisements or marketing messages. Some users want bulk email messages (and in fact, they have deliberately signed up to receive them), while other users consider bulk email to be spam. For example, some users want to receive advertising messages from the Contoso Corporation or invitations to an upcoming conference on cyber security, while other users consider these same messages to be spam.
+
+  For more information about how bulk email is identified, see [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md).
+
 ## How to manage bulk email
 
-How to manage bulk email isn't a clear cut decision, because if all bulk email is classified as spam, the users that want it may complain and submit it as a false positive (non-spam) message that was wrongly marked as spam. On the other hand, if all bulk email is let through, the users that don't want it may complain and submit it as a missed spam message (false negative) that wrongly arrived in their inbox.
-  
-### Enable bulk mail sensitivity control in the content filter policy
+Because of the mixed reaction to bulk email, there isn't universal guidance that applies to every organization.
 
-Depending on your company's policy on bulk email messages, admins can select a threshold to assign the bulk email. The setting is configurable via content filter policies in the EAC. Check out [Configure your spam filter policies](configure-your-spam-filter-policies.md) for the steps. You can choose a threshold setting from 1-9, where 1 marks most bulk email as spam, and 9 allows most bulk email to be delivered. The service then performs the configured action, such as sending the message to the recipient's Junk Email folder. 
-  
+Anti-spam polices have a default BCL threshold that's used to identify bulk email as spam. Admins can increase or decrease the threshold. For more information, see the following topics:
 
+- [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+- [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)
+
+Another option that's easy to overlook: if a user complains about receiving bulk email, but the messages are from reputable senders that pass spam filtering in EOP, have the user check for a unsubscribe option in the bulk email message.
+
+## How to tune bulk email
+
+In September 2022, Microsoft Defender for Office 365 Plan 2 customers can access BCL from [advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview). This feature allows admins to look at all bulk senders who sent mail to their organization, along with the corresponding BCL values and the email volume received. You can drill down into the bulk senders by using other columns in **EmailEvents** table in the **Email & collaboration** schema. For more information, see [EmailEvents](/microsoft-365/security/defender/advanced-hunting-emailevents-table).
+
+For example, if Contoso has set their current bulk threshold to 7 in anti-spam policies, Contoso recipients will receive email from all senders with BCL \< 7 in their Inbox. Admins can run the following query to get a list of all bulk senders in the organization:
+
+```console
+EmailEvents
+| where BulkComplaintLevel >= 1 and Timestamp > datetime(2022-09-XXT00:00:00Z)
+| summarize count() by SenderMailFromAddress, BulkComplaintLevel
+```
+
+This query allows admins to identify wanted and unwanted senders. If a bulk sender has a BCL score that doesn't meet the bulk threshold, admins can [submit the sender’s messages to Microsoft for analysis](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal), which adds the sender as an allow entry to the Tenant Allow/Block List.
+
+Organizations without Defender for Office 365 Plan 2 can try the features in Microsoft 365 Defender for Office 365 Plan 2 for free. Use the 90-day Defender for Office 365 evaluation at <https://security.microsoft.com/atpEvaluation>. Learn about who can sign up and trial terms [here](try-microsoft-defender-for-office-365.md) or you can use the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) to identify wanted and unwanted bulk senders:
+
+1. In the Threat protection status report, select **View data by Email \> Spam**. To go directly to the report, open one of the following URLs:
+
+   - EOP: <https://security.microsoft.com/reports/TPSAggregateReport>
+   - Defender for Office 365: <https://security.microsoft.com/reports/TPSAggregateReportATP>
+
+2. Filter for Bulk email, select an email to investigate and click on email entity to learn more about the sender. Email entity is available only for Defender for Office 365 Plan 2 customers.
+
+3. Once you have identified wanted and unwanted senders, adjust the bulk threshold to your desired level. If there are bulk senders with BCL score that doesn't fit within your bulk threshold, [submit the messages to Microsoft for analysis](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal), which adds the sender as an allow entry to the Tenant Allow/Block List.
+
+Admins can follow the [recommended bulk threshold values](recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop) or choose a bulk threshold value that suits the needs of their organization.

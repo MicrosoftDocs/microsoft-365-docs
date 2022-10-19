@@ -5,8 +5,15 @@ _site/
 _themes*/
 _repo.*/
 .vscode/
+*.ini
+.DS_Store
+*.db
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
 
 .openpublishing.buildcore.ps1
 .vs/slnx.sqlite
 .vs/slnx.sqlite
 *.sqlite
+microsoft-365/business/Office 365 business.code-search

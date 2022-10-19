@@ -1,53 +1,92 @@
 ---
-title: "Advanced spam filtering options"
-ms.author: tracyp
-author: MSFTTracyP
+title: ASF settings in EOP
+f1.keywords: 
+  - NOCSH
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 07/09/2019
 audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-localization_priority: Normal
-search.appverid:
-- MET150
+ms.topic: conceptual
+ms.localizationpriority: medium
+search.appverid: 
+  - MET150
 ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
-ms.collection:
-- M365-security-compliance
-description: "Advanced spam filtering  options give administrators the ability to inspect various content attributes of a message. The presence of these attributes in a message either increases the spam score of the message (thereby increasing the potential for it to be identified as spam) or marks the message as spam. The ASF options target specific message properties, such as HTML tags and URL redirection, which are commonly found in spam messages."
+ms.collection: 
+  - m365-security
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn about the Advanced Spam Filter (ASF) settings that are available in anti-spam policies in Exchange Online Protection (EOP).
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
-# Advanced spam filtering options
+# Advanced Spam Filter (ASF) settings in EOP
 
-Advanced spam filtering  options give administrators the ability to inspect various content attributes of a message. The presence of these attributes in a message either increases the spam score of the message (thereby increasing the potential for it to be identified as spam) or marks the message as spam. The ASF options target specific message properties, such as HTML tags and URL redirection, which are commonly found in spam messages.
-  
-Enabling ASF options is an aggressive approach to spam filtering, and any messages that are filtered by these options cannot be reported as false positives. These messages can be identified through periodic end-user spam notifications and salvaged from the spam quarantine. They can also be identified via the X-header text that's specific to each ASF option and which appear in the Internet header of messages where an ASF option has been matched. For more information, see [Anti-spam message headers](anti-spam-message-headers.md).
-  
-ASF options can be set on, off, or to test mode when you edit your content filter policies. For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md). Test mode is not available for the **NDR backscatter**, **SPF record: hard fail**, **Conditional Sender ID filtering: hard fail**, and **Bulk mail** options. 
-  
-> > [!TIP]
->  Consider enabling your ASF options in test mode in order to maximize spam blocking based upon your environment. For customers with high spam percentages for specific ASF options, we recommend that you test these options first before implementing them in your production environment. If you're concerned about phishing in your organization, turn on the **SPF record: hard fail** option. 
-  
-The following table describes each advanced spam filtering option.
-  
-||||
-|:-----|:-----|:-----|
-|**Advanced Spam Filtering Option** <br/> |**Description** <br/> |**X-header text** <br/> |
-|**Increase Spam Score Section** <br/> |When enabled, these options set the spam confidence level (SCL) of a matched message to 5 or 6, which is considered suspected spam. The action performed on the message will match the **Spam** setting in your content filter policy.  <br/> ||
-|Image links to remote sites  <br/> |When this setting is enabled, any message with HTML content that has an IMG tag that links remotely (for example, using http) will receive an increased spam score.  <br/> |X-CustomSpam: Image links to remote sites  <br/> |
-|Numeric IP address in URL  <br/> |When this setting is enabled, any message that has numeric-based URLs (most often in the form of an IP address) will receive an increased spam score.  <br/> |X-CustomSpam: Numeric IP in URL  <br/> |
-|URL redirect to other port  <br/> |When this setting is enabled, any message that contains a hyperlink that redirects the user to ports other than port 80 (regular HTTP protocol port), 8080 (HTTP alternate port), or 443 (HTTPS port) will receive an increased spam score.  <br/> |X-CustomSpam: URL redirect to other port  <br/> |
-|URL to .biz or .info websites  <br/> |When this setting is enabled, any message that contains a .biz or .info extension in the body of a message will receive an increased spam score.  <br/> |X-CustomSpam: URL to .biz or .info websites  <br/> |
-|**Mark as Spam Section** <br/> |When enabled, these options set the spam confidence level (SCL) of a matched message to 9, which is considered certain spam. The action performed on the message will match the **High confidence spam** setting in your content filter policy.  <br/> ||
-|Empty messages  <br/> |When this setting is enabled, any message in which the body and subject line are both empty, and which also has no attachment, will be marked as spam.  <br/> |X-CustomSpam: Empty Message  <br/> |
-|JavaScript or VBScript in HTML  <br/> |When this setting is enabled, any message that uses JavaScript or Visual Basic Script Edition in HTML will be marked as spam. Both of these scripting languages are used within an HTML message to automatically cause a specific action to occur. The browser will parse and process the script along with the rest of the document.  <br/> |X-CustomSpam: Javascript or VBscript tags in HTML  <br/> |
-|Frame or IFrame tags in HTML  <br/> |When this setting is enabled, any message that contains the \<Frame\> or \<IFrame\> HTML tag will be marked as spam. These tags are used on websites or in HTML messages to format the page for displaying text or graphics.  <br/> |X-CustomSpam: IFRAME or FRAME in HTML  <br/> |
-|Object tags in HTML  <br/> |When this setting is enabled, any message that contains the \<Object\> HTML tag will be marked as spam. This HTML tag allows plug-ins or applications to run in an HTML window.  <br/> |X-CustomSpam: Object tag in html  <br/> |
-|Embed tags in HTML  <br/> |When this setting is enabled, any message that contains the \<Embed\> HTML tag will be marked as spam. This HTML tag allows different kinds of documents of varying data types to be embedded into an HTML document. Examples include sounds, movies, or pictures.  <br/> |X-CustomSpam: Embed tag in html  <br/> |
-|Form tags in HTML  <br/> |When this setting is enabled, any message that contains the \<Form\> HTML tag will be marked as spam. This HTML tag is used to create website forms. Email advertisements often include this tag to solicit information from the recipient.  <br/> |X-CustomSpam: Form tag in html  <br/> |
-|Web bugs in HTML  <br/> |When this setting is enabled, any message that contains a Web bug will be marked as spam. A Web bug is a graphic that is designed to determine whether a Web page or email message has been read. Web bugs are often invisible to the recipient because they are typically added to a message as a graphic that is as small as one pixel by one pixel. Legitimate newsletters may also use this technique, although many consider this an invasion of privacy.  <br/> |X-CustomSpam: Web bug  <br/> |
-|Apply sensitive word list  <br/> |When this setting is enabled, any message that contains a word from the sensitive word list will be marked as spam. Using the sensitive word list allows easy blocking of words that are associated with potentially offensive messages. Some of these words are case sensitive. As an administrator, you cannot edit this list. Filtering against the sensitive word list is applied to both the subject and message body of a message.  <br/> |X-CustomSpam: Sensitive word in subject/body  <br/> |
-|SPF record: hard fail|When this setting is enabled, messages that fail an SPF check (meaning they were sent from an IP address not specified in the SPF record) will be marked as spam. Turning this setting on is recommended for organizations who are concerned about receiving phishing messages.  <br/> <br/> Test mode is not available for this option.  <br/> |X-CustomSpam: SPF Record Fail  <br/> |
-|Conditional Sender ID filtering: hard fail  <br/> |When this setting is enabled, any message that hard fails a conditional Sender ID check is marked as spam. This option combines an SPF check with a Sender ID check to help protect against message headers that contain forged senders.  <br/> <br/> Test mode is not available for this option.  <br/> |X-CustomSpam: SPF From Record Fail  <br/> |
-|NDR backscatter  <br/> |If you're using EOP to protect on-premises mailboxes, when this setting is enabled, all legitimate non-delivery report (NDR) messages are delivered to the original sender, and all backscatter (illegitimate NDR) messages will be marked as spam. If you don't enable this setting, then all NDRs still go through spam filtering. In this case, most legitimate messages will get delivered to the original sender while some, but not all, backscatter messages will get marked as spam. However, backscatter messages that aren't marked as spam won't go to the original sender because it will go to the spoofed sender. <br/> <br/> If you're using the service to protect Exchange Online cloud-hosted mailboxes, you don't need to configure this setting.  <br/><br/> For both scenarios (on-premises and cloud-hosted mailboxes), it's also not necessary to enable this setting for outbound mail sent through the service, as NDRs that are legitimate bounce messages will be automatically detected and delivered to the original sender. >  Test mode is not available for this option.           <br/><br/>TIP: For more information about backscatter messages and EOP, see [Backscatter messages and EOP](backscatter-messages-and-eop.md).           |X-CustomSpam: Backscatter NDR  <br/> |
-|Bulk mail|Advanced-spam filtering of bulk email has been retired and replaced with the bulk and email threshold settings. Check out [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md) and [Configure your spam filter policies](configure-your-spam-filter-policies.md) for more information and how to configure the settings.|X-CustomSpam: Bulk Mail | Bulk Mail  <br/> |
-|
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+In all Microsoft 365 organizations, the Advanced Spam Filter (ASF) settings in anti-spam policies in EOP allow admins to mark messages as spam based on specific message properties. ASF specifically targets these properties because they're commonly found in spam. Depending on the property, ASF detections will either mark the message as **Spam** or **High confidence spam**.
+
+> [!NOTE]
+> Enabling one or more of the ASF settings is an aggressive approach to spam filtering. You can't report messages that are filtered by ASF as false positives. You can identify messages that were filtered by ASF by:
+>
+> - Periodic quarantine notifications from spam and high confidence spam filter verdicts.
+> - The presence of filtered messages in quarantine.
+> - The specific `X-CustomSpam:` X-header fields that are added to messages as described in this article.
+
+The following sections describe the ASF settings and options that are available in anti-spam policies in the Microsoft 365 Defender portal, and in Exchange Online PowerShell or standalone EOP PowerShell ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) and [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)). For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+
+## Enable, disable, or test ASF settings
+
+For each ASF setting, the following options are available in anti-spam policies:
+
+- **On**: ASF adds the corresponding X-header field to the message, and either marks the message as **Spam** (SCL 5 or 6 for [Increase spam score settings](#increase-spam-score-settings)) or **High confidence spam** (SCL 9 for [Mark as spam settings](#mark-as-spam-settings)).
+- **Off**: The ASF setting is disabled. This is the default value, and we recommend that you don't change it.
+- **Test**: ASF adds the corresponding X-header field to the message. What happens to the message is determined by the **Test mode** (*TestModeAction*) value:
+  - **None**: Message delivery is unaffected by the ASF detection. The message is still subject to other types of filtering and rules in EOP.
+  - **Add default X-header text (*AddXHeader*)**: The X-header value `X-CustomSpam: This message was filtered by the custom spam filter option` is added to the message. You can use this value in Inbox rules or mail flow rules (also known as transport rules) to affect the delivery of the message.
+  - **Send Bcc message (*BccMessage*)**: The specified email addresses (the *TestModeBccToRecipients* parameter value in PowerShell) are added to the Bcc field of the message, and the message is delivered to the additional Bcc recipients. In the Microsoft 365 Defender portal, you separate multiple email addresses by semicolons (;). In PowerShell, you separate multiple email addresses by commas.
+
+  **Notes**:
+
+  - Test mode is not available for the following ASF settings:
+    - **Conditional Sender ID filtering: hard fail** (*MarkAsSpamFromAddressAuthFail*)
+    - **NDR backscatter**(*MarkAsSpamNdrBackscatter*)
+    - **SPF record: hard fail** (*MarkAsSpamSpfRecordHardFail*)
+  - The same test mode action is applied to *all* ASF settings that are set to **Test**. You can't configure different test mode actions for different ASF settings.
+
+## Increase spam score settings
+
+The following **Increase spam score** ASF settings set the spam confidence level (SCL) of detected messages to 5 or 6, which corresponds to a **Spam** filter verdict and the corresponding action in anti-spam policies.
+
+|Anti-spam policy setting|Description|X-header added|
+|---|---|---|
+|**Image links to remote websites** <p> *IncreaseScoreWithImageLinks*|Messages that contain `<Img>` HTML tag links to remote sites (for example, using http) are marked as spam.|`X-CustomSpam: Image links to remote sites`|
+|**Numeric IP address in URL** <p> *IncreaseScoreWithNumericIps*|Messages that contain numeric-based URLs (typically, IP addresses) are marked as spam.|`X-CustomSpam: Numeric IP in URL`|
+|**URL redirect to other port** <p> *IncreaseScoreWithRedirectToOtherPort*|Message that contain hyperlinks that redirect to TCP ports other than 80 (HTTP), 8080 (alternate HTTP), or 443 (HTTPS) are marked as spam.|`X-CustomSpam: URL redirect to other port`|
+|**Links to .biz or .info websites** <p> *IncreaseScoreWithBizOrInfoUrls*|Messages that contain `.biz` or `.info` links in the body of the message are marked as spam.|`X-CustomSpam: URL to .biz or .info websites`|
+
+## Mark as spam settings
+
+The following **Mark as spam** ASF settings set the SCL of detected messages to 9, which corresponds to a **High confidence spam** filter verdict and the corresponding action in anti-spam policies.
+
+|Anti-spam policy setting|Description|X-header added|
+|---|---|---|
+|**Empty messages** <p> *MarkAsSpamEmptyMessages*|Messages with no subject, no content in the message body, and no attachments are marked as high confidence spam.|`X-CustomSpam: Empty Message`|
+|**Embedded tags in HTML** <p> *MarkAsSpamEmbedTagsInHtml*|Message that contain `<embed>` HTML tags are marked as high confidence spam. <p> This tag allows the embedding of different kinds of documents in an HTML document (for example, sounds, videos, or pictures).|`X-CustomSpam: Embed tag in html`|
+|**JavaScript or VBScript in HTML** <p> *MarkAsSpamJavaScriptInHtml*|Messages that use JavaScript or Visual Basic Script Edition in HTML are marked as high confidence spam. <p> These scripting languages are used in email messages to cause specific actions to automatically occur.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
+|**Form tags in HTML** <p> *MarkAsSpamFormTagsInHtml*|Messages that contain `<form>` HTML tags are marked as high confidence spam. <p> This tag is used to create website forms. Email advertisements often include this tag to solicit information from the recipient.|`X-CustomSpam: Form tag in html`|
+|**Frame or iframe tags in HTML** <p> *MarkAsSpamFramesInHtml*|Messages that contain `<frame>` or `<iframe>` HTML tags are marked as high confidence spam. <p> These tags are used in email messages to format the page for displaying text or graphics.|`X-CustomSpam: IFRAME or FRAME in HTML`|
+|**Web bugs in HTML** <p> *MarkAsSpamWebBugsInHtml*|A *web bug* (also known as a *web beacon*) is a graphic element (often as small as one pixel by one pixel) that's used in email messages to determine whether the message was read by the recipient. <p> Messages that contain web bugs are marked as high confidence spam. <p> Legitimate newsletters might use web bugs, although many consider this an invasion of privacy. |`X-CustomSpam: Web bug`|
+|**Object tags in HTML** <p> *MarkAsSpamObjectTagsInHtml*|Messages that contain `<object>` HTML tags are marked as high confidence spam. <p> This tag allows plug-ins or applications to run in an HTML window.|`X-CustomSpam: Object tag in html`|
+|**Sensitive words** <p> *MarkAsSpamSensitiveWordList*|Microsoft maintains a dynamic but non-editable list of words that are associated with potentially offensive messages. <p> Messages that contain words from the sensitive word list in the subject or message body are marked as high confidence spam.|`X-CustomSpam: Sensitive word in subject/body`|
+|**SPF record: hard fail** <p> *MarkAsSpamSpfRecordHardFail*|Messages sent from an IP address that isn't specified in the SPF Sender Policy Framework (SPF) record in DNS for the source email domain are marked as high confidence spam. <p> Test mode is not available for this setting.|`X-CustomSpam: SPF Record Fail`|
+
+The following **Mark as spam** ASF settings set the SCL of detected messages to 6, which corresponds to a **Spam** filter verdict and the corresponding action in anti-spam policies.
+
+|Anti-spam policy setting|Description|X-header added|
+|---|---|---|
+|**Sender ID filtering hard fail** <p> *MarkAsSpamFromAddressAuthFail*|Messages that hard fail a conditional Sender ID check are marked as spam. <p> This setting combines an SPF check with a Sender ID check to help protect against message headers that contain forged senders. <p> Test mode is not available for this setting.|`X-CustomSpam: SPF From Record Fail`|
+|**Backscatter** <p> *MarkAsSpamNdrBackscatter*|*Backscatter* is useless non-delivery reports (also known as NDRs or bounce messages) caused by forged senders in email messages. For more information, see [Backscatter messages and EOP](backscatter-messages-and-eop.md). <p> You don't need to configure this setting in the following environments, because legitimate NDRs are delivered, and backscatter is marked as spam: <ul><li>Microsoft 365 organizations with Exchange Online mailboxes.</li><li>On-premises email organizations where you route *outbound* email through EOP.</li></ul> <p> In standalone EOP environments that protect inbound email to on-premises mailboxes, turning this setting on or off has the following result: <ul><li> **On**: Legitimate NDRs are delivered, and backscatter is marked as spam.</li><li>**Off**: Legitimate NDRs and backscatter go through normal spam filtering. Most legitimate NDRs will be delivered to the original message sender. Some, but not all, backscatter is marked as spam. By definition, backscatter can only be delivered to the spoofed sender, not to the original sender.</li></ul> <p> Test mode is not available for this setting.|`X-CustomSpam: Backscatter NDR`|

@@ -1,37 +1,45 @@
 ---
-title: "Bulk Complaint Level values, bulk mailers, BCL levels, how BCL works, BCL ratings, Antispam, Antispam header, bulk mail filtering, stop bulk mail"
-ms.author: tracyp
-author: MSFTTracyP
-manager: laurawi
-ms.date: 8/23/2019
+title: Bulk complaint level values
+f1.keywords: 
+  - NOCSH
+ms.author: chrisda
+author: chrisda
+manager: dansimp
+ms.date: 
 audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-localization_priority: Normal
-search.appverid:
-- MET150
+ms.topic: conceptual
+
+ms.localizationpriority: medium
+search.appverid: 
+  - MET150
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
-ms.collection:
-- M365-security-compliance
-description: "Learn about Bulk Complain Level (BCL) values in Office 365."
+ms.collection: 
+  - m365-security
+description: Admins can learn about bulk complaint level (BCL) values that are used in Exchange Online Protection (EOP).
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
-# Bulk Complaint Level values
+# Bulk complaint level (BCL) in EOP
 
-Bulk mailers vary in their sending patterns, content creation, and list acquisition practices. Some are good bulk mailers that send wanted messages with relevant content to their subscribers. These messages generate few complaints from recipients. Other bulk mailers send unsolicited messages that closely resemble spam and generate many complaints from recipients.
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-To distinguish these types of bulk mailers, messages from bulk mailers are assigned a Bulk Complaint Level (BCL) rating. BCL ratings range from 1 to 9 depending on how likely the bulk mailer is to generate complaints. A sender that has a rating of BCL 9 is likely to generate many complaints from recipients, whereas a rating of BCL 3 is unlikely to generate many complaints. Microsoft uses both internal and third-party sources to identify bulk mail and determine the appropriate BCL. For more information about this message header, see [Anti-spam message headers](anti-spam-message-headers.md).
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP assigns a bulk complaint level (BCL) to inbound messages from bulk mailers. The BCL is added to the message in an X-header and is similar to the [spam confidence level (SCL)](spam-confidence-levels.md) that's used to identify messages as spam. A higher BCL indicates a bulk message is more likely to generate complaints (and is therefore more likely to be spam). Microsoft uses both internal and third party sources to identify bulk mail and determine the appropriate BCL.
 
-Since a bulk mailer with a rating of 9 is likely to generate complaints, the default BCL is 7. This means that bulk mails will be accepted until the complaint level of 7 and mail won't be accepted thereafter. The lower the rating, the less bulk mail is accepted. If your users are, and their work is, sensitive to bulk mail, and your BCL is set to 4, then no bulk mail with a higher BCL than 4 will be accepted.
+Bulk mailers vary in their sending patterns, content creation, and recipient acquisition practices. Good bulk mailers send desired messages with relevant content to their subscribers. These messages generate few complaints from recipients. Other bulk mailers send unsolicited messages that closely resemble spam and generate many complaints from recipients. Messages from a bulk mailer are known as bulk mail or gray mail.
 
-You can use BCL values to set the desired level of bulk filtering your organization requires by following the steps in [Configure your spam filter policies](configure-your-spam-filter-policies.md).
+ Spam filtering marks messages as **Bulk email** based on the BCL threshold (the default value or a value you specify) and takes the specified action on the message (the default action is deliver the message to the recipient's Junk Email folder). For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md) and [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
-The following table describes the BCL values that are currently in use.
+The BCL thresholds are described in the following table.
 
-|||
-|:-----|:-----|
-|**BCL Value**|**Description**|
+|BCL|Description|
+|:---:|---|
 |0|The message isn't from a bulk sender.|
 |1, 2, 3|The message is from a bulk sender that generates few complaints.|
-|4, 5, 6, 7|The message is from a bulk sender that generates a mixed number of complaints.|
+|4, 5, 6, 7<sup>\*</sup>|The message is from a bulk sender that generates a mixed number of complaints.|
 |8, 9|The message is from a bulk sender that generates a high number of complaints.|
+
+<sup>\*</sup> This is the default threshold value that's used in anti-spam policies.

@@ -1,20 +1,29 @@
 ---
 title: Allotment basics
-ms.author: cmcatee
+f1.keywords:
+- NOCSH
 author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: cmcatee
+manager: scotv
+ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: None
+ms.service: microsoft-365-business
+ms.localizationpriority: null
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
-- commerce
-ms.custom:
+- scotvorg
+- M365-subscription-management 
+- Adm_O365
+ms.custom: 
+- commerce_licensing
+- empty
+search.appverid: MET150
 description: "Learn about the new allotments feature."
+ms.date: 05/12/2022
 ---
 
-# Allotment basics
+# Microsoft 365 license allotment basics
 
 License allotments let you set license limits and delegate management of license assignment to only the products and license limits that you select.
 
@@ -24,22 +33,22 @@ You can also delegate management of your allotments. Delegated allotment owners 
 
 ## Prerequisites
 
-You must meet the licensing requirements for [group-based licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements).
+You must meet the licensing requirements for [group-based licensing](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements).
 
-You can use allotments with any Office 365 product available to users:
+You can use allotments with any product available to users:
 
 - Office suites and standalone products
 - Enterprise and Mobility products
 - Dynamics 365 products
 
-The following products can’t be used with allotments:
+The following products can't be used with allotments:
 
 - Microsoft Store apps
-- Perpetual software, or software that is directly assigned to a user if there is no license involved.
+- Perpetual software, or software that is directly assigned to a user if there's no license involved.
 - Azure resources
 
 You must be a global or license admin to get started with an allotment.
 
 ## Getting started
 
-The allotments feature is available in a private preview to only a small number of customers. If you are interested in joining, please fill out this form: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)
+The allotments feature is available in a private preview to only a few customers. If you're interested in joining, fill out this form: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).

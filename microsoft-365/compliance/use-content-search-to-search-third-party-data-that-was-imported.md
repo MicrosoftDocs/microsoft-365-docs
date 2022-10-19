@@ -1,25 +1,37 @@
 ---
-title: "Use Content Search to search third-party data imported to Office 365"
-ms.author: markjjo
-author: markjjo
+title: "Use Content Search to search third-party imported data"
+description: Use the Content Search eDiscovery tool to search for items imported to mailboxes in Microsoft 365 from a third-party data source by creating queries.
+f1.keywords:
+- NOCSH
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 10/27/2017
+ms.date: 
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
-localization_priority: Normal
-search.appverid: MOE150
-ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: "Use the Content Search eDiscovery tool to search for items imported to mailboxes in Office 365 from a third-party data source. You can create a query to search for all imported items or create a query to search for specific third-party data types. This article lists the values you can use in a keyword query to search the third-party data types that you can import to Office 365."
+ms.collection:
+- tier1
+- purview-compliance
+- content-search
+ms.localizationpriority: medium
+search.appverid: 
+- MOE150
+- MET150
+ms.custom: seo-marvel-apr2020
 ---
 
-# Use Content Search to search third-party data imported to Office 365
+# Use Content Search to search third-party data imported by a custom partner connector
 
-You can use the [Content Search eDiscovery tool](content-search.md) in the Security & Compliance Center to search for items imported to mailboxes in Office 365 from a third-party data source. You can create a query to search all imported third-party data items or you can create a query to search specific third-party data items. Also, you can also create a query-based Office 365 retention policy or a query-based eDiscovery hold to preserve third-party data in Office 365. 
+You can use the [Content search eDiscovery tool](content-search.md) in the Microsoft Purview compliance portal to search for items imported to mailboxes in Microsoft 365 from a third-party data source. You can create a query to search all imported third-party data items or you can create a query to search specific third-party data items. Also, you can also create a query-based retention policy or a query-based eDiscovery hold to preserve third-party data.
   
-For more information about importing third-party data and a list of the third-party data types that you can import to Office 365, see [Work with a partner to archive third-party data in Office 365](work-with-partner-to-archive-third-party-data.md). 
+For more information about working with a partner to import third-party data and a list of the third-party data types that you can import to Microsoft 365, see [Work with a partner to archive third-party data in Office 365](work-with-partner-to-archive-third-party-data.md).
+
+> [!IMPORTANT]
+> The guidance in this article only applies to third-party data that was imported by a custom partner connector. This article doesn't apply to third-party data that is imported by using the [third-party data connectors](archiving-third-party-data.md#third-party-data-connectors) in the Microsoft compliance center.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Creating a query to search all third-party data
 
 To search (or place on hold) any type of third-party data that you've imported to Office 365, you can use the  `kind:externaldata` message property-value pair in the keyword box for a Content Search or when creating a query-based hold. For example, to search for items imported from any third-party data source and contain the word "contoso" in the Subject property of the imported item, you would use the following query: 
@@ -34,7 +46,7 @@ When creating queries to search and hold third-party data, you can also use cond
   
 ## Creating a query to search specific types of third-party data
 
-Instead of searching all types of third-party data, you can create queries that only search for a specify type of third-party data by using the following message *property:value* pair in the keyword box for a Content Search:
+Instead of searching all types of third-party data, you can create queries that only search for a specify type of third-party data by using the following message *property: value* pair in the keyword box for a Content Search:
   
 ```powershell
 itemclass:ipm.externaldata.<third-party data type>* 
@@ -46,7 +58,7 @@ For example, to search Facebook data that contains the word "contoso" in the Sub
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 
-The following table lists the third-party data types that you can search, and the value to use for the  `itemclass:` message property to specifically search for that type of third-party data. The query syntax isn't case sensitive. 
+The following table lists the third-party data types that you can search, and the value to use for the  `itemclass:` message property to specifically search for that type of third-party data. The query syntax isn't case-sensitive. 
   
 |**Third-party data type**|**Value for  `itemclass:` property**|
 |:-----|:-----|
@@ -69,7 +81,7 @@ The following table lists the third-party data types that you can search, and th
 |BlackBerry PIN  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
 |BlackBerry SMS  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
 |Bloomberg  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
-|Bloomberg Mail  <br/> | `ipm.externaldata.BloombergMail*` <br/> |
+|Bloomberg Message  <br/> | `ipm.externaldata.conversation.Bloomberg Message*` <br/> |
 |Bloomberg Messaging  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
 |Box  <br/> | `ipm.externaldata.Box*` <br/> |
 |Cisco IM &amp; Presence Server  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
@@ -89,7 +101,7 @@ The following table lists the third-party data types that you can search, and th
 |HubConnex  <br/> | `ipm.externaldata.HubConnex*` <br/> |
 |IBM Connections  <br/> | `ipm.externaldata.Connections*` <br/> |
 |IBM SameTime  <br/> | `ipm.externaldata.Sametime*` <br/> |
-|ICE Chat  <br/> | `ipm.externaldata.ICEChat.Chat` <br/> |
+|ICE Chat  <br/> | `ipm.externaldata.conversation.Ice Chat*` <br/> |
 |Indii Messenger  <br/> | `ipm.externaldata.Indii*` <br/> |
 |Instagram  <br/> | `ipm.externaldata.Instagram*` <br/> |
 |Instant Bloomberg  <br/> | `ipm.externaldata.InstantBloomberg*` <br/> |

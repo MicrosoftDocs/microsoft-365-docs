@@ -1,36 +1,85 @@
-- name: Manage commerce purchases and billing
-  href: index.md
-  expanded: true
+- name: Manage business subscriptions
+  href: index.yml
+- name: Microsoft 365 admin help center
+  href: ../admin/index.yml
+- name: Try or buy
   items:
-    - name: Products and services
-      items: 
-        - name: Manage third-party apps
-          href: manage-saas-apps.md
-        - name: Buy licenses
-          href: /office365/admin/subscriptions-and-billing/buy-licenses?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
-        - name: Assign licenses
-          href: /office365/admin/manage/assign-licenses-to-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
-        - name: Unassign licenses
-          href: /office365/admin/manage/remove-licenses-from-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
-        - name: Remove licenses from subscription
-          href: /office365/admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
-        - name: Upgrade subscriptions
-          href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
-    - name: Bills and payments
-      items: 
-        - name: Understand your invoice
-          href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
-        - name: Manage payment methods
-          href: /office365/Admin/subscriptions-and-billing/add-update-or-remove-credit-card-or-bank-account?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
-        - name: Manage billing profiles
-          href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
-        - name: Payment Services Directive 2 and Strong Customer Authentication
-          href: /microsoft-365/commerce/billing-and-payments/psd2
-    - name: Billing accounts
-      items: 
-        - name: Manage billing account info
-          href: /microsoft-store/update-microsoft-store-for-business-account-settings?context=/microsoft-365/commerce/context/context-commerce
-        - name: Associate a tenant with my billing account
-          href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
-    - name: Manage relationships with my partners
-      href: manage-partners.md
+    - name: Try or buy Microsoft 365
+      href: try-or-buy-microsoft-365.md
+    - name: Buy or manage add-ons
+      href: buy-or-edit-an-add-on.md
+    - name: Business Assist for Microsoft 365
+      href: ../admin/misc/business-assist.md
+    - name: Add storage space
+      href: add-storage-space.md
+- name: Manage subscriptions
+  items: 
+    - name: Upgrade subscriptions
+      href: subscriptions/upgrade-to-different-plan.md
+    - name: Renew your subscription
+      href: subscriptions/renew-your-subscription.md
+    - name: Reactivate your subscription
+      href: subscriptions/reactivate-your-subscription.md
+    - name: Cancel your subscription
+      href: subscriptions/cancel-your-subscription.md
+    - name: What if my subscription expires?
+      href: subscriptions/what-if-my-subscription-expires.md
+    - name: Manage third-party app subscriptions
+      href: manage-saas-apps.md
+    - name: Manage self-service purchases (Users)
+      href: subscriptions/manage-self-service-purchases-users.md
+    - name: Manage self-service purchases (Admin)
+      href: subscriptions/manage-self-service-purchases-admins.md
+- name: Manage licenses
+  items:
+    - name: Buy or remove subscription licenses
+      href: licenses/buy-licenses.md
+    - name: Assign licenses to users
+      href: ../admin/manage/assign-licenses-to-users.md
+    - name: Unassign licenses from users
+      href: ../admin/manage/remove-licenses-from-users.md
+    - name: Move users to a different subscription
+      href: subscriptions/move-users-different-subscription.md
+    - name: Manage ISV app licenses
+      href: licenses/manage-third-party-app-licenses.md
+    - name: Manage auto-claim policies
+      href: licenses/manage-auto-claim-policies.md
+    - name: Understand subscriptions and licenses
+      href: licenses/subscriptions-and-licenses.md
+- name: Bills and payments
+  items: 
+    - name: View your bill or invoice
+      href: billing-and-payments/view-your-bill-or-invoice.md
+    - name: Understand your bill or invoice
+      href: billing-and-payments/understand-your-invoice2.md
+    - name: Pay for your subscription
+      href: billing-and-payments/pay-for-your-subscription.md
+    - name: Manage payment methods
+      href: billing-and-payments/manage-payment-methods.md
+    - name: Manage billing across multiple tenants
+      href: billing-and-payments/manage-multi-tenant-billing.md
+    - name: Change billing frequency
+      href: billing-and-payments/change-payment-frequency.md
+    - name: Manage billing notifications and invoice attachments
+      href: billing-and-payments/manage-billing-notifications.md
+    - name: Understand billing profiles
+      href: billing-and-payments/manage-billing-profiles.md
+    - name: Change your billing addresses
+      href: billing-and-payments/change-your-billing-addresses.md
+    - name: Request a credit for Withholding Tax on your account
+      href: billing-and-payments/withholding-tax-credit-global.md
+- name: Billing accounts
+  items: 
+    - name: Understand billing accounts
+      href: manage-billing-accounts.md
+    - name: Associate a tenant with your billing account
+      href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
+- name: Manage relationships with your partners
+  href: manage-partners.md
+- name: Review partner privileges
+  href: review-partner-admin-privileges.md
+- name: Close your account
+  href: close-your-account.md
+- name: Contact support
+  href: ../admin/get-help-support.md
+  

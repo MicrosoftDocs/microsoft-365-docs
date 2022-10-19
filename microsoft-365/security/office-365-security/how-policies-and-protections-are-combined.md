@@ -1,58 +1,75 @@
 ---
-title: How policies and protections are combined when mail is red-flagged
-description: Describes what policies and protections apply when e-mail encounters multiple protections and is scanned by multiple forms of detection.
-keywords: security, malware, Microsoft 365, M365, security center, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
-ms.author: tracyp
-author: MSFTTracyp
+title: Order and precedence of email protection
+keywords: security, malware, Microsoft 365, M365, security center, Microsoft 365 Defender portal, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity
+f1.keywords: 
+  - NOCSH
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 03/26/2019
+ms.date: 
 audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection:
-- M365-security-compliance
-description: "What policies apply, and what actions to take, when email is marked malware, spam, high confidence spam, phishing, and bulk by EOP, and/or ATP."
+ms.topic: conceptual
+
+ms.localizationpriority: medium
+ms.collection: 
+  - m365-security
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn about the application order of protections in Exchange Online Protection (EOP), and how the priority value in protection policies determines which policy is applied.
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
-# What policy applies when multiple protection methods and detection scans run on your email
+# Order and precedence of email protection
 
-Potentially, your incoming mail may be flagged by multiple forms of protection (for example both EOP *and* ATP), and multiple detection scans (such as spam *and* phishing). This is possible because there are ATP Anti-phishing policies for ATP customers, and EOP Anti-phishing policies for EOP customers. This also means the message may navigate multiple detection scans for malware, phishing, and user-impersonation, for example. Given all this activity, there may be some confusion as to which policy applies.
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-In general, a policy applied to a message is identified in the **X-Forefront-Antispam-Report** header in the **CAT (Category)** property. If you have multiple Anti-phishing policies, the one at the highest priority will apply.
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-The Policies below apply to _all organizations_.
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, inbound email may be flagged by multiple forms of protection. For example, the built-in anti-phishing policies in EOP that are available to all Microsoft 365 customers, and the more robust anti-phishing policies that are available to Microsoft Defender for Office 365 customers. Messages also pass through multiple detection scans for malware, spam, phishing, etc. Given all this activity, there may be some confusion as to which policy is applied.
 
-|Priority |Policy  |Category  |Where Managed |
-|---------|---------|---------|---------|
-|1     | Malware      | MALW      | Malware policy   |
-|2     | Phishing     | PHSH     | Configure your spam filter policies     |
-|3     | High confidence spam      | HSPM        | Configure your spam filter policies        |
-|4     | Spoofing        | SPOOF        | Anti-phishing policy, spoof intelligence        |
-|5     | Spam         | SPM         | Configure your spam filter policies         |
-|6     | Bulk         | BULK        | Configure your spam filter policies         |
+In general, a policy that's applied to a message is identified in the **X-Forefront-Antispam-Report** header in the **CAT (Category)** property. For more information, see [Anti-spam message headers](anti-spam-message-headers.md).
 
-In addition, these policies apply to _organizations with ATP_.
+There are two major factors that determine which policy is applied to a message:
 
-|Priority |Policy  |Category  |Where Managed |
-|---------|---------|---------|---------|
-|7     | Domain Impersonation         | DIMP         | Set up Office 365 ATP anti-phishing and anti-phishing policies        |
-|8     | User Impersonation        | UIMP         | Set up Office 365 ATP anti-phishing and anti-phishing policies         |
+- **The order of processing for the email protection type**: This order is not configurable, and is described in the following table:
 
-As an example, if you have two policies with their respective priorities:
+  |Order|Email protection|Category|Where to manage|
+  |:---:|---|---|---|
+  |1|Malware|CAT:MALW|[Configure anti-malware policies in EOP](configure-anti-malware-policies.md)|
+  |2|Phishing|CAT:PHSH|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
+  |3|High confidence spam|CAT:HSPM|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
+  |4|Spoofing|CAT:SPOOF|[Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md)|
+  |5<sup>\*</sup>|User impersonation (protected users)|UIMP|[Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)|
+  |6<sup>\*</sup>|Domain impersonation (protected domains)|DIMP|[Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)|
+  |7|Spam|CAT:SPM|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
+  |8|Bulk|CAT:BULK|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
 
-|Policy  |Priority  |User/Domain Impersonation  |Anti-spoofing  |
-|---------|---------|---------|---------|
-|A     | 1        | On        |Off         |
-|B     | 2        | Off        | On        |
+  <sup>\*</sup> These features are only available in anti-phishing policies in Microsoft Defender for Office 365.
 
-If a message comes in identified as both _user impersonation_ and _spoofing_ (see anti-spoofing in the table above), and the same set of users scoped to policy A is scoped to policy B, then the message is flagged and treated as a _spoof_. However, no action is applied because though spoof runs at a higher priority (4) than User Impersonation (8), Anti-spoofing is turned off.
+- **The priority of the policy**: For each type of policy (anti-spam, anti-malware, anti-phishing, etc.), there's a default policy that applies to everyone, but you can create custom policies that apply to specific users (recipients). Each custom policy has a priority value that determines the order that the policies are applied in. The default policy is always applied last.
 
-Keep in mind, administrators can create a prioritized list of policies (see the priority field above), but only one policy will run and apply its actions. That means a user in both policy A and B will have the higher priority policy (A is #1) run, and the message will not filter through any further policies. If the anti-spoofiing is off, no actions will be run.
+  > [!IMPORTANT]
+  > If a recipient is defined in multiple policies of the same type (anti-spam, anti-phishing, etc.), only the policy with the highest priority is applied to the recipient. Any remaining policies of that type are not evaluated for the recipient (including the default policy).
 
-Because there is a potential to have many groups of users in many policies, it may behoove administrators to consider using fewer policies with more capabilities. It is also important to be certain that all users are covered by a comprehensive policy.
+For example, consider the following **anti-phishing policies** in Microsoft Defender for Office 365 **that apply to the same users**, and a message that's identified as **both user impersonation and spoofing**:
 
-To make other types of phishing policy apply, you will need to adjust the settings of who the various policies apply to.
+|Policy name|Priority|User impersonation|Anti-spoofing|
+|---|:---:|:---:|:---:|
+|Policy A|1|On|Off|
+|Policy B|2|Off|On|
 
+1. The message is identified as spoofing, because spoofing (4) is evaluated before user impersonation (5).
+2. Policy A is applied first because it has a higher priority than Policy B.
+3. Based on the settings in Policy A, no action is taken on the message because anti-spoofing is turned off.
+4. The processing of anti-phishing policies stops for all included recipients, so Policy B is never applied to recipients who are also in Policy A.
 
+Because the same users might be intentionally or unintentionally included in multiple policies of the same type, use the following design guidelines for custom policies:
 
+- Assign a higher priority to policies that apply to a small number of users, and a lower priority to policies that apply to a large number of users. Remember, the default policy is always applied last.
+- Configure your higher priority policies to have stricter or more specialized settings than lower priority policies.
+- Consider using fewer custom policies (only use custom policies for users who require stricter or more specialized settings).

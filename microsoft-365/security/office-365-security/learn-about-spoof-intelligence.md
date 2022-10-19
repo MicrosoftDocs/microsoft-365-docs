@@ -1,146 +1,180 @@
 ---
-title: "Learn more about spoof intelligence"
-ms.author: tracyp
-author: MSFTTracyP
+title: Spoof intelligence insight
+f1.keywords:
+  - NOCSH
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/22/2018
+ms.date:
 audience: Admin
-ms.topic: article
-ms.service: O365-seccomp
-localization_priority: Normal
-search.appverid: 
-- MOE150
-- MET150
+ms.topic: how-to
+
+ms.localizationpriority: medium
+search.appverid:
+  - MOE150
+  - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
-- M365-security-compliance
-description: "Use spoof intelligence in the Security &amp; Compliance Center on the Anti-spam settings page to review all senders who are spoofing either domains that are part of your organization, or spoofing external domains. Spoof intelligence is available as part of Office 365 Enterprise E5 or separately as part of Advanced Threat Protection and Exchange Online Protection."
+  - m365-security
+ms.custom:
+  - seo-marvel-apr2020
+description: Admins can learn about the spoof intelligence insight in Exchange Online Protection (EOP).
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
-# Learn more about spoof intelligence
+# Spoof intelligence insight in EOP
 
-Use spoof intelligence in the Security &amp; Compliance Center on the **Anti-spam settings page** to review all senders who are spoofing either domains that are part of your organization, or spoofing external domains. Spoof intelligence is available as part of Office 365 Enterprise E5 or separately as part of Advanced Threat Protection (ATP) and as of October, 2018 Exchange Online Protection (EOP). 
-  
-## What types of email spoofing can I review and which should I protect against with spoof intelligence?
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-For domains you own, you can review senders who are spoofing your domain and then choose to allow the sender to continue or block the sender. For external domains, you can allow the sender domain combined with the sending infrastructure, although not an individual sending email address.
-  
-When a sender spoofs an email address, they appear to be sending mail on behalf of one or more user accounts within one of your organization's domains, or an external domain sending to your organization. Surprisingly, there are some legitimate business reasons for spoofing. For example, in these cases, you wouldn't block the sender from spoofing your domain:
-  
-- You have third-party senders who use your domain to send bulk mail to your own employees for company polls.
-    
-- You have hired an external company to generate and send out advertising or product updates on your behalf.
-    
-- An assistant who regularly needs to send email for another person within your organization.
-    
-- An application that is configured to spoof its own organization in order to send internal notifications by email.
-    
-External domains frequently send spoofed email, and many of these reasons are legitimate. For example, here are some legitimate cases when external senders send spoofed email:
-  
-- The sender is on a discussion mailing list, and the mailing list is relaying the email from the original sender to all the participants on the mailing list.
-    
-- An external company is sending email on behalf of another company (for example, an automated report, or a software-as-a-service company).
-    
-You need a way to ensure that the mail sent by legitimate spoofers doesn't get caught up in spam filters in Office 365 or external email systems. Normally, Office 365 treats these email messages as spam. As an Office 365 admin, you have the ability to prevent this by setting up spoof filters in the Security &amp; Compliance Center. If you own the domain, you can configure SPF, DKIM, and DMARC to allow for these senders.
-  
-On the other hand, malicious spoofers, those senders that are spoofing your domain, or external domains, to send spam or phishing email, need to be blocked. Spoofing is also a common way for phishers to get user credentials. Office 365 has built-in spoof protection to help shield your organization from senders of these malicious emails. Spoof protection for your organization's domains is always on for all Office 365 customers, and external domain spoof protection is on by default for Advanced Threat Protection customers and as of October, 2018 EOP customers as well. To further strengthen this protection, tell us which senders are authorized to spoof your organization's domains and send email on your behalf, and if any external domains are permitted to spoof. Any email sent from a sender that you don't authorize will be treated as spam or spoofing by Office 365. Keep an eye on the senders spoofing your domain and help us improve spoof intelligence by using the Security &amp; Compliance Center.
-  
-## Managing spoof intelligence in the Security &amp; Compliance Center
-<a name="Managespooflist"> </a>
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-The spoof intelligence policy you set up is always enforced by Office 365. You cannot disable it, but you can choose how much you want to actively manage it.
-  
-You can review the senders who are spoofing your domain, or external domains, and then decide whether each sender should be allowed to do so by using the Security &amp; Compliance Center. For each spoofed user account that a sender spoofs from your domain or an external domain, you can view the information in the following table.
-  
-|**Parameter**|**Description**|
-|:-----|:-----|
-|Sender  <br/> |Also called the true sender. This is usually the domain from which the spoof email originates. Office 365 determines the domain of the pointer (PTR) DNS record of the sending IP address that is spoofing your organization. If no domain is found, the report displays the sender's IP address instead.  <br/> |
-|Spoofed user  <br/> |The user account that is being spoofed by the sender.  <br/> **Internal** tab only. This field contains a single email address, or if the sender is spoofing multiple user accounts, it contains **More than one**.  <br/> **External** tab only. External domains only contain a sending domain, and do not contain a full email address.  <br/> **Tip! For advanced admins.** The spoofed user is the From (5322.From) address which is also the address displayed as the From address by the mail client. This is sometimes called the header.from address. The validity of this address is not checked by SPF.           |
-|Number of messages  <br/> |The number of mail messages sent by the sender to your organization on behalf of the identified spoofed sender or senders within the last 30 days.  <br/> |
-|Number of user complaints  <br/> |Complaints filed by users against this sender by your users within the last 30 days. Complaints are usually in the form of junk submissions to Microsoft.  <br/> |
-|Authentication result  <br/> |This value is **Passed** if the sender passed Exchange Online Protection (EOP) sender authentication checks, such as SPF or DKIM, **Failed** if the sender failed EOP sender authentication checks, or **Unknown** if the result of these checks isn't known.  <br/> |
-|Decision set by  <br/> |Shows whether the Office 365 administrator or the spoof intelligence policy determined whether or not the sender is allowed to spoof the user.  <br/> |
-|Last seen  <br/> |The last date on which a message was received by this sender on behalf of this spoofed user.  <br/> |
-|Allowed to spoof?  <br/> | Displays whether or not this sender is allowed to send email on behalf of the spoofed user. Possible values include:  <br/> **Yes** All spoofed addresses from this spoofing sender will be allowed to spoof your organization.  <br/> **No** Spoofed addresses from this spoofing sender won't be allowed to spoof your organization. Instead, messages from this sender will be marked as spam by Office 365.  <br/> **Some users** If a sender is spoofing multiple users, some spoofed addresses from this sender will be allowed to spoof your organization, the rest will be marked as spam. Use the **Detailed** tab to see the specific addresses.  <br/> |
-|Spoof Type  <br/> |This value is **Internal** if the domain is one of your organization's provisioned domains, otherwise the value is **External**.  <br/> |
-   
- **To manage senders who are spoofing your domain by using the Security &amp; Compliance Center**
-  
-1. Go to the [Security &amp; Compliance Center](https://protection.office.com).
-    
-2. Sign in to Office 365 with your work or school account. Your account must have administrator credentials in your Office 365 organization.
-    
-3. In the Security &amp; Compliance Center, expand **Threat Management** \> **Policy** \> **Anti-spam**.  
-  
-    ![Screenshot showing access to the anti-spam page](../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
-  
-4. On the **Anti-spam settings** page in the right pane, select the **Custom** tab, and then scroll down and expand **Spoof intelligence policy**.  
-  
-    ![Screenshot showing access to the anti-spam custom settings](../media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
-  
-5. To view the list of senders spoofing your domain, choose **Review new senders** and select the **Your Domains** tab. 
-    
-    If you've already reviewed senders, and want to change some of your previous choices, you can choose **Show me senders I already reviewed** instead. In either case, the following panel appears.  
-  
-    ![Screenshot showing access to the spoofed senders tab](../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
-  
-    Each spoofed user is displayed in a separate row so that you can choose whether to allow or block the sender from spoofing each user individually.  
-  
-    To add a sender to the allow list for a user, select **Yes** from the **Allowed to spoof** column. To add a sender to the block list for a user, choose **No**.
-     
-    To set the policy for domains you do not own, select the **External Domains** tab. Change any sender to **Yes** in the **Allowed to Spoof** column to permit that sender to send unauthenticated email into your organization. Alternatively, if you think Office 365 has made a mistake in permitting the sender to send spoofed email, change the **Allowed to spoof** column to **No**.  
-  
-    ![Screenshot showing whether a sender is allowed to spoof](../media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
-  
-6. Choose **Save** to save any changes. 
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, inbound email messages are automatically protected against spoofing. EOP uses **spoof intelligence** as part of your organization's overall defense against phishing. For more information, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
 
-If you have an Office 365 Enterprise E5 subscription or have separately purchased Advanced Threat Protection as an add-on, you can also manage senders who are spoofing your domain through the [Spoof Intelligence Insight](https://docs.microsoft.com/office365/securitycompliance/walkthrough-spoof-intelligence-insight).
-    
-## Configuring the anti-spoofing policy
-<a name="Managespooflist"> </a>
+When a sender spoofs an email address, they appear to be a user in one of your organization's domains, or a user in an external domain that sends email to your organization. Attackers who spoof senders to send spam or phishing email need to be blocked. But there are scenarios where legitimate senders are spoofing. For example:
 
-In addition to allowing or blocking a particular sender from sending spoofed email into your organization, you can also configure how strict you want the filter to be, and the action to take when a spoofing message is found.
-  
-Anti-spoofing protection is applied to email from senders from domains that are external to your Office 365 organization. You can apply the policy to recipients whose mailboxes are licensed for Office 365 Enterprise E5, Advanced Threat Protection and as of October, 2018 EOP customers as well. You manage the anti-spoofing policy along with the other anti-phishing settings. For more information about anti-phishing settings, see [Set up the Office 365 anti-phishing policies](https://support.office.com/article/set-up-office-365-atp-anti-phishing-policies-5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578?ui=en-US&amp;rs=en-US&amp;ad=US#phishpolicyoptions).
-  
-Office 365 includes default anti-spoofing protection that's always running. This default protection is not visible in the Security &amp; Compliance Center or retrievable through Windows PowerShell cmdlets. You can't modify the default anti-spoofing protection. Instead, you can configure how strictly Office 365 enforces the anti-spoofing protection in each anti-phishing policy that you create. 
-  
-Even though the anti-spoofing policy appears under the anti-phishing policy in the Security &amp; Compliance Center, it does not inherit its default behavior from the existing phishing setting under the Anti-spam configuration. If you have settings under **Anti-spam** \> **Phishing** that you want to replicate for anti-spoofing, you will need to create an anti-phishing policy, then edit the spoof portion of the anti-phishing policy to reflect your spoof settings as described in the following section, rather than accepting the default settings that run in the background. 
-  
- **To configure anti-spoofing protection within an anti-phishing policy by using the Security &amp; Compliance Center**
-  
-1. Go to the [Security &amp; Compliance Center](https://protection.office.com).
-    
-2. Sign in to Office 365 with your work or school account. Your account must have administrator credentials in your Office 365 organization.
-    
-3. In the Security &amp; Compliance Center, expand **Threat Management** \> **Policy** \> **Anti-phishing**. 
-    
-4. On the **Anti-phishing** page in the right pane, select the anti-phishing policy you want to configure. 
-    
-5. On the page that appears, in the **Spoof** row, choose **Edit**. 
-    
-6. Next, configure the actions to take when a message is detected as a cross-domain spoof. The default behavior is to move the message to the recipient's junk email folder. The other option is to send the message to the quarantine. For more information about managing messages sent to quarantine, see [Quarantine email messages in Office 365](quarantine-email-messages.md).  
-  
-    ![Screenshot showing anti-spoofing policy edit options](../media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
-  
-7. Make your choice and then choose **Save**. 
-    
-## Other ways to manage spoofing and phishing with Office 365
-<a name="Managespooflist"> </a>
+- Legitimate scenarios for spoofing internal domains:
+  - Third-party senders use your domain to send bulk mail to your own employees for company polls.
+  - An external company generates and sends advertising or product updates on your behalf.
+  - An assistant regularly needs to send email for another person within your organization.
+  - An internal application sends email notifications.
 
-Be diligent about spoofing and phishing protection. Here are related ways to check on senders spoofing your domain and help prevent them from damaging your organization:
-  
-- Check the Exchange Online Protection spoof mail report as part of your routine. You can use this report often to view and help manage spoofed senders. For information, see **Spoof mail report** in [Use mail protection reports in Office 365 to view data about malware, spam, and rule detections](https://technet.microsoft.com/library/dn500744%28v=exchg.150%29.aspx).
-    
-For more advanced Office 365 admins, you can also complete these checks:
-    
-    
-- Review your Sender Policy Framework (SPF) configuration. For a quick introduction to SPF and to get it configured quickly, see [Set up SPF in Office 365 to help prevent spoofing](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx). For a more in-depth understanding of how Office 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx).
-    
-- Review your DomainKeys Identified Mail (DKIM) configuration. You should use DKIM in addition to SPF and DMARC to help prevent spoofers from sending messages that look like they are coming from your domain. DKIM lets you add a digital signature to email messages in the message header. For information, see [Use DKIM to validate outbound email sent from your domain in Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx).
-    
-- Review your Domain-based Message Authentication, Reporting, and Conformance (DMARC) configuration. Implementing DMARC with SPF and DKIM provides additional protection against spoofing and phishing email. DMARC helps receiving mail systems determine what to do with messages sent from your domain that fail SPF or DKIM checks. For information, see [Use DMARC to validate email in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
-    
-- Use the [Get-PhishFilterPolicy](https://technet.microsoft.com/library/mt735158%28v=exchg.160%29.aspx) Windows PowerShell cmdlet to gather detailed data on spoofed senders, generate allow and block lists, and help you determine how to generate more comprehensive SPF, DKIM, and DMARC DNS records without having your legitimate email get caught in external spam filters. For more information, see [How antispoofing protection works in Office 365](https://blogs.msdn.microsoft.com/tzink/2016/02/23/how-antispoofing-protection-works-in-office-365/).
-    
+- Legitimate scenarios for spoofing external domains:
+  - The sender is on a mailing list (also known as a discussion list), and the mailing list relays email from the original sender to all the participants on the mailing list.
+  - An external company sends email on behalf of another company (for example, an automated report or a software-as-a-service company).
 
+You can use the **spoof intelligence insight** in the Microsoft 365 Defender portal to quickly identify spoofed senders who are legitimately sending you unauthenticated email (messages from domains that don't pass SPF, DKIM, or DMARC checks), and manually allow those senders.
+
+By allowing known senders to send spoofed messages from known locations, you can reduce false positives (good email marked as bad). By monitoring the allowed spoofed senders, you provide an additional layer of security to prevent unsafe messages from arriving in your organization.
+
+Likewise, you can review spoofed senders that were allowed by spoof intelligence and manually block those senders from the spoof intelligence insight.
+
+The rest of this article explains how to use the spoof intelligence insight in the Microsoft 365 Defender portal and in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
+
+> [!NOTE]
+>
+> - Only spoofed senders that were detected by spoof intelligence appear in the spoof intelligence insight. When you override the allow or block verdict in the insight, the spoofed sender becomes a manual allow or block entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders before they're detected by spoof intelligence. For more information, see [Manage the Tenant Allow/Block List in EOP](manage-tenant-allow-block-list.md).
+>
+> - The spoof intelligence insight and the **Spoofed senders** tab in the Tenant Allow/Block list replace the functionality of the spoof intelligence policy that was available on the anti-spam policy page in the Security & Compliance Center.
+>
+> - The spoof intelligence insight shows 7 days worth of data. The **Get-SpoofIntelligenceInsight** cmdlet shows 30 days worth of data.
+>
+> - The latest available data is 3 to 4 days old.
+
+## What do you need to know before you begin?
+
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Spoofed senders** tab on the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>. To go directly to the **Spoof intelligence insight** page, use <https://security.microsoft.com/spoofintelligence>.
+
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+
+- You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
+  - To modify the spoof intelligence policy or enable or disable spoof intelligence, you need to be a member of one of the following role groups:
+    - **Organization Management**
+    - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
+  - For read-only access to the spoof intelligence policy, you need to be a member of the **Global Reader** or **Security Reader** role groups.
+
+  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
+
+  > [!NOTE]
+  >
+  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+  > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+
+- You enable and disable spoof intelligence in anti-phishing policies in EOP and Microsoft Defender for Office 365. Spoof intelligence is enabled by default. For more information, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) or [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
+
+- For our recommended settings for spoof intelligence, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings).
+
+## Open the spoof intelligence insight in the Microsoft 365 Defender portal
+
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Tenant Allow/Block Lists** in the **Rules** section. To go directly to the **Spoofed senders** tab on the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
+
+2. On the **Tenant Allow/Block Lists** page, the spoof intelligence insight looks like this:
+
+   :::image type="content" source="../../media/m365-sc-spoof-intelligence-insight.png" alt-text="The Spoof intelligence insight on the Anti-phishing policy page" lightbox="../../media/m365-sc-spoof-intelligence-insight.png":::
+
+   The insight has two modes:
+
+   - **Insight mode**: If spoof intelligence is enabled, the insight shows you how many messages were detected by spoof intelligence during the past seven days.
+   - **What if mode**: If spoof intelligence is disabled, then the insight shows you how many messages *would* have been detected by spoof intelligence during the past seven days.
+
+To view information about the spoof intelligence detections, click **View spoofing activity** in the spoof intelligence insight.
+
+### View information about spoofed messages
+
+> [!NOTE]
+> Remember, only spoofed senders that were detected by spoof intelligence appear on this page. When you override the allow or block verdict in the insight, the spoofed sender becomes a manual allow or block entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List.
+
+On the **Spoof intelligence insight** page that appears after you click **View spoofing activity** in the spoof intelligence insight, the page contains the following information:
+
+- **Spoofed user**: The **domain** of the spoofed user that's displayed in the **From** box in email clients. The From address is also known as the `5322.From` address.
+- **Sending infrastructure**: Also known as the _infrastructure_. The sending infrastructure will be one of the following values:
+  - The domain found in a reverse DNS lookup (PTR record) of the source email server's IP address.
+  - If the source IP address has no PTR record, then the sending infrastructure is identified as \<source IP\>/24 (for example, 192.168.100.100/24).
+  - A verified DKIM domain.
+- **Message count**: The number of messages from the combination of the spoofed domain _and_ the sending infrastructure to your organization within the last 7 days.
+- **Last seen**: The last date when a message was received from the sending infrastructure that contains the spoofed domain.
+- **Spoof type**: One of the following values:
+  - **Internal**: The spoofed sender is in a domain that belongs to your organization (an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
+  - **External**: The spoofed sender is in an external domain.
+- **Action**: This value is **Allowed** or **Blocked**:
+  - **Allowed**: The domain failed explicit email authentication checks [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md). However, the domain passed our implicit email authentication checks ([composite authentication](email-validation-and-authentication.md#composite-authentication)). As a result, no anti-spoofing action was taken on the message.
+  - **Blocked**: Messages from the combination of the spoofed domain _and_ sending infrastructure are marked as bad by spoof intelligence. The action that's taken on the spoofed messages is controlled by the default anti-phishing policy or custom anti-phishing policies (the default value is **Move message to Junk Email folder**). For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
+
+You can click selected column headings to sort the results.
+
+To filter the results, you have the following options:
+
+- Click the **Filter** button. In the **Filter** flyout that appears, you can filter the results by:
+  - **Spoof type**
+  - **Action**
+- Use the **Search** box to enter a comma-separated list of spoofed domain values or sending infrastructure values to filter the results.
+
+### View details about spoofed messages
+
+When you select an entry from the list, a details flyout appears that contains the following information and features:
+
+- **Allow to spoof** or **Block from spoofing**: Select one of these values to override the original spoof intelligence verdict and move the entry from the spoof intelligence insight to the Tenant Allow/Block List as an allow or block entry for spoof.
+- Why we caught this.
+- What you need to do.
+- A domain summary that includes most of the same information from the main spoof intelligence page.
+- WhoIs data about the sender.
+- A link to open [Threat Explorer](threat-explorer.md) to see additional details about the sender under **View** \> **Phish** in Microsoft Defender for Office 365.
+- Similar messages we have seen in your tenant from the same sender.
+
+### About allowed spoofed senders
+
+An allowed spoofed sender in the spoof intelligence insight or a blocked spoofed sender that you manually changed to **Allow to spoof** only allows messages from the combination of the spoofed domain _and_ the sending infrastructure. It does not allow email from the spoofed domain from any source, nor does it allow email from the sending infrastructure for any domain.
+
+For example, the following spoofed sender is allowed to spoof:
+
+- **Domain**: gmail.com
+- **Infrastructure**: tms.mx.com
+
+Only email from that domain/sending infrastructure pair will be allowed to spoof. Other senders attempting to spoof gmail.com aren't automatically allowed. Messages from senders in other domains that originate from tms.mx.com are still checked by spoof intelligence, and might be blocked.
+
+## Use the spoof intelligence insight in Exchange Online PowerShell or standalone EOP PowerShell
+
+In PowerShell, you use the **Get-SpoofIntelligenceInsight** cmdlet to **view** allowed and blocked spoofed senders that were detected by spoof intelligence. To manually allow or block the spoofed senders, you need to use the **New-TenantAllowBlockListSpoofItems** cmdlet. For more information, see [Use PowerShell to manage spoofed sender entries to the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+
+To view the information in the spoof intelligence insight, run the following command:
+
+```powershell
+Get-SpoofIntelligenceInsight
+```
+
+For detailed syntax and parameter information, see [Get-SpoofIntelligenceInsight](/powershell/module/exchange/get-spoofintelligenceinsight).
+
+## Other ways to manage spoofing and phishing
+
+Be diligent about spoofing and phishing protection. Here are related ways to check on senders who are spoofing your domain and help prevent them from damaging your organization:
+
+- Check the **Spoof Mail Report**. You can use this report often to view and help manage spoofed senders. For information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
+
+- Review your Sender Policy Framework (SPF) configuration. For a quick introduction to SPF and to get it configured quickly, see [Set up SPF in Microsoft 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). For a more in-depth understanding of how Office 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
+
+- Review your DomainKeys Identified Mail (DKIM) configuration. You should use DKIM in addition to SPF and DMARC to help prevent attackers from sending messages that look like they are coming from your domain. DKIM lets you add a digital signature to email messages in the message header. For information, see [Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md).
+
+- Review your Domain-based Message Authentication, Reporting, and Conformance (DMARC) configuration. Implementing DMARC with SPF and DKIM provides additional protection against spoofing and phishing email. DMARC helps receiving mail systems determine what to do with messages sent from your domain that fail SPF or DKIM checks. For information, see [Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md).

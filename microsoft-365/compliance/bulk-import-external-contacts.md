@@ -1,25 +1,32 @@
 ---
 title: "Bulk import external contacts to Exchange Online"
-ms.author: markjjo
-author: markjjo
+description: "Learn how admins can use Exchange Online PowerShell and a CSV file to bulk import external contacts to the global address list."
+f1.keywords:
+- NOCSH
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 6/29/2018
 audience: End User
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
-description: "Learn how admins can use Exchange Online PowerShell and a CSV file to bulk import external contacts to the global address list."
+ms.custom: admindeeplinkEXCHANGE
+ms.collection:
+- tier1
+- purview-compliance
+- import
 ---
 
 # Bulk import external contacts to Exchange Online
 
 **This article is for administrators. Are you trying to import contacts to your own mailbox? See [Import contacts to Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
    
-Does your company have lots of existing business contacts that you want to include in the shared address book (also called the global address list) in Exchange Online? Do you want to add external contacts as members of distribution groups, just like you can with users inside your company? If so, you can use Exchange Online PowerShell and a CSV (Comma Separated Value) file to bulk import external contacts into Exchange Online. It's a three-step process:
+Does your company have lots of existing business contacts that you want to include in the shared address book (also called the global address list) in Exchange Online? Do you want to add external contacts as members of distribution groups, just like you can with users inside your company? If so, you can use Exchange Online PowerShell and a CSV (comma-separated value) file to bulk import external contacts into Exchange Online. It's a three-step process:
   
 [Step 1: Create a CSV file that contains information about the external contacts](#step-1-create-a-csv-file-that-contains-information-about-the-external-contacts)
 
@@ -33,11 +40,13 @@ After you complete these steps to import contacts, you can perform these additio
   
 - [Hide external contacts from the shared address book](#hide-external-contacts-from-the-shared-address-book)
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Create a CSV file that contains information about the external contacts
 
 The first step is to create a CSV file that contains information about each external contact that you want to import to Exchange Online. 
   
-1. Copy the following text to a text file in NotePad, and save it to your desktop as a CSV file by using a filename suffix of .csv; for example, ExternalContacts.csv.
+1. Copy the following text to a text file in NotePad, and save it on your desktop as a CSV file by using a filename suffix of .csv; for example, ExternalContacts.csv.
     
     > [!TIP]
     > If your language contains special characters (such as **å**, **ä**, and **ö** in Swedish) save the CSV file with UTF-8 or other Unicode encoding when you save the file in NotePad. 
@@ -64,7 +73,7 @@ The first step is to create a CSV file that contains information about each exte
 
 The next step is to use the CSV file that you created in Step 1 and PowerShell to bulk import the external contacts listed in the CSV file to Exchange Online. 
   
-1.  Connect PowerShell to your Exchange Online organization. For step-by-step instructions, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554). Be sure to use the user name and password for your Office 365 global administrator account when you connect to Exchange Online PowerShell. 
+1.  Connect PowerShell to your Exchange Online organization. For step-by-step instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Be sure to use the user name and password for your global administrator account when you connect to Exchange Online PowerShell. 
     
 2. After you connect PowerShell to Exchange Online, go to the desktop folder where you saved the CSV file in Step 1; for example `C:\Users\Administrator\desktop`.
     
@@ -76,10 +85,10 @@ The next step is to use the CSV file that you created in Step 1 and PowerShell t
 
     It might take a while to create the new contacts, depending on how many you're importing. When the command is finished running, PowerShell displays a list of the new contacts that were created. 
     
-4. To view the new external contacts, go to the Exchange admin center (EAC), and then click **Recipients** \> **Contacts**. 
+4. To view the new external contacts, go to the Exchange admin center (EAC), and then click **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2182970" target="_blank">**Contacts**</a>. 
     
     > [!TIP]
-    > For instructions for connecting to the EAC, see [Exchange admin center in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=328197). 
+    > For instructions for connecting to the EAC, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center). 
   
 5. If necessary, click **Refresh** to update the list and see the external contacts that were imported. 
     
@@ -90,21 +99,16 @@ The next step is to use the CSV file that you created in Step 1 and PowerShell t
 
 ## Step 3: Add information to the properties of the external contacts
 
-After you run the command in Step 2, the external contacts are created, but they don't contain any of the contact or organization information, which is the information from the most of the cells in the CSV file. This is because when you create new external contacts, only the required properties are populated. Don't worry if you don't have all the information populated in the CSV file. If it's not there, it won't be added.
+After you run the command in Step 2, the external contacts are created, but they don't contain any of the contact or organization information, which is the information from most of the cells in the CSV file. This is because when you create new external contacts, only the required properties are populated. Don't worry if you don't have all the information populated in the CSV file. If it's not there, it won't be added.
   
-1.  Connect PowerShell to your Exchange Online organization. For step-by-step instructions, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
+1.  Connect PowerShell to your Exchange Online organization. For step-by-step instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     
-2. Go to the desktop folder where you saved the CSV file in Step 1; for example `C:\Users\Administrator\desktop`.
+2. Go to the desktop folder where you saved the CSV file in Step 1; for example, `C:\Users\Administrator\desktop`.
     
-3. Run the following two commands to add the other properties from the CSV file to the external contacts that you created in Step 2.
+3. Run the following command to add the other properties from the CSV file to the external contacts that you created in Step 2.
     
     ```powershell
-    $Contacts = Import-CSV .\ExternalContacts.csv
-  
-    ```
-
-    ```powershell
-    $contacts | ForEach {Set-Contact $_.Name -StreetAddress $_.StreetAddress -City $_.City -StateorProvince $_.StateorProvince -PostalCode $_.PostalCode -Phone $_.Phone -MobilePhone $_.MobilePhone -Pager $_.Pager -HomePhone $_.HomePhone -Company $_.Company -Title $_.Title -OtherTelephone $_.OtherTelephone -Department $_.Department -Fax $_.Fax -Initials $_.Initials -Notes  $_.Notes -Office $_.Office -Manager $_.Manager}
+     Import-Csv .\ExternalContacts.csv|%{Set-Contact -Identity $_.Name -StreetAddress $_.StreetAddress -City $_.City -StateorProvince $_.StateorProvince -PostalCode $_.PostalCode -Phone $_.Phone -MobilePhone $_.MobilePhone -Pager $_.Pager -HomePhone $_.HomePhone -Company $_.Company -Title $_.Title -OtherTelephone $_.OtherTelephone -Department $_.Department -Fax $_.Fax -Initials $_.Initials -Notes  $_.Notes -Office $_.Office -Manager $_.Manager}
     ```
 
     > [!NOTE]
@@ -114,9 +118,9 @@ After you run the command in Step 2, the external contacts are created, but they
     
 4. To verify that the properties were added to the contacts: 
     
-1. In the EAC, go to **Recipients** \> **Contacts**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients** \> **Contacts**.
     
-2. Click a contact and then click **Edit** ![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) to display the contact's properties. 
+2. Click a contact and then click **Edit** ![Edit icon.](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) to display the contact's properties. 
     
 That's it! Users can see the contacts and the additional information in the address book Outlook and Outlook on the web.
   
@@ -131,7 +135,7 @@ You can repeat Steps 1 through Step 3 to add new external contacts in Exchange O
 
 Some companies may use external contacts only so they can be added as members of distribution groups. In this scenario, they may want to hide external contacts from the shared address book. Here's how:
   
-1.  Connect PowerShell to your Exchange Online organization. For step-by-step instructions, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
+1.  Connect PowerShell to your Exchange Online organization. For step-by-step instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     
 2. To hide a single external contact, run the following command.
     

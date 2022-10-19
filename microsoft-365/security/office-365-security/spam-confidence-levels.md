@@ -1,37 +1,51 @@
 ---
-title: "Spam confidence levels"
-ms.author: tracyp
-author: MSFTTracyP
+title: Spam confidence level
+f1.keywords: 
+  - NOCSH
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/02/2017
+ms.date: 
 audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-localization_priority: Normal
-search.appverid:
-- MET150
+ms.topic: conceptual
+
+ms.localizationpriority: medium
+search.appverid: 
+  - MET150
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
-ms.collection:
-- M365-security-compliance
-description: "When an email message goes through spam filtering it is assigned a spam score. That score is mapped to an individual Spam Confidence Level (SCL) rating and stamped in an X-header. The service takes actions upon the messages depending upon the spam confidence interpretation of the SCL rating. The following table shows how the different SCL ratings are interpreted by the filters and the default action that is taken on inbound messages for each rating."
+ms.collection: 
+  - m365-security
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn about the spam confidence level (SCL) that applied to messages in Exchange Online Protection (EOP).
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
-# Spam confidence levels
+# Spam confidence level (SCL) in EOP
 
-When an email message goes through spam filtering it is assigned a spam score. That score is mapped to an individual Spam Confidence Level (SCL) rating and stamped in an X-header. The service takes actions upon the messages depending upon the spam confidence interpretation of the SCL rating. The following table shows how the different SCL ratings are interpreted by the filters and the default action that is taken on inbound messages for each rating.
-  
-|**SCL Rating**|**Spam Confidence Interpretation**|**Default Action**|
-|:-----|:-----|:-----|
-|-1|Non-spam coming from a safe sender, safe recipient, or safe listed IP address (trusted partner).|Deliver the message to the recipients' inbox.|
-|0, 1|Non-spam because the message was scanned and determined to be clean.|Deliver the message to the recipients' inbox.|
-|5, 6|Spam|Deliver the message to the recipients' Junk Email folder.|
-|7, 8, 9|High confidence spam|Deliver the message to the recipients' Junk Email folder.|
-   
-> [!TIP]
-> SCL ratings of 2, 3, 4, 7, and 8 are not set by the service. An SCL rating of 5 or 6 is considered suspected spam, which is less certain to be spam than an SCL rating of 9, which is considered certain spam. Different actions for spam and high confidence spam can be configured via your content filter policies in the Exchange admin center. For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md). You can also set the SCL rating for messages that match specific conditions by using mail flow rules (also known as transport rules), as described in [Use mail flow rules to set the spam confidence level (SCL) in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md). If you use a mail flow rule to set SCL of 7, 8, or 9 the message will be treated as high confidence spam. 
-  
-||
-|:-----|
-|![The short icon for LinkedIn Learning](../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Office 365?**         Discover free video courses for **Office 365 admins and IT pros**, brought to you by LinkedIn Learning.|
-   
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, inbound messages go through spam filtering in EOP and are assigned a spam score. That score is mapped to an individual spam confidence level (SCL) that's added to the message in an X-header. A higher SCL indicates a message is more likely to be spam. EOP takes action on the message based on the SCL.
+
+What the SCL means and the default actions that are taken on messages are described in the following table. For more information about actions you can take on messages based on the spam filtering verdict, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+
+|SCL|Definition|Default action|
+|:---:|---|---|
+|-1|The message skipped spam filtering. For example, the message is from a safe sender, was sent to a safe recipient, or is from an email source server on the IP Allow List. For more information, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md).|Deliver the message to the recipients' inbox.|
+|0, 1|Spam filtering determined the message was not spam.|Deliver the message to the recipients' inbox.|
+|5, 6|Spam filtering marked the message as **Spam**|Deliver the message to the recipients' Junk Email folder.|
+|8, 9|Spam filtering marked the message as **High confidence spam**|Deliver the message to the recipients' Junk Email folder.|
+
+You'll notice that SCL 2, 3, 4, and 7 aren't used by spam filtering.
+
+You can use mail flow rules (also known as transport rules) to stamp the SCL on messages. If you use a mail flow rule to set the SCL, the values 5 or 6 trigger the spam filtering action for **Spam**, and the values 7, 8, or 9 trigger the spam filtering action for **High confidence spam**. For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+
+Similar to the SCL, the bulk complaint level (BCL) identifies bad bulk email (also known as _gray mail_). A higher BCL indicates a bulk mail message is more likely to generate complaints (and is therefore more likely to be spam). You configure the BCL threshold in anti-spam policies. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md), [Bulk complaint level (BCL) in EOP)](bulk-complaint-level-values.md), and [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+
+****
+
+![The short icon for LinkedIn Learning.](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Discover free video courses for **Microsoft 365 admins and IT pros**, brought to you by LinkedIn Learning.

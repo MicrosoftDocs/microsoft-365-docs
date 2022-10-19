@@ -1,87 +1,140 @@
 ---
-title: "Removing a user from the Restricted Users portal after sending spam email"
-ms.author: tracyp
-author: MSFTTracyP
+title: Remove blocked users from the Restricted users portal
+f1.keywords: 
+  - NOCSH
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 07/10/2019
+ms.date: 
 audience: ITPro
-ms.topic: article
-f1_keywords:
-- 'ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers'
-ms.service: O365-seccomp
-localization_priority: Priority
-search.appverid:
-- MET150
+ms.topic: how-to
+f1_keywords: 
+  - 'ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers'
+ms.localizationpriority: high
+search.appverid: 
+  - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
-ms.collection:
-- M365-security-compliance
-description: "If a user continuously sends emails from Office 365 that are classified as spam, they will be restricted from sending any more messages."
+ms.collection: 
+  - m365-security
+description: Admins can learn how to remove users from the Restricted users page in the Microsoft 365 Defender portal. Users are added to the Restricted users portal for sending outbound spam, typically as a result of account compromise.
+ms.custom: 
+- seo-marvel-apr2020
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
-# Removing a user from the Restricted Users portal after sending spam email
+# Remove blocked users from the Restricted users portal in Microsoft 365
 
-If a user continuously sends emails that are classified as spam from Office 365, they will be restricted from sending email, but will still be able to receive it. The user will be listed in the service as a bad outbound sender and will receive a Non-Delivery Report (NDR) that states:
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-> "Your message couldn't be delivered because you weren't recognized as a valid sender. The most common reason for this is that 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+If a user exceeds one of the outbound sending limits as specified in [the service limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) or in [outbound spam policies](configure-the-outbound-spam-policy.md), the user is restricted from sending email, but they can still receive email.
+
+The user is added to the **Restricted users** page in the Microsoft 365 Defender portal. When they try to send email, the message is returned in a non-delivery report (also known as an NDR or bounce message) with the error code [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) and the following text:
+
+> "Your message couldn't be delivered because you weren't recognized as a valid sender. The most common reason for this is that
 > your email address is suspected of sending spam and it's no longer allowed to send email.  Contact  your email admin for
 > assistance. Remote Server returned '550 5.1.8 Access denied, bad outbound sender."
 
+Admins can remove users from the **Restricted users** page in the Microsoft 365 Defender or in Exchange Online PowerShell.
+
+## Learn more on Restricted entities
+
+A restricted entity is an entity that has been blocked from sending email because either it has been potentially compromised, or it has exceeded sending limit.
+
+There are 2 types of restricted entities: 
+
+- **Restricted user**: Learn about why a user can be restricted and how to handle restricted users (this article).  
+
+- **Restricted connector**: For more information about why a connector can be restricted and how to handle restricted connectors, see [Remove blocked connectors from the Restricted entities portal](remove-blocked-connectors.md). 
+
 ## What do you need to know before you begin?
-<a name="sectionSection0"> </a>
 
-Estimated time to complete: 5 minutes
-  
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam entry in the [Feature Permissions in Exchange Online](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) topic.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Restricted users** page, use <https://security.microsoft.com/restrictedusers>.
 
-The following procedure can also be performed via remote PowerShell. Use the Get-BlockedSenderAddress cmdlet to get the list of restricted users and Remove-BlockedSenderAddress to remove the restriction. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-## Remove restrictions for a blocked Office 365 email account
+- You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
+  - To remove users from the Restricted users portal, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
+  - For read-only access to the Restricted users portal, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
-You complete this task in the Security & Compliance Center (SCC). [Go to the Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md) for more details about SCC. You need to be in the **Organization Management** or the **Security Administrator** role group in order to perform these functions. [Go to Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) for more details about SCC role groups.
+  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-1. Using a work or school account that has Office 365 global administrator privileges, sign into the Office 365 Security and Compliance Center and in the list on the left, expand **Threat Management**, choose **Review**, and then choose **Restricted Users**.
-    
-    > [!TIP]
-    > To go directly to the **Restricted Users** page (formerly known as the Action Center) in the Security &amp; Compliance Center, use this URL: > [https://protection.office.com/#/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
+  > [!NOTE]
+  >
+  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+  >
+  > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
-2. This page will contain the list of users that have been blocked from sending email.  Find the user you wish to remove restrictions from, and select **Unblock**.
+- A sender exceeding the outbound email limits is an indicator of a compromised account. Before you remove the user from the Restricted users portal, be sure to follow the required steps to regain control of their account. For more information, see [Responding to a compromised email account in Office 365](responding-to-a-compromised-email-account.md).
 
-3. A fly-out will go into the details about the account whose sending is restricted. You should go through the recommendations to ensure you're taking the proper actions in case the account is actually compromised. Click **Next** when done.
+## Use the Microsoft 365 Defender portal to remove a user from the Restricted users list
 
-4. The next screen has recommendations to help prevent future compromise. Enabling multi-factor authentication (MFA) and changing the passwords are a good defense. Click **Unblock user** when done.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Restricted users**. To go directly to the **Restricted users** page, use <https://security.microsoft.com/restrictedusers>.
 
-5. Click **Yes** to confirm the change.
+2. On the **Restricted users** page, find and select the user that you want to unblock by clicking on the user.
 
-    > [!NOTE]
-    > It may take 30 minutes or more before restrictions are removed. 
+3. Click the **Unblock** action that appears.
 
-## Making sure admins are alerted when this happens
+4. In the **Unblock user** flyout that appears, read the details about the restricted account. You should go through the recommendations to ensure you're taking the proper actions in case the account is compromised.
 
-A "User restricted from sending email" alert is available as a policy under the Office 365 Security & Compliance Alert policies page. This was formerly the outbound spam policy but is now native to the Office 365 alerting platform. Go to [Alert policies in the Security & Compliance Center](../../compliance/alert-policies.md) for more information on alerts.
+   When you're finished, click **Next**.
+
+5. The next screen has recommendations to help prevent future compromise. Enabling multi-factor authentication (MFA) and resetting the password are a good defense.
+
+   When you're finished, click **Submit**.
+
+6. Click **Yes** to confirm the change.
+
+   > [!NOTE]
+   > It might take up to 1 hour for all restrictions to be removed from the user.
+
+## Verify the alert settings for restricted users
+
+The default alert policy named **User restricted from sending email** will automatically notify admins when users are blocked from sending outbound mail. You can verify these settings and add additional users to notify. For more information about alert policies, see [Alert policies in Microsoft 365](../../compliance/alert-policies.md).
 
 > [!IMPORTANT]
-> For alerts to work, audit log search must to be turned on. See how to [Turn Office 365 audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md) for more information.
+> For alerts to work, audit log search must to be turned on. For more information, see [Turn the audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
-The policy for this alert is a default one and comes with every Office 365 tenant and does not need to be set up. It is considered a High severity alert and will email the configured TenantAdmins group when the alert is fired whenever a user has been restricted from sending mail. Admins can update the group notified when this alert happens by going to the alert under the SCC portal > Alerts > Alert policies > Users restricted from sending email.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Alert policy**. To go directly to the **Alert policy** page, use <https://security.microsoft.com/alertpolicies>.
 
-You will be able to Edit the alert to:
-- Turn email notifications On/Off
-- Email the required recipients
-- Limit the notifications you get per day
+2. On the **Alert policy** page, find and select the alert named **User restricted from sending email**. You can sort the policies by name, or use the **Search** box to find the policy.
 
-## Checking for and removing restrictions using PowerShell
-The PowerShell commands for Restricted Users are:
-- `Get-BlockedSenderAddress`: Run to retreive the list of users that are restricted from sending email
-- `Remove-BlockedSenderAddress`: Run to remove user(s) from being restricted
+3. In the **User restricted from sending email** flyout that appears, verify or configure the following settings:
+   - **Status**: Verify the alert is turned on ![Toggle on.](../../media/scc-toggle-on.png).
+   - **Email recipients**: Click **Edit** and verify or configure the following settings in the **Edit recipients** flyout that appears:
+     - **Send email notifications**: Verify this is selected (**On**).
+     - **Email recipients**: The default value is **TenantAdmins** (meaning, **Global admin** members). To add more recipients, click in a blank area of the box. A list of recipients will appear, and you can start typing a name to filter and select a recipient. You can remove an existing recipient from the box by clicking ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to their name.
+     - **Daily notification limit**: The default value is **No limit** but you can select a limit for the maximum number of notifications per day.
 
-## For more information
+     When you're finished, click **Save**.
 
-[Responding to a compromised email account](../../compliance/responding-to-a-compromised-email-account.md)
+4. Back on the **User restricted from sending email** flyout, click **Close**.
 
-[Understanding the User restricted from sending email alert](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
+## Use Exchange Online PowerShell to view and remove users from the Restricted users list
 
-[High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md)
+To view this list of users that are restricted from sending email, run the following command:
 
-[Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
+```powershell
+Get-BlockedSenderAddress
+```
 
-[Alert policies in the Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
+To view details about a specific user, replace \<emailaddress\> with their email address and run the following command:
+
+```powershell
+Get-BlockedSenderAddress -SenderAddress <emailaddress>
+```
+
+For detailed syntax and parameter information, see [Get-BlockedSenderAddress](/powershell/module/exchange/get-blockedsenderaddress).
+
+To remove a user from the Restricted users list, replace \<emailaddress\> with their email address and run the following command:
+
+```powershell
+Remove-BlockedSenderAddress -SenderAddress <emailaddress>
+```
+
+For detailed syntax and parameter information, see [Remove-BlockedSenderAddress](/powershell/module/exchange/remove-blockedsenderaddress).

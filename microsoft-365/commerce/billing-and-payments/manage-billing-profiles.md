@@ -1,71 +1,77 @@
 ---
-title: Manage billing profiles
-ms.author: cmcatee
+title: Understand billing profiles
 author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: cmcatee
+manager: scotv
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - 'MACBillingBillsPaymentsBillingProfiles'
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection:
-- commerce
-ms.custom:
-search.appverid:
-- MET150
+- scotvorg
+- M365-subscription-management
+- Adm_O365
+ms.custom: 
+- commerce_billing
+- AdminSurgePortfolio
+- AdminTemplateSet
+search.appverid: MET150
 description: "Learn how billing profiles support invoices."
-keywords: billing profile, invoices, charges, managed charges
+ms.date: 04/02/2021 
 ---
 
-# Manage billing profiles
-For commercial customers who buy products and services from Microsoft, billing profiles let you customize what items are included on your invoice, and how you pay your invoices.
+# Understand billing profiles
 
-Billing profiles include the following information:
+A billing profile contains a payment method, Bill-to information, and other invoice settings, such as purchase order number and email invoice preference. You use a billing profile to pay for the products that you buy from Microsoft. Billing profiles are automatically created, and each are invoiced separately. 
 
-- **Billing account** &mdash; Name of the billing account the profile is related to
-- **Payment methods** &mdash; Credit or debit cards, bank accounts, check, or wire transfer
-- **Contact information** &mdash; Billing address and a contact name
-- **Invoice settings** &mdash; Currency based on the country of the billing account, an optional PO number, and the option to receive invoices as email attachments
-- **Permissions** &mdash; Permissions that allow you to change the billing profile, pay bills, or use the payment method on the billing profile to make purchases
+> [!NOTE]
+>
+> Not all accounts have a billing profile. If you're not sure if you have a one, you can [view a list of your billing profiles](manage-billing-profiles.md#view-my-billing-profiles).
 
-Use billing profiles to control your purchases and customize your invoice. A monthly invoice is generated for the products bought with the
-billing profile. You can customize the invoice such as update the purchase order number and email invoice preference.
+## What are billing profile roles?
 
-A billing profile is automatically created for your billing account during your first purchase. You can create billing profiles on the
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> page to set up more invoices. For example, you can use different billing profiles when you make purchases for each
-department in your organization. On your next billing date, you'll receive an invoice for each billing profile.
+Roles on billing profiles have permissions to control purchases, and view and manage invoices. Assign these roles to users who track, organize, and pay invoices. For example, members of the procurement team in your organization.
 
-## Billing profile roles
+| Role                         | Description                                                                      |
+|----------------------------- |--------------------------------------------------------------------------------- |
+| Billing profile owner        | Manage everything for a billing profile                                          |
+| Billing profile contributor  | Manage everything except permissions in a billing profile                        |
+| Billing profile reader       | Read-only view of everything in a billing profile                                |
+| Invoice manager              | View and pay bills, and has a read-only view of everything in a billing profile  |
 
-Roles on billing profiles have permissions to control purchases, and view and manage invoices. Assign these roles to users who track, organize, and pay invoices, like members of the procurement team in your organization.
+## View my billing profiles
 
-| Role                        	| Description                                                                     	|
-|-----------------------------	|---------------------------------------------------------------------------------	|
-| Billing profile owner       	| Manage everything for a billing profile                                         	|
-| Billing profile contributor 	| Manage everything except permissions in a billing profile                       	|
-| Billing profile reader      	| Read-only view of everything in a billing profile                               	|
-| Invoice manager             	| View and pay bills, and has a read-only view of everything in a billing profile 	|
+> [!NOTE]
+>
+> If you follow these steps and the billing profiles list is empty, it means that you don’t have a billing profile, and can’t use this feature.
 
-## View billing profiles
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
+2. Select the **Billing profile** tab, then select a billing profile from the list.
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
+Each billing profile includes the following information:
 
-2. Choose **Billing profiles**, and then choose a billing profile from the list.
+- **Billing profile name and status** &ndash; The unique name of the billing profile, and whether the billing profile is active or disabled for purchasing.
+- **Invoice settings** &ndash; Currency based on the country of the billing account, information about invoice frequency and date, the option to receive invoices as email attachments, and an optional PO number field
+- **Payment methods** &ndash; Shows the primary and backup payment method, if any, for the profile
+- **Billing account** &ndash; Name of the billing account the profile is related to. For more information about billing accounts, see [Understand billing accounts](../manage-billing-accounts.md).
+- **Contact information** &ndash; Billing address and contact name and email address
+- **Billing profile roles** &ndash; A list of people who are assigned one of the billing profile roles to do things for that profile. For example, pay bills, add a PO number, or replace the payment method that is used to make purchases.
 
-    - On the **Overview** tab, you can edit billing profile details, and turn on or off sending an invoice by email.
+> [!NOTE]
+>
+> You can only assign billing profile roles to users in your organization.
 
-    - On the **Permissions** tab, you can assign roles to users to pay invoices.
-
-    - On the **Azure credit balance** tab, Azure customers can see transaction balance history for the Azure credits used by that billing profile.
-
-    - On the **Azure credits** tab, Azure customers can see a list of Azure credits associated with that billing profile, and their expiration dates.
-
-    > [!NOTE]
-    > If you don't have any Azure credits, you won't see the **Azure credit balance** or **Azure credits** tabs.
-
-## Need help? Contact support.
+## Need help? Contact support
 
 If you have questions or need help with your Azure charges, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">create a support request with Azure support</a>.
 
-If you have questions or need help with your billing profile in Microsoft 365 admin center, [contact support for business products](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+If you have questions or need help with your billing profile in Microsoft 365 admin center, [contact support](../../admin/get-help-support.md).
+
+## Related content
+
+[How to pay for your subscription with a billing profile](pay-for-subscription-billing-profile.md) (article)\
+[Understand billing accounts](../manage-billing-accounts.md) (article)\
+[Manage payment methods](manage-payment-methods.md) (article)

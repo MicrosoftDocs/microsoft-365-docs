@@ -1,28 +1,39 @@
 ---
-title: "Backscatter messages and EOP"
+title: Backscatter in EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-localization_priority: Normal
-search.appverid:
-- MET150
+ms.topic: conceptual
+
+ms.localizationpriority: medium
+search.appverid: 
+  - MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
-ms.collection:
-- M365-security-compliance
-description: "Backscatter messages are the automated bounce messages that are sent by mail servers, typically as a result of incoming spam. The Backscatterer DNSBL is a list of IP addresses that send backscatter messages. It isn't a spammer list, and we don't try to remove our servers from the Backscatterer DNSBL."
+ms.collection: 
+  - m365-security
+ms.custom: 
+  - seo-marvel-apr2020
+description: In this article, you'll learn about Backscatter and Microsoft Exchange Online Protection (EOP)
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
-# Backscatter messages and EOP
+# Backscatter in EOP
 
-Backscatter messages are the automated bounce messages that are sent by mail servers, typically as a result of incoming spam. Because Exchange Online Protection (EOP) is a spam filtering service, email messages sent to nonexistent recipients and to other suspicious destinations are rejected by our service. When this happens, EOP generates a non-delivery report (NDR) message and delivers it back to the "sender." Because spammers frequently use a forged or invalid "From" address in their messages, the sender address to which the NDR is sent may result in a backscatter message. When this happens, outgoing servers that are associated with the EOP network may be listed on the Backscatterer DNS Block List (DNSBL). The Backscatterer DNSBL is a list of IP addresses that send backscatter messages. It isn't a spammer list, and we don't try to remove our servers from the Backscatterer DNSBL.
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+*Backscatter* is non-delivery reports (also known as NDRs or bounce messages) that you receive for messages that you didn't send. Backscatter is caused by spammers forging (spoofing) the From address (also known as the `5322.From` or P2 address) in their messages. Spammers will often use real email addresses as the From address to lend credibility to their messages. When spam is sent to a non-existent recipient, the destination email server is essentially tricked into returning the undeliverable message in an NDR to the forged sender in the From address.
+
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP makes every effort to identify and silently drop messages from dubious sources without generating an NDR. But, based on the sheer volume email flowing through the service, there's always the possibility that EOP will unintentionally send backscatter.
+
+Backscatterer.org maintains a blocklist (also known as a DNS blocklist or DNSBL) of email servers that were responsible for sending backscatter, and EOP servers might appear on this list. But, we don't try to remove ourselves from the Backscatterer.org blocklist because (by their own admission) their list isn't a list of spammers.
 
 > [!TIP]
-> According to the instructions on the Backscatterer website, the use of reject mode for all incoming mail isn't a recommended configuration or use of that service. It should be used in safe mode instead. For more information about implementing the correct backscatter configuration, visit the [Backscatterer.org website](https://www.backscatterer.org/?target=usage).
-
-## Related topics
-
-[Advanced spam filtering  options](advanced-spam-filtering-asf-options.md)
+> The Backscatterer.org website (<http://www.backscatterer.org/?target=usage>) recommends using their service in Safe mode instead of Reject mode, because large email services almost always send some backscatter.

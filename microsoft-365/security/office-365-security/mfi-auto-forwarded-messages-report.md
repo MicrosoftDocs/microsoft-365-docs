@@ -1,34 +1,62 @@
 ---
-title: "Auto-forwarded messages report"
-ms.author: chrisda
-author: chrisda
+title: Auto-forwarded messages insight
+f1.keywords: 
+  - NOCSH
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-localization_priority: Normal
+ms.topic: conceptual
+ms.localizationpriority: medium
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
-description: "Admins can learn about the Auto-forwarded messages report in the mail flow dashboard in the Office 365 Security & Compliance Center."
+description: Admins can learn about the Auto-forwarded messages report in the Mail flow dashboard in the Security & Compliance Center.
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.collection: m365-security
+search.appverid: met150
 ---
 
-# Auto-forwarded messages report
+# Auto-forwarded messages insight in the Security & Compliance Center
 
-The **Auto-forwarded messages** report in the mail flow dashboard displays information on messages that are automatically forwarded from your Office 365 organization to recipients in external domains.
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-![The Auto-forwarded messages insight in the Office 365 Security & Compliance Center](../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-![The Auto-forwarded messages report in the mail flow dashboard in the Office 365 Security & Compliance Center](../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+The **Auto-forwarded messages** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) displays information about messages that are automatically forwarded from your organization to recipients in external domains.
+
+:::image type="content" source="../../media/mfi-auto-forwarded-messages.png" alt-text="The widget namely Auto-forwarded messages in the Security & Compliance Center" lightbox="../../media/mfi-auto-forwarded-messages.png":::
 
 ## Auto-forwarded messages details
 
-When you click the number of messages in the widget, a flyout pane appears that shows the auto-forwarded message status. You can see the details by clicking the **Forwarding Report** link.
+When you click the number of messages in the widget, a flyout pane appears that shows more information about the auto-forwarded messages:
 
-![The Details flyout for the Auto-forwarded messages report in the Office 365 Security & Compliance Center](../media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
+- **Auto-forwarded messages by forwarding methods**:
+
+  - **By mail flow rules**
+  - **By Inbox rules**
+  - **By SMTP forwarding**: This method indicates automatic forwarding that admins can configure on a mailbox as described in [Configure email forwarding for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
+  - A link to the [Forwarding report](view-mail-flow-reports.md#forwarding-report) for more details.
+
+- **Auto-forwarded messages by domains and users**:
+
+  - **Top 5 domains forwarded to**
+  - **New domains (last week)**
+  - **Top 5 forwarding users**
+  - **New users (last week)**
+  - A link to the [Forwarding modifications report](mfi-new-users-forwarding-email.md#forwarding-modifications-report) for more details.
+
+:::image type="content" source="../../media/mfi-auto-forwarded-messages-details.png" alt-text="The Auto-forwarded messages widget in the Security & Compliance Center" lightbox="../../media/mfi-auto-forwarded-messages-details.png":::
 
 ## Insights
 
-Two insights are generated based on the report data: **New forwarding users** and **New forwarding domains**. Each insight provides a summary of the number of new forwarders or domains with a link to the **New Forwarding Report** that provides more detail for the two types of data. The **New Forwarding Report** also shows a timeline view of new activity and the details table identifies who started forwarding and to which domains.
+Two insights are generated based on the report data:
+
+- [New users forwarding email](mfi-new-users-forwarding-email.md)
+- [New domains being forwarded email](mfi-new-domains-being-forwarded-email.md)
 
 ## See also
 
-For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

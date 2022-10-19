@@ -1,0 +1,95 @@
+- name: Microsoft Defender for Business
+  href: index.yml
+  items: 
+    - name: Overview
+      items:
+      - name: What is Microsoft Defender for Business?
+        href: mdb-overview.md
+      - name: Simplified configuration
+        href: mdb-simplified-configuration.md
+      - name: Trial user guide - Defender for Business
+        href: trial-playbook-defender-business.md
+      - name: Compare plans for small and medium-sized businesses
+        href: compare-mdb-m365-plans.md
+      - name: Preview features
+        href: mdb-preview.md
+      - name: Resources for partners
+        href: mdb-partners.md
+      - name: Integration with Microsoft 365 Lighthouse
+        href: mdb-lighthouse-integration.md
+    - name: Get started
+      items:
+      - name: Get Defender for Business
+        href: get-defender-business.md
+      - name: Add users and assign licenses
+        href: mdb-add-users.md
+      - name: Visit the Microsoft 365 Defender portal
+        href: mdb-get-started.md
+      - name: Use the setup wizard
+        href: mdb-use-wizard.md
+      - name: Try tutorials and simulations
+        href: mdb-tutorials.md
+    - name: Set up and configure Defender for Business
+      items:
+      - name: Setup overview
+        href: mdb-setup-configuration.md
+      - name: Step 1 - Review the requirements
+        href: mdb-requirements.md
+      - name: Step 2 - Assign roles and permissions
+        href: mdb-roles-permissions.md
+      - name: Step 3 - Set up email notifications
+        href: mdb-email-notifications.md
+      - name: Step 4 - Onboard devices
+        href: mdb-onboard-devices.md
+      - name: Step 5 - Configure your security policies
+        href: mdb-configure-security-settings.md
+    - name: View and respond to detected threats
+      items: 
+      - name: View your vulnerability management dashboard
+        href: mdb-view-tvm-dashboard.md
+      - name: View and manage incidents
+        href: mdb-view-manage-incidents.md
+      - name: Respond to and mitigate threats
+        href: mdb-respond-mitigate-threats.md
+      - name: Review remediation actions
+        href: mdb-review-remediation-actions.md
+      - name: View and use reports
+        href: mdb-reports.md
+    - name: View or edit security policies
+      items:
+      - name: View, edit, and create policies
+        href: mdb-view-edit-create-policies.md
+      - name: Policy order
+        href: mdb-policy-order.md
+      - name: Next-generation protection settings
+        href: mdb-next-gen-configuration-settings.md
+      - name: Firewall settings
+        href: mdb-firewall.md
+      - name: Manage rules for firewall policies
+        href: mdb-custom-rules-firewall.md
+    - name: Monitor or manage devices
+      items: 
+      - name: View and manage devices
+        href: mdb-manage-devices.md
+      - name: Create device groups
+        href: mdb-create-edit-device-groups.md
+      - name: Offboard devices
+        href: mdb-offboard-devices.md
+    - name: Reference information
+      items: 
+      - name: How to get Microsoft Defender for Business servers (preview)
+        href: get-defender-business-servers.md
+      - name: Glossary of security terms
+        href: ../../business-premium/m365bp-glossary.yml?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
+      - name: How to get help or contact support
+        href: mdb-get-help.md
+      - name: Frequently asked questions
+        href: mdb-faq.yml
+      - name: Troubleshooting
+        href: mdb-troubleshooting.yml
+      - name: API reference information
+        href: ../defender-endpoint/exposed-apis-create-app-partners.md?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
+      - name: Microsoft 365 Business Premium
+        href: /microsoft-365/business-premium/
+      - name: Microsoft 365 Lighthouse
+        href: /microsoft-365/lighthouse/m365-lighthouse-overview

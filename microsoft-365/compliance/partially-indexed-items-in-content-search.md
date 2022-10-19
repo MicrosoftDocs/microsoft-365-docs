@@ -1,112 +1,139 @@
 ---
-title: "Partially indexed items in Content Search in Office 365"
-ms.author: markjjo
-author: markjjo
+title: "Partially indexed items in Content Search"
+description: "Learn about unindexed items in Exchange and SharePoint that you can include in an eDiscovery search that you run in the Microsoft Purview compliance portal."
+f1.keywords:
+- NOCSH
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 05/13/2022
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.UnindexedItemsLearnMore'
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.localizationpriority: medium
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - SPO160
 - MOE150
 - MET150
-ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
-description: "Learn about unindexed items in Exchange and SharePoint that you can include in a Content Search run via the Security & Compliance Center.
-"
 ---
 
-# Partially indexed items in Content Search in Office 365
+# Partially indexed items in eDiscovery
 
-A Content Search that you run from the Security & Compliance Center in Office 365 automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. In Exchange, a partially indexed item typically contains a file—of a file type that can't be indexed—that is attached to an email message. Here are some other reasons why items can't be indexed for search and are returned as partially indexed items when you run a search: 
+An Microsoft Purview eDiscovery search that you run from the Microsoft Purview compliance portal automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. In Exchange, a partially indexed item typically contains a file (of a file type that can't be indexed) that is attached to an email message. Here are some other reasons why items can't be indexed for search and are returned as partially indexed items when you run an eDiscovery search:
   
 - The file type is unrecognized or unsupported for indexing.
-    
--  Messages have an attached file without a valid handler, such as image files; this is the most common cause of partially indexed email items. 
-    
+
+- Messages have an attached file that can't be opened; this is the most common cause of partially indexed email items.
+
 - The file type is supported for indexing but an indexing error occurred for a specific file.
-    
+
 - Too many files attached to an email message.
-    
+
 - A file attached to an email message is too large.
-    
+
 - A file is encrypted with non-Microsoft technologies.
-    
+
 - A file is password-protected.
-    
+
 > [!NOTE]
-> Most Office 365 organizations have less than 1% of content by volume and less than 12% by size that is partially indexed. The reason for the difference between volume and size is that larger files have a higher probability of containing content that can't be completely indexed. 
+> Most organizations have less than 1% of content by volume and less than 12% by size that is partially indexed. The reason for the difference between volume and size is that larger files have a higher probability of containing content that can't be completely indexed.
   
-For legal investigations, your organization may be required to review partially indexed items. You can also specify whether to include partially indexed items when you export search results to a local computer or when you prepare the results for analysis with Office 365 Advanced eDiscovery. For more information, see [Investigating partially indexed items in Office 365 eDiscovery](investigating-partially-indexed-items-in-ediscovery.md).
+For legal investigations, your organization may be required to review partially indexed items. You can also specify whether to include partially indexed items when you export search results to a local computer or when you prepare the results for analysis with eDiscovery (Premium). For more information, see [Investigating partially indexed items in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md).
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## File types not indexed for search
 
-Certain types of files, such as Bitmap or MP3 files, don't contain content that can be indexed. As a result, the search indexing servers in Exchange and SharePoint don't perform full-text indexing on these types of files. These types of files are considered to be unsupported file types. There are also file types for which full-text indexing has been disabled, either by default or by an administrator. Unsupported and disabled file types are labeled as unindexed items in Content Searches. As previously stated, partially indexed items can be included in the set of search results when you run a search, export the search results to a local computer, or prepare search results for Advanced eDiscovery. 
+Certain types of files, such as Bitmap or MP3 files, don't contain content that can be indexed. As a result, the search indexing servers in Exchange and SharePoint don't perform full-text indexing on these types of files. These types of files are considered to be unsupported file types. There are also file types for which full-text indexing has been disabled, either by default or by an administrator. Unsupported and disabled file types are labeled as unindexed items in Content Searches. As previously stated, partially indexed items can be included in the set of search results when you run a search, export the search results to a local computer, or prepare search results for eDiscovery (Premium).
   
 For a list of supported and disabled file formats, see the following topics:
   
-- **Exchange** - [File formats indexed by Exchange Search](https://go.microsoft.com/fwlink/p/?LinkID=386618)
-    
-- **Exchange** - [Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
-    
-- **SharePoint** - [Default crawled file name extensions and parsed file types in SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)
-    
+- **Exchange** - [File formats indexed by Exchange Search](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
+- **Exchange** - [Get-SearchDocumentFormat](/powershell/module/exchange/get-searchdocumentformat)
+
+- **SharePoint** - [Default crawled file name extensions and parsed file types in SharePoint](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
   
 ## Messages and documents with partially indexed file types can be returned in search results
 
-Not every email message with an partially indexed file attachment or every partially indexed SharePoint document is automatically returned as an partially indexed item. That's because other message or document properties, such as the **Subject** property in email messages and the **Title** or **Author** properties for documents are indexed and available to be searched. For example, a keyword search for "financial" will return items with an partially indexed file attachment if that keyword appears in the subject of an email message or in the file name or title of a document. However, if the keyword appears only in the body of the file, the message or document would be returned as a partially indexed item. 
+Not every email message with a partially indexed file attachment or every partially indexed SharePoint document is automatically returned as a partially indexed item. That's because other message or document properties, such as the **Subject** property in email messages and the **Title** or **Author** properties for documents are indexed and available to be searched. For example, a keyword search for "financial" will return items with a partially indexed file attachment if that keyword appears in the subject of an email message or in the file name or title of a document. However, if the keyword appears only in the body of the file, the message or document would be returned as a partially indexed item.
   
-Similarly, messages with partially indexed file attachments and documents of an partially indexed file type are included in search results when other message or document properties, which are indexed and searchable, meet the search criteria. Message properties that are indexed for search include sent and received dates, sender and recipient, the file name of an attachment, and text in the message body. Document properties indexed for search include created and modified dates. So even though a message attachment may be an partially indexed item, the message will be included in the regular search results if the value of other message or document properties matches the search criteria.
+Similarly, messages with partially indexed file attachments and documents of a partially indexed file type are included in search results when other message or document properties, which are indexed and searchable, match the search criteria. Message properties that are indexed for search include sent and received dates, sender and recipient, the file name of an attachment, and text in the message body. Document properties indexed for search include created and modified dates. So even though a message attachment may be a partially indexed item, the message will be included in the regular search results if the value of other message or document properties matches the search criteria.
   
-For a list of email and document properties that you can search for by using the Search feature in the Security & Compliance Center, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+For a list of email and document properties that you can search for by using eDiscovery tools in the compliance portal, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md).
   
+> [!NOTE]
+> If a mailbox item is moved from a folder that is indexed to a folder that is not indexed, a flag is set to unindex the item and the item is removed from the index and will not be searchable. Later, if that same item is moved back to a folder that is indexed, the flag is not reset. That means the item will remain unindexed, and not searchable.
+
 ## Partially indexed items included in the search results
 
-Your organization might be required to identify and perform additional analysis on partially indexed items to determine what they are, what they contain, and whether they're relevant to a specific investigation. As previously explained, the partially indexed items in the content locations that are searched are automatically included with the estimated search results. You have the option to include these partially indexed items when you export search results or prepare the search results for Advanced eDiscovery.
+Your organization might be required to identify and perform additional analysis on partially indexed items to determine what they are, what they contain, and whether they're relevant to a specific investigation. As previously explained, the partially indexed items in the content locations that are searched are automatically included with the estimated search results. You have the option to include these partially indexed items when you export search results or prepare the search results for eDiscovery (Premium).
   
 Keep the following in mind about partially indexed items:
   
-- When you run a content search, the total number and size of partially indexed Exchange items (returned by the search query) are displayed in search statistics in the details pane, and labeled as **Indexed items**. Note that statistics about partially indexed items displayed in the details pane don't include partially indexed items in SharePoint or OneDrive.
-    
+- When you run an eDiscovery search, the total number and size of partially indexed Exchange items (returned by the search query) are displayed in the search statistics on the flyout page, and labeled as **unindexed items**. Statistics about partially indexed items displayed on the flyout page don't include partially indexed items in SharePoint sites or OneDrive accounts.
+
 - If the search that you're exporting results from was a search of specific content locations or all content locations in your organization, only the unindexed items from content locations that contain items that match the search criteria will be exported. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. The reason for this is that exporting partially indexed items from lots of locations in the organization might increase the likelihood of export errors and increase the time it takes to export and download the search results.
-    
+
     To export partially indexed items from all content locations for a search, configure the search to return all items (by removing any keywords from the search query) and then export only partially indexed items when you export the search results (by clicking **Only items that have an unrecognized format, are encrypted, or weren't indexed for other reasons** under **Output options**).
-    
+
 - If you choose to include all mailbox items in the search results, or if a search query doesn't specify any keywords or only specifies a date range, partially indexed items might not be copied to the PST file that contains the partially indexed items. This is because all items, including any partially indexed items, will be automatically included in the regular search results.
-    
+
 - Partially indexed items aren't available to be previewed. You have to export the search results to view partially indexed items returned by the search.
 
-Additionally, when you export search results and include partially indexed items in the export, partially indexed items from SharePoint items are exported to a folder named **Uncrawlable**. When you export partially indexed Exchange items, they are exported differently depending on the whether or not the partially indexed items matched the search query and the configuration of the export settings. 
+   Additionally, when you export search results and include partially indexed items in the export, partially indexed items from SharePoint items are exported to a folder named **Uncrawlable**. When you export partially indexed Exchange items, they are exported differently depending on whether or not the partially indexed items matched the search query and the configuration of the export settings. 
 
-The following table shows the export behavior of indexed and partially indexed items and whether or not each is included for the different export configuration settings.
+- The following table shows the export behavior of indexed and partially indexed items and whether or not each is included for the different export configuration settings.
 
-|**Export configuration**|**Indexed items that match search query**|**Partially indexed items that match search query**|**Partially indexed items that don't match search query**|
-|:-----|:-----|:-----|:-----|
-|Export only indexed items  <br/> |Exported<br/> |Exported (included with the indexed items that are exported)<br/>  |Not exported <br/>|
-|Export only partially indexed items  <br/> |Not exported  <br/> |Exported (as partially indexed items)<br/> |Exported (as partially indexed items)|
-|Export indexed and partially indexed items  <br/> |Exported<br/> |Exported (included with the indexed items that are exported)<br/>  |Exported (as partially indexed items)<br/>|
-||||
-
-## Partially indexed items excluded from the search results
-
-If an item is partially indexed but it doesn't meet the search query criteria, it won't be included as a partially indexed item in the search results. In other words, the item is excluded from the search results. For example, let's say you run a search and don't include any keywords or properties because you want to include all content. But you include a date range condition for the query. If a partially indexed item falls outside of that date range, it won't be included as a partially indexed item. Date ranges are an effective way to exclude partially indexed items from your search results.
+  |**Export configuration**|**Indexed items that match search query**|**Partially indexed items that match search query**|**Partially indexed items that don't match search query**|
+  |:-----|:-----|:-----|:-----|
+  |Export only indexed items  <br/> |Exported<br/> |Exported (included with the indexed items that are exported)<br/>  |Not exported <br/>|
+  |Export only partially indexed items  <br/> |Not exported  <br/> |Exported (as partially indexed items)<br/> |Exported (as partially indexed items)|
+  |Export indexed and partially indexed items  <br/> |Exported<br/> |Exported (included with the indexed items that are exported)<br/>  |Exported (as partially indexed items)<br/>|
+  ||||
   
-Similarly, if you choose to include partially indexed items when you export the results of a search, partially indexed items that were excluded from the search results won't be exported.
-  
-One exception to this rule is when you create a query-based hold that's associated with an eDiscovery case. If you create a query-based hold, all partially indexed items are placed on hold. This includes partially indexed items that don't match the search query criteria and partially indexed items that might fall outside of a date range condition. For more information about creating query-based holds, see Step 4 in  [eDiscovery cases](ediscovery-cases.md#step-4-place-content-locations-on-hold).
-  
-## Indexing limits for messages in Content Search
+## Workaround for using a date range to exclude partially indexed items
 
-The following table describes the indexing limits that might result in an email message being returned as a partially indexed item in a Content Search in Office 365.
+In Content search and Microsoft Purview eDiscovery (Standard), you can't use a date range to exclude partially indexed items from being returned by a search query. In other words, partially indexed items that fall outside of a date range are still included as partially indexed items in the search statistics and when you export partially indexed items. In eDiscovery (Premium), you can exclude partially indexed items by using a date range in a search query.
+
+As a workaround for this limitation, we recommend the following procedure.
+
+1. Create and run a search using a search query that meets your requirements and returns the desired results.
+
+2. Export the results of the search from step 1, but don't include partially indexed items in the export. To do this, you would select the **All items, excluding ones that have unrecognized format, are encrypted, or weren't indexed for other reasons** export option.<sup>1</sup>
+
+   ![Export output options.](../media/ExportOutputOptions.png)
+
+3. Create and run a second search that uses the same search query (and searches the same locations) that you used in step 1. Append the following clause to the original query by using the **AND** operator:
+
+   ```text
+   <original query> AND ((IndexingErrorCode>0 OR IndexingErrorCode<0) AND sent:date1..date2)
+   ```
+
+   Adding this clause will return partially indexed items that match your original search query and that fall within a specific date range.<sup>2</sup>
+
+4. Export the results of the search from step 3, and this time include partially indexed items in the export. To do this, you would select the **All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons** export option.
+
+   > [!NOTE]
+   > <sup>1</sup> The output of step 2 results in exporting indexed items only.<br/>
+   > <sup>2</sup> The condition used in step 3 identifies only items with indexing errors that fall within the specified date range. It doesn't return any items that are fully indexed. This means the items exported in step 4 only include unindexed items that fall within the date range. The export doesn't include indexed items. As a result, the combined output of step 2 and step 4 contains all indexed and unindexed items that fall within the specified date range.
+
+Use the second search that you created in step 3 and the corresponding export to view and gain understanding about the partially indexed items that match your original search query. The export from the second search also includes all partially indexed items that were exported so that you can review them if necessary.
+
+> [!TIP]
+> In the previous procedure, you can export the actual search results or only export a report.
+
+## Indexing limits for messages
+
+The following table describes the indexing limits that might result in an email message being returned as a partially indexed item in an eDiscovery search in Microsoft 365.
   
-For a list of indexing limits for SharePoint documents, see [Search limits for SharePoint Online](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f).
+For a list of indexing limits for SharePoint documents, see [Search limits for SharePoint Online](/sharepoint/search-limits).
   
 |**Indexing limit**|**Maximum value**|**Description**|
 |:-----|:-----|:-----|
@@ -120,24 +147,24 @@ For a list of indexing limits for SharePoint documents, see [Search limits for S
 |Maximum annotation tokens  <br/> |2 million  <br/> |When an email message is indexed, each word is annotated with different processing instructions that specify how that word should be indexed. Each set of processing instructions is called an annotation token. To maintain the quality of service in Office 365, there is a limit of 2 million annotation tokens for an email message.  <br/> |
 |Maximum body size in index  <br/> |67 million characters  <br/> |The total number of characters in the body of an email message and all its attachments. When an email message is indexed, all text in the body of the message and in all attachments is concatenated into a single string. The maximum size of this string that is indexed is 67 million characters.  <br/> |
 |Maximum unique tokens in body  <br/> |1 million  <br/> |As previously explained, tokens are the result of extracting text from content, removing punctuation and spaces, and then dividing it into words (called tokens) that are stored in the index. For example, the phrase  `"cat, mouse, bird, dog, dog"` contains 5 tokens. But only 4 of these are unique tokens. There is a limit of 1 million unique tokens per email message, which helps prevent the index from getting too large with random tokens.  <br/> |
-   
+||||
 
-  
 ## More information about partially indexed items
 
 - As previously stated, because message and document properties and their metadata are indexed, a keyword search might return results if that keyword appears in the indexed metadata. However, that same keyword search might not return the same item if the keyword only appears in the content of an item with an unsupported file type. In this case, the item would be returned as a partially indexed item.
-    
-- If a partially indexed item is included in the search results because it met the search query criteria (and wasn't excluded) then it won't be included as a partially indexed item in the estimated search statistics. Also, it won't be included with partially indexed items when you export search results.
-    
-- Although a file type is supported for indexing and is indexed, there can be indexing or search errors that will cause a file to be returned as a partially indexed item. For example, searching a very large Excel file might be partially successful (because the first 4 MB are indexed), but then fails because the file size limit is exceeded. In this case, it's possible that the same file is returned with the search results and as a partially indexed item.
-    
-- Attached files encrypted with Microsoft technologies are indexed and can be searched. Files encrypted with non-Microsoft technologies are partially indexed.
-    
+
+- If a partially indexed item is included in the search results because it matched the search query criteria, then it won't be included as a partially indexed item in the estimated search statistics. Also, it won't be included with partially indexed items when you export search results.
+
+- Although a file type is supported for indexing and is indexed, there can be indexing or search errors that will cause a file to be returned as a partially indexed item. For example, searching a large Excel file might be partially successful (because the first 4 MB are indexed), but then fails because the file size limit is exceeded. In this case, it's possible that the same file is returned with the search results and as a partially indexed item.
+
+- Files that are encrypted with [Microsoft encryption technologies](encryption.md) and are attached to an email message that matches the criteria of a search can be previewed and will be decrypted when exported. At this time, files that are encrypted with Microsoft encryption technologies (and stored in SharePoint or OneDrive for Business) are partially indexed. 
+
 - Email messages encrypted with S/MIME are partially indexed. This includes encrypted messages with or without file attachments.
-    
-- Messages protected using Information Rights Management (IRM) are indexed and will be included in the search results if they match the search query.
+
+- Email messages protected using Azure Rights Management are indexed and will be included in the search results if they match the search query. Rights-protected email messages are decrypted and can be previewed and exported. This functionality requires that you are assigned the RMS Decrypt role, which is assigned by default to the eDiscover Manager role group.
+
+- If you create a query-based hold that's associated with an eDiscovery case, all partially indexed items are placed on hold. This includes partially indexed items that don't match the search query criteria for the hold. For more information about creating query-based eDiscovery holds, see [Create an eDiscovery hold](create-ediscovery-holds.md).
 
 ## See also
 
-[Investigating partially indexed items in Office 365 eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
-
+[Investigating partially indexed items in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)

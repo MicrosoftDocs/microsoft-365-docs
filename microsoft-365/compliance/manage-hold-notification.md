@@ -1,74 +1,88 @@
 ---
 title: "Manage hold notifications"
-ms.author: markjjo
-author: markjjo
+description: "Use the communications workflow in eDiscovery (Premium) to track the status of your legal hold notifications and if necessary update and resend them."
+f1.keywords:
+- NOCSH
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance 
+ms.localizationpriority: medium
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: ""
 ---
 
 # Manage hold notifications
 
-After you have initiated your legal hold notification workflow, you can leverage  Advanced eDiscovery to track the status of your communications. The Communications Tab showcases all of the hold notifications within your Advanced eDiscovery case. Here, you can see details, such as the number of custodians that have been assigned or have acknowledged the notice.
+After you have initiated your legal hold notification workflow, you can use the communications workflow in Microsoft Purview eDiscovery (Premium) to track the status of your communications. The Communications tab contains a list of all notifications within your eDiscovery (Premium) case. You can see details such as the number of custodians that have been assigned or have acknowledged the notice.
 
-## View communication details
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-### Track acknowledgements
+## Monitor acknowledgments
 
-Once you select a communication from the **Communications**, tab you can view a list of custodians that have acknowledged a hold notice. 
+After you select a communication from the **Communications** tab, you can view a list of custodians that have acknowledged a hold notice. 
 
-### Preview acknowledgements
+1. In the compliance center, go to **eDiscovery > eDiscovery (Premium)**.
 
-In the communication details flyout, you can preview the details regarding your legal hold communication. In the **Preview** panel, you will be able to see a quick snapshot of your legal hold notice as well as the settings and content for your workflow notifications. The Preview panel will also surface details around which custodians have already acknowledged the notice.
+2. Select a case and then click the **Communications** tab.
 
-## Taking action on existing communications
+3. Select a communication to display the **Custodian communication** flyout page.
 
-### Re-send a hold notice
+A list of custodians associated with the selected communication is displayed on the communication flyout page. This page also displays insights and about how many acknowledgments were received and how many are outstanding. The page also shows which custodians have sent an acknowledgment that they received the hold notification.
 
-Occasionally, custodians lose track of their emails in their day-to-day work. Or, for a long-running litigation, a custodian may reach out and ask you to re-send a notice. As you manage your workflow around legal hold notices, you may need to re-send a notice to bring it back to the "top of a user's mailbox".
+## Re-send a hold notice
 
-You can re-send a hold notice to your custodian by:
-1. Navigate to a case within **Security and Compliance > Advanced eDiscovery**.
-2. Once you have selected a case, navigate to the **Communications** tab.
-3. To re-send a legal hold notice to a custodian, select the communication and click the **Re-Send** option.
-4. If a custodian has not already acknowledged their hold notification, then the reminder and escalation flow will be restarted. If a custodian has already acknowledged the hold notice, then the custodian will just receive a copy of the initial hold notice.
+Occasionally, custodians lose track of email messages in their day-to-day work. Or for a long-running litigation case, a custodian may contact you or others and request that you re-send a notice. As you manage the communications workflow for legal hold notices, you may need to re-send a notice to bring it back to the "top of a user's mailbox".
+
+To re-send a hold notice to a custodian:
+
+1. In eDiscovery (Premium), select a case and then click the **Communications** tab.
+
+2. Select a communication to display the **Custodian communication** flyout page.
+
+3. Click **More > Re-send hold notice**.
+
+4. On the **Re-send hold notice** flyout page, select the custodians that you what to re-send the notice and type an optional reason.
+
+5. Click **Re-send** to send the notice to the selected custodians.
+
+If a custodian hasn't acknowledged the hold notification, the reminder and escalation workflow is restarted. If a custodian has acknowledged the hold notice, the custodian will receive a copy of the original hold notice.
 
 > [!NOTE]
-> You can only re-send a legal hold notification to custodians that are assigned to the communication. 
+> You can only resend a legal hold notification to custodians that are assigned to the communication. 
 
-### Edit a communication
-
-#### Update preservation requirements
+## Update preservation requirements
   
 As the case progresses, custodians may be required to preserve additional or less data than was previously instructed. In eDiscovery terms, you need to re-issue the hold notice with updated content.
 
 To update the contents of the initial hold notice:
 
-1. Navigate to a case within **Security and Compliance > Advanced eDiscovery**.
-2. Once you have selected a case, navigate to the **Communications** tab.
-3. Select the hold notice that you would like to update and click **Edit**.
-4. In the Edit workflow, select **Define Portal Content** and update the contents of your notice. 
-5. Click **Save**. Once saved, the re-issuance notice will be sent to all the custodians that are presently assigned to the legal hold notification. In addition, if the reminder/escalation notices are enabled, then these workflows will restart as well. 
+1. In eDiscovery (Premium), select a case and then click the **Communications** tab.
 
+2. Select the hold notice that you want to update and click **Edit** on the **Custodian communication** flyout page.
 
-#### Update legal hold notifications and settings
+3. In the **Edit Communication** wizard, click **Define Portal Content** in the left pane of the wizard, and update the contents of the notice.
 
-When you update the content or settings of the Issuance, Release, Reissue, Reminder, or Escalation notice, then these changes will apply to all future communications generated by the workflow.
+4. Click **Save**.
 
-## Related information 
+The re-issuance notice will be sent to all the custodians assigned to the legal hold notification. In addition, if the Reminder or Escalation notice is enabled, then the workflows for those types of notices will restart.
+
+## Update legal hold notifications and settings
+
+When you update the content or settings of the Issuance, Release, Reissue, Reminder, or Escalation notice, these changes will apply to all future communications generated by the workflow.
+
+## More information
+
+- [Add custodians to a case](add-custodians-to-case.md)
 
 - [Create a legal hold notice](create-hold-notification.md)
-    
+
 - [Acknowledge a hold notification](acknowledge-hold-notification.md)
-    
-- [Add custodians to a case](add-custodians-to-case.md)

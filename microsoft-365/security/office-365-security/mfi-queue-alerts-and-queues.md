@@ -1,70 +1,98 @@
 ---
-title: "Queue alerts and Queues"
-ms.author: chrisda
-author: chrisda
+title: Queues insight in the Mail flow dashboard
+f1.keywords:
+  - NOCSH
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-localization_priority: Normal
+ms.topic: conceptual
+ms.custom:
+ms.localizationpriority: medium
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: "Admins can learn about queue alerts and Queues in the mail flow dashboard in the Security & Compliance Center."
+description: Admins can learn how to use the Queues widget in the Mail flow dashboard in the Security & Compliance Center to monitor unsuccessful mail flow to their on-premises or partner organizations over outbound connectors.
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.collection: m365-security
+search.appverid: met150
 ---
 
-# Queue alerts and Queues
+# Queues insight in the Security & Compliance Center
 
-## Queue alerts
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-When messages can't be sent from your Office 365 organization to your on-premises or partner email servers using connectors, the messages are queued in Office 365. Common examples that cause this condition are:
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+When messages can't be sent from your organization to your on-premises or partner email servers using connectors, the messages are queued in Microsoft 365. Common examples that cause this condition are:
 
 - The connector is incorrectly configured.
-
 - There have been networking or firewall changes in your on-premises environment.
 
-Office 365 will continue to retry to delivery for 24 hours. After 24 hours, the messages will expire and will be returned to the senders in non-delivery reports (also known as a NDRs or bounce messages).
+Microsoft 365 will continue to retry to delivery for 24 hours. After 24 hours, the messages will expire and will be returned to the senders in non-delivery reports (also known as a NDRs or bounce messages).
 
-If the queued email volume exceeds the pre-defined threshold (the default value is 2000 messages), the alerts will be available in the mail flow dashboard at **Recent alerts**, and admins will receive an email notification (to their alternative email address). To configure the alert threshold, daily notification limit, and/or recipients of the alert, see the **Customize queue alerts** section below.
+If the queued email volume exceeds the pre-defined threshold (the default value is 200 messages), the information is available in the following locations:
 
-![Queue alerts in the Recent alerts area of the mail flow dashboard in the Security & Compliance Center](../media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
+- The **Queues** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com). For more information, see the [Queues insight in the Mail flow dashboard](#queues-insight-in-the-mail-flow-dashboard) section in this article.
+
+- An alert is displayed in **Recent alerts** the Alerts dashboard in the [Security & Compliance Center](https://protection.office.com) (**Alerts** \> **Dashboard** or <https://protection.office.com/alertsdashboard>).
+
+  :::image type="content" source="../../media/mfi-queued-messages-alert.png" alt-text="The Recent alerts in the Alerts dashboard in the Security & Compliance Center" lightbox="../../media/mfi-queued-messages-alert.png":::
+
+- Admins will receive an email notification based on the configuration of the default alert policy named **Messages have been delayed**. To configure the notification settings for this alert, see the next section.
+
+  For more information about alert policies, see [Alert policies in the Security & Compliance Center](../../compliance/alert-policies.md).
 
 ## Customize queue alerts
 
-Mail flow insights create an alert policy named **Messages have been delayed** (the **Send email notifications** check box in the example screen shot below) found in **Alerts** \> **Alert Policies**. You can modify the threshold and alert recipients by clicking on the policy.
+1. In the [Security & Compliance Center](https://protection.office.com), go to **Alerts** \> **Alert policies** or open <https://protection.office.com/alertpolicies>.
 
-![Alerts Navigation](../media/efb95976-9e0b-484e-a2fd-093c5bc7a40f.png)
+2. On the **Alert policies** page, find and select the policy named **Messages have been delayed**.
 
-You'll see a new policy information blade, you can now click **Edit Policy**.
+3. In the **Message have been delayed** flyout that opens, you can turn the alert on or off and configure the notification settings.
 
-![Edit Policy](../media/ed2aceae-3ee2-4849-a17e-87915987a7dd.png)
+   :::image type="content" source="../../media/mfi-queued-messages-alert-policy.png" alt-text="The details of the Messages have been delayed alert" lightbox="../../media/mfi-queued-messages-alert-policy.png":::
 
-The information blade will change to the **Edit Policy**. You can now change the recipients for the alert email, the limit on the number of notifications sent per day, and the minimum threshold to trigger the alert (200 or more).
+   - **Status**: You can toggle the alert on or off.
 
-![Edit Policy Blade](../media/c657cc74-7867-474c-b2c9-dc478449f990.png)
+   - **Email recipients** and **Daily notification limit**: Click **Edit** to configure the following settings:
 
-## Queue alert details
+4. To configure the notification settings, click **Edit**. In the **Edit policy** flyout that appears, configure the following settings:
 
-When you click the alert, the alert details appear in a flyout pane.
+   - **Send email notifications**: The default value is on.
+   - **Email recipients**: The default value is **TenantAdmins**.
+   - **Daily notification limit**: The default value is **No limit**.
+   - **Threshold**: The default value is 200.
 
-![Select a queue alert in the Recent alerts area of the mail flow dashboard in the Security & Compliance Center](../media/1f6b0e96-5b2c-41ef-9684-9d813b3fabe6.png)
+     :::image type="content" source="../../media/mfi-queued-messages-alert-policy-notification-settings.png" alt-text="The Notification settings in the Messages have been delayed alert" lightbox="../../media/mfi-queued-messages-alert-policy-notification-settings.png":::
 
-![The queue alert Details flyout in the Security & Compliance Center](../media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
+5. When you're finished, click **Save** and **Close**.
 
-You can click **View queue** in the alert details to see the queue details, problems, and links to the available fixes in a new flyout pane.
+## Queues insight in the Mail flow dashboard
 
-![The queue alert Details flyout in the Security & Compliance Center](../media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
+Even if the queued message volume hasn't exceeded the threshold and generated an alert, you can still use the **Queues** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) to see messages that have been queued for more than one hour, and take action before the number of queued messages becomes too large.
 
-![View queue in the alert details](../media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
+:::image type="content" source="../../media/mfi-queues-widget.png" alt-text="The Queues widget in the Mail flow dashboard in the Security & Compliance Center" lightbox="../../media/mfi-queues-widget.png":::
 
-## Queues
+If you click the number of messages on the widget, a **Messages queued** flyout appears with the following information:
 
-Even if the queued message volume hasn't exceeded the threshold, you can still use the **Queues** area of the mail flow dashboard to see messages that have been queued for more than one hour. You can use the **Queues** area to monitor the number of queued messages (the value 0 indicates mail flow is OK) and take action before the number of queued messages becomes too large.
+- **Number of queued messages**
+- **Connector name**: Select the connector name to manage the connector in the Exchange admin center (EAC) at <https://admin.exchange.microsoft.com/#/connectors>.
+- **Queue started time**
+- **Oldest messages expired**
+- **Destination server**
+- **Last IP address**
+- **Last error**
+- **How to fix**: Common issues and solutions are available. If a **Fix it now** link is available, click it to fix the problem. Otherwise, click on any available links for more information about the error and possible solutions.
 
-![Queues in the mail flow dashboard in the Security & Compliance Center](../media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
+:::image type="content" source="../../media/mfi-queues-details.png" alt-text="The Details after clicking on the Queues insight in the Mail flow dashboard" lightbox="../../media/mfi-queues-details.png":::
 
-When you click the number of queued messages in **Queues**, the queue details and guidance for how to fix the issue will appear in a flyout pane (the same flyout that appears after you click **View queue** in the details of a queue alert).
+The same flyout is displayed after you click **View queue** in the details of a **Messages have been delayed** alert.
 
-![Queue details](../media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
+:::image type="content" source="../../media/mfi-queued-messages-alert-details.png" alt-text="The details of the Messages have been delayed alert in the Security & Compliance Center" lightbox="../../media/mfi-queued-messages-alert-details.png":::
 
 ## See also
 
-For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

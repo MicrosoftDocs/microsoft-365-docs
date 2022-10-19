@@ -1,50 +1,70 @@
 ---
-title: "SIEM integration with Office 365 Advanced Threat Protection"
+title: SIEM integration with Microsoft Defender for Office 365
+f1.keywords:
+  - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
-ms.topic: overview
-ms.service: O365-seccomp
-localization_priority: None
+ms.topic: conceptual
+ms.localizationpriority: null
 search.appverid:
-- MET150
-- MOE150
+  - MET150
+  - MOE150
 ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
-ms.date: 03/11/2019
+ms.date: 08/21/2020
 ms.collection:
-- M365-security-compliance
-description: "Integrate your organization's SIEM server with Office 365 Advanced Threat Protection and related threat events in the Office 365 Activity Management API."
+  - m365-security
+description: Integrate your organization's SIEM server with Microsoft Defender for Office 365 and related threat events in the Office 365 Activity Management API.
+ms.custom: seo-marvel-apr2020
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
-# SIEM integration with Office 365 Advanced Threat Protection
+# SIEM integration with Microsoft Defender for Office 365
 
-If your organization is using a security incident and event management (SIEM) server, you can integrate Office 365 Advanced Threat Protection with your SIEM server. SIEM integration enables you to view information, such as malware or phish detected by Office 365 Advanced Protection, in your SIEM server reports. To set up SIEM integration, you use the [Office 365 Activity Management API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-The Office 365 Activity Management API retrieves information about user, admin, system, and policy actions and events from your organization's Office 365 and Azure Active Directory activity logs. The [Office 365 Advanced Threat Protection schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) works with Advanced Threat Protection, so if your organization has the Office 365 Advanced Threat Protection Plan 1 or Plan 2 or Office 365 E5, you can still use that same API for your SIEM server integration. 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-The SIEM server or other similar system should poll the **audit.general** workload to access detection events. To learn more see [Get started with Office 365 Management APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). In addition, the following values of **AuditLogRecordType** are relevant for Office 365 ATP events:
+If your organization is using a security information and event management (SIEM) server, you can integrate Microsoft Defender for Office 365 with your SIEM server. You can set up this integration by using the [Office 365 Activity Management API](/office/office-365-management-api/office-365-management-activity-api-reference).
 
-### Enum: AuditLogRecordType - Type: Edm.Int32
+SIEM integration enables you to view information, such as malware or phish detected by Microsoft Defender for Office 365, in your SIEM server reports.
 
-#### AuditLogRecordType
+- To see an example of SIEM integration with Microsoft Defender for Office 365, see [Tech Community blog: Improve the Effectiveness of your SOC with Defender for Office 365 and the O365 Management API](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
+- To learn more about the Office 365 Management APIs, see [Office 365 Management APIs overview](/office/office-365-management-api/office-365-management-apis-overview).
 
-|Value|Member name|Description|
-|:-----|:-----|:-----|
-|28|ThreatIntelligence|Phishing and malware events from Exchange Online Protection and Office 365 Advanced Threat Protection.|
-|41|ThreatIntelligenceUrl|ATP Safe Links time-of-block and block override events from Office 365 Advanced Threat Protection.|
-|47|ThreatIntelligenceAtpContent|Phishing and malware events for files in SharePoint Online, OneDrive for Business, and Microsoft Teams from Office 365 Advanced Threat Protection.|
+## How SIEM integration works
+
+The Office 365 Activity Management API retrieves information about user, admin, system, and policy actions and events from your organization's Microsoft 365 and Azure Active Directory activity logs. If your organization has Microsoft Defender for Office 365 Plan 1 or 2, or Office 365 E5, you can use the [Microsoft Defender for Office 365 schema](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema).
+
+Recently, events from automated investigation and response capabilities in [Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) were added to the Office 365 Management Activity API. In addition to including data about core investigation details such as ID, name and status, the API also contains high-level information about investigation actions and entities.
+
+The SIEM server or other similar system polls the **audit.general** workload to access detection events. To learn more, see [Get started with Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
+
+## Enum: AuditLogRecordType - Type: Edm.Int32
+
+### AuditLogRecordType
+
+The following table summarizes the values of **AuditLogRecordType** that are relevant for Microsoft Defender for Office 365 events:<br/><br/>
+
+| Value | Member name | Description |
+|---|---|---|
+| 28| ThreatIntelligence | Phishing and malware events from Exchange Online Protection and Microsoft Defender for Office 365. |
+| 41| ThreatIntelligenceUrl | Safe Links time-of-block and block override events from Microsoft Defender for Office 365. |
+| 47| ThreatIntelligenceAtpContent | Phishing and malware events for files in SharePoint Online, OneDrive for Business, and Microsoft Teams, from Microsoft Defender for Office 365. |
+| 64| AirInvestigation | Automated investigation and response events, such as investigation details and relevant artifacts, from Microsoft Defender for Office 365 Plan 2. |
 
 > [!IMPORTANT]
-> You must be an Office 365 global administrator or have the security administrator role assigned for the Security & Compliance Center to set up SIEM integration with Office 365 Advanced Threat Protection.<br/>Audit logging must be turned on for your Office 365 environment. To get help with this, see [Turn Office 365 audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
+> You must have either the global administrator or Security Administrator role assigned in the Microsoft 365 Defender portal to set up SIEM integration with Microsoft Defender for Office 365. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+>
+> Audit logging must be turned on for your Microsoft 365 environment. To get help with this, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
-## Related topics
+## See also
 
-[Office 365 Threat Investigation and Response](office-365-ti.md)
+[Office 365 threat investigation and response](office-365-ti.md)
 
-[Office 365 Advanced Threat Protection](office-365-atp.md)
-
-[Smart reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
-  
-[Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
-  
+[Automated investigation and response (AIR) in Office 365](automated-investigation-response-office.md)

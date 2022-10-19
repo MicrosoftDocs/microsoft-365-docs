@@ -1,104 +1,88 @@
 ### YamlMime:Landing
 
-title: Microsoft 365 compliance documentation # < 60 chars
-summary: If your organization needs to comply with legal or regulatory standards, start here to learn about compliance in Microsoft 365. # < 160 chars
+title: Microsoft Purview compliance documentation # < 60 chars
+summary: If your organization needs to comply with legal or regulatory standards, start here to learn about compliance in Microsoft Purview. # < 160 chars
 
 metadata:
-  title: Microsoft 365 compliance documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Documentation for Microsoft 365 compliance features # Required; article description that is displayed in search results. < 160 chars.
+  title: Microsoft Purview compliance documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: This page contains links to some important topics related to Microsoft Purview compliance features. Start here to learn about compliance for Microsoft Purview. # Required; article description that is displayed in search results. < 160 chars.
   services: office-365-security-compliance
   ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
   ms.topic: landing-page # Required
-  ms.collection: m365-security-compliance
+  ms.collection: purview-compliance
+  ms.custom: intro-hub-or-landing
   author: robmazz #Required; your GitHub user alias, with correct capitalization.
   ms.author: robmazz #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/20/2019 #Required; mm/dd/yyyy format
-  localization_priority: Priority
+  ms.date: 04/22/2022 #Required; mm/dd/yyyy format
+  ms.localizationpriority: high
+  titleSuffix: Microsoft Purview (compliance)
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
-  # Card (optional)
-  - title: Manage information protection
+  # Card 1
+  - title: Protect sensitive data across clouds, apps, and devices
     linkLists:
       - linkListType: overview
         links:
-          - text: Protect information
-            url: protect-information.md
-          - text: Sensitivity labels
-            url: sensitivity-labels.md
-          - text: Data loss prevention (DLP)
-            url: data-loss-prevention-policies.md
-          - text: Sensitive information types
-            url: custom-sensitive-info-types.md
-          - text: Email encryption
-            url: email-encryption.md  
+          - text: Know your data
+            url: /microsoft-365/compliance/information-protection#know-your-data
+          - text: Protect your data
+            url: /microsoft-365/compliance/information-protection#protect-your-data
+          - text: Prevent data loss
+            url: /microsoft-365/compliance/information-protection#prevent-data-loss
+          - text: Manage your data lifecycle
+            url: /microsoft-365/compliance/manage-data-governance#microsoft-purview-data-lifecycle-management
+          - text: Encrypt your data and control your encryption keys
+            url: /microsoft-365/compliance/encryption
+          - text: Import and archive non-Microsoft data
+            url: /microsoft-365/compliance/archiving-third-party-data
 
-  # Card
-  - title: Manage information governance
+# Card 2
+  - title: Identify data risks and manage regulatory compliance requirements
     linkLists:
       - linkListType: overview
         links:
-          - text: Manage records in Microsoft 365
-            url: records-management.md
-          - text: File plan manager
-            url: file-plan-manager.md
-          - text: Retention labels
-            url: labels.md
-          - text: Event-based retention
-            url: event-driven-retention.md
-          - text: Inactive mailboxes
-            url: inactive-mailboxes-in-office-365.md
-          - text: View data governance reports
-            url: view-the-data-governance-reports.md
+          - text: Detect and act on risk activities
+            url: /microsoft-365/compliance/insider-risk-management
+          - text: Detect and act on inappropriate and sensitive messages
+            url: /microsoft-365/compliance/communication-compliance
+          - text: Restrict communication & collaboration between users
+            url: /microsoft-365/compliance/information-barriers
+          - text: Manage business, legal, or regulatory record-keeping requirements
+            url: /microsoft-365/compliance/manage-data-governance#microsoft-purview-records-management
+          - text: Log & search for audited activities in SharePoint and OneDrive
+            url: /microsoft-365/compliance/auditing-solutions-overview
+          - text: Identify & manage data for legal cases
+            url: /microsoft-365/compliance/ediscovery
 
-# Card (optional)
-  - title: Manage internal risks
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Protect user and device access
-            url: protect-access-to-data-and-services.md
-          - text: Privileged access management
-            url: privileged-access-management-overview.md
-          - text: Customer Lockbox
-            url: customer-lockbox-requests.md
-          - text: Communication compliance
-            url: communication-compliance.md
-          - text: Information barriers
-            url: information-barriers.md
-          - text: Customer Key
-            url: controlling-your-data-using-customer-key.md
-
-  # Card
-  - title: Discover and respond
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Advanced eDiscovery
-            url: overview-ediscovery-20.md
-          - text: Manage a data investigation
-            url: overview-data-investigations.md
-          - text: Search for content
-            url: search-for-content.md
-          - text: Search the audit log
-            url: search-the-audit-log-in-security-and-compliance.md
-
-    # Card
+    # Card 3
   - title: Get started with regulatory compliance
     linkLists:
       - linkListType: get-started
         links:
-          - text: Compliance Score
-            url: compliance-score.md
-          - text: GDPR compliance action plan
-            url: gdpr-action-plan.md
-          - text: Information protection for GDPR
-            url: office-365-info-protection-for-gdpr-overview.md
-          - text: ISO compliance action plan
-            url: iso-action-plan.md
-          - text: NIST compliance action plan
-            url: nist-action-plan.md
+          - text: Get started with Compliance Manager
+            url: /microsoft-365/compliance/compliance-manager
+          - text: Implement a GDPR compliance action plan
+            url: /compliance/regulatory/gdpr-action-plan
+          - text: Learn about Microsoft regulatory compliance offerings
+            url: /compliance/regulatory/offering-home
+
+    # Card 4
+  - title: Deploy Purview compliance solutions
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Secure data with Zero Trust
+            url: /security/zero-trust/data
+          - text: Deploy an information protection solution
+            url: /microsoft-365/compliance/information-protection-solution
+          - text: Deploy a data governance solution
+            url: /microsoft-365/compliance/data-governance-solution
+          - text: Deploy information protection for data privacy regulations
+            url: /microsoft-365/solutions/information-protection-deploy
+          - text: Explore information protection & compliance illustrations
+            url: /microsoft-365/solutions/productivity-illustrations
