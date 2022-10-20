@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 10/13/2022
+ms.date: 10/20/2022
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
