@@ -14,6 +14,7 @@ search.appverid:
 ms.collection:
 - Strat_O365_Enterprise
 - purview-compliance
+- tier3
 - Strat_O365_Enterprise
 ms.custom:
 - seo-marvel-mar2020

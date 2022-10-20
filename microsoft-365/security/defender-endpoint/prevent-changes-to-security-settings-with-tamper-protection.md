@@ -72,7 +72,7 @@ During some kinds of cyber attacks, bad actors try to disable security features,
 - Disabling scanning of archives and network files
 
 > [!IMPORTANT]
-> Built-in protection (preview) includes turning tamper protection on by default. To learn more about built-in protection, see:
+> Built-in protection includes turning tamper protection on by default. To learn more about built-in protection, see:
 > - [Built-in protection helps guard against ransomware](built-in-protection.md) (article)
 > - [Tamper protection will be turned on for all enterprise customers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478) (Tech Community blog post)
 
