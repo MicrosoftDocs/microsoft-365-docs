@@ -1,21 +1,23 @@
 ---
-title: Work with document understanding model explanations in PowerShell
+title: Work with explanations for unstructured document processing models in PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-manager: serdars
+manager: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Learn about work with Microsoft Syntex document understanding model explanations in PowerShell.
+description: Learn about work with Microsoft Syntex model explanations in PowerShell.
 ---
 
-# Work with document understanding model explanations in PowerShell
+# Work with explanations for unstructured document processing models in PowerShell
+
+<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
 > [!IMPORTANT]
 > The Microsoft Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
