@@ -1,15 +1,16 @@
 ---
 title: "Microsoft 365 Isolation and Access Control in Azure Active Directory"
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Strat_O365_IP
 - M365-security-compliance
 f1.keywords:
@@ -30,13 +31,13 @@ No application, user, server, or service can access Azure AD without the proper 
 
 Effectively, Azure AD hosts each tenant in its own protected container, with policies and permissions to and within the container solely owned and managed by the tenant.
  
-![Azure container](../media/office-365-isolation-azure-container.png)
+![Azure container.](../media/office-365-isolation-azure-container.png)
 
 The concept of tenant containers is deeply ingrained in the directory service at all layers, from portals all the way to persistent storage. Even when multiple Azure AD tenant metadata is stored on the same physical disk, there is no relationship between the containers other than what is defined by the directory service, which in turn is dictated by the tenant administrator. There can be no direct connections to Azure AD storage from any requesting application or service without first going through the authorization layer.
 
 In the example below, Contoso and Fabrikam both have separate, dedicated containers, and even though those containers may share some of the same underlying infrastructure, such as servers and storage, they remain separate and isolated from each other, and gated by layers of authorization and access control.
  
-![Azure dedicated containers](../media/office-365-isolation-azure-dedicated-containers.png)
+![Azure dedicated containers.](../media/office-365-isolation-azure-dedicated-containers.png)
 
 In addition, there are no application components that can execute from within Azure AD, and it is not possible for one tenant to forcibly breach the integrity of another tenant, access encryption keys of another tenant, or read raw data from the server.
 

@@ -9,32 +9,34 @@ ms.date: 10/16/2020
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
-- Strat_O365_IP
+- purview-compliance
+- tier1
 description: "View a complete list of DOD and GCC High root certificates and certificate authorities (CAs) in Microsoft 365."
 ---
 
 # Microsoft 365 encryption chains - DOD and GCC High
 
-Microsoft 365 leverages a number of different certificate providers. The following describes the complete list of known Microsoft 365 root certificates that **DOD and GCC High customers** may encounter when accessing Microsoft 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates).
+Microsoft 365 leverages a number of different certificate providers. The following describes the complete list of known Microsoft 365 root certificates that **DOD and GCC High customers** may encounter when accessing Microsoft 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md).
 
 The following certificate information applies to **all DOD and GCC High customers**.
 
 Last updated: **10/16/2020**
 
->[!NOTE]
->For certificate information that applies to **worldwide customers**, see [Microsoft 365 encryption chains](encryption-office-365-certificate-chains.md).
+> [!NOTE]
+> For certificate information that applies to **worldwide customers**, see [Microsoft 365 encryption chains](encryption-office-365-certificate-chains.md).
 
 | **Certificate type** | **P7b download** | **CRL Endpoints** | **OCSP Endpoints** |
 | --- | --- | --- | --- | --- |
 | Publicly Trusted Root and Intermediate Certificates | [Microsoft 365 ITAR Certificate Bundle (P7B)](https://download.microsoft.com/download/b/3/a/b3ae08a2-516c-46a9-8723-6256e4fd6383/m365_chain_certs_itar20201012.p7b) | crl.entrust.net<br>crl3.digicert.com<br>crl4.digicert.com | ocsp.digicert.com<br>ocsp.entrust.net |
 
 Expand the root and intermediate sections below to see additional details about the certificate providers.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## **Microsoft 365 Certificate Details**
 

@@ -6,17 +6,20 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
-localization_priority: Priority
+ms.service: o365-solutions
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection: 
+- highpri
 - Ent_O365
 - Strat_O365_Enterprise
 - m365solution-3tiersprotection
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkSPO
+recommendations: false
 description: "Learn how to deploy teams with protection for highly sensitive data."
 ---
 
@@ -28,10 +31,17 @@ For this tier of protection, we create a sensitivity label that can be used acro
 
 The highly sensitive tier offers the following additional protections over the baseline tier:
 
-- A sensitivity label for the team that allows you to turn guest sharing on or off and limits access to SharePoint content to web-only for unmanaged devices. This label can also be used to classify and encrypt files.
+- A sensitivity label for the team that allows you to turn guest sharing on or off and blocks access to SharePoint content for unmanaged devices. This label can also be used to classify and encrypt files.
 - A more restrictive default sharing link type
 - Only team owners can create private channels.
 - Access requests for the associated SharePoint site are turned off.
+
+## Video demonstration
+
+Watch this video for a walkthrough of the procedures described in this article.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NzI7]
 
 ## Guest sharing
 
@@ -39,8 +49,8 @@ Depending on the nature of your business, you may or may not want to enable gues
 
 For details about sharing with guests securely, see the following resources:
 
-- [Limit accidental exposure to files when sharing with people outside your organization](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
-- [Create a secure guest sharing environment](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
+- [Limit accidental exposure to files when sharing with people outside your organization](./share-limit-accidental-exposure.md)
+- [Create a secure guest sharing environment](./create-secure-guest-sharing-environment.md)
 
 To allow or block guest sharing, we use a combination of a sensitivity label for the team and site-level sharing controls for the associated SharePoint site, both discussed later.
 
@@ -48,17 +58,17 @@ To allow or block guest sharing, we use a combination of a sensitivity label for
 
 For the highly sensitive level of protection, we'll be using a sensitivity label to classify the team. This label can also be used to classify and encrypt individual files in this or other teams or in other file locations such as SharePoint or OneDrive. 
 
-As a first step, you must enable sensitivity labels for Teams. See [Use sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) for details.
+As a first step, you must enable sensitivity labels for Teams. See [Use sensitivity labels to protect content in Microsoft Teams, Office 365 Groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md) for details.
 
 If you already have sensitivity labels deployed in your organization, consider how this label fits with your overall label strategy. You can change the name or settings if needed to meet the needs of your organization.
 
 Once you have enabled sensitivity labels for Teams, the next step is to create the label.
 
 To create a sensitivity label
-1. Open the [Microsoft 365 compliance center](https://compliance.microsoft.com).
+1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
 2. Under **Solutions**, click **Information protection**.
 3. Click **Create a label**.
-4. Give the label a name. We suggest **Sensitive**, but you can choose a different name if that one is already in use.
+4. Give the label a name. We suggest **Highly sensitive**, but you can choose a different name if that one is already in use.
 5. Add a display name and description, and then click **Next**.
 6. On the **Define the scope for this label page**, select **Files & emails** and **Groups & sites** and click **Next**.
 7. On the **Choose protection settings for files and emails** page, select **Encrypt files and emails**, and then click **Next**.
@@ -74,12 +84,12 @@ To create a sensitivity label
 17. Click **Next**.
 18. On the **Define external sharing and device access settings** page, select **Control external sharing from labeled SharePoint sites**.
 19. Under **Content can be shared with**, choose **New and existing guests** if you're allowing guest access or **Only people in your organization** if not.
-20. Under **Access from unmanaged devices**, choose **Block access**.
+20. Under **Access from unmanaged devices**, choose **Block access**. (If you're allowing guests and they don't have managed devices, you may want to choose **Allow limited, web-only access**.)
 21. Click **Next**.
 22. On the **Auto-labeling for database columns** page, click **Next**.
 23. Click **Create label**, and then click **Done**.
 
-Once you've created the label, you need to publish it to the users who will use it. For sensitive protection, we'll make the label available to all users. You publish the label in the Microsoft 365 compliance center, on the **Label policies** tab of the **Information protection** page. If you have an existing policy that applies to all users, add this label to that policy. If you need to create a new policy, see [Publish sensitivity labels by creating a label policy](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy).
+Once you've created the label, you need to publish it to the users who will use it. For sensitive protection, we'll make the label available to all users. You publish the label in the Microsoft Purview compliance portal, on the **Label policies** tab of the **Information protection** page. If you have an existing policy that applies to all users, add this label to that policy. If you need to create a new policy, see [Publish sensitivity labels by creating a label policy](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
 
 ## Create a team
 
@@ -103,41 +113,30 @@ To restrict private channel creation
 2. On the **Settings** tab, expand **Member permissions**.
 3. Clear the **Allow members to create private channels** check box.
 
-You can also use [teams policies](https://docs.microsoft.com/MicrosoftTeams/teams-policies) to control who can create private channels.
+You can also use [teams policies](/MicrosoftTeams/teams-policies) to control who can create private channels.
+
+## Shared channel settings
+
+[Shared channels](/MicrosoftTeams/shared-channels) doesn't have team-level settings. The shared channel settings you configure in the Teams admin center and Azure AD will be available for all teams regardless of sensitivity.
 
 ## SharePoint settings
 
 Each time you create a new team with the highly sensitive label, there are two steps to do in SharePoint:
 
-- Update the guest sharing settings for the site in the SharePoint admin center to match what you chose when you created the label, and update the default sharing link to *People with existing access*.
+- Update the guest sharing settings for the site in the SharePoint admin center to update the default sharing link to *People with existing access*.
 - Update the site sharing settings in the site itself to prevent members from sharing files, folders, or the site, and turn off access requests.
 
-### Site guest sharing settings
+### Site default sharing link settings
 
-The guest sharing setting that you chose when you created the label (which only affects team membership) should match the guest sharing settings for the associated SharePoint site as follows:
+To update the site default sharing link type
 
-|Label setting|SharePoint site setting|
-|:------------|:----------------------|
-|**Let Office 365 group owners add people outside the organization to the group** selected|**New and existing guests** (default for new teams)|
-|**Let Office 365 group owners add people outside the organization to the group** not selected|**Only people in your organization**|
+1. Open the SharePoint admin center, and under **Sites**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
+1. Select the site that is associated with team.
+1. On the **Policies** tab, under **External sharing**, select **Edit**.
+1. Under Default sharing link type, clear the **Same as organization-level setting** check box, and select **People with existing access**.
+1. Select **Save**.
 
-To update site settings
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. Under **Sites**, click **Active sites**.
-3. Click the site that is associated with team.
-4. On the **Policies** tab, under **External sharing**, click **Edit**.
-5. If you allowed guest sharing when you created the Highly sensitive label, ensure that **New and existing guests** is selected. If you didn't allow sharing when you created the label, choose **Only people in your organization**.
-6. Under Default sharing link type, clear the **Same as organization-level setting** check box, and select **People with existing access**.
-7. Click **Save**.
-
-If you want to script this as part of your team creation process, you can use [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) with the following parameters:
-
-- `-SharingCapability Disabled` to turn off guest sharing (it's on by default)
-- `-DefaultSharingLinkType Internal` to change the default sharing link to *Specific people*
-
-#### Private channels
-
-If you add private channels to the team, each private channel creates a new SharePoint site with the default sharing settings. These sites are not visible in the SharePoint admin center, so you must use the Set-SPOSite PowerShell cmdlet to update the guest sharing settings.
+Note that if you add private or shared channels to the team, each creates a new SharePoint site with the default sharing settings. You can update them in the SharePoint admin center by selecting the sites associated with the team.
 
 ### Site sharing settings
 
@@ -148,11 +147,10 @@ To configure owners-only site sharing
 2. In the tool bar for the team, click **Files**.
 3. Click the ellipsis, and then click **Open in SharePoint**.
 4. In the tool bar of the underlying SharePoint site, click the settings icon, and then click **Site permissions**.
-5. In the Site permissions pane, under **Sharing Settings**, click **Change sharing settings**.
+5. In the **Site permissions** pane, under **Site sharing**, click **Change how members can share**.
 6. Under **Sharing permissions**, choose **Only site owners can share files, folders, and the site**.
 7. Set **Allow access requests** to **Off**, and then click **Save**.
 
 ## See Also
 
-[Create and configure sensitivity labels and their policies](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels)
-
+[Create and configure sensitivity labels and their policies](../compliance/create-sensitivity-labels.md)

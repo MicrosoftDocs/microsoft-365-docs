@@ -2,13 +2,14 @@
 title: "Optimize iFrames in SharePoint Online modern and classic publishing site pages"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content
@@ -26,7 +27,7 @@ description: "Learn how to optimize the performance of iFrames in SharePoint Onl
 iFrames can be useful for previewing rich content such as videos or other media. However, because iFrames load a separate page within the SharePoint site page, content loaded in the iFrame could contain large images, videos or other elements that can contribute to overall page load times and that you cannot control on the page. This article will help you understand how to determine how iFrames in your pages affect user perceived latency, and how to remediate common issues.
 
 >[!NOTE]
->For more information about performance in SharePoint Online modern sites, see [Performance in the modern SharePoint experience](https://docs.microsoft.com/sharepoint/modern-experience-performance).
+>For more information about performance in SharePoint Online modern sites, see [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance).
 
 ## Use the Page Diagnostics for SharePoint tool to analyze web parts using iFrames
 
@@ -45,7 +46,7 @@ Possible results include:
 
 If the **Web parts using iFrames detected** result appears in either the **Improvement opportunities** or **Attention required)** section of the results, you can click the result to see the web parts that contain iFrames.
 
-![Page Diagnostics tool results](../media/modern-portal-optimization/pagediag-iframe-yellow.png)
+![Page Diagnostics tool results.](../media/modern-portal-optimization/pagediag-iframe-yellow.png)
 
 ## Remediate iFrame performance issues
 
@@ -64,7 +65,7 @@ Follow the guidance below to ensure optimal use of iFrames.
 
 Before you make page revisions to remediate performance issues, make a note of the page load time in the analysis results. Run the tool again after your revision to see if the new result is within the baseline standard, and check the new page load time to see if there was an improvement.
 
-![Page load time results](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Page load time results.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >Page load time can vary based on a variety of factors such as network load, time of day, and other transient conditions. You should test page load time a few times before and after making changes to help you average the results.
@@ -75,4 +76,4 @@ Before you make page revisions to remediate performance issues, make a note of t
 
 [Tune Office 365 performance](tune-microsoft-365-performance.md)
 
-[Performance in the modern SharePoint experience](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance)

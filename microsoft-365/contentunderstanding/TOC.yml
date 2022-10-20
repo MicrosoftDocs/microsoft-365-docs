@@ -1,51 +1,132 @@
-    - name: Learn about Microsoft SharePoint Syntex
-      items: 
-        - name: Introduction to SharePoint Syntex
-          href: index.md
-        - name: Document understanding overview
-          href: document-understanding-overview.md
-        - name: Form processing overview 
-          href: form-processing-overview.md
-        - name: Difference between document understanding and form processing models 
-          href: difference-between-document-understanding-and-form-processing-model.md   
+    - name: Microsoft Syntex
+      href: index.yml
  
-    - name: Get started with models
+    - name: Get started
+      items:
+            - name: Overview of Syntex
+              href: syntex-overview.md 
+            - name: Licensing for Syntex
+              href: syntex-licensing.md
+            - name: Set up Syntex
+              href: set-up-content-understanding.md
+            - name: Create a content center 
+              href: create-a-content-center.md
+
+    - name: Work with models
+      items:
+            - name: Model types
+              href: model-types-overview.md 
+            - name: Requirements and limitations 
+              href: requirements-and-limitations.md  
+            - name: Create an enterprise model
+              href: create-syntex-model.md
+            - name: Create a local model 
+              href: create-local-model.md 
+            - name: Train your model 
+              href: train-model.md 
+            - name: Manage your model
+              items:
+                - name: Apply a model
+                  href: apply-a-model.md
+                - name: Choose a library view 
+                  href: choose-library-view.md
+                - name: Share an enterprise model 
+                  href: model-discovery.md
+                - name: Discover other trained models 
+                  href: discover-other-trained-models.md
+                - name: Apply a retention label 
+                  href: apply-a-retention-label-to-a-model.md
+                - name: Apply a sensitivity label 
+                  href: apply-a-sensitivity-label-to-a-model.md
+                - name: Rename a model
+                  href: rename-a-model.md
+                - name: Delete a model
+                  href: delete-a-model.md
+                - name: Analyze model usage
+                  href: model-usage-analytics.md
+                - name: Manage models with PowerShell
+                  items:
+                    - name: Overview
+                      href: powershell-syntex-intro.md
+                    - name: Export and import models
+                      href: powershell-syntex-import-export.md
+                    - name: Publish models
+                      href: powershell-syntex-publishing.md
+                    - name: Request model processing
+                      href: powershell-syntex-processing.md
+                    - name: Work with explanations
+                      href: powershell-syntex-explanations.md
+
+    - name: Custom models
+      items:
+            - name: Compare custom models 
+              href: difference-between-document-understanding-and-form-processing-model.md  
+            - name: Unstructured document processing
+              items:
+                - name: Overview
+                  href: document-understanding-overview.md
+                - name: Import a sample model 
+                  href: learn-about-document-understanding-models-through-the-sample-model.md
+                - name: Train your model
+                  items:
+                    - name: Create a classifier
+                      href: create-a-classifier.md
+                    - name: Create an extractor
+                      href: create-an-extractor.md
+                    - name: Leverage term store taxonomy to create an extractor
+                      href: leverage-term-store-taxonomy.md
+                    - name: Explanation types 
+                      href: explanation-types-overview.md
+                    - name: Use explanation templates 
+                      href: explanation-templates.md
+                    - name: Use accessibility mode
+                      href: accessibility-mode.md
+                    - name: Rename an extractor
+                      href: rename-an-extractor.md
+                - name: Duplicate a model
+                  href: duplicate-a-model.md
+
+            - name: Freeform document processing
+              items:
+                - name: Overview 
+                  href: freeform-document-processing-overview.md
+                - name: Train your model
+                  href: train-freeform-document-processing-model.md
+
+            - name: Structured document processing
+              items:
+                - name: Overview 
+                  href: form-processing-overview.md
+                - name: Train your model
+                  href: create-a-form-processing-model.md
+
+    - name: Prebuilt models
+      items:
+            - name: Overview 
+              href: prebuilt-overview.md
+            - name: Use an invoices model 
+              href: prebuilt-model-invoice.md
+            - name: Use a receipts model 
+              href: prebuilt-model-receipt.md
+
+    - name: Content assembly
       items: 
-        - name: Learn about models through the sample model 
-          href: learn-about-document-understanding-models-through-the-sample-model.md
-        - name: Create a content center 
-          href: create-a-content-center.md
-        - name: Create a classifier
-          href: create-a-classifier.md
-        - name: Create an extractor
-          href: create-an-extractor.md
-        - name: Explanation types 
-          href: explanation-types-overview.md
-        - name: Apply a model
-          href: apply-a-model.md
-        - name: Create a form processing model 
-          href: create-a-form-processing-model.md
-        - name: Apply a retention label 
-          href: apply-a-retention-label-to-a-model.md
-        - name: Model usage analytics
-          href: model-usage-analytics.md
-        - name: Leverage term store taxonomy when creating an extractor
-          href: leverage-term-store-taxonomy.md
-    
-    - name: Adoption
+        - name: Overview 
+          href: content-assembly.md
+        - name: Create a modern template
+          href: content-assembly-modern-template.md
+        - name: Create a document from a modern template 
+          href: content-assembly-create-document.md
+        - name: Generate documents using Power Automate 
+          href: automate-document-generation.md
+     
+    - name: Metadata search
+      items: 
+        - name: Search for metadata in document libraries 
+          href: metadata-search.md
+     
+    - name: Taxonomy
       items:
-        - name: Get started with adoption
-          href: adoption-getstarted.md
-
-    - name: Setup and administration
-      items:
-
-        - name: Set up content understanding
-          href: set-up-content-understanding.md
-        
-    - name: Content services
-      items:
-
         - name: Import using SKOS
           href: import-term-set-skos.md
         - name: SKOS formatting reference
@@ -54,8 +135,42 @@
           href: push-content-type-to-hub.md
         - name: Term store reports
           href: term-store-analytics.md
-        
-        
+
+    - name: Adoption
+      items:
+        - name: Get started with adoption
+          href: adoption-getstarted.md
+        - name: Scenarios and use cases
+          href: adoption-scenarios.md 
+        - name: Assess your environment
+          href: adoption-assessment-tool.md 
+        - name: Run a trial
+          href: trial-syntex.md
+        - name: Solutions
+          items:
+            - name: Manage contracts in Microsoft 365
+              items:
+               - name: Overview
+                 href: solution-manage-contracts-in-microsoft-365.md 
+               - name: Step 1. Use Microsoft Syntex
+                 href: solution-manage-contracts-step1.md
+               - name: Step 2. Use Microsoft Teams
+                 href: solution-manage-contracts-step2.md
+               - name: Step 3. Use Power Automate
+                 href: solution-manage-contracts-step3.md
+        - name: Site templates
+          items:
+            - name: Contracts management template
+              href: use-contracts-management-site.md 
+            - name: Content center template
+              href: use-content-center-site.md 
+
+    - name: Extensibility
+      items: 
+        - name: Microsoft Syntex REST API 
+          href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
+
+
 
 
 

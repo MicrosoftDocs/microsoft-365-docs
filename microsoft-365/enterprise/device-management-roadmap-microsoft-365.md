@@ -1,19 +1,18 @@
 ---
 title: Device management roadmap for Microsoft 365 
 keywords: Microsoft 365, Microsoft 365 for enterprise, Microsoft 365 documentation, mobile device management, Intune
-author: JoeDavies-MSFT 
-ms.author: josephd
-manager: laurawi
+author: kelleyvice-msft 
+ms.author: kvice
+manager: scotv
 ms.date: 08/10/2020
 ms.topic: conceptual 
 f1.keywords:
 - NOCSH
-ms.prod: microsoft-365-enterprise
-ms.service: 
-ms.technology: 
+ms.service: microsoft-365-enterprise
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
+ms.collection: scotvorg
 description: The roadmap to set up device management for Microsoft 365.
 ---
 
@@ -40,11 +39,11 @@ This is built into Microsoft 365 and helps you secure and manage your users' mob
 
 ## Choose between the two options
 
-To help you better assess which device management option is best for you, see [Choose between Basic Mobility Security and Intune](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune).
+To help you better assess which device management option is best for you, see [Choose between Basic Mobility Security and Intune](/office365/securitycompliance/choose-between-mdm-and-intune).
 
 Based on your assessment, get started managing your devices with:
 
-- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
+- [Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)
 - [Basic Mobility and Security](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
  
 ## Identity and device access recommendations

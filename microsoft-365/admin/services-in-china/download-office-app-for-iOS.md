@@ -7,9 +7,10 @@ author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC

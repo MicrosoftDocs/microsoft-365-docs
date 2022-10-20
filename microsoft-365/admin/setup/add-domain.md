@@ -2,66 +2,73 @@
 title: "Add a domain to Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365_Setup
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
+- adminvideo
 - TopSMBIssues
 - SaRA
 - MSStore_Link
 - okr_smb
+- business_assist
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: "Add your domain to Microsoft 365 in the Microsoft 365 admin center by adding a DNS record at your DNS host. The setup wizard walks you through the process."
+description: "Use the setup wizard to add your domain to Microsoft 365 in the Microsoft 365 admin center by adding a DNS record at your DNS host."
 ---
 
 # Add a domain to Microsoft 365
 
-::: moniker range="o365-21vianet"
+ **[Check the Domains FAQ](domains-faq.yml)** if you don't find what you're looking for.
 
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
-
- **[Check the Domains FAQ](domains-faq.yml)** if you don't find what you're looking for. 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
   
- *To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant, *Customized administrators* or *regular users* won't be able to make these changes.*  
+## Before you begin
 
- Follow these steps to add, set up, or continue setting up a domain. 
+To add, modify, or remove domains, you **must** be a **Domain Name Administrator** or **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant; *Customized administrators* or *regular users* won't be able to make these changes.
 
-::: moniker range="o365-worldwide"
-  
-::: moniker-end
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
-::: moniker range="o365-germany"
+## Watch: Add a domain
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/dda6df6d-37b0-41ff-905b-089448355a31?autoplay=false]
-  
-::: moniker-end
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198213).
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
+
+Your company might need multiple domain names for different purposes. For example, you might want to add a different spelling of your company name because customers are already using it and their communications have failed to reach you.
+
+1. In the Microsoft 365 admin center, choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
+1. Under **Get your custom domain set up**, select **View** > **Manage** > **Add domain**.
+1. Enter the new domain name that you want to add, and then select **Next**.
+1. Sign in to your domain registrar, and then select **Next**.
+1. Choose the services for your new domain.
+1. Select **Next** > **Authorize** > **Next**, and then **Finish**. Your new domain has been added.
+
+## Add a domain
+
+Follow these steps to add, set up, or continue setting up a domain. 
 
 ::: moniker range="o365-worldwide"
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
-
-::: moniker-end
-::: moniker range="o365-germany"
-
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
 
 ::: moniker-end
 
@@ -88,11 +95,9 @@ description: "Add your domain to Microsoft 365 in the Microsoft 365 admin center
     1. Choose **Add the DNS records for me** if your registrar supports [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365), and Microsoft [will set up your records automatically](../get-help-with-domains/domain-connect.md) by having you sign in to your registrar and confirm the connection to Microsoft 365.
     2. Choose **I'll add the DNS records myself** if you want to attach only specific Microsoft 365 services to your domain or if you want to skip this for now and do this later. **Choose this option if you know exactly what you're doing.**
 
-7. If you chose to *add DNS records yourself*  , select **Next** and you'll see a page with all the records that you need to add to your registrars website to set up your domain. 
+7. If you chose to *add DNS records yourself*, select **Next** and you'll see a page with all the records that you need to add to your registrars website to set up your domain. 
 
     If the portal doesn't recognize your registrar, you can [follow these general instructions.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
-    
-    Check our list of [host-specific instructions](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) to find your host and follow the steps to add all the records you need. 
     
     If you don't know the DNS hosting provider or domain registrar for your domain, see [Find your domain registrar or DNS hosting provider](../get-help-with-domains/find-your-domain-registrar.md).
     
@@ -145,12 +150,48 @@ After you finish setup, the MX record for your domain is updated to point to Mic
   
 If you have a website that you use with your business, it will keep working where it is. The Domain Connect setup steps don't affect your website.
 
-## Related articles
+### Add an onmicrosoft.com domain
 
-[Domains FAQ](domains-faq.yml)
+Each Microsoft 365 organization can have up to five onmicrosoft.com domains.
 
-[What is a domain?](../get-help-with-domains/what-is-a-domain.md)
+> [!NOTE]
+> You must be a Global admin or a Domain Name admin to add a domain.
+> Creating an additional .onmicrosoft domain and using it as your default will not do a rename for SharePoint Online. To make changes to your .onmicrosoft SharePoint domain you would need to use the [SharePoint domain rename preview](/sharepoint/change-your-sharepoint-domain-name) (currently available to any tenant with less than 10,000 sites).
+> If you're using Microsoft 365 mail services, removal of your initial .onmicrosoft domain is not supported.
 
-[Buy a domain name in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
 
-[Set up your domain (host-specific instructions)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
+To add an onmicrosoft.com domain:
+
+1. In the Microsoft 365 admin center, select **Settings**, and then select **Domains**.
+
+2. Select an existing *.onmicrosoft.com* domain.
+
+    ![Domains page.](../../media/onmicrosoft-domains.png)
+  
+
+3. On the **Overview** tab, select **Add onmicrosoft.com domain**.
+
+    ![Screenshot of domain properties.](../../media/add-onmicrosoft-domain-link.png)
+
+4. On the **Add onmicrosoft domain** page, in the **Domain name** box, enter the name for your new onmicrosoft.com domain. 
+
+    ![Screenshot of Add onmicrosoft domain.](../../media/add-an-onmicrosoftcom-domain-page.png)
+
+    > [!NOTE]
+    > Make sure to verify the spelling and accuracy of the domain name you entered. You are limited to five onmicrosoft.com domains, and currently they cannot be deleted once they are created.     
+
+5. Select **Add domain**. When successfully added, you will see a message stating this. 
+    
+    ![Screenshot of domain added successfully.](../../media/domain-added.png)
+
+You can set any domain you own as your default domain. 
+
+For more details on how to add an onmicrosoft.com domain, see [Add or replace your onmicrosoft.com domain](add-or-replace-your-onmicrosoftcom-domain.md).
+
+## Related content
+
+[Domains FAQ](domains-faq.yml) (article)</br>
+[What is a domain?](../get-help-with-domains/what-is-a-domain.md) (article)</br>
+[Buy a domain name in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)</br>
+[Add DNS records to connect your domain](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (article)</br>
+[Change nameservers to set up Microsoft 365 with any domain registrar](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md) (article)

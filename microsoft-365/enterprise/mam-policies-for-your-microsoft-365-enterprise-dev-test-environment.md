@@ -2,15 +2,17 @@
 title: "Device compliance policies for your Microsoft 365 for enterprise test environment"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: M365-identity-device-management
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
+- M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use this Test Lab Guide to add Intune device compliance policies to your Microsoft 365 for enterprise test environment.
@@ -26,7 +28,7 @@ Adding an Intune device compliance policy involves two phases:
 - [Phase 1: Build out your Microsoft 365 for enterprise test environment](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Phase 2: Create a device compliance policy for Windows 10 devices](#phase-2-create-a-device-compliance-policy-for-windows-10-devices)
 
-![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
@@ -45,7 +47,7 @@ If you want to configure MAM policies in a simulated enterprise, follow the inst
 
 In this phase, you create a device compliance policy for Windows 10 devices. This phase uses Microsoft Intune and the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) to add a group, and create a compliance policy.
 
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com), and sign in to your Microsoft 365 test lab subscription with your global administrator account. Select the **Endpoint Manager** admin center. The [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) opens.
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com), sign in to your Microsoft 365 test lab subscription with your global administrator account, and select the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank">Endpoint Manager admin center</a>.
 
     If a message similar to **You haven't enabled device management yet** message is shown, then select Intune as the MDM authority. For the specific steps, see [Set the mobile device management authority](/mem/intune/fundamentals/mdm-authority-set).
 

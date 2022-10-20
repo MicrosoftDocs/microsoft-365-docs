@@ -6,11 +6,11 @@ author: chrisda
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about multi-geo capabilities in Exchange Online, such as feature limitations and mailbox placement.
 ---
 
@@ -38,7 +38,7 @@ Exchange Online synchronizes the **PreferredDataLocation** property from Azure A
 
 - When **PreferredDataLocation** is not specified on a user, when you provision the mailbox, it will be provisioned in the central geo location.
 
-- If the **PreferredDataLocation** code is incorrect (e.g. a type of NAN instead of NAM), the mailbox will be provisioned in the central geo location.
+- If the **PreferredDataLocation** code is incorrect (e.g. a typo of NAN instead of NAM), the mailbox will be provisioned in the central geo location.
 
 **Note**: Multi-geo capabilities and Skype for Business Online regionally hosted meetings both use the **PreferredDataLocation** property on user objects to locate services. If you configure **PreferredDataLocation** values on user objects for regionally hosted meetings, the mailbox for those users will be automatically moved to the specified geo location after multi-geo is enabled on the Microsoft 365 tenant.
 
@@ -54,4 +54,4 @@ Exchange Online synchronizes the **PreferredDataLocation** property from Azure A
 
 - Public folders are supported in multi-geo organizations. However, the public folders must remain in the central geo location. You can't move public folders to satellite geo locations.
 
-- In a multi-geo environment, cross-geo mailbox auditing is not supported. For example, if a user is assigned permissions to access a shared mailbox in a different geo location, mailbox actions performed by that user are not logged in the mailbox audit log of the shared mailbox. For more information, see [Manage mailbox auditing](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing?view=o365-worldwide).
+- In a multi-geo environment, cross-geo mailbox auditing is not supported. For example, if a user is assigned permissions to access a shared mailbox in a different geo location, mailbox actions performed by that user are not logged in the mailbox audit log of the shared mailbox. Exchange admin audit events are also only available for the default location. For more information, see [Manage mailbox auditing](../compliance/enable-mailbox-auditing.md).

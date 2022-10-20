@@ -1,19 +1,21 @@
 ---
 title: "Disable access to Microsoft 365 services while assigning user licenses"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 04/24/2020
 audience: Admin
 ms.topic: article
-ms.collection: Ent_O365
-ms.service: o365-administration
-localization_priority: Normal
+ms.collection:
+- scotvorg 
+- Ent_O365
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 f1.keywords:
 - CSH
-ms.custom: 
+ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
@@ -29,7 +31,7 @@ Microsoft 365 subscriptions come with service plans for individual services. Mic
 ## Use the Azure Active Directory PowerShell for Graph module
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
-  
+
 
 Next, list the license plans for your tenant with this command.
 
@@ -39,10 +41,10 @@ Get-AzureADSubscribedSku | Select SkuPartNumber
 
 Next, get the sign-in name of the account to which you want add a license, also known as the user principal name (UPN).
 
-Next, compile a list of services to enable. For a complete list of license plans (also known as product names), their included service plans, and their corresponding friendly names, see [Product names and service plan identifiers for licensing](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+Next, compile a list of services to enable. For a complete list of license plans (also known as product names), their included service plans, and their corresponding friendly names, see [Product names and service plan identifiers for licensing](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
 
 For the command block below, fill in the user principal name of the user account, the SKU part number, and the list of service plans to enable and remove the explanatory text and the \< and > characters. Then, run the resulting commands at the PowerShell command prompt.
-  
+
 ```powershell
 $userUPN="<user account UPN>"
 $skuPart="<SKU part number>"
@@ -65,7 +67,7 @@ Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAss
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 Next, run this command to see your current subscriptions:
-  
+
 ```powershell
 Get-MsolAccountSku
 ```
@@ -75,29 +77,29 @@ Get-MsolAccountSku
 >
 
 In the display of the  `Get-MsolAccountSku` command:
-  
+
 - **AccountSkuId** is a subscription for your organization in \<OrganizationName>:\<Subscription> format. The \<OrganizationName> is the value that you provided when you enrolled in Microsoft 365, and is unique for your organization. The \<Subscription> value is for a specific subscription. For example, for litwareinc:ENTERPRISEPACK, the organization name is litwareinc, and the subscription name is ENTERPRISEPACK (Office 365 Enterprise E3).
-    
+
 - **ActiveUnits** is the number of licenses that you've purchased for the subscription.
-    
+
 - **WarningUnits** is the number of licenses in a subscription that you haven't renewed, and that will expire after the 30-day grace period.
-    
+
 - **ConsumedUnits** is the number of licenses that you've assigned to users for the subscription.
-    
-Note the AccountSkuId for your Microsoft 365 subscription that contains the users you want to license. Also, ensure that there are enough licenses to assign (subtract **ConsumedUnits** from **ActiveUnits** ).
-  
+
+Note the AccountSkuId for your Microsoft 365 subscription that contains the users you want to license. Also, ensure that there are enough licenses to assign (subtract **ConsumedUnits** from **ActiveUnits**).
+
 Next, run this command to see the details about the Microsoft 365 service plans that are available in all your subscriptions:
-  
+
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
 From the display of this command, determine which service plans you would like to disable when you assign licenses to users.
-  
+
 Here is a partial list of service plans and their corresponding Microsoft 365 services.
 
-The following table shows the Microsoft 365 service plans and their friendly names for the most common services. Your list of service plans might be different. 
-  
+The following table shows the Microsoft 365 service plans and their friendly names for the most common services. Your list of service plans might be different.
+
 |**Service plan**|**Description**|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
@@ -109,15 +111,15 @@ The following table shows the Microsoft 365 service plans and their friendly nam
 | `SHAREPOINTWAC` <br/> |Office   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online Plan 2  <br/> |
-   
-For a complete list of license plans (also known as product names), their included service plans, and their corresponding friendly names, see [Product names and service plan identifiers for licensing](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
-   
+
+For a complete list of license plans (also known as product names), their included service plans, and their corresponding friendly names, see [Product names and service plan identifiers for licensing](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+
 Now that you have the AccountSkuId and the service plans to disable, you can assign licenses for an individual user or for multiple users.
-  
+
 ### For a single user
 
 For a single user, fill in the user principal name of the user account, the AccountSkuId, and the list of service plans to disable and remove the explanatory text and the \< and > characters. Then, run the resulting commands at the PowerShell command prompt.
-  
+
 ```powershell
 $userUPN="<the user's account name in email format>"
 $accountSkuId="<the AccountSkuId from the Get-MsolAccountSku command>"
@@ -129,7 +131,7 @@ Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions 
 ```
 
 Here is an example command block for the account named belindan@contoso.com, for the contoso:ENTERPRISEPACK license, and the service plans to disable are RMS_S_ENTERPRISE, SWAY, INTUNE_O365, and YAMMER_ENTERPRISE:
-  
+
 ```powershell
 $userUPN="belindan@contoso.com"
 $accountSkuId="contoso:ENTERPRISEPACK"
@@ -143,7 +145,7 @@ Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions 
 ### For multiple users
 
 To perform this administration task for multiple users, create a comma-separated value (CSV) text file that contains the UserPrincipalName and UsageLocation fields. Here is an example:
-  
+
 ```powershell
 UserPrincipalName,UsageLocation
 ClaudeL@contoso.onmicrosoft.com,FR
@@ -152,7 +154,7 @@ ShawnM@contoso.onmicrosoft.com,US
 ```
 
 Next, fill in the location of the input and output CSV files, the account SKU ID, and the list of service plans to disable, and then run the resulting commands at the PowerShell command prompt.
-  
+
 ```powershell
 $inFileName="<path and file name of the input CSV file that contains the users, example: C:\admin\Users2License.CSV>"
 $outFileName="<path and file name of the output CSV file that records the results, example: C:\admin\Users2License-Done.CSV>"
@@ -172,19 +174,19 @@ $users | Get-MsolUser | Select UserPrincipalName, Islicensed,Usagelocation | Exp
 ```
 
 This PowerShell command block:
-  
+
 - Displays the user principal name of each user.
-    
+
 - Assigns customized licenses to each user.
-    
+
 - Creates a CSV file with all the users that were processed and shows their license status.
-    
+
 ## See also
 
 [Disable access to Microsoft 365 services with PowerShell](disable-access-to-services-with-microsoft-365-powershell.md)
-  
+
 [Disable access to Sway with PowerShell](disable-access-to-sway-with-microsoft-365-powershell.md)
-  
+
 [Manage Microsoft 365 user accounts, licenses, and groups with PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
-  
+
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)

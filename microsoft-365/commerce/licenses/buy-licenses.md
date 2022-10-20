@@ -1,114 +1,145 @@
 ---
-title: "Buy or remove subscription licenses"
+title: "Buy or remove licenses"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.audience: Admin
+ms.reviewer: argani, nicholak
+audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
-- Adm_TOC
-- commerce
+- Adm_o365
 ms.custom:
-- SaRA
+- commerce_licensing
 - okr_SMB
 - AdminSurgePortfolio
 - manage_licenses
-search.appverid:
-- MET150
-description: "Learn how to buy more licenses or reduce the number of licenses for your Microsoft 365 for business subscription."
-ms.date: 07/01/2020
+- AdminTemplateSet
+- adminvideo
+search.appverid: MET150
+description: "Use these steps to buy more licenses or reduce the number of licenses for your Microsoft 365 for business subscription."
+ms.date: 09/29/2022
 ---
 
-# Buy or remove subscription licenses
+# Buy or remove Microsoft 365 licenses for a subscription
 
-::: moniker range="o365-21vianet"
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
+You can buy more licenses or reduce the number of licenses for your subscriptions by using the following steps.
 
 > [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
-
-You can buy more licenses or reduce the number of licenses for your subscriptions by using these steps.
+> For some subscriptions, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, turn off recurring billing to cancel the subscription at the end of its term.
 
 ## Before you begin
 
-- You must be either a Global admin or a Billing admin to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- You must be either a Global or Billing admin to do the tasks described in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 - You can [add users and assign licenses at the same time](../../admin/add-users/add-users.md).
+- If you bought your Microsoft 365 for business or Office 365 Enterprise plan through a third-party partner, you must buy additional licenses through that partner.
+
+## Watch: Buy new licenses
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198206).
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
+
+If the people who you're buying licenses for aren't active users in your organization yet, the next thing to do is [add users and assign licenses at the same time](../../admin/add-users/add-users.md).
+
+## Watch: Remove existing licenses
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4L53r]
+
+If you've removed licenses from a subscription, the next thing to do is [delete users from your organization](../../admin/add-users/delete-a-user.md).
 
 ## Buy or remove licenses for your business subscription
 
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. On the **Products** tab, find the subscription for which you want to buy or remove licenses. Select **More actions** (three dots), then select **Buy licenses**. [What if I don't see the Add/Remove licenses link?](#what-if-i-dont-see-the-addremove-licenses-link)
-3. If you want to decrease the number of licenses, at the top of the **Buy licenses** pane, select **remove licenses**.
-4. To buy or remove licenses, under **New quantity** in the **Total licenses** box, enter the total number of licenses that you want for this subscription. For example, if you have 100 licenses and you want to add five more, enter 105. If you want to remove five of them, enter 95.
-5. Select **Save**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
-2. On the **Subscriptions** page, select the subscription to which you want to buy or remove licenses, and then select **Add/Remove licenses**. [What if I don't see the Add/Remove licenses link?](#what-if-i-dont-see-the-addremove-licenses-link)
-3. In the **Total licenses** box, enter the total number of licenses that you want for this subscription, then select **Submit** \> **Close**. For example, if you have 100 licenses and you want to add five more, enter 105. If you want to remove five licenses, enter 95.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
-2. On the **Subscriptions** page, select the subscription to which you want to buy or remove licenses, and then select **Add/Remove licenses**. [What if I don't see the Add/Remove licenses link?](#what-if-i-dont-see-the-addremove-licenses-link)
-3. In the **Total licenses** box, enter the total number of licenses that you want for this subscription, and then select **Submit** \> **Close**. For example, if you have 100 licenses and you need to add 5 more, enter 105. If you want to remove 5 of them, enter 95.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
 
 ::: moniker-end
 
+2. On the **Products** tab, find the subscription for which you want to buy or remove licenses. Select the three dots (more actions), then select **Buy licenses**. [What if I don't see the Buy licenses or Remove licenses buttons?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
+
+3. If you want to reduce the number of licenses, at the top of the **Buy licenses** pane, select **remove licenses**.
+
+4. To buy or remove licenses, under **New quantity** in the **Total licenses** box, enter the total number of licenses that you want for this subscription. For example, if you have 100 licenses and you want to add five more, enter 105. If you want to remove five of them, enter 95.
+
+5. Select **Save**.
+
 > [!NOTE]
-> You can't reduce the number of licenses for your subscription if all licenses are currently assigned to users. To reduce the number of licenses, first [unassign one or more licenses from users](../../admin/manage/remove-licenses-from-users.md), then remove the licenses from the subscription.
+> 
+> - You can't reduce the number of licenses for your subscription if all licenses are currently assigned to users. To reduce the number of licenses, first [unassign one or more licenses from users](../../admin/manage/remove-licenses-from-users.md), then remove the licenses from the subscription.
+> - If you bought your subscription through a Microsoft Representative, contact them directly for help with reducing your license count.
 
-## What if I don't see the Add/Remove licenses link?
+## Add licenses to a prepaid subscription by using a Microsoft 365 product key
 
-This table describes the reasons why the **Add/Remove licenses** link might not be available, and what you can do about it.
+Prepaid product licenses are issued to you as a 25-character alphanumeric code, called a product key. After you buy the licenses you need, you can add them to your subscription by using the steps below. You can also use a product key to [extend the expiration date of your subscription](../subscriptions/renew-your-subscription.md#extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key).
+
+> [!NOTE]
+> If you don't want to buy a new product key, you can always choose to add a credit card or bank account to your subscription to pay for more licenses. For more information, see [Renew your subscription](../subscriptions/renew-your-subscription.md).
+  
+::: moniker range="o365-worldwide"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+
+::: moniker-end
+
+2. On the **Products** tab, select the subscription to which you want to add licenses.
+
+3. On the subscription details page, in the **Licenses** section, select **Add more licenses**.
+
+4. In the **Add more licenses pane**, select **Use a new and unused product key**, then select **Next**.
+
+5. Enter the product key, then select **Next**.
+    > [!NOTE]
+    > If you have more than one product key, you can select **Add another product key** to enter them.
+
+6. Review your order details, then select **Redeem**.
+
+## What if I don't see the Buy licenses or Remove licenses buttons?
+
+This table describes the reasons why the **Buy licenses** or **Remove licenses** buttons aren't available, and possible solutions.
 
 |Reason  |Description  |Solution  |
 |---------|---------|---------|
-|A credit check is pending. |If a credit check is pending, you see a "Pending credit check" message. You can't buy licenses until the credit check is complete.  | Check back later to see if the credit check has completed. Credit checks typically take up to two working days to complete.<br/>After the credit check is complete, you should see the **Add/Remove licenses** link. |
-|You activated the subscription by using a product key.| If the subscription was purchased and activated by using a 25-character product key, you see the text "Prepaid."  |See [Add licenses to a subscription paid for using a product key](add-licenses-using-product-key.md). |
-|You bought your subscription through a partner. | If the subscription was purchased via a partner, you see the Volume Licensing Service Center (VLSC) link. | See [Add licenses to a subscription purchased through the Volume Licensing Service Center](add-licenses-bought-through-vlsc.md). |
-|You bought your subscription through a reseller.|| If the subscription was purchased via a Cloud Solution Provider (CSP) partner, contact your CSP partner to buy more licenses.        |
-|You have a trial subscription. |A trial version of Microsoft 365 displays the text "Trial". | First buy your trial subscription, then you can add more licenses. See [Buy a subscription to Microsoft 365 for business from your free trial](../buy-a-subscription-from-your-free-trial.md).|
+|A credit check is pending. |If a credit check is pending, you can't buy or remove licenses until the credit check is complete.  | Check back later to see if the credit check has completed. Credit checks typically take up to two working days to complete.<br/>After the credit check is complete, you should see the **Buy licenses** and **Remove licenses** buttons. |
+|You activated the subscription by using a product key.| If the subscription was bought and activated by using a 25-character product key, you see the word "Prepaid" in the **Purchase channel** column of the **Your products** page.  |See [Add licenses to a subscription paid for using a product key](add-licenses-using-product-key.md). |
+|You bought your subscription through a reseller.| You see the word "Reseller" in the **Purchase channel** column of the **Your products** page. | If the subscription was bought via a Cloud Solution Provider (CSP) partner, contact your CSP partner to buy more licenses.        |
+|You have a trial subscription. | To view your trial subscriptions, select the filter button, then choose **Trial**. | First buy your trial subscription, then you can buy more licenses.|
 
-## What you need to know about buying licenses for your business subscription
+## When will the new licenses be available to assign?
 
-### License availability
+The payment method associated with your subscription or billing profile is charged as soon as you buy more licenses for a subscription. The licenses are immediately available for you to assign to users.
 
-- **If you have a billing profile**: The credit card associated with your billing profile is charged as soon as you buy more licenses for a subscription. The licenses are immediately available for you to assign to users. [What's a billing profile?](../billing-and-payments/manage-billing-profiles.md)
-- **If you don't have a billing profile**: If you pay for your subscription by credit or debit card, or bank account, any new licenses that you buy are immediately available after you receive an order confirmation. If you pay by invoice, you might have to wait for a credit check before your new licenses are available to use.
-  > [!NOTE]
-  > Paying by bank account is not available in some countries or regions.
-- **If you prepaid for your subscription with a product key**: You can add more licenses by adding a credit or debit card, or bank account to cover the additional cost of the new licenses. After you buy the new licenses, we add a second subscription with the number of new licenses that you just added. For example, if you have a prepaid subscription with five licenses, and then bought 10 more licenses, you see two subscriptions listed: one with the five prepaid licenses, and one with the 10 new licenses.
+If you prepaid for your subscription with a product key, you can add more licenses by using another product key, or by adding a credit or debit card, or bank account to cover the additional cost of the new licenses. If your subscription is prepaid, you can't remove licenses.
 
-### Changing your payment method
-
-- **If you have a billing profile**: The credit card associated with your billing profile is charged as soon as you buy more licenses for a subscription. [What's a billing profile?](../billing-and-payments/manage-billing-profiles.md)
-- **If you don’t have a billing profile:** If you pay by credit card, debit card, or bank account, the charge for buying new licenses appears on your payment method in two days.
-
-### Billing statements
+## How does buying or removing licenses affect my billing statements?
 
 - Licenses added in the middle of your billing period appear on your next invoice. If you pay annually, you are invoiced within a month for these changes.
-- On your next billing statement, the previous charge for the original number of licenses is deducted. We add a prorated charge for the time period with the original number of licenses, and add a charge for the new license count. There is also a charge for the current license count for the remainder of your billing period.
+- On your next billing statement, the previous charge for the original number of licenses is deducted. We add a prorated charge for the time period with the original number of licenses and add a charge for the new license count. There's also a charge for the current license count for the remainder of your billing period.
 
 ## Next steps
 
 If you bought more licenses for your subscription, the next thing you should do is [assign those licenses to users in your organization](../../admin/manage/assign-licenses-to-users.md).
 
-If you reduced the number of licenses for your subscription because someone has left your organization, you might want to remove that user’s account. To learn more, see [Remove a former employee](../../admin/add-users/remove-former-employee.md).
+If you reduced the number of licenses for your subscription because someone has left your organization, you might want to remove that user's account. To learn more, see [Remove a former employee](../../admin/add-users/remove-former-employee.md).
 
 ## Related content
 

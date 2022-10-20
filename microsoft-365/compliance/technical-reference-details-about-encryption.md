@@ -5,16 +5,15 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 06/15/2020
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
-- Strat_O365_IP
+- tier1
 search.appverid:
 - MET150
 - MOE150
@@ -29,7 +28,9 @@ Refer to this article to learn about certificates, technologies, and TLS cipher 
   
 - If you're looking for overview information, see [Encryption in Office 365](encryption.md).
 - If you're looking for setup information, see [Set up encryption in Office 365 Enterprise](set-up-encryption.md).
-- For information about cipher suites supported by specific versions of Windows, see [Cipher Suites in TLS/SSL (Schannel SSP)](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel).
+- For information about cipher suites supported by specific versions of Windows, see [Cipher Suites in TLS/SSL (Schannel SSP)](/windows/desktop/SecAuthN/cipher-suites-in-schannel).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Microsoft Office 365 certificate ownership and management
 
@@ -41,17 +42,20 @@ To provide best-in-class encryption, Office 365 regularly reviews supported encr
 
 ## FIPS compliance for Office 365
 
-All cipher suites supported by Office 365 use algorithms acceptable under FIPS 140-2. Office 365 inherits FIPS validations from Windows (through Schannel). For information about Schannel, see [Cipher Suites in TLS/SSL (Schannel SSP)](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel).
+All cipher suites supported by Office 365 use algorithms acceptable under FIPS 140-2. Office 365 inherits FIPS validations from Windows (through Schannel). For information about Schannel, see [Cipher Suites in TLS/SSL (Schannel SSP)](/windows/desktop/SecAuthN/cipher-suites-in-schannel).
   
 ## Versions of TLS supported by Office 365
 
 TLS, and SSL that came before TLS, are cryptographic protocols that secure communication over a network by using security certificates to encrypt a connection between computers. Office 365 supports TLS version 1.2 (TLS 1.2).
 
-TLS version 1.3 (TLS 1.3) is currently not supported.
+TLS version 1.3 (TLS 1.3) is supported by some of the services.
+
+> [!IMPORTANT]
+> Be aware that TLS versions deprecate, and that deprecated versions *should not be used* where newer versions are available. If your legacy services do not require TLS 1.0 or 1.1 you should disable them.
   
 ## Support for TLS 1.0 and 1.1 deprecation
 
-Office 365 stopped supporting TLS 1.0 and 1.1 on October 31, 2018. New issues found in clients, devices, or services that connect to Office 365 over TLS 1.0 and 1.1 won't be fixed. Official deprecation for GCC High and DoD environments began January 15, 2020. Deprecation of TLS 1.0 and 1.1 for Worldwide and GCC environments began October 15, 2020.
+Office 365 stopped supporting TLS 1.0 and 1.1 on October 31, 2018. We have completed disabling TLS 1.0 and 1.1 in GCC High and DoD environments. We began disabling TLS 1.0 and 1.1 for Worldwide and GCC environments beginning on October 15, 2020 and will continue with roll-out over the next weeks and months.
 
 To maintain a secure connection to Office 365 and Microsoft 365 services, all client-server and browser-server combinations use TLS 1.2 and modern cipher suites. You might have to update certain client-server and browser-server combinations. For information about how this change impacts you, see [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
   
@@ -69,34 +73,33 @@ TLS uses *cipher suites*, collections of encryption algorithms, to establish sec
 
 Office 365 responds to a connection request by first attempting to connect using the most secure cipher suite. If the connection doesn't work, Office 365 tries the second most secure cipher suite in the list, and so on. The service continues down the list until the connection is accepted. Likewise, when Office 365 requests a connection, the receiving service chooses whether TLS will be used and which cipher suite to use.
 
-> [!IMPORTANT]
-> Be aware that TLS versions deprecate, and that deprecated versions *should not be used* where newer versions are available. TLS 1.3 is currently not supported. If your legacy services do not require TLS 1.0 or 1.1 you should disable them.
-
-| Cipher suite | Key exchange algorithm/strength | Perfect Forward Secrecy | Cipher/strength | Authentication algorithm |
+| Cipher suite name | Key exchange algorithm/strength | Forward secrecy | Cipher/strength | Authentication algorithm/strength |
 |:-----|:-----|:-----|:-----|:-----|
-|TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 <br/>     |ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|RSA/112 <br/> |
-|TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 <br/>     |ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|RSA/112 <br/> |
-|TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 <br/>     |ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|RSA/112 <br/> |
-|TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 <br/>     |ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|RSA/112 <br/> |
-|TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA <br/>        |ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|RSA/112 <br/> |
-|TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA <br/>        |ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|RSA/112 <br/> |
-|TLS_RSA_WITH_AES_256_GCM_SHA384 <br/>           |RSA/112 <br/> |No <br/> |AES/256 <br/>|RSA/112 <br/> |
-|TLS_RSA_WITH_AES_128_GCM_SHA256 <br/>           |RSA/112 <br/> |No <br/> |AES/256 <br/>|RSA/112 <br/> |
+| TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> | ECDH/192  <br/> | Yes  <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> | ECDH/128  <br/> | Yes  <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384  <br/> | ECDH/192  <br/> | Yes  <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256  <br/> | ECDH/128  <br/> | Yes  <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA     <br/> | ECDH/192  <br/> | Yes  <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA     <br/> | ECDH/128  <br/> | Yes  <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS_RSA_WITH_AES_256_GCM_SHA384        <br/> | RSA/112   <br/> | No   <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS_RSA_WITH_AES_128_GCM_SHA256        <br/> | RSA/112   <br/> | No   <br/> | AES/256  <br/> | RSA/112  <br/> |
 
-These cipher suites supported TLS 1.0 and 1.1 protocols until their deprecation date. For GCC High and DoD environments that deprecation date was January 15, 2020, and for Worldwide and GCC environments that date was October 15, 2020.
+The following cipher suites supported TLS 1.0 and 1.1 protocols until their deprecation date. For GCC High and DoD environments that deprecation date was January 15, 2020. For Worldwide and GCC environments that date was October 15, 2020.
 
-| Protocols | Cipher suite name | Key exchange algorithm/Strength | Perfect Forward Secrecy support | Authentication algorithm/Strength | Cipher/Strength |
+| Protocols | Cipher suite name | Key exchange algorithm/strength | Forward secrecy | Cipher/strength | Authentication algorithm/strength | 
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  <br/> |ECDH/192  <br/> |Yes  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> |ECDH/128  <br/> |Yes  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA        <br/> |RSA/112  <br/>  |No  <br/>  |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA        <br/> |RSA/112  <br/>  |No  <br/>  |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA256     <br/> |RSA/112  <br/>  |No   <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256     <br/> |RSA/112  <br/>  |No   <br/> |RSA/112  <br/> |AES/256  <br/> |
+| TLS 1.0, 1.1, 1.2  <br/> | TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  <br/> | ECDH/192  <br/> | Yes  <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS 1.0, 1.1, 1.2  <br/> | TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> | ECDH/128  <br/> | Yes  <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS 1.0, 1.1, 1.2  <br/> | TLS_RSA_WITH_AES_256_CBC_SHA        <br/> | RSA/112   <br/> | No   <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS 1.0, 1.1, 1.2  <br/> | TLS_RSA_WITH_AES_128_CBC_SHA        <br/> | RSA/112   <br/> | No   <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS 1.0, 1.1, 1.2  <br/> | TLS_RSA_WITH_AES_256_CBC_SHA256     <br/> | RSA/112   <br/> | No   <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS 1.0, 1.1, 1.2  <br/> | TLS_RSA_WITH_AES_128_CBC_SHA256     <br/> | RSA/112   <br/> | No   <br/> | AES/256  <br/> | RSA/112  <br/> |
+
+Certain Office 365 products (including Microsoft Teams) use [Azure Front Door](/azure/frontdoor/front-door-overview) to terminate TLS connections and route network traffic efficiently. At least one of the [cipher suites supported by Azure Front Door over TLS 1.2](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-) must be enabled to successfully connect to these products. For Windows 10 and above, we recommend enabling one or both of the ECDHE cipher suites for better security. Windows 7, 8, and 8.1 are not compatible with Azure Front Door's ECDHE cipher suites and the DHE cipher suites have been provided for compatibility with those operating systems.
 
 ## Related articles
 
-[TLS Cipher Suites in Windows 10 v1903](https://docs.microsoft.com/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)
+[TLS Cipher Suites in Windows 10 v1903](/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)
 
 [Encryption in Office 365](encryption.md)
   
@@ -104,6 +107,8 @@ These cipher suites supported TLS 1.0 and 1.1 protocols until their deprecation 
   
 [Schannel implementation of TLS 1.0 in Windows security status update: November 24, 2015](https://support.microsoft.com/kb/3117336)
   
-[TLS/SSL Cryptographic Enhancements (Windows IT Center)](https://technet.microsoft.com/library/cc766285%28v=ws.10%29.aspx)
+[TLS/SSL Cryptographic Enhancements (Windows IT Center)](/previous-versions/windows/it-pro/windows-vista/cc766285(v=ws.10))
   
-[Preparing for TLS 1.2 in Office 365 and Office 365 GCC](https://docs.microsoft.com/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)
+[Preparing for TLS 1.2 in Office 365 and Office 365 GCC](/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)
+
+[What are the current cipher suites supported by Azure Front Door?](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-)

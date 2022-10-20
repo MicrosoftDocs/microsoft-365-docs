@@ -2,15 +2,16 @@
 title: "Password reset for your Microsoft 365 test environment"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: 
@@ -33,7 +34,7 @@ Setting up SSPR involves three phases:
 - [Phase 2: Enable password writeback](#phase-2-enable-password-writeback)
 - [Phase 3: Configure and test password reset](#phase-3-configure-and-test-password-reset)
     
-![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
@@ -44,7 +45,7 @@ First, follow the instructions in [password hash synchronization](password-hash-
 
 Your resulting configuration looks like this:
   
-![The simulated enterprise with password hash synchronization test environment](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![The simulated enterprise with password hash synchronization test environment.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 This configuration consists of:
   
@@ -85,7 +86,7 @@ Next, test password reset for the User 3 account.
 1. Enter the User 3 account name, enter the characters from the CAPTCHA, and then select **Next**.
 1. For **verification step 1**, select **Email my alternate email**, and then select **Email**. When you receive the email, enter the verification code, and then select **Next**.
 1. In **Get back into your account**, enter a new password for the User 3 account, and then select **Finish**. Note the changed password of the User 3 account and store it in a safe location.
-1. In a separate tab of the same browser, go to [https://portal.office.com](https://portal.office.com), and then sign in with the User 3 account name and its new password. You should see the **Microsoft Office Home** page.
+1. In a separate tab of the same browser, go to [https://admin.microsoft.com](https://admin.microsoft.com), and then sign in with the User 3 account name and its new password. You should see the **Microsoft Office Home** page.
 
 ## Next step
 
@@ -97,4 +98,4 @@ Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) featu
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](/microsoft-365-enterprise/)

@@ -1,104 +1,104 @@
 ---
-title: "Import custodians to an Advanced eDiscovery case"
+title: "Import custodians to an eDiscovery (Premium) case"
+description: "Use the bulk-import tool to quickly add multiple custodians and their associated data sources to a case in Microsoft Purview eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance 
+ms.localizationpriority: medium
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150 
-description: "Use the import tool dto quickly add multiple custodians and their associated data sources to a case in Advanced eDiscovery."
 ---
 
-# Import custodians to an Advanced eDiscovery case
+# Import custodians to an eDiscovery (Premium) case
 
-For Advanced eDiscovery cases that involve many custodians, you can import multiple custodians at once by using a CSV file that contains the information necessary to add them to a case.
+For Microsoft Purview eDiscovery (Premium) cases that involve many custodians, you can import multiple custodians at once by using a CSV file that contains the information necessary to add them to a case. The import custodians tool will also validate the CSV file before the import job is created. This means you can fix any errors in the CSV file instead of having to wait until the import job is complete before learning there are errors that prevent a custodian from being added to the case.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## Before you import custodians
+
+- You can import a maximum of 1,000 custodians (rows) per CSV file. Note that importing 1,000 custodians at the same time might result in timeout errors and some custodians might fail the import. To remediate this, repeat the import and the failed custodians should be imported. To avoid timeouts we recommend importing 200 custodians at a time.
+
+- You can associate up to 500 data sources for each custodian.  
+
+- You can only import custodians that are part of your organization's Azure Active Directory.
+
+- Each custodian must have a unique email address.
+
+- To import an inactive mailbox as a custodian or to associate an inactive mailbox with another custodian, add a "." prefix to the email address of the inactive mailbox (for example, .sarad@contoso.onmmicrosoft.com).
 
 ## Import custodians
 
-1. Open the Advanced eDiscovery case and select the **Data sources** tab.
+1. Open the eDiscovery (Premium) case and select the **Data sources** tab.
 
 2. Click **Add data source** > **Import custodians**.
 
-3. On the **Import custodians** flyout page, click **Download a blank template** to download a custodian template CSV file.
+3. On the **Get template** wizard page, click **Download the CSV template** to download a custodian template CSV file.
 
-   ![Download a CSV template from Import custodians flyout page](../media/ImportCustodians1.png)
+   ![Download a CSV template from Import custodians flyout page.](../media/ImportCustodians1.png)
 
-4. Add the custodial information to the CSV file and save it to your local computer. See the [Custodian CSV file](#custodian-csv-file) section for information about the required properties in the CSV file.
+4. Add the custodial information to the CSV file and save it to your local computer. See the [Custodian CSV file](#custodian-csv-file) section for detailed information about the required properties in the CSV file.
 
 5. After you've prepared the CSV file with the custodian information, go back to the **Data sources** tab, and click **Add data source** > **Import custodians** again.
 
-6. On the **Import custodians** flyout page, click **Browse** and then upload the CSV file that contains the custodian information.
+6. On the **Upload CSV file** wizard page, click **Upload csv file** and then upload the CSV file that contains the custodian information.
 
-   After the CSV file is uploaded, a job named **BulkAddCustodian** is created and displayed on the **Jobs** tab. The job validates the custodians and their associated data sources and then adds them to the **Data sources** page of the case.
+   After you upload the CSV file, the import wizard validates the CSV file. If any validation errors exist, the wizard displays an error banner with a link to view the errors.
+
+   ![Validation error banner with link to more information.](../media/ImportCustodians2.png)
+
+   The error information identifies the row and column of the cell that contains the error, and suggests a remediation action. You have to fix any validation error and then reupload the fixed CSV file. The CSV file must be successfully validated before you can create the import custodian job.
+
+7. Once the CSV file has been successfully validated, click **Next** and then click **Import** to start the import job.
+
+After you start the import job, eDiscovery (Premium) does the following things:
+
+- Creates a job named **BulkAddCustodian** on the **Jobs** tab of the case.
+
+- Performs Advanced indexing of all data sources for each custodian.
+
+- Places all custodian data sources on hold (if the **Is OnHold** property in the CSV file is set to TRUE)
+
+When the import custodian job is complete, the custodians and their associated data sources are added to the **Data sources** page of the case.
 
 ## Custodian CSV file
 
-After you download the CSV custodian template, you can add custodians and their data source in each row. Be sure not to change the column names in the header row. Use the workload type and workload location columns to associate other data sources to a custodian.
+After you download the CSV custodian template, you can add custodians and their data sources in each row. Be sure not to change the column names in the header row. Use the workload type and workload location columns to associate other data sources to a custodian.
 
 | Column name|Description|
 |:------- |:------------------------------------------------------------|
 |**Custodian contactEmail**     |The custodian's UPN email address. For example, sarad@contoso.onmicrosoft.com.           |
 |**Exchange Enabled** | TRUE/FALSE value to include or not include the custodian's mailbox.      |
-|**OneDrive Enabled** | TRUE/FALSE value to include or not included the custodian's OneDrive for Business account. |
-|**Is OnHold**        | TRUE/FALSE value to indicate whether to place the custodian data sources on hold.       |
-|**Workload1 Type**         |String value indicating the type of data source to associate with the custodian. Possible values include: <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<br/>- TeamsSite<br/> - YammerMailbox<br/>- YammerSite |
+|**OneDrive Enabled** | TRUE/FALSE value to include or not include the custodian's OneDrive for Business account. |
+|**Is OnHold**        | TRUE/FALSE value to indicate whether to place the custodian data sources on hold. <sup>1</sup>     |
+|**Workload1 Type**         |String value indicating the type of data source to associate with the custodian. Possible values include: <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<sup>2</sup><br/>- YammerMailbox<sup>2</sup>. The previous values for these workload types are case sensitive. The CSV file contains columns for three workload types and their corresponding workload locations. You can add a total of 500 workload types and locations.|
 |**Workload1 Location**     | Depending on your workload type, this would be the location of the data source. For example, the email address for an Exchange mailbox or the URL for a SharePoint site. |
 |||
+
+> [!NOTE]
+> <sup>1</sup> If you put more than 1,000 mailboxes or 100 sites on hold in a case, the system will automatically scale the eDiscovery hold as needed. This means the system automatically adds data locations to multiple hold policies, instead of adding them to a single policy. However, the limit of 10,000 case hold policies per organization still applies. For more information about hold limits, see [Limits in eDiscovery (Premium)](limits-ediscovery20.md#hold-limits).
+<br>
+> <sup>2</sup> When you include TeamsMailbox and YammerMailbox workloads in the CSV file, the group site (TeamSite and YammerSite) are automatically added by default. You don't need to specify TeamsSite and YammerSite separately in the CSV file.
 
 Here's an example of a CSV file with custodian information:<br/><br/>
 
 |Custodian contactEmail      | Exchange Enabled | OneDrive Enabled | Is OnHold | Workload1 Type | Workload1 Location             |
 | ----------------- | ---------------- | ---------------- | --------- | -------------- | ------------------------------ |
-|robinc@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
-|pillarp@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | |  |
+|robinc@contoso.onmicrosoft.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
+|pillarp@contoso.onmicrosoft.com | TRUE             | TRUE             | TRUE      | |  |
+|.johnj@contoso.onmicrosoft.com|TRUE|TRUE|TRUE||
+|sarad@contoso.onmicrosoft.com|TRUE|TRUE|TRUE|ExchangeMailbox|.saradavis@contoso.onmicrosoft.com
 ||||||
 
-## Custodian and data source validation
-
-After you upload the custodian CSV file, Advanced eDiscovery does the following things:
-
-1. Validates the custodians and their data sources.
-
-2. Indexes all data sources for each custodian and places them on hold (if the **Is OnHold** property in the CSV file is set to TRUE).
-
-### Custodian validation
-
-Currently, we only support importing custodians that are included in your organization's Azure Active Directory (Azure AD).
-
-The custodian import tool finds and validates custodians using the UPN value in the **Custodian contactEmail** column in the CSV file. Custodians that are validated are automatically added to the case and listed on the **Data sources** tab of the case. If a custodian can't be validated, they are listed in the error log for the BulkAddCustodian job that is listed on the **Jobs** tab in the case. Unvalidated custodians are not added to the case or listed on the **Data sources** tab.
-
-### Data source validation
-
-After custodians are validated and added to the case, each primary mailbox and OneDrive account that's associated with a custodian is added.
-
-However, if any of the other data sources (such as SharePoint sites, Microsoft Teams, Microsoft 365 Groups, or Yammer groups) associated with a custodian can't be found, none of them are assigned to the custodian and the value **Not validated** is displayed in the **Status** column next to the custodian on the **Data sources** tab.
-
-To add validated data sources for a custodian:
-
-1. On the **Data sources** tab, select a custodian that contains data sources that aren't validated.
-
-2. On the custodian flyout page, scroll to the **Custodial locations** section to view both validated and unvalidated data sources that are associated with custodian.
-
-3. Click **Edit** at the top of the flyout page to remove invalid data sources or add new ones.
-
-4. After you remove unvalidated data sources or add a new one, the value **Active** is displayed in **Status** column for the custodian on the **Data sources** tab. To add sources that previously appeared to be invalid, follow the remediation steps below to manually add them to a custodian.
-
-### Remediating invalid data sources
-
-To manually add and associate a data source that was previously invalid:
-
-1. On the **Data sources** tab, select a custodian to manually add and associate a data source that was previously invalid.
-
-2. Click **Edit** at the top of the flyout page to associate mailboxes, sites, Teams, or Yammer groups to the custodian. Do this by clicking **Edit** next to the appropriate data location type.
-
-3. Click **Next** to display the **Hold settings** page and configure the hold setting for the data sources you added.
-
-4. Click **Next** to display the **Review custodians** page, and then click **Submit** to save your changes.
+> [!NOTE]
+> As previously explained, add a "." prefix to the UPN address of an  inactive mailbox to import an inactive mailbox as a custodian or to associate an inactive mailbox with another custodian.

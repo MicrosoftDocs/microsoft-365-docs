@@ -1,14 +1,16 @@
 ---
 title: "High availability federated authentication Phase 3 Configure AD FS servers"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: 
@@ -43,7 +45,7 @@ Use the following block of PowerShell commands to create the virtual machines fo
 Recall that you defined Table M in [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) and Tables R, V, S, I, and A in [Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
+> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell](/powershell/azure/get-started-azureps). 
   
 First, you create an Azure internal load balancer for the two AD FS servers. Specify the values for the variables, removing the \< and > characters. When you have supplied all the proper values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.
   
@@ -143,7 +145,7 @@ Here is the configuration resulting from the successful completion of this phase
   
 **Phase 3: The AD FS servers and internal load balancer for your high availability federated authentication infrastructure in Azure**
 
-![Phase 3 of the high availability Microsoft 365 federated authentication infrastructure in Azure with the AD FS servers](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![Phase 3 of the high availability Microsoft 365 federated authentication infrastructure in Azure with the AD FS servers.](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## Next step
 
@@ -154,5 +156,3 @@ Use [Phase 4: Configure web application proxies](high-availability-federated-aut
 [Deploy high availability federated authentication for Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
 [Federated identity for your Microsoft 365 dev/test environment](federated-identity-for-your-microsoft-365-dev-test-environment.md)
-
-

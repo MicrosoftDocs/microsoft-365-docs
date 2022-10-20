@@ -1,24 +1,31 @@
 ---
-title: "Fix possible mail loop insight"
-f1.keywords:
-- NOCSH
-ms.author: siosulli
-author: chrisda
+title: Fix possible mail loop insight
+f1.keywords: 
+  - NOCSH
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
-localization_priority: Normal
+ms.collection: m365-security
+ms.localizationpriority: medium
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn how to use the Fix possible mail loop insight in the Mail flow dashboard in the Security & Compliance Center to identify and fix mail loops in their organization."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to use the Fix possible mail loop insight in the Mail flow dashboard in the Security & Compliance Center to identify and fix mail loops in their organization.
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Fix possible mail loop insight in the Security & Compliance Center
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Mail loops are bad because:
 
@@ -30,7 +37,7 @@ The **Fix possible mail loop** insight in the **Recommended for you** area of th
 
 This insight appears only after the condition is detected (if you don't have any mail loops, you won't see the insight).
 
-![Fix slow mail flow rules insight in the Recommended for you area of the Mail flow dashboard](../../media/mfi-fix-possible-mail-loop.png)
+:::image type="content" source="../../media/mfi-fix-possible-mail-loop.png" alt-text="The Fix slow mail flow rules insight in the Recommended for you area of the Mail flow dashboard" lightbox="../../media/mfi-fix-possible-mail-loop.png":::
 
 When you click **View details** on the widget, a flyout appears with more information:
 
@@ -40,7 +47,7 @@ When you click **View details** on the widget, a flyout appears with more inform
 - **MX record**: The host (**Mail server**) and **Priority** values of the MX record for the domain.
 - **Loop reason** and **How to fix**: We'll identify the most common mail loop scenarios and provide recommended actions to fix the loop.
 
-![Details flyout that appears after clicking View details on the Fix possible mail loop insight](../../media/mfi-fix-possible-mail-loop-details.png)
+:::image type="content" source="../../media/mfi-fix-possible-mail-loop-details.png" alt-text="The Details flyout that appears after clicking View details on the Fix possible mail loop insight" lightbox="../../media/mfi-fix-possible-mail-loop-details.png":::
 
 ## See also
 

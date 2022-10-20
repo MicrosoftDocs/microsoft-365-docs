@@ -7,15 +7,18 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: o365-solutions
+
+ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - m365solution-collabgovernance
 search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
+recommendations: false
 description: "Learn how to create a naming policy for Microsoft 365 groups."
 ---
 
@@ -26,7 +29,7 @@ You can use a group naming policy to enforce a consistent naming strategy for gr
 The naming policy is applied to groups that are created across all groups workloads (like Outlook, Microsoft Teams, SharePoint, Planner, Yammer, etc.). It gets applied to both the group name and group alias. It also gets applied when a user creates a group and when the group name, alias, description, or avatar is edited for an existing group.
 
 > [!TIP]
-> A Microsoft 365 group naming policy only applies to Microsoft 365 groups. It doesn't apply to distribution groups created in Exchange Online. To create a naming policy for distribution groups, see [Create a distribution group naming policy](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
+> A Microsoft 365 group naming policy only applies to Microsoft 365 groups. It doesn't apply to distribution groups created in Exchange Online. To create a naming policy for distribution groups, see [Create a distribution group naming policy](/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
 
 The group naming policy consists of the following features:
 
@@ -122,12 +125,12 @@ To set up a naming policy:
 5. Choose between **Attribute** and **String** for each line and then specify the attribute or string.
 6. When you have added the prefixes and suffixes that you need, click **Save**.
 
-![Screenshot of the groups naming policy settings in Azure Active Directory](../media/groups-naming-policy-azure.png)
+![Screenshot of the groups naming policy settings in Azure Active Directory.](../media/groups-naming-policy-azure.png)
 
 ## Related topics
 
-[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Create your collaboration governance plan](collaboration-governance-first.md)
 
-[Azure Active Directory cmdlets for configuring group settings](https://go.microsoft.com/fwlink/?linkid=868341)
+[Azure Active Directory cmdlets for configuring group settings](/azure/active-directory/enterprise-users/groups-settings-cmdlets)

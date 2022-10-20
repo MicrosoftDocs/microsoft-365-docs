@@ -1,146 +1,128 @@
 ---
-title: "Create a form processing model"
-ms.author: efrene
-author: efrene
+title: Train a structured document processing model in Microsoft Syntex
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: 
-ms.collection: enabler-strategic
-localization_priority: Priority
-description: "Create a form processing model in Microsoft SharePoint Syntex."
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
+ms.custom: admindeeplinkSPO
+ms.localizationpriority:  medium
+description: Learn how to train a structured document processing model in Microsoft Syntex.
 ---
 
-# Create a form processing model in Microsoft SharePoint Syntex
+# Train a structured document processing model in Microsoft Syntex
 
+<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhN]  
 
 </br>
 
-Using [AI Builder](https://docs.microsoft.com/ai-builder/overview) - a feature in Microsoft PowerApps - SharePoint Syntex users can create a [form processing model](form-processing-overview.md) directly from a SharePoint document library. 
 
-Creating a form processing model involves the following:
- - Step 1: Create the from processing model to create the content type
- - Step 2: Add and analyze example files
- - Step 3: Select your form fields
- - Step 4: Train and test your model
- - Step 5: Publish your model
- - Step 6: Use your model
+Using [AI Builder](/ai-builder/overview)—a feature in Microsoft Power Apps—Syntex users can create a [structured document processing](form-processing-overview.md) model directly from a SharePoint document library. 
+--->
 
-## Requirements
+Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a structured document processing model in a content center. Or, follow the instructions in [Create a model on a local SharePoint site](create-local-model.md) to create the model on a local site. Then use this article to train your model.
 
-You can only create a form processing model in SharePoint document libraries for which it is enabled. If form processing is enabled, you are able to see the **AI Builder** **"Create a form processing model'** under the **Automate** menu in your document library.  If you need processing enabled on your document library, you must contact your SharePoint administrator.
+To train a structured document processing model, follow these steps:
 
- ![Create an AI Builder model](../media/content-understanding/create-ai-builder-model.png)</br>
+ - [Step 1: Add and analyze documents](#step-1-add-and-analyze-documents)
+ - [Step 2: Tag fields and tables](#step-2-tag-fields-and-tables)
+ - [Step 3: Train and publish your model](#step-3-train-and-publish-your-model)
+ - [Step 4: Use your model](#step-4-use-your-model)
 
-## Step 1: Create a form processing model
+## Step 1: Add and analyze documents
 
-The first step in creating a form processing model is to name it and create the define the new content type and create a new document library view for it.
-
-1. From the document library, select the **Automate** menu, select **AI Builder**, and then select **Create a Form Processing model**.
-
-    ![Create a model](../media/content-understanding/create-ai-builder-model.png)</br>
-
-2. In the **New form processing model** pane, in the  **Name** field, type a name for your model (for example, *Purchase Orders*).
-
-    ![New form processing model](../media/content-understanding/new-form-model.png)</br> 
-
-3. When you create a form processing model, you create a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint Content Types are managed through the [Content types gallery]().
-
-    Select **Advanced settings** if you want to map this model to an existing content type in the SharePoint Content types gallery to use its schema. 
-
-4. Your model creates a new view in your document library for your extracted data. If you do not want it to the default view, deselect **Set the view as default**.
-
-5. Select **Create**.
-
-## Step 2: Add and analyze documents
-
-After you create your new form processing model, your browser opens a new PowerApps AI Builder forms processing model page. On this page you can add and analyze your example documents. </br>
+After you create your structured document processing model, the **Choose information to extract** page opens. Here you list all pieces of information that you want the AI model to extract from your documents, such as *Name*, *Address*, or *Amount*. 
 
 > [!NOTE]
-> When looking for example files to use, see the [form processing model input document requirements and optimization tips](https://docs.microsoft.com/ai-builder/form-processing-model-requirements). 
-
-   ![Power Apps AI Builder](../media/content-understanding/powerapps.png)</br> 
+> When you look for example files to use, see the [document processing model input document requirements and optimization tips](/ai-builder/form-processing-model-requirements). 
  
-1. Select **Add documents** to begin adding example documents analyzed to determine the named value pairs that can be extracted. You can then choose either **Upload from local storage**, **SharePoint**, or **Azure Blob storage**. You need to use at least five files for training.
+1. You first define the fields and tables you want to teach your model to extract on the **Choose information to extract** page. For detailed steps, see [Define fields and tables to extract](/ai-builder/create-form-processing-model#define-fields-and-tables-to-extract). 
 
-2. After adding files, select **Analyze** to check for any information common is all files. This may take several minutes to complete.</br> 
- 
-    ![Analyze files](../media/content-understanding/analyze.png)</br> 
+2.  You can create as many collections of document layouts you want your model to process. For detailed steps, see [Group documents by collections](/ai-builder/create-form-processing-model#group-documents-by-collections). 
 
-3. After the files have been analyzed, in the **Select the form fields you want to save** page select the file to view the detected fields.</br>
+3. After you create your collections and add at least five example files for each, AI Builder on Syntex will examine the uploaded documents to detect the fields and tables. This process usually takes a few seconds. When the analysis is complete, you can proceed with tagging the documents.
 
-    ![Select form fields](../media/content-understanding/select-form-fields.png)</br> 
+## Step 2: Tag fields and tables
 
-## Step 3: Select your form fields
+You need to tag the documents to teach the model to understand the fields and table data you want to extract. For detailed steps, see [Tag documents](/ai-builder/create-form-processing-model#tag-documents).
 
-After analyzing the documents for fields, you can now see the fields that were found, and identify the ones that you want to save. Saved fields display as columns in your model's document library view and show the values extracted from each document.
+## Step 3: Train and publish your model
 
-1. The next page displays one of your sample files and will highlight all common fields that were automatically detected by the system. </br>
+1. After you create and train your model, you're ready to publish it and use it in SharePoint. To publish the model, select **Publish**. For detailed steps, see [Train and publish your document processing model](/ai-builder/form-processing-train). 
 
-    ![Select fields page](../media/content-understanding/select-fields-page.png)</br> 
+    ![Screenshot in showing the model details on the model home page.](../media/content-understanding/ai-builder-create-a-flow-1.png)
 
-2. Select the fields that you want to save and select the checkbox to confirm your selection. For example, in the Purchase Order model, choose to select the *Date*, *PO*, and *Total* fields.  Note that you can also choose to rename a field if you choose. </br>
+2. After the model is published, you will go to the model home page. You'll then have the option to apply the model to a document library.
 
-    ![Select PO#](../media/content-understanding/po.png)</br> 
+    ![Screenshot of the model home page to apply the model a library.](../media/content-understanding/ai-builder-apply-model.png)
 
-3. If a field was not detected by analysis, you can still choose to add it. Highlight the information you want to extract, and in the name box type in the name you want. Then select the check box. Note that you need to confirm undetected fields in your remaining sample files.
+## Step 4: Use your model
 
-4. Click **Confirm fields** after you have selected the fields that you want to save. </br>
- 
-    ![Confirm fields after selecting fields](../media/content-understanding/confirm-fields.png)</br> 
- 
-5. On the **Select the form fields you want to save** page, it shows the number of fields you have selected. Select **Done**.
+1. In the document library model view, notice that the fields you selected now display as columns.
 
-## Step 4: Train and test your model
+    ![Document library model applied.](../media/content-understanding/doc-lib-view.png)
 
-After selecting the fields you want to save, the **Model Summary** page lets you train and test your model.
+2. Notice that the information link next to **Documents** notes that a forms processing model is applied to this document library.
+<!---
+    ![Info button.](../media/content-understanding/info-button.png)  
+--->
+3. Upload files to your document library. Any files that the model identifies as its content type lists the files in your view and displays the extracted data in the columns.
 
-1. On the **Model Summary** page, the saved fields will show in the **Selected fields** section. Select **Train** to begin training on your example files. Note that this may take a few minutes to complete.</br>
+    ![Done.](../media/content-understanding/doc-lib-done.png) 
 
-     ![Select fields train](../media/content-understanding/select-fields-train.png)</br> 
+> [!NOTE]
+> If a structured or freeform document processing model and an unstructured document processing model are applied to the same library, the file is classified using the unstructured document processing model and any trained extractors for that model. If there are any empty columns that match the document processing model, the columns will be populated using those extracted values.
 
-2. When you see the notification that training has completed, select **Go to details page**. 
+### Classification Date field
 
-3. On the **Model details** page, you can choose to test how your model works by selecting **Quick test**. This lets you drag and drop files to the page and see if the fields are detected.
+When any custom model is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
 
-    ![Confirm fields](../media/content-understanding/select-fields-train.png)</br> 
+When a model is stamped with the **Classification Date**, you can use the **Send an email after Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in the SharePoint document library.
 
-2. When you see the notification that training has completed, select **Go to details page**. 
+To run the flow:
 
-3. On the **Model details** page, choose to test how your model works by selecting **Quick test**. This lets you drag and drop files to the page and see if the fields are detected.
+1. Select a file, and then select **Integrate** > **Power Automate** > **Create a flow**.
 
-## Step 5: Publish your model
+2. On the **Create a flow** panel, select **Send an email after Syntex processes a file**.
 
-1. If you are satisfied with the results of your model, select **Publish** to make it available for use.
+    ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
 
-2. After the model is published, select **Use model**. This creates a PowerAutomate flow that can run in your SharePoint document library and extracts the fields that have been identified in the model, then select **Create Flow**.
-  
-3. When completed, you will see the message **Your flow has been successfully created**.
- 
-## Step 6: Use your model
+### Use flows to extract information
 
-After publishing your model and creating it's PowerAutomate flow, you can use your model in your SharePoint document library.
+> [!IMPORTANT]
+> The information in this section doesn't apply to the latest release of Syntex. It is left as reference only for the form processing models that were created in previous releases. In the latest release, you no longer need to configure the flows to process existing files.
 
-1. After publishing your model, select **Go to SharePoint** to go to your document library.
+Two flows are available to process a selected file or batch of files in a library where a structured document processing model has been applied.
 
-2. In the document library model view, notice that the fields you selected now display as columns.</br>
+- **Extract info from an image or PDF file with a document processing model** — Use to extract text from a selected image or PDF file by running a document processing model. Supports a single selected file at a time, and supports only PDF files and image files (.png, .jpg, and .jpeg). To run the flow, select a file, and then select **Automate** > **Extract info**.
 
-    ![Document library model applied](../media/content-understanding/doc-lib-view.png)</br> 
+    ![Screenshot showing the Automate menu with Extract info highlighted.](../media/content-understanding/automate-extract-info.png)  
 
-3. Notice that the information link next to **Documents** notes that a forms processing model is applied to this document library.
+- **Extract info from files with a document processing model** — Use with document processing models to read and extract information from a batch of files. Processes up to 5,000 SharePoint files at a time. When you run this flow, there are certain parameters you can set. You can:
 
-    ![Info button](../media/content-understanding/info-button.png)</br>  
+    - Choose whether to include previously processed files (the default isn't to include previously processed files).
+    - Select the number of files to process (the default is 100 files).
+    - Specify the order in which to process the files (choices are by file ID, file name, file created time, or last modified time).
+    - Specify how you want the order sorted (ascending or descending order).
 
-4. Upload files to your document library. Any files that the model identifies as it's content type lists the files in your view and displays the extracted data in the columns.</br>
+    ![Screenshot showing the Run flow panel with parameter options highlighted.](../media/content-understanding/run-flow-panel.png)  
+    
+> [!NOTE]
+> The **Extract info from an image or PDF file with a document processing model** flow is automatically available for a library with a document processing model associated. The **Extract info from files with a document processing model** flow is a template that must be added to the library if required.
 
-    ![Done](../media/content-understanding/doc-lib-done.png)</br>  
+## See also
 
-## See Also
-  
-[Power Automate documentation](https://docs.microsoft.com/power-automate/)
+[Create a model in Microsoft Syntex](create-syntex-model.md)
 
-[Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Power Automate documentation](/power-automate/)
+
+[Training: Improve business performance with AI Builder](/training/paths/improve-business-performance-ai-builder/?source=learn)

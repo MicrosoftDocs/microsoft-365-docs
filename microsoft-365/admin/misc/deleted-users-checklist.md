@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
@@ -49,4 +50,4 @@ If you have a new employee or person that's joining your organization, you can a
   
 ## Remove license so you don't have to pay for it
 
-You can also remove license from your subscription so you don't have to pay for it. From the admin center home page, type **subscription** and select **View subscriptions**. Select **Add/remove licenses**. In the **Total licenses** box, enter the total number of licenses that you need for this subscription and then select **Submit change**. For example, if you had 5 licenses and you need to remove 1 of them, you would enter **4**. [Read full article](../../commerce/licenses/remove-licenses-from-subscription.md).
+You can also remove license from your subscription so you don't have to pay for it. From the admin center home page, type **subscription** and select **View subscriptions**. Select **Add/remove licenses**. In the **Total licenses** box, enter the total number of licenses that you need for this subscription and then select **Submit change**. For example, if you had 5 licenses and you need to remove 1 of them, you would enter **4**. [Read full article](../../commerce/licenses/buy-licenses.md).

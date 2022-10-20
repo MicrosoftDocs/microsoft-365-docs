@@ -2,15 +2,17 @@
 title: "Protect global administrator accounts in your Microsoft 365 for enterprise test environment"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: M365-identity-device-management
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
+- M365-identity-device-management
 ms.custom: 
 - TLG
 - Ent_TLGs
@@ -29,7 +31,7 @@ Protecting global administrator accounts in your Microsoft 365 for enterprise te
 - [Phase 1: Build out your Microsoft 365 for enterprise test environment](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Phase 2: Configure conditional access policies](#phase-2-configure-conditional-access-policies)
 
-![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
@@ -98,10 +100,10 @@ Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) featu
 
 ## See also
 
-[Identity roadmap](identity-roadmap-microsoft-365.md)
+[Deploy identity](deploy-identity-solution-overview.md)
 
 [Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](/microsoft-365-enterprise/)

@@ -2,18 +2,22 @@
 title: "Update DNS records to keep your website with your current hosting provider"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- VSBFY23
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -32,13 +36,11 @@ description: "Learn how to route traffic to an existing public website hosted ou
 ## Update DNS records in the Microsoft 365 admin center
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
-2. On the **Domains** page, select the domain and then choose **DNS Records**.
+1. On the **Domains** page, select the domain and then choose **DNS Records**.
 
-3. Under **DNS settings**, select **Custom Records**.
-
-4. Select **+ New custom record** and enter the following: 
+1. Select **+ Add record** and enter the following: 
     
-   - For **DNS type** enter: **A (Address)**
+   - For **type** enter: **A (Address)**
     
    - For **Host name or Alias**, type the following: **@**
     
@@ -46,13 +48,13 @@ description: "Learn how to route traffic to an existing public website hosted ou
     
    This must be a  *static*  IP address for the website, not a  *dynamic*  IP address. Check with site where your website is hosted to make sure you can get a static IP address for your public website. 
     
-5. Select **Save**. 
+1. Select **Save**. 
     
 In addition, you can create a CNAME record to help customers find your website.
   
-1. Select **+ New custom record** and enter the following: 
+1. Select **+ Add record** and enter the following: 
     
-   - For **DNS type** enter: **CNAME (Alias)**
+   - For **type** enter: **CNAME (Alias)**
     
    - For **Host name or Alias**, type the following: **www**
     
@@ -62,7 +64,6 @@ In addition, you can create a CNAME record to help customers find your website.
     
 Finally, do the following:
   
-[Update your domain's NS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) to point to Microsoft. 
+[Update your domain's NS records](../setup/add-domain.md) to point to Microsoft. 
   
 When the NS records have been updated to point to Microsoft, your domain is all set up. Email will be routed to Microsoft, and traffic to your website address will continue to go to your current website host.
- 

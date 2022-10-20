@@ -1,26 +1,30 @@
 ---
-title: "Set up attorney-client privilege detection in Advanced eDiscovery"
+title: "Set up attorney-client privilege detection in eDiscovery (Premium)"
+description: "Use the attorney-client privilege detection model to use the machine learning-based detection of privileged content when reviewing content in a Microsoft Purview eDiscovery (Premium) case."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance 
+ms.localizationpriority: medium
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: "Use the attorney-client privilege detection model to use the machine learning-based detection of privileged content when reviewing content in an Advanced eDiscovery case."
 ---
 
-# Set up attorney-client privilege detection in Advanced eDiscovery
+# Set up attorney-client privilege detection in eDiscovery (Premium)
 
-A major and costly aspect of the review phase of any eDiscovery process is reviewing documents for privileged content. Advanced eDiscovery provides machine learning-based detection of privileged content to make this process more efficient. This feature is called *attorney-client privilege detection*.
+A major and costly aspect of the review phase of any eDiscovery process is reviewing documents for privileged content. Microsoft Purview eDiscovery (Premium) provides machine learning-based detection of privileged content to make this process more efficient. This feature is called *attorney-client privilege detection*.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How does it work?
 
@@ -40,7 +44,7 @@ The model produces the following three properties for every document:
 
 These properties (and their corresponding values) are added to the file metadata of the documents in a review set, as shown in the following screenshot:
 
-![Attorney-client privilege properties shown in file metadata](../media/AeDAttorneyClientPrivilegeMetadata.png)
+![Attorney-client privilege properties shown in file metadata.](../media/AeDAttorneyClientPrivilegeMetadata.png)
 
 These three properties are also searchable within a review set. For more information, see [Query the data in a review set](review-set-search.md).
 
@@ -50,33 +54,33 @@ To enable the attorney-client privilege detection model, your organization has t
 
 ### Step 1: Turn on attorney-client privilege detection
 
-A person who is an eDiscovery Administrator in your organization (a member of the eDiscovery Administrator subgroup in the eDiscovery Manager role group) must make the model available in your Advanced eDiscovery cases.
+A person who is an eDiscovery Administrator in your organization (a member of the eDiscovery Administrator subgroup in the eDiscovery Manager role group) must make the model available in your eDiscovery (Premium) cases.
 
-1. In the Security & Compliance Center, go to **eDiscovery > Advanced eDiscovery**.
+1. In the Microsoft Purview compliance portal, go to [eDiscovery (Premium)](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **eDiscovery (Premium) settings**.
 
-2. On the **Advanced eDiscovery** home page, in the **Settings** tile, click **Configure global analytics settings**.
+   ![Select eDiscovery (Premium) settings](..\media\HistoricalVersions1.png)
 
-   ![Select "Configure experimental features"](../media/AeDExperimentalFeatures.png)
+2. On the **Settings** page, select the **Analytics** tab, and then switch the **Attorney-client privilege detection** toggle to on.
 
-3. On the **Analytics settings** tab, select **Manage attorney-client privilege setting**.
+   ![Click toggle to turn on Attorney-client privilege detection](..\media\TurnOnAttorneyClientPrivilegeDetection.png)
 
-4. On the **Attorney-client privilege** flyout page, use the toggle to turn on the feature and then select **Save**.
+3. Click **Save** to save the change.
 
 ### Step 2: Upload a list of attorneys (optional)
 
-To take full advantage of the attorney-client privilege detection model and use the results of the **Has Attorney** or **Potentially Privileged** detection that was previously described, we recommend that you upload a list of email addresses for the lawyers and legal personnel who work for your organization. 
+To take full advantage of the attorney-client privilege detection model and use the results of the **Has Attorney** or **Potentially Privileged** detection that was previously described, we recommend that you upload a list of email addresses for the lawyers and legal personnel who work for your organization.
 
 To upload an attorney list for use by the attorney-client privilege detection model:
 
 1. Create a .csv file (without a header row) and add the email address for each appropriate person on a separate line. Save this file to your local computer.
 
-2. On the **Advanced eDiscovery** home page, in the **Settings** tile, select **Configure experimental features**, and then select **Manage attorney-client privilege setting**.
+2. On the eDiscovery (Premium) **Settings** page, select the **Analytics** tab.
 
    The **Attorney-client privilege** page is displayed, and the **Attorney-client privilege detection** toggle is turned on.
 
-   ![Attorney-client privilege flyout page](../media/AeDUploadAttorneyList.png)
+   ![Attorney-client privilege flyout page](..\media\AeDUploadAttorneyList1.png)
 
-3. Select **Browse** and then find and select the .csv file that you created in step 1.
+3. Select **Choose file** and then find and select the .csv file that you created in step 1.
 
 4. Select **Save** to upload the attorney list.
 
@@ -86,25 +90,25 @@ Follow the steps in this section to use attorney-client privilege detection for 
 
 ### Step 1: Create a smart tag group with attorney-client privilege detection model
 
-One of the primary ways to see the results of attorney-client privilege detection in your review process is by using a smart tag group. A smart tag group indicates the results of the attorney-client privilege detection and shows the results in-line next to the tags in a smart tag group. This lets you quickly identify potentially privileged documents during document review. Additionally, you can also use the tags in the smart tag group to tag documents as privileged or non-privileged. For more information about smart tags, see [Set up smart tags in Advanced eDiscovery](smart-tags.md).
+One of the primary ways to see the results of attorney-client privilege detection in your review process is by using a smart tag group. A smart tag group indicates the results of the attorney-client privilege detection and shows the results in-line next to the tags in a smart tag group. This lets you quickly identify potentially privileged documents during document review. Additionally, you can also use the tags in the smart tag group to tag documents as privileged or non-privileged. For more information about smart tags, see [Set up smart tags in eDiscovery (Premium)](smart-tags.md).
 
 1. In the review set that contains the documents that you analyzed in Step 1, select **Manage review set** and then select **Manage tags**.
- 
+
 2. Under **Tags**, select the pull-down next to **Add group** and then select **Add smart tag group**.
 
-   ![Select "Add smart tag group"](../media/AeDCreateSmartTag.png)
+   ![Select "Add smart tag group.".](../media/AeDCreateSmartTag.png)
 
 3. On the **Choose a model for your smart tag** page, choose **Select** next to **Attorney-client privilege**.
 
    A tag group named **Attorney-client privilege** is displayed. It contains two child tags named **Positive** and **Negative**, which correspond to the possible results produced by the model.
 
-   ![Attorney-client privilege smart tag group](../media/AeDAttorneyClientSmartTagGroup.png)
+   ![Attorney-client privilege smart tag group.](../media/AeDAttorneyClientSmartTagGroup.png)
 
 3. Rename the tag group and tags as appropriate for your review. For example, you can rename **Positive** to **Privileged** and **Negative** to **Not privileged**.
 
 ### Step 2: Analyze a review set
 
-When you analyze the documents in a review set, the attorney-client privilege detection model will also run and the corresponding properties (described in [How does it work?](#how-does-it-work) will be added to every document in the review set. For more information about analyzing data in review set, see [Analyze data in a review set in Advanced eDiscovery](analyzing-data-in-review-set.md).
+When you analyze the documents in a review set, the attorney-client privilege detection model will also run and the corresponding properties (described in [How does it work?](#how-does-it-work)) will be added to every document in the review set. For more information about analyzing data in review set, see [Analyze data in a review set in eDiscovery (Premium)](analyzing-data-in-review-set.md).
 
 ### Step 3: Use the smart tag group for review of privileged content
 
@@ -120,8 +124,8 @@ If the model determines that a document doesn't contain content that is legal in
 
 For example, the following screenshots show two documents. The first one contains content that is legal in nature and has a participant found in the list of attorneys. The second contains neither and therefore doesn't display any labels.
 
-![Document with Attorney and Legal content labels](../media/AeDTaggingPanelLegalContentAttorney.png)
+![Document with Attorney and Legal content labels.](../media/AeDTaggingPanelLegalContentAttorney.png)
 
-![Document without any labels](../media/AeDTaggingPanelNegative.png)
+![Document without any labels.](../media/AeDTaggingPanelNegative.png)
 
 After you review a document to see if it contains privileged content, you can tag the document with the appropriate tag.

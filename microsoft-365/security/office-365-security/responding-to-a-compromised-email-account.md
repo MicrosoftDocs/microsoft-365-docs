@@ -1,35 +1,42 @@
 ---
-title: "Responding to a Compromised Email Account"
-f1.keywords:
-- NOCSH
+title: Responding to a Compromised Email Account
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.collection:
-- o365_security_incident_response
-- M365-security-compliance
-- m365solution-smb
+ms.collection: 
+  - o365_security_incident_response
+  - m365-security
+  - m365solution-smb
+  - highpri
 ms.custom: 
- - TopSMBIssues
- - seo-marvel-apr2020
-ms.service: O365-seccomp
-localization_priority: Priority
-search.appverid:
-- MET150
+  - TopSMBIssues
+  - seo-marvel-apr2020
+ms.localizationpriority: high
+search.appverid: 
+  - MET150
 description: Learn how to recognize and respond to a compromised email account using tools available in Microsoft 365.
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 # Responding to a Compromised Email Account
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **Summary** Learn how to recognize and respond to a compromised email account in Microsoft 365.
 
 ## What is a Compromised Email Account in Microsoft 365?
 
-Access to Microsoft 365 mailboxes, data and other services, is controlled through the use of credentials, for example a user name and password or PIN. When someone other than the intended user steals those credentials, the stolen credentials are considered to be compromised. With them the attacker can sign in as the original user and perform illicit actions.
+Access to Microsoft 365 mailboxes, data and other services, is controlled by using credentials, for example a user name and password or PIN. When someone other than the intended user steals those credentials, the stolen credentials are considered to be compromised. With them the attacker can sign in as the original user and perform illicit actions.
+
 Using the stolen credentials, the attacker can access the user's Microsoft 365 mailbox, SharePoint folders, or files in the user's OneDrive. One action commonly seen is the attacker sending emails as the original user to recipients both inside and outside of the organization. When the attacker emails data to external recipients, this is called data exfiltration.
 
 ## Symptoms of a Compromised Microsoft Email Account
@@ -37,33 +44,21 @@ Using the stolen credentials, the attacker can access the user's Microsoft 365 m
 Users might notice and report unusual activity in their Microsoft 365 mailboxes. Here are some common symptoms:
 
 - Suspicious activity, such as missing or deleted emails.
-
 - Other users might receive emails from the compromised account without the corresponding email existing in the **Sent Items** folder of the sender.
-
 - The presence of inbox rules that weren't created by the intended user or the administrator. These rules may automatically forward emails to unknown addresses or move them to the **Notes**, **Junk Email**, or **RSS Subscriptions** folders.
-
 - The user's display name might be changed in the Global Address List.
-
 - The user's mailbox is blocked from sending email.
-
 - The Sent or Deleted Items folders in Microsoft Outlook or Outlook on the web (formerly known as Outlook Web App) contain common hacked-account messages, such as "I'm stuck in London, send money."
-
 - Unusual profile changes, such as the name, the telephone number, or the postal code were updated.
-
 - Unusual credential changes, such as multiple password changes are required.
-
 - Mail forwarding was recently added.
-
 - An unusual signature was recently added, such as a fake banking signature or a prescription drug signature.
 
-If a user reports any of the above symptoms, you should perform further investigation. The Microsoft 365 Security & Compliance Center and the Azure Portal offer tools to help you investigate the activity of a user account that you suspect may be compromised.
+If a user reports any of the above symptoms, you should perform further investigation. The Microsoft 365 Defender portal and the Azure portal offer tools to help you investigate the activity of a user account that you suspect may be compromised.
 
-- **Unified Audit Logs in the Security & Compliance Center**: Review all the activities for the suspected account by filtering the results for the date range spanning from immediately before the suspicious activity occurred to the current date. Do not filter on the activities during the search.
-
-- **Admin Audit logs in the EAC**: In Exchange Online, you can use the Exchange admin center (EAC) to search for and view entries in the administrator audit log. The administrator audit log records specific actions, based on Exchange Online PowerShell cmdlets, performed by administrators and users who have been assigned administrative privileges. Entries in the administrator audit log provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected.
+- **Unified audit logs in the Microsoft 365 Defender portal**: Review all the activities for the suspected account by filtering the results for the date range spanning from immediately before the suspicious activity occurred to the current date. Do not filter on the activities during the search. For more information, see [Search the audit log in the compliance center](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 
 - **Azure AD Sign-in logs and other risk reports in the Azure AD portal**: Examine the values in these columns:
-
   - Review IP address
   - sign-in locations
   - sign-in times
@@ -79,7 +74,7 @@ You must do all the following steps to regain access to your account the sooner 
 
 ### Step 1 Reset the user's password
 
-Follow the procedures in [Reset a business password for someone](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords#reset-my-admin-password).
+Follow the procedures in [Reset a business password for someone](../../admin/add-users/reset-passwords.md#reset-my-admin-password).
 
 > [!IMPORTANT]
 >
@@ -91,15 +86,15 @@ Follow the procedures in [Reset a business password for someone](https://docs.mi
 >
 > - If your on-premises identity is federated with Microsoft 365, you must change your password on-premises, and then you must notify your administrator of the compromise.
 >
-> - Be sure to update app passwords. App passwords aren't automatically revoked when a user account password reset. The user should delete existing app passwords and create new ones. For instructions, see [Create and delete app passwords from the Additional security verification page](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
+> - Be sure to update app passwords. App passwords aren't automatically revoked when a user account password reset. The user should delete existing app passwords and create new ones. For instructions, see [Create and delete app passwords from the Additional security verification page](/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
 >
-> - We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges. To learn more about MFA, go to [Set up multi-factor authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> - We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges. To learn more about MFA, go to [Set up multi-factor authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
 ### Step 2 Remove suspicious email forwarding addresses
 
-1. Open the Microsoft 365 admin center at <https://admin.microsoft.com>
+1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, go to **Users** \> **Active users**. To go directly to the **Active users** page, use <https://admin.microsoft.com/Adminportal/Home#/users>.
 
-2. Go to **Users** \> **Active users**. Find the user account in question, and select the user (row) without selecting the checkbox.
+2. On the **Active users** page, find the user account in question, and select the user (row) without selecting the checkbox.
 
 3. In the details flyout that appears, select the **Mail** tab.
 
@@ -126,50 +121,52 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 > [!IMPORTANT]
 > You can block the suspected compromised account from signing-in until you believe it is safe to re-enable access.
 
-1. Open the Microsoft 365 admin center and go to **Users** \> **Active users**.
+1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, go to **Users** \> **Active users**. To go directly to the **Active users** page, use <https://admin.microsoft.com/Adminportal/Home#/users>.
 
-2. Find and select the user account, click ![More icon](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Edit sign-in status**.
+2. On the **Active users** page, find and select the user account, click ![More icon.](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Edit sign-in status**.
 
 3. On the **Block sign-in** pane that appears, select **Block this user from signing in**, and then click **Save changes**.
 
-4. Open the Exchange admin center (EAC) at <admin.protection.outlook.com/ecp/>, and go to **Recipients > Mailboxes**.
+4. In the Exchange admin center (EAC) at <https://admin.exchange.microsoft.com>, go to **Recipients** \> **Mailboxes**. To go directly to the **Mailboxes** page, use <https://admin.exchange.microsoft.com/#/mailboxes>.
 
-5. Find and select the select the user. In the details pane, do the following steps:
+5. On the **Mailboxes** page, find and select the user. In the mailbox details flyout that opens, do the following steps:
+   - In the **Email apps** section, select **Manage email apps settings**. In the **Manage settings for email apps** flyout that appears, block all of the available settings by moving the toggle to the right ![Disable.](../../media/scc-toggle-on.png):
+     - **Outlook on the web**
+     - **Outlook desktop (MAPI)**
+     - **Exchange Web Services**
+     - **Mobile (Exchange ActiveSync)**
+     - **IMAP**
+     - **POP3**
 
-   - In the **Phone and voice features** section, do the following steps:
-
-     - Select **Disable Exchange ActiveSync** and then click **Yes** in the warning that appears.
-     - Select **Disable OWA for Devices** and then click **Yes** in the warning that appears.
-
-   - In the **Email Connectivity** section for Outlook on the web, click **Disable** and then click **Yes** in the warning that appears.
+   When you're finished, click **Save** and then click **Close**.
 
 ### Step 6 Optional: Remove the suspected compromised account from all administrative role groups
 
 > [!NOTE]
 > Administrative role group membership can be restored after the account has been secured.
 
-1. Sign in with a global administrator account:
-
-2. In the Microsoft 365 admin center, do the following steps:
-
-   1. Go to **Users** \> **Active users**.
-   2. Find and select the user account, click ![More icon](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Manage roles**.
+1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, do the following steps:
+   1. Go to **Users** \> **Active users**. To go directly to the **Active users** page, use <https://admin.microsoft.com/Adminportal/Home#/users>.
+   2. On the **Active users** page, find and select the user account, click ![More icon.](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Manage roles**.
    3. Remove any administrative roles that are assigned to the account. When you're finished, click **Save changes**.
 
-3. In the Security & Compliance Center at <https://protection.office.com>, do the following steps:
+2. in the Microsoft 365 Defender portal at <https://security.microsoft.com>, do the following steps:
+   1. Go to **Permissions & roles** \> **Email & collaboration roles** \> **Roles**. To go directly to the **Permissions** page, use <https://security.microsoft.com/emailandcollabpermissions>.
+   2. On the **Permissions** page, select each role group in the list and look for the user account in the **Members** section of the details flyout that appears. If the role group contains the user account, do the following steps:
+      1. In the **Members** section, click **Edit**.
+      2. On the **Editing Choose members** flyout that appears, click **Edit**.
+      3. On the **Choose members** flyout that appears, click **Remove**.
+      4. In the flyout that appears, select the user account, and then click **Remove**.
 
-   Select **Permissions**, select each role group in the list and look for the user account in the **Members** section of the details flyout that appears. If the role group contains the user account, do the following steps:
+         When you're finished, click **Done**, **Save**, and then **Close**.
 
-   a. Click **Edit** next to **Members**.
-   b. On the **Editing Choose members** flyout that appears, click **Edit**.
-   c. In the **Choose members** flyout that appears, select the user account, and then click **Remove**. When you're finished, click **Done**, **Save**, and then **Close**.
+3. In the Exchange admin center at <https://admin.exchange.microsoft.com/>, do the following steps:
+   1. Select **Roles** \> **Admin roles**. To go directly to the **Admin roles** page, use <https://admin.exchange.microsoft.com/#/adminRoles>.
+   2. On the **Admin roles** page, manually select each role group, and in the details pane, select the **Assigned** tab to verify the user accounts. If the role group contains the user account, do the following steps:
+      1. Select the user account.
+      2. Click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png).
 
-4. In the EAC at <admin.protection.outlook.com/ecp/>, do the following steps:
-
-   Select **Permissions**, manually select each role group, and in the details pane, verify the user accounts in the **Members** section.  If the role group contains the user account, do the following steps:
-
-   a. Select the role group, click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).
-   b. In the **Member** section, select the user account, and then click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif). When you're finished, click **Save**.
+         When you're finished, click **Save**.
 
 ### Step 7 Optional: Additional precautionary steps
 
@@ -179,22 +176,9 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 
 3. Make sure that your contact information, such as telephone numbers and addresses, is correct.
 
-## Secure Microsoft 365 like a cybersecurity pro
-
-Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.  Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Microsoft 365 tenant.
-
-- Tasks to accomplish in the first 30 days.  These have immediate affect and are low-impact to your users.
-
-- Tasks to accomplish in 90 days. These take a bit more time to plan and implement but greatly improve your security posture.
-
-- Beyond 90 days. These enhancements build in your first 90 days work.
-
 ## See also
 
 - [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Microsoft 365](detect-and-remediate-outlook-rules-forms-attack.md)
-
-- [Internet Crime Complaint Center](https://www.ic3.gov/preventiontips.aspx)
-
+- [Internet Crime Complaint Center](https://www.ic3.gov/Home/Ransomware)
 - [Securities and Exchange Commission - "Phishing" Fraud](https://www.sec.gov/investor/pubs/phishing.htm)
-
 - To report spam email directly to Microsoft and your admin [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)

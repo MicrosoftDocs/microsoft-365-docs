@@ -2,15 +2,17 @@
 title: Desktop Deployment Center
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: M365-subscription-management
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection: 
+- scotvorg
+- M365-subscription-management
 ms.custom: it-pro
 description: How to get to the resources equivalent to the deprecated Desktop Deployment Center.
 ---
@@ -21,9 +23,9 @@ The body of content that comprised the Desktop Deployment Center has been deprec
 
 Use these resources to deploy modern desktops:
 
-- [Windows 10 deployment](https://docs.microsoft.com/windows/deployment/)
-- [Deploy Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
-- [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
+- [Windows 10 deployment](/windows/deployment/)
+- [Deploy Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
+- [Microsoft Intune](/mem/intune/fundamentals/planning-guide)
 - [Identity and device access policies](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 You can also view the [Desktop Deployment series videos from Microsoft Mechanics](https://www.aka.ms/watchhowtoshift).

@@ -2,15 +2,16 @@
 title: "Simulated enterprise base configuration for Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
@@ -30,7 +31,7 @@ This article describes how to create a simplified environment for Microsoft 365 
 - A Microsoft 365 E5 trial or paid subscription.
 - A simplified organization intranet connected to the internet, consisting of three virtual machines on an Azure virtual network (DC1, APP1, and CLIENT1).
  
-![The simulated enterprise base configuration](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![The simulated enterprise base configuration.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 Creating a simplified test environment involves two phases:
 - [Phase 1: Create a simulated intranet](#phase-1-create-a-simulated-intranet)
@@ -38,7 +39,7 @@ Creating a simplified test environment involves two phases:
 
 You can use the resulting environment to test the features and functionality of [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise) with additional [Test Lab Guides](m365-enterprise-test-lab-guides.md) or on your own.
 
-![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
@@ -65,7 +66,7 @@ After you read through the instructions, select **Deploy to Azure** on the [temp
 
 After the template is complete, your configuration looks like this:
 
-![The simulated intranet in Azure infrastructure services](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+![The simulated intranet in Azure infrastructure services.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 ### Method 2: Build your simulated intranet with Azure PowerShell
 
@@ -80,7 +81,7 @@ In this step, you create an Azure virtual network and add DC1, a virtual machine
 First, start a Windows PowerShell command prompt on your local computer.
   
 > [!NOTE]
-> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
+> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](/powershell/azureps-cmdlets-docs/). 
   
 Sign in to your Azure account with the following command.
   
@@ -232,7 +233,7 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 Your current configuration looks like this:
   
-![Step 1 of the simulated enterprise base configuration](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
+![Step 1 of the simulated enterprise base configuration.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
   
 #### Step 2: Configure APP1
 
@@ -287,7 +288,7 @@ New-SmbShare -name files -path c:\files -changeaccess TESTLAB\User1
 
 Your current configuration looks like this:
   
-![Step 2 of the simulated enterprise base configuration](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
+![Step 2 of the simulated enterprise base configuration.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 #### Step 3: Configure CLIENT1
 
@@ -351,7 +352,7 @@ Next, verify that you can access web and file share resources on APP1 from CLIEN
     
 Your current configuration looks like this:
   
-![Step 3 of the simulated enterprise base configuration](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+![Step 3 of the simulated enterprise base configuration.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 ## Phase 2: Create your Microsoft 365 E5 subscription
 
@@ -394,7 +395,7 @@ Your test environment now has:
     
 Your final configuration looks like this:
   
-![Phase 2 of the simulated enterprise base configuration](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![Phase 2 of the simulated enterprise base configuration.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
 You are now ready to experiment with additional features of [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise).
   
@@ -412,4 +413,4 @@ Explore these additional sets of Test Lab Guides:
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](/microsoft-365-enterprise/)

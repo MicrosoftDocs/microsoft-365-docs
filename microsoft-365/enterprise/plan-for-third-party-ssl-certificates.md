@@ -1,14 +1,15 @@
 ---
 title: "Plan for third-party SSL certificates for Microsoft 365"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: ITPro
 ms.date: 05/15/2019
 ms.topic: conceptual
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 f1.keywords:
@@ -29,7 +30,7 @@ description: "Summary: Describes the SSL certificates needed for Exchange on-pre
 
 To encrypt communications between your clients and the Microsoft 365 environment, third-party Secure Socket Layer (SSL) certificates must be installed on your infrastructure servers.
 
-This article is part of [Network planning and performance tuning for Microsoft 365](https://aka.ms/tune).
+This article is part of [Network planning and performance tuning for Microsoft 365](./network-planning-and-performance.md).
    
 Certificates are required for the following Microsoft 365 components:
   
@@ -43,11 +44,11 @@ Certificates are required for the following Microsoft 365 components:
     
 ## Certificates for Exchange On-Premises
 
-For an overview about how to use digital certificates to make the communication between the on-premises Exchange organization and Exchange Online secure, see the TechNet article [Understanding Certificate Requirements](https://go.microsoft.com/fwlink/p/?LinkID=243657).
+For an overview about how to use digital certificates to make the communication between the on-premises Exchange organization and Exchange Online secure, see the TechNet article [Understanding Certificate Requirements](/previous-versions/exchange-server/exchange-141/gg476123(v=exchg.141)).
   
 ## Certificates for Single Sign-On
 
-To provide your users with a simplified single sign-on experience that includes robust security, the certificates shown in the following table are required on either the federation servers or the federation server proxies. The table below focuses on Active Directory Federation Services (AD FS), we also have more information on [using third-party identity providers](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-compatibility).
+To provide your users with a simplified single sign-on experience that includes robust security, the certificates shown in the following table are required on either the federation servers or the federation server proxies. The table below focuses on Active Directory Federation Services (AD FS), we also have more information on [using third-party identity providers](/azure/active-directory/hybrid/how-to-connect-fed-compatibility).
   
 | Certificate Type | Description | What you need to know before you deploy |
 |:-----|:-----|:-----|
