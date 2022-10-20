@@ -13,11 +13,12 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.date: 10/22/2021
 ms.collection: 
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Why cloud protection should be enabled for Microsoft Defender Antivirus

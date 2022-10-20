@@ -13,9 +13,12 @@ ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.date: 10/18/2021
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Configure the cloud block timeout period

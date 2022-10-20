@@ -13,15 +13,13 @@ ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration
   - m365-frontline
+  - highpri
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ---
 
 # Tailor Teams apps for your frontline workers
-
-> [!NOTE]
-> This feature is currently being rolled out and might not be available in your organization yet. To stay on top of upcoming Teams features, check out the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=microsoft%2Cteams).
 
 ## Overview
 
@@ -35,6 +33,7 @@ With the tailored frontline app experience, your frontline workers get the most 
 
 Apps are pinned to the app bar, which is the bar at the bottom of the Teams mobile clients (iOS and Android) and on the side of the Teams desktop client. The following apps are pinned for users who have an [F license](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt):
 
+- [Viva Connections](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) ([coming soon](#coming-soon))
 - [Activity](https://support.microsoft.com/office/explore-the-activity-feed-in-teams-91c635a1-644a-4c60-9c98-233db3e13a56)
 - [Chat](https://support.microsoft.com/office/get-started-with-chat-0b506ce2-eb6d-4fca-9668-e56980ba755e)
 - [Teams](https://support.microsoft.com/office/teams-and-channels-in-microsoft-teams-c6d0e61d-a61e-44a6-a972-04f2a8fa4155)
@@ -96,6 +95,20 @@ The feature is off.   | The frontline worker gets the apps defined in the global
 
 > [!NOTE]
 > You can't change the apps or order of apps in the tailored frontline app experience. For now, if you want to make changes, you can set up your own custom experience. To do this, first turn off the feature. Then, [create a custom app setup policy](/microsoftteams/teams-app-setup-policies), and [assign it to users or groups](/microsoftteams/assign-policies-users-and-groups).
+
+### Coming soon
+
+ Viva Connections will soon be part of the frontline tailored apps experience. Frontline users who see the tailored app experience will have Viva Connections pinned in the first position on both mobile and desktop.
+
+This experience includes a default dashboard with relevant frontline cards such as Tasks, Shifts, Approvals, and Top News that can be customized to fit the needs of your organization. If your organization has already set up a Viva Connections home site, it will take precedence over the default experience. To learn more, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=99706).
+
+**Teams mobile**
+
+:::image type="content" source="media/tailored-teams-apps-viva-connections-mobile.png" alt-text="Screenshot that shows Viva Connections in the tailored frontline app experience on Teams mobile." lightbox="media/tailored-teams-apps-viva-connections-mobile.png":::
+
+**Teams desktop**
+
+:::image type="content" source="media/tailored-teams-apps-viva-connections-desktop.png" alt-text="Screenshot that shows Viva Connections in the tailored frontline app experience on Teams desktop." lightbox="media/tailored-teams-apps-viva-connections-desktop.png":::
 
 ## Related articles
 

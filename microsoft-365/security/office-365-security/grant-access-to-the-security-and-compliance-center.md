@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: how-to
 f1_keywords: 
   - 'ms.o365.cc.PermissionsHelp'
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 search.appverid: 
   - MOE150

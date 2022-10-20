@@ -11,11 +11,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Insider risk management Users dashboard
+
+>[!IMPORTANT]
+>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
 
 The **Users dashboard** is an important tool in the insider risk management workflow and helps investigators and analysts have a more complete understanding of risk activities. This dashboard offers views and management features to meet administrative needs between the creating insider risk management policies and managing insider risk management cases.
 
@@ -26,6 +31,8 @@ Learn more about how the Users dashboard displays users in the following scenari
 - Users with active insider risk policy alerts
 - Users with triggering events
 - Users added temporarily to policies
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Users with active insider risk policy alerts
 

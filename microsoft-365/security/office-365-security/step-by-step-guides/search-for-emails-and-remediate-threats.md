@@ -2,7 +2,6 @@
 title: Search for emails and remediate threats using Threat Explorer in Microsoft 365 Defender
 description: The steps to do manual remediation in Threat Explorer in Microsoft 365 Defender, including how to get the best performance and scenarios that call for remediation.
 search.product: 
-search.appverid: 
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,9 +13,13 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection: 
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Steps to use manual email remediation in Threat Explorer

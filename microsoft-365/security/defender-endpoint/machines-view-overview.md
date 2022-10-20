@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Device inventory
@@ -124,7 +127,7 @@ Filter | Description
 **Onboarding status** </br> | Onboarding status indicates whether the device is currently onboarded to Microsoft Defender for Endpoint or not. You can filter by the following states: </br> - **Onboarded**: The endpoint is onboarded to Microsoft Defender for Endpoint.  </br> - **Can be onboarded**: The endpoint was discovered in the network as a supported device, but it's not currently onboarded. Microsoft highly recommends onboarding these devices. </br> - **Unsupported**: The endpoint was discovered in the network, but is not supported by Microsoft Defender for Endpoint. </br> - **Insufficient info**: The system couldn't determine the supportability of the device.</br></br> (_Computers and mobile only_)
 **Antivirus status** </br> | Filter the view based on whether the antivirus status is disabled, not updated or unknown.</br></br> (_Computers and mobile only_)
 **Group** </br> | Filter the list based on the group you're interested in investigating. </br></br> (_Computers and mobile only_)
-**Managed by** </br> | Managed by indicates how the device is being managed. You can filter by:</br> - Microsoft Defender for Endpoint</br> - Microsoft Endpoint Manager (MEM), including co-management with Microsoft Configuration Manager via tenant attach</br>- Microsoft Configuration manager (ConfigMgr)</br> - Unknown: This could be due the running an outdated Windows version, GPO management, or another third party MDM.</br></br> (_Computers and mobile only_)	
+**Managed by** </br> | Managed by indicates how the device is being managed. You can filter by:</br> - Microsoft Defender for Endpoint</br> - Microsoft Endpoint Manager (MEM), including co-management with Microsoft Configuration Manager via tenant attach</br>- Microsoft Configuration manager (ConfigMgr)</br> - Unknown: This could be due the running an outdated Windows version, GPO management, or another third party MDM.</br></br> (_Computers and mobile only_)
 **Device Type** </br> | Filter by the device type you're interested in investigating.</br></br> (_IoT devices only_)
 
 ## Use columns to customize the device inventory views

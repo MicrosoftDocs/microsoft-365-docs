@@ -12,11 +12,12 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint on Linux
@@ -115,7 +116,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
     - For 6.7: 2.6.32-573.*
     - For 6.8: 2.6.32-642.*
     - For 6.9: 2.6.32-696.* (except 2.6.32-696.el6.x86_64)
-    - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.47.1:
+    - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.48.1:
     
        - 2.6.32-754.10.1.el6.x86_64
        - 2.6.32-754.11.1.el6.x86_64
@@ -142,6 +143,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
        - 2.6.32-754.41.2.el6.x86_64
        - 2.6.32-754.43.1.el6.x86_64
        - 2.6.32-754.47.1.el6.x86_64
+       - 2.6.32-754.48.1.el6.x86_64
        - 2.6.32-754.6.3.el6.x86_64
        - 2.6.32-754.9.1.el6.x86_64
 

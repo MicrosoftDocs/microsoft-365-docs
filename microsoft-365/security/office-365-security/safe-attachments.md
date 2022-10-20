@@ -15,7 +15,7 @@ search.appverid:
   - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
   - seo-marvel-apr2020
 description: Admins can learn about the Safe Attachments feature in Microsoft Defender for Office 365.
@@ -34,8 +34,6 @@ ms.service: microsoft-365-security
 Safe Attachments in [Microsoft Defender for Office 365](defender-for-office-365.md) provides an additional layer of protection for email attachments that have already been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection.md). Specifically, Safe Attachments uses a virtual environment to check attachments in email messages before they're delivered to recipients (a process known as _detonation_).
 
 Safe Attachments protection for email messages is controlled by Safe Attachments policies. Although there's no default Safe Attachments policy, the **Built-in protection** preset security policy provides Safe Attachments protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Attachments policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). You can also create Safe Attachments policies that apply to specific users, group, or domains. For instructions, see [Set up Safe Attachments policies in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md).
-
-If a file attachment is encrypted or password protected, it can't be examined by Safe Attachments. The message with the attachment will be delivered, and the recipient receives no warning that the file hasn't been scanned by Safe Attachments.
 
 The following table describes scenarios for Safe Attachments in Microsoft 365 and Office 365 organizations that include Microsoft Defender for Office 365 (in other words, lack of licensing is never an issue in the examples).
 
@@ -82,7 +80,7 @@ This section describes the settings in Safe Attachments policies:
   |**Off**|Attachments aren't scanned for malware by Safe Attachments. Messages are still scanned for malware by [anti-malware protection in EOP](anti-malware-protection.md).|Turn scanning off for selected recipients. <br/><br/> Prevent unnecessary delays in routing internal mail. <br/><br/> **This option is not recommended for most users. You should only use this option to turn off Safe Attachments scanning for recipients who only receive messages from trusted senders. ZAP will not quarantine messages if Safe Attachments is turned off and a malware signal is not received. For details, see [Zero-hour auto purge](zero-hour-auto-purge.md)**|
   |**Monitor**|Delivers messages with attachments and then tracks what happens with detected malware. <br/><br/> Delivery of safe messages might be delayed due to Safe Attachments scanning.|See where detected malware goes in your organization.|
   |**Block**|Prevents messages with detected malware attachments from being delivered. <br/><br/> Messages are quarantined. By default, only admins (not users) can review, release, or delete the messages.<sup>\*</sup> <br/><br/> Automatically blocks future instances of the messages and attachments. <br/><br/> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Protects your organization from repeated attacks using the same malware attachments. <br/><br/> This is the default value, and the recommended value in Standard and Strict [preset security policies](preset-security-policies.md).|
-  |**Replace**|Removes detected malware attachments. <br/><br/> Notifies recipients that attachments have been removed. <br/><br/>  Messages that contain malicious attachments are quarantined. By default, only admins (not users) can review, release, or delete the messages.<sup>\*</sup> <br/><br/> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Raise visibility to recipients that attachments were removed because of detected malware.|
+  |**Replace**|**Note**: This action will be deprecated. For more information, see [MC424901](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC424901). <br/><br/> Removes detected malware attachments. <br/><br/> Notifies recipients that attachments have been removed. <br/><br/>  Messages that contain malicious attachments are quarantined. By default, only admins (not users) can review, release, or delete the messages.<sup>\*</sup> <br/><br/> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Raise visibility to recipients that attachments were removed because of detected malware.|
   |**Dynamic Delivery**|Delivers messages immediately, but replaces attachments with placeholders until Safe Attachments scanning is complete. <br/><br/> Messages that contain malicious attachments are quarantined. By default, only admins (not users) can review, release, or delete the messages.<sup>\*</sup> <br/><br/> For details, see the [Dynamic Delivery in Safe Attachments policies](#dynamic-delivery-in-safe-attachments-policies) section later in this article.|Avoid message delays while protecting recipients from malicious files.|
 
   <sup>\*</sup>**Quarantine policy**: Admins can create and assign _quarantine policies_ in Safe Attachments policies that define what users are allowed to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
@@ -90,6 +88,9 @@ This section describes the settings in Safe Attachments policies:
 - **Redirect messages with detected attachments**: **Enable redirect** and **Send messages that contain blocked, monitored, or replaced attachments to the specified email address**: For **Block**, **Monitor**, or **Replace** actions, send messages that contain malware attachments to the specified internal or external email address for analysis and investigation.
 
   The recommendation for Standard and Strict policy settings is to enable redirection. For more information, see [Safe Attachments settings](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
+
+  > [!NOTE]
+  > Redirection will soon be available only for the **Monitor** action. For more information, see [MC424899](https://admin.microsoft.com/AdminPortal/Home?#/MessageCenter/:/messages/MC424899).
 
 - **Apply the Safe Attachments detection response if scanning can't complete (timeout or errors)**: The action specified by **Safe Attachments unknown malware response** is taken on messages even when Safe Attachments scanning can't complete. Always select this option if you select **Enable redirect**. Otherwise, messages might be lost.
 
