@@ -86,10 +86,12 @@ For Click-to-run based installations you *must* have the following software inst
 |---------|---------|---------|
 |MSO.DLL     |C:\Program Files\Microsoft Office 15\root\vfs\ProgramFilesCommonx86\Microsoft Shared\OFFICE15\MSO.DLL       |15.0.4753.1001       |
 |CSI.DLL   |CSI.DLL C:\Program Files\Microsoft Office 15\root\office15\csi.dll         |15.0.4753.1000        |
-|Groove.EXE     |C:\Program Files\Microsoft Office 15\root\office15\GROOVE.exe       |15.0.4763.1000      |
+|Groove.EXE*     |C:\Program Files\Microsoft Office 15\root\office15\GROOVE.exe       |15.0.4763.1000      |
 |Outlook.exe     |C:\Program Files\Microsoft Office 15\root\office15\OUTLOOK.exe         |15.0.4753.1002     |
 |ADAL.DLL    |C:\Program Files\Microsoft Office 15\root\vfs\ProgramFilesCommonx86\Microsoft Shared\OFFICE15\ADAL.DLL       |1.0.2016.624         |
 |Iexplore.exe    |C:\Program Files\Internet Explorer     |varies         |
+
+\* If the Groove.EXE component is not present in your Office installation, it doesn't need to be installed for ADAL to work. However, if it is present, then the build for Groove.EXE listed here is required.
 
 ### MSI-based installations
 
@@ -98,12 +100,14 @@ For MSI-based installations the following software *must* be installed at the fi
 
 |File name  |Install path on your computer  |Where to get the update  |Version  |
 |---------|---------|---------|---------|
-|MSO.DLL|C:\Program Files\Common Files\Microsoft Shared\OFFICE15\MSO.DLL     |[KB3085480](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fkb%2F3085480&data=05%7C01%7Cmeerak%40microsoft.com%7Cbfbfa82510d542bc83c808dab07f400b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638016357854522241%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=kpOu5cLXGFtynjGMejN2rk89wNQCezFHKTwf1BkwiBI%3D&reserved=0)        |15.0.4753.1001       |
-|CSI.DLL|C:\Program Files\Common Files\Microsoft Shared\OFFICE15\Csi.dll     |[KB3085504](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fkb%2F3085504&data=05%7C01%7Cmeerak%40microsoft.com%7Cbfbfa82510d542bc83c808dab07f400b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638016357854522241%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=CdsLij5YpLUk3ZPGSLqJolHyNkvuJ7pAJjUwiwXrtEs%3D&reserved=0)        |15.0.4753.1000         |
-|Groove.exe|C:\Program Files\Microsoft Office\Office15\GROOVE.EXE            |[KB3085509](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fkb%2F3085509&data=05%7C01%7Cmeerak%40microsoft.com%7Cbfbfa82510d542bc83c808dab07f400b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638016357854679005%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=pJFCjaVvlM0bmBjHSZ6neKQJbOYwTJzHHwB0XDLrfWs%3D&reserved=0)        |15.0.4763.1000         |
-|Outlook.exe|C:\Program Files\Microsoft Office\Office15\OUTLOOK.EXE          |[KB3085495](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fkb%2F3085495&data=05%7C01%7Cmeerak%40microsoft.com%7Cbfbfa82510d542bc83c808dab07f400b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638016357854679005%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=JHsuqm3lrYwE1DA1kZzBDym%2F3pY%2FFNTUlSkwhho1rWU%3D&reserved=0)        |15.0.4753.1002         |
-|ADAL.DLL|C:\Program Files\Common Files\Microsoft Shared\OFFICE15\ADAL.DLL   |[KB3055000](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fkb%2F3055000&data=05%7C01%7Cmeerak%40microsoft.com%7Cbfbfa82510d542bc83c808dab07f400b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638016357854679005%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=tm7iaJP%2BA3h%2BYvNQyzhQKLMgNUojihYdCxUnfDBDd4A%3D&reserved=0)        |1.0.2016.624         |
-|Iexplore.exe|C:\Program Files\Internet Explorer                             |[MS14-052](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.mi1.0.2016.624crosoft.com%2Fen-us%2Fkb%2F2977629&data=05%7C01%7Cmeerak%40microsoft.com%7Cbfbfa82510d542bc83c808dab07f400b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638016357854679005%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=dXZr3ft6w6%2FLVfke6b1WDRY%2BI7RCFebPeFDyWN8OMC0%3D&reserved=0)         |Not applicable         |
+|MSO.DLL|C:\Program Files\Common Files\Microsoft Shared\OFFICE15\MSO.DLL     |[KB3085480](https://support.microsoft.com/en-us/topic/description-of-the-security-update-for-office-2013-september-10-2019-0d171ba2-2eba-a2ca-a54d-c0f568de6bcc)        |15.0.4753.1001       |
+|CSI.DLL|C:\Program Files\Common Files\Microsoft Shared\OFFICE15\Csi.dll     |[KB3172545](https://support.microsoft.com/en-us/topic/july-11-2017-update-for-office-2013-kb3172545-d6b47054-04d5-5154-40ba-3436d1e0efdb)        |15.0.4753.1000         |
+|Groove.exe*|C:\Program Files\Microsoft Office\Office15\GROOVE.EXE            |[KB4022226](https://support.microsoft.com/en-us/topic/august-7-2018-update-for-onedrive-for-business-for-office-2013-kb4022226-6163bb26-cbde-eb16-ac42-abfda7afbf68)        |15.0.4763.1000         |
+|Outlook.exe|C:\Program Files\Microsoft Office\Office15\OUTLOOK.EXE          |[KB4484096](https://support.microsoft.com/en-us/topic/october-1-2019-update-for-outlook-2013-kb4484096-6513145a-cc75-1cd1-72b7-78cb62d8476b)        |15.0.4753.1002         |
+|ADAL.DLL|C:\Program Files\Common Files\Microsoft Shared\OFFICE15\ADAL.DLL   |[KB3085565](https://support.microsoft.com/en-us/topic/july-5-2016-update-for-office-2013-kb3085565-1d1a6d24-fbd4-1bae-242f-a35e0e2aba40)        |1.0.2016.624         |
+|Iexplore.exe|C:\Program Files\Internet Explorer                             |[MS14-052](https://support.microsoft.com/en-us/topic/ms14-052-cumulative-security-update-for-internet-explorer-september-9-2014-17d29b71-9e78-0bc1-8961-7b812d04e4e1)         |Not applicable         |
+
+\* If the Groove.EXE component is not present in your Office installation, it doesn't need to be installed for ADAL to work. However, if it is present, then the build for Groove.EXE listed here is required.
 
 Office 2016 and Office 2019 clients support modern authentication by default, and no action is needed for the client to use these new flows. However, explicit action is needed to use legacy authentication.
 
