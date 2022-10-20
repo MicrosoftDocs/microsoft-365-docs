@@ -12,10 +12,10 @@ ms.collection:
 - highpri
 - Adm_O365
 ms.custom: VSBFY23
-ROBOTS: NOINDEX, NOFOLLOW 
 search.appverid:
 - MET150
 description: "Learn how to get phone support for your Microsoft 365 for business subscription. You must be an admin for a business subscription to get support."
+ms.date: 10/20/2022
 ---
 
 # Find Microsoft 365 for business phone support numbers by country or region
@@ -3974,11 +3974,11 @@ English: 24 hours a day, 7 days a week
    :::column:::
 **Phone number:**\
 0120 996 680 (Office 365 Enterprise)\
-0120 628 860 (Other Plans)
+0120 628 860 (Other plans, like Microsoft 365 Business Basic, Microsoft 365 Business Standard, or Microsoft 365 Business Premium)
 
 Alternative Phone Numbers:\
 03 4332 5493 (Office 365 Enterprise)\
-03 4332 6257 (Other Plans)\
+03 4332 6257 (Other plans, like Microsoft 365 Business Basic, Microsoft 365 Business Standard, or Microsoft 365 Business Premium)\
 Local call charges apply.
 
 **Billing support hours:**\
@@ -3995,7 +3995,8 @@ Japanese: 24 hours a day, 7 days a week\
 English: 24 hours a day, 7 days a week
 
 **Other Plans:**\
-Telephone technical support is available from 9:00-17:30 on weekdays. For high severity issues, technical support is available 24 hours a day, 7 days a week.
+Telephone technical support is available from 9:00-17:30 on weekdays.\
+For high severity issues, technical support is available 24 hours a day, 7 days a week.
    :::column-end:::
 :::row-end:::
 
