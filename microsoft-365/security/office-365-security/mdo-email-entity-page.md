@@ -7,7 +7,7 @@ author: msfttracyp
 manager: dansimp
 ms.date: 10/14/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdo
 ms.localizationpriority: medium

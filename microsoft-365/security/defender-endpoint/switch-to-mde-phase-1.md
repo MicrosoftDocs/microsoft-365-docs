@@ -17,7 +17,7 @@ ms.collection:
   - m365solution-migratetomdatp
   - highpri
   - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.custom: 
 - migrationguides
 - admindeeplinkDEFENDER
