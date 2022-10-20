@@ -22,11 +22,11 @@ ms.custom: admindeeplinkCOMPLIANCE
 >[!IMPORTANT]
 >Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
 
-Investigating risky user activities is an important first step in minimizing insider risks for your organization. These risks may be activities that generate alerts from insider risk management policies, or risks from activities that are detected by policies but don't immediately create an insider risk management alert for users. You can investigate these types of activities by using the **User activity reports (preview)** or with the **Alert dashboard**.
+Investigating risky user activities is an important first step in minimizing insider risks for your organization. These risks may be activities that generate alerts from insider risk management policies, or risks from activities that are detected by policies but don't immediately create an insider risk management alert for users. You can investigate these types of activities by using the **User activity reports** or with the **Alert dashboard**.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## User activity reports (preview)
+## User activity reports
 
 User activity reports allow you to examine activities for specific users for a defined time period without having to assign them temporarily or explicitly to an insider risk management policy. In most insider risk management scenarios, users are explicitly defined in policies, and they may have policy alerts (depending on triggering events) and risk scores associated with the activities. But in some scenarios, you may want to examine the activities for users that aren't explicitly defined in a policy. These activities may be for users that you've received a tip about the user and potentially risky activities, or users that typically don't need to be assigned to an insider risk management policy.
 

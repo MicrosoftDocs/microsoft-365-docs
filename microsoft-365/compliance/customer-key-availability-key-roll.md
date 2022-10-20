@@ -11,6 +11,7 @@ search.appverid:
 - MET150
 ms.collection:
 - purview-compliance
+- tier1
 description: "Learn how to roll the customer root keys stored in Azure Key Vault that are used with the Customer Key. Services include Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams files."
 ---
 
