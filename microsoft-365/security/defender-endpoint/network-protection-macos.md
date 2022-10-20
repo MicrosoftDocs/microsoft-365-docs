@@ -73,16 +73,16 @@ Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/
 - Onboarded Machines:
   - Minimum macOS version: 11
   - Product version 101.78.13 or later
-  - Your device must be in either the InsiderSlow (Preview) or InsiderFast (Beta) Microsoft AutoUpdate update channel. You can check the update channel using the following command:
+  - Your device must be in either the External (Preview) or InsiderFast (Beta) Microsoft AutoUpdate update channel. You can check the update channel using the following command:
 
 ```bash
 mdatp health --field release_ring 
 ```
 
-If your device isn't already in the InsiderSlow(Preview) update channel, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted).
+If your device isn't already in the External(Preview) update channel, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted).
 
 ```bash
-defaults write com.microsoft.autoupdate2 ChannelName -string InsiderSlow
+defaults write com.microsoft.autoupdate2 ChannelName -string External
 ```
 
 Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the device group remotely. For more information, see [Set preferences for Microsoft 365 Defender for Endpoint on macOS](mac-preferences.md).
@@ -91,7 +91,7 @@ Alternatively, if you are in a managed environment (JAMF or Intune), you can con
 
 ### Microsoft 365 Defender for Endpoint
 
-After you’ve configured your device to be in the InsiderSlow(preview) update channel, install the most recent product version through Microsoft AutoUpdate. To open Microsoft AutoUpdate, run the following command from the Terminal:
+After you’ve configured your device to be in the External(preview) update channel, install the most recent product version through Microsoft AutoUpdate. To open Microsoft AutoUpdate, run the following command from the Terminal:
 
 ```bash
 open /Library/Application\ Support/Microsoft/MAU2.0/Microsoft\ AutoUpdate.app
