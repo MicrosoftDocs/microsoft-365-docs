@@ -6,7 +6,7 @@ author: alekyaj
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
