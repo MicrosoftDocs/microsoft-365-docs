@@ -6,7 +6,7 @@ ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 
 ms.localizationpriority: medium
 ms.collection: 
@@ -75,11 +75,11 @@ Inside each report, you'll see cards for the specific areas monitored.
 1. Click the **Email & Collaboration reports**.
 1. Take note of the report cards available.
     1. Everything from *Malware detected in email*, to *Spam detections*, *Compromised users*, to *User reported messages* and *Submissions* the final two, with a button that links to Submissions.
-1. Click a report, such as *Mailflow status summary* and the click the **View details** button to dig into the data (which even includes a funnel view for easier interpretation of total mail flow vs. blocked, spam, and phishing emails, and more).
+1. Click a report, for example *Mailflow status summary* and the click the **View details** button to dig into the data (which even includes a funnel view for easier interpretation of total mail flow vs. blocked, spam, and phishing emails, and more).
 
 |Dashboard|Description|
 |---|---|
-|Email security reports|These reports are available in Exchange Online Protection. For more information, see [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md).|
+|Security reports| Identities and device security reports such as users and devices with malware detections, device compliance,  and users at risk.|
 |Defender for Office 365 reports|The reports are available only in Defender for Office 365. For more information, see [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).|
 |Mail flow reports and insights|These reports and insights are available in the Exchange admin center (EAC). For more information, see [Mail flow reports](/exchange/monitoring/mail-flow-reports/mail-flow-reports) and [Mail flow insights](/exchange/monitoring/mail-flow-insights/mail-flow-insights).|
 |[Threat Explorer (or real-time detections)](threat-explorer.md)|If you are investigating or experiencing an attack against your tenant, use Explorer (or real-time detections) to analyze threats. Explorer (and the real-time detections report) shows you the volume of attacks over time, and you can analyze this data by threat families, attacker infrastructure, and more. You can also mark any suspicious email for the Incidents list.|
