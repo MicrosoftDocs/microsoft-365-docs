@@ -14,9 +14,12 @@ ms.custom:
 keywords:
 ---
 
-# App types available for a managed environment - Overview
+# App types available for a managed environment
 
-Because there are a wide variety of apps available, where apps can be either acquired or created, understanding and grouping apps based on type can be helpful. This overview provide a view of app types based on how apps are acquired, created, used, installed, and run.
+There are a wide variety of apps available that can be either acquired or created. By understanding and grouping apps based on type, you'll have a better understanding of apps that can be managed. This overview provide a view of app types based on how apps are acquired, created, used, installed, and run.
+
+> [!NOTE]
+> A managed app supports Microsoft Intune's [App Protection Policies (APP)](/mem/intune/apps/app-protection-policy) by being integrated with either the Intune App SDK or wrapped using the Intune Wrapping Tool.
 
 There are several app types that you'll want to consider when determining which apps you want to manage and provide to your workforce. Understanding the complete breadth of app types is an important step to understanding apps that can be assign, delivered and managed using the Intune product family.
 
@@ -35,30 +38,37 @@ The users of apps and devices at your company (your company's workforce) might h
 
 ## Apps from the store
 
-
+You can add store apps to Intune using the Intune service UI. Once you add an app to Intune, you can assign the app to devices and users. Intune install the app on your users' devices.
 
 | App type | Description |
 |---|---|
-| Android store apps | description |
-| Managed Google Play apps | description |
-| iOS store apps | description |
-| Microsoft store apps | description |
-
+| Android store apps | Android store apps are available to add to Intune from the [Google Play store](https://play.google.com/store/apps). Intune can deploy these apps to Android devices. |
+| Managed Google Play apps | Managed Google Play apps are available to add to Intune from the managed Google Play Store. Intune can deploy these apps specifically to Android Enterprise devices. Also, you need to have a Google administrator account to access the managed Google Play Store. There are three types of Managed Google Play apps:<ul><li>Managed Google Play store app</li><li>Managed Google Play private app</li><li>Managed Google Play web link</li></ul> |
+| iOS/iPadOS store apps | iOS store apps are available to add to Intune from [Apple's app store](https://www.apple.com/app-store/). Intune can deploy these apps to iOS devices. | 
+| Microsoft store apps | Microsoft store apps are available to add to Intune from the [Microsoft app store](https://apps.microsoft.com/store/apps). Intune can deploy these apps to Windows devices. |
+| Microsoft store for business | Microsoft store apps are available to add to Intune from the [Microsoft store for business](https://www.microsoft.com/business-store). You can either obtain free apps or purchase apps for your organization, for you individually, or in volume. Intune can deploy these apps to Windows devices. **NOTE:** Microsoft Store for Business will be retired in the first quarter of 2023. |
 
 ## Apps created in-house or as a custom app
 
-Custom apps are commonly referred to as line-of-business (LOB) apps. LOB apps are apps that have been created in-house for your organization. These apps can be created in a variety of methods and made available in a number of ways. 
+Custom apps are commonly referred to as line-of-business (LOB) apps. LOB apps are apps that have been created in-house for your organization and support a specific purpose for your organization. LOB apps are uploaded to Intune and deployed by Intune. LOB apps are supported for Android devices, iOS/iPadOS devices, Windows, and macOS devices.
+
+When your organization creates apps for your workforce to use, they can design the app to support Intune app protection policies. You or your organization can use either the Intune App Wrapping Tool or the Intune App SDK to enable app protection policies.
+
+> [!NOTE]
+> In addition to creating your own LOB apps, you can install specific [3rd party protected apps](mem/intune/apps/apps-supported-intune-apps) that are designed to work with Intune.
 
 ### Custom apps types
 
+You can create LOB apps that are supported by Intune for each Android, iOS/iPadOS, Windows, and macOS devices. 
+
 | App type | Description |
 |---|---|
-| Android line-of-business (LOB) apps | description |
-| iOS/iPadOS LOB apps | description |
-| Windows LOB apps | description |
-| macOS LOB apps | description |
-| macOS apps (DMG) | description |
-| Windows app (Win32) | description |
+| Android line-of-business (LOB) apps | Android LOB apps are typically developed in-house. This app type requires you to upload an Android *.apk* file to Intune. Intune installs the LOB app on the user's device. |
+| iOS/iPadOS LOB apps | iOS/iPadOS LOB apps are typically developed in-house. This app type requires you to upload an iOS *.ipa* file to Intune. Intune installs the LOB app on the user's device.   |
+| Windows LOB apps | Windows LOB apps are typically developed in-house. This app type requires you to upload a Windows app package file. The file extensions for Windows apps include *.msi*, *.appx*, *.appxbundle*, *.msix*, and *.msixbundle*. Intune installs the LOB app on the user's device using a process called sideloading, which allows an app that isn't certified by the Microsoft Store to be installed. |
+| macOS LOB apps | macOS LOB apps are typically developed in-house. This app type requires you to upload an Android *.pkg* file to Intune. Intune installs the LOB app on the user's device. |
+| macOS apps (DMG) | macOS apps (DMG) apps are typically developed in-house. This app type requires you to upload an Android *.dmg* file to Intune. Intune installs the LOB app on the user's device. The Microsoft Intune management agent is necessary to be installed on managed macOS devices in order to enable advanced device management capabilities that are not supported by the native macOS operating system. |
+| Windows app (Win32) | Windows LOB apps are typically developed in-house. This app type requires you to upload a Windows app package file. Win32 apps must be contained in a *.intunewin* file to upload to Intune. Intune installs the LOB app on the user's device using a process called sideloading, which allows an app that isn't certified by the Microsoft Store to be installed. Intune supports both 32-bit and 64-bit operating system architecture for this file type. |
 
 ## Apps that are built-in
 
