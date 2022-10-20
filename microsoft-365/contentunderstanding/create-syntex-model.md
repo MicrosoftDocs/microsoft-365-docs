@@ -84,7 +84,7 @@ Use the **Teaching method** to create an [unstructured document processing model
 
 5. When you're ready to create the model, select **Create**.
 
-6. You're now ready to [train the model](create-a-classifier).
+6. You're now ready to [train the model](create-a-classifier.md).
 
 # [Freeform selection method](#tab/freeform-selection-method)
 
