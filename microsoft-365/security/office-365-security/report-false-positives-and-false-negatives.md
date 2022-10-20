@@ -9,10 +9,11 @@ audience: Admin
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 description: Learn how to report false positives and false negatives in Outlook using the Report Message feature.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Report false positives and false negatives in Outlook
@@ -45,6 +46,9 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 
 Watch this short video to learn how you can use Microsoft Defender for Office 365 to easily investigate user submissions to determine the contents of a message, and respond to the submission by applying the appropriate remediation action. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBHof]
+
+> [!IMPORTANT]
+> To view messages reported to Microsoft on the **User reported messages** tab at <https://security.microsoft.com/reportsubmission>, don't turn off the built-in reporting experience.
 
 ## Use the Report Message feature
 

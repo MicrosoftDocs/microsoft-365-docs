@@ -1,27 +1,31 @@
 ---
 title: "Create a Litigation hold"
+description: "Learn how to place a mailbox on Litigation hold, retaining all the mailbox content during an investigation."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 07/20/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-description: "Learn how to place a mailbox on Litigation hold, retaining all the mailbox content during an investigation."
 ms.custom: 
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Create a Litigation hold
 
-You can place a mailbox on Litigation hold to retain all mailbox content, including deleted items and the original versions of modified items. When you place a user mailbox on Litigation hold, content in the user's archive mailbox (if it's enabled) is also retained. When you create a hold, you can specify a hold duration (also called a *time-based hold*) so that deleted and modified items are retained for a specified period and then permanently deleted from the mailbox. Or you can just retain content indefinitely (called an *infinite hold*) or until the Litigation hold is removed. If you do specify a hold duration period, it's calculated from the date a message is received or a mailbox item is created. 
+You can place a mailbox on Litigation hold to retain all mailbox content, including deleted items and the original versions of modified items. When you place a user mailbox on Litigation hold, content in the user's archive mailbox (if it's enabled) is also retained. When you create a hold, you can specify a hold duration (also called a *time-based hold*) so that deleted and modified items are retained for a specified period and then permanently deleted from the mailbox. Or you can just retain content indefinitely (called an *infinite hold*) or until the Litigation hold is removed. If you do specify a hold duration period, it's calculated from the date a message is received or a mailbox item is created.
   
 Here's what happens when you create a Litigation hold.
   
@@ -33,12 +37,14 @@ Here's what happens when you create a Litigation hold.
 
 - Items in the user's primary and the archive mailboxes are retained
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Assign an Exchange Online Plan 2 license
 
 To place an Exchange Online mailbox on Litigation hold, it must be assigned an Exchange Online Plan 2 license. If a mailbox is assigned an Exchange Online Plan 1 license, you would have to assign it a separate Exchange Online Archiving license to place it on hold.
 
 > [!NOTE]
-> For Office 365 Education organizations, Litigation hold is supported in Office 365 A1 subscriptions, which include an Exchange Online Plan 1 license with supplemental features. For more information, see the "Exchange Online features" section in the [Office 365 Education service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#exchange-online-features).
+> For Office 365 Education organizations, Litigation hold is supported in Office 365 A1 subscriptions, which include an Exchange Online Plan 2 license with supplemental features. For more information, see the "Exchange Online features" section in the [Office 365 Education service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#exchange-online-features).
 
 ## Place a mailbox on Litigation hold
 

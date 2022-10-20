@@ -11,7 +11,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: null
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_Enterprise
+- purview-compliance
+- tier3
 ms.custom:
 - seo-marvel-mar2020
 description: In this article, you'll learn about encryption technologies that you can manage and configure in Microsoft 365.
@@ -26,6 +29,8 @@ description: In this article, you'll learn about encryption technologies that yo
 - [Secure mail flow with a partner organization](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)
 
 For more information about these technologies, see the [Microsoft 365 service descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Azure Rights Management
 

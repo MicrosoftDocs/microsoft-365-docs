@@ -6,9 +6,10 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-collaboration
 - m365solution-collabgovernance
 ms.custom: 
@@ -608,6 +609,8 @@ Yammer is an enterprise social platform designed to foster community engagement 
 Creating a community (formerly known as “group”) in Yammer creates a mailbox, but at present this is not used.
 
 A Microsoft 365 group that is associated with Yammer cannot be used with a team in Microsoft Teams.
+
+A Yammer group cannot be used with a PowerBI Pro Workspace.
 
 **Key features provided to Groups**
 

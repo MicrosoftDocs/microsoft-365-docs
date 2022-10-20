@@ -26,6 +26,8 @@
       href: contentguideline.md
     - name: Understand your usage cost
       href: usagecost.md
+    - name: Run your test on-demand
+      href: ondemandrun.md
     - name: Application/Test rules
       href: rules.md
 - name: How-to guides

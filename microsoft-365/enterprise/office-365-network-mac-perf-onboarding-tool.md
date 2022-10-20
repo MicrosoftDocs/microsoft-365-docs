@@ -6,11 +6,12 @@ manager: scotv
 ms.date: 1/18/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 description: "Microsoft 365 network connectivity test tool"
@@ -192,7 +193,7 @@ We measure the download speed for a 15 Mb file from the SharePoint service front
 
 #### Buffer bloat
 
-During the 15Mb download we measure the TCP latency to the SharePoint service front door. This is the latency under load and It's compared to the latency when not under load. The increase in latency when under load is often attributable to consumer network device buffers being loaded (or bloated). A network insight is shown for any bloat of 1,000 or more.
+During the 15Mb download we measure the TCP latency to the SharePoint service front door. This is the latency under load and it's compared to the latency when not under load. The increase in latency when under load is often attributable to consumer network device buffers being loaded (or bloated). A network insight is shown for any bloat of 100ms or more.
 
 #### Service front door recorded in the client DNS
 

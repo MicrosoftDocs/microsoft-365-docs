@@ -4,7 +4,8 @@ description: How to redirect accounts and sessions from Defender for Identity to
 keywords: Microsoft 365 Defender, Getting started with Microsoft 365 Defender, security center redirection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,10 +17,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
+  - tier2
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
-ms.technology: m365d
+ms.topic: conceptual
 ---
 # Redirecting accounts from Microsoft Defender for Identity to Microsoft 365 Defender
 

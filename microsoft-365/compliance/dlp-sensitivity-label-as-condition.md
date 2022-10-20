@@ -13,7 +13,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - SPO_Content
 search.appverid: 
 - MET150
@@ -39,6 +40,8 @@ Sensitivity labels appear as an option in the **Content contains** list.
 > [!IMPORTANT]
 > **Sensitivity Labels** as a condition will not be available if you have selected **Teams chat and channel messages** as a location to apply the DLP policy.
 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Supported items, scenarios, and policy tips
 
@@ -70,7 +73,7 @@ You can use sensitivity labels as conditions on these items and in these scenari
 
 - Using sensitivity labels as a condition is supported across all workloads as indicated in the support matrix above.
 
-- DLP policy tips will continue to be shown across workloads (except Outlook Win32) for DLP policies that contain sensitivity label as a condition.
+- DLP policy tips will continue to be shown across workloads (except Outlook for Windows) for DLP policies that contain sensitivity label as a condition.
 
 - Sensitivity labels will also appear as a part of the incident report email if a DLP policy with sensitivity label as a condition is matched.
 
@@ -83,7 +86,7 @@ You can use sensitivity labels as conditions on these items and in these scenari
 |Workload  |Policy tips supported/not supported  |
 |---------|---------|
 |OWA |    supported     |
-|Outlook Win 32    |  not supported       |
+|Outlook for Windows   |  not supported       |
 |SharePoint   |   supported      |
 |OneDrive for Business    |    supported     |
 |endpoint devices   |  not supported       |

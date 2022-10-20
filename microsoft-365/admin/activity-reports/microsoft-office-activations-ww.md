@@ -5,9 +5,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -36,9 +37,11 @@ The Office Activation report gives you a view of which users have activated thei
   
 You can view the activations in the Office 365 report by choosing the **Activations** tab.<br/>![Microsoft 365 reports - Microsoft Office 365 activation.](../../media/e1df82a2-3336-4b38-b66c-b286c44b82ee.png)
 
-Select **Choose columns** to add or remove columns from the report.  <br/> ![Office 365 activations report - choose columns.](../../media/d11a0efa-a067-4440-a4f3-71b618a90301.png)
+Select **Choose columns** to add or remove columns from the report.  
 
-You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
+![Office 365 activations report - choose columns.](../../media/d11a0efa-a067-4440-a4f3-71b618a90301.png)
+
+You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. 
 
 |Item|Description|
 |:-----|:-----|

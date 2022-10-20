@@ -2,7 +2,7 @@
 title: Investigate entities on devices using live response in Microsoft Defender for Endpoint
 description: Access a device using a secure remote shell connection to do investigative work and take immediate response actions on a device in real time.
 keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Investigate entities on devices using live response
@@ -89,6 +92,8 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 - **Ensure that the device has an Automation Remediation level assigned to it**.
 
   You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
+  > [!NOTE]
+  > Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2. 
 
   You'll receive the following error:
 

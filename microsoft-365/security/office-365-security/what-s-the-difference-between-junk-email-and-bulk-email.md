@@ -14,12 +14,12 @@ search.appverid:
   - MET150
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn about the differences between junk email (spam) and bulk email (gray mail) in Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # What's the difference between junk email and bulk email in EOP?
@@ -48,7 +48,33 @@ Because of the mixed reaction to bulk email, there isn't universal guidance that
 Anti-spam polices have a default BCL threshold that's used to identify bulk email as spam. Admins can increase or decrease the threshold. For more information, see the following topics:
 
 - [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
-
 - [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)
 
 Another option that's easy to overlook: if a user complains about receiving bulk email, but the messages are from reputable senders that pass spam filtering in EOP, have the user check for a unsubscribe option in the bulk email message.
+
+## How to tune bulk email
+
+In September 2022, Microsoft Defender for Office 365 Plan 2 customers can access BCL from [advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview). This feature allows admins to look at all bulk senders who sent mail to their organization, along with the corresponding BCL values and the email volume received. You can drill down into the bulk senders by using other columns in **EmailEvents** table in the **Email & collaboration** schema. For more information, see [EmailEvents](/microsoft-365/security/defender/advanced-hunting-emailevents-table).
+
+For example, if Contoso has set their current bulk threshold to 7 in anti-spam policies, Contoso recipients will receive email from all senders with BCL \< 7 in their Inbox. Admins can run the following query to get a list of all bulk senders in the organization:
+
+```console
+EmailEvents
+| where BulkComplaintLevel >= 1 and Timestamp > datetime(2022-09-XXT00:00:00Z)
+| summarize count() by SenderMailFromAddress, BulkComplaintLevel
+```
+
+This query allows admins to identify wanted and unwanted senders. If a bulk sender has a BCL score that doesn't meet the bulk threshold, admins can [submit the sender’s messages to Microsoft for analysis](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal), which adds the sender as an allow entry to the Tenant Allow/Block List.
+
+Organizations without Defender for Office 365 Plan 2 can try the features in Microsoft 365 Defender for Office 365 Plan 2 for free. Use the 90-day Defender for Office 365 evaluation at <https://security.microsoft.com/atpEvaluation>. Learn about who can sign up and trial terms [here](try-microsoft-defender-for-office-365.md) or you can use the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) to identify wanted and unwanted bulk senders:
+
+1. In the Threat protection status report, select **View data by Email \> Spam**. To go directly to the report, open one of the following URLs:
+
+   - EOP: <https://security.microsoft.com/reports/TPSAggregateReport>
+   - Defender for Office 365: <https://security.microsoft.com/reports/TPSAggregateReportATP>
+
+2. Filter for Bulk email, select an email to investigate and click on email entity to learn more about the sender. Email entity is available only for Defender for Office 365 Plan 2 customers.
+
+3. Once you have identified wanted and unwanted senders, adjust the bulk threshold to your desired level. If there are bulk senders with BCL score that doesn't fit within your bulk threshold, [submit the messages to Microsoft for analysis](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal), which adds the sender as an allow entry to the Tenant Allow/Block List.
+
+Admins can follow the [recommended bulk threshold values](recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop) or choose a bulk threshold value that suits the needs of their organization.

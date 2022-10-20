@@ -3,7 +3,7 @@ title: Troubleshoot performance issues
 description: Troubleshoot high CPU usage related to the real-time protection service in Microsoft Defender for Endpoint.
 keywords: troubleshoot, performance, high CPU utilization, high CPU usage, error, fix, update compliance, oms, monitor, report, Microsoft Defender Antivirus
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,8 +14,10 @@ manager: dansimp
 ms.date: 10/19/2021
 audience: ITPro
 ms.topic: troubleshooting
-ms.technology: mde
-ms.collection: m365-security-compliance
+ms.subservice: mde
+ms.collection: 
+- m365-security
+- tier3
 ---
 
 # Troubleshoot performance issues related to real-time protection
@@ -79,7 +81,7 @@ If the previous step doesn't solve the problem, you can collect more information
 
 Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time processes. You can use this to capture the performance issue as it is occurring.
 
-1. Download [Process Monitor v3.60](/sysinternals/downloads/procmon) to a folder like `C:\temp`.
+1. Download [Process Monitor v3.89](/sysinternals/downloads/procmon) to a folder like `C:\temp`.
 
 2. To remove the file's mark of the web:
     1. Right-click **ProcessMonitor.zip** and select **Properties**.

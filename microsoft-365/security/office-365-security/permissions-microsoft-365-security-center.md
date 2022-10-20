@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: 
 ms.audience: Admin
-ms.topic: article
+ms.topic: conceptual
 audience: Admin
 ms.localizationpriority: high
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 search.appverid: 
   - MOE150
   - MET150
 description: Admins can learn how to manage permissions in the Microsoft 365 Defender portal for all tasks related to security.
 ms.custom: 
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Permissions in the Microsoft 365 Defender portal

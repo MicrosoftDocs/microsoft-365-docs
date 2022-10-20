@@ -1,5 +1,5 @@
 ---
-title: "Set up compliance features"
+title: "Set up compliance features in Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -7,24 +7,21 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 10/18/2022
 ms.localizationpriority: high
-ms.collection: 
-- M365-subscription-management
-- M365-identity-device-management 
-- Adm_TOC
+ms.collection:
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
-- MSB365
-- OKR_SMB_M365
-- seo-marvel-mar
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: "Set up compliance features to prevent data loss and help keep your and your customers' sensitive information secure."
 ---
-# Set up compliance features
+# Set up compliance features in Microsoft 365 Business Premium
 
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
@@ -73,7 +70,7 @@ For more information about compliance features in Microsoft 365 for business, se
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198022).
 
-Sensitivity labels are available in Office apps (such as Outlook, Word, Excel, and PowerPoint). Examples of labels include:
+Sensitivity labels are available in Microsoft 365 apps (such as Outlook, Word, Excel, and PowerPoint). Examples of labels include:
 
 - Normal
 - Personal

@@ -7,9 +7,10 @@ manager: scotv
 ms-reviewer: katmartin
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -28,15 +29,15 @@ For more information about Windows 365, see [What is Windows 365?](/windows-365/
 > [!IMPORTANT]
 > You must go to [MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463) to provision Cloud PCs for each customer tenant before you can manage them in Lighthouse. You can't provision from within Lighthouse.
 
-Once you've provisioned Cloud PCs for your customer tenant, the Windows 365 card on the Microsoft 365 Home page provides a brief alert on the Cloud PCs in need of action, such as the number of Cloud PCs that failed to provision and Azure network connection failures. To get a detailed status, select the button on the Windows 365 card (or select **Windows 365** in the left navigation pane) to open the Windows 365 page. From this page, you can get a status overview of the Cloud PCs assigned to your customer tenants, view a list of all the Cloud PCs you manage and the tenants they're assigned to, and view the Azure network connections between your customer tenants and Azure Active Directory (Azure AD) and their status.
+Once you've provisioned Cloud PCs for your customer tenant, the Windows 365 card on the Microsoft 365 Home page provides a brief alert on the Cloud PCs in need of action, such as the number of Cloud PCs that failed to provision and Azure network connection failures. To get a detailed status, select the button on the Windows 365 card (or select **Devices** > **Windows 365** in the left navigation pane) to open the Windows 365 page. From this page, you can get a status overview of the Cloud PCs assigned to your customer tenants, view a list of all the Cloud PCs you manage and the tenants they're assigned to, and view the Azure network connections between your customer tenants and Azure Active Directory (Azure AD) and their status.
 
 ## Overview tab
 
 On the Overview tab, the colored count-annotation bar displays the total number of Cloud PCs or Azure network connections across all your customer tenants that have the following statuses: Failed network connections, Not provisioned, Provisioning failed, and Deprovisioning soon.
 
-You can see a breakdown of Cloud PC statuses for each customer tenant in the list below the annotation bar. To see which tenants have Cloud PCs with a specific status, select that status from the count-annotation bar to filter the list. To see Cloud PC statuses for one or more specific customer tenants, use the **Tenants** dropdown menu to filter the list.
+You can see a breakdown of Cloud PC statuses for each customer tenant in the list below the count-annotation bar. To see which tenants have Cloud PCs with a specific status, select that status from the count-annotation bar to filter the list. To see Cloud PC statuses for one or more specific customer tenants, use the **Tenants** dropdown menu to filter the list.
 
-To get detailed status information for a particular customer tenant, select a value under any of the status columns for that tenant. Depending on which column the value is in, the **Azure network connections** or **All cloud PCs** tab will open and show more information.
+To get detailed status information for a particular customer tenant, select a value under any of the status columns for that tenant. Depending on which column the value is in, the **Azure network connections** or **All Cloud PCs** tab will open and show more information.
 
 The Overview tab also includes the following options:
 
@@ -50,7 +51,7 @@ The Overview tab also includes the following options:
 
 On the All Cloud PCs tab, the colored count-annotation bar displays the total number of Cloud PCs across all your customer tenants that have the following statuses: Provisioned, Not provisioned, Provisioning failed, and Deprovisioning soon.
 
-You can view all Cloud PCs and their provisioning status in the list below the annotation bar. The following information is provided:
+You can view all Cloud PCs and their provisioning status in the list below the count-annotation bar. The following information is provided:
 
 - **Cloud PC name:** Name assigned to the Cloud PC.
 - **User:** User for whom a Cloud PC has been provisioned or attempted to be provisioned.
@@ -66,6 +67,7 @@ Select any Cloud PC in the list to view more details and execute management acti
 - **Restart:** Select to reboot the device. 
 - **Reprovision:** Select to reset the device. You can also view the provisioning policy in the Microsoft Endpoint Manager link.
 - **Rename:** Select to rename the device assigned to a user.
+- **Change account type:** Select the account type for the user: Standard user (recommended) or Local administrator.
 
 The All Cloud PCs tab also includes the following options:
 

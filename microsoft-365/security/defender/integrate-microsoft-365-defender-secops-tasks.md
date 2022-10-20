@@ -3,7 +3,8 @@ title: Step 6. Identify SOC maintenance tasks
 description: Identify SOC maintenance tasks when integrating Microsoft 365 Defender into your security operations.
 keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, secops, security operations, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +16,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365solution-m365dsecops
+  - tier2
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 # Step 6. Identify SOC maintenance tasks
 
@@ -39,7 +40,7 @@ Here are the periodic or as-needed tasks to maintain your SOC for Microsoft 365 
 |Deploy automation scripts and services where appropriate|Download and test automation scripts and configuration files from approved Microsoft sites to improve Microsoft 365 Defender operations.|Weekly and as needed|Engineering and SecOps|
 |Portal or license management|Check announcements and the Microsoft Messaging Center for Microsoft 365 Defender portal or licensing needs based on Microsoft updates and new features.|Weekly|SOC Oversight|
 |Update SOC escalation tickets|All SOC teams update escalation tickets (such as Sentinel, ServiceNow tickets) assigned to them.|Daily|All SOC teams|
-|Track Microsoft 365 Defender Threat & Vulnerability remediation activity|Generate TvM Secure Score remediation activity and report to asset owners through an intranet portal.|Daily|Monitoring|
+|Track Microsoft Defender Vulnerability Management (MDVM) remediation activity|Generate MDVM Secure Score remediation activity and report to asset owners through an intranet portal.|Daily|Monitoring|
 |Generate Secure Score report|Monitoring team tracks and reports Secure Score improvements.|Weekly SOC|Monitoring|
 |Run IR tabletop exercise|Test SOC team playbooks in tabletop exercise.|As needed|All SOC teams|
 

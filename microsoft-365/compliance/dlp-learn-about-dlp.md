@@ -11,7 +11,9 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 search.appverid:
 - MET150
 description: "Learn how to protect your sensitive information using Microsoft Purview data loss prevention policies and tools and take a tour through the DLP lifecycle."
@@ -25,11 +27,13 @@ In Microsoft Purview, you implement data loss prevention by defining and applyin
 
 - Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive
 - Office applications such as Word, Excel, and PowerPoint
-- Windows 10, Windows 11 and macOS (Catalina 10.15 and higher) endpoints
+- Windows 10, Windows 11 and macOS (three latest released versions) endpoints
 - non-Microsoft cloud apps
 - on-premises file shares and on-premises SharePoint.
 
 DLP detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches to keywords, by the evaluation of regular expressions, by internal function validation, and by secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## DLP is part of the larger Microsoft Purview offering
 
@@ -56,15 +60,13 @@ A DLP implementation typically follows these major phases.
 - [Deploy your policies in production](#deploy-your-policies-in-production)
 
 
-<!--ADD DIAGRAM OF THE DLP LIFECYCLE WORK ON WITH MAS-->
-
 ### Plan for DLP
 
 DLP monitoring and protection are native to the applications that users use every day. This helps to protect your organizations' sensitive items from risky activities even if your users are unaccustomed to data loss prevention thinking and practices. If your organization and your users are new to data loss prevention practices, the adoption of DLP may require a change to your business processes and there will be a culture shift for your users. But, with proper planning, testing and tuning, your DLP policies will protect your sensitive items while minimizing any potential business process disruptions.
 
 **Technology planning for DLP**
 
-Keep in mind that DLP as a technology can monitor and protect your data at rest, data in use and data in motion across Microsoft 365 services, Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices, on-premises file shares, and on-premises SharePoint. There are planning implications for the different locations, the type of data you want to monitor and protect, and the actions to be taken when a policy match occurs.
+Keep in mind that DLP as a technology can monitor and protect your data at rest, data in use and data in motion across Microsoft 365 services, Windows 10, Windows 11, and macOS (three latest released versions) devices, on-premises file shares, and on-premises SharePoint. There are planning implications for the different locations, the type of data you want to monitor and protect, and the actions to be taken when a policy match occurs.
 
 **Business processes planning for DLP**
 
@@ -85,7 +87,7 @@ You can apply DLP policies to data at rest, data in use, and data in motion in l
 - OneDrive accounts
 - Teams chat and channel messages
 - Microsoft Defender for Cloud Apps
-- Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices
+- Windows 10, Windows 11, and macOS (three latest released versions) devices
 - On-premises repositories
 - PowerBI sites
 
@@ -142,7 +144,7 @@ location | include/exclude by|
 |SharePoint sites |sites |
 |OneDrive accounts |accounts or distribution groups |
 |Teams chat and channel messages |account or distribution group |
-|Windows 10, Windows 11, and macOS (Catalina 10.15 and higher)  devices |user or group |
+|Windows 10, Windows 11, and macOS (three latest released versions)  devices |user or group |
 |Microsoft Cloud App Security |instance |
 |On-premises repositories| repository file path|
 
@@ -156,7 +158,7 @@ location | include/exclude by|
 
 - SharePoint/Exchange/OneDrive: Block people who are outside your organization form accessing the content. Show the user a tip and send them an email notification that they are taking an action that is prohibited by the DLP policy.
 - Teams Chat and Channel: Block sensitive information from being shared in the chat or channel
-- Windows 10, Windows 11, and macOS (Catalina 10.15 and higher)  Devices: Audit or restrict copying a sensitive item to a removeable USB device
+- Windows 10, Windows 11, and macOS (three latest released versions)  Devices: Audit or restrict copying a sensitive item to a removeable USB device
 - Office Apps: Show a popup notifying the user that they are engaging in a risky behavior and block or block but allow override.
 - On-premises file shares: move the file from where it is stored to a quarantine folder
 

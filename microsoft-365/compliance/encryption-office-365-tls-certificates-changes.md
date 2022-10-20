@@ -45,6 +45,8 @@ This change will not affect certificates, domains, or services used in the China
 
 All certificate information in this article was previously provided in [Microsoft 365 encryption chains](./encryption-office-365-certificate-chains.md) no later than October 2020.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## When will this change happen?
 
 Services began transitioning to the new Root CAs in January 2022 and will continue through October 2022.
@@ -129,6 +131,13 @@ Here are some ways to detect if your application may be impacted:
    The root of the certificate chain is not a trusted root authority.
    ```
 
+- If you use a Session Border Controller, Microsoft has prepared a testing endpoint that can be used to verify that SBC appliances trust certificates issued from the new Root CA. This endpoint should be used only for SIP OPTIONS ping messages and not for voice traffic.
+   ```
+   Global FQDN: sip.mspki.pstnhub.microsoft.com 
+   Port: 5061
+   ```
+   If this does not operate normally, please contact your device manufacturer to determine if updates are available to support the new Root CA. 
+
 ## When can I retire the old CA information?
 
 The current Root CA, Intermediate CA, and leaf certificates will not be revoked. The existing CA Common Names and/or thumbprints will be required through at least October 2023 based on the lifetime of existing certificates.
@@ -138,7 +147,8 @@ The current Root CA, Intermediate CA, and leaf certificates will not be revoked.
 Under very rare circumstances, enterprise users may see certificate validation errors where the Root CA "DigiCert Global Root G2" appears as revoked. This is due to a known Windows bug under both of the following conditions:
 
 - The Root CA is in the [CurrentUser\Root certificate store](/windows/win32/seccrypto/system-store-locations#cert_system_store_current_user) and is missing the `NotBeforeFileTime` and `NotBeforeEKU` properties
-- The Root CA is also in the [LocalMachine\AuthRoot certificate store](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine) but has both the `NotBeforeFileTime` and `NotBeforeEKU` properties
+- The Root CA is in the [LocalMachine\AuthRoot certificate store](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine) but has both the `NotBeforeFileTime` and `NotBeforeEKU` properties
+- The Root CA is NOT in the [LocalMachine\Root certificate store](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine)
 
 All leaf certificates issued from this Root CA after the `NotBeforeFileTime` will appear revoked. 
 
@@ -177,7 +187,12 @@ certutil -store -v authroot DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 certutil -user -store -v root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 ```
 
-A user can resolve the issue by deleting the copy of the Root CA in the `CurrentUser\Root` certificate store:
+A user can resolve the issue by deleting the copy of the Root CA in the `CurrentUser\Root` certificate store by doing:
 ```
 certutil -user -delstore root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 ```
+or 
+```
+reg delete HKCU\SOFTWARE\Microsoft\SystemCertificates\Root\Certificates\DF3C24F9BFD666761B268073FE06D1CC8D4F82A4 /f
+```
+The first approach creates a Windows dialog that a user must click through while the second approach does not. 

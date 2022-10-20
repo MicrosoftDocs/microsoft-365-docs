@@ -75,7 +75,7 @@
       "extendBreadcrumb": true,
       "recommendations": true,
       "uhfHeaderId": "MSDocsHeader-M365-IT",
-      "searchScope": ["Microsoft 365"],
+      "searchScope": ["Microsoft 365", "Microsoft Bookings", "Microsoft Syntex", "Microsoft 365 for frontline workers"],
       "contributors_to_exclude": [ 
         "rjagiewich", 
         "traya1", 
@@ -83,7 +83,9 @@
         "claydetels19", 
         "jborsecnik",
         "tiburd",
-        "garycentric"
+        "garycentric",
+        "v-dihans",
+        "AngelaMotherofDragons"
       ]
     },
     "fileMetadata": {
@@ -103,8 +105,9 @@
         "business-premium/**/*.md": "Microsoft 365 Business Premium",
         "business/**/*.md": "Microsoft 365 Business",
         "admin/**/*.md": "Microsoft 365 admin",
-        "contentunderstanding/**/*.md": "SharePoint Syntex",
-        "lighthouse/**/*.md": "Microsoft 365 Lighthouse"
+        "lighthouse/**/*.md": "Microsoft 365 Lighthouse",
+        "contentunderstanding/**/*.md": "Microsoft Syntex",
+        "frontline/**/*.md": "Microsoft 365 for frontline workers"
       },
       "feedback_product_url": {
         "compliance/**/*.md":"https://feedbackportal.microsoft.com/feedback/",
@@ -114,16 +117,27 @@
         "business/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "business-video/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "business-premium/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
+        "solutions/**.*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "commerce/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "contentunderstanding/**/*.md":"https://aka.ms/syntex/feedback",
         "enterprise/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "solutions/**.*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
-        "lighthouse/":"https://feedbackportal.microsoft.com/feedback/forum/d6a21c42-fe1b-ec11-b6e7-0022481f8472"
+        "lighthouse/":"https://feedbackportal.microsoft.com/feedback/forum/d6a21c42-fe1b-ec11-b6e7-0022481f8472",
+        "frontline/":"https://feedbackportal.microsoft.com/feedback/forum/ad198462-1c1c-ec11-b6e7-0022481f8472"
       },
       "searchScope": {
+        "admin/**/*.md": ["Microsoft 365"],
         "bookings/**/*.md": ["Microsoft Bookings"],
-        "contentunderstanding/**/*.md":["SharePoint Syntex"],
-        "lighthouse/**/*.md": ["Microsoft 365 Lighthouse"]
+        "business/**/*.md": ["Microsoft 365"],
+        "business-video/**/*.md": ["Microsoft 365"],
+        "commerce/**/*.md": ["Microsoft 365"],
+        "compliance/**/*.md": ["Microsoft 365"],
+        "contentunderstanding/**/*.md":["Microsoft Syntex"],
+        "lighthouse/**/*.md": ["Microsoft 365 Lighthouse"],
+        "frontline/**/*.md": ["Microsoft 365 for frontline workers"],
+        "enterprise/**/*.md": ["Microsoft 365"],
+        "security/**/*.md": ["Microsoft 365"],
+        "solutions/**.*.md": ["Microsoft 365"]
       }
     },
     "template": [],

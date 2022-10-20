@@ -14,12 +14,12 @@ search.appverid:
   - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: Admins can learn about threat protection in Microsoft 365 and configure how to use it for your organization.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Protect against threats
@@ -233,19 +233,9 @@ For detailed instructions for configuring Safe Attachments policies and global s
 
 For more information about the recommended settings for Safe Links, see [Safe Links settings](recommended-settings-for-eop-and-office365.md#safe-links-settings).
 
-1. Open the **Safe Links** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/safelinksv2>.
+1. Open the **Safe Links** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/safelinksv2>, and then click ![Create icon.](../../media/m365-cc-sc-create-icon.png).
 
-2. On the **Safe Links** page, click **Global settings**, and then configure the following settings on the flyout that appears:
-   - **Settings that apply to content in supported Office 365 apps** section:
-     - **Use Safe Links in Office 365 apps**: Verify this setting is turned on (![Toggle on.](../../media/scc-toggle-on.png)).
-     - **Do not track when users click protected links in Office 365 apps**: Turn this setting off (![Toggle off.](../../media/scc-toggle-off.png)).
-     - **Do not let users click through to the original URL in Office 365 apps**: Verify this setting is turned on (![Toggle on.](../../media/scc-toggle-on.png)).
-
-   When you're finished, click **Save**
-
-3. Back on the **Safe Links** page, click ![Create icon.](../../media/m365-cc-sc-create-icon.png).
-
-4. In the **Create Safe Links policy** wizard that opens, configure the following settings:
+2. In the **Create Safe Links policy** wizard that opens, configure the following settings:
    - **Name your policy** page:
      - **Name**: Enter something unique and descriptive.
      - **Description**: Enter an optional description.
@@ -255,24 +245,21 @@ For more information about the recommended settings for Safe Links, see [Safe Li
        - **On: Safe Links checks a list of known, malicious links when users click links in email**: Select his setting (turn on).
        - **Apply Safe Links to email messages sent within the organization**: Select this setting (turn on).
        - **Apply real-time URL scanning for suspicious links and links that point to files**: Select this setting (turn on).
-       - **Wait for URL scanning to complete before delivering the message**: Select this setting (turn on).
+         - **Wait for URL scanning to complete before delivering the message**: Select this setting (turn on).
        - **Do not rewrite URLs, do checks via Safe Links API only**: Verify this setting is not selected (turn off).
      - **Do not rewrite the following URLs in email**: We have no specific recommendation for this setting. For more information, see ["Do not rewrite the following URLs" lists in Safe Links policies](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).
      - **Action for potentially malicious URLs in Microsoft Teams** section:
        - ***On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams**: Select this setting (turn on).
      - **Click protection settings** section:
        - **Track user clicks**: Verify this setting is selected (turned on).
-       - **Let users click through to the original URL**: Turn off this setting (not selected).
-       - **Display the organization branding on notification and warning pages**: Selecting this setting (turning it on) is meaningful only after you've followed the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your company logo.
+         - **Let users click through to the original URL**: Turn off this setting (not selected).
+         - **Display the organization branding on notification and warning pages**: Selecting this setting (turning it on) is meaningful only after you've followed the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your company logo.
    - **Notification** page:
      - **How would you like to notify users?** section: Optionally, you can select **Use custom notification text** to enter customized notification text to use. You can also select **Use Microsoft Translator for automatic localization** to translate the custom notification text into the user's language. Otherwise, leave **Use the default notification text** selected.
 
-5. When you're finished, click **Submit**, and then click **Done**.
+3. When you're finished, click **Submit**, and then click **Done**.
 
-For detailed instructions for configuring Safe Links policies and global settings for Safe Links, see the following topics:
-
-- [Set up Safe Links policies in Microsoft Defender for Office 365](set-up-safe-links-policies.md)
-- [Configure global settings for Safe Links in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md)
+For detailed instructions for configuring Safe Links policies and global settings for Safe Links, see [Set up Safe Links policies in Microsoft Defender for Office 365](set-up-safe-links-policies.md).
 
 ### Now set up alerts for detected files in SharePoint Online or OneDrive for Business
 

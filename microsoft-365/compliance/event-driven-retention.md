@@ -11,7 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 search.appverid: 
 - MOE150
 - MET150
@@ -29,22 +30,24 @@ description: Typically part of a records management solution, you can configure 
 When you retain content, the retention period is often based on the age of the content. For example, you might retain documents for seven years after they're created and then delete them. But when you configure [retention labels](retention.md#retention-labels), you can also base a retention period on when a specific type of event occurs. The event triggers the start of the retention period, and all content with a retention label applied for that type of event get the label's retention actions enforced on them.
   
 Examples for using event-based retention:
-  
+
 - **Employees leaving the organization** Suppose that employee records must be retained for 10 years from the time an employee leaves the organization. After 10 years elapse, all documents related to the hiring, performance, and termination of that employee must be disposed. The event that triggers the 10-year retention period is the employee leaving the organization. 
-    
+
 - **Contract expiration** Suppose that all records related to contracts must be retained for five years from the time the contract expires. The event that triggers the five-year retention period is the expiration of the contract. 
-    
+
 - **Product lifetime** Your organization might have retention requirements related to the last manufacturing date of products for content such as technical specifications. In this case, the last manufacturing date is the event that triggers the retention period. 
-    
-Event-based retention is typically used as part of a records management process. This means that:
+
+Event-based retention, sometimes also referred to as "event-driven retention", is typically used with records management processes. This means that:
 
 - Retention labels based on events also usually mark items as a record, as a part of a records management solution. For more information, see [Learn about records management](records-management.md).
 
 - A document that's been declared a record but whose event trigger hasn't yet happened is retained indefinitely. Until an event triggers that document's retention period, which then expires, records can't be permanently deleted.
 
-- Retention labels based on events usually trigger a disposition review at the end of the retention period, so that a records manager can manually review and dispose of the content. For more information, see [Disposition of content](disposition.md).
+- Retention labels based on events often trigger a disposition review at the end of the retention period, so that a records manager can manually review and dispose of the content. For more information, see [Disposition of content](disposition.md).
 
-A retention label based on an event has the same capabilities as any retention label in Microsoft 365. For more information, see [Learn about retention policies and retention labels](retention.md).
+A retention label based on an event has the same capabilities as any retention label in Microsoft Purview. For more information, see [Learn about retention policies and retention labels](retention.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Understanding the relationship between event types, labels, events, and asset IDs
 
@@ -72,14 +75,14 @@ It's important to understand that if you don't specify an asset ID or keywords f
 
 Finally, remember that each retention label has its own retention settings. In this example, they all specify 10 years, but it's possible for an event to trigger retention labels where each label has a different retention period.
   
-## How to set up event-driven retention
+## How to set up event-based retention
 
-High-level workflow for event-driven retention:
+High-level workflow for event-based retention:
   
-![Diagram of workflow for setting up event-driven retention.](../media/event-based-retention-process.png)
+![Diagram of workflow for setting up event-based retention.](../media/event-based-retention-process.png)
   
 > [!TIP]
-> See [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePoint to auto-apply retention labels and implement event-driven retention.
+> See [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePoint to auto-apply retention labels and implement event-based retention.
 
 ### Step 1: Create a label whose retention period is based on an event
 

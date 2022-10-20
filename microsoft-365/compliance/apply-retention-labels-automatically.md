@@ -1,5 +1,5 @@
 ---
-title: "Automatically apply a retention label"
+title: "Automatically apply a retention label to Microsoft 365 items"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -11,7 +11,8 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
@@ -54,6 +55,8 @@ Use the following instructions for the two admin steps.
 >
 > For these scenarios, see [Publish retention labels and apply them in apps](create-apply-retention-labels.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
 The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see the permissions information for [records management](get-started-with-records-management.md#permissions) or [data lifecycle management](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels), depending on the solution you're using.
@@ -72,7 +75,7 @@ When you create an auto-apply policy, you select a retention label to automatica
         - **Solutions** \> **Records management** \> **Label policies** tab \> **Auto-apply a label**
 
     - If you are using data lifecycle management:
-        - **Solutions** \> **Data lifecycle management** \> **Label policies** tab \> **Auto-apply a label**
+        - **Solutions** \> **Data lifecycle management** \> **Microsoft 365** \> **Label policies** tab \> **Auto-apply a label**
 
     Don't immediately see your solution in the navigation pane? First select **Show all**.
 
@@ -85,7 +88,7 @@ When you create an auto-apply policy, you select a retention label to automatica
 5. Depending on your selected scope:
 
     - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](retention-settings.md#configuration-information-for-adaptive-scopes) added. For example, if you only added a scope type of **User**, you will be able to select **Exchange email** but not **SharePoint sites**.
-
+    
     - If you chose **Static**: On the **Choose locations** page, toggle on or off any of the locations. For each location, you can leave it at the default to [apply the policy to the entire location](retention-settings.md#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)
 
     For information about the location choices, see [Locations](retention-settings.md#locations).
@@ -136,7 +139,7 @@ Additionally, SharePoint items that are in draft or that have never been publish
 #### Auto-apply labels to content with specific types of sensitive information
 
 > [!IMPORTANT]
-> For emails that you auto-apply by identifying sensitive information, all mailboxes are automatically included, which includes mailboxes from Microsoft 365 groups.
+> For emails that you auto-apply by identifying sensitive information, all mailboxes are automatically included, which includes mailboxes from Microsoft 365 groups. By default, the **Exchange email** location isn't selected for adaptive scopes when you have this configuration. Even if you can select the location, retention labels won't apply to the Exchange items.
 >
 > Although group mailboxes would usually be included by selecting the **Microsoft 365 Groups** location, for this specific policy configuration, the groups location includes only SharePoint sites connected to a Microsoft 365 group.
 
@@ -155,7 +158,7 @@ After you select a policy template, you can add or remove any types of sensitive
 For more information about these options, see the following guidance from the DLP documentation [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
 > [!IMPORTANT]
-> Sensitive information types have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> Sensitive information types have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](sit-limits.md#instance-count-supported-values-for-sit).
 
 To consider when using sensitive information types to auto-apply retention labels:
 
@@ -264,16 +267,18 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 #### Auto-apply labels to content by using trainable classifiers
 
+> [!IMPORTANT]
+> Currently, trainable classifiers for auto-labeling can't be used with [adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention). Use a static scope instead.
+
 When you choose the option for a trainable classifier, you can select one or more of the pre-trained or custom trainable classifiers:
 
 ![Choose trainable classifier.](../media/retention-label-classifers.png)
 
-> [!CAUTION]
-> We are deprecating the **Offensive Language** pre-trained classifier because it has been producing a high number of false positives. Don't use this classifier and if you are currently using it, we recommend you move your business processes off it and instead use the **Targeted Harassment**, **Profanity**, and **Threat** pre-trained classifiers.
-
-To automatically apply a label by using this option, SharePoint sites, as well as mailboxes, must have at least 10 MB of data.
+The available pre-trained classifiers are often updated, so there might be more entries to select than the ones displayed in this screenshot.
 
 For more information about trainable classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
+
+To automatically apply a label by using this option, SharePoint sites, as well as mailboxes, must have at least 10 MB of data.
 
 > [!TIP]
 > If you use trainable classifiers for Exchange, see [How to retrain a classifier in content explorer](classifier-how-to-retrain-content-explorer.md).
@@ -285,7 +290,7 @@ To consider when using trainable classifiers to auto-apply retention labels:
 #### Auto-apply labels to cloud attachments
 
 > [!NOTE]
-> This option is gradually rolling out in preview and is subject to change.
+> This option is in preview and subject to change.
 
 You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications by users. You use this option in conjunction with retention policies for the communication services themselves, Exchange and Teams.
 
@@ -325,7 +330,7 @@ To consider when auto-applying retention labels to cloud attachments:
 
 - The following items aren't supported as cloud attachments that can be retained:
   - SharePoint sites, pages, lists, forms, folders, document sets, and OneNote pages.
-  - Files shared by users who don't have access to those files.
+  - Files shared by users who don't have access to those files at the time of sharing.
   - Files that are deleted or moved before the cloud attachment is sent. For example, a user copies and pastes a previously shared attachment from another message, without first confirming that the file is still available. Or, somebody forwards an old message when the file is now deleted.
   - Files that are shared by guests or users outside your organization.
   - Files in draft emails and messages that aren't sent.

@@ -1,12 +1,13 @@
 ---
-title: "Create a secure guest sharing environment"
+title: "Create a more secure guest sharing environment"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection: 
+- highpri
 - SPO_Content
 - M365-security-compliance
 - m365solution-3tiersprotection
@@ -18,12 +19,12 @@ ms.custom:
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
-description: Learn about available options to create a secure guest sharing environment in Microsoft 365, providing guest access for improved collaboration.
+description: Learn about available options to create a more secure guest sharing environment in Microsoft 365, providing guest access for improved collaboration.
 ---
 
-# Create a secure guest sharing environment
+# Create a more secure guest sharing environment
 
-In this article, we'll walk through a variety of options for creating a secure guest sharing environment in Microsoft 365. These are examples to give you an idea of the options available. You can use these procedures in different combinations to meet the security and compliance needs of your organization.
+In this article, we'll walk through a variety of options for creating a more secure guest sharing environment in Microsoft 365. These are examples to give you an idea of the options available. You can use these procedures in different combinations to meet the security and compliance needs of your organization.
 
 This article includes:
 

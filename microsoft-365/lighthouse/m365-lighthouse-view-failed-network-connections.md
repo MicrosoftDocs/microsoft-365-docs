@@ -7,9 +7,10 @@ manager: scotv
 ms-reviewer: katmartin
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -30,11 +31,11 @@ Microsoft 365 Lighthouse provides the connection status between your customer te
 
 ## View a failed network connection
 
-1. In the left navigation pane in Lighthouse, select **Windows 365**.
+1. In the left navigation pane in Lighthouse, select **Devices** > **Windows 365**.
 
 2. Select the **Azure network connections** tab.
 
-3. From the connection summary section, select **Failed connections**.
+3. From the colored count-annotation bar, select **Failed connections**.
 
 4. From the filtered list, select **View connection details in Microsoft Endpoint Manager** next to the connection you want to investigate.
 

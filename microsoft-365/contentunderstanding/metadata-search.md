@@ -1,28 +1,28 @@
 ---
-title: Search for metadata in document libraries in Microsoft SharePoint Syntex
+title: Search for metadata in document libraries in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: kkameth
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: high
-description: Learn how to use advanced metadata search and search for custom site columns to find items in SharePoint document libraries using SharePoint Syntex.
+description: Learn how to use advanced metadata search and search for custom site columns to find items in SharePoint document libraries using Microsoft Syntex.
 ---
 
-# Search for metadata in document libraries in Microsoft SharePoint Syntex
+# Search for metadata in document libraries in Microsoft Syntex
 
-The advanced metadata search feature in SharePoint Syntex lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
+The advanced metadata search feature in Microsoft Syntex lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
 
 Advanced metadata search lets you use the metadata associated with a document to help locate the file in a SharePoint document library. This feature is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
 
 > [!NOTE]
-> This feature is available only for users who are licensed for SharePoint Syntex. 
+> This feature is available only for users who are licensed for Syntex. 
 
 ## To use advanced metadata search
 

@@ -7,15 +7,17 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
+- tier1
 ---
 
 # Offboard a device from Microsoft Defender for Business
@@ -23,7 +25,7 @@ ms.collection:
 If you want to offboard a device, use one of the following procedures:
 
 - [Offboard a Windows device](#offboard-a-windows-device)
-- [Offboard a macOS computer](#offboard-a-macos-computer)
+- [Offboard a Mac](#offboard-a-mac)
 
 ## Offboard a Windows device
 
@@ -41,17 +43,17 @@ If you want to offboard a device, use one of the following procedures:
 
 7. Run the script on each device that you want to offboard.
 
-## Offboard a macOS computer
+## Offboard a Mac
 
 1. Go to **Finder** > **Applications**. 
 
-2. Right click on Microsoft Defender for Business, and then choose **Move to Trash**. <br/>--- or --- <br/> Use the following command: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
+2. Right click on **Microsoft Defender for Business**, and then choose **Move to Trash**. <br/>--- or --- <br/> Use the following command: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
 
 > [!IMPORTANT]
 > Offboarding a device causes the devices to stop sending data to Defender for Business. However, data received prior to offboarding is retained for up to six (6) months.
 
 ## Next steps
 
-- [Use your Threat & Vulnerability Management dashboard in Microsoft Defender for Business](mdb-view-tvm-dashboard.md)
+- [Use your Microsoft Defender Vulnerability Management dashboard in Microsoft Defender for Business](mdb-view-tvm-dashboard.md)
 - [View or edit policies in Microsoft Defender for Business](mdb-view-edit-create-policies.md)
 - [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)

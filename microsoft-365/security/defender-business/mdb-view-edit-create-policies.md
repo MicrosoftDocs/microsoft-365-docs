@@ -7,20 +7,22 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
+- tier1
 ---
 
 # View or edit policies in Microsoft Defender for Business
 
-In Microsoft Defender for Business, security settings are configured through policies that are applied to devices. To help simplify your setup and configuration experience, Defender for Business includes preconfigured policies to help protect your company's devices as soon as they are onboarded. You can use the default policies, edit policies, or create your own policies.
+In Defender for Business, security settings are configured through policies that are applied to devices. To help simplify your setup and configuration experience, Defender for Business includes preconfigured policies to help protect your company's devices as soon as they are onboarded. You can use the default policies, edit policies, or create your own policies.
 
 **This article describes how to**:
 
@@ -29,6 +31,8 @@ In Microsoft Defender for Business, security settings are configured through pol
 - [Edit an existing policy](#edit-an-existing-policy)
 - [Create a new policy](#create-a-new-policy)
 
+> [!NOTE]
+> The procedures in this article describe how to view, edit, and create security policies in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). If you're using Microsoft Intune, see [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).
 
 ## Default policies in Defender for Business
 
@@ -36,7 +40,6 @@ In Defender for Business, there are two main types of policies to protect your c
 
 - **Next-generation protection policies**, which determine how Microsoft Defender Antivirus and other threat protection features are configured
 - **Firewall policies**, which determine what network traffic is permitted to flow to and from your company's devices
-
 
 ## View your existing policies
 
@@ -64,7 +67,7 @@ In Defender for Business, there are two main types of policies to protect your c
 
    - To keep the selected device group as it is, choose **Next**.
    - To remove a device group from the policy, select **Remove**.
-   - To set up a new device group, select **Create new group**, and then set up your device group. (To get help with this task, see [Device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).)
+   - To set up a new device group, select **Create new group**, and then set up your device group. (To get help with this task, see [Device groups in Defender for Business](mdb-create-edit-device-groups.md).)
    - To apply the policy to another device group, select **Use existing group**.
 
    After you have specified which device groups should receive the policy, choose **Next**.
@@ -106,7 +109,7 @@ In Defender for Business, there are two main types of policies to protect your c
 
    To learn more about device groups, see [Device groups in Defender for Business](mdb-create-edit-device-groups.md).
 
-8. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Configuration settings for Microsoft Defender for Business](mdb-next-gen-configuration-settings.md).
+8. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Configuration settings for Defender for Business](mdb-next-gen-configuration-settings.md).
 
 9. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings. 
 
@@ -119,7 +122,7 @@ In Defender for Business, there are two main types of policies to protect your c
 Choose one or more of the following tasks:
 
 - [Manage devices](mdb-manage-devices.md)
-- [Create a new policy in Microsoft Defender for Business](mdb-create-new-policy.md)
-- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
+- [Create a new policy in Defender for Business](mdb-create-new-policy.md)
+- [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)
+- [Respond to and mitigate threats in Defender for Business](mdb-respond-mitigate-threats.md)
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)

@@ -4,7 +4,7 @@ description: Use the Microsoft Defender for Endpoint troubleshooting mode to add
 keywords: antivirus, troubleshoot, troubleshooting mode, tamper protection, compatibility
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance
-ms.topic: article
-ms.technology: mde
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.subservice: mde
 ---
 
 # Troubleshooting mode scenarios in Microsoft Defender for Endpoint 

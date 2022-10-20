@@ -4,7 +4,8 @@ description: Quickly address threats and affected assets in your advanced huntin
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, take action
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,10 +17,9 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
-ms.topic: article
-ms.technology: m365d
+  - m365-security
+  - tier1
+ms.topic: conceptual
 ---
 
 # Take action on advanced hunting query results
@@ -71,14 +71,14 @@ To learn more about how quarantine actions are taken and how files can be restor
 
 To take any of the described actions, select one or more records in your query results and then select **Take actions**. A wizard will guide you through the process of selecting and then submitting your preferred actions.
 
-:::image type="content" source="../../media/take-action-multiple.png" alt-text="The Take actions option in the Microsoft 365 Defender portal" lightbox="../../media/take-action-multiple.png":::
+:::image type="content" source="../../media/take-action-multiple.png" alt-text="Take actions option in the Microsoft 365 Defender portal" lightbox="../../media/take-action-multiple.png":::
 
 
 ## Take various actions on emails
 Apart from device-focused remediation steps, you can also take some actions on emails from your query results. Select the records you want to take action on, select **Take actions**, then under **Choose actions**, select your choice from the following:
 - `Move to mailbox folder` - select this to move the email messages to Junk, Inbox, or Deleted items folder
 
-   :::image type="content" source="../../media/advanced-hunting-take-actions-email.png" alt-text="The Take actions option in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-take-actions-email.png":::
+   :::image type="content" source="../../media/advanced-hunting-take-actions-email.png" alt-text="The option Take actions in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-take-actions-email.png":::
 
 - `Delete email` - select this to move email messages to the Deleted items folder (**Soft delete**) or delete them permanently (**Hard delete**)
 
