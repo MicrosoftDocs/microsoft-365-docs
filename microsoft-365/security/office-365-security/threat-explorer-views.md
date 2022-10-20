@@ -7,7 +7,7 @@ author: msfttracyp
 manager: dansimp
 ms.date: 05/15/2020
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 
 ms.localizationpriority: medium
 ms.collection:

@@ -142,6 +142,8 @@ In the [newer versions of Office](#how-to-disable-the-aip-add-in-to-use-built-in
 
 - **Use the Azure Information Protection add-in for sensitivity labeling**. Set the value to **1**.
 
+This new setting is still rolling out. If you don't see it yet, wait a few more days and try again.
+
 Deploy this setting by using Group Policy, or by using the [Office cloud policy service](/DeployOffice/overview-office-cloud-policy-service).
 
 Additional Office settings you might need to configure:

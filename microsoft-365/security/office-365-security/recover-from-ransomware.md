@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: 
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 
 ms.localizationpriority: medium
 search.appverid: 

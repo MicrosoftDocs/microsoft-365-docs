@@ -5,13 +5,13 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid:
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: high
-description: Learn about SKOS format reference for SharePoint taxonomy.
+description: Learn about the SKOS format reference for SharePoint taxonomy.
 ---
 
 # SKOS format reference for SharePoint taxonomy

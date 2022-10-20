@@ -1,6 +1,1236 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/support/afghanistan.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/support/aland-islands.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/albania.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/algeria.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/american-samoa.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/andorra.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/angola.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/anguilla.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/antigua-and-barbuda.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/argentina.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/armenia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/aruba.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/ascension.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/australia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/austria.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/azerbaijan.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/bahamas.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/bahrain.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/bangladesh.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/barbados.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/belarus.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/belgium.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/belize.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/benin.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/bermuda.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/bhutan.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/bolivia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/bonaire.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/bosnia-and-herzegovina.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/botswana.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/bouvet-island.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/brazil.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/british-virgin-islands.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/brunei.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/bulgaria.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/burkina-faso.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/burundi.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/cambodia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/cameroon.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/canada.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/cape-verde.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/cayman-islands.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/central-african-republic.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/chad.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/chile.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/china-prc.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/christmas-island.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/cocos-keeling-islands.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/colombia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/comoros.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/congo-drc.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/congo.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/cook-islands.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/costa-rica.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/cote-divoire.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/croatia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/curacao.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/cyprus.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/czech-republic.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/denmark.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/djibouti.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/dominica.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/dominican-republic.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/ecuador.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/egypt.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/el-salvador.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/equatorial-guinea.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/eritrea.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/estonia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/ethiopia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/falkland-islands.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/faroe-islands.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/fiji.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/finland.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/france.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/french-guiana.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/french-polynesia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/french-southern-territories.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/gabon.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/gambia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/georgia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/germany.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/ghana.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/gibraltar.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/greece.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/greenland.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/grenada.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/guadeloupe.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/guam.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/guatemala.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/guernsey.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/guinea-bissau.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/guinea.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/guyana.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/haiti.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/heard-island-and-mcdonald-islands.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/honduras.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/hong-kong-sar.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/hungary.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/iceland.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/india.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/indonesia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/iraq.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/ireland.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/isle-of-man.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/israel.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/italy.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/jamaica.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/jan-mayen.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/japan.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/jersey.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/jordan.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/kazakhstan.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/kenya.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/kiribati.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/korea.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/kosovo.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/kuwait.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/kyrgyzstan.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/laos.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/latvia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/lebanon.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/lesotho.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/liberia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/libya.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/liechtenstein.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/lithuania.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/luxembourg.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/macau-sar.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/macedonia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/madagascar.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/malawi.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/malaysia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/maldives.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/mali.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/malta.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/marshall-islands.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/martinique.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/mauritania.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/mauritius.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/mayotte.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/mexico.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/micronesia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/moldova.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/monaco.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/mongolia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/montenegro.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/montserrat.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/morocco.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/mozambique.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/myanmar.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/namibia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/nauru.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/nepal.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/netherlands.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/new-caledonia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/new-zealand.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/nicaragua.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/niger.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/nigeria.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/niue.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/norfolk-island.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/northern-mariana-islands.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/norway.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/oman.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/pakistan.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/palau.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/palestinian-authority.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/panama.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/papua-new-guinea.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/paraguay.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/peru.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/philippines.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/pitcairn-islands.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/poland.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/portugal.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/puerto-rico.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/qatar.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/reunion.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/romania.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/russia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/rwanda.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/saba.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/saint-barthelemy.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/saint-lucia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/saint-martin.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/saint-pierre-and-miquelon.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/saint-vincent-and-the-grenadines.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/samoa.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/san-marino.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/sao-tome-and-principe.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/saudi-arabia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/senegal.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/serbia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/seychelles.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/sierra-leone.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/singapore.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/sint-eustatius.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/sint-maarten.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/slovakia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/slovenia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/solomon-islands.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/somalia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/south-africa.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/south-georgia-and-south-sandwich-islands.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/south-sudan.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/spain.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/sri-lanka.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/st-helena.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/st-kitts-nevis.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/suriname.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/svalbard.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/swaziland.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/sweden.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/switzerland.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/taiwan.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/tajikistan.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/tanzania.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/thailand.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/timor-leste.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/togo.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/tokelau.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/tonga.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/trinidad-and-tobago.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/tristan-da-cunha.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/tunisia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/turkey.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/turkmenistan.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/turks-and-caicos-islands.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/tuvalu.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/uganda.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/ukraine.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/united-arab-emirates.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/united-kingdom.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/united-states.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/uruguay.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/uzbekistan.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/vanuatu.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/vatican-city.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/venezuela.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/vietnam.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/virgin-islands.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/wallis-and-futuna.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/yemen.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/zambia.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/support/zimbabwe.md",
+      "redirect_url": "/microsoft-365/admin/support-contact-info",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/admin/misc/sign-up-for-online-services.md",
       "redirect_url": "/microsoft-365/admin/misc/remove-a-domain-from-another-account",
       "redirect_document_id": false
@@ -7909,6 +9139,11 @@
       "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-overview.md",
       "redirect_url": "/microsoft-365/security/defender/advanced-hunting-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/contentunderstanding/index.md",
+      "redirect_url": "/microsoft-365/contentunderstanding/",
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/compliance/sit-defn-credentials-in-url.md",
