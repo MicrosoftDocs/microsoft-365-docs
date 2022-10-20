@@ -264,7 +264,7 @@ Here's an example query for advanced hunting:
 ```kusto
 
 DeviceNetworkEvents
-|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked', 'ConnectionSuccess')
+|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 
 ```
 
