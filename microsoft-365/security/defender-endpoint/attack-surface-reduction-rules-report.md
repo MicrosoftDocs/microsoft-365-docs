@@ -14,7 +14,7 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
-ms.topic: article
+ms.topic: conceptual
 ms.collection: 
 - m365-security
 - tier2

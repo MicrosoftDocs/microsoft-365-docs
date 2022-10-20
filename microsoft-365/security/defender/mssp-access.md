@@ -12,7 +12,7 @@ ms.author: macapara
 author: mjcaparas
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 search.appverid: 
 - MOE150
 - MET150

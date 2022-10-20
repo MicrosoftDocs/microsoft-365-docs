@@ -17,7 +17,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Integrate your SIEM tools with Microsoft 365 Defender
