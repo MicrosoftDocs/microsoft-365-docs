@@ -55,7 +55,7 @@ Custom apps are commonly referred to as line-of-business (LOB) apps. LOB apps ar
 When your organization creates apps for your workforce to use, they can design the app to support Intune app protection policies. You or your organization can use either the Intune App Wrapping Tool or the Intune App SDK to enable app protection policies.
 
 > [!NOTE]
-> In addition to creating your own LOB apps, you can install specific [3rd party protected apps](mem/intune/apps/apps-supported-intune-apps) that are designed to work with Intune.
+> In addition to creating your own LOB apps, you can install specific [3rd party protected apps](/mem/intune/apps/apps-supported-intune-apps) that are designed to work with Intune.
 
 ### Custom apps types
 
