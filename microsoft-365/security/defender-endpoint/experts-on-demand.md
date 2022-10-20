@@ -50,7 +50,7 @@ You can partner with Microsoft Defender Experts who can be engaged directly from
 > [!NOTE]
 >
 > - Alert inquiries related to your organization's customized threat intelligence data are currently not supported. Consult your security operations or incident response team for details.
-> - You need to have the **[Manage security settings](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/user-roles?source=recommendations&view=o365-worldwide)** permission in the Microsoft 365 Defender portal to be able to submit the **Ask Defender Experts** inquiry.
+> - You need to have the **[Manage security settings](../defender-endpoint/user-roles.md)** permission in the Microsoft 365 Defender portal to be able to submit the **Ask Defender Experts** inquiry.
 
 1. Navigate to the portal page with the relevant information that you'd like to investigate, for example, the **Incident** page. Ensure that the page for the relevant alert or device is in view before you send an investigation request.
 
