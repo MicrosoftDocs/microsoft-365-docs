@@ -1,13 +1,13 @@
 ---
 title: Manage clients for Microsoft Whiteboard in GCC High environments
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
 audience: admin
 ms.topic: article
 ms.custom: 
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
@@ -17,10 +17,10 @@ description: Learn which clients are currently supported for Whiteboard.
 
 # Manage clients for Microsoft Whiteboard in GCC High environments
 
->[!NOTE]
+> [!NOTE]
 > This guidance applies to US Government Community Cloud (GCC) High environments.
 
-Whiteboard clients are currently being updated to support One Drive for Business.
+Whiteboard clients are currently being updated to support OneDrive for Business. 
 
 ## Clients supported
 
@@ -40,7 +40,7 @@ The following clients are planned for future releases of Whiteboard:
 - Whiteboard in Teams meetings on Surface Hub and Teams meeting rooms
 - Whiteboard in 1:1 calls in Teams
 
->[!NOTE]
+> [!NOTE]
 > While users can install the Windows client, they won't be able to sign in until the client is updated.
 
 ## See also

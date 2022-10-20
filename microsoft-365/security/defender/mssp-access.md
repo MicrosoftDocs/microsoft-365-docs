@@ -2,7 +2,8 @@
 title: Provide managed security service provider (MSSP) access
 description: Learn about changes from the Microsoft Defender Security Center to the Microsoft 365 Defender portal
 keywords: Getting started with the Microsoft 365 Defender portal, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, single pane of glass, converged portal, security portal, defender security portal
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -11,12 +12,13 @@ ms.author: macapara
 author: mjcaparas
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 search.appverid: 
 - MOE150
 - MET150
 ms.collection: 
-- M365-security-compliance 
+- m365-security
+- tier2 
 ---
 
 # Provide managed security service provider (MSSP) access 

@@ -6,15 +6,17 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
-ms.topic: article
-ms.prod: m365-security
-ms.technology: mdb
+ms.topic: conceptual
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
+ms.date: 07/19/2022
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
+- tier1
 ---
 
 # Tutorials and simulations in Microsoft Defender for Business
@@ -43,7 +45,7 @@ The following table describes the recommended tutorials for Defender for Busines
 |---------|---------|
 | **Document Drops Backdoor**     | Simulate an attack that introduces file-based malware on a test device. The tutorial describes how to use the simulation file and what to watch for in the Microsoft 365 Defender portal. <p>This tutorial requires that Microsoft Word is installed on your test device.   |
 | **Live Response**     | Learn how to use basic and advanced commands with Live Response. Learn how to locate a suspicious file, remediate the file, and gather information on a device.   |
-| **Threat & Vulnerability Management (core scenarios)**     | Learn about threat and vulnerability management through three scenarios:<ol><li>Reduce your company's threat and vulnerability exposure.</li><li>Request a remediation.</li><li>Create an exception for security recommendations.</li></ol> <p> Threat & Vulnerability Management uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.      |
+| **Microsoft Defender Vulnerability Management(core scenarios)**     | Learn about Defender Vulnerability Management through three scenarios:<ol><li>Reduce your company's threat and vulnerability exposure.</li><li>Request a remediation.</li><li>Create an exception for security recommendations.</li></ol> <p> Defender Vulnerability Management uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.      |
 
 Each tutorial includes a walkthrough document that explains the scenario, how it works, and what to do.
 
@@ -60,7 +62,7 @@ Each tutorial includes a walkthrough document that explains the scenario, how it
 
    - **Document Drops Backdoor**
    - **Live Response**
-   - **Threat & Vulnerability Management (core scenarios)**
+   - **Microsoft Defender Vulnerability Management (core scenarios)**
 
 ## Next steps
 

@@ -14,11 +14,11 @@ search.appverid:
   - MET150
   - MOE150
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: A prescriptive playbook for SecOps personnel to manage Microsoft Defender for Office 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Microsoft Defender for Office 365 Security Operations Guide
@@ -36,6 +36,8 @@ The rest of this guide describes the required activities for SecOps personnel. T
 A companion article to this guide provides an overview to [manage incidents and alerts from Defender for Office 365 on the Incidents page in the Microsoft 365 Defender portal](mdo-sec-ops-manage-incidents-and-alerts.md).
 
 The [Microsoft 365 Defender Security Operations Guide](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops) contains additional information that you can use for planning and development.
+
+For a video about this information, see <https://youtu.be/eQanpq9N1Ps>.
 
 ## Daily activities
 
@@ -72,7 +74,7 @@ Incident queue management and the responsible personas are described in the foll
 In Defender for Office 365, you manage false positives (good mail marked as bad) and false negatives (bad mail allowed) in the following locations:
 
 - The [Submissions portal (admin submissions)](admin-submission.md).
-- The [Tenant Allow/Block List](tenant-allow-block-list.md)
+- The [Tenant Allow/Block List](manage-tenant-allow-block-list.md)
 - [Threat Explorer](threat-explorer.md)
 
 For more information, see the [Manage false positive and false negative detections](#manage-false-positive-and-false-negative-detections) section later in this article.
@@ -84,7 +86,7 @@ False positive and false negative management and the responsible personas are de
 |Submit false positives and false negatives to Microsoft at <https://security.microsoft.com/reportsubmission>.|Daily|Provide signals to Microsoft by reporting incorrect email, URL, and file detections.|Security Operations Team|
 |Analyze admin submission details.|Daily|Understand the following factors for the submissions you make to Microsoft: <ul><li>What caused the false positive or false negative.</li><li>The state of your Defender for Office 365 configuration at the time of the submission.</li><li>Whether you need to make changes to your Defender for Office 365 configuration.</li></ul>|Security Operations Team <br/><br/> Security Administration|
 |Add block entries in the Tenant Allow/Block List at <https://security.microsoft.com/tenantAllowBlockList>.|Daily|Use the Tenant Allow/Block List to add block entries for false negative URL, file, or sender detections as needed.|Security Operations Team|
-|Release false negatives from quarantine.|Daily|After the recipient confirms that the message was incorrectly quarantined, you can release or approve release requests for users. <br/><br/> To control what users can do to their own quarantined messages (including release or request release), see [Quarantine policies](quarantine-policies.md).|Security Operations Team <br/><br/> Messaging Team|
+|Release false positive from quarantine.|Daily|After the recipient confirms that the message was incorrectly quarantined, you can release or approve release requests for users. <br/><br/> To control what users can do to their own quarantined messages (including release or request release), see [Quarantine policies](quarantine-policies.md).|Security Operations Team <br/><br/> Messaging Team|
 
 ### Review phishing and malware campaigns that resulted in delivered mail
 
@@ -143,13 +145,13 @@ Campaign Views reveals malware and phishing attacks against your organization. F
 |---|---|---|---|
 |Regular, proactive hunting for threats at: <ul><li><https://security.microsoft.com/threatexplorer></li><li><https://security.microsoft.com/v2/advanced-hunting></li></ul>.|Ad-hoc|Search for threats using [Threat Explorer](threat-explorer.md) and [Advanced hunting](../defender-endpoint/advanced-hunting-overview.md).|Security Operations Team <br/><br/> Threat hunting team|
 |Share hunting queries.|Ad-hoc|Actively share frequently used, useful queries within the security team for faster manual threat hunting and remediation. <br/><br/> Use [Threat trackers](threat-trackers.md) and [shared queries in Advanced hunting](/microsoft-365/security/defender/advanced-hunting-shared-queries).|Security Operations Team <br/><br/> Threat hunting team|
-|Create custom detection rules at <https://security.microsoft.com/custom_detection>.|Ad-hoc|[Create custom detection rules](../defender/advanced-hunting-overview.md#get-started-with-advanced-hunting) to proactively monitor events, patterns, and threats based on Defender for Office 365 data in Advance Hunting. Detection rules contain advanced hunting queries that generate alerts based on the matching criteria.|Security Operations Team <br/><br/> Threat hunting team|
+|Create custom detection rules at <https://security.microsoft.com/custom_detection>.|Ad-hoc|[Create custom detection rules](../defender/custom-detections-overview.md) to proactively monitor events, patterns, and threats based on Defender for Office 365 data in Advance Hunting. Detection rules contain advanced hunting queries that generate alerts based on the matching criteria.|Security Operations Team <br/><br/> Threat hunting team|
 
 ### Review Defender for Office 365 policy configurations
 
 |Activity|Cadence|Description|Persona|
 |---|---|---|---|
-|Review the configuration of Defender for Office 365 policies at <https://security.microsoft.com/configurationAnalyzer>.|Ad-hoc <br/><br/> Monthly|Use the [Configuration analyzer](configuration-analyzer-for-security-policies.md) to compare your existing policy settings to the [recommended Standard or Strict values for Defender for Office 365](recommended-settings-for-eop-and-office365.md). The Configuration analyzer identifies accidental or malicious changes that can lower your organization's security posture. <br/><br/> Or yu can use the PowerShell-based [ORCA tool](https://aka.ms/getorca).|Security Administration <br/><br/> Messaging Team|
+|Review the configuration of Defender for Office 365 policies at <https://security.microsoft.com/configurationAnalyzer>.|Ad-hoc <br/><br/> Monthly|Use the [Configuration analyzer](configuration-analyzer-for-security-policies.md) to compare your existing policy settings to the [recommended Standard or Strict values for Defender for Office 365](recommended-settings-for-eop-and-office365.md). The Configuration analyzer identifies accidental or malicious changes that can lower your organization's security posture. <br/><br/> Or you can use the PowerShell-based [ORCA tool](https://aka.ms/getorca).|Security Administration <br/><br/> Messaging Team|
 |Review detection overrides in Defender for Office 365 at <https://security.microsoft.com/reports/TPSMessageOverrideReportATP>|Ad-hoc <br/><br/> Monthly|Use the [View data by System override \> Chart breakdown by Reason view](view-email-security-reports.md#view-data-by-system-override-and-chart-breakdown-by-reason) in the **Threat Protection status report** to review email that was detected as phishing but delivered due to policy or user override settings. <br/><br/> Actively investigate, remove, or fine tune overrides to avoid delivery of email that was determined to be malicious.|Security Administration <br/><br/> Messaging Team|
 
 ### Review spoof and impersonation detections
@@ -208,7 +210,7 @@ The following permissions (roles and role groups) are available in Defender for 
 
     To assign this role to a new or existing role group, see [Modify Email & collaboration role membership in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
 
-  - **Tenant AllowBlockList Manager**: Manage allow and block entries in the [Tenant Allow/Block List](tenant-allow-block-list.md). Blocking URLs, files (using file hash) or senders is a useful response action to take when investigating malicious email that was delivered.
+  - **Tenant AllowBlockList Manager**: Manage allow and block entries in the [Tenant Allow/Block List](manage-tenant-allow-block-list.md). Blocking URLs, files (using file hash) or senders is a useful response action to take when investigating malicious email that was delivered.
 
     By default, this role is assigned only to the **Security Operator** role group. But, members of the **Security Administrators** and **Organization management** role groups can also manage entries in the Tenant Allow/Block List.
 
@@ -271,9 +273,9 @@ Security team members can do submissions from multiple locations in the Microsof
 
   You can select up to 10 messages to perform a bulk submission. Admin submissions created this way also visible in the Submission portal.
 
-For the short-term mitigation of false negatives, security teams can directly manage [block entries](manage-tenant-blocks.md) for files, URLs, and senders in the [Tenant Allow/Block List](tenant-allow-block-list.md).
+For the short-term mitigation of false negatives, security teams can directly manage block entries for files, URLs, and domains or email addresses in the [Tenant Allow/Block List](manage-tenant-allow-block-list.md).
 
-For the short-term mitigation of false positives, security teams can't directly manage [allow entries](manage-tenant-allows.md) in the Tenant Allow/Block List. Instead, they need to use [admin submissions](admin-submission.md) and the **Allow messages like this** option.
+For the short-term mitigation of false positives, security teams can't directly manage allow entries for domains and email addresses in the Tenant Allow/Block List. Instead, they need to use [admin submissions](admin-submission.md) to report the email message as a false positive. For instructions, see [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses in the Submissions portal](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
 
 [Quarantine](manage-quarantined-messages-and-files.md) in Defender for Office 365 holds potentially dangerous or unwanted messages and files. Security teams can view, release, and delete all types of quarantined messages for all users. This capability enables security teams to respond effectively when a false positive message or file is quarantined.
 
@@ -291,7 +293,7 @@ Designate the custom mailbox where user reported messages are sent on the **User
 >
 > - The custom mailbox is an Exchange Online mailbox.
 > - The third-party reporting tool must include the original reported message as an uncompressed .EML or .MSG attachment in the message that's sent to the custom mailbox (don't just forward the original message to the custom mailbox).
-> - The custom mailbox requires specific prerequisites to allow potentially bad messages to be delivered. For more information, see [Custom mailbox prerequisites](user-submission.md#custom-mailbox-prerequisites).
+> - The custom mailbox requires specific prerequisites to allow potentially bad messages to be delivered. For more information, see [Configuration requirements for the user submissions mailbox](user-submission.md#configuration-requirements-for-the-user-submissions-mailbox).
 
 When user reported email arrives in the custom mailbox, Defender for Office 365 automatically generates the alert named **Email reported by user as malware or phish**. This alert launches an [AIR playbook](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook). The playbook performs a series of automated investigations steps:
 

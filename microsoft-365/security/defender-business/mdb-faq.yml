@@ -8,14 +8,16 @@ metadata:
   manager: dansimp 
   audience: Admin
   ms.topic: faq
-  ms.prod: m365-security
-  ms.technology: mdb
+  ms.service: microsoft-365-security
+  ms.subservice: mdb
   ms.localizationpriority: medium
+  ms.date: 08/10/2022
   ms.reviewer: shlomiakirav
   f1.keywords: NOCSH 
   ms.collection: 
   - SMB
-  - M365-security-compliance
+  - m365-security
+  - tier1
 
 title: Microsoft Defender for Business - Frequently asked questions and answers
 summary: | 
@@ -53,7 +55,7 @@ sections:
           Yes. Defender for Business supports protection for Mac, Android, and iOS/iPadOS devices. See [Onboard devices](mdb-onboard-devices.md).
 
           - You can onboard Mac devices using a local script in the Microsoft 365 Defender portal. 
-          - To onboard Android and iOS/iPadOS devices, you must have a license for [Microsoft Intune](/mem/intune/). Intune is included in Microsoft 365 Business Premium, and can be purchased for Defender for Business (standalone).
+          - To onboard Android and iOS/iPadOS devices, you can use [Microsoft Intune](/mem/intune/).
 
           More simplification for Mac, iOS/iPadOS, and Android devices is on the roadmap. 
 
@@ -97,15 +99,15 @@ sections:
 
       - question: How do I configure attack surface reduction rules and capabilities in Defender for Business?
         answer: |
-          Simplified configuration for attack surface reduction rules and capabilities via Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) isn't supported yet. If you have Microsoft Intune, you can use the Microsoft Endpoint Manager admin center to configure your attack surface reduction policies. See [Attack surface reduction policy for endpoint security in Intune](/mem/intune/protect/endpoint-security-asr-policy).
+          Simplified configuration for attack surface reduction rules and capabilities via Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) isn't supported yet. You can use the Microsoft Endpoint Manager admin center to configure your attack surface reduction policies. See [Attack surface reduction policy for endpoint security in Intune](/mem/intune/protect/endpoint-security-asr-policy).
 
-      - question: If I don't currently have Microsoft Intune, do I need an another license to use features that are included in both Defender for Business and Intune? 
+      - question: How does Microsoft Intune work with Defender for Business? 
         answer: |
-          If you have Defender for Business as a standalone subscription and you don't have Intune, you can onboard and secure Windows and Mac devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
+          If you have Defender for Business as a standalone subscription, you can onboard and secure Windows and Mac devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). You can use Microsoft Intune to onboard Windows and Mac computers as well as mobile devices.
+
+          When you enroll devices in Intune and onboard those devices to Defender for Business, you create a connection between Intune and Defender for Business.
            
-          You can also manage your next-generation protection and firewall protection policies in the Microsoft 365 Defender portal with a [simplified configuration experience](mdb-simplified-configuration.md). 
-           
-          To manage other settings, such as attack surface reduction policies, or to onboard other devices, such as Android or iOS/iPadOS devices, you'll need Intune. Intune is included in Microsoft 365 Business Premium, and can be purchased for Defender for Business (standalone) subscriptions. 
+          You can manage your next-generation protection and firewall protection policies in the Microsoft 365 Defender portal with a [simplified configuration experience](mdb-simplified-configuration.md). These policies are visible in Intune. To manage other settings, such as attack surface reduction policies, you'll use Intune.  
 
       - question: If I'm already using Microsoft 365 Business Premium, why do I need Defender for Business?
         answer: |
@@ -130,7 +132,7 @@ sections:
           
           Referring to our example, you could request an override to keep the simplified Defender for Business experience, even if you have some Defender for Endpoint Plan 2 licenses. See [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).
 
-          In the coming months, the default settings will change. When that happens, a tenant with Defender for Business will default to the Defender for Business flavor, tenant wide. This default behavior will help ensure the simplified experience is maintained for small and medium-sized business customers.
+          In the coming months, the default settings will change. When that happens, a tenant with Defender for Business will default to the Defender for Business experience, tenant wide. This default behavior will help ensure the simplified experience is maintained for small and medium-sized business customers.
 
           For details about licenses and product terms, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 

@@ -5,8 +5,9 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
-ms.collection: 
+ms.service: o365-solutions
+ms.collection:
+- highpri 
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection
@@ -21,7 +22,7 @@ description: Learn how to enable shared channels in Microsoft Teams for collabor
 
 # Collaborate with external participants in a shared channel
 
-If you want to enable your users to collaborate with people outside your organization in [shared channels](/MicrosoftTeams/shared-channels), you need to configure B2B direct connect for each organization that you want to collaborate with. (Alternatively, you can [Enable shared channels with all external organizations](/microsoft-365/solutions/allow-direct-connect-with-all-organizations).)
+If you want to enable your users to collaborate with people in other Microsoft 365 organizations in [shared channels](/MicrosoftTeams/shared-channels), you need to configure B2B direct connect for each organization that you want to collaborate with. (Alternatively, you can [Enable shared channels with all external organizations](/microsoft-365/solutions/allow-direct-connect-with-all-organizations).)
 
 When you enable shared channels in Teams with another organization:
 
@@ -35,6 +36,9 @@ Collaborating with external participants in a shared channel requires that guest
 
 - [Microsoft 365 Groups sharing settings](/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide#microsoft-365-groups) must both be enabled.
 - SharePoint [organization level](/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide#sharepoint-and-onedrive-organization-level) and [site level](/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide#sharepoint-site-level) sharing settings must allow guests. The domains you're sharing with must not be blocked.
+
+> [!NOTE]
+> [Guest settings for Microsoft 365 Groups](/microsoft-365/admin/create-groups/manage-guest-access-in-groups) must be enabled to use shared channels with external participants.
 
 ## Video demonstration
 

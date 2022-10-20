@@ -7,15 +7,17 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
-
 - Adm_O365_Setup
 - SPO_Content
 ms.custom:
+- VSBFY23
 - IT_Networking
 - TRN_M365B
 - OKR_SMB_Videos

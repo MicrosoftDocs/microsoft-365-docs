@@ -9,9 +9,10 @@ f1.keywords:
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - endpoint dlp
 - data loss prevention
 - dlp policies 

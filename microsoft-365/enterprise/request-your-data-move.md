@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 06/02/2022
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,6 +15,7 @@ f1.keywords:
 - NOCSH
 description: Existing Office 365 customers must submit a request before the deadline for their country to have their Microsoft 365 services data moved to their new geo.
 ms.custom: seo-marvel-apr2020
+ms.collection: scotvorg
 ---
 
 # How to request your data move
@@ -41,7 +42,8 @@ Eligible Microsoft 365 customers may request migration for their entire organiza
 |Norway  | |Request period closed  |
 |Germany  | |Request period closed  |
 |Brazil  | |Request period closed  |
-|Sweden  |November 16, 2021  |May 31, 2022  |
+|Sweden  | |Request period closed  |
+|Qatar  |August 30, 2022  |February 28, 2023  |
 
 ## How to request a move
 

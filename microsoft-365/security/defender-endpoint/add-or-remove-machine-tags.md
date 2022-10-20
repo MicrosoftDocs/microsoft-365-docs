@@ -2,7 +2,7 @@
 title: Add or Remove Machine Tags API
 description: Learn how to use the Add or Remove machine tags API to adds or remove a tag for a machine in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, tags, machine tags
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,13 +11,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-MS.technology: mde
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
-# Add or Remove Machine Tags API
+# Add or remove machine tags API
 
 **Applies to:**
 
@@ -34,7 +37,7 @@ ms.custom: api
 
 ## API description
 
-Adds or remove tag to a specific [Machine](machine.md).
+Adds or removes tag to a specific [Machine](machine.md).
 
 ## Limitations
 
@@ -44,7 +47,7 @@ Adds or remove tag to a specific [Machine](machine.md).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Defender for Endpoint APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Defender for Endpoint APIs](apis-intro.md).
 
 Permission type|Permission|Permission display name
 :---|:---|:---
@@ -54,8 +57,8 @@ Delegated (work or school account)|Machine.ReadWrite|'Read and write machine inf
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'Manage security setting'. For more  (See [Create and manage roles](user-roles.md) for more information)
-> - User needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+> - The user needs to have at least the following role permission: 'Manage security setting'. For more (See [Create and manage roles](user-roles.md) for more information).
+> - The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information).
 
 ## HTTP request
 
@@ -83,9 +86,7 @@ Action|Enum|Add or Remove. Allowed values are: 'Add' or 'Remove'. **Required**.
 
 If successful, this method returns 200 - Ok response code and the updated Machine in the response body.
 
-## Example
-
-### Request
+## Example Request
 
 Here is an example of a request that adds machine tag.
 
@@ -100,4 +101,4 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
 }
 ```
 
-- To remove machine tag, set the Action to 'Remove' instead of 'Add' in the request body.
+To remove machine tag, set the Action to 'Remove' instead of 'Add' in the request body.

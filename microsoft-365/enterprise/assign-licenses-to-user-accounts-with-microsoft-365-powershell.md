@@ -3,12 +3,14 @@ title: Assign Microsoft 365 licenses to user accounts with PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 09/23/2020
+ms.date: 09/19/2022
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: 
@@ -46,12 +48,12 @@ Accounts synchronized from your on-premises Active Directory Domain Services do 
 
 First, [connect to your Microsoft 365 tenant](/graph/powershell/get-started#authentication).
 
-Assigning and removing licenses for a user requires the User.ReadWrite.All permission scope or one of the other permissions listed in the ['Assign license' Graph API reference page](/graph/api/user-assignlicense).
+Assigning and removing licenses for a user requires the User.ReadWrite.All permission scope or one of the other permissions listed in the ['Assign license' Microsoft Graph API reference page](/graph/api/user-assignlicense).
 
 The Organization.Read.All permission scope is required to read the licenses available in the tenant.
 
 ```powershell
-Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+Connect-MgGraph -Scopes User.ReadWrite.All, Organization.Read.All
 ```
 
 Run the `Get-MgSubscribedSku` command to view the available licensing plans and the number of available licenses in each plan in your organization. The number of available licenses in each plan is **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. For more information about licensing plans, licenses, and services, see [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
@@ -62,6 +64,11 @@ To find the unlicensed accounts in your organization, run this command.
 Get-MgUser -Filter 'assignedLicenses/$count eq 0' -ConsistencyLevel eventual -CountVariable unlicensedUserCount -All
 ```
 
+To find the unlicensed synchronized users in your organization, run this command.
+
+```powershell
+Get-MgUser -Filter 'assignedLicenses/$count eq 0 and OnPremisesSyncEnabled eq true' -ConsistencyLevel eventual -CountVariable unlicensedUserCount -All -Select UserPrincipalName
+```
 You can only assign licenses to user accounts that have the **UsageLocation** property set to a valid ISO 3166-1 alpha-2 country code. For example, US for the United States, and FR for France. Some Microsoft 365 services aren't available in certain countries. For more information, see [About license restrictions](https://go.microsoft.com/fwlink/p/?LinkId=691730).
 
 To find accounts that don't have a **UsageLocation** value, run this command.
@@ -163,7 +170,7 @@ Set-MgUserLicense -UserId "belinda@litwareinc.onmicrosoft.com" -AddLicenses $add
 This example assigns **jamesp\@litwareinc.com** with the same licensing plan that has been applied to **belindan\@litwareinc.com**:
 
 ```powershell
-$mgUser = Get-MgUser -UserId "belindan@litwareinc.com"
+$mgUser = Get-MgUser -UserId "belindan@litwareinc.com" -Property AssignedLicenses
 Set-MgUserLicense -UserId "jamesp@litwareinc.com" -AddLicenses $mgUser.AssignedLicenses -RemoveLicenses @()
 ```
 
@@ -363,3 +370,5 @@ $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+
+Use the Microsoft Graph [user: assignLicense](/graph/api/user-assignlicense) and [subscribedSku](/graph/api/resources/subscribedsku) APIs

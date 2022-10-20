@@ -11,7 +11,9 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
+- highpri
 - SPO_Content
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
@@ -39,11 +41,16 @@ Ready to start managing your organization's high-value content for legal, busine
     - [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
     - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
+> [!TIP]
+> If you're migrating records to Microsoft 365 and need to validate that they haven't been altered, see [Validating migrated records](records-management.md#validating-migrated-records).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Subscription and licensing requirements
 
 A number of different subscriptions support records management and the licensing requirements for users depends on the features you use.
 
-To see the options for licensing your users to benefit from Microsoft Purview features, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). For records management, see the [Microsoft Purview Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-records-management) section and related PDF download for feature-level licensing requirements.
+To see the options for licensing your users to benefit from Microsoft Purview features, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). For records management, see the [Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) section for feature-level licensing requirements.
 
 ## Permissions
 
@@ -72,6 +79,7 @@ Use the following table to help you map your business requirements to the scenar
 |Let admins apply retain and delete actions to a document understanding model, so that these are automatically applied to identified documents in a SharePoint library|[Publish retention labels and apply them in apps](create-apply-retention-labels.md)|
 |Automatically apply retain and delete actions to documents and emails |[Apply a retention label to content automatically](apply-retention-labels-automatically.md)|
 |Start the retention period when an event occurs, such as:  <br />- Employees leave the organization <br />- Contracts expire <br />- End of product lifetime| [Start retention when an event occurs](event-driven-retention.md)|
+|Do custom actions or integrate with other solutions at the end of the retention period| [Customize what happens at the end of the retention period](retention-label-flow.md)|
 |Restrict changes to policies to help meet regulatory requirements or safeguard against rogue administrators| [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md)
 |Manage the lifecycle of different document types in SharePoint| [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md)|
 |Apply a retention label to a file when I receive an alert that content containing personal data is being stored or remains untouched for too long| [Investigate and remediate alerts in Privacy Risk Management](/privacy/priva/risk-management-alerts)|

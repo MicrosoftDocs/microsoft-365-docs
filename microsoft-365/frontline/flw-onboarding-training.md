@@ -12,8 +12,10 @@ ms.service: microsoft-365-frontline
 ms.collection: 
   - M365-collaboration
   - m365-frontline
+  - highpri
   - m365solution-frontline
   - m365solution-scenario
+  - highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -76,6 +78,8 @@ If you have a Viva Suite or Viva Learning license and your organization is subsc
 Make sure your frontline team knows what training in Viva Learning is available to and required for them.
 
 Managers can [recommend learning content](https://support.microsoft.com/office/recommend-and-manage-content-in-viva-learning-77f9dcbf-41a8-4b19-b4d1-b99c406f37b8) to their teams to ensure required trainings are complete.
+
+![Screenshot of the Viva Connections Dashboard with a Viva Learning card.](media/viva-learning-card-mobile.png) 
 
 Corporate communications specialists can use [Viva Connections](/viva/connections/viva-connections-overview) to distribute a SharePoint news post that highlights new learning opportunities or required trainings.
 

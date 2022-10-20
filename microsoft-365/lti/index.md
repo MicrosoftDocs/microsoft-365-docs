@@ -1,17 +1,17 @@
 ---
 title: An overview of Microsoft LTI apps
-ms.author: heidip
-author: MicrosoftHeidi
+ms.author: danismith
+author: DaniEASmith
 manager: serdars
 ms.reviewer: amitman, sovaish
 ms.date: 06/15/2021
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - M365-modern-desktop
-ms.localizationpriority: null
+ms.localizationpriority: medium
 description: Learn about Learning Tools Interoperability (LTI) Microsoft apps, and how they will help educators when integrating Microsoft apps into their Learning Management System (LMS).
 ---
 
@@ -26,6 +26,7 @@ These tools include:
 - [OneDrive LTI](#onedrive-lti-apps)
 - [Teams Meetings LTI](#teams-meetings-lti)
 - [Teams Classes LTI](#teams-classes-lti)
+- [OneNote LTI)(#onenote-class-notebook-lti)
 
 For general information on managing Microsoft LTI apps, see [Manage Microsoft LTI apps for any LMS](manage-microsoft-one-lti.md).
 
@@ -65,26 +66,36 @@ For configuration steps, see:
 
 - [Microsoft OneDrive LTI with Canvas](onedrive-lti.md).
 - [Microsoft OneDrive LTI with Blackboard](onedrive-lti-blackboard.md).
+- [Microsoft OneDrive LTI with Schoology](onedrive-lti-schoology.md).
+- [Microsoft OneDrive LTI with D2L Brightspace](onedrive-lti-brightspace.md)
 
 ## Teams LTI apps
 
-### Teams meetings LTI
+### Teams Meetings LTI
 
-Microsoft Teams meetings LTI app incorporates Teams meetings into LMS courses. Educators and students can view past and upcoming meetings, schedule individual or recurring meetings, and join team meetings related to the course, all from within their LMS.
+Microsoft Teams Meetings LTI app incorporates Teams meetings into LMS courses. Educators and students can view past and upcoming meetings, schedule individual or recurring meetings, and join team meetings related to the course, all from within their LMS.
 
 For configuration steps, see:
 
 - [Microsoft Teams Meetings with Canvas](teams-meetings-with-canvas.md).
 - [Microsoft Teams Meetings with Moodle](teams-classes-meetings-with-moodle.md).
 - [Microsoft Teams Meetings with Open LMS](open-lms-teams-classes-and-meetings.md).
+- [Microsoft Teams Meetings with Desire2Learn Brightspace](teams-classes-meetings-with-brightspace.md).
+- [Microsoft Teams Meetings with Schoology](teams-classes-and-meetings-with-schoology.md).
 
-### Teams classes LTI
+### Teams Classes LTI
 
-The Microsoft Teams classes LTI app helps educators and students navigate between their LMS and Teams. Users can access their class teams associated with their course within their LMS.
+The Microsoft Teams Classes LTI app helps educators and students navigate between their LMS and Teams. Users can access their class teams associated with their course within their LMS.
 
 For configuration steps, see:
 
-- [Microsoft Teams Classes LTI with Canvas](teams-classes-with-canvas.md).
-- [Microsoft Teams Classes LTI with Blackboard](teams-classes-with-blackboard.md).
-- [Microsoft Teams Classes LTI with Moodle](teams-classes-meetings-with-moodle.md).
-- [Microsoft Teams Classes LTI with Open LMS](open-lms-teams-classes-and-meetings.md).
+- [Microsoft Teams Classes with Canvas](teams-classes-with-canvas.md).
+- [Microsoft Teams Classes with Blackboard](teams-classes-with-blackboard.md).
+- [Microsoft Teams Classes with Moodle](teams-classes-meetings-with-moodle.md).
+- [Microsoft Teams Classes with Open LMS](open-lms-teams-classes-and-meetings.md).
+- [Microsoft Teams Classes with Desire2Learn Brightspace](teams-classes-meetings-with-brightspace.md).
+
+### OneNote Class Notebook LTI
+
+OneNote Class Notebook LTI can be used with your Learning Management System (LMS) to create a shared notebook and link it to your course. Students enrolled in your LMS course can access the notebook automatically without you having to add their names. For configuration steps, see [Microsoft OneNote Class Notebook LTI](https://www.onenote.com/lti/integratelti).
+

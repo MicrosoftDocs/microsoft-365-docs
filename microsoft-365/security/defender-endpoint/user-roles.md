@@ -2,7 +2,7 @@
 title: Create and manage roles for role-based access control
 description: Create roles and define the permissions assigned to the role as part of the role-based access control implementation in the Microsoft 365 Defender
 keywords: user roles, roles, access rbac
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
-ms.technology: mde
+ms.topic: conceptual
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Create and manage roles for role-based access control
@@ -53,11 +56,14 @@ The following steps guide you on how to create roles in Microsoft 365 Defender. 
 > [!IMPORTANT]
 > After creating roles, you'll need to create a device group and provide access to the device group by assigning it to a role that you just created.
 
+> [!NOTE]
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
+
 ### Permission options
 
 - **View data**
   - **Security operations** - View all security operations data in the portal
-  - **Threat and vulnerability management** - View threat and vulnerability management data in the portal
+  - **Threat and vulnerability management** - View Defender Vulnerability Management data in the portal
 
 - **Active remediation actions**
   - **Security operations** - Take response actions, approve or dismiss pending remediation actions, manage allowed/blocked lists for automation and indicators

@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 ms.assetid: 3bdb5c4e-94fc-4741-b02f-4e7cc3c54aa1
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - SPO_Content
 description: "You can use Information Rights Management (IRM) to help control and protect files that are downloaded from lists or libraries."
 ms.custom: seo-marvel-apr2020
@@ -27,6 +27,8 @@ ms.custom: seo-marvel-apr2020
 
 You can use Information Rights Management (IRM) to help control and protect files that are downloaded from lists or libraries. This feature is only supported in the Microsoft global cloud. IRM is not supported for SharePoint lists and libraries in national cloud deployments.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Administrator preparations before applying IRM
 
 - The Azure Rights Management service (Azure RMS) from Azure Information Protection, and the on-premises equivalent, Active Directory Rights Management Services (AD RMS), support Information Rights Management for sites. No separate or additional installations are required.
@@ -68,7 +70,7 @@ You can use Information Rights Management (IRM) to help control and protect file
 |Select this option if you want to restrict access to content to a specified period of time. If you select this option, people's issuance licenses to access the content will expire after the specified number of days, and people will be required to return to the server to verify their credentials and download a new copy.|Select the **After download, document access rights will expire after these number of days (1-365)** check box, and then specify the number of days for which you want the document to be viewable.|
 | Prevent people from uploading documents that do not support IRM to this list or library. If you select this option, people will not be able to upload any of the following file types: File types that do not have corresponding IRM protectors installed on all of the front-end web servers. File types that SharePoint Server 2010 cannot decrypt. File types that are IRM protected in another program.|Select the **Do not allow users to upload documents that do not support IRM** check box.|
 |Remove restricted permissions from this list or library on a specific date.|Select the **Stop restricting access to the library at** check box, and then select the date that you want.|
-|Control the interval that credentials are cached for the program that is licensed to open the document.|Select the **Users must verify their credentials using this interval (days)** check box, then enter the interval for caching credentials in number of days.|
+|Control the interval that Azure RMS credentials are cached for the program that is licensed to open the document.|Select the **Users must verify their credentials using this interval (days)** check box, then enter the interval for caching credentials in number of days.|
 |Allow group protection so that users can share with members of the same group.|Select **Allow group protection**, and enter the group's name for sharing.|
 
 8. After you finish selecting the options you want, select **OK**.

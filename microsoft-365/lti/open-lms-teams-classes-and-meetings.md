@@ -6,12 +6,12 @@ manager: serdars
 ms.reviewer: amitman 
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
-description: Create and manage Teams classes and meetings with Microsoft OneDrive Learning Tools Interoperability for Open LMS.
+description: Create and manage Teams classes and meetings with Microsoft Learning Tools Interoperability for Open LMS.
 ---
 
 # Integrate Microsoft Teams classes and meetings within Open LMS
@@ -24,7 +24,7 @@ For details on managing all LTI apps for any LMS, see [Manage Microsoft LMS Gate
 
 For the integration between Open LMS and Teams to function correctly, Open LMS and Teams must be set up to communicate with one another.
 
-Follow the [instructions for installing and configuring the Moodle plugin](open-lms-plugin-configuration.md).
+Follow the [instructions for installing and configuring the Moodle LMS plugins](open-lms-plugin-configuration.md).
 
 ## Register Microsoft Teams LTI for use in Open LMS
 
@@ -51,7 +51,7 @@ Follow the [instructions for installing and configuring the Moodle plugin](open-
 
 10. Under **Tool settings**, enter in a **Tool name** like **Microsoft Teams Classes**. For **LTI version**, select **LTI 1.3**. For **Public key type**, select **Keyset URL**.
 
-11. Next, copy the keys from **Microsoft LTI keys** to the corresponding tools inputs.
+11. Next, copy the keys from **Microsoft LTI keys** to the corresponding tool inputs.
     1. Microsoft's **Target link URL** key goes into Open LMS's **Tool URL** field.
     1. Microsoft's **Open ID connection URL** key goes into Open LMS's **Initiate login URL** field.
     1. Microsoft's **Redirect URL** key goes into Open LMS's **Redirection URI(s)** field.
@@ -64,18 +64,18 @@ Follow the [instructions for installing and configuring the Moodle plugin](open-
 
 15. Copy and paste the values from Open LMS's **Tool configuration details** to Microsoft's **LMS provided registration keys** step.
 
-  Paste the values as follows:
+    Paste the values as follows:
 
-  | On Open LMS | On Microsoft LTI registration portal |
-  | --------- | ------------------------------------ |
-  | Platform ID | Issuer ID URL |
-  | Client ID | Client ID |
-  | Deployment ID | Deployment ID |
-  | Public keyset URL | Keyset URL |
-  | Access token URL | Access token URL |
-  | Authentication request URL | Platform authentication URL |
+    | On Open LMS | On Microsoft LTI registration portal |
+    | --------- | ------------------------------------ |
+    | Platform ID | Issuer ID URL |
+    | Client ID | Client ID |
+    | Deployment ID | Deployment ID |
+    | Public keyset URL | Keyset URL |
+    | Access token URL | Access token URL |
+    | Authentication request URL | Platform authentication URL |
 
-  Select **Next**.
+    Select **Next**.
 
 16. Review the **Review and add** page. If there are no errors, select **Save and exit**. You should see a message indicating successful registration.
 

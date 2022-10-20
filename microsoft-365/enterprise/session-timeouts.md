@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -21,6 +21,7 @@ search.appverid:
 - BCS160
 ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
 ms.collection:
+- scotvorg
 - M365-security-compliance
 description: Learn how session timeouts are used to balance security and ease of access in Microsoft 365 client apps.
 ---

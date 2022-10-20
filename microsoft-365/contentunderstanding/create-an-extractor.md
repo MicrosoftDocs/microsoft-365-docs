@@ -1,22 +1,23 @@
 ---
-title: Create an extractor Microsoft SharePoint Syntex
+title: Create an extractor in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid:
 ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create an extractor in Microsoft SharePoint Syntex.
+description: Learn how to create an extractor in Microsoft Syntex.
 ---
 
-# Create an extractor in Microsoft SharePoint Syntex
+# Create an extractor in Microsoft Syntex
 
+<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
 <br/>
 
@@ -54,7 +55,7 @@ The next step is to label the entity you want to extract in your example trainin
 
 Creating the extractor opens the extractor page. Here you see a list of your sample files, with the first file on the list displayed in the viewer.
 
-1. From the viewer, select the data that you want to extract from the files. For example, if you want to extract the *Start Service Date*, you highlight the date value in the first file (*Monday, October 14, 2019*). and then select **Save**. You should see the value display from the file in the Labeled examples list, under the **Label** column.
+1. From the viewer, select the data that you want to extract from the files. For example, if you want to extract the *Start Service Date*, you highlight the date value in the first file (*Monday, October 14, 2022*). and then select **Save**. You should see the value display from the file in the Labeled examples list, under the **Label** column.
 2. Select **Next file** to autosave and open the next file in the list in the viewer. Or select **Save** and then select another file from the **Labeled examples** list.
 3. In the viewer, repeat steps 1 and 2, then repeat until you saved the label in all five files.
 
@@ -74,9 +75,9 @@ The Find feature is useful if you're searching a large document or if there are 
 
 For our example, we're going to create an explanation that provides a hint about the entity format itself and variations it might have in the sample documents. For example, a date value can be in several different formats, such as:
 
-- 10/14/2019
-- October 14, 2019
-- Monday, October 14, 2019
+- 10/14/2022
+- October 14, 2022
+- Monday, October 14, 2022
 
 To help identify the *Service Start Date*, you can create a pattern explanation.
 
@@ -92,7 +93,7 @@ To help identify the *Service Start Date*, you can create a pattern explanation.
 > [!NOTE]
 > For more learn more about explanation types, see [Explanation types](./explanation-types-overview.md).
 
-### Use the Explanation library
+### Use the explanation library
 
 For creating explanations for items such as dates, it's easier to [use the explanation library](./explanation-types-overview.md) than to manually enter all variations. The explanation library is a set of pre-built phrase and pattern explanations. The library tries to provide all formats for common phrase or pattern lists, such as dates, phone numbers, zip codes, and many others.
 
@@ -181,8 +182,4 @@ If you have duplicate entities and want to extract only one value or a certain n
 
 [Leverage term store taxonomy when creating an extractor](leverage-term-store-taxonomy.md)
 
-[Document Understanding overview](document-understanding-overview.md)
-
-[Apply a model](apply-a-model.md)
-
-[SharePoint Syntex Accessibility Mode](accessibility-mode.md)
+[Syntex accessibility mode](accessibility-mode.md)

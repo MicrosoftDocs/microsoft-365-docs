@@ -7,12 +7,17 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
+ms.date: 07/19/2022
 f1.keywords: NOCSH 
-ms.collection: M365-security-compliance
+ms.collection: 
+ - m365-security
+ - m365solution-mdb-setup
+ - highpri
+ - tier1
 ---
 
 # Set up email notifications
@@ -24,8 +29,6 @@ You can set up email notifications for your security team. Then, as alerts are g
 1. [Learn about types of email notifications](#types-of-email-notifications).
 2. [View and edit email notification settings](#view-and-edit-email-notifications).
 3. [Proceed to your next steps](#next-steps).
-
-
 
 ## Types of email notifications
 

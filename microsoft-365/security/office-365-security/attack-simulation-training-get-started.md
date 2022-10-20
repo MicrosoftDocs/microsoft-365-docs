@@ -14,13 +14,13 @@ search.appverid:
   - MOE150
 ms.assetid:
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-m365-defender
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn how to use Attack simulation training to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Get started using Attack simulation training in Defender for Office 365
@@ -68,7 +68,7 @@ Watch this short video to learn more about Attack simulation training.
 
 ## Simulations
 
-*Phishing* is a generic term for email attacks that try to steal sensitive information in messages that appear to be from legitimate or trusted senders. *Phishing* is a part of a subset of techniques we classify as _social engineering_.
+*Phishing* is a generic term for email attacks that try to steal sensitive information in messages that appear to be from legitimate or trusted senders. *Phishing* is a part of a subset of techniques we classify as *social engineering*.
 
 In Attack simulation training, multiple types of social engineering techniques are available:
 
@@ -80,10 +80,9 @@ In Attack simulation training, multiple types of social engineering techniques a
 
 - **Link to malware**: An attacker sends the recipient a message that contains a link to an attachment on a well-known file sharing site (for example, SharePoint Online or Dropbox). When the recipient clicks on the URL, the attachment opens and arbitrary code (for example, a macro) is run on the user's device to help the attacker install additional code or further entrench themselves.
 
-- **Drive-by-url**: An attacker sends the recipient a messages that contains a URL. When the recipient clicks on the URL, they're taken to a website that tries to run background code. This background code attempts to gather information about the recipient or deploy arbitrary code on their device. Typically, the destination website is a well-known website that has been compromised or a clone of a well-known website. Familiarity with the website helps convince the user that the link is safe to click. This technique is also known as a _watering hole attack_.
+- **Drive-by-url**: An attacker sends the recipient a messages that contains a URL. When the recipient clicks on the URL, they're taken to a website that tries to run background code. This background code attempts to gather information about the recipient or deploy arbitrary code on their device. Typically, the destination website is a well-known website that has been compromised or a clone of a well-known website. Familiarity with the website helps convince the user that the link is safe to click. This technique is also known as a *watering hole attack*.
 
-> [!NOTE]
-> Check the availability of the simulated phishing URL in your supported web browsers before you use the URL in a phishing campaign. While we work with many URL reputation vendors to always allow these simulation URLs, we don't always have full coverage (for example, Google Safe Browsing). Most vendors provide guidance that allows you to always allow specific URLs (for example, <https://support.google.com/chrome/a/answer/7532419>).
+- **OAuth Consent Grant**: An attacker creates a malicious Azure Application that seeks to gain access to data. The application sends an email request that contains a URL. When the recipient clicks on the URL, the consent grant mechanism of the application asks for access to the data (for example, the user's Inbox).
 
 The URLs that are used by Attack simulation training are described in the following list:
 
@@ -111,6 +110,9 @@ The URLs that are used by Attack simulation training are described in the follow
 - <https://www.templatent.com>
 - <https://www.templatern.com>
 - <https://www.windocyte.com>
+
+> [!NOTE]
+> Check the availability of the simulated phishing URL in your supported web browsers before you use the URL in a phishing campaign. While we work with many URL reputation vendors to always allow these simulation URLs, we don't always have full coverage (for example, Google Safe Browsing). Most vendors provide guidance that allows you to always allow specific URLs (for example, <https://support.google.com/chrome/a/answer/7532419>).
 
 ### Create a simulation
 

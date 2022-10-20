@@ -11,7 +11,8 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -21,6 +22,12 @@ ms.custom: seo-marvel-apr2020
 
 # Export source data for exact data match based sensitive information type
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## Applies to
+
+- [New experience](sit-create-edm-sit-unified-ux-workflow.md)
+- [Classic experience](sit-create-edm-sit-classic-ux-workflow.md)
 
 The sensitive data table is a text file containing rows of values against which you will be comparing content in your documents to identify sensitive data. These values might be personally identifiable information, product records, or other sensitive data in text form that you want to detect in content and take protective actions on.
 
@@ -52,7 +59,11 @@ The data file can include a maximum of:
 
 ## Next step
 
-- [Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
+- **For new experience**: [Create EDM SIT sample file for the new experience](sit-create-edm-sit-unified-ux-sample-file.md)
+
+or
+
+- **For classic experience**: [Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md)
 
 ## See also
 

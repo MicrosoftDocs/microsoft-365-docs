@@ -8,15 +8,18 @@ manager: scotv
 ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri
 - M365-subscription-management 
 - Adm_O365
 - TRN_SMB
 - Adm_TOC
 ms.custom:
 - commerce_signup
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - okr_SMB

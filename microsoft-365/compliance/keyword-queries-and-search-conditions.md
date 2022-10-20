@@ -1,9 +1,10 @@
 ---
 title: "Keyword queries and search conditions for eDiscovery"
+description: "Learn about email and document properties that you can search by using the eDiscovery search tools in Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -12,16 +13,14 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn about email and document properties that you can search by using the eDiscovery search tools in Microsoft 365."
 ---
 
 # Keyword queries and search conditions for eDiscovery
@@ -41,6 +40,8 @@ For step-by-step instructions on how to create different eDiscovery searches, se
 > [!NOTE]
 > eDiscovery searches in the compliance portal and the corresponding **\*-ComplianceSearch** cmdlets in Security & Compliance PowerShell use the Keyword Query Language (KQL). For more detailed information, see [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Searchable email properties
 
 The following table lists email message properties that can be searched by using the eDiscovery search tools in the compliance portal or by using the **New-ComplianceSearch** or the **Set-ComplianceSearch** cmdlet. The table includes an example of the  _property:value_ syntax for each property and a description of the search results returned by the examples. You can type these  `property:value` pairs in the keywords box for an eDiscovery search.
@@ -48,9 +49,9 @@ The following table lists email message properties that can be searched by using
 > [!NOTE]
 > When searching email properties, it's not possible to search for items in which the specified property is empty or blank. For example, using the *property:value* pair of **subject:""** to search for email messages with an empty subject line will return zero results. This also applies when searching site and contact properties.
 
-|Property|Property description|Examples|Search results returned by the examples|
-|---|---|---|---|
-|AttachmentNames|The names of files attached to an email message.|`attachmentnames:annualreport.ppt` <p> `attachmentnames:annual*` <br/> `attachmentnames:.pptx`|Messages that have an attached file named annualreport.ppt. In the second example, using the wildcard character ( * ) returns messages with the word "annual" in the file name of an attachment. The third example returns all attachments with the pptx file extension.|
+|**Property**|**Property description**|**Examples**|**Search results returned by the examples**|
+|:-----------|:-----------------------|:-----------|:------------------------------------------|
+|AttachmentNames|The names of files attached to an email message.|`attachmentnames:annualreport.ppt` <p> `attachmentnames:annual*`|Messages that have an attached file named annualreport.ppt. In the second example, using the wildcard character ( * ) returns messages with the word "annual" in the file name of an attachment.<sup>1</sup>
 |Bcc|The Bcc field of an email message.<sup>1</sup>|`bcc:pilarp@contoso.com` <p> `bcc:pilarp` <p> `bcc:"Pilar Pinilla"`|All examples return messages with Pilar Pinilla included in the Bcc field.<br>([See Recipient Expansion](keyword-queries-and-search-conditions.md#recipient-expansion))|
 |Category|The categories to search. Categories can be defined by users by using Outlook or Outlook on the web (formerly known as Outlook Web App). The possible values are: <ul><li>blue<li>green<li>orange<li>purple<li>red<li>yellow</li></ul>|`category:"Red Category"`|Messages that have been assigned the red category in the source mailboxes.|
 |Cc|The Cc field of an email message.<sup>1</sup>|`cc:pilarp@contoso.com` <p> `cc:"Pilar Pinilla"`|In both examples, messages with Pilar Pinilla specified in the Cc field.<br>([See Recipient Expansion](keyword-queries-and-search-conditions.md#recipient-expansion))|
@@ -278,7 +279,7 @@ Keep the following in mind when using search conditions.
 
 - The search query that is created by using the keywords box and conditions is displayed on the **Search** page, in the details pane for the selected search. In a query, everything to the right of the notation  `(c:c)` indicates conditions that are added to the query.
 
-- Conditions only add properties to the search query; the don't add operators. This is why the query displayed in the detail pane doesn't show operators to the right of the  `(c:c)` notation. KQL adds the logical operators (according to the previously explained rules) when the executing the query.
+- Conditions only add properties to the search query; they don't add operators. This is why the query displayed in the detail pane doesn't show operators to the right of the  `(c:c)` notation. KQL adds the logical operators (according to the previously explained rules) when the executing the query.
 
 - You can use the drag and drop control to resequence the order of conditions. Click on the control for a condition and move it up or down.
 

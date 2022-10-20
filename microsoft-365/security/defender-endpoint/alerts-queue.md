@@ -2,7 +2,7 @@
 title: View and organize the Microsoft Defender for Endpoint Alerts queue
 description: Learn about how the Microsoft Defender for Endpoint alerts queues work, and how to sort and filter lists of alerts.
 keywords: alerts, queues, alerts queue, sort, order, filter, manage alerts, new, in progress, resolved, newest, time in queue, severity, time period, microsoft threat experts alerts
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier1
+ms.topic: conceptual
 ms.date: 03/27/2020
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # View and organize the Microsoft Defender for Endpoint Alerts queue
@@ -58,7 +61,7 @@ Informational <br> (Grey)|Alerts that might not be considered harmful to the net
 
 #### Understanding alert severity
 
-Microsoft Defender Antivirus (Microsoft Defender AV) and Defender for Endpoint alert severities are different because they represent different scopes.
+Microsoft Defender Antivirus and Defender for Endpoint alert severities are different because they represent different scopes.
 
 The Microsoft Defender Antivirus threat severity represents the absolute severity of the detected threat (malware), and is assigned based on the potential risk to the individual device, if infected.
 
@@ -67,7 +70,7 @@ The Defender for Endpoint alert severity represents the severity of the detected
 So, for example:
 
 - The severity of a Defender for Endpoint alert about a Microsoft Defender Antivirus detected threat that was prevented and did not infect the device is categorized as "Informational" because there was no actual damage.
-- An alert about a commercial malware was detected while executing, but blocked and remediated by Microsoft Defender AV, is categorized as "Low" because it may have caused some damage to the individual device but poses no organizational threat.
+- An alert about a commercial malware was detected while executing, but blocked and remediated by Microsoft Defender Antivirus, is categorized as "Low" because it may have caused some damage to the individual device but poses no organizational threat.
 - An alert about malware detected while executing which can pose a threat not only to the individual device but to the organization, regardless if it was eventually blocked, may be ranked as "Medium" or "High".
 - Suspicious behavioral alerts, which weren't blocked or remediated will be ranked "Low", "Medium" or "High" following the same organizational threat considerations.
 

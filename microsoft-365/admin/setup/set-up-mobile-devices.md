@@ -7,13 +7,16 @@ author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- scotvorg
+- highpri 
 - M365-subscription-management
 - M365-identity-device-management
 - Adm_TOC 
 ms.custom:
+- VSBFY23
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365

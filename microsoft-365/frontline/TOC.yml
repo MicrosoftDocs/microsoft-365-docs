@@ -5,8 +5,12 @@
     href: flw-overview.md
   - name: Choose your scenarios
     href: flw-choose-scenarios.md
+  - name: Scenario posters
+    href: flw-scenario-posters.md
   - name: Try Microsoft 365 for frontline workers
     href: flw-trial.md
+  - name: Frontline deployment white paper
+    href: flw-technical-planning-guide-deployment.md
   - name: Set up and configure
     items:
     - name: Overview
@@ -21,7 +25,7 @@
       items: 
       - name: Set up Microsoft 365 and related services
         href: flw-setup-microsoft-365.md
-      - name: Deploy teams at scale
+      - name: Deploy Teams at scale
         href: deploy-teams-at-scale.md
       - name: Onboard your users with the onboarding wizard
         href: flw-onboarding-wizard.md
@@ -55,6 +59,8 @@
       href: flw-team-collaboration.md
     - name: Corporate communications with frontline workers
       href: flw-corp-comms.md
+    - name: Help your employees use collaboration apps and features
+      href: collab-features-apps-toolkit.md
   - name: Wellbeing & engagement
     items: 
     - name: Engage your employees and focus on wellbeing
@@ -71,16 +77,36 @@
       href: schedule-owner-for-shift-management.md
     - name: Manage shift-based access in Teams
       href: manage-shift-based-access-flw.md
+    - name: Help your employees track time and attendance
+      href: shifts-toolkit.md
     - name: Shifts connectors
       items: 
       - name: Overview
         href: shifts-connectors.md
-      - name: Use the Shifts connector wizard to set up a connection to Blue Yonder WFM
-        href: shifts-connector-wizard.md
-      - name: Use PowerShell to set up a connection to Blue Yonder WFM
-        href: shifts-connector-blue-yonder-powershell-setup.md
-      - name: Use PowerShell to manage your Shifts to Blue Yonder WFM connection
-        href: shifts-connector-powershell-manage.md
+      - name: Connect Shifts to Blue Yonder WFM
+        items:
+        - name: Use the Shifts connector wizard to set up a connection to Blue Yonder WFM
+          href: shifts-connector-wizard.md
+        - name: Use PowerShell to set up a connection to Blue Yonder WFM
+          href: shifts-connector-blue-yonder-powershell-setup.md
+        - name: Use the Microsoft 365 admin center to manage your connection to Blue Yonder WFM
+          href: shifts-connector-blue-yonder-admin-center-manage.md
+        - name: Use PowerShell to manage your connection to Blue Yonder WFM
+          href: shifts-connector-powershell-manage.md
+        - name: Known issues
+          href: shifts-connector-blue-yonder-known-issues.md
+      - name: Connect Shifts to UKG Dimensions
+        items:
+        - name: Use the Shifts connector wizard to set up a connection to UKG Dimensions
+          href: shifts-connector-wizard-ukg.md
+        - name: Use PowerShell to set up a connection to UKG Dimensions
+          href: shifts-connector-ukg-powershell-setup.md
+        - name: Use the Microsoft 365 admin center to manage your connection to UKG Dimensions
+          href: shifts-connector-ukg-admin-center-manage.md
+        - name: Use PowerShell to manage your connection to UKG Dimensions
+          href: shifts-connector-ukg-powershell-manage.md
+        - name: Known issues
+          href: shifts-connector-ukg-known-issues.md
   - name: Digitized processes
     items: 
     - name: Simplify business processes

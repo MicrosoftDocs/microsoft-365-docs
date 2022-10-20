@@ -7,9 +7,10 @@ manager: scotv
 ms-reviewer: katmartin
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -33,7 +34,7 @@ You must be a Cloud PC Administrator in the partner tenant.
 
 2. Select the **All Cloud PCs** tab.
 
-3. From the **Filters** drop-down list, select license type.
+3. From the **Filters** dropdown list, select license type.
 
 4. From the filtered list, select a device.
 
@@ -50,7 +51,7 @@ You must be a Cloud PC Administrator in the partner tenant.
 
 2. Select the **All Cloud PCs** tab.
 
-3. From the device list, select a device.
+3. From the list of devices, select a device.
 
 4. In the device details pane, select the **Device action status** tab.
 

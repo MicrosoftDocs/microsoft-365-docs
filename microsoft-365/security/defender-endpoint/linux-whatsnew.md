@@ -2,19 +2,22 @@
 title: What's new in Microsoft Defender for Endpoint on Linux
 description: List of major changes for Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, whatsnew, release
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 10/18/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
+- m365-security
+- tier3
 ms.topic: reference
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # What's new in Microsoft Defender for Endpoint on Linux
@@ -29,6 +32,99 @@ This article is updated frequently to let you know what's new in the latest rele
 
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
+
+<details>
+  <summary>Sep-2022 (Build: 101.80.97 | Release version: 30.122072.18097.0)</summary>
+
+&ensp;Released: **September 14, 2022**<br/>
+&ensp;Published: **September 14, 2022**<br/>
+&ensp;Build: **101.80.97**<br/>
+&ensp;Release version: **30.122072.18097.0**<br/>
+&ensp;Engine version: **1.1.19300.3**<br/>
+&ensp;Signature version: **1.369.395.0**<br/>
+
+**What's new**
+
+- Fixes a kernel hang observed on select customer workloads running mdatp version 101.75.43. After RCA this was attributed to a race condition while releasing the ownership of a sensor file descriptor. The race condition was exposed due to a recent product change in the shutdown path. Customers on newer Kernel versions (5.1+) are not impacted by this issue. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+	
+**Known issues**
+
+- When upgrading from mdatp version 101.75.43 or 101.78.13, you might encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.80.97. This should prevent the issue from occurring.
+
+```
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
+After executing the above, use your package manager to perform the upgrade. 
+	
+As an alternative to the above, you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+</br>
+
+<br/><br/>
+</details>
+
+<details>
+   <summary>Aug-2022 (Build: 101.78.13, | Release version: 30.122072.17813.0)</summary>
+
+ &ensp;Released: **August 24, 2022**<br/>
+ &ensp;Published: **August 24, 2022**<br/>
+ &ensp;Build: **101.78.13**<br/>
+ &ensp;Release version: **30.122072.17813.0**<br/>
+ &ensp;Engine version: **1.1.19300.3**<br/>
+ &ensp;Signature version: **1.369.395.0**<br/>
+
+ **What's new**
+
+ - Rolled back due to reliability issues
+
+ </br>
+
+ <br/><br/>
+ </details>
+
+<details>
+  <summary>Aug-2022 (Build: 101.75.43 | Release version: 30.122071.17543.0)</summary>
+
+&ensp;Released: **August 2, 2022**<br/>
+&ensp;Published: **August 2, 2022**<br/>
+&ensp;Build: **101.75.43**<br/>
+&ensp;Release version: **30.122071.17543.0**<br/>
+&ensp;Engine version: **1.1.19300.3**<br/>
+&ensp;Signature version: **1.369.395.0**<br/>
+
+**What's new**
+
+- Added support for Red Hat Enterprise Linux version 9.0
+- Added a new field in the output of `mdatp health` that can be used to query the enforcement level of the network protection feature. The new field is called `network_protection_enforcement_level` and can take one of the following values: `audit`, `block`, or `disabled`.
+- Addressed a product bug where multiple detections of the same content could lead to duplicate entries in the threat history
+- Addressed an issue where one of the processes spawned by the product (`mdatp_audisp_plugin`) was sometimes not properly terminated when the service was stopped
+- Other bug fixes
+</br>
+
+<br/><br/>
+</details>
+
+<details>
+  <summary>Jul-2022 (Build: 101.73.77 | Release version: 30.122062.17377.0)</summary>
+
+&ensp;Released: **July 21, 2022**<br/>
+&ensp;Published: **July 21, 2022**<br/>
+&ensp;Build: **101.73.77**<br/>
+&ensp;Release version: **30.122062.17377.0**<br/>
+&ensp;Engine version: **1.1.19200.3**<br/>
+&ensp;Signature version: **1.367.1011.0**<br/>
+
+
+**What's new**
+
+- Added an option to [configure file hash computation](linux-preferences.md#configure-file-hash-computation-feature)
+- From this build onwards, the product will have the new anti-malware engine by default
+- Performance improvements for file copy operations
+- Bug fixes
+</br>
+
+<br/><br/>
+</details>
 
 <details>
   <summary>Jun-2022 (Build: 101.71.18 | Release version: 30.122052.17118.0)</summary>
@@ -192,7 +288,7 @@ This article is updated frequently to let you know what's new in the latest rele
    
   <p><b> What's new </b></p>
 
-   - Added a capability to detect vulnerable log4j jars in use by Java applications. The machine is periodically inspected for running Javaprocesses  with loaded log4j jars. The information is reported to the Microsoft Defender for Endpoint backend and is exposed in theVulnerability Management    area of the portal.
+   - Added a capability to detect vulnerable log4j jars in use by Java applications. The machine is periodically inspected for running Java processes with loaded log4j jars. The information is reported to the Microsoft Defender for Endpoint backend and is exposed in the Vulnerability Management area of the portal.
    
    </details>
 
