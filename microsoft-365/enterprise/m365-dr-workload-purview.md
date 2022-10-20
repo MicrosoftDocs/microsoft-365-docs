@@ -72,7 +72,7 @@ In addition to the data stored as part of Purview Audit (Standard), configuratio
 
 #### Summary
 
-Applies to the following services:
+ADR applies to the following services within Purview Data lifecycle management, Data Retension:
 
 - Manual retention labels
 - Basic org-wide or location-wide retention policies
@@ -138,7 +138,7 @@ The following customer data will be stored in the related _Geography_:
 
 #### Summary
 
-Applies to the following services:
+ADR applies to the following services within Purview Information Protection, Sensitivity labels:
 
 - Manual, default, and mandatory sensitivity labeling in Office 365
 - Automatic sensitivity labeling in Office 365 apps
@@ -170,7 +170,7 @@ The following customer data will be stored in the related _Geography_:
 
 #### Summary
 
-Applies to the following services:
+ADR applies to the following services within Purview Information Protection, Data Loss Prevention (DLP):
 
 - Office 365 Data Loss Prevention (DLP) for emails and files
 - DLP for Teams chat
@@ -208,7 +208,7 @@ The following customer data will be stored in the related _Geography_:
 
 #### Summary
 
-Applies to the following services:
+ADR applies to the following services within Purview Information Protection, Office Message Encryption:
 
 - Basic Office Message Encryption
 - Advanced Office Message Encryption
