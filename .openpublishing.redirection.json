@@ -9141,7 +9141,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "/microsoft-365/contentunderstanding/index.md",
+      "source_path": "microsoft-365/contentunderstanding/index.md",
       "redirect_url": "/microsoft-365/contentunderstanding/index.yml",
       "redirect_document_id": true
     },
