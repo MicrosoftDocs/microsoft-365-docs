@@ -1,5 +1,5 @@
 ---
-title: Manage the join experience for Teams virtual appointments on browsers
+title: Manage the join experience for Teams Virtual Appointments on browsers
 author: lanachin
 ms.author: v-lanachin
 manager: samanro
@@ -22,15 +22,15 @@ ms.collection:
   - m365-frontline
   - highpri
 ms.reviewer: hafarmer
-description: Learn about the join experience for Teams virtual appointments on browsers. 
+description: Learn about the join experience for Teams Virtual Appointments on browsers. 
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ---
 
-# Manage the join experience for Teams virtual appointments on browsers
+# Manage the join experience for Teams Virtual Appointments on browsers
 
-Microsoft Teams makes it easy for people to join virtual appointments without having to download Teams. For a more seamless experience, attendees can join appointments such as healthcare visits and financial consultations from a desktop or mobile browser. Attendees don't need to install the Teams app on their device.
+Microsoft Teams makes it easy for people to join [virtual appointments](virtual-appointments.md) without having to download Teams. For a more seamless experience, attendees can join appointments such as healthcare visits and financial consultations from a desktop or mobile browser. Attendees don't need to install the Teams app on their device.
 
 With browser join, when an attendee joins an appointment, they aren't prompted to download Teams. Instead, Teams opens in a browser, where the attendee can select **Join now** to join. With this feature, keep in mind that if Teams is already installed on the device, Teams will open in a browser and not in the app.
 
@@ -74,7 +74,7 @@ No setup is needed by you or your staff!
 
 Here are the browsers that are currently supported. We support the latest version plus two previous versions, unless otherwise indicated.
 
-|Platform  |Chrome |Safari |Edge (Chromium)|
+|Platform  |Google Chrome |Apple Safari |Microsoft Edge (Chromium)|
 |---------|:---|:---|:---:|
 |Android   | &#x2714; &sup1;      |         |         |
 |iOS    |         | &#x2714; &sup1; &sup2; |         |
@@ -86,14 +86,30 @@ Here are the browsers that are currently supported. We support the latest versio
 
 &sup2; iOS apps on Safari can't select microphone and speaker devices. For example, Bluetooth devices. This is a limitation of the operating system, which controls the default device selection.
 
-## Things to consider
+## User experience
+
+Here are some things about the user experience to know about with browser join.
+
+### Before the appointment
+
+### During the appointment
+
+#### Screen sharing
 
 The staff member who conducts the appointment can share their screen from their Teams desktop, mobile, or web client with an attendee who joins from a desktop or mobile browser. However, attendees can't share their screen from a desktop or mobile browser.
 
+#### Live captions
+
+Teams can detect what's said during an appointment and display real-time captions.
+
+To use captions, a staff member must first turn on live captions in Teams. Then, any attendee who wants to see captions can turn them on in Teams from their browser.
+
+To turn on live captions, in the meeting controls in Teams, go to **More** (**...**) > **Turn on live captions**. Captions are only visible for attendees who turn them on and are permanently deleted when the appointment is over.
+
+Staff members can also change the language of the captions. The default language is English (US). The language that's set applies to everyone who has captions turned on in the appointment.
+
 ## Related articles
 
-- [Virtual appointments with Teams and the Bookings app](bookings-virtual-appointments.md)
+- [Virtual Appointments with Teams and the Bookings app](bookings-virtual-appointments.md)
 - [Create an Bookings appointment type](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887)
 - [Join a Bookings appointment as an attendee](https://support.microsoft.com/office/join-a-bookings-appointment-as-an-attendee-95cea12d-2220-421f-a663-6efb20913c7f)
-- [Virtual appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
-- [Virtual appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
