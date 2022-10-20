@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
-ms.author: v-jweston
+author: dansimp
+ms.author: dansimp
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.custom: asr
@@ -21,6 +21,8 @@ ms.collection:
 ms.date:
 search.appverid: met150
 ---
+
+<!--- jweston-1 to return as author and ms.author appx April/May 2023. --->
 
 # Network protection for macOS
 
