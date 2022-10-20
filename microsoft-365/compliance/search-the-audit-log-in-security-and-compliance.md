@@ -853,6 +853,7 @@ The following table lists the user and admin activities in Yammer that are logge
 |Failed to access community<sup>*</sup>|CommunityAccessFailure|User failed to access a community.|
 |Failed to access file<sup>*</sup>|FileAccessFailure|User failed to access a file.|
 |Failed to access message<sup>*</sup>|MessageAccessFailure|User failed to access a message.|
+|Reacted to message|MarkedMessageChanged|User reacted to a message.|
 |Shared file|FileShared|User shares a file with another user.|
 |Suspended network user|NetworkUserSuspended|Network or verified admin suspends (deactivates) a user from Yammer.|
 |Suspended user|UserSuspension|User account is suspended (deactivated).|
