@@ -24,10 +24,10 @@ Once a regression is detected, you can download the Windows Performance Analyzer
 
 Note that these .etl files are available in the log files that are downloadable for test runs on the Test Base user portal.  After completing a test run, you can download zip files for one or more test execution runs by clicking the **Log files: Download** link for a set of test results. Once downloaded, you can unzip the logs for the test run/s, then locate the associated WPR-generated .etl file/s, each within a separate **\trace** folder.
 
-**To learn more** about Windows Performance Recorder, see the [Windows Performance Recorder](//learn.microsoft.com/windows-hardware/test/wpt/windows-performance-recorder) documentation on [learn.Microsoft.com](//learn.microsoft.com/).
+**To learn more** about Windows Performance Recorder, see the [Windows Performance Recorder](/windows-hardware/test/wpt/windows-performance-recorder) documentation on [learn.Microsoft.com](/).
 
-**To learn more** about debugging Memory and CPU utilization regressions with Windows Performance Analyzer (WPA), see the [Windows Performance Analyzer](//learn.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) documentation on [learn.Microsoft.com](//learn.microsoft.com/).
+**To learn more** about debugging Memory and CPU utilization regressions with Windows Performance Analyzer (WPA), see the [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) documentation on [learn.Microsoft.com](/).
 
-**To learn more** about CPU regression analysis, see [Intelligent CPU regression analysis with Test Base for Microsoft 365](//techcommunity.microsoft.com/t5/test-base-blog/intelligent-cpu-regression-analysis-with-test-base-for-microsoft/ba-p/2112977).
+**To learn more** about CPU regression analysis, see [Intelligent CPU regression analysis with Test Base for Microsoft 365](https://techcommunity.microsoft.com/t5/test-base-blog/intelligent-cpu-regression-analysis-with-test-base-for-microsoft/ba-p/2112977).
 
-**To learn more** about Windows Event Tracing, see [ETW Framework Conceptual Tutorial](/../../../../MicrosoftDocs/message-analyzer-docs-pr/blob/main/message-analyzer-guide/etw-framework-conceptual-tutorial.md).
+**To learn more** about Windows Event Tracing, see [ETW Framework Conceptual Tutorial](/message-analyzer/etw-framework-conceptual-tutorial).
