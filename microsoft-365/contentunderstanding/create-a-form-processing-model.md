@@ -31,6 +31,8 @@ Using [AI Builder](/ai-builder/overview)—a feature in Microsoft Power Apps—S
 
 Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a structured document processing model in a content center. Or, follow the instructions in [Create a model on a local SharePoint site](create-local-model.md) to create the model on a local site. Then use this article to train your model.
 
+![Diagram of the workflow to train an AI Builder model.](../media/content-understanding/train-aib-model.png)
+
 To train a structured document processing model, follow these steps:
 
  - [Step 1: Add and analyze documents](#step-1-add-and-analyze-documents)
@@ -77,7 +79,7 @@ You need to tag the documents to teach the model to understand the fields and ta
 --->
 3. Upload files to your document library. Any files that the model identifies as its content type lists the files in your view and displays the extracted data in the columns.
 
-    ![Done.](../media/content-understanding/doc-lib-done.png) 
+    ![Screenshot showing extracted data.](../media/content-understanding/doc-lib-done.png) 
 
 > [!NOTE]
 > If a structured or freeform document processing model and an unstructured document processing model are applied to the same library, the file is classified using the unstructured document processing model and any trained extractors for that model. If there are any empty columns that match the document processing model, the columns will be populated using those extracted values.

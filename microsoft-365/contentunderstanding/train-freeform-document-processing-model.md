@@ -20,6 +20,8 @@ description: Learn how to train a freeform document processing model in Microsof
 
 Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a freeform document processing model in a content center. Or, follow the instructions in [Create a model on a local SharePoint site](create-local-model.md) to create the model on a local site. Then use this article to train your model.
 
+![Diagram of the workflow to train an AI Builder model.](../media/content-understanding/train-aib-model.png)
+
 To train a freeform document processing model, follow these steps:
 
  - [Step 1: Add and analyze documents](#step-1-add-and-analyze-documents)
