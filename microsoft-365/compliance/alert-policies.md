@@ -44,7 +44,10 @@ Here's a quick overview of how alert policies work and the alerts that are trigg
 
 1. An admin in your organization creates, configures, and turns on an alert policy by using the **Alert policies** page in the compliance portal or the Microsoft 365 Defender portal. You can also create alert policies by using the [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) cmdlet in Security & Compliance PowerShell.
 
-   To create alert policies, you have to be assigned the Manage Alerts role or the Organization Configuration role in the compliance portal or the Defender portal.
+ In addition to holding a Compliance Manager role, users also need an Azure AD role as follows:
+
+To view alerts and alert policies: the Security reader role in Azure AD
+To create or update alert policies: the Compliance administrator, Compliance data administrator, Security administrator, or Security operator role in Azure AD
 
    > [!NOTE]
    > It takes up to 24 hours after creating or updating an alert policy before alerts can be triggered by the policy. This is because the policy has to be synced to the alert detection engine.
