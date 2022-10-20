@@ -3,10 +3,10 @@ title: Manage Microsoft Syntex by using PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-manager: serdars
+manager: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
@@ -24,18 +24,18 @@ For these scenarios, the Syntex cmdlets in the PnP PowerShell module can be used
 
 Select from the following scenarios to learn how to use PowerShell to manage Syntex:
 
-- [**Import and Export Models**](powershell-syntex-import-export.md)
+- [**Export and import models**](powershell-syntex-import-export.md)
 
-    Start here if you want to learn how to export document understanding models from a content center, and import to another content center or tenant.
+    Start here if you want to learn how to export an unstructured document processing model from a content center, and import to another content center or tenant.
 
 - [**Publishing**](powershell-syntex-publishing.md)
 
-    Start here if want to learn how to use PowerShell to publish document understanding models to document libraries.
+    Start here if want to learn how to use PowerShell to publish custom models to document libraries.
 
 - [**Processing**](powershell-syntex-processing.md)
 
-    Start here if you want to learn how to use PowerShell to trigger document understanding processing on a document library.
+    Start here if you want to learn how to use PowerShell to trigger processing of custom models on a document library.
 
 - [**Explanations**](powershell-syntex-explanations.md)
 
-    Start here if want to learn how to create custom document understanding explanation templates using PowerShell.
+    Start here if want to learn how to create a custom explanation template for an unstructured document processing model using PowerShell.
