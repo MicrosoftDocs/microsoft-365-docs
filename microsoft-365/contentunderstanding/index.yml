@@ -57,9 +57,9 @@ landingContent:
         links:
           - text: Unstructured document processing
             url: document-understanding-overview.md
-          - text: Structured document processing
-            url: create-a-form-processing-model.md
           - text: Freeform document processing
+            url: create-a-form-processing-model.md
+          - text: Structured document processing
             url: create-a-form-processing-model.md
           - text: Prebuilt models
             url: prebuilt-overview.md
