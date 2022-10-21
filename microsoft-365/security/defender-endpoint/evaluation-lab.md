@@ -16,7 +16,7 @@ ms.collection:
   - m365solution-evalutatemtp
   - highpri
   - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---

@@ -194,6 +194,8 @@
                       href: alert-grading-password-spray.md                      
                     - name: Malicious exchange connectors
                       href: alert-grading-for-malicious-exchange-connectors.md
+                    - name: Session cookie theft alert
+                      href: session-cookie-theft-alert.md
                  - name: Users 
                    href: investigate-users.md                  
               - name: Incident response playbooks
@@ -356,12 +358,12 @@
                 href: threat-analytics.md
               - name: Understand the analyst report
                 href: threat-analytics-analyst-reports.md
-       - name: Collaborate with Microsoft Threat Experts
+       - name: Endpoint Attack Notifications
          items:
-              - name: Overview
-                href: microsoft-threat-experts.md
-              - name: Configure and manage Microsoft Threat Experts capabilities
-                href: configure-microsoft-threat-experts.md
+              - name: Endpoint Attack Notifications
+                href: ../defender-endpoint/endpoint-attack-notifications.md
+              - name: Experts on Demand
+                href: ../defender-endpoint/experts-on-demand.md
        - name: Collaborate with Microsoft Defender Experts for Hunting
          items:
               - name: Overview

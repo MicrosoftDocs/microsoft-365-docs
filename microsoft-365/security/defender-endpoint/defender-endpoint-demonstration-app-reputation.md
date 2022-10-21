@@ -8,13 +8,15 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp 
+author: dansimp 
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
 ---
 
@@ -64,7 +66,7 @@ This download is known malware; SmartScreen should block this program from runni
 
   Launching this link should render a message similar to the following:
 
-  :::image type="content" source="images/smartscreen-app-reputation-known-malware.png" alt-text="SmartScreen detects a file download with an unsafe reputation.; the download is blocked.":::
+  :::image type="content" source="images/smartscreen-app-reputation-known-malware.png" alt-text="Screenshot showing how SmartScreen detects a file download with an unsafe reputation.; the download is blocked.":::
 
 ## Learn more
 

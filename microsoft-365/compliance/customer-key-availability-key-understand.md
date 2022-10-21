@@ -7,6 +7,9 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
+ms.collection:
+- purview-compliance
+- tier1
 search.appverid:
 - MET150
 description: "Learn about the availability key used to recover lost Customer Keys."

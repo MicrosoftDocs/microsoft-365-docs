@@ -258,7 +258,7 @@ Only select this option if your organization uses Skype for Business for online 
     |Type|Name|Service|Protocol|TTL|Priority|Weight|Port|Target|
     |---|---|---|---|---|---|---|---|---|
     |SRV|Use your *domain_name*; for example, contoso.com|_sip|TLS|30 minutes|100|1|443|sipfed.online.lync.com|
-    |SRV|_sipfederationtls|TCP|Use your *domain_name*; for example, contoso.com|30 minutes|100|1|5061|sipfed.online.lync.com|
+    |SRV|Use your *domain_name*; for example, contoso.com|_sipfederationtls|TCP|30 minutes|100|1|5061|sipfed.online.lync.com|
 
 1. Select **Save**.
 
