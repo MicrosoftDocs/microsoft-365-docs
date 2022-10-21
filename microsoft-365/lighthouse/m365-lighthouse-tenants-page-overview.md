@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: kywirpel
+ms.reviewer: kywirpel
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
