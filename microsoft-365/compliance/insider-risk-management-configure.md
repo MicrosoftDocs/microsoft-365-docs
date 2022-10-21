@@ -223,7 +223,7 @@ A priority user group is required when using the following policy templates:
 - Security policy violations by priority users
 - Data leaks by priority users
 
-#### Potential high impact users (PHIU)
+#### Potential high impact users
 
 You can enable the potential high impact user (PHIU) score booster in Insider risk management settings. Once configured, users identified as having a potentially high impact will receive a risk score booster. Identified PHIUs are more likely to receive [alerts](insider-risk-management-activities.md#alert-dashboard), so analysts and investigators can review and prioritize these users' risk activities.
 
@@ -235,7 +235,7 @@ You can also decide to boost risk scores when a user is in a priority user group
 
 - **Cumulative reports**: Use if you have organizational hierarchy configured in Azure Active Directory and Azure Blast radius is available for your organization. To learn more about Azure Blast Radius, see [Investigate risky users](/defender-cloud-apps/tutorial-ueba).
 
-- **Azure AD out-of-box role memberships**: Use if a user is a PHIU and they have an alert. You will see the following: 
+- **Azure AD out-of-box role memberships**: Use if a user is a potential high impact user (PHIU) and they have an alert. You will see the following: 
 
    - If an alert is generated for a user that has been identified as a PHIU, then the alert is displayed in the **Risk factors**”** column in the Alerts dashboard. You will then be able to filter for this risk factor. 
 
@@ -247,7 +247,7 @@ You can also decide to boost risk scores when a user is in a priority user group
 
 Peers groups are based on common users who access same SharePoint sites. Peer groups are defined for a user, based on the following criteria:
 
-- **Similar org**: A user's peers, a user's manager and their peers, a user's reports, a user's reports' reports, and a user's teammates. Microsoft Purview requires users defined in peer groups are also configured in Azure Active Directory for your organization.
+- **Similar organization**: A user's peers, a user's manager and their peers, a user's reports, a user's reports' reports, and a user's teammates. Microsoft Purview requires users defined in peer groups are also configured in Azure Active Directory for your organization.
 
 - **Similar job title**: Users with a combination of organizational distance and similar job titles, and users with the same job title. purview requires that users' job titles are also configured in Azure Active Directory for your organization. 
 
