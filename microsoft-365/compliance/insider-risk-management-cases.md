@@ -129,6 +129,12 @@ The **Activity explorer** tab allows risk analysts and investigators to review a
 
 For more information about the Activity explorer, see the [Insider risk management activities](insider-risk-management-activities.md#activity-explorer) article.
 
+### Forensic evidence (preview)
+
+The **Forensic evidence (preview)** tab allows risk investigators to review visual captures associated with risk activities included in cases. For example, as part of the case management actions, investigators may need to help clarify the context of the user activity under review. Viewing the actual clips of the activity can help the investigator determine if the user activity is potentially risky and may lead to a security incident.
+
+For more information about forensic evidence, see the [Learn about insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence) article.
+
 ### Content explorer
 
 The **Content explorer** tab allows risk investigators to review copies of all individual files and email messages associated with risk alerts. For example, if an alert is created when a user downloads hundreds of files from SharePoint Online and the activity triggers a policy alert, all the downloaded files for the alert are captured and copied to the insider risk management case from original storage sources.

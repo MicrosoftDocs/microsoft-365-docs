@@ -23,8 +23,8 @@ search.appverid:
 
 # Create and manage communication compliance policies
 
->[!IMPORTANT]
->Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy.
+> [!IMPORTANT]
+> Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -58,13 +58,13 @@ As part of a layered defense to detect and remediate inappropriate messages in y
 
 Enabled by default in the [Teams admin center](/microsoftteams/manage-teams-in-modern-portal), the *Report a concern* option in Teams messages allows users in your organization to submit inappropriate internal personal and group chat messages for review by communication compliance reviewers for the policy. These messages are supported by a default system policy that supports reporting messages in Teams group and private chats.
 
-![Communication compliance Report a concern.](../media/communication-compliance-report-a-concern-full-menu.png)
+![Communication compliance report a concern](../media/communication-compliance-report-a-concern-full-menu.png)
 
 When a user submits a Teams chat message for review, the message is copied to the User-reported message policy. Reported messages initially remain visible to all chat members and there isn't any notification to chat members or the submitter that a message has been reported in channel, private, or group chats. A user can't report the same message more than once and the message remains visible to all users included in the chat session during the policy review process.
 
 During the review process, communication compliance reviewers can perform all the standard [remediation actions](/microsoft-365/compliance/communication-compliance-investigate-remediate#step-3-decide-on-a-remediation-action) on the message, including removing the message from the Teams chat. Depending on how the messages are remediated, the message sender and recipients will see different [notification messages](/microsoftteams/communication-compliance#act-on-inappropriate-messages-in-microsoft-teams) in Teams chats after the review.
 
-![Communication compliance user-reported messages policy.](../media/communication-compliance-user-reported-messages-policy.png)
+![Communication compliance user-reported messages policy](../media/communication-compliance-user-reported-messages-policy.png)
 
 User reported messages from Teams chats are the only messages processed by the User-reported message policy and only the assigned reviewers for the policy can be modified. All other policy properties aren't editable. When the policy is created, the initial reviewers assigned to the policy are all members of the *Communication Compliance Admins* role group (if populated with at least one user) or all members of your organization's *Global Admin* role group. The policy creator is a randomly selected user from the *Communication Compliance Admins* role group (if populated with at least one user) or a randomly selected user from your organization's *Global Admin* role group.  
 
@@ -157,8 +157,8 @@ To identify an older policy, review *Last policy scan* column on the **Policy** 
 
 Each communication compliance policy has a storage limit size of 100 GB or 1 million messages, whichever is reached first. As the policy approaches these limits, notification emails are automatically sent to users assigned to the *Communication Compliance* or *Communication Compliance Admins* role groups. Notifications messages are sent when the storage size or message count reach 80, 90, and 95 percent of the limit. When the policy limit is reached, the policy is automatically deactivated, and the policy stops processing messages for alerts.
 
->[!IMPORTANT]
->If a policy is deactivated due to reaching the storage and message limits, be sure to evaluate how to manage the deactivated policy. If you delete the policy, all messages, associated attachments, and message alerts will be permanently deleted. If you need to maintain these items for future use, do not delete the deactivated policy.
+> [!IMPORTANT]
+> If a policy is deactivated due to reaching the storage and message limits, be sure to evaluate how to manage the deactivated policy. If you delete the policy, all messages, associated attachments, and message alerts will be permanently deleted. If you need to maintain these items for future use, do not delete the deactivated policy.
 
 To manage policies approaching the storage and message limits, consider making a copy of the policy to maintain coverage continuity or take the following actions to help minimize current policy storage size and message counts:
 
@@ -200,21 +200,34 @@ Configure custom keyword dictionaries (or lexicons) to provide simple management
 
 ### Classifiers
 
-[Built-in trainable and global classifiers](/microsoft-365/compliance/classifier-learn-about) scan sent or received messages across all communication channels in your organization for different types of compliance issues. Classifiers use a combination of artificial intelligence and keywords to identify language in messages likely to violate anti-harassment policies.
+[Built-in trainable and global classifiers](/microsoft-365/compliance/classifier-learn-about) inspect sent or received messages across all communication channels in your organization for different types of compliance issues. Classifiers use a combination of artificial intelligence and keywords to identify language in messages likely to violate anti-harassment policies. 
 
-Communication compliance uses built-in trainable and global classifiers to scan communications for terms, images, and sentiment for the following types of language and content:
+Policies using classifiers will inspect and evaluate messages with a word count of six or greater. Messages containing fewer than six words aren't evaluated in policies using classifiers. To identify and take action on shorter messages containing inappropriate content, we recommend including a custom keyword dictionary to communication compliance policies detecting this type of content.
 
-- **Adult images**: Scans for images that are sexually explicit in nature.
-- **Customer Complaints**: Scans for feedback and complaints made about your organization's products or services.
-- **Discrimination**: Scans for explicit discriminatory language and is particularly sensitive to discriminatory language against the African American/Black communities when compared to other communities.
-- **Gory images**: Scans for images that depict violence and gore.
-- **Harassment**: Scans for offensive conduct targeting people regarding race, color, religion, national origin.
-- **Profanity**: Scans for profane expressions that embarrass most people.
-- **Racy images**: Scans for images that are sexually suggestive in nature, but contain less explicit content than images deemed Adult.
-- **Threat**: Scans for threats to commit violence or physical harm to a person or property.
+Communication compliance can use specific built-in trainable and global classifiers to inspect communications for the following types of language and content:
+
+|**Classifier**|**Description**|
+|:-------------|:--------------|
+| **Adult images** | Detects images that are potentially sexually explicit in nature. |
+| **Corporate sabotage (preview)** | Detects messages that may mention acts to damage or destroy corporate assets or property. This classifier can help customers manage regulatory compliance obligations such as NERC Critical Infrastructure Protection standards or state by state regulations like Chapter 9.05 RCW in Washington state.  |
+| **Customer complaints (preview)** | Detects messages that may suggest customer complaints made on your organization's products or services, as required by law for regulated industries. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 4530, FINRA 4513, FINRA 2111, Consumer Financial Protection Bureau, Code of Federal Regulations Title 21: Food and Drugs, and the Federal Trade Commission Act.  |
+| **Discrimination** | Detects potentially explicit discriminatory language and is particularly sensitive to discriminatory language against the African American/Black communities when compared to other communities. |
+| **Gifts & entertainment (preview)** | Detects messages that may suggest exchanging gifts or entertainment in return for service, which violates regulations related to bribery. This classifier can help customers manage regulatory compliance obligations such as Foreign Corrupt Practices Act (FCPA), UK Bribery Act, and FINRA Rule 2320.  |
+| **Gory images** | Detects images that potentially depict violence and gore. |
+| **Harassment** | Detects potentially offensive conduct targeting people regarding race, color, religion, national origin. |
+| **Money laundering (preview)** | Detects signs that may suggest money laundering or engagement in acts to conceal or disguise the origin or destination of proceeds. This classifier can help customers manage regulatory compliance obligations such as the Bank Secrecy Act, the USA Patriot Act, FINRA Rule 3310, and the Anti-Money Laundering Act of 2020. |
+| **Profanity** | Detects potentially profane expressions that embarrass most people. |
+| **Racy images** | Detects images that are potentially sexually suggestive in nature, but contain less explicit content than images deemed Adult. |
+| **Regulatory collusion (preview)** | Detects messages that may violate regulatory anti-collusion requirements such as an attempted concealment of sensitive information. This classifier can help customers manage regulatory compliance obligations such as the Sherman Antitrust Act, Securities Exchange Act 1933, Securities Exchange Act of 1934, Investment Advisers Act of 1940, Federal Commission Act, and the Robinson-Patman Act. |
+| **Stock manipulation (preview)** | Detects signs of possible stock manipulation, such as recommendations to buy, sell or hold stocks that may suggest an attempt to manipulate the stock price. This classifier can help customers manage regulatory compliance obligations such as the Securities Exchange Act of 1934, FINRA Rule 2372, and FINRA Rule 5270. |
+| **Threat** | Detects potential threats to commit violence or physical harm to a person or property. |
+| **Unauthorized disclosure (preview)** | Detects sharing of information containing content that is explicitly designated as confidential or internal to unauthorized individuals. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 2010 and SEC Rule 10b-5. |
+
+> [!IMPORTANT]
+> Preview classifiers may detect a large volume of bulk sender/newsletter content due to a known issue. While these classifiers are in preview, you can mitigate the detection of large volumes of bulk sender/newsletter content by adding the [*Message is not sent to any of these domains* condition](/microsoft-365/compliance/communication-compliance-policies#conditional-settings) to your polices with a list of domains to exclude.
 
 > [!NOTE]
-> Policies using classifiers will inspect and evaluate messages with a word count of six or greater. Messages containing less than six words aren't evaluated in policies using classifiers. To identify and take action on shorter messages containing inappropriate content, we recommend including a custom keyword dictionary to communication compliance policies detecting this type of content.
+> Policies using Threat, Harassment, and Profanity classifiers in the English language will inspect and evaluate messages with a word count of three or greater. Messages containing less than three words aren't evaluated in policies using these types of classifiers. To identify and take action on shorter messages containing inappropriate content, we recommend including a custom keyword dictionary to communication compliance policies detecting this type of content.
 
 ### Optical character recognition (OCR)
 

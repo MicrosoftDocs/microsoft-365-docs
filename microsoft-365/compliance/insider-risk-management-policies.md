@@ -290,6 +290,7 @@ Use the following table to determine the maximum number of in-scope users suppor
 |Security policy violation by priority users|1,000|
 |Security policy violations by departing users|15,000|
 |Security policy violations by disgruntled users|7,500|
+|Forensic evidence|5 users for preview release|
 
 ## Create a new policy
 
@@ -430,7 +431,7 @@ Complete the following steps to copy an existing policy:
 
 ## Immediately start scoring security-related user activity
 
-There may be scenarios where you need to immediately start assigning risk scores to users with insider risk policies outside of the insider risk management triggering event workflow. Use **Start scoring activity for users** on the **Policies** tab to manually add a user (or users) to one or more insider risk policies for a specific amount of time, to immediately start assigning risk scores to their activity, and to bypass the requirement for a user to have a triggering indicator (like a DLP policy match). You can also add a reason for adding the user to the policy, which will appear on the users' activity timeline. Users manually added to policies are displayed in the **Users** dashboard and alerts are created if activity meets the policy alert thresholds.
+There may be scenarios where you need to immediately start assigning risk scores to users with insider risk policies outside of the insider risk management triggering event workflow. Use **Start scoring activity for users** on the **Policies** tab to manually add a user (or users) to one or more insider risk policies for a specific amount of time, to immediately start assigning risk scores to their activity, and to bypass the requirement for a user to have a triggering indicator (like a DLP policy match). You can also add a reason for adding the user to the policy, which will appear on the users' activity timeline. Users manually added to policies are displayed in the **Users** dashboard and alerts are created if activity meets the policy alert thresholds. You can add up to 4,000 users per policy when adding users for immediate scoring.
 
 Some scenarios where you may want to immediately start scoring user activities:
 

@@ -16,11 +16,9 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ---
-
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
 
 # Potentially unwanted applications (PUA) demonstration
 
@@ -28,7 +26,7 @@ The Potentially Unwanted Applications (PUA) protection feature in Microsoft Defe
 
 ## Scenario requirements and setup
 
-- Windows 10
+- Windows 10, Windows 11
 
 - Enable PUA protection. See the [Detect and block Potentially Unwanted Applications](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) article for more information.
 - You can also [download and use the PowerShell script](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/) to enable this setting and others.

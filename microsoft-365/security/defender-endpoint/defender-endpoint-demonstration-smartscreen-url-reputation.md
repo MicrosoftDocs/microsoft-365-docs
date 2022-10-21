@@ -16,11 +16,9 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ---
-
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
 
 # URL reputation demonstrations
 
