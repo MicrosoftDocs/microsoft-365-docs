@@ -1,5 +1,5 @@
 ---
-title: "Understand other app types available for your managed environment"
+title: "Understand other app types available for a managed environment"
 ms.author: erikre
 author: erikre
 manager: dougeby

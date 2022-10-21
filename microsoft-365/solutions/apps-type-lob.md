@@ -14,5 +14,5 @@ ms.custom:
 keywords:
 ---
 
-# Understand line-of-business apps
+# Understand line-of-business apps for a managed environment
 

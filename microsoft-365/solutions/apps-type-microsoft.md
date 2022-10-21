@@ -1,5 +1,5 @@
 ---
-title: "Understand Microsoft apps for your managed environment"
+title: "Understand Microsoft apps for a managed environment"
 ms.author: erikre
 author: erikre
 manager: dougeby

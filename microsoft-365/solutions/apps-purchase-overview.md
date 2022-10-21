@@ -1,11 +1,11 @@
 ---
-title: "Understand built-in apps for a managed environment"
+title: "Purchase apps for a managed environment"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Understand built-in apps as they apply to a managed environment.
+description: Understand how to purchase apps for a managed environment.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,5 +14,5 @@ ms.custom:
 keywords:
 ---
 
-# Understand built-in apps for a managed environment
+# Purchase apps for a managed environment
 

@@ -1,5 +1,5 @@
 ---
-title: "Understand web apps for your managed environment"
+title: "Understand web apps for a managed environment"
 ms.author: erikre
 author: erikre
 manager: dougeby
