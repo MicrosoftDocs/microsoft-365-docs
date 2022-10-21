@@ -28,7 +28,7 @@ description: "Scenarios for creating and deploying DLP policies"
 
 <!--If anyone asks why create and deploy are lumped into one article and not separated, it is because the deployment controls that this article covers are ONLY available in the policy creation or editing flow. The deployment controls are set in the creation or editing tool-->
 
-There are many configuration options in a Microsoft Purview data loss prevention (DLP) policy, each option changes the policy's behavior. This article presents some common policy intent scenarios that you'll map to configuration options, then it walks you through configuring those options. Once you familiarize yourself with these scenarios, you'll be comfortable using the DLP policy creation UX to create your own policies. 
+There are many configuration options in a Microsoft Purview data loss prevention (DLP) policy and, each option changes the policy's behavior. This article presents some common policy intent scenarios that you'll map to configuration options, then it walks you through configuring those options. Once you familiarize yourself with these scenarios, you'll be comfortable using the DLP policy creation UX to create your own policies. 
 
 How you deploy a policy is as important policy design. You have multiple options to control policy deployment. This article show you how to use these options so that the policy achieves your intent while avoiding costly business disruptions.  
 
