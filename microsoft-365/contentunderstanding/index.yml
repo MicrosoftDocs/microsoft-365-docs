@@ -57,16 +57,18 @@ landingContent:
         links:
           - text: Unstructured document processing
             url: document-understanding-overview.md
-          - text: Structured document processing
-            url: create-a-form-processing-model.md
           - text: Freeform document processing
+            url: create-a-form-processing-model.md
+          - text: Structured document processing
             url: create-a-form-processing-model.md
           - text: Prebuilt models
             url: prebuilt-overview.md
       - linkListType: how-to-guide
         links:
-          - text: Create a model
+          - text: Create an enterprise model
             url: create-syntex-model.md
+          - text: Create a local model
+            url: create-local-model.md
 
     # Card 4
   - title: Manage Syntex models
@@ -89,10 +91,14 @@ landingContent:
     # Card 5
   - title: Content assembly
     linkLists:
+      - linkListType: overview
+        links:
+          - text: Learn about content assembly
+            url: content-assembly.md
       - linkListType: how-to-guide
         links:
-          - text: Create documents
-            url: content-assembly.md
+          - text: Create modern templates
+            url: content-assembly-modern-template.md
           - text: Use with Power Automate
             url: automate-document-generation.md
 
