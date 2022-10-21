@@ -20,13 +20,13 @@ ms.collection:
   - m365-frontline
   - highpri
 ms.reviewer: 
-description: Customizable resources and infographics you can add to your website to help your clients understand how to use virtual appointments with your organization. 
+description: Customizable resources and infographics you can add to your website to help your clients understand how to use virtual appointments that have been scheduled in Bookings with your organization. 
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ---
 
-# Help your clients and customers use virtual appointments
+# Help your clients and customers use virtual appointments scheduled with Bookings
 
 Now that your organization has begun using Microsoft Teams and the Bookings app for virtual appointments, you'll need to make sure that your clients and customers understand how to book and join these appointments.
 
