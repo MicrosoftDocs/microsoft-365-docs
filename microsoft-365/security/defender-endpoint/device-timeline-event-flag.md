@@ -66,7 +66,7 @@ After you've gone through a device timeline, you can sort, filter, and export th
 While navigating the device timeline, you can search and filter for specific events. You can set event flags by:
 
 - Highlighting the most important events
-- Marking events that requires deep dive
+- Marking events that require deep dive
 - Building a clean breach timeline
 
 ## Flag an event
