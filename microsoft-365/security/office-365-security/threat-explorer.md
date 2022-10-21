@@ -6,7 +6,7 @@ ms.author: tracyp
 author: msfttracyp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 
 ms.localizationpriority: medium
 search.appverid:

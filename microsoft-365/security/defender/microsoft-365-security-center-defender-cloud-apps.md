@@ -13,7 +13,7 @@ author: dcurwin
 manager: dansimp
 ms.date: 08/04/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 search.appverid: 
 - MOE150
 - MET150

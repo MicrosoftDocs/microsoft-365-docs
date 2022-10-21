@@ -44,7 +44,7 @@ Before you get started, you should set up your DLP settings.
 
 ### Endpoint DLP Windows 10/11 and macOS settings
 
-|Setting |Windows 10, 1809 and later, Windows 11  |macOS Catalina 10.15 or later |Notes  |
+|Setting |Windows 10, 1809 and later, Windows 11  |macOS (three latest released versions) |Notes  |
 |---------|---------|---------|---------|
 |File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
 |Restricted apps     |Supported         |Supported         |         |
