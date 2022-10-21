@@ -14,8 +14,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ---
 
 # Assign user access to Microsoft Defender Security Center

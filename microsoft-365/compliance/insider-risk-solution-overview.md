@@ -13,9 +13,10 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - m365solution-insiderrisk
 - m365solution-overview
+- highpri
 ---
 
 # Microsoft Purview insider risk solutions
@@ -40,6 +41,8 @@ Microsoft 365 risk prevention features are designed and built-in to our insider 
 | ![Workplace harassment/people icon.](../media/ir-risk-workplace-harassment.png)| Workplace harassment | ![Supported](../media/check-mark.png) |  |  |  |
 | ![Security violations icon.](../media/ir-risk-security-violations.png)| Security violations |  | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |
 | ![Regulatory compliance violations icon.](../media/ir-risk-regulatory-compliance-violations.png)| Regulatory compliance violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Insider risk solutions
 

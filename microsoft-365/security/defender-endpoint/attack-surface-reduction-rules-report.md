@@ -14,8 +14,10 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
-ms.topic: article
-ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.collection: 
+- m365-security
+- tier2
 ms.date: 08/25/2022
 search.appverid: met150
 ---

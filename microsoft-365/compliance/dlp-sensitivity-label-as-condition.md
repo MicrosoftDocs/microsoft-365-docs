@@ -14,7 +14,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
 - tier1
-- M365-security-compliance
+- purview-compliance
 - SPO_Content
 search.appverid: 
 - MET150
@@ -40,6 +40,8 @@ Sensitivity labels appear as an option in the **Content contains** list.
 > [!IMPORTANT]
 > **Sensitivity Labels** as a condition will not be available if you have selected **Teams chat and channel messages** as a location to apply the DLP policy.
 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Supported items, scenarios, and policy tips
 

@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: null
 ms.collection: 
 - tier1
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
 recommendations: false
-description: "learn about dlp policy conditions and exceptions"
+description: "Learn about dlp policy conditions and exceptions that identify sensitive items that the policy is applied to."
 ---
 
 # DLP policy conditions, exceptions, and actions
@@ -31,6 +31,8 @@ Most conditions and exceptions have one property that supports one or more value
 
 Actions typically require additional properties. For example, when the DLP policy rule redirects a message, you need to specify where the message is redirected to.
 <!-- Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.-->
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Conditions and exceptions for DLP policies
 

@@ -14,7 +14,7 @@ search.appverid:
   - MET150
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: How do I report a suspicious email or file to Microsoft? Report messages, URLs, email attachments and files to Microsoft for analysis. Learn to report spam email and phishing emails.
 ms.subservice: mdo
 ms.service: microsoft-365-security
@@ -47,6 +47,6 @@ Watch this video that shows more information about the unified submissions exper
 |[Submit files for analysis](../intelligence/submission-guide.md)|Admin|Submit email attachments and other suspected files to Microsoft for analysis.|
 
 > [!NOTE]
-> When you report an email entity to Microsoft, a copy is made of everything associated with the email to include it in the reviews. This copy includes the email content, the email headers, and related data about the email routing. Attachments in the message are also included.
+> When you report an email entity to Microsoft, we copy everything associated with the email to include it in our continual algorithm reviews. This copy includes the email content, email headers, and related data about email routing. Any message attachments are also included.
 >
-> Microsoft treats your feedback as your organization's permission to analyze all of the information and to improve the suspected message reporting and review process. Your message is stored securely until it is deleted no later than 30 days after you provided it. Microsoft may read your submitted message and attachments, however, your email is still treated as confidential between you and Microsoft. Your submission is not provided to any other party for the review process.
+> Microsoft treats your feedback as your organization's permission for us to analyze all of the previously described information to fine tune the message hygiene algorithms. We hold your message in our secure audited datacenters in the USA. The submission is deleted no later than 30 days after you provide it to us. Microsoft personnel might read your submitted messages and attachments, which is normally not permitted for email in Microsoft 365. However, your email is still treated as confidential between you and Microsoft, and we will not provide your email or attachments to any other party as part of the review process.

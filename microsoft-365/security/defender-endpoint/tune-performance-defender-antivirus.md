@@ -12,8 +12,10 @@ author: jweston-1
 ms.author: v-jweston
 ms.date: 08/13/2022
 manager: dansimp
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---

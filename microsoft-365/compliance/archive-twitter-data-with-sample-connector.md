@@ -14,8 +14,8 @@ ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection:
-- tier1
-- M365-security-compliance
+- tier3
+- purview-compliance
 - data-connectors
 ms.custom: seo-marvel-apr2020
 ---
@@ -29,6 +29,8 @@ After the Twitter data is imported, you can apply Microsoft Purview features suc
 After Twitter data is imported, you can apply Microsoft Purview features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, Communication compliance, and Microsoft 365 retention policies to the data stored in the mailbox. For example, you can search Twitter data using Content Search or associate the mailbox where the data is stored with a custodian in an eDiscovery (Premium) case. Using a connector to import and archive Twitter data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
 If you’d like to participate in the preview, please reach out to the team at dcfeedback@microsoft.com.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you set up a connector
 
@@ -71,7 +73,7 @@ To deploy the source code for the Twitter connector app:
 
 1. Go to [this GitHub site](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet).
 
-2. Click **Deploy to Azure**.
+2. Select **Deploy to Azure**.
 
 For step-by-step instructions, see [Deploy the connector web service from GitHub to your Azure account](deploy-twitter-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
 

@@ -1,5 +1,5 @@
 ---
-title: Step 1. Use SharePoint Syntex to identify contract files and extract data
+title: Step 1. Use Microsoft Syntex to identify contract files and extract data
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -7,30 +7,30 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: 
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: 
 ms.localizationpriority:  medium
 ROBOTS: 
-description: Learn how to use SharePoint Syntex to identify contract files and extract data by using a Microsoft 365 solution.
+description: Learn how to use Microsoft Syntex to identify contract files and extract data by using a Microsoft 365 solution.
 ---
 
-# Step 1. Use SharePoint Syntex to identify contract files and extract data
+# Step 1. Use Microsoft Syntex to identify contract files and extract data
 
-Your organization needs a way to identify and classify all contract documents from the many files you receive. You also want to be able to quickly view several key elements in each of the contract files identified (for example, *Client*, *Contractor*, and *Fee amount*). You can do this by using [SharePoint Syntex](index.md) to create a document understanding model and applying it to a document library.
+Your organization needs a way to identify and classify all contract documents from the many files you receive. You also want to be able to quickly view several key elements in each of the contract files identified (for example, *Client*, *Contractor*, and *Fee amount*). You can do this by using Syntex] to create an unstructured document processing model and applying it to a document library.
 
 ## Overview of the process
 
-[Document understanding](document-understanding-overview.md) uses artificial intelligence (AI) models to automate classification of files and extraction of information. Document understanding models are also optimal in extracting information from unstructured and semi-structured documents where the information you need isn't contained in tables or forms, such as contracts. 
+[Unstructured document processing models](document-understanding-overview.md) uses artificial intelligence (AI) to automate classification of files and extraction of information. These types of models are also optimal in extracting information from unstructured and semi-structured documents where the information you need isn't contained in tables or forms, such as contracts. 
 
-Document understanding models use Optical Character Recognition (OCR) technology to scan PDFs, images, and TIFF files, both when you train a model with example files and when you run the model against files in a document library.
+Unstructured document processing models use optical character recognition (OCR) technology to scan PDFs, images, and TIFF files, both when you train a model with example files and when you run the model against files in a document library.
 
 1. First, you need to find at least five example files that you can use to "train" the model to search for characteristics that are specific to the content type you're trying to identify (a contract). 
 
-2. Using SharePoint Syntex, create a new document understanding model. Using your example files, you need to [create a classifier](create-a-classifier.md). By training the classifier with your example files, you teach it to search for characteristics that are specific to what you would see in your company's contracts. For example, [create an "explanation"](create-a-classifier.md#create-an-explanation) that searches for specific strings that are in your contracts, such as *Service Agreement*, *Terms of Agreement*, and *Compensation*. You can even train your explanation to look for these strings in specific sections of the document, or located next to other strings. When you think you have trained your classifier with the information it needs, you can test your model on a sample set of example files to see how efficient it is. After testing, if needed you can choose to make changes to your explanations to make them more efficient. 
+2. Using Syntex, create a new unstructured document processing model. Using your example files, you need to [create a classifier](create-a-classifier.md). By training the classifier with your example files, you teach it to search for characteristics that are specific to what you would see in your company's contracts. For example, [create an "explanation"](create-a-classifier.md#create-an-explanation) that searches for specific strings that are in your contracts, such as *Service Agreement*, *Terms of Agreement*, and *Compensation*. You can even train your explanation to look for these strings in specific sections of the document, or located next to other strings. When you think you have trained your classifier with the information it needs, you can test your model on a sample set of example files to see how efficient it is. After testing, if needed you can choose to make changes to your explanations to make them more efficient. 
 
 3. In your model, you can [create an extractor](create-an-extractor.md) to pull out specific pieces of data from each contract. For example, for each contract, the information you're most concerned about is who the client is, the name of the contractor, and the total cost.
 
-4. After you successfully create your model, [apply it to a SharePoint document library](apply-a-model.md). As you upload documents to the document library, your document understanding model will run and will identify and classify all files that match the contracts content type you defined in your model. All files that are classified as contracts will display in a custom library view. The files will also display the values from each contract that you defined in your extractor.
+4. After you successfully create your model, [apply it to a SharePoint document library](apply-a-model.md). As you upload documents to the document library, your unstructured document processing model will run and will identify and classify all files that match the contracts content type you defined in your model. All files that are classified as contracts will display in a custom library view. The files will also display the values from each contract that you defined in your extractor.
 
    ![Contracts in document library.](../media/content-understanding/doc-lib-solution.png)
 
@@ -39,15 +39,15 @@ Document understanding models use Optical Character Recognition (OCR) technology
 ## Steps to create and train your model
 
 > [!NOTE]
-> For these steps, you can use the example files in the [Contracts Management Solution Assets repository](https://github.com/pnp/syntex-samples/tree/main/scenario%20samples/Contracts%20Management). The examples in this repository contain both the document understanding model files and the files used to train the model.
+> For these steps, you can use the example files in the [Contracts Management Solution Assets repository](https://github.com/pnp/syntex-samples/tree/main/scenario%20samples/Contracts%20Management). The examples in this repository contain both the model files and the files used to train the model.
 
 ### Create a Contract model
 
 The first step is to create your Contract model.
 
-1. From the content center, select **New**, and then **Create a model**.
+1. From the content center, select **New** > **Model** > **Teaching method**.
 
-2. On the **New document understanding model** pane, in the **Name** field, type the name of the model. For this contract management solution, you can name the model *Contract*.
+2. On the **Create a model with the teaching method** pane, in the **Name** field, type the name of the model. For this contract management solution, you can name the model *Contract*.
 
 4. Choose **Create**. This creates a home page for the model.</br>
 

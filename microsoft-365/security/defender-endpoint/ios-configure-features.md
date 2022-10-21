@@ -11,8 +11,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -75,7 +76,7 @@ This configuration is available for both the enrolled (MDM) devices as well as u
     - In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
     - Give the policy a name, **Platform > iOS/iPadOS**.
     - Select Microsoft Defender for Endpoint as the target app.
-    - In Settings page, select Use configuration designer and add **WebProtection** as the key and value type as **Boolean**.
+    - In Settings page, select Use configuration designer and add **WebProtection** as the key and value type as **String**.
         - By default, **WebProtection= true**.
         - Admin needs to make **WebProtection = false** to switch off the web protection.
         - Defender will send the heartbeat to the Microsoft 365 Defender portal whenever user opens the app.

@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority : high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - tier1
 - SPO_Content
 search.appverid: 
@@ -40,6 +40,8 @@ Use the following information to help you create retention labels to supplement 
 
 > [!NOTE]
 > Create retention labels from the **Records management** solution rather than **Data lifecycle management** if you need to use retention labels to manage high-value items for business, legal, or regulatory record-keeping requirements. For example, you want to use event-based retention or disposition review. For instructions, see [Use file plan to create and manage retention labels](file-plan-manager.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 

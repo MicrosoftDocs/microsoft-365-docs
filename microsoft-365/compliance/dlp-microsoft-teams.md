@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
 - tier1
-- M365-security-compliance
+- purview-compliance
 search.appverid: 
 - MET150
 description: "Microsoft Teams chats and channels support Data Loss Prevention (DLP) policies."
@@ -39,6 +39,8 @@ You can extend the Teams DLP policy to cover SharePoint Online and OneDrive for 
     - **Share with team (internally)**: You share the channel with another team TeamB in Contoso. That another team may have a different DLP policy, but that doesn’t matter. P1 will apply to everyone in this shared channel, including both TeamA and TeamB users.
     - **Share with team (cross tenant)**: You share the channel with a team TeamF in Fabrikam. Fabrikam may have its own DLP policy, but that doesn’t matter. P1 will apply to everyone in this shared channel, including both TeamA (Contoso) and TeamF (Fabrikam) users.
  
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## DLP Licensing for Microsoft Teams
 
 [Data loss prevention](dlp-learn-about-dlp.md) capabilities include Microsoft Teams chat and channel messages, **including private channel messages** for:

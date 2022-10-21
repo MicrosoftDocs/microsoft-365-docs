@@ -6,11 +6,12 @@ author: alekyaj
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+- m365-security
+- tier2
 ms.custom: migrationguides
 ms.date: 07/19/2022
 ms.subservice: mde

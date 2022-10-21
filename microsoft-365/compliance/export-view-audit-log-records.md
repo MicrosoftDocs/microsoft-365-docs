@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - audit
 search.appverid: 
 - MOE150
@@ -23,6 +23,8 @@ ms.custom: seo-marvel-apr2020
 # Export, configure, and view audit log records
 
 After you search the audit log and download the search results to a CSV file, the file contains a column named **AuditData**, which contains additional information about each event. The data in this column is formatted as a JSON object, which contains multiple properties that are configured as *property:value* pairs separated by commas. You can use the JSON transform feature in the Power Query Editor in Excel to split each property in the JSON object in the **AuditData** column into multiple columns so that each property has its own column. This lets you sort and filter on one or more of these properties, which can help you quickly locate the specific auditing data you're looking for.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Export audit log search results
 

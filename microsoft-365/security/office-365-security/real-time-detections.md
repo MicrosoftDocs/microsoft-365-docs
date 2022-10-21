@@ -6,11 +6,11 @@ ms.author: dansimp
 author: MSFTTracyp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.date: 05/05/2021
 ms.localizationpriority: medium
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: Use Explorer or Real-time detections to investigate and respond to threats efficiently.
 ms.custom: 

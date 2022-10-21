@@ -18,7 +18,7 @@ ms.custom:
 - seo-marvel-apr2020
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - content-search
 ---
 
@@ -26,6 +26,8 @@ ms.collection:
 
 When you use the eDiscovery Export tool to export the results of a Content Search in the Microsoft Purview compliance portal, the tool automatically creates and exports two reports that contain additional information about the exported content. These reports are the Results.csv file and the Manifest.xml file (see the [Frequently asked questions about disabling export reports](#frequently-asked-questions-about-disabling-export-reports) section in this topic for detailed descriptions of these reports). Because these files can be very large, you can speed up the download time and save disk space by preventing these files from being exported. You can do this by changing the Windows Registry on the computer that you use to export the search results. If you want to include the reports at a later time, you can edit the registry setting. 
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Create registry settings to disable the export reports
 
 Perform the following procedure on the computer that you'll use to export the results a content search.

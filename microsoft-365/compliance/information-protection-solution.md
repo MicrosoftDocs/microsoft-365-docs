@@ -18,6 +18,7 @@ ms.collection:
 - m365solution-mip
 - tier1
 - zerotrust-solution
+- highpri
 description: "Prescriptive guidance to deploy Microsoft Purview Information Protection for your organization."
 ---
 
@@ -28,6 +29,8 @@ description: "Prescriptive guidance to deploy Microsoft Purview Information Prot
 Your information protection strategy is driven by your business needs. Many organizations must comply with regulations, laws, and business practices. Additionally, organizations need to protect proprietary information, such as data for specific projects.
 
 Microsoft Purview Information Protection (formerly Microsoft Information Protection) provides a framework, process, and capabilities you can use to accomplish your specific business objectives. 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Microsoft Purview Information Protection framework
 

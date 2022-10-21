@@ -9,10 +9,12 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 10/18/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
+- m365-security
+- tier3
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
@@ -43,14 +45,19 @@ This article is updated frequently to let you know what's new in the latest rele
 
 **What's new**
 
-- Fixes a kernel hang observed on select customer workloads running mdatp version 101.75.43. After RCA this was attributed to a race condition while releasing the ownership of a sensor file descriptor. The race condition was exposed due to a recent product change in the shutdown path. Customers on newer Kernel versions (5.1+) are not impacted by this issue.
+- Fixes a kernel hang observed on select customer workloads running mdatp version 101.75.43. After RCA this was attributed to a race condition while releasing the ownership of a sensor file descriptor. The race condition was exposed due to a recent product change in the shutdown path. Customers on newer Kernel versions (5.1+) are not impacted by this issue. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+	
+**Known issues**
 
-- When upgrading from mdatp version 101.75.43 or 101.78.13, run the following commands before attempting to upgrade to version 101.80.97
+- When upgrading from mdatp version 101.75.43 or 101.78.13, you might encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.80.97. This should prevent the issue from occurring.
 
 ```
 sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
+After executing the above, use your package manager to perform the upgrade. 
+	
+As an alternative to the above, you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
 </br>
 
 <br/><br/>

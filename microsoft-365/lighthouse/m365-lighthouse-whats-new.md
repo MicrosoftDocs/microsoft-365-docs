@@ -4,12 +4,13 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: crimora
+ms.reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -25,6 +26,20 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 
 > [!NOTE]
 > Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
+
+## September 2022
+
+### Fully automated setup of Microsoft Defender for Business
+
+We've added a fully automated step to the default baseline that helps you set up your customer tenants with Microsoft Defender for Business. This step automatically provisions your tenant for Microsoft Defender for Business and automatically onboards Intune-enrolled devices to Microsoft Defender for Business.
+
+### Capability to filter the Multifactor Authentication (MFA) list to show relevant user accounts
+
+The Multifactor Authentication page now supports filtering the user account list by account type (such as by Admin, Member, or Guest). You can also exclude other accounts from the list, like service accounts or emergency access accounts. To access this functionality, go to **Users** > **Multifactor authentication**, select a tenant from the list to open the tenant details pane, and then select the **Users not registered for MFA** tab. These filtering and exclusion capabilities help you focus on relevant user accounts. 
+
+### Capability to act on security incidents and alerts
+
+You can now act on the incidents and alerts shown on the **Device security** > **Incidents and alerts** page. The actions currently supported include assigning the incident or alert to yourself or resolving the incident or alert. 
 
 ## August 2022
 

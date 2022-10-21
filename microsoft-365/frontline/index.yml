@@ -17,6 +17,7 @@ metadata:
   ms.date: 04/07/2022 #Required; mm/dd/yyyy format.
   ms.collection:
     - m365-frontline
+    - highpri
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -32,9 +33,9 @@ highlightedContent:
       itemType: get-started
       url: flw-choose-scenarios.md
     # Card
-    - title: Try Microsoft 365 for frontline workers (start a free trial)
+    - title: Technical planning guide for deploying frontline solutions
       itemType: whats-new
-      url: flw-trial.md
+      url: flw-technical-planning-guide-deployment.md
 
 # productDirectory section (optional)
 productDirectory:

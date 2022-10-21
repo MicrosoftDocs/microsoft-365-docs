@@ -12,8 +12,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection:
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -33,11 +35,9 @@ search.appverid: met150
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 > [!NOTE]
 >**Before you begin**:
-You first need to [create an app](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro?view=o365-worldwide).
-
+You first need to [create an app](/microsoft-365/security/defender-endpoint/apis-intro).
 
 In this section you will learn to create a Power BI report on top of Defender for Endpoint APIs.
 
@@ -55,55 +55,58 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API, 
 
 4. Copy the below and paste it in the editor:
 
-```
-    let
-        AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti' | limit 20",
-
-        HuntingUrl = "https://api.securitycenter.microsoft.com/api/advancedqueries",
-
-        Response = Json.Document(Web.Contents(HuntingUrl, [Query=[key=AdvancedHuntingQuery]])),
-
-        TypeMap = #table(
-            { "Type", "PowerBiType" },
-            {
-                { "Double",   Double.Type },
-                { "Int64",    Int64.Type },
-                { "Int32",    Int32.Type },
-                { "Int16",    Int16.Type },
-                { "UInt64",   Number.Type },
-                { "UInt32",   Number.Type },
-                { "UInt16",   Number.Type },
-                { "Byte",     Byte.Type },
-                { "Single",   Single.Type },
-                { "Decimal",  Decimal.Type },
-                { "TimeSpan", Duration.Type },
-                { "DateTime", DateTimeZone.Type },
-                { "String",   Text.Type },
-                { "Boolean",  Logical.Type },
-                { "SByte",    Logical.Type },
-                { "Guid",     Text.Type }
-            }),
-
-        Schema = Table.FromRecords(Response[Schema]),
-        TypedSchema = Table.Join(Table.SelectColumns(Schema, {"Name", "Type"}), {"Type"}, TypeMap , {"Type"}),
-        Results = Response[Results],
-        Rows = Table.FromRecords(Results, Schema[Name]),
-        Table = Table.TransformColumnTypes(Rows, Table.ToList(TypedSchema, (c) => {c{0}, c{2}}))
-
-    in Table
-```
+   ```
+       let
+           AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti' | limit 20",
+   
+           HuntingUrl = "https://api.securitycenter.microsoft.com/api/advancedqueries",
+   
+           Response = Json.Document(Web.Contents(HuntingUrl, [Query=[key=AdvancedHuntingQuery]])),
+   
+           TypeMap = #table(
+               { "Type", "PowerBiType" },
+               {
+                   { "Double",   Double.Type },
+                   { "Int64",    Int64.Type },
+                   { "Int32",    Int32.Type },
+                   { "Int16",    Int16.Type },
+                   { "UInt64",   Number.Type },
+                   { "UInt32",   Number.Type },
+                   { "UInt16",   Number.Type },
+                   { "Byte",     Byte.Type },
+                   { "Single",   Single.Type },
+                   { "Decimal",  Decimal.Type },
+                   { "TimeSpan", Duration.Type },
+                   { "DateTime", DateTimeZone.Type },
+                   { "String",   Text.Type },
+                   { "Boolean",  Logical.Type },
+                   { "SByte",    Logical.Type },
+                   { "Guid",     Text.Type }
+               }),
+   
+           Schema = Table.FromRecords(Response[Schema]),
+           TypedSchema = Table.Join(Table.SelectColumns(Schema, {"Name", "Type"}), {"Type"}, TypeMap , {"Type"}),
+           Results = Response[Results],
+           Rows = Table.FromRecords(Results, Schema[Name]),
+           Table = Table.TransformColumnTypes(Rows, Table.ToList(TypedSchema, (c) => {c{0}, c{2}}))
+   
+       in Table
+   ```
 
 5. Select **Done**.
 
 6. Select **Edit Credentials**.
+
    :::image type="content" source="images/power-bi-edit-credentials.png" alt-text="The Edit Credentials menu item" lightbox="images/power-bi-edit-credentials.png":::
 
 7. Select **Organizational account** \> **Sign in**.
+
    :::image type="content" source="images/power-bi-set-credentials-organizational.png" alt-text="The Sign in option in the Organizational account menu item" lightbox="images/power-bi-set-credentials-organizational.png":::
 
 8. Enter your credentials and wait to be signed in.
 
-9. Select **Connect**. </br>
+9. Select **Connect**.
+
    :::image type="content" source="images/power-bi-set-credentials-organizational-cont.png" alt-text="The sign-in confirmation message in the Organizational account menu item" lightbox="images/power-bi-set-credentials-organizational-cont.png":::
 
 Now the results of your query will appear as a table and you can start to build visualizations on top of it!
@@ -112,7 +115,7 @@ You can duplicate this table, rename it, and edit the Advanced Hunting query ins
 
 ## Connect Power BI to OData APIs
 
-The only difference from the previous example is the query inside the editor. Follow steps 1-3 above. 
+The only difference from the previous example is the query inside the editor. Follow steps 1-3 above.
 
 At step 4, instead of the code in that example, copy the code below and paste it in the editor to pull all **Machine Actions** from your organization:
 
@@ -139,6 +142,6 @@ View the Microsoft Defender for Endpoint Power BI report samples. For more infor
 
 ## Related topics
 
-- [Defender for Endpoint APIs](apis-intro.md) 
-- [Advanced Hunting API](run-advanced-query-api.md) 
+- [Defender for Endpoint APIs](apis-intro.md)
+- [Advanced Hunting API](run-advanced-query-api.md)
 - [Using OData Queries](exposed-apis-odata-samples.md)

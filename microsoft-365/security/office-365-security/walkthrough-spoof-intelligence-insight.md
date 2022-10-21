@@ -15,7 +15,7 @@ search.appverid:
   - MOE150
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 description: Admins can learn how to use the spoof intelligence policy and the spoof intelligence insight to allow or block detected spoofed senders.
 ms.custom:
 - seo-marvel-apr2020

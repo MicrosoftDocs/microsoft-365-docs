@@ -7,10 +7,10 @@ author: MSFTTracyp
 manager: dansimp
 ms.date: 04/23/2018
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
   - o365_security_incident_response
-  - M365-security-compliance
+  - m365-security
 
 ms.localizationpriority: medium
 search.appverid:

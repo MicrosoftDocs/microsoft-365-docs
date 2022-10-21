@@ -9,7 +9,8 @@ audience: ITPro
 ms.topic: article
 search.appverid: MET150
 ms.service: exchange-online
-ms.collection: M365-security-compliance
+ms.collection: 
+- purview-compliance
 - tier1
 ms.localizationpriority: medium
 description: "Document Fingerprinting makes it easier for you to protect information by identifying standard forms that are used by your organization. This topic describes the concepts behind Document Fingerprinting and how to create one by using PowerShell."
@@ -18,6 +19,8 @@ description: "Document Fingerprinting makes it easier for you to protect informa
 # Document Fingerprinting
 
 Information workers in your organization handle many kinds of sensitive information during a typical day. In the Microsoft Purview compliance portal, Document Fingerprinting makes it easier for you to protect this information by identifying standard forms that are used throughout your organization. This topic describes the concepts behind Document Fingerprinting and how to create one by using PowerShell.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Basic scenario for Document Fingerprinting
 
@@ -46,6 +49,9 @@ The following example shows what happens if you create a document fingerprint ba
 The patent template contains the blank fields "Patent title," "Inventors," and "Description" and descriptions for each of those fields—that's the word pattern. When you upload the original patent template, it's in one of the supported file types and in plain text. DLP converts this word pattern into a document fingerprint, which is a small Unicode XML file containing a unique hash value representing the original text, and the fingerprint is saved as a data classification in Active Directory. (As a security measure, the original document itself isn't stored on the service; only the hash value is stored, and the original document can't be reconstructed from the hash value.) The patent fingerprint then becomes a sensitive information type that you can associate with a DLP policy. After you associate the fingerprint with a DLP policy, DLP detects any outbound emails containing documents that match the patent fingerprint and deals with them according to your organization's policy.
 
 For example, you might want to set up a DLP policy that prevents regular employees from sending outgoing messages containing patents. DLP will use the patent fingerprint to detect patents and block those emails. Alternatively, you might want to let your legal department to be able to send patents to other organizations because it has a business need for doing so. You can allow specific departments to send sensitive information by creating exceptions for those departments in your DLP policy, or you can allow them to override a policy tip with a business justification.
+
+> [!IMPORTANT]
+> Text in embedded documents is not considered for fingerprint creation. You should provide sample template files that don't contain embedded documents.
 
 ### Supported file types
 

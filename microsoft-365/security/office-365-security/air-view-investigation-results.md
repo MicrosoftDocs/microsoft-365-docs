@@ -7,13 +7,13 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
 - MOE150
 ms.collection: 
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: During and after an automated investigation in Microsoft 365, you can view the results and key findings.
 ms.date: 01/29/2021

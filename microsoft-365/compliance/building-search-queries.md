@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid: 
 - MOE150
@@ -25,6 +25,8 @@ ms.custom: seo-marvel-mar2020
 When configuring the search query when creating a [collection](collections-overview.md) in an eDiscovery (Premium) case, you can use keywords to find specific content and conditions to narrow the scope of the search to return items that are most relevant to your legal investigation.
 
 ![Use keywords and conditions to narrow the results of a search.](../media/SearchQueryBox.png)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Keyword searches
 

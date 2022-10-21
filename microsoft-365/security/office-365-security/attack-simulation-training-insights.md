@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
 description: Admins can learn how Attack simulation training in the Microsoft 365 Defender portal affects users and can gain insights from simulation and training outcomes.

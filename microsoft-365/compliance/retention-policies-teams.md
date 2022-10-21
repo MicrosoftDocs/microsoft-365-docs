@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - tier1
 - SPO_Content
 search.appverid: 
@@ -37,12 +37,16 @@ For other workloads, see:
 - [Learn about retention for Yammer](retention-policies-yammer.md)
 - [Learn about retention for Exchange](retention-policies-exchange.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## What's included for retention and deletion
 
 > [!NOTE]
 > Retention policies support [shared channels](/MicrosoftTeams/shared-channels). Any shared channels inherit retention settings from the parent channel.
+> 
+> Retention policies also support messages posted with the [chat with yourself](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) feature.
 
-Teams chats messages, channel messages, and private channel messages can be deleted by using retention policies for Teams, and in addition to the text in the messages, the following items can be retained for compliance reasons: Embedded images, tables, hypertext links, links to other Teams messages and files, and [card content](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chat messages and private channel messages include all the names of the people in the conversation, and channel messages include the team name and the message title (if supplied). 
+Teams chats messages, channel messages, and private channel messages can be deleted by using retention policies for Teams, and in addition to the text in the messages, the following items can be retained for compliance reasons: [Video clips](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c), embedded images, tables, hypertext links, links to other Teams messages and files, and [card content](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chat messages and private channel messages include all the names of the people in the conversation, and channel messages include the team name and the message title (if supplied). 
 
 Code snippets, recorded voice memos from the Teams mobile client, thumbnails, announcement images, and reactions from others in the form of emoticons aren't retained when you use retention policies for Teams.
 

@@ -14,8 +14,10 @@ ms.localizationpriority: medium
 ms.date: 09/19/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
 ---
 
@@ -47,7 +49,7 @@ These instructions apply to the new unified solution and installer (MSI) package
 >[!NOTE]
 >Make sure the machines you run the script on is not blocking the execution of the script. The recommended execution policy setting for PowerShell is Allsigned. This requires importing the script's signing certificate into the Local Computer Trusted Publishers store if the script is running as SYSTEM on the endpoint.
 
-To facilitate upgrades when Microsoft Endpoint Configuration Manager is not yet available or updated to perform the automated upgrade, you can use this [upgrade script](https://github.com/microsoft/mdefordownlevelserver). Download it by selection the "Code" button and downloading the .zip file, then extracting install.ps1. It can help automate the following required steps:
+To facilitate upgrades when Microsoft Endpoint Configuration Manager is not yet available or updated to perform the automated upgrade, you can use this [upgrade script](https://github.com/microsoft/mdefordownlevelserver/archive/refs/heads/main.zip). Download it by selection the "Code" button and downloading the .zip file, then extracting install.ps1. It can help automate the following required steps:
 
 1. Remove the OMS workspace for Microsoft Defender for Endpoint (OPTIONAL).
 2. Remove System Center Endpoint Protection (SCEP) client if installed.

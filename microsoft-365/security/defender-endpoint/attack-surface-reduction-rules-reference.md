@@ -14,9 +14,11 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
-ms.topic: article
-ms.collection: M365-security-compliance
-ms.date: 08/10/2022
+ms.topic: conceptual
+ms.collection: 
+- m365-security
+- tier2
+- ms.date: 10/07/2022
 search.appverid: met150
 ---
 
@@ -41,6 +43,34 @@ This article provides information about Microsoft Defender for Endpoint attack s
 - [ASR rule to GUID matrix](#asr-rule-to-guid-matrix)
 - [ASR rule modes](#asr-rule-modes)
 - [Per-rule-descriptions](#per-rule-descriptions)
+
+## Attack surface reduction rules by type
+
+ASR rules are categorized as one of two types:
+
+1. **Standard protection rules**: Are the minimum set of rules which Microsoft recommends you always enable, while you are evaluating the impact and configuration needs of the other ASR rules. These rules typically have minimal-to-no noticeable impact on the end user.
+1. **Other rules**: Rules which require some measure of following the documented deployment steps [Plan > Test (audit) > Enable (block/warn modes)], as documented in the [Attack surface reduction (ASR) rules deployment guide](attack-surface-reduction-rules-deployment.md)
+
+For the easiest method to enable the standard protection rules, see: [Simplified standard protection option](attack-surface-reduction-rules-report.md#simplified-standard-protection-option).
+
+| ASR rule name: | Standard protection rule? | Other rule? |
+|:---|:---|:---|
+| Block abuse of exploited vulnerable signed drivers| Yes | |
+| Block Adobe Reader from creating child processes | | Yes |
+| Block all Office applications from creating child processes | | Yes |
+| Block credential stealing from the Windows local security authority subsystem (lsass.exe) | Yes | |
+| Block executable content from email client and webmail | | Yes |
+| Block executable files from running unless they meet a prevalence, age, or trusted list criterion | | Yes |
+| Block execution of potentially obfuscated scripts | | Yes |
+| Block JavaScript or VBScript from launching downloaded executable content | | Yes |
+| Block Office applications from creating executable content | | Yes |
+| Block Office applications from injecting code into other processes | | Yes |
+| Block Office communication application from creating child processes | | Yes |
+| Block persistence through WMI event subscription | Yes | |
+| Block process creations originating from PSExec and WMI commands | | Yes |
+| Block untrusted and unsigned processes that run from USB | | Yes |
+| Block Win32 API calls from Office macros | | Yes |
+| Use advanced protection against ransomware | | Yes |
 
 ## ASR rules supported operating systems
 
@@ -81,24 +111,24 @@ The following table lists the supported operating systems for rules that are cur
 
 Links to information about configuration management system versions referenced in this table are listed below this table.
 
-|Rule name | Intune | Microsoft Endpoint Manager |Microsoft Endpoint Configuration Manager |Group Policy<sup>[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
-|---|:---:|:---:|:---:|:---:|:---:|
-|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y  | Y MEM OMA-URI |   | Y  |  Y  |
-|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y |   |  | Y  | Y  |
-|[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y |   |Y <br><br> CB 1710 | Y  | Y  |
-|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y  |   | Y <br><br>CB 1802 | Y  | Y  |
-|[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | Y |  |Y <br><br> CB 1710 | Y | Y  |
-|[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y |   | Y <br><br> CB 1802 |  Y |  Y |
-|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | Y |   |  Y  <br><br> CB 1710 | Y  | Y  |
-|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y |   | Y <br><br> CB 1710 | Y  | Y  |
-|[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | Y |  |Y <br><br> CB 1710 | Y  | Y  |
-|[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes) | Y |  | Y <br><br> CB 1710 | Y  | Y  |
-|[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | Y |  |Y <br><br> CB 1710 | Y  | Y  |
-|[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) |  |  |  |Y   | Y  |
-|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y |   |   |  Y | Y  |
-|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y |   |Y <br><br> CB 1802  | Y  | Y  |
-|[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y |   | Y <br><br> CB 1710  | Y  |  Y |
-|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y |   | Y <br><br> CB 1802 | Y  | Y  |
+|Rule name | Microsoft Intune | Microsoft Endpoint Configuration Manager |Group Policy<sup>[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
+|---|:---:|:---:|:---:|:---:|
+|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y |   | Y  |  Y  |
+|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y |  | Y  | Y  |
+|[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y |Y <br><br> CB 1710 | Y  | Y  |
+|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y  | Y <br><br>CB 1802 | Y  | Y  |
+|[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | Y |Y <br><br> CB 1710 | Y | Y  |
+|[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y | Y <br><br> CB 1802 |  Y |  Y |
+|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | Y |Y  <br><br> CB 1710 | Y  | Y  |
+|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y |Y <br><br> CB 1710 | Y  | Y  |
+|[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | Y |Y <br><br> CB 1710 | Y  | Y  |
+|[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes) | Y |Y <br><br> CB 1710 | Y  | Y  |
+|[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | Y |Y <br><br> CB 1710 | Y  | Y  |
+|[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) |Y  |  |Y   | Y  |
+|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y |   |  Y | Y  |
+|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y |Y <br><br> CB 1802  | Y  | Y  |
+|[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y |Y <br><br> CB 1710  | Y  |  Y |
+|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y |Y <br><br> CB 1802 | Y  | Y  |
 
   (<a id="fn1">1</a>) You can configure attack surface reduction rules on a per-rule basis by using any rule's GUID.
 

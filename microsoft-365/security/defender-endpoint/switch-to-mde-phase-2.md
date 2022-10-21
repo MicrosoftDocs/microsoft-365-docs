@@ -14,12 +14,13 @@ ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-migratetomdatp
   - m365solution-mcafeemigrate
   - m365solution-symantecmigrate
   - highpri
-ms.topic: article
+  - tier1
+ms.topic: conceptual
 ms.custom: migrationguides
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150

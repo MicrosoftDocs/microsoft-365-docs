@@ -14,8 +14,8 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 description: Learn about Microsoft Purview Message Encryption that enables protected email communication with people inside and outside your organization.
 ms.custom: 
 - seo-marvel-apr2020
@@ -28,6 +28,8 @@ ms.custom:
 Microsoft Purview Message Encryption allows organizations to share protected email with anyone on any device. Users can exchange protected messages with other Microsoft 365 organizations, as well as third-parties using Outlook.com, Gmail, and other email services.
 
 Follow the steps below to ensure that Microsoft Purview Message Encryption is available in your organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Verify that Azure Rights Management is active
 
