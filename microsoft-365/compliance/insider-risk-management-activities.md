@@ -140,7 +140,7 @@ Alerts generated from policies scoped to only activities that include [priority 
 This tab opens the summary of risk factors for the user's alert activity. Risk factors can help you determine how risky this user's activity is during your review. The risk factors include summaries for:
 
 - **Top exfiltration activities**: Displays exfiltration activities with the highest number or events for the alert.
-- **Cumulative exfiltration activities**: Displays events associated with cumulative exfiltration activity detectoion (CEAD).
+- **Cumulative exfiltration activities**: Displays events associated with cumulative exfiltration activity detection (CEAD).
 - **Sequences of activities**: Displays the detected activities associated with risk sequences.
 - **Unusual activity for this user**: Displays activities for the user that are considered unusual and a departure from their usual activities.
 - **Priority content**: Displays activities associated with priority content.
