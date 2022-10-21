@@ -41,6 +41,9 @@ Users in Microsoft Teams can set their status to Away or Do not Disturb, and inc
 
 Users can initiate the process themselves, and no admin involvement is required to enable the feature.
 
+> [!NOTE]
+> Skype for Business Online was retired on July 31, 2021. For organizations using Skype for Business, status notes and delegation mention behaviors depend on the user's co-existence mode. <br> Skype for Business doesn't enforce a character limit on status notes. However, Microsoft Teams will only display the first 280 characters of a note set from Skype for Business. An ellipses (...) at the end of a note indicates that it's been truncated. Skype for Business doesn't support expiry times for notes. <br> [Learn how to upgrade to Microsoft Teams](/microsoftteams/upgrade-start-here).
+
 ## Delegation use scenario in Healthcare
 
 **Usage example without setting delegates**
@@ -50,32 +53,3 @@ Dr. Franco Piccio is on call at the radiology department. He receives an urgent 
 **Usage example with setting delegates**
 
 Dr. Franco Piccio is on call at the radiology department. He receives an urgent personal call and has to step away for the next couple of hours. He asks one of his peers in the radiology department, Dr. Lena Ehrle to cover for him while he's gone. He changes his custom status message to say "I am unavailable for the next few hours. Please contact @DrEhrle for any emergencies."  Others on the team realize the delegation happened as they're attempting to contact Dr. Piccio, so they now know to contact Dr. Ehrle in the meantime. Little to no confusion ensues with a patient's care.
-
-## Impact of co-existence modes on user status in the Teams client
-
-Status notes and delegation mention behaviors depend partly on a user's co-existence mode. This matrix shows the possibilities:
-
-> [!NOTE]
-> Skype for Business (SfB) has been retired. [Learn how to upgrade to Microsoft Teams](/microsoftteams/upgrade-start-here).
-
-|Co-Existence Mode | Expected Behavior|
-|---|---|
-|TeamsOnly |Users can set a note only from Teams. <br> User's Teams note is visible in Teams & SfB. |
-|Islands | User's note set in Teams visible only in Teams. <br> User's note set in SfB visible only in SfB |
-|Skype for Business (SfB) modes | Users can set a note only from SfB. <br> User's SfB note is visible in SfB & Teams.  |
-
-A user can only set a note in Teams if their mode is TeamsOnly or Islands.  
-
-### Displaying notes set in Skype for Business
-  
-There's no visual indication that a note was set from Skype for Business.
-
-Skype for Business doesn't enforce a character limit on status notes. However, Microsoft Teams will only display the first 280 characters of a note set from Skype for Business. An ellipses (...) at the end of a note indicates that it's been truncated.
-  
-Skype for Business doesn't support expiry times for notes.
-
-Migration of notes from Skype for Business to Teams isn't supported when a user is upgraded to TeamsOnly mode.
-
-## Related topics
-
-[Learn more about Coexistence with Skype for Business](/microsoftteams/coexistence-chat-calls-presence).
