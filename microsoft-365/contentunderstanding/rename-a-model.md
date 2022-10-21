@@ -6,29 +6,31 @@ manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how and why to rename a document understanding model in Microsoft Syntex.
+description: Learn how and why to rename a model in Microsoft Syntex.
 ---
 
 # Rename a model in Microsoft Syntex
 
-At some point, you might want to rename a document understanding model. A common example is when you create an initial draft of a model, you might not have given a lot of thought as to the final name (for example, you might have named it “AlexWilburModel1”). As you come closer to finalizing the model and putting it to use, you realize that a more proper name would be “Contract Renewals,” and you want to rename it.  
+<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
+
+At some point, you might want to rename a model. A common example is when you create an initial draft of a model, you might not have given a lot of thought as to the final name (for example, you might have named it “AlexWilburModel1”). As you come closer to finalizing the model and putting it to use, you realize that a more proper name would be “Contract Renewals,” and you want to rename it.  
 
 Another example is when your organization makes a decision to refer to a process or document type by a different name. For example, after you create your model and are ready to apply it, your organization might mandate that all “Contracts” will now formally be referred to as “Agreements.” If needed, you can choose to rename your model from “Contract Renewals” to “Agreement Renewals.”
 
 > [!IMPORTANT]
-> You can only rename a document understanding model if it has not been applied to a document library. 
+> You can only rename a model if it has not been applied to a document library. 
 
 Renaming a model also renames the [content type](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) that is associated with the model.
 
 ## Rename a model
 
-Follow these steps to rename a document understanding model.
+Follow these steps to rename a model.
 
 1. From the content center, select **Models** to see your models list.
 
@@ -49,14 +51,6 @@ Follow these steps to rename a document understanding model.
 5. Select **Rename**.
 
 ## See also
-[Create a classifier](create-a-classifier.md)
 
-[Create an extractor](create-an-extractor.md)
+[Delete a model](delete-a-model.md)
 
-[Rename an extractor](rename-an-extractor.md)
-
-[Document Understanding overview](document-understanding-overview.md)
-
-[Explanation types](explanation-types-overview.md)
-
-[Apply a model](apply-a-model.md) 
