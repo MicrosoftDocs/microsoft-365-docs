@@ -370,7 +370,7 @@
 
 - name: Microsoft app guidance and scenarios
   items: 
-    - name: Purchase and add apps to Microsoft Endpoint Manager
+    - name: Purchase and add apps in your managed environment
       items: 
       - name: Overview
         href: apps-guide-overview.md

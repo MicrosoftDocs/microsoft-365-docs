@@ -1,11 +1,11 @@
 ---
-title: "Overview of app types available for a managed environment"
+title: "Overview of app types available for managed environments"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Understand the app types that are available in a managed environment.
+description: Understand the app types that are available for managed environments.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,7 +14,7 @@ ms.custom:
 keywords:
 ---
 
-# App types available for a managed environment
+# App types for managed environments
 
 There are a wide variety of apps available that can be either acquired or created. By understanding and grouping apps based on type, you'll have a better understanding of apps that can be managed. This overview provide a view of app types based on how apps are acquired, created, used, installed, and run.
 
@@ -72,26 +72,28 @@ You can create LOB apps that are supported by Intune for each Android, iOS/iPadO
 
 ## Apps that are built-in
 
+Instead of using store app types, we recommend that you use the built-in app type. By using the built-in app type, you have the additional flexibility to edit and delete Microsoft 365 apps.
+
 | App type | Description |
 |---|---|
-| Built-in iOS/iPadOS app | description |
-| Built-in Android app | description |
+| Built-in iOS/iPadOS app | Built-in iOS/iPadOS apps are specific apps that have been designed to work with Microsoft Intune.   |
+| Built-in Android app | Built-in Android app are specific apps that have been designed to work with Microsoft Intune. |
 
 
 ## Apps on the web
 
 | App type | Description |
 |---|---|
-| iOS/iPadOS web clip | description |
-| Windows web link | description |
-| Web link | Cross platform web apps |
+| iOS/iPadOS web clip | An iOS/iPadOS web clip is a shortcut that you assign to to iOS users or devices. The shortcut contains a URL that opens a browser. |
+| Windows web link | A Windows web link is a shortcut that you assign to to Windows users or devices. The shortcut contains a URL that opens a browser. |
+| Web link | A Web link is a shortcut that you assign to users or devices running iOS, Android, or Windows. This link is allows you to reach the same web location from multiple platforms (cross platform web app). |
 
 ## Specific Microsoft apps
 
 | App type | Description |
 |---|---|
-| Microsoft 365 apps for Windows 10 and later | description |
-| Microsoft 365 apps for macOS | description |
+| Microsoft 365 apps for Windows 10 and later | This app type allow you to choose one or more Microsoft 365 Apps for managed devices running Windows 10 or later. Users must have an account and license to use these apps. |
+| Microsoft 365 apps for macOS | This app type allow you to choose one or more Microsoft 365 Apps for managed devices running macOS. Users must have an account and license to use these apps. |
 | Microsoft Edge for Windows 10 and later | description |
 | Microsoft Edge for macOS| description |
 | Microsoft Defender for Endpoint for macOS | description |
