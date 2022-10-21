@@ -88,7 +88,21 @@ The previous article [Design a DLP policy](dlp-policy-design.md) introduced you 
 
 There are so many configuration options in the policy creation flow that it's not possible to cover every, or even most configurations, so we present several of the most common DLP policy scenarios that will give you hands on experience across a broad range of configurations.
 
-### Scenario 1 Exchange
+### Scenario 1 Block emails with credit card numbers
+
+> [!IMPORTANT]
+> This is a hypothetical scenario with hypothetical values. It's only for illustrative purposes. You should substitute your own sensitive information types, sensitivity labels, distribution groups and users.
+
+#### Scenario 1 pre-requisites and assumptions
+
+This scenario uses the *Highly confidential* sensitivity label, so it requires that you have created and published sensitivity labels. To learn more, see:
+- [Learn about sensitivity labels](sensitivity-labels.md)
+- [Get started with sensitivity labels](get-started-with-sensitivity-labels.md)
+- [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md)
+
+This procedure uses a hypothetical distribution group *Finance team* at Contoso.com and a hypothetical SMTP recipient *adele.vance@fabrikam.com*.
+
+#### Scenario 1 policy intent statement and mapping
 
 *We need to block emails to all recipients that contain credit card numbers or that have the  ‘highly confidential’ sensitivity label applied except if the email is sent from someone on the finance team to adele.vance@fabrikam.com. We want to notify the compliance admin every time an email is blocked and notify the user who sent the item and no one can be allowed to override the block. Track all occurrences of this high risk event in the log.*
 
@@ -102,12 +116,76 @@ There are so many configuration options in the policy creation flow that it's no
 |"...and..."| **Condition for match**: add a second second condition to the NOT group|
 |"...to adele.vance@fabrikam.com..." | **Condition for match**:  Sender is|
 |"...Notify..."|**User notifications**: enabled|
-|"...the compliance admin every time an email is blocked and notify the user who sent the item..."| **Notify users in Office 365 service with a policy tip**: selected </br> - **Notify these people**: selected </br> **The person who sent, shared, or modified the content**: selected </br> - **Send the email tto these additional people**: add the email address of the compliance administrator|
+|"...the compliance admin every time an email is blocked and notify the user who sent the item..."| **Notify users in Office 365 service with a policy tip**: selected </br> - **Notify these people**: selected </br> **The person who sent, shared, or modified the content**: selected </br> - **Send the email to these additional people**: add the email address of the compliance administrator|
 |"...and no one can be allowed to override the block...| **Allow overrides from M365 Services**: not selected|
 |"...Track all occurrences of this high risk event in the log."| - **Use this severity level in admin alerts and reports**: high </br> - **Send an alert to admins when a rule match occurs**: selected </br> - **Send alert every time an activity matches the rule**: selected |
 
 
+#### Steps to create policy for scenario 1
 
+> [!IMPORTANT]
+> For the purposes of this policy creation procedure, you'll accept the default include/exclude values and leave the policy turned off. You'll be changing these when you deploy the policy.
+
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
+
+1. In the Microsoft Purview compliance portal \> left navigation \> **Solutions** \> **Data loss prevention** \> **Policies** \> **+ Create policy**.
+
+1. Select **Custom** from the **Categories** list.
+ 
+1. Select **Custom** from the **Templates** list.
+ 
+1. Give the policy a name. 
+
+> [!IMPORTANT]
+> Policies cannot be renamed.
+
+5. Fill in a description. You can use the policy intent statement here.
+
+1. Select **Next**.
+
+1. Set the **Exchange email** location status to **On**. Set all the other location status to **Off**.
+
+1. Select **Next**.
+
+1. Accept the default values for **Include** = **All** and **Exclude** = **None**.
+ 
+1. The **Create or customize advanced DLP rules** option should already be selected.
+ 
+1. Select **Next**.
+ 
+1. Select **Create rule**. Name the rule and provide a description.
+
+1. Select **Add condition** > **Content contains** > **Add** > **Sensitive info types** > **Credit Card Number**. Choose **Add**.
+ 
+1. Select **Add condition** > **Sensitivity labels** > **Highly confidential**. Choose **Add**.
+ 
+1. Select **Add group** > **AND** > **NOT** > **Add condition**.
+
+1. Select **Sender is a member of** > **Add or Remove Distribution Groups** > **Finance Team**.
+
+1. Choose **Add condition** > **AND** > **Recipient is**.  Add *adele.vance@fabrikam.com* and select **Add**.
+ 
+1. Select **Add and action** > **Restrict access or encrypt the content in Microsoft 365 locations** > **Restrict access or encrypt the content in Microsoft 365 locations** > **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams file.** > **Block everyone**.
+ 
+1. Set **User notifications** to **On**.
+ 
+1. Select **Notify users in Office 365 service with a policy tip** > **Notify these people** > **The person who sent, shared, or modified the content**.
+ 
+1. Select **Send the email to these additional people** and add the email address of the compliance administrator.
+ 
+1. Make sure that **Allow override from M365 services** *isn't* selected.
+ 
+1. Set **Use this severity level in admin alerts and reports** to **high**.
+ 
+1. Set **Send an alert to admins when a rule match occurs** to **On**.
+ 
+1. Select **Send alert every time an activity matches the rule**.
+ 
+1. Choose **Save**.
+ 
+1. Choose **Next** > **Keep it off**.
+
+<!--
 ### Scenario 2
 
 5)	Scenario 2 email - “Contoso needs to block all emails that contain a password protected OR a zip document file extension is zip/7z except it the recipient is in  the contoso.com domain OR the fabrikam domain OR the sender is a member of the Contoso HR group. Introduces nested NOT with and OR
@@ -146,7 +224,7 @@ three axes to deployment
     1. block with override
     1. block
 
-
+-->
 
 
 control objectives
