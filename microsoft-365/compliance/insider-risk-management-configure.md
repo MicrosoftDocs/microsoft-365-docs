@@ -193,7 +193,7 @@ See the [Set up a connector to import healthcare data](import-healthcare-data.md
 
 Insider risk management supports using DLP policies to help identify the intentional or accidental exposure of sensitive information to unwanted parties for High severity level DLP alerts. When configuring an insider risk management policy with any of the **Data leaks** templates, you have the option to assign a specific DLP policy to the policy for these types of alerts.
 
-DLP policies help identify users to activate risk scoring in insider risk management for high severity DLP alerts for sensitive information and are an important part of configuring full risk management coverage in your organization. For more information about insider risk management and DLP policy integration and planning considerations, see [Insider risk management policies](insider-risk-management-policies.md#general-data-leaks).
+DLP policies help identify users to activate risk scoring in insider risk management for high severity DLP alerts for sensitive information and are an important part of configuring full risk management coverage in your organization. For more information about insider risk management and DLP policy integration and planning considerations, see [Insider risk management policies](insider-risk-management-policies.md#data-leaks).
 
 > [!IMPORTANT]
 >Make sure you've completed the following:
@@ -231,9 +231,9 @@ You can also decide to boost risk scores when a user is in a priority user group
 
 - **Frequency of accessing high sensitivity content**: This includes content with sensitive information types, MIP labels, and content configured as priority content as compared to others in the organization.
 
-- **Level-from-top hierarchy in the organization**: Use if you have organizational hierarchy configured in Azure Active Directory and Azure Blast radius is available for your organization. To learn more about Azure Blast Radius, see [Investigate risky users](../defender-cloud-apps/tutorial-ueba).  
+- **Level-from-top hierarchy in the organization**: Use if you have organizational hierarchy configured in Azure Active Directory and Azure Blast radius is available for your organization. To learn more about Azure Blast Radius, see [Investigate risky users](/defender-cloud-apps/tutorial-ueba).  
 
-- **Cumulative reports**: Use if you have organizational hierarchy configured in Azure Active Directory and Azure Blast radius is available for your organization. To learn more about Azure Blast Radius, see [Investigate risky users](../defender-cloud-apps/tutorial-ueba).
+- **Cumulative reports**: Use if you have organizational hierarchy configured in Azure Active Directory and Azure Blast radius is available for your organization. To learn more about Azure Blast Radius, see [Investigate risky users](/defender-cloud-apps/tutorial-ueba).
 
 - **Azure AD out-of-box role memberships**: Use if a user is a PHIU and they have an alert. You will see the following: 
 
