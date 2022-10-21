@@ -20,7 +20,8 @@ ms.date: 10/20/2022
 
 # Find Microsoft 365 for business phone support numbers by country or region
 
-Billing support for Microsoft 365 for business products and services is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday through Friday.\
+In most countries or regions, billing support for Microsoft 365 for business products and services is provided in English from 9 AM-5 PM, Monday through Friday.
+
 Technical support is provided in English 24 hours a day, 7 days a week.
 
 Admins, have your account details ready when you call.
