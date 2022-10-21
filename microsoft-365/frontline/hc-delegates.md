@@ -42,7 +42,7 @@ Users in Microsoft Teams can set their status to Away or Do not Disturb, and inc
 Users can initiate the process themselves, and no admin involvement is required to enable the feature.
 
 > [!NOTE]
-> Skype for Business Online was retired on July 31, 2021. For organizations using Skype for Business, status notes and delegation mention behaviors depend on the user's co-existence mode. <br> Skype for Business doesn't enforce a character limit on status notes. However, Microsoft Teams will only display the first 280 characters of a note set from Skype for Business. An ellipses (...) at the end of a note indicates that it's been truncated. Skype for Business doesn't support expiry times for notes. <br> [Learn how to upgrade to Microsoft Teams](/microsoftteams/upgrade-start-here).
+> Status notes and delegation mention behaviors are also available in Skype for Business, but their availability depends on the user's co-existence mode. Skype for Business doesn't enforce a character limit on status notes. However, Microsoft Teams will only display the first 280 characters of a note set from Skype for Business. An ellipses (...) at the end of a note indicates that it's been truncated. Skype for Business doesn't support expiry times for notes. <br>Skype for Business Online was retired on July 31, 2021. [Learn how to upgrade to Microsoft Teams](/microsoftteams/upgrade-start-here).
 
 ## Delegation use scenario in Healthcare
 
