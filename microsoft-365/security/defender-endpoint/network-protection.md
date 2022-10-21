@@ -358,7 +358,7 @@ Verify whether network protection is enabled on a local device by using Registry
    - 1 = On (enabled)
    - 2 = Audit mode
 
-For additional information, see: [Turn on netowrk protection](enable-network-protection.md)
+For additional information, see: [Turn on network protection](enable-network-protection.md)
 
 ##### Network protection suggestion
 
