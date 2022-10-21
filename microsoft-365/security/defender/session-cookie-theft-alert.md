@@ -26,14 +26,16 @@ ms.reviewer: evaldm, isco
 ---
 
 # Alert grading for session cookie theft alert 
-
-**("Stolen session cookie was used”, “Authentication request from AiTM-related phishing page”)**
-
-
+ 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft 365 Defender
+
+This article contains information about alert grading for Session Cookie theft alerts in Microsoft 365 Defender:
+
+- **Stolen session cookie was used**
+- **Authentication request from AiTM-related phishing page**
 
 Threat actors have started using innovative ways to infiltrate their target environments. Taking inspiration from Adversary-in-the-Middle attacks, this type of attack uses phishing to steal credentials or their sign-in session in order to carry out malicious actions. BEC campaigns are an excellent example.
 
