@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.topic: article
+ms.topic: conceptual
 ms.custom: nextgen
 ms.date: 08/02/2022
 ms.reviewer: 

@@ -6,8 +6,7 @@
  :targets 
    {
      :counts {
-              ;;:spelling 10
-              ;;:grammar 3
+              ;;:correctness 13
               ;;:total 15 ;; absolute flag count but i don't know the difference between this and issues
               ;;:issues 15 ;; coming from the platform, will need to be tested.
               ;;:correctness 13 ;; combined spelling and grammar
@@ -15,8 +14,7 @@
      :scores {
               ;;:terminology 100
               :qualityscore 80 ;; Confirmed with Hugo that you just comment out the single score and leave the structure in place
-              ;;:spelling 40
-              ;;:correctness 40 ;; Replace spelling?
+              ;;:correctness 40
              }
    }
  
@@ -53,7 +51,7 @@ For more information about the exception criteria and exception process, see [Mi
  
 Select the scorecard links for each article to review the Acrolinx feedback on grammar, spelling, punctuation, writing style, and terminology:
 
-| Article | Score | Issues | Correctness | Scorecard | Processed |
+| Article | Score | Issues | Correctness<br>score | Scorecard | Processed |
 | ------- | ----- | ------ | ------ | --------- | --------- |
 "
 
