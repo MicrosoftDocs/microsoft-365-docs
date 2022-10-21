@@ -91,8 +91,10 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Create documents
+          - text: Overview of content assembly
             url: content-assembly.md
+          - text: Create modern templates
+            url: content-assembly-modern-template.md
           - text: Use with Power Automate
             url: automate-document-generation.md
 
