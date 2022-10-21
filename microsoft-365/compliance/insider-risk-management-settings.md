@@ -432,7 +432,7 @@ Complete the following steps to enable the risk score boosters:
 > [!IMPORTANT]
 > If the PHUI booster is enabled, then the name of the priority user group that the user is a member of is displayed on the [Alerts](insider-risk-management-activities.md#alert-dashboard) page, even when anonymization is turned on. 
 
-### Enable cumulative exfiltration detection (preview)
+### Enable cumulative exfiltration detection
 
 To enable cumulative exfiltration activities detection (CEAD), use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. (You must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group). 
 
