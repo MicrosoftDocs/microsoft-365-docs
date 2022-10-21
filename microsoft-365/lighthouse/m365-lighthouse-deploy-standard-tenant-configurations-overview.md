@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: shcallaw, kywirpel
+ms.reviewer: shcallaw, kywirpel
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
