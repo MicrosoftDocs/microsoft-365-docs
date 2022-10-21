@@ -71,7 +71,7 @@ While navigating the device timeline, you can search and filter for specific eve
 
 ## Flag an event
 
-1. Find the event that you want to flag
+1. Find the event that you want to flag.
 
 2. Click the flag icon in the Flag column. 
 
