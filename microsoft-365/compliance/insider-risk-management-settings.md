@@ -33,7 +33,7 @@ Insider risk management settings apply to all insider risk management policies, 
 - [Policy timeframes](#policy-timeframes)
 - [Intelligent detections](#intelligent-detections)
 - [Export alerts](#export-alerts)
-- [Priority user groups (preview)](#priority-user-groups-preview)
+- [Priority user groups](#priority-user-groups)
 - [Priority physical assets (preview)](#priority-physical-assets-preview)
 - [Power Automate flows (preview)](#power-automate-flows-preview)
 - [Microsoft Teams (preview)](#microsoft-teams-preview)
@@ -67,17 +67,21 @@ Signals are collected and alerts are triggered by policies when users perform ac
 - **Global settings indicators**: Indicators enabled in global settings for insider risk management define both the indicators available for configuration in policies and the types of user activity signals collected by insider risk management. For example, if a user copies data to personal cloud storage services or portable storage devices and these indicators are selected only in global settings, this activity will be available for review in the Activity explorer. However, since this activity wasn't defined in an insider risk management policy, the activity won't be assigned a risk score or generate an alert.
 - **Policy indicators**: Indicators included in insider risk management policies are used to determine a risk score for an in-scope user. Policy indicators are enabled from indicators defined in global settings and are only activated after a triggering event occurs for a user.  Some examples of policy indicators are when a user copies data to personal cloud storage services or portable storage devices, if a user account is removed from Azure Active Directory, or if a user shares internal files and folders with unauthorized external parties.
 
-Certain policy indicators and sequences may also be used for customizing triggering events for specific policy templates. When configured in the policy wizard for the *General data leaks* or *Data leaks by priority users* templates, these indicators or sequences allow you more flexibility and customization for your policies and when users are in-scope for a policy. Additionally, you can define individual activity thresholds for these triggering indicators for more fine-grained control in a policy.
+Certain policy indicators and sequences may also be used for customizing triggering events for specific policy templates. When configured in the policy wizard for the *Data leaks* or *Data leaks by priority users* templates, these indicators or sequences allow you more flexibility and customization for your policies and when users are in-scope for a policy. Additionally, you can define individual activity thresholds for these triggering indicators for more fine-grained control in a policy.
 
 Policy indicators are segmented into the following areas. You can choose the indicators to activate and customize indicator event limits for each indicator level when creating an insider risk policy:
 
 - **Office indicators**: These include policy indicators for SharePoint sites, Microsoft Teams, and email messaging.
 - **Device indicators**: These include policy indicators for activity such as sharing files over the network or with devices. Indicators include activities involving all file types, excluding executable (.exe) and dynamic link library (.dll) file activity. If you select *Device indicators*, activity is processed for devices with Windows 10 Build 1809 or higher and macOS (three latest released versions) devices. For both Windows and macOS devices, you must first onboard devices to the compliance portal. Device indicators also include browser signal detection to help your organization detect and act on exfiltration signals for non-executable files viewed, copied, shared, or printed in Microsoft Edge and Google Chrome. For more information on configuring Windows devices for integration with insider risk, see the following [Enable device indicators and onboard Windows devices](insider-risk-management-settings.md#OnboardDevices) section in this article. For more information on configuring macOS devices for integration with insider risk, see the following Enable device indicators and onboard macOS devices section in this article. For more information about browser signal detection, see [Learn about and configure insider risk management browser signal detection](insider-risk-management-browser-support.md).
-- **Security policy violation indicator (preview)**: These include indicators from Microsoft Defender for Endpoint related to unapproved or malicious software installation or bypassing security controls. To receive alerts in insider risk management, you must have an active Defender for Endpoint license and insider risk integration enabled. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
-- **Health record access indicators (preview)**: These include policy indicators for patient medical record access. For example, attempted access to patient medical records in your electronic medical records (EMR) system logs can be shared with insider risk management healthcare policies. To receive these types of alerts in insider risk management, you must have a healthcare-specific data connector and the HR data connector configured.
-- **Physical access indicators (preview)**: These include policy indicators for physical access to sensitive assets. For example, attempted access to a restricted area in your physical badging system logs can be shared with insider risk management policies. To receive these types of alerts in insider risk management, you must have priority physical assets enabled in insider risk management and the [Physical badging data connector](import-physical-badging-data.md) configured. To learn more about configuring physical access, see the [Priority physical access section](#priority-physical-assets-preview) in this article.
-- **Microsoft Defender for Cloud Apps indicators (preview)**: These include policy indicators from shared alerts from Defender for Cloud Apps. Automatically enabled anomaly detection in Defender for Cloud Apps immediately starts detecting and collating results, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network. To include these activities in insider risk management policy alerts, select one or more indicators in this section. To learn more about Defender for Cloud Apps analytics and anomaly detection, see [Get behavioral analytics and anomaly detection](/cloud-app-security/anomaly-detection-policy).
-- **Risk score boosters**: These include raising the risk score for activity that is above user's usual activity for a day or for users with previous cases resolved as a policy violation. Enabling risk score boosters increase risk scores and the likelihood of alerts for these types of activities. For activity that is above user's usual activity for a day, scores are boosted if the detected activity deviates from the user's typical behavior. For users with previous cases resolved as a policy violation, scores are boosted if a user had more than one case previously resolved as a confirmed policy violation. Risk score boosters can only be selected if one or more indicators are selected.
+- **Microsoft Defender for Endpoint indicators (preview)**: These include indicators from Microsoft Defender for Endpoint related to unapproved or malicious software installation or bypassing security controls. To receive alerts in insider risk management, you must have an active Defender for Endpoint license and insider risk integration enabled. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
+- **Health record access indicators**: These include policy indicators for patient medical record access. For example, attempted access to patient medical records in your electronic medical records (EMR) system logs can be shared with insider risk management healthcare policies. To receive these types of alerts in insider risk management, you must have a healthcare-specific data connector and the HR data connector configured.
+- **Physical access indicators**: These include policy indicators for physical access to sensitive assets. For example, attempted access to a restricted area in your physical badging system logs can be shared with insider risk management policies. To receive these types of alerts in insider risk management, you must have priority physical assets enabled in insider risk management and the [Physical badging data connector](import-physical-badging-data.md) configured. To learn more about configuring physical access, see the [Priority physical access section](#priority-physical-assets-preview) in this article.
+- **Microsoft Defender for Cloud Apps indicators**: These include policy indicators from shared alerts from Defender for Cloud Apps. Automatically enabled anomaly detection in Defender for Cloud Apps immediately starts detecting and collating results, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network. To include these activities in insider risk management policy alerts, select one or more indicators in this section. To learn more about Defender for Cloud Apps analytics and anomaly detection, see [Get behavioral analytics and anomaly detection](/cloud-app-security/anomaly-detection-policy).
+- **Risk score boosters**: These include raising the risk score for activity that is above user's usual activity for a day or for users with previous cases resolved as a policy violation. Enabling risk score boosters increase risk scores and the likelihood of alerts for these types of activities. For activity that is above user's usual activity for a day, scores are boosted if the detected activity deviates from the user's typical behavior. For users with previous cases resolved as a policy violation, scores are boosted if a user had more than one case previously resolved as a confirmed policy violation. Risk score boosters can only be selected if one or more indicators are selected. User can be detected as a member of a priority user group or potential high impact users (PHIU) based on access to sensitive labeled information and sensitive information types compared to the rest of your organization, as well as Azure Active Directory (AD) hierarchy and if they are a member of an Azure AD role. Risk scores can be boosted when a user is in a priority user group. Only one booster is applied for a user who is in a priority user group and is a potential high impact user. When you select the PHIU booster setting, information is shared with Azure Blast Radius. Azure Blast Radius may not be available for all tenants. To learn more about Azure Blast Radius, see [Investigate risky users](../defender-cloud-apps/tutorial-ueba). To set up a priority user group, see [Create a priority user group](#create-a-priority-user-group). To enable the priority user group and potential high impact users (PHIU) boosters, see [Enable risk score boosters](#enable-risk-score-boosters).
+- **Cumulative exfiltration detection (preview)**: These include analyses for users peer groups based on cumulative exfiltration activities detection (CEAD). When a user shares or emails data outside of the organization at a higher rate than the average user, insider risk management policies can be enabled to detect exfiltraton anomalies as compared to similar user groups and roles. For example, if a user is in a sales role and communicates regularly with customers and partners outside of the organization, their externally facing activity will likely be much higher than the organizational average. However, user activity in this role may look very similar to other user groups in similar roles. Define similar user groups together, for example users who access the same SharePoint Online sites, users on the same team, users with specific roles that span across departments, and users who have similar job titles or role designations that are configured in Azure AD. To learn about enabling Cumulative exfiltration detection, see [Get started with insider risk management settings](insider-risk-management-settings.md#enable-cumulative-exfiltration-activities-detection).
+
+- > [!NOTE]
+- > Peer groups are defined based on organizational hierarchy, access to shared resources, and job titles. If you enable Cumulative exfiltration detection, your organization is agreeing to sharing Azure Active Directory data, including organizational hierarchy and job titles. If your organization does not use Azure Active Directory to maintain this information, then detection accuracy may be limited. 
 
 In some cases, you may want to limit the insider risk policy indicators that are applied to insider risk policies in your organization. You can turn off the policy indicators for specific areas by disabling them from all insider risk policies in global settings. Triggering events can only be modified for policies created from the *General data leaks* or *Data leaks by priority users* templates. Policies created from all other templates don't have customizable triggering indicators or events.
 
@@ -352,7 +356,7 @@ The following fields and values are exported for insider risk management alerts 
 - UserType
 - UserKey
 
-## Priority user groups (preview)
+## Priority user groups
 
 Users in your organization may have different levels of risk depending on their position, level of access to sensitive information, or risk history. Prioritizing the examination and scoring of the activities of these users can help alert you to potential risks that may have higher consequences for your organization. Priority user groups in insider risk management help define the users in your organization that need closer inspection and more sensitive risk scoring. Coupled with the *Security policy violations by priority users* and *Data leaks by priority users* policy templates, users added to a priority user group have an increased likelihood of insider risk alerts and alerts with higher severity levels.
 
@@ -364,13 +368,13 @@ For example, you need to protect against data leaks for a highly confidential pr
 
 ### Create a priority user group
 
-To create a new priority user group, you'll use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. To create a priority user group, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group.
+To create a new priority user group, use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. (You must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group).
 
 Complete the following steps to create a priority user group:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups (preview)** page.
-3. On the **Priority user groups (preview)** page, select **Create priority user group** to start the group creation wizard.
+2. Select the **Priority user groups** page.
+3. On the **Priority user groups** page, select **Create priority user group** to start the group creation wizard.
 4. On the **Name and describe** page, complete the following fields:
     - **Name (required)**: Enter a friendly name for the priority user group. You can't change the name of the priority user group after you complete the wizard.
     - **Description (optional)**: Enter a description for the priority user group.
@@ -384,12 +388,12 @@ Complete the following steps to create a priority user group:
 
 ### Update a priority user group
 
-To update an existing priority user group, you'll use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. To update a priority user group, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group.
+To update an existing priority user group, use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. (You must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group).
 
 Complete the following steps to edit a priority user group:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups (preview)** page.
+2. Select the **Priority user groups** page.
 3. Select the priority user group you want to edit and select **Edit group**.
 4. On the **Name and describe** page, update the Description field if needed. You can't update the name of the priority user group. Select **Next** to continue.
 5. On the **Choose members** page, add new members to the group using the **Choose members** control. To remove a user from the group, select the 'X' next to the user you wish to remove. Select **Next** to continue.
@@ -400,7 +404,7 @@ Complete the following steps to edit a priority user group:
 
 ### Delete a priority user group
 
-To delete an existing priority user group, you'll use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. To delete a priority user group, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group.
+To delete an existing priority user group, use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. (You must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group).
 
 > [!IMPORTANT]
 > Deleting a priority user group will remove it from any active policy to which it is assigned. If you delete a priority user group that is assigned to an active policy, the policy will not contain any in-scope users and will effectively be idle and will not create alerts.
@@ -408,9 +412,35 @@ To delete an existing priority user group, you'll use setting controls in the **
 Complete the following steps to delete a priority user group:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups (preview)** page.
+2. Select the **Priority user groups** page.
 3. Select the priority user group you want to edit and select **Delete** from the dashboard menu.
 4. On the **Delete** dialog, select **Yes** to delete the priority user group or select **Cancel** to return to the dashboard.
+
+### Enable risk score boosters
+To enable the potential high impact user (PHUI) and priority user group boosters, use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. (You must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group). 
+
+> [!NOTE]
+> You can choose to boost risk scores when a user is in a priority user group. If a user is detected as both a PHIU and a member of a priority user group, they will only receive the booster once. 
+
+Complete the following steps to enable the risk score boosters:
+
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
+2. Select the **Policy indicators** page.
+3. In the **Risk score boosters** section, check the options that you want to boost risk scores for policy alerts.
+4. Click **Save** to save the changes.
+
+> [!IMPORTANT]
+> If the PHUI booster is enabled, then the name of the priority user group that the user is a member of is displayed on the [Alerts](insider-risk-management-activities.md#alert-dashboard) page, even when anonymization is turned on. 
+
+### Enable cumulative exfiltration activities detection
+
+To enable cumulative exfiltration activities detection (CEAD), use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. (You must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group). 
+
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
+2. Select the **Policy indicators** page.
+3. In the **Cumulative exfiltration detection** section, check the options that you want to detect cumulative exfiltration activities for.
+4. Click **Save** to save the changes.
+
 
 ## Priority physical assets (preview)
 

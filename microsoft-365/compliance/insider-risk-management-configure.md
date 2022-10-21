@@ -178,7 +178,7 @@ The Microsoft 365 HR connector is required when using the following policy templ
 
 See the [Set up a connector to import HR data](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization. After you've configured the HR connector, return to these configuration steps.
 
-### Configure  a healthcare-specific data connector
+### Configure a healthcare-specific data connector
 
 Insider risk management supports importing user and log data imported from 3rd-party on existing electronic medical record (EMR) systems. The Microsoft Healthcare and Epic data connectors allow you to pull in activity data from your EMR system with CSV files, including improper patient record access, suspicious volume activities, and editing and export activities. This data helps drive alert indicators in insider risk management policies and is an important part of configuring full risk management coverage in your organization.
 
@@ -203,21 +203,62 @@ DLP policies help identify users to activate risk scoring in insider risk manage
 
 A DLP policy is optional when using the following policy templates:
 
-- General data leaks
+- Data leaks
 - Data leaks by priority users
 
 See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) article  for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these configuration steps.
 
-### Configure priority user groups
+### Configure priority user groups, potential high impact users (PHIUs), and peer groups
 
-Insider risk management includes support for assigning priority user groups to policies to help identity unique risk activities for user with critical positions, high levels of data and network access, or a past history of risk behavior. Creating a priority user group and assigning users to the group help scope policies to the unique circumstances presented by these users.
+Insider risk management includes support for assigning potential high impact users (PHIUs), peer groups, and priority user groups to policies to help identity unique risk activities for user with critical positions, high levels of data and network access, or a past history of potentially risky behavior.
+
+See the [Getting started with insider risk management settings](insider-risk-management-settings.md#priority-user-groups) article for step-by-step configuration guidance. 
+
+#### Priority user groups
+
+You can create a priority user group and assign users to the group to help you scope policies specific to the unique circumstances presented by these identified users.
 
 A priority user group is required when using the following policy templates:
 
 - Security policy violations by priority users
 - Data leaks by priority users
 
-See the [Getting started with insider risk management settings](insider-risk-management-settings.md#priority-user-groups-preview) article for step-by-step guidance to create a priority user group. After you've configured a priority user group, return to these configuration steps.
+#### Potential high impact users (PHIU)
+
+You can enable the potential high impact user (PHIU) score booster in Insider risk management settings. Once configured, users identified as having a potentially high impact will receive a risk score booster. Identified PHIUs are more likely to receive [alerts](insider-risk-management-activities.md#alert-dashboard), so analysts and investigators can review and prioritize these users' risk activities.
+
+You can also decide to boost risk scores when a user is in a priority user group. Consider the following factors when determining if a user is a PHIU:
+
+- **Frequency of accessing high sensitivity content**: This includes content with sensitive information types, MIP labels, and content configured as priority content as compared to others in the organization.
+
+- **Level-from-top hierarchy in the organization**: Use if you have organizational hierarchy configured in Azure Active Directory and Azure Blast radius is available for your organization. To learn more about Azure Blast Radius, see [Investigate risky users](../defender-cloud-apps/tutorial-ueba).  
+
+- **Cumulative reports**: Use if you have organizational hierarchy configured in Azure Active Directory and Azure Blast radius is available for your organization. To learn more about Azure Blast Radius, see [Investigate risky users](../defender-cloud-apps/tutorial-ueba).
+
+- **Azure AD out-of-box role memberships**: Use if a user is a PHIU and they have an alert. You will see the following: 
+
+   - If an alert is generated for a user that has been identified as a PHIU, then the alert is displayed in the **Risk factors**”** column in the Alerts dashboard. You will then be able to filter for this risk factor. 
+
+    - For an alert or case for a user that has been identified as a PHIU, then the alert will be highlighted in the **User details** section in the alert. Additional details about the reasons the user has been identified as a PHIU are displayed. 
+
+    - If a user receives a priority user group booster, the actual names of the priority user groups that they are a member of will be displayed. 
+
+#### Peer groups
+
+Peers groups are based on common users who access same SharePoint sites. Peer groups are defined for a user, based on the following criteria:
+
+- **Similar org**: A user's peers, a user's manager and their peers, a user's reports, a user's reports' reports, and a user's teammates. Microsoft Purview requires users defined in peer groups are also configured in Azure Active Directory for your organization.
+
+- **Similar job title**: Users with a combination of organizational distance and similar job titles, and users with the same job title. purview requires that users' job titles are also configured in Azure Active Directory for your organization. 
+
+> [!NOTE]
+> If you do not have Azure Active Directory configured for organizational structure and job titles, then Purview will identify peers based on common SharePoint sites accessed by a user.
+
+### Cumulative exfiltration detection (preview)
+
+Insider risk management's Cumulative exfiltration detection analyzes peer group exfiltration activity performed by a user over the past 30 days and then compares that activity to the organization and peer group norms. Purview assigns a risk score if a user is anomalous compared to organization and peer group norms. 
+
+You enable cumulative exfiltration activity detection (CEAD) and select options to detect when a user’s exfiltration activities exceed peer group norms. The riskiest cumulative exfiltration categories will be highlighted in the risk factors alert. To learn about enabling cumulative exfiltration detection, see [Get started with insider risk management settings](insider-risk-management-settings.md#enable-cumulative-exfiltration-activities-detection).
 
 ### Configure Physical badging connector (optional)
 

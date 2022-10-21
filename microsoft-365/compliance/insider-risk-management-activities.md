@@ -38,7 +38,7 @@ After examining activities for a user, investigators can dismiss individual acti
 
 You can get started by selecting **Manage reports** in the **Investigate user activity** section on the insider risk management **Overview** page. To view activities for a user, first select **Create user activity report** and complete the following fields in the **New user activity report** pane:
 
-- **User**: Search for a user by name or email address
+- **User**: Search for a user by name or email address.
 - **Start date**: Use the calendar control to select the start date for user activities.
 - **End date**: Use the calendar control to select the end date for user activities. The end date selected must be greater than two days after the selected start date and no greater than 90 days from the selected start date.
 New reports typically take up to 10 hours before they're ready for review. When the report is ready, you'll see *Report ready* in the **Status** column on the User activity report page. Select the user to view the detailed report:
@@ -140,7 +140,7 @@ Alerts generated from policies scoped to only activities that include [priority 
 This tab opens the summary of risk factors for the user's alert activity. Risk factors can help you determine how risky this user's activity is during your review. The risk factors include summaries for:
 
 - **Top exfiltration activities**: Displays exfiltration activities with the highest number or events for the alert.
-- **Cumulative exfiltration activities**: Displays events associated with cumulative exfiltration activities.
+- **Cumulative exfiltration activities**: Displays events associated with cumulative exfiltration activity detectoion (CEAD).
 - **Sequences of activities**: Displays the detected activities associated with risk sequences.
 - **Unusual activity for this user**: Displays activities for the user that are considered unusual and a departure from their usual activities.
 - **Priority content**: Displays activities associated with priority content.
@@ -223,7 +223,7 @@ When reviewing activities in the Activity explorer, investigators and analysts c
 
 When selecting an activity's events from the activity timeline, the number of activities displayed in the explorer might not match the number of activity events listed in the timeline. Examples of why this difference may occur:
 
-- **Cumulative exfiltration detection**: Cumulative exfiltration detection analyzes event logs, but applies a model that includes de-duplicating similar activities to compute cumulative exfiltration risk. Additionally, there may also be a difference in the number of activities displayed in the Activity explorer if you have made changes to your existing policy or settings. For example, if you modify allowed/unallowed domains or add new file type exclusions after a policy has been created and activity matches have occurred, the cumulative exfiltration detection activities will differ from the results before the policy or settings changes. Cumulative exfiltration detection activity totals are based on the policy and settings configuration at the time of computation and don't include activities prior to the policy and settings changes
+- **Cumulative exfiltration detection**: Cumulative exfiltration detection analyzes event logs, but applies a model that includes de-duplicating similar activities to compute cumulative exfiltration risk. Additionally, there may also be a difference in the number of activities displayed in the Activity explorer if you have made changes to your existing policy or settings. For example, if you modify allowed/unallowed domains or add new file type exclusions after a policy has been created and activity matches have occurred, the cumulative exfiltration activities detection (CEAD) will differ from the results before the policy or settings changes. Cumulative exfiltration activity detection (CEAD) totals are based on the policy and settings configuration at the time of computation and don't include activities prior to the policy and settings changes
 - **Emails to external recipients**: Activity for emails sent to external recipients is assigned a risk score based on the number of emails sent, which may not match the activity event logs.
 
 ![Insider risk management activity explorer details.](../media/insider-risk-activity-explorer-details.png)
