@@ -237,9 +237,9 @@ You can also decide to boost risk scores when a user is in a priority user group
 
 - **Azure AD out-of-box role memberships**: Use if a user is a potential high impact user (PHIU) and they have an alert. You will see the following: 
 
-   - If an alert is generated for a user that has been identified as a PHIU, then the alert is displayed in the **Risk factors**”** column in the Alerts dashboard. You will then be able to filter for this risk factor. 
+   - If an alert is generated for a user that has been identified as a potential high impact user (PHIU), then the alert is displayed in the **Risk factors**”** column in the Alerts dashboard. You will then be able to filter for this risk factor. 
 
-    - For an alert or case for a user that has been identified as a PHIU, then the alert will be highlighted in the **User details** section in the alert. Additional details about the reasons the user has been identified as a PHIU are displayed. 
+    - For an alert or case for a user that has been identified as a potential high impact user (PHIU), then the alert will be highlighted in the **User details** section in the alert. Additional details about the reasons the user has been identified as a PHIU are displayed. 
 
     - If a user receives a priority user group booster, the actual names of the priority user groups that they are a member of will be displayed. 
 
