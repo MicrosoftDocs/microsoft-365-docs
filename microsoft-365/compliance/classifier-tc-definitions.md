@@ -105,7 +105,7 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 
 - **Profanity**: Detects a specific category of offensive language text items that contain expressions that embarrass most people. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
 
-- **Regulatory collusion (preview)**: Detects    messages that may violate regulatory anti-collusion requirements such as an attempted concealment of sensitive information. This classifier can help customers manage  regulatory compliance obligations such as the Sherman Antitrust Act, Securities Exchange Act 1933  , Securities Exchange Act of 1934, Investment Advisers Act of 1940, Federal Commission Act, and Robinson-Patman Act. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
+- **Regulatory collusion (preview)**: Detects    messages that may violate regulatory anti-collusion requirements such as an attempted concealment of sensitive information. This classifier can help customers manage  regulatory compliance obligations such as the Sherman Antitrust Act, Securities Exchange Act 1933, Securities Exchange Act of 1934, Investment Advisers Act of 1940, Federal Commission Act, and Robinson-Patman Act. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
 > [!IMPORTANT] 
 > While in preview, this classifier may capture a large volume of bulk sender/newsletter content due to a known issue. While they're in preview, you can address large volumes of bulk sender/newsletter content by adding the **Message is not sent to any of these domains condition** with a list of domains to exclude. 
 
