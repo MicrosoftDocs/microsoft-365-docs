@@ -31,29 +31,29 @@ search.appverid: met150
 > [!NOTE]
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-The Defender for Endpoint device timeline helps you research and investigate anomalous behavior on your devices more quickly. You can explore specific events and endpoints to review potential attacks in your organization. You can review specific times of each event, set flags to follow up for potentially connected events, and filter to specific date rantes. 
+The Defender for Endpoint device timeline helps you research and investigate anomalous behavior on your devices more quickly. You can explore specific events and endpoints to review potential attacks in your organization. You can review specific times of each event, set flags to follow up for potentially connected events, and filter to specific date ranges. 
 
 - Custom time range picker:
 
-    :::image type="content" source="images/custom-time-range.png" alt-text="Image of the custom time range.":::
+    :::image type="content" source="images/custom-time-range.png" alt-text="Screenshot of the custom time range.":::
 
 - Process tree experience – event side panel:
 
-    :::image type="content" source="images/event-side-panel.png" alt-text="Image of the event side panel." lightbox="images/event-side-panel.png":::
+    :::image type="content" source="images/event-side-panel.png" alt-text="Screenshot of the event side panel." lightbox="images/event-side-panel.png":::
 
 - All MITRE techniques are shown when there’s more than 1 related technique:
 
-    :::image type="content" source="images/all-mitre-techniques.png" alt-text="Image of all MITRE techniques. " lightbox="images/all-mitre-techniques.png":::
+    :::image type="content" source="images/all-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques. " lightbox="images/all-mitre-techniques.png":::
 
 - Timeline events are linked to the new user page:
 
-    :::image type="content" source="images/timeline events-new user page.png" alt-text="Image of timeline events are linked to the new user page." lightbox="images/timeline events-new user page.png":::
+    :::image type="content" source="images/timeline events-new user page.png" alt-text="Screenshot of timeline events linked to the new user page." lightbox="images/timeline events-new user page.png":::
 
-    :::image type="content" source="images/timeline events-new user page-2.png" alt-text="Image of timeline events are linked to the new user page 2." lightbox="images/timeline events-new user page-2.png":::
+    :::image type="content" source="images/timeline events-new user page-2.png" alt-text="Screenshot of timeline events linked to the new user page 2." lightbox="images/timeline events-new user page-2.png":::
 
 - Defined filters are now visible at the top of the timeline: 
 
-    :::image type="content" source="images/defined-filters.png" alt-text="Image of defined filters." lightbox="images/defined-filters.png":::
+    :::image type="content" source="images/defined-filters.png" alt-text="Screenshot of defined filters." lightbox="images/defined-filters.png":::
 
 ## Timeline event flags
 
@@ -84,4 +84,4 @@ While navigating the device timeline, you can search and filter for specific eve
 
 You can apply additional filters by clicking on the time bar. This will only show events prior to the flagged event.  
 
-:::image type="content" source="images/device-flag-filter.png" alt-text="The device timeline flag with the filter switched on" lightbox="images/device-flag-filter.png":::
+:::image type="content" source="images/device-flag-filter.png" alt-text="Screenshot that shows the device timeline flag with the filter switched on." lightbox="images/device-flag-filter.png":::
