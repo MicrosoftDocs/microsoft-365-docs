@@ -17,7 +17,7 @@ description: Learn about data retention for Microsoft Whiteboard in Azure and On
 
 # Manage data for Microsoft Whiteboard
 
-Whiteboard content is stored in OneDrive for Business and Azure. OneDrive for Business is the default storage for all new whiteboards. Whiteboards that were originally created in Azure, and whiteboards that were initiated on a Surface Hub or a Microsoft Teams Room device, are stored in Azure.
+Whiteboard content is stored in OneDrive for Business and Azure. OneDrive for Business is the default storage for all new whiteboards. Whiteboards that were originally created in Azure, and whiteboards that were initiated on a Surface Hub or a Microsoft Teams Rooms device, are stored in Azure.
 
 In order to manage data, you must first ensure that Whiteboard is enabled for your organization. For more information, see [Manage access to Whiteboard](manage-whiteboard-access-organizations.md).
 

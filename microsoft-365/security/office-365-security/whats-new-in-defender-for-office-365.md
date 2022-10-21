@@ -47,6 +47,8 @@ For more information on what's new with other Microsoft Defender security produc
 - **[Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md):**
   - With **allow expiry management** (currently in private preview), if Microsoft has not learned from the allow, Microsoft will automatically extend the expiry time of allows, which are going to expire soon, by 30 days to prevent legitimate email from going to junk or quarantine again.
   - Customers in the government cloud environments will now be able to create allow and block entries for URLs and attachments in the Tenant Allow/Block List using the admin URL and email attachment submissions. The data submitted through the submissions experience will not leave the customer tenant, thus satisfying the data residency commitments for government cloud clients.
+- **Enhancement in URL click alerts:**
+  - With the new lookback scenario, the "A potentially malicious URL click was detected" alert will now include any clicks during the _past 48 hours_ (for emails) from the time the malicious URL verdict is identified. 
 
 ## September 2022
 
@@ -69,6 +71,7 @@ For more information on what's new with other Microsoft Defender security produc
 - Redirection is enabled by default and impacts all users of the Tenant.
 - Global Administrators and Security Administrators can turn on or off redirection in the Microsoft 365 Defender portal by navigating to **Settings** > **Email & collaboration** > **Portal redirection** and switch the redirection toggle.
 - **Built-in protection**: A profile that enables a base level of Safe Links and Safe Attachments protection that's on by default for all Defender for Office 365 customers. To learn more about this new policy and order of precedence, see [Preset security policies](preset-security-policies.md) and to learn about the specific Safe Links and Safe Attachment controls set, see [Safe Attachments settings](recommended-settings-for-eop-and-office365.md#safe-attachments-settings) and [Safe Links settings](recommended-settings-for-eop-and-office365.md#safe-links-settings).
+- **Bulk Complaint Level** is now available in the EmailEvents table in Advanced Hunting with numeric BCL values from 0 to 9. A higher BCL score indicates that bulk message is more likely to generate complaints and is more likely to be spam.
 
 ## July 2022
 
