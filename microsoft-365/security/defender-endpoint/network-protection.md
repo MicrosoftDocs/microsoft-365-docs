@@ -387,21 +387,6 @@ For Windows Servers and Windows Multi-session, there are additional items that y
 > [!NOTE]
 > In some cases, depending on your infrastructure, volume of traffic, and other conditions, **Set-MpPreference -AllowDatagramProcessingOnWinServer 1** can have an effect on network performance.
 
-#### Mobile Device Management (MDM)
-
-Suggestion: If you are going to use MDE Security Settings Management (or MDE Security Managent aka MDE Attach) and if it uses CSP, you might need to update the CSP, [Policy CSP - Defender - Windows Client Management](policy-csp-defender.md) so that it supports:
-
-For Windows Server 2012R2/2016 unified MDE client, Windows Server version 1803 or newer, Windows Server 2019 or newer, and Windows 10 Enterprise Multi-Session 1909 and up, used in Windows Virtual Desktop on Azure:
-
-1. Set-MpPreference -EnableNetworkProtection Enabled
-1. Set-MpPreference -AllowNetworkProtectionOnWinServer 1
-1. Set-MpPreference -AllowNetworkProtectionDownLevel 1
-1. Set-MpPreference -AllowDatagramProcessingOnWinServer 1
-
-> [!NOTE]
-> In some cases, depending on your infrastructure, volume of traffic, and other conditions, **Set-MpPreference -AllowNetworkProtectionDownLevel 1** can have an effect on network performance.
-
-@@@
 
 ## Network protection troubleshooting
 
