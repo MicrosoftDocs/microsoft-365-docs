@@ -1,59 +1,58 @@
 ---
-title: Use a prebuilt model to extract info from invoices or receipts in Microsoft Syntex
+title: Use a prebuilt model to extract information from invoices in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create and configure a prebuilt model in Microsoft Syntex.
+description: Learn how to use a prebuilt invoices model in Microsoft Syntex.
 
 ---
 
-# Use a prebuilt model to extract info from invoices or receipts in Microsoft Syntex
+# Use a prebuilt model to extract information from invoices in Microsoft Syntex
 
-Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization. 
+The prebuilt *invoices model* analyzes and extracts key information from sales invoices. The API recognizes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction), such as customer name, billing address, due date, and amount due.
 
-Currently, there are two prebuilt models available: invoice and receipt.
+To use an invoices model, follow these steps:
 
-- The *invoice prebuilt model* analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction) such as customer name, billing address, due date, and amount due.
+- Step 1: [Create an invoices model](#create-an-invoices-model)
+- Step 2: [Upload an example file to analyze](#upload-an-example-file-to-analyze)
+- Step 3: [Select extractors for your model](#select-extractors-for-your-model)
+- Step 4: [Apply the model](#apply-the-model)
 
-- The *receipt prebuilt model* analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction) such as merchant name, merchant phone number, transaction date, tax, and transaction total.
+## Create an invoices model
 
-Additional prebuilt models will be available in future releases.
+Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a prebuilt invoices model. Then continue with the following steps to complete your model.
 
-## Create a prebuilt model
 
-Follow these steps to create a prebuilt model to classify documents in Syntex.
+<!---
+## Create an invoices model
+
+Follow these steps to create a trained invoices model.
 
 1. From the **Models** page, select **Create a model**.
 
-    ![Screenshot of the Models page showing the Create a model button.](../media/content-understanding/prebuilt-create-model-button.png) 
+    ![Screenshot of the Models page showing the Create a model button.](../media/content-understanding/create-a-model-from-the-models-page.png) 
 
-2. On the **Create a model** panel, in the **Name** field, type the name of the model.
 
-    ![Screenshot of the New document understanding model panel showing the model types available.](../media/content-understanding/prebuilt-create-panel.png) 
+2. On the **View options for classification and extraction** page, in the **Use a trained model** section, select **Invoices**.
 
-3. In the **Model type** section, select one of the prebuilt models:
-   - **Invoice processing prebuilt**
-   - **Receipt processing prebuilt**
+    ![Screenshot of the View options for classification and extraction page showing the custom models and trained models.](../media/content-understanding/view-options-for-classification-and-extraction-page.png) 
 
-   If you want to create a traditional, untrained document understanding model instead of a prebuilt model, select **Custom document understanding**.
-
-4. If you want to change the content type or add a retention label, select **Advanced settings**.
+3. To continue, follow these [instructions to continue to create an invoices model](create-syntex-model.md#invoices).
 
     > [!NOTE]
-    > Sensitivity labels are not available for prebuilt models at this time.
+    > Sensitivity labels are not available for trained models at this time.
+--->
 
-5. Select **Create**. The model will be saved in the **Models** library.
-
-## Add a file to analyze
+## Upload an example file to analyze
 
 1. On the **Models** page, in the **Add a file to analyze** section, select **Add file**.
 
@@ -67,7 +66,7 @@ Follow these steps to create a prebuilt model to classify documents in Syntex.
 
     ![Screenshot of the Add a file from the training files library page.](../media/content-understanding/prebuilt-add-file-from-training-library.png) 
 
-6. On the **Files to analyze the model** page, select **Next**.
+4. On the **Files to analyze the model** page, select **Next**.
 
 ## Select extractors for your model
 
@@ -75,7 +74,7 @@ On the extractor details page, you'll see the document area on the right and the
 
    ![Screenshot of the extractor details page and Extractor panel.](../media/content-understanding/prebuilt-extractor-details-page.png) 
 
-The entity fields that are highlighted in green in the document area are the items that were detected by the model when it analyzed the file. When you select an entity to extract, the highlighted field will change to blue. If you later decide not to include the entity, the highlighted field will change to gray. The highlights make it easier to see the current state of the extractors you have selected.
+The entity fields that are highlighted in green in the document area are the items that were detected by the model when it analyzed the file. When you select an entity to extract, the highlighted field will change to blue. If you later decide not to include the entity, the highlighted field will change to gray. The highlights make it easier to see the current state of the extractors you've selected.
 
 > [!TIP]
 > You can use the scroll wheel on your mouse or the controls at the bottom of the document area to zoom in or out as needed to read the entity fields.
@@ -100,7 +99,7 @@ The original value is what is actually in the document. The extracted value is w
 
 Continue to select additional extractors you want to you use. You can also add other files to analyze for this model configuration.
 
-## Rename an extractor
+### Rename an extractor
 
 You can rename an extractor either from the model home page or from the **Extractors** panel. You might consider renaming selected extractors because these names will be used as the column names when the model is applied to the library.
 
@@ -128,5 +127,8 @@ To rename an extractor from the **Extractors** panel:
 
 ## Change the view in a document library
 
-[!INCLUDE [Change the view in a document library](../includes/change-library-view.md)]
+For information about how to set the default view and how to change the view of a document library, see [Choose the view in a document library](choose-library-view.md).
 
+<!---
+[!INCLUDE [Change the view in a document library](../includes/change-library-view.md)]
+--->
