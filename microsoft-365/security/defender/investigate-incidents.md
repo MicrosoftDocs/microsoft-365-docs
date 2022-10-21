@@ -64,7 +64,13 @@ The graph shows the full scope of the attack, how the attack spread through your
 From the graph, you can:
 
 - Play the alerts and the nodes on the graph as they occurred over time to understand the chronology of the attack.
+  
+  :::image type="content" source="../../media/investigate-incidents/play-alert-attack-story.gif" alt-text="The playing of the alerts and nodes on the attack story graph page":::
+
 - Open an entity pane, allowing you to review the entity details and act on remediation actions, such as deleting a file or isolating a device.
+
+  :::image type="content" source="../../media/investigate-incidents/review-entity-details-attack-story.gif" alt-text="Review the entity details on the attack story graph page":::
+
 - Highlight the alerts based on the entity to which they are related.
 
 ## Summary
@@ -147,7 +153,6 @@ You can select the check mark for a user to see details of the user account thre
 
 Learn how to view additional user information and manage the users of an incident in [investigate users](investigate-users.md).
 
-
 ## Mailboxes
 
 The **Mailboxes** tab lists all the mailboxes that have been identified to be part of or related to the incident. Here's an example.
@@ -183,26 +188,6 @@ The **Evidence and Response** tab shows all the supported events and suspicious 
 Microsoft 365 Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with information about the important emails, files, processes, services, IP Addresses, and more. This helps you quickly detect and block potential threats in the incident.
 
 Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, Clean) and a remediation status. This helps you understand the remediation status of the entire incident and what next steps can be taken.
-
-## Graph (Preview)
-
-The **Graph** tab shows the full scope of the attack, how the attack spread through your network over time, where it started, and how far the attacker went. It connects the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes. 
-
-From the **Graph** tab, you can:
-
-1. Play the alerts and the nodes on the graph as they occurred over time to understand the chronology of the attack.
-
-
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="The playing of the alerts and nodes on the Graph page":::
- 
-
-2. Open an entity pane, allowing you to review the entity details and act on remediation actions, such as deleting a file or isolating a device.
- 
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="The entity pane on the Graph page in the Microsoft 365 Defender portal" lightbox="../../media/investigate-incidents/incident-graph-entity-pane.png":::
-
-3. Highlight the alerts based on the entity to which they are related.
- 
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="An alert highlight on the Graph page" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
 
 ## Next steps
 
