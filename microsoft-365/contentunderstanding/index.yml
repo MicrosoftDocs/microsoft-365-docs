@@ -89,10 +89,12 @@ landingContent:
     # Card 5
   - title: Content assembly
     linkLists:
+      - linkListType: overview
+        links:
+          - text: Learn about content assembly
+            url: content-assembly.md
       - linkListType: how-to-guide
         links:
-          - text: Overview of content assembly
-            url: content-assembly.md
           - text: Create modern templates
             url: content-assembly-modern-template.md
           - text: Use with Power Automate
