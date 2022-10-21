@@ -62,5 +62,5 @@ You can view the results of the test runs under the Test summary page by clickin
 In the detailed page, you will see install-Office as an auto-executed script which represents the status of the pre-release Office installation.
 
  > [!div class="mx-imgBorder"]  
- > ![Screenshot shows ](Media/testwithm365app05.png)  
+ > ![Screenshot shows Reliability](Media/testwithm365app05.png)  
  > Note: For Out of box test type, a pre-defined Office interop test script will be executed to help collect conflict signals for pre-release Office running with user’s installed application by default. You can use Functional test to define your own test flow and bypass the Office test script if you would like to focus on testing how your application works with latest Office updates.
