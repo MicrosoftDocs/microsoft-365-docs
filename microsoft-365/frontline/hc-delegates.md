@@ -55,11 +55,14 @@ Dr. Franco Piccio is on call at the radiology department. He receives an urgent 
 
 Status notes and delegation mention behaviors depend partly on a user's co-existence mode. This matrix shows the possibilities:
 
+> [!NOTE]
+> Skype for Business (SfB) has been retired. [Learn how to upgrade to Microsoft Teams](/microsoftteams/upgrade-start-here).
+
 |Co-Existence Mode | Expected Behavior|
 |---|---|
 |TeamsOnly |Users can set a note only from Teams. <br> User's Teams note is visible in Teams & SfB. |
 |Islands | User's note set in Teams visible only in Teams. <br> User's note set in SfB visible only in SfB |
-|SfB* modes | Users can set a note only from SfB. <br> User's SfB note is visible in SfB & Teams.  |
+|Skype for Business (SfB) modes | Users can set a note only from SfB. <br> User's SfB note is visible in SfB & Teams.  |
 
 A user can only set a note in Teams if their mode is TeamsOnly or Islands.  
 
