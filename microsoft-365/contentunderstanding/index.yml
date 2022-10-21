@@ -65,8 +65,10 @@ landingContent:
             url: prebuilt-overview.md
       - linkListType: how-to-guide
         links:
-          - text: Create a model
+          - text: Create an enterprise model
             url: create-syntex-model.md
+          - text: Create a local model
+            url: create-local-model.md
 
     # Card 4
   - title: Manage Syntex models
