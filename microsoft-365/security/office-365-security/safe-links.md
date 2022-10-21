@@ -60,6 +60,8 @@ Safe Links protection is available in the following locations:
   > Safe Links does not work on mail-enabled public folders.
   >
   > Safe Links supports only HTTP(S) and FTP formats.
+  > 
+  > if you use another service to wrap links before Office 365 this may invalidate Safe Links ability to process them, including wrapping, detonation,  or otherwise validating the “maliciousness” of the link. 
 
 - **Microsoft Teams**: Safe Links protection for links in Teams conversations, group chats, or from channels is controlled by Safe Links policies.
 
