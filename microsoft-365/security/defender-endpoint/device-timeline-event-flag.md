@@ -57,7 +57,7 @@ The Defender for Endpoint device timeline helps you research and investigate ano
 
 ## Timeline event flags
 
-Event flags in the Defender for Endpoint device timeline help you filter and organize specific events when you're  investigate potential attacks.
+Event flags in the Defender for Endpoint device timeline help you filter and organize specific events when you're investigating potential attacks.
 
 The Defender for Endpoint device timeline provides a chronological view of the events and associated alerts observed on a device. This list of events provides full visibility into any events, files, and IP addresses observed on the device. The list can sometimes be lengthy. Device timeline event flags help you track events that could be related.
 
