@@ -6747,6 +6747,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader AAD org data only | United States |
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
+| Viva Goals | United States |
 </p></details>
 
 ## Uruguay
