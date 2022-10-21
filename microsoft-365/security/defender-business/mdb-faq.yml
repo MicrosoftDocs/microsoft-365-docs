@@ -28,7 +28,7 @@ sections:
     questions:
       - question: Can I extend my preview trial of Defender for Business or Microsoft Defender for Business servers?
         answer: |
-          As Defender for Business and Microsoft Defender for Busines servers are both now generally available, the preview program for each has ended and can't be extended.   
+          As Defender for Business and Microsoft Defender for Business servers are both now generally available, the preview program for each has ended and can't be extended.   
           
           See [Get Defender for Business](get-defender-business.md) or [Get Microsoft Defender for Business servers](get-defender-business-servers.md).
 
@@ -65,7 +65,9 @@ sections:
         answer: |
           Server support is now available with an add-on called [Microsoft Defender for Business servers](get-defender-business-servers.md). This add-on is available for [Microsoft 365 Business Premium](/microsoft-365/business-premium/) and the standalone version of [Defender for Business](mdb-overview.md). Microsoft Defender for Business servers is priced at $3 per server instance. 
           
-          If you participated in the preview of Microsoft Defender for Business servers, you can now either [purchase a license](get-defender-business-servers.md) for each onboarded server, or [offboard servers](mdb-offboard-devices.md) from Defender for Business.
+          If you participated in the preview of Microsoft Defender for Business servers, you can now either [purchase a license](get-defender-business-servers.md) for each onboarded server for $3 per month per server instance.
+          
+          Alternately, you can [offboard servers](mdb-offboard-devices.md) from Defender for Business.
 
       - question: What is the difference between Microsoft Defender for Business servers and Microsoft Defender for Servers Plan 1 and Plan 2?
         answer: |
