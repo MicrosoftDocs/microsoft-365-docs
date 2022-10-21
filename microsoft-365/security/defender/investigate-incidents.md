@@ -1,7 +1,7 @@
 ---
 title: Investigate incidents in Microsoft 365 Defender
 description: Investigate incidents related to devices, users, and mailboxes.
-keywords: incident, incidents, analyze, response, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
+keywords: incident, incidents, attack story, analyze, response, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.mktglfcycl: deploy
@@ -37,7 +37,7 @@ Within an incident, you analyze the alerts that affect your network, understand 
 
 ## Initial investigation
 
-Before diving into the details, take a look at the properties and summary of the incident.
+Before diving into the details, take a look at the properties and the entire attack story of the incident.
 
 You can start by selecting the incident from the check mark column. Here's an example.
 
@@ -47,9 +47,25 @@ When you do, a summary pane opens with key information about the incident, such 
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="The pane that displays the summary details for an incident in the Microsoft 365 Defender portal." lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
 
-From here, you can select **Open incident page**. This opens the main page for the incident where you'll find more summary information and tabs for alerts, devices, users, investigations, and evidence.
+From here, you can select **Open incident page**. This opens the main page for the incident where you'll find the full attack story information and tabs for alerts, devices, users, investigations, and evidence.
 
 You can also open the main page for an incident by selecting the incident name from the incident queue.
+
+## Attack story
+
+Attack stories help you to quickly review, investigate, and remediate attacks while viewing the full story of the attack on the same tab. It also allows you to review the entity details and take remediation actions, such as deleting a file or isolating a device without losing context.
+
+:::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="The attack story of an incident" lightbox="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png":::
+
+Within the attack story you can find the alert page and the incident graph.
+
+The graph shows the full scope of the attack, how the attack spread through your network over time, where it started, and how far the attacker went. It connects the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes.
+
+From the graph, you can:
+
+- Play the alerts and the nodes on the graph as they occurred over time to understand the chronology of the attack.
+- Open an entity pane, allowing you to review the entity details and act on remediation actions, such as deleting a file or isolating a device.
+- Highlight the alerts based on the entity to which they are related.
 
 ## Summary
 
