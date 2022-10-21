@@ -46,8 +46,8 @@ Here's a quick overview of how alert policies work and the alerts that are trigg
 
  In addition to holding a Compliance Manager role, users also need an Azure AD role as follows:
 
-To view alerts and alert policies: the Security reader role in Azure AD
-To create or update alert policies: the Compliance administrator, Compliance data administrator, Security administrator, or Security operator role in Azure AD
+   - To view alerts and alert policies: the Security reader role in Azure AD.
+   - To create or update alert policies: the Compliance administrator, Compliance data administrator, Security administrator, or Security operator role in Azure AD.
 
    > [!NOTE]
    > It takes up to 24 hours after creating or updating an alert policy before alerts can be triggered by the policy. This is because the policy has to be synced to the alert detection engine.
