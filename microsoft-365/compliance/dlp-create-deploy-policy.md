@@ -183,7 +183,7 @@ This procedure uses a hypothetical distribution group *Finance team* at Contoso.
  
 1. Choose **Save**.
  
-1. Choose **Next** > **Keep it off**.
+1. Choose **Next** > **Keep it off** > **Next** > **Submit**.
 
 <!--
 ### Scenario 2
