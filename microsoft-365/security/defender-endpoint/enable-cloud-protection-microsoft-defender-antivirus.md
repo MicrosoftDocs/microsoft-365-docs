@@ -148,7 +148,7 @@ For more information about allowed parameters, see [Windows Defender WMIv2 APIs]
 
 1. Open the Windows Security app by selecting the shield icon in the task bar, or by searching the start menu for **Windows Security**.
 
-2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar), and then, under **Manage settings** select **Virus & threat protection settings**.
+2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar), and then, under **Virus & threat protection settings** select **Manage settings**.
 
    :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="The Virus & threat protection settings" lightbox="../../media/wdav-protection-settings-wdsc.png":::
 
