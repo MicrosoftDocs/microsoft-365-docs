@@ -101,9 +101,10 @@ The images and the tables below list the changes in navigation between Microsoft
 | SIEM  agents | Settings -> Cloud apps |
 | External  DLP | Settings -> Cloud apps |
 | API  tokens | Settings -> Cloud apps |
-| Manage  admin access | Permissions-> Cloud apps-> Roles |
+| Manage  admin access -> Admin roles | Permissions-> Cloud apps-> Roles |
+| Manage  admin access -> Activity privacy permissions | Permissions-> Cloud apps-> Activity privacy permissions |
 | Exported  reports | Reports -> Cloud apps -> Exported reports |
-| Scoped  deployment and privacy | Permissions -> Cloud apps -> Activity Privacy permissions |
+| Scoped  deployment and privacy | Settings -> Cloud Apps -> Scoped deployment and privacy |
 | Connected Apps/App connectors | Settings -> Cloud Apps -> Connected Apps |
 | Conditional Access App Control | Settings -> Cloud apps -> Conditional Access App Control apps |
 | IP  address ranges              | Settings -> Cloud apps                                      |
