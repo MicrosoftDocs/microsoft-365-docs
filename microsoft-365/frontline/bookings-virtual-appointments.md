@@ -190,5 +190,4 @@ You can view key metrics such as lobby wait time and appointment duration. Use t
 ## Related articles
 
 - [Manage the join experience for Teams Virtual Appointments on browsers](browser-join.md)
-- [Get started with Teams for healthcare organizations](teams-in-hc.md)
 - [Bookings app in Teams help documentation](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5)
