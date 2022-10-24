@@ -34,16 +34,24 @@ All of your improvement actions are listed on the improvement actions page. Lear
 
 ## Improvement actions details page
 
-Each improvement action has a details page with details about the action's status and implementation instructions.
-
-showing its implementation and testing status; related assessments, controls, and certifications; and recommended implementation guidance. [Technical actions](compliance-score-calculation.md#technical-and-non-technical-actions) include a **Launch now** link that takes you to the appropriate solution for implementation. You can attach implementation and testing evidence directly into an improvement action’s details page.
+Each improvement action has a details page showing its implementation and testing status; related assessments, controls, and certifications; and recommended implementation guidance. [Technical actions](compliance-score-calculation.md#technical-and-non-technical-actions) include a **Launch now** link that takes you to the appropriate solution for implementation. You can attach implementation and testing evidence directly into an improvement action’s details page.
 
 To view an improvement action’s details page:
 
 1. In Compliance Manager, go to the **Improvement actions** page.
 1. From the list of improvement actions, select the name of the improvement action you want to view. The details page for the action will open.
 
-The **Overview** section on the left side of the page contains a **Summary** of basic information such as the implementation and test status, points achieved, and associated assessments; and a **Testing source** section for viewing and changing [how the action is tested](#update-testing-source).
+Each improvement action details page has the following sections:
+
+- The **Overview** section on the left side of the page: Contains a **Summary** of basic information such as the implementation and test status, points achieved, and associated assessments; and a **Testing source** section for viewing and changing [how the action is tested](#update-testing-source).
+
+- **Implementation** tab: Contains implementation status, date, notes, detailed instructions, and for [technical actions](compliance-score-calculation.md#technical-and-non-technical-actions), a **Launch now** link taking you to the appropriate solution for implementation.
+
+- **Testing** tab: Contains testing status, date, notes, and a link to download a testing history report.
+
+- **Controls & certifications [TBD NAME]** tab: Lists the controls associated with the improvement action.
+
+- **Documents [Evidence TBD NAME CHange]** tab: Location where you can upload and view files and links related to implementation and testing work
 
 > [!TIP]
 > Learn more about the different [types of improvement actions and how points are awarded](compliance-score-calculation.md#action-types-and-points) and factored into your compliance score.
