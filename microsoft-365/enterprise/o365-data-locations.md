@@ -51,5 +51,5 @@ See the following links to understand workload data location.
 - Yammer [Data Location](m365-dr-workload-other.md#yammer)
 - Office for mobile [Data Location](m365-dr-workload-other.md#office-for-mobile)
 - OneNote Services [Data Location](m365-dr-workload-other.md#onenote-services)
-- Power Apps for Microsoft 365 [Data Location](m365-dr-workload-other.md#poewr-apps-for-microsoft-365)
+- Power Apps for Microsoft 365 [Data Location](m365-dr-workload-other.md#power-apps-for-microsoft-365)
 - Stream [Data Location](m365-dr-workload-other.md#stream)
