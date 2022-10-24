@@ -1,7 +1,7 @@
 ---
 title: Investigate incidents in Microsoft 365 Defender
 description: Investigate incidents related to devices, users, and mailboxes.
-keywords: incident, incidents, analyze, response, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
+keywords: incident, incidents, attack story, analyze, response, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.mktglfcycl: deploy
@@ -37,7 +37,7 @@ Within an incident, you analyze the alerts that affect your network, understand 
 
 ## Initial investigation
 
-Before diving into the details, take a look at the properties and summary of the incident.
+Before diving into the details, take a look at the properties and the entire attack story of the incident.
 
 You can start by selecting the incident from the check mark column. Here's an example.
 
@@ -47,15 +47,53 @@ When you do, a summary pane opens with key information about the incident, such 
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="The pane that displays the summary details for an incident in the Microsoft 365 Defender portal." lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
 
-From here, you can select **Open incident page**. This opens the main page for the incident where you'll find more summary information and tabs for alerts, devices, users, investigations, and evidence.
+From here, you can select **Open incident page**. This opens the main page for the incident where you'll find the full attack story information and tabs for alerts, devices, users, investigations, and evidence.
 
 You can also open the main page for an incident by selecting the incident name from the incident queue.
+
+## Attack story
+
+Attack stories help you to quickly review, investigate, and remediate attacks while viewing the full story of the attack on the same tab. It also allows you to review the entity details and take remediation actions, such as deleting a file or isolating a device without losing context.
+
+:::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="The attack story of an incident" lightbox="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png":::
+
+Within the attack story you can find the alert page and the incident graph.
+
+The incident alert page has these sections:
+
+- Alert story, which includes:
+
+   - What happened
+
+   - Actions taken
+
+   - Related events
+
+- Alert properties in the right pane (state, details, description, and others)
+
+Note that not every alert will have all of the listed subsections in the **Alert story** section.
+
+The graph shows the full scope of the attack, how the attack spread through your network over time, where it started, and how far the attacker went. It connects the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes.
+
+From the graph, you can:
+
+- Play the alerts and the nodes on the graph as they occurred over time to understand the chronology of the attack.
+  
+  :::image type="content" source="../../media/investigate-incidents/play-alert-attack-story.gif" alt-text="Screenshot that shows playing of the alerts and nodes on the attack story graph page.":::
+
+- Open an entity pane, allowing you to review the entity details and act on remediation actions, such as deleting a file or isolating a device.
+
+  :::image type="content" source="../../media/investigate-incidents/review-entity-details-attack-story.gif" alt-text="Screenshot that shows the review of the entity details on the attack story graph page.":::
+
+- Highlight the alerts based on the entity to which they are related.
+
+Use the **Summary** page to assess the relative importance of the incident and quickly access the associated alerts and impacted entities.
 
 ## Summary
 
 The **Summary** page gives you a snapshot glance at the top things to notice about the incident.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="The summary information for an incident in the Microsoft 365 Defender portal" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-investigate-summary.png" alt-text="Screenshot that shows the summary information for an incident in the Microsoft 365 Defender portal." lightbox="../../media/incidents-overview/incidents-investigate-summary.png":::
 
 Information is organized in these sections.
 
@@ -66,8 +104,6 @@ Information is organized in these sections.
 | Evidence | Displays the number of entities affected by the incident. |
 | Incident information | Displays the properties of the incident, such as tags, status, and severity. |
 |||
-
-Use the **Summary** page to assess the relative importance of the incident and quickly access the associated alerts and impacted entities.
 
 ## Alerts
 
@@ -89,20 +125,6 @@ You can see the events of the alert, which other triggered alerts caused the cur
 Here's an example.
 
 :::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="The details of an alert within an incident in the Microsoft 365 Defender portal." lightbox="../../media/investigate-incidents/incident-alert-example.png":::
-
-The incident alert page has these sections:
-
-- Alert story, which includes:
-
-   - What happened
-
-   - Actions taken
-
-   - Related events
-
-- Alert properties in the right pane (state, details, description, and others)
-
-Not every alert will have all of the listed subsections in the **Alert story** section.
 
 Learn how to use the alert queue and alert pages in [investigate alerts](investigate-alerts.md).
 
@@ -130,7 +152,6 @@ The **Users** tab lists all the users that have been identified to be part of or
 You can select the check mark for a user to see details of the user account threat, exposure, and contact information. Select the user name to see additional user account details.
 
 Learn how to view additional user information and manage the users of an incident in [investigate users](investigate-users.md).
-
 
 ## Mailboxes
 
@@ -167,26 +188,6 @@ The **Evidence and Response** tab shows all the supported events and suspicious 
 Microsoft 365 Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with information about the important emails, files, processes, services, IP Addresses, and more. This helps you quickly detect and block potential threats in the incident.
 
 Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, Clean) and a remediation status. This helps you understand the remediation status of the entire incident and what next steps can be taken.
-
-## Graph (Preview)
-
-The **Graph** tab shows the full scope of the attack, how the attack spread through your network over time, where it started, and how far the attacker went. It connects the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes. 
-
-From the **Graph** tab, you can:
-
-1. Play the alerts and the nodes on the graph as they occurred over time to understand the chronology of the attack.
-
-
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="The playing of the alerts and nodes on the Graph page":::
- 
-
-2. Open an entity pane, allowing you to review the entity details and act on remediation actions, such as deleting a file or isolating a device.
- 
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="The entity pane on the Graph page in the Microsoft 365 Defender portal" lightbox="../../media/investigate-incidents/incident-graph-entity-pane.png":::
-
-3. Highlight the alerts based on the entity to which they are related.
- 
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="An alert highlight on the Graph page" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
 
 ## Next steps
 
