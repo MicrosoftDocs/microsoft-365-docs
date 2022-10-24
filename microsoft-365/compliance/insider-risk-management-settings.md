@@ -187,13 +187,9 @@ Policy timeframes allow you to define past and future review periods that are tr
 
 Intelligent detection settings help refine how the detections of risky activities are processed for alerts. In certain circumstances, you may need to define file types to ignore, or you want to enforce a detection level for daily events to boost risk scores for users. Use these settings to control file type exclusions, boosting risk score for unusual activity, and file volume limits.
 
-### File type exclusions
+### File activity detection
 
 To exclude specific file types from all insider risk management policy matching, enter file type extensions separated by commas. For example, to exclude certain types of music files from policy matches you may enter *aac,mp3,wav,wma* in the **File type exclusions** field. Files with these extensions will be ignored by all insider risk management policies.
-
-### Minimum number of daily events to boost score for unusual activity
-
-With this setting, you define how many daily events are required to boost the risk score for activity that's considered unusual for a user. For example, let's say you enter 25 for this risk booster. If a user averages 10 file downloads over the past 30 days, but a policy detects they downloaded 20 files on one day, the score for that activity won't be boosted even though it's unusual for that user because the number of files they downloaded that day was less than the number you entered for this risk booster.
 
 ### Alert volume
 
@@ -203,7 +199,7 @@ User activities detected by insider risk policies are assigned a specific risk s
 - **Default volume**: You'll see all high severity alerts and a balanced amount of medium and low severity alerts.
 - **More alerts**: You'll see all medium and high severity alerts and most low severity alerts. This setting level might result in more false positives.
 
-### Microsoft Defender for Endpoint alert statuses (preview)
+### Microsoft Defender for Endpoint alert statuses
 
 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. To have better visibility of security violations in your organization, you can import and filter Defender for Endpoint alerts for activities used in policies created from insider risk management security violation policy templates.
 
@@ -239,6 +235,24 @@ For each of the following domain settings, you can enter up to 500 domains:
     By specifying allowed domains in settings, this activity with these domains is treated similarly to how internal organization activity is treated. For example, domains added here map to activities may involve sharing content with someone outside your organization (such as sending email to someone with a gmail.com address).
 
 - **Third party domains:** If your organization uses third-party domains for business purposes (such as cloud storage), include them here so you can receive alerts for activity related to the device indicator *Use a browser to download content from a third-party site*.
+ 
+### Sensitive info types exclusion
+
+By excluding sensitive info types, you can specify which types map to indicators and triggers involving file-related activities for Endpoint, SharePoint, Teams, OneDrive, and Exchange. For those files that contain any sensitive info types identified here, they will be risk scored but not shown as activities involving content related to sensitive info types. For a complete list, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions).
+
+You can select the sensitive info types to be excluded from the list of all available (out-of-box and custom) types available in the tenant. Insider risk management excludes several sensitive info types by default, such as ABA Routing Number. You can choose up to 100 sensitive info types to be excluded.
+
+> [!NOTE]
+> The exclusion list of sensitive info types takes precedence over the [priority content](insider-risk-management-policies.md#prioritize-content-in-policies) list.
+
+To add sensitive info types to exclude, complete the following steps:
+
+1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
+2. In the **Sensitive info types** section, select **Add sensitive info types to exclude**.
+3. On the **Add or edit sensitive info type** pane, select the types that you want to exclude.
+4. Select **Add** accept the changes or **Cancel** to discard the changes. 
+
+To delete a sensitive info type exclusion, select the exclusion and **Delete**.
 
 ### File path exclusions
 
@@ -266,7 +280,7 @@ The default file path exclusions are:
 
 The wildcards in these paths denote that all folder levels between the \Users and \AppData are included in the exclusion. For example, activities in *C:\Users\Test1\AppData\Local* and *C:\Users\Test2\AppData\Local*, *C:\Users\Test3\AppData\Local* (and so on) would all be included and not scored for risk as part of the *\Users\\\*\AppData\Local* exclusion selection.
 
-### Site URL exclusions
+### Site exclusions
 
 Configure site URL exclusions to prevent potential risk activities that occur in SharePoint (and SharePoint sites associated with Team channel sites) from generating policy alerts. You might want to consider excluding sites and channels that contain non-sensitive files and data that can be shared with stakeholders or the public. You can enter up to 500 site URL paths to exclude.
 
@@ -286,7 +300,7 @@ To edit site URL paths to exclude, complete the following steps:
 
 To delete a Site URL exclusion, select the site URL exclusion and select **Delete**.
 
-### Keyword exclusions
+### Keyword exclusion
 
 Configure exclusions for keywords that appear in file names, file paths, or email message subject lines. This allows flexibility for organizations that need to reduce potential alert noise due to flagging of benign terms specified for your organization. Such activities related to files or email subjects containing the keyword will be ignored by your insider risk management policies and won't generate alerts. You can enter up to 500 keywords to exclude. 
 
