@@ -483,7 +483,7 @@ Use the Microsoft Purview compliance portal to select one of 10 standard colors 
 
 You can't select colors for sublabels because they automatically inherit the label color from their parent label.
 
-If a label is configured for a different color from one of the 10 default colors, you see a **Use previously assigned customer color** checkbox selected, and the standard color options aren't available. You can change the custom color to one of the standard colors by first clearing the checkbox, and then you can select one of the standard colors. 
+If a label is configured for a different color from one of the 10 default colors, you see a **Use previously assigned custom color** check box selected, and the standard color options aren't available. You can change the custom color to one of the standard colors by first clearing the checkbox, and then you can select one of the standard colors. 
 
 You can't use the compliance portal to configure a different custom color. Instead, use PowerShell, as described in the next section.
 
