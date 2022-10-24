@@ -57,7 +57,7 @@ You manage incidents from **Incidents & alerts > Incidents** on the quick launch
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft 365 Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
-Selecting an incident name displays a the entire attack story of the incident, including:
+Selecting an incident name displays the entire attack story of the incident, including:
 
 - Alert page within incident: The scope of alerts related to the incident and their information on the same tab.
 - Graph: A visual representation of the attack that connects the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes. 
