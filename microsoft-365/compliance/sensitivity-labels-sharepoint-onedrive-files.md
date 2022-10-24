@@ -116,7 +116,7 @@ Uploading a labeled document, and then extracting and displaying that sensitivit
 - For encrypted documents, printing is not supported in Office for the web.
 
 - Until recently, copying to the clipboard and screen captures for encrypted documents in Office for the web weren't prevented. Now rolling out, when documents are labeled and encrypted, and the **Copy** [usage right](/azure/information-protection/configure-usage-rights) isn't granted, Office on the web prevents these actions in the same way as desktop apps prevent the actions. There are some current exceptions for relabeling scenarios until the browser is refreshed, another session is started, or the document is opened again:
-    - Mid-session, the document changes from unencrypted to encrypted
+    - Mid-session, the document changes from unencrypted to encrypted.
     - Mid-session, the document changes from encrypted and the Copy usage right is granted, to encrypted but the Copy usage right is not granted.
 
 - By default, Office desktop apps and mobile apps don't support co-authoring for files that are labeled with encryption. These apps continue to open labeled and encrypted files in exclusive editing mode.
