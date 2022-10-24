@@ -35,7 +35,7 @@ Required Conditions:
 
 1. Tenant has a sign-up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
 1. Tenant has a valid Advanced Data Residency subscription for all users in the tenant
-1. The Exchange Online subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_
+1. The Exchange Online subscription customer data is provisioned in Local Geography or Expanded Local Geography
 
 **Commitment:**
 
@@ -52,9 +52,7 @@ Required Conditions:
 
 **Commitment:**
 
-Customers may assign a _Satellite Geography_ supported by Multi-Geo to a supported mailbox type. See the [Microsoft 365 Multi-Geo availability section](microsoft-365-multi-geo.md#microsoft-365-multi-geo-availability) of the Microsoft 365 Multi-Geo page for details. The Data at Rest for Office 365 Services for the mailbox as defined by the product terms shall be stored in the assigned _Satellite Geography_. Supported mailbox types includes Exchange Online user primary and archive mailboxes, resource mailboxes, Microsoft 365 Group mailboxes, and shared mailboxes.
-
-
+Customers may assign a Satellite Geography supported by Multi-Geo to a supported mailbox type. See the [Microsoft 365 Multi-Geo availability section](microsoft-365-multi-geo.md#microsoft-365-multi-geo-availability) of the Microsoft 365 Multi-Geo page for details. The Data at Rest for Office 365 Services for the mailbox as defined by the product terms shall be stored in the assigned Satellite Geography. Supported mailbox types includes Exchange Online user primary and archive mailboxes, resource mailboxes, Microsoft 365 Group mailboxes, and shared mailboxes.
 
 ## Multi-Geo Capabilities in Exchange Online
 
