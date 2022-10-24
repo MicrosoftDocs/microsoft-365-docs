@@ -24,31 +24,38 @@ search.appverid: met150
 
 This article explains how to deploy Microsoft Defender for Endpoint on a Red Hat Enterprise Linux (RHEL) system. 
 
-## Prerequisites
+## Deployment summary
 
-The following are the listed factors you should consider while deploying Microsoft Defender for Endpoint on RHEL Linux in your environment:
+The following list captures the actions you'll take to deploy Microsoft Defender for Endpoint on Linux:
+
 
 - Work with your Firewall, Proxy, and Networking admin to add the Microsoft Defender for Endpoint URLs to the allowed list, and prevent it from being SSL inspected.
 - Run a centralized scan to capture current resource utilization across the environment, such as, check available disk space in all mounted partitions, capture memory usage, capture a process listing that includes availability, and used CPU percentages.
-- Exclude Microsoft Defender for Endpoint on RHEL Linux from your third-party antivirus for Linux product.
+- Exclude Microsoft Defender for Endpoint on Linux from your third-party antivirus product.
 - Download the onboarding script from the Microsoft Defender for Endpoint portal.
 - Set up the Microsoft Defender for Endpoint on Linux configuration settings.
-- Add your third-party antivirus on RHEL Linux processes and paths to the exclusion list above (Setup the Microsoft Defender for Endpoint for RHEL Linux antivirus settings).
-- Ensure to add your current exclusions from your third-party antivirus for Linux to the step above (Set up the Microsoft Defender for Endpoint on Linux configuration settings).
-- Add Microsoft repository.
+- Add your third-party antivirus processes and paths to the exclusion list from the prior step (Setup the Microsoft Defender for Endpoint on Linux antivirus settings).
+- Verify that you've added your current exclusions from your third-party antivirus  to the prior step (Set up the Microsoft Defender for Endpoint on Linux configuration settings).
+- Add Microsoft repository. [BAHMAN - NOT SURE WHAT THIS MEANS]
 - Deliver the onboarding file.
 - Deliver the antivirus setting.
 - Deliver the scheduled scans cronjob setting.
-- Deliver the Microsoft Defender for Endpoint on RHEL Linux agent cronjob settings.
-- Install the Microsoft Defender for Endpoint on RHEL Linux package.
-- Install the Microsoft Defender for Endpoint on RHEL Linux configuration file.
-- Rerun resource utilization statistics a report on pre-deployment utilization compared to post-deployment.
+- Deliver the Microsoft Defender for Endpoint on  Linux agent cronjob settings.
+- Install the Microsoft Defender for Endpoint on Linux package.
+- Install the Microsoft Defender for Endpoint on Linux configuration file.
+- Rerun resource utilization statistics and report on pre-deployment utilization compared to post-deployment.
 - Verify that you are able to communicate with Microsoft Defender for Endpoint backend.
-- Verify that you're able to get “Platform Updates” (aka known as agent updates).
-- Verify that you're able to get “Security Intelligence Updates” (aka signatures/definition updates).
+- Verify that you're able to get "Platform Updates" (agent updates).
+- Verify that you're able to get "Security Intelligence Updates" (signatures/definition updates).
 - Verify detections.
 
-## System requirements
+
+## Before you begin
+The following section provides information on supported Linux versions and recommendations for resources.
+
+For a detailed list of supported Linux distros, see [System requirements](microsoft-defender-endpoint-linux.md##system-requirements).
+
+### System requirements
 
 The following are the supported RHEL Linux servers:
 
@@ -90,7 +97,7 @@ Here's how to check the network connectivity of Microsoft Defender for Endpoint:
 3. Verify that the traffic isn't being inspected by SSL inspection (TLS inspection). When setting up Microsoft Defender for Endpoint, the most frequent network-related problem. For more information, see [Verify SSL inspection is not being performed on the network traffic](#verify-ssl-inspection-is-not-being-performed-on-the-network-traffic).
 
 
-### Allow URL for the Microsoft Defender for Endpoint traffic
+### Allow URLs for the Microsoft Defender for Endpoint traffic
 
 1. Download [Microsoft Defender for Endpoint URL list for commercial customers](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) or [Microsoft Defender for Endpoint URL list for Gov/GCC/DoD](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) that lists the services and their associated URLs that your network must be able to connect.
 
@@ -103,6 +110,7 @@ Here's how to check the network connectivity of Microsoft Defender for Endpoint:
 > Work with the Firewall/Proxy/Networking admins to allow the URL’s.
 
 ### Set up proxy settings
+If the Linux servers are behind a proxy, use the following settings.
 
 The table below shows the supported proxy settings:
 
@@ -111,21 +119,11 @@ The table below shows the supported proxy settings:
 |Transparent proxy |Proxy autoconfig (PAC, a type of authenticated proxy)|
 |Manual static proxy configuration |Web proxy autodiscovery protocol (WPAD, a type of authenticated proxy)|
  
-#### Network connections
+- [Network connections](microsoft-defender-endpoint-linux.md#network-connections)
+- [Full configuration profile](../defender-endpoint/linux-preferences.md#full-configuration-profile-example)
+- [Static proxy configuration](/defender-endpoint/linux-static-proxy-configuration.md)
+- [Troubleshooting connectivity issues in static proxy scenario](linux-support-connectivity.md#troubleshooting-steps-for-environments-with-static-proxy)
 
-For more information, see [Network connections](microsoft-defender-endpoint-linux.md#network-connections).
-
-#### Full configuration profile 
-
-For more information, see [Full configuration profile](../defender-endpoint/linux-preferences.md#full-configuration-profile-example).
-
-#### Static proxy configuration
-
-For more information, see [static proxy configuration](/defender-endpoint/linux-static-proxy-configuration.md).
-
-#### Troubleshoot for environments with static proxy scenarios
-
-For more information, see [Troubleshooting connectivity issues in static proxy scenario](linux-support-connectivity.md#troubleshooting-steps-for-environments-with-static-proxy).
 
 ### Verify SSL inspection is not being performed on the network traffic
 
@@ -138,7 +136,7 @@ To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses ce
 
 For more information, see [Troubleshooting cloud connectivity issues for Microsoft Defender for Endpoint on RHEL Linux](linux-support-connectivity.md).
 
-## Configure Microsoft Defender for Endpoint on RHEL Linux antivirus
+## Configure Microsoft Defender for Endpoint on Linux antivirus
 
 **Before you begin**
 
