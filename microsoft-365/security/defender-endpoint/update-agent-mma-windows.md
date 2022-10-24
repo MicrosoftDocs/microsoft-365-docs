@@ -28,7 +28,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-If you were previously using the Microsoft Monitoring Agent (MMA) on Windows devices, you can update your agent. To update your agent to work with Microsoft Defender for Endpoint, you can choose from two options:
+If you are using the Microsoft Monitoring Agent (MMA) on Windows devices, you should keep this agent updated. With the modern, unified agent for Windows Server 2012 R2 and Windows Server 2016, you should migrate to the new solution instead. 
 
 - [Update the Microsoft Monitoring Agent (MMA) on your devices](#option-1-update-mma-on-your-devices)
 - [Use a new agent on Windows Server 2012 R2 or Windows Server 2016](#option-2-use-a-new-agent-on-windows-server-2012-r2-or-windows-server-2016)
