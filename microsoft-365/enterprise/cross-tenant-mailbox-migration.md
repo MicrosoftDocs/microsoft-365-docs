@@ -385,7 +385,7 @@ Once the mailbox moves from source to target, you should ensure that the on-prem
 
 Use the Remove-MigrationEndpoint(/powershell/module/exchange/remove-migrationendpoint) cmdlet to remove existing migration endpoints for source or destination servers after the migration is complete.
 
-Use the Remove-OrganizationRelationship (/exchange/sharing/organization-relationships/remove-an-organization-relationship#use-exchange-online-powershell-to-remove-an-organization-relationship) cmdlet to remove existing oraganization relationship for source or destination servers after the migration is complete.
+Use the Remove-OrganizationRelationship (/exchange/sharing/organization-relationships/remove-an-organization-relationship#use-exchange-online-powershell-to-remove-an-organization-relationship) cmdlet to remove existing oraganization relationships for source or destination servers after the migration is complete.
 
 ## Frequently asked questions
 
