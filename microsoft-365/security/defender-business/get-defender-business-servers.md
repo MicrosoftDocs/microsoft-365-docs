@@ -26,7 +26,7 @@ f1.keywords: NOCSH
 
 Microsoft Defender for Business servers (preview) enables you to onboard a device running Windows Server or Linux Server to Defender for Business or Microsoft 365 Business Premium. When the Microsoft Defender for Business servers license becomes generally available, you'll need one license for each server instance.
 
-Here's how to get Microsoft Defender for Business servers (preview):
+**Here's how to get Microsoft Defender for Business servers (preview)**:
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in. 
 
