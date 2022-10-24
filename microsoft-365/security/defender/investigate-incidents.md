@@ -79,11 +79,11 @@ From the graph, you can:
 
 - Play the alerts and the nodes on the graph as they occurred over time to understand the chronology of the attack.
   
-  :::image type="content" source="../../media/investigate-incidents/play-alert-attack-story.gif" alt-text="The playing of the alerts and nodes on the attack story graph page":::
+  :::image type="content" source="../../media/investigate-incidents/play-alert-attack-story.gif" alt-text="Screenshot that shows playing of the alerts and nodes on the attack story graph page.":::
 
 - Open an entity pane, allowing you to review the entity details and act on remediation actions, such as deleting a file or isolating a device.
 
-  :::image type="content" source="../../media/investigate-incidents/review-entity-details-attack-story.gif" alt-text="Review the entity details on the attack story graph page":::
+  :::image type="content" source="../../media/investigate-incidents/review-entity-details-attack-story.gif" alt-text="Screenshot that shows the review of the entity details on the attack story graph page.":::
 
 - Highlight the alerts based on the entity to which they are related.
 
@@ -93,7 +93,7 @@ Use the **Summary** page to assess the relative importance of the incident and q
 
 The **Summary** page gives you a snapshot glance at the top things to notice about the incident.
 
-:::image type="content" source="../../media/incidents-overview/incidents-investigate-summary.png" alt-text="The summary information for an incident in the Microsoft 365 Defender portal" lightbox="../../media/incidents-overview/incidents-investigate-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-investigate-summary.png" alt-text="Screenshot that shows the summary information for an incident in the Microsoft 365 Defender portal." lightbox="../../media/incidents-overview/incidents-investigate-summary.png":::
 
 Information is organized in these sections.
 
