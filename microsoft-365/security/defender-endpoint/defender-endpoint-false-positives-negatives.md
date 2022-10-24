@@ -71,7 +71,7 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 
 2. In the navigation pane, choose **Incidents & alerts** and then select **Alert**.
 
-3. Select an alert for more details about the alert. (See [Review alerts in Microsoft Defender for Endpoint](review-alerts.md).)
+3. Select an alert to view more details about it. (See [Review alerts in Microsoft Defender for Endpoint](review-alerts.md).)
 
 4. Depending on the alert status, take the steps described in the following table:
 
