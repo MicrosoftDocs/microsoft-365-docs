@@ -209,31 +209,41 @@ Endpoint + Teams
 
 ## Deployment
 
-Before you start your deployment, make sure you have read through [Policy deployment](dlp-overview-plan-for-dlp.md#policy-deployment) which gives you a broad overview of the policy deployment process and general guidance. A successful policy deployment isn't just about getting the policy into your environment to enforce controls on user actions, you have to be aware of the business process it will impact and educate your users.  
+A successful policy deployment isn't just about getting the policy into your environment to enforce controls on user actions. A haphazard, rushed deployment can negatively impact business process and annoy your users. Those consequences will slow acceptance of DLP technology, and the safer behaviors it promotes, in your organization and make your sensitive items less safe in the long run. 
 
+Before you start your deployment, make sure you have read through [Policy deployment](dlp-overview-plan-for-dlp.md#policy-deployment) which gives you a broad overview of the policy deployment process and general guidance.
 
+This section dives more deeply into the three types of controls you'll use in concert to manage your policies in production. Remember you can change any of these at any time, not just during policy creation.
 
+### Three axes of deployment management
 
-This section dives more deeply into the three types of controls to keep in mind when you plan the deployment of a policy.
-
-
-
-### Three axes of deployment control
-
-There are three axes to control the policy deployment process and it's impact, the scope, that state of the policy and the actions. You should always take an incremental approach to deploying a policy, starting from the least impactful/test mode to full enforcement.
+There are three axes to control the policy deployment process and it's impact, the scope, the state of the policy and the actions. You should always take an incremental approach to deploying a policy, starting from the least impactful/test mode to full enforcement.
 
 #### Policy scope
 
 Every policy is scoped to one or more locations, such as Exchange, SharePoint Online, Teams, and Devices. By default, when you select a location, all instances of that location fall under the scope and none are excluded. You can further refine the sites, groups, mailboxes, devices by configuring the include/exclude options of the location. To learn more about your include/exclude scoping options, see, [Locations](dlp-policy-reference.md#locations).
 
+#### Actions
+
+Actions are what a policy does in response to user activities on sensitive items. Because you can change these at anytime, you can start with the least impactful, *Allow*, gather and review the audit data, and use it to tune the policy before moving to more restrictive actions.
+
+- Allow (audit with no user notifications or alerts)
+- Audit only (you can add notifications and alerts)
+- Block with override (blocks the action, but the user can override)
+- Block (blocks no matter what)
+
+
+
 #### State
 
 The last step in the policy creation experience is to set the state of the policy. You can set the state to:
 
-- Test it out first
-- Test it out first and show policy tips while in test mode
-- Turn it on right away
+- Test it out first: no actions are enforced
+- Test it out first and show policy tips while in test mode: no actions are enforced, but users will receive policy tips to raise their awareness and educate them
+- Turn it on right away: full enforcement mode
 - Keep it off   
+
+
 
 
 
@@ -243,13 +253,19 @@ The last step in the policy creation experience is to set the state of the polic
     1. test with awareness
     1. turn on right away
     1. keep turned off/archived
-1. Actions
-    1. allow
-    1. audit
-    1. block with override
-    1. block
 
--->
+
+
+Policy deployments should follow these steps:
+
+1. After you've created the policy and set its state to turned off, do a final review it with your stakeholders.
+1. Set the state to test mode with no policy tips. The location scope can be broad at this point so you can gather data on the behavior of the policy.
+1. Tune the policy based on the behavior data so that it better meets the business intent.
+1. Refine the scope of locations if needed and make use of includes/exludes so that the policy is first rolled out to the users who are a good test group.
+1. Set the state to test mode with policy tips. Gather user feedback and alert and event data, if needed tune the policy and your plans more. Make sure you address all the issues that your users bring up. It's pretty much a gaurantee that they'll raise things that you didn't think of. Develop a group of super users at this point. They can be a resource to help train other users as the scope of the policy is increased and more users come onboard.
+1. 
+
+You'll start deploying a policy in test mode where you'll tune it to fulfill your business intent based on it's behaviorAs you take a policy from test mode through to full enforcement, you have to educate your users.
 
 
 control objectives
