@@ -257,7 +257,7 @@ Before configuring a policy, define the following insider risk settings:
 
 4. On the **Policy timeframes** page, select the [policy timeframes](insider-risk-management-settings.md#policy-timeframes) to go into effect for a user when they trigger a match for an insider risk policy.
 5. On the **Intelligent detections** page, configure the following settings for insider risk policies:
-    - [File activity detection](insider-risk-management-settings.md#file-type-exclusions)
+    - [File activity detection](insider-risk-management-settings.md#file-activity-detection)
     - [Alert volume](insider-risk-management-settings.md#alert-volume)
     - [Microsoft Defender for Endpoint alert statuses](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses)
     - [Domains](insider-risk-management-settings.md#domains)
