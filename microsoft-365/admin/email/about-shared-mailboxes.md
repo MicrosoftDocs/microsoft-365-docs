@@ -40,11 +40,11 @@ Before you [create a shared mailbox](create-a-shared-mailbox.md), here are some 
 
 > [!NOTE]
 >
-> An Exchange Online Plan 2 license is required in the following scenarios:
+> The following scenarios require an Exchange Online Plan 2 license:
 >
 > - The shared mailbox has more than 50 GB of storage in use.
 > - The shared mailbox uses in-place archiving.
-> - The shared mailbox is placed in litigation hold.
+> - The shared mailbox is placed on litigation hold.
 > 
 > For step-by-step instructions on how to assign licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users). 
 
