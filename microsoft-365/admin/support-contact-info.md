@@ -1,5 +1,5 @@
 ---
-title: "Find Microsoft 365 for business phone support numbers by country or region"
+title: "Find Microsoft 365 for business support phone numbers by country or region"
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -18,7 +18,7 @@ description: "Learn how to get phone support for your Microsoft 365 for business
 ms.date: 10/20/2022
 ---
 
-# Find Microsoft 365 for business phone support numbers by country or region
+# Find Microsoft 365 for business support phone numbers by country or region
 
 In most countries or regions, billing support for Microsoft 365 for business products and services is provided in English from 9 AM-5 PM, Monday through Friday. Local language support varies by country or region.
 
