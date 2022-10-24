@@ -103,9 +103,6 @@ From the **Classification** field, you specify whether the incident is:
 
 Classifying incidents and specifying their status and type helps tune Microsoft 365 Defender to provide better detection determination over time.
 
-Watch this short video to learn how to use classification to increase triage efficiency.  
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LHJq]
-
 ## Add comments
 
 You can add multiple comments to an incident with the **Comment** field. Each comment gets added to the historical events of the incident. You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.

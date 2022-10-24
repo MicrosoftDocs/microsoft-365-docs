@@ -59,6 +59,20 @@ Attack stories help you to quickly review, investigate, and remediate attacks wh
 
 Within the attack story you can find the alert page and the incident graph.
 
+The incident alert page has these sections:
+
+- Alert story, which includes:
+
+   - What happened
+
+   - Actions taken
+
+   - Related events
+
+- Alert properties in the right pane (state, details, description, and others)
+
+Note that not every alert will have all of the listed subsections in the **Alert story** section.
+
 The graph shows the full scope of the attack, how the attack spread through your network over time, where it started, and how far the attacker went. It connects the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes.
 
 From the graph, you can:
@@ -73,11 +87,13 @@ From the graph, you can:
 
 - Highlight the alerts based on the entity to which they are related.
 
+Use the **Summary** page to assess the relative importance of the incident and quickly access the associated alerts and impacted entities.
+
 ## Summary
 
 The **Summary** page gives you a snapshot glance at the top things to notice about the incident.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="The summary information for an incident in the Microsoft 365 Defender portal" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-investigate-summary.png" alt-text="The summary information for an incident in the Microsoft 365 Defender portal" lightbox="../../media/incidents-overview/incidents-investigate-summary.png":::
 
 Information is organized in these sections.
 
@@ -88,8 +104,6 @@ Information is organized in these sections.
 | Evidence | Displays the number of entities affected by the incident. |
 | Incident information | Displays the properties of the incident, such as tags, status, and severity. |
 |||
-
-Use the **Summary** page to assess the relative importance of the incident and quickly access the associated alerts and impacted entities.
 
 ## Alerts
 
@@ -111,20 +125,6 @@ You can see the events of the alert, which other triggered alerts caused the cur
 Here's an example.
 
 :::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="The details of an alert within an incident in the Microsoft 365 Defender portal." lightbox="../../media/investigate-incidents/incident-alert-example.png":::
-
-The incident alert page has these sections:
-
-- Alert story, which includes:
-
-   - What happened
-
-   - Actions taken
-
-   - Related events
-
-- Alert properties in the right pane (state, details, description, and others)
-
-Not every alert will have all of the listed subsections in the **Alert story** section.
 
 Learn how to use the alert queue and alert pages in [investigate alerts](investigate-alerts.md).
 
