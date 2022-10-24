@@ -3,7 +3,7 @@ title: "Advanced data residency in Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 10/10/2022
+ms.date: 
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -20,17 +20,17 @@ ms.custom: seo-marvel-apr2020
 
 ## Overview of Advanced Data Residency and Commitments
 
-#### Overview:
+### Overview:
 
-The Microsoft 365 Advanced Data Residency add-on ("ADR") provides eligible customers with expanded coverage of Microsoft 365 workloads and Customer Data, committed data residency for local country datacenter regions, and prioritized tenant migration services.  With Advanced Data Residency, enterprise customers can best address their data residency compliance and tenant location requirements. 
+The Microsoft 365 Advanced Data Residency add-on ("ADR") provides eligible customers with expanded coverage of Microsoft 365 workloads and Customer Data, committed data residency for local country datacenter regions, and prioritized tenant migration services.  With Advanced Data Residency, enterprise customers can best address their data residency compliance and tenant location requirements.
 
-#### Eligibility:
+### Eligibility:
 
-1. Tenant has a sign-up country included in _Local Region Geography_ or _Expanded Local Region Geography_, 
-2. Tenant has a valid Advanced Data Residency subscription for all tenant users in the tenancy, and 
-3. The applicable Microsoft 365 product subscription customer data is provisioned in Local Geography or Expanded Local Geography. 
+1. Tenant has a sign-up country included in _Local Region Geography_ or _Expanded Local Region Geography_,
+1. Tenant has a valid Advanced Data Residency subscription for all tenant users in the tenancy, and
+1. The applicable Microsoft 365 product subscription customer data is provisioned in Local Geography or Expanded Local Geography.
 
-### Microsoft 365 Advanced Data Residency Commitments 
+### Microsoft 365 Advanced Data Residency Commitments
 
 The workloads and their respective commitments are detailed below:
 
@@ -43,13 +43,11 @@ The workloads and their respective commitments are detailed below:
 EOP service configuration data and policies, quarantined email and attachments, Junk email, grading analysis, block lists (url, tenant, user), spam domains, reports, alerts. |
 | Office for the Web | --- |
 | Viva Connections | Dashboard and Feed have content sourced from SharePoint Online, Exchange Online and Microsoft Teams and is stored in accordance with their respective data residency commitments. |
-| Viva Topics | •	All the topics and customer data snippets discovered are stored within the relevant Geographies in Exchange Online Substrate (site or arbitration mailboxes, and Substrate).
-• Machine Learning (“ML”) models are trained on public web data, and as such do not contain any customer data from your tenant. In the future it's possible we will use customer data to improve accuracy of the ML models, in which case the data handling of ML models will follow the same policies as any other customer data (including data residency, retention, access control, sensitivity). 
-• The administration configuration data is stored in the relevant Geographies. |
-| Microsoft Purview | --- |
+| Viva Topics | - All the topics and customer data snippets discovered are stored within the relevant Geographies in Exchange Online Substrate (site or arbitration mailboxes, and Substrate).<br>- Machine Learning ("ML") models are trained on public web data, and as such do not contain any customer data from your tenant. In the future it's possible we will use customer data to improve accuracy of the ML models, in which case the data handling of ML models will follow the same policies as any other customer data (including data residency, retention, access control, sensitivity).<br>- The administration configuration data is stored in the relevant Geographies. |
+| Microsoft Purview |  |
 
-> [!NOTE]
-> If you have purchased the Multi-Geo subscription for your tenancy, then your customer data will be stored at rest in more than one Geography based on your configuration.
+>[!NOTE]
+>If you have purchased the Multi-Geo subscription for your tenancy, then your customer data will be stored at rest in more than one Geography based on your configuration.
 
 ## Licensing and Purchase
 
