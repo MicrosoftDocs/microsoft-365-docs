@@ -25,11 +25,12 @@ ms.collection:
 
 Use the following guidance to determine where your data is located. Please reference your _tenant_ _Default Geography_.
 
-#### Forms
+### Forms
 Tenants in EU member Countries maintain data in _Macro Region Geography 1 – EMEA_. All other tenants have customer data stored in the United States.
 
-#### Intune
+### Intune
 Refer to endpoint.microsoft.com, Tenant Administration | Tenant Status for existing tenants. If you do not have an existing tenant, create a trial tenant and provision Intune.
+
 - Microsoft will not store Intune customer data at rest outside the stated geo, except if:
 - It is necessary for Microsoft to provide customer support, troubleshoot the service, or comply with legal requirements.
 - The customer configures an account to enable such storage of customer data, including through the use of the following:
@@ -37,34 +38,34 @@ Refer to endpoint.microsoft.com, Tenant Administration | Tenant Status for exist
 - Azure Active Directory (Azure AD), which may store directory data globally. This does not apply to Azure AD deployments in the United States (where Azure AD data is stored solely in the United States) or in Europe (where Azure AD data is stored in Europe or the United States).
 - Preview, beta, or other prerelease services, which typically store customer data in the United States but may store it globally. Regardless, Microsoft does not control or limit the Geo from which customers or their end users may access customer data. Similarly, where customer data in other services is subsequently integrated into Intune, the originating customer data will continue to be stored subject to the other service's own Geo commitments (if any); only the copy of the customer data integrated into Intune will be stored in the stated Geo for Intune.
 
-#### Office for Mobile
+### Office for Mobile
 Customer data for this service comes from other services, like Exchange Online and SharePoint Online. There is no customer data stored outside of those services with the exception of the mobile device.
 
-#### OneNote Services
+### OneNote Services
 OneNote stores customer data in OneDrive for Business. It does however have an API that can cause persistent caches to be made outside of the Geography where OneDrive for Business stores customer data.
 
-#### Planner
+### Planner
 Please see the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section.
 
-#### Power Apps for Microsoft 365
+### Power Apps for Microsoft 365
 Please refer to [Dynamics 365 availability and data locations | Microsoft Learn](/dynamics365/get-started/availability).
 
-#### Stream
+### Stream
 You can find this information from the "?" option in the Stream UI, if you have it running and then click on "About Microsoft Stream" and see where your data is stored. If needed, create a trial tenant.
 
-#### Viva Insights – Advanced, Mgr, Leader
+### Viva Insights – Advanced, Mgr, Leader
 Please see the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section.  The data region for Manager/Leader and Advanced is determined by the _Default Geography_ of the _tenant_, not individual users.
 
-#### Viva Insights – Personal
-Customer data for this service is stored within Exchange Online.  Data residency for the Personal app is based on the user's mailbox location.
+### Viva Insights – Personal
+Customer data is processed and stored in the employee's Exchange Online mailbox. Data residency for Personal insights in Viva Insights is based on the employee's mailbox location. For more information, see [Personal insights in Viva Insights privacy guide for admins](https://learn.microsoft.com/en-us/viva/insights/personal/overview/privacy-guide-admins?branch=main#summary-of-key-points).
 
-#### Viva Learning
+### Viva Learning
 Please see the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section.
 
-#### Whiteboard
+### Whiteboard
 Please refer to [Manage data for Microsoft Whiteboard | Microsoft Learn](/whiteboard/manage-data-organizations).
 
-#### Yammer
+### Yammer
 Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-security-and-compliance/data-residency).
 
 ## Static data location information for select workloads
