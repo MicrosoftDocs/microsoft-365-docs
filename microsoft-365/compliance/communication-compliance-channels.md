@@ -36,7 +36,7 @@ Chats in both public and private Microsoft Teams channels and individual communi
 
 Microsoft Purview Communication Compliance automatically includes Microsoft Teams coverage for pre-defined policy templates and is selected as the default in the custom policy template. Teams chats matching communication compliance policy conditions may take up to 48 hours to process.
 
-For Teams private chat and private channels, communication compliance policies support [Shared Channels](/MicrosoftTeams/shared-channels) and Modern attachment analysis. Shared Channels support in Teams is handled automatically and don't require additional communication compliance configuration changes. The following table summarizes communication compliance behavior when sharing Teams channels with groups and users:
+For Teams private chat and private channels, communication compliance policies support [Shared Channels](/MicrosoftTeams/shared-channels) and modern attachment analysis. Shared Channels support in Teams is handled automatically and don't require additional communication compliance configuration changes. The following table summarizes communication compliance behavior when sharing Teams channels with groups and users:
 
 |**Scenario**|**Communication compliance behavior**|
 |:-----------|:------------------------------------|
