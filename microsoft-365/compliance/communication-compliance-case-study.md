@@ -147,7 +147,7 @@ After selecting **Show all**, the Contoso IT administrators can access the commu
 
 ## Step 3: Configuring prerequisites and creating a communication compliance policy
 
-To get started with a communication compliance policy, there are several prerequisites that Contoso IT administrators need to configure before setting up the new policy to detect potentially inappropriate text. After these prerequisites have been completed, Contoso IT administrators and compliance specialists can configure the new policy, and compliance specialists can start investigation and remediating any generated alerts.
+To get started with a communication compliance policy, there are several prerequisites that Contoso IT administrators need to configure before setting up the new policy to detect potentially inappropriate text. After these prerequisites have been completed, Contoso IT administrators and compliance specialists can configure the new policy, and compliance specialists can start investigating and remediating any generated alerts.
 
 ### Enabling auditing in Microsoft 365
 
