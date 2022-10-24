@@ -34,14 +34,16 @@ All of your improvement actions are listed on the improvement actions page. Lear
 
 ## Improvement actions details page
 
-Each improvement action has a details page showing its current status, the related standards and regulatory requirements, and recommended implementation guidance. [Technical actions](compliance-score-calculation.md#technical-and-non-technical-actions) include a **Launch now** link that takes you to the appropriate solution for implementation. You can attach implementation and testing documentation directly into an improvement action’s details page.
+Each improvement action has a details page with details about the action's status and implementation instructions.
+
+showing its implementation and testing status; related assessments, controls, and certifications; and recommended implementation guidance. [Technical actions](compliance-score-calculation.md#technical-and-non-technical-actions) include a **Launch now** link that takes you to the appropriate solution for implementation. You can attach implementation and testing evidence directly into an improvement action’s details page.
 
 To view an improvement action’s details page:
 
-1. Go to your improvement actions page.
-2. Select the row of your intended improvement action, which opens its details page.
+1. In Compliance Manager, go to the **Improvement actions** page.
+1. From the list of improvement actions, select the name of the improvement action you want to view. The details page for the action will open.
 
-You can easily view the next or previous improvement action in the list by selecting the up or down arrow in the upper-right corner of the screen. If you filtered your list on the improvement actions page, moving up or down takes you to the next item within that filtered list.
+The **Overview** section on the left side of the page contains a **Summary** of basic information such as the implementation and test status, points achieved, and associated assessments; and a **Testing source** section for viewing and changing [how the action is tested](#update-testing-source).
 
 > [!TIP]
 > Learn more about the different [types of improvement actions and how points are awarded](compliance-score-calculation.md#action-types-and-points) and factored into your compliance score.
@@ -176,9 +178,9 @@ To set up a parent testing source, follow the steps below:
 
 You'll come back to your action's details page. Under **Testing Source** on the **Overview** section, the new action you designated as the parent is listed under **Parent action**.
 
-## Review standards and regulations
+## Related controls and certifications
 
-The **standards and regulations** section provides a searchable and filterable list of standards and regulations associated with your improvement action. These can be viewed by the relevant **control**, the **control ID**, the **control family**, and the **regulation** involved.
+The **Controls & certifications [NAME TBD]** tab displays the controls associated with the improvement action. The table on this page lists each associated control, the control ID, and the certification related to the control. To view a description of the control, select the control's name and a flyout pane appears with the description.
 
 ## Perform work and store documentation
 
