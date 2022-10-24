@@ -39,8 +39,7 @@ The workloads and their respective commitments are detailed below:
 | Exchange Online | Mailbox content, (e-mail body, calendar entries, and the content of e-mail attachments. This includes all types of mailboxes, including user mailboxes, resource mailboxes, archive mailboxes. |
 | SharePoint Online and OneDrive for Business | Site content and the files stored within that site, and files uploaded to OneDrive for Business. |
 | Microsoft Teams | Chat messages (including private messages, channel messages, meeting messages and images used in chats), and for customers using Microsoft Stream (on SharePoint), meeting recordings. |
-| Microsoft Defender for Office (MDO P1)  and  Exchange Online Protection (EOP) | MDO P1 does not store any customer data within its service. 
-EOP service configuration data and policies, quarantined email and attachments, Junk email, grading analysis, block lists (url, tenant, user), spam domains, reports, alerts. |
+| Microsoft Defender for Office (MDO P1)  and  Exchange Online Protection (EOP) | MDO P1 does not store any customer data within its service. EOP service configuration data and policies, quarantined email and attachments, Junk email, grading analysis, block lists (url, tenant, user), spam domains, reports, alerts. |
 | Office for the Web | --- |
 | Viva Connections | Dashboard and Feed have content sourced from SharePoint Online, Exchange Online and Microsoft Teams and is stored in accordance with their respective data residency commitments. |
 | Viva Topics | - All the topics and customer data snippets discovered are stored within the relevant Geographies in Exchange Online Substrate (site or arbitration mailboxes, and Substrate).<br>- Machine Learning ("ML") models are trained on public web data, and as such do not contain any customer data from your tenant. In the future it's possible we will use customer data to improve accuracy of the ML models, in which case the data handling of ML models will follow the same policies as any other customer data (including data residency, retention, access control, sensitivity).<br>- The administration configuration data is stored in the relevant Geographies. |
@@ -79,9 +78,13 @@ Once the customer signal is received, they will be provided with their opt-in da
 
 In addition to a notification posted to the Message Center upon completion, the Data Location card in the Microsoft 365 Admin Console will also be updated as each workload requiring a data migration is complete.
 
-#### Migration Expectation
+#### Migration Expectations
 
-Microsoft will use reasonable efforts to try to complete an Advanced Data Residency add-on customer migration within twelve (12) months from the time the customer administrator has signaled they are ready for migration. However, Microsoft may not be able to complete the migration within this timeframe for all customers. For example, significantly larger or more complex customers or situations outside of Microsoft's control may require additional time to complete the migration. Advanced Data Residency add-on customers also receive prioritized migration services for their tenants over the legacy Move Program migration option.
+Microsoft will use reasonable efforts to try to complete an Advanced Data Residency add-on customer migration within twelve (12) months from the time the customer administrator has signaled they are ready for migration. However, Microsoft may not be able to complete the migration within this timeframe for all customers. For example, significantly larger or more complex customers or situations outside of Microsoft's control may require additional time to complete the migration. Advanced Data Residency add-on customers also receive prioritized migration services for their tenants over the legacy Move Program migration option. These migration expectations also apply to all ADR EDU customers as well.
+
+Data moves are a back-end service operation with minimal impact to end-users. We adhere to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for availability so there is nothing that customers need to prepare for or to monitor during the move. Notification of any service maintenance is done if needed.
+
+During the migration process, Microsoft temporarily copies your address book data into Microsoft global resources where it is encrypted and only used to support business continuity and disaster recovery operations (BCDR). After Microsoft has completed the mailbox data moves, Microsoft deletes that temporary data from the global resources. Microsoft continues to invest in global and regional resources on a regular basis. In calendar year 2023, Microsoft plans to utilize regional resources for BCDR purposes during the migration process.
 
 #### During and After your Migration
 
@@ -98,7 +101,7 @@ Data moves are a back-end service operation with minimal impact to end-users. Fe
 
 #### Features Impacted
 
-Because of the complex nature of the hundreds of services (both standard and customizable) that are available within the many workloads that customers sign up for and use within a typical E3 or E5 license, the migration of customer data from one data center to another could cause minor disruption and/or temporary unavailability of certain services customers use. See the migration sections of each workload in the [Workload Data Residency Capabilities section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide&branch=kvice-ADR-new) for more information.
+Because of the complex nature of the hundreds of services (both standard and customizable) that are available within the many workloads that customers sign up for and use within a typical E3 or E5 license, the migration of customer data from one data center to another could cause minor disruption and/or temporary unavailability of certain services customers use. See the migration sections of each workload in the [Workload Data Residency Capabilities section](m365-dr-workload-exo.md) for more information.
 
 #### Status Notification
 
@@ -140,10 +143,10 @@ The first step is to purchase the ADR SKU; check with your Microsoft representat
 
 ## Related topics
 
-[Legacy Move Program](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-legacy-move-program?view=o365-worldwide&branch=kvice-ADR-new)
+[Legacy Move Program](m365-dr-legacy-move-program.md)
   
-[New datacenter geos for Microsoft Dynamics CRM Online](https://learn.microsoft.com/power-platform/admin/new-datacenter-regions)
+[New datacenter geos for Microsoft Dynamics CRM Online](https://learn.microsoft.com/power-platform/admin/new-datacenter-regions?branch=main)
   
 [Azure services by region](https://azure.microsoft.com/regions/)
 
-[Teams experience in a Microsoft 365 Multi-Geo-enabled tenancy](https://learn.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo)
+[Teams experience in a Microsoft 365 Multi-Geo-enabled tenancy](https://learn.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo?branch=main)
