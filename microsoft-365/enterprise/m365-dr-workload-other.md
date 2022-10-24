@@ -20,9 +20,6 @@ ms.collection:
 
 ## Data Residency commitments available
 
->[!NOTE]
->For data location information for the following services, please refer to the data location information on the [Data Maps page](o365-data-locations.md).
-
 Use the following guidance to determine where your data is located. Please reference your _tenant_ _Default Geography_.
 
 ### Forms
