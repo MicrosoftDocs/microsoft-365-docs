@@ -37,7 +37,7 @@ Enabling Multi-Geo requires four key steps:
 
 See [Configure Microsoft 365 Multi-Geo](multi-geo-tenant-configuration.md) for details on each of these steps.
 
-Please see the Availability section of the [M365 Multi-Geo Overview page](microsoft-365-multi-geo.md) for the _Geographies_ that can be a _Satellite Geography_ location where you can host OneDrive for Business and SharePoint Online sites, Exchange Online mailboxes, and Microsoft Teams. As you plan for Multi-Geo, make a list of the locations that you want to add to your Microsoft 365 tenant. We recommend starting with one or two satellite locations and then gradually expanding to more geo locations, if needed.
+Please see the [Availability section](microsoft-365-multi-geo.md#microsoft-365-multi-geo-availability) of the M365 Multi-Geo Overview page for the _Geographies_ that can be a _Satellite Geography_ location where you can host OneDrive for Business and SharePoint Online sites, Exchange Online mailboxes, and Microsoft Teams. As you plan for Multi-Geo, make a list of the locations that you want to add to your Microsoft 365 tenant. We recommend starting with one or two satellite locations and then gradually expanding to more geo locations, if needed.
 
 ## Best practices
 
