@@ -30,7 +30,7 @@ description: "Scenarios for creating and deploying DLP policies"
 
 There are many configuration options in a Microsoft Purview data loss prevention (DLP) policy and, each option changes the policy's behavior. This article presents some common policy intent scenarios that you'll map to configuration options, then it walks you through configuring those options. Once you familiarize yourself with these scenarios, you'll be comfortable using the DLP policy creation UX to create your own policies. 
 
-How you deploy a policy is as important policy design. You have multiple options to control policy deployment. This article show you how to use these options so that the policy achieves your intent while avoiding costly business disruptions.  
+How you deploy a policy is as important policy design. You have [multiple options to control policy deployment](#deployment). This article show you how to use these options so that the policy achieves your intent while avoiding costly business disruptions.  
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -209,15 +209,39 @@ Endpoint + Teams
 
 ## Deployment
 
-There are three aspects to keep in mind when you plan the deployment of a policy.
+Before you start your deployment, make sure you have read through [Policy deployment](dlp-overview-plan-for-dlp.md#policy-deployment) which gives you a broad overview of the policy deployment process and general guidance. A successful policy deployment isn't just about getting the policy into your environment to enforce controls on user actions, you have to be aware of the business process it will impact and educate your users.  
 
 
-three axes to deployment
+
+
+This section dives more deeply into the three types of controls to keep in mind when you plan the deployment of a policy.
+
+
+
+### Three axes of deployment control
+
+There are three axes to control the policy deployment process and it's impact, the scope, that state of the policy and the actions. You should always take an incremental approach to deploying a policy, starting from the least impactful/test mode to full enforcement.
+
+#### Policy scope
+
+Every policy is scoped to one or more locations, such as Exchange, SharePoint Online, Teams, and Devices. By default, when you select a location, all instances of that location fall under the scope and none are excluded. You can further refine the sites, groups, mailboxes, devices by configuring the include/exclude options of the location. To learn more about your include/exclude scoping options, see, [Locations](dlp-policy-reference.md#locations).
+
+#### State
+
+The last step in the policy creation experience is to set the state of the policy. You can set the state to:
+
+- Test it out first
+- Test it out first and show policy tips while in test mode
+- Turn it on right away
+- Keep it off   
+
+
 
 1. scoping the policy by location and includes/excludes
 2. state
     1. test
     1. test with awareness
+    1. turn on right away
     1. keep turned off/archived
 1. Actions
     1. allow
