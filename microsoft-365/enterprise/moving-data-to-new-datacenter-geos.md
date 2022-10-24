@@ -3,7 +3,7 @@ title: "Moving core data to new Microsoft 365 datacenter geos"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/02/2022
+ms.date: 09/23/2022
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -15,6 +15,7 @@ f1.keywords:
 - NOCSH
 description: Learn about new Office 365 datacenter geos and how to use the data residency option to request a move of your core data to a new geo.
 ms.custom: seo-marvel-apr2020
+ms.collection: scotvorg
 ---
 
 # Moving core data to new Microsoft 365 datacenter geos
@@ -64,7 +65,7 @@ Data moves are a back-end service operation with minimal impact to end-users. Fe
 
 Data moves to the new datacenter geo are completed at no additional cost to the customer.
 
-During the migration process, Microsoft temporarily copies your address book data into Microsoft global resources where it is encrypted and only used to support business continuity and disaster recovery operations (BCDR).  After Microsoft has completed the mailbox data moves, Microsoft deletes that temporary data from the global resources.  Microsoft continues to invest in global and regional resources on a regular basis.  In calendar year 2023, Microsoft plans to utilize regional resources for BCDR purposes during the migration process.
+During the migration process, Microsoft temporarily copies your address book data into Microsoft global resources where it is encrypted and only used to support business continuity and disaster recovery operations (BCDR). After Microsoft has completed the mailbox data moves, Microsoft deletes that temporary data from the global resources. Microsoft continues to invest in global and regional resources on a regular basis. In calendar year 2023, Microsoft plans to utilize regional resources for BCDR purposes during the migration process.
 
 ## Related topics
 

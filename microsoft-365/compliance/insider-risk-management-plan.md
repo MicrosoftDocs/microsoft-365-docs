@@ -11,11 +11,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Plan for insider risk management
+
+>[!IMPORTANT]
+>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
 
 Before getting started with [insider risk management](insider-risk-management.md) in your organization, there are important planning activities and considerations that should be reviewed by your information technology and compliance management teams. Thoroughly understanding and planning for deployment in the following areas will help ensure that your implementation and use of insider risk management features goes smoothly and is aligned with the best practices for the solution. 
 
@@ -28,6 +33,8 @@ Watch the video below to learn how the insider risk management workflow can help
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
 Check out the [Microsoft Mechanics video](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) on how insider risk management and communication compliance work together to help minimize data risks from users in your organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Work with stakeholders in your organization
 
@@ -52,15 +59,19 @@ Depending on how you wish to manage insider risk management policies and alerts,
 
 You'll choose from these role group options and solution actions when working with insider risk management:
 
-|**Actions**|**Insider Risk Management**|**Insider Risk Management Admin**|**Insider Risk Management Analysts**|**Insider Risk Management Investigators**|**Insider Risk Management Auditors**|
-|:----------|:--------------------------|:--------------------------------|:-----------------------------------|:----------------------------------------|:-----------------------------------|
-| Configure policies and settings | Yes | Yes | No | No | No |
-| Access analytics insights | Yes | Yes | Yes | No | No |
-| Access & investigate alerts | Yes | No | Yes | Yes | No |
-| Access & investigate cases | Yes | No | Yes | Yes | No |
-| Access & view the Content Explorer | Yes | No | No | Yes | No |
-| Configure notice templates | Yes | No | Yes | Yes | No |
-| View & export audit logs | Yes | No | No | No | Yes |
+|**Actions**|**Insider Risk Management**|**Insider Risk Management Admin**|**Insider Risk Management Analysts**|**Insider Risk Management Investigators**|**Insider Risk Management Auditors**|**Insider Risk Management Approvers**|
+|---|---|---|---|---|---|---|
+|Configure policies and settings|Yes|Yes|No|No|No|No|
+|Access analytics insights|Yes|Yes|Yes|No|No|No|
+|Access & investigate alerts|Yes|No|Yes|Yes|No|No|
+|Access & investigate cases|Yes|No|Yes|Yes|No|No|
+|Access & view the Content Explorer|Yes|No|No|Yes|No|No|
+|Configure notice templates|Yes|No|Yes|Yes|No|No|
+|View & export audit logs|Yes|No|No|No|Yes|No|
+|Access & view forensic evidence captures|Yes|No|No|Yes|No|No|
+|Create forensic evidence capturing request|Yes|Yes|No|No|No|No|
+|Approve forensic evidence capturing requests|Yes|No|No|No|No|Yes|
+|View device health report|Yes|Yes|No|No|No|No|
 
 >[!IMPORTANT]
 >Make sure you always have at least one user in the *Insider Risk Management* or *Insider Risk Management Admin* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.
@@ -114,3 +125,4 @@ Ready to configure insider risk management for your organization? Review the fol
 
 - [Get started with insider risk management settings](insider-risk-management-settings.md) to configure global policy settings.
 - [Get started with insider risk management](insider-risk-management-configure.md) to configure prerequisites, create policies, and start receiving alerts.
+- [Get started with insider risk management forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) for step-by-step guidance to configure forensic evidence capturing in your organization.

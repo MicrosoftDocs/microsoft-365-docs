@@ -1,5 +1,6 @@
 ---
 title: "Manage issuing officers in eDiscovery (Premium)"
+description: "You can add organization-wide issuing officers in eDiscovery (Premium) so they can be added to any custodial communication in any case in your organization."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,12 +11,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: "You can add organization-wide issuing officers in eDiscovery (Premium) so they can be added to any custodial communication in any case in your organization."
 ---
 
 # Manage issuing officers in eDiscovery (Premium)
@@ -27,6 +29,8 @@ When you or others create a hold notification or other type of communication tha
 - Any user who is added to a list of organization-wide issuing officers. Users from this list can be added an issuing officer to any case in your organization.
 
 This article explains how to add and remove users to the list of organization-wide issuing officers.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you add an issuing officer
 

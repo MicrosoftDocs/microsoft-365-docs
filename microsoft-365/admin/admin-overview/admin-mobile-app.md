@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - highpri
 - M365-subscription-management 
 - Adm_O365
@@ -72,6 +73,10 @@ You must be an administrator in a Microsoft 365 organization to use the admin mo
 [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) 
 
 [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
+
+## Watch: Install and use the admin mobile app
+
+[!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
 ## Frequently asked questions
 

@@ -1,5 +1,6 @@
 ---
 title: "Microsoft Purview eDiscovery solutions"
+description: "Microsoft Purview offers three eDiscovery tools that you can use to search for and export content found in different locations such as Exchange mailboxes, SharePoint and OneDrive for Business sites, Microsoft 365 Groups, Microsoft Teams, and Skype for Business conversations. eDiscovery (Standard) and eDiscovery (Premium) provide many additional features to help you manage your investigations."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,24 +11,25 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: 
-- m365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-ediscovery
-- m365initiative-compliance
 - m365solution-overview
+- highpri
+- ediscovery
 ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
 - MET150
-description: "Microsoft Purview offers three eDiscovery tools that you can use to search for and export content found in different locations such as Exchange mailboxes, SharePoint and OneDrive for Business sites, Microsoft 365 Groups, Microsoft Teams, and Skype for Business conversations. eDiscovery (Standard) and eDiscovery (Premium) provide many additional features to help you manage your investigations."
+
 ---
 
 # Microsoft Purview eDiscovery solutions
 
-> [!TIP]
-> *Did you know you can try the premium versions of all nine Microsoft Purview solutions for free?* Use the 90-day Purview solutions trial to explore how robust Purview capabilities can help your organization meet its compliance needs. Microsoft 365 E3 and Office 365 E3 customers can start now at the [Microsoft Purview compliance portal trials hub](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Learn details about [who can sign up and trial terms](compliance-easy-trials.md).
-
 Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. You can use eDiscovery tools in Microsoft Purview to search for content in Exchange Online, OneDrive for Business, SharePoint Online, Microsoft Teams, Microsoft 365 Groups, and Yammer teams. You can search mailboxes and sites in the same eDiscovery search, and then export the search results. You can use Microsoft Purview eDiscovery (Standard) cases to identify, hold, and export content found in mailboxes and sites. If your organization has an Office 365 E5 or Microsoft 365 E5 subscription (or related E5 add-on subscriptions), you can further manage custodians and analyze content by using the feature-rich Microsoft Purview eDiscovery (Premium) solution in Microsoft 365.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## eDiscovery solutions
 

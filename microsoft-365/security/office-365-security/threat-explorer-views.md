@@ -7,11 +7,11 @@ author: msfttracyp
 manager: dansimp
 ms.date: 05/15/2020
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 
 ms.localizationpriority: medium
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Microsoft 365 Defender portal.
 ms.custom: seo-marvel-apr2020

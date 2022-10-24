@@ -8,13 +8,13 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom: 
 ms.subservice: mdo
 ms.service: microsoft-365-security
@@ -75,7 +75,7 @@ Do you want your Defender for Office 365 experience to be active or passive? The
 
 - **Audit mode**: Special *evaluation policies* are created for anti-phishing (which includes impersonation protection), Safe Attachments, and Safe Links. These evaluation policies are configured to *detect* threats only. Defender for Office 365 detects harmful messages for reporting, but the messages aren't acted upon (for example, detected messages aren't quarantined). The settings of these evaluation policies are described in the [Policies in audit mode](#policies-in-audit-mode) section later in this article.
 
-  Audit mode provides access to customized reports for threats detected by Defender for Office 365 on the **Evaluation mode** page at<https://security.microsoft.com/atpEvaluation>.
+  Audit mode provides access to customized reports for threats detected by Defender for Office 365 on the **Evaluation mode** page at <https://security.microsoft.com/atpEvaluation>.
 
 - **Blocking mode**: The Standard template for [preset security policies](preset-security-policies.md) is turned on and used for the trial, and the users you specify to include in the trial are added to the Standard preset security policy. Defender for Office 365 *detects* and *takes action on* harmful messages (for example, detected messages are quarantined).
 

@@ -15,7 +15,7 @@ search.appverid:
   - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 description: Admins can learn how to find and use the email security reports that are available in the Microsoft 365 Defender portal.
 ms.custom: 
 - seo-marvel-apr2020
@@ -340,7 +340,7 @@ The **Mail latency report** in Defender for Office 365 contains information on t
 
 The **Spoof detections** report shows information about messages that were blocked or allowed due to spoofing. For more information about spoofing, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
 
-The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for ten days of filtering.
+The aggregate and detail views of the report allows for 90 days of filtering.
 
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Spoof detections** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/SpoofMailReport>.
 
@@ -1139,8 +1139,6 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 [Anti-spam protection in EOP](anti-spam-protection.md)
 
 [Anti-malware protection in EOP](anti-malware-protection.md)
-
-[Smart reports and insights in the Microsoft 365 Defender portal](reports-and-insights-in-security-and-compliance.md)
 
 [View mail flow reports in the Microsoft 365 Defender portal](view-mail-flow-reports.md)
 

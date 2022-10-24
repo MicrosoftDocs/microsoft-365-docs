@@ -23,8 +23,7 @@ This guidance is designed for administrators of tenants preparing their Microsof
 
 In a Multi-Geo configuration, your Microsoft 365 tenant consists of a _Primary Provisioned Geography_ location and one or more _Satellite Geography_ locations. This is a single tenant that spans across multiple _Geography_ locations.
 
-To help you understand the basic concepts of the Multi-Geo configuration, please review terms in the <a href="https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-overview?view=o365-worldwide&branch=kvice-ADR-new#definitions 
-" target="_blank">Definitions section</a> of the Overview and Definitions page.
+To help you understand the basic concepts of the Multi-Geo configuration, please review terms in the Definitions section of the [Overview and Definitions page](m365-dr-overview.md).
 
 Enabling Multi-Geo requires four key steps:
 
@@ -50,7 +49,7 @@ Each user should have a _preferred data location_ (PDL) set so that Microsoft 36
 
 Create a list of your users and include their user principal name (UPN) and the location code for the appropriate preferred data location. Include your test user and your initial pilot group to start with. You'll need this list for the configuration procedures.
 
-If your users are synchronized from an on-premises Active Directory system to Azure Active Directory, you must set the preferred data location as an Active Directory attribute and synchronize it by using Azure Active Directory Connect. You cannot directly configure the preferred data location for synchronized users using Azure AD PowerShell. The steps to set up PDL in Active Directory and Synchronize it are covered in [Azure Active Directory Connect sync: Configure preferred data location for Microsoft 365 resources](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+If your users are synchronized from an on-premises Active Directory system to Azure Active Directory, you must set the preferred data location as an Active Directory attribute and synchronize it by using Azure Active Directory Connect. You cannot directly configure the preferred data location for synchronized users using Azure AD PowerShell. The steps to set up PDL in Active Directory and Synchronize it are covered in [Azure Active Directory Connect sync: Configure preferred data location for Microsoft 365 resources](https://learn.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 
 The administration of a Multi-Geo tenant can differ from a non-multi-geo tenant, as many of the SharePoint Online and OneDrive for Business settings and services are multi-geo aware. We recommend that you review [Administering a multi-geo environment](administering-a-multi-geo-environment.md) before you proceed with your configuration.
 

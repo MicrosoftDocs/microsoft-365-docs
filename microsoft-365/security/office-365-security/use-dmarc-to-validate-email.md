@@ -6,14 +6,14 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.date: 05/10/2021
 ms.localizationpriority: high
 search.appverid:
   - MET150
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: Learn how to configure Domain-based Message Authentication, Reporting, and Conformance (DMARC) to validate messages sent from your organization.
 ms.subservice: mdo
@@ -210,7 +210,7 @@ You can implement DMARC gradually without impacting the rest of your mail flow. 
 
 4. How to set up DMARC for subdomain?
 
-   DMARC is implemented by publishing a policy as a TXT record in DNS and is hierarchical (for example, a policy published for contoso.com will apply to sub.domain.contonos.com unless a different policy is explicitly defined for the subdomain). This is useful as organizations may be able to specify a smaller number of high-level DMARC records for wider coverage. Care should be taken to configure explicit subdomain DMARC records where you don't want the subdomains to inherit the top-level domain's DMARC record.
+   DMARC is implemented by publishing a policy as a TXT record in DNS and is hierarchical (for example, a policy published for contoso.com will apply to sub.domain.contoso.com unless a different policy is explicitly defined for the subdomain). This is useful as organizations may be able to specify a smaller number of high-level DMARC records for wider coverage. Care should be taken to configure explicit subdomain DMARC records where you don't want the subdomains to inherit the top-level domain's DMARC record.
 
    Also, you can add a wildcard-type policy for DMARC when subdomains shouldn't be sending email, by adding the `sp=reject` value. For example:
 

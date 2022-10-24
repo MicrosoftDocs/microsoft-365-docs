@@ -13,8 +13,8 @@ ms.date: 02/07/2020
 search.appverid:
 - MET150
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
@@ -26,6 +26,8 @@ description: Learn how to send and receive encrypted email messages between peop
 People often use email to exchange sensitive information, such as financial data, legal contracts, confidential product information, sales reports and projections, patient health information, or customer and employee information. As a result, mailboxes can become repositories for large amounts of potentially sensitive information and information leakage can become a serious threat to your organization.
 
 With Office 365 Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Office 365 Message Encryption works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps ensure that only intended recipients can view message content.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How Message Encryption works
 
@@ -43,7 +45,7 @@ For a detailed list of the differences between the previous version of OME and M
 
 When someone sends an email message that matches an encryption mail flow rule, the message is encrypted before it's sent. All Microsoft 365 end users that use Outlook clients to read mail receive native, first-class reading experiences for encrypted and rights-protected mail even if they're not in the same organization as the sender. Supported Outlook clients include Outlook desktop, Outlook Mac, Outlook mobile on iOS and Android, and Outlook on the web (formerly known as Outlook Web App).
 
-Recipients of encrypted messages who receive encrypted or rights-protected mail sent to their Outlook.com, Gmail, and Yahoo accounts receive a wrapper mail that directs them to the encrypted message portal where they can easily authenticate using a Microsoft account, Gmail, or Yahoo credentials.
+Recipients of encrypted messages who receive encrypted or rights-protected mail sent to their Gmail and Yahoo accounts receive a wrapper mail that directs them to the OME Portal where they can easily authenticate using a Microsoft account, Gmail, or Yahoo credentials.
 
 End users that read encrypted or rights-protected mail on clients other than Outlook also use the encrypted message portal to view encrypted and rights-protected messages that they receive.
 

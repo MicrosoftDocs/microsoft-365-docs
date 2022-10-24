@@ -11,11 +11,16 @@ ms.service: O365-seccomp
 ms.topic: article
 ms.author: shmehta
 ms.reviewer: krowley
+ms.collection: 
+- tier3
+- purview-compliance
 appliesto:
 - Office 365 Business
 ---
 
 # Preparing for TLS 1.2 in Office 365 and Office 365 GCC
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Summary
 

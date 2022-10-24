@@ -1,5 +1,5 @@
 ---
-title: "Azure AD client access token entity definition (preview)"
+title: "Azure AD client access token entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,16 +14,21 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: "Azure AD client access token sensitive information type entity definition."
 ---
 
-# Azure AD client access token (preview)
+# Azure AD client access token
 
-## Format
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+This SIT is also included in the [All credentials](sit-defn-all-creds.md) bundled SIT.
+
+ ## Format
 
 A combination of up to 10,000 characters consisting of letters, digits, and special characters.
 
@@ -54,7 +59,7 @@ for example:
 
 or
 
-Variant client secret or refresh token formats e.g. <br> 
+Variant client secret or refresh token formats for example. <br> 
 `ClientSecret:********` <br>
 `AppSecret=********` <br>
 `ConsumerKey:=********` <br>
@@ -76,13 +81,22 @@ A combination of up to 1,000 characters consisting
 
 for example:
 
-`eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ing0Nzh4eU9wbHNNMUg3TlhrN1N4MTd4MXVwYyIsImtpZCI6Ing0Nzh4`
+`eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ing0Nzh4eU9wbHNNMUg3TlhrN1N4MTd4MX...`
 
 
+
+## Credential example 
+
+`Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ing0Nzh4eU9wbHNNMUg3TlhrN1N4MTd4MX...`
+
+> [!IMPORTANT]
+> This example has been truncated. It’s not a detectable example of this SIT.
 
 ## Checksum
 
 Yes
+
+SITs that have checksums use a unique calculation to check if the information is valid. This means when the **Checksum** value is **Yes**, the service can make a positive detection based on the sensitive data alone. When the **Checksum** value is **No** additional (secondary) elements must also be detected  for the service to make a positive detection.
 
 ## Definition
 
@@ -97,7 +111,7 @@ It uses several primary resources:
 - Patterns of mockup values, redactions, and placeholders
 - A dictionary of vocabulary
 
-The patterns are designed to match actual credentials with reasonable confidence. The patterns do not match credentials formatted as examples. Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present will not be matched.
+The patterns are designed to match actual credentials with reasonable confidence. The patterns don't match credentials formatted as examples. Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present won't be matched.
 
 
 
