@@ -91,7 +91,7 @@ The Bookings app in Microsoft Teams gives organizations a simple way to schedule
 
 **Key features and apps:** meetings, Bookings
 
-More information: [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-appointments.md)
+More information: [Virtual Appointments with Microsoft Teams and the Bookings app](bookings-virtual-appointments.md)
 
 ### Simplify business processes
 
@@ -152,7 +152,7 @@ For retail environments, the following apps and services can help you transform 
 
 | More apps and services from Microsoft | Description | Manage | Help |
 | ----- | ----- | ----- | ----- |
-| Bookings | Enable virtual fittings and consultations. | [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-appointments.md) | [Use Bookings](https://support.microsoft.com/en-us/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5) |
+| Bookings | Enable virtual fittings and consultations. | [Virtual Appointments with Microsoft Teams and the Bookings app](bookings-virtual-appointments.md) | [Use Bookings](https://support.microsoft.com/en-us/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5) |
 | Power Apps and the Power Platform | Integrate business processes and enable quick updates to data, such as store inventory, sales numbers, incident reports, and more. | [Teams integration with Microsoft Power Platform](/microsoftteams/platform/samples/teams-low-code-solutions) and [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps) | -  |
 | SharePoint | When you create a new team, a new SharePoint site is created and connected to the team. Many of the scenarios above rely on SharePoint features already embedded in Teams, such as sharing documents for team collaboration. | [Teams and SharePoint integration](/sharepoint/teams-connected-sites) | [Add a SharePoint page, list, or document library as a tab in Teams](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b)|
 | Viva Connections | Viva Connections creates a hub in Teams where your retail associates can view a tailored news feed from your organization and a personalized dashboard with resources they need. | [Overview of Viva Connections](/sharepoint/viva-connections-overview) | [Viva Connections in Microsoft Teams](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |

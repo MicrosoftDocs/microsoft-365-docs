@@ -1,5 +1,5 @@
 ---
-title: Virtual appointments with Teams - Integration into Epic EHR
+title: Virtual Appointments with Teams - Integration into Epic EHR
 author: LanaChin
 ms.author: v-lanachin
 manager: samanro
@@ -28,19 +28,19 @@ ms.reviewer: ansantam
 description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Epic EHR system. 
 ---
 
-# Virtual appointments with Teams - Integration into Epic EHR
+# Virtual Appointments with Teams - Integration into Epic EHR
 
 The Microsoft Teams Electronic Health Record (EHR) connector makes it easy for clinicians to launch a virtual patient appointment or consultation with another provider in Microsoft Teams directly from the Epic EHR system. Built on the Microsoft 365 cloud, Teams enables simple, secure collaboration and communication with chat, video, voice, and healthcare tools in a single hub that supports compliance with HIPAA, HITECH certification, and more.
 
 The communication and collaboration platform of Teams makes it easy for clinicians to cut through the clutter of fragmented systems so they can focus on providing the best possible care. With the Teams EHR connector, you can:
 
-- Launch Teams virtual appointments from your Epic EHR system with an integrated clinical workflow.
-- Enable patients to join Teams virtual appointments from within the patient portal or through SMS.
+- Launch Teams Virtual Appointments from your Epic EHR system with an integrated clinical workflow.
+- Enable patients to join Teams Virtual Appointments from within the patient portal or through SMS.
 - Support other scenarios including multi-participant, group visits, and interpreter services.
-- Write metadata back to the EHR system about Teams virtual appointments to record when attendees connect, disconnect, and enable automatic auditing and record keeping.
+- Write metadata back to the EHR system about Teams Virtual Appointments to record when attendees connect, disconnect, and enable automatic auditing and record keeping.
 - View consumption data reports and customizable Call Quality information for EHR-connected appointments.
 
-This article describes how to set up and configure the Teams EHR connector to integrate with the Epic platform in your healthcare organization. It also gives you an overview of the Teams virtual appointments experience from the Epic EHR system.
+This article describes how to set up and configure the Teams EHR connector to integrate with the Epic platform in your healthcare organization. It also gives you an overview of the Teams Virtual Appointments experience from the Epic EHR system.
 
 ## Before you begin
 
@@ -205,11 +205,11 @@ The context token for device test can be found in the patient integration record
 > [!Note]
 > The Epic customer analyst must complete the approval process for each FHIR base URL that's configured by the Microsoft 365 admin.
 
-## Launch Teams virtual appointments
+## Launch Teams Virtual Appointments
 
 After completing the EHR connector steps and Epic configuration, your organization is ready to support video appointments with Teams.
 
-### Virtual appointments prerequisites
+### Virtual Appointments prerequisites
 
 - Your systems must meet all [software and browser requirements](/microsoftteams/hardware-requirements-for-the-teams-app) for Teams.
 
@@ -266,9 +266,9 @@ Key features of the patient experience:
 
 ## Get insight into virtual appointments usage
 
-The [Virtual Visits usage report](virtual-visits-usage-report.md) in the Microsoft Teams admin center gives admins an overview of Teams virtual appointments activity in your organization. The report shows detailed analytics for virtual appointments including Teams EHR-integrated meetings conducted from your EHR system.
+The [Virtual Appointments usage report](virtual-appointments-usage-report.md) in the Microsoft Teams admin center gives admins an overview of Teams Virtual Appointments activity in your organization. The report shows detailed analytics for virtual appointments including Teams EHR-integrated meetings conducted from your EHR system.
 
-You can view key metrics such as lobby wait time and appointment duration. Use this information to gain insight into usage trends to help you optimize virtual appointments to deliver better business outcomes.
+You can view key metrics such as lobby wait time and appointment duration. Use this information to gain insight into usage trends to help you optimize Virtual Appointments to deliver better business outcomes.
 
 ### Privacy and location of data
 
@@ -280,6 +280,6 @@ The EHR user’s unique ID is stored in one of the three geographic regions desc
 
 ## Related articles
 
-- [Teams Virtual Visits usage report](virtual-visits-usage-report.md)
+- [Teams Virtual Appointments usage report](virtual-appointments-usage-report.md)
 - [Teams EHR connector Virtual Appointments report](ehr-connector-report.md)
 - [Get started with Teams for healthcare organizations](teams-in-hc.md)

@@ -111,19 +111,19 @@
     items: 
     - name: Simplify business processes
       href: simplify-business-processes.md
-  - name: Virtual appointments
+  - name: Virtual Appointments
     items: 
     - name: Overview
       href: virtual-appointments.md
-    - name: Virtual appointments with Teams and Bookings
+    - name: Virtual Appointments with Teams and Bookings
       href: bookings-virtual-appointments.md
-    - name: Virtual appointments with Teams and Cerner EHR 
+    - name: Virtual Appointments with Teams and Cerner EHR 
       href: ehr-admin-cerner.md
-    - name: Virtual appointments with Teams and Epic EHR 
+    - name: Virtual Appointments with Teams and Epic EHR 
       href: ehr-admin-epic.md
     - name: EHR connector Virtual Appointments report
       href: ehr-connector-report.md
-    - name: Virtual Visits usage report
+    - name: Virtual Appointments usage report
       href: virtual-visits-usage-report.md
     - name: Manage the join experience on browsers
       href: browser-join.md

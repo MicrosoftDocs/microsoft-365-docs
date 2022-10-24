@@ -1,5 +1,5 @@
 ---
-title: Virtual appointments with Teams - Integration into Cerner EHR
+title: Virtual Appointments with Teams - Integration into Cerner EHR
 author: LanaChin
 ms.author: v-lanachin
 manager: samanro
@@ -28,17 +28,17 @@ ms.reviewer: ansantam
 description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Cerner EHR system. 
 ---
 
-# Virtual appointments with Teams - Integration into Cerner EHR
+# Virtual Appointments with Teams - Integration into Cerner EHR
 
 The Microsoft Teams Electronic Health Record (EHR) connector makes it easy for clinicians to launch a virtual patient appointment or consult with another provider in Microsoft Teams directly from the Cerner EHR system. Built on the Microsoft 365 cloud, Teams enables simple, secure collaboration and communication with chat, video, voice, and healthcare tools in a single hub that supports compliance with HIPAA, HITECH certification, and more.
 
 The communication and collaboration platform of Teams makes it easy for clinicians to cut through the clutter of fragmented systems so they can focus on providing the best possible care. With the Teams EHR connector, you can:
 
-- Conduct Teams virtual appointments from your Cerner EHR system with an integrated clinical workflow.
-- Enable patients to join Teams virtual appointments from email or SMS notifications.
+- Conduct Teams Virtual Appointments from your Cerner EHR system with an integrated clinical workflow.
+- Enable patients to join Teams Virtual Appointments from email or SMS notifications.
 - View consumption data reports and customizable Call Quality information for EHR-connected appointments.
 
-This article describes how to set up and configure the Teams EHR connector to integrate with the Cerner platform. It also gives you an overview of the Teams virtual appointments experience from the Cerner EHR system.
+This article describes how to set up and configure the Teams EHR connector to integrate with the Cerner platform. It also gives you an overview of the Teams Virtual Appointments experience from the Cerner EHR system.
 
 ## Before you begin
 
@@ -124,11 +124,11 @@ You'll be presented with integration records for patient and provider launch. Th
 > [!NOTE]
 > At any time, your Microsoft 365 admin can sign in to the configuration portal to view integration records and change configuration settings, if needed.
 
-## Launch Teams virtual appointments
+## Launch Teams Virtual Appointments
 
 After completing the EHR connector steps and Cerner configuration steps, your organization is ready to support video appointments with Teams.
 
-### Virtual appointments prerequisites
+### Virtual Appointments prerequisites
 
 - Your systems must meet all [software and browser requirements](/microsoftteams/hardware-requirements-for-the-teams-app) for Teams.
 - You completed the integration setup between the Cerner organization and your Microsoft 365 organization.
@@ -161,11 +161,11 @@ Key features of the patient experience
 - Patients are placed in a lobby until the provider joins and admits them.
 - Patients can test their video and microphone in the lobby before joining the appointment.
 
-## Get insight into virtual appointments usage
+## Get insight into Virtual Appointments usage
 
-The [Virtual Visits usage report](virtual-visits-usage-report.md) in the Microsoft Teams admin center gives admins an overview of Teams virtual appointments activity in your organization. The report shows detailed analytics for virtual appointments including Teams EHR-integrated meetings conducted from your EHR system.
+The [Virtual Appointments usage report](virtual-appointments-usage-report.md) in the Microsoft Teams admin center gives admins an overview of Teams Virtual Appointments activity in your organization. The report shows detailed analytics for virtual appointments including Teams EHR-integrated meetings conducted from your EHR system.
 
-You can view key metrics such as lobby wait time and appointment duration. Use this information to gain insight into usage trends to help you optimize virtual appointments to deliver better business outcomes.
+You can view key metrics such as lobby wait time and appointment duration. Use this information to gain insight into usage trends to help you optimize Virtual Appointments to deliver better business outcomes.
 
 ## Privacy and location of data
 
@@ -177,6 +177,6 @@ The EHR user’s unique ID is stored in one of the three geographic regions desc
 
 ## Related articles
 
-- [Teams Virtual Visits usage report](virtual-visits-usage-report.md)
+- [Teams Virtual Appointments usage report](virtual-appointments-usage-report.md)
 - [Teams EHR connector Virtual Appointments report](ehr-connector-report.md)
 - [Get started with Teams for healthcare organizations](teams-in-hc.md)

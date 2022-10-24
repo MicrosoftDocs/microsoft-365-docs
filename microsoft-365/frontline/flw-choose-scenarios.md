@@ -101,26 +101,25 @@ Watch the following video to see an example of how you can simplify business pro
 | [Simplify business processes](simplify-business-processes.md) | Use task publishing to create standard processes across sites, lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. | Microsoft Teams<br>Power Platform | Tasks<br>Lists<br>Approvals |
 <!--| Manage sites, stores, and projects | Keep on top of tasks and projects. Use Tasks, Lists, Approvals, and Updates to check in with your workforce and keep things running smoothly. | | |-->
 
-## Virtual appointments
+## Virtual Appointments
 
 :::image type="icon" source="media/virtual-appointment-teams.png":::
 
 Use Microsoft Bookings and Microsoft Teams to schedule and host virtual appointments with clients and customers. You can integrate Forms with your virtual appointments experience to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
 
-Watch the following video to see an example of virtual appointments in healthcare organizations: 
+Watch the following video to see an example of Virtual Appointments in healthcare organizations:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
 
-
-More information: [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-appointments.md)
+More information: [Virtual Appointments with Microsoft Teams and the Bookings app](bookings-virtual-appointments.md)
 
 ## Help your team, clients, and customers
 
-Find resources to share with your team to help them get comfortable using Teams apps and features. Get customizable infographics and web content to help your clients and customers use virtual appointments with your organization.
+Find resources to share with your team to help them get comfortable using Teams apps and features. Get customizable infographics and web content to help your clients and customers use Virtual Appointments with your organization.
 
 | Scenario | Description |
 | --- | --- |
-|[Help your clients and customers use virtual appointments](virtual-appointments-toolkit.md) |Customizable infographics and FAQ that you can add to your website to make it easy for your clients to use virtual appointments with your organization. |
+|[Help your clients and customers use virtual appointments scheduled with Bookings](virtual-appointments-toolkit.md) |Customizable infographics and FAQ that you can add to your website to make it easy for your clients to use virtual appointments with your organization. |
 |[Help your frontline workers track time and attendance](shifts-toolkit.md) |Videos to help your frontline managers and employees learn about how to use Shifts in Microsoft Teams. |
 |[Help your frontline workers use collaboration apps and features](collab-features-apps-toolkit.md) |Videos to help your frontline team use Microsoft Teams apps and features. |
 
