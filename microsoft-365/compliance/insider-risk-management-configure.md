@@ -255,11 +255,15 @@ Before configuring a policy, define the following insider risk settings:
 
 4. On the **Policy timeframes** page, select the [policy timeframes](insider-risk-management-settings.md#policy-timeframes) to go into effect for a user when they trigger a match for an insider risk policy.
 5. On the **Intelligent detections** page, configure the following settings for insider risk policies:
-    - [File type exclusions](insider-risk-management-settings.md#file-type-exclusions)
-    - [Minimum number of daily events to boost score for unusual activity](insider-risk-management-settings.md#intelligent-detections)
-    - [Alert volume level](insider-risk-management-settings.md#alert-volume)
-    - [Microsoft Defender for Endpoint alert status](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses-preview)
-    - [Domain settings](insider-risk-management-settings.md#domains)
+    - [File activity detection](insider-risk-management-settings.md#file-activity-detection)
+    - [Alert volume](insider-risk-management-settings.md#alert-volume)
+    - [Microsoft Defender for Endpoint alert statuses](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses)
+    - [Domains](insider-risk-management-settings.md#domains)
+    - [Sensitive info type exclusion](insider-risk-management-settings.md#sensitive-info-types-exclusion)
+    - [File path exclusions](insider-risk-management-settings.md#file-path-exclusions)
+    - [Site exclusions](insider-risk-management-settings.md#site-exclusions)
+    - [Keyword exclusion](insider-risk-management-settings.md#keyword-exclusion)
+    
 6. On the **Export alerts** page, enable export of insider risk alert information using the Office 365 Management APIs if needed.
 7. On the **Priority user groups** page, create a priority user group and add users if not created in **Step 3**.
 8. On the **Power Automate flows** page, configure a flow from insider risk flow templates or create a new flow. See the [Getting started with insider risk management settings](insider-risk-management-settings.md#power-automate-flows-preview) article for step-by-step guidance.
