@@ -259,7 +259,7 @@ Before configuring a policy, define the following insider risk settings:
 5. On the **Intelligent detections** page, configure the following settings for insider risk policies:
     - [File activity detection](insider-risk-management-settings.md#file-type-exclusions))
     - [Alert volume](insider-risk-management-settings.md#alert-volume)
-    - [Microsoft Defender for Endpoint alert statuses](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses-preview)
+    - [Microsoft Defender for Endpoint alert statuses](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses)
     - [Domains](insider-risk-management-settings.md#domains)
     - [Sensitive info type exclusion](insider-risk-management-settings.md#sensitive-info-types-exclusion)
     - [File path exclusions](insider-risk-management-settings.md#file-path-exclusions)
