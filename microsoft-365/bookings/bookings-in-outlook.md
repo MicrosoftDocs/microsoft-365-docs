@@ -131,7 +131,7 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
    Set-OrganizationConfig -EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
    ```
 
-    - To turn on Bookings with me for your organization, You must set the **EwsApplicationAccessPolicy** to **EnforceAllowList** and  add **MicrosoftOWSPersonalBookings** to **EwsAllowList** by running the following command:  
+    - To turn on Bookings with me for your organization, you must set the **EwsApplicationAccessPolicy** to **EnforceAllowList** and add **MicrosoftOWSPersonalBookings** to **EwsAllowList** by running the following command:  
 
    ```PowerShell
    Set-OrganizationConfig -EwsApplicationAccessPolicy:EnforceAllowList
