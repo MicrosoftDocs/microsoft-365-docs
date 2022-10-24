@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/manage/servicenow-support-integration.md",
+      "redirect_url": "/microsoft-365/admin/manage/servicenow-virtual-agent-integration",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/admin/support/afghanistan.md",
       "redirect_url": "/microsoft-365/admin/support-contact-info",
       "redirect_document_id": true
@@ -9141,14 +9146,14 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/contentunderstanding/index.md",
-      "redirect_url": "/microsoft-365/contentunderstanding/",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "microsoft-365/compliance/sit-defn-credentials-in-url.md",
       "redirect_url": "/microsoft-365/compliance/sensitive-information-type-entity-definitions",
       "redirect_document_id": true
-    }            
+    },
+    {
+      "source_path": "microsoft-365/contentunderstanding/prebuilt-models.md",
+      "redirect_url": "/microsoft-365/contentunderstanding/prebuilt-overview",
+      "redirect_document_id": true
+    }                        
    ]
   }
