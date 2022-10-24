@@ -61,9 +61,11 @@ sections:
 
       - question: Does Defender for Business support servers? 
         answer: |
-          Server support is now in preview! See [How to get Microsoft Defender for Business servers (preview)](get-defender-business-servers.md).  
+          If you're planning to onboard an instance of Windows Server or Linux Server, you'll need an additional license, such as [Microsoft Defender for Business servers (preview)](get-defender-business-servers.md). 
 
-          When the Microsoft Defender for Business servers license becomes generally available (GA), it will be offered as an add-on to Microsoft 365 Business Premium and the standalone version of Defender for Business. At GA, Microsoft Defender for Business servers will be priced at $3 per server instance. At that point, you can either purchase a license for each onboarded server, or choose to offboard servers from Defender for Business.
+          Alternately, you could use [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction); however, your Defender for Business experience could change when you add an enterprise plan, such as Defender for Servers Plan 1 or Plan 2. To learn more, see [What happens if I have a mix of Microsoft endpoint security subscriptions?](#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions) and [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
+
+          When the [Microsoft Defender for Business servers](get-defender-business-servers.md) license becomes generally available (GA), it will be offered as an add-on to Microsoft 365 Business Premium and the standalone version of Defender for Business. At GA, Microsoft Defender for Business servers will be priced at $3 per server instance. At that point, you can either purchase a license for each onboarded server, or choose to offboard servers from Defender for Business.
 
       - question: What is the difference between Microsoft Defender for Business servers and Microsoft Defender for Servers Plan 1 and Plan 2?
         answer: |
