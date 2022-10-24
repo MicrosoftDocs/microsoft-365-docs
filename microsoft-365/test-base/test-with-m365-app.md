@@ -18,10 +18,11 @@ f1.keywords: NOCSH
 
 # Test your application with latest Microsoft 365 apps
 
+
 This section provides instructions on how to test your application with latest Microsoft 365 apps.
 
-**Important**  
-Currently only pre-release of Office 365 from the monthly preview channel is available.
+> [!IMPORTANT]
+> Currently only pre-release of Office 365 from the monthly preview channel is available.
 
 
 ### Choose the Microsoft 365 application 
@@ -30,7 +31,8 @@ In the **Configure test** step when onboarding a new package, switch on the **Pr
 
  > [!div class="mx-imgBorder"]  
  > ![Screenshot shows Package config test](Media/testwithm365app01.png)  
- > Note: As the Office preview channel provides pre-release Office updates with monthly cadence, only **security update** type is enabled for the package once the toggle button is turned on. Windows OS versions that could be selected in the Test matrix also will be limited to the Windows products for which the chosen Office product are available. Due to the mentioned pre-requisite, if you would like to turn on the Office update testing feature for existing packages, un-supported update type and Windows OS products will be disabled by default.
+ > [!NOTE] 
+ > As the Office preview channel provides pre-release Office updates with monthly cadence, only **security update** type is enabled for the package once the toggle button is turned on. Windows OS versions that could be selected in the Test matrix also will be limited to the Windows products for which the chosen Office product are available. Due to the mentioned pre-requisite, if you would like to turn on the Office update testing feature for existing packages, un-supported update type and Windows OS products will be disabled by default.
 
 &nbsp;  
 ### Define the install sequence for the chosen Microsoft 365 application 
@@ -46,7 +48,8 @@ In below example, Windows update will be installed first, followed by the pre-of
 
  > [!div class="mx-imgBorder"]  
  > ![Screenshot shows Functional test](Media/testwithm365app03.png)  
- > Note: For Out of box test type, Office install will be by default executed after the Windows update installation and before the install script gets executed.
+ > [!NOTE]
+ > For Out of box test type, Office install will be by default executed after the Windows update installation and before the install script gets executed.
 
 &nbsp;  
 ### View the test result with Microsoft 365 application  
@@ -63,4 +66,5 @@ In the detailed page, you will see install-Office as an auto-executed script whi
 
  > [!div class="mx-imgBorder"]  
  > ![Screenshot shows Reliability](Media/testwithm365app05.png)  
- > Note: For Out of box test type, a pre-defined Office interop test script will be executed to help collect conflict signals for pre-release Office running with user’s installed application by default. You can use Functional test to define your own test flow and bypass the Office test script if you would like to focus on testing how your application works with latest Office updates.
+ > [!NOTE]
+ > For Out of box test type, a pre-defined Office interop test script will be executed to help collect conflict signals for pre-release Office running with user’s installed application by default. You can use Functional test to define your own test flow and bypass the Office test script if you would like to focus on testing how your application works with latest Office updates.
