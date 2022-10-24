@@ -100,7 +100,7 @@ Here's an example:
 
 1. Once triage priority has been determined, an analyst begins an in-depth analysis by selecting the incident name. This page brings up the **Attack story** where data is displayed in tabs to assist with the analysis. Under the **Alerts story** tab, the types of alerts are displayed. Analysts can click on each alert to drill down into the respective detection source.
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="The attack story of an incident" lightbox="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="Screenshot that shows the attack story of an incident." lightbox="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png":::
 
     For a quick guide about which domain each detection source covers, review the [Detect](#detection-by-microsoft-365-defender) section of this article.
 
