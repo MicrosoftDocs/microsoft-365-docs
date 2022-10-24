@@ -66,7 +66,7 @@ In most countries or regions, billing support for Microsoft 365 for business pro
 Technical support is provided in English 24 hours a day, 7 days a week, and in some cases, in local languages as noted.
 
 >[!div class="nextstepaction"]
->[Find phone support numbers by country or region](support-contact-info.md)
+>[Find support phone numbers by country or region](support-contact-info.md)
 
 Admins, have your account details ready when you call.
 
