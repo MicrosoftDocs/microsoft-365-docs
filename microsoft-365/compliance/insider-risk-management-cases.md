@@ -91,7 +91,7 @@ The **Case overview** tab summarizes the case details for risk analysts and inve
 
 The **Case overview** tab also includes an **Alerts** section that includes the following information about policy match alerts associated with the case:
 
-- **Policy matches**: The name of the insider risk management policy associated with the match alerts for potentially risky user activity.
+- **Policy matches**: The name of the insider risk management policy associated with the match alerts for potentially risky user activity that may lead to a security incident.
 - **Status**: Status of the alert.
 - **Severity**: Severity of the alert.
 - **Time detected**: The time that has passed since the alert was generated.
