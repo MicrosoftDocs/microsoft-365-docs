@@ -52,7 +52,7 @@ This article describes both options and includes links to additional information
 
 *This option applies to servers running Windows Server 2012 R2 and Windows Server 2016.*
 
-A new agent was released in April 2022 for Windows Server 2012 R2 and Windows Server 2016. The new agent does not depend on MMA. There are significant benefits to moving to this new agent, such as a vastly extended feature set. To learn more, see NEED LINK TO BLOG.
+A new agent was released in April 2022 for Windows Server 2012 R2 and Windows Server 2016. The new agent does not depend on MMA. There are significant benefits to moving to this new agent, such as a vastly extended feature set. To learn more, see [Tech Community Blog: Defending Windows Server 2012 R2 and 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292).
 
 - Defender Vulnerability Management provides an assessment (SCID-2030) titled "Update Microsoft Defender for Endpoint core components" that will allow you to track which Windows Server 2012 R2 and 2016 machines have not yet been upgraded.
 
