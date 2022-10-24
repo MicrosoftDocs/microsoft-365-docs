@@ -101,7 +101,7 @@ Data moves are a back-end service operation with minimal impact to end-users. Fe
 
 #### Features Impacted
 
-Because of the complex nature of the hundreds of services (both standard and customizable) that are available within the many workloads that customers sign up for and use within a typical E3 or E5 license, the migration of customer data from one data center to another could cause minor disruption and/or temporary unavailability of certain services customers use. See the migration sections of each workload in the [Workload Data Residency Capabilities section](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide&branch=kvice-ADR-new) for more information.
+Because of the complex nature of the hundreds of services (both standard and customizable) that are available within the many workloads that customers sign up for and use within a typical E3 or E5 license, the migration of customer data from one data center to another could cause minor disruption and/or temporary unavailability of certain services customers use. See the migration sections of each workload in the [Workload Data Residency Capabilities section](m365-dr-workload-exo.md) for more information.
 
 #### Status Notification
 
@@ -143,10 +143,10 @@ The first step is to purchase the ADR SKU; check with your Microsoft representat
 
 ## Related topics
 
-[Legacy Move Program](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-legacy-move-program?view=o365-worldwide&branch=kvice-ADR-new)
+[Legacy Move Program](m365-dr-legacy-move-program.md)
   
-[New datacenter geos for Microsoft Dynamics CRM Online](https://learn.microsoft.com/power-platform/admin/new-datacenter-regions)
+[New datacenter geos for Microsoft Dynamics CRM Online](https://learn.microsoft.com/power-platform/admin/new-datacenter-regions?branch=main)
   
 [Azure services by region](https://azure.microsoft.com/regions/)
 
-[Teams experience in a Microsoft 365 Multi-Geo-enabled tenancy](https://learn.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo)
+[Teams experience in a Microsoft 365 Multi-Geo-enabled tenancy](https://learn.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo?branch=main)
