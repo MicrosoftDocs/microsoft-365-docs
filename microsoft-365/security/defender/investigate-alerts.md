@@ -81,7 +81,7 @@ You'll need to have any of the following roles to access Microsoft Defender for 
 
 To see the main alert page, select the name of the alert. Here's an example.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="The details of an alert in the Microsoft 365 Defender portal" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Screenshot showing the details of an alert in the Microsoft 365 Defender portal" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png":::
 
 You can also select the **Open the main alert page** action from the **Manage alert** pane.
 
@@ -114,7 +114,7 @@ Microsoft 365 Defender alerts may come from solutions like Microsoft Defender fo
 
 By default, only the most relevant alerts for the security operation center are enabled. If you want to get all AAD IP risk detections, you can change it in Microsoft 365 Defender setting page under **Alert service setting** section.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-aadip-alert.png" alt-text="The Filters section in the Microsoft 365 Defender portal." lightbox="../../media/investigate-alerts/alerts-ss-aadip-alert.png":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-aadip-alert.png" alt-text="Screenshot of Azure AD identity protection alerts setting in the Microsoft 365 Defender portal." lightbox="../../media/investigate-alerts/alerts-ss-aadip-alert.png":::
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -142,7 +142,7 @@ Once you've selected an entity of interest, the details page changes to display 
 
 To manage an alert, select **Manage alert** in the summary details section of the alert page. For a single alert, here's an example of the **Manage alert** pane.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="The Manage alert section in the Microsoft 365 Defender portal" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Screenshot of the Manage alert section in the Microsoft 365 Defender portal" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png":::
 
 The **Manage alert** pane allows you to view or specify:
 
@@ -165,19 +165,19 @@ The **Manage alert** pane allows you to view or specify:
 
 To manage a *set of alerts similar to a specific alert*, select **View similar alerts** in the **INSIGHT** box in the summary details section of the alert page.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" alt-text="Manage an alert in the Microsoft 365 Defender portal":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" alt-text="Screenshot of selecting an alert in the Microsoft 365 Defender portal":::
 
 From the **Manage alerts** pane, you can then classify all of the related alerts at the same time. Here's an example.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" alt-text="Managing related alerts in the Microsoft 365 Defender portal":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" alt-text="Screenshot of managing related alerts in the Microsoft 365 Defender portal":::
 
 If similar alerts were already classified in the past, you can save time by using Microsoft 365 Defender recommendations to learn how the other alerts were resolved. From the summary details section, select **Recommendations**.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" alt-text="Example of selecting recommendations for an alert":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" alt-text="Screenshot of an example of selecting recommendations for an alert":::
 
 The **Recommendations** tab provides next-step actions and advice for investigation, remediation, and prevention. Here's an example.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="Example of alert recommendations":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="Screenshot of an example of alert recommendations":::
 
 ## Suppress an alert
 
