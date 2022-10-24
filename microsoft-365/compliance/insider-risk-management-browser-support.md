@@ -35,7 +35,7 @@ Web browsers are often used by users to access both sensitive and non-sensitive 
 
 Signals for these events are detected in Microsoft Edge using built-in browser capabilities and using the *Microsoft Compliance Extension* add-on. In Google Chrome, customers use the *Microsoft Compliance Extension* for signal detection.
 
-The following table summarizes detected risk activities and extension support for each browser:
+The following table summarizes identified risk activities and extension support for each browser:
 
 | **Detected activities** | **Microsoft Edge** | **Google Chrome** |
 | ----------------------- | ------------------ | ----------------- |
