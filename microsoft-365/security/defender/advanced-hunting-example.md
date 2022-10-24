@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
-ms.topic: article
+- m365-security
+- tier2
+ms.topic: conceptual
 ---
 
 # Advanced hunting example for Microsoft Defender for Office 365

@@ -1,5 +1,6 @@
 ---
 title: "Content stored in Exchange Online mailboxes"
+description: "Content produced by cloud-based apps in Microsoft 365 is stored or associated with a user's Exchange Online mailbox. This content can be searched using Microsoft eDiscovery tools."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,13 +10,14 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MED150
 - MET150
-ms.assetid:
-description: "Content produced by cloud-based apps in Microsoft 365 is stored or associated with a user's Exchange Online mailbox. This content can be searched using Microsoft eDiscovery tools."
 ---
 
 # Content stored in Exchange Online mailboxes for eDiscovery

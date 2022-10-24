@@ -11,10 +11,13 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-audit
 - m365initiative-compliance
 - m365solution-scenario
+- highpri
+- audit
 ms.custom: admindeeplinkEXCHANGE
 search.appverid: 
 - MOE150
@@ -33,6 +36,8 @@ This article discusses the following steps necessary to set up Audit (Standard).
 These steps include ensuring the proper organizational subscriptions and user licensing required to generate and preserve audit records and assigning permissions to team members of your security operations, IT, compliance, and legal teams so that can search the audit log.
 
 For more information, see [Audit (Standard) in Microsoft 365](auditing-solutions-overview.md#audit-standard).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Verify organization subscription and user licensing
 

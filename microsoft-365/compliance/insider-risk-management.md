@@ -12,15 +12,18 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- highpri 
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
 ---
 
 # Learn about insider risk management
 
-> [!TIP]
-> *Did you know you can try the premium versions of all nine Microsoft Purview solutions for free?* Use the 90-day Purview solutions trial to explore how robust Purview capabilities can help your organization meet its compliance needs. Microsoft 365 E3 and Office 365 E3 customers can start now at the [Microsoft Purview compliance portal trials hub](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Learn details about [who can sign up and trial terms](compliance-easy-trials.md).
+>[!IMPORTANT]
+>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
 
 Microsoft Purview Insider Risk Management is a compliance solution that helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization. Insider risk policies allow you to define the types of risks to identify and detect in your organization, including acting on cases and escalating cases to Microsoft eDiscovery (Premium) if needed. Risk analysts in your organization can quickly take appropriate actions to make sure users are compliant with your organization's compliance standards.
 
@@ -41,6 +44,8 @@ Check out the [Microsoft Mechanics video](https://www.youtube.com/watch?v=Ynkfu8
 
 > [!IMPORTANT]
 > Insider risk management is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that insider risk management is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Modern risk pain points
 
@@ -122,7 +127,7 @@ Alerts are resolved by opening a new case, assigning the alert to an existing ca
 
 ### Investigate
 
-Quickly investigate all activities for a selected user with [User activity reports (preview)](insider-risk-management-activities.md#user-activity-reports-preview). These reports allow investigators in your organization to examine activities for specific users for a defined time period without having to assign them temporarily or explicitly to an insider risk management policy. After examining activities for a user, investigators can dismiss individual activities as benign, share or email a link to the report with other investigators, or choose to assign the user temporarily or explicitly to an insider risk management policy.
+Quickly investigate all activities for a selected user with [User activity reports](insider-risk-management-activities.md#user-activity-reports). These reports allow investigators in your organization to examine activities for specific users for a defined time period without having to assign them temporarily or explicitly to an insider risk management policy. After examining activities for a user, investigators can dismiss individual activities as benign, share or email a link to the report with other investigators, or choose to assign the user temporarily or explicitly to an insider risk management policy.
 
 [Cases](insider-risk-management-cases.md) are created for alerts that require deeper review and investigation of the activity details and circumstances around the policy match. The **Case dashboard** provides an all-up view of all active cases, open cases over time, and case statistics for your organization. Reviewers can quickly filter cases by status, the date the case was opened, and the date the case was last updated.
 
@@ -188,16 +193,14 @@ For organizations in the healthcare industry, recent studies have found a very h
 
 ### Actions and behaviors by disgruntled users (preview)
 
-Employment stresses events can impact user behavior in several ways that relate to insider risks. These stressors may be a poor performance review, a position demotion, or the user being placement on a performance review plan. Though most users don't respond maliciously to these events, the stress of these actions may result in some users to behave in ways they may not normally consider during normal circumstances. To help identify these types of risky activities, the following insider risk management policy templates use the Microsoft 365 HR connector and starts scoring risk indicators relating to behaviors that may occur near employment stressor events:
+Employment stressor events can impact user behavior in several ways that relate to insider risks. These stressors may be a poor performance review, a position demotion, or the user being placement on a performance review plan. Stressors may also result in potentially inappropriate behavior such as users sending potentially threatening, harassing, or discriminatory language in email and other messages. Though most users don't respond maliciously to these events, the stress of these actions may result in some users to behave in ways they may not normally consider during normal circumstances. To help identify these types of risky activities, the following insider risk management policy templates can use the HR connector and/or integration with a [dedicated communication compliance policy](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) to bring users into scope for insider risk management policies and start scoring risk indicators relating to behaviors that may occur near employment stressor events:
 
 - [Data leaks by disgruntled users (preview)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Security policy violations by disgruntled users (preview)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
-### Risky browser usage that could result in a security incident (preview)
+### Visual context for potentially risky user activities with forensic evidence (preview)
 
-Most organizations provide users with rules and guidelines that clarify how an organization's devices and internet access should be used. These policies help protect both the organization and users from security and regulatory risks. To help identity these types of risky actions, the following insider risk management policy template can help detect and enable risk scoring for web browsing behaviors that might result in a data security incident, such as visiting sites that provide malware or hacking tools.
-
-- [General risky browser usage (preview)](insider-risk-management-policies.md#general-risky-browser-usage-preview)
+Having visual context is crucial for security teams during forensic investigations to get better insights into potentially risky user activities that may lead to a security incident. This may include visual capturing of these activities to help evaluate if they are indeed risky or taken out of context and not potentially risky. For activities that are determined to be risky, having forensic evidence captures can help investigators and your organization better mitigate, understand, and respond to these activities. To help with this scenario, [enable forensic evidence capturing](insider-risk-management-forensic-evidence.md) for online and offline devices in your organization.
 
 ## Ready to get started?
 

@@ -14,14 +14,19 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
 ---
 
 # Use communication compliance reports and audits
+
+>[!IMPORTANT]
+>Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Reports
 
@@ -50,47 +55,47 @@ Use the *Export* option to create a .csv file containing the report details for 
 - **Policy settings and status**: provides a detailed look at policy configuration and settings, as well as the general status for each of the policy (matches and actions) on messages. Includes policy information and how policies are associated with users and groups, locations, review percentages, reviewers, status, and when the policy was last modified. Use the *Export* option to create a .csv file containing the report details.
 - **Items and actions per policy**: Review and export matching items and remediation actions per policy. Includes policy information and how policies are associated with:
 
-    - Items matched
-    - Escalated items
-    - Resolved items
-    - Tagged as compliant
-    - Tagged as non-compliant
-    - Tagged as questionable
-    - Items pending review
-    - User notified
-    - Case created
+  - Items matched
+  - Escalated items
+  - Resolved items
+  - Tagged as compliant
+  - Tagged as non-compliant
+  - Tagged as questionable
+  - Items pending review
+  - User notified
+  - Case created
 
 - **Item and actions per location**: Review and export matching items and remediation actions per Microsoft 365 location. Includes information about how workload platforms are associated with:
 
-    - Items matched
-    - Escalated items
-    - Resolved items
-    - Tagged as compliant
-    - Tagged as non-compliant
-    - Tagged as questionable
-    - Items pending review
-    - User notified
-    - Case created
+  - Items matched
+  - Escalated items
+  - Resolved items
+  - Tagged as compliant
+  - Tagged as non-compliant
+  - Tagged as questionable
+  - Items pending review
+  - User notified
+  - Case created
 
 - **Activity by user**: Review and export matching items and remediation actions per user. Includes information about how users are associated with:
 
-    - Items matched
-    - Escalated items
-    - Resolved items
-    - Tagged as compliant
-    - Tagged as non-compliant
-    - Tagged as questionable
-    - Items pending review
-    - User notified
-    - Case created
+  - Items matched
+  - Escalated items
+  - Resolved items
+  - Tagged as compliant
+  - Tagged as non-compliant
+  - Tagged as questionable
+  - Items pending review
+  - User notified
+  - Case created
 
 - **Sensitive information type per location** (preview): Review and export information about the detection of sensitive information types and the associated sources in communication compliance policies. Includes the overall total and the specific breakdown of sensitive information type instances in the sources configured in your organization. The values for each third-party source are displayed in separate columns in the .csv file. Examples are:
 
-    - **Email**: Sensitive information types detected in Exchange email messages.
-    - **Teams**: Sensitive information types detected in Microsoft Teams channels and chat messages.
-    - **Yammer**: Sensitive information types detected in Yammer inboxes, posts, chats, and replies.
-    - **Third-party sources**: Sensitive information types detected for activities associated with third-party connectors configured in your organization. To view the breakdown of third-party sources for a specific sensitive information type in the report, hover your mouse over the value for the sensitive information type in the Third-party source column.
-    - **Other**: Sensitive information types used for internal system processing. Selecting or deselecting this source for the report won't affect any values.
+  - **Email**: Sensitive information types detected in Exchange email messages.
+  - **Teams**: Sensitive information types detected in Microsoft Teams channels and chat messages.
+  - **Yammer**: Sensitive information types detected in Yammer inboxes, posts, chats, and replies.
+  - **Third-party sources**: Sensitive information types detected for activities associated with third-party connectors configured in your organization. To view the breakdown of third-party sources for a specific sensitive information type in the report, hover your mouse over the value for the sensitive information type in the Third-party source column.
+  - **Other**: Sensitive information types used for internal system processing. Selecting or deselecting this source for the report won't affect any values.
 
 ### Message details report
 
@@ -140,19 +145,19 @@ In some instances, you must provide information to regulatory or compliance audi
 > [!IMPORTANT]
 > Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable the audit log](/microsoft-365/compliance/communication-compliance-configure#step-2-required-enable-the-audit-log). When activities trigger events that are captured in the Microsoft 365 Audit log, it may take up to 48 hours before these events can be viewed in communication compliance policies.
 
-To view communication compliance policy update activities, select the **Export policy updates** control on the main page for any policy. You must be assigned the *Global Admin* or *Communication Compliance Admin* roles to export update activities. This action generates an audit file in the .csv format that contains the following information:
+To view communication compliance policy update activities, select the **Export policy updates** control on the main page for any policy. You must be assigned the *Global Admin* or *Communication Compliance Admins* roles to export update activities. This action generates an audit file in the .csv format that contains the following information:
 
-|**Field**|**Details**|
-|:-----|:-----|
+|Field|Details|
+|---|---|
 | **CreationDate** | The date the update activity was performed in a policy. |
 | **UserIds** | The user that performed the update activity in a policy. |
 | **Operations** | The update operations performed on the policy. |
 | **AuditData** | This field is the main data source for all policy update activities. All update activities are recorded and separated by comma delimiters. |
 
-To view communication compliance review activities for a policy, select the **Export review activities** control on the **Overview** page for a specific policy. You must be assigned the *Global Admin* or *Communication Compliance Admin* roles to export review activities. This action generates an audit file in the .csv format that contains the following information:
+To view communication compliance review activities for a policy, select the **Export review activities** control on the **Overview** page for a specific policy. You must be assigned the *Global Admin* or *Communication Compliance Admins* roles to export review activities. This action generates an audit file in the .csv format that contains the following information:
 
-|**Field**|**Details**|
-|:-----|:-----|
+|Field|Details|
+|---|---|
 | **CreationDate** | The date the review activity was performed in a policy. |
 | **UserIds** | The user that performed the review activity in a policy. |
 | **Operations** | The review operations performed on the policy. |
@@ -182,8 +187,8 @@ Communication compliance policy matches are stored in a supervision mailbox for 
 
 To check the size of a supervision mailbox for a policy, complete the following steps:
 
-1. Use the [Connect-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) cmdlet in the Exchange Online PowerShell V2 module to connect to Exchange Online PowerShell using modern authentication.
-2. Run the following command in PowerShell:
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+2. Run the following command:
 
     ```PowerShell
     ForEach ($p in Get-SupervisoryReviewPolicyV2 | Sort-Object Name)

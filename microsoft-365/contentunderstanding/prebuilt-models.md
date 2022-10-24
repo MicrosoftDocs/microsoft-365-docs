@@ -1,5 +1,5 @@
 ---
-title: Use a prebuilt model to extract info from invoices or receipts in Microsoft SharePoint Syntex
+title: Use a prebuilt model to extract info from invoices or receipts in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,11 +12,11 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create and configure a prebuilt model in SharePoint Syntex.
+description: Learn how to create and configure a prebuilt model in Microsoft Syntex.
 
 ---
 
-# Use a prebuilt model to extract info from invoices or receipts in Microsoft SharePoint Syntex
+# Use a prebuilt model to extract info from invoices or receipts in Microsoft Syntex
 
 Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization. 
 
@@ -30,7 +30,7 @@ Additional prebuilt models will be available in future releases.
 
 ## Create a prebuilt model
 
-Follow these steps to create a prebuilt model to classify documents in SharePoint Syntex.
+Follow these steps to create a prebuilt model to classify documents in Syntex.
 
 1. From the **Models** page, select **Create a model**.
 

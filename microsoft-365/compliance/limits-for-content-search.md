@@ -1,5 +1,6 @@
 ---
 title: "Limits for Content search and eDiscovery (Standard) in the compliance center"
+description: "Learn about the limits in effect for the Content search and eDiscovery (Standard) features in the Microsoft Purview compliance portal."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,13 +11,12 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: "Learn about the limits in effect for the Content search and eDiscovery (Standard) features in the Microsoft Purview compliance portal."
 ---
 
 # Limits for eDiscovery search
@@ -24,6 +24,8 @@ description: "Learn about the limits in effect for the Content search and eDisco
 Various limits are applied to eDiscovery search tools in the Microsoft Purview compliance portal. This includes searches run on the **Content search** page and searches that are associated with an eDiscovery case on the **eDiscovery (Standard)** page. These limits help to maintain the health and quality of services provided to organizations. There are also limits related to the indexing of email messages in Exchange Online for search. You can't modify the limits for eDiscovery searches or email indexing, but you should be aware of them so that you can take these limits into consideration when planning, running, and troubleshooting eDiscovery searches.
 
 For limits related to the Microsoft Purview eDiscovery (Premium) tool, see [Limits in eDiscovery (Premium)](limits-ediscovery20.md)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Search limits
 
@@ -114,9 +116,6 @@ The following table describes the indexing limits that might result in an email 
 |||
 
 ## Jobs limits
-
-> [!NOTE]
-> eDiscovery (Premium) jobs are counted toward the eDiscovery (Standard) limits. For example, if you have 50 jobs running in eDiscovery (Premium) you will be unable to start jobs in eDiscovery (Standard). eDiscovery (Standard) jobs do not count toward eDiscovery (Premium) limits.
 
 |Description|Limit|
 |---|---|

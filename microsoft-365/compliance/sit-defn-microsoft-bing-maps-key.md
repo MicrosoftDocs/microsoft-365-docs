@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Bing maps key entity definition (preview)"
+title: "Microsoft Bing maps key entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,16 +14,21 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: "Microsoft Bing maps key sensitive information type entity definition."
 ---
 
-# Microsoft Bing maps key (preview)
+# Microsoft Bing maps key
 
-## Format
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+This SIT is also included in the [All credentials](sit-defn-all-creds.md) bundled SIT.
+
+ ## Format
 
 A combination of 64 characters consisting of letters, digits, and special characters.
 
@@ -39,9 +44,15 @@ for example:
 
 `abcdefghijklmnopqrstuvwxyz0123456789-_ABCDEabcdefghijklmnopqrstu`
 
+## Credential example 
+
+`bingMapsKey=abcdefghijklmnopqrstuvwxyz0123456789-_ABCDEabcdefghijklmnopqrstu`
+
 ## Checksum
 
 No
+
+SITs that have checksums use a unique calculation to check if the information is valid. This means when the **Checksum** value is **Yes**, the service can make a positive detection based on the sensitive data alone. When the **Checksum** value is **No** additional (secondary) elements must also be detected  for the service to make a positive detection.
 
 ## Definition
 
@@ -49,7 +60,7 @@ This SIT is designed to match the security information that's used to call [Bing
 
 It uses several primary resources:
 
-- Patterns of Base64 URL encoded 384 bits symmetric key.
+- Patterns of Base64 URL encoded 384-bits symmetric key.
 - Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName.
 - Patterns of mockup values, redactions, and placeholders.
 - A dictionary of vocabulary.

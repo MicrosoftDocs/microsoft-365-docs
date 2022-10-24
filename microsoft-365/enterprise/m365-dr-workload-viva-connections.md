@@ -22,7 +22,7 @@ ms.collection:
 
 Service documentation:  [Overview: Viva Connections](https://learn.microsoft.com/viva/connections/viva-connections-overview)
 
-Capability summary: Microsoft Viva Connections is your gateway to a modern employee experience designed to keep everyone engaged and informed. Viva Connections is a customizable app in Microsoft Teams that gives everyone a personalized destination to discover relevant news, conversations, and the tools they need to succeed.  Data storage is related to the following Viva Connections Components: Dashboard and feed.
+Capability Summary: Microsoft Viva Connections is your gateway to a modern employee experience designed to keep everyone engaged and informed. Viva Connections is a customizable app in Microsoft Teams that gives everyone a personalized destination to discover relevant news, conversations, and the tools they need to succeed.  Data storage is related to the following Viva Connections Components: Dashboard and feed.
 
 ## Data Residency commitments available
 
@@ -31,14 +31,14 @@ Capability summary: Microsoft Viva Connections is your gateway to a modern emplo
 Required Conditions:
 
 1. Tenant has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
-2. Tenant has a valid Advanced Data Residency subscription for all users in the tenant.
-3. The Viva Connections subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_*
+1. Tenant has a valid Advanced Data Residency subscription for all users in the tenant.
+1. The Viva Connections subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
 **Commitment:**
 
-The following customer data will be stored in the related *Geography*:
+The following customer data will be stored in the related _Geography_:
 
-- The Dashboard and Feed can have content sourced from SharePoint Online, Exchange Online and Microsoft Teams. All data sourced from these services that are covered by their data residency commitments will be stored in the relevant *Geography*. Please refer to sections ***TODO ADD LINK 5.1,5.2, and 5.3.***
+- The Dashboard and Feed can have content sourced from SharePoint Online, Exchange Online and Microsoft Teams. All data sourced from these services that are covered by their data residency commitments will be stored in the relevant _Geography_. Please refer to [Exchange Online](m365-dr-workload-exo.md), [SharePoint Online](m365-dr-workload-spo.md) and [Microsoft Teams](m365-dr-workload-teams.md) workload data residency pages for more details.
 
 ### Migration
 

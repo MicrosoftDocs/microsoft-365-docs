@@ -12,7 +12,7 @@ ms.date:
 ms.localizationpriority: medium
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn about the anti-phishing policies that are available in Exchange Online Protection (EOP) and Microsoft Defender for Office 365.
@@ -236,11 +236,13 @@ The following impersonation settings are only available in anti-phishing policie
 - **Add trusted senders and domains**: Exceptions to the impersonation protection settings. Messages from the specified senders and sender domains are never classified as impersonation-based attacks by the policy. In other words, the action for protected senders, protected domains, or mailbox intelligence protection aren't applied to these trusted senders or sender domains. The maximum limit for these lists is 1024 entries.
 
   > [!NOTE]
-  > If Microsoft 365 system messages from the following senders are identified as impersonation attempts, you can add the senders to the trusted senders list:
   >
-  > - `⁠noreply@email.teams.microsoft.com`
-  > - `noreply@emeaemail.teams.microsoft.com`
-  > - `no-reply@sharepointonline.com`
+  > - If Microsoft 365 system messages from the following senders are identified as impersonation attempts, you can add the senders to the trusted senders list:
+  >   - `⁠noreply@email.teams.microsoft.com`
+  >   - `noreply@emeaemail.teams.microsoft.com`
+  >   - `no-reply@sharepointonline.com`
+  >
+  > - Trusted domain entries don't include subdomains of the specified domain. You need to add an entry for each subdomain.
 
 ### Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365
 

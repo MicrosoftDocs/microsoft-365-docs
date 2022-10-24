@@ -3,7 +3,7 @@ title: "Microsoft 365 data locations"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 10/14/2022
+ms.date: 
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -11,6 +11,7 @@ ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection: 
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
@@ -21,22 +22,6 @@ description: "Determine where your Microsoft 365 customer data is stored worldwi
 ---
 
 # Where your Microsoft 365 customer data is stored
-
-Customers should view tenant specific data location information in your Microsoft 365 admin center in **Settings** > **Org settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a> > **Data location**.
-
-For a detailed discussion on M365 Data residency, review the documentation on [M365 Data Residency](m365-dr-overview.md).
-
-In order to determine the data location for M365 workloads specifically, see the links below.
-
-(***TODO: need to look at removing this***)If your business is located in the European Union, see [Data locations for the European Union](EU-data-storage-locations.md) for more information.
-
-Find information about the contractual commitments for the storage location of customer data at rest in the [Microsoft Products and Services Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA).
-
-For Azure Active Directory data locations, see [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/#overview).
-
-If your billing address is outside Europe and you have an Office 365 Education subscription, then notwithstanding the "Location of Customer Data at Rest for Core Online Services" section of the OST, Microsoft may provision your Office 365 tenant in, transfer your data to, and store your data at rest anywhere within Europe or North America.  If your billing address is in Europe and you have an Office 365 Education subscription, then notwithstanding the "Location of Customer Data at Rest for Core Online Services" section of the OST, Microsoft may provision your Office 365 tenant in, transfer your data to, and store your data at rest anywhere within the European Union.
-
-## Data Center Locations
 
 See the following links to understand workload data location.
 

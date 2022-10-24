@@ -6,14 +6,16 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier1
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.date: 09/22/2021
 ms.subservice: mde
 search.appverid: met150
@@ -33,6 +35,11 @@ search.appverid: met150
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
+## Prerequisites
+- [Endpoint Protection point site system role](/mem/configmgr/protect/deploy-use/endpoint-protection-site-role)
+
+> [!IMPORTANT]
+> The Endpoint Protection point site system role is required so that antivirus and attack surface reduction policies are properly deployed to the targeted endpoints.  Without this role, the endpoints in the device collection won't receive the configured antivirus and attack surface reduction policies.
 
 You can use Configuration Manager to onboard endpoints to the Microsoft Defender for Endpoint service. 
 
@@ -63,7 +70,7 @@ For each device, you can set a configuration value to state whether samples can 
 
 You can set a compliance rule for configuration item in Configuration Manager to change the sample share setting on a device.
 
-This rule should be a *remediating* compliance rule configuration item that sets the value of a registry key on targeted devices to make sure they're complaint.
+This rule should be a *remediating* compliance rule configuration item that sets the value of a registry key on targeted devices to make sure they're compliant.
 
 The configuration is set through the following registry key entry:
 
@@ -114,7 +121,7 @@ Configure all available rules to Audit.
 > [!NOTE]
 > Blocking these activities may interrupt legitimate business processes. The best approach is setting everything to audit, identifying which ones are safe to turn on, and then enabling those settings on endpoints which do not have false positive detections.
 
-For deploying AV and ASR policies through Microsoft System Center Configuration Manager (SCCM) follow the steps:
+For deploying Antivirus (AV) and Attack Surface Reduction (ASR) policies through Microsoft Endpoint Configuration Manager (SCCM) follow the steps:
 
 - Enable Endpoint Protection and configure custom client settings.
 - Install the Endpoint Protection client from a command prompt.

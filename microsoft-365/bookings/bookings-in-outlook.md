@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ROBOTS: NO INDEX, NO FOLLOW
 description: "Use Bookings with me to let others schedule meetings with you in Outlook."
 ---
@@ -14,9 +16,6 @@ description: "Use Bookings with me to let others schedule meetings with you in O
 # Bookings with me
 
 **Bookings with me** in Outlook is a web-based personal scheduling page that integrates with the free/busy information from your Outlook calendar. Bookings with me lets people schedule a meeting or appointment with you. You can create custom meeting types to share with others so they can easily schedule time with you based on your availability and preferences. You both get an email confirmation and attendees can update or cancel scheduled meetings with you from your Bookings with me page.
-
-> [!NOTE]
-> Bookings with me is available worldwide in preview. Features included in preview might not be complete and could undergo changes before becoming available in the public release.
 
 Bookings with me has two different views:
 
@@ -216,6 +215,12 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
     ```PowerShell
    Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
+
+### Create Bookings with me
+
+1. Open [Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+2. Select **Calendar**.
+3. Select the **Create bookings page** link that appears in your calendar to create Bookings with me.
 
 ## Frequently asked questions
 
