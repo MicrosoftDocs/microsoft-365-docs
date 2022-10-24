@@ -28,7 +28,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-If you are using the Microsoft Monitoring Agent (MMA) on Windows devices, you should keep this agent updated. With the modern, unified agent for Windows Server 2012 R2 and Windows Server 2016, you should migrate to the new solution instead. 
+If you're using the Microsoft Monitoring Agent (MMA) on Windows devices, you should keep this agent updated. With the modern, unified agent for Windows Server 2012 R2 and Windows Server 2016, you should migrate to the new solution instead. 
 
 - [Update the Microsoft Monitoring Agent (MMA) on your devices](#option-1-update-mma-on-your-devices)
 - [Use a new agent on Windows Server 2012 R2 or Windows Server 2016](#option-2-use-a-new-agent-on-windows-server-2012-r2-or-windows-server-2016)
@@ -52,17 +52,17 @@ This article describes both options and includes links to additional information
 
 *This option applies to servers running Windows Server 2012 R2 and Windows Server 2016.*
 
-A new agent was released in April 2022 for Windows Server 2012 R2 and Windows Server 2016. The new agent does not depend on MMA. There are significant benefits to moving to this new agent, such as a vastly extended feature set. To learn more, see [Tech Community Blog: Defending Windows Server 2012 R2 and 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292).
+A new agent was released in April 2022 for Windows Server 2012 R2 and Windows Server 2016. The new agent doesn't depend on MMA. There are significant benefits to moving to this new agent, such as a vastly extended feature set. To learn more, see [Tech Community Blog: Defending Windows Server 2012 R2 and 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292).
 
-- Defender Vulnerability Management provides an assessment (SCID-2030) titled "Update Microsoft Defender for Endpoint core components" that will allow you to track which Windows Server 2012 R2 and 2016 machines have not yet been upgraded.
+- Defender Vulnerability Management provides an assessment (SCID-2030) titled "Update Microsoft Defender for Endpoint core components" that will allow you to track which Windows Server 2012 R2 and 2016 machines haven't yet been upgraded.
 
 - See [Server migration scenarios from the previous, MMA-based Microsoft Defender for Endpoint solution](server-migration.md) to understand your options for upgrading to the new agent.
 
-- If you are using Microsoft Endpoint Configuration Manager (SCCM/ConfigMgr) 2107 or later to manage your servers running Windows Server 2012 R2 or Windows Server 2016, see [Migrating servers from Microsoft Monitoring Agent to the unified solution](application-deployment-via-mecm.md) to perform an **orchestrated** upgrade.
+- If you're using Microsoft Endpoint Configuration Manager (SCCM/ConfigMgr) 2107 or later to manage your servers running Windows Server 2012 R2 or Windows Server 2016, see [Migrating servers from Microsoft Monitoring Agent to the unified solution](application-deployment-via-mecm.md) to perform an **orchestrated** upgrade.
 
-- If you are using Microsoft Endpoint Configuration Manager (SCCM/ConfigMgr) 2207 or later to manage your servers running Windows Server 2012 R2 or Windows Server 2016, see [Onboarding to Microsoft Defender for Endpoint with Configuration Manager 2207 and later versions](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection) to perform an **automated** upgrade.
+- If you're using Microsoft Endpoint Configuration Manager (SCCM/ConfigMgr) 2207 or later to manage your servers running Windows Server 2012 R2 or Windows Server 2016, see [Onboarding to Microsoft Defender for Endpoint with Configuration Manager 2207 and later versions](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection) to perform an **automated** upgrade.
 
-- If you are using Microsoft Defender for Cloud with servers running Windows Server 2012 R2 or Windows Server 2016, you can automated the upgrade by selecting **Enable unified solution**. See [Users with Defender for Servers enabled and Microsoft Defender for Endpoint deployed](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows).
+- If you're using Microsoft Defender for Cloud with servers running Windows Server 2012 R2 or Windows Server 2016, you can automate the upgrade by selecting **Enable unified solution**. See [Users with Defender for Servers enabled and Microsoft Defender for Endpoint deployed](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows).
 
 ## Important information about MMA
 
