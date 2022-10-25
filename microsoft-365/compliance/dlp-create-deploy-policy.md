@@ -219,6 +219,18 @@ This section dives more deeply into the three types of controls you'll use in co
 
 There are three axes you can use to control the policy deployment process, the scope, the state of the policy and the actions. You should always take an incremental approach to deploying a policy, starting from the least impactful/test mode through to full enforcement.
 
+
+#### Recommended deployment control configurations
+
+|When your policy state is | Your policy scope can be  |  Impact of policy actions |
+|---------|---------|---------|
+|Test    |Policy scope of locations can be narrow or broad         |- You can configure any action </br> - No user impact from configured actions </br>-  Admin sees alerts and can track activities            |         |n/a|
+|Test with policy tips   |  Policy should be scoped to target a pilot group and then expand the scope as you tune the policy       |- You can configure any action </br>- No user impact from configured actions </br> - Users can receive policy tips and alerts </br>- Admin sees alerts and can track activities        | |        | 
+|Turn it on| All targeted location instances |- All configured actions are enforced on user activities </br>- Admin sees alerts and can track activities  |
+|Keep it off| n/a  | n/a  |
+
+
+
 #### State
 
 State is the primary control you'll use to rollout a policy. When you finished creating your policy, you set the state of the policy to **Keep it off**. You should leave it in this state while you're working on the policy configuration and until you get a final review and sign off. The state can be set to:
@@ -250,35 +262,14 @@ Then when you change the state to **Test it out first and show policy tips**, yo
 
 When you move the policy to **Turn it on right away**, you'll broaden the scope to include all the instances of locations that you intended when the policy was designed. 
 
+### Policy deployments steps
 
-
-
-
-
-
-
-
-Policy deployments should follow these steps:
-
-1. After you've created the policy and set its state to turned off, do a final review it with your stakeholders.
-1. Set the state to test mode with no policy tips. The location scope can be broad at this point so you can gather data on the behavior of the policy.
+1. After you've created the policy and set its state to **Keep it off**, do a final review it with your stakeholders.
+1. Change the state to **Test it out first**. The location scope can be broad at this point so you can gather data on the behavior of the policy across multiple locations or just start with a single location.
 1. Tune the policy based on the behavior data so that it better meets the business intent.
-1. Refine the scope of locations if needed and make use of includes/exludes so that the policy is first rolled out to the users who are a good test group.
-1. Set the state to test mode with policy tips. Gather user feedback and alert and event data, if needed tune the policy and your plans more. Make sure you address all the issues that your users bring up. It's pretty much a guaranteed that they'll raise things that you didn't think of. Develop a group of super users at this point. They can be a resource to help train other users as the scope of the policy is increased and more users come onboard.
-1. 
-
-You'll start deploying a policy in test mode where you'll tune it to fulfill your business intent based on it's behaviorAs you take a policy from test mode through to full enforcement, you have to educate your users.
-
-
-control objectives
-
-controls
-
-monitor impact, and tune the policy to meet your control objectives. DLP policies can take strong protective actions, which if implemented without proper care can disrupt your business processes and user productivity After you've created a policy, you'll take a graduated approach to deploying it.
-
-
-probably first deploy it to a small group and in test mode, get feedback that you'll use to tune the policy and then deploy it to progressively larger and large groups and move it from test mode, to monitor mode and finally to full enforcement mode.
-
+1. Change the state to **Test it out first and show policy tips**. Refine the scope of locations to support a pilot group if needed and make use of includes/excludes so that the policy is first rolled out to that pilot group.
+1. Gather user feedback and alert and event data, if needed tune the policy and your plans more. Make sure you address all the issues that your users bring up. Your users will most likely encounter issues and raise question things that you didn't think of during the design phase. Develop a group of super users at this point. They can be a resource to help train other users as the scope of the policy is increased and more users come onboard. Before you go to the next stage of deployment, make sure that the policy is achieving your control objectives.
+1. Change the state to **Turn it on right away**. The policy is fully deployed. Monitor DLP alerts and DLP activity explorer. Address alerts.  
 
 ## See also
 
