@@ -76,7 +76,7 @@ Some features are only supported by built-in labeling for Office apps, and won't
 
 - For automatic and recommended labeling:
     - Access to intelligent classification services that include [trainable classifiers](classifier-learn-about.md), [exact data match (EDM)](sit-learn-about-exact-data-match-based-sits.md), and [named entities](named-entities-learn.md)
-    - Detection of sensitive information as users type
+    - Detection of sensitive information as users enter the text
     - In Word, users can review and remove the identified sensitive content
 - [Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) that is integrated into existing user workflows
 - [PDF support](sensitivity-labels-office-apps.md#pdf-support)
@@ -141,6 +141,8 @@ If after making these changes the **Sensitivity** button doesn't display on the 
 In the [newer versions of Office](#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps), the AIP add-in is disabled by default. To enable it, you must configure a new Office setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**:
 
 - **Use the Azure Information Protection add-in for sensitivity labeling**. Set the value to **1**.
+
+This new setting is still rolling out. If you don't see it yet, wait a few more days and try again.
 
 Deploy this setting by using Group Policy, or by using the [Office cloud policy service](/DeployOffice/overview-office-cloud-policy-service).
 

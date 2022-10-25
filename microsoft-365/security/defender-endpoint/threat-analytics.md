@@ -18,7 +18,7 @@ ms.collection:
   - m365-security
   - m365initiative-defender-endpoint
   - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ---
 
