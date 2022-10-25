@@ -67,28 +67,28 @@ Users and groups are included in the same file. Depending on whether it's a user
 
 **Users**. Enter these values in the columns:
 
-:::image type="content" source="media/t2t-onedrive-csv-mapping-users-columns.png" alt-text="format to use for mapping users":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-columns.png" alt-text="format to use for mapping users":::
 
-:::image type="content" source="media/t2t-onedrive-csv-mapping-users-example.png" alt-text="example of csv for users":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-example.png" alt-text="example of csv for users":::
 
 **Groups**. Enter these values in the columns:
 </br>
-:::image type="content" source="media/t2t-onedrive-csv-mapping-groups-columns.png" alt-text="format for csv file for groups":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-groups-columns.png" alt-text="format for csv file for groups":::
 </br>
 
 *Example*:
 
-:::image type="content" source="media/t2t-onedrive-csv-group-example.png" alt-text="example of adding groups to csv file":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-group-example.png" alt-text="example of adding groups to csv file":::
 
 
 **Guest users**. Any users who are remaining in the source tenant but will still need access to resources that are migrating to the target tenant must have new guest identities created for them in the target tenant. Enter these values in columns for guests:
 </br>
 
-:::image type="content" source="media/t2t-onedrive-csv-mapping-users-guests.png" alt-text="csv example when mapping a guest to a member":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-guests.png" alt-text="csv example when mapping a guest to a member":::
 
 *Example of multiple users in CSV file:* </br>
 
-:::image type="content" source="media/t2t-onedrive-csv-example-both-users-groups.png" alt-text="csv example showing groups and users":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-example-both-users-groups.png" alt-text="csv example showing groups and users":::
  
 
 ## Obtain the source tenant company ID
@@ -99,7 +99,7 @@ To obtain Source Tenant Company ID:
 3. Scroll down on the left-hand panel and select **Properties**.
 4. Locate the **Tenant ID Field**. The required Tenant ID will be in that box.
 
-:::image type="content" source="media/t2t-onedrive-azure-portal-tenant-id.png" alt-text="image of azure portal  active directory search":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-azure-portal-tenant-id.png" alt-text="image of azure portal  active directory search":::
 
 
 ## Obtain group object IDs

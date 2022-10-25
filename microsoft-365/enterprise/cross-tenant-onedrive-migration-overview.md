@@ -17,7 +17,7 @@ search.appverid: MET150
 description: "Overview of the OneDrive Cross-tenant migration"
 ---
 
-# Cross-tenant OneDrive migration
+# Cross-tenant OneDrive migration overview
 
 >[!Note]
 > This feature isn't currently supported for users of the Government Cloud, including GCC, Consumer, GCC High, or DoD.
@@ -89,7 +89,7 @@ Those redirects remain until the source tenant is deprovisioned. The admin can a
 
 ## How does it work?
 
-- **Step 1:** [Connect to the source and the target tenants](cross-tenant-migration-step1.md).  
+- **Step 1:** [Connect to the source and the target tenants](cross-tenant-onedrive-migration-step1.md).  
 - **Step 2:** [Establish trust between the source and the target tenant](cross-tenant-onedrive-migration-step2.md) 
 - **Step 3:** [Verify trust has been established](cross-tenant-onedrive-migration-step3.md) 
 - **Step 4:** [Manage permissions](cross-tenant-onedrive-migration-step4.md)  

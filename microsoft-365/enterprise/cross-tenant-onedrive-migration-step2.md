@@ -48,11 +48,11 @@ Get-SPOCrossTenantHostURL
  
 *Example:* Run command on Source tenant:
 
- :::image type="content" source="media/t2t-onedrive-hosturl-source.png" alt-text="example of how to obtain host url for source":::
+ :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-hosturl-source.png" alt-text="example of how to obtain host url for source":::
 
 *Example:* Run command on target tenant:
 
-:::image type="content" source="media/t2t-onedrive-hosturl-target.png" alt-text="example of how to obtain host url for target":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-hosturl-target.png" alt-text="example of how to obtain host url for target":::
  
 
 

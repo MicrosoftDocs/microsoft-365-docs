@@ -18,16 +18,15 @@ description: "Step 6 of the OneDrive Cross-tenant migration feature"
 ---
 # Step 6: Start a OneDrive Cross-Tenant Migration
 
-1. Before starting any cross-tenant migration please ensure you have verified the cross-tenant compatibility status. Continue if you see compatible status on your source tenant.
+Now you are ready to start your OneDrive migration.  Before starting any cross-tenant migration, do the following steps. 
+
+1. Ensure you have verified the compatibility status. if you see a compatible status on your source tenant you may continue. Run:
 
 ```powershell
 Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL [Target tenant hostname]
 ```
 
-
-
-2. Before starting any cross-tenant migration
-To start the migration, the SharePoint Online Admin or M365 Global Admin of the Source tenant run the following command:
+2. To start the migration, a SharePoint Online Admin or Microsoft 365 Global Admin of the source tenant must run the following command:
 
 ```PowerShell
 Start-SPOCrossTenantUserContentMove  -SourceUserPrincipalName <…> -TargetUserPrincipalName <…> -TargetCrossTenantHostUrl <…>
@@ -37,8 +36,7 @@ Start-SPOCrossTenantUserContentMove  -SourceUserPrincipalName <…> -TargetUserP
 |:-----|:-----|
 |SourceUserPrincipalName|User principal name of the user who owns the OneDrive on the Source tenant.|
 |TargetUserPrincipalName| – user principal name of the user who owns the OneDrive on the Target tenant.|
-•	TargetCrossTenantHostUrl| – the Cross-Tenant Host URL of the Target tenant. The partner tenant admin can determine this for you by running.|
-•	To determine TargetCrossTenantHostUrl, the Admin can determine this by running Get-SPOCrossTenantHostUrl on their tenant.|
+|TargetCrossTenantHostUrl| – the Cross-Tenant Host URL of the Target tenant. The partner tenant admin can determine this for you by running. To determine TargetCrossTenantHostUrl, the Admin can determine this by running Get-SPOCrossTenantHostUrl on their tenant.|
 
 In our example the command would be:
 
@@ -137,11 +135,11 @@ Once the migration has completed successfully you can check the status of the us
 
 In this example, the URL shows they are now on the target tenant and their current files and folders are displayed.
 
-:::image type="content" source="media/t2t-onedrive-target-post-migration.png" alt-text="observing a post migratiion status on the target":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-target-post-migration.png" alt-text="observing a post migratiion status on the target":::
 
 
 **Source tenant:**
 Since the user has successfully migrated to the target tenant, they no longer have an active OneDrive account on the source.
  
-:::image type="content" source="media/t2t-onedrive-status-post-migration.png" alt-text="OneDrive source status post migration":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-status-post-migration.png" alt-text="OneDrive source status post migration":::
 

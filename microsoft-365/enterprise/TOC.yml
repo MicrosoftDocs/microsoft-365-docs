@@ -178,7 +178,7 @@
           href: cross-tenant-identity-mapping.md
         - name: Cross-tenant OneDrive migration
           href: cross-tenant-onedrive-migration.md
-            - name: Overview
+            - name: Solution overview
               href: cross-tenant-onedrive-migration-overview.md
             - name: Step 1: Connect to source and target tenants
               href: cross-tenant-onedrive-migration-step1.md
