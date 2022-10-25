@@ -40,7 +40,7 @@ Network Protection on Microsoft Defender for Endpoint is now in public preview. 
 
 It includes several admin controls to offer flexibility, such as the ability to configure the feature from within the Microsoft Endpoint Manager Admin center. Admins can also enable privacy controls to configure the data that is sent by Defender for Endpoint from iOS devices. For more information, read [Configure Network Protection](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-network-protection).
 
-Network protection for iOS is already enabled for your tenant. End-users who are testing Network protection feature can install the preview version of the app via TestFlight. Browse to https://aka.ms/mdeiospp on the iOS device. This will prompt you to install the TestFlight app on your device or open TestFlight in case it is already installed. On the TestFlight app, follow the onscreen instructions to install Microsoft Defender Endpoint. Please verify that the version number of MDE is 1.1.29270104.
+Network protection for iOS is already enabled for your tenant. End-users who are testing Network protection feature can install the preview version of the app via TestFlight. Browse to https://aka.ms/mdeiospp on the iOS device. This will prompt you to install the TestFlight app on your device or open TestFlight in case it is already installed. On the TestFlight app, follow the onscreen instructions to install Microsoft Defender Endpoint. Please verify that the version number of MDE is 1.1.33070102.
 
 ## Privacy Controls
 

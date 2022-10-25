@@ -16,6 +16,7 @@ ms.service: microsoft-365-security
 ms.collection: 
 - m365-security
 - tier2
+- ContentEngagementFY23
 search.appverid: met150
 ---
 
@@ -55,11 +56,11 @@ In Windows 10, version 1903, we introduced the shared security intelligence feat
 
 ### Use Group Policy to enable the shared security intelligence feature:
 
-1. On your Group Policy management computer, open the Group Policy Management Console, right-click the Group Policy Object you want to configure, and then click **Edit**.
+1. On your Group Policy management computer, open the Group Policy Management Console, right-click the Group Policy Object you want to configure, and then select **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration**.
+2. In the **Group Policy Management Editor**, go to **Computer configuration**.
 
-3. Click **Administrative templates**.
+3. Select **Administrative templates**.
 
 4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
 
@@ -67,13 +68,13 @@ In Windows 10, version 1903, we introduced the shared security intelligence feat
 
 6. Enter `\\<sharedlocation\>\wdav-update` (for help with this value, see [Download and unpackage](#download-and-unpackage-the-latest-updates)).
 
-7. Click **OK**.
+7. Select **OK**.
 
 8. Deploy the GPO to the VMs you want to test.
 
 ### Use PowerShell to enable the shared security intelligence feature
 
-Use the following cmdlet to enable the feature. You'll need to then push this as you normally would push PowerShell-based configuration policies onto the VMs:
+Use the following cmdlet to enable the feature. You'll need to then push the update as you normally would push PowerShell-based configuration policies onto the VMs:
 
 ```PowerShell
 Set-MpPreference -SharedSignaturesPath \\<shared location>\wdav-update
@@ -133,7 +134,7 @@ This is possible when the devices have the share and NTFS permissions for the re
 
 3. Go to the **Actions** tab. Select **New...** Enter **PowerShell** in the **Program/Script** field. Enter `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` in the **Add arguments** field. Select **OK**.
 
-4. You can choose to configure additional settings if you wish.
+4. You can choose to configure more settings if you wish.
 
 5. Select **OK** to save the scheduled task.
 
@@ -169,7 +170,7 @@ See [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) f
 
 ## Use quick scans
 
-You can specify the type of scan that should be performed during a scheduled scan. Quick scans are the preferred approach as they are designed to look in all places where malware needs to reside to be active. The following procedure describes how to set up quick scans using Group Policy.
+You can specify the type of scan that should be performed during a scheduled scan. Quick scans are the preferred approach as they're designed to look in all places where malware needs to reside to be active. The following procedure describes how to set up quick scans using Group Policy.
 
 1. In your Group Policy Editor, go to **Administrative templates** \> **Windows components** \> **Microsoft Defender Antivirus** \> **Scan**.
 
@@ -254,7 +255,7 @@ This policy forces a scan if the VM has missed two or more consecutive scheduled
 
 3. Set the policy to **Enabled**.
 
-4. Click **OK**.
+4. Select **OK**.
 
 5. Deploy your Group Policy Object as you usually do.
 
