@@ -46,12 +46,6 @@ Up to 4,000 OneDrive accounts can be scheduled for migration in advance at a giv
 
 - Source OneDrive accounts must be set to Read/Write. If set to Read only, they'll fail.
 
-- 
-## Legal holds
-OneDrive accounts with a Hold policy applied will be blocked from migration.
-To migrate these OneDrive accounts, remove the hold policy, migrate, then reapply the hold as needed on the target tenant.
-  
-
 ## Pre-create target accounts
 
 - Ensure all Users/groups identified for migration have been pre-created on the target tenant.
@@ -80,6 +74,10 @@ Each OneDrive account can have a maximum of 2 TB of content or 1 million items. 
 ## Permissions
 
 As long as users and groups are included in the identity map and mapped accordingly, they'll continue to have access to the same content after it's migrated to the target tenant.
+
+## Legal holds
+OneDrive accounts with a Hold policy applied will be blocked from migration.
+To migrate these OneDrive accounts, remove the hold policy, migrate, then reapply the hold as needed on the target tenant.
 
 ## Shared files
 
