@@ -154,11 +154,11 @@ When you create the event, choose the same event type specified in the retention
 
 Alternatively, if you need to create an event for multiple retention labels that have different event types, select the **Choose Existing Labels** option. Then, select the labels that are configured for the event types you want to associate with this event.
 
-### Step 7: Enter keywords or query for Exchange, asset ID for SharePoint and OneDrive
+### Step 7: Enter keywords or a query, or asset ID for SharePoint and OneDrive
 
-Now you narrow the scope of the content. For Exchange content, you do this by specifying keywords or a query. For SharePoint and OneDrive content, you do this by specifying asset IDs.
+Now you narrow the scope of the content. You do this by specifying keywords or a query. For SharePoint and OneDrive content, you can also do this by specifying asset IDs.
 
-For Exchange items, use keywords or a query that uses Keyword Query Language (KQL). For more information about the query syntax, see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). For more information about the searchable properties that you can use for Exchange, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+Queries use Keyword Query Language (KQL). For more information about the query syntax, see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). For more information about the searchable properties that you can use for Exchange, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
 
 For asset IDs, retention will be enforced only on content with the specified *property:value* pair. For example, if you're using the Asset ID property, enter `ComplianceAssetID:<value>` in the box for asset IDs shown in the following picture.
 
