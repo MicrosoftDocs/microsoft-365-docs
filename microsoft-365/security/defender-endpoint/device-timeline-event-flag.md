@@ -47,9 +47,9 @@ The Defender for Endpoint device timeline helps you research and investigate ano
 
 - Timeline events are linked to the new user page:
 
-    :::image type="content" source="images/timeline events-new user page.png" alt-text="Screenshot of timeline events linked to the new user page." lightbox="images/timeline events-new user page.png":::
+    :::image type="content" source="images/timeline-events-new-user-page.png" alt-text="Screenshot of timeline events linked to the new user page." lightbox="images/timeline-events-new-user-page.png":::
 
-    :::image type="content" source="images/timeline events-new user page-2.png" alt-text="Screenshot of timeline events linked to the new user page 2." lightbox="images/timeline events-new user page-2.png":::
+    :::image type="content" source="images/timeline-events-new-user-page-2.png" alt-text="Screenshot of timeline events linked to the new user page 2." lightbox="images/timeline events-new user page-2.png":::
 
 - Defined filters are now visible at the top of the timeline: 
 
