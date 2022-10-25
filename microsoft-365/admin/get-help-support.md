@@ -61,23 +61,17 @@ Save time by starting your service request online. We'll help you find a solutio
 
 ## Phone support
 
-Phone numbers for Billing and Technical support hours (and languages) are listed on [Microsoft 366 for business support contacts by country or region](support-contact-info.md).
+In most countries or regions, billing support for Microsoft 365 for business products and services is provided in English from 9 AM-5 PM, Monday through Friday. Local language support varies by country or region.
+
+Technical support is provided in English 24 hours a day, 7 days a week, and in some cases, in local languages as noted.
+
+>[!div class="nextstepaction"]
+>[Find support phone numbers by country or region](support-contact-info.md)
 
 Admins, have your account details ready when you call.
 
 > [!NOTE]
 > To better protect your organization, we added a PIN-based verification step to our existing phone-based verification process. If you contact us from a number that isn't registered with your organization profile, the Microsoft support representative sends a verification code to the registered email or phone number in your Microsoft 365 admin center profile. You must provide this code to the support representative to grant them access to your organization's account.
-
-Billing support for Microsoft 365 for business products and services is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday through Friday.\
-Technical support is provided in English 24 hours a day, 7 days a week.
-
-- **In the United States, call 1 800 865 9408.**
-
-- **In Australia, call 1 800 197 503.**
-
-- **In Canada, call 1 800 865 9408.**
-
-- **In the United Kingdom, call 0800 032 6417.**
 
 ## Small business support with Business Assist
 
