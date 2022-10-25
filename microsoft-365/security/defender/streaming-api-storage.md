@@ -56,9 +56,11 @@ Once the Storage account is created you will need to:
 4. In the **Add new Streaming API settings** flyout that appears, configure the following settings:
    1. **Name**: Choose a name for your new settings.
    2. Select **Forward events to Azure Storage**.
-   3. In the **Storage Account Resource ID** box that appears, type your **Storage Account Resource ID**. To get your **Storage Account Resource ID**, open the Azure portal at <https://portal.azure.com>, click **Storage accounts** \> go to the properties tab \> copy the text under **Storage Account Resource ID**.
+   3. To display the Azure Resource Manager resource ID for a storage account in the Azure portal, follow these steps:
 
-      :::image type="content" source="../defender-endpoint/images/storage-account-resource-id.png" alt-text="A Storage Account Resource ID" lightbox="../defender-endpoint/images/storage-account-resource-id.png":::
+1. Navigate to your storage account in the Azure portal.
+1. On the **Overview** page, in the **Essentials** section, select the **JSON View** link.
+1. The resource ID for the storage account is displayed at the top of the page, copy the text under **Storage Account Resource ID**.
 
    4. Back on the **Add new Streaming API settings** flyout, choose the **Event types** that you want to stream.
 
