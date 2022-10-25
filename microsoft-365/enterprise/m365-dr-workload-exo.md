@@ -18,9 +18,13 @@ ms.collection:
 
 # Data Residency for Exchange Online
 
-## Data Residency commitments available
+## Data Residency Commitments Available
 
-### Option 1: Privacy & Security Product Terms
+### Product Terms
+
+Required Conditions:
+
+Tenant has a sign up country included in Local Region Geography, the European Union or the United States.
 
 *For current language please refer to the Privacy and Security Product Terms <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank">**webpage**</a> and view the section titled "Location of Customer Data at Rest for Core Online Services".*
 
@@ -29,7 +33,7 @@ ms.collection:
 >[!NOTE]
 >If Customer provisions its tenant in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, United Arab Emirates, United Kingdom, or United States, Microsoft will store the following Customer Data at rest only within that Geo: Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments)
 
-### Option 2: Advanced Data Residency add-on
+### Advanced Data Residency add-on
 
 Required Conditions:
 
@@ -39,10 +43,9 @@ Required Conditions:
 
 **Commitment:**
 
-Data at Rest for Office 365 Services as defined by the product terms, specifically Exchange Online mailbox content,  (e-mail body, calendar entries, and the content of e-mail attachments stored in the related _Local Region Geography_ or _Expanded Local Region Geography_.  
-This includes all types of mailboxes, including user mailboxes, resource mailboxes, archive mailboxes.
+Please refer to the ADR commitment page (TODO: link to new page) to understand the specific commitments provided via Product Terms. Examples of the committed data include: all types of mailboxes, including user mailboxes, resource mailboxes, and archive mailboxes.
 
-### Option 3: Multi-Geo add-on
+### Multi-Geo add-on
 
 Required Conditions:
 
@@ -89,7 +92,7 @@ Exchange Online synchronizes the PreferredDataLocation property from AAD into th
 - Public folders are supported in Multi-Geo organizations. However, the public folders must remain in the _Primary Provisioned Geography_ location. You can't move public folders to satellite geo locations.
 - In a Multi-Geo environment, cross-geo mailbox auditing is not supported. For example, if a user is assigned permissions to access a shared mailbox in a different _Geography_ location, mailbox actions performed by that user are not logged in the mailbox audit log of the shared mailbox. Exchange admin audit events are also only available for the default location. For more information, see Manage mailbox auditing.
 
-### Administering Exchange Multi-Go
+### Administering Exchange Multi-Geo
 
 #### Administering Exchange Online mailboxes in a Multi-Geo environment
 
