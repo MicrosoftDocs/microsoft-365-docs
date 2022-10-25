@@ -74,8 +74,8 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **General availability (GA)**: [Site sharing permissions by using PowerShell](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings).
 - **In preview**: The AIP add-in for Office apps is [disabled by default](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) and requires a new setting to override this default.
 - **Rolling out**: [Preventing copy to clipboard is honored for labeled and encrypted files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#limitations), with some exceptions for relabeling scenarios.
-- [Files types supported for SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types), after enabling sensitivity labels for these services.
-- New [prerequisite for co-authoring](sensitivity-labels-coauthoring.md#prerequisites) and the Azure Information Protection unified labeling client and scanner: You can't use Double Key Encryption in the same tenant as the co-authoring feature.
+- Support statement: [Files types supported for SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types), after enabling sensitivity labels for these services.
+- New [prerequisite for co-authoring](sensitivity-labels-coauthoring.md#prerequisites) and the Azure Information Protection unified labeling client and scanner: It's not supported to use Double Key Encryption in the same tenant as the co-authoring feature.
 
 ## September 2022
 
