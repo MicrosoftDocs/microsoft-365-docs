@@ -72,7 +72,7 @@ In addition to the data stored as part of Purview Audit (Standard), configuratio
 
 #### Summary
 
-ADR applies to the following services within Purview Data lifecycle management, Data Retension:
+ADR applies to the following services within Purview Data lifecycle management, Data Retention:
 
 - Manual retention labels
 - Basic org-wide or location-wide retention policies
