@@ -17,7 +17,7 @@ description: "Cross-tenant OneDrive migration"
 ---
 
 
-# Cross-tenant OneDrive migration overview
+# Cross-tenant OneDrive migration
 
 >[!Note]
 > This feature isn't currently supported for users of the Government Cloud, including GCC, Consumer, GCC High, or DoD.
