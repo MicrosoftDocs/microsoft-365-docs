@@ -16,7 +16,7 @@ ms.collection:
  - m365-security
  - ContentEngagementFY23
  - tier3
-ms.topic: article 
+ms.topic: conceptual 
 ms.subservice: mde 
 ms.custom: api 
 search.appverid: met150

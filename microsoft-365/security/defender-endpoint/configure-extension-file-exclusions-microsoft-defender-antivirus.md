@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.date: 09/19/2022
 author: denisebmsft
 ms.author: deniseb
-ms.topic: article
+ms.topic: conceptual
 ms.custom: nextgen
 ms.reviewer: thdoucet
 manager: dansimp

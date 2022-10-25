@@ -5,7 +5,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.topic: article
 ms.collection:
 - enabler-strategic
@@ -18,7 +18,7 @@ ms.localizationpriority: high
 
 # Import a term set using a SKOS-based format
 
-You can import a term set using a SKOS-based format. For details about the format, see [SharePoint taxonomy SKOS format reference](skos-format-reference.md). This feature requires a [Microsoft Syntex](index.md) license.
+You can import a term set using a SKOS-based format. For details about the format, see [SharePoint taxonomy SKOS format reference](skos-format-reference.md). This feature requires a [Microsoft Syntex license](syntex-licensing.md).
 
 We recommend keeping your import files to less than 20,000 terms. Larger files can increase the time taken for validation and import.
 
@@ -44,6 +44,6 @@ On successful import of the file, a success message will be displayed, and the t
 
 [Introduction to managed metadata](/sharepoint/managed-metadata)
 
-[Document understanding overview](document-understanding-overview.md)
+[Unstructured document processing overview](document-understanding-overview.md)
 
 [Import term sets (site level)](https://support.microsoft.com/office/168fbc86-7fce-4288-9a1f-b83fc3921c18)

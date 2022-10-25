@@ -76,7 +76,7 @@ Some features are only supported by built-in labeling for Office apps, and won't
 
 - For automatic and recommended labeling:
     - Access to intelligent classification services that include [trainable classifiers](classifier-learn-about.md), [exact data match (EDM)](sit-learn-about-exact-data-match-based-sits.md), and [named entities](named-entities-learn.md)
-    - Detection of sensitive information as users type
+    - Detection of sensitive information as users enter the text
     - In Word, users can review and remove the identified sensitive content
 - [Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) that is integrated into existing user workflows
 - [PDF support](sensitivity-labels-office-apps.md#pdf-support)
