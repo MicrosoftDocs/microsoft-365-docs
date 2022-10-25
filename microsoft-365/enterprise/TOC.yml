@@ -180,11 +180,11 @@
           items:
             - name: Cross-tenant OneDrive migration overview
               href: cross-tenant-onedrive-migration.md
-            - name: Step 1 Connect to source and target tenants
+            - name: Step 1 Connect to tenants
               href: cross-tenant-onedrive-migration-step1.md
-            - name: Step 2 Establish trust between the source and target tenants
+            - name: Step 2 Establish trust between the tenants
               href: cross-tenant-onedrive-migration-step2.md
-            - name: Step 3 Verify trust has been established between the tenants
+            - name: Step 3 Verify trust between the tenants
               href: cross-tenant-onedrive-migration-step3.md
             - name: Step 4 Manage permissions and pre-create users and groups
               href: cross-tenant-onedrive-migration-step4.md
