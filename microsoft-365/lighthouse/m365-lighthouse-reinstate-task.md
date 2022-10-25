@@ -32,9 +32,9 @@ Additionally, each partner tenant user must meet the following requirements:
 
 - The partner tenant user must have DAP/GDAP access to the applicable tenant.
 
-  1. For DAP, admin agent group membership is needed.
+  1. For DAP, an admin agent group membership.
 
-  2. For GDAP, a role that can create Conditional Access (CA) policies is needed.
+  2. For GDAP, a role that can create Conditional Access (CA) policies.
 
 - The partner tenant user must enable MFA for their user account in the partner tenant.
 
