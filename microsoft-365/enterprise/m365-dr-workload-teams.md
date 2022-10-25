@@ -24,21 +24,21 @@ ms.collection:
 
 Required Conditions:
 
-1. Tenant has a sign up country included in _Local Region Geography_, the European Union or the United States.
+1. _Tenant_ has a sign up country included in _Local Region Geography_, the European Union or the United States.
 
 *For current language please refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled "Location of Customer Data at Rest for Core Online Services".*
 
 
 
 >[!NOTE]
->If Customer provisions its tenant in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, United Arab Emirates, United Kingdom, or United States, Microsoft will store the following Customer Data at rest only within that Geography: Microsoft Teams chat messages (including private messages, channel messages, meeting messages and images used in chats), and, for customers using Microsoft Stream (on SharePoint), meeting recordings.
+>If Customer provisions its _Tenant_ in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, United Arab Emirates, United Kingdom, or United States, Microsoft will store the following Customer Data at rest only within that Geography: Microsoft Teams chat messages (including private messages, channel messages, meeting messages and images used in chats), and, for customers using Microsoft Stream (on SharePoint), meeting recordings.
 
 ### Advanced Data Residency add-on
 
 Required Conditions:
 
-1. Tenant has a sign-up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
-1. Tenant has a valid Advanced Data Residency subscription for all users in the tenant
+1. _Tenant_ has a sign-up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_
 1. The Microsoft Teams subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
 ***Commitment:***
@@ -53,9 +53,9 @@ Please refer to the ADR commitment page (***TODO: link to new page***) to unders
 
 Required Conditions:
 
-1. Tenants have a valid Multi-Geo subscription that covers all users assigned to a _Satellite Geography_
+1. _Tenants_ have a valid Multi-Geo subscription that covers all users assigned to a _Satellite Geography_
 1. Customer must have an active Enterprise Agreement.
-1. Total purchased Multi-Geo units must be greater than 5% of the total eligible seats in the tenant.
+1. Total purchased Multi-Geo units must be greater than 5% of the total eligible seats in the _Tenant_.
 
 **Commitment:**
 Customers can assign users of Microsoft Teams to any _Satellite Geography_ supported by Multi-Geo. The following customer data will be stored in the relevant _Satellite Geography_: Teams chat data that consists of chat messages, including private messages, channel messages, and images used in chats.
@@ -67,7 +67,7 @@ Multi-Geo capabilities in Teams enable Teams chat data to be stored at rest in a
 Teams uses the Preferred Data Location (PDL) for users and groups to determine where to store data. If the PDL isn’t set or is invalid, data is stored in the tenant's _Primary Provisioned Geography_ location.
 
 >[!NOTE]
->Multi-Geo capabilities in Teams rolled out in July 2021. Your chat and channel messages will be automatically migrated to the correct _Macro Region Geography_ or _Local Region Geography_ location over the next few quarters. Any new PDL changes will be processed after the tenant has completed the initial sync, and new PDL changes beyond that will be queued and processed in the order they are received.
+>Multi-Geo capabilities in Teams rolled out in July 2021. Your chat and channel messages will be automatically migrated to the correct _Macro Region Geography_ or _Local Region Geography_ location over the next few quarters. Any new PDL changes will be processed after the _Tenant_ has completed the initial sync, and new PDL changes beyond that will be queued and processed in the order they are received.
 
 ### User chat
 
@@ -121,4 +121,4 @@ In addition to Exchange Online, SharePoint Online, and OneDrive for Business; Mi
 Teams files are stored in SharePoint Online and Teams chat files are stored in OneDrive for Business. Voicemail, calendar, and contacts are stored in Exchange Online. In many cases, Exchange Online, SharePoint Online, and OneDrive for Business are already used by the customer in the local datacenter _Geography_ and are also part of the Microsoft 365 migration program for eligible customer countries.
 
 ### How can I determine customer data location?
-You can find the actual data location in Tenant Admin Center. As a tenant administrator you can find the actual data location, for committed data, by navigating to Admin|Settings|Org Settings|Organization Profile|Data Location.
+You can find the actual data location in _Tenant_ Admin Center. As a _Tenant_ administrator you can find the actual data location, for committed data, by navigating to Admin|Settings|Org Settings|Organization Profile|Data Location.
