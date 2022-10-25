@@ -88,7 +88,7 @@ Users and groups are included in the same file. Depending on whether it's a user
 
 *Example of multiple users in CSV file:* </br>
 
-:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-users-groups.png" alt-text="example of both users and groups in mapping file":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-migration-csv-users-groups.png" alt-text="example of both users and groups in mapping file":::
 
 ## Obtain the source tenant company ID
 To obtain Source Tenant Company ID:
