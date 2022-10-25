@@ -1,16 +1,17 @@
 ---
 title: "External recipients service alerts"
-ms.author: markjjo
-author: markjjo
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 
+ms.date: 05/31/2022
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: 
@@ -19,6 +20,7 @@ ms.custom:
 f1.keywords:
 - NOCSH
 description: "Use external recipients service alerts to monitor mailboxes on hold that are reaching their mailbox quota."
+ROBOTS: NOINDEX
 ---
 
 # Service alerts for messages pending delivery to external recipients in Exchange Online monitoring

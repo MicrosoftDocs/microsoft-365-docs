@@ -3,14 +3,15 @@ title: "Hybrid Modern Authentication overview and prerequisites for use with on-
 ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/03/2021
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
+- scotvorg
 - M365-security-compliance
 f1.keywords:
 - NOCSH
@@ -164,7 +165,8 @@ Verify and check these items off your list before you continue:
     > [!NOTE]
     > Hybrid modern authentication is not supported with the [Hybrid Agent](/exchange/hybrid-deployment/hybrid-agent).
 
-  - Make sure both an on-premises test user, and a hybrid test user homed in Office 365, can log in to the Skype for Business desktop client (if you want to use modern authentication with Skype) and Microsoft Outlook (if you want to use modern authentication with Exchange).
+  - Make sure both an on-premises test user, as well as a hybrid test user homed in Office 365, can login to the Skype for Business desktop client (if you want to use modern authentication with Skype) and Microsoft Outlook (if you want to use modern authentication with Exchange).
+  - Make sure the SignInOptions setting in Microsoft Office is not configured to its most restrictive setting. For more information, see [How to allow Office to connect to the internet](/office365/troubleshoot/access-management/office-feature-disabled).
 
 ## What else do I need to know before I begin?
 <a name="BKMK_Whatelse"> </a>

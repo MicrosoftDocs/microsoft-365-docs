@@ -1,14 +1,16 @@
 ---
-title: "Compare device compliance policy settings"
+title: "Compare device compliance policy settings in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms.reviewer: ragovind
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -18,11 +20,7 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to compare device compliance policy settings."
 ---
 
-
-# Compare device compliance policy settings
-
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+# Compare device compliance policy settings in Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse lets you view compliance policies across your tenants in a single view. You can drive security and standardization across your tenants by comparing policies. You can filter views to see settings that have been configured (versus settings that were left not configured), settings that differ in their configurations, or settings that match. You can also search for specific settings to see how they compare across policies.
 
@@ -32,11 +30,11 @@ Make sure devices have a Microsoft Intune license and are enrolled in Microsoft 
 
 ## Compare policy settings
 
-1. In the left navigation pane in Lighthouse, select **Devices**.
+1. In the left navigation pane in Lighthouse, select **Devices** > **Device compliance**.
 
 2. Select the **Policies** tab.
 
-3. From the **Filters** drop-down list, select an operating system or platform.
+3. From the **Filters** dropdown list, select an operating system or platform.
 
    > [!NOTE]
    > You can only compare policies with the same operating system or platform.
@@ -49,13 +47,13 @@ You can filter the results to see **Settings that differ**, **Settings that matc
 
 ## Configure a policy setting
 
-1. In the left navigation pane in Lighthouse, select **Devices**.
+1. In the left navigation pane in Lighthouse, select **Devices** > **Device compliance**.
 
 2. Select the **Policies** tab.
 
-3. From the list, select a policy name.
+3. From the list of policies, select the policy that you want to view.
 
-4. From the Policy details pane, select **View this policy in Microsoft Endpoint Manager**.
+4. In the policy details pane, select **View this policy in Microsoft Endpoint Manager**.
 
 5. In MEM, edit the policy settings as needed.
 
@@ -67,4 +65,4 @@ As you make policy adjustments, make sure you assess your changes against your c
 
 [What is device enrollment in Intune?](/mem/intune/enrollment/device-enrollment) (article)  
 [Use compliance policies to set rules for devices you manage with Intune](/mem/intune/protect/device-compliance-get-started) (article)  
-[Overview of using baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)
+[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)

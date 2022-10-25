@@ -11,7 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance 
+- tier1
+- purview-compliance 
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150 
@@ -23,8 +24,8 @@ description: Use a local script to deploy the configuration package on devices s
 
 **Applies to:**
 
-- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Insider risk management](insider-risk-management.md)
 
 You can also manually onboard individual devices to Microsoft 365. You might want to do this first when testing the service before you commit to onboarding all devices in your network.
 
@@ -33,9 +34,11 @@ You can also manually onboard individual devices to Microsoft 365. You might wan
 >
 > To deploy at scale, use [other deployment options](device-onboarding-overview.md). For example, you can deploy an onboarding script to more than 10 devices in production with the script available in [Onboard Windows 10 devices using Group Policy](device-onboarding-gp.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Onboard devices
  
-1. Get the configuration package .zip file (*DeviceComplianceOnboardingPackage.zip*) package from [Microsoft Compliance center](https://compliance.microsoft.com)
+1. Get the configuration package .zip file (*DeviceComplianceOnboardingPackage.zip*) package from [Microsoft Purview compliance portal](https://compliance.microsoft.com)
 
 2. In the navigation pane, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> > **Device onboarding**.
 
@@ -66,7 +69,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
+1. Get the offboarding package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
 
 2. In the navigation pane, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> > **Device offboarding**.
 
@@ -99,11 +102,11 @@ Monitoring can also be done directly on the portal, or by using the different de
 
 ### Monitor devices using the portal
 
-1. Go to [Microsoft 365 Compliance center](https://compliance.microsoft.com).
+1. Go to [Microsoft Purview compliance portal](https://compliance.microsoft.com).
 
 2. Choose **Settings** > **Device onboarding** > **Devices**.
 
-1. Go to Microsoft 365 compliance center, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> > **Device onboarding** > **Devices**.
+1. Go to Microsoft Purview compliance portal, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> > **Device onboarding** > **Devices**.
 
 1. Verify that devices are appearing.
 

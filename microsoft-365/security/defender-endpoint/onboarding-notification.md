@@ -3,7 +3,7 @@ title: Create an onboarding or offboarding notification rule
 description: Get a notification when a local onboarding or offboarding script is used.
 keywords: onboarding, offboarding, local, script, notification, rule
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
+ms.subservice: mde
 ---
 
 # Create a notification rule when a local onboarding or offboarding script is used
@@ -49,18 +51,19 @@ You'll need to have access to:
 
 2. Navigate to **My flows > New > Scheduled - from blank**.
 
-    ![Image of flow.](images/new-flow.png)
+   :::image type="content" source="images/new-flow.png" alt-text="The flow" lightbox="images/new-flow.png":::
+
 
 3. Build a scheduled flow.
    1. Enter a flow name.
    2. Specify the start and time.
    3. Specify the frequency. For example, every 5 minutes.
 
-    ![Image of the notification flow.](images/build-flow.png)
+   :::image type="content" source="images/build-flow.png" alt-text="The notification flow" lightbox="images/build-flow.png":::
 
 4. Select the + button to add a new action. The new action will be an HTTP request to the Defender for Endpoint security center device(s) API. You can also replace it with the out-of-the-box "WDATP Connector" (action: "Machines - Get list of machines").
 
-    ![Image of recurrence and add action.](images/recurrence-add.png)
+   :::image type="content" source="images/recurrence-add.png" alt-text="The recurrence and add action" lightbox="images/recurrence-add.png":::
 
 5. Enter the following HTTP fields:
 
@@ -73,20 +76,20 @@ You'll need to have access to:
    - Credential Type: Select "Secret".
    - Secret: Sign-in to https://portal.azure.com and navigate to **Azure Active Directory > App Registrations** and get the Tenant ID value.
 
-    ![Image of the HTTP conditions.](images/http-conditions.png)
+    :::image type="content" source="images/http-conditions.png" alt-text="The HTTP conditions" lightbox="images/http-conditions.png":::
 
 6. Add a new step by selecting **Add new action** then search for **Data Operations** and select
 **Parse JSON**.
 
-    ![Image of data operations.](images/data-operations.png)
+   :::image type="content" source="images/data-operations.png" alt-text="The data operations entry" lightbox="images/data-operations.png":::
 
 7. Add Body in the **Content** field.
 
-    ![Image of parse JSON.](images/parse-json.png)
+   :::image type="content" source="images/parse-json.png" alt-text="The parse JSON section" lightbox="images/parse-json.png":::
 
 8. Select the **Use sample payload to generate schema** link.
 
-    ![Image of parse json with payload.](images/parse-json-schema.png)
+   :::image type="content" source="images/parse-json-schema.png" alt-text="The parse JSON with payload" lightbox="images/parse-json-schema.png":::
 
 9. Copy and paste the following JSON snippet:
 
@@ -175,22 +178,22 @@ You'll need to have access to:
     - If yes, no notification will be triggered
     - If no, will register the new onboarded device(s) in the SharePoint list and a notification will be sent to the Defender for Endpoint admin
 
-    ![Image of apply to each.](images/flow-apply.png)
+    :::image type="content" source="images/flow-apply.png" alt-text="The application of the flow to each element" lightbox="images/flow-apply.png":::
 
-    ![Image of apply to each  with get items.](images/apply-to-each.png)
+    :::image type="content" source="images/apply-to-each.png" alt-text="The application of the flow to the Get items element" lightbox="images/apply-to-each.png":::
 
 11. Under **Condition**, add the following expression: "length(body('Get_items')?['value'])" and set the condition to equal to 0.
 
-    ![Image of apply to each condition.](images/apply-to-each-value.png)
-    ![Image of condition1.](images/conditions-2.png)
-    ![Image of condition2.](images/condition3.png)
-    ![Image of send email.](images/send-email.png)
+    :::image type="content" source="images/apply-to-each-value.png" alt-text="The application of the flow to each condition" lightbox="images/apply-to-each-value.png":::
+    :::image type="content" source="images/conditions-2.png" alt-text="The condition-1" lightbox="images/conditions-2.png":::
+    :::image type="content" source="images/condition3.png" alt-text="The condition-2" lightbox="images/condition3.png":::
+    :::image type="content" source="images/send-email.png" alt-text="The Send an email section" lightbox="images/send-email.png":::
 
 ## Alert notification
 
 The following image is an example of an email notification.
 
-![Image of email notification.](images/alert-notification.png)
+:::image type="content" source="images/alert-notification.png" alt-text="The email notification screen" lightbox="images/alert-notification.png":::
 
 ## Tips
 

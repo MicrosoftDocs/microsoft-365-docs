@@ -1,11 +1,11 @@
 ---
 title: Prerequisite work for implementing identity and device access policies - Microsoft 365 for enterprise | Microsoft Docs
 description: This article describes the prerequisites you need to meet to use Zero Trust identity and device access policies and configurations.
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
-ms.prod: m365-security
-ms.topic: article
+ms.service: microsoft-365-security
+ms.topic: conceptual
 audience: Admin
 f1.keywords: 
   - NOCSH
@@ -15,10 +15,13 @@ ms.custom:
   - goldenconfig
 ms.collection: 
   - M365-identity-device-management
-  - M365-security-compliance
+  - m365-security
   - m365solution-identitydevice
   - m365solution-scenario
-ms.technology: mdo
+  - zerotrust-solution
+  - highpri
+ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Prerequisite work for implementing Zero Trust identity and device access policies
@@ -49,7 +52,6 @@ The following table details the prerequisite features and their configuration th
 |[Enable Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection). Azure AD Identity Protection enables you to detect potential vulnerabilities affecting your organization's identities and configure an automated remediation policy to low, medium, and high sign-in risk and user risk.||Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
 |**Enable modern authentication** for [Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) and for [Skype for Business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). Modern authentication is a prerequisite for using MFA. Modern authentication is enabled by default for Office 2016 and 2019 clients, SharePoint, and OneDrive for Business.||Microsoft 365 E3 or E5|
 |[Enable continuous access evaluation](microsoft-365-continuous-access-evaluation.md) for Azure AD. Continuous access evaluation proactively terminates active user sessions and enforces tenant policy changes in near real-time.||Microsoft 365 E3 or E5|
-|
 
 ## Recommended client configurations
 
@@ -82,7 +84,6 @@ The following email clients support modern authentication and Conditional Access
 |**Android**|Outlook for Android|[Latest](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2019 and 2016|
 |**Linux**|Not supported||
-|
 
 ### Recommended client platforms when securing documents
 
@@ -96,7 +97,6 @@ The following clients are recommended when a secure documents policy has been ap
 |iOS|Supported|Supported|Supported|Supported|N/A|
 |macOS|Supported|Supported|N/A|N/A|Not supported|
 |Linux|Not supported|Not supported|Not supported|Not supported|Not supported|
-|
 
 ### Microsoft 365 client support
 
@@ -120,6 +120,6 @@ Here are some additional recommendations:
 
 ## Next step
 
-[![Step 2: Configure the common Zero Trust identity and access Conditional Access policies.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
+[![Step 2: Configure the common Zero Trust identity and access Conditional Access policies.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png#lightbox)](identity-access-policies.md)
 
 [Configure the common Zero Trust identity and device access policies](identity-access-policies.md)

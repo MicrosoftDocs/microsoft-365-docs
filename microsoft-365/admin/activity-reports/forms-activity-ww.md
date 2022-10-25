@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Forms activity"
+title: "Microsoft 365 admin center forms activity reports"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -7,9 +7,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,7 +21,7 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: "Learn how to get a Microsoft Forms activity report using the Microsoft 365 Reports dashboard in the Microsoft 365 admin center."
+description: "Learn how to get a Microsoft Forms activity report using the Microsoft 365 Reports dashboard and find out how licensed users are interacting with forms."
 ---
 
 # Microsoft 365 Reports in the admin center - Forms activity
@@ -30,24 +32,28 @@ For example, you can understand the activity of every user licensed to use Micro
   
 ## How to get to the Forms activity report
 
-1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
-2. From the dashboard homepage, click on the **View more** button on the Forms card.
+1. In the admin center, go to the **Reports**, then select **Usage**. 
+2. From the dashboard homepage, click on the **View more** button on the Forms card.
   
 ## Interpret the Forms activity report
 
-You can view the activities in the Forms report by choosing the **Activity** tab.<br/>![Microsoft 365 reports - Microsoft Forms activity report.](../../media/275fb0a1-b9d9-4233-8aaf-e7df73cc705f.png)
+You can view the activities in the Forms report by choosing the **Activity** tab.
 
-Select **Choose columns** to add or remove columns from the report.  <br/> ![Forms activity report - choose columns.](../../media/0c9b0b69-5dc7-43ea-8e2c-54407b6ce2ab.png)
+![Microsoft 365 reports - Microsoft Forms activity report.](../../media/275fb0a1-b9d9-4233-8aaf-e7df73cc705f.png)
 
-You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
+Select **Choose columns** to add or remove columns from the report. 
+
+![Forms activity report - choose columns.](../../media/0c9b0b69-5dc7-43ea-8e2c-54407b6ce2ab.png)
+
+You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. 
 
 The **Forms activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
   
 |Item|Description|
 |:-----|:-----|
-|**Metric**|**Definition**|
-|Username  <br/> |The email address of the user who performed the activity on Microsoft Forms.  <br/> |
-|Last activity date (UTC)  <br/> |The latest date a form activity was performed by the user for the selected date range. To see activity that occurred on a specific date, select the date directly in the chart.<br/><br/>This will filter the table to display file activity data only for users who performed the activity on that specific day.  <br/> |
-|Number of forms created  <br/> |The number of forms that the user created.   <br/> |
-|Number of forms responded  <br/> |The number of forms that the user has submitted responses to.|
-|||
+|Metric|Definition|
+|Username   |The email address of the user who performed the activity on Microsoft Forms.   |
+|Last activity date (UTC)   |The latest date a form activity was performed by the user for the selected date range. To see activity that occurred on a specific date, select the date directly in the chart.<br/><br/>This will filter the table to display file activity data only for users who performed the activity on that specific day.   |
+|Number of forms created   |The number of forms that the user created.    |
+|Number of forms responded  |The number of forms that the user has submitted responses to.|
+

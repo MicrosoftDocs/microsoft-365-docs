@@ -4,7 +4,7 @@ description: This topic describes how to report and troubleshoot Microsoft Defen
 keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -16,9 +16,12 @@ manager: dansimp
 ms.custom: 
 - asr
 - admindeeplinkDEFENDER
-ms.topic: article
-ms.technology: mde
-ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.subservice: mde
+ms.collection: 
+- m365-security
+- tier3
+search.appverid: met150
 ---
 
 # Report and troubleshoot Microsoft Defender for Endpoint ASR Rules
@@ -35,7 +38,7 @@ The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">
 In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, we offer you a complete look at the current ASR rules configuration and events in your estate. Note that your devices must be onboarded into the Microsoft Defender for Endpoint service for these reports to be populated.
 Here's a screenshot from the Microsoft 365 Defender portal (under **Reports** \> **Devices** \> **Attack surface reduction**). At the device level, select **Configuration** from the **Attack surface reduction rules** pane. The following screen is displayed, where you can select a specific device and check its individual ASR rule configuration.
 
-:::image type="content" source="images/asrrulesnew.png" lightbox="images/asrrulesnew.png" alt-text="ASR rules screen.":::
+:::image type="content" source="images/asrrulesnew.png" alt-text="The ASR rules page" lightbox="images/asrrulesnew.png":::
 
 ## Microsoft Defender for Endpoint - Advanced hunting
 
@@ -47,9 +50,9 @@ Through advanced hunting, it's possible to extract ASR rules information, create
 
 ASR rules events are available to be queried from the DeviceEvents table in the advanced hunting section of the Microsoft 365 Defender. For example, a simple query such as the one below can report all the events that have ASR rules as data source, for the last 30 days, and will summarize them by the ActionType count, that in this case it will be the actual codename of the ASR rule.
 
-:::image type="content" source="images/adv-hunt-querynew.png" alt-text="Advanced hunting query.":::
+:::image type="content" source="images/adv-hunt-querynew.png" alt-text="The Advanced hunting query" lightbox="images/adv-hunt-querynew.png":::
 
-:::image type="content" source="images/adv-hunt-sc-2new.png" lightbox="images/adv-hunt-sc-2new.png" alt-text="advanced hunting screen.":::
+:::image type="content" source="images/adv-hunt-sc-2new.png" alt-text="The Advanced hunting page" lightbox="images/adv-hunt-sc-2new.png":::
 
 With advanced hunting you can shape the queries to your liking, so that you can see what is happening, regardless of whether you want to pinpoint something on an individual machine, or you want to extract insights from your entire environment.
 
@@ -59,7 +62,7 @@ An alternative to advanced hunting, but with a narrower scope, is the Microsoft 
 
 Pictured below is a screenshot of the Timeline view of these events on a given endpoint. From this view, you can filter the events list based on any of the Event Groups along the right-side pane. You can also enable or disable Flagged and Verbose events while viewing alerts and scrolling through the historical timeline.
 
-:::image type="content" source="images/mic-sec-def-timelinenew.png" lightbox="images/mic-sec-def-timelinenew.png" alt-text="Microsoft 365 Defender timeline.":::
+:::image type="content" source="images/mic-sec-def-timelinenew.png" alt-text="The Microsoft 365 Defender timeline" lightbox="images/mic-sec-def-timelinenew.png":::
 
 ## How to troubleshoot ASR rules?
 
@@ -73,7 +76,7 @@ One of the easiest ways to determine if ASR rules are already enabled is through
 
 Here's an example:
 
-:::image type="content" source="images/getmpreferencescriptnew.png" lightbox="images/getmpreferencescriptnew.png" alt-text="get mppreference script.":::
+:::image type="content" source="images/getmpreferencescriptnew.png" alt-text="The get mppreference script" lightbox="images/getmpreferencescriptnew.png":::
 
 There are multiple ASR rules active, with different configured actions.
 
@@ -85,7 +88,7 @@ Example:
 Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ids
 ```
 
-:::image type="content" source="images/getmpref-examplenew.png" alt-text="get mpreference example.":::
+:::image type="content" source="images/getmpref-examplenew.png" alt-text="The get mpreference example" lightbox="images/getmpref-examplenew.png":::
 
 The above shows all the IDs for ASR rules that have a setting different from 0 (Not Configured).
 
@@ -95,7 +98,7 @@ The next step is then to list the actual actions (Block or Audit) that each rule
 Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Actions
 ```
 
-:::image type="content" source="images/getmpref-example2new.png" alt-text="get mppreference example2.":::
+:::image type="content" source="images/getmpref-example2new.png" alt-text="The get mppreference example2" lightbox="images/getmpref-example2new.png":::
 
 ### Querying blocking and auditing events
 
@@ -103,7 +106,7 @@ ASR rule events can be viewed within the Windows Defender log.
 
 To access it, open Windows Event Viewer, and browse to **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational**.
 
-:::image type="content" source="images/eventviewerscrnew.png" lightbox="images/eventviewerscrnew.png" alt-text="event viewer scr.":::
+:::image type="content" source="images/eventviewerscrnew.png" alt-text="The Event Viewer page" lightbox="images/eventviewerscrnew.png":::
 
 ## Microsoft Defender Antimalware Protection Logs
 
@@ -113,7 +116,7 @@ You can find this utility in *%ProgramFiles%\Windows Defender\MpCmdRun.exe*. You
 
 To generate the support information, type *MpCmdRun.exe -getfiles*. After a while, several logs will be packaged into an archive (MpSupportFiles.cab) and made available in *C:\ProgramData\Microsoft\Windows Defender\Support*.
 
-:::image type="content" source="images/malware-prot-logsnew.png" alt-text="malware protection logs.":::
+:::image type="content" source="images/malware-prot-logsnew.png" alt-text="The malware protection logs" lightbox="images/malware-prot-logsnew.png":::
 
 Extract that archive and you'll have many files available for troubleshooting purposes.
 

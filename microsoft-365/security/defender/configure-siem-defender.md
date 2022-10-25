@@ -4,7 +4,8 @@ description: Learn how to use REST API and configure supported security informat
 keywords: configure siem, security information and events management tools, splunk, arcsight, custom indicators, rest api, alert definitions, indicators of compromise
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +14,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ---
 
 # Integrate your SIEM tools with Microsoft 365 Defender
@@ -60,7 +62,7 @@ For more information on Microsoft 365 Defender incident properties including con
 
 ### Splunk
 
-Using the Microsoft 365 Defender Add-on for Splunk that supports:
+Using the new, fully-supported Splunk Add-on for Microsoft Security that supports:
 
 - Ingesting incidents that contain alerts from the following products, which are mapped onto Splunk's Common Information Model (CIM):
 
@@ -69,11 +71,15 @@ Using the Microsoft 365 Defender Add-on for Splunk that supports:
   - Microsoft Defender for Identity and Azure Active Directory Identity Protection
   - Microsoft Defender for Cloud Apps
 
-- Updating incidents in Microsoft 365 Defender from within Splunk
-
 - Ingesting Defender for Endpoint alerts (from the Defender for Endpoint's Azure endpoint) and updating these alerts
 
-For more information on the Microsoft 365 Defender Add-on for Splunk, see [splunkbase](https://splunkbase.splunk.com/app/4959/).
+- Support for updating Microsoft 365 Defender Incidents and/or Microsoft Defender for Endpoint Alerts and the respective dashboards has been moved to the Microsoft 365 App for Splunk. 
+
+For more information on:
+
+- The Splunk Add-on for Microsoft Security, see the [Microsoft Security Add-on on Splunkbase](https://splunkbase.splunk.com/app/6207/#/overview)
+
+- The Microsoft 365 App for Splunk, see the [Microsoft 365 App on Splunkbase](https://splunkbase.splunk.com/app/3786/)
 
 ### Micro Focus ArcSight
 
@@ -82,7 +88,7 @@ Framework (CEF).
 
 For more information on the new ArcSight SmartConnector for Microsoft 365 Defender, see [ArcSight Product Documentation](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender).
 
-The SmartConnector replaces the previous FlexConnector for Microsoft Defender for Endpoint.
+The SmartConnector replaces the previous FlexConnector for Microsoft Defender for Endpoint that has been deprecated.
   
 
 ## Ingesting streaming event data via Event Hubs
@@ -92,11 +98,11 @@ First you need to stream events from your AAD tenant to your Event Hubs or Azure
 For more information on the event types supported by the Streaming API, see [Supported streaming event types](../defender/supported-event-types.md).
 
 ### Splunk
+
 Use the Splunk Add-on for Microsoft Cloud Services to ingest events from Azure Event Hubs.  
 
-
-For more information on the Splunk Add-on for Microsoft Cloud Services, see [splunkbase](https://splunkbase.splunk.com/app/3110/).
+For more information on the Splunk Add-on for Microsoft Cloud Services, see the [Microsoft Cloud Services Add-on on Splunkbase](https://splunkbase.splunk.com/app/3110/).
   
 
 ### IBM QRadar
->Use the new IBM QRadar Microsoft 365 Defender Device Support Module (DSM) that calls the [Microsoft 365 Defender Streaming API](streaming-api.md) that allows ingesting streaming event data from Microsoft 365 Defender products. For more information on supported event types, see [Supported event types](supported-event-types.md).
+>Use the new IBM QRadar Microsoft 365 Defender Device Support Module (DSM) that calls the [Microsoft 365 Defender Streaming API](streaming-api.md) that allows ingesting streaming event data from Microsoft 365 Defender products via Event Hubs or Azure Storage Account. For more information on supported event types, see [Supported event types](supported-event-types.md).

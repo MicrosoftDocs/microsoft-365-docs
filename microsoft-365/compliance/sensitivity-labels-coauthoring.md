@@ -1,5 +1,5 @@
 ---
-title: "Enable co-authoring for documents encrypted by sensitivity labels in Microsoft 365"
+title: "Enable co-authoring for encrypted documents"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -10,7 +10,8 @@ ms.service: O365-seccomp
 ms.date: 
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 ms.topic: article
 description: "Turn on a setting that enables co-authoring and AutoSave in desktop apps for labeled and encrypted documents in SharePoint and OneDrive."
 ---
@@ -26,6 +27,8 @@ Without this setting enabled for your tenant, users must check out an encrypted 
 In addition, enabling this functionality results in the [AutoSave](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) functionality being supported for these labeled and encrypted files.
 
 To read the release announcement, see the blog post [Co-authoring on Microsoft Information Protection encrypted documents is now generally available](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/co-authoring-on-microsoft-information-protection-encrypted/ba-p/2693718).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Metadata changes for sensitivity labels
 
@@ -62,11 +65,6 @@ Check the following section for a list of apps and services that support this se
 
 ## Prerequisites
 
-> [!IMPORTANT]
-> This feature requires that all users have Microsoft 365 Apps for enterprise. Support for this co-authoring feature isn't yet available with the Semi-Annual Enterprise Channel for Office updates. If you are using this update channel for your Office apps, change it to Current Channel or Monthly Enterprise Channel.
-> 
-> For more information, see [How to configure and manage update channels](/deployoffice/overview-update-channels#how-to-configure-and-manage-update-channels).
-
 Make sure you understand the following prerequisites before you turn on this feature.
 
 - You must be a global admin to turn on this feature.
@@ -74,15 +72,17 @@ Make sure you understand the following prerequisites before you turn on this fea
 - Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
 
 - Microsoft 365 Apps for enterprise:
-    - **Windows**: Minimum version 2107 from Current Channel or Monthly Enterprise Channel
+    - **Windows**: Minimum version 2107 from Current Channel or Monthly Enterprise Channel, or minimum version 2202 from Semi-Annual Enterprise Channel
     - **macOS**: Minimum version 16.51
-    - **iOS**: Now in preview when you [opt in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 2.58
-    - **Android**: Now in preview when you [opt in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 16.0.14931
+    - **iOS**: Minimum version 2.58
+    - **Android**: Minimum version 16.0.14931
 
 - All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels). If you use any of the following, check the minimum versions required:
     
     - **Azure Information Protection unified labeling client and scanner:**
         - Minimum version [2.12.62.0](/information-protection/rms-client/unifiedlabelingclient-version-release-history#version-212620) that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
+        - For Office apps, requires minimum versions listed for Microsoft 365 Apps for enterprise
+        - Additionally, you're not using [Double Key Encryption](double-key-encryption.md) in the same tenant
     
     - **OneDrive sync app for Windows or macOS:**
         - Minimum version of 19.002.0121.0008
@@ -102,10 +102,6 @@ Microsoft 365 services automatically support the new labeling metadata when you 
 - [DLP policies that use sensitivity labels as conditions](dlp-sensitivity-label-as-condition.md)
 - [Microsoft Defender for Cloud Apps configured to apply sensitivity labels](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 
-### Opt in to the preview of co-authoring for iOS and Android
-
-To try the preview of co-authoring for iOS and Android, you must have the minimum versions stated in the previous section, and also request your tenant is added to the preview: [Consent to Enable co-authoring for files encrypted with sensitivity labels on mobile](https://ncv.microsoft.com/5Oob3oDj1O)
-
 ## Limitations
 
 Before you enable the tenant setting for co-authoring for files encrypted with sensitivity labels, make sure you understand the following limitations of this feature.
@@ -114,14 +110,11 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
     
     Specific to Excel: Metadata for a sensitivity label that doesn't apply encryption can be deleted from a file if somebody edits and saves that file by using a version of Excel that doesn't support the metadata changes for sensitivity labels.
 
-- Supporting Office apps for iOS and Android are currently in [preview](https://office.com/insider).
-
-- Co-authoring and AutoSave aren't supported and don't work for labeled and encrypted Office documents that use any of the following [configurations for encryption](encryption-sensitivity-labels.md#configure-encryption-settings):
+- Co-authoring and AutoSave aren't supported and don't work for labeled and encrypted Office documents that use either of the following [configurations for encryption](encryption-sensitivity-labels.md#configure-encryption-settings):
     - **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This configuration is sometimes referred to as "user-defined permissions".
     - **User access to content expires** is set to a value other than **Never**.
-    - **Double Key Encryption** is selected.
     
-    For labels with any of these encryption configurations, the labels display in Office apps. However, when users select these labels and nobody else is editing the document, they're warned that co-authoring and AutoSave won't be available. If somebody else is editing the document, users see a message that the labels can't be applied.
+    For labels with either of these encryption configurations, the labels display in Office apps. However, when users select these labels and nobody else is editing the document, they're warned that co-authoring and AutoSave won't be available. If somebody else is editing the document, users see a message that the labels can't be applied.
 
 - If you use the Azure Information Protection unified labeling client: Check the documentation for this labeling client for [more requirements or limitations](/azure/information-protection/known-issues#known-issues-for-co-authoring). 
     > [!NOTE]
@@ -132,9 +125,7 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 > [!CAUTION]
 > Turning on this setting is a one-way action. Enable it only after you have read and understood the metadata changes, prerequisites, limitations, and any known issues documented on this page.
 
-If you've already turned on this setting during the preview period, no further action is needed and you can skip this procedure.
-
-1. Sign in to the [Microsoft 365 compliance center](https://compliance.microsoft.com) as a global admin for your tenant.
+1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com) as a global admin for your tenant.
 
 2. From the navigation pane, select **Settings** > **Co-authoring for files with sensitivity files**.
 

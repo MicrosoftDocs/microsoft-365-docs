@@ -7,16 +7,21 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
 - Adm_TOC
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - okr_smb
+- adminvideo
 search.appverid:
 - MET150
 - MOE150
@@ -26,15 +31,19 @@ description: Learn about the requirements and considerations for making the move
 
 # Plan your setup of Microsoft 365 for business
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 This article is for people who have subscribed to a Microsoft 365 for business plan.
   
 Before moving your organization to Microsoft 365, there are requirements you need to meet, info you need to have on hand, and decisions you have to make.
 
-## Overview of Microsoft 365 Business Premium setup
+## Overview of Microsoft 365 for business setup
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg?autoplay=false]
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197910).
 
-Congratulations on your decision to move your business to the cloud with Microsoft 365! Whether you have one person in your business or 20, doing a little planning will help you get the most out of Microsoft 365 Business Premium.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Vjso?autoplay=false]
+
+Congratulations on your decision to move your business to the cloud with Microsoft 365! Whether you have one person in your business or 20, doing a little planning will help you get the most out of Microsoft 365 for business.
 
 ## Info to have on hand before you run the setup wizard
 
@@ -63,7 +72,7 @@ There are a couple of scenarios that include either migrating data or users from
   
 - To set up directory synchronization with your on-premises Active Directory, see [Set up directory synchronization for Microsoft 365](../../enterprise/set-up-directory-synchronization.md), and to understand the different identity models in Microsoft 365, read [Deploy your identity infrastructure for Microsoft 365](../../enterprise/deploy-identity-solution-overview.md).
 
-- To set-up an Exchange hybrid, the full set of instructions that guide you through all the different ways of setting up a hybrid exchange (including setting up DNS records) can be found here: [Exchange Server Deployment Assistant](/exchange/exchange-deployment-assistant)
+- To set up an Exchange hybrid, the full set of instructions that guide you through all the different ways of setting up a hybrid exchange (including setting up DNS records) can be found here: [Exchange Server Deployment Assistant](/exchange/exchange-deployment-assistant)
 
 - To set up a SharePoint hybrid, particularly hybrid search and site features, see [Hybrid Search in SharePoint](/SharePoint/hybrid/hybrid-search-in-sharepoint).
 
@@ -141,3 +150,7 @@ For larger organizations or if you're starting from Skype for Business, on-premi
   - **Consider hiring a [Microsoft partner](https://go.microsoft.com/fwlink/?linkid=391089)**. If you're short on time, or have advanced requirements (like moving thousands of files to Microsoft 365 cloud storage or integrating with other software), an experienced partner can be a big help. 
 
 - **If you have more than 50 employees**, the [FastTrack Onboarding Center](https://go.microsoft.com/fwlink/?LinkId=517115) is available to help you with your deployment.
+
+## See also
+
+[Best practices for securing Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)

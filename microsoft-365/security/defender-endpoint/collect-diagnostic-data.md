@@ -1,9 +1,9 @@
 ---
 title: Collect diagnostic data of Microsoft Defender Antivirus
 description: Use a tool to collect data to troubleshoot Microsoft Defender Antivirus
-keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender av, group policy object, setting, diagnostic data
+keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender av, group policy object, setting, diagnostic data, Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,12 @@ ms.custom: nextgen
 ms.date: 06/29/2020
 ms.reviewer:
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.collection: M365-security-compliance
+ms.subservice: mde
+ms.topic: conceptual
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Collect Microsoft Defender Antivirus diagnostic data
@@ -118,17 +121,18 @@ You can also specify where the diagnostic .cab file will be created using a Grou
 
 2. Select **Define the directory path to copy support log files**.
 
-   ![Screenshot of local group policy editor](images/GPO1-SupportLogLocationDefender.png)
+   :::image type="content" source="images/GPO1-SupportLogLocationDefender.png" alt-text="The local group policy editor" lightbox="images/GPO1-SupportLogLocationDefender.png":::
 
-   ![Screenshot of define path for log files setting](images/GPO2-SupportLogLocationGPPage.png)
+   :::image type="content" source="images/GPO2-SupportLogLocationGPPage.png" alt-text="The define path for log files setting" lightbox="images/GPO2-SupportLogLocationGPPage.png":::
 
-    ![Screenshot of local group policy editor.](images/GPO1-SupportLogLocationDefender.png)  
+   :::image type="content" source="images/GPO1-SupportLogLocationDefender.png" alt-text="The local group policy editor" lightbox="images/GPO1-SupportLogLocationDefender.png"::: 
         
-     ![Screenshot of define path for log files setting.](images/GPO2-SupportLogLocationGPPage.png)  
+   :::image type="content" source="images/GPO2-SupportLogLocationGPPage.png" alt-text="The define path for configuring the log files setting" lightbox="images/GPO2-SupportLogLocationGPPage.png":::
+ 
 3. Inside the policy editor, select **Enabled**.
 
 4. Specify the directory path where you want to copy the support log files in the **Options** field.
-     ![Screenshot of Enabled directory path custom setting.](images/GPO3-SupportLogLocationGPPageEnabledExample.png) 
+   :::image type="content" source="images/GPO3-SupportLogLocationGPPageEnabledExample.png" alt-text="The Enabled directory path custom setting" lightbox="images/GPO3-SupportLogLocationGPPageEnabledExample.png":::
 5. Select **OK** or **Apply**.
 
 ## See also

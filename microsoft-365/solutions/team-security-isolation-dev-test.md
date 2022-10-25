@@ -8,9 +8,10 @@ manager: serdars
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
@@ -136,7 +137,7 @@ Next, you need to configure a sensitivity label with the following settings:
 
 Follow these steps:
 
-1. Open the Microsoft 365 compliance center, under **Solutions**, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection**</a>.
+1. Open the Microsoft Purview compliance portal, under **Solutions**, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection**</a>.
 1. Click **Create a label**.
 1. Type **Company Strategy** for the label name.
 1. Type **Senior leadership company strategy documents** as the tool tip, and then click **Next**.
@@ -157,7 +158,7 @@ Follow these steps:
 
 Next, publish the new label with these steps:
 
-1. In the Microsoft 365 compliance center, on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection**</a>, choose the **Label policies** tab.
+1. In the Microsoft Purview compliance portal, on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection**</a>, choose the **Label policies** tab.
 2. Click **Publish labels**.
 3. On the **Choose sensitivity labels to publish** page, click **Choose sensitivity labels to publish**.
 4. Select **Company Strategy**, and then click **Add**.

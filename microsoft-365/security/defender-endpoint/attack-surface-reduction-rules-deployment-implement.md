@@ -1,11 +1,12 @@
 ---
-title: Implement attack surface reduction (ASR) rules deployment
+title: Enable attack surface reduction (ASR) rules
 description: Provides guidance to implement your attack surface reduction rules deployment.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
@@ -14,22 +15,27 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
-ms.topic: article
-ms.collection: m365solution-scenario
-ms.date: 1/18/2022
+ms.topic: conceptual
+ms.collection: 
+ - m365-security
+ - m365solution-asr-rules
+ - highpri
+ - tier1
+ms.date: 09/19/2022
+search.appverid: met150
 ---
 
-# Step 3: Implement ASR rules
+# Enable attack surface reduction (ASR) rules
 
 Implementing attack surface reduction (ASR) rules moves the first test ring into an enabled, functional state.
 
 > [!div class="mx-imgBorder"]
-> ![ASR rules implementation steps](images/asr-rules-implementation-steps.png)
+> :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="The procedure to implement ASR rules" lightbox="images/asr-rules-implementation-steps.png":::
+  
 
 ## Step 1: Transition ASR Rules from Audit to Block
 
-1. After all exclusions are determined while in audit mode, start setting some ASR rules to "block" mode, starting with the rule that has the fewest triggered events. See” [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
+1. After all exclusions are determined while in audit mode, start setting some ASR rules to "block" mode, starting with the rule that has the fewest triggered events. See" [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
 2. Review the reporting page in the Microsoft 365 Defender portal; see [Threat protection report in Microsoft Defender for Endpoint](threat-protection-reports.md). Also review feedback from your ASR champions.
 3. Refine exclusions or create new exclusions as determined necessary.
 4. Switch problematic rules back to Audit.
@@ -42,7 +48,7 @@ Implementing attack surface reduction (ASR) rules moves the first test ring into
 
 ### How does Warn mode work?
 
-Warn mode is effectively a Block instruction, but with the option for the user to “Unblock” subsequent executions of the given flow or app. Warn mode unblocks on a per device, user, file and process combination. The warn mode information is stored locally and has a duration of 24 hours.
+Warn mode is effectively a Block instruction, but with the option for the user to "Unblock" subsequent executions of the given flow or app. Warn mode unblocks on a per device, user, file and process combination. The warn mode information is stored locally and has a duration of 24 hours.
 
 ### Step 2: Expand deployment to ring n + 1
 
@@ -54,7 +60,7 @@ The deployment process, steps 1 – 3,  is essentially the same for each subsequ
 2. Review ASR-triggered audit events in the Microsoft 365 Defender portal
 3. Create exclusions
 4. Review: refine, add, or remove exclusions as necessary
-5. Set rules to “block”
+5. Set rules to "block"
 6. Review the reporting page in the Microsoft 365 Defender portal.
 7. Create exclusions.
 8. Disable problematic rules or switch them back to Audit.
@@ -123,10 +129,12 @@ You can customize the notification for when a rule is triggered and blocks an ap
 
 ## Additional topics in this deployment collection
 
-[ASR rules deployment prerequisites](attack-surface-reduction-rules-deployment.md)
+[Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
 
-[Step 1: Plan ASR rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+[Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
 
-[Step 2: Test ASR rules](attack-surface-reduction-rules-deployment-test.md)
+[Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
 
-[Step 4: Operationalize ASR rules](attack-surface-reduction-rules-deployment-operationalize.md)
+[Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+
+[Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)

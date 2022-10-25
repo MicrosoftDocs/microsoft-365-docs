@@ -2,7 +2,7 @@
 title: Minimum requirements for Microsoft Defender for Endpoint
 description: Understand the licensing requirements and requirements for onboarding devices to the service
 keywords: minimum requirements, licensing, comparison table
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365-initiative-defender-endpoint
+- m365-security
+- tier1
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Minimum requirements for Microsoft Defender for Endpoint
@@ -37,13 +38,14 @@ There are some minimum requirements for onboarding devices to the service. Learn
 > - Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 ## Licensing requirements
-For information licensing requirements for Microsoft Defender for Endpoint, see [Microsoft Defender for Endpoint licensing information](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
+The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md), even when they are included as part of other Microsoft 365 plans, do not include server licenses. To onboard servers to those plans, you'll need Defender for Servers Plan 1 or Plan 2 as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more, see the overview of [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
+
+For information licensing requirements for Microsoft Defender for Endpoint, see [Microsoft Defender for Endpoint licensing information](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
 For detailed licensing information, see the [Product Terms site](https://www.microsoft.com/licensing/terms/) and work with your account team to learn more about the terms and conditions.
 
 For more information on the array of features in Windows editions, see [Compare Windows editions](https://www.microsoft.com/windowsforbusiness/compare).
-
 ## Browser requirements
 
 Access to Defender for Endpoint is done through a browser, supporting the following browsers:
@@ -58,27 +60,34 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 
 ### Supported Windows versions
 
-- Windows 7 SP1 Enterprise ([Requires ESU for support](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
-- Windows 7 SP1 Pro ([Requires ESU for support](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
-- Windows 8.1 Enterprise
-- Windows 8.1 Pro
 - Windows 11 Enterprise
 - Windows 11 Education
 - Windows 11 Pro
 - Windows 11 Pro Education
 - Windows 10 Enterprise
 - [Windows 10 Enterprise LTSC 2016 (or later)](/windows/whats-new/ltsc/)
+- Windows 10 Enterprise IoT
+
+    >[!NOTE]
+    >While Windows 10 IoT Enterprise is a supported OS in Microsoft Defender for Endpoint and enables OEMs/ODMs to distribute it as part of their product or solution, customers should follow the OEM/ODM's guidance around host-based installed software and supportability.
+
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
+- Windows 8.1 Enterprise
+- Windows 8.1 Pro
+- Windows 7 SP1 Enterprise ([Requires ESU for support](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
+- Windows 7 SP1 Pro ([Requires ESU for support](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
 - Windows server
   - Windows Server 2008 R2 SP1 ([Requires ESU for support](/windows-server/get-started/extended-security-updates-deploy))
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server, version 1803 or later
-  - Windows Server 2019
+  - Windows Server 2019 and later
+  - Windows Server 2019 core edition
   - Windows Server 2022
 - Windows Virtual Desktop
+- Windows 365
 
 Devices on your network must be running one of these editions.
 
@@ -87,21 +96,21 @@ The hardware requirements for Defender for Endpoint on devices are the same for 
 > Cores: 2 minimum, 4 preferred
 > Memory: 1 GB minimum, 4 preferred
 
-For more information on supported versions of Windows 10, see (/windows/release-health/release-information).
+For more information on supported versions of Windows 10, see [Windows 10 release information](/windows/release-health/release-information).
 
 > [!NOTE]
-> Machines running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.
+> - Endpoints running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.
 >
-> Virtual Machines running Windows 10 Enterprise 2016 LTSB may encounter performance issues if run on non-Microsoft virtualization platforms.
+> - Virtual Machines running Windows 10 Enterprise 2016 LTSB may encounter performance issues if run on non-Microsoft virtualization platforms.
 >
-> For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
+> - For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
+>
+> - The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) do not include server licenses. To onboard servers to those plans, you'll need Defender for Servers Plan 1 or Plan 2 as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
 
 When components are up-to-date on Microsoft Windows operating systems, Microsoft Defender for Endpoint support will follow the respective operating system's lifecycle. For more information, see [Lifecycle FAQ](/lifecycle/faq/general-lifecycle). New features or capabilities are typically provided only on operating systems that have not yet reached the end of their lifecycle. Security intelligence updates (definition and engine updates) and detection logic will continue to be provided until at least:
 
 - The [end of support date](/lifecycle/products/) (for operating systems that do not have an Extended Security Updates (ESU) program).
 - The [end of ESU date](/lifecycle/faq/extended-security-updates) (for operating systems that have an ESU program).
-
-
 
 ### Other supported operating systems
 
@@ -130,6 +139,8 @@ When you run the onboarding wizard for the first time, you must choose where you
 Make sure that the diagnostic data service is enabled on all the devices in your organization.
 By default, this service is enabled. It's good practice to check to ensure that you'll get sensor data from them.
 
+The display name of this service is _Connected User Experiences and Telemetry_.
+
 #### Use the command line to check the Windows diagnostic data service startup type
 
 1. Open an elevated command-line prompt on the device:
@@ -144,7 +155,7 @@ By default, this service is enabled. It's good practice to check to ensure that 
 
    If the service is enabled, then the result should look like the following screenshot:
 
-   ![Result of the sc query command for diagtrack.](images/windefatp-sc-qc-diagtrack.png)
+   :::image type="content" source="images/windefatp-sc-qc-diagtrack.png" alt-text="Result of the sc query command for diagtrack" lightbox="images/windefatp-sc-qc-diagtrack.png":::
 
 You'll need to set the service to automatically start if the **START_TYPE** isn't set to **AUTO_START**.
 

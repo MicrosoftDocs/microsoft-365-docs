@@ -2,7 +2,7 @@
 title:  Data collection for advanced troubleshooting on Windows
 description: Learn how to use the client analyzer to collect data for complex troubleshooting scenarios
 keywords: analzyer, collect data, troubleshooting mdeclientanalyzer, advanced troubleshooting
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
-ms.technology: m365d
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Data collection for advanced troubleshooting on Windows
@@ -28,7 +31,7 @@ When collaborating with Microsoft support professionals, you may be asked to use
 
 Run '**MDEClientAnalyzer.cmd /?**' to see the list of available parameters and their description:
 
-![Image of client analyzer parameters in command line.](images/d89a1c04cf8441e4df72005879871bd0.png)
+:::image type="content" source="images/d89a1c04cf8441e4df72005879871bd0.png" alt-text="The parameters for MDEClientAnalyzer.cmd" lightbox="images/d89a1c04cf8441e4df72005879871bd0.png":::
 
 > [!NOTE]
 > When any advanced troubleshooting parameter is used, the analyzer also calls into [MpCmdRun.exe](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) to collect Microsoft Defender Antivirus related support logs.
@@ -64,7 +67,7 @@ Run '**MDEClientAnalyzer.cmd /?**' to see the list of available parameters and t
 
 The analyzer and all the above scenario flags can be initiated remotely by running 'RemoteMDEClientAnalyzer.cmd', which is also bundled into the analyzer toolset:
 
-![Image of commandline with analyzer information.](images/57cab9d82d08f672a92bf9e748ac9572.png)
+:::image type="content" source="images/57cab9d82d08f672a92bf9e748ac9572.png" alt-text="The parameters for RemoteMDEClientAnalyzer.cmd" lightbox="images/57cab9d82d08f672a92bf9e748ac9572.png":::
 
 > [!NOTE]
 >

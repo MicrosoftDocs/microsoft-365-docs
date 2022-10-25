@@ -2,24 +2,26 @@
 title: "Billing information for Microsoft 365 for business in Mexico"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 search.appverid: MET150
 description: "Learn about information specifically for Microsoft 365 for business in Mexico." 
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 monikerRange: 'o365-worldwide'
-ms.date: 11/20/2020
+ms.date: 08/08/2022
 ---
 
 # Billing information for Microsoft 365 for business in Mexico
@@ -42,7 +44,7 @@ During the checkout purchase process, when you get to step **4. Payment and bill
 You can add or modify your RFC so that the information is reflected in future Microsoft 365 for business purchases. To add or modify your RFC, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page.
 
 > [!NOTE]
-> If you're in a monthly or yearly recurrent billing subscription, the addition or modification of the RFC is reflected on the invoice of your next charge.
+> If you're in a recurrent billing subscription, the addition or modification of the RFC is reflected on the invoice of your next charge.
 
 ## 3. Can I add or modify my RFC to an invoice that was already generated?
 

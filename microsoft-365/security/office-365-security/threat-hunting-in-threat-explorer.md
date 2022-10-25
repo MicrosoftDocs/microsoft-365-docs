@@ -6,20 +6,27 @@ ms.author: dansimp
 author: MSFTTracyp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.date: 05/05/2021
 ms.localizationpriority: medium
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: Use Threat Explorer or Real-time detections in the Microsoft 365 Defender portal to investigate and respond to threats efficiently.
-ms.custom: 
+ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Threat hunting in Threat Explorer for Microsoft Defender for Office 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**Applies to:**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 In this article:
 
@@ -30,7 +37,6 @@ In this article:
 
 > [!NOTE]
 > This is part of a **3-article series** on **Threat Explorer (Explorer)**, **email security**, and **Explorer and Real-time detections** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Email security with Threat Explorer](email-security-in-microsoft-defender.md) and [Threat Explorer and Real-time detections](real-time-detections.md).
-
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -49,6 +55,9 @@ With these tools, you can:
 
 For more information, see [Email security with Threat Explorer](email-security-in-microsoft-defender.md).
 
+Watch this short video to learn how to hunt and investigate email and collaboration-based threats using Microsoft Defender for Office 365. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyPRU]
+
 ## Threat Explorer walk-through
 
 In Microsoft Defender for Office 365, there are two subscription plans—Plan 1 and Plan 2. Manually operated Threat hunting tools exist in both plans, under different names and with different capabilities.
@@ -58,12 +67,12 @@ Defender for Office 365 Plan 1 uses *Real-time detections*, which is a subset of
 After you go to **Explorer**, by default, you'll arrive on the **Malware** page, but use the **View** drop down to get familiar with your options. If you're hunting Phish, or digging into a threat campaign, choose those views.
 
 > [!div class="mx-imgBorder"]
-> ![View drop down in Threat Explorer.](../../media/view-drop-down.png)
+> :::image type="content" source="../../media/view-drop-down.png" alt-text="The View drop down in Threat Explorer" lightbox="../../media/view-drop-down.png":::
 
 Once a security operations (Sec Ops) person selects the data they want to see, whether the scope is narrow view like user **Submissions**, or a wider view, like **All email**, they can use the **Sender** button to further filter. Remember to select Refresh to complete your filtering actions.
 
 > [!div class="mx-imgBorder"]
-> ![Sender button in Threat Explorer.](../../media/sender-drop-down.png)
+> :::image type="content" source="../../media/sender-drop-down.png" alt-text="The Sender button in Threat Explorer" lightbox="../../media/sender-drop-down.png":::
 
 Refining focus in Explorer or Real-time detection can be thought of in layers. The first is **View**. The second can be thought of as a *filtered focus*. For example, you can retrace the steps you took in finding a threat by recording your decisions like this: To find the issue in Explorer, **I chose the Malware View with a Recipient filter focus**. This makes retracing your steps easier.
 
@@ -73,28 +82,28 @@ Refining focus in Explorer or Real-time detection can be thought of in layers. T
 Refinements can be made on date ranges by using the date range controls. Here you can see Explorer in **Malware** view, with a **Detection Technology** filter focus. But it's the **Advanced filter** button that lets Sec Ops teams dig deep.
 
 > [!div class="mx-imgBorder"]
-> ![Advanced filter in Threat Explorer.](../../media/advanced-filter.png)
+> :::image type="content" source="../../media/advanced-filter.png" alt-text="The Advanced filter in Threat Explorer" lightbox="../../media/advanced-filter.png":::
 
 Clicking the **Advanced filter** pops a panel that will let Sec Ops hunters build queries themselves, letting them include or exclude the information they need to see. Both the chart and table on the Explorer page will reflect their results.
 
 > [!div class="mx-imgBorder"]
-> ![Results from a query.](../../media/threat-explorer-chart-table.png)
+> :::image type="content" source="../../media/threat-explorer-chart-table.png" alt-text="The Results from a query" lightbox="../../media/threat-explorer-chart-table.png":::
 
 Use the **Column options** button to get the kind of information on the table that would be most helpful:
 
 > [!div class="mx-imgBorder"]
-> ![Column options button highlighted.](../../media/threat-explorer-column-options.png)
+> :::image type="content" source="../../media/threat-explorer-column-options.png" alt-text="The Column options button highlighted" lightbox="../../media/threat-explorer-column-options.png":::
 
 > [!div class="mx-imgBorder"]
-> ![Available options in Columns.](../../media/column-options.png)
+> :::image type="content" source="../../media/column-options.png" alt-text="The available options in Columns" lightbox="../../media/column-options.png":::
 
 In the same mien, make sure to test your display options. Different audiences will react well to different presentations of the same data. For some viewers, the **Email Origins** map can show that a threat is widespread or discreet more quickly than the **Campaign display** option right next to it. Sec Ops can make use of these displays to best make points that underscore the need for security and protection, or for later comparison, to demonstrate the effectiveness of their actions.
 
 > [!div class="mx-imgBorder"]
-> ![Email Origins map.](../../media/threat-explorer-email-origin-map.png)
+> :::image type="content" source="../../media/threat-explorer-email-origin-map.png" alt-text="The Email Origins map" lightbox="../../media/threat-explorer-email-origin-map.png":::
 
 > [!div class="mx-imgBorder"]
-> ![Campaign display options.](../../media/threat-explorer-campaign-display.png)
+> :::image type="content" source="../../media/threat-explorer-campaign-display.png" alt-text="The Campaign display options" lightbox="../../media/threat-explorer-campaign-display.png":::
 
 ### Email investigation
 
@@ -105,25 +114,25 @@ The email entity page pulls together contents that can be found under **Details*
 When you reach this stage, the email entity page will be critical to the final step—*remediation*.
 
 > [!div class="mx-imgBorder"]
-> ![The email entity page.](../../media/threat-explorer-email-entity-page.png)
+> :::image type="content" source="../../media/threat-explorer-email-entity-page.png" alt-text="The email entity page" lightbox="../../media/threat-explorer-email-entity-page.png":::
 
 > [!TIP]
 > To learn more about the rich email entity page (seen below on the **Analysis** tab), including the results of detonated Attachments, findings for included URLs, and safe Email preview, click [here](mdo-email-entity-page.md).
 
 > [!div class="mx-imgBorder"]
-> ![Analysis tab of the email entity page.](../../media/threat-explorer-analysis-tab.png)
+> :::image type="content" source="../../media/threat-explorer-analysis-tab.png" alt-text="The Analysis tab of the email entity page" lightbox="../../media/threat-explorer-analysis-tab.png":::
 
 ### Email remediation
 
 Once a Sec Ops person determines that an email is a threat, the next Explorer or Real-time detection step is dealing with the threat and remediating it. This can be done by returning to Threat Explorer, selecting the checkbox for the problem email, and using the **Actions** button.
 
 > [!div class="mx-imgBorder"]
-> ![Actions button in Threat Explorer.](../../media/threat-explorer-email-actions-button.png)
+> :::image type="content" source="../../media/threat-explorer-email-actions-button.png" alt-text="The Actions button in the Threat Explorer" lightbox="../../media/threat-explorer-email-actions-button.png":::
 
 Here, the analyst can take actions like reporting the mail as Spam, Phishing, or Malware, contacting recipients, or further investigations that can include triggering Automated Investigation and Response (or AIR) playbooks (if you have Plan 2). Or, the mail can also be reported as clean.
 
 > [!div class="mx-imgBorder"]
-> ![The Actions drop down.](../../media/threat-explorer-email-actions-drop-down.png)
+> :::image type="content" source="../../media/threat-explorer-email-actions-drop-down.png" alt-text="The Actions drop down" lightbox="../../media/threat-explorer-email-actions-drop-down.png":::
 
 ## Improvements to threat hunting experience
 
@@ -134,10 +143,10 @@ When navigating from an alert into Threat Explorer, the **View** will be filtere
 Finally, alert ID is included in the URL, for example: `https://https://security.microsoft.com/viewalerts`
 
 > [!div class="mx-imgBorder"]
-> ![Filtering for Alert ID.](../../media/AlertID-Filter.png)
+> :::image type="content" source="../../media/AlertID-Filter.png" alt-text="The Filter for Alert ID" lightbox="../../media/AlertID-Filter.png":::
 
 > [!div class="mx-imgBorder"]
-> ![Alert ID in details flyout.](../../media/AlertID-DetailsFlyout.png)
+> :::image type="content" source="../../media/AlertID-DetailsFlyout.png" alt-text="The Alert ID in details flyout" lightbox="../../media/AlertID-DetailsFlyout.png":::
 
 ### Extending Explorer (and Real-time detections) data retention and search limit for trial tenants
 
@@ -161,7 +170,7 @@ In Threat Explorer, you can see information about user tags in the following exp
 When analysts look at the **Tags** column the email grid, they are seeing all tags that have been applied to sender or recipient mailboxes. By default, system tags like *priority accounts* are shown first.
 
 > [!div class="mx-imgBorder"]
-> ![Filter tags in email grid view.](../../media/tags-grid.png)
+> :::image type="content" source="../../media/tags-grid.png" alt-text="The Filter tags in email grid view" lightbox="../../media/tags-grid.png":::
 
 #### Filtering
 
@@ -170,21 +179,21 @@ Tags can be used as filters. Hunt among priority accounts only, or use specific 
 [![Filter tags.](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![Not filter tags.](../../media/tags-filter-not.png)
+> :::image type="content" source="../../media/tags-filter-not.png" alt-text="The tags that have not been filtered" lightbox="../../media/tags-filter-not.png":::
 
 #### Email detail flyout
 
 To view the individual tags for sender and recipient, select an email to open the message details flyout. On the **Summary** tab, the sender and recipient tags are shown separately. The information about individual tags for sender and recipient can be exported as CSV data.
 
 > [!div class="mx-imgBorder"]
-> ![Email Details tags.](../../media/tags-flyout.png)
+> :::image type="content" source="../../media/tags-flyout.png" alt-text="The Email Details tags" lightbox="../../media/tags-flyout.png":::
 
 Tags information is also shown in the URL clicks flyout. To see it, go to Phish or All Email view > **URLs** or **URL Clicks** tab. Select an individual URL flyout to see additional details about clicks for that URL, including any Tags associated with that click.
 
 ### Updated Timeline View
 
 > [!div class="mx-imgBorder"]
-> ![URL tags.](../../media/tags-urls.png)
+> :::image type="content" source="../../media/tags-urls.png" alt-text="The URL tags" lightbox="../../media/tags-urls.png":::
 >
 Learn more by watching [this video](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4).
 
@@ -197,7 +206,7 @@ Top Malware Families shows the **top targeted users** in the Malware section. To
 Security operations people be able to export the list of targeted users, up to a limit of 3,000, along with the number of attempts made, for offline analysis for each email view. Also, selecting the number of attempts (for example, 13 attempts in the image below) will open a filtered view in Threat Explorer, so you can see more details across emails, and threats for that user.
 
 > [!div class="mx-imgBorder"]
-> ![Top targeted users.](../../media/Top_Targeted_Users.png)
+> :::image type="content" source="../../media/Top_Targeted_Users.png" alt-text="The users targeted the most" lightbox="../../media/Top_Targeted_Users.png":::
 
 ### Exchange transport rules
 
@@ -208,7 +217,7 @@ Names and GUIDs of the transport rules applied to the message appear. Analysts w
 > [!IMPORTANT]
 > Exchange transport rule search and name availability depend on the specific role assigned to you. You need to have one of the following roles or permissions to view the transport rule names and search. However, even without the roles or permissions below, an analyst may see the transport rule label and GUID information in the Email Details. Other record-viewing experiences in Email Grids, Email flyouts, Filters, and Export are not affected.
 >
-> - Exchange Online Only - Data Loss Prevention: All
+> - Exchange Online Only - data loss prevention: All
 > - Exchange Online Only - O365SupportViewConfig: All
 > - Microsoft Azure Active Directory or Exchange Online - Security Admin: All
 > - Azure Active Directory or Exchange Online - Security Reader: All
@@ -218,7 +227,7 @@ Names and GUIDs of the transport rules applied to the message appear. Analysts w
 > Within the email grid, Details flyout, and Exported CSV, the ETRs are presented with a Name/GUID as shown below.
 >
 > > [!div class="mx-imgBorder"]
-> > ![Exchange Transport Rules.](../../media/ETR_Details.png)
+> > :::image type="content" source="../../media/ETR_Details.png" alt-text="The rules in Exchange Transport" lightbox="../../media/ETR_Details.png":::
 
 ### Inbound connectors
 
@@ -227,7 +236,7 @@ Connectors are a collection of instructions that customize how your email flows 
 The search for connectors is a CONTAINS query, which means partial keyword searches can work:
 
 > [!div class="mx-imgBorder"]
-> ![Connector details.](../../media/Connector_Details.png)
+> :::image type="content" source="../../media/Connector_Details.png" alt-text="The Connector details" lightbox="../../media/Connector_Details.png":::
 
 ## Required licenses and permissions
 

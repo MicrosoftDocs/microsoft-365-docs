@@ -1,5 +1,5 @@
 ---
-title: "Records Management in Microsoft 365"
+title: "Records management for documents and emails in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -11,24 +11,26 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365initiative-compliance
+- purview-compliance
+- tier1
+- highpri
 search.appverid:
 - MOE150
 - MET150
 ms.custom:
+- admindeeplinkCOMPLIANCE
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-description: With records management in Microsoft 365, you can apply your retention schedules into a file plan that manages retention, records declaration, and disposition.
+description: Learn how Microsoft Purview Records Management supports high-value items for business, legal, or regulatory record-keeping requirements.
 ---
 
-# Learn about records management in Microsoft 365
+# Learn about records management
 
->*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Organizations of all types require a records-management solution to manage regulatory, legal, and business-critical records across their corporate data. Records management in Microsoft 365 helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be retained, no longer of value, or no longer required for business purposes.
+A records management system, also known as records and information management, is a solution for organizations to manage regulatory, legal, and business-critical records. Records management for Microsoft Purview helps you achieve your organization's legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be retained, no longer of value, or no longer required for business purposes.
 
-Use the following capabilities to support your records management solution in Microsoft 365:
+Use the following capabilities to support your records management solution for Microsoft 365 data:
 
 - **Label content as a record**. Create and configure retention labels to mark content as a [record](#records) that can then be applied by users or automatically applied by identifying sensitive information, keywords, or content types.
 
@@ -47,6 +49,8 @@ Use the following capabilities to support your records management solution in Mi
 Using these capabilities, you can incorporate your organization's retention schedules and requirements into a records management solution that manages retention, records declaration, and disposition, to support the full lifecycle of your content.
 
 In addition to the online documentation, you might find it useful to download a [deck with FAQs](https://aka.ms/MIPC/Blog-RecordsManagementWebinar) from a records management webinar. The recording of the actual webinar is no longer available.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Records
 
@@ -81,16 +85,16 @@ A standard retention label has retention settings and actions but doesn't mark c
 |Move within container <sup>3</sup>|Allowed |Allowed | Allowed| Allowed|
 |Move across containers <sup>3</sup>|Allowed |Allowed if never unlocked | **Blocked** | **Blocked**|
 |Open/Read|Allowed |Allowed | Allowed| Allowed|
-|Change label|Allowed |Allowed - container admin only | Allowed - container admin only| **Blocked**
-|Remove label|Allowed |Allowed - container admin only | Allowed - container admin only| **Blocked**
+|Change label|Allowed |Allowed - container admin only | **Blocked**| **Blocked**
+|Remove label|Allowed |Allowed - container admin only | **Blocked**| **Blocked**
 
 Footnotes:
 
 <sup>1</sup>
-Allowed by default but can be blocked by a tenant setting for files that are larger than 0 bytes: Go to the **Records management** node in the Microsoft 365 compliance center > **Records management settings** > **Retention labels** > **Allow editing of record properties** and then turn off the setting **Allow users to edit record properties**.
+Editing properties for a locked record is allowed by default but can be blocked by a tenant setting in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Allow editing of record properties**.
 
 <sup>2</sup>
-For SharePoint and OneDrive, can be blocked as a tenant setting in the Microsoft 365 compliance center > **Records management** > **Records management settings** > **Retention labels** > **Deletion of items**
+Deleting labeled items in SharePoint and OneDrive can be blocked as a tenant setting in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Deletion of items**.
 
 When you apply a retention label to a list item that has a document attachment, that document doesn't inherit the retention settings and can be deleted from the list item. In comparison, if that list item was declared a record with a retention label, the document attachment would inherit the retention settings and couldn't be deleted.
 
@@ -108,6 +112,21 @@ Containers include SharePoint document libraries, OneDrive accounts, and Exchang
 > In addition, a regulatory label can't be applied to a document that's checked out in SharePoint.
 >
 > Because of the restrictions and irreversible actions, make sure you really do need to use regulatory records before you select this option for your retention labels. To help prevent accidental configuration, this option is not available by default but must first be enabled by using PowerShell. Instructions are included in [Declare records by using retention labels](declare-records.md).
+
+## Validating migrated records
+
+If you're migrating records to SharePoint or OneDrive, you might need to validate these records haven't been altered and retain their immutability status. For example, you're using a migration solution and need to meet the chain of custody requirements for your records. Typical file properties and methods often used for this type of validation, such as file size or file hash, might not be sufficient because SharePoint automatically updates the metadata for a file when it's uploaded.
+
+Instead, to validate your migrated records, you can use the value of the `vti_writevalidationtoken` property, which is a base64-encoded XOR hash of the file before it is modified by SharePoint. Use the following steps:
+
+1. Generate the XOR hash of the original file by using the QuickXorHash algorithm. For more information, see the [QuickXorHash Algorithm code snippet](/onedrive/developer/code-snippets/quickxorhash).
+
+2. Base64-encode the XOR hash. For more information, see the [Base64Encode method documentation](/windows/win32/seccrypto/utilities-base64encode).
+
+3. After the file is migrated, retrieve the value of the `vti_writevalidationtoken` property from the uploaded file.
+
+4. Compare the value generated in step 2 with the value retrieved in step 3. These two values should match. If they do, you've validated that the record hasn't changed.
+
 
 ## Configuration guidance
 

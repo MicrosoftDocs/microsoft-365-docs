@@ -2,69 +2,145 @@
   items: 
     - name: Overview
       href: index.md
+    - name: Productivity and security 
+      href: m365bp-secure-users.md
+    - name: Trial user guide - Microsoft 365 Business Premium
+      href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: Get Microsoft 365 Business Premium
       href: get-microsoft-365-business-premium.md
-    - name: Get Microsoft 365 for campaigns
+    - name: Get Microsoft 365 for Campaigns
       href: get-microsoft-365-campaigns.md
-    - name: How Microsoft 365 protects your data
-      href: m365-campaigns-users.md
-- name: Setup and sign in
+    - name: Resources for partners
+      href: ../security/defender-business/mdb-partners.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+- name: Fortify your environment
   items: 
-    - name: Overview
-      href: microsoft-365-campaigns-setup-overview.md
-    - name: Sign up
-      href: m365-campaigns-sign-up.md
-    - name: Set up
-      href: ../business/set-up.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: Sign in
-      href: m365-campaigns-sign-in.md
-    - name: Customize sign-in page
-      href: m365-customize-sign-in.md
-    - name: Add users
-      href: ../admin/add-users/add-users.md?bc=%2fmicrosoft-365%2fcampaigns%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json
-- name: Bump up security protection
+  - name: Sign in and set up
+    items: 
+      - name: Overview
+        href: m365bp-setup-overview.md
+      - name: Set up Microsoft 365 Business Premium
+        href: m365bp-setup.md
+      - name: Set up Microsoft 365 Business for Campaigns
+        href: m365-campaigns-setup.md
+  - name: Bump up security protection
+    items: 
+      - name: Overview
+        href: m365bp-security-overview.md
+      - name: Turn on security defaults (MFA)
+        href: m365bp-conditional-access.md
+      - name: Protect your admin accounts
+        href: m365bp-protect-admin-accounts.md
+      - name: Protect against malware and other threats
+        href: m365bp-increase-protection.md
+- name: Train your team
+  items:
+  - name: Set up unmanaged (BYOD) devices
+    items: 
+      - name: Overview
+        href: m365bp-devices-overview.md
+      - name: Set up multifactor authentication
+        href: m365bp-multifactor-authentication.md
+      - name: Install Microsoft 365 apps on devices
+        href: m365bp-install-office-apps.md
+      - name: Protect unmanaged devices
+        href: m365bp-protect-pcs-macs.md
+  - name: Use email securely
+    items: 
+      - name: Overview
+        href: m365bp-protect-email-overview.md
+      - name: Protect against phishing and other attacks
+        href: m365bp-avoid-phishing-and-attacks.md
+      - name: Send encrypted email
+        href: send-encrypted-email.md
+  - name: Collaborate and share securely
+    items: 
+      - name: Overview
+        href: m365bp-collaborate-share-securely.md
+      - name: Create Teams for collaboration
+        href: create-teams-for-collaboration.md
+      - name: Set up meetings
+        href: set-up-meetings.md
+      - name: Share files and videos
+        href: share-files-and-videos.md
+      - name: Create a communication site for your organization
+        href: create-communications-site.md
+- name: Safeguard managed devices
   items: 
-    - name: Overview
-      href: m365-campaigns-security-overview.md
-    - name: Protect admin accounts
-      href: m365-campaigns-protect-admin-accounts.md
-    - name: Protect access to your data
-      href: m365-campaigns-conditional-access.md
-    - name: Protect against malware and other threats
-      href: m365-campaigns-increase-protection.md
-- name: Device setup for all staff
-  items: 
-    - name: Set up multifactor authentication
-      href: m365-campaigns-multifactor-authentication.md
-    - name: Set up mobile devices
-      href: ../business/set-up-mobile-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: Protect PCs and Macs
-      href: m365-campaigns-protect-pcs-macs.md
-    - name: Set up managed Windows devices
-      href: ../business/set-up-windows-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-- name: Protect email for all staff
-  items: 
-    - name: Protect against phishing and other attacks
-      href: m365-campaigns-phishing-and-attacks.md
-    - name: Send encrypted email
-      href: send-encrypted-email.md
-- name: Collaborate and share securely
-  items: 
-    - name: Create Teams for collaboration
-      href: create-teams-for-collaboration.md
-    - name: Set up meetings
-      href: set-up-meetings.md
-    - name: Share files and videos
-      href: share-files-and-videos.md
-    - name: Create a Communication site for your organization
-      href: create-communications-site.md
-- name: Reset or remove campaign data from devices
-  items: 
-    - name: Remove campaign or business data
-      href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: Reset devices to factory settings
-      href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+  - name: Set up and secure managed devices
+    items:
+      - name: Overview
+        href: m365bp-protect-devices.md
+      - name: Upgrade to Windows 10 Pro (if needed)
+        href: m365bp-upgrade-windows-10-pro.md    
+      - name: Onboard enrolled devices and apply policies
+        href: m365bp-onboard-devices-mdb.md
+      - name: Use Windows Autopilot to set up or reset devices
+        href: /mem/autopilot/windows-autopilot?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      - name: Install Microsoft 365 Apps on devices
+        href: ../admin/setup/install-applications.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+  - name: Monitor onboarded devices
+    items: 
+      - name: View device status
+        href: m365bp-device-states.md
+      - name: Review and edit device policies
+        href: m365bp-view-edit-create-mdb-policies.md
+      - name: Manage device groups
+        href: m365bp-device-groups-mdb.md
 - name: Security incident management
   items: 
+    - name: Overview
+      href: m365bp-security-incident-management.md
+    - name: Review security recommendations
+      href: ../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Review threats detected on devices
+      href: m365bp-review-threats-take-action.md
+    - name: Review remediation actions on devices
+      href: m365bp-review-remediation-actions-devices.md
     - name: Respond to a compromised email account
       href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+- name: Maintain your environment
+  items: 
+    - name: Overview
+      href: m365bp-maintain-environment.md
+    - name: Security operations guide
+      href: m365bp-security-incident-quick-start.md
+    - name: Add users
+      href: m365bp-add-users.md
+    - name: Reset passwords
+      href: m365bp-reset-passwords.md
+    - name: Remove users who have left
+      href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Remove data from devices
+      href: m365bp-remove-company-data.md
+    - name: Reset devices to factory settings
+      href: m365bp-reset-devices-to-factory-settings.md
+- name: Reference
+  items:
+    - name: Top 10 ways to secure a business
+      href: ../admin/security-and-compliance/secure-your-business-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Glossary of security terms
+      href: m365bp-glossary.yml
+    - name: Microsoft 365 Business Premium FAQ
+      href: microsoft-365-business-faqs.yml
+    - name: Microsoft 365 admin content
+      href: /microsoft-365/admin/
+    - name: Microsoft Defender for Business
+      href: ../security/defender-business/index.yml
+    - name: Microsoft Defender for Office 365
+      href: /microsoft-365/security/office-365-security/overview
+    - name: Microsoft 365 Lighthouse
+      href: ../lighthouse/m365-lighthouse-overview.md
+    - name: Threat protection by Microsoft Defender Antivirus
+      href: m365bp-threats-detected-defender-av.md
+    - name: Intune admin roles
+      href: m365bp-intune-admin-roles-in-the-mac.md
+    - name: Map protection features to Intune settings
+      href: m365bp-map-protection-features-to-intune-settings.md
+    - name: Compliance Manager
+      href: m365bp-set-up-compliance.md
+    - name: Windows Autopilot scenarios and capabilities
+      href: /mem/autopilot/windows-autopilot-scenarios
+
+      
+
+

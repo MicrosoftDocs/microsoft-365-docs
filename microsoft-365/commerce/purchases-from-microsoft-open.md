@@ -1,21 +1,23 @@
 ---
-title: "Enter your product key purchased from Microsoft Open"
+title: "Enter your Microsoft Open product key"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_purchase
+- AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX
 description: "Learn how to activate, renew, or add licenses to a Microsoft 365 for business subscription."

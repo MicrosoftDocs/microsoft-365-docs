@@ -1,5 +1,5 @@
 ---
-title: "Encryption Risks and Protections"
+title: "Encryption risks and protections"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -13,7 +13,8 @@ search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_Enterprise
-- M365-security-compliance
+- purview-compliance
+- tier3
 - Strat_O365_Enterprise
 ms.custom:
 - seo-marvel-mar2020
@@ -40,6 +41,8 @@ Some risk scenarios and the currently available encryption technologies that mit
 | Office 365 Message Encryption | Exchange Online, SharePoint Online | Customer | Email, including protected attachments, falls in hands of a person either within or outside Microsoft 365 who is not the intended recipient of the email. | OME provides value to customers where all emails originating from Microsoft 365 that match certain criteria (i.e., all emails to a certain address) are automatically encrypted before they get sent to another internal or an external recipient. |
 | SMTP TLS with partner organization | Exchange Online | Customer | Email is intercepted via a man-in-the-middle or other attack while in transit from a Microsoft 365 tenant to another partner organization. | This scenario provides value to the customer such that they can send/receive all emails between their Microsoft 365 tenant and their partner's email organization inside an encrypted SMTP channel. |
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Encryption technologies available in multi-tenant environments
 
 | Encryption Technology | Implemented by | Key Exchange Algorithm and Strength | Key Management\* | FIPS 140-2 Validated |
@@ -49,7 +52,7 @@ Some risk scenarios and the currently available encryption technologies that mit
 |  | Skype for Business | AES 256-bit | AES external key is stored in a Secret Safe. The Secret Safe is a secured repository that requires high-level elevation and approvals to access. Access can be requested and approved only by using an internal tool called Lockbox. The AES external key is also stored in the Trusted Platform Module in the server. A 48-digit numerical password is stored in Active Directory and protected by Lockbox. | Yes |
 | Service Encryption | SharePoint Online | AES 256-bit | The keys used to encrypt the blobs are stored in the SharePoint Online Content Database. The SharePoint Online Content Database is protected by database access controls and encryption at rest. Encryption is performed using TDE in Azure SQL Database. These secrets are at the service level for SharePoint Online, not at the tenant level. These secrets (sometimes referred to as the master keys) are stored in a separate secure repository called the Key Store. TDE provides security at rest for both the active database and the database backups and transaction logs. When customers provide the optional key, the customer key is stored in Azure Key Vault, and the service uses the key to encrypt a tenant key, which is used to encrypt a site key, which is then used to encrypt the file level keys. Essentially, a new key hierarchy is introduced when the customer provides a key. | Yes |
 |  | Skype for Business | AES 256-bit | Each piece of data is encrypted using a different randomly generated 256-bit key. The encryption key is stored in a corresponding metadata XML file, which is also encrypted by a per-conference master key. The master key is also randomly generated once per conference. | Yes |
-|  | Exchange Online | AES 256-bit | Each mailbox is encrypted using a data encryption policy that uses encryption keys controlled by Microsoft (on roadmap) or by the customer (when Customer Key is used). | Yes |
+|  | Exchange Online | AES 256-bit | Each mailbox is encrypted using a data encryption policy that uses encryption keys controlled by Microsoft or by the customer (when Customer Key is used). | Yes |
 | TLS between Microsoft 365 and clients/partners | Exchange Online | [Opportunistic TLS supporting multiple cipher suites](./exchange-online-uses-tls-to-secure-email-connections.md) | The TLS certificate for Exchange Online (outlook.office.com) is a 2048-bit SHA256RSA certificate issued by Baltimore CyberTrust Root. <br> <br> The TLS root certificate for Exchange Online is a 2048-bit SHA1RSA certificate issued by Baltimore CyberTrust Root. | Yes, when TLS 1.2 with 256-bit cipher strength is used |
 |  | SharePoint Online | TLS 1.2 with AES 256 <br> <br> [Data Encryption in OneDrive for Business and SharePoint Online](./data-encryption-in-odb-and-spo.md) | The TLS certificate for SharePoint Online (*.sharepoint.com) is a 2048-bit SHA256RSA certificate issued by Baltimore CyberTrust Root. <br> <br> The TLS root certificate for SharePoint Online is a 2048-bit SHA1RSA certificate issued by Baltimore CyberTrust Root. | Yes |
 |  | Skype for Business | [TLS for SIP communications and PSOM data sharing sessions](https://support.office.com/article/Set-up-your-network-for-Skype-for-Business-Online-d21f89b0-3afc-432e-b735-036b2432fdbf) | The TLS certificate for Skype for Business (*.lync.com) is a 2048-bit SHA256RSA certificate issued by Baltimore CyberTrust Root. <br> <br> The TLS root certificate for Skype for Business is a 2048-bit SHA256RSA certificate issued by Baltimore CyberTrust Root. | Yes |

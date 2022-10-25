@@ -2,13 +2,14 @@
 title: "Optimize iFrames in SharePoint Online modern and classic publishing site pages"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content

@@ -1,5 +1,5 @@
 ---
-title: "Build and manage assessments in Microsoft Compliance Manager"
+title: "Build and manage assessments in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -9,40 +9,43 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- M365-security-compliance
+ms.collection:
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
-search.appverid: 
+- tier1
+search.appverid:
 - MOE150
 - MET150
-description: "Build assessments in Microsoft Compliance Manager to help you meet the requirements of regulations and certifications that are important to your organization."
+description: "Build assessments in Microsoft Purview Compliance Manager to help you meet the requirements of regulations and certifications that are important to your organization."
 ---
 
 # Build and manage assessments in Compliance Manager
 
 **In this article:** Learn how to customize Compliance Manager for your organization by creating and managing **assessments**. This article walks you through how to create assessments, how to organize them into **groups**, working with **controls**, accepting **updates**, and exporting assessment **reports**.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Introduction to assessments
 
-Compliance Manager helps you create assessments that evaluate your compliance with industry and regional regulations that apply to your organization. Assessments are built upon the framework of assessment templates, which contain the necessary controls, improvement actions, and, where applicable, Microsoft actions for completing the assessment. Setting up the most relevant assessments for your organization can help you implement policies and operational procedures to limit your compliance risk.
+Compliance Manager helps you create assessments that evaluate your compliance with industry and regional regulations that apply to your organization. Assessments are built upon the framework of assessment templates, which contain the necessary controls, improvement actions, and, where applicable, Microsoft actions for completing the assessment. Setting up the most relevant assessments for your organization can help you implement policies and operational procedures to limit your compliance risk.
 
 All of your assessments are listed on the assessments tab of Compliance Manager. Learn more about [how to filter your view of your assessments and interpret status states](compliance-manager-setup.md#assessments-page).
 
 > [!IMPORTANT]
-> The templates available to your organization for building assessments depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> The templates available to your organization for building assessments depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## Data Protection Baseline default assessment
 
 To get you started, Microsoft provides a **default** assessment in Compliance Manager for the **Microsoft 365 data protection baseline**. This baseline assessment has a set of controls for key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
 
-This assessment is used to calculate your initial compliance score the first time you come to Compliance Manager, before you configure any other assessments. Compliance Manager collects initial signals from your Microsoft 365 solutions. You’ll see at a glance how your organization is performing relative to key data protection standards and regulations, and see suggested improvement actions to take.
+This assessment is used to calculate your initial compliance score the first time you come to Compliance Manager, before you configure any other assessments. Compliance Manager collects initial signals from your Microsoft 365 solutions. You'll see at a glance how your organization is performing relative to key data protection standards and regulations, and see suggested improvement actions to take.
 
 Compliance Manager becomes more helpful as you build and manage your own assessments to meet your organization's particular needs.
 
 ## Understand groups before creating assessments
 
-When you create an assessment, you’ll need to assign it to a group. Groups are containers that allow you to organize assessments in a way that is logical to you, such as by year or regulation, or based on your organization's divisions or geographies. This is why we recommend planning a grouping strategy before you create assessments.
+When you create an assessment, you'll need to assign it to a group. Groups are containers that allow you to organize assessments in a way that is logical to you, such as by year or regulation, or based on your organization's divisions or geographies. This is why we recommend planning a grouping strategy before you create assessments.
 
 Below are examples of two groups and their underlying assessments:
 
@@ -68,15 +71,15 @@ You can create a group while creating a new assessment. Groups can't be created 
 - Related assessment controls in different assessments within the same group automatically update when completed.
 - Groups can contain assessments for the same certification or regulation, but each group can only contain one assessment for a specific product-certification pair. For example, a group can't contain two assessments for Office 365 and NIST CSF. A group can contain multiple assessments for the same product only if the corresponding certification or regulation for each one is different.
 - Deleting an assessment breaks the relationship between that assessment and the group.
-- Groups can't be manually deleted.
+- Groups can't be deleted.
 
 ## Understand templates before creating assessments
 
-Assessment templates contain the controls and action recommendations for assessments, based on certifications for different privacy regulations and standards. Your organization’s available templates may include one or more templates that were included as part of your licensing agreement, along with any additional premium templates that you have purchased.
+Assessment templates contain the controls and action recommendations for assessments, based on certifications for different privacy regulations and standards. Your organization starts out with at least one and possibly more **included** templates available to use, depending on your licensing agreement. Your organization may also purchase additional **premium** templates.
 
-Each template, whether included or premium, exists in two versions: one for use with Microsoft 365 (or other Microsoft products as available), and a universal version that can be tailored to assess other products that you use. You can choose the appropriate template type for the product you want to assess.
+Each template exists in two versions: one for use with Microsoft 365 (or other Microsoft products as available), and a universal version that can be tailored to assess other products that you use. You can choose the appropriate template type for the product you want to assess.
 
-To learn more about templates, see [Working with assessment templates](compliance-manager-templates.md).
+Get more details more about templates at [Learn about assessment templates in Compliance Manager](compliance-manager-templates.md).
 
 ## Create assessments
 
@@ -89,13 +92,14 @@ To create an assessment, you'll use a guided process to select a template and de
 
 #### Create assessments based on recommendations for your org type
 
-Compliance Manager can indicate which assessments may be most relevant to your organization. When you provide basic information about your organization's industry and locations, we'll recommend which templates to use from our library of over 300 templates. Simply choose among the recommended templates for quick setup of multiple assessments all at once. 
+Compliance Manager can indicate which assessments may be most relevant to your organization. When you provide basic information about your organization's industry and locations, we'll recommend which templates to use from our library of over 300 templates. Simply choose among the recommended templates for quick setup of multiple assessments all at once.
 
 To create one or more assessments based on our recommendations, select **Add Recommended Assessments** from your **Assessments** page and follow these steps:
-   - Select one or more industries that identify your organization, then select **Next**
-   - Select one or more regions for your organization's location, then select **Next**
-   - On the **Choose assessment** screen, select the dropdown arrow next to **Recommended templates** to see the list of assessments we think apply to your organization. Check the boxes next to the templates you want to use for creating assessments, then select **Next**.
-   - Review your final selections and select **Add Recommended Assessments** to create your new assessments.
+
+- Select one or more industries that identify your organization, then select **Next**
+- Select one or more regions for your organization's location, then select **Next**
+- On the **Choose assessment** screen, select the dropdown arrow next to **Recommended templates** to see the list of assessments we think apply to your organization. Check the boxes next to the templates you want to use for creating assessments, then select **Next**.
+- Review your final selections and select **Add Recommended Assessments** to create your new assessments.
 
 #### Create an assessment using a guided process
 
@@ -107,10 +111,10 @@ To create one or more assessments based on our recommendations, select **Add Rec
 
 4. **Product, name, and group:** Set these properties to identify your assessment, choose which product it will be evaluating, and assign it to a group.
 
-    - **Product**: Select the product you want your assessment to apply to. If you are using a Microsoft template, such as one designed for Microsoft 365, this field will be populated for you to indicate the appropriate product and cannot be changed. If you’re using a universal template, select whether you’re creating this assessment for a new product or a custom product you have already defined in Compliance Manager. If you choose a new product, enter its name. Note that you cannot select a pre-defined Microsoft product when using a universal template.
-    - **Assessment name**: Enter a name for your assessment in the **Assessment name** field. Assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you’ll receive an error asking you to create a different name.
+    - **Product**: Select the product you want your assessment to apply to. If you are using a Microsoft template, such as one designed for Microsoft 365, this field will be populated for you to indicate the appropriate product and cannot be changed. If you're using a universal template, select whether you're creating this assessment for a new product or a custom product you have already defined in Compliance Manager. If you choose a new product, enter its name. Note that you cannot select a pre-defined Microsoft product when using a universal template.
+    - **Assessment name**: Enter a name for your assessment in the **Assessment name** field. Assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you'll receive an error asking you to create a different name.
     - **Group**: Assign your assessment to a group. You can either:
-        - Select **Use existing group** to assign it to a group you’ve already created; or
+        - Select **Use existing group** to assign it to a group you've already created; or
         - Select **Create new group** to create a new group and assign this assessment to it:
             - Determine a name for your group and enter it in the field beneath the radio button.
             - You can **copy data from an existing group**, such as implementation and testing details and documents, by selecting the appropriate boxes.
@@ -144,20 +148,20 @@ The controls tab displays detailed information for each control mapped to the as
 Beneath the chart, a table lists detailed information about each control within the assessment. Controls are grouped by control family. Expand each family name to reveal the individual controls it contains. The information listed for each control includes:
 
 - **Control title**
-- **Status**: reflects the test status of the improvement actions within the control 
-    - **Passed** - all improvement actions have a test status of “passed,” or at least one is passed and the rest are “out of scope”
-    -  **Failed** - at least one improvement action has a test status of “failed”
-    - **None** - all improvement actions have not been tested
-    - **Out of scope** - all improvement actions are out of scope for this assessment
-    - **In progress** - improvement actions have a status other than the ones listed above, which could include “in progress,” “partial credit,” or “undetected”
-- **Control ID**: the control’s identification number, assigned by its corresponding regulation, standard, or policy
-- **Points achieved**: the number of points earned by completing actions, out of the total number of achievable points 
+- **Status**: reflects the test status of the improvement actions within the control
+  - **Passed** - all improvement actions have a test status of "passed," or at least one is passed and the rest are "out of scope"
+  - **Failed** - at least one improvement action has a test status of "failed"
+  - **None** - all improvement actions have not been tested
+  - **Out of scope** - all improvement actions are out of scope for this assessment
+  - **In progress** - improvement actions have a status other than the ones listed above, which could include "in progress," "partial credit," or "undetected"
+- **Control ID**: the control's identification number, assigned by its corresponding regulation, standard, or policy
+- **Points achieved**: the number of points earned by completing actions, out of the total number of achievable points
 - **Your actions**: the number of your actions completed out of the total number of actions to be done
 - **Microsoft actions**: the number of actions completed by Microsoft
 
-To view a control’s details, select it from its row in the table. The control details page shows a graph indicating the test status of the actions within that control. A table below the graph shows key improvement actions for that control.
+To view a control's details, select it from its row in the table. The control details page shows a graph indicating the test status of the actions within that control. A table below the graph shows key improvement actions for that control.
 
-Select an improvement action from the list to drill into the improvement action’s details page. The details page shows test status and implementation notes, and launch into the recommended solution.
+Select an improvement action from the list to drill into the improvement action's details page. The details page shows test status and implementation notes, and launch into the recommended solution.
 
 ### Your improvement actions tab
 
@@ -167,26 +171,28 @@ Select an improvement action to view its details page, and select the **Launch n
 
 ### Microsoft actions tab
 
-The Microsoft actions tab appears for assessments based on templates that support Microsoft products. It lists all the actions in the assessment that are managed by Microsoft. The list shows key action details, including: test status, points that contribute to your overall compliance score, associated regulations and standards, applicable solution, action type, and control family. Select an improvement action to view its details page.
+The Microsoft actions tab appears for assessments based on templates that support Microsoft products. It lists all the actions in the assessment that are managed by Microsoft. The list shows key action details, including: test status, points that contribute to your overall compliance score, associated regulations and standards, applicable solution, action type, and control family. Select an improvement action to view its details page.
 
 Learn more about [how controls and improvement actions are tracked and scored.](compliance-score-calculation.md)
 
 ## Accept updates to assessments
 
-When an update is available for an assessment, you’ll see a notification and have the option to accept the update or defer it for a later time.
+When an update is available for an assessment, you'll see a notification and have the option to accept the update or defer it for a later time.
+
+Updates are available for assessments based on Microsoft templates, such as those designed for use with Microsoft 365. If your organization is using universal templates for assessing other products, inheritance may not be supported. For more information, see [Extend assessment templates](compliance-manager-templates-extend.md).
 
 ### What causes an update
 
-An assessment update occurs when there are underlying template changes that impact scoring. Changes may involve adjusting control mapping or other guidance based on regulatory changes or product changes. Assessment updates can originate from your organization (such as, when a [custom template is modified](compliance-manager-templates-modify.md) as well as from Microsoft.
+An assessment update occurs when there are underlying template changes that impact scoring. Changes may involve adjusting control mapping or other guidance based on regulatory changes or product changes. Assessment updates can originate from your organization (such as when a [custom template is modified](compliance-manager-templates-modify.md)) as well as from Microsoft.
 
 If Microsoft updates a Compliance Manager template that you extended, your assessment will inherit those updates once you accept them. Your assessment will retain the additional attributes you applied to the assessment when you extended it.
 
 Custom assessments that you create do not receive any template updates from Microsoft. Custom assessments can receive improvement action updates, but any Microsoft updates to control mapping between assessments and improvement actions don't apply to custom templates.
 
 > [!NOTE]
-> Updates to assessments apply only at the group level. If you have two assessments built from the same template that exist in two different groups, each assessment will have a pending update notification, and you’ll need to accept the update to each assessment in its respective group individually.
+> Updates to assessments apply only at the group level. If you have two assessments built from the same template that exist in two different groups, each assessment will have a pending update notification, and you'll need to accept the update to each assessment in its respective group individually.
 
-#### Where you’ll see assessment update notifications
+#### Where you'll see assessment update notifications
 
 The assessment details page also shows a **Pending update** label next to the assessment with an update. Select that assessment to get to its details page.
 
@@ -204,11 +210,11 @@ After selecting **Review update** from the assessment details page, a flyout pan
 - An overview explaining the update
 - Specific details about the changes, including the impact to your compliance score, the amount of progress toward completion of the assessment, and the specific number of changes to improvement actions and controls.
 
-Selecting the **Updated template** link will download an Excel file containing control data for the version of the template with the pending updates. Selecting the **Current template** link downloads a file of the existing template without the changes.
+Selecting the **Updated template** command will download an Excel file containing control data for the version of the template with the pending updates. Selecting the **Current template** command downloads a file of the existing template without the updates.
 
 To accept the update and make the changes to your assessment, select **Accept update**. Accepted changes are permanent.
 
-If you select **Cancel**, the update won't be applied to the assessment. However, you’ll continue to see the **Pending update** notification until you accept the update.
+If you select **Cancel**, the update won't be applied to the assessment. However, you'll continue to see the **Pending update** notification until you accept the update.
 
 **Why we recommend accepting updates**
 
@@ -216,7 +222,7 @@ Accepting updates helps ensure you have the most updated guidance on using solut
 
 **Why you might want to defer an update**
 
-If you’re in the middle of completing an assessment, you may want to ensure you’ve finished work on it before you accept an update to the assessment that could disrupt control mapping. You can defer the update for a later time by selecting **Cancel** on the review update flyout pane.
+If you're in the middle of completing an assessment, you may want to ensure you've finished work on it before you accept an update to the assessment that could disrupt control mapping. You can defer the update for a later time by selecting **Cancel** on the review update flyout pane.
 
 ## Export an assessment report
 
@@ -234,11 +240,11 @@ Deleting an assessment removes it from the list on your assessments page. Note t
 
 To delete an assessment, follow the steps below:
 
-1. From your **assessments** page, select the assessment you wish to delete to open that assessment’s details page.
+1. From your **assessments** page, select the assessment you wish to delete to open that assessment's details page.
 
 2. Select **Delete assessment** in the upper-right corner of your screen.
 
-3. A window will appear asking you to confirm that you want to permanently delete the assessment. Select **Delete assessment** to close the window. You’ll get a confirmation window that your assessment was deleted from Compliance Manager.
+3. A window will appear asking you to confirm that you want to permanently delete the assessment. Select **Delete assessment** to close the window. You'll get a confirmation window that your assessment was deleted from Compliance Manager.
 
 > [!NOTE]
 > You can't delete all of your assessments. Organizations need at least one assessment for Compliance Manager to function properly. If the assessment you want to delete is the only one, add another assessment before deleting the other assessment.

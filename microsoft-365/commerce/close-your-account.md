@@ -2,28 +2,30 @@
 title: Close your account
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
+- commerce_subscriptions
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
-- commerce_subscription
 - AdminTemplateSet
 search.appverid: MET150
 description: "When you close your account with Microsoft all information related to your account is deleted including licenses, users, and user data."
 ms.date: 04/02/2021
 ---
 
-# Close your account
+# Close your Microsoft account
 
 When you close your account with Microsoft, all information related to your account is deleted. This information includes subscriptions, licenses, payment methods, users, and user data.
 

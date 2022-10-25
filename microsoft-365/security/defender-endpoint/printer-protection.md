@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint Device Control Printer Protection
 description: Microsoft Defender for Endpoint Device Control Printer Protection blocks people from printing via non-corporate printers or non-approved USB printer.
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: lovina-saldanha
 ms.reviewer: dansimp
 manager: dansimp
 audience: ITPro
-ms.technology: mde
-ms.topic: article
-ms.collection: M365-security-compliance
+ms.subservice: mde
+ms.topic: conceptual
+ms.collection: 
+- m365-security
+- tier3
 ms.custom: admindeeplinkDEFENDER
+search.appverid: met150
 ---
 
 # Device Control Printer Protection
@@ -89,7 +92,7 @@ For Intune, currently Device Control Printer Protection supports OMA-URI only.
 
 The CSP support string with `<enabled/>`:
 
-:::image type="content" source="../../media/customeditrow.png" alt-text="custom edit row.":::
+:::image type="content" source="../../media/customeditrow.png" alt-text="The Custom page" lightbox="../../media/customeditrow.png":::
 
 ### Scenario 2: Allow specific approved USB printers using Intune
 
@@ -103,7 +106,7 @@ The CSP support string with `<enabled/>`:
 
 The CSP support string with approved USB printers via 'ApprovedUsbPrintDevices' property, example `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872"/>`:
 
-:::image type="content" source="../../media/editrow.png" alt-text="edit row.":::
+:::image type="content" source="../../media/editrow.png" alt-text="The Edit Row pane" lightbox="../../media/editrow.png":::
 
 ## Deploy policy via Group Policy
 
@@ -119,7 +122,7 @@ If the device isn't Intune joined, you can also deploy the policy via Group Poli
 
   User Configuration \> Administrative Templates \> Control Panel \> Printers: Enable Device control Printing Restrictions
 
-:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="enable device printing restrictions.":::
+:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="The Enable Device Control Printing Restrictions pane" lightbox="../../media/enable-device-ctrl-printing-restrictions.png":::
 
 ### Scenario 2: Allow specific approved USB printers using Group Policy
 
@@ -131,7 +134,7 @@ If the device isn't Intune joined, you can also deploy the policy via Group Poli
 
   User Configuration \> Administrative Templates \> Control Panel \> Printers: List of Approved USB-connected print devices
 
-:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="list of approved usb connected print devices.":::
+:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="The list of approved USB-connected print devices" lightbox="../../media/list-of-approved-connected-print-devices.png":::
 
 ## View Device Control Printer Protection data in Microsoft Defender for Endpoint portal
 
@@ -149,7 +152,7 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
- :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="advanced hunting.":::
+ :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="advanced hunting" lightbox="../../media/device-control-advanced-hunting.png":::
 
  You can use the PnP event to find the USB printer used in the organization:
 
@@ -170,4 +173,4 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
- :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="advanced hunting":::
+ :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="The Advanced Hunting page" lightbox="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png":::

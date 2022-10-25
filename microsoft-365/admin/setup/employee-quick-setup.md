@@ -1,5 +1,5 @@
 ---
-title: "Employee quick setup-guide"
+title: "Employee quick-setup guide"
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -7,12 +7,16 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- Tier2
+- scotvorg 
+- highpri
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 monikerRange: 'o365-worldwide'
@@ -23,7 +27,7 @@ search.appverid:
 description: "Help your employees learn how to set up Office apps they get with Microsoft 365 Business Premium."
 ---
 
-# Employee quick setup
+# Employee quick setup in Microsoft 365 for business
 
 Are you new to Microsoft 365 for business? :::image type="icon" source="../../media/video-call-icon.png" border="false"::: [Watch this video: What is Microsoft 365?](../admin-overview/what-is-microsoft-365.md) to learn about it. Then follow these steps.
 
@@ -40,7 +44,7 @@ Are you new to Microsoft 365 for business? :::image type="icon" source="../../me
     - In Chrome, go to the download on the bottom of the page and choose **Open**.
     - In Microsoft Edge/IE, choose **Save** then **Run**.
     
-        If asked to allow the app to make changes, choose **Yes**. Let Office setup begin.
+    If asked to allow the app to make changes, choose **Yes**. Let Office setup begin.
     - On a Mac, open Microsoft **Office_2016_Installer.pkg**
 
 ## 3. Open Outlook and add your account

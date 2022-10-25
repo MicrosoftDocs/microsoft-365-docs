@@ -3,7 +3,7 @@ title: Create an app to access Microsoft Defender for Endpoint without a user
 ms.reviewer: 
 description: Learn how to design a web app to get programmatic access to Microsoft Defender for Endpoint without a user.
 keywords: apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file, advanced hunting, query
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-MS.technology: mde
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Create an app to access Microsoft Defender for Endpoint without a user
@@ -25,6 +28,11 @@ ms.custom: api
 
 **Applies to:** 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/index.yml)
+
+> [!IMPORTANT]
+> Advanced hunting capabilities are not included in Defender for Business. See [Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
+
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -49,7 +57,7 @@ This article explains how to create an Azure AD application, get an access token
 
 2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**. 
 
-    :::image type="content" alt-text="Image of Microsoft Azure and navigation to application registration." source="images/atp-azure-new-app2.png" lightbox="images/atp-azure-new-app2.png":::
+    :::image type="content" source="images/atp-azure-new-app2.png" alt-text="The application registration pane" lightbox="images/atp-azure-new-app2.png":::
 
 3. In the registration form, choose a name for your application, and then select **Register**.
 
@@ -58,11 +66,11 @@ This article explains how to create an Azure AD application, get an access token
    > [!NOTE]
    > *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
-   :::image type="content" alt-text="add permission." source="images/add-permission.png" lightbox="images/add-permission.png":::
+   :::image type="content" source="images/add-permission.png" alt-text="The API permissions pane" lightbox="images/add-permission.png":::
 
    Select **Application permissions** \> **Alert.Read.All**, and then select **Add permissions**.
 
-   :::image type="content" alt-text="app permission." source="images/application-permissions.png" lightbox="images/application-permissions.png":::
+   :::image type="content" source="images/application-permissions.png" alt-text="The application permission information pane" lightbox="images/application-permissions.png":::
 
      You need to select the relevant permissions. 'Read All Alerts' is only an example. For example:
 
@@ -75,18 +83,18 @@ This article explains how to create an Azure AD application, get an access token
      > [!NOTE]
      > Every time you add a permission, you must select **Grant consent** for the new permission to take effect.
 
-    ![Grant permissions.](images/grant-consent.png)
+    :::image type="content" source="images/grant-consent.png" alt-text="The grant permissions page" lightbox="images/grant-consent.png":::
 
 6. To add a secret to the application, select **Certificates & secrets**, add a description to the secret, and then select **Add**.
 
     > [!NOTE]
     > After you select **Add**, select **copy the generated secret value**. You won't be able to retrieve this value after you leave.
 
-    ![Image of create app key.](images/webapp-create-key2.png)
+      :::image type="content" source="images/webapp-create-key2.png" alt-text="The create application option" lightbox="images/webapp-create-key2.png":::
 
 7. Write down your application ID and your tenant ID. On your application page, go to **Overview** and copy the following.
 
-   :::image type="content" alt-text="Image of created app id." source="images/app-and-tenant-ids.png" lightbox="images/app-and-tenant-ids.png":::
+   :::image type="content" source="images/app-and-tenant-ids.png" alt-text="The created app and tenant IDs" lightbox="images/app-and-tenant-ids.png":::
 
 8. **For Microsoft Defender for Endpoint Partners only**. Set your app to be multi-tenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multi-tenanted:
 
@@ -133,18 +141,22 @@ $authBody = [Ordered] @{
 }
 $authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
 $token = $authResponse.access_token
+$token
 ```
 
 ### Use C#:
 
-The following code was tested with NuGet Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
+The following code was tested with NuGet Microsoft.Identity.Client 3.19.8.
+
+> [!IMPORTANT]
+> The [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet package and Azure AD Authentication Library (ADAL) have been deprecated. No new features have been added since June 30, 2020.   We strongly encourage you to upgrade, see the [migration guide](/azure/active-directory/develop/msal-migration) for more details.
 
 1. Create a new console application.
-1. Install NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
+1. Install NuGet [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/).
 1. Add the following:
 
     ```csharp
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+    using Microsoft.Identity.Client;
     ```
 
 1. Copy and paste the following code in your app (don't forget to update the three variables: ```tenantId, appId, appSecret```):
@@ -153,17 +165,17 @@ The following code was tested with NuGet Microsoft.IdentityModel.Clients.ActiveD
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
     string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    const string authority = https://login.microsoftonline.com;
+    const string audience = https://api.securitycenter.microsoft.com;
 
-    const string authority = "https://login.microsoftonline.com";
-    const string wdatpResourceId = "https://api.securitycenter.microsoft.com";
+    IConfidentialClientApplication myApp = ConfidentialClientApplicationBuilder.Create(appId).WithClientSecret(appSecret).WithAuthority($"{authority}/{tenantId}").Build();
 
-    AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
-    ClientCredential clientCredential = new ClientCredential(appId, appSecret);
-    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
-    string token = authenticationResult.AccessToken;
+    List<string> scopes = new List<string>() { $"{audience}/.default" };
+
+    AuthenticationResult authResult = myApp.AcquireTokenForClient(scopes).ExecuteAsync().GetAwaiter().GetResult();
+
+    string token = authResult.AccessToken;
     ```
-
-
 ### Use Python
 
 See [Get token using Python](run-advanced-query-sample-python.md#get-token).
@@ -198,7 +210,7 @@ Ensure that you got the correct token:
 
    In the following image, you can see a decoded token acquired from an app with permissions to all of  Microsoft Defender for Endpoint's roles:
 
-   :::image type="content" alt-text="Image of token validation." source="images/webapp-decoded-token.png" lightbox="images/webapp-decoded-token.png":::
+   :::image type="content" source="images/webapp-decoded-token.png" alt-text="The token details portion" lightbox="images/webapp-decoded-token.png":::
 
 ## Use the token to access Microsoft Defender for Endpoint API
 

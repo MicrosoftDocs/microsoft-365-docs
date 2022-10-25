@@ -1,32 +1,32 @@
 ---
 title: How automated investigation and response works in Microsoft Defender for Office 365
-f1.keywords: 
+f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
 - MET150
 - MOE150
-ms.collection: 
-- M365-security-compliance
+ms.collection:
+- m365-security
 - m365initiative-defender-office365
 keywords: automated incident response, investigation, remediation, threat protection
 ms.date: 01/29/2021
 description: See how automated investigation and response capabilities work in Microsoft Defender for Office 365
-ms.custom: 
+ms.custom:
 - air
 - seo-marvel-mar2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # How automated investigation and response works in Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
@@ -72,15 +72,15 @@ Remediation is the final phase of the playbook. During this phase, remediation s
 
 ## Example: A security administrator triggers an investigation from Threat Explorer
 
-In addition to automated investigations that are triggered by an alert, your organization's security operations team can trigger an automated investigation from a view in [Threat Explorer](threat-explorer.md).  This investigation also creates an alert, so that Microsoft 365 Defender incidents and external SIEM tools can see that this investigation was triggered.
+In addition to automated investigations that are triggered by an alert, your organization's security operations team can trigger an automated investigation from a view in [Threat Explorer](threat-explorer.md). This investigation also creates an alert, so Microsoft 365 Defender incidents and external SIEM tools can see that this investigation was triggered.
 
 For example, suppose that you are using the **Malware** view in Explorer. Using the tabs below the chart, you select the **Email** tab. If you select one or more items in the list, the **+ Actions** button activates.
 
-![Explorer with selected messages.](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
+:::image type="content" source="../../media/Explorer-Malware-Email-ActionsInvestigate.png" alt-text="The Explorer with selected messages" lightbox="../../media/Explorer-Malware-Email-ActionsInvestigate.png":::
 
 Using the **Actions** menu, you can select **Trigger investigation**.
 
-![Actions menu for selected messages.](../../media/explorer-malwareview-selectedemails-actions.jpg)
+:::image type="content" source="../../media/explorer-malwareview-selectedemails-actions.jpg" alt-text="The Actions menu for selected messages" lightbox="../../media/explorer-malwareview-selectedemails-actions.jpg":::
 
 Similar to playbooks triggered by an alert, automatic investigations that are triggered from a view in Explorer include a root investigation, steps to identify and correlate threats, and recommended actions to mitigate those threats.
 

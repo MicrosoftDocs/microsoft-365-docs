@@ -1,5 +1,5 @@
 ---
-title: "Set up file storage and sharing"
+title: "Set up OneDrive file storage and sharing"
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -7,15 +7,17 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
-
 - Adm_O365_Setup
 - SPO_Content
 ms.custom:
+- VSBFY23
 - IT_Networking
 - TRN_M365B
 - OKR_SMB_Videos
@@ -82,7 +84,7 @@ Here's how each person on your team can set up OneDrive and share files.
 
     ![Sharing a folder.](../../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
   
-4. On the **Send Link** page, leave the default selection **Anyone with the link can view and edit**.﻿
+4. On the **Send Link** page, leave the default selection **Anyone with the link can view and edit**.
 
     Type names or email addresses of team members who you want to have access to the folder, and add an optional message.
 

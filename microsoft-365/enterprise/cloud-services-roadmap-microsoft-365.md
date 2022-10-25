@@ -4,13 +4,15 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-subscription-management
+ms.collection: 
+- scotvorg
+- M365-subscription-management
 ms.custom: it-pro
 description: The roadmap to set up your cloud services for Microsoft 365.
 ---
@@ -19,7 +21,7 @@ description: The roadmap to set up your cloud services for Microsoft 365.
 
 To get the creativity, teamwork, and productivity benefits of Microsoft 365 for enterprise, deploy the cloud services that best fit your organization's needs.
 
-If you have existing server-based deployments for Exchange, SharePoint, or Skype for Business and want to migrate your entire organization to Microsoft 365 for enterprise, see the [client and server software roadmap](client-server-software-roadmap-microsoft-365.md). This roadmap includes Microsoft Office client products, on-premises Office Server products, and Microsoft Windows&ndash;based devices.
+If you have existing server-based deployments for Exchange, SharePoint, or Skype for Business and want to migrate your entire organization to Microsoft 365 for enterprise, see the [client and server software roadmap](client-server-software-roadmap-microsoft-365.md). This roadmap includes Microsoft Office client products, on-premises Office Server products, and Microsoft Windows-based devices.
 
 ## Deploy
 
@@ -29,8 +31,7 @@ To deploy your cloud services:
 - [Migrate your on-premises data to Microsoft 365](migrate-data-to-office-365.md)
 - Get your cloud services set up for your users
   - [Exchange Online](/Exchange/exchange-online)
-  - [SharePoint Online](/sharepoint/sharepoint-online)
-  - [Skype for Business](/SkypeForBusiness/skype-for-business-online)
+  - [SharePoint](/sharepoint/sharepoint-online)
   - [Microsoft Teams](/MicrosoftTeams/Teams-overview)
   - [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
 - [Train your users](/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
@@ -43,9 +44,9 @@ To manage your cloud services:
 - [Understand your support options](../admin/get-help-support.md)
 - Administer your cloud services
   - [Exchange Online](/Exchange/exchange-online)
-  - [SharePoint Online](https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a)
+  - [SharePoint](https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a)
   - [Skype for Business](/SkypeForBusiness/skype-for-business-online)
-  - [Microsoft Teams](//MicrosoftTeams/quality-of-experience-review-guide)
+  - [Teams](/MicrosoftTeams/quality-of-experience-review-guide)
   - [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
 - [Perform performance tuning for your cloud services](tune-microsoft-365-performance.md)
 

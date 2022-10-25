@@ -6,9 +6,11 @@ manager: scotv
 ms.date: 2/18/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Strat_O365_Enterprise
+ms.collection: 
+- scotvorg
+- Strat_O365_Enterprise
 f1.keywords:
 - CSH
 search.appverid: 

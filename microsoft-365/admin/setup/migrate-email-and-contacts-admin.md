@@ -7,14 +7,18 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
 ms.custom:
+- VSBFY23
 - TopSMBIssues
 - okr_smb
 - seo-marvel-may2020
@@ -35,6 +39,8 @@ description: "Learn to import contacts, calendars, and emails from Gmail or anot
 
 # Migrate email and contacts to Microsoft 365
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 Import or migrate email from Gmail or another email provider to Microsoft 365.
   
  **Want help with this?**  [Contact Microsoft 365 for business support](../../business-video/get-help-support.md). 
@@ -45,6 +51,8 @@ Import or migrate email from Gmail or another email provider to Microsoft 365.
 You need to use a version of Outlook that is installed on your desktop for this task. Outlook is included in most Microsoft 365 [plans](https://go.microsoft.com/fwlink/p/?LinkId=723731).
   
 ## Watch: Import and redirect email
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197916).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
 

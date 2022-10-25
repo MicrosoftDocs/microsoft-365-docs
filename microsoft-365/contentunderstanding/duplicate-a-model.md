@@ -1,23 +1,25 @@
 ---
-title: Duplicate a model in Microsoft SharePoint Syntex
+title: Duplicate a model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how and why to duplicate a model in Microsoft SharePoint Syntex.
+description: Learn how and why to duplicate a model in Microsoft Syntex.
 ---
 
-# Duplicate a model in Microsoft SharePoint Syntex
+# Duplicate a model in Microsoft Syntex
 
-Duplicating a document understanding model can save you time and effort if you need to create a new model, and know that an existing model is very similar to what you need.
+<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
+
+Duplicating an unstructured document processing model can save you time and effort if you need to create a new model, and know that an existing model is very similar to what you need.
 
 For example, an existing model named “Contracts” classifies the same files you need to work with. Your new model will extract some of the existing data, but will need to be updated to extract some additional data. Instead of creating and training a new model from scratch, you can use the duplicate model feature to make a copy of the Contracts model, which will also copy all associated training items, such as example files and entity extractors.
 
@@ -25,7 +27,7 @@ When you duplicate the model, after you rename it (for example, to “Contract R
 
 ## Duplicate a model
 
-Follow these steps to duplicate a document understanding model.
+Follow these steps to duplicate an unstructured document processingmodel.
 
 1. From the content center, select **Models** to see your models list.
 
@@ -47,17 +49,8 @@ Follow these steps to duplicate a document understanding model.
 
 5. Select **Duplicate**.
 
-## See Also
-[Create a classifier](create-a-classifier.md)
+## See also
 
 [Rename a model](rename-a-model.md)
 
-[Create an extractor](create-an-extractor.md)
-
-[Document Understanding overview](document-understanding-overview.md)
-
-[Explanation types](explanation-types-overview.md)
-
-[Apply a model](apply-a-model.md) 
-
-[SharePoint Syntex Accessibility Mode](accessibility-mode.md)
+[Syntex accessibility mode](accessibility-mode.md)

@@ -1,27 +1,26 @@
 ---
-title: "Troubleshoot and resolve problems and error messages in Microsoft 365 Lighthouse"
+title: "Troubleshoot error messages and problems in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms.reviewer: crimora
 audience: Admin
-ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.topic: troubleshooting
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get help troubleshooting and resolving error messages and problems."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get help troubleshooting error messages and problems."
 ---
 
-# Troubleshoot and resolve problems and error messages in Microsoft 365 Lighthouse
-
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+# Troubleshoot error messages and problems in Microsoft 365 Lighthouse
 
 This article describes error messages and problems that you might encounter while using Microsoft 365 Lighthouse and provides troubleshooting steps you can take to resolve them.
 
@@ -51,19 +50,21 @@ This article describes error messages and problems that you might encounter whil
 
 **Cause:** Your customer tenants don't meet the following criteria:
 
-  - Must have delegated (DAP) or granular delegated (GDAP) admin privileges set up for the Managed Service Provider (MSP)
-  - Must have at least one Microsoft 365 Business Premium or Microsoft 365 E3 license
-  - Must have no more than 1000 licensed users 
+- Must have delegated access set up for the Managed Service Provider (MSP) to be able to manage the customer tenant*
+- Must have at least one Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business license
+- Must have no more than 2500 licensed users 
 
-**Resolution:** The following table describes the different tenant statuses that require action and explains how to resolve them.<br><br>
+**Resolution:** The following table describes the different tenant statuses that require action and explains how to resolve them.
+
+Either Granular Delegated Admin Privileges (GDAP) plus an indirect reseller relationship or a Delegated Admin Privileges (DAP) relationship is required to onboard customers to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Coming soon, customers with GDAP-only relationships (without indirect reseller relationships) will be able to onboard to Lighthouse.<br><br>
 
 | Status | Description | Resolution |
 |--|--|--|
 | Inactive | The tenant was offboarded at the request of the MSP and is no longer being managed in Lighthouse. | You need to reactivate the tenant. On the **Tenants** page, select the three dots (more actions) next to the tenant that you want to reactivate, and then select **Activate tenant**. It can take 24–48 hours for initial customer data to appear in Lighthouse. |
-| Ineligible - DAP or GDAP is not set up | You don't have DAP or GDAP admin privileges set up with the tenant, which is required by Lighthouse. | Set up DAP or GDAP admin privileges in the Microsoft Partner Center. |
-| Ineligible - Required license is missing | The tenant is missing a required license. They need at least one Microsoft 365 Business Premium or Microsoft 365 E3 license. | Make sure the tenant has at least one Microsoft 365 Business Premium or Microsoft 365 E3 license assigned. |
-| Ineligible - User count exceeded | The tenant has more than the maximum of 1000 licensed users allowed by Lighthouse. | Verify that the tenant doesn't have more than 1000 licensed users. |
-| Ineligible - Geo check failed | You and your customer don't reside in the same geographic region, which is required by Lighthouse. | Verify that the tenant resides in your geographic region. If not, then you can't manage the tenant in Lighthouse. |
+| Ineligible - DAP or GDAP is not set up | You don't have DAP or GDAP and indirect reseller admin privileges set up with the tenant, which is required by Lighthouse. | Set up DAP or GDAP and indirect reseller admin privileges in the Microsoft Partner Center. |
+| Ineligible - Required license is missing | The tenant is missing a required license. They need at least one Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, or Microsoft Defender for Business license. | Make sure the tenant has at least one Microsoft 365 Business Premium,  Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business license assigned. |
+| Ineligible - User count exceeded | The tenant has more than the maximum of 2500 licensed users allowed by Lighthouse. | Verify that the tenant doesn't have more than 2500 licensed users. |
+| Ineligible - Geo check failed | You and your customer don't reside in the same geographic region, which is required by Lighthouse. | Verify that the customer resides in your geographic region. If not, then you can't manage the tenant in Lighthouse. |
 | In process | Lighthouse discovered the tenant but is still in the process of onboarding them. | Allow Lighthouse 48 hours to complete onboarding of the tenant. |
 
 If you confirmed that your customer tenant meets the onboarding criteria and they're still not showing as **Active** in Lighthouse, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
@@ -74,7 +75,7 @@ If you confirmed that your customer tenant meets the onboarding criteria and the
 
 **Cause:** You don't belong to the correct security group in Azure AD, or you haven't been assigned the correct role in Partner Center to be able to access Lighthouse.
 
-**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Azure AD and assigned you the correct role in Partner Center. Also, keep in mind that some actions in Lighthouse require you to be a Global admin. To learn more about the GDAP roles and what each role can do, see [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md). For a detailed description of all Azure AD built-in roles and permissions for GDAP, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Azure AD and assigned you the correct role in Partner Center. Also, keep in mind that some actions in Lighthouse require you to be a Global admin. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Azure AD built-in roles and permissions for GDAP, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
 For customers with DAP relationships, the partner admin will need to assign you to either the Admin agent or Helpdesk agent role in Partner Center. For a detailed description of all Partner Center roles and permissions, see [Assign roles and permissions to users](/partner-center/permissions-overview).
 
@@ -82,7 +83,7 @@ For customers with DAP relationships, the partner admin will need to assign you 
 
 **Cause:** You have limited GDAP access based on the roles assigned to the Azure AD security group that you're in.
 
-**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Azure AD. Also, keep in mind that some actions in Lighthouse require you to be a Global admin. To learn more about the GDAP roles and what each role can do, see [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md). For a detailed description of all Azure AD built-in roles and permissions for GDAP, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Azure AD. Also, keep in mind that some actions in Lighthouse require you to be a Global admin. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Azure AD built-in roles and permissions for GDAP, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
 ## Customer tenant management  
 
@@ -128,12 +129,8 @@ For customers with DAP relationships, the partner admin will need to assign you 
 
 If data is still not appearing on the Device compliance and Threat management pages after following the resolution instructions, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
-### There are no Windows 365 Business Cloud PCs in Lighthouse  
-
-**Cause**: Lighthouse doesn't currently support viewing and managing of Windows 365 Business Cloud PCs.
-
-**Resolution:** You can view and manage your Windows 365 Business Cloud PCs in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) or at [https://windows365.microsoft.com](https://windows365.microsoft.com).
-
 ## Related content
 
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Known issues with Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)\
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
+[Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (article)

@@ -3,25 +3,27 @@ title: Step 3. Perform a post-incident review of your first incident
 description: How to perform a review of your first incident in Microsoft 365 Defender.
 keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - m365solution-firstincident
+  - highpri
+  - tier1
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 # Step 3. Perform a post-incident review of your first incident
 
@@ -42,7 +44,7 @@ By mapping alerts to this industry framework, you can:
 - Identify skill gaps in attack method awareness.
 - Create a Power Automate Playbook for faster remediation.
 
-Post-incident review activity can also result in fine-tuning your security configuration and security team's processes to streamline your organization’s response capabilities.
+Post-incident review activity can also result in fine-tuning your security configuration and security team's processes to streamline your organization's response capabilities.
 
 ## Next step
 

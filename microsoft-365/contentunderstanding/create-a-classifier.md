@@ -1,23 +1,24 @@
 ---
-title: Create a classifier in Microsoft SharePoint Syntex
+title: Create a classifier in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
-description: Learn how to create a classifier in Microsoft SharePoint Syntex.
+description: Learn how to create a classifier in Microsoft Syntex.
 ---
 
-# Create a classifier in Microsoft SharePoint Syntex
+# Create a classifier in Microsoft Syntex
 
+<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
 </br>
 
@@ -49,9 +50,15 @@ To create a classifier, you need to:
 
 The first step to create your model is to give it a name:
 
-1. From the content center, select **New**, and then **Create a model**.
-2. In the **New document understanding model** pane, in the **Name** field type the name of the model. For example, if you want to identify contract renewal documents, you could name the model *Contract Renewal*.
-3. Choose **Create**. This creates a home page for the model.</br>
+1. From the content center, select **New**, and then **Model**.
+
+2. On the **Options for model creation** page, select **Teaching method**.
+
+3. On the **Teaching method: Details** page, select **Next**.
+
+4. On the **Create a model with the teaching method** page, in the **Model name** field, type the name of the model. For example, if you want to identify contract renewal documents, you could name the model *Contract Renewal*.
+
+5. Choose **Create**. This creates a home page for the model.
 
     ![Classifier model home page.](../media/content-understanding/model-home.png)
 
@@ -63,12 +70,15 @@ Select **Advanced settings** if you want to map this model to an existing enterp
 
 ## Add your example files
 
-On the model home page, add your examples files you will need to help train the model to identify your document type. </br>
+On the model home page, add your examples files you will need to help train the model to identify your document type. 
+
+<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4D0iX] 
 
 </br>
+--->
 
 > [!NOTE]
 > You should use the same files for both classifier and [extractor training](create-an-extractor.md). You always have the option to add more later, but typically you add a full set of example files. Label some to train your model, and test the remaining unlabeled ones to evaluate model fitness. 
@@ -141,13 +151,12 @@ If you received a match on your labeled sample files, you can now  test your mod
 
     ![Test of unlabeled files.](../media/content-understanding/test-on-files.png) 
 
-## See Also
-[Create an extractor](create-an-extractor.md)
+## See also
 
-[Document Understanding overview](document-understanding-overview.md)
+[Create an extractor](create-an-extractor.md)
 
 [Explanation types](explanation-types-overview.md)
 
 [Apply a model](apply-a-model.md) 
 
-[SharePoint Syntex Accessibility Mode](accessibility-mode.md)
+[Syntex accessibility mode](accessibility-mode.md)

@@ -5,8 +5,9 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection: 
+- highpri
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection
@@ -29,6 +30,9 @@ If you need to collaborate with guests across documents, tasks, and conversation
 
 In this article, we'll walk through the Microsoft 365 configuration steps necessary to set up a team for collaboration with guests. Once you have configured guest access, you can invite guests to teams by following the steps in [Add guests to a team in Teams](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f).
 
+> [!NOTE]
+> [Shared channels](collaborate-teams-direct-connect.md) offers a more seamless experience than guest accounts when collaborating with other Microsoft 365 organizations. Shared channels allow you to collaborate with people outside your organization using Teams channels without the need for external participants to sign in to your organization. We recommend you review [Plan external collaboration](plan-external-collaboration.md) to see if shared channels is a better options than collaborating with guests for any given scenario.
+
 ## Video demonstration
 
 This video shows the configuration steps described in this document.</br>
@@ -39,7 +43,7 @@ This video shows the configuration steps described in this document.</br>
 
 Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
 
-Check the B2B external collaboration settings settings to ensure that sharing with guests is not blocked.
+Check the B2B external collaboration settings to ensure that sharing with guests is not blocked.
 
 ![Screenshot of Azure Active Directory Organizational Relationships Settings page.](../media/azure-ad-organizational-relationships-settings.png)
 
@@ -190,5 +194,3 @@ To invite guests to a team
 [Create a B2B extranet with managed guests](b2b-extranet.md)
 
 [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)
-
-[Sharing options are greyed out when sharing from SharePoint or OneDrive](/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

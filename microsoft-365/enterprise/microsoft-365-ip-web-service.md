@@ -2,13 +2,14 @@
 title: "Office 365 IP Address and URL web service"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 8/6/2019
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection: 
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
@@ -73,7 +74,7 @@ Parameters for the version web method are:
 
 - **AllVersions=\<true \| false\>** —By default, the version returned is the latest. Include this optional parameter to request all published versions since the web service was first released.
 - **Format=\<JSON \| CSV \| RSS\>** —In addition to the JSON and CSV formats, the version web method also supports RSS. You can use this optional parameter along with the _AllVersions=true_ parameter to request an RSS feed that can be used with Outlook or other RSS readers.
-- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** —This optional parameter specifies the instance to return the version for. If omitted, all instances are returned. Valid instances are: Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
+- **Instance=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>** —This optional parameter specifies the instance to return the version for. If omitted, all instances are returned. Valid instances are: Worldwide, China, USGovDoD, USGovGCCHigh.
 
 The version web method is not rate limited and does not ever return 429 HTTP Response Codes. The response to the version web method does include a cache-control header recommending caching of the data for 1 hour. The result from the version web method can be a single record or an array of records. The elements of each record are:
 
@@ -103,10 +104,6 @@ This URI returns the latest version of each Office 365 service instance. Example
  },
  {
   "instance": "China",
-  "latest": "2018063000"
- },
- {
-  "instance": "Germany",
   "latest": "2018063000"
  }
 ]
@@ -178,7 +175,7 @@ Parameters for the endpoints web method are:
 - **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>** —A comma-separated list of service areas. Valid items are _Common_, _Exchange_, _SharePoint_, and _Skype_. Because _Common_ service area items are a prerequisite for all other service areas, the web service always includes them. If you do not include this parameter, all service areas are returned.
 - **TenantName=\<tenant_name\>** —Your Office 365 tenant name. The web service takes your provided name and inserts it in parts of URLs that include the tenant name. If you don't provide a tenant name, those parts of URLs have the wildcard character (\*).
 - **NoIPv6=\<true \| false\>** —Set the value to _true_ to exclude IPv6 addresses from the output if you don't use IPv6 in your network.
-- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** —This required parameter specifies the instance from which to return the endpoints. Valid instances are: _Worldwide_, _China_, _Germany_, _USGovDoD_, and _USGovGCCHigh_.
+- **Instance=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>** —This required parameter specifies the instance from which to return the endpoints. Valid instances are: _Worldwide_, _China_, _USGovDoD_, and _USGovGCCHigh_.
 
 If you call the endpoints web method too many times from the same client IP address, you might receive HTTP response code _429 (Too Many Requests)_. If you get this response code, wait 1 hour before repeating your request, or generate a new GUID for the request. As a general best practice, only call the endpoints web method when the version web method indicates that a new version is available.
 

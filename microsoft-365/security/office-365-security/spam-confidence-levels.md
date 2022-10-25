@@ -14,12 +14,12 @@ search.appverid:
   - MET150
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn about the spam confidence level (SCL) that applied to messages in Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Spam confidence level (SCL) in EOP
@@ -29,23 +29,18 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, inbound messages go through spam filtering in EOP and are assigned a spam score. That score is mapped to an individual spam confidence level (SCL) that's added to the message in an X-header. A higher SCL indicates a message is more likely to be spam. EOP takes action on the message based on the SCL.
 
 What the SCL means and the default actions that are taken on messages are described in the following table. For more information about actions you can take on messages based on the spam filtering verdict, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
-
-****
 
 |SCL|Definition|Default action|
 |:---:|---|---|
 |-1|The message skipped spam filtering. For example, the message is from a safe sender, was sent to a safe recipient, or is from an email source server on the IP Allow List. For more information, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md).|Deliver the message to the recipients' inbox.|
 |0, 1|Spam filtering determined the message was not spam.|Deliver the message to the recipients' inbox.|
 |5, 6|Spam filtering marked the message as **Spam**|Deliver the message to the recipients' Junk Email folder.|
-|9|Spam filtering marked the message as **High confidence spam**|Deliver the message to the recipients' Junk Email folder.|
-|
+|8, 9|Spam filtering marked the message as **High confidence spam**|Deliver the message to the recipients' Junk Email folder.|
 
-You'll notice that SCL 2, 3, 4, 7, and 8 aren't used by spam filtering.
+You'll notice that SCL 2, 3, 4, and 7 aren't used by spam filtering.
 
 You can use mail flow rules (also known as transport rules) to stamp the SCL on messages. If you use a mail flow rule to set the SCL, the values 5 or 6 trigger the spam filtering action for **Spam**, and the values 7, 8, or 9 trigger the spam filtering action for **High confidence spam**. For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 

@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,7 +25,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow these steps to forward a former employee's email to another employee or convert to a shared mailbox."
+description: "Forward a former employee's email to another employee or convert it to a shared mailbox where several people will be able to access it instead of one person."
 ---
 
 # Step 4 - Forward a former employee's email to another employee or convert to a shared mailbox

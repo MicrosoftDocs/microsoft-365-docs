@@ -7,6 +7,9 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection: 
+- Tier1
+- scotvorg
 description: "Use this page to create your staff list and to manage staff member details such as name, phone number, and email address."
 ---
 
@@ -24,12 +27,9 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 
 ## Steps
 
-> [!NOTE]
-> These steps are not yet available in the new Bookings experience.
+1. Choose your calendar from the homepage.
 
-1. Go to the [Manage staff page](https://outlook.office.com/bookings/staff) and select **Add staff**
-
-2. Select the **Add Staff** button.
+2. Go to staff option in left pane and select **Add new staff**.
 
 3. When adding staff from within your organization, type their name in the **Add people** field and select them when they appear in the drop-down menu. The other fields will automatically populate.
 
@@ -40,10 +40,11 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
     > [!NOTE]
     > Staff from outside your tenant will not be able to share free/busy information with Bookings.
 
-5. For each staff member, select a role: Administrator, Viewer, or Guest.
-    - **Administrators** can edit all settings, add and remove staff, and create, edit, or delete bookings.
-    - **Viewers** can see all the bookings on the calendar, but they can’t modify or delete them. They have read-only access to settings.
-    - **Guests** can be assigned to bookings, but they can’t open the booking mailbox.
+5. For each staff member, select a role: Team member, Scheduler, Viewer, or Guest.
+    - **Team member** can manage bookings on their own calendar and their availability in the booking mailbox. When adding or editing a booking in their calendar, they'll be assigned as staff.
+    - **Scheduler** can manage bookings on the calendar and customer details. They have read-only access to settings, staff, and services.
+    - **Viewer** can see all the bookings on the calendar, but they can’t modify or delete them. They have read-only access to settings.
+    - **Guest** can be assigned to bookings, but they can’t open the booking mailbox.
 
 6. Select **Notify all staff via email when a booking assigned to them is created or changed** to enable staff emails. The following is an example email:
 
@@ -53,7 +54,7 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 
     For example, if a staff member has a team meeting or a personal appointment scheduled for 3pm on a Wednesday, Bookings will show that staff member as unavailable to be booked in that time slot. That time will appear as busy or tentative in the Bookings calendar view, as shown in the below example.
 
-    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="A view of a Bookings calendar.":::
+    :::image type="content" source="media/bookings-busy-tentative-view-2.png" alt-text="A view of a Bookings calendar.":::
 
 > [!IMPORTANT]
 > We highly recommend leaving this setting on (it is turned on by default) to avoid double-bookings and to optimize the availability of your staff members.

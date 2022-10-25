@@ -4,7 +4,7 @@ description: Enable Corelight integration to gain visibility focused on IoT/OT d
 keywords: enable siem connector, siem, connector, security information and events
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,11 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.subservice: mde
 ---
 
 # Enable Corelight data integration
@@ -31,13 +33,20 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Microsoft has partnered with [Corelight](https://corelight.com/integrations/iot-security), provider of the industry’s leading open network detection and response (NDR) platform, to help you discover IoT/OT devices across your organization. Using data, sent from Corelight network appliances, Microsoft 365 Defender gains increased visibility into the network activities of unmanaged devices, including communication with other unmanaged devices or external networks.
+Microsoft has partnered with [Corelight](https://corelight.com/integrations/iot-security), provider of the industry's leading open network detection and response (NDR) platform, to help you discover IoT/OT devices across your organization. Using data, sent from Corelight network appliances, Microsoft 365 Defender gains increased visibility into the network activities of unmanaged devices, including communication with other unmanaged devices or external networks.
 
 With this data source enabled, all events from Corelight network appliances are sent to Microsoft 365 Defender. You can view these activities in the unmanaged devices timeline, available in the Microsoft Defender for Endpoint device inventory. For more information, see [Device discovery](device-discovery.md).
 
+## Prerequisites
+
+1. To setup the Corelight data integration, the user must have the following roles:
+   - Tenant Global Administrator in Azure Active Directory
+   - Security Administrator for the Azure subscription that will be used for the Microsoft Defender for IoT integration
+2. An onboarded Defender for IoT plan. For more information, see [Onboard Microsoft Defender for IoT with Microsoft Defender for Endpoint](enable-microsoft-defender-for-iot-integration.md).
+
 ## Enabling the Corelight integration
 
-To enable the Corelight integration, you’ll need to take the following steps:
+To enable the Corelight integration, you'll need to take the following steps:
 
 [Step 1: Turn on Corelight as a data source](#step-1-turn-on-corelight-as-a-data-source)<br>
 [Step 2: Provide permission for Corelight to send events to Microsoft 365 Defender](#step-2-provide-permission-for-corelight-to-send-events-to-microsoft-365-defender)<br>
@@ -47,7 +56,7 @@ To enable the Corelight integration, you’ll need to take the following steps:
 
 1. In the navigation pane of the [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Device discovery** \> **Data sources**.
 
-    ![Image of data sources](images/enable-corelight.png)
+   :::image type="content" source="../../media/defender-endpoint/enable-corelight.png" alt-text="The data sources page in the Microsoft 365 Defender portal" lightbox="../../media/defender-endpoint/enable-corelight.png":::
 
 2. Select **Send Corelight data to M365D** and select **Save**.
 
@@ -62,52 +71,41 @@ To enable the Corelight integration, you’ll need to take the following steps:
 ### Step 3: Configure your Corelight appliance to send data to Microsoft 365 Defender
 
 > [!NOTE]
->  The integration will be public in Corelight Sensor software v24 and later. 
-
-To preview in v23 or v22.1 you must execute `corelight-client configuration update --enable.adfiot 1` to enable the configuration section in the GUI.
-
-In addition to this, the GUI validation requires that a broker is configured in the configuration section on all v23 releases.  The broker you provide is required but won't actually be used. Enter `127.0.0.1:1234` in the _kafka broker_ field to ensure successful validation before following the steps below to enable sending data to Microsoft 365 Defender.
-
-> [!NOTE]
+> The integration is available in Corelight Sensor software v25 and later.
+> 
 > You will need internet connectivity for your sensor to reach both the Defender and Corelight cloud services for the solution to work.
 
-#### Enabling in the Corelight Sensor GUI
+#### Enable the integration in the Corelight web interface
 
-1. In the Corelight Sensor GUI configuration section, select **Sensor** \> **Export**.
-2. From the list, go to **EXPORT TO KAFKA** and select the switch to turn it on.
+1. In the Corelight web interface, navigate to **Sensor** \> **Export**.
 
-   ![Image of kafka export](images/exporttokafka.png)
+   :::image type="content" source="images/exporttodefender.png" alt-text="The kafka export" lightbox="images/exporttodefender.png":::
 
-3. Next, turn on **EXPORT TO AZURE DEFENDER FOR IOT** and enter your tenant ID, noted in Step 1, in the TENANT ID field.
+2. Enable **Export To Microsoft Defender**.
+3. Enter your Microsoft 356 Defender Tenant ID.
+4. Optionally, you can:
+    - set the **Zeek Logs to Exclude**. The minimal set of logs you must include are: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp, and notice.
+    - choose to create a **Microsoft Defender Log Filter**.
+5. Select **Apply Changes**.
 
-   ![Image of iot export](images/exporttodiot.png)
+#### Enable the integration in the corelight-client
 
-4. Select **Apply Changes**.
+1. Enable **Export To Microsoft Defender** using the following command in the corelight-client:
 
-   ![Apply image ](images/corelightapply.png)
+    ``` command
+    corelight-client configuration update \
+    --bro.export.defender.enable True
+    ```
 
-> [!NOTE]
-> Configuration options in Kafka (excluding Log Exclusion and Filters) should not be changed. Any changes made will be ignored.
+2. Set your tenant ID
 
-#### Enabling in the corelight-client
+3. Optionally, you can use the following command to exclude certain logs or to create a Microsoft Defender log filter. The minimal set of logs you must include are: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp, and notice.
 
-You can turn on **EXPORT TO KAFKA** and **EXPORT TO AZURE DEFENDER FOR IOT** using the following command in the corelight-client:
-
-`corelight-client configuration update --bro.export.kafka.defender.enable true --bro.export.kafka.defender.tenant\_id <your tenant>`.
-
-> [!IMPORTANT]
-> If you're already using Kafka export, contact Corelight Support for an alternate configuration.
-
-To configure only sending the minimal set of logs:
-
-1. In the Corelight Sensor GUI, go to the Kafka section
-2. Go to **Zeek logs to exclude**
-3. Select **All**
-4. Then select **x** beside the following logs to ensure they continue to flow to Microsoft:  
-    `dns  conn  files  http  ssl  ssh  x509  snmp  smtp  ftp  sip  dhcp  notice`
-5. Select **Apply Changes**
-
-The list of logs that flow to Microsoft may expand over time.
+   ``` command
+     corelight-client configuration update \
+    --bro.export.defender.exclude=<logs_to_exclude> \
+    --bro.export.defender.filter=<logs_to_filter>
+   ```
 
 ## See also
 

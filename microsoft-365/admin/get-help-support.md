@@ -7,12 +7,16 @@ author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection: 
+- Tier1
+- scotvorg
+- highpri
 - Adm_O365
 - Adm_TOC
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
@@ -24,11 +28,15 @@ search.appverid:
 description: "Learn how to get online or phone support for your Microsoft 365 for business subscription. You must be an admin for a business subscription to get support."
 ---
 
-# Get support
+# Get support for Microsoft 365 for business
 
 ::: moniker range="o365-worldwide"
 
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 ## Watch: Get help or support
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197598).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -54,24 +62,17 @@ Save time by starting your service request online. We'll help you find a solutio
 
 ## Phone support
 
-Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday-Friday.\
-Technical support is provided in English 24 hours a day, 7 days a week.\
+In most countries or regions, billing support for Microsoft 365 for business products and services is provided in English from 9 AM-5 PM, Monday through Friday. Local language support varies by country or region.
+
+Technical support is provided in English 24 hours a day, 7 days a week, and in some cases, in local languages as noted.
+
+>[!div class="nextstepaction"]
+>[Find support phone numbers by country or region](support-contact-info.md)
+
 Admins, have your account details ready when you call.
 
 > [!NOTE]
-> To better protect your organization, we added a PIN-based verification step to our existing phone-based verification process. If you contact us from a number that isn't registered with your organization profile, the Microsoft support representative sends a verification code to the registered email or phone number in your Microsoft 365 admin center profile. You must provide this code to the support representative to grant them access to your organization’s account.
-
-- **In the United States, call 1 800 865 9408.**
-
-- **In Australia, call 1 800 197 503.**
-
-- **In Canada, call 1 800 865 9408.**
-
-- **In the United Kingdom, call 0800 032 6417.**
-
-If your support phone number isn't listed above, use the drop-down menu below to find the number for your country or region.
-
-[!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
+> To better protect your organization, we added a PIN-based verification step to our existing phone-based verification process. If you contact us from a number that isn't registered with your organization profile, the Microsoft support representative sends a verification code to the registered email or phone number in your Microsoft 365 admin center profile. You must provide this code to the support representative to grant them access to your organization's account.
 
 ## Small business support with Business Assist
 
@@ -130,7 +131,7 @@ Technical support for Office 365 operated by 21Vianet subscriptions provides ass
 | Severity level | Operations and support description | Examples |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Sev A (Critical) | One or more services aren't accessible or are unusable. Production, operations, or deployment deadlines are severely affected, or there will be a severe impact on production or profitability. Multiple users or services are affected. | <ul><li>Widespread problems sending or receiving mail.</li><li>SharePoint site down.</li><li>All users can't send instant messages, join or schedule Skype for Business Meetings, or make Skype for Business calls.</li></ul> |
-| Sev B (High) | The service is usable but in an impaired fashion. The situation has moderate business impact and can be dealt with during business hours. A single user, customer, or service is partially affected. | <ul><li>Send button in Outlook is garbled.</li><li>Setting is impossible from EAC (Exchange admin center) but possible in Windows PowerShell.</li></ul> |
+| Sev B (High) | The service is usable but in an impaired fashion. The situation has moderate business impact and can be dealt with during business hours. A single user, customer, or service is partially affected. | <ul><li>Send button in Outlook is garbled.</li><li>Setting is impossible from EAC (Exchange admin center) but possible in Exchange Online PowerShell.</li></ul> |
 | Sev C (Non-critical) | The situation has minimal business impact. The issue is important but does not have a significant current service or productivity impact for the customer. A single user is experiencing partial disruption, but an acceptable workaround exists. | <ul><li>How to set user password that never expires.</li> <li>User can't delete contact information in Exchange Online.</li></ul> |
 
 ## Technical support initial response times
