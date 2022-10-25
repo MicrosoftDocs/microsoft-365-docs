@@ -304,19 +304,22 @@ The following table describes the settings that are recommended as part of mdatp
 
 ## High CPU utilization by ISVs, Linux apps, or scripts
 
+[I THINK WE SHOULD MOVE THIS DOWN - NOT SO GOOD TO SEE TROUBLESHOOTING STEPS BEFORE THE ONBOARDING IS EVEN STARTED]
+
+
 If you observe that third-party ISVs, internally developed Linux apps, or scripts run into high CPU utilization, you can check the following processes to investigate the cause.
 
 
 
 Perform the following steps:
 
-- Identify which Microsoft Defender for Endpoint for on Linux is causing the symptom
+- Identify which Microsoft Defender for Endpoint for on Linux thread is causing the symptom
 - Check the wdavdaemon unprivileged process
 - Check the wdavdaemon (FANotify) process
 - Check the wdavdaemon edr (EDR Engine) process
 - Check the mdatp_audisp_plugin process
 
-### Identify Microsoft Defender for Endpoint on Linux causing the symptom
+### Identify the Microsoft Defender for Endpoint on Linux thread causing the symptom
 
 Use the following syntaxes to help identify the root cause of the CPU overhead:
 
@@ -330,15 +333,26 @@ Use the following syntaxes to help identify the root cause of the CPU overhead:
 [NAMISHA - PLEASE INSERT THE IMAGE FROM THE WORD DOC HERE]
 
 
-### wdavdaemon (FANotify) plugin
+
+NAMISHA: IT'S MISSING THE WDAVDAEMON UNPRIVILEDGED (AV ENGINE) AND INSERT THE IMAGE AS WELL
+
+
+
+
+### Check the wdavdaemon (FANotify) process
 
 Follow these steps to install wdavdaemon (FANotify) plugin:
 
 - Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md).
-- Collect diagnostic data
+- Collect diagnostic data using the [Client analyzer tool](https://aka.ms/xMDEClientAnalyzerBinary).
 - Open a CSS support case with Microsoft. For more information, see [CSS security support case](/mem/get-support).
 
-### wdavdaemon edr (EDR Engine) plugin
+
+
+
+
+
+### Check the wdavdaemon edr (EDR Engine) process
 
 Follow these steps to install wdavdaemon edr (EDR Engine) plugin:
 
@@ -346,16 +360,16 @@ Follow these steps to install wdavdaemon edr (EDR Engine) plugin:
 - Collect diagnostic data
 - Open a CSS support case with Microsoft. For more information, see [CSS security support case](/mem/get-support).
 
-### mdatp_audisp_plugin  
+### Check the mdatp_audisp_plugin process
 
-For troubleshooting high CPU utilization overhead caused by mdatp_audisp_plugin, see [Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux](troubleshoot-auditd-performance-issues.md).
+To troubleshoot high CPU utilization overhead caused by mdatp_audisp_plugin, see [Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux](troubleshoot-auditd-performance-issues.md).
 
 - Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md).
 - Collect diagnostic data
 - Open a CSS support case with Microsoft. For more information, see [CSS security support case](/mem/get-support).
 
 
-## Download Microsoft Defender for Endpoint on RHEL onboarding package
+## Download the Microsoft Defender for Endpoint on Linux onboarding package
 
 For more information, see [download the onboarding package from Microsoft 365 Defender portal](linux-install-with-ansible.md).
     
@@ -428,17 +442,30 @@ To deploy Microsoft Defender for Endpoint on RHEL Linux using Ansible, see [Depl
       enablerepo: packages-microsoft-[channel] 
 ```
 
+NAMISHA - THIS WAS MISSING:
+
+Additionally, for deploying the “settings preferences” via Ansible, go through adding the steps from the above item 5 “How to configure Microsoft Defender for Endpoint for Linux Antivirus (AV)”, by copying your mdatp_managed.json to /etc/opt/microsoft/mdatp/managed/ 
+
+
+
+
 ## Verify communication with Microsoft Defender for Endpoint backend
 
-To verify Microsoft Defender for Endpoint on RHEL Linux communication to the cloud with the current network settings, run the following connectivity test from the command line:
+To verify Microsoft Defender for Endpoint on Linux communication to the cloud with the current network settings, run the following connectivity test from the command line:
 `mdatp connectivity test`
+
+
+NAMISHA - MISSING EXPECTED OUTPUT IMAGE - PLS INCLUDE
+
+
 
 For more information, see [Connectivity validation](linux-support-connectivity.md#run-the-connectivity-test).
 
 
-## Verify platform updates
+## Verify that you're able to get platform updates
 
 To verify Microsoft Defender for Endpoint on RHEL Linux platform updates, run the following command line:
+
 `sudo yum update mdatp`
 
 For more information, see [Device health and Microsoft Defender Antivirus health report](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-device-health-reporting-for-microsoft-defender-for-endpoint/bc-p/3616205#M1963).
@@ -450,9 +477,10 @@ For more information, see [Deploy updates for Microsoft Defender for Endpoint on
 
 For more information, see [schedule an update of the Microsoft Defender for Endpoint on RHEL Linux](linux-update-mde-linux.md).
 
-## Verify security intelligence updates
+## Verify that you're able to get security intelligence updates
 
-To verify Microsoft Defender for Endpoint on RHEL Linux signatures/definition updates, run the following command line:
+To verify Microsoft Defender for Endpoint on  Linux signatures/definition updates, run the following command line:
+
 `mdatp definitions update`
 
 For more information, see [New device health reporting for Microsoft Defender Antivirus](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-device-health-reporting-for-microsoft-defender-for-endpoint/bc-p/3616205).
@@ -461,11 +489,18 @@ For more information, see [New device health reporting for Microsoft Defender An
 
 To ensure that the device is correctly onboarded and reported to the service, run the following detection test:
 
-- Antivirus detections
+- Antivirus detections:
+
+NAMISHA - INLCUDE THE BELOW:
+    Curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt 
+
+If the detection doesn’t show up, it could be that you have set “allowedThreats” to allow in preferences via Ansible or Puppet.
+
+
 - Endpoint detection and response (EDR) detections:
   For more information, see [Experience Microsoft Defender for Endpoint through simulated attacks](attack-simulations.md).
   If the detection doesn’t show up, then it could be that we're missing event or alerts in portal. For more information, see [Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux](linux-support-events.md).
-- For more information about unified submissions in M365D and the ability of submitting **False Positives** and **False Negatives** through the portal, see [Unified submissions in Microsoft 365 Defender now Generally Available! - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770).
+- For more information about unified submissions in Microsoft 365 Defender and the ability to submit **False Positives** and **False Negatives** through the portal, see [Unified submissions in Microsoft 365 Defender now Generally Available! - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770).
 
 ## Troubleshoot Microsoft Defender for Endpoint on Linux installation issues
 
@@ -474,7 +509,7 @@ To ensure that the device is correctly onboarded and reported to the service, ru
 - For more information, see [Troubleshooting steps for environments without proxy or with transparent proxy](linux-support-connectivity.md#troubleshooting-steps-for-environments-without-proxy-or-with-transparent-proxy).  
 - For more information, see [Troubleshooting steps for environments with static proxy](linux-support-connectivity.md#troubleshooting-steps-for-environments-with-static-proxy).
 
-## Troubleshoot
+## Troubleshooting resources
 
 - For more information, see [Known issues](linux-resources.md).
 
