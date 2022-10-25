@@ -32,9 +32,9 @@ Additionally, each partner tenant user must meet the following requirements:
 
 - The partner tenant user must have DAP/GDAP access to the applicable tenant.
 
-  1. For DAP, admin agent group membership is needed.
+  1. For DAP, an admin agent group membership.
 
-  2. For GDAP, a role that can create Conditional Access (CA) policies is needed.
+  2. For GDAP, a role that can create Conditional Access (CA) policies.
 
 - The partner tenant user must enable MFA for their user account in the partner tenant.
 
@@ -66,7 +66,7 @@ You can also select **More actions** (ellipsis icon) option directly from the ta
 
 ## Related content
 
-[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations (article)](m365-lighthouse-deploy-standard-tenant-configurations-overview.md)\
+[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
 [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) (article)\  
 [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
