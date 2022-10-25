@@ -186,7 +186,7 @@
               href: cross-tenant-onedrive-migration-step2.md
             - name: Step 3 Verify trust between the tenants
               href: cross-tenant-onedrive-migration-step3.md
-            - name: Step 4 Manage permissions and pre-create users and groups
+            - name: Step 4 Manage permissions and pre-create users & groups
               href: cross-tenant-onedrive-migration-step4.md
             - name: Step 5 Prepare the identity mapping file
               href: cross-tenant-onedrive-migration-step5.md
