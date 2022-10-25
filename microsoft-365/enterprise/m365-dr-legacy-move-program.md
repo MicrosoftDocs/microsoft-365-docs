@@ -56,12 +56,12 @@ You will not see this section if your tenant is not eligible for the Microsoft 3
 > [!NOTE]
 > Even though the Move Program is officially ending, we still have some in-flight geographies that we will see through to completion, based on the original 24-month migration commitment. Please refer to the table below for the remaining countries and their migration deadlines. 
 
-|**Customers with signup country in**|**All moves completed by**|
-|:-----|:-----|
-| Germany <br/> | May 1, 2023  <br/> |
-| Brazil <br/> | June 1, 2023  <br/> |
-| Sweden <br/> | June 1, 2024  <br/> |
-| Qatar <br/> | March 1, 2025  <br/> |
+|**Customers with signup country in**|**Original Opt-in: migration commitment date**|**Final Opt-in (above): migration commitment date**|
+|:-----|:-----|:-----|
+| Germany <br/> | May 1, 2023  <br/> | May 1, 2025  <br/> |
+| Brazil <br/> | June 1, 2023  <br/> | May 1, 2025  <br/> |
+| Sweden <br/> | June 1, 2024  <br/> | May 1, 2025  <br/> |
+| Qatar <br/> | March 1, 2025  <br/> | Not Applicable  <br/> |
 
 ### Data Residency Option Moving Forward
 
@@ -69,7 +69,7 @@ With the release of Advanced Data Residency, we are only providing a data reside
 
 ### Migration Expectations
 
-The complexity, precision and scale at which we need to perform data moves within a globally operated and automated environment prohibit us from sharing when a data move is expected to complete for your tenant or any other single tenant. Customers will receive one confirmation in Message Center per participating service when its data move has completed.
+Microsoft will use reasonable efforts to try to complete a legacy Move Program migration for customers who request a migration between November 1st, 2022 and April 30th 2023, by June 2025. Customers who requested a migration in the legacy Move Program prior to November 1st, 2022, will continue being migrated with reasonable efforts by Microsoft towards the intended completion date provided to them previously. However, Microsoft may not be able to complete the migration within this timeframe for all customers. For example, significantly larger or more complex customers or situations outside of Microsoft's control may require additional time to complete the migration. Customers utilizing the Advanced Data Residency feature for a data migration will instead follow the [Advanced Data Residency Migration Expectations](https://review.learn.microsoft.com/en-us/microsoft-365/enterprise/advanced-data-residency?view=o365-worldwide&branch=kvice-ADR-new#migration-expectations).
 
 Data moves are a back-end service operation with minimal impact to end-users. We adhere to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for availability so there is nothing that customers need to prepare for or to monitor during the move. Notification of any service maintenance is done if needed.
 
