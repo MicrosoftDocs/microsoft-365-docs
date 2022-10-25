@@ -28,7 +28,7 @@ description: "Scenarios for creating and deploying DLP policies"
 
 <!--If anyone asks why create and deploy are lumped into one article and not separated, it is because the deployment controls that this article covers are ONLY available in the policy creation or editing flow. The deployment controls are set in the creation or editing tool-->
 
-There are many configuration options in a Microsoft Purview data loss prevention (DLP) policy and, each option changes the policy's behavior. This article presents some common policy intent scenarios that you'll map to configuration options, then it walks you through configuring those options. Once you familiarize yourself with these scenarios, you'll be comfortable using the DLP policy creation UX to create your own policies. 
+There are many configuration options in a Microsoft Purview Data Loss Prevention (DLP) policy and, each option changes the policy's behavior. This article presents some common policy intent scenarios that you'll map to configuration options, then it walks you through configuring those options. Once you familiarize yourself with these scenarios, you'll be comfortable using the DLP policy creation UX to create your own policies. 
 
 How you deploy a policy is as important policy design. You have [multiple options to control policy deployment](#deployment). This article show you how to use these options so that the policy achieves your intent while avoiding costly business disruptions.  
 
@@ -67,7 +67,7 @@ Data from DLP on-premises scanner can be viewed in [Activity explorer](data-clas
 
 There are roles and role groups in preview that you can test out to fine tune your access controls.
 
-Here's a list of applicable roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Here's a list of applicable roles that are in preview. To learn more about them, see [Roles in the Security & compliance portal](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Information Protection Admin
 - Information Protection Analyst
@@ -84,7 +84,7 @@ Here's a list of applicable role groups that are in preview. To learn more about
 
 ## Policy creation scenarios
 
-The previous article [Design a DLP policy](dlp-policy-design.md) introduced you to the methodology of creating a policy intent statement and then mapping that to policy configuration options. This section takes those examples, plus a few more and walks you through the actual policy creation process. You should work through these in your test environment to familiarize yourself with the policy creation UI.
+The previous article [Design a DLP policy](dlp-policy-design.md) introduced you to the methodology of creating a policy intent statement and then mapping that to policy configuration options. This section takes those examples, plus a few more and walks you through the actual policy creation process. You should work through these scenarios in your test environment to familiarize yourself with the policy creation UI.
 
 There are so many configuration options in the policy creation flow that it's not possible to cover every, or even most configurations, so we present several of the most common DLP policy scenarios that will give you hands on experience across a broad range of configurations.
 
@@ -110,7 +110,7 @@ This procedure uses a hypothetical distribution group *Finance team* at Contoso.
 |Statement|Configuration question answered and configuration mapping|
 |---|---|
 |"We need to block emails to all recipients..."|- **Where to monitor**: Exchange </br> - **Action**: Restrict access or encrypt the content in Microsoft 365 locations > Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files > Block everyone |
-|"...that contain credit card numbers or have the 'highly confidential' sensitivity label applied..."| - **What to monitor** use the Custom template template </br> - **Conditions for a match** edit it to add the *highly confidential* sensitivity label|
+|"...that contain credit card numbers or have the 'highly confidential' sensitivity label applied..."| - **What to monitor** use the Custom template </br> - **Conditions for a match** edit it to add the *highly confidential* sensitivity label|
 |"...except if..."| **Condition group configuration** - Create a nested boolean NOT condition group joined to the first conditions using a boolean AND|
 |"...the email is sent from someone on the finance team..."| **Condition for match**: Sender is a member of|
 |"...and..."| **Condition for match**: add a second second condition to the NOT group|
@@ -209,7 +209,7 @@ Endpoint + Teams
 
 ## Deployment
 
-A successful policy deployment isn't just about getting the policy into your environment to enforce controls on user actions. A haphazard, rushed deployment can negatively impact business process and annoy your users. Those consequences will slow acceptance of DLP technology, and the safer behaviors it promotes, in your organization and make your sensitive items less safe in the long run. 
+A successful policy deployment isn't just about getting the policy into your environment to enforce controls on user actions. A haphazard, rushed deployment can negatively impact business process and annoy your users. Those consequences will slow acceptance of DLP technology in your organization and the safer behaviors it promotes. Ultimately making your sensitive items less safe in the long run. 
 
 Before you start your deployment, make sure you have read through [Policy deployment](dlp-overview-plan-for-dlp.md#policy-deployment) which gives you a broad overview of the policy deployment process and general guidance.
 
@@ -217,21 +217,24 @@ This section dives more deeply into the three types of controls you'll use in co
 
 ### Three axes of deployment management
 
-There are three axes to control the policy deployment process and it's impact, the scope, the state of the policy and the actions. You should always take an incremental approach to deploying a policy, starting from the least impactful/test mode to full enforcement.
+There are three axes you can use to control the policy deployment process, the scope, the state of the policy and the actions. You should always take an incremental approach to deploying a policy, starting from the least impactful/test mode through to full enforcement.
 
 #### Policy scope
 
-Every policy is scoped to one or more locations, such as Exchange, SharePoint Online, Teams, and Devices. By default, when you select a location, all instances of that location fall under the scope and none are excluded. You can further refine the sites, groups, mailboxes, devices by configuring the include/exclude options of the location. To learn more about your include/exclude scoping options, see, [Locations](dlp-policy-reference.md#locations).
+Every policy is scoped to one or more locations, such as Exchange, SharePoint Online, Teams, and Devices. By default, when you select a location, all instances of that location fall under the scope and none are excluded. You can further refine which instances of the location (such as sites, groups, accounts, distribution groups, mailboxes, and devices) that the policy is applied to by configuring the include/exclude options for the location. To learn more about your include/exclude scoping options, see, [Locations](dlp-policy-reference.md#locations).
+
+In general, you have more flexibility with scoping while the policy is in *Test it out first* mode because no actions are taken. You can start with just the scope you designed the policy for or go broad to see how the policy would impact sensitive items in other locations. While in test mode, you monitor the impact of the policy in the DLP **Alert** console and the DLP **Activity explorer** console. Then when you move to *Test it out first and show policy tips*, you should narrow your scope to a pilot group that can give you feedback and be early adopters who can be a resource for others when they come onboard.
+
+As you use the 
 
 #### Actions
 
-Actions are what a policy does in response to user activities on sensitive items. Because you can change these at anytime, you can start with the least impactful, *Allow*, gather and review the audit data, and use it to tune the policy before moving to more restrictive actions.
+Actions are what a policy does in response to user activities on sensitive items. Because you can change these at any time, you can start with the least impactful, *Allow*, gather and review the audit data, and use it to tune the policy before moving to more restrictive actions.
 
 - Allow (audit with no user notifications or alerts)
 - Audit only (you can add notifications and alerts)
 - Block with override (blocks the action, but the user can override)
 - Block (blocks no matter what)
-
 
 
 #### State
@@ -245,24 +248,13 @@ The last step in the policy creation experience is to set the state of the polic
 
 
 
-
-
-1. scoping the policy by location and includes/excludes
-2. state
-    1. test
-    1. test with awareness
-    1. turn on right away
-    1. keep turned off/archived
-
-
-
 Policy deployments should follow these steps:
 
 1. After you've created the policy and set its state to turned off, do a final review it with your stakeholders.
 1. Set the state to test mode with no policy tips. The location scope can be broad at this point so you can gather data on the behavior of the policy.
 1. Tune the policy based on the behavior data so that it better meets the business intent.
 1. Refine the scope of locations if needed and make use of includes/exludes so that the policy is first rolled out to the users who are a good test group.
-1. Set the state to test mode with policy tips. Gather user feedback and alert and event data, if needed tune the policy and your plans more. Make sure you address all the issues that your users bring up. It's pretty much a gaurantee that they'll raise things that you didn't think of. Develop a group of super users at this point. They can be a resource to help train other users as the scope of the policy is increased and more users come onboard.
+1. Set the state to test mode with policy tips. Gather user feedback and alert and event data, if needed tune the policy and your plans more. Make sure you address all the issues that your users bring up. It's pretty much a guaranteed that they'll raise things that you didn't think of. Develop a group of super users at this point. They can be a resource to help train other users as the scope of the policy is increased and more users come onboard.
 1. 
 
 You'll start deploying a policy in test mode where you'll tune it to fulfill your business intent based on it's behaviorAs you take a policy from test mode through to full enforcement, you have to educate your users.
