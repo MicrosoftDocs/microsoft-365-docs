@@ -25,8 +25,8 @@ description: "Learn about service advisories for OAB size limits in Exchange Onl
 # Service advisories for OAB size limits
 
 This alert informs you when your Offline Address Book has reached the size limit outlined in the [Address Book
-Limits](https://learn.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#address-book-limits)
-within the [Exchange Online limits](https://learn.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#address-book-limits).
+Limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#address-book-limits)
+within the [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#address-book-limits).
 
 >These alerts are displayed in the Microsoft 365 admin center. To view these alerts, navigate to **Health** \> **Service Health** \> **Exchange Online** and finally, the **Active Issues** tab. You'll see this as "Offline Address Book"
 
