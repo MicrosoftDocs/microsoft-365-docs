@@ -99,7 +99,7 @@ To obtain Source Tenant Company ID:
 3. Scroll down on the left-hand panel and select **Properties**.
 4. Locate the **Tenant ID Field**. The required Tenant ID will be in that box.
 
-:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-azure-portal-tenant-id.png" alt-text="image of azure portal  active directory search":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-azure-tenant-id.png" alt-text="image of azure portal active directory search":::
 
 
 ## Obtain group object IDs
