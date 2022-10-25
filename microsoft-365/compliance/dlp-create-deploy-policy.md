@@ -224,8 +224,8 @@ There are three axes you can use to control the policy deployment process, the s
 
 |When your policy state is | Your policy scope can be  |  Impact of policy actions |
 |---------|---------|---------|
-|Test    |Policy scope of locations can be narrow or broad         |- You can configure any action </br> - No user impact from configured actions </br>-  Admin sees alerts and can track activities            |         |n/a|
-|Test with policy tips   |  Policy should be scoped to target a pilot group and then expand the scope as you tune the policy       |- You can configure any action </br>- No user impact from configured actions </br> - Users can receive policy tips and alerts </br>- Admin sees alerts and can track activities        | |        | 
+|Test    |Policy scope of locations can be narrow or broad |- You can configure any action </br> - No user impact from configured actions </br>-  Admin sees alerts and can track activities |
+|Test with policy tips   |  Policy should be scoped to target a pilot group and then expand the scope as you tune the policy       |- You can configure any action </br>- No user impact from configured actions </br> - Users can receive policy tips and alerts </br>- Admin sees alerts and can track activities        | 
 |Turn it on| All targeted location instances |- All configured actions are enforced on user activities </br>- Admin sees alerts and can track activities  |
 |Keep it off| n/a  | n/a  |
 
