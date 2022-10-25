@@ -178,6 +178,20 @@
           href: cross-tenant-identity-mapping.md
         - name: Cross-tenant OneDrive migration
           href: cross-tenant-onedrive-migration.md
+            - name: Overview
+              href: cross-tenant-onedrive-migration-overview.md
+            - name: Step 1: Connect to source and target tenants
+              href: cross-tenant-onedrive-migration-step1.md
+            - name: Step 2: Connect to source and target tenants
+              href: cross-tenant-onedrive-migration-step2.md
+            - name: Step 3: Connect to source and target tenants
+              href: cross-tenant-onedrive-migration-step3.md
+            - name: Step 4: Connect to source and target tenants
+              href: cross-tenant-onedrive-migration-step4.md
+            - name: Step 5: Connect to source and target tenants
+              href: cross-tenant-onedrive-migration-step5.md
+            - name: Step 6: Connect to source and target tenants
+              href: cross-tenant-onedrive-migration-step6.md
         - name: Tenant-to-tenant migrations
           href: microsoft-365-tenant-to-tenant-migrations.md
     - name: Multi-geo

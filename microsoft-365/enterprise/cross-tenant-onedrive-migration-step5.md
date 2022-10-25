@@ -1,0 +1,172 @@
+---
+title: OneDrive Cross-Tenant User Data Migration Step 5
+ms.author: jhendr
+author: JoanneHendrickson
+manager: serdars
+recommendations: true
+audience: ITPro
+ms.topic: article
+ms.service: sharepoint-online
+ms.subservice: sharepoint-migration
+ms.localizationpriority: high
+ms.collection: 
+- SPMigration
+- M365-collaboration
+- m365initiative-migratetom365
+search.appverid: MET150
+description: "Step 5 of the OneDrive Cross-tenant migration feature"
+---
+# Step 5: Cross-tenant OneDrive migration - Identity mapping
+
+In this step of the cross-tenant migration process, you're going to create a single CSV (comma separated values) file that contains the mapping of the users and groups on the source tenant to their corresponding users and groups on the target tenant.
+
+We recommend that you take the time to verify your mappings, ensuring they're accurate before starting any migrations to the target tenant.
+
+## Create the identity mapping file 
+
+There's a one to one relationship in the identity mapping file.  You can't map the same user to multiple in the target. For example, if you have instances where the admin is the owner of multiple OneDrive accounts, the ownership must be changed to match the corresponding user you wish to migrate from Source to Target.  If you don't, those account files won't migrate.
+
+**Example:** In this example, the admin owns multipe OneDrive accounts.
+
+|Source Tenant Owner |Target Tenant User|
+|:-----|:-----|
+|admin@source.com  |new.userA@target.com|
+|admin@source.com |new.userB@target.com|
+|admin@source.com |new.userC@target.com|
+
+
+Cross-tenant migration supports this scenario:
+
+**Example**
+
+|Source Tenant Owner|Target Tenant User|
+|:-----|:-----|
+|userA@source.com|new.userA@target.com|
+|userB@source.com|new.userB@target.com|
+|userC@source.com|new.userC@target.com|
+
+
+### Create the CSV file
+
+There are six columns needed in your CSV file. The first three are your source values, each providing detail about where your data is currently located. The remaining three columns are the corresponding info on the target tenant. All six columns must be accounted for in the file. Create your file in Excel and save it as a .csv file. 
+
+Users and groups are included in the same file. Depending on whether it's a user or group, what you enter in the column is different. In each of the columns enter values as shown in the examples.  **Do NOT include column headings.**
+
+|Column|User|Group|
+|:-----|:-----|:-----|
+|1|User|Group|
+|2|SourceTenantCompanyID|SourceTenantCompanyID|
+|3|SourceUserUpn|SourceGroupObjectID|
+|4|TargetUserUpn|TargetGroupObjectID|
+|5|TargetUserEmail|GroupName|
+|6|UserType|GroupType|
+
+
+>[!Important]
+>Do NOT include column headings in your CSV file.  In the examples below we include them for illustrative purposes only. 
+
+**Users**. Enter these values in the columns:
+
+:::image type="content" source="media/t2t-onedrive-csv-mapping-users-columns.png" alt-text="format to use for mapping users":::
+
+:::image type="content" source="media/t2t-onedrive-csv-mapping-users-example.png" alt-text="example of csv for users":::
+
+**Groups**. Enter these values in the columns:
+</br>
+:::image type="content" source="media/t2t-onedrive-csv-mapping-groups-columns.png" alt-text="format for csv file for groups":::
+</br>
+
+*Example*:
+
+:::image type="content" source="media/t2t-onedrive-csv-group-example.png" alt-text="example of adding groups to csv file":::
+
+
+**Guest users**. Any users who are remaining in the source tenant but will still need access to resources that are migrating to the target tenant must have new guest identities created for them in the target tenant. Enter these values in columns for guests:
+</br>
+
+:::image type="content" source="media/t2t-onedrive-csv-mapping-users-guests.png" alt-text="csv example when mapping a guest to a member":::
+
+*Example of multiple users in CSV file:* </br>
+
+:::image type="content" source="media/t2t-onedrive-csv-example-both-users-groups.png" alt-text="csv example showing groups and users":::
+ 
+
+## Obtain the source tenant company ID
+To obtain Source Tenant Company ID:
+
+1. Sign in as Admin to your [Azure portal](https://ms.portal.azure.com/)
+2. Select or Search for **Azure Active Directory**.
+3. Scroll down on the left-hand panel and select **Properties**.
+4. Locate the **Tenant ID Field**. The required Tenant ID will be in that box.
+
+:::image type="content" source="media/t2t-onedrive-azure-portal-tenant-id.png" alt-text="image of azure portal  active directory search":::
+
+
+## Obtain group object IDs
+
+To obtain source group object ID:
+1. Sign in to Source tenant as Admin to Azure Groups.
+2. Locate/Search for your required Group(s) (for example. All Company)
+3. Select the required Group instance (for example. All Company), on below screen select the Copy to clipboard option and then use that to populate the sourceGroupObjectId column on your Mapping CSV.
+
+If you have multiple Groups to map, then repeat these steps for each group.
+
+
+## To obtain target group object ID:
+
+1. Sign in to Target tenant as Admin to Azure Groups.
+2. Locate/Search for your required Group(s) (for example. All Company)
+3. Select on the required Group instance (for example. All Company), on below screen select the Copy to clipboard option and then use that to populate the targetGroupObjectId column on your Mapping CSV.
+4. If you have multiple Groups to map, then repeat the above process to obtain those specific targetGroupObjectId's.
+5. For the GroupName, use the same ID as the *TargetGroupObjectId* you obtained.
+ 
+
+## Upload the identity map
+
+Once the identity mapping file has been prepared, the SharePoint Administrator on the target tenant uploads the file to SharePoint. This will allow identity mapping to occur automatically as part of the cross-tenant migration.
+
+>[!Important]
+>Before you run the *Add-SPOTenantIdentityMap –IdentityMapPath* command, save and close the identitymap.csv file on your Desktop/OneDrive/SharePoint. If the file remains open, you will receive the following error.
+>
+>*Add-SPOTenantIdentityMap: The process cannot access the file 'C:\Users\myuser\Test-Identity-Map.csv' because it is being used by another process.*
+
+
+1. To upload the identity Map on the target tenant, run:
+
+```powershell
+Add-SPOTenantIdentityMap –IdentityMapPath <identitymap.csv>  
+IdentityMapPath – 
+```
+
+Provide the full path and filename of the Identity Mapping CSV file.
+
+
+>[!Important]
+>If you make or need to make any changes to your Identity Map during the lifecycle of the migration you must run the *Add-SPOTenantIdentityMap –IdentityMapPath <identitymap.csv>*  command **every time** a change is made to ensure those changes are applied to the migration.
+
+Uploading any new identity map will overwrite the current one. Make sure that any revision or addition includes ALL users and groups for the full migration. Your identity map should always include everyone you're wanting to migrate.
+
+## Verify cross-tenant compatibility status
+
+Before starting any cross-tenant migrations, make sure that both SharePoint database schemas are up to date and compatible between source and target.
+
+To perform this check, run the below cmdlet on your Source tenant.
+
+```Powershell
+
+Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL [Target tenant hostname]
+
+Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL https://m365x12395529-my.sharepoint.com
+```
+
+- If the tenants are compatible, you can then proceed with the next step of starting cross-tenant migrations.  
+- If the tenants are incompatible, your tenants will need to be patched/updated to ensure compatibility.
+
+>[!Note]
+>We recommend waiting a period of 24-hours. Iif your tenants are still reporting as *incompatible* then send an email to ODSPT2TMigration@microsoft.com and we will engage with the Safe Deployment team to assist with updating the patching on your tenants to get them into a compatible status to continue migrating as soon as possible.
+
+>[!Note]
+>We recommend performing the compatibility status check on a frequent basis and prior to starting ANY instances of cross tenant migrations. If the tenants are not compatible, this can result in cross-tenant migrations failing.
+
+
+## Step 6: [Start a OneDrive cross-tenant migration](cross-tenant-onedrive-migration-step6.md)
