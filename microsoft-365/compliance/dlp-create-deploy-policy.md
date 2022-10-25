@@ -219,32 +219,42 @@ This section dives more deeply into the three types of controls you'll use in co
 
 There are three axes you can use to control the policy deployment process, the scope, the state of the policy and the actions. You should always take an incremental approach to deploying a policy, starting from the least impactful/test mode through to full enforcement.
 
-#### Policy scope
+#### State
 
-Every policy is scoped to one or more locations, such as Exchange, SharePoint Online, Teams, and Devices. By default, when you select a location, all instances of that location fall under the scope and none are excluded. You can further refine which instances of the location (such as sites, groups, accounts, distribution groups, mailboxes, and devices) that the policy is applied to by configuring the include/exclude options for the location. To learn more about your include/exclude scoping options, see, [Locations](dlp-policy-reference.md#locations).
+State is the primary control you'll use to rollout a policy. When you finished creating your policy, you set the state of the policy to **Keep it off**. You should leave it in this state while you're working on the policy configuration and until you get a final review and sign off. The state can be set to:
 
-In general, you have more flexibility with scoping while the policy is in *Test it out first* mode because no actions are taken. You can start with just the scope you designed the policy for or go broad to see how the policy would impact sensitive items in other locations. While in test mode, you monitor the impact of the policy in the DLP **Alert** console and the DLP **Activity explorer** console. Then when you move to *Test it out first and show policy tips*, you should narrow your scope to a pilot group that can give you feedback and be early adopters who can be a resource for others when they come onboard.
+- **Test it out first**: No policy actions are enforced, events are audited. While in this state, you can monitor the impact of the policy in the DLP **Alert** console and the DLP **Activity explorer** console.
+- **Test it out first and show policy tips while in test mode**: No actions are enforced, but users will receive policy tips to raise their awareness and educate them.
+- **Turn it on right away**: This is full enforcement mode. 
+- **Keep it off**: The policy is completely inactive. Use this state while developing and reviewing your policy before deployment.
 
-As you use the 
+You can change the state of a policy at anytime. 
 
 #### Actions
 
 Actions are what a policy does in response to user activities on sensitive items. Because you can change these at any time, you can start with the least impactful, *Allow*, gather and review the audit data, and use it to tune the policy before moving to more restrictive actions.
 
-- Allow (audit with no user notifications or alerts)
-- Audit only (you can add notifications and alerts)
-- Block with override (blocks the action, but the user can override)
-- Block (blocks no matter what)
+- **Allow**: The user activity is allowed to occur, so no business processes are impacted. You'll get audit data and there aren't any user notifications or alerts.
+- **Audit only**: The user activity is allowed to occur, so no business processes are impacted. You'll get audit data and you can add notifications and alerts to raise awareness and train your users to know that what they're doing is a risky behavior. If your organization intends to enforce more restrictive actions later on, you can tell your users that too.
+- **Block with override**: The user activity is blocked be default. You can audit the event, raise alerts and notifications. This will impact the business process, but your users will be given the option to override the block and provide a reason for the override. Because you get direct feedback from your users, this action can help you identify false positive matches, which you can use to further tune the policy. 
+- **Block**: The user activity is blocked no matter what. You can audit the event, raise alerts and notifications.
 
 
-#### State
+#### Policy scope
 
-The last step in the policy creation experience is to set the state of the policy. You can set the state to:
+Every policy is scoped to one or more locations, such as Exchange, SharePoint Online, Teams, and Devices. By default, when you select a location, all instances of that location fall under the scope and none are excluded. You can further refine which instances of the location (such as sites, groups, accounts, distribution groups, mailboxes, and devices) that the policy is applied to by configuring the include/exclude options for the location. To learn more about your include/exclude scoping options, see, [Locations](dlp-policy-reference.md#locations).
 
-- Test it out first: no actions are enforced
-- Test it out first and show policy tips while in test mode: no actions are enforced, but users will receive policy tips to raise their awareness and educate them
-- Turn it on right away: full enforcement mode
-- Keep it off   
+In general, you have more flexibility with scoping while the policy is in **Test it out first** state because no actions are taken. You can start with just the scope you designed the policy for or go broad to see how the policy would impact sensitive items in other locations. 
+
+Then when you change the state to **Test it out first and show policy tips**, you should narrow your scope to a pilot group that can give you feedback and be early adopters who can be a resource for others when they come onboard.
+
+When you move the policy to **Turn it on right away**, you'll broaden the scope to include all the instances of locations that you intended when the policy was designed. 
+
+
+
+
+
+
 
 
 
