@@ -69,7 +69,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **In preview**: The Azure Information Protection (AIP) on-premises scanner is being renamed **Microsoft Purview Information Protection scanner** and [configuration is moving to the Microsoft Purview compliance portal](/information-protection/deploy-aip-scanner-configure-install).
 
 ### Sensitivity labels
-- Call to action [migration guidance](sensitivity-labels-aip.md) to help you move from the AIP add-in for Office apps, with a [migration playbook](https://microsoft.github.io/ComplianceCxE/playbooks/AIP2MIPPlaybook) from our Customer Experience Engineering (CxE) team
+- Call to action: [Migration guidance](sensitivity-labels-aip.md) to help you move from the AIP add-in for Office apps, with a [migration playbook](https://microsoft.github.io/ComplianceCxE/playbooks/AIP2MIPPlaybook) from our Customer Experience Engineering (CxE) team
 - **General availability (GA)**: Authentication contexts for label [groups and site settings](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) that work with Azure AD Conditional Access policies to enforce more stringent access conditions to a site.
 - **General availability (GA)**: [Site sharing permissions by using PowerShell](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings).
 - **In preview**: The AIP add-in for Office apps is [disabled by default](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) and requires a new setting to override this default.
