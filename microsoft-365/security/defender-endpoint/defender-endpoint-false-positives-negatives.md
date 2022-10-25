@@ -69,7 +69,7 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. In the navigation pane, choose **Incidents & alerts** and then select **Alert**.
+2. In the navigation pane, choose **Incidents & alerts** and then select **Alerts**.
 
 3. Select an alert to view more details about it. (See [Review alerts in Microsoft Defender for Endpoint](review-alerts.md).)
 
@@ -87,11 +87,11 @@ Alerts can be classified as false positives or true positives in Microsoft 365 D
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. In the navigation pane, choose **Incidents & alerts**, select **Alert** and then select an alert.
+2. In the navigation pane, choose **Incidents & alerts**, select **Alerts** and then select an alert.
 
 3. For the selected alert, select **Manage alert**. A flyout pane opens.
 
-4. In the **Manage alert** section, in the **Classification** field, classify the alert (True positive, Informational expected activity, or False positive).
+4. In the **Manage alert** section, in the **Classification** field, classify the alert (True positive, Informational, expected activity, or False positive).
 
 > [!TIP]
 > For more information about suppressing alerts, see [Manage Microsoft Defender for Endpoint alerts](/microsoft-365/security/defender-endpoint/manage-alerts). And, if your organization is using a security information and event management (SIEM) server, make sure to define a suppression rule there, too.
@@ -102,7 +102,7 @@ If you have alerts that are either false positives or that are true positives bu
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. In the navigation pane, choose **Incidents & alerts** and then select **Alert**.
+2. In the navigation pane, choose **Incidents & alerts** and then select **Alerts**.
 
 3. Select an alert that you want to suppress to open its **Details** pane.
 
@@ -169,6 +169,14 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
 
 3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**.
+
+### Review quarantined messages
+
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+
+2. In the navigation pane, under **Email & collaboration**, select **Exchange message trace**.
+
+3. Select a message to view details.
 
 ### Restore file from quarantine
 
