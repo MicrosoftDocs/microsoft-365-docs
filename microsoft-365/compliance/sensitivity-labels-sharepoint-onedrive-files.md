@@ -115,7 +115,7 @@ Uploading a labeled document, and then extracting and displaying that sensitivit
 
 - For encrypted documents, printing is not supported in Office for the web.
 
-- For encrypted documents in Office for the web, [screen captures aren't prevented](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures). Until recently, copying to the clipboard also wasn't prevented for encrypted documents in Office for the web. Now rolling out, when documents are labeled and encrypted, and the **Copy** [usage right](/azure/information-protection/configure-usage-rights) isn't granted, Office on the web prevents copying to clipboard in the same way as desktop apps prevent this action. There are currently some exceptions for relabeling scenarios until the browser is refreshed, another session is started, or the document is opened again:
+- For encrypted documents in Office for the web, [screen captures aren't prevented](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures). Until recently, copying to the clipboard also wasn't prevented for these documents. Now rolling out, when documents are labeled and encrypted, and the **Copy** [usage right](/azure/information-protection/configure-usage-rights) isn't granted, Office on the web prevents copying to clipboard in the same way as desktop apps prevent this action. There are currently some exceptions for relabeling scenarios until the browser is refreshed, another session is started, or the document is opened again:
     - Mid-session, the document changes from unencrypted to encrypted.
     - Mid-session, the document changes from encrypted and the Copy usage right is granted, to encrypted but the Copy usage right is not granted.
 
