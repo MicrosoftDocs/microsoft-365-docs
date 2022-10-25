@@ -28,12 +28,12 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-If you're using the Microsoft Monitoring Agent (MMA) on Windows devices, it's important to keep this agent updated. For Windows Server 2012 R2 and Windows Server 2016, Microsoft recommends migrating to the new, unified agent for Defender for Endpoint. This article describes how to update or upgrade your agent for Defender for Endpoint. 
+If you're using the Microsoft Monitoring Agent (MMA) on Windows devices, it's important to keep this agent updated. For Windows Server 2012 R2 and Windows Server 2016, Microsoft recommends upgrading to the new, unified agent for Defender for Endpoint. This article describes how to: 
 
-- [Update the MMA on your devices](#option-1-update-mma-on-your-devices) (for devices running Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise, and Windows Server 2008 R2 SP1).
-- [Upgrade to the new, unified agent for Defender for Endpoint](#option-2-upgrade-to-the-new-unified-agent-for-defender-for-endpoint) (for devices running Windows Server 2012 R2 and Windows Server 2016).
+- **[Update the MMA on your devices](#update-mma-on-your-devices)** (for devices running Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise, and Windows Server 2008 R2 SP1).
+- **[Upgrade to the new, unified agent for Defender for Endpoint](#upgrade-to-the-new-unified-agent-for-defender-for-endpoint)** (for devices running Windows Server 2012 R2 and Windows Server 2016).
 
-## Option 1: Update MMA on your devices
+## Update MMA on your devices
 
 *This option applies to devices running Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise, and Windows Server 2008 R2 SP1.* 
 
@@ -46,7 +46,7 @@ If you're using the Microsoft Monitoring Agent (MMA) on Windows devices, it's im
    - **Windows 64-bit agent**: [https://go.microsoft.com/fwlink/?LinkId=828603](https://go.microsoft.com/fwlink/?LinkId=828603)
    - **Windows 32-bit agent**: [https://go.microsoft.com/fwlink/?LinkId=828604](https://go.microsoft.com/fwlink/?LinkId=828604)
 
-## Option 2: Upgrade to the new, unified agent for Defender for Endpoint
+## Upgrade to the new, unified agent for Defender for Endpoint
 
 *This option applies to servers running Windows Server 2012 R2 and Windows Server 2016.*
 
