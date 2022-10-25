@@ -6,7 +6,7 @@ manager: pamgreen
 audience: admin
 ms.reviewer: anrasto, shrganguly
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid:
 ms.collection:
     - enabler-strategic
@@ -25,7 +25,6 @@ You upload an existing document to create a modern template, and then use that t
 
 > [!NOTE]
 > You must be a licensed Syntex user to access and use content assembly capabilities. You also must have permissions to manage SharePoint lists.
-
 
 ## Requirements and limitations
 
