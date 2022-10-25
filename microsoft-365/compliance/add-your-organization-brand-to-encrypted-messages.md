@@ -9,32 +9,32 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 5/12/2022
+ms.date: 10/14/2022
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7a29260d-2959-42aa-8916-feceff6ee51d
 ms.collection:
-- Strat_O365_IP
+- tier1
 - purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-description: Learn how Office 365 global administrators can apply your organization's branding to encrypted email messages & contents of the encryption portal.
+description: Learn how Microsoft 365 global administrators can apply your organization's branding to encrypted email messages & contents of the encryption portal.
 ---
 
-# Add your organization's brand to your Microsoft 365 for business Message Encryption encrypted messages
+# Add your organization's brand to your Microsoft Purview Message Encryption encrypted messages
 
-You can apply your company branding to customize the look of your organization's email messages and the encryption portal. You'll need to apply global administrator permissions to your work or school account before you can get started. Once you have these permissions, use the Get-OMEConfiguration and Set-OMEConfiguration cmdlets in Exchange Online PowerShell to customize these parts of encrypted email messages:
+Apply your company branding to customize the look of your organization's email messages and the encryption portal. You'll need to apply global administrator permissions to your work or school account before you can get started. Use the Get-OMEConfiguration and Set-OMEConfiguration cmdlets in Exchange Online PowerShell to customize these parts of encrypted email messages:
 
 - Introductory text
 - Disclaimer text
 - URL for Your organization's privacy statement
-- Text in the OME portal
-- Logo that appears in the email message and OME portal, or whether to use a logo at all
-- Background color in the email message and OME portal
+- Text in the encrypted message portal
+- Logo that appears in the email message and encrypted message portal, or whether to use a logo at all
+- Background color in the email message and encrypted message portal
 
 You can also revert back to the default look and feel at any time.
 
@@ -46,19 +46,19 @@ If you'd like more control, use Microsoft Purview Advanced Message Encryption to
 - Whether you want to allow emails to be revoked
 - Whether you want emails sent to external recipients to expire after a specified number of days.
 
-Once you've created the templates, you can apply them to encrypted emails by using Exchange mail flow rules. If you have Microsoft Purview Advanced Message Encryption, you can revoke any email that you've branded by using these templates.
+Once you've created the templates, apply them to encrypted emails sent from your online mailbox by using Exchange mail flow rules. If you have Microsoft Purview Advanced Message Encryption, you can revoke any email that you've branded.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Work with OME branding templates
+## Work with branding templates
 
-You can modify several features within a branding template. You can modify, but not remove, the default template. If you have Advanced Message Encryption, you can also create, modify, and remove custom templates. Use Exchange Online PowerShell to work with one branding template at a time.
+You can modify several features within a branding template, and modify, but not remove, the default template. If you have Advanced Message Encryption, you can also create, modify, and remove custom templates. Use Exchange Online PowerShell to work with one branding template at a time.
 
 - [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration) - Modify the default branding template or a custom branding template that you created.
 - [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) - Create a new branding template, Advanced Message Encryption only.
 - [Remove-OMEConfiguration](/powershell/module/exchange/remove-omeconfiguration) - Remove a custom branding template, Advanced Message Encryption only. You can't delete the default branding template.
 
-## Modify an OME branding template
+## Modify a branding template
 
 Use Exchange Online PowerShell to modify one branding template at a time. If you have Advanced Message Encryption, you can also create, modify, and remove custom templates.
 
@@ -70,20 +70,20 @@ Use Exchange Online PowerShell to modify one branding template at a time. If you
 
 |To customize this feature of the encryption experience|Use these commands|
 |---|---|
-|Background color|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "<#RRGGBB hexadecimal color code or name value>"` <p> **Example:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"` <p> For more information about background colors, see the [Background colors](#background-color-reference) section later in this article.|
-|Logo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <Byte[]>` <p> **Example:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -Image ([System.IO.File]::ReadAllBytes('C:\Temp\contosologo.png'))` <p> Supported file formats: .png, .jpg, .bmp, or .tiff <p> Optimal size of logo file: less than 40 KB <p> Optimal size of logo image: 170x70 pixels. If your image exceeds these dimensions, the service resizes your logo for display in the portal. The service doesn't modify the graphic file itself. For best results, use the optimal size.|
-|Text next to the sender's name and email address|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -IntroductionText "<String up to 1024 characters>"` <p> **Example:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
-|Text that appears on the "Read Message" button|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -ReadButtonText "<String up to 1024 characters>"` <p> **Example:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
-|Text that appears below the "Read Message" button|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<String up to 1024 characters>"` <p> **Example:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
-|URL for the Privacy Statement link|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PrivacyStatementURL "<URL>"` <p> **Example:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
+|Background color|`Set-OMEConfiguration -Identity "<ConfigurationName>" -BackgroundColor "<#RRGGBB hexadecimal color code or name value>"` <p> **Example:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"` <p> For more information about background colors, see the [Background colors](#background-color-reference) section later in this article.|
+|Logo|`Set-OMEConfiguration -Identity "<ConfigurationName>" -Image <Byte[]>` <p> **Example:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -Image ([System.IO.File]::ReadAllBytes('C:\Temp\contosologo.png'))` <p> Supported file formats: .png, .jpg, .bmp, or .tiff <p> Optimal size of logo file: less than 40 KB <p> Optimal size of logo image: 170x70 pixels. If your image exceeds these dimensions, the service resizes your logo for display in the portal. The service doesn't modify the graphic file itself. For best results, use the optimal size.|
+|Text next to the sender's name and email address|`Set-OMEConfiguration -Identity "<ConfigurationName>" -IntroductionText "<String up to 1024 characters>"` <p> **Example:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
+|Text that appears on the "Read Message" button|`Set-OMEConfiguration -Identity "<ConfigurationName>" -ReadButtonText "<String up to 1024 characters>"` <p> **Example:** <p> `Set-OMEConfiguration -Identity "Message encryption configuration" -ReadButtonText "Read Secure Message."`|
+|Text that appears below the "Read Message" button|`Set-OMEConfiguration -Identity "<ConfigurationName>" -EmailText "<String up to 1024 characters>"` <p> **Example:** <p> `Set-OMEConfiguration -Identity "Message encryption configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
+|URL for the Privacy Statement link|`Set-OMEConfiguration -Identity "<ConfigurationName>" -PrivacyStatementURL "<URL>"` <p> **Example:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
 |Disclaimer statement in the email that contains the encrypted message|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <p> **Example:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
-|Text that appears at the top of the encrypted mail viewing portal|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<Text for your portal. String of up to 128 characters.>"` <p> **Example:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
+|Text that appears at the top of the encrypted mail viewing portal|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<Text for your portal. String of up to 128 characters.>"` <p> **Example:** <p> `Set-OMEConfiguration -Identity "Message encryption cfonfiguration" -PortalText "ContosoPharma secure email portal."`|
 |To enable or disable authentication with a one-time pass code for this custom template|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -OTPEnabled <$true|$false>` <p> **Examples:** <br/>To enable one-time passcodes for this custom template <p> `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <p> To disable one-time passcodes for this custom template <p> `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
 |To enable or disable authentication with Microsoft, Google, or Yahoo identities for this custom template|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -SocialIdSignIn <$true|$false>` <p> **Examples:** <br/>To enable social IDs for this custom template <p> `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <p> To disable social IDs for this custom template <p> `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
 
-## Create an OME branding template (Advanced Message Encryption)
+## Create an encrypted message branding template (Advanced Message Encryption)
 
-If you have Microsoft Purview Advanced Message Encryption, you can create custom branding templates for your organization by using the [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) cmdlet. Once you've created the template, you modify the template by using the Set-OMEConfiguration cmdlet as described in [Modify an OME branding template](#modify-an-ome-branding-template). You can create multiple templates.
+If you have Microsoft Purview Advanced Message Encryption, you can create custom branding templates for your organization by using the [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) cmdlet. Once you've created the template, you modify the template by using the Set-OMEConfiguration cmdlet as described in [Modify a branding template](#modify-a-branding-template). You can create multiple templates.
 
 To create a new custom branding template:
 
@@ -113,11 +113,11 @@ To remove all modifications from the default template, including brand customiza
 
    |To revert this feature of the encryption experience back to the default text and image|Use these commands|
    |:-----|:-----|
-   |Default text that comes with encrypted email messages. The default text appears above the instructions for viewing encrypted messages|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <p> **Example:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
-   |Disclaimer statement in the email that contains the encrypted message|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" DisclaimerText "<empty string>"` <p> **Example:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
-   |Text that appears at the top of the encrypted mail viewing portal|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<empty string>"` <p> **Example reverting back to default:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
-   |Logo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <"$null">` <p> **Example reverting back to default:** <p> `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
-   |Background color|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "$null">` <p> **Example reverting back to default:** <p> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
+   |Default text that comes with encrypted email messages. The default text appears above the instructions for viewing encrypted messages|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <p> **Example:** <p> `Set-OMEConfiguration -Identity "Message encryption configuration" -EmailText ""`|
+   |Disclaimer statement in the email that contains the encrypted message|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" DisclaimerText "<empty string>"` <p> **Example:** <p> `Set-OMEConfiguration -Identity "Message encryption configuration" -DisclaimerText ""`|
+   |Text that appears at the top of the encrypted mail viewing portal|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<empty string>"` <p> **Example reverting back to default:** <p> `Set-OMEConfiguration -Identity "Message encryption configuration" -PortalText ""`|
+   |Logo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <"$null">` <p> **Example reverting back to default:** <p> `Set-OMEConfiguration -Identity "Message encryption configuration" -Image $null`|
+   |Background color|`Set-OMEConfiguration -Identity "<ConfigurationName>" -BackgroundColor "$null">` <p> **Example reverting back to default:** <p> `Set-OMEConfiguration -Identity "Message encryption configuration" -BackgroundColor $null`|
 
 ## Remove a custom branding template (Advanced Message Encryption)
 
@@ -125,12 +125,12 @@ You can only remove or delete branding templates that you've made. You can't rem
 
 To remove a custom branding template:
 
-1. Using a work or school account that has global administrator permissions in your organization, connect to Exchange Online PowerShell. For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Using a work or school account that has global administrator permissions in your organization, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Use the **Remove-OMEConfiguration** cmdlet as follows:
 
    ```powershell
-   Remove-OMEConfiguration -Identity ""<OMEConfigurationName>"
+   Remove-OMEConfiguration -Identity "<OMEConfigurationName>"
    ```
 
    For example,
@@ -141,27 +141,27 @@ To remove a custom branding template:
 
    For more information, see [Remove-OMEConfiguration](/powershell/module/exchange/remove-omeconfiguration).
 
-## Create an Exchange mail flow rule that applies your custom branding to encrypted emails
+## Create an Exchange mail flow rule that applies your custom branding to encrypted emails sent from your online organization to external recipients
 
 > [!IMPORTANT]
-> Third-party applications that scan and modify mail can prevent OME branding from being applied correctly.
+> Third-party applications that scan and modify mail can prevent branding from being applied correctly.
 
-After you've either modified the default template or created new branding templates, you can create Exchange mail flow rules to apply your custom branding based on certain conditions. Most importantly, the email must be encrypted. Such a rule will apply custom branding in the following scenarios:
+After you've either modified the default template or created new branding templates, you can create Exchange mail flow rules to apply your custom branding based on certain conditions. Most importantly, the email must be encrypted. Such a rule will apply custom branding to mail sent from your online mailbox in the following scenarios:
 
 - If the email was manually encrypted by the end user using Outlook or Outlook on the web, formerly Outlook Web App
 - If the email was automatically encrypted by an Exchange mail flow rule or Microsoft Purview Data Loss Prevention policy
 
-To ensure Microsoft Purview Message Encryption applies your custom branding, set up a mail flow rule to encrypt your email messages. The priority of the encryption rule should be higher than the branding rule so that the encryption rule is processed first. By default, if you create the encryption rule before the branding rule, then the encryption rule will have a higher priority. For information on how to create an Exchange mail flow rule that applies encryption, see [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md). For information on setting the priority of a mail flow rule, see [Manage mail flow rules](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule).
+To ensure Microsoft Purview Message Encryption applies your custom branding, set up a mail flow rule to encrypt your messages. The priority of the encryption rule should be higher than the branding rule so that the encryption rule is processed first. By default, if you create the encryption rule before the branding rule, then the encryption rule will have a higher priority. For information, see [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md). For information on setting the priority of a mail flow rule, see [Manage mail flow rules](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule).
 
 1. In a web browser, using a work or school account that has been granted global administrator permissions, [sign in to Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
 2. Choose the **Admin** tile.
 
-3. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, choose **Admin centers** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
+3. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
 
 4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
 
-5. In **Name**, type a name for the rule, such as Branding for sales department.
+5. In **Name**, type a name for the rule, such as **Branding for sales department**.
 
 6. In **Apply this rule if**, select the condition **The sender is located inside the organization** and other conditions you want from the list of available conditions. For example, you might want to apply a particular branding template to:
 
@@ -169,13 +169,13 @@ To ensure Microsoft Purview Message Encryption applies your custom branding, set
    - Encrypted emails sent with a certain keyword such as "External" or "Partner"
    - Encrypted emails sent to a particular domain
 
-7. If you've already defined a mail flow rule to apply encryption, skip this step. Otherwise, to configure the mail flow rule to apply encryption, from **Do the following**, select **Modify the message security**, and then choose **Apply Office 365 Message Encryption and rights protection**. Select an RMS template from the list and then choose **add action**.
+7. If you've already defined a mail flow rule to apply encryption, skip this step. Otherwise, to configure the mail flow rule to apply encryption, from **Do the following**, select **Modify the message security**, and then select **Apply Office 365 Message Encryption and rights protection**. Select a Rights Management Service (RMS) template from the list and then select **add action**.
 
-   The list of templates includes default templates and options and any custom templates you create. If the list is empty, ensure that you have set up Microsoft Purview Message Encryption. For instructions, see [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). For information about the default templates, see [Configuring and managing templates for Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). For information about the **Do Not Forward** option, see [Do Not Forward option for emails](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). For information about the **encrypt only** option, see [Encrypt Only option for emails](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+   The list of templates includes default templates and options and any custom templates you create. If the list is empty, ensure that you have set up Microsoft Purview Message Encryption. For instructions, see [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). For information about the default templates, see [Configuring and managing templates for Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). For information about the **Do Not Forward** option, see [Do Not Forward option for emails](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). For information about the **Encrypt Only** option, see [Encrypt Only option for emails](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
 8. From **Do the following**, select **Modify the message security** \> **Apply custom branding to OME messages**. Next, from the drop-down, select a branding template.
 
-   Choose **add action** if you want to specify another action, or choose **Save**, and then choose **OK**.
+   Select **add action** if you want to specify another action, or select **Save**, and then select **OK**.
 
 ## Background color reference
 

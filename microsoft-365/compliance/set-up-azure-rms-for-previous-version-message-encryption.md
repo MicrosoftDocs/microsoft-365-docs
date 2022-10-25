@@ -13,6 +13,9 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
+ms.collection: 
+- tier3
+- purview-compliance
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: "The previous version of Office 365 Message Encryption depends on Microsoft Azure Rights Management (previously known as Windows Azure Active Directory Rights Management)."
 ---

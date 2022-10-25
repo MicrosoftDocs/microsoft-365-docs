@@ -1,30 +1,32 @@
 ---
-title: Use PowerShell to request processing by a document understanding model
+title: Use PowerShell to request processing by a custom model
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-manager: serdars
+manager: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Learn how to use PowerShell to request processing by a SharePoint Syntex document understanding model.
+description: Learn how to use PowerShell to request processing by a Microsoft Syntex custom model.
 ---
 
-# Use PowerShell to request processing by a document understanding model
+# Use PowerShell to request processing by a custom model
+
+<sup>**Applies to:**  &ensp; &#10003; All custom models </sup>
 
 > [!IMPORTANT]
-> The SharePoint Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
+> The Microsoft Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
 
-Document understanding models will process newly uploaded files to a library. It is also possible to manually request processing in the UI. However there might be scenarios where it is more efficient to trigger processing through PowerShell.
+Custom models will process newly uploaded files to a library. It's also possible to manually request processing in the UI. However there might be scenarios where it's more efficient to trigger processing through PowerShell.
 
-## Request processing of all items that have not been previously classified
+## Request processing of all items that haven't been previously classified
 
-You can request processing for all items in the library that have not previously been classified by using this command:
+You can request processing for all items in the library that haven't previously been classified by using this command:
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process
@@ -33,11 +35,11 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/finance"
 Request-PnPSyntexClassifyAndExtract -List "Documents"
 ```
 
-For lower priority processing, you might also consider using the -OffPeak parameter, which will queue files for processing outside of business hours where your tenant is located. See [Request-PnPSyntexClassifyAndExtract](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html) for more details.
+For lower priority processing, you might also consider using the -OffPeak parameter, which will queue files for processing outside of business hours where your tenant is located. For more information, see [Request-PnPSyntexClassifyAndExtract](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html).
 
 ## Request processing of all items in a library
 
-You can request processing of all files in the library, even if they have previously been classified. This might be useful if you have updated a model or added another model to the library.
+You can request processing of all files in the library, even if they have previously been classified. This step might be useful if you've updated a model or added another model to the library.
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process

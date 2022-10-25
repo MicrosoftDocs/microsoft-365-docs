@@ -32,7 +32,7 @@ To enable Microsoft 365 usage analytics in a Microsoft 365 US Government Communi
 
 ## Before you begin
 
-To get started with Microsoft 365 usage analytics you must first make the data available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, then initiate the template app in Power BI.
+To get started with Microsoft 365 usage analytics you must first make the data available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, then select **Reports** > **Usage** and initiate the template app in Power BI.
 
 ## Get Power BI
 
