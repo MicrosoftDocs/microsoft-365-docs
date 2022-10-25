@@ -61,6 +61,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - New retention support statements: Retention policies for Teams supports the [chat with myself](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) feature and [video clips](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c), and retention policies for Yammer support [storyline posts](https://support.microsoft.com/office/overview-of-storyline-for-yammer-and-viva-engage-530e4e66-9f1c-4be1-b371-08ea40dc4b69).
 - Improved in-product experience if retention policies have errors: You'll now see a detailed description of the error in the details pane, with in-product actions to take that can resolve the problem. For example, remove invalid locations and resynchronize the policy.
 
+### Microsoft Priva
+
+- **In preview**: [Data transfer policies](/privacy/priva/risk-management-policy-data-transfer) in Privacy Risk Management now offers additional flexible boundary conditions: detecting transfers bases on users' Azure Active Directory attributes, between users in different Microsoft 365 groups, and between SharePoint sites.
+
 ### On-premises scanner
 - **In preview**: The Azure Information Protection (AIP) on-premises scanner is being renamed **Microsoft Purview Information Protection scanner** and [configuration is moving to the Microsoft Purview compliance portal](/information-protection/deploy-aip-scanner-configure-install).
 
@@ -79,6 +83,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - [Get started with communication compliance](/microsoft-365/compliance/communication-compliance-configure): New updates for recommended actions and accelerated onboarding. Recommended actions can help your organization quickly get started with communication compliance.
 - [Investigate and remediate communication compliance alerts](/microsoft-365/compliance/communication-compliance-investigate-remediate): New update for keyword highlighting support for plain text view. Keyword highlighting, which is currently available for English language only, can help direct you to the area of interest in long messages and attachments.
 - [Use communication compliance reports and audits](/microsoft-365/compliance/communication-compliance-reports-audits): Clarifications on permissions needed to view and manage communication compliance reports. To view and manage reports, users must be assigned to the *Communication Compliance Viewers* role group.
+ 
+### Compliance Manager
+
+- [Compliance Manager templates list](/microsoft-365/compliance/compliance-manager-templates-list): New template added for Australian Information Security Registered Assessor Program (IRAP) with ISM Version 3.5 - Official).
 
 ### Data Classification
 
