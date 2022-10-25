@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 10/24/2022
+ms.date: 10/25/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -28,12 +28,10 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-If you're using the Microsoft Monitoring Agent (MMA) on Windows devices, you should keep this agent updated. With the modern, unified agent for Windows Server 2012 R2 and Windows Server 2016, you should migrate to the new solution instead. 
+If you're using the Microsoft Monitoring Agent (MMA) on Windows devices, it's important to keep this agent updated. For Windows Server 2012 R2 and Windows Server 2016, Microsoft recommends migrating to the new, unified agent for Defender for Endpoint. This article describes how to update or upgrade your agent for Defender for Endpoint. 
 
-- [Update the Microsoft Monitoring Agent (MMA) on your devices](#option-1-update-mma-on-your-devices)
-- [Use a new agent on Windows Server 2012 R2 or Windows Server 2016](#option-2-use-a-new-agent-on-windows-server-2012-r2-or-windows-server-2016)
-
-This article describes both options and includes links to additional information.
+- [Update the Microsoft Monitoring Agent (MMA) on your devices](#option-1-update-mma-on-your-devices) (for devices running Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise, and Windows Server 2008 R2 SP1).
+- [Option 2: Migrate to the new, unified agent for Defender for Endpoint](#option-2-migrate-to-the-new-unified-agent-for-defender-for-endpoint) (for devices running Windows Server 2012 R2 and Windows Server 2016).
 
 ## Option 1: Update MMA on your devices
 
@@ -48,7 +46,7 @@ This article describes both options and includes links to additional information
    - **Windows 64-bit agent**: [https://go.microsoft.com/fwlink/?LinkId=828603](https://go.microsoft.com/fwlink/?LinkId=828603)
    - **Windows 32-bit agent**: [https://go.microsoft.com/fwlink/?LinkId=828604](https://go.microsoft.com/fwlink/?LinkId=828604)
 
-## Option 2: Use a new agent on Windows Server 2012 R2 or Windows Server 2016
+## Option 2: Migrate to the new, unified agent for Defender for Endpoint
 
 *This option applies to servers running Windows Server 2012 R2 and Windows Server 2016.*
 
@@ -72,3 +70,9 @@ A new agent was released in April 2022 for Windows Server 2012 R2 and Windows Se
 
 > [!IMPORTANT]
 > Devices running Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2, or Windows Server 2016 that haven't been upgraded to the [new, unified solution](application-deployment-via-mecm.md) will remain dependent on MMA. In such cases, [AMA](/azure/azure-monitor/agents/agents-overview) cannot be used as a substitute for Defender for Endpoint. 
+
+## See also
+
+- [Make the switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint](switch-to-mde-overview.md)
+- [Microsoft Defender for Endpoint deployment overview](deployment-phases.md)
+- [Onboard to the Microsoft Defender for Endpoint service](onboarding.md)
