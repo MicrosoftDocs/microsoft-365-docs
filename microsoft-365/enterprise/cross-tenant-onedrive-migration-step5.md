@@ -88,6 +88,7 @@ Users and groups are included in the same file. Depending on whether it's a user
 
 *Example of multiple users in CSV file:* </br>
 
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-users-groups.png" alt-text="example of both users and groups in mapping file":::
 
 ## Obtain the source tenant company ID
 To obtain Source Tenant Company ID:
@@ -97,7 +98,7 @@ To obtain Source Tenant Company ID:
 3. Scroll down on the left-hand panel and select **Properties**.
 4. Locate the **Tenant ID Field**. The required Tenant ID will be in that box.
 
-:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-azure-tenant-id.png" alt-text="image of azure portal active directory search":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-azure-tenant-id.png" alt-text="getting the source tenant ID":::
 
 
 ## Obtain group object IDs
