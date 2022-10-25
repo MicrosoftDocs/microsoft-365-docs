@@ -59,6 +59,7 @@
 #### [Use Configuration Manager](manage-mde-post-migration-configuration-manager.md)
 #### [Use Group Policy](manage-mde-post-migration-group-policy-objects.md)
 #### [Use PowerShell, WMI, or MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
+#### [Updating MMA on Windows devices](update-agent-mma-windows.md)
 #### [Server migration scenarios](server-migration.md)
 ##### [Migrating servers from Microsoft Monitoring Agent to the unified solution](application-deployment-via-mecm.md)
 
