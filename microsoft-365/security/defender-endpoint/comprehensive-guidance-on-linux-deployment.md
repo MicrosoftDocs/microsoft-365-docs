@@ -53,7 +53,6 @@ The following list captures the actions you'll take to deploy Microsoft Defender
 ## Before you begin
 The following section provides information on supported Linux versions and recommendations for resources.
 
-For a detailed list of supported Linux distros, see [System requirements](microsoft-defender-endpoint-linux.md##system-requirements).
 
 ### System requirements
 
@@ -80,11 +79,10 @@ The following are the supported RHEL Linux servers:
 |RHEL 7.x and RHEL 8.x |No kernel filter driver, the fanotify kernel option must be enabled|akin to Filter Manager (fltmgr, accessible via `fltmc.exe`) in Windows| 
 |RHEL 6.x|TALPA kernel driver|
 
-For more information, see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements).
-
+For a detailed list of supported Linux distros, see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements).
 ## Network connectivity of Microsoft Defender for Endpoint
 
-The following is a list of people who need to be engaged:
+The complete this step, you may need to engage with following in your organization:
 
 - Firewall admin
 - Proxy admin
@@ -106,11 +104,13 @@ Here's how to check the network connectivity of Microsoft Defender for Endpoint:
     - WW
     - (Blanks)
 
-> [!NOTE]
-> Work with the Firewall/Proxy/Networking admins to allow the URL’s.
+    >[!NOTE]
+    >You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you may need to create an allow rule specifically for them. 
+
+3. Work with the Firewall/Proxy/Networking admins to allow the relevant URL’s.
 
 ### Set up proxy settings
-If the Linux servers are behind a proxy, use the following settings.
+If the Linux servers are behind a proxy, use the following settings guidance.
 
 The table below shows the supported proxy settings:
 
@@ -127,10 +127,11 @@ The table below shows the supported proxy settings:
 
 ### Verify SSL inspection is not being performed on the network traffic
 
-To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, firewall systems like Palo Alto, Zscaler, Cisco, and others are not permitted to monitor SSL. 
+To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspection by firewall systems such as Palo Alto, Zscaler, Cisco, and other products is not allowed. You'll have to bypass SSL inspection for Microsoft Defender for Endpoint URLs.
 
-> [!NOTE]
-> For Microsoft Defender for Endpoint URLs, you must avoid SSL checking.
+[BAHMAN - ARE WE OK TO NAME COMPANIES HERE?]
+
+
 
 #### Troubleshoot cloud connectivity issues
 
@@ -146,146 +147,151 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
 - If you're not using a third-party antivirus for your Linux servers:
    
 - If you're running McAfee antivirus for Linux, then add the processes/paths to the exclusion. For more information, see [Binary name and installation path changes with Endpoint Security for Linux 10.6.6](https://kcm.trellix.com/corporate/index?page=content&id=KB92028).
+
+   >[!NOTE]
+   >If your version is not in this list, please search their KB article or contact their support. 
   
 - If you are testing on one machine, you can use a command line to set up the exclusions:
   - [Configure from the command line](linux-resources.md#configure-from-the-command-line).
-  - [Configure and validate exclusions for Microsoft Defender for Endpoint on RHEL Linux](linux-exclusions.md).
+  - [Configure and validate exclusions for Microsoft Defender for Endpoint on  Linux](linux-exclusions.md).
 
-- If you're testing on multiple machines, then use the `mdatp_managed.json` file.
+- If you're testing on multiple machines, then use the following `mdatp_managed.json` file.
 
-The following command should be considered based on your requirements:
+    You can consider modifying the file based on your needs:
 
-```powershell
-{
-   "antivirusEngine":{
-      "enforcementLevel":"real_time",
-      "scanAfterDefinitionUpdate":true,
-      "scanArchives":true,
-      "maximumOnDemandScanThreads":2,
-      "exclusionsMergePolicy":"merge",
-      "exclusions":[
-         {
-            "$type":"excludedPath",
-            "isDirectory":false,
-            "path":"/var/log/system.log"
-         },
-         {
-            "$type":"excludedPath",
-            "isDirectory":true,
-            "path":"/home"
-         },
-         {
-            "$type":"excludedFileExtension",
-            "extension":"pdf"
-         },
-         {
-            "$type":"excludedFileName",
-            "name":"cat"
-         }
-      ],
-      "allowedThreats":[
-         "<EXAMPLE DO NOT USE>EICAR-Test-File (not a virus)"
-      ],
-      "disallowedThreatActions":[
-         "allow",
-         "restore"
-      ],
-      "threatTypeSettingsMergePolicy":"merge",
-      "threatTypeSettings":[
-         {
-            "key":"potentially_unwanted_application",
-            "value":"block"
-         },
-         {
-            "key":"archive_bomb",
-            "value":"audit"
-         }
-      ]
-   },
-   "cloudService":{
-      "enabled":true,
-      "diagnosticLevel":"optional",
-      "automaticSampleSubmissionConsent":"safe",
-      "automaticDefinitionUpdateEnabled":true
-      "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
-   }
-}
+    ```powershell
+    {
+       "antivirusEngine":{
+          "enforcementLevel":"real_time",
+          "scanAfterDefinitionUpdate":true,
+          "scanArchives":true,
+          "maximumOnDemandScanThreads":2,
+          "exclusionsMergePolicy":"merge",
+          "exclusions":[
+             {
+                "$type":"excludedPath",
+                "isDirectory":false,
+                "path":"/var/log/system.log"
+             },
+             {
+                "$type":"excludedPath",
+                "isDirectory":true,
+                "path":"/home"
+             },
+             {
+                "$type":"excludedFileExtension",
+                "extension":"pdf"
+             },
+             {
+                "$type":"excludedFileName",
+                "name":"cat"
+             }
+          ],
+          "allowedThreats":[
+             "<EXAMPLE DO NOT USE>EICAR-Test-File (not a virus)"
+          ],
+          "disallowedThreatActions":[
+             "allow",
+             "restore"
+          ],
+          "threatTypeSettingsMergePolicy":"merge",
+          "threatTypeSettings":[
+             {
+                "key":"potentially_unwanted_application",
+                "value":"block"
+             },
+             {
+                "key":"archive_bomb",
+                "value":"audit"
+             }
+          ]
+       },
+       "cloudService":{
+          "enabled":true,
+          "diagnosticLevel":"optional",
+          "automaticSampleSubmissionConsent":"safe",
+          "automaticDefinitionUpdateEnabled":true
+          "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
+       }
+    }
 
-```
+    ```
 
 **Recommendations**
 
-```powershell
-{
-   "antivirusEngine":{
-      "enforcementLevel":"real_time",
-      "scanAfterDefinitionUpdate":true,
-      "scanArchives":true,
-      "maximumOnDemandScanThreads":2,
-      "exclusionsMergePolicy":"merge",
-      "exclusions":[
-         {
-            "$type":"excludedPath",
-            "isDirectory":false,
-            "path":"/var/log/system.log"
-         },
-         {
-            "$type":"excludedPath",
-            "isDirectory":true,
-            "path":"/proc"
-         },
-         {
-            "$type":"excludedPath",
-            "isDirectory":true,
-            "path":"/sys"
-         },
-         {
-            "$type":"excludedPath",
-            "isDirectory":true,
-            "path":"/dev"
-         },
-         {
-            "$type":"excludedFileExtension",
-            "extension":""
-         },
-         {
-            "$type":"excludedFileName",
-            "name":""
-         }
-      ],
-      "allowedThreats":[
-         ""
-      ],
-      "disallowedThreatActions":[
-         "allow",
-         "restore"
-      ],
-      "threatTypeSettingsMergePolicy":"merge",
-      "threatTypeSettings":[
-         {
-            "key":"potentially_unwanted_application",
-            "value":"block"
-         },
-         {
-            "key":"archive_bomb",
-            "value":"audit"
-         }
-      ]
-   },
-   "cloudService":{
-      "enabled":true,
-      "diagnosticLevel":"optional",
-      "automaticSampleSubmissionConsent":"safe",
-      "automaticDefinitionUpdateEnabled":true
-      "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
-   }
-}
-```
+
+
+    ```powershell
+    {
+       "antivirusEngine":{
+          "enforcementLevel":"real_time",
+          "scanAfterDefinitionUpdate":true,
+          "scanArchives":true,
+          "maximumOnDemandScanThreads":2,
+          "exclusionsMergePolicy":"merge",
+          "exclusions":[
+             {
+                "$type":"excludedPath",
+                "isDirectory":false,
+                "path":"/var/log/system.log"
+             },
+             {
+                "$type":"excludedPath",
+                "isDirectory":true,
+                "path":"/proc"
+             },
+             {
+                "$type":"excludedPath",
+                "isDirectory":true,
+                "path":"/sys"
+             },
+             {
+                "$type":"excludedPath",
+                "isDirectory":true,
+                "path":"/dev"
+             },
+             {
+                "$type":"excludedFileExtension",
+                "extension":""
+             },
+             {
+                "$type":"excludedFileName",
+                "name":""
+             }
+          ],
+          "allowedThreats":[
+             ""
+          ],
+          "disallowedThreatActions":[
+             "allow",
+             "restore"
+          ],
+          "threatTypeSettingsMergePolicy":"merge",
+          "threatTypeSettings":[
+             {
+                "key":"potentially_unwanted_application",
+                "value":"block"
+             },
+             {
+                "key":"archive_bomb",
+                "value":"audit"
+             }
+          ]
+       },
+       "cloudService":{
+          "enabled":true,
+          "diagnosticLevel":"optional",
+          "automaticSampleSubmissionConsent":"safe",
+          "automaticDefinitionUpdateEnabled":true
+          "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
+       }
+    }
+    ```
 
 > [!NOTE]
-> (*): In Linux (and macOS) we support paths where it starts with a wildcard.
+> (*): In Linux (and macOS) paths that starts with a wildcard is supported.
 
-The table below describes the settings that are recommended as part of mdatp_managed.json file:
+The following table describes the settings that are recommended as part of mdatp_managed.json file:
 
 |Settings|Comments|
 |---|---|
@@ -296,22 +302,33 @@ The table below describes the settings that are recommended as part of mdatp_man
 - Save the setting as `mdatp_managed.json` file.
 - Copy the setting to this path `/etc/opt/microsoft/mdatp/managed/`. For more information, see [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).
 
-## Significance of CPU utilisation when using scripts generated from a third-party ISV
+## High CPU utilization by ISVs, Linux apps, or scripts
+
+If you observe that third-party ISVs, internally developed Linux apps, or scripts run into high CPU utilization, you can check the following processes to investigate the cause.
+
+
 
 Perform the following steps:
 
-- Identify Microsoft Defender for Endpoint for on RHEL linux causing the symptom
-- wdavdaemon (FANotify) plugin
-- wdavdaemon edr (EDR Engine) plugin
-- mdatp_audisp_plugin  
+- Identify which Microsoft Defender for Endpoint for on Linux is causing the symptom
+- Check the wdavdaemon unprivileged process
+- Check the wdavdaemon (FANotify) process
+- Check the wdavdaemon edr (EDR Engine) process
+- Check the mdatp_audisp_plugin process
 
-### Identify Microsoft Defender for Endpoint on RHEL Linux causing the symptom
+### Identify Microsoft Defender for Endpoint on Linux causing the symptom
 
-The following syntaxes helps to identify the root cause of the CPU overhead:
+Use the following syntaxes to help identify the root cause of the CPU overhead:
 
-- To get Microsoft Defender for Endpoint process ID, run `o	sudo top -c`.
-- To get more details on Microsoft Defender for Endpoint process, run `o	sudo ps ax --no-headings -T -o user,pid,thcount,%cpu,sched,%mem,vsz,rss,tname,stat,start_time,time,ucmd,command |sort -nrk 3|grep`.
-- To identify specific Microsoft Defender for Endpoint thread ID causing the highest CPU utilization within the process, run `o	sudo ps -T -p <PID> >> Thread_with_highest_cpu_usage.log`.
+- To get Microsoft Defender for Endpoint process ID causing the issue, run:
+  - `sudo top -c`.
+- To get more details on Microsoft Defender for Endpoint process, run: 	
+  - `sudo ps ax --no-headings -T -o user,pid,thcount,%cpu,sched,%mem,vsz,rss,tname,stat,start_time,time,ucmd,command |sort -nrk 3|grep`.
+- To identify specific Microsoft Defender for Endpoint thread ID causing the highest CPU utilization within the process, run:
+   - `sudo ps -T -p <PID> >> Thread_with_highest_cpu_usage.log`.
+
+[NAMISHA - PLEASE INSERT THE IMAGE FROM THE WORD DOC HERE]
+
 
 ### wdavdaemon (FANotify) plugin
 
