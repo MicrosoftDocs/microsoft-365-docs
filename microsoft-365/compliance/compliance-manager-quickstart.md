@@ -13,7 +13,6 @@ ms.collection:
 - purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
-- highpri
 - tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
@@ -30,6 +29,8 @@ Compliance Manager provides intelligent and actionable data upon your first visi
 
 Whether you’re coming to Compliance Manager for the first time, or are ready to use some of the advanced features, this guide can support you along your journey.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## First visit: get to know Compliance Manager
 
 Compliance Manager is located in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>. Your organization's global administrator will need to [set up user permissions and assign roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) before you start using Compliance Manager.
@@ -44,7 +45,7 @@ Our [Compliance Manager overview page](compliance-manager.md) is the best first 
 - [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
 - [Understand assessments](compliance-manager.md#assessments)
-- [Do a quick scan of your environment using the Configuration Analyzer for Microsoft Purview](compliance-manager-mcca.md)
+- [Do a quick check of your environment using the Configuration Analyzer for Microsoft Purview](compliance-manager-mcca.md)
 
 ## Ramping up: configure Compliance Manager to manage your compliance activities
 

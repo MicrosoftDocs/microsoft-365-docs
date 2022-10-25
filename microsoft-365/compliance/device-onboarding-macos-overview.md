@@ -27,9 +27,11 @@ MacOS devices can be onboarded into Microsoft Purview solutions using either Int
 - [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - [Insider risk management](insider-risk-management.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
-Before you get started with Endpoint DLP on macOS devices (Catalina 10.15 or later), you should familiarize yourself with these articles:
+Before you get started with Endpoint DLP on macOS devices (three latest released versions), you should familiarize yourself with these articles:
 
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
@@ -53,7 +55,7 @@ Your macOS devices must already be managed through Intune or JAMF Pro.
 
 ### Supported browsers
 
-Endpoint DLP supports these browsers on macOS Catalina 10.15 or higher:
+Endpoint DLP supports these browsers on macOS (three latest released versions):
 
 - Microsoft Edge (latest version)
 - Safari (latest version, macOS only)

@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- Strat_O365_IP
+- tier1
 - purview-compliance
 search.appverid:
 - MET150
@@ -26,6 +26,8 @@ ms.custom: seo-marvel-apr2020
 The rest of this article compares legacy Office 365 Message Encryption (OME) to Microsoft Purview Message Encryption and Microsoft Purview Advanced Message Encryption. Microsoft Purview Message Encryption is merger and newer version of both OME and Information Rights Management (IRM). Unique characteristics of deploying into GCC High are also outlined. The two can coexist in your organization. For information on how the new capabilities work, see [Office 365 Message Encryption (OME)](ome.md).
 
 This article is part of a larger series of articles about message encryption. This article is intended for administrators and ITPros. If you're just looking for information on sending or receiving an encrypted message, see the list of articles in [Message encryption](ome.md) and locate the article that best fits your needs.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Overview of AD RMS deprecation in Exchange Online
 

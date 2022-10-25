@@ -15,6 +15,7 @@ search.appverid:
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - purview-compliance
+- tier3
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
@@ -35,6 +36,8 @@ Here are some examples:
 - A mortgage broker requests financial information from a customer for a loan application
 - A health care provider sends health care information to patients
 - An attorney sends confidential information to a customer or another attorney
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How Office 365 Message Encryption works without the new capabilities
 

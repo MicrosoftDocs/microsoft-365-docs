@@ -12,8 +12,10 @@ ms.localizationpriority: medium
 ms.date: 09/01/2022 
 manager: dansimp 
 audience: ITPro 
-ms.collection: m365-security 
-ms.topic: article 
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual 
 ms.subservice: mde
 ms.custom: api 
 search.appverid: met150

@@ -10,12 +10,14 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 08/09/2022
+ms.date: 10/18/2022
 ms.reviewer: pauhijbr, ksarens, mkaminska
 manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier3
 search.appverid: met150
 ---
 
@@ -43,6 +45,8 @@ In addition to always-on, real-time protection and [on-demand antivirus](run-sca
 - By default, Microsoft Defender Antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) to override this default.
 
 - If a device is unplugged and running on battery during a scheduled full scan, the scheduled scan will stop with event 1002, which states that the scan stopped before completion. Microsoft Defender Antivirus will run a full scan at the next scheduled time.
+
+- Scheduled scans run according to the local time zone of the device.
 
 ## Quick scan, full scan, and custom scan
 

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Purview solutions trial playbook"
+title: "Microsoft Purview solutions trial user guide"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,13 +16,15 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Purview solutions trial playbook."
+description: "Microsoft Purview solutions trial user guide."
 ms.custom: trial-playbook
 ---
 
-# Trial playbook: Microsoft Purview solutions
+# Trial user guide: Microsoft Purview solutions
 
-Welcome to the Microsoft Purview solutions trial playbook. This playbook will help you make the most of your free trial by helping you discover robust and comprehensive capabilities of Microsoft Purview and security products.
+Welcome to the Microsoft Purview solutions trial user guide. This playbook will help you make the most of your free trial by helping you discover robust and comprehensive capabilities of Microsoft Purview and security products.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Compliance actions with Microsoft Purview
 
@@ -56,7 +58,7 @@ You may also want to jump right to key sections of our documentation using the l
 - [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
 - [Understand assessments](compliance-manager.md#assessments)
-- [Do a quick scan of your environment using the Microsoft Compliance Configuration Analyzer for Compliance Manager (preview)](compliance-manager-mcca.md)
+- [Do a quick check of your environment using the Microsoft Compliance Configuration Analyzer for Compliance Manager (preview)](compliance-manager-mcca.md)
 
 :::image type="content" source="../media/compliance-trial/compliance-portal.png" alt-text="Compliance Manager - dashboard":::
 
@@ -277,7 +279,7 @@ For step-by-step instructions to turn on auditing, see [Turn audit log search on
 
 ### Step 3 (recommended): Enable and view Insider Risk Management analytics insights
 
-Analytics within Insider Risk Management enables you to conduct an evaluation of potential insider risks that may lead to a data security incident in your organization without configuring any insider risk policies. Analytics scan results may take up to 48 hours before insights are available as reports for review. These assessment results are aggregated and anonymized, and offer organization-wide insights, like the percentage of users performing potential sensitive data exfiltration activities.
+Analytics within Insider Risk Management enables you to conduct an evaluation of potential insider risks that may lead to a data security incident in your organization without configuring any insider risk policies. Analytics check results may take up to 48 hours before insights are available as reports for review. These assessment results are aggregated and anonymized, and offer organization-wide insights, like the percentage of users performing potential sensitive data exfiltration activities.
 
 To learn more about analytics insights, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics) and check out the [Insider risk management analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help you understand your insider risk posture and help you take action by setting up appropriate policies to identify risky users.
 
@@ -422,7 +424,7 @@ Help your organization assess risks and efficiently respond to nations, regional
 
 [More information on the Compliance Manager premium assessments trial](compliance-easy-trials-compliance-manager-assessments.md).
 
-[Trial playbook: Microsoft Purview Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessment-playbook.md)
+[Trial user guide: Microsoft Purview Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessment-playbook.md)
 
 ### Microsoft Priva Privacy Risk Management and Microsoft Priva Subject Rights Requests
 
@@ -432,7 +434,7 @@ Proactively identify and protect against privacy risks such as data hoarding, da
 
 [Learn more about Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management).
 
-[Trial playbook: Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
+[Trial user guide: Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
 
 ## Additional resources
 

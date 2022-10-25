@@ -10,7 +10,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: 
@@ -19,7 +19,7 @@ ms.custom:
 ms.subservice: mde
 ms.collection: 
 - m365-security
-- m365initiative-defender-endpoint
+- tier2
 search.appverid: met150
 ---
 

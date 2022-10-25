@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/24/2022
 ms.localizationpriority: high
 ms.collection: 
 - M365-Campaigns
@@ -48,7 +48,7 @@ Completing all six missions is the most effective way to thwart hackers, protect
 
 ## Cybersecurity playbook
 
-The guidance in these missions is based upon the [Zero Trust security model](../security/office-365-security/microsoft-365-policies-configurations.md), and is summarized in a downloadable [Cybersecurity playbook](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)).
+The guidance in these missions is based upon the [Zero Trust security model](../security/office-365-security/microsoft-365-policies-configurations.md), and is summarized in a downloadable [Cybersecurity playbook](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf).
 
 [:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="Cybersecurity playbook. Download this guide.":::](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)
 

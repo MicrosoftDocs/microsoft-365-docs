@@ -14,6 +14,7 @@ search.appverid:
 ms.collection:
 - Strat_O365_Enterprise
 - purview-compliance
+- tier3
 - Strat_O365_Enterprise
 description: Learn about encryption available in Azure, such as Azure Disk Encryption
 ms.custom: seo-marvel-apr2020
@@ -30,6 +31,8 @@ Data can be secured in transit between an application and Azure by using [client
 For data at rest, Azure offers many encryption options, such as support for AES-256, giving you the flexibility to choose the data storage scenario that best meets your needs. Data can be automatically encrypted when written to Azure Storage using [Storage Service Encryption](/azure/storage/storage-service-encryption), and operating system and data disks used by VMs can be encrypted. For more information, see [Security recommendations for Windows virtual machines in Azure](/azure/virtual-machines/security-recommendations). In addition, delegated access to data objects in Azure Storage can be granted using [Shared Access Signatures](/azure/storage/storage-dotnet-shared-access-signature-part-1). Azure also provides encryption for data at rest using [Transparent Data Encryption for Azure SQL Database and Data Warehouse](/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql).
 
 For more information about encryption in Azure, see [Azure encryption overview](/azure/security/security-azure-encryption-overview) and [Azure Data Encryption-at-Rest](/azure/security/azure-security-encryption-atrest).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Azure Disk Encryption
 

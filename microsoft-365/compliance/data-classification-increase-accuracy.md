@@ -31,6 +31,8 @@ The **Match**, **Not a match** experience is available in:
 - Trainable Classifier Matched Items page
 - Microsoft Purview Data Loss Prevention (DLP) Alerts page
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Applies to
 
 |Classifier |Contextual summary| Redacted preview panel| Match and Not a Match|  
@@ -40,6 +42,7 @@ The **Match**, **Not a match** experience is available in:
 |Fingerprint SIT| No|No|Yes|
 |Exact data match SIT|No|No|No|
 |Named entities| No| No| No|
+|Credential scan| No| No| No|
 |Built-in Trainable classifiers|No| Yes| Yes|
 |Custom trainable classifier |No| No| Yes|
 

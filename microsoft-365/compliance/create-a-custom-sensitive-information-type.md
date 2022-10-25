@@ -31,6 +31,8 @@ There are two ways to create a new sensitive information type:
 - [copy and modify an existing sensitive information type](#copy-and-modify-a-sensitive-information-type)
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
 - You should be familiar with sensitive information types and what they are composed of. See, [Learn about sensitive information types](sensitive-information-type-learn-about.md). It is critical to understand the roles of:

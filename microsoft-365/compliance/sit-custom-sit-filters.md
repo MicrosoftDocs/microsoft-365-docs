@@ -22,6 +22,8 @@ description: "This article presents a list of the filters that can be encoded in
 
 In Microsoft you can define filters or other checks while creating a custom sensitive information types (SIT).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## List of supported filters and use cases
 
 ### AllDigitsSame Exclude

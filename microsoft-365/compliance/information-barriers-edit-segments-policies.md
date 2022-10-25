@@ -20,6 +20,8 @@ f1.keywords:
 
 After you have [defined information barriers (IB) policies](information-barriers-policies.md), you may need to make changes to those policies or to your user segments, as part of [troubleshooting](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) or as regular maintenance.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## What do you want to do?
 
 |**Action**|**Description**|

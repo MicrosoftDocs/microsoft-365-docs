@@ -21,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 ---
 # Modify Exact Data Match schema to use configurable match
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Applies to
 
 - Exact data match (EDM) sensitive information type (SIT) creation using PowerShell.

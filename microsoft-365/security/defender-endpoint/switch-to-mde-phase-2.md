@@ -19,7 +19,8 @@ ms.collection:
   - m365solution-mcafeemigrate
   - m365solution-symantecmigrate
   - highpri
-ms.topic: article
+  - tier1
+ms.topic: conceptual
 ms.custom: migrationguides
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150

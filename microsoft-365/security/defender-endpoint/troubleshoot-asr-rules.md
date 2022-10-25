@@ -16,9 +16,11 @@ manager: dansimp
 ms.custom: 
 - asr
 - admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier3
 search.appverid: met150
 ---
 

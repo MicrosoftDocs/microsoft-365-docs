@@ -1,7 +1,7 @@
 ---
 title: Step 1. Triage and analyze your first incident
 description: How to triage and begin the analysis of your first incident in Microsoft 365 Defender.
-keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
+keywords: incidents, alerts, attack story, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -98,9 +98,9 @@ There are multiple ways to read and analyze data using Microsoft 365 Defender bu
 
 Here's an example:
 
-1. Once triage priority has been determined, an analyst begins an in-depth analysis by selecting the incident name. This page brings up the **Incident Summary** where data is displayed in tabs to assist with the analysis. Under the **Alerts** tab, the types of alerts are displayed. Analysts can click on each alert to drill down into the respective detection source.
+1. Once triage priority has been determined, an analyst begins an in-depth analysis by selecting the incident name. This page brings up the **Attack story** where data is displayed in tabs to assist with the analysis. Under the **Alerts story** tab, the types of alerts are displayed. Analysts can click on each alert to drill down into the respective detection source.
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="The Summary tab of an incident" lightbox="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="Screenshot that shows the attack story of an incident." lightbox="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png":::
 
     For a quick guide about which domain each detection source covers, review the [Detect](#detection-by-microsoft-365-defender) section of this article.
 

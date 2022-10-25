@@ -17,6 +17,7 @@ ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
 - purview-compliance
 - SPO_Content
+- tier2
 description: "Understand the basic elements of encryption for data security in OneDrive for Business and SharePoint Online."
 ms.custom: seo-marvel-apr2020
 ---
@@ -25,6 +26,8 @@ ms.custom: seo-marvel-apr2020
 
 Understand the basic elements of encryption for data security in OneDrive for Business and SharePoint Online.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Security and data encryption in Office 365
 
 Microsoft 365 is a highly secure environment that offers extensive protection in multiple layers: physical data center security, network security, access security, application security, and data security. This article specifically focuses on the in-transit and at-rest encryption side of data security for OneDrive for Business and SharePoint Online.

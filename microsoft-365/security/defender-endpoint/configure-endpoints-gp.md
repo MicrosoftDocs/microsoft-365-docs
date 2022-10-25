@@ -6,14 +6,16 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier1
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.date: 12/07/2021
 ms.subservice: mde
 search.appverid: met150
@@ -244,7 +246,7 @@ With Group Policy there isn't an option to monitor deployment of policies on the
 
 ## Setup Defender AV policies
 
-Create a new Group Policy or group these settings in with the other policies. This is dependent upon the customers environment and how they would like to roll out the service by targeting different organizational units (OUs).
+Create a new Group Policy or group these settings in with the other policies. This is dependent upon the customer's environment and how they would like to roll out the service by targeting different organizational units (OUs).
 
 1. After you choose the GP, or create a new one, edit the GP.
 

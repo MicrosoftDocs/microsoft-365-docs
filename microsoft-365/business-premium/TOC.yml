@@ -4,7 +4,7 @@
       href: index.md
     - name: Productivity and security 
       href: m365bp-secure-users.md
-    - name: Microsoft 365 Business Premium trial guide
+    - name: Trial user guide - Microsoft 365 Business Premium
       href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: Get Microsoft 365 Business Premium
       href: get-microsoft-365-business-premium.md
@@ -40,7 +40,7 @@
         href: m365bp-devices-overview.md
       - name: Set up multifactor authentication
         href: m365bp-multifactor-authentication.md
-      - name: Install Office apps on devices
+      - name: Install Microsoft 365 apps on devices
         href: m365bp-install-office-apps.md
       - name: Protect unmanaged devices
         href: m365bp-protect-pcs-macs.md
@@ -80,6 +80,8 @@
         href: ../admin/setup/install-applications.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
   - name: Monitor onboarded devices
     items: 
+      - name: View device status
+        href: m365bp-device-states.md
       - name: Review and edit device policies
         href: m365bp-view-edit-create-mdb-policies.md
       - name: Manage device groups
@@ -116,7 +118,7 @@
   items:
     - name: Top 10 ways to secure a business
       href: ../admin/security-and-compliance/secure-your-business-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: Glossary of terms
+    - name: Glossary of security terms
       href: m365bp-glossary.yml
     - name: Microsoft 365 Business Premium FAQ
       href: microsoft-365-business-faqs.yml

@@ -16,10 +16,11 @@ ms.collection:
   - m365-security
   - m365solution-migratetomdatp
   - highpri
+  - tier1
 ms.custom: 
 - migrationguides
 - admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.date: 09/22/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150

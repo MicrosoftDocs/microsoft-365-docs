@@ -23,6 +23,8 @@ ms.custom: seo-marvel-apr2020
 
 This article walks you through the steps to modify and remove an existing custom sensitive information type in the Compliance center.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Modify custom sensitive information types in the Compliance Center
 
 1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list that you want to modify choose **Edit**.

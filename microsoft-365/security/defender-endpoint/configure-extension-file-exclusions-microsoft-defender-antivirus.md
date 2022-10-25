@@ -10,11 +10,13 @@ ms.localizationpriority: medium
 ms.date: 09/19/2022
 author: denisebmsft
 ms.author: deniseb
-ms.topic: article
+ms.topic: conceptual
 ms.custom: nextgen
 ms.reviewer: thdoucet
 manager: dansimp
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier2
 search.appverid: met150
 ---
 

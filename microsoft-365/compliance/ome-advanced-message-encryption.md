@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.date: 05/12/2022
 ms.collection: 
-- Strat_O365_IP
+- tier1
 - purview-compliance
 search.appverid:
 - MET150
@@ -25,6 +25,8 @@ Microsoft Purview Advanced Message Encryption is included in [Microsoft 365 Ente
 Advanced Message Encryption helps customers meet compliance obligations that require more flexible controls over external recipients and their access to encrypted emails. With Advanced Message Encryption in Office 365, you can control sensitive emails shared outside the organization with automatic policies and track those activities through the encrypted message portal access logs. You configure these policies to identify sensitive information types such as PII, Financial, or Health IDs, or you can use keywords to enhance protection. Once you've configured the policies, you pair policies with custom branded email templates and then add an expiration date for extra control of emails that fit the policy. Also, admins can further control encrypted emails accessed externally through a secure web portal by revoking access to the mail at any time.
 
 You can only revoke and set an expiration date for emails sent to external recipients.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Get started with Microsoft Purview Advanced Message Encryption
 
