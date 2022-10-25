@@ -192,8 +192,8 @@
               href: cross-tenant-onedrive-migration-step5.md
             - name: Step 6 Connect to source and target tenants
               href: cross-tenant-onedrive-migration-step6.md
-      - name: Tenant-to-tenant migrations
-        href: microsoft-365-tenant-to-tenant-migrations.md
+        - name: Tenant-to-tenant migrations
+        - href: microsoft-365-tenant-to-tenant-migrations.md
     - name: Multi-geo
       items: 
         - name: Microsoft 365 Multi-Geo
