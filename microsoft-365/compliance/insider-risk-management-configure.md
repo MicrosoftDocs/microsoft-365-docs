@@ -61,19 +61,19 @@ The following recommendations are available to help you get started with or maxi
 
 - **Turn on auditing**: When turned on, user and admin activity in your organization is recorded to the Microsoft 365 audit log. Insider risk policies and analytics scans use this log to detect risk activities.
 - **Get permissions to user risk management**: The level of access you have to insider risk management features depends on which role group you were assigned. To access and configure recommended actions, users must be assigned to the *Insider Risk Management* or *Insider Risk Management Admins* role groups.
-- **Choose policy indicators**: Indicators are essentially the user activities you want to detect and investigate. You can choose indicators to track activity across several Microsoft 365 locations and services.
+- **Choose policy indicators**: Indicators are essentially the risk management activities you want to detect and investigate. You can choose indicators to track activity across several Microsoft 365 locations and services.
 - **Scan for potential insider risks**: Run an analytics scan to discover potential insider risks occurring in your org. After evaluating results, review recommended policies to set up.
 - **Assign permissions to others**: If there are additional team members who will be responsible for managing insider risk features, you'll need to assign them to the appropriate role groups.
 - **Create your first policy**: To receive alerts on potentially risky activities, you must set up policies based on predefined templates that define the user activities you want to detect and investigate.
 
 Each recommended action included in this experience has four attributes:
 
-- **Action**: The name and description of the recommended action.
-- **Status**: The status of the recommended action. Values are *Not started*, *In progress*, *Saved for later*, or *Completed*.
+- **Action**: Name and description of the recommended action.
+- **Status**: Status of the recommended action. Values are *Not started*, *In progress*, *Saved for later*, or *Completed*.
 - **Required or optional**: Whether the recommended action is required or optional for insider risk management features to function as expected.
 - **Estimated time to complete**: Estimated time to complete the recommended action in minutes.
 
-Select a recommendation from the list to get started with configuring insider risk management. Each recommended action guides you through the required activities for the recommendation, including any requirements, what to expect, and the impact of configuring the feature in your organization.   Each recommended action is automatically marked as complete when configured or you'll need to manually select the action as complete when configured.
+Select a recommendation from the list to get started with configuring insider risk management. Each recommended action guides you through the required action for the recommendation, including any requirements, what to expect, and the impact of configuring the feature in your organization. Each recommended action is automatically marked as complete when configured or you'll need to manually select the action as complete when configured.
 
 ## Step 1 (required): Enable permissions for insider risk management
 
@@ -140,7 +140,7 @@ Complete the following steps to add users to an insider risk management role gro
 
 ## Step 2 (required): Enable the Microsoft 365 audit log
 
-Insider risk management uses Microsoft 365 audit logs for user insights and activities identified in policies and analytics insights. The Microsoft 365 audit logs are a summary of all activities within your organization and insider risk management policies may use these activities for generating policy insights.
+Insider risk management uses Microsoft 365 audit logs for user insights and risk management activities identified in policies and analytics insights. The Microsoft 365 audit logs are a summary of all activities within your organization and insider risk management policies may use these activities for generating policy insights.
 
 Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it's OK to turn auditing back on when completing this step.
 
@@ -150,7 +150,7 @@ For step-by-step instructions to turn on auditing, see [Turn audit log search on
 
 Insider risk management analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring. This evaluation may also help you determine needs for additional licensing or future optimization of existing policies. Analytics scan results may take up to 48 hours before insights are available as reports for review. To learn more about analytics insights, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics) and check out the [Insider Risk Management Analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help understand how analytics can help accelerate the identification of potential insider risks and help you to quickly take action.
 
-To enable insider risk Analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admin*, or Microsoft 365 *Global admin* role group.
+To enable insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admin*, or Microsoft 365 *Global admin* role group.
 
 Complete the following steps to enable insider risk analytics:
 
@@ -180,10 +180,9 @@ See the [Set up a connector to import HR data](import-hr-data.md) article for st
 
 ### Configure a healthcare-specific data connector
 
-Insider risk management supports importing user and log data imported from 3rd-party on existing electronic medical record (EMR) systems. The Microsoft Healthcare and Epic data connectors allow you to pull in activity data from your EMR system with CSV files, including improper patient record access, suspicious volume activities, and editing and export activities. This data helps drive alert indicators in insider risk management policies and is an important part of configuring full risk management coverage in your organization.
+Insider risk management supports importing user and log data imported from 3rd-party on existing electronic medical record (EMR) systems. The Microsoft Healthcare and Epic data connectors allow you to pull in activity data from your EMR system with CSV files, including improper patient record access, suspicious volume activities, and editing and exporting activities. This data helps drive alert indicators in insider risk management policies and is an important part of configuring full risk management coverage in your organization.
 
-If you configure more than one Healthcare or Epic connector for your organization, insider risk management automatically supports event and activities signals from all Healthcare and Epic connectors.
-The Microsoft 365 Healthcare or Epic connector is required when using the following policy templates:
+If you configure more than one Healthcare or Epic connector for your organization, insider risk management automatically supports event and activities signals from all Healthcare and Epic connectors. The Microsoft 365 Healthcare or Epic connector is required when using the following policy templates:
 
 - General patient data misuse
 
@@ -193,13 +192,13 @@ See the [Set up a connector to import healthcare data](import-healthcare-data.md
 
 Insider risk management supports using DLP policies to help identify the intentional or accidental exposure of sensitive information to unwanted parties for High severity level DLP alerts. When configuring an insider risk management policy with any of the **Data leaks** templates, you have the option to assign a specific DLP policy to the policy for these types of alerts.
 
-DLP policies help identify users to activate risk scoring in insider risk management for high severity DLP alerts for sensitive information and are an important part of configuring full risk management coverage in your organization. For more information about insider risk management and DLP policy integration and planning considerations, see [Insider risk management policies](insider-risk-management-policies.md#data-leaks).
+Data loss policies help identify users to activate risk scoring in insider risk management for high severity DLP alerts for sensitive information and are an important part of configuring full risk management coverage in your organization. For more information about insider risk management and DLP policy integration and planning considerations, see [Insider risk management policies](insider-risk-management-policies.md#general-data-leaks).
 
 > [!IMPORTANT]
->Make sure you've completed the following:
+> Make sure you've completed the following:
 >
 > - You understand and properly configure the in-scope users in both the DLP and insider risk management policies to produce the policy coverage you expect.
-> - Make sure the **Incident reports** setting in the DLP policy for insider risk management used with these templates are configured for *High* severity level alerts. Insider risk management alerts won't be generated from DLP policies with the **Incident reports** field set at *Low* or *Medium*.
+> - The **Incident reports** setting in the DLP policy for insider risk management used with these templates are configured for *High* severity level alerts. Insider risk management alerts won't be generated from DLP policies with the **Incident reports** field set at *Low* or *Medium*.
 
 A DLP policy is optional when using the following policy templates:
 
@@ -288,13 +287,12 @@ See the [Get started with insider risk management forensic evidence](/microsoft-
 [Insider risk settings](insider-risk-management-settings.md) apply to all insider risk management policies, regardless of the template you chose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management tabs. These settings control privacy, indicators, intelligent detections, and more.
 
 Before configuring a policy, define the following insider risk settings:
-
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** from the top-right corner of any page.
 2. On the **Privacy** page, select a privacy setting for displaying usernames for policy alerts.
 3. On the **Indicators** page, select the alert indicators you want to apply to all insider risk policies.
 
     > [!IMPORTANT]
-    > In order to receive alerts for risky activity defined in your policies, you must select one or more indicators. If indicators aren't configured in Settings, the indicators won't be selectable in insider risk policies.
+    > In order to receive alerts for potentially risky activities as defined in your policies, you must select one or more indicators. If indicators aren't configured in Settings, the indicators won't be selectable in insider risk policies.
 
 4. On the **Policy timeframes** page, select the [policy timeframes](insider-risk-management-settings.md#policy-timeframes) to go into effect for a user when they trigger a match for an insider risk policy.
 5. On the **Intelligent detections** page, configure the following settings for insider risk policies:
@@ -306,16 +304,17 @@ Before configuring a policy, define the following insider risk settings:
     - [File path exclusions](insider-risk-management-settings.md#file-path-exclusions)
     - [Site exclusions](insider-risk-management-settings.md#site-exclusions)
     - [Keyword exclusion](insider-risk-management-settings.md#keyword-exclusion)
+    
 6. On the **Export alerts** page, enable export of insider risk alert information using the Office 365 Management APIs if needed.
 7. On the **Priority user groups** page, create a priority user group and add users if not created in **Step 3**.
 8. On the **Power Automate flows** page, configure a flow from insider risk flow templates or create a new flow. See the [Getting started with insider risk management settings](insider-risk-management-settings.md#power-automate-flows-preview) article for step-by-step guidance.
 9. On the **Priority assets page**, configure priority assets to use data from your physical control and access platform imported by the Physical badging connector. See the [Getting started with insider risk management settings](insider-risk-management-settings.md#priority-physical-assets-preview) article for step-by-step guidance.
 10. On the **Microsoft Teams** page, enable Microsoft Teams integration with insider risk management to automatically create a team for case or user collaboration. See the [Getting started with insider risk management settings](insider-risk-management-settings.md#microsoft-teams-preview) article for step-by-step guidance.
-12. Select **Save** to enable these settings for your insider risk policies.
+11. Select **Save** to enable these settings for your insider risk policies.
 
 ## Step 6 (required): Create an insider risk management policy
 
-Insider risk management policies include assigned users and define which types of risk indicators are configured for alerts. Before activities can trigger alerts, a policy must be configured. Use the policy wizard to create new insider risk management policies.
+Insider risk management policies include assigned users and define which types of risk indicators are configured for alerts. Before potentially risky activities can trigger alerts, a policy must be configured. Use the policy wizard to create new insider risk management policies.
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. Select **Create policy** to open the policy wizard.
@@ -341,11 +340,11 @@ Insider risk management policies include assigned users and define which types o
 
 11. If you've selected **I want to prioritize content** in the previous step, you'll see the detail pages for *SharePoint sites*, *sensitive info types*, *sensitivity labels*, *file extensions*, and *Scoring*. Use these detail pages to define the SharePoint, sensitive info types, sensitivity labels, and file extensions to prioritize in the policy. The *Scoring* detail page allows you to scope the policy to only assign risk scores and generate alerts for specified activities that include priority content.
 
-    - **SharePoint sites**: Select **Add SharePoint site** and select the SharePoint sites you have access to and want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **SharePoint sites**: Select **Add SharePoint site** and select the SharePoint sites you have access to and want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.    
     - **Sensitive info type**: Select **Add sensitive info type** and select the sensitivity types you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
     - **Sensitivity labels**: Select **Add sensitivity label** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
     - **File extensions**: Add up to 50 file extensions. You can include or omit the '.' with the file extension. For example, *.py* or *py* would prioritize Python files.
-    - **Scoring**: Decide whether to assign risk scores to all activities detected by this policy or only for activities that include priority content. Choose **Get alerts for all activity** or **Get alerts only for activity that includes priority content**.
+     - **Scoring**: Decide whether to assign risk scores to all risk management activities detected by this policy or only for activities that include priority content. Choose **Get alerts for all activity** or **Get alerts only for activity that includes priority content**.
 
     > [!NOTE]
     > Users configuring the policy and selecting priority SharePoint sites can select SharePoint sites that they have permission to access. If SharePoint sites aren't available for selection in the policy by the current user, another user with the required permissions can select the sites for the policy later or the current user should be given access to the required sites.
