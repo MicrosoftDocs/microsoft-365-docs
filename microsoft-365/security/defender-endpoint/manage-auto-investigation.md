@@ -81,7 +81,7 @@ Whether taken automatically or upon approval, an automated investigation can res
 For incidents with a remediation status of **Pending approval**, you can also approve or reject a remediation action from within the incident.
 
 1. In the navigation pane, go to **Incidents & alerts** \> **Incidents**.
-2. Filter on **Pending action** for the Automated investigation state.
+2. Filter on **Pending action** for the Automated investigation state (optional).
 3. Select an incident name to open its summary page.
 4. Select the **Evidence and Response** tab.
 5. Select an item in the list to open its flyout pane.
