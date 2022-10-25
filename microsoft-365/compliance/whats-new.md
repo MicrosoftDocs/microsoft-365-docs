@@ -63,7 +63,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Microsoft Priva
 
-- **In preview**: [Data transfer policies](/privacy/priva/risk-management-policy-data-transfer) in Privacy Risk Management now offers additional flexible boundary conditions: detecting transfers bases on users' Azure Active Directory attributes, between users in different Microsoft 365 groups, and between SharePoint sites.
+- **In preview**: [Data transfer policies](/privacy/priva/risk-management-policy-data-transfer) in Privacy Risk Management now offers additional flexible boundary conditions: detecting transfers based on users' Azure Active Directory attributes, transfers between users in different Microsoft 365 groups, and transfers between SharePoint sites.
 
 ### On-premises scanner
 - **In preview**: The Azure Information Protection (AIP) on-premises scanner is being renamed **Microsoft Purview Information Protection scanner** and [configuration is moving to the Microsoft Purview compliance portal](/information-protection/deploy-aip-scanner-configure-install).
