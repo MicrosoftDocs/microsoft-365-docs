@@ -28,7 +28,7 @@ This alert informs you when your Offline Address Book has reached the size limit
 Limits](https://learn.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#address-book-limits)
 within the [Exchange Online limits](https://learn.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#address-book-limits).
 
-These alerts are displayed in the Microsoft 365 admin center. To view these alerts, navigate to **Health** \> **Service Health** \> **Exchange Online** and finally, the **Active Issues** tab. You'll see this as "Offline Address Book"
+>These alerts are displayed in the Microsoft 365 admin center. To view these alerts, navigate to **Health** \> **Service Health** \> **Exchange Online** and finally, the **Active Issues** tab. You'll see this as "Offline Address Book"
 
 ## What Do These Service Alerts Indicate?
 
