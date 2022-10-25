@@ -422,6 +422,10 @@ Set-Label -Identity "8faca7b8-8d20-48a3-8ea2-0f96310a848e" -ContentType:File,Ema
 
 ```
 
+**Limitation for this preview:**
+
+- To change the scope for a label that's published, you must first remove the label from all policies. You can then make the label change, and publish the label again. Be aware that for the scope or scopes you want to keep, these labels will temporarily disappear for users until they see the republished labels.
+
 ## Configure a label to apply S/MIME protection in Outlook
 
 > [!NOTE]
