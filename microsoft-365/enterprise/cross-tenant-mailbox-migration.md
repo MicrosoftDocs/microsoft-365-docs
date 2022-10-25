@@ -35,7 +35,7 @@ This article describes the process for cross-tenant mailbox moves and provides g
 
 > [!IMPORTANT]
 > Do not use this feature to migrate mailboxes on any type of hold. Migrating source mailboxes for users on hold is not supported.  
-> When a mailbox is migrated cross-tenant with this feature, all email is migrated to the target (destination tenant). After successful migration, the source mailbox is deleted. This means that after the migration, under no circumstances, is the source mailbox available, discoverable, or accessible in the source tenant.
+> When a mailbox is migrated cross-tenant with this feature, only user visible content in the mailbox (email, contacts, calendar, tasks, and notes) is migrated. to the target (destination tenant). After successful migration, the source mailbox is deleted. This means that after the migration, under no circumstances, is the source mailbox available, discoverable, or accessible in the source tenant.
 
 > [!NOTE]
 > If you are interested in previewing our new feature Domain Sharing for email alongside your cross-tenant mailbox migrations, please complete the form at [aka.ms/domainsharingpreview](https://aka.ms/domainsharingpreview). Domain sharing for email enables users in separate Microsoft 365 tenants to send and receive email using addresses from the same custom domain. The feature is intended to solve scenarios where users in separate tenants need to represent a common corporate brand in their email addresses. The current preview supports sharing domains indefinitely and shared domains during cross-tenant mailbox migration coexistence.
@@ -383,7 +383,7 @@ The meetings will move, however the Teams meeting URL does not update when items
 
 ### Does the Teams chat folder content migrate cross-tenant?
 
-No, the Teams chat folder content does not migrate cross-tenant. When a mailbox is migrated cross-tenant with this feature, all email is migrated. After successful migration, the source mailbox is deleted, but Teams chat data is preserved for the source user identity in the source tenant. This preserved Teams chat data is discoverable post mailbox migration.
+No, the Teams chat folder content does not migrate cross-tenant. When a mailbox is migrated cross-tenant with this feature, only user visible content in the mailbox (email, contacts, calendar, tasks, and notes) is migrated.
 
 ### How can I see just moves that are cross-tenant moves, not my onboarding and off-boarding moves?
 
