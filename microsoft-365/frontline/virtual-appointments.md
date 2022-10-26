@@ -34,8 +34,9 @@ With Virtual Appointments in Microsoft Teams, you have a complete meeting platfo
 This article gives you an overview of the capabilities available in Teams for scheduling and managing virtual appointments.
 
 - [The Virtual Appointments app](#the-virtual-appointments-app), for every organization
-- [The Bookings app](#the-bookings-app), for every organization.
-- [The Teams Electronic Health Record (EHR) connector](#teams-electronic-health-record-ehr-connector), for healthcare organizations who use an EHR system.
+- [The Bookings app](#the-bookings-app), for every organization
+- [The Teams Electronic Health Record (EHR) connector](#teams-electronic-health-record-ehr-connector), for healthcare organizations who use an EHR system
+- [Virtual Appointments Graph API](#virtual-appointments-graph-api), for developers in your organization
 
 ## The Virtual Appointments app
 
@@ -43,7 +44,7 @@ The Virtual Appointments app provides a central hub for all your virtual appoint
 
 You can schedule, view, and manage virtual appointments from Bookings, Teams, and Outlook, get real-time status updates in a queue view, send appointment reminders, view reports to gain insight into virtual appointments activity, and configure calendar and staff settings.
 
-With any Microsoft 365 or Office 365 license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. With [Teams Premium](https://review.learn.microsoft.com/MicrosoftTeams/enhanced-teams-experience?branch=danismith-t-pre-licensing), your organization gets advanced Virtual Appointments capabilities. These include a queue view of scheduled and on-demand appointments, SMS notifications, lobby chat, and departmental and organizational analytics.
+With any Microsoft 365 or Office 365 license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. For example, you can schedule appointments in the Bookings calendar and external attendees can [join through a browser](browser-join.md) without having to download Teams. With [Teams Premium](https://review.learn.microsoft.com/MicrosoftTeams/enhanced-teams-experience?branch=danismith-t-pre-licensing), your organization gets advanced Virtual Appointments capabilities to manage and personalize the experience. These include a queue view of scheduled and on-demand appointments, SMS text notifications, a custom waiting room experience, waiting room chat, and departmental and organizational analytics.
 
 To learn more, see:
 
@@ -58,7 +59,7 @@ Schedulers can manage multiple department and staff calendars, as well as commun
 
 Each scheduled virtual appointment contains a Teams meeting link that’s sent to attendees in email where they can easily join from a web browser or in Teams on any device.
 
-With any Microsoft 365 or Office 365 license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. With [Teams Premium](https://review.learn.microsoft.com/MicrosoftTeams/enhanced-teams-experience?branch=danismith-t-pre-licensing), your organization gets advanced Virtual Appointments capabilities. These include a queue view of scheduled and on-demand appointments, SMS notifications, and lobby chat.
+With any Microsoft 365 or Office 365 license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. With [Teams Premium](https://review.learn.microsoft.com/MicrosoftTeams/enhanced-teams-experience?branch=danismith-t-pre-licensing), your organization gets advanced Virtual Appointments capabilities to manage and personalize the experience. These include a queue view of scheduled and on-demand appointments, SMS text notifications, a custom waiting room experience, waiting room chat, and departmental and organizational analytics.
 
 To learn more, see:
 
@@ -76,6 +77,12 @@ Currently, the Teams EHR connector supports integration with the Cerner EHR syst
 
 - [Virtual appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
 - [Virtual appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
+
+## Virtual Appointments Graph API
+
+Developers can programmatically create and manage Virtual Appointments using Microsoft Graph. With the Virtual Appointments Graph API, they can embed virtual appointments join links in any app, with features that include a waiting room and browser join experience for external attendees.
+
+To learn more, see [virtualAppointment resource type](/graph/api/resources/virtualappointment?view=graph-rest-beta).
 
 ## Related articles
 
