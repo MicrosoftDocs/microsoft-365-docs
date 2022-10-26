@@ -131,7 +131,6 @@ A. Check Network Protection has effect on always blocked sites:
 
 - [http://www.smartscreentestratings2.net](http://www.smartscreentestratings2.net)
 - [https://www.smartscreentestratings2.net](https://www.smartscreentestratings2.net)
-- [http://malw-090-0-1.phsh-005-0-1.smartscreentestratings.com/](http://malw-090-0-1.phsh-005-0-1.smartscreentestratings.com/)
 
 B. Inspect diagnostic logs
 
