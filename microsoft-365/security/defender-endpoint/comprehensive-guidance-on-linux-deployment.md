@@ -85,13 +85,13 @@ For a detailed list of supported Linux distros, see [System requirements](micros
 
 - Depending on the non-Microsoft antivirus running on your Linux servers, you may still be able to run Microsoft Defender for Endpoint on Linux. If the antivirus runs FANotify, it needs to be uninstalled.
 	
-  - To check if there is a non-Microsoft antivirus that is running FANotify, you can run `mdatp health`, then check the result:
+- To check if there is a non-Microsoft antivirus that is running FANotify, you can run `mdatp health`, then check the result:
 		
-    INSERT IMAGE
+    :::image type="content" source="images/mdatp-health-result.png" alt-text="Image of mdatp health result" :::
 		
 	Under "conflicting_applications", if you see a result other than "unavailable", then you'll need to uninstall the non-Microsoft antivirus. 
 
-	If you don't uninstall the non-Microsoft antivirus product, you may encounter unexpected behaviors such as performance issues, stability issues such as systems hanging, or kernel panics.
+- If you don't uninstall the non-Microsoft antivirus product, you may encounter unexpected behaviors such as performance issues, stability issues such as systems hanging, or kernel panics.
 	
 - To identify Microsoft Defender for Endpoint on Linux processes and paths that should be excluded in the non-Microsoft antivirus product, run `systemctl status -l mdatp`.
 
@@ -253,7 +253,7 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
 
     ```
 
-**Recommendations**
+    **Recommendations**
 
 
 
@@ -324,19 +324,19 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
     }
     ```
 
-> [!NOTE]
-> (*): In Linux (and macOS) paths that starts with a wildcard is supported.
+    > [!NOTE]
+    > (*): In Linux (and macOS) paths that starts with a wildcard is supported.
 
-The following table describes the settings that are recommended as part of mdatp_managed.json file:
+    The following table describes the settings that are recommended as part of mdatp_managed.json file:
 
-|Settings|Comments|
-|---|---|
-|`exclusionsMergePolicy` being set to `admin_only` |Prevents the local admin from being able to add the local exclusions (via bash (the command prompt)).|
-|`disallowedThreatActions` being set to `allow and restore`|Prevents the local admin from being able to restore a quarantined item (via bash (the command prompt)).|
-|`threatTypeSettingsMergePolicy` being set to `admin_only`|Prevents the local admin from being able to add False Positives or True Positives that are benign to the threat types (via bash (the command prompt)).|
+    |Settings|Comments|
+    |---|---|
+    |`exclusionsMergePolicy` being set to `admin_only` |Prevents the local admin from being able to add the local exclusions (via bash (the command prompt)).|
+    |`disallowedThreatActions` being set to `allow and restore`|Prevents the local admin from being able to restore a quarantined item (via bash (the command prompt)).|
+    |`threatTypeSettingsMergePolicy` being set to `admin_only`|Prevents the local admin from being able to add False Positives or True Positives that are benign to the threat types (via bash (the command prompt)).|
 
-- Save the setting as `mdatp_managed.json` file.
-- Copy the setting to this path `/etc/opt/microsoft/mdatp/managed/`. For more information, see [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).
+    - Save the setting as `mdatp_managed.json` file.
+    - Copy the setting to this path `/etc/opt/microsoft/mdatp/managed/`. For more information, see [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).
 
 ## High CPU utilization by ISVs, Linux apps, or scripts
 
