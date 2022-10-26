@@ -80,7 +80,7 @@ Techniques are highlighted in bold text and appear with a blue icon on the left.
 
 Search and Export options are also available for Techniques.
 
-## Investigate using the side pane
+### Investigate using the side pane
 
 Select a Technique to open its corresponding side pane. Here you can see additional information and insights like related ATT&CK techniques, tactics, and descriptions.
 
@@ -94,7 +94,7 @@ You can do the same for command lines.
 
 :::image type="content" source="images/techniques-side-pane-command.png" alt-text="The option to copy command line" lightbox="images/techniques-side-pane-command.png":::
 
-## Investigate related events
+### Investigate related events
 
 To use [advanced hunting](advanced-hunting-overview.md) to find events related to the selected Technique, select **Hunt for related events**. This leads to the advanced hunting page with a query to find events related to the Technique.
 
@@ -103,7 +103,7 @@ To use [advanced hunting](advanced-hunting-overview.md) to find events related t
 > [!NOTE]
 > Querying using the **Hunt for related events** button from a Technique side pane displays all the events related to the identified technique but does not include the Technique itself in the query results.
 
-## Customize your device timeline
+### Customize your device timeline
 
 On the upper right-hand side of the device timeline, you can choose a date range to limit the number of events and techniques in the timeline.
 
