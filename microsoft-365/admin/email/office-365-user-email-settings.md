@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
 ms.collection: 
+- Tier1
 - scotvorg
 - Adm_O365
 - Adm_TOC

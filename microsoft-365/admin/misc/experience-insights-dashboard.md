@@ -8,6 +8,7 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
 - scotvorg
 description: "Get a periodic report about how people in your organization use Microsoft 365 services and drill into each chart for more insights."
 ---
