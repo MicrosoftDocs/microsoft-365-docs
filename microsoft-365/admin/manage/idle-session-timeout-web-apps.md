@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier3
 - scotvorg
 - Adm_TOC
 description: "Set how long user's session will last in Microsoft 365 before they're timed out."
