@@ -205,7 +205,7 @@ Names and GUIDs of the transport rules applied to the message appear. Analysts w
 >
 > Within the email grid, Details flyout, and Exported CSV, the ETRs are presented with a Name/GUID as shown below.
 >
-> image type="content" source="../../media/ETR_Details.png" alt-text="The rules in Exchange Transport" lightbox="../../media/ETR_Details.png":::
+> :::image type="content" source="../../media/ETR_Details.png" alt-text="The rules in Exchange Transport" lightbox="../../media/ETR_Details.png":::
 
 ### Inbound connectors
 
