@@ -26,12 +26,10 @@ Required Conditions:
 
 1. _Tenant_ has a sign up country included in _Local Region Geography_, the European Union or the United States.
 
+***Commitment:***
+
 *For current language please refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled "Location of Customer Data at Rest for Core Online Services".*
 
-
-
->[!NOTE]
->If Customer provisions its _Tenant_ in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, United Arab Emirates, United Kingdom, or United States, Microsoft will store the following Customer Data at rest only within that Geography: Microsoft Teams chat messages (including private messages, channel messages, meeting messages and images used in chats), and, for customers using Microsoft Stream (on SharePoint), meeting recordings.
 
 ### Advanced Data Residency add-on
 
