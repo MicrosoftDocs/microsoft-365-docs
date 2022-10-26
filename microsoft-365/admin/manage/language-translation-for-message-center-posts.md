@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- scotvorg 
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
@@ -26,7 +27,7 @@ description: "Message center posts are in English only but can be displayed auto
 
 # Language translation for Microsoft 365 Message center posts
 
-Message center posts are written in English-only due to the timeliness of the information we are posting, but can be automatically displayed in the language specified by your personal language settings for Microsoft 365. If you set your preferred language to anything other than English, you'll see an option in Message center to automatically translate posts. The messages is machine translated to your preferred language, meaning that a computer did the translation. This option controls the default view, but you can also use the drop-down menu to translate and display posts in any of the languages we support for translation. If you select English, we'll revert the message to the original English version.
+Message center posts are written in English-only due to the timeliness of the information we are posting, but can be automatically displayed in the language specified by your personal language settings for Microsoft 365. If you set your preferred language to anything other than English, you'll see an option in Message center to automatically translate posts. The messages are machine translated to your preferred language, meaning that a computer did the translation. This option controls the default view, but you can also use the drop-down menu to translate and display posts in any of the languages we support for translation. If you select English, we'll revert the message to the original English version.
 
 ## Before you begin
   

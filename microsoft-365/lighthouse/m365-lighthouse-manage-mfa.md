@@ -4,12 +4,13 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: ragovind
+ms.reviewer: ragovind
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,7 +22,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Manage multifactor authentication in Microsoft 365 Lighthouse
 
-Azure Active Directory (Azure AD) Multi-Factor Authentication (MFA) helps safeguard access to data and applications, providing another layer of security by using a second form of authentication. The Multifactor Authentication tab provides detailed information on the status of MFA enablement across your tenants. Select any tenant in the list to see more details for that tenant, including which Conditional Access policies requiring MFA are already configured and which users haven't yet registered for MFA.
+Azure Active Directory (Azure AD) Multi-Factor Authentication (MFA) helps safeguard access to data and applications, providing another layer of security by using a second form of authentication. The Multifactor Authentication page provides detailed information on the status of MFA enablement across your tenants. Select any tenant in the list to see more details for that tenant, including which Conditional Access policies requiring MFA are already configured and which users haven't yet registered for MFA.
 
 For small- and medium-sized business (SMB) customers, Microsoft recommends enabling [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) at a minimum. For more complex scenarios, you can use [Conditional Access](/azure/active-directory/conditional-access/overview) to configure specific policies.
 
@@ -35,11 +36,11 @@ The following conditions must be met before a tenant will appear in the list:
 
 ## Enable MFA for a tenant
 
-1. In the left navigation pane in Lighthouse, select **Users** > **Multifactor Authentication**.
+1. In the left navigation pane in Lighthouse, select **Users** > **Multifactor authentication**.
 
-2. On the **Multifactor Authentication** tab, look for a tenant currently not using MFA, and then select that tenant to open the tenant details pane.
+2. On the **Multifactor Authentication** page, look for a tenant currently not using MFA, and then select that tenant to open the tenant details pane.
 
-3. On the **MFA enablement** tab, under **MFA with Security defaults**, select **Enable Security Defaults**.
+3. On the **MFA enablement** tab, under **MFA with Security defaults**, select **Enable Security defaults**.
 
 4. Select **Save changes**.
 
@@ -47,19 +48,19 @@ To enable MFA through Conditional Access, see [Tutorial: Secure user sign-in eve
 
 ## Notify users who aren't registered for MFA
 
-1. In the left navigation pane in Lighthouse, select **Users** > **Multifactor Authentication**.
+1. In the left navigation pane in Lighthouse, select **Users** > **Multifactor authentication**.
 
-2. On the **Multifactor Authentication** tab, look for tenants with users not registered for MFA, and then select the tenant to open the tenant details pane.
+2. On the **Multifactor Authentication** page, look for tenants with users not registered for MFA, and then select the tenant to open the tenant details pane.
 
 3. Select **Users not registered for MFA** tab.
 
 4. Select all other users in the list who need to register for MFA, and then select **Create email**.
 
 > [!TIP]
-> If any of the user accounts in the list are emergency access accounts or service accounts for which you don’t want to require MFA, select those user accounts, and then select **Exclude users**. The excluded user accounts will no longer appear in the list of users not registered for MFA.
+> If any of the user accounts in the list are emergency access accounts or service accounts for which you don't want to require MFA, select those user accounts, and then select **Exclude users**. The excluded user accounts will no longer appear in the list of users not registered for MFA.
 
 > [!NOTE]
-> If any shared mailbox accounts or inactive user accounts appear in the list of users not registered for MFA, we recommend that you block signin for those accounts so they’ll no longer appear in this list.
+> If any shared mailbox accounts or inactive user accounts appear in the list of users not registered for MFA, we recommend that you block signin for those accounts so they'll no longer appear in this list.
 
 
 Lighthouse opens your default email client and prepopulates the email message with instructions to register for MFA. All the selected users will be included on the BCC line. If you prefer to individually email users, you can select the email icon next to the username.

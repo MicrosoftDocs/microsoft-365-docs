@@ -8,13 +8,16 @@ manager: scotv
 ms.reviewer: jamitche, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 ms.custom:
 - commerce_subscriptions
+- empty
 search.appverid: MET150
 description: "Learn how to review your list of Microsoft-certified solution providers (partners) to determine what admin privileges they have, and how to remove those privileges."
 ms.date: 12/03/2021
@@ -22,12 +25,12 @@ ms.date: 12/03/2021
 
 # Review Microsoft-certified cloud solution provider partner administrative privileges
 
-If you have a Microsoft-certified cloud solution provider (reseller partner), we recommend you conduct a quarterly review of the delegated administrative privileges (DAP) assigned to them. Make sure your organization wants this partner to have access to your organization’s data and make purchases on your behalf.
+If you have a Microsoft-certified cloud solution provider (reseller partner), we recommend you conduct a quarterly review of the delegated administrative privileges (DAP) assigned to them. Make sure your organization wants this partner to have access to your organization's data and make purchases on your behalf.
 
 > [!IMPORTANT]
 > Giving DAP, which include Global admin permissions, to any partner might present a security risk. Having too many Global admins is also a security risk. [Learn more about recent activity targeting delegated privileges](https://www.microsoft.com/security/blog/2021/10/25/nobelium-targeting-delegated-administrative-privileges-to-facilitate-broader-attacks/).
 
-After you accept a DAP agreement from a reseller partner, they can assign the Global admin role for your organization to their employees. The Global admin role gives the partner’s employees access to your employees’ personal data and other sensitive information. It also gives them permission to take tenant-wide actions, such as the following actions:
+After you accept a DAP agreement from a reseller partner, they can assign the Global admin role for your organization to their employees. The Global admin role gives the partner's employees access to your employees' personal data and other sensitive information. It also gives them permission to take tenant-wide actions, such as the following actions:
 
 - Changing user passwords
 - Adding users with email accounts

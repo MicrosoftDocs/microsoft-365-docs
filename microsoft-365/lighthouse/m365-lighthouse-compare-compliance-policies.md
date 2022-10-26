@@ -4,12 +4,13 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: ragovind
+ms.reviewer: ragovind
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -29,11 +30,11 @@ Make sure devices have a Microsoft Intune license and are enrolled in Microsoft 
 
 ## Compare policy settings
 
-1. In the left navigation pane in Lighthouse, select **Devices** > **Device Compliance**.
+1. In the left navigation pane in Lighthouse, select **Devices** > **Device compliance**.
 
 2. Select the **Policies** tab.
 
-3. From the **Filters** drop-down list, select an operating system or platform.
+3. From the **Filters** dropdown list, select an operating system or platform.
 
    > [!NOTE]
    > You can only compare policies with the same operating system or platform.
@@ -46,13 +47,13 @@ You can filter the results to see **Settings that differ**, **Settings that matc
 
 ## Configure a policy setting
 
-1. In the left navigation pane in Lighthouse, select **Devices** > **Device Compliance**.
+1. In the left navigation pane in Lighthouse, select **Devices** > **Device compliance**.
 
 2. Select the **Policies** tab.
 
-3. From the list, select a policy name.
+3. From the list of policies, select the policy that you want to view.
 
-4. From the Policy details pane, select **View this policy in Microsoft Endpoint Manager**.
+4. In the policy details pane, select **View this policy in Microsoft Endpoint Manager**.
 
 5. In MEM, edit the policy settings as needed.
 

@@ -1,5 +1,5 @@
 ---
-title: "Configure retention settings to automatically retain or delete content"
+title: "Configure Microsoft 365 retention settings to automatically retain or delete content"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -11,12 +11,13 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid: 
 - MOE150
 - MET150
-description: "Understand the settings you can configure in a retention policy or retention label policy to keep what you want and get rid of what you don't want."
+description: "Understand the settings you can configure for Microsoft 365 retention policies and retention labels to keep or delete your organization's data."
 ---
 
 # Common settings for retention policies and retention label policies
@@ -34,6 +35,8 @@ For the scenarios that support these policies for retention, see:
 Settings that are specific to each scenario are explained in their respective documentation.
 
 For overview information about policies for retention and how retention works in Microsoft 365, see [Learn about retention policies and retention labels](retention.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Scopes - adaptive and static
 
@@ -60,8 +63,8 @@ The property names for sites are based on SharePoint site managed properties. Fo
 
 The attribute names for users and groups are based on [filterable recipient properties](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) that map to Azure AD attributes. For example:
 
-- **Alias** maps to the LDAP name **mailNickname**, that displays as **Email** in the Azure AD admin center.
-- **Email addresses** maps to the LDAP name **proxyAddresses**, that displays as **Proxy address** in the Azure AD admin center.
+- **Alias** maps to the LDAP name **mailNickname** that displays as **Email** in the Azure AD admin center.
+- **Email addresses** maps to the LDAP name **proxyAddresses** that displays as **Proxy address** in the Azure AD admin center.
 
 The attributes and properties listed in the table can be easily specified when you configure an adaptive scope by using the simple query builder. Additional attributes and properties are supported with the advanced query builder, as described in the following section.
 
@@ -81,10 +84,10 @@ Specifically for SharePoint sites, there might be additional SharePoint configur
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), navigate to one of the following locations:
     
     - If you're using the records management solution:
-        - **Solutions** > **Records management** > **Adaptive scopes** tab > + **Create scope**
+        - **Solutions** \> **Records management** \> **Adaptive scopes** tab \> + **Create scope**
         
     - If you're using the data lifecycle management solution:
-       - **Solutions** > **Data lifecycle management** > **Adaptive scopes** tab > + **Create scope**
+       - **Solutions** \> **Data lifecycle management** \> **Microsoft 365** \> **Adaptive scopes** tab \> + **Create scope**
     
     Don't immediately see your solution in the navigation pane? First select **Show all**. 
 
@@ -122,7 +125,7 @@ Specifically for SharePoint sites, there might be additional SharePoint configur
     
     - For **SharePoint sites** scopes, use Keyword Query Language (KQL). You might already be familiar with using KQL to search SharePoint by using indexed site properties. To help you specify these KQL queries, see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
         
-        For example, because SharePoint sites scopes automatically include all SharePoint site types, which include Microsoft 365 group-connected and OneDrive sites, you can use the indexed site property **SiteTemplate** to include or exclude specific site types. The templates you can specify:
+        For example, because SharePoint site scopes automatically include all SharePoint site types, which include Microsoft 365 group-connected and OneDrive sites, you can use the indexed site property **SiteTemplate** to include or exclude specific site types. The templates you can specify:
         - `SITEPAGEPUBLISHING` for modern communication sites
         - `GROUP` for Microsoft 365 group-connected sites
         - `TEAMCHANNEL` for Microsoft Teams private channel sites
@@ -264,9 +267,7 @@ The **Exchange public folders** location applies retention settings to all publi
 
 When you configure an auto-apply policy that uses sensitive information types and select the **Exchange email** location:
 
-- Microsoft 365 group mailboxes are included.
-
-- All mailboxes are automatically included, even if you configure an adaptive scope to identify specific mailboxes. If you've chosen a static policy scope, you won't be able to specify recipients to include or exclude.
+- See the important callout for [Auto-apply labels to content with specific types of sensitive information](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information).
 
 ### Configuration information for SharePoint sites and OneDrive accounts
 
@@ -297,6 +298,10 @@ When you configure a policy for retention that uses adaptive policy scopes and s
 ### Configuration information for Microsoft 365 Groups
 
 To retain or delete content for a Microsoft 365 group (formerly Office 365 group), use the **Microsoft 365 Groups** location. For retention policies, this location includes the group mailbox and SharePoint teams site. For retention labels, this location includes the SharePoint teams site only.
+
+For detailed information about which items are included and excluded for Microsoft 365 Groups:
+- For group mailboxes, see [What's included for retention and deletion](retention-policies-exchange.md#whats-included-for-retention-and-deletion) for Exchange retention.
+- For SharePoint teams sites, see [What's included for retention and deletion](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion) for SharePoint retention.
 
 Mailboxes that you target with this policy location require at least 10 MB of data before retention settings will apply to them.
 
@@ -389,7 +394,7 @@ At the end of the retention period, you choose whether you want the content to b
 
 ![Retention settings page.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
-As explained in the next section, retention labels have another option; to apply another retention label with its own retention period.
+Retention labels have two more options. As described in the next section, they can apply another retention label with its own retention period. Or, they can [trigger a Power Automate flow](retention-label-flow.md) for custom actions.
 
 Before you configure retention, first familiarize yourself with capacity and storage limits for the respective workloads:
 
@@ -400,9 +405,6 @@ Before you configure retention, first familiarize yourself with capacity and sto
     In extreme cases where a high volume of email is deleted in a short time period, either by users or automatically from policy settings, you might also need to configure Exchange to more frequently move items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in their archive mailbox. For step-by-step instructions, see [Increase the Recoverable Items quota for mailboxes on hold](increase-the-recoverable-quota-for-mailboxes-on-hold.md).
 
 #### Relabeling at the end of the retention period
-
-> [!NOTE]
-> This option is in preview and subject to change.
 
 When you configure a retention label to automatically apply a different retention label at the end of the retention period, the item is then subject to the retention settings of the newly selected retention label. This option lets you automatically change the retention settings for the item.
 

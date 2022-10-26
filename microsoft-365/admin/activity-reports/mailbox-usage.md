@@ -5,9 +5,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
@@ -23,7 +25,7 @@ description: "Learn how to get the Mailbox usage report to find out about activi
 
 # Microsoft 365 Reports in the admin center - Mailbox usage
 
-The **Mailbox usage report** provides information about users with a user mailbox and the level of activity by each based on the email send, read, create appointment, send meeting, accept meeting, decline meeting and cancel meeting activity. It also provides information about how much storage has been consumed by each user mailbox, and how many of them are approaching storage quotas. 
+The **Mailbox usage report** provides information about users with a user mailbox and the level of activity by each based on the email send, read, create appointment, send meeting, accept meeting, decline meeting and cancel meeting activity. It also provides information about how much storage has been consumed by each user mailbox, and how many of them are approaching storage quotas. The mailbox usage report also contains information on mailboxes shared amongst users, providing storage and quota data on shared mailboxes.
  
 ## How to get to the mailbox usage report
 
@@ -31,38 +33,59 @@ The **Mailbox usage report** provides information about users with a user mailbo
 2. Select **View More** under **Email activity**. 
 3. From the **Email activity** drop-down list, select **Exchange** \> **Mailbox usage**.
 
-## Interpret the mailbox usage report
+## Interpret the Mailbox usage report
 
-You can get a view into your organization's **Mailbox usage** by looking at the **Mailbox**, **Storage** and **Quota** charts.
+You can get a view into your organization's mailbox usage by looking at the **Mailbox**, **Storage** and **Quota** charts.
+
+To access shared mailbox information, change the drop-down selection at the top right of the charts to **Shared**.  If your tenant does not have shared mailboxes, you will not be able to view any shared mailbox information.
+
+> [!NOTE]
+> You will not currently be able to export the summary chart information for shared mailboxes. This is a known issue and will be corrected in a future iteration.
   
 :::image type="content" alt-text="Mailbox usage report." source="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png" lightbox="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png":::
 
 The **Mailbox usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated). The data in each report usually covers up to the last 24 to 48 hours.
 
-The **Mailbox** chart shows you the total number of user mailbox in your organization, and the total number that are active on any given day of the reporting period. A user mailbox is considered active if it had an email send, read, create appointment, send meeting, accept meeting, decline meeting and cancel meeting activity.
+### The Mailbox chart
 
-The **Storage** chart shows you amount of storage used in your organization. Storage Chart doesn't include archive mailboxes. For more information about auto-expanding archiving, see [Overview of auto-expanding archiving in Microsoft 365](../../compliance/autoexpanding-archiving.md).
+The **Mailbox** chart shows you the total number of user or shared mailboxes in your organization, and the total number of user mailboxes that are active on any given day of the reporting period. A user mailbox is considered active if it had an email send, read, create appointment, send meeting, accept meeting, decline meeting and cancel meeting activity.
 
-The **Quota** chart shows you the number of user mailboxes in each quota category. There are four quota categories: 
-- Good: The number of users whose storage used is below the "issue warning" quota.
-- Warning: The number of users whose storage used is at or above the "issue warning" quota, but below the "prohibit send" quota.
-- Can't send: The number of users whose storage used is at or above the prohibit send quota, but below the prohibit send/receive quota.
-- Can't send/receive: The number of users whose storage used is at or above the "prohibit send/receive" quota.
+> [!NOTE]
+> Shared mailboxes do not have activity independent of a user mailbox so only a count of shared mailboxes will be shown when this mailbox type is selected.
 
-On the Mailbox chart, the Y axis is the count of user mailboxes. 
+On the Mailbox chart:
+- The Y axis is the number of user or shared mailboxes. 
+- The X axis is the selected date range for this specific report.
 
-On the Storage chart, the Y axis is the amount of storage being used by user mailboxes in your organization.
+### The Storage chart
 
-The X axis on the Mailbox and Storage charts is the selected date range for this specific report.
+The **Storage** chart shows you amount of storage used in your organization by mailbox type. Storage Chart doesn't include archive mailboxes. For more information about auto-expanding archiving, see [Overview of auto-expanding archiving in Microsoft 365](../../compliance/autoexpanding-archiving.md).
 
-On the Quota chart, the Y axis is the number of user mailboxes in each storage quota. And the X axis is the quota category.
+On the Storage chart:
+- The Y axis is the amount of storage being used by user or shared mailboxes in your organization.
+- The X axis is the selected date range for this specific report.
+
+### The Quota chart
+
+The **Quota** chart shows you the number of user or shared mailboxes in each quota category. There are four quota categories: 
+- Good: The number of users or shared mailboxes whose storage used is below the "issue warning" quota.
+- Warning: The number of users or shared mailboxes whose storage used is at or above the "issue warning" quota, but below the "prohibit send" quota.
+- Can't send: The number of users or shared mailboxes whose storage used is at or above the prohibit send quota, but below the prohibit send/receive quota.
+- Can't send/receive: The number of users or shared mailboxes whose storage used is at or above the "prohibit send/receive" quota.
+
+On the Quota chart:
+- The Y axis is the number of user or shared mailboxes in each storage quota.
+- The X axis is the quota category.
 
 You can filter charts you see by selecting an item in the legend.
 
-The table shows you a breakdown of mailbox usage at the per-user level. You can add additional columns to the table. 
+## Mailbox usage per mailbox table
+
+This table shows you a breakdown of mailbox usage at the per mailbox level. You can add additional columns to the table. 
 
 |Item|Description|
 |:-----|:-----|
+|Recipient type |Either Shared or User. |
 |User name |The email address of the user. |
 |Display Name  |The full name of the user. |
 |Deleted |The mailbox whose current state is deleted, but was active during some part of the reporting period of the report.|
@@ -80,7 +103,7 @@ The table shows you a breakdown of mailbox usage at the per-user level. You can 
 |Has Archive|Shows if the mailbox has an online archive enabled. |
 
 
-If your organization's policies prevents you from viewing reports where user information is identifiable, you can change the privacy setting for all these reports. Check out the **Hide user details in the reports** section in the [Activity Reports in the Microsoft 365 admin center](activity-reports.md.
+If your organization's policies prevents you from viewing reports where user information is identifiable, you can change the privacy setting for all these reports. Check out the **Hide user details in the reports** section in the [Activity Reports in the Microsoft 365 admin center](activity-reports.md).
 
 Select **Choose columns** to add or remove columns from the report.  <br/> :::image type="content" alt-text="Mailbox usage report - choose columns." source="../../media/ea3d0b18-6ac6-41b0-9bb9-4844f040ea75.png":::
 

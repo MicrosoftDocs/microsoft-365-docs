@@ -3,14 +3,15 @@ title: "Microsoft 365 data locations"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/13/2022
+ms.date: 08/30/2022
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection: 
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
@@ -32,9 +33,9 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the trans
 
 Find information about the contractual commitments for the storage location of customer data at rest in the [Microsoft Products and Services Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA).
 
-For Azure Active Directory data locations, please visit [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/#overview).
+For Azure Active Directory data locations, see [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/#overview).
 
-If Customer's billing address is outside Europe and Customer has an Office 365 Education subscription, then notwithstanding the "Location of Customer Data at Rest for Core Online Services" section of the OST, Microsoft may provision Customer's Office 365 tenant in, transfer Customer Data to, and store Customer Data at rest anywhere within Europe or North America.  If Customer's billing address is in Europe and Customer has an Office 365 Education subscription, then notwithstanding the "Location of Customer Data at Rest for Core Online Services" section of the OST, Microsoft may provision Customer's Office 365 tenant in, transfer Customer Data to, and store Customer Data at rest anywhere within the European Union.
+If your billing address is outside Europe and you have an Office 365 Education subscription, then notwithstanding the "Location of Customer Data at Rest for Core Online Services" section of the OST, Microsoft may provision your Office 365 tenant in, transfer your data to, and store your data at rest anywhere within Europe or North America.  If your billing address is in Europe and you have an Office 365 Education subscription, then notwithstanding the "Location of Customer Data at Rest for Core Online Services" section of the OST, Microsoft may provision your Office 365 tenant in, transfer your data to, and store your data at rest anywhere within the European Union.
 
 ## FAQ
 
@@ -156,13 +157,13 @@ The table below defines the data location for various services. When determining
 
 ### Data Center Geographies
 
-The following global geographies can store data at rest. The locations where customer data may be stored can change.
+The following regional geographies can store data at rest. The locations where customer data may be stored can change.
 
-| Global Geographies | Locations where customer data may be stored |
+| Regional Geographies | Locations where customer data may be stored |
 | --- | --- |
-| Global Geography 1 – EMEA (Europe, Middle East and Africa) | Austria, Finland, France, Ireland, Netherlands, Sweden |
-| Global Geography 2 – Asia Pacific | Hong Kong, Japan, Malaysia, Singapore, South Korea |
-| Global Geography 3 - Americas | Brazil, Chile, United States |
+| Regional Geography 1 – EMEA (Europe, Middle East and Africa) | Austria, Finland, France, Ireland, Netherlands, Sweden |
+| Regional Geography 2 – Asia Pacific | Hong Kong, Japan, Malaysia, Singapore, South Korea |
+| Regional Geography 3 - Americas | Brazil, Chile, United States |
 
 ## Country/Region specific Data Center city locations
 
@@ -178,6 +179,7 @@ For country/region specific data centers, the following defines the cities where
 | Germany | Frankfurt, Berlin |
 | India | Chennai, Mumbai, Pune |
 | Japan | Osaka, Tokyo |
+| Qatar | Doha |
 | South Korea | Busan, Seoul |
 | Norway | Oslo, Stavanger |
 | South Africa | Cape Town, Johannesburg |
@@ -574,7 +576,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Forms | United States |
 | Viva Connections | Australia |
 | Viva Topics | Australia |
-| Viva Learning | Global Geography 2 – Asia Pacific |
+| Viva Learning | Australia |
 | Viva Insights - Personal | Australia |
 | Viva Insights - Manager/Leader AAD org data only | Global Geography 2 – Asia Pacific |
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
@@ -627,7 +629,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
 | Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
+| Forms | United States |
 | Viva Connections | Global Geography 1 – EMEA |
 | Viva Topics | Global Geography 1 – EMEA |
 | Viva Learning | Global Geography 1 – EMEA |
@@ -683,7 +685,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
 | Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
+| Forms | United States |
 | Viva Connections | Global Geography 1 – EMEA |
 | Viva Topics | Global Geography 1 – EMEA |
 | Viva Learning | Global Geography 1 – EMEA |
@@ -3175,7 +3177,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
 | Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
+| Forms | United States |
 | Viva Connections | Global Geography 1 – EMEA |
 | Viva Topics | Global Geography 1 – EMEA |
 | Viva Learning | Global Geography 1 – EMEA |
@@ -3259,7 +3261,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
 | Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
+| Forms | United States |
 | Viva Connections | Global Geography 1 – EMEA |
 | Viva Topics | Global Geography 1 – EMEA |
 | Viva Learning | Global Geography 1 – EMEA |
@@ -3399,7 +3401,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
 | Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
+| Forms | United States |
 | Viva Connections | Global Geography 1 – EMEA |
 | Viva Topics | Global Geography 1 – EMEA |
 | Viva Learning | Global Geography 1 – EMEA |
@@ -3427,7 +3429,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
 | Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
+| Forms | United States |
 | Viva Connections | Global Geography 1 – EMEA |
 | Viva Topics | Global Geography 1 – EMEA |
 | Viva Learning | Global Geography 1 – EMEA |
@@ -3539,7 +3541,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
 | Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
+| Forms | United States |
 | Viva Connections | Global Geography 1 – EMEA |
 | Viva Topics | Global Geography 1 – EMEA |
 | Viva Learning | Global Geography 1 – EMEA |
@@ -3567,7 +3569,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
 | Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
+| Forms | United States |
 | Viva Connections | Global Geography 1 – EMEA |
 | Viva Topics | Global Geography 1 – EMEA |
 | Viva Learning | Global Geography 1 – EMEA |
@@ -3595,7 +3597,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
 | Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
+| Forms | United States |
 | Viva Connections | Global Geography 1 – EMEA |
 | Viva Topics | Global Geography 1 – EMEA |
 | Viva Learning | Global Geography 1 – EMEA |
@@ -3679,7 +3681,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
 | Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
+| Forms | United States |
 | Viva Connections | Global Geography 1 – EMEA |
 | Viva Topics | Global Geography 1 – EMEA |
 | Viva Learning | Global Geography 1 – EMEA |
@@ -4239,7 +4241,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
 | Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
+| Forms | United States |
 | Viva Connections | Global Geography 1 – EMEA |
 | Viva Topics | Global Geography 1 – EMEA |
 | Viva Learning | Global Geography 1 – EMEA |
@@ -4828,7 +4830,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
 | Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
+| Forms | United States |
 | Viva Connections | Global Geography 1 – EMEA |
 | Viva Topics | Global Geography 1 – EMEA |
 | Viva Learning | Global Geography 1 – EMEA |
@@ -4856,7 +4858,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
 | Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
+| Forms | United States |
 | Viva Connections | Global Geography 1 – EMEA |
 | Viva Topics | Global Geography 1 – EMEA |
 | Viva Learning | Global Geography 1 – EMEA |
@@ -5179,27 +5181,32 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 
 | Service | Location |
 | --- | --- |
-| Exchange Online | Global Geography 1 – EMEA |
-| OneDrive for Business | Global Geography 1 – EMEA |
-| SharePoint Online | Global Geography 1 – EMEA |
-| Microsoft Teams | Global Geography 1 – EMEA |
-| Office Online &amp; Mobile | Global Geography 1 – EMEA |
-| EOP | Global Geography 1 – EMEA |
-| Intune | Global Geography 1 – EMEA |
-| Planner | Global Geography 1 – EMEA |
-| Sway | United States |
-| Yammer | Global Geography 1 – EMEA |
-| OneNote Services | Global Geography 1 – EMEA |
-| Stream | Global Geography 1 – EMEA |
-| Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
-| Viva Connections | Global Geography 1 – EMEA |
-| Viva Topics | Global Geography 1 – EMEA |
-| Viva Learning | Global Geography 1 – EMEA |
-| Viva Insights - Personal | Global Geography 1 – EMEA |
-| Viva Insights - Manager/Leader AAD org data only | Global Geography 1 – EMEA |
-| Viva Insights - Manager/Leader with 3rd party HR data only | United States |
-| Viva Insights - Advanced | United States |
+| Exchange Online | Qatar* |
+| OneDrive for Business | Qatar* |
+| SharePoint Online | Qatar* |
+| Exchange Online Protection | Qatar* |
+| Microsoft Defender for Office P1 | Qatar* |
+| Microsoft Teams | Qatar* |
+| Office for the Web | Qatar* |
+| Office for Mobile | Qatar* |
+| OneNote Services | Qatar* |
+| Stream | Qatar* |
+| Whiteboard | Qatar* |
+| Viva Connections | Qatar* |
+| Viva Insights - Personal Insights | Qatar* |
+| Viva Topics | Qatar* |
+| Azure Active Directory | European Union |
+| Dataverse for Teams | European Union |
+| Intune | European Union |
+| Planner | European Union |
+| Power Automate Desktop | European Union |
+| Power Virtual Agent for Teams | European Union |
+| Viva Insights - Mgr / Leader / Advanced | European Union |
+| Viva learning | European Union |
+| Yammer | European Union |
+| Forms | United States |
+
+*Every service that stores customer data at rest in Exchange Online, SharePoint Online or OneDrive for Business, or is deployed locally.
 </p></details>
 
 ## Republic of Macedonia
@@ -5220,7 +5227,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
 | Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
+| Forms | United States |
 | Viva Connections | Global Geography 1 – EMEA |
 | Viva Topics | Global Geography 1 – EMEA |
 | Viva Learning | Global Geography 1 – EMEA |
@@ -5640,7 +5647,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
 | Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
+| Forms | United States |
 | Viva Connections | Global Geography 1 – EMEA |
 | Viva Topics | Global Geography 1 – EMEA |
 | Viva Learning | Global Geography 1 – EMEA |
@@ -6508,7 +6515,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
 | Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
+| Forms | United States |
 | Viva Connections | Global Geography 1 – EMEA |
 | Viva Topics | Global Geography 1 – EMEA |
 | Viva Learning | Global Geography 1 – EMEA |
@@ -6676,7 +6683,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneNote Services | United Arab Emirates |
 | Stream | Global Geography 1 – EMEA |
 | Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
+| Forms | United States |
 | Viva Connections | United Arab Emirates |
 | Viva Topics | United Arab Emirates |
 | Viva Learning | Global Geography 1 – EMEA |
@@ -6740,6 +6747,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader AAD org data only | United States |
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
+| Viva Goals | United States |
 </p></details>
 
 ## Uruguay
@@ -6816,7 +6824,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
 | Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
+| Forms | United States |
 | Viva Connections | Global Geography 1 – EMEA |
 | Viva Topics | Global Geography 1 – EMEA |
 | Viva Learning | Global Geography 1 – EMEA |
@@ -6983,7 +6991,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
 | Whiteboard | United States |
-| Forms | Global Geography 1 – EMEA |
+| Forms | United States |
 | Viva Connections | Global Geography 1 – EMEA |
 | Viva Topics | Global Geography 1 – EMEA |
 | Viva Learning | Global Geography 1 – EMEA |

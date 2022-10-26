@@ -7,15 +7,18 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
+ms.date: 10/24/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
-- SMB
-- M365-security-compliance
-- m365-initiative-defender-business
+ - SMB
+ - m365-security
+ - m365solution-mdb-setup
+ - highpri
+ - tier1
 ---
 
 # Onboard devices to Microsoft Defender for Business
@@ -40,11 +43,15 @@ Choose one of the following options to onboard Windows client devices to Defende
 
 - [Local script](#local-script-for-windows-10-and-11) (for onboarding devices manually in the Microsoft 365 Defender portal)
 - [Group Policy](#group-policy-for-windows-10-and-11) (if you're already using Group Policy in your organization)
-- [Microsoft Intune](#intune-for-windows-10-and-11) (included in [Microsoft 365 Business Premium](../../business-premium/index.md))
+- [Microsoft Intune](#intune-for-windows-10-and-11) (if you're already using Intune)
 
 ### Local script for Windows 10 and 11
 
-You can use a local script to onboard Windows client devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory, if that trust doesn't already exist; enrolls the device in Microsoft Intune, if it isn't already enrolled; and then onboards the device to Defender for Business. The local script method works even if you don't currently have Intune, and this is the recommended method for Defender for Business customers.
+You can use a local script to onboard Windows client devices. When you run the onboarding script on a device: 
+
+- It creates a trust with Azure Active Directory, if that trust doesn't already exist.
+- It enrolls the device in Microsoft Intune if it isn't already enrolled, and then onboards the device to Defender for Business. 
+- The local script method works even if you don't currently have Intune, and this is the recommended method for Defender for Business customers.
 
 > [!TIP]
 > We recommend that you onboard up to 10 devices at a time when you use the local script method.
@@ -71,14 +78,12 @@ If you prefer to use Group Policy to onboard Windows clients, follow the guidanc
 
 ### Intune for Windows 10 and 11
 
-If your subscription includes Intune, you can onboard Windows clients and other devices in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you already have Intune as part of your subscription, and you can use Intune to onboard devices.  
+You can onboard Windows clients and other devices in Intune by using the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). There are several methods available for enrolling devices in Intune. We recommend using one of the following methods:
 
-There are several methods available for enrolling devices in Intune. We recommend using one of the following methods:
+- [Enable Windows automatic enrollment for company-owned or company-managed devices](#enable-automatic-enrollment-for-windows-10-and-11)
+- [Ask users to enroll their own Windows 10/11 devices in Intune](#ask-users-enroll-their-own-windows-10-and-11-devices)
 
-- [Enable Windows automatic enrollment](/mem/intune/enrollment/windows-enroll) for company-owned or company-managed devices
-- [Ask users to enroll their own Windows 10/11 devices in Intune](/mem/intune/user-help/enroll-windows-10-device)
-
-#### To enable automatic enrollment for Windows 10 and 11
+#### Enable automatic enrollment for Windows 10 and 11
 
 When you set up automatic enrollment, users add their work account to the device. In the background, the device registers and joins Azure Active Directory (Azure AD) and is enrolled in Intune.
 
@@ -104,7 +109,7 @@ When you set up automatic enrollment, users add their work account to the device
 > [!TIP]
 > To learn more, see [Enable Windows automatic enrollment](/mem/intune/enrollment/windows-enroll).
 
-#### To have users enroll their own Windows 10 and 11 devices
+#### Ask users enroll their own Windows 10 and 11 devices
 
 1. Watch the following video to see how enrollment works:<br/><br/>
 
@@ -120,7 +125,7 @@ After you've onboarded Windows devices to Defender for Business, you can run a d
 
 1. On the Windows device, create a folder: `C:\test-MDATP-test`.
 
-2. Open a command prompt as an administrator.
+2. Open Command Prompt as an administrator.
 
 3. In the Command Prompt window, run the following PowerShell command:
 
@@ -132,7 +137,7 @@ After the command runs, the Command Prompt window will close automatically. If s
 
 ## View a list of onboarded devices
 
-To view the list of devices that are onboarded to Defender for Business, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). On the navigation pane, under **Endpoints**, choose **Device inventory**.
+To view the list of devices that are onboarded to Defender for Business, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). In the navigation pane, go to **Assets** > **Devices**.
 
 ## Next steps
 
@@ -150,11 +155,15 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 Choose one of the following options to onboard Mac:
 
 - [Local script for Mac](#local-script-for-mac) (*recommended*)
-- [Intune for Mac](#intune-for-mac)
+- [Intune for Mac](#intune-for-mac) (if you're already using Intune)
 
 ### Local script for Mac
 
-When you run the local script on a Mac, it creates a trust with Azure Active Directory, if that trust doesn't already exist; enrolls the Mac in Microsoft Intune, if it isn't already enrolled; and then onboards the Mac to Defender for Business. The local script method works even if you don't currently have Intune. We recommend that you onboard up to 10 devices at a time using this method.
+When you run the local script on Mac: 
+
+- It creates a trust with Azure Active Directory if that trust doesn't already exist.
+- It enrolls the Mac in Microsoft Intune if it isn't already enrolled, and then onboards the Mac to Defender for Business. 
+- We recommend that you onboard up to 10 devices at a time using this method.
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
@@ -164,7 +173,7 @@ When you run the local script on a Mac, it creates a trust with Azure Active Dir
 
 4. Select **Download onboarding package**, and save it to a removable drive. Also select **Download installation package**, and save it to your removable device.
 
-5. On a Mac, save the installation package as `wdav.pkg` to a local directory.
+5. On Mac, save the installation package as `wdav.pkg` to a local directory.
 
 6. Save the onboarding package as `WindowsDefenderATPOnboardingPackage.zip` to the same directory you used for the installation package.
 
@@ -176,13 +185,11 @@ When you run the local script on a Mac, it creates a trust with Azure Active Dir
 
 10. Use the following Python command in Bash to run the onboarding package: `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.sh`
 
-After a Mac is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
+After Mac is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
 
 ### Intune for Mac
 
-If your subscription includes Microsoft Intune, you can onboard Mac in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). For example, if you have [Microsoft 365 Business Premium](../../business/index.yml), you already have Intune as part of your subscription.  
-
-There are several methods available for enrolling Mac in Intune. We recommend one of the following methods:
+If you already have Intune, you can enroll Mac computers by using the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). There are several methods available for enrolling Mac in Intune. We recommend one of the following methods:
 
 - [Choose an option for company-owned Mac](#options-for-company-owned-mac)
 - [Ask users to enroll their own Mac in Intune](#ask-users-to-enroll-their-own-mac-in-intune)
@@ -223,7 +230,7 @@ After a device is enrolled in Intune, you can add it to a device group. [Learn m
 
 ## View a list of onboarded devices
 
-To view the list of devices that are onboarded to Defender for Business, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). In the navigation pane, under **Endpoints**, choose **Device inventory**.
+To view the list of devices that are onboarded to Defender for Business, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). In the navigation pane, go to **Assets** > **Devices**.
 
 ## Next steps
 
@@ -235,8 +242,8 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 
 ## Servers
 
-> [!NOTE]
-> **The ability to onboard a server is currently in preview**.
+> [!IMPORTANT]
+> If you're planning to onboard an instance of Windows Server or Linux Server, you'll need an additional license, such as Microsoft Defender for Business servers (preview). Alternately, you could use [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction); however, your Defender for Business experience could change when you add an enterprise plan, such as Defender for Servers Plan 1 or Plan 2. To learn more, see [What happens if I have a mix of Microsoft endpoint security subscriptions?](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions).
 
 Choose the operating system for your server:
 
@@ -246,7 +253,8 @@ Choose the operating system for your server:
 ## Windows Server
 
 > [!IMPORTANT]
-> **The ability to onboard Windows Server endpoints is currently in preview**. Make sure that you meet the following requirements before you onboard a Windows Server endpoint:
+> **The ability to onboard Windows Server endpoints is currently in preview**. When general availability is announced, a Microsoft Defender for Business servers license must be purchased for each onboarded server, or those servers can be offboarded.
+> Make sure that you meet the following requirements before you onboard a Windows Server endpoint:
 > - The **Preview features** setting is turned on. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
 > - The enforcement scope for Windows Server is turned on. Go to **Settings** > **Endpoints** > **Configuration management** > **Enforcement scope**. Select **Use MDE to enforce security configuration settings from MEM**, select  **Windows Server**, and then select **Save**.
 
@@ -288,7 +296,7 @@ After you onboard your Windows Server endpoint to Defender for Business, you can
 
 1. On the Windows Server device, create a folder: `C:\test-MDATP-test`.
 
-2. Open a command prompt as an administrator.
+2. Open Command Prompt as an administrator.
 
 3. In the Command Prompt window, run the following PowerShell command:
 
@@ -301,7 +309,8 @@ After the command runs, the Command Prompt window will close automatically. If s
 ## Linux Server
 
 > [!IMPORTANT]
-> **The ability to onboard Linux Server endpoints is currently in preview**. Make sure that you meet the following requirements before you onboard a Linux Server endpoint:
+> **The ability to onboard Linux Server endpoints is currently in preview**. When general availability is announced, a Microsoft Defender for Business servers license must be purchased for each onboarded server, or those servers can be offboarded.
+> Make sure that you meet the following requirements before you onboard a Linux Server endpoint:
 > - The **Preview features** setting is turned on. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
 > - You meet the [prerequisites for Microsoft Defender for Endpoint on Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).
 
@@ -319,7 +328,7 @@ You can use the following methods to onboard an instance of Linux Server to Defe
 
 ## View a list of onboarded devices
 
-To view the list of devices that are onboarded to Defender for Business, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). In the navigation pane, under **Endpoints**, choose **Device inventory**.
+To view the list of devices that are onboarded to Defender for Business, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). In the navigation pane, go to **Assets** > **Devices**.
 
 ## Next steps
 
@@ -331,14 +340,19 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 
 ## Mobile devices
 
-You'll need Microsoft Intune to onboard mobile devices, such as Android and iOS/iPadOS devices. If you have [Microsoft 365 Business Premium](../../business/index.yml), you have Intune. 
-
-See the following resources to get help enrolling these devices into Intune:
+Use Microsoft Intune to onboard mobile devices, such as Android and iOS/iPadOS devices. See the following resources to get help enrolling these devices into Intune:
 
 - [Enroll Android devices](/mem/intune/enrollment/android-enroll)
 - [Enroll iOS or iPadOS devices](/mem/intune/enrollment/ios-enroll)
 
 After a device is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
+
+> [!NOTE]
+> The standalone version of Defender for Business does not include the Intune license that is required to onboard iOS and Android devices. You can add Intune to your Defender for Business subscription to onboard mobile devices. Intune is included in Microsoft 365 Business Premium.
+
+## View a list of onboarded devices
+
+To view the list of devices that are onboarded to Defender for Business, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). In the navigation pane, go to **Assets** > **Devices**.
 
 ## Next steps
 

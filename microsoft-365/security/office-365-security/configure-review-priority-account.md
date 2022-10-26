@@ -5,18 +5,18 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 3/21/2022
+ms.date: 10/14/2022
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
 search.appverid:
   - MET150
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: Learn how to identify critical people in an organization and add the priority account tag to provide them with extra protection.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Configure and review Priority accounts in Microsoft Defender for Office 365
@@ -72,10 +72,10 @@ For more information, see [User tags in Microsoft Defender for Office 365](user-
 The affects of priority account protection are visible in the following features:
 
 - [Alerts](alerts.md)
-- [Custom alert policies](../../compliance/alert-policies.md#viewing-alerts)
+- [Custom alert policies](../../compliance/alert-policies.md#view-alerts)
 - [Threat Explorer and real-time detections](threat-explorer.md)
 - [Compromised user report](view-email-security-reports.md#compromised-users-report)
-- [Email entity page](mdo-email-entity-page.md#other-innovations)
+- [Email entity page](mdo-email-entity-page.md)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
 - [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report)
 - [Attack simulation](attack-simulation-training.md#target-users)

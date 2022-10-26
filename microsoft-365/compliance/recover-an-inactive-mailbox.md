@@ -9,7 +9,9 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection: 
+- purview-compliance
+- tier2
 ms.localizationpriority: medium
 search.appverid: 
 - MOE150
@@ -20,6 +22,8 @@ description: Learn how to recover the contents of an inactive mailbox in Office 
 ---
 
 # Recover an inactive mailbox
+
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 An inactive mailbox (which is a type of soft-deleted mailbox) is used to preserve a former employee's email after they leave your organization. If that employee returns to your organization or if another employee takes on the job responsibilities of the former employee, there are two ways that you can make the contents of the inactive mailbox available to a user:
 
@@ -34,6 +38,8 @@ See the [More information](#more-information) section for more details about the
 >
 > - [Content search](content-search.md)
 > - [Export content search results](export-search-results.md)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Requirements to recover an inactive mailbox
 

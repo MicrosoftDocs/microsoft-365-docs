@@ -7,18 +7,17 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -30,8 +29,8 @@ description: "Protect unmanaged or bring-your-own devices (BYOD) from cyberattac
 
 This objective is focused on creating protection for any unmanaged Windows 10 PCs and Macs not enrolled in Microsoft Intune. It is very likely your small business or campaign may have staff who bring their own devices (BYOD), and these devices are not managed. BYOD include personally-owned phones, tablets, and PCs.
 
->[!NOTE]
->BYOD users must each install and run the Company Portal app to enroll these devices and receive access to company resources.
+> [!NOTE]
+> BYOD users must each install and run the Company Portal app to enroll these devices and receive access to company resources.
 
 It's critical that you ensure your frontline users follow these guidelines so that minimum security capabilities are configured on all the BYOD devices.
 
@@ -81,4 +80,4 @@ Use firewall settings to protect your Mac from unwanted contact initiated by oth
 
 ## Next mission
 
-Okay, mission complete! Now, let's work on [securing the email system](m365bp-protect-email-overview.md) against phishing and other attacks.
+Okay, mission complete! Now, let's work on [securing email usage](m365bp-protect-email-overview.md) against phishing and other attacks.

@@ -6,11 +6,14 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: conceptual
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.collection:
+- tier1
+- m365-security
+ms.date: 09/15/2022
 localization_priority: Normal
-ms.collection: 
-- SMB
 search.appverid:
 - MET150
 - MOE150

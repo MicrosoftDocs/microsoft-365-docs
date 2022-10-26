@@ -1,29 +1,29 @@
 ---
 title: "Estimated and actual eDiscovery search results"
+description: "Understand why estimated and actual search results may vary in searches run with eDiscovery tools in Office 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - SPO160
 - MOE150
 - MET150
-ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
-description: "Understand why estimated and actual search results may vary in searches run with eDiscovery tools in Office 365."
 ---
 
 # Differences between estimated and actual eDiscovery search results
 
-This article applies to searches that you can run using one of the following Microsoft 365 eDiscovery tools: 
+This article applies to searches that you can run using one of the following Microsoft Purview eDiscovery tools:
 
 - Content search
 - eDiscovery (Standard)
@@ -49,19 +49,14 @@ However, as you'll notice in the previous screenshot of the Export Summary repor
 Here are some reasons for these differences:
   
 - **The way results are estimated**. An estimate of the search results is just that, an estimate (and not an actual count) of the items that meet the search query criteria. To compile the estimate of Exchange items, a list of the message IDs that meet the search criteria is requested from the Exchange database by the eDiscovery tool you're using. But when you export the search results, the search is rerun and the actual messages are retrieved from the Exchange database. So these differences might result because of how the estimated number of items and the actual number of items are determined.
-
 - **Changes that happen between the time when estimating and exporting search results**. When you export search results, the search is restarted to collect that most recent items in the search index that meet the search criteria. It's possible there are additional items were created, sent, or received that meet the search criteria in the time between when the estimated search results were collected and when the search results were exported. It's also possible that items that were in the search index when the search results were estimated are no longer there because they were purged from the content location before the search results are exported. One way to mitigate this issue is to specify a date range for an eDiscovery search. Another way is to place a hold on content locations so that items are preserved and can't be purged.
 
    Here are other issues that can result is differences between estimated and exported search results:
 
   - In increase in items when using a date query. This is typically cause by the following two things:
-
-  - Hold versioning in SharePoint. If a document is deleted from a site that's on hold and document versioning is enabled, all versions of the deleted document will be preserved.
-
-  - Calendar items. Accept and reject messages and recurring meetings will automatically continue creating new items in the background with old dates.
-
+      - Hold versioning in SharePoint. If a document is deleted from a site that's on hold and document versioning is enabled, all versions of the deleted document will be preserved.
+      - Calendar items. Accept and reject messages and recurring meetings will automatically continue creating new items in the background with old dates.
   - With holds, there can be cases where the same item is preserved in a user's primary mailbox and in their archive mailbox. This can happen when a user manually moves an item to their archive.
-
   - Although rare, even in the case when a hold is applied, maintenance of built-in calendar items (which aren't editable by the user, but are included in many search results) may be removed from time to time. This periodic removal of calendar items will result in fewer items that are exported.
 
 - **Unindexed items**. Items that are unindexed for search can cause differences between estimated and actual search results. You can include unindexed items when you export the search results. If you include unindexed items when exporting search results, there might be more items that are exported. This will cause a difference between the estimated and exported search results.

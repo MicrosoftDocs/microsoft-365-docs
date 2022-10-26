@@ -158,6 +158,8 @@
               items:
                 - name: Service advisories for Mailbox utilization
                   href: microsoft-365-mailbox-utilization-service-alerts.md
+                - name: Service advisories for eDiscovery throttling
+                  href: microsoft-365-ediscovery-throttling-service-advisory.md
                 - name: Service advisories for MRS source delays
                   href: microsoft-365-mrs-source-delays-service-alerts.md
             - name: Microsoft 365 Apps monitoring
@@ -172,6 +174,10 @@
           href: microsoft-365-inter-tenant-collaboration.md
         - name: Cross-tenant mailbox migration
           href: cross-tenant-mailbox-migration.md
+        - name: Cross-tenant identity mapping
+          href: cross-tenant-identity-mapping.md
+        - name: Cross-tenant OneDrive migration
+          href: cross-tenant-onedrive-migration.md
         - name: Tenant-to-tenant migrations
           href: microsoft-365-tenant-to-tenant-migrations.md
     - name: Multi-geo
@@ -526,6 +532,8 @@
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Manage Microsoft 365 groups
               href: manage-microsoft-365-groups-with-powershell.md
+            - name: Manage Folders and Rules feature in Microsoft 365 Groups
+              href: manage-folders-and-rules-feature.md 
     - name: Manage SharePoint
       href: manage-sharepoint-online-with-microsoft-365-powershell.md
       items: 

@@ -8,14 +8,18 @@ manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
+- highpri 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom: 
 - commerce_purchase
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
@@ -57,7 +61,7 @@ Are you a new customer, and you don't already have an account with Microsoft? Us
 1. Go to the <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365 Products site</a>.
 2. Select the plan that you want to sign up for, such as **Microsoft 365 Business Standard**, scroll down the page, and select **Try free for 1 month**.
 3. On the next page, follow the steps to set up your account.
-4. The sign up process may take several minutes to complete. After it\'s complete, you're ready to start the setup wizard for your subscription. For more information about setting up your subscription, see [Next steps](#next-steps).
+4. The sign-up process may take several minutes to complete. After it's complete, you're ready to start the setup wizard for your subscription. For more information about setting up your subscription, see [Next steps](#next-steps).
 
 ## Buy a subscription from your free trial
 
@@ -68,7 +72,7 @@ If you want to buy your subscription before your trial is over, use these steps:
 1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Your products** page, find the subscription that you want to buy.
 3. In the **Licenses** section, select **Purchase subscription**.
-4. Choose either a monthly or annual commitment for your subscription, then select **Checkout**.
+4. Choose a billing frequency for your subscription, then select **Checkout**.
 5. On the next page, verify the subscription, and select **Checkout**.
 6. On the next page, verify the **Sold to** address, the **Billed to** information, and **Items in this order**. If you need to make any changes, select **Change** next to the applicable section.
 7. When you\'re finished, select **Accept agreement & place order**.

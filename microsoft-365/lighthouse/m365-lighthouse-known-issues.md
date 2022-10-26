@@ -4,12 +4,13 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: crimora
+ms.reviewer: crimora
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -27,19 +28,13 @@ This article lists the known issues for Microsoft 365 Lighthouse by feature area
 
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
-| **Helpdesk Agent is unable to reset a user password** | Managed Service Provider (MSP) technicians who are members of the Helpdesk Agent group are unable to reset passwords for users in customer tenants. When they try to reset the password for a user, they get the following error message: "You don't have permission to do this. [Learn more](m365-lighthouse-configure-portal-security.md)" | To work around the permissions issue, Helpdesk Agents should reset passwords by using the Microsoft 365 admin center or Azure Active Directory. |
-
-## Devices
-
-| Issue | Description | Solution |
-| ---------------- | ---------------- | ---------------- |
-| **Deleted policy appears** | After a device compliance policy has been deleted from Intune, it will temporarily continue to be visible in Lighthouse. If MSP technicians attempt to do a policy comparison that includes a policy that's been deleted, the technicians get the following error: "Something went wrong. Please refresh the page and try again." | To resolve the error, clear the deleted policy from the policy comparison and compare only existing policies. |
+| **No data displays on the OneDrive tab in the user details pane** | When an MSP technician attempts to view OneDrive data on the OneDrive tab in the user details pane, they see the message: "OneDrive isn't set up for this user. Ask the person to go to portal.office.com/onedrive to set it up. It might take a while. If you still see this message 24 hours later, contact support." | The OneDrive tab doesn't support delegated authentication at this time. To work around the issue, MSP technicians should view OneDrive data in the Microsoft 365 admin center by signing in using the customer's credentials. |
 
 ## Threat management
 
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
-| **Threat name is missing** | When MSP technicians view the list of threats from the Threat Management page, some threats may be missing the name of the threat. This will occur when the device that the threat was detected on was recently removed from Intune. | The issue will resolve within 48 hours. No additional steps are required. |
+| **Threat name is missing** | When MSP technicians view the list of threats from the Threat management page, some threats may be missing the name of the threat. This will occur when the device that the threat was detected on was recently removed from Intune. | The issue will resolve within 48 hours. No additional steps are required. |
 
 ## Baselines
 
@@ -52,14 +47,6 @@ This article lists the known issues for Microsoft 365 Lighthouse by feature area
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
 | **Retry provisioning error** | MSP technicians get a "You don't have permissions to do this" error message when attempting to retry provisioning of a Cloud PC. | To work around this issue, sign in to the customer tenant and then reprovision Cloud PCs from the Microsoft Endpoint Manger admin center. For instructions, see [Reprovision a Cloud PC](/windows-365/enterprise/reprovision-cloud-pc). |
-
-## Audit logs
-
-
-| Issue | Description | Solution |
-|--|--|--|
-| **Deactivate and Reactivate actions are not listed in audit logs** | The following activities are currently not reported on the Audit logs page in  Lighthouse: <ul><li>Name: offboardTenant \| Action: Inactivate a customer</li> <li>Name: resetTenantOnboardingStatus \| Action: Reactive customer</li></ul> | There's no workaround, but we're working on a fix. These activities will appear in audit logs once the fix is deployed in the service. |
-| **Filter is not showing all users** | When MSP technicians try to filter by using **Initiated By**, the list of all User Principal Names (UPNs) – corresponding to email IDs of the technicians who initiated actions generating audit logs – isn't fully displayed under the filter.<br><br>Note that the audit logs themselves will be fully displayed; only the ability to filter them by using **Initiated By** is impacted. | There's no workaround, but we're working on a fix. The filter will revert to its expected behavior – displaying the full list of UPNs to filter by – once the fix is deployed in the service. |
 
 ## Delegated Admin Privileges (DAP)
 

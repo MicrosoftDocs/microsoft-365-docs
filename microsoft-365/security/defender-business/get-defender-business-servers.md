@@ -7,17 +7,26 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: none
-ms.reviewer: shlomiakirav
-f1.keywords: NOCSH 
+ms.date: 08/11/2022
 ms.collection: 
 - SMB
-- m365-security-compliance
+- m365-security
+- tier1
+ms.reviewer: shlomiakirav
+f1.keywords: NOCSH 
 ---
 
 # How to get Microsoft Defender for Business servers (preview)
+
+> [!IMPORTANT]
+> If you're planning to onboard an instance of Windows Server or Linux Server, you'll need an additional license, such as Microsoft Defender for Business servers (preview). Alternately, you could use [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction); however, your Defender for Business experience could change when you add an enterprise plan, such as Defender for Servers Plan 1 or Plan 2. To learn more, see [What happens if I have a mix of Microsoft endpoint security subscriptions?](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions) and [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
+
+Microsoft Defender for Business servers (preview) enables you to onboard a device running Windows Server or Linux Server to Defender for Business or Microsoft 365 Business Premium. When the Microsoft Defender for Business servers license becomes generally available, you'll need one license for each server instance.
+
+**Here's how to get Microsoft Defender for Business servers (preview)**:
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in. 
 
@@ -38,7 +47,7 @@ ms.collection:
 
 ## See also
 
-- [See the trial playbook: Microsoft Defender for Business](trial-playbook-defender-business.md).
+- [See the trial user guide: Microsoft Defender for Business](trial-playbook-defender-business.md).
 - [Use the setup wizard in Microsoft Defender for Business](mdb-use-wizard.md).
 - [See the setup and configuration process for Defender for Business](mdb-setup-configuration.md).
 - [See how to get help and support for Defender for Business](mdb-get-help.md) (just in case you need help).

@@ -8,7 +8,7 @@ author: msfttracyp
 manager: dansimp
 ms.date: 12/16/2020
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 
 ms.localizationpriority: medium
 search.appverid: 
@@ -16,12 +16,12 @@ search.appverid:
   - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Learn how to use threat investigation and response capabilities to find and investigate malicious email.
 ms.custom: 
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Investigate malicious email that was delivered in Microsoft 365

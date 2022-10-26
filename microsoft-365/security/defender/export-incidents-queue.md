@@ -3,7 +3,8 @@ title: Export incidents queue to CSV files
 description: Learn about the newly introduced Export button to migrate incidents queue-related data to CSV files
 keywords: incident, queue, export, csv
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +16,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-m365-defender
+  - tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 
 # Export incidents queue to CSV files
@@ -44,5 +45,8 @@ Once you export the incidents queue-related data onto the CSV file, you can anal
 For example, for the data on the CSV file, you can apply filters to view the following data:
 - Data regarding how many high-severity incidents you had in the last 30 days.
 - Data regarding who is your most productive analyst.
+
+> [!NOTE]
+> The maximum number of records you can export to a CSV file is 10,000. 
 
 If you have thoughts or suggestions about the new **Export** feature (the **Export** button) for the incident queue, contact Microsoft team or send your feedback through the Microsoft 365 Defender portal.

@@ -13,8 +13,10 @@ ms.collection:
   - M365-collaboration
   - microsoftcloud-financial-services
   - m365-frontline
-  - m365solution-frontline
-  - m365solution-scenario
+  - highpri
+  - m365solution-financialservices
+  - m365solution-overview
+  - highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:

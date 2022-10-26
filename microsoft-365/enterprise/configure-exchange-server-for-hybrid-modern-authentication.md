@@ -6,12 +6,13 @@ manager: scotv
 ms.date: 12/27/2021
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
+- scotvorg
 - M365-security-compliance
 f1.keywords:
 - NOCSH
@@ -62,7 +63,7 @@ Requirements about linked mailboxes to be inserted.
 Since many prerequisites are common for both Skype for Business and Exchange, review [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Do this  *before*  you begin any of the steps in this article.
 
 > [!NOTE]
-> Outlook Web App and Exchange Control Panel does not work with hybrid Modern Authentication.
+> Outlook Web App and Exchange Control Panel do not work with hybrid Modern Authentication.  In addition, publishing Outlook Web App and Exchange Control Panel through Azure AD Application Proxy is unsupported.
 
 ## Add on-premises web service URLs as SPNs in Azure AD
 

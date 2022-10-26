@@ -7,12 +7,16 @@ author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection: 
+- Tier1
+- scotvorg
+- highpri
 - Adm_O365
 - Adm_TOC
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
@@ -58,24 +62,17 @@ Save time by starting your service request online. We'll help you find a solutio
 
 ## Phone support
 
-Use the drop-down menu below to find the number for your country or region.
+In most countries or regions, billing support for Microsoft 365 for business products and services is provided in English from 9 AM-5 PM, Monday through Friday. Local language support varies by country or region.
 
-[!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
+Technical support is provided in English 24 hours a day, 7 days a week, and in some cases, in local languages as noted.
 
-Billing support and Technical support hours (and languages) are listed on each country's page selected from the drop-down.
+>[!div class="nextstepaction"]
+>[Find support phone numbers by country or region](support-contact-info.md)
 
 Admins, have your account details ready when you call.
 
 > [!NOTE]
-> To better protect your organization, we added a PIN-based verification step to our existing phone-based verification process. If you contact us from a number that isn't registered with your organization profile, the Microsoft support representative sends a verification code to the registered email or phone number in your Microsoft 365 admin center profile. You must provide this code to the support representative to grant them access to your organization’s account.
-
-- **In the United States, call 1 800 865 9408.**
-
-- **In Australia, call 1 800 197 503.**
-
-- **In Canada, call 1 800 865 9408.**
-
-- **In the United Kingdom, call 0800 032 6417.**
+> To better protect your organization, we added a PIN-based verification step to our existing phone-based verification process. If you contact us from a number that isn't registered with your organization profile, the Microsoft support representative sends a verification code to the registered email or phone number in your Microsoft 365 admin center profile. You must provide this code to the support representative to grant them access to your organization's account.
 
 ## Small business support with Business Assist
 

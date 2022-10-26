@@ -6,9 +6,10 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-collaboration
 - m365solution-collabgovernance
 ms.custom: 
@@ -120,7 +121,7 @@ While deletion of the group will also result in the deletion of any associated f
 
 ## OneNote
 
-The OneNote notebook included in a group is stored in the Site Assets library within the associated SharePoint site. While notebook files can sometimes be spread across multiple individual files, they can't be copied and opened independently. Instead, the contents of the OneNote notebook must be moved or exported using OneNote 2016.
+The OneNote notebook included in a group is stored in the Site Assets library within the associated SharePoint site. While notebook files can sometimes be spread across multiple individual files, they can't be copied and opened independently. Instead, the contents of the OneNote notebook must be moved or exported using the OneNote desktop client.
 
 **Move pages and sections to another notebook**
 
@@ -184,6 +185,7 @@ If the flow doesn't need to continue operating but it needs to be preserved for 
 ## Power BI
 
 Power BI data and workspaces can operate independently from groups and teams and like other workloads offer different ways of being off-boarded.
+Classic workspaces in Power BI are associated with a Microsoft 365 Group, whereas modern workspaces are not - and can merely share their content with the group (similar to a flow).
 
 **Copy reports to another workspace**
 
@@ -232,7 +234,7 @@ Additionally, files can be [moved to another location within SharePoint such as 
 
 Data stored within SharePoint lists can be [exported to an Excel spreadsheet](https://support.office.com/article/bfb2ea48-6118-4fa9-abb6-cced9424e5d9), and imported again to a list in another site.
 
-Alternatively, a third-party tool can be used to migrate the list between sites in order to retain function, list views, formatting, and other attributes.
+Alternatively, Power Automate or a third-party tool can be used to migrate the list between sites in order to retain function, list views, formatting, and other attributes.
 
 **“Export” wiki files**
 

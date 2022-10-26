@@ -10,9 +10,11 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- highpri
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
@@ -23,6 +25,8 @@ description: "Set Microsoft Purview Compliance Manager user permissions and role
 # Get started with Compliance Manager
 
 **In this article:** This article helps you set up Compliance Manager. Learn how to **access** Compliance Manager, **set roles and permissions**, and configure **automatic testing of improvement actions**. Walk through **your Compliance Manager dashboard** and understand the main pages: the improvement actions page, the solutions page, the assessments page, and the assessment templates page.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Who can access Compliance Manager
 
@@ -83,8 +87,7 @@ The table below shows the functions allowed by each role in Compliance Manager. 
 | **Read but not edit data**| Compliance Manager Reader  | Azure AD Global reader, Security reader |
 | **Edit data**| Compliance Manager Contribution | Compliance Administrator |
 | **Edit test results**| Compliance Manager Assessor | Compliance Administrator |
-| **Manage assessments, and template and tenant data**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  |
-| **Assign users**| Global Administrator | Global Administrator |
+| **Manage assessments, templates, and tenant data; assign improvement actions**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  |
 
 ## Start a premium assessments trial
 
@@ -151,7 +154,7 @@ The global administrator for your organization can change the settings for autom
 
 ### Manage user history
 
-The **Manage user history** settings help you quickly identify which users have worked with improvement actions in Compliance Manager. The identifiable user data associated with improvement actions includes any implementation and testing work done, documents they uploaded, and any notes they entered. Understanding and retrieving this type of data may be necessary for your organization’s own compliance needs.
+The **Manage user history** settings help you quickly identify which users have worked with improvement actions in Compliance Manager. The identifiable user data associated with improvement actions includes the status of the improvement actions and  documents they uploaded. Understanding and retrieving this type of data may be necessary for your organization’s own compliance needs.
 
 The user history settings also allow you to reassign all improvement actions from one user to another.
 
@@ -244,7 +247,7 @@ The Compliance Manager dashboard is designed to provide you an at-a-glance view 
 
 Your compliance score is featured prominently at the top. It shows a percentage based on points achievable for completing improvement actions that address key data protection standards and regulations. Points from [Microsoft actions](compliance-manager-assessments.md#microsoft-actions-tab), which are managed my Microsoft, also count toward your compliance score.
 
-When you come to Compliance Manager for the first time, your initial score is based on the [Microsoft 365 data protection baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment). This baseline assessment, which is available to all organizations, is a set of controls that includes common industry regulations and standards. Compliance Manager scans your existing Microsoft 365 solutions and gives you an initial assessment based on your current privacy and security settings. As you add assessments that are relevant to your organization, your score becomes more meaningful for you.
+When you come to Compliance Manager for the first time, your initial score is based on the [Microsoft 365 data protection baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment). This baseline assessment, which is available to all organizations, is a set of controls that includes common industry regulations and standards. Compliance Manager checks your existing Microsoft 365 solutions and gives you an initial assessment based on your current privacy and security settings. As you add assessments that are relevant to your organization, your score becomes more meaningful for you.
 
 **Learn more:** [Understand how your compliance score is calculated](compliance-score-calculation.md).
 

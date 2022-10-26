@@ -2,8 +2,8 @@
 title: Configure automated investigation and remediation capabilities
 description: Set up your automated investigation and remediation capabilities in Microsoft Defender for Endpoint.
 keywords: configure, setup, automated, investigation, detection, alerts, remediation, response
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,12 @@ ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
+search.appverid: met150
 ---
 
 # Configure automated investigation and remediation capabilities in Microsoft Defender for Endpoint
@@ -32,6 +35,9 @@ To configure automated investigation and remediation:
 
 1. [Turn on the features](#turn-on-automated-investigation-and-remediation); and
 2. [Set up device groups](#set-up-device-groups).
+
+> [!NOTE]
+> - Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## Turn on automated investigation and remediation
 
