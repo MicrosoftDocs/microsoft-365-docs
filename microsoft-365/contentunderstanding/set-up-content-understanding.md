@@ -96,8 +96,6 @@ Microsoft Syntex is offering a limited-time free preview for pay-as-you-go docum
 
     If you have multiple Power Platform environments configured, you can choose which one you want to use with for document processing. (This option will not appear if you only have one environment.)
 
-    ![Configure document processing Power Platform options.](../media/content-understanding/setup-power-platform-env.png)
-
     For **Power Platform environment**, you can select:
     - **Use the default environment** to use your default Power Platform environment.
     - **Use a custom environment** to use a custom environment. Choose the environment that you want to use from the list. ([See the requirements for a custom environment](/microsoft-365/contentunderstanding/set-up-content-understanding#requirements)).
