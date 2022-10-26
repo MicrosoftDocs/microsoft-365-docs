@@ -95,22 +95,22 @@ For a detailed list of supported Linux distros, see [System requirements](micros
 	
 - To identify Microsoft Defender for Endpoint on Linux processes and paths that should be excluded in the non-Microsoft antivirus product, run `systemctl status -l mdatp`.
 
-Exclude the following processes from the non-Microsoft antivirus product:
+    Exclude the following processes from the non-Microsoft antivirus product:
 
 
-`wdavdaemon`<br>
-`crashpad_handler`<br>
-`mdatp_audis_plugin`<br>
-`telemetryd_v2`<br>
+    `wdavdaemon`<br>
+    `crashpad_handler`<br>
+    `mdatp_audis_plugin`<br>
+    `telemetryd_v2`<br>
 
-> [!NOTE]
-> (*): The processes are in /opt/microsoft/mdatp/sbin/.
+    > [!NOTE]
+    > (*): The processes are in /opt/microsoft/mdatp/sbin/.
 
-Exclude the following paths from the non-Microsoft antivirus product:
+    Exclude the following paths from the non-Microsoft antivirus product:
 
-`/opt/microsoft/mdatp/`<br>
-`/var/opt/microsoft/mdatp/`<br>
-`/etc/opt/microsoft/mdatp/`<br>
+    `/opt/microsoft/mdatp/`<br>
+    `/var/opt/microsoft/mdatp/`<br>
+    `/etc/opt/microsoft/mdatp/`<br>
 
  
 
@@ -257,7 +257,7 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
 
 
 
-    ```powershell
+   ```powershell
     {
        "antivirusEngine":{
           "enforcementLevel":"real_time",
