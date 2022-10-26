@@ -29,8 +29,6 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 
 ## October 2022
 
-For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
-
 ### App protection policies
 
 Managed Service Providers (MSPs) can now deploy app protection policies for their managed tenants from within the default baseline in Microsoft 365 Lighthouse, which allows greater protection of the tenants' company data. These policies use Mobile Application Management (MAM) on iOS and Android devices to provide the most secure protection for company data.
