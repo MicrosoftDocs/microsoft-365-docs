@@ -26,19 +26,17 @@ Capability Summary: Microsoft Viva Connections is your gateway to a modern emplo
 
 ## Data Residency commitments available
 
-### Option 1: Advanced Data Residency add-on
+### Advanced Data Residency add-on
 
 Required Conditions:
 
-1. Tenant has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
-1. Tenant has a valid Advanced Data Residency subscription for all users in the tenant.
+1. _Tenant_ has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_.
 1. The Viva Connections subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
 **Commitment:**
 
-The following customer data will be stored in the related _Geography_:
-
-- The Dashboard and Feed can have content sourced from SharePoint Online, Exchange Online and Microsoft Teams. All data sourced from these services that are covered by their data residency commitments will be stored in the relevant _Geography_. Please refer to [Exchange Online](m365-dr-workload-exo.md), [SharePoint Online](m365-dr-workload-spo.md) and [Microsoft Teams](m365-dr-workload-teams.md) workload data residency pages for more details.
+Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for Viva Connections. 
 
 ### Migration
 
@@ -46,4 +44,4 @@ Data storage is maintained within Exchange Online, SharePoint Online and Microso
 
 ### How can I determine customer data location?
 
-We are in the process of updating the actual data location in Tenant Admin Center.  When this change is complete you will be able to see the actual data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Until that change is visible, you can view the Exchange Online, SharePoint Online and Microsoft Teams data location information in order to understand where your committed data is stored for this service.
+We are in the process of updating the actual data location in _Tenant_ Admin Center.  When this change is complete you will be able to see the actual data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Until that change is visible, you can view the Exchange Online, SharePoint Online and Microsoft Teams data location information in order to understand where your committed data is stored for this service.
