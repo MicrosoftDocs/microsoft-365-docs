@@ -238,7 +238,7 @@ For each of the following domain settings, you can enter up to 500 domains:
  
 ### Sensitive info types exclusion
 
-By excluding sensitive info types, you can specify which types map to indicators and triggers involving file-related activities for Endpoint, SharePoint, Teams, OneDrive, and Exchange. For those files that contain any sensitive info types identified here, they will be risk scored but not shown as activities involving content related to sensitive info types. For a complete list, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
+By excluding sensitive info types, you can specify which types map to indicators and triggers involving file-related activities for Endpoint, SharePoint, Teams, OneDrive, and Exchange. For those files that contain any sensitive info types identified here, they will be risk scored but not shown as activities involving content related to sensitive info types. You may want to consider excluding non-sensitive info types for certain indicators that focus on identifying specific sensitive activity. For a complete list, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
 
 You can select the sensitive info types to be excluded from the list of all available (out-of-box and custom) types available in the tenant. Insider risk management excludes several sensitive info types by default, such as ABA Routing Number. You can choose up to 100 sensitive info types to be excluded.
 
