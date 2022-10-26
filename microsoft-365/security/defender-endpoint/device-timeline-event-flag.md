@@ -41,19 +41,23 @@ The Defender for Endpoint device timeline helps you research and investigate ano
 
     :::image type="content" source="images/event-side-panel.png" alt-text="Screenshot of the event side panel." lightbox="images/event-side-panel.png":::
 
+    :::image type="content" source="images/new-timeline-side-panel.png" alt-text="Screenshot of the event side panel." lightbox="images/new-timeline-side-panel.png":::
+
 - All MITRE techniques are shown when there’s more than 1 related technique:
 
-    :::image type="content" source="images/all-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques. " lightbox="images/all-mitre-techniques.png":::
+    :::image type="content" source="images/new-timeline-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques. " lightbox="images/new-timeline-mitre-techniques.png":::
 
 - Timeline events are linked to the new user page:
 
-    :::image type="content" source="images/timeline-events-new-user-page.png" alt-text="Screenshot of timeline events linked to the new user page." lightbox="images/timeline-events-new-user-page.png":::
+    :::image type="content" source="images/new-timeline-user.png" alt-text="Screenshot of timeline events linked to the new user page." lightbox="images/new-timeline-user.png":::
 
-    :::image type="content" source="images/timeline-events-new-user-page-2.png" alt-text="Screenshot of timeline events linked to the new user page 2." lightbox="images/timeline-events-new-user-page-2.png":::
+    :::image type="content" source="images/new-timeline-user-details.png" alt-text="Screenshot of timeline events linked to the new user page 2." lightbox="images/new-timeline-user-details.png":::
 
 - Defined filters are now visible at the top of the timeline: 
 
-    :::image type="content" source="images/defined-filters.png" alt-text="Screenshot of defined filters." lightbox="images/defined-filters.png":::
+    :::image type="content" source="images/new-timeline-filter.png" alt-text="Screenshot of defined filters." lightbox="images/new-timeline-filter.png":::
+
+    :::image type="content" source="images/new-timeline-customize-columns.png" alt-text="Screenshot of defined filters." lightbox="images/new-timeline-customize-columns.png":::
 
 ## Timeline event flags
 
