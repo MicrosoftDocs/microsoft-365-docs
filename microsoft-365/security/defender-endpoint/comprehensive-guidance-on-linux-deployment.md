@@ -30,7 +30,6 @@ For information about Microsoft Defender for Endpoint capabilities, see [Advance
 
 The following list captures the actions you'll take to deploy Microsoft Defender for Endpoint on Linux:
 
-
 - Work with your Firewall, Proxy, and Networking admin to add the Microsoft Defender for Endpoint URLs to the allowed list, and prevent it from being SSL inspected.
 - Run a centralized scan to capture current resource utilization across the environment, such as, check available disk space in all mounted partitions, capture memory usage, capture a process listing that includes availability, and used CPU percentages.
 - Exclude Microsoft Defender for Endpoint on Linux from your third-party antivirus product.
@@ -81,8 +80,6 @@ The following are the supported Linux servers:
 
 For a detailed list of supported Linux distros, see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements).
 
-<<<<<<< HEAD
-=======
 ### Additional guidance
 
 - Depending on the non-Microsoft antivirus running on your Linux servers, you may still be able to run Microsoft Defender for Endpoint on Linux. If the antivirus runs FANotify, it needs to be uninstalled.
@@ -99,12 +96,10 @@ For a detailed list of supported Linux distros, see [System requirements](micros
 
     Exclude the following processes from the non-Microsoft antivirus product:
 
-
     `wdavdaemon`<br>
     `crashpad_handler`<br>
     `mdatp_audis_plugin`<br>
     `telemetryd_v2`<br>
-
 
     Exclude the following paths from the non-Microsoft antivirus product:
 
@@ -112,11 +107,6 @@ For a detailed list of supported Linux distros, see [System requirements](micros
     `/var/opt/microsoft/mdatp/`<br>
     `/etc/opt/microsoft/mdatp/`<br>
 
- 
-
-
-
->>>>>>> 8a0946c2600613d251694e60d193a2f069336d83
 ## Network connectivity of Microsoft Defender for Endpoint
 
 The complete this step, you may need to engage with following in your organization:
@@ -127,11 +117,7 @@ The complete this step, you may need to engage with following in your organizati
 
 Here's how to check the network connectivity of Microsoft Defender for Endpoint:
 
-<<<<<<< HEAD
 1. See [Allow URL for the Microsoft Defender for Endpoint traffic](#allow-url-for-the-microsoft-defender-for-endpoint-traffic) for the URLs that are allowed for the Microsoft Defender for Endpoint traffic.
-=======
-1. The URLs that are allowed for the Microsoft Defender for Endpoint traffic. For more information, see [Allow URL for the Microsoft Defender for Endpoint traffic](#allow-urls-for-the-microsoft-defender-for-endpoint-traffic).
->>>>>>> 8a0946c2600613d251694e60d193a2f069336d83
 2. If the Linux servers are behind a proxy, then set the proxy settings. For more information, see [Set up proxy settings](#set-up-proxy-settings).
 3. Verify that the traffic is not being inspected by SSL inspection (TLS inspection). This is the most common network related issue when setting up Microsoft Defender Endpoint, see [Verify SSL inspection is not being performed on the network traffic](#verify-ssl-inspection-is-not-being-performed-on-the-network-traffic).
 
@@ -255,19 +241,8 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
     ```   
     **Recommendations**
 
-<<<<<<< HEAD
    ```javascript
           {
-=======
-    ```
-
-    **Recommendations**
-
-
-
-   ```powershell
-    {
->>>>>>> 8a0946c2600613d251694e60d193a2f069336d83
        "antivirusEngine":{
           "enforcementLevel":"real_time",
           "scanAfterDefinitionUpdate":true,
@@ -333,31 +308,18 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
     }
       ```
 
-<<<<<<< HEAD
  > [!NOTE]
  >  In Linux (and macOS) we support paths where it starts with a wildcard.
 
 The following table describes the settings that are recommended as part of `mdatp_managed.json` file:
-=======
-    > [!NOTE]
-    > (*): In Linux (and macOS) paths that starts with a wildcard is supported.
-
-    The following table describes the settings that are recommended as part of mdatp_managed.json file:
->>>>>>> 8a0946c2600613d251694e60d193a2f069336d83
 
     |Settings|Comments|
     |---|---|
     |`exclusionsMergePolicy` being set to `admin_only` |Prevents the local admin from being able to add the local exclusions (via bash (the command prompt)).|
     |`disallowedThreatActions` being set to `allow and restore`|Prevents the local admin from being able to restore a quarantined item (via bash (the command prompt)).|
     |`threatTypeSettingsMergePolicy` being set to `admin_only`|Prevents the local admin from being able to add False Positives or True Positives that are benign to the threat types (via bash (the command prompt)).|
-
-<<<<<<< HEAD
 ]- Save the setting as `mdatp_managed.json` file.
 - Copy the setting to this path `/etc/opt/microsoft/mdatp/managed/`. For more information, see [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).
-=======
-    - Save the setting as `mdatp_managed.json` file.
-    - Copy the setting to this path `/etc/opt/microsoft/mdatp/managed/`. For more information, see [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).
->>>>>>> 8a0946c2600613d251694e60d193a2f069336d83
 
 ## High CPU utilization by ISVs, Linux apps, or scripts
 
@@ -548,38 +510,6 @@ To ensure that the device is correctly onboarded and reported to the service, ru
 - [Collect diagnostic information](linux-resources.md#collect-diagnostic-information).
 - [Uninstall](linux-resources.md#uninstall).
 
-<<<<<<< HEAD
-## FAQs
-
-**I already have a third-party antivirus running on my Linux servers. Can I run Microsoft Defender for Endpoint on Linux?**<br> 
-It depends. If the third-party antivirus runs FANotify, it needs to be uninstalled.
- 
-**How can I find out if there is a third-party antivirus that is running FANotify?**<br>
-When you run `mdatp` health, then in the conficting_applications row, you'll need to uninstall the third-party antivirus.
-
-**What happens if I don’t uninstall the third-party antivirus that uses FANotify**<br>
-You can experience unexpected behaviors such as performance issues, and/or stability issues, for example, systems hanging, and/or kernel panics (akin to a blue screen in Windows).
-
-**What are the processes and paths for Microsoft Defender for Endpoint on Linux that you should exclude in the third-party antivirus?**<br>
-Running `systemctl status -l mdatp` shows the processes and paths.
-
-The following are the processes to exclude from the third-party antivirus: 
-
-`wdavdaemon`<br>
-`crashpad_handler`<br>
-`mdatp_audis_plugin`<br>
-`telemetryd_v2`<br>
-
-> [!NOTE]
-> The processes are in `/opt/microsoft/mdatp/sbin/`.
-
-The following are the paths to exclude from the third-party antivirus:
-
-`/opt/microsoft/mdatp/`<br>
-`/var/opt/microsoft/mdatp/`<br>
-`/etc/opt/microsoft/mdatp/`<br>
-=======
->>>>>>> 8a0946c2600613d251694e60d193a2f069336d83
 
 ## Advanced Microsoft Defender for Endpoint capabilities
 
