@@ -124,11 +124,6 @@ To view only either events or techniques, select **Filters** from the device tim
 
 :::image type="content" source="images/device-timeline-filters.png" alt-text="The Filters pane" lightbox="images/device-timeline-filters.png":::
 
-### See also
-
-- [View and organize the Devices list](machines-view-overview.md)
-
-
 ## Timeline event flags
 
 Event flags in the Defender for Endpoint device timeline help you filter and organize specific events when you're investigating potential attacks.
