@@ -52,7 +52,7 @@ landingContent:
             url: https://aka.ms/MDB-GetStartedGuide
           - text: Get Defender for Business
             url: get-defender-business.md
-          - text: Use the User trial guide
+          - text: See the trial user guide
             url: trial-playbook-defender-business.md
           - text: Use the setup wizard
             url: mdb-use-wizard.md
