@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection: 
+- Tier1
 - scotvorg
 - highpri
 - Adm_O365

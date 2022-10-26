@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: "Set buffer time before or after an appointment in Microsoft Bookings to allow time for cleaning up or resetting equipment."
