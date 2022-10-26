@@ -210,7 +210,7 @@ The Activity explorer tab on the DLP page has the *Activity* filter preset to *D
 ![screenshot of the DLPRuleMatch scoped activity explorer.](../media/dlp-activity-explorer.png)
 
 > [!TIP]
-> If you want to see the text (surrounding context) that surrounds matched content (like a credit card number), enable [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection). When you open a *DLPRuleMatch* event, select the link under **Sensitive info type**. The supporting text will be in the **Surrounding context** column.
+> If you want to see the text (surrounding context) that surrounds matched content, like a credit card number, enable [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection). When you open a *DLPRuleMatch* event, select the link under **Sensitive info type**. The supporting text will be in the **Surrounding context** column.
 
 For more information, see [Get started with activity explorer](data-classification-activity-explorer.md)
 
