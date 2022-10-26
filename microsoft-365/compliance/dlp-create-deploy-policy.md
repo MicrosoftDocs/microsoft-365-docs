@@ -259,7 +259,6 @@ Actions are what a policy does in response to user activities on sensitive items
 
 - **Block**: The user activity is blocked no matter what. You can audit the event, raise alerts and notifications.
 
-
 #### Policy scope
 
 Every policy is scoped to one or more locations, such as Exchange, SharePoint Online, Teams, and Devices. By default, when you select a location, all instances of that location fall under the scope and none are excluded. You can further refine which instances of the location (such as sites, groups, accounts, distribution groups, mailboxes, and devices) that the policy is applied to by configuring the include/exclude options for the location. To learn more about your include/exclude scoping options, see, [Locations](dlp-policy-reference.md#locations).
