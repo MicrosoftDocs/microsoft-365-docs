@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ROBOTS: NO INDEX, NO FOLLOW
 description: "Use Bookings with me to let others schedule meetings with you in Outlook."

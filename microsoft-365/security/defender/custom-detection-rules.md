@@ -20,7 +20,7 @@ ms.collection:
   - m365-security
   - m365initiative-m365-defender
   - tier2
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Create and manage custom detections rules

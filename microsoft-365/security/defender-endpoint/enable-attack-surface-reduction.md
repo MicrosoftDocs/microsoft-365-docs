@@ -305,6 +305,7 @@ Example:
 
    > [!WARNING]
    > Do not use quotes as they are not supported for either the **Value name** column or the **Value** column.
+   > The rule ID should not have any leading or trailing spaces.
 
 ### PowerShell
 

@@ -15,6 +15,7 @@ search.appverid:
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - purview-compliance
+- tier3
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
