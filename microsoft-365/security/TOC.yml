@@ -30,8 +30,16 @@
           href: ./office-365-security/microsoft-365-continuous-access-evaluation.md
     - name: Strengthen your security posture with Microsoft 365 Defender
       items: 
-        - name: Strengthen your security posture
+        - name: Overview
           href: security-posture-solution-overview.md
+        - name:  Step 1. Configure capabilities
+          href: security-posture-solution-overview.md#Configure-capabilities
+        - name: Step 2. Assess and protect your assets
+        - href: 
+        - name: Step 3. Improve your security posture
+        - href: 
+        - name: Step 4. Maintain a secure posture
+        - href: 
     - name: Microsoft 365 Defender docs
       items: 
        - name: Microsoft 365 Defender
