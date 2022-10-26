@@ -81,6 +81,42 @@ The following are the supported Linux servers:
 
 For a detailed list of supported Linux distros, see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements).
 
+<<<<<<< HEAD
+=======
+### Additional guidance
+
+- Depending on the non-Microsoft antivirus running on your Linux servers, you may still be able to run Microsoft Defender for Endpoint on Linux. If the antivirus runs FANotify, it needs to be uninstalled.
+	
+- To check if there is a non-Microsoft antivirus that is running FANotify, you can run `mdatp health`, then check the result:
+		
+    :::image type="content" source="images/mdatp-health-result.png" alt-text="Image of mdatp health result" :::
+		
+	Under "conflicting_applications", if you see a result other than "unavailable", then you'll need to uninstall the non-Microsoft antivirus. 
+
+- If you don't uninstall the non-Microsoft antivirus product, you may encounter unexpected behaviors such as performance issues, stability issues such as systems hanging, or kernel panics.
+	
+- To identify Microsoft Defender for Endpoint on Linux processes and paths that should be excluded in the non-Microsoft antivirus product, run `systemctl status -l mdatp`.
+
+    Exclude the following processes from the non-Microsoft antivirus product:
+
+
+    `wdavdaemon`<br>
+    `crashpad_handler`<br>
+    `mdatp_audis_plugin`<br>
+    `telemetryd_v2`<br>
+
+
+    Exclude the following paths from the non-Microsoft antivirus product:
+
+    `/opt/microsoft/mdatp/`<br>
+    `/var/opt/microsoft/mdatp/`<br>
+    `/etc/opt/microsoft/mdatp/`<br>
+
+ 
+
+
+
+>>>>>>> 8a0946c2600613d251694e60d193a2f069336d83
 ## Network connectivity of Microsoft Defender for Endpoint
 
 The complete this step, you may need to engage with following in your organization:
@@ -91,7 +127,11 @@ The complete this step, you may need to engage with following in your organizati
 
 Here's how to check the network connectivity of Microsoft Defender for Endpoint:
 
+<<<<<<< HEAD
 1. See [Allow URL for the Microsoft Defender for Endpoint traffic](#allow-url-for-the-microsoft-defender-for-endpoint-traffic) for the URLs that are allowed for the Microsoft Defender for Endpoint traffic.
+=======
+1. The URLs that are allowed for the Microsoft Defender for Endpoint traffic. For more information, see [Allow URL for the Microsoft Defender for Endpoint traffic](#allow-urls-for-the-microsoft-defender-for-endpoint-traffic).
+>>>>>>> 8a0946c2600613d251694e60d193a2f069336d83
 2. If the Linux servers are behind a proxy, then set the proxy settings. For more information, see [Set up proxy settings](#set-up-proxy-settings).
 3. Verify that the traffic is not being inspected by SSL inspection (TLS inspection). This is the most common network related issue when setting up Microsoft Defender Endpoint, see [Verify SSL inspection is not being performed on the network traffic](#verify-ssl-inspection-is-not-being-performed-on-the-network-traffic).
 
@@ -215,8 +255,19 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
     ```   
     **Recommendations**
 
+<<<<<<< HEAD
    ```javascript
           {
+=======
+    ```
+
+    **Recommendations**
+
+
+
+   ```powershell
+    {
+>>>>>>> 8a0946c2600613d251694e60d193a2f069336d83
        "antivirusEngine":{
           "enforcementLevel":"real_time",
           "scanAfterDefinitionUpdate":true,
@@ -282,19 +333,31 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
     }
       ```
 
+<<<<<<< HEAD
  > [!NOTE]
  >  In Linux (and macOS) we support paths where it starts with a wildcard.
 
 The following table describes the settings that are recommended as part of `mdatp_managed.json` file:
+=======
+    > [!NOTE]
+    > (*): In Linux (and macOS) paths that starts with a wildcard is supported.
 
-|Settings|Comments|
-|---|---|
-|`exclusionsMergePolicy` being set to `admin_only` |Prevents the local admin from being able to add the local exclusions (via bash (the command prompt)).|
-|`disallowedThreatActions` being set to `allow and restore`|Prevents the local admin from being able to restore a quarantined item (via bash (the command prompt)).|
-|`threatTypeSettingsMergePolicy` being set to `admin_only`|Prevents the local admin from being able to add False Positives or True Positives that are benign to the threat types (via bash (the command prompt)).|
+    The following table describes the settings that are recommended as part of mdatp_managed.json file:
+>>>>>>> 8a0946c2600613d251694e60d193a2f069336d83
 
+    |Settings|Comments|
+    |---|---|
+    |`exclusionsMergePolicy` being set to `admin_only` |Prevents the local admin from being able to add the local exclusions (via bash (the command prompt)).|
+    |`disallowedThreatActions` being set to `allow and restore`|Prevents the local admin from being able to restore a quarantined item (via bash (the command prompt)).|
+    |`threatTypeSettingsMergePolicy` being set to `admin_only`|Prevents the local admin from being able to add False Positives or True Positives that are benign to the threat types (via bash (the command prompt)).|
+
+<<<<<<< HEAD
 ]- Save the setting as `mdatp_managed.json` file.
 - Copy the setting to this path `/etc/opt/microsoft/mdatp/managed/`. For more information, see [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).
+=======
+    - Save the setting as `mdatp_managed.json` file.
+    - Copy the setting to this path `/etc/opt/microsoft/mdatp/managed/`. For more information, see [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).
+>>>>>>> 8a0946c2600613d251694e60d193a2f069336d83
 
 ## High CPU utilization by ISVs, Linux apps, or scripts
 
@@ -485,6 +548,7 @@ To ensure that the device is correctly onboarded and reported to the service, ru
 - [Collect diagnostic information](linux-resources.md#collect-diagnostic-information).
 - [Uninstall](linux-resources.md#uninstall).
 
+<<<<<<< HEAD
 ## FAQs
 
 **I already have a third-party antivirus running on my Linux servers. Can I run Microsoft Defender for Endpoint on Linux?**<br> 
@@ -514,6 +578,8 @@ The following are the paths to exclude from the third-party antivirus:
 `/opt/microsoft/mdatp/`<br>
 `/var/opt/microsoft/mdatp/`<br>
 `/etc/opt/microsoft/mdatp/`<br>
+=======
+>>>>>>> 8a0946c2600613d251694e60d193a2f069336d83
 
 ## Advanced Microsoft Defender for Endpoint capabilities
 
