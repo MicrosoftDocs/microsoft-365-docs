@@ -56,7 +56,7 @@ Once the Storage account is created you will need to:
 4. In the **Add new Streaming API settings** flyout that appears, configure the following settings:
    1. **Name**: Choose a name for your new settings.
    2. Select **Forward events to Azure Storage**.
-   3. To display the Azure Resource Manager resource ID for a storage account in the Azure portal, follow these steps:
+4. To display the Azure Resource Manager resource ID for a storage account in the Azure portal, follow these steps:
 
    1. Navigate to your storage account in the Azure portal.
    2. On the **Overview** page, in the **Essentials** section, select the **JSON View** link.
