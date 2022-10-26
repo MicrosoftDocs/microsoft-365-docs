@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: none
-ms.date: 10/12/2022
+ms.date: 10/26/2022
 ms.collection: 
 - SMB
 - m365-security
@@ -27,6 +27,7 @@ Microsoft Defender for Business servers is a an add-on to Defender for Business.
 > - In order to add on Microsoft Defender for Business servers, you'll need at least one paid license for [Microsoft 365 Business Premium](../../business-premium/index.md) or [Defender for Business](mdb-overview.md) (standalone). 
 > - You'll need one Microsoft Defender for Business servers license per server instance.
 > - There's a limit of 60 Microsoft Defender for Business servers licenses per subscription to Microsoft 365 Business Premium or Defender for Business.
+> - Alternately, you could use [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction) to onboard your servers; however, your Defender for Business experience could change when you add an enterprise plan, such as Defender for Servers Plan 1 or Plan 2. To learn more, see [What happens if I have a mix of Microsoft endpoint security subscriptions?](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions) and [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
 ## Get Microsoft Defender for Business servers
 
@@ -35,7 +36,7 @@ Use one of the following procedures to get Microsoft Defender for Business serve
 | Scenario  | Procedure  |
 |---------|---------|
 | You currently have [Defender for Business](mdb-overview.md) or [Microsoft 365 Business Premium](../../business-premium/index.md), and you want to add on Microsoft Defender for Business servers.     | <ol><li>Go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)) and sign in.</li><li>In the navigation pane, choose **Billing** > **Purchase services**.</li><li>In the list of results, select the **Details** box for **Microsoft Defender for Business servers**.</li><li>Review the information, and complete the purchase process. </li></ol>*You'll need one Microsoft Defender for Business servers license for each instance of Windows Server or Linux.*        |
-| You do not have Defender for Business or Microsoft 365 Business Premium yet.     | <ol><li>Go to one of the following product pages: <ul><li>[Microsoft Defender for Business](https://aka.ms/DefenderforBusiness)</li><li>[Microsoft 365 for business](https://www.microsoft.com/en-us/microsoft-365/business-h)</li></ul></li><li>Review the information, and start your trial or paid subscription today.</li></ol> |
+| You do not have either Defender for Business or Microsoft 365 Business Premium yet.     | <ol><li>Go to one of the following product pages: <ul><li>[Microsoft Defender for Business](https://aka.ms/DefenderforBusiness)</li><li>[Microsoft 365 for business](https://www.microsoft.com/en-us/microsoft-365/business-h)</li></ul></li><li>Review the information, and start your trial or paid subscription today.</li></ol> |
 | You want to offboard one or more devices, such as servers. | See [Offboard a device from Microsoft Defender for Business](mdb-offboard-devices.md). |
 
 ## Next steps
