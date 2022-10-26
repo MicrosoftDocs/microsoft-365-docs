@@ -63,7 +63,7 @@ Data from DLP can be viewed in [Activity explorer](data-classification-activity-
 - Security administrator
 - Compliance data administrator
 
-#### Roles and Role Groups in preview<!-- Check these -->
+#### Roles and Role Groups
 
 There are roles and role groups that you can use to fine tune your access controls.
 
@@ -236,7 +236,7 @@ There are three axes you can use to control the policy deployment process, the s
 State is the primary control you'll use to roll out a policy. When you finished creating your policy, you set the state of the policy to **Keep it off**. You should leave it in this state while you're working on the policy configuration and until you get a final review and sign off. The state can be set to:
 
 - **Test it out first**: No policy actions are enforced, events are audited. While in this state, you can monitor the impact of the policy in the DLP **Alert** console and the DLP **Activity explorer** console.
-- **Test it out first and show policy tips while in test mode**: No actions are enforced, but users will receive policy tips to raise their awareness and educate them.
+- **Test it out first and show policy tips while in test mode**: No actions are enforced, but users will receive policy tips and notification emails to raise their awareness and educate them.
 - **Turn it on right away**: This is full enforcement mode. 
 - **Keep it off**: The policy is completely inactive. Use this state while developing and reviewing your policy before deployment.
 
@@ -244,11 +244,19 @@ You can change the state of a policy at any time.
 
 #### Actions
 
-Actions are what a policy does in response to user activities on sensitive items. Because you can change these at any time, you can start with the least impactful, *Allow*, gather and review the audit data, and use it to tune the policy before moving to more restrictive actions.
+Actions are what a policy does in response to user activities on sensitive items. Because you can change these at any time, you can start with the least impactful, *Allow* (for devices) and **Audit only** (for all other locations), gather and review the audit data, and use it to tune the policy before moving to more restrictive actions.
 
 - **Allow**: The user activity is allowed to occur, so no business processes are impacted. You'll get audit data and there aren't any user notifications or alerts.
+
+> [!NOTE]
+> The **Allow** action is only available for policies that are scoped to the **Devices** location.
+
 - **Audit only**: The user activity is allowed to occur, so no business processes are impacted. You'll get audit data and you can add notifications and alerts to raise awareness and train your users to know that what they're doing is a risky behavior. If your organization intends to enforce more restrictive actions later on, you can tell your users that too.
 - **Block with override**: The user activity is blocked by default. You can audit the event, raise alerts and notifications. This will impact the business process, but your users will be given the option to override the block and provide a reason for the override. Because you get direct feedback from your users, this action can help you identify false positive matches, which you can use to further tune the policy. 
+
+> [!NOTE]
+> For Exchange online and SharePoint Online, overrides are configured in the user notification section.
+
 - **Block**: The user activity is blocked no matter what. You can audit the event, raise alerts and notifications.
 
 
