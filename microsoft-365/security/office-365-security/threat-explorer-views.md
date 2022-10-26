@@ -110,7 +110,7 @@ Select an item in the list to view additional details.
 
 ## Email > All email
 
-To view this report, in Explorer, choose **View** \> **Email** \> **All mail**. This views shows an all-up view of email activity, including email identified as malicious due to phishing or malware, as well all non-malicious mail (normal email, spam, and bulk mail).
+To view this report, in Explorer, choose **View** \> **Email** \> **All mail**. This view shows an all-up view of email activity, including email identified as malicious due to phishing or malware, as well all non-malicious mail (normal email, spam, and bulk mail).
 
 > [!NOTE]
 > If you get an error that reads **Too much data to display**, add a filter and, if necessary, narrow the date range you're viewing.
