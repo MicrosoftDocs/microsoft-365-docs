@@ -46,7 +46,7 @@ Offboard device from Defender for Endpoint.
   [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 > [!NOTE]
-> This API is supported on Windows 11, Windows 10, version 1703 and later, or Windows Server 2019 and later.
+> This API is supported on Windows 11, Windows 10, version 1703 and later, or Windows Server 2019 and later. And on Windows Server 2012R2 and Windows Server 2016 running unified agent.
 >
 > This API is not supported on MacOS or Linux devices.
 
