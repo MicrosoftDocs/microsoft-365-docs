@@ -48,7 +48,7 @@ The 4 phases are described in the following table with the steps for each phase 
 
 |Phase|Steps|
 |---|---|
-|[1 - Configure capabilities](#1-configure-capabilities)|<ol><li>[1. Configure device discovery](strengthen-security-posture-configure-capabilities#11-configure-device-discovery)</li><li>[2. Configure ASR in audit mode](strengthen-security-posture-configure-capabilities#12-configure-asr-in-audit-mode)</li><li> [3. Configure Microsoft Defender for Identity](strengthen-security-posture-configure-capabilities#13-configure-microsoft-defender-for-identity)</li></ol>|
+|[1 - Configure capabilities](#1-configure-capabilities)|<ol><li>[1. Configure device discovery](/strengthen-security-posture-configure-capabilities.md#11-configure-device-discovery)</li><li>[2. Configure ASR in audit mode](/strengthen-security-posture-configure-capabilities#12-configure-asr-in-audit-mode)</li><li> [3. Configure Microsoft Defender for Identity](/strengthen-security-posture-configure-capabilities#13-configure-microsoft-defender-for-identity)</li></ol>|
 |[2 - Assess and protect your assets](#2-assess-and-protect)|<ol><li>Assess your devices</li><li> Assign device value</li><li> Onboard newly discovered endpoints</li></ol>|
 |[3 - Improve your security posture](#3-investigate-and-improve)|<ol><li> Review Secure Score</li></ol>|
 |[4 - Maintain a secure posture](#4-track-and-maintain)|<ol><li> Enable email notifications for new vulnerabilities</li><li> Hunt for threats with advanced hunting </li><li>Understand your exposure to zero days threats]</li></ol>|

@@ -26,7 +26,7 @@ ms.collection:
 
 # Strengthen your security posture - Phase 1: Configure capabilities
 
-Welcome to **Phase 1: Configure capabilities** to **[Strengthen your security posture](secure-posture-solution-overview.md)**! This migration phase provides guidance on how to configure the capabilities available to you:
+Welcome to **Phase 1: Configure capabilities** to **[Strengthen your security posture](/security-posture-solution-overview.md)**! This migration phase provides guidance on how to configure the capabilities available to you:
 
 1. [Configure device discovery](#11-configure-device-discovery)
 2. [Configure ASR in audit mode](#12-configure-asr-in-audit-mode)
