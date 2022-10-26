@@ -1,7 +1,7 @@
 ---
-title: Deployment of Microsoft Defender for Endpoint on RHEL Linux
+title: Deployment of Microsoft Defender for Endpoint on Linux
 ms.reviewer:
-description: Describes how to deploy Microsoft Defender for Endpoint on RHEL Linux
+description: Describes how to deploy Microsoft Defender for Endpoint on Linux
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, app, installation, deploy, uninstallation, intune
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -20,9 +20,11 @@ ms.subservice: mde
 search.appverid: met150
 ---
 
-# Deployment of Microsoft Defender for Endpoint on RHEL Linux
+# Deployment of Microsoft Defender for Endpoint on Linux
 
-This article explains how to deploy Microsoft Defender for Endpoint on a Red Hat Enterprise Linux (RHEL) system. 
+This article explains how to deploy Microsoft Defender for Endpoint on a Linux system. 
+
+For information about Microsoft Defender for Endpoint capabilities, see [Advanced Microsoft Defender for Endpoint capabilities](#advanced-microsoft-defender-for-endpoint-capabilities).
 
 ## Deployment summary
 
@@ -36,7 +38,6 @@ The following list captures the actions you'll take to deploy Microsoft Defender
 - Set up the Microsoft Defender for Endpoint on Linux configuration settings.
 - Add your third-party antivirus processes and paths to the exclusion list from the prior step (Setup the Microsoft Defender for Endpoint on Linux antivirus settings).
 - Verify that you've added your current exclusions from your third-party antivirus  to the prior step (Set up the Microsoft Defender for Endpoint on Linux configuration settings).
-- Add Microsoft repository. [BAHMAN - NOT SURE WHAT THIS MEANS]
 - Deliver the onboarding file.
 - Deliver the antivirus setting.
 - Deliver the scheduled scans cronjob setting.
@@ -49,14 +50,13 @@ The following list captures the actions you'll take to deploy Microsoft Defender
 - Verify that you're able to get "Security Intelligence Updates" (signatures/definition updates).
 - Verify detections.
 
-
 ## Before you begin
-The following section provides information on supported Linux versions and recommendations for resources.
 
+The following section provides information on supported Linux versions and recommendations for resources.
 
 ### System requirements
 
-The following are the supported RHEL Linux servers:
+The following are the supported Linux servers:
 
 |RHEL* version supported|Commercial|GCC-Moderate|GCC-High (aka MAG)|
 |---|---|---|---|
@@ -66,13 +66,13 @@ The following are the supported RHEL Linux servers:
 |RHEL 9.x|Design partner program|General Availability (GA)|General Availability (GA)|
 
 > [!NOTE]
-> (*): Also applies to CentOS, and Oracle Linux.
+> Also applies to CentOS, and Oracle Linux.
 
 |Resource|Recommendation|
 |---|---|
 |Disk space |1 GB|
-|RAM |1 GB 4 GB is preferred|
-|CPU |If the Linux system just has one CPU, we advise upgrading to two, with four cores being recommended.|
+|RAM |1 GB<br> 4 GB is preferred|
+|CPU |If the Linux system is running only 1 vcpu, we recommend to be increased to 2 vcpu’s<br> four cores are preferred |
 
 |OS version|Kernel filter driver|Comments|
 |---|---|---|
@@ -80,6 +80,7 @@ The following are the supported RHEL Linux servers:
 |RHEL 6.x|TALPA kernel driver|
 
 For a detailed list of supported Linux distros, see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements).
+
 ## Network connectivity of Microsoft Defender for Endpoint
 
 The complete this step, you may need to engage with following in your organization:
@@ -90,9 +91,9 @@ The complete this step, you may need to engage with following in your organizati
 
 Here's how to check the network connectivity of Microsoft Defender for Endpoint:
 
-1. The URLs that are allowed for the Microsoft Defender for Endpoint traffic. For more information, see [Allow URL for the Microsoft Defender for Endpoint traffic](#allow-url-for-the-microsoft-defender-for-endpoint-traffic).
+1. See [Allow URL for the Microsoft Defender for Endpoint traffic](#allow-url-for-the-microsoft-defender-for-endpoint-traffic) for the URLs that are allowed for the Microsoft Defender for Endpoint traffic.
 2. If the Linux servers are behind a proxy, then set the proxy settings. For more information, see [Set up proxy settings](#set-up-proxy-settings).
-3. Verify that the traffic isn't being inspected by SSL inspection (TLS inspection). When setting up Microsoft Defender for Endpoint, the most frequent network-related problem. For more information, see [Verify SSL inspection is not being performed on the network traffic](#verify-ssl-inspection-is-not-being-performed-on-the-network-traffic).
+3. Verify that the traffic is not being inspected by SSL inspection (TLS inspection). This is the most common network related issue when setting up Microsoft Defender Endpoint, see [Verify SSL inspection is not being performed on the network traffic](#verify-ssl-inspection-is-not-being-performed-on-the-network-traffic).
 
 
 ### Allow URLs for the Microsoft Defender for Endpoint traffic
@@ -110,6 +111,7 @@ Here's how to check the network connectivity of Microsoft Defender for Endpoint:
 3. Work with the Firewall/Proxy/Networking admins to allow the relevant URL’s.
 
 ### Set up proxy settings
+
 If the Linux servers are behind a proxy, use the following settings guidance.
 
 The table below shows the supported proxy settings:
@@ -124,14 +126,9 @@ The table below shows the supported proxy settings:
 - [Static proxy configuration](/defender-endpoint/linux-static-proxy-configuration.md)
 - [Troubleshooting connectivity issues in static proxy scenario](linux-support-connectivity.md#troubleshooting-steps-for-environments-with-static-proxy)
 
-
 ### Verify SSL inspection is not being performed on the network traffic
 
-To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspection by firewall systems such as Palo Alto, Zscaler, Cisco, and other products is not allowed. You'll have to bypass SSL inspection for Microsoft Defender for Endpoint URLs.
-
-[BAHMAN - ARE WE OK TO NAME COMPANIES HERE?]
-
-
+To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspection by major firewall systems are not allowed. You'll have to bypass SSL inspection for Microsoft Defender for Endpoint URLs.
 
 #### Troubleshoot cloud connectivity issues
 
@@ -145,6 +142,7 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
    - Move the existing exclusions to Microsoft Defender for Endpoint for Linux.
 
 - If you're not using a third-party antivirus for your Linux servers:
+   - Get a list of all your Linux applications and check the vendors website for exclusions.  
    
 - If you're running McAfee antivirus for Linux, then add the processes/paths to the exclusion. For more information, see [Binary name and installation path changes with Endpoint Security for Linux 10.6.6](https://kcm.trellix.com/corporate/index?page=content&id=KB92028).
 
@@ -159,8 +157,8 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
 
     You can consider modifying the file based on your needs:
 
-    ```powershell
-    {
+    ```javascript
+        {
        "antivirusEngine":{
           "enforcementLevel":"real_time",
           "scanAfterDefinitionUpdate":true,
@@ -214,15 +212,11 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
           "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
        }
     }
+    ```   
+    **Recommendations**
 
-    ```
-
-**Recommendations**
-
-
-
-    ```powershell
-    {
+   ```javascript
+          {
        "antivirusEngine":{
           "enforcementLevel":"real_time",
           "scanAfterDefinitionUpdate":true,
@@ -286,12 +280,12 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
           "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
        }
     }
-    ```
+      ```
 
-> [!NOTE]
-> (*): In Linux (and macOS) paths that starts with a wildcard is supported.
+ > [!NOTE]
+ >  In Linux (and macOS) we support paths where it starts with a wildcard.
 
-The following table describes the settings that are recommended as part of mdatp_managed.json file:
+The following table describes the settings that are recommended as part of `mdatp_managed.json` file:
 
 |Settings|Comments|
 |---|---|
@@ -299,25 +293,19 @@ The following table describes the settings that are recommended as part of mdatp
 |`disallowedThreatActions` being set to `allow and restore`|Prevents the local admin from being able to restore a quarantined item (via bash (the command prompt)).|
 |`threatTypeSettingsMergePolicy` being set to `admin_only`|Prevents the local admin from being able to add False Positives or True Positives that are benign to the threat types (via bash (the command prompt)).|
 
-- Save the setting as `mdatp_managed.json` file.
+]- Save the setting as `mdatp_managed.json` file.
 - Copy the setting to this path `/etc/opt/microsoft/mdatp/managed/`. For more information, see [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).
 
 ## High CPU utilization by ISVs, Linux apps, or scripts
 
-[I THINK WE SHOULD MOVE THIS DOWN - NOT SO GOOD TO SEE TROUBLESHOOTING STEPS BEFORE THE ONBOARDING IS EVEN STARTED]
-
-
 If you observe that third-party ISVs, internally developed Linux apps, or scripts run into high CPU utilization, you can check the following processes to investigate the cause.
 
-
-
-Perform the following steps:
-
-- Identify which Microsoft Defender for Endpoint for on Linux thread is causing the symptom
-- Check the wdavdaemon unprivileged process
-- Check the wdavdaemon (FANotify) process
-- Check the wdavdaemon edr (EDR Engine) process
-- Check the mdatp_audisp_plugin process
+|Process name|Component used|MDE engine used|
+|---|---|---|
+|wdavdaemon|FANotify|EPP & EDR|
+|wdavdaemon_unprivileged||AV engine|
+|wdavdaemon_edr||EDR engine|
+|mdatp_audisp_plugin|audit framework|Audit log ingestion|
 
 ### Identify the Microsoft Defender for Endpoint on Linux thread causing the symptom
 
@@ -330,31 +318,28 @@ Use the following syntaxes to help identify the root cause of the CPU overhead:
 - To identify specific Microsoft Defender for Endpoint thread ID causing the highest CPU utilization within the process, run:
    - `sudo ps -T -p <PID> >> Thread_with_highest_cpu_usage.log`.
 
-[NAMISHA - PLEASE INSERT THE IMAGE FROM THE WORD DOC HERE]
+:::image type="content" source="images/cpu-utilization.png" alt-text="This is CPU utilization":::
 
+### Check the wdavdaemon unprivileged process
 
+The following diagram shows the workflow and steps required in order to add antivirus exclusions:
 
-NAMISHA: IT'S MISSING THE WDAVDAEMON UNPRIVILEDGED (AV ENGINE) AND INSERT THE IMAGE AS WELL
+:::image type="content" source="images/unprivileged-plugins.png" alt-text="This is unpriviledged sensors":::
 
-
-
+- See [troubleshoot performance issues for Microsoft Defender for Endpoint for Linux](linux-support-perf.md) .
+- If you have in-house apps/scripts or a legitimate third-party app/script getting flagged, Microsoft security researchers analyze suspicious files to determine if they are threats, unwanted applications, or normal files. Submit files you think are malware or files that you believe have been incorrectly classified as malware by using the following link [File submission](https://www.microsoft.com/en-us/wdsi/filesubmission).
 
 ### Check the wdavdaemon (FANotify) process
 
-Follow these steps to install wdavdaemon (FANotify) plugin:
+Follow these steps to install wdavdaemon (FANotify) process:
 
 - Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md).
 - Collect diagnostic data using the [Client analyzer tool](https://aka.ms/xMDEClientAnalyzerBinary).
 - Open a CSS support case with Microsoft. For more information, see [CSS security support case](/mem/get-support).
 
-
-
-
-
-
 ### Check the wdavdaemon edr (EDR Engine) process
 
-Follow these steps to install wdavdaemon edr (EDR Engine) plugin:
+Follow these steps to install wdavdaemon edr (EDR Engine) process:
 
 - Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md).
 - Collect diagnostic data
@@ -362,7 +347,7 @@ Follow these steps to install wdavdaemon edr (EDR Engine) plugin:
 
 ### Check the mdatp_audisp_plugin process
 
-To troubleshoot high CPU utilization overhead caused by mdatp_audisp_plugin, see [Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux](troubleshoot-auditd-performance-issues.md).
+To troubleshoot high CPU utilization overhead caused by mdatp_audisp_plugin process, see [Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux](troubleshoot-auditd-performance-issues.md).
 
 - Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md).
 - Collect diagnostic data
@@ -374,16 +359,16 @@ To troubleshoot high CPU utilization overhead caused by mdatp_audisp_plugin, see
 For more information, see [download the onboarding package from Microsoft 365 Defender portal](linux-install-with-ansible.md).
     
 > [!NOTE]
-> (*): This download registers Microsoft Defender for Endpoint for Linux to send the data to your Microsoft Defender for Endpoint instance.
+> This download registers Microsoft Defender for Endpoint for Linux to send the data to your Microsoft Defender for Endpoint instance.
 
   
-## Use Ansible to manage Microsoft Defender for Endpoint on RHEL Linux
+## Use Ansible to manage Microsoft Defender for Endpoint on Linux
 
-To deploy Microsoft Defender for Endpoint on RHEL Linux using Ansible, see [Deploy Microsoft Defender for Endpoint on Linux with Ansible | Microsoft Docs](../defender-endpoint/linux-install-with-ansible.md#download-the-onboarding-package)
+To deploy Microsoft Defender for Endpoint on Linux using Ansible, see [Deploy Microsoft Defender for Endpoint on Linux with Ansible | Microsoft Docs](../defender-endpoint/linux-install-with-ansible.md#download-the-onboarding-package)
 
 1. To deliver the downloaded onboarding package from Microsoft 365 Defender portal, see the information below:
 
-```json
+```bash
     - name: Create MDATP directories
       file:
         path: /etc/opt/microsoft/mdatp/
@@ -396,7 +381,7 @@ To deploy Microsoft Defender for Endpoint on RHEL Linux using Ansible, see [Depl
 
 2. To add Microsoft to the repository, see the information below:
 
-```json
+```bash
     - name: Add Microsoft APT key
       apt_key:
       url: https://packages.microsoft.com/keys/microsoft.asc
@@ -430,7 +415,7 @@ To deploy Microsoft Defender for Endpoint on RHEL Linux using Ansible, see [Depl
 
 3. To install the package, see the information below:
 
-```json
+```bash
     - hosts: servers
       tasks:
       - include: ../roles/onboarding_setup.yml
@@ -439,32 +424,26 @@ To deploy Microsoft Defender for Endpoint on RHEL Linux using Ansible, see [Depl
       dnf:
       name: mdatp
       state: latest
-      enablerepo: packages-microsoft-[channel] 
+      enablerepo: packages-microsoft-[channel]
 ```
 
-NAMISHA - THIS WAS MISSING:
-
-Additionally, for deploying the “settings preferences” via Ansible, go through adding the steps from the above item 5 “How to configure Microsoft Defender for Endpoint for Linux Antivirus (AV)”, by copying your mdatp_managed.json to /etc/opt/microsoft/mdatp/managed/ 
-
-
-
+Additionally, for deploying the “settings preferences” via Ansible, go through adding the steps from the above item 5 “How to configure Microsoft Defender for Endpoint for Linux Antivirus (AV)”, by copying your `mdatp_managed.json` to `/etc/opt/microsoft/mdatp/managed/`. 
 
 ## Verify communication with Microsoft Defender for Endpoint backend
 
 To verify Microsoft Defender for Endpoint on Linux communication to the cloud with the current network settings, run the following connectivity test from the command line:
 `mdatp connectivity test`
 
+The expected output from the test should be as below:
 
-NAMISHA - MISSING EXPECTED OUTPUT IMAGE - PLS INCLUDE
-
-
+:::image type="content" source="images/verify-comm.png" alt-text="This is verify communication image":::
 
 For more information, see [Connectivity validation](linux-support-connectivity.md#run-the-connectivity-test).
 
 
 ## Verify that you're able to get platform updates
 
-To verify Microsoft Defender for Endpoint on RHEL Linux platform updates, run the following command line:
+To verify Microsoft Defender for Endpoint on Linux platform updates, run the following command line:
 
 `sudo yum update mdatp`
 
@@ -473,9 +452,7 @@ For more information, see [Device health and Microsoft Defender Antivirus health
 For more information, see [Deploy updates for Microsoft Defender for Endpoint on RHEL Linux](linux-updates.md#rhel-and-variants-centos-and-oracle-linux).
 
 >[!TIP]
-> Automate the agent update on a monthly (Recommended) schedule by using a Cron job.
-
-For more information, see [schedule an update of the Microsoft Defender for Endpoint on RHEL Linux](linux-update-mde-linux.md).
+> Automate the agent update on a monthly (Recommended) schedule by using a Cron job.For more information, see [schedule an update of the Microsoft Defender for Endpoint on RHEL Linux](linux-update-mde-linux.md).
 
 ## Verify that you're able to get security intelligence updates
 
@@ -490,36 +467,27 @@ For more information, see [New device health reporting for Microsoft Defender An
 To ensure that the device is correctly onboarded and reported to the service, run the following detection test:
 
 - Antivirus detections:
-
-NAMISHA - INLCUDE THE BELOW:
-    Curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt 
-
-If the detection doesn’t show up, it could be that you have set “allowedThreats” to allow in preferences via Ansible or Puppet.
-
+  [Curl -o ~/Downloads/eicar.com.txt](https://www.eicar.org/download/eicar.com.txt ).
+  If the detection doesn’t show up, it could be that you have set “allowedThreats” to allow in preferences via Ansible or Puppet.
 
 - Endpoint detection and response (EDR) detections:
   For more information, see [Experience Microsoft Defender for Endpoint through simulated attacks](attack-simulations.md).
   If the detection doesn’t show up, then it could be that we're missing event or alerts in portal. For more information, see [Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux](linux-support-events.md).
-- For more information about unified submissions in Microsoft 365 Defender and the ability to submit **False Positives** and **False Negatives** through the portal, see [Unified submissions in Microsoft 365 Defender now Generally Available! - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770).
+- For more information about unified submissions in Microsoft 365 Defender and the    ability to submit **False Positives** and **False Negatives** through the portal, see [Unified submissions in Microsoft 365 Defender now Generally Available! - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770).
 
-## Troubleshoot Microsoft Defender for Endpoint on Linux installation issues
+## Diagnostic and troubleshooting information for installation issues
 
-- For more information, see [Installation issues of Microsoft Defender for Endpoint on RHEL Linux](linux-support-install.md).
-- For more information, see [Troubleshooting log installation issues](linux-resources.md#log-installation-issues).
-- For more information, see [Troubleshooting steps for environments without proxy or with transparent proxy](linux-support-connectivity.md#troubleshooting-steps-for-environments-without-proxy-or-with-transparent-proxy).  
-- For more information, see [Troubleshooting steps for environments with static proxy](linux-support-connectivity.md#troubleshooting-steps-for-environments-with-static-proxy).
-
-## Troubleshooting resources
-
-- For more information, see [Known issues](linux-resources.md).
-
-- For more information, see [Collect diagnostic information](linux-resources.md#collect-diagnostic-information).
-
-- For more information, see [Uninstall](linux-resources.md#uninstall).
+- [Installation issues of Microsoft Defender for Endpoint on Linux](linux-support-install.md).
+- [Troubleshooting log installation issues](linux-resources.md#log-installation-issues).
+- [Troubleshooting steps for environments without proxy or with transparent proxy](linux-support-connectivity.md#troubleshooting-steps-for-environments-without-proxy-or-with-transparent-proxy).  
+- [Troubleshooting steps for environments with static proxy](linux-support-connectivity.md#troubleshooting-steps-for-environments-with-static-proxy).
+- [Known issues](linux-resources.md).
+- [Collect diagnostic information](linux-resources.md#collect-diagnostic-information).
+- [Uninstall](linux-resources.md#uninstall).
 
 ## FAQs
 
-**I already have a third-party antivirus running on my Linux servers. Can I run Microsoft Defender for Endpoint on RHEL Linux?**<br> 
+**I already have a third-party antivirus running on my Linux servers. Can I run Microsoft Defender for Endpoint on Linux?**<br> 
 It depends. If the third-party antivirus runs FANotify, it needs to be uninstalled.
  
 **How can I find out if there is a third-party antivirus that is running FANotify?**<br>
@@ -539,7 +507,7 @@ The following are the processes to exclude from the third-party antivirus:
 `telemetryd_v2`<br>
 
 > [!NOTE]
-> (*): The processes are in /opt/microsoft/mdatp/sbin/.
+> The processes are in `/opt/microsoft/mdatp/sbin/`.
 
 The following are the paths to exclude from the third-party antivirus:
 
@@ -547,7 +515,7 @@ The following are the paths to exclude from the third-party antivirus:
 `/var/opt/microsoft/mdatp/`<br>
 `/etc/opt/microsoft/mdatp/`<br>
 
-## References
+## Advanced Microsoft Defender for Endpoint capabilities
 
 - [Enhanced antimalware engine capabilities on RHEL Linux and macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003)
 
@@ -561,6 +529,8 @@ The following are the paths to exclude from the third-party antivirus:
 
 - [Announcing live response for macOS and Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-live-response-for-macos-and-linux/ba-p/2864397) 
    
+## References
+
 - How to use tagging effectively
    - [Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/how-to-use-tagging-effectively-part-1/ba-p/1964058)
    - [Part 2](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/how-to-use-tagging-effectively-part-2/ba-p/1962008)
