@@ -50,6 +50,8 @@
     href: sdkapi.md
 - name: Reference
   items:
+  - name: Test Base for Microsoft 365
+    href: testbase-for-m365.md
   - name: Frequently Asked Questions
     href: faq.md
 
