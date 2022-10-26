@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 10/10/2022
+ms.date: 10/21/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -84,11 +84,11 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>September-2022 (Platform: 4.18.2209.x | Engine: 1.1.19700.3)</summary>
+<summary>September-2022 (Platform: 4.18.2209.7 | Engine: 1.1.19700.3)</summary>
 
 &ensp;Security intelligence update version: **1.377.8.0**<br/>
 &ensp;Release date: **October 10, 2022**<br/>
-&ensp;Platform: **4.18.2209.x**<br/>
+&ensp;Platform: **4.18.2209.7**<br/>
 &ensp;Engine: **1.1.19700.3**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
@@ -839,6 +839,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20221014.1</summary>
+
+&ensp;Package version: **20221014.1**<br/>
+&ensp;Platform version: **4.18.2209.7**<br/>
+&ensp;Engine version: **1.1.19700.3**<br/>
+&ensp;Signature version: **1.373.208.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
 <summary>20220929.1</summary>
 
 &ensp;Package version: **20220929.1**<br/>

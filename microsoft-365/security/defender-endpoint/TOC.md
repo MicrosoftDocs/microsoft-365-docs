@@ -59,6 +59,7 @@
 #### [Use Configuration Manager](manage-mde-post-migration-configuration-manager.md)
 #### [Use Group Policy](manage-mde-post-migration-group-policy-objects.md)
 #### [Use PowerShell, WMI, or MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
+#### [Updating MMA on Windows devices](update-agent-mma-windows.md)
 #### [Server migration scenarios](server-migration.md)
 ##### [Migrating servers from Microsoft Monitoring Agent to the unified solution](application-deployment-via-mecm.md)
 
@@ -333,7 +334,7 @@
 #### [Tamper protection]()
 ##### [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
 ##### [Manage tamper protection using Microsoft 365 Defender](manage-tamper-protection-microsoft-365-defender.md)
-##### [Manage tamper protection using Microsoft Endpoint Manager](manage-tamper-protection-microsoft-endpoint-manager.md)
+##### [Manage tamper protection using Microsoft Intune](manage-tamper-protection-microsoft-endpoint-manager.md)
 ##### [Manage tamper protection with Configuration Manager](manage-tamper-protection-configuration-manager.md)
 ##### [Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md)
 ##### [FAQs on tamper protection](faqs-tamper-protection.md)

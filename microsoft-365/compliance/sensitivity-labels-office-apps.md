@@ -38,12 +38,12 @@ The [Azure Information Protection (AIP) unified labeling client](/azure/informat
 
 ## Support for sensitivity label capabilities in apps
 
-The following tables list the minimum Office version that introduced specific capabilities for sensitivity labels that are built in to Office apps. Or, if the label capability is in public preview or under review for a future release:
+The following tables list the minimum Office version that introduced specific capabilities for sensitivity labels built in to Office apps. Or, if the label capability is in public preview or under review for a future release:
 
-- Table: [Sensitivity label capabilities in Word, Excel, and PowerPoint](#sensitivity-label-capabilities-in-word-excel-and-powerpoint)
-- Table: [Sensitivity label capabilities in Outlook](#sensitivity-label-capabilities-in-outlook)
+- [Capabilities table for Word, Excel, and PowerPoint](#sensitivity-label-capabilities-in-word-excel-and-powerpoint)
+- [Capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook)
 
-Use the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) for details about new capabilities that are planned for future releases.
+Use the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) for details about new labeling capabilities that are planned for future releases.
 
 New versions of Office apps are made available at different times for different update channels. For Windows, you'll get the new capabilities earlier when you are on the Current Channel or Monthly Enterprise Channel, rather than Semi-Annual Enterprise Channel. The minimum version numbers can also be different from one update channel to the next. For more information, see [Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels) and [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
@@ -76,11 +76,11 @@ The numbers listed are the minimum Office application versions required for each
 |[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | Current Channel: 2010+ <br /><br> Monthly Enterprise Channel: 2010+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.42+     | 2.42+ | 16.0.13328+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Let users assign permissions: <br /> - Prompt users for custom permissions (users and groups)](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |Current Channel: 2004+ <br /><br> Monthly Enterprise Channel: 2004+ <br /><br> Semi-Annual Enterprise Channel: 2008+ | 16.35+   | Under review   | Under review         | Under review                                                        |
-|[Let users assign permissions: <br /> - Prompt users for custom permissions (users, groups, and organizations)](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions)                     |Preview: Rolling out to [Current Channel (Preview)](https://office.com/insider)  | Under review   | Under review   | Under review         | Under review                                                        |
+|[Let users assign permissions: <br /> - Prompt users for custom permissions (users, groups, and organizations)](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions)                     |Preview: Rolling out to [Beta Channel](https://office.com/insider)  | Under review   | Under review   | Under review         | Under review                                                        |
 |[Audit label-related user activity](#auditing-labeling-activities)                      | Current Channel: 2011+ <br /><br> Monthly Enterprise Channel: 2011+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ | 2.46+ | 16.0.13628+ | Yes |
 |[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Current Channel: 2101+ <br /><br> Monthly Enterprise Channel: 2101+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.45+         | 2.47+ | 16.0.13628+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) <br /> - Using sensitive info types                    | Current Channel: 2009+ <br /><br> Monthly Enterprise Channel: 2009+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.44+ | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) <br /> - Using trainable classifiers                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) <br /> - Using trainable classifiers                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | Under review | Under review | Under review |
 |[Support co-authoring and AutoSave](sensitivity-labels-coauthoring.md) for labeled and encrypted documents | Current Channel: 2107+ <br /><br> Monthly Enterprise Channel: 2107+ <br /><br> Semi-Annual Enterprise Channel: 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[PDF support](#pdf-support)| Current Channel: 2208+ <br /><br> Monthly Enterprise Channel: 2208+ <br /><br> Semi-Annual Enterprise Channel: Under review|  Under review | Under review | Under review | Under review |
 |[Sensitivity bar](#sensitivity-bar) and [display label color](#label-colors) | Preview: Rolling out to [Beta Channel](https://office.com/insider) | Under review | Under review | Under review | Under review |
@@ -483,7 +483,7 @@ Use the Microsoft Purview compliance portal to select one of 10 standard colors 
 
 You can't select colors for sublabels because they automatically inherit the label color from their parent label.
 
-If a label is configured for a different color from one of the 10 default colors, you see a **Use previously assigned customer color** checkbox selected, and the standard color options aren't available. You can change the custom color to one of the standard colors by first clearing the checkbox, and then you can select one of the standard colors. 
+If a label is configured for a different color from one of the 10 default colors, you see a **Use previously assigned custom color** check box selected, and the standard color options aren't available. You can change the custom color to one of the standard colors by first clearing the checkbox, and then you can select one of the standard colors. 
 
 You can't use the compliance portal to configure a different custom color. Instead, use PowerShell, as described in the next section.
 

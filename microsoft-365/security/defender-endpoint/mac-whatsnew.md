@@ -34,6 +34,21 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)</br>
 
 <details>
+  <summary>Oct-2022 (Build: 101.86.81  | Release version: 20.122082.18681.0)</summary>
+
+&ensp;Build: **101.86.81**<br/>
+&ensp;Release version: **20.122082.18681.0**<br/>
+&ensp;Engine version: **1.1.19700.3**<br/>
+&ensp;Signature version: **1.377.636.0**<br/>
+
+**What's new**
+
+- Bug fix: Upgrade fails if \_mdatp user a member of \_lpadmin group
+
+<br/>
+</details>
+
+<details>
   <summary>Oct-2022 (Build: 101.82.21  | Release version: 20.122082.18221.0)</summary>
 
 &ensp;Build: **101.82.21**<br/>
@@ -43,7 +58,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 **What's new**
 
-- Mac TP in Block mode causing device hang on shutdown/ crashes on reboot
+- Bug fix - Mac TP in Block mode causing device hang on shutdown/crashes on reboot
 - Add a mdatp command-line switch to view the on-demand scan history
 - Improve Performance of Device Owner on MacOs
 - Ready for macOS Ventura (13.0)
