@@ -80,6 +80,42 @@ The following are the supported RHEL Linux servers:
 |RHEL 6.x|TALPA kernel driver|
 
 For a detailed list of supported Linux distros, see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements).
+
+### Additional guidance
+
+- Depending on the non-Microsoft antivirus running on your Linux servers, you may still be able to run Microsoft Defender for Endpoint on Linux. If the antivirus runs FANotify, it needs to be uninstalled.
+	
+  - To check if there is a non-Microsoft antivirus that is running FANotify, you can run `mdatp health`, then check the result:
+		
+    INSERT IMAGE
+		
+	Under "conflicting_applications", if you see a result other than "unavailable", then you'll need to uninstall the non-Microsoft antivirus. 
+
+	If you don't uninstall the non-Microsoft antivirus product, you may encounter unexpected behaviors such as performance issues, stability issues such as systems hanging, or kernel panics.
+	
+- To identify Microsoft Defender for Endpoint on Linux processes and paths that should be excluded in the non-Microsoft antivirus product, run `systemctl status -l mdatp`.
+
+Exclude the following processes from the non-Microsoft antivirus product:
+
+
+`wdavdaemon`<br>
+`crashpad_handler`<br>
+`mdatp_audis_plugin`<br>
+`telemetryd_v2`<br>
+
+> [!NOTE]
+> (*): The processes are in /opt/microsoft/mdatp/sbin/.
+
+Exclude the following paths from the non-Microsoft antivirus product:
+
+`/opt/microsoft/mdatp/`<br>
+`/var/opt/microsoft/mdatp/`<br>
+`/etc/opt/microsoft/mdatp/`<br>
+
+ 
+
+
+
 ## Network connectivity of Microsoft Defender for Endpoint
 
 The complete this step, you may need to engage with following in your organization:
@@ -517,35 +553,6 @@ If the detection doesn’t show up, it could be that you have set “allowedThre
 
 - For more information, see [Uninstall](linux-resources.md#uninstall).
 
-## FAQs
-
-**I already have a third-party antivirus running on my Linux servers. Can I run Microsoft Defender for Endpoint on RHEL Linux?**<br> 
-It depends. If the third-party antivirus runs FANotify, it needs to be uninstalled.
- 
-**How can I find out if there is a third-party antivirus that is running FANotify?**<br>
-When you run `mdatp` health, then in the conficting_applications row, you'll need to uninstall the third-party antivirus.
-
-**What happens if I don’t uninstall the third-party antivirus that uses FANotify**<br>
-You can experience unexpected behaviors such as performance issues, and/or stability issues, for example, systems hanging, and/or kernel panics (akin to a blue screen in Windows).
-
-**What are the processes and paths for Microsoft Defender for Endpoint on Linux that you should exclude in the third-party antivirus?**<br>
-Running `systemctl status -l mdatp` shows the processes and paths.
-
-The following are the processes to exclude from the third-party antivirus: 
-
-`wdavdaemon`<br>
-`crashpad_handler`<br>
-`mdatp_audis_plugin`<br>
-`telemetryd_v2`<br>
-
-> [!NOTE]
-> (*): The processes are in /opt/microsoft/mdatp/sbin/.
-
-The following are the paths to exclude from the third-party antivirus:
-
-`/opt/microsoft/mdatp/`<br>
-`/var/opt/microsoft/mdatp/`<br>
-`/etc/opt/microsoft/mdatp/`<br>
 
 ## References
 
