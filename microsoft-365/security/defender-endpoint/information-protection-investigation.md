@@ -13,6 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
+- ContentEngagementFY23
 - tier2
  - EngageScoreSep2022
 ms.topic: conceptual
