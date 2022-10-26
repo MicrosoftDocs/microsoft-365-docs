@@ -52,4 +52,4 @@ Use [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-
 
 ## Next step
 
-- Proceed to [Phase 2: Assess and Protect](migrate-to-defender-for-office-365-setup.md).
+- Proceed to [Phase 2: Assess and Protect](/security-posture-solution-overview.md).
