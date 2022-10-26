@@ -13,11 +13,13 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
-ms.topic: conceptual
+- demo
+ms.topic: article
 ms.subservice: mde
+ms.date: 10/21/2022
 ---
 
 # Block at First Sight (BAFS) demonstration
