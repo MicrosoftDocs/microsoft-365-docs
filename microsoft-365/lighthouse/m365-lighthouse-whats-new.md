@@ -29,13 +29,6 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 
 ## October 2022
 
-### Manage Microsoft 365 Lighthouse with a new Azure AD role
-
-We've added a new Microsoft 365 Lighthouse Administrator built-in role to Azure Active Directory (Azure AD). Users in a partner tenant who've been assigned this role can manage all aspects of tenant tags, deactivate and reactivate delegated tenants, view audit logs for delegated tenant actions initiated from the Microsoft 365 service, create and manage service requests in the Microsoft 365 admin center, monitor service health data, and view Message Center posts. Previously, users in a partner tenant needed to be a Global Administrator to perform these tasks. The addition of the Microsoft 365 Lighthouse Administrator role strengthens cybersecurity for Managed Service Providers (MSPs) by helping them adhere to the principle of least privilege.
-
-> [!NOTE]
-> Users in the partner tenant who've been assigned the Microsoft 365 Lighthouse Administrator role can't manage delegated tenants in the Microsoft 365 Lighthouse service without also having Granular Delegated Admin Privileges (GDAP) for those tenants.
-
 For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
 ### App protection policies
@@ -47,10 +40,6 @@ Managed Service Providers (MSPs) can now deploy app protection policies for thei
 We've added a new deployment sub-task called **Enable Device Health Monitoring** within the default baseline under the **Set up device enrollment** task. Once the new sub-task is enabled and the deployment task is deployed, Endpoint analytics in Microsoft Endpoint Manager will be able to analyze device data and can recommend software, help improve startup performance, and fix common support issues.
 
 For more information, see [What is Endpoint analytics?](/mem/analytics/overview).
-
-### File exclusion support in the antivirus policy
-
-You can now exclude certain non-malicious threats from showing up for tenants on the Threat management page in Microsoft 365 Lighthouse. Go to the tenant's deployment plan, select **Configure a Microsoft Defender Antivirus baseline policy**, and then specify the file, folder, or file-type exclusions. 
 
 ## September 2022
 
