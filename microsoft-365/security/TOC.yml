@@ -35,11 +35,11 @@
         - name: Step 1. Configure capabilities
           href: security-posture-solution-overview.md#1-configure-capabilities
         - name: Step 2. Assess and protect your assets
-        - href: security-posture-solution-overview.md#2-assess-and-protect
+          href: security-posture-solution-overview.md#2-assess-and-protect
         - name: Step 3. Improve your security posture
-        - href: security-posture-solution-overview.md#3-investigate-and-improve
+          href: security-posture-solution-overview.md#3-investigate-and-improve
         - name: Step 4. Maintain a secure posture
-        - href: security-posture-solution-overview.md#4-track-and-maintain
+          href: security-posture-solution-overview.md#4-track-and-maintain
     - name: Microsoft 365 Defender docs
       items: 
        - name: Microsoft 365 Defender
