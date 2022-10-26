@@ -23,7 +23,8 @@ The sharing experience differs based on whether you're in a Teams meeting, if yo
 
 When you share a whiteboard in a Teams meeting, Whiteboard creates a sharing link. This link is accessible by anyone within the organization. The whiteboard is also shared with any in-tenant users in the meeting. Whiteboards are shared using company-shareable links, regardless of the default setting. Support for the default sharing link type is planned.
 
-There's more capability for temporary collaboration by external and shared device accounts during a Teams meeting. Users can temporarily view and collaborate on whiteboards that are shared in a meeting, in a similar way to PowerPoint Live sharing.
+During a Teams meeting, external and shared device accounts (typically used in Surface Hubs and Teams Rooms devices) have more capability for temporary
+collaboration. Users can temporarily view and collaborate on whiteboards that are shared in a meeting, in a similar way to PowerPoint Live sharing.
 
 In this case, Whiteboard provides temporary viewing and collaboration on the whiteboard during the Teams meeting only. A share link isn't created and Whiteboard doesn't grant access to the file.
 
@@ -48,7 +49,10 @@ To enable this behavior, follow these steps:
 This setting applies only to whiteboards and replaces the previously shared settings: **OneDriveLoopSharingCapability** and **CoreLoopSharingCapability**. Those settings are no longer applicable and can be disregarded.
 
 > [!NOTE]
-> By default, the Teams meeting setting **Anonymous users can interact with apps in meetings** is enabled. If you have disabled it, any anonymous users (as opposed to guests or federated users) won't have access to the whiteboard during the meeting.
+> By default, the Teams meeting setting **Anonymous users can interact with apps in meetings** is enabled. If you have disabled it, any anonymous user (as opposed to guests or federated users) won't have access to the whiteboard during the meeting.
+
+> [!NOTE]
+> If you would like shared device accounts to have access to Whiteboard in Teams meetings but not anonymous users, you can disable **Anonymous users can interact with apps in meetings** while having **AllowAnonymousMeetingParticipantsToAccessWhiteboards** enabled
 
 These changes should take approximately 60 minutes to apply across your tenancy.
 
@@ -72,9 +76,6 @@ When you add a whiteboard as a tab in a Teams channel or chat, Whiteboard will c
 ## Create and share in Whiteboard native clients
 
 When you share whiteboards from the web, desktop, or mobile clients, you can choose specific people. You can also create a sharing link that's accessible by anyone in the organization.
-
-> [!NOTE]
-> External sharing during a Teams meeting isn't yet available but will be added in a future release.
 
 |Scenario|Storage and ownership|Sharing settings|Sharing experience|
 |---|---|---|---|

@@ -11,6 +11,9 @@ ms.service: O365-seccomp
 ms.topic: article
 ms.author: shmehta
 ms.reviewer: krowley
+ms.collection: 
+- tier3
+- purview-compliance
 appliesto:
 - Office 365 Business
 ---
