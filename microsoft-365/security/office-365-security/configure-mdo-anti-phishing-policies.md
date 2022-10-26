@@ -135,7 +135,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
      > [!NOTE]
      >
-     > - In each anti-phishing policy, you can specify a maximum of 350 protected users (sender email addresses). You can't specify the same protected user in multiple policies.
+     > - In each anti-phishing policy, you can specify a maximum of 301 protected users (sender email addresses). You can't specify the same protected user in multiple policies.
      > - User impersonation protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message will be identified as an impersonation attempt.
 
      - **Enable users to protect**: The default value is off (not selected). To turn it on, select the check box, and then click the **Manage (nn) sender(s)** link that appears.

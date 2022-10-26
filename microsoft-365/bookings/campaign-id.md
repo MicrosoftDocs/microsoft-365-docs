@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
 - scotvorg
 description: "How to add a campaign ID to a Bookings page URL"
 ---
