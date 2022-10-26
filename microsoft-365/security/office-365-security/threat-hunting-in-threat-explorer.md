@@ -145,9 +145,6 @@ Finally, alert ID is included in the URL, for example: `https://https://security
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/AlertID-Filter.png" alt-text="The Filter for Alert ID" lightbox="../../media/AlertID-Filter.png":::
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/AlertID-DetailsFlyout.png" alt-text="The Alert ID in details flyout" lightbox="../../media/AlertID-DetailsFlyout.png":::
-
 ### Extending Explorer (and Real-time detections) data retention and search limit for trial tenants
 
 As part of this change, analysts will be able to search for, and filter email data across 30 days (increased from seven days) in Threat Explorer and Real-time detections for both Defender for Office P1 and P2 trial tenants. This doesn't impact any production tenants for both P1 and P2 E5 customers, where the retention default is already 30 days.

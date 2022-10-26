@@ -133,11 +133,7 @@ Below the chart, view more details about specific files, such as attachment file
 
 ## Click-to-filter capabilities
 
-With Explorer (and real-time detections), you can apply a filter in a click. Click an item in the legend, and that item becomes a filter for the report. For example, suppose we are looking at the Malware view in Explorer:
-
-:::image type="content" source="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png" alt-text="The Explorer page in the Security & Compliance portal" lightbox="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png":::
-
-Clicking **ATP Detonation** in this chart results in a view like this:
+With Explorer (and real-time detections), you can apply a filter in a click. Click an item in the legend, and that item becomes a filter for the report. For example, clicking **ATP Detonation** in this chart results in a view like this:
 
 :::image type="content" source="../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png" alt-text="The Explorer filtered to display only Defender for Office 365 Detonation results" lightbox="../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png":::
 
