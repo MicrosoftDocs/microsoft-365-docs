@@ -29,7 +29,7 @@ ms.service: microsoft-365-security
 
 This article describes how to create and manage URL allow and block entries that are available in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
 
-You manage allow and block entries for URLs in the Microsoft 365 Defender Portal or in Exchange Online PowerShell.
+You manage allow and block entries for URLs in the Microsoft 365 Defender Portal or in Exchange Online PowerShell. Messages containing the blocked URLs are quarantined.
 
 ## What do you need to know before you begin?
 

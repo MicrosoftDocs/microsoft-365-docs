@@ -135,10 +135,6 @@ Give users the ability to change or reset their password independently, if their
 
 Use the [Plan your self-service password reset deployment](https://aka.ms/SSPRSetupGuide) guide to receive relevant articles and instructions for configuring the appropriate Azure portal options to help you deploy SSPR in your environment.
 
-### Active Directory Federation Services (AD FS) deployment advisor
-
-The [AD FS deployment advisor](https://aka.ms/adfsguidance) provides you with step-by-step guidance on deploying an on-premises AD FS infrastructure that authenticates users for Microsoft 365 and Office 365 services. With this guide, your organization can review AD FS components and requirements, acquire and install SSL certificates that are necessary for deployment, and install a required web application proxy server.
-
 ## Guides for security and compliance
 
 ### Security analyzer

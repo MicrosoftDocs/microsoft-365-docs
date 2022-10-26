@@ -13,7 +13,7 @@ manager: dansimp
 ms.custom: nextgen
 ms.date: 07/11/2022
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.collection: 
 - m365-security
 - tier2

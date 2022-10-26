@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: 
 ms.audience: Admin
-ms.topic: article
+ms.topic: conceptual
 audience: Admin
 ms.localizationpriority: high
 ms.collection: 

@@ -18,7 +18,7 @@ ms.collection:
   - highpri
   - tier1
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---

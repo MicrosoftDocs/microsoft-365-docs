@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: deniseb
 author: denisebmsft
 ms.reviewer: dansimp
-ms.topic: article
+ms.topic: conceptual
 manager: dansimp
 audience: ITPro
 ms.subservice: mde

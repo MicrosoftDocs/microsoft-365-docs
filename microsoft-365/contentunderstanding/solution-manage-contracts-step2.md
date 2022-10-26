@@ -7,7 +7,7 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date:
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid:
 ms.localizationpriority:  medium
 ROBOTS:
@@ -28,10 +28,9 @@ When your organization sets up a contracts management solution, you need a centr
 
 - **Have a location for members to see approved contracts to know when they can be submitted for payment.** In SharePoint, you'll need to create a **For Payout** list and include columns for **Client**, **Contractor**, and **Fee amount**, selecting **Single line of text** as the column type. You'll need to add the **For Payout** list as a Teams tab in the Contract Management channel, similar to [what you'll do for the **Contracts** tab](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab). The **For Payout** tab will list all contracts that will need to be submitted for payment. You can easily extend this solution to instead write this information directly to a third-party financial application (for example, Dynamics CRM). 
 
-
 ## Attach your SharePoint document library to the Contracts tab
 
-After you create a **Contracts** tab in your Contracts Management channel, you need to [attach your SharePoint document library to it](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). The SharePoint document library you want to attach is the one in which you applied your SharePoint Syntex document understanding model to in the previous section.
+After you create a **Contracts** tab in your Contracts Management channel, you need to [attach your SharePoint document library to it](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). The SharePoint document library you want to attach is the one in which you applied your unstructured document processing model to in the previous section.
 
 After you attach the SharePoint document library, you'll be able to view any classified contracts through a default list view.
 
@@ -42,7 +41,7 @@ After you attach the SharePoint document library, you'll be able to view any cla
 > [!NOTE]
 > This section references code examples that are contained in the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) file that is included in the [Contracts Management Solution Assets repository](https://github.com/pnp/syntex-samples/tree/main/scenario%20samples/Contracts%20Management).
 
-While Teams lets you view your contracts in a tile view, you might want to customize it to view the contract data you want to make visible in the contract card. For example, for the **Contracts** tab, it is important for members to see the client, contractor, and fee amount on the contract card. All of these fields were extracted from each contract through your SharePoint Syntex model that was applied to your document library. You also want to be able to change the tile header bar to different colors for each status so that members can easily see where the contract is in the approval process. For example, all approved contracts will have a blue header bar.
+While Teams lets you view your contracts in a tile view, you might want to customize it to view the contract data you want to make visible in the contract card. For example, for the **Contracts** tab, it is important for members to see the client, contractor, and fee amount on the contract card. All of these fields were extracted from each contract through your Syntex model that was applied to your document library. You also want to be able to change the tile header bar to different colors for each status so that members can easily see where the contract is in the approval process. For example, all approved contracts will have a blue header bar.
 
    ![Tile view of SharePoint library.](../media/content-understanding/tile.png)
 
@@ -101,7 +100,7 @@ The following code lets you define the status of each title card. Note that each
 
 ## Extracted fields
 
-Each contract card will display three fields that were extracted for each contract (*Client*, *Contractor*, and *Fee Amount*). Additionally, you also want to display the time/date that the file was classified by the SharePoint Syntex model used to identify it.
+Each contract card will display three fields that were extracted for each contract (*Client*, *Contractor*, and *Fee Amount*). Additionally, you also want to display the time/date that the file was classified by the Syntex model used to identify it.
 
 In the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) file, the following sections define each of these.
 
