@@ -13,11 +13,13 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
+- demo
 ms.topic: article
 ms.subservice: mde
+ms.date: 10/21/2022
 ---
 
 # Network protection demonstrations
@@ -39,9 +41,9 @@ Set-MpPreference -EnableNetworkProtection Enabled
 
 |State | Mode| Numeric value |
 |:---|:---|:---|
-| AuditMode | = Audit Mode | 2 |
+| Disabled | = Off | 0 |
 | Enabled | = Block mode | 1 |
-| Disabled | = Off | 0 |d
+| Audit | = Audit mode | 2 |
 
 ## Verify configuration
 
