@@ -16,3 +16,8 @@ keywords:
 
 # Understand other app types for a managed environment
 
+## Other apps
+
+| App type | Description |
+|---|---|
+| Android Enterprise system apps | description |

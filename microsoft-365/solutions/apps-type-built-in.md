@@ -16,3 +16,13 @@ keywords:
 
 # Understand built-in apps for a managed environment
 
+When possible, instead of using store app types, we recommend that you use the built-in app type. By using the built-in app type, you have the additional flexibility to edit and delete Microsoft 365 apps.
+
+## Apps that are built-in
+
+| App type | Description |
+|---|---|
+| Built-in iOS/iPadOS app | Built-in iOS/iPadOS apps are specific apps that have been designed to work with Microsoft Intune.   |
+| Built-in Android app | Built-in Android app are specific apps that have been designed to work with Microsoft Intune. |
+
+

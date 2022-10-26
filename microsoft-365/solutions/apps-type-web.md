@@ -16,3 +16,12 @@ keywords:
 
 # Understand web apps in a managed environment
 
+## Apps on the web
+
+
+
+| App type | Description |
+|---|---|
+| iOS/iPadOS web clip | An iOS/iPadOS web clip is a shortcut that you assign to to iOS users or devices. The shortcut contains a URL that opens a browser. |
+| Windows web link | A Windows web link is a shortcut that you assign to to Windows users or devices. The shortcut contains a URL that opens a browser. |
+| Web link | A Web link is a shortcut that you assign to users or devices running iOS, Android, or Windows. This link is allows you to reach the same web location from multiple platforms (cross platform web app). |
