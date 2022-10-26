@@ -109,7 +109,7 @@ For a detailed list of supported Linux distros, see [System requirements](micros
 
 ## Network connectivity of Microsoft Defender for Endpoint
 
-The complete this step, you may need to engage with following in your organization:
+To complete this step, you may need to engage with following in your organization:
 
 - Firewall admin
 - Proxy admin
