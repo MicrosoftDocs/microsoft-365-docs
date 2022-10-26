@@ -103,8 +103,6 @@ For a detailed list of supported Linux distros, see [System requirements](micros
     `mdatp_audis_plugin`<br>
     `telemetryd_v2`<br>
 
-    > [!NOTE]
-    > (*): The processes are in /opt/microsoft/mdatp/sbin/.
 
     Exclude the following paths from the non-Microsoft antivirus product:
 
