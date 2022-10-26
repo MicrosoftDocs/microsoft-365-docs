@@ -10,6 +10,7 @@ manager: dansimp
 audience: Admin
 description: Learn how to strengthen your organization's security posture.
 ms.topic: tutorial
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
@@ -24,10 +25,6 @@ ms.collection:
 ---
 
 # Strengthen your security posture - Phase 1: Configure capabilities
-
-|![Phase 1: Prepare.](../../media/phase-diagrams/prepare.png) <br> Phase 1: Prepare|[![Phase 2: Set up](../../media/phase-diagrams/setup.png#lightbox)](migrate-to-defender-for-office-365-setup.md) <br> [Phase 2: Set up](migrate-to-defender-for-office-365-setup.md)|[![Phase 3: Onboard](../../media/phase-diagrams/onboard.png#lightbox)](migrate-to-defender-for-office-365-onboard.md) <br> [Phase 3: Onboard](migrate-to-defender-for-office-365-onboard.md)|
-|---|---|---|
-|*You are here!*|||
 
 Welcome to **Phase 1: Configure capabilities** to **[Strengthen your security posture](secure-posture-solution-overview.md)**! This migration phase provides guidance on how to configure the capabilities available to you:
 
