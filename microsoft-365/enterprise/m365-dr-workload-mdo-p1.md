@@ -36,7 +36,7 @@ Required Conditions:
 
 **Commitment:**
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-defender-for-office-p1-data-residency-commitments) for the specific customer data at rest commitment for Microsoft Defender for Office P1. 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-defender-for-office-p1) for the specific customer data at rest commitment for Microsoft Defender for Office P1. 
 
 
 ## Exchange Online Protection
