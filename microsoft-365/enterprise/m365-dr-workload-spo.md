@@ -18,36 +18,37 @@ ms.collection:
 
 # Data Residency for SharePoint Online and OneDrive for Business
 
-## **Data Residency commitments available**
+## **Data Residency Commitments Available**
 
-### Option 1: Privacy & Security Product Terms
+### Product Terms
+
+Required Conditions:
+
+- _Tenant_ has a sign up country included in _Local Region Geography_, the European Union or the United States.
+
+**Commitment:**
 
 *For current language please refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled "Location of Customer Data at Rest for Core Online Services".*
 
-**Commitment:**
-
->[!NOTE]
->Office 365 Services. If Customer provisions its tenant in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, or the United States, Microsoft will store the following Customer Data at rest only within that Geo (2) SharePoint Online site content and the files stored within that site, and (3) files uploaded to OneDrive for Business.
-
-### Option 2: Advanced Data Residency add-on
+### Advanced Data Residency add-on
 
 Required Conditions:
 
-1.Tenant has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
-1.Tenant has a valid Advanced Data Residency subscription for all users in the tenant.
-1. The SharePoint Online subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
+1._Tenant_ has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1._Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_.
+1.The SharePoint Online subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
 **Commitment:**
-The following customer data will be stored in the related _Geography_:
-SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business.
 
-### Option 3: Multi-Geo add-on
+Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for SharePoint Online and OneDrive for Business. 
+
+### Multi-Geo add-on
 
 Required Conditions:
 
-1. Tenants have a valid Multi-Geo subscription that covers all users assigned to a _Satellite Geography_
+1. _Tenants_ have a valid Multi-Geo subscription that covers all users assigned to a _Satellite Geography_
 1. Customer must have an active Enterprise Agreement.
-1.Total purchased Multi-Geo units must be greater than 5% of the total eligible seats in the tenant.
+1.Total purchased Multi-Geo units must be greater than 5% of the total eligible seats in the _Tenant_.
 
 **Commitment:**
 Customers can assign users of SharePoint Online/OneDrive for Business to any _Satellite Geography_ supported by Multi-Geo (see Section 4.1.3). The following customer data will be stored in the relevant _Satellite Geography_:
@@ -78,9 +79,9 @@ Setting up and managing your Multi-Geo environment is done through the SharePoin
 
 #### **SharePoint storage quotas in multi-geo environments**
 
-By default, all _Geography_ locations of a multi-geo environment share the available tenant storage quota.
+By default, all _Geography_ locations of a multi-geo environment share the available _Tenant_ storage quota.
 
-With the SharePoint geo storage quota setting, you can manage the storage quota for each _Geography_ location. When you allocate a storage quota for a _Geography_ location, it becomes the maximum amount of storage available for that _Geography_ location, and is deducted from the available tenant storage quota. The remaining available tenant storage quota is then shared across the configured _Geography_ locations for which a specific storage quota has not been allocated.
+With the SharePoint geo storage quota setting, you can manage the storage quota for each _Geography_ location. When you allocate a storage quota for a _Geography_ location, it becomes the maximum amount of storage available for that _Geography_ location, and is deducted from the available _Tenant_ storage quota. The remaining available _Tenant_ storage quota is then shared across the configured _Geography_ locations for which a specific storage quota has not been allocated.
 
 The SharePoint storage quota for any _Geography_ location can be allocated by the SharePoint Online administrator by connecting to the _Primary Provisioned Geography_. _Geography_ administrators for _Satellite Geography_ locations can view the storage quota but cannot allocate it.
 
@@ -143,7 +144,7 @@ You can schedule OneDrive site moves in advance (described later in this article
 -The maximum size of a OneDrive that can be moved is 1 terabyte (1 TB).
 
 #### **Moving a OneDrive site**
-To perform a OneDrive _Geography_ move, the tenant administrator must first set the user's Preferred Data Location (PDL) to the appropriate _Geography_ location. Once the PDL is set, wait for at least 24 hours for the PDL update to sync across the _Geography_ locations before starting the OneDrive _Geography_ move.
+To perform a OneDrive _Geography_ move, the _Tenant_ administrator must first set the user's Preferred Data Location (PDL) to the appropriate _Geography_ location. Once the PDL is set, wait for at least 24 hours for the PDL update to sync across the _Geography_ locations before starting the OneDrive _Geography_ move.
 
 When using the _Geography_ move cmdlets, connect to SPO Service at the user's current OneDrive _Geography_ location, using the following syntax:
 
@@ -402,8 +403,8 @@ You can stop a SharePoint site _Geography_ move, provided the move is not in pro
 
 You can determine the status of a site move in our out of the _Geography_ that you are connected to by using the following cmdlets:
 
-- [Get-SPOSiteContentMoveState](https://learn.microsoft.com/powershell/module/sharepoint-online/get-spositecontentmovestate) (non-Group-connected sites)
-- [Get-SPOUnifiedGroupMoveState](https://learn.microsoft.com/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (Group-connected sites)
+- [Get-SPOSiteContentMoveState](/powershell/module/sharepoint-online/get-spositecontentmovestate) (non-Group-connected sites)
+- [Get-SPOUnifiedGroupMoveState](/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (Group-connected sites)
 
 Use the `-SourceSiteUrl` parameter to specify the site for which you want to see move status.
 
@@ -491,7 +492,7 @@ This article is for Global or SharePoint administrators who have created a Multi
 These instructions will allow you to enable SharePoint in your _Satellite Geography_ location, so your Multi-Geo satellite users can take advantage of both OneDrive and SharePoint Multi-Geo capabilities in O365.
 
 >[!IMPORTANT]
->Please note that this is a one way enablement. Once you set SPO mode, you will not be able to revert your tenant to OneDrive only Multi-Geo mode without an escalation with support.
+>Please note that this is a one way enablement. Once you set SPO mode, you will not be able to revert your _Tenant_ to OneDrive only Multi-Geo mode without an escalation with support.
 
 #### **To set a _Geography_ location into SPO Mode**
 
@@ -501,7 +502,7 @@ To set a _Geography_ location into SPO mode, connect to the _Geography_ location
 2. Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com" -Credential $credential
 3. Set-SPOMultiGeoExperience</br></br>
 ![Set-SPOMultiGeoExperience.](../media/Set-SPO-MultiGeo.jpg)
-4. This operation usually takes about an hour while we perform various publish backs in the service and re-stamp your tenant. After at least 1 hour, please perform a Get-SPOMultiGeoExperience.  This will show you whether this _Geography_ location is in SPO mode.</br></br>
+4. This operation usually takes about an hour while we perform various publish backs in the service and re-stamp your _Tenant_. After at least 1 hour, please perform a Get-SPOMultiGeoExperience.  This will show you whether this _Geography_ location is in SPO mode.</br></br>
 ![Image of Set-SPOMultiGeoExperience.](../media/Get-SPO-MultiGeo.jpg)
 
 >[!Note]
@@ -542,4 +543,4 @@ As part of the migration, the _Primary Provisioned Geography_ will change and al
 
 ## How can I determine customer data location?
 
-You can find the actual data location in Tenant Admin Center.  As a tenant administrator you can find the actual data location, for committed data,  by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location. If you do not have a tenant created, you can have a tenant created when signing up for a M365 trial.
+You can find the actual data location in _Tenant_ Admin Center.  As a _Tenant_ administrator you can find the actual data location, for committed data,  by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location. If you do not have a _Tenant_ created, you can have a _Tenant_ created when signing up for a M365 trial.
