@@ -22,6 +22,13 @@ ms.collection:
 
 Use the following guidance to determine where your data is located. Please reference your _tenant_ _Default Geography_.
 
+
+### Azure Active Directory (AAD)
+
+Please refer to [Azure Active Directory Data Locations](https://msit.powerbi.com/view?r=eyJrIjoiZmMyODcxZWMtMWY4ZS00N2Q1LTgzNGQtYzQzODZhMDlmM2NmIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9).
+
+Note: When you use other services or applications in conjunction with  Active Directory service, those services or applications may move, copy, or access Active Directory data from any location. For example, when you use your Azure subscription, Active Directory data will be moved, copied and accessed by your end users from the Azure service.  
+
 ### Forms
 Tenants in EU member Countries maintain data in _Macro Region Geography 1 – EMEA_. All other tenants have customer data stored in the United States.
 
