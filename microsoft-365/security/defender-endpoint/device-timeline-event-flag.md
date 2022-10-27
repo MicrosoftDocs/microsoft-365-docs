@@ -54,7 +54,7 @@ The Defender for Endpoint device timeline helps you research and investigate ano
 
 - Defined filters are now visible at the top of the timeline: 
 
-    :::image type="content" source="images/new-timeline- highlight.png" alt-text="Screenshot of defined filters." lightbox="images/new-timeline- highlight.png":::
+    :::image type="content" source="images/new-timeline-highlight.png" alt-text="Screenshot of defined filters." lightbox="images/new-timeline-highlight.png":::
 
 ## Techniques in the device timeline
 
