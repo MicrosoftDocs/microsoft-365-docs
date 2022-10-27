@@ -59,7 +59,7 @@ Capability summary: Microsoft Purview Audit (Premium) builds on the capabilities
 
 Commitment:
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#purview-audit-premium-data-residency-commitments) for the specific Customer Data at rest commitment for Purview Audit (Premium). 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#purview-audit-premium) for the specific Customer Data at rest commitment for Purview Audit (Premium). 
 
 
 ### Data lifecycle management - Data Retention
