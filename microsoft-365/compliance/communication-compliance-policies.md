@@ -148,6 +148,7 @@ The following table outlines the time to detection for supported content types:
 | Teams modern attachment | 13 hours |
 | Teams metadata | 1 hour |
 | Email metadata | 1 hour |
+| Teams shared channels | 13 hours |
 
 For existing policies created before July 31, 2022 it may take up to 24 hours to detect messages and review alerts that match these policies. To reduce the latency for these policies, [copy the existing policy](/microsoft-365/compliance/communication-compliance-policies#copy-a-policy) and create a new policy from the copy. If you don't need to retain any data from the older policy, it can be paused or deleted.
 
