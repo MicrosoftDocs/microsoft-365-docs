@@ -20,7 +20,7 @@ ms.collection:
 
 ## Summary
 
-Service documentation: [Office 365 Security including Microsoft Defender for Office 365 and Exchange Online Protection](https://learn.microsoft.com/microsoft-365/security/office-365-security/defender-for-office-365)
+Service documentation: [Office 365 Security including Microsoft Defender for Office 365 and Exchange Online Protection](/microsoft-365/security/office-365-security/defender-for-office-365)
 
 Capability Summary: Protects email and collaboration from zero-day malware, phish, and business email compromise.  MDO P1 builds on Exchange Online Protection (EOP).  
 
@@ -43,7 +43,7 @@ Please refer to the Advanced Data Residency Commitment page (***TODO: link to ne
 
 ### Summary
 
-Service documentation: [Exchange Online Protection (EOP) overview](https://learn.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview)
+Service documentation: [Exchange Online Protection (EOP) overview](/microsoft-365/security/office-365-security/exchange-online-protection-overview)
 
 Capability summary: Exchange Online Protection (EOP) is the cloud-based filtering service that protects your organization against spam, malware, and other email threats.
 
