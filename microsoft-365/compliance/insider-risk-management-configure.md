@@ -170,11 +170,11 @@ Insider risk management supports importing user and log data imported from 3rd-p
 
 The Microsoft 365 HR connector is required when using the following policy templates:
 
-- Data leaks by disgruntled users
+- Data leaks by risky users
 - Departing user data theft
 - General patient data misuse
 - Security policy violations by departing users
-- Security policy violations by disgruntled users
+- Security policy violations by risky users
 
 See the [Set up a connector to import HR data](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization. After you've configured the HR connector, return to these configuration steps.
 
@@ -357,7 +357,7 @@ Insider risk management policies include assigned users and define which types o
 
     If you've selected other policy templates, custom triggering events aren't supported. The built-in policy triggering events apply and you'll continue to Step 23 without defining policy attributes.
 
-14. If you've selected the *Data leaks by disgruntled users* or *Security policy violations by disgruntled users* templates, you'll see options on the **Triggers for this policy** page for integration with communication compliance and HR data connector events. You have the choice to assign risk scores when users send messages that contain potentially threatening, harassing, or discriminatory language or to bring users into the the policy scope after disgruntlement events are reported in your HR system. If you select the **Disgruntlement triggers from communication compliance (preview)** option, you can accept the default communication compliance policy (automatically created), choose a previously created policy scope for this trigger, or create another scoped policy. If you select **HR data connector events**, you must configure a HR data connector for your organization.
+14. If you've selected the *Data leaks by risky users* or *Security policy violations by risky users* templates, you'll see options on the **Triggers for this policy** page for integration with communication compliance and HR data connector events. You have the choice to assign risk scores when users send messages that contain potentially threatening, harassing, or discriminatory language or to bring users into the the policy scope after risky user events are reported in your HR system. If you select the **Risk triggers from communication compliance (preview)** option, you can accept the default communication compliance policy (automatically created), choose a previously created policy scope for this trigger, or create another scoped policy. If you select **HR data connector events**, you must configure a HR data connector for your organization.
 15. Select **Next** to continue.
 16. If you've selected the *General data leaks* or *Data leaks by priority users* templates and have selected the **User performs an exfiltration activity and associated indicators**, you can choose custom or default thresholds for the indicator triggering events that you've selected. Choose either the **Use default thresholds (Recommended)** or **Use custom thresholds for the triggering events**.
 17. Select **Next** to continue.
