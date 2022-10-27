@@ -23,7 +23,7 @@ The required conditions for the related commitments for the services described b
 
 1. _Tenant_ has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_.
-1. The Purview service customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. The Purview service Customer Data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
 ## Migration
 
@@ -45,7 +45,7 @@ Capability summary: Microsoft Purview Audit (Standard) provides you with the abi
 
 Commitment:
 
-Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for Purview Audit (Standard). 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#purview-audit-standard-data-residency-commitments) for the specific Customer Data at rest commitment for Purview Audit (Standard). 
 
 ### Purview Audit (Premium)
 
@@ -59,7 +59,7 @@ Capability summary: Microsoft Purview Audit (Premium) builds on the capabilities
 
 Commitment:
 
-Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for Purview Audit (Premium). 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#purview-audit-premium-data-residency-commitments) for the specific Customer Data at rest commitment for Purview Audit (Premium). 
 
 
 ### Data lifecycle management - Data Retention
@@ -88,7 +88,7 @@ Capability summary: Lets you retain or delete content with policy management for
 
 Commitment:
 
-Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for Data lifecycle management - Data Retention. 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#data-lifecycle-management---data-retention-data-residency-commitments) for the specific Customer Data at rest commitment for Data lifecycle management - Data Retention. 
 
 ### Data lifecycle management - Records Management
 
@@ -102,7 +102,7 @@ Capability summary: Organizations of all types require a records-management solu
 
 Commitment:
 
-Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for Data lifecycle management - Records Management. 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#data-lifecycle-management---records-management-data-residency-commitments) for the specific Customer Data at rest commitment for Data lifecycle management - Records Management. 
 
 ### Information Protection - Sensitivity labels
 
@@ -127,7 +127,7 @@ Capability summary: Sensitivity labels from Microsoft Purview Information Protec
 
 Commitment:
 
-Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for Information Protection - Sensitivity labels. 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#information-protection---sensitivity-labels-data-residency-commitments) for the specificCustomer Data at rest commitment for Information Protection - Sensitivity labels. 
 
 ### Information Protection - Data Loss Prevention (DLP)
 
@@ -158,7 +158,7 @@ DLP detects sensitive items by using deep content analysis, not by just a simple
 
 Commitment:
 
-Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for Data lifecycle management - Records Management. 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#information-protection---data-loss-prevention-dlp-data-residency-commitments) for the specific Customer Data at rest commitment for Information Protection - Data Loss Prevention (DLP). 
 
 ### Information Protection - Office Message Encryption
 
@@ -177,7 +177,7 @@ Capability summary: With Office 365 Message Encryption, your organization can se
 
 Commitment:
 
-Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for Information Protection - Office Message Encryption. 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#information-protection---office-message-encryption-data-residency-commitments) for the specific Customer Data at rest commitment for Information Protection - Office Message Encryption. 
 
 ### Insider Risk Management - Information Barriers
 
@@ -191,4 +191,4 @@ Capability summary: Microsoft Purview Information Barriers (IB) is a compliance 
 
 Commitment:
 
-Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for Insider Risk Management - Information Barriers. 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#insider-risk-management---information-barriers-data-residency-commitments) for the specific Customer Data at rest commitment for Insider Risk Management - Information Barriers. 
