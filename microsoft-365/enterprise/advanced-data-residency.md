@@ -140,8 +140,8 @@ The first step is to purchase the ADR SKU; check with your Microsoft representat
 
 [Legacy Move Program](m365-dr-legacy-move-program.md)
   
-[New datacenter geos for Microsoft Dynamics CRM Online](https://learn.microsoft.com/power-platform/admin/new-datacenter-regions?branch=main)
+[New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions?branch=main)
   
 [Azure services by region](https://azure.microsoft.com/regions/)
 
-[Teams experience in a Microsoft 365 Multi-Geo-enabled tenancy](https://learn.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo?branch=main)
+[Teams experience in a Microsoft 365 Multi-Geo-enabled tenancy](/microsoftteams/teams-experience-o365odb-spo-multi-geo?branch=main)
