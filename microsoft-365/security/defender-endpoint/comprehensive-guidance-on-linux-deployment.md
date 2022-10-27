@@ -521,13 +521,13 @@ To ensure that the device is correctly onboarded and reported to the service, ru
 
 ## Diagnostic and troubleshooting resources
 
-- [Installation issues of Microsoft Defender for Endpoint on Linux](linux-support-install.md).
+- [Microsoft Defender for Endpoint on Linux installation issues](linux-support-install.md).
 - [Troubleshooting log installation issues](linux-resources.md#log-installation-issues).
 - [Troubleshooting steps for environments without proxy or with transparent proxy](linux-support-connectivity.md#troubleshooting-steps-for-environments-without-proxy-or-with-transparent-proxy).  
 - [Troubleshooting steps for environments with static proxy](linux-support-connectivity.md#troubleshooting-steps-for-environments-with-static-proxy).
 - [Known issues](linux-resources.md).
 - [Collect diagnostic information](linux-resources.md#collect-diagnostic-information).
-- [Uninstall](linux-resources.md#uninstall).
+- [Uninstall Defender for Endpoint on Linux](linux-resources.md#uninstall-defender-for-endpoint-on-linux).
 
 
 ## Advanced Microsoft Defender for Endpoint capabilities
