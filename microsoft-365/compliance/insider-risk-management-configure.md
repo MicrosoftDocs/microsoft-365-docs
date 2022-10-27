@@ -260,7 +260,7 @@ Before configuring a policy, define the following insider risk settings:
     - [Microsoft Defender for Endpoint alert statuses](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses)
     - [Domains](insider-risk-management-settings.md#domains)
     - [Sensitive info type exclusion](insider-risk-management-settings.md#sensitive-info-types-exclusion-preview)
-    - [Trainable classifiers exclusion](insider-risk-management-settings.md#trainable-classifiers-exclusion-preview)
+    - [Trainable classifiers exclusion](insider-risk-management-settings.md#trainable- classifier-exclusion-preview)
     - [File path exclusions](insider-risk-management-settings.md#file-path-exclusions)
     - [Site exclusions](insider-risk-management-settings.md#site-exclusions)
     - [Keyword exclusion](insider-risk-management-settings.md#keyword-exclusion)
