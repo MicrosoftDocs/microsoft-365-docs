@@ -26,20 +26,18 @@ Capability summary: Office for the web (formerly Office Web Apps) opens Word, Ex
 
 ## Data Residency commitments available
 
-### Option 1: Advanced Data Residency add-on
+### Advanced Data Residency add-on
 
 Required Conditions:
 
 
-1. Tenant has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
-1. Tenant has a valid _Advanced Data Residency_ subscription for all users in the tenant.
-1. The MDO P1 subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. _Tenant_ has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. _Tenant_ has a valid _Advanced Data Residency_ subscription for all users in the _Tenant_.
+1. The Office for the Web subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
 **Commitment:**
 
-The following customer data will be stored in the related _Geography_:
-
-- Cached documents that users open will be stored in the relevant _Geography_.
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#office-for-the-web-data-residency-commitments) for the specific customer data at rest commitment for Office for the Web.
 
 ### Migration
 
@@ -47,4 +45,4 @@ The cache for documents are not migrated to the new _Geography_, and will be ree
 
 ### How can I determine customer data location?
 
-We are in the process of updating the actual data location in Tenant Admin Center. When this change is complete you will be able to see the actual data location, for committed data, by navigating to Admin|Settings|Org Settings|Organization Profile|Data Location. Until that change is visible, you can view the Exchange Online data or SharePoint Online location information in order to understand where your committed data is stored for this service.
+We are in the process of updating the actual data location in _Tenant_ Admin Center. When this change is complete you will be able to see the actual data location, for committed data, by navigating to Admin|Settings|Org Settings|Organization Profile|Data Location. Until that change is visible, you can view the Exchange Online data or SharePoint Online location information in order to understand where your committed data is stored for this service.
