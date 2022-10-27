@@ -45,7 +45,7 @@ Capability summary: Microsoft Purview Audit (Standard) provides you with the abi
 
 Commitment:
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#purview-audit-standard-data-residency-commitments) for the specific Customer Data at rest commitment for Purview Audit (Standard). 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#purview-audit-standard) for the specific Customer Data at rest commitment for Purview Audit (Standard). 
 
 ### Purview Audit (Premium)
 
@@ -88,7 +88,7 @@ Capability summary: Lets you retain or delete content with policy management for
 
 Commitment:
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#data-lifecycle-management---data-retention-data-residency-commitments) for the specific Customer Data at rest commitment for Data lifecycle management - Data Retention. 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#data-lifecycle-management---data-retention) for the specific Customer Data at rest commitment for Data lifecycle management - Data Retention. 
 
 ### Data lifecycle management - Records Management
 
@@ -102,7 +102,7 @@ Capability summary: Organizations of all types require a records-management solu
 
 Commitment:
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#data-lifecycle-management---records-management-data-residency-commitments) for the specific Customer Data at rest commitment for Data lifecycle management - Records Management. 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#data-lifecycle-management---records-management) for the specific Customer Data at rest commitment for Data lifecycle management - Records Management. 
 
 ### Information Protection - Sensitivity labels
 
@@ -127,7 +127,7 @@ Capability summary: Sensitivity labels from Microsoft Purview Information Protec
 
 Commitment:
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#information-protection---sensitivity-labels-data-residency-commitments) for the specificCustomer Data at rest commitment for Information Protection - Sensitivity labels. 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#information-protection---sensitivity-labels) for the specificCustomer Data at rest commitment for Information Protection - Sensitivity labels. 
 
 ### Information Protection - Data Loss Prevention (DLP)
 
@@ -158,7 +158,7 @@ DLP detects sensitive items by using deep content analysis, not by just a simple
 
 Commitment:
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#information-protection---data-loss-prevention-dlp-data-residency-commitments) for the specific Customer Data at rest commitment for Information Protection - Data Loss Prevention (DLP). 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#information-protection---data-loss-prevention-dlp) for the specific Customer Data at rest commitment for Information Protection - Data Loss Prevention (DLP). 
 
 ### Information Protection - Office Message Encryption
 
@@ -177,7 +177,7 @@ Capability summary: With Office 365 Message Encryption, your organization can se
 
 Commitment:
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#information-protection---office-message-encryption-data-residency-commitments) for the specific Customer Data at rest commitment for Information Protection - Office Message Encryption. 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#information-protection---office-message-encryption) for the specific Customer Data at rest commitment for Information Protection - Office Message Encryption. 
 
 ### Insider Risk Management - Information Barriers
 
@@ -191,4 +191,4 @@ Capability summary: Microsoft Purview Information Barriers (IB) is a compliance 
 
 Commitment:
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#insider-risk-management---information-barriers-data-residency-commitments) for the specific Customer Data at rest commitment for Insider Risk Management - Information Barriers. 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#insider-risk-management---information-barriers) for the specific Customer Data at rest commitment for Insider Risk Management - Information Barriers. 
