@@ -41,7 +41,7 @@ This article provides information about:
 
 Security defaults were designed to help protect your company's user accounts from the start. When turned on, security defaults provide secure default settings that help keep your company safe by:
 
-- Requiring all users and admins to register for MFA using the (Microsoft Authenticator app)[../authentication/concept-authentication-authenticator-app.md] or any third-party application using (OATH TOTP)[../authentication/concept-authentication-oath-tokens.md#oath-software-tokens].
+- Requiring all users and admins to register for MFA using the [Microsoft Authenticator app](../authentication/concept-authentication-authenticator-app.md) or any third-party application using [OATH TOTP](../authentication/concept-authentication-oath-tokens.md#oath-software-tokens).
 - Challenging users with MFA, mostly when they show up on a new device or app, but more often for critical roles and tasks.
 - Disabling authentication from legacy authentication clients that can't do MFA.
 - Protecting admins by requiring extra authentication every time they sign in.
