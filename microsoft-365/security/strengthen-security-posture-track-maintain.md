@@ -26,25 +26,25 @@ ms.collection:
 
 # Strengthen your security posture - Phase 4: Track and maintain
 
-Welcome to **PPhase 4: Track and maintain** in our **[Strengthen your security posture](/security-posture-solution-overview.md)** solution.
+Welcome to **Phase 4: Track and maintain** in our **[Strengthen your security posture](/security-posture-solution-overview.md)** solution.
 
 This phase provides guidance on how you can assess your organization and how to start protecting straight away with the following features:
 
-1. [Assess your devices](#1-assess-your-devices)
-2. [Assign device value](#2-assign-device-value)
-3. [Onboard newly discovered endpoints](#3-onboard-newly-discovered-endpoints)
 
-## 1. Assess your devices
+[Understand your exposure to zero days threats](../security/defender-vulnerability-management/tvm-zero-day-vulnerabilities.md)|
 
-[Assess your devices](../security/defender-endpoint/machine.md)
+1. [Enable email notifications for new vulnerabilities](#1-enable-email-notifications-for-new-vulnerabilities)
+2. [Hunt for threats with advanced hunting](#2-hunt-for-threats-with-advanced-hunting)
+3. [Understand your exposure to zero days threats](#3-understand-your-exposure-to-zero-days-threats)
 
-## 2. Assign device value
+## 1. Enable email notifications for new vulnerabilities
 
-[Assign device value](../security/defender-vulnerability-management/tvm-assign-device-value.md)
+[Enable email notifications for new vulnerabilities](../security/defender-endpoint/configure-email-notifications.md)
 
-## 3. Onboard newly discovered endpoints
+## 2. Hunt for threats with advanced hunting
 
-## Next step
+[Hunt for threats with advanced hunting](../security/defender/advanced-hunting-overview.md)
 
-- Proceed to [Phase 3: Investigate and improve](/strengthen-security-posture-investigate-improve.md).
+## 3. Understand your exposure to zero days threats
 
+[Understand your exposure to zero days threats](#3-understand-your-exposure-to-zero-days-threats)

@@ -60,15 +60,9 @@ For more information, see [Strengthen your security posture - Phase 2: Assess an
 
 ## 3. Investigate and improve
 
-[Review Secure Score](../security/defender/microsoft-secure-score.md)
-
 For more information, see [Strengthen your security posture - Phase 3:Investigate and improve](strengthen-security-posture-investigate-improve.md)
 
 ## 4. Track and maintain
-
-Enable email notifications for new vulnerabilities](../security/defender-endpoint/configure-email-notifications.md)
-[Hunt for threats with advanced hunting](../security/defender/advanced-hunting-overview.md)
-[Understand your exposure to zero days threats](../security/defender-vulnerability-management/tvm-zero-day-vulnerabilities.md)|
 
 For more information, see [Strengthen your security posture - Phase 4:Track and maintain](strengthen-security-posture-track-maintain.md)
 
