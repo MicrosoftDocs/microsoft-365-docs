@@ -177,7 +177,7 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
 - If you're not using a third-party antivirus for your Linux servers:
    - Get a list of all your Linux applications and check the vendors website for exclusions.  
    
-- If you're running a non-Microsoft antivirus product, then add the processes/paths to the Microsoft Defender for Endpoint antivirus exclusion list. For more information, see [Binary name and installation path changes with Endpoint Security for Linux 10.6.6](https://kcm.trellix.com/corporate/index?page=content&id=KB92028). For more information, check the non-Microsoft antivirus documentation or contact their support. 
+- If you're running a non-Microsoft antimalware product, then add the processes/paths to the Microsoft Defender for Endpoint's AV exclusion list. For more information, see [Binary name and installation path changes with Endpoint Security for Linux 10.6.6](https://kcm.trellix.com/corporate/index?page=content&id=KB92028). For more information, check the non-Microsoft antimalware documentation or contact their support. 
 
  
 - If you are testing on one machine, you can use a command line to set up the exclusions:
