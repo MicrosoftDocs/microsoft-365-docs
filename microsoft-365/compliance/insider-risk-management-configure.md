@@ -230,7 +230,9 @@ You can also decide to boost risk scores when a user is in a priority user group
 
 - **Frequency of accessing sensitive content compared to others in the organizaiton**: This includes content with Microsoft Information Protection sensitive information types and labels, and content configured as priority content.  .
 
-- **Level-from-top hierarchy in the organization**: Use if you have organizational hierarchy configured in Azure Active Directory and Azure Blast radius is available for your organization. To learn more about Azure Blast Radius, see [Investigate risky users](/defender-cloud-apps/tutorial-ueba).  
+- **User's level-from-top in organization hierarchy**: Use if you have organizational hierarchy configured in Azure Active Directory.  [Investigate risky users](/defender-cloud-apps/tutorial-ueba).
+
+
 
 - **Cumulative reports**: Use if you have organizational hierarchy configured in Azure Active Directory and Azure Blast radius is available for your organization. To learn more about Azure Blast Radius, see [Investigate risky users](/defender-cloud-apps/tutorial-ueba).
 
