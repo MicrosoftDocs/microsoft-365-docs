@@ -41,7 +41,8 @@ See the following links to understand workload data location.
   - Data Loss Prevention
   - Office Message Encryption
   - Information Barriers
-- Whiteboard [Data Location](m365-dr-workload-exo.md#how-can-i-determine-customer-data-location)
+- Azure Active Directory [Data Location](m365-dr-workload-other.md#Azure Active Directory-aad)
+- Whiteboard [Data Location](m365-dr-workload-other.md#Whiteboard)
 - Forms [Data Location](m365-dr-workload-other.md#forms)
 - Intune [Data Location](m365-dr-workload-other.md#intune)
 - Planner [Data Location](m365-dr-workload-other.md#planner)
