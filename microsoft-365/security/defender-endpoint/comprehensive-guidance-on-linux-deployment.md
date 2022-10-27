@@ -66,7 +66,7 @@ The following are the supported Linux servers:
 
 |RHEL* version supported|Commercial|GCC-Moderate|GCC-High (aka MAG)|
 |---|---|---|---|
-|RHEL 6.8-6.10 |Design partner program|General Availability (GA)|General Availability (GA)|
+|RHEL 6.8-6.10 |Design partner program|Public preview|Public preview|
 |RHEL 7.x |Design partner program|General Availability (GA)|General Availability (GA)|
 |RHEL 8.x|Design partner program|General Availability (GA)|General Availability (GA)|
 |RHEL 9.x|Design partner program|General Availability (GA)|General Availability (GA)|
@@ -177,11 +177,9 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
 - If you're not using a third-party antivirus for your Linux servers:
    - Get a list of all your Linux applications and check the vendors website for exclusions.  
    
-- If you're running McAfee antivirus for Linux, then add the processes/paths to the exclusion. For more information, see [Binary name and installation path changes with Endpoint Security for Linux 10.6.6](https://kcm.trellix.com/corporate/index?page=content&id=KB92028).
+- If you're running a non-Microsoft antivirus product, then add the processes/paths to the Microsoft Defender for Endpoint antivirus exclusion list. For more information, see [Binary name and installation path changes with Endpoint Security for Linux 10.6.6](https://kcm.trellix.com/corporate/index?page=content&id=KB92028). For more information, check the non-Microsoft antivirus documentation or contact their support. 
 
-   >[!NOTE]
-   >If your version is not in this list, please search their KB article or contact their support. 
-  
+ 
 - If you are testing on one machine, you can use a command line to set up the exclusions:
   - [Configure from the command line](linux-resources.md#configure-from-the-command-line).
   - [Configure and validate exclusions for Microsoft Defender for Endpoint on  Linux](linux-exclusions.md).
@@ -313,7 +311,7 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
           "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
        }
     }
-      ```
+    ```
 
     > [!NOTE]
     >  In Linux (and macOS) we support paths where it starts with a wildcard.
@@ -354,7 +352,7 @@ The following table lists the processes that may cause a high CPU usage:
 
 |Process name|Component used|MDE engine used|
 |---|---|---|
-|wdavdaemon|FANotify|EPP & EDR|
+|wdavdaemon|FANotify| AV & EDR|
 |wdavdaemon_unprivileged||AV engine|
 |wdavdaemon_edr||EDR engine|
 |mdatp_audisp_plugin|audit framework|Audit log ingestion|
@@ -373,7 +371,7 @@ The following diagram shows the workflow and steps required in order to add anti
 :::image type="content" source="images/unprivileged-plugins.png" alt-text="This is unpriviledged sensors":::
 
 - See [troubleshoot performance issues for Microsoft Defender for Endpoint for Linux](linux-support-perf.md) .
-- If you have in-house apps/scripts or a legitimate third-party app/script getting flagged, Microsoft security researchers analyze suspicious files to determine if they are threats, unwanted applications, or normal files. Submit files you think are malware or files that you believe have been incorrectly classified as malware by using the following link [File submission](https://www.microsoft.com/en-us/wdsi/filesubmission).
+- If you have in-house apps/scripts or a legitimate third-party app/script getting flagged, Microsoft security researchers analyze suspicious files to determine if they are threats, unwanted applications, or normal files. Submit files you think are malware or files that you believe have been incorrectly classified as malware by using the unified submissions experience (for more information, see [Unified submissions experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770)) or [File submissions](https://www.microsoft.com/en-us/wdsi/filesubmission).
 
 ### Check the wdavdaemon (FANotify) process
 
