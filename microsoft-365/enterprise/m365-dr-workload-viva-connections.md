@@ -36,7 +36,7 @@ Required Conditions:
 
 **Commitment:**
 
-Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for Viva Connections. 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#viva-connections-data-residency-commitments) for the specific customer data at rest commitment for Viva Connections. 
 
 ### Migration
 
