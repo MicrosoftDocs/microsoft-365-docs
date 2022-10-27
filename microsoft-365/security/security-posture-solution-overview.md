@@ -54,14 +54,9 @@ For more information, see [Strengthen your security posture - Phase 1: Configure
 
 ## 2. Assess and protect
 
-[Assess your devices](../security/defender-endpoint/machine.md)
-
-[Assign device value](../security/defender-vulnerability-management/tvm-assign-device-value.md)
-
-Onboard newly discovered endpoints
+This phase provides guidance on how you can assess your organization and how to start protecting straight away:
 
 For more information, see [Strengthen your security posture - Phase 2: Assess and protect](/strengthen-security-posture-assess-protect.md)
-
 
 ## 3. Investigate and improve
 

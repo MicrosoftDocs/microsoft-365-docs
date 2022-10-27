@@ -8,7 +8,7 @@ ms.author: siosulli
 author: siosulli
 manager: dansimp
 audience: Admin
-description: Learn how to strengthen your organization's security posture.
+description: Learn how to strengthen your organization's security posture - configure capabilities.
 ms.topic: tutorial
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
@@ -54,4 +54,4 @@ Use [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-
 
 ## Next step
 
-- Proceed to [Phase 2: Assess and protect](/security-posture-solution-overview.md).
+- Proceed to [Phase 2: Assess and protect](/strengthen-security-posture-assess-protect.md).
