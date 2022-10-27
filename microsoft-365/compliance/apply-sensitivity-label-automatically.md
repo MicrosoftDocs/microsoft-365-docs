@@ -114,7 +114,7 @@ However, the behavior is a little different for client-side auto-labeling (auto-
 
 - If a file is not already labeled, the highest order (highest priority) sublabel that's configured for automatic labeling is always selected, rather than the highest order sublabel that's configured for recommended labeling. If none of these sublabels are configured for automatic labeling but only recommended labeling, the highest order sublabel is selected.
 
-- If a file is already labeled with a sublabel from the same parent (highest priority), no action is taken and the existing sublabel remains. This behavior applies even if the existing label wasn't manually applied. For example, it was previously automatically applied.
+- If a file is already labeled with a sublabel from the same parent (highest priority), no action is taken and the existing sublabel remains. This behavior applies even if the existing sublabel was a default label or automatically applied.
 
 For more information about label priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).
 
