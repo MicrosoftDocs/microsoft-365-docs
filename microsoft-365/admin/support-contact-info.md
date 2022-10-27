@@ -3873,7 +3873,7 @@ Chinese and English: Monday through Friday, 9 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Chinese and English phone support: Monday through Friday, 9 AM-9 PM\
+Chinese and English phone support: Monday through Friday, 9 AM-6 PM\
 Chinese and English online support (through the admin center): 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
