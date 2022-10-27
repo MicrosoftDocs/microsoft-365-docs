@@ -51,7 +51,7 @@ This article describes how to deploy Microsoft Defender for Endpoint on Linux ma
 Before you get started, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.
 
 > [!WARNING]
-> Upgrading your operating system to a new major version after the product installation requires the product to be reinstalled. You need to [Uninstall](linux-resources.md#uninstall) the existing Defender for Endpoint on Linux, upgrade the operating system, and then reconfigure Defender for Endpoint on Linux following the below steps.
+> Upgrading your operating system to a new major version after the product installation requires the product to be reinstalled. You need to [Uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux) the existing Defender for Endpoint on Linux, upgrade the operating system, and then reconfigure Defender for Endpoint on Linux following the below steps.
 
 ## Configure the Linux software repository
 
@@ -460,7 +460,7 @@ See [Log installation issues](linux-resources.md#log-installation-issues) for mo
 
 ## Uninstallation
 
-See [Uninstall](linux-resources.md#uninstall) for details on how to remove Defender for Endpoint on Linux from client devices.
+See [Uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux) for details on how to remove Defender for Endpoint on Linux from client devices.
 
 ## See also
 
