@@ -17,7 +17,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.reviewer: mkaminska
 ---
@@ -71,8 +71,7 @@ To Assign these permissions:
 
 For more information about user role management, see [Create and manage roles for role-based access control](user-roles.md).
 
-## Microsoft Defender Antivirus health tab  
-
+## Microsoft Defender Antivirus health tab 
 The Microsoft Defender Antivirus health tab contains eight cards that report on several aspects of Microsoft Defender Antivirus in your organization:
 
 Two cards, [Antivirus mode card](#antivirus-mode-card) and [Recent antivirus scan results card](#recent-antivirus-scan-results-card), report about Microsoft Defender Antivirus functions.
@@ -102,7 +101,7 @@ Up to date reporting generates information for devices that meet the following c
 - Cloud protection enabled
 - Windows OS*
 
-*Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under “No data available”/Unknown
+*Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under "No data available"/Unknown
 
 >:::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Shows the Microsoft Defender Antivirus Health tab." lightbox="images/device-health-defender-antivirus-health-tab.png":::
 
@@ -117,7 +116,7 @@ If the version number that you clicked on is:
 - A current version, then **Remediation required** and **Security recommendation** aren't present
 - An outdated version, a notification at the top of the report is present, indicating **Remediation required**, and a **Security recommendation** link is present. Select the security recommendation link to navigate to the threat and vulnerability management console, which can recommend appropriate antivirus updates.
 
-To add or remove specific types of information on the **Microsoft Defender Antivirus details** flyout,  select **Customize Columns**. In **Customize Columns**, select or clear items to specify what you want included in the Microsoft Defender Antivirus details report.
+To add or remove specific types of information on the **Microsoft Defender Antivirus details** flyout, select **Customize Columns**. In **Customize Columns**, select or clear items to specify what you want included in the Microsoft Defender Antivirus details report.
 
 >:::image type="content" source="images/device-health-defender-antivirus-engine-version-details-custom-columns.png" alt-text="Shows custom column options for Microsoft Defender Antivirus health reporting." lightbox="images/device-health-defender-antivirus-engine-version-details-custom-columns.png":::
 
@@ -127,9 +126,9 @@ The following table contains a list of terms that are new to Microsoft Defender 
 
 | Column name | Description |
 |:---|:---|
-| Security intelligence publish time  | Indicates Microsoft’s release date of the security intelligence update version on the device. Devices with a security intelligence publish time greater than seven days are considered out of date in the reports. |
+| Security intelligence publish time | Indicates Microsoft's release date of the security intelligence update version on the device. Devices with a security intelligence publish time greater than seven days are considered out of date in the reports. |
 | Last seen | Indicates date when device last had connection. |
-| Data refresh timestamp  | Indicates when client events were last received for reporting on: AV mode, AV engine version, AV platform version, AV security intelligence version, and scan information. |
+| Data refresh timestamp | Indicates when client events were last received for reporting on: AV mode, AV engine version, AV platform version, AV security intelligence version, and scan information. |
 | Signature refresh time | Indicates when client events were last received for reporting on engine, platform, and signature up to date status. |
 
 Within the flyout: clicking on the name of the device will redirect you to the "Device page" for that device, where you can access detailed reports.
@@ -142,7 +141,7 @@ There are two levels of reports that you can export:
 
 There are two different export csv functionalities through the portal:
 
-- **Top-level export** You can use the top level **Export** button  to gather an all-up Microsoft Defender Antivirus health report (500-K limit).
+- **Top-level export** You can use the top level **Export** button to gather an all-up Microsoft Defender Antivirus health report (500-K limit).
 
 >:::image type="content" source="images/device-health-defender-antivirus-health-tab-export.png" alt-text="Shows the top-level export report button" lightbox="images/device-health-defender-antivirus-health-tab-export.png":::
 
@@ -203,7 +202,7 @@ Following are descriptions for each mode:
 
 - **Active** mode - In active mode, Microsoft Defender Antivirus is used as the primary antivirus app on the device. Files are scanned, threats are remediated, and detected threats are listed in your organization's security reports and in your Windows Security app.
 - **Passive** mode - In passive mode, Microsoft Defender Antivirus isn't used as the primary antivirus app on the device. Files are scanned, and detected threats are reported, but threats aren't remediated by Microsoft Defender Antivirus. IMPORTANT: Microsoft Defender Antivirus can run in passive mode only on endpoints that are onboarded to Microsoft Defender for Endpoint. See [Requirements for Microsoft Defender Antivirus to run in passive mode](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode).
-- **Disabled** mode  - synonymous with: uninstalled, disabled, sideBySidePassive, and Low Periodic Scan. When disabled, Microsoft Defender Antivirus isn't used. Files aren't scanned, and threats aren't remediated. In general, Microsoft doesn't recommend disabling or uninstalling Microsoft Defender Antivirus.
+- **Disabled** mode - synonymous with: uninstalled, disabled, sideBySidePassive, and Low Periodic Scan. When disabled, Microsoft Defender Antivirus isn't used. Files aren't scanned, and threats aren't remediated. In general, Microsoft doesn't recommend disabling or uninstalling Microsoft Defender Antivirus.
 - **Others** mode - Not running, Unknown
 - **EDR in Block** mode - In endpoint detection and response (EDR) blocked mode. See [Endpoint detection and response in block mode](edr-in-block-mode.md)
 
@@ -226,7 +225,7 @@ For more information on the current versions and how to update the different Mic
 #### Antivirus security intelligence version card
 
 Lists the most common _Microsoft Defender Antivirus security intelligence_ versions installed on devices on your network.
-Microsoft continually updates Microsoft Defender security intelligence to address the latest threats, and to refine detection logic. These refinements to security intelligence enhance Microsoft Defender Antivirus’ (and other Microsoft anti-malware solutions’) ability to accurately identify potential threats. This security intelligence works directly with cloud-based protection to deliver AI-enhanced, next-generation protection that is fast and powerful.
+Microsoft continually updates Microsoft Defender security intelligence to address the latest threats, and to refine detection logic. These refinements to security intelligence enhance Microsoft Defender Antivirus' (and other Microsoft anti-malware solutions') ability to accurately identify potential threats. This security intelligence works directly with cloud-based protection to deliver AI-enhanced, next-generation protection that is fast and powerful.
 
 ##### Antivirus platform version card
 
@@ -235,17 +234,17 @@ For more information on the current versions and how to update the different Mic
 
 #### Up-to-date cards
 
-The up-to-date cards show the up-to-date status for **Antivirus engine**, **Antivirus platform**, and **Security intelligence** update versions. There are three possible states: _Up to date_ (‘True’), _out of date_ (‘False’), and _no data available_ (‘Unknown’).
+The up-to-date cards show the up-to-date status for **Antivirus engine**, **Antivirus platform**, and **Security intelligence** update versions. There are three possible states: _Up to date_ ('True'), _out of date_ ('False'), and _no data available_ ('Unknown').
 
 > [!IMPORTANT]
 >
 > The logic used to make up-to-date determination has recently been enhanced and simplified. The new behavior is documented in this section.
 
-Definitions for  _Up to date_, _out of date_, and _no data available_ are provided for each card below.
+Definitions for _Up to date_, _out of date_, and _no data available_ are provided for each card below.
 
-Microsoft Defender Antivirus uses the additional criteria of “Signature refresh time” (the last time device communicated with up to date reports) to make up-to-date reports and determinations for engine, platform, and security intelligence updates.
+Microsoft Defender Antivirus uses the additional criteria of "Signature refresh time" (the last time device communicated with up to date reports) to make up-to-date reports and determinations for engine, platform, and security intelligence updates.
 
-The up-to-date status is automatically marked as “unknown” or “no data available” if the device hasn't communicated with reports for more than seven days (signature refresh time >7).
+The up-to-date status is automatically marked as "unknown" or "no data available" if the device hasn't communicated with reports for more than seven days (signature refresh time >7).
 
 For more information about the aforementioned terms, refer back to the section: [New Microsoft Defender Antivirus filter definitions](#new-microsoft-defender-antivirus-filter-definitions)
 
@@ -260,7 +259,7 @@ For more information about the aforementioned terms, refer back to the section: 
 > - Cloud protection enabled
 > - Windows OS*
 >
->*Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under “no data available”
+>*Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under "no data available"
 >
 
 ##### Up-to-date definitions
@@ -269,9 +268,9 @@ Following are up-to-date definitions for engine and platform:
 
 | The engine/platform on the device is considered: | If: |
 |:---|:---|
-| **up-to-date** | the device communicated with the Defender report event (‘Signature refresh time’) within last seven days, and the Engine or Platform version build time is within last 60 days. |
-| **out-of-date** | the device communicated with the Defender report event (‘Signature refresh time’) within last seven days, but Engine or Platform version build time is older than 60 days. |
-| **unknown (no data available)** | the device hasn't communicated with the report event (‘Signature refresh time’) for more than seven days. |
+| **up-to-date** | the device communicated with the Defender report event ('Signature refresh time') within last seven days, and the Engine or Platform version build time is within last 60 days. |
+| **out-of-date** | the device communicated with the Defender report event ('Signature refresh time') within last seven days, but Engine or Platform version build time is older than 60 days. |
+| **unknown (no data available)** | the device hasn't communicated with the report event ('Signature refresh time') for more than seven days. |
 
 Following are up-to-date definitions for security intelligence:
 
@@ -289,26 +288,26 @@ For more information, see:
 
 This card identifies devices that have antivirus engine versions that are up to date versus out of date.
 
-**The general definition of ‘_Up to date_’** - The engine version on the device is the most recent engine release. The engine is _typically_ released monthly, via Windows Update (WU)). There's a three-day grace period given from the day when Windows Update (WU) is released.
+**The general definition of '_Up to date_'** - The engine version on the device is the most recent engine release. The engine is _typically_ released monthly, via Windows Update (WU)). There's a three-day grace period given from the day when Windows Update (WU) is released.
 
-The following table lays out the possible values for up to date reports for **Antivirus Engine**. Reported Status is based on the last time reporting event was received (_signature refresh time_). If the device hasn't communicated with reports for more than seven days (signature refresh time >7 days), then the status is automatically marked as ‘Unknown’ / ‘No Data Available’.
+The following table lays out the possible values for up to date reports for **Antivirus Engine**. Reported Status is based on the last time reporting event was received (_signature refresh time_). If the device hasn't communicated with reports for more than seven days (signature refresh time >7 days), then the status is automatically marked as 'Unknown' / 'No Data Available'.
 
-| Event’s Last Refresh Time (also known as “Signature Refresh Time” in reports) | _Reported Status_: |
+| Event's Last Refresh Time (also known as "Signature Refresh Time" in reports) | _Reported Status_: |
 |:----|:----|
 | < 7 days (new) | whatever client reports (_Up to date <br/> Out of date <br/> Unknown)_ |
 | > 7 days (old) | _Unknown_ |
 
-For information about Manage Microsoft Defender Antivirus update versions, see: [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+For information about Manage Microsoft Defender Antivirus update versions, see: [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
 #### Antivirus platform updates card
 
 This card identifies devices that have Antivirus platform versions that are up to date versus out of date.
 
-**The general definition of ‘Up to date’** The platform version on the device is the most recent platform release. Platform is _typically_ released monthly, via Windows Update (WU). There's a three-day grace period from the day when WU is released.
+**The general definition of 'Up to date'** The platform version on the device is the most recent platform release. Platform is _typically_ released monthly, via Windows Update (WU). There's a three-day grace period from the day when WU is released.
 
-The following table lays out the possible up to date report values for **Antivirus Platform**. Reported values are based on the last time reporting event was received (signature refresh time). If the device hasn't communicated with reports for more than seven days (signature refresh time >7 days) then the status is automatically marked as ‘Unknown’/ ‘No Data Available’.
+The following table lays out the possible up to date report values for **Antivirus Platform**. Reported values are based on the last time reporting event was received (signature refresh time). If the device hasn't communicated with reports for more than seven days (signature refresh time >7 days) then the status is automatically marked as 'Unknown'/ 'No Data Available'.
 
-| Event’s Last Refresh Time (also known as “Signature Refresh Time” in reports) | _Reported Status_: |
+| Event's Last Refresh Time (also known as "Signature Refresh Time" in reports) | _Reported Status_: |
 |:----|:----|
 | < 7 days (new) | whatever client reports (_Up to date <br/> Out of date <br/> Unknown)_ |
 | > 7 days (old) | _Unknown_ |
@@ -319,15 +318,15 @@ For information about Manage Microsoft Defender Antivirus update versions, see: 
 
 This card identifies devices that have security intelligence versions that are up to date versus out of date.
 
-**The general definition of ‘Up to date’** – the security intelligence version on the device was written in the past 7 days.
+**The general definition of 'Up to date'** – the security intelligence version on the device was written in the past 7 days.
 
-The following table lays out the possible up to date report values for **Security Intelligence** updates. Reported values are based on the last time reporting event was received, and the security intelligence publish time. If the device hasn't communicated with reports for more than seven days (signature refresh time >7 days), then the status is automatically marked as ‘Unknown/ No Data Available’. Otherwise, the determination is made based on whether the security intelligence publish time is within seven days.
+The following table lays out the possible up to date report values for **Security Intelligence** updates. Reported values are based on the last time reporting event was received, and the security intelligence publish time. If the device hasn't communicated with reports for more than seven days (signature refresh time >7 days), then the status is automatically marked as 'Unknown/ No Data Available'. Otherwise, the determination is made based on whether the security intelligence publish time is within seven days.
 
-| Event’s Last Refresh Time <br/> (Also known as “Signature Refresh Time” in reports) | Security Intelligence Publish Time | _Reported Status_: |
+| Event's Last Refresh Time <br/> (Also known as "Signature Refresh Time" in reports) | Security Intelligence Publish Time | _Reported Status_: |
 |:----|:----|:----|
 | >7 days (old) | >7 days (old) | _Unknown_ |
 | <7 days (new) | >7 days (old) | _Out of date_ |
-| >7 days (old) | <7 days (new) |  _Unknown_ |
+| >7 days (old) | <7 days (new) | _Unknown_ |
 | <7 days (new) | <7 days (new) | Up to date |
 
 ## See also

@@ -12,7 +12,7 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.date: 10/18/2021
 ms.collection: 
 - m365-security
