@@ -42,7 +42,7 @@ For other workloads, see:
 ## What's included for retention and deletion
 
 > [!NOTE]
-> Retention policies support [shared channels](/MicrosoftTeams/shared-channels). Any shared channels inherit retention settings from the parent channel.
+> Retention policies support [shared channels](/MicrosoftTeams/shared-channels). Any shared channels inherit retention settings from the parent team.
 > 
 > Retention policies also support messages posted with the [chat with yourself](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) feature.
 

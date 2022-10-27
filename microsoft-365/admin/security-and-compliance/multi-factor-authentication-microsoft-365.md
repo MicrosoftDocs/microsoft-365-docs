@@ -10,6 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
