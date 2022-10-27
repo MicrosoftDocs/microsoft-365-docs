@@ -41,24 +41,15 @@ Microsoft Teams customer data consists of chat messages (including private messa
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 - MDO P1 does not store any customer data within its service. In addition, all processing of data that is required to analyze threats and inspect suspicious emails, documents, messages, links, etc. is done in a sandbox environment and performed within the _Local Region Geography_ or _Expanded Local Region Geography_.
-
 - Exchange Online Protection (EOP) stores at rest the following customer data in the _Local Region Geography_ or _Expanded Local Region Geography_:
-
-- EOP service configuration data and policies
-
-- Quarantined email and attachments
-
-- Junk email
-
-- Grading analysis
-
-- Block lists (url, tenant, user)
-
-- Spam domains
-
-- Reports
-
-- Alerts
+  - EOP service configuration data and policies
+  - Quarantined email and attachments
+  - Junk email
+  - Grading analysis
+  - Block lists (url, tenant, user)
+  - Spam domains
+  - Reports
+  - Alerts
 
 ## Office for the Web Data Residency Commitments
 
@@ -75,11 +66,8 @@ The following customer data will be stored in the _Local Region Geography_ or _E
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 - All the topics and customer data snippets discovered are stored within the relevant _Geographies_ in Exchange Online Substrate (site or arbitration mailboxes, and Substrate). All topic customer data is partitioned based on which _Local Region Geography_ or _Expanded Local Region Geography_ the data came from within your tenant.
-
 - ML models are trained on public web data, and as such do not contain any customer data from your tenant. In the future it's possible we will use customer data to improve accuracy of the ML models, in which case the data handling of ML models will follow the same policies as any other customer content (including data residency, retention, access control, sensitivity)
-
 - Topic highlighting is computed dynamically when the SharePoint Online page is rendered by running a language model against the content of the page and linking it with the knowledge base of Topics. The Topics data is sourced from the Substrate in the _Local Region Geography_ or _Expanded Local Region Geography_.
-
 - The administration configuration data is stored within the _Local Region Geography_ or _Expanded Local Region Geography_.
 
 ## Purview Audit (Standard) Data Residency Commitments
@@ -87,11 +75,8 @@ The following customer data will be stored at rest in the _Local Region Geograph
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 - Service configuration data
-
 - Audited Activities
-
 - Audit Records
-
 - Audit log query permissions
 
 ## Purview Audit (Premium) Data Residency Commitments
@@ -105,37 +90,21 @@ In addition to the data stored as part of Purview Audit (Standard), configuratio
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 - Retention policy settings
-
 - Retention label definitions
-
 - Customer Data stored in original locations for the following services:
-
-- Exchange email
-
-- SharePoint site
-
-- OneDrive accounts
-
-- Microsoft 365 Groups
-
-- Exchange public folders
-
-- Microsoft Teams chats and channel messages
-
+  - Exchange email
+  - SharePoint site
+  - OneDrive accounts
+  - Microsoft 365 Groups
+  - Exchange public folders
+  - Microsoft Teams chats and channel messages
 - Customer Data copied and stored in Exchange Online hidden mailboxes
-
-- Teams channel messages
-
-- Teams chats
-
-- Teams private channel messages
-
-- SharePoint Online, OneDrive for Business, Exchange Online and Microsoft Teams follow the data residency commitments for those services. Please refer to [Exchange Online](m365-dr-workload-exo.md), [SharePoint Online](m365-dr-workload-spo.md) and [Microsoft Teams](m365-dr-workload-teams.md) workload data residency pages for more details.
-
+  - Teams channel messages
+  - Teams chats
+  - Teams private channel messages
+  - SharePoint Online, OneDrive for Business, Exchange Online and Microsoft Teams follow the data residency commitments for those services. Please refer to [Exchange Online](m365-dr-workload-exo.md), [SharePoint Online](m365-dr-workload-spo.md) and [Microsoft Teams](m365-dr-workload-teams.md) workload data residency pages for more details.
 - Training classifiers
-
 - Disposition data
-
 - Mappings between retention labels and Data Loss Prevention (DLP) policies.
 
 ## Data lifecycle management - Records Management Data Residency Commitments
@@ -143,13 +112,9 @@ The following customer data will be stored at rest in the _Local Region Geograph
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 - Record retention label definitions.
-
 - File plan definitions
-
 - Event-based retention policy settings.
-
 - Disposition review records
-
 - Records of deletion
 
 ## Information Protection - Sensitivity labels Data Residency Commitments
@@ -157,15 +122,10 @@ The following customer data will be stored at rest in the _Local Region Geograph
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 - Label configuration
-
 - Labels definition
-
 - Label policies
-
 - Custom help page
-
 - Activity Explorer and Microsoft 365 unified audit logs
-
 - Label change justification records.
 
 ## Information Protection - Data Loss Prevention (DLP) Data Residency Commitments
@@ -173,15 +133,10 @@ The following customer data will be stored at rest in the _Local Region Geograph
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 - DLP admin configuration
-
 - DLP policies in Compliance Center
-
 - DLP monitored activities
-
 - Violation history, Activity Explorer and Microsoft 365 unified audit logs
-
 - Quarantine storage
-
 - DLP Alerts and DLP Alert management dashboard
 
 ## Information Protection - Office Message Encryption Data Residency Commitments
@@ -189,9 +144,7 @@ The following customer data will be stored at rest in the _Local Region Geograph
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 - Encryption policies
-
 - Admin settings
-
 - Encrypted messages
 
 ## Insider Risk Management - Information Barriers Data Residency Commitments
@@ -199,5 +152,4 @@ The following customer data will be stored at rest in the _Local Region Geograph
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 - Policy settings and risk indicators
-
 - Admin settings
