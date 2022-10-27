@@ -50,19 +50,19 @@ The 4 phases are described below and each section corresponds to a separate arti
 
 Configure the capabilities available to you, for example, configure the device discovery capability to help you find unmanaged devices connected your network and test attack surface reduction rules to see how they might impact your environment.
 
-For more information, see [Strengthen your security posture - Phase 1: Configure capabilities](/strengthen-security-posture-configure-capabilities.md)
+For more information, see [Strengthen your security posture - Phase 1: Configure capabilities](strengthen-security-posture-configure-capabilities.md)
 
 ## 2. Assess and protect
 
 This phase provides guidance on how you can assess your organization and how to start protecting straight away:
 
-For more information, see [Strengthen your security posture - Phase 2: Assess and protect](/strengthen-security-posture-assess-protect.md)
+For more information, see [Strengthen your security posture - Phase 2: Assess and protect](strengthen-security-posture-assess-protect.md)
 
 ## 3. Investigate and improve
 
 [Review Secure Score](../security/defender/microsoft-secure-score.md)
 
-For more information, see [Strengthen your security posture - Phase 3:Investigate and improve](/strengthen-security-posture-investigate-improve.md)
+For more information, see [Strengthen your security posture - Phase 3:Investigate and improve](strengthen-security-posture-investigate-improve.md)
 
 ## 4. Track and maintain
 
@@ -70,8 +70,8 @@ Enable email notifications for new vulnerabilities](../security/defender-endpoin
 [Hunt for threats with advanced hunting](../security/defender/advanced-hunting-overview.md)
 [Understand your exposure to zero days threats](../security/defender-vulnerability-management/tvm-zero-day-vulnerabilities.md)|
 
-For more information, see [Strengthen your security posture - Phase 4:Track and maintain](/strengthen-security-posture-track-maintain.md)
+For more information, see [Strengthen your security posture - Phase 4:Track and maintain](strengthen-security-posture-track-maintain.md)
 
 ## Next step
 
-- Proceed to [Strengthen your security posture - Phase 1: Configure capabilities](/strengthen-security-posture-configure-capabilities.md).
+- Proceed to [Strengthen your security posture - Phase 1: Configure capabilities](strengthen-security-posture-configure-capabilities.md).
