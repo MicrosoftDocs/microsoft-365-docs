@@ -18,35 +18,30 @@ ms.custom: seo-marvel-apr2020
 
 # Advanced Data Residency in Microsoft 365
 
-## Overview of Advanced Data Residency and Commitments
+## Overview of Advanced Data Residency
 
 ### Overview:
 
 The Microsoft 365 Advanced Data Residency add-on ("ADR") provides eligible customers with expanded coverage of Microsoft 365 workloads and Customer Data, committed data residency for local country datacenter regions, and prioritized tenant migration services.  With Advanced Data Residency, enterprise customers can best address their data residency compliance and tenant location requirements.
 
-### Eligibility:
+The following workloads are included in ADR.  For more details on the data residency support see the detailed pages:
 
-1. Tenant has a sign-up country included in _Local Region Geography_ or _Expanded Local Region Geography_,
-1. Tenant has a valid Advanced Data Residency subscription for all tenant users in the tenancy, and
-1. The applicable Microsoft 365 product subscription customer data is provisioned in Local Geography or Expanded Local Geography.
-
-### Microsoft 365 Advanced Data Residency Commitments
-
-The workloads and their respective commitments are detailed below:
-
-| **Microsoft 365 Products** | **Advanced Data Residency Commitment** |
-| --- | --- |
-| Exchange Online | Mailbox content, (e-mail body, calendar entries, and the content of e-mail attachments. This includes all types of mailboxes, including user mailboxes, resource mailboxes, archive mailboxes. |
-| SharePoint Online and OneDrive for Business | Site content and the files stored within that site, and files uploaded to OneDrive for Business. |
-| Microsoft Teams | Chat messages (including private messages, channel messages, meeting messages and images used in chats), and for customers using Microsoft Stream (on SharePoint), meeting recordings. |
-| Microsoft Defender for Office (MDO P1)  and  Exchange Online Protection (EOP) | MDO P1 does not store any customer data within its service. EOP service configuration data and policies, quarantined email and attachments, Junk email, grading analysis, block lists (url, tenant, user), spam domains, reports, alerts. |
-| Office for the Web | --- |
-| Viva Connections | Dashboard and Feed have content sourced from SharePoint Online, Exchange Online and Microsoft Teams and is stored in accordance with their respective data residency commitments. |
-| Viva Topics | - All the topics and customer data snippets discovered are stored within the relevant Geographies in Exchange Online Substrate (site or arbitration mailboxes, and Substrate).<br>- Machine Learning ("ML") models are trained on public web data, and as such do not contain any customer data from your tenant. In the future it's possible we will use customer data to improve accuracy of the ML models, in which case the data handling of ML models will follow the same policies as any other customer data (including data residency, retention, access control, sensitivity).<br>- The administration configuration data is stored in the relevant Geographies. |
-| Microsoft Purview |  |
-
->[!NOTE]
->If you have purchased the Multi-Geo subscription for your tenancy, then your customer data will be stored at rest in more than one Geography based on your configuration.
+- [Exchange Online](m365-dr-workload-exo.md)
+- [SharePoint Online and OneDrive for Business](m365-dr-workload-spo.md)
+- [Microsoft Teams](m365-dr-workload-teams.md)
+- [Microsoft Defender for Office P1 and Exchange Online Protection](m365-dr-workload-mdo-p1.md)
+- [Office for the Web](m365-dr-workload-office-for-web.md)
+- [Viva Connections](m365-dr-workload-viva-connections.md)
+- [Viva Topics](m365-dr-workload-viva-topics.md)
+- [Microsoft Purview](m365-dr-workload-purview.md)
+  - [Audit (Standard)](m365-dr-workload-purview.md#purview-audit-standard)
+  - [Audit (Premium)](m365-dr-workload-purview.md#purview-audit-premium)
+  - [Data Retention](m365-dr-workload-purview.md#data-lifecycle-management---data-retention)
+  - [Records Management](m365-dr-workload-purview.md#data-lifecycle-management---records-management)
+  - [Sensitivity Labels](m365-dr-workload-purview.md#information-protection---sensitivity-labels)
+  - [Data Loss Prevention](m365-dr-workload-purview.md#information-protection---data-loss-prevention-dlp)
+  - [Office Message Encryption](m365-dr-workload-purview.md#information-protection---office-message-encryption)
+  - [Information Barriers](m365-dr-workload-purview.md#insider-risk-management---information-barriers)
 
 ## Licensing and Purchase
 
@@ -145,8 +140,8 @@ The first step is to purchase the ADR SKU; check with your Microsoft representat
 
 [Legacy Move Program](m365-dr-legacy-move-program.md)
   
-[New datacenter geos for Microsoft Dynamics CRM Online](https://learn.microsoft.com/power-platform/admin/new-datacenter-regions?branch=main)
+[New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions?branch=main)
   
 [Azure services by region](https://azure.microsoft.com/regions/)
 
-[Teams experience in a Microsoft 365 Multi-Geo-enabled tenancy](https://learn.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo?branch=main)
+[Teams experience in a Microsoft 365 Multi-Geo-enabled tenancy](/microsoftteams/teams-experience-o365odb-spo-multi-geo?branch=main)
