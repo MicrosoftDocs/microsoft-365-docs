@@ -20,7 +20,7 @@ ms.collection:
 
 ## Summary
 
-Service documentation: [Microsoft Viva Topics overview](https://learn.microsoft.com/viva/topics/topic-experiences-overview)
+Service documentation: [Microsoft Viva Topics overview](/viva/topics/topic-experiences-overview)
 
 Capability summary: Viva Topics uses Microsoft AI technology, Microsoft 365, Microsoft Graph, Search, and other components and services to bring knowledge to your users in the Microsoft 365 apps they use everyday, starting with SharePoint modern pages, Outlook, Microsoft Search, and Search in Word, PowerPoint, and Excel.
 
