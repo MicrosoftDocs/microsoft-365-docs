@@ -145,8 +145,10 @@ For email auto-labeling policies only, you can select a setting to always overri
 |Existing label |Override with label setting: Auto-labeling for files and emails  |Override with policy: Auto-labeling|
 |:-----|:-----|:-----|
 |Manually applied, any priority|Word, Excel, PowerPoint: No <br /><br> Outlook: No  |SharePoint and OneDrive: No <br /><br> Exchange: No by default, but configurable |
-|Automatically applied or default label from policy, lower priority |Word, Excel, PowerPoint: Yes <br /><br> Outlook: Yes | SharePoint and OneDrive: Yes <br /><br> Exchange: Yes |
+|Automatically applied or default label from policy, lower priority |Word, Excel, PowerPoint: Yes \* <br /><br> Outlook: Yes \* | SharePoint and OneDrive: Yes <br /><br> Exchange: Yes |
 |Automatically applied or default label from policy, higher priority |Word, Excel, PowerPoint: No <br /><br> Outlook: No |SharePoint and OneDrive: No <br /><br> Exchange: No by default, but configurable |
+
+\* There's an [exception for sublabels that share the same parent label](#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label)
 
 The configurable setting for email auto-labeling policies is on the **Additional settings for email** page. This page displays after you've selected a sensitivity label for an auto-labeling policy that includes the Exchange location.
 
