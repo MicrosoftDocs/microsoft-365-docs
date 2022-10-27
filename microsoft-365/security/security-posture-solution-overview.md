@@ -44,34 +44,39 @@ This illustration provides a representation of the high level flow you can follo
 
 :::image type="content" source="../media/content-understanding/security-posture-overview.png" alt-text="Stages in the improve your security posture flow" lightbox="../media/content-understanding/security-posture-overview.png":::
 
-The 4 phases are described in the following table with the steps for each phase detailed in the corresponding section later in this article.
-
-|Phase|Steps|
-|---|---|
-|[1 - Configure capabilities](#1-configure-capabilities)|</li><li>[Configure device discovery](/strengthen-security-posture-configure-capabilities.md#11-configure-device-discovery)</li><li>[Configure ASR in audit mode](/strengthen-security-posture-configure-capabilities#12-configure-asr-in-audit-mode)</li><li> [Configure Microsoft Defender for Identity](/strengthen-security-posture-configure-capabilities#13-configure-microsoft-defender-for-identity)</li></li>|
-|[2 - Assess and protect your assets](#2-assess-and-protect)|</li><li>Assess your devices</li><li> Assign device value</li><li> Onboard newly discovered endpoints</li></li>|
-|[3 - Improve your security posture](#3-investigate-and-improve)|</li><li> Review Secure Score</li></li>|
-|[4 - Maintain a secure posture](#4-track-and-maintain)|</li><li> Enable email notifications for new vulnerabilities</li><li> Hunt for threats with advanced hunting </li><li>Understand your exposure to zero days threats]</li></li>|
+The 4 phases are described below and each section corresponds to a separate article in this solution.
 
 ## 1. Configure capabilities
 
 Configure the capabilities available to you, for example, configure the device discovery capability to help you find unmanaged devices connected your network and test attack surface reduction rules to see how they might impact your environment.
 
-For more information, see [Strengthen your security posture - Phase 1: Configure capabilities](strengthen-security-posture-configure-capabilities.md)
+For more information, see [Strengthen your security posture - Phase 1: Configure capabilities](/strengthen-security-posture-configure-capabilities.md)
 
-## 2. Assess and Protect
+## 2. Assess and protect
 
 [Assess your devices](../security/defender-endpoint/machine.md)
 
 [Assign device value](../security/defender-vulnerability-management/tvm-assign-device-value.md)
+
 Onboard newly discovered endpoints
 
-## 3. Investigate and Improve
+For more information, see [Strengthen your security posture - Phase 2: Assess and protect](/strengthen-security-posture-assess-protect.md)
+
+
+## 3. Investigate and improve
 
 [Review Secure Score](../security/defender/microsoft-secure-score.md)
 
-## 4. Track and Maintain
+For more information, see [Strengthen your security posture - Phase 3:Investigate and improve](/strengthen-security-posture-investigate-improve.md)
+
+## 4. Track and maintain
 
 Enable email notifications for new vulnerabilities](../security/defender-endpoint/configure-email-notifications.md)
 [Hunt for threats with advanced hunting](../security/defender/advanced-hunting-overview.md)
 [Understand your exposure to zero days threats](../security/defender-vulnerability-management/tvm-zero-day-vulnerabilities.md)|
+
+For more information, see [Strengthen your security posture - Phase 4:Track and maintain](/strengthen-security-posture-track-maintain.md)
+
+## Next step
+
+- Proceed to [Strengthen your security posture - Phase 1: Configure capabilities](/strengthen-security-posture-configure-capabilities.md).
