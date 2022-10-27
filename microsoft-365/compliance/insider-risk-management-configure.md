@@ -228,7 +228,7 @@ You can enable the potential high impact user (PHIU) score booster in Insider ri
 
 You can also decide to boost risk scores when a user is in a priority user group. Consider the following factors when determining if a user is a PHIU:
 
-- **Frequency of accessing high sensitivity content**: This includes content with sensitive information types, MIP labels, and content configured as priority content as compared to others in the organization.
+- **Frequency of accessing sensitive content compared to others in the organizaiton**: This includes content with Microsoft Information Protection sensitive information types and labels, and content configured as priority content.  .
 
 - **Level-from-top hierarchy in the organization**: Use if you have organizational hierarchy configured in Azure Active Directory and Azure Blast radius is available for your organization. To learn more about Azure Blast Radius, see [Investigate risky users](/defender-cloud-apps/tutorial-ueba).  
 
