@@ -403,8 +403,8 @@ You can stop a SharePoint site _Geography_ move, provided the move is not in pro
 
 You can determine the status of a site move in our out of the _Geography_ that you are connected to by using the following cmdlets:
 
-- [Get-SPOSiteContentMoveState](https://learn.microsoft.com/powershell/module/sharepoint-online/get-spositecontentmovestate) (non-Group-connected sites)
-- [Get-SPOUnifiedGroupMoveState](https://learn.microsoft.com/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (Group-connected sites)
+- [Get-SPOSiteContentMoveState](/powershell/module/sharepoint-online/get-spositecontentmovestate) (non-Group-connected sites)
+- [Get-SPOUnifiedGroupMoveState](/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (Group-connected sites)
 
 Use the `-SourceSiteUrl` parameter to specify the site for which you want to see move status.
 
