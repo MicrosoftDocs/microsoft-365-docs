@@ -78,9 +78,10 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
     50 30 06 09 1d 97 d4 f5 ae 39 f7 cb e7 92 7d 7d 65 2d 34 31, 
     503006091d97d4f5ae39f7cbe7927d7d652d3431 
 
-    **Important: Certificate SHA-1 Thumbprint characters should be with either white space saperated, or non separated.** 
-    This format is invalid  
-    50:30:06:09:1d:97:d4:f5:ae:39:f7:cb:e7:92:7d:7d:65:2d:34:31 
+> [!IMPORTANT]
+ > Certificate SHA-1 Thumbprint characters should be with either white space saperated, or non separated.
+> This format is invalid  
+> 50:30:06:09:1d:97:d4:f5:ae:39:f7:cb:e7:92:7d:7d:65:2d:34:31 
 
 Any other separation characters are invalid. 
     > ![Image of trusted CA certificate.](images/trustca.png)
