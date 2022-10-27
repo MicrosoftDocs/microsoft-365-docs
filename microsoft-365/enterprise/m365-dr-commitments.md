@@ -18,25 +18,25 @@ ms.collection:
 
 # Advanced Data Residency Commitments
 
-**Exchange Online Data Residency Commitments**
+## Exchange Online Data Residency Commitments**
 
 The following customer data will be stored at rest in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_:
 
 Exchange Online mailbox content, (e-mail body, calendar entries, and the content of e-mail attachments stored in the related _Local Region Geography_ or _Expanded Local Region Geography_.
 
-**SharePoint Online/OneDrive for Business Data Residency Commitments**
+## SharePoint Online/OneDrive for Business Data Residency Commitments**
 
 The following customer data will be stored at rest in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_:
 
 SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business.
 
-**Microsoft Teams Data Residency Commitments**
+## Microsoft Teams Data Residency Commitments**
 
 The following customer data will be stored at rest in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_:
 
 Microsoft Teams customer data consists of chat messages (including private messages, channel messages, meeting messages and images used in chats), and, for customers using Microsoft Stream (on SharePoint), meeting recordings present in the Tenant.
 
-**Microsoft Defender for Office P1 Data Residency Commitments**
+## Microsoft Defender for Office P1 Data Residency Commitments**
 
 The following customer data will be stored at rest in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_:
 
@@ -60,7 +60,7 @@ The following customer data will be stored at rest in the \_Local Region Geograp
 
 - Alerts
 
-**Office for the Web Data Residency Commitments**
+## Office for the Web Data Residency Commitments**
 
 The following customer data will be stored at rest in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_: No customer data is stored at rest.
 
