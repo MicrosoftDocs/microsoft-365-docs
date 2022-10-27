@@ -36,7 +36,7 @@ Required Conditions:
 
 **Commitment:**
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#viva-topics-data-residency-commitments) for the specific customer data at rest commitment for Viva Topics. 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#viva-topics) for the specific customer data at rest commitment for Viva Topics. 
 
 ## Migration
 
