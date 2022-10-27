@@ -34,7 +34,7 @@ These service advisories are displayed in the Microsoft 365 admin center. To vie
 
 The service advisories for eDiscovery throttling inform admins about their tenant being throttled due to number of Search and Export jobs exceeding the limit set by Microsoft. Various limits are applied to eDiscovery search tools in the [Microsoft Purview](~/compliance/index.yml) compliance portal. This includes searches run on the [Content Search](~/compliance/search-for-content.md) page and searches that are associated with an eDiscovery case on the [eDiscovery (Standard)](~/compliance/get-started-core-ediscovery.md) page. These limits help to maintain the health and quality of services provided to organizations. These advisories provide awareness so that you can take these limits into consideration when planning, running, and troubleshooting eDiscovery searches and exports.
 
-For limits related to the Microsoft Purview eDiscovery (Standard) tool, see [Limits for Content search and eDiscovery (Standard) in the compliance center](../compliance/limits-for-content-search?viewFallbackFrom=o365-worldwide%20for%20service%20limits).
+For limits related to the Microsoft Purview eDiscovery (Standard) tool, see [Limits for Content search and eDiscovery (Standard) in the compliance center](~/compliance/limits-for-content-search.md?viewFallbackFrom=o365-worldwide%20for%20service%20limits).
 
 ### How often will I see these service advisories?
 
@@ -42,6 +42,6 @@ You can expect to see this type of advisory until the time where the Search and 
 
 ## More information
 
-- For information about troubleshooting and resolving eDiscovery compliance issues, see [Microsoft Purview troubleshooting](../troubleshoot/microsoft-365-compliance-welcome).
-- For information about Microsoft Purview, see [What is Microsoft Purview?](../purview/purview)
-- To learn more about Microsoft Purview eDiscovery solutions, see [Microsoft Purview eDiscovery solutions](../compliance/ediscovery)
+- For information about troubleshooting and resolving eDiscovery compliance issues, see [Microsoft Purview troubleshooting](~/troubleshoot/microsoft-365-compliance-welcome.md).
+- For information about Microsoft Purview, see [What is Microsoft Purview?](~/purview/purview.md)
+- To learn more about Microsoft Purview eDiscovery solutions, see [Microsoft Purview eDiscovery solutions](~/compliance/ediscovery.md)
