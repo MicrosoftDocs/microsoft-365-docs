@@ -39,13 +39,13 @@ The following list captures the actions you'll take to deploy Microsoft Defender
 
 - Work with your Firewall, Proxy, and Networking admin to add the Microsoft Defender for Endpoint URLs to the allowed list, and prevent it from being SSL inspected.
 - Run a centralized scan to capture current resource utilization across the environment, such as, check available disk space in all mounted partitions, capture memory usage, capture a process listing that includes availability, and used CPU percentages.
-- Exclude Microsoft Defender for Endpoint on Linux from your third-party antivirus product.
+- Exclude Microsoft Defender for Endpoint on Linux from your third-party antimalware product.
 - Download the onboarding script from the Microsoft Defender for Endpoint portal.
 - Set up the Microsoft Defender for Endpoint on Linux configuration settings.
-- Add your third-party antivirus processes and paths to the exclusion list from the prior step (Setup the Microsoft Defender for Endpoint on Linux antivirus settings).
-- Verify that you've added your current exclusions from your third-party antivirus  to the prior step (Set up the Microsoft Defender for Endpoint on Linux configuration settings).
+- Add your third-party antimalware processes and paths to the exclusion list from the prior step (Setup the Microsoft Defender for Endpoint on Linux antimalware settings).
+- Verify that you've added your current exclusions from your third-party antimalware  to the prior step (Set up the Microsoft Defender for Endpoint on Linux configuration settings).
 - Deliver the onboarding file.
-- Deliver the antivirus setting.
+- Deliver the antimalware setting.
 - Deliver the scheduled scans cronjob setting.
 - Deliver the Microsoft Defender for Endpoint on  Linux agent cronjob settings.
 - Install the Microsoft Defender for Endpoint on Linux package.
@@ -66,7 +66,7 @@ The following are the supported Linux servers:
 
 |RHEL* version supported|Commercial|GCC-Moderate|GCC-High (aka MAG)|
 |---|---|---|---|
-|RHEL 6.8-6.10 |Design partner program|Public preview|Public preview|
+|RHEL 6.8-6.10 |Public preview|Public preview|Public preview|
 |RHEL 7.x |Design partner program|General Availability (GA)|General Availability (GA)|
 |RHEL 8.x|Design partner program|General Availability (GA)|General Availability (GA)|
 |RHEL 9.x|Design partner program|General Availability (GA)|General Availability (GA)|
@@ -76,7 +76,7 @@ The following are the supported Linux servers:
 
 |Resource|Recommendation|
 |---|---|
-|Disk space |1 GB|
+|Disk space |3 GB|
 |RAM |1 GB<br> 4 GB is preferred|
 |CPU |If the Linux system is running only 1 vcpu, we recommend to be increased to 2 vcpu’s<br> 4 cores are preferred |
 
@@ -89,26 +89,26 @@ For a detailed list of supported Linux distros, see [System requirements](micros
 
 ### Additional guidance
 
-- Depending on the non-Microsoft antivirus running on your Linux servers, you may still be able to run Microsoft Defender for Endpoint on Linux. If the antivirus runs FANotify, it needs to be uninstalled.
+- Depending on the non-Microsoft antimalware running on your Linux servers, you may still be able to run Microsoft Defender for Endpoint on Linux. If the antimalware runs FANotify, it needs to be uninstalled.
 	
-- To check if there is a non-Microsoft antivirus that is running FANotify, you can run `mdatp health`, then check the result:
+- To check if there is a non-Microsoft antimalware that is running FANotify, you can run `mdatp health`, then check the result:
 		
     :::image type="content" source="images/mdatp-health-result.png" alt-text="Image of mdatp health result" :::
 		
-	Under "conflicting_applications", if you see a result other than "unavailable", then you'll need to uninstall the non-Microsoft antivirus. 
+	Under "conflicting_applications", if you see a result other than "unavailable", then you'll need to uninstall the non-Microsoft antimalware. 
 
-- If you don't uninstall the non-Microsoft antivirus product, you may encounter unexpected behaviors such as performance issues, stability issues such as systems hanging, or kernel panics.
+- If you don't uninstall the non-Microsoft antimalware product, you may encounter unexpected behaviors such as performance issues, stability issues such as systems hanging, or kernel panics.
 	
-- To identify Microsoft Defender for Endpoint on Linux processes and paths that should be excluded in the non-Microsoft antivirus product, run `systemctl status -l mdatp`.
+- To identify Microsoft Defender for Endpoint on Linux processes and paths that should be excluded in the non-Microsoft antimalware product, run `systemctl status -l mdatp`.
 
-    Exclude the following processes from the non-Microsoft antivirus product:
+    Exclude the following processes from the non-Microsoft antimalware product:
 
     `wdavdaemon`<br>
     `crashpad_handler`<br>
     `mdatp_audis_plugin`<br>
     `telemetryd_v2`<br>
 
-    Exclude the following paths from the non-Microsoft antivirus product:
+    Exclude the following paths from the non-Microsoft antimalware product:
 
     `/opt/microsoft/mdatp/`<br>
     `/var/opt/microsoft/mdatp/`<br>
@@ -167,14 +167,14 @@ To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses ce
 
 For more information, see [Troubleshooting cloud connectivity issues for Microsoft Defender for Endpoint on RHEL Linux](linux-support-connectivity.md).
 
-## Configure Microsoft Defender for Endpoint on Linux antivirus
+## Configure Microsoft Defender for Endpoint on Linux antimalware
 
 **Before you begin**
 
-- If you're already using a third-party antivirus for your Linux servers:
+- If you're already using a third-party antimalware for your Linux servers:
    - Move the existing exclusions to Microsoft Defender for Endpoint for Linux.
 
-- If you're not using a third-party antivirus for your Linux servers:
+- If you're not using a third-party antimalware for your Linux servers:
    - Get a list of all your Linux applications and check the vendors website for exclusions.  
    
 - If you're running a non-Microsoft antimalware product, then add the processes/paths to the Microsoft Defender for Endpoint's AV exclusion list. For more information, see [Binary name and installation path changes with Endpoint Security for Linux 10.6.6](https://kcm.trellix.com/corporate/index?page=content&id=KB92028). For more information, check the non-Microsoft antimalware documentation or contact their support. 
@@ -190,7 +190,7 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
 
     ```JSON
         {
-       "antivirusEngine":{
+       "antimalwareEngine":{
           "enforcementLevel":"real_time",
           "scanAfterDefinitionUpdate":true,
           "scanArchives":true,
@@ -248,7 +248,7 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
 
    ```JSON
           {
-       "antivirusEngine":{
+       "antimalwareEngine":{
           "enforcementLevel":"real_time",
           "scanAfterDefinitionUpdate":true,
           "scanArchives":true,
@@ -366,7 +366,7 @@ For example, in the previous step, `wdavdaemon unprivileged` was identified as t
 
 ### Check the wdavdaemon unprivileged process
 
-The following diagram shows the workflow and steps required in order to add antivirus exclusions:
+The following diagram shows the workflow and steps required in order to add antimalware exclusions:
 
 :::image type="content" source="images/unprivileged-plugins.png" alt-text="This is unpriviledged sensors":::
 
@@ -471,7 +471,7 @@ To deploy Microsoft Defender for Endpoint on Linux using Ansible, see [Deploy Mi
           enablerepo: packages-microsoft-[channel]
     ```
 
-Additionally, for deploying the “settings preferences” via Ansible, go through adding the steps from the above item 5 “How to configure Microsoft Defender for Endpoint for Linux Antivirus (AV)”, by copying your `mdatp_managed.json` to `/etc/opt/microsoft/mdatp/managed/`. 
+Additionally, for deploying the “settings preferences” via Ansible, go through adding the steps from the above item 5 “How to configure Microsoft Defender for Endpoint for Linux antimalware (AV)”, by copying your `mdatp_managed.json` to `/etc/opt/microsoft/mdatp/managed/`. 
 
 ## Verify communication with Microsoft Defender for Endpoint backend
 
@@ -491,7 +491,7 @@ To verify Microsoft Defender for Endpoint on Linux platform updates, run the fol
 
 `sudo yum update mdatp`
 
-For more information, see [Device health and Microsoft Defender Antivirus health report](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-device-health-reporting-for-microsoft-defender-for-endpoint/bc-p/3616205#M1963).
+For more information, see [Device health and Microsoft Defender antimalware health report](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-device-health-reporting-for-microsoft-defender-for-endpoint/bc-p/3616205#M1963).
 
 For more information, see [Deploy updates for Microsoft Defender for Endpoint on RHEL Linux](linux-updates.md#rhel-and-variants-centos-and-oracle-linux).
 
@@ -504,13 +504,13 @@ To verify Microsoft Defender for Endpoint on  Linux signatures/definition update
 
 `mdatp definitions update`
 
-For more information, see [New device health reporting for Microsoft Defender Antivirus](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-device-health-reporting-for-microsoft-defender-for-endpoint/bc-p/3616205).
+For more information, see [New device health reporting for Microsoft Defender antimalware](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-device-health-reporting-for-microsoft-defender-for-endpoint/bc-p/3616205).
 
 ## Test detections
 
 To ensure that the device is correctly onboarded and reported to the service, run the following detection test:
 
-- Antivirus detections:
+- antimalware detections:
   [Curl -o ~/Downloads/eicar.com.txt](https://www.eicar.org/download/eicar.com.txt ).
   If the detection doesn’t show up, it could be that you have set “allowedThreats” to allow in preferences via Ansible or Puppet.
 
