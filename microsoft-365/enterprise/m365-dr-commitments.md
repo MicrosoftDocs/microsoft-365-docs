@@ -20,29 +20,29 @@ ms.collection:
 
 ## Exchange Online Data Residency Commitments**
 
-The following customer data will be stored at rest in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_:
+The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 Exchange Online mailbox content, (e-mail body, calendar entries, and the content of e-mail attachments stored in the related _Local Region Geography_ or _Expanded Local Region Geography_.
 
 ## SharePoint Online/OneDrive for Business Data Residency Commitments**
 
-The following customer data will be stored at rest in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_:
+The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business.
 
 ## Microsoft Teams Data Residency Commitments**
 
-The following customer data will be stored at rest in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_:
+The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 Microsoft Teams customer data consists of chat messages (including private messages, channel messages, meeting messages and images used in chats), and, for customers using Microsoft Stream (on SharePoint), meeting recordings present in the Tenant.
 
 ## Microsoft Defender for Office P1 Data Residency Commitments**
 
-The following customer data will be stored at rest in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_:
+The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
-- MDO P1 does not store any customer data within its service. In addition, all processing of data that is required to analyze threats and inspect suspicious emails, documents, messages, links, etc. is done in a sandbox environment and performed within the \_Local Region Geography\_ or \_Expanded Local Region Geography\_.
+- MDO P1 does not store any customer data within its service. In addition, all processing of data that is required to analyze threats and inspect suspicious emails, documents, messages, links, etc. is done in a sandbox environment and performed within the _Local Region Geography_ or _Expanded Local Region Geography_.
 
-- Exchange Online Protection (EOP) stores at rest the following customer data in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_:
+- Exchange Online Protection (EOP) stores at rest the following customer data in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 - EOP service configuration data and policies
 
@@ -60,31 +60,31 @@ The following customer data will be stored at rest in the \_Local Region Geograp
 
 - Alerts
 
-## Office for the Web Data Residency Commitments**
+## Office for the Web Data Residency Commitments
 
-The following customer data will be stored at rest in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_: No customer data is stored at rest.
+The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_: No customer data is stored at rest.
 
-**Viva Connections Data Residency Commitments**
+## Viva Connections Data Residency Commitments
 
-The following customer data will be stored in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_:
+The following customer data will be stored in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
-- The Dashboard and Feed can have content sourced from SharePoint Online, Exchange Online and Microsoft Teams. All data sourced from these services that are covered by their data residency commitments will be stored in the relevant \_Geography\_. Please refer to [Exchange Online](m365-dr-workload-exo.md), [SharePoint Online](m365-dr-workload-spo.md) and [Microsoft Teams](m365-dr-workload-teams.md) workload data residency pages for more details.
+- The Dashboard and Feed can have content sourced from SharePoint Online, Exchange Online and Microsoft Teams. All data sourced from these services that are covered by their data residency commitments will be stored in the relevant _Geography_. Please refer to [Exchange Online](m365-dr-workload-exo.md), [SharePoint Online](m365-dr-workload-spo.md) and [Microsoft Teams](m365-dr-workload-teams.md) workload data residency pages for more details.
 
-**Viva Topics Data Residency Commitments**
+## Viva Topics Data Residency Commitments
 
-The following customer data will be stored at rest in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_:
+The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
-- All the topics and customer data snippets discovered are stored within the relevant \_Geographies\_ in Exchange Online Substrate (site or arbitration mailboxes, and Substrate). All topic customer data is partitioned based on which \_Local Region Geography\_ or \_Expanded Local Region Geography\_ the data came from within your tenant.
+- All the topics and customer data snippets discovered are stored within the relevant _Geographies_ in Exchange Online Substrate (site or arbitration mailboxes, and Substrate). All topic customer data is partitioned based on which _Local Region Geography_ or _Expanded Local Region Geography_ the data came from within your tenant.
 
 - ML models are trained on public web data, and as such do not contain any customer data from your tenant. In the future it's possible we will use customer data to improve accuracy of the ML models, in which case the data handling of ML models will follow the same policies as any other customer content (including data residency, retention, access control, sensitivity)
 
-- Topic highlighting is computed dynamically when the SharePoint Online page is rendered by running a language model against the content of the page and linking it with the knowledge base of Topics. The Topics data is sourced from the Substrate in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_.
+- Topic highlighting is computed dynamically when the SharePoint Online page is rendered by running a language model against the content of the page and linking it with the knowledge base of Topics. The Topics data is sourced from the Substrate in the _Local Region Geography_ or _Expanded Local Region Geography_.
 
-- The administration configuration data is stored within the \_Local Region Geography\_ or \_Expanded Local Region Geography\_.
+- The administration configuration data is stored within the _Local Region Geography_ or _Expanded Local Region Geography_.
 
-**Purview Audit (Standard) Data Residency Commitments**
+## Purview Audit (Standard) Data Residency Commitments
 
-The following customer data will be stored at rest in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_:
+The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 - Service configuration data
 
@@ -94,15 +94,15 @@ The following customer data will be stored at rest in the \_Local Region Geograp
 
 - Audit log query permissions
 
-**Purview Audit (Premium) Data Residency Commitments**
+## Purview Audit (Premium) Data Residency Commitments
 
-The following customer data will be stored at rest in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_:
+The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
-In addition to the data stored as part of Purview Audit (Standard), configuration and Customer Data related to high-value crucial events are stored in the relevant \_Local Region Geography\_ or \_Expanded Local Region Geography\_.
+In addition to the data stored as part of Purview Audit (Standard), configuration and Customer Data related to high-value crucial events are stored in the relevant _Local Region Geography_ or _Expanded Local Region Geography_.
 
-**Data lifecycle management - Data Retention Data Residency Commitments**
+## Data lifecycle management - Data Retention Data Residency Commitments
 
-The following customer data will be stored at rest in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_:
+The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 - Retention policy settings
 
@@ -138,9 +138,9 @@ The following customer data will be stored at rest in the \_Local Region Geograp
 
 - Mappings between retention labels and Data Loss Prevention (DLP) policies.
 
-**Data lifecycle management - Records Management**** Data Residency Commitments**
+## Data lifecycle management - Records Management Data Residency Commitments
 
-The following customer data will be stored at rest in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_:
+The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 - Record retention label definitions.
 
@@ -152,9 +152,9 @@ The following customer data will be stored at rest in the \_Local Region Geograp
 
 - Records of deletion
 
-**Information Protection - Sensitivity labels**** Data Residency Commitments**
+## Information Protection - Sensitivity labels Data Residency Commitments
 
-The following customer data will be stored at rest in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_:
+The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 - Label configuration
 
@@ -168,9 +168,9 @@ The following customer data will be stored at rest in the \_Local Region Geograp
 
 - Label change justification records.
 
-**Information Protection - Data Loss Prevention (DLP)****Data Residency Commitments**
+## Information Protection - Data Loss Prevention (DLP) Data Residency Commitments
 
-The following customer data will be stored at rest in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_:
+The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 - DLP admin configuration
 
@@ -184,9 +184,9 @@ The following customer data will be stored at rest in the \_Local Region Geograp
 
 - DLP Alerts and DLP Alert management dashboard
 
-**Information Protection - Office Message Encryption**** Data Residency Commitments**
+## Information Protection - Office Message Encryption Data Residency Commitments
 
-The following customer data will be stored at rest in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_:
+The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 - Encryption policies
 
@@ -194,9 +194,9 @@ The following customer data will be stored at rest in the \_Local Region Geograp
 
 - Encrypted messages
 
-**Insider Risk Management - Information Barriers**** Data Residency Commitments**
+## Insider Risk Management - Information Barriers Data Residency Commitments
 
-The following customer data will be stored at rest in the \_Local Region Geography\_ or \_Expanded Local Region Geography\_:
+The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 - Policy settings and risk indicators
 
