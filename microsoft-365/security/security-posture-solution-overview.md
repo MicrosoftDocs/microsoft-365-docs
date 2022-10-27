@@ -48,11 +48,18 @@ The 4 phases are described below and each section corresponds to a separate arti
 
 ## 1. Configure capabilities
 
-Configure the capabilities available to you, for example, configure the device discovery capability to help you find unmanaged devices connected your network and test attack surface reduction rules to see how they might impact your environment.
+It's critical to have full visibility into your assets and to the attack surface of your organization. You can't protect what you can't see. Microsoft 365 Defender provides many capabilities to discover and protect the devices in your organization against threats. This can include, configuring device discovery to help you find unmanaged devices, taking advantage of available integrations to increase visibility into a complete OT/IOT asset inventory, and testing available attack surface reduction rules to see how they might impact your environment.
 
 For more information, see [Strengthen your security posture - Phase 1: Configure capabilities](strengthen-security-posture-configure-capabilities.md)
 
 ## 2. Assess and protect
+
+The first step in security posture assessment is getting a comprehensive inventory of all your assets.
+
+Analyze your current security posture
+
+
+Assessing the assets across your organization is a key first step to take before starting to implementing posture improvements. With access to 
 
 This phase provides guidance on how you can assess your organization and how to start protecting straight away:
 
