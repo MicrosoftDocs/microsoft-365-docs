@@ -11,7 +11,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
@@ -39,9 +39,10 @@ This topic provides some general steps that can be used to narrow down performan
 Depending on the applications that you're running and your device characteristics, you may experience suboptimal performance when running Microsoft Defender for Endpoint on macOS. In particular, applications or system processes that access many resources over a short timespan can lead to performance issues in Microsoft Defender for Endpoint on macOS.
 
 >[!WARNING]
->Before starting, please make sure that other security products are not currently running on the device. Multiple security products may conflict and impact the host performance. 
+>Before starting, please make sure that other security products are not currently running on the device. Multiple security products may conflict and impact the host performance.
 
 ## Troubleshoot performance issues using Real-time Protection Statistics
+
 **Applies to:**
 - Only performance issues related to AV
 
@@ -56,7 +57,6 @@ The following steps can be used to troubleshoot and mitigate these issues:
     - From the user interface. Open Microsoft Defender for Endpoint on macOS and navigate to **Manage settings**.
 
       :::image type="content" source="images/mdatp-36-rtp.png" alt-text=" The Manage real-time protection page" lightbox="images/mdatp-36-rtp.png":::
-      
 
     - From the Terminal. For security purposes, this operation requires elevation.
 
@@ -163,23 +163,22 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
      See [Configure and validate exclusions for Microsoft Defender for Endpoint on macOS](mac-exclusions.md) for details.
 
-
 ## Troubleshoot performance issues using Microsoft Defender for Endpoint Client Analyzer
 
 **Applies to:**
-- Performance issues of all available Defender for Endpoint components such as AV and EDR  
+- Performance issues of all available Defender for Endpoint components such as AV and EDR
 
 The Microsoft Defender for Endpoint Client Analyzer (MDECA) can collect traces, logs, and diagnostic information in order to troubleshoot performance issues on [onboarded devices](/microsoft-365/security/defender-endpoint/onboard-configure) on macOS.
 
 > [!NOTE]
->- The Microsoft Defender for Endpoint Client Analyzer tool is regularly used by Microsoft Customer Support Services (CSS) to collect information such as (but not limited to) IP addresses, PC names that will help troubleshoot issues you may be experiencing with Microsoft Defender for Endpoint. For more information about our privacy statement, see [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
->- As a general best practice, it is recommended to update the [ Microsoft Defender for Endpoint agent to latest available version](linux-whatsnew.md)  and confirming that the issue still persists before investigating further. 
+>
+> - The Microsoft Defender for Endpoint Client Analyzer tool is regularly used by Microsoft Customer Support Services (CSS) to collect information such as (but not limited to) IP addresses, PC names that will help troubleshoot issues you may be experiencing with Microsoft Defender for Endpoint. For more information about our privacy statement, see [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
+> - As a general best practice, it is recommended to update the [Microsoft Defender for Endpoint agent to latest available version](linux-whatsnew.md) and confirming that the issue still persists before investigating further.
 
 To run the client analyzer for troubleshooting performance issues, see [Run the client analyzer on macOS and Linux](run-analyzer-macos-linux.md).
 
->[!NOTE]
->In case after following the above steps, the performance problem persists, please contact customer support for further instructions and mitigation. 
-
+> [!NOTE]
+> In case after following the above steps, the performance problem persists, please contact customer support for further instructions and mitigation.
 
 ## See also
 
