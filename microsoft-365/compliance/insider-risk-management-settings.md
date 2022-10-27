@@ -267,7 +267,7 @@ To add trainable classifiers to exclude, complete the following steps:
 
 1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
 2. In the **Trainable classifiers** section, select **Add trainable classifiers to exclude**.
-3. On the **Add or edit trainable classifiers type** pane, select the types that you want to exclude.
+3. On the **Add or edit trainable classifiers** pane, select the classifiers that you want to exclude.
 4. Select **Add** accept the changes or **Cancel** to discard the changes. 
 
 To delete a trainable classifiers exclusion, select the exclusion and **Delete**.
