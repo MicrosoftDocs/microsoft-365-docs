@@ -101,7 +101,18 @@ If you're seeing this page in the admin center, you're on the **admin simplified
 4. Add the email address of the user in the **Up to 5 email addresses...** text box. This will make sure the new user gets the information they need to sign into Microsoft 365 services.
 5. Select **Add user** and **Download sign-in info** if you want to save this info.
 
-## Add multiple users at the same time
+## Add multiple users at the same time in dashboard view
+
+1. Go to **Users** > **Active users**, and select **Add multiple users**.
+2. On the **Add list of user** page, choose whether to add user's one at a time or use a spreadsheet to add your new users.
+
+- Select **I'd like to upload a CSV with user information**. Download the example CSV file and make sure your spreadsheet includes the exact same column headings as the sample CSV file (User Name, First Name, and so on). If you use the sample CSV file, open it in a editing tool, like Microsoft Excel, and consider leaving all the data in row 1 alone, and only entering data in rows 2 and below. Your spreadsheet also needs to include values for the user name (like bob@contoso.com) and a display name (like Bob Kelly) for each user. When you're done entering your user's information, select **Browse** and navigate to the location of your CSV file and select **Open**.
+
+3. Choose **Next**.
+
+4. On the Licenses page, select the licenses you want to assign your users and choose **Next**.
+
+5. Review your selections and choose **Add users**.
 
 You can use any of the following methods to add multiple users at the same time:
 
