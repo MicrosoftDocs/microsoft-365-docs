@@ -85,7 +85,7 @@ Select the specific *Attack technique* to open the related ATT&CK technique page
 
 You can copy an entity's details when you see a blue icon on the right. For instance, to copy a related file's SHA1, select the blue page icon.
 
-:::image type="content" source="images/new-timeline-process-tree.png" alt-text="The copy entity details" lightbox="images/techniques-side-pane-clickable.png":::
+:::image type="content" source="images/new-timeline-process-tree.png" alt-text="The copy entity details" lightbox="images/new-timeline-process-tree.png":::
 
 :::image type="content" source="images/new-timeline-side-panel-1.png" alt-text="The side pane details" lightbox="images/new-timeline-side-panel-1.png":::
 
