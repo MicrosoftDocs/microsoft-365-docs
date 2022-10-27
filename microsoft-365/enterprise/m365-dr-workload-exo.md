@@ -43,7 +43,7 @@ Required Conditions:
 
 **Commitment:**
 
-Please refer to the ADR commitment page (TODO: link to new page) to understand the specific commitments provided via Product Terms. Examples of the committed data include: all types of mailboxes, including user mailboxes, resource mailboxes, and archive mailboxes.
+Please refer to the [ADR commitment page](m365-dr-commitments.md#exchange-online-data-residency-commitments) to understand the specific commitments provided via Product Terms. Examples of the committed data include: all types of mailboxes, including user mailboxes, resource mailboxes, and archive mailboxes.
 
 ### Multi-Geo add-on
 
