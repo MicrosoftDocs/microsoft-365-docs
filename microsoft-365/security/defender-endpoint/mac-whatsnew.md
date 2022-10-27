@@ -49,7 +49,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 </details>
 
 > [!IMPORTANT]
-> This is a minimal recommended MDE version for macOS Ventura
+> This is a minimal recommended MDE version for macOS Ventura.
 
 <details>
   <summary>Oct-2022 (Build: 101.82.21  | Release version: 20.122082.18221.0)</summary>
