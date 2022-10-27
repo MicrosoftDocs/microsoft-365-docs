@@ -106,7 +106,7 @@ If you're seeing this page in the admin center, you're on the **admin simplified
 1. Go to **Users** > **Active users**, and select **Add multiple users**.
 2. On the **Add list of user** page, choose whether to add user's one at a time or use a spreadsheet to add your new users.
 
-:::image type="content" source="../../media/add-multiple-users2.png" alt-text="Screenshot: Simplified admin center view":::
+    :::image type="content" source="../../media/add-multiple-users2.png" alt-text="Screenshot: Options to add users one at a time or use a CSV file":::
 
 - Select **I'd like to upload a CSV with user information**. Download the example CSV file and make sure your spreadsheet includes the exact same column headings as the sample CSV file (User Name, First Name, and so on). If you use the sample CSV file, open it in a editing tool, like Microsoft Excel, and consider leaving all the data in row 1 alone, and only entering data in rows 2 and below. Your spreadsheet also needs to include values for the user name (like bob@contoso.com) and a display name (like Bob Kelly) for each user. When you're done entering your user's information, select **Browse** and navigate to the location of your CSV file and select **Open**.
 
@@ -116,9 +116,8 @@ If you're seeing this page in the admin center, you're on the **admin simplified
 
 5. Review your selections and choose **Add users**.
 
-You can use any of the following methods to add multiple users at the same time:
+You can also use any of the following methods to add multiple users at the same time:
 
-- **Use a spreadsheet to add people in bulk.** See [Add several users at the same time](../../enterprise/add-several-users-at-the-same-time.md).
 - **Automate adding accounts and assigning licenses.** See [Create user accounts with Microsoft 365 PowerShell](../../enterprise/create-user-accounts-with-microsoft-365-powershell.md). Choose this method if you're already familiar with using Windows PowerShell cmdlets.
 - **Using ActiveDirectory?** [Set up directory synchronization for Microsoft 365](../../enterprise/set-up-directory-synchronization.md). Use the Azure AD Connect tool to replicate Active Directory user accounts (and other Active Directory objects) in Microsoft 365. The sync only adds the user accounts. You must assign licenses to the synced users before they can use email and other Office apps.
 - **Migrating from Exchange?** See [Ways to migrate multiple email accounts to Office 365](/Exchange/mailbox-migration/mailbox-migration). When you migrate multiple mailboxes to Microsoft 365 by using either cutover, staged, or a hybrid Exchange method, you automatically add users as part of the migration. The migration only adds the user accounts. You must assign licenses to the users before they can use email and other Office apps. If you don't assign a license to a user, their mailbox is disabled after a grace period of 30 days. Learn how to [assign licenses to users](../manage/assign-licenses-to-users.md) in the Microsoft 365 admin center.
@@ -130,9 +129,9 @@ If you're a global or user management admin of a Microsoft 365 for business subs
 When you create, edit, or delete a custom user view, the changes are shown in the **Filter** list that all admins in your company see when they go to the **Users** page.
 
 > [!TIP]
-> Standard user views are displayed by default in the **Filters** drop-down list. The standard filters include **All users**, **Licensed users**, **Guest users**,  **Sign-in allowed**, **Sign-in blocked**, **Unlicensed users**, **Users with errors**, **Billing admins**, **Global admins**, **Helpdesk admins**, **Service admins**, and **User management admins**. You can't edit or delete standard views. 
+> Standard user views are displayed by default in the **Filters** drop-down list. The standard filters include **All users**, **Licensed users**, **Guest users**,  **Sign-in allowed**, **Sign-in blocked**, **Unlicensed users**, **Users with errors**, **Billing admins**, **Global admins**, **Helpdesk admins**, **Service admins**, and **User management admins**. You can't edit or delete standard views.
 
-A few things to note about standard views: 
+A few things to note about standard views:
 
 - Some standard views display an unsorted list if there are more than 2,000 users in the list. To locate specific users in this list, use the search box. 
 - If you didn't purchase Microsoft 365 from Microsoft, **Billing admins** don't appear in the standard views list. For more information, see [Assigning admin roles](assign-admin-roles.md). 
