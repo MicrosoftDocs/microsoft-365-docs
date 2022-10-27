@@ -22,9 +22,16 @@ search.appverid: met150
 
 # Deployment of Microsoft Defender for Endpoint on Linux
 
-This article explains how to deploy Microsoft Defender for Endpoint on a Linux system. 
+This article provides advanced deployment guidance for Microsoft Defender for Endpoint on Linux. You'll get a brief summary of the deployment steps, learn about the system requirements, be guided through the actual deployment steps, and learn how to verify that the device has been correctly onboarded.
 
 For information about Microsoft Defender for Endpoint capabilities, see [Advanced Microsoft Defender for Endpoint capabilities](#advanced-microsoft-defender-for-endpoint-capabilities).
+
+To learn about other ways to deploy Microsoft Defender for Endpoint on Linux, see:
+- [Manual deployment](linux-install-manually.md)
+- [Puppet based deployment](linux-install-with-puppet.md)
+- [Ansible based deployment](linux-install-with-ansible.md)
+- [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+
 
 ## Deployment summary
 
@@ -71,7 +78,7 @@ The following are the supported Linux servers:
 |---|---|
 |Disk space |1 GB|
 |RAM |1 GB<br> 4 GB is preferred|
-|CPU |If the Linux system is running only 1 vcpu, we recommend to be increased to 2 vcpu’s<br> four cores are preferred |
+|CPU |If the Linux system is running only 1 vcpu, we recommend to be increased to 2 vcpu’s<br> 4 cores are preferred |
 
 |OS version|Kernel filter driver|Comments|
 |---|---|---|
@@ -183,7 +190,7 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
 
     You can consider modifying the file based on your needs:
 
-    ```javascript
+    ```JSON
         {
        "antivirusEngine":{
           "enforcementLevel":"real_time",
@@ -241,7 +248,7 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
     ```   
     **Recommendations**
 
-   ```javascript
+   ```JSON
           {
        "antivirusEngine":{
           "enforcementLevel":"real_time",
@@ -308,22 +315,42 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
     }
       ```
 
- > [!NOTE]
- >  In Linux (and macOS) we support paths where it starts with a wildcard.
+    > [!NOTE]
+    >  In Linux (and macOS) we support paths where it starts with a wildcard.
 
-The following table describes the settings that are recommended as part of `mdatp_managed.json` file:
+    The following table describes the settings that are recommended as part of `mdatp_managed.json` file:
 
-|Settings|Comments|
-|---|---|
-|`exclusionsMergePolicy` being set to `admin_only` |Prevents the local admin from being able to add the local exclusions (via bash (the command prompt)).|
- |`disallowedThreatActions` being set to `allow and restore`|Prevents the local admin from being able to restore a quarantined item (via bash (the command prompt)).|
- |`threatTypeSettingsMergePolicy` being set to `admin_only`|Prevents the local admin from being able to add False Positives or True Positives that are benign to the threat types (via bash (the command prompt)).|
-- Save the setting as `mdatp_managed.json` file.
-- Copy the setting to this path `/etc/opt/microsoft/mdatp/managed/`. For more information, see [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).
+    |Settings|Comments|
+    |---|---|
+    |`exclusionsMergePolicy` being set to `admin_only` |Prevents the local admin from being able to add the local exclusions (via bash (the command prompt)).|
+     |`disallowedThreatActions` being set to `allow and restore`|Prevents the local admin from being able to restore a quarantined item (via bash (the command prompt)).|
+     |`threatTypeSettingsMergePolicy` being set to `admin_only`|Prevents the local admin from being able to add False Positives or True Positives that are benign to the threat types (via bash (the command prompt)).|
+    - Save the setting as `mdatp_managed.json` file.
+    - Copy the setting to this path `/etc/opt/microsoft/mdatp/managed/`. For more information, see [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).
 
 ## High CPU utilization by ISVs, Linux apps, or scripts
 
-If you observe that third-party ISVs, internally developed Linux apps, or scripts run into high CPU utilization, you can check the following processes to investigate the cause.
+If you observe that third-party ISVs, internally developed Linux apps, or scripts run into high CPU utilization, you take the following steps to investigate the cause.
+
+1. Identify the thread or process that's causing the symptom. 
+2. Apply further diagnostic steps based on the identified process to address the issue. 
+
+
+### Step 1. Identify the Microsoft Defender for Endpoint on Linux thread causing the symptom
+
+Use the following syntaxes to help identify the process that is causing CPU overhead:
+
+- To get Microsoft Defender for Endpoint process ID causing the issue, run:
+  - `sudo top -c`.
+- To get more details on Microsoft Defender for Endpoint process, run: 	
+  - `sudo ps ax --no-headings -T -o user,pid,thcount,%cpu,sched,%mem,vsz,rss,tname,stat,start_time,time,ucmd,command |sort -nrk 3|grep`.
+- To identify the specific Microsoft Defender for Endpoint thread ID causing the highest CPU utilization within the process, run:
+   - `sudo ps -T -p <PID> >> Thread_with_highest_cpu_usage.log`.
+
+  :::image type="content" source="images/cpu-utilization.png" alt-text="This is CPU utilization":::
+
+
+The following table lists the processes that may cause a high CPU usage:
 
 |Process name|Component used|MDE engine used|
 |---|---|---|
@@ -332,18 +359,12 @@ If you observe that third-party ISVs, internally developed Linux apps, or script
 |wdavdaemon_edr||EDR engine|
 |mdatp_audisp_plugin|audit framework|Audit log ingestion|
 
-### Identify the Microsoft Defender for Endpoint on Linux thread causing the symptom
+### Step 2. Apply further diagnostic steps based on the identified process
 
-Use the following syntaxes to help identify the root cause of the CPU overhead:
+Now that you've identified the process that is causing the high CPU usage, follow the corresponding diagnostic guidance below. 
 
-- To get Microsoft Defender for Endpoint process ID causing the issue, run:
-  - `sudo top -c`.
-- To get more details on Microsoft Defender for Endpoint process, run: 	
-  - `sudo ps ax --no-headings -T -o user,pid,thcount,%cpu,sched,%mem,vsz,rss,tname,stat,start_time,time,ucmd,command |sort -nrk 3|grep`.
-- To identify specific Microsoft Defender for Endpoint thread ID causing the highest CPU utilization within the process, run:
-   - `sudo ps -T -p <PID> >> Thread_with_highest_cpu_usage.log`.
+For example, in the previous step, 'wdavdaemon unprivileged` was identified as the process that was causing high CPU usage. Based on the result, you can apply the guidance to check the wdavdaemon unprivileged process below.
 
-:::image type="content" source="images/cpu-utilization.png" alt-text="This is CPU utilization":::
 
 ### Check the wdavdaemon unprivileged process
 
@@ -477,7 +498,7 @@ For more information, see [Device health and Microsoft Defender Antivirus health
 For more information, see [Deploy updates for Microsoft Defender for Endpoint on RHEL Linux](linux-updates.md#rhel-and-variants-centos-and-oracle-linux).
 
 >[!TIP]
-> Automate the agent update on a monthly (Recommended) schedule by using a Cron job.For more information, see [schedule an update of the Microsoft Defender for Endpoint on RHEL Linux](linux-update-mde-linux.md).
+> Automate the agent update on a monthly (Recommended) schedule by using a Cron job. For more information, see [schedule an update of the Microsoft Defender for Endpoint on RHEL Linux](linux-update-mde-linux.md).
 
 ## Verify that you're able to get security intelligence updates
 
@@ -500,7 +521,7 @@ To ensure that the device is correctly onboarded and reported to the service, ru
   If the detection doesn’t show up, then it could be that we're missing event or alerts in portal. For more information, see [Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux](linux-support-events.md).
 - For more information about unified submissions in Microsoft 365 Defender and the    ability to submit **False Positives** and **False Negatives** through the portal, see [Unified submissions in Microsoft 365 Defender now Generally Available! - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770).
 
-## Diagnostic and troubleshooting information for installation issues
+## Diagnostic and troubleshooting resources
 
 - [Installation issues of Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 - [Troubleshooting log installation issues](linux-resources.md#log-installation-issues).
@@ -515,9 +536,12 @@ To ensure that the device is correctly onboarded and reported to the service, ru
 
 - [Enhanced antimalware engine capabilities on RHEL Linux and macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003)
 
-- Following are the boost protection of your Linux estate with behavior monitoring capabilities:
+- Boost protection of your Linux estate with behavior monitoring capabilities:
     - [Boost protection of Linux estate with behavior monitoring](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/boost-protection-of-your-linux-estate-with-behavior-monitoring/ba-p/2909320)
-    - [Enhancement of Linux antivirus with behavior monitoring capabilities](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhancing-linux-antivirus-with-behavior-monitoring-capabilities/ba-p/2226705)
+
+    >[!NOTE]
+    >The behavior monitoring functionality complements existing strong content-based capabilities, however you should carefully evaluate this feature in your environment before deploying it broadly since enabling behavioral monitoring consumes more resources and may cause performance issues. 
+
 
 - [Unified submissions in Microsoft 365 Defender](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770)
 
