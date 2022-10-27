@@ -37,7 +37,7 @@ Required Conditions:
 
 **Commitment:**
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#office-for-the-web-data-residency-commitments) for the specific customer data at rest commitment for Office for the Web.
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#office-for-the-web) for the specific customer data at rest commitment for Office for the Web.
 
 ### Migration
 
