@@ -21,8 +21,8 @@ ms.collection:
 Data residency commitments for the Purview set of services, as described below, are available with the Advanced Data Residency add-on.
 The required conditions for the related commitments for the services described below are:
 
-1. Tenant has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
-1. Tenant has a valid Advanced Data Residency subscription for all users in the tenant.
+1. _Tenant_ has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_.
 1. The Purview service customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
 ## Migration
@@ -31,7 +31,7 @@ Customer Data supporting Purview services is closely aligned with the Exchange O
 
 ## How can I determine Customer Data location?
 
-We are in the process of updating the actual data location in Tenant Admin Center.  When this change is complete you will be able to see the actual data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Until that change is visible, you can view the Exchange Online data location information in order to understand where your committed data is stored for this service.
+We are in the process of updating the actual data location in _Tenant_ Admin Center.  When this change is complete you will be able to see the actual data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Until that change is visible, you can view the Exchange Online data location information in order to understand where your committed data is stored for this service.
 
 ### Purview Audit (Standard)
 
@@ -45,12 +45,7 @@ Capability summary: Microsoft Purview Audit (Standard) provides you with the abi
 
 Commitment:
 
-The following Customer Data will be stored in the related _Geography_:
-
-- Service configuration data
-- Audited Activities
-- Audit Records
-- Audit log query permissions
+Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for Purview Audit (Standard). 
 
 ### Purview Audit (Premium)
 
@@ -64,9 +59,8 @@ Capability summary: Microsoft Purview Audit (Premium) builds on the capabilities
 
 Commitment:
 
-The following Customer Data will be stored in the related _Geography_:
+Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for Purview Audit (Premium). 
 
-In addition to the data stored as part of Purview Audit (Standard), configuration and Customer Data related to high-value crucial events are stored in the relevant _Geography_.
 
 ### Data lifecycle management - Data Retention
 
@@ -94,25 +88,7 @@ Capability summary: Lets you retain or delete content with policy management for
 
 Commitment:
 
-The following customer data will be stored in the related _Geography_:
-
-- Retention policy settings
-- Retention label definitions
-- Customer Data stored in original locations for the following services:
-  - Exchange email
-  - SharePoint site
-  - OneDrive accounts
-  - Microsoft 365 Groups
-  - Exchange public folders
-  - Microsoft Teams chats and channel messages
-- Customer Data copied and stored in Exchange Online hidden mailboxes
-  - Teams channel messages
-  - Teams chats
-  - Teams private channel messages
-  - SharePoint Online, OneDrive for Business, Exchange Online and Microsoft Teams follow the data residency commitments for those services.  Please refer to [Exchange Online](m365-dr-workload-exo.md), [SharePoint Online](m365-dr-workload-spo.md) and [Microsoft Teams](m365-dr-workload-teams.md) workload data residency pages for more details.
-- Training classifiers
-- Disposition data
-- Mappings between retention labels and Data Loss Prevention (DLP) policies.
+Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for Data lifecycle management - Data Retention. 
 
 ### Data lifecycle management - Records Management
 
@@ -126,13 +102,7 @@ Capability summary: Organizations of all types require a records-management solu
 
 Commitment:
 
-The following customer data will be stored in the related _Geography_:
-
-- Record retention label definitions.
-- File plan definitions
-- Event-based retention policy settings.
-- Disposition review records
-- Records of deletion
+Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for Data lifecycle management - Records Management. 
 
 ### Information Protection - Sensitivity labels
 
@@ -157,14 +127,7 @@ Capability summary: Sensitivity labels from Microsoft Purview Information Protec
 
 Commitment:
 
-The following customer data will be stored in the related _Geography_:
-
-- Label configuration
-- Labels definition
-- Label policies
-- Custom help page
-- Activity Explorer and Microsoft 365 unified audit logs
-- Label change justification records.
+Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for Information Protection - Sensitivity labels. 
 
 ### Information Protection - Data Loss Prevention (DLP)
 
@@ -195,14 +158,7 @@ DLP detects sensitive items by using deep content analysis, not by just a simple
 
 Commitment:
 
-The following customer data will be stored in the related _Geography_:
-
-- DLP admin configuration
-- DLP policies in Compliance Center
-- DLP monitored activities
-- Violation history, Activity Explorer and Microsoft 365 unified audit logs
-- Quarantine storage
-- DLP Alerts and DLP Alert management dashboard
+Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for Data lifecycle management - Records Management. 
 
 ### Information Protection - Office Message Encryption
 
@@ -221,8 +177,7 @@ Capability summary: With Office 365 Message Encryption, your organization can se
 
 Commitment:
 
-The following customer data will be stored in the related _Geography_:
-***TODO: need commitment text***
+Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for Information Protection - Office Message Encryption. 
 
 ### Insider Risk Management - Information Barriers
 
@@ -236,7 +191,4 @@ Capability summary: Microsoft Purview Information Barriers (IB) is a compliance 
 
 Commitment:
 
-The following customer data will be stored in the related _Geography_:
-
-- Policy settings and risk indicators
-- Admin settings
+Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for Insider Risk Management - Information Barriers. 
