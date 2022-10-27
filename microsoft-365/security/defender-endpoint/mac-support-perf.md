@@ -136,7 +136,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
         cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
       ```
 
-      The output of the above is a list of the top contributors to performance issues. The first column is the process identifier (PID), the second column is te process name, and the last column is the number of scanned files, sorted by impact.
+      The output of the above is a list of the top contributors to performance issues. The first column is the process identifier (PID), the second column is the process name, and the last column is the number of scanned files, sorted by impact.
 
       For example, the output of the command will be something like the below:
 
