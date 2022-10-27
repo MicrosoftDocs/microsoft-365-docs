@@ -89,7 +89,7 @@ In order to deploy an add-in via Centralized Deployment, you need to be either a
 
 ### Centralized Deployment Compatibility Checker
 
-Using the Centralized Deployment Compatibility Checker, you can verify whether the users on your tenant are set up to use Centralized Deployment for Word, Excel and PowerPoint. The Compatibility Checker is not required for Outlook support. Download the [compatibility checker](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
+Using the Centralized Deployment Compatibility Checker, you can verify whether the users on your tenant are set up to use Centralized Deployment for Word, Excel, and PowerPoint. The Compatibility Checker is not required for Outlook support. Download and install the [compatibility checker](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
 
 #### Run the compatibility checker
 
