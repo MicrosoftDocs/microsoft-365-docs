@@ -190,7 +190,7 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
 
     ```JSON
         {
-       "antimalwareEngine":{
+       "antivirusEngine":{
           "enforcementLevel":"real_time",
           "scanAfterDefinitionUpdate":true,
           "scanArchives":true,
@@ -248,7 +248,7 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
 
    ```JSON
           {
-       "antimalwareEngine":{
+       "antivirusEngine":{
           "enforcementLevel":"real_time",
           "scanAfterDefinitionUpdate":true,
           "scanArchives":true,
