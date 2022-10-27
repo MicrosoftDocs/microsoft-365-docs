@@ -502,7 +502,7 @@
 
 ## Reference
 ### [Understand threat intelligence concepts](threat-indicator-concepts.md)
-### [Advanced deployment guidance - Microsoft Defender for Endpoint on Linux](comprehensive-guidance-on-linux-deployment)
+### [Advanced deployment guidance - Microsoft Defender for Endpoint on Linux](comprehensive-guidance-on-linux-deployment.md)
 
 ### [Configure integration with other Microsoft solutions]()
 #### [Configure conditional access](configure-conditional-access.md)

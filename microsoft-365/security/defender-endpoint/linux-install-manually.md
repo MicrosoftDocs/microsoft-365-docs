@@ -32,7 +32,7 @@ search.appverid: met150
 
 
 >[!TIP]
->Looking for advanced guidance on deploying Microsoft Defender for Endpoint on Linux? See [Advanced deployment guide on Defender for Endpoint on Linux](comprehensive-guidance-on-linux-deployment). 
+>Looking for advanced guidance on deploying Microsoft Defender for Endpoint on Linux? See [Advanced deployment guide on Defender for Endpoint on Linux](comprehensive-guidance-on-linux-deployment.md). 
 
 
 This article describes how to deploy Microsoft Defender for Endpoint on Linux manually. A successful deployment requires the completion of all of the following tasks:
