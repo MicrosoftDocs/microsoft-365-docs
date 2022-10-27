@@ -37,7 +37,7 @@ We are in the process of updating the actual data location in _Tenant_ Admin Cen
 
 #### Summary
 
-Service documentation: [Microsoft Purview auditing solutions](https://learn.microsoft.com/microsoft-365/compliance/auditing-solutions-overview)
+Service documentation: [Microsoft Purview auditing solutions](/microsoft-365/compliance/auditing-solutions-overview)
 
 Capability summary: Microsoft Purview Audit (Standard) provides you with the ability to log and search your data for audit activities and power your forensics, IT, and compliance efforts and legal investigations.
 
@@ -51,7 +51,7 @@ Please refer to the Advanced Data Residency Commitment page (***TODO: link to ne
 
 #### Summary
 
-Service documentation: [Microsoft Purview auditing solutions](https://learn.microsoft.com/microsoft-365/compliance/auditing-solutions-overview)
+Service documentation: [Microsoft Purview auditing solutions](/microsoft-365/compliance/auditing-solutions-overview)
 
 Capability summary: Microsoft Purview Audit (Premium) builds on the capabilities of Audit (Standard) by providing audit log retention policies, longer retention of audit records, capability to identify high-value crucial events, and higher bandwidth access to the Office 365 Management Activity API.
 
@@ -74,13 +74,13 @@ ADR applies to the following services within Purview Data lifecycle management, 
 - Machine Learning-based retention
 - Teams message retention policies
 
-Service documentation:  [Learn about retention policies & labels](https://learn.microsoft.com/microsoft-365/compliance/retention)
+Service documentation:  [Learn about retention policies & labels](/microsoft-365/compliance/retention)
 
 For more detailed information about how retention settings work for different workloads, see the following articles:
 
-- [Learn about retention for Exchange](https://learn.microsoft.com/microsoft-365/compliance/retention-policies-exchange)
-- [Learn about retention for SharePoint and OneDrive](https://learn.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint)
-- [Learn about retention for Microsoft Teams](https://learn.microsoft.com/microsoft-365/compliance/retention-policies-teams)
+- [Learn about retention for Exchange](/microsoft-365/compliance/retention-policies-exchange)
+- [Learn about retention for SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint)
+- [Learn about retention for Microsoft Teams](/microsoft-365/compliance/retention-policies-teams)
 
 Capability summary: Lets you retain or delete content with policy management for email, documents, and Teams.
 
@@ -94,7 +94,7 @@ Please refer to the Advanced Data Residency Commitment page (***TODO: link to ne
 
 #### Summary
 
-Service documentation: [Learn about Microsoft Purview Records Management](https://learn.microsoft.com/microsoft-365/compliance/records-management)
+Service documentation: [Learn about Microsoft Purview Records Management](/microsoft-365/compliance/records-management)
 
 Capability summary: Organizations of all types require a records-management solution to manage regulatory, legal, and business-critical records across their corporate data. Records management for Microsoft Purview helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be retained, no longer of value, or no longer required for business purposes.
 
@@ -118,8 +118,8 @@ ADR applies to the following services within Purview Information Protection, Sen
 
 Service documentation:
 
-- [Learn about sensitivity labels](https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels)
-- [Get started with Activity explorer](https://learn.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer)
+- [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels)
+- [Get started with Activity explorer](/microsoft-365/compliance/data-classification-activity-explorer)
 
 Capability summary: Sensitivity labels from Microsoft Purview Information Protection let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered.
 
@@ -138,7 +138,7 @@ ADR applies to the following services within Purview Information Protection, Dat
 - Office 365 Data Loss Prevention (DLP) for emails and files
 - DLP for Teams chat
 
-Service documentation: [Learn about data loss prevention](https://learn.microsoft.com/microsoft-365/compliance/dlp-learn-about-dlp)
+Service documentation: [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
 
 Capability summary:
 
@@ -169,7 +169,7 @@ ADR applies to the following services within Purview Information Protection, Off
 - Basic Office Message Encryption
 - Advanced Office Message Encryption
 
-Service documentation: [Office 365 Message Encryption - Microsoft Purview](https://learn.microsoft.com/microsoft-365/compliance/ome)
+Service documentation: [Office 365 Message Encryption - Microsoft Purview](/microsoft-365/compliance/ome)
 
 Capability summary: With Office 365 Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Office 365 Message Encryption works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps to ensure that only intended recipients can view message content.
 
@@ -183,7 +183,7 @@ Please refer to the Advanced Data Residency Commitment page (***TODO: link to ne
 
 #### Summary
 
-Service documentation: [Learn about information barriers](https://learn.microsoft.com/microsoft-365/compliance/information-barriers)
+Service documentation: [Learn about information barriers](/microsoft-365/compliance/information-barriers)
 
 Capability summary: Microsoft Purview Information Barriers (IB) is a compliance solution that allows you to restrict two-way communication and collaboration between groups and users in Microsoft Teams, SharePoint, and OneDrive. Often used in highly regulated industries, IB can help to avoid conflicts of interest and safeguard internal information between users and organizational areas.
 
