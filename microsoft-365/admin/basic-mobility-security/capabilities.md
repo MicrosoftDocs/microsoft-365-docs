@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -150,7 +151,7 @@ The following option can block users from accessing their Microsoft 365 email if
 |---|---|---|---|
 |Block video conferences on device<sup>1</sup>|Yes|No|No|
 |Block access to application store<sup>1</sup>|Yes|No|Yes|
-|Require password when accessing application store|No|Yes|Yes|
+|Require password when accessing application store|Yes|No|No|
 
 <sup>1</sup>To function, these settings require supervised iOS devices. 
 
