@@ -21,7 +21,7 @@ f1.keywords: NOCSH
 
 # How to get Microsoft Defender for Business servers
 
-Microsoft Defender for Business servers is a an add-on to Defender for Business. This new offering enables you to secure your server operating systems with the same protection that you get for client devices in Defender for Business. This article describes how to get Microsoft Defender for Business servers and includes next steps and additional information.
+Microsoft Defender for Business servers is an add-on to Defender for Business. This new offering enables you to secure your server operating systems with the same protection that you get for client devices in Defender for Business. This article describes how to get Microsoft Defender for Business servers and includes next steps and additional information.
 
 > [!IMPORTANT]
 > - In order to add on Microsoft Defender for Business servers, you'll need at least one paid license for [Microsoft 365 Business Premium](../../business-premium/index.md) or [Defender for Business](mdb-overview.md) (standalone). 
