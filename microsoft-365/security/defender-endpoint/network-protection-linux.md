@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
-ms.author: v-jweston
+author: dansimp
+ms.author: dansimp
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.custom: asr
@@ -21,6 +21,7 @@ ms.collection:
 ms.date:
 search.appverid: met150
 ---
+<!--v-jweston/jweston-1 is to resume authorship appx. April/May 2023.-->
 
 # Network protection for Linux
 
@@ -131,7 +132,6 @@ A. Check Network Protection has effect on always blocked sites:
 
 - [http://www.smartscreentestratings2.net](http://www.smartscreentestratings2.net)
 - [https://www.smartscreentestratings2.net](https://www.smartscreentestratings2.net)
-- [http://malw-090-0-1.phsh-005-0-1.smartscreentestratings.com/](http://malw-090-0-1.phsh-005-0-1.smartscreentestratings.com/)
 
 B. Inspect diagnostic logs
 
