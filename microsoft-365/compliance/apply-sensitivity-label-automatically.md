@@ -93,7 +93,6 @@ Use the following table to help you identify the differences in behavior for the
 |Conditions: Trainable classifiers|Yes |In preview |
 |Conditions: Sharing options and additional options for email|No |Yes |
 |Conditions: Exceptions|No |Yes (email only) |
-|Support sublabel priority from the same parent label |No |Yes |
 |Recommendations, policy tooltip, and user overrides|Yes |No |
 |Simulation mode|No |Yes |
 |Exchange attachments checked for conditions|No | Yes|
@@ -107,13 +106,15 @@ Use the following table to help you identify the differences in behavior for the
 
 ## How multiple conditions are evaluated when they apply to more than one label
 
-The labels are ordered for evaluation according to their position that you specify in the policy: The label positioned first has the lowest position (least sensitive, so lowest priority) and the label positioned last has the highest position (most sensitive, so highest priority). The label with the highest order number (highest priority) is selected.
+The labels are ordered for evaluation according to their position that you specify in the compliance portal: The label positioned first has the lowest position (least sensitive, so lowest priority) and the label positioned last has the highest position (most sensitive, so highest priority). The label with the highest order number (highest priority) is selected.
 
-However, for sublabels that share the same parent label, auto-labeling isn't supported for client-side labeling, but is for service-side labeling:
+This behavior is also true for service-side auto-labeling (auto-labeling policies) when sublabels share the same parent label: If, after evaluation and ordering, more than one sublabel from the same parent label meets the auto-labeling conditions, the sublabel with the highest order number (highest priority) is selected and applied.
 
-- Client-side auto-labeling: If, after evaluation and ordering, more than one sublabel from the same parent label meets the auto-labeling conditions, no label is selected. In this scenario, the content isn't automatically labeled and users don't see a label recommendation.
+However, the behavior is a little different for client-side auto-labeling (auto-labeling settings in the label). If multiple sublabels from the same highest order (highest priority) parent label match the conditions:
 
-- Service-side auto-labeling: If, after evaluation and ordering, more than one sublabel from the same parent label meets the auto-labeling conditions, the sublabel with the highest order number (highest priority) is selected and applied.
+- If a file is not already labeled, the highest order (highest priority) sublabel that's configured for automatic labeling is always selected, rather than the highest order sublabel that's configured for recommended labeling. If none of these sublabels are configured for automatic labeling but only recommended labeling, the highest order sublabel is selected.
+
+- If a file is already labeled with a sublabel from the same parent (highest priority), no action is taken and the existing sublabel remains.
 
 For more information about label priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).
 
