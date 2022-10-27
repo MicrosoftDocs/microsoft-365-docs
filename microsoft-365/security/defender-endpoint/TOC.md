@@ -128,14 +128,11 @@
 #### [Microsoft Defender for Endpoint on Linux]()
 ##### [Overview of Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 ##### [What's New](linux-whatsnew.md)
-#### [Deploy]()
-##### [Basic guidance]()
+##### [Deploy]()
 ###### [Manual deployment](linux-install-manually.md)
 ###### [Puppet based deployment](linux-install-with-puppet.md)
 ###### [Ansible based deployment](linux-install-with-ansible.md)
 ###### [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
-##### [Advanced guidance]()
-###### [Deployment of Microsoft Defender for Endpoint on RHEL Linux](comprehensive-guidance-on-linux-deployment.md)
 
 ##### [Update](linux-updates.md)
 
