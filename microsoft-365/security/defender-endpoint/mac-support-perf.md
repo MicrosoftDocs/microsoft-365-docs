@@ -1,7 +1,7 @@
 ﻿---
 title: Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
 description: Troubleshoot performance issues in Microsoft Defender for Endpoint on macOS.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library

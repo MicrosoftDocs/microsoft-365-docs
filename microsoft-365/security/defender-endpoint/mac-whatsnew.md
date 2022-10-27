@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Endpoint on Mac
 description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on Mac.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -48,6 +48,9 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 <br/>
 </details>
 
+> [!IMPORTANT]
+> This is a minimal recommended MDE version for macOS Ventura
+
 <details>
   <summary>Oct-2022 (Build: 101.82.21  | Release version: 20.122082.18221.0)</summary>
 
@@ -66,9 +69,6 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 <br/>
 </details>
-
-> [!IMPORTANT]
-> This is a minimal MDE version without known issues on macOS Ventura on the day of publishing the release notes. Between now and macOS Ventura GA, Apple may still release Ventura Beta's with platform changes that impact MDE experience. Visit these release notes around Ventura GA date for the final recommended Ventura-compatible MDE version number.
 
 <details>
   <summary>Aug-2022 (Build: 101.78.13  | Release version: 20.122072.17813.0)</summary>
