@@ -186,6 +186,9 @@
           href: m365-dr-product-terms-dr.md
         - name: Advanced Data Residency
           href: advanced-data-residency.md
+          items: 
+            - name: Advanced Data Residency Commitments
+              href: m365-dr-commitments.md
         - name: Multi-geo Data Residency
           items: 
             - name: Microsoft 365 Multi-Geo
@@ -244,8 +247,6 @@
           href: m365-dr-legacy-move-program.md
         - name: Where is my data stored? 
           href: o365-data-locations.md
-        - name: EU Page 
-          href: eu-data-storage-locations.md 
     - name: Move to a new Microsoft 365 datacenter geo
       href: moving-data-to-new-datacenter-geos.md
       items: 
@@ -257,8 +258,6 @@
           href: data-move-faq.md
         - name: Where customer data is stored
           href: o365-data-locations.md
-        - name: Data locations for the European Union
-          href: eu-data-storage-locations.md
 
 - name: Identity
   items: 
