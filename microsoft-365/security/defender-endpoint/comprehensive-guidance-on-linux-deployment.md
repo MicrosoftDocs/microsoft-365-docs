@@ -134,7 +134,7 @@ Here's how to check the network connectivity of Microsoft Defender for Endpoint:
 1. Download [Microsoft Defender for Endpoint URL list for commercial customers](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) or [Microsoft Defender for Endpoint URL list for Gov/GCC/DoD](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) that lists the services and their associated URLs that your network must be able to connect.
 
 2. Under **Geography** column, ensure the following checkboxes are selected:
-    - US
+    - EU, or UK, or US
     - WW
     - (Blanks)
 
@@ -361,7 +361,7 @@ The following table lists the processes that may cause a high CPU usage:
 
 Now that you've identified the process that is causing the high CPU usage, follow the corresponding diagnostic guidance below. 
 
-For example, in the previous step, 'wdavdaemon unprivileged` was identified as the process that was causing high CPU usage. Based on the result, you can apply the guidance to check the wdavdaemon unprivileged process below.
+For example, in the previous step, `wdavdaemon unprivileged` was identified as the process that was causing high CPU usage. Based on the result, you can apply the guidance to check the wdavdaemon unprivileged process below.
 
 
 ### Check the wdavdaemon unprivileged process
@@ -412,64 +412,64 @@ To deploy Microsoft Defender for Endpoint on Linux using Ansible, see [Deploy Mi
 
 1. To deliver the downloaded onboarding package from Microsoft 365 Defender portal, see the information below:
 
-```bash
-    - name: Create MDATP directories
-      file:
-        path: /etc/opt/microsoft/mdatp/
-        recurse: true
-        state: directory
-        mode: 0755
-        owner: root
-        group: root
-```
+    ```bash
+        - name: Create MDATP directories
+          file:
+            path: /etc/opt/microsoft/mdatp/
+            recurse: true
+            state: directory
+            mode: 0755
+            owner: root
+            group: root
+    ```
 
 2. To add Microsoft to the repository, see the information below:
 
-```bash
-    - name: Add Microsoft APT key
-      apt_key:
-      url: https://packages.microsoft.com/keys/microsoft.asc
-      state: present
-      when: ansible_os_family == "Debian"
+    ```bash
+        - name: Add Microsoft APT key
+          apt_key:
+          url: https://packages.microsoft.com/keys/microsoft.asc
+          state: present
+          when: ansible_os_family == "Debian"
 
-    - name: Add Microsoft apt repository for MDATP
-      apt_repository:
-      repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [codename] main
-      update_cache: yes
-      state: present
-      filename: microsoft-[channel]
-      when: ansible_os_family == "Debian"
+        - name: Add Microsoft apt repository for MDATP
+          apt_repository:
+          repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [codename] main
+          update_cache: yes
+          state: present
+          filename: microsoft-[channel]
+          when: ansible_os_family == "Debian"
 
-    - name: Add Microsoft DNF/YUM key
-      rpm_key:
-      state: present
-      key: https://packages.microsoft.com/keys/microsoft.asc
-      when: ansible_os_family == "RedHat"
+        - name: Add Microsoft DNF/YUM key
+          rpm_key:
+          state: present
+          key: https://packages.microsoft.com/keys/microsoft.asc
+          when: ansible_os_family == "RedHat"
 
-    - name: Add  Microsoft yum repository for MDATP
-      yum_repository:
-      name: packages-microsoft-[channel]
-      description: Microsoft Defender for Endpoint
-      file: microsoft-[channel]
-      baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/ 
-      gpgcheck: yes
-      enabled: Yes
-      when: ansible_os_family == "RedHat"
-```
+        - name: Add  Microsoft yum repository for MDATP
+          yum_repository:
+          name: packages-microsoft-[channel]
+          description: Microsoft Defender for Endpoint
+          file: microsoft-[channel]
+          baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/ 
+          gpgcheck: yes
+          enabled: Yes
+          when: ansible_os_family == "RedHat"
+    ```
 
 3. To install the package, see the information below:
 
-```bash
-    - hosts: servers
-      tasks:
-      - include: ../roles/onboarding_setup.yml
-    - include: ../roles/add_yum_repo.yml
-      - name: Install MDATP
-      dnf:
-      name: mdatp
-      state: latest
-      enablerepo: packages-microsoft-[channel]
-```
+    ```bash
+        - hosts: servers
+          tasks:
+          - include: ../roles/onboarding_setup.yml
+        - include: ../roles/add_yum_repo.yml
+          - name: Install MDATP
+          dnf:
+          name: mdatp
+          state: latest
+          enablerepo: packages-microsoft-[channel]
+    ```
 
 Additionally, for deploying the “settings preferences” via Ansible, go through adding the steps from the above item 5 “How to configure Microsoft Defender for Endpoint for Linux Antivirus (AV)”, by copying your `mdatp_managed.json` to `/etc/opt/microsoft/mdatp/managed/`. 
 
