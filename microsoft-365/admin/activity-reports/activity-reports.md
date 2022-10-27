@@ -57,7 +57,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 2. Click the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page. On that page, different reports for the service are provided in tabs.
 
-   :::image type="content" alt-text="The Usage dashboard." source="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::
+   :::image type="content" alt-text="The Usage dashboard." source="../../media/activity-usage-analytics3.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::
 
 ## Who can see reports
 
@@ -80,6 +80,8 @@ People who have the following permissions:
 - Teams Administrator
 
 - Teams Communications Administrator
+
+- User Experience Success Manager (with no user details)
 
 To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
 
