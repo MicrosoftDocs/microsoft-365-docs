@@ -112,7 +112,7 @@ If you're seeing this page in the admin center, you're on the **admin simplified
 
 3. Choose **Next**.
 
-4. On the Licenses page, select the licenses you want to assign your users and choose **Next**.
+4. On the **Licenses** page, select the licenses you want to assign your users and choose **Next**.
 
 5. Review your selections and choose **Add users**.
 
