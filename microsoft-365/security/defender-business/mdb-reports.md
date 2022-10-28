@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/14/2022
+ms.date: 10/28/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -27,6 +27,7 @@ Several reports are available in the Microsoft 365 Defender portal ([https://sec
 
 |Report  |Description  |
 |---------|---------|
+| **License report** (*NEW!*) | The license report provides information about licenses your organization has purchased and is using. To access this report, in the navigation pane, choose **Settings** > **Endpoints** > **License**. |
 | **Security report**  | The security report provides information about your company's identities, devices, and apps. To access this report, in the navigation pane, choose **Reports** > **General** > **Security report**. <br/><br/>You can view similar information on the home page of your Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). |
 | **Threat protection**  | The threat protection report provides information about alerts and alert trends. Use the **Alert trends** column to view information about alerts that were triggered over the last 30 days. Use the **Alert status** column to view current snapshot information about alerts, such as categories of unresolved alerts and their classification. To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Threat protection**. <br/><br/>You can also use the **Incidents** list to view information about alerts. In the navigation pane, choose **Incidents** to view and manage current incidents. To learn more, see [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md). |
 | **Device health and compliance** | The device health and compliance report provides information about device health and trends. You can use this report to determine whether Defender for Business sensors are working correctly on devices and the current status of Microsoft Defender Antivirus. To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Device health and compliance**. <br/><br/>You can use the **Devices** list to view information about your company's devices. In the navigation pane, go to **Assets** > **Devices**. To learn more, see [Manage devices in Defender for Business](mdb-manage-devices.md). |
