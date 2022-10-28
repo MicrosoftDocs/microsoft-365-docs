@@ -10,8 +10,10 @@ ms.author: dansimp
 author: martyav
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 search.appverid: met150
 ---
 

@@ -8,8 +8,10 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:

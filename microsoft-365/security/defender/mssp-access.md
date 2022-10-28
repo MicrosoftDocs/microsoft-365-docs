@@ -12,12 +12,13 @@ ms.author: macapara
 author: mjcaparas
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 search.appverid: 
 - MOE150
 - MET150
 ms.collection: 
-- M365-security-compliance 
+- m365-security
+- tier2 
 ---
 
 # Provide managed security service provider (MSSP) access 

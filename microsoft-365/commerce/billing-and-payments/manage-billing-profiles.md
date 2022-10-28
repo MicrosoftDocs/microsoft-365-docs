@@ -8,9 +8,11 @@ audience: Admin
 ms.topic: article
 f1.keywords:
 - 'MACBillingBillsPaymentsBillingProfiles'
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
@@ -28,8 +30,7 @@ A billing profile contains a payment method, Bill-to information, and other invo
 
 > [!NOTE]
 >
-> Not all accounts have a billing profile. If you're not sure if you have a one, you can [view a list of your billing profiles]
-(manage-billing-profiles.md#view-my-billing-profiles).
+> Not all accounts have a billing profile. If you're not sure if you have a one, you can [view a list of your billing profiles](manage-billing-profiles.md#view-my-billing-profiles).
 
 ## What are billing profile roles?
 

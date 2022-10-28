@@ -8,13 +8,13 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom: 
 ms.subservice: mdo
 ms.service: microsoft-365-security
@@ -75,7 +75,7 @@ Do you want your Defender for Office 365 experience to be active or passive? The
 
 - **Audit mode**: Special *evaluation policies* are created for anti-phishing (which includes impersonation protection), Safe Attachments, and Safe Links. These evaluation policies are configured to *detect* threats only. Defender for Office 365 detects harmful messages for reporting, but the messages aren't acted upon (for example, detected messages aren't quarantined). The settings of these evaluation policies are described in the [Policies in audit mode](#policies-in-audit-mode) section later in this article.
 
-  Audit mode provides access to customized reports for threats detected by Defender for Office 365 on the **Evaluation mode** page at<https://security.microsoft.com/atpEvaluation>.
+  Audit mode provides access to customized reports for threats detected by Defender for Office 365 on the **Evaluation mode** page at <https://security.microsoft.com/atpEvaluation>.
 
 - **Blocking mode**: The Standard template for [preset security policies](preset-security-policies.md) is turned on and used for the trial, and the users you specify to include in the trial are added to the Standard preset security policy. Defender for Office 365 *detects* and *takes action on* harmful messages (for example, detected messages are quarantined).
 
@@ -279,7 +279,11 @@ After you set up your evaluation or trial in audit mode or blocking mode, the **
 
 ## Reports for your evaluation or trial of Defender for Office 365
 
-In **audit mode** or **blocking mode**, the following reports show detections by Defender for Office 365:
+This section describes the reports that are available in audit mode and blocking mode.
+
+### Reports for blocking mode
+
+In **blocking mode**, the following reports show detections by Defender for Office 365:
 
 - The [Mailflow view for the Mailflow status report](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report):
 
@@ -323,9 +327,16 @@ In **audit mode** or **blocking mode**, the following reports show detections by
 
   - The [URL protection report](view-reports-for-mdo.md#url-protection-report)
 
-### Reports for audit mode only
+### Reports for audit mode
 
-In [Threat Explorer](threat-explorer.md), messages that were detected by the Defender for Office 365 evaluation show the following banner in the details of the entry:
+In **audit mode**, the following reports show detections by Defender for Office 365:
+
+- The [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) has **Evaluation: Yes/No** as a filterable property in the following views:
+  - [View data by Email \> Phish and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
+  - [View data by Email \> Malware and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
+  - [View data by Email \> Spam and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--spam-and-chart-breakdown-by-detection-technology)
+
+- [Threat Explorer](threat-explorer.md) shows the following banner in message detection details on the **Analysis** tab for **Bad attachment**, **spam url + malware**, **Phish url**, and **impersonation** messages that were detected by the Defender for Office 365 evaluation show the following banner in the details of the entry:
 
   ![Notification banner in message details that the Defender for Office 365 evaluation detected a malicious email message.](../../media/evalv2-detection-banner.png)
 

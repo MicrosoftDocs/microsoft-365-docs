@@ -11,7 +11,8 @@ ms.date:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
@@ -60,11 +61,29 @@ You always have the choice to disable sensitivity labels for Office files in Sha
 
 If you are currently protecting documents in SharePoint by using SharePoint Information Rights Management (IRM), be sure to check the [SharePoint Information Rights Management (IRM) and sensitivity labels](#sharepoint-information-rights-management-irm-and-sensitivity-labels) section on this page.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Requirements
 
 These new capabilities work with [sensitivity labels](sensitivity-labels.md) only. If you currently have Azure Information Protection labels, first migrate them to sensitivity labels so that you can enable these features for new files that you upload. For instructions, see [How to migrate Azure Information Protection labels to unified sensitivity labels](/azure/information-protection/configure-policy-migrate-labels).
 
 Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and version 19.002.0107.0008 or later on Mac. Both these versions were released January 28, 2019, and are currently released to all rings. For more information, see the [OneDrive release notes](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0). After you enable sensitivity labels for Office files in SharePoint and OneDrive, users who run an older version of the sync app are prompted to update it.
+
+## Supported file types
+
+After you've enabled sensitivity labels for SharePoint and OneDrive, the following file types are supported for sensitivity labeling scenarios.
+
+Applying a sensitivity label in Office on the web or in SharePoint:
+
+- **Word**: .docx, .docm
+- **Excel**: .xlsx, .xlsm, .xlsb
+- **PowerPoint**: .pptx, .ppsx
+
+Uploading a labeled document, and then extracting and displaying that sensitivity label:
+
+- **Word**: doc, .docx, .docm, .dot, .dotx, .dotm
+- **Excel**: .xls, .xlt, .xla, .xlc, .xlm, .xlw, .xlsx, .xltx, .xlsm, .xltm, .xlam, .xlsb
+- **PowerPoint**: .ppt, .pot, .pps, .ppa, .pptx, .ppsx, .ppsxm, .potx, .ppam, .pptm, .potm, .ppsm
 
 ## Limitations
 
@@ -96,7 +115,9 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
 
 - For encrypted documents, printing is not supported in Office for the web.
 
-- For encrypted documents in Office for the web, copying to the clipboard and screen captures are not prevented. For more information, see [Can Rights Management prevent screen captures?](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures)
+- For encrypted documents in Office for the web, [screen captures aren't prevented](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures). Until recently, copying to the clipboard also wasn't prevented for these documents. Now rolling out, when documents are labeled and encrypted, and the **Copy** [usage right](/azure/information-protection/configure-usage-rights) isn't granted, Office on the web prevents copying to clipboard in the same way as desktop apps prevent this action. There are currently some exceptions for relabeling scenarios until the browser is refreshed, another session is started, or the document is opened again:
+    - Mid-session, the document changes from unencrypted to encrypted.
+    - Mid-session, the document changes from encrypted and the Copy usage right is granted, to encrypted but the Copy usage right is not granted.
 
 - By default, Office desktop apps and mobile apps don't support co-authoring for files that are labeled with encryption. These apps continue to open labeled and encrypted files in exclusive editing mode.
 

@@ -15,8 +15,11 @@ ms.date: 06/29/2020
 ms.reviewer:
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
-ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Collect Microsoft Defender Antivirus diagnostic data

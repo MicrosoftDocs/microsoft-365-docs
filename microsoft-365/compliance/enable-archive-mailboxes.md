@@ -12,8 +12,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
+- tier2
 search.appverid:
 - MOE150
 - MET150
@@ -33,7 +33,9 @@ Archiving in Microsoft 365 (also called *In-Place Archiving*) provides users wit
 
 Use the information in this article to enable or disable an archive mailbox by using an admin portal or by using PowerShell. Also learn how to run an automated diagnostic check on a user's archive mailbox to identify any problems and suggested resolutions.
 
-Currently, you can use either the [Microsoft Purview compliance portal](microsoft-365-compliance-center.md) or the [new Exchange admin center (EAC)](/exchange/exchange-admin-center) to enable or disable archive mailboxes.
+Configuration to enable or disable archive mailboxes is moving from the [Microsoft Purview compliance portal](microsoft-365-compliance-center.md) to the [new Exchange admin center (EAC)](/exchange/exchange-admin-center). Until this move is complete for all tenants, this page includes instructions for both admin experiences.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Get the necessary permissions
 

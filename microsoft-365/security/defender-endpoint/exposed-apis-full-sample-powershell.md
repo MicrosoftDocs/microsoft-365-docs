@@ -13,11 +13,14 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.date: 04/27/2022
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint APIs using PowerShell

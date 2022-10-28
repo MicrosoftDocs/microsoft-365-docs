@@ -6,11 +6,12 @@ manager: scotv
 ms.date: 08/30/2022
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection: 
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
@@ -575,7 +576,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Forms | United States |
 | Viva Connections | Australia |
 | Viva Topics | Australia |
-| Viva Learning | Global Geography 2 – Asia Pacific |
+| Viva Learning | Australia |
 | Viva Insights - Personal | Australia |
 | Viva Insights - Manager/Leader AAD org data only | Global Geography 2 – Asia Pacific |
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
@@ -6746,6 +6747,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader AAD org data only | United States |
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
+| Viva Goals | United States |
 </p></details>
 
 ## Uruguay

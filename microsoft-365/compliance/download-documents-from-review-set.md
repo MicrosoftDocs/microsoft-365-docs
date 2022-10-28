@@ -1,21 +1,23 @@
 ---
 title: "Download documents from a review set"
+description: "Learn how to select and download content from a review set in eDiscovery (Premium) for presentations or external reviews."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 
-description: "Learn how to select and download content from a review set in eDiscovery (Premium) for presentations or external reviews."
 ms.custom: seo-marvel-mar2020
 ---
 

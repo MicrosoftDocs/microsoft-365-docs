@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Purview Compliance Manager premium assessments trial playbook"
+title: "Microsoft Purview Compliance Manager premium assessments trial user guide"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -8,23 +8,27 @@ manager: laurawi
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
-ms.collection: m365-security-compliance
+ms.collection: 
+- purview-compliance
+- tier3
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Purview Compliance Manager premium assessments trial playbook."
+description: "Microsoft Purview Compliance Manager premium assessments trial user guide."
 ms.custom: trial-playbook
 ---
 
-# Trial playbook: Microsoft Purview Compliance Manager premium assessments
+# Trial user guide: Microsoft Purview Compliance Manager premium assessments
 
-Welcome to the Microsoft Purview Compliance Manager premium assessment trial playbook.
+Welcome to the Microsoft Purview Compliance Manager premium assessment trial user guide.
 
 This playbook will help you make the most of your 90-day free trial by teaching you how to use the comprehensive set of premium assessment templates (add-on).
 
 Using Microsoft recommendations, you'll quickly see how the premium assessment templates can help your organization assess risks and efficiently respond to global, regional and industrial regulatory requirements.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Get to know Compliance Manager
 
@@ -36,7 +40,7 @@ Our [Compliance Manager overview page](compliance-manager.md) is the best first 
 1. [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 1. [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
 1. [Understand assessments](compliance-manager.md#assessments)
-1. [Do a quick scan of your environment using the Microsoft Compliance Configuration Manager](compliance-manager-mcca.md)
+1. [Do a quick check of your environment using the Microsoft Compliance Configuration Manager](compliance-manager-mcca.md)
 
 ## Step 2: Configure Compliance Manager
 
@@ -83,7 +87,7 @@ After starting the premium assessment trial, you will see a summary on the dashb
 
 ## Additional resources
 
-**Microsoft Docs**: Get detailed information on how Compliance Manager premium assessments work and how to best implement them for your organization. Visit [Docs](compliance-manager-templates.md).
+**Microsoft Learn**: Get detailed information on how Compliance Manager premium assessments work and how to best implement them for your organization. Visit [Docs](compliance-manager-templates.md).
 
 **How to videos**: Check out the following videos to learn more:
 

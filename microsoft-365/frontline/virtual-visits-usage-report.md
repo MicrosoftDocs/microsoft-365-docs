@@ -4,7 +4,7 @@ author: LanaChin
 ms.author: v-lanachin
 manager: samanro
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-frontline
 ms.reviewer: 
 f1.keywords:
@@ -14,6 +14,7 @@ search.appverid: MET150
 ms.collection: 
   - M365-collaboration
   - m365-frontline
+  - highpri
 description: Learn how to use the Virtual Visits usage report in the Microsoft Teams admin center to get an overview of virtual appointment activity in your organization.
 appliesto: 
   - Microsoft Teams

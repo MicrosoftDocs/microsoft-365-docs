@@ -7,9 +7,11 @@ author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -165,9 +167,9 @@ The report will only contain a Privacy Setting property. For more information on
 
 It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the Microsoft 365 usage reports in [Microsoft Graph](/graph/api/resources/report) and [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) and [the usage reports in Microsoft Teams Admin center](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Showing identifiable user information is a logged event in the Microsoft Purview compliance portal audit log.
 
-## What happens to usage data when a user account is closed?
+## What happens to usage data when a user account is deleted?
 
-Whenever you close a user's account, Microsoft will delete that user's usage data within 30 days. That user will still be included in the Activity chart totals for the periods she was active in, but will not appear in the User Details table.
+Whenever you delete a user's account, Microsoft will delete that user's usage data within 30 days. Deleted users will still be included in the Activity chart totals for the periods they were active in, but will not appear in the User Details table.
 
 However, when you select a particular day, up to 28 days from the current date, the report show the user's usage for that day in the User Details table.
 

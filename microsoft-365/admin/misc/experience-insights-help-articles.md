@@ -5,9 +5,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-
+ms.collection:
+- Tier1 
+- scotvorg
 description: "Get a report of the Microsoft 365 help articles people in your organization are reading."
 ---
 

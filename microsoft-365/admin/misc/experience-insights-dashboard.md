@@ -5,9 +5,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-
+ms.collection: 
+- Tier1
+- scotvorg
 description: "Get a periodic report about how people in your organization use Microsoft 365 services and drill into each chart for more insights."
 ---
 
@@ -28,7 +30,7 @@ If you’re a member of the reports reader role, once you sign into the admin ce
 
 :::image type="content" source="../../media/experience-insights-dashboard2.png" alt-text="Screenshot: Image showing an overview of the experience insights dashboard":::
 
-To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
+To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
 
 ## Apps and services data
 
@@ -91,7 +93,7 @@ Adoption Score supports the journey to digital transformation with insights abou
 
 ### Take training for adoption specialists
 
-In this introductory course, you'll learn the six critical elements to drive adoption of your Microsoft cloud services to deliver value to your company. This course is applicable to any size company and uses Office 365 and Microsoft Teams as the example service to create real-world scenarios. For more information about training for adoption specialists, read [Use the Microsoft service adoption framework to drive adoption in your enterprise](/learn/paths/m365-service-adoption).
+In this introductory course, you'll learn the six critical elements to drive adoption of your Microsoft cloud services to deliver value to your company. This course is applicable to any size company and uses Office 365 and Microsoft Teams as the example service to create real-world scenarios. For more information about training for adoption specialists, read [Use the Microsoft service adoption framework to drive adoption in your enterprise](/training/paths/m365-service-adoption).
 
 ### Join the adoption community
 

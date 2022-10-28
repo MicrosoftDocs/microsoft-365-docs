@@ -9,14 +9,16 @@ ms.date: 6/29/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection:
-- SPO_Content
 ms.localizationpriority: medium
 search.appverid: 
 - SPO160
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: "Learn how to use SharePoint Online IRM through Microsoft Azure Active Directory Rights Management Services (RMS) to protect SharePoint lists and document libraries."
+ms.collection: 
+- tier3
+- purview-compliance
+- SPO_Content
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkSPO
@@ -26,6 +28,8 @@ ms.custom:
 
 Within SharePoint Online, IRM protection is applied to files at the list and library level. Before your organization can use IRM protection, you must first set up Rights Management. IRM relies on the Azure Rights Management service from Azure Information Protection to encrypt and assign usage restrictions. Some Microsoft 365 plans include Azure Rights Management, but not all. To learn more, read [How Office applications and services support Azure Rights Management](/azure/information-protection/understand-explore/office-apps-services-support).
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Turn on IRM service using SharePoint admin center
 
 Before your organization can IRM-protect SharePoint lists and libraries, you must first activate the Rights Management service for your organization. To learn how see [Activating Azure Rights Management](/information-protection/deploy-use/activate-service). You must use a work or school account that has global administrator privileges to enable the Rights Management service. Otherwise, you won't be able to use IRM features with SharePoint Online.

@@ -12,7 +12,8 @@ ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Admins can learn about the Auto-forwarded messages report in the Mail flow dashboard in the Security & Compliance Center.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: M365-security-compliance
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Auto-forwarded messages insight in the Security & Compliance Center

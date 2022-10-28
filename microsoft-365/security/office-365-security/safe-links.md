@@ -13,7 +13,7 @@ ms.date: 09/08/2021
 ms.localizationpriority: medium
 ms.collection:
   - Strat_O365_IP
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
   - seo-marvel-apr2020
@@ -60,6 +60,8 @@ Safe Links protection is available in the following locations:
   > Safe Links does not work on mail-enabled public folders.
   >
   > Safe Links supports only HTTP(S) and FTP formats.
+  >
+  > Using another service to wrap links before Defender for Office 365 might invalidate the ability of Safe Links to process links, including wrapping, detonating, or otherwise validating the "maliciousness" of the link.
 
 - **Microsoft Teams**: Safe Links protection for links in Teams conversations, group chats, or from channels is controlled by Safe Links policies.
 
@@ -85,6 +87,9 @@ This article includes detailed descriptions of the following types of Safe Links
 
   - ["Block the following URLs" list for Safe Links](#block-the-following-urls-list-for-safe-links)
 
+  > [!NOTE]
+  > The **Global settings** menu and the **Block the following URLs** list for Safe Links are in the process of being deprecated. Use block entries for URLs in the [Tenant Allow/Block List](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) instead.
+
 The following table describes scenarios for Safe Links in Microsoft 365 and Office 365 organizations that include Defender for Office 365 (note that lack of licensing is never an issue in the examples).
 
 |Scenario|Result|
@@ -92,7 +97,6 @@ The following table describes scenarios for Safe Links in Microsoft 365 and Offi
 |Jean is a member of the marketing department. Safe Links protection for Office apps is turned on in a Safe Links policy that applies to members of the marketing department. Jean opens a PowerPoint presentation in an email message, and then clicks a URL in the presentation.|Jean is protected by Safe Links. <p> Jean is included in a Safe Links policy where Safe Links protection for Office apps is turned on. <p> For more information about the requirements for Safe Links protection in Office apps, see the [Safe Links settings for Office apps](#safe-links-settings-for-office-apps) section later in this article.|
 |Chris's Microsoft 365 E5 organization has no Safe Links policies configured. Chris receives an email from an external sender that contains a URL to a malicious website that he ultimately clicks.|Chris is protected by Safe Links. <p> The **Built-in protection** preset security policy provides Safe Links protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).|
 |In Pat's organization, admins have created a Safe Links policy that applies Pat, but Safe Links protection for Office apps is turned off. Pat opens a Word document and clicks a URL in the file.|Pat is not protected by Safe Links. <p> Although Pat is included in an active Safe Links policy, Safe Links protection for Office apps is turned off in that policy, so the protection can't be applied.|
-|In Lee's organization, `https://tailspintoys.com` is configured in the **Block the following URLs** list in the global settings for Safe Links. A Safe Links policy that includes Lee already exists. Lee receives an email message that contains the URL `https://tailspintoys.com/aboutus/trythispage`. Lee clicks the URL.|The URL might be automatically blocked for Lee; it depends on the URL entry in the list and the email client Lee used. For more information, see the ["Block the following URLs" list for Safe Links](#block-the-following-urls-list-for-safe-links) section later in this article.|
 |Jamie and Julia both work for contoso.com. A long time ago, admins configured Safe Links policies that apply to both of Jamie and Julia. Jamie sends an email to Julia, not knowing that the email contains a malicious URL.|Julia is protected by Safe Links **if** the Safe Links policy that applies to her is configured to apply to messages between internal recipients. For more information, see the [Safe Links settings for email messages](#safe-links-settings-for-email-messages) section later in this article.|
 
 ## Recipient filters in Safe Links policies
@@ -159,8 +163,6 @@ At a high level, here's how Safe Links protection works on URLs in email message
 2. The user opens the message in their mailbox and clicks on a URL in the message.
 
 3. Safe Links immediately checks the URL before opening the website:
-
-   - If the URL is included in the **Block the following URLs** list, a [blocked URL warning](#blocked-url-warning) opens.
 
    - If the URL points to a website that has been determined to be malicious, a [malicious website warning](#malicious-website-warning) page (or a different warning page) opens.
 
@@ -251,11 +253,9 @@ These settings apply to Safe Links in email, Teams, and Office apps:
 
   In Safe Links for Office apps, this setting applies to the desktop versions Word, Excel, PowerPoint, and Visio.
 
-  URL click tracking for links in email messages sent between internal senders and internal recipients is currently not supported.
-
   If you select this setting, the following settings are available:
 
-  - **Let users click through to the original URL**: Controls whether users can clicking through the [warning page](#warning-pages-from-safe-links) to the original URL. The recommend value is not selected (off).
+  - **Let users click through to the original URL**: Controls whether users can click through the [warning page](#warning-pages-from-safe-links) to the original URL. The recommend value is not selected (off).
 
     In Safe Links for Office apps, this setting applies to the original URL in the desktop versions Word, Excel, PowerPoint, and Visio.
 
@@ -270,7 +270,7 @@ For more information about the order of precedence and how multiple policies are
 ## "Block the following URLs" list for Safe Links
 
 > [!NOTE]
-> You can now manage block URL entries in the [Tenant Allow/Block List](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). The "Block the following URLs" list is in the process of being deprecated. We'll attempt to migrate existing entries from the "Block the following URLs" list to block URL entries in the Tenant Allow/Block List. Messages containing the blocked URL will be quarantined.
+> The **Block the following URLs** list for Safe Links is in the process of being deprecated. Use block entries for URLs in the [Tenant Allow/Block List](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) instead. Messages containing the blocked URL are quarantined.
 
 The **Block the following URLs** list defines the links that are always blocked by Safe Links scanning in the following locations:
 

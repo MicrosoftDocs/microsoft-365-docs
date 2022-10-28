@@ -1,9 +1,10 @@
 ---
 title: "Work with a partner to archive third-party data"
+description: Learn how to set up a custom connector to import third-party data from  data sources such as Salesforce Chatter, Yahoo Messenger, or Yammer.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date:
 audience: Admin
@@ -12,11 +13,14 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: Learn how to set up a custom connector to import third-party data from  data sources such as Salesforce Chatter, Yahoo Messenger, or Yammer.
+
 ---
 
 # Work with a partner to archive third-party data
@@ -37,6 +41,8 @@ Here's an overview of the process and the steps necessary to work with a Microso
 [Step 4: Provide your partner with information](#step-4-provide-your-partner-with-information)
 
 [Step 5: Register the third-party data connector in Azure Active Directory](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How the third-party data import process works
 

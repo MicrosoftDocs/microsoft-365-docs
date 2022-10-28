@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 08/12/2022
+ms.date: 10/20/2022
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -17,8 +17,9 @@ ms.custom: asr
 ms.subservice: mde
 ms.topic: overview
 ms.collection: 
-- m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Protect your network
@@ -41,11 +42,22 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 Network protection helps protect devices from Internet-based events. Network protection is an attack surface reduction capability. It helps prevent employees from accessing dangerous domains through applications. Domains that host phishing scams, exploits, and other malicious content on the Internet are considered dangerous. Network protection expands the scope of [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources (based on the domain or hostname).
 
-Network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level. It provides the web protection functionality found in Microsoft Edge to other supported browsers and non-browser applications. Network protection also provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](manage-indicators.md) that you can use to block specific domains or host names.
+Network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level, and is a core component for Web Content Filtering (WCF). It provides the web protection functionality found in Microsoft Edge to other supported browsers and non-browser applications. Network protection also provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](manage-indicators.md) that you can use to block specific domains or host names.
+
+### Network protection coverage
+
+The following table summarizes network protection areas of coverage.
+
+| Feature | Microsoft Edge | 3rd-party browsers | Non-browser processes <br> (e.g. PowerShell) |
+|:---|:---|:---|:---|
+| Web Threat Protection | SmartScreen must be enabled | NP has to be in block mode | NP has to be in block mode |
+| Custom Indicators | SmartScreen must be enabled | NP has to be in block mode | NP has to be in block mode |
+| Web Content Filtering | SmartScreen must be enabled | NP has to be in block mode | Not supported |
 
 > [!NOTE]
+> Network protection does not monitor msedge.exe on Windows devices.
+> For Mac and Linux, you must have network protection in block mode to get support for these features in Edge.
 > For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage Network Protection for inspection and enforcement:
->
 > - IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS)).
 > - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators.
 > - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge).
@@ -63,7 +75,8 @@ Network protection requires Windows 10 or 11 (Pro or Enterprise), Windows Server
 
 | Windows version | Microsoft Defender Antivirus |
 |:---|:---|
-| Windows 10 version 1709 or later <br/> Windows 11 <br/> Windows Server 1803 or later | Make sure that [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) are enabled (active). |
+| Windows 10 version 1709 or later, Windows 11, Windows Server 1803 or later | Make sure that [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) are enabled (active) |
+| Windows Server 2012 R2 and Windows Server 2016 with the unified agent | Platform Update version 4.18.2001.x.x or newer |
 
 ## Why network protection is important
 
@@ -151,13 +164,15 @@ Support for Command and Control servers (C2) is a key part of this ransomware ev
 
 ## SmartScreen Unblock
 
-A new feature in Defender for Endpoint indicators enables administrators to allow end users to bypass warnings that are generated for some URLs and IPs. Depending on why the URL was blocked, when a SmartScreen block is encountered it may offer administrators the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
+With indicators in Defender for Endpoint, administrators can allow end users to bypass warnings that are generated for some URLs and IPs. Depending on why the URL was blocked, when a SmartScreen block is encountered it may offer administrators the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
 
 :::image type="content" source="images/network-protection-smart-screen-block-notification.png" alt-text="Windows Security notification for network protection.":::
 
-Microsoft Defender for Endpoint Administrators can configure SmartScreen Unblock functionality at [Microsoft 365 Defender](https://security.microsoft.com/), using the following configuration tool. From the Microsoft 365 Defender portal, navigate to the path to the ConfigToolName.
+Microsoft Defender for Endpoint administrators can configure SmartScreen Unblock functionality in the [Microsoft 365 Defender portal](https://security.microsoft.com) using an "allow" indicator for IPs, URLs, and domains.
 
 :::image type="content" source="images/network-protection-smart-screen-block-configuration.png" alt-text="Network protection SmartScreen block configuration ULR and IP form.":::
+
+See [Create indicators for IPs and URLs/domains](indicator-ip-domain.md).
 
 ## Using network protection
 
@@ -166,9 +181,9 @@ Network protection is enabled per device, which is typically done using your man
 > [!NOTE]
 > Microsoft Defender Antivirus must be active to enable network protection.
 
-You can enable network protection in **Audit** mode or **Block** mode. If you want to evaluate the impact of enabling network protection before actually blocking IP addresses or URLs, you can enable network protection in Audit mode for a period of time to gather data on what would be blocked. Audit mode logs when end users have connected to an address or site that would otherwise have been blocked by network protection.
+You can enable network protection in **Audit** mode or **Block** mode. If you want to evaluate the impact of enabling network protection before actually blocking IP addresses or URLs, you can enable network protection in Audit mode for time to gather data on what would be blocked. Audit mode logs when end users have connected to an address or site that would otherwise have been blocked by network protection. Note that in order for indicators of compromise (IoC) or Web content filtering (WCF) to work, network protection must be in “Block mode”
 
-For information about Network protection for Linux and macOS see: [Network protection for Linux](network-protection-linux.md) and [Network protection for MacOS](network-protection-macos.md).
+For information about network protection for Linux and macOS see: [Network protection for Linux](network-protection-linux.md) and [Network protection for macOS](network-protection-macos.md).
 
 ## Advanced hunting
 
@@ -187,7 +202,6 @@ DeviceEvents
 
 ```
 
-
 :::image type="content" source="images/network-protection-advanced-hunting.png" alt-text="Advanced hunting for auditing and identifying events." lightbox="images/network-protection-advanced-hunting.png":::
 
 > [!TIP]
@@ -205,6 +219,7 @@ DeviceEvents:
 |sort by Timestamp desc
 
 ```
+
 The Response category tells you what caused the event, for example:
 
 | ResponseCategory | Feature responsible for the event |
@@ -261,7 +276,7 @@ Here's an example query for advanced hunting:
 ```kusto
 
 DeviceNetworkEvents
-|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked', 'ConnectionSuccess')
+|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 
 ```
 
@@ -309,7 +324,7 @@ Due to the multi-user nature of Windows 10 Enterprise, keep the following points
 
 ### Alternative option for network protection
 
-For Windows Server version 1803 or later and Windows 10 Enterprise Multi-Session 1909 and up, used in Windows Virtual Desktop on Azure, network protection for Microsoft Edge can be enabled using the following method:
+For Windows Server 2012R2/2016 unified MDE client, Windows Server version 1803 or newer, Windows Server 2019 or newer, and Windows 10 Enterprise Multi-Session 1909 and up, used in Windows Virtual Desktop on Azure, network protection for Microsoft Edge can be enabled using the following method:
 
 1. Use [Turn on network protection](enable-network-protection.md) and follow the instructions to apply your policy.
 
@@ -319,6 +334,59 @@ For Windows Server version 1803 or later and Windows 10 Enterprise Multi-Session
    - `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
    - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
    - `Set-MpPreference -AllowDatagramProcessingOnWinServer 1`
+
+> [!NOTE]
+> In some cases, depending on your infrastructure, volume of traffic, and other conditions, `Set-MpPreference -AllowDatagramProcessingOnWinServer 1` can have an effect on network performance.
+
+### Network protection for Windows Servers
+
+Following is information specific to Windows Servers.
+
+#### Verify that network protection is enabled
+
+Verify whether network protection is enabled on a local device by using Registry Editor.
+
+1. Select the **Start** button in the task bar and type **regedit** to open the Registry Editor.
+1. Select **HKEY_LOCAL_MACHINE** from the side menu.
+1. Navigate through the nested menus to **SOFTWARE** > **Policies** > **Microsoft** > **Windows defender** > **Windows Defender Exploit Guard** > **Network Protection**.
+
+   (If the key is not present, navigate to **SOFTWARE** > **Microsoft** > **Windows Defender** > **Windows Defender Exploit Guard** > **Network Protection**)
+
+4. Select **EnableNetworkProtection** to see the current state of network protection on the device:
+
+   - 0 = Off
+   - 1 = On (enabled)
+   - 2 = Audit mode
+
+For additional information, see: [Turn on network protection](enable-network-protection.md)
+
+##### Network protection suggestion
+
+For Windows Server 2012R2/2016 unified MDE client, Windows Server version 1803 or newer, Windows Server 2019 or newer, and Windows 10 Enterprise Multi-Session 1909 and up (used in Windows Virtual Desktop on Azure), there are additional registry keys that must be enabled:
+
+**HKEY_LOCAL_MACHINE**\**SOFTWARE**\**Policies**\**Microsoft**\**Windows Defender**\**Windows Defender Exploit Guard**\**Network Protection**
+
+**AllowNetworkProtectionDownLevel** (dword) 1 (hex)
+**AllowNetworkProtectionOnWinServer** (dword) 1 (hex)
+**EnableNetworkProtection** (dword) 1 (hex)
+
+> [!NOTE]
+> Depending on your infrastructure, volume of traffic, and other conditions, **HKEY_LOCAL_MACHINE**\\**SOFTWARE**\\**Policies**\\**Microsoft**\\**Windows Defender** \\**NIS**\\**Consumers**\\**IPS** - **AllowDatagramProcessingOnWinServer (dword) 1 (hex)** can have an effect on network performance.
+
+For additional information, see: [Turn on network protection](enable-network-protection.md)
+
+#### Windows Servers and Windows Multi-session configuration requires PowerShell
+
+For Windows Servers and Windows Multi-session, there are additional items that you must enable by using PowerShell cmdlets. For Windows Server 2012R2/2016 unified MDE client, Windows Server version 1803 or newer, Windows Server 2019 or newer, and Windows 10 Enterprise Multi-Session 1909 and up, used in Windows Virtual Desktop on Azure.
+
+1. Set-MpPreference -EnableNetworkProtection Enabled
+1. Set-MpPreference -AllowNetworkProtectionOnWinServer 1
+1. Set-MpPreference -AllowNetworkProtectionDownLevel 1
+1. Set-MpPreference -AllowDatagramProcessingOnWinServer 1
+
+> [!NOTE]
+> In some cases, depending on your infrastructure, volume of traffic, and other conditions, **Set-MpPreference -AllowDatagramProcessingOnWinServer 1** can have an effect on network performance.
+
 
 ## Network protection troubleshooting
 
@@ -336,4 +404,4 @@ Network protection now has a performance optimization that allows Block mode to 
 - [Enable network protection](enable-network-protection.md) | Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
 - [Configuring attack surface reduction capabilities in Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)
 - [Network protection for Linux](network-protection-linux.md) | To learn about using Microsoft Network protection for Linux devices.
-- [Network protection for MacOS](network-protection-macos.md) | To learn more about Microsoft Network protection for MacOS
+- [Network protection for macOS](network-protection-macos.md) | To learn more about Microsoft Network protection for macOS

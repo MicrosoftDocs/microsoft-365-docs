@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -22,6 +23,8 @@ description: "Azure Storage account key (generic) sensitive information type ent
 ---
 
 # Azure Storage account key (generic)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 

@@ -11,7 +11,9 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -20,6 +22,8 @@ ms.custom: seo-marvel-apr2020
 
 ---
 # Get started with exact data match based sensitive information types
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Applies to 
 

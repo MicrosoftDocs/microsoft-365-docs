@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: 
@@ -17,7 +17,10 @@ ms.custom:
 ms.reviewer: 
 manager: dansimp
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Better together: Microsoft Defender Antivirus and Office 365

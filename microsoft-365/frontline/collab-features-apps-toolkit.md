@@ -4,7 +4,7 @@ author: daisyfell
 ms.author: daisyfeller
 manager: pamgreen
 audience: ITPro
-ms.topic: article 
+ms.topic: end-user-help 
 ms.service: microsoft-365-frontline 
 search.appverid: 
 searchScope:
@@ -18,6 +18,7 @@ ms.collection:
   - m365solution-healthcare
   - m365solution-scenario
   - m365-frontline
+  - highpri
 ms.reviewer: 
 description: Resources to help you train your frontline workers on communication and collaboration features in Teams and Teams apps.
 appliesto: 

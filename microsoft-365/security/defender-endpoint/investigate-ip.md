@@ -11,10 +11,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.date: 04/24/2018
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Investigate an IP address associated with a Microsoft Defender for Endpoint alert

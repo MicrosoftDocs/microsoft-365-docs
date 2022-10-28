@@ -8,7 +8,10 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
-ms.collection: highpri
+ms.collection: 
+- Tier1
+- scotvorg
+- highpri
 ms.custom: VSBFY23
 description: "An overview of the Microsoft Bookings app, which includes a web-based booking calendar and integrates with Outlook to optimize your staff’s calendar and give your customers flexibility to book appointments."
 ---

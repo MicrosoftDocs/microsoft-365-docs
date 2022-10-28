@@ -1,22 +1,27 @@
 ---
 title: Microsoft Defender Antivirus Device Health export device antivirus health reporting
-description: Presents methods to retrieve Microsoft Defender Antivirus device health details. 
-keywords: apis, graph api, supported apis, get, device health api, Microsoft Defender for Endpoint report api microsoft defender reports api, microsoft defender for endpoint reporting api, windows defender reporting api, defender for endpoint reporting api, windows defender report api 
+description: Presents methods to retrieve Microsoft Defender Antivirus device health details.
+keywords: apis, graph api, supported apis, get, device health api, Microsoft Defender for Endpoint report api microsoft defender reports api, microsoft defender for endpoint reporting api, windows defender reporting api, defender for endpoint reporting api, windows defender report api
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy 
-ms.sitesec: library 
-ms.pagetype: security 
-ms.author: v-jweston 
-author: jweston-1
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
-ms.date: 09/01/2022 
-manager: dansimp 
-audience: ITPro 
-ms.collection: M365-security-compliance 
-ms.topic: article 
+ms.date: 09/01/2022
+manager: dansimp
+audience: ITPro
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
-ms.custom: api 
+ms.custom: api
+search.appverid: met150
 ---
+
+<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
 # Export device antivirus health report
 
@@ -79,30 +84,30 @@ This API retrieves a list of Microsoft Defender Antivirus device antivirus healt
 
 #### OData supported operators
 
-- ```$filter```  on: ```machineId```, ```computerDnsName```, ```osKind```, ```osPlatform```, ```osVersion```, ```avMode```, ```avSignatureVersion```, ```avEngineVersion```, ```avPlatformVersion```, ```quickScanResult```, ```quickScanError```, ```fullScanResult```, ```fullScanError```, ```avIsSignatureUpToDate```, ```avIsEngineUpToDate```, ```avIsPlatformUpToDate```, ```rbacGroupId```
-- ```$top```  with max value of 10,000.
-- ```$skip```.
+- `$filter` on: `machineId`, `computerDnsName`, `osKind`, `osPlatform`, `osVersion`, `avMode`, `avSignatureVersion`, `avEngineVersion`, `avPlatformVersion`, `quickScanResult`, `quickScanError`, `fullScanResult`, `fullScanError`, `avIsSignatureUpToDate`, `avIsEngineUpToDate`, `avIsPlatformUpToDate`, `rbacGroupId`
+- `$top` with max value of 10,000.
+- `$skip`
 
 ### 1.2 Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see Use Microsoft Defender for Endpoint APIs for details.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see Use Microsoft Defender for Endpoint APIs for details.
 
 | Permission type | Permission | Permission display name |
 |:---|:---|:---|
-| Application | Machine.Read.All | ‘Read all machine profiles’ |
-|Delegated (work or school account) | Machine.Read | ‘Read machine information’ |
+| Application | Machine.Read.All | 'Read all machine profiles' |
+|Delegated (work or school account) | Machine.Read | 'Read machine information' |
 
 ### 1.3 URL (HTTP request)
 
 ```http
-URL: GET: /api/deviceavinfo
+URL: GET: /api/deviceavinfo
 ```
 
 #### 1.3.1 Request headers
 
 | Name | Type | Description |
 |:---|:---|:---|
-| Authorization | String | Bearer {token}. Required. |
+| Authorization | String | Bearer {token}. Required. |
 
 #### 1.3.2 Request body
 
@@ -115,13 +120,13 @@ If successful, this method returns 200 OK with a list of device health details.
 ### 1.4 Parameters
 
 - Default page size is 20
-- See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
+- See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
 
 ### 1.5 Properties
 
 See: [1.2 Export device antivirus health details API properties (JSON response)](device-health-api-methods-properties.md#12-export-device-antivirus-health-details-api-properties-json-response)
 
-Supports [OData V4 queries](https://www.odata.org/documentation/).
+Supports [OData V4 queries](https://www.odata.org/documentation/).
 
 ### 1.6 Example
 
@@ -130,7 +135,7 @@ Supports [OData V4 queries](https://www.odata.org/documentation/).
 Here's an example request:
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/deviceavinfo 
+GET https://api.securitycenter.microsoft.com/api/deviceavinfo
 ```
 
 #### Response example
@@ -138,73 +143,73 @@ GET https://api.securitycenter.microsoft.com/api/deviceavinfo
 Here's an example response:
 
 ```json
-{ 
+{
 
-    @odata.context: "https://api.securitycenter.microsoft.com/api/$metadata#DeviceAvInfo", 
+    @odata.context: "https://api.securitycenter.microsoft.com/api/$metadata#DeviceAvInfo",
 
-"value": [{ 
+"value": [{
 
-            "id": "Sample Guid", 
+            "id": "Sample Guid",
 
-            "machineId": "Sample Machine Guid", 
+            "machineId": "Sample Machine Guid",
 
-            "computerDnsName": "appblockstg1", 
+            "computerDnsName": "appblockstg1",
 
-            "osKind": "windows", 
+            "osKind": "windows",
 
-            "osPlatform": "Windows10", 
+            "osPlatform": "Windows10",
 
-            "osVersion": "10.0.19044.1865", 
+            "osVersion": "10.0.19044.1865",
 
-            "avMode": "0", 
+            "avMode": "0",
 
-            "avSignatureVersion": "1.371.1279.0", 
+            "avSignatureVersion": "1.371.1279.0",
 
-            "avEngineVersion": "1.1.19428.0", 
+            "avEngineVersion": "1.1.19428.0",
 
-            "avPlatformVersion": "4.18.2206.108", 
+            "avPlatformVersion": "4.18.2206.108",
 
-            "lastSeenTime": "2022-08-02T19:40:45Z", 
+            "lastSeenTime": "2022-08-02T19:40:45Z",
 
-            "quickScanResult": "Completed", 
+            "quickScanResult": "Completed",
 
-            "quickScanError": "", 
+            "quickScanError": "",
 
-            "quickScanTime": "2022-08-02T18:40:15.882Z", 
+            "quickScanTime": "2022-08-02T18:40:15.882Z",
 
-            "fullScanResult": "", 
+            "fullScanResult": "",
 
-            "fullScanError": "", 
+            "fullScanError": "",
 
-            "fullScanTime": null, 
+            "fullScanTime": null,
 
-            "dataRefreshTimestamp": "2022-08-02T21:16:23Z", 
+            "dataRefreshTimestamp": "2022-08-02T21:16:23Z",
 
-            "avEngineUpdateTime": "2022-08-02T00:03:39Z", 
+            "avEngineUpdateTime": "2022-08-02T00:03:39Z",
 
-            "avSignatureUpdateTime": "2022-08-02T00:03:39Z", 
+            "avSignatureUpdateTime": "2022-08-02T00:03:39Z",
 
-            "avPlatformUpdateTime": "2022-06-20T16:59:35Z", 
+            "avPlatformUpdateTime": "2022-06-20T16:59:35Z",
 
-            "avIsSignatureUpToDate": "True", 
+            "avIsSignatureUpToDate": "True",
 
-            "avIsEngineUpToDate": "True", 
+            "avIsEngineUpToDate": "True",
 
-            "avIsPlatformUpToDate": "True", 
+            "avIsPlatformUpToDate": "True",
 
-            "avSignaturePublishTime": "2022-08-02T00:03:39Z", 
+            "avSignaturePublishTime": "2022-08-02T00:03:39Z",
 
-            "rbacGroupName": "TVM1", 
+            "rbacGroupName": "TVM1",
 
-            "rbacGroupId": 4415 
+            "rbacGroupId": 4415
 
-        }, 
+        },
 
-        ... 
+        ...
 
-     ] 
+     ]
 
-} 
+}
 ```
 
 ## 2 Export health reporting (via files)
@@ -233,20 +238,20 @@ One of the following permissions is required to call this API.
 
 | Permission type | Permission | Permission display name |
 |:---|:---|:---|
-| Application | Vulnerability.Read.All | 'Read "threat and vulnerability management" vulnerability information’  |
-| Delegated (work or school account) | Vulnerability.Read | 'Read "threat and vulnerability management" vulnerability information’ |
+| Application | Vulnerability.Read.All | 'Read "threat and vulnerability management" vulnerability information' |
+| Delegated (work or school account) | Vulnerability.Read | 'Read "threat and vulnerability management" vulnerability information' |
 
 To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details](apis-intro.md).
 
 ### 2.3 URL
 
 ```http
-GET /api/machines/InfoGatheringExport 
+GET /api/machines/InfoGatheringExport
 ```
 
 ### 2.4 Parameters
 
-- ```sasValidHours```: The number of hours that the download URLs will be valid for (Maximum 24 hours).
+- `sasValidHours`: The number of hours that the download URLs will be valid for (Maximum 24 hours).
 
 ### 2.5 Properties
 
@@ -259,10 +264,10 @@ See: [1.3 Export device antivirus health details API properties \(via files\)](d
 Here's an example request:
 
 ```HTTP
-GET https://api-us.securitycenter.contoso.com/api/machines/InfoGatheringExport 
+GET https://api-us.securitycenter.contoso.com/api/machines/InfoGatheringExport
 ```
 
-#### 2.6.2 Response example  
+#### 2.6.2 Response example
 
 Here's an example response:
 
@@ -273,7 +278,7 @@ Here's an example response:
 
    "exportFiles": [
 
-       "https://tvmexportexternalprdeus.blob.core.windows.net/temp-../2022-08-02/2201/InfoGatheringExport/json/OrgId=../_RbacGroupId=../part-00055-12fc2fcd-8f56-4e09-934f-e8efe7ce74a0.c000.json.gz?sv=2020-08-04&st=2022-08-02T22%3A47%3A11Z&se=2022-08-03T01%3A47%3A11Z&sr=b&sp=r&sig=..",               
+       "https://tvmexportexternalprdeus.blob.core.windows.net/temp-../2022-08-02/2201/InfoGatheringExport/json/OrgId=../_RbacGroupId=../part-00055-12fc2fcd-8f56-4e09-934f-e8efe7ce74a0.c000.json.gz?sv=2020-08-04&st=2022-08-02T22%3A47%3A11Z&se=2022-08-03T01%3A47%3A11Z&sr=b&sp=r&sig=..",
 
        "https://tvmexportexternalprdeus.blob.core.windows.net/temp-../2022-08-02/2201/InfoGatheringExport/json/OrgId=../_RbacGroupId=../part-00055-12fc2fcd-8f56-4e09-934f-e8efe7ce74a0.c000.json.gz?sv=2020-08-04&st=2022-08-02T22%3A47%3A11Z&se=2022-08-03T01%3A47%3A11Z&sr=b&sp=r&sig=.."
 
@@ -290,4 +295,4 @@ Here's an example response:
 
 [Export device health methods and properties](device-health-api-methods-properties.md)
 
-[Device health and compliance reporting](machine-reports.md)
+[Device health and compliance reporting](device-health-reports.md)
