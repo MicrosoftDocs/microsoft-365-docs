@@ -22,7 +22,7 @@ search.appverid: met150
 
 # Deployment of Microsoft Defender for Endpoint on Linux
 
-This article provides advanced deployment guidance for Microsoft Defender for Endpoint on Linux. You'll get a brief summary of the deployment steps, learn about the system requirements, be guided through the actual deployment steps, and learn how to verify that the device has been correctly onboarded.
+This article provides advanced deployment guidance for Microsoft Defender for Endpoint on Linux. You'll get a brief summary of the deployment steps, learn about the system requirements, be guided through the actual deployment steps, and learn how to verify the device has been correctly onboarded.
 
 For information about Microsoft Defender for Endpoint capabilities, see [Advanced Microsoft Defender for Endpoint capabilities](#advanced-microsoft-defender-for-endpoint-capabilities).
 
@@ -51,7 +51,7 @@ The following list captures the actions you'll take to deploy Microsoft Defender
 - Install the Microsoft Defender for Endpoint on Linux package.
 - Install the Microsoft Defender for Endpoint on Linux configuration file.
 - Rerun resource utilization statistics and report on pre-deployment utilization compared to post-deployment.
-- Verify that you are able to communicate with Microsoft Defender for Endpoint backend.
+- Verify that you're able to communicate with Microsoft Defender for Endpoint backend.
 - Verify that you're able to get "Platform Updates" (agent updates).
 - Verify that you're able to get "Security Intelligence Updates" (signatures/definition updates).
 - Verify detections.
@@ -126,7 +126,7 @@ Here's how to check the network connectivity of Microsoft Defender for Endpoint:
 
 1. See [Allow URLs for the Microsoft Defender for Endpoint traffic](#allow-urls-for-the-microsoft-defender-for-endpoint-traffic) that are allowed for the Microsoft Defender for Endpoint traffic.
 2. If the Linux servers are behind a proxy, then set the proxy settings. For more information, see [Set up proxy settings](#set-up-proxy-settings).
-3. Verify that the traffic is not being inspected by SSL inspection (TLS inspection). This is the most common network related issue when setting up Microsoft Defender Endpoint, see [Verify SSL inspection is not being performed on the network traffic](#verify-ssl-inspection-is-not-being-performed-on-the-network-traffic).
+3. Verify that the traffic isn't being inspected by SSL inspection (TLS inspection). This is the most common network related issue when setting up Microsoft Defender Endpoint, see [Verify SSL inspection is not being performed on the network traffic](#verify-ssl-inspection-is-not-being-performed-on-the-network-traffic).
 
 
 ### Allow URLs for the Microsoft Defender for Endpoint traffic
@@ -161,7 +161,7 @@ The table below shows the supported proxy settings:
 
 ### Verify SSL inspection is not being performed on the network traffic
 
-To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspections by major firewall systems are not allowed. You'll have to bypass SSL inspection for Microsoft Defender for Endpoint URLs.
+To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspections by major firewall systems aren't allowed. You'll have to bypass SSL inspection for Microsoft Defender for Endpoint URLs.
 
 #### Troubleshoot cloud connectivity issues
 
