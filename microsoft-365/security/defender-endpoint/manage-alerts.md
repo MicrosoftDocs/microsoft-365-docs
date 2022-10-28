@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---
@@ -103,7 +103,7 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 
 #### View the list of suppression rules
 
-1. In the navigation pane, select **Settings** \> **Alert suppression**.
+1. In the navigation pane, select **Settings** \> **Endpoints** \> **Rules** \> **Alert suppression**.
 
 2. The list of suppression rules shows all the rules that users in your organization have created.
 

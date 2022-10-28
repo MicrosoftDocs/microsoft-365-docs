@@ -40,6 +40,16 @@ To work around this issue, keep the time zone setting as is.
 
 The start and end break capability of the time clock feature isn't supported in an integration with UKG Dimensions. Users won't be able to clock out or clock in to a break, even though the buttons are displayed in Shifts.
 
+## Availability settings of users don't apply to the current week
+
+Teams mobile users can set their personal availability in Shifts. However, if a user sets their availability after the day that's established as the start of the week in UKG Dimensions, their availability applies to the following week onwards and not to the current week. For example, Sunday is set as the start of the week in UKG Dimensions, and on Monday of the current week, a user changes their availability for Thursday and Friday. In this scenario, their availability settings are applied to the following week.
+
+## Users see a red "X" when a coworker accepts their swap request and the manager declines the request
+
+Currently, if a user creates a swap request with a coworker and the coworker accepts the request but the manager denies it, the user unexpectedly sees a red "X" next to both the coworker's and manager's response.
+
+The correct, expected behavior is a green check mark to indicate that the coworker accepted the request and a red "X" to indicate that the manager denied the request.
+
 ## A user can’t perform some actions in Shifts in the Teams web app after signing in with a different account
 
 This issue can occur if a user who has multiple accounts in Teams performs actions in Shifts that require single sign-on (SSO) in UKG Dimensions and that user switches accounts in the Teams web app in the same browser.
@@ -48,7 +58,7 @@ For example, a user signs in to Teams, approves a time off request, and then sig
 
 In this scenario, a caching issue occurs in which the user is signed in to Teams and Shifts on one account and signed in to UKG Dimensions on the other account.
 
-To work around this issue, do one of the following:
+To work around this issue, do one of the following actions:
 
 - Clear cookies and site data for the mykronos.com site in the browser. To learn more, see [Delete cookies in Microsoft Edge](https://support.microsoft.com/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09) or [Clear, enable, and manage cookies in Chrome](https://support.google.com/chrome/answer/95647).
 - Use the Teams web app in an InPrivate window in Microsoft Edge or in Incognito mode in Google Chrome.

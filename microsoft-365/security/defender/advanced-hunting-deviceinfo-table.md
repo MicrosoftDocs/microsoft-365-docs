@@ -19,7 +19,7 @@ audience: ITPro
 ms.collection: 
 - tier3
 - m365-security
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # DeviceInfo

@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier1
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.date: 09/22/2021
 ms.subservice: mde
 search.appverid: met150
@@ -35,6 +35,11 @@ search.appverid: met150
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
+## Prerequisites
+- [Endpoint Protection point site system role](/mem/configmgr/protect/deploy-use/endpoint-protection-site-role)
+
+> [!IMPORTANT]
+> The Endpoint Protection point site system role is required so that antivirus and attack surface reduction policies are properly deployed to the targeted endpoints.  Without this role, the endpoints in the device collection won't receive the configured antivirus and attack surface reduction policies.
 
 You can use Configuration Manager to onboard endpoints to the Microsoft Defender for Endpoint service. 
 

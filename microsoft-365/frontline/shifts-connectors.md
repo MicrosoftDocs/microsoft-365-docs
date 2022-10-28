@@ -36,14 +36,15 @@ Connectors sync schedule data between your WFM system and Shifts, bringing your 
 Data flows via the connector both ways to ensure schedules are always up to date. Schedules in your WFM system are synced to Shifts. And, changes made to schedules in Shifts are synced back to your WFM system. As the system of record, all business rules are enforced by your WFM system before data is saved to Shifts.
 
 <a name="prereq"> </a>
+<a name="schedules"> </a>
 ## Managed Shifts connectors
 
 Managed Shifts connectors are connectors developed in collaboration with our partners. Managed connectors are hosted and managed either by us or our partners. With managed connectors, only minimal setup is needed.
 
 |Connector|Description|Requirements|
 |---------|---------|---------|
-|[Microsoft Teams Shifts connector for Blue Yonder](#microsoft-teams-shifts-connector-for-blue-yonder)|Use this connector to integrate Shifts with Blue Yonder Workforce Management. This connector is hosted and managed by Microsoft.|Prerequisites for setting up a connection: <ul><li>Using the [Shifts connector wizard](shifts-connector-wizard.md#prerequisites) in the Microsoft 365 admin center</li><li>Using [PowerShell](shifts-connector-blue-yonder-powershell-setup.md#prerequisites)</li></ul>|
-|[Microsoft Teams Shifts connector for UKG Dimensions](#microsoft-teams-shifts-connector-for-ukg-dimensions)|Use this connector to integrate Shifts with UKG Dimensions. This connector is hosted and managed by Microsoft.|Prerequisites for setting up a connection: <ul><li>Using the [Shifts connector wizard](shifts-connector-wizard-ukg.md#prerequisites) in the Microsoft 365 admin center </li><li>Using [PowerShell](shifts-connector-ukg-powershell-setup.md#prerequisites)</li></ul>|
+|[Microsoft Teams Shifts connector for Blue Yonder](#microsoft-teams-shifts-connector-for-blue-yonder)|Use this connector to integrate Shifts with Blue Yonder Workforce Management. This connector is hosted and managed by Microsoft.|Prerequisites for setting up a connection: <ul><li>Using the [Shifts connector wizard](shifts-connector-wizard.md#prerequisites) in the Microsoft 365 admin center<br>Before you run the wizard, [remove schedules from existing teams that you want to map](shifts-connector-wizard.md#remove-schedules-from-teams-you-want-to-map).</li><li>Using [PowerShell](shifts-connector-blue-yonder-powershell-setup.md#prerequisites)</li></ul>|
+|[Microsoft Teams Shifts connector for UKG Dimensions](#microsoft-teams-shifts-connector-for-ukg-dimensions)|Use this connector to integrate Shifts with UKG Dimensions. This connector is hosted and managed by Microsoft.|Prerequisites for setting up a connection: <ul><li>Using the [Shifts connector wizard](shifts-connector-wizard-ukg.md#prerequisites) in the Microsoft 365 admin center<br>Before you run the wizard, [remove schedules from existing teams that you want to map](shifts-connector-wizard-ukg.md#remove-schedules-from-teams-you-want-to-map)</li><li>Using [PowerShell](shifts-connector-ukg-powershell-setup.md#prerequisites)</li></ul>|
 |[Reflexis Shifts connector for Microsoft Teams](#reflexis-shifts-connector-for-microsoft-teams)|Use this connector to integrate Shifts with Reflexis Workforce Scheduler. This connector is hosted and managed by Zebra. |To learn more, go to <https://connect.zebra.com/microsoft-connectors>.|
 
 <a name="blue_yonder"> </a>
@@ -114,7 +115,7 @@ The Teams Shifts connector for UKG Dimensions is a first-party offering that's h
 Frontline managers can:
 
 - Publish shifts and schedules in UKG Dimensions and view them in Shifts.
-- Create, manage, and assign open shifts in UKG Dimensions and view them in both UKG Dimensions and Shifts.
+- Create, view, manage, and assign open shifts in UKG Dimensions and Shifts on Teams desktop and Teams web app. (Currently, managers can't view or assign open shifts in Shifts on Teams mobile.)
 - Create, edit, and delete time off in UKG Dimensions and view in Shifts.
 - View and approve schedule requests from workers in both UKG Dimensions and Shifts.
 - Set and update worker availability in UKG Dimensions and view in Shifts.
@@ -125,7 +126,7 @@ Frontline workers can:
 - Request time off, view time off information, and view their team's open shifts in Shifts.
 - View and post timecard entries in Shifts.
 - Request open shifts and swap shifts in Shifts.
-- Set their availability in Shifts.
+- Set their availability in Shifts on Teams mobile.
 
 The following actions are currently not supported:
 

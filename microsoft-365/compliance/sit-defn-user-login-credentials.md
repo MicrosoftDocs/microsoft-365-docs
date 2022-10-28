@@ -1,5 +1,5 @@
 ---
-title: "User login credentials entity definition (preview)"
+title: "User login credentials entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,7 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier2
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -22,11 +22,13 @@ recommendations: false
 description: "User login credentials sensitive information type entity definition."
 ---
 
-# User login credentials (preview)
+# User login credentials
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Format
+This SIT is also included in the [All credentials](sit-defn-all-creds.md) bundled SIT.
+
+ ## Format
 
 A paired username and password used in general authentication process.
 
@@ -93,9 +95,15 @@ for example:
 
 `abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==`
 
+## Credential example 
+
+`{ "user": "user_name", "password": "ZYXWVU_2" }`
+
 ## Checksum
 
 No
+
+SITs that have checksums use a unique calculation to check if the information is valid. This means when the **Checksum** value is **Yes**, the service can make a positive detection based on the sensitive data alone. When the **Checksum** value is **No** additional (secondary) elements must also be detected  for the service to make a positive detection.
 
 ## Definition
 

@@ -11,6 +11,8 @@ f1.keywords:
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- ContentEngagementFY23
 - scotvorg
 - highpri 
 - M365-subscription-management

@@ -55,9 +55,13 @@ This categorization method is well suited to content that isn't easily identifie
 
 ### Where you can use classifiers
 
-Classifiers are available to use as a condition for [Office auto-labeling with sensitivity labels](apply-sensitivity-label-automatically.md), [auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) and in [communication compliance](communication-compliance.md).
+Classifiers are available to use as a condition for:
 
-Sensitivity labels can use classifiers as conditions, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
+- [Office auto-labeling with sensitivity labels](apply-sensitivity-label-automatically.md)
+- [Auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)
+- [Communication compliance](communication-compliance.md)
+- Sensitivity labels can use classifiers as conditions, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
+- [Data loss prevention](dlp-learn-about-dlp.md)
 
 > [!IMPORTANT]
 > Classifiers only work with items that are not encrypted.

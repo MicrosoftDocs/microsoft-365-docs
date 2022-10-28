@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -38,6 +39,51 @@ Microsoft Office 2013 on Microsoft Windows computers supports Modern authenticat
 
 > [!NOTE]
 > Modern authentication is already enabled in Office 2016 or later. You don't need to set these registry keys for later versions of Office.
+
+>[!IMPORTANT]
+> Basic authentication is turned off for Exchange Online mailboxes on Microsoft 365. This means that if Outlook 2013 is not configured to use modern authentication, it loses the ability to connect. For more information, see [Basic authentication in exchange online](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-september/ba-p/3609437).
+
+## Software requirements
+
+To enable MFA for Office 2013 client apps, you must have the following software installed (the version listed below, or a later version) based on whether you have a [Click-to-run based installation](http://howtomicrosoftofficetutorials.blogspot.com/2016/12/plan-for-multi-factor-authentication.html#bk_clicktorun) or an [MSI-based installation](http://howtomicrosoftofficetutorials.blogspot.com/2016/12/plan-for-multi-factor-authentication.html#bk_msi).
+
+To determine whether your Office installation is Click-to-run or MSI-based:
+
+1.    Start Outlook 2013.
+2.    From the **File** menu, select **Office Account**.
+3.    For Outlook 2013 Click-to-Run installations, an **Update Options** item displays. For MSI-based installations, an **Update Options** item does not display.
+
+      :::image type="content" source="../../security/defender-endpoint/images/office-2013-run-installation.png" alt-text="Screenshot of office 2013":::
+
+### Click-to-run installations
+
+For Click-to-run installations, you must have the following files installed. If your file version is not equal to or greater than the file version listed, follow these steps below to update it.
+
+|File name|Install path on your computer|File version|
+|---|---|---|
+|MSO.DLL|C:\Program Files\Microsoft Office 15\root\vfs\ProgramFilesCommonx86\Microsoft Shared\OFFICE15\MSO.DLL|15.0.4753.1001|
+|CSI.DLLL|CSI.DLL C:\Program Files\Microsoft Office 15\root\office15\csi.dll|15.0.4753.1000|
+|Groove.EXE*|C:\Program Files\Microsoft Office 15\root\office15\GROOVE.exe|15.0.4763.1000|
+|Outlook.exe|C:\Program Files\Microsoft Office 15\root\office15\OUTLOOK.exe|15.0.4753.1002|
+|ADAL.DLL|C:\Program Files\Microsoft Office 15\root\vfs\ProgramFilesCommonx86\Microsoft Shared\OFFICE15\ADAL.DLL|1.0.2016.624|
+|Iexplore.exe|C:\Program Files\Internet Explorer|Varies|
+
+\* If Groove.EXE isn't part of your Office installation, it doesn't need to be installed for the Azure Active Directory Authentication Library (ADAL) to work. However, if Groove.EXE is present, then the file version listed in the table is required.
+
+### MSI-based installations
+
+For MSI-based installations, you must have the following files installed. If your file version is not equal to or greater than the file version listed, use the link in the Where to get the update column to update it.
+
+|File name|Install path on your computer|Where to get the update|Version|
+|---|---|---|---|
+|MSO.DLL|C:\Program Files\Microsoft Office 15\root\vfs\ProgramFilesCommonx86\Microsoft Shared\OFFICE15\MSO.DLL|[KB3085480](https://support.microsoft.com/en-us/topic/description-of-the-security-update-for-office-2013-september-10-2019-0d171ba2-2eba-a2ca-a54d-c0f568de6bcc)|15.0.4753.1001|
+|CSI.DLLL|CSI.DLL C:\Program Files\Microsoft Office 15\root\office15\csi.dll|[KB3172545](https://support.microsoft.com/en-us/topic/july-11-2017-update-for-office-2013-kb3172545-d6b47054-04d5-5154-40ba-3436d1e0efdb)|15.0.4753.1000|
+|Groove.EXE*|C:\Program Files\Microsoft Office 15\root\office15\GROOVE.exe|[KB4022226](https://support.microsoft.com/en-us/topic/august-7-2018-update-for-onedrive-for-business-for-office-2013-kb4022226-6163bb26-cbde-eb16-ac42-abfda7afbf68)|15.0.4763.1000|
+|Outlook.exe|C:\Program Files\Microsoft Office 15\root\office15\OUTLOOK.exe|[KB4484096](https://support.microsoft.com/en-us/topic/october-1-2019-update-for-outlook-2013-kb4484096-6513145a-cc75-1cd1-72b7-78cb62d8476b)|15.0.4753.1002|
+|ADAL.DLL|C:\Program Files\Microsoft Office 15\root\vfs\ProgramFilesCommonx86\Microsoft Shared\OFFICE15\ADAL.DLL|[KB3085565](https://support.microsoft.com/en-us/topic/july-5-2016-update-for-office-2013-kb3085565-1d1a6d24-fbd4-1bae-242f-a35e0e2aba40)|1.0.2016.624|
+|Iexplore.exe|C:\Program Files\Internet Explorer|[MS14-052](https://support.microsoft.com/en-us/topic/ms14-052-cumulative-security-update-for-internet-explorer-september-9-2014-17d29b71-9e78-0bc1-8961-7b812d04e4e1)|Not applicable|
+
+\* If Groove.EXE isn't part of your Office installation, it doesn't need to be installed for the Azure Active Directory Authentication Library (ADAL) to work. However, if Groove.EXE is present, then the file version listed in the table is required.
 
 ## Enable modern authentication for Office 2013 clients
 
