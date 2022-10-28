@@ -25,7 +25,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 
 > [!NOTE]
-> This feature is rolling out at different speeds to our customers. If you aren't see this feature yet, you should see it soon.
+> This feature is rolling out at different speeds to our customers. If you aren't seeing this feature yet, you should see it soon.
 
 Partners onboarded to Microsoft 365 Lighthouse can now set up all their customers with Granular Delegated Administrative Privileges (GDAP) through Lighthouse, regardless of their licenses or size. Lighthouse enables partners to quickly transition their organization to GDAP and begin the journey to least-privilege for their delegated access to customers. By setting up your organization with GDAP for the customer tenants you manage, users in your organization have the permissions necessary to do their work while keeping customer tenants secure.
 
