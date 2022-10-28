@@ -18,7 +18,7 @@ ms.collection:
 
 # Data Residency for Office for the Web
 
-## Summary
+## Overview
 
 Service documentation: [Office for the web service description - Service Descriptions](https://learn.microsoft.com/office365/servicedescriptions/office-online-service-description/office-online-service-description)
 
@@ -31,7 +31,7 @@ Capability summary: Office for the web (formerly Office Web Apps) opens Word, Ex
 Required Conditions:
 
 
-1. _Tenant_ has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. _Tenant_ has a sign-up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
 1. _Tenant_ has a valid _Advanced Data Residency_ subscription for all users in the _Tenant_.
 1. The Office for the Web subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
@@ -45,4 +45,4 @@ The cache for documents are not migrated to the new _Geography_, and will be ree
 
 ### How can I determine customer data location?
 
-We are in the process of updating the actual data location in _Tenant_ Admin Center. When this change is complete you will be able to see the actual data location, for committed data, by navigating to Admin|Settings|Org Settings|Organization Profile|Data Location. Until that change is visible, you can view the Exchange Online data or SharePoint Online location information in order to understand where your committed data is stored for this service.
+We are in the process of updating the actual data location in _Tenant_ Admin Center. When this change is complete the tenant will be able to see the actual data location, for in scope data, by navigating to Admin|Settings|Org Settings|Organization Profile|Data Location. Until that change is visible, you can view the Exchange Online data or SharePoint Online location information in order to understand where the in scope data is stored for this service.
