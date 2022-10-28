@@ -293,5 +293,5 @@ The following table lists PowerShell cmdlets that are relevant for installing th
 For more information, see:
 
 - [Learn about the information protection scanner](../../compliance/deploy-scanner.md)
-- [Configuring and installing the information protection scanner](../../compliance/deploy-scanner-configure-install.md#tabs=powershell-only)
+- [Configuring and installing the information protection scanner](../../compliance/deploy-scanner-configure-install.md?tabs=powershell-only)
 - [Manage your content scan jobs using PowerShell only](../../compliance/deploy-scanner-prereqs.md#use-powershell-with-a-disconnected-computer).
