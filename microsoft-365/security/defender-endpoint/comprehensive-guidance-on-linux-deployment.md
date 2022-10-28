@@ -71,7 +71,7 @@ The following are the supported Linux servers:
 |---|---|
 |Disk space |1 GB|
 |RAM |1 GB<br> 4 GB is preferred|
-|CPU |If the Linux system is running only 1 vcpu, we recommend to be increased to 2 vcpu’s<br> four cores are preferred |
+|CPU |If the Linux system is running only 1 vcpu, we recommend being increased to 2 vcpu’s<br> four cores are preferred |
 
 |OS version|Kernel filter driver|Comments|
 |---|---|---|
@@ -134,7 +134,7 @@ Here's how to check the network connectivity of Microsoft Defender for Endpoint:
     >[!NOTE]
     >You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you may need to create an allow rule specifically for them. 
 
-3. Work with the Firewall/Proxy/Networking admins to allow the relevant URL’s.
+3. Work with the Firewall/Proxy/Networking admins to allow the relevant URLs.
 
 ### Set up proxy settings
 
@@ -154,7 +154,7 @@ The table below shows the supported proxy settings:
 
 ### Verify SSL inspection is not being performed on the network traffic
 
-To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspection by major firewall systems are not allowed. You'll have to bypass SSL inspection for Microsoft Defender for Endpoint URLs.
+To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspections by major firewall systems are not allowed. You'll have to bypass SSL inspection for Microsoft Defender for Endpoint URLs.
 
 #### Troubleshoot cloud connectivity issues
 
@@ -175,7 +175,7 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
    >[!NOTE]
    >If your version is not in this list, please search their KB article or contact their support. 
   
-- If you are testing on one machine, you can use a command line to set up the exclusions:
+- If you're testing on one machine, you can use a command line to set up the exclusions:
   - [Configure from the command line](linux-resources.md#configure-from-the-command-line).
   - [Configure and validate exclusions for Microsoft Defender for Endpoint on  Linux](linux-exclusions.md).
 
