@@ -30,6 +30,7 @@ With Virtual Appointments in Microsoft Teams, you have a complete meeting platfo
 - Financial advisors, claims adjusters, and other financial professionals can meet with clients remotely.
 - Sales associates, product experts, and design consultants can conduct virtual fittings and consultations.
 - Clinicians can meet with patients or other healthcare providers to discuss medical care.
+- Human resources departments can conduct virtual interviews with job candidates.
 
 This article gives you an overview of the capabilities available in Teams for scheduling and managing virtual appointments.
 
