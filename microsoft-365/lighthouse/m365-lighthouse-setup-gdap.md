@@ -31,7 +31,7 @@ Partners onboarded to Microsoft 365 Lighthouse can now set up all their customer
 
 Delegated access via DAP or GDAP is a prerequisite for customers to be fully onboard to Lighthouse. Therefore, creating GDAP relationships may be the first step in managing your customers in Lighthouse.
 
-During the GDAP Setup process, you'll assign roles to tiers of job functions for employees in your organization and then create GDAP templates that will assign those tiered roles to specific security groups with users for groups of customers. GDAP roles are scoped to [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference), and when you set up GDAP, you'll see recommendations for a set of roles needed for each tier.
+During the GDAP setup process, you'll assign roles to tiers of job functions for employees in your organization and then create GDAP templates that will assign those tiered roles to specific security groups with users for groups of customers. GDAP roles are scoped to [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference), and when you set up GDAP, you'll see recommendations for a set of roles needed for each tier.
 
 ## Before you begin
 
@@ -51,28 +51,27 @@ During the GDAP Setup process, you'll assign roles to tiers of job functions for
 
 When you set up GDAP for the first time, you must complete the following sections in order. Once completed, you can come back and edit any section as needed.
 
-To get started,
+To get started:
 
 1. In the left navigation in Lighthouse, select **Home.**
 
 2. On the **Set up GDAP for your organization** card, select **Begin setup.**
 
-3. Complete each section in order.
+3. Complete the following sections in order.
 
-    1. Define tiers of permissions
+    [Step 1: Define tiers of permissions](#step-1-define-tiers-of-permissions)
 
-    2. Create GDAP templates
+    [Step 2: Create GDAP templates](#step-2-create-gdap-templates)
 
-    3. Create security groups
+    [Step 3: Create security groups](#step-3-create-security-groups)
 
-    4. Assign customer tenants
+    [Step 4: Assign customer tenants](#step-4-assign-customer-tenants)
 
-    5. Review settings
+    [Step 5: Review settings](#step-5-review-settings)
 
+### Step 1: Define tiers of permissions
 
-### Define tiers of permissions
-
-In this step, you'll choose the roles needed for each tier based on your employees' job functions.
+Choose the roles needed for each tier based on your employees' job functions.
 
 1. From the **Define tiers of permissions** page, select the roles needed for each tier based on your employees' job functions. You can
 
@@ -80,19 +79,21 @@ In this step, you'll choose the roles needed for each tier based on your employe
 
     - Manually assign a role to each tier.
 
-2. Select **Next** to go to the next section or select **Save and close** to save your settings and exit the tool.
+2. Select **Next** to go to the next section or select **Save and close** to save your settings and exit GDAP Setup.
 
 You can rename tiers to match your organizational needs. You can remove roles from each tier within the recommendations. Certain roles can't be added to different tiers – for example, the roles in the JIT Only tier can't be added to any other tier.
 
-### Create GDAP templates
+### Step 2: Create GDAP templates
 
-Next, create a GDAP template, which will be a collection of:
+A GDAP template is a collection of:
 
 - Tiers with roles
 
 - Security groups per tier
 
 - Users in each security group
+ 
+To create a GDAP template:
 
 1. From the **Create GDAP templates** page, select **Create template**.
 
@@ -102,9 +103,9 @@ Next, create a GDAP template, which will be a collection of:
 
 4. Select **Save**.
 
-5. Select **Next** to go to the next section, or select **Save and close** to save your settings and exit the tool.
+5. Select **Next** to go to the next section, or select **Save and close** to save your settings and exit GDAP Setup.
 
-### Create security groups
+### Step 3: Create security groups
 
 You'll need at least one security group per tier for each template. For the first template, you'll create a new security group, but on subsequent templates, you may reuse groups if desired.
 
@@ -120,19 +121,19 @@ You'll need at least one security group per tier for each template. For the firs
 
 6. Select **Save** again.
 
-7. Select **Next** to go to the next section or select **Save and close** to save your settings and exit the tool.
+7. Select **Next** to go to the next section or select **Save and close** to save your settings and exit GDAP Setup.
 
-### Assign customer tenants
+### Step 4: Assign customer tenants
 
-Now you can assign groups of customers to each template. Each customer can only be assigned to one template, so once selected, that customer tenant won't be displayed as an option on subsequent templates.
+Assign groups of customers to each template. Each customer can only be assigned to one template, so once selected, that customer tenant won't be displayed as an option on subsequent templates.
 
-If you want to reassign a customer tenant, rerun the tool and deselect that customer from the existing assignment. Then you can reassign it to a different template. You can filter the list using the search box in the upper right corner.
+If you want to reassign a customer tenant, rerun GDAP Setup and deselect that customer from the existing assignment. Then you can reassign it to a different template. You can filter the list using the search box in the upper right corner.
 
 1. From the **Assign customer tenants** page, select the tenants you want to associate with the security group you created.
 
-2. Select **Next** to go to the next section or select **Save and close** to save your settings and exit the tool.
+2. Select **Next** to go to the next section or select **Save and close** to save your settings and exit GDAP Setup.
 
-### Review settings
+### Step 5: Review settings
 
 1. From the **Review settings** page, review the settings you created and then select **Finish.**
 
@@ -140,7 +141,7 @@ If you want to reassign a customer tenant, rerun the tool and deselect that cust
 
 If any customer tenants already had a DAP relationship, during the no consent window, these settings will be automatically applied. For customers without DAP, or if the no consent window has closed, choosing **Finish** will take you to the last page where a consent links are generated for each customer as needed. Once the customer consents to the GDAP relationship, the rest of the settings will be automatically applied.
 
-Once you've completed the GDAP Setup tool, you can navigate to different steps to make any updates or changes to tiers, roles, security groups, or templates. The GDAP relationships will also be visible in Partner Center, and the security groups will be visible in Azure AD as well.
+Once you've completed GDAP setup, you can navigate to different steps to make any updates or changes to tiers, roles, security groups, or templates. The GDAP relationships will also be visible in Partner Center, and the security groups will be visible in Azure AD as well.
 
 ## Related content
 
