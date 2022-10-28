@@ -158,7 +158,7 @@ You can also filter by additional user profile details used in your organization
 
 - **Unlicensed users** Select this box to find all the users who haven't been assigned a license. The results for this view can also include users who have an Exchange mailbox but don't have a license. To track those users specifically, use the filter **Unlicensed users with Exchange mailboxes or archives**. The results for this view can also include users who have an Exchange archive, but don't have a license.
 
-- **Unlicensed users with Exchange mailboxes or archives** Select this box to show user accounts that were created in Exchange Online and have an Exchange mailbox, but weren't assigned an Microsoft 365 license. The results of this filter include users who have or who were assigned an Exchange archive. 
+- **Unlicensed users with Exchange mailboxes or archives** Select this box to show user accounts that were created in Exchange Online and have an Exchange mailbox, but weren't assigned a Microsoft 365 license. The results of this filter include users who have or who were assigned an Exchange archive. 
 
 > [!NOTE]
 > The **Unlicensed users with Exchange mailboxes** filter works when:
