@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---
@@ -80,14 +80,14 @@ Before you can initiate a session on a device, make sure you fulfill the followi
   You'll need to enable the live response capability in the [Advanced features settings](advanced-features.md) page.
 
   > [!NOTE]
-  > Only users with manage security or global admin roles can edit these settings.
+  > Only admins and users who have "Manage Portal Settings" permissions can enable live response. 
   >
   > Automated Investigation must be enabled in the [Advanced features settings](advanced-features.md) prior to enabling live response.
 
 - **Enable live response for servers from the advanced settings page** (recommended).
 
   > [!NOTE]
-  > Only users with manage security or global admin roles can edit these settings.
+  > Only admins and users who have "Manage Portal Settings" permissions can enable live response.
 
 - **Ensure that the device has an Automation Remediation level assigned to it**.
 
