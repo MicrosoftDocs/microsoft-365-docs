@@ -1,7 +1,7 @@
 ---
 title: Manage data for Microsoft Whiteboard
-ms.author: v-jdeweese
-author: johnddeweese
+ms.author: alexfaulkner
+author: alexfaulkner
 manager: alexfaulkner
 ms.reviewer: 
 audience: admin
