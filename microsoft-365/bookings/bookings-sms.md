@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 description: "Learn how to configure SMS text notifications for clients, customers and partners in Microsoft Bookings."
 ---
