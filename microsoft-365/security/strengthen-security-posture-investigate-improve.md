@@ -29,19 +29,11 @@ ms.collection:
 
 This phase provides guidance on how you can assess your organization and how to start protecting straight away with the following features:
 
-1. [Assess your devices](#1-assess-your-devices)
-2. [Assign device value](#2-assign-device-value)
-3. [Onboard newly discovered endpoints](#3-onboard-newly-discovered-endpoints)
+1. [Review Secure Score](#1-review-secure-score)
 
-## 1. Assess your devices
+## 1. Review Secure Score
 
-[Assess your devices](../security/defender-endpoint/machine.md)
-
-## 2. Assign device value
-
-[Assign device value](../security/defender-vulnerability-management/tvm-assign-device-value.md)
-
-## 3. Onboard newly discovered endpoints
+[Review Secure Score](../security/defender/microsoft-secure-score.md)
 
 ## Next step
 

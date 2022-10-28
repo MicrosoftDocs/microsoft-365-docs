@@ -28,7 +28,7 @@ ms.collection:
 
 Welcome to **Phase 1: Configure capabilities** in our **[Strengthen your security posture](/security-posture-solution-overview.md)** solution.
 
-Microsoft 365 Defender provides many capabilities to discover and protect the devices in your organization against threats. This can include, configuring device discovery to help you find unmanaged devices that can be onboarded and secured by Microsoft Defender for Endpoint, taking advantage of available integrations to increase visibility into your complete OT/IOT asset inventory, and testing available attack surface reduction rules to see how they might impact your environment. This article describe these capabilities and provide links to more information on how to get started with configuring these capabilities:
+Microsoft 365 Defender provides many capabilities to discover and protect the devices in your organization against threats. This article describe these capabilities and provide links to more information on how to get started with configuring these capabilities:
 
 1. [Configure device discovery](#1-configure-device-discovery)
 2. [Configure ASR in audit mode](#2-configure-asr-in-audit-mode)
@@ -52,4 +52,4 @@ Use [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-
 
 ## Next step
 
-- Proceed to [Phase 2: Assess and protect](/strengthen-security-posture-assess-protect.md).
+- Proceed to [Phase 2: Assess and protect](strengthen-security-posture-assess-protect.md).

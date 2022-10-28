@@ -35,7 +35,7 @@ It will help you better understand your overall security posture and provide a f
 This solution guide provides specific and actionable steps to strengthen your security posture, and assumes the following facts:
 
 - You're a global admin
-- You have successfully deployed Microsoft Defender for Endpoint
+- You have successfully deployed [Microsoft Defender for Endpoint Plan 2](../security/defender-endpoint/microsoft-defender-endpoint.md)
 - You're beyond the initial stage of onboarding devices and have a management tool in place to support future device onboarding. For more information on Onboarding devices, see [Onboarding and configuration tool options](../security/defender-endpoint/onboard-configure.md#onboarding-and-configuration-tool-options).
 
 ## Overview of the solution
@@ -54,14 +54,7 @@ For more information, see [Strengthen your security posture - Phase 1: Configure
 
 ## 2. Assess and protect
 
-The first step in security posture assessment is getting a comprehensive inventory of all your assets.
-
-Analyze your current security posture
-
-
-Assessing the assets across your organization is a key first step to take before starting to implementing posture improvements. With access to 
-
-This phase provides guidance on how you can assess your organization and how to start protecting straight away:
+Central to understanding your security posture is having a comprehensive inventory of all your assets. The Microsoft Defender for Endpoint [device inventory](../security/defender-endpoint/machine.md) provides you with accurate view into the assets in your network along with detailed information about those assets. The more information have about your assets the better you'll be able manage and assess the risks associated with them.
 
 For more information, see [Strengthen your security posture - Phase 2: Assess and protect](strengthen-security-posture-assess-protect.md)
 

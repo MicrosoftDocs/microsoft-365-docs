@@ -28,14 +28,25 @@ ms.collection:
 
 Welcome to **Phase 2: Assess and protect** in our **[Strengthen your security posture](/security-posture-solution-overview.md)** solution.
 
-This phase provides guidance on how you can assess your organization and how to start protecting straight away with the following features:
+Central to understanding your security posture is having a comprehensive inventory of all your assets. This article describe how to get an accurate view into the assets in your network and ways to manage the risks associated with them:
 
-1. [Review Secure Score](#1-review-secure-score)
+1. [Assess your devices](#1-assess-your-devices)
+2. [Onboard newly discovered endpoints](#2-onboard-newly-discovered-endpoints)
+3. [Assign device value](#3-assign-device-value)
 
-## 1. Review Secure Score
+## 1. Assess your devices
 
-[Review Secure Score](../security/defender/microsoft-secure-score.md)
+Use the device inventory page in Microsoft Defender for Endpoint to get a comprehensive view of the assets discovered in your organization. For more information on how to explore the device inventor or how to use filters to get more detailed information, go to [Device inventory](../security/defender-endpoint/machine.md).
+
+## 2. Onboard newly discovered endpoints
+
+Once discovered, unmanaged endpoint and network devices connected to your networks can be onboarded to Defender for Endpoint. 
+
+
+## 3. Assign device value
+
+[Assign device value](../security/defender-vulnerability-management/tvm-assign-device-value.md)
 
 ## Next step
 
-- Proceed to [Phase 3: Investigate and improve](/strengthen-security-posture-investigate-improve.md).
+- Proceed to [Phase 3: Investigate and improve](strengthen-security-posture-investigate-improve.md).
