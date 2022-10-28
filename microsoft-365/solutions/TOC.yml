@@ -388,8 +388,6 @@
           href: apps-type-web.md
         - name: Understand Microsoft apps
           href: apps-type-microsoft.md          
-        - name: Understand other app types        
-          href: apps-type-other.md
       - name: Purchase apps
         items:
         - name: Purchase apps overview

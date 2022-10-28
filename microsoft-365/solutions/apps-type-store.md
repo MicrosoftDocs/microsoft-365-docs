@@ -16,7 +16,9 @@ keywords:
 
 # Understand store apps for a managed environment
 
-To protect your organization's data, your organization's workforce can use store apps that have been designed to support a managed environment. In addition to protecting app data, Intune supports configuring app settings, such as email settings. Store apps are the most common type of apps that you would provide to your workforce. Common types of store apps that support Intune include [Microsoft apps](/mem/intune/apps/apps-supported-intune-apps#microsoft-apps), [partner productivity apps](/mem/intune/apps/apps-supported-intune-apps#partner-productivity-apps), and [Partner unified endpoint management (UEM) apps](/mem/intune/apps/apps-supported-intune-apps#partner-uem-apps).
+One method of protecting and securing your organization's data is to deploy store apps to your organization's workforce. Many store apps have been designed to support a managed environment such as Microsoft Intune. 
+
+In addition to protecting app data, Intune supports configuring app settings, such as email settings. Store apps are the most common type of apps that you would provide to your workforce. Common types of store apps that support Intune include [Microsoft apps](/mem/intune/apps/apps-supported-intune-apps#microsoft-apps), [partner productivity apps](/mem/intune/apps/apps-supported-intune-apps#partner-productivity-apps), and [Partner unified endpoint management (UEM) apps](/mem/intune/apps/apps-supported-intune-apps#partner-uem-apps).
 
 ## Apps from the store
 
