@@ -3,7 +3,7 @@ title: Enable controlled folder access
 keywords: Controlled folder access, windows 10, windows 11, windows defender, ransomware, protect, files, folders, enable, turn on, use
 description: Learn how to protect your important files by enabling Controlled folder access
 ms.service: microsoft-365-security
-ms.topic: article
+ms.topic: conceptual
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
