@@ -22,14 +22,13 @@ After connecting to the source and target tenant, the next step in performing a 
 
 To establish trust, each SharePoint Online tenant administrator must run specific commands on both source and target tenants. Once the trust has been requested, the administrator of the target tenant will receive an email informing them that another tenant is trying to establish a trust relationship.
 
-A seven-day waiting period occurs before the trust becomes active. During this period, the trust relationship is considered "dormant".
-
-The "trust" command is specific to SharePoint Online. It only grants permission for the SharePoint administrator on the source tenant to execute OneDrive Migration operations to the identified target tenant. 
-
-Granting trust *doesn't* give the administrator any visibility, permission, or ability to collaborate between the source tenant and the target tenant. 
+>[!Note]
+>The "trust" command is specific to SharePoint Online. It only grants permission for the SharePoint administrator on the source tenant to execute OneDrive Migration operations to the identified target tenant. 
+>
+>Granting trust *doesn't* give the administrator any visibility, permission, or ability to collaborate between the source tenant and the target tenant. 
 
 >[!Important]
->If you are a OneDrive Multi-Geo or a multi-national customer, you must establish trust between each geography involved in your migration project.
+>If you are Microsoft 365 Multi-Geo customer, you must establish trust between each geography involved in your migration project.
 >
 
 ## Before you begin

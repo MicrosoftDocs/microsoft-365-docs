@@ -18,7 +18,7 @@ description: "Step 3 of the OneDrive Cross-tenant migration feature"
 ---
 # Step 3: Cross-tenant OneDrive migration - Verifying trust
 
-When performing a cross-tenant OneDrive migration, you first connect to the source and target tenants, then establish trust between the tenants. Run commands on the source and target tenants to verify the established trust. A status of *GoodToProceed*,  confirms that the trust is verified.
+Before proceeding you will want to verify the trust is complete. A status of *GoodToProceed*,  confirms that the trust is verified.
 
 ## To verify trust has been established
 
@@ -44,7 +44,6 @@ When verifying trust, possible values
 |:-----|:-----|
 |NotEstablished|Trust has not been requested locally.|
 |NotEstablishedByPartner|Trust has not been requested by the requested partner|
-|Dormant|Requested trust is within the 7 days waiting period after creation.|
 |DormantByPartner|Partner’s requested trust is within the 7 days waiting period after creation.|
 |CouldNotContactPartner|Could not contact the partner to determine status.|
 |GoodToProceed|Verified to proceed.|

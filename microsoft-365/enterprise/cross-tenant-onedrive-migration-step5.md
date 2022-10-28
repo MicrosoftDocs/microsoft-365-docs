@@ -24,9 +24,9 @@ We recommend that you take the time to verify your mappings, ensuring they're ac
 
 ## Create the identity mapping file 
 
-There's a one to one relationship in the identity mapping file.  You can't map the same user to multiple in the target. For example, if you have instances where the admin is the owner of multiple OneDrive accounts, the ownership must be changed to match the corresponding user you wish to migrate from Source to Target.  If you don't, those account files won't migrate.
+There's a one-to-one relationship in the identity mapping file.  You can't map the same user to multiple users in the target tenant. For example, if you have instances where the admin is the owner of multiple OneDrive accounts, the ownership must be changed to match the corresponding user you wish to migrate from Source to Target.  If you don't, those account files won't migrate.
 
-**Example:** In this example, the admin owns multipe OneDrive accounts.
+**Example:** In this example, the admin owns multiple OneDrive accounts.
 
 |Source Tenant Owner |Target Tenant User|
 |:-----|:-----|
@@ -65,13 +65,13 @@ Users and groups are included in the same file. Depending on whether it's a user
 >[!Important]
 >Do NOT include column headings in your CSV file.  In the examples below we include them for illustrative purposes only. 
 
-**Users**. Enter these values in the columns:
+**Users**. Enter your values as shown in this example for guests:
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-columns.png" alt-text="format to use for mapping users":::
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-example.png" alt-text="example of csv for users":::
 
-**Groups**. Enter these values in the columns:
+**Groups**. Enter your values as shown in this example for guests:
 </br>
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-groups-columns.png" alt-text="format for csv file for groups":::
 </br>
@@ -81,7 +81,7 @@ Users and groups are included in the same file. Depending on whether it's a user
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-group-example.png" alt-text="example of adding groups to csv file":::
 
 
-**Guest users**. Any users who are remaining in the source tenant but will still need access to resources that are migrating to the target tenant must have new guest identities created for them in the target tenant. Enter these values in columns for guests:
+**Guest users**. You can map guest accounts in the source tenant to member accounts in the target tenant. You can also map a guest account in the source to a guest account in the target if the guest has been previously created. Enter your values as shown in this example for guests:
 </br>
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-guests.png" alt-text="csv example when mapping a guest to a member":::
@@ -101,17 +101,17 @@ To obtain Source Tenant Company ID:
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-azure-tenant-id.png" alt-text="getting the source tenant ID":::
 
 
-## Obtain group object IDs
 
-To obtain source group object ID:
+## To obtain source group object ID:
+
 1. Sign in to Source tenant as Admin to Azure Groups.
 2. Locate/Search for your required Group(s) (for example. All Company)
 3. Select the required Group instance (for example. All Company), on below screen select the Copy to clipboard option and then use that to populate the sourceGroupObjectId column on your Mapping CSV.
+4. If you have multiple Groups to map, then repeat these steps for each group.
 
-If you have multiple Groups to map, then repeat these steps for each group.
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-source-group-objectid.png" alt-text="getting the source group object ID":::
 
-
-## To obtain target group object ID:
+### To obtain target group object ID:
 
 1. Sign in to Target tenant as Admin to Azure Groups.
 2. Locate/Search for your required Group(s) (for example. All Company)
@@ -119,6 +119,7 @@ If you have multiple Groups to map, then repeat these steps for each group.
 4. If you have multiple Groups to map, then repeat the above process to obtain those specific targetGroupObjectId's.
 5. For the GroupName, use the same ID as the *TargetGroupObjectId* you obtained.
  
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-target-group-objectid.png" alt-text="how to get the target object ID":::
 
 ## Upload the identity map
 

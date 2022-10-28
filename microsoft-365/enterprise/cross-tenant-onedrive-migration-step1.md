@@ -46,6 +46,6 @@ The first step in your cross-tenant OneDrive migration, is to connect to both yo
 5. When prompted, sign in to the **target** tenant using your Admin username and password.
 
 >[!Important]
->**OneDrive Multi-Geo or multi-national customers:** You must treat each geography as a separate tenant. Provide the correct geography-specific URLs throughout the migration process.
+>**Microsoft 365 Multi-Geo customers:** You must treat each geography as a separate tenant. Provide the correct geography-specific URLs throughout the migration process.
 
 ## Step 2: [Establish trust between the source and target tenants](cross-tenant-onedrive-migration-step2.md)
