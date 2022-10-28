@@ -108,7 +108,7 @@ If you're seeing this page in the admin center, you're on the **admin simplified
 
     :::image type="content" source="../../media/add-multiple-users2.png" alt-text="Screenshot: Options to add users one at a time or use a CSV file":::
 
-- Select **I'd like to upload a CSV with user information**. Download the example CSV file and make sure your spreadsheet includes the exact same column headings as the sample CSV file (User Name, First Name, and so on). If you use the sample CSV file, open it in a editing tool, like Microsoft Excel, and consider leaving all the data in row 1 alone, and only entering data in rows 2 and below. Your spreadsheet also needs to include values for the user name (like bob@contoso.com) and a display name (like Bob Kelly) for each user. When you're done entering your user's information, select **Browse** and navigate to the location of your CSV file and select **Open**.
+- Select **I'd like to upload a CSV with user information**. Download the example CSV file and make sure your spreadsheet includes the exact same column headings as the sample CSV file (User Name, First Name, and so on). If you use the sample CSV file, open it in an editing tool, like Microsoft Excel, and consider leaving all the data in row 1 alone, and only entering data in rows 2 and below. Your spreadsheet also needs to include values for the user name (like bob@contoso.com) and a display name (like Bob Kelly) for each user. When you're done entering your user's information, select **Browse** and navigate to the location of your CSV file and select **Open**.
 
 3. Choose **Next**.
 
