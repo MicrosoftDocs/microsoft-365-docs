@@ -61,13 +61,14 @@ These commands can be useful when planning bulk batches of OneDrive migrations. 
 
 Before starting the migration you will expect to see the users current Source OneDrive status as below.
 
-Wherein you can see from the highlighted URL that they are on the Source tenant and their current files and folders are displayed.
- 
+In this example, that they are on the Source tenant and their current files and folders are displayed.
 
+
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-status-premigration.png" alt-text="pre-migration status":::
 
 ## Cancelling a OneDrive migration
 
-You can stop the cross-tenant migration of a user's OneDrive by using the following command, provided the migration is not In Progress or Success status (see next slide for Migration States).
+You can stop the cross-tenant migration of a user's OneDrive by using the following command, provided the migration is not In Progress or Success status.
 
 ```powershell
 
@@ -133,13 +134,5 @@ The below screenshot shows the Status check and that the migration for DiegoS ha
 **Target tenant:** 
 Once the migration has completed successfully you can check the status of the user on the target tenant by logging into their new OneDrive account. 
 
-In this example, the URL shows they are now on the target tenant and their current files and folders are displayed.
-
-:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-target-post-migration.png" alt-text="observing a post migratiion status on the target":::
-
-
 **Source tenant:**
 Since the user has successfully migrated to the target tenant, they no longer have an active OneDrive account on the source.
- 
-:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-status-post-migration.png" alt-text="OneDrive source status post migration":::
-

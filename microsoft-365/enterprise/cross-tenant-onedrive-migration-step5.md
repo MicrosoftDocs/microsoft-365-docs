@@ -104,19 +104,19 @@ To obtain Source Tenant Company ID:
 
 ## To obtain source group object ID:
 
-1. Sign in to Source tenant as Admin to Azure Groups.
-2. Locate/Search for your required Group(s) (for example. All Company)
-3. Select the required Group instance (for example. All Company), on below screen select the Copy to clipboard option and then use that to populate the sourceGroupObjectId column on your Mapping CSV.
+1. Sign in to source tenant as Admin to [Azure Groups](https://ms.portal.azure.com).
+2. Search for your required group(s).
+3. Select the required Group instance and then **Copy to clipboard**.  Paste this value in the sourceGroupObjectId column of your mapping CSV file.
 4. If you have multiple Groups to map, then repeat these steps for each group.
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-source-group-objectid.png" alt-text="getting the source group object ID":::
 
 ### To obtain target group object ID:
 
-1. Sign in to Target tenant as Admin to Azure Groups.
-2. Locate/Search for your required Group(s) (for example. All Company)
-3. Select on the required Group instance (for example. All Company), on below screen select the Copy to clipboard option and then use that to populate the targetGroupObjectId column on your Mapping CSV.
-4. If you have multiple Groups to map, then repeat the above process to obtain those specific targetGroupObjectId's.
+1. Sign in to Target tenant as Admin to [Azure Groups](https://ms.portal.azure.com)
+2. Search for your required group(s).
+3. Select the required group instance and then **Copy to clipboard**. Paste this value in the targetGroupObjectId column of your mapping CSV file.
+4. If you have multiple groups to map, then repeat the above process to obtain those specific targetGroupObjectId's.
 5. For the GroupName, use the same ID as the *TargetGroupObjectId* you obtained.
  
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-target-group-objectid.png" alt-text="how to get the target object ID":::
@@ -163,7 +163,7 @@ Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL https://m365x
 - If the tenants are incompatible, your tenants will need to be patched/updated to ensure compatibility.
 
 >[!Note]
->We recommend waiting a period of 24-hours. Iif your tenants are still reporting as *incompatible* then send an email to ODSPT2TMigration@microsoft.com and we will engage with the Safe Deployment team to assist with updating the patching on your tenants to get them into a compatible status to continue migrating as soon as possible.
+>We recommend waiting a period of 24-hours. If your tenants are still reporting as *incompatible*, contact support. 
 
 >[!Note]
 >We recommend performing the compatibility status check on a frequent basis and prior to starting ANY instances of cross tenant migrations. If the tenants are not compatible, this can result in cross-tenant migrations failing.
