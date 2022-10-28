@@ -78,11 +78,7 @@ The following are the supported Linux servers:
 |---|---|
 |Disk space |3 GB|
 |RAM |1 GB<br> 4 GB is preferred|
-<<<<<<< HEAD
-|CPU |If the Linux system is running only 1 vcpu, we recommend being increased to 2 vcpu’s<br> four cores are preferred |
-=======
 |CPU |If the Linux system is running only 1 vcpu, we recommend to be increased to 2 vcpu’s<br> 4 cores are preferred |
->>>>>>> e9bc50296904889952e525caa484287819d121f2
 
 |OS version|Kernel filter driver|Comments|
 |---|---|---|
@@ -182,16 +178,8 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
    - Get a list of all your Linux applications and check the vendors website for exclusions.  
    
 - If you're running a non-Microsoft antimalware product, then add the processes/paths to the Microsoft Defender for Endpoint's AV exclusion list. For more information, see [Binary name and installation path changes with Endpoint Security for Linux 10.6.6](https://kcm.trellix.com/corporate/index?page=content&id=KB92028). For more information, check the non-Microsoft antimalware documentation or contact their support. 
-
-<<<<<<< HEAD
-   >[!NOTE]
-   >If your version is not in this list, please search their KB article or contact their support. 
-  
-- If you're testing on one machine, you can use a command line to set up the exclusions:
-=======
  
 - If you are testing on one machine, you can use a command line to set up the exclusions:
->>>>>>> e9bc50296904889952e525caa484287819d121f2
   - [Configure from the command line](linux-resources.md#configure-from-the-command-line).
   - [Configure and validate exclusions for Microsoft Defender for Endpoint on  Linux](linux-exclusions.md).
 
@@ -507,11 +495,7 @@ For more information, see [Device health and Microsoft Defender antimalware heal
 For more information, see [Deploy updates for Microsoft Defender for Endpoint on Linux](linux-updates.md#rhel-and-variants-centos-and-oracle-linux).
 
 >[!TIP]
-<<<<<<< HEAD
-> Automate the agent update on a monthly (Recommended) schedule by using a Cron job.For more information, see [schedule an update of the Microsoft Defender for Endpoint on Linux](linux-update-mde-linux.md).
-=======
 > Automate the agent update on a monthly (Recommended) schedule by using a Cron job. For more information, see [schedule an update of the Microsoft Defender for Endpoint on RHEL Linux](linux-update-mde-linux.md).
->>>>>>> e9bc50296904889952e525caa484287819d121f2
 
 ## Verify that you're able to get security intelligence updates
 
