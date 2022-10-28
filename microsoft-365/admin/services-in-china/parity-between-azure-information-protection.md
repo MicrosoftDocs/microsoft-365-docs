@@ -48,7 +48,7 @@ The following list includes the existing gaps between AIP for Office 365 operate
 
 - The [Mobile Viewer](/azure/information-protection/rms-client/mobile-app-faq) is not supported by Azure China 21Vianet.
 
-- The AIP area of the Azure portal is unavailable to customers in China. Use [PowerShell commands](#step-6-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs) instead of performing actions in the portal, such as managing and running your content scan jobs.
+- The scanner area of the compliance portal is unavailable to customers in China. Use [PowerShell commands](#step-6-install-the-scanner-and-manage-content-scan-jobs) instead of performing actions in the portal, such as managing and running your content scan jobs.
 
 - AIP endpoints in Office 365 operated by 21Vianet are different than the endpoints required for other cloud services. Network connectivity from clients to the following endpoints is required:
     - Download label and label policies: `*.protection.partner.outlook.cn`
@@ -172,9 +172,9 @@ AIP apps on Windows need the following registry key to point them to the correct
 
 Install the Microsoft Purview Information Protection scanner to scan your network and content shares for sensitive data, and apply classification and protection labels as configured in your organization's policy.
 
-When configuring and managing your content scan jobs, use the following procedure instead of the [Microsoft Purview compliance portal](deploy-scanner-configure-install.md) that's used by the commercial offerings.
+When configuring and managing your content scan jobs, use the following procedure instead of the [Microsoft Purview compliance portal](../../compliance/deploy-scanner-configure-install.md) that's used by the commercial offerings.
 
-For more information, see [Learn about the information protection scanner](deploy-scanner.md) and [Manage your content scan jobs using PowerShell only](deploy-scanner-prereqs.md#use-powershell-with-a-disconnected-computer).
+For more information, see [Learn about the information protection scanner](../../compliance/deploy-scanner.md) and [Manage your content scan jobs using PowerShell only](../../compliance/deploy-scanner-prereqs.md#use-powershell-with-a-disconnected-computer).
 
 **To install and configure your scanner**:
 
@@ -292,6 +292,6 @@ The following table lists PowerShell cmdlets that are relevant for installing th
 
 For more information, see:
 
-- [Learn about the information protection scanner](deploy-scanner.md)
-- [Configuring and installing the information protection scanner](deploy-scanner-configure-install.md#tabs=powershell-only)
-- [Manage your content scan jobs using PowerShell only](deploy-scanner-prereqs.md#use-powershell-with-a-disconnected-computer).
+- [Learn about the information protection scanner](../../compliance/deploy-scanner.md)
+- [Configuring and installing the information protection scanner](../../compliance/deploy-scanner-configure-install.md#tabs=powershell-only)
+- [Manage your content scan jobs using PowerShell only](../../compliance/deploy-scanner-prereqs.md#use-powershell-with-a-disconnected-computer).
