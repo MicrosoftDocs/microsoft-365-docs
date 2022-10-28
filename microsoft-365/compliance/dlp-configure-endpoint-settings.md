@@ -44,7 +44,7 @@ Before you get started, you should set up your DLP settings.
 
 ### Endpoint DLP Windows 10/11 and macOS settings
 
-|Setting |Windows 10, 1809 and later, Windows 11  |macOS Catalina 10.15 or later |Notes  |
+|Setting |Windows 10, 1809 and later, Windows 11  |macOS (three latest released versions) |Notes  |
 |---------|---------|---------|---------|
 |File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
 |Restricted apps     |Supported         |Supported         |         |
@@ -236,19 +236,58 @@ For macOS devices, you must add the full file path. To find the full path of Mac
 > [!NOTE]
 > The **Service domains** setting only applies to files uploaded using Microsoft Edge or Google Chrome with the [Microsoft Purview Extension](dlp-chrome-learn-about.md#learn-about-the-microsoft-purview-extension) installed.
 
-You can control whether sensitive files protected by your policies can be uploaded to specific service domains from Microsoft Edge.
+You can control whether sensitive files that are protected by your policies can be uploaded to specific service domains from Microsoft Edge.
 
-If the list mode is set to **Block**, then user won't be able to upload sensitive items to those domains. When an upload action is blocked because an item matches a DLP policy, DLP will either generate a warning or block the upload of the sensitive item.
+##### Allow
 
-If the list mode is set to **Allow**, then users will be able to upload sensitive items ***only*** to those domains, and upload access to all other domains isn't allowed.
+When the **Service domains** list is set to **Allow**, DLP policies won't be applied when a user attempts to upload a sensitive file to any of the domains on the list.
+
+If the list mode is set to **Allow**, any user activity involving a sensitive item and a domain that's on the list will be audited. The activity is allowed. When a user attempts an activity involving a sensitive item and a domain that *isn't* on the list then DLP policies, and the actions defined in the polices, are applied.
+
+For example, with this configuration:
+
+- **Service domains** list mode is set to **Allow**.
+    - Contoso.com is on the list.
+-  A DLP policy is set to **Block** upload of sensitive items that contain credit card numbers.
+ 
+User attempts to:
+
+- Upload a sensitive file with credit card numbers to contoso.com.
+    - The user activity is allowed, audited, an event is generated, but it won't list the policy name or the triggering rule name in the event details, and no alert is generated. 
+
+but if a user attempts to: 
+
+- Upload a sensitive file with credit card numbers to wingtiptoys.com (which is not on the list).
+    - The policy is applied and the user activity is blocked. An event is generated, and an alert is generated. 
+ 
+##### Block
+ 
+When the **Service domains** list is set to **Block**, DLP policies will be applied when a user attempts to upload a sensitive file to any of the domains on the list.
+
+If the list mode is set to **Block**, when a user attempts an activity involving a sensitive item and a domain that is on the list then DLP policies, and the actions defined in the polices, are applied. Any activity involving a sensitive item and a domain that is not on the list will be audited and the user activity is allowed.
+
+For example, with this configuration:
+
+- **Service domains** list mode is set to **Block**.
+    - Contoso.com is on the list.
+-  A DLP policy is set to **Block with override** for the upload of sensitive items that contain credit card numbers.
+ 
+User attempts to:
+
+- Upload a sensitive file with credit card numbers to contoso.com.
+    - The user activity is blocked, but the user can override the block, an event is generated and an alert is triggered.
+
+but if a user attempts to: 
+
+- Upload a sensitive file with credit card numbers to wingtiptoys.com (which is not on the list).
+    - The policy *isn't* applied and the user activity is audited. An event is generated, but it won't list the policy name or the triggering rule name in the event details, and no alert is generated. 
 
 > [!IMPORTANT]
 > When the service restriction mode is set to "Allow", you must have at least one service domain configured before restrictions are enforced.
 
-Use the FQDN format of the service domain without the ending `.` 
+Use the FQDN format of the service domain without the ending `.` when you add a domain to the list.
 
 For example:
-
 
 | Input | URL matching behavior |
 |---|---|
@@ -359,8 +398,8 @@ This feature is available for devices running any of the following Windows versi
 You can define removeable storage devices by these parameters:
 
 - Storage device friendly name - Get the Friendly name value from the storage device property details in device manager.
-- USB product ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
-- USB vendor ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+- USB product ID - Get the Device Instance path value from the USB device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+- USB vendor ID - Get the Device Instance path value from the USB device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
 - Serial number ID - Get the serial number ID value from the storage device property details in device manager.
 - Device ID - Get the device ID value from the storage device property details in device manager.
 - Instance path ID - Get the device ID value from the storage device property details in device manager.
