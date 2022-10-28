@@ -416,7 +416,7 @@ The following configuration profile will:
 The following configuration profile contains entries for all settings described in this document and can be used for more advanced scenarios where you want more control over the product.
   
 > [!NOTE]
-> It is not possible to control all Microsoft Defender for endpoint communication only with proxy setting in this json.
+> It is not possible to control all Microsoft Defender for Endpoint communication with only a proxy setting in this JSON.
 
 ### Full profile
 
