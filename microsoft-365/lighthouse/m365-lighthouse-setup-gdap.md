@@ -150,4 +150,4 @@ Once you've completed GDAP setup, you can navigate to different steps to make an
 [Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction) (article)\
 [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) (article)\
 [Learn about groups and access rights in Azure Active Directory](/azure/active-directory/fundamentals/concept-learn-about-groups) (article)\
-[What is Azure AD entitlement management?](/azure/active-directory/governance/entitlement-management-overview) (article)\
+[What is Azure AD entitlement management?](/azure/active-directory/governance/entitlement-management-overview) (article)
