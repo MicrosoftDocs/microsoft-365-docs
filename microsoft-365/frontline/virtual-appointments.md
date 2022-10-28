@@ -83,7 +83,7 @@ Currently, the Teams EHR connector supports integration with the Cerner EHR syst
 
 ## Virtual Appointments Graph API
 
-Developers can programmatically create and manage Virtual Appointments using Microsoft Graph. With the Virtual Appointments Graph API, they can embed virtual appointments join links in any app, with features that include a waiting room and browser join experience for external attendees.
+Developers can programmatically create and manage Virtual Appointments using Microsoft Graph. With the Virtual Appointments Graph API, virtual appointment join links can be embedded in any app, with features that include a waiting room and browser join experience for external attendees.
 
 To learn more, see [virtualAppointment resource type](/graph/api/resources/virtualappointment?view=graph-rest-beta).
 
