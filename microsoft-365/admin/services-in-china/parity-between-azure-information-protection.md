@@ -48,7 +48,7 @@ The following list includes the existing gaps between AIP for Office 365 operate
 
 - The [Mobile Viewer](/azure/information-protection/rms-client/mobile-app-faq) is not supported by Azure China 21Vianet.
 
-- The scanner area of the compliance portal is unavailable to customers in China. Use [PowerShell commands](#step-6-install-the-scanner-and-manage-content-scan-jobs) instead of performing actions in the portal, such as managing and running your content scan jobs.
+- The scanner area of the compliance portal is unavailable to customers in China. Use [PowerShell commands](#step-6-install-the-information-protection-scanner-and-manage-content-scan-jobs) instead of performing actions in the portal, such as managing and running your content scan jobs.
 
 - AIP endpoints in Office 365 operated by 21Vianet are different than the endpoints required for other cloud services. Network connectivity from clients to the following endpoints is required:
     - Download label and label policies: `*.protection.partner.outlook.cn`
@@ -272,9 +272,9 @@ For more information, see [Learn about the information protection scanner](../..
 
 Continue with the following steps as needed:
 
-- [Run a discovery cycle and view reports for the scanner](/azure/information-protection/deploy-aip-scanner-manage#run-a-discovery-cycle-and-view-reports-for-the-scanner)
-- [Use PowerShell to configure the scanner to apply classification and protection](/azure/information-protection/deploy-aip-scanner-configure-install?tabs=azure-portal-only#use-powershell-to-configure-the-scanner-to-apply-classification-and-protection)
-- [Use PowerShell to configure a DLP policy with the scanner](/azure/information-protection/deploy-aip-scanner-configure-install?tabs=azure-portal-only#use-powershell-to-configure-a-dlp-policy-with-the-scanner)
+- [Run a discovery cycle and view reports for the scanner](../../compliance/deploy-scanner-manage.md#run-a-discovery-cycle-and-view-reports-for-the-scanner)
+- [Use PowerShell to configure the scanner to apply classification and protection](../../compliance/deploy-scanner-configure-install.md?tabs=azure-portal-only#use-powershell-to-configure-the-scanner-to-apply-classification-and-protection)
+- [Use PowerShell to configure a DLP policy with the scanner](../../compliance/deploy-scanner-configure-install.md?tabs=azure-portal-only#use-powershell-to-configure-a-dlp-policy-with-the-scanner)
 
 The following table lists PowerShell cmdlets that are relevant for installing the scanner and managing your content scan jobs:
 
