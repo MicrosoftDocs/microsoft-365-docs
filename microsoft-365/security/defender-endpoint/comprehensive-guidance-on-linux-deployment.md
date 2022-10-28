@@ -39,13 +39,13 @@ The following list captures the actions you'll take to deploy Microsoft Defender
 
 - Work with your Firewall, Proxy, and Networking admin to add the Microsoft Defender for Endpoint URLs to the allowed list, and prevent it from being SSL inspected.
 - Run a centralized scan to capture current resource utilization across the environment, such as, check available disk space in all mounted partitions, capture memory usage, capture a process listing that includes availability, and used CPU percentages.
-- Exclude Microsoft Defender for Endpoint on Linux from your third-party antimalware product.
+- Exclude Microsoft Defender for Endpoint on Linux from your third-party anti-malware product.
 - Download the onboarding script from the Microsoft Defender for Endpoint portal.
 - Set up the Microsoft Defender for Endpoint on Linux configuration settings.
-- Add your third-party antimalware processes and paths to the exclusion list from the prior step (Setup the Microsoft Defender for Endpoint on Linux antimalware settings).
-- Verify that you've added your current exclusions from your third-party antimalware  to the prior step (Set up the Microsoft Defender for Endpoint on Linux configuration settings).
+- Add your third-party anti-malware processes and paths to the exclusion list from the prior step (Setup the Microsoft Defender for Endpoint on Linux anti-malware settings).
+- Verify that you've added your current exclusions from your third-party anti-malware  to the prior step (Set up the Microsoft Defender for Endpoint on Linux configuration settings).
 - Deliver the onboarding file.
-- Deliver the antimalware setting.
+- Deliver the anti-malware setting.
 - Deliver the scheduled scans cronjob setting.
 - Deliver the Microsoft Defender for Endpoint on  Linux agent cronjob settings.
 - Install the Microsoft Defender for Endpoint on Linux package.
@@ -89,26 +89,26 @@ For a detailed list of supported Linux distros, see [System requirements](micros
 
 ### Additional guidance
 
-- Depending on the non-Microsoft antimalware running on your Linux servers, you may still be able to run Microsoft Defender for Endpoint on Linux. If the antimalware runs FANotify, it needs to be uninstalled.
+- Depending on the non-Microsoft anti-malware running on your Linux servers, you may still be able to run Microsoft Defender for Endpoint on Linux. If the anti-malware runs FANotify, it needs to be uninstalled.
 	
-- To check if there is a non-Microsoft antimalware that is running FANotify, you can run `mdatp health`, then check the result:
+- To check if there is a non-Microsoft anti-malware that is running FANotify, you can run `mdatp health`, then check the result:
 		
     :::image type="content" source="images/mdatp-health-result.png" alt-text="Image of mdatp health result" :::
 		
-	Under "conflicting_applications", if you see a result other than "unavailable", then you'll need to uninstall the non-Microsoft antimalware. 
+	Under "conflicting_applications", if you see a result other than "unavailable", then you'll need to uninstall the non-Microsoft anti-malware. 
 
-- If you don't uninstall the non-Microsoft antimalware product, you may encounter unexpected behaviors such as performance issues, stability issues such as systems hanging, or kernel panics.
+- If you don't uninstall the non-Microsoft anti-malware product, you may encounter unexpected behaviors such as performance issues, stability issues such as systems hanging, or kernel panics.
 	
-- To identify Microsoft Defender for Endpoint on Linux processes and paths that should be excluded in the non-Microsoft antimalware product, run `systemctl status -l mdatp`.
+- To identify Microsoft Defender for Endpoint on Linux processes and paths that should be excluded in the non-Microsoft anti-malware product, run `systemctl status -l mdatp`.
 
-    Exclude the following processes from the non-Microsoft antimalware product:
+    Exclude the following processes from the non-Microsoft anti-malware product:
 
     `wdavdaemon`<br>
     `crashpad_handler`<br>
     `mdatp_audis_plugin`<br>
     `telemetryd_v2`<br>
 
-    Exclude the following paths from the non-Microsoft antimalware product:
+    Exclude the following paths from the non-Microsoft anti-malware product:
 
     `/opt/microsoft/mdatp/`<br>
     `/var/opt/microsoft/mdatp/`<br>
@@ -167,17 +167,17 @@ To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses ce
 
 For more information, see [Troubleshooting cloud connectivity issues for Microsoft Defender for Endpoint on Linux](linux-support-connectivity.md).
 
-## Configure Microsoft Defender for Endpoint on Linux antimalware
+## Configure Microsoft Defender for Endpoint on Linux antimal-ware
 
 **Before you begin**
 
-- If you're already using a third-party antimalware for your Linux servers:
+- If you're already using a third-party antimal-ware for your Linux servers:
    - Move the existing exclusions to Microsoft Defender for Endpoint for Linux.
 
-- If you're not using a third-party antimalware for your Linux servers:
+- If you're not using a third-party antimal ware for your Linux servers:
    - Get a list of all your Linux applications and check the vendors website for exclusions.  
    
-- If you're running a non-Microsoft antimalware product, then add the processes/paths to the Microsoft Defender for Endpoint's AV exclusion list. For more information, see [Binary name and installation path changes with Endpoint Security for Linux 10.6.6](https://kcm.trellix.com/corporate/index?page=content&id=KB92028). For more information, check the non-Microsoft antimalware documentation or contact their support. 
+- If you're running a non-Microsoft antimal-ware product, then add the processes/paths to the Microsoft Defender for Endpoint's AV exclusion list. For more information, see [Binary name and installation path changes with Endpoint Security for Linux 10.6.6](https://kcm.trellix.com/corporate/index?page=content&id=KB92028). For more information, check the non-Microsoft antimal-ware documentation or contact their support. 
  
 - If you are testing on one machine, you can use a command line to set up the exclusions:
   - [Configure from the command line](linux-resources.md#configure-from-the-command-line).
@@ -365,7 +365,7 @@ For example, in the previous step, `wdavdaemon unprivileged` was identified as t
 
 ### Check the wdavdaemon unprivileged process
 
-The following diagram shows the workflow and steps required in order to add antimalware exclusions:
+The following diagram shows the workflow and steps required in order to add antimal-ware exclusions:
 
 :::image type="content" source="images/unprivileged-plugins.png" alt-text="This is unpriviledged sensors":::
 
@@ -470,7 +470,7 @@ To deploy Microsoft Defender for Endpoint on Linux using Ansible, see [Deploy Mi
           enablerepo: packages-microsoft-[channel]
     ```
 
-Additionally, for deploying the “settings preferences” via Ansible, go through adding the steps from the above item 5 “How to configure Microsoft Defender for Endpoint for Linux antimalware (AV)”, by copying your `mdatp_managed.json` to `/etc/opt/microsoft/mdatp/managed/`. 
+Additionally, for deploying the “settings preferences” via Ansible, go through adding the steps from the above item 5 “How to configure Microsoft Defender for Endpoint for Linux anti-malware (AV)”, by copying your `mdatp_managed.json` to `/etc/opt/microsoft/mdatp/managed/`. 
 
 ## Verify communication with Microsoft Defender for Endpoint backend
 
@@ -490,7 +490,7 @@ To verify Microsoft Defender for Endpoint on Linux platform updates, run the fol
 
 `sudo yum update mdatp`
 
-For more information, see [Device health and Microsoft Defender antimalware health report](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-device-health-reporting-for-microsoft-defender-for-endpoint/bc-p/3616205#M1963).
+For more information, see [Device health and Microsoft Defender anti-malware health report](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-device-health-reporting-for-microsoft-defender-for-endpoint/bc-p/3616205#M1963).
 
 For more information, see [Deploy updates for Microsoft Defender for Endpoint on Linux](linux-updates.md#rhel-and-variants-centos-and-oracle-linux).
 
@@ -503,13 +503,13 @@ To verify Microsoft Defender for Endpoint on  Linux signatures/definition update
 
 `mdatp definitions update`
 
-For more information, see [New device health reporting for Microsoft Defender antimalware](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-device-health-reporting-for-microsoft-defender-for-endpoint/bc-p/3616205).
+For more information, see [New device health reporting for Microsoft Defender anti-malware](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-device-health-reporting-for-microsoft-defender-for-endpoint/bc-p/3616205).
 
 ## Test detections
 
 To ensure that the device is correctly onboarded and reported to the service, run the following detection test:
 
-- Antimalware detections:
+- Anti-malware detections:
   [Curl -o ~/Downloads/eicar.com.txt](https://www.eicar.org/download/eicar.com.txt ).
   If the detection doesn’t show up, it could be that you have set “allowedThreats” to allow in preferences via Ansible or Puppet.
 
@@ -531,7 +531,7 @@ To ensure that the device is correctly onboarded and reported to the service, ru
 
 ## Advanced Microsoft Defender for Endpoint capabilities
 
-- [Enhanced antimalware engine capabilities on Linux and macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003)
+- [Enhanced anti-malware engine capabilities on Linux and macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-anti-malware-engine-capabilities-for-linux-and-macos/ba-p/3292003)
 
 - Boost protection of your Linux estate with behavior monitoring capabilities:
     - [Boost protection of Linux estate with behavior monitoring](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/boost-protection-of-your-linux-estate-with-behavior-monitoring/ba-p/2909320)
