@@ -18,6 +18,11 @@ ms.collection:
 
 # Advanced Data Residency Commitments
 
+>[!NOTE]
+>If you have purchased the Multi-Geo subscription for your tenancy, then your customer data will be stored at rest in more than one Geography based on your configuration.  
+
+The Microsoft 365 Advanced Data Residency add-on ("ADR") provides eligible customers data residency commitments for specific customer data at rest.  The Workloads and their respective commitments are specified below. 
+
 ## Exchange Online 
 
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
@@ -34,41 +39,33 @@ The following customer data will be stored at rest in the _Local Region Geograph
 
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
-- Microsoft Teams customer data consists of chat messages (including private messages, channel messages, meeting messages and images used in chats), and, for customers using Microsoft Stream (on SharePoint), meeting recordings present in the Tenant.
+- Microsoft Teams chat messages (including private messages, channel messages, meeting messages and images used in chats), and, for customers using Microsoft Stream (on SharePoint), meeting recordings.
 
 ## Microsoft Defender for Office P1 
 
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
-- MDO P1 does not store any customer data within its service. In addition, all processing of data that is required to analyze threats and inspect suspicious emails, documents, messages, links, etc. is done in a sandbox environment and performed within the _Local Region Geography_ or _Expanded Local Region Geography_.
-- Exchange Online Protection (EOP) stores at rest the following customer data in the _Local Region Geography_ or _Expanded Local Region Geography_:
-  - EOP service configuration data and policies
-  - Quarantined email and attachments
-  - Junk email
-  - Grading analysis
-  - Block lists (url, tenant, user)
-  - Spam domains
-  - Reports
-  - Alerts
+- MDO P1 does not store any customer data within its service. 
+- Exchange Online Protection (EOP). The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_: Service configuration data and policies, quarantined email and attachments, junk email, grading analysis, block lists (url, tenant, user), spam domains, reports, and alerts
 
 ## Office for the Web 
 
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_: 
 
-- No customer data is stored at rest.
+- Office for the Web stores files on a storage host which has its applicable promises to _Local Region Geography_/_Expanded Local Geography_.
 
 ## Viva Connections 
 
 The following customer data will be stored in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
-- The Dashboard and Feed can have content sourced from SharePoint Online, Exchange Online and Microsoft Teams. All data sourced from these services that are covered by their data residency commitments will be stored in the relevant _Geography_. Please refer to [Exchange Online](m365-dr-workload-exo.md), [SharePoint Online](m365-dr-workload-spo.md) and [Microsoft Teams](m365-dr-workload-teams.md) workload data residency pages for more details.
+- Viva Connections Dashboard and Feed can have content sourced from SharePoint Online, Exchange Online and Microsoft Teams. All customer data sourced from these services covered by data residency commitments will be stored in the _Local Region Geography_ or _Expanded Local Region Geography_. Please refer to [Exchange Online](m365-dr-workload-exo.md), [SharePoint Online](m365-dr-workload-spo.md) and [Microsoft Teams](m365-dr-workload-teams.md) workload data residency pages for more details.
 
 ## Viva Topics 
 
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
 - All the topics and customer data snippets discovered are stored within the relevant _Geographies_ in Exchange Online Substrate (site or arbitration mailboxes, and Substrate). All topic customer data is partitioned based on which _Local Region Geography_ or _Expanded Local Region Geography_ the data came from within your tenant.
-- ML models are trained on public web data, and as such do not contain any customer data from your tenant. In the future it's possible we will use customer data to improve accuracy of the ML models, in which case the data handling of ML models will follow the same policies as any other customer content (including data residency, retention, access control, sensitivity)
+- Machine Learning ("ML") models are trained on public web data, and as such do not contain any customer data from your tenant. In the future it's possible we will use customer data to improve accuracy of the ML models, in which case the data handling of ML models will follow the same policies as any other customer content (including data residency, retention, access control, sensitivity)
 - Topic highlighting is computed dynamically when the SharePoint Online page is rendered by running a language model against the content of the page and linking it with the knowledge base of Topics. The Topics data is sourced from the Substrate in the _Local Region Geography_ or _Expanded Local Region Geography_.
 - The administration configuration data is stored within the _Local Region Geography_ or _Expanded Local Region Geography_.
 
@@ -76,23 +73,19 @@ The following customer data will be stored at rest in the _Local Region Geograph
 
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
-- Service configuration data
-- Audited Activities
-- Audit Records
-- Audit log query permissions
+- Service configuration data, audited Activities, audit Records, and audit log query permissions.
 
 ## Purview Audit (Premium) 
 
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
-- In addition to the data stored as part of Purview Audit (Standard), configuration and Customer Data related to high-value crucial events are stored in the relevant _Local Region Geography_ or _Expanded Local Region Geography_.
+- In addition to the customer data stored as part of Purview Audit (Standard), configuration and Customer Data related to high-value crucial events.
 
 ## Data lifecycle management - Data Retention 
 
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
-- Retention policy settings
-- Retention label definitions
+- Retention policy settings, retention label definitions
 - Customer Data stored in original locations for the following services:
   - Exchange email
   - SharePoint site
@@ -113,11 +106,7 @@ The following customer data will be stored at rest in the _Local Region Geograph
 
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
-- Record retention label definitions.
-- File plan definitions
-- Event-based retention policy settings.
-- Disposition review records
-- Records of deletion
+- Record retention label definitions, file plan definitions, event-based retention policy settings, disposition review records and records of deletion
 
 ## Information Protection - Sensitivity labels 
 
@@ -134,24 +123,16 @@ The following customer data will be stored at rest in the _Local Region Geograph
 
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
-- DLP admin configuration
-- DLP policies in Compliance Center
-- DLP monitored activities
-- Violation history, Activity Explorer and Microsoft 365 unified audit logs
-- Quarantine storage
-- DLP Alerts and DLP Alert management dashboard
+- DLP admin configuration, DLP policies in Compliance Center, DLP monitored activities, violation history, Activity Explorer and Microsoft 365 unified audit logs, quarantine storage,  DLP Alerts and DLP Alert management dashboard.
 
 ## Information Protection - Office Message Encryption 
 
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
-- Encryption policies
-- Admin settings
-- Encrypted messages
+- Encryption policies, admin settings and encrypted messages.
 
 ## Insider Risk Management - Information Barriers 
 
 The following customer data will be stored at rest in the _Local Region Geography_ or _Expanded Local Region Geography_:
 
-- Policy settings and risk indicators
-- Admin settings
+- Policy settings, risk indicators and admin settings.
