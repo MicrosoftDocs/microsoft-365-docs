@@ -228,7 +228,7 @@ While the unified labeling client cannot apply encryption without an internet co
 
 To support a disconnected computer, use one of the following methods:
 
-- [Use the Azure portal](#use-the-azure-portal-with-a-disconnected-computer) (recommended when possible)
+- [Use the compliance portal](#use-the-microsoft-purview-compliance-portal-with-a-disconnected-computer) (recommended when possible)
 
 - [Use PowerShell](#use-powershell-with-a-disconnected-computer)
 
