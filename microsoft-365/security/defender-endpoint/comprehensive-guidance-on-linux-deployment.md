@@ -158,7 +158,7 @@ To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses ce
 
 #### Troubleshoot cloud connectivity issues
 
-For more information, see [Troubleshooting cloud connectivity issues for Microsoft Defender for Endpoint on RHEL Linux](linux-support-connectivity.md).
+For more information, see [Troubleshooting cloud connectivity issues for Microsoft Defender for Endpoint on Linux](linux-support-connectivity.md).
 
 ## Configure Microsoft Defender for Endpoint on Linux antivirus
 
@@ -474,10 +474,10 @@ To verify Microsoft Defender for Endpoint on Linux platform updates, run the fol
 
 For more information, see [Device health and Microsoft Defender Antivirus health report](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-device-health-reporting-for-microsoft-defender-for-endpoint/bc-p/3616205#M1963).
 
-For more information, see [Deploy updates for Microsoft Defender for Endpoint on RHEL Linux](linux-updates.md#rhel-and-variants-centos-and-oracle-linux).
+For more information, see [Deploy updates for Microsoft Defender for Endpoint on Linux](linux-updates.md#rhel-and-variants-centos-and-oracle-linux).
 
 >[!TIP]
-> Automate the agent update on a monthly (Recommended) schedule by using a Cron job.For more information, see [schedule an update of the Microsoft Defender for Endpoint on RHEL Linux](linux-update-mde-linux.md).
+> Automate the agent update on a monthly (Recommended) schedule by using a Cron job.For more information, see [schedule an update of the Microsoft Defender for Endpoint on Linux](linux-update-mde-linux.md).
 
 ## Verify that you're able to get security intelligence updates
 
@@ -513,7 +513,7 @@ To ensure that the device is correctly onboarded and reported to the service, ru
 
 ## Advanced Microsoft Defender for Endpoint capabilities
 
-- [Enhanced antimalware engine capabilities on RHEL Linux and macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003)
+- [Enhanced antimalware engine capabilities on Linux and macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003)
 
 - Following are the boost protection of your Linux estate with behavior monitoring capabilities:
     - [Boost protection of Linux estate with behavior monitoring](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/boost-protection-of-your-linux-estate-with-behavior-monitoring/ba-p/2909320)
@@ -532,8 +532,8 @@ To ensure that the device is correctly onboarded and reported to the service, ru
    - [Part 2](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/how-to-use-tagging-effectively-part-2/ba-p/1962008)
    - [Part 3](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/how-to-use-tagging-effectively-part-3-scripting-tags/ba-p/1964073)
    
-- [Privacy for Microsoft Defender for Endpoint on RHEL Linux](linux-privacy.md)
+- [Privacy for Microsoft Defender for Endpoint on Linux](linux-privacy.md)
 
-- [What's new in Microsoft Defender for Endpoint on RHEL Linux](linux-whatsnew.md)
+- [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
 
 
