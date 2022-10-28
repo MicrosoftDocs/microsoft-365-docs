@@ -19,12 +19,12 @@ ms.collection:
 # Data Residency Legacy Move Program
 
 > [!NOTE]
-> With the advent of Advanced Data Residency, **the Move Program is no longer being offered with any new in-country data center launches** (last country is Qatar).  However, the following information is still valid for the remaining countries involved in the Move Program. For more details on Advanced Data Residency, see <a href="advanced-data-residency.md" target="_blank">the ADR page</a>.
+> *Coinciding with the launch of the Microsoft 365 Advanced Data Residency add-on, the Move Program will no longer be offered during the launch of new local datacenter regions.  Our most recent local datacenter region launch in Qatar (August 2022) is the final region to receive Move Program benefits. The following information is still valid for regions that were part of Move Program and all customers currently opted-in for migration will be processed.  For more details, see [the ADR page](advanced-data-residency.md).*
 
 ## How to Request your Data Move - FINAL OPPORTUNITY
 
 > [!NOTE]
-> Due to the release of Advanced Data Residency, *we are opening the opt-in period for all previously released in-country data centers* (minus Qatar) to allow all remaining region-based tenants to opt in for a final free move to their respective signup countries.  This move effort will have a migration commitment timeline of 24 months, starting from the request deadline date. See the table below for a list of eligible countries and related dates.
+> *With the launch of the Microsoft 365 Advanced Data Residency add-on and associated changes to the Move Program, we are providing a final opportunity for eligible commercial and public sector customers to receive a complimentary tenant migration into their local datacenter region.  For a limited time, customers may only opt-in for complimentary migration from macro region into a local datacenter region that matches initial signup country.  Tenant migrations may take up to 24 months to complete, commencing at request deadline date.  See table below for a list of eligible countries and associated dates.*
 
 Eligible customers will see a page in the Microsoft 365 admin center which will allow them to request to have their core customer data moved to their new datacenter region.
 
