@@ -745,7 +745,7 @@ To unassign mailbox DEPs, use the Set-Mailbox PowerShell cmdlet.
    Set-Mailbox -Identity <mailbox> -DataEncryptionPolicy $null
    ```
 
-Running this cmdlet unassigns the currently assigned DEP and reencrypts the mailbox using the DEP associated with default Microsoft-managed keys. You can't unassign the DEP used by Microsoft managed keys. If you don't want to use Microsoft-managed keys, you can assign another Customer Key DEP to the mailbox.
+Running this cmdlet unassigns the currently assigned DEP and re-encrypts the mailbox using the DEP associated with default Microsoft-managed keys. You can't unassign the DEP used by Microsoft-managed keys. If you don't want to use Microsoft-managed keys, you can assign another Customer Key DEP to the mailbox.
 
 > [!IMPORTANT]
 > Roll back from Customer Key to Microsoft managed keys isn't supported for SharePoint Online, OneDrive for Business, and Teams files.
