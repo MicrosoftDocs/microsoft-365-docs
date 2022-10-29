@@ -192,7 +192,7 @@
               href: cross-tenant-onedrive-migration-step5.md
             - name: Step 6 Start a cross-tenant OneDrive migration
               href: cross-tenant-onedrive-migration-step6.md
-              name: Step 7 Post migration steps
+            - name: Step 7 Post migration steps
               href: cross-tenant-onedrive-migration-step7.md
         - name: Tenant-to-tenant migrations
           href: microsoft-365-tenant-to-tenant-migrations.md
