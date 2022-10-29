@@ -124,10 +124,6 @@ Get-SPOUserAndContentMoveState -PartnerCrossTenantHostURL https://m365x946316-my
 |Failed	|The migration failed to complete.|
 
 
-Example Migration and Status Check
-The below screenshot shows the successful start of the migration for our example user DiegoS.
- 
-The below screenshot shows the Status check and that the migration for DiegoS has been successful.
  
 ## Post-migration status checks
 
@@ -136,3 +132,6 @@ Once the migration has completed successfully you can check the status of the us
 
 **Source tenant:**
 Since the user has successfully migrated to the target tenant, they no longer have an active OneDrive account on the source.
+
+
+## Step 7: [Post migration steps](cross-tenant-onedrive-migration-step6.md)
