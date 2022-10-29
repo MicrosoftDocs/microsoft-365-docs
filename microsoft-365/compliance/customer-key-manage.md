@@ -1191,7 +1191,7 @@ Purging of SharePoint, OneDrive for work or school, and Teams files DEPs is not 
 
 - [Service Encryption](office-365-service-encryption.md))
 
-Purging of multi-workload DEP is not supported for Customer Key. The multi-workload DEP is used to encrypt data across multiple workloads across all tenant users. Purging such DEP would result into data from across multiple workloads become inaccessible. If you decide to exit Microsoft 365 services altogether then you could pursue the path of tenant deletion per the documented process. See [how to delete a tenant in Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
+Purging of a multi-workload DEP is not supported for Customer Key. The multi-workload DEP is used to encrypt data across multiple workloads across all tenant users. Purging such DEP would result in data from across multiple workloads becoming inaccessible. If you decide to exit Microsoft 365 services altogether then you could pursue the path of tenant deletion per the documented process. See [how to delete a tenant in Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
 
 ### Revoke your Customer Keys and the availability key for Exchange Online and Skype for Business
 
