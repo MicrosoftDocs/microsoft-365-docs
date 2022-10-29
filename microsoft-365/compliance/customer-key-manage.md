@@ -772,7 +772,7 @@ search.appverid:
 ms.collection:
 - purview-compliance
 - tier1
-description: "After you set up Customer Key, learn how to manage it by restoring AKV keys, and managing permissions and creating and assigning data encryption policies."
+description: "After you set up Customer Key, learn how to manage it by restoring AKV keys, managing permissions, and creating and assigning data encryption policies."
 ---
 
 # Manage Customer Key
