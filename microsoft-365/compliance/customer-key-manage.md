@@ -777,7 +777,7 @@ description: "After you set up Customer Key, learn how to manage it by restoring
 
 # Manage Customer Key
 
-After you've set up Customer Key, you'll need to create and assign one or more data encryption policies (DEP). Once you've assigned your DEPs, you can manage your keys as described in this article. Learn more about Customer Key in the related topics.
+After you've set up Customer Key, you'll need to create and assign one or more data encryption policies (DEPs). Once you've assigned your DEPs, you can manage your keys as described in this article. Learn more about Customer Key in the related topics.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
