@@ -803,7 +803,7 @@ To create a multi-workload DEP, follow these steps:
 
    - *KeyVaultURI2* is the URI for the second key in the policy. For example, `https://contosoCentralUSvault1.vault.azure.net/keys/Key_02`. Separate the two URIs by a comma and a space.
 
-   - *Policy Description* is a user-friendly description of the policy that will help you remember what the policy is for. You can include spaces in the description. For example, "Root policy for multiple workloads for all users in the tenant.".
+   - *Policy Description* is a user-friendly description of the policy that will help you remember what the policy is for. You can include spaces in the description. For example, "Root policy for multiple workloads for all users in the tenant".
 
 Example:
 
