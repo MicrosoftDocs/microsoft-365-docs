@@ -1153,7 +1153,7 @@ Since you can only run the PowerShell cmdlet against one DEP at a time, consider
 
 To initiate the data purge path, complete these steps:
 
-1. Remove wrap and unwrap permissions for "O365 Exchange Online" from Azure Key Vaults.
+1. Remove wrap and unwrap permissions for "Office 365 Exchange Online" from Azure Key Vaults.
 
 2. Using a work or school account that has global administrator privileges in your organization, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
