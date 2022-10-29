@@ -146,6 +146,15 @@ Provide the full path and filename of the Identity Mapping CSV file.
 
 Uploading any new identity map will overwrite the current one. Make sure that any revision or addition includes ALL users and groups for the full migration. Your identity map should always include everyone you're wanting to migrate.
 
+To look at the mapping entries in the identity mapping file for a particular user, use the command *Get-SPOTenantIdentityMappingUser* with Field as *SourceUserKey* and Value as the UPN of the user you are moving. 
+
+**Example:**
+
+```powershell
+
+get-spoTenantIdentityMappingUser -Field SourceUserKey -Value usera@Contoso.onmicrosoft.com 
+```
+
 ## Verify cross-tenant compatibility status
 
 Before starting any cross-tenant migrations, make sure that both SharePoint database schemas are up to date and compatible between source and target.
