@@ -96,6 +96,12 @@ description: "Learn how to manage Office Scripts settings for users in your orga
 
     It can take up to 48 hours for changes to Office Scripts settings to take effect.
 
+## Manage visibility of the Automate tab by using Group Policy
+
+Group Policy has a setting to show or hide the Automate tab or all Excel on Desktop users in your organization. You'll find Office Scripts settings under Computer Configuration\Administrative Templates\Microsoft Excel 2016\Miscellaneous in the Group Policy Management Console.
+
+To learn more, see [Use Group Policy to configure update settings for Microsoft 365 Apps](/deployoffice/configure-update-settings-microsoft-365-apps#use-group-policy-to-configure-update-settings-for-microsoft-365-apps).
+
 ## Next steps
 
 Because Office Scripts works with Power Automate, we recommend that you review your existing Microsoft Purview Data Loss Prevention (DLP) policies to ensure your organization's data remains protected while users use Office Scripts. For more information, see [Data loss prevention (DLP) policies](/power-automate/prevent-data-loss).
