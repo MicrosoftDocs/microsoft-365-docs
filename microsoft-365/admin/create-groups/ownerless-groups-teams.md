@@ -67,3 +67,4 @@ Up to two group members per group can accept the invitation to become an owner. 
 ## Related topics
 
 [Ownerless group FAQ](/exchange/troubleshoot/groups-and-distribution-lists/ownerless-group-policy)
+[Search the audit log in the compliance porta](/compliance/search-the-audit-log-in-security-and-compliance)
