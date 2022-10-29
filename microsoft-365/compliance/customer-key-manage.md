@@ -729,7 +729,7 @@ If you need to revert to Microsoft-managed keys, you can. When you offboard, you
 1. Tenant FQDN
 2. Tenant contact for offboarding request
 3. Reason for offboarding
-4. Include a note in the service ticket that the request should be directed to the M365 Customer Key team and include the incident #
+4. Include a note in the service ticket that the request should be directed to the Microsoft 365 Customer Key team and include the incident number
 
 You must still retain your Customer Key AKVs and encryption keys with proper permissions for data to be rewrapped using Microsoft managed keys. Please reach out to m365-ck@service.microsoft.com if you have any questions.
 
