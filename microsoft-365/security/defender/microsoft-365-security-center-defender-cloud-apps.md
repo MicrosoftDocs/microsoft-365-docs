@@ -94,7 +94,6 @@ The images and the tables below list the changes in navigation between Microsoft
 | Defender for Cloud Apps | Microsoft 365 Defender |
 |---------|---------|
 | Settings | Settings -> Cloud apps |
-| System  settings | Settings -> Cloud apps |
 | Settings/Governance log | Cloud apps -> Governance log |
 | Security  extensions | Settings -> Cloud apps |
 | Playbooks | Settings -> Cloud apps |
