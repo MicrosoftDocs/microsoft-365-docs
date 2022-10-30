@@ -95,19 +95,18 @@ The images and the tables below list the changes in navigation between Microsoft
 |---------|---------|
 | Settings | Settings -> Cloud apps |
 | Settings/Governance log | Cloud apps -> Governance log |
-| Security  extensions | Settings -> Cloud apps |
-| Playbooks | Settings -> Cloud apps |
-| SIEM  agents | Settings -> Cloud apps |
-| External  DLP | Settings -> Cloud apps |
-| API  tokens | Settings -> Cloud apps |
-| Manage  admin access -> Admin roles | Permissions-> Cloud apps-> Roles |
-| Manage  admin access -> Activity privacy permissions | Permissions-> Cloud apps-> Activity privacy permissions |
-| Exported  reports | Reports -> Cloud apps -> Exported reports |
-| Scoped  deployment and privacy | Settings -> Cloud Apps -> Scoped deployment and privacy |
-| Connected Apps/App connectors | Settings -> Cloud Apps -> Connected Apps |
-| Conditional Access App Control | Settings -> Cloud apps -> Conditional Access App Control apps |
-| IP  address ranges              | Settings -> Cloud apps                                      |
-| User  groups                    | Settings -> Cloud apps                                      |
+| Security extensions -> Playbooks | Settings -> Cloud apps |
+| Security extensions -> SIEM  agents | Settings -> Cloud apps |
+| Security extensions -> External  DLP | Settings -> Cloud apps |
+| Security extensions -> API  tokens | Settings -> Cloud apps |
+| Manage admin access -> Admin roles | Permissions-> Cloud apps-> Roles |
+| Manage admin access -> Activity privacy permissions | Permissions-> Cloud apps-> Activity privacy permissions |
+| Exported reports | Reports -> Cloud apps -> Exported reports |
+| Scoped deployment and privacy | Settings -> Cloud Apps -> Scoped deployment and privacy |
+| Connected Apps / App connectors | Settings -> Cloud Apps -> Connected apps -> App Connectors |
+| Conditional Access App Control | Settings -> Cloud apps -> Connected apps -> Conditional Access App Control apps |
+| IP address ranges              | Settings -> Cloud apps                                      |
+| User groups                    | Settings -> Cloud apps                                      |
 
 ## Limitations
 
