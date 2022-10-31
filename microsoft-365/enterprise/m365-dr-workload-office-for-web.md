@@ -20,7 +20,7 @@ ms.collection:
 
 ## Overview
 
-Service documentation: [Office for the web service description - Service Descriptions](https://learn.microsoft.com/office365/servicedescriptions/office-online-service-description/office-online-service-description)
+Service documentation: [Office for the web service description - Service Descriptions](/office365/servicedescriptions/office-online-service-description/office-online-service-description)
 
 Capability summary: Office for the web (formerly Office Web Apps) opens Word, Excel, and PowerPoint documents in your web browser. Office for the web makes it easier to work and share Office files from anywhere with an internet connection, from almost any device. Microsoft 365 customers with Word, Excel, or PowerPoint can view, create, and edit files on the go.
 

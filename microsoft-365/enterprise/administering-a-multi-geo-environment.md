@@ -80,17 +80,17 @@ Videos uploaded to Microsoft Stream in a 1:1 chat are stored in the OneDrive for
 
 ## Taxonomy
 
-We support a unified [taxonomy](https://learn.microsoft.com/sharepoint/managed-metadata) for enterprise-managed metadata across geo locations, with the master being hosted in the central location for your company. We recommend that you manage your global taxonomy from the central location and only add location-specific terms to the satellite location's Taxonomy. Global taxonomy terms will synchronize to the satellite locations.
+We support a unified [taxonomy](/sharepoint/managed-metadata) for enterprise-managed metadata across geo locations, with the master being hosted in the central location for your company. We recommend that you manage your global taxonomy from the central location and only add location-specific terms to the satellite location's Taxonomy. Global taxonomy terms will synchronize to the satellite locations.
 
-See [Manage metadata in a Multi-Geo tenant](https://learn.microsoft.com/sharepoint/dev/solution-guidance/multigeo-managedmetadata) for more details and for developer guidance.
+See [Manage metadata in a Multi-Geo tenant](/sharepoint/dev/solution-guidance/multigeo-managedmetadata) for more details and for developer guidance.
 
 ## User Profile Application
 
-There's a [user profile application](https://learn.microsoft.com/sharepoint/manage-user-profiles) in each geo location. Each user's profile information is hosted in their geo location and available to the administrator for that geo location.
+There's a [user profile application](/sharepoint/manage-user-profiles) in each geo location. Each user's profile information is hosted in their geo location and available to the administrator for that geo location.
 
-If you have custom profile properties, then we recommend that you use the same profile schema across geographies and populate your custom profile properties either in all geo locations or where needed. For guidance regarding how to populate user profile data programmatically, please refer to the [Bulk User Profile Update API](https://learn.microsoft.com/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online).
+If you have custom profile properties, then we recommend that you use the same profile schema across geographies and populate your custom profile properties either in all geo locations or where needed. For guidance regarding how to populate user profile data programmatically, please refer to the [Bulk User Profile Update API](/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online).
 
-See [Work with user profiles in a Multi-Geo tenant](https://learn.microsoft.com/sharepoint/dev/solution-guidance/multigeo-userprofileexperience) for additional details and for developer guidance.
+See [Work with user profiles in a Multi-Geo tenant](/sharepoint/dev/solution-guidance/multigeo-userprofileexperience) for additional details and for developer guidance.
 
 ## Yammer
 

@@ -4,7 +4,7 @@ description: Advanced Data Residency Commitments
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

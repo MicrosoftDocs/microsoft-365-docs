@@ -1,14 +1,15 @@
 ---
 title: User Testing in Multi-Geo
-description: User Testing in Multi-Geo
+description: Learn about user testing in Multi-Geo
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.reviewer: dmwmsft
 ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 10/6/2022
+ms.date: 
 ms.reviewer: 
 ms.custom:
 - it-pro
@@ -27,7 +28,7 @@ In Azure Active Directory (Azure AD) there are two types of user objects: cloud 
 
 If your company's users are synchronized from an on-premises Active Directory system to Azure AD, their PreferredDataLocation must be populated in AD and synchronized to Azure AD.
 
-Follow the process in <a href="https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation" target="_blank">Azure Active Directory Connect sync: Configure preferred data location for Microsoft 365 resources</a> to configure Preferred Data Location sync from your on-premises Active Directory Domain Services (AD DS) to Azure AD.
+Follow the process in <a href="/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation" target="_blank">Azure Active Directory Connect sync: Configure preferred data location for Microsoft 365 resources</a> to configure Preferred Data Location sync from your on-premises Active Directory Domain Services (AD DS) to Azure AD.
 
 We recommend that you include setting the user's Preferred Data Location as a part of your standard user creation workflow.
 
@@ -42,7 +43,7 @@ The procedures in this section require the <a href="https://www.powershellgaller
 
 [Connect and sign in](connect-to-microsoft-365-powershell.md) with a set of global administrator credentials for your _Tenant_.
 
-Use the [Set-MsolUser](https://learn.microsoft.com/powershell/module/msonline/set-msoluser) cmdlet to set the preferred data location for each of your users. For example:
+Use the [Set-MsolUser](/powershell/module/msonline/set-msoluser) cmdlet to set the preferred data location for each of your users. For example:
 
 ```PowerShell
 Set-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR

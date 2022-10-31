@@ -55,7 +55,7 @@ Confirm that you can access OneDrive for Business by logging in from an Office a
 Sharing:
 
 Try sharing OneDrive files. Confirm that the people picker shows you all your SharePoint online users regardless of their _Geography_ location.
-   
+
 In a multi-geo environment, each _Geography_ location has its own search index and Search Center. When a user searches, the query is fanned out to all the indexes, and the returned results are merged.
 
 For example, a user in one _Geography_ location can search for content stored in another _Geography_ location, or for content on a SharePoint site that's restricted to a different Geography location. If the user has access to this content, search will show the result.
@@ -63,6 +63,7 @@ For example, a user in one _Geography_ location can search for content stored in
 ## Which search clients work in a Multi-Geo environment?
 
 These clients can return results from all Geography locations:
+
 - OneDrive
 - Delve
 - The SharePoint home page
@@ -70,9 +71,9 @@ These clients can return results from all Geography locations:
 - Custom search applications that use the SharePoint Search API
 
 ### OneDrive
-   
+
 As soon as the Multi-Geo environment has been set up, users that search in OneDrive get results from all _Geography_ locations.
-   
+
 ### Delve
 
 As soon as the Multi-Geo environment has been set up, users that search in Delve get results from all _Geography_ locations.
@@ -118,7 +119,7 @@ Some search features you might be familiar with, work differently in a multi-geo
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Multi-Geo search doesn't support dynamic bucketing for numerical refiners.</td>
-<td align="left">Use the <a href="https://learn.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" parameter</a> for numerical refiners.</td>
+<td align="left">Use the <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" parameter</a> for numerical refiners.</td>
 </tr>
 <tr class="even">
 <td align="left">Document IDs</td>
@@ -132,7 +133,7 @@ Some search features you might be familiar with, work differently in a multi-geo
 </tr>
 <tr class="even">
 <td align="left">Hybrid search</td>
-<td align="left">In a hybrid SharePoint environment with <a href="https://learn.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">cloud hybrid search</a>,  on-premises content is added to the Microsoft 365 index of the central location.</td>
+<td align="left">In a hybrid SharePoint environment with <a href="/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">cloud hybrid search</a>,  on-premises content is added to the Microsoft 365 index of the central location.</td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -239,7 +240,7 @@ MultiGeoSearchConfiguration - This is an optional list of which geo locations in
 </tbody>
 </table>
 
-If you omit DataLocation or EndPoint, or if a DataLocation is duplicated, the request fails. [You can get information about the endpoint of a tenant's geo locations by using Microsoft Graph](https://learn.microsoft.com/sharepoint/dev/solution-guidance/multigeo-discovery).
+If you omit DataLocation or EndPoint, or if a DataLocation is duplicated, the request fails. [You can get information about the endpoint of a tenant's geo locations by using Microsoft Graph](/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### Response data
 

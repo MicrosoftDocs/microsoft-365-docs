@@ -58,7 +58,7 @@ You can find this information from the "?" option in the Stream UI, if you have 
 Please see the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section.  The data region for Manager/Leader and Advanced is determined by the _Default Geography_ of the _tenant_, not individual users.
 
 ### Viva Insights – Personal
-Customer data is processed and stored in the employee's Exchange Online mailbox. Data residency for Personal insights in Viva Insights is based on the employee's mailbox location. For more information, see [Personal insights in Viva Insights privacy guide for admins](https://learn.microsoft.com/viva/insights/personal/overview/privacy-guide-admins?branch=main#summary-of-key-points).
+Customer data is processed and stored in the employee's Exchange Online mailbox. Data residency for Personal insights in Viva Insights is based on the employee's mailbox location. For more information, see [Personal insights in Viva Insights privacy guide for admins](/viva/insights/personal/overview/privacy-guide-admins?branch=main#summary-of-key-points).
 
 ### Viva Learning
 Please see the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section.
