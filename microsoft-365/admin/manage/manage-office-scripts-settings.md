@@ -98,7 +98,7 @@ description: "Learn how to manage Office Scripts settings for users in your orga
 
 ## Manage visibility of the Automate tab by using Group Policy
 
-Group Policy has a setting to show or hide the Automate tab or all Excel on Desktop users in your organization. You'll find Office Scripts settings under Computer Configuration\Administrative Templates\Microsoft Excel 2016\Miscellaneous in the Group Policy Management Console.
+Group Policy has a setting to show or hide the **Automate** tab or all Excel on Desktop users in your organization. You'll find Office Scripts settings under Computer Configuration\Administrative Templates\Microsoft Excel 2016\Miscellaneous in the Group Policy Management Console.
 
 To learn more, see [Use Group Policy to configure update settings for Microsoft 365 Apps](/deployoffice/configure-update-settings-microsoft-365-apps#use-group-policy-to-configure-update-settings-for-microsoft-365-apps).
 
