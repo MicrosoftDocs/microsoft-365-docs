@@ -60,19 +60,9 @@ The following list captures the actions you'll take to deploy Microsoft Defender
 
 The following section provides information on supported Linux versions and recommendations for resources.
 
-### System requirements
+### System requirements and resource recommendations
 
-The following are the supported Linux servers:
-
-|RHEL* version supported|Commercial|GCC-Moderate|GCC-High (aka MAG)|
-|---|---|---|---|
-|RHEL 6.8-6.10 |Public preview|Public preview|Public preview|
-|RHEL 7.x |Design partner program|General Availability (GA)|General Availability (GA)|
-|RHEL 8.x|Design partner program|General Availability (GA)|General Availability (GA)|
-|RHEL 9.x|Design partner program|General Availability (GA)|General Availability (GA)|
-
-> [!NOTE]
-> Also applies to CentOS, and Oracle Linux.
+For a detailed list of supported Linux distros, see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements).
 
 |Resource|Recommendation|
 |---|---|
@@ -85,7 +75,7 @@ The following are the supported Linux servers:
 |RHEL 7.x and RHEL 8.x |No kernel filter driver, the fanotify kernel option must be enabled|akin to Filter Manager (fltmgr, accessible via `fltmc.exe`) in Windows| 
 |RHEL 6.x|TALPA kernel driver|
 
-For a detailed list of supported Linux distros, see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements).
+
 
 ### Additional guidance
 
@@ -99,7 +89,7 @@ For a detailed list of supported Linux distros, see [System requirements](micros
 
 - If you don't uninstall the non-Microsoft anti-malware product, you may encounter unexpected behaviors such as performance issues, stability issues such as systems hanging, or kernel panics.
 	
-- To identify Microsoft Defender for Endpoint on Linux processes and paths that should be excluded in the non-Microsoft anti-malware product, run `systemctl status -l mdatp`.
+- To identify the Microsoft Defender for Endpoint on Linux processes and paths that should be excluded in the non-Microsoft anti-malware product, run `systemctl status -l mdatp`.
 
     Exclude the following processes from the non-Microsoft anti-malware product:
 
@@ -167,7 +157,7 @@ To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses ce
 
 For more information, see [Troubleshooting cloud connectivity issues for Microsoft Defender for Endpoint on Linux](linux-support-connectivity.md).
 
-## Configure Microsoft Defender for Endpoint on Linux antimal-ware
+## Configure Microsoft Defender for Endpoint on Linux antimal-ware settings
 
 **Before you begin**
 
@@ -495,7 +485,7 @@ For more information, see [Device health and Microsoft Defender anti-malware hea
 For more information, see [Deploy updates for Microsoft Defender for Endpoint on Linux](linux-updates.md#rhel-and-variants-centos-and-oracle-linux).
 
 >[!TIP]
-> Automate the agent update on a monthly (Recommended) schedule by using a Cron job. For more information, see [schedule an update of the Microsoft Defender for Endpoint on RHEL Linux](linux-update-mde-linux.md).
+> Automate the agent update on a monthly (Recommended) schedule by using a Cron job. For more information, see [schedule an update of the Microsoft Defender for Endpoint on Linux](linux-update-mde-linux.md).
 
 ## Verify that you're able to get security intelligence updates
 
@@ -520,11 +510,10 @@ To ensure that the device is correctly onboarded and reported to the service, ru
 
 ## Diagnostic and troubleshooting resources
 
-- [Microsoft Defender for Endpoint on Linux installation issues](linux-support-install.md).
-- [Troubleshooting log installation issues](linux-resources.md#log-installation-issues).
+- [Troubleshoot Microsoft Defender for Endpoint on Linux installation issues](linux-support-install.md).
+- [Identify where to find detailed logs for installation issues](linux-resources.md#log-installation-issues).
 - [Troubleshooting steps for environments without proxy or with transparent proxy](linux-support-connectivity.md#troubleshooting-steps-for-environments-without-proxy-or-with-transparent-proxy).  
 - [Troubleshooting steps for environments with static proxy](linux-support-connectivity.md#troubleshooting-steps-for-environments-with-static-proxy).
-- [Known issues](linux-resources.md).
 - [Collect diagnostic information](linux-resources.md#collect-diagnostic-information).
 - [Uninstall Defender for Endpoint on Linux](linux-resources.md#uninstall-defender-for-endpoint-on-linux).
 
@@ -542,7 +531,7 @@ To ensure that the device is correctly onboarded and reported to the service, ru
 
 - [Unified submissions in Microsoft 365 Defender](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770)
 
-- [Introducing the new alert suppression experience now in Public Preview](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/introducing-the-new-alert-suppression-experience-now-in-public/ba-p/3562719)
+- [Introducing the new alert suppression experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/introducing-the-new-alert-suppression-experience-now-in-public/ba-p/3562719)
 
 - [Announcing live response for macOS and Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-live-response-for-macos-and-linux/ba-p/2864397) 
    
