@@ -89,7 +89,7 @@ The SharePoint Mobile Client is multi-geo aware and will display pertinent conte
 
 ## Sharing
 
-The People Picker experience shows all users regardless of their _Geography_ location. This allows a user to share with another user in their same geo or in any other of your tenant's _Geography_ locations. Content from different _Geography_ locations will show up in the **Shared with Me** view in the user's OneDrive for Business, Word, Excel, PowerPoint, and Office.com and can be accessed with Single Sign-On experience regardless of which _Geography_ location it is hosted in.
+The People Picker experience shows all users regardless of their _Geography_ location. This allows a user to share with another user in their same geo or in any other of your _Tenant's_ _Geography_ locations. Content from different _Geography_ locations will show up in the **Shared with Me** view in the user's OneDrive for Business, Word, Excel, PowerPoint, and Office.com and can be accessed with Single Sign-On experience regardless of which _Geography_ location it is hosted in.
 
 ## Microsoft Teams Experience
 
