@@ -76,7 +76,7 @@ Some features are only supported by built-in labeling for Office apps, and won't
 
 - For automatic and recommended labeling:
     - Access to intelligent classification services that include [trainable classifiers](classifier-learn-about.md), [exact data match (EDM)](sit-learn-about-exact-data-match-based-sits.md), and [named entities](named-entities-learn.md)
-    - Detection of sensitive information as users type
+    - Detection of sensitive information as users enter the text
     - In Word, users can review and remove the identified sensitive content
 - [Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) that is integrated into existing user workflows
 - [PDF support](sensitivity-labels-office-apps.md#pdf-support)
@@ -122,7 +122,7 @@ For your Windows Office apps that support built-in labeling, use the configurati
 |Outlook | `MSIP.OutlookAddin` |
 | | | 
 
-Deploy this setting by using Group Policy, or by using the [Office cloud policy service](/DeployOffice/overview-office-cloud-policy-service).
+Deploy this setting by using Group Policy, or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
 
 > [!IMPORTANT]
 > If you use the Group Policy setting **Use the Sensitivity feature in Office to apply and view sensitivity labels** and set this to **1**, there are some situations where the AIP add-in might still load in Office apps. Blocking the add-in from loading in each app prevents this happening.
@@ -144,7 +144,7 @@ In the [newer versions of Office](#how-to-disable-the-aip-add-in-to-use-built-in
 
 This new setting is still rolling out. If you don't see it yet, wait a few more days and try again.
 
-Deploy this setting by using Group Policy, or by using the [Office cloud policy service](/DeployOffice/overview-office-cloud-policy-service).
+Deploy this setting by using Group Policy, or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
 
 Additional Office settings you might need to configure:
 

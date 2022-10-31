@@ -62,13 +62,13 @@ The type of HR data to import depends on the insider risk management policy and 
 |  Policy template |  HR data type |
 |:------------------------------|:--------------------------------|
 | Data theft by departing users | Employee resignations|
-| General data leaks                             | Not applicable|
+| Data leaks                             | Not applicable|
 | Data leaks by priority users                   | Not applicable |
-| Data leaks by disgruntled users                | Job level changes, Performance reviews, Performance improvement plans|
-| General security policy violations             | Not applicable |
+| Data leaks by risky users                | Job level changes, Performance reviews, Performance improvement plans|
+| Security policy violations             | Not applicable |
 | Security policy violations by departing users  | Employee resignations|
 | Security policy violations by priority users   | Not applicable|
-| Security policy violations by disgruntled users| Job level changes, Performance reviews, Performance improvement plans |
+| Security policy violations by risky users| Job level changes, Performance reviews, Performance improvement plans |
 | Offensive language in email                    | Not applicable |
 | Healthcare policy| Employee profile |
 |||

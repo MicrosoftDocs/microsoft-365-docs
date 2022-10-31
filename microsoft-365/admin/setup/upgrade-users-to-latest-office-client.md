@@ -9,6 +9,7 @@ audience: Admin
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - Adm_O365
 - Adm_TOC

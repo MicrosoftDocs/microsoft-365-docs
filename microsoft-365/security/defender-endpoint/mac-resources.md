@@ -1,7 +1,7 @@
 ---
 title: Resources for Microsoft Defender for Endpoint on Mac
 description: Resources for Microsoft Defender for Endpoint on Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
