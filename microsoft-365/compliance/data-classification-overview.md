@@ -68,18 +68,18 @@ Data classification will scan your sensitive content and labeled content before 
 > [!NOTE]
 > As a best practice, always use the role with least privilege to grant access to Microsoft 365 data classification.
 
-#### Roles and Role Groups in preview
+#### Roles and Role Groups
 
 There are roles and role groups in preview that you can test out to fine tune your access controls.
 
-Here's a list of applicable roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Here's a list of applicable roles that are in preview. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of applicable role groups that are in preview. To learn more about them, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Here's a list of applicable role groups that are in preview. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection
 - Information Protection Admins
@@ -142,7 +142,7 @@ This card provides a quick summary of the most common actions that users are tak
 
 > [!NOTE]
 > If this card displays the message, "No activity detected" it means that there's been no activity on the files or that user and admin auditing isn't turned on. To turn the audit logs on , see:
->- [Search the audit log in security & compliance center](search-the-audit-log-in-security-and-compliance.md)
+>- [Search the audit log in the compliance portal](search-the-audit-log-in-security-and-compliance.md)
 
 ## Sensitivity and retention labeled data by location
 
