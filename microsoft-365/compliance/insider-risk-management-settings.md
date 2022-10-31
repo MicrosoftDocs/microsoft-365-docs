@@ -238,14 +238,14 @@ For each of the following domain settings, you can enter up to 500 domains:
  
 ### Sensitive info types exclusion (preview)
 
-[Sensitive info types](sensitive-information-type-learn-about.md) excluded in settings map to indicators and triggers involving file-related activities for Endpoint, SharePoint, Teams, OneDrive, and Exchange. These excluded types will be treated as non-sensitive info types. Activity involving files that only contain these sensitive info types won't be scored or generate alerts. For those files that contain any sensitive info types identified here, they will be risk scored but not shown as activities involving content related to sensitive info types. For a complete list, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
+[Sensitive info types](sensitive-information-type-learn-about.md) excluded in settings map to indicators and triggers involving file-related activities for Endpoint, SharePoint, Teams, OneDrive, and Exchange. These excluded types will be treated as non-sensitive info types. For those files that contain any sensitive info types identified here, they will be risk scored but not shown as activities involving content related to sensitive info types. For a complete list, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
 
-You can select the sensitive info types to be excluded from the list of all available (out-of-box and custom) types available in the tenant. Insider risk management excludes several sensitive info types by default, such as ABA Routing Number. You can choose up to 500 sensitive info types to be excluded.
+You can select the sensitive info types to be excluded from the list of all available (out-of-box and custom) types available in the tenant. You can choose up to 500 sensitive info types to be excluded.
 
 > [!NOTE]
 > The exclusion list of sensitive info types takes precedence over the [priority content](insider-risk-management-policies.md#prioritize-content-in-policies) list.
 
-To add sensitive info types to exclude, complete the following steps:
+To exclude sensitive info types, complete the following steps:
 
 1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
 2. In the **Sensitive info types** section, select **Add sensitive info types to exclude**.
@@ -256,14 +256,14 @@ To delete a sensitive info type exclusion, select the exclusion and **Delete**.
 
 ### Trainable classifier exclusion (preview)
 
-[Trainable classifiers](classifier-get-started-with.md) excluded in settings map to indicators and triggers involving file-related activities for Endpoint, SharePoint, Teams, OneDrive, and Exchange. Activities involving files that match these classifiers will be ignored by your policies and won't generate alerts. For those files that contain any trainable classifiers identified here, they will be risk scored but not shown as activities involving content related to trainable classifiers. To learn more, see [Trainable classifiers definitions](classifier-tc-definitions.md#trainable-classifiers-definitions) for a complete list of all pre-trained classifiers.
+[Trainable classifiers](classifier-get-started-with.md) excluded in settings map to indicators and triggers involving file-related activities for SharePoint, Teams, OneDrive, and Exchange. For those files that contain any trainable classifiers identified here, they will be risk scored but not shown as activities involving content related to trainable classifiers. To learn more, see [Trainable classifiers definitions](classifier-tc-definitions.md#trainable-classifiers-definitions) for a complete list of all pre-trained classifiers.
 
-You can select the trainable classifiers to be excluded from the list of all available (out-of-box and custom) types available in the tenant. Insider risk management excludes several trainable classifiers by default, including Threat, Profanity, Targeted harassment, Offensive language, and Discrimination. GUIDs of classifiers must be converted text-based names. You can choose up to 500 trainable classifiers to be excluded.
+You can select the trainable classifiers to be excluded from the list of all available (out-of-box and custom) types available in the tenant. Insider risk management excludes some trainable classifiers by default, including Threat, Profanity, Targeted harassment, Offensive language, and Discrimination. You can choose up to 500 trainable classifiers to be excluded.
 
 > [!NOTE]
-> Optionally, you can choose up to five trainable classifiers to be included in the [priority content](insider-risk-management-policies.md#prioritize-content-in-policies) list.
+> Optionally, you can choose trainable classifiers to be included in the [priority content](insider-risk-management-policies.md#prioritize-content-in-policies) list.
 
-To add trainable classifiers to exclude, complete the following steps:
+To exclude trainable classifiers, complete the following steps:
 
 1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
 2. In the **Trainable classifiers** section, select **Add trainable classifiers to exclude**.
