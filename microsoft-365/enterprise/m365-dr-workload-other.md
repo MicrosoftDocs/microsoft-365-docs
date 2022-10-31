@@ -71,7 +71,7 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 
 ## Static data location information for select workloads
 
-| CountyCode | County Name | Viva Insights Advanced | Viva Learning | Planner |
+| Country Code | Country Name | Viva Insights Advanced | Viva Learning | Planner |
 | --- | --- | --- | --- | --- |
 | AF | Afghanistan | APC | APC | APC |
 | AX | Aland Islands | APC | AMER | EUR |
