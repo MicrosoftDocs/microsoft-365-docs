@@ -53,7 +53,7 @@ You will not see this section if your _Tenant_ is not eligible for the Microsoft
 ## Remaining Countries in the Move Program
 
 > [!NOTE]
-> Even though the Move Program is officially ending, we still have some in-flight geographies that we will see through to completion, based on the original 24-month migration commitment. Please refer to the table below for the remaining countries and their migration deadlines. 
+> Even though the Move Program is officially ending, we still have some in-flight geographies that we will see through to completion, based on the original 24-month migration commitment. Please refer to the table below for the remaining countries and their migration deadlines.
 
 |**Customers with signup country in**|**Original Opt-in: migration commitment date**|**Final Opt-in (above): migration commitment date**|
 |:-----|:-----|:-----|

@@ -265,7 +265,7 @@ This example create a new user account for Elizabeth Brunner with the following 
 - First name: Elizabeth
 - Last name: Brunner
 - Display name: Elizabeth Brunner
-- Password: randomly-generated and shown in the results of the command (because we're not using the *Password* parameter)
+- Password: randomly-generated and shown in the results of the command (because we're not using the _Password_ parameter)
 - License: `contoso:ENTERPRISEPREMIUM` (E5)
 - Location: Australia (AUS)
 

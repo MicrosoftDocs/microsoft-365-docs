@@ -33,6 +33,6 @@ For data residency support for _Expanded Local Geographies_ or additional servic
 
 ## Product Terms Data Residency Migration
 
-When Microsoft's data centers were launched in *Local Geographies*, it was possible for any tenant with the appropriate *Default Geography* to opt in to move their data into the *Local Geographies*. This opt in period was open for six months after the Data Center was operational.
+When Microsoft's data centers were launched in _Local Geographies_, it was possible for any tenant with the appropriate _Default Geography_ to opt in to move their data into the _Local Geographies_. This opt in period was open for six months after the Data Center was operational.
 
-Practically, this means that there are a number of tenants that did not opt in to move and remain in the *Regional Geography* data centers.  On our about Nov 1, 2022 with the introduction of the Advanced Data Residency add-on, all tenants that remain in the *Regional Geography* data centers will have another six month period to opt in for data migration to their *Local Geography*.  See the [Legacy Move Program page](m365-dr-legacy-move-program.md#how-to-request-your-data-move---final-opportunity) for more details.
+Practically, this means that there are a number of tenants that did not opt in to move and remain in the _Regional Geography_ data centers.  On our about Nov 1, 2022 with the introduction of the Advanced Data Residency add-on, all tenants that remain in the _Regional Geography_ data centers will have another six month period to opt in for data migration to their _Local Geography_.  See the [Legacy Move Program page](m365-dr-legacy-move-program.md#how-to-request-your-data-move---final-opportunity) for more details.
