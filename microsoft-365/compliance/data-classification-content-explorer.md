@@ -97,7 +97,7 @@ Content explorer shows a current snapshot of the items that have a sensitivity l
 A [DLP policy](dlp-learn-about-dlp.md) can help protect sensitive information, which is defined as a **sensitive information type**. Microsoft 365 includes [definitions for many common sensitive information types](sensitive-information-type-entity-definitions.md) from across many different regions that are ready for you to use. For example, a credit card number, bank account numbers, and national ID numbers.
 
 > [!NOTE]
-> Custom sensitive information types could take up to 48 hours to appear due to crawl.
+> Custom sensitive information types could take up to 48 hours to appear in content explorer due to crawl.
 
 ### Sensitivity labels
 
