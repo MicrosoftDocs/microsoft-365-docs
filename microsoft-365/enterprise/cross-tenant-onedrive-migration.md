@@ -60,20 +60,20 @@ Up to 4,000 OneDrive accounts can be scheduled for migration in advance at a giv
 Microsoft limits the number of characters in a path to not exceed 400 characters.
 This is the full path limit, not just the file name. In planning your migrations, review the length of User/site ULR names in your target tenant. Failure often occurs when files or folder paths from the source, combined with the new User or Site name on the target exceed the 400-character path limit. 
 
-If you do have a migration that fails, then recommend you either rename the User/Site URL or work with the user to rename or move the affected files/folders higher up the directory structure to ensure it remains under the character threshold limit. Once resolved then you should be able to complete the migration.
+If you do have a migration that fails, then recommend you either rename the OneDrive URL or work with the user to rename or move the affected files/folders higher up the directory structure to ensure it remains under the character threshold limit. Once resolved then you should be able to complete the migration.
 
-Any legal ULR will be accepted when creating your Identity Map from Source to Target for your migrations. At this current time usernames/URLs that contain an apostrophe character ( **'** ) in a username/URL will fail with an "invalid character" error when attempting the migration.
+Any legal URL will be accepted when creating your Identity Map from Source to Target for your migrations. At this current time usernames/URLs that contain an apostrophe character ( **'** ) in a username/URL will fail with an "invalid character" error when attempting the migration.
 
 >[!Tip]
->We recommend keeping your target User/Site URL names short to avoid exceeding the character limit.
+>We recommend keeping your target OneDrive URL names short to avoid exceeding the character limit.
 
 ## OneDrive account size limits
-Each OneDrive account can have a maximum of 2 TB of content or 1 million items. We hope to increase those limits so larger OneDrive accounts can be migrated.
+Each OneDrive account can have a maximum of 2 TB of content or 1 million items.
 
 
 ## Permissions
 
-As long as users and groups are included in the identity map and mapped accordingly, they'll continue to have access to the same content after it's migrated to the target tenant.
+All users and groups included in the identity mapping file that you uploaded to the target tenant will maintain permissions in the target tenant related to the migrated OneDrive site.
 
 ## Legal holds
 OneDrive accounts with a Hold policy applied will be blocked from migration.
