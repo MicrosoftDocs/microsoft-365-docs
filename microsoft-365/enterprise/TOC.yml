@@ -185,9 +185,10 @@
         - name: Product Terms Data Residency
           href: m365-dr-product-terms-dr.md
         - name: Advanced Data Residency
-          href: advanced-data-residency.md
           items: 
-            - name: Advanced Data Residency Commitments
+            - name: ADR Overview
+              href: advanced-data-residency.md
+            - name: ADR Commitments
               href: m365-dr-commitments.md
         - name: Multi-geo Data Residency
           items: 
