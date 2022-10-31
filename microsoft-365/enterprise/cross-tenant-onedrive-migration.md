@@ -51,13 +51,14 @@ Up to 4,000 OneDrive accounts can be scheduled for migration in advance at a giv
 - Ensure all Users/groups identified for migration have been pre-created on the target tenant.
 - Assign the appropriate licenses to each user on the target tenant.
 - Don't active the target tenant OneDrive accounts before starting any migration.  If a OneDrive site already exists for the user on the target tenant the migration will fail. You can't overwrite an existing site.
-- All Target OneDrive sites/accounts must be empty; they can't contain any content. Currently the cross-tenant migration process doesn't support Merge functionality on Target accounts. If the account has content, then the cross-tenant migration will fail.
-- Don't allow the user to sign in to their target account at any time until the migration is successfully completed. If the account is activated, the cross-tenant migration will fail.
+
+>[!Note]
+>To learn more about restricting OneDrive site creation, see [Disable OneDrive creation for some users](/sharepoint/manage-user-profiles#disable-onedrive-creation-for-some-users)
 
 
 ## Path size limits
 
-Microsoft limits the number of characters in a path to not exceed 400 characters. This is the full path limit, not just the file name. In planning your migrations, review the length of User/site ULR names in your target tenant. Failure often occurs when files or folder paths from the source, combined with the new User or Site name on the target exceed the 400-character path limit. 
+Microsoft limits the number of characters in a path to not exceed 400 characters. This is the full path limit, not just the file name. In planning your migrations, review the length of User/site ULR names in your target tenant. Failure often occurs when files or folder paths from the source, combined with the OneDrive URL on the target exceed the 400-character path limit. 
 
 A migration will detect if you have exceeded the character limit. Work with the site owner to update the file/folder directory structure to reduce file path lengths.
 
