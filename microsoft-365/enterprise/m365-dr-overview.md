@@ -20,7 +20,7 @@ ms.collection:
 
 ## Definitions
 
-To provide clarity to the descriptions below on data residency functionality and behavior, it is necessary to have clear terms and definitions in order to better understand the capabilities that Microsoft provides in this area.
+To provide clarity to the descriptions below on data residency functionality and behavior, it's necessary to have clear terms and definitions in order to better understand the capabilities that Microsoft provides in this area.
 
 **Table 1: Definitions and Terms**
 
@@ -36,16 +36,16 @@ To provide clarity to the descriptions below on data residency functionality and
 |Satellite Geography  <br/> |If a customer subscribes to the Multi Geo service, then they can cause defined user customer data to be stored in other Geographies outside of the _Tenant_ _Primary Provisioned Geography_  <br/> |
 |AAD  <br/> |Azure Active Directory  <br/> |
 |Tenant  <br/> |A _Tenant_ represents an organization in Azure Active Directory. It's a reserved Azure AD service instance that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure or Microsoft 365. Each Azure AD _Tenant_ is distinct and separate from other Azure AD _Tenant's_  <br/> |
-|Default Geography  <br/> |When an _AAD Tenant_ is created, a country is provided by the customer during the sign-up process.  This country will determine the default Geography for all M365 services.  In some cases, not all services are able to provision in this single _Default Geography_. See _M365 Service provisioning mapping_ below for a description.  <br/> |
-|M365 Service provisioning mapping  <br/> |All M365 Services will use the _Default Geography_ to determine where a given _Tenant's_ specified data will be provisioned and stored.  <br/> |
-|M365 Service provisioning country mapping  <br/> |Please refer to [data maps](https://aka.ms/datamaps) to learn where a given service will provision specified customer data, based on the _Tenant Default Geography._  <br/> |
-|Primary Provisioned Geography  <br/> |A given M365 service will use the _Tenant Default Geography_ combined with the _M365 Service provisioning country mapping_ to determine which _Geography_ to provision customer data into.   <br/> |
-|M365 Admin Center Data Location  <br/> |To see the _Primary Provisioned Geography_ for Exchange Online, SharePoint Online and Microsoft Teams refer to Office 365 Admin Center in Settings; Org settings; Organization profile; Data location card.  <br/> |
-|M365 Multi-Geo Capabilities  <br/> |M365 Multi-Geo Capabilities allows a single _Tenant_ to store customer data-at-rest across multiple geographies rather than be limited to the single _Primary Provisioned Geography_. Please see the Multi-Geo description for more detail.  <br/> |
+|Default Geography  <br/> |When an _AAD Tenant_ is created, a country is provided by the customer during the sign-up process.  This country will determine the default Geography for all Microsoft 365 services.  In some cases, not all services are able to provision in this single _Default Geography_. See _Microsoft 365 Service provisioning mapping_ below for a description.  <br/> |
+|Microsoft 365 Service provisioning mapping  <br/> |All Microsoft 365 Services will use the _Default Geography_ to determine where a given _Tenant's_ specified data will be provisioned and stored.  <br/> |
+|Microsoft 365 Service provisioning country mapping  <br/> |Please refer to [data maps](https://aka.ms/datamaps) to learn where a given service will provision specified customer data, based on the _Tenant Default Geography._  <br/> |
+|Primary Provisioned Geography  <br/> |A given Microsoft 365 service will use the _Tenant Default Geography_ combined with the _Microsoft 365 Service provisioning country mapping_ to determine which _Geography_ to provision customer data into.   <br/> |
+|Microsoft 365 Admin Center Data Location  <br/> |To see the _Primary Provisioned Geography_ for Exchange Online, SharePoint Online and Microsoft Teams refer to Office 365 Admin Center in Settings; Org settings; Organization profile; Data location card.  <br/> |
+|Microsoft 365 Multi-Geo Capabilities  <br/> |Microsoft 365 Multi-Geo Capabilities allows a single _Tenant_ to store customer data-at-rest across multiple geographies rather than be limited to the single _Primary Provisioned Geography_. Please see the Multi-Geo description for more detail.  <br/> |
 |Preferred Data Location (PDL)  <br/> |Used for _Tenants_ with a Multi-Geo subscription.  A property set by the administrator that indicates where the user or shared resource's s data should be stored at-rest.  Please see the Multi-Geo description for more detail.  <br/> |
-|Advanced Data Residency (ADR)  <br/> |A new M365 add-on service that guarantees customer data residency for a defined set of services. See section 3  <br/> |
-|Privacy and Security Product Terms  <br/> |Privacy and Security Terms for M365 services provides some customer data location related commitments.  The document can be found <a href="https://www.microsoft.com/licensing/terms/en-US/product/PrivacyandSecurityTerms/EAEAS" target="_blank">here</a>. The extract of the relevant section (on November 1, 2022) is:<br>**Office 365 Services.** If Customer provisions its _Tenant_ in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, or the United States, Microsoft will store the following Customer Data at rest only within that Geo: (1) Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments), (2) SharePoint Online site content and the files stored within that site,  (3) files uploaded to OneDrive for Business, and (4) Microsoft Teams chat messages (including private messages, channel messages, meeting messages and images used in chats), and for customers using Microsoft Stream (on SharePoint), meeting recordings.
-|Workloads  <br/> |Often used to refer to a M365 service such as but not limited to Exchange Online, SharePoint Online, Microsoft Teams, etc.|
+|Advanced Data Residency (ADR)  <br/> |A new Microsoft 365 add-on service that guarantees customer data residency for a defined set of services. See section 3  <br/> |
+|Privacy and Security Product Terms  <br/> |Privacy and Security Terms for Microsoft 365 services provides some customer data location related commitments.  The document can be found <a href="https://www.microsoft.com/licensing/terms/en-US/product/PrivacyandSecurityTerms/EAEAS" target="_blank">here</a>. The extract of the relevant section (on November 1, 2022) is:<br>**Office 365 Services.** If Customer provisions its _Tenant_ in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, or the United States, Microsoft will store the following Customer Data at rest only within that Geo: (1) Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments), (2) SharePoint Online site content and the files stored within that site,  (3) files uploaded to OneDrive for Business, and (4) Microsoft Teams chat messages (including private messages, channel messages, meeting messages and images used in chats), and for customers using Microsoft Stream (on SharePoint), meeting recordings.
+|Workloads  <br/> |Often used to refer to a Microsoft 365 service such as but not limited to Exchange Online, SharePoint Online, Microsoft Teams, etc.|
 
 ## Overview of Data Residency
 
@@ -58,7 +58,7 @@ Microsoft makes decisions on where to persistently store customer data based on 
 
 ### _Default Geography_ of the AAD _Tenant_
 
-When a customer creates a new AAD _Tenant_, the customer will enter a country during the creation process.  This country is what defines the _Default Geography_ for the _Tenant_.  There are multiple paths to creating _Tenants_.  They can be created through AAD forms, they can be created when trying out new M365 services (trials), etc.  Once a _Tenant_ is created, the _Default Geography_ cannot be changed.
+When a customer creates a new AAD _Tenant_, the customer will enter a country during the creation process.  This country is what defines the _Default Geography_ for the _Tenant_.  There are multiple paths to creating _Tenants_.  They can be created through AAD forms, they can be created when trying out new Microsoft 365 services (trials), etc.  Once a _Tenant_ is created, the _Default Geography_ cannot be changed.
 
 ### Available Geographies for a given service
 
@@ -72,7 +72,7 @@ Some examples:
 
 **Example 1:** For a _Tenant_ with the sign-up country as "France" that has a new subscription that includes Exchange Online, SharePoint Online and Microsoft Teams, then the customer data for those services will be provisioned into the French _Local Region Geography_. Why?  Because those services are deployed into the French data centers and the _Tenant_ has a France sign up country.
 
-**Example 2:**  For a _Tenant_ with the sign-up country as "Belgium" that has a new subscription that includes Exchange Online, SharePoint Online and Microsoft Teams, then the customer data for those services will be provisioned into the _Macro Region Geography 1 – EMEA_.  Why?  Because there are no M365 data centers in Belgium and the closest Geography is _Macro Region Geography 1 - EMEA_.
+**Example 2:**  For a _Tenant_ with the sign-up country as "Belgium" that has a new subscription that includes Exchange Online, SharePoint Online and Microsoft Teams, then the customer data for those services will be provisioned into the _Macro Region Geography 1 – EMEA_.  Why?  Because there are no Microsoft 365 data centers in Belgium and the closest Geography is _Macro Region Geography 1 - EMEA_.
 
 **Example 3:** For a _Tenant_ with the sign-up country as "Japan" that has a new subscription that includes Microsoft Forms, then the customer data for Forms will be provisioned  into the _Macro Region Geography 3 - Americas_.  Why?  Because Forms is only deployed in _Macro Region Geography 3 - Americas_ and _Macro Region Geography 1 – EMEA_ (EU _Tenants_ only).
 
@@ -82,9 +82,9 @@ Some examples:
 
 ### Migrations/Moves
 
-Once a M365 service provisions a _Tenant_ into a particular _Geography_, there are five ways that this data could be moved to another _Geography_:
+Once a Microsoft 365 service provisions a _Tenant_ into a particular _Geography_, there are five ways that this data could be moved to another _Geography_:
 
-1. The M365 service decides to move the data to a new _Geography_ for service operations reasons, if there are no other policies in place to prevent the move.
+1. The Microsoft 365 service decides to move the data to a new _Geography_ for service operations reasons, if there are no other policies in place to prevent the move.
 1. For _Local Geographies_ that have Microsoft data centers, and for _Tenants_ that have the same country, there are options to migrate data from the _Regional Geographies_ into the _Local Geographies_.  This option is typically only available for 6 months after a _Local Region Geography_ has been established.
 1. If a _Tenant_ subscribes to the _Multi-Geo_ service, then _Tenants_ user's data for Exchange Online, SharePoint Online and Microsoft Teams can be assigned to _Satellite Geographies_.
 1. If a _Tenant_ has sign up country as a _Local Region Geography_ or _Expanded Local Region Geography_ and has a subscription to the _Advanced Data Residency_ service add-on, then the _Tenant_ data for the included services will be migrated from the _Regional Geography_ to the relevant _Local Region Geography_.
