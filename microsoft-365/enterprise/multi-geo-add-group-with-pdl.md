@@ -34,11 +34,11 @@ If you want to create a group site in your Australia location, you can go to `ht
 
 Your group site will be provisioned in the _Geography_ location corresponding to the SharePoint admin center from which you initiated the site creation request. 
 
-Using Exchange PowerShell 
+Using Exchange PowerShell
 
-Connect to Exchange Online PowerShell and pass the parameter *-MailBoxRegion* with the geo location code.
+Connect to Exchange Online PowerShell and pass the parameter _-MailBoxRegion_ with the geo location code.
 
-For example: 
+For example:
 
 ```PowerShell
 New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Public -MailboxRegion EUR 
@@ -46,7 +46,7 @@ New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Publi
 
 ![Screenshot of New-UnifiedGroup PowerShell cmdlet with syntax.](../media/multi-geo-new-group-with-pdl-powershell.png)
 
-> [!Note]
+> [!NOTE]
 > SharePoint group site provisioning is on-demand. The site will be provisioned the first time a group owner or member attempts to access it.
 
 ## Geo location codes
@@ -55,6 +55,6 @@ New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Publi
 
 ## Related topics
 
-[Connect to Exchange Online PowerShell](https://learn.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+[Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
-[Create groups with a specific preferred data location using Graph API](https://learn.microsoft.com/graph/api/group-post-groups)
+[Create groups with a specific preferred data location using Graph API](/graph/api/group-post-groups)

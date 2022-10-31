@@ -32,7 +32,7 @@ When the eDiscovery Manager or Administrator role is set for a particular _Satel
 
 To set the Compliance Security Filter for a Region:
 
-1. [Connect to Microsoft 365 Security & Compliance PowerShell](https://learn.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [Connect to Microsoft 365 Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 2. Use the following syntax:
 
@@ -46,4 +46,4 @@ To set the Compliance Security Filter for a Region:
    New-ComplianceSecurityFilter -Action All -FilterName "NAM eDiscovery Managers" -Region NAM -Users adwood@contoso.onmicrosoft.com
    ```
 
-See the [New-ComplianceSecurityFilter](https://learn.microsoft.com/powershell/module/exchange/new-compliancesecurityfilter) article for additional parameters and syntax.
+See the [New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter) article for additional parameters and syntax.
