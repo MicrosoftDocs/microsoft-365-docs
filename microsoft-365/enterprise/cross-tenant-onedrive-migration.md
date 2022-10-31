@@ -58,7 +58,7 @@ Up to 4,000 OneDrive accounts can be scheduled for migration in advance at a giv
 
 ## Path size limits
 
-Microsoft limits the number of characters in a path to not exceed 400 characters. This is the full path limit, not just the file name. In planning your migrations, review the length of User/site ULR names in your target tenant. Failure often occurs when files or folder paths from the source, combined with the OneDrive URL on the target exceed the 400-character path limit. 
+Microsoft limits the number of characters in a path to not exceed 400 characters. This is the full path limit, not just the file name. In planning your migrations, review the length of OneDrive URL names in your target tenant. Failure often occurs when files or folder paths from the source, combined with the OneDrive URL on the target exceed the 400-character path limit. 
 
 A migration will detect if you have exceeded the character limit. Work with the site owner to update the file/folder directory structure to reduce file path lengths.
 
