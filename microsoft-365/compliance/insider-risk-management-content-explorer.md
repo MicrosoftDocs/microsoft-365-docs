@@ -28,7 +28,7 @@ The insider risk management **Content explorer** allows users assigned the *Insi
 To examine the emails and files captured by the policies included in a specific case, navigate to the Insider risk management **Cases** page and select the row of the *Case name* in the list for the case you want to view details for. Then in the case details page, select the **Content explorer** tab to open the Content explorer.
 
 > [!IMPORTANT]
-> If the tenant has no user assigned to either the *Insider Risk Management Investigators* role or role groups, then after an alert is confirmed to a case, the Content explorer will not display any details for that case.
+> After an alert is confirmed to a case, Content explorer won't display any details for that case if the organization has not assigned a user to either the *Insider Risk Management Investigator* or *Insider Risk Management* role group.
 
 For new cases, it usually takes about an hour for content to populate in Content explorer. For cases with large amounts of content, it may take longer to create a snapshot. If content is still loading in Content explorer, you will see a progress indicator that displays the completion percentage.
 
