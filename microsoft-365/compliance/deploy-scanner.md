@@ -33,7 +33,7 @@ The information protection scanner can inspect any files that Windows can index.
 
 The following image shows the scanner architecture, where the scanner discovers files across your on-premises and SharePoint servers.
 
-:::image type="content" source="../media/ul-scanner-arch.png" alt-text="Microsoft Purview Information Protection scanner architecture":::
+:::image type="content" source="../media/scanner-arch.png" alt-text="Microsoft Purview Information Protection scanner architecture":::
 
 To inspect your files, the scanner uses IFilters installed on the computer. To determine whether the files need labeling, the scanner uses sensitive information types and pattern detection, or regex patterns.
 

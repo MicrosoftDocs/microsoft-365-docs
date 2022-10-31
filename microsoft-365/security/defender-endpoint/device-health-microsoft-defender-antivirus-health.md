@@ -8,8 +8,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 ms.date: 09/06/2022 
 manager: dansimp
@@ -21,6 +21,8 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.reviewer: mkaminska
 ---
+
+<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
 # Device health, Microsoft Defender Antivirus health report
 
