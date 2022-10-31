@@ -17,7 +17,7 @@ ms.custom: seo-marvel-apr2020
 
 # Add or remove a _Geography_ administrator in Microsoft 365 Multi-Geo
 
-You can configure separate administrators for each _Geography_ location that you have in your tenant. These administrators will have access to the SharePoint Online and OneDrive settings that are specific to their _Geography_ location.
+You can configure separate administrators for each _Geography_ location that you have in your _Tenant_. These administrators will have access to the SharePoint Online and OneDrive settings that are specific to their _Geography_ location.
 
 Some services - such as the term store - are administered from the _Primary Provisioned Geography_ location and replicated to _Satellite Geography_ locations. The _Geography_ admin for the _Primary Provisioned Geography_ location has access to these, whereas _Geography_ admins for _Satellite Geography_ locations don't.
 
