@@ -19,7 +19,7 @@ description: Learn how to configure search in a multi-geo environment. Only some
 
 ## Configure Multi-Geo Search
 
-Your Multi-Geo tenant will have aggregate search capabilities allowing a search query to return results from anywhere within the tenant.
+Your Multi-Geo _Tenant_ will have aggregate search capabilities allowing a search query to return results from anywhere within the _Tenant_.
 
 By default, searches from these entry points will return aggregate results, even though each search index is located within its relevant _Geography_ location:
 
@@ -106,12 +106,12 @@ Some search features you might be familiar with, work differently in a multi-geo
 <tbody>
 <tr class="odd">
 <td align="left">Promoted results</td>
-<td align="left">You can create query rules with promoted results at different levels: for the whole tenant, for a site collection, or for a site. In a Multi-Geo environment, define promoted results at the tenant level to promote the results to the Search Centers in all _Geography_ locations. If you only want to promote results in the Search Center that's in the _Geography_ location of the site collection or site, define the promoted results at the site collection or site level. These results are not promoted in other _Geography_ locations.</td>
-<td align="left">If you don't need different promoted results per _Geography_ location, for example different rules for traveling, we recommend defining promoted results at the tenant level.</td>
+<td align="left">You can create query rules with promoted results at different levels: for the whole _Tenant_, for a site collection, or for a site. In a Multi-Geo environment, define promoted results at the _Tenant_ level to promote the results to the Search Centers in all _Geography_ locations. If you only want to promote results in the Search Center that's in the _Geography_ location of the site collection or site, define the promoted results at the site collection or site level. These results are not promoted in other _Geography_ locations.</td>
+<td align="left">If you don't need different promoted results per _Geography_ location, for example different rules for traveling, we recommend defining promoted results at the _Tenant_ level.</td>
 </tr>
 <tr class="even">
 <td align="left">Search refiners</td>
-<td align="left">Search returns refiners from all the _Geography_ locations of a tenant and then aggregates them. The aggregation is a best effort, meaning that the refiner counts might not be 100% accurate. For most search-driven scenarios, this accuracy is sufficient.
+<td align="left">Search returns refiners from all the _Geography_ locations of a _Tenant_ and then aggregates them. The aggregation is a best effort, meaning that the refiner counts might not be 100% accurate. For most search-driven scenarios, this accuracy is sufficient.
 </td>
 <td align="left">For search-driven applications that depend on refiner completeness, query each _Geography_ location independently.</td>
 </tr>
@@ -168,7 +168,7 @@ All the search clients use the existing SharePoint Search REST APIs to interact 
 ![Diagram showing how SharePoint Search REST APIs interact with the search indexes.](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. A search client calls the Search REST endpoint with the query property EnableMultiGeoSearch= true.
-2. The query is sent to all _Geography_ locations in the tenant.
+2. The query is sent to all _Geography_ locations in the _Tenant_.
 3. Search results from each _Geography_ location are merged and ranked.
 4. The client gets unified search results.
 
@@ -210,11 +210,11 @@ For each geo location, you must ensure that all users in the organization have b
 
 ### Query parameters
 
-EnableMultiGeoSearch - This is a Boolean value that specifies whether the query shall be fanned out to the indexes of other geo locations of the multi-geo tenant. Set it to **true** to fan out the query; **false** to not fan out the query. If you don't include this parameter, the default value is **false**, except when making a REST API call against a site which uses the Enterprise Search Center template, in this case the default value is **true**. If you use the parameter in an environment that isn't multi-geo, the parameter is ignored.
+EnableMultiGeoSearch - This is a Boolean value that specifies whether the query shall be fanned out to the indexes of other geo locations of the multi-geo _Tenant_. Set it to **true** to fan out the query; **false** to not fan out the query. If you don't include this parameter, the default value is **false**, except when making a REST API call against a site which uses the Enterprise Search Center template, in this case the default value is **true**. If you use the parameter in an environment that isn't multi-geo, the parameter is ignored.
 
 ClientType - This is a string. Enter a unique client name for each search application. If you don't include this parameter, the query is not fanned out to other geo locations.
 
-MultiGeoSearchConfiguration - This is an optional list of which geo locations in the multi-geo tenant to fan the query out to when **EnableMultiGeoSearch** is **true**. If you don't include this parameter, or leave it blank, the query is fanned out to all geo locations. For each geo location, enter the following items, in JSON format:
+MultiGeoSearchConfiguration - This is an optional list of which geo locations in the multi-geo _Tenant_ to fan the query out to when **EnableMultiGeoSearch** is **true**. If you don't include this parameter, or leave it blank, the query is fanned out to all geo locations. For each geo location, enter the following items, in JSON format:
 
 <table>
 <thead>
