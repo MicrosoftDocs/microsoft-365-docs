@@ -336,7 +336,7 @@ Your submission is immediately scanned by our systems to give you the latest det
 
 For submissions that weren't already processed, they're prioritized for analysis as follows:
 
-- Prevalent files with the potential to affect a large numbers of computers are given a higher priority.
+- Prevalent files with the potential to affect a large number of computers are given a higher priority.
 - Authenticated customers, especially enterprise customers with valid [Software Assurance IDs (SAIDs)](https://www.microsoft.com/licensing/licensing-programs/software-assurance-default.aspx), are given a higher priority.
 - Submissions flagged as high priority by SAID holders are given immediate attention.
 
