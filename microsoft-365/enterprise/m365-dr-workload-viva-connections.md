@@ -18,19 +18,19 @@ ms.collection:
 
 # Data Residency for Viva Connections
 
-## Summary
+## Overview
 
 Service documentation:  [Overview: Viva Connections](/viva/connections/viva-connections-overview)
 
 Capability Summary: Microsoft Viva Connections is your gateway to a modern employee experience designed to keep everyone engaged and informed. Viva Connections is a customizable app in Microsoft Teams that gives everyone a personalized destination to discover relevant news, conversations, and the tools they need to succeed.  Data storage is related to the following Viva Connections Components: Dashboard and feed.
 
-## Data Residency commitments available
+## Data Residency Commitments Available
 
 ### Advanced Data Residency add-on
 
 Required Conditions:
 
-1. _Tenant_ has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. _Tenant_ has a sign-up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_.
 1. The Viva Connections subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
@@ -40,7 +40,7 @@ Please refer to the [ADR Commitment page](m365-dr-commitments.md#viva-connection
 
 ### Migration
 
-Data storage is maintained within Exchange Online, SharePoint Online and Microsoft Teams.  Migration processes are handled in those workloads.
+Data is stored within Exchange Online, SharePoint Online and Microsoft Teams.  Migration processes are handled by the applicable/relevant workloads.
 
 ### How can I determine customer data location?
 
