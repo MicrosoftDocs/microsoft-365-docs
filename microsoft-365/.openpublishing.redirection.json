@@ -1,0 +1,9 @@
+{
+    "redirections": [
+        {
+            "source_path": "enterprise/EU-data-storage-locations.md",
+            "redirect_url": "enterprise/m365-dr-overview.md",
+            "redirect_document_id": true
+        }
+    ]
+}
