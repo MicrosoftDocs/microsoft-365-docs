@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 10/21/2022
+ms.date: 10/31/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -84,6 +84,36 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>October-2022 (Platform: 4.18.2210.3 | Engine: 1.1.19800.x)</summary>
+
+&ensp;Security intelligence update version: **x.x**<br/>
+&ensp;Release date: **October 31, 2022**<br/>
+&ensp;Platform: **4.18.2210.3**<br/>
+&ensp;Engine: **1.1.19800.x**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.19800.x<br/>
+Security intelligence update version: x.x<br/>
+
+### What's new
+
+- Improved hang detection in antivirus engine 
+- Added opt-in for defender updates during OOBE (out of box experience) process 
+- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capability 
+- Changed threat & vulnerability management (TVM)-warn and TVM-block action to block to resolve Intune's report 
+- Removed Clean Action from Intune policy for `ThreadSeverityDefaultAction` 
+- Added randomize scheduled task times configuration to Intune policy 
+- Added manageability for `DisableSMTPParsing` network protection 
+- Added improvement for behavior monitoring 
+- Normalized date format for event 1151 for Windows Defender 
+- Fixed a deadlock related to updating `\device\cdrom*` exclusions upon mounting a cdrom drive under certain conditions 
+- Improved PID information for threat detection 
+
+### Known Issues
+
+- None  
+<br/><br/>
+</details><details>
 <summary>September-2022 (Platform: 4.18.2209.7 | Engine: 1.1.19700.3)</summary>
 
 &ensp;Security intelligence update version: **1.377.8.0**<br/>
