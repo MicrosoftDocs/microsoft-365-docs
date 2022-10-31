@@ -128,7 +128,7 @@ The Advanced Data Residency and Move Program efforts will exist simultaneously f
 #### How can I move my data to my country with Advanced Data Residency? What does the process look like?
 <details><summary>Click to expand</summary>
 
-The first step is to purchase the ADR SKU, refer to [ADR Eligibility](advanced-data-residency.md#Eligibility).  Once you have purchased ADR, you will receive a notification via Message Center (in the tenant admin center) outlining the purchase confirmation.  After you confirm readiness to begin migrations 12-month expectation to migrate all your customer at-rest data, as it relates to the workloads listed above, will begin. From there all workloads migrating customer data will provide notifications to the tenant admin via Message Center (two messages each; one at the start and end of the migration process).
+The first step is to purchase the ADR SKU, refer to [ADR Eligibility](advanced-data-residency.md#eligibility).  Once you have purchased ADR, you will receive a notification via Message Center (in the tenant admin center) outlining the purchase confirmation.  After you confirm readiness to begin migrations 12-month expectation to migrate all your customer at-rest data, as it relates to the workloads listed above, will begin. From there all workloads migrating customer data will provide notifications to the tenant admin via Message Center (two messages each; one at the start and end of the migration process).
 </details>
 
 ## Related topics
