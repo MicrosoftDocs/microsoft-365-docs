@@ -44,3 +44,7 @@
         href: onedrive-lti-schoology.md
       - name: Use Microsoft Teams meetings with Schoology
         href: teams-classes-and-meetings-with-schoology.md
+    - name: Other LMS integrations
+      items:
+      - name: Use Microsoft Teams Meetings LTI with any LTI 1.3 compliant LMS
+        href: integrate-with-other-lms.md
