@@ -18,7 +18,7 @@ ms.collection:
 
 # Data Residency for Microsoft Teams
 
-## Data Residency commitments available
+## Data Residency Commitments Available
 
 ### Product Terms
 
@@ -45,7 +45,7 @@ Please refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-teams
 
 - Chat/ channel messages and team structure: Every team in Microsoft Teams is backed by an Microsoft 365 Modern Group and its SharePoint site and Exchange mailbox. Private chats (including group chats), messages sent as part of a conversation in a channel, and the structure of teams and channels are stored in an Azure powered chat service. The data is also stored in a hidden folder in the user and group mailboxes to enable information protection features.  
 - Images and Media: Media used in chats (except for Giphy GIFs which are not stored but are a reference link to the original Giphy URL) are stored in an Azure based Media Service deployed to the same locations as the chat service.
-- Meeting Recordings: For users of Microsoft Stream (on SharePoint) Meeting Recordings are stored in the OneDrive storage of the user that initiates the recording. 
+- Meeting Recordings: For users of Microsoft Stream (on SharePoint) Meeting Recordings are stored in the OneDrive for Business storage of the user that initiates the recording. 
 
 ### Multi-Geo add-on
 
