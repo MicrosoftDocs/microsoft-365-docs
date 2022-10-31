@@ -41,17 +41,15 @@ The Device Health report provides information about the devices in your organiza
 > [!IMPORTANT]
 > For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in device health reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
-In the Microsoft 365 Security dashboard navigation panel, select **Reports**, and then open **Device health and compliance**.
-
-- The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards that report on the following aspects of Microsoft Defender Antivirus:
-  - [Antivirus mode card](#antivirus-mode-card)
-  - [Antivirus engine version card](#antivirus-engine-version-card)
-  - [Antivirus security intelligence version card](#antivirus-security-intelligence-version-card)
-  - [Antivirus platform version card](#antivirus-platform-version-card)
-  - [Recent antivirus scan results card](#recent-antivirus-scan-results-card)
-  - [Antivirus engine updates card](#antivirus-engine-updates-card)
-  - [Security intelligence updates card](#security-intelligence-updates-card)
-  - [Antivirus platform updates card](#antivirus-platform-updates-card)
+In the Microsoft 365 Security dashboard navigation panel, select **Reports**, and then open **Device health and compliance**. The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards that report on the following aspects of Microsoft Defender Antivirus:
+- [Antivirus mode card](#antivirus-mode-card)
+- [Antivirus engine version card](#antivirus-engine-version-card)
+- [Antivirus security intelligence version card](#antivirus-security-intelligence-version-card)
+- [Antivirus platform version card](#antivirus-platform-version-card)
+- [Recent antivirus scan results card](#recent-antivirus-scan-results-card)
+- [Antivirus engine updates card](#antivirus-engine-updates-card)
+- [Security intelligence updates card](#security-intelligence-updates-card)
+- [Antivirus platform updates card](#antivirus-platform-updates-card)
 
 ## Report access permissions
 
@@ -87,40 +85,40 @@ The remaining six cards report about the Microsoft Defender Antivirus status for
 
 <sup>{[1](#fn1)}</sup> For the three _updates_ cards (also known as up-to-date reporting cards), "**No data available**" (or "Unknown" value) indicates devices that aren't reporting update status. Devices that aren't reporting update status can be due to various reasons, such as:
 
-- Computer is disconnected from the network
-- Computer is powered down or in a hibernation state
-- Microsoft Defender Antivirus is disabled
-- Device is a non-Windows (Mac or Linux) device
-- Cloud protection isn't enabled
-- Device doesn't meet pre-requisites for Antivirus engine or platform version
+- Computer is disconnected from the network.
+- Computer is powered down or in a hibernation state.
+- Microsoft Defender Antivirus is disabled.
+- Device is a non-Windows (Mac or Linux) device.
+- Cloud protection isn't enabled.
+- Device doesn't meet pre-requisites for Antivirus engine or platform version.
 
 ### Prerequisites
 
-Up to date reporting generates information for devices that meet the following criteria:
+Up-to-date reporting generates information for devices that meet the following criteria:
 
 - Engine version: 1.1.19300.2+
 - Platform version: 4.18.2202.1+
 - Cloud protection enabled
-- Windows OS*
+- Windows OS
+   >[!Note]
+   >Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under "No data available"/Unknown.
 
-*Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under "No data available"/Unknown
-
->:::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Shows the Microsoft Defender Antivirus Health tab." lightbox="images/device-health-defender-antivirus-health-tab.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Shows the Microsoft Defender Antivirus Health tab." lightbox="images/device-health-defender-antivirus-health-tab.png":::
 
 ### Card functionality
 
 The functionality is essentially the same for all cards. By clicking on a numbered bar in any of the cards, the **Microsoft Defender Antivirus details** flyout opens enabling you to review information about all the devices configured with the version number of an aspect on that card.
 
->:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details.png" alt-text="Shows the Microsoft Defender Antivirus details flyout." lightbox="images/device-health-defender-antivirus-health-antivirus-details.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details.png" alt-text="Shows the Microsoft Defender Antivirus details flyout." lightbox="images/device-health-defender-antivirus-health-antivirus-details.png":::
 
 If the version number that you clicked on is:
 
-- A current version, then **Remediation required** and **Security recommendation** aren't present
+- A current version, then **Remediation required** and **Security recommendation** aren't present.
 - An outdated version, a notification at the top of the report is present, indicating **Remediation required**, and a **Security recommendation** link is present. Select the security recommendation link to navigate to the threat and vulnerability management console, which can recommend appropriate antivirus updates.
 
 To add or remove specific types of information on the **Microsoft Defender Antivirus details** flyout, select **Customize Columns**. In **Customize Columns**, select or clear items to specify what you want included in the Microsoft Defender Antivirus details report.
 
->:::image type="content" source="images/device-health-defender-antivirus-engine-version-details-custom-columns.png" alt-text="Shows custom column options for Microsoft Defender Antivirus health reporting." lightbox="images/device-health-defender-antivirus-engine-version-details-custom-columns.png":::
+:::image type="content" source="images/device-health-defender-antivirus-engine-version-details-custom-columns.png" alt-text="Shows custom column options for Microsoft Defender Antivirus health reporting." lightbox="images/device-health-defender-antivirus-engine-version-details-custom-columns.png":::
 
 #### New Microsoft Defender Antivirus filter definitions
 
@@ -143,13 +141,13 @@ There are two levels of reports that you can export:
 
 There are two different export csv functionalities through the portal:
 
-- **Top-level export** You can use the top level **Export** button to gather an all-up Microsoft Defender Antivirus health report (500-K limit).
+- **Top level export**. You can use the top-level **Export** button to gather an all-up Microsoft Defender Antivirus health report (500-K limit).
 
->:::image type="content" source="images/device-health-defender-antivirus-health-tab-export.png" alt-text="Shows the top-level export report button" lightbox="images/device-health-defender-antivirus-health-tab-export.png":::
+   ::image type="content" source="images/device-health-defender-antivirus-health-tab-export.png" alt-text="Shows the top-level export report button" lightbox="images/device-health-defender-antivirus-health-tab-export.png":::
 
-- **Flyout level export** You can use the **Export** button within the flyouts to export a report to an Excel spreadsheet (100-K limit).
+- **Flyout level export**. You can use the **Export** button within the flyouts to export a report to an Excel spreadsheet (100-K limit).
 
-Exported reports capture information based on your entry-point into the details report and which filters or customized columns you have set.
+Exported reports capture information based on your entry point into the details report and which filters or customized columns you have set.
 
 For information on exporting using API, see the following articles:
 
@@ -170,13 +168,13 @@ Following are descriptions for the six cards that report about the _version_ and
 
 In any of the three _version_ cards, select **View full report** to display the nine most recent Microsoft Defender Antivirus _version_ reports for each of the three device types: Windows, Mac, and Linux; if fewer than nine exist, they're all shown. An **Other** category captures recent antivirus engine versions ranking tenth and below, if detected.
 
->:::image type="content" source="images/device-health-defender-antivirus-health-view-full-report.png" alt-text="Shows the distribution of the top nine operating systems of each type" lightbox="images/device-health-defender-antivirus-health-view-full-report.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-view-full-report.png" alt-text="Shows the distribution of the top nine operating systems of each type" lightbox="images/device-health-defender-antivirus-health-view-full-report.png":::
 
 A primary benefit of the three _version_ cards is that they provide quick indicators as to whether the most current versions of the antivirus engines, platforms, and security intelligence are being utilized. Coupled with the detailed information that is linked to the card, the versions cards become a powerful tool to check if versions are up to date and to gather information about individual computers, or groups of computers.
 Ideally, when you run these reports, they'll indicate that the most current antivirus versions are installed, as opposed to older versions.
 Use these reports to determine whether your organization is taking full advantage of the most current versions.
 
->:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png" alt-text="Shows Microsoft Defender Antivirus version details" lightbox="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png" alt-text="Shows Microsoft Defender Antivirus version details" lightbox="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png":::
 
 To help ensure your anti-malware solution detects the latest threats, get updates automatically as part of Windows Update.
 
@@ -198,7 +196,7 @@ Reports on how many devices in your organization – on the date indicated on th
 | 3 | Others (Not running, Unknown) |
 | 4 | EDRBlocked |
 
->:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-mode.png" alt-text="Shows filtering Microsoft Defender Antivirus modes" lightbox="images/device-health-defender-antivirus-health-antivirus-mode.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-mode.png" alt-text="Shows filtering Microsoft Defender Antivirus modes" lightbox="images/device-health-defender-antivirus-health-antivirus-mode.png":::
 
 Following are descriptions for each mode:
 
@@ -299,7 +297,7 @@ The following table lays out the possible values for up to date reports for **An
 | < 7 days (new) | whatever client reports (_Up to date <br/> Out of date <br/> Unknown)_ |
 | > 7 days (old) | _Unknown_ |
 
-For information about Manage Microsoft Defender Antivirus update versions, see: [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+For information about Manage Microsoft Defender Antivirus update versions, see [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).
 
 #### Antivirus platform updates card
 
@@ -314,7 +312,7 @@ The following table lays out the possible up to date report values for **Antivir
 | < 7 days (new) | whatever client reports (_Up to date <br/> Out of date <br/> Unknown)_ |
 | > 7 days (old) | _Unknown_ |
 
-For information about Manage Microsoft Defender Antivirus update versions, see: [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+For information about Manage Microsoft Defender Antivirus update versions, see [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).
 
 ##### Security intelligence updates card
 
