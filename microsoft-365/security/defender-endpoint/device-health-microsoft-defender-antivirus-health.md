@@ -240,7 +240,7 @@ The up-to-date cards show the up-to-date status for **Antivirus engine**, **Anti
 
 > [!IMPORTANT]
 >
-> The logic used to make up-to-date determination has recently been enhanced and simplified. The new behavior is documented in this section.
+> The logic used to make up-to-date determinations has recently been enhanced and simplified. The new behavior is documented in this section.
 
 Definitions for _Up to date_, _out of date_, and _no data available_ are provided for each card below.
 
