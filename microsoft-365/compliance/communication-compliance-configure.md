@@ -132,7 +132,7 @@ Complete the following steps to add users to this role group:
 
 2. Select **Permissions** in the left nav, and select **Roles** under the **Microsoft Purview solutions** list.
 
-3. Select the *Communication Compliance* role group you want to add users to, then select **Edit**.
+3. Select the *Communication Compliance* role group and then select **Edit**.
 
 4. Select the **Choose users** tab, then select the checkbox for all users you want to add to the role group.
 
