@@ -48,9 +48,9 @@ Up to 4,000 OneDrive accounts can be scheduled for migration in advance at a giv
 
 ## Pre-create target accounts
 
-- Ensure all Users/groups identified for migration have been pre-created on the target tenant.
+- Ensure all users and groups identified for migration have been pre-created on the target tenant.
 - Assign the appropriate licenses to each user on the target tenant.
-- Don't active the target tenant OneDrive accounts before starting any migration.  If a OneDrive site already exists for the user on the target tenant the migration will fail. You can't overwrite an existing site.
+- We recommend that OneDrive site creation be restricted in the target tenant to prevent users from creating OneDrive sites. If a OneDrive site already exists for the user on the target tenant, the migration will fail.  You can't overwrite an existing site.
 
 >[!Note]
 >To learn more about restricting OneDrive site creation, see [Disable OneDrive creation for some users](/sharepoint/manage-user-profiles#disable-onedrive-creation-for-some-users)
