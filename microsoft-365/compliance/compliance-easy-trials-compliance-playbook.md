@@ -267,7 +267,7 @@ Leverage end-to-end workflows to help you quickly identify, triage, and remediat
 
 There are four role groups used to configure permissions to manage Insider Risk Management features, which have different roles and level of access. Setting up permissions to Insider Risk Management is key before proceeding.
 
-[Add users to an insider risk management role group](insider-risk-management-configure.md#add-users-to-the-insider-risk-management-role-group)
+[Add users to the Insider Risk Management role group](insider-risk-management-configure.md#add-users-to-the-insider-risk-management-role-group)
 
 If you are not able to see permissions, please talk to your tenant admin to assign the correct roles.
 
