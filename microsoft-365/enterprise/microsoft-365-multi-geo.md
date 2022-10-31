@@ -17,7 +17,7 @@ description: In this article, learn how to expand your Microsoft 365 presence to
 
 # Microsoft 365 Multi-Geo
 
-The Microsoft 365 Multi-Geo Capabilities add-on provides customers with the ability to expand their Microsoft 365 presence to multiple geographic regions or counties within a single existing Microsoft 365 tenant. Multi-Geo enables customers to manage data-at-rest locations at a granular level for their users, SharePoint sites, Microsoft 365 Groups, and Microsoft Teams teams level. Multi-Geo is targeted to customers who have a need to store customer data in multiple geographies at the same time to satisfy their data residency requirements and whose needs may change over time.
+The Microsoft 365 Multi-Geo Capabilities add-on provides customers with the ability to expand their Microsoft 365 presence to multiple geographic regions or counties within a single existing Microsoft 365 _Tenant_. Multi-Geo enables customers to manage data-at-rest locations at a granular level for their users, SharePoint sites, Microsoft 365 Groups, and Microsoft Teams teams level. Multi-Geo is targeted to customers who have a need to store customer data in multiple geographies at the same time to satisfy their data residency requirements and whose needs may change over time.
   
 Microsoft 365 Multi-Geo is designed to meet customers' data residency requirements and allow for collaboration between and amongst the customers satellite location and preferred data locations. If customer requires performance optimization functionalities for Microsoft 365, see <a href="https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848" target="_blank">Network planning and performance tuning for Microsoft 365</a> or contact your support group.
 
@@ -28,7 +28,7 @@ For a video introduction to Microsoft 365 Multi-Geo, see [SharePoint Online and 
 
 ## Multi-Geo architecture
 
-In a Multi-Geo environment, your Microsoft 365 tenant consists of a central location (where your Microsoft 365 subscription was originally provisioned) and one or more satellite locations. In a Multi-Geo enabled tenant, the information about geo locations, groups, and user information, is mastered in Azure Active Directory (Azure AD). Because your tenant information is mastered centrally and synchronized into each geo location, sharing and experiences involving anyone from your company contain global awareness.
+In a Multi-Geo environment, your Microsoft 365 _Tenant_ consists of a central location (where your Microsoft 365 subscription was originally provisioned) and one or more satellite locations. In a Multi-Geo enabled _Tenant_, the information about geo locations, groups, and user information, is mastered in Azure Active Directory (Azure AD). Because your _Tenant_ information is mastered centrally and synchronized into each geo location, sharing and experiences involving anyone from your company contain global awareness.
 
 ![Screenshot of multi-geo map from the SharePoint admin center.](../media/multi-geo-world-map.png)
 
@@ -58,7 +58,7 @@ Follow these steps to get started with Multi-Geo:
 
 1. Work with your account team to add the _Multi-Geo Capabilities in Microsoft 365_ service plan. They will guide you to add the number of licenses needed. Multi-Geo feature is available to Enterprise Agreement customers.
 
-2. Before you can start using Microsoft 365 Multi-Geo, Microsoft needs to configure your Exchange Online tenant for Multi-Geo support. This one-time configuration process is triggered after you order the _Multi-Geo Capabilities in Microsoft 365_ service plan and the licenses show up in your tenant. You will receive workload-specific notifications in the [Microsoft 365 message center](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) once your tenant has completed the configuration process for each workload, and you then may begin configuring and using your Microsoft 365 Multi-Geo capabilities. The time required to configure a tenant for Multi-Geo support varies from tenant to tenant, but most tenants finish within a month after receipt of the feature licenses. Larger or more complex tenants may require more time to complete the configuration process. Please contact your account team for details on your specific tenant should you require it.
+2. Before you can start using Microsoft 365 Multi-Geo, Microsoft needs to configure your Exchange Online _Tenant_ for Multi-Geo support. This one-time configuration process is triggered after you order the _Multi-Geo Capabilities in Microsoft 365_ service plan and the licenses show up in your _Tenant_. You will receive workload-specific notifications in the [Microsoft 365 message center](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) once your _Tenant_ has completed the configuration process for each workload, and you then may begin configuring and using your Microsoft 365 Multi-Geo capabilities. The time required to configure a _Tenant_ for Multi-Geo support varies from _Tenant_ to _Tenant_, but most _Tenants_ finish within a month after receipt of the feature licenses. Larger or more complex _Tenants_ may require more time to complete the configuration process. Please contact your account team for details on your specific _Tenant_ should you require it.
 
 3. Read [Plan your multi-geo environment](plan-for-multi-geo.md).
 
