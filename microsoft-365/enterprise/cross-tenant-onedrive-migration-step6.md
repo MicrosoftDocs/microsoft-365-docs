@@ -144,4 +144,4 @@ Once the migration has completed successfully you can check the status of the us
 Since the user has successfully migrated to the target tenant, they no longer have an active OneDrive account on the source.
 
 
-## Step 7: [Post migration steps](cross-tenant-onedrive-migration-step6.md)
+## Step 7: [Post migration steps](cross-tenant-onedrive-migration-step7.md)
