@@ -23,7 +23,7 @@ To ensure that OneDrive permissions are retained as part of the migration, a map
 
 ## Identify users and groups to be migrated
 
-1. Identify the full list of OneDrive users/sites that will be migrating from the source to the target tenant.
+1. Identify the full list of OneDrive sites that will be migrated from the source to the target tenant.
 2. Prepare a complete list of users and groups that will be migrated to the target tenant.
 
 ## Pre-create Users and Groups on the Target Tenant
