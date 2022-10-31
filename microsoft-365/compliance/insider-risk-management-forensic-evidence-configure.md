@@ -47,7 +47,7 @@ Visual captures in forensic evidence are supported for the following devices/con
 - Latest Windows 10 or Windows 11 x64 build
 - A maximum of 4 monitors per device
 
-To onboard devices, complete the steps outlined in the [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](/microsoft-365/compliance/device-onboarding-overview) article.
+For a list of minimum hardware requirements, see [Learn about forensic evidence (preview)](insider-risk-management-forensic-evidence.md#hardware-requirements). To onboard supported devices, complete the steps outlined in the [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](/microsoft-365/compliance/device-onboarding-overview) article. 
 
 To install the Microsoft Purview Client, complete the following steps:
 

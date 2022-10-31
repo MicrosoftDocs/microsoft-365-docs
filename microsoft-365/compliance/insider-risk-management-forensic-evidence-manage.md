@@ -145,7 +145,9 @@ After devices are configured to support forensic evidence, you can review the Mi
 
 ![Insider risk management forensic evidence device health.](../media/insider-risk-forensic-evidence-device-health.png)
 
-The report allows you to view the status and health of all devices that have the forensic evidence agent installed. Each report widget on the report displays information for last 24 hours.
+For a list of minimum hardware requirements, see [Learn about forensic evidence (preview)](insider-risk-management-forensic-evidence.md#hardware-requirements). To onboard supported devices, complete the steps outlined in the [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](/microsoft-365/compliance/device-onboarding-overview) article. 
+
+The Device health report allows you to view the status and health of all devices that have the forensic evidence agent installed. Each report widget on the report displays information for last 24 hours.
 
 - **Devices online**: The total number of devices currently online.
 - **Devices offline**: The total number of devices currently offline.
