@@ -369,7 +369,7 @@ The following fields and values are exported for insider risk management alerts 
 | Name | Policy name for insider risk management policy that generated the alert. |
 | PolicyId | The GUID of the insider risk management policy that triggered the alert. |
 | Severity | The severity of the alert. Values are *High*, *Medium*, or *Low*. |
-| Source | The source of the alert. Values are from the security and compliance alert schema. |
+| Source | The source of the alert. Values are from the security and compliance alerts. |
 | Status | The status of the alert. Values are *Active* (*Needs Review* in insider risk), *Investigating* (*Confirmed* in insider risk), *Resolved* (*Resolved* in insider risk), *Dismissed* (*Dismissed* in insider risk). |
 | Version | The version of the security and compliance alert schema. |
 
