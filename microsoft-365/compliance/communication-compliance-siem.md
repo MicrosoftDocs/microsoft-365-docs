@@ -23,12 +23,12 @@ search.appverid:
 
 # Use communication compliance with SIEM solutions
 
->[!IMPORTANT]
->Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
+> [!IMPORTANT]
+> Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
 
 [Communication compliance](/microsoft-365/compliance/communication-compliance) is an insider risk solution in Microsoft Purview that helps minimize communication risks by helping you detect, capture, and act on potentially inappropriate messages in your organization. Security information and event management (SIEM) solutions such as [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) or [Splunk](https://www.splunk.com/) are commonly used to aggregate and track threats within an organization.
 
-A common need for organizations is to integrate communication compliance alerts and their SIEM solutions. With this integration, organizations can view communication compliance alerts in their SIEM solution and then remediate alerts within the communication compliance workflow and user experience. 
+A common need for organizations is to integrate communication compliance alerts and their SIEM solutions. With this integration, organizations can view communication compliance alerts in their SIEM solution and then remediate alerts within the communication compliance workflow and user experience.
 
 For example, an employee sends an offensive message to another employee and that message is detected by a communication compliance policy for potentially inappropriate content. Events such as this are tracked in Microsoft 365 Audit (also known as "unified audit log") by the communication compliance solution and are then imported into the SIEM solution. Alerts triggered in the SIEM solution that are included in the Microsoft 365 Audit are then associated with communication compliance alerts. Investigators are notified of these alerts in their SIEM solution, and then they can then investigate and remediate the corresponding alerts in the communication compliance dashboard.
 
@@ -114,7 +114,7 @@ The following table shows sample search results for different policy types:
 | Policy types | Example search results |
 | :------------------ | :--------------------------------------- |
 | Policy detecting a custom sensitive information type keyword list | { <br> CreationTime: 2022-09-17T16:29:57 <br> ID: 4b9ce23d-ee60-4f66-f38d-08d979f8631f <br> IsPolicyHit: true <br> ObjectId: <CY1PR05MB27158B96AF7F3AFE62E1F762CFDD9@CY1PR05MB2715.namprd05.prod.outlook.com> <br> Operation: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM.Note","CcsiResults":"leak"} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.OnMicrosoft.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Version: 1 <br> Workload: Exchange <br> } |
-| Policy detecting potentially inappropriate language | { <br> CreationTime: 2022-09-17T23:44:35 <br> ID: e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: true <br> ObjectId: <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> Operation: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM.Yammer.Message","CcsiResults":""} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Version: 1 <br> }  |
+| Policy detecting potentially inappropriate language | { <br> CreationTime: 2022-09-17T23:44:35 <br> ID: e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: true <br> ObjectId: <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> Operation: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM.Yammer.Message","CcsiResults":""} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Version: 1 <br> } |
 
 ## Configure communication compliance with other SIEM solutions
 
@@ -132,11 +132,13 @@ For example, the following is a sample search using the **Operations** parameter
 ```powershell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch | ft CreationDate,UserIds,AuditData
 ```
+
 The following is a sample search using the **RecordsType** parameter and the *ComplianceSupervisionExchange* value:
 
 ```powershell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType ComplianceSuperVisionExchange | ft CreationDate,UserIds,AuditData
 ```
+
 ## Resources
 
 - [Communication compliance auditing](/microsoft-365/compliance/communication-compliance-reports-audits#audit)
