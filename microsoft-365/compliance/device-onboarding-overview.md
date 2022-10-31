@@ -121,8 +121,8 @@ In this deployment scenario, you'll onboard Windows 10 or Windows 11 devices tha
 
 2. Choose **Turn on device onboarding**. 
 
-   > [!NOTE]
-   > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
+> [!NOTE]
+> While it usually takes about 60 seconds for device onboarding to be enabled, you should allow up to 30 minutes before engaging with Microsoft support.
 
 3. Choose **Onboarding** to begin the onboarding process.
 
