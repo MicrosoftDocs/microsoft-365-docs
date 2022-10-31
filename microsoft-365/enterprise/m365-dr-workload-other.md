@@ -22,7 +22,6 @@ ms.collection:
 
 Use the following guidance to determine where your data is located. Please reference your _tenant_ _Default Geography_.
 
-
 ### Azure Active Directory (AAD)
 
 Please refer to [Azure Active Directory Data Locations](https://aka.ms/aaddatamap).
@@ -59,7 +58,7 @@ You can find this information from the "?" option in the Stream UI, if you have 
 Please see the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section.  The data region for Manager/Leader and Advanced is determined by the _Default Geography_ of the _tenant_, not individual users.
 
 ### Viva Insights – Personal
-Customer data is processed and stored in the employee's Exchange Online mailbox. Data residency for Personal insights in Viva Insights is based on the employee's mailbox location. For more information, see [Personal insights in Viva Insights privacy guide for admins](https://learn.microsoft.com/en-us/viva/insights/personal/overview/privacy-guide-admins?branch=main#summary-of-key-points).
+Customer data is processed and stored in the employee's Exchange Online mailbox. Data residency for Personal insights in Viva Insights is based on the employee's mailbox location. For more information, see [Personal insights in Viva Insights privacy guide for admins](https://learn.microsoft.com/viva/insights/personal/overview/privacy-guide-admins?branch=main#summary-of-key-points).
 
 ### Viva Learning
 Please see the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section.
@@ -72,256 +71,252 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 
 ## Static data location information for select workloads
 
-| **CountyCode** | **County Name** | **Viva Insights Advanced** | **Viva Learning** | **Planner** |
+| CountyCode | County Name | Viva Insights Advanced | Viva Learning | Planner |
 | --- | --- | --- | --- | --- |
-| AF | Afghanistan | | | APC |
-| AX | Aland Islands | | | EUR |
-| AL | Albania | | | EUR |
-| DZ | Algeria | | | EUR |
-| AS | American Samoa | | | APC |
-| AD | Andorra | | | EUR |
-| AO | Angola | | | EUR |
-| AI | Anguilla | | | NAM |
-| AQ | Antarctica | | | NAM |
-| AG | Antigua and Barbuda | | | NAM |
-| AR | Argentina | | | LAM |
-| AM | Armenia | | | EUR |
-| AW | Aruba | | | NAM |
-| AU | Australia | | | AUS |
-| AT | Austria | | | EUR |
-| AZ | Azerbaijan | | | EUR |
-| BS | Bahamas | | | NAM |
-| BH | Bahrain | | | EUR |
-| BD | Bangladesh | | | APC |
-| BB | Barbados | | | NAM |
-| BY | Belarus | | | EUR |
-| BE | Belgium | | | EUR |
-| BZ | Belize | | | NAM |
-| BJ | Benin | | | EUR |
-| BM | Bermuda | | | NAM |
-| BT | Bhutan | | | APC |
-| BO | Bolivia | | | LAM |
-| BQ | Bonaire | | | NAM |
-| BA | Bosnia and Herzegovina | | | EUR |
-| BW | Botswana | | | EUR |
-| BV | Bouvet Island | | | NAM |
-| BR | Brazil | | | LAM |
-| IO | British Indian Ocean Territory | | | APC |
-| VG | British Virgin Islands | | | NAM |
-| BN | Brunei Darussalam | | | APC |
-| BG | Bulgaria | | | EUR |
-| BF | Burkina Faso | | | EUR |
-| BI | Burundi | | | EUR |
-| KH | Cambodia | | | APC |
-| CM | Cameroon | | | EUR |
-| CA | Canada | | | CAN |
-| CV | Cape Verde | | | EUR |
-| KY | Cayman Islands | | | NAM |
-| CF | Central African Republic | | | EUR |
-| TD | Chad | | | EUR |
-| CL | Chile | | | LAM |
-| CN | China | | | APC |
-| CX | Christmas Island | | | APC |
-| CC | Cocos (Keeling) Islands | | | APC |
-| CO | Colombia | | | NAM |
-| KM | Comoros | | | EUR |
-| CG | Congo (Brazzaville) | | | EUR |
-| CD | Congo, (Kinshasa) | | | EUR |
-| CK | Cook Islands | | | APC |
-| CR | Costa Rica | | | NAM |
-| CI | Côte d'Ivoire | | | EUR |
-| HR | Croatia | | | EUR |
-| CU | Cuba - USA embargoed nation | | | NAM |
-| CW | Curaçao | | | LAM |
-| CY | Cyprus | | | EUR |
-| CZ | Czech Republic | | | EUR |
-| DK | Denmark | | | EUR |
-| DJ | Djibouti | | | EUR |
-| DM | Dominica | | | NAM |
-| DO | Dominican Republic | | | NAM |
-| EC | Ecuador | | | NAM |
-| EG | Egypt | | | EUR |
-| SV | El Salvador | | | NAM |
-| GQ | Equatorial Guinea | | | EUR |
-| ER | Eritrea | | | EUR |
-| EE | Estonia | | | EUR |
-| ET | Ethiopia | | | EUR |
-| FK | Falkland Islands (Malvinas) | | | NAM |
-| FO | Faroe Islands | | | EUR |
-| FM | Federated States of Micronesia | | | APC |
-| MD | Federated States of Micronesia | | | EUR |
-| FJ | Fiji | | | AUS |
-| FI | Finland | | | EUR |
-| FR | France | | | EUR |
-| GF | French Guiana | | | NAM |
-| PF | French Polynesia | | | APC |
-| TF | French Southern Territories | | | NAM |
-| GA | Gabon | | | EUR |
-| GM | Gambia | | | EUR |
-| GE | Georgia | | | EUR |
-| DE | Germany | | | EUR |
-| GH | Ghana | | | EUR |
-| GI | Gibraltar | | | EUR |
-| GR | Greece | | | EUR |
-| GL | Greenland | | | NAM |
-| GD | Grenada | | | NAM |
-| GP | Guadeloupe | | | NAM |
-| GU | Guam | | | APC |
-| GT | Guatemala | | | NAM |
-| GG | Guernsey | | | EUR |
-| GN | Guinea | | | EUR |
-| GW | Guinea-Bissau | | | EUR |
-| GY | Guyana | | | NAM |
-| HT | Haiti | | | NAM |
-| HM | Heard and Mcdonald Islands | | | NAM |
-| VA | Holy See (Vatican City State) | | | EUR |
-| HN | Honduras | | | NAM |
-| HK | Hong Kong, SAR China | | | APC |
-| HU | Hungary | | | EUR |
-| IS | Iceland | | | EUR |
-| IN | India | | | APC |
-| ID | Indonesia | | | APC |
-| IQ | Iraq | | | EUR |
-| IE | Ireland | | | EUR |
-| IR | Islamic Republic of Iran - USA embargoed nation | | | APC |
-| IM | Isle of Man | | | EUR |
-| IL | Israel | | | EUR |
-| IT | Italy | | | EUR |
-| JM | Jamaica | | | NAM |
-| JP | Japan | | | JPN |
-| JE | Jersey | | | EUR |
-| JO | Jordan | | | EUR |
-| KZ | Kazakhstan | | | EUR |
-| KE | Kenya | | | EUR |
-| KI | Kiribati | | | APC |
-| KP | Korea (North) | | | APC |
-| KR | Korea (South) | | | APC |
-| XK | Kosovo | | | EUR |
-| KW | Kuwait | | | EUR |
-| KG | Kyrgyzstan | | | EUR |
-| LA | Lao PDR | | | APC |
-| LV | Latvia | | | EUR |
-| LB | Lebanon | | | EUR |
-| LS | Lesotho | | | EUR |
-| LR | Liberia | | | EUR |
-| LY | Libya | | | EUR |
-| LI | Liechtenstein | | | EUR |
-| LT | Lithuania | | | EUR |
-| LU | Luxembourg | | | EUR |
-| MO | Macao, SAR China | | | APC |
-| MG | Madagascar | | | EUR |
-| MW | Malawi | | | EUR |
-| MY | Malaysia | | | APC |
-| MV | Maldives | | | APC |
-| ML | Mali | | | EUR |
-| MT | Malta | | | EUR |
-| MH | Marshall Islands | | | APC |
-| MQ | Martinique | | | NAM |
-| MR | Mauritania | | | EUR |
-| MU | Mauritius | | | EUR |
-| YT | Mayotte | | | EUR |
-| MX | Mexico | | | NAM |
-| MC | Monaco | | | EUR |
-| MN | Mongolia | | | APC |
-| ME | Montenegro | | | EUR |
-| MS | Montserrat | | | NAM |
-| MA | Morocco | | | EUR |
-| MZ | Mozambique | | | EUR |
-| MM | Myanmar | | | APC |
-| NA | Namibia | | | EUR |
-| NR | Nauru | | | APC |
-| NP | Nepal | | | APC |
-| NL | Netherlands | | | EUR |
-| AN | Netherlands Antilles | | | NAM |
-| NC | New Caledonia | | | APC |
-| NZ | New Zealand | | | AUS |
-| NI | Nicaragua | | | NAM |
-| NE | Niger | | | EUR |
-| NG | Nigeria | | | EUR |
-| NU | Niue | | | APC |
-| NF | Norfolk Island | | | APC |
-| MP | Northern Mariana Islands | | | APC |
-| NO | Norway | | | EUR |
-| OM | Oman | | | EUR |
-| PK | Pakistan | | | EUR |
-| PW | Palau | | | APC |
-| PS | Palestinian Territory | | | APC |
-| PA | Panama | | | NAM |
-| PG | Papua New Guinea | | | APC |
-| PY | Paraguay | | | LAM |
-| PE | Peru | | | LAM |
-| PH | Philippines | | | APC |
-| PN | Pitcairn | | | APC |
-| PL | Poland | | | EUR |
-| PT | Portugal | | | EUR |
-| PR | Puerto Rico | | | NAM |
-| QA | Qator | | | EUR |
-| MK | Republic of Macedonia | | | EUR |
-| RE | Réunion | | | EUR |
-| RO | Romania | | | EUR |
-| RU | Russian Federation | | | EUR |
-| RW | Rwanda | | | EUR |
-| SH | Saint Helena | | | EUR |
-| KN | Saint Kitts and Nevis | | | NAM |
-| LC | Saint Lucia | | | NAM |
-| PM | Saint Pierre and Miquelon | | | NAM |
-| VC | Saint Vincent and Grenadines | | | NAM |
-| BL | Saint-Barthélemy | | | NAM |
-| MF | Saint-Martin (French part) | | | NAM |
-| WS | Samoa | | | APC |
-| SM | San Marino | | | EUR |
-| ST | Sao Tome and Principe | | | EUR |
-| SA | Saudi Arabia | | | EUR |
-| SN | Senegal | | | EUR |
-| RS | Serbia | | | EUR |
-| SC | Seychelles | | | EUR |
-| SL | Sierra Leone | | | EUR |
-| SG | Singapore | | | APC |
-| SX | Sint Maarten | | | NAM |
-| SK | Slovakia | | | EUR |
-| SI | Slovenia | | | EUR |
-| SB | Solomon Islands | | | APC |
-| SO | Somalia | | | EUR |
-| ZA | South Africa | | | EUR |
-| GS | South Georgia and the South Sandwich Islands | | | NAM |
-| SS | South Sudan | | | EUR |
-| ES | Spain | | | EUR |
-| LK | Sri Lanka | | | APC |
-| SD | SUDAN - USA embargoed nation | | | EUR |
-| SR | Suriname | | | NAM |
-| SJ | Svalbard and Jan Mayen Islands | | | EUR |
-| SZ | Swaziland | | | EUR |
-| SE | Sweden | | | EUR |
-| CH | Switzerland | | | EUR |
-| SY | Syrian Arab Republic (Syria) - USA embargoed nation | | | APC |
-| TW | Taiwan, Republic of China | | | APC |
-| TJ | Tajikistan | | | EUR |
-| TH | Thailand | | | APC |
-| TL | Timor-Leste | | | APC |
-| TG | Togo | | | EUR |
-| TK | Tokelau | | | APC |
-| TO | Tonga | | | APC |
-| TT | Trinidad and Tobago | | | NAM |
-| TN | Tunisia | | | EUR |
-| TR | Turkey | | | EUR |
-| TM | Turkmenistan | | | EUR |
-| TC | Turks and Caicos Islands | | | NAM |
-| TV | Tuvalu | | | APC |
-| UG | Uganda | | | EUR |
-| UA | Ukraine | | | EUR |
-| AE | United Arab Emirates | | | EUR |
-| GB | United Kingdom | | | EUR |
-| TZ | United Republic of Tanzania | | | EUR |
-| US | United States of America | | | NAM |
-| UY | Uruguay | | | LAM |
-| UM | US Minor Outlying Islands | | | APC |
-| UZ | Uzbekistan | | | EUR |
-| VU | Vanuatu | | | APC |
-| VE | Venezuela (Bolivarian Republic) | | | NAM |
-| VN | Viet Nam | | | APC |
-| VI | Virgin Islands, US | | | NAM |
-| WF | Wallis and Futuna Islands | | | APC |
-| EH | Western Sahara | | | EUR |
-| YE | Yemen | | | EUR |
-| ZM | Zambia | | | EUR |
-| ZW | Zimbabwe | | | EUR |
+| AF | Afghanistan | APC | APC | APC |
+| AX | Aland Islands | APC | AMER | EUR |
+| AL | Albania | EUR | EUR | EUR |
+| DZ | Algeria | EUR | EUR | EUR |
+| AS | American Samoa | APC | APC | APC |
+| AD | Andorra | EUR | EUR | EUR |
+| AO | Angola | EUR | EUR | EUR |
+| AI | Anguilla | AMER | AMER | AMER |
+| AQ | Antarctica | AMER | EUR | AMER |
+| AG | Antigua and Barbuda | AMER | AMER | AMER |
+| AR | Argentina | AMER | AMER | AMER |
+| AM | Armenia | EUR | EUR | EUR |
+| AW | Aruba | AMER | AMER | AMER |
+| AU | Australia | APC | AUS | AUS |
+| AT | Austria | EUR | EUR | EUR |
+| AZ | Azerbaijan | EUR | EUR | EUR |
+| BS | Bahamas | AMER | AMER | AMER |
+| BH | Bahrain | EUR | EUR | EUR |
+| BD | Bangladesh | APC | APC | APC |
+| BB | Barbados | AMER | AMER | AMER |
+| BY | Belarus | EUR | EUR | EUR |
+| BE | Belgium | EUR | EUR | EUR |
+| BZ | Belize | AMER | AMER | AMER |
+| BJ | Benin | EUR | EUR | EUR |
+| BM | Bermuda | AMER | AMER | AMER |
+| BT | Bhutan | APC | APC | APC |
+| BO | Bolivia | AMER | AMER | AMER |
+| BQ | Bonaire | AMER | AMER | AMER |
+| BA | Bosnia and Herzegovina | EUR | EUR | EUR |
+| BW | Botswana | EUR | EUR | EUR |
+| BV | Bouvet Island | AMER | EUR | AMER |
+| BR | Brazil | AMER | AMER | AMER |
+| IO | British Indian Ocean Territory | APC | APC | APC |
+| VG | British Virgin Islands | AMER | AMER | AMER |
+| BN | Brunei Darussalam | APC | APC | APC |
+| BG | Bulgaria | EUR | EUR | EUR |
+| BF | Burkina Faso | EUR | EUR | EUR |
+| BI | Burundi | EUR | EUR | EUR |
+| KH | Cambodia | APC | APC | APC |
+| CM | Cameroon | EUR | EUR | EUR |
+| CA | Canada | AMER | AMER | CAN |
+| CV | Cape Verde | EUR | EUR | EUR |
+| KY | Cayman Islands | AMER | AMER | AMER |
+| CF | Central African Republic | EUR | EUR | EUR |
+| TD | Chad | EUR | EUR | EUR |
+| CL | Chile | AMER | AMER | AMER |
+| CN | China | APC | APC | APC |
+| CX | Christmas Island | APC | APC | APC |
+| CC | Cocos (Keeling) Islands | APC | APC | APC |
+| CO | Colombia | AMER | AMER | AMER |
+| KM | Comoros | EUR | EUR | EUR |
+| CG | Congo (Brazzaville) | EUR | EUR | EUR |
+| CD | Congo, (Kinshasa) | EUR | EUR | EUR |
+| CK | Cook Islands | APC | APC | APC |
+| CR | Costa Rica | AMER | AMER | AMER |
+| CI | Côte d'Ivoire | EUR | EUR | EUR |
+| HR | Croatia | EUR | EUR | EUR |
+| CW | Curaçao | AMER | EUR | AMER |
+| CY | Cyprus | EUR | EUR | EUR |
+| CZ | Czech Republic | EUR | EUR | EUR |
+| DK | Denmark | EUR | EUR | EUR |
+| DJ | Djibouti | EUR | EUR | EUR |
+| DM | Dominica | AMER | AMER | AMER |
+| DO | Dominican Republic | AMER | AMER | AMER |
+| EC | Ecuador | AMER | AMER | AMER |
+| EG | Egypt | EUR | EUR | EUR |
+| SV | El Salvador | AMER | AMER | AMER |
+| GQ | Equatorial Guinea | EUR | EUR | EUR |
+| ER | Eritrea | EUR | EUR | EUR |
+| EE | Estonia | EUR | EUR | EUR |
+| ET | Ethiopia | EUR | EUR | EUR |
+| FK | Falkland Islands (Malvinas) | AMER | AMER | AMER |
+| FO | Faroe Islands | EUR | EUR | EUR |
+| FM | Federated States of Micronesia | APC | APC | APC |
+| FJ | Fiji | APC | APC | AUS |
+| FI | Finland | EUR | EUR | EUR |
+| FR | France | EUR | EUR | EUR |
+| GF | French Guiana | AMER | AMER | AMER |
+| PF | French Polynesia | APC | APC | APC |
+| TF | French Southern Territories | AMER | EUR | AMER |
+| GA | Gabon | EUR | EUR | EUR |
+| GM | Gambia | EUR | EUR | EUR |
+| GE | Georgia | EUR | EUR | EUR |
+| DE | Germany | EUR | EUR | EUR |
+| GH | Ghana | EUR | EUR | EUR |
+| GI | Gibraltar | EUR | EUR | EUR |
+| GR | Greece | EUR | EUR | EUR |
+| GL | Greenland | AMER | AMER | AMER |
+| GD | Grenada | AMER | AMER | AMER |
+| GP | Guadeloupe | AMER | AMER | AMER |
+| GU | Guam | APC | APC | APC |
+| GT | Guatemala | AMER | AMER | AMER |
+| GG | Guernsey | EUR | EUR | EUR |
+| GN | Guinea | EUR | EUR | EUR |
+| GW | Guinea-Bissau | EUR | EUR | EUR |
+| GY | Guyana | AMER | AMER | AMER |
+| HT | Haiti | AMER | AMER | AMER |
+| HM | Heard and Mcdonald Islands | AMER | AMER | AMER |
+| VA | Holy See (Vatican City State) | EUR | EUR | EUR |
+| HN | Honduras | AMER | AMER | AMER |
+| HK | Hong Kong, SAR China | APC | APC | APC |
+| HU | Hungary | EUR | EUR | EUR |
+| IS | Iceland | EUR | EUR | EUR |
+| IN | India | APC | APC | APC |
+| ID | Indonesia | APC | APC | APC |
+| IQ | Iraq | EUR | EUR | EUR |
+| IE | Ireland | EUR | EUR | EUR |
+| IM | Isle of Man | EUR | EUR | EUR |
+| IL | Israel | EUR | EUR | EUR |
+| IT | Italy | EUR | EUR | EUR |
+| JM | Jamaica | AMER | AMER | AMER |
+| JP | Japan | APC | APC | JPN |
+| JE | Jersey | EUR | EUR | EUR |
+| JO | Jordan | EUR | EUR | EUR |
+| KZ | Kazakhstan | EUR | EUR | EUR |
+| KE | Kenya | EUR | EUR | EUR |
+| KI | Kiribati | APC | APC | APC |
+| KP | Korea (North) | APC | APC | APC |
+| KR | Korea (South) | APC | APC | APC |
+| XK | Kosovo | EUR | AMER | EUR |
+| KW | Kuwait | EUR | EUR | EUR |
+| KG | Kyrgyzstan | EUR | APC | EUR |
+| LA | Lao PDR | APC | APC | APC |
+| LV | Latvia | EUR | EUR | EUR |
+| LB | Lebanon | EUR | EUR | EUR |
+| LS | Lesotho | EUR | EUR | EUR |
+| LR | Liberia | EUR | EUR | EUR |
+| LY | Libya | EUR | EUR | EUR |
+| LI | Liechtenstein | EUR | EUR | EUR |
+| LT | Lithuania | EUR | EUR | EUR |
+| LU | Luxembourg | EUR | EUR | EUR |
+| MO | Macao, SAR China | APC | APC | APC |
+| MG | Madagascar | EUR | EUR | EUR |
+| MW | Malawi | EUR | EUR | EUR |
+| MY | Malaysia | APC | APC | APC |
+| MV | Maldives | APC | APC | APC |
+| ML | Mali | EUR | EUR | EUR |
+| MT | Malta | EUR | EUR | EUR |
+| MH | Marshall Islands | APC | APC | APC |
+| MQ | Martinique | AMER | AMER | AMER |
+| MR | Mauritania | EUR | EUR | EUR |
+| MU | Mauritius | EUR | EUR | EUR |
+| YT | Mayotte | EUR | EUR | EUR |
+| MX | Mexico | AMER | AMER | AMER |
+| MC | Monaco | EUR | EUR | EUR |
+| MD | Moldova | EUR | EUR | EUR |
+| MN | Mongolia | APC | APC | APC |
+| ME | Montenegro | EUR | EUR | EUR |
+| MS | Montserrat | AMER | AMER | AMER |
+| MA | Morocco | EUR | EUR | EUR |
+| MZ | Mozambique | EUR | EUR | EUR |
+| MM | Myanmar | APC | APC | APC |
+| NA | Namibia | EUR | EUR | EUR |
+| NR | Nauru | APC | APC | APC |
+| NP | Nepal | APC | APC | APC |
+| NL | Netherlands | EUR | EUR | EUR |
+| AN | Netherlands Antilles | AMER | AMER | AMER |
+| NC | New Caledonia | APC | APC | APC |
+| NZ | New Zealand | APC | APC | AUS |
+| NI | Nicaragua | AMER | AMER | AMER |
+| NE | Niger | EUR | EUR | EUR |
+| NG | Nigeria | EUR | EUR | EUR |
+| NU | Niue | APC | APC | APC |
+| NF | Norfolk Island | APC | APC | APC |
+| MP | Northern Mariana Islands | APC | APC | APC |
+| NO | Norway | EUR | EUR | EUR |
+| OM | Oman | EUR | APC | EUR |
+| PK | Pakistan | EUR | APC | EUR |
+| PW | Palau | APC | APC | APC |
+| PS | Palestinian Authority | APC | EUR | APC |
+| PA | Panama | AMER | AMER | AMER |
+| PG | Papua New Guinea | APC | APC | APC |
+| PY | Paraguay | AMER | AMER | AMER |
+| PE | Peru | AMER | AMER | AMER |
+| PH | Philippines | APC | APC | APC |
+| PN | Pitcairn | APC | APC | APC |
+| PL | Poland | EUR | EUR | EUR |
+| PT | Portugal | EUR | EUR | EUR |
+| PR | Puerto Rico | AMER | AMER | AMER |
+| QA | Qator | EUR | EUR | EUR |
+| MK | Republic of Macedonia | EUR | EUR | EUR |
+| RE | Réunion | EUR | EUR | EUR |
+| RO | Romania | EUR | EUR | EUR |
+| RU | Russian Federation | EUR | EUR | EUR |
+| RW | Rwanda | EUR | EUR | EUR |
+| SH | Saint Helena | EUR | EUR | EUR |
+| KN | Saint Kitts and Nevis | AMER | AMER | AMER |
+| LC | Saint Lucia | AMER | AMER | AMER |
+| PM | Saint Pierre and Miquelon | AMER | AMER | AMER |
+| VC | Saint Vincent and Grenadines | AMER | AMER | AMER |
+| BL | Saint-Barthélemy | AMER | EUR | AMER |
+| MF | Saint-Martin (French part) | AMER | EUR | AMER |
+| WS | Samoa | APC | APC | APC |
+| SM | San Marino | EUR | EUR | EUR |
+| ST | Sao Tome and Principe | EUR | EUR | EUR |
+| SA | Saudi Arabia | EUR | EUR | EUR |
+| SN | Senegal | EUR | EUR | EUR |
+| RS | Serbia | EUR | EUR | EUR |
+| SC | Seychelles | EUR | EUR | EUR |
+| SL | Sierra Leone | EUR | EUR | EUR |
+| SG | Singapore | APC | APC | APC |
+| SX | Sint Maarten | AMER | EUR | AMER |
+| SK | Slovakia | EUR | EUR | EUR |
+| SI | Slovenia | EUR | EUR | EUR |
+| SB | Solomon Islands | APC | APC | APC |
+| SO | Somalia | EUR | EUR | EUR |
+| ZA | South Africa | EUR | EUR | EUR |
+| GS | South Georgia and the South Sandwich Islands | AMER | EUR | AMER |
+| SS | South Sudan | EUR | EUR | EUR |
+| ES | Spain | EUR | EUR | EUR |
+| LK | Sri Lanka | APC | APC | APC |
+| SR | Suriname | AMER | AMER | AMER |
+| SJ | Svalbard and Jan Mayen Islands | EUR | EUR | EUR |
+| SZ | Swaziland | EUR | EUR | EUR |
+| SE | Sweden | EUR | EUR | EUR |
+| CH | Switzerland | EUR | EUR | EUR |
+| TW | Taiwan, Republic of China | APC | APC | APC |
+| TJ | Tajikistan | EUR | APC | EUR |
+| TH | Thailand | APC | APC | APC |
+| TL | Timor-Leste | APC | EUR | APC |
+| TG | Togo | EUR | EUR | EUR |
+| TK | Tokelau | APC | APC | APC |
+| TO | Tonga | APC | APC | APC |
+| TT | Trinidad and Tobago | AMER | AMER | AMER |
+| TN | Tunisia | EUR | EUR | EUR |
+| TR | Turkey | EUR | EUR | EUR |
+| TM | Turkmenistan | EUR | APC | EUR |
+| TC | Turks and Caicos Islands | AMER | AMER | AMER |
+| TV | Tuvalu | APC | APC | APC |
+| UG | Uganda | EUR | EUR | EUR |
+| UA | Ukraine | EUR | EUR | EUR |
+| AE | United Arab Emirates | EUR | EUR | EUR |
+| GB | United Kingdom | EUR | EUR | EUR |
+| TZ | United Republic of Tanzania | EUR | EUR | EUR |
+| US | United States of America | AMER | AMER | AMER |
+| UY | Uruguay | AMER | AMER | AMER |
+| UM | US Minor Outlying Islands | APC | APC | APC |
+| UZ | Uzbekistan | EUR | APC | EUR |
+| VU | Vanuatu | APC | APC | APC |
+| VE | Venezuela (Bolivarian Republic) | AMER | AMER | AMER |
+| VN | Vietnam | APC | APC | APC |
+| VI | Virgin Islands, US | AMER | AMER | AMER |
+| WF | Wallis and Futuna Islands | APC | APC | APC |
+| EH | Western Sahara | EUR | EUR | EUR |
+| YE | Yemen | EUR | EUR | EUR |
+| ZM | Zambia | EUR | EUR | EUR |
+| ZW | Zimbabwe | EUR | EUR | EUR |
