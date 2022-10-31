@@ -104,7 +104,7 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
 2. Provide a name and description to uniquely identify the policy. Then click on 'Select Public apps' and choose 'Microsoft Defender' for Platform iOS/IPadOS
    :::image type="content" source="images/nameiosconfig.png" alt-text="Name the configuration." lightbox="images/nameiosconfig.png":::
 
-3. In Settings page, add 'DefenderNetworkProtectionEnable' as the key and value as 'true' to disable Network Protection. (Network protection is disabled by default)
+3. In Settings page, add 'DefenderNetworkProtectionEnable' as the key and value as 'true' to enable Network Protection. (Network protection is disabled by default)
    :::image type="content" source="images/addiosconfigvalue.png" alt-text="Add configuration value." lightbox="images/addiosconfigvalue.png":::
 
 4. For other configurations related to Network protection, add the following keys and appropriate corresponding value.
