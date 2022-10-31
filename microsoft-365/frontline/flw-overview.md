@@ -6,7 +6,7 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 audience: admin
-ms.topic: article
+ms.topic: overview
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection: 
