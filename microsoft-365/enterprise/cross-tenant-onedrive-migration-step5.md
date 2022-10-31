@@ -131,14 +131,14 @@ Once the identity mapping file has been prepared, the SharePoint Administrator o
 >*Add-SPOTenantIdentityMap: The process cannot access the file 'C:\Users\myuser\Test-Identity-Map.csv' because it is being used by another process.*
 
 
-1. To upload the identity Map on the target tenant, run:
+1. To upload the identity Map on the target tenant, run the following command.  For *-IdentityMapPath*, provide the full path and filename of the identity mapping CSV file.
+
 
 ```powershell
 Add-SPOTenantIdentityMap –IdentityMapPath <identitymap.csv>  
-IdentityMapPath – 
+
 ```
 
-Provide the full path and filename of the Identity Mapping CSV file.
 
 
 >[!Important]
