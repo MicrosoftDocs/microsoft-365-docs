@@ -59,7 +59,7 @@ With their new credentials, have users sign in to OneDrive using the Microsoft 3
 Users with permission to access OneDrive content will continue to be able to access it, provided they were included in the identity mapping file
 
 ### OneDrive Sync Client
-The user must sign in to the **OneDrive Sync Client** using their new identity and to the new OneDrive location. Once this is done, files and folders will begin re-syncing to the device.
+The user must sign in to the **OneDrive Sync Client** and their new OneDrive location using their new identity. Once this is done, files and folders will begin re-syncing to the device.
 
 ### Sharing Links
 The existing shared links for the migrated files will automatically redirect to the new target location.
