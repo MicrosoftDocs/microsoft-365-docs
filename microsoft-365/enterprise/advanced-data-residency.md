@@ -3,6 +3,7 @@ title: "Advanced data residency in Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.reviewer: dmwmsft
 ms.date: 
 audience: ITPro
 ms.topic: article
@@ -59,7 +60,6 @@ The Advanced Data Residency ("ADR") add-on is intended for enterprise customers 
 - The _Tenant_ _Default Geography_ must be one of the countries included in the _Local Region Geography_
   
 Additional geographic and channel availability will be updated as available.
-
 
 Customers must cover 100% of paid users above with ADR add-on license for tenant to receive data residency for ADR workloads.
 
