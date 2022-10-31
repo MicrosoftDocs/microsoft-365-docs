@@ -25,7 +25,7 @@ Here's a look at how Microsoft 365 services work in a Multi-Geo environment.
 
 ## Administrator experience
 
-The SharePoint admin center has a [**Geo locations** tab](https://go.microsoft.com/fwlink/?linkid=2185076) in the left navigation that features a geo locations map where you can view and manage your geo locations. Use this page to add or delete geo locations for your tenant.
+The SharePoint admin center has a [**Geo locations** tab](https://go.microsoft.com/fwlink/?linkid=2185076) in the left navigation that features a geo locations map where you can view and manage your geo locations. Use this page to add or delete geo locations for your _Tenant_.
 
 ## Audit log search
 
@@ -40,11 +40,11 @@ BCS, Secure Store, and Apps all have separate instances in each satellite locati
 
 ## Compliance admin center
 
-There is one central compliance center for a Multi-Geo tenant: [Microsoft Purview admin center](https://compliance.microsoft.com/).
+There is one central compliance center for a Multi-Geo _Tenant_: [Microsoft Purview admin center](https://compliance.microsoft.com/).
 
 ## eDiscovery
 
-By default, an eDiscovery Manager or Administrator of a Multi-Geo tenant will be able to conduct eDiscovery only in the _Primary Provisioned Geography_ of that tenant. The Office 365 global administrator must assign eDiscovery Manager permissions to allow others to perform eDiscovery and assign a "Region" parameter in their applicable Compliance Security Filter to specify the region for conducting eDiscovery as satellite location, otherwise no eDiscovery will be carried out for the satellite location. To configure the Compliance Security Filter for a Region, see [Configure Office 365 Multi-Geo eDiscovery](multi-geo-ediscovery-configuration.md).
+By default, an eDiscovery Manager or Administrator of a Multi-Geo _Tenant_ will be able to conduct eDiscovery only in the _Primary Provisioned Geography_ of that _Tenant_. The Office 365 global administrator must assign eDiscovery Manager permissions to allow others to perform eDiscovery and assign a "Region" parameter in their applicable Compliance Security Filter to specify the region for conducting eDiscovery as satellite location, otherwise no eDiscovery will be carried out for the satellite location. To configure the Compliance Security Filter for a Region, see [Configure Office 365 Multi-Geo eDiscovery](multi-geo-ediscovery-configuration.md).
 
 ## Exchange Online mailboxes
 
@@ -52,7 +52,7 @@ Users' Exchange Online mailboxes are moved automatically if their PDL is changed
 
 ## Information Protection (IP) Data Loss Prevention (DLP) policy
 
-You can set your IP DLP policies for OneDrive for Business, SharePoint Online, and Exchange Online in the Security and Compliance center, scoping policies as needed to the whole tenant or to applicable users. For example: If you wish to select a policy for a user in a satellite location, select to apply the policy to a specific OneDrive for Business and enter the user's OneDrive for Business URL. See [Overview of data loss prevention policies](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e) for general guidance in creating DLP policies.
+You can set your IP DLP policies for OneDrive for Business, SharePoint Online, and Exchange Online in the Security and Compliance center, scoping policies as needed to the whole _Tenant_ or to applicable users. For example: If you wish to select a policy for a user in a satellite location, select to apply the policy to a specific OneDrive for Business and enter the user's OneDrive for Business URL. See [Overview of data loss prevention policies](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e) for general guidance in creating DLP policies.
 
 The DLP policies are automatically synchronized based on their applicability to each geo location.
 
@@ -60,15 +60,15 @@ Implementing Information Protection and Microsoft Purview Data Loss Prevention p
 
 ## Microsoft Power Apps
 
-Power Apps created for the satellite location will use the end point located in the central location for the tenant. Microsoft Power Apps is not a Multi-Geo service. 
+Power Apps created for the satellite location will use the end point located in the central location for the _Tenant_. Microsoft Power Apps is not a Multi-Geo service. 
 
 ## Microsoft Power Automate
 
-Flows created for the satellite location will use the end point located in the default geo location for the tenant.  Microsoft Power Automate is not a Multi-Geo service. 
+Flows created for the satellite location will use the end point located in the default geo location for the _Tenant_.  Microsoft Power Automate is not a Multi-Geo service. 
 
 ## SharePoint Online storage quota
 
-By default, all geo locations of a multi-geo environment share the available tenant storage quota.  You can also manage the storage quota by allocating a specific quota for a particular geo location. For more information, see [SharePoint storage quotas in multi-geo environments](sharepoint-multi-geo-storage-quota.md).
+By default, all geo locations of a multi-geo environment share the available _Tenant_ storage quota.  You can also manage the storage quota by allocating a specific quota for a particular geo location. For more information, see [SharePoint storage quotas in multi-geo environments](sharepoint-multi-geo-storage-quota.md).
 
 ## Sharing
 
@@ -94,4 +94,4 @@ See [Work with user profiles in a Multi-Geo tenant](https://learn.microsoft.com/
 
 ## Yammer
 
-Yammer is not a Multi-Geo workload. Yammer threads stored in Yammer will be placed in the tenant’s central location. Yammer is rolling out a file storage change which will store Yammer files within SharePoint. Yammer files stored in SharePoint will be placed the SharePoint site associated with the Yammer group. SharePoint group sites are based on PDL logic as outlined in [SharePoint Sites and Groups](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups).
+Yammer is not a Multi-Geo workload. Yammer threads stored in Yammer will be placed in the _Tenant’s_ central location. Yammer is rolling out a file storage change which will store Yammer files within SharePoint. Yammer files stored in SharePoint will be placed the SharePoint site associated with the Yammer group. SharePoint group sites are based on PDL logic as outlined in [SharePoint Sites and Groups](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups).
