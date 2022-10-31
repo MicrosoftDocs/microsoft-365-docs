@@ -81,4 +81,4 @@ The analyzer and all the above scenario flags can be initiated remotely by runni
 >   - **-i** - Scenario flag for collection of network trace along with other related logs
 >   - **-m** \# - The number of minutes to run (5 minutes in the above example)
 >   
->  - When using MDEClientAnalyzer.cmd the script checks for privileges using "net session" which requires the service "Server" be running. If it is not,        you will get the error message: Script is running with insufficient privileges. Please run with administrator priviliges ECHO is off.
+>  - When using MDEClientAnalyzer.cmd the script checks for privileges using "net session" which requires the service "Server" to be running. If it is not, you will get the error message _Script is running with insufficient privileges_. Run it with administrator privileges if ECHO is off.
