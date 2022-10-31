@@ -21,7 +21,7 @@ description: "Step 7 of the OneDrive Cross-tenant migration feature"
 ## Removing trust relationship
 
 >[!Important]
->Ensure you remove the Trust Relationship on both Source and Target before to your Source tenant licenses expiring. Once the licenses expire the Trust removal command will not work on Source.
+>Ensure you remove the Trust Relationship on both source and target tenants before your source tenant licenses expire. Once the licenses expire, the trust removal command will not work on source.
 
 1. On the source tenant, run this command to remove the trust relationship between Source and Target tenant.
 
@@ -59,36 +59,7 @@ With their new credentials, have users sign in to OneDrive using the Microsoft 3
 Users with permission to access OneDrive content will continue to be able to access it, provided they were included in the identity mapping file
 
 ### OneDrive Sync Client
-The user must to sign-in to the **OneDrive Sync Client** using their new identity and to the new OneDrive location. Once this is done, files and folders will begin re-syncing to the device.
+The user must sign in to the **OneDrive Sync Client** using their new identity and to the new OneDrive location. Once this is done, files and folders will begin re-syncing to the device.
 
 ### Sharing Links
 The existing shared links for the migrated files will automatically redirect to the new target location.
-
-
-## Regression of the migration
-
-If you need to Migrate a OneDrive site back from the target tenant to the original source tenant,  reverse this process.
-
-Your old target is the new source; the old source is now the new target. 
-
-Before starting any regression or rollback of OneDrive accounts back to the original source, delete any redirect links on the original source. 
-
-### Start a regression migration
-
-To start the regression migration:
-
-1. Sign in to the Sharepoint Management Shell as a SharePoint Online admin or Microsoft 365 Global admin. 
-2. On the new source tenant run:
-
-```powershell
-
-Start-SPOCrossTenantUserContentMove  -SourceUserPrincipalName <…> -TargetUserPrincipalName <…> -TargetCrossTenantHostUrl <…>
-
-```
-
-|Parameters|Description|
-|:-----|:-----|
-|SourceUserPrincipalName|User principal name of the user who owns the OneDrive on the New Source tenant.|
-|TargetUserPrincipalName |User principal name of the user who owns the OneDrive on the New Target tenant.|
-|TargetCrossTenantHostUrl|Cross-tenant Host URL of the target tenant.To determine TargetCrossTenantHostUrl, run *Get-SPOCrossTenantHostUrl* on their tenant.|
-
