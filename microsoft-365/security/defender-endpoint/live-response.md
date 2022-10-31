@@ -58,7 +58,7 @@ Before you can initiate a session on a device, make sure you fulfill the followi
     - [Version 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) with [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Version 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) with [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **macOS** - Only applicable for Public Preview, minimum required version: 101.43.84 . Supported for Intel-based and ARM-based macOS devices
+  - **macOS** - Only applicable for Public Preview, minimum required version: 101.43.84. Supported for Intel-based and ARM-based macOS devices
 
   - **Linux** - Only applicable for Public Preview, minimum required version: 101.45.13
 
