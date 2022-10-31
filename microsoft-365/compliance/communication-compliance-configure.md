@@ -128,7 +128,7 @@ Choose from these solution role group options when configuring and managing comm
 
 Complete the following steps to add users to this role group:
 
-1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
 2. Select **Permissions** in the left nav, and select **Roles** under the **Microsoft Purview solutions** list.
 
