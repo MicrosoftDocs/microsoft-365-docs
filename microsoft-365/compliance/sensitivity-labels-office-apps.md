@@ -142,7 +142,7 @@ If both of these conditions are met but you need to turn off the built-in labels
 
 If you later need to revert this configuration, change the value to **1**. You might also need to change this value to 1 if the **Sensitivity** button isn't displayed on the ribbon as expected. For example, a previous administrator turned this labeling setting off.
  
-Deploy this setting by using Group Policy, or by using the [Office cloud policy service](/DeployOffice/overview-office-cloud-policy-service). The setting takes effect when these Office apps restart. 
+Deploy this setting by using Group Policy, or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service). The setting takes effect when these Office apps restart. 
 
 Because this setting is specific to Windows Office apps, it has no impact on other apps on Windows that support sensitivity labels (such as Power BI) or other platforms (such as macOS, mobile devices, and Office for the web). If you don't want some or all users to see and use sensitivity labels across all apps and all platforms, don't assign a sensitivity label policy to those users.
 
@@ -158,7 +158,7 @@ For other labeling solutions, check their documentation for file types supported
 
 ## Protection templates and sensitivity labels
 
-Administrator-defined [protection templates](/azure/information-protection/configure-policy-templates), such as those you define for Office 365 Message Encryption, aren't visible in Office apps when you're using built-in labeling. This simplified experience reflects that there's no need to select a protection template, because the same settings are included with sensitivity labels that have encryption enabled.
+Administrator-defined [protection templates](/azure/information-protection/configure-policy-templates), such as those you define for Microsoft Purview Message Encryption, aren't visible in Office apps when you're using built-in labeling. This simplified experience reflects that there's no need to select a protection template, because the same settings are included with sensitivity labels that have encryption enabled.
 
 You can convert an existing template into a sensitivity label when you use the [New-Label](/powershell/module/exchange/new-label) cmdlet with the *EncryptionTemplateId* parameter.
 
@@ -401,7 +401,7 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 > 
 > If you configure a label to apply S/MIME protection but Outlook on Windows doesn't yet support it, the label is still displayed and can be applied, but the S/MIME settings are ignored. You won't be able to select this label for Exchange auto-labeling policies.
 
-This configuration is not available in the Microsoft Purview compliance portal. You must use PowerShell advanced settings with the [Set-Label](/powershell/module/exchange/set-label) or [New-Label](/powershell/module/exchange/new-label) cmd after you've [connected to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+This configuration is not available in the Microsoft Purview compliance portal. You must use PowerShell advanced settings with the [Set-Label](/powershell/module/exchange/set-label) or [New-Label](/powershell/module/exchange/new-label) cmd after you've [connected to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 Use these settings only when you have a working [S/MIME deployment](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) and want a label to automatically apply this protection method for emails rather than the [default protection that uses Rights Management encryption from Azure Information Protection](encryption-sensitivity-labels.md). The resulting protection will be the same as when a user manually selects S/MIME options from Outlook.
 
