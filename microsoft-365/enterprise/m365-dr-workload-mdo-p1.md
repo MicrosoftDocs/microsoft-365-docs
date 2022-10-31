@@ -9,7 +9,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.date: 
-ms.reviewer: 
+ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
 ms.collection:
@@ -36,12 +36,11 @@ Required Conditions:
 
 **Commitment:**
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-defender-for-office-p1) for the specific customer data at rest commitment for Microsoft Defender for Office P1. 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-defender-for-office-p1) for the specific customer data at rest commitment for Microsoft Defender for Office P1.
 
 Other Information
 
 In addition, processing of data that is required to analyze threats and inspect suspicious emails, documents, messages, and links is done in a sandbox environment and performed within the _Local Region Geography_ or _Expanded Local Region_.
-
 
 ## Exchange Online Protection
 
@@ -63,7 +62,7 @@ Required Conditions:
 
 **Commitment:**
 
-Please refer to the Advanced Data Residency Commitment page (***TODO: link to new page***) for the specific customer data at rest commitment for Exchange Online Protection. 
+Please refer to the [Advanced Data Residency Commitment](m365-dr-commitments.md) page for the specific customer data at rest commitment for Exchange Online Protection.
 
 ## Migration
 

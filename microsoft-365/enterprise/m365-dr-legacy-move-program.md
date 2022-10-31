@@ -8,8 +8,8 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 10/11/2022
-ms.reviewer: 
+ms.date: 
+ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
 ms.collection:
@@ -19,12 +19,11 @@ ms.collection:
 # Data Residency Legacy Move Program
 
 > [!NOTE]
-> *Coinciding with the launch of the Microsoft 365 Advanced Data Residency add-on, the Move Program will no longer be offered during the launch of new local datacenter regions.  Our most recent local datacenter region launch in Qatar (August 2022) is the final region to receive Move Program benefits. The following information is still valid for regions that were part of Move Program and all customers currently opted-in for migration will be processed.  For more details, see [the ADR page](advanced-data-residency.md).*
+> Coinciding with the launch of the Microsoft 365 Advanced Data Residency add-on, the Move Program will no longer be offered during the launch of new local datacenter regions.  Our most recent local datacenter region launch in Qatar (August 2022) is the final region to receive Move Program benefits. The following information is still valid for regions that were part of Move Program and all customers currently opted-in for migration will be processed.  For more details, see [the ADR page](advanced-data-residency.md).
 
 ## How to Request your Data Move - FINAL OPPORTUNITY
 
-> [!NOTE]
-> *With the launch of the Microsoft 365 Advanced Data Residency add-on and associated changes to the Move Program, we are providing a final opportunity for eligible commercial and public sector customers to receive a complimentary _Tenant_ migration into their local datacenter region.  For a limited time, customers may only opt-in for complimentary migration from macro region into a local datacenter region that matches initial signup country.  _Tenant_ migrations may take up to 24 months to complete, commencing at request deadline date.  See table below for a list of eligible countries and associated dates.*
+With the launch of the Microsoft 365 Advanced Data Residency add-on and associated changes to the Move Program, we are providing a final opportunity for eligible commercial and public sector customers to receive a complimentary _Tenant_ migration into their local datacenter region.  For a limited time, customers may only opt-in for complimentary migration from macro region into a local datacenter region that matches initial signup country.  _Tenant_ migrations may take up to 24 months to complete, commencing at request deadline date.  See table below for a list of eligible countries and associated dates.
 
 Eligible customers will see a page in the Microsoft 365 admin center which will allow them to request to have their applicable customer data moved to their new datacenter region.
 
@@ -77,8 +76,8 @@ During the migration process, Microsoft temporarily copies your address book dat
 
 ## Data move general FAQ
 
-> [!NOTE]
-> **The following Q&A content relates to Move Program customers** ***only***.
+>[!NOTE]
+>The following Q&A content relates to Move Program customers **only**.
 
 Here are answers to general questions about moving applicable  customer data at rest to a new datacenter geo.
 

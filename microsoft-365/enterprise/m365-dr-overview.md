@@ -8,8 +8,8 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 10/11/2022
-ms.reviewer: 
+ms.date: 
+ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
 ms.collection:
@@ -44,13 +44,12 @@ To provide clarity to the descriptions below on data residency functionality and
 |M365 Multi-Geo Capabilities  <br/> |M365 Multi-Geo Capabilities allows a single _Tenant_ to store customer data-at-rest across multiple geographies rather than be limited to the single _Primary Provisioned Geography_. Please see the Multi-Geo description for more detail.  <br/> |
 |Preferred Data Location (PDL)  <br/> |Used for _Tenants_ with a Multi-Geo subscription.  A property set by the administrator that indicates where the user or shared resource's s data should be stored at-rest.  Please see the Multi-Geo description for more detail.  <br/> |
 |Advanced Data Residency (ADR)  <br/> |A new M365 add-on service that guarantees customer data residency for a defined set of services. See section 3  <br/> |
-|Privacy and Security Product Terms  <br/> |Privacy and Security Terms for M365 services provides some customre data location related commitments.  The document can be found <a href="https://www.microsoft.com/licensing/terms/en-US/product/PrivacyandSecurityTerms/EAEAS" target="_blank">here</a>.  The extract of the relevant section (on November 1, 2022) is:<br>**Office 365 Services.** If Customer provisions its _Tenant_ in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, or the United States, Microsoft will store the following Customer Data at rest only within that Geo: (1) Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments), (2) SharePoint Online site content and the files stored within that site,  (3) files uploaded to OneDrive for Business, and (4) Microsoft Teams chat messages (including private messages, channel messages, meeting messages and images used in chats), and for customers using Microsoft Stream (on SharePoint), meeting recordings.
+|Privacy and Security Product Terms  <br/> |Privacy and Security Terms for M365 services provides some customer data location related commitments.  The document can be found <a href="https://www.microsoft.com/licensing/terms/en-US/product/PrivacyandSecurityTerms/EAEAS" target="_blank">here</a>. The extract of the relevant section (on November 1, 2022) is:<br>**Office 365 Services.** If Customer provisions its _Tenant_ in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, or the United States, Microsoft will store the following Customer Data at rest only within that Geo: (1) Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments), (2) SharePoint Online site content and the files stored within that site,  (3) files uploaded to OneDrive for Business, and (4) Microsoft Teams chat messages (including private messages, channel messages, meeting messages and images used in chats), and for customers using Microsoft Stream (on SharePoint), meeting recordings.
 |Workloads  <br/> |Often used to refer to a M365 service such as but not limited to Exchange Online, SharePoint Online, Microsoft Teams, etc.|
 
 ## Overview of Data Residency
 
 Microsoft 365 Cloud services run on our data centers around the world and provide services to customers around the world.  Customer data may be stored in multiple data centers.  Data residency refers to the geographic location where customer data is stored at rest. Data residency is important for government, public sector, education and regulated commercial entities to help ensure protection of personal and/or sensitive information.  In many countries, customers are expected to comply with laws, regulations or industry standards that explicitly govern the location of data storage.
-
 
 Microsoft makes decisions on where to persistently store customer data based on two factors:
 
@@ -179,7 +178,6 @@ The following Regional Geographies can store data at rest.
 |United Kingdom       |Durham, London, Cardiff      |
 |United States    |Boydton, Cheyenne, Chicago, Des Moines, Quincy, San Antonio, Santa Clara, San Jose       |
 
-
 ### FAQ
 
 #### How does Microsoft define data?
@@ -200,14 +198,14 @@ Microsoft does not disclose the exact addresses of its data centers. We establis
 #### Does the location of your customer data have a direct impact on your end users' experience?
 <details><summary>Click to expand</summary>
 
-The performance of Microsoft 365 is not simply proportional to a _Tenant_ user's distance to data center locations. Microsoft's continued investments in its global cloud network, global cloud infrastructure, and the Microsoft 365 services architecture help provide users with a singular, consistent experience independent of where customer data is stored at rest. If your users are experiencing performance issues, you should troubleshoot those in depth. Microsoft has published guidance for Microsoft 365 customers to plan for and optimize end-user performance on the [Office Support web site](./network-planning-and-performance.md).
+The performance of Microsoft 365 is not simply proportional to a _Tenant_ user's distance to data center locations. Microsoft's continued investments in its global cloud network, global cloud infrastructure, and the Microsoft 365 services architecture help provide users with a singular, consistent experience independent of where customer data is stored at rest. If your users are experiencing performance issues, you should troubleshoot those in depth. Microsoft has published guidance for Microsoft 365 customers to plan for and optimize end-user performance on the [Office Support web site](network-planning-and-performance.md).
 
 </details>
 
 #### How does Microsoft help me comply with my national, regional, and industry-specific regulations?
 <details><summary>Click to expand</summary>
 
-To help a _Tenant_ comply with national, regional, and industry-specific requirements governing the collection and use of individuals' data, Microsoft 365 offers the most comprehensive set of compliance offerings of any global cloud productivity provider. Please review [our compliance offerings](https://learn.microsoft.com/compliance/regulatory/offering-home) and more details in the [Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=862317) section on the Microsoft Trust Center. Also, certain Microsoft 365 plans offer further compliance solutions to help a _Tenant_ manage their data, comply with legal and regulatory requirements, and monitor actions taken on their data.
+To help a _Tenant_ comply with national, regional, and industry-specific requirements governing the collection and use of individuals' data, Microsoft 365 offers the most comprehensive set of compliance offerings of any global cloud productivity provider. Please review [our compliance offerings](/compliance/regulatory/offering-home) and more details in the [Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=862317) section on the Microsoft Trust Center. Also, certain Microsoft 365 plans offer further compliance solutions to help a _Tenant_ manage their data, comply with legal and regulatory requirements, and monitor actions taken on their data.
 
 </details>
 
@@ -246,12 +244,9 @@ Please review the [Products available by region](https://go.microsoft.com/fwlink
 
 </details>
 
-
 #### Why do I see my Microsoft 365 service requests for my data at rest connecting to servers in countries outside of my region?
 <details><summary>Click to expand</summary>
 
 On occasion, a customer request may be handled by servers in a different region than the location where a _Tenant's_ customer data is stored at rest. This may happen where network routing decisions choose a different server for the request processing, but in these cases such _Tenant's_ customer data is not moved to a new at rest location.
 
 </details>
-
-

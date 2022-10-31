@@ -8,8 +8,8 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 10/14/2022
-ms.reviewer: 
+ms.date: 
+ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
 ms.collection:
@@ -29,7 +29,6 @@ Capability summary: Office for the web (formerly Office Web Apps) opens Word, Ex
 ### Advanced Data Residency add-on
 
 Required Conditions:
-
 
 1. _Tenant_ has a sign-up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
 1. _Tenant_ has a valid _Advanced Data Residency_ subscription for all users in the _Tenant_.

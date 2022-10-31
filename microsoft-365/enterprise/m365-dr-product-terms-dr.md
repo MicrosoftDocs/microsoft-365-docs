@@ -9,7 +9,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.date:
-ms.reviewer: 
+ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
 ms.collection:
@@ -27,8 +27,7 @@ Microsoft Privacy and Security product terms included with Microsoft's Cloud pro
 The language at time of writing this article is:
 
 - **Office 365 Services** If Customer provisions its tenant in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, or the United States, Microsoft will store the following Customer Data at rest only within that Geo: (1) Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments), (2) SharePoint Online site content and the files stored within that site,  (3) files uploaded to OneDrive for Business, and (4) Microsoft Teams chat messages (including private messages, channel messages, meeting messages and images used in chats), and for customers using Microsoft Stream (on SharePoint), meeting recordings.
-- 
-- *For current language please refer to the Privacy and Security Product Terms <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank">webpage</a> and view the section titled "Location of Customer Data at Rest for Core Online Services"*.
+- For current language please refer to the Privacy and Security Product Terms <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank">webpage</a> and view the section titled "Location of Customer Data at Rest for Core Online Services".
 
 For data residency support for _Expanded Local Geographies_ or additional services, refer to the _Multi-Geo_ service and/or the _Advanced Data Residency_ service.
 
@@ -37,4 +36,3 @@ For data residency support for _Expanded Local Geographies_ or additional servic
 When Microsoft's data centers were launched in *Local Geographies*, it was possible for any tenant with the appropriate *Default Geography* to opt in to move their data into the *Local Geographies*. This opt in period was open for six months after the Data Center was operational.
 
 Practically, this means that there are a number of tenants that did not opt in to move and remain in the *Regional Geography* data centers.  On our about Nov 1, 2022 with the introduction of the Advanced Data Residency add-on, all tenants that remain in the *Regional Geography* data centers will have another six month period to opt in for data migration to their *Local Geography*.  See the [Legacy Move Program page](m365-dr-legacy-move-program.md#how-to-request-your-data-move---final-opportunity) for more details.
-

@@ -8,8 +8,8 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 10/14/2022
-ms.reviewer: 
+ms.date: 
+ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
 ms.collection:
@@ -28,7 +28,7 @@ Required Conditions:
 
 **Commitment:**
 
-*For current language please refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled "Location of Customer Data at Rest for Core Online Services".*
+_For current language please refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled "Location of Customer Data at Rest for Core Online Services"._
 
 ### Advanced Data Residency add-on
 
@@ -40,7 +40,7 @@ Required Conditions:
 
 **Commitment:**
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#sharepoint-onlineonedrive-for-business) for the specific customer data at rest commitment for SharePoint Online and OneDrive for Business. 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#sharepoint-onlineonedrive-for-business) for the specific customer data at rest commitment for SharePoint Online and OneDrive for Business.
 
 ### Multi-Geo add-on
 
@@ -67,7 +67,7 @@ Users get a seamless experience when using Microsoft 365 services, including Off
 Each user's OneDrive can be provisioned in or moved by an administrator to a _Satellite Geography_ location in accordance with the user's PDL. Personal files are then kept in that _Satellite Geography_ location, though they can be shared with users in other _Macro Region Geography_ or _Local Region Geography_ locations.
 
 ### **SharePoint Sites and Groups**
-Management of the Multi-Geo feature is available through the SharePoint admin center. 
+Management of the Multi-Geo feature is available through the SharePoint admin center.
 
 When a user creates a SharePoint group-connected site in a multi-geo environment, their PDL is used to determine the _Macro Region Geography_ or _Local Region Geography_ location where the site and its associated Group mailbox are created. (If the user's PDL value hasn't been set, or has been set to _Macro Region Geography_ or _Local Region Geography_ location that hasn't been configured as a _Satellite Geography_ location, then the site and mailbox are created in the _Primary Provisioned Geography_.)
 
@@ -221,7 +221,7 @@ The move statuses are described in the following table.
 |Status|Description|
 |---|---|
 |NotStarted|The move has not started|
-|InProgress (*n*/4)|The move is in progress in one of the following states: <ul><li>Validation (1/4)</li><li>Backup (2/4)</li><li>Restore (3/4)</li><li>Cleanup (4/4)</li></ul>|
+|InProgress (_n_/4)|The move is in progress in one of the following states: <ul><li>Validation (1/4)</li><li>Backup (2/4)</li><li>Restore (3/4)</li><li>Cleanup (4/4)</li></ul>|
 |Success|The move has completed successfully.|
 |Failed|The move failed.|
 
@@ -532,7 +532,7 @@ In the course of moving your SharePoint Online data, we migrate your search inde
   
 The following search features are affected:
   
-- Search results and Search Web Parts: Results don't include changes that occurred after the migration until crawling picks them up. 
+- Search results and Search Web Parts: Results don't include changes that occurred after the migration until crawling picks them up.
 - Delve: Delve doesn't include changes that occurred after the migration until crawling picks them up.
 - Popularity and Search Reports for the site: Counts for Excel reports in the new location only include migrated counts and counts from usage reports that have run after we completed moving your SharePoint Online data. Any counts from the interim period are lost and can't be recovered. This period is typically a couple of days. Some customers might experience shorter or longer losses.
 - Video Portal: View counts and statistics for the Video Portal depend on the statistics for Excel Reports, so view counts and statistics for the Video Portal are lost for the same time period as for the Excel reports.

@@ -8,8 +8,8 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 10/14/2022
-ms.reviewer: 
+ms.date: 
+ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
 ms.collection:
@@ -26,7 +26,7 @@ Required Conditions:
 
 Tenant has a sign up country included in Local Region Geography, the European Union or the United States.
 
-*For current language please refer to the Privacy and Security Product Terms <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank">**webpage**</a> and view the section titled "Location of Customer Data at Rest for Core Online Services".*
+_For current language please refer to the Privacy and Security Product Terms <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank">**webpage**</a> and view the section titled "Location of Customer Data at Rest for Core Online Services"._
 
 **Commitment:**
 
@@ -106,7 +106,7 @@ In Exchange Online Multi-Geo environments, you don't need to do any manual steps
 
 Typically, Exchange Online PowerShell will connect to _Primary Provisioned Geography_ location. But, you can also connect directly to _Satellite Geography_ locations. Because of performance improvements, we recommend connecting directly to the _Satellite Geography_ location when you only manage users in that location.
 
-The requirements for installing and using the Exchange Online PowerShell module are described in ***[Install and maintain the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module)***.
+The requirements for installing and using the Exchange Online PowerShell module are described in **[Install and maintain the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module)**.
 
 To connect Exchange Online PowerShell to a specific _Geography_ location, the ConnectionUri parameter is different than the regular connection instructions. The rest of the commands and values are the same.
 
@@ -247,13 +247,13 @@ You can't move inactive mailboxes that are preserved for compliance purposes (fo
   
 #### Create new cloud mailboxes in a specific _Geography_ location
 
-To create a new mailbox in a specific *Geographic* location, you need to do either of these steps:
+To create a new mailbox in a specific _Geographic_ location, you need to do either of these steps:
 
-- Configure the **PreferredDataLocation** value as described in the previous [Move an existing cloud-only mailbox to a specific *Geographic* location](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location) section *before* you create the mailbox in Exchange Online. For example, configure the **PreferredDataLocation** value on a user before you assign a license.
+- Configure the **PreferredDataLocation** value as described in the previous [Move an existing cloud-only mailbox to a specific _Geographic_ location](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location) section _before_ you create the mailbox in Exchange Online. For example, configure the **PreferredDataLocation** value on a user before you assign a license.
 
 - Assign a license at the same time you set the **PreferredDataLocation** value.
 
-To create a new cloud-only licensed user (not AAD Connect synchronized) in a specific *Geographic* location, use the following syntax in Azure AD PowerShell:
+To create a new cloud-only licensed user (not AAD Connect synchronized) in a specific _Geographic_ location, use the following syntax in Azure AD PowerShell:
 
 ```powershell
 New-MsolUser -UserPrincipalName <UserPrincipalName> -DisplayName "<Display Name>" [-FirstName <FirstName>] [-LastName <LastName>] [-Password <Password>] [-LicenseAssignment <AccountSkuId>] -PreferredDataLocation <GeoLocationCode>
@@ -284,7 +284,7 @@ You can use the standard onboarding tools and processes to migrate a mailbox fro
 
 The first step is to verify a user object exists for each mailbox to be onboarded, and verify the correct **PreferredDataLocation** value is configured in Azure AD. The onboarding tools will respect the **PreferredDataLocation** value and will migrate the mailboxes directly to the specified geo location.
 
-Or, you can use the following steps to onboard mailboxes directly in a specific *Geographic* location using the [New-MoveRequest](/powershell/module/exchange/new-moverequest) cmdlet in Exchange Online PowerShell.
+Or, you can use the following steps to onboard mailboxes directly in a specific _Geographic_ location using the [New-MoveRequest](/powershell/module/exchange/new-moverequest) cmdlet in Exchange Online PowerShell.
 
 1. Verify the user object exists for each mailbox to be onboarded and that **PreferredDataLocation** is set to the desired value in Azure AD. The value of **PreferredDataLocation** will be synchronized to the **MailboxRegion** attribute of the corresponding mail user object in Exchange Online.
 

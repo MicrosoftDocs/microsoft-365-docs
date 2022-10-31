@@ -9,7 +9,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.date: 
-ms.reviewer: 
+ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
 ms.collection:
@@ -22,7 +22,7 @@ ms.collection:
 
 Service documentation: [Microsoft Viva Topics overview](/viva/topics/topic-experiences-overview)
 
-Capability summary: Viva Topics uses Microsoft Artifical Intelligence technology, Microsoft 365, Microsoft Graph, Search, and other components and services to bring knowledge to your users in the Microsoft 365 apps they use everyday, starting with SharePoint modern pages, Outlook, Microsoft Search, and Search in Word, PowerPoint, and Excel.
+Capability summary: Viva Topics uses Microsoft Artificial Intelligence technology, Microsoft 365, Microsoft Graph, Search, and other components and services to bring knowledge to your users in the Microsoft 365 apps they use everyday, starting with SharePoint modern pages, Outlook, Microsoft Search, and Search in Word, PowerPoint, and Excel.
 
 ## Data Residency Commitments Available
 
@@ -36,7 +36,7 @@ Required Conditions:
 
 **Commitment:**
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#viva-topics) for the specific customer data at rest commitment for Viva Topics. 
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#viva-topics) for the specific customer data at rest commitment for Viva Topics.
 
 ## Migration
 
