@@ -398,8 +398,8 @@ This feature is available for devices running any of the following Windows versi
 You can define removeable storage devices by these parameters:
 
 - Storage device friendly name - Get the Friendly name value from the storage device property details in device manager.
-- USB product ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
-- USB vendor ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+- USB product ID - Get the Device Instance path value from the USB device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+- USB vendor ID - Get the Device Instance path value from the USB device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
 - Serial number ID - Get the serial number ID value from the storage device property details in device manager.
 - Device ID - Get the device ID value from the storage device property details in device manager.
 - Instance path ID - Get the device ID value from the storage device property details in device manager.
