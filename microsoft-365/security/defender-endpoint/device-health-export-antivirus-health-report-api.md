@@ -80,7 +80,7 @@ This API retrieves a list of Microsoft Defender Antivirus device antivirus healt
 #### 1.1.1 Limitations
 
 - maximum page size is 200,000
-- Rate limitations for this API are (**_example_** 30 calls per minute and 1000 calls per hour._)
+- Rate limitations for this API are 30 calls per minute and 1000 calls per hour.
 
 #### OData supported operators
 
