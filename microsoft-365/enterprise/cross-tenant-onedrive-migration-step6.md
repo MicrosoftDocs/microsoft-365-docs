@@ -109,6 +109,16 @@ Get-SPOCrossTenantUserContentMoveState -PartnerCrossTenantHostURL <PartnerCrossT
 Get-SPOUserAndContentMoveState -PartnerCrossTenantHostURL https://m365x946316-my.sharepoint.com - SourceUserPrincipalName DiegoS@M365x016651.OnMicrosoft.com
 ```
 
+To get the status of the move based on a particular user’s UPN but with more information, use the *-Verbose* parameter
+
+Example:
+
+```PowerShell
+
+Get-SPOCrossTenantUserContentMoveState -PartnerCrossTenantHostURL https://ttesttenant-my.sharepoint.com -SourceUserPrincipalName User3@stesttenant.onmicrosoft.com -Verbose 
+
+```
+
 
 ## Migration States
 
