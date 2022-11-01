@@ -18,9 +18,9 @@ description: "Step 6 of the OneDrive Cross-tenant migration feature"
 ---
 # Step 6: Start a OneDrive Cross-Tenant Migration
 
-Now you are ready to start your OneDrive migration.  Before starting any cross-tenant migration, do the following steps. 
+Now you're ready to start your OneDrive migration.  Before starting any cross-tenant migration, do the following steps. 
 
-1. Ensure you have verified the compatibility status. if you see a compatible status on your source tenant you may continue. Run:
+1. Ensure you've verified the compatibility status. if you see a compatible status on your source tenant you may continue. Run:
 
 ```powershell
 Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL [Target tenant hostname]
@@ -35,10 +35,10 @@ Start-SPOCrossTenantUserContentMove  -SourceUserPrincipalName <…> -TargetUserP
 |Parameters|Description|
 |:-----|:-----|
 |SourceUserPrincipalName|User principal name of the user who owns the OneDrive on the Source tenant.|
-|TargetUserPrincipalName| – user principal name of the user who owns the OneDrive on the Target tenant.|
-|TargetCrossTenantHostUrl| – the Cross-Tenant Host URL of the Target tenant. The partner tenant admin can determine this for you by running. To determine TargetCrossTenantHostUrl, the Admin can determine this by running Get-SPOCrossTenantHostUrl on their tenant.|
+|TargetUserPrincipalName|User principal name of the user who owns the OneDrive on the Target tenant.|
+|TargetCrossTenantHostUrl|The Cross-tenant Host URL of the target tenant. To find the TargetCrossTenantHostUrl, run *Get-SPOCrossTenantHostUrl* on the tenant.|
 
-In our example the command would be:
+Example:
 
 ```Powershell
 
@@ -49,7 +49,7 @@ Start-SPOCrossTenantUserContentMove -SourceUserPrincipalName DiegoS@M365x016651.
 
 To Schedule a migration for a later time, you may use and append the above command with the one of the following parameters. 
 
-These commands can be useful when planning bulk batches of OneDrive migrations.  You can queue/migrate up to 4,000 OneDrive migrations per batch.  If your user count exceeded 4,000 then separate batches can be created and scheduled to run once the current batch is close to completion.
+These commands can be useful when planning bulk batches of OneDrive migrations.  You can queue/migrate up to 4,000 OneDrive migrations per batch.  If your user count exceeds 4,000, create separate batches, and schedule them to run once the current batch is close to completion.
 
 |Parameter|Description|
 |:-----|:-----|
@@ -59,16 +59,14 @@ These commands can be useful when planning bulk batches of OneDrive migrations. 
 
 ## OneDrive status pre-migration
 
-Before starting the migration you will expect to see the users current Source OneDrive status as below.
-
-In this example, that they are on the Source tenant and their current files and folders are displayed.
+Before starting the migration, the users current source OneDrive status will be similar to the example below.  This example is from the users source tenant, showing their current files and folders.
 
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-status-premigration.png" alt-text="pre-migration status":::
 
 ## Cancelling a OneDrive migration
 
-You can stop the cross-tenant migration of a user's OneDrive by using the following command, provided the migration is not In Progress or Success status.
+You can stop the cross-tenant migration of a user's OneDrive by using the following command, provided the migration isn't In Progress or Success status.
 
 ```powershell
 
@@ -79,7 +77,7 @@ Stop-SPOCrossTenantUserContentMove – SourceUserPrincipalName DiegoS@M365x01665
 
 ## Determining current status of a migration
 
-Once you have started your Migration you can check its status by using the following command on Source OR Target tenant:
+After starting your migration, you can check its status using the following command on either the source OR target tenant:
 
 **Source command format**
 ```powershell
@@ -109,7 +107,7 @@ Get-SPOCrossTenantUserContentMoveState -PartnerCrossTenantHostURL <PartnerCrossT
 Get-SPOUserAndContentMoveState -PartnerCrossTenantHostURL https://m365x946316-my.sharepoint.com -SourceUserPrincipalName DiegoS@M365x016651.OnMicrosoft.com
 ```
 
-To get the status of the move based on a particular user’s UPN but with more information, use the *-Verbose* parameter
+To get the status of the move based on a particular user’s UPN but with more information, use the *-Verbose* parameter.
 
 Example:
 
@@ -125,12 +123,12 @@ Get-SPOCrossTenantUserContentMoveState -PartnerCrossTenantHostURL https://ttestt
 
 |Status|Description|
 |:-----|:-----|
-|NotStarted|The migration has not yet started.|
+|NotStarted|The migration hasn't yet started.|
 |Scheduled|The migration is now in the queue and is scheduled to run when a slot becomes available.|
 |ReadytoTrigger|The Migration is in its pre-flight stage and will start the Migration shortly.|
 |InProgress|The migration is in progress in one of the following states: </br>- Validation </br>- Backup </br>- Restore </br>- Cleanup|
 |Success|The Migration has completed successfully.|
-|Rescheduled|The migration may not have completed and has been re-queued for another pass.|
+|Rescheduled|The migration may not have completed and has been requeued for another pass.|
 |Failed	|The migration failed to complete.|
 
 
@@ -138,7 +136,7 @@ Get-SPOCrossTenantUserContentMoveState -PartnerCrossTenantHostURL https://ttestt
 ## Post-migration status checks
 
 **Target tenant:** 
-Once the migration has completed successfully you can check the status of the user on the target tenant by logging into their new OneDrive account. 
+After the migration has successfully completed, check the status of the user on the target tenant by logging into their new OneDrive account. 
 
 **Source tenant:**
 Since the user has successfully migrated to the target tenant, they no longer have an active OneDrive account on the source.
