@@ -60,15 +60,9 @@ To review the templates available to your organization, go to your **Assessment 
 
 ## Included templates
 
-One or more of the templates listed below are included as part of your licensing agreement. The Microsoft Data Protection Baseline template is included for all organizations.
+- **Customers at all subscription levels**: The [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) template is included for all organizations as part of their subscription.
 
-- [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
-- [European Union GDPR](/compliance/regulatory/gdpr)
-- [ISO/IEC 27001:2013](/compliance/regulatory/offering-iso-27001)
-- NIST 800-53 Revs. 4 and 5
-
-> [!NOTE]
-> For US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers: the Cybersecurity Maturity Model Certification (CMMC) Levels 1 through 5 templates are included, in addition to the templates listed above.
+- **US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers**: the Cybersecurity Maturity Model Certification (CMMC) Levels 1 through 5 templates are included, in addition to the Microsoft Data Protection Baseline template.
 
 ## Preview templates
 
@@ -87,7 +81,7 @@ The templates listed below are currently available for preview. Creating assessm
 
 ## Premium templates
 
-The templates listed below may be purchased by your organization.
+The templates listed below may be purchased by your organization. Certain organizations can use three premium templates as part of their licensing agreement. Review [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ### Global
 

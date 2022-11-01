@@ -75,7 +75,7 @@ You can create a group while creating a new assessment. Groups can't be created 
 
 ## Understand templates before creating assessments
 
-Assessment templates contain the controls and action recommendations for assessments, based on certifications for different privacy regulations and standards. Your organization starts out with at least one and possibly more **included** templates available to use, depending on your licensing agreement. Your organization may also purchase additional **premium** templates.
+Assessment templates contain the controls and action recommendations for assessments, based on certifications for different privacy regulations and standards. Your organization starts out with one **included** template available to use, and may be able to use additional **premium** templates for free depending on your licensing agreement. Your organization may  purchase additional **premium** templates.
 
 Each template exists in two versions: one for use with Microsoft 365 (or other Microsoft products as available), and a universal version that can be tailored to assess other products that you use. You can choose the appropriate template type for the product you want to assess.
 
