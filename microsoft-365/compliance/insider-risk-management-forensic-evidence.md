@@ -47,23 +47,23 @@ The following tables include the supported minimum requirements for utilizing in
 
 |**Hardware**|**Minimum requirement**|
 |:----------|:-------------------------------|
-| RAM | minimum of 8 GB (at least 2 GB should be available for client usage |
+| RAM | Minimum of 8 GB (at least 2 GB should be available for client usage |
 | CPU processor | Intel i5 or above and AMD Ryzen 5 or above |
 | Graphics card | Compatible with DirectX 11 or later, with a WDDM 1.0 driver or later (currently only integrated graphics cards supported)|
-| Disk space | minimum of 10GB of disk storage |
-| Display | minimum screen resolution of 1920 x 1080 | 
+| Disk space | Minimum of 10 GB of disk storage |
+| Display | Minimum screen resolution of 1920 x 1080 | 
 
 ### Hyper-V and virtual machines
 
 |**Hardware**|**Minimum requirement**|
 |:----------|:-------------------------------|
-| RAM | minimum of 16 GB (at least 2 GB should be available for client usage) |
-| CPU processor | minimum of two vCPU processors and at least four cores for each vCPU processor |
-| Disk space | minimum of 10GB of disk storage |
-| Display | minimum screen resolution of 1920 x 1080 | 
+| RAM | Minimum of 16 GB (at least 2 GB should be available for client usage) |
+| CPU processor | Minimum of two vCPU processors and at least four cores for each vCPU processor |
+| Disk space | Minimum of 10 GB of disk storage |
+| Display | Minimum screen resolution of 1920 x 1080 | 
 
 > [!IMPORTANT]
-> If the minimum requirements aren't met, users are likely to run into device issues and the quality of forensic recordings may not be reliable.
+> If the minimum requirements aren't met, users are likely to run into Microsoft Purview client issues and the quality of forensic recordings may not be reliable.
 
 ## Capturing options
 
