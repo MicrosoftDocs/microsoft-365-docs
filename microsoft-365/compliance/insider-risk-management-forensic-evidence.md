@@ -60,7 +60,7 @@ The following tables include the minimum requirements to use the Microsoft Purvi
 | RAM | Minimum of 16 GB (at least 2 GB should be available for client usage) |
 | CPU processor | Minimum of two vCPU processors and at least four cores for each vCPU processor |
 | Disk space | Minimum of 10 GB of disk storage |
-| Display | minimum screen resolution of 1920 x 1080 | 
+| Display | Minimum screen resolution of 1920 x 1080 | 
 
 > [!IMPORTANT]
 > If the minimum requirements aren't met, users are likely to run into device issues and the quality of forensic recordings may not be reliable.
