@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: MET150
 description: "Step 1 of the OneDrive Cross-tenant migration feature"
 ---
-# Step 1: Cross-tenant OneDrive migration - Connect to the source and target tenants
+# Step 1: Connect to the source and target tenants
 
 The first step in your cross-tenant OneDrive migration, is to connect to both your SharePoint source and target tenant.
 

@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: MET150
 description: "Step 3 of the OneDrive Cross-tenant migration feature"
 ---
-# Step 3: Cross-tenant OneDrive migration - Verifying trust
+# Step 3: Verifying trust
 
 Before proceeding with your migration,  you'll need to verify the trust is complete. A status of *GoodToProceed*,  confirms that the trust is verified.
 

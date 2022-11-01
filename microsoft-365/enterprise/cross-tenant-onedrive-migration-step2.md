@@ -16,7 +16,11 @@ ms.collection:
 search.appverid: MET150
 description: "Step 2 of the OneDrive Cross-tenant migration feature"
 ---
-# Step 2: Cross-tenant OneDrive migration - Establishing trust between the source and target tenants
+# Step 2: Establishing trust between the source and target tenants
+
+>[Note]
+> This is one in a series of steps on how to do a OneDrive cross-tenant migration.  
+
 
 After connecting to the source and target tenant, the next step in performing a cross-tenant OneDrive migration is establishing trust between the tenants.
 
