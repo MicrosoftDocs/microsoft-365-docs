@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/26/2022
+ms.date: 11/01/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -60,6 +60,11 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
+
+## October 2022
+
+- [Network protection C2 detection and remediation is now generally available](network-protection.md#block-command-and-control-attacks). <br/>Attackers often compromise existing internet-connected servers to become their command and control servers. Attackers can use the compromised servers to hide malicious traffic and deploy malicious bots that are used to infect endpoints. Network protection detection and remediation will help improve the time it takes security operations (SecOps) teams to pinpoint and respond to malicious network threats that are looking to compromise endpoints.
+
 
 ## September 2022
 
