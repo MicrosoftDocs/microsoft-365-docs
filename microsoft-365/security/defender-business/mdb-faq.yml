@@ -26,10 +26,15 @@ summary: |
 sections:
   - name: General
     questions:
+      - question: Can I extend my preview trial of Defender for Business or Microsoft Defender for Business servers?
+        answer: |
+          As Defender for Business and Microsoft Defender for Business servers are both now generally available, the preview program for each has ended and can't be extended.   
+          
+          See [Get Defender for Business](get-defender-business.md) or [Get Microsoft Defender for Business servers](get-defender-business-servers.md).
 
       - question: How do I try or buy Defender for Business?
         answer: |
-          Go to the [Defender for Business](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business) web page, and select the option to try or buy Defender for Business.
+          Go to the [Defender for Business](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business) product page, and select the option to try or buy Defender for Business.
 
           For more information, see [Get Defender for Business](get-defender-business.md).
 
@@ -44,10 +49,12 @@ sections:
       - question: How many devices can I onboard and secure with Defender for Business? 
         answer: |
           You can onboard and secure up to five client devices per user license.
+
+          If you have servers, you'll need the [Microsoft Defender for Business servers](get-defender-business-servers.md) add-on.
           
       - question: Does Defender for Business protect Mac, Android, and iOS/iPadOS client devices?
         answer: |
-          Yes. Defender for Business supports protection for Mac, Android, and iOS/iPadOS devices. See [Onboard devices](mdb-onboard-devices.md).
+          Yes. Defender for Business supports protection for Windows, Mac, Android, and iOS/iPadOS devices. See [Onboard devices](mdb-onboard-devices.md).
 
           - You can onboard Mac devices using a local script in the Microsoft 365 Defender portal. 
           - To onboard Android and iOS/iPadOS devices, you can use [Microsoft Intune](/mem/intune/).
@@ -60,7 +67,7 @@ sections:
 
           Alternately, you could use [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction); however, your Defender for Business experience could change when you add an enterprise plan, such as Defender for Servers Plan 1 or Plan 2. To learn more, see [What happens if I have a mix of Microsoft endpoint security subscriptions?](#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions) and [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
-          When the [Microsoft Defender for Business servers](get-defender-business-servers.md) license becomes generally available (GA), it will be offered as an add-on to Microsoft 365 Business Premium and the standalone version of Defender for Business. At GA, Microsoft Defender for Business servers will be priced at $3 per server instance. At that point, you can either purchase a license for each onboarded server, or choose to offboard servers from Defender for Business.
+          [Microsoft Defender for Business servers](get-defender-business-servers.md) is available as an add-on to Microsoft 365 Business Premium and the standalone version of Defender for Business. The Microsoft Defender for Business servers license is priced at $3 per server instance. You can either purchase a license for each onboarded server, or choose to offboard servers from Defender for Business.
 
           If you have more than 60 servers, you'll need to get Microsoft Defender for Servers Plan 1 or Plan 2.
 
@@ -123,8 +130,10 @@ sections:
       - question: What are the differences between Defender for Business and Defender for Endpoint Plans 1 and 2?
         answer: |
           Both Defender for Business and Defender for Endpoint provide strong threat protection capabilities for your company's endpoints. Defender for Business was designed for small and medium-sized businesses (up to 300 employees). With a [simplified configuration process](mdb-simplified-configuration.md) and [device onboarding options](mdb-onboard-devices.md), Defender for Business enables customers who don't necessarily have a security background to set up, configure, and use Defender for Business to protect company devices.  
+
+          Defender for Endpoint is an enterprise endpoint security platform designed to help organizations like yours to prevent, detect, investigate, and respond to advanced threats.  
           
-          To learn more about the differences, see [Compare Microsoft endpoint security plans](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2).
+          To learn more about the differences, see [Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2](compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
       - question: What happens if I have a mix of Microsoft endpoint security subscriptions? 
         answer: |
