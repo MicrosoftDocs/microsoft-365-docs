@@ -20,13 +20,6 @@ description: "Cross-tenant OneDrive migration"
 >[!Note]
 > Information in this article refers to **Cross-tenant OneDrive migration**. For mailbox migration, see [Cross-tenant mailbox migration](/microsoft-365/enterprise/cross-tenant-mailbox-migration).
 
-## Licensing
-
-**Cross Tenant User Data Migration** is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers. User licenses are a per migration (onetime fee). Please contact your Microsoft account team for details.
- 
-Microsoft 365 Business Basic/Business Standard/Business Premium/F1/F3/E3/A3/E5/A5; Office 365 F3/E1/A1/E3/A3/E5/A5; Exchange Online; SharePoint Online; OneDrive for Business.
-
-
 ## Overview
 
 During mergers or divestitures, you commonly need the ability to move users OneDrive accounts into a new Microsoft 365 tenant. With Cross-tenant OneDrive migration, tenant administrators can use familiar tools like *SharePoint Online PowerShell* to transition users into their new organization.
@@ -38,12 +31,15 @@ Up to 4,000 OneDrive accounts can be scheduled for migration in advance at a giv
 >[!Note]
 > This feature isn't currently supported for users of the Government Cloud, including GCC, Consumer, GCC High, or DoD.
 
-
-
 >[!Important]
 >- Each user having their OneDrive migrated cross-tenant must be licensed for **Cross-Tenant User Data Migration**.
 >- Cross-tenant OneDrive migration cannot be used for customers using Service Encryption with Microsoft Purview Customer Key. [Learn about Service encryption with Microsoft Purview Customer Key - Microsoft Purview](/microsoft-365/compliance/customer-key-overview)
 
+## Licensing
+
+**Cross Tenant User Data Migration** is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers. User licenses are a per migration (onetime fee). Please contact your Microsoft account team for details.
+ 
+Microsoft 365 Business Basic/Business Standard/Business Premium/F1/F3/E3/A3/E5/A5; Office 365 F3/E1/A1/E3/A3/E5/A5; Exchange Online; SharePoint Online; OneDrive for Business.
 
 
 ## Prerequisites and settings
