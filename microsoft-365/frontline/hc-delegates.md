@@ -4,7 +4,7 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:
