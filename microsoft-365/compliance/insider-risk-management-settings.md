@@ -359,15 +359,15 @@ To use the APIs to review insider risk alert information:
 
 ![Insider risk management export alert settings.](../media/insider-risk-settings-export.png)
 
-Alert information contains information from the security and compliance alert schema and the Office 365 Management Activity API common schema.
+Alert information contains information from the Security and Compliance Alerts schema and the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-schema.md#security-and-compliance-alerts-schema) common schema.
 
-The following fields and values are exported for insider risk management alerts for the Security & Compliance alert schema:
+The following fields and values are exported for insider risk management alerts for the Security and Compliance Alerts schema:
 
 | **Alert parameter** | **Description** |
 |:------------------|:----------------|
 | AlertType | Type of the alert is *Custom*.  |
 | AlertId | The GUID of the alert. Insider risk management alerts are mutable. As alert status changes, a new log with the same AlertID is generated. This AlertID can be used to correlate updates for an alert. |
-| Category | The category of the alert is *InsiderRiskManagement*. This category can be used to distinguish from these alerts from other Security & Compliance alerts. |
+| Category | The category of the alert is *InsiderRiskManagement*. This category can be used to distinguish from these alerts from other security and compliance alerts. |
 | Comments | Default comments for the alert. Values are *New Alert* (logged when an alert is created) and *Alert Updated* (logged when there's an update to an alert). Use the AlertID to correlate updates for an alert. |
 | Data | The data for the alert, includes the unique user ID, user principal name, and date and time (UTC) when user was triggered into a policy. |
 | Name | Policy name for insider risk management policy that generated the alert. |
@@ -375,7 +375,7 @@ The following fields and values are exported for insider risk management alerts 
 | Severity | The severity of the alert. Values are *High*, *Medium*, or *Low*. |
 | Source | The source of the alert. The value is *Office 365 Security & Compliance*. |
 | Status | The status of the alert. Values are *Active* (*Needs Review* in insider risk), *Investigating* (*Confirmed* in insider risk), *Resolved* (*Resolved* in insider risk), *Dismissed* (*Dismissed* in insider risk). |
-| Version | The version of the security and compliance alert schema. |
+| Version | The version of the Security and Compliance Alerts schema. |
 
 The following fields and values are exported for insider risk management alerts for the [Office 365 Management Activity API common schema](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema).
 
