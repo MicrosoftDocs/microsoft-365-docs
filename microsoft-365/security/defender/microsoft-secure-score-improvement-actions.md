@@ -92,8 +92,10 @@ Choose any statuses and record notes specific to the improvement action.
 
 #### Recommended actions for devices
 
-For recommended actions in the "Device" category, you can't choose statuses. Instead, you'll be directed to the associated [Microsoft Defender Vulnerability Management security recommendation](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) in the Microsoft 365 Defender to take action. The exception you choose and justification you write will be specific to that portal. It won't be present in the Microsoft Secure Score portal.
-Recommended actions in the "Device" category, are managed in Microsoft Defender Vulnerability Management Security recommendations. You won't be able to choose a status in the Secure Score recommended action, instead, you'll be directed to the associated [Microsoft Defender Vulnerability Management security recommendation](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) to take action.  
+Recommended actions in the "Device" category, are managed in Microsoft Defender Vulnerability Management Security recommendations. You won't be able to choose a status in the Secure Score recommended action, instead, you'll be directed to the associated [Microsoft Defender Vulnerability Management security recommendation](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) to take action.
+
+>[!NOTE]
+>If you choose to create a ‘Global exception’ in the Defender Vulnerability manage security recommendation, the status in the Microsoft Secure Score recommended action will be updated with the exception justification. Updates may take up to 2 hours. If you choose to create an ‘Exception per device group’ in the Defender Vulnerability manage security recommendation, Secure Score will not be updated and the recommended action will remain as ‘To address’.
 
 #### Completed improvement actions
 
