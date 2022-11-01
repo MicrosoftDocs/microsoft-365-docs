@@ -355,9 +355,9 @@ To use the APIs to review insider risk alert information:
 
 ![Insider risk management export alert settings.](../media/insider-risk-settings-export.png)
 
-Alert information contains information from the security and compliance alert schema and the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-schema.md) common schema.
+Alert information contains information from the Security and Compliance Alerts schema and the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-schema.md#security-and-compliance-alerts-schema) common schema.
 
-The following fields and values are exported for insider risk management alerts for the security and compliance alert schema:
+The following fields and values are exported for insider risk management alerts for the Security and Compliance Alerts schema:
 
 | **Alert parameter** | **Description** |
 |:------------------|:----------------|
@@ -369,9 +369,9 @@ The following fields and values are exported for insider risk management alerts 
 | Name | Policy name for insider risk management policy that generated the alert. |
 | PolicyId | The GUID of the insider risk management policy that triggered the alert. |
 | Severity | The severity of the alert. Values are *High*, *Medium*, or *Low*. |
-| Source | The source of the alert. Values are from the security and compliance alerts. |
+| Source | The source of the alert. The value is *Office 365 Security & Compliance*. |
 | Status | The status of the alert. Values are *Active* (*Needs Review* in insider risk), *Investigating* (*Confirmed* in insider risk), *Resolved* (*Resolved* in insider risk), *Dismissed* (*Dismissed* in insider risk). |
-| Version | The version of the security and compliance alert schema. |
+| Version | The version of the Security and Compliance Alerts schema. |
 
 The following fields and values are exported for insider risk management alerts for the [Office 365 Management Activity API common schema](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema).
 
