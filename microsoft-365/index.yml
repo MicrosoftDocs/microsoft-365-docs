@@ -259,7 +259,7 @@ additionalContent:
         - title: Outlook and Exchange
           links:
             - text: Outlook for iOS and Android
-              url: https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/
+              url: https://adoption.microsoft.com/outlook-mobile/
             - text: Exchange Online
               url: /Exchange/exchange-online
             - text: More > 
