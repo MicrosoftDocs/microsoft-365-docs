@@ -91,7 +91,7 @@ Those redirects remain until the source tenant is deprovisioned. The admin can a
 - **Step 3:** [Verify trust has been established](cross-tenant-onedrive-migration-step3.md) 
 - **Step 4:** [Pre-create users and groups](cross-tenant-onedrive-migration-step4.md)  
 - **Step 5:** [Prepare identity mapping](cross-tenant-onedrive-migration-step5.md)
-- **Step 6:** [Start a Cross-tenant OneDrive migration]
+- **Step 6:** [Start a Cross-tenant OneDrive migration](cross-tenant-onedrive-migration-step6.md)
 - **Step 7:** [Post migration steps](cross-tenant-onedrive-migration-step7.md)
 
 ## Step 1: [Connect to source and target tenants](cross-tenant-onedrive-migration-step1.md)
