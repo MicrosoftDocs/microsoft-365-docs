@@ -33,7 +33,7 @@ To establish trust, each SharePoint Online tenant administrator must run specifi
 
 ## Before you begin
 
-Before running the trust commands, obtain the cross-tenant host URLs for both the source and target tenants. You will need these URLs when establishing the trust relationship between source-to-target and target-to-source. 
+Before running the trust commands, obtain the cross-tenant host URLs for both the source and target tenants. You'll need these URLs when establishing the trust relationship between source-to-target and target-to-source. 
 
 **To obtain the cross-tenant host URLs:**
 
@@ -79,8 +79,8 @@ Set-SPOCrossTenantRelationship -Scenario MnA -PartnerRole Source -PartnerCrossTe
 
 |Parameter|Definition|
 |:-----|:-----|
-|PartnerRole|Roles of the partner tenant you are establishing trust with.  Use *source* if partner tenant is the source of the OneDrive migrations, and *target* if the partner tenant is the Destination.
-|PartnerCrossTenantHostURL|The cross-tenant host URL of the partner tenant.  The partner tenant can determine this for you by running: *Get-SPOCrossTenantHostURL* on each of the tenants.|
+|PartnerRole|Roles of the partner tenant you're establishing trust with.  Use *source* if partner tenant is the source of the OneDrive migrations, and *target* if the partner tenant is the Destination.
+|PartnerCrossTenantHostURL|The cross-tenant host URL of the partner tenant. The partner tenant can determine this for you by running: *Get-SPOCrossTenantHostURL* on each of the tenants.|
 
 ## Sample trust email
 The following in an example of the email that is sent to global admins:

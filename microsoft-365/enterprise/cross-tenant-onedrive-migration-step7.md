@@ -44,13 +44,13 @@ Remove-SPOCrossTenantRelationship -Scenario MnA -PartnerRole Target -Partner
 
 |Parameter|Definition|
 |:-----|:-----|
-|PartnerRole|Roles of the partner tenant you are establishing trust with.  Use *source* if partner tenant is the source of the OneDrive migrations, and *target* if the partner tenant is the destination.
+|PartnerRole|Roles of the partner tenant you're establishing trust with.  Use *source* if partner tenant is the source of the OneDrive migrations, and *target* if the partner tenant is the destination.
 |PartnerCrossTenantHostURL|The cross-tenant host URL of the partner tenant.  The partner tenant can determine this for you by running: *Get-SPOCrossTenantHostURL* on each of the tenants.|
 
 
 ## Other post migration steps
 
-Once the migration is complete, OneDrive users must sign in using their new identity and re-sync their files to their devices on the target tenant.
+Once the migration is complete, OneDrive users must sign in using their new identity and resync their files to their devices on the target tenant.
 
 ### OneDrive for Business
 With their new credentials, have users sign in to OneDrive using the Microsoft 365 app launcher or a web browser.
@@ -59,7 +59,7 @@ With their new credentials, have users sign in to OneDrive using the Microsoft 3
 Users with permission to access OneDrive content will continue to be able to access it, provided they were included in the identity mapping file
 
 ### OneDrive Sync Client
-The user must sign in to the **OneDrive Sync Client** and their new OneDrive location using their new identity. Once this is done, files and folders will begin re-syncing to the device.
+The user must sign in to the **OneDrive Sync Client** and their new OneDrive location using their new identity. Once you've completed that step, the files and folders will begin resyncing to the device.
 
 ### Sharing Links
 The existing shared links for the migrated files will automatically redirect to the new target location.
