@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/01/2022
 manager: dansimp
@@ -20,6 +20,8 @@ ms.subservice: mde
 ms.custom: api
 search.appverid: met150
 ---
+
+<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
 # Export device antivirus health report
 
@@ -78,7 +80,7 @@ This API retrieves a list of Microsoft Defender Antivirus device antivirus healt
 #### 1.1.1 Limitations
 
 - maximum page size is 200,000
-- Rate limitations for this API are (**_example_** 30 calls per minute and 1000 calls per hour._)
+- Rate limitations for this API are 30 calls per minute and 1000 calls per hour.
 
 #### OData supported operators
 
