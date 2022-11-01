@@ -17,6 +17,7 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "Determine where your Microsoft 365 customer data is stored within the European Union"
+ROBOTS: NOINDEX
 ---
 
 # Data locations for the European Union
