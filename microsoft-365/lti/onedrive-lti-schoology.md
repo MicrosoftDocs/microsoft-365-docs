@@ -1,5 +1,5 @@
 ---
-title: Integrate Microsoft OneDrive LTI with the Schoology Learning
+title: Integrate Microsoft OneDrive LTI with Schoology Learning
 ms.author: danismith
 author: DaniEASmith
 manager: serdars
@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 description: Create and grade assignments, build and curate course content, and collaborate on files in real time with the new Microsoft OneDrive Learning Tools Interoperability App for PowerSchool Unified Classroom® Schoology Learning.
 ---
 
-# Integrate Microsoft OneDrive LTI with the Schoology Learning
+# Integrate Microsoft OneDrive LTI with Schoology Learning
 
-This guide provides IT admins steps for registering the OneDrive LTI app for the PowerSchool Unified Classroom® Schoology Learning.
+This guide provides IT admins steps for registering the OneDrive LTI app for PowerSchool Unified Classroom® Schoology Learning.
 
 For an overview of Microsoft LTI, see [Integrating Microsoft products with your Learning Management System (LMS)](index.md).
 
