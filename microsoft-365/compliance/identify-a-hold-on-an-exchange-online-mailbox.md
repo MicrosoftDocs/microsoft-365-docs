@@ -194,8 +194,8 @@ After any type of hold is removed from a mailbox, a *delay hold* is applied. Thi
 
 When a delay hold is placed on the mailbox (when either of the previous properties is set to **True**), the mailbox is still considered to be on hold for an unlimited hold duration, as if the mailbox was on Litigation Hold. After 30 days, the delay hold expires, and Microsoft 365 will automatically attempt to remove the delay hold (by setting the DelayHoldApplied or DelayReleaseHoldApplied property to **False**) so that the hold is removed. After either of these properties are set to **False**, the corresponding items that are marked for removal are purged the next time the mailbox is processed by the Managed Folder Assistant.
 
-   > [!NOTE]
-   > If a user account is disabled, it will not be processed by MFA and the hold will remain after the 30 days has expired.  The hold would need to be removed manually. 
+> [!NOTE]
+> If a user account is disabled, it will not be processed by the Managed Folder Assistant and the hold will remain after the 30 days have expired. The hold would need to be removed manually. 
 
 To view the values for the DelayHoldApplied and DelayReleaseHoldApplied properties for a mailbox, run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
