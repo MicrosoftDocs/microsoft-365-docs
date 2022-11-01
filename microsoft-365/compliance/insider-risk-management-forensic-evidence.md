@@ -58,7 +58,7 @@ The following tables include the minimum requirements to use the Microsoft Purvi
 |**Hardware**|**Minimum requirement**|
 |:----------|:-------------------------------|
 | RAM | Minimum of 16 GB (at least 2 GB should be available for client usage) |
-| CPU processor | minimum of two vCPU processors and at least four cores for each vCPU processor |
+| CPU processor | Minimum of two vCPU processors and at least four cores for each vCPU processor |
 | Disk space | minimum of 10GB of disk storage |
 | Display | minimum screen resolution of 1920 x 1080 | 
 
