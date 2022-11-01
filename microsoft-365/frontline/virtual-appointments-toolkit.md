@@ -4,7 +4,7 @@ author: daisyfell
 ms.author: daisyfeller
 manager: pamgreen
 audience: ITPro
-ms.topic: article 
+ms.topic: end-user-help 
 ms.service: microsoft-365-frontline 
 search.appverid: 
 searchScope:
@@ -20,13 +20,13 @@ ms.collection:
   - m365-frontline
   - highpri
 ms.reviewer: 
-description: Customizable resources and infographics you can add to your website to help your clients understand how to use virtual appointments with your organization. 
+description: Customizable resources and infographics you can add to your website to help your clients understand how to use virtual appointments that have been scheduled in Bookings with your organization. 
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ---
 
-# Help your clients and customers use virtual appointments
+# Help your clients and customers use virtual appointments scheduled with Bookings
 
 Now that your organization has begun using Microsoft Teams and the Bookings app for virtual appointments, you'll need to make sure that your clients and customers understand how to book and join these appointments.
 
@@ -99,7 +99,7 @@ Make the most of virtual appointments by making sure your staff members know how
 - [Learn how to use the Bookings app in Teams](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5).
 - [Learn how to join a Bookings appointment](https://support.microsoft.com/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0).
 - [Conduct an appointment](bookings-virtual-visits.md#conduct-an-appointment).
-- [Watch a video about virtual appointments](#help-your-clients-and-customers-use-virtual-appointments).
+- [Watch a video about virtual appointments](#help-your-clients-and-customers-use-virtual-appointments-scheduled-with-bookings).
 - [Watch a video about how to manage the queue in virtual appointments](https://go.microsoft.com/fwlink/?linkid=2202615).
 - [Watch a video about waiting room features in virtual appointments](https://go.microsoft.com/fwlink/?linkid=2202614).
 
