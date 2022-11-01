@@ -34,7 +34,7 @@ Having visual context is crucial for security teams during forensic investigatio
 
 ## Hardware requirements
 
-The following tables include the supported hardware requirements for utilizing insider risk management forensic evidence.
+The following tables include the minimum requirements to use the Microsoft Purview client and support insider risk management forensic evidence captures.
 
 ### Supported platforms
 
