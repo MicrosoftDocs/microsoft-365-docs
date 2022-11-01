@@ -32,9 +32,9 @@ Having visual context is crucial for security teams during forensic investigatio
 - **Strong role-based access controls (RBAC)** mean that the ability to set up and review forensic clips is tightly controlled and only available to individuals in the organization with the right permissions.
 - **Deep integration with current insider risk management features**, making for easier onboarding and more familiar workflows for insider risk management administrators and a trusted single-platform approach.
 
-## Hardware requirements
+## Device and configuration requirements
 
-The following tables include the supported hardware requirements for utilizing insider risk management forensic evidence.
+The following tables include the supported minimum requirements for utilizing insider risk management forensic evidence.
 
 ### Supported platforms
 
