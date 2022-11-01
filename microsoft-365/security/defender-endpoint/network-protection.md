@@ -108,7 +108,7 @@ The network protection component of Defender for Endpoint identifies and blocks 
 
 In its initial form, ransomware is a commodity threat, pre-programmed and focused on limited, specific outcomes (for example, encrypting a computer). However, ransomware has evolved into a sophisticated threat that is human-driven, adaptive, and focused on larger scale and more widespread outcomes; like holding an entire organization's assets or data for ransom.
 
-Support for Command and Control servers (C2) is a key part of this ransomware evolution and is what enables these attacks to adapt to the environment they target. Breaking the link to the command-and-control infrastructure stops the progression of an attack to its next stage.  For additional information about C2 detection and remediation, see:
+Support for Command and Control servers (C2) is a key part of this ransomware evolution and is what enables these attacks to adapt to the environment they target. Breaking the link to the command-and-control infrastructure stops the progression of an attack to its next stage. For additional information about C2 detection and remediation, see:
 [Detecting and remediating command and control attacks at the network layer](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/detecting-and-remediating-command-and-control-attacks-at-the/ba-p/3650607)
 
 #### Network protection: New toast notifications
