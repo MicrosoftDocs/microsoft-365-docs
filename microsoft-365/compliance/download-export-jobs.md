@@ -1,28 +1,31 @@
 ---
 title: Export documents to an organization Azure Storage account
+description: "Export documents in a review set to an Azure Storage account and then use Azure Storage Explorer to download them to a local computer."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
 ms.custom: seo-marvel-mar2020
-description: "Export documents in a review set to an Azure Storage account and then use Azure Storage Explorer to download them to a local computer."
 ---
 
 # Export documents in a review set to an Azure Storage account
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 When you export documents from a review set in an eDiscovery (Premium) case, you have the option to export them to an Azure Storage account managed by your organization. If you use this option, the documents are uploaded to your Azure Storage location. After they are exported, you can access the documents (and download them to a local computer or other location) by using the Azure Storage Explorer. This article provides instructions for how to export documents to your Azure Storage account and the use the Azure Storage Explorer to connect to an Azure Storage location to download the exported documents. For more information about Azure Storage Explorer, see [Use Azure Storage Explorer](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you export documents from a review set
 

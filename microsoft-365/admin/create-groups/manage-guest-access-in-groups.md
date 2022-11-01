@@ -4,12 +4,13 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -55,15 +56,25 @@ If the guest already exists in your directory, you can add them to your groups f
   
 1. In the admin center, go to the **Groups** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
   
-2. Click the group you want to add the guest to, and select **View all and manage members** on the **Members** tab. 
+2. Select the group you want to add the guest to, and select **View all and manage members** on the **Members** tab. 
   
-4. Select **Add members**, and choose the name of the guest you want to add.
-    
-5. Select **Save**.
+3. Select **Add members**, and choose the name of the guest you want to add.
+
+4. Select **Save**.
 
 If you want to add a guest to the directory directly, you can [Add Azure Active Directory B2B collaboration users in the Azure portal](/azure/active-directory/b2b/add-users-administrator).
 
 If you want to edit any of a guest's information, you can [Add or update a user's profile information using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
+
+## Remove a guest
+
+Once you're done collaborating with a guest user, you can remove them, and they'll no longer have access to your organization.
+
+1. In the Microsoft 365 admin center, expand **Users** and then choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">**Guest users**</a>.
+1. On the **Guest users** page, choose the user you want to remove and then choose **Delete a user**.
+
+To remove users in the Azure AD portal, see [remove a guest user and resources](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources).
+
 
 ## Related content
 

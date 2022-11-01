@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -25,7 +26,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Block a former employee from logging in and block access to Microsoft 365 services."
+description: "Global administrators can block a former employee from logging in and block their access to Microsoft 365 services."
 ---
 
 # Step 1 - Prevent a former employee from logging in and block access to Microsoft 365 services

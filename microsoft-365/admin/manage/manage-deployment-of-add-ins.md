@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
@@ -27,7 +28,7 @@ ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: "Learn to deploy add-ins to users and groups in your organization by using Centralized Deployment in the admin center."
 ---
 
-# Deploy add-ins in the admin center
+# Deploy add-ins in the Microsoft 365 admin center
 
 Office Add-ins help you personalize your documents and streamline the way you access information on the web (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). As an admin, you can deploy Office Add-ins for the users in your organization by using the Centralized Deployment feature in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Centralized Deployment is the recommended and most feature-rich way for most admins to deploy add-ins to users and groups within an organization.
 
@@ -54,7 +55,7 @@ Depending on the size of the target audience, you can add or remove roll-out ste
 
 Before you begin, see [Determine if Centralized Deployment of add-ins works for your organization](centralized-deployment-of-add-ins.md).
   
-1. In the admin center, go to the **Settings** \> **Add-ins** page. If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** page.
+1. In the admin center,  go to the **Settings** \> **Integrated apps** \> **Add-ins** page.
 
 2. Select **Deploy Add-in** at the top of the page, and then select **Next**.
 

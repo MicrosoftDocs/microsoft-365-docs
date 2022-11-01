@@ -12,18 +12,16 @@ ms.collection:
   - Strat_O365_Enterprise
   - Ent_O365
   - GDPR
-  - M365-security-compliance
+  - m365-security
 
 ms.localizationpriority: high
 search.appverid:
   - MET150
 description: Learn about three tools you can use to monitor for leaks of personal data.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 # Monitor for leaks of personal data
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 There are many tools that can be used to monitor the use and transport of personal data. This topic describes three tools that work well.
 

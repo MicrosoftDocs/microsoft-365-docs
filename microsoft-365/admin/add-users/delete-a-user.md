@@ -7,12 +7,12 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
-
 - SPO_Content
 ms.custom:
 - AdminSurgePortfolio
@@ -20,7 +20,7 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
-description: "Learn how to delete a user account and what to do with the user's email and OneDrive content and whether to keep the product license."
+description: "Learn how to delete a Microsoft 365 user account, what to do with the user's email and OneDrive content, and whether to keep the product license."
 ---
 
 # Delete a user from your organization

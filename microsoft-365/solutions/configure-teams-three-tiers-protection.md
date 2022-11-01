@@ -6,11 +6,12 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+ms.service: o365-solutions
 ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
+- highpri
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
@@ -40,12 +41,11 @@ The configurations in this article align with Microsoft's recommendations for th
 
 For more information about these tiers and capabilities recommended for each tier, see [Microsoft cloud for enterprise architects illustrations](./cloud-architecture-models.md)
 
-
 ## Three tiers at a glance
 
 The following table summarizes the configurations for each tier. Use these configurations as starting point recommendations and adjust the configurations to meet the needs of your organization. You may not need every tier.
 
-|-|Baseline (Public)|Baseline (Private)|Sensitive|Highly sensitive|
+|&nbsp;|Baseline (Public)|Baseline (Private)|Sensitive|Highly sensitive|
 |:-----|:-----|:-----|:-----|:-----|
 |Private or public team|Public|Private|Private|Private|
 |Who has access?|Everybody in the organization, including B2B users.|Only members of the team. Others can request access to the associated site.|Only members of the team.|Only members of the team.|
@@ -137,4 +137,4 @@ Start by [configuring the baseline level of protection](configure-teams-baseline
 
 [Security and compliance in Microsoft Teams](/microsoftteams/security-compliance-overview)
 
-[Alert policies in the security and compliance center](../compliance/alert-policies.md)
+[Alert policies](../compliance/alert-policies.md)

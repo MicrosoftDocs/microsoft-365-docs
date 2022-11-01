@@ -1,26 +1,28 @@
 ---
 title: "View statistics for eDiscovery search results"
+description: "Learn how to use the search statistics feature to display statistics for Content searches and searches associated with a eDiscovery (Standard) case in the Microsoft Purview compliance portal."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.search: M365-security-compliance
+ms.search: purview-compliance
 ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to use the search statistics feature to display statistics for Content searches and searches associated with a eDiscovery (Standard) case in the Microsoft Purview compliance portal."
 ms.custom: seo-marvel-apr2020
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # View statistics for eDiscovery search results
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 After you create and run a Content search or a search associated with a Microsoft Purview eDiscovery (Standard) case, you can view statistics about the estimated search results. This includes a summary of the search results (similar to the summary of the estimated search results displayed on the search flyout page), the query statistics such as the number of content locations with items that match the search query, and the identity of content locations that have the most matching items.
   
@@ -28,6 +30,8 @@ Additionally, you can use the keywords list to configure a search to return stat
   
 You can also download search statistics to a CSV file. This lets you use the filtering and sorting features in Excel to compare results, and prepare reports for your search results.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Get statistics for searches
 
 To display statistics for a Content search or a search associated with a eDiscovery (Standard) case.:
@@ -38,7 +42,7 @@ To display statistics for a Content search or a search associated with a eDiscov
 
      OR
 
-   - Click **eDiscovery** > **Core**, select a case, and then select a search on the **Searches** tab to display the flyout page.
+   - Click **eDiscovery** > **eDiscovery (Standard)**, select a case, and then select a search on the **Searches** tab to display the flyout page.
 
 2. On the flyout page of the selected search, click the **Search statistics** tab.
   

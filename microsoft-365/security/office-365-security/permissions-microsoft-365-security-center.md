@@ -11,20 +11,20 @@ ms.topic: article
 audience: Admin
 ms.localizationpriority: high
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 search.appverid: 
   - MOE150
   - MET150
 description: Admins can learn how to manage permissions in the Microsoft 365 Defender portal for all tasks related to security.
 ms.custom: 
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Permissions in the Microsoft 365 Defender portal
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

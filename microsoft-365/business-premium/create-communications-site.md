@@ -1,19 +1,22 @@
 ---
-title: "Create a SharePoint communications site"
+title: "Create a SharePoint communications site in Teams with Microsoft 365 for business"
 f1.keywords:
 - NOCSH
-ms.author: samanro
-author: samanro
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: how-to
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
 - M365-identity-device-management
 - M365-Campaigns
+- tier1
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -23,10 +26,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn why and how to create a SharePoint communications site for your campaign or business with Microsoft 365, and protect the team from cyberattacks and incursions from malware and other threats due to improper file sharing."
+description: "Create a SharePoint communications site for your campaign or business and protect your team from cyberattacks and incursions from malware and other threats due to improper file sharing."
 ---
 
-# Create a communications site in SharePoint
+# Create a communications site
 
 A great way to communicate priorities, share strategy documents, and highlight upcoming events is to use a communications site in SharePoint, and that's what this mission is all about. Communications sites are for sharing things broadly across your whole business or campaign &mdash; it's your internal strategy site and tactical room. 
 
@@ -46,7 +49,7 @@ Include the following elements in a Communications site:
 
 ![Diagram of a SharePoint Communications page with space for common elements that a campaign would need.](../media/m365-democracy-comms-site.png)
 
-## Infographic: Create a Communications Site infographic
+## Infographic: Create a Communications site infographic
 
 The following links for PowerPoint and PDF can be downloaded and printed in tabloid format (also known as ledger, 11 x 17, or A3).
 
@@ -56,7 +59,7 @@ The following links for PowerPoint and PDF can be downloaded and printed in tabl
 
 ## Set it up
 
-1. Sign in to https://Office.com.
+1. Sign in to [https://Office.com](https://Office.com).
 
 2. In the top-left corner of the page, select the app launcher icon and then select the **SharePoint** tile. If you don't see the **SharePoint** tile, click the **Sites** tile or **All** if SharePoint isn't visible.
 
@@ -67,5 +70,7 @@ Learn all [about Communications sites](https://support.office.com/article/What-i
 ## Admin settings
 
 If you don't see the **+ Create** site link, self-service site creation might not be available in Microsoft 365. To create a team site, contact the person administering Microsoft 365 in your organization. If you're a Microsoft 365 admin, see [Manage site creation in SharePoint Online](/sharepoint/manage-site-creation) to enable self-service site creation for your organization or [Manage sites in the new SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center) to create a site from the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>.
+
+## Next mission
 
 Congratulations &mdash; you've completed the mission! Now, immediately turn your focus toward [protecting the managed devices](m365bp-protect-devices.md) for the entire org!

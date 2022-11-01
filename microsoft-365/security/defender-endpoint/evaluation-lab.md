@@ -5,17 +5,20 @@ keywords: evaluate Microsoft Defender for Endpoint, evaluation, lab, simulation,
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-evalutatemtp
+  - highpri
+  - tier1
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint evaluation lab
@@ -152,6 +155,25 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
    > [!TIP]
    > In the **Simulator status** column, you can hover over the information icon to know the installation status of an agent.
+
+
+## Add a domain controller 
+
+Add a domain controller to run complex scenarios such as lateral movement and multistage attacks across multiple devices.
+
+
+>[!NOTE]
+>Domain support is only available in the Microsoft 365 Defender portal (security.microsoft.com).
+
+1. From the dashboard, select **Add device**.
+
+2. Select **Windows Server 2019**, then select **Set as domain controller**. 
+
+3. When your domain controller has been provisioned, you'll be able to create domain-joined devices by clicking **Add device**. Then select Windows 10 / Windows 11, and select **Join to domain**. 
+
+>[!NOTE]
+>Only one domain controller can be live at a time. The domain controller device will remain live as long as there is a live device connected to it.
+
 
 
 ## Request for more devices

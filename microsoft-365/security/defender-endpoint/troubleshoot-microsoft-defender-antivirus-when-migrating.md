@@ -1,20 +1,22 @@
 ---
 title: Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
 description: Troubleshoot common errors when migrating to Microsoft Defender Antivirus
-keywords: event, error code, logging, troubleshooting, microsoft defender antivirus, windows defender antivirus, migration
-ms.prod: m365-security
+keywords: event, error code, logging, troubleshooting, microsoft defender antivirus, windows defender antivirus, migration, microsoft defender antivirus
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 ms.topic: article
 author: martyav
-ms.author: v-maave
+ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/19/2018
 ms.reviewer:
 manager: dansimp
-ms.technology: mde
-ms.collection: M365-security-compliance
+ms.subservice: mde
+ms.collection: 
+- m365-security
+- tier1
+search.appverid: met150
 ---
 
 # Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
@@ -24,7 +26,7 @@ ms.collection: M365-security-compliance
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Microsoft Defender Antivirus
+- [Microsoft Defender Antivirus](https://www.microsoft.com/windows/comprehensive-security)
 
 **Platforms**
 - Windows
@@ -50,8 +52,8 @@ This issue can manifest in the form of  several different event IDs, all of whic
 Event ID|Log name|Description|Source
 ---|---|---|---
 15|Application|Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_OFF.|Security Center
-5007|Microsoft-Windows-Windows Defender/Operational|Windows Defender Antivirus Configuration has changed. If this is an unexpected event you should review the settings as this may be the result of malware. <p> **Old value:** Default\IsServiceRunning = 0x0 <p> **New value:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
-5010|Microsoft-Windows-Windows Defender/Operational|Windows Defender Antivirus scanning for spyware and other potentially unwanted software is disabled.|Windows Defender
+5007|Microsoft-Windows-Windows Defender/Operational|Microsoft Defender Antivirus Configuration has changed. If this is an unexpected event you should review the settings as this may be the result of malware. <p> **Old value:** Default\IsServiceRunning = 0x0 <p> **New value:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
+5010|Microsoft-Windows-Windows Defender/Operational|Microsoft Defender Antivirus scanning for spyware and other potentially unwanted software is disabled.|Windows Defender
 
 ### How to tell if Microsoft Defender Antivirus won't start because a third-party antivirus is installed
 
@@ -64,9 +66,9 @@ On a Windows 10 or Windows 11 device, if you are not using Microsoft Defender fo
 
 To open the Services app, select the **Search** icon from the taskbar and search for *services*. You can also open the app from the command-line by typing *services.msc*.
 
-Information about Microsoft Defender Antivirus will be listed within the Services app under **Windows Defender** \> **Operational**. The antivirus service name is *Windows Defender Antivirus Service*.
+Information about Microsoft Defender Antivirus will be listed within the Services app under **Windows Defender** \> **Operational**. The antivirus service name is *Microsoft Defender Antivirus Service*.
 
-While checking the app, you may see that *Windows Defender Antivirus Service* is set to manual, but when you try to start this service manually, you get a warning stating, *The Windows Defender Antivirus Service service on Local Computer started and then stopped. Some services stop automatically if they are not in use by other services or programs.*
+While checking the app, you may see that *Microsoft Defender Antivirus Service* is set to manual, but when you try to start this service manually, you get a warning stating, *The Microsoft Defender Antivirus Service service on Local Computer started and then stopped. Some services stop automatically if they are not in use by other services or programs.*
 
 This indicates that Microsoft Defender Antivirus has been automatically turned off to preserve compatibility with a third-party antivirus.
 
@@ -84,11 +86,11 @@ This will generate a report located at *./gpresult.html*. Open this file and you
 
 ##### If security settings are implemented via group policy (GPO) at the domain or local level, or though System center configuration manager (SCCM)
 
-Within the GPResults report, under the heading, *Windows Components/Windows Defender Antivirus*, you may see something like the following entry, indicating that Microsoft Defender Antivirus is turned off.
+Within the GPResults report, under the heading, *Windows Components/Microsoft Defender Antivirus*, you may see something like the following entry, indicating that Microsoft Defender Antivirus is turned off.
 
 Policy|Setting|Winning GPO
 ---|---|---
-Turn off Windows Defender Antivirus|Enabled|Win10-Workstations
+Turn off Microsoft Defender Antivirus|Enabled|Win10-Workstations
 
 ###### If security settings are implemented via Group policy preference (GPP)
 
@@ -135,7 +137,7 @@ Another feature, known as [limited periodic scanning](limited-periodic-scanning-
 > Limited periodic scanning is not recommended in enterprise environments. The detection, management and reporting capabilities available when running Microsoft Defender Antivirus in this mode are reduced as compared to active mode.
 
 > [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
+> If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

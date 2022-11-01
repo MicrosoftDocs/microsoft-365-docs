@@ -11,7 +11,8 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority : high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid: 
 - MOE150
@@ -20,8 +21,6 @@ description: Instructions to create retention labels for exceptions to retention
 ---
 
 # Create retention labels for exceptions to your retention policies
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -42,13 +41,15 @@ Use the following information to help you create retention labels to supplement 
 > [!NOTE]
 > Create retention labels from the **Records management** solution rather than **Data lifecycle management** if you need to use retention labels to manage high-value items for business, legal, or regulatory record-keeping requirements. For example, you want to use event-based retention or disposition review. For instructions, see [Use file plan to create and manage retention labels](file-plan-manager.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
 The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see [Permissions for retention policies and retention labels](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels).
 
 ## How to create retention labels for data lifecycle management
 
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), navigate to: **Solutions** > **Data lifecycle management** > **Labels** tab > + **Create a label**
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), navigate to: **Solutions** > **Data lifecycle management** > **Microsoft 365** > **Labels** tab > + **Create a label**
     
     Don't immediately see the **Data lifecycle management** solution? First select **Show all**. 
 

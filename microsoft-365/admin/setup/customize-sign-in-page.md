@@ -1,5 +1,5 @@
 ---
-title: "Add your company branding to the Sign In page"
+title: "Add your company branding to the Microsoft 365 sign-in page"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -7,13 +7,16 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- highpri
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
@@ -25,7 +28,7 @@ ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: "Customize the Microsoft 365 sign-in page by using the Azure Active Directory. You can add an illustration, a logo, and text to the sign-in page."
 ---
 
-# Add your company branding to the Sign In page
+# Add your company branding to the Microsoft 365 sign-in page
 
  You can now use the Azure Active Directory (AD) subscription that is included with your Microsoft 365 subscription to customize the sign-in page your users see. 
   

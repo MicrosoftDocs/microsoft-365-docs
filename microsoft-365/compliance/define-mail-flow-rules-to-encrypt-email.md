@@ -14,7 +14,7 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 ms.custom: 
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
@@ -22,8 +22,6 @@ description: "Admins can learn to create mail flow rules (transport rules) to en
 ---
 
 # Define mail flow rules to encrypt email messages
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 As an administrator that manages Exchange Online, you can create mail flow rules (also known as transport rules) to help protect email messages you send and receive. You can set up rules to encrypt any outgoing email messages and remove encryption from encrypted messages coming from inside your organization or from replies to encrypted messages sent from your organization. You can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> or Exchange Online PowerShell to create these rules. In addition to overall encryption rules, you can also choose to enable or disable individual message encryption options for end users.
 
@@ -35,6 +33,8 @@ For information about the components that make up mail flow rules and how mail f
 
 > [!IMPORTANT]
 > For hybrid Exchange environments, on-premises users can send and receive encrypted mail using message encryption only if email is routed through Exchange Online. To configure message encryption in a hybrid Exchange environment, you need to first [configure hybrid using the Hybrid Configuration wizard](/Exchange/exchange-hybrid) and then [configure mail to flow from Office 365 to your email server](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-1-configure-mail-to-flow-from-office-365-to-your-on-premises-email-server) and [configure mail to flow from your email server to Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365). Once you've configured mail to flow through Office 365, then you can configure mail flow rules for message encryption by using this guidance.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Create mail flow rules to encrypt email messages with Microsoft Purview Message Encryption
 

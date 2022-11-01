@@ -1,9 +1,10 @@
 ---
-title: "Create and manage eDiscovery (Premium) cases in Microsoft 365"
+title: "Create and manage an eDiscovery (Premium) case"
+description: "This article describes how to create and manage Microsoft Purview eDiscovery (Premium) cases. The first step is to create a case and start using eDiscovery (Premium) features and functionality."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 04/08/2022
 audience: Admin
@@ -11,24 +12,25 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-aed
-- m365initiative-compliance
 - m365solution-scenario
+- highpri
+- ediscovery
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
-description: "This article describes how to create and manage Microsoft Purview eDiscovery (Premium) cases. The first step is to create a case and start using eDiscovery (Premium) features and functionality."
 ---
 
 # Create and manage an eDiscovery (Premium) case
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 After setting up Microsoft Purview eDiscovery (Premium) and [assigning permissions to eDiscovery managers](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) in your organization that will manage cases, the next step is to create and manage a case.
 
 This article also provides a high-level overview of using cases to manage the eDiscovery (Premium) workflow for a legal case or other types of investigations.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Create a case
 

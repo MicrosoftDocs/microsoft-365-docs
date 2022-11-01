@@ -10,7 +10,7 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
 - Strat_O365_IP
@@ -24,13 +24,13 @@ ms.custom: seo-marvel-apr2020
 
 # Technical reference details about encryption
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Refer to this article to learn about certificates, technologies, and TLS cipher suites used for [encryption in Office 365](encryption.md). This article also provides details about planned deprecations.
   
 - If you're looking for overview information, see [Encryption in Office 365](encryption.md).
 - If you're looking for setup information, see [Set up encryption in Office 365 Enterprise](set-up-encryption.md).
 - For information about cipher suites supported by specific versions of Windows, see [Cipher Suites in TLS/SSL (Schannel SSP)](/windows/desktop/SecAuthN/cipher-suites-in-schannel).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Microsoft Office 365 certificate ownership and management
 

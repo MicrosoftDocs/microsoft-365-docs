@@ -1,5 +1,5 @@
 ---
-title: "Manage information barrier policies"
+title: "Manage information barriers policies"
 description: "Learn how to edit or remove policies for information barriers."
 keywords: Microsoft 365, Microsoft Purview, compliance, information barriers
 ms.author: robmazz
@@ -9,7 +9,8 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- tier2
+- purview-compliance
 ms.localizationpriority: null
 f1.keywords:
 - NOCSH
@@ -17,9 +18,9 @@ f1.keywords:
 
 # Manage information barriers policies
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+After you have [defined information barriers (IB) policies](information-barriers-policies.md), you may need to make changes to those policies or to your user segments, as part of [troubleshooting](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) or as regular maintenance.
 
-After you have [defined information barrier policies](information-barriers-policies.md), you may need to make changes to those policies or to your user segments, as part of [troubleshooting](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) or as regular maintenance.
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## What do you want to do?
 
@@ -37,7 +38,7 @@ After you have [defined information barrier policies](information-barriers-polic
 | [Troubleshooting information barriers](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | Refer to this article when you run into unexpected issues with information barriers. |
 
 >[!IMPORTANT]
->To perform the tasks described in this article, you must be assigned an appropriate role, such as one of the following:<br>- Microsoft 365 Enterprise Global Administrator<br>- Global Administrator<br>- Compliance Administrator<br>- IB Compliance Management (this is a new role!)<br><br>To learn more about prerequisites for information barriers, see [Prerequisites (for information barriers policies)](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met).<br><br> Make sure to [connect to the Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+>To perform the tasks described in this article, you must be assigned an appropriate role, such as one of the following:<br>- Microsoft 365 Enterprise Global Administrator<br>- Global Administrator<br>- Compliance Administrator<br>- IB Compliance Management (this is a new role!)<br><br>To learn more about prerequisites for information barriers, see [Prerequisites (for information barriers policies)](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met).<br><br> Make sure to [connect to the Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## Edit user account attributes
 
@@ -76,7 +77,7 @@ Use this procedure edit the definition of a user segment. For example, you might
     |:---------|:----------|
     | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` |`Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"` <br> In this example, we updated the department name to *HRDept* for the segment with GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*. |
 
-3. When you have finished editing segments for your organization, you can either [define](information-barriers-policies.md#step-3-define-information-barrier-policies) or [edit](#edit-a-policy) information barriers policies.
+3. When you have finished editing segments for your organization, you can either [define](information-barriers-policies.md#step-3-create-ib-policies) or [edit](#edit-a-policy) information barriers policies.
 
 ## Edit a policy
 
@@ -94,7 +95,7 @@ Use this procedure edit the definition of a user segment. For example, you might
 
     In this example, we changed *SegmentsBlocked* to *SegmentsAllowed* and specified the *HR* segment.
 
-3. When you have finished editing a policy, make sure to apply your changes. (See [Apply information barriers policies](information-barriers-policies.md#step-4-apply-information-barrier-policies).)
+3. When you have finished editing a policy, make sure to apply your changes. (See [Apply information barriers policies](information-barriers-policies.md#step-4-apply-ib-policies).)
 
 ## Set a policy to inactive status
 
@@ -263,5 +264,5 @@ After you have started applying information barriers policies, if you want to st
 - [Learn more about information barriers in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [Learn more about information barriers in SharePoint Online](/sharepoint/information-barriers)
 - [Learn more about information barriers in OneDrive](/onedrive/information-barriers)
-- [Attributes for information barrier policies](information-barriers-attributes.md)
+- [Attributes for IB policies](information-barriers-attributes.md)
 - [Troubleshooting information barriers](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)

@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -26,7 +27,7 @@ ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: "Learn how you can have more than one email address, called an email alias, associated with your Microsoft 365 for business account. "
 ---
 
-# Add another email alias for a user
+# Add another email alias for a Microsoft 365 business subscription user
   
 This article is for Microsoft 365 administrators who have business subscriptions. It's not for home users.
   

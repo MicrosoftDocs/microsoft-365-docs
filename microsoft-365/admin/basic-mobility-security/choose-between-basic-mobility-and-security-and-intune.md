@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -18,7 +19,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: "Basic Mobility and Security are part of the Microsoft 365 plans."
+description: "Basic Mobility and Security is part of the Microsoft 365 plans, while Microsoft Intune is a standalone product included with certain Microsoft 365 plans."
 ---
 
 # Choose between Basic Mobility and Security or Intune
@@ -27,7 +28,7 @@ description: "Basic Mobility and Security are part of the Microsoft 365 plans."
 
  ## Availability of Basic Mobility and Security and Intune
 
-Both Basic Mobility and Security and Intune are included in a variety of plans, described in the following table.
+Both Basic Mobility and Security and Intune are included in various plans, described in the following table.
 
 | Plan | Basic Mobility and Security | Microsoft Intune |
 |:-----|:-----|:-----|
@@ -70,7 +71,7 @@ Microsoft Intune and built-in Basic Mobility and Security both give you the abil
 |WiFi profiles |Provision a native WiFi profile on the device. |No|Yes|
 |VPN profiles |Provision a native VPN profile on the device. |No|Yes|
 |Mobile application management  |Deploy your internal line-of-business apps and from apps stores to users. |No|Yes|
-|Mobile application protection  |Enable your users to securely access corporate information using the Office mobile and line-of-business apps they know, while ensuring security of data by helping to restrict actions like copy, cut, paste, and save as, to only those apps managed approved for corporate data. Works even if the devices are not enrolled to Basic Mobility and Security. See Protect app data using MAM policies. |No|Yes|
+|Mobile application protection  |Enable your users to securely access corporate information using the Office mobile and line-of-business apps they know, while ensuring security of data by helping to restrict actions like copy, cut, paste, and save as, to only those apps managed approved for corporate data. Works even if the devices aren't enrolled to Basic Mobility and Security. See Protect app data using MAM policies. |No|Yes|
 |Managed browser  |Enable more secure web browsing using the Edge app. |No|Yes|
 |Zero touch enrollment programs (AutoPilot) |Enroll large numbers of corporate-owned devices, while simplifying user setup. |No|Yes|
 

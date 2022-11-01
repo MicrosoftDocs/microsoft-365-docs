@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -18,26 +19,22 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid:
 - MET150
-description: "Basic Mobility and Security can help you secure and manage your organizations mobile devices."
+description: "Sign in to Microsoft 365 and set up Basic Mobility and Security to use the built-in mobile device management to secure and manage your users' mobile devices."
 ---
 
 # Manage devices enrolled in Mobile Device Management in Microsoft 365
 
 The built-in mobile device management for Microsoft 365 helps you secure and manage your users' mobile devices like iPhones, iPads, Androids, and Windows phones. The first step is to sign in to Microsoft 365 and set up Basic Mobility and Security. For more info, see [Set up Basic Mobility and Security](set-up.md).
 
-After you've set it up, the people in your organization must enroll their devices in the service. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md). Then you can use Basic Mobility and Security to help manage devices in your organization. For example, you can use device security policies to help limit email access or other services, view devices reports, and remotely wipe a device. You'll typically go to the Security & Compliance Center to do these tasks. For more info, see [Microsoft Purview compliance portal](../../compliance/microsoft-365-compliance-center.md).
+After you've set it up, the people in your organization must enroll their devices in the service. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md). Then you can use Basic Mobility and Security to help manage devices in your organization. For example, you can use device security policies to help limit email access or other services, view devices reports, and remotely wipe a device. You'll typically go to the Security & Compliance Center to do these tasks. For more info, see [Microsoft Purview compliance portal](../../compliance/microsoft-365-compliance-center.md).
 
 ## Device management tasks
 
 To get to the device management panel, follow these steps:
 
-1. Go to the [Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
+1. Sign in to the Microsoft 365 admin center, and go to the [Mobile Device Management page](https://portal.office.com/adminportal/home?#/MifoDevices).
 
-2. Type Mobile Device Management into the search field, and select **Mobile Device Management** from the list of results.
-
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Mobile device management option.":::
-
-3. Select **Let's get started**.
+1. Select **Let's get started**.
 
 ## Manage mobile devices
 

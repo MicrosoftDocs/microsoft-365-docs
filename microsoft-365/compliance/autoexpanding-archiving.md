@@ -10,8 +10,8 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
+- tier2
 search.appverid:
 - MOE150
 - MET150
@@ -21,20 +21,22 @@ description: "Learn about auto-expanding archiving, which provides additional ar
 
 # Learn about auto-expanding archiving
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-In Office 365, archive mailboxes provide users with additional mailbox storage space. After a user's archive mailbox is enabled, up to 100 GB of additional storage is available. In the past, when the 100-GB storage quota was reached, organizations had to contact Microsoft to request additional storage space for an archive mailbox. That's no longer the case.
+Archive mailboxes in Microsoft Purview provide users with additional mailbox storage space. After a user's archive mailbox is enabled, up to 100 GB of additional storage becomes available.
 
-The archiving feature in Microsoft 365 (called *auto-expanding archiving*) provides up to 1.5 TB of additional storage in archive mailboxes. When the storage quota in the archive mailbox is reached, Microsoft 365 automatically (and incrementally) increases the size of the archive until the archive mailbox reaches 1.5 TB.
+This archiving feature in Microsoft Purview (called *auto-expanding archiving*) provides up to 1.5 TB of additional storage in archive mailboxes. When the storage quota in the archive mailbox is reached, Microsoft Purview automatically (and incrementally) increases the size of the archive until the archive mailbox reaches 1.5 TB.
 
 For step-by-step instructions for turning on auto-expanding archiving, see [Enable auto-expanding archiving](enable-autoexpanding-archiving.md).
 
 > [!NOTE]
-> Auto-expanding archiving also supports shared mailboxes. To enable the archive for a shared mailbox, an Exchange Online Plan 2 license or an Exchange Online Plan 1 license with an Exchange Online Archiving license is required.
+> Auto-expanding archiving also supports shared mailboxes.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How auto-expanding archiving works
 
-As previously explained, additional mailbox storage space is created when a user's archive mailbox is enabled. When auto-expanding archiving is enabled, Microsoft 365 periodically checks the size of the archive mailbox. When an archive mailbox gets close to its storage limit, Microsoft 365 automatically creates additional storage space for the archive. If the user runs out of this additional storage space, Microsoft 365 adds more storage space to the user's archive. This process continues until the user's archive reaches a size 1.5 TB. This process happens automatically, which means administrators don't have to request additional archive storage or manage auto-expanding archiving.
+As explained in the introduction, additional mailbox storage space is created when a user's archive mailbox is enabled. When auto-expanding archiving is enabled, Microsoft Purview periodically checks the size of the archive mailbox. When an archive mailbox gets close to its storage limit, additional storage space is automatically created for the archive. If the user runs out of this additional storage space, more storage space is automatically added to the user's archive. This process continues until the user's archive reaches a size 1.5 TB. This process happens automatically, which means administrators don't have to request additional archive storage or manage auto-expanding archiving.
 
 Here's a quick overview of the process.
 
@@ -42,19 +44,20 @@ Here's a quick overview of the process.
 
 1. Archiving is enabled for a user mailbox or a shared mailbox. An archive mailbox with 100 GB of storage space is created, and the warning quota for the archive mailbox is set to 90 GB.
 
-2. An administrator enables auto-expanding archiving for the mailbox. When the archive mailbox (including the Recoverable Items folder) reaches 90 GB, it's converted to an auto-expanding archive, and Microsoft 365 adds storage space to the archive until it reaches a maximum size of 1.5 TB. It can take up to 30 days for the additional storage space to be provisioned.
+2. An administrator enables auto-expanding archiving for the mailbox. If the mailbox has a hold or retention policy applied to it, the storage quota for the archive mailbox is increased to 110 GB and the archive warning quota is increased to 100 GB.
+    
+    Then, when the archive mailbox (including the Recoverable Items folder) reaches its storage quota, the archive mailbox is converted to an auto-expanding archive. Extra storage space is added until it reaches a maximum size of 1.5 TB. It can take up to 30 days for the additional storage space to be provisioned.
 
-   > [!NOTE]
-   > If a mailbox is placed on hold or assigned to a retention policy, the storage quota for the archive mailbox is increased to 110 GB when auto-expanding archiving is enabled. Similarly, the archive warning quota is increased to 100 GB.
-
-3. Microsoft 365 automatically adds more storage space when necessary.
+3. Microsoft Purview automatically adds more storage space when necessary.
 
 > [!IMPORTANT]
 > Auto-expanding archiving is supported only for mailboxes used for individual users (or shared mailboxes) with a growth rate that doesn't exceed 1 GB per day. A user's archive mailbox is intended for just that user. Using journaling, transport rules, or auto-forwarding rules to copy messages to an archive mailbox is not permitted. Microsoft reserves the right to deny additional archiving in instances where a user's archive mailbox is used to store archive data for other users or in other cases of the inappropriate use.
 
 ## What gets moved to the additional archive storage space?
 
-To make efficient use of auto-expanding archive storage, folders may get moved. Microsoft 365 determines which folders get moved when additional storage is added to the archive. Sometimes when a folder is moved, one or more subfolders are automatically created and items from the original folder are distributed to these folders to facilitate the moving process. When viewing the archive portion of the folder list in Outlook, these subfolders are displayed under the original folder. The naming convention that Microsoft 365 uses to name these subfolders is **\<folder name\>_yyyy (Created on mmm dd, yyyy h_mm)**, where:
+To make efficient use of auto-expanding archive storage, folders may get moved. Microsoft Purview determines which folders get moved when additional storage is added to the archive. Sometimes when a folder is moved, one or more subfolders are automatically created and items from the original folder are distributed to these folders to facilitate the moving process. You might need to communicate this behavior to end users after enabling their mailbox for auto-expanding archives, to help set expectations.
+
+When viewing the archive portion of the folder list in Outlook, these subfolders are displayed under the original folder. The naming convention that Microsoft 365 uses to name these subfolders is **\<folder name\>_yyyy (Created on mmm dd, yyyy h_mm)**, where:
 
 - **yyyy** is the year the messages in the folder were received.
 
@@ -71,7 +74,7 @@ The following screenshots show a folder list before and after messages are moved
 ![Folder list of archive mailbox after auto-expanding archive is provisioned.](../media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
 
 > [!NOTE]
-> As previously described, Microsoft 365 moves items to subfolders (and names them using the naming convention described above) to help distribute content to an auxiliary archive. But moving items to subfolders may not always be the case. Sometimes an entire folder may be moved to an auxiliary archive. In this case, the folder will retain its original name.  It won't be apparent in the folder list in Outlook that the folder was moved to an auxiliary archive.
+> As previously described, Microsoft Purview moves items to subfolders (and names them using the naming convention described above) to help distribute content to an auxiliary archive. But moving items to subfolders may not always be the case. Sometimes an entire folder may be moved to an auxiliary archive. In this case, the folder will retain its original name. It won't be apparent in the folder list in Outlook that the folder was moved to an auxiliary archive.
 
 ## Outlook requirements for accessing items in an auto-expanded archive
 
@@ -83,21 +86,23 @@ To access messages that are stored in an auto-expanded archive, users have to us
 
 - Outlook 2016 or Outlook 2019 for Windows
 
-- Outlook on the web
+- Outlook on the web when the primary mailbox is in Exchange Online rather than on-premises
 
 - Outlook 2016 or Outlook 2019 for Mac
 
-Here are some things to consider when using Outlook or Outlook on the web to access messages stored in an auto-expanded archive.
+Here are some things to consider before you enable a mailbox for auto-expanding archives:
 
-- You can access any folder in your archive mailbox, including ones that were moved to the auto-expanded storage area.
+- Users can access any folder in their archive mailbox, including ones that were moved to the auto-expanded storage area.
 
-- If an archive mailbox has at least one auto-expanded storage area, you can't delete a folder from the archive mailbox or from the auxiliary archive. In other words, after an auto-expanded storage area has been provisioned, you can't delete any folders in the archive.
+- If an archive mailbox has at least one auto-expanded storage area, users can't delete a folder from the archive mailbox or from the auxiliary archive. In other words, after an auto-expanded storage area has been provisioned, they can't delete any folders in the archive.
 
-- You can delete items in an auto-expanded storage area. However, you can't use the Recover Deleted Items feature to recover an item after auto-expanding archiving is enabled for a mailbox.
+- Users can delete items in an auto-expanded storage area. However, they can't use the [Recover Deleted Items feature](https://support.microsoft.com/office/recover-deleted-items-in-outlook-for-windows-49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) to recover an item after auto-expanding archiving is enabled for their mailbox.
 
-- Search for auto-expanded archiving is available in Outlook for the web (OWA). Similar to Online Archive, you can search for items that were moved to an additional storage area. When archive is selected as the search scope in OWA, all archives (including auto-expanded archives) and their corresponding subfolders will be searched. Note that search is not supported for the auto-expanded archive feature in a cloud-only archive situation (primary mailbox still on-premises).
+- Search for auto-expanded archiving is available in Outlook for the web (OWA). Similar to Online Archive, users can search for items that were moved to an additional storage area. When archive is selected as the search scope in OWA, all archives (including auto-expanded archives) and their corresponding subfolders will be searched.
 
-- Auto-expanded archive search is available in Outlook for Windows in Monthly Enterprise Channel. With this update the Current Mailbox scope is available, thus allowing you to search the auto-expanded archive. Note that search is not supported for the auto-expanded archive feature in a cloud-only archive situation (primary mailbox still on-premises). For more information about this and other Microsoft Search support features, see [How Outlook for Windows connected to Exchange Online utilizes Microsoft Search](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
+- Auto-expanded archive search is available when you use Outlook for Windows from the Monthly Enterprise Channel, build 16.0.13519+. With this update the Current Mailbox scope is available, so users can search the auto-expanded archive. However, search isn't recursive for nested subfolders within each archive folder.
+
+- Search is not supported for the auto-expanded archive feature in a cloud-only archive situation (primary mailbox still on-premises). For more information about this and other Microsoft Search support features, see [How Outlook for Windows connected to Exchange Online utilizes Microsoft Search](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
 
 - Item counts in Outlook and Read/Unread counts (in Outlook and Outlook on the web) in an auto-expanded archive might not be accurate.
 

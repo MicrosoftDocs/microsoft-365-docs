@@ -11,16 +11,17 @@ ms.date:
 ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: Learn how to recognize and respond to a compromised connector in Microsoft 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Respond to a compromised connector
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 
@@ -30,7 +31,7 @@ ms.prod: m365-security
 
 Connectors are used for enabling mail flow between Microsoft 365 or Office 365 and email servers that you have in your on-premises environment. For more information, see [Configure mail flow using connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
-A compromised inbound connector is defined as when an unauthorized individual either applies change(s) to an existing inbound connector or creates a new inbound connector in a Microsoft 365 tenant, with the intention of sending spam or phish emails.  
+A compromised inbound connector is defined as when an unauthorized individual either applies change(s) to an existing inbound connector or creates a new inbound connector in a Microsoft 365 tenant, with the intention of sending spam or phish emails. Note that this is applicable only to inbound connectors of type OnPremises. 
 
 ## Detect a compromised connector
 
@@ -70,7 +71,7 @@ If you have [Microsoft Defender for Office 365 plan 2](defender-for-office-365.m
 
 3. Identify: 
 
-    - If **Sender IP** matches with your organization’s on-prem IP address. 
+    - If **Sender IP** matches with your organization's on-prem IP address. 
 
     - If a significant number of emails were recently sent to the **Junk** folder. This is a good indicator of a compromised connector being used to send spam. 
 
@@ -78,7 +79,7 @@ If you have [Microsoft Defender for Office 365 plan 2](defender-for-office-365.m
 
     :::image type="content" source="../../media/connector-compromise-sender-ip.png" alt-text="Sender IP and your organization's on-prem IP address" lightbox="../../media/connector-compromise-sender-ip.png":::
 
-If you have [Microsoft Defender for Office 365 Plan 1](defender-for-office-365.md) or [Exchange Online Protection](exchange-online-protection-overview.md), go to https://admin-sdf.exchange.microsoft.com/#/messagetrace. 
+If you have [Microsoft Defender for Office 365 Plan 1](defender-for-office-365.md) or [Exchange Online Protection](exchange-online-protection-overview.md), go to https://admin.exchange.microsoft.com/#/messagetrace. 
 
 1. Open **Suspicious connector activity** alert in https://security.microsoft.com/alerts.  
 
@@ -86,13 +87,13 @@ If you have [Microsoft Defender for Office 365 Plan 1](defender-for-office-365.m
 
     :::image type="content" source="../../media/connector-compromise-outbound-email-details.png" alt-text="Connector compromise outbound email details" lightbox="../../media/connector-compromise-outbound-email-details.png":::
     
-3. Search by using **connector domain** and **IP address** in [**Message trace**](https://admin-sdf.exchange.microsoft.com/#/messagetrace). 
+3. Search by using **connector domain** and **IP address** in [**Message trace**](https://admin.exchange.microsoft.com/#/messagetrace). 
 
     :::image type="content" source="../../media/connector-compromise-new-message-trace.png" alt-text="New message trace flyout" lightbox="../../media/connector-compromise-new-message-trace.png":::
     
 4. In the **Message trace** search results, identify: 
 
-    - If a significant number of emails were recently marked as **FilteredAsSpam**.  This is a good indicator of a compromised connector being used to send spam. 
+    - If a significant number of emails were recently marked as **FilteredAsSpam**. This is a good indicator of a compromised connector being used to send spam. 
 
     - If the recipients are the ones that your organization usually stays in contact with. 
 

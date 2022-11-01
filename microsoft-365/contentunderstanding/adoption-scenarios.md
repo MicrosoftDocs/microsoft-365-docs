@@ -1,5 +1,5 @@
 ---
-title: Scenarios and use cases for Microsoft SharePoint Syntex
+title: Scenarios and use cases for Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -7,23 +7,23 @@ ms.reviewer: lauris
 ms.date: 
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.custom: Adopt
 search.appverid: 
 ms.localizationpriority:  medium
-description: Find business scenarios about how to use SharePoint Syntex in your organization.
+description: Find business scenarios about how to use Microsoft Syntex in your organization.
 ---
 
-# Scenarios and use cases for Microsoft SharePoint Syntex
+# Scenarios and use cases for Microsoft Syntex
 
-Use the following example scenarios to prompt ideas about how you can use SharePoint Syntex in your organization.
+Use the following example scenarios to prompt ideas about how you can use Microsoft Syntex in your organization.
 
 - [Scenario: Track data from invoices with form processing](adoption-scenarios.md#scenario-track-data-from-invoices-with-form-processing)
 - [Scenario: Track information from contracts with document understanding](adoption-scenarios.md#scenario-track-information-from-contracts-with-document-understanding)
-- [Scenario: Avoid risk with records management, document governance, and compliance processes based on SharePoint Syntex](adoption-scenarios.md#scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex)
+- [Scenario: Avoid risk with records management, document governance, and compliance processes based on Syntex](adoption-scenarios.md#scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-syntex)
 - [Scenario: Capture information from previously inaccessible documents](adoption-scenarios.md#scenario-capture-information-from-previously-inaccessible-documents)
 - [Scenario: Improve data processing to provide insights and analytics](adoption-scenarios.md#scenario-improve-data-processing-to-provide-insights-and-analytics)
 - [Scenario: Automate order processing](adoption-scenarios.md#scenario-automate-order-processing)
@@ -31,7 +31,7 @@ Use the following example scenarios to prompt ideas about how you can use ShareP
 
 ## Scenario: Track data from invoices with form processing
 
-For example, you can set up a process using SharePoint Syntex and Power Automate features to track and monitor invoices.
+For example, you can set up a process using Syntex and Power Automate features to track and monitor invoices.
 
 1. Set up a library to store the invoice documents.
 1. Train the model to recognize fields in the documents.
@@ -41,7 +41,7 @@ For example, you can set up a process using SharePoint Syntex and Power Automate
     - An invoice is past its due date.
     - An invoice is for an amount that's larger than your automatic approval amount.
 
-![Track and monitor invoices with SharePoint Syntex and Power Automate.](../media/content-understanding/process-invoices-flow.png)
+![Track and monitor invoices with Syntex and Power Automate.](../media/content-understanding/process-invoices-flow.png)
 
 When you automate this scenario, you can:
 
@@ -58,14 +58,14 @@ As another example, you can set up a process to identify contracts your company 
 1. When the model is complete, apply the model to a library where you can upload contracts.
 1. Apply a retention label to the date field, so that contracts are retained in the library for the required length of time.
 
-![Track and monitor contracts with SharePoint Syntex and retention labels.](../media/content-understanding/process-contracts-flow.png)
+![Track and monitor contracts with Syntex and retention labels.](../media/content-understanding/process-contracts-flow.png)
 
 When you automate this scenario, you can:
 
 - Save time and money by automatically extracting data from the contracts instead of doing it manually.
 - Ensure better compliance by using retention labels to ensure that the contracts are retained appropriately.
 
-## Scenario: Avoid risk with records management, document governance, and compliance processes based on SharePoint Syntex
+## Scenario: Avoid risk with records management, document governance, and compliance processes based on Syntex
 
 Reducing risks is a common goal for most companies. You might need:
 
@@ -74,7 +74,7 @@ Reducing risks is a common goal for most companies. You might need:
 - To audit receipts, contracts, and so on, to ensure compliance with company policies.
 - To ensure that projects have all the documentation required for compliance.
 
-Set up some processes for compliance with SharePoint Syntex to capture and appropriately classify, audit, and flag documents and forms that need better governance. You can rely on SharePoint Syntex to auto classify content rather than relying on end users to manually tag, or the compliance team to manually apply governance rules and archiving. And you can enable a simplified search experience, manage data volumes, apply records management and retention policies, ensure compliance, and best practice archiving and purging practices.
+Set up some processes for compliance with Syntex to capture and appropriately classify, audit, and flag documents and forms that need better governance. You can rely on Syntex to auto classify content rather than relying on end users to manually tag, or the compliance team to manually apply governance rules and archiving. And you can enable a simplified search experience, manage data volumes, apply records management and retention policies, ensure compliance, and best practice archiving and purging practices.
 
 When you automate this scenario, you can feel secure that:
 
@@ -99,7 +99,7 @@ When you automate this scenario, you can:
 
 ## Scenario: Improve data processing to provide insights and analytics
 
-For example, a pharmaceutical company could use SharePoint Syntex to extract information from FDA documents to answer questions that their leaders have. Having the answers more easily accessible can reduce the time needed to produce these answers and increase the availability of data to generate more accurate answers to leadership questions.
+For example, a pharmaceutical company could use Syntex to extract information from FDA documents to answer questions that their leaders have. Having the answers more easily accessible can reduce the time needed to produce these answers and increase the availability of data to generate more accurate answers to leadership questions.
 
 For example, a project manager needs to quickly provide answers to product-related questions from my leadership team. They need to find information and metrics related to queries in one consolidated dashboard. They’re looking for a solution that extracts the information they need from product labels, product pamphlets, and other materials and generates a consolidated report that they can use when reporting back to their leadership team.
 
@@ -111,7 +111,7 @@ When you automate this scenario, you can:
 
 ## Scenario: Automate order processing
 
-With SharePoint Syntex, you can reduce the time of manual processing of customer orders. For example, you can upload orders from fax, email, or paper into SharePoint by using OCR processing and then extract the metadata from those orders so you can fulfill them by using automated processes.
+With Syntex, you can reduce the time of manual processing of customer orders. For example, you can upload orders from fax, email, or paper into SharePoint document library by using OCR processing and then extract the metadata from those orders so you can fulfill them by using automated processes.
 
 For example, a supply chain manager wants to reduce errors caused by manual data entry. They want to avoid manual review and data entry of inbound customer orders (paper, fax, or e-mail) to reduce errors going into their business systems. They want a solution that applies AI and machine learning techniques to validate incoming order information, extract core data and automatically push it into their ERP system, for order fulfillment and reconciliation.
 
@@ -124,7 +124,7 @@ When you automate this scenario, you can ensure that:
 
 ## Scenario: Simplify visa renewal process
 
-SharePoint Syntex can help you automate reminders and renewals for key contract information. For example, an HR director needs to ensure that employees’ visas are up to date and/or renewed on time. They want to give people a simple and intuitive process for updating their Visas. They need a solution that extracts renewal dates from contracts and automatically sends employees reminders when their renewal dates are approaching.
+Syntex can help you automate reminders and renewals for key contract information. For example, an HR director needs to ensure that employees’ visas are up to date and/or renewed on time. They want to give people a simple and intuitive process for updating their Visas. They need a solution that extracts renewal dates from contracts and automatically sends employees reminders when their renewal dates are approaching.
 
 When you automate this scenario, you can ensure that:
 
@@ -134,4 +134,4 @@ When you automate this scenario, you can ensure that:
 
 ## See also
 
-[Get started driving adoption of SharePoint Syntex](adoption-getstarted.md)
+[Get started driving adoption of Syntex](adoption-getstarted.md)

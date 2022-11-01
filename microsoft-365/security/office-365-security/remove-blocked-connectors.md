@@ -11,16 +11,17 @@ ms.date:
 ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: Learn how to remove blocked connectors in Microsoft 365 Defender.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Remove blocked connectors from the Restricted entities portal
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 
@@ -28,23 +29,23 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-If an inbound connector is detected as potentially compromised, it is restricted from sending any relaying email. The connector is then added to the **Restricted entities** page in the Microsoft 365 Defender portal. When the connector is used to send email, the message is returned in a non-delivery report (also known as an NDR or bounced message) with the error code 550;5.7.711 and the following text: 
+If an inbound connector is detected as potentially compromised, it is restricted from sending any relaying email. The connector is then added to the **Restricted entities** page in the Microsoft 365 Defender portal. When the connector is used to send email, the message is returned in a non-delivery report (also known as an NDR or bounced message) with the error code 550;5.7.711 and the following text:
 
-> Your message couldn’t be delivered. The most common reason for this is that your organization’s email connector is suspected of sending spam or phish and it’s no
-> longer allowed to send email. Contact your email admin for assistance. 
-> Remote Server returned '550;5.7.711 Access denied, bad inbound connector. AS(2204).' 
+> Your message couldn't be delivered. The most common reason for this is that your organization's email connector is suspected of sending spam or phish and it's no
+> longer allowed to send email. Contact your email admin for assistance.
+> Remote Server returned '550;5.7.711 Access denied, bad inbound connector. AS(2204).'
 
-Admins can remove connectors from the Restricted entities page in Microsoft 365 Defender or in Exchange Online PowerShell. 
+Admins can remove connectors from the Restricted entities page in Microsoft 365 Defender or in Exchange Online PowerShell.
 
 ## Learn more on restricted entities
 
 A restricted entity is an entity that has been blocked from sending email because either it has been potentially compromised, or it has exceeded sending limit.
 
-There are 2 types of restricted entities: 
+There are 2 types of restricted entities:
 
-- **Restricted user**: For more information about why a user can be restricted and how to handle restricted users, see [Remove blocked users from the Restricted entities portal](removing-user-from-restricted-users-portal-after-spam.md). 
+- **Restricted user**: For more information about why a user can be restricted and how to handle restricted users, see [Remove blocked users from the Restricted entities portal](removing-user-from-restricted-users-portal-after-spam.md).
 
-- **Restricted connector**: Learn about why a connector can be restricted and how to handle restricted connectors (this article).  
+- **Restricted connector**: Learn about why a connector can be restricted and how to handle restricted connectors (this article).
 
 ## What do you need to know before you begin?
 

@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -25,7 +26,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow these steps to block a former employee's mobile device access."
+description: "Use the Exchange admin center to wipe and block a former employee's device so that all organization data is removed and it no longer connects to Microsoft 365."
 ---
 
 # Step 3 - Wipe and block a former employee's mobile device

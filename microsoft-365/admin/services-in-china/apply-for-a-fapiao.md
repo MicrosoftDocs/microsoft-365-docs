@@ -5,12 +5,13 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: lishepar, vikdesai
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
@@ -120,7 +121,7 @@ If you want to change the Fapiao title, please send the Fapiao back to us and we
 
     ![The drop-down menu after a user has logged in to the 21Vianet Fapiao management system.](../../media/ee6de24b-6be2-41e6-8aec-e0c3cb0ea35e.png)
   
-2. If you forgot your login password, you can use your login email address to reset the password. The Fapiao management system will send a new password to your email address. You can use the new password to login.
+2. If you forgot your login password, you can use your login email address to reset the password. The Fapiao management system will send a new password to your email address. You can use the new password to log in.
 
     ![Sequential images showing how to reset your password in the 21Vianet Fapiao management system.](../../media/2edb0a47-1286-4792-804d-7e84534c8370.png)
   

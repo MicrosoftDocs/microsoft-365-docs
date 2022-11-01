@@ -6,15 +6,13 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
+ms.collection: scotvorg
 ms.localizationpriority: medium
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: "If you need to ask customers questions when they book an appointment with you online, you can add custom questions and required questions to the booking page."
 ---
 
 # Add custom and required questions to the booking page
-
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
 
 Bookings lets you create questions to ask your customers when they are booking appointments. It also lets you choose which questions are required.
 

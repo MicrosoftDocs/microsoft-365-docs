@@ -1,17 +1,19 @@
 ### YamlMime:Landing
 
 title: Microsoft Defender for Business
-summary: Simple, comprehensive endpoint security to help you protect your business, so you can focus on what matters. Microsoft Defender for Business is available as a standalone subscription and is included in Microsoft 365 Business Premium.
+summary: Simple, comprehensive endpoint security to help you protect your business, so you can focus on what matters. Defender for Business is available as a standalone subscription and is included in Microsoft 365 Business Premium. Microsoft Defender for Business servers is now in preview! Learn more at https://aka.ms/mdb-servers.
 metadata:
   title: Microsoft Defender for Business documentation
-  description: Defender for Business is a cybersecurity solution for small and medium-sized businesses. Protect devices with enterprise-grade security at an affordable price.
-  ms.prod: m365-security
-  ms.technology: mdb
+  description: Defender for Business is a cybersecurity solution for small and medium-sized businesses. Protect devices with enterprise-grade security at an affordable price. 
+  ms.service: microsoft-365-security
+  ms.subservice: mdb
   ms.topic: landing-page
+  ms.date: 07/19/2022
   ms.collection: 
   - SMB
-  - M365-security-compliance
+  - m365-security
   - m365-initiative-defender-business
+  - tier1
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
@@ -32,6 +34,8 @@ landingContent:
             url: mdb-simplified-configuration.md
           - text: Compare plans for small and medium-sized businesses
             url: compare-mdb-m365-plans.md
+          - text: Resources for Microsoft partners
+            url: mdb-partners.md
           - text: Integration with Microsoft 365 Lighthouse
             url: mdb-lighthouse-integration.md
       - linkListType: how-to-guide
@@ -44,20 +48,18 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
+          - text: Interactive guide - Get started with Defender for Business
+            url: https://aka.ms/MDB-GetStartedGuide
           - text: Get Defender for Business
             url: get-defender-business.md
-          - text: Use the trial playbook
+          - text: See the trial user guide
             url: trial-playbook-defender-business.md
-          - text: Add users and assign licenses
-            url: mdb-add-users.md
-          - text: Visit the Microsoft 365 Defender portal
-            url: mdb-get-started.md
           - text: Use the setup wizard
             url: mdb-use-wizard.md
-      - linkListType: tutorial
-        links:
-          - text: Try tutorials and simulations
-            url: mdb-tutorials.md
+          - text: Turn on preview features
+            url: mdb-preview.md
+          - text: Get Microsoft Defender for Business servers (preview)
+            url: get-defender-business-servers.md
 
   # Card
   - title: Help and more resources
@@ -68,83 +70,7 @@ landingContent:
             url: mdb-get-help.md
           - text: Frequently asked questions
             url: mdb-faq.yml
-          - text: Troubleshooting
-            url: mdb-troubleshooting.yml
-      - linkListType: reference
-        links:
           - text: Glossary of security terms
             url: /microsoft-365/business-premium/m365bp-glossary
-          - text: API reference information
-            url: /microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners
-          - text: Microsoft 365 Business Premium
-            url: /microsoft-365/business-premium/
-          - text: Microsoft 365 Lighthouse
-            url: /microsoft-365/lighthouse/m365-lighthouse-overview
 
-  # Card
-  - title: Set up and configure
-    linkLists:
-      - linkListType: deploy
-        links:
-          - text: See the setup process
-            url: mdb-setup-configuration.md
-          - text: Step 1 - Review the requirements
-            url: mdb-requirements.md
-          - text: Step 2 - Assign roles and permissions
-            url: mdb-roles-permissions.md
-          - text: Step 3 - Set up email notifications
-            url: mdb-email-notifications.md
-          - text: Step 4 - Onboard devices
-            url: mdb-onboard-devices.md
-          - text: Step 5 - Review your security policies
-            url: mdb-view-edit-policies.md
-
-
-  # Card
-  - title: View and respond to threats
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: View your threat dashboard
-            url: mdb-view-tvm-dashboard.md
-          - text: View and manage incidents
-            url: mdb-view-manage-incidents.md
-          - text: Respond to and mitigate threats
-            url: mdb-respond-mitigate-threats.md
-          - text: Review remediation actions
-            url: mdb-review-remediation-actions.md
-          - text: View and use reports
-            url: mdb-reports.md
-
-  # Card
-  - title: View or edit security policies
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: View, edit, and create policies
-            url: mdb-view-edit-create-policies.md
-          - text: Manage rules for firewall policies
-            url: mdb-custom-rules-firewall.md
-      - linkListType: reference
-        links:
-          - text: Policy order
-            url: mdb-policy-order.md
-          - text: Next-generation protection settings
-            url: mdb-next-gen-configuration-settings.md
-          - text: Firewall settings
-            url: mdb-firewall.md
-
-  # Card
-  - title: Monitor or manage devices
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: View and monitor devices
-            url: mdb-manage-devices.md
-          - text: Create device groups
-            url: mdb-create-edit-device-groups.md
-          - text: Onboard devices
-            url: mdb-onboard-devices.md
-          - text: Remove devices
-            url: mdb-offboard-devices.md
-
+ 

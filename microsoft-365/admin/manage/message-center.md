@@ -1,5 +1,5 @@
 ---
-title: "Message center"
+title: "Message center in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -7,12 +7,12 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
-
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
@@ -25,7 +25,7 @@ ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: "Get an overview of Microsoft 365 Message center and its role in tracking new and changed features and other important announcements."
 ---
 
-# Message center
+# Track new and changed features in the Microsoft 365 Message center
 
 To keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Message center</a>.
   
@@ -280,5 +280,4 @@ For an overview of Message center, see [Message center in Microsoft 365](message
 ## Related content
 
 [Set up the Standard or Targeted release options](../manage/release-options-in-office-365.md) (article)\
-[Manage which Office features appear in What's New](../manage/show-hide-new-features.md) (article)\
 [Business subscriptions and billing documentation](../../commerce/index.yml) (link page)

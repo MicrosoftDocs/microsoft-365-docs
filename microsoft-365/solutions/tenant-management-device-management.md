@@ -5,9 +5,10 @@ author: kelleyvice-msft
 manager: scotv
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
@@ -29,7 +30,7 @@ Here is an example of the validation and management of users, their devices, and
 To help you secure and protect your organization's resources, Microsoft 365 for enterprise includes features to help manage devices and their access to apps. There are two options for device management:
 
 - Microsoft Intune, which is a comprehensive device and app management solution for enterprises.
-- Basic Mobility and Security, which is a subset of Intune services included with all Microsoft 365 products for managing devices in your organization. For more information, see [Capabilities of Basic Mobility and Security](../admin/basic-mobility-security/capabilities.md).
+- Basic Mobility and Security, which is a subset of Intune services included with all Microsoft 365 products for managing devices in your organization. For more information, see [Capabilities of Basic Mobility and Security](../admin/basic-mobility-security/capabilities.md).
 
 If you have Microsoft 365 E3 or E5, you should use Intune.
 

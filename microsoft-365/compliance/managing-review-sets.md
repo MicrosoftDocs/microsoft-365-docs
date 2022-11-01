@@ -1,28 +1,27 @@
 ---
 title: "Manage review sets in eDiscovery (Premium)"
+description: Learn how to manage review sets so you can analyze, query, view, tag, and export data in an eDiscovery (Premium) case.
+ms.custom: seo-marvel-mar2020
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: Learn how to manage review sets so you can analyze, query, view, tag, and export data in an eDiscovery (Premium) case.
-ms.custom: seo-marvel-mar2020
 ---
 
 # Manage review sets in eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Review sets are a static set of documents where you can analyze, query, view, tag, and export data in a case. For more information about performing these tasks, see:
 
@@ -35,6 +34,8 @@ Review sets are a static set of documents where you can analyze, query, view, ta
 - [Tag documents in a review set](tagging-documents.md)
 
 - [Export case data](exporting-data-ediscover20.md)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Create a review set
 

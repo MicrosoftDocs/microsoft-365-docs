@@ -5,30 +5,26 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 03/08/2022
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
-- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: "Learn how to send encrypted email using Outlook."
 ---
 
-# Encrypt or label sensitive email
+# Encrypt or label your sensitive email in Microsoft 365
 
 Your data and information is important, and often, confidential. The objective here is to help protect this sensitive information by ensuring everyone is using sensitivity labels so that email recipients treat the information with the utmost sensitivity.
 
@@ -66,5 +62,6 @@ For more information, see [Define mail flow rules to encrypt email messages](../
 
 You can also apply branding to customize the look and the text in the email messages. For more information, see [Add your organization's brand to your encrypted messages](../compliance/email-encryption.md).
 
-If you've gotten this far, you've successfully completed another mission, so congratulations! There's no time to rest on our successes, so let's get right to setting up a safe and secure environment in which the team can [collaborate safely](m365bp-collaborate-share-securely.md). 
+## Next mission
 
+If you've gotten this far, you've successfully completed another mission, so congratulations! There's no time to rest on our successes, so let's get right to setting up a safe and secure environment in which the team can [collaborate safely](m365bp-collaborate-share-securely.md).

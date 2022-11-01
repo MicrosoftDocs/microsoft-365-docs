@@ -2,41 +2,39 @@
 title: "Set Up unmanaged devices overview"
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
-manager: scotv
-ms.date: 03/02/2022
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: conceptual
-ms.service: o365-administration
+ms.topic: overview
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
-- Adm_O365
-- M365-subscription-management 
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: "An overview of how to set up all the bring-your-own devices (BYOD) with protection against cyberattacks and other malicious threats and vulnerabilities."
 ---
 
 # Set up unmanaged (BYOD) devices
 
-Every  device is a possible attack avenue into your network and must be monitored and managed properly, even those devices that are personally owned but used for work. In this critical mission, you set up protection for all the bring-your-own devices (BYODs), which are those that are most risky to your organization due to being unmanaged. It's important to get these devices protected as soon as possible. 
+:::image type="content" source="media/mission3.png" alt-text="Protect unmanaged BYOD devices with Microsoft 365 Business Premium.":::
 
-Your objectives are as follows:
+Every device is a possible attack avenue into your network and must be monitored and managed properly, even those devices that are personally owned but used for work. In this critical mission, train everyone to protect their bring-your-own devices (BYODs). Unmanaged devices can pose a risk to your organization. It's important to help everyone get their devices protected as soon as possible.
 
-- [Set up MFA](m365bp-multifactor-authentication.md)
-- [Install Office apps](m365bp-install-office-apps.md)
-- [Protected unmanaged PCs and Macs](m365bp-protect-pcs-macs.md)
+Your objectives are to:
 
-Once you've accomplished these objectives, proceed with your [next mission](m365bp-protect-email-overview.md).
+- [Get everyone to set up MFA](m365bp-multifactor-authentication.md).
+- [Get Office apps installed on devices](m365bp-install-office-apps.md).
+- [Protected unmanaged Windows and Mac devices](m365bp-protect-pcs-macs.md).
 
-:::image type="content" source="media/m365bp-set-up-devices-staff.jpg" alt-text="Set up devices for all staff.":::
+Once you've achieved these objectives, proceed to [Use email securely](m365bp-protect-email-overview.md).

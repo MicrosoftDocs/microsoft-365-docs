@@ -6,9 +6,11 @@ manager: scotv
 ms.date: 2/14/2018
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: 
@@ -41,7 +43,7 @@ The following table highlights a few differences between the internet and Azure 
 |Direct connection with a predictable network profile.  <br/> |No  <br/> |Yes  <br/> |
 |IPv6 connectivity.  <br/> |Yes  <br/> |Yes  <br/> |
 
-Expand the titles below for more network planning guidance. We've also recorded a 10-part [Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer) series that dives deeper.
+Expand the titles below for more network planning guidance.
 
 ## Existing Azure ExpressRoute customers
 
@@ -99,15 +101,15 @@ When considering the topology placement of the network/security perimeter option
 
 - Customers are encouraged to design their security/perimeter topology for use with ExpressRoute for Office 365 in accordance with best practices for redundancy, high availability, and disaster recovery.
 
-Here's an example of Woodgrove Bank that compares the different Azure ExpressRoute connectivity options with the perimeter security models discussed above.
+Here's an example of Contoso that compares the different Azure ExpressRoute connectivity options with the perimeter security models discussed above.
   
 ### Example 1: Securing Azure ExpressRoute
   
-Woodgrove Bank is considering implementing Azure ExpressRoute and after planning the optimal architecture for [Routing with ExpressRoute for Office 365](routing-with-expressroute.md) and after using the above guidance to understand bandwidth requirements, they're determining the best method for securing their perimeter.
+Contoso is considering implementing Azure ExpressRoute and after planning the optimal architecture for [Routing with ExpressRoute for Office 365](routing-with-expressroute.md) and after using the above guidance to understand bandwidth requirements, they're determining the best method for securing their perimeter.
   
-For Woodgrove, a multi-national organization with locations in multiple continents, security must span all perimeters. The optimal connectivity option for Woodgrove is a multi-point connection with multiple peering locations around the globe to service the needs of their employees in each continent. Each continent includes redundant Azure ExpressRoute circuits within the continent and security must span all of these.
+For Contoso, a multi-national organization with locations in multiple continents, security must span all perimeters. The optimal connectivity option for Contoso is a multi-point connection with multiple peering locations around the globe to service the needs of their employees in each continent. Each continent includes redundant Azure ExpressRoute circuits within the continent and security must span all of these.
   
-Woodgrove's existing infrastructure is reliable and can handle the extra work, as a result, Woodgrove Bank is able to use the infrastructure for their Azure ExpressRoute and internet perimeter security. If this weren't the case, Woodgrove could choose to purchase more equipment to supplement their existing equipment or to handle a different type of connection.
+Contoso's existing infrastructure is reliable and can handle the extra work, as a result, Contoso is able to use the infrastructure for their Azure ExpressRoute and internet perimeter security. If this weren't the case, Contoso could choose to purchase more equipment to supplement their existing equipment or to handle a different type of connection.
   
 ## High availability and failover with Azure ExpressRoute
 <a name="BKMK_high-availability"> </a>
@@ -153,13 +155,13 @@ We don't recommend using a single ExpressRoute circuit with the Internet as a ba
   
 ### Example 2: Failover and High Availability
   
-Woodgrove Bank's multi-geographic design has undergone a review of routing, bandwidth, security, and now must go through a high availability review. Woodgrove thinks about high availability as covering three categories; resiliency, reliability, and redundancy.
+Contoso's multi-geographic design has undergone a review of routing, bandwidth, security, and now must go through a high availability review. Contoso thinks about high availability as covering three categories; resiliency, reliability, and redundancy.
   
-Resiliency allows Woodgrove to recover from failures quickly. Reliability allows Woodgrove to offer a consistent outcome within the system. Redundancy allows Woodgrove to a move between one or more mirrored instances of infrastructure.
+Resiliency allows Contoso to recover from failures quickly. Reliability allows Contoso to offer a consistent outcome within the system. Redundancy allows Contoso to a move between one or more mirrored instances of infrastructure.
   
-Within each edge configuration, Woodgrove has redundant Firewalls, Proxies, and IDS. For North America, Woodgrove has one edge configuration in their Dallas datacenter and another edge configuration in their Virginia datacenter. The redundant equipment at each location offers resiliency to that location.
+Within each edge configuration, Contoso has redundant Firewalls, Proxies, and IDS. For North America, Contoso has one edge configuration in their Dallas datacenter and another edge configuration in their Virginia datacenter. The redundant equipment at each location offers resiliency to that location.
   
-The network configuration at Woodgrove Bank is built based on a few key principles:
+The network configuration at Contoso is built based on a few key principles:
   
 - Within each geographic region, there are multiple Azure ExpressRoute circuits.
 
@@ -167,15 +169,15 @@ The network configuration at Woodgrove Bank is built based on a few key principl
 
 - Routing will clearly prefer one or the other path depending on availability, location, and so on.
 
-- Failover between Azure ExpressRoute circuits happens automatically without additional configuration or action required by Woodgrove.
+- Failover between Azure ExpressRoute circuits happens automatically without additional configuration or action required by Contoso.
 
-- Failover between Internet circuits happens automatically without additional configuration or action required by Woodgrove.
+- Failover between Internet circuits happens automatically without additional configuration or action required by Contoso.
 
-In this configuration, with redundancy at the physical and virtual level, Woodgrove Bank is able to offer local resiliency, regional resiliency, and global resiliency in a reliable way. Woodgrove elected this configuration after evaluating a single Azure ExpressRoute circuit per region as well as the possibility of failing over to the internet.
+In this configuration, with redundancy at the physical and virtual level, Contoso is able to offer local resiliency, regional resiliency, and global resiliency in a reliable way. Contoso elected this configuration after evaluating a single Azure ExpressRoute circuit per region as well as the possibility of failing over to the internet.
   
-If Woodgrove was unable to have multiple Azure ExpressRoute circuits per region, routing traffic originating in North America to the Azure ExpressRoute circuit in Asia Pacific would add an unacceptable level of latency and the required DNS forwarder configuration adds complexity.
+If Contoso was unable to have multiple Azure ExpressRoute circuits per region, routing traffic originating in North America to the Azure ExpressRoute circuit in Asia Pacific would add an unacceptable level of latency and the required DNS forwarder configuration adds complexity.
   
-Using the internet as a backup configuration isn't recommended. This breaks Woodgrove's reliability principle, resulting in an inconsistent experience using the connection. Additionally, manual configuration would be required to fail over considering the BGP advertisements that have been configured, NAT configuration, DNS configuration, and the proxy configuration. This added failover complexity increases the time to recover and decreases their ability to diagnose and troubleshoot the steps involved.
+Using the internet as a backup configuration isn't recommended. This breaks Contoso's reliability principle, resulting in an inconsistent experience using the connection. Additionally, manual configuration would be required to fail over considering the BGP advertisements that have been configured, NAT configuration, DNS configuration, and the proxy configuration. This added failover complexity increases the time to recover and decreases their ability to diagnose and troubleshoot the steps involved.
   
 Still have questions about how to plan for and implement traffic management or Azure ExpressRoute? Read the rest of our [network and performance guidance](./network-planning-and-performance.md) or the [Azure ExpressRoute FAQ](/azure/expressroute/expressroute-faqs).
   
