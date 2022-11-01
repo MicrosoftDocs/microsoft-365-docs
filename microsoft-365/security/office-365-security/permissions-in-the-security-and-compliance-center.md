@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 search.appverid: 
   - MOE150
   - MET150
-description: Admins can learn about the roles and role groups in the Microsoft 365 Defender and Microsoft Purview compliance portals.
+description: Admins can learn about the roles and role groups in the Microsoft 365 Defender portal and the Microsoft Purview compliance portal.
 ms.custom: 
 - seo-marvel-apr2020
 ms.subservice: mdo
@@ -26,14 +26,14 @@ ms.service: microsoft-365-security
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-The [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender-portal) and [Microsoft Purview compliance](/microsoft-365/compliance/microsoft-365-compliance-center) portals have replaced the Office 365 Security and Compliance Center as tools to manage roles and role groups for your organization. For more information about permissions within these portals, see the following:
+The [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender-portal) and [Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center) have replaced the Security & Compliance Center as the place to manage security and complinace-related roles and role groups for your organization. For more information about permissions within these portals, see the following articles:
 
 - [Permissions in the Microsoft 365 Defender portal](/microsoft-365/security/office-365-security/permissions-microsoft-365-security-center)
 - [Permissions in the Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center-permissions)
 
-These portals let you grant permissions to people who perform compliance tasks like device management, data loss prevention, eDiscovery, retention, and so on. These people can perform only the tasks that you explicitly grant them access to. To access these portals, users need to be a global administrator or a member of one or more security or compliance role groups.
+These portals let you grant permissions to people who perform tasks like device management, data loss prevention, eDiscovery, retention, and so on. These people can perform only the tasks that you explicitly grant them access to. To access these portals, users need to be a global admin or a member of one or more security or compliance role groups.
 
-Permissions in these portals are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by Exchange, so if you're familiar with Exchange, granting permissions in these portals will be very similar. It's important to remember, however, that Exchange role groups and security and compliance role groups don't share membership or permissions. While both have an Organization Management role group, they aren't the same. The permissions they grant, and the members of the role groups, are different. There's a list of security and compliance role groups below.
+Permissions in these portals are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by Exchange, so if you're familiar with Exchange, granting permissions in these portals will be very similar. It's important to remember, however, that Exchange role groups and security and compliance role groups don't share membership or permissions. While both have an Organization Management role group, they aren't the same. The permissions they grant, and the members of the role groups, are different. This article contains the inventory of security and compliance roles and role groups.
 
 ## Role groups in the Defender and compliance portals
 
@@ -44,7 +44,7 @@ Managing permissions in the portals only gives users access to the security and 
 To see how to grant access to the portals, check out [Give users access to Microsoft Purview admin center](grant-access-to-the-security-and-compliance-center.md).
 
 > [!NOTE]
-> To view the **Permissions** tab in the portals, you need to be an admin. Specifically, you need to be assigned the **Role Management** role, and that role is assigned only to the **Organization Management** role group in the portals by default. Furthermore, the **Role Management** role allows users to view, create, and modify role groups.
+> To view the **Permissions** tab in the portals, you need to be an admin. Specifically, you need to be assigned the **Role Management** role, and that role is assigned only to the **Organization Management** role group by default. Furthermore, the **Role Management** role allows users to view, create, and modify role groups.
 
 |Role group|Description|Default roles assigned|
 |---|---|---|
