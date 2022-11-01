@@ -177,7 +177,23 @@
         - name: Cross-tenant identity mapping
           href: cross-tenant-identity-mapping.md
         - name: Cross-tenant OneDrive migration
-          href: cross-tenant-onedrive-migration.md
+          items:
+            - name: Cross-tenant OneDrive migration overview
+              href: cross-tenant-onedrive-migration.md
+            - name: Step 1 Connect to tenants
+              href: cross-tenant-onedrive-migration-step1.md
+            - name: Step 2 Establish trust between the tenants
+              href: cross-tenant-onedrive-migration-step2.md
+            - name: Step 3 Verify trust between the tenants
+              href: cross-tenant-onedrive-migration-step3.md
+            - name: Step 4 Pre-create users & groups
+              href: cross-tenant-onedrive-migration-step4.md
+            - name: Step 5 Prepare the identity mapping file
+              href: cross-tenant-onedrive-migration-step5.md
+            - name: Step 6 Start a cross-tenant OneDrive migration
+              href: cross-tenant-onedrive-migration-step6.md
+            - name: Step 7 Post migration steps
+              href: cross-tenant-onedrive-migration-step7.md
         - name: Tenant-to-tenant migrations
           href: microsoft-365-tenant-to-tenant-migrations.md
     - name: Data Residency
