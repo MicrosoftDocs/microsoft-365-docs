@@ -18,6 +18,16 @@ description: "Step 6 of the OneDrive Cross-tenant migration feature"
 ---
 # Step 6: Start a OneDrive Cross-Tenant Migration
 
+This is Step 5 in a solution designed to complete a Cross-tenant OneDrive migration. To learn more, see [Cross-tenant OneDrive migration overview](cross-tenant-onedrive-migration.md).
+
+- Step 1: [Connect to the source and the target tenants](cross-tenant-onedrive-migration-step1.md)
+- Step 2: [Establish trust between the source and the target tenant](cross-tenant-onedrive-migration-step2.md) 
+- Step 3: [Verify trust has been established](cross-tenant-onedrive-migration-step3.md) 
+- Step 4: [Manage permissions](cross-tenant-onedrive-migration-step4.md)  
+- Step 5: [Prepare identity mapping](cross-tenant-onedrive-migration-step5.md)
+- **Step 6: [Start a Cross-tenant OneDrive migration](cross-tenant-onedrive-migration-step6.md)**
+- Step 7: [Post migration steps](cross-tenant-onedrive-migration-step7.md)
+
 Now you're ready to start your OneDrive migration.  Before starting any cross-tenant migration, do the following steps. 
 
 1. Ensure you've verified the compatibility status. if you see a compatible status on your source tenant you may continue. Run:

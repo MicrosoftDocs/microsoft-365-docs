@@ -15,22 +15,21 @@ ms.collection:
 search.appverid: MET150
 description: "Cross-tenant OneDrive migration"
 ---
-
-
 # Cross-tenant OneDrive migration
 
 >[!Note]
-> This feature isn't currently supported for users of the Government Cloud, including GCC, Consumer, GCC High, or DoD.
-
-
->[!Note]
-> Information in this article refers to **Cross-tenant OneDrive migration**. [Learn about about the cross-tenant Mailbox migration here](/microsoft-365/enterprise/cross-tenant-mailbox-migration)
+> Information in this article refers to **Cross-tenant OneDrive migration**. For mailbox migration, see [Cross-tenant mailbox migration](/microsoft-365/enterprise/cross-tenant-mailbox-migration).
 
 During mergers or divestitures, you commonly need the ability to move users OneDrive accounts into a new Microsoft 365 tenant. With Cross-tenant OneDrive migration, tenant administrators can use familiar tools like *SharePoint Online PowerShell* to transition users into their new organization.
 
 SharePoint administrators of two separate tenants can use the *Set-SPOCrossTenantRelationship* cmdlet to establish an organization relationship, and the *Start-SPOCrossTenantUserContentMove* command to begin cross-tenant OneDrive moves.
 
 Up to 4,000 OneDrive accounts can be scheduled for migration in advance at a given time. Once scheduled, migrations occur without the user's data ever leaving the Microsoft 365 cloud and with minimal disruption, requiring only a few minutes where a user's OneDrive will be read-only. When migrations are complete, a redirect is placed in the location of the user's original OneDrive, so any links to files and folders can continue working in the new location. 
+
+>[!Note]
+> This feature isn't currently supported for users of the Government Cloud, including GCC, Consumer, GCC High, or DoD.
+
+
 
 >[!Important]
 >- Each user having their OneDrive migrated cross-tenant must be licensed for **Cross-Tenant User Data Migration**.
@@ -92,6 +91,7 @@ Those redirects remain until the source tenant is deprovisioned. The admin can a
 - **Step 3:** [Verify trust has been established](cross-tenant-onedrive-migration-step3.md) 
 - **Step 4:** [Manage permissions](cross-tenant-onedrive-migration-step4.md)  
 - **Step 5:** [Prepare identity mapping](cross-tenant-onedrive-migration-step5.md)
-- **Step 6:** [Start a Cross-tenant OneDrive migration](cross-tenant-onedrive-migration-step6.md) 
+- **Step 6:** [Start a Cross-tenant OneDrive migration]
+- **Step 7:** [Post migration steps](cross-tenant-onedrive-migration-step7.md)
 
 ## Step 1: [Connect to source and target tenants](cross-tenant-onedrive-migration-step1.md)
