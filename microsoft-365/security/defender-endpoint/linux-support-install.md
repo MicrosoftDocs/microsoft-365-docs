@@ -177,3 +177,32 @@ Now try restarting the mdatp service using step 2. Revert the configuration chan
     ```
 
     Path to a zip file that contains the logs will be displayed as an output. Reach out to our customer support with these logs.
+
+## Microsoft Defender for Endpoint installation fails with error code 7 when using Azure Arc MDE.Linux Extension on a system that requires a Proxy
+
+Azure Arc does not use the system level proxy settings to download packages list using Curl. 
+1. Check if the proxy environment variable is configured to inject the https_proxy environment variable:
+
+    ```bash
+    sudo cat /opt/azcmagent/bin/azcmagent
+    ```
+    
+    ```Output
+    #!/bin/bash
+    #
+    # Copyright (c) Microsoft Corporation.
+    #
+    # Front-end shell script for azcmagent executable
+
+    # Do not remove this line ==== place Environment Variables below ======
+    export https_proxy="http://ProxyServerFQDN:port"
+
+    #
+    if [ "$(id -u)" -ne 0 ]; then
+        echo "You must be root to execute $0"
+        exit 18   # utils.Exit_AdminPrivilegesNeeded
+    fi
+    /opt/azcmagent/bin/azcmagent_executable "$@"
+    ```
+
+Ensure that the command located [here](https://learn.microsoft.com/en-us/azure/azure-arc/servers/manage-agent#linux-environment-variables) has been executed successfully prior to the MDE.Linux extension is installed. 
