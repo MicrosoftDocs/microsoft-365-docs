@@ -94,7 +94,7 @@ To complete this process, you must have admin privileges on the device.
 
 2. Select **Continue**, agree with the License terms, and enter the password when prompted.
 
-3. At the end of the installation process, you'll be promoted to approve the system extensions used by the product. Select **Open Security Preferences**.
+3. At the end of the installation process, you'll be prompted to approve the system extensions used by the product. Select **Open Security Preferences**.
 
    :::image type="content" source="images/monterey-install-2.png" alt-text="The system extension approval" lightbox="images/monterey-install-2.png":::
 
