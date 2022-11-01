@@ -47,7 +47,7 @@ The following tables include the minimum requirements to use the Microsoft Purvi
 
 |**Hardware**|**Minimum requirement**|
 |:----------|:-------------------------------|
-| RAM | minimum of 8 GB (at least 2 GB should be available for client usage |
+| RAM | Minimum of 8 GB (at least 2 GB should be available for client usage |
 | CPU processor | Intel i5 or above and AMD Ryzen 5 or above |
 | Graphics card | Compatible with DirectX 11 or later, with a WDDM 1.0 driver or later (currently only integrated graphics cards supported)|
 | Disk space | minimum of 10GB of disk storage |
