@@ -28,12 +28,11 @@ SharePoint administrators of two separate tenants can use the *Set-SPOCrossTenan
 
 Up to 4,000 OneDrive accounts can be scheduled for migration in advance at a given time. Once scheduled, migrations occur without the user's data ever leaving the Microsoft 365 cloud and with minimal disruption, requiring only a few minutes where a user's OneDrive will be read-only. When migrations are complete, a redirect is placed in the location of the user's original OneDrive, so any links to files and folders can continue working in the new location. 
 
-This feature isn't currently supported for users of the Government Cloud, including GCC, Consumer, GCC High, or DoD.
-
+This feature is not supported for users of the Government Cloud, including GCC, Consumer, GCC High, or DoD.
 
 ## Licensing
 
-**Cross Tenant User Data Migration** is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers. User licenses are a per migration (onetime fee). Please contact your Microsoft account team for details.
+**Cross Tenant User Data Migration** is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers. User licenses are per migration (onetime fee). Please contact your Microsoft account team for details.
  
 Microsoft 365 Business Basic/Business Standard/Business Premium/F1/F3/E3/A3/E5/A5; Office 365 F3/E1/A1/E3/A3/E5/A5; Exchange Online; SharePoint Online; OneDrive for Business.
 
