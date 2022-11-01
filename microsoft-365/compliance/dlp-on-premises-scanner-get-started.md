@@ -77,13 +77,13 @@ Here's a list of applicable role groups that are in preview. To learn more about
 ### DLP on-premises scanner prerequisites
 
 - The Azure Information Protection (AIP) scanner implements DLP policy matching and policy enforcement. The scanner is installed as part of the AIP client so your installation must meet all the prerequisites  for AIP, the AIP client, and the AIP unified labeling scanner.
-- Deploy the AIP  client and scanner. For more information [Install the AIP unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) and [], see [Configuring and installing the Azure Information Protection unified labeling scanner](/azure/information-protection/deploy-aip-scanner-configure-install).
+- Deploy the AIP  client and scanner. For more information see, [Install the AIP unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) and [], see [Configuring and installing the information protection scanner](deploy-scanner-configure-install.md).
 - There must be at least one label and policy published in the tenant, even if all your detection rules are based on sensitive information types only.
 
 ## Deploy the DLP on-premises scanner
 
 1. Follow the procedures in [Install the AIP unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app). 
-2. Follow the procedures in [Configuring and installing the Azure Information Protection unified labeling scanner](/azure/information-protection/deploy-aip-scanner-configure-install) to complete the scanner installation.
+2. Follow the procedures in [Configuring and installing the information protection scanner](deploy-scanner-configure-install.md) to complete the scanner installation.
     1. Network discovery jobs configuration is an optional step. You can skip it and define specific repositories to be scanned in your content scan job.
     2. You must create content scan job and specify the repositories that host files that need to be evaluated by the DLP engine.
     3. Enable DLP rules in the created Content scan job, and set the **Enforce** option to **Off**, unless you want to proceed directly to the DLP enforcement stage.

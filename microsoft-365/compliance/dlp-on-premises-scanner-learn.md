@@ -36,10 +36,10 @@ The **DLP on-premises scanner** crawls on-premises data-at-rest in file shares a
 The DLP on-premises scanner relies on a full implementation of the Azure Information Protection (AIP) scanner to monitor, label and protect sensitive items. If you aren't familiar with the AIP scanner, we strongly recommend familiarizing yourself with it. See these articles:
 
 - [What is Azure Information Protection](/azure/information-protection/what-is-information-protection)
-- [What is the Azure Information Protection unified labeling scanner](/azure/information-protection/deploy-aip-scanner)
-- [Requirements for installing and deploying the Azure Information Protection unified labeling scanner](/azure/information-protection/deploy-aip-scanner-prereqs)
+- [Learn about the information protection scanner](deploy-scanner.md)
+- [Get started with the information protection scanner](deploy-scanner-prereqs.md)
 - [Tutorial: Installing the Azure Information Protection (AIP) unified labeling scanner](/azure/information-protection/tutorial-install-scanner)
-- [Configuring and installing the Azure Information Protection unified labeling scanner](/azure/information-protection/deploy-aip-scanner-configure-install)
+- [Configuring and installing the information protection scanner](deploy-scanner-configure-install.md)
 - [Azure Information Protection unified labeling client - Version release history and support policy](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
 
 ## DLP on-premises scanner actions
@@ -55,7 +55,7 @@ When a detected file poses a potential risk if leaked or a compliance policy vio
 
 |Action |Description  |
 |---------|---------|
-|**Block these people from accessing file stored in  on-premises scanner - Everyone** | When enforced, this action blocks access to all accounts except the content owner, the last account that modified the item and the administrator. It does this by removing all accounts from NTFS/SharePoint permissions at the file level except the file owner, repository owner (set in the [Set repository owner](/azure/information-protection/deploy-aip-scanner-configure-install#use-a-data-loss-prevention-dlp-policy-public-preview) setting in content scan job), last modifier (can be identified in SharePoint only) and admin. The scanner account is also granted FC rights on the file.|
+|**Block these people from accessing file stored in  on-premises scanner - Everyone** | When enforced, this action blocks access to all accounts except the content owner, the last account that modified the item and the administrator. It does this by removing all accounts from NTFS/SharePoint permissions at the file level except the file owner, repository owner (set in the [Use a DLP policy](deploy-scanner-configure-install.md#use-a-dlp-policy)) setting in content scan job), last modifier (can be identified in SharePoint only) and admin. The scanner account is also granted FC rights on the file.|
 |**Block these people from accessing file stored in  on-premises scanner - block org-wide (public) access**    |When enforced, this action removes the ***Everyone***, ***NT AUTHORITY\authenticated users***, and ***Domain Users*** SIDs from the file access control list (ACL). Only users and groups that have been explicitly granted rights to the file or parent folder will be able to access the file.|
 |**Set permissions on the file**|When enforced, this action forces the file to inherit the permissions of its parent folder. Be default, this action will only be enforced if the permissions on the parent folder are more restrictive than the permissions that are already on the file. For example, if the ACL on the file is set to only allow ***specific users*** and the parent folder is configured to allow ***Domain Users*** group, the parent folder permissions would not be inherited by the file. You can override this behavior by selecting the **Inherit even if parent permissions are less restrictive** option.|
 |**Remove the file from improper location**|When enforced, this action replaces the original file with a stub file with .txt extension and places a copy of the original file in a quarantine folder. 
