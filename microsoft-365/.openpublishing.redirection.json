@@ -2,12 +2,12 @@
     "redirections": [
         {
             "source_path": "enterprise/EU-data-storage-locations.md",
-            "redirect_url": "/enterprise/m365-dr-overview",
+            "redirect_url": "https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-overview",
             "redirect_document_id": true
         },
         {
             "source_path": "enterprise/m365-dr-placeholder.md",
-            "redirect_url": "/enterprise/advanced-data-residency",
+            "redirect_url": "https://learn.microsoft.com/microsoft-365/enterprise/advanced-data-residency",
             "redirect_document_id": true
         }
     ]
