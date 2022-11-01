@@ -66,13 +66,13 @@ For a detailed list of supported Linux distros, see [System requirements](micros
 
 |Resource|Recommendation|
 |---|---|
-|Disk space |3 GB|
+|Disk space |Minimum: 2 GB <br> NOTE: An additional 2 GB disk space might be needed if cloud diagnostics are enabled for crash collections. |
 |RAM |1 GB<br> 4 GB is preferred|
 |CPU |If the Linux system is running only 1 vcpu, we recommend to be increased to 2 vcpu’s<br> 4 cores are preferred |
 
 |OS version|Kernel filter driver|Comments|
 |---|---|---|
-|RHEL 7.x and RHEL 8.x |No kernel filter driver, the fanotify kernel option must be enabled|akin to Filter Manager (fltmgr, accessible via `fltmc.exe`) in Windows| 
+|RHEL 7.x, RHEL 8.x, and RHEL 9.x |No kernel filter driver, the fanotify kernel option must be enabled|akin to Filter Manager (fltmgr, accessible via `fltmc.exe`) in Windows| 
 |RHEL 6.x|TALPA kernel driver|
 
 
@@ -536,11 +536,7 @@ To ensure that the device is correctly onboarded and reported to the service, ru
 - [Announcing live response for macOS and Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-live-response-for-macos-and-linux/ba-p/2864397) 
    
 ## References
-
-- How to use tagging effectively
-   - [Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/how-to-use-tagging-effectively-part-1/ba-p/1964058)
-   - [Part 2](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/how-to-use-tagging-effectively-part-2/ba-p/1962008)
-   - [Part 3](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/how-to-use-tagging-effectively-part-3-scripting-tags/ba-p/1964073)
+- [Add a tag or group ID](linux-preferences.md##add-tag-or-group-id-to-the-configuration-profile)
    
 - [Privacy for Microsoft Defender for Endpoint on Linux](linux-privacy.md)
 
