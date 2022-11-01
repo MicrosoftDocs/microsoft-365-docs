@@ -16,14 +16,22 @@ ms.collection:
 search.appverid: MET150
 description: "Step 1 of the OneDrive Cross-tenant migration feature"
 ---
-# Step 1: Cross-tenant OneDrive migration - Connect to the source and target tenants
+# Step 1: Connect to the source and target tenants
 
-The first step in your cross-tenant OneDrive migration, is to connect to both your SharePoint source and target tenant.
+This is Step 1 in a solution designed to complete a Cross-tenant OneDrive migration. To learn more, see [Cross-tenant OneDrive migration overview](cross-tenant-onedrive-migration.md).
+
+- **Step 1: [Connect to the source and the target tenants](cross-tenant-onedrive-migration-step1.md)**
+- Step 2: [Establish trust between the source and the target tenant](cross-tenant-onedrive-migration-step2.md) 
+- Step 3: [Verify trust has been established](cross-tenant-onedrive-migration-step3.md) 
+- Step 4: [Manage permissions](cross-tenant-onedrive-migration-step4.md)  
+- Step 5: [Prepare identity mapping](cross-tenant-onedrive-migration-step5.md)
+- Step 6: [Start a Cross-tenant OneDrive migration](cross-tenant-onedrive-migration-step6.md)
+- Step 7: [Post migration steps](cross-tenant-onedrive-migration-step7.md)
 
 ## Before you begin
 
 - **Microsoft SharePoint Online Powershell**. Confirm you have the most recent version installed. If not, [Download SharePoint Online Management Shell from Official Microsoft Download Center](/download/details.aspx?id=35588).
-- Be a SharePoint Online admin or Microsoft 365 Global admin on both the source and target tenants.
+- Be a SharePoint Online admin or Microsoft 365 Global admin on both the source and target tenants
 
 
 ### Connect to both tenants
