@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: MET150
 description: "Step 6 of the OneDrive Cross-tenant migration feature"
 ---
-# Step 6: Start a OneDrive Cross-Tenant Migration
+# Step 6: Start a OneDrive cross-tenant migration
 
 This is Step 6 in a solution designed to complete a Cross-tenant OneDrive migration. To learn more, see [Cross-tenant OneDrive migration overview](cross-tenant-onedrive-migration.md).
 
