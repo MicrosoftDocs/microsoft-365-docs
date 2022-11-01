@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 10/24/2022
+ms.date: 10/26/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -23,7 +23,7 @@ ms.collection:
 
 # Onboard devices to Microsoft Defender for Business
 
-With Defender for Business, you have several options to choose from for onboarding your company's devices. This article walks you through these options and provides an overview of how onboarding works.
+Onboard your business devices to protect them right away. You can choose from several options to onboard your company's devices. This article walks you through your options and describes how onboarding works.
 
 ## What to do
 
@@ -47,11 +47,7 @@ Choose one of the following options to onboard Windows client devices to Defende
 
 ### Local script for Windows 10 and 11
 
-You can use a local script to onboard Windows client devices. When you run the onboarding script on a device: 
-
-- It creates a trust with Azure Active Directory, if that trust doesn't already exist.
-- It enrolls the device in Microsoft Intune if it isn't already enrolled, and then onboards the device to Defender for Business. 
-- The local script method works even if you don't currently have Intune, and this is the recommended method for Defender for Business customers.
+You can use a local script to onboard Windows client devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory, if that trust doesn't already exist; enrolls the device in Microsoft Intune, if it isn't already enrolled; and then onboards the device to Defender for Business. If you're not currently using Intune, the local script method is the recommended onboarding method for Defender for Business customers.
 
 > [!TIP]
 > We recommend that you onboard up to 10 devices at a time when you use the local script method.
@@ -81,7 +77,7 @@ If you prefer to use Group Policy to onboard Windows clients, follow the guidanc
 You can onboard Windows clients and other devices in Intune by using the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). There are several methods available for enrolling devices in Intune. We recommend using one of the following methods:
 
 - [Enable Windows automatic enrollment for company-owned or company-managed devices](#enable-automatic-enrollment-for-windows-10-and-11)
-- [Ask users to enroll their own Windows 10/11 devices in Intune](#ask-users-enroll-their-own-windows-10-and-11-devices)
+- [Ask users to enroll their own Windows 10/11 devices in Intune](#ask-users-to-enroll-their-windows-10-and-11-devices)
 
 #### Enable automatic enrollment for Windows 10 and 11
 
@@ -109,7 +105,7 @@ When you set up automatic enrollment, users add their work account to the device
 > [!TIP]
 > To learn more, see [Enable Windows automatic enrollment](/mem/intune/enrollment/windows-enroll).
 
-#### Ask users enroll their own Windows 10 and 11 devices
+#### Ask users to enroll their Windows 10 and 11 devices
 
 1. Watch the following video to see how enrollment works:<br/><br/>
 
@@ -135,7 +131,7 @@ After you've onboarded Windows devices to Defender for Business, you can run a d
 
 After the command runs, the Command Prompt window will close automatically. If successful, the detection test will be marked as completed, and a new alert will appear in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly onboarded device in about 10 minutes.
 
-## View a list of onboarded devices
+## View the list of onboarded devices
 
 To view the list of devices that are onboarded to Defender for Business, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). In the navigation pane, go to **Assets** > **Devices**.
 
@@ -243,7 +239,7 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 ## Servers
 
 > [!IMPORTANT]
-> If you're planning to onboard an instance of Windows Server or Linux Server, you'll need an additional license, such as Microsoft Defender for Business servers (preview). Alternately, you could use [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction); however, your Defender for Business experience could change when you add an enterprise plan, such as Defender for Servers Plan 1 or Plan 2. To learn more, see [What happens if I have a mix of Microsoft endpoint security subscriptions?](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions).
+> If you're planning to onboard an instance of Windows Server or Linux Server, you'll need an additional license, such as Microsoft Defender for Business servers. Alternately, you could use [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction); however, your Defender for Business experience could change when you add an enterprise plan, such as Defender for Servers Plan 1 or Plan 2. To learn more, see [What happens if I have a mix of Microsoft endpoint security subscriptions?](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions).
 
 Choose the operating system for your server:
 
@@ -253,9 +249,8 @@ Choose the operating system for your server:
 ## Windows Server
 
 > [!IMPORTANT]
-> **The ability to onboard Windows Server endpoints is currently in preview**. When general availability is announced, a Microsoft Defender for Business servers license must be purchased for each onboarded server, or those servers can be offboarded.
 > Make sure that you meet the following requirements before you onboard a Windows Server endpoint:
-> - The **Preview features** setting is turned on. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
+> - You have a Microsoft Defender for Business servers license. (See [How to get Microsoft Defender for Business servers](get-defender-business-servers.md).)
 > - The enforcement scope for Windows Server is turned on. Go to **Settings** > **Endpoints** > **Configuration management** > **Enforcement scope**. Select **Use MDE to enforce security configuration settings from MEM**, select  **Windows Server**, and then select **Save**.
 
 You can onboard an instance of Windows Server to Defender for Business by using a local script.
@@ -309,9 +304,8 @@ After the command runs, the Command Prompt window will close automatically. If s
 ## Linux Server
 
 > [!IMPORTANT]
-> **The ability to onboard Linux Server endpoints is currently in preview**. When general availability is announced, a Microsoft Defender for Business servers license must be purchased for each onboarded server, or those servers can be offboarded.
 > Make sure that you meet the following requirements before you onboard a Linux Server endpoint:
-> - The **Preview features** setting is turned on. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Preview features**.
+> - You have a Microsoft Defender for Business servers license. (See [How to get Microsoft Defender for Business servers](get-defender-business-servers.md).)
 > - You meet the [prerequisites for Microsoft Defender for Endpoint on Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).
 
 ### Onboard Linux Server endpoints
