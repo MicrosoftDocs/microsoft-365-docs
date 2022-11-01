@@ -13,11 +13,13 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
-ms.topic: conceptual
+- demo
+ms.topic: article
 ms.subservice: mde
+ms.date: 10/21/2022
 ---
 
 # Attack surface reduction rules demonstrations
@@ -58,9 +60,9 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids 7674BA52-37EB-4A4F-A9A1-F0F9A1
 
 |State | Mode| Numeric value |
 |:---|:---|:---|
-| AuditMode | = Audit Mode | 2 |
-| Enabled | = Block mode | 1 |
 | Disabled | = Off | 0 |
+| Enabled | = Block mode | 1 |
+| Audit | = Audit mode | 2 |
 
 ### Verify configuration
 

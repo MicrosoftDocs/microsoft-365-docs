@@ -14,7 +14,7 @@ ms.collection:
 - M365-subscription-management
 - scotvorg
 - highpri
-ms.custom:                                           
+ms.custom:
 search.appverid: MET150
 description: "Details of new Meetings insights score - people experiences Adoption Score."
 ROBOTS: NOINDEX, NOFOLLOW 
@@ -30,7 +30,7 @@ To get started with Meetings insights, people in your organization need to be li
 
 - Microsoft Teams
 
-For more information, see [assign licenses to users](../manage/assign-licenses-to-users.md).
+For more information, see [assign licenses to users](../manage/assign-licenses-to-users.md).
 
 After people have been active in Teams at least once in the last 28 days, you will start to see the insights.
 

@@ -95,10 +95,8 @@ This configuration is available for both the enrolled (MDM) devices as well as u
 
 ## Configure Network Protection
 
->[!NOTE]
->Network Protection on Microsoft Defender for Endpoint is now in public preview. The following information relates to prerelease of the product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Network protection in Microsoft Defender for endpoint is enabled by default. Admins can use the following steps to configure MAM support for Network protection in iOS devices.
+Network protection in Microsoft Defender for endpoint is disabled by default. Admins can use the following steps to configure MAM support for Network protection in iOS devices. (Authenticator device registration is required for MAM configuration) in iOS devices. Network Protection initialization will require the end user to open the app once. 
 
 1. In Microsoft Endpoint Manager Admin, navigate to Apps > App configuration policies. Create a new App configuration policy.
    :::image type="content" source="images/addiosconfig.png" alt-text="Add configuration policy." lightbox="images/addiosconfig.png":::
@@ -106,13 +104,14 @@ Network protection in Microsoft Defender for endpoint is enabled by default. Adm
 2. Provide a name and description to uniquely identify the policy. Then click on 'Select Public apps' and choose 'Microsoft Defender' for Platform iOS/IPadOS
    :::image type="content" source="images/nameiosconfig.png" alt-text="Name the configuration." lightbox="images/nameiosconfig.png":::
 
-3. In Settings page, add 'DefenderNetworkProtectionEnable' as the key and value as 'false' to disable Network Protection. (Network protection is enabled by default)
+3. In Settings page, add 'DefenderNetworkProtectionEnable' as the key and value as 'true' to disable Network Protection. (Network protection is disabled by default)
    :::image type="content" source="images/addiosconfigvalue.png" alt-text="Add configuration value." lightbox="images/addiosconfigvalue.png":::
 
 4. For other configurations related to Network protection, add the following keys and appropriate corresponding value.
 
     |Key| Default (true-enable, false-disable)|Description|
     |---|---|---|
+    |DefenderOpenNetworkDetection|0|1- Enable, 0 - Disable; This setting is managed by IT Admin to enable or disable open network detection informational alerts with no end user detection experience|
     |DefenderEndUserTrustFlowEnable| false | Enable Users to Trust Networks and Certificates|
     |DefenderNetworkProtectionAutoRemediation| true |This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer WIFI access points or deleting suspicious certificates detected by Defender|
     |DefenderNetworkProtectionPrivacy| true |This setting is managed by IT admin to enable or disable privacy in network protection|

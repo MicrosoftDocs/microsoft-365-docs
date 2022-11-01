@@ -79,7 +79,7 @@ Policy indicators are segmented into the following areas. You can choose the ind
 - **Microsoft Defender for Cloud Apps indicators (preview)**: These include policy indicators from shared alerts from Defender for Cloud Apps. Automatically enabled anomaly detection in Defender for Cloud Apps immediately starts detecting and collating results, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network. To include these risk management activities in policy alerts, select one or more indicators in this section. To learn more about Defender for Cloud Apps analytics and anomaly detection, see [Get behavioral analytics and anomaly detection](/cloud-app-security/anomaly-detection-policy).
 - **Risk score boosters**: These include raising the risk score for potentially risky activity that is above what is typical or for users with previous cases resolved as a policy violation. Enabling risk score boosters increase risk scores and the likelihood of alerts for these types of activities. For risk management activity that is above what is typical, scores are boosted if the detected potentially risky activity deviates from activities that are considered compliant. For users with previous cases resolved as a policy violation, scores are boosted if a user had more than one case previously resolved as a confirmed policy violation. Risk score boosters can only be selected if one or more indicators are selected.
 
-In some cases, you may want to limit the insider risk policy indicators that are applied to insider risk policies in your organization. You can turn off the policy indicators for specific areas by disabling them from all insider risk policies in global settings. Triggering events can only be modified for policies created from the *General data leaks* or *Data leaks by priority users* templates. Policies created from all other templates don't have customizable triggering indicators or events.
+In some cases, you may want to limit the insider risk policy indicators that are applied to insider risk policies in your organization. You can turn off the policy indicators for specific areas by disabling them from all insider risk policies in global settings. Triggering events can only be modified for policies created from the *Data leaks* or *Data leaks by priority users* templates. Policies created from all other templates don't have customizable triggering indicators or events.
 
 To define the insider risk policy indicators that are enabled in all insider risk policies, navigate to **Insider risk settings** > **Indicators** and select one or more policy indicators. The indicators selected on the **Indicators** settings page can't be individually configured when creating or editing an insider risk policy in the policy wizard.
 
@@ -236,16 +236,16 @@ For each of the following domain settings, you can enter up to 500 domains:
 
 - **Third party domains:** If your organization uses third-party domains for business purposes (such as cloud storage), include them here so you can receive alerts for potentially risky activity related to the device indicator *Use a browser to download content from a third-party site*.
  
-### Sensitive info types exclusion
+### Sensitive info types exclusion (preview)
 
-By excluding sensitive info types, you can specify which types map to indicators and triggers involving file-related activities for Endpoint, SharePoint, Teams, OneDrive, and Exchange. For those files that contain any sensitive info types identified here, they will be risk scored but not shown as activities involving content related to sensitive info types. For a complete list, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
+[Sensitive info types](sensitive-information-type-learn-about.md) excluded in settings map to indicators and triggers involving file-related activities for Endpoint, SharePoint, Teams, OneDrive, and Exchange. These excluded types will be treated as non-sensitive info types. For those files that contain any sensitive info types identified here, they will be risk scored but not shown as activities involving content related to sensitive info types. For a complete list, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
 
-You can select the sensitive info types to be excluded from the list of all available (out-of-box and custom) types available in the tenant. Insider risk management excludes several sensitive info types by default, such as ABA Routing Number. You can choose up to 100 sensitive info types to be excluded.
+You can select the sensitive info types to be excluded from the list of all available (out-of-box and custom) types available in the tenant. You can choose up to 500 sensitive info types to be excluded.
 
 > [!NOTE]
 > The exclusion list of sensitive info types takes precedence over the [priority content](insider-risk-management-policies.md#prioritize-content-in-policies) list.
 
-To add sensitive info types to exclude, complete the following steps:
+To exclude sensitive info types, complete the following steps:
 
 1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
 2. In the **Sensitive info types** section, select **Add sensitive info types to exclude**.
@@ -253,6 +253,24 @@ To add sensitive info types to exclude, complete the following steps:
 4. Select **Add** accept the changes or **Cancel** to discard the changes. 
 
 To delete a sensitive info type exclusion, select the exclusion and **Delete**.
+
+### Trainable classifier exclusion (preview)
+
+[Trainable classifiers](classifier-get-started-with.md) excluded in settings map to indicators and triggers involving file-related activities for SharePoint, Teams, OneDrive, and Exchange. For those files that contain any trainable classifiers identified here, they will be risk scored but not shown as activities involving content related to trainable classifiers. To learn more, see [Trainable classifiers definitions](classifier-tc-definitions.md#trainable-classifiers-definitions) for a complete list of all pre-trained classifiers.
+
+You can select the trainable classifiers to be excluded from the list of all available (out-of-box and custom) types available in the tenant. Insider risk management excludes some trainable classifiers by default, including Threat, Profanity, Targeted harassment, Offensive language, and Discrimination. You can choose up to 500 trainable classifiers to be excluded.
+
+> [!NOTE]
+> Optionally, you can choose trainable classifiers to be included in the [priority content](insider-risk-management-policies.md#prioritize-content-in-policies) list.
+
+To exclude trainable classifiers, complete the following steps:
+
+1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
+2. In the **Trainable classifiers** section, select **Add trainable classifiers to exclude**.
+3. On the **Add or edit trainable classifiers** pane, select the classifiers that you want to exclude.
+4. Select **Add** accept the changes or **Cancel** to discard the changes. 
+
+To delete a trainable classifiers exclusion, select the exclusion and **Delete**.
 
 ### File path exclusions
 
@@ -647,7 +665,7 @@ For completed analyses, you'll see the potential risks discovered in your organi
 
 ![Insider risk management analytics overview report.](../media/insider-risk-analytics-overview.png)
 
-To display more information for an insight, select **View details** to display the details pane for the insight. The details pane includes the complete insight results, an insider risk policy recommendation, and the **Create policy** button to quickly help you create the recommended policy. Selecting Create policy takes you to the policy wizard and automatically selects the recommended policy template related to the insight. For example, if the analytics insight is for *Data leak* activity, the *General data leaks* policy template will be pre-selected in the policy wizard for you.
+To display more information for an insight, select **View details** to display the details pane for the insight. The details pane includes the complete insight results, an insider risk policy recommendation, and the **Create policy** button to quickly help you create the recommended policy. Selecting Create policy takes you to the policy wizard and automatically selects the recommended policy template related to the insight. For example, if the analytics insight is for *Data leak* activity, the *Data leaks* policy template will be pre-selected in the policy wizard for you.
 
 ![Insider risk management analytics details report.](../media/insider-risk-analytics-details.png)
 
