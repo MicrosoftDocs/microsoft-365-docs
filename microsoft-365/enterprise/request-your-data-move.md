@@ -16,6 +16,7 @@ f1.keywords:
 description: Existing Office 365 customers must submit a request before the deadline for their country to have their Microsoft 365 services data moved to their new geo.
 ms.custom: seo-marvel-apr2020
 ms.collection: scotvorg
+ROBOTS: NOINDEX
 ---
 
 # How to request your data move
