@@ -90,7 +90,7 @@ Choose any statuses and record notes specific to the improvement action.
 - **Risk accepted** - Security should always be balanced with usability, and not every recommendation will work for your environment. When that is the case, you can choose to accept the risk, or the remaining risk, and not enact the improvement action. You won't be given any points, but the action will no longer be visible in the list of improvement actions. You can view this action in history or undo it at any time.
 - **Resolved through third party** and **Resolved through alternate mitigation** - The improvement action has already been addressed by a third-party application or software, or an internal tool. You'll gain the points that the action is worth, so your score better reflects your overall security posture. If a third party or internal tool no longer covers the control, you can choose another status. Keep in mind, Microsoft will have no visibility into the completeness of implementation if the improvement action is marked as either of these statuses.
 
-#### Recommended actions status for devices
+#### Recommended action status for devices
 
 You won't be able to choose a status for Secure Score recommended actions in the "Device" category, instead, you'll be directed to the associated [Microsoft Defender Vulnerability Management security recommendation](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) to take action.
 
