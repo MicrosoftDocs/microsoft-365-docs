@@ -51,7 +51,7 @@ The following tables include the minimum requirements to use the Microsoft Purvi
 | CPU processor | Intel i5 or above and AMD Ryzen 5 or above |
 | Graphics card | Compatible with DirectX 11 or later, with a WDDM 1.0 driver or later (currently only integrated graphics cards supported)|
 | Disk space | Minimum of 10 GB of disk storage |
-| Display | minimum screen resolution of 1920 x 1080 | 
+| Display | Minimum screen resolution of 1920 x 1080 | 
 
 ### Hyper-V and virtual machines
 
