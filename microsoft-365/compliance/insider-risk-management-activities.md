@@ -39,6 +39,7 @@ After examining potentially risky activities, investigators can dismiss individu
 To get started, select **Manage reports** in the **Investigate user activity** section on the insider risk management **Overview** page. 
 
 To view activities for a user, first select **Create user activity report** and complete the following fields in the **New user activity report** pane:
+
 - **User**: Search for a user by name or email address.
 - **Start date**: Use the calendar control to select the start date for user activities.
 - **End date**: Use the calendar control to select the end date for user activities. The end date selected must be greater than two days after the selected start date and no greater than 90 days from the selected start date.
