@@ -346,7 +346,7 @@ There are two ways you can take action from this screen:
 
 1. On the row of your intended solution, under the **Remaining actions** column, select the hyperlinked number. You’ll see a filtered view of the improvement actions screen showing untested improvement actions for that solution.
 
-2. On the row of your intended solution, under the **Open solution** column, select **Open**. You’ll see the solution or location in the Microsoft 365 and Office 365 security and compliance centers where you can take the recommended action.
+2. On the row of your intended solution, under the **Open solution** column, select **Open**. You’ll arrive at the solution's location in the Microsoft Purview compliance portal,  Microsoft 365 Defender portal, or its admin center, where you can take the recommended action.
 
 ## Assessments page
 
