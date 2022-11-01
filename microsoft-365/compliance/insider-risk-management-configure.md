@@ -248,7 +248,7 @@ When a user is identified as a potential high impact user, insider risk manageme
 
 Insider risk management's cumulative exfiltration detection analyzes peer group exfiltration activity performed by a user over the past 30 days and then compares that activity to the organization and peer group norms. Purview assigns a risk score if a user is anomalous compared to organization and peer group norms. 
 
-You enable cumulative exfiltration detection and select options to detect when a user’s exfiltration activities exceed peer group norms. The riskiest cumulative exfiltration categories will be highlighted in the risk factors alert. To learn about enabling cumulative exfiltration detection, see [Get started with insider risk management settings](insider-risk-management-settings.md#enable-cumulative-exfiltration-activities-detection).
+You enable cumulative exfiltration detection and select options to detect when a user’s exfiltration activities exceed peer group norms. The riskiest cumulative exfiltration categories will be highlighted in the risk factors alert. To learn about enabling cumulative exfiltration detection, see [Get started with insider risk management settings](insider-risk-management-settings.md#enable-cumulative-exfiltration-detection).
 
 #### Peer groups
 

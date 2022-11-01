@@ -227,7 +227,7 @@ Cumulative exfiltration detection is enabled by default when using the following
 
 When Cumulative exfiltration detection is enabled for data theft or data leak policies, insights from exfiltration activities are displayed on the **User activity** tab within an insider risk management case.
 
-To learn more about the user activity management, see [Insider risk management cases: User activities](insider-risk-management-cases.md#user-activity). To learn about enabling cumulative exfiltration detection, see [Get started with insider risk management settings](insider-risk-management-settings.md#enable-cumulative-exfiltration-activities-detection).
+To learn more about the user activity management, see [Insider risk management cases: User activities](insider-risk-management-cases.md#user-activity). To learn about enabling cumulative exfiltration detection, see [Get started with insider risk management settings](insider-risk-management-settings.md#enable-cumulative-exfiltration-detection).
 
 ## Policy health
 
