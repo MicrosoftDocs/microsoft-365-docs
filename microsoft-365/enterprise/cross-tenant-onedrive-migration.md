@@ -28,7 +28,8 @@ SharePoint administrators of two separate tenants can use the *Set-SPOCrossTenan
 
 Up to 4,000 OneDrive accounts can be scheduled for migration in advance at a given time. Once scheduled, migrations occur without the user's data ever leaving the Microsoft 365 cloud and with minimal disruption, requiring only a few minutes where a user's OneDrive will be read-only. When migrations are complete, a redirect is placed in the location of the user's original OneDrive, so any links to files and folders can continue working in the new location. 
 
-This feature is not supported for users of the Government Cloud, including GCC, Consumer, GCC High, or DoD.
+>[!Note]
+>This feature is not supported for users of the Government Cloud, including GCC, Consumer, GCC High, or DoD.
 
 ## Licensing
 
