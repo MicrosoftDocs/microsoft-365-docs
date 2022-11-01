@@ -16,13 +16,23 @@ ms.collection:
 search.appverid: MET150
 description: "Step 5 of the OneDrive Cross-tenant migration feature"
 ---
-# Step 5: Cross-tenant OneDrive migration - Identity mapping
+# Step 5: Identity mapping
+
+This is Step 5 in a solution designed to complete a Cross-tenant OneDrive migration. To learn more, see [Cross-tenant OneDrive migration overview](cross-tenant-onedrive-migration.md).
+
+- Step 1: [Connect to the source and the target tenants](cross-tenant-onedrive-migration-step1.md)
+- Step 2: [Establish trust between the source and the target tenant](cross-tenant-onedrive-migration-step2.md) 
+- Step 3: [Verify trust has been established](cross-tenant-onedrive-migration-step3.md) 
+- Step 4: [Pre-create users and groups](cross-tenant-onedrive-migration-step4.md)  
+- **Step 5: [Prepare identity mapping](cross-tenant-onedrive-migration-step5.md)**
+- Step 6: [Start a Cross-tenant OneDrive migration](cross-tenant-onedrive-migration-step6.md)
+- Step 7: [Post migration steps](cross-tenant-onedrive-migration-step7.md)
+
+## Create the identity mapping file 
 
 In this step of the cross-tenant migration process, you're going to create a single CSV (comma separated values) file that contains the mapping of the users and groups on the source tenant to their corresponding users and groups on the target tenant.
 
 We recommend that you take the time to verify your mappings, ensuring they're accurate before starting any migrations to the target tenant.
-
-## Create the identity mapping file 
 
 There's a one-to-one relationship in the identity mapping file.  You can't map the same user to multiple users in the target tenant. For example, if you have instances where the admin is the owner of multiple OneDrive accounts, the ownership must be changed to match the corresponding user you wish to migrate from Source to Target.  If you don't, those account files won't migrate.
 

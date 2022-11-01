@@ -19,9 +19,20 @@ description: "Step 4 of the OneDrive Cross-tenant migration feature"
 
 # Step 4: Pre-creating users and groups
 
-To ensure that OneDrive permissions are retained as part of the migration, a mapping file needs to be created to align users from the source tenant to the target tenant.
+This is Step 4 in a solution designed to complete a Cross-tenant OneDrive migration. To learn more, see [Cross-tenant OneDrive migration overview](cross-tenant-onedrive-migration.md).
+
+- Step 1: [Connect to the source and the target tenants](cross-tenant-onedrive-migration-step1.md)
+- Step 2: [Establish trust between the source and the target tenant](cross-tenant-onedrive-migration-step2.md) 
+- Step 3: [Verify trust has been established](cross-tenant-onedrive-migration-step3.md) 
+- **Step 4: [Pre-create users and groups](cross-tenant-onedrive-migration-step4.md)**  
+- Step 5: [Prepare identity mapping](cross-tenant-onedrive-migration-step5.md)
+- Step 6: [Start a Cross-tenant OneDrive migration](cross-tenant-onedrive-migration-step6.md)
+- Step 7: [Post migration steps](cross-tenant-onedrive-migration-step7.md)
+
 
 ## Identify users and groups to be migrated
+
+To ensure that OneDrive permissions are retained as part of the migration, a mapping file needs to be created to align users from the source tenant to the target tenant.
 
 1. Identify the full list of OneDrive sites that will be migrated from the source to the target tenant.
 2. Prepare a complete list of users and groups that will be migrated to the target tenant.
