@@ -16,7 +16,7 @@ ms.custom: seo-marvel-mar2020
 ms.collection: 
 - scotvorg
 description: Find answers to frequently asked questions (FAQs) about moving core data to a new Office 365 datacenter geo.
-
+ROBOTS: NOINDEX
 ---
 
 # Data move general FAQ
