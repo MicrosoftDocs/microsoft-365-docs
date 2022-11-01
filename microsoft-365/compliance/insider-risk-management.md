@@ -92,14 +92,14 @@ Identifying and resolving internal risk activities and compliance issues with in
 You can select from the following policy templates to quickly get started with insider risk management:
 
 - [Data theft by departing users](insider-risk-management-policies.md#data-theft-by-departing-users)
-- [General data leaks](insider-risk-management-policies.md#general-data-leaks)
+- [Data leaks](insider-risk-management-policies.md#data-leaks)
 - [Data leaks by priority users (preview)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
-- [Data leaks by disgruntled users (preview)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
-- [General security policy violations (preview)](insider-risk-management-policies.md#general-security-policy-violations-preview)
-- [General patient data misuse (preview)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
+- [Data leaks by risky users (preview)](insider-risk-management-policies.md#data-leaks-by-risky-users-preview)
+- [Security policy violations (preview)](insider-risk-management-policies.md#security-policy-violations-preview)
+- [Patient data misuse (preview)](insider-risk-management-policies.md#patient-data-misuse-preview)
 - [Security policy violations by departing users (preview)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Security policy violations by priority users (preview)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
-- [Security policy violations by disgruntled users (preview)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+- [Security policy violations by risky users (preview)](insider-risk-management-policies.md#security-policy-violations-by-risky-users-preview)
 
 ![Insider risk management policy dashboard.](../media/insider-risk-policy-dashboard.png)
 
@@ -163,18 +163,18 @@ When users leave an organization, either voluntarily or as the result of termina
 
 In most cases, users try their best to properly handle sensitive or confidential information. But occasionally users may make mistakes and information is accidentally shared outside your organization or in violation of your information protection policies. In other circumstances, users may intentionally leak or share sensitive and confidential information with malicious intent and for potential personal gain. Insider risk management policies created using the following Data leaks policy templates automatically detect activities typically associated with sharing sensitive or confidential information:
 
-- [General data leaks](insider-risk-management-policies.md#general-data-leaks)
+- [Data leaks](insider-risk-management-policies.md#data-leaks)
 - [Data leaks by priority users (preview)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
-- [Data leaks by disgruntled users (preview)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
+- [Data leaks by risky users (preview)](insider-risk-management-policies.md#data-leaks-by-risky-users-preview)
 
 ### Intentional or unintentional security policy violations (preview)
 
 Users typically have a large degree of control when managing their devices in the modern workplace. This control may include permissions to install or uninstall applications needed in the performance of their duties or the ability to temporarily disable device security features. Whether this risk activity is inadvertent, accidental, or malicious, this conduct can pose risk to your organization and is important to identify and act to minimize. To help identify these risky security activities, the following insider risk management security policy violation templates scores security risk indicators and uses Microsoft Defender for Endpoint alerts to provide insights for security-related activities:
 
-- [General security policy violations (preview)](insider-risk-management-policies.md#general-security-policy-violations-preview)
+- [Security policy violations (preview)](insider-risk-management-policies.md#security-policy-violations-preview)
 - [Security policy violations by departing users (preview)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Security policy violations by priority users (preview)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
-- [Security policy violations by disgruntled users (preview)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+- [Security policy violations by risky users (preview)](insider-risk-management-policies.md#security-policy-violations-by-risky-users-preview)
 
 ### Policies for users based on position, access level, or risk history (preview)
 
@@ -187,14 +187,14 @@ Users in your organization may have different levels of risk depending on their 
 
 For organizations in the healthcare industry, recent studies have found a very high rate of insider-related data breaches. Detecting misuse of patient data and health record information is a critical component of safeguarding patient privacy and complying with compliance regulation such as the Health Insurance Portability and Accountability Act (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act. Patient data misuse can range from accessing privileged patient records to accessing records of patients from family or neighbors with malicious intent. To help identity these types of risky activities, the following insider risk management policy templates use the Microsoft 365 HR connector and a healthcare-specific data connector to start scoring risk indicators relating to behaviors that may occur within your electronic heath record (EHR) systems:
 
-- [General patient data misuse (preview)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
+- [Patient data misuse (preview)](insider-risk-management-policies.md#patient-data-misuse-preview)
 
-### Actions and behaviors by disgruntled users (preview)
+### Actions and behaviors by risky users (preview)
 
 Employment stressor events can impact user behavior in several ways that relate to insider risks. These stressors may be a poor performance review, a position demotion, or the user being placement on a performance review plan. Stressors may also result in potentially inappropriate behavior such as users sending potentially threatening, harassing, or discriminatory language in email and other messages. Though most users don't respond maliciously to these events, the stress of these actions may result in some users to behave in ways they may not normally consider during normal circumstances. To help identify these types of potentially risky activities, the following insider risk management policy templates can use the HR connector and/or integration with a [dedicated communication compliance policy](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) to bring users into scope for insider risk management policies and start scoring risk indicators relating to behaviors that may occur:
 
-- [Data leaks by disgruntled users (preview)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
-- [Security policy violations by disgruntled users (preview)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+- [Data leaks by risky users (preview)](insider-risk-management-policies.md#data-leaks-by-risky-users-preview)
+- [Security policy violations by risky users (preview)](insider-risk-management-policies.md#security-policy-violations-by-risky-users-preview)
 
 ### Visual context for potentially risky user activities with forensic evidence (preview)
 
