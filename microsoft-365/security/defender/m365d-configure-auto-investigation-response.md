@@ -42,7 +42,7 @@ Then, after you're all set up, you can [view and manage remediation actions in t
 |---|---|
 |Subscription requirements|One of these subscriptions: <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E3 with the Microsoft 365 E5 Security add-on</li><li>Microsoft 365 A3 with the Microsoft 365 A5 Security add-on</li><li>Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5</li></ul> <p> See [Microsoft 365 Defender licensing requirements](./prerequisites.md#licensing-requirements).|
 |Network requirements|<ul><li>[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) enabled</li><li>[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) configured</li><li>[Microsoft Defender for Identity integration](/cloud-app-security/mdi-integration)</li></ul>|
-|Windows device requirements|<ul><li>Windows 11</li><li>Windows 10, version 1709 or later installed (See [Windows release information](/windows/release-information/))</li><li>The following threat protection services configured:<ul><li>[Microsoft Defender for Endpoint](../defender-endpoint/configure-endpoints.md)</li><li>[Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
+|Windows device requirements|<ul><li>Windows 11</li><li>Windows 10, version 1709 or later installed (See [Windows release information](/windows/release-information/))</li><li>The following threat protection services are configured:<ul><li>[Microsoft Defender for Endpoint](../defender-endpoint/configure-endpoints.md)</li><li>[Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
 |Protection for email content and Office files|[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) configured|
 |Permissions|To configure automated investigation and response capabilities, you must have the Global Administrator or Security Administrator role assigned in either Azure Active Directory (<https://portal.azure.com>) or in the Microsoft 365 admin center (<https://admin.microsoft.com>). <p> To get the permissions needed to work with automated investigation and response capabilities, such as reviewing, approving, or rejecting pending actions, see [Required permissions for Action center tasks](m365d-action-center.md#required-permissions-for-action-center-tasks).|
 
@@ -60,7 +60,7 @@ Whether automated investigations run, and whether remediation actions are taken 
 
 ## Review your security and alert policies in Office 365
 
-Microsoft provides built-in [alert policies](../../compliance/alert-policies.md) that help identify certain risks. These risks include Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. Some alerts can trigger [automated investigation and response in Office 365](../office-365-security/office-365-air.md). Make sure your [Defender for Office 365](../office-365-security/defender-for-office-365.md) features are configured correctly.
+Microsoft provides built-in [alert policies](../../compliance/alert-policies.md) that help identify certain risks. These risks include Exchange admin permissions abuse, malware activity, potential external and internal threats, and data lifecycle management risks. Some alerts can trigger [automated investigation and response in Office 365](../office-365-security/office-365-air.md). Make sure your [Defender for Office 365](../office-365-security/defender-for-office-365.md) features are configured correctly.
 
 Although certain alerts and security policies can trigger automated investigations, *no remediation actions are taken automatically for email and content*. Instead, all remediation actions for email and email content await approval by your security operations team in the [Action center](m365d-action-center.md).
 
@@ -89,20 +89,19 @@ Security settings in Office 365 help protect email and content. To view or chang
 
 2. In the navigation pane, look for **Incidents & Alerts**, **Hunting**, and **Action center** as shown in the preceding image.
    - If you see **Incidents & Alerts**, **Hunting**, and **Actions & submissions**, Microsoft 365 Defender is turned on. In this case, [visit the Action center](m365d-action-center.md).
-   - If you do *not* see **Incidents & alerts**, **Hunting**, or **Actions & submissions**, then Microsoft 365 Defender might not be turned on. In this case, see [Turn on Microsoft 365 Defender](m365d-enable.md).
+   - If you don't* see **Incidents & alerts**, **Hunting**, or **Actions & submissions**, then Microsoft 365 Defender might not be turned on. In this case, see [Turn on Microsoft 365 Defender](m365d-enable.md).
 
 > [!TIP]
 > Need help? See [Turn on Microsoft 365 Defender](m365d-enable.md).
 
 ## Configuration options
 
-You have several options to configure automated investigation and response capabilities in Microsoft 365 Defender. as described in the following:
-
+You have several options to configure automated investigation and response capabilities in Microsoft 365 Defender. as described in the following table:
 
 | To do this  | Follow these steps  |
 |---------|---------|
 | Specify automation levels for groups of devices     | <ol><li>Set up one or more device groups. See [Create and manage device groups](../defender-endpoint/machine-groups.md). </li><li>In the Microsoft 365 Defender portal, go to **Permissions** > **Endpoints roles & groups** > **Device groups**.</li><li>Select a device group and review its **Automation level** setting. (We recommend using **Full - remediate threats automatically**). See [Automation levels in automated investigation and remediation capabilities](../defender-endpoint/automation-levels.md).</li><li>Repeat steps 2 and 3 as appropriate for all your device groups. </li></ol>     |
-| Turn automated investigation on or off for your organization     | *Note that we recommend keeping automated investigation turned on. If you want to turn it off for some devices, we recommend [reviewing or changing the automation level for device groups](#review-or-change-the-automation-level-for-device-groups) instead of turning automated investigation off for your organization.* <ol><li>In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **Advanced features**. </li><li>Turn the **Automated Investigation** toggle to **On** (or **Off**). Note that if you turn automated investigation off here, this setting will affect automated investigation and response actions for all devices. It will also affect manual response actions for emails (such as hard delete and soft delete).</li><li>Go to **Auto remediation** and review your automated remediation levels for your devices. See [Automation levels in automated investigation and remediation capabilities](../defender-endpoint/automation-levels.md).        |
+| Turn automated investigation on or off for your organization     | *We recommend keeping automated investigation turned on. If you want to turn it off for some devices, we recommend [reviewing or changing the automation level for device groups](#review-or-change-the-automation-level-for-device-groups) instead of turning off automated investigation for your organization.* <ol><li>In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **Advanced features**. </li><li>Turn the **Automated Investigation** toggle to **On** (or **Off**). If you turn off automated investigation here, this setting will affect automated investigation and response actions for all devices. It will also affect manual response actions for emails (such as hard delete and soft delete).</li><li>Go to **Auto remediation** and review your automated remediation levels for your devices. See [Automation levels in automated investigation and remediation capabilities](../defender-endpoint/automation-levels.md).        |
 
 
 ## Next steps
