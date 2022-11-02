@@ -37,6 +37,32 @@ This article is for people who have subscribed to a Microsoft 365 for business p
   
 Before moving your organization to Microsoft 365, there are requirements you need to meet, info you need to have on hand, and decisions you have to make.
 
+## Choosing the right business subscription
+
+When signing up for Microsoft 365 Business Standard, Microsoft 365 Business Basic, Microsoft Apps for Business or the trial versions, you have 2 options for how to get started. Evaluate three key factors to choose which best meets your needs:
+
+- Which apps and services do you want to use straight away?
+
+- How much technical skill do you have?
+
+- Do you need Microsoft to act as a processor for your data?
+
+The table below outlines each choice.
+
+|&nbsp;|**Option 1** – Sign in with Outlook, Hotmail, Yahoo, Gmail or other email account [(Simplified Sign-up)](#terms-of-service-update-for-simplified-sign-up-mode)|**Option 2** – Add a business domain and create a new business email account |
+|---|---|---|
+|Available apps and services|Use Word for the web, Excel for the web, PowerPoint for the web, Teams for the web and Access for the web. OneDrive and SharePoint desktop app are included. This set of apps is best for very small businesses who don't need branded email immediately, or who already use branded email from a different provider and do not intend to switch to use Microsoft Exchange. You'll use Outlook with your existing email account (be it outlook.com, Hotmail, Yahoo, Gmail or other).|Use Word for the web, Excel for the web, PowerPoint for the web, Teams for the web and Access for the web. OneDrive and SharePoint desktop app are included. Microsoft 365 Business Basic with Option 2 also lets you access a wide range of additional services: New, branded business email accounts with Outlook, shared calendars within your business, Bookings appointment scheduling and Meeting recordings. Shared document storage and SharePoint sites, Microsoft Planner and Microsoft Lists, Microsoft 365 Business Basic and Microsoft 365 Apps for business offer additional services with Option 2. Easier document sharing within your business, support for the compliance needs for your industry, Access and control over your employees' use of services and the widest range of integrations of non-Microsoft apps (e.g. Salesforce, Adobe) that work within Teams and Office.|
+|Required knowledge|Let's you get started without technical know-how.|Requires you to buy a domain, or to own a domain. You may need technical knowledge to prove ownership of the domain.|
+|Data handling|Available under the Supplement to the [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?linkid=2180702) and is best for businesses that want some remote work and collaboration tools and are comfortable with Microsoft acting as controller for your data under the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839). Subscribers to services using this option will not have access to an individual's user content or data until a domain is attached. Subscribers should evaluate data ownership and intellectual property rights considerations based on their needs. For example, if you are working collaboratively with other users on a document stored in their account, they may choose to make those documents inaccessible to you. As such, you should evaluate data ownership and intellectual property rights considerations accordingly. Separately, users may choose not to transfer documents in their Simplified Sign-Up account to your Domain Account subscription, even after you invite them to do so. This means their documents may also not be accessible to you even if you add a domain account later|Available under the [Microsoft Online Subscription Agreement](https://go.microsoft.com/fwlink/p/?linkid=2180430) and is best for businesses that need Microsoft to act as a processor for their data under Microsoft's [Data Protection Addendum](https://go.microsoft.com/fwlink/p/?linkid=2180314) and need our full suite of remote work and collaboration tools. Subscribers who are in regulated industries or seek more control, both over the use of the services by your employees and over processing of related data by Microsoft, should choose Option 2 and attach a domain and sign up under the Domain Account enterprise-level agreement.|
+
+Use these three factors to determine which of the two options is best for your business needs. For more info see:
+
+- [Sign up for a Microsoft 365 Business Standard subscription](../simplified-signup/signup-business-standard.md)
+
+- [Sign up for Microsoft 365 Business Basic](signup-business-basic.md)
+
+- [Sign up for Microsoft 365 Apps for business](signup--apps-business.md)
+
 ## Overview of Microsoft 365 for business setup
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2197910).
