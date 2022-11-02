@@ -19,7 +19,7 @@ ms.collection:
   - M365-subscription-management
 ---
 
-# Cross-tenant mailbox migration (preview)
+# Cross-tenant mailbox migration
 
 Commonly, during mergers or divestitures, you need the ability to move your users' Exchange Online mailboxes into a new tenant. Cross-tenant mailbox migration allows tenant administrators to use well-known interfaces like Exchange Online PowerShell and MRS to transition users to their new organization.
 
@@ -35,10 +35,16 @@ This article describes the process for cross-tenant mailbox moves and provides g
 
 > [!IMPORTANT]
 > Do not use this feature to migrate mailboxes on any type of hold. Migrating source mailboxes for users on hold is not supported.  
-> When a mailbox is migrated cross-tenant with this feature, only user visible content in the mailbox (email, contacts, calendar, tasks, and notes) is migrated. to the target (destination tenant). After successful migration, the source mailbox is deleted. This means that after the migration, under no circumstances, is the source mailbox available, discoverable, or accessible in the source tenant.
+> When a mailbox is migrated cross-tenant with this feature, only user visible content in the mailbox (email, contacts, calendar, tasks, and notes) is migrated to the target (destination tenant). After successful migration, the source mailbox is deleted. This means that after the migration, under no circumstances, is the source mailbox available, discoverable, or accessible in the source tenant.
 
 > [!NOTE]
 > If you are interested in previewing our new feature Domain Sharing for email alongside your cross-tenant mailbox migrations, please complete the form at [aka.ms/domainsharingpreview](https://aka.ms/domainsharingpreview). Domain sharing for email enables users in separate Microsoft 365 tenants to send and receive email using addresses from the same custom domain. The feature is intended to solve scenarios where users in separate tenants need to represent a common corporate brand in their email addresses. The current preview supports sharing domains indefinitely and shared domains during cross-tenant mailbox migration coexistence.
+
+## Licensing
+
+Cross Tenant User Data Migration is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers. User licenses are per migration (onetime fee). Please contact your Microsoft account team for details.
+
+Microsoft 365 Business Basic/Business Standard/Business Premium/F1/F3/E3/A3/E5/A5; Office 365 F3/E1/A1/E3/A3/E5/A5; Exchange Online; SharePoint Online; OneDrive for Business.
 
 ## Preparing source and target tenants
 
@@ -51,6 +57,8 @@ Additionally, at least one mail-enabled security group in the source tenant is r
 You'll also need to communicate with your trusted partner company (with whom you will be moving mailboxes) to obtain their Microsoft 365 tenant ID. This tenant ID is used in the Organization Relationship DomainName field.
 
 To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) and go to [https://aad.portal.azure.com/\#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties). Click the copy icon for the Tenant ID property to copy it to the clipboard.
+
+Make sure that all the users in the source and target organization must be licensed with appropriate Exchange Online subscriptions applicable for the organization. Also ensure that the Cross Tenant User Data Migration licenses are also applied to all the users that will be migrated to the target side.
 
 ### Configuration steps to enable your tenants for cross-tenant mailbox migrations
 
@@ -290,7 +298,7 @@ Ensure the following objects and attributes are set in the target organization.
 
    Note this will not work for tenants in hybrid.
 
-4. Users in the target organization must be licensed with appropriate Exchange Online subscriptions applicable for the organization. You may apply a license in advance of a mailbox move but ONLY once the target MailUser is properly set up with ExchangeGUID and proxy addresses. Applying a license before the ExchangeGUID is applied will result in a new mailbox provisioned in target organization.
+4. Users in the target organization must be licensed with appropriate Exchange Online subscriptions applicable for the organization. You may apply a license in advance of a mailbox move but ONLY once the target MailUser is properly set up with ExchangeGUID and proxy addresses. Applying a license before the ExchangeGUID is applied will result in a new mailbox provisioned in target organization. You must also apply a Cross Tenant User Data Migration licenses or you may see a transient error saying needs approval which will report a warning in the move report that a license is not applied to the target user.
 
    > [!NOTE]
    > When you apply a license on a Mailbox or MailUser object, all SMTP type proxyAddresses are scrubbed to ensure only verified domains are included in the Exchange EmailAddresses array.
@@ -529,8 +537,6 @@ The mailbox will be decrypted prior to moving. Ensure Customer Key is configured
 ### What is the estimated migration time?
 
 To help you plan your migration, the table present [here](/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) shows the guidelines about when to expect bulk mailbox migrations or individual migrations to complete. These estimates are based on a data analysis of previous customer migrations. Because every environment is unique, your exact migration velocity may vary.
-
-Do remember that this feature is currently in preview and the SLA, and any applicable Service Levels do not apply to any performance or availability issues during the preview status of this feature.
 
 ### Protecting documents in the source tenant consumable by users in the destination tenant.\*\*
 
