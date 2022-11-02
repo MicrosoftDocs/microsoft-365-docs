@@ -7,16 +7,16 @@ manager: scotv
 ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.date: 06/20/2022
 ms.reviewer: georgiah
 ms.custom:
-- it-pro
-- admindeeplinkMAC
-- admindeeplinkEXCHANGE
+  - it-pro
+  - admindeeplinkMAC
+  - admindeeplinkEXCHANGE
 ms.collection:
-- scotvorg
-- M365-subscription-management
+  - scotvorg
+  - M365-subscription-management
 ---
 
 # Cross-tenant mailbox migration (preview)
@@ -34,8 +34,8 @@ Cross-tenant Exchange mailbox migrations are supported for tenants in hybrid or 
 This article describes the process for cross-tenant mailbox moves and provides guidance on how to prepare source and target tenants for the Exchange Online mailbox content moves.
 
 > [!IMPORTANT]
-> When a mailbox is migrated Cross-Tenant with this feature, all email, including email held for litigation, is migrated. After successful migration, the source mailbox is deleted. This means that after the migration, under no circumstances (including mailboxes on litigation or retention hold), is the source mailbox available, discoverable, or accessible in the source tenant.  
-> Currently we are investigating an issue where in some scenarios, Teams chat data is also held in the mailbox, but the Teams chat data is not migrated. If Teams chat data must be preserved, do not use this feature to migrate the mailbox.
+> Do not use this feature to migrate mailboxes on any type of hold. Migrating source mailboxes for users on hold is not supported.  
+> When a mailbox is migrated cross-tenant with this feature, only user visible content in the mailbox (email, contacts, calendar, tasks, and notes) is migrated. to the target (destination tenant). After successful migration, the source mailbox is deleted. This means that after the migration, under no circumstances, is the source mailbox available, discoverable, or accessible in the source tenant.
 
 > [!NOTE]
 > If you are interested in previewing our new feature Domain Sharing for email alongside your cross-tenant mailbox migrations, please complete the form at [aka.ms/domainsharingpreview](https://aka.ms/domainsharingpreview). Domain sharing for email enables users in separate Microsoft 365 tenants to send and receive email using addresses from the same custom domain. The feature is intended to solve scenarios where users in separate tenants need to represent a common corporate brand in their email addresses. The current preview supports sharing domains indefinitely and shared domains during cross-tenant mailbox migration coexistence.
@@ -236,7 +236,7 @@ Ensure the following objects and attributes are set in the target organization.
 
      - ExchangeGUID (direct flow from source to target): The mailbox GUID must match. The move process will not proceed if this isn't present on target object.
      - ArchiveGUID (direct flow from source to target): The archive GUID must match. The move process won't proceed if this isn't present on the target object. (This is only required if the source mailbox is Archive enabled).
-     - LegacyExchangeDN (flow as proxyAddress, "x500:\<LegacyExchangeDN>"): The LegacyExchangeDN must be present on target MailUser as x500: proxyAddress. In addition, you also need to copy all x500 addresses from the source mailbox to the target mail user. The move processes won't proceed if these aren't present on the target object.
+     - LegacyExchangeDN (flow as proxyAddress, "x500:\<LegacyExchangeDN>"): The LegacyExchangeDN must be present on target MailUser as x500: proxyAddress. In addition, you also need to copy all x500 addresses from the source mailbox to the target mail user. The move processes won't proceed if these aren't present on the target object. Also, this step is important for enabling reply ability for emails that are sent before migration. The sender/recipient address in each email item and the auto-complete cache in Microsoft Outlook and in Microsoft Outlook Web App (OWA) uses the value of the LegacyExchangeDN attribute. If a user cannot be located using the LegacyExchangeDN value then the delivery of email messages may fail with a 5.1.1 NDR.
      - UserPrincipalName: UPN will align to the user's NEW identity or target company (for example, user@northwindtraders.onmicrosoft.com).
      - Primary SMTPAddress: Primary SMTP address will align to the user's NEW company (for example, user@northwind.com).
      - TargetAddress/ExternalEmailAddress: MailUser will reference the user's current mailbox hosted in source tenant (for example user@contoso.onmicrosoft.com). When assigning this value, verify that you have/are also assigning PrimarySMTPAddress or this value will set the PrimarySMTPAddress, which will cause move failures.
@@ -280,19 +280,9 @@ Ensure the following objects and attributes are set in the target organization.
    - msExchSafeRecipientsHash – Writes back online safe and blocked sender data from clients to on-premises Active Directory.
    - msExchSafeSendersHash – Writes back online safe and blocked sender data from clients to on-premises Active Directory.
 
-2. If the source mailbox is on LitigationHold and the source mailbox Recoverable Items size is greater than our database default (30 GB), moves will not proceed since the target quota is less than the source mailbox size. You can update the target MailUser object to transition the ELC mailbox flags from the source environment to the target, which triggers the target system to expand the quota of the MailUser to 100 GB, thus allowing the move to the target. These instructions will work only for hybrid identity running Azure AD Connect, as the commands to stamp the ELC flags are not exposed to tenant administrators.
+2. If the source mailbox Recoverable Items size is greater than our database default (30 GB), moves will not proceed since the target quota is less than the source mailbox size. You can update the target MailUser object to transition the ELC mailbox flags from the source environment to the target, which triggers the target system to expand the quota of the MailUser to 100 GB, thus allowing the move to the target. In a Hybrid environment you will need set the appropriate msExchELCMailboxFlags on the target ADUser.
 
-   > [!NOTE]
-   > SAMPLE – AS IS, NO WARRANTY
-   >
-   > This script assumes a connection to both source mailbox (to get source values) and the target on-premises Active Directory (to stamp the ADUser object). If source has litigation or single item recovery enabled, set this on the destination account. This will increase the dumpster size of destination account to 100 GB.
-
-   ```powershell
-   $ELCValue = 0
-   if ($source.LitigationHoldEnabled) {$ELCValue = $ELCValue + 8} if ($source.SingleItemRecoveryEnabled) {$ELCValue = $ELCValue + 16} if ($ELCValue -gt 0) {Set-ADUser -Server $domainController -Identity $destination.SamAccountName -Replace @{msExchELCMailboxFlags=$ELCValue}}
-   ```
-
-3. Non-hybrid target tenants can modify the quota on the Recoverable Items folder for the MailUsers prior to migration by running the following command to enable Litigation Hold on the MailUser object and increasing the quota to 100 GB:
+3. Non-hybrid target tenants can modify the quota on the Recoverable Items folder for the MailUsers prior to migration by running the following command to enable Litigation Hold on the target MailUser object and increasing the quota to 100 GB:
 
    ```powershell
    Set-MailUser -Identity <MailUserIdentity> -EnableLitigationHoldForMigration
@@ -399,7 +389,7 @@ The meetings will move, however the Teams meeting URL does not update when items
 
 ### Does the Teams chat folder content migrate cross-tenant?
 
-No, the Teams chat folder content does not migrate cross-tenant. When a mailbox is migrated Cross-Tenant with this feature, all email, including email held for litigation, is migrated. After successful migration, the source mailbox is deleted. This means that after the migration, under no circumstances (including mailboxes on litigation or retention hold), is the source mailbox available, discoverable, or accessible in the source tenant. Currently we are investigating an issue where in some scenarios, Teams chat data is also held in the mailbox, but the Teams chat data is not migrated. If Teams chat data must be preserved, do not use this feature to migrate the mailbox.
+No, the Teams chat folder content does not migrate cross-tenant. When a mailbox is migrated cross-tenant with this feature, only user visible content in the mailbox (email, contacts, calendar, tasks, and notes) is migrated.
 
 ### How can I see just moves that are cross-tenant moves, not my onboarding and off-boarding moves?
 
@@ -413,7 +403,7 @@ Get-MoveRequest -Flags "CrossTenant"
 
 > [!NOTE]
 > SAMPLE – AS IS, NO WARRANTY
-> This script assumes a connection to both source mailbox (to get source values) and the target on-premises Active Directory Domain Services (to stamp the ADUser object). If source has litigation or single item recovery enabled, set this on the destination account. This will increase the dumpster size of destination account to 100 GB.
+> This script assumes a connection to both source mailbox (to get source values) and the target on-premises Active Directory Domain Services (to stamp the ADUser object).
 
 ```powershell
 # This will export users from the source tenant with the CustomAttribute1 = "Cross-Tenant-Project"
@@ -468,13 +458,17 @@ There is a matrix of roles based on assumption of delegated duties when executin
 
 Exchange mailbox moves using MRS craft the targetAddress on the original source mailbox when converting to a MailUser by matching an email address (proxyAddress) on the target object. The process takes the -TargetDeliveryDomain value passed into the move command, then checks for a matching proxy for that domain on the target side. When we find a match, the matching proxyAddress is used to set the ExternalEmailAddress (targetAddress) on the converted mailbox (now MailUser) object.
 
+### How mail flow works after migration?
+
+Cross-Tenant mail flow after migration works similar to Exchange Hybrid mail flow. Each migrated mailbox needs the source MailUser with the correct targetaddress to forward incoming mail from source tenant to mailboxes in target tenant. Transport rules, security and compliance features will run as configured in each tenant that the mail flows through. So, for inbound mail, features like anti-spam, anti-malware, quarantine, as well as transport rules and journaling rules will run in the source tenant first, then in the target tenant.
+
 ### How do mailbox permissions transition?
 
 Mailbox permissions include Send on Behalf of and Mailbox Access:
 
 - Send On Behalf Of (AD:publicDelegates) stores the DN of recipients with access to a user's mailbox as a delegate. This value is stored in Active Directory and currently does not move as part of the mailbox transition. If the source mailbox has publicDelegates set, you will need to restamp the publicDelegates on the target Mailbox once the MEU to Mailbox conversion completes in the target environment by running `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>`.
 
-- Mailbox Permissions that are stored in the mailbox will move with the mailbox when both the principal and the delegate are moved to the target system. For example, the user TestUser_7 is granted FullAccess to the mailbox TestUser_8 in the tenant SourceCompany.onmicrosoft.com. After the mailbox move completes to TargetCompany.onmicrosoft.com, the same permissions are set up in the target directory. Examples using _Get-MailboxPermission_ for TestUser_7 in both source and target tenants are shown below. Exchange cmdlets are prefixed with source and target accordingly.
+- Mailbox Permissions that are stored in the mailbox will move with the mailbox when both the principal and the delegate are moved to the target system. For example, the user TestUser*7 is granted FullAccess to the mailbox TestUser_8 in the tenant SourceCompany.onmicrosoft.com. After the mailbox move completes to TargetCompany.onmicrosoft.com, the same permissions are set up in the target directory. Examples using \_Get-MailboxPermission* for TestUser_7 in both source and target tenants are shown below. Exchange cmdlets are prefixed with source and target accordingly.
 
 Here is an example of the output of the mailbox permission before a move.
 
