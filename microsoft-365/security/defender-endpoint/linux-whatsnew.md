@@ -40,8 +40,8 @@ This article is updated frequently to let you know what's new in the latest rele
 &ensp;Published: **November 02, 2022**<br/>
 &ensp;Build: **101.85.27**<br/>
 &ensp;Release version: **30.122092.18527.0**<br/>
-&ensp;Engine version: **1.1.19700.3**<br/>
-&ensp;Signature version: **1.377.1203.0**<br/>
+&ensp;Engine version: **1.1.19500.2**<br/>
+&ensp;Signature version: **1.371.1369.0**<br/>
 
 **What's new**
 
