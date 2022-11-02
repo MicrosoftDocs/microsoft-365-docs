@@ -61,7 +61,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 This should prevent the issue from occurring.
 
-Use your package manager to uninstall the 101.75.43 or 101.78.13
+Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
 
 ```bash
 sudo apt remove mdatp
