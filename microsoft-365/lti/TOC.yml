@@ -38,9 +38,9 @@
         href: teams-classes-meetings-with-brightspace.md
       - name: Use Microsoft OneDrive LTI with Brightspace
         href: onedrive-lti-brightspace.md
-    - name: Schoology integrations
+    - name: Schoology Learning integrations
       items:
-      - name: Use Microsoft OneDrive LTI with Schoology
+      - name: Use Microsoft OneDrive LTI with Schoology Learning
         href: onedrive-lti-schoology.md
-      - name: Use Microsoft Teams meetings with Schoology
+      - name: Use Microsoft Teams meetings with Schoology Learning
         href: teams-classes-and-meetings-with-schoology.md

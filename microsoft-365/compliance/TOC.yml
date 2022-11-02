@@ -20,6 +20,8 @@
       href: microsoft-365-compliance-center.md
     - name: Permissions in the Microsoft Purview compliance portal
       href: microsoft-365-compliance-center-permissions.md
+    - name: Roles and role groups in the Microsoft Purview compliance portal
+      href: /microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
     - name: Redirecting users to the Microsoft Purview compliance portal
       href: microsoft-365-compliance-center-redirection.md
     - name: Use your free Azure Active Directory subscription

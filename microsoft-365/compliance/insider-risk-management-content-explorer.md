@@ -23,6 +23,13 @@ ms.collection:
 
 The insider risk management **Content explorer** allows users assigned the *Insider Risk Management Investigators* role to examine the context and details of content associated with activity in alerts. The case data in Content explorer is refreshed daily to include new risk activity. For all alerts that are confirmed to a case, copies of data and message files are archived as a snapshot in time of the items, while maintaining the original files and messages in the storage sources. If needed, case data files may be exported as a portable document file (PDF) or in the original file format.
 
+## Use the Content explorer to view details for a specific case
+
+To examine the emails and files captured by the policies included in a specific case, navigate to the Insider risk management **Cases** page and select the row of the *Case name* in the list for the case you want to view details for. Then in the case details page, select the **Content explorer** tab to open the Content explorer.
+
+> [!IMPORTANT]
+> After an alert is confirmed to a case, Content explorer won't display any details for that case if the organization has not assigned a user to either the *Insider Risk Management Investigator* or *Insider Risk Management* role group.
+
 For new cases, it usually takes about an hour for content to populate in Content explorer. For cases with large amounts of content, it may take longer to create a snapshot. If content is still loading in Content explorer, you will see a progress indicator that displays the completion percentage.
 
 In some cases, data associated with a case may not be available as a snapshot for review in Content explorer. This situation may occur when case data has been deleted or moved, or when a temporary error occurs when processing case data. If this situation occurs, select **View files** in the warning bar to view the file names, file path, and reason for the failure for each file. If needed, this information can be exported to a .csv (comma-separated values) file.
