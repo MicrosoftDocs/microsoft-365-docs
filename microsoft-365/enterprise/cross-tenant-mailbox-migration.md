@@ -371,6 +371,12 @@ Migration batch submission is also supported from the new [Exchange admin center
 
 Once the mailbox moves from source to target, you should ensure that the on-premises mail users, in both the source and target, are updated with the new targetAddress. In the examples, the targetDeliveryDomain used in the move is **contoso.onmicrosoft.com**. Update the mail users with this targetAddress.
 
+### Remove endpoints and organization relationships after migration
+
+Use the Remove-MigrationEndpoint(/powershell/module/exchange/remove-migrationendpoint) cmdlet to remove existing migration endpoints for source or destination servers after the migration is complete.
+
+Use the Remove-OrganizationRelationship (/exchange/sharing/organization-relationships/remove-an-organization-relationship#use-exchange-online-powershell-to-remove-an-organization-relationship) cmdlet to remove existing oraganization relationships for source or destination servers after the migration is complete.
+
 ## Frequently asked questions
 
 ### Do we need to update RemoteMailboxes in source on-premises after the move?
