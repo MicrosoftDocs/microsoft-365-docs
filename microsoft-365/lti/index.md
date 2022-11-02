@@ -66,7 +66,7 @@ For configuration steps, see:
 
 - [Microsoft OneDrive LTI with Canvas](onedrive-lti.md).
 - [Microsoft OneDrive LTI with Blackboard](onedrive-lti-blackboard.md).
-- [Microsoft OneDrive LTI with Schoology](onedrive-lti-schoology.md).
+- [Microsoft OneDrive LTI with Schoology Learning](onedrive-lti-schoology.md).
 - [Microsoft OneDrive LTI with D2L Brightspace](onedrive-lti-brightspace.md)
 
 ## Teams LTI apps
@@ -81,7 +81,7 @@ For configuration steps, see:
 - [Microsoft Teams Meetings with Moodle](teams-classes-meetings-with-moodle.md).
 - [Microsoft Teams Meetings with Open LMS](open-lms-teams-classes-and-meetings.md).
 - [Microsoft Teams Meetings with Desire2Learn Brightspace](teams-classes-meetings-with-brightspace.md).
-- [Microsoft Teams Meetings with Schoology](teams-classes-and-meetings-with-schoology.md).
+- [Microsoft Teams Meetings with Schoology Learning](teams-classes-and-meetings-with-schoology.md).
 
 ### Teams Classes LTI
 
@@ -98,4 +98,3 @@ For configuration steps, see:
 ### OneNote Class Notebook LTI
 
 OneNote Class Notebook LTI can be used with your Learning Management System (LMS) to create a shared notebook and link it to your course. Students enrolled in your LMS course can access the notebook automatically without you having to add their names. For configuration steps, see [Microsoft OneNote Class Notebook LTI](https://www.onenote.com/lti/integratelti).
-

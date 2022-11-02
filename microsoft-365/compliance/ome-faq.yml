@@ -234,7 +234,7 @@ sections:
       - question: |
           Are there any reporting capabilities or insights for encrypted emails?
         answer: |
-          There is an Encryption report in the Security and Compliance Center. See [View email security reports in the Security & Compliance Center](../security/office-365-security/view-email-security-reports.md).
+          There is an Encryption report in the Security and Compliance Center. See [View email security reports in the Microsoft Purview compliance portal](../security/office-365-security/view-email-security-reports.md).
             
       - question: |
           Can I use message encryption with compliance features such as eDiscovery?

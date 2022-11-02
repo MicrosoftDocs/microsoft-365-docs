@@ -20,14 +20,12 @@ description: Learn about where to access the Windows and Office Deployment Lab K
 
 # Windows and Office 365 deployment lab kit
 
-The Windows and Office 365 deployment lab kit is designed to help you plan, test, and validate your deployment and management of desktops running Windows 10 Enterprise or Windows 11 Enterprise and Microsoft 365 Apps for enterprise. The labs in the kit cover using Microsoft Endpoint Configuration Manager, OneDrive, Windows Autopilot, and more. This kit is highly recommended for organizations preparing for desktop upgrades. As an isolated environment, the lab is also ideal for exploring deployment tool updates and testing your deployment-related automation.
-
-There are two versions of the lab available for free download:  
+The Windows and Office 365 deployment lab kits are designed to help you plan, test, and validate your deployment and management of desktops running Windows 10 Enterprise or Windows 11 Enterprise and Microsoft 365 Apps. The labs in the kit cover using Microsoft Intune and Microsoft Configuration Manager. This kit is highly recommended for organizations preparing for desktop upgrades. As an isolated environment, the lab is also ideal for exploring deployment tool updates and testing your deployment-related automation. The following lab kits are available for free download:  
 
 |Windows 10 Lab|Windows 11 Lab|
 |---|---|
-|[Windows 10 lab environment](https://download.microsoft.com/download/8/5/e/85e007b0-1f3e-460c-bd0a-5a8c6ec490b5/Win10_21H2_lab.zip)|[Windows 11 lab environment](https://download.microsoft.com/download/5/0/b/50bbe36a-9291-4339-9dcc-2a444fcd1659/Microsoft365DeviceLabKit.zip)|
-|[Windows 10 lab guides](https://download.microsoft.com/download/b/d/4/bd4f430b-8cd1-4a07-97b1-c32100fce7ae/Win_10_21H2_lab_guides.zip)|[Windows 11 lab guides](https://download.microsoft.com/download/5/0/b/50bbe36a-9291-4339-9dcc-2a444fcd1659/Win11_SetUp_Guide_08.05.zip)|
+|[Windows 10 lab environment](https://download.microsoft.com/download/b/7/6/b7696d5b-940e-4af6-ba8b-32cfa3532e6e/Windows10_21H2_2022-10-19.zip)|[Windows 11 lab environment](https://download.microsoft.com/download/a/1/0/a10d1f67-b499-4c2f-8db1-79d29cd98b05/Windows11_21H1_2022-10-18.zip)|
+|[Windows 10 lab guides](https://download.microsoft.com/download/b/d/4/bd4f430b-8cd1-4a07-97b1-c32100fce7ae/Win_10_21H2_lab_guides.zip)|[Windows 11 lab guides](https://download.microsoft.com/download/a/1/0/a10d1f67-b499-4c2f-8db1-79d29cd98b05/Win11_Lab_Guides_10.18.zip)|
 
 ## A complete lab environment
 
@@ -35,8 +33,8 @@ The lab provides you with an automatically provisioned virtual lab environment, 
 
 |Windows 10 Lab|Windows 11 Lab|
 |---|---|
-|Windows 10 Enterprise, Version 21H2|Windows 11 Enterprise|
-|Microsoft Endpoint Configuration Manager, Version 2103|Microsoft Endpoint Configuration Manager, Version 2203|
+|Windows 10 Enterprise, Version 21H2|Windows 11 Enterprise, Version 21H2|
+|Microsoft Endpoint Configuration Manager, Version 2103|Microsoft Endpoint Configuration Manager, Version 2207|
 |Windows Assessment and Deployment Kit for Windows 10|Windows Assessment and Deployment Kit for Windows 11|
 |Windows Server 2019|Windows Server 2022|
 
@@ -68,15 +66,15 @@ Detailed lab guides take you through multiple deployment and management scenario
 - Servicing Windows using Microsoft Intune
 - Servicing Windows with Configuration Manager
 
-### Deploy Microsoft 365 Apps for enterprise
+### Deploy Microsoft 365 Apps 
 
 - Cloud managed deployment
 - Locally managed deployment
-- Microsoft 365 Apps for enterprise Deployment on Non-AD Joined Devices
+- Microsoft 365 Apps deployment on Non-AD Joined Devices
 - Enterprise managed deployment using Configuration Manager
 - Enterprise managed deployment using Microsoft Intune
-- Servicing Microsoft 365 Apps for enterprise using Configuration Manager
-- Servicing Microsoft 365 Apps for enterprise using Intune
+- Servicing Microsoft 365 Apps using Configuration Manager
+- Servicing Microsoft 365 Apps using Intune
 - LOB Deployment and Management with Microsoft Intune
 - Deploy Microsoft Teams
 - Assignment filters
@@ -100,7 +98,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 
 > [!NOTE]
-> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows client virtual machines expire 90 days after activation of the lab. New versions of the labs will be published on or before November 5, 2022. 
+> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows client virtual machines expire 90 days after activation of the lab. New versions of the labs will be published on or before December 31, 2022. 
 
 ## Additional guidance
 

@@ -27,7 +27,7 @@ description: "This is a list of all trainable classifiers, their definitions and
 Microsoft Purview comes with multiple pre-trained classifiers. They appear in the **Microsoft Purview compliance portal** \> **Data classification** \> **Trainable classifiers** view with the status of `Ready to use`.
 
 
-- **Adult, racy, and gory**: Detects images of these types. The images must be between 50 kilobytes (KB) and 4 megabytes (MB) in size and be greater than 50 x 50 pixels in height x width dimensions. Scanning and detection are supported for Exchange Online email messages, and Microsoft Teams channels and chats. Detects content in .jpeg, .png, .gif, and .bmp files.
+- **Adult, racy, and gory**: Detects images of these types. The images must be between 100 kilobytes (KB) and 4 megabytes (MB) in size and be greater than 50 x 50 pixels in height x width dimensions. Scanning and detection are supported for Exchange Online email messages, and Microsoft Teams channels and chats. Detects content in .jpeg, .png, .gif, and .bmp files.
 
 - **Agreements**: Detects content related to legal agreements such as non-disclosure agreements, statements of work, loan and lease agreements, employment and non-compete agreements. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files.
 
@@ -105,7 +105,7 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 
 - **Profanity**: Detects a specific category of offensive language text items that contain expressions that embarrass most people. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
 
-- **Regulatory collusion (preview)**: Detects    messages that may violate regulatory anti-collusion requirements such as an attempted concealment of sensitive information. This classifier can help customers manage  regulatory compliance obligations such as the Sherman Antitrust Act, Securities Exchange Act 1933  , Securities Exchange Act of 1934, Investment Advisers Act of 1940, Federal Commission Act, and Robinson-Patman Act. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
+- **Regulatory collusion (preview)**: Detects    messages that may violate regulatory anti-collusion requirements such as an attempted concealment of sensitive information. This classifier can help customers manage  regulatory compliance obligations such as the Sherman Antitrust Act, Securities Exchange Act 1933, Securities Exchange Act of 1934, Investment Advisers Act of 1940, Federal Commission Act, and Robinson-Patman Act. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
 > [!IMPORTANT] 
 > While in preview, this classifier may capture a large volume of bulk sender/newsletter content due to a known issue. While they're in preview, you can address large volumes of bulk sender/newsletter content by adding the **Message is not sent to any of these domains condition** with a list of domains to exclude. 
 
