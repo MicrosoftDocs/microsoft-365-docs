@@ -24,11 +24,15 @@ For the purposes of these Service-Specific Terms, “Services” means Test Base
 
 ### Privacy Notice
 
-Microsoft will handle Provided Technology and data (Personal Data means any information relating to an identified or identifiable natural person.) resulting from Testing in accordance with the Microsoft Privacy Statement at [aka.ms/privacy](https://privacy.microsoft.com/privacystatement), and the [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) terms do not apply.
+Microsoft will handle Provided Technology and data resulting from Testing in accordance with the Microsoft Privacy Statement at [aka.ms/privacy](https://privacy.microsoft.com/privacystatement). Please note that the [Data Protection Addendum terms](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) do not apply.
 
-### No Personal Data Processing.
+### No Personal Data Processing Required for Testing
 
-Microsoft does not require any personal data of end users to perform the Testing. Customer shall not provide any such personal data to Microsoft in connection with the Services.
+Test Base for Microsoft 365 does not require any personal data to perform the Testing. Customers shall not provide any personal data to Microsoft in connection with the Test Base process (for example, when uploading the application package binaries.)
+
+### Personal Data used for Communication
+
+If Customers choose to, they may enter an email address that will be used to notify them of newly generated Test Base test results. Customer data will be deleted by Test Base no later than 30 days after the Customer account is terminated.
 
 ### License grant to Microsoft
 
