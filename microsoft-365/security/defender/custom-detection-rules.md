@@ -165,7 +165,10 @@ When selected, you can choose to apply the **Quarantine file** action on files i
 
 
 #### Actions on users
-When selected, the **Mark user as compromised** action is taken on users in the `AccountObjectId`, `InitiatingProcessAccountObjectId`, or `RecipientObjectId` column of the query results. This action sets the users risk level to "high" in Azure Active Directory, triggering corresponding [identity protection policies](/azure/active-directory/identity-protection/overview-identity-protection).
+When selected, the user action is taken on users in the `AccountObjectId`, `InitiatingProcessAccountObjectId`, or `RecipientObjectId` column of the query results. 
+
+The **Mark user as compromised**  action sets the users risk level to "high" in Azure Active Directory, triggering corresponding [identity protection policies](/azure/active-directory/identity-protection/overview-identity-protection).
+Select **Disable user** to temporarily prevent a user from logging in, or **Force password reset** to prompt the user to change their password on the next sign in session.
 
 #### Actions on emails
 If the custom detection yields email messages, you can select either **Move to mailbox folder** to move the email to a specific folder, or **Delete email** to delete the email.
