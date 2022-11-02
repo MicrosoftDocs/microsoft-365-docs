@@ -217,7 +217,7 @@ Test-MigrationServerAvailability -EndPoint "Migration endpoint for cross-tenant 
 
 ### Move mailboxes back to the original source
 
-If a mailbox is required to move back to the original source tenant, the same set of steps and scripts will need to be run in both new source and new target tenants. The existing Organization Relationship object will be updated or appended, not recreated. The migration cannot happen both ways simultaneously.
+If a mailbox is required to move back to the original source tenant, the same set of steps and scripts will need to be run in both new source and new target tenants. The existing Organization Relationship object will be updated or appended, not recreated. The migration can't happen both ways simultaneously.
 
 ## Prepare target user objects for migration
 
