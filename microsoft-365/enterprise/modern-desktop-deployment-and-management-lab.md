@@ -33,7 +33,7 @@ The lab provides you with an automatically provisioned virtual lab environment, 
 
 |Windows 10 Lab|Windows 11 Lab|
 |---|---|
-|Windows 10 Enterprise, Version 21H2|Windows 11 Enterprisem, Version 21H2|
+|Windows 10 Enterprise, Version 21H2|Windows 11 Enterprise, Version 21H2|
 |Microsoft Endpoint Configuration Manager, Version 2103|Microsoft Endpoint Configuration Manager, Version 2207|
 |Windows Assessment and Deployment Kit for Windows 10|Windows Assessment and Deployment Kit for Windows 11|
 |Windows Server 2019|Windows Server 2022|
