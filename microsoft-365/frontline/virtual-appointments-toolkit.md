@@ -112,10 +112,10 @@ Download and [customize](#customize-your-infographic) one of these infographics 
 
 | Graphic                | Description and links              |
 | :------------------- | -------------------: |
-| [![Image of the financial services infographic](https://go.microsoft.com/fwlink/?linkid=2214189) | Customizable infographic for your financial services organization <br> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2214189) <br> [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2214285)
-| [![Image of the retail infographic](media/vv-retail-thumbnail.png)](https://go.microsoft.com/fwlink/?linkid=2214355) | Customizable infographic for your retail organization <br> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2214355) <br> [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2214283) |
-| [![Image of the healthcare infographic](media/vv-healthcare-thumbnail.png)](https://go.microsoft.com/fwlink/?linkid=2214356) | Customizable infographic for your healthcare organization <br> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2214356) <br> [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2214357) |
-| [![Image of the non-industry-specific infographic.](media/va-generic-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2214284) | Customizable infographic not specific to a particular industry <br> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2214284) <br> [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2214282) |
+|![Image of the financial services infographic](media/vv-finserv-thumbnail.png)| Customizable infographic for your financial services organization <br> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2214189) <br> [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2214285)
+|![Image of the retail infographic](media/vv-retail-thumbnail.png)| Customizable infographic for your retail organization <br> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2214355) <br> [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2214283) |
+|![Image of the healthcare infographic](media/vv-healthcare-thumbnail.png)| Customizable infographic for your healthcare organization <br> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2214356) <br> [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2214357) |
+|![Image of the non-industry-specific infographic.](media/va-generic-thumb.png)| Customizable infographic not specific to a particular industry <br> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2214284) <br> [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2214282) |
 
 ### Customize your infographic
 
