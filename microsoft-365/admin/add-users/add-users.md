@@ -106,7 +106,7 @@ If you're seeing this page in the admin center, you're on the **admin simplified
 1. Go to **Users** > **Active users**, and select **Add multiple users**.
 2. On the **Add list of user** page, choose whether to add user's one at a time or use a spreadsheet to add your new users.
 
-    :::image type="content" source="../../media/add-multiple-users2.png" alt-text="Screenshot: Options to add users one at a time or use a CSV file":::
+    :::image type="content" source="../../media/upload-csv-file.png" alt-text="Screenshot: Options to add users one at a time or use a CSV file.":::
 
 - Select **I'd like to upload a CSV with user information**. Download the example CSV file and make sure your spreadsheet includes the exact same column headings as the sample CSV file (User Name, First Name, and so on). If you use the sample CSV file, open it in an editing tool, like Microsoft Excel, and consider leaving all the data in row 1 alone, and only entering data in rows 2 and below. Your spreadsheet also needs to include values for the user name (like bob@contoso.com) and a display name (like Bob Kelly) for each user. When you're done entering your user's information, select **Browse** and navigate to the location of your CSV file and select **Open**.
 
@@ -169,7 +169,7 @@ You can also filter by additional user profile details used in your organization
 4. A new mailbox that has been created on-premise with a New-RemoteMailbox cmdlet is provisioned for the user.
 
 > [!TIP]
-> If you create a custom view that returns more than 2,000 users, the resulting user list isn't sorted. In this case, use the search box to find users or edit your custom view to refine your search. 
+> If you create a custom view that returns more than 2,000 users, the resulting user list isn't sorted. In this case, use the search box to find users or edit your custom view to refine your search.
   
 ### Create a custom user view
 
@@ -201,7 +201,7 @@ You can also filter by additional user profile details used in your organization
 
 1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a>. 
 
-::: moniker-end 
+::: moniker-end
     
 2. On the **Active users** page, select **Filter**, select the filter you want to change, and then select **Edit filter**. 
     
