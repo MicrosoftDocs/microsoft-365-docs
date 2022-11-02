@@ -1,6 +1,6 @@
 ---
-title: 'Test Base for Microsoft 365'
-description: How to Test Base for Microsoft 365
+title: 'Test Base for Microsoft 365 Product Terms'
+description: How to Test Base for Microsoft 365 Product Terms
 search.appverid: MET150
 author: Tinacyt
 ms.author: tinachen
