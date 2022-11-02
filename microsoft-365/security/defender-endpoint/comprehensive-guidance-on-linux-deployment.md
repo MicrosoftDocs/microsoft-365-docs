@@ -22,7 +22,7 @@ search.appverid: met150
 
 # Deployment of Microsoft Defender for Endpoint on Linux
 
-This article provides advanced deployment guidance for Microsoft Defender for Endpoint on Linux. You'll get a brief summary of the deployment steps, learn about the system requirements, be guided through the actual deployment steps, and learn how to verify the device has been correctly onboarded.
+This article provides advanced deployment guidance for Microsoft Defender for Endpoint on Linux. You'll get a brief summary of the deployment steps, learn about the system requirements,  then be guided through the actual deployment steps. You'll also learn how to verify that the device has been correctly onboarded.
 
 For information about Microsoft Defender for Endpoint capabilities, see [Advanced Microsoft Defender for Endpoint capabilities](#advanced-microsoft-defender-for-endpoint-capabilities).
 
@@ -38,14 +38,14 @@ To learn about other ways to deploy Microsoft Defender for Endpoint on Linux, se
 The following list captures the actions you'll take to deploy Microsoft Defender for Endpoint on Linux:
 
 - Work with your Firewall, Proxy, and Networking admin to add the Microsoft Defender for Endpoint URLs to the allowed list, and prevent it from being SSL inspected.
-- Run a centralized scan to capture current resource utilization across the environment, such as, check available disk space in all mounted partitions, capture memory usage, capture a process listing that includes availability, and used CPU percentages.
+- Run a centralized scan to capture  the current resource utilization across the environment. For example, check available disk space in all mounted partitions, capture memory usage, capture a process listing that includes availability, and used CPU percentages.
 - Exclude Microsoft Defender for Endpoint on Linux from your third-party anti-malware product.
 - Download the onboarding script from the Microsoft Defender for Endpoint portal.
 - Set up the Microsoft Defender for Endpoint on Linux configuration settings.
-- Add your third-party anti-malware processes and paths to the exclusion list from the prior step (Setup the Microsoft Defender for Endpoint on Linux anti-malware settings).
-- Verify that you've added your current exclusions from your third-party anti-malware  to the prior step (Set up the Microsoft Defender for Endpoint on Linux configuration settings).
+- In the configuration settings: add exclusions for anti-malware processes and paths associated with all third-party anti-malware products you are running alongside Microsoft Defender for Endpoint.  
+- In the configuration settings: verify that you've transferred in all exclusions previously configured for other third-party anti-malware products in your environment 
 - Deliver the onboarding file.
-- Deliver the anti-malware setting.
+- Deliver the anti-malware settings.
 - Deliver the scheduled scans cronjob setting.
 - Deliver the Microsoft Defender for Endpoint on  Linux agent cronjob settings.
 - Install the Microsoft Defender for Endpoint on Linux package.
@@ -66,7 +66,7 @@ For a detailed list of supported Linux distros, see [System requirements](micros
 
 |Resource|Recommendation|
 |---|---|
-|Disk space |Minimum: 2 GB <br> NOTE: An additional 2 GB disk space might be needed if cloud diagnostics are enabled for crash collections. |
+|Disk space |Minimum: 2 GB <br> NOTE: An additional 2-GB disk space might be needed if cloud diagnostics are enabled for crash collections. |
 |RAM |1 GB<br> 4 GB is preferred|
 |CPU |If the Linux system is running only 1 vcpu, we recommend to be increased to 2 vcpu’s<br> 4 cores are preferred |
 
@@ -80,6 +80,8 @@ For a detailed list of supported Linux distros, see [System requirements](micros
 ### Additional guidance
 
 - Depending on the non-Microsoft anti-malware running on your Linux servers, you may still be able to run Microsoft Defender for Endpoint on Linux. If the anti-malware runs FANotify, it needs to be uninstalled.
+- Your ability to run Microsoft Defender for Endpoint on Linux alongside a non-Microsoft anti-malware product depends on the implementation details of that product. If the other anti-malware product leverages fanotify, it has to be uninstalled to eliminate performance and stability side effects resulting from running two conflicting agents. 
+
 	
 - To check if there is a non-Microsoft anti-malware that is running FANotify, you can run `mdatp health`, then check the result:
 		
@@ -137,7 +139,7 @@ Here's how to check the network connectivity of Microsoft Defender for Endpoint:
 
 If the Linux servers are behind a proxy, use the following settings guidance.
 
-The table below shows the supported proxy settings:
+The following table lists the supported proxy settings:
 
 |Supported|Not supported|
 |---|---|
@@ -149,7 +151,7 @@ The table below shows the supported proxy settings:
 - [Static proxy configuration](/defender-endpoint/linux-static-proxy-configuration.md)
 - [Troubleshooting connectivity issues in static proxy scenario](linux-support-connectivity.md#troubleshooting-steps-for-environments-with-static-proxy)
 
-### Verify SSL inspection is not being performed on the network traffic
+### Verify SSL inspection isn't being performed on the network traffic
 
 To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspections by major firewall systems aren't allowed. You'll have to bypass SSL inspection for Microsoft Defender for Endpoint URLs.
 
@@ -157,19 +159,19 @@ To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses ce
 
 For more information, see [Troubleshooting cloud connectivity issues for Microsoft Defender for Endpoint on Linux](linux-support-connectivity.md).
 
-## Configure Microsoft Defender for Endpoint on Linux antimal-ware settings
+## Configure Microsoft Defender for Endpoint on Linux anti-malware settings
 
 **Before you begin**
 
-- If you're already using a third-party antimal-ware for your Linux servers:
-   - Move the existing exclusions to Microsoft Defender for Endpoint for Linux.
+- If you're already using a non-Microsoft anti-malware product for your Linux servers:
+   - Move the existing exclusions to Microsoft Defender for Endpoint on Linux.
 
-- If you're not using a third-party antimal ware for your Linux servers:
+- If you're not using a non-Microsoft anti-malware product for your Linux servers:
    - Get a list of all your Linux applications and check the vendors website for exclusions.  
    
-- If you're running a non-Microsoft antimal-ware product, then add the processes/paths to the Microsoft Defender for Endpoint's AV exclusion list. For more information, see [Binary name and installation path changes with Endpoint Security for Linux 10.6.6](https://kcm.trellix.com/corporate/index?page=content&id=KB92028). For more information, check the non-Microsoft antimal-ware documentation or contact their support. 
+- If you're running a non-Microsoft anti-malware product, then add the processes/paths to the Microsoft Defender for Endpoint's AV exclusion list. For more information, see [Binary name and installation path changes with Endpoint Security for Linux 10.6.6](https://kcm.trellix.com/corporate/index?page=content&id=KB92028). For more information, check the non-Microsoft anti-malware documentation or contact their support. 
  
-- If you are testing on one machine, you can use a command line to set up the exclusions:
+- If you're testing on one machine, you can use a command line to set up the exclusions:
   - [Configure from the command line](linux-resources.md#configure-from-the-command-line).
   - [Configure and validate exclusions for Microsoft Defender for Endpoint on  Linux](linux-exclusions.md).
 
@@ -348,19 +350,19 @@ The following table lists the processes that may cause a high CPU usage:
 
 ### Step 2. Apply further diagnostic steps based on the identified process
 
-Now that you've identified the process that is causing the high CPU usage, follow the corresponding diagnostic guidance below. 
+Now that you've identified the process that is causing the high CPU usage, use the corresponding diagnostic guidance in the following section. 
 
-For example, in the previous step, `wdavdaemon unprivileged` was identified as the process that was causing high CPU usage. Based on the result, you can apply the guidance to check the wdavdaemon unprivileged process below.
+For example, in the previous step, `wdavdaemon unprivileged` was identified as the process that was causing high CPU usage. Based on the result, you can apply the guidance to check the wdavdaemon unprivileged process.
 
 
 ### Check the wdavdaemon unprivileged process
 
-The following diagram shows the workflow and steps required in order to add antimal-ware exclusions:
+The following diagram shows the workflow and steps required in order to add anti-malware exclusions:
 
 :::image type="content" source="images/unprivileged-plugins.png" alt-text="This is unpriviledged sensors":::
 
-- See [troubleshoot performance issues for Microsoft Defender for Endpoint for Linux](linux-support-perf.md) .
-- If you have in-house apps/scripts or a legitimate third-party app/script getting flagged, Microsoft security researchers analyze suspicious files to determine if they are threats, unwanted applications, or normal files. Submit files you think are malware or files that you believe have been incorrectly classified as malware by using the unified submissions experience (for more information, see [Unified submissions experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770)) or [File submissions](https://www.microsoft.com/en-us/wdsi/filesubmission).
+- See [troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md) .
+- If you have in-house apps/scripts or a legitimate third-party app/script getting flagged, Microsoft security researchers analyze suspicious files to determine if they're threats, unwanted applications, or normal files. Submit files you think are malware or files that you believe have been incorrectly classified as malware by using the unified submissions experience (for more information, see [Unified submissions experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770)) or [File submissions](https://www.microsoft.com/en-us/wdsi/filesubmission).
 
 ### Check the wdavdaemon (FANotify) process
 
@@ -392,14 +394,14 @@ To troubleshoot high CPU utilization overhead caused by mdatp_audisp_plugin proc
 For more information, see [download the onboarding package from Microsoft 365 Defender portal](linux-install-with-ansible.md#download-the-onboarding-package).
     
 > [!NOTE]
-> This download registers Microsoft Defender for Endpoint for Linux to send the data to your Microsoft Defender for Endpoint instance.
+> This download registers Microsoft Defender for Endpoint on Linux to send the data to your Microsoft Defender for Endpoint instance.
 
   
 ## Use Ansible to manage Microsoft Defender for Endpoint on Linux
 
 To deploy Microsoft Defender for Endpoint on Linux using Ansible, see [Deploy Microsoft Defender for Endpoint on Linux with Ansible | Microsoft Docs](../defender-endpoint/linux-install-with-ansible.md#download-the-onboarding-package)
 
-1. To deliver the downloaded onboarding package from Microsoft 365 Defender portal, see the information below:
+1. To deliver the downloaded onboarding package from Microsoft 365 Defender portal, see the following information:
 
     ```bash
         - name: Create MDATP directories
@@ -412,7 +414,7 @@ To deploy Microsoft Defender for Endpoint on Linux using Ansible, see [Deploy Mi
             group: root
     ```
 
-2. To add Microsoft to the repository, see the information below:
+2. To add Microsoft to the repository, see the following information:
 
     ```bash
         - name: Add Microsoft APT key
@@ -460,14 +462,14 @@ To deploy Microsoft Defender for Endpoint on Linux using Ansible, see [Deploy Mi
           enablerepo: packages-microsoft-[channel]
     ```
 
-Additionally, for deploying the “settings preferences” via Ansible, go through adding the steps from the above item 5 “How to configure Microsoft Defender for Endpoint for Linux anti-malware (AV)”, by copying your `mdatp_managed.json` to `/etc/opt/microsoft/mdatp/managed/`. 
+Additionally, for deploying the “settings preferences” using Ansible, go through adding the steps from the previous step “How to configure Microsoft Defender for Endpoint on Linux anti-malware (AV)”, by copying your `mdatp_managed.json` to `/etc/opt/microsoft/mdatp/managed/`. 
 
 ## Verify communication with Microsoft Defender for Endpoint backend
 
-To verify Microsoft Defender for Endpoint on Linux communication to the cloud with the current network settings, run the following connectivity test from the command line:
+To verify the Microsoft Defender for Endpoint on Linux communication to the cloud with the current network settings, run the following connectivity test from the command line:
 `mdatp connectivity test`
 
-The expected output from the test should be as below:
+The following image displays the expected output from the test:
 
 :::image type="content" source="images/verify-comm.png" alt-text="This is verify communication image":::
 
