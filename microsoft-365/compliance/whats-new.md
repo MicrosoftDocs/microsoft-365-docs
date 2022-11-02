@@ -44,6 +44,22 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - **In preview**: New communication compliance [integration with insider risk management](/microsoft-365/compliance/communication-compliance#integration-with-insider-risk-management-preview). Communication compliance can now provide risk signals detected in messages to insider risk management policies. Risky users detected in messages by the communication compliance policy act as a triggering event to bring users into scope for the insider risk management policies.
 
+### Data loss prevention
+
+- **In preview** Multiple updates for authorization groups in [Configure endpoint DLP settings](/microsoft-365/compliance/dlp-configure-endpoint-settings.md) and [Using Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-using.md).
+    - [Printer groups](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#printer-groups-preview)
+    - [Removable USB storage device groups](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#removable-storage-device-groups-preview)
+    - [Network share paths](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#network-share-groups-preview)
+    - [Website groups](/microsoft-365/compliance/endpoint-dlp-using.md#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview)
+    - [VPN network location groups](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#vpn-settings-preview)
+    - [Sensitive service domains](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#sensitive-service-domains)
+- **In preview** Polices can use grouping of conditions, nesting of groups and the use of boolean operators (AND/OR/NOT) between them.
+    - [Complex rule design](/microsoft-365/compliance/dlp-policy-design.md#complex-rule-design-preview)
+    - [Use trainable classifiers as conditions in DLP policies](/microsoft-365/compliance/dlp-policy-reference.md#location-support-for-how-content-can-be-defined)
+-  **In preview** For endpoints, support for detecting sensitive items that are password protected or encrypted.
+    - [Conditions that devices support](/microsoft-365/compliance/dlp-policy-reference.md#conditions-devices-supports)
+- **Generally available** [100 new files types that can be scanned](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments.md#supported-file-types-for-mail-flow-rule-content-inspection)
+
 ### Insider risk management
 
 - **In preview**: Insider risk management introduces [forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence), which enables customizable visual activity capturing across devices to help your organization better mitigate, understand, and respond to potential data risks like unauthorized data exfiltration of sensitive data.
@@ -58,7 +74,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **General availability (GA)**: [Relabeling at the end of the retention period](retention-settings.md#relabeling-at-the-end-of-the-retention-period).
 - **General availability (GA)**: [Starting a record unlocked](declare-records.md#configuring-retention-labels-to-declare-records).
 - **General availability (GA)**: Users can now apply published retention labels to files [directly in Teams](create-apply-retention-labels.md#applying-retention-labels-using-microsoft-365-groups).
-- New retention support statements: Retention policies for Teams support the [chat with myself](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) feature and [video clips](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c), and retention policies for Yammer support [storyline posts](https://support.microsoft.com/office/overview-of-storyline-for-yammer-and-viva-engage-530e4e66-9f1c-4be1-b371-08ea40dc4b69).
+- New retention support statements: Retention policies for Teams support the [chat with myself](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) feature, [video clips](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c), and call data records, which are system-generated messages that contain [metadata for meetings and calls](/MicrosoftTeams/ediscovery-investigation#teams-metadata). Retention policies for Yammer support [storyline posts](https://support.microsoft.com/office/overview-of-storyline-for-yammer-and-viva-engage-530e4e66-9f1c-4be1-b371-08ea40dc4b69).
 - Improved in-product experience if retention policies have errors: You'll now see a detailed description of the error in the details pane, with in-product actions to take that can resolve the problem. For example, remove invalid locations and resynchronize the policy.
 
 ### Microsoft Priva
@@ -66,9 +82,11 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **In preview**: [Data transfer policies](/privacy/priva/risk-management-policy-data-transfer) in Privacy Risk Management now offers additional flexible boundary conditions: detecting transfers based on users' Azure Active Directory attributes, transfers between users in different Microsoft 365 groups, and transfers between SharePoint sites.
 
 ### On-premises scanner
+
 - **In preview**: The Azure Information Protection (AIP) on-premises scanner is being renamed **Microsoft Purview Information Protection scanner** and [configuration is moving to the Microsoft Purview compliance portal](/information-protection/deploy-aip-scanner-configure-install).
 
 ### Sensitivity labels
+
 - Call to action: [Migration guidance](sensitivity-labels-aip.md) to help you move from the AIP add-in for Office apps, with a [migration playbook](https://microsoft.github.io/ComplianceCxE/playbooks/AIP2MIPPlaybook) from our Customer Experience Engineering (CxE) team
 - **General availability (GA)**: Authentication contexts for label [groups and site settings](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) that work with Azure AD Conditional Access policies to enforce more stringent access conditions to a site.
 - **General availability (GA)**: [Site sharing permissions by using PowerShell](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings).
@@ -76,6 +94,11 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **In preview**: The AIP add-in for Office apps is [disabled by default](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) and requires a new setting to override this default.
 - Support statement: [Files types supported for SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types), after enabling sensitivity labels for these services.
 - New [prerequisite for co-authoring](sensitivity-labels-coauthoring.md#prerequisites) and the Azure Information Protection unified labeling client and scanner: It's not supported to use Double Key Encryption in the same tenant as the co-authoring feature.
+
+### Trainable classifiers
+
+- **In preview** 20 + new trainable classifiers and a standalone trainable classifier definitions article.
+    - [Trainable classifiers definitions](/microsoft-365/compliance/classifier-tc-definitions.md)
 
 ## September 2022
 
