@@ -11,6 +11,7 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.custom: AdminSurgePortfolio
 ms.collection: 
+- Tier3
 - scotvorg
 search.appverid:
 - BCS160
