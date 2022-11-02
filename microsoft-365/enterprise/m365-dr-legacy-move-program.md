@@ -140,7 +140,7 @@ Some of the Microsoft 365 services may be located in different geos for some exi
 ### Where is my applicable customer data located?
 <details><summary>Click to expand</summary>
 
-Customer _Tenant_ admins can view the data location card in the Admin Center at any time to confirm the applicable customer data at rest location for each service, specifically for their _Tenant_. We also publish the location of datacenter geos, datacenters, and location of Microsoft 365 customer data on the [Microsoft 365 interactive datacenter maps](https://office.com/datamaps) as a reference for the current default applicable customer data at rest locations for new _Tenant_. You can verify the location of your customer data at rest via the Data Location section under your Organization Profile in the Microsoft 365 admin center.
+Customer _Tenant_ admins can view the data location card in the Admin Center at any time to confirm the applicable customer data at rest location for each service, specifically for their _Tenant_. We also publish the location of datacenter geos, datacenters, and location of Microsoft 365 customer data in [Where your Microsoft 365 customer data is stored](https://office.com/datamaps) as a reference for the current default applicable customer data at rest locations for new _Tenant_. You can verify the location of your customer data at rest via the Data Location section under your Organization Profile in the Microsoft 365 admin center.
 
 </details>
 
