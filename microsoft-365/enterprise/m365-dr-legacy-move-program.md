@@ -84,7 +84,7 @@ Here are answers to general questions about moving applicable  customer data at 
 ### What customers are eligible to request a move?
 <details><summary>Click to expand</summary>
 
-Existing Microsoft 365 commercial customers who selected a country eligible for the new datacenter geo will be able to request a move. The program exists only for _Tenants_ with an eligible country code assigned to the Microsoft 365 _Tenant_ to migrate applicable customer data at rest for eligible workloads to the corresponding Microsoft 365 datacenter geo. See [How to request your data move](request-your-data-move.md) to confirm country eligibility.
+Existing Microsoft 365 commercial customers who selected a country eligible for the new datacenter geo will be able to request a move. The program exists only for _Tenants_ with an eligible country code assigned to the Microsoft 365 _Tenant_ to migrate applicable customer data at rest for eligible workloads to the corresponding Microsoft 365 datacenter geo. For more information, see [Microsoft 365 Multi-Geo availability](microsoft-365-multi-geo#microsoft-365-multi-geo-availability) to confirm country eligibility.
 
 </details>
 
@@ -124,7 +124,7 @@ each service.
 ### How do you make sure my customer data is safe during the move and that I won't experience downtime?
 <details><summary>Click to expand</summary>
 
-Data moves are a back-end service operation with minimal impact to end users. Features that can be impacted are listed in [During and after your data move](during-and-after-your-data-move.md). We adhere to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for availability so there is nothing that customers need to prepare for or to monitor during the move.
+Data moves are a back-end service operation with minimal impact to end users. Features that can be impacted are listed in [User experience in a Multi-Geo environment](multi-geo-user-experience.md). We adhere to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for availability so there is nothing that customers need to prepare for or to monitor during the move.
 
 All Microsoft 365 services run the same versions in the datacenters, so you can be assured of consistent functionality. Your service is fully supported throughout the process.
 
@@ -147,14 +147,14 @@ Customer _Tenant_ admins can view the data location card in the Admin Center at 
 ### When will I be able to request a move?
 <details><summary>Click to expand</summary>
 
-Please refer to the [How to request your data move](request-your-data-move.md) page for supported timeframes for your datacenter geo.
+Please refer to the [Data Residency Legacy Move Program](m365-dr-legacy-move-program.md) page for supported timeframes for your datacenter geo.
 
 </details>
 
 ### How can I request to be moved?
 <details><summary>Click to expand</summary>
 
-Eligible customers will see a page in their [Microsoft 365 admin center](https://admin.microsoft.com/). Please see [How to request your data move](request-your-data-move.md) for instructions on how to request a move.
+Eligible customers will see a page in their [Microsoft 365 admin center](https://admin.microsoft.com/). Please see [Data Residency Legacy Move Program](m365-dr-legacy-move-program.md) for instructions on how to request a move.
 
 </details>
 
@@ -203,7 +203,7 @@ Data moves are a back-end operation with minimal impact to end users. The comple
 ### What happens if users access services while the data is being moved?
 <details><summary>Click to expand</summary>
 
-See [During and after your data move](during-and-after-your-data-move.md) for a complete list of features that may be limited during portions of the data move for each service.
+See [User experience in a Multi-Geo environment](multi-geo-user-experience.md) for a complete list of features that may be limited during portions of the data move for each service.
 
 </details>
 
