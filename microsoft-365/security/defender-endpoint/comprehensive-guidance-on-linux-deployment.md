@@ -499,7 +499,9 @@ For more information, see [New device health reporting for Microsoft Defender an
 
 To ensure that the device is correctly onboarded and reported to the service, run the following detection test:
 
-- Anti-malware detections:`curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`
+- Anti-malware detections:
+ 
+  `curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`
 
   If the detection doesn’t show up, it could be that you have set “allowedThreats” to allow in preferences via Ansible or Puppet.
 
