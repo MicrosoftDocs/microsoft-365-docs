@@ -248,7 +248,7 @@ For example, with this configuration:
 
 - **Service domains** list mode is set to **Allow**.
     - Contoso.com is on the list.
--  A DLP policy is set to **Block** upload of sensitive items that contain credit card numbers.
+    -  A DLP policy is set to **Block** upload of sensitive items that contain credit card numbers.
  
 User attempts to:
 
@@ -284,6 +284,15 @@ but if a user attempts to:
 
 > [!IMPORTANT]
 > When the service restriction mode is set to "Allow", you must have at least one service domain configured before restrictions are enforced.
+
+Summary table
+
+
+|Service domain list setting |Upload sensitive item to site on list  |Upload sensitive item to site not on list  |
+|---------|---------|---------|
+|Allow   |- No DLP policies are applied </br> - User activity is audited </br> - Event generated        | - DLP policies are applied </br> - Configured actions are taken </br>- Event is generated </br>- Alert is generated          |
+|Block    | - DLP policies are applied </br> - Configured actions are taken </br> - Event is generated </br> - Alert is generated         | - No DLP policies are applied </br> - User activity is audited </br>- Event is generated         |
+
 
 Use the FQDN format of the service domain without the ending `.` when you add a domain to the list.
 
@@ -398,8 +407,8 @@ This feature is available for devices running any of the following Windows versi
 You can define removeable storage devices by these parameters:
 
 - Storage device friendly name - Get the Friendly name value from the storage device property details in device manager.
-- USB product ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
-- USB vendor ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+- USB product ID - Get the Device Instance path value from the USB device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+- USB vendor ID - Get the Device Instance path value from the USB device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
 - Serial number ID - Get the serial number ID value from the storage device property details in device manager.
 - Device ID - Get the device ID value from the storage device property details in device manager.
 - Instance path ID - Get the device ID value from the storage device property details in device manager.
