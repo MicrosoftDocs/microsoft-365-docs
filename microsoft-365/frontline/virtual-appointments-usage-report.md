@@ -23,7 +23,9 @@ ms.custom: seo-marvel-apr2020
 # Microsoft Teams Virtual Appointments usage report
 
 > [!NOTE]
-> This feature is temporarily available as preview for all customers. To get this feature after the preview, each user will need a [Teams Premium](https://review.learn.microsoft.com/MicrosoftTeams/enhanced-teams-experience?branch=danismith-t-pre-licensing) license.
+> This feature is temporarily available as preview for all customers. To get this feature after the preview, each user will need a [Teams Premium](https://review.learn.microsoft.com/en-us/MicrosoftTeams/enhanced-teams-experience?branch=cmd-teams-premium-overview) license.
+
+![Information icon](media/info.png) **This feature is moving to [Teams Premium](https://review.learn.microsoft.com/en-us/MicrosoftTeams/enhanced-teams-experience?branch=cmd-teams-premium-overview) (preview). The report will continue to be available during the preview period. After the preview, a Teams Premium license is required.**
 
 The Virtual Appointments usage report in the Microsoft Teams admin center gives you an overview of Teams Virtual Appointments activity in your organization. You can view detailed activity for virtual appointments scheduled through the [Bookings app](bookings-virtual-visits.md) and the [Microsoft Teams Electronic Health Record (EHR) connector](teams-in-hc.md#virtual-appointments-and-electronic-healthcare-record-ehr-integration).
 
