@@ -33,7 +33,7 @@ The following customer data will be stored at rest in the _Local Region Geograph
 
 The following customer data will be stored at rest in the _Local Region Geography_:
 
-- SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business.
+- SharePoint Online site content and the files stored within that site and files uploaded to OneDrive for Business.
 
 ## Microsoft Teams
 
