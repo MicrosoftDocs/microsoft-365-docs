@@ -22,7 +22,7 @@
      items:
      - name: Try Defender for Office 365
        href: try-microsoft-defender-for-office-365.md
-     - name: Trial playbook for Defender for Office 365
+     - name: Trial User Guide for Defender for Office 365
        href: trial-playbook-defender-for-office-365.md
    - name: Deploy
      items:

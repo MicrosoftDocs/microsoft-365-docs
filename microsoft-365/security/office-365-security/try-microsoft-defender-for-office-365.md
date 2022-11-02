@@ -33,7 +33,7 @@ Before you try Defender for Office 365 Plan 2, there are some key questions that
 
 This article will help you answer those questions so you can try Defender for Office 365 Plan 2 in a way that best meets the needs of your organization.
 
-For a companion guide for how to use your trial, see [Trial playbook: Microsoft Defender for Office 365](trial-playbook-defender-for-office-365.md).
+For a companion guide for how to use your trial, see [Trial User Guide: Microsoft Defender for Office 365](trial-user-guide-defender-for-office-365.md).
 
 ## Overview of Defender for Office 365
 
