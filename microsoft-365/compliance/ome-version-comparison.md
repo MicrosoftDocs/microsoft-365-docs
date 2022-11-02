@@ -57,7 +57,7 @@ The new capabilities provide the following advantages:
 - Accounts outside of Microsoft 365, such as Gmail, Yahoo, and Microsoft accounts, are federated with the OME portal, which provides a better user experience for these recipients. All other identities use a one-time pass code to access encrypted messages.
 - Admins can customize branding, and create multiple branding templates.
 - Admins can revoke emails encrypted with the new capabilities.
-- The new capabilities provide detailed usage reports through the Security &amp; Compliance Center.
+- The new capabilities provide detailed usage reports through the Microsoft Purview compliance portal.
 
 ## Microsoft Purview Advanced Message Encryption capabilities
 
